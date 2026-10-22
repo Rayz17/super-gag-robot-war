@@ -1,0 +1,21 @@
+field_id	field_name	required_for	question	blocking_rule
+WDS001	rule_id	all	跨章世界机制的稳定ID是什么	同一规则章章改名时block
+WDS002	canonical_question	all	这条规则回答哪个反复出现的世界问题	只为解释单句台词时warn
+WDS003	authority_level	all	hard/working/candidate/history哪一档	候选推论冒充世界真相时block
+WDS003B	design_status	all	open/draft/blocked/sealed/invalidated/retired哪一档	open或blocked被章级设计消费时block
+WDS004	source_refs	all	Canon、全剧母盘、Accepted Story和设计来源是什么	无来源或History回流时block
+WDS005	canon_subject_and_invariant_ref	all	引用哪个Canon主体和不变量作为设计输入，不在此复制第二份真相	无Canon来源、循环引用Reader或本表自行造Canon时block
+WDS006	actors_and_rights	all	哪些主体能观察、修改、授权、拒绝或执行	无主系统或万能机构时block
+WDS007	inputs_and_preconditions	all	规则成立需要哪些物理、信息、权限和时间条件	剧情临时造前提时block
+WDS008	outputs_and_state_changes	all	规则改变哪些实体、地点、知识、权限或债务	没有可追踪输出时block
+WDS009	reveal_track_ids	all	哪些揭示轨管理公众、角色和玩家所知	无揭示投影或在本表复制可见层时block
+WDS010	exceptions_and_boundaries	all	有哪些具名例外和永不允许的推论	规则被一句特殊情况无限扩张时block
+WDS011	conflict_and_counterplay	playable	谁能阻止、误读、伪造或绕开它，玩家怎样验证	世界规则只服务主角胜利时block
+WDS012	cost_and_debt	all	使用或违背规则留下什么物理、政治、关系或信息代价	重大权能无后果时block
+WDS013	state_domain	all	由哪个统一状态域保存，生命周期和过期条件是什么	只存在于文本记忆时block
+WDS014	chapter_consumers	all	哪些章首次建立、反证、组合和终局回收	后续Reader临时另造规则时block
+WDS015	reveal_ledger_ref	all	各层真相在哪一话由何证据揭示	悬念没有计划或提前讲穿时block
+WDS016	writer_projection_rule	writer_context	如何由Canon引用、当前状态与reveal snapshot生成无剧透规则卡	手写第二份Writer真相或制作答案直接灌入Reader时block
+WDS017	production_tests	playable_runtime	用什么状态模拟、灰盒或回归测试证明一致	进入玩法/Runtime前无测试时block
+WDS018	owner_and_change_control	all	谁维护，变更需哪些共同审批和失效范围	无人维护或暗改sidecar时block
+WDS019	human_approval	all	用户批准了哪一版世界规则及叙事保留边界	成为跨章依赖前缺回执时block

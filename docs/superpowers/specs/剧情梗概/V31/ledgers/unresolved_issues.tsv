@@ -1,0 +1,2 @@
+issue_id	root_cause_id	first_seen_after_chapter	chronology	cause_summary	attempts_summary	chosen_version	residual_risk	future_watchpoint	user_review_needed
+V31-PRODUCTION-SPLIT-BACKFILL-001	ROOT_PRODUCTION_LAYER_SPLIT_NEW_SCHEMA	C07	2026-07-07新增制作层拆分规范后回看V31前30话	新规范要求每话在可读剧情之外明确ADV剧情、探索/副玩法、SRPG地图战、战中演出、舰内日常/关系、结算/状态六段；V31已含战斗/玩法/状态字段，但旧稿没有统一成可直接交给美术/关卡/台本的六段式制作拆分	已按用户确认执行存量改造：30个episode packet均新增## 6.5 制作拆分，并新增production_layer_split_ledger.tsv记录状态	保留现有可读剧情，在原packet内追加六段制作拆分，不重写主线	该层是制作交付拆分，不是最终关卡表、台本或数值表；后续落关卡/台本时仍需逐话细化触发对白、镜头和资产规格	C08以后新写episode必须原生带制作拆分层，避免再次回填	no

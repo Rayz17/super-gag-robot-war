@@ -1,0 +1,242 @@
+episode_id	variable	value_or_rule	next_reads	notes
+C08E33	refugee_ship_state	白缝号安全度由撤退准备度、推船成功和能源损伤共同决定	C08E34;C09	决定是否能回头接人和后续白舰入馆强度
+C08E33	retreat_roster_integrity	名单节点修复越多，灰鸥具名越完整，结算证据越难被反剪辑	C08E34;C12	低完整度不惩罚玩家，但E34补名更难
+C08E33	energy_core_damage_state	能源核心过载会降低万机馆补给和后续支援池	C08E34;C09	保能源会牺牲名单或王牌牵制窗口
+C08E33	chigang_ceiling_breach_debt	赤罡打穿天顶开撤退路，同时生成维修债和敌方追踪入口	C08E34;C09;C11	不可把破口写成免费热血
+C08E33	graygull_named_support_state	灰鸥具名则盾阵推船稳定；未具名则群体编号支援并保留补名窗口	C08E34;C12	量产机尊严线的核心变量
+C08E33	song_weaponization_evidence	莉歌空白频道每用一次增加高危有效记录	C08E34;C11	七海工号留痕，后续可被追责
+C08E33	redmask_escape_state	红面具未被完整击坠，带走追击和撤退习惯样本	C08E34;C09	下一话反剪辑和C09售卖战争模板的源头
+C08E33	jicun_name_route_marker_trace	纪存机魂轻触把名单节点转成撤退路标，个人权限留痕上升	C12;C14	身份谜团债，不在C08连续解释
+C08E33	baiyuan_blank_lead_frame	白鸢画出主角格空着，暂不美化撤退	C09;C10	白鸢线后续读作“谁被放在主角格”
+C08E34	retreat_roster_exhibit_state	撤退名单入馆完整度由补名率和证物保护数决定	C09;C12;C15	决定C09是否被加拍为战争遗作纪念套，也影响终局低规格声部
+C08E34	mass_production_name_completion_state	灰鸥补名率决定具名Cut-in、支援台词和后续抗清噪能力	C12;C15	低完成度仍保留群体支援与补名窗口
+C08E34	graygull_support_join_state	灰鸥量产G获得主线支援资格，但不是强主力完整入队	C09;C12;C15	返回单位新功能，后续可成为终局低规格声部
+C08E34	evidence_recovered_set	记录破口维修账、姓名贴模块、莉歌空白频道、白舰断桥记录中回收了哪些	C09;C11	决定拍卖会和白名单追责可用证物
+C08E34	platform_compression_state	平台压缩槽越高，C09共同记忆商品化压力越强	C09	若高，撤退名单开场被包装得更漂亮也更假
+C08E34	chigang_repair_debt_state	赤罡破口维修债公开/隐藏，公开则返程路线成立但追责更重	C11;C12	隐藏会减轻短期压力但让索引更易剪辑热血
+C08E34	song_publicity_state	莉歌录音为完整公开、不公开、只公开空白频道三态	C11;C13	决定她被工具化风险和后续声部资格
+C08E34	redmask_route_shift_state	红面具后续目标从追赤罡转为追撤退路线	C09;C12	敌方不再只追王牌对决
+C08E34	index_retreat_countertemplate_sample	索引获得追击、歌停火、撤退、量产逆袭的反剪辑样本	C09;C12	共同记忆战争和清噪战输入
+C08E34	qihai_public_testimony_signature	七海工号进入公共证词，不能再从E34撤退史里抽身	C11	七海改革线追责硬钩子
+C08E34	baiyuan_undecided_frame_state	白鸢把七海画进未定框，但纪存主角位仍空	C09;C10	三角刺和作者改写线输入
+C08E34	C09_creator_war_ready	遗作拍卖与共同记忆战争开启	C09E35	下一章开场入口
+C09E35	auction_heat_state	伪装买家、买回拍品和标签留场会提升热度；热度高会让C09E37空白展柜解释权战起价更高	C09E37	失败不Game Over，但平台带走更多共同记忆商品化样本
+C09E35	public_opinion_pressure	强拆、违规取证或让残响沉默会提升舆论压力；高压会让C10圣堂以万机馆阻止公开为由介入	C10;C11	不是数值装饰，影响敌方合法性和七海追责
+C09E35	baiyuan_completion_mark	白鸢补一格越多，支援越强但越容易被平台标成授权续写候选	C09E36;C12	影响未完人敌意和索引补完模板
+C09E35	retreat_roster_sale_block_state	撤退名单若未完整售出，后续C12/C15终局声部更完整；若部分售出，平台持有漂亮版本	C12;C15	承接C08撤退名单，不重复撤退战
+C09E35	qihai_evidence_warrant_debt	七海用公开工号冻结拍品，保护证据但加重C11处分链	C11	工号、公开范围和冻结记录必须在C11回收
+C09E35	unfinished_one_awakened	未完人剪辑台剪影锁场，下一话进入重剪规则战	C09E36	未完人不是纯恶，要以保护也会囚禁推进
+C09E35	rejected_echo_consent_state	至少两个废案残响以不完整状态留场，可解锁可质问分镜和后续留白支援	C09E36;C15	失败时保留残页和失败尊严，不做廉价惩罚
+C09E35	song_publicity_exploit_state	莉歌完整公开、未公开或空白频道会分别改变情绪包、隐瞒舆论或静音证据	C09E36;C11	不再复用歌停战高潮，只处理公开代价
+C09E35	graygull_auction_support_trace	灰鸥具名支援可挡撤退名单加拍投影；不足时只留下补名提示	C09E37;C15	量产线支援继续积累，不计新首登
+C09E35	jicun_editorial_responsibility_public_state	纪存公开播放切换记录和策展责任，后续会被追责为另一种解释权主体	C11;C12	主角成长不是小标签，而是承担可被质问的公共责任
+C09E36	baiyuan_questionable_support_state	可质问分镜升级为盲格保护；白鸢高伤补完Cut-in降级，保留被救者反问入口	C09E37;C11;C12	若完整补完水印过高，后续空白展柜强度下降但保留补救窗口
+C09E36	question_node_preserved_count	质问节点保留数量决定废案残响是否能反标注、撤回展出和打破安全格	C09E37;C15	低数量不是硬失败，但未完人敌意上升
+C09E36	qihai_evidence_warrant_debt_after	七海公开本人越权但必要，拆分冻结交易和不得冻结角色本体，官方通道暂停	C11	代哥获得追责证据，也为七海改革线提供真实代价
+C09E36	kunyu_resonance_contact_state	昆羽残响・神话注释支援轻触，提示逃进异界故事也是解释权债	C10;C13	不提前展开正式翅甲/圣树母舰
+C09E37	blank_showcase_boundary_state	intact/narrowed/compromised，记录空白展柜边界稳定度	C09E38;C12;C15	影响缺页节点、清噪空白和废案空白机
+C09E37	blank_showcase_guardian_choice	wanji_limited/baiyuan_double_key/qihai_witness_custody/unclaimed_public_outer_ring	C10;C11;C15	影响圣堂信任、白名单争吵和终局空白声部
+C09E37	canon_temple_evidence_copy_state	none/limited/shared/full_sealed，记录圣堂取证机副本范围	C10	决定C10是邀请、传票还是强制审定
+C09E37	public_completion_pressure_after	全民补完压力残留，决定缺页/最优废案诱惑强度	C09E38;C12	若viral则最优废案机更诱人
+C09E38	missing_page_testimony_state	complete/partial/compromised，记录缺页证词阵列完整度	C10;C12;C15	影响原典圣堂态度、清噪空白和废案空白机
+C09E38	baiyuan_error_version_public_state	self_published_min_scope/sealed_low_rating/auto_corrected/overexposed	C11;C12;C15	标准通过基线为最低范围本人公开；封存不公开仅作低评价/尊严失败
+C09E38	baiyuan_error_version_public_scope	min_scope/expanded_context/overexposed_hd	C11;C12	区分公开范围，避免把关系审判、索引抓取和公开状态混成一个值
+C09E38	baiyuan_error_version_withdrawal_right	qihai_chain_signed/weak_chain/lost	C11;C15	七海工号链必须在C11追责，不得静默消失
+C09E38	baiyuan_error_version_audit_subject	baiyuan_named/jicun_shared/qihai_shared/platform_stolen	C11	决定审判时白鸢、纪存、七海谁被追责
+C09E38	baiyuan_error_version_index_capture	denied/partial_safe_version/full_safe_version	C12;C15	影响索引能否生成安全版白鸢模板
+C09E38	optimal_rejected_mecha_sample	denied/partial/copied	C12;C15	影响完美假馆和唯一模板核是否生成漂亮废案主角机相
+C09E38	rejected_role_support_condition	blank_support_unstable/completed_support_copyable/sealed_residual	C10;C15	决定废案临时支援体后续是留白支援、可复制完成支援还是残响支援
+C09E38	canon_temple_invitation_state	invitation/summons/forced_review	C10	决定原典圣堂入口是邀请、传票还是强制审定
+C09E38	platform_memory_war_sample	blocked/partial/viral	C11;C12	平台共同记忆战争样本后续与索引/白名单线合流
+C09E38	version_layer_exploration_route	初版/商品/玩家错版/封存/索引层探索组合	C10;C12	影响台词争执、错版口令和索引模板强度
+C09E38	original_cost_counter_count	0-6，记录原代价反制数量	C12;C15	数量越低，最优废案机样本越强
+C09E38	jicun_sorting_authority_transferred_state	transferred_and_locked/partial/transferred_back	C11;C14	纪存排序便利必须持续受限，不能下话静默恢复
+C09E38	qihai_withdrawable_chain_debt	signed_heavy/weak/none	C11;C15	七海为错误版本落工号，进入处分链和牺牲资格
+C09E38	index_missing_page_fill_template	denied/partial/strong	C12;C15	缺页自动填字模板进入索引后期Boss
+C10E39	respect_ceremony_state	respectful / neutral / rushed	C10E40;C10E41	影响槐是否陪同进入背库和台词碑敌意
+C10E39	direct_challenge_state	low / medium / high	C10E40	影响保守派守卫数量与背库入口难度
+C10E39	old_class_photo_shown_state	marked / unmarked	C10E40	旧影像遮挡字幕是否提前成为背库目标
+C10E39	temporary_quote_license_state	low / enough / broad	C10E40;C11	非最优证词获得临时引用许可数量
+C10E39	baiyuan_error_version_review_state	pending / deleted / overexposed	C10E40;C11;C15	白鸢错误版本在圣堂体系中的审定状态
+C10E39	misprint_ai_isolation_state	isolated_with_phrase / silenced / loose	C10E40;C10E41	错版AI玩具群是否留下错误口号钥匙
+C10E39	r02_locked_seat_preview_state	preview_done / archived / missed	C10E41	三相盖流后续合体资格与诱惑强度
+C10E39	qihai_pending_review_watermark_count	0-2 preferred; 3+ audit_heavy	C11	七海把违规引用降为待审的追责次数
+C10E39	platform_canon_clip_state	blocked / partial / viral	C11;C12	平台剪辑圣堂审定素材
+C10E39	index_correct_quote_stability_sample	none / partial / strong	C12;C15	索引学习正确口令稳定性
+C10E40	wrong_chant_token_state	contested_testimony / sealed / overpublic	C10E41;C11;C15	错版口令牌是否成为待争论证词、被封存或被平台过度公开
+C10E40	archive_publicity_state	public / private_show / temporary_blank	C10E41;C11	背库删注资料公开、私示、暂存的处理结果
+C10E40	huai_trust_state	low / medium / fragile_high	C10E41	影响槐是否亲自念错字或交出口令牌
+C10E40	misprint_ai_protected_state	protected / silenced / scattered	C10E41	错版AI玩具群是否提供错版合体提示
+C10E40	qihai_danger_number_state	signed_effective_danger / unsigned / overruled	C11;C15	七海是否把救过人的错误写成有效且危险证物
+C10E40	baiyuan_pretty_fix_deleted_state	deleted / kept_hidden / published_pretty	C10E41;C12	白鸢是否删除替槐修漂亮的构图
+C10E40	little_brave_shell_permission_state	shield_survived / cracked / lost	C10E41;C11	小勇机训练壳缺页许可盾是否留下支援样本
+C10E40	index_wrong_chant_effective_sample	none / partial / strong	C10E41;C12;C15	索引是否学到错版有效性并整理成新正确
+C10E40	platform_archive_clip_state	blocked / partial / viral	C11	平台是否将背库剪成圣堂藏错版或万机馆包庇错版
+C10E41	perfect_fusion_route_state	used / rejected / mixed	C10E42;C11	完美合体路线是否被使用，影响圣堂支援稳定和错版承认难度
+C10E41	wrong_chant_route_state	success / partial / failed	C10E42;C12;C15	错版合体路线结果和后续错注支援框资格
+C10E41	huai_wrong_chant_bearer_state	huai / misprint_ai / wanji_case / none	C10E42;C15	槐是否亲自承担错字或交给他者
+C10E41	r02_voice_preserved_state	three_voices / compressed / one_voice_lost	C10E42;C13;C15	三相盖流合体后个体声部是否保留
+C10E41	qihai_temporary_liability_permission_state	signed / unsigned / overused	C11;C15	七海临时追责许可是否进入监管链
+C10E41	baiyuan_error_version_in_formation_state	inserted / blocked / overused	C10E42;C12	白鸢错误版本是否进入合体站位并被索引采样
+C10E41	misprint_ai_chant_support_state	active / silenced / chaotic	C10E42	错版AI玩具群在错版合体中的支援状态
+C10E41	index_dual_chant_sample_state	none / partial / strong	C10E42;C12;C15	索引是否获得正确/错版双口令对照样本
+C10E42	wrong_chant_token_exhibit_state	shared_custody / accident_label / new_correct_label	C11;C15	错版口令牌最终展陈/共同保管状态
+C10E42	canon_temple_support_state	shield_and_frame / shield_only / weak	C11;C12;C15	圣堂支援池开放程度
+C10E42	r02_mainline_gate_state	wrong_stable / normal / voice_debt	C11;C13;C15	三相盖流主线资格和声部保留状态
+C10E42	qihai_unauthorized_effective_report_state	submitted / delayed / suppressed	C11;C15	七海未经授权但有效报告状态
+C10E42	new_correct_chant_template_sample	contained / partial / strong	C12;C15	新正确口令核模板化样本强度
+C10E42	platform_wrong_chant_clip_sample	blocked / partial / viral	C11	平台错版合体剪辑压力
+C10E42	baiyuan_unpretty_label_state	accepted / rewritten / hidden	C11;C12	白鸢不漂亮展签状态
+C10E42	huai_shared_custody_state	ally_supervisor / distant / conservative_backlash	C11;C15	槐和圣堂共同保管关系
+C11E43	public_trust_name_state	compliance_name / original_name / public_trust_name	C11E44;C11E45;C12	核心证词三层命名状态，决定三门战场合法评分与证词锋利度
+C11E43	testimony_sharpness_state	high / mixed / low	C11E44;C12	保留原名越多，反索引价值越高但城市合法压力越大
+C11E43	qihai_exception_count	none / declared / escalating	C11E45;C11E46;C14	七海手动例外和自投风险表提高改革说服力，也提高内部反审计压力
+C11E43	baiyuan_legal_placement_anxiety	calm / cold / wounded	C11E44;C11E45;C12	白鸢看到合法系统可保护也可扫描私人分镜，影响分镜门支援是否灰显
+C11E43	wrong_chant_whitelist_state	sealed / teaching_case / public_trust	C11E44;C12	错版口令牌在白名单内的三种处理，决定错版支援安全、刺痛和反索引价值
+C11E43	index_compliance_naming_sample	acquired	C12;C15	索引获得合规改名如何保留内容但降低刺痛的样本
+C11E44	main_gate_choice_state	legal / storyboard / repair / mixed	C11E45;C11E46;C12	主门选择影响公共信托样板间布局、支援强度、关系伤口和城市信任
+C11E44	qihai_illegal_channel_watermark	violation_sorting_record_exposed	C11E45;C11E46;C14	七海公开违规排序记录，代哥硬线获得处分材料；旧变量名沿用canon unlock但内容升级为排序记录
+C11E44	baiyuan_support_cold_state	cold / wounded / partial_side_line	C11E45;C12	白鸢因分镜门被放副路线或被索引采样进入冷伤，后续支援温度与样板间展示有关
+C11E44	repair_side_budget_debt	low / medium / high	C11E45;C11E46;C13	维修侧门使用越多，R10支援越强但预算债和非法改装证据越重
+C11E44	R10_support_candidate_state	opened / conditional / blocked	C11E45;C13;C15	R10工务机动队成为支援候选，正式入队需处理预算、城市损伤和非致命执法边界
+C11E44	index_three_gate_sample	acquired	C12;C15	索引获得合法/分镜/维修三种保护机制并生成统一低损算法样本
+C11E45	qihai_audit_burden_state	degraded / severe / shared	C11E46;C14;C15	七海执行键冻结剪辑权后权限降级，负担取决于是否公开共同责任
+C11E45	joint_responsibility_watermark_state	shared / qihai_alone / baiyuan_reframed	C11E46;C12;C15	纪存共同承担、七海独自背锅或白鸢改写听证三种走向影响关系与合法评分
+C11E45	baiyuan_rescue_qihai_state	rescued / withheld / reframed	C11E46;C12;C15	白鸢是否把分镜支援投给七海而不是纪存，决定后续三角关系和索引分镜样本
+C11E45	public_trust_trial_pass_state	seven_day_pass / fragile_pass / operationalized_pass	C11E46;C12;C14	公共信托样板间七日试行通过状态和证词保真程度
+C11E45	operation_watermark_count	low / mixed / high	C12;C15	可运营版本覆盖证词链的程度，影响C12最优模板强度
+C11E45	index_process_counterprocess_sample	acquired	C12;C15	索引获得流程可以反制流程以及可信任不适感样本
+C11E46	legal_score_state	zero / fragile / preserved_with_cost	C12;C14;C15	G.A.G.原名暴走和自由模式会让合法评分归零或脆弱，影响公共信托复审
+C11E46	original_testimony_state	high / mixed / muted	C12;C15	原名证词保留程度决定C12最优模板抗性
+C11E46	qihai_permission_floor_state	minimum / damaged / isolated	C12;C14;C15	七海权限降至最低，后续只能通过追责密钥或低权限缝隙行动
+C11E46	baiyuan_blank_frame_state	question_preserved / beautified / closed	C12;C14;C15	白鸢是否保留被救者质问权，影响C12空白反清噪
+C11E46	gag_original_name_debt	low / medium / high	C12;C13;C15	G.A.G.原名暴走债，越高原名证词越强但公共恐慌和污染越大
+C11E46	public_trust_seven_day_pass	active / fragile / operationalized	C12;C14	公共信托七天临时通过状态
+C11E46	index_relationship_support_sample	acquired	C12;C15	索引获得谁会为了谁违规、谁会保留空白和谁会让支援灰显的关系样本
+C11E46	C12_optimal_campaign_ready	ready	C12	C12最优战役生成条件成立
+C11E46	wbm003_preview_debt_state	active	C12;C14;C15	WBM003局部馆体预兆债成立，完整WBM004未登记但后续必须读L1滑轨、B1脊柱和UI灰噪
+C12E47	recommended_roster_overuse_level	low / medium / high	C12E48;C12E49;C15	玩家依赖推荐阵容越高，镜像馆守Z和高频镜像阵列越能复制强玩法
+C12E47	embarrassing_testimony_restored_count	0-6	C12E48;C12E49;C15	恢复失败粉笔灰、灼痕原记录、空白分镜、旧件编号、撤退名单、错版口令的数量
+C12E47	qihai_burn_mark_restored_state	restored / beautified / muted	C12E49;C13;C15	七海灼痕是否被恢复为未授权手动操作记录，影响后续追责密钥
+C12E47	baiyuan_blank_frame_preserved_state	preserved / completed / erased	C12E49;C13;C15	白鸢空白是否保留质问权，影响后续支援清噪和关系牺牲资格
+C12E47	failure_chalk_dust_state	restored / cleaned / hidden	C12E48;C15	失败粉笔灰是否成为低效单位反预测证据
+C12E47	mirror_guardian_persuasion_window	available / weakened / closed	C12E48;C15	掌心旧胶布、过热和右臂桥债是否可用于镜像馆守Z说得/破防
+C12E47	command_authority_template_sample	acquired	C12E49;C14;C15	索引获得支援排序和命令权模板样本
+C12E47	perfect_fake_museum_acceptance_level	resisted / tempted / accepted	C13;C15	主角团对无痛完美假馆的诱惑承认程度，影响后续牺牲和双留下压力
+C12E47	optimal_campaign_initial_data	acquired	C12E48;C12E49;C12E50	索引完成最优战役初采样
+C12E48	defect_evidence_array_state	strong / partial / repaired	C12E49;C12E50;C15	缺点证据阵列保留程度，决定支援台词清噪抗性
+C12E48	low_efficiency_unit_success_count	0-5	C12E49;C15	低效单位成功动作数量，影响终局低规格声部
+C12E48	qihai_offline_accountability_state	active / depleted / formatted	C12E49;C13;C15	七海离线追责编号是否可继续作为低权限支援
+C12E48	baiyuan_blank_cell_state	preserved / delayed / completed	C12E49;C12E50;C15	白鸢空白格是否保留不可预测位
+C12E48	graygull_sticker_names_state	named / partial / standardized	C12E49;C15	灰鸥贴纸名是否进入支援系统和终局量产声部
+C12E48	diedie_failure_block_state	key_block / minor_block / cleaned	C12E50;C15	跌跌失败块是否成为关键反预测证据
+C12E48	graygull_dirty_shield_state	active / damaged / standardized	C12E49;C15	灰鸥脏活盾队是否保留低配盾阵和推盾半格
+C12E48	R10_slow_support_state	active / budget_debt / offline	C12E49;C14;C15	R10慢修支援与预算债状态
+C12E48	index_defect_weaponization_sample	acquired	C12E49;C12E50	索引获得缺点也可武器化的样本，转向清理缺点本身
+C12E49	support_voice_restored_count	0-9	C12E50;C15	恢复原声节点数量决定空白清噪强度和终局私人声部厚度
+C12E49	painless_storyboard_broken_state	broken / retained / overused	C12E50;C15	白鸢是否撕掉最强无痛分镜，影响质问权和无痛模板残留
+C12E49	qihai_stinging_line_state	restored / sanitized / skipped	C12E50;C14;C15	七海刺句是否恢复，影响追责线和合法评分
+C12E49	baiyuan_question_right_state	active / softened / erased	C12E50;C15	白鸢是否把被救者质问权放回支援链
+C12E49	relationship_scar_visibility_state	visible / hidden / overexplained	C12E50;C15	纪存是否把关系疤并排展示，而非主角中心解释
+C12E49	reedit_carrier_original_voice_state	active / noise_overload / offline	C12E50;C15	重剪舰原声中继态是否保留带噪支援能力
+C12E49	support_line_protection_window_state	3_plus / partial / failed	C12E50;C15	支援台词保护窗数量和完整度影响空白核
+C12E49	perfect_relationship_support_usage_level	low / medium / high	C12E50;C15	完美关系支援使用越多，索引静音核越容易收编私人声部
+C12E49	index_relationship_pain_template	acquired	C12E50;C15	索引获得关系痛点模板并转向清理台词背后的空白
+C12E50	public_trust_countdown_state	active / accelerated / stable	C13;C14;C15	公共信托七日证进入倒计时，暴走使用越重倒计时越紧
+C12E50	gag_burned_testimony_state	listed / hidden / excessive	C13;C14;C15	被G.A.G.残缺开馆暴走燃烧的证词名单是否公开
+C12E50	far_star_late_reply_fragment_state	partial / fractured / protected	C13E51;C13	远星迟到回信残片完整度
+C12E50	wanji_residual_ui_damage_state	visible / minimized / severe	C13;C14;C15	万机馆UI、支援链和展柜伤口是否持续可见
+C12E50	qihai_low_permission_continues	true / compromised	C13;C14;C15	七海低权限状态延续且处分证据被放大
+C12E50	baiyuan_cut_blank_frame_state	active / overwritten / copied	C13;C14;C15	白鸢缺角分镜和质问权状态
+C12E50	wanji_body_runaway_debt_WBM005	WBRD001-WBRD010	C13;C14;C15	WBM005残缺开馆暴走写入十类债务，后续不得自动修复
+C12E50	jicun_machine_soul_backlash_state	active / suppressed	C13;C14;C15	纪存机魂反灼和旧馆址双影状态
+C12E50	C13_far_star_ready	true	C13E51	远星迟到回信、误译审判和灯槽通信线进入下一章
+C13E51	translation_priority_state	玩家选择情绪优先、坐标优先或机体协议优先；没有纯正确答案	C13E52;C13E53;C13E54	决定回信原文、地图稳定和远星机体协议误读
+C13E51	lightslot_anchor_integrity	四锚门槛中旧黑匣子、方舟T日志、G.A.G.残响、公开度至少守住三个才可稳定短窗	C13E52;C13E53	锚点越少越依赖索引清晰译本
+C13E51	index_clear_translation_trust	是否启用或相信索引清晰译本；短期更稳，长期清噪迟到和未译部分	C13E52;C15	决定保护性过滤模板强度和完美最终话诱惑
+C13E51	fangzhou_t_log_integrity	方舟T低置信度、humor_fail.log和禁止伪理解标记是否完整保留	C13E52;C13E53;C15	影响方舟T保护性过滤冲突与日志烧蚀选择
+C13E51	far_star_initial_misjudgement_state	远星根据残缺UI、G.A.G.燃料债、清噪污染和未定稿译本初步判定人类保管资格疑似失败	C13E52;C13E54;C14	不是敌意，而是不完整证据导致的错误保护
+C13E51	late_reply_fragment_public_mode	第一封迟到回信以未定稿、清晰译本或暂存方式进入临时展柜	C13E52;C15	影响无人可收回信的公开边界
+C13E51	qihai_low_permission_farstar_file_state	七海低权限调阅远征事故档案并写入处分链	C13E52;C14	合规线进入远星章，不是小例外
+C13E51	baiyuan_cut_blank_translation_state	白鸢缺角分镜被放入灯槽旁，不替远星修顺顺序	C13E52;C13E53;C14	白鸢线从改写痛苦转向保留未译顺序
+C13E52	reply_publication_mode	原文公开、安慰版公开或分段暂存三路线之一	C13E53;C13E54;C14	决定远星对人类粉饰/残酷/不完整负责的初始判断
+C13E52	old_ticket_exhibit_state	旧票根完整度、票价小账和播放器音量状态	C13E53;C15	影响迟到回信展和终局小物件文明尺度
+C13E52	fangzhou_filter_disabled_state	方舟T保护性过滤关闭、保留或登记来源	C13E53;C13E54;C15	决定方舟T支援效率、原文完整度和日志烧蚀压力
+C13E52	protective_filter_conflict_state	陆衡承认方舟T学会了他以保护为名过滤痛苦的错	C13E53;C15	人机亲密关系反转，不得当成AI背叛小误会
+C13E52	heir_or_recipient_right_state	收件人、继承人或相关权利未确认时的告知/暂存边界	C14;C15	后续开馆方式内战读取公开边界
+C13E52	index_protective_filter_sample	索引获得舒适摘要、痛苦片段降噪和短期稳定样本	C13E53;C15	完美最终话模板的保护过滤部件
+C13E52	far_star_reply_empathy_bias_state	远星根据公开模式把人类判为粉饰、残酷或承认不完整	C13E53;C13E54	错序通信和低帧裁决起手态度
+C13E53	sequence_order_protection_state	时间链、抵达链、情绪链的保护数量和完整度	C13E54;C15	决定低帧裁决能否接受多顺序证据
+C13E53	fangzhou_log_sacrifice_state	humor_fail.log保留、部分烧蚀或燃烧稳定窗口	C13E54;C15	影响方舟T支援口吻、空日志和人机亲密回收
+C13E53	clear_translation_lure_state	索引一键清晰顺序诱惑强度	C13E54;C15	完美最终话模板的清晰译本部件
+C13E53	far_star_incomplete_judgement_basis	远星获得不完整但更真实的裁决依据	C13E54;C15	决定低帧裁决是否暂停而非直接否定
+C13E53	rough_translation_protocol_draft_state	粗糙译本协议草案和边注完整度	C13E54;C15	下一话正式成为公共规则
+C13E53	qihai_baiyuan_sorting_wound_state	七海官方排序与白鸢温柔排序的互刺入账	C14;C15	后续开馆方式内战读取排序权伤口
+C13E54	far_star_pause_judgement_state	远星裁决机暂停裁决但不认可人类	C14;C15	下一章路线内战和终局远星声部读取
+C13E54	testimony_delivery_integrity	生活、失败、撤退、追责、误译五类证词送达数量和完整度	C14;C15	影响六路线可谈判资格和终局声部完整度
+C13E54	late_reply_exhibit_state	迟到回信展成立，旧票根和暂时代收展签进入常设候选	C14;C15	成为开馆方式内战地图障碍和终局慢灯
+C13E54	index_multivoice_testimony_sample	索引获得多声部证词可暂停远星的样本	C14;C15	完美最终话模板的无冲突多声部部件
+C13E54	rough_translation_protocol_state	粗糙译本协议正式成立，不完全懂也可作为证词	C14;C15	后续远星、索引、方舟T和终局证词读取
+C13E54	C14_opening_method_civil_war_ready	远星把问题转为门向谁开，六路线内战启动	C14E55	下一章必须进入空间和支援系统分裂
+C14E55	negotiable_route_count	保住几条路线的可谈判资格	C14E56;C14E57;C15	影响可试用路线数量和多门协议宽度
+C14E55	jicun_authority_reduced_state	纪存总策展权限降为临时协调员	C14E56;C14E57;C15	影响七海白鸢质问强度和终局策展者限权锁
+C14E55	route_support_split_state	六路线支援池拆分程度	C14E56;C15	拆得越严重下一话越难但终局声部更丰富
+C14E55	far_star_autonomy_bias_state	远星误译是否强化机魂自治极端版本	C14E56;C15	决定机魂自治壳危险残响压力
+C14E55	hardline_public_trust_entry_state	代哥硬线是否拿到公共信托可接管口径	C14E56;C15	决定公共信托路线被硬线利用程度
+C14E56	route_cost_revealed_count	暴露几条路线代价，标准主线按六条全暴露	C14E57;C15	决定多门协议完整度和索引完美协议可删减空间
+C14E56	route_flag_burn_pattern	六面路线旗烧痕：名字栏、边框、接口、例外孔、撤退名单、追责编号	C14E57;C15	进入泊位夺还战地形、六门证词墙和万机殿弱点视觉
+C14E56	multi_gate_restriction_draft_state	六条否定式限制成立但未签成协议	C14E57;C14E58;C15	用于解除索引路线绑定和生成多门开馆协议
+C14E56	qihai_power_question_state	七海把责任共担推给纪存，不让违规变成主角魅力	C14E57;C15	影响七海是否在泊位夺还战公开背离硬线系统
+C14E56	baiyuan_naming_question_state	白鸢把理解别人也是命名欲的问题外放	C14E57;C15	影响白鸢是否能不替机魂走而只托住一格
+C14E56	index_no_cost_route_order_sample	索引获得按最高收益隐藏烧痕的无代价推荐顺序	C14E57;C15	用于泊位接管效率和完美最终话模板
+C14E56	fangzhou_useless_log_visibility	方舟T坏笑话日志保留、部分烧蚀或不可见	C14E57;C15	影响远星反译温度和陆衡/方舟T终局声部
+C14E56	hardline_and_farstar_boarding_ready	代哥硬线和远星误译获得登舰入口	C14E57	下一话必须进入B1泊位夺还战
+C14E57	berth_reclaim_integrity	B1泊位和外部锁泊口夺回完整度	C14E58;C15	影响主力出击起始状态和多门协议可配置泊位
+C14E57	wanji_hull_damage_state	展舰分区变轨造成的船体损伤程度	C14E58;C15	影响万机殿前态、终局舰体变形和弱点
+C14E57	hardline_accountability_mark_state	七海是否让硬线命令留下责任人	C14E58;C15	影响公共追责门和代哥硬线终局阶段
+C14E57	autonomous_testimony_state	白鸢是否保住自主但可追责机魂证词	C14E58;C15	影响机魂自治门和白鸢关系声部
+C14E57	index_balance_model_sample	索引取得多路线制衡与展舰变轨样本程度	C14E58;C15	影响完美协议替换影和最终模板强度
+C14E57	external_berth_lock_debt	外部锁泊楔片与旧件安全债	C14E58;C15	影响唐胶兜灯签责和终局锁泊支援
+C14E57	wanji_as_board_action_state	万机馆作为棋盘单位正式成立	C14E58;C15	后续万机殿前态和最终舰体行动必须读取
+C14E57	C14E58_protocol_ready	多门协议签署条件成立	C14E58	下一话进入六门协议配置
+C14E58	multi_gate_protocol_integrity	多门协议完整度，由六门签署、烧痕保留和替换阻断决定	C15E59;C15E60	决定C15可用路线支援数量和真多声部结局门槛
+C14E58	curator_limit_lock_state	纪存锁掉唯一命名权，个人万能支援下降	C15E59;C15E60	决定是否能触发真多声部和非主角中心支援
+C14E58	qihai_accountability_key_state	七海追责密钥放在纪存可触及但不能单独使用的位置	C15E59;C15E60	影响七海恋人/共犯/改革结局声部
+C14E58	baiyuan_blank_key_state	白鸢空白密钥放在另一侧，保留不可补完格	C15E59;C15E60	影响白鸢恋人/共犯/遗憾结局声部
+C14E58	perfect_final_template_strength	索引获得多门协议并生成完美最终话模板	C15E59	决定完美主角机、无争议滤镜和标准支援强度
+C14E58	wanjidian_pre_state	万机馆进入带伤万机殿前态，保留泊位损伤、路线烧痕和迟到灯慢半拍	C15E59;C15E60	决定终局地图初始伤痕和舰体弱点
+C14E58	final_support_version_set	C15六门支援版本生成	C15E59;C15E60	公共追责护盾、留白格、旧件随机修复、失败公开防剪辑、撤退优先航线、自治拒绝权
+C14E58	far_star_pause_extension_state	远星延长暂停裁决但仍不完全认可人类	C15E59;C15E60	影响远星终局声部和低帧观察点
+C15E59	removed_testimony_recalled_count	玩家召回非最优证词数量，标准主线按至少五类召回	C15E60;C15E62	决定低规格单位强度和最终展柜声部数量
+C15E59	perfect_score_dependency	玩家依赖完美主角机和完美模板程度	C15E61	影响唯一模板核阶段数和完美主角机反噬强度
+C15E59	qihai_accountability_key_preserved	七海追责密钥是否从无争议滤镜中保住	C15E60;C15E62	影响七海结局变体和公共追责声部
+C15E59	baiyuan_blank_key_preserved	白鸢空白密钥是否从补完分镜中保住	C15E60;C15E62	影响白鸢结局变体和留白声部
+C15E59	jicun_perfect_temptation_mark	纪存承认自己曾想接受完美结局	C15E60;C15E62	影响纪存牺牲资格和关系遗憾/共犯色调
+C15E59	late_reply_truth_state	迟到回信恢复无人可收状态或被完美送达版本污染	C15E62	影响远星低帧声部和今日开馆展柜
+C15E59	perfect_protagonist_unit_unsealed_state	完美主角机从唯一主控机降级为危险可借用单位	C15E60;C15E61	可作为强诱惑支援，但使用会增加完美模板依赖
+C15E59	C15E60_low_spec_counterattack_ready	低规格单位、量产机、失败机和废案机的终局反击条件成立	C15E60	下一话必须让非主角单位完成关键目标
+C15E60	low_spec_objective_clear_count	低规格目标完成数，标准主线按至少四条完成	C15E61;C15E62	决定唯一模板核弱点数量和最终展柜非主角声部数量
+C15E60	unnamed_repair_order_named_state	无人认领维修单是否补上曾经推过它的人	C15E62	影响市政劳务机避难门展柜和现实工务声部
+C15E60	mass_production_name_integrity	灰鸥量产G贴纸名完整度	C15E61;C15E62	影响量产盾阵和最终非同声支援强度
+C15E60	jicun_center_stepback_state	纪存是否退开中心格并取消完美主角机主控倍率	C15E61;C15E62	影响纪存终局牺牲资格和主角中心回收层
+C15E60	qihai_baiyuan_support_nonexclusive_state	七海和白鸢支援首次非互斥，但不合并为主角奖励	C15E62	影响七海白鸢结局变体、三角共识和双留声部
+C15E60	index_invalid_action_cleaning_sample	索引获得无效行动清噪样本	C15E61	唯一模板核将加入清理摔倒、修门、贴纸名、缺页和旧件桥接的层
+C15E60	C15E61_wanjidian_transform_ready	万机殿带伤变形条件成立	C15E61	下一话进入万机殿形态和唯一模板核正面对决
+C15E61	template_forms_broken_count	唯一模板核六形态击破数量，标准主线至少四形态，真路线六形态	C15E62	决定索引静音核稳定交易强度和最终展柜压力
+C15E61	gate_switch_diversity	开馆门切换多样性，连续使用同一门会降低多门真结局条件	C15E62	决定多门开馆是否能保持互相追责而非单门正确
+C15E61	chorus_independence_state	是否拒绝统一最终支援字幕，保留不齐声支援	C15E62	决定全员非同声支援和群星问候候选
+C15E61	museum_stamp_shared_state	馆名章是否从纪存手中移交六门证词墙	C15E62	决定今日开馆盖章是否属于公共多声部
+C15E61	gag_common_tuning_state	G.A.G.是否进入共同调律而非暴走接管	C15E62	决定索引降格和G.A.G.灾变压力的结算口径
+C15E61	private_voice_candidates	七海、白鸢及其他关系声部是否进入私人声部候选	C15E62	影响恋人、共犯、遗憾或并肩追责结局变体
+C15E61	unique_template_core_cracked_state	唯一模板核破裂并退为静音核	C15E62	下一话索引静音核提出最后稳定交易
+C15E61	index_silence_core_ready	索引静音核准备提出最稳定开馆版本交易	C15E62	最终开馆仪式战启动
+C15E61	C15E62_today_open_ready	今日开馆配置战可启动	C15E62	下一话进入最终展柜配置和公共责任系统化索引
+C15E62	ending_route	公共信托、流亡巡展、创作者避难所、模型街自治、现实安全、机魂自治、多门真结局之一或混合变体	V32_DONE	由最终展柜门位、路线烧痕和声部数量共同决定
+C15E62	index_public_responsibility_state	索引降格为显示来源、可拒绝、可追责的公共责任系统	V32_DONE	索引保留风险预警和冲突提示，但失去独自命名、封存、补完和盖章权
+C15E62	final_exhibit_voice_count	最终展柜刺痛声部数量，标准主线至少八类核心证词入柜	V32_DONE	决定后日谈丰富度、全员非同声支援强度和EX入口
+C15E62	qihai_ending_variant	恋人、共犯、改革席位、遗憾、并肩追责或公共协议线	V32_DONE	由追责密钥、白名单灼痕和共同追责书归属决定
+C15E62	baiyuan_ending_variant	恋人、共犯、空白共同策展、遗憾、并肩追责或公共空白线	V32_DONE	由空白密钥、空白格公开状态和纪存终端留白决定
+C15E62	fangzhou_t_log_epilogue	方舟T日志完整、缺失或陆衡手动补注	V32_DONE	决定未译陪同画面和远星是否保存该拒绝统一方式
+C15E62	far_star_greeting_state	远星仍未理解但延长观察，并保存拒绝统一方式	V32_DONE	远星不认可不裁决，只继续旁听万机殿开馆
+C15E62	ex_hidden_voice_seed	EX、隐藏关和二周目追加声部入口开放	V32_DONE	后续追加隐藏机体和残响声部，但不用于弥补主线机体/IP密度
+C15E62	V32_mainline_complete	V32从C08E33到C15E62主线episode packet完成	C15_REVIEW	需要C15章节装配和prefix regression review后才能标记章节完成

@@ -1,0 +1,479 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>从方案到可实现设计 · 工务城整改计划</title><style>
+:root{--ink:#243742;--muted:#586e78;--paper:#f4f2eb;--panel:#fffefa;--line:#d3ddd9;--teal:#176b73;--amber:#a96120;--accent:#dc674d}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;line-height:1.85;font-size:16px}a{color:var(--teal);text-decoration-thickness:1px;text-underline-offset:3px}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.skip{position:absolute;top:-80px}.skip:focus{top:10px;background:white;padding:10px;z-index:9}.shell{display:grid;grid-template-columns:245px minmax(0,1fr);max-width:1600px;margin:auto}.sidebar{position:sticky;top:0;height:100vh;overflow:auto;background:#e5ece8;border-right:1px solid #c4d5d0;padding:30px 20px}.brand{font-size:14px;letter-spacing:.12em;color:var(--teal);font-weight:750}.date{font-size:12px;color:var(--muted);margin:7px 0 24px}.nav a{display:block;text-decoration:none;padding:9px 12px;border-radius:7px;margin:4px 0}.nav a.active{background:var(--teal);color:white}.nav a:hover{box-shadow:inset 0 0 0 1px var(--teal)}.status{border-top:1px solid var(--line);margin-top:25px;padding-top:15px;color:var(--muted);font-size:13px}.status strong{color:var(--amber)}main{padding:42px clamp(24px,4vw,65px) 80px;min-width:0}article{max-width:1100px;margin:auto}h1{font-size:clamp(28px,3vw,39px);line-height:1.4;letter-spacing:-.03em;margin:0 0 18px}h2{font-size:25px;margin:55px 0 20px;border-top:2px solid var(--line);padding-top:24px;line-height:1.5}h3{font-size:20px;margin:30px 0 12px;color:var(--teal)}p,ul,ol{margin:14px 0}li{margin:7px 0}strong{font-weight:690}blockquote{margin:22px 0;background:#e6efeb;padding:14px 25px;border-left:4px solid var(--teal);border-radius:0 8px 8px 0}code{font-family:ui-monospace,monospace;font-size:.87em;background:#e8ece6;padding:2px 5px;border-radius:4px;overflow-wrap:anywhere}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:9px;margin:20px 0;background:var(--panel)}table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7}th{text-align:left;padding:13px 14px;background:#dce8e3;color:#204c53;font-weight:700}td{vertical-align:top;padding:13px 14px;border-top:1px solid var(--line)}td:first-child{min-width:145px;font-weight:560}tr:nth-child(even) td{background:#f8f8f1}img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}article>p:has(img){max-width:800px;margin:25px auto}figure{margin:25px 0}figcaption,.caption{font-size:13px;color:var(--muted)}details{margin:18px 0;padding:15px 20px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}summary{cursor:pointer;color:var(--teal);font-weight:650}.toc{background:#edf0e8;border:1px solid var(--line);border-radius:8px;padding:16px 22px;margin:28px 0;font-size:14px}.toc a{display:inline-block;margin:3px 14px 3px 0}.foot{margin-top:45px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}.filters{display:flex;gap:12px;flex-wrap:wrap;position:sticky;top:0;background:var(--paper);padding:12px 0;z-index:3}input,select{font:inherit;border:1px solid #90aaa8;border-radius:7px;background:var(--panel);padding:9px 12px;color:var(--ink)}input{flex:1;min-width:220px}.count{font-size:13px;color:var(--muted)}.source-note{font-size:13px;color:var(--muted)}.badge{font-size:12px;padding:3px 7px;background:#dcece5;border-radius:4px;white-space:nowrap}.ledger-card{border:1px solid var(--line);background:var(--panel);border-radius:9px;padding:18px 20px;margin:12px 0}.ledger-card h3{margin:0 0 8px;font-size:17px}.ledger-card p{margin:8px 0;font-size:14px}.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.ledger-card summary{font-size:13px}.ledger-card details{padding:10px 14px}.task-links a{display:inline-block;margin-right:10px}.footer-nav{display:flex;justify-content:space-between;gap:15px;margin-top:30px}svg{max-width:100%;height:auto}
+@media(max-width:1000px){.shell{grid-template-columns:205px minmax(0,1fr)}.sidebar{padding:25px 12px}main{padding:32px 22px 55px}table{min-width:650px}}
+@media(max-width:720px){.shell{display:block}.sidebar{position:static;height:auto;padding:16px 18px;border-right:0;border-bottom:1px solid var(--line)}.date{margin-bottom:10px}.nav{display:flex;gap:5px;overflow:auto}.nav a{white-space:nowrap;font-size:13px;padding:7px 10px}.status{display:none}main{padding:26px 18px 50px}body{font-size:16px}h2{font-size:22px;margin-top:40px}.filters{position:static}h1{font-size:28px}td,th{padding:11px}.toc a{display:block}}
+@media print{.sidebar,.filters,.footer-nav,.skip{display:none}.shell{display:block}main{padding:0}body{background:white;font-size:10pt}h1{font-size:22pt}h2{font-size:16pt;break-after:avoid}h3{break-after:avoid}.table-wrap{overflow:visible;border-radius:0}table{min-width:0!important;font-size:9pt}tr{break-inside:avoid}a{color:inherit}details{break-inside:avoid}.ledger-card{break-inside:avoid}}
+
+.nav-label{font-size:12px;font-weight:750;letter-spacing:.07em;margin:24px 12px 10px;color:var(--muted)}.nav small{float:right;font-size:11px;opacity:.7}.detail-reading{background:#dfece5;border:1px solid #adcbc0;border-radius:10px;padding:20px 24px;margin:28px 0}.detail-reading ul{columns:2;column-gap:30px;font-size:14px;padding-left:20px}.detail-reading li{break-inside:avoid}.design-item{padding:16px 0 35px;border-bottom:2px solid var(--line);scroll-margin-top:24px}.design-item h3{font-size:22px;line-height:1.5}.design-item>p{max-width:960px}.design-example{border-left:4px solid var(--amber);background:#f1e7d1;border-radius:0 8px 8px 0;padding:15px 22px;margin:21px 0}.design-example p{margin:6px 0 0}.implementation{font-size:14px;overflow-wrap:anywhere}.implementation a{word-break:break-word}.item-toc{font-size:14px}.item-toc ul{columns:2}.item-toc li{break-inside:avoid}figure img{display:block;width:100%;max-height:none;background:#f0f0e7}figure figcaption{padding:10px 4px 0;line-height:1.7}figure a:has(img){display:block}figure{margin:28px 0 35px}figure strong{color:var(--teal)}button{font:inherit;padding:10px 18px;border:1px solid var(--teal);border-radius:6px;background:#e0eee7;color:var(--ink);cursor:pointer}.read-detail{font-weight:700}.ledger-card{scroll-margin-top:20px}.design-item blockquote{font-size:16px}.design-item .source-note{font-size:13px}.design-item:target{border-left:5px solid var(--teal);padding-left:20px;background:#f8f9ef}.nav a.active{font-weight:700}
+@media(max-width:720px){.detail-reading ul,.item-toc ul{columns:1}.design-item h3{font-size:20px}.nav-label{display:none}.detail-reading{padding:14px 17px}figure{margin:22px -4px}figure img{border-radius:5px}.design-example{padding:12px 15px}.design-item:target{padding-left:12px}}
+</style></head><body><a class="skip" href="#main">跳到正文</a><div class="shell"><aside class="sidebar"><div class="brand">超 GAG / 工务城</div><div class="date">完整整改计划 · 10.10 实施更新</div><nav class="nav" aria-label="分册导航"><a href="index.html">00　总方案</a><a href="13-%E5%BB%BA%E7%AD%91%E6%AF%94%E4%BE%8B%E4%B8%8E%E6%9D%90%E8%B4%A8%E9%87%8D%E5%81%9A.html">13　建筑比例与材质重做</a><a href="12-%E9%A6%96%E7%89%88%E4%BA%A4%E4%BB%98%E4%B8%8E%E9%AA%8C%E8%AF%81.html">12　首版交付与验证</a><a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html">07　首关施工规格</a><a href="08-%E5%9B%BE%E5%BD%A2%E4%B8%8E%E6%89%8B%E6%84%9F%E6%96%BD%E5%B7%A5%E8%A1%A8.html">08　图形与手感施工表</a><a href="11-%E5%90%8D%E5%9C%BA%E9%9D%A2%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%85%A8%E9%93%BE%E8%A1%A5%E5%AE%9A.html">11　名场面与系统补定</a><a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html">09　人物指令与机魂</a><a href="10-%E4%B8%93%E5%85%B3%E4%B8%8E%E6%88%90%E9%95%BF%E5%AF%B9%E7%85%A7%E8%A7%84%E6%A0%BC.html">10　专关与成长对照</a><a href="01-%E6%A0%B8%E5%BF%83%E6%9C%BA%E5%88%B6%E4%B8%8E%E6%93%8D%E4%BD%9C.html">01　核心机制与操作</a><a href="02-%E7%BE%8E%E6%9C%AF%E4%B8%8E%E9%80%90%E6%8B%9B%E6%BC%94%E5%87%BA.html">02　美术与逐招演出</a><a href="03-%E6%9C%BA%E4%BD%93%E4%B8%8E%E4%BA%BA%E7%89%A9%E4%BD%93%E7%B3%BB.html">03　机体与人物体系</a><a href="04-%E6%88%98%E5%9C%BA%E4%B8%8E%E7%AB%8B%E4%BD%93%E6%9C%BA%E5%88%B6.html">04　战场与立体机制</a><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html">05　施工与验收</a><a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html" class="active" aria-current="page">06　从方案到可实现设计</a><a href="图解总览.html">39 张原创图解</a><a href="覆盖核对.html">搜索 331 条具体设计</a><div class="nav-label">逐项展开 · 9 册</div><a href="%E6%9D%A1%E7%9B%AE01-%E6%93%8D%E4%BD%9C%E7%95%8C%E9%9D%A2%E4%B8%8E%E4%BD%93%E9%AA%8C%E7%BB%B4%E5%BA%A6.html">操作界面与体验维度 <small>40</small></a><a href="%E6%9D%A1%E7%9B%AE02-%E7%BE%8E%E6%9C%AF%E5%9C%BA%E6%99%AF%E4%B8%8E%E8%AF%AD%E4%B9%89%E8%89%B2.html">美术场景与语义色 <small>45</small></a><a href="%E6%9D%A1%E7%9B%AE03-%E5%8A%A8%E4%BD%9C%E8%8A%82%E5%A5%8F%E4%B8%8E%E6%89%93%E5%87%BB%E5%8F%8D%E9%A6%88.html">动作节奏与打击反馈 <small>66</small></a><a href="%E6%9D%A1%E7%9B%AE04-%E5%8D%81%E5%85%AB%E6%8B%9B%E4%B8%8E%E9%94%99%E8%AF%AF%E7%A4%BA%E6%84%8F.html">十八招与错误示意 <small>46</small></a><a href="%E6%9D%A1%E7%9B%AE05-%E6%95%8C%E4%BA%BA%E6%88%98%E6%96%97%E4%B8%8E%E7%BB%BC%E5%90%88%E5%BB%BA%E8%AE%AE.html">敌人战斗与综合建议 <small>32</small></a><a href="%E6%9D%A1%E7%9B%AE06-%E9%AB%98%E5%BA%A6%E6%9C%BA%E6%9E%84%E4%B8%8E%E7%A9%BA%E5%9C%B0.html">高度机构与空地 <small>41</small></a><a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html">机体主体与系统恢复 <small>39</small></a><a href="%E6%9D%A1%E7%9B%AE08-%E5%8D%81%E6%9D%A1%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4.html">十条人物指令 <small>10</small></a><a href="%E6%9D%A1%E7%9B%AE09-%E5%8D%A1%E7%BB%84%E4%B8%8E%E6%88%90%E9%95%BF%E5%AF%B9%E7%85%A7.html">卡组与成长对照 <small>12</small></a></nav><div class="status"><strong>10月10日更新</strong><br>新美术规范、三区色板与背景已接入。<br><a href="13-建筑比例与材质重做.html">当前实机与模型</a><br>三面救援与独立试演继续整改。<br><a href="12-首版交付与验证.html">实机、验证与剩余项</a><br>完整52包仍需逐项验收。<br><br>来源：Grok v5、批评稿及补全清单<br>首批：六机、三面救援<br>报告条目：可按原编号核对</div></aside><main id="main"><article><h1>从方案到可实现设计：一项建议怎样落进游戏</h1>
+<blockquote>
+<p><strong>10月9日第二轮补定：</strong> 首关数值/布局读<a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html">07</a>，动作/手感读<a href="08-%E5%9B%BE%E5%BD%A2%E4%B8%8E%E6%89%8B%E6%84%9F%E6%96%BD%E5%B7%A5%E8%A1%A8.html">08</a>，人物/机魂读<a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html">09</a>，专关/成长/范围读<a href="10-%E4%B8%93%E5%85%B3%E4%B8%8E%E6%88%90%E9%95%BF%E5%AF%B9%E7%85%A7%E8%A7%84%E6%A0%BC.html">10</a>。下文完整扩展与首关子集分别验收；同名参数只保留一套当前值。</p>
+</blockquote>
+<p>这册补足“准备怎么做”。前五册定义体验方向，逐项设计册逐条回应报告；这里把它们收束成可实现、可验证的共同机制。下面的接口名、参数和局面是<strong>拟定设计</strong>，不是声称现有代码已经具备。首关具体数值以07/08当前版本定义；回归示例和全量扩展均单独标范围，不作为首关并列参数。</p>
+<!-- DETAIL_BOOKS_START -->
+<div class="detail-reading"><strong>逐项设计入口</strong>
+
+<ul>
+<li><a href="%E6%9D%A1%E7%9B%AE01-%E6%93%8D%E4%BD%9C%E7%95%8C%E9%9D%A2%E4%B8%8E%E4%BD%93%E9%AA%8C%E7%BB%B4%E5%BA%A6.html">操作界面与体验维度：40条</a></li>
+<li><a href="%E6%9D%A1%E7%9B%AE02-%E7%BE%8E%E6%9C%AF%E5%9C%BA%E6%99%AF%E4%B8%8E%E8%AF%AD%E4%B9%89%E8%89%B2.html">美术场景与语义色：45条</a></li>
+<li><a href="%E6%9D%A1%E7%9B%AE03-%E5%8A%A8%E4%BD%9C%E8%8A%82%E5%A5%8F%E4%B8%8E%E6%89%93%E5%87%BB%E5%8F%8D%E9%A6%88.html">动作节奏与打击反馈：66条</a></li>
+<li><a href="%E6%9D%A1%E7%9B%AE04-%E5%8D%81%E5%85%AB%E6%8B%9B%E4%B8%8E%E9%94%99%E8%AF%AF%E7%A4%BA%E6%84%8F.html">十八招与错误示意：46条</a></li>
+<li><a href="%E6%9D%A1%E7%9B%AE05-%E6%95%8C%E4%BA%BA%E6%88%98%E6%96%97%E4%B8%8E%E7%BB%BC%E5%90%88%E5%BB%BA%E8%AE%AE.html">敌人战斗与综合建议：32条</a></li>
+<li><a href="%E6%9D%A1%E7%9B%AE06-%E9%AB%98%E5%BA%A6%E6%9C%BA%E6%9E%84%E4%B8%8E%E7%A9%BA%E5%9C%B0.html">高度机构与空地：41条</a></li>
+<li><a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html">机体主体与系统恢复：39条</a></li>
+<li><a href="%E6%9D%A1%E7%9B%AE08-%E5%8D%81%E6%9D%A1%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4.html">十条人物指令：10条</a></li>
+<li><a href="%E6%9D%A1%E7%9B%AE09-%E5%8D%A1%E7%BB%84%E4%B8%8E%E6%88%90%E9%95%BF%E5%AF%B9%E7%85%A7.html">卡组与成长对照：12条</a></li>
+</ul>
+<p>每条包含原因、采纳决定、具体规格、操作/画面、局面例子、验证反例及施工入口。</p>
+</div>
+<!-- DETAIL_BOOKS_END -->
+## 1. 通用规则的责任边界
+
+<!-- PLAN_FIGURE_START -->
+<figure id="fig-G14"><a href="图解/G14-通用机制与呈现.png"><img src="图解/G14-通用机制与呈现.png" alt="原创方案图解：通用机制与呈现" loading="lazy"></a><figcaption><strong>G14 · 原创设计示意。</strong> 这是拟建的责任划分，展示一份可追溯结果如何服务玩家；不表示现有代码已完成重构。 <a href="图解/G14-通用机制与呈现.svg">查看矢量图</a></figcaption></figure>
+<!-- PLAN_FIGURE_END -->
+
+
+<p>不能继续在“这是供电柜”“这是王者”“这是工务城B区”的判断里加特例。需要分开五种职责，让另一个任务也能配置出来。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向查看的表格"><table>
+<thead>
+<tr>
+<th>层</th>
+<th>它决定什么</th>
+<th>它不应该决定什么</th>
+<th>本轮落点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>对象与空间</td>
+<td>谁在什么结构面，占几格，有多重，能否移动、导电、燃烧、承重</td>
+<td>因为名叫某机就免疫一切地形</td>
+<td>身体规格、设施属性、结构面与支撑图</td>
+</tr>
+<tr>
+<td>装备与效果</td>
+<td>射程、形状、命中、推距、工具资格、费用、持续时间</td>
+<td>为当前剧情临时送给机体一个万能维修键</td>
+<td>最终动作合同、显式效果序列</td>
+</tr>
+<tr>
+<td>命令与阶段</td>
+<td>路线是否可行、动作何时发生、当前还有多少预算</td>
+<td>把动画几秒当成几拍行动消耗</td>
+<td>统一接近求解、主行动、准备/持续/在途状态</td>
+</tr>
+<tr>
+<td>任务与身份</td>
+<td>保护谁、什么构成推进/失败、市政资产损失、权限条件</td>
+<td>跳过物理规则直接让列车穿过货箱</td>
+<td>条件图、事件订阅、身份与证据</td>
+</tr>
+<tr>
+<td>呈现与输入</td>
+<td>玩家如何发现、选择、预演、执行、回看</td>
+<td>自己再算一份伤害、猜这招该画推箭头</td>
+<td>鼠标四态、结果绘制器、事件演出与音频</td>
+</tr>
+</tbody></table></div>
+<p>这些层可以在一个工程内逐步重构，不要求拆成五套服务。先保留当前快照和规则入口，把一个完整样板贯通，之后迁移其余动作。旧版四拍模式与逐机模式用明确入口区分，旧存档加规则版本，不能让同一存档半数动作按拍、半数按回合运行。</p>
+<p>拟定的数据接口如下。玩家不用看这些字段；它们的作用是防止说明、图形、效果各说各话。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向查看的表格"><table>
+<thead>
+<tr>
+<th>记录</th>
+<th>必须包含的字段</th>
+<th>为什么需要</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ObjectState</code></td>
+<td>唯一身份、阵营、保全身份、脚印、质量、结构面、生命/盾/装甲、能力标签</td>
+<td>同一工机可以敌对却需要保全；四格机是一个对象而不是四个受伤对象</td>
+</tr>
+<tr>
+<td><code>ResolvedActionSpec</code></td>
+<td>形态/装备/模块来源、目标资格、射程、作用形状、有序效果、费用、时间状态、挂点和演出类型</td>
+<td><code>force=3</code>只能表示力，不能被示意图偷换成推3格或推1格</td>
+</tr>
+<tr>
+<td><code>Command</code></td>
+<td>发起者、动作、目标、方向、载荷/落点等参数、自动接近路线、状态版本</td>
+<td>一次输入能够完整复现；不依赖鼠标最后停在哪或当前哪个UI面板还开着</td>
+</tr>
+<tr>
+<td><code>SimulationResult</code></td>
+<td>合法性与原因、接近计划、事件序列、终态、即时差值、下一敌阶段差值、风险、未知部分</td>
+<td>预演、提交、图示与回看读取同一份结果；不同时间的伤害不混算</td>
+</tr>
+<tr>
+<td><code>Event</code></td>
+<td>顺位、来源、目标、前后值、阶段、地区/结构面、父事件、规则版本</td>
+<td>能说清第二次爆炸从哪里来、哪一手救了桥、哪台工机为什么损失</td>
+</tr>
+<tr>
+<td><code>PresentationCue</code></td>
+<td>对应事件、起手/接触/就绪时点、挂点、动作、特效、声音、镜头强度</td>
+<td>伤害发生时血条、音效与受击同步；跳过只改变播放，不改变结果</td>
+</tr>
+</tbody></table></div>
+<nav class="toc" aria-label="本页目录"><a href="#section-1">2. 一手棋从输入到反馈，完整走一遍</a><a href="#section-2">3. 规则顺序、异常和撤回要一次讲清</a><a href="#section-3">4. 鼠标与界面需要制作到什么程度</a><a href="#section-4">5. 一套资产怎样从“有图”走到可用</a><a href="#section-5">6. 关卡把系统组织成什么局面</a><a href="#section-6">7. 施工如何防止计划再次被做粗</a><a href="#section-7">8. 拟修改入口与替换边界</a></nav><h2 id="section-1">2. 一手棋从输入到反馈，完整走一遍</h2>
+<p>本节保留为独立规则回归例局，坐标与终止条件不是07首关配置。首关桥座失效可修复、首次城防−2，不单因断桥立即宣告任务失败。</p>
+<p>建立一个固定测试局，既用来开发，也用来录制用户能看懂的样片：</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向查看的表格"><table>
+<thead>
+<tr>
+<th>对象</th>
+<th>初始状态</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>桥</td>
+<td>B区 <code>(4,2)</code>，耐久4、无盾；是任务通路的一部分</td>
+</tr>
+<tr>
+<td>拆解工机</td>
+<td>B区 <code>(3,2)</code>，耐久5、质量3、市政保全对象；已经准备好，本敌阶段将接触拆桥3伤</td>
+</tr>
+<tr>
+<td>架设炮</td>
+<td>A区，已承诺本敌阶段向同一桥打2伤；拆解后执行</td>
+</tr>
+<tr>
+<td>预算二号</td>
+<td>B区 <code>(2,3)</code>，剩余移动3、主行动1；液压顶推力量3、推1、无直接伤害</td>
+</tr>
+<tr>
+<td>空位</td>
+<td><code>(3,3)</code>可站、<code>(3,1)</code>有稳定支撑；其余与这手无关的对象不参与</td>
+</tr>
+</tbody></table></div>
+<p>不作为：桥先受3再受2，耐久 <code>4→1→0</code>，超出耐久的伤害不额外计成“负一耐久”。预计伤害总额为5，实际掉耐久4；任务失败条件按桥毁后的路线可恢复性判定。本测试局约定桥毁即救援失败，正式任务不应把所有普通设施损坏都当失败。</p>
+<p>玩家选择顶推时，光标停在工机上，求解器找到 <code>(2,3)→(3,3)</code> 的接近路线，从南向北推到 <code>(3,1)</code>。界面应同时给出：绿色走位线、目标向北大箭头、落点虚影、工机HP不变、拆解接触线划除，以及“桥来袭伤害5→2；市政损失0”。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向查看的表格"><table>
+<thead>
+<tr>
+<th>顺序</th>
+<th>规则发生什么</th>
+<th>玩家看到什么</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>悬停</td>
+<td>在克隆状态中求路线与效果，不改真实状态</td>
+<td>路线、推向、取消的拆解、仍有效的A炮线；移动将余2</td>
+</tr>
+<tr>
+<td>点击目标</td>
+<td>重验状态版本；整体命令合法；扣移动1、主行动1</td>
+<td>无风险则不再确认；预算二号连续跑向出手位</td>
+</tr>
+<tr>
+<td>工具接触</td>
+<td>工机受推，无直接扣血；终点有承重</td>
+<td>支脚抵地、活塞推伸、工机连续滑到新格，不能播成拳爆</td>
+</tr>
+<tr>
+<td>状态变化</td>
+<td>接触依赖失效；拆解承诺保留记录但当前无效</td>
+<td>旧拆解线划除，桥预扣由5改2；非致死保全标保持</td>
+</tr>
+<tr>
+<td>玩家继续</td>
+<td>预算二号余2移动、无主行动；其他机可选</td>
+<td>选招收起，仍可移动；下一处急事是A炮或桥防护</td>
+</tr>
+<tr>
+<td>敌方阶段</td>
+<td>拆解因接触失效不伤桥；A炮仍打2，桥 <code>4→2</code></td>
+<td>两个不同结果按顺位播放：一个失效原因，一个真实炮击</td>
+</tr>
+<tr>
+<td>小结</td>
+<td>消去一条3伤来袭；桥原会掉4归零，现在实际掉2；没有市政损失</td>
+<td>实绩与下轮预告分栏，点桥损伤可回到A炮来源</td>
+</tr>
+</tbody></table></div>
+<p>这才是一手完整的“做了什么、为什么有效、还缺什么”，而不是“机体走到一个坐标”。其中自动接近、位移、接触中断、市政身份、跨区威胁，全部是通用规则。</p>
+<p>同局还要测试两种替案：</p>
+<ul>
+<li><strong>只给桥中心盾2：</strong> 拆解3先减到1点HP损失，之后炮2，桥最终 <code>4→1</code>。这是一种可行保桥方法，但工机仍在拆解位置，而且群盾可能顺便保护邻接工机。预演不能说所有攻击都取消。</li>
+<li><strong>只用伤2光束打工机：</strong> 工机仍剩3HP，拆解照常，桥仍有致败风险。界面必须指出“打中了，但没有解除威胁”，不能用爆炸演出假装解题成功。</li>
+</ul>
+<h2 id="section-2">3. 规则顺序、异常和撤回要一次讲清</h2>
+<p>初始统一顺序是：命令资格→路径途中事件→动作效果序列→对象生命变化→支撑/地形重算→派生连锁→任务条件更新。某武器需要先推再伤时，在它的效果序列明确声明，不能在动画里临时倒过来。</p>
+<p>首关统一采用“原始伤害→有效护甲/护群减免→盾值吸收→HP减少”。标定只绕过声明的护群，不绕自身装甲和盾。环境/坠落是否吃护甲在该效果上定义。盾为本案的数值池，不把“盾2”一会儿解释成挡两次攻击、一会儿解释成挡两点伤。临时支撑不叫盾，也不混入HP。</p>
+<p>两条双炮线是两个伤害效果，可以各命中同一大机一次；单个十字爆心覆盖大机三格仍只算一次该爆心伤害。多枚独立导弹是否可叠中必须写进武器合同。这样规则来自效果次数，不来自循环遍历格子的次数。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向查看的表格"><table>
+<thead>
+<tr>
+<th>情况</th>
+<th>明确处理</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>鼠标预演后别人改变状态</td>
+<td>提交时版本重验，重新展示变化；不执行过期命令</td>
+</tr>
+<tr>
+<td>普通命令从一开始就不合法</td>
+<td>不走、不扣费；指明障碍、距离、资格或资源原因</td>
+</tr>
+<tr>
+<td>已公示防空反应使途中受伤</td>
+<td>这是命令已含的风险，不是假失败；按事件顺序执行，若失能则停止后续动作</td>
+</tr>
+<tr>
+<td>路径本身安全，但终点入敌炮区</td>
+<td>允许安排，显示后续风险；不把“危险”当成“不可达”</td>
+</tr>
+<tr>
+<td>多机争同一格</td>
+<td>逐机模式以当前状态计算；已占位后下一机重算路线。同批强推与运输预留/坍塌则按07§7，不能用后手重算代替</td>
+</tr>
+<tr>
+<td>双目标操作选了一半</td>
+<td>右键退一个参数；未提交不扣任何费</td>
+</tr>
+<tr>
+<td>移动撤回</td>
+<td>仅可撤无不可逆事件、无后续命令依赖的最近移动；否则给真实原因</td>
+</tr>
+<tr>
+<td>整回合重置</td>
+<td>恢复全部快照、随机种子、资源、牌堆、人物费用、链路和事件；禁止半回滚</td>
+</tr>
+<tr>
+<td>快进或跳过</td>
+<td>保持同一事件序列与终态；快进不能漏造物、漏音效清理或留下半透明身体</td>
+</tr>
+</tbody></table></div>
+<h2 id="section-3">4. 鼠标与界面需要制作到什么程度</h2>
+<p>输入分发先检查模态风险窗和UI命中，再检查已捕获的相机手势，最后才派发棋盘命令。Ctrl按下开始的拖动直到鼠标释放都属于相机，即使先松Ctrl，也不能把抬鼠标解释成移动。</p>
+<p>普通“选机→移光标→左键落点”只需要两次点击；“已选机→选技能→移光标→左键目标”也只增加选招与提交。不能把每条动作统一包装成先选单、再选择、再撤回/确认。风险确认和吊运第二目标是必要的额外步骤，必须在操作记录里单独统计。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向查看的表格"><table>
+<thead>
+<tr>
+<th>图形组件</th>
+<th>出现时机与位置</th>
+<th>内容与退出</th>
+<th>具体制作件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>对象简卡</td>
+<td>未点击即可随悬停；自动躲开对象和屏幕边</td>
+<td>名称、关键特性、当前能做什么；移开即收</td>
+<td>九宫格背板、指针锚点、3级字型、I详情提示</td>
+</tr>
+<tr>
+<td>角色选择</td>
+<td>点地图模型或脚底任一可识别区域</td>
+<td>可达外缘、绿色路径、头像状态；右键退出</td>
+<td>模型投影拾取、脚印边框、统一头像裁切</td>
+</tr>
+<tr>
+<td>目标效果</td>
+<td>技能瞄准当前对象附近</td>
+<td>血槽闪段、盾损、推移虚影、碰撞/坠落、被取消威胁</td>
+<td>每种效果的图标与生成器，来源连线</td>
+</tr>
+<tr>
+<td>技能短卡</td>
+<td>当前机体选择态</td>
+<td>2–4主招，特殊接口贴目标；无展开的大百科</td>
+<td>动作类图标、耗费标、准备/持续状态角标</td>
+</tr>
+<tr>
+<td>危险确认</td>
+<td>只有实质友伤、保全损失或已知致败等</td>
+<td>冻住当前预览，列对象与代价；确认或退回瞄准</td>
+<td>清楚危险背板、两个可焦点按钮、Enter映射</td>
+</tr>
+<tr>
+<td>回合摘要</td>
+<td>顶部短条/结束回合展开</td>
+<td>当前保护值、预计变化、各区最急威胁</td>
+<td>城防/桥/车不同单位图标，不混无名0/2</td>
+</tr>
+<tr>
+<td>敌方回放</td>
+<td>规则已提交后的播放态</td>
+<td>暂停、速度、跳过、当前来源；详情可看但不发命令</td>
+<td>同事件时间轴、源/目标镜头、可定位小结</td>
+</tr>
+<tr>
+<td>三区联动</td>
+<td>操作确实改到另一工作面时</td>
+<td>源到目标短脉冲，目标缩略窗；玩家点击才切主镜头</td>
+<td>区缩略画面、连接箭头、阻塞条件差值</td>
+</tr>
+</tbody></table></div>
+<p>默认字级和大小先按1080p制作样板，再到用户RMBP实际窗口与125%字号验证。预览线需有暗描边，文字背板要足够实，不能靠全局变暗提升可读性。常驻战术叠层只占需要的局部，机体与设施材质仍看得清。</p>
+<p>性能验收同时记录：输入时间、状态变更时间、范围显示时间、第一次可见反馈帧。鼠标快划多个目标时，旧计算不能覆盖新目标；缓存按地图版本、单位预算、动作变体与目标失效。只修掉选择卡顿而每帧同步生成大3D小舞台，仍不算通过。</p>
+<h2 id="section-4">5. 一套资产怎样从“有图”走到可用</h2>
+<p>所有正式可选机体使用同一制作完成标准：来源图/设计稿→三维身体→贴图与材质→骨骼和挂点→待机/移动/受击/失能→各招动作→头像和UI状态→正常棋盘距离验证。不是要求长得相同，也不允许细致3D与简陋2D贴片混在一个阵容。</p>
+<p>场景资产必须同时交付正常视距和近景效果。地板不仅有底色纹理，还要有边厚、伸缩缝、排水槽与断口；建筑按供电、承重、交通的功能构造。正常镜头的轮廓优先于盲目增加小螺丝。照片噪点需整理到风格化材质里，不能靠删掉所有贴图统一。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向查看的表格"><table>
+<thead>
+<tr>
+<th>制作包</th>
+<th>必交资产</th>
+<th>与规则的连接</th>
+<th>不接受的替代</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>12类场景物</td>
+<td>模块网格、共享图集、材质参数、损毁态、碰撞/承重面</td>
+<td>破损/失电/承重条件真实驱动外观</td>
+<td>所有物体换色立方体、只有烟没损坏</td>
+</tr>
+<tr>
+<td>14机共同动作</td>
+<td>站立呼吸、连续跑/滑行、朝向转换、受击、失能、恢复</td>
+<td>与脚印、移动路径、生命状态同步</td>
+<td>程序摇头代替动作、脚底漂移、透明残影</td>
+</tr>
+<tr>
+<td>18招报告样本</td>
+<td>每招关键姿态、武器挂点、命中点、收势、效果、声音</td>
+<td>对应其最终动作合同与事件时点</td>
+<td>全部套挥拳，工程对象凭空出现</td>
+</tr>
+<tr>
+<td>其余8机特色</td>
+<td>每机至少一个有明确代价的招牌动作，以及配套基础动作</td>
+<td>同样走规则、图卡、预演、回放</td>
+<td>只在选人页列名，或只借另一机的整套动作</td>
+</tr>
+<tr>
+<td>人物表达</td>
+<td>一致头肩比例、在场头像、情境表情、短通讯与台词触发</td>
+<td>驾驶员/机魂/现场/远程身份</td>
+<td>缺席人物主持现场、每次点击强播对白</td>
+</tr>
+</tbody></table></div>
+<p>动作样板首先选择四种容易暴露系统问题的动词：预算墙、灰崎拘束、王者双炮、货柜护场。它们分别验证产物、持续控制、双射线/蓄力、大范围支援。四招都在常规镜头有效后，再扩到全部18招，不能拿一张必杀特写代替其他动作完成。</p>
+<p>本关18招采用08的独立接触/恢复时钟；目标是能看见蓄、放、停、收又不等待空白。修复只有缺1HP就不播假三段加血，盾吸收不播装甲碎裂，推不动要有受阻反馈。声音至少拆启动、接触、材质、低频和尾音；录像必须录入音频才能评审声音。</p>
+<h2 id="section-5">6. 关卡把系统组织成什么局面</h2>
+<p>不把12种机关和20条空地规则一次塞进主救援关。每个工作面先挑两三种最能表达职责的材料，其他机制进入结构变体或独立测试场，然后组合验证。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向查看的表格"><table>
+<thead>
+<tr>
+<th>区域</th>
+<th>核心冲突</th>
+<th>工程解法</th>
+<th>战斗解法</th>
+<th>混合解法与代价</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A供能前庭</td>
+<td>供电抢修与架设炮形成时间压力</td>
+<td>修母线、改供电路、操作馈电柜</td>
+<td>清架设体/啮线体，获得安全施工时间</td>
+<td>先顶敌脱架→工程机修；消耗两机行动但保设备</td>
+</tr>
+<tr>
+<td>B跨渠桥</td>
+<td>桥受拆解与炮击，必须维持承载</td>
+<td>临时撑、永久修、控制水位、替换支点</td>
+<td>杀拆解者、用敌炮误伤、断敌脚下支撑</td>
+<td>给市政工机盾后控位，保全但耗盾与时间</td>
+</tr>
+<tr>
+<td>C装卸站</td>
+<td>车被牵引和货箱双重阻塞，增援逼近</td>
+<td>解令/关停、吊箱、运输备件</td>
+<td>摧毁阻碍，清空增援波</td>
+<td>灰崎关停工机、货柜护车；省市政损失但需保护施工者</td>
+</tr>
+</tbody></table></div>
+<p>初期局面要求玩家第一回合至少能完成一次完整因果，而不是所有机先走两轮。敌人发布前会找合法命中、避低收益危险、评估同伴；发布后坚持承诺。玩家改变地形、方向和供能，才创造打空、误伤与连爆。不能让AI为了躲玩家每次新动作，实时把题目改掉。</p>
+<p>增援按入口、批次、到达阶段公开。初始波只有一项陌生规则，下一波加入第二种角色形成搭配；困难不等于同屏塞满高血敌。歼灭后不无限生成敌人抹掉战斗路线的价值：波次数和撤退条件在任务配置中明示。清场后剩工程无压力时，允许玩家明确确认连续执行已合法的收尾步骤，不要求无意义逐轮点结束。</p>
+<p>安全空格也有用：它们容纳避险、四格降落、转弯、载客和绕路。关卡验收不是“功能地块占比越高越好”，而是同一元素能参与多少不同的合理选择。首轮必须近，不代表整张地图必须小；外轮廓可以承担机动和地标，交战核心不能散。</p>
+<p>三套验证任务分别证明：主救援的手感与多解、结构变体的上下层与机构、环城阻击的战斗压力与大范围连锁。第三套使用同一效果与任务条件框架，不加入“若关卡叫工务城就……”的新判断。</p>
+<h2 id="section-6">7. 施工如何防止计划再次被做粗</h2>
+<p>每个工作包不仅产出代码，还需把关联的逐项设计编号填回交付记录。一个条目涉及规则、视觉、动作和输入时，四者都完成才具备评审条件；其中一项空着就不能写“已优化”。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向查看的表格"><table>
+<thead>
+<tr>
+<th>交付栏</th>
+<th>应填写的具体证据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>来源与决定</td>
+<td>报告编号、原问题、采纳/调整/澄清；与本计划不同须说明变更理由</td>
+</tr>
+<tr>
+<td>规则</td>
+<td>配置/接口、可重放初态、命令、事件和终态；正常与反例</td>
+</tr>
+<tr>
+<td>交互</td>
+<td>从自由探索开始的真实鼠标录像，点击/撤回/失败反馈与等待时间</td>
+</tr>
+<tr>
+<td>画面与声音</td>
+<td>常规视距前后、动作全过程、受损态、降低动态模式、有声录制</td>
+</tr>
+<tr>
+<td>跨系统影响</td>
+<td>换编队、切区、模块/形态改变、旧存档版本、快进/跳过</td>
+</tr>
+<tr>
+<td>玩家理解</td>
+<td>未讲解时能否说出保护对象、敌意、这手改变、下一步；哪里仍误解</td>
+</tr>
+</tbody></table></div>
+<p>首个集成检查不只看“四招通过测试”，还要从标题→部署→首轮→跨区→敌方阶段→回合小结跑完真实输入。后面的检查逐渐扩大到14机、18招、三任务。最终保留所有未过项和实际人数、帧率、延迟数据，不把自己能操作过关当作人类体验合格。</p>
+<h2 id="section-7">8. 拟修改入口与替换边界</h2>
+<p>下表是施工定位，不代表这些函数已经新建。各报告条目的具体入口还在逐项设计册列出。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向查看的表格"><table>
+<thead>
+<tr>
+<th>现有区域</th>
+<th>计划修改</th>
+<th>保留与迁移方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>tactical_contract.gd</code>、<code>round_armaments.gd</code></td>
+<td>显式动作类型、费用/持续状态、装备解析</td>
+<td>保留有效规则，移除从force推断推移的表达捷径；旧字段做版本化转换</td>
+</tr>
+<tr>
+<td><code>round_rules.gd</code>、空间/棋盘规则</td>
+<td>统一接近、快照模拟、事件来源、多格/多面、稳定敌顺位</td>
+<td>不把预演和正式结算拆成两套；旧固定场景条件迁到数据</td>
+</tr>
+<tr>
+<td><code>round_stage.gd</code>、<code>round_cursor.gd</code>、HUD/overlay</td>
+<td>输入四态、Ctrl手势、目标浮卡、棋盘后果、区摘要</td>
+<td>复用现有拾取和窗口，删除多余普通确认；不重做一套平行UI</td>
+</tr>
+<tr>
+<td><code>round_inspect_diagram.gd</code>、<code>round_skill_stage.gd</code></td>
+<td>真实Fixture生成的小图和可选3D示范</td>
+<td>废除固定5×3与通用挥击回落，未知类型直接显式缺件</td>
+</tr>
+<tr>
+<td><code>round_world.gd</code>、<code>model_motion.gd</code>、effects</td>
+<td>连续移动、完整身体动作、部件挂点、演出时钟与三态资产</td>
+<td>保留可用骨骼/材质/场地资产；不再次退回2D棋子或简单色块</td>
+</tr>
+<tr>
+<td>任务、身份、人物与卡组数据</td>
+<td>条件图、出席、授权、机魂提案、确定指令与随机对照</td>
+<td>不改已接受Reader；玩法Candidate先独立验证</td>
+</tr>
+<tr>
+<td>拟新增音频与验收工具</td>
+<td>事件音频层、输入测时、可重放样本、完整日志</td>
+<td>使用实际录制确认，不以静态截图证明声音/手感</td>
+</tr>
+</tbody></table></div>
+<p>完成本册、逐项设计册和图解，意味着方案已细化到可以逐条评审和安排施工；不意味着游戏、美术资产或玩家体验已经改完。</p>
+<div class="footer-nav"><a href="05-施工与验收.html">← 施工与验收</a><a href="覆盖核对.html">检查报告条目 →</a></div><div class="foot">来源：项目内 Grok v5 报告及配套原稿。图中“设计示意”不代表游戏已经实现。第11册为补定设计，第12册为实现与验证，第13册为新美术标准落地与建筑重做。是否好玩仍需真实玩家判断，不能用测试通过代替。</div></article></main></div></body></html>

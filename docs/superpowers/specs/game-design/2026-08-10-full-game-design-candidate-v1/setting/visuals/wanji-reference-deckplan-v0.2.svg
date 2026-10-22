@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1260" viewBox="0 0 1800 1260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1522"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <marker id="arrHuman" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0v6l9-3z" fill="#4dd8e8"/></marker>
+    <marker id="arrMecha" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0v6l9-3z" fill="#f6b73c"/></marker>
+    <marker id="arrCargo" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0v6l9-3z" fill="#b89cff"/></marker>
+    <style>
+      .t{font-family:Inter,"PingFang SC","Microsoft YaHei",sans-serif;fill:#edf5ff}.muted{fill:#9fb0c4}.tiny{font-size:13px}.sm{font-size:16px}.md{font-size:20px}.head{font-size:28px;font-weight:800}.panel{fill:#122235;stroke:#52667e;stroke-width:2}.hull{fill:#172b3e;stroke:#8198b1;stroke-width:3}.anchor{fill:#1d4055;stroke:#65b8e6;stroke-width:2}.candidate{fill:#493923;stroke:#f2b95b;stroke-width:2;stroke-dasharray:8 6}.sealed{fill:#2a2439;stroke:#a78bfa;stroke-width:2}.service{fill:#263d3c;stroke:#6dd3a0;stroke-width:2}.label{font-size:15px;font-weight:700}.id{font-size:11px;fill:#b9c8d8}.flow{fill:none;stroke-linecap:round;stroke-width:4}.grid{stroke:#31465b;stroke-width:1;stroke-dasharray:4 5}
+    </style>
+  </defs>
+  <rect width="1800" height="1260" fill="url(#bg)"/>
+  <text class="t" x="58" y="58" font-size="38" font-weight="800">万机馆 Candidate 低保真总平 v0.2</text>
+  <text class="t muted" x="58" y="94" font-size="18">WJ-A-LOWFI · 可供 Writer / gameflow / 关卡 / Previs 调用的拓扑草案；非正式外观、非工程图、未获用户方向回执</text>
+  <g transform="translate(58 112)">
+    <rect width="1684" height="42" rx="10" fill="#162436" stroke="#43566d"/>
+    <text class="t sm" x="18" y="27">蓝实线＝Current/Accepted锚点　</text><text x="244" y="27" class="t sm" fill="#f2b95b">橙虚线＝Candidate/OPEN功能节点　</text><text x="556" y="27" class="t sm" fill="#4dd8e8">青＝人流　</text><text x="680" y="27" class="t sm" fill="#f6b73c">黄＝机体　</text><text x="804" y="27" class="t sm" fill="#b89cff">紫＝货运</text>
+    <text class="t sm muted" x="1060" y="27">候选总包络仅用于排布：142×56m；需工程与用户看图裁决</text>
+  </g>
+
+  <g transform="translate(58 174)">
+    <rect class="panel" width="812" height="478" rx="18"/>
+    <text class="t head" x="22" y="40">L1 公共/展陈层：锁定主厅，候选服务接口</text>
+    <text class="t tiny muted" x="22" y="64">舰艏向右 →　示意比例；主厅70×45×24m与前厅18×14m为锚点，其余坐标OPEN</text>
+    <g opacity="0.5">
+      <path class="grid" d="M40 100H760M40 150H760M40 200H760M40 250H760M40 300H760M40 350H760M40 400H760"/>
+      <path class="grid" d="M90 82V440M140 82V440M190 82V440M240 82V440M290 82V440M340 82V440M390 82V440M440 82V440M490 82V440M540 82V440M590 82V440M640 82V440M690 82V440M740 82V440"/>
+    </g>
+    <path class="hull" d="M84 94H700L770 145V394L700 442H84L44 402V132Z"/>
+    <rect x="205" y="150" width="420" height="230" rx="12" class="anchor"/>
+    <text class="t md" x="330" y="180" font-weight="700">主展厅 70×45×24m</text><text class="t id" x="338" y="200">WL_L1_MAIN_HALL</text>
+    <rect x="342" y="218" width="132" height="112" rx="10" fill="#314d62" stroke="#e7c55b" stroke-width="2"/>
+    <text class="t label" x="364" y="254">馆守Z 18m</text><text class="t id" x="356" y="276">主展位/半跪锚</text><text class="t id" x="352" y="298">E02起身按Reader</text>
+    <path d="M242 188H590V345H242Z" fill="none" stroke="#65b8e6" stroke-width="2" stroke-dasharray="5 5"/>
+    <text class="t tiny" x="246" y="365">展岛环线 / 留言墙 / 模型病院 / 现实机器 / 旧影像</text>
+    <rect x="72" y="253" width="114" height="105" rx="10" class="anchor"/>
+    <text class="t label" x="98" y="285">前厅</text><text class="t id" x="86" y="307">18×14m</text><text class="t id" x="79" y="329">公共航行台</text>
+    <rect x="78" y="120" width="126" height="70" rx="8" class="anchor"/>
+    <text class="t label" x="94" y="148">档案室</text><text class="t id" x="88" y="170">WL_L1_ARCHIVE</text>
+    <rect x="220" y="104" width="176" height="36" rx="8" class="anchor"/><text class="t tiny" x="244" y="127">员工内廊 → 0号门</text>
+    <rect x="415" y="100" width="110" height="42" rx="8" class="sealed"/><text class="t tiny" x="441" y="126">0号门</text>
+    <rect x="640" y="188" width="94" height="154" rx="10" class="anchor"/><text class="t label" x="658" y="224">维修角</text><text class="t tiny" x="653" y="247">L2吊篮</text><text class="t tiny" x="654" y="270">服务舱门</text>
+    <path d="M44 315H5V410H84" fill="#2d3139" stroke="#f2b95b" stroke-width="2" stroke-dasharray="8 6"/>
+    <text class="t tiny" x="8" y="340">固定馆玻璃门厅</text><text class="t tiny" x="8" y="361">/市政附属</text><text class="t id" x="8" y="386">C01E04留址</text>
+    <rect x="90" y="382" width="180" height="44" rx="8" class="candidate"/><text class="t tiny" x="104" y="407">东侧货运坡道/岸舰接口 OPEN</text>
+    <rect x="695" y="350" width="80" height="58" rx="8" class="anchor"/><text class="t tiny" x="705" y="374">外泊/</text><text class="t tiny" x="705" y="394">前甲板</text>
+    <path class="flow" d="M32 288H72M186 305H205M205 330H178V404H270" stroke="#4dd8e8" marker-end="url(#arrHuman)"/>
+    <path class="flow" d="M640 264H734" stroke="#f6b73c" marker-end="url(#arrMecha)"/>
+    <path class="flow" d="M94 407H270" stroke="#b89cff" marker-end="url(#arrCargo)"/>
+    <text class="t tiny muted" x="535" y="430">L2环桥仅叠层可见；未在本图重画</text>
+  </g>
+
+  <g transform="translate(890 174)">
+    <rect class="panel" width="852" height="478" rx="18"/>
+    <text class="t head" x="22" y="40">L3 候选治理/生活层：满足C03相对事实，不锁楼层</text>
+    <text class="t tiny muted" x="22" y="64">蓝框为Current办公室/长档案；橙框整组可迁层。白鸢/七海相邻房、洗衣舱提示与仓门为Accepted可见关系。</text>
+    <path class="hull" d="M72 98H730L810 150V390L730 438H72L36 400V136Z"/>
+    <rect x="594" y="126" width="172" height="100" rx="10" class="candidate"/>
+    <text class="t label" x="621" y="156">航行核验/C2观察席</text><text class="t id" x="636" y="178">WCR_L3_NAV_C2</text><text class="t tiny" x="624" y="202">不替代L1公共航行台</text>
+    <rect x="388" y="116" width="174" height="92" rx="10" class="anchor"/><text class="t label" x="424" y="146">馆长办公室</text><text class="t id" x="420" y="169">WL_L3_CURATOR_OFFICE</text>
+    <rect x="386" y="222" width="222" height="154" rx="10" class="anchor"/><text class="t label" x="430" y="256">长档案库</text><text class="t id" x="425" y="279">WL_L3_LONG_ARCHIVE</text><text class="t tiny" x="416" y="310">章节结算依据/档案修复</text>
+    <rect x="84" y="228" width="274" height="48" rx="8" class="candidate"/><text class="t label" x="132" y="258">共同生活内廊（层位OPEN）</text>
+    <rect x="82" y="118" width="112" height="84" rx="8" class="candidate"/><text class="t tiny" x="103" y="146">白鸢等</text><text class="t tiny" x="103" y="168">住舱组A</text>
+    <rect x="208" y="118" width="112" height="84" rx="8" class="candidate"/><text class="t tiny" x="230" y="146">七海等</text><text class="t tiny" x="225" y="168">相邻住舱B</text>
+    <rect x="82" y="292" width="112" height="72" rx="8" class="candidate"/><text class="t tiny" x="104" y="320">备餐/饭桌</text><text class="t id" x="103" y="343">OPEN</text>
+    <rect x="208" y="292" width="112" height="72" rx="8" class="candidate"/><text class="t tiny" x="235" y="318">洗衣舱</text><text class="t id" x="224" y="341">右边第二间</text>
+    <rect x="82" y="376" width="112" height="46" rx="8" class="candidate"/><text class="t tiny" x="107" y="404">卫生间</text>
+    <rect x="208" y="376" width="112" height="46" rx="8" class="candidate"/><text class="t tiny" x="242" y="404">医务</text>
+    <rect x="328" y="292" width="44" height="130" rx="8" class="candidate"/><text class="t tiny" x="343" y="318" writing-mode="tb">仓门/下层服务</text>
+    <path class="flow" d="M137 202V228H264V292" stroke="#4dd8e8" marker-end="url(#arrHuman)"/>
+    <path class="flow" d="M358 252H475V208" stroke="#4dd8e8" marker-end="url(#arrHuman)"/>
+    <path class="flow" d="M350 422V400H472" stroke="#b89cff" marker-end="url(#arrCargo)"/>
+    <text class="t tiny muted" x="622" y="416">候选常住20-28人仅为排布假设；</text><text class="t tiny muted" x="622" y="437">生命支持/床位/医务岗位均未验证</text>
+  </g>
+
+  <g transform="translate(58 674)">
+    <rect class="panel" width="1684" height="518" rx="18"/>
+    <text class="t head" x="22" y="42">B1 工业脊柱：把出击、约九米重件、动力和损管放进同一可检查平面</text>
+    <text class="t tiny muted" x="22" y="66">舰艏向右 →　蓝/绿为Current功能锚；橙虚线为Candidate节点。任何净空、重量、泊位并行量都仍需灰盒/工程证明。</text>
+    <path class="hull" d="M84 104H1480L1600 180V394L1480 460H84L42 416V146Z"/>
+    <rect x="144" y="138" width="244" height="252" rx="12" class="candidate"/>
+    <text class="t md" x="188" y="178" font-weight="700">主循环/转子舱段</text><text class="t id" x="211" y="201">WCR_B1_MAIN_LOOP</text>
+    <circle cx="266" cy="282" r="76" fill="#3b3024" stroke="#f2b95b" stroke-width="3" stroke-dasharray="8 6"/><circle cx="266" cy="282" r="28" fill="#172b3e" stroke="#f2b95b" stroke-width="2"/>
+    <text class="t label" x="222" y="286">约9m转子</text><text class="t id" x="190" y="308">几何/重量/吊点未验证</text>
+    <rect x="414" y="142" width="196" height="112" rx="10" class="candidate"/><text class="t label" x="448" y="177">大型货运升降台</text><text class="t id" x="456" y="200">WCR_B1_CARGO_LIFT</text><text class="t tiny" x="446" y="226">外吊→气闸→主循环</text>
+    <rect x="414" y="276" width="196" height="112" rx="10" class="candidate"/><text class="t label" x="468" y="311">损管/配电</text><text class="t id" x="450" y="334">WCR_B1_DAMAGE_CONTROL</text><text class="t tiny" x="458" y="360">回路/岗位/停机 OPEN</text>
+    <rect x="636" y="126" width="554" height="282" rx="14" class="service"/>
+    <text class="t md" x="822" y="158" font-weight="700">展舰机库脊柱</text><text class="t id" x="844" y="180">WL_B1_HANGAR</text>
+    <rect x="674" y="198" width="166" height="92" rx="10" class="anchor"/><text class="t label" x="704" y="231">中型泊位列 A</text><text class="t tiny" x="710" y="255">2-12m / 位数4-6锚</text>
+    <rect x="674" y="306" width="166" height="74" rx="10" class="anchor"/><text class="t label" x="705" y="337">中型泊位列 B</text><text class="t tiny" x="724" y="360">实际布置OPEN</text>
+    <rect x="866" y="202" width="276" height="170" rx="12" class="anchor"/><text class="t md" x="944" y="238" font-weight="700">重型维修架</text><text class="t id" x="954" y="261">15-25m 单机短修</text><path d="M908 316H1102M932 282V350M1078 282V350" stroke="#65b8e6" stroke-width="6"/>
+    <rect x="1216" y="154" width="190" height="110" rx="10" class="candidate"/><text class="t label" x="1268" y="188">仓储/工房</text><text class="t id" x="1250" y="211">WCR_B1_STORES_WORKSHOP</text><text class="t tiny" x="1244" y="238">工具箱/备件/轻中修</text>
+    <rect x="1216" y="286" width="190" height="92" rx="10" class="anchor"/><text class="t label" x="1264" y="320">移动底盘</text><text class="t id" x="1248" y="344">WL_B1_MOBILE_CHASSIS</text>
+    <rect x="1450" y="220" width="124" height="112" rx="10" class="anchor"/><text class="t label" x="1480" y="252">外锁泊</text><text class="t tiny" x="1471" y="277">15-30m</text><text class="t tiny" x="1472" y="302">战舰不入馆</text>
+    <path class="flow" d="M1580 198H1510V176H610V220H388" stroke="#b89cff" marker-end="url(#arrCargo)"/>
+    <path class="flow" d="M388 264H144" stroke="#b89cff" marker-end="url(#arrCargo)"/>
+    <text class="t tiny" x="690" y="113" fill="#b89cff">C02重件故事链：港口龙门吊 → 泊位吊机 → B1升降台 → 主循环；旧转子旁侧锁存</text>
+    <path class="flow" d="M1002 202V176H1512V220" stroke="#f6b73c" marker-end="url(#arrMecha)"/>
+    <path class="flow" d="M756 198V176H1512" stroke="#f6b73c" marker-end="url(#arrMecha)"/>
+    <path class="flow" d="M512 388V430H1216V378" stroke="#4dd8e8" marker-end="url(#arrHuman)"/>
+    <text class="t tiny muted" x="1190" y="440">人流/损管在机体出击与重件吊装时必须被门禁或时窗隔离</text>
+  </g>
+
+  <text class="t muted" x="58" y="1232" font-size="15">Candidate · no Canon promotion · no Reader/Runtime write · no formal asset authorization · exact hull/floor/clearance/capacity remain OPEN</text>
+</svg>

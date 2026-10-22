@@ -1,0 +1,13 @@
+component_id	component_name	canon_level	responsibility	persistent_scope	current_demo_gap	godot_target	minimum_tests	implementation_note
+MRA001	SaveRepository	working	序列化当前周目、备份、迁移、恢复和完整性校验	run_save	RunState仅内存，无正式存档	Autoload;FileAccess;JSON/ConfigFile	保存读取;备份恢复;版本迁移;崩溃安全	真实数据层不得被Meta表现直接修改
+MRA002	EchoLedger	working	保存少量跨周目馆外残响类型和摘要	install	无跨重启状态	Autoload;user://echo_ledger.json	清空;迁移;禁用;数据最小化	只记录schema允许事件，不记录原始输入
+MRA003	InstallProfile	working	保存Meta强度、外部档案同意、无障碍和已见演出	install	无独立设备设置	ConfigFile;user://install_profile.cfg	默认值;设置持久;平台兼容	与剧情存档分开
+MRA004	MetaEventRouter	working	根据剧情事件、Echo类型和版本状态触发Meta演出	run+install	ScenarioEventBus只支持少量普通action	扩展ScenarioEventBus或独立Autoload	条件匹配;once;恢复;无副作用重放	事件必须数据驱动并有safety_class
+MRA005	VersionProfileManager	candidate	切换终端皮肤、规则覆盖、内容筛选和恢复点	run	无版本外壳概念	Resource/JSON profile;scene/theme override	切入切出;状态不丢;资源缺失回退	共享SRPG核心，不复制整套游戏
+MRA006	TerminalShell	working	统一标题、存档、编成、图鉴、设置和档案终端呈现	run	当前Node2D脚本直接绘制所有模式	独立UI根场景;页面路由;PresentationProfile	页面导航;键鼠手柄;皮肤切换;无障碍	Meta先有可靠基线再允许漂移
+MRA007	ObserverEventCollector	working	把有叙事意义的系统事件归一成Echo类型	run+install	没有统一行为事件账本	ScenarioEventBus订阅;白名单事件映射	不重复计数;档位聚合;隐私审计	不是全输入遥测
+MRA008	MetaPresentationLayer	working	呈现文字漂移、排序、折叠、假错误和窗口效果	transient	UI和流程高度耦合	CanvasLayer;Theme;DisplayServer可选	跳过;恢复;禁闪;多分辨率	表现层不得改真实数据层
+MRA009	ExternalArchiveExporter	candidate	经同意导出馆外档案到专属目录	install	无外部导出	FileAccess;DirAccess;user://	路径隔离;删除;游戏内替代;权限失败	首发可不实现
+MRA010	AsyncEchoService	candidate	收发匿名审核玩家残响	account_optional	无联网服务	独立服务接口;本地缓存	离线;审核;举报;超时;隐私	首发主线不得依赖
+MRA011	MetaRecoveryConsole	working	提供恢复存档、关闭Meta、查看说明和重放演出	install	无安全恢复入口	设置页/启动安全模式	损坏配置;Esc恢复;安全模式启动	必须从所有高强度演出可达
+MRA012	MetaRunLedger	working	供Episode Loop与QA记录触发、载体、强度、状态变化和回收	production	现有v0.2 ledger无Meta字段	TSV/JSON运行账本	字段完整;跨话读取;未回收告警	写作与实现共享稳定event_id

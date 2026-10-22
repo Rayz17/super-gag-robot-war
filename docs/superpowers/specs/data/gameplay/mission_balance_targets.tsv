@@ -1,0 +1,13 @@
+mission_id	chapter_id	core_verb	deploy_count	target_turns	required_roles	enemy_budget	elite_budget	boss_budget	low_upgrade_expectation	normal_upgrade_expectation	high_upgrade_expectation	hidden_objective	balance_note
+MB_C01	C01	守;截;非致命	3-4	6	SUPER_GUARDIAN;SUPPORT_REPAIR;HIGH_MOBILITY	10-14	0-3	0	主目标可过，可能损坏1个展岛	保留言墙和多数展岛，完成非致命副目标	全展岛保全并触发七海额外台词	阻止封存线抵达且不击坠清单执行机	教程敌方意图和保护对象，敌HP低但目标压力高
+MB_C02	C02	护;说得;决斗	4-5	6-8	SUPPORT_REPAIR;DUEL_COUNTER;SWARM_CONTROL	14-18	3-5	0-6	保护孩子但可能失去隐藏证物	修复证物并说得胶价王	擂台完胜且保留全部玩具生命	钢拳擂台非致命完胜	轻格斗只给战斗修正，不替代SRPG
+MB_C03	C03	护;撤	4-5	6-8	CIVILIAN_ESCORT;SUPER_GUARDIAN;REAL_SNIPER	12-16	2-4	0	跌跌可抵达但摔倒次数较多	跌跌抵达并保留失败记录	全程不倒并触发研究员承认台词	不删除任何失败数据	护送对象不能变输出，工具动作要有用
+MB_C04	C04	同步;截;守	5-6	7-9	RITUAL_SYNC;HIGH_MOBILITY;COMBINER_BURST	18-24	4-8	6-10	能守住主阵列但同步过载	同步槽稳定并开放一次合体	保全学生节点且无强制改写	雾生拒绝被写幸福仍保留选择	同步收益强，清噪敌数量要控
+MB_C05	C05	撤;传递	6-7	8-10	BATTLESHIP_COMMAND;REAL_SNIPER;HIGH_MOBILITY;SUPPORT_REPAIR	22-28	6-10	0-8	主撤退成功，部分量产兵滞留	多数保全并完成战报传递	全队撤离且保留无名兵姓名	放弃击破奖励换全员撤退	奖励不看击坠数，看保全名单
+MB_C06	C06	拆;分镜	5-6	7-9	SIGNAL_HACKER;SWARM_CONTROL;HEAVY_ARTILLERY	18-24	5-8	8-12	拆掉必要节点但按敌方剧本吃一次事件	改写局部事件顺序并削Boss阶段	保留废案不完整离开	不强迫废案角色完美结局	节点多则普通敌少，防止操作疲劳
+MB_C07	C07	说得;同步;非致命	5-6	7-9	RITUAL_SYNC;DUEL_COUNTER;SUPPORT_REPAIR	18-24	6-9	6-10	主线过关但狂热者伤亡较多	开启非致命窗口并削弱仪式护盾	全程非致命并保留原典证词	背错台词仍触发传承笑点	节奏失败只提升战斗压力
+MB_C08	C08	合规;封锁;调度	6-7	8-10	BATTLESHIP_COMMAND;SIGNAL_HACKER;SWARM_CONTROL;SUPER_GUARDIAN	22-30	8-12	8-14	城市损伤较高但完成主线	完成白名单并控制破坏预算	清算支援临时加入且低损伤	公开清算阻灾证据但保留质疑	企业秩序要有好处也有束缚
+MB_C09	C09	索引;拆;保存	6-7	8-11	SIGNAL_HACKER;SWARM_CONTROL;RITUAL_SYNC	24-32	8-14	10-16	能击退索引模板但丢失异常记录	恢复隐藏目标并保留缺点节点	打破玩家高频策略复制	保护一个非最优缺点不被修正	难度来自复制策略和UI清噪，不堆HP
+MB_C10	C10	传递;维持;同步	6-7	8-12	BATTLESHIP_COMMAND;SIGNAL_HACKER;RITUAL_SYNC;HIGH_MOBILITY	22-30	8-12	不可击破	撑到信号完成但损伤较大	传递失败日志并安全撤退	逆序日志完整且远星敌意降低	迟到回信完整送达	不可击破敌必须明确不能硬打
+MB_C11	C11	调度;非致命内战;撤	6-8	8-11	SUPPORT_REPAIR;BATTLESHIP_COMMAND;DUEL_COUNTER;SIGNAL_HACKER	24-34	10-16	8-14	保住核心设施但有人离队	非致命压制并保住关键设施	多数分歧角色沉默归队	重新开馆标题由玩家选择	设施锁定要分层，保留最低出击能力
+MB_C12	C12	终局保存;同步;决斗	8-10	10-14	ALL	30-44	14-22	16-28	通关但记忆节点缺失较多	保存关键节点并触发后天合唱	隐藏机体介入且保留跑调证词	非最优答案发送成功	终局不考新系统，回收前面所有模板

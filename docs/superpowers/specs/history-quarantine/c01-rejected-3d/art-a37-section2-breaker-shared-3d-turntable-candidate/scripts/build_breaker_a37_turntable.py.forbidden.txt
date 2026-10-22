@@ -1,0 +1,447 @@
+#!/usr/bin/env python3
+"""Build a clean BREAKER shared turntable from geometry only.
+
+Positive identity authority is deliberately limited to the SHA-locked current
+north PNG. This script never opens prior BREAKER blend files or failed pixels.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import json
+import math
+from pathlib import Path
+
+import bpy
+import bmesh
+from bpy_extras.object_utils import world_to_camera_view
+from mathutils import Vector
+
+
+ROOT = Path(__file__).resolve().parents[1]
+PROJECT = ROOT.parents[5]
+SOURCE = PROJECT / "game-godot/content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_north_camera_v2_candidate.png"
+SOURCE_SHA = "6b20111c80e3dc76adb5a05b55395359b7d1bdc2ec189060859058e53dbffde1"
+MASTER = ROOT / "master/BREAKER_A37_SHARED_TURNTABLE_CANDIDATE.blend"
+RAW = ROOT / "raw"
+DELIVERY = ROOT / "delivery"
+QA = ROOT / "qa"
+
+
+def sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def clean_scene() -> None:
+    bpy.ops.object.select_all(action="SELECT")
+    bpy.ops.object.delete(use_global=False)
+    for data in (bpy.data.meshes, bpy.data.curves, bpy.data.materials, bpy.data.cameras, bpy.data.lights):
+        # Materials are created after this pass; clearing here keeps reruns deterministic.
+        if data is bpy.data.materials:
+            continue
+
+
+def mat(name: str, color: tuple[float, float, float, float], metallic: float, roughness: float,
+        emission: tuple[float, float, float, float] | None = None, strength: float = 0.0) -> bpy.types.Material:
+    m = bpy.data.materials.new(name)
+    m.diffuse_color = color
+    m.use_nodes = True
+    bsdf = next((node for node in m.node_tree.nodes if node.type == "BSDF_PRINCIPLED"), None)
+    if bsdf is None:
+        raise RuntimeError(f"Principled BSDF node unavailable for material {name}")
+    bsdf.inputs["Base Color"].default_value = color
+    bsdf.inputs["Metallic"].default_value = metallic
+    bsdf.inputs["Roughness"].default_value = roughness
+    if emission is not None:
+        bsdf.inputs["Emission Color"].default_value = emission
+        bsdf.inputs["Emission Strength"].default_value = strength
+    return m
+
+
+def link_object(obj: bpy.types.Object, parent: bpy.types.Object | None = None) -> bpy.types.Object:
+    bpy.context.collection.objects.link(obj)
+    if parent is not None:
+        obj.parent = parent
+    return obj
+
+
+def create_mesh(name: str, verts, faces, materials, parent=None, bevel=0.0) -> bpy.types.Object:
+    mesh = bpy.data.meshes.new(name + "_MESH")
+    mesh.from_pydata(verts, [], faces)
+    mesh.update()
+    obj = link_object(bpy.data.objects.new(name, mesh), parent)
+    for material in materials:
+        obj.data.materials.append(material)
+    for poly in obj.data.polygons:
+        poly.material_index = 0
+        poly.use_smooth = False
+    if bevel > 0:
+        mod = obj.modifiers.new("GOLD_SEAM_BEVEL", "BEVEL")
+        mod.width = bevel
+        mod.segments = 2
+        mod.limit_method = "ANGLE"
+        mod.angle_limit = math.radians(22)
+        mod.material = 1 if len(materials) > 1 else -1
+    return obj
+
+
+def create_leaf(name: str, *, length: float, width: float, thickness: float, skew: float,
+                crown: float, pos: tuple[float, float, float], yaw: float, pitch: float,
+                black: bpy.types.Material, gold: bpy.types.Material, parent: bpy.types.Object) -> bpy.types.Object:
+    """Create one unique long leaf plate with a crowned, tapering, asymmetric grid."""
+    ys = (-0.50, -0.28, -0.02, 0.25, 0.50)
+    widths = (0.07, 0.62, 1.00, 0.54, 0.025)
+    verts = []
+    for row, (yf, wf) in enumerate(zip(ys, widths)):
+        yc = yf * length
+        center_shift = skew * (0.55 * yf + 0.28 * math.sin((row + 1) * 1.7))
+        arch_y = crown * (1.0 - abs(yf) * 1.45)
+        half = max(0.025, width * wf * 0.5)
+        for col, xf in enumerate((-1.0, 0.0, 1.0)):
+            x = center_shift + xf * half
+            z = arch_y + (crown * 0.42 if col == 1 else 0.0)
+            verts.append((x, yc, z))
+    # Bottom skin follows the top, keeping a sharp long-leaf silhouette.
+    verts += [(x, y, z - thickness) for (x, y, z) in verts]
+    faces = []
+    for r in range(4):
+        for c in range(2):
+            a = r * 3 + c
+            faces.append((a, a + 1, a + 4, a + 3))
+            b = a + 15
+            faces.append((b + 3, b + 4, b + 1, b))
+    perimeter = [0, 1, 2, 5, 8, 11, 14, 13, 12, 9, 6, 3]
+    for a, b in zip(perimeter, perimeter[1:] + perimeter[:1]):
+        faces.append((a, b, b + 15, a + 15))
+    obj = create_mesh(name, verts, faces, [black, gold], parent=parent, bevel=0.035)
+    obj.location = pos
+    obj.rotation_euler = (pitch, 0.0, yaw)
+    return obj
+
+
+def create_irregular_underbody(name: str, dark: bpy.types.Material, parent: bpy.types.Object) -> bpy.types.Object:
+    mesh = bpy.data.meshes.new(name + "_MESH")
+    bm = bmesh.new()
+    bmesh.ops.create_icosphere(bm, subdivisions=3, radius=1.0)
+    bm.to_mesh(mesh)
+    bm.free()
+    obj = link_object(bpy.data.objects.new(name, mesh), parent)
+    obj.data.materials.append(dark)
+    for v in obj.data.vertices:
+        co = v.co
+        # Deterministic asymmetry: a faceted meteor belly, not an animal torso.
+        wobble = 1.0 + 0.055 * math.sin(3.1 * co.x + 4.7 * co.y) + 0.035 * math.cos(5.3 * co.z - co.y)
+        co.x *= 2.55 * wobble * (1.0 + 0.06 * co.y)
+        co.y *= 3.55 * wobble
+        co.z *= 1.25 * (1.0 + 0.08 * co.x)
+        if co.z < 0:
+            co.z *= 0.78
+    obj.location = (0.08, -0.15, 0.82)
+    for p in obj.data.polygons:
+        p.use_smooth = False
+    bevel = obj.modifiers.new("BELLY_EDGE_SOFTEN", "BEVEL")
+    bevel.width = 0.06
+    bevel.segments = 2
+    return obj
+
+
+def cube_obj(name: str, loc, scale, material, parent=None, bevel=0.08) -> bpy.types.Object:
+    bpy.ops.mesh.primitive_cube_add(location=loc)
+    obj = bpy.context.object
+    obj.name = name
+    obj.scale = (scale[0] * 0.5, scale[1] * 0.5, scale[2] * 0.5)
+    bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
+    obj.data.materials.append(material)
+    if parent is not None:
+        obj.parent = parent
+    if bevel:
+        mod = obj.modifiers.new("STRUCTURAL_CHAMFER", "BEVEL")
+        mod.width = bevel
+        mod.segments = 2
+    return obj
+
+
+def beam_between(name: str, a: Vector, b: Vector, width: float, depth: float,
+                 material: bpy.types.Material, parent: bpy.types.Object) -> bpy.types.Object:
+    mid = (a + b) * 0.5
+    vec = b - a
+    obj = cube_obj(name, mid, (width, depth, vec.length), material, parent=parent, bevel=0.07)
+    obj.rotation_mode = "QUATERNION"
+    obj.rotation_quaternion = vec.to_track_quat("Z", "Y")
+    return obj
+
+
+def joint(name: str, loc: Vector, radius: float, material: bpy.types.Material,
+          parent: bpy.types.Object, rotation=(math.pi / 2, 0, 0)) -> bpy.types.Object:
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=16, ring_count=8, radius=radius, location=loc)
+    obj = bpy.context.object
+    obj.name = name
+    obj.scale = (1.0, 0.62, 0.88)
+    obj.rotation_euler = rotation
+    bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
+    obj.data.materials.append(material)
+    obj.parent = parent
+    for p in obj.data.polygons:
+        p.use_smooth = True
+    return obj
+
+
+def foot_wedge(name: str, loc: Vector, forward_sign: float, side_sign: float,
+               material: bpy.types.Material, gold: bpy.types.Material, parent: bpy.types.Object,
+               variant: float) -> bpy.types.Object:
+    length = 1.55 + variant
+    width = 0.70 + 0.18 * variant
+    h = 0.38
+    verts = [
+        (-width / 2, -length / 2, 0), (width / 2, -length / 2, 0),
+        (width * 0.42, length * 0.18, 0), (0, length / 2, 0), (-width * 0.42, length * 0.18, 0),
+        (-width * 0.42, -length * 0.34, h), (width * 0.42, -length * 0.34, h),
+        (width * 0.25, length * 0.12, h * 0.72), (0, length * 0.38, h * 0.46),
+        (-width * 0.25, length * 0.12, h * 0.72),
+    ]
+    faces = [(0,1,2,3,4),(5,9,8,7,6),(0,5,6,1),(1,6,7,2),(2,7,8,3),(3,8,9,4),(4,9,5,0)]
+    obj = create_mesh(name, verts, faces, [material, gold], parent=parent, bevel=0.045)
+    obj.location = loc
+    obj.rotation_euler[2] = (0 if forward_sign > 0 else math.pi) + side_sign * math.radians(7 * variant)
+    return obj
+
+
+def create_limb(index: int, xsign: float, ysign: float, variant: float, root: bpy.types.Object,
+                steel: bpy.types.Material, black: bpy.types.Material, gold: bpy.types.Material) -> None:
+    # All four limbs visibly bridge shell to floor: shoulder -> knee -> broad stabilizer foot.
+    shoulder = Vector((xsign * (2.10 + 0.08 * variant), ysign * (2.05 + 0.15 * variant), 0.98 + 0.08 * variant))
+    knee = Vector((xsign * (2.80 + 0.18 * variant), ysign * (2.38 + 0.12 * variant), 0.20 + 0.03 * variant))
+    ankle = Vector((xsign * (3.35 + 0.12 * variant), ysign * (2.70 + 0.20 * variant), -0.48))
+    beam_between(f"LIMB_{index:02d}_UPPER", shoulder, knee, 0.54 + 0.06 * variant, 0.48, steel, root)
+    beam_between(f"LIMB_{index:02d}_LOWER", knee, ankle, 0.43, 0.38 + 0.04 * variant, steel, root)
+    joint(f"LIMB_{index:02d}_SHOULDER_JOINT", shoulder, 0.42 + 0.03 * variant, steel, root)
+    joint(f"LIMB_{index:02d}_KNEE_JOINT", knee, 0.35, gold, root)
+    shoulder_plate = cube_obj(
+        f"LIMB_{index:02d}_SHOULDER_ARMOR",
+        shoulder + Vector((xsign * 0.16, ysign * 0.06, 0.24)),
+        (0.92 + 0.10 * variant, 1.18 - 0.05 * variant, 0.46), black, root, bevel=0.10,
+    )
+    shoulder_plate.rotation_euler[2] = xsign * ysign * math.radians(9 + 3 * variant)
+    foot_wedge(f"LIMB_{index:02d}_FOOT", ankle + Vector((0, ysign * 0.25, -0.04)), ysign, xsign,
+               black, gold, root, variant)
+
+
+def create_head_and_slit(root, black, dark, gold, red):
+    # Low wedge is embedded beneath the leaf shell; it is not a face or animal head.
+    verts = [
+        (-1.15, 2.62, 0.14), (1.08, 2.62, 0.14), (1.42, 3.62, 0.05),
+        (0.62, 4.12, -0.02), (-0.82, 3.92, -0.02),
+        (-0.92, 2.70, 0.88), (0.86, 2.70, 0.88), (1.10, 3.48, 0.60),
+        (0.48, 3.86, 0.48), (-0.72, 3.70, 0.50),
+    ]
+    faces = [(0,1,2,3,4),(5,9,8,7,6),(0,5,6,1),(1,6,7,2),(2,7,8,3),(3,8,9,4),(4,9,5,0)]
+    head = create_mesh("LOW_EMBEDDED_HEAD_WEDGE", verts, faces, [dark, gold], parent=root, bevel=0.07)
+    # One and only one red slit: a top-side embedded bar, readable from both turntable headings.
+    slit = cube_obj("UNIQUE_LOW_RED_SLIT", (0.54, 3.37, 0.72), (1.25, 0.13, 0.075), red, root, bevel=0.025)
+    slit.rotation_euler = (math.radians(10), math.radians(-18), math.radians(-6))
+    surround = cube_obj("RED_SLIT_RECESSED_SURROUND", (0.54, 3.35, 0.68), (1.52, 0.30, 0.16), black, root, bevel=0.045)
+    surround.rotation_euler = slit.rotation_euler
+    # Ensure the luminous slit sits above the recess in render order/geometry.
+    slit.location.z += 0.055
+    return head, slit
+
+
+def setup_camera_and_lights(target: Vector):
+    # Camera basis maps world North to screen upper-right and West to upper-left.
+    d = 20.0
+    h = d * 1.06066017178  # exact 40:24 dimetric screen slope for equal XY headings
+    cam_data = bpy.data.cameras.new("CAMERA_V2_40X24_ORTHO")
+    cam = link_object(bpy.data.objects.new("CAMERA_V2_40X24_ORTHO", cam_data))
+    cam.location = (d, -d, h + target.z)
+    direction = target - cam.location
+    cam.rotation_euler = direction.to_track_quat("-Z", "Y").to_euler()
+    cam.data.type = "ORTHO"
+    cam.data.ortho_scale = 12.5
+    cam.data.lens = 52
+    bpy.context.scene.camera = cam
+
+    sun_data = bpy.data.lights.new("KEY_SUN", "SUN")
+    sun_data.energy = 2.2
+    sun_data.angle = math.radians(18)
+    sun = link_object(bpy.data.objects.new("KEY_SUN", sun_data))
+    sun.rotation_euler = (math.radians(28), math.radians(-22), math.radians(-35))
+
+    for name, loc, energy, size, color in (
+        ("COOL_FILL", (-8, -5, 10), 950, 7.0, (0.36, 0.52, 0.72)),
+        ("WARM_RIM", (7, 7, 8), 1250, 5.0, (1.0, 0.55, 0.22)),
+        ("TOP_SOFT", (0, 0, 14), 1150, 6.5, (0.72, 0.80, 1.0)),
+    ):
+        ld = bpy.data.lights.new(name, "AREA")
+        ld.energy = energy
+        ld.shape = "DISK"
+        ld.size = size
+        ld.color = color
+        lo = link_object(bpy.data.objects.new(name, ld))
+        lo.location = loc
+        lo.rotation_euler = (target - lo.location).to_track_quat("-Z", "Y").to_euler()
+    return cam
+
+
+def angle_delta(a: float, b: float) -> float:
+    return abs((a - b + 180.0) % 360.0 - 180.0)
+
+
+def projected_heading(cam, root, local_heading: Vector) -> float:
+    scene = bpy.context.scene
+    center_world = root.matrix_world @ Vector((0, 0, 0.7))
+    head_world = root.matrix_world @ (Vector((0, 0, 0.7)) + local_heading)
+    c = world_to_camera_view(scene, cam, center_world)
+    h = world_to_camera_view(scene, cam, head_world)
+    dx = h.x - c.x
+    dy_down = -(h.y - c.y)
+    return math.degrees(math.atan2(dy_down, dx))
+
+
+def render(scene, path: Path, size: int) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    scene.render.resolution_x = size
+    scene.render.resolution_y = size
+    scene.render.resolution_percentage = 100
+    scene.render.filepath = str(path)
+    bpy.ops.render.render(write_still=True)
+
+
+def main() -> None:
+    if not SOURCE.exists() or sha256(SOURCE) != SOURCE_SHA:
+        raise RuntimeError("FAIL_STOP: the sole positive north source is missing or its SHA drifted")
+
+    for directory in (MASTER.parent, RAW, DELIVERY, QA):
+        directory.mkdir(parents=True, exist_ok=True)
+
+    clean_scene()
+    scene = bpy.context.scene
+    scene.render.engine = "BLENDER_EEVEE_NEXT"
+    scene.render.image_settings.file_format = "PNG"
+    scene.render.image_settings.color_mode = "RGBA"
+    scene.render.image_settings.color_depth = "8"
+    scene.render.film_transparent = True
+    scene.render.resolution_percentage = 100
+    scene.render.use_file_extension = True
+    scene.view_settings.look = "AgX - Medium High Contrast"
+    scene.world.color = (0.008, 0.010, 0.014)
+    scene.world.use_nodes = True
+    bg = scene.world.node_tree.nodes.get("Background")
+    bg.inputs["Color"].default_value = (0.012, 0.016, 0.023, 1.0)
+    bg.inputs["Strength"].default_value = 0.26
+
+    black_a = mat("BLACK_LEAF_A", (0.022, 0.026, 0.032, 1), 0.78, 0.29)
+    black_b = mat("BLACK_LEAF_B", (0.032, 0.037, 0.045, 1), 0.72, 0.35)
+    black_c = mat("BLACK_LEAF_C", (0.016, 0.020, 0.027, 1), 0.82, 0.25)
+    belly = mat("IRREGULAR_DARK_BELLY", (0.012, 0.015, 0.019, 1), 0.55, 0.48)
+    steel = mat("LOAD_BEARING_STEEL", (0.055, 0.067, 0.078, 1), 0.88, 0.31)
+    gold = mat("GOLD_SEAMS", (0.34, 0.18, 0.055, 1), 0.84, 0.26)
+    red = mat("SINGLE_RED_SLIT", (0.34, 0.004, 0.002, 1), 0.42, 0.18,
+              emission=(1.0, 0.004, 0.001, 1), strength=9.0)
+
+    root = link_object(bpy.data.objects.new("BREAKER_A37_SHARED_ROOT", None))
+    create_irregular_underbody("IRREGULAR_DARK_UNDERBODY", belly, root)
+
+    # Eleven unique leaf plates plus three asymmetric flank leaves. No two rows repeat.
+    leaf_specs = [
+        # name, length, width, thick, skew, crown, x, y, z, yaw_deg, pitch_deg, material
+        ("LEAF_01_CROWN_LONG", 7.20, 1.82, .20, .22, .34, -0.18, -0.35, 2.22, -3, -4, black_a),
+        ("LEAF_02_CROWN_OFFSET", 6.35, 1.48, .18, -.31, .28, 0.84, -0.42, 2.06, 6, -6, black_b),
+        ("LEAF_03_LEFT_LONG", 6.72, 1.36, .17, .38, .25, -1.10, -0.50, 1.92, -11, -8, black_c),
+        ("LEAF_04_RIGHT_FORWARD", 5.45, 1.66, .19, -.19, .30, 1.54, 0.34, 1.73, 13, -10, black_a),
+        ("LEAF_05_LEFT_FORWARD", 5.18, 1.28, .16, .29, .22, -1.65, 0.58, 1.62, -16, -12, black_b),
+        ("LEAF_06_CENTER_SPEAR", 5.76, 1.08, .18, -.13, .36, 0.10, 0.96, 2.49, 2, -9, black_c),
+        ("LEAF_07_RIGHT_REAR", 4.68, 1.54, .16, .42, .20, 1.78, -1.26, 1.45, 18, -5, black_b),
+        ("LEAF_08_LEFT_REAR", 4.92, 1.22, .17, -.36, .26, -1.92, -1.10, 1.40, -21, -3, black_a),
+        ("LEAF_09_RIGHT_LOW", 4.28, 1.16, .15, .18, .19, 2.18, 0.18, 1.16, 24, -15, black_c),
+        ("LEAF_10_LEFT_LOW", 3.96, 1.42, .15, -.27, .23, -2.20, 0.05, 1.08, -27, -14, black_b),
+        ("LEAF_11_FRONT_VISOR", 3.58, 1.18, .14, .33, .20, 0.18, 1.78, 1.64, 4, -18, black_a),
+        ("LEAF_12_RIGHT_TRAIL", 4.36, .92, .14, -.44, .18, 2.10, -1.70, 1.26, 27, -4, black_a),
+        ("LEAF_13_LEFT_TRAIL", 4.04, 1.04, .14, .26, .21, -2.16, -1.58, 1.20, -31, -2, black_c),
+        ("LEAF_14_OFFCENTER_RIDGE", 5.02, .86, .15, -.22, .31, -0.58, 0.54, 2.63, -5, -11, black_b),
+    ]
+    for name, length, width, thick, skew, crown, x, y, z, yaw, pitch, material in leaf_specs:
+        create_leaf(name, length=length, width=width, thickness=thick, skew=skew, crown=crown,
+                    pos=(x, y, z), yaw=math.radians(yaw), pitch=math.radians(pitch),
+                    black=material, gold=gold, parent=root)
+
+    create_head_and_slit(root, black_c, belly, gold, red)
+    limb_variants = (0.38, 0.12, 0.58, 0.26)
+    for index, (xs, ys, variant) in enumerate(((1, 1, limb_variants[0]), (-1, 1, limb_variants[1]),
+                                                (1, -1, limb_variants[2]), (-1, -1, limb_variants[3])), start=1):
+        create_limb(index, xs, ys, variant, root, steel, black_b if index % 2 else black_c, gold)
+
+    # A small set of exposed, irregular belly ribs prevents a smooth creature abdomen reading.
+    for i, (x, y, z, sx, sy) in enumerate((
+        (-0.72, -1.55, -0.02, 1.18, .42), (.64, -1.24, .03, 1.05, .36),
+        (-.35, -.52, -.10, .92, .34), (.52, .24, -.06, 1.22, .31),
+    ), start=1):
+        rib = cube_obj(f"IRREGULAR_BELLY_RIB_{i:02d}", (x, y, z), (sx, sy, .24), steel, root, bevel=.05)
+        rib.rotation_euler[2] = math.radians((-13, 9, -6, 16)[i - 1])
+
+    cam = setup_camera_and_lights(Vector((0.0, 0.1, 0.95)))
+    scene.render.image_settings.color_mode = "RGBA"
+
+    # Save the neutral north scene before rendering; both headings are rotations of this one root.
+    root.rotation_euler = (0, 0, 0)
+    bpy.context.view_layer.update()
+    north_angle = projected_heading(cam, root, Vector((0, 3.0, 0)))
+    north_target = math.degrees(math.atan2(-24.0, 40.0))
+    north_error = angle_delta(north_angle, north_target)
+    render(scene, RAW / "BREAKER_A37_NORTH_1024_RGBA_CANDIDATE.png", 1024)
+    render(scene, DELIVERY / "BREAKER_A37_NORTH_512_RGBA_CANDIDATE.png", 512)
+
+    root.rotation_euler[2] = math.radians(90.0)
+    bpy.context.view_layer.update()
+    west_angle = projected_heading(cam, root, Vector((0, 3.0, 0)))
+    west_target = math.degrees(math.atan2(-24.0, -40.0))
+    west_error = angle_delta(west_angle, west_target)
+    render(scene, RAW / "BREAKER_A37_WEST_1024_RGBA_CANDIDATE.png", 1024)
+    render(scene, DELIVERY / "BREAKER_A37_WEST_512_RGBA_CANDIDATE.png", 512)
+
+    if west_error > 8.0:
+        raise RuntimeError(f"FAIL_STOP: west heading error {west_error:.3f} exceeds 8 degrees")
+
+    # Save a north-oriented master; west is a deterministic root rotation in the same scene.
+    root.rotation_euler[2] = 0.0
+    bpy.context.view_layer.update()
+    scene["candidate_status"] = "CANDIDATE_USER_FALSE_RUNTIME_FALSE_CANON_FALSE"
+    scene["sole_positive_source_sha256"] = SOURCE_SHA
+    scene["leaf_plate_count"] = len(leaf_specs)
+    scene["unique_red_slit_count"] = 1
+    scene["load_bearing_limb_count"] = 4
+    scene["camera_contract"] = "Camera_V2_world_N_40_-24_E_40_24"
+    bpy.ops.wm.save_as_mainfile(filepath=str(MASTER))
+
+    report = {
+        "status": "CANDIDATE_MACHINE_RENDERED_USER_FALSE_RUNTIME_FALSE_CANON_FALSE",
+        "source": {"path": str(SOURCE.relative_to(PROJECT)), "sha256": SOURCE_SHA, "role": "sole_positive_visual_reference"},
+        "prohibited_inputs_used": False,
+        "geometry": {
+            "non_repeating_leaf_plate_count": len(leaf_specs),
+            "unique_low_red_slit_count": 1,
+            "load_bearing_mechanical_limb_count": 4,
+            "irregular_dark_underbody_count": 1,
+        },
+        "camera_v2": {
+            "north": {"measured_degrees": north_angle, "target_degrees": north_target, "error_degrees": north_error},
+            "west": {"measured_degrees": west_angle, "target_degrees": west_target, "error_degrees": west_error, "threshold_degrees": 8.0},
+        },
+        "outputs": {
+            "blend": str(MASTER.relative_to(ROOT)),
+            "north_1024": str((RAW / "BREAKER_A37_NORTH_1024_RGBA_CANDIDATE.png").relative_to(ROOT)),
+            "west_1024": str((RAW / "BREAKER_A37_WEST_1024_RGBA_CANDIDATE.png").relative_to(ROOT)),
+            "north_512": str((DELIVERY / "BREAKER_A37_NORTH_512_RGBA_CANDIDATE.png").relative_to(ROOT)),
+            "west_512": str((DELIVERY / "BREAKER_A37_WEST_512_RGBA_CANDIDATE.png").relative_to(ROOT)),
+        },
+        "visual_stop_gate": "UNASSESSED_BY_HUMAN",
+    }
+    (QA / "build-report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("A37_BREAKER_TURNTABLE_BUILD_OK", json.dumps(report["camera_v2"], ensure_ascii=False))
+
+
+if __name__ == "__main__":
+    main()

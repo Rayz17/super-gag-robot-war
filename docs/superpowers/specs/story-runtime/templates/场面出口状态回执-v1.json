@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "fragment_id": "CXXEXX-F01",
+  "context_key": "由当前交互上下文元数据填写",
+  "facts_established": [
+    {
+      "fact_id": "CXXEXX.F01.RESULT",
+      "statement": "本场正文实际建立的事实",
+      "evidence_in_draft": "正文中可直接定位的动作或结果，不写作者解释"
+    }
+  ],
+  "entity_states": [
+    {
+      "entity_id": "ENTITY_ID_A",
+      "location": "本场结束位置",
+      "controller": "驾驶员、机魂、AI、远程席或无人控制",
+      "physical_state": "伤势、形态、携带物、可用能力与限制"
+    }
+  ],
+  "character_states": [
+    {
+      "entity_id": "CHARACTER_ID_A",
+      "desire_or_emotion": "本场结束时真正改变的欲望、情绪或误判",
+      "relationship_delta": "与谁的关系因哪项行动发生了什么变化"
+    }
+  ],
+  "open_threads": [
+    {
+      "thread_id": "THREAD_ID",
+      "status": "open",
+      "note": "后续必须继续处理的具体问题"
+    }
+  ],
+  "next_trigger": "什么事实迫使下一场开始",
+  "unresolved_logic_risks": []
+}

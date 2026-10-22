@@ -1,0 +1,23 @@
+constant_id	category	value	production_rule
+C01E01_GB001	grid	8x10	x=1..8 west_to_east; y=1..10 front_hall_to_asset_zone; fixed_camera
+C01E01_GB002	yellow_line	A=(2,2);B=(3,2);C=(4,2);D5=(5,2)	only these four cells count as staged; four tokens equal 29 people
+C01E01_GB003	path_frame	anchor=(1,4);pass_cells=(2,4)|(3,4)|(4,4)|(5,4)	anchor accepts Diedie active fall; pass cells share one frame family
+C01E01_GB004	side_door	(7,6)	opening admits exactly one patcher and attaches Robot Dog to D5
+C01E01_GB005	reflector_sockets	(3,8)|(4,8)|(5,8)	player selects one socket; Tangjiao executes; unsafe line is vetoed before commit
+C01E01_GB006	patchers	P1=(6,4);P2=(7,4)	functional modules only; no HP or attack kit
+C01E01_GB007	charge_cells	Diedie=(1,8);RobotDog=(8,8)	return occurs after clear and is not a victory requirement
+C01E01_GB008	Diedie	start=(1,7);move=3;context=1	R1 reaches/resets frame anchor; R2 active fall uses context action
+C01E01_GB009	RobotDog	start=(7,7);move=3;context=1	R1 reaches and opens side door; after attachment RobotDog shares D5 evac_auto path/cell and has no independent move or context action in R2-R3 until D5 is staged at GB019
+C01E01_GB010	TokenA11	route=(2,6)>(2,5)>(2,4)>(2,3)>(2,2);auto=2	end_R1=(2,4);end_R2=(2,2);end_R3=(2,2)
+C01E01_GB011	TokenB10	route=(3,7)>(3,6)>(3,5)>(3,4)>(3,3)>(3,2);auto=2	end_R1=(3,5);end_R2=(3,3);end_R3=(3,2)
+C01E01_GB012	TokenC3	route=(4,7)>(4,6)>(4,5)>(4,4)>(4,3)>(4,2);auto=2	contains two minors plus front-desk custodian; never splits; end_R1=(4,5);end_R2=(4,3);end_R3=(4,2)
+C01E01_GB013	TokenD5	route=(7,5)>(6,5)>(5,5)>(5,4)>(5,3)>(5,2);R1=attach_only;R2=3;R3=2	contains four assisted adults plus repair worker from setup; never spawns a fifth people token
+C01E01_GB014	phase_order	player_units>evac_auto>environment>local_round_receipt	execute once in each of three rounds; local receipts never persist Episode state, and the only persistent transaction remains RT013S after ADV_END
+C01E01_GB015	frame_state	OPEN>RECLOSING>JAMMED_R2_AUTO_ONLY>UNANCHORED_R3	R2 jam expires after R2 evac phase; R3 chest light removes control film before final evac phase
+C01E01_GB016	light_state	READY>AIM_PREVIEW>SAFE_CONFIRM>SPENT	unsafe preview enters BLOCKED_BY_DOUDENG then returns to AIM_PREVIEW without cost
+C01E01_GB017	R1_receipt	A=(2,4);B=(3,5);C=(4,5);D5=(7,5)_DOG_ATTACHED;frame=RECLOSING	no token is staged at this receipt
+C01E01_GB018	R2_receipt	A=(2,2);B=(3,3);C=(4,3);D5=(5,4);frame=JAM_EXPIRED	A is staged; B/C are past frame at final guide line; D5 is on gate
+C01E01_GB019	R3_success	A=(2,2);B=(3,2);C=(4,2);D5=(5,2);people=29/29;tokens=4/4	satisfies local Battle Clear only and writes no persistent state; RT013S is the sole Episode persistence after fire-route capture and four-order takeover
+C01E01_GB020	R3_failure	people<29_or_tokens<4	MISSION_FAIL_TIMEOUT; retry from battle setup; commit no story or persistent state
+C01E01_GB021	ui_only_assets	four_count_badges;safe_arrows;sensor_tile;yellow_line;three_reflector_sockets;light_state	no additional combat unit attack AI HP or full animation set
+C01E01_GB022	reflector_resolution	(3,8)=BLOCKED_BY_DOUDENG;(4,8)=SAFE_ANGLE_CONFIRMED;(5,8)=BLOCKED_BY_DOUDENG	blocked socket returns to AIM_PREVIEW with no action/state cost; safe socket advances RT009>RT010; preview masks visibly distinguish unsafe coverage before confirm

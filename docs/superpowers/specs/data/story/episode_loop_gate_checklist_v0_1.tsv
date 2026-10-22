@@ -1,0 +1,48 @@
+gate_id	scope	gate	check_method	fail_response
+GATE001	每话	至少2台新机体/机体单位曝光	查Mecha Appearance和roster ledger	回素材库补机体;至少一台进入规则
+GATE002	每话	至少1台机体进入战斗/玩法规则	查Battle and Gameplay	补地图机制、支援、敌方行动或胜败条件
+GATE003	每话	至少1-2个名场面/台词/文化梗进入场面并声明使用层级	查IP homage/gag mapping、quote ledger和Quote/scene usage tier	从quote/scene库补主锚点和副锚点，并标注直接短引/错引误记/原创变奏
+GATE004	每话	至少1个模玩/商品/社群生态素材进入剧情或玩法	查生态素材字段	补展签、改装、交易、开馆或听证机制
+GATE005	每话	必须有玩家可玩内容	查Battle/play type和Map mechanics	补SRPG战斗、探索、深潜、修复、听证、开馆或小游戏
+GATE006	每话	必须有敌方收益	查Enemy gain	补敌方学走、抢走、误读、复制或封存内容
+GATE007	每话	必须有关系硬动作	查Relationship hard action和Relationship段落	补权限、靠近、误会、破裂、吃醋、背锅、公开选择、共犯、支援变化或成年关系卖相
+GATE008	每话	必须有情绪物件	查Emotion object	补可三次回收的物件、证词、维修单、旧件或信号
+GATE009	每话	必须有下一话债务	查Next hook和Branch debt	补下一话必须偿还、升级或反转的内容
+GATE010	每话	名台词/名场面必须服务本话场面	查quote tier、正文和玩法后果	允许直接短引、错引误记或原创变奏；直接短引必须短、贴场面、不可代替原创戏剧
+GATE011	每话	儿童角色不得进入成人擦边	查Relationship hard action和Adult/romance edge boundary	移除暧昧/性隐喻;改为托付/童年/观众线
+GATE012	每话	机体不能只列名字	查Mecha/roster和Battle mechanics	为每台机体补战斗、剧情、资产或解锁功能
+GATE013	每3-5话	后续话不得明显变薄	比较每话字段长度和门禁通过情况	回薄弱话补场面、机体、玩法和债务
+GATE014	每篇	敌方学习链必须逐话升级	查enemy gain ledger	补敌方误读/复制/抢夺链
+GATE015	每篇	关系线必须有转折而非平推	查relationship heat ledger	补破裂、误会、救场、公开选择或玩法后果
+GATE016	每篇	分支必须留下可见疤痕	查branch debt ledger	补UI、地图、支援、态度、终局证词或开馆变化
+GATE017	全剧	核心参战规模不能靠EX补	查roster exposure ledger	把主线机体曝光和支援参战前置到主线
+GATE018	全剧	名场面不能集中在少数篇章	查quote_scene_usage ledger	为薄弱篇补主锚点和副锚点
+GATE019	全剧	后半不能衰减	比较前后半每话门禁和篇章审查	回后半补大爆点、机体、关系和玩法
+GATE020	全剧	新设定必须有canon迁移候选标记	查candidate list	补candidate row或迁移说明
+GATE021	每话/厚版	必须声明输出类别且不得降级冒充	查Task Brief和正文标题说明	若实际为路线图或话卡，重标类别；若目标是厚版，退回扩写
+GATE022	每话/厚版	必须有完整场面链	查剧情流程是否含开场图像、压力到场、可玩问题、中段变化、人物选择、敌方抽取、余波债务	补场面链；不能只补字段标签
+GATE023	每话/厚版	剧情流程不能只有短摘要	用check_story_doc.py --min-block-chars或人工厚度审稿	按V22.10基准扩写剧情流程；轻话必须说明为什么可低于警报线
+GATE024	每话/厚版	战斗/玩法必须有中段变化	查Battle and Gameplay是否含地图、目标、失败压力、特殊机制和回合/阶段变化	补地图事件、支援失效、敌方抢样本、规则改写或Boss阶段
+GATE025	每话/厚版	人物关系必须通过动作改变局势	查Relationship和Story Flow是否有权限、距离、救场、误会、共犯、嫉妒、公开选择或支援变化	把关系标签改成具体行动及后果
+GATE026	每话/厚版	机体必须有动作和资产层级	查Mecha Appearance是否说明每台机体/模块改变战局、剧情或后续解锁	为机体补动作、玩法功能、入队/支援/场景/模块边界；无功能则删减
+GATE027	每3-5话/厚版	批次长度和信息密度不得塌陷	运行check_story_doc.py --max-min-ratio并人工比对V22.10	补最短话的场面链；必要时拆话或降低为路线图
+GATE028	全剧/厚版	不能把V24式路线图当作完成稿	查每话平均厚度、场面链和审稿日志	将产物降级为全剧路线图；从C01开始逐章厚写
+GATE029	每话/V26后	核心pipeline单次只允许处理一话	查Task Brief、Single Episode ID和输出文件结构	若一次写多话，退回ELO外层循环，逐话重新调用pipeline
+GATE030	每话/V26后	必须声明世界内meta边界	查Diegetic meta boundary和正文	普通人类角色不得说章节、玩家、剧情、路线等世界外meta；转给G.A.G./索引/UI/残响层/小查错版等载体
+GATE031	每话/V26后	系统性缺项不能只靠补丁救	查Gate Result和Patch Log	若缺机体玩法、关系硬动作、敌方收益或名场面层级，回Pressure Board/Episode Card重建
+GATE032	每章完成后	必须连读第1章到第N章做前缀回归总审	查Prefix Review Memo	若1..N连读暴露S0/S1问题，定位最早根因章节K
+GATE033	前缀回归	根因章节修正后必须顺序重放K+1..N	查Regression Ticket和Replay Log	不得修完K章直接推进N+1；逐章判断保留、patch或重跑
+GATE034	前缀回归	同一根因最多阻塞3轮	查root_cause_id和attempt_no	第3轮仍不过则登记unresolved_issue_ledger，选择最优版本继续
+GATE035	前缀回归	未解决问题必须详细入账	查unresolved_issue_ledger	记录时序、症状、根因、尝试方案、选择版本、残余风险和后续观察点
+GATE036	前缀回归	高层取舍必须停下交给用户	查Regression Ticket decision_required字段	涉及主轴、锁定角色/机体、确认关系线或作品气质时停止自动推进
+GATE037	关键话/主角团	主角成长必须是熔炉而非小指标	查Protagonist Arc和protagonist_arc_ledger	若只剩存档、贴标签、40秒、半格、一回合等微动作，退回Pressure Board，把微动作升级为创伤、隐忍、误判、打击、崩溃、觉醒、不可逆选择、代价和状态变化
+GATE038	每篇/主角团	纪存、七海、白鸢至少一人必须有重大弧线增量且另外两人的压力不失踪	查章节Prefix Regression Review和protagonist_arc_ledger	补重大失败、公开背锅、权限升降、关系破裂/重建、禁忌能力、修炼/重建、路线承诺或新限制；不得只写符合人设的小判断
+GATE039	每篇/主角团	成长必须改变剧情或玩法状态	查Clear State、Battle and Gameplay、Relationship、Branch debt和State Deltas	把成长落到支援技能、命令权限、路线开闭、机体解锁、法律/公共身份、敌方样本、关系状态或下一目标
+GATE040	前缀回归/主角团	主角静止或小指标化可作为回溯根因	查Regression Ticket root_cause_id和Protagonist Arc finding	定位最早把主角压小的章节K，回K修正并重放K+1..N；同根因最多3轮后入未解决问题账本
+GATE041	关键话/关系线	互相吸引必须由情绪事件塑造	查Relationship、Emotional Relationship Event和relationship_heat_ledger	若只靠债务、共犯、权限、流程缝隙或规矩小动作，退回场面链，补误会、伤害、体谅、牺牲、吃醋、失去、回归、战场救援或狗血反转
+GATE042	每篇/关系线	主要成人/成年感关系必须有可记忆的羁绊事件	查Prefix Regression Review和relationship_heat_ledger	为纪存/七海/白鸢等关系补能改变战斗或后续状态的共同事件；儿童线继续完全隔离成人向
+GATE043	前缀回归/关系线	关系账本化可作为回溯根因	查Regression Ticket affected_ledgers和relationship emotional finding	定位最早把关系写成债务/共犯账本的章节K，回K补情绪事件并重放K+1..N
+GATE044	关键话/关系线	关系爆点必须有情绪积累或后续处理缺失的伤口	查Emotional Accumulation和relationship_heat_ledger	补错过、尴尬近距离、欲言又止、重复物件、日常照顾、吃醋自责或笨拙真心；若故意突发，则把来不及理解/告白/解释写成后续伤口
+GATE045	每篇/关系线	桂正和式参考只能取方法不能照搬内容	查Relationship、Emotional Accumulation和IP/quote ledger	允许借鉴情绪方法：错过、视线、近距离、三角压力、笨拙欲望；禁止复制具体剧情、人物设定、场面或台词
+GATE046	关键话/纪存	纪存作为机魂实体必须通过记忆、保护和智慧破局	查Jicun memory/mystery和protagonist_memory_ledger	若纪存只整理资料或做小选择，补记忆触发、身体/权限代价、保护行动、推理判断、地图/战斗规则解锁或主线谜团推进
+GATE047	每篇/纪存	纪存记忆苏醒必须逐步推进谜团而非一次性设定说明	查protagonist_memory_ledger和Prefix Regression Review	将记忆拆成碎片，登记触发、代价、解决的问题、身份变化和下一段谜团；禁止一章内百科式全揭示

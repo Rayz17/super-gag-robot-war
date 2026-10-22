@@ -1,0 +1,6 @@
+hint_level	name	allowed_trigger	allowed_content	required_log_fields	metric_effect	session_effect	forbidden_content	status
+H0	no_intervention	none	none	none	none	valid_if_other_gates_pass	任何主持提示或非预登记便利	candidate_contract_v1
+H1	safety_or_predeclared_access	安全风险;参与者主动请求退出;预登记合理便利;设备故障	暂停;退出权提醒;已同意的输入/字幕/缩放便利;纯设备恢复	timestamp;trigger_state;participant_request;action;resumed_or_stopped	none_if_predeclared_else_U-RESCUE	valid_or_withdrawal_only	目标解释;UI下一步;规则;路线;答案;偏好诱导	candidate_contract_v1
+H2	neutral_task_reorientation	超过预注册停滞阈值且参与者愿意继续	逐字重读任务目标;指出任务卡或已见通用控制说明的位置;不得改写语义	timestamp;trigger_state;exact_words;visible_surface;participant_response	U-COMPLETE_excluded;U-RESCUE_counted	other_metrics_may_remain_after_review	敌方规则;角色权能含义;失败原因;下一步;最佳路线	candidate_contract_v1
+H3	core_rule_explanation	H2后仍停滞且研究目的允许诊断	复述一个已存在核心规则或UI含义;必须逐字记录	timestamp;trigger_state;exact_words;rule_id;affected_metric_ids	U-COMPLETE,L-CAUSE,L-TRANSFER,R-FREE_excluded	needs_review_not_counted_for_M5_understanding	策略选择;目标答案;因果补全;偏好标签	candidate_contract_v1
+H4	strategy_or_answer_contamination	仅为故障定位或参与者明确要求看答案	路线;下一行动;权能最佳用法;失败原因;因果答案;版本映射中的任一项	timestamp;trigger_state;exact_words;answer_scope;stop_reason	U-COMPLETE,L-CAUSE,L-TRANSFER,S-DIVERSITY,F-REPLAY,R-FREE,F-AGENCY_excluded	performance_invalid_not_counted_for_M5	事后仍把该Session计入过门分母或偏好排序	candidate_contract_v1

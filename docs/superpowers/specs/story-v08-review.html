@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>超GAG v08 问题整改审稿台</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f3ee;
+      --paper: #ffffff;
+      --paper-soft: #fbfaf7;
+      --ink: #222321;
+      --muted: #6f716f;
+      --line: #d9d4ca;
+      --line-strong: #bab3a6;
+      --dark: #262625;
+      --red: #aa4340;
+      --teal: #246f69;
+      --blue: #375f91;
+      --gold: #94640f;
+      --purple: #6d538c;
+      --shadow: 0 12px 28px rgba(32, 28, 20, 0.08);
+      --radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      letter-spacing: 0;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    .app {
+      height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    .topbar {
+      padding: 18px 24px 14px;
+      background: rgba(255, 255, 255, 0.9);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+      z-index: 2;
+    }
+
+    .toprow {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.2;
+      font-weight: 760;
+    }
+
+    .subtitle {
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .stats {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .stat {
+      min-width: 84px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper-soft);
+      text-align: right;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .layout {
+      min-height: 0;
+      display: grid;
+      grid-template-columns: minmax(300px, 390px) minmax(0, 1fr);
+    }
+
+    .menu {
+      min-height: 0;
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      border-right: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.58);
+    }
+
+    .search {
+      padding: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .search input {
+      width: 100%;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      background: var(--paper);
+      color: var(--ink);
+      outline: none;
+      padding: 10px 12px;
+    }
+
+    .search input:focus {
+      border-color: var(--teal);
+      box-shadow: 0 0 0 3px rgba(36, 111, 105, 0.14);
+    }
+
+    .ranges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .range {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--paper);
+      color: var(--muted);
+      cursor: pointer;
+      padding: 5px 9px;
+      font-size: 12px;
+    }
+
+    .range[aria-pressed="true"] {
+      color: #fff;
+      border-color: var(--dark);
+      background: var(--dark);
+    }
+
+    .issue-list {
+      min-height: 0;
+      overflow: auto;
+      padding: 10px;
+    }
+
+    .issue-button {
+      width: 100%;
+      display: block;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      text-align: left;
+      padding: 10px 11px;
+      margin: 2px 0;
+    }
+
+    .issue-button:hover {
+      background: rgba(255, 255, 255, 0.86);
+      border-color: var(--line);
+    }
+
+    .issue-button.active {
+      background: var(--paper);
+      border-color: var(--line-strong);
+      box-shadow: var(--shadow);
+    }
+
+    .issue-title {
+      display: grid;
+      grid-template-columns: 32px minmax(0, 1fr);
+      gap: 8px;
+      align-items: start;
+      font-size: 14px;
+      line-height: 1.38;
+      font-weight: 740;
+    }
+
+    .issue-no {
+      color: var(--teal);
+      font-weight: 800;
+    }
+
+    .issue-sub {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.42;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .detail {
+      min-width: 0;
+      overflow: auto;
+      padding: 24px;
+    }
+
+    .detail-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .detail-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 18px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.22;
+      font-weight: 780;
+    }
+
+    .head-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 10px;
+    }
+
+    .pill,
+    .stage,
+    .jump {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--paper);
+      color: var(--muted);
+      padding: 4px 9px;
+      font-size: 12px;
+      line-height: 1.25;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    button.jump,
+    button.stage {
+      cursor: pointer;
+    }
+
+    .stage.S { color: var(--teal); border-color: rgba(36,111,105,.34); background: rgba(36,111,105,.08); }
+    .stage.B { color: var(--blue); border-color: rgba(55,95,145,.34); background: rgba(55,95,145,.08); }
+    .stage.T { color: var(--gold); border-color: rgba(148,100,15,.34); background: rgba(148,100,15,.10); }
+    .stage.C { color: var(--red); border-color: rgba(170,67,64,.34); background: rgba(170,67,64,.08); }
+    .stage.P { color: var(--purple); border-color: rgba(109,83,140,.34); background: rgba(109,83,140,.08); }
+
+    .panel {
+      margin-top: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      box-shadow: 0 3px 14px rgba(32, 28, 20, 0.04);
+      padding: 18px;
+    }
+
+    .panel h3 {
+      margin: 0 0 10px;
+      color: #343330;
+      font-size: 15px;
+      line-height: 1.35;
+    }
+
+    .panel p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.78;
+    }
+
+    .plan-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .chain {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .stage-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 10px;
+    }
+
+    .related {
+      margin-top: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper);
+      overflow: hidden;
+    }
+
+    details.related-group {
+      border-top: 1px solid var(--line);
+    }
+
+    details.related-group:first-child {
+      border-top: 0;
+    }
+
+    .related-group summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-weight: 740;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .related-group summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .related-group summary span {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 520;
+    }
+
+    .related-body {
+      padding: 0 16px 16px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .episode-card,
+    .arc-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--paper-soft);
+      padding: 14px;
+    }
+
+    .episode-card h4,
+    .arc-card h4 {
+      margin: 0 0 8px;
+      font-size: 15px;
+      line-height: 1.35;
+    }
+
+    .fields {
+      display: grid;
+      grid-template-columns: 118px minmax(0, 1fr);
+      gap: 7px 12px;
+      margin: 10px 0 0;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .fields dt {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .fields dd {
+      margin: 0;
+    }
+
+    .empty,
+    .error {
+      border: 1px dashed var(--line-strong);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.68);
+      color: var(--muted);
+      padding: 18px;
+      line-height: 1.7;
+    }
+
+    .error {
+      color: var(--red);
+      border-color: rgba(170, 67, 64, 0.42);
+      background: rgba(170, 67, 64, 0.06);
+    }
+
+    @media (max-width: 920px) {
+      .app {
+        height: auto;
+        min-height: 100vh;
+      }
+
+      .toprow {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .stats {
+        justify-content: flex-start;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .menu {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        max-height: 48vh;
+      }
+
+      .detail {
+        padding: 18px;
+      }
+
+      .plan-grid,
+      .fields {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="toprow">
+        <div>
+          <h1>超GAG v08 问题整改审稿台</h1>
+          <div class="subtitle">左侧只按50个问题做菜单，右侧集中展示方案、话号链、高潮节点与验收标准。</div>
+        </div>
+        <div class="stats" id="stats"></div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="menu">
+        <div class="search">
+          <input id="search" type="search" placeholder="搜索问题标题、方案、话号">
+        </div>
+        <div class="ranges" id="ranges"></div>
+        <div class="issue-list" id="issueList"></div>
+      </aside>
+
+      <section class="detail" id="detail">
+        <div class="detail-inner">
+          <div class="empty">正在读取 v08 问题表。</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const FILES = {
+      issues: "data/story/issue_episode_revision_targets_v08.tsv",
+      episodes: "data/story/episode_issue_pressure_matrix_v08.tsv",
+      arcs: "data/story/character_arc_ladders_v08.tsv",
+      drama: "data/story/episode_drama_cards_v05.tsv"
+    };
+
+    const STAGE_LABEL = {
+      S: "种子",
+      B: "推进",
+      T: "转折",
+      C: "爆发",
+      P: "回收"
+    };
+
+    const RANGES = [
+      { value: "all", label: "全部" },
+      { value: "1-10", label: "1-10" },
+      { value: "11-20", label: "11-20" },
+      { value: "21-30", label: "21-30" },
+      { value: "31-40", label: "31-40" },
+      { value: "41-50", label: "41-50" }
+    ];
+
+    const state = {
+      data: { issues: [], episodes: [], arcs: [], drama: [] },
+      query: "",
+      range: "all",
+      selected: "1"
+    };
+
+    const els = {
+      stats: document.getElementById("stats"),
+      search: document.getElementById("search"),
+      ranges: document.getElementById("ranges"),
+      issueList: document.getElementById("issueList"),
+      detail: document.getElementById("detail")
+    };
+
+    init();
+
+    async function init() {
+      try {
+        const entries = await Promise.all(Object.entries(FILES).map(async ([key, path]) => {
+          const text = await loadText(path);
+          return [key, parseTsv(text)];
+        }));
+        state.data = Object.fromEntries(entries);
+        renderAll();
+      } catch (error) {
+        renderError(error);
+      }
+    }
+
+    async function loadText(path) {
+      const response = await fetch(path, { cache: "no-store" });
+      if (!response.ok) throw new Error(`${path} 读取失败：${response.status}`);
+      return response.text();
+    }
+
+    function parseTsv(text) {
+      const lines = text.replace(/\r/g, "").trim().split("\n").filter(Boolean);
+      const headers = lines.shift().split("\t");
+      return lines.map((line, index) => {
+        const cells = line.split("\t");
+        const row = { _index: index };
+        headers.forEach((header, i) => row[header] = cells[i] || "");
+        row._text = cells.join(" ");
+        return row;
+      });
+    }
+
+    function renderAll() {
+      renderStats();
+      renderRanges();
+      renderIssueList();
+      renderDetail();
+    }
+
+    function renderStats() {
+      const episodeCount = state.data.episodes.length;
+      const issueCount = state.data.issues.length;
+      const arcCount = state.data.arcs.length;
+      els.stats.innerHTML = [
+        [issueCount, "问题项"],
+        [episodeCount, "主线话"],
+        [arcCount, "弧线节点"]
+      ].map(([value, label]) => (
+        `<div class="stat"><strong>${escapeHtml(value)}</strong><span>${escapeHtml(label)}</span></div>`
+      )).join("");
+    }
+
+    function renderRanges() {
+      els.ranges.innerHTML = RANGES.map(range => (
+        `<button class="range" data-range="${range.value}" aria-pressed="${state.range === range.value}">${range.label}</button>`
+      )).join("");
+      els.ranges.querySelectorAll(".range").forEach(button => {
+        button.addEventListener("click", () => {
+          state.range = button.dataset.range;
+          const rows = visibleIssues();
+          state.selected = rows[0]?.["问题编号"] || state.selected;
+          renderIssueList();
+          renderDetail();
+        });
+      });
+    }
+
+    function renderIssueList() {
+      const rows = visibleIssues();
+      if (!rows.some(row => row["问题编号"] === state.selected) && rows[0]) {
+        state.selected = rows[0]["问题编号"];
+      }
+      els.issueList.innerHTML = rows.length ? rows.map(renderIssueButton).join("") : `<div class="empty">没有匹配的问题。</div>`;
+      els.issueList.querySelectorAll(".issue-button").forEach(button => {
+        button.addEventListener("click", () => {
+          state.selected = button.dataset.issue;
+          renderIssueList();
+          renderDetail();
+        });
+      });
+    }
+
+    function renderIssueButton(row) {
+      const active = row["问题编号"] === state.selected ? " active" : "";
+      return `
+        <button class="issue-button${active}" data-issue="${escapeAttr(row["问题编号"])}">
+          <div class="issue-title">
+            <span class="issue-no">${escapeHtml(row["问题编号"])}</span>
+            <span>${escapeHtml(row["问题标题"])}</span>
+          </div>
+          <div class="issue-sub">${escapeHtml(row["覆盖策略"])}</div>
+        </button>
+      `;
+    }
+
+    function visibleIssues() {
+      const query = state.query.trim().toLowerCase();
+      return state.data.issues.filter(row => {
+        const number = Number(row["问题编号"]);
+        const inRange = state.range === "all" || betweenRange(number, state.range);
+        const match = !query || row._text.toLowerCase().includes(query);
+        return inRange && match;
+      });
+    }
+
+    function betweenRange(number, range) {
+      const [start, end] = range.split("-").map(Number);
+      return number >= start && number <= end;
+    }
+
+    function renderDetail() {
+      const row = state.data.issues.find(item => item["问题编号"] === state.selected);
+      if (!row) {
+        els.detail.innerHTML = `<div class="detail-inner"><div class="empty">请选择一个问题。</div></div>`;
+        return;
+      }
+      const chain = parseEpisodeChain(row["覆盖话号链"]);
+      const relatedEpisodes = chain
+        .map(item => state.data.episodes.find(ep => ep["话号"] === item.episode))
+        .filter(Boolean);
+      const relatedDrama = chain
+        .map(item => state.data.drama.find(ep => ep["话号"] === item.episode))
+        .filter(Boolean);
+      const relatedArcs = relatedArcRows(chain.map(item => item.episode));
+
+      els.detail.innerHTML = `
+        <div class="detail-inner">
+          ${detailHead(row, chain)}
+          <div class="plan-grid">
+            ${panel("整改策略", row["覆盖策略"])}
+            ${panel("质变/高潮节点", row["质变/高潮节点"])}
+          </div>
+          ${panel("重写验收口径", row["重写验收口径"])}
+          <div class="panel">
+            <h3>覆盖话号链</h3>
+            <div class="chain">${chain.map(renderStageChip).join("")}</div>
+            <div class="stage-legend">
+              ${Object.entries(STAGE_LABEL).map(([key, label]) => `<span class="stage ${key}">${key} · ${label}</span>`).join("")}
+            </div>
+          </div>
+          <div class="related">
+            ${relatedEpisodeGroup(relatedEpisodes, row["问题编号"])}
+            ${relatedDramaGroup(relatedDrama)}
+            ${relatedArcGroup(relatedArcs)}
+          </div>
+        </div>
+      `;
+    }
+
+    function detailHead(row, chain) {
+      const chapters = [...new Set(chain.map(item => episodeToChapter(item.episode)))];
+      return `
+        <div class="detail-head">
+          <div>
+            <h2>${escapeHtml(row["问题编号"])}. ${escapeHtml(row["问题标题"])}</h2>
+            <div class="head-meta">
+              <span class="pill">${escapeHtml(chain.length)} 个落点</span>
+              ${chapters.map(chapter => `<span class="pill">${escapeHtml(chapter)}</span>`).join("")}
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function panel(title, text) {
+      return `
+        <section class="panel">
+          <h3>${escapeHtml(title)}</h3>
+          <p>${escapeHtml(text)}</p>
+        </section>
+      `;
+    }
+
+    function renderStageChip(item) {
+      return `<span class="stage ${item.stage}">${escapeHtml(item.episode)} · ${escapeHtml(STAGE_LABEL[item.stage] || item.stage)}</span>`;
+    }
+
+    function parseEpisodeChain(text) {
+      return [...String(text).matchAll(/(\d+-\d+)\[([SBTCP])\]/g)]
+        .map(match => ({ episode: match[1], stage: match[2] }));
+    }
+
+    function relatedEpisodeGroup(rows, issueNo) {
+      if (!rows.length) return "";
+      return `
+        <details class="related-group" open>
+          <summary>相关话承压细节 <span>${rows.length} 条</span></summary>
+          <div class="related-body">
+            ${rows.map(row => episodeCard(row, issueNo)).join("")}
+          </div>
+        </details>
+      `;
+    }
+
+    function episodeCard(row, issueNo) {
+      const issueRole = issueRoleForEpisode(row, issueNo);
+      return `
+        <article class="episode-card">
+          <h4>${escapeHtml(row["话号"])} ${escapeHtml(row["标题"])}</h4>
+          <div class="head-meta">
+            <span class="pill">${escapeHtml(row["章节"])}</span>
+            <span class="pill">${escapeHtml(row["叙事阶段"])}</span>
+            <span class="pill">${escapeHtml(issueRole)}</span>
+          </div>
+          <dl class="fields">
+            <dt>主爆点</dt><dd>${escapeHtml(row["本话主爆点"])}</dd>
+            <dt>转折钩子</dt><dd>${escapeHtml(row["必须转折与下一话钩子"])}</dd>
+          </dl>
+        </article>
+      `;
+    }
+
+    function issueRoleForEpisode(row, issueNo) {
+      const groups = [
+        ["主压力", row["主压力问题IDs"]],
+        ["次压力", row["次压力问题IDs"]],
+        ["暗线/伏笔", row["暗线/伏笔问题IDs"]],
+        ["人物/关系/梗点", row["人物/关系/梗点压力IDs"]]
+      ];
+      const hit = groups.find(([, value]) => splitIds(value).includes(String(issueNo)));
+      return hit ? hit[0] : "覆盖链";
+    }
+
+    function relatedDramaGroup(rows) {
+      if (!rows.length) return "";
+      return `
+        <details class="related-group">
+          <summary>对应逐话戏剧卡 <span>${rows.length} 条</span></summary>
+          <div class="related-body">
+            ${rows.map(dramaCard).join("")}
+          </div>
+        </details>
+      `;
+    }
+
+    function dramaCard(row) {
+      return `
+        <article class="episode-card">
+          <h4>${escapeHtml(row["话号"])} ${escapeHtml(row["标题"])}</h4>
+          <dl class="fields">
+            <dt>A/B/C线</dt><dd>${escapeHtml(row["本话A/B/C线碰撞"])}</dd>
+            <dt>泪点</dt><dd>${escapeHtml(row["本话泪点/感动点"])}</dd>
+            <dt>关系爽点</dt><dd>${escapeHtml(row["本话关系爽点/擦边点"])}</dd>
+            <dt>梗点映射</dt><dd>${escapeHtml(row["本话名场面梗点映射"])}</dd>
+          </dl>
+        </article>
+      `;
+    }
+
+    function relatedArcRows(episodes) {
+      const episodeSet = new Set(episodes);
+      return state.data.arcs
+        .filter(row => episodeSet.has(row["话号"]))
+        .slice(0, 18);
+    }
+
+    function relatedArcGroup(rows) {
+      if (!rows.length) return "";
+      return `
+        <details class="related-group">
+          <summary>相关人物/关系弧线节点 <span>${rows.length} 条</span></summary>
+          <div class="related-body">
+            ${rows.map(arcCard).join("")}
+          </div>
+        </details>
+      `;
+    }
+
+    function arcCard(row) {
+      return `
+        <article class="arc-card">
+          <h4>${escapeHtml(row["人物/关系"])} · ${escapeHtml(row["话号"])} · ${escapeHtml(row["阶段类型"])}</h4>
+          <dl class="fields">
+            <dt>外放事件</dt><dd>${escapeHtml(row["外放事件"])}</dd>
+            <dt>内在变化</dt><dd>${escapeHtml(row["内在质变"])}</dd>
+            <dt>玩法承载</dt><dd>${escapeHtml(row["玩法/系统承载"])}</dd>
+            <dt>后续债务</dt><dd>${escapeHtml(row["后续债务"])}</dd>
+          </dl>
+        </article>
+      `;
+    }
+
+    function splitIds(value) {
+      return String(value || "").split(",").map(item => item.trim()).filter(Boolean);
+    }
+
+    function episodeToChapter(episode) {
+      const [chapter] = String(episode).split("-");
+      return `C${chapter.padStart(2, "0")}`;
+    }
+
+    function renderError(error) {
+      els.detail.innerHTML = `
+        <div class="detail-inner">
+          <div class="error">
+            <strong>数据读取失败。</strong><br>
+            ${escapeHtml(error.message)}<br>
+            请通过本地HTTP服务打开本页，例如 <code>http://127.0.0.1:8765/docs/superpowers/specs/story-v08-review.html</code>。
+          </div>
+        </div>
+      `;
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function escapeAttr(value) {
+      return escapeHtml(value);
+    }
+
+    els.search.addEventListener("input", () => {
+      state.query = els.search.value;
+      const rows = visibleIssues();
+      state.selected = rows[0]?.["问题编号"] || state.selected;
+      renderIssueList();
+      renderDetail();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+asset_id	production_unit	quality_boundary	vertical_slice_count	minimum_22_count	ideal_22_count	included_work	excluded_work	reuse_requirement	scope_pairing_rule	measurement_artifact	tripwire	calibration_gate	status
+ASSET_ENV_KIT	主要环境Kit	含GD2尺度/模块/材质/声景/基础碰撞，不含每张拓扑	2-3	9-12	15-20	模块集;材质;标志物;基础碰撞;声景brief	战术拓扑;状态差分;英雄演出	跨2章或Story+一种玩法	数量高档只能与单位成本低/基准场景配对	工时账+handoff+返工+缺陷+visual回执	连续2个>5PM	3个正式Kit后计算P50;8个后P80	candidate_count_cap
+ASSET_TACTICAL_TOPOLOGY	战术基础拓扑	成熟Kit上的可玩地形/目标/部署/AI入口	3-4	24-30	36-46	关卡布局;目标;部署;导航;AI入口	环境Kit美术;Encounter规则实现;英雄演出	至少支持2种可发现策略	总数与scope-tier Encounter成对	版本化灰盒+设计/QA工时+方案分类	P50>2PM	8张正式图后P80	candidate_count_cap
+ASSET_MAP_STATE	地点状态差分	开放/警报/破损/修复/控制权差分，不重做整图	7-10	48-65	75-100	状态差分资产;碰撞/遮挡差分;回归	基础Kit;新拓扑	复用同一Kit与拓扑	每Kit平均状态数不得与所有Kit上限同时取高	状态diff+资产diff+回归工时	成本接近新图	8个状态后P80	candidate_count_cap
+ASSET_EXPLORE_SPACE	可步行探索空间	10-25分钟/<=6POI/复用Spatial内核	1	8-12	14-20	热点;路线;POI;局部碰撞;环境叙事	新移动能力;新顶层UI	跨2次消费或兼作Hub/战术	只在对应环境Kit已预算时计空间增量	路线冷测+热点/碰撞/接入工时	第二实例仍加新输入/UI	3个空间后P50	candidate_count_cap
+ASSET_HUB_ANCHOR	万机馆常用Hub锚点	高价值活动区及状态差分，不做全馆跑腿	2	4	6	岗位热点;事件入口;状态回写;局部布置	全新Hub系统;每日清单	共享对象查看/岗位/事件UI	锚点不重复计万机馆环境Kit	回馆Session+事件数据+状态回写	每周期新增专属控制器	4个锚点后P50	candidate_count_cap
+ASSET_GIANT_BODY	Boss或多区域巨构地图身体	多格/多区域/持续损伤/控制链	1	5-7	8-10	主体模型/Rig;区域节点;损伤态;控制接口	共享动作clip;地图Kit;英雄音画	必须复用P3 Operation状态框架	与A3簇配对;同一簇多个章节只计一个新主体基底	GD1/GD2+灰盒+Rig+QA+复盘	>6PM且仅消费一次	3个巨构后P50	candidate_count_cap
+ASSET_CORE_CHASSIS	核心高细节机体Chassis	独立身体规则/Rig/战损/轮廓;不含每个动作clip	4-6	14-18	22-28	主体模型;Rig;基础材质;碰撞;战损接口	共享/专属动作clip;英雄序列;语音	至少3个Encounter或跨Story/Hub/战术	高档Chassis数只能与高复用动作场景配对	Rig版本+身体合同+资产/QA工时	连续2台>4PM	3台后仅临时P50;8台且跨2章后P80	candidate_count_cap
+ASSET_GUEST_MECHA	共享Rig客串/职业机/盟友包	共享Chassis上的轮廓/部件/武装/行为差分	2-4	18-30	28-45	变体部件;材质;行为包;少量专属姿态	全新骨架;完整独立动作集	不得无理由升核心Chassis	同一Rig家族至少2个派生包	来源/变体/BOM/接入工时	派生包接近新Chassis成本	8个派生后P80	candidate_count_cap
+ASSET_SCENE_MECHA	低成本剧情/背景机体	场景体/Cut-in/远景/群体区	6-10	25-40	40-70	轮廓;场景姿态;远景层;支援卡	可直接操作Rig;完整战损/动作	无独立玩家判断则不得升格	与客串包互斥计数	场景资产+来源+接入工时	大量一次性专属动作	10台后P50	candidate_count_cap
+ASSET_PORTRAIT_CHARACTER	具名人物立绘包	统一规格与必要姿态，不等于每句新表情	8-12	32-45	50-70	基础构图;服装态;口型/姿态接口	每个表情状态;CG;动画Cut-in	跨章复用	角色数高档需与表情状态低/基准配对	角色包handoff+返工	一次登场仍全规格	8人后P50	candidate_count_cap
+ASSET_PORTRAIT_STATE	表情/姿态状态	共享构图/Rig上的可读差分	50-80	220-330	380-600	表情/姿态差分;接入	基础人物包;CG	必须有剧情/玩法消费者	不得把近义状态都取高	状态清单+制作/接入/QA工时	重复近义状态膨胀	100状态后P80	candidate_count_cap
+ASSET_UI_SHELL	顶层UI Shell	战术/探索/Hub/结算/设置等系统级壳	9-12	12-15	14-18	信息架构;交互;实现;无障碍;QA	图标/状态素材;章节专属内容	量产期按章新增为0	三档都复用同一核心Shell	UX原型+实现+无障碍+QA	量产期仍新增顶层Shell	全部核心Shell后P80	candidate_count_cap
+ASSET_UI_SYMBOL	图标/状态/来源符号	颜色+形状+文字冗余/可本地化	100-160	260-380	400-600	图标;状态形;来源符号;文字键	顶层UI;插画	统一语义库	同一语义不得跨模式重复计数	符号registry+可读性测试	语义重复或只靠颜色	100符号后P80	candidate_count_cap
+ASSET_ACTION_CLIP	共享战场动作Clip	移动/转向/攻击/保护/救援/反应及身体变体	60-90	200-300	350-520	动作设计;动画;实现;事件标签;QA	Chassis/Rig;VFX/SFX;英雄剪辑	60-70%共享语法	Core Chassis不重复计clip工时	clip清单+动画/实现/QA工时	英雄动作侵蚀共享比例	100 clips后P80	candidate_count_cap
+ASSET_HERO_SEQUENCE	英雄演出/关键Animatic	30-45秒有限动画/业务结果与Skip一致	8-14	32-48	60-90	分镜;镜头;剪辑;角色/机体动画组合;VFX占位	新Chassis;原创音乐/SFX/语音	复用镜头/动作/VFX语法	与A3簇和CG上限成对;不同时取全部高档	Previs+动画+VFX+接入/QA工时	>1.2PM或替玩家完成因果	8个正式段后P80	candidate_count_cap
+ASSET_CG_CUTIN	CG/大Cut-in	单幅或短层次动画/不承担未玩出的因果	8-12	35-55	60-90	构图;绘制;简单层次动画;接入	英雄序列镜头;角色立绘	跨商店/宣传或剧情复用优先	与英雄序列高档互斥	方向图+成品+接入+返工	一次性数量超章型预算	12张后P80	candidate_count_cap
+ASSET_MUSIC	音乐曲目/可变Stem组	Leitmotif与场景变奏/不按章一曲	8-12	32-48	55-75	作曲;编曲;混音;Stem;实现	SFX;语音;授权第三方曲	主题跨角色/地点/状态复用	曲目高档需以Stem复用率证明	brief+demo+mix+实现+回执	一次性曲目占比>30%	10首后P80	candidate_count_cap
+ASSET_SFX	SFX单元	运动/材质/尺度/供能/武装/结构家族	120-200	600-900	1000-1500	设计/录制/编辑/导入/基础混音	音乐;语音;环境音景	家族变体而非逐对象重录	家族变体不重复计原始录音	SFX registry+实现+混音QA	同义声效重复采购	200项后P80	candidate_count_cap
+ASSET_AMBIENCE	环境音景组	地点/状态可分层循环	8-14	28-42	50-75	循环层;状态Stem;实现;混音	音乐;单发SFX	同Kit多态变奏	不重复计环境Kit声景brief	音景stem+混音+场景QA	每房间一套不可复用	8组后P50	candidate_count_cap
+ASSET_TEXT_10K	一万字中文玩家文本	Reader+Hub+关系+档案+教程+UI+错误提示至游戏内验收	6-10	28-42	45-70	写作;编辑;接入;术语;中文QA	英文翻译;配音制作	档案/关系必须有后续消费者	与narrative PM分配配对;不是asset PM	版本diff+写作/编辑/接入工时	连续2章>1.5PM/万字	8个单位后P80	candidate_count_cap
+ASSET_VOICE_HOUR	一小时成品语音	表演/导演/录音/编辑/实现/返修;全配音不在范围	0.3-0.6	1.5-3	4-8	导演;演员;录音;编辑;实现;语音QA	文本写作;音乐/SFX;全配音	优先战斗和关键句	只有供应商报价与冻结脚本后进入成本场景	台词冻结量+报价+实现/QA	文本未冻结即录音	首次完整语音批后P50	candidate_count_cap

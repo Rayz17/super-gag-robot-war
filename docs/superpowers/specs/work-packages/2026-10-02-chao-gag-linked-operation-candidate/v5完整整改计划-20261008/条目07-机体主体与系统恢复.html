@@ -1,0 +1,1504 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>机体主体与系统恢复 · 工务城整改计划</title><style>
+:root{--ink:#243742;--muted:#586e78;--paper:#f4f2eb;--panel:#fffefa;--line:#d3ddd9;--teal:#176b73;--amber:#a96120;--accent:#dc674d}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;line-height:1.85;font-size:16px}a{color:var(--teal);text-decoration-thickness:1px;text-underline-offset:3px}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.skip{position:absolute;top:-80px}.skip:focus{top:10px;background:white;padding:10px;z-index:9}.shell{display:grid;grid-template-columns:245px minmax(0,1fr);max-width:1600px;margin:auto}.sidebar{position:sticky;top:0;height:100vh;overflow:auto;background:#e5ece8;border-right:1px solid #c4d5d0;padding:30px 20px}.brand{font-size:14px;letter-spacing:.12em;color:var(--teal);font-weight:750}.date{font-size:12px;color:var(--muted);margin:7px 0 24px}.nav a{display:block;text-decoration:none;padding:9px 12px;border-radius:7px;margin:4px 0}.nav a.active{background:var(--teal);color:white}.nav a:hover{box-shadow:inset 0 0 0 1px var(--teal)}.status{border-top:1px solid var(--line);margin-top:25px;padding-top:15px;color:var(--muted);font-size:13px}.status strong{color:var(--amber)}main{padding:42px clamp(24px,4vw,65px) 80px;min-width:0}article{max-width:1100px;margin:auto}h1{font-size:clamp(28px,3vw,39px);line-height:1.4;letter-spacing:-.03em;margin:0 0 18px}h2{font-size:25px;margin:55px 0 20px;border-top:2px solid var(--line);padding-top:24px;line-height:1.5}h3{font-size:20px;margin:30px 0 12px;color:var(--teal)}p,ul,ol{margin:14px 0}li{margin:7px 0}strong{font-weight:690}blockquote{margin:22px 0;background:#e6efeb;padding:14px 25px;border-left:4px solid var(--teal);border-radius:0 8px 8px 0}code{font-family:ui-monospace,monospace;font-size:.87em;background:#e8ece6;padding:2px 5px;border-radius:4px;overflow-wrap:anywhere}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:9px;margin:20px 0;background:var(--panel)}table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7}th{text-align:left;padding:13px 14px;background:#dce8e3;color:#204c53;font-weight:700}td{vertical-align:top;padding:13px 14px;border-top:1px solid var(--line)}td:first-child{min-width:145px;font-weight:560}tr:nth-child(even) td{background:#f8f8f1}img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}article>p:has(img){max-width:800px;margin:25px auto}figure{margin:25px 0}figcaption,.caption{font-size:13px;color:var(--muted)}details{margin:18px 0;padding:15px 20px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}summary{cursor:pointer;color:var(--teal);font-weight:650}.toc{background:#edf0e8;border:1px solid var(--line);border-radius:8px;padding:16px 22px;margin:28px 0;font-size:14px}.toc a{display:inline-block;margin:3px 14px 3px 0}.foot{margin-top:45px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}.filters{display:flex;gap:12px;flex-wrap:wrap;position:sticky;top:0;background:var(--paper);padding:12px 0;z-index:3}input,select{font:inherit;border:1px solid #90aaa8;border-radius:7px;background:var(--panel);padding:9px 12px;color:var(--ink)}input{flex:1;min-width:220px}.count{font-size:13px;color:var(--muted)}.source-note{font-size:13px;color:var(--muted)}.badge{font-size:12px;padding:3px 7px;background:#dcece5;border-radius:4px;white-space:nowrap}.ledger-card{border:1px solid var(--line);background:var(--panel);border-radius:9px;padding:18px 20px;margin:12px 0}.ledger-card h3{margin:0 0 8px;font-size:17px}.ledger-card p{margin:8px 0;font-size:14px}.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.ledger-card summary{font-size:13px}.ledger-card details{padding:10px 14px}.task-links a{display:inline-block;margin-right:10px}.footer-nav{display:flex;justify-content:space-between;gap:15px;margin-top:30px}svg{max-width:100%;height:auto}
+@media(max-width:1000px){.shell{grid-template-columns:205px minmax(0,1fr)}.sidebar{padding:25px 12px}main{padding:32px 22px 55px}table{min-width:650px}}
+@media(max-width:720px){.shell{display:block}.sidebar{position:static;height:auto;padding:16px 18px;border-right:0;border-bottom:1px solid var(--line)}.date{margin-bottom:10px}.nav{display:flex;gap:5px;overflow:auto}.nav a{white-space:nowrap;font-size:13px;padding:7px 10px}.status{display:none}main{padding:26px 18px 50px}body{font-size:16px}h2{font-size:22px;margin-top:40px}.filters{position:static}h1{font-size:28px}td,th{padding:11px}.toc a{display:block}}
+@media print{.sidebar,.filters,.footer-nav,.skip{display:none}.shell{display:block}main{padding:0}body{background:white;font-size:10pt}h1{font-size:22pt}h2{font-size:16pt;break-after:avoid}h3{break-after:avoid}.table-wrap{overflow:visible;border-radius:0}table{min-width:0!important;font-size:9pt}tr{break-inside:avoid}a{color:inherit}details{break-inside:avoid}.ledger-card{break-inside:avoid}}
+
+.nav-label{font-size:12px;font-weight:750;letter-spacing:.07em;margin:24px 12px 10px;color:var(--muted)}.nav small{float:right;font-size:11px;opacity:.7}.detail-reading{background:#dfece5;border:1px solid #adcbc0;border-radius:10px;padding:20px 24px;margin:28px 0}.detail-reading ul{columns:2;column-gap:30px;font-size:14px;padding-left:20px}.detail-reading li{break-inside:avoid}.design-item{padding:16px 0 35px;border-bottom:2px solid var(--line);scroll-margin-top:24px}.design-item h3{font-size:22px;line-height:1.5}.design-item>p{max-width:960px}.design-example{border-left:4px solid var(--amber);background:#f1e7d1;border-radius:0 8px 8px 0;padding:15px 22px;margin:21px 0}.design-example p{margin:6px 0 0}.implementation{font-size:14px;overflow-wrap:anywhere}.implementation a{word-break:break-word}.item-toc{font-size:14px}.item-toc ul{columns:2}.item-toc li{break-inside:avoid}figure img{display:block;width:100%;max-height:none;background:#f0f0e7}figure figcaption{padding:10px 4px 0;line-height:1.7}figure a:has(img){display:block}figure{margin:28px 0 35px}figure strong{color:var(--teal)}button{font:inherit;padding:10px 18px;border:1px solid var(--teal);border-radius:6px;background:#e0eee7;color:var(--ink);cursor:pointer}.read-detail{font-weight:700}.ledger-card{scroll-margin-top:20px}.design-item blockquote{font-size:16px}.design-item .source-note{font-size:13px}.design-item:target{border-left:5px solid var(--teal);padding-left:20px;background:#f8f9ef}.nav a.active{font-weight:700}
+@media(max-width:720px){.detail-reading ul,.item-toc ul{columns:1}.design-item h3{font-size:20px}.nav-label{display:none}.detail-reading{padding:14px 17px}figure{margin:22px -4px}figure img{border-radius:5px}.design-example{padding:12px 15px}.design-item:target{padding-left:12px}}
+</style></head><body><a class="skip" href="#main">跳到正文</a><div class="shell"><aside class="sidebar"><div class="brand">超 GAG / 工务城</div><div class="date">完整整改计划 · 10.10 实施更新</div><nav class="nav" aria-label="分册导航"><a href="index.html">00　总方案</a><a href="13-%E5%BB%BA%E7%AD%91%E6%AF%94%E4%BE%8B%E4%B8%8E%E6%9D%90%E8%B4%A8%E9%87%8D%E5%81%9A.html">13　建筑比例与材质重做</a><a href="12-%E9%A6%96%E7%89%88%E4%BA%A4%E4%BB%98%E4%B8%8E%E9%AA%8C%E8%AF%81.html">12　首版交付与验证</a><a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html">07　首关施工规格</a><a href="08-%E5%9B%BE%E5%BD%A2%E4%B8%8E%E6%89%8B%E6%84%9F%E6%96%BD%E5%B7%A5%E8%A1%A8.html">08　图形与手感施工表</a><a href="11-%E5%90%8D%E5%9C%BA%E9%9D%A2%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%85%A8%E9%93%BE%E8%A1%A5%E5%AE%9A.html">11　名场面与系统补定</a><a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html">09　人物指令与机魂</a><a href="10-%E4%B8%93%E5%85%B3%E4%B8%8E%E6%88%90%E9%95%BF%E5%AF%B9%E7%85%A7%E8%A7%84%E6%A0%BC.html">10　专关与成长对照</a><a href="01-%E6%A0%B8%E5%BF%83%E6%9C%BA%E5%88%B6%E4%B8%8E%E6%93%8D%E4%BD%9C.html">01　核心机制与操作</a><a href="02-%E7%BE%8E%E6%9C%AF%E4%B8%8E%E9%80%90%E6%8B%9B%E6%BC%94%E5%87%BA.html">02　美术与逐招演出</a><a href="03-%E6%9C%BA%E4%BD%93%E4%B8%8E%E4%BA%BA%E7%89%A9%E4%BD%93%E7%B3%BB.html">03　机体与人物体系</a><a href="04-%E6%88%98%E5%9C%BA%E4%B8%8E%E7%AB%8B%E4%BD%93%E6%9C%BA%E5%88%B6.html">04　战场与立体机制</a><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html">05　施工与验收</a><a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">06　从方案到可实现设计</a><a href="图解总览.html">39 张原创图解</a><a href="覆盖核对.html">搜索 331 条具体设计</a><div class="nav-label">逐项展开 · 9 册</div><a href="%E6%9D%A1%E7%9B%AE01-%E6%93%8D%E4%BD%9C%E7%95%8C%E9%9D%A2%E4%B8%8E%E4%BD%93%E9%AA%8C%E7%BB%B4%E5%BA%A6.html">操作界面与体验维度 <small>40</small></a><a href="%E6%9D%A1%E7%9B%AE02-%E7%BE%8E%E6%9C%AF%E5%9C%BA%E6%99%AF%E4%B8%8E%E8%AF%AD%E4%B9%89%E8%89%B2.html">美术场景与语义色 <small>45</small></a><a href="%E6%9D%A1%E7%9B%AE03-%E5%8A%A8%E4%BD%9C%E8%8A%82%E5%A5%8F%E4%B8%8E%E6%89%93%E5%87%BB%E5%8F%8D%E9%A6%88.html">动作节奏与打击反馈 <small>66</small></a><a href="%E6%9D%A1%E7%9B%AE04-%E5%8D%81%E5%85%AB%E6%8B%9B%E4%B8%8E%E9%94%99%E8%AF%AF%E7%A4%BA%E6%84%8F.html">十八招与错误示意 <small>46</small></a><a href="%E6%9D%A1%E7%9B%AE05-%E6%95%8C%E4%BA%BA%E6%88%98%E6%96%97%E4%B8%8E%E7%BB%BC%E5%90%88%E5%BB%BA%E8%AE%AE.html">敌人战斗与综合建议 <small>32</small></a><a href="%E6%9D%A1%E7%9B%AE06-%E9%AB%98%E5%BA%A6%E6%9C%BA%E6%9E%84%E4%B8%8E%E7%A9%BA%E5%9C%B0.html">高度机构与空地 <small>41</small></a><a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html" class="active" aria-current="page">机体主体与系统恢复 <small>39</small></a><a href="%E6%9D%A1%E7%9B%AE08-%E5%8D%81%E6%9D%A1%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4.html">十条人物指令 <small>10</small></a><a href="%E6%9D%A1%E7%9B%AE09-%E5%8D%A1%E7%BB%84%E4%B8%8E%E6%88%90%E9%95%BF%E5%AF%B9%E7%85%A7.html">卡组与成长对照 <small>12</small></a></nav><div class="status"><strong>10月10日更新</strong><br>新美术规范、三区色板与背景已接入。<br><a href="13-建筑比例与材质重做.html">当前实机与模型</a><br>三面救援与独立试演继续整改。<br><a href="12-首版交付与验证.html">实机、验证与剩余项</a><br>完整52包仍需逐项验收。<br><br>来源：Grok v5、批评稿及补全清单<br>首批：六机、三面救援<br>报告条目：可按原编号核对</div></aside><main id="main"><article><h1>机体主体与系统恢复：逐项分析与实施设计</h1>
+<p>把机设、人物与装备恢复成可组合的底层体系。</p>
+<p>本册 39 条源记录。编号沿用原报告/覆盖表；同一问题跨章节出现时保留对应，不把它算成重复开发。<strong>以下是设计规格，不是游戏完成记录。</strong></p>
+<p><a href="index.html">回到总方案</a> · <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html">首关确定规格</a> · <a href="08-%E5%9B%BE%E5%BD%A2%E4%B8%8E%E6%89%8B%E6%84%9F%E6%96%BD%E5%B7%A5%E8%A1%A8.html">帧表与15项图形</a> · <a href="%E8%A6%86%E7%9B%96%E6%A0%B8%E5%AF%B9.html">按编号搜索全部条目</a></p>
+<blockquote>
+<p>10月9日第二轮补强：每条已注明首关依赖／系统恢复专关／全量对照、具体规格与测试局。数字、帧数、人物费用在正文已对齐；证据仍未提供，未把文档覆盖称作游戏通过。</p>
+</blockquote>
+<details class="item-toc"><summary>本册条目目录</summary>
+
+<ul>
+<li><a href="#DG-SYS01">DG-SYS01 · 精神指令</a></li>
+<li><a href="#DG-SYS02">DG-SYS02 · 角色能力卡牌发动</a></li>
+<li><a href="#DG-SYS03">DG-SYS03 · 驾驶员</a></li>
+<li><a href="#DG-SYS04">DG-SYS04 · 独立机魂</a></li>
+<li><a href="#DG-SYS05">DG-SYS05 · IP 梗与招牌招式</a></li>
+<li><a href="#DG-SYS06">DG-SYS06 · 合体 / 变形</a></li>
+<li><a href="#DG-SYS07">DG-SYS07 · 剧情与角色互动</a></li>
+<li><a href="#DG-SYS08">DG-SYS08 · 气势 / 名场面 / 亮相</a></li>
+<li><a href="#DG-SYS09">DG-SYS09 · 必杀演出</a></li>
+<li><a href="#DG-SYS10">DG-SYS10 · 完全版王者四装备</a></li>
+<li><a href="#DG-SYS11">DG-SYS11 · 飞行快速跨区</a></li>
+<li><a href="#DG-SYS12">DG-SYS12 · 雷翎专属动词</a></li>
+<li><a href="#DG-SYS13">DG-SYS13 · 歌翼可变机</a></li>
+<li><a href="#DG-SYS14">DG-SYS14 · 关系与援护</a></li>
+<li><a href="#DG-SYS15">DG-SYS15 · 名角 / 宿敌</a></li>
+<li><a href="#DG-SYS16">DG-SYS16 · 卡组构筑（杀戮尖塔式）</a></li>
+<li><a href="#DG-SYS17">DG-SYS17 · 推撞 / 碰撞 / 深渠</a></li>
+<li><a href="#DG-SYS18">DG-SYS18 · 三区共享敌方回合 + 跨区调度</a></li>
+<li><a href="#DG-SYS19">DG-SYS19 · 七海证据链 / 许可</a></li>
+<li><a href="#DG-SYS20">DG-SYS20 · 整备模块</a></li>
+<li><a href="#SIG-1">SIG-1 · 社勇王</a></li>
+<li><a href="#SIG-2">SIG-2 · 完全版王者</a></li>
+<li><a href="#SIG-3">SIG-3 · 雷翎</a></li>
+<li><a href="#SIG-4">SIG-4 · 预算二号</a></li>
+<li><a href="#SIG-5">SIG-5 · 灰崎警备劳务机</a></li>
+<li><a href="#SIG-6">SIG-6 · 货柜领袖</a></li>
+<li><a href="#SIG-7">SIG-7 · 歌翼可变机</a></li>
+<li><a href="#PERSON-01">PERSON-01 · 身份和双主体</a></li>
+<li><a href="#PERSON-02">PERSON-02 · 岗位远近范围</a></li>
+<li><a href="#PERSON-03">PERSON-03 · 被动精神牌贡献</a></li>
+<li><a href="#PERSON-04">PERSON-04 · 成长不只奖击杀</a></li>
+<li><a href="#PERSON-05">PERSON-05 · 接受/条件/拒绝/反提案</a></li>
+<li><a href="#PERSON-06">PERSON-06 · 王者强制必杀</a></li>
+<li><a href="#PERSON-07">PERSON-07 · 雷翎奇数轮开火</a></li>
+<li><a href="#PERSON-08">PERSON-08 · 货柜完整句人格</a></li>
+<li><a href="#PERSON-09">PERSON-09 · 驾驶员适配换乘</a></li>
+<li><a href="#PERSON-10">PERSON-10 · 关系援护合体</a></li>
+<li><a href="#PERSON-11">PERSON-11 · 名场面/非击杀气势</a></li>
+<li><a href="#PERSON-12">PERSON-12 · 有名对手</a></li>
+</ul>
+</details>
+
+<h2>卷首：人物与招牌以规则验收</h2>
+<p>六机招牌已定最小规则、18招/FX对应和R03后续完整合同；机魂的四态、替案Command与安全底线见<a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-4">意愿施工表</a>。预算/歌翼的主体资料不足不填假人格。六机盲辨须10人60答，身份≥48/60、每机≥7/10，因果≥54/60；没有实测前全部待实施。</p>
+<figure id="fig-G15"><a href="图解/G15-机体六层体系.png"><img src="图解/G15-机体六层体系.png" alt="原创方案图解：机体六层体系" loading="lazy"></a><figcaption><strong>G15 · 原创设计示意。</strong> 从通用对象到机体身份的配置分工。参数和招式是玩法候选，人物事实遵守现有实体资料。 <a href="图解/G15-机体六层体系.svg">查看矢量图</a></figcaption></figure>
+
+<figure id="fig-G08"><a href="图解/G08-换机体就换解法.png"><img src="图解/G08-换机体就换解法.png" alt="原创方案图解：换机体就换解法" loading="lazy"></a><figcaption><strong>G08 · 原创设计示意。</strong> 这是针对同一威胁的三种编队样本，不是三招必做的固定流程。解法差别来自装备和对象属性；底层不判断机体名字。 <a href="图解/G08-换机体就换解法.svg">查看矢量图</a></figcaption></figure>
+
+<h2>原设计系统20项</h2>
+<section class="design-item" id="DG-SYS01">
+
+<h3>DG-SYS01 · 精神指令</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2342 行。工作包：P02</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 恢复有限人物能力，首轮按人限次而非叠四种资源。</p>
+</blockquote>
+<p><strong>分析。</strong> 精神曾有实现但旧SP和旧拍数不能原样接回逐机规则；多一栏资源也会增加初学负担。</p>
+<p><strong>具体设计。</strong> 十条精神采用09册字段表：在场、目标过滤、次数、阶段、结果字段和逐条失败句全部固定。基础检查/预演免费；有限能力成功原子提交才扣；协商修饰与攻击同时提交扣。R1仅SPIRIT-1/4，其余都有P02/P05专关。</p>
+<p><strong>操作与画面。</strong> 通讯入口随在场人物显示，悬停能力直接回到棋盘预览；人物立绘短入场，结果是可检查事件。</p>
+<div class="design-example"><strong>局面例子</strong><p>豪司一次燃魂让下一拳多伤，白鸢对比两案；两者的价值和操作不会都变成“加攻击”。</p></div>
+
+<p><strong>验证与反例。</strong> 换人物/失联/离场/取消/重复点击；能力不绕过目标校验，不把基础敌意和伤害预览收为付费能力。</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-2">打开对应合同</a>。<strong>验证局：</strong> GW-R1-COMMS、GW-R1-SOUL。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P02">P02 · 八条精神与两条扩展</a>：人物玩法/交互开发；依赖 P01、F04、F06</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：通讯规则</li>
+<li>拟配置/资源：人物配置</li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>丢失。lc/ 里没有 SP 字段，也没有面板</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS02">
+
+<h3>DG-SYS02 · 角色能力卡牌发动</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2343 行。工作包：P03</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 确定指令先接入，随机牌组是另一个对照配置。</p>
+</blockquote>
+<p><strong>分析。</strong> 有角色卡UI不等于角色影响战术，反之去掉卡又抹掉人的存在。</p>
+<p><strong>具体设计。</strong> 配置A卡面字段为card_id/source_person_id/ability_instance_id/target_filter/cost/uses/phase/effect_ref/disabled_reason。人物头像、通讯双页签、目标旁快捷入口都引用同实例；不能三处重复扣次。P03复用GW-R1-COMMS及P02-PERMIT-01；配置B不参与恢复判定。</p>
+<p><strong>操作与画面。</strong> 从人物头像展开少量可用指令，点牌后仍在熟悉的棋盘选目标，不跳另一个卡牌桌。</p>
+<div class="design-example"><strong>局面例子</strong><p>纪存带调度协作指令，七海带具体签令程序，机体基础拳炮不因换人而消失。</p></div>
+
+<p><strong>验证与反例。</strong> 同一局换人物有可解释能力差；卡与普通招叠加后图卡/实际一致；不能消耗已离场者能力。</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-2">打开对应合同</a>。<strong>验证局：</strong> GW-R1-COMMS、GW-R1-SOUL。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P03">P03 · 确定性人物调度令</a>：人物玩法/交互开发；依赖 P01、F04、U04</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：通讯规则</li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd</a></li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>缩水。白鸢预演只作为暂停菜单里的进阶接力编排保留（默认关，README.md:9、execution_view.gd:17）；纪存只剩跨区支援的标签（round_rules.gd:200–202）</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS03">
+
+<h3>DG-SYS03 · 驾驶员</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2344 行。工作包：P01</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 身份建模独立于战斗数值，来源核对后配置。</p>
+</blockquote>
+<p><strong>分析。</strong> 将所有机体当无人的棋子会让驾驶员、独立机魂、双主体全部丢失。</p>
+<p><strong>具体设计。</strong> UnitInstance引用chassis_id、pilot_id可空、soul_id可空、passengers；控制主体与说话人分开。社勇是豪司+主体AI，灰崎保留驾驶者，货柜/雷翎为独立主体；预算二号身份未确认前标待定。</p>
+<p><strong>操作与画面。</strong> 资料头肩头像给主体小标；通讯发言注明现场/远程；命令接受由实际控制关系决定。</p>
+<div class="design-example"><strong>局面例子</strong><p>社勇不同意豪司的危险命令时，是两个主体的协商，不是随机机器故障。</p></div>
+
+<p><strong>验证与反例。</strong> 无人机不出现虚构驾驶员；双主体可分别发言；换乘不替换机魂；在场表驱动所有语音/立绘。</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-4">打开对应合同</a>。<strong>验证局：</strong> GW-R1-COMMS、GW-R1-SOUL。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#PERSON-01">PERSON-01</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P01">P01 · 人物与机体身份数据</a>：人物设计/规则开发；依赖 R01、Q01</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：人物配置</li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/catalog.gd">game-godot/scripts/formula_lab/linked_campaign/catalog.gd</a></li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>丢失。roster 里没有 pilot 字段；灰崎机连驾驶员的名字都没出现</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS04">
+
+<h3>DG-SYS04 · 独立机魂</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2345 行。工作包：P05</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 新增公开意愿层，少量身份相关的有代价选择。</p>
+</blockquote>
+<p><strong>分析。</strong> 机魂拒绝若在点击后才出现，会破坏预演；若从不影响选择，就只是台词皮肤。</p>
+<p><strong>具体设计。</strong> ConsentResult含state、reason、public_predicates、counterproposal Commands、cost_delta、snapshot_hash和command_fingerprint。四态优先级：硬拒绝→条件→有合法替案时counterproposal→接受。至少社勇WILL-BRAVE在GW-R1-SOUL实跑；同状态提交不得反悔，状态变化先废弃旧token。预算/歌翼身份未明用not_applicable，不能捏造机魂。</p>
+<p><strong>操作与画面。</strong> 极少数相关动作才出现双主体短卡；替代方案可直接在地图预览，普通攻击不反复弹对话。</p>
+<div class="design-example"><strong>局面例子</strong><p>社勇不愿用扇面扫到值班室，建议先推开工机；玩家也可先保护设施再重新请求。</p></div>
+
+<p><strong>验证与反例。</strong> 规则条件可复现；提交后无新状态不翻案；选择替案仍遵守移动/行动预算；拒绝不扣资源。</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-4">打开对应合同</a>。<strong>验证局：</strong> GW-R1-COMMS、GW-R1-SOUL。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#PERSON-05">PERSON-05</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P05">P05 · 机魂意愿、关系和换乘</a>：人物玩法/规则开发；依赖 P01、P02、P03</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：人物规则</li>
+<li>拟配置/资源：事件触发配置</li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>丢失</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS05">
+
+<h3>DG-SYS05 · IP 梗与招牌招式</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2346 行。工作包：R03 / P06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 把IP锚点转成原创机体的动作与选择，不复制完整原设。</p>
+</blockquote>
+<p><strong>分析。</strong> 著名机体的价值不能只在选人页头像，招牌动词和台词需要在真实局面发挥。</p>
+<p><strong>具体设计。</strong> 每个roster包列来源锚、原创身份、招牌动作、装备依据、触发台词、资产状态；挂接现有台词到事件，缺出处的语句作为原创候选。至少一项招牌改变射界/位置/保护方式，而不只是伤害+1。</p>
+<p><strong>操作与画面。</strong> 出手前简短身份动作，出手后棋盘结果明确；名场面不会挤掉目标轮廓和伤害。</p>
+<div class="design-example"><strong>局面例子</strong><p>货柜是原创载具领袖，护场和运输可以有演讲气质，不能直接用现成变形金刚模型。</p></div>
+
+<p><strong>验证与反例。</strong> 遮名字识别动词；原机设与原创外观边界逐件核；无授权完整原设不得直接作为资产交付。</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> GW-RESCUE-R1。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R03">R03 · 七台重点招牌规则</a>：机体设计/战斗设计；依赖 R01、R02、P01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P06">P06 · 名场面、气势与有名对手</a>：人物设计/敌人设计/演出；依赖 P05、R03、V07</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd</a></li>
+<li>拟配置/资源：事件配置</li>
+<li>拟配置/资源：演出资源</li>
+<li>拟配置/资源：对手配置</li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>缩水。14 句台词没有任何地方读取（voice 字段无引用）；招式规则同质化（托住 ×3、隔离墙 ×2、变形 ×2，见附录 A.2）</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS06">
+
+<h3>DG-SYS06 · 合体 / 变形</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2347 行。工作包：R02</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 连续身体变化加可逆组件状态，合体必须具备来源。</p>
+</blockquote>
+<p><strong>分析。</strong> 合体、变形曾被硬切或临时召来队友，导致行动顺序和占地不可信。</p>
+<p><strong>具体设计。</strong> Transform改变form和装备可用集合；Combine需组件在合法相邻/连接位、各主体同意、总预算与落点验证，消费参与者对应行动并登记组成。拆分恢复各自HP/资源映射，不能重置满血。</p>
+<p><strong>操作与画面。</strong> 先画合体后脚印和消失的成员位置；短动作展示组件来路；变形直接比较前后能力。</p>
+<div class="design-example"><strong>局面例子</strong><p>演示关只有变形条件时就做完整变形，不为了菜单齐全虚构未经机设支持的合体。</p></div>
+
+<p><strong>验证与反例。</strong> 组件缺席/已行动/失能、狭道、拆分无空间、跳过/重载；不存在“另一机突然出现在动画里”。</p>
+<p><strong>交付范围：</strong> 系统恢复专关。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> P05-CONSENT-01、R03-SIGNATURE-01/07。</p>
+<p>本条完整系统在所列专关验证；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R02">R02 · 形态、装备与合体</a>：机体设计/角色美术；依赖 R01、F02、F06</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/model_motion.gd">game-godot/scripts/formula_lab/linked_campaign/model_motion.gd</a></li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>变形缩水：只是移动 +2、停用主武器（round_rules.gd:478–479），雷翎变形前后都是 hover（round_armaments.gd:22）。合体丢失</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS07">
+
+<h3>DG-SYS07 · 剧情与角色互动</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2348 行。工作包：V07 / P06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 战斗台词绑定事件、身份与冷却。</p>
+</blockquote>
+<p><strong>分析。</strong> 气泡很多仍可能没有角色感，关键是对玩家刚造成的事情作出具体回应。</p>
+<p><strong>具体设计。</strong> DialogueTrigger取事件标签、现场人物、关系、城防/任务状态；优先级致命提醒&gt;新机制&gt;角色反应&gt;闲聊。每轮设置软上限，重复同事件不重播；远程通讯与居民场景气泡分开。</p>
+<p><strong>操作与画面。</strong> 居民欢呼从对应建筑冒出，机魂短句从本机附近出现；长剧情进可跳短通讯，不挡下一次点击。</p>
+<div class="design-example"><strong>局面例子</strong><p>救回被劫持工机后值班室回应“这台还得用”，比只显示声誉+1更能解释保全意义。</p></div>
+
+<p><strong>验证与反例。</strong> 角色不在编队、建筑已毁、同连锁3击杀、切区、快进；不会错人发言或叠满屏幕。</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> GW-RESCUE-R1。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#V07">V07 · 人物通讯与名场面呈现</a>：剧情演出/UI美术；依赖 P01、V01、A04</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P06">P06 · 名场面、气势与有名对手</a>：人物设计/敌人设计/演出；依赖 P05、R03、V07</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/campaign_stage.gd">game-godot/scripts/formula_lab/linked_campaign/campaign_stage.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/stage_battle/tactics/squad_comms.gd">game-godot/scripts/formula_lab/stage_battle/tactics/squad_comms.gd</a></li>
+<li>拟配置/资源：演出资源</li>
+<li>拟配置/资源：事件配置</li>
+<li>拟配置/资源：对手配置</li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>缩水。只有开场对话（campaign_stage.gd:154–165）；战中台词函数 local_reaction 存在（campaign_stage.gd:680）但没有调用者；本报告 §12（M02）记录了「馆守Z 说话但不在编队里」</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS08">
+
+<h3>DG-SYS08 · 气势 / 名场面 / 亮相</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2349 行。工作包：P06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 公开事件积累、同事件去重、保护与合作同样有收益。</p>
+</blockquote>
+<p><strong>分析。</strong> 气势只奖杀敌会惩罚救援和控制机，名场面也因此沦为攒杀数。</p>
+<p><strong>具体设计。</strong> 首关气势上限3。击破公开威胁、实际保护成功、完成救援/关键协作各提供1；同对象同root_event本轮只计一次，单次多杀至多+1。新获得气势不在同一动作递归再消费；终式准备耗2，主行动规则见07/08。</p>
+<p><strong>操作与画面。</strong> 产生收益时从来源到机体气势槽短脉冲，悬停显示为何获得；满槽只给机会提示，不自动放大招。</p>
+<div class="design-example"><strong>局面例子</strong><p>货柜护住车免掉一次致命炮击也能涨气势，证明护送不是低价值杂活。</p></div>
+
+<p><strong>验证与反例。</strong> 刷修复/友伤再救/重复护盾不套利；辅助路线与杀敌路线都可有一次名场面；多目标不无限灌满。</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> GW-RESCUE-R1。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#PERSON-11">PERSON-11</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P06">P06 · 名场面、气势与有名对手</a>：人物设计/敌人设计/演出；依赖 P05、R03、V07</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：事件配置</li>
+<li>拟配置/资源：演出资源</li>
+<li>拟配置/资源：对手配置</li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>缩水。只剩「能量 2/3」这个数字，用来付破围终式的 2 点（round_armaments.gd:25），没有名场面机会，也没有亮相</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS09">
+
+<h3>DG-SYS09 · 必杀演出</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2350 行。工作包：V07</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 分镜由已解析的攻击结果驱动。</p>
+</blockquote>
+<p><strong>分析。</strong> 必杀海报很酷但若与实际命中无关，会放大用户对结果的困惑。</p>
+<p><strong>具体设计。</strong> 准备→主体特写→武器动作→关键接触→棋盘全结果；默认短版，首次或玩家设置可长版。事件已经确定，跳过/快进只改呈现，不重复求解。旁格伤害和建筑变化不能省掉。</p>
+<p><strong>操作与画面。</strong> 回到原镜头时受影响对象短亮，取消的威胁划除；失败/打空不播放“全灭成功”镜头。</p>
+<div class="design-example"><strong>局面例子</strong><p>破围终式两侧敌都被击飞，镜头落回能看到一敌撞箱一敌落水，爽感来自真实连锁。</p></div>
+
+<p><strong>验证与反例。</strong> 空打、盾挡、三目标、友伤、阶段致败、跳过每一段；同终态，音画时钟不卡UI。</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> GW-RESCUE-R1。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#V07">V07 · 人物通讯与名场面呈现</a>：剧情演出/UI美术；依赖 P01、V01、A04</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/campaign_stage.gd">game-godot/scripts/formula_lab/linked_campaign/campaign_stage.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/stage_battle/tactics/squad_comms.gd">game-godot/scripts/formula_lab/stage_battle/tactics/squad_comms.gd</a></li>
+<li>拟配置/资源：演出资源</li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>丢失。破围终式只有 3 根平行线加一个大 impact（附录 A.1.1）</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS10">
+
+<h3>DG-SYS10 · 完全版王者四装备</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2351 行。工作包：R02</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 招牌有明确合同和测试局；首关最小集与完整身份功能分别验收。</p>
+</blockquote>
+<p><strong>分析。</strong> 王者全装的核心是冗余武器与卸装取舍，目前少盾和飞行价值让它只剩巨大模型。</p>
+<p><strong>具体设计。</strong> 2×2飞行体；双肩各一条首实体止步的炮线各3伤；右钻3伤、力量4推2；不是同一招换特效。；范围：首关四格身体/飞行/炮钻；R03-SIGNATURE-02验证卸装；后续定稿：卸装主行动1，唯一部件落邻接合法格。卸盾失shield；卸炮失cannon并移动上限+1；卸翼失fly。仅工位、同部件完好、相邻工具单位付主行动1可重装；不恢复本轮已用移动/行动。</p>
+<p><strong>操作与画面。</strong> 宽体双炮的两处首体终点与右臂钻长位移。 引用MV04,MV05,MV06,FX01,FX03,FX14对应的实际形状与时点，不另造效果。</p>
+<div class="design-example"><strong>局面例子</strong><p>宽体双炮的两处首体终点与右臂钻长位移。不能把后续合同存在说成首关已实现。</p></div>
+
+<p><strong>验证与反例。</strong> 六机名/色遮蔽的因果识别≥90%，机体识别≥80%，单机≥7/10；记录原始回答与误认。首关四格身体/飞行/炮钻；R03-SIGNATURE-02验证卸装；entities: MECHA_C02_COMPLETE_KING：外翼、盾组、钻、背炮有真实战术价值</p>
+<p><strong>交付范围：</strong> 系统恢复专关。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> P05-CONSENT-01、R03-SIGNATURE-01/07。</p>
+<p>本条完整系统在所列专关验证；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#SIG-2">SIG-2</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R02">R02 · 形态、装备与合体</a>：机体设计/角色美术；依赖 R01、F02、F06</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/model_motion.gd">game-godot/scripts/formula_lab/linked_campaign/model_motion.gd</a></li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>缩水。KITS 只留 cannon 和 drill（round_armaments.gd:29），盾被删；外翼只剩 hover 标记；卸装没做</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS11">
+
+<h3>DG-SYS11 · 飞行快速跨区</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2352 行。工作包：S07 / U05</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 同一调度合同区分地面与空中通道。</p>
+</blockquote>
+<p><strong>分析。</strong> 飞行跨区若与走门一模一样，飞行只是标签；若无成本瞬移，会吞掉调度取舍。</p>
+<p><strong>具体设计。</strong> 首关飞行转区耗主行动1、余移清零，当下抵达且不再出手；地面出发经过本轮enemy/environment/work，在arrival阶段到达，下一轮刷新才可行动。出发前检整脚印泊位与备用位；泊位失效则备用或等待，不丢单位。</p>
+<p><strong>操作与画面。</strong> 区卡显示“本轮抵达·不能再攻击”及在途风险；到达演出源到目标连贯，队伍条保持同一单位。</p>
+<div class="design-example"><strong>局面例子</strong><p>雷翎当轮抵B可成为下轮防守站位，而地面旧拳王需等待，飞行优势是早占位而非多打一轮。</p></div>
+
+<p><strong>验证与反例。</strong> 目的格占用、失去翼、跨区后变形、调度被取消、已用主行动；不免费再行动。</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> GW-RESCUE-R1。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE06-%E9%AB%98%E5%BA%A6%E6%9C%BA%E6%9E%84%E4%B8%8E%E7%A9%BA%E5%9C%B0.html#AIR-18">AIR-18</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#S07">S07 · 七种空对地动作与投送</a>：装备设计/动画；依赖 S03、S05、S06、R02</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#U05">U05 · 切区、调度与远区后果</a>：交互开发/任务设计；依赖 F05、U02</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_world.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_world.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_operation.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_operation.gd</a></li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>丢失。新规则一律回合末抵达（round_rules.gd:98–107,200–202），飞行机没有加速</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS12">
+
+<h3>DG-SYS12 · 雷翎专属动词</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2353 行。工作包：R03 / S07</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 招牌有明确合同和测试局；首关最小集与完整身份功能分别验收。</p>
+</blockquote>
+<p><strong>分析。</strong> 雷翎已有光束导弹却像普通炮手，旧投送/侦察掉线后独立主体特色没有进入玩法。</p>
+<p><strong>具体设计。</strong> 光束2伤打首体，命中后标定至本轮enemy末；下一个其他友机的直接攻击忽略目标的护群减伤1一次，不忽略自身装甲/盾；爆破五格各2伤无推。；范围：首关光束/爆破/飞行；R03-SIGNATURE-03展示对护群的标定接力；后续定稿：不采奇数轮禁火。专关精瞄：准备主行动1＋弹药1，锁定当时的射线起点、方向及6格范围；下一轮原位且未受打断才ready。释放主行动1、首体3伤并标定，不追踪原目标，不重复扣弹。ready后每战1次可改快射：放弃固定射线，重新选一个正交方向，主行动1、首体2伤并标定；已付弹不退、不重复扣。若原目标已离线或友方进入旧射线，改快射可保住一次合法攻击；没有ready仍按普通光束。全程不增加主行动。载荷投送另走真实载荷规则。</p>
+<p><strong>操作与画面。</strong> 窄线击中后留下交接标记，下一台接火；与五格爆破分开。 引用MV16,MV17,MV18,FX06,FX12对应的实际形状与时点，不另造效果。</p>
+<div class="design-example"><strong>局面例子</strong><p>窄线击中后留下交接标记，下一台接火；与五格爆破分开。不能把后续合同存在说成首关已实现。</p></div>
+
+<p><strong>验证与反例。</strong> 六机名/色遮蔽的因果识别≥90%，机体识别≥80%，单机≥7/10；记录原始回答与误认。首关光束/爆破/飞行；R03-SIGNATURE-03展示对护群的标定接力；entities: V353U047：远射、侦察、机动换位；标定合同为本版原创改编</p>
+<p><strong>交付范围：</strong> 系统恢复专关。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> P05-CONSENT-01、R03-SIGNATURE-01/07。</p>
+<p>本条完整系统在所列专关验证；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#SIG-3">SIG-3</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R03">R03 · 七台重点招牌规则</a>：机体设计/战斗设计；依赖 R01、R02、P01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#S07">S07 · 七种空对地动作与投送</a>：装备设计/动画；依赖 S03、S05、S06、R02</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_world.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_world.gd</a></li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>丢失。round_data.gd TOOLS 里雷翎是 []，背不了电池；没有换位，没有侦察</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS13">
+
+<h3>DG-SYS13 · 歌翼可变机</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2354 行。工作包：U07 / R03</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 招牌有明确合同和测试局；首关最小集与完整身份功能分别验收。</p>
+</blockquote>
+<p><strong>分析。</strong> 歌翼已在目录，不是“再加一台数据”就解决缺少炮击推群的问题。</p>
+<p><strong>具体设计。</strong> 三形态的身体/武器表与广域震荡做全量专关；无新增精神身份。；范围：不进首关；R03-SIGNATURE-07；后续定稿：人形移动4、半转换移动3、航空移动6，切形主行动1、只保留原剩余移动与新上限较小值；震荡中心2伤、四邻力量2推1无伤。全量专关确认具备对应装备后开放。</p>
+<p><strong>操作与画面。</strong> 四点覆盖和形态交换火力/机动，不与雷翎同款爆破。 引用对应的实际形状与时点，不另造效果。</p>
+<div class="design-example"><strong>局面例子</strong><p>四点覆盖和形态交换火力/机动，不与雷翎同款爆破。不能把后续合同存在说成首关已实现。</p></div>
+
+<p><strong>验证与反例。</strong> 六机名/色遮蔽的因果识别≥90%，机体识别≥80%，单机≥7/10；记录原始回答与误认。不进首关；R03-SIGNATURE-07；报告§7.4(a)建议；当前身份材料不足，不作为已恢复名场面</p>
+<p><strong>交付范围：</strong> 系统恢复专关。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> P05-CONSENT-01、R03-SIGNATURE-01/07。</p>
+<p>本条完整系统在所列专关验证；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#SIG-7">SIG-7</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#U07">U07 · 部署与第一回合引导</a>：UX/关卡设计；依赖 F06、U04</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R03">R03 · 七台重点招牌规则</a>：机体设计/战斗设计；依赖 R01、R02、P01</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_brief.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_brief.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd</a></li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>丢失。PRESETS 里没有它，不上场</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS14">
+
+<h3>DG-SYS14 · 关系与援护</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2355 行。工作包：P05</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 有限且公开的合作窗口。</p>
+</blockquote>
+<p><strong>分析。</strong> 关系如果只是匿名加伤，人物没有存在感；若无限免费援护，会使顺位失控。</p>
+<p><strong>具体设计。</strong> CooperationRule声明双方身份/距离或通信链、触发事件、费用与每轮次数；援护消耗援护方主行动或显式独立限次，不暗中插队。接受反提案、共同保护可增长关系，效果事前可见。</p>
+<p><strong>操作与画面。</strong> 瞄准时在同伴头像上出现可选援护连接，预览合并费用和全部后果；默认不自动长对话。</p>
+<div class="design-example"><strong>局面例子</strong><p>雷翎标定后旧拳王追击是真正两手合作；若一键合击，必须明写消耗两台主行动。</p></div>
+
+<p><strong>验证与反例。</strong> 已行动伙伴、跨区失联、失能、一次事件多触发、援护者被击毁；预算与参与者名单稳定。</p>
+<p><strong>交付范围：</strong> 系统恢复专关。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> P05-CONSENT-01、R03-SIGNATURE-01/07。</p>
+<p>本条完整系统在所列专关验证；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#PERSON-10">PERSON-10</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P05">P05 · 机魂意愿、关系和换乘</a>：人物玩法/规则开发；依赖 P01、P02、P03</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：人物规则</li>
+<li>拟配置/资源：事件触发配置</li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>缩水。只有通用加伤，没有指名的搭档关系</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS15">
+
+<h3>DG-SYS15 · 名角 / 宿敌</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2356 行。工作包：P06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 设一名有来源的有名对手候选，保持可预测规则。</p>
+</blockquote>
+<p><strong>分析。</strong> 全部敌人只是任务障碍，会削弱机器人大战的对手感；Boss作弊又会破坏公开承诺。</p>
+<p><strong>具体设计。</strong> 对手包包含roster来源、动机、机设、两阶段武器、阶段转换阈值、台词与撤退条件；转换只在公示阶段发生。尚无通过核对的身份时不擅自编正式剧情；用测试代号验证规则。</p>
+<p><strong>操作与画面。</strong> 阶段转换先给新危险范围和准备动作；台词透露战术意图，不能用剧情取消玩家已成立的命中。</p>
+<div class="design-example"><strong>局面例子</strong><p>玩家可歼灭其护卫夺现场，或完成救援迫使其撤退，结算代价不同而不是唯一击杀路。</p></div>
+
+<p><strong>验证与反例。</strong> 伤到阈值、被推下台、提前击破、救援已成、逃走路线被堵；都能按规则收束。</p>
+<p><strong>交付范围：</strong> 系统恢复专关。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> P05-CONSENT-01、R03-SIGNATURE-01/07。</p>
+<p>本条完整系统在所列专关验证；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#PERSON-12">PERSON-12</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P06">P06 · 名场面、气势与有名对手</a>：人物设计/敌人设计/演出；依赖 P05、R03、V07</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：事件配置</li>
+<li>拟配置/资源：演出资源</li>
+<li>拟配置/资源：对手配置</li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>丢失。敌人全是通用外体（啮线体、架设体…）</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS16">
+
+<h3>DG-SYS16 · 卡组构筑（杀戮尖塔式）</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2357 行。工作包：P04</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 确定指令为主版，随机配置完整实现对照后裁决。</p>
+</blockquote>
+<p><strong>分析。</strong> 报告建议随机牌组，不是既有正式系统；直接恢复会误表来源与决策状态。</p>
+<p><strong>具体设计。</strong> 两套共用CommandModifier与库存：A限次确定指令，B抽牌/能量/弃洗。提供相同局面、编队、随机种子与记录表，衡量选择多样性、无效牌和操作负担；不以功能做完代替采用。</p>
+<p><strong>操作与画面。</strong> 整备显式标当前模式；战中不同时出现两套花费栏；关键救援工具永不要求抽中某牌。</p>
+<div class="design-example"><strong>局面例子</strong><p>若随机牌只让玩家每回合多点三下而没新解法，主版保留确定指令，但试验结果与代码留存。</p></div>
+
+<p><strong>验证与反例。</strong> A/B各用保全、速救、战斗三种打法；记录必要能力缺失和额外点击，给保留/调整/放弃结论。</p>
+<p><strong>交付范围：</strong> 全量／对照。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> Q02-FULL。</p>
+<p>完整扩展或有结论的对照试验；不阻塞首关；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P04">P04 · 随机卡组与成长对照</a>：系统设计/测试；依赖 P02、P03、E03</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd</a></li>
+<li>拟配置/资源：卡组原型</li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>从未有过</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS17">
+
+<h3>DG-SYS17 · 推撞 / 碰撞 / 深渠</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2358 行。工作包：F07</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 所有可移动对象共享受力规则，身份只影响后果。</p>
+</blockquote>
+<p><strong>分析。</strong> 代码里有推撞不代表关卡会产生组合，尤其敌我/市政对象处理不一致。</p>
+<p><strong>具体设计。</strong> Displace参数方向/距离/力量，与质量比较后沿格求解；碰撞双方分别受伤；落水按能力；盾只挡伤不挡位移。推、拉、侧移都是同一效果族，不写固定敌ID特殊判断。</p>
+<p><strong>操作与画面。</strong> 大箭头、对象落点、双方血条及市政损失同屏；推走后仍会攻击的敌给新炮线。</p>
+<div class="design-example"><strong>局面例子</strong><p>把敌推到另一敌炮前既保护设施又借敌火，比只多一招高伤拳更能扩展玩法。</p></div>
+
+<p><strong>验证与反例。</strong> 同招作用敌人、友机、货箱、受控工机；重机多格、坑、水、墙、连锁；三任务复用不加剧情if。</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> GW-RESCUE-R1。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#F07">F07 · 地形、状态与连锁组合</a>：规则开发/战斗设计；依赖 F02、F04</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_rules.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_rules.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_operation/board_rules.gd">game-godot/scripts/formula_lab/linked_operation/board_rules.gd</a></li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>完整（round_rules.gd 通用推拉）</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS18">
+
+<h3>DG-SYS18 · 三区共享敌方回合 + 跨区调度</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2359 行。工作包：L02 / U05</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 保留玩家自由切区与一个敌方阶段，联动按事件传递。</p>
+</blockquote>
+<p><strong>分析。</strong> 共享回合技术上成立但玩家只看当前区，三区会被玩成三个隔绝的小关。</p>
+<p><strong>具体设计。</strong> RegionState各自保存对象但共享RoundState；LinkCondition声明供电/承重/运输依赖，事件更新目标区条件。敌人顺位发布时固定，播放按因果段聚焦相关区，不暗自执行未选机命令。</p>
+<p><strong>操作与画面。</strong> 顶部区卡只报最急威胁/剩余主行动，联动时目标缩略窗给结果和仍缺条件；火线不强制切走玩家视角。</p>
+<div class="design-example"><strong>局面例子</strong><p>A供电让B可永久维修，但C轨上有箱仍不开车；卡片同时告诉玩家下一处该处理箱。</p></div>
+
+<p><strong>验证与反例。</strong> 先A后B与先B后A形成可解释差异；缺某区支援仍有替代；一处完成不刷新全队行动。</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> GW-RESCUE-R1。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#L02">L02 · 全城空间和任务联动</a>：任务设计/场景美术；依赖 L01、U05、A02</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#U05">U05 · 切区、调度与远区后果</a>：交互开发/任务设计；依赖 F05、U02</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_operation.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_operation.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_world.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_world.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/environment_art.gd">game-godot/scripts/formula_lab/linked_campaign/environment_art.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd</a></li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>完整（round_rules.gd:98–107,200）</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS19">
+
+<h3>DG-SYS19 · 七海证据链 / 许可</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2360 行。工作包：P02 / F06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 权限是一类公开的目标资格，证据来自实际事件。</p>
+</blockquote>
+<p><strong>分析。</strong> 七海若成全局开锁权限会违背人物边界，若只按剧情点按钮又无策略价值。</p>
+<p><strong>具体设计。</strong> Order记录签署者、有效范围、可撤销性与依赖；七海只能撤本人有效签令或申请当地授权。Evidence由已发生事件/档案对象产生，拿到材料后在对应接口办理，费用与远程资格明确。</p>
+<p><strong>操作与画面。</strong> 缺条件时显示具体“缺旧令/需本地授权”，可定位来源；未进入这条任务链时不常驻无效大按钮。</p>
+<div class="design-example"><strong>局面例子</strong><p>撤销旧锁车令可保全牵引工机，打毁它也能开路但损失市政资产，制度能力提供另一条解法。</p></div>
+
+<p><strong>验证与反例。</strong> 非本人令不能一键改；伪造/重复证据不通过；本地授权撤销会更新后续命令资格；基础信息仍免费。</p>
+<p><strong>交付范围：</strong> 系统恢复专关。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> P05-CONSENT-01、R03-SIGNATURE-01/07。</p>
+<p>本条完整系统在所列专关验证；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P02">P02 · 八条精神与两条扩展</a>：人物玩法/交互开发；依赖 P01、F04、F06</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#F06">F06 · 能力、接口与动作资格</a>：规则开发/机体设计；依赖 F01、F02</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：通讯规则</li>
+<li>拟配置/资源：人物配置</li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_contract.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_contract.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_rules.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_rules.gd</a></li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>完整（round_rules.gd:445,593,735）</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<section class="design-item" id="DG-SYS20">
+
+<h3>DG-SYS20 · 整备模块</h3>
+<p class="source-note">来源：§7.2.2 · 原稿第 2361 行。工作包：P04 / R01</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 复用现有模块库，按装备合同解析最终能力。</p>
+</blockquote>
+<p><strong>分析。</strong> 整备若只改说明字符串，模块可能影响规则却不影响示意/模型。</p>
+<p><strong>具体设计。</strong> 模块声明插槽、兼容、资源、效果修饰、可见挂件；解析顺序底盘→装备→模块→状态→本招附加。保留7类已有模块并逐个核对，禁不同界面各读旧catalog数值。</p>
+<p><strong>操作与画面。</strong> 整备预览直接展示换装后的形状/成本和舍弃项；战中详情列修饰来源。</p>
+<div class="design-example"><strong>局面例子</strong><p>王者impact让钻能推更重目标，但仍只推2格，玩家能从图卡读到准确变化。</p></div>
+
+<p><strong>验证与反例。</strong> 力量+1影响可推重量而不擅加推距；射程模块更新卡图；卸装备时不保留悬空模块加成。</p>
+<p><strong>交付范围：</strong> 全量／对照。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> Q02-FULL。</p>
+<p>完整扩展或有结论的对照试验；不阻塞首关；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P04">P04 · 随机卡组与成长对照</a>：系统设计/测试；依赖 P02、P03、E03</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R01">R01 · 14台机体能力配置</a>：机体设计/战斗设计；依赖 F01、F06</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd</a></li>
+<li>拟配置/资源：卡组原型</li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/catalog.gd">game-godot/scripts/formula_lab/linked_campaign/catalog.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd</a></li>
+</ul>
+</details>
+
+<details><summary>报告原观察与原验收建议</summary>
+
+<p>完整（round_loadout.gd MODULES：stock / mobility / impact / scope / capacitor / workshop / blast，有 credits 和 reputation）</p>
+<p>这是原报告的观察/建议；本轮采用的规格和验证方法以上文为准。</p>
+</details>
+
+</section>
+
+<h2>七台招牌重建</h2>
+<section class="design-item" id="SIG-1">
+
+<h3>SIG-1 · 社勇王</h3>
+<p class="source-note">来源：§7.4a · 原稿第 2498 行。工作包：R03 / R02</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 招牌有明确合同和测试局；首关最小集与完整身份功能分别验收。</p>
+</blockquote>
+<p><strong>分析。</strong> 社勇的“审批梗”若随机卡招是惩罚，若只贴口号又不影响玩法。</p>
+<p><strong>具体设计。</strong> 三格扇面各4伤、力量3推1；对象逐一结算。有人设施将受伤时提交前拒绝，给出合法单拳反提案。许可不能改物理伤害。；范围：首关18招＋GW-R1-SOUL；审批章完整流程放R03-SIGNATURE-01；后续定稿：章是持权人签发的区域/时段/工具许可，不是收集能量。准备2气势、释放1主行动；章不消耗、不加伤。无许可只能选普通拳或按已授权应急条款实名承担声誉−1；盖错章灰态，保留能合法工作的牵引工具建议，不随机变工具。</p>
+<p><strong>操作与画面。</strong> 从三格共同出手、双主体改案和核心大拳辨认，不靠标题。 引用MV01,MV02,MV03,FX02,FX05,FX13对应的实际形状与时点，不另造效果。</p>
+<div class="design-example"><strong>局面例子</strong><p>从三格共同出手、双主体改案和核心大拳辨认，不靠标题。不能把后续合同存在说成首关已实现。</p></div>
+
+<p><strong>验证与反例。</strong> 六机名/色遮蔽的因果识别≥90%，机体识别≥80%，单机≥7/10；记录原始回答与误认。首关18招＋GW-R1-SOUL；审批章完整流程放R03-SIGNATURE-01；entities: V353U024、SOCIAL_BRAVE_AI_REFUSAL：主体AI可拒绝高功率命令；审批章细则为报告§7.4(a)提案</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#SIG-1">打开对应合同</a>。<strong>验证局：</strong> GW-RESCUE-R1、GW-R1-SOUL。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R03">R03 · 七台重点招牌规则</a>：机体设计/战斗设计；依赖 R01、R02、P01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R02">R02 · 形态、装备与合体</a>：机体设计/角色美术；依赖 R01、F02、F06</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/model_motion.gd">game-godot/scripts/formula_lab/linked_campaign/model_motion.gd</a></li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="SIG-2">
+
+<h3>SIG-2 · 完全版王者</h3>
+<p class="source-note">来源：§7.4a · 原稿第 2498 行。工作包：R03 / R02</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 招牌有明确合同和测试局；首关最小集与完整身份功能分别验收。</p>
+</blockquote>
+<p><strong>分析。</strong> 王者全装的核心是冗余武器与卸装取舍，目前少盾和飞行价值让它只剩巨大模型。</p>
+<p><strong>具体设计。</strong> 2×2飞行体；双肩各一条首实体止步的炮线各3伤；右钻3伤、力量4推2；不是同一招换特效。；范围：首关四格身体/飞行/炮钻；R03-SIGNATURE-02验证卸装；后续定稿：卸装主行动1，唯一部件落邻接合法格。卸盾失shield；卸炮失cannon并移动上限+1；卸翼失fly。仅工位、同部件完好、相邻工具单位付主行动1可重装；不恢复本轮已用移动/行动。</p>
+<p><strong>操作与画面。</strong> 宽体双炮的两处首体终点与右臂钻长位移。 引用MV04,MV05,MV06,FX01,FX03,FX14对应的实际形状与时点，不另造效果。</p>
+<div class="design-example"><strong>局面例子</strong><p>宽体双炮的两处首体终点与右臂钻长位移。不能把后续合同存在说成首关已实现。</p></div>
+
+<p><strong>验证与反例。</strong> 六机名/色遮蔽的因果识别≥90%，机体识别≥80%，单机≥7/10；记录原始回答与误认。首关四格身体/飞行/炮钻；R03-SIGNATURE-02验证卸装；entities: MECHA_C02_COMPLETE_KING：外翼、盾组、钻、背炮有真实战术价值</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#SIG-2">打开对应合同</a>。<strong>验证局：</strong> GW-RESCUE-R1。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#DG-SYS10">DG-SYS10</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R03">R03 · 七台重点招牌规则</a>：机体设计/战斗设计；依赖 R01、R02、P01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R02">R02 · 形态、装备与合体</a>：机体设计/角色美术；依赖 R01、F02、F06</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/model_motion.gd">game-godot/scripts/formula_lab/linked_campaign/model_motion.gd</a></li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="SIG-3">
+
+<h3>SIG-3 · 雷翎</h3>
+<p class="source-note">来源：§7.4a · 原稿第 2498 行。工作包：R03 / R02</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 招牌有明确合同和测试局；首关最小集与完整身份功能分别验收。</p>
+</blockquote>
+<p><strong>分析。</strong> 雷翎已有光束导弹却像普通炮手，旧投送/侦察掉线后独立主体特色没有进入玩法。</p>
+<p><strong>具体设计。</strong> 光束2伤打首体，命中后标定至本轮enemy末；下一个其他友机的直接攻击忽略目标的护群减伤1一次，不忽略自身装甲/盾；爆破五格各2伤无推。；范围：首关光束/爆破/飞行；R03-SIGNATURE-03展示对护群的标定接力；后续定稿：不采奇数轮禁火。专关精瞄：准备主行动1＋弹药1，锁定当时的射线起点、方向及6格范围；下一轮原位且未受打断才ready。释放主行动1、首体3伤并标定，不追踪原目标，不重复扣弹。ready后每战1次可改快射：放弃固定射线，重新选一个正交方向，主行动1、首体2伤并标定；已付弹不退、不重复扣。若原目标已离线或友方进入旧射线，改快射可保住一次合法攻击；没有ready仍按普通光束。全程不增加主行动。载荷投送另走真实载荷规则。</p>
+<p><strong>操作与画面。</strong> 窄线击中后留下交接标记，下一台接火；与五格爆破分开。 引用MV16,MV17,MV18,FX06,FX12对应的实际形状与时点，不另造效果。</p>
+<div class="design-example"><strong>局面例子</strong><p>窄线击中后留下交接标记，下一台接火；与五格爆破分开。不能把后续合同存在说成首关已实现。</p></div>
+
+<p><strong>验证与反例。</strong> 六机名/色遮蔽的因果识别≥90%，机体识别≥80%，单机≥7/10；记录原始回答与误认。首关光束/爆破/飞行；R03-SIGNATURE-03展示对护群的标定接力；entities: V353U047：远射、侦察、机动换位；标定合同为本版原创改编</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#SIG-3">打开对应合同</a>。<strong>验证局：</strong> GW-RESCUE-R1。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#DG-SYS12">DG-SYS12</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R03">R03 · 七台重点招牌规则</a>：机体设计/战斗设计；依赖 R01、R02、P01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R02">R02 · 形态、装备与合体</a>：机体设计/角色美术；依赖 R01、F02、F06</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/model_motion.gd">game-godot/scripts/formula_lab/linked_campaign/model_motion.gd</a></li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="SIG-4">
+
+<h3>SIG-4 · 预算二号</h3>
+<p class="source-note">来源：§7.4a · 原稿第 2498 行。工作包：R03 / R02</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 招牌有明确合同和测试局；首关最小集与完整身份功能分别验收。</p>
+</blockquote>
+<p><strong>分析。</strong> 便宜维修若只是另一种加血数字，预算二号与所有工程机同质。</p>
+<p><strong>具体设计。</strong> 真修主行动1＋备件1恢复≤3；顶推主行动1、零备件、零直接伤、力量3推1。选择省材料还是永久修好，而非同款加血。；范围：首关MV11/12真修与无伤控制；R03-SIGNATURE-04临时支架；后续定稿：机载唯一可回收支架：容量4、HP2、质量1；邻格部署主行动1，不耗备件，保持当前及下一运输阶段后折叠。折叠物仍在场，邻接主行动1回收；未收回不可再部署。到期不扣设施HP，失撑触发真实坠落。</p>
+<p><strong>操作与画面。</strong> 受损永久HP恢复与零伤受力箭头可分辨；三个独立锚点部署。 引用MV11,MV12,MV13,FX11,FX15对应的实际形状与时点，不另造效果。</p>
+<div class="design-example"><strong>局面例子</strong><p>受损永久HP恢复与零伤受力箭头可分辨；三个独立锚点部署。不能把后续合同存在说成首关已实现。</p></div>
+
+<p><strong>验证与反例。</strong> 六机名/色遮蔽的因果识别≥90%，机体识别≥80%，单机≥7/10；记录原始回答与误认。首关MV11/12真修与无伤控制；R03-SIGNATURE-04临时支架；entities: V353U032：廉价替代件完成高价值工程；临时支架数值为原创</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#SIG-4">打开对应合同</a>。<strong>验证局：</strong> GW-RESCUE-R1。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R03">R03 · 七台重点招牌规则</a>：机体设计/战斗设计；依赖 R01、R02、P01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R02">R02 · 形态、装备与合体</a>：机体设计/角色美术；依赖 R01、F02、F06</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/model_motion.gd">game-godot/scripts/formula_lab/linked_campaign/model_motion.gd</a></li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="SIG-5">
+
+<h3>SIG-5 · 灰崎警备劳务机</h3>
+<p class="source-note">来源：§7.4a · 原稿第 2498 行。工作包：R03 / R02</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 招牌有明确合同和测试局；首关最小集与完整身份功能分别验收。</p>
+</blockquote>
+<p><strong>分析。</strong> 零伤不等于没用，灰崎的问题是锁与墙的后果没有被看见，保全收益也不明。</p>
+<p><strong>具体设计。</strong> 拘束射程3，锁一台质量≤3目标的主动移动至本轮enemy末，不推不伤、不取消原地射击；墙射程2、主行动1＋备件1、HP3，按实体真正挡直射。；范围：首关锁步/墙/有资格的柜操作；R03-SIGNATURE-05一锁一墙改线；后续定稿：首个真实保全危险工机的任务结果计一次声誉，不以“按了墙按钮”计奖；射界未变的墙不算贡献。</p>
+<p><strong>操作与画面。</strong> 带张力的索、被划掉的移动与仍保留的炮线；墙挡到哪里就改到哪里。 引用MV14,MV15,FX08,FX11对应的实际形状与时点，不另造效果。</p>
+<div class="design-example"><strong>局面例子</strong><p>带张力的索、被划掉的移动与仍保留的炮线；墙挡到哪里就改到哪里。不能把后续合同存在说成首关已实现。</p></div>
+
+<p><strong>验证与反例。</strong> 六机名/色遮蔽的因果识别≥90%，机体识别≥80%，单机≥7/10；记录原始回答与误认。首关锁步/墙/有资格的柜操作；R03-SIGNATURE-05一锁一墙改线；entities: V353U033：非致命控制、封路、警戒；不采报告新增伤3枪的建议</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#SIG-5">打开对应合同</a>。<strong>验证局：</strong> GW-RESCUE-R1。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R03">R03 · 七台重点招牌规则</a>：机体设计/战斗设计；依赖 R01、R02、P01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R02">R02 · 形态、装备与合体</a>：机体设计/角色美术；依赖 R01、F02、F06</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/model_motion.gd">game-godot/scripts/formula_lab/linked_campaign/model_motion.gd</a></li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="SIG-6">
+
+<h3>SIG-6 · 货柜领袖</h3>
+<p class="source-note">来源：§7.4a · 原稿第 2498 行。工作包：R03 / R02</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 招牌有明确合同和测试局；首关最小集与完整身份功能分别验收。</p>
+</blockquote>
+<p><strong>分析。</strong> 货柜人格被简化为喇叭声、技能又只是同款支撑，失去领袖与载具感。</p>
+<p><strong>具体设计。</strong> 护场所选中心格的对象盾2、该格四邻覆盖到的其他对象各盾1，多格对象取最高一次，敌我同效；吊运射程2、载荷≤3、落点距载荷原位≤3。变形1×1→2×1，净空与扫掠都算。；范围：首关MV07–10护场/吊运/载具脚印；R03-SIGNATURE-06载人；后续定稿：载客上限4，乘员/载荷有ID，质量合计计承重。载人时不能无安全格卸客或缩回不兼容形态；车毁后安全邻格可救，无合法格按公开规则处理。</p>
+<p><strong>操作与画面。</strong> 先看到盾覆盖的车队与真实提起/落下，再看到运输形态的长车身。 引用MV07,MV08,MV09,MV10,FX07,FX09,FX10,FX13对应的实际形状与时点，不另造效果。</p>
+<div class="design-example"><strong>局面例子</strong><p>先看到盾覆盖的车队与真实提起/落下，再看到运输形态的长车身。不能把后续合同存在说成首关已实现。</p></div>
+
+<p><strong>验证与反例。</strong> 六机名/色遮蔽的因果识别≥90%，机体识别≥80%，单机≥7/10；记录原始回答与误认。首关MV07–10护场/吊运/载具脚印；R03-SIGNATURE-06载人；entities: V353U043：作业变形、护送、独立人格；能完整开口</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#SIG-6">打开对应合同</a>。<strong>验证局：</strong> GW-RESCUE-R1。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#PERSON-08">PERSON-08</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R03">R03 · 七台重点招牌规则</a>：机体设计/战斗设计；依赖 R01、R02、P01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R02">R02 · 形态、装备与合体</a>：机体设计/角色美术；依赖 R01、F02、F06</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/model_motion.gd">game-godot/scripts/formula_lab/linked_campaign/model_motion.gd</a></li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="SIG-7">
+
+<h3>SIG-7 · 歌翼可变机</h3>
+<p class="source-note">来源：§7.4a · 原稿第 2498 行。工作包：R03 / R02</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 招牌有明确合同和测试局；首关最小集与完整身份功能分别验收。</p>
+</blockquote>
+<p><strong>分析。</strong> 歌翼已在目录，不是“再加一台数据”就解决缺少炮击推群的问题。</p>
+<p><strong>具体设计。</strong> 三形态的身体/武器表与广域震荡做全量专关；无新增精神身份。；范围：不进首关；R03-SIGNATURE-07；后续定稿：人形移动4、半转换移动3、航空移动6，切形主行动1、只保留原剩余移动与新上限较小值；震荡中心2伤、四邻力量2推1无伤。全量专关确认具备对应装备后开放。</p>
+<p><strong>操作与画面。</strong> 四点覆盖和形态交换火力/机动，不与雷翎同款爆破。 引用对应的实际形状与时点，不另造效果。</p>
+<div class="design-example"><strong>局面例子</strong><p>四点覆盖和形态交换火力/机动，不与雷翎同款爆破。不能把后续合同存在说成首关已实现。</p></div>
+
+<p><strong>验证与反例。</strong> 六机名/色遮蔽的因果识别≥90%，机体识别≥80%，单机≥7/10；记录原始回答与误认。不进首关；R03-SIGNATURE-07；报告§7.4(a)建议；当前身份材料不足，不作为已恢复名场面</p>
+<p><strong>交付范围：</strong> 系统恢复专关。<strong>具体规格：</strong> <a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#SIG-7">打开对应合同</a>。<strong>验证局：</strong> R03-SIGNATURE-07。</p>
+<p>本条完整系统在所列专关验证；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#DG-SYS13">DG-SYS13</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R03">R03 · 七台重点招牌规则</a>：机体设计/战斗设计；依赖 R01、R02、P01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#R02">R02 · 形态、装备与合体</a>：机体设计/角色美术；依赖 R01、F02、F06</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd">game-godot/scripts/formula_lab/linked_campaign/rounds/round_loadout.gd</a></li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/model_motion.gd">game-godot/scripts/formula_lab/linked_campaign/model_motion.gd</a></li>
+</ul>
+</details>
+
+</section>
+
+<h2>人物关系12项</h2>
+<section class="design-item" id="PERSON-01">
+
+<h3>PERSON-01 · 身份和双主体</h3>
+<p class="source-note">来源：§7.4d/e · 原稿第 2605 行。工作包：P01 / P05 / P06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 身份建模独立于战斗数值，来源核对后配置。</p>
+</blockquote>
+<p><strong>分析。</strong> 将所有机体当无人的棋子会让驾驶员、独立机魂、双主体全部丢失。</p>
+<p><strong>具体设计。</strong> UnitInstance引用chassis_id、pilot_id可空、soul_id可空、passengers；控制主体与说话人分开。社勇是豪司+主体AI，灰崎保留驾驶者，货柜/雷翎为独立主体；预算二号身份未确认前标待定。</p>
+<p><strong>操作与画面。</strong> 资料头肩头像给主体小标；通讯发言注明现场/远程；命令接受由实际控制关系决定。</p>
+<div class="design-example"><strong>局面例子</strong><p>社勇不同意豪司的危险命令时，是两个主体的协商，不是随机机器故障。</p></div>
+
+<p><strong>验证与反例。</strong> 无人机不出现虚构驾驶员；双主体可分别发言；换乘不替换机魂；在场表驱动所有语音/立绘。</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-4">打开对应合同</a>。<strong>验证局：</strong> GW-R1-COMMS、GW-R1-SOUL。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#DG-SYS03">DG-SYS03</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P01">P01 · 人物与机体身份数据</a>：人物设计/规则开发；依赖 R01、Q01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P05">P05 · 机魂意愿、关系和换乘</a>：人物玩法/规则开发；依赖 P01、P02、P03</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P06">P06 · 名场面、气势与有名对手</a>：人物设计/敌人设计/演出；依赖 P05、R03、V07</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：人物配置</li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/catalog.gd">game-godot/scripts/formula_lab/linked_campaign/catalog.gd</a></li>
+<li>拟配置/资源：人物规则</li>
+<li>拟配置/资源：事件触发配置</li>
+<li>拟配置/资源：事件配置</li>
+<li>拟配置/资源：演出资源</li>
+<li>拟配置/资源：对手配置</li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="PERSON-02">
+
+<h3>PERSON-02 · 岗位远近范围</h3>
+<p class="source-note">来源：§7.4d/e · 原稿第 2605 行。工作包：P01 / P05 / P06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 岗位决定能力范围和必要联络。</p>
+</blockquote>
+<p><strong>分析。</strong> “人物在船上”不代表能控制任意战场，也不代表现场角色不可远程协作。</p>
+<p><strong>具体设计。</strong> CharacterPresence记录在场区/船上通讯/同行载具/缺席；AbilityScope按人物与任务链接判定，现场操作需实体接口。出席不是机体部署名额，二者界面分开。</p>
+<p><strong>操作与画面。</strong> 人物头像角标现场或通讯；瞄准时用淡连接线解释可支援范围，失联原因短句。</p>
+<div class="design-example"><strong>局面例子</strong><p>白鸢在船上可比较已知战局，不能隔空把B的断桥焊好。</p></div>
+
+<p><strong>验证与反例。</strong> 跨区移动人物、载具损坏、通讯断、缺席角色触发台词；不能幽灵支援。</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-4">打开对应合同</a>。<strong>验证局：</strong> GW-R1-COMMS、GW-R1-SOUL。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P01">P01 · 人物与机体身份数据</a>：人物设计/规则开发；依赖 R01、Q01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P05">P05 · 机魂意愿、关系和换乘</a>：人物玩法/规则开发；依赖 P01、P02、P03</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P06">P06 · 名场面、气势与有名对手</a>：人物设计/敌人设计/演出；依赖 P05、R03、V07</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：人物配置</li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/catalog.gd">game-godot/scripts/formula_lab/linked_campaign/catalog.gd</a></li>
+<li>拟配置/资源：人物规则</li>
+<li>拟配置/资源：事件触发配置</li>
+<li>拟配置/资源：事件配置</li>
+<li>拟配置/资源：演出资源</li>
+<li>拟配置/资源：对手配置</li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="PERSON-03">
+
+<h3>PERSON-03 · 被动精神牌贡献</h3>
+<p class="source-note">来源：§7.4d/e · 原稿第 2605 行。工作包：P01 / P05 / P06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 三类贡献各有生效时点与UI位置。</p>
+</blockquote>
+<p><strong>分析。</strong> 人物被动、精神、牌如果都叫技能，会重复叠效或让玩家不知道费用。</p>
+<p><strong>具体设计。</strong> Passive自动且常量/条件明确；Ability玩家限次发动；Card提供一次动作修饰。统一SourceRef避免同一人物“标定”在三处重复加值。角色页完整列，战中只显示当前相关。</p>
+<p><strong>操作与画面。</strong> 被动显示小来源角标，精神有次数，牌有一次性费用；基础招仍属机体。</p>
+<div class="design-example"><strong>局面例子</strong><p>陆衡被动能识读载荷标签，限次指令提供优化方案；不能再有一张同名牌重复让承重翻倍。</p></div>
+
+<p><strong>验证与反例。</strong> 同名效果重复来源、人物离场、装备更换、过期；合并规则不靠UI猜。</p>
+<p><strong>交付范围：</strong> 系统恢复专关。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> P05-CONSENT-01、R03-SIGNATURE-01/07。</p>
+<p>本条完整系统在所列专关验证；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P01">P01 · 人物与机体身份数据</a>：人物设计/规则开发；依赖 R01、Q01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P05">P05 · 机魂意愿、关系和换乘</a>：人物玩法/规则开发；依赖 P01、P02、P03</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P06">P06 · 名场面、气势与有名对手</a>：人物设计/敌人设计/演出；依赖 P05、R03、V07</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：人物配置</li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/catalog.gd">game-godot/scripts/formula_lab/linked_campaign/catalog.gd</a></li>
+<li>拟配置/资源：人物规则</li>
+<li>拟配置/资源：事件触发配置</li>
+<li>拟配置/资源：事件配置</li>
+<li>拟配置/资源：演出资源</li>
+<li>拟配置/资源：对手配置</li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="PERSON-04">
+
+<h3>PERSON-04 · 成长不只奖击杀</h3>
+<p class="source-note">来源：§7.4d/e · 原稿第 2605 行。工作包：P01 / P05 / P06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> P04独立对照规格；配置B不作为角色卡恢复条件。</p>
+</blockquote>
+<p><strong>分析。</strong> 只给击杀经验会让维修、护送与取证的人变成永远的工具人。</p>
+<p><strong>具体设计。</strong> GW-GROWTH-P04-v1：每任务完成2XP，救援/保全/设施实际贡献各按表计，个人每任务上限8；阈值6/14，三场4/6/4XP可重算。credits主目标3、全救2、设施1、保全1；reputation全救+1、保全+1、市政毁损−1；按任务/事件去重。首关不启用该成长配置，详细归因和交易见10册。</p>
+<p><strong>操作与画面。</strong> 结算可展开每人的贡献来源，升级给新兼容指令或装备选项，不只被动血+1。</p>
+<div class="design-example"><strong>局面例子</strong><p>成长：三关固定贡献：4/6/4XP；到6和14阈值各解锁一个可选项；重复回放同结算</p></div>
+
+<p><strong>验证与反例。</strong> 三关固定贡献：4/6/4XP；到6和14阈值各解锁一个可选项；重复回放同结算；失败样子：仅击殺可成长；同一救援反复领；回放累计XP。所有结果须来自实跑，当前无实测值。</p>
+<p><strong>交付范围：</strong> 全量／对照。<strong>具体规格：</strong> <a href="10-%E4%B8%93%E5%85%B3%E4%B8%8E%E6%88%90%E9%95%BF%E5%AF%B9%E7%85%A7%E8%A7%84%E6%A0%BC.html#CARD-11">打开对应合同</a>。<strong>验证局：</strong> P04-DECK-01、P04-GROW-01/02/03。</p>
+<p>完整扩展或有结论的对照试验；不阻塞首关；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE09-%E5%8D%A1%E7%BB%84%E4%B8%8E%E6%88%90%E9%95%BF%E5%AF%B9%E7%85%A7.html#CARD-11">CARD-11</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P01">P01 · 人物与机体身份数据</a>：人物设计/规则开发；依赖 R01、Q01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P05">P05 · 机魂意愿、关系和换乘</a>：人物玩法/规则开发；依赖 P01、P02、P03</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P06">P06 · 名场面、气势与有名对手</a>：人物设计/敌人设计/演出；依赖 P05、R03、V07</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：人物配置</li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/catalog.gd">game-godot/scripts/formula_lab/linked_campaign/catalog.gd</a></li>
+<li>拟配置/资源：人物规则</li>
+<li>拟配置/资源：事件触发配置</li>
+<li>拟配置/资源：事件配置</li>
+<li>拟配置/资源：演出资源</li>
+<li>拟配置/资源：对手配置</li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="PERSON-05">
+
+<h3>PERSON-05 · 接受/条件/拒绝/反提案</h3>
+<p class="source-note">来源：§7.4d/e · 原稿第 2605 行。工作包：P01 / P05 / P06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 新增公开意愿层，少量身份相关的有代价选择。</p>
+</blockquote>
+<p><strong>分析。</strong> 机魂拒绝若在点击后才出现，会破坏预演；若从不影响选择，就只是台词皮肤。</p>
+<p><strong>具体设计。</strong> ConsentResult含state、reason、public_predicates、counterproposal Commands、cost_delta、snapshot_hash和command_fingerprint。四态优先级：硬拒绝→条件→有合法替案时counterproposal→接受。至少社勇WILL-BRAVE在GW-R1-SOUL实跑；同状态提交不得反悔，状态变化先废弃旧token。预算/歌翼身份未明用not_applicable，不能捏造机魂。</p>
+<p><strong>操作与画面。</strong> 极少数相关动作才出现双主体短卡；替代方案可直接在地图预览，普通攻击不反复弹对话。</p>
+<div class="design-example"><strong>局面例子</strong><p>社勇不愿用扇面扫到值班室，建议先推开工机；玩家也可先保护设施再重新请求。</p></div>
+
+<p><strong>验证与反例。</strong> 规则条件可复现；提交后无新状态不翻案；选择替案仍遵守移动/行动预算；拒绝不扣资源。</p>
+<p><strong>交付范围：</strong> 首关依赖。<strong>具体规格：</strong> <a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-4">打开对应合同</a>。<strong>验证局：</strong> GW-R1-COMMS、GW-R1-SOUL。</p>
+<p>仅首关六机/三面/18招与对应规则；不包含同条目描述的14机、完整机构或长线故事；若本条有扩展（全员、卸装、三形态、全空地），须在原工作包另关；首关通过不关闭扩展。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#DG-SYS04">DG-SYS04</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P01">P01 · 人物与机体身份数据</a>：人物设计/规则开发；依赖 R01、Q01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P05">P05 · 机魂意愿、关系和换乘</a>：人物玩法/规则开发；依赖 P01、P02、P03</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P06">P06 · 名场面、气势与有名对手</a>：人物设计/敌人设计/演出；依赖 P05、R03、V07</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：人物配置</li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/catalog.gd">game-godot/scripts/formula_lab/linked_campaign/catalog.gd</a></li>
+<li>拟配置/资源：人物规则</li>
+<li>拟配置/资源：事件触发配置</li>
+<li>拟配置/资源：事件配置</li>
+<li>拟配置/资源：演出资源</li>
+<li>拟配置/资源：对手配置</li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="PERSON-06">
+
+<h3>PERSON-06 · 王者强制必杀</h3>
+<p class="source-note">来源：§7.4d/e · 原稿第 2605 行。工作包：P01 / P05 / P06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 不采纳强制发动，改为公开的角色提案。</p>
+</blockquote>
+<p><strong>分析。</strong> 王者满气势强制放必杀会夺走玩家对范围伤害和市政损失的控制。</p>
+<p><strong>具体设计。</strong> 王者气势满只显示必杀机会，不自动发动、不因玩家保留行动而暗扣移动。意愿仅检查真实部件回收/人员安全；卸装反提案遵守WILL-KING。</p>
+<p><strong>操作与画面。</strong> 机会提示在头像边短亮，不盖满地图；展开能看必杀实际受害者。</p>
+<div class="design-example"><strong>局面例子</strong><p>王者想大出风头，玩家让它先移开货车再开炮，保留性格与玩家掌控。</p></div>
+
+<p><strong>验证与反例。</strong> 气势满但有友伤、没有目标、已行动、正在撑桥；都不会自动打断当前计划。</p>
+<p><strong>交付范围：</strong> 系统恢复专关。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> P05-CONSENT-01、R03-SIGNATURE-01/07。</p>
+<p>本条完整系统在所列专关验证；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P01">P01 · 人物与机体身份数据</a>：人物设计/规则开发；依赖 R01、Q01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P05">P05 · 机魂意愿、关系和换乘</a>：人物玩法/规则开发；依赖 P01、P02、P03</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P06">P06 · 名场面、气势与有名对手</a>：人物设计/敌人设计/演出；依赖 P05、R03、V07</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：人物配置</li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/catalog.gd">game-godot/scripts/formula_lab/linked_campaign/catalog.gd</a></li>
+<li>拟配置/资源：人物规则</li>
+<li>拟配置/资源：事件触发配置</li>
+<li>拟配置/资源：事件配置</li>
+<li>拟配置/资源：演出资源</li>
+<li>拟配置/资源：对手配置</li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="PERSON-07">
+
+<h3>PERSON-07 · 雷翎奇数轮开火</h3>
+<p class="source-note">来源：§7.4d/e · 原稿第 2605 行。工作包：P01 / P05 / P06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 不采纳硬性奇偶轮限制，改成快射/精瞄取舍。</p>
+</blockquote>
+<p><strong>分析。</strong> 雷翎只能奇数轮开火是无机设理由的时间锁，会让回合变成空等。</p>
+<p><strong>具体设计。</strong> 不采用奇数轮禁火与强制空等。雷翎普通光束/爆破每轮在行动资源足够时均合法。标定在命中后产生，下一个其他友机直接攻击消耗；具体数值见SIG-3。瞄准准备后的有限改快射放R03-SIGNATURE-03，不能声称轮换梗原样恢复。</p>
+<p><strong>操作与画面。</strong> 两个模式分别写“现在射”“准备后射”，未来收益与取消条件可预览。</p>
+<div class="design-example"><strong>局面例子</strong><p>面对马上拆桥的虫选择快射，面对护群重敌选择准备，战局决定节奏。</p></div>
+
+<p><strong>验证与反例。</strong> 连两轮普通射击合法；准备后无目标/被推有原因；不通过换形态重置准备收益。</p>
+<p><strong>交付范围：</strong> 系统恢复专关。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> P05-CONSENT-01、R03-SIGNATURE-01/07。</p>
+<p>本条完整系统在所列专关验证；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P01">P01 · 人物与机体身份数据</a>：人物设计/规则开发；依赖 R01、Q01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P05">P05 · 机魂意愿、关系和换乘</a>：人物玩法/规则开发；依赖 P01、P02、P03</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P06">P06 · 名场面、气势与有名对手</a>：人物设计/敌人设计/演出；依赖 P05、R03、V07</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：人物配置</li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/catalog.gd">game-godot/scripts/formula_lab/linked_campaign/catalog.gd</a></li>
+<li>拟配置/资源：人物规则</li>
+<li>拟配置/资源：事件触发配置</li>
+<li>拟配置/资源：事件配置</li>
+<li>拟配置/资源：演出资源</li>
+<li>拟配置/资源：对手配置</li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="PERSON-08">
+
+<h3>PERSON-08 · 货柜完整句人格</h3>
+<p class="source-note">来源：§7.4d/e · 原稿第 2605 行。工作包：P01 / P05 / P06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 招牌有明确合同和测试局；首关最小集与完整身份功能分别验收。</p>
+</blockquote>
+<p><strong>分析。</strong> 货柜人格被简化为喇叭声、技能又只是同款支撑，失去领袖与载具感。</p>
+<p><strong>具体设计。</strong> 护场所选中心格的对象盾2、该格四邻覆盖到的其他对象各盾1，多格对象取最高一次，敌我同效；吊运射程2、载荷≤3、落点距载荷原位≤3。变形1×1→2×1，净空与扫掠都算。；范围：首关MV07–10护场/吊运/载具脚印；R03-SIGNATURE-06载人；后续定稿：载客上限4，乘员/载荷有ID，质量合计计承重。载人时不能无安全格卸客或缩回不兼容形态；车毁后安全邻格可救，无合法格按公开规则处理。</p>
+<p><strong>操作与画面。</strong> 先看到盾覆盖的车队与真实提起/落下，再看到运输形态的长车身。 引用MV07,MV08,MV09,MV10,FX07,FX09,FX10,FX13对应的实际形状与时点，不另造效果。</p>
+<div class="design-example"><strong>局面例子</strong><p>先看到盾覆盖的车队与真实提起/落下，再看到运输形态的长车身。不能把后续合同存在说成首关已实现。</p></div>
+
+<p><strong>验证与反例。</strong> 六机名/色遮蔽的因果识别≥90%，机体识别≥80%，单机≥7/10；记录原始回答与误认。首关MV07–10护场/吊运/载具脚印；R03-SIGNATURE-06载人；entities: V353U043：作业变形、护送、独立人格；能完整开口</p>
+<p><strong>交付范围：</strong> 系统恢复专关。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> P05-CONSENT-01、R03-SIGNATURE-01/07。</p>
+<p>本条完整系统在所列专关验证；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#SIG-6">SIG-6</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P01">P01 · 人物与机体身份数据</a>：人物设计/规则开发；依赖 R01、Q01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P05">P05 · 机魂意愿、关系和换乘</a>：人物玩法/规则开发；依赖 P01、P02、P03</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P06">P06 · 名场面、气势与有名对手</a>：人物设计/敌人设计/演出；依赖 P05、R03、V07</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：人物配置</li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/catalog.gd">game-godot/scripts/formula_lab/linked_campaign/catalog.gd</a></li>
+<li>拟配置/资源：人物规则</li>
+<li>拟配置/资源：事件触发配置</li>
+<li>拟配置/资源：事件配置</li>
+<li>拟配置/资源：演出资源</li>
+<li>拟配置/资源：对手配置</li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="PERSON-09">
+
+<h3>PERSON-09 · 驾驶员适配换乘</h3>
+<p class="source-note">来源：§7.4d/e · 原稿第 2605 行。工作包：P01 / P05 / P06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 整备换乘，战中只允许有明确机设的交接。</p>
+</blockquote>
+<p><strong>分析。</strong> 随时换驾驶员会成为刷被动漏洞，也会违背座舱和机魂搭档关系。</p>
+<p><strong>具体设计。</strong> Compatibility列座舱规格、训练、搭档同意与剧情解锁；换乘不改变机体剩余HP/弹药。战中若支持救援接管，需邻接、时间/主行动和控制权交接，不能双人同时操控。</p>
+<p><strong>操作与画面。</strong> 整备兼容表说明不能驾驶的原因；换后贡献卡和头像同步变化。</p>
+<div class="design-example"><strong>局面例子</strong><p>货柜搭载豪司不把货柜变成豪司可随意支配的无人格车辆。</p></div>
+
+<p><strong>验证与反例。</strong> 独立机魂载人但不等于被驾驶、双主体、伤员接管、同角色重复部署；身份唯一。</p>
+<p><strong>交付范围：</strong> 全量／对照。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> Q02-FULL。</p>
+<p>完整扩展或有结论的对照试验；不阻塞首关；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P01">P01 · 人物与机体身份数据</a>：人物设计/规则开发；依赖 R01、Q01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P05">P05 · 机魂意愿、关系和换乘</a>：人物玩法/规则开发；依赖 P01、P02、P03</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P06">P06 · 名场面、气势与有名对手</a>：人物设计/敌人设计/演出；依赖 P05、R03、V07</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：人物配置</li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/catalog.gd">game-godot/scripts/formula_lab/linked_campaign/catalog.gd</a></li>
+<li>拟配置/资源：人物规则</li>
+<li>拟配置/资源：事件触发配置</li>
+<li>拟配置/资源：事件配置</li>
+<li>拟配置/资源：演出资源</li>
+<li>拟配置/资源：对手配置</li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="PERSON-10">
+
+<h3>PERSON-10 · 关系援护合体</h3>
+<p class="source-note">来源：§7.4d/e · 原稿第 2645 行。工作包：P01 / P05 / P06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 有限且公开的合作窗口。</p>
+</blockquote>
+<p><strong>分析。</strong> 关系如果只是匿名加伤，人物没有存在感；若无限免费援护，会使顺位失控。</p>
+<p><strong>具体设计。</strong> CooperationRule声明双方身份/距离或通信链、触发事件、费用与每轮次数；援护消耗援护方主行动或显式独立限次，不暗中插队。接受反提案、共同保护可增长关系，效果事前可见。</p>
+<p><strong>操作与画面。</strong> 瞄准时在同伴头像上出现可选援护连接，预览合并费用和全部后果；默认不自动长对话。</p>
+<div class="design-example"><strong>局面例子</strong><p>雷翎标定后旧拳王追击是真正两手合作；若一键合击，必须明写消耗两台主行动。</p></div>
+
+<p><strong>验证与反例。</strong> 已行动伙伴、跨区失联、失能、一次事件多触发、援护者被击毁；预算与参与者名单稳定。</p>
+<p><strong>交付范围：</strong> 全量／对照。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> Q02-FULL。</p>
+<p>完整扩展或有结论的对照试验；不阻塞首关；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#DG-SYS14">DG-SYS14</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P01">P01 · 人物与机体身份数据</a>：人物设计/规则开发；依赖 R01、Q01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P05">P05 · 机魂意愿、关系和换乘</a>：人物玩法/规则开发；依赖 P01、P02、P03</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P06">P06 · 名场面、气势与有名对手</a>：人物设计/敌人设计/演出；依赖 P05、R03、V07</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：人物配置</li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/catalog.gd">game-godot/scripts/formula_lab/linked_campaign/catalog.gd</a></li>
+<li>拟配置/资源：人物规则</li>
+<li>拟配置/资源：事件触发配置</li>
+<li>拟配置/资源：事件配置</li>
+<li>拟配置/资源：演出资源</li>
+<li>拟配置/资源：对手配置</li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="PERSON-11">
+
+<h3>PERSON-11 · 名场面/非击杀气势</h3>
+<p class="source-note">来源：§7.4d/e · 原稿第 2645 行。工作包：P01 / P05 / P06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 公开事件积累、同事件去重、保护与合作同样有收益。</p>
+</blockquote>
+<p><strong>分析。</strong> 气势只奖杀敌会惩罚救援和控制机，名场面也因此沦为攒杀数。</p>
+<p><strong>具体设计。</strong> 首关气势上限3。击破公开威胁、实际保护成功、完成救援/关键协作各提供1；同对象同root_event本轮只计一次，单次多杀至多+1。新获得气势不在同一动作递归再消费；终式准备耗2，主行动规则见07/08。</p>
+<p><strong>操作与画面。</strong> 产生收益时从来源到机体气势槽短脉冲，悬停显示为何获得；满槽只给机会提示，不自动放大招。</p>
+<div class="design-example"><strong>局面例子</strong><p>货柜护住车免掉一次致命炮击也能涨气势，证明护送不是低价值杂活。</p></div>
+
+<p><strong>验证与反例。</strong> 刷修复/友伤再救/重复护盾不套利；辅助路线与杀敌路线都可有一次名场面；多目标不无限灌满。</p>
+<p><strong>交付范围：</strong> 系统恢复专关。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> P05-CONSENT-01、R03-SIGNATURE-01/07。</p>
+<p>本条完整系统在所列专关验证；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#DG-SYS08">DG-SYS08</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P01">P01 · 人物与机体身份数据</a>：人物设计/规则开发；依赖 R01、Q01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P05">P05 · 机魂意愿、关系和换乘</a>：人物玩法/规则开发；依赖 P01、P02、P03</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P06">P06 · 名场面、气势与有名对手</a>：人物设计/敌人设计/演出；依赖 P05、R03、V07</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：人物配置</li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/catalog.gd">game-godot/scripts/formula_lab/linked_campaign/catalog.gd</a></li>
+<li>拟配置/资源：人物规则</li>
+<li>拟配置/资源：事件触发配置</li>
+<li>拟配置/资源：事件配置</li>
+<li>拟配置/资源：演出资源</li>
+<li>拟配置/资源：对手配置</li>
+</ul>
+</details>
+
+</section>
+
+<section class="design-item" id="PERSON-12">
+
+<h3>PERSON-12 · 有名对手</h3>
+<p class="source-note">来源：§7.4d/e · 原稿第 2645 行。工作包：P01 / P05 / P06</p>
+
+<blockquote>
+<p><strong>处理决定：</strong> 设一名有来源的有名对手候选，保持可预测规则。</p>
+</blockquote>
+<p><strong>分析。</strong> 全部敌人只是任务障碍，会削弱机器人大战的对手感；Boss作弊又会破坏公开承诺。</p>
+<p><strong>具体设计。</strong> 对手包包含roster来源、动机、机设、两阶段武器、阶段转换阈值、台词与撤退条件；转换只在公示阶段发生。尚无通过核对的身份时不擅自编正式剧情；用测试代号验证规则。</p>
+<p><strong>操作与画面。</strong> 阶段转换先给新危险范围和准备动作；台词透露战术意图，不能用剧情取消玩家已成立的命中。</p>
+<div class="design-example"><strong>局面例子</strong><p>玩家可歼灭其护卫夺现场，或完成救援迫使其撤退，结算代价不同而不是唯一击杀路。</p></div>
+
+<p><strong>验证与反例。</strong> 伤到阈值、被推下台、提前击破、救援已成、逃走路线被堵；都能按规则收束。</p>
+<p><strong>交付范围：</strong> 全量／对照。<strong>具体规格：</strong> <a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html#section-1">打开对应合同</a>。<strong>验证局：</strong> Q02-FULL。</p>
+<p>完整扩展或有结论的对照试验；不阻塞首关；按工作包完整验收范围核销，不凭本页合同算完成。实机配置、录屏与反例证据：<strong>未提供</strong>。</p>
+<p><strong>同一问题的相关条目：</strong> <a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html#DG-SYS15">DG-SYS15</a>。各条保留原报告位置，共用此设计，不重复开发。</p>
+<details class="implementation"><summary>准备怎么施工：工作包、依赖与代码入口</summary>
+
+<ul>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P01">P01 · 人物与机体身份数据</a>：人物设计/规则开发；依赖 R01、Q01</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P05">P05 · 机魂意愿、关系和换乘</a>：人物玩法/规则开发；依赖 P01、P02、P03</li>
+<li><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html#P06">P06 · 名场面、气势与有名对手</a>：人物设计/敌人设计/演出；依赖 P05、R03、V07</li>
+</ul>
+<p>这些是拟修改入口，不表示已经完成修改。共同的命令、事件和呈现责任见<a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">实现设计册</a>。</p>
+<ul>
+<li>拟配置/资源：人物配置</li>
+<li><a href="/Users/rayz/Documents/%E8%B6%85gag%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/game-godot/scripts/formula_lab/linked_campaign/catalog.gd">game-godot/scripts/formula_lab/linked_campaign/catalog.gd</a></li>
+<li>拟配置/资源：人物规则</li>
+<li>拟配置/资源：事件触发配置</li>
+<li>拟配置/资源：事件配置</li>
+<li>拟配置/资源：演出资源</li>
+<li>拟配置/资源：对手配置</li>
+</ul>
+</details>
+
+</section>
+<div class="footer-nav"><a href="index.html">← 回到总方案</a><a href="覆盖核对.html">按原报告编号检索 →</a></div><div class="foot">来源：项目内 Grok v5 报告及配套原稿。图中“设计示意”不代表游戏已经实现。第11册为补定设计，第12册为实现与验证，第13册为新美术标准落地与建筑重做。是否好玩仍需真实玩家判断，不能用测试通过代替。</div></article></main></div></body></html>

@@ -1,0 +1,105 @@
+{
+  "character_states": [
+    {
+      "desire_or_emotion": "在本可扩大战果时明确把救回镜星置于击毁归一星之前，并第一次看见四台互相否认的机体主动成为同伴。",
+      "entity_id": "CH_JICUN",
+      "relationship_delta": "他没有替四机宣布关系，只把两处脱离点交给玩家和三台机选择；四机对他的指挥从临时利用转为初步信任。"
+    }
+  ],
+  "context_key": "04ad6feb82263330651bcac806a409bf1f2d02e34609d3b2353a21d167b194df",
+  "draft_sha256": "222c992e65b816ac633c8b4ebb03b48e8ca126d27ae2d7df87c5e67b9dad3a89",
+  "entity_states": [
+    {
+      "controller": "商品回收执行系统",
+      "entity_id": "ENEMY_C02_UNITY_RECLAIMER",
+      "location": "木桶街外空域，撤退中",
+      "physical_state": "移动托架上下破裂、腹甲受损、回收索只收回残段；仍持有限动作样本和匿名馆守Z负载扫描。"
+    },
+    {
+      "controller": "喷气叛星独立主体",
+      "entity_id": "V353U044",
+      "location": "木桶街外缘低空",
+      "physical_state": "放弃抢功追击并引开外侧回收索；保持行动能力，已回到同伴附近。"
+    },
+    {
+      "controller": "死锁独立主体",
+      "entity_id": "V353U045",
+      "location": "木桶街外缘高架旁",
+      "physical_state": "改装近战重臂永久脱离并毁于敌甲内；以剩余手臂接住镜星，仍能行动。"
+    },
+    {
+      "controller": "镜星独立主体",
+      "entity_id": "V353U046",
+      "location": "木桶街外缘高架旁",
+      "physical_state": "已从移动托架获救；识别器仍在过热恢复，机体留有回收索痕。"
+    },
+    {
+      "controller": "雷翎独立主体",
+      "entity_id": "V353U047",
+      "location": "木桶街外缘空域",
+      "physical_state": "放弃最佳远射线并击碎托架上锁、切断镜星残索；保持行动能力。"
+    },
+    {
+      "controller": "玩家临时操纵与低权限竞赛AI协作",
+      "entity_id": "V353U071",
+      "location": "木桶街地面主钥节点",
+      "physical_state": "继续守住地面主钥，维持四个本地呼号与航路分别响应，无新增损伤。"
+    },
+    {
+      "controller": "纪存指挥、自动航行系统维持低速舰体",
+      "entity_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "location": "木桶街外港泊位",
+      "physical_state": "保持低速循环与战斗负载限制，只提供传感和脱离点识别，没有加入空中追击。"
+    }
+  ],
+  "facts_established": [
+    {
+      "evidence_in_draft": "喷气叛星引开两根外索，雷翎放弃最佳射界击碎上锁，死锁把不兼容重臂留在归一星装甲内炸开下锁；镜星从内部维持四个独立呼号并脱离托架。",
+      "fact_id": "C02E02.MIRROR_STAR_RESCUED",
+      "statement": "喷气叛星、雷翎和死锁分别放弃扩大战果的动作，打开移动托架的上下脱离点，救回镜星。"
+    },
+    {
+      "evidence_in_draft": "归一星放弃节点和捕获目标，将动力转给撤退推进器，带伤升出街区外空域。",
+      "fact_id": "C02E02.UNITY_RECLAIMER_WITHDRAWS",
+      "statement": "归一星在移动托架和腹甲严重受损后退出木桶街外空域，但未被摧毁。"
+    },
+    {
+      "evidence_in_draft": "四根回收索分别铺在喷气叛星急转高位、死锁低空重击路、雷翎换位射线和镜星反射通道上；镜星因识别器过热未能及时再次拆分信号而被捕。",
+      "fact_id": "C02E02.SECOND_PHASE_DERIVED_FROM_FIRST_ENDINGS",
+      "statement": "归一星的反向布索只使用了F04刚记录的四种首次收招和镜星现场可见的过热状态。"
+    },
+    {
+      "evidence_in_draft": "死锁断开肩部连接，把卡在归一星装甲内的重臂过载引爆，炸开第二处脱离点。",
+      "fact_id": "C02E02.DEADLOCK_ARM_PERMANENTLY_LOST",
+      "statement": "死锁主动舍弃改装近战重臂，以永久机体损伤换取镜星脱离。"
+    },
+    {
+      "evidence_in_draft": "死锁重臂的内部爆炸烧毁外层即时记录器；受保护数据匣仅保留此前样本和匿名十八米级重型机负载扫描。",
+      "fact_id": "C02E02.UNITY_SAMPLE_SCOPE_LIMITED",
+      "statement": "归一星只带走共同起手、四种首次收招和来源匿名的馆守Z负载扫描。"
+    }
+  ],
+  "fragment_id": "C02E02-F05",
+  "next_trigger": "归一星撤退后，木桶街必须立即收拢四台机、处理镜星过热与死锁失臂，并决定四机是否继续与万机馆同行。",
+  "open_threads": [
+    {
+      "note": "死锁永久失去改装近战重臂，后续需要处理稳定、维修和身份选择。",
+      "status": "open",
+      "thread_id": "DEADLOCK_LOST_MELEE_ARM"
+    },
+    {
+      "note": "四机已在救援中彼此响应，但最终去留与长期关系尚未决定。",
+      "status": "open",
+      "thread_id": "FOUR_REPAINTS_FINAL_DESTINATION"
+    },
+    {
+      "note": "归一星带伤撤退，仍持有限动作样本及匿名馆守Z负载扫描，扫描来源不明。",
+      "status": "open",
+      "thread_id": "UNITY_RECLAIMER_LIMITED_SAMPLES"
+    }
+  ],
+  "review_sha256": "95071b7277f40b60c02914183a125ca0ddb029263593189d6e00e3055125f783",
+  "schema_version": 1,
+  "status": "committed",
+  "unresolved_logic_risks": []
+}

@@ -1,0 +1,11 @@
+check_id	dimension	acceptance_rule	evidence_source	fail_signal	status
+V20CHK_01	继承完整性	V20交付前必须列出v19、v19.1、v19.2、v15、v16、v16.1、v12.2、v10-v14.1、v17.1、v09/v05的采纳/改造/合并/废弃/延后结果	v20_inheritance_ledger_v19_3.tsv	只说已参考，没有处理结果	candidate_v19_3
+V20CHK_02	体量口径	V20主线为48话，完整可玩剧情节点约60-70个；支线节点承担开馆、关系、深潜和EX，不挤爆主线	v20_content_scope_v19_3.tsv	把60-70写成主线话数或把支线只做资源奖励	candidate_v19_3
+V20CHK_03	话级密度	每话按S/A/B/C分级写，重点话不得平均压缩，过桥话也必须有新事件和债务	v20_episode_grade_rules_v19_3.tsv	48话字数平均、后半段明显缩水	candidate_v19_3
+V20CHK_04	源点争夺	11个活化源点必须有埋种、争夺、反咬、回收，不得写成普通钥匙或地图坐标	anime_arc_plot_engine_v19_1.tsv	巡展开馆表像收集品清单	candidate_v19_3
+V20CHK_05	代哥与七海	代哥必须区分生态层；七海每次关键出场必须回答她是在执行流程还是借流程改流程	daige_ecosystem_layers_v19_2.tsv;qihai_reform_arc_v19_2.tsv	代哥变成单一恶企，七海变成万能内鬼或恋爱脑	candidate_v19_3
+V20CHK_06	中盘保护	v16/v16.1的C04-C08高能段进入V20时必须保留同步灾害、撤退战、分镜囚笼、原典仪式、白名单修罗场和中盘大败后果	chapter_04_08_highlight_synopsis_v16.tsv;chapter_04_08_highlight_synopsis_v16_1.tsv	中盘只剩主题摘要或关系变量	candidate_v19_3
+V20CHK_07	人物线	纪存、白鸢、七海、唐胶、陆衡、赤罡等必须有主动选择、外放节点和后续债务，不得只表达观点	character_arc_ladders_v09.tsv;relationship_route_spines_v17.tsv	人物像系统代言人或只在所属章节出现	candidate_v19_3
+V20CHK_08	机战爽点	每篇至少有可视化机器人动画爽点；重点话要落到机体、地图、BGM、cut-in、部署或结算	issue_drama_explosion_v15.tsv	爽点只剩小规则、几秒、几格或数值小case	candidate_v19_3
+V20CHK_09	万机馆厚度	万机馆展区、藏品、泊位、模型/玩具关系钥匙必须通过主线和开馆事件持续显影	wanji_exhibition_zones.tsv;wanji_collection_taxonomy.tsv;wanji_carrier_berths.tsv	万机馆只像基地菜单或少数展品	candidate_v19_3
+V20CHK_10	50问题覆盖	V20完成后必须有50问题覆盖表，说明每项如何进入主线、支线、玩法、人物或被明确弃用	issue_deep_revision_targets_v10.tsv;issue_legacy_integration_v14_1.tsv	问题只被索引，没有专属处理	candidate_v19_3

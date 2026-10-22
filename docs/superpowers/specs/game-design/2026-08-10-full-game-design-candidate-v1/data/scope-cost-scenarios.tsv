@@ -1,0 +1,10 @@
+scenario_id	tier_id	scenario	person_month_total	calendar_months	average_active_fte	product_direction_pm	narrative_content_pm	system_level_design_pm	engineering_tools_ui_pm	art_environment_mecha_ui_pm	animation_vfx_pm	audio_music_voice_pm	qa_access_localization_release_pm	estimate_basis	assumptions	status
+S1_LOW	SCOPE1_VERTICAL_SLICE	low	80	9	8.89	6	6	10	18	18	10	2	10	u0_planning_envelope_cumulative_from_stage0_start	强复用;低返工;无正式P3重写;不含全配音	planning_envelope_u0_not_estimate
+S1_BASE	SCOPE1_VERTICAL_SLICE	base	100	10	10.00	8	8	12	22	23	13	3	11	u0_planning_envelope_cumulative_from_stage0_start	P1/P2按计划;C01一个A3;英文仅UI/商店测试	planning_envelope_u0_not_estimate
+S1_HIGH	SCOPE1_VERTICAL_SLICE	high	120	12	10.00	9	10	15	26	30	18	4	8	u0_planning_envelope_cumulative_from_stage0_start	切片硬帽;达到即重裁而非继续加预算	planning_envelope_u0_not_estimate
+S2_LOW	SCOPE2_MINIMUM_22	low	360	32	11.25	28	35	45	65	85	50	12	40	u0_planning_envelope_cumulative_from_stage0_start	70%复用;低档数量;返工<=15%;Windows首发	planning_envelope_u0_not_estimate
+S2_BASE	SCOPE2_MINIMUM_22	base	440	36	12.22	34	45	55	80	105	62	16	43	u0_planning_envelope_cumulative_from_stage0_start	65-70%复用;基准数量;返工15-20%;中英文本	planning_envelope_u0_not_estimate
+S2_HIGH	SCOPE2_MINIMUM_22	high	520	42	12.38	40	55	65	95	125	75	20	45	u0_planning_envelope_cumulative_from_stage0_start	最低可售硬帽;高成本不得与所有数量上限同时取	planning_envelope_u0_not_estimate
+S3_LOW	SCOPE3_IDEAL_22	low	625	40	15.63	45	70	75	100	160	90	25	60	u0_planning_envelope_cumulative_from_stage0_start	Scope2吞吐已实证;Ideal低档	planning_envelope_u0_not_estimate
+S3_BASE	SCOPE3_IDEAL_22	base	760	45	16.89	55	88	92	120	195	115	32	63	u0_planning_envelope_cumulative_from_stage0_start	更多回访/语音/英雄段;扩编稳定	planning_envelope_u0_not_estimate
+S3_HIGH	SCOPE3_IDEAL_22	high	925	50	18.50	65	105	110	145	230	140	40	90	u0_planning_envelope_cumulative_from_stage0_start	Ideal硬帽;主机/全配音仍另案	planning_envelope_u0_not_estimate

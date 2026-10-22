@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "package_id": "D04-P1-V0.2-MACHINE-TRUTH",
+    "authority": "Candidate",
+    "lifecycle": "candidate_machine_fixture",
+    "build_status": "zero_build",
+    "human_test_status": "human_not_run",
+    "user_decision_status": "user_not_decided",
+    "integrity_claim": "HASH_BOUND_DECLARED_EVENT_LEDGER_ONLY",
+    "resolver_status": "RESOLVER_NOT_IMPLEMENTED",
+    "implementation_gate": "NO_GO_UNTIL_PLAN_TO_EVENT_RULES_EXIST",
+    "save_round_trip_status": "NOT_IMPLEMENTED",
+    "fun_status": "FUN_UNPROVEN",
+    "human_gate": "M5_REQUIRED",
+    "global_dominance_status": "DOMINANCE_UNPROVEN",
+    "search_gate": "BOUNDED_SEARCH_REQUIRED"
+  },
+  "canonical_json": {
+    "applies_to": ["state_hash", "event_hash", "clock_hash"],
+    "encoding": "UTF-8",
+    "sort_keys": true,
+    "separators": [",", ":"],
+    "ensure_ascii": false,
+    "hash": "SHA-256",
+    "presentation_only_keys_excluded_from_semantic_hash": ["animation", "fps", "presentation", "render_mode", "skip_mode"],
+    "component_file_hash_mode": "raw_file_bytes_sha256"
+  },
+  "component_sha256": {
+    "world.json": "10bb5d17dfe7f6988d75e578794d87725549d8f514a900bb60100c9f1589402a",
+    "rules.json": "ae8871f180e1ac124fc1298891020ca3badeeb0c87e87ba361c165f99a1e043e",
+    "ai-objective.json": "9f3a5a0444f6fc5a64616aaede1681634e9725e10199a3f5ae8cab02b29a9b62",
+    "traces.json": "a8757894456b1f72760e910ea05cabcafc2d0891dccb662e6f28c14556cb2eca",
+    "save-log-schema.json": "24290c25fc340213016e47abaccfc254c84dfe18a068b2b5189e1a9b4a1a3a66"
+  },
+  "support_file_sha256": {
+    "../../scripts/check_d04_p1_v0_2.py": "383fae775a5fce5b02c5bcef04fd54f5f973ccea29db249652fbc423b38f47e4",
+    "../d04-p1-adapter-event-vectors.tsv": "ac98b77ae5c41dbc699208e56d9b70065820acf90a1c9c4e412ea67b364df725"
+  },
+  "checker": "../../scripts/check_d04_p1_v0_2.py",
+  "prohibited_promotions": ["Canon", "Reader", "Runtime", "Demo", "GodotBuild", "playable_UI", "fun_proven", "human_accepted"]
+}

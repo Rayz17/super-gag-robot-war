@@ -1,0 +1,6 @@
+rule_id	severity	entity_id	entity_name	implementation_key	scope	rule_type	forbidden_file	forbidden_regex	allowed_from_scene	message
+CANON-RULE-001	P1	CH036	豪司	haosi	C01E01-C01E02	initial_roster	game-godot/scripts/core/battle/battle_session.gd	_player\("haosi"	V355-C01E03	豪司不能作为E01/E02初始或支援战斗单位；V355-C01E03才由本人到场、实名越权临控勇拳并完成首次战斗行动。
+CANON-RULE-002	P1	CH_QIHAI	七海	qihai_console	C01E01	initial_hotspot	game-godot/scripts/core/scenario/kernel_chapter_flow.gd	"qihai_console".*"hotspots"	C01E01-ZERO-ANOMALY	七海通讯台不能作为前厅初始可调查热点；必须由0号侧廊异响解锁。
+CANON-RULE-003	P0	EVENT_SKY_RING_BREAK_27Y	二十七年前复合灾变	forbidden_wrong_disaster_clock	C01	forbidden_phrase	game-godot/scripts	七年前.{0,12}(原初灾变|G\\.A\\.G\\.|大清噪|天穹断环)|原初灾变.{0,12}七年前	LATER_REVEAL	第一章不得把二十七年前原初灾变误写成七年前；七年前只属于七海参与的共身改革事故，普通“七年前”表述不应被一刀切禁止。
+CANON-RULE-004	P1	CH_QIHAI	七海	qihai_remote_presence	V355-C01E01_TO_C01E04	remote_only	game-godot/scripts	七海.*现场|spawn.*qihai	V359-C03E01-CREATIVE	第一章七海不得本人到场，只能通过私人语音、公务风险频道或通讯投影出现；她在C03实体抵达，并于V359-C03E03-CREATIVE以随舰事故观察员和旧签名滥用调查员身份登舰。
+CANON-RULE-005	P2	ENEMY_SEAL_DRONE	封存无人机	seal_drone_tone	HISTORICAL-C01E02-BATTLE-START	historical_enemy_tone	game-godot/scripts	咆哮|愤怒|杀死	CURRENT_STORY_FIRST_UNSCHEDULED	锁图资产仍应是安静的流程执行单位，不应写成会咆哮或主动杀戮的怪物；旧C01E02首战只作历史实现，当前Story-First尚未排期。

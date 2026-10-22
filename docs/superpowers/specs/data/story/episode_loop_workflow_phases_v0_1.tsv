@@ -1,0 +1,24 @@
+phase_id	phase_name	inputs	actions	outputs	fail_condition	next_phase
+ELO01	上一话结果审稿	上一话话卡;上一话梗概;上一话状态增量	提取Clear State;主角熔炉;纪存记忆;情绪积累;关系事件;机体曝光;名场面使用;敌方收益;分支痕迹	上一话审稿摘要;必须偿还债务列表	上一话没有明确状态变化、主角动作只有小指标、关系无情绪积累或纪存记忆不破局	ELO01_PATCH
+ELO01_PATCH	上一话结算补丁	ELO01失败项	补写结算;明确债务;补状态变化	可进入下一话的Clear State	仍无状态变化	ELO01
+ELO02	下一话推进判断	上一话Clear State;主结构;累积账本	选择埋种/推进/反转/破裂/爆发/冷却/回收	下一话推进类型;主冲突方向	下一话只是平行事件	ELO03
+ELO03	写作资料包组织	canon;设定;素材库;50问题;累积账本	选择机体候选;台词/名场面锚点;玩法;主角熔炉;纪存记忆;情绪积累;关系压力;敌方动作	下一话Context Pack	资料包没有机体/玩法/主角熔炉/纪存记忆候选/情绪积累/关系/敌方收益	ELO03_PATCH
+ELO03_PATCH	资料包补强	ELO03失败项	回素材库和50问题表补齐缺项	合格Context Pack	补强后仍缺关键资料	ELO03
+ELO04	单话调用writing-pipeline	Context Pack;下一话Brief	一次只运行一话的Task Brief;Pressure Board;Episode Card;Draft;Review;Patch	下一话单话packet;梗概;审稿;补丁日志;Gate Result	跳过压力板/审稿或一次调用多话	ELO04_THICKNESS_REVIEW
+ELO04_THICKNESS_REVIEW	厚度审稿	ELO04产物;输出类别;V22.10基准	检查场面链、剧情流程厚度、战斗中段变化、主角熔炉、情绪积累、纪存记忆、人物动作、机体动作和敌方抽取	厚度审稿结果;薄化补丁清单	厚版章节被写成路线图或话卡，主角成长被压成小指标，关系爆点无积累，或纪存只做资料整理	ELO04_THICKNESS_PATCH
+ELO04_THICKNESS_PATCH	厚度补丁	ELO04_THICKNESS_REVIEW失败项	按V22.10基准补场面链、战斗变化、人物动作、机体功能、余波债务	厚版可进入门禁审查的下一话产物	补丁后仍是短摘要	ELO04_THICKNESS_REVIEW
+ELO05	门禁审查	下一话产物;密度规则;素材使用账本	检查机体密度;名场面/台词使用层级;玩法;主角熔炉;情绪积累;纪存记忆;关系硬动作;敌方收益;情绪物件;世界内meta边界;下一话债	门禁结果	任一硬门禁失败	ELO05_PATCH
+ELO05_PATCH	门禁补丁或卡片重建	门禁失败项	局部缺项回Review/Patch Merge补写;系统性缺项回Pressure Board/Episode Card重建	通过门禁的下一话	补丁后仍失败	ELO05
+ELO06	状态账本更新	通过门禁的下一话	更新episode/roster/quote/relationship/protagonist_arc/protagonist_memory/branch/enemy/emotion/open_question账本	状态增量表;累计账本	账本缺少关键字段	ELO06_PATCH
+ELO06_PATCH	账本补齐	缺字段列表	补齐状态、债务和下一话触发	完整账本	补齐后仍缺账本字段	ELO07
+ELO07	自动生成下一话brief	累计账本;当前话结尾状态	生成下一话必须偿还/升级/反转内容	Next Episode Brief	brief没有明确推进类型或素材候选	ELO07_PATCH
+ELO07_PATCH	下一话brief补强	ELO07失败项	补下一话推进类型、机体、名场面、玩法、敌方动作	合格Next Episode Brief	补强后仍无推进方向	ELO01
+ELO08	批次审查	3-5话微批或篇章完成产物	检查连续性、密度曲线、主角熔炉曲线、纪存记忆曲线、情绪积累曲线、关系曲线、敌方学习链、分支可见性	批次审查报告;批次补丁清单	后半话明显变薄、主角静止、关系无积累、纪存记忆无破局或债务失踪	ELO08_PATCH
+ELO08_PATCH	批次补丁	批次审查失败项	补强薄弱话;恢复丢失债务	可继续全剧循环的批次状态	补丁后仍有连续性断裂	ELO01
+ELO09	前缀回归总审	第1章到第N章已通过章节;累计账本	连读1..N;按专业编剧/机器人文化专家/游戏制作人/主角熔炉/情绪积累/纪存记忆视角检查戏剧、机体文化、玩法、主角成长、关系、敌方学习和主题推进	前缀总审报告;是否通过;Regression Ticket候选	1..N连读存在S0/S1问题、主角成长小指标化、关系账本化或纪存机魂记忆未承重	ELO09_ROOT_CAUSE
+ELO09_ROOT_CAUSE	定位最早根因章节	ELO09失败项;累计账本;章节版本历史	判断问题最早源头K;区分症状章节和根因章节;写Regression Ticket	根因章节K;重放范围K+1..N;必须保留清单	无法定位根因或涉及用户高层取舍	ELO09_USER_DECISION
+ELO09_FIX_K	回根因章节修正	Regression Ticket;第K章当前版本;必须保留清单	按单话pipeline修正第K章受影响话;更新K章ledger	第K章修正版;K章自检结果	K章自检不通过	ELO09_FIX_K
+ELO09_REPLAY	顺序重放K+1..N	第K章修正版;K+1..N原版本;受影响账本	逐章判断不受影响/局部受影响/结构受影响;保留、patch或重跑ELO	重放后的K..N版本;更新账本	重放中出现结构断裂	ELO09_ROOT_CAUSE
+ELO09_REREVIEW	重新连读1..N	重放后1..N版本;Regression Ticket	再次进行前缀总审，判断同根因是否解决	通过/失败;根因轮次更新	同一根因仍失败且轮次小于3	ELO09_FIX_K
+ELO09_UNRESOLVED	未解决问题入账	同一根因第3轮仍失败;三轮版本记录	选择当前最优版本;写入unresolved_issue_ledger;标注残余风险和后续观察点	最优版本;未解决问题账本条目;继续推进许可	问题需要用户高层取舍	ELO09_USER_DECISION
+ELO09_USER_DECISION	用户取舍点	无法定位根因或高层取舍项	整理选项、代价、推荐方案并停止自动推进	用户决策请求	用户未决	STOP

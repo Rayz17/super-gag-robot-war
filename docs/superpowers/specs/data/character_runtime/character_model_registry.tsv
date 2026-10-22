@@ -1,0 +1,23 @@
+model_id	entity_id	runtime_tier	actor_kind	dossier_id	voice_id	art_lock_id	cast_id	relationship_keys	mecha_or_system_links	current_state_sources	story_function	promotion_rule	status	notes
+CM_JICUN	CH_JICUN	A_SERIES_CORE	character	CD001	VR001	CML001	CAST_JICUN	RELSP01;RELSP02	MECHA_WANJI_MOBILE_CHASSIS;MECHA_HUNDRED_FORMS	docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C01/C01-机体人物分支状态账.tsv;docs/superpowers/specs/剧情梗概/V35.9/rebuild/handoff/C01-v3.1创作基线与C02继承包-v2.md	玩家视角、万机响应天赋、机魂身世与开馆英雄弧线	A级始终保留完整模型	active	当前状态必须按已确认章节覆盖候选长线
+CM_QIHAI	CH_QIHAI	A_SERIES_CORE	character	CD005	VR005	CML004	CAST_QIHAI	RELSP01;RELSP03	ORG_DAIGE	docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C01/C01-机体人物分支状态账.tsv;docs/superpowers/specs/剧情梗概/V35.9/rebuild/handoff/C01-v3.1创作基线与C02继承包-v2.md	成熟改革者、远程封存官、后续共同监督与感情主线	A级始终保留完整模型	active	C01-C02默认远程，C03才实体到场
+CM_BAIYUAN	N_BAIYUAN	A_SERIES_CORE	character	CD011	VR011	CML011	CAST_BAIYUAN	RELSP02;RELSP03	CONCEPT_BAIYUAN_L1_PREVIS	docs/superpowers/specs/data/canon/entities.tsv	创作者、预演组织者、未来分支承受者与感情主线	A级始终保留完整模型	active	C02先以作品痕迹进入，并在C03前肉身接触主角团；精确话序只读当前已准入的章级方案
+CM_TANGJIAO	CH_TANGJIAO	B_RECURRING	character	CD003	VR003	CML003	CAST_TANG_DOU		MECHA_BRAVE_FIST_PROTOTYPE;WCT_R07_BRAVERY_MODEL	docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C01/C01-机体人物分支状态账.tsv	模型修复、手作生态、文化争论与维修间关系	第二次承担长期后果时必须保持B级	active	不能被缩成修理按钮或金句工匠
+CM_DOUDENG	CH001	B_RECURRING	character	CD002	VR002	CML002	CAST_TANG_DOU		V353U001	docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C01/C01-机体人物分支状态账.tsv	馆守Z整备、安全判断、继承者与维修间关系	第二次承担长期后果时必须保持B级	active	C02必须保留主动作用，不能因无个人主题章而消失
+CM_OLD_GUARDIAN	CH002	B_RECURRING	character_machine_soul	CD004	VR004	CML007			V353U001	docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C01/C01-机体人物分支状态账.tsv	馆守Z机魂人格、展馆日常与老派守护者	B级机魂模型与机体状态联动	active	导览终端、广播和巨体是同一主体的不同端口
+CM_CURATOR	CH_CURATOR	B_RECURRING	absent_character	CD006	VR006				MECHA_WANJI_MOBILE_CHASSIS	docs/superpowers/specs/data/canon/entities.tsv	缺席馆长、纪存来历和万机馆旧责任	B级；每次新增录音都需更新知识边界	active	当前只通过录音、痕迹和未完成事务存在
+CM_XIAOMAN	CH_XIAOMAN	B_RECURRING	child_character	CD008	VR008	CML005	CAST_CHILDREN			docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C01/C01-机体人物分支状态账.tsv	普通观众、成长与文化继承	B级儿童边界长期保留	active	不默认随舰或进入危险战场
+CM_ACHENG	CH005B	B_RECURRING	child_character	CD009	VR009	CML006	CAST_CHILDREN			docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C01/C01-机体人物分支状态账.tsv	留言整理、观察与普通观众	B级儿童边界长期保留	active	不默认随舰或进入危险战场
+CM_LUHENG	CH_LUHENG	A_SERIES_CORE	character	CD010	VR010	CML010	CAST_LU_ARK		CH_FANGZHOU_T;CH057	docs/superpowers/specs/data/canon/entities.tsv	现实工程师、机器路线与方舟T关系主线	A级，但正式登场前只可出现在合法远程协作、工程痕迹或提及中	active	C02建立远程工程合作，不远程控制实机；C03才肉身正式登场
+CM_FANGZHOU_T	CH_FANGZHOU_T	B_RECURRING	character_ai	CD015	VR015	CML014	CAST_LU_ARK		CH_LUHENG	docs/superpowers/specs/data/canon/entities.tsv	深空迟到通信、人机亲密与误译线	正式人格化前保持B级候选切片	active	C01-C03只有缓存或无人格探测，不等于本人
+CM_HAOSI	CH036	B_RECURRING	character	CD017	VR017	CML009	CAST_HAO_JIN		MECHA_BRAVE_FIST_PROTOTYPE;V353U024	docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C01/C01-机体人物分支状态账.tsv	勇者驾驶员、企业生态、热血与拒绝批准	B级长期主力	active	C02是否到场由章选案决定，但必须继承C01企业回收状态
+CM_JINZHANG	CH037	B_RECURRING	character_ai				CAST_HAO_JIN		CH036;V353U024	docs/superpowers/specs/data/canon/entities.tsv	勇者AI与批准或拒绝主题	正式独立出场前建立完整小传与声线	model_gap	当前实体资料与长线可用，人物小传和声线待补
+CM_HUAI	N_HUAI	B_RECURRING	character	CD014	VR014	CML012	CAST_HUAI			docs/superpowers/specs/data/canon/entities.tsv	原典守护、粉丝文化与多版本解释	B级候选角色，正式章前复核	active	当前只允许按正式登场边界预显影
+CM_CHIGANG	N_CHIGANG	B_RECURRING	character	CD013	VR013	CML013	CAST_CHI_LIGE			docs/superpowers/specs/data/canon/entities.tsv	热血、撤退伦理和战争线	B级候选角色，正式章前复核	active	C05前不抢开局主线
+CM_HAN_SUA	CH077	C_CHAPTER	character			CML102				docs/superpowers/specs/data/canon/entities.tsv	百相驾驶者、通用身体负责人和军工外线	若进入C04或C05正式方案则晋级B	model_gap	需在重启C04前补小传与声线；当前不进入C02
+CM_SHEN_LI	CH080	C_CHAPTER	character			CML115				docs/superpowers/specs/data/canon/entities.tsv	战装局长期标准化对手	若跨两章行动则晋级B	model_gap	需在重启C05前补小传与声线；当前不进入C02
+CM_IMANI	CH081	C_CHAPTER	character			CML126				docs/superpowers/specs/data/canon/entities.tsv	标准导航受益者与军方内部改革声音	若跨两章行动则晋级B	model_gap	需在重启C05前补小传与声线；当前不进入C02
+CM_MIRA	CH_MIRA_SERRAN	C_CHAPTER	character_pilot			CML119				docs/superpowers/specs/data/canon/entities.tsv	共鸣驾驶员、米拉与艾达未竟关系	若C04正式采用则晋级B	model_gap	当前不进入C02
+CM_ADA	CH_ADA_ROSSI	C_CHAPTER	character_pilot			CML120				docs/superpowers/specs/data/canon/entities.tsv	自选人格、记忆选择与共鸣驾驶员	若C04正式采用则晋级B	model_gap	当前不进入C02
+CM_ZHAO_MEI	CH_ZHAO_MEI	C_CHAPTER	character	CD018	VR018				V353U071	docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C02/C02-章级预生产模型.md	C02合作社组织者、唐胶过去与现实母亲故事承载者	若跨章持续经营地方回援网则晋级B	active	她会组织会的人，不是什么都会修的母亲工程师
+CM_JIAOJIA_WANG	CH_JIAOJIA_WANG	C_CHAPTER	character	CD019	VR019				MECHA_C02_COMPLETE_KING;ORG_ZAYU_PORT	docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C02/C02-完整剧情总纲.md	C02商业对手、冷门流通与稀缺炒作的同一人	后续若保留杂鱼港发行合作则晋级B	active	不是平台AI或索引分身；不因C02一次选择彻底洗白

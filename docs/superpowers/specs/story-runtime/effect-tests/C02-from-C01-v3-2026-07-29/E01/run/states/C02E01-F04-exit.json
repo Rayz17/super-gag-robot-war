@@ -1,0 +1,123 @@
+{
+  "character_states": [
+    {
+      "desire_or_emotion": "要让万机馆得到救命转子，也让木桶街保有安全停机和选择交换方式的现实时间。",
+      "entity_id": "CH_JICUN",
+      "relationship_delta": "主动提出诊断、运输与护航交换，组织无牌一号、货柜领袖和馆守Z分夺三处物流节点；不等待七海授权，也不夺取玩家或机体的操纵。"
+    },
+    {
+      "desire_or_emotion": "停权后仍选择揭示商品回收如何借真实所有权与维护信用越过原使用者的保护期。",
+      "entity_id": "CH_QIHAI",
+      "relationship_delta": "向纪存提供只有她能识别的回收链判断但不授权行动；主动公开编号与触发记录，因此失去内部复核捷径。"
+    },
+    {
+      "desire_or_emotion": "接受公开维修教学带来市场升值与围观风险，仍坚持教学和测量不应被解释成破坏。",
+      "entity_id": "CH_TANGJIAO",
+      "relationship_delta": "把试制记录交给木桶街并承担引来关注的后果，支持纪存先恢复街区的一天时间。"
+    },
+    {
+      "desire_or_emotion": "让夺路行动不损伤馆守Z，也不让仍在公共运行的转子提前进入危险吊运。",
+      "entity_id": "CH001",
+      "relationship_delta": "确认馆守Z只用黄色巡展臂托链、左手转动绞盘，保留固定索和下一阶段的安全处置空间。"
+    }
+  ],
+  "context_key": "54cc061d0f0b411be2ba7b343df88f95f1958b905c55cfc03dfb508468423f9b",
+  "draft_sha256": "fde4bf1724921af3d2fffbfdab32ecb943687aa167574a27c7444733a70bd096",
+  "entity_states": [
+    {
+      "controller": "玩家经木桶街公共竞技场正式开放的临时挑战席操纵；低权限竞赛AI维持机体并选择兼容模块；纪存仅进行战术调度",
+      "entity_id": "V353U071",
+      "location": "木桶街外环高架第二座转辙台",
+      "physical_state": "八米全尺寸模块竞赛实机；由竞技场与参赛者共同维护、无固定驾驶员；已换装AI主动接受的全尺寸攀轨模块并完成首次可控，无可见损伤；缩尺模型仅提供改件同构数据"
+    },
+    {
+      "controller": "火种货柜领袖独立载具人格",
+      "entity_id": "V353U043",
+      "location": "木桶街外环空置支线",
+      "physical_state": "保持全尺寸作业变形，以展开货柜骨架和轨道夹截住平台竞价装卸队，并先放行街区料车；无可见损伤"
+    },
+    {
+      "controller": "旧守护者自主行动，兜灯负责安全判断与制动条件",
+      "entity_id": "V353U001",
+      "location": "木桶街岸侧绞盘",
+      "physical_state": "保持原装右前臂缺失、黄色非拳击型巡展臂和不能飞的限制；黄色臂托链、左手控制绞盘；无新增损伤"
+    },
+    {
+      "controller": "自动系统维持低速舰体状态，纪存调用地图与通讯进行总体调度",
+      "entity_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "location": "木桶街外港旧泊位",
+      "physical_state": "保持百米级低速巡展舰形态和主循环不足状态；未变形、未暴走、未新增火力"
+    },
+    {
+      "controller": "资产所有权属于平台；木桶街作为长期低租借用方继续运行公共散热，并已恢复一天优先承接、停机置换和现场路线控制",
+      "entity_id": "MECHA_WANJI_MAIN_CIRCULATION_ROTOR",
+      "location": "木桶街全尺寸工房街的十二轴运输架",
+      "physical_state": "六米全尺寸工业总成继续低速运行并连接公共管线；全尺寸适配路径已证明；尚未拆管、吊起、运输或安装，平台保护装置和固定索完整"
+    }
+  ],
+  "facts_established": [
+    {
+      "evidence_in_draft": "无牌一号扳回两座转辙台，火种货柜领袖截住装卸队，馆守Z关闭岸侧入口；领班再次按下本地急停后，平台提货标记转灰，工房终端重新显示完整的一天。",
+      "fact_id": "C02E01.LOGISTICS_CONTROL_TAKEN",
+      "statement": "纪存组织三机夺回十二轴运输架、两座转辙台和岸侧绞盘的现场控制，迫使平台停止即时提货，恢复木桶街原有的一天优先承接与停机置换时间。"
+    },
+    {
+      "evidence_in_draft": "领班擦净运输架侧面的旧租牌，玩家可见平台所有权、长期借用关系及日轮标记；街区承认平台可收回资产，争议集中在被划掉的一天。",
+      "fact_id": "C02E01.PLATFORM_OWNERSHIP_AND_STREET_WINDOW_ESTABLISHED",
+      "statement": "六米转子退役时已由平台买下，木桶街长期低租借用，平台承担十二轴运输架和远程维护；平台找到买家后可收回，但街区拥有一天的优先承接、停机和置换期。"
+    },
+    {
+      "evidence_in_draft": "旧货屏连续抬价并限定平台货运；日轮被远程保护提示划掉，本地急停首次失效，装卸机随后占领物流路线。",
+      "fact_id": "C02E01.PLATFORM_PROTECTION_ABUSE_EXPOSED",
+      "statement": "公开诊断和搜索热度让转子升值，平台回收链把公开教学、围观测量和试验记录解释为聚众干预，滥用远程保护条款跳过木桶街的一天窗口并先行锁架提货。"
+    },
+    {
+      "evidence_in_draft": "纪存没有参与即时竞价，也没有让街区出售平台资产，而是把万机馆排在街区优先权之后，随后标出运输架、两座转辙台及绞盘，统筹三机夺路。",
+      "fact_id": "C02E01.JICUN_EXCHANGE_AND_ROUTE_STRATEGY",
+      "statement": "纪存尊重木桶街优先承接顺序，提出在街区选择置换时由万机馆运入替代设备，再以公共诊断、重载运输和跨城护航向平台承接转子；他主动把争夺目标从转子本体改为恢复街区的一天选择时间。"
+    },
+    {
+      "evidence_in_draft": "七海说明平台所有权和维护投入为何让保护系统默认可信，指出回收链如何越过停机期；她拒绝授权现场行动，只公开编号与触发记录。",
+      "fact_id": "C02E01.QIHAI_RECOVERY_CHAIN_IDENTIFIED",
+      "statement": "七海只从远端识别商品回收链及其保护触发方式，明确没有停机或现场授权权力；她公开去向编号并失去内部复核捷径。"
+    },
+    {
+      "evidence_in_draft": "竞技场维护者在看懂夺回停机期的方案后开放标准挑战席；玩家操纵无牌一号攀轨和扳道岔，AI完成模块选择，纪存仅提供目标与时机。",
+      "fact_id": "C02E01.WUPAI_ONE_ARENA_AUTHORIZED_FIRST_CONTROL",
+      "statement": "木桶街公共竞技场和在场维护者主动开放一次临时实机挑战，玩家取得八米全尺寸竞赛实机无牌一号的首次操纵权；低权限AI主动接受攀轨模块并拒绝炫技配装，纪存只负责战场统筹。"
+    }
+  ],
+  "fragment_id": "C02E01-F04",
+  "next_trigger": "木桶街已恢复一天停机与选择时间并控制运输路线，但平台仍拥有转子且保留远程保护与装卸反制能力；下一阶段只有在处理公共管线和转子本体固定时才能决定巨环能否安全离架。",
+  "open_threads": [
+    {
+      "note": "平台仍合法拥有六米转子，竞价没有取消；恢复的一天只保证木桶街优先承接、停机和置换时间，不决定最终归属。",
+      "status": "open",
+      "thread_id": "PLATFORM_OWNERSHIP_AND_BIDDING_ACTIVE"
+    },
+    {
+      "note": "六米转子仍连接公共散热管线；替代设备、拆管、吊运和万机馆安装均未执行。",
+      "status": "open",
+      "thread_id": "ROTOR_PUBLIC_COOLING_AND_TRANSFER"
+    },
+    {
+      "note": "竞价装卸机被截在支线但仍保持执行能力；运输架保护装置与固定索完整，平台仍可围绕转子本体采取反制。",
+      "status": "open",
+      "thread_id": "PLATFORM_PHYSICAL_COUNTERACTION"
+    },
+    {
+      "note": "玩家只获得本次由公共竞技场开放的临时实机挑战权；无牌一号后续归属、运输和正式构筑席尚未解决。",
+      "status": "open",
+      "thread_id": "WUPAI_ONE_TEMPORARY_CHALLENGE"
+    },
+    {
+      "note": "七海公开回收链编号并失去内部复核捷径，她尚未实体到场，也没有取得新的公务权限。",
+      "status": "open",
+      "thread_id": "QIHAI_PUBLIC_STANCE_EXPOSED"
+    }
+  ],
+  "review_sha256": "314a29338455555391aa981c6b0a090d50d3b986faf6fabeba2258d2b8178bbf",
+  "schema_version": 1,
+  "status": "committed",
+  "unresolved_logic_risks": []
+}

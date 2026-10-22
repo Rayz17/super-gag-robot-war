@@ -1,0 +1,197 @@
+{
+  "cases": [
+    {
+      "preset": "balanced",
+      "repeat_matches": true,
+      "round_one_bridge_damage_events": [
+        {
+          "blocked": 0,
+          "board": "B",
+          "cell": "(2, 3)",
+          "damage": 1,
+          "reason": "命中",
+          "target": "bridge",
+          "tick": 6,
+          "type": "damage"
+        }
+      ],
+      "round_one_losses": {
+        "bridge": 1,
+        "car": 0,
+        "power": 1
+      },
+      "round_two_actual_spawned": {
+        "A": 2,
+        "B": 2,
+        "C": 2
+      },
+      "round_two_announced_by_board": {
+        "A": 2,
+        "B": 2,
+        "C": 2
+      },
+      "round_two_forecast_losses": {
+        "bridge": 3,
+        "car": 0,
+        "power": 1
+      }
+    },
+    {
+      "preset": "engineering",
+      "repeat_matches": true,
+      "round_one_bridge_damage_events": [
+        {
+          "blocked": 0,
+          "board": "B",
+          "cell": "(2, 3)",
+          "damage": 1,
+          "reason": "命中",
+          "target": "bridge",
+          "tick": 6,
+          "type": "damage"
+        }
+      ],
+      "round_one_losses": {
+        "bridge": 1,
+        "car": 0,
+        "power": 1
+      },
+      "round_two_actual_spawned": {
+        "A": 2,
+        "B": 2,
+        "C": 2
+      },
+      "round_two_announced_by_board": {
+        "A": 2,
+        "B": 2,
+        "C": 2
+      },
+      "round_two_forecast_losses": {
+        "bridge": 3,
+        "car": 0,
+        "power": 1
+      }
+    },
+    {
+      "minimum_cost_to_operate_power": 4,
+      "nearest_operating_cell": "(4, 1)",
+      "terrain_counts": {
+        "A": {
+          "cells": 80,
+          "kinds": {
+            "electrical": 4,
+            "floor": 1,
+            "oil": 3,
+            "pit": 2,
+            "rubble": 4,
+            "wall": 4
+          },
+          "nonfloor_authored_tiles": 17
+        },
+        "B": {
+          "cells": 90,
+          "kinds": {
+            "deep_water": 11,
+            "rubble": 4,
+            "shallow_water": 4,
+            "wall": 3
+          },
+          "nonfloor_authored_tiles": 22
+        },
+        "C": {
+          "cells": 96,
+          "kinds": {
+            "conveyor": 6,
+            "oil": 4,
+            "pit": 4,
+            "rubble": 3,
+            "wall": 4
+          },
+          "nonfloor_authored_tiles": 21
+        }
+      },
+      "turn_one_power_operation_ok": true,
+      "white_initial_move": 5
+    },
+    {
+      "after_tug_lift_car_steps": 2,
+      "after_tug_lift_wait_reasons": [
+        {
+          "board": "C",
+          "reason": "撤离线路受阻 · (4, 3)",
+          "tick": 23,
+          "type": "car_wait"
+        }
+      ],
+      "crane_moves_then_lifts_tug_ok": true,
+      "power_on_car_steps": 0,
+      "power_on_wait_reasons": [
+        {
+          "board": "C",
+          "reason": "撤离车被工机锁住 · 推离、击毁或请七海撤销旧令",
+          "tick": 20,
+          "type": "car_wait"
+        }
+      ]
+    },
+    {
+      "missile_damage_events": [
+        {
+          "blocked": 0,
+          "board": "A",
+          "cell": "(5, 4)",
+          "damage": 2,
+          "reason": "命中",
+          "target": "center",
+          "type": "damage"
+        },
+        {
+          "blocked": 0,
+          "board": "A",
+          "cell": "(5, 3)",
+          "damage": 2,
+          "reason": "命中",
+          "target": "up",
+          "type": "damage"
+        },
+        {
+          "blocked": 0,
+          "board": "A",
+          "cell": "(6, 4)",
+          "damage": 2,
+          "reason": "命中",
+          "target": "right",
+          "type": "damage"
+        },
+        {
+          "blocked": 0,
+          "board": "A",
+          "cell": "(5, 5)",
+          "damage": 2,
+          "reason": "命中",
+          "target": "down",
+          "type": "damage"
+        },
+        {
+          "blocked": 0,
+          "board": "A",
+          "cell": "(4, 4)",
+          "damage": 2,
+          "reason": "命中",
+          "target": "left",
+          "type": "damage"
+        }
+      ],
+      "missile_legacy_tip": "中心 2 伤害；四邻格只外推、不受弹片伤。两拍飞行，友军也会被推。",
+      "missile_push_events": []
+    },
+    {
+      "cross_intersects_multiple_occupied_cells": true,
+      "damage_event_count": 1,
+      "large_target_footprint": "(2, 2)",
+      "remaining_hp": 8
+    }
+  ],
+  "checks_passed": true,
+  "kind": "read_only_rule_probe"
+}

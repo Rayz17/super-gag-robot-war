@@ -1,0 +1,77 @@
+{
+  "assembled_context_sha256": "1386f7ee6fe615c986633b85c449e00add069d89319f3dca890bf2a51c9a212e",
+  "bytes": 86088,
+  "chapter": "C02",
+  "chars": 36835,
+  "context_key": "1386f7ee6fe615c986633b85c449e00add069d89319f3dca890bf2a51c9a212e",
+  "continuity_receipt_hashes": {},
+  "entry_receipt_hashes": {
+    "C02E02-F02": "bf7f1d95b3f11c0635162fb1e036dc10d9d9cf80f157e4543b861853c648894e"
+  },
+  "episode": "C02E02",
+  "fragment_card_sha256": "f41bbeafea697bf7dda446a63f1c8b91cbfe0b91fab678d47cad0d9a1a7a765b",
+  "fragment_id": "C02E02-F03",
+  "path": "docs/superpowers/specs/story-runtime/effect-tests/C02-from-C01-v3-2026-07-29/E02/run/contexts/C02E02-F03-1386f7ee6fe6.md",
+  "prior_prose_tail_sha256": "5cf6d1bc84e7d3c3b7ec25716a483e4d3996b409b5270d199f66dd16a871fe6c",
+  "retrieval_corpus_hashes": {
+    "docs/superpowers/specs/story-runtime/generated/runtime_corpus.jsonl": "38b98d37aa3e787721306fb4aae515a9c6ecd3f8749fe419d90594f5efe438e4",
+    "docs/superpowers/specs/story-runtime/generated/support/support_runtime_corpus.jsonl": "c1733f67e8fa331008d733ed3269f8948b15f96c30570ee8c70c31e34bc3da5d"
+  },
+  "retrieval_trace": [
+    {
+      "explicit_seed": true,
+      "layer": "current_canon",
+      "node_key": "entity:N_BAIYUAN",
+      "record_id": "N_BAIYUAN",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv",
+      "title": "白鸢"
+    },
+    {
+      "explicit_seed": true,
+      "layer": "current_canon",
+      "node_key": "scene:V359-C02E02-CREATIVE",
+      "record_id": "V359-C02E02-CREATIVE",
+      "source": "docs/superpowers/specs/data/canon/scenes.tsv",
+      "title": "同模不是同一个人"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "candidate_support",
+      "node_key": "support:chapter:C02",
+      "record_id": "C02",
+      "source": "docs/superpowers/specs/data/story/v35_series_structure_master_board_v1.tsv",
+      "title": "木桶街，万机初开"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "candidate_support",
+      "node_key": "support:core_cast:CAST_BAIYUAN",
+      "record_id": "CAST_BAIYUAN",
+      "source": "docs/superpowers/specs/data/story/v35_series_structure_core_cast_lifecycle_v2.tsv",
+      "title": "白鸢 / Evelyn Voss"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "current_canon",
+      "node_key": "scene:V359-C02E04-CREATIVE",
+      "record_id": "V359-C02E04-CREATIVE",
+      "source": "docs/superpowers/specs/剧情梗概/V35-C02四话拓扑恢复与Current-Canon迁移-2026-07-26.md",
+      "title": "万机初开"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "candidate_support",
+      "node_key": "support:relationship:RELSP03",
+      "record_id": "RELSP03",
+      "source": "docs/superpowers/specs/data/story/v35_series_relationship_edge_spine_v1.tsv",
+      "title": "七海—白鸢"
+    }
+  ],
+  "revision_note_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "schema_version": 1,
+  "stable_prefix_sha256": "15a5d99738adcdbd2038479dd6b17ec0a7d0adc421659baccd3069e709a5d99e",
+  "target_output_chars": {
+    "max": 5600,
+    "min": 2800
+  }
+}

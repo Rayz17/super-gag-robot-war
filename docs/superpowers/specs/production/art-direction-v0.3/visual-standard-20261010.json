@@ -1,0 +1,162 @@
+{
+  "id": "KINETIC_CEL_20261010",
+  "version": 6,
+  "authority": "working",
+  "scope": "project_visual_language_and_gongwu_stage_package",
+  "source": "docs/superpowers/specs/work-packages/2026-10-02-chao-gag-linked-operation-candidate/v5完整整改计划-20261008/给Astra的视觉总参考.html",
+  "source_sha256": "dc6fd4c1f24911662637c87cd35bbb329569fbdb06e34ebcaf7b7307142c378e",
+  "tactics_target": "docs/superpowers/specs/work-packages/2026-10-02-chao-gag-linked-operation-candidate/v5完整整改计划-20261008/target-look/11-tactics-user-accepted.png",
+  "target_sha256": "a51f5ecf55e39f50e014d21d690eabe49a9477738fa8b5608c46f8389b2356f1",
+  "presentation_modes": {
+    "TACTICS": "KINETIC_CEL, hero paint, clear board; no poster graphics",
+    "IMPACT": "KINETIC_CEL plus bounded archive offset and Memphis geometry"
+  },
+  "palette_provenance": "Engineering swatches derived from the approved visual reference; source does not specify hex values.",
+  "zones": {
+    "A": [
+      "7d9689",
+      "c8bea1",
+      "c43c2c",
+      "274654"
+    ],
+    "B": [
+      "608795",
+      "b4bbae",
+      "cd9850",
+      "244d69"
+    ],
+    "C": [
+      "818ba1",
+      "c1b39b",
+      "c94c35",
+      "34465f"
+    ]
+  },
+  "environment": {
+    "A": {
+      "steel": "3a7a76",
+      "recess": "243c43",
+      "glass": "285567",
+      "roof": "4a8980",
+      "hardware": "ba995e",
+      "marking": "cfc4a8"
+    },
+    "B": {
+      "steel": "387c96",
+      "recess": "233c4c",
+      "glass": "2c5b72",
+      "roof": "548da0",
+      "hardware": "c29350",
+      "marking": "c6c5a4"
+    },
+    "C": {
+      "steel": "54778f",
+      "recess": "263b47",
+      "glass": "2c5369",
+      "roof": "546c8d",
+      "hardware": "c58956",
+      "marking": "ccb798"
+    }
+  },
+  "kit": {
+    "A": {
+      "paint": "3a7a76",
+      "mineral": "aaa38c",
+      "orange": "c43c2c",
+      "facade": "ab9c7d",
+      "trim": "b8ae90"
+    },
+    "B": {
+      "paint": "3a7c98",
+      "mineral": "95a6a4",
+      "orange": "ce9952",
+      "facade": "9daea9",
+      "trim": "abb8aa"
+    },
+    "C": {
+      "paint": "496d8b",
+      "mineral": "9d99ac",
+      "orange": "cb5038",
+      "facade": "b39c88",
+      "trim": "b5a58f"
+    }
+  },
+  "kit_shared": {
+    "ink": "233742",
+    "copper": "b1804d",
+    "ceramic": "bebda8",
+    "violet": "516278",
+    "steel": "537987",
+    "glass": "214c62",
+    "lamp": "9abeb0",
+    "warning": "bd9d59",
+    "interior": "d4ad61",
+    "soot": "28333e"
+  },
+  "ui": {
+    "panel": "142b39",
+    "header": "102635",
+    "command": "1c3945",
+    "hover": "294d55",
+    "selected": "316469",
+    "pressed": "173f46",
+    "disabled": "29343b",
+    "primary": "ab3c30",
+    "danger": "853b35",
+    "border": "a18452",
+    "edge": "d5b267",
+    "text": "eadbbc",
+    "muted": "abc1c0",
+    "cyan": "72d0c8",
+    "gold": "e7b954",
+    "red": "eb735d"
+  },
+  "accents": {
+    "coral": "e25344",
+    "teal": "299b9c",
+    "lemon": "ecc74a",
+    "cobalt": "2858a6"
+  },
+  "readability": {
+    "max_shadow_bands": 2,
+    "environment_ink_pixels": 0.58,
+    "unit_ink_pixels": 0.8,
+    "idle_ui_mode": "contextual",
+    "damage_states": [
+      "intact",
+      "broken",
+      "destroyed"
+    ]
+  },
+  "implementation_notes": [
+    "Colour values remain an implementation interpretation of the visual reference, not new Canon facts.",
+    "Surface texture is illustrated rather than photographic; material contrast must survive the normal tactical camera.",
+    "Three working yards keep different colour weights within the same industrial cel language."
+  ],
+  "lighting": {
+    "ambient": 0.34,
+    "key": 0.92,
+    "fill": 0.14,
+    "color": "f0e5ce",
+    "ambient_color": "c5c6bb",
+    "fill_color": "adbfc4"
+  },
+  "runtime_fit_note": "2026-10-11: concrete and facade paint are distinct mid-value warm masses under neutral cel lighting. City service buildings now follow each caisson height and visibility; the back apron has physical UV office architecture. Same-camera comparison is required. No user acceptance implied.",
+  "tactical_unit_scale": {
+    "source": "2026-10-12 user decision: shared tactical size tiers for allies, enemies and neutral units",
+    "tiers": [
+      "small_single_cell",
+      "standard_single_cell",
+      "large_2x2",
+      "huge_3x3",
+      "scenery_fragment"
+    ],
+    "faction_independent": true,
+    "lore_height_is_display_scale": false,
+    "micro_objects": "People, machine dogs and explicitly small tools use approximately one quarter of a cell in plan area (half a cell per side).",
+    "exceptions": "Explicit story / boss / special tool proportions retain their authored ratios.",
+    "shape": "Keep each body proportion and silhouette; low bodies and long weapons must not miniaturise the whole unit.",
+    "rule_boundary": "Display classes do not alter rule footprints, mass, clearance, movement or damage.",
+    "runtime_parameters": "Current task specifications and unit_scale.gd; not project-wide metre ratios."
+  }
+}

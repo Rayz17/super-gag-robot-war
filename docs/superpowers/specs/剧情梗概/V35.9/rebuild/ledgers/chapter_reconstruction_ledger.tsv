@@ -1,0 +1,13 @@
+chapter_id	treatment	target_episode_count	representative_route	chapter_fingerprint	main_peak	status	blocking_conflicts	next_action
+C01	L1_DIRECT_CREATIVE	4	LIFE_PHYSICAL	闭馆灾难片与巨构逃亡	万机馆从城市中起立	accepted_creative_working_baseline		以C01 v3.1与迁移v2为创作事实源；Runtime独立迁移
+C02	L1_DIRECT_CREATIVE	4	LIFE_PHYSICAL	旧件市动作喜剧与机器人拳击	四重涂同帧变招与货柜领袖起身	accepted_creative_working_baseline		以C02 v2和C03继承状态为事实源；三个作者槽承载四话
+C03	L1_DIRECT_CREATIVE	4	LIFE_PHYSICAL	城市职业机巨构追击与勇者初合体	百机共同托城、社勇王完成许可合体	accepted_creative_working_baseline		C03迁移v2与C04继承包已生效；Runtime独立迁移
+C04	L1_DIRECT_CREATIVE_ROUTE_DELTA	5	BODY_FORGE	身体科幻战争、原型工房与天空巨构战	九回合吊架夺回、百相十一分钟主角机体验、十二切片非致命回收与人格架封存终战	creative_rewrite_candidate_v4	CW251;CW255;CW262;CW263	统一作者结构重写、四类独立审稿、制作附录、分支、状态账、Canon与图谱已对齐；等待用户复读，不自动升格Working Baseline
+C05	L3_REBUILD	6	STARFIRE_THREE_ASPECT_BRAVE_ELECTROMAGNETIC	机器人文化嘉年华	开放式万机接力	blocked_by_c04_v4_user_review	H04	等待C04 v4 Reader用户确认；只可读取v4候选继承包做准备，不得直写
+C06	L2_STORY_PRODUCTION_PATCH	5	COMMON	特摄狂欢转宇宙战争	完全版挡炮后分队	pending		等待C05前缀通过
+C07	L2_ROUTE_ASSEMBLE	4	ACE_MEDICAL	舰队撤退战争群像	飞拳桥与关系破裂	pending		等待C06前缀通过
+C08	L3_REBUILD	5	LOYALTY_THEN_ELECTROMAGNETIC	垂直城政治惊险	七海焚毁根证书	pending		等待C07前缀通过
+C09	L1_ASSEMBLE_PEAK_PATCH	5	WORKSHOP_BODY_PAYOFF	普通生活转记忆灾难	潮重大缺席	pending		等待C08前缀通过
+C10	L2_ROUTE_RELATION_PATCH	4	PUBLIC_TRIAL	公审机甲惊悚	反历史动作卡死死亡校正	pending	H03	等待C09前缀通过
+C11	L3_REBUILD	6	PUBLIC_TRUST	世界博览会与新生命相遇	公共信托与真正开馆	pending	H04;H05	等待C10前缀通过
+C12	L3_REBUILD_LOCK_S08_S10	9	LEGAL_REFORM	围城与母舰巨人悲剧	WBM004_TO_WBM005	pending	H05;H06;H07	等待C11前缀通过

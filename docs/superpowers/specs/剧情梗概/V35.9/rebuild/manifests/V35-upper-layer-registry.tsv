@@ -1,0 +1,5 @@
+layer_id	layer_name	status	authority	episode_ceiling	artifact_paths	depends_on	open_gap	next_gate	notes
+L1	主题与体验宪章	passed	working		docs/superpowers/specs/剧情梗概/V35主题玩家幻想与作品体验宪章-2026-07-18.md			maintain	回答玩家为何喜欢、亲手做什么以及燃爽笑色痛惊的作品合同
+L2	定位与全剧总发动机	passed	working		docs/superpowers/specs/剧情梗概/V35故事定位世界冲突与全剧总发动机-2026-07-18.md	L1		maintain	回答全剧为何持续发生、万机馆为何旅行及终局条件
+H0	世界机制与Canon横向底盘	passed_with_open_candidates	working		docs/superpowers/specs/剧情梗概/V35世界机制与创作接口设定基线-2026-07-19.md;docs/superpowers/specs/data/canon/authority_manifest.tsv	L1;L2	具体章点命运与候选机制仍由下游裁决	canon_authority	不占创作层编号，支撑所有层并允许受更好剧情迁移
+L3	全剧结构母盘	passed	working	87	docs/superpowers/specs/剧情梗概/V35全剧结构母盘-候选v1-2026-07-20.md;docs/superpowers/specs/剧情梗概/V35全剧长线交叉校验板-结构母盘v1-2026-07-20.md;docs/superpowers/specs/剧情梗概/V35结构再设计/V35-G5-02定向融合正式迁移回执-v1.md;docs/superpowers/specs/剧情梗概/V35结构再设计/V35-C02融合D案审定与五话容量迁移-2026-08-05.md	L1;L2;H0	C02融合D案已选定并进入五话L4重建；C04/C05旧L4/L5因上游重构失效；其余章逐章裁决	chapter_story_chain	G5-02定向融合Working：A母结构+B因果接力+C双后代深轴；C02按用户认可D案扩为五话，全剧上界八十七话；索琳、公共INDEX、远程窗口和索引天使已拆义

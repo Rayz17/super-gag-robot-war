@@ -1,0 +1,437 @@
+"""Hand-authored high-detail A9.1-A3 producer visual gate.
+
+This is a new hard-surface source, not a subdivision of the primitive gate.
+Only Guardian Z front/strict-side and BREAKER planning are rendered.
+"""
+
+from __future__ import annotations
+
+import math
+from pathlib import Path
+
+import bpy
+from mathutils import Vector
+
+
+SCRIPT = Path(__file__).resolve()
+HERE = SCRIPT.parents[2]
+OUT = HERE / "review/internal-gate/blender-highdetail"
+OUT.mkdir(parents=True, exist_ok=True)
+
+
+PALETTE = {
+    "ink": "07131f", "navy0": "0a2038", "navy1": "123e67", "navy2": "286d9a",
+    "blue_hi": "5a9cbd", "red0": "8d2430", "red1": "d64036", "red2": "ef5a45",
+    "gold0": "9b651a", "gold1": "e3ad35", "gold2": "f4d16b", "silver0": "7c8990",
+    "silver1": "d7d9d2", "ivory": "f1ead8", "black": "0a1118",
+    "bx0": "0b1519", "bx1": "17262b", "bx2": "2b3c40", "bx3": "536467",
+    "bx4": "778385", "bx_seam": "111b1e", "bx_red": "e33b35",
+}
+
+
+def rgba(value: str) -> tuple[float, float, float, float]:
+    value = value.lstrip("#")
+    return tuple(int(value[i:i + 2], 16) / 255.0 for i in (0, 2, 4)) + (1.0,)
+
+
+def shade(c: tuple[float, float, float, float], f: float) -> tuple[float, float, float, float]:
+    return tuple(max(0.0, min(1.0, x * f)) for x in c[:3]) + (1.0,)
+
+
+def cel_mat(name: str, value: str) -> bpy.types.Material:
+    mat = bpy.data.materials.new(name)
+    mat.use_nodes = True
+    nodes = mat.node_tree.nodes
+    links = mat.node_tree.links
+    nodes.clear()
+    out = nodes.new("ShaderNodeOutputMaterial")
+    diff = nodes.new("ShaderNodeBsdfDiffuse")
+    to_rgb = nodes.new("ShaderNodeShaderToRGB")
+    ramp = nodes.new("ShaderNodeValToRGB")
+    emit = nodes.new("ShaderNodeEmission")
+    base = rgba(value)
+    diff.inputs["Color"].default_value = base
+    diff.inputs["Roughness"].default_value = 0.82
+    cr = ramp.color_ramp
+    cr.interpolation = "CONSTANT"
+    cr.elements[0].position = 0.34
+    cr.elements[0].color = shade(base, 0.38)
+    cr.elements[1].position = 0.72
+    cr.elements[1].color = base
+    mid = cr.elements.new(0.54)
+    mid.color = shade(base, 0.67)
+    emit.inputs["Strength"].default_value = 1.0
+    links.new(diff.outputs["BSDF"], to_rgb.inputs["Shader"])
+    links.new(to_rgb.outputs["Color"], ramp.inputs["Fac"])
+    links.new(ramp.outputs["Color"], emit.inputs["Color"])
+    links.new(emit.outputs["Emission"], out.inputs["Surface"])
+    return mat
+
+
+def reset() -> None:
+    bpy.ops.object.select_all(action="SELECT")
+    bpy.ops.object.delete(use_global=False)
+    for collection in tuple(bpy.data.collections):
+        if collection.name != "Collection":
+            bpy.data.collections.remove(collection)
+
+
+def collection(name: str) -> bpy.types.Collection:
+    c = bpy.data.collections.new(name)
+    bpy.context.scene.collection.children.link(c)
+    return c
+
+
+def relink(obj: bpy.types.Object, c: bpy.types.Collection) -> None:
+    for old in tuple(obj.users_collection):
+        old.objects.unlink(obj)
+    c.objects.link(obj)
+
+
+def group(name: str, root: bpy.types.Object, c: bpy.types.Collection) -> bpy.types.Object:
+    obj = bpy.data.objects.new(name, None)
+    obj.parent = root
+    c.objects.link(obj)
+    return obj
+
+
+def harden(obj: bpy.types.Object, width: float = 0.045) -> bpy.types.Object:
+    bevel = obj.modifiers.new("HAND_AUTHORED_EDGE_BREAK", "BEVEL")
+    bevel.width = width
+    bevel.segments = 2
+    bevel.affect = "EDGES"
+    return obj
+
+
+def box(name, size, loc, mat, parent, c, rot=(0, 0, 0), bevel=0.06):
+    bpy.ops.mesh.primitive_cube_add(location=loc, rotation=rot)
+    obj = bpy.context.object
+    obj.name = name
+    obj.scale = tuple(v / 2 for v in size)
+    bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
+    obj.data.materials.append(mat)
+    obj.parent = parent
+    relink(obj, c)
+    return harden(obj, min(bevel, min(size) * 0.16))
+
+
+def prism(name, points_xz, y_front, y_back, mat, parent, c, bevel=0.04):
+    n = len(points_xz)
+    verts = [(x, y_front, z) for x, z in points_xz] + [(x, y_back, z) for x, z in points_xz]
+    faces = [tuple(range(n - 1, -1, -1)), tuple(range(n, n * 2))]
+    for i in range(n):
+        j = (i + 1) % n
+        faces.append((i, n + i, n + j, j))
+    mesh = bpy.data.meshes.new(name + "_MESH")
+    mesh.from_pydata(verts, [], faces)
+    mesh.update()
+    obj = bpy.data.objects.new(name, mesh)
+    obj.data.materials.append(mat)
+    obj.parent = parent
+    c.objects.link(obj)
+    return harden(obj, bevel)
+
+
+def cyl(name, radius, depth, loc, mat, parent, c, rot=(0, 0, 0), vertices=24, bevel=0.035):
+    bpy.ops.mesh.primitive_cylinder_add(vertices=vertices, radius=radius, depth=depth, location=loc, rotation=rot)
+    obj = bpy.context.object
+    obj.name = name
+    obj.data.materials.append(mat)
+    obj.parent = parent
+    relink(obj, c)
+    return harden(obj, bevel)
+
+
+def torus(name, major, minor, loc, mat, parent, c, rot=(0, 0, 0)):
+    bpy.ops.mesh.primitive_torus_add(major_radius=major, minor_radius=minor, major_segments=32, minor_segments=8, location=loc, rotation=rot)
+    obj = bpy.context.object
+    obj.name = name
+    obj.data.materials.append(mat)
+    obj.parent = parent
+    relink(obj, c)
+    return obj
+
+
+def ellipsoid(name, loc, scale, mat, parent, c, rot=(0, 0, 0), subdivisions=3):
+    bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=subdivisions, radius=1, location=loc, rotation=rot)
+    obj = bpy.context.object
+    obj.name = name
+    obj.scale = scale
+    bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
+    obj.data.materials.append(mat)
+    obj.parent = parent
+    relink(obj, c)
+    return obj
+
+
+def beam(name, start, end, width, depth, mat, parent, c, bevel=0.04):
+    a, b = Vector(start), Vector(end)
+    d = b - a
+    obj = box(name, (width, depth, d.length), (a + b) / 2, mat, parent, c, bevel=bevel)
+    obj.rotation_mode = "QUATERNION"
+    obj.rotation_quaternion = Vector((0, 0, 1)).rotation_difference(d.normalized())
+    return obj
+
+
+def taper(name, start, end, r0, r1, mat, parent, c, vertices=8):
+    a, b = Vector(start), Vector(end)
+    d = b - a
+    bpy.ops.mesh.primitive_cone_add(vertices=vertices, radius1=r1, radius2=r0, depth=d.length, location=(a + b) / 2)
+    obj = bpy.context.object
+    obj.name = name
+    obj.rotation_mode = "QUATERNION"
+    obj.rotation_quaternion = Vector((0, 0, 1)).rotation_difference(d.normalized())
+    obj.data.materials.append(mat)
+    obj.parent = parent
+    relink(obj, c)
+    return harden(obj, 0.035)
+
+
+def guardian(m):
+    c = collection("HD_RIG_GUARDIAN_Z_V10X")
+    root = bpy.data.objects.new("HD_GUARDIAN_Z_RIG_ROOT", None)
+    root["stable_id"] = "CAND_C01E02_A91A3_GZ_V10X_HD_HAND_AUTHORED_V1"
+    root["source_policy"] = "new hand-authored armor; low-poly used only for dimensions/keypoints"
+    c.objects.link(root)
+    g = {n: group(n, root, c) for n in (
+        "HEAD", "CROWN", "CHEST", "SHOULDER_L", "SHOULDER_R", "ARM_L", "ARM_R",
+        "FOREARM_L", "FOREARM_R", "PELVIS", "LEG_L", "LEG_R", "INTEGRAL_REAR"
+    )}
+
+    # Feet, legs and pelvis: broad old-super-robot load path, not mannequin tubes.
+    for sign, s in ((-1, "L"), (1, "R")):
+        x = sign * 0.78
+        prism(f"foot_shell_{s}", ((x - .58, .12), (x + .58, .12), (x + .7, .48), (x + .42, .84), (x - .48, .84), (x - .66, .48)), -1.02, .65, m["navy1"], g[f"LEG_{s}"], c, .07)
+        prism(f"toe_armor_{s}", ((x - .5, .16), (x + .5, .16), (x + .54, .42), (x - .42, .48)), -1.16, -.78, m["navy2"], g[f"LEG_{s}"], c, .045)
+        box(f"toe_silver_{s}", (.42, .18, .18), (x, -1.22, .38), m["silver1"], g[f"LEG_{s}"], c, bevel=.035)
+        prism(f"shin_main_{s}", ((x - .5, .82), (x + .5, .82), (x + .45, 2.15), (x + .24, 2.4), (x - .36, 2.36), (x - .54, 2.08)), -.62, .58, m["navy1"], g[f"LEG_{s}"], c, .075)
+        prism(f"shin_face_{s}", ((x - .3, 1.02), (x + .3, 1.02), (x + .28, 2.08), (x, 2.25), (x - .3, 2.04)), -.79, -.6, m["navy2"], g[f"LEG_{s}"], c, .035)
+        box(f"shin_gold_key_{s}", (.1, .12, .55), (x + sign * .34, -.86, 1.55), m["gold1"], g[f"LEG_{s}"], c, bevel=.025)
+        cyl(f"knee_ring_{s}", .42, .3, (x, -.13, 2.42), m["black"], g[f"LEG_{s}"], c, (math.pi / 2, 0, 0), 20)
+        prism(f"knee_cap_{s}", ((x - .38, 2.26), (x + .38, 2.26), (x + .32, 2.72), (x, 2.86), (x - .34, 2.68)), -.55, -.18, m["navy0"], g[f"LEG_{s}"], c, .05)
+        prism(f"thigh_armor_{s}", ((x - .36, 2.62), (x + .36, 2.62), (x + .4, 3.52), (x + .22, 3.7), (x - .32, 3.62)), -.52, .5, m["silver1"], g[f"LEG_{s}"], c, .065)
+        cyl(f"hip_joint_{s}", .32, .42, (sign * .95, 0, 3.56), m["gold0"], g["PELVIS"], c, (0, math.pi / 2, 0), 20)
+        prism(f"hip_skirt_{s}", ((sign * .08, 3.76), (sign * 1.26, 3.76), (sign * 1.08, 3.18), (sign * .28, 3.28)), -.7, .48, m["navy1"], g["PELVIS"], c, .07)
+    box("pelvis_core", (1.22, 1.22, .78), (0, 0, 3.58), m["navy0"], g["PELVIS"], c, bevel=.13)
+    prism("pelvis_front", ((-.52, 3.86), (.52, 3.86), (.44, 3.28), (0, 3.1), (-.44, 3.28)), -.78, -.5, m["navy2"], g["PELVIS"], c, .045)
+    box("pelvis_lamp", (.3, .16, .44), (0, -.9, 3.58), m["gold1"], g["PELVIS"], c, bevel=.035)
+
+    # Deep interlocked torso. Gold under-plates remain visible as a controlled rim.
+    box("torso_block", (3.36, 2.45, 2.16), (0, .02, 5.05), m["navy0"], g["CHEST"], c, bevel=.22)
+    ellipsoid("torso_breast_volume", (0, -.18, 5.46), (1.72, 1.23, .9), m["navy1"], g["CHEST"], c, subdivisions=3)
+    box("sternum_keel", (.72, .54, 2.18), (0, -1.25, 5.05), m["silver1"], g["CHEST"], c, bevel=.09)
+    for sign, s in ((-1, "L"), (1, "R")):
+        gold = tuple((sign * x, z) for x, z in ((.06, 5.35), (.58, 6.18), (1.8, 6.02), (1.58, 5.2), (.94, 4.34), (.2, 4.72)))
+        red = tuple((sign * x, z) for x, z in ((.14, 5.34), (.62, 6.04), (1.66, 5.9), (1.44, 5.22), (.9, 4.5), (.26, 4.8)))
+        prism(f"x_gold_bed_{s}", gold, -1.5, -.78, m["gold0"], g["CHEST"], c, .075)
+        prism(f"x_red_armor_{s}", red, -1.59, -1.32, m["red1"], g["CHEST"], c, .055)
+        prism(f"x_red_highlight_{s}", tuple((x * .96, z + .08) for x, z in red[:4]), -1.64, -1.52, m["red2"], g["CHEST"], c, .025)
+        box(f"chest_lock_{s}", (.24, .16, .32), (sign * 1.18, -1.72, 5.72), m["gold2"], g["CHEST"], c, rot=(0, 0, .14 * sign), bevel=.035)
+    cyl("chest_core_outer", .43, .28, (0, -1.73, 5.28), m["gold1"], g["CHEST"], c, (math.pi / 2, 0, 0), 28)
+    cyl("chest_core_dark", .31, .31, (0, -1.89, 5.28), m["navy0"], g["CHEST"], c, (math.pi / 2, 0, 0), 28)
+    cyl("chest_core_light", .18, .34, (0, -2.0, 5.28), m["ivory"], g["CHEST"], c, (math.pi / 2, 0, 0), 28)
+
+    # Shoulder rings and paired heavy forearms.
+    for sign, s in ((-1, "L"), (1, "R")):
+        shoulder = g[f"SHOULDER_{s}"]
+        arm = g[f"ARM_{s}"]
+        fore = g[f"FOREARM_{s}"]
+        x = sign * 2.12
+        ellipsoid(f"shoulder_mass_{s}", (x, .02, 5.76), (1.02, .96, 1.12), m["navy1"], shoulder, c, rot=(.02, .04 * sign, -.08 * sign), subdivisions=3)
+        torus(f"shoulder_front_ring_{s}", .69, .11, (x, -.88, 5.78), m["gold1"], shoulder, c, (math.pi / 2, 0, 0))
+        torus(f"shoulder_outer_ring_{s}", .58, .09, (sign * 2.96, .02, 5.76), m["navy2"], shoulder, c, (0, math.pi / 2, 0))
+        outer = tuple((sign * px, z) for px, z in ((1.34, 6.32), (2.18, 6.48), (2.84, 6.08), (2.7, 5.5), (1.58, 5.62)))
+        prism(f"shoulder_crown_{s}", outer, -.8, .78, m["navy2"], shoulder, c, .08)
+        red = tuple((sign * px, z) for px, z in ((1.36, 6.08), (2.18, 6.24), (2.48, 5.84), (1.62, 5.58)))
+        prism(f"shoulder_red_lock_{s}", red, -.92, -.72, m["red1"], shoulder, c, .04)
+        cyl(f"upper_joint_{s}", .45, .7, (x, 0, 4.98), m["black"], arm, c, (0, math.pi / 2, 0), 24)
+        prism(f"upper_arm_armor_{s}", ((x - .38, 4.3), (x + .38, 4.3), (x + .42, 5.05), (x + .2, 5.3), (x - .32, 5.14)), -.45, .5, m["navy0"], arm, c, .065)
+        cyl(f"elbow_{s}", .38, .6, (x, 0, 4.2), m["gold0"], arm, c, (0, math.pi / 2, 0), 22)
+        cyl(f"forearm_barrel_{s}", .72, 1.7, (x, 0, 3.23), m["navy1"], fore, c, (0, 0, 0), 24, .045)
+        cyl(f"forearm_top_ring_{s}", .79, .23, (x, 0, 4.02), m["silver1"], fore, c, (0, 0, 0), 28)
+        cyl(f"forearm_wrist_ring_{s}", .77, .23, (x, 0, 2.43), m["silver1"], fore, c, (0, 0, 0), 28)
+        prism(f"forearm_front_plate_{s}", ((x - .4, 2.68), (x + .4, 2.68), (x + .38, 3.84), (x + .18, 4.0), (x - .34, 3.9)), -.77, -.65, m["navy2"], fore, c, .045)
+        box(f"forearm_red_key_{s}", (.16, .18, .78), (x + sign * .58, -.5, 3.2), m["red1"], fore, c, bevel=.035)
+        for i, z in enumerate((2.8, 3.22, 3.64)):
+            torus(f"forearm_gold_rib_{s}_{i}", .705, .025, (x, 0, z), m["gold0"], fore, c)
+        box(f"fist_palm_{s}", (.66, .58, .48), (x, -.04, 2.0), m["black"], fore, c, bevel=.085)
+        for i, off in enumerate((-.24, -.08, .08, .24)):
+            box(f"fist_digit_{s}_{i}", (.13, .52, .2), (x + off, -.08, 1.72), m["black"], fore, c, rot=(.08, 0, 0), bevel=.035)
+
+    # Head and crown: layered front/rear volumes, blue brow, red central crest, silver grille jaw.
+    box("neck", (.84, .78, .38), (0, 0, 6.35), m["black"], g["HEAD"], c, bevel=.07)
+    ellipsoid("helmet_core", (0, .04, 7.05), (1.0, 1.05, .92), m["navy1"], g["HEAD"], c, subdivisions=3)
+    prism("helmet_brow_shell", ((-.94, 7.34), (.94, 7.34), (.78, 6.76), (.48, 6.5), (-.48, 6.5), (-.78, 6.76)), -1.04, .62, m["navy0"], g["HEAD"], c, .075)
+    prism("blue_forehead", ((-.54, 7.43), (.54, 7.43), (.42, 7.08), (0, 6.96), (-.42, 7.08)), -1.2, -1.0, m["navy2"], g["HEAD"], c, .045)
+    prism("silver_grille_face", ((-.58, 6.98), (.58, 6.98), (.5, 6.38), (0, 6.18), (-.5, 6.38)), -1.24, -.9, m["silver1"], g["HEAD"], c, .055)
+    for i, x in enumerate((-.36, -.18, 0, .18, .36)):
+        box(f"grille_slot_{i}", (.075, .1, .48), (x, -1.39, 6.62), m["black"], g["HEAD"], c, rot=(.04, 0, 0), bevel=.015)
+    prism("eye_socket_L", ((-.66, 7.22), (-.04, 7.14), (-.16, 6.96), (-.56, 7.01)), -1.35, -1.18, m["black"], g["HEAD"], c, .02)
+    prism("eye_socket_R", ((.66, 7.22), (.04, 7.14), (.16, 6.96), (.56, 7.01)), -1.35, -1.18, m["black"], g["HEAD"], c, .02)
+    prism("eye_L", ((-.57, 7.17), (-.12, 7.12), (-.2, 7.03), (-.52, 7.06)), -1.42, -1.34, m["gold2"], g["HEAD"], c, .012)
+    prism("eye_R", ((.57, 7.17), (.12, 7.12), (.2, 7.03), (.52, 7.06)), -1.42, -1.34, m["gold2"], g["HEAD"], c, .012)
+    for sign, s in ((-1, "L"), (1, "R")):
+        prism(f"cheek_guard_{s}", tuple((sign * x, z) for x, z in ((.5, 6.98), (1.0, 7.18), (.92, 6.5), (.54, 6.3))), -1.08, .34, m["navy1"], g["HEAD"], c, .055)
+        cyl(f"ear_hub_{s}", .36, .3, (sign * 1.03, 0, 6.96), m["gold0"], g["HEAD"], c, (0, math.pi / 2, 0), 24)
+    box("crest_blue_frame", (.66, .92, 1.55), (0, -.04, 7.72), m["navy0"], g["CROWN"], c, bevel=.085)
+    prism("crest_red_insert", ((-.18, 7.08), (.18, 7.08), (.19, 8.28), (0, 8.46), (-.19, 8.28)), -1.12, -.18, m["red1"], g["CROWN"], c, .045)
+    beam("gold_primary_L", (-.08, -1.3, 7.34), (-1.58, -.98, 7.78), .22, .24, m["gold1"], g["CROWN"], c, .04)
+    beam("gold_primary_R", (.08, -1.3, 7.34), (1.58, -.98, 7.78), .22, .24, m["gold1"], g["CROWN"], c, .04)
+    beam("gold_mid_L", (-.32, -.54, 7.52), (-1.1, -.24, 8.02), .16, .2, m["gold0"], g["CROWN"], c, .035)
+    beam("gold_mid_R", (.32, -.54, 7.52), (1.1, -.24, 8.02), .16, .2, m["gold0"], g["CROWN"], c, .035)
+    beam("gold_rear_L", (-.54, .24, 7.55), (-.82, .52, 8.16), .13, .16, m["gold1"], g["CROWN"], c, .03)
+    beam("gold_rear_R", (.54, .24, 7.55), (.82, .52, 8.16), .13, .16, m["gold1"], g["CROWN"], c, .03)
+
+    # Integral rear armor is flush to the torso: no wings and no backpack volume.
+    box("rear_spine_integral", (.72, .24, 1.78), (0, 1.28, 5.38), m["navy0"], g["INTEGRAL_REAR"], c, bevel=.08)
+    prism("rear_scapula_L", ((-1.58, 5.86), (-.12, 6.08), (-.12, 4.86), (-1.32, 4.72)), .98, 1.28, m["navy1"], g["INTEGRAL_REAR"], c, .05)
+    prism("rear_scapula_R", ((.12, 6.08), (1.58, 5.86), (1.32, 4.72), (.12, 4.86)), .98, 1.28, m["navy1"], g["INTEGRAL_REAR"], c, .05)
+    return c, root
+
+
+def breaker(m):
+    c = collection("HD_RIG_BREAKER_BX")
+    root = bpy.data.objects.new("HD_BREAKER_BX_RIG_ROOT", None)
+    root["stable_id"] = "CAND_C01E02_A91A3_BREAKER_BX_HD_HAND_AUTHORED_V1"
+    root["source_policy"] = "hand-authored asymmetric siege shell; planning state only"
+    c.objects.link(root)
+    g = {n: group(n, root, c) for n in ("SHELL", "HEAD", "SEAMS", "FORE_L", "FORE_R", "REAR_L", "REAR_R", "SEALED_EXIT")}
+
+    # Suspended body and dominant shell: no mammal abdomen.
+    ellipsoid("suspended_keel", (0, -.05, 3.62), (1.72, 1.92, .72), m["bx0"], g["SHELL"], c, rot=(.02, 0, 0), subdivisions=3)
+    ellipsoid("shell_mass", (0, .42, 4.64), (3.12, 2.72, 1.18), m["bx1"], g["SHELL"], c, rot=(.05, .04, .02), subdivisions=3)
+    plates = (
+        ("dorsal_front_L", (-1.08, -1.2, 5.52), (2.3, 1.28, .26), "bx3", (.12, .14, -.14)),
+        ("dorsal_front_R", (.82, -.48, 5.72), (1.98, 1.42, .28), "bx4", (-.04, -.18, .2)),
+        ("dorsal_mid_L", (-1.34, .62, 5.58), (1.84, 1.28, .26), "bx2", (.1, .2, -.22)),
+        ("dorsal_mid_R", (1.42, .78, 5.34), (1.36, 1.58, .28), "bx3", (-.12, -.24, .18)),
+        ("left_flank", (-2.18, -.08, 4.92), (.7, 1.72, .38), "bx3", (.16, .2, -.3)),
+        ("right_flank", (2.16, .22, 4.78), (.78, 1.58, .36), "bx2", (-.1, -.18, .26)),
+        ("rear_counter", (.26, 2.16, 5.1), (1.68, .72, .28), "bx2", (.18, -.06, .08)),
+    )
+    for name, loc, scale, mat, rot in plates:
+        ellipsoid(name, loc, scale, m[mat], g["SHELL"], c, rot=rot, subdivisions=2)
+    # Dark flexible seams connect plates as one alien load field.
+    for i, (a, b, w) in enumerate((
+        ((-2.2, -1.04, 5.42), (-.18, -.1, 5.86), .1),
+        ((.12, -.22, 5.88), (1.82, .9, 5.32), .11),
+        ((-1.9, .34, 5.5), (-.24, 1.56, 5.46), .09),
+        ((1.56, .42, 5.18), (.58, 2.02, 5.12), .095),
+    )):
+        beam(f"flex_seam_{i}", a, b, w, .14, m["bx_seam"], g["SEAMS"], c, .018)
+    beam("visible_shell_suture_L", (-2.28, -2.02, 4.92), (-.78, -2.18, 5.36), .085, .12, m["bx0"], g["SEAMS"], c, .014)
+    beam("visible_shell_suture_R", (.12, -2.16, 5.46), (1.62, -1.94, 5.08), .07, .1, m["bx_seam"], g["SEAMS"], c, .014)
+    ellipsoid("left_membrane", (-1.88, -.5, 4.2), (.5, 1.08, .78), m["bx0"], g["SEAMS"], c, rot=(.12, .16, -.24), subdivisions=2)
+    ellipsoid("right_membrane", (1.78, -.04, 4.08), (.42, .96, .68), m["bx1"], g["SEAMS"], c, rot=(.1, -.14, .2), subdivisions=2)
+
+    # Low sensor head is embedded under the shell lip.
+    prism("head_wedge", ((-1.04, 3.74), (1.0, 3.68), (.76, 3.28), (-.9, 3.24)), -3.08, -2.2, m["bx1"], g["HEAD"], c, .08)
+    prism("head_brow_lip", ((-1.32, 3.88), (1.18, 3.8), (.98, 3.6), (-1.16, 3.64)), -3.2, -2.5, m["bx3"], g["HEAD"], c, .045)
+    box("single_red_slit", (.68, .1, .06), (-.1, -3.28, 3.5), m["bx_red"], g["HEAD"], c, rot=(0, 0, -.04), bevel=.012)
+    prism("closed_chest_L", ((-1.1, 3.3), (-.06, 3.38), (-.08, 2.62), (-.76, 2.46)), -2.36, -1.74, m["bx2"], g["SHELL"], c, .075)
+    prism("closed_chest_R", ((.08, 3.38), (.88, 3.24), (.66, 2.5), (.08, 2.62)), -2.32, -1.76, m["bx3"], g["SHELL"], c, .075)
+    box("closed_chest_seam", (.055, .1, .76), (0, -2.46, 2.94), m["bx0"], g["SEAMS"], c, rot=(-.05, 0, 0), bevel=.012)
+    prism("asymmetric_ventral_shield", ((-.92, 3.2), (.34, 3.28), (.52, 2.52), (-.66, 2.34)), -2.48, -2.3, m["bx1"], g["SHELL"], c, .05)
+
+    # Two unequal siege pylons carry the mass; pads are anchors rather than paws.
+    specs = {
+        "L": ((-2.34, -.72, 4.08), (-2.5, -1.5, 2.3), (-2.54, -2.34, .4), .72, .6, "bx3"),
+        "R": ((1.98, -.42, 3.94), (2.16, -1.24, 2.08), (2.2, -2.04, .38), .62, .52, "bx2"),
+    }
+    for s, (shoulder, hinge, contact, r0, r1, mat) in specs.items():
+        grp = g[f"FORE_{s}"]
+        ellipsoid(f"load_socket_{s}", shoulder, (r0, r0 * .78, r0 * .7), m["bx2" if s == "L" else "bx1"], grp, c, rot=(.2, .12 if s == "L" else -.1, .18), subdivisions=2)
+        beam(f"root_tendon_{s}", (shoulder[0] - (.34 if s == "L" else -.26), shoulder[1] - .5, shoulder[2] + .14), (hinge[0], hinge[1] - .38, hinge[2] + .28), .08 if s == "L" else .06, .12, m["bx_seam"], grp, c, .014)
+        taper(f"upper_pylon_{s}", shoulder, hinge, r0, r1, m[mat], grp, c, 7 if s == "L" else 6)
+        ellipsoid(f"flex_hinge_{s}", hinge, (r1 * 1.05, r1, r1 * .82), m["bx0"], grp, c, rot=(.18, .1, .2), subdivisions=2)
+        taper(f"lower_pylon_{s}", hinge, contact, r1, r1 * 1.1, m["bx1"], grp, c, 6 if s == "L" else 7)
+        ellipsoid(f"pylon_overplate_{s}", tuple((shoulder[i] + hinge[i]) / 2 for i in range(3)), (r0 * .78, r0 * .5, .94), m["bx4" if s == "L" else "bx2"], grp, c, rot=(.2, .12 if s == "L" else -.12, .18 if s == "L" else -.12), subdivisions=2)
+        prism(f"anchor_pad_{s}", ((contact[0] - .7, .08), (contact[0] + .64, .08), (contact[0] + .72, .3), (contact[0] + .22, .52), (contact[0] - .58, .44)), contact[1] - .72, contact[1] + .34, m["bx2"], grp, c, .055)
+        beam(f"anchor_flex_{s}", (contact[0] - .42, contact[1] - .62, .18), (contact[0] + .38, contact[1] - .7, .14), .14, .24, m["bx0"], grp, c, .03)
+
+    # Short rear stabilizers remain subordinate and partially hidden by the shell.
+    for sign, s in ((-1, "L"), (1, "R")):
+        grp = g[f"REAR_{s}"]
+        a = (sign * (.7 if s == "L" else .58), 1.72 if s == "L" else 1.94, .52)
+        b = (sign * (.74 if s == "L" else .62), 1.96 if s == "L" else 2.16, .2)
+        ellipsoid(f"rear_socket_{s}", a, (.22, .28, .18), m["bx3"], grp, c, subdivisions=2)
+        taper(f"rear_stabilizer_{s}", a, b, .2, .28, m["bx1"], grp, c, 6)
+        ellipsoid(f"rear_pad_{s}", (b[0], b[1] + .04, .1), (.3, .28, .09), m["bx2"], grp, c, subdivisions=2)
+    ellipsoid("sealed_exit_shell", (.2, 2.36, 4.44), (.62, .28, .4), m["bx1"], g["SEALED_EXIT"], c, rot=(.1, .06, .04), subdivisions=2)
+    ellipsoid("sealed_exit_cap", (.2, 2.58, 4.44), (.36, .12, .22), m["bx0"], g["SEALED_EXIT"], c, rot=(.1, .06, .04), subdivisions=2)
+    return c, root
+
+
+def scene_setup():
+    scene = bpy.context.scene
+    scene.render.engine = "BLENDER_EEVEE_NEXT"
+    scene.render.resolution_x = 1024
+    scene.render.resolution_y = 1024
+    scene.render.resolution_percentage = 100
+    scene.render.image_settings.file_format = "PNG"
+    scene.render.image_settings.color_mode = "RGBA"
+    scene.render.image_settings.color_depth = "8"
+    scene.render.film_transparent = False
+    scene.render.use_freestyle = True
+    scene.render.line_thickness = 2.1
+    scene.view_settings.view_transform = "Standard"
+    scene.view_settings.look = "Medium High Contrast"
+    scene.world.use_nodes = True
+    world_bg = scene.world.node_tree.nodes.get("Background")
+    world_bg.inputs["Color"].default_value = rgba("e9ece8")
+    world_bg.inputs["Strength"].default_value = 0.8
+    lines = bpy.context.view_layer.freestyle_settings.linesets[0].linestyle
+    lines.color = rgba(PALETTE["ink"])[:3]
+    lines.thickness = 2.2
+    bpy.context.view_layer.freestyle_settings.linesets[0].select_silhouette = True
+    bpy.context.view_layer.freestyle_settings.linesets[0].select_crease = True
+    bpy.context.view_layer.freestyle_settings.linesets[0].select_border = True
+    for kind, loc, energy, size, col in (
+        ("AREA", (-7, -10, 14), 1250, 6, (1.0, .94, .84)),
+        ("AREA", (8, -4, 9), 320, 5, (.5, .72, .86)),
+        ("AREA", (0, 8, 12), 700, 5, (.9, .48, .28)),
+    ):
+        bpy.ops.object.light_add(type=kind, location=loc)
+        light = bpy.context.object
+        light.data.energy = energy
+        light.data.shape = "DISK"
+        light.data.size = size
+        light.data.color = col
+    bpy.ops.object.camera_add(location=(0, -20, 4.1))
+    cam = bpy.context.object
+    cam.data.type = "ORTHO"
+    scene.camera = cam
+    return cam
+
+
+def aim(cam, target):
+    cam.rotation_euler = (Vector(target) - cam.location).to_track_quat("-Z", "Y").to_euler()
+
+
+def render(c, all_c, cam, loc, target, scale, filename):
+    for item in all_c:
+        item.hide_render = item != c
+        item.hide_viewport = item != c
+    cam.location = loc
+    cam.data.ortho_scale = scale
+    aim(cam, target)
+    bpy.context.scene.render.filepath = str(OUT / filename)
+    bpy.ops.render.render(write_still=True)
+
+
+def main():
+    reset()
+    mats = {name: cel_mat("HD_" + name.upper(), value) for name, value in PALETTE.items()}
+    gz, _ = guardian(mats)
+    bx, _ = breaker(mats)
+    cam = scene_setup()
+    all_c = (gz, bx)
+    render(gz, all_c, cam, (0, -20, 4.1), (0, 0, 4.1), 9.55, "HD_GATE_GUARDIAN_Z_FRONT_RGBA_1024.png")
+    render(gz, all_c, cam, (-20, 0, 4.1), (0, 0, 4.1), 9.55, "HD_GATE_GUARDIAN_Z_STRICT_LEFT_RGBA_1024.png")
+    render(bx, all_c, cam, (10.8, -16.4, 5.4), (0, -.1, 3.15), 9.25, "HD_GATE_BREAKER_BX_PLANNING_RGBA_1024.png")
+    bpy.ops.wm.save_as_mainfile(filepath=str(HERE / "work/blender/A91A3_HD_HAND_AUTHORED_GATE.blend"))
+    print("A9.1-A3 high-detail three-image gate rendered")
+
+
+if __name__ == "__main__":
+    main()

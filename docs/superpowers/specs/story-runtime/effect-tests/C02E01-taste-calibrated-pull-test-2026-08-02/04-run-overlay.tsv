@@ -1,0 +1,7 @@
+overlay_id	masked_id	masked_layer	replacement_id	reason	decided_by	expiry	affected_views
+OVL001	CLS_C02_L4_OUTLINE	L4	C02_PULL_SPINE_V1_1	旧C02详细章纲会预写场面答案；本轮保留Current故事事实，重新测试章级戏剧选择	lead_writer_test_contract	run_end	writer;causal
+OVL002	CLS_C02_L4_DIRECTOR	L4	C02E01_PULL_SCENE_CHAIN_V1	旧导演板只留审计可见，不向本轮主笔规定旧动作链	lead_writer_test_contract	run_end	writer;causal
+OVL003	CLS_C02_L4_CAUSALITY	L4		旧因果板的具体解法不进入创作；遇到产权、控制、空间问题时改为定点微查	lead_writer_test_contract	run_end	writer
+OVL004	CLS_C02_L4_BATTLE	L4	C02E01_PULL_S3_CANDIDATE	旧关卡动作不强制继承；S3必须从当前尺度、控制权和戏剧目标重新成立	lead_writer_test_contract	run_end	writer;causal
+OVL005	CLS_C02_L45_PRESENTATION	L4_5		旧演出承载只在完成正文后作制作审计，不预写正文	lead_writer_test_contract	run_end	writer;causal
+OVL006	CLS_C02_L5_READER	L5		V3只在最终盲比揭盲，永不进入本轮主笔或因果视野	lead_writer_test_contract	run_end	writer;causal;cold_reader

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0e1726"/><stop offset="1" stop-color="#08101a"/></linearGradient>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0v6l9-3z" fill="#94a3b8"/></marker>
+    <style>.t{font-family:Inter,"PingFang SC","Microsoft YaHei",sans-serif;fill:#edf6ff}.muted{fill:#9fb0c4}.sm{font-size:17px}.tiny{font-size:14px}.head{font-size:25px;font-weight:800}</style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg2)"/>
+  <text class="t" x="65" y="68" font-size="38" font-weight="800">万机馆 C01–C05：身体形态 ≠ 玩家控制</text>
+  <text class="t muted" x="65" y="105" font-size="19">Accepted Story事实、Working章责与Candidate玩法必须分栏；右侧不是自动解锁路线</text>
+
+  <g transform="translate(65 165)">
+    <rect width="270" height="600" rx="20" fill="#17253a" stroke="#56b4e9" stroke-width="3"/>
+    <text class="t head" x="24" y="47">C01　起航</text><text class="t tiny" x="24" y="76" fill="#56b4e9">Accepted Story</text>
+    <path d="M35 165 H235 V260 H35 Z" fill="#45586d" stroke="#b7c5d5" stroke-width="3"/>
+    <rect x="65" y="125" width="140" height="40" fill="#5e7186"/><path d="M235 190l25 22-25 22z" fill="#45586d"/>
+    <text class="t sm" x="24" y="315">身体：固定馆 → 低速离地</text>
+    <text class="t sm" x="24" y="352">玩家：选航向节点</text><text class="t sm" x="24" y="380">护航 / 近防 / 承压窗口</text>
+    <rect x="24" y="420" width="222" height="58" rx="10" fill="#102033" stroke="#56b4e9"/>
+    <text class="t sm" x="42" y="456">直接控制级：0 / 3</text>
+    <text class="t tiny muted" x="24" y="520">自动航行执行推进、转向、配平</text><text class="t tiny muted" x="24" y="548">万机馆是场景身体/护送目标</text>
+  </g>
+
+  <path d="M345 465 H385" stroke="#94a3b8" stroke-width="4" marker-end="url(#arr)"/>
+
+  <g transform="translate(395 165)">
+    <rect width="270" height="600" rx="20" fill="#1c2935" stroke="#6dd3a0" stroke-width="3"/>
+    <text class="t head" x="24" y="47">C02　停泊/事故</text><text class="t tiny" x="24" y="76" fill="#6dd3a0">Accepted Story</text>
+    <path d="M35 178 H235 V255 H35 Z" fill="#45586d" stroke="#b7c5d5" stroke-width="3"/><path d="M15 265 Q135 230 255 265" fill="none" stroke="#fbbf24" stroke-width="7"/>
+    <text class="t sm" x="24" y="315">身体：固定位置多格承接体</text>
+    <text class="t sm" x="24" y="352">玩家：侧推拆借 / 接边</text><text class="t sm" x="24" y="380">事故保护 / 重件交割</text>
+    <rect x="24" y="420" width="222" height="58" rx="10" fill="#102033" stroke="#6dd3a0"/>
+    <text class="t sm" x="42" y="456">直接控制级：0 / 3</text>
+    <text class="t tiny muted" x="24" y="520">不自由移动；只沿既有作业道</text><text class="t tiny muted" x="24" y="548">约九米转子仍需GD2工程验证</text>
+  </g>
+
+  <path d="M675 465 H715" stroke="#94a3b8" stroke-width="4" marker-end="url(#arr)"/>
+
+  <g transform="translate(725 165)">
+    <rect width="270" height="600" rx="20" fill="#242a38" stroke="#f0b44d" stroke-width="3"/>
+    <text class="t head" x="24" y="47">C03　低速工作</text><text class="t tiny" x="24" y="76" fill="#f0b44d">Accepted Story</text>
+    <path d="M35 185 H235 V255 H35 Z" fill="#45586d" stroke="#b7c5d5" stroke-width="3"/><path d="M40 175h190" stroke="#f0b44d" stroke-width="8"/><path d="M55 270h160" stroke="#f0b44d" stroke-width="6" stroke-dasharray="12 7"/>
+    <text class="t sm" x="24" y="315">身体：托桥 / 堵环 / 回港校正</text>
+    <text class="t sm" x="24" y="352">玩家：路线 / 制动 / 工作单</text><text class="t sm" x="24" y="380">地方岗位与工程协同</text>
+    <rect x="24" y="420" width="222" height="58" rx="10" fill="#102033" stroke="#f0b44d"/>
+    <text class="t sm" x="42" y="456">直接控制级：1 / 3</text>
+    <text class="t tiny muted" x="24" y="520">故事中“操舰”不自动生成自由棋子</text><text class="t tiny muted" x="24" y="548">先证明制动、包络与地方权利</text>
+  </g>
+
+  <path d="M1005 465 H1045" stroke="#94a3b8" stroke-width="4" marker-end="url(#arr)"/>
+
+  <g transform="translate(1055 165)">
+    <rect width="205" height="600" rx="20" fill="#252637" stroke="#a78bfa" stroke-width="3"/>
+    <text class="t head" x="22" y="47">C04　维修</text><text class="t tiny" x="22" y="76" fill="#a78bfa">Current章责</text>
+    <path d="M30 195 H175 V250 H30 Z" fill="#45586d" stroke="#b7c5d5" stroke-width="3"/>
+    <path d="M55 180h95" stroke="#a78bfa" stroke-width="7"/>
+    <text class="t sm" x="22" y="315">身体：停泊/承力维修</text>
+    <text class="t sm" x="22" y="352">玩家：后方空间</text><text class="t sm" x="22" y="380">不入盘/不暴走</text>
+    <rect x="22" y="420" width="161" height="58" rx="10" fill="#102033" stroke="#a78bfa"/>
+    <text class="t sm" x="36" y="456">控制级：0 / 3</text>
+    <text class="t tiny muted" x="22" y="520">先补天空铸环与承力包</text><text class="t tiny muted" x="22" y="548">E03继续前为流程阻断</text>
+  </g>
+
+  <path d="M1270 465 H1310" stroke="#94a3b8" stroke-width="4" marker-end="url(#arr)"/>
+
+  <g transform="translate(1320 165)">
+    <rect width="215" height="600" rx="20" fill="#2b2026" stroke="#fb7185" stroke-width="4" stroke-dasharray="12 8"/>
+    <text class="t head" x="22" y="47">C05　首控候选</text><text class="t tiny" x="22" y="76" fill="#fb7185">Candidate only</text>
+    <path d="M30 185 H175 V250 H30 Z" fill="#5b4350" stroke="#fecdd3" stroke-width="3"/><path d="M175 198l25 25-25 25z" fill="#5b4350"/>
+    <circle cx="65" cy="272" r="11" fill="#fb7185"/><circle cx="145" cy="272" r="11" fill="#fb7185"/>
+    <text class="t sm" x="22" y="315">身体：移动多格母舰</text>
+    <text class="t sm" x="22" y="352">玩家：计划移动/转向</text><text class="t sm" x="22" y="380">身体动作/支援/退出</text>
+    <rect x="22" y="420" width="171" height="58" rx="10" fill="#22151b" stroke="#fb7185"/>
+    <text class="t sm" x="36" y="456">控制级：2 / 3</text>
+    <text class="t tiny muted" x="22" y="520">必须等C04验收、新L4、</text><text class="t tiny muted" x="22" y="548">多格原型与用户试玩</text>
+  </g>
+
+  <g transform="translate(65 805)">
+    <rect width="1470" height="54" rx="12" fill="#121d2b" stroke="#405168"/>
+    <text class="t sm" x="22" y="34">硬门：人物在Reader里“操舰” ≠ 玩家已获得直接移动按钮；每次升级必须分别验证身体状态、控制者、玩家代理、硬停、代价、敌方回答和跨章写回。</text>
+  </g>
+</svg>

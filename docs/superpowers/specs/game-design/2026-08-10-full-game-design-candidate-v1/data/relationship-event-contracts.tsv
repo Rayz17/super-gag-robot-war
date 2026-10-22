@@ -1,0 +1,9 @@
+event_type_id	event_type	trigger_model	player_decision	possible_writeback	operation_permission_effect	failure_or_refusal	frequency_guard	ui_or_scene_feedback	must_not_become	example_candidate	status
+REL_DEBRIEF	行动复盘	最近Encounter/Operation中具名共同事件	承认/辩解/询问/保持边界	shared_event;active_disagreement;promise;hurt_or_repair	开放更诚实信息或具体复盘请求	对话中止/分歧保留;不扣通用好感	同一事件一次;需新结果才重开	自然对话+可回看事件来源	战后评奖或数值结算	C01饭约打断后的责任与下一次订位	candidate_relationship_event_v1
+REL_WORK_TOGETHER	共同工作	两人/机体可共同处理具名维修/档案/任务	选择方法/谁主导/是否冒险	work_protocol;trust_evidence;boundary;repair	开放一个工作协议或更清楚的请求格式	工作降级/延期/形成维修债	需新对象或协议阶段	同场动作/实体产物/分工	站桩聊天加好感	唐胶模型意图与陆衡工程复核	candidate_relationship_event_v1
+REL_REQUEST_CONSENT	具体动作请求	未来动作需要某主体接受	解释目的/条件/撤回/替代	consent_record;counterproposal;permission_window	只对具名动作开放/拒绝/附条件	拒绝后出现合法替代;拒绝本身不固定惩罚	同一动作重复施压触发关闭	双主体回应;理由;撤回窗	服从度检测或好感门	豪司提议第二阶段而社勇王拒绝	candidate_relationship_event_v1
+REL_BOUNDARY	边界冲突	越权/隐瞒/身体/职业/公开范围触发	道歉/解释/承担/继续施压/退出	boundary;hurt;obligation;permission_closed_or_limited	关闭/限制某种信息共享或请求;可后续修复	关系继续但协作变贵/变慢/不同	主题冷却直到新行动	具体被触犯事项与未来限制	善恶条/正确道歉答案	七海权限边界或机魂不愿公开信息	candidate_relationship_event_v1
+REL_PROMISE	承诺与到期	人物提出具名未来行动或旧承诺到期	接受/改条件/拒绝/延期并说明	promise;due_condition;breach_effect;future_event	可能开放未来到场/支援但非保证	违约产生具体回应;不是道德点	每项唯一ID和到期;不可刷	日志/日程/人物提醒	任务清单堆积	到站先报平安/下次订位	candidate_relationship_event_v1
+REL_ATTRACTION	成年吸引与距离	共同生活/专业欣赏/身体距离/冲突积累	靠近/调侃/坦白/后退/设边界	attraction_event;desire;boundary;jealousy_or_care	可能改变人物主动回应/可谈主题;不加战斗Buff	错过/拒绝/尴尬成为关系史	只限成年角色;与儿童内容隔离;不每日触发	具身场景与自然对白	送礼答案表/通用恋爱阶段	主角团成人关系候选场景	candidate_relationship_event_v1
+REL_ABSENCE	离队/远程/错过	角色不在场/迟到通信/路线分离	等待/回应/委托/放下/追查	absence_state;message;route_debt;future_meeting	远程信息或替代执行者;不凭空到场	消息迟到/误解/失去窗口	由世界时间与通信触发	空位/房间痕迹/迟到回信	离队角色从系统消失	C03双时间讯息与陆路队伍	candidate_relationship_event_v1
+REL_PUBLIC	公开表达/共同体	开馆/听证/救援结果进入公众	公开什么/谁发言/承担何种不完整	public_statement;group_response;responsibility	具体组织开放/支援/拒绝	误解扩大但可继续生活	同一群体需新事实才重开	观众/组织/展签/新闻回应	单一声望币	万机馆开馆与城市公共支持	candidate_relationship_event_v1

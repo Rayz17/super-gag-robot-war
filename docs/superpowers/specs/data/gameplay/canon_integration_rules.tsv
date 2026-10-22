@@ -1,0 +1,15 @@
+rule_id	trigger	required_action	canon_table	gameplay_table	graph_update	check_command	block_level
+CIR001	新增说话角色或命名NPC	先新增entities.tsv并填first_foreshadow/first_formal_appearance/entities policy	entities.tsv	可选chapter_content_budget_matrix.tsv	必要时graph_nodes.tsv和graph_edges.tsv	scripts/canon-query.sh <name>	hard
+CIR002	新增可玩机体、敌方Boss或隐藏机体	新增canon实体并选择unit_archetype	entities.tsv	unit_archetypes.tsv	新增或连接机体/参战包节点	scripts/canon-query.sh <mecha>	hard
+CIR003	新增阵营、组织或清算分部	新增canon faction并写implementation_policy	entities.tsv	content_node_types.tsv	连接对应章节和反派节点	scripts/canon-query.sh <faction>	hard
+CIR004	新增地点、展区、残响域关键层	新增canon location，场景表引用该地点	entities.tsv;scenes.tsv	chapter_content_budget_matrix.tsv	连接章节/场景节点	scripts/canon-query.sh <location>	hard
+CIR005	新增谜团术语或长期弧线	新增canon concept或design_graph variable，登记long_arc_touch预算	entities.tsv	content_node_types.tsv;chapter_content_budget_matrix.tsv	更新canonical_terms.tsv或graph_nodes.tsv	scripts/canon-query.sh <term>	hard
+CIR006	新增非SRPG玩法根规则	新增canon concept，登记doc_registry和graph节点	entities.tsv	hybrid_loop_templates.tsv;hybrid_activity_budget_rules.tsv	更新doc_registry/graph_nodes/edges	scripts/canon-query.sh <concept>	hard
+CIR007	新增章节混合玩法段	检查章节预算，不超max_required/max_optional/max_new_templates	可选scenes.tsv	hybrid_activity_catalog.tsv;chapter_content_budget_matrix.tsv	必要时边到章节节点	scripts/canon-query.sh scene <scene_id>	soft
+CIR008	新增HybridActivityResult字段	先改hybrid_result_contract.tsv，再评估实现和canon schema是否需要更新	可选references/schema.md	hybrid_result_contract.tsv	更新doc_registry和风险表	rg <field> docs/superpowers/specs/data/gameplay	soft
+CIR009	战斗修正影响登场顺序或可用单位	更新scenes.tsv和runtime_rules.tsv，必要时加canon check	entities.tsv;scenes.tsv;runtime_rules.tsv	mission_balance_targets.tsv;hybrid_result_contract.tsv	连接runtime_rules到相关规格	scripts/canon-check-godot.sh --report	hard
+CIR010	改变角色首登场或战斗加入	更新entities.tsv、scenes.tsv、相关gag_hooks.tsv	runtime_rules.tsv if implementation exists	chapter_content_budget_matrix.tsv	更新graph_edges和watchlist	scripts/canon-smoke-test.sh	hard
+CIR011	章节内容超预算	记录intentional_over_budget_reason，否则删节点	可选entities.tsv	chapter_content_budget_matrix.tsv;content_node_types.tsv	更新consistency_watchlist.tsv	rg chapter_id docs/superpowers/specs/data/gameplay	soft
+CIR012	Godot playable flow改动	先跑canon report，改完跑strict	runtime_rules.tsv	hybrid_result_contract.tsv;mission_balance_targets.tsv	若修正漂移，更新watchlist状态	scripts/canon-check-godot.sh --strict	hard
+CIR013	新增万机馆展品、藏品、模型或玩具与参战机体的关联	登记馆内锚点、关系类型、激活条件、随舰状态和不能误解的边界	entities.tsv可选;wanji_collection_taxonomy.tsv	chapter_content_budget_matrix.tsv;content_node_types.tsv	连接展品/藏品节点到参战包和章节	scripts/canon-query.sh collection <name>	hard
+CIR014	新增机体随舰搭载、机库、外部锁泊或残响待机规则	登记泊位容量、尺寸、可容纳/不可容纳对象和解锁时点	wanji_locations.tsv;wanji_carrier_berths.tsv	unit_archetypes.tsv;mission_balance_targets.tsv	连接展舰泊位到万机馆空间和机体原型	scripts/canon-query.sh berth <name>	hard

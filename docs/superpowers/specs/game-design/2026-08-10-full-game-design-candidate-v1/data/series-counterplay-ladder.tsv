@@ -1,0 +1,10 @@
+counter_id	counter_name	first_candidate_band	legal_evidence_source	player_visible_clue	counter_condition	player_answer_a	player_answer_b	persistent_writeback	max_concurrent_use	forbidden_shortcut	prototype_gate	status
+K0	公开直取目标	A_FOUNDATION	敌方看见目标/路线且目标属于自身任务	目标标记、朝向、移动承诺与预计结果	目标仍可达且未出现更高优先条件	卡位/保护/改变朝向	转移目标/主动撤离	记录敌方目标与是否被阻断	普通Encounter可与K1二选一	不得隐形改目标或只因玩家靠近就瞬移	D04-P1玩家能复述敌方要做什么	candidate_counter
+K1	压路/猎孤/破承力	A_FOUNDATION	敌方实际观察到位置、伤损或结构依赖	受威胁格/承重点/孤立单位与原因	目标暴露且敌方身体动作能真实到达	抱团/诱饵/预留反应	加固/换承点/绕路	身体/地点损伤和敌方观察账	普通Encounter最多再搭一种反制	不得无视LoS/体型/路径或任意禁用动作	同图至少两种身体/地形回答	candidate_counter
+K2	取样撤离/救援敌伴	A_FOUNDATION	敌方具名任务、保管链与撤离点	样本/伤员/撤离路线/提交窗口	敌方取得目标且撤离线仍开放	抢先转移/封撤点	允许撤离换取更重要主目标	样本/俘获/撤离结果进入未来敌方模型	普通Encounter与K0/K1合计不超2族	不得以打空HP自动取消已完成保管链	玩家能主动放弃次要追击	candidate_counter
+K3	干扰与信息过期	B_BODY	敌方观察到发射源、频段、中继或共享链	来源、时间戳、置信度、干扰半径和过期提示	通信依赖存在且敌方设备仍可工作	关闭主动链/使用本地自治	被动传感/有线或替代中继	Contact过期、干扰源和观察来源入账	普通Encounter最多1种信息反制	不得全图静默或让已知事实无因变假	D04-P2能区分事实/估计/过期	candidate_counter
+K4	节点/本地锁/管辖冲突	B_ROAD	敌方或第三方实际控制接口/具名锁/合法范围	控制者、适用对象、范围、期限与物理节点	玩家动作需要该接口且当前许可不覆盖	核验/取得真实授权	夺回实体节点/采用物理解法	权限/责任/节点前后态入账	普通Encounter最多1个主要authority case	不得让七海或系统凭按钮制造权限	C10 ROE原型存在两种合法解	candidate_counter
+K5	伪接触与条件佯动	D_SPLIT	敌方有发射设备且能观察玩家是否响应	多源不一致、误差区、挑战回应与发射证据	玩家只依赖单源或提前提交全部反应	多源交叉/挑战握手	保留反应/接受局部未知	假接触来源与玩家判断进入学习账	章级高潮与其他信息反制合计不超2	不得伪造未建立主体的私人记忆或完美认证	C16 Contact身份握手冷测	candidate_counter
+K6	拆协作链	B_BODY	敌方已观察到固定提案→核验→执行顺序	被针对的链段、观察来源和干扰窗口	玩家重复同一交接且链路仍暴露	缩短链/换执行者/并行物理解法	预先核验/让主体采取本地自治	学习到的交接标签及清除条件	普通Encounter最多针对一条链	不得一键封死基础动词或未公开计划	同一目标至少两条不依赖同席的合法链	candidate_counter
+K7	跨Encounter行动学习	E_WHATIF	结算中登记敌方真实目击/样本/日志/通信	部署前公开已收录动作、来源、强度和可清除条件	玩家重复高频战法且敌方观察链仍存	轮换单位/动词/路线	破坏观察链/使用首次动作/低频构筑	ST_ENEMY_LEARNING可回看、可清除、可审计	普通Encounter最多针对1-2个高频标签	不得暗读存档、新手历史或让基础编队无解	第二次同图7/8能指出敌方学到什么	candidate_counter
+K8	终局重组反制	H-I_TERMINAL	只组合K0-K7已出现且有前置证据的Doctrine	阶段开始列出当前三类以内反制及来源	对应Doctrine仍有物理/信息/权限执行条件	分阶段拆因果/换协议或主体	接受局部损失/换路线/具名替补	终局行动、退出、拒绝与世界结果入账	章级峰值最多3族并行	不得新增终局专属免疫、货币、胜负语法或第四系统	纵向玩家能用不同方案解释终局因果	candidate_counter

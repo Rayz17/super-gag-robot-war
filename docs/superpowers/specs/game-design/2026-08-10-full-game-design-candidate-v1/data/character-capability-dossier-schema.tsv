@@ -1,0 +1,27 @@
+field_id	field_name	required_for	question	blocking_rule
+CDS001	capability_id	all	角色能力/职责的稳定ID是什么	只有自然语言称呼且跨章漂移时block
+CDS002	owner_id	all	能力属于哪个角色、岗位、组织或机体主体	把共享信息层私有化给某角色时block
+CDS003	authority_level	all	hard/working/candidate/history哪一档	候选成长倒写成既有能力时block
+CDS003B	design_status	all	open/draft/blocked/sealed/invalidated/retired哪一档	open或blocked被下游消费时block
+CDS004	source_refs	all	人物Canon、Accepted Story和系统合同来源是什么	无来源或旧候选冒充Current时block
+CDS005	identity_promise	all	这个能力怎样体现角色，而不是换皮通用技能	删掉名字后与别人完全相同时warn
+CDS006	action_ids	playable	哪些authority-action或tactical-action合同唯一拥有玩家输入与效果	只有剧情描述没有操作合同，或本档案复制第二套动作规则时block
+CDS007	information_inputs	playable	能力读取哪些事实、报告、测量、视角、权限或证据	无来源全知时block
+CDS008	interpretation_or_proposal	playable	角色怎样把输入变成提案、判断或问题	系统直接给答案替代角色时block
+CDS009	authority_scope	playable	谁授予其对哪个对象、动词、时窗的权限	制造不存在的法律/军方/城市权限时block
+CDS010	consent_subject	playable	哪个驾驶员、机魂、机体或本地执行者可拒绝/附条件	同意主体缺失时block
+CDS011	executor_body	playable	哪具现实身体或装置执行结果	角色意念直接改写物理世界时block
+CDS012	effect_boundary_refs	playable	引用的动作合同只允许改变哪些知识、选项、约束、路线或身体状态	一次能力同时发现/授权/同意/执行，或本档案另写第二套效果时block
+CDS013	cost_resource	playable	带宽、时间、暴露、责任、工具、认知负荷或关系债是什么	强能力无显性成本时block
+CDS014	counterplay	playable	干扰、假数据、本地锁、拒绝、测量不足或敌方变招怎样克制	没有被克制场景时block
+CDS015	failure_and_alternative	playable	失败/拒绝后有什么更慢、更险或更贵的现实替代	缺席或拒绝导致脚本卡死时block
+CDS016	certainty_and_horizon	information	输出是事实、估计、建议还是条件预演，多久过期	把候选未来写成保证时block
+CDS017	ui_and_visible_proof	playable	来源、置信度、授权链、同意与执行者怎样被看见	玩家无法说明谁做了什么时block
+CDS018	unlock_and_growth	all	何时首次看见、试用、正式解锁和被反制	单章一次跳到终局能力时block
+CDS019	permanent_limits	all	全剧任何阶段都不能突破的边界是什么	没有永久上限时block
+CDS020	state_read_write	playable	读取/写入哪些统一状态域和结算字段	私建不可追踪状态时block
+CDS021	chapter_consumers	all	哪些章教、应用、组合、反制、复习和终考	机制只有一次内容实例时warn
+CDS022	prototype_and_human_gate	playable	哪种匿名灰盒和真人复述证明它成立	绑定角色演出前无基础验证时block
+CDS023	writer_safe_card	writer_context	Reader只需知道哪些可见边界、必须表现和暂隐项	向Writer泄露制作术语或缺少约束时block
+CDS024	production_only_fields	production	哪些公式、资源、反制、日志和UI字段不得进入Reader	制作字段污染小说体时warn
+CDS025	human_approval	all	用户批准了哪一版玩家身份和角色代价	正式解锁前缺回执时block

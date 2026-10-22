@@ -1,0 +1,809 @@
+{
+  "version": "GW-CANDIDATE-20261010",
+  "date": "2026-10-10",
+  "source": "本次代码、运行配置、原生窗口与测试日志",
+  "scope": "10月9日首版的后续修订；本轮建筑、交互性能、空间规则和实验成长已有实际实现。完整52包仍逐包保留未关闭范围。 10月10日新增视觉总参考迁移：正式美术规范v2、共享色板、实体厂房立面、HUD和三张赛璐璐背景已接入。",
+  "report_url": "12-首版交付与验证.html",
+  "summary_url": "11-名场面与系统全链补定.html",
+  "work_packages": {
+    "Q01": {
+      "first_version": "留存修改前文件、运行配置与本次验证日志。",
+      "evidence": "before/、case-configurations.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "F01": {
+      "first_version": "六机18招的费用、效果、准备与释放按同一命令验证。",
+      "evidence": "contract-tests.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false,
+      "20261010_construction": {
+        "status": "施工中；完整包未关闭",
+        "checkpoint": "实施进度-20261010.json",
+        "updated_at": "2026-10-11T01:07:12.442810+08:00",
+        "full_scope_complete": false,
+        "user_accepted": false
+      }
+    },
+    "F02": {
+      "first_version": "1×1/2×2/2×1完整足迹、承重与移动；跨区列车的车头也可成为目标。",
+      "evidence": "contract-tests.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "F03": {
+      "first_version": "意图公开、推移保方向、移离架位取消、防空一轮一次。",
+      "evidence": "contract-tests.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "F04": {
+      "first_version": "预演与结算复用模拟；真实事件支撑宿敌学习和七海证据，预演不写事实。",
+      "evidence": "contract-tests.json、scenario-solutions.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "F05": {
+      "first_version": "24人、18段东行、6轮截止；单场保护目标和运输链按配置计算。",
+      "evidence": "contract-tests.json、native-playtest.md",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "F06": {
+      "first_version": "手部、备件、承重、飞行、回执与组件条件决定资格。",
+      "evidence": "contract-tests.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false,
+      "20261010_construction": {
+        "status": "施工中；完整包未关闭",
+        "checkpoint": "实施进度-20261010.json",
+        "updated_at": "2026-10-11T01:07:12.442810+08:00",
+        "full_scope_complete": false,
+        "user_accepted": false
+      }
+    },
+    "F07": {
+      "first_version": "护盾/护群/标定/推撞/水面/殉爆使用通用效果；不靠剧情强制胜利。",
+      "evidence": "scenario-solutions.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "U01": {
+      "first_version": "保留鼠标探索、左键行动、右键退出；Ctrl鼠标只操作相机。",
+      "evidence": "native-playtest.md",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false,
+      "20261010_construction": {
+        "status": "施工中；完整包未关闭",
+        "checkpoint": "实施进度-20261010.json",
+        "updated_at": "2026-10-11T01:07:12.442810+08:00",
+        "full_scope_complete": false,
+        "user_accepted": false
+      }
+    },
+    "U02": {
+      "first_version": "点设施自动寻找合法接近点并完成一步操作；七海柜体根据状态给出当前动作。",
+      "evidence": "contract-tests.json、native-playtest.md",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "U03": {
+      "first_version": "保留伤害、位移、取消威胁的同源预演，追加航空迫降与层筛选。",
+      "evidence": "air-b-airborne.png、contract-tests.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false,
+      "20261010_construction": {
+        "status": "施工中；完整包未关闭",
+        "checkpoint": "实施进度-20261010.json",
+        "updated_at": "2026-10-11T01:07:12.442810+08:00",
+        "full_scope_complete": false,
+        "user_accepted": false
+      }
+    },
+    "U04": {
+      "first_version": "首关精简目标链；系统局分别显示部件、权限或宿敌状态。",
+      "evidence": "permit-start.png、combine-start.png、rival-start.png",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "U05": {
+      "first_version": "三面共享回合；真实转场、等待抵达与飞行快速转移，单场不显示不存在的战场。",
+      "evidence": "contract-tests.json、native-playtest.md",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "U06": {
+      "first_version": "沿用撤回/回看，试演独立结算不刷战役资源；新存档命名隔离。",
+      "evidence": "scenario-solutions.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false,
+      "20261010_construction": {
+        "status": "施工中；完整包未关闭",
+        "checkpoint": "实施进度-20261010.json",
+        "updated_at": "2026-10-11T01:07:12.442810+08:00",
+        "full_scope_complete": false,
+        "user_accepted": false
+      }
+    },
+    "U07": {
+      "first_version": "默认六机出击、可选试演与局前对白；本版说明和目标按当前配置。",
+      "evidence": "case-menu.png、rescue-start.png",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "U08": {
+      "first_version": "复用显示路径并重新校验真实消耗与新障碍；300次悬停p95由68.392ms降至10.373ms，30次选择p95为51.888ms。Ctrl点击、普通点选、移动与撤回已在原生窗口复查。",
+      "evidence": "interaction-latency.json；mechanics-integration.json；native-review-20261010.md",
+      "status": "实际子集已接入，完整包未关闭",
+      "full_package_closed": false,
+      "20261010_construction": {
+        "status": "施工中；完整包未关闭",
+        "checkpoint": "实施进度-20261010.json",
+        "updated_at": "2026-10-11T01:07:12.442810+08:00",
+        "full_scope_complete": false,
+        "user_accepted": false
+      }
+    },
+    "U09": {
+      "first_version": "本版未实施此完整工作包；保留原稿设计与后续出口。",
+      "evidence": "",
+      "status": "原计划保留，尚未实施",
+      "full_package_closed": false
+    },
+    "A01": {
+      "first_version": "重新按原配色和材质对照重做：A鼠尾草绿/铜、B灰紫/矿物青水、C瓦红/褪蓝站台；独立玻璃、矿物、涂层与金属材质，机体涂装不染色。 外围站棚、厂房、吊机与货箱也采用同一角色色板；中性补光避免统一偏蓝。；按10月10日新视觉标准修订规范、场景色板与HUD，重绘三张剧情背景。",
+      "evidence": "13-建筑比例与材质重做.html；rescue-nohud-A/B/C.png",
+      "status": "实际子集已接入，完整包未关闭",
+      "full_package_closed": false,
+      "report_url": "13-建筑比例与材质重做.html",
+      "20261010_construction": {
+        "status": "施工中；完整包未关闭",
+        "checkpoint": "实施进度-20261010.json",
+        "updated_at": "2026-10-11T01:07:12.442810+08:00",
+        "full_scope_complete": false,
+        "user_accepted": false
+      }
+    },
+    "A02": {
+      "first_version": "Blender制作15型×3实体状态；居民楼按5/6/7层重做，实际缺角、楼板塌损；电柜、货柜等改成实体破损。完整包仍需全局视觉验收。；按10月10日新视觉标准修订规范、场景色板与HUD，重绘三张剧情背景。",
+      "evidence": "13-建筑比例与材质重做.html；prop-review.json；architecture-runtime.json",
+      "status": "实际子集已接入，完整包未关闭",
+      "full_package_closed": false,
+      "report_url": "13-建筑比例与材质重做.html",
+      "20261010_construction": {
+        "status": "施工中；完整包未关闭",
+        "checkpoint": "实施进度-20261010.json",
+        "updated_at": "2026-10-11T01:07:12.442810+08:00",
+        "full_scope_complete": false,
+        "user_accepted": false
+      }
+    },
+    "A03": {
+      "first_version": "腿架、背肩已拆成带UV/骨架的独立GLB；核心与完整机身仍为结构样本。",
+      "evidence": "combine-start.png、combine-joined.png",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "A04": {
+      "first_version": "复用美术HUD，新增任务特有的图形状态链和部件血槽。",
+      "evidence": "permit-start.png、combine-start.png",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "V01": {
+      "first_version": "18招接触/结果/输入恢复时钟接入事件播放；没有独立演出胜利脚本。",
+      "evidence": "presentation-final.log",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false,
+      "20261010_construction": {
+        "status": "施工中；完整包未关闭",
+        "checkpoint": "实施进度-20261010.json",
+        "updated_at": "2026-10-11T01:07:12.442810+08:00",
+        "full_scope_complete": false,
+        "user_accepted": false
+      }
+    },
+    "V02": {
+      "first_version": "修正悬浮/下沉，保留连续路径与既有骨骼动作。全招关节自然度未完成人类验收。",
+      "evidence": "native-playtest.md",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false,
+      "20261010_construction": {
+        "status": "施工中；完整包未关闭",
+        "checkpoint": "实施进度-20261010.json",
+        "updated_at": "2026-10-11T01:07:12.442810+08:00",
+        "full_scope_complete": false,
+        "user_accepted": false
+      }
+    },
+    "V03": {
+      "first_version": "本版未实施此完整工作包；保留原稿设计与后续出口。",
+      "evidence": "",
+      "status": "原计划保留，尚未实施",
+      "full_package_closed": false
+    },
+    "V04": {
+      "first_version": "桥面复位、制动架退出、组件合分由真实对象状态驱动。",
+      "evidence": "native-playtest.md、combine-joined.png",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "V05": {
+      "first_version": "本版未实施此完整工作包；保留原稿设计与后续出口。",
+      "evidence": "",
+      "status": "原计划保留，尚未实施",
+      "full_package_closed": false,
+      "20261010_construction": {
+        "status": "施工中；完整包未关闭",
+        "checkpoint": "实施进度-20261010.json",
+        "updated_at": "2026-10-11T01:07:12.442810+08:00",
+        "full_scope_complete": false,
+        "user_accepted": false
+      }
+    },
+    "V06": {
+      "first_version": "首关18招沿用动画并接独立时钟；新增合分与升降事件。未宣称全机动作资产完成。",
+      "evidence": "presentation-final.log",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false,
+      "20261010_construction": {
+        "status": "施工中；完整包未关闭",
+        "checkpoint": "实施进度-20261010.json",
+        "updated_at": "2026-10-11T01:07:12.442810+08:00",
+        "full_scope_complete": false,
+        "user_accepted": false
+      }
+    },
+    "V07": {
+      "first_version": "七局短场景与实际触发的通讯；未完成所有专属分镜/语音。",
+      "evidence": "rescue_cases.gd、native-playtest.md",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "E01": {
+      "first_version": "固定题面意图与下一轮公开状态；宿敌仅学习过去发生的接力。",
+      "evidence": "contract-tests.json、scenario-solutions.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "E02": {
+      "first_version": "首关三批增援，阻点延迟与坑洞取消；拆桥工机允许沟通保全。",
+      "evidence": "contract-tests.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "E03": {
+      "first_version": "不作为与有效六手有不同结果；签名/机械两条许可解法。尚无玩家平衡结论。",
+      "evidence": "contract-tests.json、scenario-solutions.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "L01": {
+      "first_version": "按R1固定重排10×8三面：供电/跨渠/装卸，各自保护对象和关键接口。",
+      "evidence": "rescue-start.png、rescue-bridge.png、rescue-station.png",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "L02": {
+      "first_version": "C在西B在东，实际轨道连续，公共母线/敌炮馈电分开。",
+      "evidence": "contract-tests.json、rescue-station.png",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "L03": {
+      "first_version": "七个招牌局和六个系统局均复用通用规则，并各有合法通关路径。",
+      "evidence": "scenario-solutions.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "S01": {
+      "first_version": "真实水渠、桥面承重、0/2航空层。不是完整任意多层空间。",
+      "evidence": "contract-tests.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "S02": {
+      "first_version": "上层检修板和居民楼支持局部剖切，保留实体支撑结构；楼后机体点选与剖切复原已做实际运行检查。",
+      "evidence": "13-建筑比例与材质重做.html；residence-cutaway.png；architecture-runtime.json",
+      "status": "实际子集已接入，完整包未关闭",
+      "full_package_closed": false,
+      "report_url": "13-建筑比例与材质重做.html"
+    },
+    "S03": {
+      "first_version": "吊运和升降检查载重、净空、承重和整片落点；隧道堵出口后可等待或合法撤回入口，撤回不返还本轮移动。机构演出和全场覆盖仍未关闭。",
+      "evidence": "mechanics-integration.json",
+      "status": "实际子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "S04": {
+      "first_version": "上下层经真实楼梯边相连；失去支撑会坠落，少数格悬空的伤害按支撑变化只结算一次，重复检查不持续扣血。桥底、堆箱及全部转交局仍未完成。",
+      "evidence": "mechanics-integration.json；full-contract.json",
+      "status": "实际子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "S05": {
+      "first_version": "跨区架炮受C专线控制，桥路受A母线控制；未声称全部机构上线。",
+      "evidence": "contract-tests.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "S06": {
+      "first_version": "0/2层目标筛选、起降、防空架位、燃料A/B、确定迫降。",
+      "evidence": "contract-tests.json、air-b-airborne.png",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "S07": {
+      "first_version": "俯冲、投弹、覆盖、扫射、空撞、抓取、观测都有独立命令和状态后果；屋盖拦截、整片迫降足迹和实际落层通过检查。逐招演出与玩家比较仍未完成。",
+      "evidence": "mechanics-integration.json；full-contract.json",
+      "status": "实际子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "R01": {
+      "first_version": "14台候选配置复用原资源；本版主要验证六机和七台招牌，不等同14台完整动作验收。",
+      "evidence": "case-configurations.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "R02": {
+      "first_version": "真实组件合分、伤势保留、唯一肩炮卸装；正式卸装机身造型仍待制作。",
+      "evidence": "contract-tests.json、combine-start.png",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false,
+      "20261010_construction": {
+        "status": "施工中；完整包未关闭",
+        "checkpoint": "实施进度-20261010.json",
+        "updated_at": "2026-10-11T01:07:12.442810+08:00",
+        "full_scope_complete": false,
+        "user_accepted": false
+      }
+    },
+    "R03": {
+      "first_version": "七台各有一局实际题面，规则不同、局面与解法见第11册。",
+      "evidence": "scenario-solutions.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "P01": {
+      "first_version": "通讯人物与实机分离，七海本人不出现在本关；勇拳核心不冒充独立机魂。",
+      "evidence": "canon-strict.log",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "P02": {
+      "first_version": "纪存沟通、七海归档/核验、豪司一次强化接入；未关闭十条精神全集。",
+      "evidence": "contract-tests.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "P03": {
+      "first_version": "同一人物指令可从人物页与情境目标提交，成功才扣本战次数。",
+      "evidence": "contract-tests.json、native-playtest.md",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "P04": {
+      "first_version": "实验入口已接16个实例、冻结种子、牌库持久化、实际贡献结算、6/14经验解锁、模块购买/装备、卡牌收藏/替换/升级/移除与重复领取防护。完成一条R5救援流程及68项回归；三关经济及玩家A/B去留结论尚未完成。普通R1仍固定装备。",
+      "evidence": "progression.json；progression-ui.json；full-contract.json；growth-workshop.png",
+      "status": "实际子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "P05": {
+      "first_version": "社勇王拒绝伤及居民，撤掉错误命令后可换侧完成任务；无失败即扣次。",
+      "evidence": "scenario-solutions.json",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "P06": {
+      "first_version": "断冠真实观察两机接力、下轮公开单次减伤；换向可破解。",
+      "evidence": "scenario-solutions.json、rival-start.png",
+      "status": "首版子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "Q02": {
+      "first_version": "保留首版378项和14条解法；本轮补2068项通用规则、173项机制集成、68项成长检查；45个实体模型、遮挡、三面实机渲染通过运行检查。",
+      "evidence": "full-contract.json；mechanics-integration.json；progression.json；architecture-runtime.json；prop-review.json",
+      "status": "实际子集已接入，完整包未关闭",
+      "full_package_closed": false
+    },
+    "Q03": {
+      "first_version": "10月10日原生窗口重新检查Ctrl点击、模型点选、移动预算4→0及Z撤回4；成长菜单采用运行时界面检查，因原生UI工具未能点击，不算人工完成整个成长流程。未签署玩家首玩、美术或音效验收。",
+      "evidence": "native-review-20261010.md；progression-ui.json",
+      "status": "实际子集已接入，完整包未关闭",
+      "full_package_closed": false,
+      "20261010_construction": {
+        "status": "施工中；完整包未关闭",
+        "checkpoint": "实施进度-20261010.json",
+        "updated_at": "2026-10-11T01:07:12.442810+08:00",
+        "full_scope_complete": false,
+        "user_accepted": false
+      }
+    }
+  },
+  "20261011_construction_checkpoint": {
+    "at": "2026-10-11T07:43:39.706032+08:00",
+    "scope_unchanged": 52,
+    "complete": false,
+    "player_accepted": false,
+    "code_changes": [
+      "按真实对象脚印、射向和导弹距离分离逐目标生效cue；完整事件日志记录显示帧延迟",
+      "结束回合预告加入居民楼与城防实际损伤；失败事件保留实际致败目标、原因和父事件",
+      "通用事件根包含后置能力、维修与护盾前后值、资源前后值；通用defeat_targets替代居民仓名称特判",
+      "伤害接触只作用上身，脚/规则根不漂移；镜头改为3/5/8像素、12帧回位，仍待实机审看",
+      "新增三款六至八层工业办公楼、楼板/设备核心/屋顶风机与管线；甲板实体检修廊与护板",
+      "新增绘制工业地面材质atlas，接入实际甲板；正常镜头仍偏浅，需要继续对标审查",
+      "王者背架闭合连接轨/翼根承力架、双炮实际落地炮座/销轴/四支撑脚已生成；仍需渲染复查"
+    ],
+    "clean_checks": [
+      "/tmp/gongwu-result-cues-isolated-20261011.log.result.json",
+      "/tmp/gongwu-causal-contract-20261011.log.result.json",
+      "/tmp/gongwu-ground-atlas-20261011.log.result.json",
+      "/tmp/gongwu-king-mount-sole-20261011.log.result.json"
+    ],
+    "native_observed": {
+      "record": "artifacts/formulas/production-lab-v1/qa/native-input-20261011/native-player-review-20261011.json",
+      "observations": [
+        "地图直接选择王者2×2、炮/钻在首行、路线+蓄力费用短卡",
+        "右键返回走位/自由；原生Enter提交结束回合，镜头跟随远区后果",
+        "连续空过回合看到城防/车损伤、增援和失败；致败后留在棋盘；查看结算可用"
+      ],
+      "new_regression_pending": [
+        "修正后的居民楼预告与失败文字",
+        "Ctrl点击/拖拽/滚轮独占",
+        "新镜头像素震幅与接令下肢姿态"
+      ]
+    },
+    "native_input_current": "原生工具再次返回Mac锁屏，已发异步解锁请求；未用脚本输入冒充原生鼠标测试",
+    "failed_attempts": [
+      "/tmp/gongwu-result-cues-20261011.log：错误测试距离与未限帧；保留失败，不当性能通过",
+      "/tmp/gongwu-result-cues-cached-20261011.log：并发建模造成首发延迟；改为隔离限帧复测",
+      "/tmp/gongwu-king-mounts-build-20261011.log：Blender Vector.length误作方法；修正后重建成功"
+    ],
+    "next": [
+      "检查王者完整/卸装/复装与现场炮四方向，刷新原模型支撑缓存",
+      "补全部建筑正式三阶段损坏件，不以额外散片代替破坏模型",
+      "制作并逐招检查18招+其余8机连续演出、音轨、拳/掌/刀、腿髋、受击与恢复",
+      "解锁后恢复原生操作/失败定位/反例复测",
+      "继续原52条剩余内容；不宣布首关或数据/测试即完成"
+    ],
+    "checkpoint": "实施进度-20261010.json",
+    "formal_packages_closed": 0,
+    "actual_player_acceptance": false
+  },
+  "20261011_motion_and_surface_checkpoint": {
+    "at": "2026-10-11T09:04:36.859781+08:00",
+    "scope_unchanged": 52,
+    "complete": false,
+    "player_accepted": false,
+    "code_changes": [
+      "原3台旧适配骨架接入共用ModelMotion；保留原模型/UV/手部接触点及关节映射",
+      "无牌独立转轴回旋踢：身体/髋转轴、支撑脚与膝关节，主流程、四向侧推、招式舞台共用解析器",
+      "KIT修订追加旧存档缺失招式，明确迁移记录，不重置行动/移动/弹药/备件/持续任务/自定义能力",
+      "拆翼全过程与结算统一处理GLTF点号→下划线节点名，翼架无残留",
+      "群盾演出cue补真实shielded事件类型；连续录制发现后修复",
+      "检修钢板区域新增实体底槽、承重边缘和紧固件，正常镜头审看待做"
+    ],
+    "clean_checks": [
+      "/tmp/gongwu-round-kick-contract-20261011.log.result.json",
+      "/tmp/gongwu-round-kick-contact-final-20261011.log.result.json",
+      "/tmp/gongwu-contract-regression-20261011.log.result.json",
+      "/tmp/gongwu-module-visibility-fixed-20261011.log.result.json"
+    ],
+    "native_input_current": "应用列表和Godot画面可读；Ctrl原生click返回noWindowsAvailable，游戏未收到输入；不算鼠标复测通过",
+    "failed_attempts": [
+      "round_kick_visual首次fixture缺hero；重测暴露旧适配器接口报错，已改共用接口",
+      "回旋踢最初接触距离4m，已修至接触<0.001m；支撑轴漂移最大0.066m，仍待连续观感",
+      "all_action_sequence首录群盾事件缺type并遇取消段空contact，修复后重新录制进行中"
+    ],
+    "next": [
+      "连续复查18招与其余8机实际画面/音轨/受力；保留失败录像",
+      "正常战棋镜头检查实体钢板、三种建筑损毁与区域质感，不以换色算完成",
+      "王者卸装后翼/炮部件自身闭合结构仍需美术处理",
+      "恢复原生Ctrl独占/拖拽/滚轮/失败复测",
+      "继续52条剩余范围，未关闭任何完整工作包"
+    ]
+  },
+  "20261011_geometry_and_multirig_checkpoint": {
+    "at": "2026-10-11T10:35:59.532632+08:00",
+    "scope_unchanged": 52,
+    "complete": false,
+    "player_accepted": false,
+    "code_changes": [
+      "地面检修面修正实体镂空三角化、增加钢板压纹与承重边；正常镜头已检查，场景完整美术仍未通过",
+      "四类外围建筑真实三态结构损坏：厂房断梁塌顶、泵站转子、站楼雨棚、变压器绕组；66件运行渲染审查中",
+      "合体支撑改为每网格实际骨架；根坐标地面采样、模型摘要与采样合同双重校验缓存，21个模型复查中",
+      "王者翼组增加每侧五片闭合压力叶片、根护甲、承力导轨与推进轴承，合并同一可卸下对象；切面封口；实机审图未完成",
+      "新增光束头部与接触帧一致检查，扩展暂停检查到直射与双炮；待运行"
+    ],
+    "clean_checks": [
+      "/tmp/gongwu-all-support-poses-20261011.log.result.json",
+      "/tmp/gongwu-latency-named-cache-20261011.log.result.json",
+      "/tmp/gongwu-apron-emboss-final-20261011.log.result.json"
+    ],
+    "latency_ms": {
+      "selection_p95": 50.798,
+      "hover_p95": 10.986,
+      "samples_selection": 30,
+      "samples_hover": 300,
+      "note": "17个缓存时的主工程，不把此数值当作后续新多骨架版本已复测"
+    },
+    "native_input_current": "用户回复解锁后曾可原生操作；此后工具 again noWindowsAvailable，启动经 LaunchServices 重试则明确Mac锁屏，未发送成功输入。当前进程已关闭，继续制作。",
+    "failed_attempts": [
+      "/tmp/gongwu-multirig-all-poses-20261011.log：上部件原点高导致零地面采样；已改根坐标采样，待复测，不忽略失败",
+      "run_gongwu_runtime_check.py 不支持 --review-out 尾部参数，已按支持接口执行"
+    ],
+    "remaining": [
+      "21模型动作脚底缓存一致性与性能复测",
+      "66件损坏状态和正常镜头美术对标",
+      "王者模块四方向实体与炮口",
+      "新光束连续演出及暂停回归",
+      "原生Ctrl/鼠标/新技能/跨区/失败复查",
+      "继续原52条完整范围，仍无完整交付"
+    ]
+  },
+  "20261011_declarative_city_checkpoint": {
+    "at": "2026-10-11T13:08:10.762309+08:00",
+    "scope_unchanged": 52,
+    "complete": false,
+    "player_accepted": false,
+    "runtime_version": "GW52.20261011.B05 / 主工程",
+    "code_changes": [
+      "21个骨架/形态的真实支撑顶点改为预编译缓存；动作绑定预编译，保留真实模型、皮肤和逐骨姿态",
+      "100/125/130%对象检查浮窗改为有界尺寸与可滚动细则，滚轮仅在I详查时滚动细则，Ctrl滚轮仍属镜头",
+      "全部装备16方向检查包含翼、钻、盾的储存脚印和双炮炮座，不改变原武器费用",
+      "危险音每条真实致败预告只响一次；通讯提示仅在有实际对白时压低背景声；音频复核待做",
+      "运输、限时、击破、接线、合体目标改为声明式合同；主流程不按剧情名称选择胜利判定；移除专关惰性car/power/bridge占位对象",
+      "安全契约从机体名称特判移至能力数据；旧非立体路径也按真实直接/连锁后果判断人员风险",
+      "货柜护场反例暴露2+2爆炸超过盾2；保留数值池规则，正确落点可只让殉爆波及维护舱并无损清敌",
+      "新闸机69件实体UV三态资产已构建；三区城市下层街道高度和可见性修正、增加正式办公楼体量，后续同位审图待做"
+    ],
+    "clean_checks": [
+      "/tmp/gongwu-packed-support-20261011.log.result.json",
+      "/tmp/gongwu-packed-frame-cost-20261011.log.result.json",
+      "/tmp/gongwu-inspect-125-20261011.log.result.json",
+      "/tmp/gongwu-all-stored-equipment-20261011.log.result.json",
+      "/tmp/gongwu-declarative-consent-20261011.log.result.json",
+      "/tmp/gongwu-generic-goals-transports-20261011.log.result.json",
+      "/tmp/gongwu-safety-shield-chain-20261011.log.result.json",
+      "/tmp/gongwu-declarative-scenarios-fixed-20261011.log.result.json",
+      "/tmp/gongwu-declarative-missions-current-contract-fixed-20261011.log.result.json",
+      "/tmp/gongwu-declarative-generic-mechanics-20261011.log.result.json",
+      "/tmp/gongwu-sixty-nine-props-20261011.log.result.json"
+    ],
+    "frame_ms": {
+      "median": 14.266,
+      "p95": 15.034,
+      "maximum": 18.878,
+      "baseline_median": 17.455,
+      "note": "实际主工程1440×900默认显示、隔离采样；后续新城建与浮窗版本仍需重新量测，非录屏定帧值"
+    },
+    "failures": [
+      "旧v5卸炮测试使用原先1格肩部件和默认同格位置，与正式2×2部件冲突；已改为合法整体占地，不放宽运行判定",
+      "旧名场面脚本直接打爆箱造成维护舱真实损伤；已增有盾/无盾、两种爆心的反例检查，并保留失败日志",
+      "人物全链渲染暴露旧父世界无桥面时访问Nil；已加可选桥面检查，22页菜单复测进行中"
+    ],
+    "native_input_current": "工具仍明确返回Mac锁屏；异步解锁请求未获新答复。未把脚本输入或渲染录制记作原生鼠标通过。",
+    "next": [
+      "同位审查新城市层次、69件实体破坏件，继续改善正常镜头美术",
+      "实际全链菜单与场景入口复测，故障修好后再记内部通过",
+      "复测最新浮窗后的选机/鼠标延迟和帧时，不与Blender或GPU录制并发",
+      "当前动作绑定/光束/回旋踢/暂停与声音连续复查",
+      "机体全量美术、独立动作和52条剩余要求继续施工；未形成整体交付"
+    ]
+  },
+  "20261011_native_and_full_roster_checkpoint": {
+    "at": "2026-10-11T16:40:45.592795+08:00",
+    "scope_unchanged": 52,
+    "complete": false,
+    "player_accepted": false,
+    "clean_checks": [
+      "/tmp/gongwu-b05-head-shoulder-portraits-20261011.log.result.json",
+      "/tmp/gongwu-b05-all-actors-idle-curves-20261011.log.result.json",
+      "/tmp/gongwu-b05-26-skin-support-20261011.log.result.json",
+      "/tmp/gongwu-b05-head-roster-ui-scale-20261011.log.result.json",
+      "/tmp/gongwu-b05-solid-residence-main-art-retry-20261011.log.result.json",
+      "/tmp/gongwu-enemy-continuous-route-20261011.log.result.json",
+      "/tmp/gongwu-full-people-menus-b05-fixed-20261011.log.result.json",
+      "/tmp/gongwu-b05-risk-cursor-details-20261011.log.result.json"
+    ],
+    "native_input_current": "解锁后CUA点击和按键成功，已完成首轮操作并进入R2；Ctrl拖拽/滚轮仍未取得实测通过",
+    "native_observed": [
+      "地图选择2×2王者；Ctrl点击不移动/扣行动；普通点击移动，Z复原位置与费用",
+      "社勇原子走近后复位A母线；预算走近后回正B桥座；灰崎走近后切C炮专线",
+      "雷翎导弹首点击未执行；第二击命中货柜与喷酸体，列车HP6→4；UI确认提示过快消失待修",
+      "Return确认结束回合；镜头跟敌方与环境；R2城防7→6、列车0→4段"
+    ],
+    "failed_or_unverified": [
+      "原生Ctrl拖拽组合因工具不能单独保持修饰键未完成；不计通过",
+      "1080p选择p95约58ms，但帧p95约53ms、尚未达到60Hz",
+      "居民楼9种新实体渲染已看；场景仍平/空/碎，不能关闭完整美术工作包",
+      "旧原生QA存档尚无内置代码hash；保持工具日志版本与该存档的证据边界"
+    ],
+    "next": [
+      "回归持久误伤提示/上下文设施标签/远区取消定位/撤回朝向",
+      "继续正常镜头地形建筑精修与列车独立车头三损坏模型",
+      "完成剩余52包原规格中的连续演出、机制反例、三任务与系统关、原生性能和声音检查"
+    ]
+  },
+  "20261011_B07_input_terrain_checkpoint": {
+    "at": "2026-10-11T18:10:14.330467+08:00",
+    "runtime_version": "GW52.20261011.B07 / 主工程",
+    "scope_unchanged": 52,
+    "complete": false,
+    "player_accepted": false,
+    "code_changes": [
+      "误伤首次点击保留具体风险原因；第二次确认绑定完整快照，右键取消无扣费；原生B06已操作验证",
+      "上下文设施标签来自共同合法命令/走近解析器；原生直接点馈电柜成立",
+      "实际后果条独立于悬停；远区取消有位置芯片、小地图划线与定位圈；圈与短文待原生B07复核",
+      "撤回/重放后模型朝向同步快照；原生B06移动后Z复原已验证",
+      "状态未变时保留主HUD与预演缓存，1080p选择p95约22ms，不改规则/美术精度",
+      "独立列车头/车厢与各三阶段损毁，72件/24类资产；C→B物理车头向东",
+      "Idle使用已验证支撑缓存时推迟强制骨架全局更新；26模型1991实际皮肤姿态≤1mm",
+      "新的实体输送带：地坪挖槽、滚轴、轴承、侧梁；删除旧重叠滚轴",
+      "下层火/电/输送带不施加给上层；多格载荷触及任一输送格只搬运一次",
+      "Ctrl拖动从实际屏幕位移计算阈值，支持relative=0；Mac物理按钮mask区分Ctrl左旋转/右平移；触控板PanGesture遵守Ctrl相机独占"
+    ],
+    "clean_checks": [
+      "/tmp/gongwu-b07-layered-terrain-exposure-active-20261011.log.result.json",
+      "/tmp/gongwu-b07-terrain-generic-mechanics-20261011.log.result.json",
+      "/tmp/gongwu-b07-terrain-declarative-mission-20261011.log.result.json",
+      "/tmp/gongwu-b07-single-conveyor-bed-render-20261011.log.result.json",
+      "/tmp/gongwu-b07-retained-hud-font-layout-20261011.log.result.json",
+      "/tmp/gongwu-b07-macos-physical-button-mask-20261011.log.result.json"
+    ],
+    "native_observed": {
+      "build": "GW52.20261011.B06",
+      "evidence": "artifacts/formulas/production-lab-v1/qa/native-input-20261011/native-B06-review.json",
+      "all_23_code_and_6_asset_hashes_matched_before_next_edit": true,
+      "cases": [
+        "地图选择2×2王者",
+        "Ctrl点击不下令",
+        "设施标签一次点击走近切专线",
+        "结果条持续可见，位置芯片切区",
+        "移动Z恢复费用与朝向",
+        "误伤第一击长时间不执行；右键取消；第二击确认后实际车HP6→4"
+      ]
+    },
+    "latency_1080p": {
+      "selection_p95_ms": 22.324,
+      "hover_p95_ms": 6.521,
+      "frame_p95_ms": 33.333,
+      "real_full_scene_steady_profile_p95_ms": 17.896,
+      "target_60hz_met": false,
+      "evidence": "/tmp/gongwu-b05-retained-hud-latency-20261011.log.result.json"
+    },
+    "failed_or_unverified": [
+      "地形新测试首次单位未设active=true，保留失败输入；已修激活并增加悬浮反例，不修改规则来迎合无效测试",
+      "原生Ctrl保持拖拽/滚轮工具组合串行，尚未验证；Mac当前已解锁，不再记为锁屏阻碍",
+      "动作时钟180秒检查超时；改逐段有界等待后184.743秒全段通过，但最大显示延迟2.45源帧，不满足±1帧故仍开放",
+      "正常场景已看A/C实体地坪和现代楼群，但盘面构图、材质精度和全机一致性仍需制作",
+      "声音仅测量37条非零无削波，未完成实际听觉审查"
+    ],
+    "next": [
+      "原生B07按钮mask/普通拖动/触控滚动/远区目标定位复测",
+      "继续场景整体构图与材质、18招+8机连续演出及实际音轨",
+      "检查任意编队任务可行性与部署能力建议",
+      "继续原52包全部采纳要求，未关闭完整工作包"
+    ]
+  },
+  "20261011_B08_deployment_checkpoint": {
+    "at": "2026-10-11T19:27:01.852957+08:00",
+    "runtime_version": "GW52.20261011.B08 / 主工程",
+    "scope_unchanged": 52,
+    "complete": false,
+    "player_accepted": false,
+    "code_changes": [
+      "任务数据声明部署能力需求；通过共同技能、工具、消耗、完整脚印合法站位和实际simulate结果判断，不按人物名授予施工能力",
+      "未来资格明确列出供电假设；当前首回合命令使用真实状态，支撑不误要求已接电",
+      "所有出击实际应用整备模块一次；加载已玩存档不重复调参；系统专关不混入救援资格限制",
+      "部署整页流式布局；固定编队槽与底部，14机列表可滚动；125/130%和1280/1440检查跨组件遮挡"
+    ],
+    "clean_checks": [
+      "/tmp/gongwu-b08-actual-opening-capabilities-20261011.log.result.json",
+      "/tmp/gongwu-b08-equipped-deployment-stage-20261011.log.result.json",
+      "/tmp/gongwu-b08-flow-deployment-layout-20261011.log.result.json",
+      "/tmp/gongwu-b08-native-snapshot-generic-roster-20261011.log.result.json"
+    ],
+    "native_observed": {
+      "build": "GW52.20261011.B08",
+      "evidence": "artifacts/formulas/production-lab-v1/qa/native-input-20261011/native-B08-review.json",
+      "all_24_code_and_6_asset_hashes_matched_before_next_edit": true,
+      "cases": [
+        "native 125 percent preference selection",
+        "six slots unobscured; scroll exposes last two of fourteen candidates; white selected by actual last-row button",
+        "B engineer replaced by boxer: cargo retains local support; cargo replaced by mirror: A support marked as transfer needed",
+        "A support replaced by unlicensed: bridge capability missing and launch disabled",
+        "fire bridge candidate restores viable equipment qualification",
+        "alternate selected squad starts in actual main scene; map clicks select white and show legal range/context bus command",
+        "Enter advances when pressed separately; four rapidly issued presses advanced only two dialogue steps due to debounce"
+      ]
+    },
+    "retained_failures": [
+      "原菜单布局边界测试通过却没发现新增提示盖住六槽；保留初始截图，改流式布局并增加跨组件碰撞检查，修后复查",
+      "4次极快Enter只有2次推进，逐次按键正常，后续需核对防抖行为与玩家手感",
+      "原生快照导出器仍硬编码王者，在替代编队中报错并超时；已改为遍历实际盟军，失败日志保留，通用导出复测通过。"
+    ],
+    "failed_or_unverified": [
+      "native click on bus command failed before input dispatch: CUA -10005 noWindowsAvailable; Godot PID was live, log had no engine errors; rebinding and exposed Raise did not restore clicks",
+      "not a full six-round route proof or player acceptance",
+      "physical held Control drag/wheel still not native verified",
+      "部署资格只证明装备能完成目标谓词，尚未证明任意自由编队都在六轮内成功",
+      "正常战棋美术、全员精度、连续动作与声音仍未达到完整交付条件",
+      "原生Ctrl持续拖拽/滚轮仍缺工具组合验证"
+    ],
+    "next": [
+      "部署缺装备显示具体工具与替代机体；保留滚动位置、改善换机反馈",
+      "动作时钟接触可见帧与实际结果同步；60Hz/30Hz/2倍速分别检验，不能改容差遮掩",
+      "三场正常视角场景与全员动作继续按原52工作包制作"
+    ]
+  },
+  "20261011_B09_visible_clock_and_scene_checkpoint": {
+    "at": "2026-10-11T20:49:40.864103+08:00",
+    "runtime_version": "GW52.20261011.B09 / 主工程",
+    "scope_unchanged": 52,
+    "complete": false,
+    "player_accepted": false,
+    "code_changes": [
+      "部署路由缺失明确显示所缺装备；换槽换机保留滚动位置（待当前原生复测）",
+      "静态环境按材质与32米空间区块合并提交；不减几何，保留动态/透明构件；非均匀缩放使用逆转置法线",
+      "动作使用绝对时钟；一实际显示帧只呈现一组同时间cue，接触/伤害/声效不被下一组姿势覆盖（复测中）"
+    ],
+    "evidence_archive": "artifacts/formulas/production-lab-v1/qa/B09-20261011",
+    "retained_failures": [
+      "原静态合批测试错误调用BoxMesh不存在的API，已修复；量化字符串比较不能判定压缩法线误差，改为三角形/绕向/材质/法线/UV数值比较",
+      "最初动作时钟等待绘制回调超时；随后无回调且空样本的检查曾退出0，现已明确拒绝空样本；旧结果保留不算时序证明",
+      "解锁后实际绘制52个cue，原版本最大显示偏差4个60Hz帧，新严格wrapper正确判失败；本轮修复正在复测",
+      "整材质大范围合并丧失视野裁剪，绘制三角面增加；已分空间合批，尚待同机位裁剪/性能对照"
+    ],
+    "clean_local_checks": [
+      "静态简单模型48面完整保留，4表面合1；动态/透明/带子光源对象未合并",
+      "非均匀办公楼45596三角面全保留，法线向量最大差0.000214，位置最大差0.0000149米，UV无差"
+    ],
+    "failed_or_unverified": [
+      "1080p完整画面p95约18.85ms，尚未稳定60fps；不可把无世界/关阴影实验当正式性能",
+      "全量三场美术、正常/快进/跳过连续演出与系统录音实听仍未完整核对",
+      "自由编队六回合通关、原生Ctrl持续拖拽/滚轮与独立首玩未验收"
+    ],
+    "next": [
+      "复测动作同帧显示合同；保留原60fps容差",
+      "空间合批同机位画面/性能对照，检查没有画质退化",
+      "部署滚动真实输入复测；继续52包原范围"
+    ]
+  },
+  "20261011_B11_saved_layout_and_native_checkpoint": {
+    "at": "2026-10-11T22:32:54.587047+08:00",
+    "runtime_version": "GW52.20261011.B11 / 主工程",
+    "scope_unchanged": 52,
+    "complete": false,
+    "player_accepted": false,
+    "evidence_archive": "artifacts/formulas/production-lab-v1/qa/B11-20261011",
+    "code_changes": [
+      "撤回未通过同位画面/性能的静态合批作为默认；保留 --qa-batched-environment 实验入口及失败证据",
+      "动作按同组cue原子显示，接触/结果/声效保留实际绘制帧；绝对时钟迟到仍单独记录",
+      "修复载入时强行回退平面世界布局；新增声明版次及角色区号绑定，资源/任务/未知布局保全",
+      "部署换机滚动位置与资格提示原生复测"
+    ],
+    "native_observed": [
+      "B10原生步行/撤回、取消炮击定位、普通拖/滚不改相机；录屏已归档",
+      "B11主工程旧档A焦点高度33保留供电/切馈电；实际暂停进入部署换歌翼、王者、预算；末行位置保留"
+    ],
+    "retained_failures": [
+      "静态合批几何保全但画面/裁剪/性能退化；没有作为主工程优化交付",
+      "初次录屏相对路径ERR_UNCONFIGURED；改绝对路径后566秒真实原生录像，固定fps不算性能或系统声实听",
+      "B09截图同名路径被Metal覆盖，后续使用renderer/driver/build区分，旧比较不作完整同位证明",
+      "Ctrl单独按键工具拒绝；Ctrl+F13保持结束后拖拽才开始，未算持续Ctrl验证",
+      "B11出击原生发送前noWindowsAvailable，Raise后重试相同；保存记录继续非输入制作"
+    ],
+    "failed_or_unverified": [
+      "规则矩阵、所有专关的预演/执行/回放一致性尚未全量复核",
+      "60fps目标性能未通过；主工程默认保持GL，Metal画质兼容未验收",
+      "Ctrl持续物理拖拽/滚轮及独立首玩没有证据；B11出击按钮工具在发送前noWindowsAvailable，未假定成功",
+      "全员正常镜头、连续正常/快进/跳过及系统声实听仍未完整通过"
+    ],
+    "new_workflow_review": "artifacts/formulas/production-lab-v1/qa/B11-20261011/Q02-batch-review.json",
+    "review_pass": false,
+    "next": [
+      "B12继续主工程机体正常镜头尺度、连续移动及钻击/造墙/射线/坠落样板；达到质量基准后扩展全部52包，不在样板结束。"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+budget_id	activity_scope	applies_to_templates	duration_target	max_hotspots	max_clues	max_carry_items	max_evidence	max_variable_deltas	max_battle_modifiers	max_unlock_flags	max_canon_entity_refs	max_long_arc_touches	required_result_fields	notes
+HB_MICRO_EVENT	微事件	T_REPAIR_TIMING;T_COMBINE_LOCK	30-90秒	1	1	1	0	1	1	1	1	0	activity_id;score_band;ui_summary	只做一个动作和一个结果，不开新网
+HB_SERVICE_OPENING	开馆经营	T_SERVICE	3-8分钟	3展岛;2岗位;3访客	3	3	1	2	2	2	5	1	activity_id;score_band;resource_delta;variable_delta;pressure_delta;ui_summary	经营是策展结算，不做模拟经营
+HB_SIDE_DIVE	残响深潜	T_SIDE_DIVE	4-8分钟	6	4	3	2	2	2	2	4	1	activity_id;score_band;resource_delta;variable_delta;battle_modifiers;source_nodes;ui_summary	一次深潜最多带回三个东西和一个长期轻触
+HB_REPAIR_TIMING	修复时机	T_REPAIR_TIMING	30-120秒	2	1	1	0	1	1	1	2	0	activity_id;score_band;resource_delta;battle_modifiers;soft_fail	修复不完美也要能继续
+HB_DIALOGUE_CONTRACT	谈判合规	T_DIALOGUE_CONTRACT	3-6分钟	4证据牌	3	1	4	2	2	2	4	1	activity_id;score_band;variable_delta;pressure_delta;unlocked_flags;ui_summary	谈判输出限制条款或战斗条件，不改写整章
+HB_ROUTE_PLANNING	路线规划	T_ROUTE_PLANNING	3-8分钟	6节点	2	2	1	2	3	2	4	1	activity_id;score_band;battle_modifiers;unlocked_flags;soft_fail	规划决定撤退点/队列/补给，不替代SRPG执行
+HB_SIGNAL_TUNING	信号调谐	T_SIGNAL_TUNING	2-8分钟	5	3	2	2	2	2	2	4	1	activity_id;score_band;variable_delta;battle_modifiers;source_nodes	用于旧影像、索引、远星，不能变复杂黑客游戏
+HB_RHYTHM_INTERRUPT	节奏打断	T_RHYTHM_INTERRUPT	1-4分钟	3节拍段	2	0	1	1	2	1	3	1	activity_id;score_band;battle_modifiers;soft_fail;ui_summary	容错要宽，失败只增加战斗压力
+HB_DUEL_COUNTER	轻格斗反击	T_DUEL_COUNTER	2-5分钟	3攻防段	2	1	1	1	2	1	3	0	activity_id;score_band;variable_delta;battle_modifiers;soft_fail	动作段只表达关系/非致命，不替代章节战
+HB_DISPATCH_PASSIVE	派遣/养护	T_DISPATCH_DECK;T_PASSIVE_CARE	30秒-3分钟	3任务	1	2	0	1	1	2	3	0	activity_id;score_band;resource_delta;ui_summary	可自动结算，不能成为每日清单负担
+HB_CHAPTER_BUNDLE	单章混合玩法总包	ALL	章内总计	12	6	5	3	4	4	4	8	2	activity_id;score_band;resource_delta;variable_delta;battle_modifiers;ui_summary	普通章总包上限，特殊章看chapter_content_budget_matrix

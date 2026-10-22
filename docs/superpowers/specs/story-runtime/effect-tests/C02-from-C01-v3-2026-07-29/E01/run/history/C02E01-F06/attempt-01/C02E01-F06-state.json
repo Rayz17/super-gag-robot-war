@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "fragment_id": "C02E01-F06",
+  "context_key": "49cb3cc190536c18bcef650502501d0909ceb4f09a4d77c0e7722ba6794e7e95",
+  "facts_established": [
+    {
+      "fact_id": "C02E01.ROTOR_LIMITED_INSTALL",
+      "statement": "木桶街全尺寸工房使用已经实测通过的适配座完成六米转子的有限安装与低速试转，万机馆恢复低速主循环并具备前往工务城的航行能力，但全舰校正、加速与战斗负载仍未通过。",
+      "evidence_in_draft": "本地工人完成起重固定，唐胶与兜灯以整圈检查确认无新擦痕；转子低速转动后内街通风恢复，主控仍保留高负载止动和醒目的限制提示。"
+    },
+    {
+      "fact_id": "C02E01.REPAINTS_FROZEN_AND_AWAKE",
+      "statement": "平台沿唐胶公开的中间版本、磨损和全尺寸复验记录锁定四台同基础骨架飞行实机并同时冻结服务；喷气叛星、死锁、镜星和雷翎以不同动作和声纹自行醒来，平台回收队接近，直接发动E02。",
+      "evidence_in_draft": "四间代管停放仓失去平台维护电源后，喷气叛星扬翼开门、死锁扯断维护牵引、镜星翻转识别灯、雷翎展开侦察翼发现回收队；四台机各自发声，没有被写成同一人格。"
+    },
+    {
+      "fact_id": "C02E01.STREET_REPLACEMENT_AND_TRANSFER_COMPLETED",
+      "statement": "万机馆与火种货柜领袖兑现交换方案，为木桶街运入其选定的替代机组；街区完成置换选择后由万机馆承接六米转子，平台即时提货退出。",
+      "evidence_in_draft": "替代机组在傍晚恢复街区当夜所需风量，领班随后在旧租牌上完成不承接原转子、由万机馆按公开方案承接的选择。"
+    },
+    {
+      "fact_id": "C02E01.TANG_DOUDENG_CRAFT_RELATION_ADVANCED",
+      "statement": "唐胶与兜灯在有限安装中保持手艺与安全分工，并通过狭窄作业道里的搀扶、包扎和共同复核形成自然身体亲近。",
+      "evidence_in_draft": "兜灯坚持先手推整圈复查并在唐胶滑倒时揽住他；唐胶为她包扎地锚链擦伤，两人共同确认检查片干净，再分别留下工艺观察点和高负载止动。"
+    },
+    {
+      "fact_id": "C02E01.JICUN_QIHAI_TRUTH_ADVANCED",
+      "statement": "纪存没有把有限修复说成痊愈，而是向七海完整承认舰侧受载、仅低速试转和未知加速风险；七海由他的坦白确认关系变化，并决定前往工务城当面继续。",
+      "evidence_in_draft": "纪存把未删减的主控限制画面交给七海；两人以过去隐瞒伤情的熟悉方式交谈，七海说明已经改好前往工务城的行程。"
+    },
+    {
+      "fact_id": "C02E01.QIHAI_WARNED_WITHOUT_AUTHORIZATION",
+      "statement": "七海发现平台回收链已冻结四机服务并主动发出预警，但明确不能解冻服务或批准四机出动。",
+      "evidence_in_draft": "七海向纪存发送四机位置、冻结通知和回收队正在接近的信息，同时直接说明自己没有解除或授权权限。"
+    }
+  ],
+  "entity_states": [
+    {
+      "entity_id": "MECHA_WANJI_MAIN_CIRCULATION_ROTOR",
+      "location": "万机馆主循环安装位",
+      "controller": "作为万机馆承接的全尺寸工业总成，由舰体自动系统低速运行，兜灯和本地工房保留安全止动与复核职责",
+      "physical_state": "已通过全尺寸适配座完成有限安装和低速试转；无新擦痕或滑移；尚未完成全舰校正、加速与战斗负载验证"
+    },
+    {
+      "entity_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "location": "木桶街外港旧泊位",
+      "controller": "自动航行系统维持巡展舰体，纪存决定航向和任务，工程负载受兜灯设置的临时止动限制",
+      "physical_state": "低速主循环与内街通风恢复，具备前往工务城的有限航行能力；舰侧受载后的全舰校正未完成，不得执行高加速、急转或战斗负载；未变形、未暴走"
+    },
+    {
+      "entity_id": "V353U044",
+      "location": "木桶街外环第一间平台代管停放仓门口",
+      "controller": "喷气叛星本地系统与独立主体",
+      "physical_state": "平台服务被冻结；自行扬翼并以发动机顶开仓门，保持可行动且尚未进入正式战斗；以轻快尖利声纹主动拒绝停放"
+    },
+    {
+      "entity_id": "V353U045",
+      "location": "木桶街外环第二间平台代管停放仓",
+      "controller": "重涂机“死锁”本地系统与独立主体",
+      "physical_state": "平台服务被冻结；伏低机体并扯断维护牵引，保持可行动且尚未进入正式战斗；声纹低沉粗粝"
+    },
+    {
+      "entity_id": "V353U046",
+      "location": "木桶街外环第三间平台代管停放仓",
+      "controller": "重涂机“镜星”本地系统与独立主体",
+      "physical_state": "平台服务被冻结；启动电子干扰并翻转仓内敌我识别灯，保持可行动且尚未进入正式战斗；以双层反向声纹指出识别错误"
+    },
+    {
+      "entity_id": "V353U047",
+      "location": "木桶街外环第四间平台代管停放仓",
+      "controller": "重涂机“雷翎”本地系统与独立主体",
+      "physical_state": "平台服务被冻结；展开一侧侦察翼并锁定东侧接近的回收队，保持可行动且尚未进入正式战斗；声纹清晰冷静"
+    },
+    {
+      "entity_id": "V353U071",
+      "location": "木桶街公共竞技场整备位",
+      "controller": "木桶街公共竞技场与参赛者共同维护；本次玩家临时挑战控制已断开，低权限竞赛AI保持本地状态",
+      "physical_state": "八米全尺寸竞赛实机经正常运输返回整备位，攀轨模块尚未卸下，无明确损伤；长期运输和随舰构筑席未解决"
+    },
+    {
+      "entity_id": "V353U043",
+      "location": "木桶街外港万机馆旁",
+      "controller": "火种货柜领袖独立载具人格",
+      "physical_state": "已收起长承载骨架并完成木桶街替代机组运输，正在补充能源；无明确损伤，承诺护送万机馆及后续货物前往工务城"
+    },
+    {
+      "entity_id": "V353U001",
+      "location": "万机馆舰侧作业平台旁",
+      "controller": "旧守护者自主行动，兜灯保有安全判断与停止关系",
+      "physical_state": "保持原装右前臂缺失、黄色非拳击型巡展臂和不能飞的限制；战后休整，无新增明确损伤"
+    }
+  ],
+  "character_states": [
+    {
+      "entity_id": "CH_TANGJIAO",
+      "desire_or_emotion": "看见公开修法、失败件和街区手艺最终让万机馆恢复呼吸，也清楚承认自己的能力只够完成有限安装，后续全舰校正必须交给工务城。",
+      "relationship_delta": "与兜灯在狭窄作业道共同复核、互相搀扶并替她包扎伤口；继续保有工艺判断，不越过她的安全职责。"
+    },
+    {
+      "entity_id": "CH001",
+      "desire_or_emotion": "让胜利建立在可复核的低速试转和明确止动上，而不是把成功安装误当成馆守Z或万机馆已经无风险。",
+      "relationship_delta": "接受唐胶留下的观察点和包扎，也让他参与完整复核；把高负载停止条件做成主控上的实体限制。"
+    },
+    {
+      "entity_id": "CH_JICUN",
+      "desire_or_emotion": "为万机馆恢复低速航行而高兴，同时不再用胜利遮住真实损伤；四机告警出现后立即把注意力转向木桶街天空。",
+      "relationship_delta": "向七海完整公开修复边界，以说实话推进旧亲密；得知她将前往工务城，并接收四机危险预警但未获得远程授权。"
+    },
+    {
+      "entity_id": "CH_QIHAI",
+      "desire_or_emotion": "在停权状态下继续追查回收链，发现公开维修史被平台用于锁定四机后选择预警并亲自前往后续现场。",
+      "relationship_delta": "听见纪存主动承认真实风险后缓和旧有不信任；不扮演远程授权器，决定到工务城与他当面继续。"
+    }
+  ],
+  "open_threads": [
+    {
+      "thread_id": "WANJI_FULL_SCALE_CALIBRATION",
+      "status": "open",
+      "note": "万机馆只能低速航行；全舰校正、加速、急转、战斗负载、永久外泊和保险问题必须带入工务城。"
+    },
+    {
+      "thread_id": "FOUR_REPAINTS_SERVICE_FREEZE",
+      "status": "open",
+      "note": "喷气叛星、死锁、镜星和雷翎已醒来并表现出不同主体反应，平台回收队正在接近；四机尚未战斗、未确认最终阵营或加入关系。"
+    },
+    {
+      "thread_id": "PLATFORM_PUBLIC_RECORD_BACKTRACE",
+      "status": "open",
+      "note": "平台利用公开的版本与维修关系追查资产，后续如何把四种改装压回同一货号仍需E02展开。"
+    },
+    {
+      "thread_id": "QIHAI_TRAVEL_TO_ENGINEERING_CITY",
+      "status": "open",
+      "note": "七海已改好前往工务城的行程，但本场仍远程留在原城，尚未实体到场。"
+    },
+    {
+      "thread_id": "WUPAI_ONE_FUTURE_TRANSPORT",
+      "status": "open",
+      "note": "无牌一号临时挑战已结束并返回公共竞技场；后续正常运输和随舰构筑席仍待解决。"
+    }
+  ],
+  "next_trigger": "四台同骨架飞行实机在平台服务冻结后以不同动作和声纹醒来，东侧回收队已抵达木桶街外环；纪存与街区必须立刻面对四机是否被压回同一货号的空中争夺。",
+  "unresolved_logic_risks": []
+}

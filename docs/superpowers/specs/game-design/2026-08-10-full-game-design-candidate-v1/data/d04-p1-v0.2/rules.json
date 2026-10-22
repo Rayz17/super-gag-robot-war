@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "ruleset_id": "D04-P1-RULESET-V0.2",
+    "authority": "Candidate",
+    "status": ["zero_build", "human_not_run", "user_not_decided"],
+    "shared_by": ["P1-A", "P1-B", "P1-C", "P1-D"]
+  },
+  "information_budget": {
+    "physics": "known_exact",
+    "enemy_current_intent": "known_exact",
+    "report_age_windows": 0,
+    "hidden_rng": false,
+    "hit_chance": false,
+    "random_critical": false,
+    "fog_of_war": false,
+    "future_contingencies": "only_declared_conditions"
+  },
+  "time": {
+    "tick_ms": 500,
+    "ticks_per_window": 16,
+    "window_ms": 8000,
+    "windows": 4,
+    "deadline_ms": 32000,
+    "autonomous_microticks": [4, 8, 12, 16],
+    "unused_body_ticks": "observe_and_stabilize_without_carryover"
+  },
+  "plan_packet": {
+    "fields": ["actor_id", "route", "end_facing", "main_action", "target", "reaction", "condition", "safe_stop"],
+    "body_budget_ticks": 16,
+    "route_main_reaction_share_budget": true,
+    "tempo_cost_formula_for_A_D": "ceil(total_body_ticks / 8)",
+    "tempo_min_if_nonempty": 1,
+    "tempo_max": 2,
+    "over_budget": "illegal_reject_before_commit",
+    "unlisted_actor_resolution": "observe_and_stabilize"
+  },
+  "actions": [
+    {"id": "TACT_ROUTE", "kind": "route_native", "allowed_tags": ["mobile"], "duration": {"mode": "route", "ticks_per_cell_field": "move_ticks_per_cell"}, "cost": {}},
+    {"id": "TACT_BRACE", "kind": "main", "allowed_tags": ["anchor"], "duration": {"mode": "fixed", "ticks": 4}, "cost": {}, "requires": ["support_cell_or_declared_direction"]},
+    {"id": "TACT_PUSH_TOW", "kind": "main", "allowed_tags": ["anchor", "engineer", "breaker"], "duration": {"mode": "by_tag", "ticks": {"anchor": 8, "engineer": 12, "breaker": 8}}, "cost": {}, "requires": ["contact", "declared_direction", "safe_destination"]},
+    {"id": "TACT_COVER", "kind": "reaction", "allowed_tags": ["anchor"], "duration": {"mode": "fixed", "ticks": 4}, "cost": {"reaction_slots": 1}, "requires": ["declared_protected_target", "reachable_adjacent_cell"]},
+    {"id": "TACT_CATCH", "kind": "reaction", "allowed_tags": ["anchor"], "duration": {"mode": "fixed", "ticks": 4}, "cost": {"reaction_slots": 1}, "requires": ["front_or_side_arc"]},
+    {"id": "TACT_RANGED", "kind": "main", "allowed_tags": ["skirmisher"], "duration": {"mode": "fixed", "ticks": 4}, "cost": {"ammo": 1}, "range_cells": 5, "force_band": 1, "penetration_band": 1},
+    {"id": "TACT_SUPPRESS", "kind": "main", "allowed_tags": ["skirmisher", "suppressor"], "duration": {"mode": "fixed", "ticks": 8}, "cost": {"ammo": 1}, "corridor_cells": 4, "penetration_band": 1},
+    {"id": "TACT_WAIT_CONDITION", "kind": "main", "allowed_tags": ["skirmisher"], "duration": {"mode": "declared", "min_ticks": 1, "max_ticks": 16}, "cost": {}, "requires": ["public_observable_condition", "latest_tick"]},
+    {"id": "TACT_INTERCEPT", "kind": "reaction", "allowed_tags": ["skirmisher"], "duration": {"mode": "fixed", "ticks": 4}, "cost": {"reaction_slots": 1}, "range_cells": 3, "force_band": 1, "penetration_band": 1},
+    {"id": "TACT_EVADE", "kind": "reaction", "allowed_tags": ["skirmisher"], "duration": {"mode": "fixed", "ticks": 4}, "cost": {"reaction_slots": 1}, "requires": ["adjacent_safe_cell"]},
+    {"id": "TACT_INTERACT", "kind": "main", "allowed_tags": ["engineer", "hunter"], "duration": {"mode": "fixed", "ticks": 8}, "cost": {}, "requires": ["adjacent_named_object", "stationary_during_action"]},
+    {"id": "TACT_FIELD_REPAIR", "kind": "main", "allowed_tags": ["engineer"], "duration": {"mode": "fixed", "ticks": 12}, "cost": {"tools": 1}, "requires": ["known_prior_damage", "support_or_adjacent_target"]},
+    {"id": "TACT_RESCUE", "kind": "main", "allowed_tags": ["engineer"], "duration": {"mode": "fixed", "ticks": 8}, "cost": {"tools": 1}, "requires": ["stopped_vehicle", "adjacent_safe_cell"]},
+    {"id": "TACT_ABORT", "kind": "reaction", "allowed_tags": ["engineer", "suppressor"], "duration": {"mode": "fixed", "ticks": 2}, "cost": {"reaction_slots": 1}, "requires": ["declared_abort_condition"]},
+    {"id": "TACT_MELEE", "kind": "main", "allowed_tags": ["breaker", "hunter"], "duration": {"mode": "by_tag", "ticks": {"breaker": 8, "hunter": 4}}, "cost": {}, "requires": ["contact", "declared_control_system_or_structure"]},
+    {"id": "TACT_WITHDRAW", "kind": "route_native", "allowed_tags": ["hunter"], "duration": {"mode": "route", "ticks_per_cell_field": "move_ticks_per_cell"}, "cost": {}, "requires": ["sample_custody"]}
+  ],
+  "physics": {
+    "bands": {"mass_band": [1,4], "force_band": [0,4], "momentum_band": [0,2], "stability_band": [0,2], "support_band": [0,2], "protection_band": [0,3], "system_state": [0,2]},
+    "displacement_formula": "force_band + momentum_band + source_support + valid_helper_support - target_mass_band - target_stability_band - target_support_band",
+    "displacement_results": [
+      {"max": -2, "result": "target_holds_source_stability_minus_1"},
+      {"min": -1, "max": 0, "result": "mutual_hold_each_stress_plus_1"},
+      {"min": 1, "max": 1, "result": "target_moves_1_target_stability_minus_1"},
+      {"min": 2, "max": 2, "result": "target_moves_up_to_2_remainder_to_stress"},
+      {"min": 3, "result": "target_moves_up_to_3_and_unstable"}
+    ],
+    "effect_formula": "penetration_band + force_band + relative_motion_band - protection_band - cover_band - system_guard_band",
+    "effect_results": [
+      {"max": 0, "result": "no_function_degrade"},
+      {"min": 1, "max": 1, "result": "declared_function_2_to_1"},
+      {"min": 2, "max": 2, "result": "function_2_to_1_and_stability_minus_1_or_function_1_to_0"},
+      {"min": 3, "result": "at_most_two_predeclared_nonlethal_effects"}
+    ],
+    "same_tick": "single_prestate_contact_component_then_simultaneous_delta",
+    "helper_limit": 2,
+    "friendly_overlap_without_handoff": "both_stop_at_last_safe_cell",
+    "rotation": "every_swept_cell_must_be_walkable_and_empty",
+    "occupancy": "one_physical_body_per_cell_except_declared_contact_boundary",
+    "cover_band_default": 0,
+    "system_guard_band_default": 0,
+    "lethal_body_deletion": false
+  },
+  "world_close_order": [
+    "replay_committed_events_by_tick_then_event_id",
+    "consume_named_bridge_markers_once",
+    "apply_bridge_base_tick_once_if_hazard_occupied",
+    "apply_active_brace_once",
+    "clamp_bridge_stress_and_update_bridge_state",
+    "evaluate_independent_objectives",
+    "capture_next_observation_snapshot",
+    "expire_reactions_and_volatile_flags",
+    "advance_world_time_and_cycle_once",
+    "emit_stable_receipt"
+  ],
+  "bridge": {
+    "stress_min": 0,
+    "stress_max": 6,
+    "base_tick_per_window_max": 1,
+    "named_marker_consumption": "once_per_event_id",
+    "engineer_completed_support_delta": -1,
+    "brace_delta_scope": "current_window_positive_delta_only_never_repairs_preexisting_stress",
+    "close_formula": "stress_close = stress_after_immediate_repair + max(0, occupancy_delta + named_contact_delta - active_brace_amount)",
+    "brace_persists_until_move_instability_or_support_damage": true,
+    "same_tick_repair_cannot_remove_new_damage": true
+  },
+  "objectives": {
+    "OBJ_EVACUATE": {"type": "primary", "deadline_cycle": 4, "success": "exited_vehicle_count >= 2", "failure": "retry_required"},
+    "OBJ_PROTECT": {"type": "secondary", "success": "bridge_stress < bridge.degraded_at", "failure": "forward_failure"},
+    "OBJ_INTERCEPT": {"type": "secondary", "success": "sample_custody != enemy_exited", "failure": "forward_failure"},
+    "independent_results": true
+  },
+  "scheduler_adapters": {
+    "P1-A": {"commit_grammar": "alternate_unit_activation", "cycle_close": "all_cycle_open_eligible_slots_committed", "start_side": "alternate_by_cycle", "unequal_count_rule": "alternate_while_both_have_units_then_commit_remaining_in_public_id_order"},
+    "P1-B": {"commit_grammar": "whole_team_simultaneous_plan", "cycle_close": "both_team_plans_committed", "start_side": "none", "unequal_count_rule": "not_applicable"},
+    "P1-C": {"commit_grammar": "alternate_unit_lock_then_simultaneous_resolve", "cycle_close": "all_cycle_open_eligible_slots_locked", "start_side": "alternate_by_cycle", "unequal_count_rule": "alternate_while_both_have_units_then_lock_remaining_in_public_id_order"},
+    "P1-D": {"commit_grammar": "ally_phase_then_enemy_phase", "cycle_close": "both_phases_closed", "start_side": "ally_in_base_case_enemy_in_mirror", "unequal_count_rule": "all_units_once_per_phase_in_public_id_order_if_player_does_not_choose"}
+  },
+  "adapter_invariants": {
+    "shared_resolver": true,
+    "shared_world_snapshot": true,
+    "shared_actions_and_costs": true,
+    "shared_AI_and_objectives": true,
+    "world_tick_per_cycle": 1,
+    "intent_replans_inside_cycle": 0,
+    "adapter_may_change_physics": false
+  }
+}

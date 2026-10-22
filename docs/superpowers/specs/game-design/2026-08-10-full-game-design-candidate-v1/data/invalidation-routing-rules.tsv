@@ -1,0 +1,15 @@
+rule_id	change_class	changed_owner	earliest_return_layer	always_invalidate	conditionally_invalidate	condition_test	never_auto_invalidate	required_receipt	status
+INV-01	product_loop_or_mode_priority	GD0	GD0	依赖该合同的GD1-GD3;原型;gameflow;Runtime	L3;Reader;用户故事验收	是否改变章责任;人物因果;已呈现世界事实	未消费该合同的History	产品变更裁决;影响图	candidate_defined
+INV-02	system_player_verb_or_action_economy	GD1	GD1	相关原型;GD3;gameflow;Previs;Runtime	Reader;用户故事验收	是否改变玩家已见动作、人物选择或章末事实	无关章节与纯视觉资产	规则diff;消费者清单	candidate_defined
+INV-03	character_authority_consent_or_control	GD1	GD1	相关GD3;Stage20+;gameflow;Runtime	Reader;用户故事验收	Reader是否表现了越权、同意、拒绝或执行者	不涉及该角色/主体的章	Canon/Accepted兼容审计	candidate_defined
+INV-04	mecha_body_scale_interface_or_forbidden_action	GD1	GD1	相关GD3;Stage20+;地图;Previs;资产;Runtime	Reader;用户故事验收	可见故事动作和路线是否仍物理成立	纯内饰且不改变轮廓/动作的资产	工程兼容回执;视觉diff	candidate_defined
+INV-05	location_topology_capacity_route_or_state	GD2	GD2	相关GD3;Stage20+;地图;Previs;资产;Runtime	Reader;用户故事验收	人物/机体路线、可见空间、因果或揭示是否改变	不消费该地点的章	空间兼容审计;新hash	candidate_defined
+INV-06	reveal_timing_or_knowledge_owner	reveal_ledger	reveal	GATE-REVEAL;Writer上下文;对应Reader;后续gameflow/Previs/Runtime	前后章Reader;用户故事验收	变化是否跨章或改变用户已接受的悬念/理解	纯后台审查材料	揭示diff;故事迁移范围	candidate_defined
+INV-07	accepted_story_fact_or_character_choice	Reader	L4/Reader	对应Reader;章审;用户故事验收;gameflow;Previs;Runtime	前后章Accepted Reader	是否改变其前提或出口	不依赖该事实的系统原型	用户显式故事迁移回执	candidate_defined
+INV-08	gameflow_map_objective_or_player_agency	gameflow	gameflow	gameflow;连续Previs;章节适配原型;Runtime	Reader	是否改变Accepted故事事实或人物选择	纯故事Reader若同义检查通过	主笔同义检查;gameflow回执	candidate_defined
+INV-09	tactical_numbers_ai_weight_or_difficulty	D04/runtime	D04 prototype	平衡测试;Forecast/Resolve回归;Runtime	Previs;gameflow	是否改变目标、动作可见性、时长或过场节奏	Reader;GD2静态地点	规则版本diff;回归报告	candidate_defined
+INV-10	visual_detail_within_approved_silhouette	asset	asset	相关正式资产;Runtime视觉回归	Previs;用户视觉方向	是否越过轮廓、尺度、材质语义或关键动作方向	Reader;系统规则;地图拓扑	视觉diff;制作人确认	candidate_defined
+INV-11	prototype_disproves_rule_or_fun	D04/D05	GD0或GD1	对应系统合同;所有消费gameflow/Previs/Runtime	章节故事	是否无法在固定故事结果下提供公平有趣过程	无关系统与地点	真人测试证据;规则裁决	candidate_defined
+INV-12	source_hash_registry_or_build_identity	source_registry	最早漂移来源	所有使用旧hash的上下文;manifest;构建	用户验收	内容语义是否变化;若只登记修正则保留验收	未消费该来源的包	hash迁移回执;语义diff	candidate_defined
+INV-13	candidate_demo_content_or_asset_change	Demo producer	Demo	该Demo构建;Demo测试证据;Demo资产加载回归	全游戏D04/D11估算	只有带真人证据且明确范围才更新全局设计证据	Canon;Accepted Reader;formal asset handoff	Demo build receipt;禁止推论清单	candidate_defined
+INV-14	writer_prose_only_no_fact_change	Reader	Reader	Reader声线/冷读/合成hash	字幕/配音/演出下游	是否真的不改事实、动作、揭示与时长	玩法规则;GD1/GD2	User story scope或同义回执	candidate_defined

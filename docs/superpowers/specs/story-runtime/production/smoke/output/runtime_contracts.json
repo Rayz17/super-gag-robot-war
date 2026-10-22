@@ -1,0 +1,519 @@
+{
+  "chapter": "C02",
+  "character_contracts": [
+    {
+      "arc_slice": "",
+      "cannot_reduce_to": "审批员或被动受难者",
+      "canonical_name": "纪存",
+      "chapter_desire": "让万机馆拥有继续旅行的身体，也赢得第一批愿意同行的机器人。",
+      "chapter_role": "离馆后的实际领队",
+      "entity_id": "CH_JICUN",
+      "intimacy_action": "会记得对方吃什么、怕什么和上次没说完的话;被戳中时先开一个不太好笑的玩笑，然后留下来听完",
+      "must_active_function": "主动选择争夺方式，并组织不同机体完成一次局势逆转。",
+      "must_change_or_reveal": "承认自己想拥有一支能并肩战斗的队伍。",
+      "next_chapter_handoff": "亲自决定前往工务城。",
+      "pressure_behavior": "先确认谁还能动、谁正被遗漏;亲自去最危险但能打开局面的位置;把杂乱的信号组织成伙伴可以行动的方向",
+      "relationship_obligation": "面对同伴对风险和去向的不同判断。",
+      "source_refs": "Current Canon entity:CH_JICUN;CD001;CAST_JICUN"
+    },
+    {
+      "arc_slice": "",
+      "cannot_reduce_to": "模型百科或吐槽机",
+      "canonical_name": "唐胶",
+      "chapter_desire": "拿到救命件，也保住维修痕迹背后的真实经历。",
+      "chapter_role": "木桶街本地关系发动机",
+      "entity_id": "CH_TANGJIAO",
+      "intimacy_action": "默默把坏零件修好放回原处",
+      "must_active_function": "用手艺和旧人脉分别解决一个别人解决不了的问题。",
+      "must_change_or_reveal": "把个人手艺交给更多人复做。",
+      "next_chapter_handoff": "把全尺寸工程问题交给陆衡。",
+      "pressure_behavior": "挑水口;报材料;吐槽工艺;先骂后修",
+      "relationship_obligation": "与兜灯发生具体的手艺分歧和互相补位。",
+      "source_refs": "Current Canon entity:CH_TANGJIAO;CD003;CAST_TANG_DOU"
+    },
+    {
+      "arc_slice": "",
+      "cannot_reduce_to": "检查员或唐胶助手",
+      "canonical_name": "兜灯",
+      "chapter_desire": "拿到部件，同时让馆守Z和万机馆以完整身体继续旅行。",
+      "chapter_role": "舰体安全与馆守Z整备负责人",
+      "entity_id": "CH001",
+      "intimacy_action": "允许别人碰她的工具;给旧件写日期",
+      "must_active_function": "提出并执行一项改变巨件运输或战斗结果的机械方案。",
+      "must_change_or_reveal": "允许唐胶和街区工匠参与复核。",
+      "next_chapter_handoff": "带着可在工务城落地的止动方案上舰。",
+      "pressure_behavior": "擦零件;骂人;把情绪转成维修指令",
+      "relationship_obligation": "与唐胶在动手解决问题时产生火花。",
+      "source_refs": "Current Canon entity:CH001;CD002;CAST_TANG_DOU"
+    }
+  ],
+  "entity_contracts": [
+    {
+      "allowed_changes": "主动争取部件、识别伙伴并带队完成逆转。",
+      "authority": "working",
+      "canon_aliases": "Ji Cun;Jicun",
+      "canonical_name": "纪存",
+      "chapter_aliases": "",
+      "control_or_identity": "纪存没有生物人类血统，但由中国馆长纪文山和万机馆本地社会语料引导形成中文母语化人格、中国文化认同与中国青年男性外观；他不是纪文山的克隆或年轻复制品。纪姓与名字以后可以被他重新确认。对馆体、馆藏机魂和灾前导览系统的深层联系仍按剧情揭示。",
+      "entity_id": "CH_JICUN",
+      "entity_type": "character",
+      "first_use_name_rule": "",
+      "implementation_policy": "主角视角优先承担玩家认知，不替设定朗读百科；他在C01主动组织闭馆、救人、保护机体并决定让万机馆离地。作为逐渐苏醒的机魂实体，他必须主动判断、调查、犯险和解决谜团；过往记忆通过行动与代价苏醒，不以存档、贴标签、行政词汇或被动受难代替成长。具体首战结构由C01 L4决定。",
+      "incoming_state": "第一次作为巡展负责人面对外部共同体。",
+      "ip_anchor": "",
+      "lifecycle_mandate": "",
+      "next_chapter_required": "V359-C03E01-CREATIVE;V359-C03E02-CREATIVE;V359-C03E03-CREATIVE;V359-C03E04-CREATIVE",
+      "next_use_window": "",
+      "package_uid": "PROTAGONIST",
+      "positive_desire": "",
+      "required_outgoing_state": "以领队身份决定前往工务城。",
+      "role": "临时闭馆负责人;机魂实体主角;记忆苏醒者",
+      "source_refs": "Current Canon entity:CH_JICUN"
+    },
+    {
+      "allowed_changes": "公开一部分维修史，并让别人学会复做关键工艺。",
+      "authority": "working",
+      "canon_aliases": "唐启明;Tang Qiming;Tangjiao;N_TANGJIAO",
+      "canonical_name": "唐胶",
+      "chapter_aliases": "",
+      "control_or_identity": "中国公民，本名唐启明；唐胶是模型街工房外号。正式合同和家庭危机场可用本名，日常与玩家界面保持唐胶；旧C01E02-BATTLE-START仅为历史实现时序。",
+      "entity_id": "CH_TANGJIAO",
+      "entity_type": "character",
+      "first_use_name_rule": "",
+      "implementation_policy": "第一章可作为维修、路障和手作价值观角色；Story-First首次战术行动为E01把安全罩改成导光挡板；台词必须来自工艺细节，不说主题金句。",
+      "incoming_state": "回到熟悉的木桶街，带着旧人脉、手艺和未解决的过去。",
+      "ip_anchor": "",
+      "lifecycle_mandate": "",
+      "next_chapter_required": "V359-C03E01-CREATIVE;V359-C03E02-CREATIVE;V359-C03E03-CREATIVE;V359-C03E04-CREATIVE",
+      "next_use_window": "",
+      "package_uid": "MUSEUM",
+      "positive_desire": "",
+      "required_outgoing_state": "带着更新后的街区关系继续随舰。",
+      "role": "模型修复师;嘴毒手作派",
+      "source_refs": "Current Canon entity:CH_TANGJIAO"
+    },
+    {
+      "allowed_changes": "主导一项改变运输或战斗结果的机械方案。",
+      "authority": "working",
+      "canon_aliases": "窦晓宁;Dou Xiaoning;Doudeng",
+      "canonical_name": "兜灯",
+      "chapter_aliases": "",
+      "control_or_identity": "中国公民，本名窦晓宁；兜灯是窦姓与童年头灯习惯形成的维修组昵称。铁馆魔神线入口，和馆守Z的长期关系优先于一次战斗爽点；旧C01E02-BATTLE-START仅为历史实现时序。",
+      "entity_id": "CH001",
+      "entity_type": "character",
+      "first_use_name_rule": "",
+      "implementation_policy": "可在第一章作为维修与安全操作单位出现；她负责判断馆守Z何时能够行动、何时必须制动，并能在现场真正执行，不由纪存或系统代替。具体战斗动作和回合数由C01 L4决定。",
+      "incoming_state": "负责馆守Z与万机馆的现场整备。",
+      "ip_anchor": "",
+      "lifecycle_mandate": "",
+      "next_chapter_required": "V359-C03E01-CREATIVE;V359-C03E02-CREATIVE;V359-C03E03-CREATIVE;V359-C03E04-CREATIVE",
+      "next_use_window": "",
+      "package_uid": "R01",
+      "positive_desire": "",
+      "required_outgoing_state": "带着可在工务城落地的止动方案上舰。",
+      "role": "馆守Z整备员",
+      "source_refs": "Current Canon entity:CH001"
+    },
+    {
+      "allowed_changes": "取得并安装全尺寸主循环转子，恢复前往工务城的有限航行能力。",
+      "authority": "working",
+      "canon_aliases": "万机馆展舰;旧巡展舰;WBM001",
+      "canonical_name": "万机馆巡展舰体",
+      "chapter_aliases": "",
+      "control_or_identity": "万机馆的移动舰体，由岗位组协同操作。",
+      "entity_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "entity_type": "mecha",
+      "first_use_name_rule": "",
+      "implementation_policy": "生产态只保留固定展馆、离地转换和巡展舰三态；E01旧照片预告巡展形态，E03地下轮廓回应，E04恢复舰体并进入空战。首战可调用真实巡展史中的退役重盾、救援锚、推进骨架和有限防卫炮，但不是完整战舰火力、无限格纳库或人形机器人。",
+      "incoming_state": "百米级巡展舰刚离开旧址，旧主循环系统只能支撑短程航行。",
+      "ip_anchor": "",
+      "lifecycle_mandate": "",
+      "next_chapter_required": "V359-C03E01-CREATIVE",
+      "next_use_window": "",
+      "package_uid": "LOC_WANJI_MOBILE_CHASSIS",
+      "positive_desire": "",
+      "required_outgoing_state": "装入主转子并取得木桶街回访泊位，校正工作留给C03。",
+      "role": "C01E04恢复的百米级移动基地与母舰身体",
+      "source_refs": "Current Canon entity:MECHA_WANJI_MOBILE_CHASSIS"
+    },
+    {
+      "allowed_changes": "仅可发生本章总纲明确要求的推进；身份、尺寸、驾驶权、机魂载体和未来去向不得静默改写。",
+      "authority": "working",
+      "canon_aliases": "主循环转子;巨型转子;展舰散热转子",
+      "canonical_name": "万机馆主循环磁流散热转子",
+      "chapter_aliases": "",
+      "control_or_identity": "正式资产应突出巨大转子、运输架、吊装和万机馆检修窗，不制作密集内部机构动画；精确尺寸、重量和安装动作由C02预生产确定。",
+      "entity_id": "MECHA_WANJI_MAIN_CIRCULATION_ROTOR",
+      "entity_type": "scene_mecha",
+      "first_use_name_rule": "",
+      "implementation_policy": "它是场景巨构和任务载荷，不是人格机体、不计参战；模型批次与维修史只能帮助辨认版本和适配方法，真正安装仍需全尺寸实物与工程复核。安装只恢复有限航行，不解决永久外泊、校正和保险。",
+      "incoming_state": "它是场景巨构和任务载荷，不是人格机体、不计参战；模型批次与维修史只能帮助辨认版本和适配方法，真正安装仍需全尺寸实物与工程复核。安装只恢复有限航行，不解决永久外泊、校正和保险。",
+      "ip_anchor": "",
+      "lifecycle_mandate": "",
+      "next_chapter_required": "",
+      "next_use_window": "",
+      "package_uid": "MUSEUM",
+      "positive_desire": "",
+      "required_outgoing_state": "",
+      "role": "C02使万机馆恢复有限航行的全尺寸工业总成，必须由重型运输和吊装设备搬运，不能退化成手掌大的密封件",
+      "source_refs": "Current Canon entity:MECHA_WANJI_MAIN_CIRCULATION_ROTOR"
+    },
+    {
+      "allowed_changes": "以单臂、重盾和巡展臂完成搬运与主力战斗动作。",
+      "authority": "working",
+      "canon_aliases": "铁馆魔神;18米旧巨神;馆守巨神",
+      "canonical_name": "馆守Z",
+      "chapter_aliases": "",
+      "control_or_identity": "旧守护者是馆守Z唯一机魂人格。",
+      "entity_id": "V353U001",
+      "entity_type": "mecha",
+      "first_use_name_rule": "",
+      "implementation_policy": "与MECHA_GUARDIAN_Z为同一机体的V35生命周期ID；旧守护者是其机魂人格。C01E02完成首次正式战斗，E03以过载火箭右拳和勇拳接力击穿BREAKER地面甲壳，右臂回收机构烧毁、主要残片留在旧址；E04装上非拳击型巡展臂装并以左拳击毁飞行核心。后续必须通过独立剧情获得真正后继右臂，不能无损找回旧臂。",
+      "incoming_state": "18米馆守Z带着C01失去原右臂的战损随舰抵达。",
+      "ip_anchor": "Mazinger/旧超级系",
+      "lifecycle_mandate": "认名/首见 -> 首控或实质支援 -> 作品级关系困局 -> 身体/阵营/能力改变 -> 离队/独立站位 -> 不可替代终局回援",
+      "next_chapter_required": "V359-C03E03-CREATIVE;V359-C03E04-CREATIVE",
+      "next_use_window": "A-F",
+      "package_uid": "PK_CORE_IRON_GUARD",
+      "positive_desire": "再一次以“博物馆守门人”而非残破兵器的身份站到人前，并亲手决定新右臂继承什么",
+      "required_outgoing_state": "保持单臂状态继续随舰。",
+      "role": "18米开局旧巨神主力；C01失去原右拳与完整前臂，此后经历巡展臂装、代用结构和后继右臂成长",
+      "source_refs": "Current Canon entity:V353U001;docs/superpowers/specs/data/story/v35_series_roster_lifecycle_inventory_v1.tsv;docs/superpowers/specs/data/story/v35_series_package_lifecycle_spine_v1.tsv"
+    },
+    {
+      "allowed_changes": "完成首控、护送与独立选择。",
+      "authority": "working",
+      "canon_aliases": "货柜领袖;变形货柜生命",
+      "canonical_name": "火种货柜领袖",
+      "chapter_aliases": "货柜领袖",
+      "control_or_identity": "内部锚Transformers领袖与车队文化；C04不占舰位，C06不得由它包办星火车队谱系。",
+      "entity_id": "V353U043",
+      "entity_type": "mecha",
+      "first_use_name_rule": "首次写明火种货柜领袖，随后使用货柜领袖。",
+      "implementation_policy": "以已有全尺寸载具身体和独立载具人格参加C02，并完成护送万机馆到工务城的一站承诺；C03E04离舰，承担百机航路邀请的地面转递，后续可沿航路召回。它可以进入作业变形形态，但不等于星火车队、火种源或G.A.G.本体。",
+      "incoming_state": "全尺寸载具生命在木桶街活动，拥有独立人格与作业变形能力。",
+      "ip_anchor": "Transformers领袖/车队",
+      "lifecycle_mandate": "认名/首见 -> 首控或实质支援 -> 作品级关系困局 -> 身体/阵营/能力改变 -> 离队/独立站位 -> 不可替代终局回援",
+      "next_chapter_required": "V359-C03E04-CREATIVE",
+      "next_use_window": "A-G",
+      "package_uid": "PK_GUEST_FIRESEED",
+      "positive_desire": "让同一模具长出的五个人都有权说自己是真人，而不是正版、重涂或平行商品",
+      "required_outgoing_state": "与万机馆同行前往工务城。",
+      "role": "作业变形、护送和领袖支援主力",
+      "source_refs": "Current Canon entity:V353U043;docs/superpowers/specs/data/story/v35_series_roster_lifecycle_inventory_v1.tsv;docs/superpowers/specs/data/story/v35_series_package_lifecycle_spine_v1.tsv"
+    },
+    {
+      "allowed_changes": "用身体、经验和战术打完一场作品级非致命决胜。",
+      "authority": "working",
+      "canon_aliases": "钢拳旧王;退役拳击机器人",
+      "canonical_name": "旧拳王机",
+      "chapter_aliases": "",
+      "control_or_identity": "内部锚Real Steel式机器人拳击；具体影子模式错位和决胜拳由C02 L4决定。",
+      "entity_id": "V353U048",
+      "entity_type": "mecha",
+      "first_use_name_rule": "",
+      "implementation_policy": "与MECHA_OLD_BOXER_KING为同一机体的V35生命周期ID；C02作为完整可驾驶机体赢得擂台并正式加入，右拳护具永不计作独立机体。",
+      "incoming_state": "完整退役拳击机器人仍在木桶街地下擂台。",
+      "ip_anchor": "Real Steel旧机逆袭",
+      "lifecycle_mandate": "认名/首见 -> 首控或实质支援 -> 作品级关系困局 -> 身体/阵营/能力改变 -> 离队/独立站位 -> 不可替代终局回援",
+      "next_chapter_required": "V359-C03E04-CREATIVE",
+      "next_use_window": "A-G",
+      "package_uid": "PK_GUEST_IRON_FIST",
+      "positive_desire": "想打完一场不靠父子观众同情、不靠拳套遗物加成的正式胜利",
+      "required_outgoing_state": "正式加入万机馆主力。",
+      "role": "拳击、受击蓄势和非致命击倒主力",
+      "source_refs": "Current Canon entity:V353U048;docs/superpowers/specs/data/story/v35_series_roster_lifecycle_inventory_v1.tsv;docs/superpowers/specs/data/story/v35_series_package_lifecycle_spine_v1.tsv"
+    }
+  ],
+  "new_entity_admissions": [],
+  "next_chapter": "C03",
+  "previous_chapter": "C01",
+  "schema_version": 2,
+  "series_alignment": {
+    "active_antagonists": [
+      {
+        "action_without_protagonist": "阿德里安在另一城以全城硬停阻止二次灾害；罗莎琳维持停产件和工人供应；索引把跨城求助识别为同一连续服务",
+        "active_actors": "阿德里安;罗莎琳;索引低频主体",
+        "beat_id": "AC1-01",
+        "chain_id": "AC1_PUBLIC_SERVICE",
+        "chapter_window": "C01-C03",
+        "collision_with_heroes": "七海看见旧体系确实救人，纪存无法把它们当纯反派",
+        "next_capability": "跨城紧急服务与标准身体供应",
+        "price_or_loss": "非标机和小工房被排除，索引服务仍可被重置",
+        "status": "candidate_antagonist_chain_v2",
+        "true_success": "数万人获救，维修链没有断"
+      },
+      {
+        "action_without_protagonist": "韩秀雅持续测试多身体战装；槐抢救被平台清掉的错版底稿",
+        "active_actors": "韩秀雅;槐",
+        "beat_id": "AC2-01",
+        "chain_id": "AC2_IDENTITY",
+        "chapter_window": "C01-C04",
+        "collision_with_heroes": "C04-C07分别与纪存、白鸢、唐胶碰撞",
+        "next_capability": "百相依赖纪存式导航语法；槐掌握错版口令",
+        "price_or_loss": "两者都倾向相信可确认的原本",
+        "status": "candidate_antagonist_chain_v2",
+        "true_success": "一种保存可执行身体，一种保存不完整原典"
+      },
+      {
+        "action_without_protagonist": "沈砺以统一命令救回远征补给队；断冠试探铸环",
+        "active_actors": "沈砺;断冠;裂星近域支群",
+        "beat_id": "AC3-01",
+        "chain_id": "AC3_ALIEN_WAR",
+        "chapter_window": "C01-C04",
+        "collision_with_heroes": "C04胜利同时给外敌留下学习材料",
+        "next_capability": "第一次理解地球角色分工",
+        "price_or_loss": "断冠冠部被韩秀雅击碎，却取得协同样本",
+        "status": "candidate_antagonist_chain_v2",
+        "true_success": "人类标准编队和百相协同都证明有效"
+      }
+    ],
+    "chapter": "C02",
+    "current": {
+      "asset_scope": "木桶街、四机共享骨架、拳台巨构与旧拳王资产",
+      "authority_state": "creative_working",
+      "branch_topology": "旧件来源公开/隐去原主形成H2信誉差分；拳台结果影响影子陪练",
+      "chapter_id": "C02",
+      "chapter_title": "木桶街，万机初开",
+      "entry_state": "万机馆只有短时航行窗口；唐胶旧认证史未解决；七海停权后仍远程协助",
+      "irreversible_result": "唐胶公开旧修补方法；平台与白框取得不同样本；白鸢成为临时乘员",
+      "line_collision": "L3/L4/L5/L6通过市场、拳台和白鸢权利申诉相撞",
+      "location_necessity": "木桶街同时拥有旧件市场、模型维修生态、机械拍卖巨台与万机馆急需的全尺寸转子，能把收藏文化与实机生涯放在同一空间",
+      "macro_wave": "A",
+      "next_chapter_engine": "全尺寸转子仍需工务城校正，旧稳定程序开始追索万机馆",
+      "opponent_proactive_action": "平台把维修史洗成近新商品；归一星把多种重涂压成一个货号；拍卖巨台用复制动作制造冠军",
+      "part_id": "P1_失馆与身体",
+      "permanent_player_gain": "旧拳王正式随舰;转子与维修生态;四重涂机取得独立声纹",
+      "primary_gameplay": "旧件市探索→四机标签修正空战→机械拳台Boss→夜间复产巡展",
+      "protagonist_desire": "纪存要在不把街区变成万机馆财产的前提下赢得零件、伙伴和第一个公开停靠点",
+      "protected_future_peak": "白鸢L1能力边界;百相新生副驾驶;真正重涂人格战争",
+      "relationship_character_turn": "白鸢以权利申诉进入队伍并直接坐到纪存身边；七海那顿未吃完的饭成为三人可理解的私人钩子",
+      "roster_ip_first_arrivals": "旧拳王;四台重涂飞行机;未发售变形样件;白鸢肉身首登",
+      "roster_returns_upgrades": "馆守Z单臂支援;现实小机",
+      "secondary_gameplay": "模型/实机锚定;谈判;轻经营",
+      "source_authority": "Working C02 Reader/Canon",
+      "status": "creative_working_in_master_v2",
+      "suggested_episode_range": "4_episode_candidate",
+      "world_reveal": "模型不放大成实机；缩尺锚件只提供版本、关系与制造信息"
+    },
+    "gameplay": {
+      "anti_repetition_rule": "不再用救几台劳务机替代主事件",
+      "chapter_id": "C02",
+      "midpoint_transformation": "平台把同模四机压成一个商品页，玩家用不同动作拆开识别",
+      "new_system_or_rule": "模型锚到工程身体的合法链；寄售议价；维修痕改装",
+      "permanent_world_change": "木桶街成为补给与模型支线Hub",
+      "persistent_mastery": "火种重涂/旧拳王/现实小机进入可持续编队；获得主转子",
+      "player_core_question": "收藏、修件与真机怎样共同救一艘舰",
+      "primary_play_form": "市场探索+全尺寸件运输+扫描门争夺+机械擂台",
+      "status": "candidate_gameplay_progression_v2"
+    },
+    "longlines": [
+      {
+        "longline_id": "L1",
+        "longline_name": "世界主因果与六层揭示",
+        "major_collision_here": "no",
+        "pass_condition": "六层分别由身体/地图/玩法/人物选择揭示；百相、索引、具体外敌与远星不得互相替代",
+        "phase_obligation": "G.A.G.以应急联动显影；白函/归一星/衡令分别取得成功样本；索引人格不露"
+      },
+      {
+        "longline_id": "L2",
+        "longline_name": "阵营、长期反派与世界局势",
+        "major_collision_here": "no",
+        "pass_condition": "公共服务、主体身份、外敌学习三链从前段连续到终局；长期对手有功劳、抓手、身体与独立结局",
+        "phase_obligation": "代哥、白框链、军方、平台与作者工房都先做成一件有用的事；三条长期行动链开始"
+      },
+      {
+        "longline_id": "L3",
+        "longline_name": "纪存、七海、白鸢与三条成人关系边",
+        "major_collision_here": "no",
+        "pass_condition": "三人各有大胜、越界、崩溃、升级和独立事业；七海/白鸢关系边不依附纪存；关系由共同经历而非权限小动作推进",
+        "phase_obligation": "纪存/七海已有旧亲密并共同失去生活；白鸢因被盗作品加入；三人吃饭、能力吸引与现实摩擦成立"
+      },
+      {
+        "longline_id": "L4",
+        "longline_name": "核心群像、舰内生活与普通世界",
+        "major_collision_here": "yes",
+        "pass_condition": "核心群像至少有一项不依赖纪存的事业胜利、关系变化和终局动作；C14舰籍与C18诱惑可追踪",
+        "phase_obligation": "唐胶/兜灯/陆衡/方舟T/小满/阿澄各有加入原因；木桶街、工务城与舰内普通生活成立"
+      },
+      {
+        "longline_id": "L5",
+        "longline_name": "参战机体、驾驶员、IP与名场面生命周期",
+        "major_collision_here": "no",
+        "pass_condition": "每个核心包有首登/加入/升级或关系变化/危机/终局动作；功能机和道具不冒充Roster，强力热门包优先承担完整人生",
+        "phase_obligation": "馆守Z/工务机/现实小机/旧拳王/火种重涂形成开局拥有感；C01勇气包只有社勇王模型锚和豪司临控勇拳，C03才取得社勇王真机可撤回应急部署；旧伤与改装持续"
+      },
+      {
+        "longline_id": "L6",
+        "longline_name": "SRPG、多玩法、万机馆身体与永久成长",
+        "major_collision_here": "no",
+        "pass_condition": "85话候选的玩法换挡改变地形/单位/资源/关系或下一章条件；万机馆身体、损伤、泊位和永久奖励持续记账",
+        "phase_obligation": "形成舰内ADV→探索→小玩法→SRPG→整备循环；万机馆成为棋盘单位并获得转子/泊位/厨房/工务回泊"
+      },
+      {
+        "longline_id": "L7",
+        "longline_name": "分支、What-if、未选路线与终局差分",
+        "major_collision_here": "yes",
+        "pass_condition": "关键条件可见、有补救窗口；未选路线继续发展；全剧只维护一条H4长线分叉与至多两套终盘根演出",
+        "phase_obligation": "馆藏保护、B1公开、重涂脱页、旧拳王录像和工务留城先产生可见差异"
+      }
+    ],
+    "macro_wave": "A",
+    "next_chapter": "C03",
+    "next_chapter_required_entities": {
+      "CH001": [
+        "V359-C03E01-CREATIVE",
+        "V359-C03E02-CREATIVE",
+        "V359-C03E03-CREATIVE",
+        "V359-C03E04-CREATIVE"
+      ],
+      "CH036": [
+        "V359-C03E03-CREATIVE",
+        "V359-C03E04-CREATIVE"
+      ],
+      "CH_JICUN": [
+        "V359-C03E01-CREATIVE",
+        "V359-C03E02-CREATIVE",
+        "V359-C03E03-CREATIVE",
+        "V359-C03E04-CREATIVE"
+      ],
+      "CH_LUHENG": [
+        "V359-C03E01-CREATIVE",
+        "V359-C03E02-CREATIVE",
+        "V359-C03E03-CREATIVE",
+        "V359-C03E04-CREATIVE"
+      ],
+      "CH_QIHAI": [
+        "V359-C03E01-CREATIVE",
+        "V359-C03E02-CREATIVE",
+        "V359-C03E03-CREATIVE",
+        "V359-C03E04-CREATIVE"
+      ],
+      "CH_TANGJIAO": [
+        "V359-C03E01-CREATIVE",
+        "V359-C03E02-CREATIVE",
+        "V359-C03E03-CREATIVE",
+        "V359-C03E04-CREATIVE"
+      ],
+      "ENEMY_C03_REQUISITION_RIG_HENGLING": [
+        "V359-C03E01-CREATIVE",
+        "V359-C03E02-CREATIVE",
+        "V359-C03E03-CREATIVE"
+      ],
+      "HUNDRED_MECHA_ROUTE_INVITATION": [
+        "V359-C03E04-CREATIVE"
+      ],
+      "LOC_PUBLIC_WORKS_CITY": [
+        "V359-C03E01-CREATIVE",
+        "V359-C03E03-CREATIVE",
+        "V359-C03E04-CREATIVE"
+      ],
+      "MECHA_C03_CITY_BEAM_GIANT": [
+        "V359-C03E01-CREATIVE",
+        "V359-C03E02-CREATIVE",
+        "V359-C03E03-CREATIVE"
+      ],
+      "MECHA_WANJI_MOBILE_CHASSIS": [
+        "V359-C03E01-CREATIVE"
+      ],
+      "N_BAIYUAN": [
+        "V359-C03E01-CREATIVE",
+        "V359-C03E02-CREATIVE",
+        "V359-C03E03-CREATIVE",
+        "V359-C03E04-CREATIVE"
+      ],
+      "SOCIAL_BRAVE_AI_REFUSAL": [
+        "V359-C03E03-CREATIVE"
+      ],
+      "V353U001": [
+        "V359-C03E03-CREATIVE",
+        "V359-C03E04-CREATIVE"
+      ],
+      "V353U024": [
+        "V359-C03E03-CREATIVE",
+        "V359-C03E04-CREATIVE"
+      ],
+      "V353U031": [
+        "V359-C03E02-CREATIVE",
+        "V359-C03E03-CREATIVE"
+      ],
+      "V353U032": [
+        "V359-C03E02-CREATIVE",
+        "V359-C03E03-CREATIVE"
+      ],
+      "V353U033": [
+        "V359-C03E02-CREATIVE",
+        "V359-C03E03-CREATIVE"
+      ],
+      "V353U034": [
+        "V359-C03E02-CREATIVE",
+        "V359-C03E03-CREATIVE"
+      ],
+      "V353U038": [
+        "V359-C03E02-CREATIVE",
+        "V359-C03E04-CREATIVE"
+      ],
+      "V353U040": [
+        "V359-C03E02-CREATIVE",
+        "V359-C03E04-CREATIVE"
+      ],
+      "V353U043": [
+        "V359-C03E04-CREATIVE"
+      ],
+      "V353U048": [
+        "V359-C03E04-CREATIVE"
+      ],
+      "V353U050": [
+        "V359-C03E04-CREATIVE"
+      ],
+      "V353U071": [
+        "V359-C03E04-CREATIVE"
+      ]
+    },
+    "next_dependency": {
+      "entry_state": "转子只能低速运行；衡令已继承归一星样本；七海准备以风险调查方实体登舰",
+      "location_necessity": "工务城能校正万机馆主转子，又让陆衡旧无现场算法、地方工务机和城市政治在真实基础设施中正面冲突",
+      "protagonist_desire": "纪存要让万机馆取得可回访港口；陆衡要阻止自己删去语境的旧程序继续征用机器",
+      "protected_future_peak": "三法城;索引主体;陆衡方舟T亲密;馆守Z后继右臂"
+    },
+    "previous_chapter": "C01",
+    "previous_handoff": {
+      "irreversible_result": "原右臂永久留旧址；旧馆失去；白函带伤撤退并取得样本",
+      "next_chapter_engine": "只能去木桶街抢全尺寸转子、泊位与合法现货",
+      "permanent_player_gain": "移动万机馆;馆守Z常驻;首批岗位;三类载荷保二"
+    },
+    "reward": {
+      "chapter_id": "C02",
+      "later_pressure_not_cancellation": "平台学会伤痕溢价，但机体身份与玩家拥有不被收回",
+      "permanent_home_or_world_gain": "全尺寸主转子与木桶街回访",
+      "permanent_playable_gain": "火种重涂代表机、旧拳王或路线小样件",
+      "permanent_system_gain": "模型锚改装、维修痕词条、市场采购",
+      "positive_reward_moment": "同模四机用不同动作冲破统一商品页",
+      "status": "candidate_reward_ledger_v2"
+    },
+    "wave_cognition": {
+      "completion_feedback": "旧拳王入队、工务城可回访、百机邀请真正发出",
+      "confirmed_answer": "玩具/模型不会直接变巨机；馆守Z、旧拳王和工务机都是现实身体",
+      "current_plain_goal": "保住万机馆、修好航行、找到第一个能停靠的地方",
+      "new_term_budget": "机魂;G.A.G.两词可出现，只给工作定义",
+      "next_pull": "回信与求援同时到达，玩家必须选一个身体制造中心补全战力",
+      "plausible_misread": "万机馆可能藏了一个普通军用AI",
+      "protected_unknown": "纪存来历、索引、大清噪全貌",
+      "status": "candidate_player_cognition_v1",
+      "visible_symptom": "不同机器会在同一时刻响应，白框敌体会学走成功动作",
+      "wave_segment": "A"
+    },
+    "wave_weighting": {
+      "latent_lines": "-",
+      "maintenance_lines": "L2",
+      "no_quota_rule": "世界真相只以异常和敌方伤痕埋种，索引线可一度不前进",
+      "player_target": "先保住万机馆，得到一支真正能打、能修、能一起吃饭的队伍",
+      "primary_lines": "L5;L6;L4",
+      "protected_payoff": "C01-C03的旧拳王胜利、工务城回泊与首批核心编队",
+      "segment_function": "家、主力与旅行理由成立",
+      "status": "candidate_wave_weighting_v1",
+      "supporting_lines": "L1;L3;L7",
+      "wave_segment": "A"
+    }
+  }
+}

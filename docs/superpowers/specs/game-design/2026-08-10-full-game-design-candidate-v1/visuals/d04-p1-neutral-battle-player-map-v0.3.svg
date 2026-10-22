@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">D04-P1 v0.3 三个执行周期与撤离条件判断示意</title>
+  <desc id="desc">三台测试机器人保护三辆维护车。前三个八秒周期依次分配责任、处理后果和带伤重分工；最低救援完成后，界面检查下一周期是否存在具名可完成收益。本例没有，因此只提供两秒撤离。</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7f5ef}.panel{fill:#fffdf8;stroke:#2d3748;stroke-width:2}.lane{fill:#e8eef4}.grid{fill:none;stroke:#a0aec0;stroke-width:1}
+      .bridge{fill:#fbd38d;stroke:#c05621;stroke-width:2}.ally{fill:#3182ce;stroke:#1a365d;stroke-width:2}.enemy{fill:#e53e3e;stroke:#742a2a;stroke-width:2}
+      .vehicle{fill:#faf089;stroke:#744210;stroke-width:2}.object{fill:#9f7aea;stroke:#44337a;stroke-width:2}.exit{fill:#68d391;stroke:#22543d;stroke-width:2}
+      .danger{fill:#fc8181;opacity:.25;stroke:#c53030;stroke-width:2;stroke-dasharray:7 5}.heading{font-family:"PingFang SC","Noto Sans CJK SC",sans-serif;font-size:30px;font-weight:700;fill:#1a202c}
+      .sub{font-family:"PingFang SC","Noto Sans CJK SC",sans-serif;font-size:16px;fill:#2d3748}.label{font-family:"PingFang SC","Noto Sans CJK SC",sans-serif;font-size:19px;fill:#1a202c}
+      .small{font-family:"PingFang SC","Noto Sans CJK SC",sans-serif;font-size:15px;fill:#2d3748}.tiny{font-family:"PingFang SC","Noto Sans CJK SC",sans-serif;font-size:12px;fill:#2d3748}
+      .white{fill:#fff;font-weight:700}.w1{fill:#ebf8ff;stroke:#2b6cb0;stroke-width:2}.w2{fill:#faf5ff;stroke:#805ad5;stroke-width:2}.w3{fill:#fffaf0;stroke:#dd6b20;stroke-width:2}.w4{fill:#f0fff4;stroke:#2f855a;stroke-width:2}
+      .outA{fill:#ebf8ff;stroke:#2b6cb0;stroke-width:2}.outB{fill:#fff5f5;stroke:#c53030;stroke-width:2}.outC{fill:#f0fff4;stroke:#2f855a;stroke-width:2}
+    </style>
+  </defs>
+  <rect class="bg" width="1080" height="1080"/>
+  <text class="heading" x="46" y="52">第一张中性战术图 v0.3：三周期责任阶梯</text>
+  <text class="sub" x="48" y="82">纸面 Candidate｜三台机体、三辆维护车｜三个8秒执行周期＋一次撤离确认｜无歼灭目标</text>
+
+  <rect class="panel" x="40" y="106" width="1000" height="420" rx="14"/>
+  <text class="label" x="68" y="138">战场初态：左侧我方，右侧敌方</text>
+  <rect class="lane" x="150" y="160" width="780" height="52"/>
+  <rect class="lane" x="150" y="212" width="780" height="52"/>
+  <rect class="lane" x="260" y="264" width="560" height="52"/>
+  <rect class="lane" x="430" y="316" width="500" height="52"/>
+  <rect class="lane" x="150" y="368" width="780" height="52"/>
+  <rect class="bridge" x="430" y="160" width="220" height="104" opacity=".48"/>
+  <text class="tiny" x="492" y="188">旧裂损主桥</text>
+  <text class="tiny" x="478" y="205">当前可通行，但继续受压会降级</text>
+  <g class="grid">
+    <path d="M150 160H930 M150 212H930 M150 264H930 M150 316H930 M150 368H930 M150 420H930"/>
+    <path d="M150 160V420 M205 160V420 M260 160V420 M315 160V420 M370 160V420 M425 160V420 M480 160V420 M535 160V420 M590 160V420 M645 160V420 M700 160V420 M755 160V420 M810 160V420 M865 160V420 M930 160V420"/>
+  </g>
+  <text class="small" x="62" y="194">承力带</text><text class="small" x="62" y="246">主车道</text><text class="small" x="62" y="298">维护带</text><text class="small" x="62" y="350">侧承力</text><text class="small" x="62" y="402">侧车道</text>
+
+  <rect class="ally" x="260" y="164" width="110" height="44" rx="8"/><text class="small white" x="282" y="191">锚机 1×2</text>
+  <rect class="ally" x="370" y="268" width="50" height="44" rx="8"/><text class="tiny white" x="378" y="295">游击</text>
+  <rect class="ally" x="425" y="268" width="50" height="44" rx="8"/><text class="tiny white" x="433" y="295">工程</text>
+  <rect class="vehicle" x="154" y="216" width="46" height="44" rx="7"/><text class="tiny" x="163" y="243">车2</text>
+  <rect class="vehicle" x="264" y="216" width="46" height="44" rx="7"/><text class="tiny" x="273" y="243">车1</text>
+  <rect class="vehicle" x="210" y="372" width="46" height="44" rx="7"/><text class="tiny" x="219" y="399">车3</text>
+  <rect class="object" x="482" y="372" width="46" height="44" rx="6"/><text class="tiny white" x="491" y="399">侧门</text>
+  <circle class="object" cx="560" cy="290" r="18"/><text class="tiny white" x="546" y="294">样本</text>
+  <rect class="enemy" x="700" y="164" width="110" height="44" rx="8"/><text class="small white" x="720" y="191">重机1 1×2</text>
+  <rect class="enemy" x="700" y="320" width="110" height="44" rx="8"/><text class="small white" x="720" y="347">重机2 1×2</text>
+  <rect class="enemy" x="755" y="268" width="50" height="44" rx="8"/><text class="tiny white" x="763" y="295">猎手</text>
+  <path d="M752 290H590" fill="none" stroke="#c53030" stroke-width="3" stroke-dasharray="7 5"/>
+  <text class="tiny" x="622" y="282">公开取样路线</text>
+  <line x1="650" y1="264" x2="650" y2="316" stroke="#2b6cb0" stroke-width="4"/>
+  <text class="tiny" x="628" y="330">截击线</text>
+  <rect class="enemy" x="815" y="164" width="50" height="44" rx="8"/><text class="tiny white" x="823" y="191">压制</text>
+  <rect class="enemy" x="815" y="320" width="50" height="44" rx="8"/><text class="tiny white" x="823" y="347">压制</text>
+  <rect class="danger" x="590" y="214" width="220" height="48" rx="5"/><text class="tiny" x="624" y="244">主路压制走廊（预览中可见）</text>
+  <rect class="danger" x="535" y="370" width="275" height="48" rx="5"/><text class="tiny" x="578" y="400">侧路压制走廊（预览中可见）</text>
+  <rect class="exit" x="880" y="216" width="46" height="44" rx="7"/><text class="tiny" x="889" y="243">主出</text>
+  <rect class="exit" x="880" y="372" width="46" height="44" rx="7"/><text class="tiny" x="889" y="399">侧出</text>
+  <line x1="144" y1="160" x2="144" y2="420" stroke="#2f855a" stroke-width="5"/>
+  <text class="tiny" x="150" y="438">左边界＝友方回收线</text>
+  <text class="tiny" x="66" y="454">蓝＝我方机器人　红＝敌方　黄＝维护车　紫＝任务对象　红虚框＝可预览压制区</text>
+  <text class="tiny" x="66" y="482">目标分账：至少撤2车｜桥是否完整｜样本是否带出｜我方功能损伤</text>
+
+  <text class="label" x="48" y="566">三个执行周期之后，先检查继续是否有具名可完成收益</text>
+  <rect class="w1" x="48" y="588" width="235" height="140" rx="10"/>
+  <text class="label" x="66" y="618">W1　分配责任</text>
+  <text class="small" x="66" y="648">修桥 ↔ 开门</text>
+  <text class="small" x="66" y="674">反压制 ↔ 截击</text>
+  <text class="tiny" x="66" y="702">先修桥就不能同时开门；压主路就不能截击</text>
+  <rect class="w2" x="299" y="588" width="235" height="140" rx="10"/>
+  <text class="label" x="317" y="618">W2　处理后果</text>
+  <text class="small" x="317" y="648">开侧门 ↔ 固定样本</text>
+  <text class="small" x="317" y="674">两路都放弃维修车3</text>
+  <text class="tiny" x="317" y="702">工程机不能同周期修车、开门和拿样本</text>
+  <rect class="w3" x="550" y="588" width="235" height="140" rx="10"/>
+  <text class="label" x="568" y="618">W3　带伤重分工</text>
+  <text class="small" x="568" y="648">护桥撤离 ↔ 护携样撤离</text>
+  <text class="small" x="568" y="674">两路都放弃转身自保</text>
+  <text class="tiny" x="568" y="702">代价分别写入锚定腿或保护框架</text>
+  <rect class="w4" x="801" y="588" width="235" height="140" rx="10"/>
+  <text class="label" x="819" y="618">撤离确认　检查条件</text>
+  <text class="small" x="819" y="648">现在结束，接受后果</text>
+  <text class="small" x="819" y="674">继续8秒：无具名收益</text>
+  <text class="tiny" x="819" y="702">本例只开放2秒撤离</text>
+
+  <text class="label" x="48" y="780">两条完整责任路线＋一个可以尝试的混合方向</text>
+  <rect class="outA" x="48" y="802" width="315" height="150" rx="10"/>
+  <text class="label" x="66" y="832">保基础设施</text>
+  <text class="small" x="66" y="862">2车｜桥完整｜样本丢失</text>
+  <text class="small" x="66" y="888">锚机轻度受限</text>
+  <text class="tiny" x="66" y="918">三机先占满修桥、承力、主路压制</text>
+  <rect class="outB" x="383" y="802" width="315" height="150" rx="10"/>
+  <text class="label" x="401" y="832">混合打法：争取第3辆车</text>
+  <text class="small" x="401" y="862">要重新分配工程机与游击机的时间</text>
+  <text class="small" x="401" y="888">桥、样本或机体会承担新的代价</text>
+  <text class="tiny" x="401" y="918">它不是隐藏标准答案，玩家可以按当前局面尝试</text>
+  <rect class="outC" x="718" y="802" width="315" height="150" rx="10"/>
+  <text class="label" x="736" y="832">保住证据</text>
+  <text class="small" x="736" y="862">2车｜桥降级｜样本安全</text>
+  <text class="small" x="736" y="888">侧路车留场</text>
+  <text class="tiny" x="736" y="918">截击与携样撤离占掉车3维修</text>
+
+  <text class="tiny" x="48" y="1002">这不是正式关卡、美术资产或Canon地点。坐标、压制区和数值均为Candidate纸面种子。</text>
+  <text class="tiny" x="48" y="1028">本图帮助判断操作与责任取舍；具体位置、时间和状态仍可随本轮评审调整。</text>
+</svg>

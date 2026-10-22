@@ -1,0 +1,95 @@
+{
+  "chapter": "C02",
+  "episode": "C02E02",
+  "episode_cache_key": "2772a1ed094c9d25e3ee44ab346591662f7611eb280742c9653c4a421d2ba7d4",
+  "fragment_cards": {
+    "C02E02-F01": {
+      "path": "fragment-cards/C02E02-F01.md",
+      "sha256": "528d80abaa0bbcf0ecf23f7923c188920aac56ec124c8af631613905f8185bb8",
+      "target_max_chars": 5200,
+      "target_min_chars": 2600
+    },
+    "C02E02-F02": {
+      "path": "fragment-cards/C02E02-F02.md",
+      "sha256": "b6df972df0fdd87ac8db8d61ff86c1a250d261d18f268b3c2222e4414c23e47b",
+      "target_max_chars": 5600,
+      "target_min_chars": 2800
+    },
+    "C02E02-F03": {
+      "path": "fragment-cards/C02E02-F03.md",
+      "sha256": "f41bbeafea697bf7dda446a63f1c8b91cbfe0b91fab678d47cad0d9a1a7a765b",
+      "target_max_chars": 5600,
+      "target_min_chars": 2800
+    },
+    "C02E02-F04": {
+      "path": "fragment-cards/C02E02-F04.md",
+      "sha256": "5ee2a4582d6884f29d270604b5a75a87eb316ca1bfcf6f97acd2f072ddc45ae7",
+      "target_max_chars": 6000,
+      "target_min_chars": 3200
+    },
+    "C02E02-F05": {
+      "path": "fragment-cards/C02E02-F05.md",
+      "sha256": "15a8aeb907892f29c70aad64fe3ce44483d1b3f98a1809efe9e1429adc9b1431",
+      "target_max_chars": 6000,
+      "target_min_chars": 3400
+    },
+    "C02E02-F06": {
+      "path": "fragment-cards/C02E02-F06.md",
+      "sha256": "e9fb4d5a83aeaa80e132207d3f0e067a081b2c9fd27e9d2579f2b775542dd7b1",
+      "target_max_chars": 5600,
+      "target_min_chars": 2800
+    }
+  },
+  "fragment_order": [
+    "C02E02-F01",
+    "C02E02-F02",
+    "C02E02-F03",
+    "C02E02-F04",
+    "C02E02-F05",
+    "C02E02-F06"
+  ],
+  "normalized_plan_sha256": "6ae043ce3bfb3bae3d89bc4ee1b0543b2b3978f43c906ddbedbf749dff105d57",
+  "paths": {
+    "chapter_contracts": "docs/superpowers/specs/story-runtime/context-packs/C02-runtime-v2/runtime_contracts.json",
+    "chapter_pack_dir": "docs/superpowers/specs/story-runtime/context-packs/C02-runtime-v2",
+    "chapter_writer_context": "docs/superpowers/specs/story-runtime/context-packs/C02-runtime-v2/09-作家稳定上下文.md",
+    "director_board": "docs/superpowers/specs/story-runtime/effect-tests/C02-from-C01-v3-2026-07-29/E02/C02E02-导演板-v1.md",
+    "episode_card": "docs/superpowers/specs/story-runtime/effect-tests/C02-from-C01-v3-2026-07-29/E02/C02E02-运行卡-v1.md",
+    "normalized_plan": "01-场面事务计划.tsv",
+    "prior_episode_state": "docs/superpowers/specs/story-runtime/effect-tests/C02-from-C01-v3-2026-07-29/E01/run/assembled/C02E01-exit-state.md",
+    "run_state": "run_state.json",
+    "source_plan": "docs/superpowers/specs/story-runtime/effect-tests/C02-from-C01-v3-2026-07-29/E02/C02E02-场面事务计划-v1.tsv",
+    "stable_prefix": "00-单话稳定前缀.md"
+  },
+  "profile": {
+    "default_prose_tail_chars": 1200,
+    "episode_stable_prefix_max_chars": 46000,
+    "interaction_context_max_chars": 52000,
+    "retrieval_limit": 6,
+    "retrieval_max_chars": 6000,
+    "safe_output_max_chars": 6000
+  },
+  "runtime_method": "story_runtime_interaction_v1",
+  "schema_version": 1,
+  "source_hashes": {
+    "docs/superpowers/specs/story-runtime/context-packs/C02-runtime-v2/00-C02上下文需求-v2.md": "17a472871e9851b321286a2c22eb767c351d674ef5446a36282494e22116ea10",
+    "docs/superpowers/specs/story-runtime/context-packs/C02-runtime-v2/09-作家稳定上下文.md": "ac4e378ae1dd63f0aba2a9f391fa37b11c6f60f671b70ac1f05509b1543bc2db",
+    "docs/superpowers/specs/story-runtime/context-packs/C02-runtime-v2/runtime_contracts.json": "9ea4c5b208d4f549da1f2446a077498933f0591e84b020306c5cef0cf6cb1eb2",
+    "docs/superpowers/specs/story-runtime/context-packs/C02-runtime-v2/runtime_manifest.json": "f2261d9b2df0130b76841da7b974c812d6c2ea8856a879c6ae9d31441d919a5e",
+    "docs/superpowers/specs/story-runtime/effect-tests/C02-from-C01-v3-2026-07-29/E01/run/assembled/C02E01-exit-state.md": "f060575fc02d3f3aceba9f897c90a6371cf9d7802b60289db5d22a4841bb0770",
+    "docs/superpowers/specs/story-runtime/effect-tests/C02-from-C01-v3-2026-07-29/E02/C02E02-场面事务计划-v1.tsv": "6ae043ce3bfb3bae3d89bc4ee1b0543b2b3978f43c906ddbedbf749dff105d57",
+    "docs/superpowers/specs/story-runtime/effect-tests/C02-from-C01-v3-2026-07-29/E02/C02E02-导演板-v1.md": "7eef7216f25fb8f0bc43712e78d7509d17cf2d72cdb21368caeff1ae602dde6a",
+    "docs/superpowers/specs/story-runtime/effect-tests/C02-from-C01-v3-2026-07-29/E02/C02E02-运行卡-v1.md": "9b9b13630adfd67bc41ba665054557920df5340f0860faf2a845aec93058b558",
+    "scripts/assemble_story_runtime_episode_draft.py": "4ddd3d3741572fd239f853de55aee687b33fc07a5a9185baf9414a206d9d2a19",
+    "scripts/assemble_story_runtime_interaction_context.py": "6a723f09c05eb87e2fdecd442349c918e4338b6dc07cfccfc71b26a720c0a398",
+    "scripts/check_story_runtime_episode_run.py": "9e1696179a1e9e6440925dde1b945a316280eab66ec84fe433c3f198a2fc6c85",
+    "scripts/commit_story_runtime_interaction.py": "78d594786c7e22d1849d686f1139ae99c5543692f4471591e948525a254eeafa",
+    "scripts/compile_story_runtime_episode_run.py": "6dad996e62ef5ff34f192ff2e59eca7fd39f7c7d228adc17a6cdd702d6a068bb",
+    "scripts/prepare_story_runtime_interaction_review.py": "fcd7ea218afb87d0517e95a5a0bf01a7595520cdf718cccf5500bc83ad3b9f79",
+    "scripts/seal_story_runtime_episode.py": "c15a66a4cfa7f0eaabdb6129452eb6bae005c1e192c393b3ad4bca95e62f9d95",
+    "scripts/story_runtime_interaction.py": "a300c4dfea1e30862e50f2b28c5cbdf930ce5cb0dee6cc3ebd6a0b87a7656e8a"
+  },
+  "stable_prefix_bytes": 60088,
+  "stable_prefix_chars": 25422,
+  "stable_prefix_sha256": "15a5d99738adcdbd2038479dd6b17ec0a7d0adc421659baccd3069e709a5d99e"
+}

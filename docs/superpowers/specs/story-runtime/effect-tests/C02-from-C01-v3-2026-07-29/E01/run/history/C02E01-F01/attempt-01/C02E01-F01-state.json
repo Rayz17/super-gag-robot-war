@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "fragment_id": "C02E01-F01",
+  "context_key": "ff7d7cb323612fd875443e7b2ab9b2ff39b7316533026cf5fa516a7602bb4832",
+  "facts_established": [
+    {
+      "fact_id": "C02E01.ARRIVED_AND_BERTHED",
+      "statement": "万机馆在不压停木桶街工房主路的情况下安全停入外港旧泊位，舰首、馆守Z救援锚与火种货柜领袖作业骨架构成三点固定。",
+      "evidence_in_draft": "旧泊位机械闸抬起并转为绿灯，三条缆索稳定，工房主路保持通行。"
+    },
+    {
+      "fact_id": "C02E01.CARGO_LEADER_CHOSE_TO_HELP",
+      "statement": "火种货柜领袖以独立载具人格首次公开现身，主动完成全尺寸作业变形并帮助万机馆靠港。",
+      "evidence_in_draft": "货柜领袖自报全名，自主驶入旧装卸轨，将货柜身体展开为移动绞架并持续牵引岸侧缆索。"
+    },
+    {
+      "fact_id": "C02E01.MAIN_CIRCULATION_DUE_TODAY",
+      "statement": "万机馆受损主循环只能维持当前停泊，必须在当天找到真实的全尺寸主循环转子。",
+      "evidence_in_draft": "最后一组主循环风机在靠港中停转；泊稳后温度仍无法下降，唐胶明确必须在天黑前找到主循环转子。"
+    }
+  ],
+  "entity_states": [
+    {
+      "entity_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "location": "木桶街外港旧泊位",
+      "controller": "自动航行系统执行推力与平衡，纪存负责航向与协作指挥",
+      "physical_state": "百余米低速巡展舰已完成三点固定；主循环风机继续停机，无法再次安全离港；未变形且未增加火力"
+    },
+    {
+      "entity_id": "V353U001",
+      "location": "木桶街外港岸侧承力带",
+      "controller": "旧守护者自主行动，兜灯保有并执行物理制动与安全限制",
+      "physical_state": "保持右前臂缺失和非拳击型黄色巡展臂装；不能飞；以左臂和救援锚承担泊靠拉力，无新增损伤"
+    },
+    {
+      "entity_id": "V353U043",
+      "location": "木桶街外港废弃装卸轨",
+      "controller": "火种货柜领袖独立载具人格",
+      "physical_state": "保持全尺寸作业变形，以展开的货柜骨架和轮组牵引第三条缆索；无可见损伤"
+    }
+  ],
+  "character_states": [
+    {
+      "entity_id": "CH_JICUN",
+      "desire_or_emotion": "把安全靠港视为赢得陌生共同体信任的第一步，并开始主动把不同机体组织成同行力量。",
+      "relationship_delta": "接受兜灯否决后立即重组方案；与火种货柜领袖通过共同保住街路建立初步互信。"
+    },
+    {
+      "entity_id": "CH_TANGJIAO",
+      "desire_or_emotion": "抵达熟悉的木桶街后更明确感到旧关系压力，但仍选择用自己熟悉的街区动线帮助万机馆靠港。",
+      "relationship_delta": "没有回应反复呼叫本名的私人频道；纪存没有追问，而是采用了他的现场信息。"
+    },
+    {
+      "entity_id": "CH001",
+      "desire_or_emotion": "确认保护馆守Z与保护街区可以由更有力量的方案同时完成。",
+      "relationship_delta": "当众否掉纪存的硬靠方案并获得实际采纳；听见旧守护者亲口要求以当前受损姿态面对街区。"
+    },
+    {
+      "entity_id": "CH002",
+      "desire_or_emotion": "主动选择让木桶街看见自己受损但仍能工作的真实样子，并期待作为来访者站到新观众面前。",
+      "relationship_delta": "直接向兜灯表达意愿，兜灯在保留安全限制的前提下支持它面向街区完成靠港。"
+    }
+  ],
+  "open_threads": [
+    {
+      "thread_id": "WANJI_MAIN_CIRCULATION_FAILURE",
+      "status": "open",
+      "note": "万机馆必须在当天找到并验证真实的全尺寸主循环转子，否则不能再次安全离港。"
+    },
+    {
+      "thread_id": "TANGJIAO_OLD_STREET_CONTACT",
+      "status": "open",
+      "note": "木桶街的私人频道以唐胶本名反复呼叫，他没有回应，旧关系尚未处理。"
+    }
+  ],
+  "next_trigger": "万机馆已经泊稳但主循环无法支撑下一次航行，纪存与唐胶必须沿保持畅通的街路进入木桶街寻找全尺寸主循环转子。",
+  "unresolved_logic_risks": []
+}

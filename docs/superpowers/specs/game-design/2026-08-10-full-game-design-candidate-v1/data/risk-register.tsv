@@ -1,0 +1,20 @@
+risk_id	category	risk	probability	impact	early_trigger	mitigation	owner	stop_gate	contingency	residual_status
+RISK_CORE_TACTICS	product	基础战术关闭C2后不产生两种有趣方案	high	critical	P1冷测只发现唯一顺序或不愿重玩	同图同语义四时制;预注册阈值/权重;P1只shortlist;核心C2 crossover;身体/地形/目标优先	系统主设	P1 M5	返回动作/时制/地图，不加角色Buff掩盖	open
+RISK_C2_OVERLOAD	product	角色C2变成万能技能、提示答案或菜单膨胀	high	critical	玩家无法区分提案/授权/同意/执行	四类动作语义;带宽/来源/置信度/反制;P2开关对照	系统主设	P2 M5	删/合并动作;延后解锁;保持基础战术可玩	open
+RISK_SCOPE_22	commercial	22章按前三章密度外推至67-128小时	high	critical	普通章>90分钟;每章多A3;25%点预测误差>20%	6桥接+7标准+9支柱;22-30小时硬帽;逐章Candidate分配和7个A3簇	PRODUCT_OWNER	MS2/MS3	回裁内容;若资源<300PM则正式重写分部完整结局	open
+RISK_SETTING_DEBT	creative	Writer/gameflow临时发明城市、建筑、机体和世界规则	high	critical	Stage20只有文字;Reader出现无GD来源的新名词	GD1/GD2/GD3先行;真实图;source projection;阻断Reader	主策划	GD3/Stage20	暂停该话;回最早GD层;用户批准迁移后再写	open
+RISK_ROSTER_EXPLOSION	asset	百机/多角色被解释成大量独立高细节Rig	high	high	高细节主体超过44且消费<3 Encounter	12-16 Rig家族;支援区/远景/共享动作;高细节升格门	视觉负责人	资产BOM	降为场景体/Cut-in/支援卡	open
+RISK_GIANT_ONEOFF	asset	每章巨构各造独立地图、UI、状态和动画引擎	high	critical	C01-C03三高潮无法复用P3框架	多区域身体/承力/控制/持续状态统一;同时最多2个A3	系统主设	P3/MS3	缩成互动演出+一段完整玩法;保留因果	open
+RISK_SAVE_STATE	technical	长期状态/事务/存档仍是宽松Dictionary，量产后不可迁移	high	critical	跨Episode重置;非法资源/权限提交;旧档拒读	State/Transaction v2;域版本;原子校验;100/10k重放	技术负责人	Production Core M6	冻结内容;先做迁移器与坏档回退	open
+RISK_GATE_FALSE_PASS	process	关键词/文件存在检查误放行语义错误或纯文字Previs	high	high	C03错序/C04缺图仍PASS	定义+实例证据账;hash;receipt scope;Stage21严格checker;故障注入	管线负责人	D09实例化	人工冻结下游并返最早层;不得用passed标签辩护	open
+RISK_DEMO_CONTAMINATION	process	C01E02专用脚本、数值、地图或Candidate资产倒灌全游戏	high	high	通用设计引用Demo专用布尔链/HP/Turn事件	隔离manifest;只回传输入/相机/可读性/压力/构建证据	制作人/主策划	Demo handoff	删除倒灌引用;用中性原型重测	open
+RISK_VISUAL_PIPELINE	asset	对象方向图被误当连续Previs或正式资产handoff	high	high	approved方向板直接进Runtime;无animatic/联合图	区分设计Previs/连续Previs/资产Previs;五类回执	视觉负责人	Previs/Asset gate	退回Previs;保持runtime_allowed=false	open
+RISK_TEXT_LOCALIZATION	content	主线外文本膨胀且英文返修过晚	high	high	只统计Reader;术语/UI/档案未锁;Beta才开始英文	全玩家文本预算;术语库;伪本地化;章节批次翻译	叙事/发行负责人	MS3/MS4	削低价值档案/关系数量;不削关键因果	open
+RISK_VOICE	content	全配音在文本未冻结时造成预算和变更锁死	medium	high	量产前承诺全配音;Reader频繁返修	Minimum只做战斗/关键句;全配音独立预算与冻结门	产品Owner	Scope decision	取消或分批追加配音;保持字幕完整	open
+RISK_ACCESSIBILITY	quality	复杂战术只靠颜色、限时或不可回看信息	high	high	玩家分不清信息态;操作停滞>90秒;手柄不可达	形状/文字冗余;暂停/日志/时间辅助;手柄首等支持	UX/QA	P1/P2/MS6	减界面密度;延长计划窗;保持规则等价	open
+RISK_KEY_PERSON	team	主策划/Writer/技术Owner成为单点瓶颈	high	high	等待回执/上下文>20%周期;多人同时改Reader	RACI;单Writer;内容寻址context;WIP限制;代理Owner	制作人	每个里程碑	冻结新增;优先清依赖;建立可交接决策日志	open
+RISK_FINANCING	commercial	Scope2若实测落在或超过360-520PM的U0规划包络，可能超过可用现金/跑道	high	critical	垂直切片前无跑道覆盖;U2模型不可计算;单位成本/返工连续越过包络红线	先Stage0校准再决定Scope1;单位成本实测;15-25%储备;融资门	产品Owner	MS2 scope commit	不启动22章;重裁为有独立结局的分部作品	open
+RISK_STEAM_RELEASE	release	商店声明、审核、控制器/Deck、许可和构建未留时间	medium	high	RC前才建商店;声明功能在build缺失	MS4建立发行清单;至少7工作日审核缓冲;许可账	发行负责人	MS6/MS7	延期发布;不得虚报功能	open
+RISK_IP_LEGAL	legal	致敬、音乐、字体、训练数据或第三方资产权利不清	medium	critical	资产无provenance/license;宣传用高风险相似设计	来源/许可字段;法务审查;原创差异化审计	产品Owner/法务	Asset/Release	替换资产或改设计;阻断发布	open
+RISK_PERFORMANCE	technical	多格巨构、动画、回放、日志与斜45度地图性能超标	medium	high	低配/Deck帧率/内存/存档增长超预算	早做P3性能预算;对象池;LOD;事件日志压缩;设备矩阵	技术负责人	P3/MS4/MS6	降低同屏体量/表现层;不改变业务结果	open
+RISK_USER_APPROVAL	governance	不同scope的故事/玩法/视觉/生产批准被混成一次同意	high	high	故事回执被用于Runtime/资产;沉默视作通过	五类回执;每项可拒绝/延期;未批保持Candidate	主策划/用户	每个用户门	暂停对应下游;继续不依赖该决定的泳道	open

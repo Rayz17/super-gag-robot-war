@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:chao-gag:candidate:d04-p1:v0.2:save-log",
+  "title": "D04-P1 Candidate static save and cause-log schema",
+  "type": "object",
+  "required": ["meta", "snapshot", "event_log", "commit_cursor", "eligible_slots", "frozen_intents", "pending_world_ticks", "receipt"],
+  "properties": {
+    "meta": {"$ref": "#/$defs/Meta"},
+    "snapshot": {"$ref": "#/$defs/WorldSnapshot"},
+    "event_log": {"type": "array", "items": {"$ref": "#/$defs/CauseEvent"}},
+    "commit_cursor": {"type": "integer", "minimum": 0},
+    "eligible_slots": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "frozen_intents": {"type": "object", "additionalProperties": {"$ref": "#/$defs/FrozenIntent"}},
+    "pending_world_ticks": {"type": "array", "items": {"type": "integer", "enum": [4,8,12,16]}, "uniqueItems": true},
+    "receipt": {"$ref": "#/$defs/Receipt"}
+  },
+  "$defs": {
+    "Meta": {
+      "type": "object",
+      "required": ["fixture_id", "ruleset_id", "adapter_id", "authority", "build_status"],
+      "properties": {
+        "fixture_id": {"const": "D04-P1-FIXTURE-V0.2"},
+        "ruleset_id": {"const": "D04-P1-RULESET-V0.2"},
+        "adapter_id": {"enum": ["P1-A", "P1-B", "P1-C", "P1-D"]},
+        "authority": {"const": "Candidate"},
+        "build_status": {"const": "zero_build"}
+      },
+      "additionalProperties": true
+    },
+    "Cell": {
+      "type": "array",
+      "prefixItems": [{"type": "integer", "minimum": 1, "maximum": 14}, {"type": "integer", "minimum": 1, "maximum": 10}],
+      "items": false
+    },
+    "WorldSnapshot": {
+      "type": "object",
+      "required": ["world_time_ms", "cycle", "units", "vehicles", "objects", "objectives", "observation_snapshot", "world_tick_count"],
+      "properties": {
+        "world_time_ms": {"type": "integer", "minimum": 0, "maximum": 32000, "multipleOf": 500},
+        "cycle": {"type": "integer", "minimum": 0, "maximum": 4},
+        "units": {"type": "object"},
+        "vehicles": {"type": "object"},
+        "objects": {"type": "object"},
+        "objectives": {"type": "object"},
+        "observation_snapshot": {"type": "integer", "minimum": 0},
+        "world_tick_count": {"type": "integer", "minimum": 0, "maximum": 4}
+      },
+      "additionalProperties": true
+    },
+    "CauseEvent": {
+      "type": "object",
+      "required": ["event_id", "cycle", "tick", "op", "cause"],
+      "properties": {
+        "event_id": {"type": "string", "minLength": 1},
+        "cycle": {"type": "integer", "minimum": 1, "maximum": 4},
+        "tick": {"type": "integer", "minimum": 0, "maximum": 16},
+        "op": {"type": "string", "minLength": 1},
+        "cause": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": true
+    },
+    "FrozenIntent": {
+      "type": "object",
+      "required": ["intent_id", "target_ref", "route_ref", "source_snapshot"],
+      "properties": {
+        "intent_id": {"type": "string"},
+        "target_ref": {"type": "string"},
+        "route_ref": {"type": "string"},
+        "source_snapshot": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "Receipt": {
+      "type": "object",
+      "required": ["state_hash", "event_hash", "semantic_mode", "fun_status", "human_gate"],
+      "properties": {
+        "state_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "event_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "semantic_mode": {"const": "canonical_json_sha256"},
+        "fun_status": {"const": "FUN_UNPROVEN"},
+        "human_gate": {"const": "M5_REQUIRED"}
+      },
+      "additionalProperties": true
+    }
+  }
+}

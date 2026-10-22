@@ -1,0 +1,14 @@
+intent_id	intent_name	doctrine	mission_goal	base_behavior	high_info_preview	low_info_preview	commitment_window	contingency_trigger	legal_replan	player_counterplay	physical_result	observability_for_enemy_learning	failure_if_unreadable	tutorial_tier	status
+INT_ADVANCE_OBJECTIVE	直取目标	BREAKER	抵达/破坏/夺取具名对象	沿最短可承受路线推进并排开阻挡	目标;路线;到达时刻;撞击弧	高速向某方向移动;可能锁定大型目标	4-8s	路线完全阻断或目标移动	从预设次路线中选一个	卡位;改目标位置;稳固承接;诱导	位移;碰撞;目标进度	可看见我方阻挡与攻击	若提交后无理由瞬移换目标则作弊	T1	candidate_enemy_intent_v1
+INT_BREAK_SUPPORT	破坏承力	BREAKER	让结构/机体失去支撑	攻击已识别的承力点或连接	目标系统;力线;坍塌结果带	正在瞄准结构区域	4-8s	承力点消失/无法接触	切到同一结构的已知备用点	加固;转移载荷;拦截;先断控制	支撑状态;坍塌风险	敌方必须曾识别承力关系	未侦察就精确知道隐藏结构则作弊	T3	candidate_enemy_intent_v1
+INT_HUNT_ISOLATED	猎杀孤立单位	HUNTER	击倒/抓取/迫使撤离	追踪离支援最近或功能受损目标	目标;接近弧;抓取/攻击时刻	高速接近某一侧翼;目标不确定	2-6s	目标重新进入保护链	改追次优孤立目标或撤回	抱团;诱饵;掩护;反向包夹	位置;抓取;功能损伤	可见位置/伤损/通信状态	读取隐藏HP或无视诱饵则作弊	T2	candidate_enemy_intent_v1
+INT_SUPPRESS_ROUTE	压制通路	CONTROLLER	阻止通过/拖延救援	覆盖具名走廊而非追击单位	区域;持续窗;弹药/热量	某方向出现持续火力准备	4-8s	友军进入射界或区域失去价值	移动压制区或停火避免友伤	绕行;遮挡;诱饵;反制;中断	区域风险;行动限制	能观察路线使用和目标运动	区域规则隐藏或无友军约束则不公	T2	candidate_enemy_intent_v1
+INT_CAPTURE_NODE	占据控制节点	CONTROLLER	取得门/动力/通信/设施控制	移动到节点并执行交互	节点;路线;完成时刻;将改变的接口	向设施移动/正在建立连接	4-8s	节点损坏或权限失败	切备用节点/物理解法	封路;抢先操作;断电;诱导	控制权;地点状态	必须知道节点位置和用途	凭空控制未接触节点则作弊	T2	candidate_enemy_intent_v1
+INT_JAM_LINK	干扰通信	JAMMER	切断共享态势或延迟支援	对可观察发射源/频段建立干扰	覆盖区;受影响链;暴露源	检测到强干扰;来源为误差区	4-8s	发射源移动/关闭或干扰机受压	跟随已知源或切备用频段	关闭主动链;绕路;定位干扰源;有线/本地自治	接触过期;共享断链	敌方能观察我方发射/频段	无来源全图沉默则作弊	T4	candidate_enemy_intent_v1
+INT_SPOOF_CONTACT	伪造接触	JAMMER	诱导错误部署/浪费传感	生成与自身设备能力一致的方位/回波	可疑来源;可能假目标模式	一个新接触或方位线;可信度有限	2-8s	我方主动核验或敌方设备受损	改变假目标运动但受物理信号限制	多源交叉;主动扫描;观察物理痕迹	新增低可信接触;无直接伤害	敌方观察我方是否响应	假目标不可与真实目标完全无差别	T5	candidate_enemy_intent_v1
+INT_FEINT	佯动/条件转向	ADAPTER	诱出反应后攻击另一目标	提交一个可见前段与一个预定义条件分支	前段;可能分支条件;置信度	方向/意图类别;分支未知	4-8s	玩家预留指定反应或暴露次目标	仅在条件触发时走已登记分支	保留反应;不咬饵;改变目标价值	位置/攻击窗口变化	敌方需能观察诱饵是否生效	玩家高情报仍完全看不到分支条件则不公	T5	candidate_enemy_intent_v1
+INT_EXTRACT_SAMPLE	取样并撤离	EXTRACTOR	带走具名样本/物件/人员	接近→获取→选择撤离边界	目标;步骤;撤离路线;完成窗	向目标靠近;可能携带工具	multi_pulse	样本转移/路线封闭/自身严重受损	改取次级样本或提前撤离	护送;抢先转移;切工具;封撤离;交换	保管链;位置;撤离结果	敌方只学习实际取得/观察内容	击破所有敌人才算阻止则目标设计失败	T3	candidate_enemy_intent_v1
+INT_RESCUE_ALLY	救援同伴	GUARDIAN	带走受损单位/保护主体	接近并建立拖带/掩护链	对象;路线;承接时刻	向受损同伴移动	4-8s	对象毁损/拒绝/路线断开	改为掩护撤离或自撤	切断路线;谈判;允许撤离换目标;压制	敌方撤离;关系/道德后果	敌人知道同伴位置/状态	敌人永远送死则失去主体性	T4	candidate_enemy_intent_v1
+INT_WITHDRAW	撤离/脱战	ALL	保存样本/主体/战力	向合法边界移动并掩护	路线;携带物;离场时刻	远离战区/停止交战	2-8s	路线封闭或同伴需要援助	改次撤离点/短暂反击	追击;封路;允许撤离;夺回物件	单位离场;保管链;后续状态	撤离中仍只观察可见动作	把撤离单位当免费击杀靶则失败	T3	candidate_enemy_intent_v1
+INT_ADAPT_OBSERVED	针对已观察战法	ADAPTER	降低玩家重复方案价值	使用由ST_ENEMY_LEARNING合法解锁的反制	反制来源;目标战法;条件	敌方似乎针对某类动作	跨Encounter承诺	玩家不再使用该战法/反制条件不成立	切回基本Doctrine而非全能克制	换方案;隐藏动作;破坏观察链;反克制	规则约束/位置/信息变化	必须有前局可观察证据和结算记录	无前置证据突然免疫则作弊	T6	candidate_enemy_intent_v1
+INT_OVERLOAD_ENV	让环境恶化	CONTROLLER	迫使玩家分散处理危机	操作已控制设施或攻击已知危险点	接口;恶化阶段;停止方式	某区域压力/热/结构上升	4-8s	失去控制/设施断开	选择同系统的次级恶化动作	断控制;工程支撑;撤离;承受局部后果	地点状态;新目标/危险	敌方需已知并能接触设施	每回合凭空生成灾害则作弊	T4	candidate_enemy_intent_v1

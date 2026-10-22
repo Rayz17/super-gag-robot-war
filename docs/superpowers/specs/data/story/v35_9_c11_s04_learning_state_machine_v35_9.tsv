@@ -1,0 +1,7 @@
+transition_id	signature_class	use_count_before	use_count_after	cost_delta	availability_after	prediction_break_delta	next_policy	status
+C11S04LEARN01	STANDARD_OR_OPTIMAL	0	1	0	AVAILABLE	0	first_success_is_recorded	validated_v35_9
+C11S04LEARN02	STANDARD_OR_OPTIMAL	1	2	1	AVAILABLE_EXPENSIVE	0	second_use_cost_plus1	validated_v35_9
+C11S04LEARN03	STANDARD_OR_OPTIMAL	2	3	0	BLOCKED	0	third_use_frozen_until_family_changes	validated_v35_9
+C11S04LEARN04	LOW_FREQUENCY	ANY	UNCHANGED	0	AVAILABLE	1	break_prediction_without_learning	validated_v35_9
+C11S04LEARN05	DAMAGED	ANY	UNCHANGED	0	AVAILABLE	1	break_prediction_without_learning	validated_v35_9
+C11S04LEARN06	ROUTE_NONMERGE_OR_BLANK	ANY	UNCHANGED	0	AVAILABLE	1	political_or_consent_gap_cannot_be_copied_as_formation	validated_v35_9

@@ -1,0 +1,15 @@
+presence_id	scene_id	entity_id	requirement	presence_mode	lifecycle_claim	scene_function	control_state	knowledge_state	entry_state	exit_state	source_refs	status	notes
+PRES_C02E01_QIHAI	V359-C02E01-CREATIVE	CH_QIHAI	optional	remote_live	continued_remote	与纪存保持远程关系并提供本人掌握的信息	无木桶街现场授权	只知道远程通讯和合法记录	仍在本市封存中心	是否继续介入由选案决定	docs/superpowers/specs/data/canon/entities.tsv;docs/superpowers/specs/剧情梗概/V35.9/rebuild/handoff/C01-v3.1创作基线与C02继承包-v2.md	working	
+PRES_C02E01_BAIYUAN	V359-C02E01-CREATIVE	N_BAIYUAN	required_trace	work_trace	first_foreshadow	被盗用的分镜、署名或作品痕迹	本人无现场控制权	作品只包含创作时信息	本人不在木桶街	肉身仍未到场	docs/superpowers/specs/data/canon/entities.tsv	working	不能让白鸢本人说话、看现场或画新路线
+PRES_C02E01_LUHENG	V359-C02E01-CREATIVE	CH_LUHENG	forbidden	not_present	before_formal	不得承担C02现场职能	无	无现场知识	未登场	保持未登场	docs/superpowers/specs/data/canon/entities.tsv	working	C03才正式登场
+PRES_C02E02_QIHAI	V359-C02E02-CREATIVE	CH_QIHAI	required	remote_live	continued_remote	远程参与同模主体争议	只有本人权限与公开通讯能力	通过转播和记录理解战况	仍在封存中心	仍未登舰	docs/superpowers/specs/data/canon/entities.tsv	working	具体是否为required可由C02重建迁移
+PRES_C02E02_BAIYUAN	V359-C02E02-CREATIVE	N_BAIYUAN	optional	work_trace	continued_foreshadow	作品或被盗素材继续产生影响	本人无现场控制权	无实时现场知识	本人不在场	仍未到场	docs/superpowers/specs/data/canon/entities.tsv	working	
+PRES_C02E02_LUHENG	V359-C02E02-CREATIVE	CH_LUHENG	forbidden	not_present	before_formal	不得承担C02现场职能	无	无现场知识	未登场	保持未登场	docs/superpowers/specs/data/canon/entities.tsv	working	
+PRES_C02E03_QIHAI	V359-C02E03-CREATIVE	CH_QIHAI	optional	remote_live	continued_remote	远程关系或调查线	无现场机体控制权	只知道通讯和记录	封存中心	仍未登舰	docs/superpowers/specs/data/canon/entities.tsv	working	
+PRES_C02E03_BAIYUAN	V359-C02E03-CREATIVE	N_BAIYUAN	required	physical	first_formal	在话末肉身抵达并主张作品权利	尚无战斗指令权	只知道本人调查和抵达后所见	话末抵达木桶街	进入E04现场	docs/superpowers/specs/data/canon/entities.tsv	working	不得提前到本话前半段替战斗解题
+PRES_C02E03_LUHENG	V359-C02E03-CREATIVE	CH_LUHENG	forbidden	not_present	before_formal	不得承担C02现场职能	无	无现场知识	未登场	保持未登场	docs/superpowers/specs/data/canon/entities.tsv	working	
+PRES_C02E03_HAOSI	V359-C02E03-CREATIVE	CH036	required	physical	continued_physical	以勇气株式会社旧项目当事人身份面对伪造的完美履历	只代表本人与本人持有的记录;未建立社勇王或企业现役机体的现场控制权	知道旧项目和拳王展演史;不预知木桶街事件真相	他从勇气株式会社到场的原因、时间与交通必须在E03前半段可见建立	可留到E04或回企业;由C02方案选择	docs/superpowers/specs/data/canon/scenes.tsv;docs/superpowers/specs/剧情梗概/V35.9/rebuild/handoff/C01-v3.1创作基线与C02继承包-v2.md	working	不得把他写成早已随舰;不得连带认定勇拳或社勇王已参战
+PRES_C02E04_QIHAI	V359-C02E04-CREATIVE	CH_QIHAI	required	remote_live	continued_remote	远程参与开放日与关系场	无木桶街现场控制权	通过通讯和合法记录理解事件	封存中心	仍未登舰	docs/superpowers/specs/data/canon/entities.tsv	working	
+PRES_C02E04_BAIYUAN	V359-C02E04-CREATIVE	N_BAIYUAN	required	physical	continued_physical	第一次现场预演与临时登舰	只能组织预演草图，不能直接改写现实	看见抵达后的现场并可访问获准数据	木桶街现场	临时登舰	docs/superpowers/specs/data/canon/entities.tsv	working	
+PRES_C02E04_LUHENG	V359-C02E04-CREATIVE	CH_LUHENG	forbidden	not_present	before_formal	不得承担C02现场职能	无	无现场知识	未登场	保持未登场	docs/superpowers/specs/data/canon/entities.tsv	working	
+PRES_C02E04_HAOSI	V359-C02E04-CREATIVE	CH036	optional	physical	continued_physical	若E03留下，参与拳王和企业一线的后续交代	仍无社勇王或企业现役机体控制权	只继承E03亲历与本人过往	E03末留在木桶街，或不登场	留舰、回企业或成为日后客将的选择不得在未审定时固化	docs/superpowers/specs/data/canon/scenes.tsv	working	只在E03的到场因果已成立时可用

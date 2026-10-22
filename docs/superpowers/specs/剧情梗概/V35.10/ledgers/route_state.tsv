@@ -1,0 +1,6 @@
+episode_id	route_window	selected_slots	skipped_slots	incoming_route_state	active_route_state	convergence_differences	failure_dignity_state	next_required_read	gate_result
+V3510-C01E01	linear	V357-C01-S01	none	LINEAR_START	C01_COMMON_ACTIVE	none	核心救援失败重试;馆藏保全软失败进入S02	V357-C01-S02	pass
+V3510-C01E02	linear	V357-C01-S02	none	C01_COMMON_ACTIVE	C01_COMMON_ACTIVE_WITH_EVAC_SCAR	三种伤痕分别改变E03医疗/冷却/预封路线	全员安全与B1可恢复为硬底线;附加伤痕是尊严过关代价	V357-C01-S03	pass
+V3510-C01E03	linear	V357-C01-S03	none	C01_COMMON_ACTIVE_WITH_EVAC_SCAR	C01_COMMON_ACTIVE_WITH_IRREVERSIBLE_BODY_LOSS	三伤痕各带障碍/优势/后续债;样本棱镜决定敌方样本完整度但不取消主线学习	三支均全员通过断臂桥;馆守Z缺臂与豪司处罚不可取消	V357-C01-S04	pass
+V3510-C01E04	linear	V357-C01-S04	none	C01_COMMON_ACTIVE_WITH_IRREVERSIBLE_BODY_LOSS	C01_DEPARTED_WITH_MODULE_SCAR	三伤痕与三模块未选项继续形成不同C02/C03状态	所有组合均离城但旧址和一组模块不可恢复	V357-C02-S01	pass
+V3510-C02E01	linear	V357-C02-S01	none	C01_DEPARTED_WITH_MODULE_SCAR	C02_MARKET_SUPPLY_WITH_VISIBLE_SCARS	WBM/GZ支援选择改变热量结构;失败续写使地下擂台追债提前并发	关键件锁价仍可高息租赁续命并保留后续人格战;生命维持归零重试	V357-C02-S02	pass

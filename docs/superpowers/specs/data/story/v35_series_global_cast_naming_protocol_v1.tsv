@@ -1,0 +1,7 @@
+rule_id	scope	required_fields	casting_rule	example_or_candidate	avoid	stage3_use	status
+GCN01	核心本地既有角色	中文显示名;Latin转写;已有别名	保留既成身份，不为国际化强制改名	纪存 / Ji Cun; 七海 / Qihai; 白鸢 / Baiyuan，正式姓名候选Aveline Voss	把既有角色突然全部改成欧美名	旧字段模型仅供迁移追溯；当前读取v35_global_cast_identity_protocol_v2.tsv	history_superseded_by_identity_protocol_v2
+GCN02	全球机构与城市角色	中文显示名;Latin原名;地域/文化背景;代词;常用称呼	主要演员应覆盖多个地区、肤色和移民背景，名字与生活经验相互支持	Rosalind Vega / 罗莎琳·维加; Adrian Weiss / 阿德里安·维斯	两个汉字艺名批量生成全球角色;只换外国姓氏	旧字段模型仅供迁移追溯；当前读取v35_global_cast_identity_protocol_v2.tsv	history_superseded_by_identity_protocol_v2
+GCN03	远征与归航群	中文显示名;Latin原名;出生成长舰群;地球关系	舰生世代可拥有混合语言姓名，不按二十七年前国籍自动归类	Isabel Chen / 伊莎贝尔·陈; Kofi Adu / 科菲·阿杜; Anya Petrova / 安雅·彼得罗娃	所有归航者都叫澄夏朔舟叶泊式诗意中文名	旧字段模型仅供迁移追溯；当前读取v35_global_cast_identity_protocol_v2.tsv	history_superseded_by_identity_protocol_v2
+GCN04	异文明与机械生命	自称音形;中文近似译名;不可译部分;关系称呼	允许名称不服从地球人名结构，译名变化可进入剧情	地方灯槽名+关系昵称+机器呼号三层	统一翻成两个汉字;用乱码冒充异文明	旧字段模型仅供迁移追溯；当前读取v35_global_cast_identity_protocol_v2.tsv	history_superseded_by_identity_protocol_v2
+GCN05	代号与笔名	本名;公开代号;私人称呼;谁有权使用	代号可有中式舞台感，但必须说明它是选择而非全世界命名习惯	白鸢 / Baiyuan / Aveline Voss	用代号掩盖所有角色缺少生活背景	旧字段模型仅供迁移追溯；当前读取v35_global_cast_identity_protocol_v2.tsv	history_superseded_by_identity_protocol_v2
+GCN06	机体与组织	中文主名;英文/拉丁副名;型号/呼号;驾驶员私称	超级系可舞台化，真实系可型号化，同一世界允许并存	馆守Z / Guardian Z; 天穹联装共同工程 / Skyvault Joint Armament; 神座式正式机名OPEN	所有机体都四字古风或中式偶像团名	旧字段模型仅供迁移追溯；机体命名继续由包级命名协议维护	history_superseded_by_identity_protocol_v2

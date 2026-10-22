@@ -1,0 +1,62 @@
+gate_id	scope	gate	check_method	fail_response
+GATE_V02_001	run	运行必须有episodes/chapters/reviews/ledgers目录	check_episode_loop_run.py	补运行目录；不能称为ELO完成
+GATE_V02_002	episode	每个packet只能含一个Episode ID	check_episode_loop_run.py	拆成单话packet，逐话重跑pipeline
+GATE_V02_003	episode	每话packet必须有完整pipeline结构	check_episode_loop_run.py;required headings	补Pressure Board/Episode Card/Draft/Review/Patch/Gate/State Deltas
+GATE_V02_004	episode	授权时必须记录子agent审稿IDs	Reviewer Mode;Subagent Review IDs	补子agent审稿；无授权则标single-context fallback
+GATE_V02_005	episode	子agent阻塞项必须patch或Gate失败	Writer Room Review;Patch Log	不能静默overrule；补丁、重建或标fail/warn
+GATE_V02_006	chapter	章节只能由通过packet组装	chapter引用;packet Gate decision	未通过packet不得进入chapter
+GATE_V02_007	chapter	每章完成后必须有prefix review	reviews/Cxx-prefix-review.md	补prefix review；不能写通过
+GATE_V02_008	regression	prefix失败必须开Regression Ticket	regression_tickets.tsv;review file	开ticket，写根因K、重放范围和通过条件
+GATE_V02_009	regression	修K后必须重放K+1..N	replay log	补replay log；不能直接推进N+1
+GATE_V02_010	regression	同根因最多三轮	root_cause_id;attempt_no	三轮后写unresolved_issue并取最优版本继续
+GATE_V02_011	run	完成前必须跑validator	check_episode_loop_run.py output	validator fail则修结构或降级
+GATE_V02_012	run	V27式多章合并稿不能冒充ELO	文件形态;缺packet/review/ledger	降级为素材池/路线图；从V28 packet-first重跑
+GATE_V02_013	run	完成态必须记录validator命令和pass结果	ledgers/run_validation.tsv;--require-run-validation-log	首次自检可不带完成态开关；通过后写run_validation并带开关复跑，否则不能声称ELO完成
+GATE_V02_014	chapter	warn-through必须分类和入账	Prefix Review;--strict-prefix-warn-policy	warn必须写Warn classification、Blocking issue、Required action、Unresolved issue carried和Ledger rows written；否则视为失败
+GATE_V02_015	chapter	warn中的阻塞项必须开票或修复	Warn classification;Regression Ticket	local_fix/regression不得直接推进；必须修本章或开ticket并重放K+1..N
+GATE_V02_016	chapter	非阻塞warn也必须入账	unresolved_issues.tsv或对应debt ledger	future_watchpoint/implementation_debt/user_review必须有账本行；不能只留在复审正文
+GATE_V02_017	episode	子agent审稿不得跨话复用	writer_room_reviews.tsv reviewer_id	同一reviewer_id不应覆盖多话；否则降级为章节侧评或重新逐话审稿
+GATE_V02_017A	episode	正式厚版重写必须通过理想编剧室	--strict-writer-room;writer_room_reviews.tsv	每话必须有showrunner/50_issue/mecha_ip/gameplay/character_dialogue/relationship/protagonist/jicun_memory/quote_scene/spectacle_emotion/robot_anime_pv/commercial_opening/macro_mystery/player_interest/wanji_culture/thickness/canon_asset十七席审稿；三位共享顾问只能记为advisory，不能替代逐话审稿
+GATE_V02_017B	episode	strict writer-room不得复用reviewer_id	--strict-writer-room;writer_room_reviews.tsv	同一reviewer_id跨角色或跨话复用时validator失败；不能用--allow-reused-subagent-ids绕过
+GATE_V02_018	run	工作流正文默认中文	人工检查;文档语言	除稳定字段名和ID外，剧情说明、审稿、票据、结论必须使用中文
+GATE_V02_019	episode	每话必须有读者/玩家钩子	Pressure Board;Episode Card;Gate Result	没有具体问题、危险、机体、关系、谜团或奖励牵引时，重建Pressure Board；不能用“推进主题”充当钩子
+GATE_V02_020	episode	关键话必须有PV级机体画面	Draft Synopsis;Mecha Appearance;Heat/Spectacle/Gag	开局/高潮/篇章启动话若只有锚件、表格或概念，必须补机器动作、出击、变形、防御、失败、觉醒或地图尺度变化
+GATE_V02_021	episode	关系事件不能只写权限债务	Relationship;relationship_heat.tsv	成人/成年感关系必须有可感知误会、吸引、羞耻、吃醋、体谅、牺牲、救场或伤害；否则回到关系场重写
+GATE_V02_022	episode	宏大阴影必须事件化	Macro-shadow signal;enemy_gain.tsv;protagonist_memory.tsv	G.A.G./索引/远星/旧灾变不能只作设定句；必须表现为UI伤口、信号、地图异常、敌方抽取、记忆症状或物件反常
+GATE_V02_023	episode	议题必须转成戏剧动作	Issue-to-drama conversion;Draft Synopsis	授权、证词、标签、价格、公共信托等议题必须落成人、机体、地图、损失、救援、羞辱、胜利或敌方收益
+GATE_V02_024	chapter	C01-C03必须做开局试玩审查	reviews/C01-C03-opening-arc-review.md或C03-prefix-review	第三章后若没有开局审查，不能推进C04；审查要判断试玩吸引力、机战承诺、PV画面、关系钩子和宏大阴影
+GATE_V02_025	output	判断故事魅力时必须有可读稿层	Reader Synopsis;chapter assembly	不要让用户只读packet字段判断好不好看；需要连续可读梗概或章节assembly作为读感对象
+GATE_V02_026	episode	锚件不得冒充机体密度	Countable mecha density;Non-count anchors;Mecha Appearance	模型盒、展签、框体、维修单、说明书、证词展台、留言墙等必须列入非计数锚件；除非触发明确战斗单位/支援/敌方/Boss/场景巨机行动，否则不能计入每话2台机体曝光
+GATE_V02_027	episode	每话必须有实际首登IP映射机体	First-appearance IP mecha/unit selection;roster_first_appearance_ledger;Candidate pool source rows;Backfill source rows	候选池只提供素材，不预排话号；本话至少1台、默认2台从参战Bible/Reserve回填池、候选池或章节补丁中实际首次出现的IP映射机体/单位/模块/场景巨机；旧机常规复出只能写repeat_returns_not_counted，不能冒充新增
+GATE_V02_028	episode	参战包级机体不得被功能模块替代	Roster-package first-appearance candidate;Backfill source rows;Functional module only exception;roster_first_appearance_ledger	除过场/纯经营轻话外，本话首登中至少1台优先来自v29_roster_bible_reserve_backfill_pool_v0_1.tsv的主机体、宿敌、后继机、隐藏机或代表性支援单位；若连续两话只用功能模块、规则机或场景机关填充，必须回回填池重选或登记明确例外
+GATE_V02_029	episode	真实爱好者证词必须来源清楚且边界克制	Real-world testimony gate;real_world_testimony_ledger;real_world_resonance_cases_v0_1.tsv	若使用RWR001等真实公开案例，必须记录case_id、来源、使用模式、具体物件、敏感边界和发布前授权/署名复核；若不能满足则降级为虚构化母题或跳过；不得把真实悲剧当催泪按钮、不得让现实人物成为战斗单位、不得替代机体/IP和主角成长
+GATE_V02_030	episode	顶层价值必须场面化而非口号化	Robot-culture value axis;robot_culture_value_axis_ledger;robot_culture_value_axes_v0_1.tsv	写远星、索引、开馆权、真实证词、终局或本话主题升华时，必须查价值轴表并记录选用或跳过理由；选用价值轴必须落成场面、玩法、角色选择、机体动作、敌方误用和后续债务，不能只写“机器人文化值得被承认”；关键话若没有任何价值轴显影，必须回Pressure Board补强或记录明确例外
+GATE_V02_031	episode	分支/隐藏/说得必须接入机战IF素材	Original-work regret / what-if mapping;what_if_usage_ledger;roster_what_if_regret_pool_v0_1.tsv	写分支、隐藏机体、隐藏支援、说得、救人、saved-death、名场面反转或终局全员支援时，必须选择what_if_id或记录skip reason，并写明原创化承载、可玩触发条件、失败尊严和禁用边界；同时记录Non-uniform density note，强IP可高密度深挖，弱悲剧/轻喜/玩法型作品可跳过意难平而承担爽点、梗点、生态或玩法；若只是菜单选项、照搬原作悲剧、无损复活、平均凑悲剧或浅用强IP，退回Pressure Board重建
+GATE_V02_032	episode	生活温度不能缺席也不能替代主线	Daily-life warmth scene;daily_life_tone_ledger;daily_life_character_scene_pool_v0_1.tsv	写舰内生活、战后维修、关系积累、成人向卖相、低俗机战日常或章节缓冲时，必须选择生活温度hook或记录skip reason；生活场必须改变角色感受或关系/支援/权限/玩法状态，并保留至少一个不立刻系统化的普通物件；不得用生活戏替代机体/IP密度和主线危机，儿童线必须隔离成人向
+GATE_V02_033	episode	厚版单话必须有可读层和制作拆分层	Production Split;production_layer_split_ledger;episode_production_layer_split_schema_v0_1.tsv	写厚版梗概、台本母稿、玩法/美术交接稿或修已成稿时，必须先保留可读剧情层，再把同一话拆成ADV剧情、探索/副玩法、SRPG战斗、战斗内剧情演出、舰内日常/关系事件、结算与状态变化；不用的层写skip reason；若战斗规则、触发器、关系事件或状态变化只混在正文里，退回补制作拆分
+GATE_V02_034	episode	万机馆本体暴走和可变堡垒不能写成免费系统闪红	Wanji body mode;wanji_body_runaway_ledger;wanji_body_mode_spine_v0_1.tsv;wanji_body_runaway_debt_rules_v0_1.tsv	写展舰强救场、G.A.G.暴走接管战场、万机馆本体暴走、分区变轨或万机殿时，必须选择mode_id，并区分G.A.G.引擎压力、万机馆馆体表现和纪存机魂异常状态；写清剧情前置、战斗内触发、战后结算、馆体巨物行动、收益、至少三类可见代价、后续读取和制作拆分；若只写G.A.G.红了、免费Buff、无伤变形、纪存黑化或万机馆替代参战机体，退回Pressure Board重建
+GATE_V02_035	episode	Fable固定二审只能在本地packet通过后运行	Fable Review Pack;Gate Result;Reader Synopsis	不得让Fable预写主稿、补canon、补机体、补战斗规则或替代本地Writer Room Review；若本地packet未过关，先回本地pipeline修正
+GATE_V02_036	episode	Fable诊断必须记录明确状态	fable_review_ledger;Fable Review Status	每话必须是fable_review_done、fable_failed_technical、fable_rejected_overdrift或fable_skipped_user_approved之一；技术失败必须有本地台词/关系/读感替代复审；不得静默跳过或把失败混称为Fable通过
+GATE_V02_037	episode	Fable建议必须由Codex本地合并或拒绝	Fable Review Pass;Patch Log;fable_review_ledger	Fable输出只能作为建议；Codex必须逐条记录accepted、accepted_after_rewrite、rejected_canon_drift、rejected_mecha_gameplay_drift、rejected_taste或deferred_to_script_stage；未记录合并判断不得进入State Deltas
+GATE_V02_038	episode	本话必须有素材输入清单	Episode Input Manifest;source_absorption.tsv	每话写作前必须列出selected/skipped来源行、读取范围、保留内容和选择理由；没有Input Manifest时不能声称canon/pipeline素材已使用
+GATE_V02_039	episode	选中素材必须绑定到可读场面	Scene Binding Matrix;Draft Synopsis;Reader Synopsis	每条selected source必须绑定到具体可读场面；只出现在Context Pack、候选池、字段或账本里的素材视为未吸收
+GATE_V02_040	episode	选中素材必须绑定到玩家/角色/机体/敌方后果	Scene Binding Matrix;Production Split;source_absorption.tsv	selected source至少要有玩家动作、角色动作、机体/地图动作、敌方误用或状态变化之一；纯主题句和纯列表不通过
+GATE_V02_041	episode	分支、IF、牺牲和关系爆点不得字段化	Source Absorption Review;branch_variables.tsv;what_if_usage_ledger;relationship_heat.tsv	branch_variable、what_if_regret、finale_sacrifice、relationship_sacrifice、protagonist_memory等selected source必须进入场面、触发、失败尊严、关系后果或后续必读；不能只写eligibility或debt
+GATE_V02_042	episode	机体/IP和名场面素材必须可见行动化	Source Absorption Review;Mecha Appearance;quote_scene_usage.tsv	mecha_ip和quote_scene selected source必须表现为参战/支援/敌方/Boss/场景巨机/新形态、地图规则、Cut-in、短台词或原创化桥段；只列名字或“投射某IP”不通过
+GATE_V02_043	chapter	章节复审必须检查素材吸收在连读中成立	Prefix Review;source_absorption.tsv;chapters/*.md	章节连读时要检查重要来源是否被玩家读到和玩到；若章节稿看不出素材，回到最早根因话重跑，而不是只补ledger
+GATE_V02_044	run	V34完成态必须启用素材吸收validator	--require-source-absorption;run_validation.tsv	新V34/V35厚版重跑若未带--require-source-absorption，只能称为结构/创作字段审计，不能称为素材吸收审计完成
+GATE_V02_045	episode	V35单话必须解析到作者槽	Author Slot ID;slot_episode_mapping.tsv;--require-v35-slot-contract	缺slot_id或slot/chapter不匹配时不得写Pressure Board；一个作者槽拆多话必须记录顺序和理由
+GATE_V02_046	episode	V35路线状态必须进入单话输入	route_state.tsv;Selected Slots;Skipped Slots	互斥/任务槽必须记录当前选择、跳过内容、汇流差异和失败尊严；不能只在章末改变量
+GATE_V02_047	episode	未走槽必须继续存在	skipped_slot_world_state.tsv;Skipped-Slot World State	每个跳过槽转为敌方、独立援军、残响、后来者代收、路线缺口或补救窗；not_selected不通过
+GATE_V02_048	episode	机体部署必须符合生命周期和舰群	unit_availability.tsv;Available Fleet;Cross-Fleet Deployment Reason	首控前不得部署；C12后无解释跨舰出击失败；战后可用性和舰群必须更新
+GATE_V02_049	episode	关键命运状态必须跨章传播	decision_propagation.tsv;Incoming Decision Threads;Outgoing Decision Deltas	涉及V35.4传播线程时必须绑定场面和下游读取；汇流、恋爱、修复舱不得自动清零
+GATE_V02_050	episode	无新机话必须有合格生命周期变化	New Unit Gate Mode;Roster Lifecycle Payload;unit_availability.tsv	first_appearance沿用新机门禁；lifecycle_delta必须是新形态/武器/驾驶关系/合体位置/政治归属/跨舰/敌转友/路线锁/终局回收；bridge_exception不得连续两话
+GATE_V02_051	chapter	章节组装必须符合V35.4路线组合	v35_4_playthrough_route_combinations_v35_4.tsv;route_state.tsv;Prefix Review	mandatory槽、选择数量、汇流差异、未走状态必须完整；不能因组装方便加入所有互斥槽
+GATE_V02_052	run	V35完成态必须启用槽位合同validator	--require-v35-slot-contract;run_validation.tsv	未带该开关只能称为通用Pipeline运行，不能声称按82槽、72机生命周期和50节点传播执行
+GATE_V02_053	episode	Meta事件必须遵守世界内载体和人物认知上限	meta_event_ledger;diegetic_meta_layer_rules_v0_1.tsv	人类角色直接说玩家/章节/游戏/攻略，或馆外观测者被写成神权时，退回Episode Card重写
+GATE_V02_054	episode	Meta必须有故事承重与安全恢复	state_consequence;recovery_path;meta_event_safety_boundaries_v0_1.tsv	只有UI闪烁/假报错而无机体、地图、关系、路线、敌方或持久状态变化则删除；跨设备效果无恢复/离线/无障碍路径则阻断
+GATE_V02_055	episode	巨体动作必须符合三轴尺寸、质量级和环境反力	v35_major_body_scale_interaction_baseline_v1.tsv;Physical Scale And Reaction Check	逐项核对高度/长度/宽度、相对质量、泊位和支点；单机无支点拖舰、抛飞更大敌体或把舰长当高度时退回场面因果板
+GATE_V02_056	episode	地外敌人必须区分编号、作战呼号、地方俗称与自称	v35_external_threat_designation_protocol_v1.tsv;Threat Naming Provenance	首次接触先显示未知编号或分类；呼号必须有识别触发；不得把人类诗意称呼写成敌方自报名或把近似中文词堆成一套神话族谱
+GATE_V02_057	chapter	第四层章纲必须先过玩家可见性门	Cxx-章节导演板.md;Cxx-战斗与玩法预案.md;Cxx-物理因果与人物站位板.md;Cxx-完整剧情总纲.md	每个关键场面必须锁玩家可见证据、暂定演出载体、当场必须理解、允许疑问、作者后台真相、最低资产和旁白删除判据；物理板只做否决，不得为现稿补造装置
+GATE_V02_058	episode	章级演出承载规划是Episode Reader前置门	Chapter Presentation Plan Path;Chapter Presentation Plan Status;Upstream Presentation Gate Result	某章完整总纲通过后仍须先按一次实际游玩顺序排定舰内自由活动、ADV、探索、地图事件、SRPG、战中通讯、短动画、Cut-in、结算和可选事件；规划缺失返回blocked_upstream_presentation_plan_missing，不得生成Reader正文
+GATE_V02_059	episode	单话不得用对白和日志补第四层缺口	Layer4 Visibility Gate Status;Scene Binding Matrix;Draft Synopsis	若关键因果只能靠角色念设定、战中百科、终端长日志或作者旁白成立，退回章节导演板/战斗预案；单话不得临时改变地图轮廓、信息来源、关键资产和演出载体分配

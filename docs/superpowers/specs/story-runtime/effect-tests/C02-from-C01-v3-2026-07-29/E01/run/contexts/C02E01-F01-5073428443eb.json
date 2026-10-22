@@ -1,0 +1,75 @@
+{
+  "assembled_context_sha256": "5073428443eb7fe7b3e7e70bdea52305a85ab6ee6836807a8a7f4ac331ea6170",
+  "bytes": 67258,
+  "chapter": "C02",
+  "chars": 29296,
+  "context_key": "5073428443eb7fe7b3e7e70bdea52305a85ab6ee6836807a8a7f4ac331ea6170",
+  "continuity_receipt_hashes": {},
+  "entry_receipt_hashes": {},
+  "episode": "C02E01",
+  "fragment_card_sha256": "ff64d8d901abe4ce0032b5b51d7f660b3edda41a07f378b518cabb3d4bff1309",
+  "fragment_id": "C02E01-F01",
+  "path": "docs/superpowers/specs/story-runtime/effect-tests/C02-from-C01-v3-2026-07-29/E01/run/contexts/C02E01-F01-5073428443eb.md",
+  "prior_prose_tail_sha256": "44e8ea803c4199b9e73e70b26a75330db230f62f035690c06b7f664c3e7ed825",
+  "retrieval_corpus_hashes": {
+    "docs/superpowers/specs/story-runtime/generated/runtime_corpus.jsonl": "38b98d37aa3e787721306fb4aae515a9c6ecd3f8749fe419d90594f5efe438e4",
+    "docs/superpowers/specs/story-runtime/generated/support/support_runtime_corpus.jsonl": "c1733f67e8fa331008d733ed3269f8948b15f96c30570ee8c70c31e34bc3da5d"
+  },
+  "retrieval_trace": [
+    {
+      "explicit_seed": true,
+      "layer": "current_canon",
+      "node_key": "entity:V353U043",
+      "record_id": "V353U043",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv",
+      "title": "火种货柜领袖"
+    },
+    {
+      "explicit_seed": true,
+      "layer": "current_canon",
+      "node_key": "entity:MECHA_WANJI_MOBILE_CHASSIS",
+      "record_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "source": "docs/superpowers/specs/剧情梗概/V35-C01用户审定故事回迁与Canon收敛-2026-07-26.md",
+      "title": "万机馆巡展舰体"
+    },
+    {
+      "explicit_seed": true,
+      "layer": "current_canon",
+      "node_key": "entity:V353U001",
+      "record_id": "V353U001",
+      "source": "docs/superpowers/specs/剧情梗概/V35-C01用户审定故事回迁与Canon收敛-2026-07-26.md",
+      "title": "馆守Z"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "candidate_support",
+      "node_key": "support:roster_lifecycle:V353U043",
+      "record_id": "V353U043",
+      "source": "docs/superpowers/specs/data/story/v35_series_roster_lifecycle_inventory_v1.tsv",
+      "title": "火种货柜领袖"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "current_canon",
+      "node_key": "scene:V359-C02E01-CREATIVE",
+      "record_id": "V359-C02E01-CREATIVE",
+      "source": "docs/superpowers/specs/data/canon/scenes.tsv",
+      "title": "救命零件，限定发售"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "current_canon",
+      "node_key": "scene:V359-C02E04-CREATIVE",
+      "record_id": "V359-C02E04-CREATIVE",
+      "source": "docs/superpowers/specs/剧情梗概/V35-C02四话拓扑恢复与Current-Canon迁移-2026-07-26.md",
+      "title": "万机初开"
+    }
+  ],
+  "revision_note_sha256": "683393cb27d5d01bd28b1c6db10df939b3c699a939da1208c41b2507ea53b20b",
+  "schema_version": 1,
+  "stable_prefix_sha256": "c1174e6ec49ad9c716de13d12bc5ac30cd91bf78307470ec597d3a81ac6af0f3",
+  "target_output_chars": {
+    "max": 5000,
+    "min": 2400
+  }
+}

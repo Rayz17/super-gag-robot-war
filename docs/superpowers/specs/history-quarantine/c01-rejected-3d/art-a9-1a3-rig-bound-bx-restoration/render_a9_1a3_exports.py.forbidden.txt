@@ -1,0 +1,110 @@
+#!/usr/bin/env python3
+"""Render A9.1-A3 color, silhouette, component masks and rig keypoints.
+
+The PNGs are direct orthographic or fixed-camera exports from one local
+Three.js component rig per asset. No generated turnaround is sliced here.
+"""
+
+from __future__ import annotations
+
+import json
+import shutil
+import socket
+import subprocess
+import time
+from pathlib import Path
+
+
+HERE = Path(__file__).resolve().parent
+PROJECT = HERE.parents[5]
+PWCLI = Path.home() / ".codex/skills/playwright/scripts/playwright_cli.sh"
+SESSION = "a91a3-export"
+
+
+def free_port() -> int:
+    with socket.socket() as sock:
+        sock.bind(("127.0.0.1", 0))
+        return int(sock.getsockname()[1])
+
+
+def run_cli(*args: str, raw: bool = False) -> str:
+    command = [str(PWCLI)]
+    if raw:
+        command.append("--raw")
+    command.extend((f"-s={SESSION}", *args))
+    result = subprocess.run(command, cwd=PROJECT, text=True, capture_output=True, check=True)
+    return result.stdout.strip()
+
+
+def eval_payload() -> dict:
+    output = run_cli("eval", "() => JSON.stringify(window.__A91A3_EXPORT__)", raw=True)
+    return json.loads(json.loads(output))
+
+
+def main() -> None:
+    if not PWCLI.is_file() or shutil.which("npx") is None:
+        raise RuntimeError("Playwright CLI wrapper or npx is unavailable")
+
+    for directory in (HERE / "delivery", HERE / "evidence/masks", HERE / "evidence/keypoints"):
+        directory.mkdir(parents=True, exist_ok=True)
+
+    port = free_port()
+    server = subprocess.Popen(
+        ["python3", "-m", "http.server", str(port), "--bind", "127.0.0.1"],
+        cwd=PROJECT,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+    base = (
+        f"http://127.0.0.1:{port}/docs/superpowers/specs/production/"
+        "c01-current-demo-v1/art-a9-1a3-rig-bound-bx-restoration/"
+        "work/renderer/render_a9_1a3.html?v=5"
+    )
+    jobs = [
+        ("guardian_z", "front", "GUARDIAN_Z_RIGBOUND_FRONT"),
+        ("guardian_z", "left", "GUARDIAN_Z_RIGBOUND_LEFT"),
+        ("guardian_z", "back", "GUARDIAN_Z_RIGBOUND_BACK"),
+        ("guardian_z", "right", "GUARDIAN_Z_RIGBOUND_RIGHT"),
+        ("breaker", "planning", "BREAKER_BX_RIGBOUND_PLANNING"),
+        ("breaker", "contact", "BREAKER_BX_RIGBOUND_CONTACT"),
+    ]
+    try:
+        time.sleep(0.4)
+        first_url = f"{base}&asset={jobs[0][0]}&view={jobs[0][1]}&mode=color"
+        run_cli("open", first_url)
+        run_cli("resize", "1024", "1024")
+        for asset, view, stem in jobs:
+            payload = None
+            for mode in ("color", "silhouette", "components"):
+                url = f"{base}&asset={asset}&view={view}&mode={mode}"
+                run_cli("goto", url)
+                target = (
+                    HERE / "delivery" / f"{stem}_RGBA_1024.png"
+                    if mode == "color"
+                    else HERE / "evidence/masks" / f"{stem}_{mode.upper()}_1024.png"
+                )
+                code = (
+                    "async (page) => { "
+                    "await page.waitForFunction(() => window.__RENDER_READY__ === true); "
+                    f"await page.screenshot({{path: {json.dumps(str(target))}, omitBackground: true}}); "
+                    "}"
+                )
+                run_cli("run-code", code)
+                if mode == "color":
+                    payload = eval_payload()
+            assert payload is not None
+            keypoint_path = HERE / "evidence/keypoints" / f"{stem}_keypoints.json"
+            keypoint_path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    finally:
+        subprocess.run([str(PWCLI), f"-s={SESSION}", "close"], cwd=PROJECT, capture_output=True)
+        server.terminate()
+        try:
+            server.wait(timeout=3)
+        except subprocess.TimeoutExpired:
+            server.kill()
+
+    print("A9.1-A3 renderer exports: PASS")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,349 @@
+{
+  "authority_semantics": "requires_source_adjudication_not_hash_inference",
+  "chapter": "C04",
+  "context_policy": "author_first_v1",
+  "error_count": 0,
+  "input_hashes": {
+    "docs/superpowers/specs/data/canon/entities.tsv": "1e4a69d834224786309f3f43b9ae1347ef4a14e024e889028b3d86fb03815da5",
+    "docs/superpowers/specs/data/character_voice/character_dossiers_core.tsv": "b32fe56adc2d1c11b8b73bfa3e86874cc4f331134fe0100ff9a6a758eef5c1ac",
+    "docs/superpowers/specs/game-design/2026-08-10-full-game-design-candidate-v1/00c-core-game-design-master-review.md": "eadd8add793eced85bdd1fa7b2a56566bc17ba8bb586069b96e9644e9345899a",
+    "docs/superpowers/specs/story-runtime/effect-tests/C04-author-first-2026-09-05/01-共同资料请求.md": "50aae7138a414031262a33b391e4a554b5fd06394142d99f510ed0018362f2ba",
+    "docs/superpowers/specs/剧情梗概/V35.9/rebuild/reader/C03-章节连续阅读稿.md": "ae2f16288a604658d75eb19fdd9f5ca91fba1f9b43d62d1dbf6ca2fd4b7ee4ea",
+    "docs/superpowers/specs/剧情梗概/V35世界机制与创作接口设定基线-2026-07-19.md": "c64bd6b62f509bfa37d3c96f2ab7996c075399a442ce85508b96893756496be0",
+    "docs/superpowers/specs/剧情梗概/V35主题玩家幻想与作品体验宪章-2026-07-18.md": "3acf89f7801efb7c45ded831a215558c8b4421e1276be8011b2d0abd76f17b6b",
+    "docs/superpowers/specs/剧情梗概/V35故事定位世界冲突与全剧总发动机-2026-07-18.md": "1edd628c6de5f16bfe1656783c0818d5406c3e4d45ee6ea0ca581c21503f6e33",
+    "docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C04/C04-章级对齐卡.md": "d243543f8bc1c3b31cd810d47fb88552baddd45646c6d4ce7c806ae444a67c5d",
+    "docs/superpowers/specs/剧情梗概/V35结构再设计/V35-C04-C05章节职责再分配迁移说明-v1.md": "fa5c7035c9eca18fedf2e5a5f8ac4e4911413ff10f1164c5a40e45ffd8be69df",
+    "scripts/compile_story_runtime_stage_context.py": "15c17246de88f2b6a7a4b81cfd5a29cc9e5bbc1c48209bd5c36d1b3c099dfa28"
+  },
+  "omitted_optional_ids": [],
+  "request_config_sha256": "7f46481e6533f78e33fa51bbb0c7b3eb732cf52b4aae17ce214eccc529647ea0",
+  "review_scope": "",
+  "runtime_phase": "ideation",
+  "schema": "story-author-context-v1",
+  "source_cards": [
+    {
+      "audience": "author",
+      "authority": "working",
+      "chars": 171,
+      "id": "L1-作品体验",
+      "included": true,
+      "kind": "future_obligation",
+      "sha256": "3acf89f7801efb7c45ded831a215558c8b4421e1276be8011b2d0abd76f17b6b",
+      "source": "docs/superpowers/specs/剧情梗概/V35主题玩家幻想与作品体验宪章-2026-07-18.md"
+    },
+    {
+      "audience": "author",
+      "authority": "working",
+      "chars": 84,
+      "id": "L2-全剧方向不是本章揭晓内容",
+      "included": true,
+      "kind": "future_obligation",
+      "sha256": "1edd628c6de5f16bfe1656783c0818d5406c3e4d45ee6ea0ca581c21503f6e33",
+      "source": "docs/superpowers/specs/剧情梗概/V35故事定位世界冲突与全剧总发动机-2026-07-18.md"
+    },
+    {
+      "audience": "author",
+      "authority": "working",
+      "chars": 655,
+      "id": "L2-手足与宇宙战争后续保留",
+      "included": true,
+      "kind": "future_obligation",
+      "sha256": "1edd628c6de5f16bfe1656783c0818d5406c3e4d45ee6ea0ca581c21503f6e33",
+      "source": "docs/superpowers/specs/剧情梗概/V35故事定位世界冲突与全剧总发动机-2026-07-18.md"
+    },
+    {
+      "audience": "author",
+      "authority": "working",
+      "chars": 913,
+      "id": "C03-当前求援及七海去留",
+      "included": true,
+      "kind": "fact",
+      "sha256": "ae2f16288a604658d75eb19fdd9f5ca91fba1f9b43d62d1dbf6ca2fd4b7ee4ea",
+      "source": "docs/superpowers/specs/剧情梗概/V35.9/rebuild/reader/C03-章节连续阅读稿.md"
+    },
+    {
+      "audience": "author",
+      "authority": "working",
+      "chars": 740,
+      "id": "C03-伙伴与出航",
+      "included": true,
+      "kind": "fact",
+      "sha256": "ae2f16288a604658d75eb19fdd9f5ca91fba1f9b43d62d1dbf6ca2fd4b7ee4ea",
+      "source": "docs/superpowers/specs/剧情梗概/V35.9/rebuild/reader/C03-章节连续阅读稿.md"
+    },
+    {
+      "audience": "author",
+      "authority": "working",
+      "chars": 264,
+      "id": "世界-机魂主体定义",
+      "included": true,
+      "kind": "fact",
+      "sha256": "c64bd6b62f509bfa37d3c96f2ab7996c075399a442ce85508b96893756496be0",
+      "source": "docs/superpowers/specs/剧情梗概/V35世界机制与创作接口设定基线-2026-07-19.md"
+    },
+    {
+      "audience": "author",
+      "authority": "working",
+      "chars": 241,
+      "id": "世界-载体不能消失",
+      "included": true,
+      "kind": "fact",
+      "sha256": "c64bd6b62f509bfa37d3c96f2ab7996c075399a442ce85508b96893756496be0",
+      "source": "docs/superpowers/specs/剧情梗概/V35世界机制与创作接口设定基线-2026-07-19.md"
+    },
+    {
+      "audience": "author",
+      "authority": "working",
+      "chars": 141,
+      "id": "世界-玩具与实机",
+      "included": true,
+      "kind": "fact",
+      "sha256": "c64bd6b62f509bfa37d3c96f2ab7996c075399a442ce85508b96893756496be0",
+      "source": "docs/superpowers/specs/剧情梗概/V35世界机制与创作接口设定基线-2026-07-19.md"
+    },
+    {
+      "audience": "author",
+      "authority": "working",
+      "chars": 190,
+      "id": "世界-手艺与工程",
+      "included": true,
+      "kind": "fact",
+      "sha256": "c64bd6b62f509bfa37d3c96f2ab7996c075399a442ce85508b96893756496be0",
+      "source": "docs/superpowers/specs/剧情梗概/V35世界机制与创作接口设定基线-2026-07-19.md"
+    },
+    {
+      "audience": "author",
+      "authority": "working",
+      "chars": 225,
+      "id": "世界-白鸢当前能力",
+      "included": true,
+      "kind": "fact",
+      "sha256": "c64bd6b62f509bfa37d3c96f2ab7996c075399a442ce85508b96893756496be0",
+      "source": "docs/superpowers/specs/剧情梗概/V35世界机制与创作接口设定基线-2026-07-19.md"
+    },
+    {
+      "audience": "author",
+      "authority": "working",
+      "chars": 157,
+      "id": "C04-已有职责可提迁移不当事实",
+      "included": true,
+      "kind": "future_obligation",
+      "sha256": "fa5c7035c9eca18fedf2e5a5f8ac4e4911413ff10f1164c5a40e45ffd8be69df",
+      "source": "docs/superpowers/specs/剧情梗概/V35结构再设计/V35-C04-C05章节职责再分配迁移说明-v1.md"
+    },
+    {
+      "audience": "author",
+      "authority": "working",
+      "chars": 188,
+      "id": "C05-后续保留",
+      "included": true,
+      "kind": "future_obligation",
+      "sha256": "fa5c7035c9eca18fedf2e5a5f8ac4e4911413ff10f1164c5a40e45ffd8be69df",
+      "source": "docs/superpowers/specs/剧情梗概/V35结构再设计/V35-C04-C05章节职责再分配迁移说明-v1.md"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 277,
+      "id": "C04-尺寸与驾驶边界",
+      "included": true,
+      "kind": "future_obligation",
+      "sha256": "d243543f8bc1c3b31cd810d47fb88552baddd45646c6d4ce7c806ae444a67c5d",
+      "source": "docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C04/C04-章级对齐卡.md"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 81,
+      "id": "C04-韩秀雅的取舍",
+      "included": true,
+      "kind": "future_obligation",
+      "sha256": "d243543f8bc1c3b31cd810d47fb88552baddd45646c6d4ce7c806ae444a67c5d",
+      "source": "docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C04/C04-章级对齐卡.md"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 178,
+      "id": "C04-收益资源",
+      "included": true,
+      "kind": "future_obligation",
+      "sha256": "d243543f8bc1c3b31cd810d47fb88552baddd45646c6d4ce7c806ae444a67c5d",
+      "source": "docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C04/C04-章级对齐卡.md"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 54,
+      "id": "人物素材-韩秀雅 Han Su-a",
+      "included": true,
+      "kind": "creative_material",
+      "sha256": "1e4a69d834224786309f3f43b9ae1347ef4a14e024e889028b3d86fb03815da5",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 27,
+      "id": "人物素材-阿米娜 Amina Diop",
+      "included": true,
+      "kind": "creative_material",
+      "sha256": "1e4a69d834224786309f3f43b9ae1347ef4a14e024e889028b3d86fb03815da5",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 25,
+      "id": "人物素材-新垣凪 Nagi Arakaki",
+      "included": true,
+      "kind": "creative_material",
+      "sha256": "1e4a69d834224786309f3f43b9ae1347ef4a14e024e889028b3d86fb03815da5",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 25,
+      "id": "人物素材-伊内斯 Ines Navarro",
+      "included": true,
+      "kind": "creative_material",
+      "sha256": "1e4a69d834224786309f3f43b9ae1347ef4a14e024e889028b3d86fb03815da5",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 27,
+      "id": "人物素材-真琴 Makoto Misaki",
+      "included": true,
+      "kind": "creative_material",
+      "sha256": "1e4a69d834224786309f3f43b9ae1347ef4a14e024e889028b3d86fb03815da5",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 32,
+      "id": "机体素材-心墙零式",
+      "included": true,
+      "kind": "creative_material",
+      "sha256": "1e4a69d834224786309f3f43b9ae1347ef4a14e024e889028b3d86fb03815da5",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 28,
+      "id": "机体素材-岛卫三号",
+      "included": true,
+      "kind": "creative_material",
+      "sha256": "1e4a69d834224786309f3f43b9ae1347ef4a14e024e889028b3d86fb03815da5",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 22,
+      "id": "机体素材-潮墙巨兵",
+      "included": true,
+      "kind": "creative_material",
+      "sha256": "1e4a69d834224786309f3f43b9ae1347ef4a14e024e889028b3d86fb03815da5",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 12,
+      "id": "人物欲望素材-纪存",
+      "included": true,
+      "kind": "creative_material",
+      "sha256": "b32fe56adc2d1c11b8b73bfa3e86874cc4f331134fe0100ff9a6a758eef5c1ac",
+      "source": "docs/superpowers/specs/data/character_voice/character_dossiers_core.tsv"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 22,
+      "id": "人物欲望素材-兜灯",
+      "included": true,
+      "kind": "creative_material",
+      "sha256": "b32fe56adc2d1c11b8b73bfa3e86874cc4f331134fe0100ff9a6a758eef5c1ac",
+      "source": "docs/superpowers/specs/data/character_voice/character_dossiers_core.tsv"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 13,
+      "id": "人物欲望素材-唐胶",
+      "included": true,
+      "kind": "creative_material",
+      "sha256": "b32fe56adc2d1c11b8b73bfa3e86874cc4f331134fe0100ff9a6a758eef5c1ac",
+      "source": "docs/superpowers/specs/data/character_voice/character_dossiers_core.tsv"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 30,
+      "id": "人物欲望素材-七海",
+      "included": true,
+      "kind": "creative_material",
+      "sha256": "b32fe56adc2d1c11b8b73bfa3e86874cc4f331134fe0100ff9a6a758eef5c1ac",
+      "source": "docs/superpowers/specs/data/character_voice/character_dossiers_core.tsv"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 28,
+      "id": "人物欲望素材-陆衡",
+      "included": true,
+      "kind": "creative_material",
+      "sha256": "b32fe56adc2d1c11b8b73bfa3e86874cc4f331134fe0100ff9a6a758eef5c1ac",
+      "source": "docs/superpowers/specs/data/character_voice/character_dossiers_core.tsv"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 28,
+      "id": "人物欲望素材-白鸢",
+      "included": true,
+      "kind": "creative_material",
+      "sha256": "b32fe56adc2d1c11b8b73bfa3e86874cc4f331134fe0100ff9a6a758eef5c1ac",
+      "source": "docs/superpowers/specs/data/character_voice/character_dossiers_core.tsv"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 30,
+      "id": "人物欲望素材-豪司",
+      "included": true,
+      "kind": "creative_material",
+      "sha256": "b32fe56adc2d1c11b8b73bfa3e86874cc4f331134fe0100ff9a6a758eef5c1ac",
+      "source": "docs/superpowers/specs/data/character_voice/character_dossiers_core.tsv"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 530,
+      "id": "玩法-产品方向不是章节事实",
+      "included": true,
+      "kind": "presentation_option",
+      "sha256": "eadd8add793eced85bdd1fa7b2a56566bc17ba8bb586069b96e9644e9345899a",
+      "source": "docs/superpowers/specs/game-design/2026-08-10-full-game-design-candidate-v1/00c-core-game-design-master-review.md"
+    },
+    {
+      "audience": "author",
+      "authority": "candidate",
+      "chars": 580,
+      "id": "玩法-四种日子不必齐全",
+      "included": true,
+      "kind": "presentation_option",
+      "sha256": "eadd8add793eced85bdd1fa7b2a56566bc17ba8bb586069b96e9644e9345899a",
+      "source": "docs/superpowers/specs/game-design/2026-08-10-full-game-design-candidate-v1/00c-core-game-design-master-review.md"
+    }
+  ],
+  "writer_ready": true,
+  "writer_view_budget_chars": 24000,
+  "writer_view_chars": 12179
+}

@@ -1,0 +1,79 @@
+{
+  "character_states": [
+    {
+      "desire_or_emotion": "从隐藏旧修补转为公开可复做的方法与失败过程，并接受模型只能提出假设、工程结论必须由本地工房完成。",
+      "entity_id": "CH_TANGJIAO",
+      "relationship_delta": "向收藏者承认灰色斜垫出自自己并保护其姓名；把重装与试错交给本地修理者和工人，开始让手艺脱离个人独占。"
+    },
+    {
+      "desire_or_emotion": "获得能够证明转子适配路径的谈判筹码，同时坚持公共转子在达成街区安排前不被移动。",
+      "entity_id": "CH_JICUN",
+      "relationship_delta": "阻止围观镜头拍摄收藏者姓名，并让测量与公开修法在木桶街留存一份，以互惠而非占有建立后续谈判基础。"
+    },
+    {
+      "desire_or_emotion": "确认模型线索经过六米实测和全尺寸材料试制后才具备工程意义，并继续把最终安装与校正视为未完成风险。",
+      "entity_id": "CH001",
+      "relationship_delta": "要求将万机馆制动方向加入第二次试验并签署试制结果；认可唐胶的方法，同时保持自己的安全判断。"
+    }
+  ],
+  "context_key": "10850c7a974fa78180f35bbe6cb07b67a0f68cce9fbb24bcfcab2fac29f66ffa",
+  "draft_sha256": "a7a330c83bf54a497be03774e7b0db79f77c5d6c997c5b8aa90750f4e54427ad",
+  "entity_states": [
+    {
+      "controller": "由本地工房作为公共散热设备运行，无独立人格",
+      "entity_id": "MECHA_WANJI_MAIN_CIRCULATION_ROTOR",
+      "location": "木桶街全尺寸工房街的十二轴运输架",
+      "physical_state": "六米全尺寸工业总成继续低速运行并连接多座工房；同侧磨损与中间版本支承角度已经实测；全尺寸适配座路径通过试架验证，但转子尚未解除管线、转移控制或安装"
+    }
+  ],
+  "facts_established": [
+    {
+      "evidence_in_draft": "工房在六米转子同侧清出磨损带和旧批外壳角度；首件全尺寸适配座受压翘起后被公开修正，第二件在加入万机馆制动方向的试架上承压并转过整圈，两侧检查片均未再擦亮。",
+      "fact_id": "C02E01.FULL_SCALE_HYPOTHESIS_PROVED",
+      "statement": "模型保存的中间版本关系与灰色斜垫只提供检查方向；本地工房在六米实物同侧找到对应磨损并重测真实接口，再用实机材料完成全尺寸适配座试制与承载转动试验，证明两批次之间存在现实可行的连接办法。"
+    },
+    {
+      "evidence_in_draft": "封存带被收藏者剪开后，硬箱估价熄灭且未完成收购提示撤回；盒底童年姓名与唐胶加装的灰色斜垫均被找回。",
+      "fact_id": "C02E01.COLLECTOR_OPENED_BOX_AT_COST",
+      "statement": "收藏者在中年后亲手打开童年教学模型的封存箱，主动失去平台收购价与保价，以确认盒底姓名和旧维修痕仍在。"
+    },
+    {
+      "evidence_in_draft": "唐胶遮住盒底姓名，只公开匿名版本图和修补步骤；他让本地修理者亲手重装模型，并将公开修法留给木桶街而不记录原主姓名。",
+      "fact_id": "C02E01.TANG_REPAIR_METHOD_OPENED_WITH_PRIVACY",
+      "statement": "唐胶公开承认灰色斜垫是自己的旧修补，并把观察磨面、低成本试形、真实材料复做的方法教给本地修理者，同时保护收藏者和旧客户隐私。"
+    },
+    {
+      "evidence_in_draft": "纪存只带走测量记录和公开修法的匿名副本；六米转子继续在十二轴运输架上为工房运行，未被移动。",
+      "fact_id": "C02E01.NEGOTIATION_EVIDENCE_GAINED",
+      "statement": "纪存取得经本地工房测量和试制支持的匿名证据，可证明公共转子存在适配万机馆的工程路径，但转子控制权、运输与安装均未解决。"
+    }
+  ],
+  "fragment_id": "C02E01-F03",
+  "next_trigger": "纪存已取得转子适配与公开诊断的现实证据，必须面对公共转子仍在服役且控制权未解决的问题，才能争取运输与安装。",
+  "open_threads": [
+    {
+      "note": "万机馆仍需在当天取得并安装完整替换总成；适配路径已证明，但实物尚未归舰。",
+      "status": "open",
+      "thread_id": "WANJI_REPLACEMENT_ROTOR_DEADLINE"
+    },
+    {
+      "note": "六米转子继续维持木桶街工房生产，控制权、街区替代安排、运输和吊装均未解决。",
+      "status": "open",
+      "thread_id": "ROTOR_PUBLIC_USE_AND_CONTROL"
+    },
+    {
+      "note": "全尺寸适配座仅在试架上通过；实际装舰后的持续校正与有限航行验证仍待完成。",
+      "status": "open",
+      "thread_id": "ROTOR_FINAL_INSTALLATION_VALIDATION"
+    },
+    {
+      "note": "收藏者已失去原平台估价并决定不再封盒；童年姓名继续保持私密。",
+      "status": "open",
+      "thread_id": "COLLECTOR_OPENED_MODEL"
+    }
+  ],
+  "review_sha256": "af522d6066f4f39f923a77e32414d643a257a60f617a84a723ab8df3b1de041a",
+  "schema_version": 1,
+  "status": "committed",
+  "unresolved_logic_risks": []
+}

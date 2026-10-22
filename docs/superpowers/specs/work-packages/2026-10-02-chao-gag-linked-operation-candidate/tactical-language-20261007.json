@@ -1,0 +1,119 @@
+{
+  "title": "通用战斗机制与交互语言 · 2026-10-07",
+  "status": "Candidate / 运行验证不等于用户认可",
+  "reference": "/Users/rayz/Downloads/itb-ui-v2/index.html",
+  "items": [
+    {
+      "reference": "R01 / R02 / D01 / C01",
+      "area": "屏幕与信息层级",
+      "implementation": "常驻只留任务依赖/运输、回合/战场、全队行动和结束回合；技能随选择，详情随 I。",
+      "files": "round_hud.gd / round_objective.gd",
+      "capture": "01-free-inspect.png",
+      "verification": "实机检查"
+    },
+    {
+      "reference": "R03 / S01 / M01",
+      "area": "自由观察—选择—瞄准",
+      "implementation": "默认自由观察；点机体直接进入走位；右键逐层退回；合法落点松键执行。Ctrl 手势独占镜头。",
+      "files": "round_cursor.gd / round_stage.gd",
+      "capture": "02-move-hover.png",
+      "verification": "输入回归"
+    },
+    {
+      "reference": "R04 / D02",
+      "area": "光标预览",
+      "implementation": "悬停执行同一个命令的纯试算；绿线路径、完整占地落点、受损血格、推移箭头与碰撞图标。",
+      "files": "round_cursor.gd / round_overlay.gd / round_rules.gd",
+      "capture": "03-kick-hover.png",
+      "verification": "输入回归"
+    },
+    {
+      "reference": "F01",
+      "area": "武器动画说明",
+      "implementation": "悬停技能显示循环机制图；按 I 才展开棋盘对象规则。说明图读取装备射程/伤害/推向。蓄力释放读取原招式。",
+      "files": "round_inspect_diagram.gd / tactical_contract.gd",
+      "capture": "11-charge-ready.png",
+      "verification": "部分：示意动画，不是完整招式影片"
+    },
+    {
+      "reference": "V01 / V02 / D05 / C06",
+      "area": "冲击层级与因果节奏",
+      "implementation": "实际移动连续播放；播放期间收起我方招式栏；碰撞与击破有独立反馈；连爆按事件边界分段，前段伤害不会提前出现在后段。",
+      "files": "round_effects.gd / tactical_feedback.gd / round_world.gd",
+      "capture": "03b-kick-receipt.png",
+      "verification": "数值与可视检查"
+    },
+    {
+      "reference": "V03 / C07",
+      "area": "行动与持续状态",
+      "implementation": "地面小图标区分可行动、仅可移动、完成、蓄力、作业、支撑；蓄力箭头保留目标，释放按钮显示真实装备。",
+      "files": "tactical_contract.gd / round_overlay.gd / round_hud.gd",
+      "capture": "11-charge-ready.png",
+      "verification": "专项检查"
+    },
+    {
+      "reference": "V04 / M02",
+      "area": "按需信息",
+      "implementation": "I 只展开当前对象详情、Alt 顺序、Space 回合末；松开恢复。目标卡避开机体/受影响格；原始意图不被瞄准抹掉。",
+      "files": "round_cursor.gd / round_overlay.gd",
+      "capture": "08-endturn-hold.png",
+      "verification": "输入回归"
+    },
+    {
+      "reference": "D03 / C02 / C03",
+      "area": "回合末预演与实绩",
+      "implementation": "悬停结束按钮或按住 Space 只预览；仍有主行动才警告。执行字幕只在播放期间出现，实绩保存在任务页/回看。",
+      "files": "round_stage.gd / round_brief.gd",
+      "capture": "09-resolution-paused.png",
+      "verification": "输入回归"
+    },
+    {
+      "reference": "D04",
+      "area": "跨区因果",
+      "implementation": "运输实线 C→B→出口，供电 A→B/C 用虚线；任务结点来自配置，阻塞提示与真实运输使用同一查询。",
+      "files": "round_operation.gd / round_rules.gd / round_objective.gd",
+      "capture": "07-city.png",
+      "verification": "规则与可视检查"
+    },
+    {
+      "reference": "D06",
+      "area": "失败输入",
+      "implementation": "无效目标不消费资源、不切换模式；现场保留可执行的原因。Ctrl 松开早于鼠标也不会误下单。",
+      "files": "round_stage.gd / round_cursor.gd",
+      "capture": "02-move-hover.png",
+      "verification": "输入回归"
+    },
+    {
+      "reference": "D07",
+      "area": "机体谱系",
+      "implementation": "装备由轨迹、效果、力/推距、代价、承诺、动作资源组合；去除多台通用护盾/重拳，保留各自招牌及工具能力。",
+      "files": "round_armaments.gd / tactical_contract.gd",
+      "capture": "12-roster.png",
+      "verification": "规则通过；长期平衡待后续战局"
+    },
+    {
+      "reference": "C04",
+      "area": "受阻与结果回执",
+      "implementation": "同一事件投影给预览、实际受击和回看；显示伤害、移位/未移位、碰撞、重量阻力、原攻击线变化。新输入收起旧回执。",
+      "files": "tactical_feedback.gd / round_overlay.gd",
+      "capture": "03b-kick-receipt.png",
+      "verification": "输入回归"
+    },
+    {
+      "reference": "C05",
+      "area": "敌方阶段",
+      "implementation": "先显示原因格/攻击线，再播放兑现；自动逐事件推进，可暂停、倍速、快进。L 列表重播，不重算或改变当前棋盘。",
+      "files": "round_stage.gd / round_overlay.gd",
+      "capture": "10-event-log.png",
+      "verification": "输入回归"
+    },
+    {
+      "reference": "C08",
+      "area": "拥挤与遮挡",
+      "implementation": "取消重复浮动招名/连爆横幅；缩小普通悬停卡；行动后不保留过期预测文字。",
+      "files": "round_cursor.gd / campaign_world.gd",
+      "capture": "01-free-inspect.png",
+      "verification": "实机检查"
+    }
+  ]
+}

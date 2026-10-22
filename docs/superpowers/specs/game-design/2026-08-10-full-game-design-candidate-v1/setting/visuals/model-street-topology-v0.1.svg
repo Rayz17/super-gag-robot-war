@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">木桶街与货运环 Candidate 逻辑拓扑 v0.1</title>
+  <desc id="desc">八个宏观分区、四类流线与货运环比赛到事故救援状态链的低保真逻辑草图。不是视觉方向批准或工程图。</desc>
+  <defs>
+    <style>
+      .bg{fill:#0b1220}.panel{fill:#111c2d;stroke:#2e4567;stroke-width:2}.zone{stroke-width:3}.z-human{fill:#183e46;stroke:#5fd1c8}.z-work{fill:#3d3322;stroke:#e6b85c}.z-heavy{fill:#3b2630;stroke:#f08b9d}.z-ring{fill:#252d46;stroke:#91a7ff}.title{fill:#f4f7ff;font-family:system-ui,-apple-system,"PingFang SC","Noto Sans CJK SC",sans-serif;font-size:30px;font-weight:700}.h2{fill:#dce8ff;font-family:system-ui,-apple-system,"PingFang SC","Noto Sans CJK SC",sans-serif;font-size:20px;font-weight:650}.label{fill:#edf3ff;font-family:system-ui,-apple-system,"PingFang SC","Noto Sans CJK SC",sans-serif;font-size:17px;font-weight:600}.small{fill:#b9c7df;font-family:system-ui,-apple-system,"PingFang SC","Noto Sans CJK SC",sans-serif;font-size:14px}.tiny{fill:#95a8c7;font-family:system-ui,-apple-system,"PingFang SC","Noto Sans CJK SC",sans-serif;font-size:12px}.adj{stroke:#506887;stroke-width:5;fill:none;stroke-linecap:round}.people{stroke:#5fd1c8;stroke-width:8;fill:none;stroke-linecap:round;stroke-linejoin:round}.mecha{stroke:#f08b4f;stroke-width:10;fill:none;stroke-linecap:round;stroke-linejoin:round}.cargo{stroke:#f3d36b;stroke-width:9;fill:none;stroke-linecap:round;stroke-linejoin:round}.emergency{stroke:#ff667d;stroke-width:7;fill:none;stroke-dasharray:14 11;stroke-linecap:round;stroke-linejoin:round}.arrow{marker-end:url(#arrow)}.state{fill:#16243a;stroke:#486180;stroke-width:2}.state-alert{fill:#3a202a;stroke:#ff667d}.state-clear{fill:#1d3b35;stroke:#68d4b3}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="context-stroke"/></marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000" flood-opacity="0.35"/></filter>
+  </defs>
+
+  <rect class="bg" width="1600" height="1000"/>
+  <text x="60" y="58" class="title">木桶街 × 货运环 — Candidate 逻辑拓扑 v0.1</text>
+  <text x="60" y="88" class="small">Accepted C02 Reader 的地点投影；只证明邻接、职责、流线与状态连续性。不是美术方向、工程尺寸、GD2 封存或资产授权。</text>
+
+  <rect x="45" y="115" width="1090" height="650" rx="20" class="panel"/>
+  <text x="75" y="155" class="h2">A. 城区八分区与四类流线</text>
+  <text x="75" y="180" class="tiny">相对关系示意 / not to scale。大型机体不进入内街；普通观众不进入赛事环面。</text>
+
+  <!-- neutral adjacency -->
+  <path class="adj" d="M190 600 L395 600 L550 430 L760 430 L925 325"/>
+  <path class="adj" d="M190 600 L300 335 L520 225"/>
+  <path class="adj" d="M300 335 L550 430 L600 650"/>
+  <path class="adj" d="M520 225 L760 430"/>
+  <path class="adj" d="M520 225 L925 325"/>
+  <path class="adj" d="M600 650 L760 430"/>
+
+  <!-- zones -->
+  <g filter="url(#shadow)">
+    <rect x="85" y="535" width="210" height="125" rx="16" class="zone z-heavy"/>
+    <text x="105" y="570" class="label">MS-Z01</text><text x="105" y="598" class="small">沿海入口 / 重载道</text><text x="105" y="624" class="tiny">港区调度・车队・作业路</text>
+
+    <rect x="300" y="540" width="230" height="135" rx="16" class="zone z-heavy"/>
+    <text x="320" y="575" class="label">MS-Z02</text><text x="320" y="603" class="small">万机馆外泊 / 龙门吊</text><text x="320" y="629" class="tiny">泊位→运输架→B1 交接</text>
+
+    <rect x="445" y="165" width="210" height="120" rx="16" class="zone z-work"/>
+    <text x="465" y="200" class="label">MS-Z05</text><text x="465" y="228" class="small">固定观景厅 / 控制室</text><text x="465" y="254" class="tiny">观众・裁判・停演・疏散</text>
+
+    <rect x="180" y="275" width="245" height="125" rx="16" class="zone z-human"/>
+    <text x="200" y="310" class="label">MS-Z08</text><text x="200" y="338" class="small">内街 / 生活巷 / 跨城站</text><text x="200" y="364" class="tiny">模型店・寄售・餐饮・通勤</text>
+
+    <rect x="455" y="360" width="235" height="135" rx="16" class="zone z-work"/>
+    <text x="475" y="395" class="label">MS-Z06</text><text x="475" y="423" class="small">合作社 / 资料室 / 舞台库</text><text x="475" y="449" class="tiny">分派・保管链・三证核验</text>
+
+    <rect x="490" y="600" width="230" height="125" rx="16" class="zone z-work"/>
+    <text x="510" y="635" class="label">MS-Z07</text><text x="510" y="663" class="small">构筑 / 全尺寸工房 / 红环</text><text x="510" y="689" class="tiny">模型意图≠工程≠身体动作</text>
+
+    <circle cx="865" cy="430" r="210" class="zone z-ring"/>
+    <circle cx="865" cy="430" r="86" fill="#172239" stroke="#b1c1ff" stroke-width="3"/>
+    <path d="M730 285 A210 210 0 0 1 1000 285" stroke="#f3d36b" stroke-width="14" fill="none" stroke-dasharray="18 10"/>
+    <path d="M700 535 A210 210 0 0 0 1030 535" stroke="#ff667d" stroke-width="12" fill="none" stroke-dasharray="18 10"/>
+    <text x="786" y="392" class="label">MS-Z03</text><text x="790" y="420" class="small">中央透明检修区</text><text x="803" y="446" class="tiny">约九米转子</text><text x="748" y="476" class="tiny">两道实体隔离</text>
+    <text x="770" y="236" class="label">MS-Z04 货运环外圈</text>
+    <text x="764" y="264" class="small">直径＞200m / 擂台・货轨・临海外缘</text>
+    <text x="735" y="610" class="tiny">海侧：旧外轨→事故斜面→救援承重链</text>
+  </g>
+
+  <!-- flows -->
+  <path class="people arrow" d="M210 320 C300 245 405 220 445 220"/>
+  <path class="people arrow" d="M270 355 C350 390 405 420 455 425"/>
+  <path class="people arrow" d="M335 360 C390 500 450 610 490 645"/>
+  <path class="mecha arrow" d="M420 610 C560 560 660 515 705 480"/>
+  <path class="mecha arrow" d="M610 610 C670 565 700 530 724 500"/>
+  <path class="cargo arrow" d="M95 610 L300 610 C470 560 630 430 779 430"/>
+  <path class="emergency arrow" d="M700 520 C600 520 560 500 520 485 C430 455 330 420 245 390"/>
+  <text x="74" y="722" class="small">流线：</text>
+  <line x1="125" y1="716" x2="190" y2="716" class="people"/><text x="200" y="722" class="small">人流</text>
+  <line x1="270" y1="716" x2="335" y2="716" class="mecha"/><text x="345" y="722" class="small">机体</text>
+  <line x1="430" y1="716" x2="495" y2="716" class="cargo"/><text x="505" y="722" class="small">重件/服务</text>
+  <line x1="620" y1="716" x2="685" y2="716" class="emergency"/><text x="695" y="722" class="small">事故撤离</text>
+
+  <!-- inset -->
+  <rect x="1160" y="115" width="395" height="650" rx="20" class="panel"/>
+  <text x="1190" y="155" class="h2">B. 货运环控制与责任</text>
+  <text x="1190" y="184" class="small">看见路线 ≠ 控制环体 ≠ 机体执行</text>
+  <rect x="1190" y="215" width="335" height="86" rx="12" class="state"/>
+  <text x="1210" y="246" class="label">运营 / 港区调度</text><text x="1210" y="273" class="small">转场、泊位、重载道、货轨</text>
+  <path class="arrow adj" d="M1358 301 L1358 335"/>
+  <rect x="1190" y="335" width="335" height="92" rx="12" class="state"/>
+  <text x="1210" y="366" class="label">裁判 / 安全席 / 工程员</text><text x="1210" y="393" class="small">停新动作、撤人、核载荷；不能逆转惯性</text>
+  <path class="arrow adj" d="M1358 427 L1358 461"/>
+  <rect x="1190" y="461" width="335" height="92" rx="12" class="state"/>
+  <text x="1210" y="492" class="label">提案者 / 协调者</text><text x="1210" y="519" class="small">纪存、白鸢只提供目标/已核路线</text>
+  <path class="arrow adj" d="M1358 553 L1358 587"/>
+  <rect x="1190" y="587" width="335" height="126" rx="12" class="state-clear"/>
+  <text x="1210" y="618" class="label">机体 / 驾驶 / 现场执行者</text><text x="1210" y="646" class="small">接受、拒绝或附条件回应</text><text x="1210" y="672" class="small">身体动作产生真实位置、载荷与伤损</text><text x="1210" y="698" class="tiny">权限、同意、物流与物理结果分账</text>
+
+  <!-- state strip -->
+  <rect x="45" y="790" width="1510" height="165" rx="20" class="panel"/>
+  <text x="75" y="830" class="h2">C. 同一地点的连续状态（不换图清零）</text>
+  <g>
+    <rect x="75" y="855" width="150" height="66" rx="10" class="state"/><text x="92" y="883" class="small">S01 到场/资格</text><text x="92" y="907" class="tiny">可牵引→入泊</text>
+    <path class="arrow adj" d="M225 888 L248 888"/>
+    <rect x="248" y="855" width="150" height="66" rx="10" class="state"/><text x="265" y="883" class="small">S02 训练/半决</text><text x="265" y="907" class="tiny">工房/红环复用</text>
+    <path class="arrow adj" d="M398 888 L421 888"/>
+    <rect x="421" y="855" width="150" height="66" rx="10" class="state"/><text x="438" y="883" class="small">S03 夜间调查</text><text x="438" y="907" class="tiny">证据≠同意</text>
+    <path class="arrow adj" d="M571 888 L594 888"/>
+    <rect x="594" y="855" width="150" height="66" rx="10" class="state-clear"/><text x="611" y="883" class="small">S04 决赛锁定</text><text x="611" y="907" class="tiny">3:2 独立Clear</text>
+    <path class="arrow adj" d="M744 888 L767 888"/>
+    <rect x="767" y="855" width="150" height="66" rx="10" class="state"/><text x="784" y="883" class="small">S05 旧终幕</text><text x="784" y="907" class="tiny">黄线/旧外轨</text>
+    <path class="arrow adj" d="M917 888 L940 888"/>
+    <rect x="940" y="855" width="150" height="66" rx="10" class="state-alert"/><text x="957" y="883" class="small">S06 事故CP</text><text x="957" y="907" class="tiny">断电≠停止</text>
+    <path class="arrow adj" d="M1090 888 L1113 888"/>
+    <rect x="1113" y="855" width="150" height="66" rx="10" class="state-alert"/><text x="1130" y="883" class="small">S07 救援</text><text x="1130" y="907" class="tiny">载荷重分配</text>
+    <path class="arrow adj" d="M1263 888 L1286 888"/>
+    <rect x="1286" y="855" width="235" height="66" rx="10" class="state-clear"/><text x="1303" y="883" class="small">S08 恢复/转子交割/离城</text><text x="1303" y="907" class="tiny">事故Clear→章节回执</text>
+  </g>
+  <text x="60" y="982" class="tiny">Candidate logic sketch · zero Build · no human test · no user visual approval · no formal asset/runtime authority</text>
+</svg>

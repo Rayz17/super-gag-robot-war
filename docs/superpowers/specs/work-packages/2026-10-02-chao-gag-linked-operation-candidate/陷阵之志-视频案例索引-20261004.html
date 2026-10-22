@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>陷阵之志 · 操作与因果研究</title>
+<style>
+:root{color-scheme:dark;--bg:#101b24;--panel:#1a2934;--paper:#f2e9d8;--muted:#aab9c2;--line:#354b5a;--gold:#ecc177;--mint:#87d2be}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}main{max-width:1440px;margin:auto;padding:36px 40px}a{color:var(--gold);text-underline-offset:4px}header{border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:24px}.eyebrow{color:var(--gold);font-size:12px;letter-spacing:3px}h1{font-size:clamp(27px,3vw,43px);line-height:1.25;margin:10px 0 16px;font-weight:650}header p{max-width:920px;margin:0;color:var(--muted)}.links{display:flex;gap:24px;margin-top:18px;font-size:14px}.tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:20px}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid var(--mint);outline-offset:4px}.tab{background:var(--panel);color:var(--paper);border:1px solid var(--line);border-radius:8px;padding:14px 15px;text-align:left}.tab small{display:block;color:var(--muted);font-size:11px;letter-spacing:1px}.tab[aria-selected=true]{background:var(--paper);color:#1c303c;border-color:var(--paper)}.tab[aria-selected=true] small{color:#556b78}.layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:25px;align-items:start}.media{background:#060b0e;border:1px solid var(--line);border-radius:10px;overflow:hidden}video{display:block;width:100%;aspect-ratio:16/9;background:black}.caption{padding:14px 18px;background:var(--panel);font-size:13px;color:var(--muted)}.caption a{float:right}.timeline{display:flex;gap:9px;flex-wrap:wrap;padding:16px 0}.jump{border:1px solid var(--line);background:transparent;color:var(--paper);font-size:13px;border-radius:5px;padding:7px 10px}.jump:hover{background:var(--panel)}aside h2{font-size:22px;line-height:1.5;margin:0 0 16px}.chain{margin:0;padding:0;list-style:none;counter-reset:step}.chain li{position:relative;margin:0 0 18px;padding-left:38px;color:#d1dbe1;font-size:15px}.chain li::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:3px;border:1px solid #638789;width:24px;height:24px;text-align:center;line-height:22px;border-radius:50%;font-size:12px;color:var(--mint)}.lesson{margin-top:20px;padding:17px 19px;background:#233a44;border-left:3px solid var(--mint);border-radius:0 6px 6px 0;font-size:15px}.lesson strong{display:block;color:var(--mint);font-size:12px;letter-spacing:2px;margin-bottom:6px}.caution{color:var(--muted);font-size:13px;margin:16px 0 0}.bottom{border-top:1px solid var(--line);margin-top:26px;padding-top:23px;display:grid;grid-template-columns:1fr 1fr;gap:28px}.bottom h3{font-size:17px;margin:0 0 10px}.bottom p{margin:0;color:var(--muted);font-size:14px}footer{margin-top:26px;padding-top:17px;border-top:1px solid var(--line);color:#7f959f;font-size:12px}code{color:var(--mint)}@media(max-width:1000px){main{padding:25px 22px}.layout{grid-template-columns:1fr}aside{display:grid;grid-template-columns:1fr 1fr;gap:0 25px}aside h2{grid-column:1/-1}.lesson{margin-top:0}.tabs{grid-template-columns:repeat(3,1fr)}}@media(max-width:650px){main{padding:22px 14px}.tabs{grid-template-columns:1fr 1fr}.tab{padding:10px}aside,.bottom{display:block}.bottom>div+div{margin-top:18px}.caption a{float:none;display:block}.lesson{margin-top:15px}}
+</style>
+<main>
+<header>
+ <div class="eyebrow">INTO THE BREACH / VIDEO STUDY / 2026.10.04</div>
+ <h1>一格变化，整盘改写</h1>
+ <p>看一次操作如何改变不止一个结果：从推移、地形和队友解围，到借敌火力与任务保全。下列片段保留原声；按钮可以跳到关键动作，时间码对应原视频。</p>
+ <div class="links"><a href="陷阵之志视频研究与战斗机制改进-20261004.md">完整研究与三局面验证方案 →</a><a href="https://www.bilibili.com/video/BV1gV411M7N2/" target="_blank" rel="noopener">原教学系列 ↗</a></div>
+</header>
+<nav class="tabs" role="tablist" aria-label="视频案例"></nav>
+<section class="layout">
+ <div><div class="media"><video id="player" controls playsinline preload="metadata" aria-label="原视频研究片段"></video><div class="caption"><span id="sourceLabel"></span><a id="sourceLink" target="_blank" rel="noopener">在 B 站查看完整上下文 ↗</a></div></div><div class="timeline" aria-label="跳转关键动作"></div><p class="caution" id="caution"></p></div>
+ <aside><h2 id="caseTitle"></h2><ol class="chain"></ol><div class="lesson"><strong>对应我们的改进</strong><span id="lesson"></span></div></aside>
+</section>
+<section class="bottom">
+ <div><h3>先改一条会压扁玩法的规则</h3><p>现版 <code>campaign_rules.gd</code> 在成功强制位移后，普遍取消尚未完成的动作。应该区分：攻击路径改变、持续条件失效、真正被打断。已经出膛的炮弹继续存在，这项实现应保留。</p></div>
+ <div><h3>让预览直接解释这次操作</h3><p>在落点旁显示推后位置和新射线，保留尚未解决的威胁。玩家应能在提交前读懂“这一下救了谁、又暴露了谁”，而不必每次打开时间轴逐拍寻找。</p></div>
+</section>
+<footer>来源：麻辣匪甲《陷阵之志》教学系列。片段仅用于本地研究，未作为游戏资产使用。研究采用时间序列画面与转写交叉核对，不冒称完整连续观看全部视频；覆盖与限制见完整研究稿。以下不是新版本试玩入口。</footer>
+</main>
+<script>
+const base='../../../../../artifacts/research/into-the-breach-20261003/clips/';
+const cases=[
+ {id:'smoke',tab:'推入烟雾',part:3,bv:'BV11W4y1Z7Rp',start:500,end:557,title:'取消攻击的原因，是烟雾',steps:['先攻击沙地，留下可见的烟雾状态。','再把准备出手的敌人推入烟雾。','攻击受限，原威胁解除；作者明确区分推力和烟雾的作用。'],lesson:'推力负责改变位置，环境负责改变施放条件。二者独立，才有组合；推一下就统一取消动作，会抹掉这种区别。',caution:'蒸汽或烟雾若引入超 GAG，应先规定一种明确效果与持续时间，并对敌我一致。不是照搬名称就算做完机制。',jumps:[[514,'前一击留下烟雾'],[522,'推入烟雾'],[525,'解说澄清原因']]},
+ {id:'dam',tab:'破坝改地形',part:2,bv:'BV15F411o7Ht',start:235,end:276,title:'把敌人送进即将改变的地形',steps:['敌人和己方机甲进入水坝下游的作用区域。','调整敌人位置，随后击破水坝。','下游化为水域，不同单位得到不同结果；其余目标仍要另外处理。'],lesson:'让任务设施、攻击和地形共用规则。B 区桥板失去支撑，应真实改变站位与路线，不只增加一段任务文字。',caution:'水中的己方大型机甲在录像里仍存活。不要将“所有地面单位入水即死”当成这款游戏的通则。',jumps:[[248,'炮击调整位置'],[256,'击破水坝'],[260,'水域改变结果']]},
+ {id:'ally-release',tab:'替队友解围',part:2,bv:'BV15F411o7Ht',start:995,end:1050,title:'一台的推力，换来另一台的可行动空间',steps:['一台机甲被束缚，列车附近仍有其他威胁。','炮击瞄在旁边，用周边推力移开队友。','队友脱离束缚，继续处理敌人，原先用于修理硬扛的选择不再唯一。'],lesson:'协作首先是改变彼此的可行动条件：解围、让路、打开射界。无需额外的合击按钮和免费瞬移。',caution:'这里使用的是炮击周边的推力，不是直接炮击队友造成伤害。瞄点与受力方向必须能在预览里读清。',jumps:[[1016,'选择解围方案'],[1024,'炮击推开队友'],[1036,'解围后继续处理威胁']]},
+ {id:'enemy-fire',tab:'借敌火力',part:1,bv:'BV1gV411M7N2',start:1775,end:1822,title:'利用仍会发生的攻击',steps:['调整局面后，再次查看公开攻击顺序。','环境先结算，随后敌人按顺序执行已准备的攻击。','敌方互击与任务物行动相继发生，玩家利用的是它们仍然有效的规则。'],lesson:'位移后应画出新的攻击关系。不同拍可以形成先后配合；同拍已释放的动作不能借演出顺序倒撤。',caution:'片段位于一次回合重置之后。原视频 26:20–30:14 包括更完整的尝试与调整，不能将这一段误认作从未试错的完美操作。',jumps:[[1791,'展开攻击顺序'],[1803,'环境结算'],[1806,'敌方互击'],[1812,'任务物行动']]},
+ {id:'freeze-and-luck',tab:'保全与偶然',part:4,bv:'BV1Hs4y167RE',start:960,end:1004,title:'非致命目标成立，不代表全盘安排无风险',steps:['任务要求冰冻并保住两个机器人。','第一只被冻结，但另一处建筑仍受到攻击；电网防御概率恰好救场。','下一轮冻结第二只，目标标记转绿，还需继续保护它们。'],lesson:'目标可以改变控制技能的价值；预览必须区分确定安全与概率保全。不能因为最后没损失，就把方案标成保证无损。',caution:'原视频约 16:24 显示绿色抵抗反馈；电网防御 19%。这是作者也承认的好运，不是可保证复现的战术收益。',jumps:[[966,'第一只被冻结'],[984,'建筑概率抵抗'],[996,'第二只被冻结']]}
+];
+const $=s=>document.querySelector(s);const player=$('#player');const fmt=s=>`${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;
+function select(i){const c=cases[i];player.pause();player.src=base+c.id+'.mp4';player.load();$('#caseTitle').textContent=c.title;$('#lesson').textContent=c.lesson;$('#caution').textContent=c.caution;$('#sourceLabel').textContent=`麻辣匪甲 · 教学 ${c.part} · 原片 ${fmt(c.start)}—${fmt(c.end)}`;$('#sourceLink').href=`https://www.bilibili.com/video/${c.bv}/?t=${c.start}`;$('.chain').replaceChildren(...c.steps.map(t=>{const e=document.createElement('li');e.textContent=t;return e}));$('.timeline').replaceChildren(...c.jumps.map(([s,t])=>{const b=document.createElement('button');b.className='jump';b.textContent=`${fmt(s)} · ${t}`;b.onclick=()=>{player.currentTime=s-c.start;};return b}));document.querySelectorAll('.tab').forEach((b,n)=>b.setAttribute('aria-selected',n===i));}
+cases.forEach((c,i)=>{const b=document.createElement('button');b.className='tab';b.setAttribute('role','tab');b.innerHTML=`<small>CASE ${String(i+1).padStart(2,'0')}</small>${c.tab}`;b.onclick=()=>select(i);$('.tabs').append(b);});select(0);
+</script>
+</html>

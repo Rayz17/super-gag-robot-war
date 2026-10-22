@@ -1,0 +1,15 @@
+echo_type	capture_condition	stored_payload	world_interpretation	allowed_read_window	possible_story_use	must_not_infer	retention
+ECHO_RESCUE_OVER_KILL	玩家放弃击坠/效率完成保护或撤退目标	episode_id;protected_target;opportunity_cost	馆外响应偏向让某个对象活着离开	后续相似困局;终局	隐藏援护;敌方停火;纪存认出选择习惯	玩家现实道德优越	跨周目保留摘要
+ECHO_REPEAT_RESCUE	同一角色悲剧节点被多次重试	target_id;attempt_band;event_outcomes	某个结局被馆外方向反复拒绝	角色回归/未来报告/二周目	增加第三条救法或让角色感到被等待	玩家执着等于恋爱	只存次数档位不存完整操作
+ECHO_LOW_SPEC_LOYALTY	低规格、量产或非推荐机体长期承担关键行动	unit_id;meaningful_actions;chapters_used	馆外响应没有只看主角机	后继机/量产逆袭/终局	特殊Cut-in;自主支援;馆藏回应	玩家反商业立场	跨周目保留摘要
+ECHO_RAMPAGE_USE	玩家接受G.A.G./万机馆暴走收益	trigger_id;benefits_taken;costs_limited	馆外响应曾允许馆体越过边界	暴走复审;索引学习;终局	敌方复制暴走;纪存询问是否再信任	玩家喜欢暴力	当前周目详记;跨周目只存档位
+ECHO_RAMPAGE_LIMIT	玩家在暴走中主动切断收益	trigger_id;benefit_refused;damage_prevented	馆外响应在最强时刻选择限幅	纪存成长;七海审计;终局	解锁安全共调而非纯削弱	玩家胆小	跨周目保留摘要
+ECHO_PERFECT_ACCEPT	玩家在索引完美版中持续采用推荐	recommendation_count;folded_units;auto_choices	馆外响应认可过顺滑统一的版本	完美版内部;破局后审判	让诱惑更个性化并承认它确实好用	玩家赞成索引政治	只在当前/二周目候选读取
+ECHO_PERFECT_REJECT	玩家主动恢复被折叠单位或拒绝自动确认	restored_ids;rejected_auto_actions	馆外响应要求保留非最优声部	完美版破局;终局	恢复无人认领版本;生成非同声支援	玩家天然更高尚	跨周目保留摘要
+ECHO_REFUSAL_RESPECT	玩家允许驾驶员、AI或机体拒绝出击/合体/改装	subject_id;refusal_type;cost_paid	馆外响应承认主体可以说不	后续主动回归;关系线;组合分支	自主援护;新形态;不同驾驶位置	拒绝必然获得奖励	跨周目保留对象级摘要
+ECHO_ORDINARY_CARE	玩家完成普通修理/生活事件且没有立刻兑换主线收益	object_id;care_action;no_conversion	馆外响应愿意为没有战略价值的东西停留	舰内日常;未来反预测;尾声	生活台词;少量关系识别;不保证宇宙回收	玩家完成全部收集	仅保留少量代表事件
+ECHO_MANUAL_UNFOLD	玩家手动关闭索引排序并查看“其他”单位	unit_ids;ui_context	馆外响应察觉了被隐藏的分类	索引战;无人认领版本	恢复单位可见性;揭示推荐偏差	玩家憎恨推荐系统	当前周目;关键对象跨周目
+ECHO_SAVE_RETURN	玩家隔较长现实时间后返回同一存档	elapsed_band;last_safe_scene	馆外响应离开过又回来，世界只知道等待时间段	标题页;纪存终端;日常	灯光/灰尘/维护记录变化	现实生活原因;用户身份	只存时间档位，不存精确行为轨迹
+ECHO_VERSION_PREFERENCE	玩家在多个版本外壳中主动停留/返回	profile_id;meaningful_choices	馆外响应愿意在哪种机器人文化解释里停留	版本破裂;终局;二周目	改变索引诱惑或远星误译方式	审美偏好等于人格	当前周目摘要
+ECHO_RELATIONSHIP_CHOICE	玩家在重大关系节点承担某种代价	participants;choice_id;cost_state	馆外响应推动了一个选择，但感情仍属于角色	后续关系场;牺牲;结局资格	改变场面入口与支援，不替角色告白	玩家拥有角色或决定性取向	按路线规则保留
+ECHO_HIDDEN_IF	玩家完成原作遗憾/隐藏救援条件	what_if_id;result;failure_dignity_state	馆外响应为某种遗憾找过另一条路	角色后续;终局全员支援	救下、残响、伤痕或不同人生	玩家有义务救所有人	结果与失败尊严共同保留

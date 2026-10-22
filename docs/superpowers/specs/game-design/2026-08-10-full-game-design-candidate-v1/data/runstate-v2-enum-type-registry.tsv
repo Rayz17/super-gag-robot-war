@@ -1,0 +1,48 @@
+type_id	type_kind	wire_shape	allowed_values	validator_id	canonical_rule	redaction_semantics	status
+T_BOOL	primitive	boolean	true;false	boolean	JSON true/false only	value may be removed only by a field redaction path	candidate_runstate_v2_type_contract
+T_INT_NONNEG	primitive	integer	0..2147483647	int_nonnegative	base-10 JSON integer; no leading sign	value may be removed only by a field redaction path	candidate_runstate_v2_type_contract
+T_INT_POSITIVE	primitive	integer	1..2147483647	int_positive	base-10 JSON integer; no leading sign	value may be removed only by a field redaction path	candidate_runstate_v2_type_contract
+T_DECIMAL_STR	primitive	string	canonical decimal text	decimal_string	-?(0|[1-9][0-9]*)(.[0-9]+)?; never JSON float	value may be removed only by a field redaction path	candidate_runstate_v2_type_contract
+T_RATIO_STR	primitive	string	0..1 canonical decimal text	ratio_string	canonical decimal string in closed interval 0..1; never JSON float	value may be removed only by a field redaction path	candidate_runstate_v2_type_contract
+T_ID	primitive	string	nonempty stable identifier	id	ASCII letter/digit first; then letters digits underscore dot colon at slash hyphen	identifier remains visible only when its containing field is visible	candidate_runstate_v2_type_contract
+T_ID_OR_NONE	primitive	string	NONE or stable identifier	id_or_none	literal NONE or T_ID	NONE does not imply hidden truth	candidate_runstate_v2_type_contract
+T_TOKEN	primitive	string	nonempty token	token	UTF-8 single-line token; no tab or newline	token remains visible only when its containing field is visible	candidate_runstate_v2_type_contract
+T_TEXT	primitive	string	nonempty player-safe or internal text	text	UTF-8 normalized string; no tab	backend text must never be copied into player_summary	candidate_runstate_v2_type_contract
+T_HASH_SHA256	primitive	string	64 lowercase hexadecimal characters	hash_sha256	lowercase hexadecimal SHA-256	commit/proposal hashes may be shown; they carry no hidden payload	candidate_runstate_v2_type_contract
+T_HASH_OR_NONE	primitive	string	NONE or 64 lowercase hexadecimal characters	hash_or_none	literal NONE or T_HASH_SHA256	NONE does not bypass version validation	candidate_runstate_v2_type_contract
+T_VERSION_TOKEN	primitive	string	nonempty immutable version token	version_token	UTF-8 single-line token	version may be shown without revealing record payload	candidate_runstate_v2_type_contract
+T_TIME_TOKEN	primitive	string	nonempty deterministic story/runtime time token	time_token	ISO-8601 or stable symbolic checkpoint time; no local wall-clock dependency	time follows containing record visibility	candidate_runstate_v2_type_contract
+T_TIME_OR_NONE	primitive	string	NONE or deterministic time token	time_or_none	literal NONE or T_TIME_TOKEN	NONE does not imply unknown-to-player	candidate_runstate_v2_type_contract
+T_DURATION_TOKEN	primitive	string	nonempty duration token	duration_token	integer milliseconds with ms suffix or stable symbolic duration	duration follows containing record visibility	candidate_runstate_v2_type_contract
+T_SOURCE_REF	primitive	string	nonempty authority receipt scene evidence or cause reference	source_ref	stable single-line source reference	player projection may replace backend source with an allowed receipt reference	candidate_runstate_v2_type_contract
+T_JSON_VALUE	container	any	JSON scalar/list/object except float	json_value_no_float	recursive canonical JSON; object keys sorted; no NaN Infinity or float	nested hidden values require explicit redact_fields paths	candidate_runstate_v2_type_contract
+T_JSON_OBJECT	container	object	string-keyed JSON object	json_object_no_float	keys sorted lexicographically; recursive no-float rule	nested hidden values require explicit redact_fields paths	candidate_runstate_v2_type_contract
+T_JSON_LIST	container	array	ordered JSON values	json_list_no_float	array order preserved; recursive no-float rule	nested hidden values require explicit redact_fields paths	candidate_runstate_v2_type_contract
+T_ID_LIST	container	array	ordered unique T_ID values	id_list	array order preserved; duplicate IDs rejected	list follows containing field visibility	candidate_runstate_v2_type_contract
+T_TEXT_LIST	container	array	ordered T_TEXT values	text_list	array order preserved	backend-only text must be removed before projection	candidate_runstate_v2_type_contract
+T_PATH_LIST	container	array	ordered unique dotted field paths	path_list	ASCII dotted paths sorted for hashes	paths are included in projection audit without values	candidate_runstate_v2_type_contract
+T_STRING_MAP	container	object	string keys to strings	string_map	keys sorted; values are UTF-8 strings	map follows containing field visibility	candidate_runstate_v2_type_contract
+T_VERSION_MAP	container	object	state ID keys to nonnegative integer versions	version_map	keys sorted; integer values only	versions may be projected without record payload	candidate_runstate_v2_type_contract
+T_DOMAIN_MAP	container	object	state ID keys to DOMAIN_BUCKET_V2 objects	domain_map	keys sorted; buckets validated separately	projection creates a new filtered map and never mutates authority state	candidate_runstate_v2_type_contract
+T_RECORD_MAP	container	object	record ID keys to domain records	record_map	keys sorted; records validated against domain record_type	projection filters records and fields from a copy	candidate_runstate_v2_type_contract
+T_RECEIPT_MAP	container	object	transaction group ID keys to COMMIT_RECEIPT_V2 objects	receipt_map	keys sorted; receipts immutable after acceptance	receipt payload must already be player-safe before projection	candidate_runstate_v2_type_contract
+T_STATE_OP_LIST	container	array	ordered STATE_OP_V2 objects	state_op_list	operation order preserved and included in proposal hash	ops are never copied directly into player projection	candidate_runstate_v2_type_contract
+T_PREPARED_RECEIPT_LIST	container	array	ordered PREPARED_OWNER_RECEIPT_V2 objects	prepared_receipt_list	sorted by owner_group_id before commit hash	prepared receipts are audit data; player sees only reason codes approved for summary	candidate_runstate_v2_type_contract
+E_RUN_SCHEMA_ID	enum	string	run_state_v2	enum	literal value	public schema identifier	candidate_runstate_v2_type_contract
+E_TRANSACTION_SCHEMA_ID	enum	string	state_transaction_v2	enum	literal value	public schema identifier	candidate_runstate_v2_type_contract
+E_RUN_AUTHORITY_BOUNDARY	enum	string	candidate_only_zero_build	enum	literal value	must remain visible in audit output	candidate_runstate_v2_type_contract
+E_RUN_STATUS	enum	string	active;completed;invalidated	enum	literal value	status may be projected without hidden record values	candidate_runstate_v2_type_contract
+E_VISIBILITY_SCOPE	enum	string	backend_only;observer_set;player;public	enum	literal value	backend_only never projects; observer_set requires matching knowledge_owner	candidate_runstate_v2_type_contract
+E_SOURCE_AUTHORITY	enum	string	hard_canon;working_canon;candidate_design;accepted_runtime_receipt;test_fixture	enum	literal value	authority label never promotes candidate content	candidate_runstate_v2_type_contract
+E_SETTLEMENT_LEVEL	enum	string	ACTIVITY;ENCOUNTER;OPERATION;CHAPTER	enum	literal value	level is public audit metadata	candidate_runstate_v2_type_contract
+E_RESOLUTION	enum	string	clear;partial;withdraw;fail_continue;retry_required;cancelled	enum	literal value	player summary uses localized text but preserves this semantic result	candidate_runstate_v2_type_contract
+E_OP_KIND	enum	string	OP_CREATE_RECORD;OP_PATCH_RECORD;OP_REPLACE_RECORD;OP_CLOSE_RECORD;OP_RESOURCE_DELTA;OP_APPEND_EVENT;OP_TRANSFER_UNIQUE	enum	literal value	operation kind is audit-only and not a player-facing verb	candidate_runstate_v2_type_contract
+E_PREPARE_STATUS	enum	string	prepared;rejected;timeout	enum	literal value	player projection receives only safe reason summaries	candidate_runstate_v2_type_contract
+E_COMMIT_STATUS	enum	string	accepted;rejected;idempotent_replay	enum	literal value	status may be projected with receipt ID	candidate_runstate_v2_type_contract
+E_DETAIL_LEVEL	enum	string	brief;standard;expert	enum	literal value	detail changes presentation only	candidate_runstate_v2_type_contract
+E_ACCESSIBILITY_MODE	enum	string	standard;high_contrast;text_first;reduced_motion	enum	literal value	mode cannot change state or visibility scope	candidate_runstate_v2_type_contract
+E_INSTANCE_KIND	enum	string	instance;unique	enum	literal value	unique identity remains visible only when item record is visible	candidate_runstate_v2_type_contract
+E_BUILD_STATUS	enum	string	zero_build	enum	literal value	must remain visible in audit output	candidate_runstate_v2_type_contract
+E_HUMAN_EVIDENCE_STATUS	enum	string	not_run	enum	literal value	must remain visible in audit output	candidate_runstate_v2_type_contract
+E_COMMIT_EXPECTATION	enum	string	accepted;rejected	enum	literal value	fixture-only expectation	candidate_runstate_v2_type_contract
+E_FIXTURE_STAGE	enum	string	R0;P1	enum	literal value	fixture stage is not production maturity	candidate_runstate_v2_type_contract

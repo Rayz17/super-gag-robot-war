@@ -1,0 +1,13 @@
+path_id	path_name	resource_type	unlock_condition	tier_count	primary_effect	secondary_effect	no_go	best_for	bible_rule
+UP_FRAME_CORE	机体框架改装	credits	默认开放	10	HP、EN、装甲、机动、传感按原型预算提升	达到5级开放Full Custom Bonus	不得五项平均后抹平原型弱点	所有机体	框架改装强化身份，不删除弱点
+UP_WEAPON_GROUP	武器组改装	credits	机体加入后开放	10	该机体普通武器威力小幅提升	部分武器降低EN/弹药压力	不得让低耗武器超过必杀武器	输出和主战机体	优先组改，减少逐把武器刷钱
+UP_SIGNATURE	标志武器改装	repair_parts;soul_shards	角色事件或机魂稳定达标	5	特色武器获得动词强化，如破障、推距、非致命	解锁专属演出或台词	不得把每台机体都改成地图炮	主线角色机体	每台主线机体至少一个爱用可见节点
+UP_SOUL_TUNING	机魂调律	soul_shards;relationship	完成修复/说得/非致命事件	5	提升stability、燃魂安全窗口和同步质量	降低暴走或过载惩罚	不得直接换成纯数值攻击	机魂相关单位	机魂成长要有伦理选择和代价
+UP_SUPPORT_SLOT	支援槽扩展	repair_parts;credits	万机馆整备设施开放	3	增加强化件槽位或支援插件	可装特殊法务/展馆/信号装备	不得让槽位堆出万能单位	支援、战舰、低数值单位	槽位用于补定位，不用于堆满所有短板
+UP_PILOT_TRAINING	驾驶员训练	pilot_pp	驾驶员加入后开放	10	驾驶员stat和技能学习	解锁援护、保护、再移动、精神	不得无限堆单一攻击stat	所有驾驶员	驾驶员成长应影响操作风格
+UP_RELATION_LINK	关系/羁绊	link_exp;relationship	共同出击、支援、船内事件	5	援护攻击/防御、合体、说得条件提升	解锁战斗前后专属台词	不得只给被动伤害加成	合体、同步、说得线	关系必须有战斗价值和台本反馈
+UP_MUSEUM_FACILITY	万机馆设施	mxbits;funding	开馆经营和章节推进	8	维修效率、补给、战前情报、支援指令	影响开馆收益和战后损伤	不得替代具体机体改装	全队和幕间系统	设施是缓冲层，不是自动胜利
+UP_ASSIST_CREW	支援角色训练	pilot_pp;mxbits	支援角色入队或事件解锁	5	支援指令恢复HP/EN、增伤、揭示意图	支援角色升级解锁被动效果	不得每回合无成本使用强支援	非出击角色和舰桥角色	支援角色要参与战斗但不抢主战位
+UP_LEGAL_PROTOCOL	合规协议	evidence;enterprise_trust	清算谈判或城市章节	5	降低城市损伤惩罚、解除封存限制	获得清算临时支援或白名单	不得把企业压力完全消除	C01;C08;C11	协议应同时带来保护和束缚
+UP_REAL_MACHINE_CARE	现实机器养护	repair_parts;real_machine_trust	现实机器支线或展品养护	5	提升稳定、护送速度、失败恢复	解锁非攻击工具和战后展陈	不得把现实机器升级成超级输出	R24;CIVILIAN_ESCORT	尊严来自被理解，不来自变成幻想机
+UP_LIMIT_RELEASE	限制解除/EX改装	soul_shards;hidden_flags	中后期、隐藏路线或挑战	3	开放Tier 6-10额外特性或EX Bonus	带来过热、清算压力或关系审判	不得作为主线通关硬要求	爱用单位、隐藏机体、终局	扩上限只服务爱用和挑战，不服务主线膨胀

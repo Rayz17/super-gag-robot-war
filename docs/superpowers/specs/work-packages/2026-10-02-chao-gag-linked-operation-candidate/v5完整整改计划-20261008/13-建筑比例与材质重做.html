@@ -1,0 +1,202 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>建筑比例与材质重做 · 工务城整改计划</title><style>
+:root{--ink:#243742;--muted:#586e78;--paper:#f4f2eb;--panel:#fffefa;--line:#d3ddd9;--teal:#176b73;--amber:#a96120;--accent:#dc674d}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;line-height:1.85;font-size:16px}a{color:var(--teal);text-decoration-thickness:1px;text-underline-offset:3px}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.skip{position:absolute;top:-80px}.skip:focus{top:10px;background:white;padding:10px;z-index:9}.shell{display:grid;grid-template-columns:245px minmax(0,1fr);max-width:1600px;margin:auto}.sidebar{position:sticky;top:0;height:100vh;overflow:auto;background:#e5ece8;border-right:1px solid #c4d5d0;padding:30px 20px}.brand{font-size:14px;letter-spacing:.12em;color:var(--teal);font-weight:750}.date{font-size:12px;color:var(--muted);margin:7px 0 24px}.nav a{display:block;text-decoration:none;padding:9px 12px;border-radius:7px;margin:4px 0}.nav a.active{background:var(--teal);color:white}.nav a:hover{box-shadow:inset 0 0 0 1px var(--teal)}.status{border-top:1px solid var(--line);margin-top:25px;padding-top:15px;color:var(--muted);font-size:13px}.status strong{color:var(--amber)}main{padding:42px clamp(24px,4vw,65px) 80px;min-width:0}article{max-width:1100px;margin:auto}h1{font-size:clamp(28px,3vw,39px);line-height:1.4;letter-spacing:-.03em;margin:0 0 18px}h2{font-size:25px;margin:55px 0 20px;border-top:2px solid var(--line);padding-top:24px;line-height:1.5}h3{font-size:20px;margin:30px 0 12px;color:var(--teal)}p,ul,ol{margin:14px 0}li{margin:7px 0}strong{font-weight:690}blockquote{margin:22px 0;background:#e6efeb;padding:14px 25px;border-left:4px solid var(--teal);border-radius:0 8px 8px 0}code{font-family:ui-monospace,monospace;font-size:.87em;background:#e8ece6;padding:2px 5px;border-radius:4px;overflow-wrap:anywhere}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:9px;margin:20px 0;background:var(--panel)}table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7}th{text-align:left;padding:13px 14px;background:#dce8e3;color:#204c53;font-weight:700}td{vertical-align:top;padding:13px 14px;border-top:1px solid var(--line)}td:first-child{min-width:145px;font-weight:560}tr:nth-child(even) td{background:#f8f8f1}img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}article>p:has(img){max-width:800px;margin:25px auto}figure{margin:25px 0}figcaption,.caption{font-size:13px;color:var(--muted)}details{margin:18px 0;padding:15px 20px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}summary{cursor:pointer;color:var(--teal);font-weight:650}.toc{background:#edf0e8;border:1px solid var(--line);border-radius:8px;padding:16px 22px;margin:28px 0;font-size:14px}.toc a{display:inline-block;margin:3px 14px 3px 0}.foot{margin-top:45px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}.filters{display:flex;gap:12px;flex-wrap:wrap;position:sticky;top:0;background:var(--paper);padding:12px 0;z-index:3}input,select{font:inherit;border:1px solid #90aaa8;border-radius:7px;background:var(--panel);padding:9px 12px;color:var(--ink)}input{flex:1;min-width:220px}.count{font-size:13px;color:var(--muted)}.source-note{font-size:13px;color:var(--muted)}.badge{font-size:12px;padding:3px 7px;background:#dcece5;border-radius:4px;white-space:nowrap}.ledger-card{border:1px solid var(--line);background:var(--panel);border-radius:9px;padding:18px 20px;margin:12px 0}.ledger-card h3{margin:0 0 8px;font-size:17px}.ledger-card p{margin:8px 0;font-size:14px}.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.ledger-card summary{font-size:13px}.ledger-card details{padding:10px 14px}.task-links a{display:inline-block;margin-right:10px}.footer-nav{display:flex;justify-content:space-between;gap:15px;margin-top:30px}svg{max-width:100%;height:auto}
+@media(max-width:1000px){.shell{grid-template-columns:205px minmax(0,1fr)}.sidebar{padding:25px 12px}main{padding:32px 22px 55px}table{min-width:650px}}
+@media(max-width:720px){.shell{display:block}.sidebar{position:static;height:auto;padding:16px 18px;border-right:0;border-bottom:1px solid var(--line)}.date{margin-bottom:10px}.nav{display:flex;gap:5px;overflow:auto}.nav a{white-space:nowrap;font-size:13px;padding:7px 10px}.status{display:none}main{padding:26px 18px 50px}body{font-size:16px}h2{font-size:22px;margin-top:40px}.filters{position:static}h1{font-size:28px}td,th{padding:11px}.toc a{display:block}}
+@media print{.sidebar,.filters,.footer-nav,.skip{display:none}.shell{display:block}main{padding:0}body{background:white;font-size:10pt}h1{font-size:22pt}h2{font-size:16pt;break-after:avoid}h3{break-after:avoid}.table-wrap{overflow:visible;border-radius:0}table{min-width:0!important;font-size:9pt}tr{break-inside:avoid}a{color:inherit}details{break-inside:avoid}.ledger-card{break-inside:avoid}}
+
+.nav-label{font-size:12px;font-weight:750;letter-spacing:.07em;margin:24px 12px 10px;color:var(--muted)}.nav small{float:right;font-size:11px;opacity:.7}.detail-reading{background:#dfece5;border:1px solid #adcbc0;border-radius:10px;padding:20px 24px;margin:28px 0}.detail-reading ul{columns:2;column-gap:30px;font-size:14px;padding-left:20px}.detail-reading li{break-inside:avoid}.design-item{padding:16px 0 35px;border-bottom:2px solid var(--line);scroll-margin-top:24px}.design-item h3{font-size:22px;line-height:1.5}.design-item>p{max-width:960px}.design-example{border-left:4px solid var(--amber);background:#f1e7d1;border-radius:0 8px 8px 0;padding:15px 22px;margin:21px 0}.design-example p{margin:6px 0 0}.implementation{font-size:14px;overflow-wrap:anywhere}.implementation a{word-break:break-word}.item-toc{font-size:14px}.item-toc ul{columns:2}.item-toc li{break-inside:avoid}figure img{display:block;width:100%;max-height:none;background:#f0f0e7}figure figcaption{padding:10px 4px 0;line-height:1.7}figure a:has(img){display:block}figure{margin:28px 0 35px}figure strong{color:var(--teal)}button{font:inherit;padding:10px 18px;border:1px solid var(--teal);border-radius:6px;background:#e0eee7;color:var(--ink);cursor:pointer}.read-detail{font-weight:700}.ledger-card{scroll-margin-top:20px}.design-item blockquote{font-size:16px}.design-item .source-note{font-size:13px}.design-item:target{border-left:5px solid var(--teal);padding-left:20px;background:#f8f9ef}.nav a.active{font-weight:700}
+@media(max-width:720px){.detail-reading ul,.item-toc ul{columns:1}.design-item h3{font-size:20px}.nav-label{display:none}.detail-reading{padding:14px 17px}figure{margin:22px -4px}figure img{border-radius:5px}.design-example{padding:12px 15px}.design-item:target{padding-left:12px}}
+</style></head><body><a class="skip" href="#main">跳到正文</a><div class="shell"><aside class="sidebar"><div class="brand">超 GAG / 工务城</div><div class="date">完整整改计划 · 10.10 实施更新</div><nav class="nav" aria-label="分册导航"><a href="index.html">00　总方案</a><a href="13-%E5%BB%BA%E7%AD%91%E6%AF%94%E4%BE%8B%E4%B8%8E%E6%9D%90%E8%B4%A8%E9%87%8D%E5%81%9A.html" class="active" aria-current="page">13　建筑比例与材质重做</a><a href="12-%E9%A6%96%E7%89%88%E4%BA%A4%E4%BB%98%E4%B8%8E%E9%AA%8C%E8%AF%81.html">12　首版交付与验证</a><a href="07-%E9%A6%96%E5%85%B3%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html">07　首关施工规格</a><a href="08-%E5%9B%BE%E5%BD%A2%E4%B8%8E%E6%89%8B%E6%84%9F%E6%96%BD%E5%B7%A5%E8%A1%A8.html">08　图形与手感施工表</a><a href="11-%E5%90%8D%E5%9C%BA%E9%9D%A2%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%85%A8%E9%93%BE%E8%A1%A5%E5%AE%9A.html">11　名场面与系统补定</a><a href="09-%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%9C%BA%E9%AD%82%E6%96%BD%E5%B7%A5%E8%A7%84%E6%A0%BC.html">09　人物指令与机魂</a><a href="10-%E4%B8%93%E5%85%B3%E4%B8%8E%E6%88%90%E9%95%BF%E5%AF%B9%E7%85%A7%E8%A7%84%E6%A0%BC.html">10　专关与成长对照</a><a href="01-%E6%A0%B8%E5%BF%83%E6%9C%BA%E5%88%B6%E4%B8%8E%E6%93%8D%E4%BD%9C.html">01　核心机制与操作</a><a href="02-%E7%BE%8E%E6%9C%AF%E4%B8%8E%E9%80%90%E6%8B%9B%E6%BC%94%E5%87%BA.html">02　美术与逐招演出</a><a href="03-%E6%9C%BA%E4%BD%93%E4%B8%8E%E4%BA%BA%E7%89%A9%E4%BD%93%E7%B3%BB.html">03　机体与人物体系</a><a href="04-%E6%88%98%E5%9C%BA%E4%B8%8E%E7%AB%8B%E4%BD%93%E6%9C%BA%E5%88%B6.html">04　战场与立体机制</a><a href="05-%E6%96%BD%E5%B7%A5%E4%B8%8E%E9%AA%8C%E6%94%B6.html">05　施工与验收</a><a href="06-%E4%BB%8E%E6%96%B9%E6%A1%88%E5%88%B0%E5%8F%AF%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1.html">06　从方案到可实现设计</a><a href="图解总览.html">39 张原创图解</a><a href="覆盖核对.html">搜索 331 条具体设计</a><div class="nav-label">逐项展开 · 9 册</div><a href="%E6%9D%A1%E7%9B%AE01-%E6%93%8D%E4%BD%9C%E7%95%8C%E9%9D%A2%E4%B8%8E%E4%BD%93%E9%AA%8C%E7%BB%B4%E5%BA%A6.html">操作界面与体验维度 <small>40</small></a><a href="%E6%9D%A1%E7%9B%AE02-%E7%BE%8E%E6%9C%AF%E5%9C%BA%E6%99%AF%E4%B8%8E%E8%AF%AD%E4%B9%89%E8%89%B2.html">美术场景与语义色 <small>45</small></a><a href="%E6%9D%A1%E7%9B%AE03-%E5%8A%A8%E4%BD%9C%E8%8A%82%E5%A5%8F%E4%B8%8E%E6%89%93%E5%87%BB%E5%8F%8D%E9%A6%88.html">动作节奏与打击反馈 <small>66</small></a><a href="%E6%9D%A1%E7%9B%AE04-%E5%8D%81%E5%85%AB%E6%8B%9B%E4%B8%8E%E9%94%99%E8%AF%AF%E7%A4%BA%E6%84%8F.html">十八招与错误示意 <small>46</small></a><a href="%E6%9D%A1%E7%9B%AE05-%E6%95%8C%E4%BA%BA%E6%88%98%E6%96%97%E4%B8%8E%E7%BB%BC%E5%90%88%E5%BB%BA%E8%AE%AE.html">敌人战斗与综合建议 <small>32</small></a><a href="%E6%9D%A1%E7%9B%AE06-%E9%AB%98%E5%BA%A6%E6%9C%BA%E6%9E%84%E4%B8%8E%E7%A9%BA%E5%9C%B0.html">高度机构与空地 <small>41</small></a><a href="%E6%9D%A1%E7%9B%AE07-%E6%9C%BA%E4%BD%93%E4%B8%BB%E4%BD%93%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%81%A2%E5%A4%8D.html">机体主体与系统恢复 <small>39</small></a><a href="%E6%9D%A1%E7%9B%AE08-%E5%8D%81%E6%9D%A1%E4%BA%BA%E7%89%A9%E6%8C%87%E4%BB%A4.html">十条人物指令 <small>10</small></a><a href="%E6%9D%A1%E7%9B%AE09-%E5%8D%A1%E7%BB%84%E4%B8%8E%E6%88%90%E9%95%BF%E5%AF%B9%E7%85%A7.html">卡组与成长对照 <small>12</small></a></nav><div class="status"><strong>10月10日更新</strong><br>新美术规范、三区色板与背景已接入。<br><a href="13-建筑比例与材质重做.html">当前实机与模型</a><br>三面救援与独立试演继续整改。<br><a href="12-首版交付与验证.html">实机、验证与剩余项</a><br>完整52包仍需逐项验收。<br><br>来源：Grok v5、批评稿及补全清单<br>首批：六机、三面救援<br>报告条目：可按原编号核对</div></aside><main id="main"><article><h1>居民楼、材质与场景比例：本轮重做</h1>
+<p>这次首先纠正一个明确的错误：原模型把居民保护目标做成了小屋。只加雨棚、窗框和一组新色值，仍不能让它与十几米至几十米的机甲处在可信的同一空间里。</p>
+<p>此前报告中的建筑轮廓、尺寸参照、材质分工和损毁分级，没有真正约束住实现。本轮按这些要求改了实际 Blender 模型、场景装配、着色器和遮挡交互；下面是当前 Godot 渲染，不是概念图。完整整改计划的其他工作包仍需分别核验。</p>
+<nav class="toc" aria-label="本页目录"><a href="#section-1">0. 新标准已进入规范和Demo</a><a href="#section-2">1. 把“有人居住”做进建筑形体</a><a href="#section-3">2. 配色和材质如何约束实现</a><a href="#section-4">3. 设施也必须有可读的损伤</a><a href="#section-5">4. 实际检查和未关闭项</a></nav><h2 id="section-1">0. 新标准已进入规范和Demo</h2>
+<p>10月10日按你提供的<a href="%E7%BB%99Astra%E7%9A%84%E8%A7%86%E8%A7%89%E6%80%BB%E5%8F%82%E8%80%83.html">视觉总参考</a>直接修订了<a href="../../../production/art-direction-v0.3/series-art-direction-ab-lock-v1.md">项目美术规范 v2</a>。旧规范已存档，原入口保留，避免后续制作继续引用冲突要求。参考中的战棋正靶11是方向；更淡的calm版本和否决图不是上限。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向查看的表格"><table>
+<thead>
+<tr>
+<th>新标准的要求</th>
+<th>本轮落地</th>
+<th>实机检查重点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>动能赛璐璐、英雄涂装；不要灰板与商品渲染</td>
+<td>场景与机体使用硬分档受光，取消碎镜面；保留现有机体贴图，纠正重复乘色使涂装发暗的问题</td>
+<td>同屏比较社勇、王者、敌体与背景；不全员染成青绿</td>
+</tr>
+<tr>
+<td>工务城：钢青绿、混凝土米、警示朱红</td>
+<td>三区地面、楼房、仓库、吊机与柜体接入一份工程色板；B改为钢蓝桥座，不沿用旧灰紫稿</td>
+<td>每区有职责差别，也属于同一座现代工业城</td>
+</tr>
+<tr>
+<td>建筑有可信的现代结构</td>
+<td>保留5—7层居民楼及三档损毁；外围厂房新增实体卷帘门、深窗、分格与檐口，塔楼新增楼层与屋顶服务构件</td>
+<td>正常战棋镜头辨住宅/仓库/电气设施；不依赖标签或平面立面贴纸</td>
+</tr>
+<tr>
+<td>HUD与场景协调，但不抢棋盘</td>
+<td>墨蓝面、象牙字、黄铜细边、朱红主要按钮；14类UI面板和三区符号统一；没有照搬正靶全部面板</td>
+<td>普通观察保持精简，悬停/选中再展开；危险仍由方向、形状和动态共同表达</td>
+</tr>
+<tr>
+<td>剧情与战斗同一种绘制语言</td>
+<td>标题全景、车前阻拦、供能恢复三张旧背景重绘为同地点的赛璐璐版本；标题、部署、剧情、结果均已绑定</td>
+<td>原列车、桥梁、耦合机械关系保留；人类立绘仍用原身份资产</td>
+</tr>
+<tr>
+<td>执行标准可复用</td>
+<td>正式规范 → 共享JSON色板 → Godot材质/UI生成器；来源与正靶有摘要校验</td>
+<td>不依靠每次临时手写颜色；新关必须另声明场景包</td>
+</tr>
+</tbody></table></div>
+<p><img src="target-look/11-tactics-user-accepted.png" alt="用户指定的战棋正靶。此图是视觉方向，不是本轮游戏截图，也不直接复制其中机设、英文和HUD数量。"></p>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/rescue-hud-A.png" alt="当前A面正常HUD：墨蓝与黄铜细边、机体身份色和有色工业环境共同出现。"></p>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/impact-opening.png" alt="当前标题页：重绘同一工务城全景，替换旧夜景碎高光；不额外堆叠几何贴纸。"></p>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/dialogue-standard.png" alt="当前对话页：车前阻拦背景与既有角色立绘同屏。"></p>
+<p>三张背景由内置 image_gen 编辑原图，项目文件位于 <a href="../../../../../../game-godot/assets/formula_lab/linked_campaign_v6/backgrounds/command-ring-kinetic.png">工务城全景</a>、<a href="../../../../../../game-godot/assets/formula_lab/linked_campaign_v6/backgrounds/story-car-kinetic.png">列车受阻</a>和<a href="../../../../../../game-godot/assets/formula_lab/linked_campaign_v6/backgrounds/story-link-kinetic.png">供能恢复</a>，<a href="../../../../../../game-godot/assets/formula_lab/linked_campaign_v6/backgrounds/production-prompts.json">完整提示词</a>随资产保存。旧版图仍留存，当前场景引用新版本。下面全部模型及棋盘截图已换成本轮真实渲染。</p>
+<h2 id="section-2">1. 把“有人居住”做进建筑形体</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向查看的表格"><table>
+<thead>
+<tr>
+<th>报告要求与这次问题</th>
+<th>本轮实际处理</th>
+<th>检查方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>居民单位像小屋，机甲与建筑比例失真</td>
+<td>A 六层、B 五层、C 七层；每层约3米，门高2.4米；建筑总高约17—23米。单格压缩平面占地，保留楼层与门窗比例</td>
+<td>与相同镜头下的标准机甲和2×2王者比较，不单独放大楼体截图冒充改善</td>
+</tr>
+<tr>
+<td>建筑缺少可辨认的轮廓</td>
+<td>上部退台、服务核心筒、阳台、深窗洞、首层入口和屋顶设备共同塑形；三区分别采用阳台、竖向窗间构件和公共外廊</td>
+<td>关闭HUD，正常战棋距离仍看得出住宅和电气设施的区别</td>
+</tr>
+<tr>
+<td>完好、受损、停用只靠变色</td>
+<td>半损住宅缺失上角，露出楼板和结构；毁坏住宅保留倒塌楼板、残墙及钢筋，窗灯熄灭</td>
+<td>三种状态同镜头并列；不把损坏画成一幢仍然整齐的小楼</td>
+</tr>
+<tr>
+<td>大楼会挡住单位</td>
+<td>只切开视线中挡住所选/悬停机体的住宅上部，保留下层墙体和剖切面；恢复自由观察后复原</td>
+<td>实际放置楼后机体，验证模型点选和剖切复原</td>
+</tr>
+</tbody></table></div>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/rescue-nohud-A.png" alt="A面：六层住宅与完全版王者同屏。住宅的首层、楼层、阳台和屋顶设备提供尺度参照。"></p>
+<p>A面：六层住宅与完全版王者同屏。住宅的首层、楼层、阳台和屋顶设备提供尺度参照。</p>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/residence-condition-0.png" alt="完好住宅：入口门、层间楼板、退台与楼梯服务核心筒均为实体。"></p>
+<p>完好住宅：入口门、层间楼板、退台与楼梯服务核心筒均为实体。</p>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/residence-condition-1.png" alt="受损住宅：缺失楼角与外露结构改变轮廓，保留可识别的原建筑。"></p>
+<p>受损住宅：缺失楼角与外露结构改变轮廓，保留可识别的原建筑。</p>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/residence-condition-2.png" alt="毁坏住宅：实际倒塌的楼板与残墙，内部窗灯熄灭。"></p>
+<p>毁坏住宅：实际倒塌的楼板与残墙，内部窗灯熄灭。</p>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/residence-cutaway.png" alt="遮挡时只剖开挡住机体的楼层。这是临时观察状态，不代表楼体遭到破坏。"></p>
+<p>遮挡时只剖开挡住机体的楼层。这是临时观察状态，不代表楼体遭到破坏。</p>
+<h2 id="section-3">2. 配色和材质如何约束实现</h2>
+<p>当前配色由新规范中的工务城场景包决定。早期 ART02/COLOR-2 对材料分区和可读性的要求保留，旧灰紫桥座色稿已经退役；不再让同一项目同时存在两套有效调色目标。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向查看的表格"><table>
+<thead>
+<tr>
+<th>层次</th>
+<th>A 供能前庭</th>
+<th>B 跨渠桥座</th>
+<th>C 环下装卸站</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>主地面</td>
+<td>鼠尾草绿承重地坪</td>
+<td>钢蓝渠岸与矿物青水</td>
+<td>褪蓝站台与铁道</td>
+</tr>
+<tr>
+<td>建筑表面</td>
+<td>混凝土米色、钢青绿设备</td>
+<td>偏冷米色、钢蓝结构</td>
+<td>暖米外墙、褪蓝设备</td>
+</tr>
+<tr>
+<td>工程构件</td>
+<td>铜色母排、陶瓷与朱红局部</td>
+<td>钢蓝桁架、铜金五金</td>
+<td>朱红货柜、铜金吊具与铁路</td>
+</tr>
+<tr>
+<td>局部亮点</td>
+<td>暖色室内灯和有效接口</td>
+<td>桥锁与停靠接口</td>
+<td>作业灯和列车灯</td>
+</tr>
+</tbody></table></div>
+<p>这些色值是从已定视觉方向落实的工程色票，不冒称参考原稿给出了精确HEX。色板在 <a href="../../../production/art-direction-v0.3/visual-standard-20261010.json">visual-standard-20261010.json</a>集中保存；<a href="../../../../../../scripts/build_gongwu_visual_style.py">生成器</a>同时产生场景参数和SVG UI。</p>
+<p>材质以色块、实体折面、深窗和局部低对比表面差别区分。关闭细碎镜面高光，环境不用纯白屋顶；地面深槽、轨道、破口保留实际几何。机体仍使用自己的身份色和贴图，不能为了“统一”把所有角色染成同一种场景色。战棋盘面不使用孟菲斯装饰；冲击画面按情节需要使用，不能生硬盖到背景上。</p>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/rescue-nohud-B.png" alt="B面：深渠、桥面与桁架承担画面结构，材质和颜色与供能前庭有区别。"></p>
+<p>B面：深渠、桥面与桁架承担画面结构，材质和颜色与供能前庭有区别。</p>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/rescue-nohud-C.png" alt="C面：两节实体车厢、铁路和吊机。旧的小屋式车头已移除；车头和车尾各自跟随真实轨道节点。"></p>
+<p>C面：两节实体车厢、铁路和吊机。旧的小屋式车头已移除；车头和车尾各自跟随真实轨道节点。</p>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/rescue-gray-A.png" alt="A面灰度检查：保持相同镜头与曝光，检查楼体、机体和地面之间的明度分离。"></p>
+<p>A面灰度检查：保持相同镜头与曝光，检查楼体、机体和地面之间的明度分离。</p>
+<h2 id="section-4">3. 设施也必须有可读的损伤</h2>
+<p>15种实际模型变体，每种有完好、受损、毁坏三种实体，共45个GLB；其中住宅为三区各一型。下列并排图从左到右依次是完好、受损、毁坏，使用同一场景灯光与材质。它们用于核对形体；游戏内的尺寸仍以棋盤和机体同屏图为准。</p>
+<h3>居民楼</h3>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/prop-shelter.png" alt="居民楼的三种实体状态。"></p>
+<p>居民楼的三种实体状态。</p>
+<h3>渠岸住宅</h3>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/prop-shelter-b.png" alt="渠岸住宅的三种实体状态。"></p>
+<p>渠岸住宅的三种实体状态。</p>
+<h3>环站公寓</h3>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/prop-shelter-c.png" alt="环站公寓的三种实体状态。"></p>
+<p>环站公寓的三种实体状态。</p>
+<h3>电气柜</h3>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/prop-relay.png" alt="电气柜的三种实体状态。"></p>
+<p>电气柜的三种实体状态。</p>
+<h3>周转货柜</h3>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/prop-crate.png" alt="周转货柜的三种实体状态。"></p>
+<p>周转货柜的三种实体状态。</p>
+<h3>实体护墙</h3>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/prop-wall.png" alt="实体护墙的三种实体状态。"></p>
+<p>实体护墙的三种实体状态。</p>
+<h3>转运台</h3>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/prop-turntable.png" alt="转运台的三种实体状态。"></p>
+<p>转运台的三种实体状态。</p>
+<h3>撤离车厢</h3>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/prop-train.png" alt="撤离车厢的三种实体状态。"></p>
+<p>撤离车厢的三种实体状态。</p>
+<h3>压力罐</h3>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/prop-fuel.png" alt="压力罐的三种实体状态。"></p>
+<p>压力罐的三种实体状态。</p>
+<h3>承运入口</h3>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/prop-portal.png" alt="承运入口的三种实体状态。"></p>
+<p>承运入口的三种实体状态。</p>
+<h3>升降机构</h3>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/prop-elevator.png" alt="升降机构的三种实体状态。"></p>
+<p>升降机构的三种实体状态。</p>
+<h3>吊运机构</h3>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/prop-crane.png" alt="吊运机构的三种实体状态。"></p>
+<p>吊运机构的三种实体状态。</p>
+<h3>锁固锚点</h3>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/prop-anchor.png" alt="锁固锚点的三种实体状态。"></p>
+<p>锁固锚点的三种实体状态。</p>
+<h3>上层承重板</h3>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/prop-deck.png" alt="上层承重板的三种实体状态。"></p>
+<p>上层承重板的三种实体状态。</p>
+<h3>柱环支架</h3>
+<p><img src="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/prop-skyline.png" alt="柱环支架的三种实体状态。"></p>
+<p>柱环支架的三种实体状态。</p>
+<h2 id="section-5">4. 实际检查和未关闭项</h2>
+<ul>
+<li>原生窗口中测试了 Ctrl＋左键：没有选择机体，也没有产生移动；普通左键可以直接选择模型并展示合法范围。本轮一次移动的预算由4变为1，Z撤回后回到原格且恢复为4。</li>
+<li>三地图使用正常战棋镜头重新渲染；住宅三种损伤保持相同镜头，避免用取景差异掩饰比例问题。</li>
+<li>新标准落实后，又在1440×900原生窗口开启HUD逐图复看，实际点选社勇王、移动、撤回并用F2/F3切换B、C地图。建筑没有盖住底部动作栏；敌机靠近设施时，局部标签仍有拥挤，未把整个HUD整改记成完成。</li>
+<li>楼后机体点选、遮挡剖切、移开后恢复、列车旧模型隐藏和只显示一份车头状态均通过运行检查。过程中发现并修复了包围盒射线接口返回类型处理错误。</li>
+<li>173项机制集成检查通过，包括隧道受阻后撤回、实际线缆损毁切断供电、备用线恢复供电、长箱旋转后占格变化，以及显示路线与实际移动的一致性。这些是规则回归，不代替画面评价。</li>
+<li>本轮新材质和额外建筑几何下，30次选中、300次格点预览的95分位分别为51.6毫秒和10.6毫秒；与此前52/10毫秒处在相近范围。选中和悬停没有修改战斗状态。现在复用已显示的合法路径，提交时重新检查整片占格、楼梯、新增障碍和真实消耗；不会靠省略规则检查来换速度。</li>
+<li>当前住宅已按本轮比例与楼房形体要求重做；整体场景仍不能写成达到《陷阵之志》的美术完成度。完整包里的触屏操作、音频试听、逐招连续演出、长期成长实验及真实玩家评估，也不能由这轮建筑重做代签完成。</li>
+</ul>
+<p>现代幕墙、门窗、转角和构件组织另参考了 <a href="https://polyhaven.com/a/modular_urban_apartments_facade">Poly Haven 的模块化城市建筑立面</a>。本轮没有下载或使用该模型，实际GLB由项目内Blender脚本构建。</p>
+<p>实现入口：<code>scripts/build_gongwu_visual_style.py</code>、<code>scripts/build_gongwu_v6_environment.py</code>、<code>v6/full_art.gd</code>、<code>environment_art.gd</code>、<code>ground_relief.gd</code>、<code>kit_material.gdshader</code>、<code>v6/structure_cel.gdshader</code>、<code>v6/terrain_cel.gdshader</code>。验证入口：<code>v6/architecture_review.gd</code>、<code>v6/prop_review.gd</code>、<code>v6/mechanics_integration_test.gd</code>。</p>
+<p>本轮复核记录：<a href="../../../../../../artifacts/formulas/production-lab-v1/qa/visual-standard-20261010/visual-standard-review.json">标准来源、运行检查与原生操作</a>。</p>
+<div class="footer-nav"><a href="index.html">← 总方案</a><a href="12-首版交付与验证.html">接着读：首版交付与验证 →</a></div><div class="foot">来源：项目内 Grok v5 报告及配套原稿。图中“设计示意”不代表游戏已经实现。第11册为补定设计，第12册为实现与验证，第13册为新美术标准落地与建筑重做。是否好玩仍需真实玩家判断，不能用测试通过代替。</div></article></main></div></body></html>

@@ -1,0 +1,108 @@
+{
+  "character_states": [
+    {
+      "desire_or_emotion": "在失控巨环砸落前保住街区、转子和所有参战机体，并证明自己能把不同机器组织成真正的队伍。",
+      "entity_id": "CH_JICUN",
+      "relationship_delta": "第一反应被兜灯叫停后立即接受其专业方案，统筹四个不可替代的动作并亲自抓住最终卸力时机；不替玩家、AI或旧守护者操纵身体。"
+    },
+    {
+      "desire_or_emotion": "拒绝用馆守Z再次自毁来换取英雄画面，要让它带着缺臂状态完成更强的团队动作。",
+      "entity_id": "CH001",
+      "relationship_delta": "当众否决单臂硬接并主导四点承力方案；接受唐胶基于全尺寸磨损与承载面的现场补充，共同调整货柜领袖落位。"
+    },
+    {
+      "desire_or_emotion": "让刚刚公开并经实物验证的维修判断真正保护巨环，而不是在市场争夺中成为毁件诱因。",
+      "entity_id": "CH_TANGJIAO",
+      "relationship_delta": "依据已测实物磨损照亮可承载外缘，把落点信息交给兜灯复核；不越过兜灯承担巨机安全判断。"
+    }
+  ],
+  "context_key": "309401729cad7f2b79b0c5fc327b1ae03677db94e514a1ebdf894d1592171491",
+  "draft_sha256": "526d9fd3d76494afbd993e4727ceacc30424c1a70aff65e6ee075e729ef45110",
+  "entity_states": [
+    {
+      "controller": "由万机馆与木桶街共同完成现场回收和运输固定；平台即时提货失败，原资产争议未在本场继续处理",
+      "entity_id": "MECHA_WANJI_MAIN_CIRCULATION_ROTOR",
+      "location": "万机馆舰侧安装位的外部承载架",
+      "physical_state": "六米全尺寸工业总成已安全脱离十二轴运输架并固定在舰侧承载架；公共循环管线已由平台远程关闭并脱开；未完成适配座安装、主循环接入或全尺寸复验，无明确新增损伤"
+    },
+    {
+      "controller": "自动航行系统执行低速舰体动作，纪存负责转向目标和舰侧绞盘释放时机",
+      "entity_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "location": "木桶街外港，横向停在旧泊位与舰侧安装位之间",
+      "physical_state": "保持百米级巡展舰形态，以舰舷承受并卸去巨环摆动；未变形、未暴走、未新增火力；主循环仍未恢复，泊系承受过载但舰体保持可作业"
+    },
+    {
+      "controller": "旧守护者自主执行动作，兜灯负责安全判断并拥有叫停权",
+      "entity_id": "V353U001",
+      "location": "木桶街外港岸坡与万机馆舰侧之间",
+      "physical_state": "原装右前臂仍缺失，黄色巡展臂保持非拳击用途且未用于硬接；以地锚稳定机体、完整左臂改变巨环摆向；不能飞，无新增明确损伤"
+    },
+    {
+      "controller": "火种货柜领袖独立载具人格",
+      "entity_id": "V353U043",
+      "location": "万机馆舰侧安装位下方",
+      "physical_state": "保持全尺寸作业变形，以长承载骨架托住巨环下缘并随其移动；车轮和骨架承受重载，无明确结构损伤"
+    },
+    {
+      "controller": "玩家经公共竞技场临时挑战席操纵；低权限竞赛AI维持全尺寸机体与攀轨模块",
+      "entity_id": "V353U071",
+      "location": "木桶街外环高架第二座转辙台主梁",
+      "physical_state": "八米全尺寸竞赛实机以攀轨模块锁住高位回收缆支点，阻止平台拖移；完成高潮阶段玩家控制，无明确损伤；临时挑战授权仍未转为长期归属"
+    }
+  ],
+  "facts_established": [
+    {
+      "evidence_in_draft": "无牌一号锁住高位支点，货柜领袖托住巨环下缘，馆守Z以地锚和左臂改变摆向，万机馆横过舰身并在纪存释放舰侧绞盘后顺势卸力；巨环最终落上承载架，由木桶街工人固定。",
+      "fact_id": "C02E01.ROTOR_RECOVERED",
+      "statement": "纪存依照兜灯的四点承力方案，组织万机馆舰体、馆守Z、火种货柜领袖和无牌一号控制失控巨环，将六米转子安全送上万机馆舰侧安装位的承载架并完成运输固定；转子尚未安装。"
+    },
+    {
+      "evidence_in_draft": "高架屏幕先展示紧急回收路径，平台远程停转并脱开公共循环管线；无人机随后依次切断三道本地固定索，使巨环以高位回收缆为支点摆向外港。",
+      "fact_id": "C02E01.PLATFORM_CUT_ROPES_WITH_VISIBLE_CAUSE",
+      "statement": "平台在物流路线被夺、原定交付失败后启动面向无人货运区的紧急回收方案，保留高位回收缆并由运输无人机割断运输架固定索，试图以失控风险迫使木桶街交还路线。"
+    },
+    {
+      "evidence_in_draft": "馆守Z迎向巨环时，兜灯在全频道叫停并抹掉单机路线；她安排万机馆横舰、货柜领袖托底、无牌一号守上端、馆守Z只改变摆向。",
+      "fact_id": "C02E01.DOUDENG_HARD_CATCH_REJECTED",
+      "statement": "兜灯明确否决缺失右臂的馆守Z单手硬接二十吨级巨环，指出硬接会拖倒机体并砸回工房，随后提出让四个单位分担支点、下缘、转向和卸力的方案。"
+    },
+    {
+      "evidence_in_draft": "正文以从高架到外港的一条可见斜线组织四个动作；缺少任一支点、承托、转向或承力墙，巨环都无法安全进入安装位。",
+      "fact_id": "C02E01.FOUR_UNIT_RECOVERY_CHAIN_EXECUTED",
+      "statement": "四个单位各完成不可替代的大动作：无牌一号固定高处回收缆，货柜领袖以作业骨架承托下缘，馆守Z以左臂和地锚推正摆向，万机馆以百米舰体和舰侧绞盘吸收冲击。"
+    },
+    {
+      "evidence_in_draft": "纪存撤回馆守Z硬接命令，把四个目标同步下达，并在四机形成承力线后抓住时机释放舰侧泊系，让万机馆顺冲击转身接环。",
+      "fact_id": "C02E01.JICUN_TEAM_COMMAND_ESTABLISHED",
+      "statement": "纪存接受兜灯的专业否决，将四台机体统一编入同一救援时机，并以释放舰侧绞盘完成最终逆转，第一次实际组织出一支协作队伍。"
+    }
+  ],
+  "fragment_id": "C02E01-F05",
+  "next_trigger": "六米转子已固定在万机馆舰侧安装位，但舰体仍无主循环；本地工房必须使用全尺寸适配座完成有限安装与低速复验，人物关系和平台从公开维修史取得的新动作也将在安装后显现。",
+  "open_threads": [
+    {
+      "note": "六米转子只完成外部回收与运输固定；全尺寸适配座安装、主循环接入、低速试转和继续校正均留待后续。",
+      "status": "open",
+      "thread_id": "ROTOR_INSTALLATION_PENDING"
+    },
+    {
+      "note": "万机馆以舰体参与承力后仍未恢复主循环，不能把本场胜利解释为完全修复。",
+      "status": "open",
+      "thread_id": "WANJI_CIRCULATION_STILL_OFFLINE"
+    },
+    {
+      "note": "平台即时提货队败退，但原资产所有权、竞价与危险紧急回收行为的后续处理未在本场结清。",
+      "status": "open",
+      "thread_id": "PLATFORM_ASSET_AND_RECOVERY_CONFLICT"
+    },
+    {
+      "note": "无牌一号仍处于公共竞技场开放的临时实机挑战中，长期运输、归属和随舰构筑席尚未决定。",
+      "status": "open",
+      "thread_id": "WUPAI_ONE_TEMPORARY_CHALLENGE"
+    }
+  ],
+  "review_sha256": "2a888e989bf9ccf666f94fcf57ae1ae143f16bd4924c44ac6ba589640b1dfe88",
+  "schema_version": 1,
+  "status": "committed",
+  "unresolved_logic_risks": []
+}

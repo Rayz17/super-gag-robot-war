@@ -1,0 +1,477 @@
+import * as THREE from './vendor/three.module.js';
+
+const query = new URLSearchParams(window.location.search);
+const asset = query.get('asset') || 'guardian_z';
+const view = query.get('view') || (asset === 'guardian_z' ? 'front' : 'planning');
+const mode = query.get('mode') || 'color';
+
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(1);
+renderer.setSize(window.innerWidth, window.innerHeight, false);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.NoToneMapping;
+renderer.setClearColor(0x000000, 0);
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+const camera = new THREE.OrthographicCamera();
+
+const gradient = new THREE.DataTexture(new Uint8Array([62, 176, 255]), 3, 1, THREE.RedFormat);
+gradient.needsUpdate = true;
+gradient.magFilter = THREE.NearestFilter;
+gradient.minFilter = THREE.NearestFilter;
+
+const C = {
+  ink: 0x06151f,
+  black: 0x101820,
+  navy0: 0x0b2238,
+  navy1: 0x174b73,
+  navy2: 0x24658d,
+  red0: 0x7f2026,
+  red1: 0xe44338,
+  silver0: 0x8e9699,
+  silver1: 0xe8ecea,
+  gold0: 0x8f651e,
+  gold1: 0xe5b33f,
+  warmWhite: 0xf3f1e8,
+  bxInk: 0x071217,
+  bxBlack: 0x11181d,
+  bxDeep: 0x19242a,
+  bxMid: 0x344147,
+  bxLight: 0x647276,
+  bxBone: 0x899092,
+  bxRed0: 0x8f1e24,
+  bxRed1: 0xf13d37,
+};
+
+const MASK = {
+  HEAD: 0xff355e,
+  CROWN: 0xffc13b,
+  CHEST: 0x2fbf71,
+  SHOULDER_L: 0x4f7cff,
+  SHOULDER_R: 0x00b7c7,
+  UPPER_ARM_L: 0xa563d8,
+  UPPER_ARM_R: 0xd56cb3,
+  FOREARM_L: 0xf47b35,
+  FOREARM_R: 0xffa633,
+  PELVIS: 0x77a83b,
+  THIGH_L: 0x85d3ff,
+  THIGH_R: 0x3fa7d6,
+  SHIN_L: 0x8f7eff,
+  SHIN_R: 0x6255d9,
+  FOOT_L: 0xbfd35c,
+  FOOT_R: 0x7fbd32,
+  BACK_SYSTEM: 0xe1e8ec,
+  BX_BODY: 0x9654c6,
+  BX_HEAD: 0xf04c4c,
+  BX_PLATE_A: 0x36a875,
+  BX_PLATE_B: 0x3b78c5,
+  BX_FORE_L: 0xe5922f,
+  BX_FORE_R: 0xf0c33b,
+  BX_REAR_L: 0x8f6bcc,
+  BX_REAR_R: 0xb95d9d,
+  BX_SEAMS: 0x65c9cf,
+  BX_EXIT: 0xd9e1e5,
+};
+
+const toonCache = new Map();
+function toon(color) {
+  if (!toonCache.has(color)) {
+    toonCache.set(color, new THREE.MeshToonMaterial({ color, gradientMap: gradient }));
+  }
+  return toonCache.get(color);
+}
+
+const inkMaterial = new THREE.MeshBasicMaterial({ color: C.ink, side: THREE.BackSide });
+const edgeMaterial = new THREE.LineBasicMaterial({ color: C.ink, transparent: true, opacity: 0.96 });
+
+function componentGroup(root, name) {
+  const group = new THREE.Group();
+  group.name = name;
+  group.userData.component = name;
+  root.add(group);
+  return group;
+}
+
+function finish(mesh, component, edgeThreshold = 26, outlineScale = 1.024) {
+  mesh.userData.primary = true;
+  mesh.userData.component = component;
+  mesh.userData.baseColor = mesh.material.color.getHex();
+  const outline = new THREE.Mesh(mesh.geometry, inkMaterial);
+  outline.userData.isOutline = true;
+  outline.scale.setScalar(outlineScale);
+  outline.renderOrder = -3;
+  mesh.add(outline);
+  const edges = new THREE.LineSegments(new THREE.EdgesGeometry(mesh.geometry, edgeThreshold), edgeMaterial);
+  edges.userData.isEdge = true;
+  edges.scale.setScalar(1.003);
+  edges.renderOrder = 4;
+  mesh.add(edges);
+  return mesh;
+}
+
+function box(parent, name, size, position, color, component, rotation = [0, 0, 0], outlineScale = 1.024) {
+  const mesh = finish(new THREE.Mesh(new THREE.BoxGeometry(...size), toon(color)), component, 22, outlineScale);
+  mesh.name = name;
+  mesh.position.set(...position);
+  mesh.rotation.set(...rotation);
+  parent.add(mesh);
+  return mesh;
+}
+
+function chamferBox(parent, name, size, position, color, component, rotation = [0, 0, 0], chamfer = 0.12) {
+  const [width, height, depth] = size;
+  const cut = Math.min(chamfer, width * 0.22, height * 0.22);
+  const shape = new THREE.Shape();
+  const points = [
+    [-width / 2 + cut, -height / 2], [width / 2 - cut, -height / 2],
+    [width / 2, -height / 2 + cut], [width / 2, height / 2 - cut],
+    [width / 2 - cut, height / 2], [-width / 2 + cut, height / 2],
+    [-width / 2, height / 2 - cut], [-width / 2, -height / 2 + cut],
+  ];
+  shape.moveTo(points[0][0], points[0][1]);
+  for (let i = 1; i < points.length; i += 1) shape.lineTo(points[i][0], points[i][1]);
+  shape.closePath();
+  const bevel = Math.min(0.07, depth * 0.1, cut * 0.45);
+  const geometry = new THREE.ExtrudeGeometry(shape, {
+    depth: Math.max(0.02, depth - bevel * 2), bevelEnabled: true,
+    bevelSegments: 1, bevelSize: bevel, bevelThickness: bevel, steps: 1,
+  });
+  geometry.translate(0, 0, -depth / 2 + bevel);
+  const mesh = finish(new THREE.Mesh(geometry, toon(color)), component, 16, 1.022);
+  mesh.name = name;
+  mesh.position.set(...position);
+  mesh.rotation.set(...rotation);
+  parent.add(mesh);
+  return mesh;
+}
+
+function cylinder(parent, name, radiusTop, radiusBottom, height, sides, position, color, component, rotation = [0, 0, 0], outlineScale = 1.024) {
+  const geometry = new THREE.CylinderGeometry(radiusTop, radiusBottom, height, sides, 1, false);
+  const mesh = finish(new THREE.Mesh(geometry, toon(color)), component, 18, outlineScale);
+  mesh.name = name;
+  mesh.position.set(...position);
+  mesh.rotation.set(...rotation);
+  parent.add(mesh);
+  return mesh;
+}
+
+function poly(parent, name, radius, detail, position, scale, color, component, rotation = [0, 0, 0]) {
+  const mesh = finish(new THREE.Mesh(new THREE.DodecahedronGeometry(radius, detail), toon(color)), component, 15, 1.035);
+  mesh.name = name;
+  mesh.position.set(...position);
+  mesh.scale.set(...scale);
+  mesh.rotation.set(...rotation);
+  parent.add(mesh);
+  return mesh;
+}
+
+function beam(parent, name, start, end, width, depth, color, component, outlineScale = 1.03) {
+  const a = new THREE.Vector3(...start);
+  const b = new THREE.Vector3(...end);
+  const direction = b.clone().sub(a);
+  const mesh = finish(new THREE.Mesh(new THREE.BoxGeometry(width, direction.length(), depth), toon(color)), component, 20, outlineScale);
+  mesh.name = name;
+  mesh.position.copy(a.clone().add(b).multiplyScalar(0.5));
+  mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), direction.clone().normalize());
+  parent.add(mesh);
+  return mesh;
+}
+
+function plateXY(parent, name, points, depth, z, color, component) {
+  const shape = new THREE.Shape();
+  shape.moveTo(points[0][0], points[0][1]);
+  for (let i = 1; i < points.length; i += 1) shape.lineTo(points[i][0], points[i][1]);
+  shape.closePath();
+  const geometry = new THREE.ExtrudeGeometry(shape, { depth, bevelEnabled: false, steps: 1 });
+  geometry.translate(0, 0, -depth / 2);
+  const mesh = finish(new THREE.Mesh(geometry, toon(color)), component, 18, 1.025);
+  mesh.name = name;
+  mesh.position.z = z;
+  parent.add(mesh);
+  return mesh;
+}
+
+function buildGuardianZ() {
+  const root = new THREE.Group();
+  root.name = 'GUARDIAN_Z_V10X_RIG_ROOT';
+
+  const groups = {};
+  for (const name of Object.keys(MASK).filter((name) => !name.startsWith('BX_'))) groups[name] = componentGroup(root, name);
+
+  for (const sign of [-1, 1]) {
+    const suffix = sign < 0 ? 'L' : 'R';
+    const x = sign * 0.78;
+    chamferBox(groups[`FOOT_${suffix}`], `foot_${suffix}`, [1.16, 0.5, 1.58], [x, 0.34, 0.2], C.navy1, `FOOT_${suffix}`, [-0.025, 0, 0], 0.15);
+    chamferBox(groups[`FOOT_${suffix}`], `toe_cap_${suffix}`, [0.38, 0.24, 0.62], [x, 0.45, 0.94], C.silver1, `FOOT_${suffix}`, [-0.025, 0, 0], 0.06);
+    chamferBox(groups[`FOOT_${suffix}`], `heel_block_${suffix}`, [0.76, 0.4, 0.46], [x, 0.39, -0.68], C.navy0, `FOOT_${suffix}`, [0, 0, 0], 0.1);
+    chamferBox(groups[`SHIN_${suffix}`], `shin_${suffix}`, [0.91, 1.58, 0.92], [x, 1.48, 0], C.navy1, `SHIN_${suffix}`, [0, 0, -0.025 * sign], 0.14);
+    plateXY(groups[`SHIN_${suffix}`], `shin_face_${suffix}`, [[-0.3, -0.58], [0.3, -0.58], [0.39, 0.5], [0, 0.72], [-0.39, 0.5]], 0.2, 0.53, C.navy2, `SHIN_${suffix}`).position.x = x;
+    box(groups[`SHIN_${suffix}`], `calf_vernier_${suffix}`, [0.32, 0.48, 0.2], [x, 1.42, -0.54], C.gold1, `SHIN_${suffix}`);
+    poly(groups[`SHIN_${suffix}`], `knee_${suffix}`, 0.54, 0, [x, 2.3, 0.2], [0.9, 0.65, 0.78], C.navy0, `SHIN_${suffix}`, [0, 0, 0.12 * sign]);
+    chamferBox(groups[`THIGH_${suffix}`], `thigh_${suffix}`, [0.76, 1.04, 0.76], [x, 3.0, 0], C.silver1, `THIGH_${suffix}`, [0, 0, -0.035 * sign], 0.11);
+    cylinder(groups.PELVIS, `hip_joint_${suffix}`, 0.3, 0.3, 0.38, 12, [sign * 0.96, 3.45, 0.12], C.gold0, 'PELVIS', [0, 0, Math.PI / 2]);
+    chamferBox(groups.PELVIS, `hip_skirt_${suffix}`, [1.02, 0.74, 0.86], [sign * 0.72, 3.66, 0.1], C.navy1, 'PELVIS', [0, 0, -0.16 * sign], 0.13);
+  }
+  box(groups.PELVIS, 'pelvis_core', [1.1, 0.74, 0.9], [0, 3.56, 0.02], C.navy0, 'PELVIS');
+  box(groups.PELVIS, 'pelvis_archive_lamp', [0.34, 0.44, 0.18], [0, 3.58, 0.58], C.gold1, 'PELVIS');
+
+  chamferBox(groups.CHEST, 'torso_core', [3.22, 2.08, 1.62], [0, 5.03, -0.05], C.navy0, 'CHEST', [0, 0, 0], 0.22);
+  poly(groups.CHEST, 'torso_upper_volume', 1.2, 0, [0, 5.48, -0.03], [1.44, 0.78, 0.78], C.navy1, 'CHEST', [0.12, 0, 0]);
+  box(groups.CHEST, 'archive_spine', [0.66, 2.45, 0.88], [0, 5.13, 0.55], C.silver1, 'CHEST');
+  plateXY(groups.CHEST, 'x_upper_left', [[-0.05, 5.28], [-0.68, 6.12], [-1.62, 6.05], [-1.32, 5.42], [-0.42, 4.98]], 0.56, 0.9, C.red1, 'CHEST');
+  plateXY(groups.CHEST, 'x_upper_right', [[0.05, 5.28], [0.68, 6.12], [1.62, 6.05], [1.32, 5.42], [0.42, 4.98]], 0.56, 0.9, C.red1, 'CHEST');
+  plateXY(groups.CHEST, 'x_lower_left', [[-0.05, 5.12], [-0.48, 5.02], [-1.32, 4.55], [-1.08, 4.08], [-0.2, 4.44]], 0.56, 0.9, C.red0, 'CHEST');
+  plateXY(groups.CHEST, 'x_lower_right', [[0.05, 5.12], [0.48, 5.02], [1.32, 4.55], [1.08, 4.08], [0.2, 4.44]], 0.56, 0.9, C.red0, 'CHEST');
+  cylinder(groups.CHEST, 'chest_core_outer', 0.36, 0.36, 0.32, 18, [0, 5.28, 1.22], C.gold1, 'CHEST', [Math.PI / 2, 0, 0]);
+  cylinder(groups.CHEST, 'chest_core_inner', 0.21, 0.21, 0.35, 18, [0, 5.28, 1.27], C.warmWhite, 'CHEST', [Math.PI / 2, 0, 0]);
+  box(groups.CHEST, 'archive_lower_lamp', [0.32, 0.5, 0.18], [0, 4.28, 1.22], C.gold1, 'CHEST');
+
+  for (const sign of [-1, 1]) {
+    const suffix = sign < 0 ? 'L' : 'R';
+    const shoulder = groups[`SHOULDER_${suffix}`];
+    const upper = groups[`UPPER_ARM_${suffix}`];
+    const fore = groups[`FOREARM_${suffix}`];
+    chamferBox(shoulder, `shoulder_top_${suffix}`, [1.18, 0.4, 1.18], [sign * 2.02, 6.08, 0], C.navy1, `SHOULDER_${suffix}`, [0, 0, -0.08 * sign], 0.12);
+    chamferBox(shoulder, `shoulder_outer_${suffix}`, [0.42, 1.38, 1.18], [sign * 2.45, 5.58, 0], C.navy1, `SHOULDER_${suffix}`, [0, 0, -0.08 * sign], 0.1);
+    chamferBox(shoulder, `shoulder_rear_${suffix}`, [0.88, 0.36, 1.18], [sign * 2.16, 5.06, -0.03], C.navy0, `SHOULDER_${suffix}`, [0, 0, -0.08 * sign], 0.1);
+    chamferBox(shoulder, `shoulder_front_lock_${suffix}`, [1.2, 0.66, 0.72], [sign * 1.76, 5.84, 0.55], C.red1, `SHOULDER_${suffix}`, [0, 0, 0.13 * sign], 0.14);
+    box(shoulder, `shoulder_gold_catch_${suffix}`, [0.26, 0.24, 0.78], [sign * 1.25, 5.88, 0.58], C.gold1, `SHOULDER_${suffix}`);
+    chamferBox(upper, `upper_arm_${suffix}`, [0.62, 0.94, 0.68], [sign * 2.08, 4.86, 0], C.navy0, `UPPER_ARM_${suffix}`, [0, 0, 0.05 * sign], 0.09);
+    cylinder(upper, `elbow_${suffix}`, 0.37, 0.37, 0.58, 12, [sign * 2.08, 4.25, 0], C.black, `UPPER_ARM_${suffix}`, [0, 0, Math.PI / 2]);
+    cylinder(fore, `forearm_${suffix}`, 0.61, 0.7, 1.66, 12, [sign * 2.08, 3.36, 0], C.navy1, `FOREARM_${suffix}`, [0, 0, 0.02 * sign]);
+    cylinder(fore, `forearm_top_ring_${suffix}`, 0.72, 0.72, 0.22, 14, [sign * 2.08, 4.12, 0], C.silver1, `FOREARM_${suffix}`);
+    cylinder(fore, `wrist_ring_${suffix}`, 0.69, 0.69, 0.2, 14, [sign * 2.08, 2.58, 0], C.silver1, `FOREARM_${suffix}`);
+    box(fore, `forearm_red_key_${suffix}`, [0.22, 0.78, 0.66], [sign * 2.64, 3.32, 0.02], C.red1, `FOREARM_${suffix}`);
+    poly(fore, `fist_${suffix}`, 0.46, 0, [sign * 2.08, 2.13, 0.03], [0.72, 0.72, 0.78], C.black, `FOREARM_${suffix}`);
+  }
+
+  box(groups.HEAD, 'neck', [0.78, 0.38, 0.68], [0, 6.34, 0], C.black, 'HEAD');
+  cylinder(groups.HEAD, 'helmet_volume', 0.8, 0.94, 1.5, 10, [0, 7.06, -0.06], C.navy1, 'HEAD');
+  poly(groups.HEAD, 'helmet_brow_volume', 0.78, 0, [0, 7.18, 0.28], [1.22, 0.62, 0.88], C.navy2, 'HEAD', [0.04, 0, 0]);
+  chamferBox(groups.HEAD, 'helmet_cheek_left', [0.42, 0.92, 1.14], [-0.74, 6.9, 0.04], C.navy0, 'HEAD', [0, -0.08, -0.1], 0.09);
+  chamferBox(groups.HEAD, 'helmet_cheek_right', [0.42, 0.92, 1.14], [0.74, 6.9, 0.04], C.navy0, 'HEAD', [0, 0.08, 0.1], 0.09);
+  plateXY(groups.HEAD, 'silver_face', [[-0.5, 6.98], [-0.42, 6.42], [0, 6.25], [0.42, 6.42], [0.5, 6.98]], 0.3, 0.86, C.silver1, 'HEAD');
+  for (const x of [-0.34, -0.17, 0, 0.17, 0.34]) box(groups.HEAD, `grille_${x}`, [0.07, 0.43, 0.1], [x, 6.63, 0.98], C.black, 'HEAD', [0.03, 0, 0], 1.05);
+  box(groups.HEAD, 'eye_left', [0.34, 0.11, 0.1], [-0.3, 7.12, 0.86], C.gold1, 'HEAD', [0, 0, -0.08], 1.05);
+  box(groups.HEAD, 'eye_right', [0.34, 0.11, 0.1], [0.3, 7.12, 0.86], C.gold1, 'HEAD', [0, 0, 0.08], 1.05);
+  cylinder(groups.HEAD, 'ear_left', 0.35, 0.35, 0.3, 14, [-0.92, 6.98, 0], C.black, 'HEAD', [0, 0, Math.PI / 2]);
+  cylinder(groups.HEAD, 'ear_right', 0.35, 0.35, 0.3, 14, [0.92, 6.98, 0], C.black, 'HEAD', [0, 0, Math.PI / 2]);
+  poly(groups.HEAD, 'rear_helmet_lower', 0.72, 0, [0, 6.84, -0.72], [1.04, 0.62, 0.62], C.navy0, 'HEAD', [0.06, 0, 0]);
+  poly(groups.HEAD, 'rear_helmet_crown', 0.74, 0, [0, 7.38, -0.64], [0.78, 0.94, 0.7], C.navy1, 'HEAD', [-0.12, 0, 0]);
+  poly(groups.HEAD, 'rear_flare_left', 0.54, 0, [-0.66, 6.92, -0.62], [0.72, 0.72, 0.76], C.navy1, 'HEAD', [0.08, 0.08, -0.22]);
+  poly(groups.HEAD, 'rear_flare_right', 0.54, 0, [0.66, 6.92, -0.62], [0.72, 0.72, 0.76], C.navy1, 'HEAD', [0.08, -0.08, 0.22]);
+
+  box(groups.CROWN, 'central_red_crest', [0.36, 1.46, 0.4], [0, 7.66, 0.46], C.red1, 'CROWN', [0.02, 0, 0]);
+  box(groups.CROWN, 'rear_red_crest', [0.32, 1.18, 0.3], [0, 7.56, -0.54], C.red0, 'CROWN', [-0.05, 0, 0]);
+  box(groups.CROWN, 'blue_brow', [0.48, 0.34, 0.42], [0, 7.18, 0.72], C.navy0, 'CROWN');
+  beam(groups.CROWN, 'gold_horn_left', [-0.12, 7.32, 0.69], [-1.34, 7.58, 0.6], 0.2, 0.22, C.gold1, 'CROWN', 1.035);
+  beam(groups.CROWN, 'gold_horn_right', [0.12, 7.32, 0.69], [1.34, 7.58, 0.6], 0.2, 0.22, C.gold1, 'CROWN', 1.035);
+  beam(groups.CROWN, 'aux_antenna_left', [-0.5, 7.52, 0.15], [-0.72, 8.05, -0.02], 0.13, 0.14, C.gold1, 'CROWN', 1.04);
+  beam(groups.CROWN, 'aux_antenna_right', [0.5, 7.52, 0.15], [0.72, 8.05, -0.02], 0.13, 0.14, C.gold1, 'CROWN', 1.04);
+
+  box(groups.BACK_SYSTEM, 'rear_spine', [0.78, 1.78, 0.68], [0, 5.42, -1.02], C.navy0, 'BACK_SYSTEM');
+  poly(groups.BACK_SYSTEM, 'scapula_left', 0.86, 0, [-0.94, 5.5, -0.92], [1.1, 0.86, 0.66], C.navy1, 'BACK_SYSTEM', [0.06, 0.04, -0.18]);
+  poly(groups.BACK_SYSTEM, 'scapula_right', 0.86, 0, [0.94, 5.5, -0.92], [1.1, 0.86, 0.66], C.navy1, 'BACK_SYSTEM', [0.06, -0.04, 0.18]);
+  cylinder(groups.BACK_SYSTEM, 'modular_mount_outer', 0.45, 0.45, 0.3, 16, [0, 5.55, -1.4], C.black, 'BACK_SYSTEM', [Math.PI / 2, 0, 0]);
+  cylinder(groups.BACK_SYSTEM, 'modular_mount_inner', 0.27, 0.27, 0.33, 16, [0, 5.55, -1.45], C.gold1, 'BACK_SYSTEM', [Math.PI / 2, 0, 0]);
+  cylinder(groups.BACK_SYSTEM, 'integral_vernier_left', 0.24, 0.18, 0.28, 10, [-1.0, 4.83, -1.34], C.gold1, 'BACK_SYSTEM', [Math.PI / 2, 0, 0]);
+  cylinder(groups.BACK_SYSTEM, 'integral_vernier_right', 0.24, 0.18, 0.28, 10, [1.0, 4.83, -1.34], C.gold1, 'BACK_SYSTEM', [Math.PI / 2, 0, 0]);
+  poly(groups.BACK_SYSTEM, 'lumbar_stack', 0.58, 0, [0, 4.2, -0.9], [0.9, 0.68, 0.64], C.black, 'BACK_SYSTEM');
+  poly(groups.BACK_SYSTEM, 'rear_skirt_left', 0.62, 0, [-0.58, 3.72, -0.82], [0.88, 0.72, 0.58], C.navy1, 'BACK_SYSTEM', [0.03, 0.04, -0.12]);
+  poly(groups.BACK_SYSTEM, 'rear_skirt_right', 0.62, 0, [0.58, 3.72, -0.82], [0.88, 0.72, 0.58], C.navy1, 'BACK_SYSTEM', [0.03, -0.04, 0.12]);
+
+  root.userData = {
+    stable_id: 'CAND_C01E02_A91A3_GUARDIAN_Z_V10X_RIGBOUND_MASTER_V1',
+    identity: 'V10X E02 naked body; 4.3-head SD; paired intact forearms; no wing/backpack',
+    metrics: { total_height: 8.26, head_height: 1.91, shoulder_width: 5.12, chest_width: 3.22, forearm_length: 1.66, thigh_length: 1.04, shin_length: 1.58 },
+    keypoints: {
+      crown_tip: [0, 8.08, 0], head_center: [0, 7.05, 0], neck: [0, 6.34, 0],
+      shoulder_l: [-2.08, 5.8, 0], shoulder_r: [2.08, 5.8, 0], chest_core: [0, 5.28, 0.9],
+      elbow_l: [-2.08, 4.25, 0], elbow_r: [2.08, 4.25, 0], wrist_l: [-2.08, 2.58, 0], wrist_r: [2.08, 2.58, 0],
+      hip_l: [-0.78, 3.45, 0], hip_r: [0.78, 3.45, 0], knee_l: [-0.78, 2.3, 0.2], knee_r: [0.78, 2.3, 0.2],
+      foot_l: [-0.78, 0.1, 0.3], foot_r: [0.78, 0.1, 0.3], rear_mount: [0, 5.55, -1.1],
+    },
+  };
+  return root;
+}
+
+function buildBreaker(pose) {
+  const root = new THREE.Group();
+  root.name = 'BREAKER_BX_RIG_ROOT';
+  const body = componentGroup(root, 'BX_BODY');
+  const head = componentGroup(root, 'BX_HEAD');
+  const plateA = componentGroup(root, 'BX_PLATE_A');
+  const plateB = componentGroup(root, 'BX_PLATE_B');
+  const seams = componentGroup(root, 'BX_SEAMS');
+  const exit = componentGroup(root, 'BX_EXIT');
+  const foreL = componentGroup(root, 'BX_FORE_L');
+  const foreR = componentGroup(root, 'BX_FORE_R');
+  const rearL = componentGroup(root, 'BX_REAR_L');
+  const rearR = componentGroup(root, 'BX_REAR_R');
+
+  // The shell is held high by two explicit semi-upright forelimbs. It is not a ground vehicle.
+  poly(body, 'raised_shell_core', 1.86, 0, [0, 4.38, -0.05], [1.68, 0.82, 1.46], C.bxDeep, 'BX_BODY', [0.1, 0, 0]);
+  poly(body, 'sealed_keel', 1.5, 0, [0, 3.62, -0.05], [1.18, 0.7, 1.62], C.bxBlack, 'BX_BODY', [0.05, 0, 0]);
+  chamferBox(body, 'forward_breach_mass', [2.6, 1.16, 1.5], [0, 3.58, 2.05], C.bxMid, 'BX_BODY', [-0.16, 0, 0], 0.18);
+  chamferBox(body, 'closed_chest_left', [1.25, 1.08, 0.74], [-0.66, 3.02, 2.12], C.bxMid, 'BX_BODY', [-0.14, 0.05, 0.05], 0.14);
+  chamferBox(body, 'closed_chest_right', [1.25, 1.08, 0.74], [0.66, 3.02, 2.12], C.bxLight, 'BX_BODY', [-0.14, -0.05, -0.05], 0.14);
+  box(seams, 'closed_chest_seam', [0.11, 0.96, 0.12], [0, 3.02, 2.54], C.bxInk, 'BX_SEAMS', [-0.14, 0, 0], 1.05);
+
+  // Asymmetric overlapping X armor: large readable masses, not industrial symmetry or animal scutes.
+  poly(plateA, 'dorsal_plate_a1', 1.3, 0, [-0.22, 5.28, 1.1], [1.72, 0.34, 0.82], C.bxMid, 'BX_PLATE_A', [-0.16, 0.06, -0.07]);
+  poly(plateA, 'dorsal_plate_a2', 1.28, 0, [0.56, 5.5, -0.12], [1.52, 0.38, 0.88], C.bxLight, 'BX_PLATE_A', [0.04, -0.1, 0.1]);
+  poly(plateA, 'left_overplate', 1.04, 0, [-1.48, 4.9, -0.34], [0.74, 0.42, 1.22], C.bxMid, 'BX_PLATE_A', [0.04, 0.16, -0.18]);
+  poly(plateB, 'dorsal_plate_b1', 1.26, 0, [-0.42, 5.22, -1.58], [1.62, 0.36, 0.9], C.bxDeep, 'BX_PLATE_B', [0.18, 0.1, -0.04]);
+  poly(plateB, 'right_overplate', 1.04, 0, [1.54, 4.8, -0.62], [0.7, 0.4, 1.28], C.bxLight, 'BX_PLATE_B', [-0.05, -0.2, 0.15]);
+  poly(plateB, 'rear_counterplate', 1.0, 0, [0.32, 5.04, -2.16], [1.42, 0.36, 0.7], C.bxMid, 'BX_PLATE_B', [0.24, -0.04, 0.08]);
+  beam(seams, 'flex_seam_left', [-1.5, 4.72, 1.55], [-1.7, 4.45, -1.72], 0.16, 0.14, C.bxBone, 'BX_SEAMS', 1.05);
+  beam(seams, 'flex_seam_right', [1.62, 4.6, 1.22], [1.38, 4.3, -1.96], 0.15, 0.13, C.bxRed0, 'BX_SEAMS', 1.05);
+  beam(seams, 'alien_load_spine', [0.2, 5.58, 1.5], [-0.3, 5.52, -2.1], 0.2, 0.16, C.bxBone, 'BX_SEAMS', 1.05);
+
+  poly(head, 'integrated_sensor_wedge', 0.96, 0, [0, 3.74, 2.72], [1.25, 0.42, 0.66], C.bxDeep, 'BX_HEAD', [-0.18, 0, 0]);
+  plateXY(head, 'single_red_slit', [[-0.5, 3.82], [0.5, 3.82], [0.34, 3.96], [-0.42, 3.96]], 0.1, 3.31, C.bxRed1, 'BX_HEAD');
+  beam(seams, 'dorsal_red_flexure_a', [-1.22, 5.56, 1.32], [-0.08, 5.7, 0.28], 0.12, 0.1, C.bxRed1, 'BX_SEAMS', 1.05);
+  beam(seams, 'dorsal_red_flexure_b', [0.36, 5.68, -0.2], [1.28, 5.38, -1.18], 0.11, 0.1, C.bxRed0, 'BX_SEAMS', 1.05);
+  poly(seams, 'left_flex_membrane', 0.74, 0, [-1.78, 3.94, 0.28], [0.38, 0.74, 1.0], C.bxRed0, 'BX_SEAMS', [0.18, 0.08, -0.2]);
+  poly(seams, 'right_flex_membrane', 0.7, 0, [1.7, 3.82, 0.02], [0.34, 0.7, 0.94], C.bxDeep, 'BX_SEAMS', [0.14, -0.1, 0.18]);
+
+  function frontLimb(group, sign, suffix, contactBias) {
+    const x = sign * 2.25;
+    poly(group, `alien_load_joint_${suffix}`, 0.68, 0, [sign * 1.8, 4.02, 1.16], [0.9, 0.78, 0.82], C.bxBone, `BX_FORE_${suffix}`, [0.25, 0.16 * sign, 0.2 * sign]);
+    beam(group, `forelimb_upper_${suffix}`, [sign * 1.82, 3.9, 1.25], [x, 2.2, 1.98 + contactBias], 0.86, 0.8, C.bxMid, `BX_FORE_${suffix}`);
+    chamferBox(group, `forelimb_overlap_plate_${suffix}`, [0.86, 1.34, 0.78], [sign * 2.08, 2.92, 1.58 + contactBias * 0.5], sign < 0 ? C.bxLight : C.bxDeep, `BX_FORE_${suffix}`, [0.2, 0.06 * sign, 0.14 * sign], 0.14);
+    poly(group, `nonstandard_hinge_${suffix}`, 0.58, 0, [x, 2.05, 2.04 + contactBias], [1.0, 0.68, 0.78], C.bxBone, `BX_FORE_${suffix}`, [0.28, -0.1 * sign, 0.22]);
+    beam(group, `forelimb_lower_${suffix}`, [x, 1.98, 2.06 + contactBias], [sign * 2.42, 0.5, 2.75 + contactBias * 1.8], 0.72, 0.7, C.bxDeep, `BX_FORE_${suffix}`);
+    box(group, `load_pad_${suffix}`, [0.78, 0.34, 1.22], [sign * 2.44, 0.25, 2.96 + contactBias * 1.8], C.bxMid, `BX_FORE_${suffix}`, [-0.08, 0.06 * sign, 0.02 * sign]);
+    box(group, `load_pad_red_key_${suffix}`, [0.14, 0.1, 0.62], [sign * 2.44, 0.45, 3.02 + contactBias * 1.8], C.bxRed1, `BX_FORE_${suffix}`, [-0.08, 0, 0], 1.05);
+  }
+  const contactBias = pose === 'contact' ? 0.28 : 0;
+  frontLimb(foreL, -1, 'L', contactBias);
+  frontLimb(foreR, 1, 'R', contactBias);
+
+  function rearStabilizer(group, sign, suffix) {
+    // One-piece siege buttress: deliberately shorter and less articulated than the bearing forelimbs.
+    poly(group, `rear_buttress_root_${suffix}`, 0.48, 0, [sign * 1.28, 1.72, -1.66], [0.9, 0.62, 0.72], C.bxBone, `BX_REAR_${suffix}`, [0.18, 0.1 * sign, 0.12]);
+    beam(group, `rear_buttress_${suffix}`, [sign * 1.3, 1.64, -1.68], [sign * 1.52, 0.48, -1.96], 0.66, 0.7, C.bxDeep, `BX_REAR_${suffix}`);
+    box(group, `rear_anchor_pad_${suffix}`, [0.86, 0.36, 0.78], [sign * 1.54, 0.24, -2.08], sign < 0 ? C.bxMid : C.bxLight, `BX_REAR_${suffix}`, [0.04, 0, -0.05 * sign]);
+  }
+  rearStabilizer(rearL, -1, 'L');
+  rearStabilizer(rearR, 1, 'R');
+
+  cylinder(exit, 'sealed_upper_back_exit', 0.5, 0.5, 0.24, 9, [0, 4.18, -2.67], C.bxDeep, 'BX_EXIT', [Math.PI / 2, 0, 0]);
+  cylinder(exit, 'sealed_exit_cap', 0.3, 0.3, 0.27, 9, [0, 4.18, -2.8], C.bxInk, 'BX_EXIT', [Math.PI / 2, 0, 0]);
+
+  if (pose === 'contact') {
+    for (const group of [body, head, plateA, plateB, seams, exit]) {
+      group.rotation.x = -0.12;
+      group.position.y = 0.08;
+      group.position.z = 0.18;
+    }
+    foreL.rotation.z = -0.04;
+    foreR.rotation.z = 0.04;
+  }
+
+  root.userData = {
+    stable_id: 'CAND_C01E02_A91A3_BREAKER_BX_RIGBOUND_MASTER_V1',
+    identity: 'B forelimb-bearing semi-upright ground shell + X alien bio-armor; E02 sealed state',
+    pose,
+    metrics: { total_height: 6.05, shell_clearance: 3.0, shell_width: 4.72, forelimb_length: 3.92, rear_stabilizer_length: 1.52 },
+    keypoints: {
+      dorsal_peak: [0, 5.9, 0], red_slit: [0, 3.9, 3.35], chest_seam: [0, 3.02, 2.55],
+      fore_shoulder_l: [-1.8, 4.02, 1.16], fore_shoulder_r: [1.8, 4.02, 1.16],
+      fore_hinge_l: [-2.25, 2.05, 2.04 + contactBias], fore_hinge_r: [2.25, 2.05, 2.04 + contactBias],
+      fore_contact_l: [-2.44, 0.08, 2.96 + contactBias * 1.8], fore_contact_r: [2.44, 0.08, 2.96 + contactBias * 1.8],
+      rear_contact_l: [-1.54, 0.08, -2.08], rear_contact_r: [1.54, 0.08, -2.08], sealed_exit: [0, 4.18, -2.8],
+    },
+  };
+  return root;
+}
+
+function applyRenderMode(root) {
+  const componentColors = {};
+  for (const [name, color] of Object.entries(MASK)) componentColors[name] = `#${color.toString(16).padStart(6, '0')}`;
+  root.traverse((object) => {
+    if (object.userData.isEdge) {
+      object.visible = mode === 'color';
+      return;
+    }
+    if (object.userData.isOutline) {
+      object.visible = mode !== 'components';
+      if (mode === 'silhouette') object.material = new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.BackSide });
+      return;
+    }
+    if (!object.userData.primary) return;
+    if (mode === 'silhouette') object.material = new THREE.MeshBasicMaterial({ color: 0xffffff });
+    if (mode === 'components') object.material = new THREE.MeshBasicMaterial({ color: MASK[object.userData.component] || 0xffffff });
+  });
+  return componentColors;
+}
+
+function configureCamera(model) {
+  const isGz = asset === 'guardian_z';
+  const aspect = window.innerWidth / window.innerHeight;
+  const height = isGz ? 9.75 : 9.5;
+  camera.left = (-height * aspect) / 2;
+  camera.right = (height * aspect) / 2;
+  camera.top = height / 2;
+  camera.bottom = -height / 2;
+  camera.near = 0.1;
+  camera.far = 100;
+  const targetY = isGz ? 4.0 : 2.9;
+  if (isGz) {
+    if (view === 'front') camera.position.set(0, targetY, 18);
+    else if (view === 'back') camera.position.set(0, targetY, -18);
+    else if (view === 'left') camera.position.set(-18, targetY, 0);
+    else camera.position.set(18, targetY, 0);
+  } else {
+    camera.position.set(view === 'contact' ? 10.5 : 9.2, 7.1, view === 'contact' ? 14.2 : 15.5);
+  }
+  camera.lookAt(0, targetY, 0);
+  camera.updateProjectionMatrix();
+  model.updateMatrixWorld(true);
+}
+
+function projectedKeypoints(model) {
+  const result = {};
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  for (const [name, coords] of Object.entries(model.userData.keypoints)) {
+    const point = new THREE.Vector3(...coords).applyMatrix4(model.matrixWorld).project(camera);
+    result[name] = {
+      x: Number((((point.x + 1) / 2) * width).toFixed(3)),
+      y: Number((((1 - point.y) / 2) * height).toFixed(3)),
+      ndc_z: Number(point.z.toFixed(5)),
+    };
+  }
+  return result;
+}
+
+scene.add(new THREE.AmbientLight(0xffffff, mode === 'color' ? 0.66 : 1));
+const key = new THREE.DirectionalLight(0xfff6df, mode === 'color' ? 2.6 : 0);
+key.position.set(-7, 12, 10);
+scene.add(key);
+const rim = new THREE.DirectionalLight(0x8ac5d7, mode === 'color' ? 0.32 : 0);
+rim.position.set(8, 6, -10);
+scene.add(rim);
+
+const model = asset === 'guardian_z' ? buildGuardianZ() : buildBreaker(view === 'contact' ? 'contact' : 'planning');
+scene.add(model);
+const componentColors = applyRenderMode(model);
+configureCamera(model);
+renderer.render(scene, camera);
+
+const payload = {
+  asset,
+  view,
+  mode,
+  stable_id: model.userData.stable_id,
+  identity: model.userData.identity,
+  metrics: model.userData.metrics,
+  keypoints: projectedKeypoints(model),
+  component_colors: componentColors,
+  viewport: { width: window.innerWidth, height: window.innerHeight },
+};
+window.__A91A3_EXPORT__ = payload;
+window.__RENDER_READY__ = true;
+document.getElementById('export').textContent = JSON.stringify(payload);

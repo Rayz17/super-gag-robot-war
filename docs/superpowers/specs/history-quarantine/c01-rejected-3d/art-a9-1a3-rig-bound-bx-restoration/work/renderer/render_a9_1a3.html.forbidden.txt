@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>C01E02 A9.1-A3 rig-bound master renderer</title>
+  <style>
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: transparent; }
+    canvas { display: block; width: 100%; height: 100%; background: transparent; }
+    #export { display: none; }
+  </style>
+</head>
+<body>
+  <pre id="export"></pre>
+  <script type="module" src="./render_a9_1a3.js?v=5"></script>
+</body>
+</html>

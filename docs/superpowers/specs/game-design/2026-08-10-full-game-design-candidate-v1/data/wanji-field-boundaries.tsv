@@ -1,0 +1,31 @@
+field_id	domain	boundary_class	authority_basis	current_value_or_rule	downstream_must	downstream_may	change_gate	consumers	status
+WFB-01	identity	LOCKED_CURRENT_OR_ACCEPTED	LOC_WANJI_MUSEUM+Accepted C01	万机馆是主角共同体/机器人文化博物馆;C01E04后同体成为流亡展舰	保留家/馆/移动身体三重身份	选择具体视觉比例侧重	Canon migration+user decision	all	active_lock
+WFB-02	floor_stack	LOCKED_CURRENT_OR_ACCEPTED	wanji_floors.tsv	EXT/L1/L2/L3/B1/B2六层ID与职责锚点	引用稳定层ID/保持B2封闭时序	在层内提Candidate节点	Canon impact if floor responsibility changes	story;level;art	active_lock
+WFB-03	current_nodes	LOCKED_CURRENT_OR_ACCEPTED	wanji_locations.tsv	30个Current地点ID/父层/邻接/开放态	不得重命名或让Candidate覆盖	建立非Canon补充邻接	Canon migration	story;gameflow;level	active_lock
+WFB-04	L1_scale	LOCKED_CURRENT_OR_ACCEPTED	wanji_floors/locations	前厅约18x14m;主厅约70x45m净高约24m	视觉/灰盒保留比例锚	微调非因果内部展柜	Engineering conflict then user migration	level;art;camera	active_lock
+WFB-05	guardian_scale_state	LOCKED_CURRENT_OR_ACCEPTED	Accepted C01	馆守Z 18m;右前臂旧伤;Accepted E02起身	持续显示缺臂/主厅尺度	展位灯/护栏/维修细节	Canon/story migration	story;mecha;art	active_lock
+WFB-06	body_continuity	LOCKED_CURRENT_OR_ACCEPTED	Accepted C01	固定馆与低矮巡展舰为同一身体;主厅/穹顶/展廊/舰骨共同离地	固定/离地/巡航同体连续	设计断离机构/轮廓	User story migration	story;previs;asset	active_lock
+WFB-07	public_navigation	LOCKED_CURRENT_OR_ACCEPTED	Accepted C01	前厅原为公共航行台;路线杆提交航向	保留前厅实体操作/揭示	增设Candidate核验席但不替代	Story migration	gameflow;UI;level	active_lock
+WFB-08	autonav	LOCKED_CURRENT_OR_ACCEPTED	Accepted C01	纪存选航向;自动系统执行推进/转向/配平	不冒充自由移动棋子	设计有限承诺/监视操作	Gameplay approval cannot contradict story	gameplay;UI	active_lock
+WFB-09	berth_capacity	LOCKED_CURRENT_OR_ACCEPTED	wanji_carrier_berths.tsv	非无限机库;2-12m中泊;15-25m重架;15-30m外泊;战舰级外部会合	遵守尺度/权利/会合边界	在范围内定实际位数	Canon migration if range changes	roster;level;asset	active_lock
+WFB-10	B2_reveal	LOCKED_CURRENT_OR_ACCEPTED	Current locations+Accepted C01	C01只到0号门;B2具体人格/机体/开启方式未知	保持封闭与问题	设计普通物理痕迹	Corresponding chapter L4+Canon+user acceptance	story;level;archive	active_lock
+WFB-11	C02_rotor_chain	LOCKED_CURRENT_OR_ACCEPTED	Accepted C02	约九米新旧转子/龙门吊→泊位吊机→B1升降台→主循环;旧件保留	先工程验证;不静默改数字	若不可行提交对比迁移方案	Engineering proof+user story migration	story;level;asset	active_lock_engineering_debt
+WFB-12	C03_habitation_facts	LOCKED_CURRENT_OR_ACCEPTED	Accepted C03	白鸢与七海房间相邻;洗衣舱在指示相对位置;住舱/仓门存在	任何总平满足可见相对关系	选择楼层/房数/装饰	User story migration if relation impossible	story;Hub;level	active_lock
+WFB-13	C1_return	LOCKED_CURRENT_OR_ACCEPTED	Accepted C03	公共泊位C-1/四停靠臂/岸电/旧中继/可回返	世界图与回访保留真实节点	设计费用/服务/Hub动作	Story migration	worldmap;Hub	active_lock
+WFB-14	persistent_damage	LOCKED_CURRENT_OR_ACCEPTED	Accepted C01-C03	右侧沉降/前甲板凹痕/转子债/两舷刮卷等不能章切刷新	建立前后状态资产/账本	选择视觉严重度但不消失	Story repair event+state receipt	story;art;gameplay	active_lock
+WFB-15	hull_envelope	CANDIDATE_OPEN	No Current exact dimensions	v0.2低模暂用142x56m;仅作相对布置	标注Candidate/不用于正式资产	比较130-160m内多方案	User visual+engineering receipt	level;art;physics	open_not_approved
+WFB-16	floor_coordinates	CANDIDATE_OPEN	No integrated plan	所有层实际坐标/层高/竖井尚未封样	引用v0.2拓扑而非宣称尺寸	移动房间/竖交通	GD2 engineering+visual approval	level;art	open_not_approved
+WFB-17	fixed_annex_separation	CANDIDATE_OPEN	Accepted C01 only says some annexes remain	玻璃门厅/市政附属留址;精确断离线OPEN	Previs保持同体因果	比较外壳/附属方案	User visual+story impact review	previs;asset	open_not_approved
+WFB-18	habitation_placement	CANDIDATE_OPEN	Accepted C03 relative facts only	v0.2把生活内廊放L3后段	保持相邻房/洗衣提示	可迁到其他层若关系成立	User spatial review	Hub;level;story	open_not_approved
+WFB-19	crew_capacity	CANDIDATE_OPEN	No accepted capacity	v0.2候选20-28常住;未做生命支持/床位测试	不得写进Reader/预算	比较更小/更大方案	Engineering+production+user scope	production;Hub	open_not_approved
+WFB-20	nav_C2_location	CANDIDATE_OPEN	C01 front hall+C03 bridge/observer facts	v0.2增设L3核验/观察席但不替代前厅	保持前厅公共航行台	可独立/相邻/分散	Gameplay prototype+user direction	C2;UI;level	open_not_approved
+WFB-21	main_loop_topology	CANDIDATE_OPEN	Accepted system function only	B1主循环候选节点与检修窗位置OPEN	满足约九米链或提交迁移	比较纵/横轴舱	Engineering fit test	level;asset	open_not_approved
+WFB-22	damage_power_topology	CANDIDATE_OPEN	C01 function boundary only	电力优先/封舱/消防/损管岗位均为Candidate	不得由表宣称真实回路	迭代回路/岗位/反馈	Damage graybox+engineering+user review	systems;level	open_not_approved
+WFB-23	flow_clearances	CANDIDATE_OPEN	No exact door/turning data	人/机/货七类以上路线只有拓扑	先灰盒验证冲突	调整门宽/时窗/旁路	Route graybox+accessibility test	level;UX	open_not_approved
+WFB-24	berth_counts	CANDIDATE_OPEN	Current range only	中泊4-6为表锚;其它实际位数/并修量OPEN	不得扩成无限容量	用排程控制队伍规模	Roster scope+graybox+user scope	roster;production	open_not_approved
+WFB-25	material_language	CANDIDATE_OPEN	No visual receipt	旧会展/工业舰骨/生活改造的材质比例OPEN	不得称正式美术	比较材质/时代层	User visual receipt	art	open_not_approved
+WFB-26	lighting_sound	CANDIDATE_OPEN	Art anchors only	公共暖密/B1工业/B2低频为方向词	保留可读功能差异	灯色/声景/天气	User visual/audio direction	art;audio	open_not_approved
+WFB-27	props_signage	CANDIDATE_OPEN	Current anchors+free detail	普通道具/门牌/海报/维修痕可自由设计	不得新增因果装置/Canon名词	丰富生活与文化	Chapter art brief review	story;art	open_downstream_free
+WFB-28	camera_fast_travel	CANDIDATE_OPEN	No prototype	Hub镜头/短走动/终端快移OPEN	每次只激活2-3区候选需真人验证	调镜头/路径/触发	Hub prototype+accessibility test	gameflow;camera	open_not_approved
+WFB-29	formal_exterior	CANDIDATE_OPEN	No user visual receipt	“飞的旧博物馆”与“背馆军舰”等轮廓未裁决	v0.2不得被资产引用为正式外观	提交对比图	User explicit visual decision	art;marketing;asset	open_not_approved
+WFB-30	future_forms	CANDIDATE_OPEN	Working chapter windows only	C05多格/C14分舰/C22开放组合均是预测	不得回流当前Reader或Canon	按逐章L4重建	Chapter L4+prototype+user acceptance	story;systems;asset	open_blocked

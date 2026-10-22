@@ -1,0 +1,15 @@
+node_type	purpose	examples	default_lifespan	max_per_micro_event	max_per_activity	max_per_normal_chapter	canon_requirement	owner_table	implementation_note
+clue	让玩家理解当下目标或谜团	留言墙刮痕;右臂烧焦线;封存编号	chapter	1	3	6	若引入新谜团术语则进canon	章节内容图	线索必须有payoff_target
+evidence	用于谈判、说得、合规或揭露隐藏目标	七海清单片段;旧影像时间戳	chapter	0	2	3	涉及阵营/角色登场需查canon	章节内容图;canon_integration_rules.tsv	证据必须可消费或结算
+carry_item	探索或经营带回的可用物	维修件;旧纸条;模型关节	chapter	1	3	5	长期携带或命名物需进canon	章节内容图	一次性物品不跨章
+exhibit_state	展品状态变化	留言墙完整度;模型病院开放;展岛受损	chapter	1	3	4	核心地点/展品需进canon	章节内容图;canon scenes	影响开馆或战斗目标
+repair_task	修复、校准或维护动作	右臂线路;旧录像修复;现实机器重心	local	1	2	3	若修复对象是机体/地点需查canon	hybrid_activity_catalog.tsv	修复结果进入HybridActivityResult
+npc_request	访客、队友或阵营提出的短需求	孩子留言;清算白名单要求;老粉丝委托	chapter	0	2	3	新说话角色必须进canon	canon entities;章节内容图	不能只做任务牌，必须绑定角色/目标
+visitor_event	开馆经营中的小事件	媒体采访;清算观察员;孩子提问	local	0	3	4	普通访客不进canon，命名角色进canon	开馆活动数据	最多产出1个变量或资源变化
+battle_modifier	进入SRPG的战斗修正	留言墙耐久+20%;敌方延迟1回合;非致命窗口	local	1	2	4	若改变canon登场顺序必须更新scenes/runtime_rules	HybridActivityResult;mission_balance_targets.tsv	只能改起手条件，不能跳过主冲突
+resource_delta	资源变化	维修件+3;资金+100;资料完整度+1	local	1	3	5	不进canon	HybridActivityResult	资源key必须来自资源白名单
+variable_delta	变量变化	万机馆家感+1;清算压力+1;黑展柜共鸣+1	chapter_or_long_arc	1	2	4	长期变量需有canon或graph节点	HybridActivityResult;design_graph	长期变量每章最多轻触2个
+unlock_flag	解锁小功能、台词或目标	qihai_console_unlocked;right_arm_support	local	1	2	4	影响场景顺序时更新canon scenes	HybridActivityResult;EpisodeFlow	不能作为隐藏大网入口
+soft_fail	失败但不中断主线的后果	展岛受损;清算压力上升;少一条证词	chapter	1	2	4	若影响正式场景顺序需更新canon	hybrid_result_contract.tsv	失败反馈要具体可见
+long_arc_touch	长期弧线轻触	黑展柜;远星理解;路线债	long_arc	0	1	2	必须有canon concept/entity或graph variable	canon;design_graph	不能用“以后可能有用”登记
+canon_entity_ref	对正典实体的引用	CH_QIHAI;MECHA_GUARDIAN_Z;CONCEPT_HYBRID_PLAY_EXPERIENCE	varies	1	3	8	必须已经存在于canon entities	canon entities	新增实体前先补canon

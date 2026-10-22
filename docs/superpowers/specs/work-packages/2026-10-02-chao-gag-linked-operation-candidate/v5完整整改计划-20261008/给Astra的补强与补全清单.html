@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>给 Astra 的补强与补全清单（对 v5 整改计划第二轮）</title>
+<style>
+:root{
+  --ink:#1c2b33;
+  --muted:#5c6f78;
+  --paper:#f3f1ea;
+  --panel:#fffcf6;
+  --line:#d5ddd8;
+  --teal:#0f5c62;
+  --teal-soft:#e5f1ee;
+  --amber:#8a4e12;
+  --amber-soft:#f6ead6;
+  --bad:#8d2f2f;
+  --bad-soft:#f8e6e2;
+  --ok:#1d6b45;
+  --ok-soft:#e5f3ea;
+  --mid:#6a4a12;
+  --mid-soft:#f7f0dc;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei",sans-serif;
+  font-size:17px;
+  line-height:1.75;
+}
+a{color:var(--teal)}
+.shell{display:grid;grid-template-columns:280px minmax(0,1fr);min-height:100vh}
+.side{
+  position:sticky;top:0;height:100vh;overflow:auto;
+  background:#e7eeea;border-right:1px solid #c5d5cf;padding:28px 18px 40px;
+}
+.brand{font-size:13px;letter-spacing:.14em;color:var(--teal);font-weight:700}
+.sub{margin:8px 0 22px;color:var(--muted);font-size:13px;line-height:1.55}
+.side nav a{
+  display:block;text-decoration:none;color:var(--ink);
+  padding:8px 10px;border-radius:8px;margin:2px 0;font-size:14.5px;
+}
+.side nav a:hover,.side nav a:focus{background:#fff;outline:none}
+.side nav .grp{margin-top:12px;padding:6px 10px 2px;font-size:12px;letter-spacing:.08em;color:var(--muted);font-weight:700}
+.side .note{margin-top:22px;padding-top:14px;border-top:1px solid #c5d5cf;color:var(--muted);font-size:12.5px;line-height:1.6}
+main{padding:36px 48px 80px;min-width:0}
+article{max-width:1180px}
+h1{font-size:32px;line-height:1.35;margin:0 0 8px;letter-spacing:-.02em}
+.meta{color:var(--muted);font-size:14px;margin:0 0 22px}
+h2{font-size:24px;margin:48px 0 14px;padding-top:18px;border-top:2px solid var(--line);scroll-margin-top:18px}
+h3{font-size:18px;margin:28px 0 10px;color:var(--teal);scroll-margin-top:18px}
+h4{font-size:16px;margin:18px 0 8px;color:var(--ink)}
+p{margin:12px 0}
+.lead{
+  background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--teal);
+  border-radius:0 12px 12px 0;padding:16px 22px;margin:0 0 18px;
+}
+.lead p{margin:10px 0}
+.lead p:first-child{margin-top:0}
+.lead p:last-child{margin-bottom:0}
+.lead.gap{border-left-color:var(--amber)}
+blockquote{
+  margin:14px 0;padding:10px 16px;background:#e8f0ec;border-left:4px solid var(--teal);
+  border-radius:0 8px 8px 0;font-size:15.5px;
+}
+blockquote.amber{background:var(--amber-soft);border-left-color:var(--amber)}
+blockquote footer{color:var(--muted);font-size:13px;margin-top:6px}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:10px;background:var(--panel);margin:16px 0 8px}
+table{border-collapse:collapse;width:100%;min-width:880px;font-size:14.5px;line-height:1.6}
+th{text-align:left;background:#dce8e3;color:#163e44;padding:10px 12px;font-weight:700;position:sticky;top:0}
+td{vertical-align:top;padding:12px;border-top:1px solid var(--line)}
+tr:nth-child(even) td{background:#f7f6f0}
+.tag{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.tag.ok{background:var(--ok-soft);color:var(--ok)}
+.tag.mid{background:var(--mid-soft);color:var(--mid)}
+.tag.bad{background:var(--bad-soft);color:var(--bad)}
+.tag.no{background:#eceff1;color:#3e4c54}
+ul,ol{margin:10px 0 10px 1.2em;padding:0}
+li{margin:7px 0}
+.src{color:var(--muted);font-size:13.5px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:16px 18px;margin:14px 0;
+}
+.card h4{margin-top:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.kv{display:grid;grid-template-columns:7.5em 1fr;gap:6px 12px;margin:10px 0;font-size:15px}
+.kv b{color:var(--teal)}
+.pillrow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
+@media (max-width:1100px){
+  .shell{grid-template-columns:220px minmax(0,1fr)}
+  main{padding:28px 22px 60px}
+  h1{font-size:28px}
+  .grid2{grid-template-columns:1fr}
+  .kv{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+<aside class="side">
+  <div class="brand">补强与补全</div>
+  <div class="sub">给 Astra 看<br>相对批评稿与已出 07／08<br>第二轮还要补什么<br>2026-10-09</div>
+  <nav>
+    <a href="#open">1. 开篇</a>
+    <div class="grp">优先级 A</div>
+    <a href="#prio-a">人·卡·魂·梗总览</a>
+    <a href="#a-spirit">A1 精神指令整层</a>
+    <a href="#a-card">A2 角色卡</a>
+    <a href="#a-deck">A3 卡组／成长</a>
+    <a href="#a-soul">A4 机魂</a>
+    <a href="#a-sig">A5 招牌梗</a>
+    <div class="grp">优先级 B</div>
+    <a href="#prio-b">应补强总览</a>
+    <a href="#b-art">B1 美术收成关卡规则</a>
+    <a href="#b-331">B2 331 条与首关依赖</a>
+    <a href="#b-soft">B3 软措辞清理</a>
+    <div class="grp">优先级 C · 交付</div>
+    <a href="#prio-c">实施与验收</a>
+    <a href="#deliver">建议的交付形态</a>
+    <a href="#files">读过的文件</a>
+  </nav>
+  <div class="note">尺子仍是实机对标报告与批评稿已钉住的缺口，不是拍子制。只新增本页；未改 Godot，未改 Astra 既有文件。引用尽量落章节号与原文短句。</div>
+</aside>
+<main>
+<article>
+<h1>给 Astra 的补强与补全清单<br><span style="font-size:.72em;font-weight:600;color:var(--muted)">（对 v5 整改计划第二轮）</span></h1>
+<p class="meta">读者：Astra。对照物：Game仔批评稿《对 Astra-v5 整改计划的批评与建议》、Astra 已出的 <code>07-首关施工规格</code>／<code>08-图形与手感施工表</code>、条目 01–09 与计划数据，以及 box 内实机对标／design_gap 关于人·卡·魂·梗的原判。本页只写「第二轮已接住什么、还缺什么规格」，不要求立刻改代码。</p>
+
+<h2 id="open">1. 开篇：这一轮已接住什么 · 还缺什么</h2>
+
+<div class="lead">
+<p><strong>已接住（三句）。</strong> 批评稿「下一稿必须补的三样」里，定稿数字、同时冲突、三区成题，已分别钉进 <code>07</code>§2、<code>07</code>§7、<code>07</code>§4；城防 7／7、桥座 4、拆解工机 5、顶推力量 3 推 1、架设炮对桥 2 伤、地面调度「一个阶段间隔」等都写成施工值，不再标「先试／待选并列值」。</p>
+<p>打击感与示意误导：<code>08</code>§1 给出选中／非法点击／移动等可测时点，§2 给出 18 招「首接触帧／结果完成帧／可接下个命令帧」，§3 把 FX01–FX15 逐张换成新例局与精确结果——正好回应批评「没有逐帧验收稿」「没有逐招改图法」。</p>
+<p>批评保留的六点底线（意图冻结、同一结果源、效果动词拆分、损失分账、先算调度、致败一击可回看）被 <code>07</code>§9 明确写进首关证明清单；§8 也撤回了把「再听一遍」改成接力加速的假恢复命名。</p>
+</div>
+
+<div class="lead gap">
+<p><strong>还缺（三句）。</strong> 批评「没接住」里的人这一层——精神指令整层、角色卡、机魂、各机体招牌梗——在 <code>07</code>§8 仍多半标「待后续／不列本关完成项／不以一句对话算已恢复」；条目 08 十条精神里，除纪存通讯与常驻预演外，多数仍是「候选」，未形成可在首关或下一专关验收的整层规格。</p>
+<p>条目 09《卡组与成长对照》正文几乎仍是对照实验写法，且 <code>07</code>§1 写明「随机牌堆……全员成长不进入首关依赖」——覆盖表有 CARD-01–12，但不等于卡组层已可施工验收。</p>
+<p><code>计划核对结果.json</code> 记 specific_designs 331、unique_authored_designs 236；<code>计划数据.json</code> 里 coverage 499 条状态一律「待实施／验证；未改游戏代码」。多数分册条目统一加了「本关施工定值：见 07／08」页脚，清单体量很大，但首关可过项仍集中在 07／08 已钉死的那几块——不要用覆盖条数代替通过项。</p>
+</div>
+
+<div class="card">
+<p class="src" style="margin:0">核对锚点（本页判断均对过文件原话）：</p>
+<ul>
+<li><code>07</code> 开篇：「数值注明为样本的」那一轮缺口成立；本册「把这三件事确定下来」。</li>
+<li><code>07</code>§8：「完整范围没有删除，但<strong>首关可玩、系统已恢复、全量完成</strong>是三个不同结论。」</li>
+<li><code>07</code>§1：「随机牌堆、十二种机构全集、3×3单位、燃料、拆装炮台和全员成长不进入首关依赖；它们在原清单中仍为后续待实施项。」</li>
+<li><code>计划数据.json</code> <code>detail_summary.status</code>：「首关施工值已补定；游戏待实施；其余系统保留后续范围」；顶层 <code>status</code>：「计划已编制，游戏未实施」。</li>
+</ul>
+</div>
+
+<div class="pillrow">
+<span class="tag ok">已够：07§2 定稿数字</span>
+<span class="tag ok">已够：07§7 同时冲突</span>
+<span class="tag ok">已够：07§4 三区成题</span>
+<span class="tag ok">已够：08 帧表与 FX</span>
+<span class="tag ok">已够：07§9 六条底线</span>
+<span class="tag mid">不够：精神整层</span>
+<span class="tag mid">不够：角色卡</span>
+<span class="tag mid">不够：卡组／成长</span>
+<span class="tag mid">不够：机魂</span>
+<span class="tag mid">不够：招牌梗</span>
+</div>
+
+<h2 id="prio-a">2. 优先级 A · 必须补全（人·卡·魂·梗）</h2>
+<p>批评稿「精神、角色卡、机魂、机体梗没有恢复方案」原判仍然成立的部分：第二轮用 <code>07</code>§8 做了边界声明与假恢复撤回，但<strong>还没有</strong>把报告 §7 要的「已经丢的人和梗接回来」写成可过验收的合同。下面五条每条都按同一模板：缺口 → 现状原文 → 建议补成什么才算可验收 → 建议放在哪一册／哪关。</p>
+
+<div class="card" id="a-spirit">
+<h3>A1 · 精神指令整层</h3>
+<div class="kv">
+  <b>缺口是什么</b>
+  <span>报告要的是出席人物各带限次精神、可预演费用、战前可见；工务城丢失后人物对战斗几乎没有按钮。第二轮只把「再听一遍」撤回假恢复，并落到本关一次纪存通讯；其余 SPIRIT 多数仍是候选／后续，构不成「整层」。</span>
+  <b>现状原文</b>
+  <span>
+    批评：「报告 §7.4(b) 把『再听一遍』的文档效果写成『本轮公开一台机的隐藏状态与真实意愿』。Astra 03 的候选把它改成『限次协调一次已有接口的当轮接力交接』。这是另一条规则，不是把旧指令接回来。」<br>
+    <code>07</code>§8：「撤回该改名方案：接力加速移出本关，『再听一遍』恢复为听取机体状态与真实意愿。……这是<strong>保留人物动词的透明信息改编</strong>，不能称逐字恢复旧机制。」同表：「七海署名／记录｜……条件与身份待后续专关落实；不列本关完成项。」<br>
+    条目 08 各条仍写「每场 1 次候选」；页脚统一「本关施工定值：见 07／08」。design_gap／报告 §7.4(b) 样本：纪存「再听一遍」、七海「以我的名字」「记录在案」、白鸢「预演」「补一页」、兜灯「硬停」、豪司×社勇王「先吵一句」等。
+  </span>
+  <b>建议补成什么规格才算可验收</b>
+  <span>
+    一页「精神层合同」即可，至少钉死：
+    <ol>
+      <li><strong>在场表</strong>：本关／专关出席人物名单 → 每人 0–2 条精神 ID；不在场不能用其口吻与次数。</li>
+      <li><strong>费用与限次</strong>：哪些信息类常驻免费（与 <code>07</code>§8「白鸢预演……常驻免费」一致），哪些每战限次；提交前取消不扣，成功提交才耗次（条目 07 DG-SYS01 已有方向句，需落成表）。</li>
+      <li><strong>效果合同</strong>：每条写目标资格、作用 phase、对 SimulationResult 的改写字段、失败原因句；禁止用「燃魂」「硬停」四字代替参数。</li>
+      <li><strong>UI 入口</strong>：沿用旧「战场通讯」双页签方向（design_gap：指挥塔·人物能力／精神指令），但写清挂在人物头像下还是目标旁——与角色卡入口不打架。</li>
+      <li><strong>首关子集</strong>：明确本关只验收哪几条（建议：SPIRIT-1 纪存通讯 + SPIRIT-4 常驻预演）；其余标「专关 P02」并给出专关 ID，避免十条并列却零条可过。</li>
+    </ol>
+  </span>
+  <b>建议放在哪</b>
+  <span>主规格写入扩写后的 <code>07</code>§8 或新册「09b-精神层施工表」；条目 08 十条改为该表的明细行。首关 <code>GW-RESCUE-R1</code> 只挂子集；七海署名／记录进后续「许可／证据」专关（与 <code>07</code>§8 表一致）。</span>
+</div>
+</div>
+
+<div class="card" id="a-card">
+<h3>A2 · 角色卡（确定指令入口）</h3>
+<div class="kv">
+  <b>缺口是什么</b>
+  <span>批评指出角色卡在 03 里分成配置 A「确定的调度令」与配置 B「随机牌堆」，结论留到以后比较——等于没有可点的人物动作合同。第二轮 <code>07</code>§8 只写了方向句，没有卡面字段与验收局。</span>
+  <b>现状原文</b>
+  <span>
+    批评：「角色卡在 03『7. 卡牌层如何完整处理而不制造新负担』里分成配置 A……和配置 B……，结论留到以后比较。」<br>
+    <code>07</code>§8 表：「角色卡｜先把确定指令作为人物头像下的动作入口；不引入抽牌、能量和弃牌｜确定指令先做；随机牌组属于报告建议的对照项。」
+  </span>
+  <b>建议补成什么规格才算可验收</b>
+  <span>
+    <ol>
+      <li>配置 A 的<strong>卡面字段表</strong>：id、人物、目标过滤器、费用（限次／通讯）、效果指针（可复用 SPIRIT／CommandModifier）、每战次数、灰态原因。</li>
+      <li><strong>入口与互斥</strong>：头像下动作 vs 精神面板 vs 机体招式栏；同一效果不得三处各算一次恢复。</li>
+      <li><strong>一局验收</strong>：指定出席 2–3 人，打开头像能看到确定指令；点一次改变预演结果；不引入能量条与弃牌区。</li>
+      <li>明确写：配置 B 随机牌堆<strong>不是</strong>角色卡恢复的验收条件（与批评「对照实验可以以后做，不能算恢复」对齐）。</li>
+    </ol>
+  </span>
+  <b>建议放在哪</b>
+  <span>扩写 <code>07</code>§8「角色卡」行成可配置表；或在条目 09 之前单列「确定指令（配置 A）施工页」，与 CARD-*-随机对照分开。首关可先挂纪存一条，证明入口存在。</span>
+</div>
+</div>
+
+<div class="card" id="a-deck">
+<h3>A3 · 卡组／成长（条目 09）</h3>
+<div class="kv">
+  <b>缺口是什么</b>
+  <span>条目 09 十二项仍是对照规格；<code>07</code> 已将其剔出首关依赖。若下一稿仍只加「见 07／08」页脚，覆盖表会继续显示 CARD-01–12「有回应」，但无人能回答「对照实验何时开、通过标准是什么」。</span>
+  <b>现状原文</b>
+  <span>
+    条目 09 开篇：「确定指令与随机牌组分开验证；不让抽牌成为基本动作的门槛。」补记：「未进六机救援的系统仍属后续，不能因条目存在就标成恢复或完成。」<br>
+    <code>07</code>§1：「随机牌堆……全员成长不进入首关依赖。」§8：「不把随机卡组或新接力规则说成旧设计复原。」<br>
+    design_gap／报告 §7.4(c)：文档没有「杀戮尖塔」机制全文，只有「卡牌／卡组构筑式惊喜」目标——整节本就是【建议】，更需要单独的对照实验规格，而不是混进「系统已恢复」。
+  </span>
+  <b>建议补成什么规格才算可验收</b>
+  <span>
+    <ol>
+      <li>单独一页「P04 对照实验计划」：局面种子、编队、测量表（选择多样性、无效牌率、每回合额外点击数），以及<strong>采用／不采用</strong>的裁决门槛。</li>
+      <li>CARD-01–12 每条补「对照局步骤」与「失败样子」；现在多是设计句 + 代码入口，缺少可跑的一局脚本。</li>
+      <li>成长（CARD-11 等）与 credits／reputation 的挂钩表：奖救援／保全／任务，不只击杀（与 03§6、条目 07 PERSON-04 方向一致），并写清<strong>不进首关</strong>的版本号。</li>
+      <li>验收禁止用语：「卡组系统已恢复」。允许用语：「配置 B 对照局按种子 S 跑通，指标落在区间……，裁决为采用／搁置」。</li>
+    </ol>
+  </span>
+  <b>建议放在哪</b>
+  <span>保留条目 09 为对照分册，但增加卷首「实验计划」与「与首关依赖切割表」。工作包仍走 P03（确定指令）／P04（随机对照），不要并进 <code>GW-RESCUE-R1</code> 通过条件。</span>
+</div>
+</div>
+
+<div class="card" id="a-soul">
+<h3>A4 · 机魂（含双主体协商）</h3>
+<div class="kv">
+  <b>缺口是什么</b>
+  <span>机魂是世界观支柱，战斗里仍看不到可预演的意志。第二轮只声明「提交前公开、不随机夺权」，没有拒绝条件表与反提案命令字段——不足以称系统可验收。</span>
+  <b>现状原文</b>
+  <span>
+    批评：「机魂在系统表里写明是新机制，不是恢复。」<br>
+    <code>07</code>§8：「机魂与双主体协商｜拒绝条件、反提案需在提交前公开；不随机抢走玩家控制权｜现阶段不以一句对话算系统已恢复。」<br>
+    03§6：「机魂四态为接受、附条件接受、拒绝、反提案。……『王者满气势就强制乱放大招』不能作为默认人格。」<br>
+    design_gap／报告 §7.4(d)、D9：四道门「信息／权限／物理／驾驶者与机魂接受」；机魂给意志不给数值；拒绝条件须公开写在机体卡上。
+  </span>
+  <b>建议补成什么规格才算可验收</b>
+  <span>
+    <ol>
+      <li>每台机魂机一张<strong>意愿卡</strong>：触发条件（公开）、四态返回值、反提案 Command 模板、可用哪条精神说服一次。</li>
+      <li>预演时机能：提交前算出 consent，并在预览条显示原因；同状态执行不得事后反悔（DG-SYS04 已有分析句，需落成字段）。</li>
+      <li>首关最小集：建议只做社勇王「危险扇面 → 双主体协商」一条可演示路径（与 SIG-1／SPIRIT-6 对齐），其余机魂标专关。</li>
+      <li>验收句示例：「预演可见拒绝原因与替代动作；接受反提案后费用不变；条件被新事件破坏时计划过期重验。」反例：「结算时才弹一句台词。」</li>
+    </ol>
+  </span>
+  <b>建议放在哪</b>
+  <span>条目 07 DG-SYS04／PERSON 相关条升格为「机魂施工表」；首关只引用社勇王一条。完整七机意愿放在 R03／P05 专关，并在总方案阶段表用「首关可玩／系统已恢复／全量完成」三分法记账。</span>
+</div>
+</div>
+
+<div class="card" id="a-sig">
+<h3>A5 · 招牌梗（一台机一个可辨认规则）</h3>
+<div class="kv">
+  <b>缺口是什么</b>
+  <span>批评原判：SIG 条目停在「处理决定」，报告 §7.4(a)「审批章」等未收成定稿合同。第二轮 <code>07</code>§8 对社勇「审批章」、王者卸装、雷翎抢拍等仍写「梗规则仍未恢复／不算本批通过」。18 招合同 ≠ 招牌梗恢复。</span>
+  <b>现状原文</b>
+  <span>
+    批评：「条目07『SIG-1 · 社勇王』的处理决定是『把救援承诺、双主体协商与爆发联系起来』，没有写成可实现的招牌规则（报告 §7.4(a) 的『审批章』那一格没有被收成定稿合同）。其余机体同样停留在处理决定。」<br>
+    <code>07</code>§1 表：「机体梗、合体、卡组不能仅凭已有技能名字算恢复。」§8：「社勇王『审批章』……梗规则仍未恢复，不能用『救援承诺』四字掩盖。」「雷翎轮换节拍｜不采用奇数轮硬禁开火……抢拍名场面尚未恢复。」<br>
+    design_gap 验收方向：「盲测：只看招式说出机体，正确率 ≥ 80%」；「一台机一个招牌规则」。
+  </span>
+  <b>建议补成什么规格才算可验收</b>
+  <span>
+    六机（本关编制）各一行定稿合同，列至少：
+    <ol>
+      <li>文档锚点（entities／fable5 原文短句，缺则写「文档未提及／原创」）。</li>
+      <li>招牌规则（改变射界／位置／保护／保全方式之一，不只伤害 +1）。</li>
+      <li>本关用哪一招／哪一接口体现；与 18 招帧表、FX 图的交叉引用。</li>
+      <li>一局盲测题：遮蔽机体名，只给招式预览，受试者能否指认。</li>
+    </ol>
+    明确不采用项也要保留（如雷翎奇数轮禁开火——00／07 已拒），并写替代的可辨认规则，避免「拒绝旧案」后空窗。
+  </span>
+  <b>建议放在哪</b>
+  <span>在 <code>07</code> 增「§8b 六机招牌定稿表」，或扩写条目 07「七台招牌重建」让 SIG-1–6 从处理决定升到与 <code>07</code>§2 同级的施工值。合体／卸装全流程可标后续，但本关六机每台至少 1 条可辨认规则要进「首关可玩」或紧随的「系统已恢复」门槛，不能无限留在处理决定。</span>
+</div>
+</div>
+
+<h2 id="prio-b">3. 优先级 B · 应补强</h2>
+<p>这些不是批评「下一稿必须补的三样」里的硬缺口（那三样第二轮已交），但会让计划读起来「页数很多、通过项很少」，或让施工参数再次漂回「先试／样本」。</p>
+
+<div class="card" id="b-art">
+<h3>B1 · 美术如何收成关卡规则（不只资产目录）</h3>
+<p>批评原文：「报告要的不是再列一批资产名。……到『这一关哪一格靠剪影破格才读得懂、哪一条高度差是必须用的解』：文件里没有。G10 的图注自己写了『这是战役空间关系草图，不是三个浮岛的美术』。」</p>
+<p>第二轮 <code>07</code> 已给出 10×8 三区题面与设施坐标，但条目 02 的 ART／ASSET 仍偏风格、配色、资产层级。建议补一张<strong>关卡可读性施工表</strong>（可附在 07 或条目 02 卷首）：</p>
+<ul>
+<li>对本关每一道题，指出<strong>哪个造型／高度差／剪影</strong>在预演里让玩家读懂因果（例：B 桥未对齐时，桥面与水位的剪影差；C 专线柜到 A 炮的馈电线在 2D 叠加层上的画法）。</li>
+<li>语义色只服务当前操作提示（条目 ART02 已有分层句），再加「本关三题各用哪一条语义色／地标」。</li>
+<li>验收：无提前提示的首玩，能指认 A／B／C 各欠什么（<code>07</code>§9 ③）——美术项必须能指出「靠哪一块画面读出来」，不能只交资产清单。</li>
+</ul>
+</div>
+
+<div class="card" id="b-331">
+<h3>B2 · 331 条与首关依赖怎么收口</h3>
+<p>批评早已写：「索引写『331 条具体回应』『52 个工作包』。……覆盖表不能代替这一关的题面。」第二轮用 07／08 收住了题面，但数据层仍是：</p>
+<ul>
+<li><code>计划核对结果.json</code>：specific_designs <strong>331</strong>，unique_authored_designs <strong>236</strong>，work_packages <strong>52</strong>；limitations 写明「This is a static plan check, not game implementation or player acceptance。」</li>
+<li><code>计划数据.json</code> coverage <strong>499</strong> 条（含 168 条「章节／来源」索引）状态一律「待实施／验证；未改游戏代码」；52 个工作包状态一律「待实施；本次交付为计划」。</li>
+<li>分册条目普遍挂同一句「本关施工定值：见 07／08……若上文保留旧的试调数字，以该施工规格为准」——有指向是好事，但若正文仍是目录级句子，覆盖勾选不会变成通过项。</li>
+</ul>
+<p><strong>建议收口方式（纸面即可）：</strong></p>
+<ol>
+<li>在 index／00 增加「首关依赖闭包」表：只列 <code>GW-RESCUE-R1</code> 通过所必需的条目 ID（数字、冲突、三题、18 招帧／FX、六条底线、精神子集、六机招牌最小集）。</li>
+<li>其余 331 中的条目标三态之一：<strong>首关依赖</strong>／<strong>系统恢复专关</strong>／<strong>全量／对照</strong>——与 <code>07</code>§8 三分法同一套词。</li>
+<li>覆盖核对页增加过滤：默认只显示「首关依赖」；全量 331 放到「完整范围」开关后面，避免「清单很大、通过项很少」的阅读幻觉。</li>
+</ol>
+</div>
+
+<div class="card" id="b-soft">
+<h3>B3 · 软措辞清理（先试／样本 vs 帧表为准）</h3>
+<p>批评完整性表把「敌方阶段 0.6–0.9 秒……正文写的是调试或先试」放在「还只有方向」一侧；并警告条目 03／04 把样本毫秒写进每一招会让人误以为定稿。</p>
+<p>第二轮 <code>07</code> 开篇已立规矩：「本册的关卡参数和顺序，高于前六册中『样本、先试、可比较』的同名参数；第 08 册固定本关的图形和反馈规格。」<code>08</code> 开篇：「数值是本次施工验收基线；后续可根据试玩改版，但不能继续写成未选择的区间。」</p>
+<p>仍建议做一次<strong>措辞扫尾</strong>（改字即可，不必扩系统）：</p>
+<ul>
+<li>条目 01–06、条目 03／04 中与 <code>GW-RESCUE-R1</code> 同名的伤害／毫秒／城防句，凡仍写「先试／样本／调试起点」的，改为「以 07／08 为准；下文若残留旧样本，不参与验收」——与现有页脚对齐，但要删掉会打架的并列值。</li>
+<li>时长类：敌方阶段分段秒数若已在 08 或首关基线 JSON 定稿，就不要在 01 留「0.6–0.9 调试」并列表并列；未定稿的标「非本关验收项」。</li>
+<li>保留「样本」一词的合法位置：对照实验、06 回归手顺、8×8 比较——与首关施工值分区书写。</li>
+</ul>
+</div>
+
+<h2 id="prio-c">4. 优先级 C · 实施与验收</h2>
+<p>不要用「系统已恢复」笼统结案。<code>07</code>§8 原话应成为记账口令：</p>
+<blockquote>
+本关六机做扎实后，再完成原清单里的机体身份和人物系统。完整范围没有删除，但<strong>首关可玩、系统已恢复、全量完成</strong>是三个不同结论。
+<footer>Astra《07-首关施工规格》§8</footer>
+</blockquote>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>结论档</th><th>通过时必须能指认的证据</th><th>明确不算通过的说法</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="tag ok">首关可玩</span><br><code>GW-RESCUE-R1</code></td>
+<td>
+<ol>
+<li>§2 数字局可配置、可重算；§4 三题在预演里互相可见；§7 同批冲突例可复算。</li>
+<li>§9 纸面核对 + 五类实机证据（六手录屏、压炮另局、无提示首玩指认三区、18 招声画对照、泊位坍塌等待）。</li>
+<li>§9 六条底线在本关可演示。</li>
+<li>08 帧表／FX 与卡面同局对照。</li>
+<li>精神子集（建议 SPIRIT-1＋预演常驻）与六机招牌最小集若写入首关依赖闭包，则一并演示。</li>
+</ol>
+</td>
+<td>「331 条已覆盖」「计划核对 pass」「JSON 检查 165 项 pass」——<code>07</code>§9 写明：文件与检查通过不代表实机证据存在；首关规格核对结果也自注「paper specification only」。</td>
+</tr>
+<tr>
+<td><span class="tag mid">系统已恢复</span></td>
+<td>
+按系统分册逐项：精神层合同、角色卡配置 A、机魂意愿卡、招牌定稿表、（可选）确定指令进战斗。每项有字段表 + 一局录屏 + 反例。旧代码路径（如 <code>combat_comms.gd</code>／<code>squad_comms.gd</code>）若复用，写清迁移，不凭文件名宣称恢复。
+</td>
+<td>「第三章名叫重建」「条目 07／08 有标题」「撤回了假恢复＝已恢复」「有一句机魂台词」——与 <code>07</code>§8「不以一句对话算系统已恢复」冲突。</td>
+</tr>
+<tr>
+<td><span class="tag no">全量完成</span></td>
+<td>
+14 机、机构全集、空地全集、配置 B 对照裁决、合体／卸装全流程、成长曲线等原清单后续项全部按专关验收关闭；范围膨胀风险在 05 已提示，须按阶段出口关闭而非一次勾完。
+</td>
+<td>「首关六机通过＝14 机通过」「对照实验做完＝卡组成为主玩法」。</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>每条工作包建议在 05／覆盖表增加三列：<strong>结论档</strong>（上表之一）、<strong>证据链接</strong>（录屏／配置／种子）、<strong>反例</strong>。状态栏在代码未改前保持「待实施」是诚实的；开始实施后不要跳到「已恢复」，只许跳到「首关可玩（证据 #…）」这类可回看的状态。</p>
+
+<h2 id="deliver">5. 建议的交付形态：下一稿最少再交哪些页／表</h2>
+<p>只补规格，不扩系统目录。建议最少交付：</p>
+<ol>
+<li><strong>精神层合同一页</strong>（在场表、费用、效果字段、UI 入口、首关子集 vs 专关）。</li>
+<li><strong>角色卡配置 A 字段表</strong>＋与精神入口的互斥说明（不含随机牌堆）。</li>
+<li><strong>机魂意愿卡</strong>（至少社勇王一条可演示；其余可列大纲）。</li>
+<li><strong>六机招牌定稿表</strong>（每机 1 条可辨认规则 + 盲测句 + 与 18 招／FX 交叉引用）。</li>
+<li><strong>首关依赖闭包表</strong>（从 331 条滤出本关通过所必需 ID；其余标系统恢复／全量／对照）。</li>
+<li><strong>条目 09 卷首：P04 对照实验计划</strong>（种子、指标、采用门槛；明确不进首关依赖）。</li>
+<li><strong>关卡可读性施工表</strong>（三题各靠哪块造型／高度／语义色读懂）。</li>
+<li><strong>软措辞扫尾说明</strong>（01–06 与 07／08 冲突的「先试／样本」句处理列表）。</li>
+</ol>
+<p>可选但有用：把 <code>07</code>§8 的三分法写进 <code>计划数据.json</code>／覆盖页过滤器，使「清单很大」不再淹没「通过项很少」。</p>
+
+<div class="card">
+<h4>不要再做的事（本轮边界）</h4>
+<ul>
+<li>不要再为了「接住批评」去改行动时间预算或引入拍子制——批评稿尺子一节已写明那不是缺点。</li>
+<li>不要把配置 B、机构全集、14 机一次塞回首关依赖——与 <code>07</code>§1 收窄冲突。</li>
+<li>不要只增加第 332 条目录项；缺的是合同字段与验收局，不是更多标题。</li>
+</ul>
+</div>
+
+<h2 id="files">6. 读过的文件（只读）</h2>
+<ul>
+<li>批评：同目录 <code>对Astra-v5整改计划的批评与建议.html</code>（尤其「没接住的问题」「完整性」「下一稿必须补的三样」「建议接的六条」）。</li>
+<li>Astra 第二轮：<code>07-首关施工规格</code>、<code>08-图形与手感施工表</code>；条目 01–09；<code>00-总方案</code>、<code>03-机体与人物体系</code>；<code>计划数据.json</code>、<code>逐项设计.tsv</code>、<code>计划核对结果.json</code>、<code>首关规格核对结果.json</code>。</li>
+<li>实机对标／缺口：box <code>/workspace/chao-gag-playtest/v4/</code> 中 <code>design_gap.md</code>、<code>实机对标报告-v5.md</code> 关于精神指令、角色／卡组、机魂、招牌梗的章节（报告合并版 §7）。</li>
+</ul>
+<p class="src">本页为新增交付；未修改 Godot，未修改上列 Astra 既有文件。判断与原文不一致处，以文件原话为准，并已在引用中写出原句。</p>
+
+</article>
+</main>
+</div>
+</body>
+</html>

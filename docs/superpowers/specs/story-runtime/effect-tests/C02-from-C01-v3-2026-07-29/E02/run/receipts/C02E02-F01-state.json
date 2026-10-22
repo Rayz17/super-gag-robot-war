@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "fragment_id": "C02E02-F01",
+  "context_key": "41b710d3098038d1841c1cdd172941dac7b84b1518eebde8457942f4ffd97d1d",
+  "facts_established": [
+    {
+      "fact_id": "C02E02.FOUR_DISTINCT_PERSONS_VISIBLE",
+      "statement": "喷气叛星、死锁、镜星和雷翎虽共享基础骨架，却以不同头雕、翼型、武器、维修限制、声纹和主动选择表现为四个可辨认的主体，而非仅有颜色差异的四款商品。",
+      "evidence_in_draft": "喷气叛星以高翼抢位后主动拔掉保一弃三的充电线；死锁以低头雕、重型近战臂和侧向拆线应对；镜星用双层视窗、干扰板和反射识别揭露误认；雷翎带侦察翼、远射组件在高处远程搭电并把电留给诊断。"
+    },
+    {
+      "fact_id": "C02E02.SERVICE_NUMBER_CONTROLS_POWER_AND_AIRSPACE",
+      "statement": "平台把四台机压回同一旧服务号后，只允许一个身体取得充电对象资格，同时因无法确认升空主体而冻结全部空域；本地改名不会增加供电或飞行许可。",
+      "evidence_in_draft": "四个正式名在本地界面写入成功后仍共用同一底层编号；充电绿框随接线对象跳转，其余三台被判重复，外环空域灯持续全红并锁住仓门。"
+    },
+    {
+      "fact_id": "C02E02.FOUR_MAINTENANCE_PROFILES_OBSERVED",
+      "statement": "唐胶与兜灯通过实际充电冲突确认四台机需要不同维修与停止方式：喷气叛星需避开换装翼锁，死锁需支撑重型近战臂，镜星需隔离识别检测，雷翎需为远射系统远程低负荷搭电。",
+      "evidence_in_draft": "标准转接头只能证明接口相同，无法安全服务四副身体；唐胶将一张工具布拆成四套作业区，兜灯停止轮流快充并为四机设置不同停止标记。"
+    },
+    {
+      "fact_id": "C02E02.JICUN_PRIORITIZED_FOUR_MECHA",
+      "statement": "纪存看到四机的身体差异与选择后，取消万机馆当晨的公共服务位预约，决定在查明旧服务号来源前优先保住四机供电和实体安全。",
+      "evidence_in_draft": "纪存先尝试把四个正式名写入本地界面，确认改名无效后关闭万机馆预约，将充电区完整留给四机和本地工房。"
+    },
+    {
+      "fact_id": "C02E02.FREEZE_TRACED_TO_SHARED_LEGACY_SERVICE_ID",
+      "statement": "当前冻结直接来自平台昨夜把四台机重新并入同一个旧服务号；该服务号为何曾经建立以及旧召回背景尚未解释。",
+      "evidence_in_draft": "雷翎以微弱搭电开启诊断记录，显示平台沿公开维修史定位四机并写回同一旧服务号；场面止于追问该编号来源。"
+    }
+  ],
+  "entity_states": [
+    {
+      "entity_id": "V353U044",
+      "location": "木桶街飞行仓公共充电位正面",
+      "controller": "喷气叛星本地系统与独立主体",
+      "physical_state": "尖长分叉头雕、向后高扬双翼和翼根短武器可见；一侧换装翼锁要求充电时保持展开；曾抢到唯一充电资格，随后主动拔线拒绝平台保一弃三；当前低电量、空域冻结，无新增损伤"
+    },
+    {
+      "entity_id": "V353U045",
+      "location": "木桶街飞行仓公共充电位下方维护板旁",
+      "controller": "重涂机“死锁”本地系统与独立主体",
+      "physical_state": "低宽头雕、紧收翼型、重型近战臂和折叠刃可见；重臂改变站姿，标准上方充电会拉歪机体，需要地面支撑与侧向供电；已停止拆线并复原维护板，当前低电量、空域冻结，无新增损伤"
+    },
+    {
+      "entity_id": "V353U046",
+      "location": "木桶街飞行仓公共充电位侧面",
+      "controller": "重涂机“镜星”本地系统与独立主体",
+      "physical_state": "双层视窗、异向翼面和前臂电子干扰板可见；识别器会与共享服务位循环误认，需要独立检测；已收回反射信号，当前低电量、空域冻结，无新增损伤"
+    },
+    {
+      "entity_id": "V353U047",
+      "location": "木桶街第四间飞行仓上方承梁",
+      "controller": "重涂机“雷翎”本地系统与独立主体",
+      "physical_state": "窄长感应头、一侧侦察翼和修长远射组件可见；远射系统不适合贴近公共快充，需要远程低负荷搭电；已将微弱电流用于诊断旧服务号，当前低电量、空域冻结，无新增损伤"
+    },
+    {
+      "entity_id": "V353U071",
+      "location": "木桶街公共竞技场整备位",
+      "controller": "木桶街公共竞技场与参赛者共同维护，低权限竞赛AI保持本地状态",
+      "physical_state": "八米全尺寸竞赛实机，临时挑战控制已断开，攀轨模块尚未卸下；未参与四机服务位争夺，无新增损伤"
+    }
+  ],
+  "character_states": [
+    {
+      "entity_id": "CH_JICUN",
+      "desire_or_emotion": "从把冲突视为排队与命名问题，转为确认基础设施正在用一个服务号压缩四副不同身体，并选择先保四机而推迟万机馆校正。",
+      "relationship_delta": "亲眼看见四机在保一弃三选择前的不同反应，不再按商品款式理解它们；尚未与四机建立永久加入关系。"
+    },
+    {
+      "entity_id": "CH_TANGJIAO",
+      "desire_or_emotion": "从共同底盘可共用标准接头，转为承认接口相同并不等于维修方法相同。",
+      "relationship_delta": "为四台机分别建立翼锁、重臂、识别器和远射系统作业区，开始以四份真实身体记录对待它们。"
+    },
+    {
+      "entity_id": "CH001",
+      "desire_or_emotion": "从安排公平轮流快充，转为看见同一服务动作会分别伤害四副身体，并立即停止公共快充。",
+      "relationship_delta": "为四台机设置不同停止标记，把安全判断从统一排队改为逐机可复核条件。"
+    }
+  ],
+  "open_threads": [
+    {
+      "thread_id": "LEGACY_SERVICE_ID_ORIGIN",
+      "status": "open",
+      "note": "四机为何曾被写入同一个旧服务号、该编号与当年统一召回的关系尚未说明，必须通过后续原始记录与证言确认。"
+    },
+    {
+      "thread_id": "FOUR_MECHA_POWER_AND_AIRSPACE_FROZEN",
+      "status": "open",
+      "note": "四台机仍处于低电量与空域冻结状态；独立名字和本地维修区已经建立，但基础供电与升空资格尚未夺回。"
+    },
+    {
+      "thread_id": "PLATFORM_RECOVERY_TEAM_APPROACHING",
+      "status": "open",
+      "note": "平台回收队仍在接近木桶街，归一星尚未正式进入战斗，本场没有发生空战。"
+    },
+    {
+      "thread_id": "WANJI_CALIBRATION_DEFERRED",
+      "status": "open",
+      "note": "纪存主动取消万机馆当晨公共服务预约以优先保护四机；万机馆仍可低速运行，但全舰校正与战斗负载继续待处理。"
+    },
+    {
+      "thread_id": "FOUR_MECHA_RELATION_UNSETTLED",
+      "status": "open",
+      "note": "四机仍互相不服，尚未决定最终阵营、永久加入或木桶街支援关系。"
+    }
+  ],
+  "next_trigger": "四台机的服务冻结已追到同一个旧服务号，但建立该编号的原始召回原因仍不清楚；纪存、唐胶和兜灯必须调出当年事故记录并与今天四套实体维修差异对照。",
+  "unresolved_logic_risks": []
+}

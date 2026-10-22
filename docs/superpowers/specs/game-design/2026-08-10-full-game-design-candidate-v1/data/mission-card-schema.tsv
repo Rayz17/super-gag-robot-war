@@ -1,0 +1,23 @@
+field_id	required	type_or_values	owner	player_purpose	validation_rule	must_not_infer	status
+mission_id	yes	stable_id	SYS-WORLD	识别任务与事务	全局唯一且版本化	地点名称可当任务ID	candidate_mission_schema_v1
+mission_card_version	yes	schema_version+content_sha256	SYS-NARR	确认当前查看和提交的是同一版任务卡	内容hash必须覆盖任务守则、路线集合、时限与风险引用	用最新页面替换已锁定版本	candidate_mission_schema_v2_public_skeleton
+authority_status	yes	working_story_input|candidate_game_design	SYS-NARR	知道事实与玩法假设边界	不得把Candidate玩法升Canon	用户沉默等于批准	candidate_mission_schema_v1
+need_and_primary_verb	yes	short_text+objective_id	SYS-NARR	知道为何去/真正胜利动作	必须对应Story冲突而非清图	打赢敌人自动解决故事	candidate_mission_schema_v1
+location_and_design_pack	yes	location_id+pack_version_hash	SYS-WORLD	知道真实地点与地图来源	GD2未封存则block	gameflow可临时发明建筑	candidate_mission_schema_v1
+route_options	yes	route_ids	SYS-WORLD	比较到达/撤离/时效	至少一条合法;选择时才要求两条	路线只是菜单颜色	candidate_mission_schema_v1
+time_and_deadline	yes	travel_time;deadline;return_window	SYS-WORLD	理解迟到/未选后果	时间来源和时区/时间线明确	模糊倒计时可随机惩罚	candidate_mission_schema_v1
+information_sources	yes	contact/evidence refs	SYS-C2	看来源/更新时间/未知	每条信息含observed_at/confidence	任务卡显示后台真相	candidate_mission_schema_v1
+expected_modes	yes	story|hub|exploration|investigation|tactical|settlement+duration_band	SYS-NARR	预期会玩什么/多长	只列已设计并有合同的模式	所有章节都要全模式	candidate_mission_schema_v1
+required_presence	yes	actor/body/role refs	SYS-ROSTER	知道谁必须到场及原因	区分人物/机体/岗位/权限	剧情主角自动全员到场	candidate_mission_schema_v1
+optional_assignments	no	actor/body/role refs+effects	SYS-ROSTER	形成编队/岗位取舍	不得有唯一显然最优且无成本	关系高就自动同行	candidate_mission_schema_v1
+opportunity_cost	yes	hub_actions/workorders/events blocked	SYS-HUB	知道出击排除了什么	角色时间冲突必须显示	同一角色并行多岗	candidate_mission_schema_v1
+known_risks	yes	objective/body/location/authority/route risks	SYS-WORLD	承担可理解风险	高影响后果必须提前可见	隐藏永久损失	candidate_mission_schema_v1
+withdraw_and_failure	yes	withdrawal+partial+continuation_break	SYS-NARR	知道失败如何继续	至少定义withdraw或partial之一	所有失败GameOver	candidate_mission_schema_v1
+possible_outputs	yes	specific object/relation/world/body outputs	SYS-SETTLE	理解可能带回/改变什么	不能只写money/exp	任务奖励等于对象所有权	candidate_mission_schema_v1
+unselected_executor	yes	actor/team/system+capability band	SYS-WORLD	知道不选后谁处理	主线唯一卡可写not_applicable	系统随机生成无名队伍	candidate_mission_schema_v1
+unselected_outcome_band	yes	clear|partial|delay|fail bands+source	SYS-WORLD	评估不选责任	必须由执行者/条件推导并预告	不选就自动最坏结局	candidate_mission_schema_v1
+future_consumers	yes	story/hub/world/system ids	SYS-SETTLE	确认结果会被谁读取	至少一个合法consumer	一次性孤立任务	candidate_mission_schema_v1
+sortie_manifest_contract	yes	sortie_manifest_id+version+six_reference_classes	SYS-ROSTER	查看并锁定这次出发实际携带的人、机、装备与权限	六类引用必须按sortie-manifest-contracts.tsv解析为具名版本和hash；查看、预演和锁定预览均0时间、0资金	用编队名称或UI快照当作出击真值	candidate_mission_schema_v2_public_skeleton
+mission_commitment_preview	yes	mission_card_ref+route_ref+sortie_manifest_ref+campaign_tick_before_delta_after+operating_funds_before_reserved_after	SYS-SETTLE	一次看清路线、到达时间、出发包和资金前后	必须是MISSION-COMMIT-V1的同一proposal_hash投影；未提交时0写入	路线、时间、资金或出发包分步生效	candidate_mission_schema_v2_public_skeleton
+mission_commitment_receipt	no	accepted_receipt_id+proposal_hash	SYS-SETTLE	确认这次出发已在稳定边界生效	只能由已接受的MISSION-COMMIT-V1事务产生；重放返回同一回执	点击锁定或进入结算就视为出发	candidate_mission_schema_v2_public_skeleton
+human_acceptance	no	receipt_id+scope+build/evidence	production_gate	区分卡面/规则/试玩验收	无明确回执保持pending	内部PASS当用户批准	candidate_mission_schema_v1

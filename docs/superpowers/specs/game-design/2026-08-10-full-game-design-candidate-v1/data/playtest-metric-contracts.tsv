@@ -1,0 +1,15 @@
+metric_id	domain	operational_definition	capture_method	denominator	aggregation	red_line	interpretation	invalid_if
+U-COMPLETE	usability	无主持人代做时完成Primary或合法partial/withdraw	Outcome+观察	全部有效Session	完成/合法继续比例	依赖主持人完成	不能单独证明有趣	技术Bug或主持人越权
+U-RESCUE	usability	主持人提示次数/级别/发生点	事件标记	每Session	中位数+分布	核心规则需口头解释	高值优先修教程/信息	未使用统一提示脚本
+U-INPUT	usability	误操作/撤销/模式迷失/错目标	Input日志+观察	每Session	每10分钟频率	核心动词不可达或死焦点	区分操作错与策略错	设备/映射未记录
+L-CAUSE	learning	正确解释三个关键结果的来源→行动→接触→结果	自由复述+回看	每Session	正确项数与5/6等门	同一结果前3人中2人不懂	规则/反馈是否被理解	主持人先解释答案
+L-TRANSFER	learning	在未见小变体中正确应用规则	迁移题	有效Session	成功比例	只能背原图	验证学规则而非背解	迁移题复用同一答案
+S-DIVERSITY	strategy	行动图/路线/资源/代价实质不同的解法族	日志聚类+设计复核	每批	族数+各自人数	只有一个合法/显著优解	不以数值顺序差冒充	分类规则事后为过门改写
+F-REPLAY	fun	固定结局下愿立即换方案再玩	事后选择	有效Session	愿意人数	6人中少于4人	用于止损而非市场预测	以额外奖励诱导回答
+F-BODY	product_identity	机器人具有质量/姿态/功能身体的同意度	1-7量表+理由	有效Session	中位数+理由编码	中位数低于5/7	量表必须配因果证据	只看高完成动画后问
+F-AGENCY	agency	过程选择确实改变代价/状态的同意度	1-7量表+状态复述	有效Session	中位数+≥5人数	P2中少于8/12达到5/7	区分过程agency与固定故事结果	玩家不知道哪些结果固定
+B-PLAN	cognitive_load	教学后每个决策脉冲规划时长	时间戳	有效脉冲	中位数+P90	P1中位>3m或连续两次>6m	与决策质量共同看	包含暂停离席/技术等待
+R-FREE	retell	0-5自由复述：0无;1输赢动画;2目标结果;3关键选择;4因果链;5持久后果	90秒自由复述编码	每Session	中位数+分布	多数≤2	核心产品证据	定向问题先于自由复述
+R-STORYPLAY	story_adaptation	能分别说出固定故事结果与玩家改变过程	复述+分类题	内容Session	正确比例	把玩法失败当改写Canon	验证故事同义与代理权	未说明测试是游戏体验
+T-STATE	technical	存读档/Full-Skip/重放/事务状态一致	自动hash+人工抽查	全部技术矩阵	一致率	任何不可解释漂移	只证明技术正确	签名不是完整状态hash
+A11Y-READ	accessibility	不依赖单一颜色/声音/时限仍辨认关键状态	专项任务	专项Session	完成比例	任一关键状态无替代编码	对应范围可验收	只用模拟滤镜无真实需求者

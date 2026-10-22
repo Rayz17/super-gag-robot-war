@@ -1,0 +1,2 @@
+run_id	validator_command	validator_result	fallback_or_downgrade
+TEST	python3 check_episode_loop_run.py strict_creative_pass --require-subagents --require-chapter-reviews --require-run-validation-log --strict-prefix-warn-policy --strict-creative-gates	pass	none

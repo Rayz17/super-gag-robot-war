@@ -1,0 +1,77 @@
+{
+  "assembled_context_sha256": "42695eb7b85b7223dafd8f5d0a6db8c22fd2cfaa2046be8df80845c072563188",
+  "bytes": 86304,
+  "chapter": "C02",
+  "chars": 36514,
+  "context_key": "42695eb7b85b7223dafd8f5d0a6db8c22fd2cfaa2046be8df80845c072563188",
+  "continuity_receipt_hashes": {},
+  "entry_receipt_hashes": {
+    "C02E02-F01": "c572f3cb4f568dbe0be161ff358bda626373563901d8174c8459155942d20652"
+  },
+  "episode": "C02E02",
+  "fragment_card_sha256": "b6df972df0fdd87ac8db8d61ff86c1a250d261d18f268b3c2222e4414c23e47b",
+  "fragment_id": "C02E02-F02",
+  "path": "docs/superpowers/specs/story-runtime/effect-tests/C02-from-C01-v3-2026-07-29/E02/run/contexts/C02E02-F02-42695eb7b85b.md",
+  "prior_prose_tail_sha256": "e184994adc0f5f02424a1f39a3d2afdbe7c888647f0136c54ef232ba90531622",
+  "retrieval_corpus_hashes": {
+    "docs/superpowers/specs/story-runtime/generated/runtime_corpus.jsonl": "38b98d37aa3e787721306fb4aae515a9c6ecd3f8749fe419d90594f5efe438e4",
+    "docs/superpowers/specs/story-runtime/generated/support/support_runtime_corpus.jsonl": "c1733f67e8fa331008d733ed3269f8948b15f96c30570ee8c70c31e34bc3da5d"
+  },
+  "retrieval_trace": [
+    {
+      "explicit_seed": true,
+      "layer": "current_canon",
+      "node_key": "entity:CH_QIHAI",
+      "record_id": "CH_QIHAI",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv",
+      "title": "七海"
+    },
+    {
+      "explicit_seed": true,
+      "layer": "current_canon",
+      "node_key": "entity:V353U044",
+      "record_id": "V353U044",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv",
+      "title": "喷气叛星"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "candidate_support",
+      "node_key": "support:core_cast:CAST_BAIYUAN",
+      "record_id": "CAST_BAIYUAN",
+      "source": "docs/superpowers/specs/data/story/v35_series_structure_core_cast_lifecycle_v2.tsv",
+      "title": "白鸢 / Evelyn Voss"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "candidate_support",
+      "node_key": "support:chapter:C02",
+      "record_id": "C02",
+      "source": "docs/superpowers/specs/data/story/v35_series_structure_master_board_v1.tsv",
+      "title": "木桶街，万机初开"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "current_canon",
+      "node_key": "gag_hook:GH059",
+      "record_id": "GH059",
+      "source": "docs/superpowers/specs/data/canon/gag_hooks.tsv",
+      "title": "生活温度"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "candidate_support",
+      "node_key": "support:character_dossier:CD005",
+      "record_id": "CD005",
+      "source": "docs/superpowers/specs/data/character_voice/character_dossiers_core.tsv",
+      "title": "七海"
+    }
+  ],
+  "revision_note_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "schema_version": 1,
+  "stable_prefix_sha256": "15a5d99738adcdbd2038479dd6b17ec0a7d0adc421659baccd3069e709a5d99e",
+  "target_output_chars": {
+    "max": 5600,
+    "min": 2800
+  }
+}

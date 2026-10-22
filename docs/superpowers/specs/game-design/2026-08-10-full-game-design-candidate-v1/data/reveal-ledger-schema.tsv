@@ -1,0 +1,21 @@
+field_id	field_name	required_for	question	blocking_rule
+RLS001	reveal_id	all	揭示单元稳定ID是什么	关键秘密无ID时block
+RLS002	subject_id	all	它关于哪个地点、人物、机体、组织或规则	主体不明时block
+RLS003	truth_source_ref	production	指向哪一Canon或Accepted Story原子事实，不在此复制答案	未先定义真相、循环引用Reader或本账自行造Canon时block
+RLS004	authority_level	all	hard/working/candidate/history哪一档	Candidate被当成已定答案预埋时block
+RLS004B	design_status	all	open/draft/blocked/sealed/invalidated/retired哪一档	open或blocked揭示步被下游消费时block
+RLS005	source_refs	all	真相与既有证据来自哪里	无来源或循环引用Reader时block
+RLS006	observer_knowledge	all	各角色/组织在当前节点分别知道、误判或不知道什么	全员共享作者知识时block
+RLS007	player_knowledge_before	all	玩家进入本节点前可合理知道什么	依赖玩家未见资料时block
+RLS008	first_visible_evidence	all	第一份可见证据是什么，来源与可信度如何	只靠旁白宣告时warn
+RLS009	mandatory_reveal_window	all	最早/最晚应在哪章/话/画面揭示哪一层	没有上限导致后续圆设定时block
+RLS010	forbidden_before	all	哪些结论在此之前不得写明、画明或变成UI标签	悬念被生产字段提前剧透时block
+RLS011	partial_or_false_hypotheses	all	允许玩家/角色形成哪些可反证假说	误导与真相无因果关系时warn
+RLS012	visual_and_audio_cues	all	用哪些具体画面、动作、声响或界面痕迹承载	只用解释性对白时warn
+RLS013	reader_safe_instruction	writer_context	Reader本阶段必须呈现、可暗示、必须暂隐什么	写作者没有保留边界时block
+RLS014	gameflow_safe_instruction	gameflow_context	玩法可让玩家观察/验证什么，不能把什么做成答案	解谜替角色决定或提前确认Canon时block
+RLS015	production_only_notes	production	完整因果、资产、触发和后续反证怎样实现	制作备注泄漏进Reader时warn
+RLS016	future_consumer	all	哪一后续章、系统、关系或结算必须可见消费	伏笔无消费者时warn
+RLS017	state_writeback	playable	玩家发现后写入何种knowledge/reveal/codex状态	发现与后续完全断链时warn
+RLS018	owner_and_approver	all	谁维护真相，谁批准改动与揭示时点	可被任意Writer改写时block
+RLS019	status	all	open/seeded/partially_revealed/revealed/retired哪一档	状态与Reader不一致时block

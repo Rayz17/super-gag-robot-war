@@ -1,0 +1,44 @@
+requirement_id	decision_id	phase	receipt_type	required_scope	prerequisite_evidence	receipt_path	receipt_sha256	requirement_status	notes
+DR-DEC01-A	DEC-01	candidate_test_authorization	product_direction	指定产品身份、目标玩家、原子接受条款与排除项;本项单独不含Prototype/Gate/Build/Session	D02产品宪章版本+decision-receipt-instance-schema	none	none	missing	只建立评估准则与纸面对齐；任何执行须下游专项回执AND精确包络
+DR-DEC01-M	DEC-01	bounded_migration	product_direction	指定GD0版本	产品走查+原型影响总结	none	none	missing	不自动批准任何系统或内容
+DR-DEC02-A	DEC-02	candidate_test_authorization	product_direction	P1 A/B/C/D共同规则与中性范围;无角色C2	D04 P1 M2+time-system-neutrality-contract v1	none	none	missing	先授权做四版基础证据;R0与P1使用独立implementation包络;P1包络max_total_builds=4只含A/B/C/D
+DR-DEC02-M	DEC-02	bounded_migration	gameplay	指定P1共同物理/目标/失败规则版本	P1 A/B/C/D各自M5+P1 shortlist;不要求或产生时制胜者	none	none	missing	只保留共同规则版本;时制仍等crossover与DEC-03-M
+DR-DEC03-A	DEC-03	candidate_test_authorization	product_direction	A/B/C/D同图同语义比较方法;P1只淘汰/shortlist	D04 P1 M2比较协议;time-system-neutrality-contract v1;R0接口与Candidate执行包络Schema已定义	none	none	missing	可与DEC-02/11同批裁决;不预选胜者;R0先用独立包络到M3;P1另建只含四个匿名Build的包络;本回执不授权C2 crossover
+DR-DEC03-M	DEC-03	bounded_migration	gameplay	select时唯一胜出时制的build/ruleset/map/crossover证据	P1四版M5+合法shortlist+D04-P2-CROSSOVER M5+工程成本+用户select	none	none	missing	最终裁决允许select/revise/no_selection/retire_all;只有select生成本bounded_migration回执并解锁完整P2;其余结果不生成迁移回执且不解锁;旧Demo时制不在scope
+DR-DEC04-A	DEC-04	candidate_test_authorization	product_direction	shortlist carriers上的六项核心C2语义/禁止项与可撤销crossover	P1 A/B/C/D各自M5+D04-P1-SHORTLIST@M5+D04 C2 M2;无需DR-DEC03-M	none	none	missing	只授权D04-P2-CROSSOVER;六项固定为C2_RELAY_CONTACT/JICUN_ROUTE/BAIYUAN_PREVIEW/QIHAI_VERIFY_AUTH/LUHENG_VERIFY/SOUL_RESPONSE;不写角色Canon;carrier Session-local且可撤销;完整P2仍待DEC-03-M select
+DR-DEC04-M	DEC-04	bounded_migration	gameplay	最终时制上的完整P2指定build/ruleset/map	有效DR-DEC03-M select+完整P2开关对照+25动作覆盖+误解复述	none	none	missing	只保留指定完整C2版本;crossover不能代签
+DR-DEC05-A	DEC-05	candidate_test_authorization	product_direction	Hub/成长/结算候选方向	D03/D05 M2	none	none	missing	SET先于HUB
+DR-DEC05-M	DEC-05	bounded_migration	gameplay	指定P-SET1/P-HUB1 build	M5+第二实例+事务证据	none	none	missing	不授权正式经济/UI
+DR-DEC06-A	DEC-06	candidate_test_authorization	product_direction	三家族/四内核测试范围	D05 M2	none	none	missing	不批量生产章节内容
+DR-DEC06-M	DEC-06	bounded_migration	gameplay	每个通过家族的首例与中性R2指定build	P-EX1/2/3各自M5+P-EX1-R2/P-EX2-R2/P-EX3-R2各自M6	none	none	missing	逐家族独立范围;章节实例另需DEC-08/09/10
+DR-DEC07-A	DEC-07	candidate_test_authorization	product_direction	22章预测review-only范围	D07 Candidate脊柱	none	none	missing	writer/draft不可见
+DR-DEC07-M	DEC-07	bounded_migration	product_direction	指定机制演进版本	P1-P3+D11爆炸控制	none	none	missing	逐章仍过GD3
+DR-DEC08-A	DEC-08	candidate_test_authorization	product_direction	C01灰盒/Previs候选边界	Accepted Reader+GD2 brief	none	none	missing	不改Reader
+DR-DEC08-G	DEC-08	bounded_migration	gameplay	PC01三个隔离章内原型的指定build/ruleset/map	P1 M5+PC01-E01-EX1/PC01-E02/PC01-E04-CARRIER各自M5	none	none	missing	all条件之一;PC01-SEAM仅在迁移后gameflow通过再启动
+DR-DEC08-V	DEC-08	bounded_migration	visual	C01指定地点/Previs版本	万机馆GD2真实图与逐图选择	none	none	missing	all条件之一
+DR-DEC09-A	DEC-09	candidate_test_authorization	product_direction	C02灰盒/工程图候选边界	Accepted Reader+转子债	none	none	missing	九米事实不静改
+DR-DEC09-G	DEC-09	bounded_migration	gameplay	PC02三个隔离章内原型的指定build/ruleset/map	PC02-E01-QUALIFIER/PC02-E03-KNOWLEDGE/PC02-E05-GIANT各自M5	none	none	missing	all条件之一;PC02-SEAM仅在迁移后gameflow通过再启动
+DR-DEC09-V	DEC-09	bounded_migration	visual	木桶街/转子指定图包	GD2图/path/hash/选择	none	none	missing	all条件之一
+DR-DEC10-A	DEC-10	candidate_test_authorization	product_direction	C03灰盒/地点图候选边界	Accepted Reader+错序修复计划	none	none	missing	先重绑城梁E01状态
+DR-DEC10-G	DEC-10	bounded_migration	gameplay	PC03两个隔离章内原型的指定build/ruleset/map	PC03-E03-C2/PC03-E04-VERIFY各自M5	none	none	missing	all条件之一;PC03-SEAM仅在迁移后gameflow通过再启动
+DR-DEC10-V	DEC-10	bounded_migration	visual	工务城/主体指定图包	GD2图/path/hash/选择	none	none	missing	all条件之一
+DR-DEC11-A	DEC-11	candidate_test_authorization	product_direction	R0/checker/synthetic或冻结副本故障注入/dry-run manifest范围;0 Current Writer可读输出	D09精确version/hash+故障样本+decision receipt instance schema+Candidate执行包络Schema	none	none	missing	不改Current Registry/story-chain;实际实现还须精确gate-instance IDs、source hash、目录/Build/人时/现金/外部副作用及用户批准包络subject hash
+DR-DEC11-M	DEC-11	bounded_migration_plan	production	指定M1-M4分相迁移计划、影响scope、排除项与回滚;本回执不部署任何变更	隔离故障注入+path/hash+预期失败/修复报告+影响图	none	none	missing	只允许分别呈现M1 checker、M2 Registry/schema、M3单一scope chain、M4部署后重验；不得直接写Current
+DR-DEC11-M1	DEC-11	bounded_migration_checker	production	指定Candidate checker代码/命令/版本/路径的部署范围	DR-DEC11-M accepted+精确base revision/patch hash+自测/故障注入+回滚	none	none	missing	只部署列明checker；不得顺带改Registry/story-chain/Canon/Reader
+DR-DEC11-M2	DEC-11	bounded_migration_registry	production	指定Registry/schema变更的逐文件范围	DR-DEC11-M1 accepted+精确base revision/patch/path/hash+迁移/回滚报告	none	none	missing	只改列明Registry/schema；不得顺带接入任何chapter/story-chain scope
+DR-DEC11-M3	DEC-11	bounded_migration_chain	production	一个精确chapter/episode/scope的story-chain接入	DR-DEC11-M2 accepted+scope instance+source/gate/checker hashes+Current只读基线+回滚计划	none	none	missing	一张回执只允许一个scope；C01-C04不得复合批量迁移
+DR-DEC11-M4	DEC-11	bounded_migration_postcheck	production	指定已部署scope的重验、失效传播与保留/回滚裁决	DR-DEC11-M3 deployment evidence+postcheck reports+unexpected PASS/FAIL audit+rollback readiness	none	none	missing	只接受或回滚该scope；不得推广到未测试章节或Writer/Runtime/L6
+DR-DEC12-A	DEC-12	candidate_test_authorization	product_direction	万机馆Candidate图包/Spike范围	WMP问题brief	none	none	missing	现SVG不算方向批准
+DR-DEC12-M	DEC-12	bounded_migration	visual	指定万机馆图包/Spike版本	文件/path/hash+逐图选择+排除项	none	none	missing	只解锁衍生设计/Candidate BOM
+DR-DEC13-A	DEC-13	candidate_test_authorization	product_direction	C04上游修复与兼容审计	旧Stage20/21假PASS报告	none	none	missing	无需前置story回执
+DR-DEC13-V	DEC-13	bounded_migration	visual	天空铸环/主体指定图包	真实图/path/hash+逐图选择	none	none	missing	all条件之一
+DR-DEC13-G	DEC-13	bounded_migration	gameplay	可撤回C2指定build/ruleset	P2/C04适配玩法证据	none	none	missing	all条件之一
+DR-DEC13-P	DEC-13	bounded_migration	production	新GD/S20/S21门实例、同范围GATE-L4兼容门实例及之后的GATE-REVEAL送审范围	严格checker+zero block+旧PASS作废+同范围L4/GD/S20/S21 source hash绑定及GATE-L4兼容实例PASS	none	none	missing	all条件之一;只解锁GATE-L4兼容PASS后送审GATE-REVEAL;不得跳过L4或直接产出context
+DR-DEC14-A	DEC-14	candidate_test_authorization	product_direction	Scope1章程/预算/BOM/测试计划	P1/P2 M5+C01 GD2方向	none	none	missing	不启动正式资产
+DR-DEC14-D	DEC-14	bounded_migration	product_direction	垂直切片下一阶段投资范围	C01 slice M5+P50/P80	none	none	missing	all条件之一
+DR-DEC14-G	DEC-14	bounded_migration	gameplay	C01 slice指定build/ruleset/content	12-18人+复述/方案/继续意愿	none	none	missing	all条件之一
+DR-DEC14-V	DEC-14	bounded_migration	visual	切片指定视觉包	逐项方向/Previs/path/hash	none	none	missing	all条件之一
+DR-DEC14-P	DEC-14	bounded_migration	production	切片指定build/asset manifests	正式handoff/QA/成本/排除项	none	none	missing	all条件之一;不含公开Demo
+DR-DEC15-A	DEC-15	candidate_test_authorization	product_direction	Minimum/Ideal/分部P80建模范围	Scope1 M6+U2数据	none	none	missing	只做投资决策包
+DR-DEC15-D	DEC-15	bounded_migration	product_direction	指定范围包络与非目标	P80/故事结构/市场证据	none	none	missing	all条件之一
+DR-DEC15-P	DEC-15	bounded_migration	production	指定投资/量产授权范围	资金/跑道/团队/里程碑/排除项	none	none	missing	all条件之一;逐资产/构建仍另审

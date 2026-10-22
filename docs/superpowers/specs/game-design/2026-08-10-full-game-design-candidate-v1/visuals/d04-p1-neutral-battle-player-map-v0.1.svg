@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">D04-P1 中性战术图玩家示意</title>
+  <desc id="desc">三台我方机器人保护三辆维护车撤离。主桥有旧裂损，敌方重机压桥，猎手尝试取得样本。玩家第一窗需在修桥守正面与开侧门分流之间取舍。</desc>
+  <defs>
+    <style>
+      .bg { fill:#f7f5ef; }
+      .panel { fill:#fffdf8; stroke:#2d3748; stroke-width:2; }
+      .grid { fill:none; stroke:#a0aec0; stroke-width:1; }
+      .lane { fill:#e8eef4; }
+      .bridge { fill:#fbd38d; stroke:#c05621; stroke-width:2; }
+      .ally { fill:#3182ce; stroke:#1a365d; stroke-width:2; }
+      .enemy { fill:#e53e3e; stroke:#742a2a; stroke-width:2; }
+      .vehicle { fill:#faf089; stroke:#744210; stroke-width:2; }
+      .object { fill:#9f7aea; stroke:#44337a; stroke-width:2; }
+      .exit { fill:#68d391; stroke:#22543d; stroke-width:2; }
+      .route-a { fill:none; stroke:#2b6cb0; stroke-width:6; marker-end:url(#arrowA); }
+      .route-b { fill:none; stroke:#0f766e; stroke-width:6; stroke-dasharray:12 9; marker-end:url(#arrowB); }
+      .label { font-family:"PingFang SC","Noto Sans CJK SC",sans-serif; font-size:20px; fill:#1a202c; }
+      .small { font-family:"PingFang SC","Noto Sans CJK SC",sans-serif; font-size:16px; fill:#2d3748; }
+      .tiny { font-family:"PingFang SC","Noto Sans CJK SC",sans-serif; font-size:13px; fill:#2d3748; }
+      .white { fill:white; font-weight:700; }
+      .heading { font-family:"PingFang SC","Noto Sans CJK SC",sans-serif; font-size:30px; font-weight:700; fill:#1a202c; }
+      .cardtitle { font-family:"PingFang SC","Noto Sans CJK SC",sans-serif; font-size:22px; font-weight:700; fill:#1a202c; }
+    </style>
+    <marker id="arrowA" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2b6cb0"/>
+    </marker>
+    <marker id="arrowB" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0f766e"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1080" height="1080"/>
+  <text class="heading" x="48" y="54">第一张中性战术图：在三种损失之间负责</text>
+  <text class="small" x="50" y="84">纸面 Candidate 示意｜32秒＝4个决策窗｜主要目标：至少撤出2辆维护车</text>
+
+  <rect class="panel" x="42" y="110" width="1010" height="630" rx="14"/>
+
+  <!-- lane backgrounds -->
+  <rect class="lane" x="150" y="190" width="784" height="56"/>
+  <rect class="lane" x="150" y="246" width="784" height="56"/>
+  <rect class="lane" x="262" y="302" width="560" height="56"/>
+  <rect class="lane" x="430" y="358" width="504" height="56"/>
+  <rect class="lane" x="150" y="414" width="784" height="56"/>
+  <!-- turn pocket -->
+  <rect class="lane" x="262" y="134" width="224" height="56"/>
+
+  <!-- bridge hazard spans y4/y5 x6-x9 -->
+  <rect class="bridge" x="430" y="190" width="224" height="112" opacity="0.48"/>
+  <text class="tiny" x="489" y="238">旧裂损主桥</text>
+  <text class="tiny" x="487" y="258">应力1／4降级／6断</text>
+
+  <!-- grid -->
+  <g class="grid">
+    <path d="M150 134H934 M150 190H934 M150 246H934 M150 302H934 M150 358H934 M150 414H934 M150 470H934"/>
+    <path d="M150 134V470 M206 134V470 M262 134V470 M318 134V470 M374 134V470 M430 134V470 M486 134V470 M542 134V470 M598 134V470 M654 134V470 M710 134V470 M766 134V470 M822 134V470 M878 134V470 M934 134V470"/>
+  </g>
+  <rect x="62" y="116" width="356" height="40" rx="6" fill="#fffdf8" opacity="0.96"/>
+  <text class="label" x="72" y="143">战场初态：左侧我方，右侧敌方</text>
+
+  <!-- lane labels -->
+  <text class="small" x="60" y="224">承力带</text>
+  <text class="small" x="60" y="280">主车道</text>
+  <text class="small" x="60" y="336">维护带</text>
+  <text class="small" x="60" y="392">侧承力</text>
+  <text class="small" x="60" y="448">侧车道</text>
+  <text class="tiny" x="286" y="166">1×2 转身袋</text>
+
+  <!-- allies -->
+  <rect class="ally" x="262" y="194" width="112" height="48" rx="8"/>
+  <text class="small white" x="282" y="225">锚机 1×2</text>
+  <rect class="ally" x="374" y="306" width="50" height="48" rx="8"/>
+  <text class="tiny white" x="382" y="335">游击</text>
+  <rect class="ally" x="430" y="306" width="50" height="48" rx="8"/>
+  <text class="tiny white" x="438" y="335">工程</text>
+
+  <!-- vehicles -->
+  <rect class="vehicle" x="154" y="250" width="48" height="48" rx="8"/>
+  <text class="tiny" x="163" y="278">车2</text>
+  <rect class="vehicle" x="266" y="250" width="48" height="48" rx="8"/>
+  <text class="tiny" x="275" y="278">车1</text>
+  <rect class="vehicle" x="210" y="418" width="48" height="48" rx="8"/>
+  <text class="tiny" x="219" y="446">车3</text>
+
+  <!-- objects -->
+  <rect class="object" x="490" y="418" width="48" height="48" rx="6"/>
+  <text class="tiny white" x="499" y="446">侧门</text>
+  <circle class="object" cx="570" cy="330" r="19"/>
+  <text class="tiny white" x="555" y="335">样本</text>
+  <text class="tiny" x="486" y="326">闸控</text>
+
+  <!-- enemies -->
+  <rect class="enemy" x="710" y="194" width="112" height="48" rx="8"/>
+  <text class="small white" x="730" y="225">重机1 1×2</text>
+  <rect class="enemy" x="710" y="362" width="112" height="48" rx="8"/>
+  <text class="small white" x="730" y="393">重机2 1×2</text>
+  <rect class="enemy" x="766" y="306" width="50" height="48" rx="8"/>
+  <text class="tiny white" x="774" y="335">猎手</text>
+  <rect class="enemy" x="822" y="194" width="50" height="48" rx="8"/>
+  <text class="tiny white" x="830" y="223">压制</text>
+  <rect class="enemy" x="822" y="362" width="50" height="48" rx="8"/>
+  <text class="tiny white" x="830" y="391">压制</text>
+
+  <!-- exits -->
+  <rect class="exit" x="882" y="250" width="48" height="48" rx="8"/>
+  <text class="tiny" x="891" y="278">出口</text>
+  <rect class="exit" x="882" y="418" width="48" height="48" rx="8"/>
+  <text class="tiny" x="891" y="446">出口</text>
+
+  <!-- route arrows -->
+  <path class="route-a" d="M320 274 C470 274 680 274 870 274" opacity="0.85"/>
+  <path class="route-b" d="M290 274 C310 315 314 385 330 442 C490 442 680 442 870 442" opacity="0.9"/>
+
+  <!-- lower legend -->
+  <rect x="68" y="512" width="952" height="194" rx="12" fill="#edf2f7"/>
+  <text class="cardtitle" x="92" y="548">第一窗真正的互斥选择</text>
+  <rect x="92" y="570" width="430" height="112" rx="10" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="2"/>
+  <text class="label" x="112" y="600">A　修桥，守正面</text>
+  <text class="small" x="112" y="630">工程机修掉旧裂损；锚机站稳承力。</text>
+  <text class="small" x="112" y="658">作者预写结果：撤2车、桥完整、样本丢失。</text>
+  <rect x="550" y="570" width="446" height="112" rx="10" fill="#e6fffa" stroke="#0f766e" stroke-width="2"/>
+  <text class="label" x="570" y="600">B　开侧门，做分流</text>
+  <text class="small" x="570" y="630">工程机离开维修位；游击机预留截击。</text>
+  <text class="small" x="570" y="658">作者预写结果：撤3车、保样本、桥降级。</text>
+
+  <text class="tiny" x="48" y="808">图例：蓝＝我方机器人　红＝敌方　黄＝维护车　紫＝任务对象　绿＝撤离出口</text>
+  <text class="tiny" x="48" y="834">本图不是正式关卡、美术资产或 Canon 地点；坐标和数值仅为 Candidate 中性纸面种子。</text>
+</svg>

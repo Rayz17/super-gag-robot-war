@@ -1,0 +1,470 @@
+{
+  "date": "2026-09-23",
+  "state": "creative_candidate_design_package",
+  "runtime_implemented": true,
+  "user_design_acceptance": false,
+  "formal_sources_modified_by_this_work": false,
+  "interaction_repair_v4": {
+    "date": "2026-09-22",
+    "state": "candidate_not_human_accepted",
+    "entry_number": 6,
+    "snapshot": "artifacts/c02_versions/20260922-225157/squad-guided-v4",
+    "player_log_audit": "artifacts/c02_squad/v4/player-baseline/audit.json",
+    "rules_checks": "artifacts/c02_squad/v4/rules-checks.json",
+    "native_input_checks": "artifacts/c02_squad/v4/runtime/checks.json",
+    "runtime_demonstration": "artifacts/c02_squad/v4/practice.mp4",
+    "rule_changes": [
+      "defensive stance persists across local exchanges until used, displaced or actor acts again",
+      "same-team unit yields into previous cell without consuming its main action"
+    ],
+    "old_five_snapshots_modified": false,
+    "limitations": [
+      "not a pure UI-only comparison",
+      "v3 response queue retained",
+      "character and spirit menus not restored",
+      "full battle balance and learning need human playtest"
+    ]
+  },
+  "version_comparison": {
+    "date": "2026-09-22",
+    "entry": "试玩版本选择.command",
+    "catalog": "tools/c02-comparison/catalog.json",
+    "snapshot": "artifacts/c02_versions/20260922-183011",
+    "independent_runtime_copies": 5,
+    "original_gameplay_sources_changed_this_iteration": false,
+    "historical_reconstruction": "squad-plan-v1: four historical scripts plus preserved shared assets and animation dependencies",
+    "restore_hash_checks": "artifacts/c02_versions/20260922-183011/restore-checks.json",
+    "restored_import_and_launch_checks": "artifacts/c02_versions/20260922-183011/restored-launch-checks.json",
+    "native_selector_checks": "artifacts/c02_versions/20260922-183011/native/checks.json",
+    "return_key_checks": "artifacts/c02_versions/20260922-183011/return-key-checks.json",
+    "new_bilibili_frame_review": "artifacts/research/comparison-followup-20260922/sources.json",
+    "new_reviewed_frames": 200,
+    "verification_scope": "Automatic archive restoration, imports, launches and return path; not new human playtest or design acceptance."
+  },
+  "c02_manifest": "docs/superpowers/specs/剧情梗概/V35.9/rebuild/manifests/C02-story-chain.tsv",
+  "sources": [
+    {
+      "stage": "episode_e01",
+      "path": "docs/superpowers/specs/剧情梗概/V35.9/rebuild/reader/episodes/C02/C02E01-没有名字也能报名-v1.md",
+      "manifest_status": "passed",
+      "sha256": "6f40758ba822b4f63f502bf9894bc651abc9607476d93a344ea20891eefe4e84",
+      "matches_manifest": true
+    },
+    {
+      "stage": "episode_e02",
+      "path": "docs/superpowers/specs/剧情梗概/V35.9/rebuild/reader/episodes/C02/C02E02-Reader-v1.md",
+      "manifest_status": "passed",
+      "sha256": "c84019101cd05fcc224db98b29efb5d38a03ec16a13b5515914bab570489dbae",
+      "matches_manifest": true
+    },
+    {
+      "stage": "episode_e03",
+      "path": "docs/superpowers/specs/剧情梗概/V35.9/rebuild/reader/episodes/C02/C02E03-Reader-v1.md",
+      "manifest_status": "passed",
+      "sha256": "a9bb53a82dc0ab3018cf16b4f16e15c04fe05c5eff5fab11fdc7452461c1ac17",
+      "matches_manifest": true
+    },
+    {
+      "stage": "episode_e04",
+      "path": "docs/superpowers/specs/剧情梗概/V35.9/rebuild/reader/episodes/C02/C02E04-Reader-v1.md",
+      "manifest_status": "passed",
+      "sha256": "7ef2c51975b5438f3ca1f8fbea5d4b710ec7ea63d9ab770205a6493f1b51f6bc",
+      "matches_manifest": true
+    },
+    {
+      "stage": "episode_e05",
+      "path": "docs/superpowers/specs/剧情梗概/V35.9/rebuild/reader/episodes/C02/C02E05-Reader-v1.md",
+      "manifest_status": "passed",
+      "sha256": "4f0931cdeec7beb4ca5b0addb1eccd3785cd2d8ad02bc0ca863de9c67d94b930",
+      "matches_manifest": true
+    },
+    {
+      "stage": "user_acceptance",
+      "path": "docs/superpowers/specs/剧情梗概/V35.9/rebuild/reviews/C02/C02-用户创作验收回执.md",
+      "manifest_status": "passed",
+      "sha256": "dc5e2e50a7c07d7aec36ad84cc40146a90aab30d43787a2c5364effd57738392",
+      "matches_manifest": true
+    },
+    {
+      "path": "docs/superpowers/specs/2026-06-18-chao-gag-game-framework-design.md",
+      "sha256": "1216c326ecdc7d640d0705758e624948903f2a1896ecd3d92a396224a672dd4f",
+      "bytes": 70398
+    },
+    {
+      "path": "docs/superpowers/specs/2026-06-18-chao-gag-roster-crossover-bible.md",
+      "sha256": "9a28bb1620fdfd17981e135180f5caa6d0677cb68cab3115f1c8f5a7a54d0e9f",
+      "bytes": 20514
+    },
+    {
+      "path": "docs/superpowers/specs/剧情梗概/V35全剧故事重构-2026-09-11/27-全剧故事概要-v5.md",
+      "sha256": "1410ae3fe270a998477f3131478bb91b6ab9c3bee9c645e6bf0488019b3a2376",
+      "bytes": 183173
+    },
+    {
+      "path": "docs/superpowers/specs/game-design/2026-08-10-full-game-design-candidate-v1/00c-core-game-design-master-review.md",
+      "sha256": "eadd8add793eced85bdd1fa7b2a56566bc17ba8bb586069b96e9644e9345899a",
+      "bytes": 104368
+    },
+    {
+      "path": "docs/superpowers/specs/research/2026-09-20-direction-review.md",
+      "sha256": "ee59c5b9394400adaa9727aed6d26c8520d9d6366d5efc72fd7d617446e8177b",
+      "bytes": 34418
+    },
+    {
+      "path": "docs/superpowers/specs/research/2026-09-21-concrete-production-proposal.md",
+      "sha256": "f2f98b22666c05da6f2e4f886e701cfbb9ff8d0e076003f1c4cd686ade1d4a36",
+      "bytes": 19057
+    },
+    {
+      "path": "artifacts/research/direction-review-20260920/sources-and-coverage.json",
+      "sha256": "020b6ab6769d4c0de41ee7529a2a5cc6f8b8ce492ab8595574cdc95bf31ad19e",
+      "bytes": 15380
+    },
+    {
+      "path": "artifacts/research/direction-review-20260921/sources-and-observations.json",
+      "sha256": "bc33f9ecfc79dee2129c01d0140b5a6172eee06f4c37ba45e15fe5e48e591c6b",
+      "bytes": 3444
+    },
+    {
+      "path": "docs/superpowers/specs/production/battle-presentation-v0.1/libtv-validation-receipt-v1.md",
+      "sha256": "45abe495108d9f2d3691538a393bdc8c3e972ba2ba478f1fe7fbbf1ce1f8e658",
+      "bytes": 4662
+    },
+    {
+      "path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/review/vid_gz_c01_palm_guard_libtv_seedance2_runtime_candidate_v01.mp4",
+      "sha256": "d06237efc9a8bd357f9956d3f1c43c997c704506ad2abe3bbeea8490b2fa1d2c",
+      "bytes": 1556373
+    },
+    {
+      "path": "artifacts/formulas/experience-foundation-v1/chapter-art/meshy-wanji-pilot-v1/input-preflight.json",
+      "sha256": "6d47fffb208c15fc3801f785963c2d76bf914657d754dcf158b03db05b3a1079",
+      "bytes": 3277
+    },
+    {
+      "path": "artifacts/formulas/visual-targets-v1/art/joint-room-v2/blender/README.md",
+      "sha256": "57decded8ff1db0fe894f088ec2a2f034d35f1ecab2a7a0d08db77b8cc3a2f29",
+      "bytes": 7587
+    },
+    {
+      "path": "artifacts/formulas/visual-targets-v1/art/finisher-keyframes-v1/blender/README.md",
+      "sha256": "3fb41d10ad7f8426900a01e41ae36aeb2cdb1c8cfa4b3a10c32293be78cedc62",
+      "bytes": 3235
+    },
+    {
+      "path": "game-godot/scripts/c01_breaker_demo/c01_gf_operation_hud.gd",
+      "sha256": "d4be5575a10d2311b365cd8ff68fed1e77267c5f29cad2bd4234aab0e4f33c5e",
+      "bytes": 135207
+    }
+  ],
+  "missing_sources": [],
+  "source_roles": {
+    "C02": "accepted event source; live episode and acceptance hashes verified",
+    "27_v5": "candidate future-story source, not promoted",
+    "2026-09-21-concrete-production-proposal": "rejected capacity limits; not adopted"
+  },
+  "explicit_adaptation_change": "Keep C02 semifinal winner, 3:2 final score and chapter aftermath; separate first Tianchong learning into a short opening demonstration and allow all legal winning moves. Proposed only, Reader unchanged.",
+  "tools_observed": {
+    "blender": "4.4.3 local binary",
+    "godot": "4.7.stable.official.5b4e0cb0f local binary",
+    "libtv_cli": "1.1.1",
+    "libtv_readonly_canvas": {
+      "id": "fc035e21db0c4f73b9985c27ed4de6ff",
+      "node_count": 3,
+      "node_types": [
+        "image",
+        "video",
+        "image"
+      ]
+    },
+    "meshy": "input preflight exists, no generation result",
+    "ffmpeg": "/opt/homebrew/bin/ffmpeg"
+  },
+  "research_limits": [
+    "Prior reference research used ordered video frames and subtitle OCR, not full audio listening or hands-on play of commercial games.",
+    "New Meshy generation not run; Blender first-piece trial is now recorded separately in artifacts/c02_one_punch/evidence.json.",
+    "Dedicated earlier video-slicing program not conclusively identified; CLI video-clip and existing sliced files verified.",
+    "Effort ranges are planning estimates, not measured throughput."
+  ],
+  "independent_review": {
+    "cold_read": {
+      "issues": [
+        "unclear pronoun",
+        "unclear foot movement",
+        "unnatural question about next-day attendance"
+      ],
+      "revisions": "All three addressed in scene.md; no user acceptance claimed"
+    },
+    "game_review": {
+      "issues": [
+        "forced finishing move conflicts with legal score",
+        "reaction timing and guard/charge interaction undefined",
+        "fourth playable unit omitted from production budget"
+      ],
+      "revisions": "Explicit candidate adaptation; first-test auto-hit and guard semantics; Guardian Z added to controllable-asset budget"
+    }
+  },
+  "browser_verification": {
+    "status": "design_ui_checked_not_gameplay_validation",
+    "page_url": "http://127.0.0.1:8768/docs/superpowers/specs/work-packages/2026-09-21-chao-gag-representative-chapter/design-review.html",
+    "checks": [
+      "Four tabs opened",
+      "Edge storyboard finished at translate(690,240) with ring-out result",
+      "Center storyboard finished at translate(510,240) and explicitly continues match",
+      "Existing LibTV MP4 actually played to ended=true, duration/currentTime=1.625, dimensions=1920x1080, error=null",
+      "Desktop chapter/battle/tools screenshots visually inspected",
+      "390px narrow viewport whole-game tab inspected with no body horizontal overflow",
+      "26 local links and media targets exist",
+      "Embedded JavaScript passed node --check",
+      "Initial favicon 404 removed with embedded empty favicon; fresh page navigation shows no console error banner",
+      "Chapter selector clicked: semifinal detail displays explicit first-success/free-score adaptation"
+    ],
+    "screenshots": [
+      "output/playwright/work-package-20260921/chapter.png",
+      "output/playwright/work-package-20260921/battle.png",
+      "output/playwright/work-package-20260921/tools.png",
+      "output/playwright/work-package-20260921/mobile.png"
+    ],
+    "scope": "Listed interactive browser checks are historical design-baseline checks. Current feedback revision: local file targets and embedded JavaScript checked; embedded video playback and page UI not rechecked. No isolated Chrome opened.",
+    "latest_player_review_update": {
+      "local_targets_checked": 86,
+      "missing_targets": [],
+      "embedded_js": "pass",
+      "browser_opened": false,
+      "page_visually_rechecked": false
+    }
+  },
+  "deliverable_hashes": {
+    "README.md": {
+      "path": "docs/superpowers/specs/work-packages/2026-09-21-chao-gag-representative-chapter/README.md",
+      "sha256": "8a9706a3cb4862a4aad5358dafe2ac6d491ab3c025d154c179bae9cc52884b56",
+      "bytes": 22083
+    },
+    "chapter.md": {
+      "path": "docs/superpowers/specs/work-packages/2026-09-21-chao-gag-representative-chapter/chapter.md",
+      "sha256": "13d81bac76deaee68b7ac5348c51988c58907ab50effeaa8b5f964aed302782d",
+      "bytes": 17290
+    },
+    "design-review.html": {
+      "path": "docs/superpowers/specs/work-packages/2026-09-21-chao-gag-representative-chapter/design-review.html",
+      "sha256": "300e5d3e50f6cb002f063805858416d78eb02ca1404a3b7467ddbd21d7c052e7",
+      "bytes": 26771
+    },
+    "duel.md": {
+      "path": "docs/superpowers/specs/work-packages/2026-09-21-chao-gag-representative-chapter/duel.md",
+      "sha256": "f1b7281b47897e64d1d24072c59528f28b0cfab1d05e67b5c6a4dfa479ab3666",
+      "bytes": 7665
+    },
+    "first-piece.md": {
+      "path": "docs/superpowers/specs/work-packages/2026-09-21-chao-gag-representative-chapter/first-piece.md",
+      "sha256": "8d59043b3121575dba1fcfca2bbaf7648518507bec66aa85b49c3d2b6c078d15",
+      "bytes": 5368
+    },
+    "player-playtest-review.md": {
+      "path": "docs/superpowers/specs/work-packages/2026-09-21-chao-gag-representative-chapter/player-playtest-review.md",
+      "sha256": "a9f3e8185ed7519cda3670f902104a86e448f6f74836338ece9e28e210aa4053",
+      "bytes": 8888
+    },
+    "playtest-review.md": {
+      "path": "docs/superpowers/specs/work-packages/2026-09-21-chao-gag-representative-chapter/playtest-review.md",
+      "sha256": "f9bbdfcee0007bc581d06ec5f83795b38dae7bd19bb14d4c08ce545e3ea46016",
+      "bytes": 6630
+    },
+    "production.md": {
+      "path": "docs/superpowers/specs/work-packages/2026-09-21-chao-gag-representative-chapter/production.md",
+      "sha256": "cfea3890c3a8cb625eb8d61978007ebeedf8a6bbe7ced4a990501cc193614d23",
+      "bytes": 18452
+    },
+    "scene.md": {
+      "path": "docs/superpowers/specs/work-packages/2026-09-21-chao-gag-representative-chapter/scene.md",
+      "sha256": "83a7fb95cb79af96a1f893de876491e36745cd932c9432bbd12757be9b0b95c3",
+      "bytes": 4826
+    },
+    "short-plan-combat.md": {
+      "path": "docs/superpowers/specs/work-packages/2026-09-21-chao-gag-representative-chapter/short-plan-combat.md",
+      "sha256": "40356681a5e7abedcdd0cdcbd6f56ff7a140d0b95b31ad39f0707bf461c4c2d4",
+      "bytes": 24042
+    },
+    "squad-combat.md": {
+      "path": "docs/superpowers/specs/work-packages/2026-09-21-chao-gag-representative-chapter/squad-combat.md",
+      "sha256": "e07590186389e3b7d0461d47a189b574474a053bd8b5f4db88eafbb7de5c48a0",
+      "bytes": 6085
+    },
+    "tactics-v2.md": {
+      "path": "docs/superpowers/specs/work-packages/2026-09-21-chao-gag-representative-chapter/tactics-v2.md",
+      "sha256": "40be9d5268aa565942379766ffa7f196bbeff74394942e9396606958293c4719",
+      "bytes": 8884
+    },
+    "group-interaction-research.md": {
+      "path": "docs/superpowers/specs/work-packages/2026-09-21-chao-gag-representative-chapter/group-interaction-research.md",
+      "sha256": "234047e3897af5744b1d6caa75418c2fed03358e7e9c3896d7d212db23bc7b86",
+      "bytes": 9879
+    },
+    "direct-interaction-v3.md": {
+      "path": "docs/superpowers/specs/work-packages/2026-09-21-chao-gag-representative-chapter/direct-interaction-v3.md",
+      "sha256": "3e7bb35a8c49496b50302b1bd5bf12a3991fcf5f7f00b74ff1ba2116a7c93464",
+      "bytes": 4236
+    }
+  },
+  "runtime_implemented_scope": "C02 independent Candidate: v3 local-exchange interaction comparison; v2 squad and v5 duel retained. No full chapter integration.",
+  "first_piece": {
+    "implemented": true,
+    "documentation": "first-piece.md",
+    "evidence": "artifacts/c02_one_punch/evidence.json",
+    "user_acceptance": false,
+    "source_hashes_still_match": true,
+    "changed_source_paths": []
+  },
+  "duel": {
+    "implemented": true,
+    "documentation": "duel.md",
+    "evidence": "artifacts/c02_duel/evidence.json",
+    "user_acceptance": false,
+    "accepted_c02_source_hashes_unchanged": true,
+    "feedback_documentation": "playtest-review.md",
+    "feedback_evidence": "artifacts/c02_duel/feedback-20260921/evidence.json",
+    "user_feedback_received": true,
+    "conditional_action_chain_implemented": false,
+    "player_review": {
+      "documentation": "docs/superpowers/specs/work-packages/2026-09-21-chao-gag-representative-chapter/player-playtest-review.md",
+      "evidence": "artifacts/c02_duel/player-review-20260921/evidence.json",
+      "evidence_sha256": "74bf82116e66374a92933ee39b76b14d0b35adddd7158ac467eb244cbb09f260",
+      "actual_player_rounds_reviewed": 30,
+      "actual_player_events_reviewed": 117,
+      "feedback": "negative; current core experience not accepted",
+      "gameplay_changed_in_review": false
+    }
+  },
+  "current_source_drift": [],
+  "short_plan_combat": {
+    "implemented": true,
+    "documentation": "short-plan-combat.md",
+    "evidence": {
+      "path": "artifacts/c02_short_plan/evidence.json",
+      "sha256": "e396068c692605f45f48dda36f2732d145d679e382b99ef40f13198c965751bf",
+      "bytes": 18081
+    },
+    "scope": "Same two-mecha arena and unchanged combat rules. Cursor-led unit inspection, contextual planning commands, on-demand forecast/timeline, keyboard route confirmation, accessible camera pan/tilt/orbit, compact actual-result view.",
+    "user_gameplay_acceptance": false,
+    "user_visual_acceptance": false,
+    "current_next_step": "v5 preserved as comparison; user authorized standalone 3v4 squad Candidate.",
+    "version": "v5",
+    "user_feedback": {
+      "v2": "可玩性已经高了很多了。范围、起身恢复、时间轴、对白、能力菜单和普通招式仍需打磨。",
+      "v3": "两局复玩及五张截图：头像重复、文本覆盖、范围压住机体、缺字、时间轴不明、双方空打、白鸢散纸。",
+      "v4": "本轮的操作还不错。随后要求重组常驻 HUD、支持机体光标、按需展开预测与能力信息、解决战后空栏并补充镜头控制。",
+      "v5": "当前这场战斗的表现，暂时看框架还行。下一步做什么推进"
+    }
+  },
+  "squad_combat": {
+    "version": "squad-v3-direct",
+    "scope": "One directly staged ally and one visibly telegraphed enemy per exchange, optional contextual support. Full-team v2 remains separate.",
+    "evidence": {
+      "path": "artifacts/c02_squad/v3/evidence.json",
+      "sha256": "94447e550d04a5aefd866c3f651244aef03995df32ce3120babe8b3795a184cc"
+    },
+    "acceptance": {
+      "human_v3_playtest": false,
+      "fun": false,
+      "balance": false,
+      "final_art": false,
+      "canon_promotion": false
+    }
+  },
+  "squad_combat_v1_history": {
+    "implemented": true,
+    "version": "v1",
+    "documentation": "squad-combat.md",
+    "evidence": {
+      "path": "artifacts/c02_squad/evidence.json",
+      "sha256": "af038c998740f70aae4d191e464b89d396193db85f1a2ab2ee063b558a2633c8",
+      "bytes": 11543
+    },
+    "user_authorization": "2026-09-22: 当前这场战斗的表现，暂时看框架还行。下一步做什么推进 / ok，开始做",
+    "user_gameplay_acceptance": false,
+    "user_visual_acceptance": false,
+    "current_next_step": "Player squad playtest; tune role value, planning burden and enemy pressure before growth or chapter expansion."
+  },
+  "squad_combat_v2_history": {
+    "implemented": true,
+    "version": "v2",
+    "documentation": "squad-combat.md",
+    "rules_and_extension_design": "tactics-v2.md",
+    "evidence": {
+      "path": "artifacts/c02_squad/v2/evidence.json",
+      "sha256": "a645257b41a7aad8792eff038fd054f8ae0269eccb3e6b2d219bc9f29ca4a772",
+      "bytes": 19702
+    },
+    "user_authorization": "Continue squad prototype; reduce planning burden, give tactics causal differences, and support future noncombat map tasks.",
+    "user_gameplay_acceptance": false,
+    "user_visual_acceptance": false,
+    "current_next_step": "Human comparison of strong attack, feint/opening and flank/escape; refine readability and consequences before expanding chapters."
+  },
+  "fixed_aim_v4_1": {
+    "date": "2026-09-22",
+    "status": "candidate_not_human_accepted",
+    "entry_number": 7,
+    "player_case": "artifacts/c02_squad/v4_1/player-baseline/reported-case.json",
+    "checks": "artifacts/c02_squad/v4_1/fixed-aim-checks.json",
+    "native_checks": "artifacts/c02_squad/v4_1/runtime/checks.json",
+    "comparison": "original-facing heavy misses; fixed-cell jab hits without interruption; fixed-cell heavy flanks, interrupts and protects hero",
+    "original_six_unchanged": true,
+    "limitations": [
+      "same v4 local response order",
+      "not a balance or human learning acceptance",
+      "character/spirit menus remain absent"
+    ],
+    "snapshot": "artifacts/c02_versions/20260922-234500/squad-fixed-aim-v4-1/game",
+    "backup_checks": "artifacts/c02_versions/20260922-234500/fixed-aim-backup-checks.json"
+  },
+  "model_motion_v4_2": {
+    "date": "2026-09-23",
+    "state": "candidate_external_shells_not_human_accepted",
+    "entry_number": 8,
+    "source_provenance": "game-godot/assets/candidate/c02_forge/provenance.json",
+    "native_input_checks": "artifacts/c02_model_motion/runtime/checks.json",
+    "motion_checks": "artifacts/c02_model_motion/moves/checks.json",
+    "rules_checks": [
+      "artifacts/c02_model_motion/regression/fixed-aim-checks.json",
+      "artifacts/c02_model_motion/regression/rules-checks.json"
+    ],
+    "runtime_demonstration": "artifacts/c02_model_motion/model-moves.mp4",
+    "rule_changes": [],
+    "frozen_prior_versions_modified": false,
+    "limitations": [
+      "Only hero and boxer replaced",
+      "Not final character identity",
+      "Original Guardian and enemy models retained",
+      "Extreme armor poses and additional devices not exhaustively certified"
+    ],
+    "native_input_checks_count": 54,
+    "rules_checks_count": 38,
+    "motion_checks_count": 45,
+    "rule_preservation": "artifacts/c02_model_motion/rule-preservation.json",
+    "version_selector_checks": "artifacts/c02_model_motion/selector-checks.json",
+    "canon_validation": [
+      "artifacts/c02_model_motion/canon-report.log",
+      "artifacts/c02_model_motion/canon-strict.log"
+    ],
+    "snapshot": "artifacts/c02_versions/20260923-002614/squad-model-motion-v4-2",
+    "archive_checks": "artifacts/c02_model_motion/archive-checks.json"
+  },
+  "free_cursor_v4_3": {
+    "date": "2026-09-23",
+    "state": "candidate_not_human_accepted",
+    "entry_number": 9,
+    "snapshot": "artifacts/c02_versions/20260923-011438/squad-free-cursor-v4-3/game",
+    "native_input_checks": "artifacts/c02_controls_v4_3/runtime/checks.json",
+    "fixed_aim_regression": "artifacts/c02_controls_v4_3/aim-regression/checks.json",
+    "parent_preservation": "artifacts/c02_controls_v4_3/parent-preservation.json",
+    "archive_checks": "artifacts/c02_controls_v4_3/archive-checks.json",
+    "selector_checks": "artifacts/c02_controls_v4_3/selector-checks.json",
+    "battle_rule_changes": [],
+    "old_eight_snapshots_modified": false,
+    "changes": [
+      "free map cursor and draft-preserving selection exit",
+      "left drag orbit and pitch, right drag pan, wheel zoom",
+      "floor-priority route selection and pointer-transparent status readouts",
+      "click-vs-drag capture and release protection"
+    ]
+  }
+}

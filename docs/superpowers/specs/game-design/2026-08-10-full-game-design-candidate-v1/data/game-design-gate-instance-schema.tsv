@@ -1,0 +1,47 @@
+field_name	required	purpose	invalid_if_missing
+gate_instance_id	yes	唯一门实例ID，建议GATE-Cxx-Eyy-类型-版本	无法区分定义和实际通过记录
+gate_definition_id	yes	引用game-design-gate-registry中的门定义	无法知道执行哪套规则
+scope_type	yes	series;chapter;episode;operation;encounter;asset_pack;build之一	通过范围不明确
+scope_instance	yes	具体Cxx/Eyy/Operation/资产包/build ID	可能把局部PASS升级全章
+gate_order	yes	同一scope中的排序号	无法稳定排序和检查跳门
+exact_position	yes	该门位于哪个上游产物之后和哪个下游之前	无法阻断错误阶段
+depends_on_instance_ids	yes	前置门实例ID列表，无前置写none	可绕过依赖
+authority_snapshot_id	yes	本实例读取的权威快照	来源可能漂移
+design_snapshot_id	conditional	GD/设计快照，无设计输入时写none	设计真相不可追溯
+reveal_snapshot_id	conditional	揭示/知识快照，无揭示输入时写none	Writer可能获得错误信息
+actual_input_paths	yes	实际输入文件或manifest路径列表	只登记标题无实物
+actual_input_sha256	yes	与路径逐一对应的内容hash	文件变化仍被当作通过
+source_versions	yes	所有来源版本	无法重建同一上下文
+checker_entrypoints	yes	实际执行的脚本/命令标识；纯人门写human_only	只写应检查而未执行
+checker_versions	yes	脚本commit/hash或版本	同名checker规则漂移
+checker_arguments	yes	本次profile、路径和参数	无法复现
+checker_exit_codes	yes	逐checker退出码	报告与实际结果可能不一致
+checker_report_paths	yes	完整机器报告或none	只有状态标签没有证据
+profile_id	yes	light;medium;heavy或具体测试profile	无法知道必需类型和数量
+required_type_counts	yes	按profile展开的证据类型和数量	关键词出现即可误过
+file_existence_result	yes	pass;fail;not_applicable	缺文件仍可通过
+mime_dimension_result	yes	pass;fail;not_applicable	伪文件或不可审阅文件通过
+hash_match_result	yes	pass;fail	manifest与实物不一致
+zero_block_result	yes	pass;fail	block项可能被放行
+semantic_binding_result	yes	pass;fail;not_applicable	实体/顺序/状态漂移无法发现
+receipt_authority_kind	yes	decision;gate_template;none之一	产品决策与单个资产/构建操作回执可能混用
+decision_id	conditional	receipt_authority_kind=decision时引用具体决策ID，否则写none	门实例可能用错用户决策
+decision_phase	conditional	receipt_authority_kind=decision时写candidate_test_authorization、provisional_test_carrier、bounded_migration_plan、bounded_migration_checker、bounded_migration_registry、bounded_migration_chain或bounded_migration_postcheck；否则写none	把测试授权、临时载体与不同迁移阶段混为一谈
+gate_receipt_set_template_id	conditional	receipt_authority_kind=gate_template时引用gate-receipt-set-templates，否则写none	单个故事/视觉/玩法/资产/构建门无法实例化
+receipt_set_instance_id	yes	由decision receipt set或gate template生成、绑定本scope/version的唯一集合实例ID；无回执写none	同一模板或决策集可能被跨对象复用
+requirement_ids	yes	decision集合列decision requirement ID；gate模板列requirement key；无回执写none	集合存在但具体要求未逐项证明
+receipt_subject_ids	yes	与requirement_ids逐一对应的reader/direction/previs/build/asset manifest等具名对象和版本	回执没有精确对象
+receipt_phases	yes	与requirement_ids逐一对应的story_acceptance;direction;previs_direction;gameplay_acceptance;authorization;handoff;runtime;delivery或none	授权、成品交接与构建验收可能互相冒充
+receipt_requirement	yes	必须与receipt_set一致；正式门默认all	一张回执可能误满足复合门
+receipt_types	yes	按requirement_ids顺序列product_direction;story;gameplay;visual;production或none	不同用户验收被混用
+receipt_paths	yes	与receipt_types逐一对应的真实回执路径或none	声称用户通过却无证据
+receipt_sha256s	yes	与receipt_paths逐一对应的hash或none	回执内容变化不可追踪
+receipt_scopes	yes	与回执逐一对应的接受与排除范围	局部选择被升级正式交付
+cross_phase_reuse_result	yes	pass;fail;not_applicable；authorization/handoff/runtime/delivery路径与hash不得复用	一张回执可能同时批准尚未存在的成品与构建
+checked_by	yes	工具和人类责任者	无人对通过负责
+last_checked_at	yes	ISO-8601时间	状态可能过期
+status	yes	missing;blocked;ready_for_human;passed;invalidated之一	状态语义不统一
+invalidation_reason	yes	无失效写none	无法解释为何退回
+invalidation_targets	yes	失败/变化必须失效的实例列表或none	下游继续使用旧快照
+unlocks_instance_ids	yes	实际解锁的下游门或none	定义级解锁被误作实际放行
+notes	yes	限制、未决项和禁止推论	人类无法理解边界

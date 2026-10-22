@@ -1,0 +1,77 @@
+{
+  "assembled_context_sha256": "e2d64240885c92260d8de60bf5521306201bd8fffca51b8f871a0f46e3fac7d9",
+  "bytes": 75914,
+  "chapter": "C02",
+  "chars": 32324,
+  "context_key": "e2d64240885c92260d8de60bf5521306201bd8fffca51b8f871a0f46e3fac7d9",
+  "continuity_receipt_hashes": {},
+  "entry_receipt_hashes": {
+    "C02E01-F03": "7f9fec4f30323e94fdece19e279b43c3306e44956987003b6fe020fc126e10ba"
+  },
+  "episode": "C02E01",
+  "fragment_card_sha256": "2e2f852de45da16358f825844cc27c82b9c9eea95b76b3419d52721438dc5e00",
+  "fragment_id": "C02E01-F04",
+  "path": "docs/superpowers/specs/story-runtime/effect-tests/C02-from-C01-v3-2026-07-29/E01/run/contexts/C02E01-F04-e2d64240885c.md",
+  "prior_prose_tail_sha256": "763130577369200877bb867c0931b8f34f4559540201ff72974a952753679615",
+  "retrieval_corpus_hashes": {
+    "docs/superpowers/specs/story-runtime/generated/runtime_corpus.jsonl": "38b98d37aa3e787721306fb4aae515a9c6ecd3f8749fe419d90594f5efe438e4",
+    "docs/superpowers/specs/story-runtime/generated/support/support_runtime_corpus.jsonl": "c1733f67e8fa331008d733ed3269f8948b15f96c30570ee8c70c31e34bc3da5d"
+  },
+  "retrieval_trace": [
+    {
+      "explicit_seed": true,
+      "layer": "current_canon",
+      "node_key": "entity:V353U071",
+      "record_id": "V353U071",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv",
+      "title": "玩家模型机“无牌一号”"
+    },
+    {
+      "explicit_seed": true,
+      "layer": "current_canon",
+      "node_key": "entity:V353U043",
+      "record_id": "V353U043",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv",
+      "title": "火种货柜领袖"
+    },
+    {
+      "explicit_seed": true,
+      "layer": "current_canon",
+      "node_key": "entity:CH_QIHAI",
+      "record_id": "CH_QIHAI",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv",
+      "title": "七海"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "current_canon",
+      "node_key": "scene:V359-C02E01-CREATIVE",
+      "record_id": "V359-C02E01-CREATIVE",
+      "source": "docs/superpowers/specs/data/canon/scenes.tsv",
+      "title": "救命零件，限定发售"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "candidate_support",
+      "node_key": "support:package_lifecycle:PK_GUEST_BUILD_ARENA",
+      "record_id": "PK_GUEST_BUILD_ARENA",
+      "source": "docs/superpowers/specs/data/story/v35_series_package_lifecycle_spine_v1.tsv",
+      "title": "拼装战场"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "candidate_support",
+      "node_key": "support:roster_lifecycle:V353U071",
+      "record_id": "V353U071",
+      "source": "docs/superpowers/specs/data/story/v35_series_roster_lifecycle_inventory_v1.tsv",
+      "title": "玩家模型机“无牌一号”"
+    }
+  ],
+  "revision_note_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "schema_version": 1,
+  "stable_prefix_sha256": "c1174e6ec49ad9c716de13d12bc5ac30cd91bf78307470ec597d3a81ac6af0f3",
+  "target_output_chars": {
+    "max": 6000,
+    "min": 3000
+  }
+}

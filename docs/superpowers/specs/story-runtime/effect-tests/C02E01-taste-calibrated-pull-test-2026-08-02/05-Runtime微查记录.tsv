@@ -1,0 +1,19 @@
+query_id	stage	question	answer_summary	authority	source	impact
+Q001	S2-S3 preflight	主循环转子是什么，能否被写成小零件？	它是恢复万机馆有限飞行能力的全尺寸工业总成，需要重型运输与吊装；模型只帮助识别版本和适配关系，不会把模型放大成实物。精确尺寸仍开放。	Working	Canon entity MECHA_WANJI_MAIN_CIRCULATION_ROTOR	S2-S3必须把争夺物写成可见的巨型机械总成，不再写密封环式小故障；本轮Candidate取直径约十二米。
+Q002	S2-S3 preflight	货柜领袖现在是什么状态，能否在E01直接成为玩家永久机体？	它是有独立人格的全尺寸旧货运车辆，可作业变形；C02可以参与，但当前实体表与参战包的正式加入时点存在冲突。	Working with source conflict	Canon entity V353U043 and roster package R18	本轮只让它作为自主场景友军变形参战，不宣告永久入队，不由玩家直接操控。
+Q003	S2-S3 preflight	无牌一号是什么，是否由模型直接巨大化？	它是全尺寸模块化竞技底盘，搭载低权限竞技AI；模型只提供同构改装数据。C02E01是首次可操作，C03才确定首个永久工作模块。	Working	Canon entity V353U071	E01可使用原有竞技结构或一次性借用工具，不得提前授予C03永久模块。
+Q004	S2-S3 preflight	纪存是否已有远程驾驶机体的固定能力？	现有Working只规定他是主视点、必须主动判断与行动，没有固定远程驾驶天赋。	Working	Canon character CH_JICUN	本轮若让纪存操作无牌一号，必须依靠现场实体控制器和低权限AI平衡，而非新增超能力。
+Q005	S2-S3 preflight	万机馆当前形态和尺度是什么？	约130至160米的低矮巡展载舰，可在展馆、发射过渡与巡展载舰状态间切换；尚非人形，防御与泊位能力有限。	Working	Canon entity MECHA_WANJI_MOBILE_CHASSIS	S3以整舰悬停转向和舰艏压场表现尺度，不临时写成人形，也不靠厘米级结构动作取胜。
+Q006	S2-S3 preflight	馆守Z能否正常双臂格斗？	馆守Z高18米，原右臂已毁；临时巡展右臂可抓持、锚定、拖曳、固定和部署，不能打拳或做精密操作。	Working	Canon entities V353U001 and MECHA_GUARDIAN_TOURING_ARM	S3让临时右臂负责锚住转子架、左臂负责牵引，不出现右拳或精密拆件。
+Q007	S2 preflight	木桶街货运区的固定地图是否已锁死？	当前Working只锁定这里有主循环转子与泊位件；货运地图、零件精确尺寸和战斗阶段仍留给C02重建。	Working open field	Canon query 木桶街 / V359-C02E01-CREATIVE	可建立退役会展货运区与四块清晰战场，但只作为本轮Candidate，不迁移Canon。
+Q008	S2 preflight	平台、索引与白框是否必须是同一组织？	没有Current事实把C02本地货运平台定义为索引或白框主谋；白框是多方共用的生产生态，七海也无权替平台授权。	Working boundary	Canon query 平台 and White Frame ecology	平台仅作为本地仓储转售系统及其执行单位，不把本话升级为索引阴谋；七海只能提供远程事实提醒。
+Q009	S2 preflight	白鸢与陆衡在E01可以怎样存在？	白鸢在E01只能留下被盗用作品的痕迹，E03才本人到场；陆衡C03正式登场，不在E01现场。	Working	Canon character/entity rows for Baiyuan and Luheng	S2-S3不让两人肉身或远程对话出场；白鸢只保留为后续可辨认痕迹。
+Q010	S2 preflight	谁能让无牌一号动起来？	Canon只锁定它在E01首次可操作，尚未锁定驾驶员；本地实体钥匙、竞技控制台和低权限AI均可在Candidate层补足。	Open within Working	V353U071 plus current Candidate scene chain	本轮采用玛拉交出实体钥匙、纪存在近场竞技控制台操作、无牌一号AI只负责平衡的简单方案；不形成纪存固定驾驶天赋。
+Q011	S2 preflight	玛拉在本轮拥有什么权限？	玛拉尚属本轮Candidate；她可被定义为合作社物流工程师和旧货运区现场负责人，但不能因此拥有平台后台权限。	Candidate	Current C02 Candidate spine and S1	她能证明转子归属、打开本地竞技设备并组织工人，不能远程停止平台牵引线。
+Q012	S3 preflight	货柜领袖的作业变形是否必须是人形？	Working只锁定已有全尺寸载具身体、独立人格与作业变形，没有锁定精确形态；其正式战斗加入时点晚于本话。	Working open form	Canon entity V353U043	本轮Candidate让它变成十余米级作业机器人，以手臂、背架和支腿承重；仍只作自主场景友军。
+Q013	S4 preflight	修件母亲是否已有Current人物模型？	Current Canon尚无独立实体；既有L4候选把她定义为继承亡子工房、继续完成最后委托的普通维修者，并明确不得复活亡子、解释G.A.G.或成为宇宙钥匙。	Candidate admitted material	C02 preproduction entity table plus approved real-life motif	本轮允许作为E01局部重要NPC进入两个演绎方案；若最终采用，后续需正式建模和决定C15回收方式。
+Q014	S4 preflight	唐胶在此场的稳定声音和职责是什么？	中国公民唐启明，唐胶是工房外号；嘴毒手作派，台词来自工艺与具体关系，不说主题金句。	Working	Canon entity CH_TANGJIAO	两个方案都让他的选择通过具体纸页、修件和当事人发生，不写公开宣言。
+Q015	S4 preflight	七海能否替平台决定冻结、撤回或放行？	七海是代哥安全封存局内部改革派，此时远程；她不能替平台、军方或城市授权，只能说明自己掌握的真实风险并承担本人判断。	Working	Canon entity CH_QIHAI	她只解释公开旧维修页会让平台识别四机改装，不批准或阻止唐胶发送。
+Q016	S5 preflight	四台重涂机能在E01尾声出现到什么程度？	喷气叛星、死锁、镜星、雷翎的Current首轮正式行动均在C02E02；E01若提前完整展示或报齐姓名，会静默改动Working首登。	Working boundary with Candidate foreshadow	Canon entities V353U044-V353U047	S5只显示四处异地机库同时收到召回、局部轮廓或启动反应，不报齐名字、不让它们出击；正式亮相留E02。
+Q017	S5 preflight	白鸢在E01能否远程参加战斗或改变路线？	白鸢在E01只能留下被盗用作品痕迹，E03才肉身到场；当前没有战斗指令权、未来视、造物或画稿改现实能力。	Working	Canon entity N_BAIYUAN and CONCEPT_C02_STORYBOARD_PREVIS_CHAIN	S5只让公开频道把被裁署名的安全分镜传到她眼前，她发送停止使用与到场通知；不参与本话胜负。
+Q018	S5 preflight	主转子安装后能解决到什么程度？	主转子是恢复万机馆有限航行的全尺寸工业总成；安装仍需实物吊装和工程复核，只恢复有限航行，不解决永久外泊、全长校正或保险。	Working	Canon entity MECHA_WANJI_MAIN_CIRCULATION_ROTOR	S5以旧泊位接货臂把巨环送入万机馆侧部检修口，低功率转起并恢复一侧舷窗；明确下一站仍需完整校正。

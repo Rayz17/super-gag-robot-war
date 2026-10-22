@@ -1,0 +1,10 @@
+contract_id	contract_type	player_facing_name	definition	cost_unit	global_or_parallel_limit	forced_merge_rule	machine_state_required	example_scope	status
+BRCOST01	production_tier	H4独立战役岔路	独立地图、Boss/胜利条件或一整段不同世界内容	1英雄地图+1Boss/大状态+核心语音/Cut-in+完整QA矩阵	全剧最多4个；同一波段最多1个活跃H4	最迟在下一宏观波末汇流到共同世界危机，但保留机体/人物/政治伤痕	branch_id;route_id;map_variant;roster_delta;relationship_delta;merge_scar	分舰去向、重大What-if、生死/身体硬分支	candidate_branch_cost_v1
+BRCOST02	production_tier	H3共图目标差分	同一地图/敌军骨架，目标、友军、可控单位和结局不同	0.25至0.5地图成本+条件事件+状态QA	同一章最多2个H3；同时存续不超过4个	公共Boss/灾害汇流，未选路线由具体角色执行	objective_variant;ally_set;enemy_state;city_state;failure_dignity	合体/分体、护送/追击、敌我转换	candidate_branch_cost_v1
+BRCOST03	production_tier	H2人物与机体状态差分	共用关卡，改变生还、驾驶员、身体、关系、武装、舰籍与支援	立绘/语音/单位状态+少量Cut-in差分	全局持久变量上限12个高频读取；单章主动读取最多6个	状态不强制归零，只减少本章读取频率	character_state;unit_state;relationship_state;berth_location;support_variant	恋爱、战损、后继机、未选身体	candidate_branch_cost_v1
+BRCOST04	production_tier	H1结算与馆藏差分	共用玩法，仅改变展陈、短对话、图鉴、后日谈、资源和地方消息	文本/UI/小型资产	可广泛存在，但必须有可见对象而非隐藏分数	进入终局/后游戏统一结算语言	collection_state;message;epilogue_card;resource_delta	维修痕、错版保留、地方开馆结果	candidate_branch_cost_v1
+BRUI01	player_ui	明确战略岔路	出发前显示去哪里、帮助谁、会暂时失去哪支队伍	读取H4/H3	一次只显示一个主要战略岔路	允许玩家在下一会合点看见未选路线结果	choice_prompt;route_preview;unselected_executor	舰队/城市路线	candidate_branch_cost_v1
+BRUI02	player_ui	战中结果	不弹抽象路线菜单，由救下谁、击坠谁、是否合体/撤退形成结果	读取H3/H2	每场最多2个主结果轴	战后用人物、机体和地图状态明确确认	battle_result;visible_consequence	说得、撤退、保护低价值目标	candidate_branch_cost_v1
+BRUI03	player_ui	隐藏What-if	通过机体、关系和探索条件让玩家改变著名悲剧映射	读取H4/H3/H2	每个大IP包最多一个主What-if；不按作品机械配额	失败路线仍有尊严并继续推进	what_if_id;trigger_clues;failure_dignity;survivor_effect	旧届救回、宿敌不共灭、导师生还	candidate_branch_cost_v1
+BRUI04	player_ui	关系选择	用场面和行动决定靠近、误解、公开选择和牺牲资格，不用好感条替代	读取H2/H1	同一场面最多改变两条关系边	公共剧情继续，但关系动作、支援和结局不同	relationship_edge;consent_state;support_state;terminal_eligibility	纪存/七海/白鸢与群像关系	candidate_branch_cost_v1
+BRUI05	player_ui	终局汇总	在F/G前用机体位置、人物承诺和未解决伤口展示可达结局，不列后台十类术语	读取全部成本层	最多两套终盘演出骨架；结局组合用状态与后日谈差分	逆合体实体终战汇流，人物/政治/生活结算保持差异	terminal_matrix;unit_action;life_cost;governance;epilogue	牺牲、双留、多边、治理和后游戏	candidate_branch_cost_v1

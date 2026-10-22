@@ -1,0 +1,328 @@
+{
+  "meta": {
+    "trace_pack_id": "D04-P1-TRACES-V0.2",
+    "authority": "Candidate",
+    "status": ["zero_build", "human_not_run", "user_not_decided"],
+    "seed_claim": "authored_declared_trace_regression_only",
+    "pairwise_tradeoff_claim": "REGISTERED_SEEDS_NON_DOMINATED_ONLY",
+    "global_dominance_status": "DOMINANCE_UNPROVEN",
+    "search_gate": "BOUNDED_SEARCH_REQUIRED",
+    "fun_status": "FUN_UNPROVEN",
+    "human_gate": "M5_REQUIRED"
+  },
+  "clock_state_base": {
+    "world_time_ms": 0,
+    "cycle": 0,
+    "world_tick_count": 0,
+    "bridge_stress": 0,
+    "hazard_occupied": false,
+    "bridge_base_tick_count": 0,
+    "autonomous": {"TEST_AUTO": {"position": [1,5], "microticks": 0}},
+    "autonomous_microticks_total": 0,
+    "observation_snapshot": 0,
+    "report_age_windows": 0,
+    "intent_revision_count": 0,
+    "intent_frozen": false,
+    "reaction_reserved": false,
+    "reaction_trigger_count": 0,
+    "volatile_cycle_flags": [],
+    "deadline_eval_count": 0,
+    "exited_vehicle_count": 0,
+    "blocked_vehicle": false,
+    "objective_primary": "pending",
+    "event_log": [],
+    "commit_cursor": 0,
+    "restore_event_log_hash_same": false,
+    "restore_commit_cursor_same": false
+  },
+  "clock_state_refs": {
+    "CLK_S0_IDLE_TIME0_CYCLE0": {"patch": {}},
+    "CLK_S0_BRIDGE_OCCUPIED_STRESS0": {"patch": {"hazard_occupied": true}},
+    "CLK_S0_OBS0_INTENT_FROZEN": {"patch": {"intent_frozen": true}},
+    "CLK_S0_REACTION_RESERVED_UNUSED": {"patch": {"reaction_reserved": true, "volatile_cycle_flags": ["reaction_reserved"]}},
+    "CLK_S3_TIME24_CYCLE3_ONE_EVAC_BLOCKED": {"patch": {"world_time_ms": 24000, "cycle": 3, "world_tick_count": 3, "autonomous_microticks_total": 12, "observation_snapshot": 3, "report_age_windows": 3, "exited_vehicle_count": 1, "blocked_vehicle": true}},
+    "CLK_S0_MID_EVENTLOG_TWO_COMMITS": {"patch": {"event_log": [{"event_id": "COMMIT_1", "tick": 0}, {"event_id": "COMMIT_2", "tick": 0}], "commit_cursor": 2}},
+    "CLK_S1_IDLE_TIME8_CYCLE1": {"patch": {"world_time_ms": 8000, "cycle": 1, "world_tick_count": 1, "autonomous": {"TEST_AUTO": {"position": [5,5], "microticks": 4}}, "autonomous_microticks_total": 4, "observation_snapshot": 1, "report_age_windows": 1}},
+    "CLK_S1_BRIDGE_OCCUPIED_STRESS1": {"patch": {"world_time_ms": 8000, "cycle": 1, "world_tick_count": 1, "bridge_stress": 1, "hazard_occupied": true, "bridge_base_tick_count": 1, "observation_snapshot": 1, "report_age_windows": 1}},
+    "CLK_S1_BRIDGE_MIX_STRESS1": {"patch": {"world_time_ms": 8000, "cycle": 1, "world_tick_count": 1, "bridge_stress": 1, "hazard_occupied": true, "bridge_base_tick_count": 1, "observation_snapshot": 1, "report_age_windows": 1}},
+    "CLK_S1_OBS1_INTENT_REFRESH_READY": {"patch": {"world_time_ms": 8000, "cycle": 1, "world_tick_count": 1, "observation_snapshot": 1, "report_age_windows": 1, "intent_frozen": false}},
+    "CLK_S1_REACTION_EXPIRED": {"patch": {"world_time_ms": 8000, "cycle": 1, "world_tick_count": 1, "observation_snapshot": 1, "report_age_windows": 1, "reaction_reserved": false, "reaction_trigger_count": 0, "volatile_cycle_flags": []}},
+    "CLK_S4_TIME32_CYCLE4_ONE_EVAC_BLOCKED": {"patch": {"world_time_ms": 32000, "cycle": 4, "world_tick_count": 4, "autonomous_microticks_total": 16, "observation_snapshot": 4, "report_age_windows": 4, "deadline_eval_count": 1, "exited_vehicle_count": 1, "blocked_vehicle": true, "objective_primary": "retry_required"}},
+    "CLK_S1_RESTORED_CLOSE_HASH_EQ_DIRECT": {"patch": {"world_time_ms": 8000, "cycle": 1, "world_tick_count": 1, "observation_snapshot": 1, "report_age_windows": 1, "event_log": [{"event_id": "COMMIT_1", "tick": 0}, {"event_id": "COMMIT_2", "tick": 0}], "commit_cursor": 2, "restore_event_log_hash_same": true, "restore_commit_cursor_same": true}}
+  },
+  "clock_plan_refs": {
+    "PLAN_ALL_WAIT_CLEAR_LANE": {
+      "operations": [
+        {"op": "advance_time", "ms": 8000}, {"op": "increment", "field": "cycle", "by": 1}, {"op": "increment", "field": "world_tick_count", "by": 1},
+        {"op": "move_auto", "id": "TEST_AUTO", "to": [5,5], "microticks": 4}, {"op": "increment", "field": "autonomous_microticks_total", "by": 4},
+        {"op": "increment", "field": "observation_snapshot", "by": 1}, {"op": "increment", "field": "report_age_windows", "by": 1}
+      ]
+    },
+    "PLAN_ALL_WAIT_HAZARD_OCCUPIED": {
+      "operations": [
+        {"op": "bridge_close", "base": 1, "breaker": 0, "brace": 0}, {"op": "advance_time", "ms": 8000}, {"op": "increment", "field": "cycle", "by": 1}, {"op": "increment", "field": "world_tick_count", "by": 1},
+        {"op": "increment", "field": "observation_snapshot", "by": 1}, {"op": "increment", "field": "report_age_windows", "by": 1}
+      ]
+    },
+    "PLAN_BREAKER_ADVANCE_PLUS_COMPLETED_BRACE": {
+      "operations": [
+        {"op": "bridge_close", "base": 1, "breaker": 2, "brace": -2}, {"op": "advance_time", "ms": 8000}, {"op": "increment", "field": "cycle", "by": 1}, {"op": "increment", "field": "world_tick_count", "by": 1},
+        {"op": "increment", "field": "observation_snapshot", "by": 1}, {"op": "increment", "field": "report_age_windows", "by": 1}
+      ]
+    },
+    "PLAN_PLAYER_MOVES_AFTER_INTENT": {
+      "operations": [
+        {"op": "set", "field": "intent_frozen", "value": false}, {"op": "advance_time", "ms": 8000}, {"op": "increment", "field": "cycle", "by": 1}, {"op": "increment", "field": "world_tick_count", "by": 1},
+        {"op": "increment", "field": "observation_snapshot", "by": 1}, {"op": "increment", "field": "report_age_windows", "by": 1}
+      ]
+    },
+    "PLAN_RESERVE_WITHOUT_TRIGGER": {
+      "operations": [
+        {"op": "set", "field": "reaction_reserved", "value": false}, {"op": "set", "field": "volatile_cycle_flags", "value": []}, {"op": "advance_time", "ms": 8000}, {"op": "increment", "field": "cycle", "by": 1}, {"op": "increment", "field": "world_tick_count", "by": 1},
+        {"op": "increment", "field": "observation_snapshot", "by": 1}, {"op": "increment", "field": "report_age_windows", "by": 1}
+      ]
+    },
+    "PLAN_ALL_WAIT_BLOCKED_ROUTE": {
+      "operations": [
+        {"op": "advance_time", "ms": 8000}, {"op": "increment", "field": "cycle", "by": 1}, {"op": "increment", "field": "world_tick_count", "by": 1}, {"op": "increment", "field": "autonomous_microticks_total", "by": 4},
+        {"op": "increment", "field": "observation_snapshot", "by": 1}, {"op": "increment", "field": "report_age_windows", "by": 1}, {"op": "increment", "field": "deadline_eval_count", "by": 1}, {"op": "set", "field": "objective_primary", "value": "retry_required"}
+      ]
+    },
+    "PLAN_RESTORE_AND_FINISH_CYCLE": {
+      "operations": [
+        {"op": "assert_restore_same"}, {"op": "advance_time", "ms": 8000}, {"op": "increment", "field": "cycle", "by": 1}, {"op": "increment", "field": "world_tick_count", "by": 1},
+        {"op": "increment", "field": "observation_snapshot", "by": 1}, {"op": "increment", "field": "report_age_windows", "by": 1}
+      ]
+    }
+  },
+  "clock_vector_matrix": {
+    "adapters": ["P1-A", "P1-B", "P1-C", "P1-D"],
+    "templates": [
+      {"case": "CLK_IDLE_W1", "pre": "CLK_S0_IDLE_TIME0_CYCLE0", "plan": "PLAN_ALL_WAIT_CLEAR_LANE", "post": "CLK_S1_IDLE_TIME8_CYCLE1", "assertion": "world_clock_and_autonomous_tick", "cross_adapter_hash": "same"},
+      {"case": "CLK_BRIDGE_BASE", "pre": "CLK_S0_BRIDGE_OCCUPIED_STRESS0", "plan": "PLAN_ALL_WAIT_HAZARD_OCCUPIED", "post": "CLK_S1_BRIDGE_OCCUPIED_STRESS1", "assertion": "environment_once_per_cycle", "cross_adapter_hash": "same"},
+      {"case": "CLK_BRIDGE_MIX", "pre": "CLK_S0_BRIDGE_OCCUPIED_STRESS0", "plan": "PLAN_BREAKER_ADVANCE_PLUS_COMPLETED_BRACE", "post": "CLK_S1_BRIDGE_MIX_STRESS1", "assertion": "environment_named_markers", "cross_adapter_hash": "same"},
+      {"case": "CLK_OBSERVE_FREEZE", "pre": "CLK_S0_OBS0_INTENT_FROZEN", "plan": "PLAN_PLAYER_MOVES_AFTER_INTENT", "post": "CLK_S1_OBS1_INTENT_REFRESH_READY", "assertion": "observation_and_intent_age", "cross_adapter_hash": "same"},
+      {"case": "CLK_REACTION_EXPIRE", "pre": "CLK_S0_REACTION_RESERVED_UNUSED", "plan": "PLAN_RESERVE_WITHOUT_TRIGGER", "post": "CLK_S1_REACTION_EXPIRED", "assertion": "reaction_and_resource_reset", "cross_adapter_hash": "same"},
+      {"case": "CLK_DEADLINE_32", "pre": "CLK_S3_TIME24_CYCLE3_ONE_EVAC_BLOCKED", "plan": "PLAN_ALL_WAIT_BLOCKED_ROUTE", "post": "CLK_S4_TIME32_CYCLE4_ONE_EVAC_BLOCKED", "assertion": "deadline_exactly_once", "cross_adapter_hash": "same"},
+      {"case": "CLK_MIDSAVE", "pre": "CLK_S0_MID_EVENTLOG_TWO_COMMITS", "plan": "PLAN_RESTORE_AND_FINISH_CYCLE", "post": "CLK_S1_RESTORED_CLOSE_HASH_EQ_DIRECT", "assertion": "midcycle_restore_determinism", "cross_adapter_hash": "same"}
+    ]
+  },
+  "physics_cases": [
+    {"case_id": "PHY_ANCHOR_HOLDS_BREAKER", "kind": "displacement", "terms": {"force_band": 3, "momentum_band": 1, "source_support": 0, "valid_helper_support": 0, "target_mass_band": 3, "target_stability_band": 2, "target_support_band": 2}, "expected_margin": -3, "expected_result": "target_holds_source_stability_minus_1"},
+    {"case_id": "PHY_SKIRM_EXPOSED_FUNCTION", "kind": "effect", "terms": {"penetration_band": 1, "force_band": 1, "relative_motion_band": 1, "protection_band": 1, "cover_band": 0, "system_guard_band": 0}, "expected_margin": 2, "expected_result": "function_2_to_1_and_stability_minus_1_or_function_1_to_0"}
+  ],
+  "excluded_history_note": "v0.1 incomplete seed arrays are not loaded by v0.2; see validation/d04-p1-neutral-rules-paper-fixture-v0.1.md",
+  "regression_seeds": [
+    {
+      "seed_id": "SEED_FRONT_BRACE",
+      "claim": "regression_seed_not_fun_evidence",
+      "route_commitments": [
+        {"vehicle_id": "EVAC_1", "route_id": "ROUTE_EVAC1_MAIN", "commit_boundary": "before_cycle_1", "free_reroute": false},
+        {"vehicle_id": "EVAC_2", "route_id": "ROUTE_EVAC2_MAIN", "commit_boundary": "before_cycle_1", "free_reroute": false},
+        {"vehicle_id": "EVAC_3", "route_id": "ROUTE_EVAC3_SIDE", "commit_boundary": "before_cycle_1", "free_reroute": false}
+      ],
+      "cycles": [
+        {
+          "cycle": 1,
+          "plans": [
+            {"actor_id": "ALLY_ANCHOR", "route": [[3,4],[4,4],[5,4]], "action_id": "TACT_BRACE", "target": "SUPPORT_W", "outcome_event_ids": ["FA1_BRACE"]},
+            {"actor_id": "ALLY_ENGINEER", "route": [], "action_id": "TACT_FIELD_REPAIR", "target": "BRIDGE_MAIN", "outcome_event_ids": ["FA1_REPAIR"]},
+            {"actor_id": "EN_BREAKER_1", "route": [[11,4],[10,4],[9,4],[8,4],[7,4]], "action_id": "TACT_ROUTE", "target": "BRIDGE_MAIN", "outcome_event_ids": ["FA1_B1_MOVE"]},
+            {"actor_id": "EN_BREAKER_2", "route": [[11,7],[10,7],[9,7],[8,7],[7,7]], "action_id": "TACT_ROUTE", "target": "GATE_SIDE", "outcome_event_ids": ["FA1_B2_MOVE"]},
+            {"actor_id": "EN_HUNTER_1", "route": [[12,6],[11,6],[10,6],[9,6]], "action_id": "TACT_ROUTE", "target": "SAMPLE_K17", "outcome_event_ids": ["FA1_HUNTER_MOVE"]},
+            {"actor_id": "EN_SUPPRESS_1", "route": [], "action_id": "TACT_SUPPRESS", "target": "MAIN_VEHICLE_BAND", "outcome_event_ids": ["FA1_SUP1_FIRE"]},
+            {"actor_id": "EN_SUPPRESS_2", "route": [], "action_id": "TACT_SUPPRESS", "target": "SIDE_VEHICLE_BAND", "outcome_event_ids": ["FA1_SUP2_FIRE"]}
+          ],
+          "participant_outcomes": {"ALLY_ANCHOR":"brace_active","ALLY_ENGINEER":"prior_stress_repaired","ALLY_SKIRMISHER":"observe_stabilize","EN_BREAKER_1":"advance_no_contact","EN_BREAKER_2":"advance_y7_only","EN_HUNTER_1":"adjacent_no_time_to_interact","EN_SUPPRESS_1":"fire_complete","EN_SUPPRESS_2":"fire_complete"},
+          "events": [
+            {"event_id":"FA1_HUNTER_MOVE","tick":9,"op":"move_unit","unit_id":"EN_HUNTER_1","anchor":[9,6],"cells":[[9,6]],"cause":"TACT_ROUTE"},
+            {"event_id":"FA1_ANCHOR_MOVE","tick":10,"op":"move_unit","unit_id":"ALLY_ANCHOR","anchor":[5,4],"cells":[[5,4],[6,4]],"cause":"TACT_ROUTE"},
+            {"event_id":"FA1_REPAIR","tick":12,"op":"bridge_repair","actor_id":"ALLY_ENGINEER","amount":1,"cause":"TACT_FIELD_REPAIR"},
+            {"event_id":"FA1_BRACE","tick":14,"op":"set_brace","unit_id":"ALLY_ANCHOR","support_cell":[6,4],"active":true,"cause":"TACT_BRACE"},
+            {"event_id":"FA1_B1_MOVE","tick":16,"op":"move_unit","unit_id":"EN_BREAKER_1","anchor":[7,4],"cells":[[7,4],[8,4]],"cause":"TACT_ROUTE"},
+            {"event_id":"FA1_B2_MOVE","tick":16,"op":"move_unit","unit_id":"EN_BREAKER_2","anchor":[7,7],"cells":[[7,7],[8,7]],"cause":"TACT_ROUTE"},
+            {"event_id":"FA1_SUP1_FIRE","tick":16,"op":"plan_outcome","actor_id":"EN_SUPPRESS_1","status":"complete","cause":"TACT_SUPPRESS"},
+            {"event_id":"FA1_SUP2_FIRE","tick":16,"op":"plan_outcome","actor_id":"EN_SUPPRESS_2","status":"complete","cause":"TACT_SUPPRESS"},
+            {"event_id":"FA1_EV1","tick":16,"op":"move_vehicle","vehicle_id":"EVAC_1","route_id":"ROUTE_EVAC1_MAIN","path":[[3,5],[4,5],[5,5],[6,5],[7,5]],"cause":"AUTONOMOUS_ROUTE"},
+            {"event_id":"FA1_EV2","tick":16,"op":"move_vehicle","vehicle_id":"EVAC_2","route_id":"ROUTE_EVAC2_MAIN","path":[[1,5],[2,5],[3,5],[4,5],[5,5]],"cause":"AUTONOMOUS_ROUTE"},
+            {"event_id":"FA1_EV3","tick":16,"op":"move_vehicle","vehicle_id":"EVAC_3","route_id":"ROUTE_EVAC3_SIDE","path":[[2,8],[3,8],[4,8],[5,8],[6,8]],"cause":"AUTONOMOUS_ROUTE"}
+          ],
+          "expected_bridge_stress":0,
+          "expected_state_hash":"3dc3895e03b52532a230dcae388d6ef63b950e8e0ea9518d6023293d8e1cee95"
+        },
+        {
+          "cycle":2,
+          "plans":[
+            {"actor_id":"EN_BREAKER_1","route":[],"action_id":"TACT_MELEE","target":"ALLY_ANCHOR","outcome_event_ids":["FA2_CONTACT"]},
+            {"actor_id":"EN_HUNTER_1","route":[],"action_id":"TACT_INTERACT","target":"SAMPLE_K17","outcome_event_ids":["FA2_SAMPLE"]},
+            {"actor_id":"EN_SUPPRESS_1","route":[],"action_id":"TACT_SUPPRESS","target":"MAIN_VEHICLE_BAND","outcome_event_ids":["FA2_SUP1"]},
+            {"actor_id":"EN_SUPPRESS_2","route":[],"action_id":"TACT_SUPPRESS","target":"SIDE_VEHICLE_BAND","outcome_event_ids":["FA2_SUP2"]}
+          ],
+          "participant_outcomes":{"ALLY_ANCHOR":"brace_persists","ALLY_ENGINEER":"observe_stabilize","ALLY_SKIRMISHER":"observe_stabilize","EN_BREAKER_1":"contact_held","EN_BREAKER_2":"hold_y7","EN_HUNTER_1":"sample_acquired","EN_SUPPRESS_1":"fire_complete","EN_SUPPRESS_2":"fire_complete"},
+          "events":[
+            {"event_id":"FA2_SAMPLE","tick":8,"op":"set_sample","actor_id":"EN_HUNTER_1","custody":"EN_HUNTER_1","cause":"TACT_INTERACT"},
+            {"event_id":"FA2_CONTACT","tick":16,"op":"contact_case","case_ref":"PHY_ANCHOR_HOLDS_BREAKER","source_id":"EN_BREAKER_1","target_id":"ALLY_ANCHOR","cause":"TACT_MELEE"},
+            {"event_id":"FA2_STRESS","tick":16,"op":"bridge_marker","delta":2,"marker":"breaker_contact","cause":"TACT_MELEE"},
+            {"event_id":"FA2_SUP1","tick":16,"op":"plan_outcome","actor_id":"EN_SUPPRESS_1","status":"complete","cause":"TACT_SUPPRESS"},
+            {"event_id":"FA2_SUP2","tick":16,"op":"plan_outcome","actor_id":"EN_SUPPRESS_2","status":"complete","cause":"TACT_SUPPRESS"},
+            {"event_id":"FA2_EV1","tick":16,"op":"move_vehicle","vehicle_id":"EVAC_1","route_id":"ROUTE_EVAC1_MAIN","path":[[7,5],[8,5],[9,5],[10,5],[11,5]],"cause":"AUTONOMOUS_ROUTE"},
+            {"event_id":"FA2_EV2","tick":16,"op":"move_vehicle","vehicle_id":"EVAC_2","route_id":"ROUTE_EVAC2_MAIN","path":[[5,5],[6,5],[7,5],[8,5],[9,5]],"cause":"AUTONOMOUS_ROUTE"},
+            {"event_id":"FA2_B2_HOLD","tick":16,"op":"plan_outcome","actor_id":"EN_BREAKER_2","status":"hold_y7","cause":"OBSERVE_STABILIZE"}
+          ],
+          "expected_bridge_stress":1,
+          "expected_state_hash":"701ea99024e1cb04ff30fd368b5f7b5bae2d8d036c834029dcbe60e2ea344ee2"
+        },
+        {
+          "cycle":3,
+          "plans":[
+            {"actor_id":"EN_BREAKER_1","route":[],"action_id":"TACT_MELEE","target":"ALLY_ANCHOR","outcome_event_ids":["FA3_CONTACT"]},
+            {"actor_id":"EN_HUNTER_1","route":[[9,6],[10,6],[11,6],[11,7],[11,8],[12,8]],"action_id":"TACT_WITHDRAW","target":"EXIT_EAST","outcome_event_ids":["FA3_HUNTER"]},
+            {"actor_id":"EN_SUPPRESS_1","route":[],"action_id":"TACT_SUPPRESS","target":"MAIN_VEHICLE_BAND","outcome_event_ids":["FA3_SUP1"]},
+            {"actor_id":"EN_SUPPRESS_2","route":[],"action_id":"TACT_SUPPRESS","target":"SIDE_VEHICLE_BAND","outcome_event_ids":["FA3_SUP2"]}
+          ],
+          "participant_outcomes":{"ALLY_ANCHOR":"brace_persists","ALLY_ENGINEER":"observe_stabilize","ALLY_SKIRMISHER":"observe_stabilize","EN_BREAKER_1":"contact_held","EN_BREAKER_2":"hold_y7","EN_HUNTER_1":"withdraw_to_side","EN_SUPPRESS_1":"fire_complete","EN_SUPPRESS_2":"fire_complete"},
+          "events":[
+            {"event_id":"FA3_HUNTER","tick":15,"op":"move_unit","unit_id":"EN_HUNTER_1","anchor":[12,8],"cells":[[12,8]],"cause":"TACT_WITHDRAW"},
+            {"event_id":"FA3_CONTACT","tick":16,"op":"contact_case","case_ref":"PHY_ANCHOR_HOLDS_BREAKER","source_id":"EN_BREAKER_1","target_id":"ALLY_ANCHOR","cause":"TACT_MELEE"},
+            {"event_id":"FA3_STRESS","tick":16,"op":"bridge_marker","delta":2,"marker":"breaker_contact","cause":"TACT_MELEE"},
+            {"event_id":"FA3_SUP1","tick":16,"op":"plan_outcome","actor_id":"EN_SUPPRESS_1","status":"complete","cause":"TACT_SUPPRESS"},
+            {"event_id":"FA3_SUP2","tick":16,"op":"plan_outcome","actor_id":"EN_SUPPRESS_2","status":"complete","cause":"TACT_SUPPRESS"},
+            {"event_id":"FA3_EV1","tick":12,"op":"move_vehicle","vehicle_id":"EVAC_1","route_id":"ROUTE_EVAC1_MAIN","path":[[11,5],[12,5],[13,5],[14,5]],"cause":"AUTONOMOUS_ROUTE"},
+            {"event_id":"FA3_EV2","tick":16,"op":"move_vehicle","vehicle_id":"EVAC_2","route_id":"ROUTE_EVAC2_MAIN","path":[[9,5],[10,5],[11,5],[12,5],[13,5]],"cause":"AUTONOMOUS_ROUTE"}
+          ],
+          "expected_bridge_stress":2,
+          "expected_state_hash":"62303d16d5f2404bb4320b45695277d8e9984fa8092a3dc1ec96679327a64269"
+        },
+        {
+          "cycle":4,
+          "plans":[
+            {"actor_id":"EN_BREAKER_1","route":[],"action_id":"TACT_MELEE","target":"ALLY_ANCHOR","outcome_event_ids":["FA4_CONTACT"]},
+            {"actor_id":"EN_HUNTER_1","route":[[12,8],[13,8],[14,8]],"action_id":"TACT_WITHDRAW","target":"EXIT_EAST","outcome_event_ids":["FA4_HUNTER"]}
+          ],
+          "participant_outcomes":{"ALLY_ANCHOR":"brace_persists","ALLY_ENGINEER":"observe_stabilize","ALLY_SKIRMISHER":"observe_stabilize","EN_BREAKER_1":"contact_held","EN_BREAKER_2":"hold_y7","EN_HUNTER_1":"sample_exited","EN_SUPPRESS_1":"hold_no_ammo_spend","EN_SUPPRESS_2":"hold_no_ammo_spend"},
+          "events":[
+            {"event_id":"FA4_EV2","tick":4,"op":"move_vehicle","vehicle_id":"EVAC_2","route_id":"ROUTE_EVAC2_MAIN","path":[[13,5],[14,5]],"cause":"AUTONOMOUS_ROUTE"},
+            {"event_id":"FA4_HUNTER","tick":6,"op":"move_unit","unit_id":"EN_HUNTER_1","anchor":[14,8],"cells":[[14,8]],"cause":"TACT_WITHDRAW"},
+            {"event_id":"FA4_SAMPLE_EXIT","tick":6,"op":"set_sample","actor_id":"EN_HUNTER_1","custody":"enemy_exited","cause":"TACT_WITHDRAW"},
+            {"event_id":"FA4_CONTACT","tick":16,"op":"contact_case","case_ref":"PHY_ANCHOR_HOLDS_BREAKER","source_id":"EN_BREAKER_1","target_id":"ALLY_ANCHOR","cause":"TACT_MELEE"},
+            {"event_id":"FA4_STRESS","tick":16,"op":"bridge_marker","delta":2,"marker":"breaker_contact","cause":"TACT_MELEE"}
+          ],
+          "expected_bridge_stress":3,
+          "expected_state_hash":"57681457a6a870953d5b7c9cbf225d8d3dd905d6283157447a8cbdc4aad39c55"
+        }
+      ],
+      "expected_final":{"world_time_ms":32000,"cycle":4,"exited_vehicle_count":2,"bridge_state":"intact","bridge_stress":3,"gate_state":"closed","sample_custody":"enemy_exited","objectives":{"OBJ_EVACUATE":"clear","OBJ_PROTECT":"clear","OBJ_INTERCEPT":"forward_failure"}},
+      "expected_event_hash":"dfae2d040af45256b2d96ac39de160ca50efce18c5fb6b7ae950eb37b298af57",
+      "expected_final_state_hash":"57681457a6a870953d5b7c9cbf225d8d3dd905d6283157447a8cbdc4aad39c55"
+    },
+    {
+      "seed_id":"SEED_SIDE_DIVERT",
+      "claim":"regression_seed_not_fun_evidence",
+      "route_commitments":[
+        {"vehicle_id":"EVAC_1","route_id":"ROUTE_EVAC1_SIDE","commit_boundary":"before_cycle_1","free_reroute":false},
+        {"vehicle_id":"EVAC_2","route_id":"ROUTE_EVAC2_MAIN","commit_boundary":"before_cycle_1","free_reroute":false},
+        {"vehicle_id":"EVAC_3","route_id":"ROUTE_EVAC3_SIDE","commit_boundary":"before_cycle_1","free_reroute":false}
+      ],
+      "cycles":[
+        {
+          "cycle":1,
+          "plans":[
+            {"actor_id":"ALLY_ANCHOR","route":[[3,4],[4,4],[5,4]],"action_id":"TACT_BRACE","target":"SUPPORT_W","outcome_event_ids":["FB1_BRACE"]},
+            {"actor_id":"ALLY_ENGINEER","route":[[6,6],[7,6]],"action_id":"TACT_INTERACT","target":"GATE_SIDE","outcome_event_ids":["FB1_GATE"]},
+            {"actor_id":"ALLY_SKIRMISHER","route":[[5,6],[6,6]],"declared_wait_ticks":2,"action_id":"TACT_ROUTE","reaction_id":"TACT_INTERCEPT","target":"EN_HUNTER_1","outcome_event_ids":["FB1_INTERCEPT"]},
+            {"actor_id":"EN_BREAKER_1","route":[[11,4],[10,4],[9,4],[8,4],[7,4]],"action_id":"TACT_ROUTE","target":"BRIDGE_MAIN","outcome_event_ids":["FB1_B1"]},
+            {"actor_id":"EN_BREAKER_2","route":[[11,7],[10,7],[9,7],[8,7],[7,7]],"action_id":"TACT_ROUTE","target":"GATE_SIDE","outcome_event_ids":["FB1_B2"]},
+            {"actor_id":"EN_HUNTER_1","route":[[12,6],[11,6],[10,6],[9,6]],"action_id":"TACT_ROUTE","target":"SAMPLE_K17","outcome_event_ids":["FB1_HUNTER_STOP"]},
+            {"actor_id":"EN_SUPPRESS_1","route":[],"action_id":"TACT_SUPPRESS","target":"MAIN_VEHICLE_BAND","outcome_event_ids":["FB1_SUP1"]},
+            {"actor_id":"EN_SUPPRESS_2","route":[],"action_id":"TACT_SUPPRESS","target":"SIDE_VEHICLE_BAND","outcome_event_ids":["FB1_SUP2"]}
+          ],
+          "participant_outcomes":{"ALLY_ANCHOR":"brace_active","ALLY_ENGINEER":"gate_open","ALLY_SKIRMISHER":"intercept_triggered","EN_BREAKER_1":"advance_no_contact","EN_BREAKER_2":"advance_y7_only","EN_HUNTER_1":"stopped_at_10_6","EN_SUPPRESS_1":"fire_complete","EN_SUPPRESS_2":"fire_complete"},
+          "events":[
+            {"event_id":"FB1_ENGINEER_MOVE","tick":4,"op":"move_unit","unit_id":"ALLY_ENGINEER","anchor":[7,6],"cells":[[7,6]],"cause":"TACT_ROUTE"},
+            {"event_id":"FB1_SKIRM_MOVE","tick":5,"op":"move_unit","unit_id":"ALLY_SKIRMISHER","anchor":[6,6],"cells":[[6,6]],"cause":"TACT_ROUTE"},
+            {"event_id":"FB1_HUNTER_MOVE","tick":6,"op":"move_unit","unit_id":"EN_HUNTER_1","anchor":[10,6],"cells":[[10,6]],"cause":"TACT_ROUTE"},
+            {"event_id":"FB1_INTERCEPT","tick":9,"op":"plan_outcome","actor_id":"ALLY_SKIRMISHER","status":"triggered_hunter_stopped","cause":"TACT_INTERCEPT"},
+            {"event_id":"FB1_HUNTER_STOP","tick":9,"op":"plan_outcome","actor_id":"EN_HUNTER_1","status":"route_intercepted","cause":"TACT_ROUTE"},
+            {"event_id":"FB1_ANCHOR_MOVE","tick":10,"op":"move_unit","unit_id":"ALLY_ANCHOR","anchor":[5,4],"cells":[[5,4],[6,4]],"cause":"TACT_ROUTE"},
+            {"event_id":"FB1_GATE","tick":12,"op":"set_gate","actor_id":"ALLY_ENGINEER","state":"open","cause":"TACT_INTERACT"},
+            {"event_id":"FB1_BRACE","tick":14,"op":"set_brace","unit_id":"ALLY_ANCHOR","support_cell":[6,4],"active":true,"cause":"TACT_BRACE"},
+            {"event_id":"FB1_B1","tick":16,"op":"move_unit","unit_id":"EN_BREAKER_1","anchor":[7,4],"cells":[[7,4],[8,4]],"cause":"TACT_ROUTE"},
+            {"event_id":"FB1_B2","tick":16,"op":"move_unit","unit_id":"EN_BREAKER_2","anchor":[7,7],"cells":[[7,7],[8,7]],"cause":"TACT_ROUTE"},
+            {"event_id":"FB1_SUP1","tick":16,"op":"plan_outcome","actor_id":"EN_SUPPRESS_1","status":"complete","cause":"TACT_SUPPRESS"},
+            {"event_id":"FB1_SUP2","tick":16,"op":"plan_outcome","actor_id":"EN_SUPPRESS_2","status":"complete","cause":"TACT_SUPPRESS"},
+            {"event_id":"FB1_EV1","tick":16,"op":"move_vehicle","vehicle_id":"EVAC_1","route_id":"ROUTE_EVAC1_SIDE","path":[[3,5],[3,6],[3,7],[3,8],[4,8]],"cause":"AUTONOMOUS_ROUTE"},
+            {"event_id":"FB1_EV2","tick":16,"op":"move_vehicle","vehicle_id":"EVAC_2","route_id":"ROUTE_EVAC2_MAIN","path":[[1,5],[2,5],[3,5],[4,5],[5,5]],"cause":"AUTONOMOUS_ROUTE"},
+            {"event_id":"FB1_EV3","tick":16,"op":"move_vehicle","vehicle_id":"EVAC_3","route_id":"ROUTE_EVAC3_SIDE","path":[[2,8],[3,8],[4,8],[5,8],[6,8]],"cause":"AUTONOMOUS_ROUTE"}
+          ],
+          "expected_bridge_stress":1,
+          "expected_state_hash":"fb6c96a799edaf2d1470f0e686d2815c0ec75e08aa27c5a6b65f406a7fb78f9b"
+        },
+        {
+          "cycle":2,
+          "plans":[
+            {"actor_id":"ALLY_ENGINEER","route":[],"action_id":"TACT_INTERACT","target":"SAMPLE_K17","outcome_event_ids":["FB2_SECURE"]},
+            {"actor_id":"ALLY_SKIRMISHER","route":[[6,6],[6,7]],"action_id":"TACT_ROUTE","reaction_id":"TACT_EVADE","target":"EN_BREAKER_2","outcome_event_ids":["FB2_SKIRM_HOLD"]},
+            {"actor_id":"EN_BREAKER_1","route":[],"action_id":"TACT_MELEE","target":"ALLY_ANCHOR","outcome_event_ids":["FB2_CONTACT"]},
+            {"actor_id":"EN_BREAKER_2","route":[[7,7],[6,7]],"action_id":"TACT_ROUTE","target":"GATE_SIDE","outcome_event_ids":["FB2_B2_BLOCK"]},
+            {"actor_id":"EN_HUNTER_1","route":[[10,6],[9,6]],"action_id":"TACT_INTERACT","target":"SAMPLE_K17","outcome_event_ids":["FB2_HUNTER_ABORT"]},
+            {"actor_id":"EN_SUPPRESS_1","route":[],"action_id":"TACT_SUPPRESS","target":"MAIN_VEHICLE_BAND","outcome_event_ids":["FB2_SUP1"]},
+            {"actor_id":"EN_SUPPRESS_2","route":[],"action_id":"TACT_SUPPRESS","target":"SIDE_VEHICLE_BAND","outcome_event_ids":["FB2_SUP2"]}
+          ],
+          "participant_outcomes":{"ALLY_ANCHOR":"brace_persists","ALLY_ENGINEER":"sample_secured","ALLY_SKIRMISHER":"guard_pocket_blocks_B2","EN_BREAKER_1":"contact_held","EN_BREAKER_2":"blocked_no_south_turn","EN_HUNTER_1":"owner_change_abort","EN_SUPPRESS_1":"fire_complete","EN_SUPPRESS_2":"fire_complete"},
+          "events":[
+            {"event_id":"FB2_HUNTER_MOVE","tick":3,"op":"move_unit","unit_id":"EN_HUNTER_1","anchor":[9,6],"cells":[[9,6]],"cause":"TACT_ROUTE"},
+            {"event_id":"FB2_SKIRM_HOLD","tick":3,"op":"move_unit","unit_id":"ALLY_SKIRMISHER","anchor":[6,7],"cells":[[6,7]],"cause":"TACT_ROUTE"},
+            {"event_id":"FB2_B2_BLOCK","tick":4,"op":"plan_outcome","actor_id":"EN_BREAKER_2","status":"blocked_at_7_7_no_south_turn","cause":"TACT_ROUTE"},
+            {"event_id":"FB2_SECURE","tick":8,"op":"set_sample","actor_id":"ALLY_ENGINEER","custody":"ally","cause":"TACT_INTERACT"},
+            {"event_id":"FB2_HUNTER_ABORT","tick":8,"op":"plan_outcome","actor_id":"EN_HUNTER_1","status":"abort_owner_changed","cause":"TACT_INTERACT"},
+            {"event_id":"FB2_CONTACT","tick":16,"op":"contact_case","case_ref":"PHY_ANCHOR_HOLDS_BREAKER","source_id":"EN_BREAKER_1","target_id":"ALLY_ANCHOR","cause":"TACT_MELEE"},
+            {"event_id":"FB2_STRESS","tick":16,"op":"bridge_marker","delta":2,"marker":"breaker_contact","cause":"TACT_MELEE"},
+            {"event_id":"FB2_SUP1","tick":16,"op":"plan_outcome","actor_id":"EN_SUPPRESS_1","status":"complete","cause":"TACT_SUPPRESS"},
+            {"event_id":"FB2_SUP2","tick":16,"op":"plan_outcome","actor_id":"EN_SUPPRESS_2","status":"complete","cause":"TACT_SUPPRESS"},
+            {"event_id":"FB2_EV1","tick":16,"op":"move_vehicle","vehicle_id":"EVAC_1","route_id":"ROUTE_EVAC1_SIDE","path":[[4,8],[5,8],[6,8],[7,8],[8,8]],"cause":"AUTONOMOUS_ROUTE"},
+            {"event_id":"FB2_EV2","tick":16,"op":"move_vehicle","vehicle_id":"EVAC_2","route_id":"ROUTE_EVAC2_MAIN","path":[[5,5],[6,5],[7,5],[8,5],[9,5]],"cause":"AUTONOMOUS_ROUTE"},
+            {"event_id":"FB2_EV3","tick":16,"op":"move_vehicle","vehicle_id":"EVAC_3","route_id":"ROUTE_EVAC3_SIDE","path":[[6,8],[7,8],[8,8],[9,8],[10,8]],"cause":"AUTONOMOUS_ROUTE"}
+          ],
+          "expected_bridge_stress":2,
+          "expected_state_hash":"b29f921923064d2078192edf482261898d877c42707de5123eb59e7bd1a84429"
+        },
+        {
+          "cycle":3,
+          "plans":[
+            {"actor_id":"EN_BREAKER_1","route":[],"action_id":"TACT_MELEE","target":"ALLY_ANCHOR","outcome_event_ids":["FB3_CONTACT"]},
+            {"actor_id":"EN_SUPPRESS_1","route":[],"action_id":"TACT_SUPPRESS","target":"MAIN_VEHICLE_BAND","outcome_event_ids":["FB3_SUP1"]},
+            {"actor_id":"EN_SUPPRESS_2","route":[],"action_id":"TACT_SUPPRESS","target":"SIDE_VEHICLE_BAND","outcome_event_ids":["FB3_SUP2"]}
+          ],
+          "participant_outcomes":{"ALLY_ANCHOR":"brace_persists","ALLY_ENGINEER":"sample_owner_ally","ALLY_SKIRMISHER":"hold_guard_pocket","EN_BREAKER_1":"contact_held","EN_BREAKER_2":"blocked_y7","EN_HUNTER_1":"abort_hold","EN_SUPPRESS_1":"fire_complete","EN_SUPPRESS_2":"fire_complete"},
+          "events":[
+            {"event_id":"FB3_EV3","tick":16,"op":"move_vehicle","vehicle_id":"EVAC_3","route_id":"ROUTE_EVAC3_SIDE","path":[[10,8],[11,8],[12,8],[13,8],[14,8]],"cause":"AUTONOMOUS_ROUTE"},
+            {"event_id":"FB3_EV1","tick":16,"op":"move_vehicle","vehicle_id":"EVAC_1","route_id":"ROUTE_EVAC1_SIDE","path":[[8,8],[9,8],[10,8],[11,8],[12,8]],"cause":"AUTONOMOUS_ROUTE"},
+            {"event_id":"FB3_EV2","tick":16,"op":"move_vehicle","vehicle_id":"EVAC_2","route_id":"ROUTE_EVAC2_MAIN","path":[[9,5],[10,5],[11,5],[12,5],[13,5]],"cause":"AUTONOMOUS_ROUTE"},
+            {"event_id":"FB3_CONTACT","tick":16,"op":"contact_case","case_ref":"PHY_ANCHOR_HOLDS_BREAKER","source_id":"EN_BREAKER_1","target_id":"ALLY_ANCHOR","cause":"TACT_MELEE"},
+            {"event_id":"FB3_STRESS","tick":16,"op":"bridge_marker","delta":2,"marker":"breaker_contact","cause":"TACT_MELEE"},
+            {"event_id":"FB3_SUP1","tick":16,"op":"plan_outcome","actor_id":"EN_SUPPRESS_1","status":"complete","cause":"TACT_SUPPRESS"},
+            {"event_id":"FB3_SUP2","tick":16,"op":"plan_outcome","actor_id":"EN_SUPPRESS_2","status":"complete","cause":"TACT_SUPPRESS"}
+          ],
+          "expected_bridge_stress":3,
+          "expected_state_hash":"f9df47193dee511d940433f023a507293ea4ae201114e7f3401ae8f0b3c078ff"
+        },
+        {
+          "cycle":4,
+          "plans":[{"actor_id":"EN_BREAKER_1","route":[],"action_id":"TACT_MELEE","target":"ALLY_ANCHOR","outcome_event_ids":["FB4_CONTACT"]}],
+          "participant_outcomes":{"ALLY_ANCHOR":"brace_persists","ALLY_ENGINEER":"sample_owner_ally","ALLY_SKIRMISHER":"hold_guard_pocket","EN_BREAKER_1":"contact_held","EN_BREAKER_2":"blocked_y7","EN_HUNTER_1":"abort_hold","EN_SUPPRESS_1":"hold_no_ammo_spend","EN_SUPPRESS_2":"hold_no_ammo_spend"},
+          "events":[
+            {"event_id":"FB4_EV2","tick":4,"op":"move_vehicle","vehicle_id":"EVAC_2","route_id":"ROUTE_EVAC2_MAIN","path":[[13,5],[14,5]],"cause":"AUTONOMOUS_ROUTE"},
+            {"event_id":"FB4_EV1","tick":8,"op":"move_vehicle","vehicle_id":"EVAC_1","route_id":"ROUTE_EVAC1_SIDE","path":[[12,8],[13,8],[14,8]],"cause":"AUTONOMOUS_ROUTE"},
+            {"event_id":"FB4_CONTACT","tick":16,"op":"contact_case","case_ref":"PHY_ANCHOR_HOLDS_BREAKER","source_id":"EN_BREAKER_1","target_id":"ALLY_ANCHOR","cause":"TACT_MELEE"},
+            {"event_id":"FB4_STRESS","tick":16,"op":"bridge_marker","delta":2,"marker":"breaker_contact","cause":"TACT_MELEE"}
+          ],
+          "expected_bridge_stress":4,
+          "expected_state_hash":"660234c026f823769d1b4addb6bc8db858f4fb0655051879769614f05fc923fb"
+        }
+      ],
+      "expected_final":{"world_time_ms":32000,"cycle":4,"exited_vehicle_count":3,"bridge_state":"degraded","bridge_stress":4,"gate_state":"open","sample_custody":"ally","objectives":{"OBJ_EVACUATE":"clear","OBJ_PROTECT":"forward_failure","OBJ_INTERCEPT":"clear"}},
+      "expected_event_hash":"b291f55e87cfdb01debbf8b7e83b16dd677befe4f1a1c591f22f3143a7cbbd23",
+      "expected_final_state_hash":"660234c026f823769d1b4addb6bc8db858f4fb0655051879769614f05fc923fb"
+    }
+  ]
+}

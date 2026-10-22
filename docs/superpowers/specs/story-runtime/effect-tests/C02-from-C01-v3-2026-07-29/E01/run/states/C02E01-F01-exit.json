@@ -1,0 +1,86 @@
+{
+  "character_states": [
+    {
+      "desire_or_emotion": "把安全靠港视为在陌生共同体中证明领队能力的第一步，并开始期待能与主动选择同行的机体并肩行动。",
+      "entity_id": "CH_JICUN",
+      "relationship_delta": "接受兜灯否决后立即重组受力方案；通过保护街区正常运转的共同选择与火种货柜领袖建立初步互信。"
+    },
+    {
+      "desire_or_emotion": "回到木桶街后既回避旧关系，又无法袖手旁观街区因万机馆停工。",
+      "entity_id": "CH_TANGJIAO",
+      "relationship_delta": "没有回应反复呼叫本名的私人频道，但主动提供废轨、港区绞盘和必须保留主路的现场信息；纪存采用其判断且没有追问旧事。"
+    },
+    {
+      "desire_or_emotion": "确认保护馆守Z、万机馆与街区生活可以由同一套更强的安全方案完成。",
+      "entity_id": "CH001",
+      "relationship_delta": "当众否掉纪存的贴岸方案并得到立即采纳；在明确动作限制后支持旧守护者以当前受损姿态面对街区。"
+    },
+    {
+      "desire_or_emotion": "主动选择以残缺但仍能工作的真实身体面对木桶街的新观众。",
+      "entity_id": "CH002",
+      "relationship_delta": "直接向兜灯表达不隐藏损伤的意愿，兜灯保留安全边界并让它亲自完成岸锚牵引。"
+    }
+  ],
+  "context_key": "5073428443eb7fe7b3e7e70bdea52305a85ab6ee6836807a8a7f4ac331ea6170",
+  "draft_sha256": "40e2ccab9d58594e9010d47670a7d3ec244d0d7b63025c5cb64cd64c770df50e",
+  "entity_states": [
+    {
+      "controller": "自动航行系统执行最低反推、转向和平衡，纪存负责航向与协作指挥",
+      "entity_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "location": "木桶街外港旧泊位",
+      "physical_state": "百余米低速巡展舰已安全泊靠；海侧临时锚与泊位缆索维持固定；主循环持续恶化，具体故障未诊断，不能再次安全离港；未变形且未增加火力"
+    },
+    {
+      "controller": "旧守护者自主行动，兜灯保有并执行物理制动与安全限制",
+      "entity_id": "V353U001",
+      "location": "木桶街外港岸侧承力地面",
+      "physical_state": "通过既有外部作业甲板和驳运平台提前抵岸；保持右前臂缺失、黄色巡展臂装和不能飞的限制；以救援锚、左手及受限工作的黄色臂完成岸侧牵引，无新增损伤"
+    },
+    {
+      "controller": "火种货柜领袖独立载具人格",
+      "entity_id": "V353U043",
+      "location": "木桶街外港废弃轨道与港区绞盘旁",
+      "physical_state": "保持全尺寸作业变形；轨道夹和支撑桩已固定，作业骨架接入港区绞盘充当可移动导向器；无可见损伤"
+    }
+  ],
+  "facts_established": [
+    {
+      "evidence_in_draft": "海侧临时锚持续减速，中心桩短缆只固定舰首，馆守Z岸锚与火种货柜领袖的移动导向绞架共同修正舰身偏转；旧闸开启后万机馆保持最低反推低速入泊。",
+      "fact_id": "C02E01.ARRIVED_AND_BERTHED",
+      "statement": "万机馆在不堵塞木桶街工房主路和水上作业道的情况下安全进入外港旧泊位。"
+    },
+    {
+      "evidence_in_draft": "最低反推与海侧临时锚只能减速，作业拖艇被横风带滑；现代泊位尺寸不足，旧泊位中心桩若承受横力会沿裂口拔出，直接岸缆还会截断工房主路。",
+      "fact_id": "C02E01.CONVENTIONAL_BERTHING_INSUFFICIENT",
+      "statement": "常规减速、单独抛锚、港内拖带和直接岸缆均不能独立完成本次靠港。"
+    },
+    {
+      "evidence_in_draft": "货柜领袖自报全名，自行驶入废轨，将货柜展开为作业骨架，以轨道夹、支撑桩和港区绞盘承载并改变岸缆方向。",
+      "fact_id": "C02E01.CARGO_LEADER_CHOSE_TO_HELP",
+      "statement": "火种货柜领袖以独立载具人格首次公开现身，主动完成全尺寸作业变形并承担岸侧移动导向。"
+    },
+    {
+      "evidence_in_draft": "泊稳后主循环警报仍在扩散；正文明确无人能仅凭热响判断故障位置，必须停机打开系统检查。",
+      "fact_id": "C02E01.MAIN_CIRCULATION_DIAGNOSIS_DUE_TODAY",
+      "statement": "万机馆主循环持续恶化，必须在当天停机并接受全尺寸检查，但具体故障部件尚未确定。"
+    }
+  ],
+  "fragment_id": "C02E01-F01",
+  "next_trigger": "万机馆已泊稳但主循环仍在恶化，纪存与唐胶必须下到木桶街安排当天的全尺寸停机检查，才能知道真正需要修复或替换什么。",
+  "open_threads": [
+    {
+      "note": "万机馆必须在当天停机接受全尺寸检查；具体故障部件、替换需求与兼容性尚未确定。",
+      "status": "open",
+      "thread_id": "WANJI_MAIN_CIRCULATION_DIAGNOSIS"
+    },
+    {
+      "note": "木桶街的私人频道以唐胶本名反复呼叫，他仍未回应，旧关系尚未处理。",
+      "status": "open",
+      "thread_id": "TANGJIAO_OLD_STREET_CONTACT"
+    }
+  ],
+  "review_sha256": "680573f82ba832e8de6d36690e8ecb3a5906a5019ea3250bc822b72428477132",
+  "schema_version": 1,
+  "status": "committed",
+  "unresolved_logic_risks": []
+}

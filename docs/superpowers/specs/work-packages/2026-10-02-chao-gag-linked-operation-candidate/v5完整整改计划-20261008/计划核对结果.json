@@ -1,0 +1,36 @@
+{
+  "plan_check": "pass",
+  "source_hashes_verified": 3,
+  "work_packages": 52,
+  "coverage_records": 499,
+  "chapter_headings": 168,
+  "specific_designs": 331,
+  "unique_authored_designs": 236,
+  "detail_books": 9,
+  "original_figures": 39,
+  "html_pages": 25,
+  "checks": [
+    "source hashes",
+    "expected source IDs",
+    "six authored design fields per specific item",
+    "published source consistency",
+    "declared shared designs",
+    "exact detail book contents",
+    "acyclic dependencies",
+    "phase ordering",
+    "existing code paths",
+    "local file links",
+    "HTML anchors",
+    "visible primary-chapter diagrams",
+    "SVG syntax and PNG dimensions",
+    "embedded search data",
+    "inline JavaScript syntax only",
+    "TSV counts"
+  ],
+  "limitations": [
+    "This is a static plan check, not game implementation or player acceptance.",
+    "Browser security review rejected local-page inspection. HTML layout and interactive search were not browser-tested; no alternate access route was attempted.",
+    "Raster diagrams were visually reviewed separately; this script does not judge diagram clarity or design quality."
+  ],
+  "errors": []
+}

@@ -1,0 +1,30 @@
+field_name	required	purpose	invalid_if_missing
+receipt_instance_id	yes	唯一方向/迁移决策回执实例ID	同一模板可能被多次或跨决策复用
+receipt_set_template_id	yes	引用decision-receipt-sets.tsv中的精确集合模板	无法解析该回执应满足哪些要求
+decision_id	yes	精确DEC ID	泛化赞同可能被扩到其他决定
+decision_phase	yes	candidate_test_authorization;provisional_test_carrier;bounded_migration;bounded_migration_plan;bounded_migration_checker;bounded_migration_registry;bounded_migration_chain;bounded_migration_postcheck之一	方向、临时试验载体与迁移阶段混用
+decision_spec_path	yes	用户看到并裁决的决策规范路径	无法知道用户批准哪一版文案
+decision_spec_sha256	yes	决策规范文件SHA-256	决策文案变化仍沿用旧回执
+decision_record_locator	yes	规范内唯一决策/行/锚点	同一文件多项决策无法精确定位
+selected_option_token	yes	APPROVE_*;REVISE_*;DEFER;REJECT等稳定选择token	自然语言被任意解释
+accepted_clause_ids	yes	明确接受的原子条款ID；无则写none	复合决策被整体放大
+rejected_clause_ids	yes	明确拒绝的原子条款ID；无则写none	拒绝项可能被沉默忽略
+deferred_clause_ids	yes	明确延期的原子条款ID；无则写none	延期可能被当默认批准
+explicit_non_authorization_codes	yes	本回执明确不授权的域代码	方向回执越权到Build/Canon/Runtime
+prerequisite_evidence_ids_and_sha256	yes	用户裁决时实际展示的证据ID/version/hash	后换证据仍声称原决定覆盖
+user_message_ref	yes	产生本决定的用户消息/会话稳定引用	无法证明用户确实作出选择
+user_message_sha256	yes	规范化用户决定记录hash	转录或摘录漂移不可发现
+receipt_record_locator	yes	一个复合消息内本决定的唯一行/结构化record ID	四项同批回复可能被当单一复合授权
+issued_by_user_ref	yes	用户/产品Owner身份引用	内部人员可能代签用户决定
+issued_at	yes	用户决定时间，ISO-8601含时区	无法排序授权与执行
+recorded_by	yes	将用户决定登记入Registry的责任者	无人对转录准确性负责
+receipt_artifact_path	yes	冻结后的结构化回执文件路径	只有聊天记忆没有可寻址证据
+receipt_artifact_sha256	yes	结构化回执文件SHA-256	回执文件漂移不触发失效
+requirement_ids	yes	本实例逐项满足的decision requirement ID	集合存在但具体要求未证明
+requirement_result	yes	all_required_accepted;partial;failed之一	部分接受可能被当成all
+status	yes	draft;accepted;deferred;rejected;superseded;invalidated之一	状态语义不统一
+supersedes_receipt_instance_id	yes	替代的旧回执实例；无则写none	两个相冲突的回执同时有效
+invalidation_triggers	yes	来源/条款/证据变化时的失效条件	旧授权无限复用
+invalidated_at	conditional:status=invalidated|superseded	失效/替代时间；否则写none	无法判断有效期
+invalidation_reason	yes	无失效写none；否则记录精确原因	失效没有审计依据
+notes	yes	保留项、不得推论与后续需另批事项	人类无法解释授权边界

@@ -1,0 +1,31 @@
+field_id	field_name	required_for	question	blocking_rule
+MDS001	mecha_id	all	跨故事、玩法、美术和Runtime使用的稳定ID是什么	缺失或同体多ID未绑定时block
+MDS002	canonical_name	all	普通名称、别名和同体称呼是什么	同名异物或别名被当成新主体时block
+MDS003	authority_level	all	hard/working/candidate/history哪一档	来源不明或Candidate隐式升格时block
+MDS003B	design_status	all	open/draft/blocked/sealed/invalidated/retired哪一档	open或blocked被GD3/Reader/Runtime消费时block
+MDS004	source_refs	all	哪些Canon、Accepted Story和设计合同定义它	无合法来源或引用History作Current时block
+MDS005	identity_and_continuity	all	它的物理主体、人格/机魂、远端窗口与复制品怎样区分	记录/窗口/备用体冒充同一主体时block
+MDS006	story_and_player_role	all	它在故事与玩家编成中分别承担什么职责	只有致敬名或数值定位时warn
+MDS007	owner_custody_and_rights	all	所有权、保管、维护、驾驶、部署和公共调用分别属于谁	临时可控被写成拥有或永久Roster时block
+MDS008	pilot_controller_interpreter	all	驾驶员、身体控制者、提案解释者和停止者分别是谁	关键动作无人负责或一人被写成全权时block
+MDS009	consent_and_refusal	self_aware	机魂/自主主体可接受、附条件、拒绝和撤回什么	自主主体被默认永久服从时block
+MDS010	physical_scale_and_mass	playable_visual	高度、长度、翼展、质量区间和比例锚是什么	尺度影响路线/承重却无锚时block
+MDS011	body_topology	playable_visual	主体、模块、关节、工具、承重点和多格占位怎样组成	大动作依赖未定义部位时block
+MDS012	mobility_and_ingress	playable	怎样移动、转向、进入地图、出击、撤离、运输和泊位	机体瞬移或无法物理进入场景时block
+MDS013	functional_systems	playable	机动、作用、防护、传感、能源/热和具名工具是什么	只剩单HP/攻击力且剧情依赖功能时block
+MDS014	core_player_verbs	playable	玩家通过这具身体反复做哪些2-4个独特动作	没有可重复动作或全靠一次Cut-in时block
+MDS015	allowed_actions	all	当前阶段可执行哪些动作	后续能力被提前使用时block
+MDS016	forbidden_actions	all	明确不能做什么以及为什么	禁止项缺失导致Writer/玩法任意扩权时block
+MDS017	costs_limits_and_recovery	playable	动作消耗、冷却、负载、伤损和恢复条件是什么	强动作无代价或战后自动重置时block
+MDS018	counterplay_and_failure	playable	敌人/环境怎样反制，动作失败后怎样继续	没有可解释反制或失败只能Game Over时block
+MDS019	state_variants	all	展示、工作、战斗、损毁、维修、组合/分离等状态差分是什么	章前后形态漂移或资产无差分时block
+MDS020	chapter_lifecycle	all	首见、试控、正式Roster、Hub岗位、离队和后续消费者是什么	出现/登舰被当成永久加入时block
+MDS021	map_and_ui_contract	playable	占格、朝向、意图、功能损伤、同意和动作预览怎样显示	玩家不能读出身体与责任时block
+MDS022	reveal_ledger_ref	all	哪些身份、功能和损伤何时向玩家揭示	Reader可提前讲穿或临时补设定时block
+MDS023	asset_family_and_reuse	visual	Rig、模块、状态差分、特效、音效和复用消费者是什么	高成本一次性资产无复用时warn
+MDS024	scale_sheet_asset	visual	比例轮廓图文件路径与哈希是什么	新主要机体进入Reader/gameflow前缺真实图时block
+MDS025	turnaround_and_cutaway_asset	heavy	三视/剖面/模块/控制链图文件与哈希是什么	组合体、巨构或多主体机体缺图时block
+MDS026	key_action_previs	heavy	2-4个核心动作和关键失效的连续Previs是什么	高潮动作只有文字时block
+MDS027	prototype_evidence	playable	哪个灰盒证明占位、动作、反制与失败可玩	正式关卡前无证据时block
+MDS028	locked_and_free_fields	all	下游不得改变什么，哪些表演/装饰可自由发挥	自由区或锁定区不清时block
+MDS029	human_approval	visual_playable	用户批准了哪个版本的身体、动作与玩家身份	正式资产或系统锁前缺回执时block

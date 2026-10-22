@@ -1,0 +1,6 @@
+receipt_type	accepts_may_promote	must_record	always_excludes	unlocks	misuse_example	status
+product_direction	产品主循环;模式主次;系统语义;角色能力方向;体量与非目标	设计版本/hash;逐项决策;保留/拒绝/延期;原型要求;排除范围	玩法已好玩;故事事实;视觉正式方向;Runtime;L6	GD0/GD1进入原型;预算候选	把“方向可以”写成系统已成立或已授权制作	candidate_defined
+story	指定版本Reader中的人物选择;因果;章末状态;明确列出的故事事实	reader path/hash;accepted items;rejected/deferred items;排除范围;用户原话或明确裁决	玩法趣味;操作;视觉方向;正式资产;Runtime;L6	后续故事前情;正式gameflow输入	把C01-C03故事回执填成玩法或美术验收	candidate_defined
+gameplay	指定build/ruleset/map/mode的可读性;趣味;操作;难度;继续意愿	build/content/ruleset ID;测试者;录像/日志;任务;复述;方案;已知缺陷	未测试系统;故事改写;视觉正式授权;资产handoff;全游戏平衡	规则保留/返修;章节适配;量产候选	把C01E02内部PASS当真人或全游戏战棋验收	candidate_defined
+visual	指定对象与版本的轮廓;构图;材质;地图读法;衍生设计方向	asset/direction board IDs;paths/hashes;逐项选择;derivative_scope;明确排除项	Sprite Master;Rig;正式资产handoff;全部视图;Runtime集成;未展示对象	继续衍生设计或Candidate BOM候选	把MAP-B方向选择当完整地图、Sprite、正式handoff或Godot授权	candidate_defined
+production	指定Candidate BOM/预算的有界正式制作授权;指定正式资产handoff;Current构建;集成;回归或L6范围	phase=authorization|handoff|runtime|delivery;build/asset manifest;source/rules/asset hashes;测试范围;已关闭问题;排除/延期项	未列资产;未测试平台;未验故事/玩法/视觉范围;后续phase	按phase只解锁有界制作/正式handoff/正式集成/发行候选/L6之一	把制作授权回执当成品验收，或把Candidate runtime加载当正式交付	candidate_defined

@@ -1,0 +1,77 @@
+{
+  "assembled_context_sha256": "10850c7a974fa78180f35bbe6cb07b67a0f68cce9fbb24bcfcab2fac29f66ffa",
+  "bytes": 71141,
+  "chapter": "C02",
+  "chars": 30359,
+  "context_key": "10850c7a974fa78180f35bbe6cb07b67a0f68cce9fbb24bcfcab2fac29f66ffa",
+  "continuity_receipt_hashes": {},
+  "entry_receipt_hashes": {
+    "C02E01-F02": "772a5da8691564ca969b3d599a290f08b7bc0ff758c0428b0cc5c0baf3a9ea51"
+  },
+  "episode": "C02E01",
+  "fragment_card_sha256": "bd8336a57efc3432874ff3c5956e145a9a52fe2d8bb5734e314bf27030f07a17",
+  "fragment_id": "C02E01-F03",
+  "path": "docs/superpowers/specs/story-runtime/effect-tests/C02-from-C01-v3-2026-07-29/E01/run/contexts/C02E01-F03-10850c7a974f.md",
+  "prior_prose_tail_sha256": "a2482c5a5202228a98c5de242ead1d82f432e53c638e1375e55f178cc8ae7ce7",
+  "retrieval_corpus_hashes": {
+    "docs/superpowers/specs/story-runtime/generated/runtime_corpus.jsonl": "38b98d37aa3e787721306fb4aae515a9c6ecd3f8749fe419d90594f5efe438e4",
+    "docs/superpowers/specs/story-runtime/generated/support/support_runtime_corpus.jsonl": "c1733f67e8fa331008d733ed3269f8948b15f96c30570ee8c70c31e34bc3da5d"
+  },
+  "retrieval_trace": [
+    {
+      "explicit_seed": true,
+      "layer": "current_canon",
+      "node_key": "entity:MECHA_WANJI_MAIN_CIRCULATION_ROTOR",
+      "record_id": "MECHA_WANJI_MAIN_CIRCULATION_ROTOR",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv",
+      "title": "万机馆主循环磁流散热转子"
+    },
+    {
+      "explicit_seed": true,
+      "layer": "current_canon",
+      "node_key": "entity:CH_TANGJIAO",
+      "record_id": "CH_TANGJIAO",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv",
+      "title": "唐胶"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "candidate_support",
+      "node_key": "support:chapter:C02",
+      "record_id": "C02",
+      "source": "docs/superpowers/specs/data/story/v35_series_structure_master_board_v1.tsv",
+      "title": "木桶街，万机初开"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "candidate_support",
+      "node_key": "support:gameplay:C02",
+      "record_id": "C02",
+      "source": "docs/superpowers/specs/data/story/v35_series_structure_gameplay_progression_v2.tsv",
+      "title": "收藏、修件与真机怎样共同救一艘舰"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "current_canon",
+      "node_key": "scene:V359-C02E01-CREATIVE",
+      "record_id": "V359-C02E01-CREATIVE",
+      "source": "docs/superpowers/specs/data/canon/scenes.tsv",
+      "title": "救命零件，限定发售"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "candidate_support",
+      "node_key": "support:core_cast:CAST_TANG_DOU",
+      "record_id": "CAST_TANG_DOU",
+      "source": "docs/superpowers/specs/data/story/v35_series_structure_core_cast_lifecycle_v2.tsv",
+      "title": "唐胶 / 兜灯"
+    }
+  ],
+  "revision_note_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "schema_version": 1,
+  "stable_prefix_sha256": "c1174e6ec49ad9c716de13d12bc5ac30cd91bf78307470ec597d3a81ac6af0f3",
+  "target_output_chars": {
+    "max": 5600,
+    "min": 2800
+  }
+}

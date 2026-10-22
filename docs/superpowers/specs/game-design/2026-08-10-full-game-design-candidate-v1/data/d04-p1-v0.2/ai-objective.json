@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "ai_contract_id": "D04-P1-AI-OBJECTIVE-V0.2",
+    "authority": "Candidate",
+    "status": ["zero_build", "human_not_run", "user_not_decided"],
+    "planner": "deterministic_no_rng"
+  },
+  "observer_contract": {
+    "read_snapshot": "previous_cycle_close",
+    "reads_uncommitted_player_draft": false,
+    "reads_current_cycle_later_commits": false,
+    "intent_revision_inside_window": 0,
+    "refresh_boundary": "next_cycle_open",
+    "contingencies": "only_predeclared_observable_conditions",
+    "target_id_tiebreak": "public_ascii_ascending",
+    "route_tiebreak": "listed_route_priority_then_cell_sequence",
+    "mirror_tiebreak": "mirror_coordinates_and_public_sort_key_together"
+  },
+  "route_variants": {
+    "RV_BREAKER1_MAIN_LOAD_WEST": [[11,4],[10,4],[9,4],[8,4],[7,4],[6,4],[5,4],[4,4]],
+    "RV_BREAKER1_MAINT_FALLBACK": [[11,4],[11,5],[11,6],[10,6],[9,6],[8,6],[7,6],[6,6],[5,6],[4,6]],
+    "RV_BREAKER2_SIDE_LOAD_WEST": [[11,7],[10,7],[9,7],[8,7],[7,7]],
+    "RV_BREAKER2_GATE_FLANK": [[11,7],[11,6],[10,6],[9,6],[8,6],[7,6],[7,7]],
+    "RV_HUNTER_SAMPLE_DIRECT": [[12,6],[11,6],[10,6],[9,6]],
+    "RV_HUNTER_WITHDRAW_MAIN_EAST": [[9,6],[10,6],[11,6],[11,5],[12,5],[13,5],[14,5]],
+    "RV_HUNTER_WITHDRAW_SIDE_EAST": [[9,6],[10,6],[11,6],[11,7],[11,8],[12,8],[13,8],[14,8]],
+    "RV_HUNTER_ISOLATED_C3": [[11,6],[10,6],[9,6],[8,6],[7,6],[6,6],[5,6],[4,6],[3,6]],
+    "RV_SUPPRESS1_MAIN_POST": [[13,4]],
+    "RV_SUPPRESS1_RELOCATE": [[13,4],[13,5],[12,5],[11,5]],
+    "RV_SUPPRESS2_SIDE_POST": [[13,7]],
+    "RV_SUPPRESS2_RELOCATE": [[13,7],[12,7],[11,7],[10,7]]
+  },
+  "enemy_policies": {
+    "EN_BREAKER_1": {
+      "public_intent_id": "INT_ADVANCE_OBJECTIVE_MAIN",
+      "priority": ["block_closest_active_main_vehicle", "advance_into_bridge_hazard", "hold_main_load_choke"],
+      "route_priority": ["RV_BREAKER1_MAIN_LOAD_WEST", "RV_BREAKER1_MAINT_FALLBACK"],
+      "target_sort": ["path_distance_ascending", "vehicle_id_ascending"],
+      "fallback_when_primary_route_blocked": "RV_BREAKER1_MAINT_FALLBACK_then_hold_last_safe_cell",
+      "declared_contingencies": ["primary_route_fully_blocked", "target_vehicle_exited_or_disabled"]
+    },
+    "EN_BREAKER_2": {
+      "public_intent_id": "INT_ADVANCE_OBJECTIVE_SIDE",
+      "priority": ["damage_gate_if_not_heavy_passable", "block_closest_active_side_vehicle", "hold_side_load_choke"],
+      "route_priority": ["RV_BREAKER2_SIDE_LOAD_WEST", "RV_BREAKER2_GATE_FLANK"],
+      "target_sort": ["gate_state_priority", "path_distance_ascending", "vehicle_id_ascending"],
+      "fallback_when_primary_route_blocked": "RV_BREAKER2_GATE_FLANK_then_hold_last_safe_cell",
+      "declared_contingencies": ["gate_becomes_open_before_contact", "target_vehicle_changes_to_side_route"]
+    },
+    "EN_HUNTER_1": {
+      "public_intent_id": "INT_EXTRACT_SAMPLE",
+      "priority": ["acquire_sample_if_ground", "withdraw_if_carrying_sample", "hunt_most_isolated_ally"],
+      "route_priority": ["RV_HUNTER_SAMPLE_DIRECT", "RV_HUNTER_WITHDRAW_MAIN_EAST", "RV_HUNTER_WITHDRAW_SIDE_EAST", "RV_HUNTER_ISOLATED_C3"],
+      "target_sort": ["sample_custody_priority", "sum_distance_to_two_nearest_allies_descending", "target_id_ascending"],
+      "fallback_when_primary_route_blocked": "alternate_withdraw_route_then_hunt_isolated_then_hold",
+      "declared_contingencies": ["sample_custody_changes", "declared_route_becomes_physically_blocked"]
+    },
+    "EN_SUPPRESS_1": {
+      "public_intent_id": "INT_SUPPRESS_MAIN_ROUTE",
+      "priority": ["cover_cells_10_to_13_on_main_vehicle_band", "relocate_to_next_main_post", "hold_fire"],
+      "route_priority": ["RV_SUPPRESS1_MAIN_POST", "RV_SUPPRESS1_RELOCATE"],
+      "target_sort": ["corridor_vehicle_count_descending", "route_id_ascending"],
+      "fallback_when_primary_route_blocked": "hold_last_safe_cell",
+      "declared_contingencies": ["friendly_body_enters_fire_line", "corridor_has_no_target_value"]
+    },
+    "EN_SUPPRESS_2": {
+      "public_intent_id": "INT_SUPPRESS_SIDE_ROUTE",
+      "priority": ["cover_cells_10_to_13_on_side_vehicle_band", "relocate_to_next_side_post", "hold_fire"],
+      "route_priority": ["RV_SUPPRESS2_SIDE_POST", "RV_SUPPRESS2_RELOCATE"],
+      "target_sort": ["corridor_vehicle_count_descending", "route_id_ascending"],
+      "fallback_when_primary_route_blocked": "hold_last_safe_cell",
+      "declared_contingencies": ["friendly_body_enters_fire_line", "corridor_has_no_target_value"]
+    }
+  },
+  "objective_state_machine": {
+    "OBJ_EVACUATE": {
+      "initial": "pending",
+      "at_cycle_4": {"exited_at_least_2": "clear", "otherwise": "retry_required"},
+      "terminal_states": ["clear", "retry_required"]
+    },
+    "OBJ_PROTECT": {
+      "initial": "pending",
+      "at_cycle_4": {"bridge_stress_below_degraded_at": "clear", "otherwise": "forward_failure"},
+      "terminal_states": ["clear", "forward_failure"]
+    },
+    "OBJ_INTERCEPT": {
+      "initial": "pending",
+      "at_cycle_4": {"sample_not_enemy_exited": "clear", "otherwise": "forward_failure"},
+      "terminal_states": ["clear", "forward_failure"]
+    },
+    "joint_collapse_forbidden": true
+  },
+  "eligible_slot_rules": {
+    "removed_midcycle": "WAIT_REMOVED_for_frozen_slot",
+    "reinforcement_midcycle": "eligible_next_cycle_only",
+    "public_unit_order": ["ALLY_ANCHOR", "ALLY_ENGINEER", "ALLY_SKIRMISHER", "EN_BREAKER_1", "EN_BREAKER_2", "EN_HUNTER_1", "EN_SUPPRESS_1", "EN_SUPPRESS_2"]
+  }
+}

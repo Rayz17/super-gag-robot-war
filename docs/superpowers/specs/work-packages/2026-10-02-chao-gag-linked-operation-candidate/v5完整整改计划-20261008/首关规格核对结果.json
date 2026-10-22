@@ -1,0 +1,1071 @@
+{
+  "status": "pass",
+  "scope": "paper specification only; no Godot simulation or player acceptance",
+  "version": "GW-RESCUE-R1",
+  "count": 165,
+  "checks": [
+    {
+      "name": "critique source unchanged",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A/brave within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A/brave no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A/king within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A/king no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A/power within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A/power no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A/shelter_n within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A/shelter_n no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A/shelter_s within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A/shelter_s no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A/gun within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A/gun no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A/biter within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A/biter no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A full arrival footprint [7, 6]",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A full arrival footprint [0, 0]",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "A announced spawn initially empty",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "B/engineer within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "B/engineer no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "B/cargo within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "B/cargo no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "B/dismantler within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "B/dismantler no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "B/larva_b within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "B/larva_b no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "B/bridge within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "B full arrival footprint [7, 0]",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "B full arrival footprint [0, 6]",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "B full arrival footprint [7, 6]",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "B announced spawn initially empty",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C/police within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C/police no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C/leiling within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C/leiling no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C/feeder within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C/feeder no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C/crate within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C/crate no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C/train within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C/train no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C/acid within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C/acid no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C/larva_c within map",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C/larva_c no initial overlap",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C full arrival footprint [8, 6]",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C full arrival footprint [0, 0]",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "C announced spawn initially empty",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "brave route [3, 3]",
+      "pass": true,
+      "details": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "name": "brave movement budget",
+      "pass": true,
+      "details": {
+        "required": 1,
+        "remaining": 4
+      }
+    },
+    {
+      "name": "brave stated cost [3, 3]",
+      "pass": true,
+      "details": 1
+    },
+    {
+      "name": "power accessible in R1",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "brave main action power",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "police route [5, 4]",
+      "pass": true,
+      "details": [
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          4
+        ]
+      ]
+    },
+    {
+      "name": "police movement budget",
+      "pass": true,
+      "details": {
+        "required": 1,
+        "remaining": 4
+      }
+    },
+    {
+      "name": "police stated cost [5, 4]",
+      "pass": true,
+      "details": 1
+    },
+    {
+      "name": "feeder accessible in R1",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "police main action cut feeder",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "king route [5, 3]",
+      "pass": true,
+      "details": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ]
+    },
+    {
+      "name": "king movement budget",
+      "pass": true,
+      "details": {
+        "required": 5,
+        "remaining": 5
+      }
+    },
+    {
+      "name": "king stated cost [5, 3]",
+      "pass": true,
+      "details": 5
+    },
+    {
+      "name": "four-cell king reaches biter",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "king main action drill",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "biter survives impact before water",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "drill first push enters water",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "engineer route [3, 4]",
+      "pass": true,
+      "details": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "name": "engineer movement budget",
+      "pass": true,
+      "details": {
+        "required": 1,
+        "remaining": 5
+      }
+    },
+    {
+      "name": "engineer stated cost [3, 4]",
+      "pass": true,
+      "details": 1
+    },
+    {
+      "name": "jack touches worker",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "engineer main action jack",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "jack sufficient force",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "pushed worker loses contact",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "engineer route [2, 3]",
+      "pass": true,
+      "details": [
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "name": "engineer movement budget",
+      "pass": true,
+      "details": {
+        "required": 2,
+        "remaining": 4
+      }
+    },
+    {
+      "name": "engineer stated cost [2, 3]",
+      "pass": true,
+      "details": 2
+    },
+    {
+      "name": "engineer vacates frozen larva target",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "cargo route [3, 4]",
+      "pass": true,
+      "details": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "name": "cargo movement budget",
+      "pass": true,
+      "details": {
+        "required": 3,
+        "remaining": 4
+      }
+    },
+    {
+      "name": "cargo stated cost [3, 4]",
+      "pass": true,
+      "details": 3
+    },
+    {
+      "name": "cargo reaches brace after worker vacates",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "cargo main action brace",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "leiling route [4, 5]",
+      "pass": true,
+      "details": [
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "name": "leiling movement budget",
+      "pass": true,
+      "details": {
+        "required": 2,
+        "remaining": 6
+      }
+    },
+    {
+      "name": "leiling stated cost [4, 5]",
+      "pass": true,
+      "details": 2
+    },
+    {
+      "name": "leiling main action missile",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "missile really hits train, crate and acid",
+      "pass": true,
+      "details": [
+        "crate",
+        "train",
+        "acid"
+      ]
+    },
+    {
+      "name": "stated R1 six-action receipt",
+      "pass": true,
+      "details": {
+        "city_hp": 7,
+        "bridge_hp": 4,
+        "train_hp": 4,
+        "municipal_loss": 0,
+        "head_index": 5,
+        "head": [
+          "C",
+          7,
+          3
+        ]
+      }
+    },
+    {
+      "name": "brave route [3, 3]",
+      "pass": true,
+      "details": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "name": "brave movement budget",
+      "pass": true,
+      "details": {
+        "required": 1,
+        "remaining": 4
+      }
+    },
+    {
+      "name": "brave stated cost [3, 3]",
+      "pass": true,
+      "details": 1
+    },
+    {
+      "name": "brave main action power",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "king route [5, 4]",
+      "pass": true,
+      "details": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ]
+      ]
+    },
+    {
+      "name": "king movement budget",
+      "pass": true,
+      "details": {
+        "required": 4,
+        "remaining": 5
+      }
+    },
+    {
+      "name": "king stated cost [5, 4]",
+      "pass": true,
+      "details": 4
+    },
+    {
+      "name": "alternative king touches gun",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "king main action drill gun",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "gun two-cell displacement clear",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "engineer route [3, 4]",
+      "pass": true,
+      "details": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "name": "engineer movement budget",
+      "pass": true,
+      "details": {
+        "required": 1,
+        "remaining": 5
+      }
+    },
+    {
+      "name": "engineer stated cost [3, 4]",
+      "pass": true,
+      "details": 1
+    },
+    {
+      "name": "full-HP realignment is qualified, not an invalid heal",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "engineer main action repair/align",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "leiling route [4, 6]",
+      "pass": true,
+      "details": [
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "name": "leiling movement budget",
+      "pass": true,
+      "details": {
+        "required": 3,
+        "remaining": 6
+      }
+    },
+    {
+      "name": "leiling stated cost [4, 6]",
+      "pass": true,
+      "details": 3
+    },
+    {
+      "name": "leiling main action beam crate",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "beam reaches crate before any blocking body",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "cargo route [4, 3]",
+      "pass": true,
+      "details": [
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          3
+        ]
+      ]
+    },
+    {
+      "name": "cargo movement budget",
+      "pass": true,
+      "details": {
+        "required": 3,
+        "remaining": 4
+      }
+    },
+    {
+      "name": "cargo stated cost [4, 3]",
+      "pass": true,
+      "details": 3
+    },
+    {
+      "name": "alternative cargo can shield train",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "cargo main action shield train",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "alternative gun loses setup",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "preserve train deployment receipt",
+      "pass": true,
+      "details": {
+        "city_hp": 6,
+        "bridge_hp": 1,
+        "train_hp": 6,
+        "head_index": 5
+      }
+    },
+    {
+      "name": "no-action first round loss mapping",
+      "pass": true,
+      "details": {
+        "city_hp": 4,
+        "bridge_hp": 0,
+        "train_hp": 4,
+        "head_index": 1
+      }
+    },
+    {
+      "name": "20 distinct rail nodes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "train travel and one-round delay budget",
+      "pass": true,
+      "details": {
+        "distance": 18,
+        "rounds": 5
+      }
+    },
+    {
+      "name": "collapse before arrival before transport",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "force wins independent of input array order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "equal-force fixed source order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "four-cell claim atomic",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "collapsed reserved footprint chooses valid backup",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "physical occupancy beats reservation; unit waits",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX01 geometry within fixture",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX02 geometry within fixture",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX03 geometry within fixture",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX04 geometry within fixture",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX05 geometry within fixture",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX06 geometry within fixture",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX07 geometry within fixture",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX08 geometry within fixture",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX09 geometry within fixture",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX10 geometry within fixture",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX11 geometry within fixture",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX12 geometry within fixture",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX13 geometry within fixture",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX14 geometry within fixture",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX15 geometry within fixture",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "two six-cell cannon ranges",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "three-cell finisher",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "beam six-cell range",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "missile five cells without displacement",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "pin has no displacement",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX01 displacement/lift distance 2",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX09 displacement/lift distance 3",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "FX15 displacement/lift distance 1",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "eighteen timing profiles",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV01 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV02 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV03 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV04 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV05 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV06 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV07 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV08 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV09 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV10 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV11 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV12 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV13 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV14 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV15 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV16 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV17 contact-result-input order",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "MV18 contact-result-input order",
+      "pass": true,
+      "details": null
+    }
+  ],
+  "errors": [],
+  "limits": [
+    "No claim that the new scene, rules or animations are implemented.",
+    "Round-one geometry and arithmetic are checked; this is not an exhaustive solution or full six-round AI balance search.",
+    "Enemy targeting, replay, input latency and audio/animation tolerances require later engine tests and real play."
+  ]
+}

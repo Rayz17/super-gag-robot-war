@@ -1,0 +1,45 @@
+field	default_value	description
+run_id	ELO-YYYYMMDD-vX	本次循环运行编号
+target_scope	full_game	本次运行范围：single_episode/micro_batch/arc/full_game
+detail_class	thick_chapter_synopsis	目标产物类别：route_map/episode_card/thick_chapter_synopsis/script/asset_brief
+episode_range	C01-1..C15-?	目标话段
+mother_structure	V23 or latest	母结构入口
+thickness_benchmark	V22.10 A5厚度修复整合稿	厚版章节梗概当前参考基准
+min_block_chars_for_thick_synopsis	1800	厚版每话非空白字符警戒线；低于需人工说明或扩写
+max_min_ratio_for_thick_batch	2.6	厚版批次最长/最短块长度警戒比
+max_episodes_per_thick_batch	1	厚版核心pipeline每批话数上限；连续多话由ELO外层循环逐话调用
+core_pipeline_episode_limit	1	核心chao-gag-writing-pipeline单次只允许生产、审稿、补丁、结算一话
+v26_gate_doc	docs/superpowers/specs/剧情梗概/V26-C01-C03锚点强化补丁-机体名场面关系-v26.2.md	V26及后续默认写作门禁；不是只给C01-C03使用
+quote_scene_usage_policy	three_tier	名场面/名台词用法：直接短引、错引误记、原创变奏；必须服务场面和玩法
+relationship_hard_gate_required	true	每话关系必须是动作、权限、误会、嫉妒、背锅、共犯、支援状态变化或后续债务，不接受标签
+diegetic_meta_policy	human_no_world_outside_meta	普通人类角色不得说章节、玩家、剧情、路线等世界外meta；由G.A.G./索引/UI/残响层/小查错版承载
+canon_mode	living	使用living canon；允许候选迁移
+user_review_mode	full_run_internal_checkpoints	默认不逐话问用户，内部每3-5话和篇章结尾审查
+min_new_mecha_per_episode	2	每话新机体/单位底线
+min_quote_scene_anchors_per_episode	1	每话名场面/台词锚点底线
+target_quote_scene_anchors_key_episode	3-5	重点话名场面/台词锚点目标
+min_gameplay_hook_per_episode	1	每话玩法底线
+relationship_edge_policy	adult_only_for_adult_characters	成人卖相只限成年/成年感角色
+child_character_policy	no_adult_edge	儿童角色完全隔离成人暧昧
+asset_budget_mode	layered	机体曝光按资产分层处理
+branch_visibility	required	分支必须留下可见疤痕
+enemy_gain_required	true	每话必须有敌方收益
+auto_patch_on_gate_fail	true	门禁失败时自动回审稿/补丁
+stop_on_hard_canon_conflict	true	硬canon冲突才停下来报告
+stop_on_user_only_decision	true	必须用户取舍时才停下来报告
+prefix_regression_review_required	true	每完成第N章后必须连读第1章到第N章做前缀回归总审
+prefix_regression_review_scope	chapters_1_to_N	前缀总审范围：从第一章到当前完成章N
+max_regression_attempts_per_root_cause	3	同一根因最多阻塞3轮；仍不过则入未解决问题账本并继续推进
+regression_replay_policy	replay_K_plus_1_to_N	回到根因章节K修正后，必须顺序重放K+1到N
+unresolved_issue_policy	record_best_version_and_continue	3轮后仍不过时，详细记录问题账本，选择最优版本继续后续章节
+protagonist_crucible_gate_required	true	主角熔炉门禁开启；关键话和每章连读必须检查主角是否经历大打击、大选择、大代价和状态变化
+primary_protagonist_arc_watchlist	纪存;七海;白鸢	重点追踪三条主角弧线，其他核心队友按本话功能进入同一账本
+tiny_metric_as_primary_drama_forbidden	true	秒数、半格、贴标签、存档、一回合等微指标不得作为主角成长主承重，只能作为大后果的表层表现
+growth_requires_state_change	true	主角成长必须改变权限、路线、支援、机体、公共身份、敌方收益、关系或下一目标之一
+emotional_relationship_event_required_for_key_relationships	true	关键成人/成年感关系必须有误会、体谅、牺牲、失去、回归、狗血反转或战场救援等情绪事件
+relationship_bookkeeping_as_primary_drama_forbidden	true	债务、共犯、权限、流程缝隙不得单独作为关系吸引主承重
+temporary_loss_and_return_allowed	true	允许死亡、失踪、封存、索引替换等短暂失去与后续回归，但代价必须保留并进入状态账本
+emotional_accumulation_required_for_key_relationships	true	关系爆点前后需要错过、尴尬近距离、重复物件、日常照顾、欲言又止等情绪积累
+katsura_romance_method_reference_allowed	method_only	可参考桂正和式恋爱叙事方法，但不得复制具体剧情、人物设定、场面或台词
+jicun_machine_soul_memory_layer_required	true	纪存作为机魂实体的记忆苏醒、代价、保护与破局必须进入主角弧线账本
+jicun_memory_full_reveal_forbidden	true	纪存记忆必须碎片化推进谜团，禁止一次性百科揭示

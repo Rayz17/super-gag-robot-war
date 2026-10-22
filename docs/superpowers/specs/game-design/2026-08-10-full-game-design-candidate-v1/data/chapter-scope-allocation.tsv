@@ -1,0 +1,23 @@
+chapter_id	minimum_chapter_type	main_minutes	tactical_encounters	operation_range	new_environment_kit_cap	a3_cluster_id	reuse_sources	d07_cost_signal	d07_delta	user_decision_required	status	workstream_state
+C01	pillar	150-210	3	1	1	A3_OPENING_C01	P1;EX1;Wanji Kit	HIGH_OPENING+A3_E04	压缩为切片主峰;不再为E02/E03/E04各造引擎	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C02	pillar	100-130	2-3	1	1	A3_C02_RESCUE_SHARED	P1;EX2;EX3;P3;Woodbarrel Kit	VERY_HIGH_FIVE_EPISODES+A3_RESCUE	赛事/事故/救援共享同一Kit和P3状态;仅一段完整高细玩法	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C03	pillar	100-130	2	1	1	A3_C03_CITY_CLIMAX	P2;P3;EX2;Engineering City Kit	VERY_HIGH+A3_CLIMAX	四话共享城市地图身体;停止第二锤为唯一主峰	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C04	pillar	90-120	2	1	1	A3_C04_SKYFORGE	P2;P3;revocable C2;Skyforge Kit	VERY_HIGH_HEAVY_CHAPTER	先重设计地点/战斗语法;未过门时整行blocked	yes	blocked_pending_c04_redesign	parked_forecast_not_current_plan
+C05	standard	55-80	1	1	0-1	none	C04 C2;Wanji tactical body	VERY_HIGH_SYSTEM_DENSITY	实时占用只新增状态压力;不新建整套UI	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C06	bridge	30-50	1	1	0-1	none	P1 body;consent;shared combination rig	HIGH_NEW_COMBINATION_RIG	只教固定成员合体/安全中止;完整退出后移C22	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C07	bridge	30-50	0	0-1	0	none	C06 rig;role rotation	MEDIUM_REUSE_C06_RIG	完全复用C06 Rig和UI	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C08	standard	55-80	1	1	0-1	none	P1 objective graph;fleet route	HIGH_FLEET_MAP	只新增可见撤退优先图	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C09	standard	55-80	1	1	0-1	none	C08 route;mission cards;ally requests	HIGH_THREE_VARIANTS_SHARED_RULES	三线共享规则和环境变体	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C10	standard	55-80	1	1	0-1	none	P2 authority;C09 alliance	HIGH_RULES_AND_DIGITAL	规则层作为战场投影;不造数字潜入系统	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C11	pillar	90-120	1-2	1	1	A3_C11_FESTIVAL_RELAY	C09 multi-front;C10 ROE;shared roster packs	PEAK_HIGH_REUSE_PACKS	百机用战区包/远景/支援区;不做百机同屏	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C12	bridge	30-50	0	0	0	none	Hub;collection;relationship;C11 settlement	MEDIUM_REUSE_HOME_ASSETS	完整低压Hub周期;无新顶层系统	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C13	bridge	30-50	1	0-1	0	none	C09 local front;shared public rigs	MEDIUM_SHARED_PUBLIC_RIG	视角交换复用既有控制;不造新战术核	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C14	pillar	90-120	1-2	1	1	A3_C14_FLEET_SPLIT	P3;C08 retreat;C11 multi-front	PEAK_A3_THREE_FLEET_STATES	三舰用状态变体而非三套新舰系统	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C15	standard	55-80	1	1	0-1	none	C14 multi-ship;P2 information	HIGH_UI_AND_GIANT_EXPLORATION	只新增时间戳/延迟;巨构探索复用EX内核	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C16	standard	55-80	1	1	0-1	none	C15 info;C10 rule;existing doctrine	VERY_HIGH_NEW_FLAGSHIP_SHARED_CITY	新旗舰共享城市/身体语法;不新建敌方学习系统	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C17	standard	55-80	1	1	0	none	C16 doctrine;roster rotation	VERY_HIGH_REUSE_VARIANTS	What-if只做成熟环境/敌法变体	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C18	bridge	30-50	1	1	0	none	C17 variants;relationship/knowledge	HIGH_REUSE_ENVIRONMENT_VARIANTS	三遗憾复用环境变体;不做平行资产树	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C19	pillar	90-120	1-2	1-2	1	A3_TERMINAL_CHAIN	P3;combination;heavy logistics	PEAK_A3_CONSTRUCTION	与C20/C22共享终局身体/Rig/接口生产簇	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C20	pillar	90-120	1-2	1-2	0	A3_TERMINAL_CHAIN	C11 relay;C19 body;all-series action packs	MAXIMUM_REUSE_PEAK	终局动作全部复用旧主体长线动作	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C21	bridge	30-50	0	0-1	0	none	C12 Hub;C19/C20 final assets	MEDIUM_REUSE_FINAL_ASSETS	呼吸章只做诊断/停用选择;不新增Boss/A3	yes	candidate_top_down_allocation	parked_forecast_not_current_plan
+C22	pillar	90-130	1-2	1-2	0	A3_TERMINAL_CHAIN	C19-C21 terminal body;full system reuse	MAXIMUM_TERMINAL_REUSE	双向退出/重组复用终局生产簇;无第四形态	yes	candidate_top_down_allocation	parked_forecast_not_current_plan

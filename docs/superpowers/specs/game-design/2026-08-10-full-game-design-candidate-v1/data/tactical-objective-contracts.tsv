@@ -1,0 +1,13 @@
+objective_id	objective_name	primary_player_verbs	success_condition	partial_success	forward_failure	continuation_break	anti_cheese	story_writeback	map_requirements	enemy_goal_pair	first_use	status
+OBJ_EVACUATE	撤离具名对象	move;cover;rescue;route	最低数量对象从合法边界离开	部分对象离开;保留已救结果	未救对象受伤/被捕/留置;路线关闭	所有核心对象丢失且无故事继续态	对象不能凭瞬移/脚本离场;携带与路线可追踪	人员/物件位置;关系;债务;城市回应	至少两条路线;中间安全点;威胁时序	追击/封路/取样	P1	candidate_objective_v1
+OBJ_PROTECT	保护对象/设施	brace;cover;intercept;repair	时间窗后对象功能/完整度达到阈值	保住核心功能但产生伤损	设施降级;未来维修/路线受限	核心故事对象彻底毁灭且无替代	不能只堆治疗;威胁来自可读动作	地点损毁;维修债;公共支持	承力/控制/安全区前后态	破坏承力/夺取节点	P1	candidate_objective_v1
+OBJ_DELAY	拖延到窗口关闭	route;block;suppress;withdraw	敌人未在规定脉冲前完成目标	敌人部分推进但关键对象离开	失去部分物资/空间;敌方取得位置	核心撤离未完成且无续态	不能无限堵出生点;敌人可换合法路线	时间;路线;敌方学习	多路与可破坏阻挡	直取/侧翼	P1	candidate_objective_v1
+OBJ_INTERCEPT	阻止对象抵达/离开	pursue;intercept;block;disable	目标在边界前被固定/缴械/说服/迫退	目标带伤离开但未取得关键物	敌人携样本/情报撤离	核心样本丢失导致既定故事断裂	击破不是唯一解;边界与携带物明确	敌方保管链;后续反制	两条以上撤离线;交接点	取样撤离	P2	candidate_objective_v1
+OBJ_DISABLE	非致死停机/缴械	disarm;push;jam;restrict;brace	指定功能关闭且主体/核心保全	目标撤离或暂时失能	目标逃脱/功能保留;城市损伤	必须停机否则故事无续态	禁止只打HP到阈值;功能部位与条件可见	机体身体态;关系;产权/责任	功能系统/掩护/撤离关系	保护/撤离/反制	P2	candidate_objective_v1
+OBJ_CONTROL	取得/保持控制节点	interact;authorize;defend;cut	合法控制在时限内保持或完成动作	控制短时成立或只开部分接口	敌方获得局部控制;后续环境恶化	关键系统不可恢复且无物理解法	权限和物理控制分开;不能站格自动占领	权限记录;地点态;债务	接口位置;供能;本地锁;替代物理解法	占据/反操作	P2	candidate_objective_v1
+OBJ_VERIFY	验证真相/物理条件	observe;scan;test;compare	具名假说经足够证据/实体试验证实或否定	获得低置信结论并承担风险	错误/未确认进入后续结果区间	错误直接让硬故事无合法续态	不能靠查攻略选答案;证据来源可追踪	证据;知识范围;工程责任	可观察差异;安全测试位;验证消费者	伪装/干扰/破坏证据	P2	candidate_objective_v1
+OBJ_GAIN_CONSENT	取得或尊重主体决定	ask;explain;offer;release	主体对具体动作接受/拒绝/附条件且玩家据此完成安全方案	主体不加入但提供另一种帮助	关系关闭/另选更贵方案	不得因拒绝直接脚本死局	不能送礼刷过;必须有替代路径与可理解理由	同意记录;关系事件;协议	安全沟通窗;身体/目标条件	施压/干扰/时间危机	P2	candidate_objective_v1
+OBJ_RESCUE_STRUCTURE	支撑/重构巨物	brace;tow;repair;coordinate	多个承力点按时序形成合法新稳态	保住主体但失去部分功能/空间	永久损毁;路线/设施变化	巨构坍塌且无章节继续态	阶段来自结构状态而非Boss血条	地点永久态;公共支持;资产差分	剖面;承力图;多区交接;撤离	破坏承力/环境过载	P3	candidate_objective_v1
+OBJ_ESCORT	护送可自主行动对象	route;cover;coordinate;ask	对象按自身行动抵达且未被玩家代控	对象绕路/迟到/带伤抵达	对象拒绝/被迫停留/错过窗口	核心对象永久丢失且无替代	护送对象有自己的意图和拒绝;不是移动箱子	关系;路线;到场时间;身体态	多路;协同点;风险可解释	猎杀/诱导/封路	P2	candidate_objective_v1
+OBJ_WITHDRAW	带着已得成果撤离	withdraw;cover;triage	最低人员/证据/关键物离场	只带回部分;保存已完成目标	伤损/物件/位置/公共后果	全员/核心对象丢失且无续态	撤离不是免费重置;敌人也可撤	保管链;伤损;未尽债务	多个撤点;携带约束;追击	追击/封锁	P1	candidate_objective_v1
+OBJ_DEFEAT	击破/迫退关键敌人	attack;disable;intercept;coordinate	敌方身体失去任务能力、撤退或被安全固定	敌方受损逃离;主目标仍部分成立	敌方保留能力/取得目标/学习战法	核心威胁完成不可继续目标	不能只加HP/增援;至少一个身体/地形/信息解法	敌方身体态;学习;样本;后续路线	多阶段身体/撤离/目标关系	敌方保护/修复/撤离	P3	candidate_objective_v1

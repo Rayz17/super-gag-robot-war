@@ -1,0 +1,1272 @@
+﻿编号,类别,对象,用途,范围,设计要求,状态,表情,规格包,交付规格,现用文件,接入代码,回传目录,IP映射,映射确定程度,本作背景,识别与性格,设计改造,背景来源,制作链
+M01,01 我方机体与既有剧情机体,无牌一号,游击体术,当前工务城及其已列专关,轻灵、可读的人形关节；拳脚是第一识别点，肩胯留活动空间；天冲拳要帅且完整，不为科技感乱加炮口,普通；蓄劲；护势；轻损；失能,,机体成套图,设定图长边3072–4096；立绘2048×3072透明；半身2048²；头像1024²；可编辑分层源,"game-godot/assets/formula_lab/stage_battle_v11/hero.glb
+game-godot/assets/formula_lab/linked_campaign_v6/portraits/hero.png","game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd",incoming/M01/,Gundam Build／高达创战者：玩家改件与竞技构筑,项目资料明确到作品家族；没有锁定一台原作型号,无牌一号是木桶街历代修复者共同维护的16米全尺寸竞技实机，有自己的机魂与选择。合作社托管，唐胶讲战法，陆衡和工房重做承力与材料，兜灯安装测试；不是唐胶遥控的玩具。,应看出玩家改装机的青春、灵巧与改件个性；保留利于拳脚的肩胯空间、清楚的拳甲和模块接缝。,母版先解决体术姿态和可拆装备，再按新美术方向重绘。天冲拳是值得定制的招牌动作，标准走跑受击仍复用。,"docs/superpowers/specs/data/canon/entities.tsv # V353U071
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U071",设定→结构母版→正交视图→分件与状态→建模交接
+M02,01 我方机体与既有剧情机体,旧拳王,重心拳击,当前工务城及其已列专关,拳套/前臂、胸腹与低重心形成主轮廓；拳击手的肩胯关系明确；旧不等于污脏颗粒堆满,普通；接拳；重拳预备；轻损；失能,,机体成套图,设定图长边3072–4096；立绘2048×3072透明；半身2048²；头像1024²；可编辑分层源,"game-godot/assets/formula_lab/stage_battle_v11/boxer.glb
+game-godot/assets/formula_lab/linked_campaign_v6/portraits/boxer.png","game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd",incoming/M02/,Real Steel／铁甲钢拳；辅以机动武斗式师徒气质,项目明确拳击作品来源；未指定Atom、Zeus或某台G高达为唯一原型,旧拳王是17米自主退役武斗实机，带着训练、失败和修复的经历重新登台；右拳护具只是部件。它有自己的节拍和尊严，不是等人接管的废铁。,拳击机器人应有护拳、紧凑头胸、重心转换与承受重击的结构；站姿先像拳手，再加机甲细节。,保留旧机的维修层次和体术力量感；拳套、前臂、肩腰关系必须在三视图和护架姿态中一致。,"docs/superpowers/specs/data/canon/entities.tsv # V353U048
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP033
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U048",设定→结构母版→正交视图→分件与状态→建模交接
+M03,01 我方机体与既有剧情机体,馆守 Z,独臂守护、牵引、承重,当前工务城及其已列专关,保留馆守身份锚和当前剧情原右前臂毁损；不能为对称补出完整右拳。左臂的牵引/支撑构造读得清,普通；支撑；牵引；受损；失能,,机体成套图,设定图长边3072–4096；立绘2048×3072透明；半身2048²；头像1024²；可编辑分层源,"game-godot/assets/formula_lab/guardian_meshy_v1/guardian.glb
+game-godot/assets/formula_lab/linked_campaign_v6/portraits/guardian.png","game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd",incoming/M03/,Mazinger Z／魔神Z及旧超级机器人谱系,当前Canon明确内部锚,馆守Z是万机馆18米旧巨神，“旧守护者”是同一机魂的日常称呼。C01原右拳与完整前臂已毁，之后用临时巡展臂装，真正后继右臂要另有剧情。它与兜灯有长期维修和守护关系。,开祖超级系的庄严大色块、头胸焦点、重前臂和旧巨神份量；要能看出曾经能使火箭拳的身体，而非城市普通工程机。,本批保持当前缺臂事实与左臂战斗/支撑能力。临时右侧装置另画接口，不补成完整拳头；导览终端与本体共享身份标识。,"docs/superpowers/specs/data/canon/entities.tsv # V353U001
+docs/superpowers/specs/data/canon/entities.tsv # CH002
+docs/superpowers/specs/data/canon/entities.tsv # MECHA_GUARDIAN_TOURING_ARM
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP001",设定→结构母版→正交视图→分件与状态→建模交接
+M04,01 我方机体与既有剧情机体,社勇王,勇者救援与破围,当前工务城及其已列专关,与勇拳核心、外部腿架和肩包使用同一设计；英雄大色块、拳甲和胸部焦点明确，不是一团金属碎件,普通；护路；终式预备；受损；失能,,机体成套图,设定图长边3072–4096；立绘2048×3072透明；半身2048²；头像1024²；可编辑分层源,"game-godot/assets/formula_lab/linked_campaign_v4/models/brave.glb
+game-godot/assets/formula_lab/linked_campaign_v6/portraits/brave.png","game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd",incoming/M04/,GaoGaiGar／勇者王与Brave勇者系列,当前Canon明确内部锚,社勇王的物理核心是豪司驾驶的完整机器人“勇拳”，与外部腿架、肩背组件合体；核心和合体不是两台长期机体。完整合体的主体AI能拒绝危险命令，并与豪司重新协作。,勇者系英雄胸部焦点、强大拳甲、完整核心进入外装后的合体增量、巨大工具与救援的浪漫；不削去热血和必杀的魅力。,按勇拳完整身体→外部组件→社勇王合体画同一套零件表。可读的合体承力和驾驶关系优先于装甲花纹。,"docs/superpowers/specs/data/canon/entities.tsv # V353U024
+docs/superpowers/specs/data/canon/entities.tsv # MECHA_BRAVE_FIST_PROTOTYPE
+docs/superpowers/specs/data/canon/entities.tsv # SOCIAL_BRAVE_AI_REFUSAL
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP008",设定→结构母版→正交视图→分件与状态→建模交接
+M05,01 我方机体与既有剧情机体,完全版王者,2×2飞行重装,当前工务城及其已列专关,帅气对称头部；保留冗余武装的魅力；面罩去典型嘴部刻槽；右手/右前臂连接巨钻；双背炮有肩背轴且朝前；翼与推进包逻辑一致,全装备；部分卸装；轻装；蓄炮；受损；失能,,机体成套图,设定图长边3072–4096；立绘2048×3072透明；半身2048²；头像1024²；可编辑分层源,"game-godot/assets/formula_lab/linked_campaign_v6/models/king-modular.glb
+game-godot/assets/formula_lab/linked_campaign_v6/portraits/king.png","game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd",incoming/M05/,全装主角机／高达式武器包审美；额角局部参考古铁巨神,综合视觉参考，来自用户明确要求；没有单一原IP一对一锁定,完全版王者是20米全装竞技冠军，自主机魂享受舞台、冠军和全装备，执意完成二十多年前未播的最终话。不是被装备压垮的笑话，也不是胶价王遥控的道具。它可以主动卸装，未来仍能再度全装。,最重要是帅气、主角感和武装冗余：翼、盾、重炮、巨钻都要有体积与用途；不能因去除典型高达嘴而变成圆盘头或蠢笨头。,头部左右对称，面罩去典型双折线嘴槽，中央前向角结构紧凑；巨钻固定右手/右前臂；两根背炮分别绕肩背根部轴朝前。基础身体完整，卸下任何装备都能追认接口。棋盘为2×2显示档，保留飞行感。,"docs/superpowers/specs/data/canon/entities.tsv # MECHA_C02_COMPLETE_KING
+ # 本侧会话继承的用户头部、巨钻、双肩炮与全装要求；仅作设计约束",设定→结构母版→正交视图→分件与状态→建模交接
+M06,01 我方机体与既有剧情机体,预算二号,精密快修与液压顶推,当前工务城及其已列专关,小而精悍的工程机身份；液压顶具、备件匣、工具臂可辨；不是拿枪换名字；和消防、吊装机明显不同,普通；顶推；焊补；备件耗尽；受损,,机体成套图,设定图长边3072–4096；立绘2048×3072透明；半身2048²；头像1024²；可编辑分层源,"game-godot/assets/formula_lab/linked_campaign_v4/models/engineer.glb
+game-godot/assets/formula_lab/linked_campaign_v6/portraits/engineer.png","game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd",incoming/M06/,Patlabor／机动警察式预算劳务机,项目Roster明确作品家族；非某台原作机的固定换名,预算二号是低成本维修、撤离、补给机，擅长以廉价替代件完成重要工程。它与城市工务体系相连，预算限制是工作条件，不是纯笑话。,城市职业机甲的结实外壳、易维护接口、工具而非兵器的工作臂；低成本仍要专业可靠。,与吊装/警备家族允许共享基础件，但液压顶具、备件匣和灵巧工具臂形成自己剪影；用通用手部动作配设施状态表达维修。,"docs/superpowers/specs/data/canon/entities.tsv # V353U032
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U032
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP011",设定→结构母版→正交视图→分件与状态→建模交接
+M07,01 我方机体与既有剧情机体,市政吊装机,吊运、牵引、承重,当前工务城及其已列专关,吊臂根部、绞盘、配重与支脚可信；吊钩与操作者同源，不从空中凭空生成,收臂；展开；吊载；停机；受损,,机体成套图,设定图长边3072–4096；立绘2048×3072透明；半身2048²；头像1024²；可编辑分层源,"game-godot/assets/formula_lab/linked_campaign_v4/models/crane.glb
+game-godot/assets/formula_lab/linked_campaign_v6/portraits/crane.png","game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd",incoming/M07/,Patlabor／机动警察式城市劳务机,项目Roster与Canon明确职业机甲家族,市政吊装机是推拉、吊运、改轨和地形施工的城市公共支援；有工作身份，不只是地图上可移动的钩子。,重型作业体态、驾驶/观察区、吊臂根部、绞盘、稳定腿与配重的清楚关系。,保留与预算二号、警备机的工务制造谱系，但起吊姿态和主轮廓独立。收臂/展开用同一套构件与转轴。,"docs/superpowers/specs/data/canon/entities.tsv # V353U031
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U031
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP011",设定→结构母版→正交视图→分件与状态→建模交接
+M08,01 我方机体与既有剧情机体,雷翎,空中狙击与爆破导弹,当前工务城及其已列专关,狙击长轴和轻快飞行轮廓；光束发射器与导弹挂架分清；不能与白色样机共用同一剪影,普通；瞄准；低空；变形；受损,,机体成套图,设定图长边3072–4096；立绘2048×3072透明；半身2048²；头像1024²；可编辑分层源,"game-godot/assets/formula_lab/linked_campaign_v4/models/leiling.glb
+game-godot/assets/formula_lab/linked_campaign_v6/portraits/leiling.png","game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd",incoming/M08/,Transformers Starscream／红蜘蛛所代表的Seeker喷气重涂谱系,Roster明确到红蜘蛛重涂军团；雷翎是项目独立主体,雷翎承担远射、侦察与机动换位。它与同模重涂的文化有关，颜色不是它的全部身份；轮换与自主开火属于自己的选择。,喷气机鼻/座舱、机翼、进气与尾部组件能在机器人身体追认；双翼战机家族轮廓要保留，远射武装轴明确。,独立头部、翼与武器设计；狙击光束与爆破导弹分清。人形与飞机两套三视图共享零件编号和涂装，不是随意加翼的高达。,"docs/superpowers/specs/data/canon/entities.tsv # V353U047
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U047
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP021",设定→结构母版→正交视图→分件与状态→建模交接
+M09,01 我方机体与既有剧情机体,灰崎警备劳务机,拘束、封路、警戒,当前工务城及其已列专关,警备头盔/观察结构、索具和折叠屏障；城市警备用途，不是军绿杂兵；靠结构区分于预算二号,普通；张索；立墙；撤回；受损,,机体成套图,设定图长边3072–4096；立绘2048×3072透明；半身2048²；头像1024²；可编辑分层源,"game-godot/assets/formula_lab/linked_campaign_v4/models/police.glb
+game-godot/assets/formula_lab/linked_campaign_v6/portraits/police.png","game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd",incoming/M09/,Patlabor／机动警察：城市警备劳务机,项目明确作品家族；英格拉姆仅为职业造型实例,灰崎警备劳务机承担非致命控制、封路和警戒，可以撤回不安全动作继续协作。制服与劳务的冲突比普通军用战斗更重要。,警务观察头、可辨的防护、拘束器和交通控制装备；像在城市执勤的机甲。,索具、折叠墙和收纳位置构成专用轮廓；保持职业配色的明快与秩序，不套工程机同一涂装。,"docs/superpowers/specs/data/canon/entities.tsv # V353U033
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U033
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP011",设定→结构母版→正交视图→分件与状态→建模交接
+M10,01 我方机体与既有剧情机体,消防架桥机,涉水消防与临时通路,当前工务城及其已列专关,消防供液、架桥收纳、耐热护板三个用途分清；不强制继承旧版左前腿伤，不能整机刷灰冒充旧机,普通；涉水；泡沫；架桥；受损,,机体成套图,设定图长边3072–4096；立绘2048×3072透明；半身2048²；头像1024²；可编辑分层源,"game-godot/assets/formula_lab/linked_campaign_v4/models/fire.glb
+game-godot/assets/formula_lab/linked_campaign_v6/portraits/fire.png","game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd",incoming/M10/,城市消防／工程机器人；与Patlabor城市职业机甲语境相通,项目指定职业谱系，没有固定单一原IP机型,消防架桥机属于城市消防驾驶组，用整块桥板压住燃烧通道、铺设安全撤离路，同时灭火和冷却。它有原驾驶组与所属城市，不自动属于主角舰队。,消防供液、耐热护板、桥板收纳、宽稳站姿；功能应一眼区分于维修和警備。,完整/架桥/收纳采用同一轴系；以装备和状态表达高价值救援，不强求精密人与设备接触。,"docs/superpowers/specs/data/canon/entities.tsv # V353U034
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U034",设定→结构母版→正交视图→分件与状态→建模交接
+M11,01 我方机体与既有剧情机体,货柜领袖,变形护送、群盾、搬运,当前工务城及其已列专关,重新设计原创轮廓，不直接用现成变形金刚头胸；车体零件能在机体上追认；厚重可靠但不笨拙,机体；车辆；护场；吊运；受损,,机体成套图,设定图长边3072–4096；立绘2048×3072透明；半身2048²；头像1024²；可编辑分层源,"game-godot/assets/formula_lab/linked_campaign_v4/models/cargo.glb
+game-godot/assets/formula_lab/linked_campaign_v6/portraits/cargo.png","game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd",incoming/M11/,Transformers Optimus／Autobots：领袖与载具生命文化,项目明确来源；用户明确要求重新设计，不能直接使用擎天柱原设,货柜领袖拥有全尺寸载具身体和独立人格，沿地面重载路线护送队伍与物资。它习惯车灯、喇叭和短频道，在作出个人选择时才说完整句子；不是哑巴，也不是广播拼句。,卡车零件变为身体的可信结构、领袖的稳健站姿、保护同伴与车队的气质；重载车的宽厚和力量应保留。,重新设计头部、胸廓、车头和货台组合，不用标志性的现成擎天柱头胸；人形与车辆须同一零件身份，护场与搬运装备有来源。,"docs/superpowers/specs/data/canon/entities.tsv # V353U043
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U043
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP020",设定→结构母版→正交视图→分件与状态→建模交接
+M12,01 我方机体与既有剧情机体,镜星,棱镜标定与干扰,当前工务城及其已列专关,棱镜/感测器形成独有轮廓；工具性发光集中在作用器，避免霓虹通体发亮,普通；标定；干扰；失去导引；受损,,机体成套图,设定图长边3072–4096；立绘2048×3072透明；半身2048²；头像1024²；可编辑分层源,"game-godot/assets/formula_lab/linked_campaign_v4/models/mirror.glb
+game-godot/assets/formula_lab/linked_campaign_v6/portraits/mirror.png","game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd",incoming/M12/,Transformers同模重涂／镜像世界文化,项目明确镜像重涂主题；未锁定具体原作角色或Shattered Glass配色,镜星是电子干扰与敌我标识翻转路线机，重涂不改变其独立主体身份。它的立场必须从行动体现，不能用配色自动判善恶。,与同模家族的结构亲缘、局部不同的感测/反射组件、由相同轮廓产生不同人格的趣味。,棱镜、感测器和干扰器是独立可识别部件；母体未明确的结构不要擅自绑定为雷翎或擎天柱，先标出共享候选与当前独立件。,"docs/superpowers/specs/data/canon/entities.tsv # V353U046
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U046
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP021",设定→结构母版→正交视图→分件与状态→建模交接
+M13,01 我方机体与既有剧情机体,白色样机,贯穿射击与军刀近防,当前工务城及其已列专关,白色是身份色但大面积不用纯白；深色关节与少量识别色隔开环境；枪与刀的握持、收纳位置明确,普通；瞄准；军刀；受损；失能,,机体成套图,设定图长边3072–4096；立绘2048×3072透明；半身2048²；头像1024²；可编辑分层源,"game-godot/assets/formula_lab/linked_campaign_v4/models/white.glb
+game-godot/assets/formula_lab/linked_campaign_v6/portraits/white.png","game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd",incoming/M13/,Gundam UC／宇宙世纪主角试作机家族,当前Demo有此机；IP锚来自Roster，未将旧Roster时间表当当前剧情,白色样机在本Demo担任贯穿射击与军刀近防。作品家族带来试作机、军用工程和战争中的人机关系；本次没有据此新增驾驶员或正式入队剧情。,浅色装甲与深色关节分层、主角试作机的清楚头胸比例、枪盾剑的使用与收纳；有明确UC血统的克制工业感。,RX-78-2仅作家族实例，不是既定唯一母型；重绘独立头胸分区与武装，浅色不用高亮纯白，不能与地面金属糊在一起。,"docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U007
+game-godot/scripts/formula_lab/linked_campaign/catalog.gd # white",设定→结构母版→正交视图→分件与状态→建模交接
+M14,01 我方机体与既有剧情机体,歌翼可变机,航空震荡与机动,当前工务城及其已列专关,机翼和人形在同一结构下成立；与雷翎的狙击型不同；震荡投弹器和飞行方向明确,人形；航空；投弹；起降；受损,,机体成套图,设定图长边3072–4096；立绘2048×3072透明；半身2048²；头像1024²；可编辑分层源,"game-godot/assets/formula_lab/linked_campaign_v4/models/song.glb
+game-godot/assets/formula_lab/linked_campaign_v6/portraits/song.png","game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd",incoming/M14/,Macross／超时空要塞：可变战机与文化支援,当前Demo有此机；家族映射明确，具体VF型号未锁,歌翼在本Demo承担航空机动、震荡投弹；家族的意义不止能飞，还包含歌、文化和支援。此次外援提供现有形态，不自行写新歌姬或增加战斗规则。,航空器优先的翼面、座舱/感测区、引擎、挂舱与人形对应；飞行时像战机，不像人形平躺。,人形和航空形态各交一致三视图与部件迁移表。VF-1J的中间形态只作结构参考，当前未列可玩第三形态不能偷偷扩充任务。,"docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U016
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP005
+game-godot/scripts/formula_lab/linked_campaign/catalog.gd # song",设定→结构母版→正交视图→分件与状态→建模交接
+M15,01 我方机体与既有剧情机体,馆守Z轮式导览终端（旧守护者）,前章同一机魂的日常导览与对话形态,现有前章沿用素材；与M03同一主体,明确轮式底盘、导览屏与馆守的共同身份标识；是同一主体的远程终端，不是另一台独立机魂；不能用馆守Z整图缩放代替,普通；对话；受损,,机体成套图,设定图长边3072–4096；立绘2048×3072透明；半身2048²；头像1024²；可编辑分层源,game-godot/assets/formula_lab/chapter_c02_v2/old-guardian.png,game-godot/scripts/formula_lab/chapter_c02/ui.gd,incoming/M15/,继承馆守Z的魔神Z／旧超级系身份；终端为项目原创,与M03同一机魂，非新增第15台战斗机体,轮式导览终端、馆内广播和馆守Z胸前扬声器是同一主体的感官与输出端；人格根一直在巨体胸腔。旧守护者是日常称呼。,同馆守的标识、声音人格和温和但坚定的导览气质；轮式小终端能与巨体一眼建立亲缘。,终端可独立制作低模与表情屏，但属于馆守的终端形态。按微型展示档，不与18米本体同比例塞满一格。,"docs/superpowers/specs/data/canon/entities.tsv # CH002
+docs/superpowers/specs/data/canon/entities.tsv # V353U001",设定→结构母版→正交视图→分件与状态→建模交接
+F01,02 变形合体及装备,完全版王者轻装本体,卸装后仍是同一冠军,当前工务城及其已列专关,拆下外装后头胸腰四肢仍完整；不能把轻装画成弱化丑版,装甲连接位外露；轻装站姿,,形态与分件图,结构板长边3072–4096；展示图2048×3072透明；可编辑源,game-godot/assets/formula_lab/linked_campaign_v6/models/king-modular.glb,game-godot/scripts/formula_lab/linked_campaign/v6/equipment_rules.gd,incoming/F01/,全装主角机／高达式武器包审美；额角局部参考古铁巨神,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M05：完全版王者是20米全装竞技冠军，自主机魂享受舞台、冠军和全装备，执意完成二十多年前未播的最终话。不是被装备压垮的笑话，也不是胶价王遥控的道具。它可以主动卸装，未来仍能再度全装。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。拆下外装后头胸腰四肢仍完整；不能把轻装画成弱化丑版,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # MECHA_C02_COMPLETE_KING
+ # 本侧会话继承的用户头部、巨钻、双肩炮与全装要求；仅作设计约束",设定→结构母版→正交视图→分件与状态→建模交接
+F02,02 变形合体及装备,完全版王者双肩炮组,双线射击、卸下后场上操作,当前工务城及其已列专关,两炮各有背肩轴、炮口与前向；卸装保持同一外形和尺寸,挂载；前指；卸装；受损,,武器与工具图,结构图长边2048–3072；部件透明图2048²；可编辑源,game-godot/assets/formula_lab/linked_campaign_v6/models/king-cannon.glb,game-godot/scripts/formula_lab/linked_campaign/v6/equipment_rules.gd,incoming/F02/,全装主角机／高达式武器包审美；额角局部参考古铁巨神,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M05：完全版王者是20米全装竞技冠军，自主机魂享受舞台、冠军和全装备，执意完成二十多年前未播的最终话。不是被装备压垮的笑话，也不是胶价王遥控的道具。它可以主动卸装，未来仍能再度全装。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。两炮各有背肩轴、炮口与前向；卸装保持同一外形和尺寸,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # MECHA_C02_COMPLETE_KING
+ # 本侧会话继承的用户头部、巨钻、双肩炮与全装要求；仅作设计约束",设定→结构母版→正交视图→分件与状态→建模交接
+F03,02 变形合体及装备,完全版王者合盾护板,护场与卸装,当前工务城及其已列专关,盾面内外、抓持/挂载点清楚；不遮断头部或成为假胸甲,展开；合拢；卸装；受损,,武器与工具图,结构图长边2048–3072；部件透明图2048²；可编辑源,game-godot/assets/formula_lab/linked_campaign_v6/models/king-shield.glb,game-godot/scripts/formula_lab/linked_campaign/v6/equipment_rules.gd,incoming/F03/,全装主角机／高达式武器包审美；额角局部参考古铁巨神,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M05：完全版王者是20米全装竞技冠军，自主机魂享受舞台、冠军和全装备，执意完成二十多年前未播的最终话。不是被装备压垮的笑话，也不是胶价王遥控的道具。它可以主动卸装，未来仍能再度全装。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。盾面内外、抓持/挂载点清楚；不遮断头部或成为假胸甲,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # MECHA_C02_COMPLETE_KING
+ # 本侧会话继承的用户头部、巨钻、双肩炮与全装要求；仅作设计约束",设定→结构母版→正交视图→分件与状态→建模交接
+F04,02 变形合体及装备,完全版王者飞翼推进包,飞行及独立回收物,当前工务城及其已列专关,成对翼根与推进轴明确，安装在背部有承力结构；不要把羽翼漂浮在肩外,收束；飞行；卸装；受损,,武器与工具图,结构图长边2048–3072；部件透明图2048²；可编辑源,game-godot/assets/formula_lab/linked_campaign_v6/models/king-wing.glb,game-godot/scripts/formula_lab/linked_campaign/v6/equipment_rules.gd,incoming/F04/,全装主角机／高达式武器包审美；额角局部参考古铁巨神,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M05：完全版王者是20米全装竞技冠军，自主机魂享受舞台、冠军和全装备，执意完成二十多年前未播的最终话。不是被装备压垮的笑话，也不是胶价王遥控的道具。它可以主动卸装，未来仍能再度全装。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。成对翼根与推进轴明确，安装在背部有承力结构；不要把羽翼漂浮在肩外,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # MECHA_C02_COMPLETE_KING
+ # 本侧会话继承的用户头部、巨钻、双肩炮与全装要求；仅作设计约束",设定→结构母版→正交视图→分件与状态→建模交接
+F05,02 变形合体及装备,完全版王者右臂贯岩钻,近战推进及卸装,当前工务城及其已列专关,钻具根部连接右前臂，转子轴与推进方向同轴；禁止出现在裆部、膝外或无根悬空,静止；旋转；伸出；卸装；受损,,武器与工具图,结构图长边2048–3072；部件透明图2048²；可编辑源,game-godot/assets/formula_lab/linked_campaign_v6/models/king-drill.glb,game-godot/scripts/formula_lab/linked_campaign/v6/equipment_rules.gd,incoming/F05/,全装主角机／高达式武器包审美；额角局部参考古铁巨神,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M05：完全版王者是20米全装竞技冠军，自主机魂享受舞台、冠军和全装备，执意完成二十多年前未播的最终话。不是被装备压垮的笑话，也不是胶价王遥控的道具。它可以主动卸装，未来仍能再度全装。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。钻具根部连接右前臂，转子轴与推进方向同轴；禁止出现在裆部、膝外或无根悬空,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # MECHA_C02_COMPLETE_KING
+ # 本侧会话继承的用户头部、巨钻、双肩炮与全装要求；仅作设计约束",设定→结构母版→正交视图→分件与状态→建模交接
+F06,02 变形合体及装备,货柜领袖车辆形态,可变机的移动形态,当前工务城及其已列专关,轮轴、车头、货台与人形同一套零件；运输空间与乘员安全有实际位置,常态；转型中间态；受损,,形态与分件图,结构板长边3072–4096；展示图2048×3072透明；可编辑源,game-godot/assets/formula_lab/linked_campaign_v4/models/cargo_vehicle.glb,"game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/model_motion.gd",incoming/F06/,Transformers Optimus／Autobots：领袖与载具生命文化,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M11：货柜领袖拥有全尺寸载具身体和独立人格，沿地面重载路线护送队伍与物资。它习惯车灯、喇叭和短频道，在作出个人选择时才说完整句子；不是哑巴，也不是广播拼句。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。轮轴、车头、货台与人形同一套零件；运输空间与乘员安全有实际位置,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # V353U043
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U043
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP020",设定→结构母版→正交视图→分件与状态→建模交接
+F07,02 变形合体及装备,雷翎航空形态,可变机的移动形态,当前工务城及其已列专关,保留狙击炮轴与推进器，机翼展开不变成另一台机,常态；转型中间态；受损,,形态与分件图,结构板长边3072–4096；展示图2048×3072透明；可编辑源,game-godot/assets/formula_lab/linked_campaign_v4/models/leiling_aircraft.glb,"game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/model_motion.gd",incoming/F07/,Transformers Starscream／红蜘蛛所代表的Seeker喷气重涂谱系,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M08：雷翎承担远射、侦察与机动换位。它与同模重涂的文化有关，颜色不是它的全部身份；轮换与自主开火属于自己的选择。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。保留狙击炮轴与推进器，机翼展开不变成另一台机,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # V353U047
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U047
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP021",设定→结构母版→正交视图→分件与状态→建模交接
+F08,02 变形合体及装备,歌翼航空形态,可变机的移动形态,当前工务城及其已列专关,机翼、座舱/感测区、弹舱与人形能对应；转型有中间姿态,常态；转型中间态；受损,,形态与分件图,结构板长边3072–4096；展示图2048×3072透明；可编辑源,game-godot/assets/formula_lab/linked_campaign_v4/models/song_aircraft.glb,"game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/model_motion.gd",incoming/F08/,Macross／超时空要塞：可变战机与文化支援,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M14：歌翼在本Demo承担航空机动、震荡投弹；家族的意义不止能飞，还包含歌、文化和支援。此次外援提供现有形态，不自行写新歌姬或增加战斗规则。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。机翼、座舱/感测区、弹舱与人形能对应；转型有中间姿态,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U016
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP005
+game-godot/scripts/formula_lab/linked_campaign/catalog.gd # song",设定→结构母版→正交视图→分件与状态→建模交接
+F09,02 变形合体及装备,完整勇拳核心机,合体专关与机体生命周期,当前工务城及其已列专关,完整有人机器人，有胸躯干四肢；不是只有拳头、空胸内胆或另一台凭空生成的小机,独立；合体中；合体后；分离；受损,,形态与分件图,结构板长边3072–4096；展示图2048×3072透明；可编辑源,game-godot/assets/formula_lab/linked_campaign_v6/assembly/complete-core.glb,"game-godot/scripts/formula_lab/linked_campaign/v5/rescue_cases.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/F09/,GaoGaiGar／勇者王与Brave勇者系列,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M04：社勇王的物理核心是豪司驾驶的完整机器人“勇拳”，与外部腿架、肩背组件合体；核心和合体不是两台长期机体。完整合体的主体AI能拒绝危险命令，并与豪司重新协作。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。完整有人机器人，有胸躯干四肢；不是只有拳头、空胸内胆或另一台凭空生成的小机,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # V353U024
+docs/superpowers/specs/data/canon/entities.tsv # MECHA_BRAVE_FIST_PROTOTYPE
+docs/superpowers/specs/data/canon/entities.tsv # SOCIAL_BRAVE_AI_REFUSAL
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP008",设定→结构母版→正交视图→分件与状态→建模交接
+F10,02 变形合体及装备,社勇王完整合体,合体专关与机体生命周期,当前工务城及其已列专关,原核心进入外部组件；保留主身份和零件来源，不能瞬间缩放拼出另一套身体,独立；合体中；合体后；分离；受损,,形态与分件图,结构板长边3072–4096；展示图2048×3072透明；可编辑源,game-godot/assets/formula_lab/linked_campaign_v6/assembly/physical-combined.glb,"game-godot/scripts/formula_lab/linked_campaign/v5/rescue_cases.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/F10/,GaoGaiGar／勇者王与Brave勇者系列,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M04：社勇王的物理核心是豪司驾驶的完整机器人“勇拳”，与外部腿架、肩背组件合体；核心和合体不是两台长期机体。完整合体的主体AI能拒绝危险命令，并与豪司重新协作。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。原核心进入外部组件；保留主身份和零件来源，不能瞬间缩放拼出另一套身体,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # V353U024
+docs/superpowers/specs/data/canon/entities.tsv # MECHA_BRAVE_FIST_PROTOTYPE
+docs/superpowers/specs/data/canon/entities.tsv # SOCIAL_BRAVE_AI_REFUSAL
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP008",设定→结构母版→正交视图→分件与状态→建模交接
+F11,02 变形合体及装备,社勇王外部腿架,合体专关与机体生命周期,当前工务城及其已列专关,左右脚甲与腿架有进入/闭合结构，地面独立状态仍能识别,独立；合体中；合体后；分离；受损,,形态与分件图,结构板长边3072–4096；展示图2048×3072透明；可编辑源,game-godot/assets/formula_lab/linked_campaign_v6/assembly/boots.glb,"game-godot/scripts/formula_lab/linked_campaign/v5/rescue_cases.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/F11/,GaoGaiGar／勇者王与Brave勇者系列,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M04：社勇王的物理核心是豪司驾驶的完整机器人“勇拳”，与外部腿架、肩背组件合体；核心和合体不是两台长期机体。完整合体的主体AI能拒绝危险命令，并与豪司重新协作。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。左右脚甲与腿架有进入/闭合结构，地面独立状态仍能识别,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # V353U024
+docs/superpowers/specs/data/canon/entities.tsv # MECHA_BRAVE_FIST_PROTOTYPE
+docs/superpowers/specs/data/canon/entities.tsv # SOCIAL_BRAVE_AI_REFUSAL
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP008",设定→结构母版→正交视图→分件与状态→建模交接
+F12,02 变形合体及装备,社勇王肩背外部组件,合体专关与机体生命周期,当前工务城及其已列专关,肩包、背架和接口一体；与核心接入和分离位置一致,独立；合体中；合体后；分离；受损,,形态与分件图,结构板长边3072–4096；展示图2048×3072透明；可编辑源,game-godot/assets/formula_lab/linked_campaign_v6/assembly/shoulders.glb,"game-godot/scripts/formula_lab/linked_campaign/v5/rescue_cases.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/F12/,GaoGaiGar／勇者王与Brave勇者系列,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M04：社勇王的物理核心是豪司驾驶的完整机器人“勇拳”，与外部腿架、肩背组件合体；核心和合体不是两台长期机体。完整合体的主体AI能拒绝危险命令，并与豪司重新协作。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。肩包、背架和接口一体；与核心接入和分离位置一致,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # V353U024
+docs/superpowers/specs/data/canon/entities.tsv # MECHA_BRAVE_FIST_PROTOTYPE
+docs/superpowers/specs/data/canon/entities.tsv # SOCIAL_BRAVE_AI_REFUSAL
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP008",设定→结构母版→正交视图→分件与状态→建模交接
+F13,02 变形合体及装备,工程液压顶具,共享工具与产物,当前工务城及其已列专关,活塞、反力座和可收纳接口清楚；顶不动物体时回弹，不能变成刀,收纳；伸出；回弹,,武器与工具图,结构图长边2048–3072；部件透明图2048²；可编辑源,game-godot/assets/formula_lab/linked_campaign_v6/tools/hydraulic-press.glb,"game-godot/scripts/formula_lab/linked_campaign/v6/mounted_tool.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/F13/,Patlabor／机动警察式预算劳务机,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M06：预算二号是低成本维修、撤离、补给机，擅长以廉价替代件完成重要工程。它与城市工务体系相连，预算限制是工作条件，不是纯笑话。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。活塞、反力座和可收纳接口清楚；顶不动物体时回弹，不能变成刀,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # V353U032
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U032
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP011",设定→结构母版→正交视图→分件与状态→建模交接
+F14,02 变形合体及装备,焊补工具与备件,共享工具与产物,当前工务城及其已列专关,焊枪/工具臂、备件匣、补片成套；按动作家族适配，不做每种柜内线路,取用；工作；收回,,武器与工具图,结构图长边2048–3072；部件透明图2048²；可编辑源,,"game-godot/scripts/formula_lab/linked_campaign/v6/mounted_tool.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/F14/,Patlabor／机动警察式预算劳务机；Patlabor／机动警察式城市劳务机,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M06：预算二号是低成本维修、撤离、补给机，擅长以廉价替代件完成重要工程。它与城市工务体系相连，预算限制是工作条件，不是纯笑话。 / M07：市政吊装机是推拉、吊运、改轨和地形施工的城市公共支援；有工作身份，不只是地图上可移动的钩子。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。焊枪/工具臂、备件匣、补片成套；按动作家族适配，不做每种柜内线路,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # V353U032
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U032
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP011
+docs/superpowers/specs/data/canon/entities.tsv # V353U031
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U031",设定→结构母版→正交视图→分件与状态→建模交接
+F15,02 变形合体及装备,牵引与拘束索具,共享工具与产物,当前工务城及其已列专关,牵引钩和拘束爪共用材质但形状可分；线缆独立由引擎生成,发射；张紧；松脱,,武器与工具图,结构图长边2048–3072；部件透明图2048²；可编辑源,,"game-godot/scripts/formula_lab/linked_campaign/v6/mounted_tool.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/F15/,Mazinger Z／魔神Z及旧超级机器人谱系；Patlabor／机动警察：城市警备劳务机；Patlabor／机动警察式城市劳务机,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M03：馆守Z是万机馆18米旧巨神，“旧守护者”是同一机魂的日常称呼。C01原右拳与完整前臂已毁，之后用临时巡展臂装，真正后继右臂要另有剧情。它与兜灯有长期维修和守护关系。 / M09：灰崎警备劳务机承担非致命控制、封路和警戒，可以撤回不安全动作继续协作。制服与劳务的冲突比普通军用战斗更重要。 / M07：市政吊装机是推拉、吊运、改轨和地形施工的城市公共支援；有工作身份，不只是地图上可移动的钩子。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。牵引钩和拘束爪共用材质但形状可分；线缆独立由引擎生成,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # V353U001
+docs/superpowers/specs/data/canon/entities.tsv # CH002
+docs/superpowers/specs/data/canon/entities.tsv # MECHA_GUARDIAN_TOURING_ARM
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP001
+docs/superpowers/specs/data/canon/entities.tsv # V353U033
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U033
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP011
+docs/superpowers/specs/data/canon/entities.tsv # V353U031
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U031",设定→结构母版→正交视图→分件与状态→建模交接
+F16,02 变形合体及装备,折叠隔离墙套件,共享工具与产物,当前工务城及其已列专关,预算二号的预制墙段与灰崎的折叠警戒段分两种，不从地下魔法出现,收纳；展开；落地；损坏,,武器与工具图,结构图长边2048–3072；部件透明图2048²；可编辑源,,"game-godot/scripts/formula_lab/linked_campaign/v6/mounted_tool.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/F16/,Patlabor／机动警察式预算劳务机；Patlabor／机动警察：城市警备劳务机,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M06：预算二号是低成本维修、撤离、补给机，擅长以廉价替代件完成重要工程。它与城市工务体系相连，预算限制是工作条件，不是纯笑话。 / M09：灰崎警备劳务机承担非致命控制、封路和警戒，可以撤回不安全动作继续协作。制服与劳务的冲突比普通军用战斗更重要。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。预算二号的预制墙段与灰崎的折叠警戒段分两种，不从地下魔法出现,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # V353U032
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U032
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP011
+docs/superpowers/specs/data/canon/entities.tsv # V353U033
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U033",设定→结构母版→正交视图→分件与状态→建模交接
+F17,02 变形合体及装备,消防应急桥板,共享工具与产物,当前工务城及其已列专关,装载、展开、桥面与铰接端能对应；有限长度的实体,收纳；展开；接地；毁坏,,武器与工具图,结构图长边2048–3072；部件透明图2048²；可编辑源,,"game-godot/scripts/formula_lab/linked_campaign/v6/mounted_tool.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/F17/,城市消防／工程机器人；与Patlabor城市职业机甲语境相通,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M10：消防架桥机属于城市消防驾驶组，用整块桥板压住燃烧通道、铺设安全撤离路，同时灭火和冷却。它有原驾驶组与所属城市，不自动属于主角舰队。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。装载、展开、桥面与铰接端能对应；有限长度的实体,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # V353U034
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U034",设定→结构母版→正交视图→分件与状态→建模交接
+F18,02 变形合体及装备,炮弹导弹与弹壳,共享工具与产物,当前工务城及其已列专关,爆破导弹、震荡弹、跨区炮弹用弹头/尾迹区分；具体伤害范围由规则显示,飞行；命中；残骸,,武器与工具图,结构图长边2048–3072；部件透明图2048²；可编辑源,,"game-godot/scripts/formula_lab/linked_campaign/v6/mounted_tool.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/F18/,Transformers Starscream／红蜘蛛所代表的Seeker喷气重涂谱系；Macross／超时空要塞：可变战机与文化支援；项目原创敌体／非我方单位；没有已指定的一对一外部IP,继承所属主体；共享工具可跨列出的使用者，部件不算新角色,M08：雷翎承担远射、侦察与机动换位。它与同模重涂的文化有关，颜色不是它的全部身份；轮换与自主开火属于自己的选择。 / M14：歌翼在本Demo承担航空机动、震荡投弹；家族的意义不止能飞，还包含歌、文化和支援。此次外援提供现有形态，不自行写新歌姬或增加战斗规则。 / E04：外敌的驻定架设炮击者。在架设点蓄力，可能跨战场炮击；移动、断供或干扰会影响其工作。,沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。爆破导弹、震荡弹、跨区炮弹用弹头/尾迹区分；具体伤害范围由规则显示,从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。,"docs/superpowers/specs/data/canon/entities.tsv # V353U047
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U047
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP021
+docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv # V353U016
+docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv # IP005
+game-godot/scripts/formula_lab/linked_campaign/catalog.gd # song
+game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd # gun",设定→结构母版→正交视图→分件与状态→建模交接
+E01,03 敌种与非我方单位,啮线体,近接方向攻击,当前工务城及其已列专关,大块头胸与咬切器官、强支撑肢；与我方标准单位有相近视觉分量，不能像小狗,普通；公开预备；发动；恢复；受损；击毁,,敌种成套图,三视与动作设计长边3072；头像1024²；透明底；可编辑源,game-godot/assets/formula_lab/linked_campaign_v4/models/claw.glb,"game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_cases.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_data.gd",incoming/E01/,项目原创敌体／非我方单位；没有已指定的一对一外部IP,当前Demo战术职能明确；不以《陷阵之志》Vek造型替代项目敌体,猎巢/异形外敌的近接啮断者。以破坏设施、接口和路径阻挠救援；咬切方向是玩家要读懂的信息。,咬切器、承力胸背与支撑肢，头尾与前向必须在正常镜头可读。,标准单格威胁体，不按虫子现实比例缩小。,game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd # claw,设定→结构母版→正交视图→分件与状态→建模交接
+E02,03 敌种与非我方单位,群生啮线幼体,数量压力与增援,当前工务城及其已列专关,小型单格档但保持敌体威胁感；与啮线体以头腹比例和攻击器官区分，不只是等比缩小,普通；公开预备；发动；恢复；受损；击毁,,敌种成套图,三视与动作设计长边3072；头像1024²；透明底；可编辑源,game-godot/assets/formula_lab/linked_campaign_v4/models/claw.glb,"game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_cases.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_data.gd",incoming/E02/,项目原创敌体／非我方单位；没有已指定的一对一外部IP,当前Demo战术职能明确；不以《陷阵之志》Vek造型替代项目敌体,外敌的群生增援幼体。靠补充数量与包围形成压力，不是单纯装饰虫。,比近接主型更轻快的头腹关系和集群器官；复用骨架但有差别。,小型单格档仍需足够可见，不能只缩放啮线体。,game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd # mite,设定→结构母版→正交视图→分件与状态→建模交接
+E03,03 敌种与非我方单位,喷酸体,锁格喷射与连爆局面,当前工务城及其已列专关,专用喷口、储液腹与姿态；不能继续借啮线体换名；酸液与火焰/炮弹不同,普通；公开预备；发动；恢复；受损；击毁,,敌种成套图,三视与动作设计长边3072；头像1024²；透明底；可编辑源,game-godot/assets/formula_lab/linked_campaign_v4/models/claw.glb,"game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_cases.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_data.gd",incoming/E03/,项目原创敌体／非我方单位；没有已指定的一对一外部IP,当前Demo战术职能明确；不以《陷阵之志》Vek造型替代项目敌体,外敌的喷射/腐蚀分工。准备喷射与预计污染范围要被玩家提前理解。,喷口、储液囊和喷射姿势；液体走向与口器一致。,喷酸不是红色火焰，也不是啮线体换一个技能名字。,game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd # acid,设定→结构母版→正交视图→分件与状态→建模交接
+E04,03 敌种与非我方单位,远程架设体,跨区炮击,当前工务城及其已列专关,架设支脚、炮轴、蓄能器官可读；收起/架设/蓄力/出膛同一结构,普通；公开预备；发动；恢复；受损；击毁,,敌种成套图,三视与动作设计长边3072；头像1024²；透明底；可编辑源,game-godot/assets/formula_lab/linked_campaign_v4/models/gun.glb,"game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_cases.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_data.gd",incoming/E04/,项目原创敌体／非我方单位；没有已指定的一对一外部IP,当前Demo战术职能明确；不以《陷阵之志》Vek造型替代项目敌体,外敌的驻定架设炮击者。在架设点蓄力，可能跨战场炮击；移动、断供或干扰会影响其工作。,炮轴、支脚、蓄能/供能器官，收起与架设两种姿态。,炮口方向和投射路线必须可读，不能用发光腹部代替武器。,game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd # gun,设定→结构母版→正交视图→分件与状态→建模交接
+E05,03 敌种与非我方单位,重型楔入体,驻定切割与重型阻挡,当前工务城及其已列专关,2×2承力躯体和楔形切割器；重而不碎，击退时重量明确,普通；公开预备；发动；恢复；受损；击毁,,敌种成套图,三视与动作设计长边3072；头像1024²；透明底；可编辑源,game-godot/assets/formula_lab/linked_campaign_v4/models/wedge.glb,"game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_cases.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_data.gd",incoming/E05/,项目原创敌体／非我方单位；没有已指定的一对一外部IP,当前Demo战术职能明确；不以《陷阵之志》Vek造型替代项目敌体,外敌的重型楔入/切割者。驻定威胁与大足迹阻挡形成战术问题。,2×2承力身体、大楔刃、撑足与弱侧。,与同档我方机体接近视觉份量；不是又一只小红蜘蛛。,game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd # wedge,设定→结构母版→正交视图→分件与状态→建模交接
+E06,03 敌种与非我方单位,掠渠体,悬浮袭扰,当前工务城及其已列专关,升力/浮行结构与瞄准方向明确；不靠全身发光表示飞行,普通；公开预备；发动；恢复；受损；击毁,,敌种成套图,三视与动作设计长边3072；头像1024²；透明底；可编辑源,game-godot/assets/formula_lab/linked_campaign_v4/models/hover.glb,"game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_cases.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_data.gd",incoming/E06/,项目原创敌体／非我方单位；没有已指定的一对一外部IP,当前Demo战术职能明确；不以《陷阵之志》Vek造型替代项目敌体,外敌的掠渠悬浮者。跨越水渠和地表障碍进行袭扰。,明确升力/悬浮结构与瞄准前向。,有实体体积，不能通体透明发光来表示飞行。,game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd # hover,设定→结构母版→正交视图→分件与状态→建模交接
+E07,03 敌种与非我方单位,共振护群体,群体减伤来源,当前工务城及其已列专关,专用护群器官与范围中心轮廓；不能只拿掠渠体改颜色；护群生效和被打断可辨,普通；公开预备；发动；恢复；受损；击毁,,敌种成套图,三视与动作设计长边3072；头像1024²；透明底；可编辑源,game-godot/assets/formula_lab/linked_campaign_v4/models/hover.glb,"game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_cases.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_data.gd",incoming/E07/,项目原创敌体／非我方单位；没有已指定的一对一外部IP,当前Demo战术职能明确；不以《陷阵之志》Vek造型替代项目敌体,外敌的共振护群者。为附近同阵营减伤，是玩家可以先拆除或移离的保护源。,共振器官、保护开启与被打断的两个大状态。,与普通悬浮敌共享适当基础，但必须有独立保护源轮廓。,game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd # screen,设定→结构母版→正交视图→分件与状态→建模交接
+E08,03 敌种与非我方单位,自动拆锁工机,受旧令驱动的市政作业机,当前工务城及其已列专关,保留城市工具机械身份；工作臂/切锁器具清楚，停机后不伪装击毁,普通；公开预备；发动；恢复；受损；击毁,,敌种成套图,三视与动作设计长边3072；头像1024²；透明底；可编辑源,game-godot/assets/formula_lab/linked_campaign_v4/models/worker.glb,"game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_cases.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_data.gd",incoming/E08/,项目原创敌体／非我方单位；没有已指定的一对一外部IP,当前Demo战术职能明确；不以《陷阵之志》Vek造型替代项目敌体,受旧令驱动的城市拆锁工机。目标是按令拆除设施；撤令、停机与击毁是不同状态。,城市工具机械的切锁臂、作业端和能源结构。,属于劳务机械，不画成猎巢异形；无需强配某个原IP型号。,game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd # worker,设定→结构母版→正交视图→分件与状态→建模交接
+E09,03 敌种与非我方单位,无人牵引工机,锁车与拖移,当前工务城及其已列专关,牵引杆/夹具和配重区别于拆锁机；机体与列车之间有连接来源,普通；公开预备；发动；恢复；受损；击毁,,敌种成套图,三视与动作设计长边3072；头像1024²；透明底；可编辑源,game-godot/assets/formula_lab/linked_campaign_v4/models/worker.glb,"game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_cases.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_data.gd",incoming/E09/,项目原创敌体／非我方单位；没有已指定的一对一外部IP,当前Demo战术职能明确；不以《陷阵之志》Vek造型替代项目敌体,受旧令驱动的无人牵引工机。拖移、锁车、占据运输路径，与被牵引物存在真实连接。,夹具、牵引杆、配重和低重心。,与拆锁工机区分；线缆/连接由游戏生成，不烘焙到完整场景图。,game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd # tug,设定→结构母版→正交视图→分件与状态→建模交接
+E10,03 敌种与非我方单位,断冠,2×2宿敌样本,当前工务城及其已列专关,按既有断冠设计做独立冠环、护板和支撑节点；不同方向暴露弱侧可视，不能继续借楔入体充数,普通；公开预备；发动；恢复；受损；击毁,,敌种成套图,三视与动作设计长边3072；头像1024²；透明底；可编辑源,game-godot/assets/formula_lab/linked_campaign_v4/models/wedge.glb,"game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_cases.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_data.gd",incoming/E10/,项目原创敌体／非我方单位；没有已指定的一对一外部IP,当前Demo战术职能明确；不以《陷阵之志》Vek造型替代项目敌体,断冠：带独立猎取目标和旧伤的外敌。系统专关使用减配2×2战术身体，观察我方配合并公开反制；不是C04正式主线巨体，也不是临时制造的小怪。,独立冠环、护板、侧撑与受损/暴露状态，朝向和反制变化可见。,不借楔入体顶替宿敌；旧伤与观察主题要体现在设计，而非乱加破片。,docs/superpowers/specs/work-packages/2026-10-02-chao-gag-linked-operation-candidate/v5完整整改计划-20261008/11-名场面与系统全链补定.md # 断冠与战术专关,设定→结构母版→正交视图→分件与状态→建模交接
+E11,03 敌种与非我方单位,架设体对空装备变体,上层与空中压制,当前工务城及其已列专关,复用架设体身体，只增仰角炮架、跟踪器和对空预备姿态；不另造完全无关敌种,普通；公开预备；发动；恢复；受损；击毁,,敌种成套图,三视与动作设计长边3072；头像1024²；透明底；可编辑源,game-godot/assets/formula_lab/linked_campaign_v4/models/gun.glb,"game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_data.gd
+game-godot/scripts/formula_lab/linked_campaign/v5/rescue_cases.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_data.gd",incoming/E11/,项目原创敌体／非我方单位；没有已指定的一对一外部IP,当前Demo战术职能明确；不以《陷阵之志》Vek造型替代项目敌体,远程架设体的对空装备变体。上层/空中压制；同一架设身体更换工作装置。,上仰炮架、跟踪器与对空预备姿态。,沿用E04身体与三视母版，只补差分和挂点；不报价成全新物种。,game-godot/scripts/formula_lab/linked_campaign/campaign_data.gd # antiair,设定→结构母版→正交视图→分件与状态→建模交接
+H01,04 人物头像立绘与表情,纪存,指挥、判断、跨区调配,当前工务城及人物全链专关,中国青年男性外观的机魂实体；保留既有身份与终端；有主见和现场行动，不画成无特征网游少年,日常；工作/指令姿态；表情差分,平静；观察；判断；指挥；惊讶；担忧；愤怒克制；释然,人物成套图,全身2048×3072；对话2048²；头像1024²；统一眼线/下颌/脚点；透明底和分层源,game-godot/assets/candidate/c02_short_plan/jicun_full_reference.png,"game-godot/scripts/formula_lab/linked_campaign/campaign_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/chapter_c02/ui.gd",incoming/H01/,项目原创人物；不对应某个外部IP人物脸型,身份取当前Canon；视觉旧稿用于辨认，允许按用户要求重新制作,纪存。中国青年男性呈现的机魂实体；文化身份来自万机馆生活与主动认领。纪文山留下的档案工作是背景，不是把他做成旧馆长克隆体。,冷静中有主动判断；档案终端用于跨区调配，仍尊重驾驶员与机体的行动主体。,较长面中、较小眼睛、黑发无眼镜、稳定成年重心、深蓝馆务外套、左臂终端与明确指路的右手。,"docs/superpowers/specs/data/canon/entities.tsv # CH_JICUN
+docs/superpowers/specs/data/canon/character_mecha_art_locks.tsv # CH_JICUN
+docs/superpowers/specs/剧情梗概/V35核心角色国籍文化与姓名审定-2026-07-21.md # 纪存",按用途制作；不强套三视/建模
+H02,04 人物头像立绘与表情,白鸢,战术预演与分镜,当前工务城及人物全链专关,成年欧洲创作者；浅色发、成年骨相与体态、分镜工具；和七海在年龄气质/脸型/服装职责上区别,日常；工作/指令姿态；表情差分,平静；专注绘制；解释；质疑；嘴硬；意外；紧张；得意释然,人物成套图,全身2048×3072；对话2048²；头像1024²；统一眼线/下颌/脚点；透明底和分层源,game-godot/assets/candidate/c02_short_plan/baiyuan_full_reference.png,"game-godot/scripts/formula_lab/linked_campaign/campaign_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/chapter_c02/ui.gd",incoming/H02/,项目原创人物；不对应某个外部IP人物脸型,身份取当前Canon；视觉旧稿用于辨认，允许按用户要求重新制作,白鸢／Evelyn Voss。英国公民，英德创作者家庭，White Kite为笔名；成年欧美创作者，画同人、做分镜，有跨语言生活与作品被盗用的经历。,嘴硬、机敏、带成年色气与创作欲；预演来自现场数据和分镜，不是未来视或画稿改现实。,浅金/银白发、成年欧洲面部骨相与丰满体态、创作者服装、分镜本与笔；与七海拉开脸型和气质。,"docs/superpowers/specs/data/canon/entities.tsv # N_BAIYUAN
+docs/superpowers/specs/data/canon/character_mecha_art_locks.tsv # N_BAIYUAN
+docs/superpowers/specs/剧情梗概/V35核心角色国籍文化与姓名审定-2026-07-21.md # 白鸢／Evelyn Voss",按用途制作；不强套三视/建模
+H03,04 人物头像立绘与表情,七海,权限核验、撤令与责任,当前工务城及人物全链专关,日本成年女性；深色直发、成熟克制、秩序感；冷白服装使用柔和色块，不能整个人白得刺眼,日常；工作/指令姿态；表情差分,平静；核验；警告；质疑；决断；不悦克制；担忧；放松,人物成套图,全身2048×3072；对话2048²；头像1024²；统一眼线/下颌/脚点；透明底和分层源,game-godot/assets/formula_lab/chapter_c02_v1/qihai.png,"game-godot/scripts/formula_lab/linked_campaign/campaign_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/chapter_c02/ui.gd",incoming/H03/,项目原创人物；不对应某个外部IP人物脸型,身份取当前Canon；视觉旧稿用于辨认，允许按用户要求重新制作,七海／佐伯七海 Nanami Saeki。日本横滨背景的成年女性，企业档案/封存责任链中的内部改革者；有自己的职业判断和与纪存的关系，不是品牌代言人格。,成熟克制、有秩序感与吸引力；核验、撤回本人旧令和承担责任，不是万能盖章解除一切。,深色直发、成熟东亚五官、功能明确的法务/核验服、柔和冷白配深色；动作简洁而有决断。,"docs/superpowers/specs/data/canon/entities.tsv # CH_QIHAI
+docs/superpowers/specs/data/canon/character_mecha_art_locks.tsv # CH_QIHAI
+docs/superpowers/specs/剧情梗概/V35核心角色国籍文化与姓名审定-2026-07-21.md # 七海／佐伯七海 Nanami Saeki",按用途制作；不强套三视/建模
+H04,04 人物头像立绘与表情,兜灯,维修与安全制动,当前工务城及人物全链专关,中国青年女性整备员；头灯、维修服、真实工具与手部劳动；不幼儿化；与其他对话人物共用头部显示尺度,日常；工作/指令姿态；表情差分,平静；检查；专注维修；不耐烦；警告；惊讶；担忧；松口气,人物成套图,全身2048×3072；对话2048²；头像1024²；统一眼线/下颌/脚点；透明底和分层源,game-godot/assets/formula_lab/chapter_c02_v1/doudeng.png,"game-godot/scripts/formula_lab/linked_campaign/campaign_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/chapter_c02/ui.gd",incoming/H04/,项目原创人物；不对应某个外部IP人物脸型,身份取当前Canon；视觉旧稿用于辨认，允许按用户要求重新制作,兜灯／窦晓宁。中国青年女性整备员，昵称来自窦姓和童年戴头灯钻检修口；与馆守的相处和祖辈维修史形成她的职业。,嘴硬手巧，照顾常以检查、维修、安全制动表达；能自己行动，不只是喊加油的后排。,维修服、头灯、安全绳、真实工具、手上旧伤；脸与身体保持青年而非儿童；立绘头部显示尺度与其他人一致。,"docs/superpowers/specs/data/canon/entities.tsv # CH001
+docs/superpowers/specs/data/canon/character_mecha_art_locks.tsv # CH001
+docs/superpowers/specs/剧情梗概/V35核心角色国籍文化与姓名审定-2026-07-21.md # 兜灯／窦晓宁",按用途制作；不强套三视/建模
+H05,04 人物头像立绘与表情,陆衡,载荷判读与工程责任,当前工务城及人物全链专关,中肯混合家庭设定；中深棕肤、卷曲或粗硬短发、工程服；不用族裔刻板替代个人特征,日常；工作/指令姿态；表情差分,平静；测算；解释；怀疑；指挥；焦急；沉重；释然,人物成套图,全身2048×3072；对话2048²；头像1024²；统一眼线/下颌/脚点；透明底和分层源,,"game-godot/scripts/formula_lab/linked_campaign/campaign_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/chapter_c02/ui.gd",incoming/H05/,项目原创人物；不对应某个外部IP人物脸型,身份取当前Canon；视觉旧稿用于辨认，允许按用户要求重新制作,陆衡／Heng Lu Mwangi。中肯混合家庭，母系来自中国工业沿海，父系来自蒙巴萨港；工程能力来自教育、港口生活和失败经验。,跨港工务顾问，有参数、工况和责任感；不是只会说不科学的吐槽器。,中深棕肤、卷曲或粗硬短发、符合本人生活的工程衣装与检测工具；混合家庭形象不能只是给旧脸涂黑。,"docs/superpowers/specs/data/canon/entities.tsv # CH_LUHENG
+docs/superpowers/specs/data/canon/character_mecha_art_locks.tsv # CH_LUHENG
+docs/superpowers/specs/剧情梗概/V35核心角色国籍文化与姓名审定-2026-07-21.md # 陆衡／Heng Lu Mwangi",按用途制作；不强套三视/建模
+H06,04 人物头像立绘与表情,豪司,勇拳驾驶、社勇王协商,当前工务城及人物全链专关,日本成年试驾员；热血与职业责任并存，驾驶装/工牌有功能；不是通用偶像脸,日常；工作/指令姿态；表情差分,平静；振奋；决意；担忧；争辩；承担责任；惊讶；庆幸,人物成套图,全身2048×3072；对话2048²；头像1024²；统一眼线/下颌/脚点；透明底和分层源,game-godot/assets/portraits/portrait_haosi.png,"game-godot/scripts/formula_lab/linked_campaign/campaign_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/chapter_c02/ui.gd",incoming/H06/,项目原创人物；不对应某个外部IP人物脸型,身份取当前Canon；视觉旧稿用于辨认，允许按用户要求重新制作,豪司／荒川豪司 Goji Arakawa。日本成年企业试驾员；驾驶完整勇拳核心机，并在完整合体后与社勇王主体AI协商。越过撤离令救援有真实职业代价。,热血、勇气和职业责任并存；能争辩、承担和听取伙伴拒绝。,试驾服/驾驶防护、真实工牌与工作习惯，表情有热血和疲惫的跨度；与陆衡明显不同。,"docs/superpowers/specs/data/canon/entities.tsv # CH036
+docs/superpowers/specs/data/canon/character_mecha_art_locks.tsv # CH036
+docs/superpowers/specs/剧情梗概/V35核心角色国籍文化与姓名审定-2026-07-21.md # 豪司／荒川豪司 Goji Arakawa",按用途制作；不强套三视/建模
+H07,04 人物头像立绘与表情,唐胶,前章模型修复与生活角色,现有前章沿用素材,中国青年男性；工具围裙和手作生活气；和纪存明确不同；不沿用旧女性/中性误稿,日常；工作/指令姿态；表情差分,平静；检视；吐槽；解释；不满；惊讶；担心；欣慰,人物成套图,全身2048×3072；对话2048²；头像1024²；统一眼线/下颌/脚点；透明底和分层源,game-godot/assets/formula_lab/chapter_c02_v1/tangjiao.png,"game-godot/scripts/formula_lab/linked_campaign/campaign_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/chapter_c02/ui.gd",incoming/H07/,项目原创人物；不对应某个外部IP人物脸型,身份取当前Canon；视觉旧稿用于辨认，允许按用户要求重新制作,唐胶／唐启明。中国青年男性模型修复师，木桶街手作生活角色；以工艺理解机体，参与战法表达，不把模型神奇放大。,毒舌但先骂后修，关心热爱被炒价和等级吞掉；话来自零件、刀痕、返工。,工具围裙、胶痕、手工工具和修复专注神态；区别纪存，保留成年青年男性方向。,"docs/superpowers/specs/data/canon/entities.tsv # CH_TANGJIAO
+docs/superpowers/specs/data/canon/character_mecha_art_locks.tsv # CH_TANGJIAO
+docs/superpowers/specs/剧情梗概/V35核心角色国籍文化与姓名审定-2026-07-21.md # 唐胶／唐启明",按用途制作；不强套三视/建模
+H08,04 人物头像立绘与表情,赵梅,合作社组织者,现有前章沿用素材,保留既有年龄、脸部辨识与生活经历；成年成熟组织者，有行动力，不被画成通用慈祥路人,日常；工作/指令姿态；表情差分,平静；倾听；协调；质疑；严肃；担忧；坚定；微笑,人物成套图,全身2048×3072；对话2048²；头像1024²；统一眼线/下颌/脚点；透明底和分层源,game-godot/assets/formula_lab/chapter_c02_v2/zhaomei.png,"game-godot/scripts/formula_lab/linked_campaign/campaign_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/chapter_c02/ui.gd",incoming/H08/,项目原创人物；不对应某个外部IP人物脸型,身份取当前Canon；视觉旧稿用于辨认，允许按用户要求重新制作,赵梅／Mei Zhao。木桶街合作社组织者、唐胶旧同行家属、无牌托管联络人。儿子去世后，她从遗留笔记、未完订单和返工记录学起。,她擅长承认不懂、找到懂的人、协调手艺与物主继续合作；经验与损失让她有力量。,沿用成年成熟年龄与脸部身份；衣着实用，有组织者的亲和与坚持，倾听、协调、质疑须是不同表情。,"docs/superpowers/specs/data/canon/entities.tsv # CH_ZHAO_MEI
+docs/superpowers/specs/data/canon/character_mecha_art_locks.tsv # CH_ZHAO_MEI
+docs/superpowers/specs/剧情梗概/V35核心角色国籍文化与姓名审定-2026-07-21.md # 赵梅／Mei Zhao",按用途制作；不强套三视/建模
+H09,04 人物头像立绘与表情,胶价王,赛事制作人与商业对手,现有前章沿用素材,主持/旧件买手的强识别轮廓和职业服装；表情有表演与算计，不简单丑角化；不能控制机魂主体,日常；工作/指令姿态；表情差分,营业笑容；介绍；盘算；不悦；惊讶；强撑；恼怒；收敛,人物成套图,全身2048×3072；对话2048²；头像1024²；统一眼线/下颌/脚点；透明底和分层源,game-godot/assets/formula_lab/chapter_c02_v2/jiaojia.png,"game-godot/scripts/formula_lab/linked_campaign/campaign_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/chapter_c02/ui.gd",incoming/H09/,项目原创人物；不对应某个外部IP人物脸型,身份取当前Canon；视觉旧稿用于辨认，允许按用户要求重新制作,胶价王。木桶街赛事制作人、主持与旧件买手；掌握赞助、舞台、规则和话术，不掌握机魂遥控权。,商业舞台感与算计并存；能营业、被戳穿、强撑和收敛，不能一张奸笑代替人物。,轮廓鲜明的主持/商务工作装；外向姿态和局部职业道具，仍是可信的人。,"docs/superpowers/specs/data/canon/entities.tsv # CH_JIAOJIA_WANG
+docs/superpowers/specs/data/canon/character_mecha_art_locks.tsv # CH_JIAOJIA_WANG
+docs/superpowers/specs/剧情梗概/V35核心角色国籍文化与姓名审定-2026-07-21.md # 胶价王",按用途制作；不强套三视/建模
+H10,04 人物头像立绘与表情,警备驾驶席,专关通讯与撤回指令,当前工务城及人物全链专关,有独立通讯头像与职业识别；未有具名身份时作为本地警备席设计，不套主角脸,日常；工作/指令姿态；表情差分,平静；报告；警告；确认；焦急；解除警戒,人物成套图,全身2048×3072；对话2048²；头像1024²；统一眼线/下颌/脚点；透明底和分层源,,"game-godot/scripts/formula_lab/linked_campaign/campaign_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/chapter_c02/ui.gd",incoming/H10/,原创城市警备人员；机动警察仅为职业生活语境,未具名岗位，不自动等同某位已有角色,本Demo专关通讯与撤回指令的警备驾驶席。角色服务城市安全与责任判断；未获得具名人物来源前不新增姓名、年龄履历。,可信的值勤/驾驶工作感、通信耳麦、简洁制服；表情能报告、迟疑、警告和解除警戒。,与豪司和工程员在服装、神态、剪影上区分，通讯裁切与全体一致。,game-godot/scripts/formula_lab/linked_campaign/catalog.gd # police,按用途制作；不强套三视/建模
+H11,04 人物头像立绘与表情,工房工程员,前章与现场配角,现有前章沿用素材,工具、工服和年龄方向与主角区分；具名化前不编造新个人设定,日常；工作/指令姿态；表情差分,平静；讲解；疑问；警告；担忧；庆幸,人物成套图,全身2048×3072；对话2048²；头像1024²；统一眼线/下颌/脚点；透明底和分层源,,"game-godot/scripts/formula_lab/linked_campaign/campaign_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/chapter_c02/ui.gd",incoming/H11/,项目原创工房群像,岗位身份明确；未具名者不编造个人Canon,木桶街和现场工房的劳动者，参与实机模块制造、维修和现场配合。,有劳动痕迹、不同年龄体态和专业工具；不是站在背景里的统一工装复制脸。,明确哪位承担解释/警告，做专用通讯头像与立绘；群像不抢主角身份。,"docs/superpowers/specs/work-packages/2026-10-02-chao-gag-linked-operation-candidate/v5完整整改计划-20261008/11-名场面与系统全链补定.md # 人物与工程操作
+game-godot/scripts/formula_lab/linked_campaign/catalog.gd # 工程",按用途制作；不强套三视/建模
+H12,04 人物头像立绘与表情,检修员与撤离人群,列车、居民楼和气氛反应,当前工务城及其已列专关,成人身形、工作装备与少量服装差异；不把群众全画成相同小人,等待；避险；招手；欢呼,,小单位与人群,设定板3072；透明组合2048²；独立人物可拆,,"game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd
+game-godot/scripts/formula_lab/linked_campaign/campaign_stage.gd",incoming/H12/,项目原创城市居民,群体角色，无一对一IP映射,生活在机甲科幻城市中的居民，是撤离、保护与人群反应的对象。,现代城市生活与不同年龄职业；害怕、提醒、欢呼要来自现场。,保持群体剪影差别，用有限高质量反应素材复用。,docs/superpowers/specs/work-packages/2026-10-02-chao-gag-linked-operation-candidate/v5完整整改计划-20261008/11-名场面与系统全链补定.md # 救援与居民,按用途制作；不强套三视/建模
+H13,04 人物头像立绘与表情,机器犬及人物地图小单位,微型显示规范与既有小单位后续复用,用户明确要求的通用显示素材规范；不新增本关角色,只制定人/犬等四分之一格面积档；不据此把常规猎巢敌体缩成小狗；有具体入场对象才建模,站立；移动；警觉,,小单位与人群,设定板3072；透明组合2048²；独立人物可拆,,game-godot/scripts/formula_lab/linked_campaign/unit_scale.gd,incoming/H13/,项目原创小型角色／机器犬／辅助机器,微型显示家族；具体具名个体另读其来源,出现在战棋中的人员、机器犬和小工具体。用户要求以约四分之一格的视觉面积表达，不按真实米数推成看不见的小点。,人、犬、工具三种剪影各自可读。,若某个成员需要可旋转3D，单独补该成员的简化正侧背稿；二维反应头像不重复做三视图。, # 2026-10-13之前用户敌我显示尺寸要求,按用途制作；不强套三视/建模
+B01,05 建筑设施与简单运动物件,有人避难楼,现代机甲城市的居民目标,当前工务城及其已列专关,5–7层住宅体量；入口/窗带/楼板让人读懂尺度；完整楼顶、受损露层、倒塌残壁各自可信,完好；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/refuge-habitat-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/refuge-habitat-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/refuge-habitat-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B01/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B02,05 建筑设施与简单运动物件,渠岸住宅,B区居民与街区,当前工务城及其已列专关,沿渠立面、后侧与屋顶成套；破损后保留内部楼板厚度和断面，不再用完整屋顶盖残楼,完好；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/shelter-illustrated-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/shelter-illustrated-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/shelter-illustrated-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B02/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B03,05 建筑设施与简单运动物件,环站公寓,C区居住目标,当前工务城及其已列专关,货运站旁现代公寓，与工业仓库可区分；保持同城材料关系,完好；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/shelter-c-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/shelter-c-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/shelter-c-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B03/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B04,05 建筑设施与简单运动物件,供能前庭办公楼,A区体量与遮挡,当前工务城及其已列专关,现代公共设施办公，首层服务入口、窗带、检修层明确；不是小屋,完好；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/office-a-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/office-a-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/office-a-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B04/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B05,05 建筑设施与简单运动物件,渠岸办公楼,B区街区体量,当前工务城及其已列专关,钢蓝/矿物材质辅助色；不可与可保护住宅混同,完好；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/office-b-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/office-b-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/office-b-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B05/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B06,05 建筑设施与简单运动物件,装卸站调度楼,C区调度设施,当前工务城及其已列专关,观察窗朝向轨道；入口与站台对应；红色点缀有用途,完好；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/office-c-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/office-c-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/office-c-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B06/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B07,05 建筑设施与简单运动物件,公共供电柜,接电与断电操作,当前工务城及其已列专关,柜体/母排/隔离刀与指示灯分件；开关动作和能量方向可见，不做内部修线模拟,完好；工作；断电；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/switchgear-illustrated-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/switchgear-illustrated-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/switchgear-illustrated-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B07/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B08,05 建筑设施与简单运动物件,远程馈电柜与中继,切线取消跨区炮,当前工务城及其已列专关,与公共供电柜以端子/接口轮廓区分；不能只靠文字标识,完好；供电；隔离；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/relay-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/relay-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/relay-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B08/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B09,05 建筑设施与简单运动物件,变电设施,供能建筑和基础设施,当前工务城及其已列专关,设备阵列有承重平台、隔离距离与检修通道；不以小圆柱堆砌冒充变电站,完好；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/substation-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/substation-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/substation-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B09/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B10,05 建筑设施与简单运动物件,维修工房,工程场所与整备背景,当前工务城及其已列专关,可进出的工业门、天车梁、工位尺度与机体匹配,完好；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/workshop-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/workshop-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/workshop-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B10/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B11,05 建筑设施与简单运动物件,车站终端与控制台,现场读取和操作,当前工务城及其已列专关,倾斜控制面、硬件按钮和信号灯；动态字由UI绘制，不画伪文字,完好；可操作；已完成；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/terminal-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/terminal-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/terminal-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B11/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B12,05 建筑设施与简单运动物件,撤离列车车头,首要保护对象与行车方向,当前工务城及其已列专关,驾驶端和尾端一眼不同；现代轨道救援列车，不是玩具小屋加轮；车轮/车灯可简单运动,完好；停车；行驶；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/train-front-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/train-front-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/train-front-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B12/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B13,05 建筑设施与简单运动物件,撤离列车车厢,24人撤离的可见载体,当前工务城及其已列专关,与车头同一列车；窗、门、走行部和连接器保持比例；载人与空置可表达,完好；载人；停车；行驶；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/train-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/train-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/train-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B13/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B14,05 建筑设施与简单运动物件,跨渠桥面与桥锁,修复、支撑、通车,当前工务城及其已列专关,断口、铰链、锁座、支撑端点真实成套；桥面未接通与已承重结构不同,断开；临时支撑；锁固；受损；坍塌,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,,"game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B14/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B15,05 建筑设施与简单运动物件,上层检修栈桥,多层战场与承重,当前工务城及其已列专关,楼板厚度、下方梁架、栏杆与缺口；俯视和旋转都读得懂高度,完好；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/deck-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/deck-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/deck-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B15/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B16,05 建筑设施与简单运动物件,支撑锚点与支座,承重与宿敌侧撑,当前工务城及其已列专关,安装位置、拉力/压力方向清楚；损坏后确实断开承力构造,完好；受力；断裂,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/anchor-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/anchor-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/anchor-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B16/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B17,05 建筑设施与简单运动物件,固定吊机,场景机构与吊运,当前工务城及其已列专关,塔身、吊臂、绞盘、吊钩分件；回转轴与吊运范围一致,收起；作业；停机；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/crane-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/crane-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/crane-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B17/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B18,05 建筑设施与简单运动物件,升降平台,上下层输送,当前工务城及其已列专关,轨道、驱动和平台有连续空间关系；不是贴图电梯,下层；运行；上层；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/elevator-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/elevator-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/elevator-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B18/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B19,05 建筑设施与简单运动物件,轨道转台,转向与载物,当前工务城及其已列专关,桥盘厚度、圆坑、环轨和驱动机构真实；中心轴固定，转90度边界可读,静止；旋转；就位；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/turntable-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/turntable-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/turntable-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B19/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B20,05 建筑设施与简单运动物件,水闸驱动与闸门,水位调节,当前工务城及其已列专关,门体与侧壁/轨道连接；开启和关闭不是只改水色,关闭；开启；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/sluice-drive-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/sluice-drive-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/sluice-drive-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B20/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B21,05 建筑设施与简单运动物件,泵站,深渠与排水场景,当前工务城及其已列专关,进出水管、泵房和平台有工程逻辑；与办公楼不同,完好；运行；停机；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/pumpstation-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/pumpstation-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/pumpstation-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B21/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B22,05 建筑设施与简单运动物件,货柜与吊点周转箱,推移、搬运、挡炮与清轨,当前工务城及其已列专关,标准货柜与较小周转箱两尺寸；吊点、门面、顶面有对应关系,完好；吊起；受损；破碎,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/crate-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/crate-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/crate-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B22/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B23,05 建筑设施与简单运动物件,实体隔离墙,移动/射线阻挡,当前工务城及其已列专关,施工预制段与警备折叠段两种来源；底座接地、毁坏后留真实空隙,收纳；展开；完好；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/wall-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/wall-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/wall-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B23/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B24,05 建筑设施与简单运动物件,燃料与补给接口,补给及空地任务,当前工务城及其已列专关,罐体、接头、防护围边；可爆与不可爆对象用结构区别，不能都画同一桶,可用；耗尽；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/fuel-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/fuel-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/fuel-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B24/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B25,05 建筑设施与简单运动物件,隔离电容,爆炸连锁,当前工务城及其已列专关,电容外壳与连接端、泄放口明确；危险器材不与普通居民物件混淆,稳定；临界；爆裂,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,,"game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B25/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B26,05 建筑设施与简单运动物件,猎巢入口,公开增援与封闭,当前工务城及其已列专关,裂口/侵入结构有实体边缘；蓄动、出现、封住三个过程；不只红圈贴纸,休眠；预告；增援；封闭；摧毁,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,,"game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B26/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B27,05 建筑设施与简单运动物件,承运交接点,跨战场转运,当前工务城及其已列专关,地面导向、吊运/承运装置与出口一致；不是科幻传送魔法门,开放；繁忙；阻塞；关闭,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/portal-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/portal-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/portal-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B27/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B28,05 建筑设施与简单运动物件,整备复装工位,可拆装备回装,当前工务城及其已列专关,停靠线、支架、工具臂和被放置部件匹配；非通用浮空按钮,空闲；占用；维修；受损,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,,"game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B28/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B29,05 建筑设施与简单运动物件,电缆与母排连接段,供电链路,当前工务城及其已列专关,绝缘外层、端子、线槽与断点；通断有可见反馈，不用长霓虹线当实体,完好；通电；断裂,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,,"game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B29/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B30,05 建筑设施与简单运动物件,临时支杆与承重架,支撑/交接通桥,当前工务城及其已列专关,上端接触、底座和斜撑方向清楚；卸载后保留现场物件,收纳；安装；受力；损坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,,"game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B30/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B31,05 建筑设施与简单运动物件,轨旁信号与站台设施,行车方向和可用路线,当前工务城及其已列专关,独立信号灯/道岔指示/站台边缘；不能与敌方攻击红色闪烁争夺注意,停止；放行；故障,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,,"game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B31/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B32,05 建筑设施与简单运动物件,城市柱环与远景巨构,三战场属于同一城市,当前工务城及其已列专关,柱环贯穿A/B/C；桥、站与供能设施有地理关系；巨构远处降低对比,日常；局部事故；恢复,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,"game-godot/assets/formula_lab/linked_campaign_v6/environment/skyline-0.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/skyline-1.glb
+game-godot/assets/formula_lab/linked_campaign_v6/environment/skyline-2.glb","game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B32/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B33,05 建筑设施与简单运动物件,道路街具与边界套件,前中后景、尺度和可读边界,当前工务城及其已列专关,护栏、灯柱、楼梯、检修口、栏板、管桥按用途成套；保持可走空间,完好；受损,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,game-godot/assets/formula_lab/linked_campaign_v6/layouts/canal-street.glb,"game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B33/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+B34,05 建筑设施与简单运动物件,检修室和值班室,小型功能建筑,当前工务城及其已列专关,允许小尺度但必须标明用途；不能拿小屋作为主居民楼；人尺度入口正常,完好；受损；毁坏,,建筑设计与状态图,长边3072–4096；立面/侧背/屋顶分开；透明物件与分层材质源,,"game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/fixture_art.gd
+game-godot/scripts/formula_lab/linked_campaign/environment_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/presentation_layout.gd",incoming/B34/,不适用／场景功能素材,,,,,,设定→结构母版→正交视图→分件与状态→建模交接
+T01,06 地形与材质,承重混凝土地坪,常态步行面,当前工务城及其已列专关,中明度矿物色、板缝与有厚度边缘；低对比表面纹理，不能照片噪点盖住角色,常态；边缘接缝；适用状态变化,,地形结构与材质,2048²可平铺表面；结构板3072；分层材质源；可见几何另做,"game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-cel-families-r2.png
+game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-drawn-atlas-v2.png","game-godot/scripts/formula_lab/linked_campaign/ground_relief.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/terrain_cel.gdshader
+game-godot/scripts/formula_lab/linked_campaign/v6/kit_material.gdshader",incoming/T01/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+T02,06 地形与材质,涂装金属甲板,工业地面,当前工务城及其已列专关,成片涂装与检修板分区；边缘和螺栓不铺满全地面,常态；边缘接缝；适用状态变化,,地形结构与材质,2048²可平铺表面；结构板3072；分层材质源；可见几何另做,"game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-cel-families-r2.png
+game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-drawn-atlas-v2.png","game-godot/scripts/formula_lab/linked_campaign/ground_relief.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/terrain_cel.gdshader
+game-godot/scripts/formula_lab/linked_campaign/v6/kit_material.gdshader",incoming/T02/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+T03,06 地形与材质,格栅与排水槽,材料差别,当前工务城及其已列专关,格栅真实深度与暗腔；密纹在正常镜头不闪烁,常态；边缘接缝；适用状态变化,,地形结构与材质,2048²可平铺表面；结构板3072；分层材质源；可见几何另做,"game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-cel-families-r2.png
+game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-drawn-atlas-v2.png","game-godot/scripts/formula_lab/linked_campaign/ground_relief.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/terrain_cel.gdshader
+game-godot/scripts/formula_lab/linked_campaign/v6/kit_material.gdshader",incoming/T03/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+T04,06 地形与材质,轨道与道岔,列车路线,当前工务城及其已列专关,轨、枕木/扣件、路基和岔口；方向连续、不可跨地图倒转,常态；边缘接缝；适用状态变化,,地形结构与材质,2048²可平铺表面；结构板3072；分层材质源；可见几何另做,"game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-cel-families-r2.png
+game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-drawn-atlas-v2.png","game-godot/scripts/formula_lab/linked_campaign/ground_relief.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/terrain_cel.gdshader
+game-godot/scripts/formula_lab/linked_campaign/v6/kit_material.gdshader",incoming/T04/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+T05,06 地形与材质,输送带,自动位移地形,当前工务城及其已列专关,运行方向与规则一致；纹理流动朝实际输送方向,常态；边缘接缝；适用状态变化,,地形结构与材质,2048²可平铺表面；结构板3072；分层材质源；可见几何另做,"game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-cel-families-r2.png
+game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-drawn-atlas-v2.png","game-godot/scripts/formula_lab/linked_campaign/ground_relief.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/terrain_cel.gdshader
+game-godot/scripts/formula_lab/linked_campaign/v6/kit_material.gdshader",incoming/T05/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+T06,06 地形与材质,碎石与残骸地面,额外移动代价,当前工务城及其已列专关,少量大块碎料、可见低起伏；与不可通行残墙区分,常态；边缘接缝；适用状态变化,,地形结构与材质,2048²可平铺表面；结构板3072；分层材质源；可见几何另做,"game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-cel-families-r2.png
+game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-drawn-atlas-v2.png","game-godot/scripts/formula_lab/linked_campaign/ground_relief.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/terrain_cel.gdshader
+game-godot/scripts/formula_lab/linked_campaign/v6/kit_material.gdshader",incoming/T06/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+T07,06 地形与材质,浅水,涉水地形,当前工务城及其已列专关,可见渠底、岸沿和水线；涉水单位不误显示坠落,常态；边缘接缝；适用状态变化,,地形结构与材质,2048²可平铺表面；结构板3072；分层材质源；可见几何另做,"game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-cel-families-r2.png
+game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-drawn-atlas-v2.png","game-godot/scripts/formula_lab/linked_campaign/ground_relief.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/terrain_cel.gdshader
+game-godot/scripts/formula_lab/linked_campaign/v6/kit_material.gdshader",incoming/T07/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+T08,06 地形与材质,深渠与深水,坠落/淹没风险,当前工务城及其已列专关,有渠壁、水面高度和连续深度；不要死黑坑或镜面摄影水,常态；边缘接缝；适用状态变化,,地形结构与材质,2048²可平铺表面；结构板3072；分层材质源；可见几何另做,"game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-cel-families-r2.png
+game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-drawn-atlas-v2.png","game-godot/scripts/formula_lab/linked_campaign/ground_relief.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/terrain_cel.gdshader
+game-godot/scripts/formula_lab/linked_campaign/v6/kit_material.gdshader",incoming/T08/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+T09,06 地形与材质,深坑与结构缺口,不支撑地面,当前工务城及其已列专关,可见侧壁/梁断口，边缘脚印清楚；不把黑方块直接贴地,常态；边缘接缝；适用状态变化,,地形结构与材质,2048²可平铺表面；结构板3072；分层材质源；可见几何另做,"game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-cel-families-r2.png
+game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-drawn-atlas-v2.png","game-godot/scripts/formula_lab/linked_campaign/ground_relief.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/terrain_cel.gdshader
+game-godot/scripts/formula_lab/linked_campaign/v6/kit_material.gdshader",incoming/T09/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+T10,06 地形与材质,油面与可燃物,燃烧连锁,当前工务城及其已列专关,局部油膜形状与暗反光；低对比，不与水混同,常态；边缘接缝；适用状态变化,,地形结构与材质,2048²可平铺表面；结构板3072；分层材质源；可见几何另做,"game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-cel-families-r2.png
+game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-drawn-atlas-v2.png","game-godot/scripts/formula_lab/linked_campaign/ground_relief.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/terrain_cel.gdshader
+game-godot/scripts/formula_lab/linked_campaign/v6/kit_material.gdshader",incoming/T10/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+T11,06 地形与材质,燃后地面,持续状态结果,当前工务城及其已列专关,烧痕、少量残烟与材质变化；火消失后仍有结果但不永久遮格,常态；边缘接缝；适用状态变化,,地形结构与材质,2048²可平铺表面；结构板3072；分层材质源；可见几何另做,"game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-cel-families-r2.png
+game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-drawn-atlas-v2.png","game-godot/scripts/formula_lab/linked_campaign/ground_relief.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/terrain_cel.gdshader
+game-godot/scripts/formula_lab/linked_campaign/v6/kit_material.gdshader",incoming/T11/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+T12,06 地形与材质,带电地面,电击危害,当前工务城及其已列专关,导电材料/破缆来源、边界与短放电；持续危险标记另由UI处理,常态；边缘接缝；适用状态变化,,地形结构与材质,2048²可平铺表面；结构板3072；分层材质源；可见几何另做,"game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-cel-families-r2.png
+game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-drawn-atlas-v2.png","game-godot/scripts/formula_lab/linked_campaign/ground_relief.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/terrain_cel.gdshader
+game-godot/scripts/formula_lab/linked_campaign/v6/kit_material.gdshader",incoming/T12/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+T13,06 地形与材质,可行走屋顶与平台,上层/净空,当前工务城及其已列专关,屋顶有厚度、可走面和栏杆缺口；不能与背景屋顶混同,常态；边缘接缝；适用状态变化,,地形结构与材质,2048²可平铺表面；结构板3072；分层材质源；可见几何另做,"game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-cel-families-r2.png
+game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-drawn-atlas-v2.png","game-godot/scripts/formula_lab/linked_campaign/ground_relief.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/terrain_cel.gdshader
+game-godot/scripts/formula_lab/linked_campaign/v6/kit_material.gdshader",incoming/T13/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+T14,06 地形与材质,坡道与阶梯,高度连接,当前工务城及其已列专关,起终点、坡向、梁支撑有实体；显示高差但不制造虚假阻挡,常态；边缘接缝；适用状态变化,,地形结构与材质,2048²可平铺表面；结构板3072；分层材质源；可见几何另做,"game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-cel-families-r2.png
+game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-drawn-atlas-v2.png","game-godot/scripts/formula_lab/linked_campaign/ground_relief.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/terrain_cel.gdshader
+game-godot/scripts/formula_lab/linked_campaign/v6/kit_material.gdshader",incoming/T14/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+T15,06 地形与材质,塌桥断面与沉落物,通路被毁,当前工务城及其已列专关,断梁、桥板和水花/落尘接口；不能仍保留完整桥面贴图,常态；边缘接缝；适用状态变化,,地形结构与材质,2048²可平铺表面；结构板3072；分层材质源；可见几何另做,"game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-cel-families-r2.png
+game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-drawn-atlas-v2.png","game-godot/scripts/formula_lab/linked_campaign/ground_relief.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/terrain_cel.gdshader
+game-godot/scripts/formula_lab/linked_campaign/v6/kit_material.gdshader",incoming/T15/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+T16,06 地形与材质,统一表面材料家族,建筑/机体/场地材质衔接,当前工务城及其已列专关,涂装金属、裸金属、混凝土、玻璃、橡胶、发光件分家；同画法不同材质，避免全塑料,常态；边缘接缝；适用状态变化,,地形结构与材质,2048²可平铺表面；结构板3072；分层材质源；可见几何另做,"game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-cel-families-r2.png
+game-godot/assets/formula_lab/linked_campaign_v6/materials/industrial-drawn-atlas-v2.png","game-godot/scripts/formula_lab/linked_campaign/ground_relief.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/terrain_cel.gdshader
+game-godot/scripts/formula_lab/linked_campaign/v6/kit_material.gdshader",incoming/T16/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S01,07 战场构图与剧情大图,工务城三战场总构图,同城联动一眼成立,当前工务城及其已列专关,固定既有地理C车站在西、B桥在东、A供电在上方；柱环连贯，色彩与物件分区,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,game-godot/assets/formula_lab/linked_campaign_v6/backgrounds/command-ring-kinetic.png,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S01/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S02,07 战场构图与剧情大图,A供能前庭正常战棋画面,先看清供电和威胁,当前工务城及其已列专关,鼠尾草绿/钢青绿设备与矿物墙；机体英雄色独立；用实际棋格摆机体敌人建筑，非空场海报,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S02/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S03,07 战场构图与剧情大图,B跨渠桥座正常战棋画面,支撑、深渠和桥路选择,当前工务城及其已列专关,钢蓝、矿物青水、现代住宅；桥面与渠壁有厚度，留看清推落及托桥的空间,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S03/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S04,07 战场构图与剧情大图,C环下装卸站正常战棋画面,清轨与列车保护,当前工务城及其已列专关,褪蓝与朱红货运设备；车头方向、轨道出口、货箱阻塞读得清,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S04/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S05,07 战场构图与剧情大图,指挥廊与部署背景,开场/部署,当前工务城及其已列专关,三工作面与城市事故有关联；为左侧菜单留安静区，不把HUD画进背景,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,game-godot/assets/formula_lab/linked_campaign_v6/backgrounds/command-ring-kinetic.png,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S05/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S06,07 战场构图与剧情大图,列车与待救检修员,救援目标情绪,当前工务城及其已列专关,让人看到乘员、受阻列车和临近危险；可分离人群/列车/背景做轻动效,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,game-godot/assets/formula_lab/linked_campaign_v6/backgrounds/story-car-kinetic.png,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S06/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S07,07 战场构图与剧情大图,母线接通与链路点亮,操作后的跨区因果,当前工务城及其已列专关,接电源头→桥→车站；能源流和终端状态拆层，不能只有全屏发光,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,game-godot/assets/formula_lab/linked_campaign_v6/backgrounds/story-link-kinetic.png,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S07/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S08,07 战场构图与剧情大图,托桥与列车通过,机体救援的大魄力场景,当前工务城及其已列专关,明确支撑机、桥承力位置、列车和居民；不违背馆守缺臂或货柜形态,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S08/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S09,07 战场构图与剧情大图,纪存多方调度特写,主角能力表达,当前工务城及其已列专关,视线/手势与三处实际事件同方向；终端信息以UI后置，不能代替人物行动,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S09/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S10,07 战场构图与剧情大图,白鸢预演特写,预演与改线表达,当前工务城及其已列专关,分镜、视线与路线草案形成动作；预测是可被推翻的方案，不画成神谕,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S10/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S11,07 战场构图与剧情大图,七海核验撤令特写,权限全链,当前工务城及其已列专关,证据、决定、撤令反馈连续；克制的档案峰值层，身份不换装漂移,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S11/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S12,07 战场构图与剧情大图,王者右臂巨钻冲击图,招牌Cut-in,当前工务城及其已列专关,巨钻从右手/右前臂接出，双炮朝前；对称帅气头与冗余武装，避开裆部误读,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S12/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S13,07 战场构图与剧情大图,无牌天冲拳冲击图,体术招牌,当前工务城及其已列专关,从脚底、转髋、肩到拳形成一条发力线；拳接触点明确；特效不遮拳体,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S13/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S14,07 战场构图与剧情大图,社勇王合体关键镜头,完整核心与外组件组合,当前工务城及其已列专关,核心、腿架、肩包各自有来源；3–5关键姿态可转成短演出,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S14/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S15,07 战场构图与剧情大图,断冠宿敌出场,宿敌压迫感与可破弱侧,当前工务城及其已列专关,独立冠环/护板；留可视反制点，非堆尖刺黑团,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S15/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S16,07 战场构图与剧情大图,救援成功与失守后果,胜败可理解,当前工务城及其已列专关,成功见通桥离站与乘员；失败按真实对象分列车受损/居民楼毁坏/路线中断，不通用烟花,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S16/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S17,07 战场构图与剧情大图,模型街与港口街景,前章既有背景换装,现有前章沿用素材,两地构图与用途不同；现代工业生活街区，比例与人物吻合；不再中古皇城街景,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S17/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S18,07 战场构图与剧情大图,模型病院与三号工房,前章生活与工程场所,现有前章沿用素材,模型桌、工具、人尺度空间；实际巨机工房另分区，不能把模型直接画成巨机,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S18/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S19,07 战场构图与剧情大图,货柜领袖事件图,前章事件不只对白,现有前章沿用素材,有行为、阻碍和结果的剧情画面；与新原创机设相同,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,game-godot/assets/formula_lab/chapter_c02_v2/cargo-story.png,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S19/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S20,07 战场构图与剧情大图,完全版王者冠军展示与卸甲,前章节目与自主救场,现有前章沿用素材,竞技冠军冗余帅气与卸装后的同一主体；保留自主性，不画遥控傀儡,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,"game-godot/assets/formula_lab/chapter_c02_v2/king-drill.png
+game-godot/assets/formula_lab/chapter_c02_v2/king-cannon.png","game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S20/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+S21,07 战场构图与剧情大图,白鸢作品与现场事件,前章作品/人到场的区分,现有前章沿用素材,作品痕迹与本人在场分开；不借新图更改既有出场时间,构图稿；色稿；分层成稿,,场景构图与分层大图,3840×2160；分层PSD/KRA；前中后景、角色/机体、光效独立,game-godot/assets/formula_lab/chapter_c02_v2/baiyuan-event.png,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_stage.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd
+game-godot/scripts/formula_lab/chapter_c02/map.gd",incoming/S21/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X01,08 战斗特效,轻拳命中,短促接触和截击,当前工务城及其已列专关,小而清楚的硬边冲击核+方向短线，不要所有拳都爆炸,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X01/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X02,08 战斗特效,重拳与勾拳,重量、冲击与位移,当前工务城及其已列专关,预备受力、较大的方向冲击、地面尘和后移；与轻拳节奏有差异,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X02/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X03,08 战斗特效,正蹬与回旋踢,前推/侧推方向,当前工务城及其已列专关,腿部轨迹与接触核分离；旋踢扇轨不能暗示整扇面均伤害,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X03/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X04,08 战斗特效,天冲拳,招牌体术高潮,当前工务城及其已列专关,发力上升线、拳体和穿破层分清；接触后迅速收束回棋盘,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X04/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X05,08 战斗特效,军刀斩击,刀具与近防,当前工务城及其已列专关,刀尖轨迹、斩痕和少量火花；不拿能量球代刀光,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X05/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X06,08 战斗特效,右臂巨钻,钻入与推进,当前工务城及其已列专关,沿钻轴的碎屑/摩擦火花；接触材料有变化，不能爆点落在身体中心,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X06/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X07,08 战斗特效,首体阻挡光束,直线打到首个实体,当前工务城及其已列专关,炮口、亮核、外晕、终点刻印分层；终点后没有伤害射线,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X07/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X08,08 战斗特效,贯穿光束,穿过规则允许的目标,当前工务城及其已列专关,贯穿线和每个命中脉冲分层；被墙截断处终止，不能视觉无限贯穿,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X08/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X09,08 战斗特效,双肩炮齐射,双条实际炮线,当前工务城及其已列专关,两炮各自起点和后坐；两条线不合成中央激光,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X09/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X10,08 战斗特效,爆破导弹,飞行、中心及邻格爆破,当前工务城及其已列专关,可见弹体尾迹、地影、首爆与邻区爆片；范围随真实结果生成,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X10/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X11,08 战斗特效,震荡空爆,爆心伤害与四邻吹离,当前工务城及其已列专关,外推冲击环与方向风迹；不把没有伤害的四邻都画成爆炸受伤,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X11/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X12,08 战斗特效,跨区炮弹,来源、越区飞行与落点,当前工务城及其已列专关,炮口→飞行弹→目标标记→着地爆炸同一方向；不能无源落雷,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X12/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X13,08 战斗特效,酸液喷射,锁格酸液命中,当前工务城及其已列专关,液滴/弧线/落地喷溅区别于光束和火球；残留只在规则有持续酸时出现,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X13/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X14,08 战斗特效,牵引索,钩爪张紧与拉回,当前工务城及其已列专关,发射点和附着点明确；受力线随双方位置变化，不画成推箭头,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X14/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X15,08 战斗特效,拘束索,锁步但保留开火,当前工务城及其已列专关,环扣/索紧表达移动受限；不盖掉敌方仍有效的攻击轨迹,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X15/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X16,08 战斗特效,棱镜标定,后续攻击的标定来源,当前工务城及其已列专关,一次扫描→目标刻印；不要长期占满全身轮廓,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X16/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X17,08 战斗特效,导引干扰,取消未发攻击,当前工务城及其已列专关,导引器官短错相、承诺轨迹断开；不是通用电击伤害,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X17/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X18,08 战斗特效,护盾施加与吸收,单体/群体护场,当前工务城及其已列专关,展开、命中吸收、破盾三段；轮廓薄且可看见单位,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X18/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X19,08 战斗特效,泡沫灭火与护场,消防的通用效果,当前工务城及其已列专关,喷射形状、落地泡沫与火焰退去；不能用蓝盾复制替代,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X19/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X20,08 战斗特效,焊补与恢复,工具动作及真实耐久恢复,当前工务城及其已列专关,焊点、小飞溅、补片完成信号；没有恢复不播假加血,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X20/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X21,08 战斗特效,液压顶推,无直接伤害的施力,当前工务城及其已列专关,活塞受力、地面尘、位移/碰撞分别表达；无伤不白闪血光,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X21/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X22,08 战斗特效,造墙架桥与产物落地,物件从机体到地面,当前工务城及其已列专关,抛出/展开/接地短尘与卡扣；产物本体来自独立模型,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X22/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X23,08 战斗特效,变形锁扣与推进,形态过渡,当前工务城及其已列专关,机械锁止、短推进流，不用大烟遮住整个变形失败,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X23/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X24,08 战斗特效,合体接口,组件连接次序,当前工务城及其已列专关,引导、接合火花、锁定灯依接口依次发生；不全屏闪白掩盖结构,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X24/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X25,08 战斗特效,单位碰撞与撞墙,接触对象和二次伤害,当前工务城及其已列专关,单位/金属/混凝土三材质片元；撞击点贴实际边界,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X25/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X26,08 战斗特效,落水与坠坑,位置变化及失能,当前工务城及其已列专关,入水水花/泡沫或坑内落尘；飞行免疫时不能播溺亡,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X26/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X27,08 战斗特效,击破与残骸,机体失能和敌体击破,当前工务城及其已列专关,机械件脱落与短烟，异形裂解另套；不把所有对象同一烟球盖掉,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X27/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X28,08 战斗特效,连锁引爆与接力,一手影响多个对象,当前工务城及其已列专关,按因果顺序跳转，次级爆炸缩短；保留最终落点与血格可见,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X28/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X29,08 战斗特效,起飞悬停降落,飞行身份,当前工务城及其已列专关,推进方向、地面扬尘/降落接地同一力向；不用悬空无声飘移,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X29/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+X30,08 战斗特效,巨构震动与断裂,跨场景设施后果,当前工务城及其已列专关,局部接缝开裂、碎落、远处灯列变化；不是整座城乱摇,预备；作用；结果；收束,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/combat_vfx.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd",incoming/X30/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+C01,09 持续状态与环境响应,蓄力准备,准备态可被打断,当前工务城及其已列专关,身体姿态+武器聚能，主焦点在发射/施力端；阶段图标单独交,进入；保持；解除；减少动态模式,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/C01/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+C02,09 持续状态与环境响应,护势与持续支撑,持续行为没有结束,当前工务城及其已列专关,受力姿态、接地与设备承重反馈；不当成普通瞬发技能,进入；保持；解除；减少动态模式,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/C02/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+C03,09 持续状态与环境响应,持续燃烧,地形和对象燃烧,当前工务城及其已列专关,火舌与烟分层、基部贴附目标，正常镜头可见但不遮满盘面,进入；保持；解除；减少动态模式,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/C03/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+C04,09 持续状态与环境响应,烟雾与余烟,遮挡/气氛分工,当前工务城及其已列专关,有规则遮挡的烟界与纯余烟区别；不能美术烟擅加规则,进入；保持；解除；减少动态模式,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/C04/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+C05,09 持续状态与环境响应,漏电与短路,危险来源,当前工务城及其已列专关,局部断线火花与地面电弧；与安全通电流分家,进入；保持；解除；减少动态模式,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/C05/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+C06,09 持续状态与环境响应,通电与断电,设施可用性,当前工务城及其已列专关,灯列/能量接口状态变化，不把整栋楼刷成发光体,进入；保持；解除；减少动态模式,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/C06/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+C07,09 持续状态与环境响应,停机与撤令,可保全的市政单位,当前工务城及其已列专关,机械静止、工作灯退去、锁定解除；与击毁残骸截然不同,进入；保持；解除；减少动态模式,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/C07/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+C08,09 持续状态与环境响应,拘束与受阻,不能移动,当前工务城及其已列专关,索具或受阻部位可辨，开火武器仍保持可用表达,进入；保持；解除；减少动态模式,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/C08/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+C09,09 持续状态与环境响应,干扰中,攻击承诺取消,当前工务城及其已列专关,导引点短失锁与UI取消符号，避免错误表达持续扣血,进入；保持；解除；减少动态模式,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/C09/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+C10,09 持续状态与环境响应,被标定,后续攻击关系,当前工务城及其已列专关,简洁标记有来源，不给整片场地永久描边,进入；保持；解除；减少动态模式,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/C10/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+C11,09 持续状态与环境响应,护甲与破甲,伤害差异,当前工务城及其已列专关,装甲受力/破甲裂层有限表达；损失数字由游戏绘制,进入；保持；解除；减少动态模式,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/C11/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+C12,09 持续状态与环境响应,轻损重损与失能,机体状态,当前工务城及其已列专关,状态覆盖层不随每个姿势重画全身；重要缺件有独立模型,进入；保持；解除；减少动态模式,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/C12/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+C13,09 持续状态与环境响应,增援预告与入场,有时间可反制,当前工务城及其已列专关,入口积聚、露头、出场分开；不和已入场敌人混淆,进入；保持；解除；减少动态模式,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/C13/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+C14,09 持续状态与环境响应,入口封闭,增援被取消,当前工务城及其已列专关,实体封口/关闸反馈，后续预告消失；不是关灯算封闭,进入；保持；解除；减少动态模式,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/C14/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+C15,09 持续状态与环境响应,目标完成与仍阻塞,跨区后果,当前工务城及其已列专关,接电/通桥/行车分开图形；保留未解决条件，别泛用绿色勾,进入；保持；解除；减少动态模式,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/C15/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+C16,09 持续状态与环境响应,残骸可回收,资源与障碍,当前工务城及其已列专关,可回收部件、不可走大残骸和纯装饰碎屑有区别,进入；保持；解除；减少动态模式,,效果设计与素材,分镜长边2560；独立粒子/片元512–1024透明；源文件；动画说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_feedback_view.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_art.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_effects.gd",incoming/C16/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G01,10 棋盘提示图形,自由探索悬停,光标发现对象,当前工务城及其已列专关,贴实际脚印，强度低于选中；不盖对象主体,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G01/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G02,10 棋盘提示图形,选中足迹,选中了谁,当前工务城及其已列专关,1×1/2×2/3×3完整脚印；微型外观不缩掉实际选择范围,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G02/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G03,10 棋盘提示图形,可达范围,能走到哪里,当前工务城及其已列专关,轻底/边界清楚；多格单位按真实合法终点显示,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G03/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G04,10 棋盘提示图形,连续路径,将怎样走,当前工务城及其已列专关,方向箭头从起点流向终点；绕障路径与费用一致,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G04/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G05,10 棋盘提示图形,终点与落位,到达后占哪里,当前工务城及其已列专关,完整占格与朝向；高层落点标高度,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G05/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G06,10 棋盘提示图形,不可用目标,为什么不能做,当前工务城及其已列专关,阻挡点或缺少条件就近标出；不弹大菜单,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G06/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G07,10 棋盘提示图形,近战与扇面,真实受影响目标,当前工务城及其已列专关,范围按规则而非挥动刀光猜；主目标与余波区分,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G07/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G08,10 棋盘提示图形,直射轨迹,第一遮挡物与终点,当前工务城及其已列专关,起点有武器来源，遮挡后虚线/截断符号；世界空间深度正确,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G08/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G09,10 棋盘提示图形,贯穿轨迹,多对象受影响,当前工务城及其已列专关,贯穿目标逐一标示，停止点明确,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G09/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G10,10 棋盘提示图形,投射弧线,投掷与炮弹落点,当前工务城及其已列专关,明显弧线和落点；飞行弧与地面影响区域分开,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G10/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G11,10 棋盘提示图形,爆炸范围,连爆与友伤,当前工务城及其已列专关,中心/邻接/二级连爆分层；盾保护不隐藏受影响事实,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G11/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G12,10 棋盘提示图形,推拉位移,目标去哪,当前工务城及其已列专关,大箭头、落点影与步数；前推/侧推/拉回不同方向,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G12/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G13,10 棋盘提示图形,碰撞结果,谁撞谁与损失,当前工务城及其已列专关,接触处撞击符号、双方损失及停止格,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G13/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G14,10 棋盘提示图形,落水坠坑,地形后果,当前工务城及其已列专关,落点危险符号与消失/失能反馈，飞行豁免明确,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G14/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G15,10 棋盘提示图形,预计耐久变化,将失去或恢复多少,当前工务城及其已列专关,损失段闪烁与保留段稳定，恢复另色/纹理；不是只有漂浮数字,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G15/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G16,10 棋盘提示图形,敌方目标光墙,建筑正在被瞄准,当前工务城及其已列专关,标准高度红色半透明墙罩脚印，深度遮挡正确；不能2D框线穿过楼脸,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G16/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G17,10 棋盘提示图形,敌方承诺方向与顺序,敌人即将干什么,当前工务城及其已列专关,顺序徽标与设施编号分层；悬停明显轨迹、目标、HP变化,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G17/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G18,10 棋盘提示图形,被取消的威胁,这一手避免了什么,当前工务城及其已列专关,旧轨迹淡去/断开、被保住对象的损失归零；不只写一句文字,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G18/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G19,10 棋盘提示图形,增援位置与时间,会从哪出来,当前工务城及其已列专关,格位、敌种剪影与轮次分开；未入场不画成已站在格子上,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G19/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G20,10 棋盘提示图形,跨区因果线,哪边影响哪边,当前工务城及其已列专关,源设施→目标区域/对象，状态变化沿线发生；全城总览与局部提示同语义,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G20/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G21,10 棋盘提示图形,撤离路线与阻塞,保护哪段路,当前工务城及其已列专关,车头朝向、C→B→东出口连续；阻塞点/下一可走段清楚,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G21/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G22,10 棋盘提示图形,上层承重与净空,高低空间规则,当前工务城及其已列专关,层号、垂直连接、承重危险；不会贴到楼体假平面,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G22/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G23,10 棋盘提示图形,吊运变形合体包络,空间和载荷限制,当前工务城及其已列专关,载荷/新形态完整脚印、扫掠障碍、落位方向；合法与失败可分,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G23/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G24,10 棋盘提示图形,移动行动与资源费用,一手的代价,当前工务城及其已列专关,图标+数值留位，移动/主行动/弹药/备件不同符号,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G24/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+G25,10 棋盘提示图形,修理支撑导引作用区,非伤害技能范围,当前工务城及其已列专关,支撑接口、维修邻接、护群来源可见；不套攻击箭头,默认；悬停；预览；执行；减少动态/色觉适配,,战术图形,SVG可编辑；48/96/192px验看；地面/世界/屏幕三种坐标说明,,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_overlay.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_cursor.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/intent_visual.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/tactical_feedback.gd",incoming/G25/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U01,11 界面组件,精简目标条,我在保护什么、缺什么,当前工务城及其已列专关,优先目标与一条当前阻碍；三条链路可展开；不堆长任务清单,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,"game-godot/assets/formula_lab/linked_campaign_rounds/ui/mission.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/header.svg","game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U01/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U02,11 界面组件,三战場切换,本区/异区还有行动,当前工务城及其已列专关,地域小图/色块、名称、余行动、重要风险层次分明,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,"game-godot/assets/formula_lab/linked_campaign_rounds/ui/area-a.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/area-b.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/area-c.svg","game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U02/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U03,11 界面组件,机体头像条,可行动者与选中,当前工务城及其已列专关,头肩专用图；行动可用/耗尽/受损/跨区状态，别再全身缩图,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,"game-godot/assets/formula_lab/linked_campaign_rounds/ui/selected.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/command.svg","game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U03/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U04,11 界面组件,快捷招式条,选机后的直接操作,当前工务城及其已列专关,招式图标、按键、费用留位；普通动作不嵌套多层菜单,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,"game-godot/assets/formula_lab/linked_campaign_rounds/ui/command.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/selected.svg","game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U04/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U05,11 界面组件,光标资讯浮窗,自由探索信息,当前工务城及其已列专关,短摘要与按住详细的展开稿；位置避开光标和受影响单位,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,game-godot/assets/formula_lab/linked_campaign_rounds/ui/inspect.svg,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U05/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U06,11 界面组件,这一手后果,立即结果和取消威胁,当前工务城及其已列专关,血格/位移/碰撞/链路变化优先，文字只补原因,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,game-godot/assets/formula_lab/linked_campaign_rounds/ui/decision.svg,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U06/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U07,11 界面组件,结束回合预告,不作为的后果,当前工务城及其已列专关,未用主行动、将受损对象、增援分段；实际与下轮预告不混,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,"game-godot/assets/formula_lab/linked_campaign_rounds/ui/risk.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/danger.svg","game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U07/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U08,11 界面组件,全城总览,跨战场联动,当前工务城及其已列专关,三块真实地图关系、源/目标设施、列车进度和可点击焦点,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,"game-godot/assets/formula_lab/linked_campaign_rounds/ui/panel.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/header.svg","game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U08/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U09,11 界面组件,通讯与人物指令,人物的独特作用,当前工务城及其已列专关,人物专用头像、当前可用原因、目标；未满足条件不装成主按钮,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,"game-godot/assets/formula_lab/linked_campaign_rounds/ui/panel.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/tag.svg","game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U09/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U10,11 界面组件,对话舞台,说话者和听者,当前工务城及其已列专关,统一眼线与头大小，活动方/听者明暗适度；入场和表情不乱缩放,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,game-godot/assets/formula_lab/linked_campaign_rounds/ui/dialogue.svg,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U10/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U11,11 界面组件,出击编队,单位职责和战场需求,当前工务城及其已列专关,角色头像/体型/移动方式/主要动词；分区出击限制清楚,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,"game-godot/assets/formula_lab/linked_campaign_rounds/ui/panel.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/selected.svg","game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U11/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U12,11 界面组件,机体图鉴与装备,机体技能体系,当前工务城及其已列专关,母版和游戏模型同身份；武器挂点、变形与大格足迹可读,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,"game-godot/assets/formula_lab/linked_campaign_rounds/ui/panel.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/paper.svg","game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U12/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U13,11 界面组件,构筑修饰与成长,可选专关的技能变化,当前工务城及其已列专关,基础动作与修饰关系明确；只做有来源的卡，不创设新数值,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,"game-godot/assets/formula_lab/linked_campaign_rounds/ui/paper.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/selected.svg","game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U13/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U14,11 界面组件,设置与无障碍,字体/动态/色觉/键位,当前工务城及其已列专关,大字号不溢出；焦点、不可用和按键录入都可区分,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,"game-godot/assets/formula_lab/linked_campaign_rounds/ui/panel.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/command.svg","game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U14/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U15,11 界面组件,首次提示,学会光标探索与一手结果,当前工务城及其已列专关,简短手势示意，随当前编队；不写死无牌一号,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,"game-godot/assets/formula_lab/linked_campaign_rounds/ui/tag.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/inspect.svg","game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U15/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U16,11 界面组件,胜败与结算,救了谁、损了什么,当前工务城及其已列专关,居民、设施、资源、声誉和额外目标用图形分层；不只大段文本,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,"game-godot/assets/formula_lab/linked_campaign_rounds/ui/panel.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/paper.svg","game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U16/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U17,11 界面组件,预演回看控制,看清动作因果,当前工务城及其已列专关,播放/快进/暂停/退出清楚，不把常驻时间轴铺满底部,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,"game-godot/assets/formula_lab/linked_campaign_rounds/ui/command.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/primary.svg","game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U17/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U18,11 界面组件,标题与入口,进入当前可玩内容,当前工务城及其已列专关,按冲击档做品牌和构图；菜单区域安静，主入口明确,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,"game-godot/assets/formula_lab/linked_campaign_rounds/ui/primary.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/command.svg","game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U18/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U19,11 界面组件,按钮面板与提示共件,统一现代界面语言,当前工务城及其已列专关,深墨蓝平面、有限边线、适度强调；避免金框套娃/灰蓝渐变/廉价机械花边,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,"game-godot/assets/formula_lab/linked_campaign_rounds/ui/command.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/hover.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/pressed.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/disabled.svg
+game-godot/assets/formula_lab/linked_campaign_rounds/ui/selected.svg","game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U19/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+U20,11 界面组件,机魂与群众气泡,气氛与短提示,当前工务城及其已列专关,短、靠近说话者、不会遮盖攻击线；战术信息优先,普通；悬停；选中；按下；不可用；键盘焦点,,界面组件,SVG或设计源；1440×900与1920×1080页面稿；1×/2×导出；9-slice边距,game-godot/assets/formula_lab/linked_campaign_rounds/ui/tag.svg,"game-godot/scripts/formula_lab/linked_campaign/rounds/round_skin.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_hud.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd
+game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",incoming/U20/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I01,12 技能与功能图标,截击直拳,技能/操作入口和对象检查,当前工务城及其已列专关,短直拳与撤步,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I01/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I02,12 技能与功能图标,正蹬推位,技能/操作入口和对象检查,当前工务城及其已列专关,脚掌向前的推力,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I02/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I03,12 技能与功能图标,转轴回旋踢,技能/操作入口和对象检查,当前工务城及其已列专关,旋转腿与侧推,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I03/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I04,12 技能与功能图标,天冲拳,技能/操作入口和对象检查,当前工务城及其已列专关,上冲拳的标志轮廓,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I04/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I05,12 技能与功能图标,摆身勾拳,技能/操作入口和对象检查,当前工务城及其已列专关,弧线拳路与横向重心,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I05/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I06,12 技能与功能图标,蓄势重拳,技能/操作入口和对象检查,当前工务城及其已列专关,上举拳与落点,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I06/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I07,12 技能与功能图标,正面接拳,技能/操作入口和对象检查,当前工务城及其已列专关,接拳防御姿态,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I07/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I08,12 技能与功能图标,牵引,技能/操作入口和对象检查,当前工务城及其已列专关,钩索向内拉,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I08/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I09,12 技能与功能图标,持续支撑,技能/操作入口和对象检查,当前工务城及其已列专关,手臂/支杆托结构,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I09/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I10,12 技能与功能图标,护路破甲拳,技能/操作入口和对象检查,当前工务城及其已列专关,拳与自护轮廓,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I10/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I11,12 技能与功能图标,破围终式,技能/操作入口和对象检查,当前工务城及其已列专关,拳与规则扇面,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I11/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I12,12 技能与功能图标,护场,技能/操作入口和对象检查,当前工务城及其已列专关,护罩覆盖对象,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I12/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I13,12 技能与功能图标,双肩炮,技能/操作入口和对象检查,当前工务城及其已列专关,并列两炮,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I13/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I14,12 技能与功能图标,贯岩钻,技能/操作入口和对象检查,当前工务城及其已列专关,右臂钻头,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I14/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I15,12 技能与功能图标,首体光束,技能/操作入口和对象检查,当前工务城及其已列专关,射线到首个实体停止,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I15/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I16,12 技能与功能图标,贯穿光束,技能/操作入口和对象检查,当前工务城及其已列专关,射线穿两体,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I16/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I17,12 技能与功能图标,军刀,技能/操作入口和对象检查,当前工务城及其已列专关,刀刃与短斩,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I17/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I18,12 技能与功能图标,爆破导弹,技能/操作入口和对象检查,当前工务城及其已列专关,弹体与爆片,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I18/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I19,12 技能与功能图标,震荡空爆,技能/操作入口和对象检查,当前工务城及其已列专关,中心弹与外推箭头,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I19/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I20,12 技能与功能图标,导引干扰,技能/操作入口和对象检查,当前工务城及其已列专关,感测器失锁,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I20/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I21,12 技能与功能图标,棱镜标定,技能/操作入口和对象检查,当前工务城及其已列专关,棱镜和目标标记,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I21/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I22,12 技能与功能图标,部署隔离墙,技能/操作入口和对象检查,当前工务城及其已列专关,墙体与落地底座,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I22/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I23,12 技能与功能图标,铺设桥板,技能/操作入口和对象检查,当前工务城及其已列专关,折叠桥展开,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I23/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I24,12 技能与功能图标,备件抢修,技能/操作入口和对象检查,当前工务城及其已列专关,工具与补片,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I24/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I25,12 技能与功能图标,液压顶推,技能/操作入口和对象检查,当前工务城及其已列专关,活塞向外,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I25/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I26,12 技能与功能图标,吊移,技能/操作入口和对象检查,当前工务城及其已列专关,钩与载荷,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I26/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I27,12 技能与功能图标,变形,技能/操作入口和对象检查,当前工务城及其已列专关,同一机体两形态,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I27/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I28,12 技能与功能图标,泡沫灭火,技能/操作入口和对象检查,当前工务城及其已列专关,喷嘴与泡沫,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I28/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I29,12 技能与功能图标,拘束索,技能/操作入口和对象检查,当前工务城及其已列专关,爪锁移动,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I29/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I30,12 技能与功能图标,操作设备,技能/操作入口和对象检查,当前工务城及其已列专关,手柄与机械开关,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I30/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I31,12 技能与功能图标,读取记录,技能/操作入口和对象检查,当前工务城及其已列专关,终端与记录页,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I31/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I32,12 技能与功能图标,接回母线,技能/操作入口和对象检查,当前工务城及其已列专关,断接头连通,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I32/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I33,12 技能与功能图标,关闭入口,技能/操作入口和对象检查,当前工务城及其已列专关,闸门闭合,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I33/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I34,12 技能与功能图标,转台,技能/操作入口和对象检查,当前工务城及其已列专关,圆盘旋转九十度,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I34/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I35,12 技能与功能图标,跨区转场,技能/操作入口和对象检查,当前工务城及其已列专关,两区域之间承运,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I35/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I36,12 技能与功能图标,装填,技能/操作入口和对象检查,当前工务城及其已列专关,弹匣与装入方向,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I36/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I37,12 技能与功能图标,回收,技能/操作入口和对象检查,当前工务城及其已列专关,完整可回收部件,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I37/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I38,12 技能与功能图标,卸装,技能/操作入口和对象检查,当前工务城及其已列专关,原部件从挂点拆出,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I38/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I39,12 技能与功能图标,复装,技能/操作入口和对象检查,当前工务城及其已列专关,部件回到原挂点,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I39/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I40,12 技能与功能图标,合体,技能/操作入口和对象检查,当前工务城及其已列专关,核心与外部组件,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I40/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I41,12 技能与功能图标,分离,技能/操作入口和对象检查,当前工务城及其已列专关,合体释放原组件,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I41/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I42,12 技能与功能图标,起飞,技能/操作入口和对象检查,当前工务城及其已列专关,上升与推进,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I42/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I43,12 技能与功能图标,降落,技能/操作入口和对象检查,当前工务城及其已列专关,下降与接地,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I43/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I44,12 技能与功能图标,补给,技能/操作入口和对象检查,当前工务城及其已列专关,接头与燃料,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I44/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I45,12 技能与功能图标,俯冲,技能/操作入口和对象检查,当前工务城及其已列专关,下向飞行体,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I45/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I46,12 技能与功能图标,空撞,技能/操作入口和对象检查,当前工务城及其已列专关,飞行方向与接触,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I46/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I47,12 技能与功能图标,投弹,技能/操作入口和对象检查,当前工务城及其已列专关,机下弹体落点,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I47/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I48,12 技能与功能图标,扫射,技能/操作入口和对象检查,当前工务城及其已列专关,飞行轨迹与射击,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I48/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I49,12 技能与功能图标,空中投送,技能/操作入口和对象检查,当前工务城及其已列专关,飞行载荷,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I49/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I50,12 技能与功能图标,观察,技能/操作入口和对象检查,当前工务城及其已列专关,观察器与区域,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I50/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I51,12 技能与功能图标,勘测,技能/操作入口和对象检查,当前工务城及其已列专关,工具与结构读数,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I51/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I52,12 技能与功能图标,接线,技能/操作入口和对象检查,当前工务城及其已列专关,两个端子连通,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I52/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I53,12 技能与功能图标,锁固支撑,技能/操作入口和对象检查,当前工务城及其已列专关,锚点与锁扣,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I53/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I54,12 技能与功能图标,升降,技能/操作入口和对象检查,当前工务城及其已列专关,平台与上下箭头,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I54/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I55,12 技能与功能图标,排水,技能/操作入口和对象检查,当前工务城及其已列专关,闸口与水位下降,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I55/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I56,12 技能与功能图标,重启,技能/操作入口和对象检查,当前工务城及其已列专关,机械启动循环,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I56/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I57,12 技能与功能图标,纪存倾听,技能/操作入口和对象检查,当前工务城及其已列专关,机魂/通讯来源,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I57/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I58,12 技能与功能图标,白鸢补页,技能/操作入口和对象检查,当前工务城及其已列专关,分镜本与备用线,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I58/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I59,12 技能与功能图标,七海撤令,技能/操作入口和对象检查,当前工务城及其已列专关,有效指令被撤销,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I59/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I60,12 技能与功能图标,七海取证,技能/操作入口和对象检查,当前工务城及其已列专关,证据页与来源,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I60/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I61,12 技能与功能图标,兜灯硬停,技能/操作入口和对象检查,当前工务城及其已列专关,机械制动,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I61/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I62,12 技能与功能图标,陆衡载荷判读,技能/操作入口和对象检查,当前工务城及其已列专关,支撑结构与载荷,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I62/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I63,12 技能与功能图标,豪司共鸣,技能/操作入口和对象检查,当前工务城及其已列专关,驾驶者与机体响应,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I63/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I64,12 技能与功能图标,豪司协商,技能/操作入口和对象检查,当前工务城及其已列专关,两个主体达成条件,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I64/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+I65,12 技能与功能图标,警备撤回,技能/操作入口和对象检查,当前工务城及其已列专关,准备动作被取消,普通；选中；不可用；悬停,,独立图标,SVG；48/96/192px透明PNG；单色/双色读得清,,"game-godot/scripts/formula_lab/linked_campaign/catalog.gd
+game-godot/scripts/formula_lab/linked_campaign/rounds/round_armaments.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/people_rules.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/full_ui.gd",incoming/I65/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+N01,13 动作复用与必要定制,共享待机,标准动作复用,动作资源方可选专业委托；二维外援只需动作设计；标准动作必须优先复用,适度呼吸/重心、机械活动；正常战棋镜头看得出，频率不拖沓；重型/轻型/多足分家,准备；作用事件；结果；恢复,,共享动作设计,关键姿态板与动作引用；专业动画方可交.blend/.glb及30/60fps预览,,"game-godot/scripts/formula_lab/linked_campaign/v6/action_library.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/N01/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+N02,13 动作复用与必要定制,共享奔跑与转向,标准动作复用,动作资源方可选专业委托；二维外援只需动作设计；标准动作必须优先复用,连续沿合法路径移动；直路连续跑，遇障才绕；停步不逐格刹车,准备；作用事件；结果；恢复,,共享动作设计,关键姿态板与动作引用；专业动画方可交.blend/.glb及30/60fps预览,,"game-godot/scripts/formula_lab/linked_campaign/v6/action_library.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/N02/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+N03,13 动作复用与必要定制,共享飞行与起降,标准动作复用,动作资源方可选专业委托；二维外援只需动作设计；标准动作必须优先复用,离地、巡航、转弯、接地；推进与身体方向一致,准备；作用事件；结果；恢复,,共享动作设计,关键姿态板与动作引用；专业动画方可交.blend/.glb及30/60fps预览,,"game-godot/scripts/formula_lab/linked_campaign/v6/action_library.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/N03/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+N04,13 动作复用与必要定制,共享射击,标准动作复用,动作资源方可选专业委托；二维外援只需动作设计；标准动作必须优先复用,瞄准→武器发射事件→后坐→恢复；步枪、肩炮按挂点适配,准备；作用事件；结果；恢复,,共享动作设计,关键姿态板与动作引用；专业动画方可交.blend/.glb及30/60fps预览,,"game-godot/scripts/formula_lab/linked_campaign/v6/action_library.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/N04/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+N05,13 动作复用与必要定制,共享手部操作,标准动作复用,动作资源方可选专业委托；二维外援只需动作设计；标准动作必须优先复用,手部示意+设备状态反馈；不做打开柜门/内部接线细节,准备；作用事件；结果；恢复,,共享动作设计,关键姿态板与动作引用；专业动画方可交.blend/.glb及30/60fps预览,,"game-godot/scripts/formula_lab/linked_campaign/v6/action_library.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/N05/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+N06,13 动作复用与必要定制,共享维修与液压施力,标准动作复用,动作资源方可选专业委托；二维外援只需动作设计；标准动作必须优先复用,同动作家族按工具微调；施力方向和回弹清楚,准备；作用事件；结果；恢复,,共享动作设计,关键姿态板与动作引用；专业动画方可交.blend/.glb及30/60fps预览,,"game-godot/scripts/formula_lab/linked_campaign/v6/action_library.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/N06/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+N07,13 动作复用与必要定制,共享搬运吊运支撑,标准动作复用,动作资源方可选专业委托；二维外援只需动作设计；标准动作必须优先复用,提取、移动、放下与承压；载荷共用高度档，不做单位两两接触表,准备；作用事件；结果；恢复,,共享动作设计,关键姿态板与动作引用；专业动画方可交.blend/.glb及30/60fps预览,,"game-godot/scripts/formula_lab/linked_campaign/v6/action_library.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/N07/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+N08,13 动作复用与必要定制,共享受击与失衡,标准动作复用,动作资源方可选专业委托；二维外援只需动作设计；标准动作必须优先复用,方向、轻重、倒地、复原分别响应同一事件,准备；作用事件；结果；恢复,,共享动作设计,关键姿态板与动作引用；专业动画方可交.blend/.glb及30/60fps预览,,"game-godot/scripts/formula_lab/linked_campaign/v6/action_library.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/N08/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+N09,13 动作复用与必要定制,无牌拳脚与天冲拳,体术定制,动作资源方可选专业委托；二维外援只需动作设计；标准动作必须优先复用,直拳/正蹬/回旋踢/天冲拳分动作；支撑脚、转髋和手型明确,准备；作用事件；结果；恢复,,共享动作设计,关键姿态板与动作引用；专业动画方可交.blend/.glb及30/60fps预览,,"game-godot/scripts/formula_lab/linked_campaign/v6/action_library.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/N09/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+N10,13 动作复用与必要定制,旧拳王拳击组,体术定制,动作资源方可选专业委托；二维外援只需动作设计；标准动作必须优先复用,勾拳、接拳、重拳有不同重心与节奏，不换名共用一招,准备；作用事件；结果；恢复,,共享动作设计,关键姿态板与动作引用；专业动画方可交.blend/.glb及30/60fps预览,,"game-godot/scripts/formula_lab/linked_campaign/v6/action_library.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/N10/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+N11,13 动作复用与必要定制,勇拳与社勇王招牌拳,体术招牌定制,动作资源方可选专业委托；二维外援只需动作设计；标准动作必须优先复用,核心/合体动作保留人格与发力；终式和普通拳区分,准备；作用事件；结果；恢复,,共享动作设计,关键姿态板与动作引用；专业动画方可交.blend/.glb及30/60fps预览,,"game-godot/scripts/formula_lab/linked_campaign/v6/action_library.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/N11/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+N12,13 动作复用与必要定制,王者钻击装备适配,共享重击加装备层,动作资源方可选专业委托；二维外援只需动作设计；标准动作必须优先复用,右前臂驱动钻轴、旋转和推进；按武器适配，不另建每敌人的动作,准备；作用事件；结果；恢复,,共享动作设计,关键姿态板与动作引用；专业动画方可交.blend/.glb及30/60fps预览,,"game-godot/scripts/formula_lab/linked_campaign/v6/action_library.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/N12/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+N13,13 动作复用与必要定制,车辆/航空变形,形态专用设计,动作资源方可选专业委托；二维外援只需动作设计；标准动作必须优先复用,每套形态只做一次合理中间姿势/锁止；不必追求每个零件完美变形动画,准备；作用事件；结果；恢复,,共享动作设计,关键姿态板与动作引用；专业动画方可交.blend/.glb及30/60fps预览,,"game-godot/scripts/formula_lab/linked_campaign/v6/action_library.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/N13/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模
+N14,13 动作复用与必要定制,社勇王合体/分离,招牌演出设计,动作资源方可选专业委托；二维外援只需动作设计；标准动作必须优先复用,保留完整核心，组件真实进场/接合/落位；分离恢复原身份,准备；作用事件；结果；恢复,,共享动作设计,关键姿态板与动作引用；专业动画方可交.blend/.glb及30/60fps预览,,"game-godot/scripts/formula_lab/linked_campaign/v6/action_library.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/action_sequence.gd
+game-godot/scripts/formula_lab/linked_campaign/v6/assembly_sequence.gd",incoming/N14/,不适用／场景功能素材,,,,,,按用途制作；不强套三视/建模

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "fragment_id": "C02E01-F02",
+  "context_key": "689ef663c2d15d515061fef57aa3fa8ba22d967607436c01aec257e24e257f02",
+  "facts_established": [
+    {
+      "fact_id": "C02E01.STREET_AND_MOTHER_ESTABLISHED",
+      "statement": "木桶街由外圈完整实机、中圈全尺寸工房和内圈模型收藏维修构成连续生活生态；一位母亲仍在照着去世儿子留下的步骤完成一台旧合金机器人的维修委托。",
+      "evidence_in_draft": "纪存一行从馆守Z脚边穿过巨件工房进入模型内街；母亲用迟到的旧库存棘轮和弹簧试装儿子未完成的委托，机器人仍无法独立站稳，她继续拆检并补写维修单。"
+    },
+    {
+      "fact_id": "C02E01.ROTOR_FOUND_BUT_IN_PUBLIC_USE",
+      "statement": "木桶街现存一套六米主循环磁流散热转子，但它正在十二轴运输架上为多座全尺寸工房提供公共散热，不能直接拆走。",
+      "evidence_in_draft": "转子低速运行并通过临时管线连接周围工房；领班降低转速后，多台机器立即停刀并亮起警示灯。"
+    },
+    {
+      "fact_id": "C02E01.ROTOR_BATCH_MISMATCH_FOUND",
+      "statement": "现行官方手册判定木桶街转子与万机馆旧系统批次不同、不得混用，尚无全尺寸适配结论。",
+      "evidence_in_draft": "两份手册给出批次不兼容结论；兜灯明确拒绝仅凭直径和外形安装，并要求后续全尺寸复验。"
+    },
+    {
+      "fact_id": "C02E01.MISSING_ERA_RECORDS_SUSPECTED",
+      "statement": "唐胶发现官方手册在首批与末批之间缺少数年记录，并从母亲收到的同年代旧库存零件推断模型内街可能保存着被跳过的版本史，但尚未验证到六米实物。",
+      "evidence_in_draft": "唐胶将转子铭牌照片与旧库存外袋年份并排，只决定搜索对应年代的旧盒与维修单；正文明确小零件不能证明巨型转子可以混用。"
+    }
+  ],
+  "entity_states": [
+    {
+      "entity_id": "MECHA_WANJI_MAIN_CIRCULATION_ROTOR",
+      "location": "木桶街全尺寸工房街的十二轴运输架",
+      "controller": "由本地工房作为公共散热设备运行，无独立人格",
+      "physical_state": "六米全尺寸工业总成正在低速运行并连接多座工房；可运输但尚未解除管线，未归万机馆控制；现行手册判定批次不兼容，尚未进行全尺寸适配复验"
+    }
+  ],
+  "character_states": [
+    {
+      "entity_id": "CH_TANGJIAO",
+      "desire_or_emotion": "从尽快取得救命件转为先找回官方手册跳过的中间版本史；母亲继续完成委托的日常行动使他无法把维修旧事只当成需要躲开的过去。",
+      "relationship_delta": "没有接管母亲的维修，只以磨痕判断帮助她完成一次试装；接受兜灯关于全尺寸复验的专业边界。"
+    },
+    {
+      "entity_id": "CH_JICUN",
+      "desire_or_emotion": "确认救万机馆不能以关停木桶街生产为代价，决定先寻找兼顾双方的证据与交换办法。",
+      "relationship_delta": "主动关闭即时交易界面并承诺不在完成适配证明和街区替代安排前移动转子，获得本地工房继续开放调查的基础。"
+    },
+    {
+      "entity_id": "CH001",
+      "desire_or_emotion": "保持对馆守Z和万机馆的安全责任，不被外形相似的六米部件诱导冒险安装。",
+      "relationship_delta": "与唐胶形成初步分工：允许他追查旧版本史，但明确任何结论都必须回到全尺寸实物复验。"
+    },
+    {
+      "entity_id": "CH002",
+      "desire_or_emotion": "通过轮式导览终端进入馆守Z本体无法进入的模型内街，开始直接参与陌生街区的普通维修生活。",
+      "relationship_delta": "为修件母亲照亮桌面并服从她的实际需要，使其第一次在木桶街以访客而非撤离守门人的方式与人相处。"
+    }
+  ],
+  "open_threads": [
+    {
+      "thread_id": "WANJI_MAIN_CIRCULATION_DIAGNOSIS",
+      "status": "open",
+      "note": "万机馆原主循环转子已确认持续刮擦并不能继续强行运转，替换问题仍受当天停机期限约束。"
+    },
+    {
+      "thread_id": "ROTOR_PUBLIC_USE_AND_REPLACEMENT",
+      "status": "open",
+      "note": "六米转子正维持木桶街全尺寸工房生产；必须找到不让街区停摆的替代或交换安排。"
+    },
+    {
+      "thread_id": "ROTOR_MISSING_VERSION_HISTORY",
+      "status": "open",
+      "note": "官方手册缺少中间年份，模型旧盒与维修单可能保存版本线索；尚未开盒调查，也未进行全尺寸验证。"
+    },
+    {
+      "thread_id": "MOTHER_UNFINISHED_REPAIR",
+      "status": "open",
+      "note": "母亲仍在完成去世儿子留下的旧合金机器人维修委托；新到零件已试装，但机器仍无法独立站稳。"
+    }
+  ],
+  "next_trigger": "唐胶需要从模型内街对应年代的旧盒、批注和维修单中找出被官方手册跳过的版本线索，再交由本地工房在六米实物上复验。",
+  "unresolved_logic_risks": []
+}

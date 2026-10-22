@@ -1,0 +1,308 @@
+import * as THREE from './vendor/three.module.js';
+
+const params = new URLSearchParams(window.location.search);
+const asset = params.get('asset') || 'gz_front';
+
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(1);
+renderer.setSize(window.innerWidth, window.innerHeight, false);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.NoToneMapping;
+renderer.setClearColor(0x000000, 0);
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+const camera = new THREE.OrthographicCamera();
+
+const gradient = new THREE.DataTexture(new Uint8Array([72, 255]), 2, 1, THREE.RedFormat);
+gradient.needsUpdate = true;
+gradient.magFilter = THREE.NearestFilter;
+gradient.minFilter = THREE.NearestFilter;
+
+const COLORS = {
+  ink: 0x06151f,
+  navy: 0x123556,
+  navyShadow: 0x0a2239,
+  red: 0xd83a32,
+  redDark: 0x861f25,
+  silver: 0xd7dfe2,
+  white: 0xf1f1ec,
+  gold: 0xdca93c,
+  black: 0x101820,
+  breaker: 0x151c22,
+  breakerMid: 0x273039,
+  breakerLight: 0x3a444b,
+  breakerRed: 0xee3f39,
+  breakerBone: 0x747d7f,
+};
+
+const toonMaterials = new Map();
+function toon(color) {
+  if (!toonMaterials.has(color)) {
+    toonMaterials.set(color, new THREE.MeshToonMaterial({ color, gradientMap: gradient }));
+  }
+  return toonMaterials.get(color);
+}
+
+const outlineMaterial = new THREE.MeshBasicMaterial({ color: COLORS.ink, side: THREE.BackSide });
+const edgeMaterial = new THREE.LineBasicMaterial({ color: COLORS.ink, transparent: true, opacity: 0.92 });
+
+function finishMesh(mesh, edgeThreshold = 28, outlineScale = 1.026) {
+  const outline = new THREE.Mesh(mesh.geometry, outlineMaterial);
+  outline.scale.setScalar(outlineScale);
+  outline.renderOrder = -2;
+  mesh.add(outline);
+
+  const edges = new THREE.LineSegments(new THREE.EdgesGeometry(mesh.geometry, edgeThreshold), edgeMaterial);
+  edges.scale.setScalar(1.004);
+  edges.renderOrder = 3;
+  mesh.add(edges);
+  return mesh;
+}
+
+function addBox(parent, name, size, position, color, rotation = [0, 0, 0], outlineScale = 1.026) {
+  const mesh = finishMesh(new THREE.Mesh(new THREE.BoxGeometry(...size), toon(color)), 24, outlineScale);
+  mesh.name = name;
+  mesh.position.set(...position);
+  mesh.rotation.set(...rotation);
+  parent.add(mesh);
+  return mesh;
+}
+
+function addCylinder(parent, name, radiusTop, radiusBottom, height, radialSegments, position, color, rotation = [0, 0, 0], outlineScale = 1.026) {
+  const mesh = finishMesh(
+    new THREE.Mesh(new THREE.CylinderGeometry(radiusTop, radiusBottom, height, radialSegments, 1, false), toon(color)),
+    20,
+    outlineScale,
+  );
+  mesh.name = name;
+  mesh.position.set(...position);
+  mesh.rotation.set(...rotation);
+  parent.add(mesh);
+  return mesh;
+}
+
+function addBeam(parent, name, start, end, width, depth, color) {
+  const a = new THREE.Vector3(...start);
+  const b = new THREE.Vector3(...end);
+  const direction = b.clone().sub(a);
+  const mesh = finishMesh(new THREE.Mesh(new THREE.BoxGeometry(width, direction.length(), depth), toon(color)), 22, 1.035);
+  mesh.name = name;
+  mesh.position.copy(a.clone().add(b).multiplyScalar(0.5));
+  mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), direction.clone().normalize());
+  parent.add(mesh);
+  return mesh;
+}
+
+function addFrontDisc(parent, name, radius, depth, position, color, segments = 16) {
+  return addCylinder(parent, name, radius, radius, depth, segments, position, color, [Math.PI / 2, 0, 0], 1.03);
+}
+
+function buildGuardianZ() {
+  const root = new THREE.Group();
+  root.name = 'GUARDIAN_Z_V10X_STRUCTURE_ROOT';
+
+  // Feet and lower body. Dimensions are shared by every rendered direction.
+  for (const sign of [-1, 1]) {
+    const x = 0.72 * sign;
+    addBox(root, `foot_${sign}`, [1.08, 0.48, 1.35], [x, 0.35, 0.24], COLORS.navy, [-0.03, 0, 0]);
+    addBox(root, `toe_stripe_${sign}`, [0.34, 0.22, 0.48], [x, 0.42, 0.91], COLORS.silver, [-0.03, 0, 0], 1.04);
+    addBox(root, `shin_${sign}`, [0.86, 1.58, 0.92], [x, 1.43, 0], COLORS.navy, [0, 0, -0.025 * sign]);
+    addBox(root, `knee_${sign}`, [0.9, 0.52, 0.82], [x, 2.28, 0.22], COLORS.navyShadow, [-0.12, 0, 0]);
+    addBox(root, `thigh_${sign}`, [0.72, 1.02, 0.72], [x, 2.98, 0], COLORS.silver, [0, 0, -0.035 * sign]);
+    addFrontDisc(root, `hip_joint_${sign}`, 0.28, 0.3, [0.92 * sign, 3.42, 0.18], COLORS.gold, 12);
+    addBox(root, `hip_skirt_${sign}`, [0.96, 0.72, 0.82], [0.72 * sign, 3.65, 0.14], COLORS.navy, [0, 0, -0.17 * sign]);
+  }
+  addBox(root, 'pelvis_center', [1.08, 0.72, 0.84], [0, 3.55, 0.08], COLORS.navyShadow);
+  addBox(root, 'pelvis_light', [0.34, 0.43, 0.16], [0, 3.58, 0.56], COLORS.gold);
+
+  // Torso, red X armor and central archive spine.
+  addBox(root, 'torso_core', [3.18, 2.08, 1.0], [0, 5.02, 0], COLORS.navyShadow);
+  addBox(root, 'spine_white', [0.64, 2.4, 0.78], [0, 5.12, 0.36], COLORS.silver);
+  addBox(root, 'upper_x_left', [1.62, 0.66, 0.56], [-0.78, 5.83, 0.55], COLORS.red, [0, 0, -0.34]);
+  addBox(root, 'upper_x_right', [1.62, 0.66, 0.56], [0.78, 5.83, 0.55], COLORS.red, [0, 0, 0.34]);
+  addBox(root, 'lower_x_left', [1.43, 0.64, 0.56], [-0.68, 4.57, 0.55], COLORS.red, [0, 0, 0.34]);
+  addBox(root, 'lower_x_right', [1.43, 0.64, 0.56], [0.68, 4.57, 0.55], COLORS.red, [0, 0, -0.34]);
+  addFrontDisc(root, 'chest_core_outer', 0.34, 0.25, [0, 5.28, 0.87], COLORS.gold, 18);
+  addFrontDisc(root, 'chest_core_inner', 0.21, 0.27, [0, 5.28, 0.9], COLORS.white, 18);
+  addBox(root, 'spine_light_lower', [0.32, 0.5, 0.16], [0, 4.29, 0.85], COLORS.gold);
+
+  // Shoulder rings, front shoulder locks and equal-weight arms.
+  for (const sign of [-1, 1]) {
+    const sx = 2.02 * sign;
+    addBox(root, `shoulder_ring_top_${sign}`, [1.15, 0.34, 1.12], [sx, 6.08, 0], COLORS.navy, [0, 0, -0.08 * sign]);
+    addBox(root, `shoulder_ring_outer_${sign}`, [0.38, 1.34, 1.12], [2.43 * sign, 5.6, 0], COLORS.navy, [0, 0, -0.08 * sign]);
+    addBox(root, `shoulder_ring_rear_${sign}`, [0.78, 0.32, 1.12], [2.12 * sign, 5.08, 0], COLORS.navyShadow, [0, 0, -0.08 * sign]);
+    addBox(root, `shoulder_front_lock_${sign}`, [0.92, 0.68, 0.68], [1.68 * sign, 5.84, 0.5], COLORS.red, [0, 0, 0.16 * sign]);
+    addBox(root, `upper_arm_${sign}`, [0.58, 0.92, 0.64], [2.08 * sign, 4.85, 0], COLORS.navyShadow, [0, 0, 0.05 * sign]);
+    addCylinder(root, `elbow_${sign}`, 0.35, 0.35, 0.54, 12, [2.08 * sign, 4.28, 0], COLORS.black, [0, 0, Math.PI / 2]);
+    addCylinder(root, `forearm_${sign}`, 0.58, 0.67, 1.62, 12, [2.08 * sign, 3.42, 0], COLORS.navy, [0, 0, 0.02 * sign]);
+    addCylinder(root, `forearm_ring_top_${sign}`, 0.7, 0.7, 0.22, 14, [2.08 * sign, 4.15, 0], COLORS.silver);
+    addCylinder(root, `wrist_ring_${sign}`, 0.68, 0.68, 0.2, 14, [2.08 * sign, 2.66, 0], COLORS.silver);
+    addBox(root, `forearm_red_key_${sign}`, [0.2, 0.75, 0.62], [2.63 * sign, 3.35, 0.04], COLORS.redDark, [0, 0, 0.02 * sign], 1.04);
+    addBox(root, `fist_${sign}`, [0.62, 0.62, 0.68], [2.08 * sign, 2.2, 0.03], COLORS.black, [0.04, 0, 0.03 * sign]);
+  }
+
+  // Head and unmistakable V10X face language.
+  addBox(root, 'neck', [0.75, 0.36, 0.64], [0, 6.35, 0], COLORS.black);
+  addBox(root, 'helmet_core', [1.38, 1.48, 1.18], [0, 7.02, 0], COLORS.navy);
+  addBox(root, 'helmet_left', [0.48, 1.03, 1.06], [-0.78, 6.93, 0], COLORS.navyShadow, [0, 0, -0.08]);
+  addBox(root, 'helmet_right', [0.48, 1.03, 1.06], [0.78, 6.93, 0], COLORS.navyShadow, [0, 0, 0.08]);
+  addBox(root, 'face_grille', [1.02, 0.69, 0.3], [0, 6.72, 0.72], COLORS.silver, [0.06, 0, 0]);
+  for (const x of [-0.34, -0.17, 0, 0.17, 0.34]) {
+    addBox(root, `grille_${x}`, [0.07, 0.43, 0.08], [x, 6.68, 0.91], COLORS.black, [0.06, 0, 0], 1.06);
+  }
+  addBox(root, 'eye_left', [0.32, 0.1, 0.08], [-0.3, 7.12, 0.87], COLORS.gold, [0, 0, -0.08], 1.05);
+  addBox(root, 'eye_right', [0.32, 0.1, 0.08], [0.3, 7.12, 0.87], COLORS.gold, [0, 0, 0.08], 1.05);
+  addBox(root, 'central_red_crest', [0.34, 1.34, 0.34], [0, 7.64, 0.58], COLORS.red, [0.03, 0, 0]);
+  addBox(root, 'blue_brow', [0.46, 0.34, 0.4], [0, 7.17, 0.72], COLORS.navyShadow, [0, 0, 0]);
+  addBox(root, 'gold_horn_left', [1.28, 0.18, 0.2], [-0.72, 7.34, 0.65], COLORS.gold, [0, -0.05, 0.16]);
+  addBox(root, 'gold_horn_right', [1.28, 0.18, 0.2], [0.72, 7.34, 0.65], COLORS.gold, [0, 0.05, -0.16]);
+  addBox(root, 'small_antenna_left', [0.17, 0.64, 0.16], [-0.55, 7.72, 0.15], COLORS.gold, [0, 0, -0.35], 1.05);
+  addBox(root, 'small_antenna_right', [0.17, 0.64, 0.16], [0.55, 7.72, 0.15], COLORS.gold, [0, 0, 0.35], 1.05);
+
+  // Volumetric rear helmet: the crest and layered shell continue around the
+  // same head instead of ending at a flat back plane.
+  addBox(root, 'rear_helmet_crown', [0.9, 1.1, 0.46], [0, 7.32, -0.75], COLORS.navy, [-0.08, 0, 0]);
+  addBox(root, 'rear_helmet_lower', [1.28, 0.72, 0.42], [0, 6.84, -0.79], COLORS.navyShadow, [0.05, 0, 0]);
+  addBox(root, 'rear_crest_spine', [0.32, 1.18, 0.28], [0, 7.55, -0.54], COLORS.red, [-0.05, 0, 0]);
+  addBox(root, 'rear_helmet_flare_left', [0.45, 0.66, 0.48], [-0.66, 6.92, -0.72], COLORS.navy, [0, 0, -0.18]);
+  addBox(root, 'rear_helmet_flare_right', [0.45, 0.66, 0.48], [0.66, 6.92, -0.72], COLORS.navy, [0, 0, 0.18]);
+  addCylinder(root, 'ear_mechanism_left', 0.34, 0.34, 0.26, 14, [-0.93, 6.98, 0], COLORS.black, [0, 0, Math.PI / 2]);
+  addCylinder(root, 'ear_mechanism_right', 0.34, 0.34, 0.26, 14, [0.93, 6.98, 0], COLORS.black, [0, 0, Math.PI / 2]);
+  addBox(root, 'neck_rear_stack', [0.68, 0.5, 0.5], [0, 6.28, -0.43], COLORS.black);
+
+  // Backpack-free E02 back still has scapular depth, a recessed modular mount
+  // and integral manoeuvring verniers. These are part of the naked body.
+  addBox(root, 'rear_spine_upper', [0.72, 1.72, 0.5], [0, 5.42, -0.72], COLORS.navyShadow);
+  addBox(root, 'rear_scapula_left', [1.34, 1.2, 0.54], [-0.92, 5.5, -0.7], COLORS.navy, [0.04, 0.03, -0.16]);
+  addBox(root, 'rear_scapula_right', [1.34, 1.2, 0.54], [0.92, 5.5, -0.7], COLORS.navy, [0.04, -0.03, 0.16]);
+  addCylinder(root, 'rear_modular_mount', 0.4, 0.4, 0.24, 16, [0, 5.55, -1.0], COLORS.black, [Math.PI / 2, 0, 0]);
+  addCylinder(root, 'rear_modular_mount_ring', 0.25, 0.25, 0.27, 16, [0, 5.55, -1.04], COLORS.gold, [Math.PI / 2, 0, 0]);
+  addCylinder(root, 'rear_vernier_left', 0.2, 0.2, 0.2, 10, [-0.98, 4.86, -0.92], COLORS.gold, [Math.PI / 2, 0, 0]);
+  addCylinder(root, 'rear_vernier_right', 0.2, 0.2, 0.2, 10, [0.98, 4.86, -0.92], COLORS.gold, [Math.PI / 2, 0, 0]);
+  addBox(root, 'lumbar_stack', [0.86, 0.72, 0.52], [0, 4.2, -0.58], COLORS.black);
+  addBox(root, 'rear_skirt_left', [0.84, 0.66, 0.42], [-0.58, 3.72, -0.58], COLORS.navy, [0, 0, -0.12]);
+  addBox(root, 'rear_skirt_right', [0.84, 0.66, 0.42], [0.58, 3.72, -0.58], COLORS.navy, [0, 0, 0.12]);
+  for (const sign of [-1, 1]) {
+    addBox(root, `shin_vernier_${sign}`, [0.3, 0.42, 0.18], [0.72 * sign, 1.45, -0.5], COLORS.gold);
+    addBox(root, `heel_vernier_${sign}`, [0.34, 0.2, 0.18], [0.72 * sign, 0.42, -0.5], COLORS.black);
+  }
+
+  root.userData = {
+    stable_id: 'CAND_C01E02_A91A2_GZ_V10X_STRUCTURE_MASTER_V1',
+    total_height: 8.35,
+    head_height: 1.95,
+    shoulder_width: 5.05,
+    chest_width: 3.18,
+    upper_arm_length: 0.92,
+    forearm_length: 1.62,
+    hip_width: 1.92,
+    thigh_length: 1.02,
+    shin_length: 1.58,
+    foot_baseline: 0.11,
+    asymmetry: 'none visible in E02 naked-body state; left and right arm geometry is mirrored',
+  };
+  return root;
+}
+
+function buildBreaker(pose = 'planning') {
+  const root = new THREE.Group();
+  root.name = 'BREAKER_BX_STRUCTURE_ROOT';
+
+  // Continuous central keel: no mammalian abdomen or exposed belly cavity.
+  addBox(root, 'sealed_keel', [2.6, 1.3, 4.25], [0, 2.35, 0], COLORS.breakerMid, [-0.05, 0, 0]);
+  addBox(root, 'front_breach_wedge', [2.9, 1.25, 1.2], [0, 2.55, 2.15], COLORS.breaker, [-0.18, 0, 0]);
+  addBox(root, 'closed_chest_left', [1.34, 1.15, 0.8], [-0.7, 1.86, 1.73], COLORS.breakerLight, [-0.12, 0.05, 0.05]);
+  addBox(root, 'closed_chest_right', [1.34, 1.15, 0.8], [0.7, 1.86, 1.73], COLORS.breakerLight, [-0.12, -0.05, -0.05]);
+  addBox(root, 'closed_chest_seam', [0.1, 1.04, 0.12], [0, 1.86, 2.19], COLORS.ink, [-0.12, 0, 0], 1.06);
+
+  // Three axial shell masses and two load ribs replace turtle scutes.
+  addBox(root, 'dorsal_front_mass', [4.35, 0.72, 1.62], [0, 3.72, 1.35], COLORS.breakerLight, [-0.18, 0, 0]);
+  addBox(root, 'dorsal_center_mass', [4.95, 0.9, 1.72], [0, 4.02, -0.12], COLORS.breaker, [0.02, 0, 0]);
+  addBox(root, 'dorsal_rear_mass', [4.25, 0.66, 1.68], [0, 3.72, -1.58], COLORS.breakerMid, [0.19, 0, 0]);
+  addBox(root, 'axial_spine', [0.58, 0.48, 4.5], [0, 4.48, -0.08], COLORS.breakerBone, [0.01, 0, 0]);
+  addBox(root, 'axial_red_seam', [0.15, 0.08, 2.95], [0, 4.76, 0.28], COLORS.breakerRed, [0, 0, 0], 1.08);
+
+  // Low sensor block; it is a breach sensor, not an animal head.
+  addBox(root, 'low_sensor_block', [1.85, 0.62, 0.86], [0, 2.95, 2.9], COLORS.breaker, [-0.16, 0, 0]);
+  addBox(root, 'single_red_slit', [0.92, 0.11, 0.09], [0, 3.02, 3.37], COLORS.breakerRed, [-0.16, 0, 0], 1.07);
+
+  for (const sign of [-1, 1]) {
+    // Continuous load rib from shell to siege strut; no round ape shoulder.
+    addBeam(root, `load_rib_${sign}`, [1.48 * sign, 3.76, 0.92], [2.02 * sign, 2.45, 1.15], 0.42, 0.64, COLORS.breakerBone);
+    addBox(root, `front_joint_cuff_${sign}`, [0.82, 0.82, 0.92], [2.02 * sign, 2.36, 1.18], COLORS.breaker, [0.12, 0, 0.08 * sign]);
+    addBeam(root, `front_strut_upper_${sign}`, [2.02 * sign, 2.24, 1.22], [2.42 * sign, 1.18, 2.0], 0.7, 0.72, COLORS.breakerMid);
+    addBox(root, `front_hinge_${sign}`, [0.8, 0.56, 0.76], [2.43 * sign, 1.12, 2.02], COLORS.breakerBone, [0.05, 0, 0.12 * sign]);
+    addBeam(root, `front_strut_lower_${sign}`, [2.43 * sign, 1.02, 2.05], [2.58 * sign, 0.42, 2.72], 0.62, 0.66, COLORS.breaker);
+    // Split ground blades, not paws or claws.
+    addBox(root, `ground_blade_outer_${sign}`, [0.38, 0.22, 1.28], [2.72 * sign, 0.23, 2.95], COLORS.breakerLight, [-0.11, 0.06 * sign, 0.03 * sign]);
+    addBox(root, `ground_blade_inner_${sign}`, [0.32, 0.2, 1.08], [2.36 * sign, 0.2, 2.88], COLORS.breakerMid, [-0.11, -0.04 * sign, -0.03 * sign]);
+    addBox(root, `blade_red_key_${sign}`, [0.1, 0.08, 0.62], [2.53 * sign, 0.36, 3.0], COLORS.breakerRed, [-0.1, 0, 0], 1.08);
+
+    // Short rear stabilizer assemblies with skid pads, not hind legs.
+    addBeam(root, `rear_stabilizer_${sign}`, [1.62 * sign, 2.85, -1.45], [1.9 * sign, 0.72, -2.12], 0.62, 0.72, COLORS.breakerMid);
+    addBox(root, `rear_skid_${sign}`, [0.82, 0.28, 1.1], [1.95 * sign, 0.23, -2.35], COLORS.breaker, [0.04, 0, -0.04 * sign]);
+  }
+
+  // Sealed future core outlet remains cold and closed in E02.
+  addCylinder(root, 'sealed_upper_back_exit', 0.48, 0.48, 0.22, 8, [0, 3.72, -2.52], COLORS.breaker, [Math.PI / 2, 0, 0]);
+  addCylinder(root, 'sealed_exit_cap', 0.29, 0.29, 0.24, 8, [0, 3.72, -2.65], COLORS.ink, [Math.PI / 2, 0, 0]);
+
+  if (pose === 'contact') {
+    root.rotation.x = -0.13;
+    root.position.y = 0.14;
+    root.position.z = 0.28;
+  }
+
+  root.userData = {
+    stable_id: 'CAND_C01E02_A91A2_BREAKER_BX_STRUCTURE_MASTER_V1',
+    structure_anchors: 'low single-red-slit sensor; semi-upright load-bearing front struts; giant axial shell; closed chest seam; sealed upper-back exit',
+    nonanimal_rule: 'no turtle scutes; no ape shoulder; no mammal abdomen; no paws or ordinary claws',
+    planning_transform: 'identity',
+    contact_transform: 'same geometry; root pitch -0.13rad; y +0.14; z +0.28',
+  };
+  return root;
+}
+
+function configureCamera(kind, model) {
+  const aspect = window.innerWidth / window.innerHeight;
+  const isGuardian = kind.startsWith('gz_');
+  const orthoHeight = isGuardian ? 9.25 : 8.3;
+  camera.left = (-orthoHeight * aspect) / 2;
+  camera.right = (orthoHeight * aspect) / 2;
+  camera.top = orthoHeight / 2;
+  camera.bottom = -orthoHeight / 2;
+  camera.near = 0.1;
+  camera.far = 100;
+  camera.updateProjectionMatrix();
+
+  const targetY = isGuardian ? 4.05 : 2.45;
+  const view = kind.split('_').at(-1);
+  if (view === 'front' || view === 'planning' || view === 'contact') camera.position.set(0, targetY, 18);
+  else if (view === 'back') camera.position.set(0, targetY, -18);
+  else if (view === 'left') camera.position.set(-18, targetY, 0);
+  else if (view === 'right') camera.position.set(18, targetY, 0);
+  else if (view === 'iso') camera.position.set(11, isGuardian ? 9.5 : 7.5, 14);
+  else camera.position.set(0, targetY, 18);
+  camera.lookAt(0, targetY, 0);
+  model.updateMatrixWorld(true);
+}
+
+scene.add(new THREE.AmbientLight(0xffffff, 1.15));
+const key = new THREE.DirectionalLight(0xf4f0df, 2.65);
+key.position.set(-6, 11, 8);
+scene.add(key);
+const rim = new THREE.DirectionalLight(0x7bb4d0, 0.42);
+rim.position.set(8, 5, -10);
+scene.add(rim);
+
+let model;
+if (asset.startsWith('gz_')) model = buildGuardianZ();
+else model = buildBreaker(asset.endsWith('contact') ? 'contact' : 'planning');
+scene.add(model);
+configureCamera(asset, model);
+renderer.render(scene, camera);
+
+window.__MODEL_META__ = model.userData;
+window.__RENDER_READY__ = true;

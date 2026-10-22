@@ -1,0 +1,23 @@
+decision_id	category	hypothesis	source_samples	decision	reason	registered_prototype_ids	acceptance	risk	status
+RDEC001	TACT	敌方Intent必须清楚但不必精确	TACT002;C2001;C2002;C2004	adopt_for_prototype	兼顾可读性与信息战;让精度有来源和代价	D04-P1-A;D04-P1-B;D04-P1-C	玩家能区分事实/估计/未知且不觉得被暗算	信息过暗会变猜谜	candidate
+RDEC002	TACT	四种Scheduler及其原生命令/UI都必须在同一身体语义与核心C2下受检	C2TACT001;C2TACT002;TACT001;C2TACT004	adopt_for_neutral_comparison	动作时长、路线冲突、阵营阶段和同步提交各有潜力但不能预选；P1只形成shortlist，核心C2参与最终裁决	D04-P1-A;D04-P1-B;D04-P1-C;D04-P1-D;D04-P1-SHORTLIST;D04-P2-CROSSOVER	各版过预注册硬门且shortlist carrier能复述来源/权限/同意与冲突点	易滑向脚本编程/回放成本高	candidate
+RDEC003	TACT	基础战棋必须先在无主角权能时有趣	TACT002;TACT001;MECHA002	adopt_as_gate	防止权能掩盖移动/目标/地形/反应薄弱	D04-P1-A;D04-P1-B;D04-P1-C	至少两种可行胜法且测试者选择不同	三单位原型可能过小	candidate
+RDEC004	C2	战报需要来源、时效、置信度和通信链	C2001;C2002;C2004	adopt_for_prototype	把全局视野变成可付费、可中断的公共信息层	D04-P1-B;D04-P1-C;D04-P2	玩家能指出每条信息来自谁以及何时会过期	UI信息负担	candidate
+RDEC005	C2	权限应按上位规则→任务范围→单位自治→具名越权分层	C2003	adopt_after_simplification	适合七海的责任边界且防止万能授权	D04-P2	玩家能判断谁可授权/叫停且只需一层主UI	菜单复杂度/军事化	candidate
+RDEC006	C2	白鸢预演应是条件方案而非精确未来	C2TACT001;C2TACT002;TACT003	adopt_after_simplification	保留试方案乐趣并维持责任和误差	D04-P2	预演可错但错误原因能被复盘	玩家可能把误差当欺骗	candidate
+RDEC007	C2	无限回退不适合承担授权与牺牲	TACT003	reject	会消解人物责任与持续后果	D04-P2	只允许有限中止/改令窗口	可能提高挫折	candidate_reject
+RDEC008	MECHA	非驾驶主角必须有正式战场席位但不能只是Buff	MECHA001	adopt_with_rewrite	保留角色存在感;具体动作改成信息/路线/许可/工程	D04-P2	四类权能在同一局内产生不同选择	按钮膨胀/身份重叠	candidate
+RDEC009	MECHA	攻击动画/Cut-in/整机动作是核心回报	MECHA001;TACT001	adopt_as_product_rule	机器人大战的情绪与身体性不能只靠数值	D04-P1-A;D04-P1-B;D04-P1-C;D04-P2	每场关键动作都有可读全身结果且不拖节奏	资产成本	candidate
+RDEC010	STRAT	功能伤损和连续部署比数值墙更适合轻练级	MECHA002;STRAT001;HUB006	adopt_for_prototype	让战斗结果改变编队/路线而无需刷级	D04-P1-A;D04-P1-B;D04-P1-C;D04-P3;P-HUB1	两场连续任务产生两个合理配置方案	可能形成惩罚雪球	candidate
+RDEC011	STRAT	随机永久死亡、随机Salvage与刷合同不适配	C2TACT003;MECHA002;STRAT001	reject	会压过手工剧情、固定角色弧与低刷级目标	无	不进入产品合同	传统策略玩家可能觉得成长太轻	candidate_reject
+RDEC012	EXPL	微型自由探索应以地标、证据和具名人物回写为核心	EXPL004;EXPL005;EXPL006	adopt_for_prototype	轻松、低成本且能服务城市/关系/战前条件	P-EX1	20-40分钟内带回证据和一个人物后果	易变图标跑腿	candidate
+RDEC013	PUZZLE	调查必须经过候选判断和实体实证	PUZZLE003;PUZZLE004;PUZZLE005	adopt_for_prototype	防止查资料/读文本冒充玩法;匹配工程角色	P-EX2	玩家能解释证据链并从失败反馈修正	容易变搜纸条配方	candidate
+RDEC014	EXPL	知识门控和可纠偏误判适合B2/黑匣/迟到信号	EXPL001;EXPL002;EXPL003	adopt_for_prototype	失败也产生认知进展且与世界谜团相连	P-EX3	玩家能区分candidate/likely/confirmed并重访验证	时间循环/构造语言成本	candidate
+RDEC015	PUZZLE	画图/地图重排不能直接改写现实	PUZZLE002	keep_boundary_only	只能规划已有拓扑并由现实执行链落实	P-EX2	玩家能说清谁执行重排方案	会与白鸢Canon冲突	candidate_boundary
+RDEC016	HUB	万机馆应是随任务结果持续变化的移动之家	HUB002;HUB003;HUB007	adopt_for_prototype	空间、人物和收藏共同承载情感/状态	P-HUB1	回馆后至少三处变化可见且与刚才结果对应	内容量/资产成本	candidate
+RDEC017	HUB	每个Operation/章返馆只显示2-5个事项组，标准周期固定3格且最多3张高价值工作卡	HUB001;HUB004;HUB006	adopt_for_prototype	事项组只整理变化，工作卡与实体占用才产生岗位取舍，避免全员打卡	P-HUB1	测试者能区分事项组/时间格/工作卡，不感到必须清光且能接受放弃	错过焦虑	candidate
+RDEC018	REL	战后只触发1-2个高价值关系事件并回到操作许可	HUB005;HUB002	adopt_for_prototype	让关系改变援护/信息/高风险提案而非好感数值	P-HUB1	玩家能指出关系事件改变的下一次操作	内容偏好不平衡	candidate
+RDEC019	COLLECT	收藏应记录机体/人物共同生活史并有未来消费者	HUB003;HUB007;EXPL005;PUZZLE003	adopt_for_product_contract	避免图鉴只做百分比;连接展陈、关系和玩法	P-HUB1	每个关键藏品有主体、位置、状态回写和未来读取	资产/文本膨胀	candidate
+RDEC020	HUB	巨型Hub跑腿、每日送礼和全员日更对白不适配	HUB001;HUB005	reject	制造攻略劳动和制作债;破坏轻松调剂	无	不进入产品合同	可能减少日常量感	candidate_reject
+RDEC021	AUX	每章独立小游戏应被三种复用原型家族替代	EXPL001;EXPL004;EXPL005;PUZZLE003;PUZZLE005	adopt_as_scope_rule	控制资产与教学成本;保留变化来自内容/角色/地点	P-EX1;P-EX2;P-EX3	前三章所有辅助段均能映射到三家族之一或删去	重复感	candidate
+RDEC022	AUX	辅助玩法统一使用local_retry/hypothesis_unconfirmed/forward_consequence	EXPL001;EXPL002;EXPL003;PUZZLE001;PUZZLE005	adopt_for_prototype	以失败语义而非Game Over统一轻玩法	P-EX1;P-EX2;P-EX3	测试者理解失败后保留了什么	状态解释成本	candidate

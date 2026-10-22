@@ -1,0 +1,13 @@
+field_name	required	type_or_format	allowed_values_or_keys	max_entries	owner_system	canon_rule	example
+activity_id	yes	string	必须匹配hybrid_activity_catalog.tsv的activity_id	1	HybridActivityRunner	新增活动前登记gameplay表	A003
+score_band	yes	enum	fail;clear;good;perfect	1	HybridActivityRunner	不得用隐藏数值替代可读结果	good
+resource_delta	no	map	funding;repair_parts;data_integrity;soul_stability;audience_trust	3	RunState	新增资源类型前更新玩法README和预算表	repair_parts:+2;data_integrity:+1
+variable_delta	no	map	museum_warmth;enterprise_pressure;black_case_resonance;far_star_understanding;route_debt;original_rewrite;real_machine_trust	2	RunState	长期变量必须有canon/graph节点	museum_warmth:+1
+battle_modifiers	no	list	modifier_id:value;必须指向Encounter或Mission可读字段	2	PreBattleSetup	不能跳过SRPG主冲突	message_wall_hp:+20%;enemy_wave_delay:+1
+unlocked_flags	no	list	snake_case flags	2	EpisodeFlow	影响场景顺序时更新canon scenes	right_arm_support_unlocked
+pressure_delta	no	map	enterprise_pressure;city_damage_risk;overheat_risk;audience_panic	2	RunState	压力必须有可见反馈	enterprise_pressure:+1
+canon_refs	no	list	entity_id或concept_id	5	CanonIndex	引用必须能被canon-query查到	CH_QIHAI;CONCEPT_WANJI_OPENING_LOOP
+source_nodes	no	list	ContentNode ids	6	ContentGraph	节点类型必须来自content_node_types.tsv	C01_CLUE_FIREBOX;C01_ITEM_OLD_NOTE
+consumed_nodes	no	list	ContentNode ids	3	ContentGraph	消耗长期节点需确认不是long_arc唯一证据	C01_ITEM_REPAIR_PART_A
+soft_fail	no	string	一句具体后果，不超过40字	1	HybridActivityRunner	失败不中断主线但必须有后果	右臂能动但少一次援护
+ui_summary	yes	string	玩家可读结算句，不显示内部公式	4行	UI	不能暴露调试变量名	留言墙加固，清算压力上升

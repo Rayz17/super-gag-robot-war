@@ -1,0 +1,33 @@
+row_id	record_type	target	title_or_name	lineage_or_episode	a5_status	first_episode	battle_or_play_function	story_function	asset_tier	canon_boundary	notes
+RULE_DENSITY	rule	CONCEPT_A05_MECHA_DENSITY_PATCH	A05机体密度增强规则	A05	候选补丁	A05-1	要求A5约20个可识别机体/单位/模块，但按正式机体、残响、援护、场景机体、敌方模块分层	解决七话大章节机体量偏寒碜的问题	规则资产	不覆盖V22.7，按V22.7+V22.8合读	不是所有单位都要完整入队或全量资产
+RULE_EPISODE_CAPACITY	rule	CONCEPT_A05_MECHA_DENSITY_PATCH	A5七/八话容量规则	A05	用户确认	A05-5	默认七话；若巨大化、发布会和目录翼模块战过紧，可扩成八话	保护重点章节容量，不机械保七话	规则资产	八话仅拆A05-5/A05-6/A05-7密集段，不改变A5主方向	推荐八话：巨大化保护、发布会证物、目录翼模块、拆完全版
+RULE_NO_EARLY_UNLOCK	rule	CONCEPT_A05_MECHA_DENSITY_PATCH	临时支援参战不等于入队	H09/H10/H11	硬边界	A05-1	彩队巨神、电磁五虎机、五兽王冠允许临时支援参战、Cut-in、声部、节拍或一次性援护	保护C12隐藏机回报，同时让玩家看见机体出场	规则资产	不得提前完整送隐藏机	不再用含混的“影子”，准确口径是有支援参战但不入队
+UNIT_STARFIRE_CARGO	unit	MECHA_STARFIRE_COLOSSUS	星火货柜牵引车	星火车队	主线实机	A05-1	牵引、指挥、中继、脊柱接口	等待最后一辆和旧货柜誓约核心	全量战斗资产	星火车队成员，不等于火种旧货柜本体	旧货柜锚件与A2回收
+UNIT_STARFIRE_FIRE	unit	MECHA_STARFIRE_COLOSSUS	星火消防车	星火车队	主线实机	A05-1	水炮臂甲、灭火、冷却、桥面保护	救援功能不能被武器外壳吞掉	全量战斗资产	星火车队成员	5-2外壳选择影响5-5冷却能力
+UNIT_STARFIRE_CRANE	unit	MECHA_STARFIRE_COLOSSUS	星火吊车	星火车队	主线实机	A05-1	承力框、拉桥、吊轨、牵制巨大化影	必要合体的结构理性	全量战斗资产	星火车队成员	被兽爪诱惑时会损失救援精度
+UNIT_STARFIRE_MED	unit	MECHA_STARFIRE_COLOSSUS	星火医疗车	星火车队	主线实机	A05-1	担架舱、胸灯、防护板、撤离	医疗胸灯作为A5最大泪点	全量战斗资产	星火车队成员	不得把担架舱改成武器舱
+UNIT_STARFIRE_GUARD	unit	MECHA_STARFIRE_COLOSSUS	星火警备车	星火车队	主线实机	A05-1	夜视、路线封锁、腿部稳定器	守住路线而不是抢主攻	全量战斗资产	星火车队成员	与五色黑位只共鸣不等同
+UNIT_STARFIRE_COLOSSUS	unit	MECHA_STARFIRE_COLOSSUS	星火巨神	救援车队合体	主线候选合体	A05-4	必要合体、承力链、最终支援资格	本篇主机体，但不吞并其他谱系	全量战斗资产	正式入队仍留后续开馆/关系任务	A5完成主线支援条件
+UNIT_R18_CARGO_ECHO	unit	R18_FIRESEED_TRANSFORMER_ECHO	火种旧货柜残响	变形生命	残响样本	A05-1	旧屏幕、版本层、扫描形态反问	让变形系独立于星火车队	残响资产	不得等同G.A.G.本体	只作为货柜锚件和商品生命问题出现
+UNIT_REPAINT_TRIO	unit	MECHA_A05_REPAINT_TRIO	重涂三车 / 寻翼重涂队：红焰、蓝巡、黑夜	变形同模重涂;Seekers式重涂军团	A5专属中立/敌方候选;A5结算驻馆支援	A05-1	红焰抢领袖频道，蓝巡音爆干扰，黑夜镜像换位；复制星火图标、制造敌我误认、被展签识别，终局停下错误复制	同模不是同命，同时让A5后万机馆编队有可见扩充	中量敌方/中立资产;支援回收资产	不作为完整新参战包，但可进入驻馆支援/特殊援护/后续支援皮肤回收池；可回收酸雨、日炎、幽魂、G2霓虹、镜像限定等支援皮肤	识别后成为5-7错误标签反证，并给玩家A5编队扩充收益
+UNIT_ACCESSORY_SPRITES	unit	MECHA_A05_ACCESSORY_SPRITES	散件小车群 / SKU无人机	商品包小型敌群	A5专属敌方单位	A05-1	拖配件、贴标签、制造短期数值诱惑	把全挂完全版病落成前线执行	小型敌方资产	不代表玩家收藏错误	接受标签会强化终局目录翼
+UNIT_H09_COLOR_GIANT_ECHO	unit	H09_COLOR_TEAM_GIANT_ECHO	彩队巨神残响	战队巨大合体	隐藏机临时支援参战	A05-3	五色轮廓、合体剖面、群众声部稳定、一次不可操作援护	证明战队巨神是独立谱系	临时支援/Cut-in资产	H09完整解锁仍留C12隐藏/支线；A5不入队	有出场支援和典故，但无完整数值、改装树和驾驶员线
+UNIT_H09_BEAST_SHADOWS	unit	H09_COLOR_BEAST_SHADOWS	五色兽机残影	战队兽机	隐藏机预显影	A05-3	站位轨光影、旧玩具墙、声部响应	把五色队员和五辆车分开	残响/站位资产	不做完整兽机动作组，不入队	红兽、蓝兽、黄兽、白翼、黑甲只显影
+UNIT_H09_GIANTIZED_SHADOW	unit	ENEMY_A05_GIANTIZED_BEASTMAN_SHADOW	巨大化兽人影	特摄怪人巨大化	A5专属机制影	A05-3	半身障碍、观众惊呼供能、巨大化Boss	让巨大化从梗变成城市保护压力	Boss/场景敌资产	不提前正式启用CH064隐藏支线	5-3半身乱入，5-5正式巨大化
+UNIT_H10_ELECTRO_TIGER_ECHO	unit	H10_ELECTRO_TIGER_ECHO	电磁五虎机残响	昭和五机合体	隐藏机临时支援参战	A05-4	五机编号、老歌节拍、电磁核心样件、承力同步、一次不可操作Cut-in	把老派合体的节拍和亲情种子带入A5	临时支援/节拍资产	H10完整解锁仍留C12隐藏/支线；A5不入队	可以出场支援参战，但不能出现完整驾驶员入队
+UNIT_H11_BEAST_CROWN_ECHO	unit	H11_BEAST_CROWN_ECHO	五兽王冠残响	兽型合体	隐藏机临时支援参战	A05-2	兽型玩具墙、王冠剑样件、卡扣咬合、一次不可操作Cut-in咬断王冠广播核	用玩具手感反制错误兽爪升级	临时支援/结构资产	H11完整解锁仍留C12隐藏/支线；A5不入队	黑兽工匠不在A5正式登场，但可留下卡扣证物
+UNIT_R07_SHA_YONG_WANG	unit	R07_SHA_YONG_WANG_SUPPORT	社勇王 / 金章AI	勇者合体	中量援护	A05-4	勇气许可、审批驳回、过载援护	勇气不是把风险甩给别人	中量援护资产	沿用R07，不抢第一章伏线	5-4和5-7承担许可
+UNIT_R07_YUSHA_TESTER	unit	MECHA_A05_YUSHA_INTERN_TESTER	小勇机训练壳	勇者小型支援	A5专属训练壳;C08绑定伏笔	A05-4	携带金章许可、标出维修口、钻入巨背包下，留下实习许可编号或Pose日志	让勇者谱系进入棋盘而非只做UI，并给实习勇者后续呼应	小型援护资产	不提前移动CH040正式登场；后续可与CH040正式绑定	可无人或远程许可，不说话，但必须留下C08可回收提示
+UNIT_STAGE_GIANT	unit	MECHA_STAGE_GUARDIAN_GIANT	棚守巨影	特摄英雄侧	场景机体	A05-5	挡踏、镜头帧内显影、消耗棚内电力	巨大化英雄不是压倒而是保护脚下	场景机体资产	不替代彩队巨神或社勇王	沿用V22.6.1候选
+UNIT_GUARDIAN_Z	unit	MECHA_GUARDIAN_Z	馆守Z	万机馆守护者	既有支援	A05-5	18米尺度锚、借肩支撑、紧急格挡	让万机馆旧守护者参与但不抢主角机	既有资产复用	不改变第一章口径	5-5和5-7支撑
+UNIT_PARK_WORKERS	unit	MECHA_A05_PARK_WORK_UNITS	乐园工务三机	现实工务机	A5专属中立/临时可控单位	A05-5	轨道牵引、灯架吊装、清扫救援、机关控制	让废弃乐园像真实设施运转	中量可复用资产	不新增长期参战包	可作为关卡机关单位复用
+UNIT_FAKE_UNITY	unit	ENEMY_FAKE_UNITY_COLOSSUS	伪同心巨神·全挂完全版	索引伪合体	终盘Boss	A05-6	目录翼、伪全员支援、核心抗性	把多谱系强行做成一个商品目录	全量Boss资产	不得写成真正理解共同语言	沿用V22.7
+UNIT_CATALOG_MODULES	unit	ENEMY_A05_CATALOG_MODULES	商品包模块群	索引商品化模块	终盘模块敌	A05-6	王冠广播核、尖刺背包、展示支架炮台、透明特效诱饵、巨披风墙	让终局可逐件拆、逐件质询	模块化敌方资产	属于伪同心Boss外挂，不是独立参战包	每件都有表面收益和隐藏损失
+EP_A05_1	episode_patch	A05-1	旧货柜不是同模重涂	A05-1	增强	A05-1	五辆旧车护送加重涂三车识别；红焰抢频道、蓝巡音爆、黑夜镜像换位	从同模SKU升级为同模不同命，并吃Seekers式重涂军团梗	外环车道;重涂车;SKU无人机	保持V22.7主流程	新增识别两台重涂车的胜利层
+EP_A05_2	episode_patch	A05-2	扫描形态不能替你活	A05-2	增强	A05-2	火种残响加五兽王冠卡扣判断	从外壳选择升级为结构适配判断	变形展厅;兽型玩具墙;散件小车	不解锁H11	错误兽爪会影响5-5吊轨
+EP_A05_3	episode_patch	A05-3	五色不是五个货号	A05-3	增强	A05-3	彩队残响加五色兽机残影加巨大化兽人影半身乱入	让战队谱系、五色队员和星火车队彻底分开	五色棚;兽机光影;半身障碍Boss	不解锁H09完整机体	观众喊名会被购买按钮收割
+EP_A05_4	episode_patch	A05-4	勇气审批驳回豪华合体	A05-4	增强	A05-4	电磁五虎机节拍加小勇机训练壳	勇者和昭和五机都进入棋盘规则	合体井;旧磁带;小勇机	不移动CH040，不解锁H10	小勇机可标出维修口
+EP_A05_5	episode_patch	A05-5	巨大化不是放大贴图	A05-5	增强	A05-5	乐园工务三机加入三尺度巨大化关	让普通工作机器也参与保护机器人文化	摄影棚;微缩城市;三台工务机	工务三机为A5专属候选单位	灯架吊装机可调整镜头帧
+EP_A05_6	episode_patch	A05-6	伪领袖发布会	A05-6	增强	A05-6	五个商品包节点扩成多谱系模块群	发布会从概念反派升级为模块化战斗	广播塔;目录翼;商品包模块	模块属于伪同心外挂	每个模块有证物反制
+EP_A05_7	episode_patch	A05-7	拆掉完全版	A05-7/A05-8	增强	A05-7	第二层机体支援链加入重涂、电磁、兽王、小勇机、工务机	最终画面更像万机同场，但规则仍是各自回应	全乐园复合地图;多谱系Cut-in	不做真二十机合体	终局支援非常满，但不吞并隐藏机
+EP_A05_8_OPTION	episode_split_option	A05-8	八话版：拆掉完全版	A05-8	可选拆分	A05-8	若发布会和目录翼模块战过紧，将原A05-7终局后移为A05-8	A5按剧情容量扩容，不机械保七话	全乐园终局复合地图	仅在正式大纲容量需要时采用	A05-7可改为目录翼模块战，A05-8再做终局拆完全版

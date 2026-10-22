@@ -1,0 +1,669 @@
+"""Build and render the A9.1-A3 producer-only Blender quality gate.
+
+Run with:
+  /Applications/Blender.app/Contents/MacOS/Blender --background --python build_a9_1a3_gate.py
+
+The rendered views come from one named-component Rig collection per asset.
+No remote generation, painted turnaround, or sliced multi-view sheet is used.
+"""
+
+from __future__ import annotations
+
+import json
+import math
+from pathlib import Path
+
+import bpy
+from mathutils import Vector
+
+
+SCRIPT = Path(__file__).resolve()
+HERE = SCRIPT.parents[2]
+OUT = HERE / "review/internal-gate/blender"
+OUT.mkdir(parents=True, exist_ok=True)
+
+
+COLORS = {
+    "ink": "050c16",
+    "black": "0b111a",
+    "navy0": "081a31",
+    "navy1": "0d315e",
+    "navy2": "1a5a96",
+    "red0": "8b1a2b",
+    "red1": "ed382f",
+    "silver0": "8e9699",
+    "silver1": "e8ecea",
+    "gold0": "8b5b13",
+    "gold1": "efb82d",
+    "white": "f3f1e8",
+    "bx_ink": "071217",
+    "bx_black": "11181d",
+    "bx_deep": "17242b",
+    "bx_mid": "31434a",
+    "bx_light": "566b70",
+    "bx_bone": "7b8788",
+    "bx_red0": "8f1e24",
+    "bx_red1": "f13d37",
+}
+
+
+def color(hex_value: str) -> tuple[float, float, float, float]:
+    value = hex_value.lstrip("#")
+    return tuple(int(value[index : index + 2], 16) / 255 for index in (0, 2, 4)) + (1.0,)
+
+
+def darker(rgba: tuple[float, float, float, float], factor: float) -> tuple[float, float, float, float]:
+    return tuple(channel * factor for channel in rgba[:3]) + (rgba[3],)
+
+
+def cel_material(name: str, hex_value: str) -> bpy.types.Material:
+    material = bpy.data.materials.new(name)
+    material.use_nodes = True
+    nodes = material.node_tree.nodes
+    links = material.node_tree.links
+    nodes.clear()
+    output = nodes.new("ShaderNodeOutputMaterial")
+    diffuse = nodes.new("ShaderNodeBsdfDiffuse")
+    shader_to_rgb = nodes.new("ShaderNodeShaderToRGB")
+    ramp = nodes.new("ShaderNodeValToRGB")
+    emission = nodes.new("ShaderNodeEmission")
+    base = color(hex_value)
+    diffuse.inputs["Color"].default_value = base
+    diffuse.inputs["Roughness"].default_value = 0.78
+    ramp.color_ramp.interpolation = "CONSTANT"
+    ramp.color_ramp.elements.remove(ramp.color_ramp.elements[1])
+    first = ramp.color_ramp.elements[0]
+    first.position = 0.28
+    first.color = darker(base, 0.28)
+    middle = ramp.color_ramp.elements.new(0.50)
+    middle.color = darker(base, 0.60)
+    bright = ramp.color_ramp.elements.new(0.72)
+    bright.color = base
+    emission.inputs["Strength"].default_value = 1.0
+    links.new(diffuse.outputs["BSDF"], shader_to_rgb.inputs["Shader"])
+    links.new(shader_to_rgb.outputs["Color"], ramp.inputs["Fac"])
+    links.new(ramp.outputs["Color"], emission.inputs["Color"])
+    links.new(emission.outputs["Emission"], output.inputs["Surface"])
+    return material
+
+
+def reset_scene() -> None:
+    bpy.ops.object.select_all(action="SELECT")
+    bpy.ops.object.delete(use_global=False)
+    for collection in tuple(bpy.data.collections):
+        if collection.name != "Collection":
+            bpy.data.collections.remove(collection)
+
+
+def new_collection(name: str) -> bpy.types.Collection:
+    collection = bpy.data.collections.new(name)
+    bpy.context.scene.collection.children.link(collection)
+    return collection
+
+
+def relink(obj: bpy.types.Object, collection: bpy.types.Collection) -> None:
+    for existing in tuple(obj.users_collection):
+        existing.objects.unlink(obj)
+    collection.objects.link(obj)
+
+
+def component_empty(name: str, collection: bpy.types.Collection, root: bpy.types.Object) -> bpy.types.Object:
+    empty = bpy.data.objects.new(name, None)
+    empty.empty_display_type = "PLAIN_AXES"
+    empty.parent = root
+    collection.objects.link(empty)
+    return empty
+
+
+def bevelled_cube(
+    name: str,
+    size: tuple[float, float, float],
+    location: tuple[float, float, float],
+    material: bpy.types.Material,
+    parent: bpy.types.Object,
+    collection: bpy.types.Collection,
+    rotation: tuple[float, float, float] = (0, 0, 0),
+    bevel: float = 0.08,
+) -> bpy.types.Object:
+    bpy.ops.mesh.primitive_cube_add(location=location, rotation=rotation)
+    obj = bpy.context.object
+    obj.name = name
+    obj.scale = (size[0] / 2, size[1] / 2, size[2] / 2)
+    bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
+    obj.data.materials.append(material)
+    modifier = obj.modifiers.new("HARD_EDGE_CHAMFER", "BEVEL")
+    modifier.width = min(bevel, min(size) * 0.2)
+    modifier.segments = 1
+    modifier.affect = "EDGES"
+    obj.parent = parent
+    relink(obj, collection)
+    return obj
+
+
+def cylinder(
+    name: str,
+    radius: float,
+    depth: float,
+    location: tuple[float, float, float],
+    material: bpy.types.Material,
+    parent: bpy.types.Object,
+    collection: bpy.types.Collection,
+    rotation: tuple[float, float, float] = (math.pi / 2, 0, 0),
+    vertices: int = 12,
+) -> bpy.types.Object:
+    bpy.ops.mesh.primitive_cylinder_add(vertices=vertices, radius=radius, depth=depth, location=location, rotation=rotation)
+    obj = bpy.context.object
+    obj.name = name
+    obj.data.materials.append(material)
+    modifier = obj.modifiers.new("RIM_CHAMFER", "BEVEL")
+    modifier.width = min(0.045, depth * 0.12)
+    modifier.segments = 1
+    obj.parent = parent
+    relink(obj, collection)
+    return obj
+
+
+def ico(
+    name: str,
+    location: tuple[float, float, float],
+    scale: tuple[float, float, float],
+    material: bpy.types.Material,
+    parent: bpy.types.Object,
+    collection: bpy.types.Collection,
+    rotation: tuple[float, float, float] = (0, 0, 0),
+) -> bpy.types.Object:
+    bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=2, radius=1, location=location, rotation=rotation)
+    obj = bpy.context.object
+    obj.name = name
+    obj.scale = scale
+    bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
+    obj.data.materials.append(material)
+    obj.parent = parent
+    relink(obj, collection)
+    return obj
+
+
+def panel_prism(
+    name: str,
+    points_xz: tuple[tuple[float, float], ...],
+    y_front: float,
+    y_back: float,
+    material: bpy.types.Material,
+    parent: bpy.types.Object,
+    collection: bpy.types.Collection,
+    bevel: float = 0.05,
+) -> bpy.types.Object:
+    """Create a bevelled armor plate from a front-view polygon with real depth."""
+    count = len(points_xz)
+    vertices = [(x, y_front, z) for x, z in points_xz] + [(x, y_back, z) for x, z in points_xz]
+    faces = [tuple(range(count)), tuple(range(count, count * 2))]
+    for index in range(count):
+        nxt = (index + 1) % count
+        faces.append((index, nxt, count + nxt, count + index))
+    mesh = bpy.data.meshes.new(f"{name}_MESH")
+    mesh.from_pydata(vertices, [], faces)
+    mesh.update()
+    obj = bpy.data.objects.new(name, mesh)
+    obj.data.materials.append(material)
+    obj.parent = parent
+    collection.objects.link(obj)
+    modifier = obj.modifiers.new("ARMOR_EDGE_CHAMFER", "BEVEL")
+    modifier.width = bevel
+    modifier.segments = 1
+    modifier.affect = "EDGES"
+    return obj
+
+
+def torus(
+    name: str,
+    major_radius: float,
+    minor_radius: float,
+    location: tuple[float, float, float],
+    material: bpy.types.Material,
+    parent: bpy.types.Object,
+    collection: bpy.types.Collection,
+    rotation: tuple[float, float, float] = (math.pi / 2, 0, 0),
+) -> bpy.types.Object:
+    bpy.ops.mesh.primitive_torus_add(
+        align="WORLD",
+        major_segments=24,
+        minor_segments=8,
+        location=location,
+        rotation=rotation,
+        major_radius=major_radius,
+        minor_radius=minor_radius,
+    )
+    obj = bpy.context.object
+    obj.name = name
+    obj.data.materials.append(material)
+    obj.parent = parent
+    relink(obj, collection)
+    return obj
+
+
+def segmented_fist(
+    name: str,
+    location: tuple[float, float, float],
+    material: bpy.types.Material,
+    parent: bpy.types.Object,
+    collection: bpy.types.Collection,
+) -> None:
+    x, y, z = location
+    bevelled_cube(f"{name}_palm", (0.62, 0.52, 0.44), (x, y, z), material, parent, collection, bevel=0.08)
+    for index, offset in enumerate((-0.23, -0.075, 0.075, 0.23)):
+        bevelled_cube(
+            f"{name}_finger_{index}",
+            (0.13, 0.5, 0.18),
+            (x + offset, y - 0.06, z - 0.24),
+            material,
+            parent,
+            collection,
+            rotation=(0.08, 0, 0),
+            bevel=0.035,
+        )
+
+
+def beam(
+    name: str,
+    start: tuple[float, float, float],
+    end: tuple[float, float, float],
+    width: float,
+    depth: float,
+    material: bpy.types.Material,
+    parent: bpy.types.Object,
+    collection: bpy.types.Collection,
+    bevel: float = 0.06,
+) -> bpy.types.Object:
+    start_v = Vector(start)
+    end_v = Vector(end)
+    direction = end_v - start_v
+    midpoint = (start_v + end_v) / 2
+    obj = bevelled_cube(name, (width, depth, direction.length), midpoint, material, parent, collection, bevel=bevel)
+    obj.rotation_mode = "QUATERNION"
+    obj.rotation_quaternion = Vector((0, 0, 1)).rotation_difference(direction.normalized())
+    return obj
+
+
+def tapered_strut(
+    name: str,
+    start: tuple[float, float, float],
+    end: tuple[float, float, float],
+    radius_start: float,
+    radius_end: float,
+    material: bpy.types.Material,
+    parent: bpy.types.Object,
+    collection: bpy.types.Collection,
+    vertices: int = 7,
+) -> bpy.types.Object:
+    """Faceted non-industrial load strut aligned to two rig points."""
+    start_v = Vector(start)
+    end_v = Vector(end)
+    direction = end_v - start_v
+    midpoint = (start_v + end_v) / 2
+    bpy.ops.mesh.primitive_cone_add(
+        vertices=vertices,
+        radius1=radius_end,
+        radius2=radius_start,
+        depth=direction.length,
+        location=midpoint,
+    )
+    obj = bpy.context.object
+    obj.name = name
+    obj.rotation_mode = "QUATERNION"
+    obj.rotation_quaternion = Vector((0, 0, 1)).rotation_difference(direction.normalized())
+    obj.data.materials.append(material)
+    obj.parent = parent
+    relink(obj, collection)
+    bevel = obj.modifiers.new("ORGANIC_EDGE_BREAK", "BEVEL")
+    bevel.width = 0.035
+    bevel.segments = 1
+    return obj
+
+
+def add_keypoint(name: str, location: tuple[float, float, float], root: bpy.types.Object, collection: bpy.types.Collection) -> None:
+    empty = bpy.data.objects.new(f"KP_{name}", None)
+    empty.location = location
+    empty.empty_display_type = "SPHERE"
+    empty.empty_display_size = 0.08
+    empty.hide_render = True
+    empty.parent = root
+    collection.objects.link(empty)
+
+
+def build_guardian(materials: dict[str, bpy.types.Material]) -> tuple[bpy.types.Collection, bpy.types.Object]:
+    collection = new_collection("RIG_GUARDIAN_Z_V10X")
+    root = bpy.data.objects.new("GUARDIAN_Z_V10X_RIG_ROOT", None)
+    root["stable_id"] = "CAND_C01E02_A91A3_GUARDIAN_Z_V10X_BLENDER_RIG_V1"
+    root["identity"] = "V10X E02 naked body; paired intact forearms; no wing/backpack"
+    collection.objects.link(root)
+    groups = {name: component_empty(name, collection, root) for name in (
+        "HEAD", "CROWN", "CHEST", "SHOULDER_L", "SHOULDER_R", "UPPER_ARM_L", "UPPER_ARM_R",
+        "FOREARM_L", "FOREARM_R", "PELVIS", "THIGH_L", "THIGH_R", "SHIN_L", "SHIN_R",
+        "FOOT_L", "FOOT_R", "BACK_SYSTEM",
+    )}
+
+    for sign, suffix in ((-1, "L"), (1, "R")):
+        x = sign * 0.78
+        bevelled_cube(f"foot_{suffix}", (1.18, 1.56, 0.52), (x, 0.08, 0.34), materials["navy1"], groups[f"FOOT_{suffix}"], collection, bevel=0.12)
+        bevelled_cube(f"toe_cap_{suffix}", (0.4, 0.62, 0.25), (x, -0.74, 0.46), materials["silver1"], groups[f"FOOT_{suffix}"], collection, bevel=0.06)
+        bevelled_cube(f"heel_{suffix}", (0.78, 0.46, 0.38), (x, 0.76, 0.38), materials["navy0"], groups[f"FOOT_{suffix}"], collection, bevel=0.08)
+        bevelled_cube(f"shin_{suffix}", (0.94, 1.0, 1.62), (x, 0, 1.48), materials["navy1"], groups[f"SHIN_{suffix}"], collection, (0, 0, -0.025 * sign), 0.12)
+        bevelled_cube(f"shin_face_{suffix}", (0.58, 0.16, 1.1), (x, -0.58, 1.48), materials["navy2"], groups[f"SHIN_{suffix}"], collection, bevel=0.07)
+        bevelled_cube(f"shin_gold_key_{suffix}", (0.1, 0.18, 0.54), (x + sign * 0.34, -0.62, 1.44), materials["gold1"], groups[f"SHIN_{suffix}"], collection, bevel=0.025)
+        ico(f"knee_{suffix}", (x, -0.18, 2.3), (0.5, 0.44, 0.36), materials["navy0"], groups[f"SHIN_{suffix}"], collection, (0, 0, 0.1 * sign))
+        bevelled_cube(f"thigh_{suffix}", (0.78, 0.82, 1.04), (x, 0, 3.0), materials["silver1"], groups[f"THIGH_{suffix}"], collection, (0, 0, -0.035 * sign), 0.1)
+        cylinder(f"hip_joint_{suffix}", 0.31, 0.42, (sign * 0.96, -0.05, 3.45), materials["gold0"], groups["PELVIS"], collection, (0, math.pi / 2, 0))
+        bevelled_cube(f"hip_skirt_{suffix}", (1.04, 0.98, 0.76), (sign * 0.72, -0.02, 3.66), materials["navy1"], groups["PELVIS"], collection, (0, 0, -0.14 * sign), 0.12)
+
+    bevelled_cube("pelvis_core", (1.16, 1.08, 0.76), (0, 0, 3.56), materials["navy0"], groups["PELVIS"], collection, bevel=0.12)
+    bevelled_cube("pelvis_lamp", (0.34, 0.18, 0.48), (0, -0.64, 3.58), materials["gold1"], groups["PELVIS"], collection, bevel=0.04)
+    bevelled_cube("torso_core", (3.28, 2.22, 2.08), (0, 0.02, 5.04), materials["navy0"], groups["CHEST"], collection, bevel=0.2)
+    ico("torso_upper_volume", (0, -0.08, 5.48), (1.72, 1.18, 0.86), materials["navy1"], groups["CHEST"], collection, (0.08, 0, 0))
+    bevelled_cube("torso_front_keel", (0.92, 0.38, 2.18), (0, -1.24, 5.05), materials["silver0"], groups["CHEST"], collection, bevel=0.09)
+    bevelled_cube("archive_spine", (0.66, 0.58, 2.44), (0, -1.05, 5.13), materials["silver1"], groups["CHEST"], collection, bevel=0.08)
+    for sign, suffix in ((-1, "L"), (1, "R")):
+        chest_points = tuple((sign * x, z) for x, z in (
+            (0.16, 5.48), (1.52, 6.12), (1.82, 5.74), (1.42, 4.78), (1.08, 4.28), (0.24, 4.74),
+        ))
+        panel_prism(
+            f"x_chest_primary_{suffix}", chest_points, -1.28, -0.78,
+            materials["red1"], groups["CHEST"], collection, 0.075,
+        )
+        lower_points = tuple((sign * x, z) for x, z in (
+            (0.18, 5.05), (1.36, 4.76), (1.08, 4.28), (0.42, 4.62),
+        ))
+        panel_prism(
+            f"x_chest_lower_{suffix}", lower_points, -1.34, -1.05,
+            materials["red0"], groups["CHEST"], collection, 0.055,
+        )
+        bevelled_cube(
+            f"chest_gold_catch_{suffix}", (0.24, 0.16, 0.28),
+            (sign * 1.2, -1.48, 5.72), materials["gold1"], groups["CHEST"], collection,
+            rotation=(0, 0, 0.12 * sign), bevel=0.035,
+        )
+    cylinder("chest_core_outer", 0.37, 0.32, (0, -1.36, 5.28), materials["gold1"], groups["CHEST"], collection)
+    cylinder("chest_core_inner", 0.21, 0.35, (0, -1.39, 5.28), materials["white"], groups["CHEST"], collection)
+    bevelled_cube("archive_lower_lamp", (0.32, 0.2, 0.5), (0, -1.31, 4.28), materials["gold1"], groups["CHEST"], collection, bevel=0.04)
+
+    for sign, suffix in ((-1, "L"), (1, "R")):
+        shoulder = groups[f"SHOULDER_{suffix}"]
+        upper = groups[f"UPPER_ARM_{suffix}"]
+        fore = groups[f"FOREARM_{suffix}"]
+        torus(f"shoulder_lock_ring_{suffix}", 0.84, 0.24, (sign * 2.08, 0.14, 5.62), materials["navy0"], shoulder, collection)
+        ico(f"shoulder_outer_shell_{suffix}", (sign * 2.23, 0.13, 5.78), (0.98, 0.82, 1.10), materials["navy1"], shoulder, collection, (0.02, 0.04 * sign, -0.1 * sign))
+        torus(f"shoulder_gold_inlay_{suffix}", 0.62, 0.075, (sign * 2.24, -0.63, 5.78), materials["gold0"], shoulder, collection)
+        shoulder_points = tuple((sign * x, z) for x, z in (
+            (1.38, 6.24), (2.16, 6.4), (2.76, 6.0), (2.64, 5.62), (1.72, 5.72),
+        ))
+        panel_prism(
+            f"shoulder_crown_{suffix}", shoulder_points, -0.46, 0.52,
+            materials["navy2"], shoulder, collection, 0.07,
+        )
+        lock_points = tuple((sign * x, z) for x, z in (
+            (1.1, 5.98), (2.02, 6.18), (2.36, 5.78), (1.54, 5.5),
+        ))
+        panel_prism(
+            f"shoulder_front_lock_{suffix}", lock_points, -0.96, -0.46,
+            materials["red1"], shoulder, collection, 0.07,
+        )
+        bevelled_cube(f"shoulder_gold_catch_{suffix}", (0.26, 0.12, 0.24), (sign * 1.24, -1.05, 5.88), materials["gold1"], shoulder, collection, bevel=0.035)
+        cylinder(f"shoulder_joint_{suffix}", 0.5, 0.7, (sign * 2.02, 0, 5.55), materials["black"], upper, collection, (0, math.pi / 2, 0), 16)
+        bevelled_cube(f"upper_arm_{suffix}", (0.66, 0.8, 0.94), (sign * 2.08, 0, 4.86), materials["navy0"], upper, collection, (0, 0, 0.05 * sign), 0.09)
+        cylinder(f"elbow_{suffix}", 0.37, 0.58, (sign * 2.08, 0, 4.25), materials["black"], upper, collection, (0, math.pi / 2, 0))
+        cylinder(f"forearm_{suffix}", 0.72, 1.72, (sign * 2.08, 0, 3.35), materials["navy1"], fore, collection, (0, 0, 0), 14)
+        cylinder(f"forearm_ring_{suffix}", 0.78, 0.25, (sign * 2.08, 0, 4.12), materials["silver1"], fore, collection, (0, 0, 0), 16)
+        cylinder(f"wrist_ring_{suffix}", 0.75, 0.23, (sign * 2.08, 0, 2.58), materials["silver1"], fore, collection, (0, 0, 0), 16)
+        bevelled_cube(f"forearm_face_{suffix}", (0.76, 0.18, 1.18), (sign * 2.08, -0.72, 3.34), materials["navy2"], fore, collection, bevel=0.06)
+        for rib_index, z in enumerate((2.88, 3.34, 3.80)):
+            torus(f"forearm_rib_{suffix}_{rib_index}", 0.69, 0.035, (sign * 2.08, 0, z), materials["gold0"], fore, collection, (0, 0, 0))
+        bevelled_cube(f"forearm_red_key_{suffix}", (0.22, 0.34, 0.78), (sign * 2.61, -0.34, 3.32), materials["red1"], fore, collection, bevel=0.04)
+        segmented_fist(f"fist_{suffix}", (sign * 2.08, -0.03, 2.08), materials["black"], fore, collection)
+
+    bevelled_cube("neck", (0.8, 0.72, 0.38), (0, 0, 6.34), materials["black"], groups["HEAD"], collection, bevel=0.07)
+    ico("helmet_volume", (0, 0.08, 7.08), (0.92, 0.98, 0.88), materials["navy1"], groups["HEAD"], collection, (0.02, 0, 0))
+    bevelled_cube("helmet_cheek_L", (0.44, 1.2, 0.94), (-0.74, -0.02, 6.9), materials["navy0"], groups["HEAD"], collection, (0, 0.08, -0.1), 0.08)
+    bevelled_cube("helmet_cheek_R", (0.44, 1.2, 0.94), (0.74, -0.02, 6.9), materials["navy0"], groups["HEAD"], collection, (0, -0.08, 0.1), 0.08)
+    panel_prism(
+        "face_grille", ((-0.58, 6.98), (0.58, 6.98), (0.46, 6.38), (0, 6.20), (-0.46, 6.38)),
+        -1.16, -0.82, materials["silver1"], groups["HEAD"], collection, 0.065,
+    )
+    panel_prism(
+        "blue_brow_helm", ((-0.72, 7.28), (0.72, 7.28), (0.5, 7.02), (0, 6.92), (-0.5, 7.02)),
+        -1.13, -0.76, materials["navy2"], groups["HEAD"], collection, 0.055,
+    )
+    for index, x in enumerate((-0.34, -0.17, 0, 0.17, 0.34)):
+        bevelled_cube(f"grille_{index}", (0.07, 0.12, 0.44), (x, -1.12, 6.66), materials["black"], groups["HEAD"], collection, bevel=0.018)
+    panel_prism("eye_L", ((-0.58, 7.17), (-0.08, 7.12), (-0.18, 7.00), (-0.52, 7.04)), -1.25, -1.14, materials["gold1"], groups["HEAD"], collection, 0.018)
+    panel_prism("eye_R", ((0.58, 7.17), (0.08, 7.12), (0.18, 7.00), (0.52, 7.04)), -1.25, -1.14, materials["gold1"], groups["HEAD"], collection, 0.018)
+    cylinder("ear_L", 0.36, 0.28, (-0.94, 0, 6.98), materials["black"], groups["HEAD"], collection, (0, math.pi / 2, 0), 14)
+    cylinder("ear_R", 0.36, 0.28, (0.94, 0, 6.98), materials["black"], groups["HEAD"], collection, (0, math.pi / 2, 0), 14)
+    ico("rear_helmet_crown", (0, 0.66, 7.38), (0.74, 0.52, 0.7), materials["navy1"], groups["HEAD"], collection)
+    ico("rear_flare_L", (-0.66, 0.64, 6.92), (0.45, 0.48, 0.48), materials["navy1"], groups["HEAD"], collection)
+    ico("rear_flare_R", (0.66, 0.64, 6.92), (0.45, 0.48, 0.48), materials["navy1"], groups["HEAD"], collection)
+    bevelled_cube("central_crest_frame", (0.64, 0.82, 1.64), (0, -0.02, 7.68), materials["navy0"], groups["CROWN"], collection, bevel=0.08)
+    bevelled_cube("central_red_crest", (0.34, 0.88, 1.42), (0, -0.2, 7.7), materials["red1"], groups["CROWN"], collection, bevel=0.05)
+    bevelled_cube("rear_red_crest", (0.3, 0.28, 1.18), (0, 0.68, 7.56), materials["red0"], groups["CROWN"], collection, bevel=0.04)
+    beam("gold_horn_L", (-0.12, -1.04, 7.34), (-1.46, -0.9, 7.66), 0.23, 0.22, materials["gold1"], groups["CROWN"], collection, 0.04)
+    beam("gold_horn_R", (0.12, -1.04, 7.34), (1.46, -0.9, 7.66), 0.23, 0.22, materials["gold1"], groups["CROWN"], collection, 0.04)
+    beam("mid_horn_L", (-0.34, -0.34, 7.46), (-1.02, -0.18, 7.88), 0.16, 0.18, materials["gold0"], groups["CROWN"], collection, 0.035)
+    beam("mid_horn_R", (0.34, -0.34, 7.46), (1.02, -0.18, 7.88), 0.16, 0.18, materials["gold0"], groups["CROWN"], collection, 0.035)
+    beam("aux_antenna_L", (-0.52, 0.32, 7.5), (-0.78, 0.46, 8.08), 0.14, 0.14, materials["gold1"], groups["CROWN"], collection, 0.03)
+    beam("aux_antenna_R", (0.52, 0.32, 7.5), (0.78, 0.46, 8.08), 0.14, 0.14, materials["gold1"], groups["CROWN"], collection, 0.03)
+
+    bevelled_cube("rear_spine", (0.78, 0.68, 1.78), (0, 1.02, 5.42), materials["navy0"], groups["BACK_SYSTEM"], collection, bevel=0.1)
+    ico("scapula_L", (-0.94, 0.94, 5.5), (0.9, 0.62, 0.72), materials["navy1"], groups["BACK_SYSTEM"], collection, (0.04, 0.04, -0.16))
+    ico("scapula_R", (0.94, 0.94, 5.5), (0.9, 0.62, 0.72), materials["navy1"], groups["BACK_SYSTEM"], collection, (0.04, -0.04, 0.16))
+    bevelled_cube("recessed_rear_service_plate", (0.72, 0.18, 0.88), (0, 1.23, 5.46), materials["black"], groups["BACK_SYSTEM"], collection, bevel=0.08)
+    bevelled_cube("recessed_rear_service_key", (0.28, 0.12, 0.48), (0, 1.34, 5.46), materials["gold0"], groups["BACK_SYSTEM"], collection, bevel=0.04)
+    cylinder("integral_vernier_L", 0.23, 0.28, (-1.0, 1.35, 4.84), materials["gold1"], groups["BACK_SYSTEM"], collection)
+    cylinder("integral_vernier_R", 0.23, 0.28, (1.0, 1.35, 4.84), materials["gold1"], groups["BACK_SYSTEM"], collection)
+
+    for name, point in {
+        "crown_tip": (0, 0, 8.08), "head_center": (0, 0, 7.06), "neck": (0, 0, 6.34),
+        "shoulder_l": (-2.08, 0, 5.8), "shoulder_r": (2.08, 0, 5.8), "chest_core": (0, -1.4, 5.28),
+        "elbow_l": (-2.08, 0, 4.25), "elbow_r": (2.08, 0, 4.25), "wrist_l": (-2.08, 0, 2.58),
+        "wrist_r": (2.08, 0, 2.58), "hip_l": (-0.78, 0, 3.45), "hip_r": (0.78, 0, 3.45),
+        "knee_l": (-0.78, 0, 2.3), "knee_r": (0.78, 0, 2.3), "foot_l": (-0.78, 0, 0.08),
+        "foot_r": (0.78, 0, 0.08), "rear_mount": (0, 1.46, 5.55),
+    }.items():
+        add_keypoint(name, point, root, collection)
+    return collection, root
+
+
+def build_breaker(materials: dict[str, bpy.types.Material]) -> tuple[bpy.types.Collection, bpy.types.Object]:
+    collection = new_collection("RIG_BREAKER_BX")
+    root = bpy.data.objects.new("BREAKER_BX_RIG_ROOT", None)
+    root["stable_id"] = "CAND_C01E02_A91A3_BREAKER_BX_BLENDER_RIG_V1"
+    root["identity"] = "B semi-upright forelimb bearer + X alien bio-armor; E02 sealed"
+    collection.objects.link(root)
+    groups = {name: component_empty(name, collection, root) for name in (
+        "BX_BODY", "BX_HEAD", "BX_PLATE_A", "BX_PLATE_B", "BX_SEAMS", "BX_FORE_L", "BX_FORE_R",
+        "BX_REAR_L", "BX_REAR_R", "BX_EXIT",
+    )}
+    ico("raised_shell_core", (0, 0.35, 4.5), (3.02, 2.36, 1.48), materials["bx_deep"], groups["BX_BODY"], collection, (0.08, 0.05, 0.02))
+    ico("sealed_keel", (0, -0.12, 3.6), (1.82, 1.76, 0.72), materials["bx_black"], groups["BX_BODY"], collection, (0.04, 0, 0))
+    panel_prism(
+        "ventral_suspensor",
+        ((-0.78, 3.7), (0.72, 3.66), (0.48, 2.25), (-0.42, 2.2)),
+        -0.5, 0.72, materials["bx_black"], groups["BX_BODY"], collection, 0.1,
+    )
+    ico("forward_breach_mass", (0, -2.18, 3.56), (1.48, 0.92, 0.58), materials["bx_mid"], groups["BX_BODY"], collection, (-0.16, 0, 0))
+    panel_prism(
+        "closed_chest_L", ((-1.22, 3.48), (-0.12, 3.52), (-0.1, 2.58), (-0.92, 2.4)),
+        -2.54, -1.84, materials["bx_mid"], groups["BX_BODY"], collection, 0.11,
+    )
+    panel_prism(
+        "closed_chest_R", ((0.12, 3.52), (1.22, 3.48), (0.92, 2.4), (0.1, 2.58)),
+        -2.54, -1.84, materials["bx_light"], groups["BX_BODY"], collection, 0.11,
+    )
+    bevelled_cube("closed_chest_seam", (0.1, 0.16, 0.92), (0, -2.64, 3.0), materials["bx_ink"], groups["BX_SEAMS"], collection, (-0.06, 0, 0), 0.02)
+
+    plates = (
+        ("dorsal_A1", (-0.86, -0.92, 5.48), (2.34, 1.16, 0.32), "bx_mid", (0.11, 0.12, -0.13), "BX_PLATE_A"),
+        ("dorsal_A2", (0.82, -0.02, 5.78), (1.92, 1.22, 0.38), "bx_light", (-0.03, -0.16, 0.18), "BX_PLATE_A"),
+        ("left_overplate", (-1.94, -0.12, 5.0), (0.92, 1.5, 0.38), "bx_mid", (0.14, 0.22, -0.28), "BX_PLATE_A"),
+        ("left_underplate", (-2.32, 0.54, 4.42), (0.62, 1.34, 0.34), "bx_deep", (-0.06, 0.18, -0.18), "BX_PLATE_A"),
+        ("dorsal_B1", (-0.72, 1.42, 5.42), (1.96, 1.12, 0.34), "bx_deep", (0.15, 0.14, -0.08), "BX_PLATE_B"),
+        ("right_overplate", (1.9, 0.26, 4.94), (0.82, 1.5, 0.38), "bx_light", (-0.12, -0.24, 0.24), "BX_PLATE_B"),
+        ("right_underplate", (2.24, 1.02, 4.32), (0.56, 1.08, 0.3), "bx_mid", (0.08, -0.18, 0.16), "BX_PLATE_B"),
+        ("rear_counterplate", (0.36, 2.14, 5.08), (1.52, 0.76, 0.28), "bx_mid", (0.18, -0.04, 0.1), "BX_PLATE_B"),
+    )
+    for name, loc, scale, material, rotation, group in plates:
+        ico(name, loc, scale, materials[material], groups[group], collection, rotation)
+    beam("flexure_A", (-1.46, -1.12, 5.54), (-0.16, 0.18, 5.76), 0.1, 0.14, materials["bx_ink"], groups["BX_SEAMS"], collection, 0.02)
+    beam("flexure_B", (0.42, 0.16, 5.74), (1.52, 1.24, 5.32), 0.12, 0.14, materials["bx_black"], groups["BX_SEAMS"], collection, 0.02)
+    ico("left_flex_membrane", (-1.92, -0.46, 4.12), (0.46, 1.02, 0.74), materials["bx_black"], groups["BX_SEAMS"], collection, (0.14, 0.18, -0.28))
+    ico("right_flex_membrane", (1.84, 0.0, 4.0), (0.4, 0.94, 0.68), materials["bx_deep"], groups["BX_SEAMS"], collection, (0.1, -0.16, 0.24))
+    panel_prism(
+        "sensor_wedge", ((-1.06, 3.78), (1.0, 3.74), (0.82, 3.26), (-0.92, 3.22)),
+        -3.42, -2.38, materials["bx_deep"], groups["BX_HEAD"], collection, 0.09,
+    )
+    bevelled_cube("single_red_slit", (0.74, 0.14, 0.085), (-0.06, -3.53, 3.53), materials["bx_red1"], groups["BX_HEAD"], collection, (0, 0, -0.035), 0.018)
+
+    for sign, suffix in ((-1, "L"), (1, "R")):
+        group = groups[f"BX_FORE_{suffix}"]
+        shoulder = (sign * (1.86 if sign < 0 else 1.72), -1.06 if sign < 0 else -0.88, 4.18 if sign < 0 else 4.02)
+        hinge = (sign * (2.22 if sign < 0 else 2.08), -1.72 if sign < 0 else -1.48, 2.28 if sign < 0 else 2.12)
+        contact = (sign * (2.34 if sign < 0 else 2.18), -2.48 if sign < 0 else -2.18, 0.42)
+        ico(f"load_joint_{suffix}", shoulder, (0.72, 0.78, 0.74), materials["bx_bone" if sign < 0 else "bx_mid"], group, collection, (0.22, 0.14 * sign, 0.2 * sign))
+        tapered_strut(f"fore_upper_{suffix}", shoulder, hinge, 0.74 if sign < 0 else 0.66, 0.52, materials["bx_mid" if sign < 0 else "bx_deep"], group, collection, 7 if sign < 0 else 6)
+        ico(f"fore_plate_{suffix}", ((shoulder[0] + hinge[0]) / 2, (shoulder[1] + hinge[1]) / 2 - 0.08, (shoulder[2] + hinge[2]) / 2), (0.62 if sign < 0 else 0.5, 0.54, 1.02), materials["bx_light" if sign < 0 else "bx_deep"], group, collection, (0.2, 0.12 * sign, 0.18 * sign))
+        ico(f"fore_hinge_{suffix}", hinge, (0.62, 0.6, 0.52), materials["bx_bone" if sign < 0 else "bx_mid"], group, collection, (0.24, -0.12 * sign, 0.22))
+        tapered_strut(f"fore_lower_{suffix}", hinge, contact, 0.52, 0.68 if sign < 0 else 0.58, materials["bx_deep"], group, collection, 6 if sign < 0 else 7)
+        ico(f"load_pad_{suffix}", (contact[0], contact[1] - 0.22, 0.22), (0.72 if sign < 0 else 0.62, 0.74, 0.2), materials["bx_mid" if sign < 0 else "bx_deep"], group, collection, (0.08, 0.08 * sign, 0.16 * sign))
+        beam(f"pad_flexure_{suffix}", (contact[0] - sign * 0.42, contact[1] - 0.34, 0.22), (contact[0] + sign * 0.38, contact[1] - 0.48, 0.16), 0.18, 0.34, materials["bx_black"], group, collection, 0.04)
+
+        rear = groups[f"BX_REAR_{suffix}"]
+        rear_root = (sign * (1.18 if sign < 0 else 1.02), 1.28 if sign < 0 else 1.48, 1.08)
+        rear_contact = (sign * (1.26 if sign < 0 else 1.08), 1.62 if sign < 0 else 1.86, 0.3)
+        ico(f"rear_root_{suffix}", rear_root, (0.3, 0.36, 0.26), materials["bx_bone" if sign < 0 else "bx_mid"], rear, collection, (0.12, 0.08 * sign, 0.1))
+        tapered_strut(f"rear_buttress_{suffix}", rear_root, rear_contact, 0.32, 0.4, materials["bx_deep"], rear, collection, 6)
+        ico(f"rear_pad_{suffix}", (rear_contact[0], rear_contact[1] + 0.08, 0.16), (0.5, 0.5, 0.16), materials["bx_mid" if sign < 0 else "bx_deep"], rear, collection, (0.04, 0.06 * sign, 0.08))
+
+    ico("sealed_exit", (0.18, 2.34, 4.4), (0.62, 0.26, 0.42), materials["bx_deep"], groups["BX_EXIT"], collection, (0.1, 0.06, 0.04))
+    ico("sealed_exit_cap", (0.18, 2.56, 4.4), (0.38, 0.12, 0.22), materials["bx_ink"], groups["BX_EXIT"], collection, (0.1, 0.06, 0.04))
+    for name, point in {
+        "dorsal_peak": (0, 0.2, 6.02), "red_slit": (-0.06, -3.53, 3.53), "chest_seam": (0, -2.66, 3.0),
+        "fore_shoulder_l": (-1.86, -1.06, 4.18), "fore_shoulder_r": (1.72, -0.88, 4.02),
+        "fore_hinge_l": (-2.22, -1.72, 2.28), "fore_hinge_r": (2.08, -1.48, 2.12),
+        "fore_contact_l": (-2.34, -2.48, 0.08), "fore_contact_r": (2.18, -2.18, 0.08),
+        "rear_contact_l": (-1.26, 1.7, 0.05), "rear_contact_r": (1.08, 1.94, 0.05), "sealed_exit": (0.18, 2.56, 4.4),
+    }.items():
+        add_keypoint(name, point, root, collection)
+    return collection, root
+
+
+def setup_scene() -> tuple[bpy.types.Object, bpy.types.Object]:
+    scene = bpy.context.scene
+    scene.render.engine = "BLENDER_EEVEE_NEXT"
+    scene.render.resolution_x = 1024
+    scene.render.resolution_y = 1024
+    scene.render.resolution_percentage = 100
+    scene.render.image_settings.file_format = "PNG"
+    scene.render.image_settings.color_mode = "RGBA"
+    scene.render.film_transparent = True
+    scene.render.image_settings.color_depth = "8"
+    scene.render.use_file_extension = True
+    scene.render.use_freestyle = True
+    scene.render.line_thickness = 2.15
+    scene.view_settings.view_transform = "Standard"
+    scene.view_settings.look = "None"
+    scene.render.film_transparent = True
+    scene.world.color = (0.02, 0.03, 0.04)
+
+    view_layer = bpy.context.view_layer
+    line_style = view_layer.freestyle_settings.linesets[0].linestyle
+    line_style.color = color(COLORS["ink"])[:3]
+    line_style.thickness = 2.25
+
+    bpy.ops.object.light_add(type="AREA", location=(-7, -10, 13))
+    key = bpy.context.object
+    key.name = "KEY_LIGHT"
+    key.data.energy = 1350
+    key.data.shape = "DISK"
+    key.data.size = 7
+    key.data.color = (1.0, 0.93, 0.82)
+    bpy.ops.object.light_add(type="AREA", location=(8, -4, 7))
+    fill = bpy.context.object
+    fill.name = "FILL_LIGHT"
+    fill.data.energy = 380
+    fill.data.size = 6
+    fill.data.color = (0.42, 0.72, 0.86)
+    bpy.ops.object.light_add(type="AREA", location=(0, 9, 10))
+    rim = bpy.context.object
+    rim.name = "RIM_LIGHT"
+    rim.data.energy = 720
+    rim.data.size = 5
+    rim.data.color = (0.9, 0.42, 0.25)
+
+    bpy.ops.object.camera_add(location=(0, -20, 4.1))
+    camera = bpy.context.object
+    camera.name = "ORTHO_MASTER_CAMERA"
+    camera.data.type = "ORTHO"
+    camera.data.ortho_scale = 9.8
+    scene.camera = camera
+    target = bpy.data.objects.new("CAMERA_TARGET", None)
+    target.location = (0, 0, 4.05)
+    scene.collection.objects.link(target)
+    return camera, target
+
+
+def aim(camera: bpy.types.Object, target: tuple[float, float, float]) -> None:
+    direction = Vector(target) - camera.location
+    camera.rotation_euler = direction.to_track_quat("-Z", "Y").to_euler()
+
+
+def set_collection_visibility(collections: tuple[bpy.types.Collection, ...], visible: bpy.types.Collection) -> None:
+    for collection in collections:
+        collection.hide_render = collection != visible
+        collection.hide_viewport = collection != visible
+
+
+def export_keypoints(root: bpy.types.Object, camera: bpy.types.Object, path: Path) -> None:
+    scene = bpy.context.scene
+    data = {}
+    for obj in root.children_recursive:
+        if not obj.name.startswith("KP_"):
+            continue
+        coord = bpy_extras.object_utils.world_to_camera_view(scene, camera, obj.matrix_world.translation)
+        data[obj.name[3:]] = {"x": round(coord.x * 1024, 3), "y": round((1 - coord.y) * 1024, 3), "depth": round(coord.z, 6)}
+    path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def render_view(
+    collection: bpy.types.Collection,
+    all_collections: tuple[bpy.types.Collection, ...],
+    root: bpy.types.Object,
+    camera: bpy.types.Object,
+    camera_location: tuple[float, float, float],
+    target: tuple[float, float, float],
+    ortho_scale: float,
+    filename: str,
+) -> None:
+    set_collection_visibility(all_collections, collection)
+    camera.location = camera_location
+    camera.data.ortho_scale = ortho_scale
+    aim(camera, target)
+    bpy.context.scene.render.filepath = str(OUT / filename)
+    bpy.ops.render.render(write_still=True)
+    export_keypoints(root, camera, OUT / filename.replace(".png", "_keypoints.json"))
+
+
+def main() -> None:
+    reset_scene()
+    materials = {name: cel_material(f"MAT_{name.upper()}", value) for name, value in COLORS.items()}
+    gz_collection, gz_root = build_guardian(materials)
+    bx_collection, bx_root = build_breaker(materials)
+    camera, _ = setup_scene()
+    collections = (gz_collection, bx_collection)
+    render_view(gz_collection, collections, gz_root, camera, (0, -20, 4.0), (0, 0, 4.0), 9.8, "GATE_GUARDIAN_Z_BLENDER_FRONT_RGBA_1024.png")
+    render_view(gz_collection, collections, gz_root, camera, (-20, 0, 4.0), (0, 0, 4.0), 9.8, "GATE_GUARDIAN_Z_BLENDER_STRICT_LEFT_RGBA_1024.png")
+    render_view(bx_collection, collections, bx_root, camera, (10.5, -15.5, 5.25), (0, -0.1, 3.0), 9.4, "GATE_BREAKER_BX_BLENDER_PLANNING_RGBA_1024.png")
+    bpy.ops.wm.save_as_mainfile(filepath=str(HERE / "work/blender/A91A3_RIGBOUND_MASTERS_GATE.blend"))
+    print("A9.1-A3 Blender internal gate: PASS")
+
+
+if __name__ == "__main__":
+    import bpy_extras.object_utils
+
+    main()

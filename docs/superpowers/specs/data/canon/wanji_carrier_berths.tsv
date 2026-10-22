@@ -1,0 +1,9 @@
+berth_id	canonical_name	parent_location_id	capacity_type	size_range	can_host	cannot_host	c01_state	story_unlock	gameplay_use	art_scale_anchor	notes
+WCB_L1_PUBLIC_EXHIBIT_DECK	L1展陈心脏	WL_L1_MAIN_HALL	public_display	0.1-30m展示态	降功率展品;模型;驾驶舱;半跪馆守Z;战后展陈	大批实战机体常驻;战舰级单位;高机动出击	open_c01	C01闭馆探索	开馆经营;调查;保护战目标	主展厅70x45m;净高24m;中央馆守Z;展岛环线	L1负责让玩家喜欢万机馆，不负责解释所有机体如何出击。
+WCB_B1_HANGAR_SPINE	B1展舰机库脊柱	WL_B1_HANGAR	internal_hangar	5-12m常驻;18-25m维修态	中型机体;维修车;补给货柜;馆守Z半卧维修	战舰级单位;大量30m级机体同时常驻	locked_until_c01e04	C01E04展舰启动	出击准备;整备排程;舰内灾害调度	旧会展物流层;吊轨;折叠泊位;大型货运升降台	B1不是小仓库，而是展舰成为母舰的物理身体。
+WCB_B1_MEDIUM_BERTHS	中型泊位列	WL_B1_MEDIUM_BERTHS	medium_berth	2-12m	现实机器;市政劳务机;支援修复型机体;小型可变机	15m以上巨型机长期常驻;战舰级单位	locked_until_c01e04	C01E04后逐步开放	常驻整备;改装;补给;支援派遣	4-6个折叠泊位;地面锁具;侧向吊轨	商业版可用泊位数量控制队伍规模和制作成本。
+WCB_B1_HEAVY_RACK	重型维修架	WL_B1_HEAVY_SERVICE_RACK	heavy_service	15-25m单机维修;短时双机排队	馆守Z;少数超级系主力;重型部件	多台巨型机同时常驻;战舰级单位	locked_until_c01e04	C01E04看到;C01E04后使用	重型修理;过热冷却;章节状态修复	下沉维修坑;半卧机体固定臂;胸牌/肩部吊篮	馆守Z有归处，但重型架不能变成无限巨型仓库。
+WCB_EXT_LOCK_BERTH	外部锁泊甲板	WL_EXT_LOCK_BERTH	external_berth	15-30m;飞行机;外部随航	大型超级机器人;飞行机;临时随航单位;大型武装包	需要密闭机库的战舰级单位;无法暴露的高风险核心	locked_until_c01e04	C01E04展舰驶离后可见	出击演出;补给;随航维修;大型单位待机	展舰外侧/顶部/尾部伸缩锁臂;磁锁;维修无人车	大型机体可以跟着万机馆走，但不必全塞进馆体。
+WCB_ALLIED_CARRIER_GROUP	外部友舰与任务地会合	WL_EXT_LOCK_BERTH	allied_carrier	50m以上	白舰;舞台战舰;逃亡舰;远征舰;城市级巨构	馆内常驻;L1展陈;B1泊位	locked_until_story_join	C05后按章节会合	母舰支援;地图兵器;撤退路线;舰队调度	远景编队;通讯舰桥;地图边缘支援光标	万机馆是主基地，不是唯一母舰；战舰级单位应保留自身空间感。
+WCB_B2_RESONANCE_WAITING	残响待机槽	WL_B2_RESONANCE_INTERFACE	resonance_storage	无固定物理尺寸	黑匣子;机魂核心;人格残响;临时投射模板	完整实机常驻;无源机魂;未授权危险节点	sealed_c01	后续残响深潜开放	临时投射;支援人格;隐藏机体条件;资料战	信号槽;编号灯;无反光黑玻璃;噪声UI	残响待机解决“有核心无身体”的参战前状态，但必须受载体和关系约束。
+WCB_L3_ARCHIVE_SOFT_DOCK	长档案软泊位	WL_L3_LONG_ARCHIVE	soft_dock	资料/证据/展签尺度	驾驶日志;战斗记录;舰桥数据;旧说明书	实体机体;危险核心	locked_c01	C01E04后逐步开放	资料修复;图鉴;说得条件;改装提示	高架纸档;防火柜;旧终端;资料托盘	有些机体先以资料泊位存在，直到剧情给出身体或会合地点。

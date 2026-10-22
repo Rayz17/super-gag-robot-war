@@ -1,0 +1,13 @@
+case_id	source_symptom	defect_class	minimal_fixture	expected_gate	machine_assertion	human_review_surface	pass_condition
+CWFREG001	C05旧稿“战装局用白鸢画过的路线驱使四副身体离场”	媒介/执行者	纸面分镜存在；四副身体移动；未声明遥控者、编译程序或接受主体	block	场景合同的information_source、compiler、executor、acceptor任一为空即失败	导演/制作	玩家能从画面复述谁看图、谁编译、谁操作、机体是否可拒绝
+CWFREG002	C05旧稿纪存醒来后百相里仍有“纪存”	主体/载体身份	纪存人形主载体、远程会话、复制记录、百相副驾驶电脑四者混称	block	每个subject_id在同一时刻只能有一个primary_carrier；copy/model/new_subject必须另有ID	编剧/Canon	正文能用普通话区分纪存本人、记录副本、在线请求和百相新主体
+CWFREG003	C04旧稿韩秀雅同时出现在主铸井和百相驾驶舱	人物站位	同一scene_time中同一人物出现于两个不可连通地点	block	presence ledger检测时间窗口重叠且无远程载体/替身声明	导演/物理	人物位置、通信方式和操作者不矛盾
+CWFREG004	C05七海假电子签名与实体U盾覆写	授权链	伪造电子签名继续旧授权；本人持实体证书现场撤销	pass	authority chain包含issuer、credential、forgery、override、physical consequence	编剧/制作	普通玩家不学新术语也能解释谁冒签、七海怎样证明和怎样停止
+CWFREG005	白鸢知道未被转述的私人饭局	人物知识泄漏	角色台词引用未亲见、未同频道听见、未被转述的私密事实	block	character_knowledge里缺source_event/source_actor即失败	人物/对白	“得知”有来源，或不知情本身成为误解场面
+CWFREG006	新造“槽/锁/锚/语法”首次出现便决定胜负	术语/理解负荷	新术语未定义、无可见对象、无通俗同义词却触发关键结果	warn_or_block	首用术语若effect=critical且plain_label/visible_object为空则失败	目标玩家/导演	玩家无需读附录即可理解目标、动作和后果
+CWFREG007	“你可以X，但别替我Y”“这笔债以后再算”反复出现	对白模板/同声	不同角色使用同一责任结算腔	warn	扫描模板与角色分布；同章跨角色重复或密度超阈值报警	对白/关系	改写后句子有具体听众、欲望、误判、动作和关系效果
+CWFREG008	长短话不均被max/min ratio误伤	结构/长度门	一话为短Hub ADV，下一话为多阶段SRPG；两者均完成各自功能	pass	取消硬性max/min ratio；仅检查类型声明、最低必要内容和人工理由	编剧/制作	容量由戏剧与玩法需要决定，不为追齐字数注水
+CWFREG009	情节只能靠梗概旁白解释	演出可见性	删除作者解释后，玩家看不出原因、执行者或结果	block	关键场景visible_evidence、carrier、state_delta不能为空	导演/目标玩家	静音或删旁白后仍可复述发生了什么；对白只补动机与关系
+CWFREG010	名台词直接引用与原创化投射混用	IP/引文边界	短锚有来源、使用目的和复用记录；长段或无来源引用	block_or_pass	quote_id、source、length、usage_mode、reuse_count和rights_note齐全	机器人文化/IP	短引用与剧情天然结合可通过；长抄、错用、机械改写或反复消费失败
+CWFREG011	章末高光提到长期人物/机体但状态没有变化	线条假触达	角色或机体只被点名、Cut-in一闪即退却被记为推进	warn	meaningful_touch必须声明advance、pressure、relationship_delta、consequence或justified_dormancy之一	编剧/机器人文化	热度只因真实状态变化更新，不用客串凑覆盖
+CWFREG012	修设定问题时向正文再塞三个技术名词	故障路由	原问题属于世界机制或执行链，却被对白解释和术语补丁掩盖	block	修订票必须先标root_layer；若root_layer非dialogue而patch_scope仅为对白则失败	主笔整合	最早根因被修正；不在下游用说明句遮住上游错误

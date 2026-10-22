@@ -1,0 +1,5 @@
+asset_tier	definition	default_allowed_for	minimum_reuse	approval_gate	stage20_required_inputs	budget_warning	delete_or_escalate_rule	status
+A0	纯数据/文本/既有UI投影;无新场景和玩法代码	任务卡;关系合同;结算;档案普通条目;规则变体	同一内核不限内容消费	系统owner审核;用户验收代表样本	loop_id;object_ids;entry/exit;allowed_writes;consumer	文本/配置仍需知识边界和QA	若连A0都无未来消费者则删除	candidate_aux_asset_tier_v1
+A1	一个共享交互扩展或一个GD2地点状态变体	探索对象;工程试验;Hub变化;关键展品;微交互	至少3次消费且跨2章	系统/地点owner+原型真人验收	gd2_hash;verbs;state_variants;BOM;reuse_consumers;prototype_evidence	一次性皮肤堆积会形成隐性资产族	不足复用则降A0/演出或删除	candidate_aux_asset_tier_v1
+A2	多模式共用地点套件或短英雄演出	城市/万机馆区域;跨Story探索战术地点;关键物件	至少服务2种模式并有后续复用	用户单独视觉/空间/玩法范围批准	完整GD2包;俯视/剖面/流线/状态图;previs;BOM;hash	必须进入D06/D11预算;不可由D05默认承诺	只服务一次辅助玩法则删除或转章级高潮重审	candidate_aux_asset_tier_v1
+A3	独立引擎/大型唯一地图/专属动画体系	D05默认无	不适用	必须转D06章级高潮并由制作人/用户特别批准	完整章合同;原型;成本/替代方案;资产/代码owner	高概率超出独立项目范围	默认禁止;没有不可替代PV/玩法价值即删除	candidate_aux_asset_tier_v1

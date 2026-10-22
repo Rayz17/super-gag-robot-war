@@ -1,0 +1,27 @@
+field_name	required	purpose	invalid_if_missing
+budget_pool_schema_version	yes	累计预算池Schema版本	无法复现cap/余额规则
+shared_budget_pool_id	yes	唯一共享预算池ID	拆包后无法聚合同一授权预算
+shared_budget_program_scope_key	yes	同一预算问题稳定键；首批为STAGE0_R0_P1	通过新建pool ID规避总上限
+status	yes	draft;authorized;expired;revoked;closed之一；authorized必须由成员包络的独立精确回执与当前余额派生，不是预算池自授权	草稿预算被当作可消费，或pool状态无成员授权根
+pool_subject_canonicalization_version	yes	预算池subject hash规范版本	相同pool得到不可比hash
+pool_subject_sha256	yes	对pool ID、program scope、周期与累计caps的规范化SHA-256	累计cap可在授权后被放大
+effective_at	yes	共享池最早生效时间，ISO-8601含时区	成员包络跨出授权周期
+expires_at	yes	共享池统一到期时间，ISO-8601含时区	拆包后串行延长日历上限
+cap_calendar_days	yes	所有成员包络共享的总日历跨度	每包各算一份日历上限
+cap_person_hours	yes	所有成员包络累计内部人时上限	每包各算一份人时上限
+cap_external_cash	yes	所有成员包络累计外部现金上限	每包各算一份现金上限
+member_envelope_ids	yes	归入本池的精确包络ID；无成员写none	包络在池外消费
+member_envelope_subject_sha256s	yes	与member_envelope_ids逐一对应的授权subject hash	成员包络范围漂移
+member_envelope_receipt_instance_ids	yes	与成员逐一对应的精确包络授权回执	预算池可引用未授权包络
+ledger_path	yes	单一累计消耗账路径	成员各自维护余额造成双花
+ledger_sha256	yes	最新累计账SHA-256	执行时读取过期余额
+consumed_calendar_span_days	yes	从pool effective_at计的已消耗日历跨度	无法阻断超14日继续执行
+consumed_person_hours	yes	所有成员累计已用内部人时	无法阻断超80人时继续执行
+consumed_external_cash	yes	所有成员累计已用外部现金	无法阻断现金超限
+remaining_calendar_days	yes	cap减累计跨度的非负余额	余额不可机检
+remaining_person_hours	yes	cap减累计人时的非负余额	余额不可机检
+remaining_external_cash	yes	cap减累计现金的非负余额	余额不可机检
+last_updated_at	yes	累计账更新时间，ISO-8601含时区	并行执行使用过期账
+cap_and_overlap_result	yes	pass;fail；必须同时验证同program只有一个active pool且所有余额非负	多个池叠加或超限未阻断
+stop_conditions	yes	任一cap耗尽、pool失效或账漂移即停	成员包络继续消耗
+notes	yes	首批R0/P1拆包但总14日/80人时/现金0等不可推论	人类无法理解累计边界

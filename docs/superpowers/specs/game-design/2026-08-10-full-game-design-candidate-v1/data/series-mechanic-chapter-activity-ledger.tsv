@@ -1,0 +1,71 @@
+activity_id	chapter_id	lifecycle_id	activity_stage	stack_role	ui_surface_refs	combines_with	evidence_status	source_note
+ACT-C01-01	C01	LIFE-C01	introduction	new_dimension	TACT_TIMELINE;BODY_PANEL	NONE	registered_pending	D04-P1/PC01-E02仅待测登记。
+ACT-C02-01	C02	LIFE-C01	second_instance	reuse	TACT_TIMELINE;BODY_PANEL	LIFE-C02	registered_pending	PC02-E01-QUALIFIER存在但受LIFE-C02污染。
+ACT-C02-02	C02	LIFE-C02	introduction	new_dimension	BODY_PANEL;OBJECTIVE_PANEL	LIFE-C01	registered_pending	只有章节原型登记，无专用damage resolver。
+ACT-C02-03	C02	LIFE-C02	second_instance	reuse	BODY_PANEL;OBJECTIVE_PANEL	LIFE-C01	registered_pending	C02E04已有Candidate纸面Fixture，但仅定义过程与断言；零Build、无版本化ruleset/内容hash/隔离搜索/真人证据。
+ACT-C03-01	C03	LIFE-C01	mastery	mastery	TACT_TIMELINE;BODY_PANEL	LIFE-C02;LIFE-C03	planned_unverified	C03承力/绕路掌握窗，无fixture。
+ACT-C03-02	C03	LIFE-C02	mastery	mastery	BODY_PANEL;OBJECTIVE_PANEL	LIFE-C01;LIFE-C03	planned_unverified	工具主体回收不能自动代签非致死掌握。
+ACT-C03-03	C03	LIFE-C03	introduction	new_dimension	LOCATION_BODY;WORKORDER_PANEL	LIFE-C01;LIFE-C02	registered_pending	P-EX2/PC03-E04-VERIFY为待测。
+ACT-C03-04	C03	LIFE-C03	second_instance	reuse	LOCATION_BODY;WORKORDER_PANEL	LIFE-C01;LIFE-C02	registered_pending	同章第二实例尚无隔离hash。
+ACT-C04-01	C04	LIFE-C03	mastery	mastery	WORKORDER_PANEL;C2_PROTOCOL	LIFE-C04	blocked	D04-P2不证明工程掌握，C04 live chain未接线。
+ACT-C04-02	C04	LIFE-C04	introduction	new_dimension	C2_PROTOCOL;CONTACT_LAYER	LIFE-C03	blocked	D04-P2仅中性待测且C04恢复门未通过。
+ACT-C05-01	C05	LIFE-C04	second_instance	reuse	C2_PROTOCOL;CONTACT_LAYER	LIFE-C05	blocked	C05 L4未重建且受占用/退出新维度污染。
+ACT-C05-02	C05	LIFE-C05	introduction	new_dimension	LIVE_LINK_PANEL;CONTACT_LAYER	LIFE-C04	blocked	无专用原型且章链阻断。
+ACT-C06-01	C06	LIFE-C04	mastery	mastery	C2_PROTOCOL;ROSTER_PANEL	LIFE-C06	blocked	未来章冻结且无对象fixture。
+ACT-C06-02	C06	LIFE-C06	introduction	new_dimension	COMBINATION_PANEL;BODY_PANEL	LIFE-C04	planned_unverified	固定成员/负载/中止仍是纸面。
+ACT-C07-01	C07	LIFE-C05	planned_review	review	LIVE_LINK_RECEIPT	NONE	blocked	为避免C05到C09首次复用前失忆而预留；未进入章链。
+ACT-C07-02	C07	LIFE-C06	second_instance	reuse	COMBINATION_PANEL;ROSTER_PANEL	LIFE-C07	planned_unverified	与核心轮值污染未隔离。
+ACT-C07-03	C07	LIFE-C07	introduction	new_dimension	ROSTER_PANEL;BODY_PANEL	LIFE-C06	planned_unverified	无rotation fixture。
+ACT-C08-01	C08	LIFE-C06	mastery	mastery	COMBINATION_PANEL;ROUTE_PANEL	LIFE-C08	planned_unverified	不组合/中止掌握无真人证据。
+ACT-C08-02	C08	LIFE-C08	introduction	new_dimension	ROUTE_PANEL;OBJECTIVE_PANEL	LIFE-C06	planned_unverified	撤退奖励倒置未测试。
+ACT-C09-01	C09	LIFE-C05	second_instance	reuse	LIVE_LINK_PANEL;WORLD_GRAPH	LIFE-C09	blocked	C05基础机制与C09多线均未成立。
+ACT-C09-02	C09	LIFE-C07	planned_review	review	ROSTER_PRESET_CARD	NONE	planned_unverified	为C11第二实例前预留可选轮值复习；未进入章链。
+ACT-C09-03	C09	LIFE-C08	second_instance	reuse	ROUTE_PANEL;WORLD_GRAPH	LIFE-C09	planned_unverified	与多战区派遣污染未隔离。
+ACT-C09-04	C09	LIFE-C09	introduction	new_dimension	WORLD_GRAPH;MISSION_CARD	LIFE-C05;LIFE-C08	planned_unverified	无默认执行者/后台结果fixture。
+ACT-C10-01	C10	LIFE-C10	introduction	new_dimension	AUTHORITY_CARD;OBJECTIVE_PANEL	NONE	planned_unverified	无authority case fixture。
+ACT-C11-01	C11	LIFE-C07	second_instance	reuse	ROSTER_PANEL;WORLD_GRAPH	LIFE-C08;LIFE-C09;LIFE-C11	planned_unverified	四战区编成可能改变轮值状态域。
+ACT-C11-02	C11	LIFE-C08	mastery	mastery	ROUTE_PANEL;WORLD_GRAPH	LIFE-C09;LIFE-C11	planned_unverified	放弃击坠以救最弱战区无人测。
+ACT-C11-03	C11	LIFE-C09	second_instance	reuse	WORLD_GRAPH;MISSION_CARD	LIFE-C07;LIFE-C08;LIFE-C11	planned_unverified	三线到四线未证明纯数据。
+ACT-C11-04	C11	LIFE-C11	introduction	new_dimension	WORLD_GRAPH;RELAY_EDGE;ROSTER_PANEL	LIFE-C07;LIFE-C08;LIFE-C09	planned_unverified	编成与跨线边为可分碎片。
+ACT-C12-01	C12	LIFE-C05	planned_review	review	LIVE_LINK_RECEIPT;HUB_LOG	LIFE-C12	blocked	为C15掌握前预留占用过期/退出回执复盘；未进入章链。
+ACT-C12-02	C12	LIFE-C12	introduction	new_dimension	HUB_MAP;HUB_ACTIONS;MISSION_CARD	LIFE-C05	registered_pending	P-HUB1纸面内容已定义但零Build/零真人。
+ACT-C13-01	C13	LIFE-C07	mastery	mastery	ROSTER_PANEL;CONTROL_CLASS	LIFE-C10;LIFE-C13	planned_unverified	地方行动组轮值无fixture。
+ACT-C13-02	C13	LIFE-C10	second_instance	reuse	AUTHORITY_CARD;CONTROL_CLASS	LIFE-C07;LIFE-C13	planned_unverified	责任投影污染未隔离。
+ACT-C13-03	C13	LIFE-C13	introduction	new_dimension	CONTROL_CLASS;CONTACT_LAYER	LIFE-C07;LIFE-C10	planned_unverified	逐实体控制类和本地拒绝未对象化。
+ACT-C14-01	C14	LIFE-C09	mastery	mastery	WORLD_GRAPH;MISSION_CARD	LIFE-C11;LIFE-C14	planned_unverified	不亲临委托与持久分舰叠加无人测。
+ACT-C14-02	C14	LIFE-C11	second_instance	reuse	WORLD_GRAPH;RELAY_EDGE;ROSTER_PANEL	LIFE-C09;LIFE-C14	planned_unverified	三舰状态域污染未隔离。
+ACT-C14-03	C14	LIFE-C14	introduction	new_dimension	PARTITION_PANEL;ROSTER_PANEL;HUB_MAP	LIFE-C09;LIFE-C11	planned_unverified	通用事务核不证明分舰玩法。
+ACT-C15-01	C15	LIFE-C05	mastery	mastery	LIVE_LINK_PANEL;CONTACT_LAYER	LIFE-C12;LIFE-C14;LIFE-C15	blocked	C05基础未成立；长线掌握只有计划。
+ACT-C15-02	C15	LIFE-C12	planned_review	review	HUB_RECEIPT;MISSION_CARD	LIFE-C05	planned_unverified	为C21 Hub复用预留第一次低压复盘；未进入章链。
+ACT-C15-03	C15	LIFE-C14	second_instance	reuse	PARTITION_PANEL;ROUTE_PANEL	LIFE-C05;LIFE-C15	planned_unverified	异步路线污染未隔离。
+ACT-C15-04	C15	LIFE-C15	introduction	new_dimension	CONTACT_TIMELINE;ROUTE_PANEL	LIFE-C05;LIFE-C14	planned_unverified	四时间戳理解率未测试。
+ACT-C16-01	C16	LIFE-C10	mastery	mastery	AUTHORITY_CARD;CONTACT_LAYER	LIFE-C13;LIFE-C14;LIFE-C15;LIFE-C16	planned_unverified	身份事实/许可/回应区分无人测。
+ACT-C16-02	C16	LIFE-C13	second_instance	reuse	CONTROL_CLASS;CONTACT_LAYER	LIFE-C10;LIFE-C14;LIFE-C15;LIFE-C16	planned_unverified	接触握手污染未隔离。
+ACT-C16-03	C16	LIFE-C14	mastery	mastery	PARTITION_PANEL;ROUTE_PANEL	LIFE-C10;LIFE-C13;LIFE-C15;LIFE-C16	planned_unverified	三舰存档一致性无fixture。
+ACT-C16-04	C16	LIFE-C15	second_instance	reuse	CONTACT_TIMELINE;CONTACT_LAYER	LIFE-C10;LIFE-C13;LIFE-C14;LIFE-C16	planned_unverified	身份握手污染未隔离。
+ACT-C16-05	C16	LIFE-C16	introduction	new_dimension	CONTACT_LAYER;EVIDENCE_NOTEBOOK	LIFE-C10;LIFE-C13;LIFE-C14;LIFE-C15	planned_unverified	Contact挑战/回应未对象化。
+ACT-C17-01	C17	LIFE-C11	planned_review	review	RELAY_RECEIPT;WORLD_GRAPH	LIFE-C17	planned_unverified	为C20掌握前预留跨线状态边复盘；未进入章链。
+ACT-C17-02	C17	LIFE-C13	mastery	mastery	CONTROL_CLASS;ROSTER_PANEL	LIFE-C15;LIFE-C16;LIFE-C17	planned_unverified	无主角团方案无人测。
+ACT-C17-03	C17	LIFE-C15	mastery	mastery	CONTACT_TIMELINE;DOCTRINE_LEDGER	LIFE-C13;LIFE-C16;LIFE-C17	planned_unverified	新鲜度审计无fixture。
+ACT-C17-04	C17	LIFE-C16	second_instance	reuse	CONTACT_LAYER;DOCTRINE_LEDGER	LIFE-C13;LIFE-C15;LIFE-C17	planned_unverified	敌方学习消费者污染未隔离。
+ACT-C17-05	C17	LIFE-C17	introduction	new_dimension	DOCTRINE_LEDGER;ROSTER_PANEL	LIFE-C13;LIFE-C15;LIFE-C16	planned_unverified	合法观察链/新手公平未测试。
+ACT-C18-01	C18	LIFE-C12	planned_review	review	HUB_RECEIPT;RELATION_LOG	LIFE-C18	planned_unverified	为C21 Hub复用预留第二次低压复盘；未进入章链。
+ACT-C18-02	C18	LIFE-C18	introduction	new_dimension	COMMITMENT_GRAPH;MISSION_CARD	LIFE-C12	planned_unverified	公开全救条件和实体权利未对象化。
+ACT-C19-01	C19	LIFE-C19	introduction	new_dimension	ASSEMBLY_GRAPH;BODY_PANEL;CONSENT_RECEIPT	NONE	planned_unverified	模块主人/接口/停止/退出只有字段。
+ACT-C20-01	C20	LIFE-C11	mastery	mastery	WORLD_GRAPH;RELAY_EDGE	LIFE-C16;LIFE-C17;LIFE-C18;LIFE-C19;LIFE-C20	planned_unverified	相隔九章，仅有C17计划复盘。
+ACT-C20-02	C20	LIFE-C16	mastery	mastery	CONTACT_LAYER;EVIDENCE_NOTEBOOK	LIFE-C11;LIFE-C17;LIFE-C18;LIFE-C19;LIFE-C20	planned_unverified	外部战区身份核验无fixture。
+ACT-C20-03	C20	LIFE-C17	second_instance	reuse	DOCTRINE_LEDGER;TACT_TIMELINE	LIFE-C11;LIFE-C16;LIFE-C18;LIFE-C19;LIFE-C20	planned_unverified	终局反制叠加未隔离。
+ACT-C20-04	C20	LIFE-C17	mastery	mastery	DOCTRINE_LEDGER;TACT_TIMELINE	LIFE-C11;LIFE-C16;LIFE-C18;LIFE-C19;LIFE-C20	planned_unverified	同章第二实例不能代签掌握。
+ACT-C20-05	C20	LIFE-C18	second_instance	reuse	COMMITMENT_GRAPH;WORLD_GRAPH	LIFE-C11;LIFE-C16;LIFE-C17;LIFE-C19;LIFE-C20	planned_unverified	接力链改变消费者风险。
+ACT-C20-06	C20	LIFE-C18	mastery	mastery	COMMITMENT_GRAPH;WORLD_GRAPH	LIFE-C11;LIFE-C16;LIFE-C17;LIFE-C19;LIFE-C20	planned_unverified	同章第二实例不能代签掌握。
+ACT-C20-07	C20	LIFE-C19	second_instance	reuse	ASSEMBLY_GRAPH;RELAY_EDGE	LIFE-C11;LIFE-C16;LIFE-C17;LIFE-C18;LIFE-C20	planned_unverified	终局接力污染未隔离。
+ACT-C20-08	C20	LIFE-C20	introduction	new_dimension	TACT_TIMELINE;RELAY_EDGE;ROSTER_PANEL	LIFE-C11;LIFE-C16;LIFE-C17;LIFE-C18;LIFE-C19	planned_unverified	本章同时叠加六个生命周期，需UI/负荷原型。
+ACT-C21-01	C21	LIFE-C12	second_instance	reuse	HUB_MAP;HUB_ACTIONS	LIFE-C19;LIFE-C21	planned_unverified	相隔九章且无C21 Hub fixture。
+ACT-C21-02	C21	LIFE-C12	mastery	mastery	HUB_MAP;HUB_ACTIONS	LIFE-C19;LIFE-C21	planned_unverified	同章第二实例不能代签掌握。
+ACT-C21-03	C21	LIFE-C19	mastery	mastery	ASSEMBLY_GRAPH;BODY_PANEL	LIFE-C12;LIFE-C21	planned_unverified	卸载失败诊断无fixture。
+ACT-C21-04	C21	LIFE-C21	introduction	new_dimension	LOAD_PATH;AUTHORITY_CARD;CONSENT_RECEIPT	LIFE-C12;LIFE-C19	planned_unverified	物理诊断与治理区分为可分碎片。
+ACT-C22-01	C22	LIFE-C20	second_instance	reuse	TACT_TIMELINE;RELAY_EDGE	LIFE-C21;LIFE-C22	planned_unverified	双向组合污染未隔离。
+ACT-C22-02	C22	LIFE-C20	mastery	mastery	TACT_TIMELINE;RELAY_EDGE	LIFE-C21;LIFE-C22	planned_unverified	同章第二实例不能代签掌握。
+ACT-C22-03	C22	LIFE-C21	second_instance	reuse	LOAD_PATH;CONSENT_RECEIPT	LIFE-C20;LIFE-C22	planned_unverified	救人前置与终章新维度同章。
+ACT-C22-04	C22	LIFE-C21	mastery	mastery	LOAD_PATH;CONSENT_RECEIPT	LIFE-C20;LIFE-C22	planned_unverified	同章第二实例不能代签掌握。
+ACT-C22-05	C22	LIFE-C22	introduction	new_dimension	CONSENT_RECEIPT;COMBINATION_PANEL	LIFE-C20;LIFE-C21	blocked	无获批第二阶段或postgame范围。

@@ -1,0 +1,26 @@
+role_id	role_name	primary_authority	cannot_self_approve	minimum_handoff	backup_requirement	status
+PRODUCT_OWNER	用户/产品Owner	产品方向与范围化用户裁决	执行团队产出的机器/真人证据	具名receipt和明确排除项	需要代理时必须另有书面授权	candidate_role
+PRODUCER	制作人	预算/WIP/里程碑/跨专业交付	产品方向/玩法/视觉用户回执	范围/BOM/依赖/风险/停止决定	必须指定副制作人	candidate_role
+LEAD_DESIGNER	主策划	产品/系统语义与设计整合	自己的玩法趣味结论	版本化规则/影响/未决项	SYSTEMS_DESIGNER	candidate_role
+SYSTEMS_DESIGNER	系统主设	战术/Hub/状态/经济规则	自己的M5	规则hash/原型问题/失败路由	LEAD_DESIGNER	candidate_role
+AUX_DESIGNER	辅助玩法负责人	探索/证据/Hub/结算内容语法	自己的M5/M6	首例/第二实例/Outcome	SYSTEMS_DESIGNER	candidate_role
+CREATIVE_OWNER	创作Owner	故事方向/Writer责任	用户故事回执	故事diff/揭示/排除项	CANON_OWNER	candidate_role
+CANON_OWNER	Canon负责人	权威分层/迁移影响/连续性	用户迁移决定	权威snapshot/hash/影响	CREATIVE_OWNER	candidate_role
+WRITER	单一Writer	L4/Reader正文	自己的Reader验收	Reader hash/冷读/故事diff	CREATIVE_OWNER指定替补	candidate_role
+WORLD_MECHA_LEAD	机体/战斗设定负责人	机体身体/接口/控制/同意	视觉方向和玩法M5	GD1包/设计Previs/消费者	WORLD_LEVEL_LEAD	candidate_role
+WORLD_LEVEL_LEAD	世界/关卡设定负责人	地点功能/尺度/拓扑/流线/状态	视觉方向和章节M5	GD2包/真实图/消费者	WORLD_MECHA_LEAD	candidate_role
+CHAPTER_DESIGNER	章级设计/Gameflow负责人	GD3/BOM/Story-Play绑定	故事/玩法/视觉用户回执	状态种子/入口出口/BOM	LEAD_DESIGNER	candidate_role
+PREVIS_DIRECTOR	连续Previs/演出负责人	镜头/操作/连续性/Full-Skip	视觉用户回执	Previs manifest/path/hash	ART_DIRECTOR	candidate_role
+ART_DIRECTOR	美术负责人	视觉系统/方向/资产质量	用户视觉回执和预算	方向包/资产BOM/source/hash	TECH_ARTIST	candidate_role
+TECH_ARTIST	技术美术	Rig/材质/VFX/UI集成规格	正式资产production回执	源资产/导出/性能/许可	ART_DIRECTOR	candidate_role
+AUDIO_LEAD	音频负责人	音乐/SFX/语音系统与交付	预算和用户生产回执	源文件/Stem/实现/许可	PRODUCER指定外部Owner	candidate_role
+TECH_LEAD	技术负责人	架构/状态/存档/构建/性能	玩法M5与用户production回执	build/manifest/迁移/回归	TOOLS_ENGINEER	candidate_role
+GAMEPLAY_ENGINEER	玩法工程	规则核/原型/Runtime实现	玩法M5	build/ruleset/log/已知缺陷	TECH_LEAD	candidate_role
+TOOLS_ENGINEER	工具/构建工程	checker/编译器/构建/自动化	门实例用户production回执	工具版本/report/hash	TECH_LEAD	candidate_role
+QA_LEAD	QA/研究负责人	测试协议/样本/证据/缺陷	产品/玩法/视觉用户裁决	build/录像/日志/复述/失效	UX_ACCESSIBILITY	candidate_role
+UX_ACCESSIBILITY	UX/无障碍负责人	输入/信息/可访问性评审	玩法用户回执	任务结果/障碍/建议	QA_LEAD	candidate_role
+DEMO_PRODUCER	C01E02 Demo制作人	Demo目录/构建/报告	全局规则/正式资产/Current Runtime	Demo build/manifest/限定证据	PRODUCER	candidate_role
+RELEASE_LEAD	发行/本地化负责人	商店/平台/本地化/发布清单	产品投资和L6用户回执	平台矩阵/许可/商店/回滚	PRODUCER	candidate_role
+LEGAL_OWNER	法务/权利Owner	许可/IP/合同风险	产品/视觉/发行用户回执	许可来源/风险/处置	PRODUCER	candidate_role
+ALL_LEADS	全专业负责人集合	仅作informed集合别名	任何审批	变化摘要	不适用	candidate_alias
+CONTENT_OWNERS	相关内容Owner集合	仅作informed集合别名	任何审批	内容manifest	不适用	candidate_alias
