@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-23",
+  "user_thread": "01a13f08-23a0-74c2-b2f5-7913c7e81470",
+  "user_verbatim": "可以，出三视图",
+  "existing_batch": "design-followthrough-r1.json",
+  "source_record": "city-response-source-production-r2.json",
+  "files": [
+    {
+      "id": "M09",
+      "name": "灰崎警备劳务机",
+      "file": "samples/M09-curved-labor-r2.png",
+      "sha256": "9355ad11dda42d079ab9a55a98ee39d904aedcb564ca88c1354ad4c170180288",
+      "canon_entity": "V353U033",
+      "authority_registration": "CML144",
+      "scope": "采用灰崎R2源板：当前巡逻盔头型、灰白/蓝灰/红反光标记、成人身形与连续曲面外壳；六面平板交通墙，手持一面、背负五面。"
+    },
+    {
+      "id": "M10",
+      "name": "消防架桥机",
+      "file": "samples/M10-engineering-transformer-r2.png",
+      "sha256": "cd4b733daceee495c87182691608eb50f17d2284249a1e154f88645fa721c01d",
+      "canon_entity": "V353U034",
+      "authority_registration": "CML145",
+      "scope": "采用消防架桥机R2源板：橙白双足工程人形与消防架桥载具，驾驶室胸、六轮组、成对折叠桥板、消防水路；四稳定腿用于车辆作业支撑。"
+    }
+  ],
+  "scope": "当前M09/M10两张R2整机源设计采用，并直接授权制作两机正侧背。",
+  "excluded_acceptance": [
+    "新派生三视图",
+    "被否定M10四足主形与旧M09碎面躯体",
+    "同件变形机构、模型、动作、声音或运行",
+    "M07未交付多视"
+  ],
+  "runtime_user_accepted": false,
+  "handoff_sent": false
+}

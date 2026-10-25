@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-22",
+  "revision": "M11-turnaround-delivery-production-r9",
+  "asset": "货柜领袖形象确定与肩颈修正三视交付",
+  "canon_entity": "V353U043",
+  "existing_batch": "design-followthrough-r1.json",
+  "reader": "M11-source-delivery-r9.html",
+  "direction_record": "M11-design-fixed-20261022.json",
+  "generation_mode": "built-in image_gen",
+  "items": [
+    {
+      "id": "FRONT",
+      "file": "samples/M11-front-r9.png",
+      "sha256": "a0b731996ae9d689e4b26a5f75dd57add5ab21a506751e1a51669daf35501481",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-68c6b2e4-a55c-4839-aee2-bd20d651756b.png",
+      "prompts": [
+        "M11-front-prompt-r9.txt"
+      ],
+      "role": "正面：露出装甲颈部、降低肩线与胸甲上沿",
+      "derived_from_approved_master": true,
+      "user_accepted": false,
+      "source_delivery_authorized": true,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "SIDE",
+      "file": "samples/M11-side-r9.png",
+      "sha256": "957e925cc145b1b62435dccb9b9c22cf576d2203fc2358a71dc85936e716ddbf",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-6dc764f3-ef58-4892-a677-28e9b2585f80.png",
+      "prompts": [
+        "M11-side-prompt-r9.txt"
+      ],
+      "role": "左侧：肩颈与R8一致，恢复原背架厚度",
+      "derived_from_approved_master": true,
+      "user_accepted": false,
+      "source_delivery_authorized": true,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "REAR",
+      "file": "samples/M11-rear-r9.png",
+      "sha256": "dfaa189af23a394b52d0ca6a49ab76168a3fc24d6422d5dbfb81b7a75bb5d668",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-9dc1108b-929e-4b71-a6aa-33fa9f138d40.png",
+      "prompts": [
+        "M11-rear-prompt-r9.txt"
+      ],
+      "role": "背面：露出颈后支架，纵向象牙白货台背架",
+      "derived_from_approved_master": true,
+      "user_accepted": false,
+      "source_delivery_authorized": true,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    }
+  ],
+  "approved_master": {
+    "file": "samples/M11-posture-r8.png",
+    "sha256": "8c7b229f42d8e840814a55dad1cf224d5b5b05f51a90841e86583d7f05dc78c9",
+    "user_accepted": true,
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-f415d834-8d6c-408a-a1ef-4234fda981f8.png"
+  },
+  "user_acceptance_receipt": "M11-design-fixed-20261022.json",
+  "selected_head_reference": {
+    "file": "samples/M11-selected-head-r6.png",
+    "sha256": "3a6496028f8328c6ef3300f9b9b836d3e88ce8e8befe5564f01a2339fecd43ec",
+    "user_accepted": true,
+    "scope": "指定eac75eab头部源设计及其眼形、面甲、双耳侧钝头天线；授权整合整机三视与可变结构优化"
+  },
+  "body_context": {
+    "id": "ROBOT",
+    "file": "samples/M11-future-robot-r2.png",
+    "sha256": "0dad97e6598041a2103351afe5554d36f4701977ba6d19c21da1cb05620ab502",
+    "pixel_size": [
+      1024,
+      1536
+    ],
+    "mode": "RGB",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "background": "opaque_warm_white",
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-13f13bf1-4522-4d53-9adc-3f4eecbe0eb4.png",
+    "role": "R2颈下/配色/车壳分配参考；旧头部不作为R4当前头部，未绘成R4整机",
+    "prompt_record": "M11-future-robot-prompt-r2.json",
+    "user_accepted": false,
+    "runtime_integrated": false,
+    "handoff_sent": false
+  },
+  "vehicle_context": {
+    "id": "VEHICLE",
+    "file": "samples/M11-vehicle-views-r7.png",
+    "sha256": "affa0fff5a2062100843ad03fd08a7fe7469ce26625d00b34689a2b18584b0e6",
+    "pixel_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-02bb53f3-2d59-4957-bdc0-ae92da71abd7.png",
+    "prompts": [
+      "M11-vehicle-views-prompt-r7.txt"
+    ],
+    "role": "车形前侧背：四轴、单柜、摄像头后视",
+    "user_accepted": false,
+    "runtime_integrated": false,
+    "handoff_sent": false
+  },
+  "layout_study": {
+    "directory": "M11-head-bay-r7",
+    "record": "M11-head-bay-r7/head-bay-check.json",
+    "source": "M11-head-bay-r7/build_head_bay.py",
+    "editable_model": "M11-head-bay-r7/M11-head-bay-r7.blend",
+    "motion": "M11-head-bay-r7/M11-head-bay-motion-r7.mp4",
+    "same_inventory_sample_check": true,
+    "full_transformation_verified": false,
+    "applicability": "prior_R7_envelope_only_not_R8_neck_stroke_or_shoulder_clearance"
+  },
+  "previous_production": "M11-posture-production-r8.json",
+  "prompt_index": "M11-turnaround-prompts-r9.json",
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "samples/M11-posture-r8.png",
+      "samples/M11-front-r9.png",
+      "samples/M11-side-r9.png",
+      "samples/M11-rear-r9.png"
+    ],
+    "observed": [
+      "三视均露出短实颈部，肩顶降低；正面不再把颏甲压在胸窗边缘。",
+      "保留高头壳、额相机、双侧白色钝头天线、分片面甲与前凸颏甲。",
+      "长大腿/小腿及厚实足掌保持；没有压短身体或增加轮位。",
+      "侧面保留R8矩形背架厚度，背面改为象牙白纵向三片货台及四角橙锁。",
+      "每侧肩1、前臂1、小腿2轮位，背面仅主要露胎缘。"
+    ],
+    "limits": [
+      "独立绘制三视仍有轻微投影/板缝差异，不等于同模型严格正交。",
+      "形象母稿获用户明确采用；三张修正稿按授权交付，没有代签逐图新验收。",
+      "沿用R7车形/结构参考，未以旧草模证明R8肩颈展开行程、整机碰撞或受力。"
+    ]
+  },
+  "source_delivery_ready": true,
+  "new_images_user_accepted": false,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "delivery_zip": "M11-source-delivery-20261022-r9.zip"
+}

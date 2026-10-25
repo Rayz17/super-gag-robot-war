@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-22",
+  "revision": "M11-design-fixed-20261022",
+  "authority": "direct_user_message",
+  "verbatim": "货柜领袖就确定这个形象吧，三视图修正后可以交付然后开始下一批",
+  "existing_batch": "design-followthrough-r1.json",
+  "selected_master": {
+    "file": "samples/M11-posture-r8.png",
+    "sha256": "8c7b229f42d8e840814a55dad1cf224d5b5b05f51a90841e86583d7f05dc78c9",
+    "user_accepted": true,
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-f415d834-8d6c-408a-a1ef-4234fda981f8.png"
+  },
+  "selected_head_receipt": "M11-head-selected-and-turnaround-r6.json",
+  "acceptance_scope": "确定R8货柜领袖整体形象：正常纵向头壳、双耳侧钝头天线、前凸颏甲、露颈沉肩、厚重白蓝橙车壳、长腿及折叠货台背架。",
+  "authorized_work": [
+    "据R8修正人形正侧背并整理交付",
+    "交付后接续下一批源设计"
+  ],
+  "corrected_turnarounds": [
+    {
+      "file": "samples/M11-front-r9.png",
+      "sha256": "a0b731996ae9d689e4b26a5f75dd57add5ab21a506751e1a51669daf35501481",
+      "status": "authorized_derived_source_delivery",
+      "individual_new_image_user_accepted": false
+    },
+    {
+      "file": "samples/M11-side-r9.png",
+      "sha256": "957e925cc145b1b62435dccb9b9c22cf576d2203fc2358a71dc85936e716ddbf",
+      "status": "authorized_derived_source_delivery",
+      "individual_new_image_user_accepted": false
+    },
+    {
+      "file": "samples/M11-rear-r9.png",
+      "sha256": "dfaa189af23a394b52d0ca6a49ab76168a3fc24d6422d5dbfb81b7a75bb5d668",
+      "status": "authorized_derived_source_delivery",
+      "individual_new_image_user_accepted": false
+    }
+  ],
+  "runtime_user_accepted": false,
+  "full_transformation_verified": false,
+  "handoff_sent": false,
+  "authority_registration": {
+    "whole_body_master_lock": "CML139",
+    "head_lock": "CML138",
+    "direction_lock": "CML137"
+  }
+}

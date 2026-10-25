@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-24",
+  "user_verbatim": "这个灰崎机的正面示图应该是出错了，第一弄得有点矮胖，第二呢头部错了。然后消防架机、架桥机这个问题不大。但是好像需要有变形的图纸以及载具形态的。",
+  "reference": {
+    "file": "samples/M09-curved-labor-r2.png",
+    "sha256": "9355ad11dda42d079ab9a55a98ee39d904aedcb564ca88c1354ad4c170180288",
+    "role": "用户重贴的当前已定母稿；不是本轮要求重做的对象"
+  },
+  "M09_rejected_derivative": {
+    "file": "samples/M09-front-r3b.png",
+    "issues": [
+      "矮胖",
+      "头型偏离母稿"
+    ],
+    "source_record": "city-response-turnaround-production-r3.json"
+  },
+  "M09_required": [
+    "以R2母稿为唯一身份/比例来源重新推正面",
+    "保留母稿巡逻盔、单层面罩、连续曲面和正常身形",
+    "新正面完成后核对侧/背一致性"
+  ],
+  "M10_required": [
+    "保持现有人形主形",
+    "补载具形态多视",
+    "补部件对应及变形步骤图纸"
+  ],
+  "M10_feedback": "当前人形问题不大；不扩大为新增图或完整变形机构通过。",
+  "existing_batch": "design-followthrough-r1.json",
+  "parent_acceptance_receipt": "city-response-design-fixed-20261023-r2.json",
+  "new_outputs_user_accepted": false,
+  "runtime_changed": false
+}
