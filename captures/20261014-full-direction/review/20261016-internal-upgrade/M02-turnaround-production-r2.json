@@ -1,0 +1,161 @@
+{
+  "date": "2026-10-20",
+  "revision": "M02-turnaround-production-r2",
+  "asset": "旧拳王正侧背三视",
+  "canon_entity": "V353U048",
+  "generation_mode": "built-in image_gen",
+  "parent": {
+    "file": "samples/M02-old-boxer-master-r1.png",
+    "sha256": "a21227cbddf4541cfc39dbfc00faace8e93dd4433a61f6181414d516d8eed7e3",
+    "role": "已获用户表示可沿用的现有方向母稿；非三视/模型验收"
+  },
+  "request_record": "M02-turnaround-direction-r2.json",
+  "prior_direction_receipt": "mecha-source-decisions-20261019-r17.json#M02",
+  "reader": "M02-turnaround-r2.html",
+  "existing_batch": "design-followthrough-r1.json",
+  "items": [
+    {
+      "id": "FRONT",
+      "file": "samples/M02-front-r2.png",
+      "sha256": "c6abfe0e6712107589e825cf05a9755ea373b81e1db432153d5c670a499f08aa",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "background": "opaque_warm_white",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-ebc322a1-b7f9-4b4e-a0aa-242164b4e166.png",
+      "role": "站直正面，同体积厚拳及修补装甲左右",
+      "user_accepted": true,
+      "runtime_integrated": false,
+      "handoff_sent": false,
+      "user_acceptance_receipt": "mecha-source-batch-acceptance-20261021.json"
+    },
+    {
+      "id": "SIDE",
+      "file": "samples/M02-side-r2b.png",
+      "sha256": "8704363dbde45a6746333b7950043a170d0b5b1fca34b84856d8e6720979a83b",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "background": "opaque_warm_white",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-7f88b4bf-55f2-4999-9056-f98177be88f0.png",
+      "role": "左侧观察，收正斜角与双脚前后偏移",
+      "user_accepted": true,
+      "runtime_integrated": false,
+      "handoff_sent": false,
+      "user_acceptance_receipt": "mecha-source-batch-acceptance-20261021.json"
+    },
+    {
+      "id": "REAR",
+      "file": "samples/M02-rear-r2.png",
+      "sha256": "11d6c05c734c538f6fdba33faca32372d88b2221368d44f76c012d4f357e8864",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "background": "opaque_warm_white",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-faca0e91-079c-4194-b2fd-8f56ba8ba891.png",
+      "role": "背面，拳套后壳、后膝和脚跟",
+      "user_accepted": true,
+      "runtime_integrated": false,
+      "handoff_sent": false,
+      "user_acceptance_receipt": "mecha-source-batch-acceptance-20261021.json"
+    }
+  ],
+  "source_refs": [
+    {
+      "file": "samples/M02-old-boxer-master-r1.png",
+      "sha256": "a21227cbddf4541cfc39dbfc00faace8e93dd4433a61f6181414d516d8eed7e3",
+      "role": "已获用户表示可沿用的现有方向母稿；非三视/模型验收"
+    },
+    {
+      "file": "../20261015-latest-review/images/899a014304ce0a8dfe53f9f83aed0ae5f097b7681409c9145eafcfc59adc62a5.jpg",
+      "sha256": "899a014304ce0a8dfe53f9f83aed0ae5f097b7681409c9145eafcfc59adc62a5",
+      "role": "较早同机肩胸分件理解参考，当前R1为形象母稿"
+    }
+  ],
+  "prompts": [
+    "M02-front-turnaround-prompt-r2.json",
+    "M02-side-rear-prompts-r2.json",
+    "M02-profile-correction-prompt-r2b.json"
+  ],
+  "prompt_index": "M02-turnaround-prompts-r2.json",
+  "attempts": [
+    {
+      "file": "samples/M02-side-r2.png",
+      "sha256": "023820d127f017ab183fe009daed9788e377ea03a783e9cf404b42867c54d86b",
+      "observed": true,
+      "issue": "侧稿初版有斜角与远脚前错",
+      "status": "retained_history_not_selected"
+    },
+    {
+      "file": "samples/M02-side-r2b.png",
+      "observed": true,
+      "status": "selected_author_revision_not_user_acceptance"
+    }
+  ],
+  "author_review": {
+    "reviewer": "author",
+    "actual_media": [
+      "samples/M02-front-r2.png",
+      "samples/M02-side-r2b.png",
+      "samples/M02-rear-r2.png",
+      "samples/M02-old-boxer-master-r1.png",
+      "samples/M02-side-r2.png"
+    ],
+    "observed": [
+      "沿R1方向保留短红额块、象牙白/土棕头胸、琥珀眼、圆鼓厚肩和红拳套，未重新发散头型或配色。",
+      "从前探透视展开为站直正面，双拳实际体积接近一致；拳腕、长大腿与胫甲分开可读，未照搬近拳的透视放大。",
+      "右腿棕色前甲与红护膝、左腿象牙白替换甲与白护膝/红下缘保留；背视按左右随朝向对换。",
+      "背面绘制紧凑棕色检修背板/小格栅、象牙白上沿、拳套后壳、后膝铰链与脚跟，未加炮翼或新外挂。",
+      "侧面首稿双脚前后错开且带斜角；R2b收为一个主要侧向腿足轮廓，远侧红护膝只露边，拳套厚度与肘腕连接保留。"
+    ],
+    "limits": [
+      "各面逐张绘制，局部板线、拳套转角和视角仍有手绘漂移；不等于同模型精确正交投影。",
+      "本批为不透明浅底设定稿，未制作头像、拳击动作、模型、运行裁切资源或游戏接入。",
+      "2026-10-21用户已认可本记录items所列当前源设计；源图认可不扩大为同模型、动作与运行。"
+    ],
+    "independent_review": false,
+    "subsequent_user_acceptance": {
+      "date": "2026-10-21",
+      "authority": "direct_user_message",
+      "verbatim": "好的 这批素材过了，继续下一批",
+      "receipt": "mecha-source-batch-acceptance-20261021.json",
+      "scope": "本记录items中当前选中图稿的源设计；不含旧弃稿、同模型结构、动画或运行"
+    },
+    "historical_limits_before_user_acceptance": [
+      "各面逐张绘制，局部板线、拳套转角和视角仍有手绘漂移；不等于同模型精确正交投影。",
+      "背部检修结构与隐藏甲片是沿母稿推演的源设计，新三视具体画法仍未自动获得用户认可。",
+      "本批为不透明浅底设定稿，未制作头像、拳击动作、模型、运行裁切资源或游戏接入。"
+    ]
+  },
+  "source_direction_usable": true,
+  "new_images_user_accepted": true,
+  "canon_changed": false,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "user_acceptance": {
+    "date": "2026-10-21",
+    "authority": "direct_user_message",
+    "verbatim": "好的 这批素材过了，继续下一批",
+    "receipt": "mecha-source-batch-acceptance-20261021.json",
+    "scope": "本记录items中当前选中图稿的源设计；不含旧弃稿、同模型结构、动画或运行"
+  },
+  "source_authority_updated_by": "mecha-source-batch-acceptance-20261021.json"
+}

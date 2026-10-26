@@ -1,0 +1,66 @@
+{
+  "schema_id": "C01_CANDIDATE_DIALOGUE_UI_SKIN_MANIFEST_V1",
+  "candidate_only": true,
+  "user_accepted_direction": true,
+  "candidate_hud_adoption_authorized": true,
+  "component_visual_acceptance": false,
+  "actual_frame_user_acceptance": false,
+  "runtime_promotion": false,
+  "default_promotion": false,
+  "canon_promotion": false,
+  "all_or_nothing": true,
+  "asset_root": "res://content/c01_breaker_demo/assets/ui/gf_modern/",
+  "components": {
+    "panel": {
+      "path": "gf_modern_dialogue_panel_9slice_rgba.png",
+      "sha256": "68b9b94dc89a3c7f1669769e7e7fcacacedf64c422a89581278f510f4fad9f71",
+      "canvas_size": [768, 192],
+      "kind": "nine_slice",
+      "margins": [104, 48, 92, 48],
+      "alpha_required": true
+    },
+    "speaker": {
+      "path": "gf_modern_speaker_tab_9slice_rgba.png",
+      "sha256": "02120684e6e91a810bf8982ee24c0f1f5f7b2f38509b947c277c596b7ae743df",
+      "canvas_size": [320, 72],
+      "kind": "nine_slice",
+      "margins": [48, 20, 48, 20],
+      "alpha_required": true
+    },
+    "local_rail": {
+      "path": "gf_modern_local_scene_status_rail_9slice_rgba.png",
+      "sha256": "2adfd945fe325158f5ee8c697aa6c7435036d4b9dc31696bff7d90ad11863fa4",
+      "canvas_size": [360, 320],
+      "kind": "nine_slice",
+      "margins": [64, 72, 64, 72],
+      "alpha_required": true
+    },
+    "progress": {
+      "path": "gf_modern_dialogue_progress_atlas_rgba.png",
+      "sha256": "2d3677074c08c79170ecbe827e3336546d7b22a89060afc7d2cc4908aa111987",
+      "canvas_size": [192, 48],
+      "kind": "atlas",
+      "cell_size": [48, 48],
+      "grid_size": [4, 1],
+      "alpha_required": true
+    },
+    "prompt": {
+      "path": "gf_modern_dialogue_next_prompt_atlas_rgba.png",
+      "sha256": "9243198f3835c774fa839203ef261622342a8f9eca4907213bcafcdf71ea1b6d",
+      "canvas_size": [288, 144],
+      "kind": "atlas",
+      "cell_size": [96, 48],
+      "grid_size": [3, 3],
+      "alpha_required": true
+    },
+    "comms": {
+      "path": "gf_modern_comms_status_rail_atlas_rgba.png",
+      "sha256": "2be0a79e5c5857794b49e96e7077c672b706f84147578f694cbd23a4e566063b",
+      "canvas_size": [768, 48],
+      "kind": "atlas",
+      "cell_size": [384, 48],
+      "grid_size": [2, 1],
+      "alpha_required": true
+    }
+  }
+}

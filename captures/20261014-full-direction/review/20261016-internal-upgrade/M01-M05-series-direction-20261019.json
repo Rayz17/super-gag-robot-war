@@ -1,0 +1,68 @@
+{
+  "id": "M01_M05_SERIES_DIRECTION_20261019",
+  "date": "2026-10-19",
+  "authority": "direct_user_message_in_this_chat",
+  "verbatim": "无牌的感觉还是差点，个子有点矮，而且看上去有点蠢，有点机器河童的既视感；也跟完全版王者看上去不是一个系列的。他们是有渊源的机体，完全版王者是钦定的主角机而且要更加臃肿和过度武装，无牌只是同系列的杂兵机，但它是本作的重要角色，要有一些亮点和记忆点以及，让它闪光时它就能有主角感。",
+  "scope": "两机同一虚构系列的视觉谱系与角色层级；修正无牌整机比例、气质和装甲结构，王者作为豪华过武装的对照。",
+  "rejected_full_body": {
+    "file": "samples/M01-turnaround-r12b.png",
+    "sha256": "e22c084722ddbed669396ccacf862c342e492d02c88e885c5d7d92a62ca15d09",
+    "record": "M01-turnaround-production-r12.json",
+    "issues": [
+      "矮钝比例",
+      "机器河童既视感",
+      "与王者系列语法分离",
+      "作为本作重要角色缺少能够闪光的设计记忆点"
+    ]
+  },
+  "family_anchor": {
+    "file": "samples/M05-full-loadout-r1b.png",
+    "sha256": "0df4a2889f99df35087ce69e9dbf5b05d5a2afee54aaf7f54d761a2f5d1ebff1",
+    "record": "M05-full-loadout-production-r1.json",
+    "new_file_user_accepted": false
+  },
+  "hierarchy": {
+    "M05": "原虚构系列钦定主角机：更臃肿、华丽、过度武装，装备仍有实际功能。",
+    "M01": "原虚构系列同系量产杂兵，本作重要角色：装甲简洁、身体利落，有明确识别点，靠体术和姿态能够呈现主角感。"
+  },
+  "preserved_head_motifs": [
+    "白色中脊与左右两道黄槽",
+    "下方独立短黄块",
+    "对称且直线后向的侧天线",
+    "连续琥珀视窗与封闭面甲",
+    "青绿、象牙白及赭金色系"
+  ],
+  "prior_head_acceptance": "M01-head-design-fixed-20261019.json",
+  "prior_acceptance_scope_note": "既有局部识别设计认可保留；不把它作为拒绝整机小头/锐化改进的理由，也不追认R12全身。",
+  "author_design_proposal": {
+    "proportion": "约7.8至8头身、小头、长腿、可辨颈部和正常靴；作者施工参数，非用户新增精确尺寸。",
+    "shared_family_motifs": [
+      "棱面头盔与下颌结构",
+      "同族中央护甲/成对胸甲及凹入散热口",
+      "阶梯梯形肩甲及肩部连接",
+      "四肢白甲倒角与圆关节语法"
+    ],
+    "M01_memory_points": [
+      "双槽白色冠脊",
+      "朴素中央胸甲与小维修扣",
+      "双前臂金色打击护轨和拳背金块"
+    ],
+    "heroic_moment": "同一台机体的逆转天冲拳动作表现，靠转腰、踏步、拳线及镜头显主角感，不临时加豪华装备。"
+  },
+  "story_basis": [
+    {
+      "file": "docs/superpowers/specs/剧情梗概/V35.9/rebuild/reader/episodes/C02/C02E03-Reader-v1.md",
+      "scope": "旧企划A-7与王者、旧终话中的护甲交接；只取现有关系作视觉依据，不改剧情。"
+    }
+  ],
+  "not_changed": [
+    "无牌16米、王者20米的设定米数",
+    "自主机魂与既有生命周期",
+    "M02旧拳王本轮候选",
+    "馆守Z现有资产",
+    "社勇王/人物固定29文件",
+    "主玩法台账与运行"
+  ],
+  "new_drawings_user_accepted": false,
+  "handoff_sent": false
+}

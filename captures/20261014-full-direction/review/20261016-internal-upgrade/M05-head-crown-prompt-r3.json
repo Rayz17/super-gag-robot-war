@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-19",
+  "generation_mode": "built-in image_gen",
+  "output": "samples/M05-head-five-crown-r3.png",
+  "source_images": [
+    "refs/M05-user-face-D-r3.png",
+    "samples/M05-full-loadout-style-r2.png",
+    "samples/M01-head-proportion-r16.png"
+  ],
+  "prompt": "Use case: precise-object-edit\nAsset type: Full-Armored Complete King head design close-up, one front view.\nPrimary request: Rebuild the hard-to-read and asymmetrical helmet of Complete King. Use the FACE in image 1 exactly as the facial identity reference, but replace its two-horn arrangement with ONE GOLDEN FIVE-PETAL ROYAL CROWN.\n\nInputs:\nImage 1: user's chosen face. Preserve the navy helmet, gold framing, two separate warm ivory/amber eyes under the dark brow, angular nose bridge, broad pale ivory jaw/face mask, small squared chin with crimson chin block, and short gold circular ear hubs. This is King, not the teal robot.\nImage 2: the existing full-armored King: identity palette and clean cel drawing style only, do not keep its cluttered multi-antenna crown.\nImage 3: accepted Unbranded One: line hierarchy, large flat planes, hard cel shadows and naturally tall skull volume only. Do NOT copy its continuous visor, teal colors, forehead block, or two side antennas.\n\nCrown geometry: EXACTLY FIVE tapered gold crown blades on a single crown band, mirrored across the face centerline: ONE vertical central blade, ONE matching inner pair at either side, ONE matching outer pair further out. Count: 1 + 2 + 2 = 5. A graduated royal crown fan; the central blade is tallest, inner blades next, outer blades lowest, each blade a single broad faceted tapered piece with a simple visible root. No extra ears, extra antennae, forked tips or little spikes. The five blades sit above the brow as a connected crown, not as two extra pairs of horns behind another crest. A single navy diamond insignia may be embedded in the crown band, but is not a sixth blade.\n\nView and readability: perfectly centered straight-on front view, eye-level, no tilt or perspective yaw. True bilateral design symmetry including all crown roots, helmet cheeks, eye sockets, ears, face and jaw. Give the actual skull and face full natural vertical volume, chin-to-skull-top visibly taller than wide; DO NOT flatten the head and do not use tall antennae to fake skull height. Strong clearly separated eye/face/helmet color shapes. Crown blades never overlap the face. Head occupies most of a portrait canvas, include entire crown with clear air above and both sides, simple neck and collar below only. No weapons, wings or shoulder cannons hiding the head.\nPalette: King navy, pale ivory, rich flat gold, charcoal, tiny crimson chin, warm pale eyes.\nStyle: current KINETIC CEL game illustration; confident dark contour, two-step hard shadow planes, matte painted armor and modest gold highlights, clean readable shapes. No grime, chrome glare, tiny decorative scratch lines or 3D toy render.\nOne isolated head-and-neck design only on true transparent background. No text, no layout captions, no extra views, no checkerboard painted into pixels.",
+  "transparent_background": true,
+  "source_refs": [
+    {
+      "file": "refs/M05-user-face-D-r3.png",
+      "sha256": "af771807d129f91ab7d281a5f21a763075c7dcdafb72d70b5e29e3d1b751e7cf"
+    },
+    {
+      "file": "samples/M05-full-loadout-style-r2.png",
+      "sha256": "017550aa8e0070bd458e5ad185e0ae5953bf1ec347a76c32a427d59fb9af129a"
+    },
+    {
+      "file": "samples/M01-head-proportion-r16.png",
+      "sha256": "d8ecc8461fa9a1685b6b07ccfc9696970a2efb4eec9642c63bd7969c3e4c6e61"
+    }
+  ]
+}

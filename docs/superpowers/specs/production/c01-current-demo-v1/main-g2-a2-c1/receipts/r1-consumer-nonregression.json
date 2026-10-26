@@ -1,0 +1,1032 @@
+{
+  "asset_consumer_gate": {
+    "audio_binding_count": 15,
+    "binding_count": 39,
+    "binding_receipts": {
+      "VS_AMBIENT_RAIN_CITY": {
+        "binding": {
+          "bus": "AMBIENT",
+          "target": "audio_bed"
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/AudioDirector/Fixture_VS_AMBIENT_RAIN_CITY",
+        "runtime_real": false,
+        "target": "audio_bed"
+      },
+      "VS_BGM_BATTLE": {
+        "binding": {
+          "bus": "BGM",
+          "target": "audio_bed"
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/AudioDirector/Fixture_VS_BGM_BATTLE",
+        "runtime_real": false,
+        "target": "audio_bed"
+      },
+      "VS_BREAKER_QSD": {
+        "binding": {
+          "animation": "state_facing",
+          "compatibility_adapter": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+          "facings": [
+            "north",
+            "east",
+            "south",
+            "west"
+          ],
+          "fixture_atlas_layout": {
+            "facings": [
+              "north",
+              "east",
+              "south",
+              "west"
+            ],
+            "frame_count": 3,
+            "frame_size": [
+              48,
+              48
+            ],
+            "states": [
+              "charge",
+              "contact",
+              "recoil",
+              "side_hit",
+              "red_charge",
+              "knockdown"
+            ]
+          },
+          "pivot": [
+            0.5,
+            0.82
+          ],
+          "states": [
+            "charge",
+            "contact",
+            "recoil",
+            "side_hit",
+            "red_charge",
+            "knockdown"
+          ],
+          "subject_ids": [
+            "ENEMY_C01_BREAKER"
+          ],
+          "target": "world_unit",
+          "z": 26.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticUnitFixtures/Fixture_VS_BREAKER_QSD",
+        "runtime_real": false,
+        "target": "world_unit"
+      },
+      "VS_CUTIN_RISE": {
+        "binding": {
+          "event": "rise",
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "region": [
+            160.0,
+            90.0,
+            960.0,
+            540.0
+          ],
+          "target": "screen_cutin",
+          "z": 50.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/UILayer/PlanningHUD/SemanticScreenFixtures/Fixture_VS_CUTIN_RISE",
+        "runtime_real": false,
+        "target": "screen_cutin"
+      },
+      "VS_CUTIN_SHIELD_BASH": {
+        "binding": {
+          "event": "shield_bash",
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "region": [
+            160.0,
+            90.0,
+            960.0,
+            540.0
+          ],
+          "target": "screen_cutin",
+          "z": 50.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/UILayer/PlanningHUD/SemanticScreenFixtures/Fixture_VS_CUTIN_SHIELD_BASH",
+        "runtime_real": false,
+        "target": "screen_cutin"
+      },
+      "VS_CUTIN_SHIELD_BLOCK": {
+        "binding": {
+          "event": "red_shield_block",
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "region": [
+            160.0,
+            90.0,
+            960.0,
+            540.0
+          ],
+          "target": "screen_cutin",
+          "z": 50.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/UILayer/PlanningHUD/SemanticScreenFixtures/Fixture_VS_CUTIN_SHIELD_BLOCK",
+        "runtime_real": false,
+        "target": "screen_cutin"
+      },
+      "VS_DOUDENG_PERFORMANCE": {
+        "binding": {
+          "compatibility_adapter": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+          "fixture_atlas_layout": {
+            "facings": [
+              "default"
+            ],
+            "frame_count": 3,
+            "frame_size": [
+              48,
+              48
+            ],
+            "states": [
+              "route",
+              "body_warning"
+            ]
+          },
+          "pivot": [
+            0.5,
+            1.0
+          ],
+          "region": [
+            184.0,
+            112.0,
+            150.0,
+            86.0
+          ],
+          "states": [
+            "route",
+            "body_warning"
+          ],
+          "target": "screen_ui",
+          "z": 10.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/UILayer/PlanningHUD/SemanticScreenFixtures/Fixture_VS_DOUDENG_PERFORMANCE",
+        "runtime_real": false,
+        "target": "screen_ui"
+      },
+      "VS_FX_CONTACT_FLASH": {
+        "binding": {
+          "compatibility_adapter": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+          "event": "giant_contact",
+          "fixture_atlas_layout": {
+            "facings": [
+              "default"
+            ],
+            "frame_count": 3,
+            "frame_size": [
+              48,
+              48
+            ],
+            "states": [
+              "flash"
+            ]
+          },
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "state": "flash",
+          "target": "world_fx",
+          "z": 70.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticFxFixtures/Fixture_VS_FX_CONTACT_FLASH",
+        "runtime_real": false,
+        "target": "world_fx"
+      },
+      "VS_FX_RED_IMPACT": {
+        "binding": {
+          "compatibility_adapter": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+          "event": "red_shield_block",
+          "fixture_atlas_layout": {
+            "facings": [
+              "default"
+            ],
+            "frame_count": 3,
+            "frame_size": [
+              48,
+              48
+            ],
+            "states": [
+              "impact"
+            ]
+          },
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "state": "impact",
+          "target": "world_fx",
+          "z": 72.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticFxFixtures/Fixture_VS_FX_RED_IMPACT",
+        "runtime_real": false,
+        "target": "world_fx"
+      },
+      "VS_FX_ROAD_DEBRIS": {
+        "binding": {
+          "compatibility_adapter": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+          "event": "road_red_charge",
+          "fixture_atlas_layout": {
+            "facings": [
+              "default"
+            ],
+            "frame_count": 3,
+            "frame_size": [
+              48,
+              48
+            ],
+            "states": [
+              "debris"
+            ]
+          },
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "state": "debris",
+          "target": "world_fx",
+          "z": 64.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticFxFixtures/Fixture_VS_FX_ROAD_DEBRIS",
+        "runtime_real": false,
+        "target": "world_fx"
+      },
+      "VS_FX_SHIELD_BASH": {
+        "binding": {
+          "compatibility_adapter": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+          "event": "shield_bash",
+          "fixture_atlas_layout": {
+            "facings": [
+              "default"
+            ],
+            "frame_count": 3,
+            "frame_size": [
+              48,
+              48
+            ],
+            "states": [
+              "impact"
+            ]
+          },
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "state": "impact",
+          "target": "world_fx",
+          "z": 72.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticFxFixtures/Fixture_VS_FX_SHIELD_BASH",
+        "runtime_real": false,
+        "target": "world_fx"
+      },
+      "VS_GUARDIAN_QSD": {
+        "binding": {
+          "animation": "state_facing",
+          "compatibility_adapter": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+          "facings": [
+            "north",
+            "east",
+            "south",
+            "west"
+          ],
+          "fixture_atlas_layout": {
+            "facings": [
+              "north",
+              "east",
+              "south",
+              "west"
+            ],
+            "frame_count": 3,
+            "frame_size": [
+              48,
+              48
+            ],
+            "states": [
+              "idle",
+              "move",
+              "brace",
+              "contact",
+              "recoil",
+              "shield"
+            ]
+          },
+          "pivot": [
+            0.5,
+            0.88
+          ],
+          "states": [
+            "idle",
+            "move",
+            "brace",
+            "contact",
+            "recoil",
+            "shield"
+          ],
+          "subject_ids": [
+            "V353U001"
+          ],
+          "target": "world_unit",
+          "z": 24.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticUnitFixtures/Fixture_VS_GUARDIAN_QSD",
+        "runtime_real": false,
+        "target": "world_unit"
+      },
+      "VS_JICUN_PERFORMANCE": {
+        "binding": {
+          "compatibility_adapter": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+          "fixture_atlas_layout": {
+            "facings": [
+              "default"
+            ],
+            "frame_count": 3,
+            "frame_size": [
+              48,
+              48
+            ],
+            "states": [
+              "route",
+              "danger",
+              "contact"
+            ]
+          },
+          "pivot": [
+            0.5,
+            1.0
+          ],
+          "region": [
+            24.0,
+            112.0,
+            150.0,
+            86.0
+          ],
+          "states": [
+            "route",
+            "danger",
+            "contact"
+          ],
+          "target": "screen_ui",
+          "z": 10.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/UILayer/PlanningHUD/SemanticScreenFixtures/Fixture_VS_JICUN_PERFORMANCE",
+        "runtime_real": false,
+        "target": "screen_ui"
+      },
+      "VS_MAP_BASE": {
+        "binding": {
+          "layer": "base",
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "target": "map_layer",
+          "world_anchor": [
+            15.0,
+            8.0
+          ],
+          "z": -120.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticMapFixtures/Fixture_VS_MAP_BASE",
+        "runtime_real": false,
+        "target": "map_layer"
+      },
+      "VS_MAP_BUILDINGS": {
+        "binding": {
+          "layer": "buildings",
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "target": "map_layer",
+          "world_anchor": [
+            15.0,
+            8.0
+          ],
+          "z": -80.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticMapFixtures/Fixture_VS_MAP_BUILDINGS",
+        "runtime_real": false,
+        "target": "map_layer"
+      },
+      "VS_MAP_FOREGROUND": {
+        "binding": {
+          "layer": "foreground",
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "target": "map_layer",
+          "world_anchor": [
+            15.0,
+            8.0
+          ],
+          "z": 90.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticMapFixtures/Fixture_VS_MAP_FOREGROUND",
+        "runtime_real": false,
+        "target": "map_layer"
+      },
+      "VS_MAP_LIGHTING": {
+        "binding": {
+          "layer": "lighting",
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "target": "map_layer",
+          "world_anchor": [
+            15.0,
+            8.0
+          ],
+          "z": 100.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticMapFixtures/Fixture_VS_MAP_LIGHTING",
+        "runtime_real": false,
+        "target": "map_layer"
+      },
+      "VS_MAP_OCCLUSION": {
+        "binding": {
+          "layer": "occlusion",
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "target": "map_layer",
+          "world_anchor": [
+            15.0,
+            8.0
+          ],
+          "z": 95.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticMapFixtures/Fixture_VS_MAP_OCCLUSION",
+        "runtime_real": false,
+        "target": "map_layer"
+      },
+      "VS_MAP_ROOFS": {
+        "binding": {
+          "layer": "roofs",
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "target": "map_layer",
+          "world_anchor": [
+            15.0,
+            8.0
+          ],
+          "z": 40.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticMapFixtures/Fixture_VS_MAP_ROOFS",
+        "runtime_real": false,
+        "target": "map_layer"
+      },
+      "VS_OLD_GUARDIAN_CONTACT": {
+        "binding": {
+          "pivot": [
+            0.5,
+            1.0
+          ],
+          "region": [
+            344.0,
+            112.0,
+            150.0,
+            86.0
+          ],
+          "source": "guardian_body",
+          "state": "contact",
+          "target": "screen_ui_source",
+          "z": 10.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/UILayer/PlanningHUD/SemanticScreenFixtures/Fixture_VS_OLD_GUARDIAN_CONTACT",
+        "runtime_real": false,
+        "target": "screen_ui_source"
+      },
+      "VS_OLD_GUARDIAN_GUIDE": {
+        "binding": {
+          "pivot": [
+            0.5,
+            1.0
+          ],
+          "region": [
+            344.0,
+            112.0,
+            150.0,
+            86.0
+          ],
+          "source": "guardian_body",
+          "state": "guide",
+          "target": "screen_ui_source",
+          "z": 10.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/UILayer/PlanningHUD/SemanticScreenFixtures/Fixture_VS_OLD_GUARDIAN_GUIDE",
+        "runtime_real": false,
+        "target": "screen_ui_source"
+      },
+      "VS_OLD_GUARDIAN_SHIELD_GAZE": {
+        "binding": {
+          "pivot": [
+            0.5,
+            1.0
+          ],
+          "region": [
+            344.0,
+            112.0,
+            150.0,
+            86.0
+          ],
+          "source": "guardian_body",
+          "state": "shield_gaze",
+          "target": "screen_ui_source",
+          "z": 10.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/UILayer/PlanningHUD/SemanticScreenFixtures/Fixture_VS_OLD_GUARDIAN_SHIELD_GAZE",
+        "runtime_real": false,
+        "target": "screen_ui_source"
+      },
+      "VS_QIHAI_REMOTE": {
+        "binding": {
+          "compatibility_adapter": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+          "fixture_atlas_layout": {
+            "facings": [
+              "default"
+            ],
+            "frame_count": 3,
+            "frame_size": [
+              48,
+              48
+            ],
+            "states": [
+              "remote_status",
+              "withdrawal_confirmed",
+              "observing"
+            ]
+          },
+          "pivot": [
+            0.5,
+            1.0
+          ],
+          "region": [
+            1104.0,
+            112.0,
+            150.0,
+            86.0
+          ],
+          "states": [
+            "remote_status",
+            "withdrawal_confirmed",
+            "observing"
+          ],
+          "target": "screen_ui_remote",
+          "z": 10.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/UILayer/PlanningHUD/SemanticScreenFixtures/Fixture_VS_QIHAI_REMOTE",
+        "runtime_real": false,
+        "target": "screen_ui_remote"
+      },
+      "VS_SFX_BODY_WEIGHT": {
+        "binding": {
+          "bus": "IMPACT",
+          "target": "audio"
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/AudioDirector/Fixture_VS_SFX_BODY_WEIGHT",
+        "runtime_real": false,
+        "target": "audio"
+      },
+      "VS_SFX_CITY_ARTILLERY": {
+        "binding": {
+          "bus": "IMPACT",
+          "target": "audio"
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/AudioDirector/Fixture_VS_SFX_CITY_ARTILLERY",
+        "runtime_real": false,
+        "target": "audio"
+      },
+      "VS_SFX_DEBRIS": {
+        "binding": {
+          "bus": "DEBRIS_MACHINERY",
+          "target": "audio"
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/AudioDirector/Fixture_VS_SFX_DEBRIS",
+        "runtime_real": false,
+        "target": "audio"
+      },
+      "VS_SFX_METAL_COMPRESSION": {
+        "binding": {
+          "bus": "IMPACT",
+          "target": "audio"
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/AudioDirector/Fixture_VS_SFX_METAL_COMPRESSION",
+        "runtime_real": false,
+        "target": "audio"
+      },
+      "VS_SFX_RED_CHARGE": {
+        "binding": {
+          "bus": "DEBRIS_MACHINERY",
+          "target": "audio"
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/AudioDirector/Fixture_VS_SFX_RED_CHARGE",
+        "runtime_real": false,
+        "target": "audio"
+      },
+      "VS_SFX_RED_HUM": {
+        "binding": {
+          "bus": "AMBIENT",
+          "target": "audio"
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/AudioDirector/Fixture_VS_SFX_RED_HUM",
+        "runtime_real": false,
+        "target": "audio"
+      },
+      "VS_SFX_ROAD_BREAK": {
+        "binding": {
+          "bus": "DEBRIS_MACHINERY",
+          "target": "audio"
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/AudioDirector/Fixture_VS_SFX_ROAD_BREAK",
+        "runtime_real": false,
+        "target": "audio"
+      },
+      "VS_SFX_SERVO": {
+        "binding": {
+          "bus": "DEBRIS_MACHINERY",
+          "target": "audio"
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/AudioDirector/Fixture_VS_SFX_SERVO",
+        "runtime_real": false,
+        "target": "audio"
+      },
+      "VS_SFX_SHIELD_BASH": {
+        "binding": {
+          "bus": "IMPACT",
+          "target": "audio"
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/AudioDirector/Fixture_VS_SFX_SHIELD_BASH",
+        "runtime_real": false,
+        "target": "audio"
+      },
+      "VS_SFX_SHIELD_IMPACT": {
+        "binding": {
+          "bus": "IMPACT",
+          "target": "audio"
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/AudioDirector/Fixture_VS_SFX_SHIELD_IMPACT",
+        "runtime_real": false,
+        "target": "audio"
+      },
+      "VS_SFX_SWARM_SKITTER": {
+        "binding": {
+          "bus": "DEBRIS_MACHINERY",
+          "target": "audio"
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/AudioDirector/Fixture_VS_SFX_SWARM_SKITTER",
+        "runtime_real": false,
+        "target": "audio"
+      },
+      "VS_SFX_VEHICLE_DRIVE": {
+        "binding": {
+          "bus": "DEBRIS_MACHINERY",
+          "target": "audio"
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/AudioDirector/Fixture_VS_SFX_VEHICLE_DRIVE",
+        "runtime_real": false,
+        "target": "audio"
+      },
+      "VS_SHIELD_STATES": {
+        "binding": {
+          "animation": "state",
+          "compatibility_adapter": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+          "facings": [
+            "south"
+          ],
+          "fixture_atlas_layout": {
+            "facings": [
+              "south"
+            ],
+            "frame_count": 3,
+            "frame_size": [
+              48,
+              48
+            ],
+            "states": [
+              "wall_hung_3_scorches",
+              "held_cold",
+              "held_red_blocked_4_scorches_heat_deformed"
+            ]
+          },
+          "pivot": [
+            0.5,
+            0.85
+          ],
+          "states": [
+            "wall_hung_3_scorches",
+            "held_cold",
+            "held_red_blocked_4_scorches_heat_deformed"
+          ],
+          "subject_ids": [
+            "PROP_C01CDV1_RETIRED_SHIELD"
+          ],
+          "target": "world_object",
+          "z": 28.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticUnitFixtures/Fixture_VS_SHIELD_STATES",
+        "runtime_real": false,
+        "target": "world_object"
+      },
+      "VS_SWARM_QSD": {
+        "binding": {
+          "animation": "state_facing",
+          "compatibility_adapter": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+          "facings": [
+            "north",
+            "east",
+            "south",
+            "west"
+          ],
+          "fixture_atlas_layout": {
+            "facings": [
+              "north",
+              "east",
+              "south",
+              "west"
+            ],
+            "frame_count": 3,
+            "frame_size": [
+              48,
+              48
+            ],
+            "states": [
+              "idle",
+              "move",
+              "deflected",
+              "scattered"
+            ]
+          },
+          "pivot": [
+            0.5,
+            0.75
+          ],
+          "states": [
+            "idle",
+            "move",
+            "deflected",
+            "scattered"
+          ],
+          "subject_prefix": "ENEMY_C01_RIFT_SWARM_",
+          "target": "world_unit_group",
+          "z": 20.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticUnitFixtures/Fixture_VS_SWARM_QSD",
+        "runtime_real": false,
+        "target": "world_unit_group"
+      },
+      "VS_VEHICLE_EAST": {
+        "binding": {
+          "animation": "state_facing",
+          "compatibility_adapter": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+          "facings": [
+            "east"
+          ],
+          "fixture_atlas_layout": {
+            "facings": [
+              "east"
+            ],
+            "frame_count": 3,
+            "frame_size": [
+              48,
+              48
+            ],
+            "states": [
+              "waiting",
+              "drive",
+              "passed"
+            ]
+          },
+          "kind": "emergency_vehicle",
+          "pivot": [
+            0.5,
+            0.72
+          ],
+          "states": [
+            "waiting",
+            "drive",
+            "passed"
+          ],
+          "subject_prefix": "TARGET_C01_",
+          "target": "world_unit_group",
+          "z": 18.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticUnitFixtures/Fixture_VS_VEHICLE_EAST",
+        "runtime_real": false,
+        "target": "world_unit_group"
+      },
+      "VS_VOICE_OLD_GUARDIAN": {
+        "binding": {
+          "bus": "VOICE",
+          "target": "audio"
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/AudioDirector/Fixture_VS_VOICE_OLD_GUARDIAN",
+        "runtime_real": false,
+        "target": "audio"
+      }
+    },
+    "consumer_count": 39,
+    "fixture_consumer_count": 39,
+    "fx_binding_count": 4,
+    "integrated_visual_playtest_ready": false,
+    "map_binding_count": 6,
+    "real_consumer_count": 0,
+    "runtime_art_loaded": 0,
+    "screen_binding_count": 9,
+    "technical_schematic_overlay_count": 0,
+    "unit_binding_count": 5
+  },
+  "breaker": {
+    "contact_region": [
+      96.0,
+      192.0,
+      48.0,
+      48.0
+    ],
+    "layout": {
+      "facings": [
+        "north",
+        "east",
+        "south",
+        "west"
+      ],
+      "frame_count": 3,
+      "frame_size": [
+        48,
+        48
+      ],
+      "states": [
+        "charge",
+        "contact",
+        "recoil",
+        "side_hit",
+        "red_charge",
+        "knockdown"
+      ]
+    },
+    "motion_regions": [
+      [
+        0.0,
+        0.0,
+        48.0,
+        48.0
+      ],
+      [
+        48.0,
+        0.0,
+        48.0,
+        48.0
+      ],
+      [
+        96.0,
+        0.0,
+        48.0,
+        48.0
+      ]
+    ],
+    "texture_class": "AtlasTexture"
+  },
+  "contact_fx_lifecycle": {
+    "held": true,
+    "hidden_after": true,
+    "hidden_before": true,
+    "shown": true
+  },
+  "evidence_class": "internal_synthetic_fixture_runtime_evidence_only",
+  "guardian": {
+    "contact_region": [
+      96.0,
+      672.0,
+      48.0,
+      48.0
+    ],
+    "layout": {
+      "facings": [
+        "north",
+        "east",
+        "south",
+        "west"
+      ],
+      "frame_count": 3,
+      "frame_size": [
+        48,
+        48
+      ],
+      "states": [
+        "idle",
+        "move",
+        "brace",
+        "contact",
+        "recoil",
+        "shield"
+      ]
+    },
+    "motion_regions": [
+      [
+        0.0,
+        480.0,
+        48.0,
+        48.0
+      ],
+      [
+        48.0,
+        480.0,
+        48.0,
+        48.0
+      ],
+      [
+        96.0,
+        480.0,
+        48.0,
+        48.0
+      ]
+    ],
+    "texture_class": "AtlasTexture"
+  },
+  "jicun": {
+    "contact_region": [
+      96.0,
+      96.0,
+      48.0,
+      48.0
+    ],
+    "planning_region": [
+      0.0,
+      48.0,
+      48.0,
+      48.0
+    ],
+    "public_region": [
+      0.0,
+      0.0,
+      48.0,
+      48.0
+    ],
+    "texture_class": "AtlasTexture"
+  },
+  "old_guardian_visibility": {
+    "contact_shown": true,
+    "guide_after": true,
+    "guide_before": true
+  },
+  "real_art_loaded": 0,
+  "shield_block_cutin_lifecycle": {
+    "held": true,
+    "hidden_after": true,
+    "hidden_before": true,
+    "shown": true
+  },
+  "user_visual_capture": false
+}

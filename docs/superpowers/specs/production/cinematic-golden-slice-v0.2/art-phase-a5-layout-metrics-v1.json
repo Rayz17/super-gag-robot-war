@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "scene_id": "SCN_C01_RM_RESCUE_2P5D_V01",
+  "contract_id": "C01_RM_2P5D_PERSPECTIVE_TRIAL_V1",
+  "world_art_canvas": [1920, 900],
+  "viewport": [1280, 720],
+  "phase_b_generation_allowed": false,
+  "camera_crop_y": 90,
+  "camera_zones": {
+    "ZONE_A_ENTRY": {"rect": [0, 90, 1280, 720], "center": [640, 450]},
+    "ZONE_B_REAL_MACHINE": {"rect": [320, 90, 1280, 720], "center": [960, 450]},
+    "ZONE_C_OLD_DOOR_LOW_HEAT": {"rect": [640, 90, 1280, 720], "center": [1280, 450]}
+  },
+  "ui_safe_area_screen": {"left": 32, "top": 56, "right": 32, "bottom": 118},
+  "ground_action_band_screen_y": [430, 650],
+  "ground_turn_global_y": 410,
+  "walkable_trapezoid_global": [[90, 510], [1810, 510], [1900, 760], [40, 760]],
+  "footlines_global_y": {"far": 525, "mid": 625, "near": 725},
+  "v03_source_crop": [320, 90, 1280, 720],
+  "v03_actor_samples": {
+    "doudeng": {"screen_foot": [180, 555], "height_px": 180},
+    "visitor": {"screen_foot": [1185, 575], "height_px": 175},
+    "jicun": {"screen_foot": [680, 605], "height_px": 190},
+    "tangjiao": {"screen_foot": [410, 620], "height_px": 200},
+    "diedie": {"screen_foot": [810, 615], "height_px": 78},
+    "machine_dog": {"screen_foot": [965, 635], "height_px": 84}
+  },
+  "world_anchor_crosswalk": {
+    "source_world_width": 2040,
+    "art_world_width": 1920,
+    "x_scale": 0.9411764706,
+    "anchors": {
+      "doudeng": {"program": [425, 555], "scaled_program_x": 400, "art": [400, 575]},
+      "tangjiao": {"program": [665, 650], "scaled_program_x": 626, "art": [626, 650]},
+      "diedie": {"program": [1030, 590], "scaled_program_x": 969, "art": [969, 605]},
+      "recharge": {"program": [1125, 765], "scaled_program_x": 1059, "art": [1059, 730]},
+      "machine_dog": {"program": [1260, 705], "scaled_program_x": 1186, "art": [1186, 690]},
+      "low_heat": {"program": [1420, 500], "scaled_program_x": 1336, "art": [1336, 520]},
+      "visitor": {"program": [1540, 605], "scaled_program_x": 1449, "art": [1449, 610]},
+      "old_door": {"program": [1780, 565], "scaled_program_x": 1675, "art": [1675, 560]}
+    }
+  },
+  "program_camera_trial_delta": {
+    "program_targets_2040_world": [[620, 555], [1080, 565], [1530, 560]],
+    "scaled_x_on_1920": [584, 1016, 1440],
+    "art_centers_x": [640, 960, 1280],
+    "required_x_adjustment": [56, -56, -160],
+    "program_effective_y_after_clamp": 540,
+    "art_center_y": 450,
+    "required_y_adjustment": -90
+  },
+  "scale_bridge": {
+    "adult_heights_px": [165, 190, 220],
+    "small_robot_heights_px": [60, 80, 100],
+    "pivot_rule": "foot_center"
+  }
+}

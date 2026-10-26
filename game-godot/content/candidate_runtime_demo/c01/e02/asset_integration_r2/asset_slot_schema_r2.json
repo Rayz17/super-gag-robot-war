@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:chao-gag:c01cdv1:m2.1:r2:asset-slot-schema:v2",
+  "title": "C01E02 Revision-2 Candidate Asset Integration Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "manifest_id",
+    "schema_version",
+    "runtime_lane",
+    "status",
+    "contract_binding",
+    "profile_binding",
+    "asset_policy",
+    "constraint_profiles",
+    "direction_receipts",
+    "approved_handoffs",
+    "slots",
+    "instance_bindings"
+  ],
+  "properties": {
+    "manifest_id": {"const": "C01CDV1-M2.1-R2-ASSET-INTEGRATION-V2"},
+    "schema_version": {"const": "2.0.0"},
+    "runtime_lane": {"const": "candidate_runtime_demo"},
+    "status": {"const": "revision_2_interface_only_zero_runtime_art"},
+    "contract_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["contract_id", "contract_revision", "build_id", "save_schema", "content_fingerprint", "producer_contract_path", "producer_contract_sha256"],
+      "properties": {
+        "contract_id": {"const": "C01CDV1"},
+        "contract_revision": {"const": 2},
+        "build_id": {"const": "C01CDV1-M2-R2"},
+        "save_schema": {"const": 2},
+        "content_fingerprint": {"const": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4"},
+        "producer_contract_path": {"type": "string"},
+        "producer_contract_sha256": {"pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "profile_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["profile_id", "topology_sha256", "grid", "projection", "camera_owner"],
+      "properties": {
+        "profile_id": {"const": "c01cdv1_e02_scroll_m2_r2"},
+        "topology_sha256": {"const": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8"},
+        "grid": {"const": [32, 18]},
+        "projection": {"const": "isometric_tile_half_40x20"},
+        "camera_owner": {"const": "M2_program_smooth_scroll"}
+      }
+    },
+    "asset_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["producer_handoff_required", "resource_root", "no_implicit_asset_search", "probe_after_metadata_authorization_only", "default_resolution", "path_policy", "runtime_art_loaded"],
+      "properties": {
+        "producer_handoff_required": {"const": true},
+        "resource_root": {"const": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/"},
+        "no_implicit_asset_search": {"const": true},
+        "probe_after_metadata_authorization_only": {"const": true},
+        "default_resolution": {"const": "named_geometry_fallback"},
+        "path_policy": {"const": "normalized_realpath_inside_candidate_root_no_symlink_escape"},
+        "runtime_art_loaded": {"const": false}
+      }
+    },
+    "constraint_profiles": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/constraintProfile"}
+    },
+    "direction_receipts": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/directionReceipt"}
+    },
+    "approved_handoffs": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/handoff"}
+    },
+    "slots": {
+      "type": "array",
+      "minItems": 40,
+      "items": {"$ref": "#/$defs/slot"}
+    },
+    "instance_bindings": {
+      "type": "array",
+      "minItems": 12,
+      "items": {"$ref": "#/$defs/instanceBinding"}
+    }
+  },
+  "$defs": {
+    "vec2": {
+      "type": "array",
+      "prefixItems": [{"type": "number"}, {"type": "number"}],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "rect": {
+      "type": "array",
+      "prefixItems": [{"type": "integer"}, {"type": "integer"}, {"type": "integer"}, {"type": "integer"}],
+      "items": false,
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "constraintProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["media_type", "allowed_extensions", "allowed_dimensions", "alpha", "pivot", "atlas_required", "required_actions", "facings"],
+      "properties": {
+        "media_type": {"enum": ["image", "audio", "video"]},
+        "allowed_extensions": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "allowed_dimensions": {"type": "array", "items": {"$ref": "#/$defs/vec2"}},
+        "alpha": {"enum": ["required", "forbidden", "optional", "not_applicable"]},
+        "pivot": {"$ref": "#/$defs/vec2"},
+        "atlas_required": {"type": "boolean"},
+        "required_actions": {"type": "array", "items": {"type": "string"}},
+        "optional_actions": {"type": "array", "items": {"type": "string"}},
+        "facings": {"type": "array", "items": {"enum": ["north", "east", "south", "west", "screen", "none"]}},
+        "preview_sizes_px": {"type": "array", "items": {"enum": [96, 128]}},
+        "allowed_codecs": {"type": "array", "items": {"type": "string"}},
+        "duration_seconds": {"$ref": "#/$defs/vec2"},
+        "fps": {"$ref": "#/$defs/vec2"},
+        "sample_rates": {"type": "array", "items": {"type": "integer"}},
+        "channels": {"type": "array", "items": {"type": "integer"}}
+      }
+    },
+    "fallback": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fallback_id", "geometry", "label"],
+      "properties": {
+        "fallback_id": {"type": "string", "minLength": 1},
+        "geometry": {"type": "string", "minLength": 1},
+        "label": {"type": "string", "minLength": 1}
+      }
+    },
+    "slot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slot_id", "expected_stable_id", "subject_id", "usage", "slot_kind", "accepted_binding_kind", "constraint_profile", "topology_required", "runtime_allowed", "approved_asset_binding", "fallback"],
+      "properties": {
+        "slot_id": {"type": "string", "minLength": 1},
+        "expected_stable_id": {"type": "string", "minLength": 1},
+        "subject_id": {"type": "string", "minLength": 1},
+        "usage": {"type": "string", "minLength": 1},
+        "slot_kind": {"enum": ["map_layer", "tactical_qsd", "world_sprite", "screen_portrait", "world_prop", "static_cutin", "fx_sheet", "audio", "optional_video"]},
+        "accepted_binding_kind": {"enum": ["static_image", "sprite_sheet", "audio_stream", "video_stream"]},
+        "constraint_profile": {"type": "string", "minLength": 1},
+        "topology_required": {"type": "boolean"},
+        "runtime_allowed": {"type": "boolean"},
+        "approved_asset_binding": {"type": ["string", "null"]},
+        "footprint": {"$ref": "#/$defs/vec2"},
+        "semantic_result_id": {"type": "string"},
+        "static_fallback_slot_id": {"type": "string"},
+        "fallback": {"$ref": "#/$defs/fallback"}
+      }
+    },
+    "directionReceipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["receipt_id", "slot_id", "expected_stable_id", "receipt_path", "scope", "runtime_allowed", "runtime_handoff", "registration_only"],
+      "properties": {
+        "receipt_id": {"type": "string"},
+        "slot_id": {"type": "string"},
+        "expected_stable_id": {"type": "string"},
+        "receipt_path": {"type": "string"},
+        "scope": {"const": "direction_approval_only"},
+        "runtime_allowed": {"const": false},
+        "runtime_handoff": {"const": "none"},
+        "registration_only": {"const": true}
+      }
+    },
+    "instanceBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["instance_stable_id", "master_slot_id", "anchor", "footprint", "facing", "role"],
+      "properties": {
+        "instance_stable_id": {"type": "string"},
+        "master_slot_id": {"type": "string"},
+        "anchor": {"$ref": "#/$defs/vec2"},
+        "footprint": {"$ref": "#/$defs/vec2"},
+        "facing": {"enum": ["north", "east", "south", "west", "none"]},
+        "role": {"type": "string"}
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["producer_handoff_id", "stable_id", "subject_id", "slot_id", "usage", "approval_state", "runtime_allowed", "contract_revision", "build_id", "profile_id", "content_fingerprint", "topology_sha256", "authorization_scope", "lifecycle_status", "resource_path", "sha256", "binding_kind", "native_size", "has_alpha", "pivot", "atlas", "actions", "facings", "media_parameters"],
+      "properties": {
+        "producer_handoff_id": {"type": "string", "minLength": 1},
+        "stable_id": {"type": "string", "minLength": 1},
+        "subject_id": {"type": "string", "minLength": 1},
+        "slot_id": {"type": "string", "minLength": 1},
+        "usage": {"type": "string", "minLength": 1},
+        "approval_state": {"const": "producer_exact_handoff"},
+        "runtime_allowed": {"const": true},
+        "contract_revision": {"const": 2},
+        "build_id": {"const": "C01CDV1-M2-R2"},
+        "profile_id": {"const": "c01cdv1_e02_scroll_m2_r2"},
+        "content_fingerprint": {"pattern": "^[0-9a-f]{64}$"},
+        "topology_sha256": {"type": "string"},
+        "authorization_scope": {"const": "C01E02_M2_2_EXACT_SLOT_HANDOFF"},
+        "lifecycle_status": {"const": "active"},
+        "resource_path": {"type": "string", "minLength": 1},
+        "sha256": {"pattern": "^[0-9a-f]{64}$"},
+        "binding_kind": {"enum": ["static_image", "sprite_sheet", "audio_stream", "video_stream"]},
+        "native_size": {"$ref": "#/$defs/vec2"},
+        "has_alpha": {"type": "boolean"},
+        "pivot": {"$ref": "#/$defs/vec2"},
+        "atlas": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["frames"],
+          "properties": {
+            "frames": {"type": "object", "additionalProperties": {"$ref": "#/$defs/rect"}}
+          }
+        },
+        "actions": {"type": "array", "items": {"type": "string"}},
+        "facings": {"type": "array", "items": {"type": "string"}},
+        "media_parameters": {"type": "object"}
+      }
+    }
+  }
+}

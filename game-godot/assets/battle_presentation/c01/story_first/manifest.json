@@ -1,0 +1,838 @@
+{
+  "manifest_id": "BP_C01E01_STORY_FIRST_RUNTIME_VALIDATION_V01",
+  "runtime_scope": "runtime_validation_only",
+  "canon_refs": [
+    "DOC_V359_C01E01_STORY_FIRST_V1",
+    "V353U038",
+    "V353U040",
+    "V353U001",
+    "ENEMY_SAMPLE_PATCH",
+    "ENEMY_SEAL_PATH_FRAME",
+    "CML008"
+  ],
+  "assets": [
+    {
+      "asset_id": "SPR_C01E01_DIEDIE_IDLE_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/story_first/sprite_diedie_idle_v01.png",
+      "source_path": "codex-generated://019ed8a6-45f0-7c53-93be-5e78cff88cc2/diedie-idle",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true,
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py",
+      "prompt_version": "C01E01-DIEDIE-IDLE-v1"
+    },
+    {
+      "asset_id": "SPR_C01E01_MACHINE_DOG_IDLE_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/story_first/sprite_machine_dog_idle_v01.png",
+      "source_path": "codex-generated://019ed8a6-45f0-7c53-93be-5e78cff88cc2/machine-dog-idle",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true,
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py",
+      "prompt_version": "C01E01-MACHINE-DOG-IDLE-v1"
+    },
+    {
+      "asset_id": "SPR_C01E01_EVAC_GROUP_BASE_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/story_first/sprite_evac_group_base_v01.png",
+      "source_path": "codex-generated://019ed8a6-45f0-7c53-93be-5e78cff88cc2/evac-group-base",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true,
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py",
+      "prompt_version": "C01E01-EVAC-GROUP-v1"
+    },
+    {
+      "asset_id": "SPR_C01E01_PATH_FRAME_RECLOSING_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/story_first/sprite_path_frame_reclosing_v01.png",
+      "source_path": "codex-generated://019ed8a6-45f0-7c53-93be-5e78cff88cc2/path-frame-reclosing",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true,
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py",
+      "prompt_version": "C01E01-PATH-FRAME-RECLOSING-v1"
+    },
+    {
+      "asset_id": "SPR_C01E01_STATUS_PATCHER_ACTIVE_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/story_first/sprite_status_patcher_active_v01.png",
+      "source_path": "codex-generated://019ed8a6-45f0-7c53-93be-5e78cff88cc2/status-patcher-active",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true,
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py",
+      "prompt_version": "C01E01-STATUS-PATCHER-v1"
+    },
+    {
+      "asset_id": "SPR_C01E02_FIRE_BRIDGE_DEPLOYED_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/fire_bridge/sprite_fire_bridge_deployed_v01.png",
+      "source_path": "codex-generated://019ed8a6-45f0-7c53-93be-5e78cff88cc2/fire-bridge-deployed",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true,
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py",
+      "prompt_version": "C01E02-FIRE-BRIDGE-DEPLOYED-v1"
+    },
+    {
+      "asset_id": "SPR_C01_JICUN_WALK_STRIP_V01",
+      "runtime_path": "res://assets/characters/story_first/sprite_jicun_walk_right_strip_v01.png",
+      "source_path": "project-authored://jicun-walk-strip",
+      "source_rect": [511, 0, 511, 769],
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true,
+      "source_model_or_tool": "Existing project character sprite",
+      "prompt_version": "JICUN-C01-WALK-v1"
+    },
+    {
+      "asset_id": "SPR_GZ_C01_KNEEL_IDLE_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_kneel_idle_v01.png",
+      "source_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/sprite_gz_c01_kneel_idle_v01.png",
+      "approval_status": "approved_for_runtime",
+      "runtime_allowed": true,
+      "source_model_or_tool": "Existing locked Guardian Z runtime asset",
+      "prompt_version": "GZ-C01-MAP-IDLE-v1"
+    },
+    {
+      "asset_id": "POSE_GZ_C01_KNEEL_CONTACT_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/guardian_z/pose_gz_c01_kneel_contact_v01.png",
+      "source_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/pose_gz_c01_kneel_contact_v01.png",
+      "approval_status": "approved_for_runtime",
+      "runtime_allowed": true,
+      "source_model_or_tool": "Existing locked Guardian Z runtime asset",
+      "prompt_version": "GZ-C01-KNEEL-CONTACT-v1"
+    },
+    {
+      "asset_id": "UNIT_C01E03_BRAVE_FIST_V01",
+      "runtime_path": "res://assets/units/unit_brave_fist.svg",
+      "source_path": "project-authored://unit_brave_fist",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true,
+      "source_model_or_tool": "Existing project vector asset",
+      "prompt_version": "BRAVE-FIST-MAP-v1"
+    },
+    {
+      "asset_id": "UNIT_C01E03_BAIHAN_FRAME_V01",
+      "runtime_path": "res://assets/units/enemy_seal_frame.svg",
+      "source_path": "project-authored://enemy_seal_frame",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true,
+      "source_model_or_tool": "Existing project vector asset",
+      "prompt_version": "BAIHAN-GRAYBOX-MAP-v1"
+    },
+    {
+      "asset_id": "CUTIN_C01E03_HAOSI_V01",
+      "runtime_path": "res://assets/portraits/portrait_haosi.png",
+      "source_path": "project-authored://portrait_haosi",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true,
+      "source_model_or_tool": "Existing project cut-in asset",
+      "prompt_version": "HAOSI-C01E03-PILOT-CUTIN-v2"
+    },
+    {
+      "asset_id": "CUTIN_C01E03_DOUDENG_TENSE_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/guardian_z/cutin_doudeng_c01_tense_v01.png",
+      "source_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/cutin_doudeng_c01_tense_v01.png",
+      "approval_status": "approved_for_runtime",
+      "runtime_allowed": true,
+      "source_model_or_tool": "Existing locked Doudeng runtime asset",
+      "prompt_version": "DOUDENG-C01-TENSE-v1"
+    },
+    {
+      "asset_id": "SPR_GZ_C01_SINGLE_ARM_SUPPORT_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_single_arm_support_v01.png",
+      "source_path": "codex-generated://019ed8a6-45f0-7c53-93be-5e78cff88cc2/guardian-z-single-arm-support",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true,
+      "source_model_or_tool": "OpenAI built-in imagegen edit; remove_chroma_key.py",
+      "prompt_version": "GZ-C01E04-SINGLE-ARM-SUPPORT-v1"
+    },
+    {
+      "asset_id": "SPR_SEAL_DRONE_C01_IDLE_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_idle_v01.png",
+      "source_path": "project-authored://seal-drone-idle",
+      "approval_status": "approved_for_runtime",
+      "runtime_allowed": true,
+      "source_model_or_tool": "Existing C01 seal drone runtime asset",
+      "prompt_version": "SEAL-DRONE-C01-IDLE-v1"
+    },
+    {
+      "asset_id": "SPR_SEAL_DRONE_C01_SCAN_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_scan_v01.png",
+      "source_path": "project-authored://seal-drone-scan",
+      "approval_status": "approved_for_runtime",
+      "runtime_allowed": true,
+      "source_model_or_tool": "Existing C01 seal drone runtime asset",
+      "prompt_version": "SEAL-DRONE-C01-SCAN-v1"
+    },
+    {
+      "asset_id": "SPR_SEAL_DRONE_C01_LOCK_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_lock_v01.png",
+      "source_path": "project-authored://seal-drone-lock",
+      "approval_status": "approved_for_runtime",
+      "runtime_allowed": true,
+      "source_model_or_tool": "Existing C01 seal drone runtime asset",
+      "prompt_version": "SEAL-DRONE-C01-LOCK-v1"
+    },
+    {
+      "asset_id": "POSE_WANJI_C01E04_CARRIER_V01",
+      "runtime_path": "res://assets/tactical_maps/story_first/spr_wanji_mobile_chassis_v01.png",
+      "source_path": ".superpowers/brainstorm/37837-1782033239/content/asset-production/v31-c01-complete-v1/wanji_mobile_chassis.png",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true,
+      "source_model_or_tool": "OpenAI built-in imagegen",
+      "prompt_version": "WANJI-C01E04-MOBILE-CHASSIS-v1"
+    }
+  ],
+  "unit_visuals": [
+    {
+      "unit_id": "diedie",
+      "states": {
+        "default": "SPR_C01E01_DIEDIE_IDLE_V01",
+        "READY": "SPR_C01E01_DIEDIE_IDLE_V01",
+        "MOVED_READY": "SPR_C01E01_DIEDIE_IDLE_V01",
+        "ACTIVE_FALL": "SPR_C01E01_DIEDIE_IDLE_V01",
+        "DONE": "SPR_C01E01_DIEDIE_IDLE_V01"
+      },
+      "draw_size": [52, 52],
+      "offset": [0, -13],
+      "dim_when_done": true
+    },
+    {
+      "unit_id": "machine_dog",
+      "states": {
+        "default": "SPR_C01E01_MACHINE_DOG_IDLE_V01",
+        "READY": "SPR_C01E01_MACHINE_DOG_IDLE_V01",
+        "MOVED_READY": "SPR_C01E01_MACHINE_DOG_IDLE_V01",
+        "DONE": "SPR_C01E01_MACHINE_DOG_IDLE_V01"
+      },
+      "draw_size": [58, 58],
+      "offset": [0, -13],
+      "dim_when_done": true
+    },
+    {
+      "unit_id": "evac_a11",
+      "states": {"default": "SPR_C01E01_EVAC_GROUP_BASE_V01"},
+      "draw_size": [46, 46],
+      "offset": [0, -11],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "evac_b10",
+      "states": {"default": "SPR_C01E01_EVAC_GROUP_BASE_V01"},
+      "draw_size": [46, 46],
+      "offset": [0, -11],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "evac_c3",
+      "states": {"default": "SPR_C01E01_EVAC_GROUP_BASE_V01"},
+      "draw_size": [46, 46],
+      "offset": [0, -11],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "evac_d5",
+      "states": {"default": "SPR_C01E01_EVAC_GROUP_BASE_V01"},
+      "draw_size": [46, 46],
+      "offset": [0, -11],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "path_frame",
+      "states": {"default": "SPR_C01E01_PATH_FRAME_RECLOSING_V01"},
+      "draw_size": [68, 68],
+      "offset": [0, -17],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "patcher_p1",
+      "states": {"default": "SPR_C01E01_STATUS_PATCHER_ACTIVE_V01"},
+      "draw_size": [54, 54],
+      "offset": [0, -13],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "patcher_p2",
+      "states": {"default": "SPR_C01E01_STATUS_PATCHER_ACTIVE_V01"},
+      "draw_size": [54, 54],
+      "offset": [0, -13],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "guardian_z_support",
+      "states": {"default": "SPR_GZ_C01_KNEEL_IDLE_V01"},
+      "draw_size": [204, 204],
+      "offset": [0, -78],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "guardian_z",
+      "states": {"default": "SPR_GZ_C01_KNEEL_IDLE_V01", "DONE": "SPR_GZ_C01_KNEEL_IDLE_V01"},
+      "draw_size": [158, 158],
+      "offset": [0, -61],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "jicun_post",
+      "states": {"default": "SPR_C01_JICUN_WALK_STRIP_V01"},
+      "draw_size": [31, 48],
+      "offset": [0, -20],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "doudeng_post",
+      "visual_kind": "procedural",
+      "profile": "staff_responder",
+      "variant": "safety_coat",
+      "draw_scale": 0.56,
+      "offset": [0, -6],
+      "palette": {"base": "3d8f89", "secondary": "17393b", "accent": "f1c34f", "outline": "e8f3ef"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "tangjiao_post",
+      "visual_kind": "procedural",
+      "profile": "staff_responder",
+      "variant": "work_coat",
+      "draw_scale": 0.56,
+      "offset": [0, -6],
+      "palette": {"base": "b86742", "secondary": "3b2620", "accent": "f1b64a", "outline": "f2e5d8"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "luheng_post",
+      "visual_kind": "procedural",
+      "profile": "staff_responder",
+      "variant": "engineering_coat",
+      "draw_scale": 0.56,
+      "offset": [0, -6],
+      "palette": {"base": "596b78", "secondary": "202c35", "accent": "65d0d5", "outline": "edf2f2"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "anchor_fixture_a",
+      "visual_kind": "procedural",
+      "profile": "anchor_clamp",
+      "draw_scale": 0.52,
+      "offset": [0, -3],
+      "palette": {"base": "688188", "secondary": "24343a", "accent": "f0b83f", "outline": "e7eeee"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "anchor_fixture_b",
+      "visual_kind": "procedural",
+      "profile": "anchor_clamp",
+      "draw_scale": 0.52,
+      "offset": [0, -3],
+      "palette": {"base": "688188", "secondary": "24343a", "accent": "49c7d8", "outline": "e7eeee"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "drone_d1",
+      "states": {"default": "SPR_SEAL_DRONE_C01_SCAN_V01"},
+      "draw_size": [46, 46],
+      "offset": [0, -14],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "drone_d2",
+      "states": {"default": "SPR_SEAL_DRONE_C01_IDLE_V01"},
+      "draw_size": [46, 46],
+      "offset": [0, -14],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "drone_d3",
+      "states": {"default": "SPR_SEAL_DRONE_C01_LOCK_V01"},
+      "draw_size": [46, 46],
+      "offset": [0, -14],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "brave_fist",
+      "states": {"default": "UNIT_C01E03_BRAVE_FIST_V01", "DONE": "UNIT_C01E03_BRAVE_FIST_V01"},
+      "draw_size": [82, 82],
+      "offset": [0, -25],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "baihan",
+      "states": {"default": "UNIT_C01E03_BAIHAN_FRAME_V01"},
+      "draw_size": [104, 104],
+      "offset": [0, -31],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "fire_bridge",
+      "states": {"default": "SPR_C01E02_FIRE_BRIDGE_DEPLOYED_V01"},
+      "draw_size": [112, 90],
+      "offset": [0, -31],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "jicun",
+      "states": {"default": "SPR_C01_JICUN_WALK_STRIP_V01"},
+      "draw_size": [31, 48],
+      "offset": [0, -20],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "tangjiao",
+      "visual_kind": "procedural",
+      "profile": "staff_responder",
+      "variant": "work_coat",
+      "draw_scale": 0.62,
+      "offset": [0, -7],
+      "palette": {"base": "b86742", "secondary": "3b2620", "accent": "f1b64a", "outline": "f2e5d8"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "doudeng",
+      "visual_kind": "procedural",
+      "profile": "staff_responder",
+      "variant": "safety_coat",
+      "draw_scale": 0.62,
+      "offset": [0, -7],
+      "palette": {"base": "3d8f89", "secondary": "17393b", "accent": "f1c34f", "outline": "e8f3ef"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "fire_a",
+      "visual_kind": "procedural",
+      "profile": "fire_responder",
+      "draw_scale": 0.58,
+      "offset": [-3, -6],
+      "palette": {"base": "d96835", "secondary": "272f34", "accent": "f2d34c", "outline": "eef2ed"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "fire_b",
+      "visual_kind": "procedural",
+      "profile": "fire_responder",
+      "draw_scale": 0.58,
+      "offset": [3, -6],
+      "palette": {"base": "cc5a31", "secondary": "242d33", "accent": "f4dc65", "outline": "eef2ed"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "cargo_pump",
+      "visual_kind": "procedural",
+      "profile": "rail_tool",
+      "variant": "needle",
+      "draw_scale": 0.48,
+      "offset": [0, -4],
+      "palette": {"base": "b66d32", "secondary": "26383c", "accent": "66d6df", "outline": "e8eff0"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "cargo_gear",
+      "visual_kind": "procedural",
+      "profile": "transport_cage",
+      "draw_scale": 0.45,
+      "offset": [0, -4],
+      "palette": {"base": "b88332", "secondary": "263036", "accent": "e5b43d", "outline": "d9e4e4"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "right_arm",
+      "visual_kind": "procedural",
+      "profile": "arm_module",
+      "draw_scale": 0.70,
+      "offset": [0, -8],
+      "palette": {"base": "53666d", "secondary": "25363b", "accent": "e4bd51", "outline": "e5eeee"},
+      "approval_status": "runtime_validation_candidate"
+    }
+  ],
+  "attack_presentations": [],
+  "event_presentations": [
+    {
+      "presentation_id": "BP_C01E01_RESET_MAIN_GATE_V01",
+      "action_id": "C01E01_RESET_MAIN_GATE",
+      "header": "跌跌 / 复位主闸",
+      "subheader": "肩壳顶住复位片，黄线暂时回到人群方向",
+      "footer": "0.7m / PHYSICAL RESET / NO REMOTE SHORTCUT",
+      "presentation_style": "rescue",
+      "steps_full": [
+        {"type": "map_anim", "duration": 0.48, "asset_id": "SPR_C01E01_DIEDIE_IDLE_V01", "payload": {"motion": "shoulder_push"}},
+        {"type": "camera", "duration": 0.20, "payload": {"motion": "push_in"}},
+        {"type": "fx", "duration": 0.32, "payload": {"fx": "gate_reset"}},
+        {"type": "freeze", "duration": 0.12},
+        {"type": "return_to_map", "duration": 0.16}
+      ],
+      "steps_short": [
+        {"type": "map_anim", "duration": 0.28, "asset_id": "SPR_C01E01_DIEDIE_IDLE_V01"},
+        {"type": "fx", "duration": 0.22, "payload": {"fx": "gate_reset"}},
+        {"type": "return_to_map", "duration": 0.10}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E01_OPEN_SIDE_DOOR_V01",
+      "action_id": "C01E01_OPEN_SIDE_DOOR_ACCEPT_PATCHER",
+      "header": "机器犬 / 侧门声源",
+      "subheader": "它先认出维修员的工具声，再替玩家承担开门风险",
+      "footer": "REAL SCALE / RESCUE CLASSIFICATION / PATCHER ADMITTED",
+      "presentation_style": "rescue",
+      "steps_full": [
+        {"type": "map_anim", "duration": 0.42, "asset_id": "SPR_C01E01_MACHINE_DOG_IDLE_V01", "payload": {"motion": "listen_and_lower"}},
+        {"type": "camera", "duration": 0.18, "payload": {"motion": "door_pan"}},
+        {"type": "map_anim", "duration": 0.38, "asset_id": "SPR_C01E01_STATUS_PATCHER_ACTIVE_V01", "payload": {"motion": "roll_in"}},
+        {"type": "fx", "duration": 0.24, "payload": {"fx": "door_unlock"}},
+        {"type": "return_to_map", "duration": 0.14}
+      ],
+      "steps_short": [
+        {"type": "map_anim", "duration": 0.26, "asset_id": "SPR_C01E01_MACHINE_DOG_IDLE_V01"},
+        {"type": "fx", "duration": 0.20, "payload": {"fx": "door_unlock"}},
+        {"type": "return_to_map", "duration": 0.10}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E01_ACTIVE_FALL_V01",
+      "action_id": "C01E01_ACTIVE_FALL_CONFIRMED",
+      "header": "跌跌 / 主动侧倒",
+      "subheader": "它收回撑地手，把旧伤一侧变成路径框的物理卡榫",
+      "footer": "FAILURE RECORD KEPT / BODY CHOICE / ROUTE HELD",
+      "presentation_style": "rescue",
+      "steps_full": [
+        {"type": "map_anim", "duration": 0.46, "asset_id": "SPR_C01E01_DIEDIE_IDLE_V01", "payload": {"motion": "chosen_fall"}},
+        {"type": "camera", "duration": 0.22, "payload": {"motion": "drop_with_body"}},
+        {"type": "shake", "duration": 0.18, "payload": {"strength": 4.0}},
+        {"type": "freeze", "duration": 0.22},
+        {"type": "fx", "duration": 0.28, "payload": {"fx": "sensor_rail_jammed"}},
+        {"type": "return_to_map", "duration": 0.18}
+      ],
+      "steps_short": [
+        {"type": "map_anim", "duration": 0.32, "asset_id": "SPR_C01E01_DIEDIE_IDLE_V01"},
+        {"type": "shake", "duration": 0.14, "payload": {"strength": 3.0}},
+        {"type": "return_to_map", "duration": 0.12}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E01_ATTACH_D5_V01",
+      "action_id": "C01E01_ATTACH_D5",
+      "header": "机器犬 / D5牵引",
+      "subheader": "五个人保持为一组；牵引绳不穿过人群",
+      "footer": "D5 x5 / NEVER SPLIT / LOW TRACTION",
+      "presentation_style": "rescue",
+      "steps_full": [
+        {"type": "map_anim", "duration": 0.52, "asset_id": "SPR_C01E01_MACHINE_DOG_IDLE_V01", "payload": {"motion": "lower_and_attach"}},
+        {"type": "fx", "duration": 0.30, "payload": {"fx": "traction_line"}},
+        {"type": "freeze", "duration": 0.10},
+        {"type": "return_to_map", "duration": 0.14}
+      ],
+      "steps_short": [
+        {"type": "map_anim", "duration": 0.28, "asset_id": "SPR_C01E01_MACHINE_DOG_IDLE_V01"},
+        {"type": "return_to_map", "duration": 0.10}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E01_SAFE_REFLECTOR_V01",
+      "action_id": "C01E01_SAFE_ANGLE_CONFIRMED",
+      "header": "馆守Z / 低热胸灯",
+      "subheader": "只亮外圈，并收暗靠近人群的一瓣；机体没有起身",
+      "footer": "18m TERRAIN SUPPORT / LOW HEAT / NO BODY ACTION",
+      "presentation_style": "guardian_low_heat",
+      "steps_full": [
+        {"type": "map_anim", "duration": 0.54, "asset_id": "SPR_GZ_C01_KNEEL_IDLE_V01", "payload": {"motion": "chest_petal_dim_only"}},
+        {"type": "camera", "duration": 0.24, "payload": {"motion": "hold_scale"}},
+        {"type": "fx", "duration": 0.52, "payload": {"fx": "low_heat_chest_reflector"}},
+        {"type": "freeze", "duration": 0.18},
+        {"type": "return_to_map", "duration": 0.20}
+      ],
+      "steps_short": [
+        {"type": "map_anim", "duration": 0.32, "asset_id": "SPR_GZ_C01_KNEEL_IDLE_V01"},
+        {"type": "fx", "duration": 0.28, "payload": {"fx": "low_heat_chest_reflector"}},
+        {"type": "return_to_map", "duration": 0.12}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E01_HOLD_D5_V01",
+      "action_id": "C01E01_HOLD_D5",
+      "header": "机器犬 / 守住黄线",
+      "subheader": "四足压在外侧，给最后五人留出完整宽度",
+      "footer": "D5 x5 / EXIT WIDTH HELD",
+      "presentation_style": "rescue",
+      "steps_full": [
+        {"type": "map_anim", "duration": 0.42, "asset_id": "SPR_C01E01_MACHINE_DOG_IDLE_V01", "payload": {"motion": "brace"}},
+        {"type": "fx", "duration": 0.28, "payload": {"fx": "yellow_line_hold"}},
+        {"type": "return_to_map", "duration": 0.14}
+      ],
+      "steps_short": [
+        {"type": "map_anim", "duration": 0.26, "asset_id": "SPR_C01E01_MACHINE_DOG_IDLE_V01"},
+        {"type": "return_to_map", "duration": 0.10}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E01_FRAME_RECLOSE_V01",
+      "event_id": "C01E01-R1-FRAME-RECLOSE",
+      "header": "环境回合 / 路径框复闭",
+      "subheader": "它记住标准路线，把地箭重新折回资产区",
+      "footer": "ENVIRONMENT RESPONSE / PEOPLE ROUTE CONTESTED",
+      "presentation_style": "system_pressure",
+      "steps_full": [
+        {"type": "map_anim", "duration": 0.54, "asset_id": "SPR_C01E01_PATH_FRAME_RECLOSING_V01", "payload": {"motion": "reclose"}},
+        {"type": "shake", "duration": 0.16, "payload": {"strength": 3.0}},
+        {"type": "fx", "duration": 0.34, "payload": {"fx": "route_arrow_rewrite"}},
+        {"type": "return_to_map", "duration": 0.16}
+      ],
+      "steps_short": [
+        {"type": "map_anim", "duration": 0.28, "asset_id": "SPR_C01E01_PATH_FRAME_RECLOSING_V01"},
+        {"type": "return_to_map", "duration": 0.10}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E03_SHOULDER_12_V01",
+      "action_id": "GUARDIAN_SHOULDER_12",
+      "header": "馆守Z / 第一次合法动作",
+      "subheader": "只抬右肩十二度，L2先下沉，巨机随后抬头",
+      "footer": "18米固定巨机 / 占地2x2 / 楼层受力先结算",
+      "presentation_style": "giant_weight",
+      "steps_full": [
+        {"type": "map_anim", "duration": 0.48, "asset_id": "SPR_GZ_C01_KNEEL_IDLE_V01", "payload": {"motion": "shoulder_12_degree"}},
+        {"type": "camera", "duration": 0.22, "payload": {"motion": "floor_first_then_face"}},
+        {"type": "shake", "duration": 0.20, "payload": {"strength": 4.0}},
+        {"type": "freeze", "duration": 0.18},
+        {"type": "return_to_map", "duration": 0.16}
+      ],
+      "steps_short": [
+        {"type": "map_anim", "duration": 0.30, "asset_id": "SPR_GZ_C01_KNEEL_IDLE_V01"},
+        {"type": "shake", "duration": 0.14, "payload": {"strength": 3.0}},
+        {"type": "return_to_map", "duration": 0.10}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E03_HAOSI_SIGN_V01",
+      "action_id": "BRAVE_SIGN_EMERGENCY_LOAD",
+      "header": "豪司 / 本人决定",
+      "subheader": "口号额度冻结；紧急承力的后果写在驾驶者名下",
+      "footer": "无AI背书 / 无必杀权限 / 责任实名记录",
+      "presentation_style": "brave_without_permission",
+      "steps_full": [
+        {"type": "pilot_cutin", "duration": 0.52, "asset_id": "CUTIN_C01E03_HAOSI_V01", "payload": {"speaker": "豪司", "label": "本人决定。机器没有替我决定。", "sublabel": "实名越权 / 紧急承力"}},
+        {"type": "map_anim", "duration": 0.44, "asset_id": "UNIT_C01E03_BRAVE_FIST_V01", "payload": {"motion": "shoulder_load"}},
+        {"type": "freeze", "duration": 0.16},
+        {"type": "return_to_map", "duration": 0.14}
+      ],
+      "steps_short": [
+        {"type": "pilot_cutin", "duration": 0.30, "asset_id": "CUTIN_C01E03_HAOSI_V01", "payload": {"speaker": "豪司", "label": "后果写我名下。", "sublabel": "紧急承力"}},
+        {"type": "return_to_map", "duration": 0.10}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E03_RAIL_STRIKE_V01",
+      "action_id": "GUARDIAN_RAIL_STRIKE",
+      "header": "馆守Z / 维修轨飞拳",
+      "subheader": "先满足一次它真的飞出去，再让回收轨在Hit-stop后锁死",
+      "footer": "白函右框破裂 / 右臂仍可修 / 回收轨已经锁死",
+      "presentation_style": "super_robot_release",
+      "steps_full": [
+        {"type": "mecha_pose", "duration": 0.56, "asset_id": "POSE_GZ_C01_KNEEL_CONTACT_V01"},
+        {"type": "camera", "duration": 0.18, "payload": {"motion": "rail_follow"}},
+        {"type": "shake", "duration": 0.22, "payload": {"strength": 7.0}},
+        {"type": "fx", "duration": 0.34, "payload": {"fx": "white_frame_crack"}},
+        {"type": "freeze", "duration": 0.24},
+        {"type": "return_to_map", "duration": 0.20}
+      ],
+      "steps_short": [
+        {"type": "mecha_pose", "duration": 0.34, "asset_id": "POSE_GZ_C01_KNEEL_CONTACT_V01"},
+        {"type": "shake", "duration": 0.16, "payload": {"strength": 5.0}},
+        {"type": "return_to_map", "duration": 0.12}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E03_CUT_MAIN_TENDON_V01",
+      "action_id": "DOUDENG_CUT_MAIN_TENDON",
+      "header": "兜灯 / 正确的一刀",
+      "subheader": "诊断仍写着可修；她亲手把完整战力改成五个人脚下的路",
+      "footer": "音乐静音 / 5米右臂 + 1.4米滑架 + 双安全索",
+      "presentation_style": "irreversible_choice",
+      "steps_full": [
+        {"type": "pilot_cutin", "duration": 0.54, "asset_id": "CUTIN_C01E03_DOUDENG_TENSE_V01", "payload": {"speaker": "兜灯", "label": "主筋还能修。现在切，它就回不来了。", "sublabel": "五人退路 / 永久单臂"}},
+        {"type": "freeze", "duration": 0.30},
+        {"type": "fx", "duration": 0.34, "payload": {"fx": "tendon_rebound"}},
+        {"type": "return_to_map", "duration": 0.20}
+      ],
+      "steps_short": [
+        {"type": "pilot_cutin", "duration": 0.32, "asset_id": "CUTIN_C01E03_DOUDENG_TENSE_V01", "payload": {"speaker": "兜灯", "label": "我切。你们按次序走。", "sublabel": "不可逆确认"}},
+        {"type": "return_to_map", "duration": 0.12}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E03_P1_HAOSI_ENTRY_V01",
+      "event_id": "C01E03-P1-COMPLETE",
+      "header": "普通电话 / 西门责任卡",
+      "subheader": "七海不能替现场开门；豪司只能用自己的名字进入",
+      "footer": "现场峰值六人 / 过桥人数仍为五人",
+      "presentation_style": "human_handoff",
+      "steps_full": [
+        {"type": "pilot_cutin", "duration": 0.44, "asset_id": "CUTIN_C01E03_HAOSI_V01", "payload": {"speaker": "豪司", "label": "西门责任卡，豪司。车里那台拳头也算我的。", "sublabel": "本人入场 / 勇拳随后"}},
+        {"type": "map_anim", "duration": 0.42, "asset_id": "UNIT_C01E03_BRAVE_FIST_V01"},
+        {"type": "return_to_map", "duration": 0.16}
+      ],
+      "steps_short": [
+        {"type": "map_anim", "duration": 0.28, "asset_id": "UNIT_C01E03_BRAVE_FIST_V01"},
+        {"type": "return_to_map", "duration": 0.10}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E03_P5_ENTER_ARM_V01",
+      "event_id": "C01E03-P5-COMPLETE",
+      "header": "尺度切换 / 进入馆守Z右前臂",
+      "subheader": "从18米机体定位到5米右臂，再落到人能行走的检修步道",
+      "footer": "外层战棋姿态保持 / 右臂仍可修 / 搜索窗4格",
+      "presentation_style": "scale_descent",
+      "target_screen": [574, 352],
+      "steps_full": [
+        {"type": "camera", "duration": 0.38, "payload": {"motion": "body_to_forearm"}},
+        {"type": "fx", "duration": 0.42, "payload": {"fx": "scale_lock_forearm_interior"}},
+        {"type": "freeze", "duration": 0.18},
+        {"type": "return_to_map", "duration": 0.16}
+      ],
+      "steps_short": [
+        {"type": "camera", "duration": 0.28, "payload": {"motion": "body_to_forearm"}},
+        {"type": "return_to_map", "duration": 0.12}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E03_P6_RETURN_TO_BRIDGE_V01",
+      "event_id": "C01E03-P6-COMPLETE",
+      "header": "尺度切换 / 返回断臂桥面",
+      "subheader": "人尺度第四筋读数回到双层战场，下一刀将改变整副身体",
+      "footer": "第四筋公开验证 / 仍可修 / 切筋决定尚未执行",
+      "presentation_style": "scale_ascent",
+      "target_screen": [574, 352],
+      "steps_full": [
+        {"type": "camera", "duration": 0.34, "payload": {"motion": "interior_to_forearm"}},
+        {"type": "fx", "duration": 0.34, "payload": {"fx": "scale_lock_bridge_map"}},
+        {"type": "freeze", "duration": 0.16},
+        {"type": "return_to_map", "duration": 0.14}
+      ],
+      "steps_short": [
+        {"type": "camera", "duration": 0.24, "payload": {"motion": "interior_to_forearm"}},
+        {"type": "return_to_map", "duration": 0.10}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E03_ROLLBACK_V01",
+      "event_id": "C01E03-LOCAL-ROLLBACK",
+      "header": "局部检查点 / 世界状态未写入",
+      "subheader": "危险后果成立，但人、断臂与跨话状态没有被污染",
+      "footer": "准备段 / 内腔搜索段 / 切筋后检查点",
+      "presentation_style": "checkpoint",
+      "steps_full": [
+        {"type": "shake", "duration": 0.20, "payload": {"strength": 5.0}},
+        {"type": "freeze", "duration": 0.24},
+        {"type": "return_to_map", "duration": 0.18}
+      ],
+      "steps_short": [
+        {"type": "freeze", "duration": 0.16},
+        {"type": "return_to_map", "duration": 0.10}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E04_HALF_RISE_V01",
+      "action_id": "DEPLOY_BOTH_LOCK_ARMS",
+      "header": "万机馆 / 五方停止责任同时在位",
+      "subheader": "留言墙升成胸灯，模型病院转到肩位；玩家熟悉的展馆第一次显出身体",
+      "footer": "半身承重成立 / 馆守Z硬停仍有效 / 右肩缺口保持可见",
+      "presentation_style": "carrier_reveal",
+      "steps_full": [
+        {"type": "camera", "duration": 0.28, "payload": {"motion": "floor_to_carrier_tilt"}},
+        {"type": "mecha_pose", "duration": 0.72, "asset_id": "POSE_WANJI_C01E04_CARRIER_V01", "payload": {"layout": "wide", "footer": "留言墙、模型病院与闭馆台仍是这副身体的一部分"}},
+        {"type": "shake", "duration": 0.26, "payload": {"strength": 6.0}},
+        {"type": "freeze", "duration": 0.20},
+        {"type": "return_to_map", "duration": 0.20}
+      ],
+      "steps_short": [
+        {"type": "camera", "duration": 0.20, "payload": {"motion": "carrier_tilt"}},
+        {"type": "shake", "duration": 0.16, "payload": {"strength": 4.0}},
+        {"type": "return_to_map", "duration": 0.12}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E04_SHADOW_JAM_V01",
+      "action_id": "JICUN_MEMORY_POWER_ORDER",
+      "header": "皇影 / 黑框只卡住右锁臂",
+      "subheader": "旧拘束能阻止扩张，却不能替任何人清除故障",
+      "footer": "右锁臂卡死 / 旧拘束只阻止扩张 / 必须由场内排障",
+      "presentation_style": "hostile_interruption",
+      "steps_full": [
+        {"type": "camera", "duration": 0.18, "payload": {"motion": "snap_right_lock"}},
+        {"type": "fx", "duration": 0.34, "payload": {"fx": "black_frame_lock"}},
+        {"type": "shake", "duration": 0.20, "payload": {"strength": 5.0}},
+        {"type": "freeze", "duration": 0.22},
+        {"type": "return_to_map", "duration": 0.16}
+      ],
+      "steps_short": [
+        {"type": "fx", "duration": 0.24, "payload": {"fx": "black_frame_lock"}},
+        {"type": "return_to_map", "duration": 0.12}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E04_DOG_CLEAR_LOCK_V01",
+      "action_id": "DOG_CLEAR_RIGHT_LOCK",
+      "header": "机器犬 / 钻进右锁基",
+      "subheader": "它不击败皇影，只把一块烧死的卡榫从万机馆身体里拖出来",
+      "footer": "局部排障完成 / 拘束仍在 / 远程没有替现场解决",
+      "presentation_style": "rescue",
+      "steps_full": [
+        {"type": "map_anim", "duration": 0.42, "asset_id": "SPR_C01E01_MACHINE_DOG_IDLE_V01", "payload": {"motion": "crawl_and_pull"}},
+        {"type": "fx", "duration": 0.28, "payload": {"fx": "lock_pin_release"}},
+        {"type": "freeze", "duration": 0.14},
+        {"type": "return_to_map", "duration": 0.14}
+      ],
+      "steps_short": [
+        {"type": "map_anim", "duration": 0.26, "asset_id": "SPR_C01E01_MACHINE_DOG_IDLE_V01"},
+        {"type": "return_to_map", "duration": 0.10}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E04_FINAL_CRUISE_V01",
+      "action_id": "FINALIZE_CRUISE",
+      "header": "万机馆 / 带着缺口通过东门",
+      "subheader": "它没有变成漂亮的新战舰；四个操作位和五方停止责任让一座旧馆获得了自己的下一站",
+      "footer": "带伤巡航 / 城市损害为零 / RT054尚未提交",
+      "presentation_style": "chapter_departure",
+      "steps_full": [
+        {"type": "pilot_cutin", "duration": 0.46, "asset_id": "CUTIN_C01E03_DOUDENG_TENSE_V01", "payload": {"speaker": "兜灯", "label": "东门净空。别逞强，带着缺口走。", "sublabel": "硬停保持 / 低速巡航"}},
+        {"type": "mecha_pose", "duration": 0.64, "asset_id": "POSE_WANJI_C01E04_CARRIER_V01", "payload": {"layout": "wide", "footer": "万机馆没有修好才出发；它带着所有被公开的损伤离开旧址"}},
+        {"type": "camera", "duration": 0.30, "payload": {"motion": "east_gate_tracking"}},
+        {"type": "shake", "duration": 0.22, "payload": {"strength": 4.0}},
+        {"type": "freeze", "duration": 0.26},
+        {"type": "return_to_map", "duration": 0.22}
+      ],
+      "steps_short": [
+        {"type": "camera", "duration": 0.24, "payload": {"motion": "east_gate_tracking"}},
+        {"type": "return_to_map", "duration": 0.14}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E04_ROLLBACK_V01",
+      "event_id": "C01E04-LOCAL-ROLLBACK",
+      "header": "局部检查点 / 馆体姿态复原",
+      "subheader": "锚、载荷、半身或城市包络退回本地状态；跨话事实仍未写入",
+      "footer": "ANCHOR / LOADOUT / HALF-RISE / CITY LOCAL ONLY",
+      "presentation_style": "checkpoint",
+      "steps_full": [
+        {"type": "shake", "duration": 0.18, "payload": {"strength": 4.0}},
+        {"type": "freeze", "duration": 0.22},
+        {"type": "return_to_map", "duration": 0.16}
+      ],
+      "steps_short": [
+        {"type": "freeze", "duration": 0.14},
+        {"type": "return_to_map", "duration": 0.10}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    }
+  ]
+}

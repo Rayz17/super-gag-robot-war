@@ -1,0 +1,512 @@
+{
+  "start": "c01e01-cold-open",
+  "cast": {
+    "system": { "name": "系统", "color": "#9ca3af" },
+    "jicun": { "name": "纪存", "color": "#a7f3d0", "portrait": "jicun" },
+    "guardian": { "name": "旧守护者", "color": "#fde68a" },
+    "curator": { "name": "馆长录音", "color": "#e5e7eb" },
+    "xiaoman": { "name": "小满", "color": "#fef08a" },
+    "acheng": { "name": "阿澄", "color": "#f9a8d4" },
+    "doudeng": { "name": "兜灯", "color": "#fca5a5", "portrait": "doudeng" },
+    "tangjiao": { "name": "唐胶", "color": "#c4b5fd" },
+    "qihai": { "name": "七海", "color": "#bfdbfe", "portrait": "qihai" },
+    "luheng": { "name": "陆衡", "color": "#99f6e4" },
+    "haosi": { "name": "豪司", "color": "#fdba74", "portrait": "haosi" },
+    "zero": { "name": "0号侧廊", "color": "#c7d2fe" }
+  },
+  "beats": {
+    "c01e01-cold-open": {
+      "episode": "1-1 今日闭馆后",
+      "mode": "cutscene",
+      "title": "火灾后30秒",
+      "location": "火灾后的主展厅",
+      "backdrop": "frontHall",
+      "portrait": "guardian",
+      "lines": [
+        ["guardian", "闭馆流程未完成。观众仍在馆内。重复，观众仍在馆内。"],
+        ["curator", "纪存，别把这段转文字。你一转文字，就会装没听懂。"],
+        ["system", "火灾记录：未归档。距离第一次警报：00:30。"],
+        ["system", "三小时前。"]
+      ],
+      "choices": [
+        { "id": "continue", "label": "进入闭馆巡查", "next": "c01e01-front-hall", "effects": { "flags": { "fireForeshadow": true } } }
+      ]
+    },
+    "c01e01-front-hall": {
+      "episode": "1-1 今日闭馆后",
+      "mode": "explore",
+      "title": "前厅闭馆",
+      "location": "万机馆前厅",
+      "backdrop": "frontHall",
+      "portrait": "jicun",
+      "nodes": ["万机馆招牌", "纪念章台", "导览地图", "纪念品柜"],
+      "lines": [
+        ["guardian", "万机馆今日闭馆。请带好随身物品、纪念章、未完成的作业，以及不方便交给大人的愿望。"],
+        ["jicun", "它最近学会了“愿望”这个词。馆长说比“遗失物”听起来不那么倒霉。"],
+        ["xiaoman", "我没有跑，我是在让鞋先过去！"],
+        ["jicun", "让鞋回来。闭馆了。"]
+      ],
+      "choices": [
+        { "id": "inspect-stamp", "label": "调查纪念章台", "stay": true, "result": "坏章仍能盖出“勇气已受理”，印偏了，像有人在偷偷练习热血。", "effects": { "vars": { "museumWarmth": 1 }, "codex": ["stamp-counter"] } },
+        { "id": "inspect-map", "label": "查看导览地图", "stay": true, "result": "导览地图标出八个展岛：馆守Z、合体剖面台、勇气审批角、现实机器小舞台、模型病院、旧影像厅、废案柜、留言墙。", "effects": { "flags": { "sawMap": true }, "codex": ["museum-map"] } },
+        { "id": "tour-main-hall", "label": "进入主展厅展岛", "next": "c01e01-main-hall" }
+      ]
+    },
+    "c01e01-main-hall": {
+      "episode": "1-1 今日闭馆后",
+      "mode": "explore",
+      "title": "主展厅展岛速览",
+      "location": "主展厅入口",
+      "backdrop": "frontHall",
+      "portrait": "jicun",
+      "nodes": ["馆守Z主展", "合体剖面台", "勇气审批角", "现实机器小舞台", "模型病院", "旧影像厅", "废案柜", "留言墙"],
+      "lines": [
+        ["guardian", "闭馆巡查允许顺路看展。顺路定义：不超过七分钟。"],
+        ["xiaoman", "那八分钟呢？"],
+        ["guardian", "馆长称之为热爱。本机称之为加班。"],
+        ["jicun", "先加班七分钟。剩下那一分钟，算我私人收藏。"]
+      ],
+      "choices": [
+        { "id": "inspect-combination", "label": "看合体剖面台", "stay": true, "result": "小满按下按钮。旧守护者说：“未来未听。”三台小机错位合上，又轻轻弹开。", "effects": { "vars": { "museumWarmth": 1 }, "exhibits": ["combination-bay"], "codex": ["combination-bay"] } },
+        { "id": "inspect-bravery", "label": "盖一次勇气章", "stay": true, "result": "红章歪歪地落在空白纸上：勇气已受理。旧守护者补充：“审批不代表批准。”", "effects": { "vars": { "museumWarmth": 1 }, "exhibits": ["bravery-counter"], "codex": ["bravery-counter"] } },
+        { "id": "inspect-reality-stage", "label": "看现实机器小舞台", "stay": true, "result": "纪存把“失败”划掉，改成“第27次未完成”。阿澄把白板擦得更干净。", "effects": { "vars": { "museumWarmth": 1, "realMachineTrust": 1 }, "exhibits": ["reality-stage"], "codex": ["reality-stage"] } },
+        { "id": "inspect-model-clinic", "label": "绕过模型病院", "stay": true, "result": "唐胶说：“左边没干，右边救不了，中间是本人觉得还能抢救。本人是送修的小孩，不是模型。”", "effects": { "vars": { "museumWarmth": 1 }, "exhibits": ["model-clinic"], "codex": ["model-clinic"] } },
+        { "id": "go-archive-room", "label": "去档案室找馆长", "next": "c01e01-archive-room" }
+      ]
+    },
+    "c01e01-archive-room": {
+      "episode": "1-1 今日闭馆后",
+      "mode": "inspect",
+      "title": "馆长杯子和0号便签",
+      "location": "档案室",
+      "backdrop": "frontHall",
+      "portrait": "jicun",
+      "nodes": ["馆长杯子", "旧终端", "0号便签", "档案柜"],
+      "lines": [
+        ["jicun", "馆长的杯子还在。人不在，杯子倒挺守时。"],
+        ["guardian", "馆长不在。馆长杯具仍在。该组合不常见。"],
+        ["acheng", "馆长每次出远门都会洗杯子。馆长会忘记关投影机，不会忘记杯子。"],
+        ["system", "便签：0号侧廊今晚别开。不是坏了，是太像没坏。"]
+      ],
+      "choices": [
+        { "id": "copy-note", "label": "把便签拍照归档", "next": "c01e01-message-wall", "effects": { "vars": { "blackCaseResonance": 1 }, "codex": ["zero-note"] } },
+        { "id": "leave-note", "label": "先不动馆长桌面", "next": "c01e01-message-wall", "effects": { "vars": { "curatorMystery": 1 }, "flags": { "untouchedCup": true } } }
+      ]
+    },
+    "c01e01-message-wall": {
+      "episode": "1-1 今日闭馆后",
+      "mode": "choice",
+      "title": "留言墙三条留言",
+      "location": "留言墙",
+      "backdrop": "frontHall",
+      "portrait": "jicun",
+      "lines": [
+        ["system", "留言一：如果一台机器人老是摔倒，它还能不能放进展览？"],
+        ["system", "留言二：0号侧廊为什么总锁着？我昨天听见里面有人敲玻璃。"],
+        ["system", "留言三：如果我明天又忘了这句话，请告诉我我来过。署名只剩一个“存”字。"],
+        ["guardian", "建议忽略0号侧廊。建议来源：记录缺失。"]
+      ],
+      "choices": [
+        { "id": "reply-gentle", "label": "温柔回复摔倒机器人", "next": "c01e01-guardian-z", "effects": { "vars": { "museumWarmth": 2, "blackCaseResonance": 1 }, "flags": { "oldNoteFiled": true }, "codex": ["message-wall"] } },
+        { "id": "reply-archive", "label": "按档案格式回复", "next": "c01e01-guardian-z", "effects": { "vars": { "museumWarmth": 1, "blackCaseResonance": 1 }, "flags": { "oldNoteFiled": true, "protagonistToneArchive": true }, "codex": ["message-wall"] } },
+        { "id": "reply-joke", "label": "用吐槽回复", "next": "c01e01-guardian-z", "effects": { "vars": { "museumWarmth": 1, "blackCaseResonance": 1 }, "flags": { "oldNoteFiled": true, "protagonistToneJoke": true }, "codex": ["message-wall"] } }
+      ]
+    },
+    "c01e01-guardian-z": {
+      "episode": "1-1 今日闭馆后",
+      "mode": "inspect",
+      "title": "馆守Z尺度建立",
+      "location": "馆守Z主展",
+      "backdrop": "frontHall",
+      "portrait": "doudeng",
+      "nodes": ["18米级本体", "胸牌灯", "右臂维护口", "第0次闭馆记录"],
+      "lines": [
+        ["system", "展品卡：馆守Z。18米级旧式守护机。当前状态：封存展示 / 主动力断开 / 右前臂维护中。"],
+        ["xiaoman", "那你什么时候回大身体里？我没说驾驶，我说合体。"],
+        ["guardian", "合体审批未申请。"],
+        ["system", "本体终端：记忆区缺损。缺损记录：第0次闭馆。"]
+      ],
+      "choices": [
+        { "id": "inspect-guardian", "label": "记录馆守Z本体状态", "stay": true, "result": "胸牌灯闪了一下。旧守护者说：“每一次闭馆都应该像第一次一样谨慎。尤其是你。”", "effects": { "vars": { "oldGuardianTrust": 1 }, "exhibits": ["guardian-z"], "codex": ["guardian-z"] } },
+        { "id": "repair-corner", "label": "去维修角看右臂旧件", "next": "c01e01-repair-corner" }
+      ]
+    },
+    "c01e01-repair-corner": {
+      "episode": "1-1 今日闭馆后",
+      "mode": "choice",
+      "title": "右臂旧件",
+      "location": "维修角",
+      "backdrop": "frontHall",
+      "portrait": "doudeng",
+      "lines": [
+        ["doudeng", "手拿开。不是脏，是烫。"],
+        ["jicun", "它离电源断开多久了？"],
+        ["doudeng", "十年。别用“旧”那个语气说它。"],
+        ["tangjiao", "十年还烫，听起来不是维修问题。"]
+      ],
+      "choices": [
+        { "id": "preserve-flaw", "label": "保留破损和裂纹", "next": "c01e01-zero-corridor", "effects": { "vars": { "museumWarmth": 1, "blackCaseResonance": 1 }, "flags": { "flawPreserved": true }, "codex": ["right-arm"] } },
+        { "id": "archive-newpart", "label": "替换新件，旧件单独归档", "next": "c01e01-zero-corridor", "effects": { "vars": { "wanjiDamage": -1 }, "flags": { "flawArchived": true }, "codex": ["right-arm"] } },
+        { "id": "trust-doudeng", "label": "把决定交给兜灯", "next": "c01e01-zero-corridor", "effects": { "vars": { "doudengTrust": 2 }, "flags": { "trustedDoudeng": true }, "codex": ["right-arm"] } }
+      ]
+    },
+    "c01e01-zero-corridor": {
+      "episode": "1-1 今日闭馆后",
+      "mode": "cutscene",
+      "title": "0号侧廊锁门",
+      "location": "0号侧廊门口",
+      "backdrop": "frontHall",
+      "portrait": "zero",
+      "lines": [
+        ["system", "区域：0号侧廊。开放状态：不对观众开放。临时负责人：纪存。生效时间：明日 00:00。"],
+        ["jicun", "明天零点的权限，为什么现在能查到。"],
+        ["zero", "今天……也要闭馆吗？"],
+        ["guardian", "请勿回答。请勿奔跑。请勿——"]
+      ],
+      "choices": [
+        { "id": "close-museum", "label": "按下前厅总灯", "next": "c01e01-closing-alarm", "effects": { "vars": { "blackCaseResonance": 1 }, "flags": { "heardZeroVoice": true } } }
+      ]
+    },
+    "c01e01-closing-alarm": {
+      "episode": "1-1 今日闭馆后",
+      "mode": "cutscene",
+      "title": "闭馆确认与警报",
+      "location": "前厅 / 主展厅",
+      "backdrop": "frontHall",
+      "portrait": "guardian",
+      "lines": [
+        ["system", "展岛灯依次熄灭。最后只剩留言墙低照度灯。"],
+        ["jicun", "闭馆确认。"],
+        ["system", "法务封存通知。执行范围：万机馆主展厅、档案室、0号侧廊、未归档留言墙。"],
+        ["xiaoman", "纪存哥，门为什么关里面了？"],
+        ["guardian", "火警。火警。观众仍在馆内。"]
+      ],
+      "choices": [
+        { "id": "start-legal-alarm", "label": "第二话：法务警报", "next": "c01e02-qihai", "effects": { "vars": { "enterprisePressure": 1 }, "flags": { "fireStarted": true } } }
+      ]
+    },
+    "c01e02-qihai": {
+      "episode": "1-2 法务警报",
+      "mode": "dialogue",
+      "title": "七海正式登场",
+      "location": "前厅通讯投影",
+      "backdrop": "frontHall",
+      "portrait": "qihai",
+      "lines": [
+        ["qihai", "纪存先生。你可以拒绝签收。回收不需要签收。"],
+        ["jicun", "现在馆里有孩子。"],
+        ["qihai", "所以我先接入广播，而不是先切断电源。"],
+        ["guardian", "闭馆流程未包含移交观众。"],
+        ["qihai", "我会把这句记录为系统拒绝配合。"]
+      ],
+      "choices": [
+        { "id": "answer-qihai-calm", "label": "冷静要求先撤离观众", "next": "c01e02-list", "effects": { "vars": { "enterpriseTrust": 1, "enterprisePressure": 1 }, "codex": ["qihai"] } },
+        { "id": "answer-qihai-hard", "label": "直接挡在门前", "next": "c01e02-list", "effects": { "vars": { "enterprisePressure": 2 }, "flags": { "defiedClearance": true }, "codex": ["qihai"] } }
+      ]
+    },
+    "c01e02-list": {
+      "episode": "1-2 法务警报",
+      "mode": "dialogue",
+      "title": "封存清单",
+      "location": "主展厅入口",
+      "backdrop": "frontHall",
+      "portrait": "qihai",
+      "lines": [
+        ["qihai", "封存清单第一项。GAG-00，0号侧廊核心展柜。"],
+        ["jicun", "0号侧廊今晚不开放。"],
+        ["qihai", "所以需要移交。不是请求。请求已经在三年前被驳回了。"],
+        ["qihai", "未归档纸质留言、电子留言、临时展陈物。"],
+        ["acheng", "拍照以后，纸还在吗？"],
+        ["qihai", "原件进入封存箱。"]
+      ],
+      "choices": [
+        { "id": "begin-protect-wall", "label": "战斗：保护留言墙6回合", "next": "c01e02-battle", "battle": "protect-wall" }
+      ]
+    },
+    "c01e02-battle": {
+      "episode": "1-2 法务警报",
+      "mode": "battle",
+      "title": "保护留言墙6回合",
+      "location": "前厅到留言墙",
+      "backdrop": "battle",
+      "portrait": "guardian",
+      "battleId": "protect-wall",
+      "lines": [
+        ["guardian", "请勿奔跑。但可以跟紧本机。"],
+        ["tangjiao", "它要是敢按重量算小满，我先给它称坏。"],
+        ["system", "目标：保护留言墙、转移孩子、阻止0号侧廊开启。"]
+      ],
+      "choices": []
+    },
+    "c01e02-after-battle": {
+      "episode": "1-2 法务警报",
+      "mode": "cutscene",
+      "title": "馆守Z胸牌亮起",
+      "location": "主展厅",
+      "backdrop": "frontHall",
+      "portrait": "doudeng",
+      "lines": [
+        ["qihai", "纪存先生，你刚才保护的是证据。"],
+        ["jicun", "你站在门口，所以看不见。"],
+        ["qihai", "看不见什么？"],
+        ["jicun", "他们就在证据旁边。"],
+        ["guardian", "导览外设行动能力下降。主展厅紧急闭馆权限请求。"],
+        ["doudeng", "别接。旧守护者，别接。"]
+      ],
+      "choices": [
+        { "id": "start-guardian-z", "label": "第三话：展厅里的旧守护者", "next": "c01e03-start", "effects": { "flags": { "guardianBadgeLit": true } } }
+      ]
+    },
+    "c01e03-start": {
+      "episode": "1-3 展厅里的旧守护者",
+      "mode": "cutscene",
+      "title": "旧机器站起来",
+      "location": "主展厅",
+      "backdrop": "frontHall",
+      "portrait": "guardian",
+      "lines": [
+        ["doudeng", "右臂不完整，主动力断开，脚踝锁还没拆。你现在起来，摔一次就能把前厅压没。"],
+        ["guardian", "前厅当前无人。"],
+        ["doudeng", "你还学会顶嘴了？"],
+        ["guardian", "本机未学习。本机正在闭馆。"],
+        ["guardian", "主展厅进入紧急闭馆。请勿奔跑。展厅地滑。"]
+      ],
+      "choices": [
+        { "id": "begin-guardian-battle", "label": "战斗：馆守Z半启动", "next": "c01e03-battle", "battle": "guardian-z" }
+      ]
+    },
+    "c01e03-battle": {
+      "episode": "1-3 展厅里的旧守护者",
+      "mode": "battle",
+      "title": "馆守Z正式战棋教程",
+      "location": "主展厅10x8",
+      "backdrop": "battle",
+      "portrait": "guardian",
+      "battleId": "guardian-z",
+      "lines": [
+        ["system", "目标：击退回收无人机，留言墙至少保留1格，馆守Z过热不能到100。"],
+        ["doudeng", "谁敢按飞拳，我把谁的手先拆了。"],
+        ["guardian", "右臂未归还。建议避免飞拳相关操作。"]
+      ],
+      "choices": []
+    },
+    "c01e03-after-battle": {
+      "episode": "1-3 展厅里的旧守护者",
+      "mode": "cutscene",
+      "title": "胜利不是胜利",
+      "location": "主展厅",
+      "backdrop": "frontHall",
+      "portrait": "curator",
+      "lines": [
+        ["system", "战斗结束。馆守Z没有倒下，但右肩冒烟。留言墙剩下几张纸。"],
+        ["xiaoman", "我们赢了吗？"],
+        ["jicun", "先别用这个词。"],
+        ["curator", "如果展厅保不住，就保住能开灯的人。别和我争。我不在的时候，我说了算。"]
+      ],
+      "choices": [
+        { "id": "start-exile-ship", "label": "第四话：流亡展舰", "next": "c01e04-hangar", "effects": { "flags": { "curatorRecordingPlayed": true } } }
+      ]
+    },
+    "c01e04-hangar": {
+      "episode": "1-4 流亡展舰",
+      "mode": "dialogue",
+      "title": "临时机库",
+      "location": "万机馆机库",
+      "backdrop": "hangar",
+      "portrait": "doudeng",
+      "lines": [
+        ["doudeng", "谁把它轮子关了。"],
+        ["tangjiao", "我试了。它关不上。"],
+        ["guardian", "闭馆流程未完成。"],
+        ["luheng", "别叫它站起来。叫第10742次姿态恢复失败预备。"],
+        ["tangjiao", "你这个人说话怎么比验尸报告还硬。"],
+        ["luheng", "报告比较诚实。"]
+      ],
+      "choices": [
+        { "id": "resource-choice", "label": "进入资源取舍", "next": "c01e04-resource" }
+      ]
+    },
+    "c01e04-resource": {
+      "episode": "1-4 流亡展舰",
+      "mode": "resource",
+      "title": "七分钟，不含争吵",
+      "location": "机库 / 档案室 / 主展厅",
+      "backdrop": "hangar",
+      "portrait": "jicun",
+      "lines": [
+        ["guardian", "剩余七分钟。该估算不含争吵。"],
+        ["tangjiao", "那不够。"],
+        ["guardian", "纠正。非常不够。"],
+        ["system", "只能完整救下三类目标中的两类，第三类只能抢救一部分。"]
+      ],
+      "choices": []
+    },
+    "c01e04-curator-office": {
+      "episode": "1-4 流亡展舰",
+      "mode": "cutscene",
+      "title": "馆长办公室与移动底盘",
+      "location": "馆长办公室",
+      "backdrop": "hangar",
+      "portrait": "curator",
+      "lines": [
+        ["system", "馆长权限钥匙：缺失。0号侧廊主钥：缺失。移动基地启动钥：已插入。"],
+        ["jicun", "已插入？"],
+        ["curator", "如果我没回来，别先找我。这句话我知道你不爱听。"],
+        ["curator", "当年审批没过。理由是“博物馆不应具备逃跑能力”。我觉得那帮人不懂博物馆。"],
+        ["curator", "把能开的灯带走。剩下的，别急着叫废墟。"]
+      ],
+      "choices": [
+        { "id": "start-mobile-base", "label": "启动旧移动底盘", "next": "c01e04-launch", "effects": { "flags": { "mobileBaseStarted": true } } }
+      ]
+    },
+    "c01e04-launch": {
+      "episode": "1-4 流亡展舰",
+      "mode": "cutscene",
+      "title": "万机馆起航",
+      "location": "旧会展区外",
+      "backdrop": "hangar",
+      "portrait": "zero",
+      "lines": [
+        ["luheng", "这东西能开？"],
+        ["guardian", "馆长审批记录显示：不能。"],
+        ["tangjiao", "那为什么在动？"],
+        ["doudeng", "因为它没看审批记录。都闭嘴，右侧支架要断。"],
+        ["zero", "这次……不是闭馆。是开走。"],
+        ["jicun", "我知道。"]
+      ],
+      "choices": [
+        { "id": "qihai-delay", "label": "接入七海通讯", "next": "c01e04-qihai", "effects": { "vars": { "blackCaseResonance": 1 }, "flags": { "wanjiMobile": true } } }
+      ]
+    },
+    "c01e04-qihai": {
+      "episode": "1-4 流亡展舰",
+      "mode": "dialogue",
+      "title": "七海延迟消防锁",
+      "location": "通讯",
+      "backdrop": "hangar",
+      "portrait": "qihai",
+      "lines": [
+        ["qihai", "万机馆移动行为已构成违规转移。"],
+        ["jicun", "你要继续封门？"],
+        ["qihai", "我已经没有门可以封。"],
+        ["qihai", "以及，东侧消防通道的外部锁，我延迟了四十秒。"],
+        ["jicun", "为什么？"],
+        ["qihai", "因为那里有人。报告里会写：信号延迟。"]
+      ],
+      "choices": [
+        { "id": "temporary-opening", "label": "贴上临时展览标题", "next": "c01e04-title", "effects": { "vars": { "enterpriseTrust": 1 }, "flags": { "qihaiDelayedLock": true } } }
+      ]
+    },
+    "c01e04-title": {
+      "episode": "1-4 流亡展舰",
+      "mode": "title-choice",
+      "title": "临时开馆标题",
+      "location": "移动中的临时展厅",
+      "backdrop": "hangar",
+      "portrait": "guardian",
+      "lines": [
+        ["xiaoman", "今天写什么？"],
+        ["acheng", "不能写赢了。"],
+        ["xiaoman", "那写没输？"],
+        ["guardian", "建议标题：闭馆流程未完成。"],
+        ["jicun", "临时开馆。"]
+      ],
+      "choices": [
+        { "id": "title-lights", "label": "今天没有胜利，只有第一次开灯", "next": "c01e04-report", "effects": { "vars": { "museumWarmth": 1 }, "flags": { "temporaryTitle": "今天没有胜利，只有第一次开灯" } } },
+        { "id": "title-unfinished", "label": "闭馆流程未完成", "next": "c01e04-report", "effects": { "vars": { "oldGuardianTrust": 1 }, "flags": { "temporaryTitle": "闭馆流程未完成" } } },
+        { "id": "title-dont-throw", "label": "没扔掉的东西先放这里", "next": "c01e04-report", "effects": { "vars": { "modelTrust": 1 }, "flags": { "temporaryTitle": "没扔掉的东西先放这里" } } },
+        { "id": "title-audience", "label": "观众仍在馆内", "next": "c01e04-report", "effects": { "vars": { "blackCaseResonance": 1 }, "flags": { "temporaryTitle": "观众仍在馆内" } } }
+      ]
+    },
+    "c01e04-report": {
+      "episode": "第1章结束",
+      "mode": "report",
+      "title": "闭馆记录",
+      "location": "移动中的万机馆",
+      "backdrop": "hangar",
+      "portrait": "jicun",
+      "lines": [
+        ["guardian", "流程更新。临时开馆。低照度。观众可停留。"],
+        ["system", "第1章《火灾后的开馆》结束。"]
+      ],
+      "choices": []
+    }
+  },
+  "battles": {
+    "protect-wall": {
+      "id": "protect-wall",
+      "name": "保护留言墙6回合",
+      "nextOnWin": "c01e02-after-battle",
+      "nextOnLoss": "c01e02-after-battle",
+      "width": 8,
+      "height": 6,
+      "maxTurns": 6,
+      "objective": "保护留言墙、转移孩子、阻止0号侧廊开启。",
+      "turnEvents": [
+        "旧守护者：请勿奔跑。但可以跟紧本机。",
+        "兜灯：东侧天桥不能走了。胸牌下面也别站。",
+        "七海：0号侧廊优先移交。",
+        "系统：未归档项目清理。旧纸条进入删除倒计时。",
+        "系统：共鸣异常。指令：燃魂。",
+        "馆守Z胸牌第二次亮起。兜灯说：现在不行。"
+      ],
+      "units": [
+        { "id": "jicun", "name": "纪存", "team": "player", "x": 1, "y": 4, "hp": 7, "move": 3, "range": 1, "attack": 2, "sprite": "command" },
+        { "id": "guide", "name": "旧守护者导览机", "team": "player", "x": 2, "y": 3, "hp": 8, "move": 3, "range": 1, "attack": 2, "sprite": "support" },
+        { "id": "doudeng", "name": "兜灯", "team": "player", "x": 1, "y": 2, "hp": 7, "move": 3, "range": 2, "attack": 2, "sprite": "trap" },
+        { "id": "tangjiao", "name": "唐胶", "team": "player", "x": 2, "y": 5, "hp": 7, "move": 3, "range": 2, "attack": 2, "sprite": "support" },
+        { "id": "wall", "name": "留言墙", "team": "object", "x": 6, "y": 3, "hp": 8, "move": 0, "range": 0, "attack": 0, "sprite": "display" },
+        { "id": "zero-door", "name": "0号侧廊门", "team": "object", "x": 7, "y": 1, "hp": 6, "move": 0, "range": 0, "attack": 0, "sprite": "zero" },
+        { "id": "drone-a", "name": "法务无人机", "team": "enemy", "x": 5, "y": 2, "hp": 5, "move": 2, "range": 1, "attack": 2, "sprite": "legalDrone" },
+        { "id": "frame-a", "name": "封存框体", "team": "enemy", "x": 6, "y": 5, "hp": 6, "move": 1, "range": 1, "attack": 2, "sprite": "sealFrame" }
+      ]
+    },
+    "guardian-z": {
+      "id": "guardian-z",
+      "name": "展厅里的旧守护者",
+      "nextOnWin": "c01e03-after-battle",
+      "nextOnLoss": "c01e03-after-battle",
+      "width": 10,
+      "height": 8,
+      "maxTurns": 6,
+      "objective": "击退3批回收无人机，同时避免馆守Z过热。",
+      "turnEvents": [
+        "旧守护者：右臂未归还。建议避免飞拳相关操作。",
+        "兜灯：胸牌温度上来了。让它后退一格。",
+        "豪司：勇气无需等待。旧守护者：纠正，勇气正在排队。",
+        "七海：馆守Z已进入活动状态。事故前置条件成立。",
+        "0号侧廊：右臂……还没回来。",
+        "系统显示战斗结束。纪存没有按下“胜利”。"
+      ],
+      "units": [
+        { "id": "guardian-z", "name": "馆守Z", "team": "player", "x": 2, "y": 3, "hp": 16, "move": 2, "range": 1, "attack": 5, "size": 2, "sprite": "guardianZ" },
+        { "id": "jicun", "name": "纪存", "team": "player", "x": 1, "y": 6, "hp": 7, "move": 3, "range": 1, "attack": 2, "sprite": "command" },
+        { "id": "doudeng", "name": "兜灯", "team": "player", "x": 3, "y": 6, "hp": 7, "move": 3, "range": 2, "attack": 2, "sprite": "trap" },
+        { "id": "haosi", "name": "豪司援护", "team": "player", "x": 4, "y": 6, "hp": 8, "move": 4, "range": 1, "attack": 3, "sprite": "braveFist" },
+        { "id": "wall", "name": "留言墙", "team": "object", "x": 8, "y": 4, "hp": 8, "move": 0, "range": 0, "attack": 0, "sprite": "display" },
+        { "id": "drone-a", "name": "回收无人机A", "team": "enemy", "x": 7, "y": 1, "hp": 6, "move": 2, "range": 1, "attack": 2, "sprite": "legalDrone" },
+        { "id": "drone-b", "name": "回收无人机B", "team": "enemy", "x": 8, "y": 6, "hp": 6, "move": 2, "range": 1, "attack": 2, "sprite": "legalDrone" },
+        { "id": "scanner", "name": "白线扫描器", "team": "enemy", "x": 6, "y": 3, "hp": 7, "move": 1, "range": 3, "attack": 2, "sprite": "sealFrame" }
+      ]
+    }
+  },
+  "resources": {
+    "people": { "label": "救人", "saved": "守展小队和伤员全部上移动底盘。", "partial": "旧守护者必须分心搜救，下一章开场更紧。", "vars": { "oldGuardianTrust": 1, "museumWarmth": 1 } },
+    "exhibits": { "label": "救展品", "saved": "馆守Z右臂、留言墙、展岛核心件被抢上船。", "partial": "部分展岛只剩展签和残片。", "vars": { "museumWarmth": 1, "wanjiDamage": -1 } },
+    "server": { "label": "救服务器", "saved": "G.A.G.子节点、馆长档案、0号权限备份被拆走。", "partial": "黑展柜和馆长线信息残缺，谜团更破碎。", "vars": { "blackCaseResonance": 1, "curatorMystery": 1 } }
+  },
+  "codex": {
+    "stamp-counter": { "title": "纪念章台", "body": "坏章比好章更有人用，说明这里的勇气常常盖歪。" },
+    "museum-map": { "title": "万机馆导览地图", "body": "第一章的情感目标不是得到机体，而是喜欢上这个可以乱逛的地方。" },
+    "combination-bay": { "title": "合体剖面台", "body": "未来可扩成合体教程：站位、同步、争吵和排队。" },
+    "bravery-counter": { "title": "勇气审批角", "body": "勇者梗的关键不是喊得大声，而是大声之后谁承担责任。" },
+    "reality-stage": { "title": "现实机器小舞台", "body": "真实机器的失败不是搞笑垫脚石，而是另一种机器人神话。" },
+    "model-clinic": { "title": "模型病院", "body": "断件、补土、水口和孩子的手印，是模型线的情感底层。" },
+    "message-wall": { "title": "留言墙", "body": "第一章的“公主”不是人，而是一面纸很轻的墙。" },
+    "zero-note": { "title": "0号便签", "body": "“不是坏了，是太像没坏。”馆长最危险的一句家常话。" },
+    "guardian-z": { "title": "馆守Z", "body": "18米级旧式守护机。第一次站起来不是为了赢，是为了闭馆。" },
+    "right-arm": { "title": "右臂旧件", "body": "热了十年的旧装甲，后续将连接黑展柜和旧守护者记忆缺损。" },
+    "qihai": { "title": "七海", "body": "她不是喊口号的反派。她念清单，因为她真的见过事故。" }
+  }
+}
+

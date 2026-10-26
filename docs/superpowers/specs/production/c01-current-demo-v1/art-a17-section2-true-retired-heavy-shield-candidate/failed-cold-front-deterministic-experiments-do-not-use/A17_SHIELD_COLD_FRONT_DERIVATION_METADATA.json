@@ -1,0 +1,148 @@
+{
+  "schema": "a17-cold-front-deterministic-v1",
+  "status": "FAIL_STOP_VISUAL_GATE_DO_NOT_USE",
+  "user_accepted": false,
+  "runtime": false,
+  "canon": false,
+  "godot_bound": false,
+  "imagegen_calls": 0,
+  "positive_source_policy": "accepted front master plus its derivation receipt/metadata only",
+  "forbidden_inputs": [
+    "all R2/R3 failed cold outputs",
+    "all ImageGen cold edits",
+    "all Guardian Z action composites"
+  ],
+  "source": {
+    "path": "derived-front-rear-sprites-v1/masters/A17_SHIELD_FRONT_EXTERIOR_RGBA_MASTER_768x1152.png",
+    "sha256": "8c20afbefefd04716e580ae5791338524ebc8c520256cdc047fae6de3ca7de47",
+    "size": [
+      768,
+      1152
+    ],
+    "mode": "RGBA"
+  },
+  "method": {
+    "name": "locked scar trajectory + red-heat evidence + same-panel deterministic clone",
+    "mask": {
+      "trajectory": "polyline through ten locked high-heat-axis points; least-squares reference y=-0.50920*x+759.520",
+      "emit_capsule_radius_px": 18,
+      "red_light_rule": "r>=105; r-g>=35; r-b>=25",
+      "warm_soot_rule": "luma<=85; 22<=r<=120; r-g>=4; r-b>=3",
+      "soot_topology": "only evidence 8-connected to emit; fixed 3 px close then 2 px dilate",
+      "outer_seam_margin_px": 5,
+      "inner_pixels": 36281,
+      "outer_changed_pixel_cap": 42726,
+      "old_scar_keep_intersection_pixels": 0
+    },
+    "old_scar_preservation": {
+      "segmentation": "neutral-bright pixels in three locked linear corridors, dilated 2 px",
+      "neutral_bright_rule": "max(rgb)>=78 and chroma<=62",
+      "upper_corridor": "x=80..600; abs(y-(198.337+0.33833*x))<=18",
+      "middle_corridor": "x=65..410; abs(y-(519.145-0.02563*x))<=16",
+      "lower_corridor": "x=100..610; abs(y-(839.250-0.29569*x))<=20",
+      "pixels": 48370
+    },
+    "clone_regions": [
+      {
+        "x": "<414",
+        "clean_side": "above",
+        "mapping": "reflect across per-column mask top"
+      },
+      {
+        "x": ">=414",
+        "clean_side": "below",
+        "mapping": "reflect across per-column mask bottom"
+      }
+    ],
+    "source_rejection": "walk outward by 4 px if lookup hits correction mask, alpha zero, or old-scar preserve mask",
+    "taper_follow": "x'=322+(x-322)*clip(1-0.00038*(y'-y),0.88,1.12)",
+    "feather": "inner=1.0; 8 px Gaussian only inside the saved outer mask"
+  },
+  "hard_gates": {
+    "source_alpha_byte_identical": true,
+    "outside_saved_mask_rgba_byte_identical": true,
+    "changed_pixels_outside_saved_mask": 0,
+    "changed_pixels_intersecting_three_old_scar_keep_mask": 0,
+    "saved_mask_intersecting_three_old_scar_keep_mask": 0,
+    "source_and_output_alpha_bbox_equal": [
+      41,
+      68,
+      726,
+      1084
+    ],
+    "output_size": [
+      768,
+      1152
+    ],
+    "output_mode": "RGBA",
+    "vivid_red_heat_pixels_in_locked_scar_roi": 20,
+    "manual_visual_gate": "FAIL: repeated donor striping, central-spine/panel discontinuity, residual red heat"
+  },
+  "outputs": {
+    "master": {
+      "path": "failed-cold-front-deterministic-experiments-do-not-use/masters/FAILED_DO_NOT_USE_A17_SHIELD_COLD_FRONT_EXPERIMENT_768x1152.png",
+      "sha256": "cf7b47acfcefdc7c7c8f705fc0d282df01563efe5b7253ad4dcbcdf2d4c52c14"
+    },
+    "map_candidate": {
+      "path": "failed-cold-front-deterministic-experiments-do-not-use/map-candidates/FAILED_DO_NOT_USE_A17_SHIELD_COLD_FRONT_EXPERIMENT_256x256.png",
+      "sha256": "a85acc9c5d23e067f50a4f52e10a08fd812425b2f095ea9083f6d37e523e568d",
+      "canvas_size": [
+        256,
+        256
+      ],
+      "source_alpha_bbox_xyxy": [
+        41,
+        68,
+        726,
+        1084
+      ],
+      "normalized_subject_size_px": [
+        140,
+        208
+      ],
+      "copy_offset_px": [
+        58,
+        16
+      ],
+      "alpha_bbox_xyxy": [
+        58,
+        16,
+        198,
+        224
+      ],
+      "ground_tip_pivot_px": [
+        128,
+        224
+      ],
+      "nominal_sprite_scale": [
+        1.0,
+        1.0
+      ],
+      "resample": "premultiplied_alpha_lanczos"
+    },
+    "hot_scar_mask": {
+      "path": "failed-cold-front-deterministic-experiments-do-not-use/masks/A17_SHIELD_FOURTH_HOT_SCAR_AND_HALO_MASK_768x1152.png",
+      "sha256": "437eb776c5bc784049e28b33ed3533f77c580278753b62099a75cd369923c850",
+      "pixels": 42726
+    },
+    "old_scar_preserve_mask": {
+      "path": "failed-cold-front-deterministic-experiments-do-not-use/masks/A17_SHIELD_THREE_OLD_WHITE_SCARS_PRESERVE_MASK_768x1152.png",
+      "sha256": "0f252bbc65c65260cb9c49d1acdfbc12cd44ddcde89ebfc78a7b05028e16ab85",
+      "pixels": 48370
+    },
+    "qa": {
+      "dark_light_100pct": {
+        "path": "failed-cold-front-deterministic-experiments-do-not-use/qa/A17_SHIELD_COLD_FRONT_DARK_LIGHT_QA_100PCT.png",
+        "sha256": "bc855140d510abe3204336bd7a7ec5be6040130a89d5501eceb763a345f271e4"
+      },
+      "dark_light_50pct": {
+        "path": "failed-cold-front-deterministic-experiments-do-not-use/qa/A17_SHIELD_COLD_FRONT_DARK_LIGHT_QA_50PCT.png",
+        "sha256": "f135725aae463e93dbe3092bb65dbb609b1390210654d5569ce44247ec437ecf"
+      },
+      "mask_overlay": {
+        "path": "failed-cold-front-deterministic-experiments-do-not-use/qa/A17_SHIELD_COLD_FRONT_MASK_AND_OLD_SCAR_PRESERVE_OVERLAY.png",
+        "sha256": "a144615360cc0d8f3d044140bad0cfde43f62d11d2609d1155a0e06ed9038fcb"
+      }
+    }
+  }
+}

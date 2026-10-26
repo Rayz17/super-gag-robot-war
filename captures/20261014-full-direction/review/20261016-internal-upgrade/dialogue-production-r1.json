@@ -1,0 +1,246 @@
+{
+  "revision": "dialogue-handoff-r1",
+  "started": "2026-10-16",
+  "producer_thread": "01a13f08-23a0-74c2-b2f5-7913c7e81470",
+  "receiver_thread": "01a0f799-a7fc-7173-b8b2-8ce9f1c8861a",
+  "purpose": "Actual character export handoff, produced under received interface. Not a parallel task progress ledger.",
+  "accepted_identity_decisions": "user-art-decisions-20261016.json",
+  "receiver_interface": "美术交接说明-20261016.md#8",
+  "consumers": [
+    "game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",
+    "game-godot/scripts/formula_lab/linked_campaign/rounds/people_portraits.gd",
+    "game-godot/scripts/formula_lab/linked_campaign/rounds/people_commands.gd"
+  ],
+  "formula": "scale = 72.0 / (chin - eye.y); dialogue offset is (eye - crop.position) * scale. Avatar uses same master and portrait_crop, not separately regenerated face.",
+  "items": [
+    {
+      "id": "H01",
+      "name": "纪存",
+      "key": "jicun",
+      "file": "samples/H01-jicun-dialogue-r1.png",
+      "parent": "../20261015-latest-review/images/0fb244f566cec5faf6d6d53e2f9d432f52fe23b907561c966d619900d1d5668b.jpg",
+      "crop": [
+        80,
+        35,
+        890,
+        1150
+      ],
+      "eye": [
+        442,
+        242
+      ],
+      "chin": 376.0,
+      "portrait_crop": [
+        302,
+        58,
+        390,
+        390
+      ],
+      "generated": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-de5014cb-eb64-4b82-a3ef-86216a6f4311.png",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "sha256": "8f8c902d40e26beb9f2a6ad37316c85364aa9630f4d84f8092e1bcf077a9003b",
+      "parent_sha256": "0fb244f566cec5faf6d6d53e2f9d432f52fe23b907561c966d619900d1d5668b",
+      "accepted_identity_direction": true,
+      "export_user_accepted": false,
+      "runtime_integrated": false,
+      "coordinate_space": "original master image pixels; top-left origin; eye is midpoint between eyes; chin is lower face endpoint, not collar",
+      "dialogue_head_scale": 0.5373134328358209,
+      "crop_source": "author visually annotated actual r1 export, then checked within-image bounds; requires receiver normal dialogue view check",
+      "avatar_checks_ui_sizes": [
+        72,
+        112
+      ],
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "corner_values": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_bbox": [
+          0,
+          17,
+          1002,
+          1536
+        ],
+        "background_sample_values": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generation": "built-in image_gen identity-preserving extraction; prompt in dialogue-handoff-prompts-r1.json"
+    },
+    {
+      "id": "H02",
+      "name": "白鸢",
+      "key": "baiyuan",
+      "file": "samples/H02-baiyuan-dialogue-r1.png",
+      "parent": "../20261015-latest-review/images/10d9e60b4cdb0b194c3cc4ed779b51e02b8abba254d9c0fa091bcf8fe6131768.jpg",
+      "crop": [
+        0,
+        15,
+        1024,
+        1150
+      ],
+      "eye": [
+        477,
+        200
+      ],
+      "chin": 314.0,
+      "portrait_crop": [
+        320,
+        46,
+        390,
+        390
+      ],
+      "generated": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-c1533798-2fa3-460a-91a3-8237e9cc10b4.png",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "sha256": "13f877fae71b85f68f9c23ad23d48c4da557b376a355ae52732f6921c3205a8e",
+      "parent_sha256": "10d9e60b4cdb0b194c3cc4ed779b51e02b8abba254d9c0fa091bcf8fe6131768",
+      "accepted_identity_direction": true,
+      "export_user_accepted": false,
+      "runtime_integrated": false,
+      "coordinate_space": "original master image pixels; top-left origin; eye is midpoint between eyes; chin is lower face endpoint, not collar",
+      "dialogue_head_scale": 0.631578947368421,
+      "crop_source": "author visually annotated actual r1 export, then checked within-image bounds; requires receiver normal dialogue view check",
+      "avatar_checks_ui_sizes": [
+        72,
+        112
+      ],
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "corner_values": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_bbox": [
+          0,
+          17,
+          1024,
+          1536
+        ],
+        "background_sample_values": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generation": "built-in image_gen identity-preserving extraction; prompt in dialogue-handoff-prompts-r1.json"
+    },
+    {
+      "id": "H03",
+      "name": "七海",
+      "key": "qihai",
+      "file": "samples/H03-qihai-dialogue-v1.png",
+      "parent": "../../review/20261015-latest-review/images/e1b1aee7237967035c195bfa52d43dda3f0773f12f64abbf2a601ae0d28b273f.jpg",
+      "crop": [
+        0,
+        0,
+        1024,
+        1120
+      ],
+      "eye": [
+        477,
+        222
+      ],
+      "chin": 349.0,
+      "portrait_crop": [
+        302,
+        17,
+        390,
+        390
+      ],
+      "generated": null,
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "sha256": "404762ecc0ff561f8bc1fe758c1b16f4cb2e7aab33d15b62a1d273d4cbf41b64",
+      "parent_sha256": "e1b1aee7237967035c195bfa52d43dda3f0773f12f64abbf2a601ae0d28b273f",
+      "accepted_identity_direction": true,
+      "export_user_accepted": false,
+      "runtime_integrated": false,
+      "coordinate_space": "original master image pixels; top-left origin; eye is midpoint between eyes; chin is lower face endpoint, not collar",
+      "dialogue_head_scale": 0.5669291338582677,
+      "crop_source": "author visually annotated actual r1 export, then checked within-image bounds; requires receiver normal dialogue view check",
+      "avatar_checks_ui_sizes": [
+        72,
+        112
+      ],
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "corner_values": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_bbox": [
+          0,
+          0,
+          1024,
+          1536
+        ],
+        "background_sample_values": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generation": "reuse existing project cutout; no regeneration or pixel changes this batch"
+    }
+  ],
+  "runtime_changed_by_producer": false,
+  "author_review": {
+    "media": "two generated masters displayed after built-in editing, accepted source boards and existing H03 master inspected at full image scale",
+    "findings": [
+      "H01 keeps dark-haired curator identity, navy/ivory coat, strap/ID and wrist unit; H02 keeps silver waves, cream/black outfit and binder; no board typography remains.",
+      "H03 reused without introducing another face. All three have real alpha and are 1024x1536; metadata checked against their own pixels.",
+      "Eye/chin anchors normalize head size. The crops are presentation values and do not alter identity or story rules."
+    ],
+    "remaining": [
+      "Receiver has not yet inspected new exports in actual dialogue/HUD at 72/112 UI sizes and normal/130% text settings.",
+      "This author source/export review is not independent quality acceptance. Expression sets and all supporting-character transfers remain open.",
+      "Do not infer user approval of these exact derivatives from approval of the parent identities."
+    ]
+  },
+  "checks": {
+    "source_files_and_hashes": true,
+    "alpha_read_only_inspected": true,
+    "crop_within_image": true,
+    "normal_runtime_dialogue": false,
+    "native_input": false,
+    "independent_visual_review": false,
+    "user_export_acceptance": false
+  },
+  "later_correction_20261017": {
+    "superseded_by": "dialogue-production-r2.json",
+    "affected_id": "H02",
+    "reason": "mother has three hands; initial review missed it, subsequently reported by user",
+    "do_not_use_h02_for_new_derivatives": true,
+    "other_items_unchanged": true,
+    "historical_runtime_report_not_overwritten": true
+  }
+}

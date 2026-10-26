@@ -1,0 +1,7 @@
+gate_id	requirement	result	evidence
+B06_SOURCE	beat B06_JICUN_IS_STILL_INSIDE remains exact	PASS	line=有点响，别的没事。; visual_mode=map_wide_caption; slot=JICUN_EXITS_GUARDIAN_CHEST
+IDENTITY	current GF adult Chinese male Jicun; black hair; no glasses; navy museum coat; left-arm archive terminal	PASS_CALL01_INTERNAL	100pct QA visual inspection; GF PLAN was the sole image reference
+SEMANTICS	exit and steady at Guardian Z chest guide seat; one hand braced; slight shock; no pointing	PASS_CALL01_INTERNAL	100pct QA visual inspection
+TEXT_UI	no text, map UI, caption, logo, watermark, or other character	PASS_CALL01_INTERNAL	100pct QA visual inspection
+ALPHA	genuine transparency outside subject and frame fragment	FAIL_HARD	sips hasAlpha=no; PNG is RGB; checkerboard is baked into pixels
+DELIVERY	eligible transparent Candidate image	FAIL_STOP	no delivery image emitted; user=false; runtime=false; canon=false

@@ -1,0 +1,532 @@
+{
+  "episode_id": "C01E04-STORY-FIRST-CANDIDATE",
+  "start_node_id": "c01e04_regulated_reentry",
+  "status": "candidate_runtime_production",
+  "input_transaction_id": "C01E03:RT035:ATOMIC_SNAPSHOT:V01",
+  "canon_refs": [
+    "DOC_C01E04_STORY_FIRST_CANON_MIGRATION_V1",
+    "DATA_C01E04_RUNTIME_CONTRACT_V1",
+    "DATA_C01E04_GRAYBOX_CONSTANTS_V1",
+    "V355-C01E04",
+    "CH_JICUN",
+    "CH001",
+    "CH_TANGJIAO",
+    "CH_LUHENG",
+    "CH_QIHAI",
+    "CH002",
+    "V353U001",
+    "MECHA_BLACK_SHOWCASE_EMPEROR_SHADOW"
+  ],
+  "nodes": [
+    {
+      "node_id": "c01e04_regulated_reentry",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_C01E04_STORY_NARRATIVE",
+      "title": "受规管再入场 / 建筑不能原地留下",
+      "commit_policy": "local_transition_only",
+      "transition": {
+        "transition_id": "C01E04-TR-01-REGULATED-REENTRY",
+        "kind": "pressure_escalation",
+        "eyebrow": "RT035之后 / 第六声落锁",
+        "title": "所有人都安全，万机馆才真正失去留在原地的资格",
+        "location": "万机馆封锁线 / B1西侧维修隧道",
+        "time_label": "23:17",
+        "cause": "馆守Z首次位移触发外部监视阈值；六枚军方锚沿旧对位痕锁住B1，火情稳定后将按楼层、机体、档案和危险资产分拆。",
+        "handoff": "陆衡凭城市派单与消防领入回执到场；消防队长只批准四名必要操作员进入四个保护岗位。",
+        "continuity": {
+          "types": ["action", "responsibility"],
+          "action_refs": ["C01E03:RT035:ATOMIC_SNAPSHOT:V01", "B1_MOVING_SPINE_PHYSICALLY_LOCKED"],
+          "responsibility_refs": ["CH_JICUN", "CH001", "CH_TANGJIAO", "CH_LUHENG"]
+        },
+        "duration": 1.35,
+        "fade_seconds": 0.46,
+        "accent": "d95f56"
+      },
+      "completion_contract": "OUTCOME_C01E04_RT001_RT005_LOCAL_V01",
+      "transaction_id": "C01E04:RT001_RT005:LOCAL:V01",
+      "outcome_facts": [
+        {"id": "C01E04_RT035_EXACT_INPUT_READ_LOCAL", "to": true},
+        {"id": "C01E04_REGULATED_REENTRY_LOCAL", "to": "JICUN+DOUDENG+TANGJIAO+LUHENG_IN_PROTECTED_POSTS"},
+        {"id": "C01E04_NO_RESCUE_PAYLOAD_LOCAL", "to": true},
+        {"id": "C01E04_DISMANTLEMENT_CATEGORIES_VISIBLE_LOCAL", "to": "FLOOR_BODY+MECHA+ARCHIVE+HAZARD"}
+      ],
+      "player_summary": "六锚把万机馆改列为固定风险待拆对象。二十九名观众、豪司、消防人员与两件接驳货物均留在安全区；纪存、兜灯、唐胶、陆衡受监管返入四个保护岗位。",
+      "presentation": {
+        "profile": "standard_adv",
+        "background": "res://assets/backgrounds/story_first/bg_c01e01_guardian_atrium_model_hospital_v01.png",
+        "portrait_visibility": "active_only",
+        "eyebrow": "万机馆封锁线 / B1入口",
+        "title": "第六声从脚底传来",
+        "time_label": "23:17",
+        "status_cards_heading": "固定风险分拆清单 / 四类均已立项",
+        "status_cards": [
+          {"id": "DISMANTLE_FLOOR_BODY", "label": "楼层与馆体", "state": "市政结构拆除", "detail": "结构响应处 / 固定风险", "accent": "58c8d9"},
+          {"id": "DISMANTLE_MECHA", "label": "机体与大型展示体", "state": "军方风险卸载", "detail": "六锚监管 / 单臂另列", "accent": "e2a74b"},
+          {"id": "DISMANTLE_ARCHIVE", "label": "档案与许可设备", "state": "档案接管留置", "detail": "法务链 / 访问记录", "accent": "65bda7"},
+          {"id": "DISMANTLE_HAZARD", "label": "危险资产与受损能源", "state": "消防封存处置", "detail": "热区 / 风道 / 未知电源", "accent": "d95f56"}
+        ],
+        "cast": [
+          {"actor_id": "CH_JICUN", "display_name": "纪存", "side": "left", "portrait_path": "res://assets/portraits/portrait_jicun.png", "accent": "58c8d9"},
+          {"actor_id": "CH001", "display_name": "兜灯", "side": "right", "portrait_path": "res://assets/portraits/portrait_doudeng.png", "accent": "65bda7"},
+          {"actor_id": "CH_TANGJIAO", "display_name": "唐胶", "side": "left", "portrait_path": "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png", "accent": "e2a74b"}
+        ]
+      },
+      "lines": [
+        {"beat_id": "c01e04_reentry_01", "speaker": "音效", "source_kind": "system", "stage_action": "B1下方第六枚外部锚钉落到底", "text": "咚。"},
+        {"beat_id": "c01e04_reentry_02", "speaker": "旁白", "stage_action": "城市管理屏把二十九个楼外安全点缩到左上角", "text": "没有新的红色人点。屏幕改用四种颜色覆盖楼层、机体、档案和危险资产，并在每一栏后面写下不同的接管部门。"},
+        {"beat_id": "c01e04_reentry_03", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "放大爬过留言墙的蓝色接管栏", "text": "这一栏按重量搬，还是按估价搬？"},
+        {"beat_id": "c01e04_reentry_04", "speaker": "城市管理屏", "source_kind": "system", "text": "火情稳定后，固定风险源按分区拆除。"},
+        {"beat_id": "c01e04_reentry_05", "actor_id": "CH001", "speaker": "兜灯", "stage_action": "手指停在馆守Z空掉的右肩轮廓上", "text": "它才刚少一只手。先别让他们算剩下的。"},
+        {"beat_id": "c01e04_reentry_06", "speaker": "旁白", "stage_action": "一辆市政结构响应车停在封锁线外；驾驶员依次刷派单时间戳、工程证与消防领入回执", "text": "陆衡不是被秘密叫来的。E03的第一次巨型位移已把他调到相邻街区，第六枚锚让工单在23:17自动升级。"},
+        {"beat_id": "c01e04_reentry_07", "actor_id": "CH_LUHENG", "speaker": "陆衡", "stage_action": "先把跌跌从响应车轮前抱到黄色线内", "text": "六点同时位移，建筑自重模型不收敛。谁让一座展馆有移动脊柱？"},
+        {"beat_id": "c01e04_reentry_08", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "把RT035回执与B1现图发到他的终端", "text": "没人下过这个命令。锚钉在等馆守Z先动。"},
+        {"beat_id": "c01e04_reentry_09", "actor_id": "CH_LUHENG", "speaker": "陆衡", "stage_action": "对照六锚入土深度，没有抬头", "text": "我的工单只认两个结果：原地安全留置，或者分拆。"},
+        {"beat_id": "c01e04_reentry_10", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "第三个呢？"},
+        {"beat_id": "c01e04_reentry_11", "actor_id": "CH_LUHENG", "speaker": "陆衡", "stage_action": "把固定建筑图层关掉，只剩不应存在的脊柱", "text": "证明它不是建筑。那我今天的工单会很难写。"},
+        {"beat_id": "c01e04_reentry_12", "speaker": "消防队长", "source_kind": "radio", "stage_action": "公示屏弹出四个实名保护框", "text": "只准四名必要操作员返入。纪存西侧路由，兜灯胸前硬停，唐胶载荷固定，陆衡结构复核。观众和消防员不动。"},
+        {"beat_id": "c01e04_reentry_13", "speaker": "旁白", "stage_action": "四人戴上定位器，经西侧维修隧道进入B1", "text": "每个人都能在图上看见另外三个人的位置；任一定位器离开保护框，消防线就中止操作。"},
+        {"beat_id": "c01e04_reentry_14", "actor_id": "CH_LUHENG", "speaker": "陆衡", "stage_action": "按固定建筑模型画出先解E锚的箭头", "text": "先卸东边。右侧荷载回地基，左边才有余量。"},
+        {"beat_id": "c01e04_reentry_15", "speaker": "旁白", "stage_action": "跌跌把E03反复失败时记录的地板振动投到箭头上", "text": "那条力线没有回地基。它穿过移动脊柱，直抵馆守Z已经不存在的右臂。"},
+        {"beat_id": "c01e04_reentry_16", "actor_id": "CH_LUHENG", "speaker": "陆衡", "stage_action": "把第一条箭头整行划掉", "text": "不是地基托楼。是楼在踩地基。按移动体重算。"},
+        {"beat_id": "c01e04_reentry_17", "actor_id": "CH001", "speaker": "兜灯", "stage_action": "把单臂胸前接驳图推到他面前", "text": "右边没有手。别在包络里补一条。"},
+        {"beat_id": "c01e04_reentry_18", "actor_id": "CH_LUHENG", "speaker": "陆衡", "stage_action": "把对称中心线删掉", "text": "好。按它现在的样子算。"}
+      ],
+      "success_edges": ["c01e04_b1_engineering_inspection"],
+      "soft_fail_edges": ["c01e04_b1_engineering_inspection"],
+      "failure_edges": ["c01e04_regulated_reentry"],
+      "cancel_edges": ["c01e04_regulated_reentry"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "c01e04_b1_engineering_inspection",
+      "mode": "SPATIAL",
+      "scene_id": "SCN_C01E04_B1_ENGINEERING_INSPECTION",
+      "title": "B1工程巡检 / 它不是固定建筑",
+      "commit_policy": "local_transition_only",
+      "capture_local_facts": true,
+      "transition": {
+        "transition_id": "C01E04-TR-02-B1-ENGINEERING-INSPECTION",
+        "kind": "location_shift",
+        "eyebrow": "消防监管返入 / 人尺度",
+        "title": "四个人先沿着这副身体走一遍",
+        "location": "万机馆B1移动脊柱 / 载荷轨与外锁井",
+        "time_label": "23:20",
+        "cause": "陆衡的固定建筑模型已被跌跌的失败数据推翻，但六锚、单臂接驳和载荷入口仍需现场确认。",
+        "handoff": "玩家完成三项关键工况即可继续；勇拳空锚位和外锁臂保留为可选余波，不要求扫完全部台词。",
+        "continuity": {
+          "types": ["action", "responsibility"],
+          "action_refs": ["C01E04_REGULATED_REENTRY_LOCAL"],
+          "responsibility_refs": ["CH_JICUN", "CH001", "CH_TANGJIAO", "CH_LUHENG"]
+        },
+        "duration": 1.1,
+        "fade_seconds": 0.38,
+        "accent": "49c7d8"
+      },
+      "completion_contract": "OUTCOME_C01E04_B1_INSPECTION_LOCAL_V01",
+      "transaction_id": "C01E04:B1_INSPECTION:LOCAL:V01",
+      "investigation_definition_path": "res://content/episodes/c01/e04/explore/c01_e04_b1_engineering_inspection.json",
+      "success_edges": ["c01e04_zero_route_test"],
+      "soft_fail_edges": ["c01e04_zero_route_test"],
+      "failure_edges": ["c01e04_b1_engineering_inspection"],
+      "cancel_edges": ["c01e04_b1_engineering_inspection"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "c01e04_zero_route_test",
+      "mode": "SPATIAL",
+      "scene_id": "SCN_C01E04_ZERO_ROUTE_TEST",
+      "title": "零号旧路测试 / 有效，但只认一个人",
+      "commit_policy": "local_transition_only",
+      "capture_local_facts": true,
+      "transition": {
+        "transition_id": "C01E04-TR-02-ZERO-ROUTE-TEST",
+        "kind": "pressure_escalation",
+        "eyebrow": "馆长办公室 / 零号侧廊外",
+        "title": "最快的路先把三枚核心完整送回来",
+        "location": "馆长办公室授权座 / B1本地路由站",
+        "time_label": "23:24",
+        "cause": "六锚仍压住脊柱，常规撤收时间不足；旧钥匙使零号侧廊外的本地高速路由通电。",
+        "handoff": "纪存允许一次公开清单测试；路线随后把跌跌降格为设备并灰掉分布式停止权。",
+        "continuity": {
+          "types": ["action", "responsibility"],
+          "action_refs": ["C01E04_REGULATED_REENTRY_LOCAL"],
+          "responsibility_refs": ["CH_JICUN", "CH001", "CH002"]
+        },
+        "duration": 1.25,
+        "fade_seconds": 0.44,
+        "accent": "8b78b5"
+      },
+      "completion_contract": "OUTCOME_C01E04_RT006_RT007_LOCAL_V01",
+      "transaction_id": "C01E04:RT006_RT007:LOCAL:V01",
+      "outcome_facts": [
+        {"id": "C01E04_ZERO_SHORTCUT_EFFECTIVE_LOCAL", "to": "THREE_LISTED_ACTIVE_CORES_RECOVERED"},
+        {"id": "C01E04_ZERO_SHORTCUT_REFUSED_LOCAL", "to": true},
+        {"id": "C01E04_ZERO_SHORTCUT_CURRENT_HARM_LOCAL", "to": "DIEDIE_RECLASSIFIED_AND_DISTRIBUTED_STOP_GRAYED_THEN_RESTORED"}
+      ],
+      "player_summary": "零号旧路确实完整取回三枚公开活动核心；随后把跌跌重分类为高速运输设备、灰掉兜灯与旧守护者的停机权，并要求纪存永久独占管理。纪存实测硬停失败后拔除桥接片，恢复分布式停止权。",
+      "presentation": {
+        "profile": "standard_adv",
+        "background": "res://assets/backgrounds/story_first/bg_c01e01_zero_corridor_v01.png",
+        "portrait_visibility": "active_only",
+        "eyebrow": "零号侧廊外 / 本地路由站",
+        "title": "一条真的很好用的旧路",
+        "time_label": "23:24",
+        "cast": [
+          {"actor_id": "CH_JICUN", "display_name": "纪存", "side": "left", "portrait_path": "res://assets/portraits/portrait_jicun.png", "accent": "58c8d9"},
+          {"actor_id": "CH001", "display_name": "兜灯", "side": "right", "portrait_path": "res://assets/portraits/portrait_doudeng.png", "accent": "65bda7"},
+          {"actor_id": "CH_TANGJIAO", "display_name": "唐胶", "side": "left", "portrait_path": "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png", "accent": "e2a74b"}
+        ]
+      },
+      "lines": [
+        {"beat_id": "c01e04_zero_01", "speaker": "馆长旧录音", "source_kind": "recording", "stage_action": "移动底盘钥匙压进授权座；录音后半被旧噪声切断", "text": "真要走，别先搬最会说话的。先看谁走得慢。"},
+        {"beat_id": "c01e04_zero_02", "speaker": "零号本地路由", "source_kind": "system", "text": "高速撤收测试：仅限公开清单内三枚活动核心。"},
+        {"beat_id": "c01e04_zero_03", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "取消全馆接管，只保留三枚核心测试框", "text": "只取这三枚。编号和落点全程公开。"},
+        {"beat_id": "c01e04_zero_04", "speaker": "旁白", "stage_action": "三枚核心沿高架轨依次滑入B1接收盒", "text": "不到十秒，三道防震封条仍平整，活动核心回收率跳成绿色满值。"},
+        {"beat_id": "c01e04_zero_05", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "检查第三枚封条边角", "text": "确实比我们快。还没把东西磕坏。"},
+        {"beat_id": "c01e04_zero_06", "speaker": "旁白", "stage_action": "跌跌头上的蓝色岗位环改成灰色条码", "text": "屏幕没有报警。它只是把“旧守护者调度”改成“高速运输设备”。"},
+        {"beat_id": "c01e04_zero_07", "actor_id": "CH001", "speaker": "兜灯", "stage_action": "胸前硬停拨杆失去背光", "text": "导览台，你那边停机键还亮吗？"},
+        {"beat_id": "c01e04_zero_08", "speaker": "旧守护者", "source_kind": "broadcast", "text": "全馆停机请求：不可用。请联系永久管理员。"},
+        {"beat_id": "c01e04_zero_09", "speaker": "零号本地路由", "source_kind": "system", "stage_action": "唯一确认框锁定纪存姓名", "text": "永久单一管理员绑定待确认。低速载人壳到达率：　"},
+        {"beat_id": "c01e04_zero_10", "actor_id": "CH_LUHENG", "speaker": "陆衡", "stage_action": "用笔尖点了一下没有零、也没有百分号的空栏", "text": "这格是字段坏了，还是根本没算？"},
+        {"beat_id": "c01e04_zero_11", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "先试停。"},
+        {"beat_id": "c01e04_zero_12", "actor_id": "CH001", "speaker": "兜灯", "stage_action": "把硬停拨杆压到底；B1驱动声没有变化", "text": "没停。"},
+        {"beat_id": "c01e04_zero_13", "speaker": "旁白", "stage_action": "纪存打开授权座下盖，拇指压住发烫的管理员桥接片", "text": "桥接片没有弹出机构。他把它横向扳断，再从端子里拔出来。"},
+        {"beat_id": "c01e04_zero_14", "speaker": "音效", "stage_action": "B1所有驱动同时断电一拍", "text": "喀。"},
+        {"beat_id": "c01e04_zero_15", "speaker": "旧守护者", "source_kind": "broadcast", "text": "全馆停机请求：已恢复。跌跌，调度岗位重新登记。"},
+        {"beat_id": "c01e04_zero_16", "actor_id": "CH_LUHENG", "speaker": "陆衡", "stage_action": "在空栏旁写下“未进入成功条件”", "text": "现在这条路断了。常规窗口只够固定两类。"},
+        {"beat_id": "c01e04_zero_17", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "把三枚已取回核心移入公共载荷清单，不触碰侧廊门", "text": "那就列三类，保两类。人员不进表。"}
+      ],
+      "success_edges": ["c01e04_exact_two_loadout"],
+      "soft_fail_edges": ["c01e04_exact_two_loadout"],
+      "failure_edges": ["c01e04_zero_route_test"],
+      "cancel_edges": ["c01e04_zero_route_test"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "c01e04_exact_two_loadout",
+      "mode": "DESK",
+      "scene_id": "SCN_C01E04_EXACT_TWO_LOADOUT",
+      "title": "B1载荷固定台 / 精确二选三",
+      "commit_policy": "local_transition_only",
+      "capture_local_facts": true,
+      "transition": {
+        "transition_id": "C01E04-TR-04-EXACT-TWO-LOADOUT",
+        "kind": "pressure_escalation",
+        "eyebrow": "零号桥接片已拔除 / 常规窗口",
+        "title": "三类都亮着灯，但只有两条固定链",
+        "location": "万机馆B1实体载荷台",
+        "time_label": "23:28",
+        "cause": "零号旧路虽有效，却以跌跌设备化和单一管理员换速度；拒绝后常规固定窗口只够两类非人员载荷。",
+        "handoff": "玩家预览并提交三种精确组合之一；该Bundle随后只读进入战场，第三类在旧址公开留置。",
+        "continuity": {
+          "types": ["action", "responsibility"],
+          "action_refs": ["C01E04_ZERO_SHORTCUT_REFUSED_LOCAL", "C01E04_B1_INSPECTION_READY_LOCAL"],
+          "responsibility_refs": ["CH_JICUN", "CH001", "CH_TANGJIAO", "CH_LUHENG"]
+        },
+        "duration": 1.0,
+        "fade_seconds": 0.34,
+        "accent": "f0b83f"
+      },
+      "completion_contract": "OUTCOME_C01E04_EXACT_TWO_LOADOUT_LOCAL_V01",
+      "activity_definition_path": "res://content/episodes/c01/e04/activity/c01_e04_exact_two_loadout.json",
+      "success_edges": ["c01e04_public_corridor_appeal"],
+      "soft_fail_edges": ["c01e04_exact_two_loadout"],
+      "failure_edges": ["c01e04_exact_two_loadout"],
+      "cancel_edges": ["c01e04_exact_two_loadout"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "c01e04_public_corridor_appeal",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_C01E04_STORY_NARRATIVE",
+      "title": "公开申诉 / 一条不声称无害的路",
+      "commit_policy": "local_transition_only",
+      "capture_local_facts": true,
+      "transition": {
+        "transition_id": "C01E04-TR-05-PUBLIC-CORRIDOR-APPEAL",
+        "kind": "pressure_escalation",
+        "eyebrow": "载荷已锁定 / 公开频道",
+        "title": "不申请它无害，只申请它从哪里过",
+        "location": "万机馆B1操作位 / 城市联合应急频道",
+        "time_label": "23:29",
+        "cause": "零号旧路已物理断开，两类非人载荷已锁定；万机馆仍是注册移动风险，没有公开路径不得进入城市棋盘。",
+        "handoff": "七海仅以远程只读申诉人身份提交东行低速走廊；城市保留风险编号，军方保留追踪，东锁只延迟四十秒。",
+        "continuity": {
+          "types": ["action", "responsibility"],
+          "action_refs": ["C01E04_ZERO_SHORTCUT_REFUSED_LOCAL", "WANJI_LOADOUT_BUNDLE_ID"],
+          "responsibility_refs": ["CH_QIHAI", "CH_JICUN", "CH_LUHENG"]
+        },
+        "duration": 1.2,
+        "fade_seconds": 0.42,
+        "accent": "dca55b"
+      },
+      "completion_contract": "OUTCOME_C01E04_RT009_PUBLIC_CORRIDOR_LOCAL_V01",
+      "transaction_id": "C01E04:RT009:PUBLIC_CORRIDOR_LOCAL:V01",
+      "outcome_facts": [
+        {"id": "C01E04_PUBLIC_CORRIDOR_STATE_LOCAL", "to": "PUBLIC_CORRIDOR_PENDING"},
+        {"id": "C01E04_PUBLIC_CORRIDOR_ROUTE_LOCAL", "to": "EASTBOUND_LOW_SPEED_NO_HOSPITAL_NO_ZERO"},
+        {"id": "C01E04_PUBLIC_CORRIDOR_OPERATOR_COUNT_LOCAL", "to": 4},
+        {"id": "C01E04_PUBLIC_CORRIDOR_EVACUEE_COUNT_LOCAL", "to": 0},
+        {"id": "C01E04_PUBLIC_CORRIDOR_CARGO_CLASS_COUNT_LOCAL", "to": 2},
+        {"id": "C01E04_PUBLIC_CORRIDOR_RISK_LOCAL", "to": "MOBILE_RISK_RETAINED_WITH_MILITARY_TRACKING"},
+        {"id": "C01E04_QIHAI_DELAY_RECEIPT_LOCAL", "to": "ONE_CITY_TURN_OR_40_SECONDS_WITH_REVIEW_AND_SUSPENSION_EXTENSION"}
+      ],
+      "player_summary": "公开频道核对了四名登记操作员、零名撤离人员与两类非人载荷。七海没有撤销风险，只提交不经医院网格、不用零号捷径的东行低速走廊；东锁延迟四十秒，她的停职与复核同时延长。",
+      "presentation": {
+        "profile": "standard_adv",
+        "background": "res://assets/backgrounds/story_first/bg_c01e01_archive_room_v01.png",
+        "portrait_visibility": "active_only",
+        "eyebrow": "城市联合应急频道 / 公开录制",
+        "title": "四十秒不是放行",
+        "time_label": "23:29",
+        "cast": [
+          {"actor_id": "CH_JICUN", "display_name": "纪存 · B1操作位", "side": "left", "portrait_path": "res://assets/portraits/portrait_jicun.png", "accent": "58c8d9"},
+          {"actor_id": "CH_QIHAI", "display_name": "七海 · 远程申诉人", "side": "right", "portrait_path": "res://assets/portraits/portrait_qihai.png", "accent": "dca55b"}
+        ]
+      },
+      "lines": [
+        {"beat_id": "c01e04_appeal_01", "speaker": "城市值班", "source_kind": "radio", "stage_action": "公开频道展开四类拆解清单，移动风险编号仍为红色", "text": "登记结论没变。固定风险应当就地拆解。"},
+        {"beat_id": "c01e04_appeal_02", "speaker": "军方联络", "source_kind": "radio", "stage_action": "六枚外锁锚在监控图上保持闭合", "text": "外锁保留到明日六点。任何移动将视为风险源转移。"},
+        {"beat_id": "c01e04_appeal_03", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "stage_action": "她没有切掉两条反对意见，而是把它们并列在申诉页顶部", "text": "两条都记。这不是无害申请。"},
+        {"beat_id": "c01e04_appeal_04", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "text": "纪存，你们到底要什么？"},
+        {"beat_id": "c01e04_appeal_05", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "站在四个受保护操作位中间，不碰零号侧廊已断开的授权座", "text": "我们要开走。不带人，不走零号。"},
+        {"beat_id": "c01e04_appeal_06", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "stage_action": "申诉页面依次点亮人数与载荷栏", "text": "四名登记操作员。撤离人员，零。非人载荷，两类。"},
+        {"beat_id": "c01e04_appeal_07", "speaker": "城市值班", "source_kind": "radio", "text": "医院电网不接受途经。"},
+        {"beat_id": "c01e04_appeal_08", "actor_id": "CH_LUHENG", "speaker": "陆衡", "source_kind": "radio", "stage_action": "他把改算后的缺臂包络与东向路面宽度并到同一页", "text": "东路能过。只能低速，而且得按这副缺臂轮廓算。"},
+        {"beat_id": "c01e04_appeal_09", "speaker": "军方联络", "source_kind": "radio", "text": "追踪不撤。移动风险编号不撤。"},
+        {"beat_id": "c01e04_appeal_10", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "stage_action": "东行低速走廊盖在反对意见之上；医院网格和零号捷径都被红线划除", "text": "不撤。我申请东行低速走廊，东锁延迟四十秒。"},
+        {"beat_id": "c01e04_appeal_11", "speaker": "城市值班", "source_kind": "radio", "stage_action": "公开回执标注一个城市回合，通过后即重新闭合", "text": "延迟一个城市回合。申诉人停职处理延长，通行后立即复核。"},
+        {"beat_id": "c01e04_appeal_12", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "stage_action": "她把已签名回执送入战场预置包，自己的视频框仍停在城外", "text": "别让我在公开回放里看见你走西边。"}
+      ],
+      "success_edges": ["c01e04_carrier_escape"],
+      "soft_fail_edges": ["c01e04_public_corridor_appeal"],
+      "failure_edges": ["c01e04_public_corridor_appeal"],
+      "cancel_edges": ["c01e04_public_corridor_appeal"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "c01e04_carrier_escape",
+      "mode": "TACTICAL",
+      "scene_id": "SCN_C01E04_CARRIER_ESCAPE",
+      "title": "六阶段城市撤收战 / 万机馆站起来",
+      "commit_policy": "local_transition_only",
+      "capture_local_facts": true,
+      "transition": {
+        "transition_id": "C01E04-TR-03-SIX-STAGE-CARRIER",
+        "kind": "scale_shift",
+        "eyebrow": "16×12斜45度城市棋盘",
+        "title": "玩家控制的不是一台机体，而是一座会改写棋盘的受伤博物馆",
+        "location": "B1移动脊柱 / 万机馆旧址至东门走廊",
+        "time_label": "23:31",
+        "cause": "六锚、火锁回写、已选载荷、城市应急区和永久单臂承重必须在同一张公开意图图上依次解决。",
+        "handoff": "四个本地检查点覆盖六锚、载荷固定、半身与城市走廊；战斗只消费并复核战前Bundle，不提供第二次选择。",
+        "continuity": {
+          "types": ["action", "responsibility"],
+          "action_refs": ["C01E04_ZERO_SHORTCUT_REFUSED_LOCAL"],
+          "responsibility_refs": ["CH_JICUN", "CH001", "CH_TANGJIAO", "CH_LUHENG", "CH002"]
+        },
+        "duration": 1.45,
+        "fade_seconds": 0.5,
+        "accent": "f0b83f"
+      },
+      "completion_contract": "OUTCOME_C01E04_RT008_RT047_LOCAL_CLEAR_V01",
+      "battle_definition_path": "res://content/episodes/c01/e04/battle/c01_e04_carrier_escape_6p.json",
+      "commitment_anchors": [
+        {"anchor_id": "C01E04_ENACT_EXACT_TWO_LOADOUT", "source_action_id": "OLD_GUARDIAN_ASSERT_LOADOUT", "visible_action": "战斗只搬运Desk已经提交的两类载荷，并让第三类持续在旧址亮灯。"},
+        {"anchor_id": "C01E04_ENACT_DISTRIBUTED_STOP_RIGHTS", "source_action_id": "DOUDENG_FINAL_HARD_STOP", "visible_action": "每段馆体动作都必须重新经过四名操作员的独立停止权，零号单一管理员捷径保持断开。"}
+      ],
+      "result_transaction_id": "C01E04:RT008_RT047:BATTLE_LOCAL_CLEAR:V01",
+      "skip_result_fact": true,
+      "success_edges": ["c01e04_aftercare"],
+      "soft_fail_edges": ["c01e04_aftercare"],
+      "failure_edges": ["c01e04_carrier_escape"],
+      "cancel_edges": ["c01e04_carrier_escape"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "c01e04_aftercare",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_C01E04_STORY_NARRATIVE",
+      "title": "战后安置 / 旧址仍亮着一盏灯",
+      "commit_policy": "local_transition_only",
+      "transition": {
+        "transition_id": "C01E04-TR-04-AFTERCARE",
+        "kind": "settlement",
+        "eyebrow": "Battle Clear / RT054尚未提交",
+        "title": "先让巨构走完第一个稳定区段，再点清没能带走的东西",
+        "location": "东门外低速稳定区 / 万机馆旧址",
+        "time_label": "23:49",
+        "cause": "万机馆以受损巡航态越过封存圈；馆守Z、四操作员、五Owner与城市关键区均保持有效。",
+        "handoff": "陆衡、唐胶、兜灯、七海分别完成包络、留置、单臂支援和公开回执的战后责任确认。",
+        "continuity": {
+          "types": ["action", "responsibility"],
+          "action_refs": ["C01E04_RT008_RT047_LOCAL_CLEAR"],
+          "responsibility_refs": ["CH_LUHENG", "CH_TANGJIAO", "CH001", "CH_QIHAI"]
+        },
+        "duration": 1.3,
+        "fade_seconds": 0.46,
+        "accent": "65bda7"
+      },
+      "completion_contract": "OUTCOME_C01E04_RT048_RT053_LOCAL_V01",
+      "transaction_id": "C01E04:RT048_RT053:LOCAL:V01",
+      "outcome_facts": [
+        {"id": "C01E04_AFTERCARE_COMPLETE_LOCAL", "to": true},
+        {"id": "C01E04_PUBLIC_UNCARRIED_LIST_VISIBLE_LOCAL", "to": true},
+        {"id": "C01E04_FIRST_STABLE_CRUISE_SEGMENT_LOCAL", "to": true}
+      ],
+      "player_summary": "万机馆走完第一个稳定区段。陆衡只签当前包络；唐胶把第三类载荷逐件留档；兜灯确认馆守Z的永久单臂承重与硬停；七海的四十秒公开回执与停职延长同时生效。",
+      "presentation": {
+        "profile": "standard_adv",
+        "background": "res://assets/backgrounds/story_first/bg_c01e01_front_hall_closing_v01.png",
+        "portrait_visibility": "active_only",
+        "eyebrow": "东门外 / 第一个稳定区段",
+        "title": "旧址仍亮着一盏灯",
+        "time_label": "23:49",
+        "cast": [
+          {"actor_id": "CH_JICUN", "display_name": "纪存", "side": "left", "portrait_path": "res://assets/portraits/portrait_jicun.png", "accent": "58c8d9"},
+          {"actor_id": "CH_QIHAI", "display_name": "七海 · 远程只读回执", "side": "right", "portrait_path": "res://assets/portraits/portrait_qihai.png", "accent": "dca55b"},
+          {"actor_id": "CH001", "display_name": "兜灯", "side": "right", "portrait_path": "res://assets/portraits/portrait_doudeng.png", "accent": "65bda7"}
+        ]
+      },
+      "lines": [
+        {"beat_id": "c01e04_after_01", "speaker": "旁白", "stage_action": "万机馆越过东门后保持最低巡航速度；封锁线与旧馆门牌逐渐落到后方", "text": "没有胜利镜头立刻切走。缺臂的馆守Z仍压在胸前承重点，机器犬的冷却软管还在车辙边抖。"},
+        {"beat_id": "c01e04_after_02", "actor_id": "CH_LUHENG", "speaker": "陆衡", "stage_action": "在工程回执上框住速度、倾角与当前热量", "text": "我签的是这段、这个速度、这副缺臂轮廓。明天换工况，重新算。"},
+        {"beat_id": "c01e04_after_03", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "把第三类留置物的柜号与旧址照片逐项对上", "text": "别写‘其余留馆’。这一格有名字，这一格有修复日期。"},
+        {"beat_id": "c01e04_after_04", "actor_id": "CH001", "speaker": "兜灯", "stage_action": "听完馆守Z右肩封口与左肩受力回声", "text": "右边还是空的。硬停能用。今晚先到这。"},
+        {"beat_id": "c01e04_after_05", "speaker": "旧守护者", "source_kind": "broadcast", "text": "四名登记操作员定位正常。五个Owner回执齐全。本馆未登记步行服务，请勿追赶。"},
+        {"beat_id": "c01e04_after_06", "speaker": "旁白", "stage_action": "封锁线外二十九名观众在广播后才开始跟着笑；消防队长把点名板翻到背面", "text": "笑声很短。旧址的右臂桥、地基、门牌和第三类载荷没有因此消失。"},
+        {"beat_id": "c01e04_after_07", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "stage_action": "远程回执同时显示东锁延迟40秒与停职延长", "text": "东门记录闭合。风险编号保留，军方追踪权保留，我的审查也保留。"},
+        {"beat_id": "c01e04_after_08", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "把路线回放停在东行走廊，没有打开西侧捷径层", "text": "我们走的是你提交的那条。"},
+        {"beat_id": "c01e04_after_09", "actor_id": "CH_QIHAI", "speaker": "七海", "stage_action": "看一眼桌边冷掉的晚餐纸袋，把下一通来电按成静音", "text": "我看见了。先查你们还剩多少小时。"},
+        {"beat_id": "c01e04_after_10", "speaker": "旁白", "stage_action": "B1生活循环、旧制转接与燃料兼容三栏同时转黄", "text": "最长的一栏停在三十六小时。巡展航图只亮起一个仍能处理旧规格的地点：木桶旧件市。"}
+      ],
+      "success_edges": ["c01e04_rt054_atomic_snapshot"],
+      "soft_fail_edges": ["c01e04_rt054_atomic_snapshot"],
+      "failure_edges": ["c01e04_aftercare"],
+      "cancel_edges": ["c01e04_aftercare"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "c01e04_rt054_atomic_snapshot",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_C01E04_STORY_NARRATIVE",
+      "title": "RT054 / 临时开馆中",
+      "merge_episode_local_facts": true,
+      "required_episode_local_fact_ids": [
+        "WANJI_LOADOUT_BUNDLE_ID",
+        "LIFE_SUPPORT_EQUIPMENT",
+        "UNIQUE_PHYSICAL_COLLECTION",
+        "ARCHIVE_SERVER",
+        "ARCHIVE_PRIORITY_COLD_BACKUP"
+      ],
+      "transition": {
+        "transition_id": "C01E04-TR-05-RT054",
+        "kind": "aftermath",
+        "eyebrow": "第一个稳定巡航区段",
+        "title": "旧馆门熄灭，临时开馆状态仍然亮着",
+        "location": "WBM001受损巡航态 / 木桶旧件市航路",
+        "time_label": "23:52",
+        "cause": "余波、公开留置清单、四操作员保护框、五Owner与三十六小时航图均已确认。",
+        "handoff": "RT054一次提交固定结果与战术节点暂存的五个精确Bundle事实，作为C02唯一入口。",
+        "continuity": {
+          "types": ["action", "responsibility"],
+          "action_refs": ["C01E04_AFTERCARE_COMPLETE_LOCAL"],
+          "responsibility_refs": ["CH_JICUN", "CH001", "CH_TANGJIAO", "CH_LUHENG", "CH002", "CH_QIHAI"]
+        },
+        "duration": 1.15,
+        "fade_seconds": 0.42,
+        "accent": "58c8d9"
+      },
+      "completion_contract": "OUTCOME_C01E04_RT054_ATOMIC_SNAPSHOT_V01",
+      "transaction_id": "C01E04:RT054:ATOMIC_SNAPSHOT:V01",
+      "outcome_payload": {
+        "transaction_id": "C01E04:RT054:ATOMIC_SNAPSHOT:V01",
+        "resolution": "success",
+        "facts": [
+          {"id": "WANJI_SITE_LOST", "to": true},
+          {"id": "JICUN_BURN_01", "to": "ACQUIRED_RIGHT_WRIST_TO_CHEST"},
+          {"id": "WBM001_ACTIVE", "to": "CRUISE_CARRIER_WITH_DAMAGE"},
+          {"id": "JICUN_MEMORY_FRAGMENT_01", "to": "LIGHTS_CAN_LEAVE_SITE_LOW_CONFIDENCE"},
+          {"id": "CURATOR_OLD_ROUTE_SHADOW", "to": "CONFLICTING_INSTRUCTIONS_AND_ADMIN_BIND_VISIBLE"},
+          {"id": "ZERO_SHORTCUT_REFUSED", "to": true},
+          {"id": "ZERO_SHORTCUT_SLOW_HULL_FIELD", "to": "BLANK_NOT_ZERO"},
+          {"id": "ZERO_SHORTCUT_CURRENT_HARM", "to": "DIEDIE_RECLASSIFIED_AND_DISTRIBUTED_STOP_GRAYED_THEN_RESTORED"},
+          {"id": "ROUTE_MODEL_STREET_SURVIVAL_LOCK", "to": "36_HOURS"},
+          {"id": "WANJI_LOADOUT_EXACT_TWO_OF_THREE", "to": true},
+          {"id": "PEOPLE_CARGO", "to": "FORBIDDEN"},
+          {"id": "WBM001_MOBILE_RISK_ID", "to": "ACTIVE"},
+          {"id": "QIHAI_FIRELOCK_DELAY_RECORD", "to": "PUBLIC_40_SECONDS_WITH_REVIEW_AND_SUSPENSION_EXTENSION"},
+          {"id": "E04_REGISTERED_OPERATOR_CREW", "to": "JICUN+DOUDENG+TANGJIAO+LUHENG"},
+          {"id": "E04_OPERATOR_CREW_COUNT", "to": "4_ONBOARD_PROTECTED_POSTS"},
+          {"id": "E04_OWNER_CHECKS", "to": "JICUN+DOUDENG+TANGJIAO+LUHENG+OLD_GUARDIAN:5_GREEN"},
+          {"id": "E04_EVACUEE_PAYLOAD_COUNT", "to": 0},
+          {"id": "B1_MOVING_SPINE_PREVIOUS", "to": "PHYSICALLY_LOCKED_BY_MILITARY"},
+          {"id": "B1_MOVING_SPINE", "to": "RELEASED_LOW_SPEED_CRUISE_AFTER_SIX_ANCHORS"},
+          {"id": "GZ_BASIC_RESIDENT", "to": "CHEST_BEARING_SINGLE_ARM"},
+          {"id": "BLACK_SHOWCASE_SHADOW", "to": "FIRST_VISIBLE_RESTRAINED_NO_CONTROL"},
+          {"id": "BLACK_SHOWCASE_RIGHT_LOCK_JAM", "to": "CLEARED_BY_PLAYER_WITHOUT_EMPEROR_CONTROL"},
+          {"id": "TEMPORARY_OPEN_STATUS", "to": "ACTIVE"}
+        ],
+        "entity_changes": [
+          {"entity_id": "WBM001", "condition": "cruise_carrier_with_damage", "site": "lost", "temporary_open": true},
+          {"entity_id": "V353U001", "condition": "chest_bearing_single_arm", "right_arm": "old_site_composite_bridge", "e04_flying_fist": false},
+          {"entity_id": "V353U038", "condition": "owner_dispatched_map_actor", "zero_route_equipment_reclassification": "restored"},
+          {"entity_id": "MECHA_BLACK_SHOWCASE_EMPEROR_SHADOW", "condition": "first_visible_restrained_no_control", "right_lock_jam": "cleared_by_player"},
+          {"entity_id": "CH_LUHENG", "condition": "onboard_protected_operator", "engineering_scope": "current_verified_envelope_only"},
+          {"entity_id": "CH_QIHAI", "condition": "remote_read_only_appeal_submitter", "onboard": false, "suspension": "extended"}
+        ],
+        "world_object_changes": [
+          {"object_id": "OBJ_C01E04_OLD_SITE", "known_state": "site_lost_right_arm_bridge_and_uncarried_class_visible"},
+          {"object_id": "OBJ_C01E04_B1_MOVING_SPINE", "previous_state": "physically_locked_by_military", "known_state": "released_low_speed_cruise_after_six_anchors"},
+          {"object_id": "OBJ_C01E04_PUBLIC_UNCARRIED_CLASS", "known_state": "resolved_from_wanji_loadout_bundle_id_and_publicly_listed"},
+          {"object_id": "OBJ_C01E04_HOSPITAL_GRID", "known_state": "intact_zero_damage"},
+          {"object_id": "OBJ_C01E04_EAST_CITY_PIPE", "known_state": "intact_zero_damage"}
+        ],
+        "authority_changes": [
+          {"authority_id": "AUTH_ZERO_SHORTCUT_ADMIN_BRIDGE", "state": "physically_removed_route_closed"},
+          {"authority_id": "AUTH_DISTRIBUTED_HARD_STOPS", "state": "restored_and_verified"},
+          {"authority_id": "AUTH_QIHAI_SYSTEM_WRITE", "state": "disabled_remote_appeal_only"},
+          {"authority_id": "AUTH_WANJI_EAST_CORRIDOR", "state": "public_40_second_window_consumed"}
+        ],
+        "relationship_edges": [
+          {"edge_id": "REL_JICUN_QIHAI_C01E04", "from": "CH_JICUN", "to": "CH_QIHAI", "state": "public_route_kept_without_private_shortcut", "change": "he_follows_the_route_she_can_defend_and_she_keeps_the_risk_record"},
+          {"edge_id": "REL_DOUDENG_GZ_C01E04", "from": "CH001", "to": "V353U001", "state": "proactive_support_with_executable_hard_stop", "change": "guardian_offers_left_shoulder_then_waits_for_her_stop"},
+          {"edge_id": "REL_JICUN_LUHENG_C01E04", "from": "CH_JICUN", "to": "CH_LUHENG", "state": "shared_tested_envelope", "change": "mystery_gesture_never_overrides_failure_data"}
+        ],
+        "promises_and_debts": [
+          {"debt_id": "DEBT_C01E04_OLD_SITE", "state": "open_permanent_loss", "owner": "CH_JICUN", "cause": "wanji_departure"},
+          {"debt_id": "DEBT_C01E04_SURVIVAL_WINDOW", "state": "open_36_hours", "owner": "WBM001", "cause": "legacy_life_support_adapter_and_fuel_compatibility"},
+          {"debt_id": "DEBT_C01E04_GUARDIAN_SINGLE_ARM", "state": "open_permanent_scar", "owner": "V353U001", "cause": "e03_right_arm_bridge_and_e04_chest_bearing"},
+          {"debt_id": "DEBT_C01E04_QIHAI_REVIEW", "state": "open_suspension_extended", "owner": "CH_QIHAI", "cause": "public_firelock_delay_appeal"},
+          {"debt_id": "DEBT_C01E04_UNCARRIED_CLASS", "state": "open_resolved_from_bundle", "owner": "CH_TANGJIAO", "cause": "exact_two_of_three"}
+        ],
+        "player_summary": "万机馆失去旧址，以受损巡航态临时开馆；纪存、兜灯、唐胶、陆衡四名必要操作员与旧守护者五Owner在位，零疏散载荷。三类非人载荷精确保二，第三类公开留置；馆守Z永久单臂，皇影右锁臂卡死已由玩家排除。三十六小时航图锁定木桶旧件市。"
+      },
+      "presentation": {
+        "profile": "standard_adv",
+        "background": "res://assets/backgrounds/story_first/bg_c01e01_archive_room_v01.png",
+        "portrait_visibility": "active_only",
+        "eyebrow": "WBM001 / 受损巡航态",
+        "title": "临时开馆中",
+        "time_label": "23:52",
+        "cast": [
+          {"actor_id": "CH_JICUN", "display_name": "纪存", "side": "left", "portrait_path": "res://assets/portraits/portrait_jicun.png", "accent": "58c8d9"},
+          {"actor_id": "CH_QIHAI", "display_name": "七海 · 远程", "side": "right", "portrait_path": "res://assets/portraits/portrait_qihai.png", "accent": "dca55b"}
+        ]
+      },
+      "lines": [
+        {"beat_id": "c01e04_rt054_01", "speaker": "旁白", "stage_action": "导航图上的旧馆名熄灭；WBM001风险编号留在右上角", "text": "旧址没有跟来。右臂复合桥和第三类留置物仍在城市那头，一盏档案室灯隔着越来越远的街区亮着。"},
+        {"beat_id": "c01e04_rt054_02", "speaker": "旧守护者", "source_kind": "broadcast", "text": "今日闭馆。明日九点开馆。临时展厅地址更新中。"},
+        {"beat_id": "c01e04_rt054_03", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "右腕灼红沿胸口旧供电顺序亮了一瞬；他把动作记下，没有补写来源", "text": "灯能离开原址。路线还不知道。"},
+        {"beat_id": "c01e04_rt054_04", "speaker": "旁白", "stage_action": "远星接收窗只闪过OPEN、CLOSE、OPEN三个错序字样，随即恢复噪声", "text": "没有人来得及把那半帧当成回答。"},
+        {"beat_id": "c01e04_rt054_05", "speaker": "航图", "source_kind": "system", "text": "生命循环与旧制转接兼容窗口：35:59:59。下一可达维护点：木桶旧件市。"}
+      ],
+      "success_edges": [],
+      "soft_fail_edges": [],
+      "failure_edges": [],
+      "cancel_edges": [],
+      "terminal": true,
+      "autosave": "before_enter_and_after_commit"
+    }
+  ]
+}

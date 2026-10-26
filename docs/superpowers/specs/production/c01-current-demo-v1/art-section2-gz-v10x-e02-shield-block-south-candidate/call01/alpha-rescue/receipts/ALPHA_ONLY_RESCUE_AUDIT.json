@@ -1,0 +1,154 @@
+{
+  "status": "ALPHA_ONLY_RESCUE_TECHNICAL_PASS_USER_REVIEW_PENDING",
+  "technical_pass": true,
+  "scope": "deterministic_alpha_only_rescue",
+  "not_additional_generation": true,
+  "previous_call01_candidate_created_false_unchanged": true,
+  "input": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-block-south-candidate/call01/generation-raw/GZ_V10X_E02_SHIELD_BLOCK_SOUTH_CALL01_RAW_FAIL_RGB_1254.png",
+    "expected_sha256": "cebbb904d3504e54d76ac3d00f8328fb8c4d8bb3fda155d2ae3d7e2114d6270f",
+    "actual_sha256": "cebbb904d3504e54d76ac3d00f8328fb8c4d8bb3fda155d2ae3d7e2114d6270f",
+    "mode": "RGB",
+    "size": [
+      1254,
+      1254
+    ],
+    "mistaken_f72_hash_classification": "receipt_hash_file_self_sha_not_raw_png"
+  },
+  "master": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-block-south-candidate/call01/alpha-rescue/masters/GZ_V10X_E02_SHIELD_BLOCK_SOUTH_ALPHA_RESCUE_RGBA_MASTER_1254.png",
+    "sha256": "a045f5a960a530787bba94d0d1a8b92a42533e4ec54ead951321103b9412a1c0",
+    "mode": "RGBA",
+    "size": [
+      1254,
+      1254
+    ],
+    "hasAlpha": true,
+    "checker_model": {
+      "dark_level": 238.0,
+      "bright_level": 254.0,
+      "midpoint": 246.0,
+      "amplitude": 8.0
+    },
+    "checker_residual_threshold": 5.5,
+    "outer_checker_component_count": 1,
+    "component_count_before_keep_largest": 85,
+    "kept_foreground_pixel_count": 521738,
+    "discarded_isolated_noise_pixel_count": 234,
+    "foreground_bbox_exclusive": [
+      267,
+      71,
+      1007,
+      1134
+    ],
+    "alpha_bbox_exclusive": [
+      267,
+      71,
+      1007,
+      1134
+    ],
+    "alpha_zero_pixel_count": 1050778,
+    "alpha_partial_pixel_count": 11670,
+    "alpha_opaque_pixel_count": 510068,
+    "transparent_pixel_count": 1050778,
+    "outside_foreground_nontransparent_pixel_count": 0,
+    "outside_transparent": true,
+    "transparent_component_count_8_connected": 1,
+    "enclosed_transparent_component_count": 0,
+    "internal_core_rgb_changed_pixel_count": 0,
+    "opaque_rgb_changed_pixel_count": 0,
+    "edge_rgb_changed_pixel_count": 11670,
+    "edge_rgb_changed_bbox_exclusive": [
+      267,
+      71,
+      1007,
+      1134
+    ],
+    "edge_band_pixel_count": 18116,
+    "core_distance_px": 4.0,
+    "neutral_white_core_preserved_pixel_count": 2734,
+    "opaque_checker_component_count": 0,
+    "opaque_checker_components": [],
+    "opaque_checker_metric": {
+      "residual_max": 5.5,
+      "alpha_min": 250,
+      "minimum_area": 64,
+      "minimum_bbox": [
+        16,
+        16
+      ],
+      "minimum_pixels_per_checker_parity": 20,
+      "minimum_bright_minus_dark": 8.0,
+      "maximum_mean_chroma": 4.0
+    }
+  },
+  "map_candidate": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-block-south-candidate/call01/alpha-rescue/map-candidate/GZ_V10X_E02_SHIELD_BLOCK_SOUTH_CAMERA_V2_CANDIDATE_RGBA_256.png",
+    "sha256": "875c0756bdaaf099429c8004189fc5fee2588d9f597e5bc4c66c67095459422e",
+    "mode": "RGBA",
+    "size": [
+      256,
+      256
+    ],
+    "hasAlpha": true,
+    "resized_full_canvas_side_px": 241,
+    "full_canvas_scale": 0.19218500797448165,
+    "resized_alpha_bbox_exclusive": [
+      50,
+      12,
+      196,
+      220
+    ],
+    "placement_offset": [
+      5,
+      4
+    ],
+    "registered_alpha_bbox_exclusive": [
+      55,
+      16,
+      201,
+      224
+    ],
+    "registered_visible_size": [
+      146,
+      208
+    ],
+    "pivot": [
+      128,
+      224
+    ],
+    "footprint": [
+      2,
+      2
+    ],
+    "target_visible_height": 208,
+    "clipped_alpha_pixel_count": 0
+  },
+  "qa": {
+    "100pct_transparent_check": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-block-south-candidate/call01/alpha-rescue/qa/100pct/GZ_SHIELD_BLOCK_SOUTH_100PCT_TRANSPARENT_CHECK_QA.png",
+    "100pct_black": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-block-south-candidate/call01/alpha-rescue/qa/100pct/GZ_SHIELD_BLOCK_SOUTH_100PCT_BLACK_QA.png",
+    "100pct_white": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-block-south-candidate/call01/alpha-rescue/qa/100pct/GZ_SHIELD_BLOCK_SOUTH_100PCT_WHITE_QA.png",
+    "100pct_magenta": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-block-south-candidate/call01/alpha-rescue/qa/100pct/GZ_SHIELD_BLOCK_SOUTH_100PCT_MAGENTA_QA.png",
+    "100pct_green": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-block-south-candidate/call01/alpha-rescue/qa/100pct/GZ_SHIELD_BLOCK_SOUTH_100PCT_GREEN_QA.png",
+    "100pct_5background_board": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-block-south-candidate/call01/alpha-rescue/qa/GZ_SHIELD_BLOCK_SOUTH_100PCT_5BACKGROUND_QA.png",
+    "map_50pct_5background_board": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-block-south-candidate/call01/alpha-rescue/qa/GZ_SHIELD_BLOCK_SOUTH_MAP_50PCT_5BACKGROUND_QA.png",
+    "alpha_internal_holes_mask": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-block-south-candidate/call01/alpha-rescue/qa/GZ_SHIELD_BLOCK_SOUTH_ALPHA_INTERNAL_HOLES_MASK_1254.png",
+    "alpha_core_edge_diagnostic": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-block-south-candidate/call01/alpha-rescue/qa/GZ_SHIELD_BLOCK_SOUTH_ALPHA_CORE_EDGE_DIAGNOSTIC_1254.png"
+  },
+  "visual_hard_gate_readback": {
+    "front_visible_hand_count": 0,
+    "rear_interior_contact": "rear/interior contact visually occluded, user review pending",
+    "shield_white_surface_global_key_used": false,
+    "drawing_or_redrawing_used": false,
+    "imagegen_used": false,
+    "blender_used": false
+  },
+  "lifecycle": {
+    "authority": "Candidate",
+    "user_accepted": false,
+    "runtime_allowed": false,
+    "default_allowed": false,
+    "canon_migrated": false,
+    "godot_binding_written": false
+  }
+}

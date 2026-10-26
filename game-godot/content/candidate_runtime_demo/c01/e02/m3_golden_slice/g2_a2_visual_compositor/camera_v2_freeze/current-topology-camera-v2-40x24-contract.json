@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "contract_id": "C01E02_CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE_V1",
+  "task_id": "G2_A2_C4B_CAMERA_V2_EXACT_INTERFACE_FREEZE",
+  "status": "CAMERA_V2_40X24_EXACT_INTERFACE_CANDIDATE",
+  "authority": "Task110 selected CAM_A0_V2A_40X24; Task111 additive Candidate exact interface",
+  "identity": {
+    "runtime_bindable": false,
+    "runtime_promotion": false,
+    "default_entry_changed": false,
+    "save_enabled": false,
+    "canon_changed": false,
+    "gameplay_changed": false,
+    "imagegen_used": false,
+    "new_real_art_generated": false,
+    "runtime_real_art_loaded": 0,
+    "approved_handoffs_added": []
+  },
+  "locked_inputs": [
+    {"input_id":"TASK111_OBJECTIVE","path":"docs/superpowers/specs/production/c01-current-demo-v1/111-c01e02-g2-a2-c4b-camera-v2-exact-interface-freeze-objective.md","sha256":"7302a78a104533e1f97591cdfe78084ecaecfb181764939ded5c5d262e1f12bb"},
+    {"input_id":"TASK110_PRODUCER_ACCEPTANCE","path":"docs/superpowers/specs/production/c01-current-demo-v1/110-c01e02-p109-camera-a0-and-focus-reveal-producer-acceptance.md","sha256":"66e5cf7ac2b7e0ea06c33b26698124fd0918c7ab173104be8a2a6733e4f4d78e"},
+    {"input_id":"TASK109_OBJECTIVE","path":"docs/superpowers/specs/production/c01-current-demo-v1/109-c01e02-g2-a2-c4-camera-a0-modular-structure-focus-reveal-pilot-objective.md","sha256":"f67a86dda43d1a509e92f13a2f1f3e26fb29892c9d56a58fb9c5f7755242fd80"},
+    {"input_id":"TASK109_COMPLETION_REPORT","path":"docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c4-camera-a0-pilot/06-completion-report.md","sha256":"0d33c774c47620789d31a3131408f2137a98e890b2e68064b7890d24bbe5a773"},
+    {"input_id":"TASK109_DELIVERY_MANIFEST","path":"docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c4-camera-a0-pilot/delivery-hashes.sha256","sha256":"185e3fc55de904cb096e6073236a2e51bc8acd7bb1cb2489101cae0b7efb798f"},
+    {"input_id":"TASK108_USER_APPROVAL","path":"docs/superpowers/specs/production/c01-current-demo-v1/108-c01e02-route-a2-modular-environment-and-interaction-user-approval.md","sha256":"c33bc0ffa4fe6f5ecc553001e640eba18a39a917a0c4691def8c940ca0ad0280"},
+    {"input_id":"TASK104_RUNTIME_GRID_ACCEPTANCE","path":"docs/superpowers/specs/production/c01-current-demo-v1/104-c01e02-task98-runtime-grid-registration-producer-acceptance.md","sha256":"1ad0c1d0d5958f432f81479a119310769eaba3b769637b07ba7bcde127edfe61"},
+    {"input_id":"TASK105_SIMPLE_2D_CORRECTION","path":"docs/superpowers/specs/production/c01-current-demo-v1/105-c01e02-task99-simple-2d-board-lighting-occlusion-producer-correction.md","sha256":"6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7"},
+    {"input_id":"TASK106_C3_ACCEPTANCE","path":"docs/superpowers/specs/production/c01-current-demo-v1/106-c01e02-p99-sprite-first-preproduction-and-c3-producer-acceptance.md","sha256":"10c8df7490f21c2df12c513981867fd0168e86f9e789e46105c192996d2d4bf1"},
+    {"input_id":"TACTICAL_VISUAL_INTERFACE_1_6_7","path":"docs/superpowers/specs/production/c01-current-demo-v1/c01e02-tactical-visual-interface-v1.json","sha256":"62f8a4aea770cc45c98ef48c827b67bf61c1712d769b0aeb15fdeb2a7855898c"},
+    {"input_id":"PRODUCTION_BOARD","path":"docs/superpowers/specs/production/c01-current-demo-v1/38-c01e02-m3-r0-5-production-board.tsv","sha256":"64d1c8c243dfd722dac50ca6627cc65d28b3533e2142d0529c8dfaa216680552"},
+    {"input_id":"GOLDEN_SLICE_PROFILE","path":"game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/golden_slice_profile.json","sha256":"61b49e5328e702cd654d28ff39c5c380ba0ae3e78753330635036d33f689523c"},
+    {"input_id":"CURRENT_TOPOLOGY_MAP_CONTRACT","path":"game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/current_topology_map_contract.json","sha256":"74c6bbb3f732a61d3ed5a55d9c209b628152b9411395339d665aeeb0d76ab875"},
+    {"input_id":"VISUAL_COMPOSITOR_PROFILE","path":"game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/visual_compositor_profile.json","sha256":"13719d8a3bde0cc06acbed893198943164f2541cdc0b112cc5897ff38f4c3451"},
+    {"input_id":"CAMERA_A0_PILOT_CONTRACT","path":"game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/camera_a0_pilot/camera_a0_pilot_contract.json","sha256":"cda658bf3aff588ddfc7614fb371b099967b3c07c7154fe44702e3c47d4796e4"},
+    {"input_id":"CAMERA_A0_NUMERIC_RECEIPT","path":"docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c4-camera-a0-pilot/receipts/01-camera-a0-contract.json","sha256":"eb65425d14a39e85ab1061a8cfc965dd77ae3362f6cb984958cd1fd017096fa0"},
+    {"input_id":"CURRENT_V1_PROJECTION_ORACLE","path":"game-godot/scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/visual_projection.gd","sha256":"4f1fb4e029abb12d33abe3494425c3766916e7c3f9daf4395f0f682d5c6e3aed"},
+    {"input_id":"TASK96_C2_DELIVERY_MANIFEST","path":"docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c2/delivery-hashes.sha256","sha256":"b8bcb8c0f94f56ba60a48ad7b2c756108ebee16a1e712facece8946c30877d60"},
+    {"input_id":"TASK106_C3_DELIVERY_MANIFEST","path":"docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/delivery-hashes.sha256","sha256":"b70fe98a3ca1019b5445cbbabb3862e29c614a52dbf6dee15b692a59bb4bca19"},
+    {"input_id":"TASK98_OBJECTIVE","path":"docs/superpowers/specs/production/c01-current-demo-v1/98-c01e02-a9-1a6-s-c2-sprite-first-map-camera-master-preproduction-objective.md","sha256":"7c82e7af59f36e52f795e14b84d647692582ad7643310beed8a26445a4edfdca"},
+    {"input_id":"TASK102_REGISTRATION_CORRECTION","path":"docs/superpowers/specs/production/c01-current-demo-v1/102-c01e02-task98-runtime-grid-registration-producer-correction.md","sha256":"e8556f917456da83d933842b9ace9542f5238635d5166a6f5b7adbfad0d62378"},
+    {"input_id":"TASK98_ATLAS_SCHEMA","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/atlas-schema-current.json","sha256":"159c0af021c99a8c778692f5b02794e5ec55a476514da55ff55958baa19e8e5d"},
+    {"input_id":"TASK98_SLOT_CONTRACT","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/map-camera-slot-contract.json","sha256":"17e195dcac011be803bd69d893a918830dd838a5aa7a4aedd3e76bab45fb1a24"},
+    {"input_id":"TASK98_SOCKET_CONTRACT","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/socket-contact-contract.json","sha256":"c954af9b0ac7e5a1ef0e55f95b613367af9ab5ddbaec3fc55f5f4a258e5b8ea5"},
+    {"input_id":"TASK98_ENVIRONMENT_LAYER_CONTRACT","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/environment-layer-contract.json","sha256":"ed683edc21dfde7b92ea3625e59892667694dd850ef49487a5962a19b818126b"},
+    {"input_id":"TASK98_PHASE_MATRIX","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/first-round-state-facing-phase-matrix.tsv","sha256":"992ff3e6c35eb5cf6aa69ae928190f5c8ac3bb11927474569e1211ebb655bb2e"},
+    {"input_id":"TASK98_PHASE_CONTINUITY","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/first-round-phase-continuity-readback.tsv","sha256":"e03f74e3e81ce888554b7ec0ba7e8e5c8e81600a1bc1f1974b755d73b7d64199"},
+    {"input_id":"TASK98_CORRECTED_DELIVERY_MANIFEST","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/delivery-hashes.sha256","sha256":"1e0aa9666398fa3149a48c64e404fcc67b181c18dbabe67b64d9690d11952741"},
+    {"input_id":"TASK98_REGISTRATION_RECEIPT","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/runtime-grid-registration-correction-receipt.json","sha256":"502a03ddd7620f4d80b263a3b9a96da09d3a9be6971e99c7ba2ea4ee416b899a"},
+    {"input_id":"A5_APPROVED_96_ATLAS","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a5-rift-swarm-four-facing-atlas/A5_RIFT_SWARM_A_IDLE_96_384x96.png","sha256":"1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b"},
+    {"input_id":"A5_ATLAS_SPEC","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a5-rift-swarm-four-facing-atlas/atlas-spec.tsv","sha256":"3d52d578c1e189a4cb57d2b2691c41e29c17d6f76dde29dafc9c7269b763a6dd"},
+    {"input_id":"A5_ASSET_MANIFEST","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a5-rift-swarm-four-facing-atlas/asset-manifest.tsv","sha256":"70770efd70417d75e1672a31614a5b34ac3a5f345b401768cd5271a6c1cb4c01"},
+    {"input_id":"A5_USER_APPROVAL","path":"docs/superpowers/specs/production/c01-current-demo-v1/producer-a5/a5-user-approval-receipt.tsv","sha256":"45c1687c3fdbdd87d7f9e872933b48925871f680eeaa0095d360623ad1a34f75"},
+    {"input_id":"A5_EXACT_COPY_PLAN","path":"docs/superpowers/specs/production/c01-current-demo-v1/producer-a5/a5-rift-swarm-96-copy-plan.tsv","sha256":"1467bf0e8dae7de0969761cd06c36ad7c8ff7259e424a457e694827d1da2b6ca"}
+  ],
+  "coordinate_spaces": {
+    "grid": "integer coordinates are cell centers; rectangle boundaries are x/y-0.5 through x+w/y+h-0.5",
+    "projection_raw_px": "P_IS_RAW with P(0,0)=[0,0]",
+    "source_canvas_px": "projection_raw_px-world_canvas_origin_raw_px",
+    "map_screen_px": "map_rect.center+projection_raw_px-camera_raw_px",
+    "sprite_local_px": "local offset from footprint-bottom-center; no frame-top-left alias"
+  },
+  "projection": {
+    "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+    "view_space": "map_dimetric_40x24",
+    "projection_kind": "orthographic_dimetric",
+    "perspective_convergence": false,
+    "map_y_scale": false,
+    "runtime_bindable": false,
+    "raw_coordinate_gauge": "P_IS_RAW",
+    "projection_origin_raw_px": [0,0],
+    "grid_size": [32,18],
+    "grid_axes": {"x":"east","y":"south"},
+    "tile_half_px": [40,24],
+    "matrix": [[40,-40],[24,24]],
+    "formula": "P(x,y)=((x-y)*40,(x+y)*24)",
+    "inverse_formula": "x=0.5*(raw_x/40+raw_y/24); y=0.5*(raw_y/24-raw_x/40)",
+    "map_viewport_rect_px": [0,58,1280,584],
+    "map_center_screen_px": [640,350],
+    "zoom": 1.0,
+    "shake_px": [0,0],
+    "board_boundary_grid_polygon": [[-0.5,-0.5],[31.5,-0.5],[31.5,17.5],[-0.5,17.5]],
+    "board_boundary_raw_polygon_px": [[0,-24],[1280,744],[560,1176],[-720,408]],
+    "projected_board_bounds_raw_px": [-720,-24,2000,1200],
+    "world_canvas": {
+      "size_px": [2400,1350],
+      "fit_policy": "CENTER_PROJECTED_BOARD_AABB",
+      "centered_fit_margin_each_side_px": [200,75],
+      "world_canvas_origin_raw_px": [-920,-99],
+      "raw_to_source_canvas_translation_px": [920,99],
+      "raw_to_source_canvas_formula": "source_canvas=projection_raw-world_canvas_origin_raw",
+      "projected_board_bounds_source_canvas_px": [200,75,2000,1200],
+      "fits": true
+    },
+    "camera_profiles": {
+      "A_PLAN": {"branch":"A","phase":"PLAN","focus_grid":[19.75,9.75],"camera_raw_px":[400,708],"camera_source_canvas_px":[1320,807],"projection_local_crop_px":[-240,416,1280,584],"source_canvas_crop_px":[680,515,1280,584],"canvas_draw_origin_screen_px":[-680,-457]},
+      "B_PLAN": {"branch":"B","phase":"PLAN","focus_grid":[19.75,9.75],"camera_raw_px":[400,708],"camera_source_canvas_px":[1320,807],"projection_local_crop_px":[-240,416,1280,584],"source_canvas_crop_px":[680,515,1280,584],"canvas_draw_origin_screen_px":[-680,-457]},
+      "A_CONTACT": {"branch":"A","phase":"CONTACT","timeslice":"T3.00","focus_grid":[20.5,10.5],"camera_raw_px":[400,744],"camera_source_canvas_px":[1320,843],"projection_local_crop_px":[-240,452,1280,584],"source_canvas_crop_px":[680,551,1280,584],"canvas_draw_origin_screen_px":[-680,-493]},
+      "B_CONTACT": {"branch":"B","phase":"CONTACT","timeslice":"T3.25","focus_grid":[20,10.5],"camera_raw_px":[380,732],"camera_source_canvas_px":[1300,831],"projection_local_crop_px":[-260,440,1280,584],"source_canvas_crop_px":[660,539,1280,584],"canvas_draw_origin_screen_px":[-660,-481]}
+    },
+    "direction_vectors_screen_px": {"north":[40,-24],"east":[40,24],"south":[-40,24],"west":[-40,-24]}
+  },
+  "control_points": [
+    {"grid":[0,0],"raw":[0,0],"A_PLAN":[240,-358],"B_PLAN":[240,-358],"A_CONTACT":[240,-394],"B_CONTACT":[260,-382],"visibility":"offscreen_expected"},
+    {"grid":[31,0],"raw":[1240,744],"A_PLAN":[1480,386],"B_PLAN":[1480,386],"A_CONTACT":[1480,350],"B_CONTACT":[1500,362],"visibility":"offscreen_expected"},
+    {"grid":[0,17],"raw":[-680,408],"A_PLAN":[-440,50],"B_PLAN":[-440,50],"A_CONTACT":[-440,14],"B_CONTACT":[-420,26],"visibility":"offscreen_expected"},
+    {"grid":[31,17],"raw":[560,1152],"A_PLAN":[800,794],"B_PLAN":[800,794],"A_CONTACT":[800,758],"B_CONTACT":[820,770],"visibility":"offscreen_expected"},
+    {"grid":[15,11],"raw":[160,624],"A_PLAN":[400,266],"B_PLAN":[400,266],"A_CONTACT":[400,230],"B_CONTACT":[420,242],"visibility":"control"},
+    {"grid":[20,13],"raw":[280,792],"A_PLAN":[520,434],"B_PLAN":[520,434],"A_CONTACT":[520,398],"B_CONTACT":[540,410],"visibility":"control"},
+    {"grid":[17,10],"raw":[280,648],"A_PLAN":[520,290],"B_PLAN":[520,290],"A_CONTACT":[520,254],"B_CONTACT":[540,266],"visibility":"control"},
+    {"grid":[22,7],"raw":[600,696],"A_PLAN":[840,338],"B_PLAN":[840,338],"A_CONTACT":[840,302],"B_CONTACT":[860,314],"visibility":"control"},
+    {"grid":[26,12],"raw":[560,912],"A_PLAN":[800,554],"B_PLAN":[800,554],"A_CONTACT":[800,518],"B_CONTACT":[820,530],"visibility":"control"},
+    {"grid":[29,5],"raw":[960,816],"A_PLAN":[1200,458],"B_PLAN":[1200,458],"A_CONTACT":[1200,422],"B_CONTACT":[1220,434],"visibility":"control"},
+    {"grid":[14,10],"raw":[160,576],"A_PLAN":[400,218],"B_PLAN":[400,218],"A_CONTACT":[400,182],"B_CONTACT":[420,194],"visibility":"control"},
+    {"grid":[31,7],"raw":[960,912],"A_PLAN":[1200,554],"B_PLAN":[1200,554],"A_CONTACT":[1200,518],"B_CONTACT":[1220,530],"visibility":"control"},
+    {"grid":[27,8],"raw":[760,840],"A_PLAN":[1000,482],"B_PLAN":[1000,482],"A_CONTACT":[1000,446],"B_CONTACT":[1020,458],"visibility":"control"},
+    {"grid":[29,2],"raw":[1080,744],"A_PLAN":[1320,386],"B_PLAN":[1320,386],"A_CONTACT":[1320,350],"B_CONTACT":[1340,362],"visibility":"offscreen_right_edge_cue"},
+    {"grid":[20,11],"raw":[360,744],"A_PLAN":[600,386],"B_PLAN":[600,386],"A_CONTACT":[600,350],"B_CONTACT":[620,362],"visibility":"control"}
+  ],
+  "semantic_control_points": [
+    {"point_id":"PLAN_FOCUS","grid":[19.75,9.75],"raw":[400,708],"A_PLAN":[640,350],"B_PLAN":[640,350]},
+    {"point_id":"A_CONTACT_IMPACT","grid":[20.5,10.5],"raw":[400,744],"A_CONTACT":[640,350]},
+    {"point_id":"B_CONTACT_IMPACT","grid":[20,10.5],"raw":[380,732],"B_CONTACT":[640,350]},
+    {"point_id":"A_T4_EAST_SIDE_ARMOR","grid":[24,12.5],"raw":[460,876],"A_CONTACT":[700,482]},
+    {"point_id":"B_T4_EAST_SIDE_ARMOR","grid":[24,11.5],"raw":[500,852],"B_CONTACT":[760,470]}
+  ],
+  "shared_contact": {
+    "A": {"profile_id":"A_CONTACT","timeslice":"T3.00","impact_world_grid":[20.5,10.5],"impact_raw_px":[400,744],"impact_screen_px":[640,350],"guardian_z_anchor":[20,9],"breaker_anchor":[20,11]},
+    "B": {"profile_id":"B_CONTACT","timeslice":"T3.25","impact_world_grid":[20,10.5],"impact_raw_px":[380,732],"impact_screen_px":[640,350],"guardian_z_anchor":[19,9],"breaker_anchor":[20,11]}
+  },
+  "contact_registration": {
+    "source":"Session/Resolver public resolved geometry; expected values only, never presentation overrides",
+    "A":{"guardian_z":{"anchor":[20,9],"footprint":[2,2],"facing":"south"},"breaker":{"anchor":[20,11],"footprint":[3,3],"facing":"north"},"swarm01":{"anchor":[22,9],"footprint":[1,1],"state":"deflected_alive","grounded":true,"blocks_route":false}},
+    "B":{"guardian_z":{"anchor":[19,9],"footprint":[2,2],"facing":"south"},"breaker":{"anchor":[20,11],"footprint":[3,3],"facing":"north"},"swarm01":{"anchor":[22,8],"footprint":[1,1],"state":"deflected_alive","grounded":true,"blocks_route":false}}
+  },
+  "t4_side_sockets": {
+    "A":{"profile_id":"A_CONTACT","world_grid":[24,12.5],"raw_px":[460,876],"screen_px":[700,482],"breaker_post_anchor":[21,11],"breaker_post_footpoint_screen_px":[640,494],"local_from_breaker_post_footpoint_px":[60,-12]},
+    "B":{"profile_id":"B_CONTACT","world_grid":[24,11.5],"raw_px":[500,852],"screen_px":[760,470],"breaker_post_anchor":[21,10],"breaker_post_footpoint_screen_px":[700,482],"local_from_breaker_post_footpoint_px":[60,-12]}
+  },
+  "registration": {
+    "registration_point": "footprint_bottom_center",
+    "footpoint_raw_formula": "[40*(anchor_x-anchor_y+(footprint_w-footprint_h)/2),24*(anchor_x+anchor_y+footprint_w+footprint_h-1)]",
+    "grid_rect_polygon_formula": "project [x-.5,y-.5],[x+w-.5,y-.5],[x+w-.5,y+h-.5],[x-.5,y+h-.5]",
+    "structure_front_edge_formula": "project every occupied cell center; x=(min_x+max_x)/2; y=max_y+tile_half_y",
+    "foundation_and_occluder_share_front_edge": true,
+    "depth_key_formula": "round(front_edge_or_actor_footpoint.screen_y)+z_bias",
+    "manual_screen_offset_allowed": false,
+    "anchor_y_sort_allowed": false,
+    "fixed_category_layer_sort_allowed": false,
+    "error_tolerance_px": 0.5
+  },
+  "structure_authoring_policy": {
+    "source": "Task109 accepted C4 author fields; Task111 derives Camera V2 registration without changing topology",
+    "author_fields_only": ["object_id","grid_rect","world_height_class","z_bias","foundation","occluder","focusable"],
+    "derived_fields_forbidden_in_author_rows": ["front_edge","visual_bounds","reveal_cells"],
+    "derived_registration_source": "camera-v2-structure-object-registration.tsv",
+    "single_owner_required": true
+  },
+  "structures": [
+    {"object_id":"NW_BLOCK","grid_rect":[1,0,7,5],"world_height_class":"HIGH","z_bias":0,"foundation":{"color":"193541"},"occluder":{"color":"315766"},"focusable":true},
+    {"object_id":"NM_BLOCK","grid_rect":[10,0,5,4],"world_height_class":"MEDIUM","z_bias":0,"foundation":{"color":"23343e"},"occluder":{"color":"4a5960"},"focusable":true},
+    {"object_id":"NE_BLOCK","grid_rect":[22,0,7,4],"world_height_class":"HIGH","z_bias":0,"foundation":{"color":"17383b"},"occluder":{"color":"2f6260"},"focusable":true},
+    {"object_id":"SW_BLOCK","grid_rect":[0,15,8,3],"world_height_class":"MEDIUM","z_bias":0,"foundation":{"color":"303135"},"occluder":{"color":"5d5550"},"focusable":true},
+    {"object_id":"SE_BLOCK","grid_rect":[26,14,6,4],"world_height_class":"HIGH","z_bias":0,"foundation":{"color":"26353b"},"occluder":{"color":"4d6168"},"focusable":true},
+    {"object_id":"BROKEN_SKYWALK","grid_rect":[8,5,7,2],"world_height_class":"LOW","z_bias":0,"foundation":{"color":"343138"},"occluder":{"color":"6a606f"},"focusable":true}
+  ],
+  "actor_footpoint_expectations": {
+    "PLAN_SHARED": [
+      {"subject_id":"V353U001","anchor":[15,11],"footprint":[2,2],"facing":"east","screen":[400,338],"z_bias":1,"depth_key":339},
+      {"subject_id":"ENEMY_C01_BREAKER","anchor":[20,13],"footprint":[3,3],"facing":"north","screen":[520,554],"z_bias":2,"depth_key":556},
+      {"subject_id":"TARGET_C01_EMERGENCY_VEHICLE_01","anchor":[17,10],"footprint":[1,1],"facing":"east","screen":[520,314],"z_bias":0,"depth_key":314},
+      {"subject_id":"ENEMY_C01_RIFT_SWARM_01","anchor":[22,7],"footprint":[1,1],"facing":"west","screen":[840,362],"z_bias":0,"depth_key":362},
+      {"subject_id":"ENEMY_C01_RIFT_SWARM_02","anchor":[26,12],"footprint":[1,1],"facing":"north","screen":[800,578],"z_bias":0,"depth_key":578},
+      {"subject_id":"ENEMY_C01_RIFT_SWARM_03","anchor":[29,5],"footprint":[1,1],"facing":"south","screen":[1200,482],"z_bias":0,"depth_key":482}
+    ],
+    "A_CONTACT": [
+      {"subject_id":"V353U001","anchor":[20,9],"footprint":[2,2],"facing":"south","screen":[680,374],"z_bias":1,"depth_key":375},
+      {"subject_id":"ENEMY_C01_BREAKER","anchor":[20,11],"footprint":[3,3],"facing":"north","screen":[600,470],"z_bias":2,"depth_key":472},
+      {"subject_id":"TARGET_C01_EMERGENCY_VEHICLE_01","anchor":[24,9],"footprint":[1,1],"facing":"east","screen":[840,422],"z_bias":0,"depth_key":422},
+      {"subject_id":"ENEMY_C01_RIFT_SWARM_01","anchor":[22,9],"footprint":[1,1],"facing":"west","screen":[760,374],"z_bias":0,"depth_key":374},
+      {"subject_id":"ENEMY_C01_RIFT_SWARM_02","anchor":[27,12],"footprint":[1,1],"screen":[840,566],"z_bias":0,"depth_key":566},
+      {"subject_id":"ENEMY_C01_RIFT_SWARM_03","anchor":[29,5],"footprint":[1,1],"screen":[1200,446],"z_bias":0,"depth_key":446}
+    ],
+    "B_CONTACT": [
+      {"subject_id":"V353U001","anchor":[19,9],"footprint":[2,2],"facing":"south","screen":[660,362],"z_bias":1,"depth_key":363},
+      {"subject_id":"ENEMY_C01_BREAKER","anchor":[20,11],"footprint":[3,3],"facing":"north","screen":[620,482],"z_bias":2,"depth_key":484},
+      {"subject_id":"TARGET_C01_EMERGENCY_VEHICLE_01","anchor":[24,9],"footprint":[1,1],"facing":"east","screen":[860,434],"z_bias":0,"depth_key":434},
+      {"subject_id":"ENEMY_C01_RIFT_SWARM_01","anchor":[22,8],"footprint":[1,1],"facing":"west","screen":[820,362],"z_bias":0,"depth_key":362},
+      {"subject_id":"ENEMY_C01_RIFT_SWARM_02","anchor":[28,12],"footprint":[1,1],"screen":[900,602],"z_bias":0,"depth_key":602},
+      {"subject_id":"ENEMY_C01_RIFT_SWARM_03","anchor":[30,6],"footprint":[1,1],"screen":[1220,506],"z_bias":0,"depth_key":506}
+    ]
+  },
+  "gates": {
+    "task104_v1_pixels_prove_v2": false,
+    "machine_zero_px_replaces_actual_frame_review": false,
+    "a5_compatibility_may_be_self_signed": false,
+    "environment_generation_open": false,
+    "call03_open": false,
+    "runtime_open": false,
+    "completion_state": "CAMERA_V2_40X24_EXACT_INTERFACE_CANDIDATE / A5_COMPATIBILITY_RECORDED / GAMEPLAY_UNCHANGED / REAL_ART_ZERO / AWAITING_PRODUCER_RELEASE_TO_ENV_A1"
+  }
+}

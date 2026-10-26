@@ -1,0 +1,29 @@
+{
+  "revision": "r10",
+  "kind": "source receipts and static reader verification; no automatic visual acceptance",
+  "reader": "brave-components-r8.html",
+  "reader_sha256": "2dc91f368e44db414b8f8a20ed6a70310f4671cbb00f4b5456944cbcf6f952d3",
+  "html_links_anchors_and_nesting": "pass",
+  "bound_asset_and_prompt_receipts_checked": 119,
+  "approved_combined_source_unchanged": true,
+  "selected_drill_source_unchanged": true,
+  "new_leg_drawing": "samples/F11-leg-proportion-redraw-r10.png",
+  "new_leg_drawing_sha256": "300ed2e17c6c78d6f39fd32843ab985efa1d0337bebb5f844b41135b88ccf75c",
+  "rejected_r9_removed_from_current_production_refs": true,
+  "source_visual_review": {
+    "reviewer": "author",
+    "actual_media": [
+      "samples/F11-leg-proportion-redraw-r10.png",
+      "samples/M04-front-backpack-fins-r7.png",
+      "samples/F11-drill-master-r8.png"
+    ],
+    "findings_record": "brave-components-production-r10.json",
+    "scope": "实际查看新图，见膝踝间距及宽足比例改善；不是非作者评审或精确模型证明"
+  },
+  "browser_render_verified": false,
+  "same_model_projection_verified": false,
+  "runtime_assets_replaced": false,
+  "handoff_sent": false,
+  "user_accepted": false,
+  "verification_note": "最初曾误查整份清单字符串，命中用户拒绝旧稿的历史回执；核对范围已纠正为实际production_refs和four_machine_design.files，不删除该拒绝回执。"
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "source-art-image-prompt-v1",
+  "date": "2026-10-19",
+  "tool": "builtin_image_gen",
+  "mode": "edit",
+  "use_case": "style-transfer",
+  "output": "samples/M05-full-loadout-style-r2.png",
+  "transparent_background": true,
+  "source_images": [
+    "samples/M05-full-loadout-r1b.png",
+    "samples/M01-head-proportion-r16.png",
+    "samples/M01-family-master-r13.png"
+  ],
+  "prompt": "Use case: style-transfer\nAsset type: full-body source-art style unification sample for the original tactical RPG 超GAG机器人大战.\nPrimary request: Make a restrained rendering-style revision of the FULL-ARMORED COMPLETE KING in image 1 to fit the same illustrated series as Unbranded One in images 2 and 3. This is an EDIT of image 1, not a new character design.\n\nInput images:\n1 — EDIT TARGET and sole authority for Complete King's identity, silhouette, body proportions, pose, camera, equipment, colors and ornament layout.\n2 — USER-ACCEPTED Unbranded One R16 head; reference only for drawing language: confident clean dark contours, clear large armor planes, simple two-step cel shadows, matte painted surfaces, dark readable mechanical joints, normal unflattened cranial volume. Do NOT copy this teal helmet or visor shape or antenna design onto King.\n3 — Unbranded One R13 full-body; style reference ONLY BELOW THE NECK for armor plane economy, line hierarchy and mechanical joint rendering. Its old head is superseded and MUST NOT be copied.\n\nStyle change:\nRedraw image 1 in the cleaner, graphic KINETIC CEL illustration language of images 2 and 3: controlled contour weights, decisive faceted light and shadow shapes, fewer decorative micro-scratches, no tiny glint clusters, no shiny plastic or airbrush-metal finish. Gold remains rich flat ochre/gold painted armor with one dark shadow and restrained cream highlights. Keep the existing golden trim, crown and champion emblems, but make them legible in broader shapes. The navy, ivory, crimson, gold and dark-charcoal palette is unchanged. This royal premium machine remains substantially bulkier, more decorated and more excessively armed than the mass-production Unbranded One. Do not slim it, recolor it teal, or reduce its distinctive equipment to make it match.\n\nDesign invariants — preserve every one:\n- Anatomical RIGHT arm (viewer LEFT) bears the existing enormous spiral GOLD DRILL, mounted at the same location and pointing diagonally forward/down-left.\n- Anatomical LEFT arm (viewer RIGHT) holds the existing tall IVORY SHIELD with navy/gold border, crimson inset and gold champion emblem.\n- Exactly TWO primary rectangular heavy shoulder/back cannons, each attached through the existing round gold trunnion pivot, barrels forward in parallel; do not make them horns or put them on the head.\n- All existing layered blade-wing sections, crimson tips and wing-root engines/thrusters; preserve their number and placement.\n- Existing thigh and calf launcher pods, chest paired rectangular gold louvres, champion chest emblem, gold circular joints, armored skirt, navy/ivory heavy legs and broad gold-tipped feet.\n- Preserve King's own symmetrical helmet and two mirrored pairs of gold crown antennae, central short forward forehead ram, and closed ivory faceplate. Make the skull/face beneath the crown clearly readable and naturally tall, never vertically squashed or buried between the shoulders. No new long top strap, no mouth-slits, no redesign toward the teal reference.\n- Maintain the exact whole-body heroic stance and three-quarter camera of image 1, both complete feet and entire wing tips included.\n\nComposition: one isolated full-body mecha only, generously fit all original equipment with at least about 5% clear margin on every side. True transparent background, preserve alpha, no ground wash, no checkerboard drawn into pixels, no text, captions, watermark or extra inset panels. Preserve the pose and loadout rather than inventing extra weapons.",
+  "user_accepted": false,
+  "handoff_sent": false,
+  "source_refs": [
+    {
+      "file": "samples/M05-full-loadout-r1b.png",
+      "sha256": "0df4a2889f99df35087ce69e9dbf5b05d5a2afee54aaf7f54d761a2f5d1ebff1",
+      "role": "唯一造型/装备/配色/姿态母稿"
+    },
+    {
+      "file": "samples/M01-head-proportion-r16.png",
+      "sha256": "d8ecc8461fa9a1685b6b07ccfc9696970a2efb4eec9642c63bd7969c3e4c6e61",
+      "role": "已确认头部；只取大块面、线条与分层明暗，不复制无牌头型"
+    },
+    {
+      "file": "samples/M01-family-master-r13.png",
+      "sha256": "8e87cab7de5a2a458cb5fd1f107b635027594b058fb5ad56d22174a4b559cb00",
+      "role": "只取颈下装甲和关节画法；该图旧头型禁止回流"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "incident_id": "C01E02-M3-R05-M0-1-UI-FLOW-HANG-20260818",
+  "recorded_at": "2026-08-18T15:25:47+0800",
+  "status": "cleaned_and_not_reproduced",
+  "timed_out_run_result": "FAILED_INVALID_NOT_A_PASS",
+  "observed_process": {
+    "pid": 16942,
+    "ppid": 83206,
+    "elapsed_at_cleanup": "06:35",
+    "cpu_percent_at_cleanup": 0.9,
+    "state": "Ss",
+    "command": "godot --headless --path game-godot --script res://tests/candidate_runtime_demo/m3_r05/m3_r05_ui_flow_test.gd"
+  },
+  "cleanup": {
+    "signal": "TERM",
+    "term_succeeded": true,
+    "kill_required": false,
+    "same_test_processes_remaining": 0,
+    "m3_r05_test_processes_remaining": 0
+  },
+  "diagnosis": {
+    "classification": "bootstrap_parse_failure_aborted_test_callback_before_scene_tree_quit",
+    "comms_or_input_blocked_runtime_deadlock_reproduced": false,
+    "initial_parse_failures": [
+      "player_planning_hud.gd:79 could not infer local float x",
+      "character_comms_layer.gd:39 could not infer local float x",
+      "character_comms_layer.gd:65 could not infer local float x"
+    ],
+    "effect": "The first smoke callback failed before reaching its quit path, leaving the Godot process alive.",
+    "repair": "All three drawing-loop locals now use explicit float conversion and annotation."
+  },
+  "bounded_reruns": [
+    {
+      "test": "m3_r05_ui_flow_test.gd",
+      "external_timeout_seconds": 15,
+      "wall_seconds": 0.64,
+      "exit_code": 0,
+      "marker": "C01E02_M3_R05_UI_FLOW_OK",
+      "remaining_processes": 0
+    },
+    {
+      "test": "m3_r05_identity_aware_fallback_test.gd",
+      "external_timeout_seconds": 15,
+      "wall_seconds": 0.45,
+      "exit_code": 0,
+      "marker": "C01E02_M3_R05_M0_1_IDENTITY_FALLBACK_OK critical=9 blockers=13 probes=0",
+      "remaining_processes": 0
+    }
+  ],
+  "harness_correction": {
+    "script": "scripts/test_c01e02_m3_r05_m0_1.sh",
+    "default_timeout_seconds": 60,
+    "timeout_wrapper": "scripts/run-godot-with-timeout.sh",
+    "timeout_is_success": false,
+    "timeout_behavior": "alarm terminates Godot and the pipefail gate returns nonzero"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-20",
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "head_authority": "M05-head-design-fixed-20261020.json",
+  "jobs": [
+    {
+      "id": "CORE",
+      "prompt": "Use case: precise-object-edit.\nThe user has explicitly APPROVED the exact head design in Image 2. It is the fixed authority; do not redesign it or invent a different crown.\nImage 1 is the EDIT TARGET: preserve the entire mecha below the neck, original stance, camera, equipment, colors, markings, line style and composition. Change ONLY the helmet/head and necessary tiny neck attachment to synchronize it to Image 2.\nImage 2 is the APPROVED HEAD DESIGN, shown from front and left side. Fit that exact helmet in the target's existing 3/4 head orientation: navy dome, separate pale eyes in dark eye sockets, navy nose bridge, angular ivory heavy jaw and face, squared small crimson chin, gold cheek frames and round gold ear housings. Exactly FIVE gold crown members: ONE thick-rooted centerline blade horn that sweeps forward a little and curves sharply UP, with a small backward notch near the tip; TWO mirror inner long slender fins; TWO mirror outer short backward fins. These are symmetric left/right physical components. Do NOT retain the target's old bent horizontal spear/L hook. Do not create additional spikes. The central horn bends in the forward/up plane of the head and cannot bend sideways. Use Image 2 to determine the horn's smooth continuous curved root and taper; no square elbow or arrowhead.\nKeep the target's helmet-shell volume and head-to-shoulder scale, fitting the new crown onto it; do not squash the head or enlarge the whole head. Keep every body/weapon detail unchanged. Clean crisp cel rendering matching Image 1. True transparent background preserved. Complete single full-body figure with all tips visible and comfortable transparent margins, no labels, no inset, no extra figures, no words, no arrows, no redesign outside the head.\nTarget variant: KING CORE BODY. Preserve its two normal hands, core shoulders, paired rectangular chest louvres, crown/sun chest emblem, red abdomen, ivory thighs, navy-and-gold boots. This is ONLY the core body; add no wings, cannons, drill, shield or missile pods.",
+      "referenced_image_paths": [
+        "samples/M05-core-body-r4.png",
+        "samples/M05-head-riese-r6b.png"
+      ]
+    },
+    {
+      "id": "FULL",
+      "prompt": "Use case: precise-object-edit.\nThe user has explicitly APPROVED the exact head design in Image 2. It is the fixed authority; do not redesign it or invent a different crown.\nImage 1 is the EDIT TARGET: preserve the entire mecha below the neck, original stance, camera, equipment, colors, markings, line style and composition. Change ONLY the helmet/head and necessary tiny neck attachment to synchronize it to Image 2.\nImage 2 is the APPROVED HEAD DESIGN, shown from front and left side. Fit that exact helmet in the target's existing 3/4 head orientation: navy dome, separate pale eyes in dark eye sockets, navy nose bridge, angular ivory heavy jaw and face, squared small crimson chin, gold cheek frames and round gold ear housings. Exactly FIVE gold crown members: ONE thick-rooted centerline blade horn that sweeps forward a little and curves sharply UP, with a small backward notch near the tip; TWO mirror inner long slender fins; TWO mirror outer short backward fins. These are symmetric left/right physical components. Do NOT retain the target's old bent horizontal spear/L hook. Do not create additional spikes. The central horn bends in the forward/up plane of the head and cannot bend sideways. Use Image 2 to determine the horn's smooth continuous curved root and taper; no square elbow or arrowhead.\nKeep the target's helmet-shell volume and head-to-shoulder scale, fitting the new crown onto it; do not squash the head or enlarge the whole head. Keep every body/weapon detail unchanged. Clean crisp cel rendering matching Image 1. True transparent background preserved. Complete single full-body figure with all tips visible and comfortable transparent margins, no labels, no inset, no extra figures, no words, no arrows, no redesign outside the head.\nTarget variant: KING FULL EQUIPMENT. Preserve the right-anatomical arm drill on screen-left, left-anatomical shield on screen-right, two rectangular back/shoulder cannons and their round trunnion pivots, all layered wings and boosters, extra shoulder armor, all four leg missile pods, chest louvres/emblem, boots, stance and their overlaps exactly. No component removal or addition.",
+      "referenced_image_paths": [
+        "samples/M05-modular-full-r4.png",
+        "samples/M05-head-riese-r6b.png"
+      ]
+    }
+  ]
+}

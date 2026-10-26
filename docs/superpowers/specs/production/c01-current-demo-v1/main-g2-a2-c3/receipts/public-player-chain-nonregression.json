@@ -1,0 +1,169 @@
+{
+  "approved_handoffs": [],
+  "canon_modified": false,
+  "default_entry_changed": false,
+  "evidence_class": "g2_a2_c1_public_api_player_authored_chain",
+  "flows": {
+    "A": {
+      "authored_by_input": true,
+      "boundary_count": 22,
+      "commit_count": 1,
+      "direct_draft_mutation": false,
+      "director_iterations": 580,
+      "errors": [],
+      "event_ids": [
+        "GS-R1-E1-VEHICLE",
+        "GS-R1-E2-SWARM",
+        "GS-R1-E3-CONTACT",
+        "GS-R1-E4-CITY-GUN",
+        "GS-R1-E5-ROAD-RED"
+      ],
+      "fixture_load_count": 0,
+      "input_equivalence": "keyboard_mouse",
+      "preview_execute_same_resolver": true,
+      "public_api_calls": [
+        "begin_planning",
+        "append_waypoint",
+        "set_final_facing",
+        "set_main_action",
+        "open_summary",
+        "return_to_edit",
+        "undo_waypoint",
+        "append_waypoint",
+        "set_final_facing",
+        "set_main_action",
+        "open_summary",
+        "advance_commit_hold"
+      ],
+      "round_result": true,
+      "route": [
+        [
+          15,
+          11
+        ],
+        [
+          15,
+          10
+        ],
+        [
+          15,
+          9
+        ],
+        [
+          16,
+          9
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          18,
+          9
+        ],
+        [
+          19,
+          9
+        ],
+        [
+          20,
+          9
+        ]
+      ],
+      "route_family_id": "A_BODY_INTERCEPT_FAMILY",
+      "states": [
+        "PUBLIC_SITUATION",
+        "EDITABLE_DRAFT",
+        "COMMIT_SUMMARY",
+        "EDITABLE_DRAFT",
+        "COMMIT_SUMMARY",
+        "JOINT_RESOLUTION",
+        "ROUND_RESULT"
+      ],
+      "strategy": "A"
+    },
+    "B": {
+      "authored_by_input": true,
+      "boundary_count": 22,
+      "commit_count": 1,
+      "direct_draft_mutation": false,
+      "director_iterations": 580,
+      "errors": [],
+      "event_ids": [
+        "GS-R1-E1-VEHICLE",
+        "GS-R1-E2-SWARM",
+        "GS-R1-E3-CONTACT",
+        "GS-R1-E4-CITY-GUN",
+        "GS-R1-E5-ROAD-RED"
+      ],
+      "fixture_load_count": 0,
+      "input_equivalence": "controller",
+      "preview_execute_same_resolver": true,
+      "public_api_calls": [
+        "begin_planning",
+        "append_waypoint",
+        "set_final_facing",
+        "set_prepared_reaction",
+        "open_summary",
+        "return_to_edit",
+        "undo_waypoint",
+        "append_waypoint",
+        "set_final_facing",
+        "set_prepared_reaction",
+        "open_summary",
+        "advance_commit_hold"
+      ],
+      "round_result": true,
+      "route": [
+        [
+          15,
+          11
+        ],
+        [
+          15,
+          10
+        ],
+        [
+          15,
+          9
+        ],
+        [
+          16,
+          9
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          18,
+          9
+        ],
+        [
+          19,
+          9
+        ]
+      ],
+      "route_family_id": "B_PROTECT_LANE_FAMILY",
+      "states": [
+        "PUBLIC_SITUATION",
+        "EDITABLE_DRAFT",
+        "COMMIT_SUMMARY",
+        "EDITABLE_DRAFT",
+        "COMMIT_SUMMARY",
+        "JOINT_RESOLUTION",
+        "ROUND_RESULT"
+      ],
+      "strategy": "B"
+    }
+  },
+  "g2_b_allowed": false,
+  "real_art_loaded": 0,
+  "runtime_promotion": false,
+  "save_enabled": false,
+  "source_audit": {
+    "direct_draft_mutation": false,
+    "fixture_load_count": 0,
+    "public_session_api_only": true
+  }
+}

@@ -1,0 +1,133 @@
+---
+id: "MOC_WANJI"
+record_type: generated_index
+authority: projection
+generated: true
+tags:
+  - story-runtime/index
+---
+
+# wanji
+
+Current Canon 节点共 **120** 个。
+
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_B2_01_ZERO_BLACK_BOX_DEPTH 0号侧廊与黑匣子封存层|0号侧廊与黑匣子封存层]] · `WEZ_B2_01_ZERO_BLACK_BOX_DEPTH` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_B2_ZERO_DEEP 0号侧廊深处|0号侧廊深处]] · `WL_B2_ZERO_DEEP` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_ZERO_GATE 0号侧廊门口|0号侧廊门口]] · `WL_L1_ZERO_GATE` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_L2_04_AI_GRID_LAWS_HALL AI三法与网格修复厅|AI三法与网格修复厅]] · `WEZ_L2_04_AI_GRID_LAWS_HALL` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCB_B1_HANGAR_SPINE B1展舰机库脊柱|B1展舰机库脊柱]] · `WCB_B1_HANGAR_SPINE` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCB_L1_PUBLIC_EXHIBIT_DECK L1展陈心脏|L1展陈心脏]] · `WCB_L1_PUBLIC_EXHIBIT_DECK` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_L1_01_GUARDIAN_ATRIUM 万机中庭 _ 巨神守护厅|万机中庭 / 巨神守护厅]] · `WEZ_L1_01_GUARDIAN_ATRIUM` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/JTV_FLOOR_STACK 万机馆层级总图|万机馆层级总图]] · `JTV_FLOOR_STACK` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R20 三法城|三法城]] · `R20` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R02 三相盖流|三相盖流]] · `R02` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCB_B1_MEDIUM_BERTHS 中型泊位列|中型泊位列]] · `WCB_B1_MEDIUM_BERTHS` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_B1_MEDIUM_BERTHS 中型泊位列|中型泊位列]] · `WL_B1_MEDIUM_BERTHS` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_MAIN_HALL 主展厅|主展厅]] · `WL_L1_MAIN_HALL` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L2_RING_BRIDGE 二楼环形天桥|二楼环形天桥]] · `WL_L2_RING_BRIDGE` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/H11 五兽王冠|五兽王冠]] · `H11` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/JTV_PEOPLE_DUTY 人员与岗位|人员与岗位]] · `JTV_PEOPLE_DUTY` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/H04 余烬循环队|余烬循环队]] · `H04` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCT_HIDDEN_GIANT_TOYS 兽型与战队合体玩具墙|兽型与战队合体玩具墙]] · `WCT_HIDDEN_GIANT_TOYS` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_FRONT_HALL 前厅|前厅]] · `WL_L1_FRONT_HALL` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_L1_00_FRONT_ORIENTATION 前厅与导览总图|前厅与导览总图]] · `WEZ_L1_00_FRONT_ORIENTATION` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_L1_05_COURAGE_COMPLIANCE_TOOLS 勇气、工具与合规厅|勇气、工具与合规厅]] · `WEZ_L1_05_COURAGE_COMPLIANCE_TOOLS` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCT_R07_BRAVERY_MODEL 勇气审批与社勇王模型|勇气审批与社勇王模型]] · `WCT_R07_BRAVERY_MODEL` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_COURAGE_APPROVAL 勇气审批角|勇气审批角]] · `WL_L1_COURAGE_APPROVAL` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R07 勇气株式会社|勇气株式会社]] · `R07` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/H06 原画修罗场|原画修罗场]] · `H06` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/JTV_ROSTER_OVERLAY 参战谱系叠层|参战谱系叠层]] · `JTV_ROSTER_OVERLAY` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCT_R02_COMBINER_ANCHOR 合体剖面台|合体剖面台]] · `WCT_R02_COMBINER_ANCHOR` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_COMBO_TABLE 合体剖面台|合体剖面台]] · `WL_L1_COMBO_TABLE` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_L1_02_COMBINE_TRANSFORM_RING 合体变形环廊|合体变形环廊]] · `WEZ_L1_02_COMBINE_TRANSFORM_RING` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_L2_03_SYNC_BODY_WARD 同步舱与身体边界廊|同步舱与身体边界廊]] · `WEZ_L2_03_SYNC_BODY_WARD` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R14 吐槽战舰|吐槽战舰]] · `R14` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_STAFF_CORRIDOR 员工内廊|员工内廊]] · `WL_L1_STAFF_CORRIDOR` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/H01 地行发动机队|地行发动机队]] · `H01` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCB_ALLIED_CARRIER_GROUP 外部友舰与任务地会合|外部友舰与任务地会合]] · `WCB_ALLIED_CARRIER_GROUP` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_EXT_01_DOCKYARD_LOCKS 外部锁泊与旧会展广场|外部锁泊与旧会展广场]] · `WEZ_EXT_01_DOCKYARD_LOCKS` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCB_EXT_LOCK_BERTH 外部锁泊甲板|外部锁泊甲板]] · `WCB_EXT_LOCK_BERTH` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_EXT_LOCK_BERTH 外部锁泊甲板|外部锁泊甲板]] · `WL_EXT_LOCK_BERTH` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/JTV_EXHIBITION_ZONES 展区总览|展区总览]] · `JTV_EXHIBITION_ZONES` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_EXHIBIT_RING 展岛环线|展岛环线]] · `WL_L1_EXHIBIT_RING` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_B1_01_HANGAR_VIEW 展舰机库参观窗|展舰机库参观窗]] · `WEZ_B1_01_HANGAR_VIEW` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_B1_HANGAR 展舰机库脊柱|展舰机库脊柱]] · `WL_B1_HANGAR` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/JTV_BERTH_STATUS 展舰泊位状态|展舰泊位状态]] · `JTV_BERTH_STATUS` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R10 工务机动队|工务机动队]] · `R10` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCT_R10_CIVIL_SERVICE 市政劳务机与公共机器维护展|市政劳务机与公共机器维护展]] · `WCT_R10_CIVIL_SERVICE` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R21 废城小查|废城小查]] · `R21` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_REJECTED_CASE 废案柜|废案柜]] · `WL_L1_REJECTED_CASE` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCT_REJECTED_CASE 废案柜与未采用样件|废案柜与未采用样件]] · `WCT_REJECTED_CASE` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_L1_08_REJECTED_AUTHOR_WALL 废案柜与未采用角色墙|废案柜与未采用角色墙]] · `WEZ_L1_08_REJECTED_AUTHOR_WALL` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_FAR_STAR_REPLY_CASE 延迟回信副柜|延迟回信副柜]] · `WL_L1_FAR_STAR_REPLY_CASE` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/H09 彩队巨神|彩队巨神]] · `H09` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/S05 心墙福音|心墙福音]] · `S05` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R12 战术转学生|战术转学生]] · `R12` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_L2_01_WARSHIP_COMMAND_GALLERY 战舰舰桥与撤退战廊|战舰舰桥与撤退战廊]] · `WEZ_L2_01_WARSHIP_COMMAND_GALLERY` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/H07 拼装诸侯会|拼装诸侯会]] · `H07` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/JTV_DAMAGE_SEAL_OVERLAY 损伤与封存叠层|损伤与封存叠层]] · `JTV_DAMAGE_SEAL_OVERLAY` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_L2_05_DUEL_SPORTS_CORNER 擂台与运动机器人角|擂台与运动机器人角]] · `WEZ_L2_05_DUEL_SPORTS_CORNER` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R23 方舟T|方舟T]] · `R23` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_EXT_FRONT 旧会展区入口|旧会展区入口]] · `WL_EXT_FRONT` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WF_EXT 旧会展区外部|旧会展区外部]] · `WF_EXT` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_OLD_VIDEO 旧影像厅|旧影像厅]] · `WL_L1_OLD_VIDEO` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_L1_07_OLD_VIDEO_META_THEATER 旧影像厅与剧中剧小影院|旧影像厅与剧中剧小影院]] · `WEZ_L1_07_OLD_VIDEO_META_THEATER` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCT_GAG_BLACK_BOX_STACK 旧黑匣子库|旧黑匣子库]] · `WCT_GAG_BLACK_BOX_STACK` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_B2_BLACK_BOX_STACK 旧黑匣子库|旧黑匣子库]] · `WL_B2_BLACK_BOX_STACK` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R13 昆羽机谭|昆羽机谭]] · `R13` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R04 星翼巡演|星翼巡演]] · `R04` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_L2_02_FLIGHT_SONG_CATWALK 星翼舞台与飞行天桥|星翼舞台与飞行天桥]] · `WEZ_L2_02_FLIGHT_SONG_CATWALK` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/H08 木桶街后巷|木桶街后巷]] · `H08` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/JTV_FINAL_ARCHIVE_DRIFT 未记录条目异常|未记录条目异常]] · `JTV_FINAL_ARCHIVE_DRIFT` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_ARCHIVE_ROOM 档案室|档案室]] · `WL_L1_ARCHIVE_ROOM` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_L1_03_MODEL_TOY_STREET 模型玩具街 _ 手作圣堂|模型玩具街 / 手作圣堂]] · `WEZ_L1_03_MODEL_TOY_STREET` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_MODEL_HOSPITAL 模型病院|模型病院]] · `WL_L1_MODEL_HOSPITAL` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCT_C02_MODEL_HOSPITAL 模型病院与手作病历|模型病院与手作病历]] · `WCT_C02_MODEL_HOSPITAL` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/JTV_DEEP_DIVE_SIGNAL 残响信号层|残响信号层]] · `JTV_DEEP_DIVE_SIGNAL` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCB_B2_RESONANCE_WAITING 残响待机槽|残响待机槽]] · `WCB_B2_RESONANCE_WAITING` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WF_B2 残响接口 _ 旧黑匣子层|残响接口 / 旧黑匣子层]] · `WF_B2` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_B2_RESONANCE_INTERFACE 残响深潜接口|残响深潜接口]] · `WL_B2_RESONANCE_INTERFACE` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R18 火种变形者|火种变形者]] · `R18` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WF_L2 环形天桥 _ 胸牌维修层|环形天桥 / 胸牌维修层]] · `WF_L2` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R19 环洋双驾|环洋双驾]] · `R19` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_L1_04_REAL_CIVIC_LAB 现实机器与市政实验场|现实机器与市政实验场]] · `WEZ_L1_04_REAL_CIVIC_LAB` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCT_R24_REAL_MACHINE_STAGE 现实机器小舞台|现实机器小舞台]] · `WCT_R24_REAL_MACHINE_STAGE` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_REAL_MACHINE_STAGE 现实机器小舞台|现实机器小舞台]] · `WL_L1_REAL_MACHINE_STAGE` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/H03 玻璃房间|玻璃房间]] · `H03` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/H10 电磁五虎机|电磁五虎机]] · `H10` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_MESSAGE_WALL 留言墙|留言墙]] · `WL_L1_MESSAGE_WALL` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_L1_06_MESSAGE_COMMONS 留言墙与观众回应区|留言墙与观众回应区]] · `WEZ_L1_06_MESSAGE_COMMONS` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R03 白舰纪元|白舰纪元]] · `R03` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCT_R03_BRIDGE_ARCHIVE 白舰舰桥模型与战争档案|白舰舰桥模型与战争档案]] · `WCT_R03_BRIDGE_ARCHIVE` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_B1_MOBILE_CHASSIS 移动底盘|移动底盘]] · `WL_B1_MOBILE_CHASSIS` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WF_B1 移动底盘 _ 展舰机库脊柱|移动底盘 / 展舰机库脊柱]] · `WF_B1` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R24 第0次站立|第0次站立]] · `R24` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/JTV_C01_CLOSING_ROUTE 第一章闭馆路线|第一章闭馆路线]] · `JTV_C01_CLOSING_ROUTE` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_STAMP_COUNTER 纪念章台|纪念章台]] · `WL_L1_STAMP_COUNTER` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/H05 终问机|终问机]] · `H05` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_REPAIR_BAY 维修角|维修角]] · `WL_L1_REPAIR_BAY` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R17 网格修复者|网格修复者]] · `R17` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L2_CHEST_SERVICE 胸牌维护点|胸牌维护点]] · `WL_L2_CHEST_SERVICE` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R16 花蒸歌剧团|花蒸歌剧团]] · `R16` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/JTV_COLLECTION_LINKS 藏品链路图|藏品链路图]] · `JTV_COLLECTION_LINKS` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WF_L1 观众层 _ 主展层|观众层 / 主展层]] · `WF_L1` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_L3_02_FAR_STAR_OBSERVATORY 远星观测廊|远星观测廊]] · `WEZ_L3_02_FAR_STAR_OBSERVATORY` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R06 迟到的火花|迟到的火花]] · `R06` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/H02 逆时清算者|逆时清算者]] · `H02` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R09 遗灯王|遗灯王]] · `R09` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCB_B1_HEAVY_RACK 重型维修架|重型维修架]] · `WCB_B1_HEAVY_RACK` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_B1_HEAVY_SERVICE_RACK 重型维修架|重型维修架]] · `WL_B1_HEAVY_SERVICE_RACK` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R22 钢拳擂台|钢拳擂台]] · `R22` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R08 钻破天盖|钻破天盖]] · `R08` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/H12 铁巨人朋友|铁巨人朋友]] · `H12` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R11 铁棺佣兵|铁棺佣兵]] · `R11` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R01 铁馆魔神|铁馆魔神]] · `R01` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WEZ_L3_01_LONG_ARCHIVE_CREATOR_FANDOM 长档案、作者与原典库|长档案、作者与原典库]] · `WEZ_L3_01_LONG_ARCHIVE_CREATOR_FANDOM` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L3_LONG_ARCHIVE 长档案库|长档案库]] · `WL_L3_LONG_ARCHIVE` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCB_L3_ARCHIVE_SOFT_DOCK 长档案软泊位|长档案软泊位]] · `WCB_L3_ARCHIVE_SOFT_DOCK` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R05 雾岛防卫圈|雾岛防卫圈]] · `R05` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L1_GUARDIAN_Z_PLINTH 馆守Z主展位|馆守Z主展位]] · `WL_L1_GUARDIAN_Z_PLINTH` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WCT_R01_GUARDIAN_BODY 馆守Z实机展位|馆守Z实机展位]] · `WCT_R01_GUARDIAN_BODY` · `working`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WL_L3_CURATOR_OFFICE 馆长办公室|馆长办公室]] · `WL_L3_CURATOR_OFFICE` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/WF_L3 馆长办公室 _ 长档案层|馆长办公室 / 长档案层]] · `WF_L3` · `hard`
+- [[docs/superpowers/specs/story-runtime/generated/nodes/wanji/R15 黑棋王座|黑棋王座]] · `R15` · `working`

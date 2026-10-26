@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "task": "Section2_GZ_V10X_E02_shield_actions_R2_Call01",
+  "status": "STOP_AFTER_FIRST_SHIELD_ACTION_FAILURE",
+  "authority_scope": "C01E02_candidate_art_only",
+  "generation": {
+    "mode": "built_in_imagegen",
+    "call_count": 1,
+    "random_reroll_count": 0,
+    "successful_pose_count": 0,
+    "failed_pose_count": 1,
+    "not_called_after_stop_count": 3,
+    "built_in_output_directory": "/Users/rayz/.codex/generated_images/01a0329b-f0db-7fc1-a5fe-c8e50061c997",
+    "workspace_raw_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-actions-r2-candidate/call01/stage-a-block/generation-raw/GUARDIAN_Z_V10X_CAMERA_V2_SHIELD_TAKE_SOUTH_R2_CALL01_FRONT_HANDS_FAIL_RAW.png",
+    "workspace_raw_sha256": "13e9a723ba72fcdb9f7ae76921425dbebb274c1bff489d40433727bdf85acfe3",
+    "workspace_raw_mode": "RGB",
+    "workspace_raw_size": [1254, 1254]
+  },
+  "source_lock": {
+    "sole_positive_guardian_pixel_source": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/map-candidates/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_SOUTH_CANDIDATE_256.png",
+      "sha256": "0b3d2f437558216b8d3a94a1ea5255f7b9310a94447ba530a1d89b210ccfc12d",
+      "user_status": "USER_ACCEPTED_CAMERA_V2_CARDINAL_BASE"
+    },
+    "same_lineage_rgba_master_crosscheck": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/masters/GUARDIAN_Z_V10X_CAMERA_V2_CARDINAL_NEUTRAL_SHARED_MASTER_RGBA_1254.png",
+      "sha256": "3fca40226bc45bc368a1fe1eebab50a774ef9a4859a0b47fa565e5ed785de538",
+      "passed_to_imagegen": false
+    },
+    "sole_positive_shield_design_source": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a17-section2-true-retired-heavy-shield-candidate/user-confirmation-call01/generation-raw/TRUE_RETIRED_HEAVY_SHIELD_CALL01_RAW.png",
+      "sha256": "169c162c5b2bd0761d535d7dee8573fc547952090dfa7947c3b9630af1c72305",
+      "user_status": "USER_ACCEPTED_SHIELD_DESIGN_BASE"
+    },
+    "identity_free_geometry_guide": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-actions-r2-candidate/guide/GZ_V10X_SHIELD_TAKE_SOUTH_IDENTITY_FREE_GEOMETRY_GUIDE_1024.png",
+      "sha256": "5e9025f72f0500c87303d5b13c449e8a6b6f08839bd00b87dd46e1a1dce4bced",
+      "gate": "PASS_50PCT_THREE_SECOND_UNIQUE_TAKE_READ"
+    },
+    "forbidden_history_pixel_input_count": 0,
+    "previous_failure_raw_pixel_input_count": 0
+  },
+  "camera_contract": {
+    "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+    "view_space": "map_dimetric_40x24",
+    "direction": "south",
+    "screen_vector": [-40, 24]
+  },
+  "first_failure": {
+    "action": "shield_take_south",
+    "passed_subreads": [
+      "V10X_identity",
+      "south_first_read",
+      "take_not_hold_block_bash_first_read",
+      "cold_shield_exactly_three_old_scars",
+      "no_red_hot_fourth_mark",
+      "no_bullet_holes"
+    ],
+    "failed_hard_gate": "shield_front_hand_count_0_and_rear_handle_contact_count_2",
+    "observed_front_exterior_hand_count": 2,
+    "required_front_exterior_hand_count": 0,
+    "observed_rear_interior_handle_contact_count": 0,
+    "required_rear_interior_handle_contact_count": 2,
+    "qa_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-actions-r2-candidate/call01/stage-a-block/qa/GUARDIAN_Z_V10X_SHIELD_TAKE_SOUTH_R2_CALL01_FRONT_HANDS_FAIL_50_100_QA.png",
+    "qa_sha256": "4b6fc425d8392888df6e15aa7e25cc0086139dd6e109e019c7d45340a99828d0",
+    "alpha_review_only_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-actions-r2-candidate/call01/stage-a-block/qa/GUARDIAN_Z_V10X_SHIELD_TAKE_SOUTH_R2_CALL01_ALPHA_REVIEW_ONLY.png",
+    "alpha_review_only_sha256": "c730c4609a09984e6d231a72ffaad10a6f997d6a8e5379b9fcf5b23dcf931b9d",
+    "alpha_review_stats": {
+      "visible_bbox": [182, 73, 987, 1163],
+      "transparent_pixels": 1105838,
+      "opaque_pixels": 466678,
+      "partial_alpha_pixels": 0,
+      "rgb_bytes_unchanged": true
+    }
+  },
+  "outputs": {
+    "map_candidate": null,
+    "rgba_master": null,
+    "socket_readback": null,
+    "socket_status": "NOT_EMITTED_AFTER_VISUAL_FAIL",
+    "pivot_validation": "NOT_RUN_WITHOUT_MAP_CANDIDATE"
+  },
+  "downstream_calls": {
+    "shield_hold_south": "NOT_CALLED_AFTER_STOP",
+    "shield_block_south": "NOT_CALLED_AFTER_STOP",
+    "shield_bash_south": "NOT_CALLED_AFTER_STOP"
+  },
+  "lifecycle": {
+    "candidate": true,
+    "internal_pass": false,
+    "user_accepted": false,
+    "runtime": false,
+    "default": false,
+    "canon": false,
+    "godot_bound": false
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "artifact": "GZ_CAMERA_V2_EAST_CALL01",
+  "status": "VISUAL_FAIL_NEAR_FRONT_STOPPED",
+  "candidate_gate": "FAIL",
+  "failure_reason": "The raised view shows top planes, but the chest, head, stance, and bilateral silhouette first-read as a near-front or screen-south portrait rather than uniquely facing lower-right screen-east [40,24].",
+  "scope": {
+    "lane": "Candidate exploration only",
+    "transparent_256_candidate_written": false,
+    "godot_integration": false,
+    "runtime_promotion": false,
+    "canon_promotion": false,
+    "producer_approval": false
+  },
+  "canon_read": {
+    "CML008": {
+      "level": "Hard Canon",
+      "state": "E02 intact twin arms",
+      "identity": "Guardian Z; 18m; heavy old-super-robot mass"
+    },
+    "CML128": {
+      "level": "Working Canon",
+      "style": "A-normal only: deep ink-navy pressure line, large color blocks, maximum two hard-shadow levels"
+    }
+  },
+  "camera_contract": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/camera_v2_freeze/current-topology-camera-v2-40x24-contract.json",
+    "sha256": "756f77db883fd060fdd323d2533191ade689c0a1362f92f043fac17dbe28ab4a",
+    "projection_kind": "orthographic_dimetric",
+    "tile_half_px": [40, 24],
+    "screen_east": [40, 24],
+    "footprint": [2, 2],
+    "target_native_canvas": [256, 256],
+    "target_pivot": [128, 224]
+  },
+  "imagegen": {
+    "subject_generation_calls": 1,
+    "background_extraction_calls": 0,
+    "rerolls": 0,
+    "known_a11_lineage_calls_before": 7,
+    "known_a11_lineage_calls_after": 8,
+    "mode": "built-in imagegen generate",
+    "inputs": [
+      {
+        "image_index": 1,
+        "role": "identity, palette, and mass only",
+        "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/GUARDIAN_Z_ISOLATED_SAFE_REFERENCE_BOARD_2400x1800.png",
+        "sha256": "a4d0c5288af0a8bedc845af54570a527626e3b7f2499c420d18929751a11c8af"
+      },
+      {
+        "image_index": 2,
+        "role": "geometry, Camera V2 east facing, top-plane visibility, proportion, and framing only",
+        "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/gz-east-camera-v2-dimetric-master-candidate-v2/source-guides/GZ_CAMERA_V2_EAST_GEOMETRY_GUIDE_1024_NOT_FINAL_ART.png",
+        "sha256": "5074047d28c710eacfda42b6dd709ebaa12bcbb4d502ef8e9e629a72927e9ffc"
+      }
+    ],
+    "forbidden_inputs_used": false,
+    "forbidden_inputs": [
+      "GZ_EAST_TRANSPARENT_MASTER_CANDIDATE_256.png",
+      "full-screen screenshots",
+      "old failed map sprites"
+    ]
+  },
+  "raw_output": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/gz-east-camera-v2-dimetric-master-candidate-v2/generation-raw/GZ_CAMERA_V2_EAST_CALL01_VISUAL_FAIL_NEAR_FRONT.png",
+    "sha256": "66f39d81e3f109b7401f8fbc6e7d7ccf9b9beeb06c64a8e0ef225b67ca8cded6",
+    "mode": "RGB",
+    "size": [1254, 1254],
+    "background": "baked checkerboard",
+    "true_alpha": false
+  },
+  "visual_self_review": {
+    "identity": {
+      "status": "PASS",
+      "notes": "Gold crown, red crest, blue brow, silver grille, red-X chest, round gold core, navy mass, and twin cylindrical forearms remain recognizable."
+    },
+    "e02_state": {
+      "status": "PASS",
+      "notes": "Both arms and hands are present and uncropped; no shield, weapon, wing, or backpack was added."
+    },
+    "approximately_four_head_mass": {
+      "status": "PASS"
+    },
+    "raised_orthographic_top_plane_read": {
+      "status": "PASS_WITH_REVIEW",
+      "notes": "Top planes are clear, though the finish retains more rendered volume than the strictest CML128 A-normal target."
+    },
+    "screen_east_40_24_first_read": {
+      "status": "FAIL",
+      "notes": "Near-front chest symmetry and the downward stance dominate; the body does not uniquely point lower-right."
+    },
+    "map_scale_read": {
+      "status": "FAIL",
+      "notes": "At 256 and 128 review size, the near-front portrait read remains stronger than the east-facing cue."
+    },
+    "alpha": {
+      "status": "NOT_EVALUATED_FOR_REPAIR",
+      "notes": "The visual gate failed first, so the permitted conditional alpha extraction was not invoked."
+    }
+  },
+  "qa_board": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/gz-east-camera-v2-dimetric-master-candidate-v2/qa/GZ_CAMERA_V2_EAST_CALL01_IDENTITY_ANGLE_FAIL_QA_2400x1400.png",
+    "sha256": "d6e0d0b6790d37a130cedd622d06e022f21d0159f4b14c1dfefae07dbd71b855",
+    "views": [
+      "identity_reference_25_percent",
+      "geometry_guide_50_percent",
+      "raw_50_percent",
+      "raw_256_canvas_100_percent",
+      "raw_128_canvas_50_percent"
+    ]
+  },
+  "stop_record": {
+    "second_subject_generation": false,
+    "background_extraction": false,
+    "delivery_directory_intentionally_empty": true,
+    "reason": "Mandatory first-read failure stop."
+  }
+}

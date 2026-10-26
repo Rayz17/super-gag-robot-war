@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-23",
+  "status": "downloaded_external_trial_shells_not_final_character_art",
+  "creator": "Ramon Linares / FORGE",
+  "repository": "https://github.com/RamonLinares/atlas-09",
+  "commit": "1b8fb9d54160215c071c5a29a49b1c36dc01f0df",
+  "license": "CC0-1.0",
+  "license_url": "https://github.com/RamonLinares/atlas-09/blob/main/ASSET-LICENSE.md",
+  "cost_paid": 0,
+  "models": [
+    {
+      "asset": "titan-06",
+      "candidate_role": "hero",
+      "role_height_m": 16,
+      "sha256": "853daa4c4d8b6c1e3b867244ca1400de585cd4ba8f587e4bc03020259eb36bf1",
+      "bytes": 5978432,
+      "triangles": 27579,
+      "bones": 16,
+      "source_clips": [
+        "Backflip",
+        "ChestBeam",
+        "KneelFire",
+        "RocketPunch",
+        "Run",
+        "Sentinel"
+      ],
+      "runtime_edits": "Non-destructive Skeleton3D pose adapter, run/hit/collapse clip sampling, floor hulls, contact IK. Original GLB bytes preserved."
+    },
+    {
+      "asset": "atlas-09",
+      "candidate_role": "boxer",
+      "role_height_m": 17,
+      "sha256": "e9e5ec9ffe17fa447992ce0a50f87a5023e6bb8e12bff554c23c130149cedb47",
+      "bytes": 6868744,
+      "triangles": 26519,
+      "bones": 18,
+      "source_clips": [
+        "Backflip",
+        "Collapse",
+        "HitChest",
+        "HitHead",
+        "KneelFire",
+        "Knockback",
+        "PunchCombo",
+        "Run",
+        "Sentinel",
+        "Walk"
+      ],
+      "runtime_edits": "Non-destructive Skeleton3D pose adapter, run/hit/collapse clip sampling, floor hulls, contact IK. Original GLB bytes preserved."
+    }
+  ],
+  "unchanged": "V4.1 rules, damage, turn queue, objectives and seven frozen candidates",
+  "remaining_models": "guardian, blade_a, blade_b, rifle_a, rifle_b keep existing candidate geometry",
+  "source_blend": "artifacts/c02_model_motion/source/*-editable.blend"
+}

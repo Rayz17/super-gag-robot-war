@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "package_id": "ART_C01_RM_2P5D_PHASE_A_V01",
+  "generated_at": "2026-07-14",
+  "scene_id": "SCN_C01_RM_RESCUE_2P5D_V01",
+  "phase": "A_style_keyframe_gate",
+  "source_contract": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-session-goal-v1.md",
+  "producer_brief": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/producer-brief-and-shotbook-v1.md",
+  "status_policy": {
+    "candidate": "Visual exploration only; never load at runtime.",
+    "pending_user_approval": "Phase A review artifact awaiting the required user/producer style decision.",
+    "approved_for_phase_b_reference": "May guide separated production assets but is still not itself a runtime asset.",
+    "approved_for_runtime": "May be imported by the main program only when runtime_allowed is true."
+  },
+  "assets": [
+    {
+      "stable_id": "KF_C01_RM_2P5D_STYLE_V01",
+      "canon_story_source": [
+        "SCN_C01_RM_RESCUE_2P5D_V01",
+        "CML001",
+        "CML002",
+        "CML003",
+        "CML008",
+        "CH057",
+        "MECHA_DOOR_MACHINE_DOG"
+      ],
+      "source_path": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/sources/kf_c01_rm_2p5d_low_heat_source_v01.png",
+      "delivery_path": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/review/kf_c01_rm_2p5d_low_heat_v02.png",
+      "runtime_path": null,
+      "width": 1280,
+      "height": 720,
+      "pivot": null,
+      "safe_area": {
+        "left": 32,
+        "top": 24,
+        "right": 32,
+        "bottom": 24
+      },
+      "alpha": "opaque_srgb",
+      "state": "phase_a_style_keyframe",
+      "approval_status": "pending_user_approval",
+      "source_model_or_tool": "OpenAI built-in image generation; Pillow technical fit and color grade",
+      "prompt_version": "C01-RM-2P5D-KEYFRAME-v1",
+      "prompt_path": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/sources/kf_c01_rm_2p5d_low_heat_prompt_v01.md",
+      "runtime_allowed": false,
+      "sha256": "250c6a70378f65c1e98770cef3848bd9c97763f0065f4034d3d54fb40e9b5f60"
+    }
+  ],
+  "source_sha256": "e8b62cfbb914ba566bad2cbc6d8ddccfb5b8e9abf6599def5898a84b8d116a70",
+  "superseded_review_artifacts": [
+    {
+      "path": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/review/kf_c01_rm_2p5d_low_heat_v01.png",
+      "reason": "Same composition before the readability-oriented midtone lift; not the approval target."
+    }
+  ],
+  "decision_gate": {
+    "status": "awaiting_user_or_producer_confirmation",
+    "phase_b_generation_allowed": false,
+    "decision": "Whether this modern cel-shaded character plus hard-surface semi-painted 2.5D direction should guide Phase B production.",
+    "does_not_imply": "Approval does not lock the whole-project art style or promote this keyframe to runtime."
+  }
+}

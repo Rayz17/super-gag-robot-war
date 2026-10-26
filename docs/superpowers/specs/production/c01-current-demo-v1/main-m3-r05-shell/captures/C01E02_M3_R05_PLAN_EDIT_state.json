@@ -1,0 +1,244 @@
+{
+	"beat_receipts": [],
+	"capture_id": "PLAN_EDIT",
+	"debug_visible": false,
+	"fixture_id": "success_main_action",
+	"pixel_sample": {
+		"center": "233137ff",
+		"sampled_opaque_pixels": 720,
+		"sampled_unique_colors": 46
+	},
+	"png_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-m3-r05-shell/captures/C01E02_M3_R05_PLAN_EDIT_1280x720.png",
+	"png_sha256": "d8cea62bbed6aa7cc3e6a984d98499cbca701cded271d9c6a8c80420e838d268",
+	"round_receipt": {},
+	"shell_receipt": {
+		"assets": {
+			"approved_handoffs": [],
+			"loaded_slot_count": 0,
+			"manifest_sha256": "5abc1b5f718cdd1b9c2e6dff2e323a177ce3302625dbc81345134687eae5c053",
+			"packing_validation": {
+				"audio_slot_count": 16,
+				"errors": [],
+				"expected_packing_contract_sha256": "fe75667eac656756e35ddbbb784e250d39c0f8b05c2c14f719234d653b944012",
+				"manifest_sha256": "5abc1b5f718cdd1b9c2e6dff2e323a177ce3302625dbc81345134687eae5c053",
+				"packing_contract_id": "C01E02_R05_MEDIA_PACKING_V2",
+				"packing_contract_path": "res://../docs/superpowers/specs/production/c01-current-demo-v1/42-c01e02-m3-r0-5-media-packing-v2.json",
+				"packing_contract_sha256": "fe75667eac656756e35ddbbb784e250d39c0f8b05c2c14f719234d653b944012",
+				"valid": true,
+				"visual_slot_count": 28
+			},
+			"registered_slot_count": 44,
+			"resource_probe_count": 0,
+			"runtime_art_loaded": false,
+			"validated_handoff_count": 0
+		},
+		"audio": {
+			"external_audio_loaded": false,
+			"generated_cue_count": 0,
+			"played_cues": [],
+			"source": "procedural_pcm_only"
+		},
+		"build_id": "C01CDV1-M3-R0.5-PRES",
+		"comms": {
+			"current_beat": "",
+			"input_blocked": false,
+			"triggered_keys": [],
+			"visible": false
+		},
+		"director_state": "IDLE",
+		"entry_role": "non_default",
+		"frozen_r0": {
+			"execute_count": 0,
+			"profile_path": "res://content/candidate_runtime_demo/c01/e02/m3_r0/sandbox_profile.json",
+			"profile_sha256": "f62a8be16d1aec0da3986bdee20d94366190b7ae428c78a1d20ecdc1fc3d4f2e",
+			"resolver_path": "res://scripts/candidate_runtime_demo/c01/e02/m3_r0/shared_round_resolver.gd",
+			"resolver_sha256": "09de5610d7896abe4c516f98b91e5c7427e5a54d51dd3039e14588e95a6a8386",
+			"rules_profile_id": "c01cdv1_e02_shared_round_m3_r0"
+		},
+		"hud": {
+			"debug_terms_visible": false,
+			"plan_panel_rect": [
+				900,
+				48,
+				380,
+				552
+			],
+			"qihai_presence": {
+				"button_count": 0,
+				"display_name": "七海",
+				"expression_state": "decision",
+				"fallback_mode": "named_geometry_fallback",
+				"mouse_filter": 2,
+				"portrait_slot": "R05_PORTRAIT_QIHAI_REMOTE",
+				"probe_performed": false,
+				"rect": [
+					920,
+					158,
+					340,
+					72
+				],
+				"source_label": "远程 · 代哥东区封存中心",
+				"status_text": "本人停机令已撤回",
+				"visible": true
+			},
+			"result_visible": false,
+			"summary_button_rect": [
+				920,
+				524,
+				340,
+				54
+			],
+			"timeline_rect": [
+				0,
+				600,
+				1280,
+				120
+			],
+			"top_bar_rect": [
+				0,
+				0,
+				1280,
+				48
+			]
+		},
+		"presence": {
+			"button_count": 0,
+			"display_name": "七海",
+			"expression_state": "decision",
+			"fallback_mode": "named_geometry_fallback",
+			"mouse_filter": 2,
+			"portrait_slot": "R05_PORTRAIT_QIHAI_REMOTE",
+			"probe_performed": false,
+			"rect": [
+				920,
+				158,
+				340,
+				72
+			],
+			"source_label": "远程 · 代哥东区封存中心",
+			"status_text": "本人停机令已撤回",
+			"visible": true
+		},
+		"projection": {
+			"anchors": {
+				"breaker_start": {
+					"cell": [
+						20.0,
+						13.0
+					],
+					"roundtrip": [
+						20,
+						13
+					],
+					"world": [
+						280.0,
+						660.0
+					]
+				},
+				"east_exit": {
+					"cell": [
+						31.0,
+						7.0
+					],
+					"roundtrip": [
+						31,
+						7
+					],
+					"world": [
+						960.0,
+						760.0
+					]
+				},
+				"fixed_far_corner": {
+					"cell": [
+						31.0,
+						17.0
+					],
+					"roundtrip": [
+						31,
+						17
+					],
+					"world": [
+						560.0,
+						960.0
+					]
+				},
+				"fixed_origin": {
+					"cell": [
+						0.0,
+						0.0
+					],
+					"roundtrip": [
+						0,
+						0
+					],
+					"world": [
+						0.0,
+						0.0
+					]
+				},
+				"fixed_rescue_contact": {
+					"cell": [
+						20.0,
+						10.0
+					],
+					"roundtrip": [
+						20,
+						10
+					],
+					"world": [
+						400.0,
+						600.0
+					]
+				},
+				"guardian_start": {
+					"cell": [
+						15.0,
+						11.0
+					],
+					"roundtrip": [
+						15,
+						11
+					],
+					"world": [
+						160.0,
+						520.0
+					]
+				},
+				"wall_hung_shield": {
+					"cell": [
+						11.0,
+						10.0
+					],
+					"roundtrip": [
+						11,
+						10
+					],
+					"world": [
+						40.0,
+						420.0
+					]
+				}
+			},
+			"layout_profile_id": "c01cdv1_e02_m3_r05_layout_40x20_v1",
+			"logical_grid": [
+				32,
+				18
+			],
+			"tile_half": [
+				40,
+				20
+			],
+			"topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+			"visual_projection": "isometric_tile_half_40x20"
+		},
+		"save_mode": "disabled",
+		"ui_state": "PLAN_EDIT"
+	},
+	"ui_state": "PLAN_EDIT",
+	"viewport": [
+		1280,
+		720
+	],
+	"world_result": {}
+}

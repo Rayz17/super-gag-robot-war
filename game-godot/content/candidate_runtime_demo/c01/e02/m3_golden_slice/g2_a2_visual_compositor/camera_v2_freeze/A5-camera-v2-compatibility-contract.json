@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "contract_id": "C01E02_A5_CAMERA_V2_COMPATIBILITY_TEST_CONTRACT_V1",
+  "task_id": "G2_A2_C4B_CAMERA_V2_EXACT_INTERFACE_FREEZE",
+  "status": "PENDING_ACTUAL_FRAME_PRODUCER_REVIEW",
+  "authority": "Task111 compatibility test contract only; actual-frame verdict belongs to evidence/receipts/05-A5-camera-v2-compatibility-receipt.json",
+  "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+  "view_space": "map_dimetric_40x24",
+  "candidate_id": "CAM_A0_V2A_40X24",
+  "locked_inputs": [
+    {"input_id":"TASK111_OBJECTIVE","path":"docs/superpowers/specs/production/c01-current-demo-v1/111-c01e02-g2-a2-c4b-camera-v2-exact-interface-freeze-objective.md","sha256":"7302a78a104533e1f97591cdfe78084ecaecfb181764939ded5c5d262e1f12bb"},
+    {"input_id":"TASK110_PRODUCER_ACCEPTANCE","path":"docs/superpowers/specs/production/c01-current-demo-v1/110-c01e02-p109-camera-a0-and-focus-reveal-producer-acceptance.md","sha256":"66e5cf7ac2b7e0ea06c33b26698124fd0918c7ab173104be8a2a6733e4f4d78e"},
+    {"input_id":"TASK98_OBJECTIVE","path":"docs/superpowers/specs/production/c01-current-demo-v1/98-c01e02-a9-1a6-s-c2-sprite-first-map-camera-master-preproduction-objective.md","sha256":"7c82e7af59f36e52f795e14b84d647692582ad7643310beed8a26445a4edfdca"},
+    {"input_id":"TASK102_REGISTRATION_CORRECTION","path":"docs/superpowers/specs/production/c01-current-demo-v1/102-c01e02-task98-runtime-grid-registration-producer-correction.md","sha256":"e8556f917456da83d933842b9ace9542f5238635d5166a6f5b7adbfad0d62378"},
+    {"input_id":"A5_APPROVED_96_ATLAS","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a5-rift-swarm-four-facing-atlas/A5_RIFT_SWARM_A_IDLE_96_384x96.png","sha256":"1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b"},
+    {"input_id":"A5_GODOT_BYTE_EXACT_COPY","path":"game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a5_rift_swarm/rift-swarm-idle-96.png","sha256":"1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b"},
+    {"input_id":"A5_ATLAS_SPEC","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a5-rift-swarm-four-facing-atlas/atlas-spec.tsv","sha256":"3d52d578c1e189a4cb57d2b2691c41e29c17d6f76dde29dafc9c7269b763a6dd"},
+    {"input_id":"A5_ASSET_MANIFEST","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a5-rift-swarm-four-facing-atlas/asset-manifest.tsv","sha256":"70770efd70417d75e1672a31614a5b34ac3a5f345b401768cd5271a6c1cb4c01"},
+    {"input_id":"A5_USER_APPROVAL","path":"docs/superpowers/specs/production/c01-current-demo-v1/producer-a5/a5-user-approval-receipt.tsv","sha256":"45c1687c3fdbdd87d7f9e872933b48925871f680eeaa0095d360623ad1a34f75"},
+    {"input_id":"A5_EXACT_COPY_PLAN","path":"docs/superpowers/specs/production/c01-current-demo-v1/producer-a5/a5-rift-swarm-96-copy-plan.tsv","sha256":"1467bf0e8dae7de0969761cd06c36ad7c8ff7259e424a457e694827d1da2b6ca"}
+  ],
+  "atlas": {
+    "source_path":"res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a5_rift_swarm/rift-swarm-idle-96.png",
+    "sha256":"1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+    "atlas_size_px":[384,96],
+    "native_canvas_px":[96,96],
+    "regions":{"north":[0,0,96,96],"east":[96,0,96,96],"south":[192,0,96,96],"west":[288,0,96,96]},
+    "approved_existing_identity_pixels":true,
+    "new_art_generated":false
+  },
+  "candidate_registration": {
+    "profile_id":"A_PLAN",
+    "registration_point":"footprint_bottom_center",
+    "pivot_normalized":[0.5,1.0],
+    "pivot_px":[48,96],
+    "display_scale":[1,1],
+    "footprint":[1,1],
+    "z_bias":0,
+    "frame_baseline_y_px":95,
+    "task98_neutral_fixture_pivot_px":[48,72],
+    "task98_neutral_fixture_pivot_must_not_be_reused_for_a5":true,
+    "manual_screen_offset_allowed":false
+  },
+  "plan_expected_readback": [
+    {"subject_id":"ENEMY_C01_RIFT_SWARM_01","anchor":[22,7],"facing":"west","region":[288,0,96,96],"footpoint_screen_px":[840,362],"sprite_top_left_screen_px":[792,266]},
+    {"subject_id":"ENEMY_C01_RIFT_SWARM_02","anchor":[26,12],"facing":"north","region":[0,0,96,96],"footpoint_screen_px":[800,578],"sprite_top_left_screen_px":[752,482]},
+    {"subject_id":"ENEMY_C01_RIFT_SWARM_03","anchor":[29,5],"facing":"south","region":[192,0,96,96],"footpoint_screen_px":[1200,482],"sprite_top_left_screen_px":[1152,386]}
+  ],
+  "required_actual_frames": [
+    {"frame_id":"A5_WEST_100_PERCENT","subject_id":"ENEMY_C01_RIFT_SWARM_01","scale_percent":100},
+    {"frame_id":"A5_NORTH_100_PERCENT","subject_id":"ENEMY_C01_RIFT_SWARM_02","scale_percent":100},
+    {"frame_id":"A5_SOUTH_100_PERCENT","subject_id":"ENEMY_C01_RIFT_SWARM_03","scale_percent":100},
+    {"frame_id":"A5_PLAN_MAP_50_PERCENT","subjects":["ENEMY_C01_RIFT_SWARM_01","ENEMY_C01_RIFT_SWARM_02","ENEMY_C01_RIFT_SWARM_03"],"scale_percent":50}
+  ],
+  "producer_decision_contract": {
+    "allowed_final_verdicts":["V2_COMPATIBLE_FOR_PLAN","REDRAW_REQUIRED"],
+    "current_verdict":"PENDING_ACTUAL_FRAME_PRODUCER_REVIEW",
+    "machine_pass_may_select_final_verdict":false,
+    "plan_compatibility_may_claim_t1_t5_coverage":false,
+    "redraw_if_view_angle_or_foot_contact_is_visually_incompatible":true
+  },
+  "gates": {"runtime_bindable":false,"runtime_real_art_loaded":0,"approved_handoffs":[],"call03_allowed":false,"env_a1_open":false,"producer_review_required":true}
+}

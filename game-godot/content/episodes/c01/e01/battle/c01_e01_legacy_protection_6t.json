@@ -1,0 +1,48 @@
+{
+  "battle_id": "C01E01-PROTECTION-LINE",
+  "variant_id": "C01-MERGED-V03-LEGACY-6T",
+  "status": "existing_production_wording_pending_version_ruling",
+  "title": "万机馆主展厅 / 六回合保护战",
+  "objective_text": "保护留言墙与撤离人员6回合，并阻止0号开启臂连续接管门锁。",
+  "start_prompt": "封存无人机按清单推进；它们不追人，但会把路变成资产。",
+  "turn_limit": 6,
+  "withdraw_allowed": true,
+  "grid": {
+    "width": 12,
+    "height": 8,
+    "blocked": [[5, 1], [5, 2], [5, 3], [5, 4]]
+  },
+  "units": [
+    {"id": "jicun", "name": "纪存 / 临时指挥机", "team": "player", "cell": [1, 4], "hp": 18, "en": 30, "move": 3, "weapons": [{"id": "archive_hook", "name": "档案钩索", "power": 3, "min": 1, "max": 2, "hit": 95, "en": 0, "post_move": true}]},
+    {"id": "old_guardian", "name": "旧守护者 / 导览机", "team": "player", "cell": [1, 3], "hp": 14, "en": 20, "move": 3, "weapons": [{"id": "safety_line", "name": "黄线广播", "power": 2, "min": 1, "max": 3, "hit": 92, "en": 0, "post_move": true}]},
+    {"id": "doudeng", "name": "兜灯 / 整备机", "team": "player", "cell": [1, 6], "hp": 16, "en": 28, "move": 3, "weapons": [{"id": "wrench_arc", "name": "扳手电弧", "power": 3, "min": 1, "max": 2, "hit": 90, "en": 0, "post_move": true}]},
+    {"id": "tangjiao", "name": "唐胶 / 模型急救箱", "team": "player", "cell": [1, 7], "hp": 15, "en": 18, "move": 3, "weapons": [{"id": "parts_throw", "name": "旧件投掷", "power": 3, "min": 2, "max": 3, "hit": 88, "en": 0, "post_move": true}]},
+    {"id": "drone_a", "name": "法务无人机 A", "team": "enemy", "cell": [6, 5], "hp": 6, "move": 3, "intent_target_id": "message_wall", "intent_verb": "封存"},
+    {"id": "scanner_b", "name": "白线扫描器 B", "team": "enemy", "cell": [5, 4], "hp": 3, "move": 3, "intent_target_id": "message_wall", "intent_verb": "归档"},
+    {"id": "smoke_d", "name": "消防锁定框体 D", "team": "enemy", "cell": [7, 1], "hp": 6, "move": 3, "intent_target_id": "fire_control", "intent_verb": "锁定"},
+    {"id": "carrier_e", "name": "观众转移框体 E", "team": "enemy", "cell": [10, 6], "hp": 6, "move": 3, "intent_target_id": "children_group", "intent_verb": "转移"}
+  ],
+  "objectives": [
+    {"id": "message_wall", "name": "留言墙", "cell": [9, 5], "integrity": 7, "required": true},
+    {"id": "children_group", "name": "守展小队撤离线", "cell": [4, 6], "integrity": 5, "required": true},
+    {"id": "fire_control", "name": "灭火控制箱", "cell": [9, 1], "integrity": 4, "required": true},
+    {"id": "zero_lock", "name": "0号侧廊门锁", "cell": [11, 2], "integrity": 4, "required": true},
+    {"id": "model_hospital", "name": "模型病院旧件柜", "cell": [7, 7], "integrity": 2, "required": false}
+  ],
+  "mid_events": [
+    {"event_id": "C01E01-6T-R2-SMOKE", "timing": "turn_start", "turn": 2, "message": "火势扩大，烟雾遮住天桥；一段封存框体落在撤离线上。", "actions": [{"type": "add_blocked_cell", "cell": [6, 4]}]},
+    {"event_id": "C01E01-6T-R3-ZERO-ARM", "timing": "turn_start", "turn": 3, "message": "0号开启臂从侧廊门框外接入，开始读取门锁。", "actions": [{"type": "spawn_unit", "unit": {"id": "zero_opener", "name": "0号开启臂", "team": "enemy", "cell": [10, 2], "hp": 7, "move": 1, "intent_target_id": "zero_lock", "intent_verb": "开封"}}]},
+    {"event_id": "C01E01-6T-R4-OLD-NOTE", "timing": "turn_start", "turn": 4, "message": "采样贴片开始筛选未归档纸条；玩家此前保留的东西进入战场。", "actions": []},
+    {"event_id": "C01E01-6T-R5-FIRST-BURN", "timing": "turn_start", "turn": 5, "message": "旧守护者广播断续。留言墙上的名字却一张接一张被人念出来。", "actions": []},
+    {"event_id": "C01E01-6T-R6-CHEST-BADGE", "timing": "turn_start", "turn": 6, "message": "馆守 Z 胸牌在半跪姿态下响应；机体仍未起身。", "actions": []}
+  ],
+  "patch_catalog": {
+    "PATCH_C01_FAILURE_BLOCK_LINE_B": {
+      "operations": [
+        {"op": "add_blocked_cells", "cells": [[4, 5]]},
+        {"op": "objective_integrity_delta", "objective_id": "children_group", "delta": 1},
+        {"op": "set_flag", "key": "failure_block_line", "value": true}
+      ]
+    }
+  }
+}

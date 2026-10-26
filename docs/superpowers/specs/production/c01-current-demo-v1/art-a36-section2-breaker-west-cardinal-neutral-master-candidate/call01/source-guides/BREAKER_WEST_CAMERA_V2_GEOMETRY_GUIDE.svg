@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1536" viewBox="0 0 384 384">
+  <rect width="384" height="384" fill="#07131d"/>
+  <path d="M192 176 L312 248 L192 320 L72 248 Z" fill="none" stroke="#28485a" stroke-width="2"/>
+  <path d="M192 176 L192 320 M72 248 L312 248" fill="none" stroke="#1a3544" stroke-width="1"/>
+
+  <!-- Camera V2 WEST spinal axis: head upper-left, tail lower-right. -->
+  <path d="M288 244 L96 129" fill="none" stroke="#54e8ff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M96 129 L111 130 L104 143 Z" fill="#54e8ff"/>
+  <circle cx="96" cy="129" r="5" fill="#ff405c"/>
+  <circle cx="288" cy="244" r="5" fill="#ffb64d"/>
+
+  <!-- Five open cross-section cages. No identity silhouette is supplied. -->
+  <g fill="none" stroke="#79dbed" stroke-width="3" stroke-linecap="round">
+    <path d="M114 99 L78 159"/>
+    <path d="M175 107 L113 209"/>
+    <path d="M233 118 L151 256"/>
+    <path d="M273 159 L207 271"/>
+    <path d="M316 197 L260 291"/>
+  </g>
+  <g fill="#8ceafa">
+    <circle cx="144" cy="158" r="3"/>
+    <circle cx="192" cy="187" r="3"/>
+    <circle cx="240" cy="215" r="3"/>
+  </g>
+
+  <!-- Single-red-slit keep-in window and tail exclusion window. -->
+  <ellipse cx="107" cy="137" rx="34" ry="28" fill="none" stroke="#ff405c" stroke-width="3"/>
+  <path d="M93 145 L120 129" stroke="#ff405c" stroke-width="7" stroke-linecap="round"/>
+  <ellipse cx="288" cy="244" rx="42" ry="36" fill="none" stroke="#ffb64d" stroke-width="2" stroke-dasharray="6 5"/>
+
+  <!-- Four distinct distal-foot placement windows. -->
+  <g fill="rgba(87,255,166,0.08)" stroke="#57ffa6" stroke-width="2" stroke-dasharray="5 4">
+    <rect x="165" y="192" width="40" height="40" rx="8"/>
+    <rect x="82" y="240" width="50" height="46" rx="8"/>
+    <rect x="258" y="244" width="52" height="46" rx="8"/>
+    <rect x="180" y="290" width="52" height="30" rx="8"/>
+  </g>
+
+  <!-- Major armor-flow direction: roots at head, free tips toward tail. -->
+  <g fill="none" stroke="#ffb64d" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 5">
+    <path d="M132 122 C170 139 218 178 269 212"/>
+    <path d="M119 153 C163 171 215 211 279 244"/>
+    <path d="M124 179 C169 199 218 237 263 264"/>
+  </g>
+  <g fill="#ffb64d">
+    <path d="M269 212 L255 210 L262 199 Z"/>
+    <path d="M279 244 L265 241 L273 231 Z"/>
+    <path d="M263 264 L249 261 L257 251 Z"/>
+  </g>
+
+  <!-- Registration point. All final alpha must end above this point. -->
+  <circle cx="192" cy="320" r="6" fill="#ffffff"/>
+  <path d="M176 320 L208 320 M192 304 L192 336" stroke="#ffffff" stroke-width="2"/>
+</svg>

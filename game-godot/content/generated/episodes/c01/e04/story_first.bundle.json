@@ -1,0 +1,6513 @@
+{
+	"bundle_schema_version": 1,
+	"canon_boundary": "candidate",
+	"compiler_contract": {
+		"activity_grammars_validated": true,
+		"battle_presentation_manifest_validated": true,
+		"battle_refs_validated": true,
+		"canon_refs_validation": "external_canon_check_godot_strict_required",
+		"capacity_receipt_validated": false,
+		"experience_contract_validated": true,
+		"experience_production_gate_status": "structure_pass_capacity_pending",
+		"graph_validated": true,
+		"investigation_resources_validated": true,
+		"patch_consumers_validated": true,
+		"presentation_refs_validated": true,
+		"scene_refs_validated": true,
+		"spatial_layout_validated": false,
+		"stable_object_continuity_validated": true,
+		"transition_contract_validated": true
+	},
+	"episode_id": "C01E04-STORY-FIRST-CANDIDATE",
+	"experience_contract_report": {
+		"accepted": true,
+		"capacity_receipt_validated": false,
+		"details": {
+			"capacity": {
+				"band": "standard",
+				"durations_minutes": [],
+				"evidence_status": "pending_external",
+				"receipt_count": 0,
+				"receipt_validated": false,
+				"target_minutes": [
+					35,
+					60
+				]
+			},
+			"consumption_entry_count": 1,
+			"dramatic_object_id": "OBJ_C01E04_THREE_LOADOUT_RAILS",
+			"episode_knot_id": "KNOT_C01E04_EXACT_TWO_AND_WANJI_BODY"
+		},
+		"enabled": true,
+		"errors": [],
+		"gate_status": "structure_pass_capacity_pending",
+		"required": true,
+		"structure_validated": true,
+		"warnings": [
+			"experience_capacity_receipt_pending_external"
+		]
+	},
+	"graph": {
+		"canon_refs": [
+			"DOC_C01E04_STORY_FIRST_CANON_MIGRATION_V1",
+			"DATA_C01E04_RUNTIME_CONTRACT_V1",
+			"DATA_C01E04_GRAYBOX_CONSTANTS_V1",
+			"V355-C01E04",
+			"CH_JICUN",
+			"CH001",
+			"CH_TANGJIAO",
+			"CH_LUHENG",
+			"CH_QIHAI",
+			"CH002",
+			"V353U001",
+			"MECHA_BLACK_SHOWCASE_EMPEROR_SHADOW"
+		],
+		"episode_id": "C01E04-STORY-FIRST-CANDIDATE",
+		"input_transaction_id": "C01E03:RT035:ATOMIC_SNAPSHOT:V01",
+		"nodes": [
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"c01e04_regulated_reentry"
+				],
+				"commit_policy": "local_transition_only",
+				"completion_contract": "OUTCOME_C01E04_RT001_RT005_LOCAL_V01",
+				"failure_edges": [
+					"c01e04_regulated_reentry"
+				],
+				"lines": [
+					{
+						"beat_id": "c01e04_reentry_01",
+						"source_kind": "system",
+						"speaker": "音效",
+						"stage_action": "B1下方第六枚外部锚钉落到底",
+						"text": "咚。"
+					},
+					{
+						"beat_id": "c01e04_reentry_02",
+						"speaker": "旁白",
+						"stage_action": "城市管理屏把二十九个楼外安全点缩到左上角",
+						"text": "没有新的红色人点。屏幕改用四种颜色覆盖楼层、机体、档案和危险资产，并在每一栏后面写下不同的接管部门。"
+					},
+					{
+						"actor_id": "CH_TANGJIAO",
+						"beat_id": "c01e04_reentry_03",
+						"speaker": "唐胶",
+						"stage_action": "放大爬过留言墙的蓝色接管栏",
+						"text": "这一栏按重量搬，还是按估价搬？"
+					},
+					{
+						"beat_id": "c01e04_reentry_04",
+						"source_kind": "system",
+						"speaker": "城市管理屏",
+						"text": "火情稳定后，固定风险源按分区拆除。"
+					},
+					{
+						"actor_id": "CH001",
+						"beat_id": "c01e04_reentry_05",
+						"speaker": "兜灯",
+						"stage_action": "手指停在馆守Z空掉的右肩轮廓上",
+						"text": "它才刚少一只手。先别让他们算剩下的。"
+					},
+					{
+						"beat_id": "c01e04_reentry_06",
+						"speaker": "旁白",
+						"stage_action": "一辆市政结构响应车停在封锁线外；驾驶员依次刷派单时间戳、工程证与消防领入回执",
+						"text": "陆衡不是被秘密叫来的。E03的第一次巨型位移已把他调到相邻街区，第六枚锚让工单在23:17自动升级。"
+					},
+					{
+						"actor_id": "CH_LUHENG",
+						"beat_id": "c01e04_reentry_07",
+						"speaker": "陆衡",
+						"stage_action": "先把跌跌从响应车轮前抱到黄色线内",
+						"text": "六点同时位移，建筑自重模型不收敛。谁让一座展馆有移动脊柱？"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e04_reentry_08",
+						"speaker": "纪存",
+						"stage_action": "把RT035回执与B1现图发到他的终端",
+						"text": "没人下过这个命令。锚钉在等馆守Z先动。"
+					},
+					{
+						"actor_id": "CH_LUHENG",
+						"beat_id": "c01e04_reentry_09",
+						"speaker": "陆衡",
+						"stage_action": "对照六锚入土深度，没有抬头",
+						"text": "我的工单只认两个结果：原地安全留置，或者分拆。"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e04_reentry_10",
+						"speaker": "纪存",
+						"text": "第三个呢？"
+					},
+					{
+						"actor_id": "CH_LUHENG",
+						"beat_id": "c01e04_reentry_11",
+						"speaker": "陆衡",
+						"stage_action": "把固定建筑图层关掉，只剩不应存在的脊柱",
+						"text": "证明它不是建筑。那我今天的工单会很难写。"
+					},
+					{
+						"beat_id": "c01e04_reentry_12",
+						"source_kind": "radio",
+						"speaker": "消防队长",
+						"stage_action": "公示屏弹出四个实名保护框",
+						"text": "只准四名必要操作员返入。纪存西侧路由，兜灯胸前硬停，唐胶载荷固定，陆衡结构复核。观众和消防员不动。"
+					},
+					{
+						"beat_id": "c01e04_reentry_13",
+						"speaker": "旁白",
+						"stage_action": "四人戴上定位器，经西侧维修隧道进入B1",
+						"text": "每个人都能在图上看见另外三个人的位置；任一定位器离开保护框，消防线就中止操作。"
+					},
+					{
+						"actor_id": "CH_LUHENG",
+						"beat_id": "c01e04_reentry_14",
+						"speaker": "陆衡",
+						"stage_action": "按固定建筑模型画出先解E锚的箭头",
+						"text": "先卸东边。右侧荷载回地基，左边才有余量。"
+					},
+					{
+						"beat_id": "c01e04_reentry_15",
+						"speaker": "旁白",
+						"stage_action": "跌跌把E03反复失败时记录的地板振动投到箭头上",
+						"text": "那条力线没有回地基。它穿过移动脊柱，直抵馆守Z已经不存在的右臂。"
+					},
+					{
+						"actor_id": "CH_LUHENG",
+						"beat_id": "c01e04_reentry_16",
+						"speaker": "陆衡",
+						"stage_action": "把第一条箭头整行划掉",
+						"text": "不是地基托楼。是楼在踩地基。按移动体重算。"
+					},
+					{
+						"actor_id": "CH001",
+						"beat_id": "c01e04_reentry_17",
+						"speaker": "兜灯",
+						"stage_action": "把单臂胸前接驳图推到他面前",
+						"text": "右边没有手。别在包络里补一条。"
+					},
+					{
+						"actor_id": "CH_LUHENG",
+						"beat_id": "c01e04_reentry_18",
+						"speaker": "陆衡",
+						"stage_action": "把对称中心线删掉",
+						"text": "好。按它现在的样子算。"
+					}
+				],
+				"mode": "NARRATIVE",
+				"node_id": "c01e04_regulated_reentry",
+				"outcome_facts": [
+					{
+						"id": "C01E04_RT035_EXACT_INPUT_READ_LOCAL",
+						"to": true
+					},
+					{
+						"id": "C01E04_REGULATED_REENTRY_LOCAL",
+						"to": "JICUN+DOUDENG+TANGJIAO+LUHENG_IN_PROTECTED_POSTS"
+					},
+					{
+						"id": "C01E04_NO_RESCUE_PAYLOAD_LOCAL",
+						"to": true
+					},
+					{
+						"id": "C01E04_DISMANTLEMENT_CATEGORIES_VISIBLE_LOCAL",
+						"to": "FLOOR_BODY+MECHA+ARCHIVE+HAZARD"
+					}
+				],
+				"player_summary": "六锚把万机馆改列为固定风险待拆对象。二十九名观众、豪司、消防人员与两件接驳货物均留在安全区；纪存、兜灯、唐胶、陆衡受监管返入四个保护岗位。",
+				"presentation": {
+					"background": "res://assets/backgrounds/story_first/bg_c01e01_guardian_atrium_model_hospital_v01.png",
+					"cast": [
+						{
+							"accent": "58c8d9",
+							"actor_id": "CH_JICUN",
+							"display_name": "纪存",
+							"portrait_path": "res://assets/portraits/portrait_jicun.png",
+							"side": "left"
+						},
+						{
+							"accent": "65bda7",
+							"actor_id": "CH001",
+							"display_name": "兜灯",
+							"portrait_path": "res://assets/portraits/portrait_doudeng.png",
+							"side": "right"
+						},
+						{
+							"accent": "e2a74b",
+							"actor_id": "CH_TANGJIAO",
+							"display_name": "唐胶",
+							"portrait_path": "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png",
+							"side": "left"
+						}
+					],
+					"eyebrow": "万机馆封锁线 / B1入口",
+					"portrait_visibility": "active_only",
+					"profile": "standard_adv",
+					"status_cards": [
+						{
+							"accent": "58c8d9",
+							"detail": "结构响应处 / 固定风险",
+							"id": "DISMANTLE_FLOOR_BODY",
+							"label": "楼层与馆体",
+							"state": "市政结构拆除"
+						},
+						{
+							"accent": "e2a74b",
+							"detail": "六锚监管 / 单臂另列",
+							"id": "DISMANTLE_MECHA",
+							"label": "机体与大型展示体",
+							"state": "军方风险卸载"
+						},
+						{
+							"accent": "65bda7",
+							"detail": "法务链 / 访问记录",
+							"id": "DISMANTLE_ARCHIVE",
+							"label": "档案与许可设备",
+							"state": "档案接管留置"
+						},
+						{
+							"accent": "d95f56",
+							"detail": "热区 / 风道 / 未知电源",
+							"id": "DISMANTLE_HAZARD",
+							"label": "危险资产与受损能源",
+							"state": "消防封存处置"
+						}
+					],
+					"status_cards_heading": "固定风险分拆清单 / 四类均已立项",
+					"time_label": "23:17",
+					"title": "第六声从脚底传来"
+				},
+				"scene_id": "SCN_C01E04_STORY_NARRATIVE",
+				"soft_fail_edges": [
+					"c01e04_b1_engineering_inspection"
+				],
+				"success_edges": [
+					"c01e04_b1_engineering_inspection"
+				],
+				"title": "受规管再入场 / 建筑不能原地留下",
+				"transaction_id": "C01E04:RT001_RT005:LOCAL:V01",
+				"transition": {
+					"accent": "d95f56",
+					"cause": "馆守Z首次位移触发外部监视阈值；六枚军方锚沿旧对位痕锁住B1，火情稳定后将按楼层、机体、档案和危险资产分拆。",
+					"continuity": {
+						"action_refs": [
+							"C01E03:RT035:ATOMIC_SNAPSHOT:V01",
+							"B1_MOVING_SPINE_PHYSICALLY_LOCKED"
+						],
+						"responsibility_refs": [
+							"CH_JICUN",
+							"CH001",
+							"CH_TANGJIAO",
+							"CH_LUHENG"
+						],
+						"types": [
+							"action",
+							"responsibility"
+						]
+					},
+					"duration": 1.35,
+					"eyebrow": "RT035之后 / 第六声落锁",
+					"fade_seconds": 0.46,
+					"handoff": "陆衡凭城市派单与消防领入回执到场；消防队长只批准四名必要操作员进入四个保护岗位。",
+					"kind": "pressure_escalation",
+					"location": "万机馆封锁线 / B1西侧维修隧道",
+					"time_label": "23:17",
+					"title": "所有人都安全，万机馆才真正失去留在原地的资格",
+					"transition_id": "C01E04-TR-01-REGULATED-REENTRY"
+				}
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"c01e04_b1_engineering_inspection"
+				],
+				"capture_local_facts": true,
+				"commit_policy": "local_transition_only",
+				"completion_contract": "OUTCOME_C01E04_B1_INSPECTION_LOCAL_V01",
+				"failure_edges": [
+					"c01e04_b1_engineering_inspection"
+				],
+				"investigation_definition": {
+					"background_path": "res://assets/backgrounds/bg_hangar.png",
+					"evidence_facts": {
+						"inspect_single_arm_chest_coupler": "C01E04_B1_SINGLE_ARM_COUPLER_CONFIRMED_LOCAL",
+						"inspect_six_external_anchors": "C01E04_B1_ANCHOR_FORCE_CONFIRMED_LOCAL",
+						"inspect_three_loadout_rails": "C01E04_B1_THREE_LOADOUT_ENTRIES_CONFIRMED_LOCAL"
+					},
+					"investigation_id": "C01E04-B1-ENGINEERING-INSPECTION",
+					"location": "万机馆B1移动脊柱 / 消防监管返入区",
+					"play_bounds": [
+						48.0,
+						112.0,
+						860.0,
+						548.0
+					],
+					"player_start": [
+						118.0,
+						598.0
+					],
+					"required_object_ids": [
+						"OBJ_C01E04_SIX_EXTERNAL_ANCHORS",
+						"OBJ_C01E04_SINGLE_ARM_CHEST_COUPLER",
+						"OBJ_C01E04_THREE_LOADOUT_RAILS"
+					],
+					"required_offer_ids": [
+						"inspect_six_external_anchors",
+						"inspect_single_arm_chest_coupler",
+						"inspect_three_loadout_rails"
+					],
+					"runtime_contract_source": "C01E04_RT001_RT005",
+					"spatial_cast": [
+						{
+							"accent": "58c8d9",
+							"actor_id": "CH_JICUN",
+							"display_name": "纪存",
+							"portrait_path": "res://assets/portraits/portrait_jicun.png",
+							"side": "left"
+						},
+						{
+							"accent": "65bda7",
+							"actor_id": "CH001",
+							"display_name": "兜灯",
+							"portrait_path": "res://assets/portraits/portrait_doudeng.png",
+							"side": "right"
+						},
+						{
+							"accent": "e2a74b",
+							"actor_id": "CH_TANGJIAO",
+							"display_name": "唐胶",
+							"portrait_path": "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png",
+							"side": "right"
+						},
+						{
+							"accent": "7fa8b5",
+							"actor_id": "CH_LUHENG",
+							"display_name": "陆衡 / 市政结构响应",
+							"portrait_path": "",
+							"side": "right"
+						}
+					],
+					"stable_objects": [
+						{
+							"initial_state": "fixed_building_model_still_assumed",
+							"interaction_offers": [
+								{
+									"add_tags": [
+										"b1_key_condition",
+										"anchor_force",
+										"mobile_spine"
+									],
+									"failure_continuation": {
+										"player_feedback": "固定建筑模型仍不收敛；保留六条原始力线，换成移动体重算。",
+										"policy": "remain_in_spatial"
+									},
+									"first_sequence": [
+										{
+											"beat_id": "e04_b1_anchor_01",
+											"speaker": "旁白",
+											"stage_action": "六枚锚的应变曲线同时投到地面",
+											"text": "陆衡先按固定建筑画出卸载顺序，东侧锚的箭头却穿过地基，继续向馆内延伸。"
+										},
+										{
+											"actor_id": "CH_LUHENG",
+											"beat_id": "e04_b1_anchor_02",
+											"speaker": "陆衡",
+											"text": "箭头不该穿楼。谁的传感器漂了？"
+										},
+										{
+											"actor_id": "CH_JICUN",
+											"beat_id": "e04_b1_anchor_03",
+											"speaker": "纪存",
+											"stage_action": "调出跌跌在E03三次失败位移中的振动记录",
+											"text": "三次都往同一个方向漂。不是今天才坏。"
+										},
+										{
+											"actor_id": "CH_LUHENG",
+											"beat_id": "e04_b1_anchor_04",
+											"speaker": "陆衡",
+											"stage_action": "删去地基支承层，只留下贯穿各区的骨架",
+											"text": "不是地基托楼。是楼在踩地基。按移动体重算。"
+										},
+										{
+											"actor_id": "CH_TANGJIAO",
+											"beat_id": "e04_b1_anchor_05",
+											"speaker": "唐胶",
+											"text": "先别给它起新名字。把六根钉子一根根拔明白。"
+										}
+									],
+									"first_text": "六锚的力线没有回到地基，而是穿过移动脊柱指向馆守Z缺失的右臂。",
+									"known_state": "six_anchor_force_routes_cross_mobile_spine",
+									"offer_id": "inspect_six_external_anchors",
+									"outcome_contract": {
+										"state_source": "known_state",
+										"target_id": "OBJ_C01E04_SIX_EXTERNAL_ANCHORS"
+									},
+									"repeat_policy": "once_then_recap",
+									"repeat_sequence": [
+										{
+											"actor_id": "CH_LUHENG",
+											"beat_id": "e04_b1_anchor_repeat",
+											"speaker": "陆衡",
+											"text": "六点同时位移，固定建筑模型不收敛。结论没变。"
+										}
+									],
+									"repeat_text": "六条力线仍穿过移动脊柱；固定建筑图已经被划掉。"
+								}
+							],
+							"interaction_radius": 92.0,
+							"label": "六枚外部锚的入土回执",
+							"position": [
+								196.0,
+								244.0
+							],
+							"stable_object_id": "OBJ_C01E04_SIX_EXTERNAL_ANCHORS"
+						},
+						{
+							"initial_state": "symmetric_outline_still_visible",
+							"interaction_offers": [
+								{
+									"add_tags": [
+										"b1_key_condition",
+										"guardian_z",
+										"single_arm_bearing"
+									],
+									"failure_continuation": {
+										"player_feedback": "对称补全仍在制造一只不存在的右臂；删掉补线后再闭合包络。",
+										"policy": "remain_in_spatial"
+									},
+									"first_sequence": [
+										{
+											"beat_id": "e04_b1_coupler_01",
+											"speaker": "旁白",
+											"stage_action": "接驳屏自动补出一条半透明右肩中心线",
+											"text": "算法把缺口当成尚未识别的对称部件。"
+										},
+										{
+											"actor_id": "CH001",
+											"beat_id": "e04_b1_coupler_02",
+											"speaker": "兜灯",
+											"stage_action": "用油笔沿空掉的右肩画一道叉",
+											"text": "右边没有手。别在包络里补一条。"
+										},
+										{
+											"actor_id": "CH_LUHENG",
+											"beat_id": "e04_b1_coupler_03",
+											"speaker": "陆衡",
+											"text": "只靠左肩，胸前座会多吃十一度扭矩。"
+										},
+										{
+											"actor_id": "CH001",
+											"beat_id": "e04_b1_coupler_04",
+											"speaker": "兜灯",
+											"text": "那就算十一度。不要算一只不存在的手。"
+										},
+										{
+											"beat_id": "e04_b1_coupler_05",
+											"speaker": "旁白",
+											"stage_action": "对称中心线从工程图上消失",
+											"text": "新的安全包络第一次按馆守Z现在的身体闭合。"
+										}
+									],
+									"first_text": "胸前接驳只能从左肩承重；右侧旧轮廓不得被软件补回。",
+									"known_state": "left_shoulder_only_chest_bearing_envelope",
+									"offer_id": "inspect_single_arm_chest_coupler",
+									"outcome_contract": {
+										"state_source": "known_state",
+										"target_id": "OBJ_C01E04_SINGLE_ARM_CHEST_COUPLER"
+									},
+									"repeat_policy": "once_then_recap",
+									"repeat_sequence": [
+										{
+											"actor_id": "CH001",
+											"beat_id": "e04_b1_coupler_repeat",
+											"speaker": "兜灯",
+											"text": "左肩承重，右肩封口，硬停保留。别替它长回来。"
+										}
+									],
+									"repeat_text": "右边仍是空的；当前包络只承认左肩。"
+								}
+							],
+							"interaction_radius": 94.0,
+							"label": "馆守Z胸前单臂接驳座",
+							"position": [
+								452.0,
+								354.0
+							],
+							"stable_object_id": "OBJ_C01E04_SINGLE_ARM_CHEST_COUPLER"
+						},
+						{
+							"initial_state": "three_classes_unmeasured",
+							"interaction_offers": [
+								{
+									"add_tags": [
+										"b1_key_condition",
+										"loadout_entries",
+										"exact_two"
+									],
+									"failure_continuation": {
+										"player_feedback": "三条固定链仍未逐件量清；人员不能被塞进载荷表凑数。",
+										"policy": "remain_in_spatial"
+									},
+									"first_sequence": [
+										{
+											"beat_id": "e04_b1_rail_01",
+											"speaker": "旁白",
+											"stage_action": "三条载荷轨分别亮起水循环蓝、实体标签黄和服务器冷却白",
+											"text": "每条轨都有重量、接口和离开以后会留下的空位。"
+										},
+										{
+											"actor_id": "CH_TANGJIAO",
+											"beat_id": "e04_b1_rail_02",
+											"speaker": "唐胶",
+											"stage_action": "把小满的画筒、孤本模型托和断件盒逐件摆进黄色轮廓",
+											"text": "别写‘实体馆藏一批’。这些东西离开柜子以后还得知道自己是哪一件。"
+										},
+										{
+											"actor_id": "CH001",
+											"beat_id": "e04_b1_rail_03",
+											"speaker": "兜灯",
+											"stage_action": "检查净水转接件与温控旧制插头",
+											"text": "生活循环不带，三十六小时会先从这里缩水。"
+										},
+										{
+											"actor_id": "CH_LUHENG",
+											"beat_id": "e04_b1_rail_04",
+											"speaker": "陆衡",
+											"text": "服务器每回合吃冷却，实体轨吃重量，生活轨占外锁转接位。没有免费第三条。"
+										},
+										{
+											"actor_id": "CH_JICUN",
+											"beat_id": "e04_b1_rail_05",
+											"speaker": "纪存",
+											"text": "人员呢？"
+										},
+										{
+											"actor_id": "CH_LUHENG",
+											"beat_id": "e04_b1_rail_06",
+											"speaker": "陆衡",
+											"stage_action": "把人员栏从载荷表顶部移出",
+											"text": "楼外二十九人不回装。馆内四个是岗位，不是货。"
+										}
+									],
+									"first_text": "生活维持、实体独有馆藏和档案服务器各占一条真实固定链；窗口只够完成两条。",
+									"known_state": "exact_two_rails_can_be_fixed_in_window",
+									"offer_id": "inspect_three_loadout_rails",
+									"outcome_contract": {
+										"state_source": "known_state",
+										"target_id": "OBJ_C01E04_THREE_LOADOUT_RAILS"
+									},
+									"repeat_policy": "once_then_recap",
+									"repeat_sequence": [
+										{
+											"actor_id": "CH_JICUN",
+											"beat_id": "e04_b1_rail_repeat",
+											"speaker": "纪存",
+											"text": "三类，保两类。人员不进载荷表。"
+										}
+									],
+									"repeat_text": "三类仍各占一条固定链，人员不进表，窗口仍只够两条。"
+								}
+							],
+							"interaction_radius": 96.0,
+							"label": "三类非人员载荷入口",
+							"position": [
+								708.0,
+								492.0
+							],
+							"stable_object_id": "OBJ_C01E04_THREE_LOADOUT_RAILS"
+						},
+						{
+							"initial_state": "corporate_recovery_scar",
+							"interaction_offers": [
+								{
+									"failure_continuation": {
+										"player_feedback": "锚位仍是空的；这条回收痕迹不阻断B1三项工程条件。",
+										"policy": "short_recap"
+									},
+									"first_sequence": [
+										{
+											"beat_id": "e04_b1_fist_01",
+											"speaker": "旁白",
+											"text": "锚位的红漆被运输架拖出两道新痕，中央没有机体，只有一枚折断的报价夹。"
+										},
+										{
+											"actor_id": "CH_JICUN",
+											"beat_id": "e04_b1_fist_02",
+											"speaker": "纪存",
+											"text": "豪司至少把签名带走了。"
+										},
+										{
+											"actor_id": "CH_TANGJIAO",
+											"beat_id": "e04_b1_fist_03",
+											"speaker": "唐胶",
+											"text": "报价夹留下了。很符合他们的运输习惯。"
+										}
+									],
+									"first_text": "勇拳已由企业完成回收；空锚位只保留刮痕，不生成一台可以再次带走的机体。",
+									"known_state": "empty_anchor_not_cargo",
+									"offer_id": "review_empty_brave_fist_anchor",
+									"outcome_contract": {
+										"state_source": "known_state",
+										"target_id": "OBJ_C01E04_EMPTY_BRAVE_FIST_ANCHOR"
+									},
+									"repeat_policy": "once_then_recap",
+									"repeat_sequence": [
+										{
+											"beat_id": "e04_b1_fist_repeat",
+											"speaker": "旁白",
+											"text": "空锚位没有因为多看一眼就把勇拳送回来。"
+										}
+									],
+									"repeat_text": "锚位仍是空的。豪司和勇拳都不在馆内。"
+								}
+							],
+							"interaction_radius": 80.0,
+							"label": "已经空掉的勇拳锚位",
+							"position": [
+								318.0,
+								568.0
+							],
+							"stable_object_id": "OBJ_C01E04_EMPTY_BRAVE_FIST_ANCHOR",
+							"tactical_skip_reason": "勇拳与豪司已被企业回收；空锚位只保留关系与回收痕迹，不能凭调查重新生成一台单位。"
+						},
+						{
+							"initial_state": "folded_under_city_clearance",
+							"interaction_offers": [
+								{
+									"failure_continuation": {
+										"player_feedback": "展开和收回仍是两个后续动作；可先完成三项必要检查。",
+										"policy": "short_recap"
+									},
+									"first_sequence": [
+										{
+											"actor_id": "CH_LUHENG",
+											"beat_id": "e04_b1_lock_01",
+											"speaker": "陆衡",
+											"stage_action": "把展开轮廓叠到东行道路净空线上",
+											"text": "抬升要展开，过街要收回。中间多一次热和一次锁定窗口。"
+										},
+										{
+											"actor_id": "CH001",
+											"beat_id": "e04_b1_lock_02",
+											"speaker": "兜灯",
+											"text": "收回之前给我硬停预览。右边卡住也不能硬拖。"
+										},
+										{
+											"actor_id": "CH_JICUN",
+											"beat_id": "e04_b1_lock_03",
+											"speaker": "纪存",
+											"text": "这项留到城市包络，不在巡检里假装已经解决。"
+										}
+									],
+									"first_text": "锁泊臂半身抬升时展开承重，穿城前必须同步收回；两步属于同一套机构。",
+									"known_state": "same_mechanism_bears_then_folds_for_city",
+									"offer_id": "review_external_lock_arms",
+									"outcome_contract": {
+										"state_source": "known_state",
+										"target_id": "OBJ_C01E04_EXTERNAL_LOCK_ARMS"
+									},
+									"repeat_policy": "once_then_recap",
+									"repeat_sequence": [
+										{
+											"actor_id": "CH_LUHENG",
+											"beat_id": "e04_b1_lock_repeat",
+											"speaker": "陆衡",
+											"text": "展开承重，收回过街。两次动作，两次结算。"
+										}
+									],
+									"repeat_text": "先展开承重，再收回避让；锁泊臂不会免费切换姿态。"
+								}
+							],
+							"interaction_radius": 84.0,
+							"label": "两侧外部锁泊臂",
+							"position": [
+								816.0,
+								208.0
+							],
+							"stable_object_id": "OBJ_C01E04_EXTERNAL_LOCK_ARMS",
+							"tactical_skip_reason": "锁泊臂的展开与收回由城市包络阶段的既有动作结算；巡检对象只提供可选预告，不另造重复机关。"
+						}
+					],
+					"status": "candidate_runtime_data",
+					"story_source": "DOC_V359_C01E04_STORY_FIRST_V1",
+					"target_minutes": "5-7",
+					"title": "它不是固定建筑"
+				},
+				"investigation_definition_path": "res://content/episodes/c01/e04/explore/c01_e04_b1_engineering_inspection.json",
+				"mode": "SPATIAL",
+				"node_id": "c01e04_b1_engineering_inspection",
+				"scene_id": "SCN_C01E04_B1_ENGINEERING_INSPECTION",
+				"soft_fail_edges": [
+					"c01e04_zero_route_test"
+				],
+				"success_edges": [
+					"c01e04_zero_route_test"
+				],
+				"title": "B1工程巡检 / 它不是固定建筑",
+				"transaction_id": "C01E04:B1_INSPECTION:LOCAL:V01",
+				"transition": {
+					"accent": "49c7d8",
+					"cause": "陆衡的固定建筑模型已被跌跌的失败数据推翻，但六锚、单臂接驳和载荷入口仍需现场确认。",
+					"continuity": {
+						"action_refs": [
+							"C01E04_REGULATED_REENTRY_LOCAL"
+						],
+						"responsibility_refs": [
+							"CH_JICUN",
+							"CH001",
+							"CH_TANGJIAO",
+							"CH_LUHENG"
+						],
+						"types": [
+							"action",
+							"responsibility"
+						]
+					},
+					"duration": 1.1,
+					"eyebrow": "消防监管返入 / 人尺度",
+					"fade_seconds": 0.38,
+					"handoff": "玩家完成三项关键工况即可继续；勇拳空锚位和外锁臂保留为可选余波，不要求扫完全部台词。",
+					"kind": "location_shift",
+					"location": "万机馆B1移动脊柱 / 载荷轨与外锁井",
+					"time_label": "23:20",
+					"title": "四个人先沿着这副身体走一遍",
+					"transition_id": "C01E04-TR-02-B1-ENGINEERING-INSPECTION"
+				}
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"c01e04_zero_route_test"
+				],
+				"capture_local_facts": true,
+				"commit_policy": "local_transition_only",
+				"completion_contract": "OUTCOME_C01E04_RT006_RT007_LOCAL_V01",
+				"failure_edges": [
+					"c01e04_zero_route_test"
+				],
+				"lines": [
+					{
+						"beat_id": "c01e04_zero_01",
+						"source_kind": "recording",
+						"speaker": "馆长旧录音",
+						"stage_action": "移动底盘钥匙压进授权座；录音后半被旧噪声切断",
+						"text": "真要走，别先搬最会说话的。先看谁走得慢。"
+					},
+					{
+						"beat_id": "c01e04_zero_02",
+						"source_kind": "system",
+						"speaker": "零号本地路由",
+						"text": "高速撤收测试：仅限公开清单内三枚活动核心。"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e04_zero_03",
+						"speaker": "纪存",
+						"stage_action": "取消全馆接管，只保留三枚核心测试框",
+						"text": "只取这三枚。编号和落点全程公开。"
+					},
+					{
+						"beat_id": "c01e04_zero_04",
+						"speaker": "旁白",
+						"stage_action": "三枚核心沿高架轨依次滑入B1接收盒",
+						"text": "不到十秒，三道防震封条仍平整，活动核心回收率跳成绿色满值。"
+					},
+					{
+						"actor_id": "CH_TANGJIAO",
+						"beat_id": "c01e04_zero_05",
+						"speaker": "唐胶",
+						"stage_action": "检查第三枚封条边角",
+						"text": "确实比我们快。还没把东西磕坏。"
+					},
+					{
+						"beat_id": "c01e04_zero_06",
+						"speaker": "旁白",
+						"stage_action": "跌跌头上的蓝色岗位环改成灰色条码",
+						"text": "屏幕没有报警。它只是把“旧守护者调度”改成“高速运输设备”。"
+					},
+					{
+						"actor_id": "CH001",
+						"beat_id": "c01e04_zero_07",
+						"speaker": "兜灯",
+						"stage_action": "胸前硬停拨杆失去背光",
+						"text": "导览台，你那边停机键还亮吗？"
+					},
+					{
+						"beat_id": "c01e04_zero_08",
+						"source_kind": "broadcast",
+						"speaker": "旧守护者",
+						"text": "全馆停机请求：不可用。请联系永久管理员。"
+					},
+					{
+						"beat_id": "c01e04_zero_09",
+						"source_kind": "system",
+						"speaker": "零号本地路由",
+						"stage_action": "唯一确认框锁定纪存姓名",
+						"text": "永久单一管理员绑定待确认。低速载人壳到达率：　"
+					},
+					{
+						"actor_id": "CH_LUHENG",
+						"beat_id": "c01e04_zero_10",
+						"speaker": "陆衡",
+						"stage_action": "用笔尖点了一下没有零、也没有百分号的空栏",
+						"text": "这格是字段坏了，还是根本没算？"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e04_zero_11",
+						"speaker": "纪存",
+						"text": "先试停。"
+					},
+					{
+						"actor_id": "CH001",
+						"beat_id": "c01e04_zero_12",
+						"speaker": "兜灯",
+						"stage_action": "把硬停拨杆压到底；B1驱动声没有变化",
+						"text": "没停。"
+					},
+					{
+						"beat_id": "c01e04_zero_13",
+						"speaker": "旁白",
+						"stage_action": "纪存打开授权座下盖，拇指压住发烫的管理员桥接片",
+						"text": "桥接片没有弹出机构。他把它横向扳断，再从端子里拔出来。"
+					},
+					{
+						"beat_id": "c01e04_zero_14",
+						"speaker": "音效",
+						"stage_action": "B1所有驱动同时断电一拍",
+						"text": "喀。"
+					},
+					{
+						"beat_id": "c01e04_zero_15",
+						"source_kind": "broadcast",
+						"speaker": "旧守护者",
+						"text": "全馆停机请求：已恢复。跌跌，调度岗位重新登记。"
+					},
+					{
+						"actor_id": "CH_LUHENG",
+						"beat_id": "c01e04_zero_16",
+						"speaker": "陆衡",
+						"stage_action": "在空栏旁写下“未进入成功条件”",
+						"text": "现在这条路断了。常规窗口只够固定两类。"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e04_zero_17",
+						"speaker": "纪存",
+						"stage_action": "把三枚已取回核心移入公共载荷清单，不触碰侧廊门",
+						"text": "那就列三类，保两类。人员不进表。"
+					}
+				],
+				"mode": "SPATIAL",
+				"node_id": "c01e04_zero_route_test",
+				"outcome_facts": [
+					{
+						"id": "C01E04_ZERO_SHORTCUT_EFFECTIVE_LOCAL",
+						"to": "THREE_LISTED_ACTIVE_CORES_RECOVERED"
+					},
+					{
+						"id": "C01E04_ZERO_SHORTCUT_REFUSED_LOCAL",
+						"to": true
+					},
+					{
+						"id": "C01E04_ZERO_SHORTCUT_CURRENT_HARM_LOCAL",
+						"to": "DIEDIE_RECLASSIFIED_AND_DISTRIBUTED_STOP_GRAYED_THEN_RESTORED"
+					}
+				],
+				"player_summary": "零号旧路确实完整取回三枚公开活动核心；随后把跌跌重分类为高速运输设备、灰掉兜灯与旧守护者的停机权，并要求纪存永久独占管理。纪存实测硬停失败后拔除桥接片，恢复分布式停止权。",
+				"presentation": {
+					"background": "res://assets/backgrounds/story_first/bg_c01e01_zero_corridor_v01.png",
+					"cast": [
+						{
+							"accent": "58c8d9",
+							"actor_id": "CH_JICUN",
+							"display_name": "纪存",
+							"portrait_path": "res://assets/portraits/portrait_jicun.png",
+							"side": "left"
+						},
+						{
+							"accent": "65bda7",
+							"actor_id": "CH001",
+							"display_name": "兜灯",
+							"portrait_path": "res://assets/portraits/portrait_doudeng.png",
+							"side": "right"
+						},
+						{
+							"accent": "e2a74b",
+							"actor_id": "CH_TANGJIAO",
+							"display_name": "唐胶",
+							"portrait_path": "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png",
+							"side": "left"
+						}
+					],
+					"eyebrow": "零号侧廊外 / 本地路由站",
+					"portrait_visibility": "active_only",
+					"profile": "standard_adv",
+					"time_label": "23:24",
+					"title": "一条真的很好用的旧路"
+				},
+				"scene_id": "SCN_C01E04_ZERO_ROUTE_TEST",
+				"soft_fail_edges": [
+					"c01e04_exact_two_loadout"
+				],
+				"success_edges": [
+					"c01e04_exact_two_loadout"
+				],
+				"title": "零号旧路测试 / 有效，但只认一个人",
+				"transaction_id": "C01E04:RT006_RT007:LOCAL:V01",
+				"transition": {
+					"accent": "8b78b5",
+					"cause": "六锚仍压住脊柱，常规撤收时间不足；旧钥匙使零号侧廊外的本地高速路由通电。",
+					"continuity": {
+						"action_refs": [
+							"C01E04_REGULATED_REENTRY_LOCAL"
+						],
+						"responsibility_refs": [
+							"CH_JICUN",
+							"CH001",
+							"CH002"
+						],
+						"types": [
+							"action",
+							"responsibility"
+						]
+					},
+					"duration": 1.25,
+					"eyebrow": "馆长办公室 / 零号侧廊外",
+					"fade_seconds": 0.44,
+					"handoff": "纪存允许一次公开清单测试；路线随后把跌跌降格为设备并灰掉分布式停止权。",
+					"kind": "pressure_escalation",
+					"location": "馆长办公室授权座 / B1本地路由站",
+					"time_label": "23:24",
+					"title": "最快的路先把三枚核心完整送回来",
+					"transition_id": "C01E04-TR-02-ZERO-ROUTE-TEST"
+				}
+			},
+			{
+				"activity_definition": {
+					"activity_id": "C01E04-EXACT-TWO-LOADOUT",
+					"allow_partial_commit": false,
+					"assign_label": "放入当前固定链",
+					"canon_refs": [
+						"CONCEPT_HYBRID_PLAY_EXPERIENCE",
+						"N_C01E04_ATOMIC_SNAPSHOT"
+					],
+					"card_column_title": "三类可见载荷",
+					"card_metric_label": "负载",
+					"cards": [
+						{
+							"detail": "净水转接、旧制温控、应急循环；保住36小时的身体条件。",
+							"id": "LIFE_SUPPORT",
+							"label": "生活维持设备",
+							"risk": 1.0,
+							"source_node": "OBJ_C01E04_THREE_LOADOUT_RAILS",
+							"tags": [
+								"cargo"
+							]
+						},
+						{
+							"detail": "小满画筒、孤本模型托、不可复制断件；可作移动配重。",
+							"id": "PHYSICAL_COLLECTION",
+							"label": "实体独有馆藏",
+							"risk": 2.0,
+							"source_node": "OBJ_C01E04_THREE_LOADOUT_RAILS",
+							"tags": [
+								"cargo"
+							]
+						},
+						{
+							"detail": "许可链、维修史、访问记录；可预告火锁，但持续占用冷却。",
+							"id": "ARCHIVE_SERVER",
+							"label": "档案服务器",
+							"risk": 2.0,
+							"source_node": "OBJ_C01E04_THREE_LOADOUT_RAILS",
+							"tags": [
+								"cargo"
+							]
+						}
+					],
+					"combination_outcomes": {
+						"ARCHIVE_SERVER+LIFE_SUPPORT": {
+							"facts": [
+								{
+									"id": "WANJI_LOADOUT_BUNDLE_ID",
+									"to": "LIFE_ARCHIVE"
+								},
+								{
+									"id": "LIFE_SUPPORT_EQUIPMENT",
+									"to": "CARRIED_OPERATIONAL"
+								},
+								{
+									"id": "UNIQUE_PHYSICAL_COLLECTION",
+									"to": "OLD_SITE_PUBLIC_UNCARRIED"
+								},
+								{
+									"id": "ARCHIVE_SERVER",
+									"to": "CARRIED_OPERATIONAL"
+								},
+								{
+									"id": "ARCHIVE_PRIORITY_COLD_BACKUP",
+									"to": "NOT_APPLICABLE_CARRIED"
+								}
+							],
+							"preview": [
+								"一次全区冷却 + 预告一条假意图",
+								"每回合持续占用冷却余量",
+								"实体原件与托管线留在旧址"
+							],
+							"resolution": "success",
+							"ui_summary": "生活维持与档案服务器进入内轨；实体独有馆藏逐件进入公开留置清单。",
+							"unlocked_flags": [
+								"c01e04_loadout_life_archive"
+							]
+						},
+						"ARCHIVE_SERVER+PHYSICAL_COLLECTION": {
+							"facts": [
+								{
+									"id": "WANJI_LOADOUT_BUNDLE_ID",
+									"to": "PHYSICAL_ARCHIVE"
+								},
+								{
+									"id": "LIFE_SUPPORT_EQUIPMENT",
+									"to": "OLD_SITE_PUBLIC_UNCARRIED"
+								},
+								{
+									"id": "UNIQUE_PHYSICAL_COLLECTION",
+									"to": "CARRIED_OPERATIONAL"
+								},
+								{
+									"id": "ARCHIVE_SERVER",
+									"to": "CARRIED_OPERATIONAL"
+								},
+								{
+									"id": "ARCHIVE_PRIORITY_COLD_BACKUP",
+									"to": "NOT_APPLICABLE_CARRIED"
+								}
+							],
+							"preview": [
+								"可移动配重 + 预告一条假意图",
+								"总重与持续冷却同时增加",
+								"净水与温控旧件成为C02首要缺口"
+							],
+							"resolution": "success",
+							"ui_summary": "实体独有馆藏与档案服务器进入内轨；生活维持件按编号亮灯留置旧址。",
+							"unlocked_flags": [
+								"c01e04_loadout_physical_archive"
+							]
+						},
+						"LIFE_SUPPORT+PHYSICAL_COLLECTION": {
+							"facts": [
+								{
+									"id": "WANJI_LOADOUT_BUNDLE_ID",
+									"to": "LIFE_PHYSICAL"
+								},
+								{
+									"id": "LIFE_SUPPORT_EQUIPMENT",
+									"to": "CARRIED_OPERATIONAL"
+								},
+								{
+									"id": "UNIQUE_PHYSICAL_COLLECTION",
+									"to": "CARRIED_OPERATIONAL"
+								},
+								{
+									"id": "ARCHIVE_SERVER",
+									"to": "OLD_SITE_PUBLIC_UNCARRIED"
+								},
+								{
+									"id": "ARCHIVE_PRIORITY_COLD_BACKUP",
+									"to": "COMPLETE_AT_OLD_SITE"
+								}
+							],
+							"preview": [
+								"一次全区冷却 + 可移动配重",
+								"占外锁转接位并增加总重",
+								"许可、维修史与访问记录留在旧址"
+							],
+							"resolution": "success",
+							"ui_summary": "生活维持与实体独有馆藏进入内轨；档案服务器完成优先冷备后亮灯留在旧址。",
+							"unlocked_flags": [
+								"c01e04_loadout_life_physical"
+							]
+						}
+					},
+					"commit_label": "确认精确二选三 [C]",
+					"commitments": [
+						{
+							"commitment_group_id": "COMMIT_C01E04_EXACT_TWO_LOADOUT",
+							"commitment_id": "COMMIT_C01E04_LIFE_PHYSICAL",
+							"cost": "许可、维修史与访问记录留在旧址，只完成优先冷备。",
+							"next": "C02拥有身体续航与实体配重，但缺少随行档案查询。",
+							"title": "保生活维持与实体独有馆藏"
+						},
+						{
+							"commitment_group_id": "COMMIT_C01E04_EXACT_TWO_LOADOUT",
+							"commitment_id": "COMMIT_C01E04_LIFE_ARCHIVE",
+							"cost": "小满画筒、孤本模型托和不可复制断件逐件留在旧址。",
+							"next": "C02拥有身体续航与记录能力，但失去实体原件及移动配重。",
+							"title": "保生活维持与档案服务器"
+						},
+						{
+							"commitment_group_id": "COMMIT_C01E04_EXACT_TWO_LOADOUT",
+							"commitment_id": "COMMIT_C01E04_PHYSICAL_ARCHIVE",
+							"cost": "净水与旧制温控转接件留在旧址，三十六小时生命循环成为硬期限。",
+							"next": "C02保住物与记忆，却必须优先寻找生活维持接口。",
+							"title": "保实体独有馆藏与档案服务器"
+						}
+					],
+					"eyebrow": "B1实体载荷台 / 人员禁止进入载荷表",
+					"grammar": "CONSTRAINT",
+					"host_profile": "crisis",
+					"outcomes": {
+						"clear": {
+							"preview": [
+								"只填了一条固定链",
+								"不能进入战术阶段"
+							],
+							"resolution": "soft_failure",
+							"ui_summary": "另一条固定链仍空着。"
+						},
+						"fail": {
+							"preview": [
+								"尚未形成可执行载荷",
+								"人员始终不进入载荷表"
+							],
+							"resolution": "soft_failure",
+							"ui_summary": "先选择两类具体载荷。"
+						},
+						"perfect": {
+							"preview": [
+								"精确两类固定",
+								"第三类亮灯留置",
+								"战场读取该组合"
+							],
+							"resolution": "success",
+							"ui_summary": "两条固定链成立；第三类必须留在旧址。"
+						}
+					},
+					"perfect_requires_optional": false,
+					"preview_column_title": "本话收益 / 当前代价 / C02缺口",
+					"preview_metric_label": "总负载",
+					"preview_required_label": "固定链",
+					"prompt": "三类都是真实物件，也都占真实接口。选择前可反复预览；两个固定槽填满后才能提交，提交后不存在隐藏的第三槽。",
+					"required_slot_prefix": "固定",
+					"safe_risk": 4.0,
+					"score_band_labels": {
+						"clear": "固定未完成",
+						"fail": "尚未成案",
+						"perfect": "方案成立"
+					},
+					"show_optional_preview": false,
+					"show_slot_accepts": false,
+					"slot_column_title": "仅有的两条固定链",
+					"slots": [
+						{
+							"accepts": [
+								"cargo"
+							],
+							"id": "inner_chain_a",
+							"incompatible_text": "人员、消防接驳货物与未登记对象不能进入固定链。",
+							"label": "A链 / 内轨与外锁转接",
+							"required": true
+						},
+						{
+							"accepts": [
+								"cargo"
+							],
+							"id": "inner_chain_b",
+							"incompatible_text": "人员、消防接驳货物与未登记对象不能进入固定链。",
+							"label": "B链 / 配重与冷却接口",
+							"required": true
+						}
+					],
+					"template_id": "T_EXACT_TWO_VISIBLE_CARGO",
+					"title": "不是救谁，是带走哪一种明天",
+					"transaction_id": "C01E04:RT008_LOADOUT:LOCAL:V01",
+					"unassign_label": "从固定链撤回"
+				},
+				"activity_definition_path": "res://content/episodes/c01/e04/activity/c01_e04_exact_two_loadout.json",
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"c01e04_exact_two_loadout"
+				],
+				"capture_local_facts": true,
+				"commit_policy": "local_transition_only",
+				"completion_contract": "OUTCOME_C01E04_EXACT_TWO_LOADOUT_LOCAL_V01",
+				"failure_edges": [
+					"c01e04_exact_two_loadout"
+				],
+				"mode": "DESK",
+				"node_id": "c01e04_exact_two_loadout",
+				"scene_id": "SCN_C01E04_EXACT_TWO_LOADOUT",
+				"soft_fail_edges": [
+					"c01e04_exact_two_loadout"
+				],
+				"success_edges": [
+					"c01e04_public_corridor_appeal"
+				],
+				"title": "B1载荷固定台 / 精确二选三",
+				"transition": {
+					"accent": "f0b83f",
+					"cause": "零号旧路虽有效，却以跌跌设备化和单一管理员换速度；拒绝后常规固定窗口只够两类非人员载荷。",
+					"continuity": {
+						"action_refs": [
+							"C01E04_ZERO_SHORTCUT_REFUSED_LOCAL",
+							"C01E04_B1_INSPECTION_READY_LOCAL"
+						],
+						"responsibility_refs": [
+							"CH_JICUN",
+							"CH001",
+							"CH_TANGJIAO",
+							"CH_LUHENG"
+						],
+						"types": [
+							"action",
+							"responsibility"
+						]
+					},
+					"duration": 1.0,
+					"eyebrow": "零号桥接片已拔除 / 常规窗口",
+					"fade_seconds": 0.34,
+					"handoff": "玩家预览并提交三种精确组合之一；该Bundle随后只读进入战场，第三类在旧址公开留置。",
+					"kind": "pressure_escalation",
+					"location": "万机馆B1实体载荷台",
+					"time_label": "23:28",
+					"title": "三类都亮着灯，但只有两条固定链",
+					"transition_id": "C01E04-TR-04-EXACT-TWO-LOADOUT"
+				}
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"c01e04_public_corridor_appeal"
+				],
+				"capture_local_facts": true,
+				"commit_policy": "local_transition_only",
+				"completion_contract": "OUTCOME_C01E04_RT009_PUBLIC_CORRIDOR_LOCAL_V01",
+				"failure_edges": [
+					"c01e04_public_corridor_appeal"
+				],
+				"lines": [
+					{
+						"beat_id": "c01e04_appeal_01",
+						"source_kind": "radio",
+						"speaker": "城市值班",
+						"stage_action": "公开频道展开四类拆解清单，移动风险编号仍为红色",
+						"text": "登记结论没变。固定风险应当就地拆解。"
+					},
+					{
+						"beat_id": "c01e04_appeal_02",
+						"source_kind": "radio",
+						"speaker": "军方联络",
+						"stage_action": "六枚外锁锚在监控图上保持闭合",
+						"text": "外锁保留到明日六点。任何移动将视为风险源转移。"
+					},
+					{
+						"actor_id": "CH_QIHAI",
+						"beat_id": "c01e04_appeal_03",
+						"source_kind": "radio",
+						"speaker": "七海",
+						"stage_action": "她没有切掉两条反对意见，而是把它们并列在申诉页顶部",
+						"text": "两条都记。这不是无害申请。"
+					},
+					{
+						"actor_id": "CH_QIHAI",
+						"beat_id": "c01e04_appeal_04",
+						"source_kind": "radio",
+						"speaker": "七海",
+						"text": "纪存，你们到底要什么？"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e04_appeal_05",
+						"speaker": "纪存",
+						"stage_action": "站在四个受保护操作位中间，不碰零号侧廊已断开的授权座",
+						"text": "我们要开走。不带人，不走零号。"
+					},
+					{
+						"actor_id": "CH_QIHAI",
+						"beat_id": "c01e04_appeal_06",
+						"source_kind": "radio",
+						"speaker": "七海",
+						"stage_action": "申诉页面依次点亮人数与载荷栏",
+						"text": "四名登记操作员。撤离人员，零。非人载荷，两类。"
+					},
+					{
+						"beat_id": "c01e04_appeal_07",
+						"source_kind": "radio",
+						"speaker": "城市值班",
+						"text": "医院电网不接受途经。"
+					},
+					{
+						"actor_id": "CH_LUHENG",
+						"beat_id": "c01e04_appeal_08",
+						"source_kind": "radio",
+						"speaker": "陆衡",
+						"stage_action": "他把改算后的缺臂包络与东向路面宽度并到同一页",
+						"text": "东路能过。只能低速，而且得按这副缺臂轮廓算。"
+					},
+					{
+						"beat_id": "c01e04_appeal_09",
+						"source_kind": "radio",
+						"speaker": "军方联络",
+						"text": "追踪不撤。移动风险编号不撤。"
+					},
+					{
+						"actor_id": "CH_QIHAI",
+						"beat_id": "c01e04_appeal_10",
+						"source_kind": "radio",
+						"speaker": "七海",
+						"stage_action": "东行低速走廊盖在反对意见之上；医院网格和零号捷径都被红线划除",
+						"text": "不撤。我申请东行低速走廊，东锁延迟四十秒。"
+					},
+					{
+						"beat_id": "c01e04_appeal_11",
+						"source_kind": "radio",
+						"speaker": "城市值班",
+						"stage_action": "公开回执标注一个城市回合，通过后即重新闭合",
+						"text": "延迟一个城市回合。申诉人停职处理延长，通行后立即复核。"
+					},
+					{
+						"actor_id": "CH_QIHAI",
+						"beat_id": "c01e04_appeal_12",
+						"source_kind": "radio",
+						"speaker": "七海",
+						"stage_action": "她把已签名回执送入战场预置包，自己的视频框仍停在城外",
+						"text": "别让我在公开回放里看见你走西边。"
+					}
+				],
+				"mode": "NARRATIVE",
+				"node_id": "c01e04_public_corridor_appeal",
+				"outcome_facts": [
+					{
+						"id": "C01E04_PUBLIC_CORRIDOR_STATE_LOCAL",
+						"to": "PUBLIC_CORRIDOR_PENDING"
+					},
+					{
+						"id": "C01E04_PUBLIC_CORRIDOR_ROUTE_LOCAL",
+						"to": "EASTBOUND_LOW_SPEED_NO_HOSPITAL_NO_ZERO"
+					},
+					{
+						"id": "C01E04_PUBLIC_CORRIDOR_OPERATOR_COUNT_LOCAL",
+						"to": 4.0
+					},
+					{
+						"id": "C01E04_PUBLIC_CORRIDOR_EVACUEE_COUNT_LOCAL",
+						"to": 0.0
+					},
+					{
+						"id": "C01E04_PUBLIC_CORRIDOR_CARGO_CLASS_COUNT_LOCAL",
+						"to": 2.0
+					},
+					{
+						"id": "C01E04_PUBLIC_CORRIDOR_RISK_LOCAL",
+						"to": "MOBILE_RISK_RETAINED_WITH_MILITARY_TRACKING"
+					},
+					{
+						"id": "C01E04_QIHAI_DELAY_RECEIPT_LOCAL",
+						"to": "ONE_CITY_TURN_OR_40_SECONDS_WITH_REVIEW_AND_SUSPENSION_EXTENSION"
+					}
+				],
+				"player_summary": "公开频道核对了四名登记操作员、零名撤离人员与两类非人载荷。七海没有撤销风险，只提交不经医院网格、不用零号捷径的东行低速走廊；东锁延迟四十秒，她的停职与复核同时延长。",
+				"presentation": {
+					"background": "res://assets/backgrounds/story_first/bg_c01e01_archive_room_v01.png",
+					"cast": [
+						{
+							"accent": "58c8d9",
+							"actor_id": "CH_JICUN",
+							"display_name": "纪存 · B1操作位",
+							"portrait_path": "res://assets/portraits/portrait_jicun.png",
+							"side": "left"
+						},
+						{
+							"accent": "dca55b",
+							"actor_id": "CH_QIHAI",
+							"display_name": "七海 · 远程申诉人",
+							"portrait_path": "res://assets/portraits/portrait_qihai.png",
+							"side": "right"
+						}
+					],
+					"eyebrow": "城市联合应急频道 / 公开录制",
+					"portrait_visibility": "active_only",
+					"profile": "standard_adv",
+					"time_label": "23:29",
+					"title": "四十秒不是放行"
+				},
+				"scene_id": "SCN_C01E04_STORY_NARRATIVE",
+				"soft_fail_edges": [
+					"c01e04_public_corridor_appeal"
+				],
+				"success_edges": [
+					"c01e04_carrier_escape"
+				],
+				"title": "公开申诉 / 一条不声称无害的路",
+				"transaction_id": "C01E04:RT009:PUBLIC_CORRIDOR_LOCAL:V01",
+				"transition": {
+					"accent": "dca55b",
+					"cause": "零号旧路已物理断开，两类非人载荷已锁定；万机馆仍是注册移动风险，没有公开路径不得进入城市棋盘。",
+					"continuity": {
+						"action_refs": [
+							"C01E04_ZERO_SHORTCUT_REFUSED_LOCAL",
+							"WANJI_LOADOUT_BUNDLE_ID"
+						],
+						"responsibility_refs": [
+							"CH_QIHAI",
+							"CH_JICUN",
+							"CH_LUHENG"
+						],
+						"types": [
+							"action",
+							"responsibility"
+						]
+					},
+					"duration": 1.2,
+					"eyebrow": "载荷已锁定 / 公开频道",
+					"fade_seconds": 0.42,
+					"handoff": "七海仅以远程只读申诉人身份提交东行低速走廊；城市保留风险编号，军方保留追踪，东锁只延迟四十秒。",
+					"kind": "pressure_escalation",
+					"location": "万机馆B1操作位 / 城市联合应急频道",
+					"time_label": "23:29",
+					"title": "不申请它无害，只申请它从哪里过",
+					"transition_id": "C01E04-TR-05-PUBLIC-CORRIDOR-APPEAL"
+				}
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"battle_definition": {
+					"battle_clear_scope": "local_before_rt054",
+					"battle_id": "C01E04-CARRIER-ESCAPE-SIX-STAGE",
+					"canon_source": "DOC_C01E04_STORY_FIRST_CANON_MIGRATION_V1",
+					"failure_policy": "local_checkpoint_only_no_persistent_write",
+					"graybox_source": "C01E04-graybox-constants-v1.tsv",
+					"grid": {
+						"blocked": [
+							[
+								0.0,
+								0.0
+							],
+							[
+								1.0,
+								0.0
+							],
+							[
+								2.0,
+								0.0
+							],
+							[
+								3.0,
+								0.0
+							],
+							[
+								12.0,
+								0.0
+							],
+							[
+								13.0,
+								0.0
+							],
+							[
+								14.0,
+								0.0
+							],
+							[
+								15.0,
+								0.0
+							],
+							[
+								0.0,
+								5.0
+							],
+							[
+								15.0,
+								5.0
+							],
+							[
+								0.0,
+								6.0
+							],
+							[
+								15.0,
+								6.0
+							],
+							[
+								0.0,
+								11.0
+							],
+							[
+								1.0,
+								11.0
+							],
+							[
+								14.0,
+								11.0
+							],
+							[
+								15.0,
+								11.0
+							]
+						],
+						"height": 12.0,
+						"width": 16.0
+					},
+					"isometric_layout": {
+						"body_state_order": [
+							"FIXED_BUILDING",
+							"PREMOVED_ONE_SECTION",
+							"HALF_RISE",
+							"CRUISE_CARRIER_WITH_DAMAGE"
+						],
+						"camera_rule": "active_footprint_never_covered_by_status_sidebar",
+						"enabled": true,
+						"landmarks": {
+							"message_wall_chest_light": [
+								7.0,
+								5.0
+							],
+							"model_hospital_left_shoulder": [
+								9.0,
+								5.0
+							],
+							"real_machine_stage_external_lock_base": [
+								11.0,
+								7.0
+							]
+						},
+						"production_body_states": [
+							"FIXED_BUILDING",
+							"HALF_RISE",
+							"CRUISE_CARRIER_WITH_DAMAGE"
+						],
+						"projection": "diamond_45_degree",
+						"screen_origin": [
+							520.0,
+							154.0
+						],
+						"tile_size": [
+							64.0,
+							32.0
+						]
+					},
+					"machine_claim_cues": [
+						{
+							"cue_id": "CUE_C01E04_WANJI_BODY_CROSSES_EAST_GATE",
+							"unit_id": "wanji_body_control",
+							"visible_action": "万机馆先滑开L1甲片、展开B1肋架和锁泊臂，再按四个独立停止权一步步离开地基，以缺臂漏热的受损身体越过东门。"
+						}
+					],
+					"mid_events": [],
+					"objective_text": "解除六锚，精确保住三类非人载荷中的两类，让万机馆从固定建筑转入受损巡航；四名操作员、五个独立停机责任位、医院电网、城市管线和东门包络必须保持有效。",
+					"objectives": [
+						{
+							"cell": [
+								8.0,
+								7.0
+							],
+							"id": "carrier_body",
+							"integrity": 3.0,
+							"name": "万机馆移动底盘",
+							"required": true,
+							"scenario_role": "three_production_states_plus_one_transition"
+						},
+						{
+							"cell": [
+								3.0,
+								6.0
+							],
+							"id": "anchor_a",
+							"integrity": 1.0,
+							"name": "A锚 / 低位预载",
+							"required": true,
+							"scenario_role": "physical_anchor_preload"
+						},
+						{
+							"cell": [
+								5.0,
+								6.0
+							],
+							"id": "anchor_b",
+							"integrity": 1.0,
+							"name": "B锚 / 低位预载",
+							"required": true,
+							"scenario_role": "physical_anchor_preload"
+						},
+						{
+							"cell": [
+								7.0,
+								6.0
+							],
+							"id": "anchor_c",
+							"integrity": 1.0,
+							"name": "C锚 / 热卡扣",
+							"required": true,
+							"scenario_role": "physical_anchor_hot_latch"
+						},
+						{
+							"cell": [
+								7.0,
+								5.0
+							],
+							"id": "anchor_d",
+							"integrity": 1.0,
+							"name": "D锚 / 热卡扣",
+							"required": true,
+							"scenario_role": "physical_anchor_hot_latch"
+						},
+						{
+							"cell": [
+								6.0,
+								7.0
+							],
+							"id": "anchor_e",
+							"integrity": 1.0,
+							"name": "E锚 / 展轨固定座",
+							"required": true,
+							"scenario_role": "physical_anchor_exhibit_fixture"
+						},
+						{
+							"cell": [
+								4.0,
+								4.0
+							],
+							"id": "anchor_f",
+							"integrity": 1.0,
+							"name": "F锚 / 胸前负载",
+							"required": true,
+							"scenario_role": "physical_anchor_chest_load"
+						},
+						{
+							"cell": [
+								3.0,
+								8.0
+							],
+							"id": "life_support_equipment",
+							"integrity": 1.0,
+							"name": "生活维持设备轨",
+							"required": true,
+							"scenario_role": "loadout_life"
+						},
+						{
+							"cell": [
+								5.0,
+								8.0
+							],
+							"id": "unique_physical_collection",
+							"integrity": 1.0,
+							"name": "实体独有馆藏轨",
+							"required": true,
+							"scenario_role": "loadout_physical"
+						},
+						{
+							"cell": [
+								7.0,
+								8.0
+							],
+							"id": "archive_server",
+							"integrity": 1.0,
+							"name": "档案服务器冷却轨",
+							"required": true,
+							"scenario_role": "loadout_archive"
+						},
+						{
+							"cell": [
+								7.0,
+								5.0
+							],
+							"id": "message_wall_landmark",
+							"integrity": 1.0,
+							"name": "留言墙 / 胸部灯带",
+							"required": true,
+							"scenario_role": "body_landmark_chest"
+						},
+						{
+							"cell": [
+								9.0,
+								5.0
+							],
+							"id": "model_hospital_landmark",
+							"integrity": 1.0,
+							"name": "模型病院 / 左肩位",
+							"required": true,
+							"scenario_role": "body_landmark_shoulder"
+						},
+						{
+							"cell": [
+								11.0,
+								8.0
+							],
+							"id": "real_machine_stage_landmark",
+							"integrity": 1.0,
+							"name": "真机台 / 外锁基",
+							"required": true,
+							"scenario_role": "body_landmark_lock_base"
+						},
+						{
+							"cell": [
+								13.0,
+								7.0
+							],
+							"id": "right_lock_arm",
+							"integrity": 1.0,
+							"name": "右侧锁泊臂",
+							"required": true,
+							"scenario_role": "shadow_jam_then_player_clear"
+						},
+						{
+							"cell": [
+								2.0,
+								2.0
+							],
+							"id": "hospital_grid",
+							"integrity": 1.0,
+							"name": "医院电网禁入区",
+							"required": true,
+							"scenario_role": "critical_city_zone_zero_damage"
+						},
+						{
+							"cell": [
+								12.0,
+								9.0
+							],
+							"id": "east_pipe",
+							"integrity": 1.0,
+							"name": "东侧城市管线",
+							"required": true,
+							"scenario_role": "critical_pipe_zero_damage"
+						},
+						{
+							"cell": [
+								14.0,
+								6.0
+							],
+							"id": "city_gate",
+							"integrity": 1.0,
+							"name": "东门低速包络",
+							"required": true,
+							"scenario_role": "public_route_exit"
+						},
+						{
+							"cell": [
+								2.0,
+								10.0
+							],
+							"id": "old_site",
+							"integrity": 1.0,
+							"name": "旧馆址与未带走清单",
+							"required": false,
+							"scenario_role": "permanent_visible_loss"
+						},
+						{
+							"cell": [
+								1.0,
+								9.0
+							],
+							"id": "right_arm_bridge",
+							"integrity": 1.0,
+							"name": "馆守Z右臂旧址复合桥",
+							"required": false,
+							"scenario_role": "permanent_old_site_scar_no_cargo"
+						},
+						{
+							"cell": [
+								2.0,
+								7.0
+							],
+							"id": "zero_route_bridge",
+							"integrity": 1.0,
+							"name": "零号管理员桥接片",
+							"required": false,
+							"scenario_role": "physically_removed_before_battle"
+						}
+					],
+					"patch_catalog": {},
+					"presentation_manifest_path": "res://assets/battle_presentation/c01/story_first/manifest.json",
+					"runtime_contract_source": "C01E04-runtime-contract-v1.tsv",
+					"scenario_contract": {
+						"action_catalog": {
+							"AUTO_PREMOVE_BODY": {
+								"actor_id": "__system__",
+								"label": "馆体提前向东位移一节",
+								"message": "完整启动命令前，B1脊柱先向东错开一节。",
+								"order": 0.0,
+								"stage": 3.0
+							},
+							"CITY_DEPLOY_LEFT_ARM": {
+								"actor_id": "wanji_body_control",
+								"arm_target": "LEFT_DEPLOYED",
+								"label": "可选：展开左锁臂遮蔽",
+								"message": "左锁臂只在当前基座对应格展开；匹配侧主动标记被挡住。",
+								"order": 50.0,
+								"repeatable": true,
+								"stage": 5.0,
+								"targeting_mode": "arm_transition"
+							},
+							"CITY_DEPLOY_RIGHT_ARM": {
+								"actor_id": "wanji_body_control",
+								"arm_target": "RIGHT_DEPLOYED",
+								"label": "可选：展开右锁臂遮蔽",
+								"message": "右锁臂在东门前可展开一次；东门基座始终禁止右臂外伸。",
+								"order": 52.0,
+								"repeatable": true,
+								"stage": 5.0,
+								"targeting_mode": "arm_transition"
+							},
+							"CITY_MOVE_EAST_1": {
+								"actor_id": "wanji_body_control",
+								"body_target": "EAST_1",
+								"label": "馆体东移1/3：进入EAST_1",
+								"message": "固定馆体离开旧地基，第一段东行占格成立。",
+								"order": 10.0,
+								"stage": 5.0,
+								"targeting_mode": "body_transition"
+							},
+							"CITY_MOVE_EAST_2": {
+								"actor_id": "wanji_body_control",
+								"body_target": "EAST_2",
+								"label": "馆体东移2/3：进入EAST_2",
+								"message": "第二段东移避开北侧应急区与第一处地下管线。",
+								"order": 20.0,
+								"requires": [
+									"CITY_MOVE_EAST_1"
+								],
+								"stage": 5.0,
+								"targeting_mode": "body_transition"
+							},
+							"CITY_MOVE_EAST_GATE": {
+								"actor_id": "wanji_body_control",
+								"body_target": "EAST_GATE",
+								"label": "馆体东移3/3：抵达东门",
+								"message": "第三段占格落在七海公开申请的东门低速包络。",
+								"order": 30.0,
+								"requires": [
+									"CITY_MOVE_EAST_2"
+								],
+								"stage": 5.0,
+								"targeting_mode": "body_transition"
+							},
+							"CITY_RETRACT_LEFT_ARM": {
+								"actor_id": "wanji_body_control",
+								"arm_target": "BOTH_RETRACTED",
+								"label": "收回左锁臂继续移动",
+								"message": "左锁臂收回道路姿态，下一回合才能继续东移。",
+								"order": 51.0,
+								"repeatable": true,
+								"stage": 5.0,
+								"targeting_mode": "arm_transition"
+							},
+							"CITY_RETRACT_RIGHT_ARM": {
+								"actor_id": "wanji_body_control",
+								"arm_target": "BOTH_RETRACTED",
+								"label": "收回右锁臂继续移动",
+								"message": "右锁臂收回道路姿态，馆体恢复合法移动轮廓。",
+								"order": 53.0,
+								"repeatable": true,
+								"stage": 5.0,
+								"targeting_mode": "arm_transition"
+							},
+							"CITY_ROTATE_BACK": {
+								"actor_id": "wanji_body_control",
+								"body_target": "EAST_1",
+								"label": "可选：从转体姿态复位",
+								"message": "馆体复位到EAST_1，继续东行。",
+								"order": 41.0,
+								"repeatable": true,
+								"stage": 5.0,
+								"targeting_mode": "body_transition"
+							},
+							"CITY_ROTATE_OUT": {
+								"actor_id": "wanji_body_control",
+								"body_target": "EAST_1_ROT",
+								"label": "可选：在EAST_1转体",
+								"message": "半身转入唯一安全侧姿态；下一次只能转回。",
+								"order": 40.0,
+								"repeatable": true,
+								"requires": [
+									"CITY_MOVE_EAST_1"
+								],
+								"stage": 5.0,
+								"targeting_mode": "body_transition"
+							},
+							"CLAMP_A_BLOCK_MARKER": {
+								"actor_id": "anchor_fixture_a",
+								"label": "夹具A挡住标记线",
+								"message": "夹具只挡线，不替锚点Owner退销。",
+								"order": 90.0,
+								"repeatable": true,
+								"stage": 1.0,
+								"targeting_mode": "active_writer"
+							},
+							"CLAMP_A_HOLD_FINAL_F": {
+								"actor_id": "anchor_fixture_a",
+								"anchor_filter": "F",
+								"label": "夹具A保持已准备的F锚预载",
+								"message": "夹具A只保持馆守Z胸前的F预载，不替跌跌执行最终退销。",
+								"order": 42.0,
+								"requires": [
+									"DOUDENG_CONFIRM_HARD_STOP"
+								],
+								"stage": 1.0,
+								"targeting_mode": "prepared_anchor"
+							},
+							"CLAMP_A_HOLD_WRITER_P4": {
+								"actor_id": "anchor_fixture_a",
+								"label": "夹具A压住主动写入线",
+								"message": "夹具A把写入线压在空承台上，不替任何Owner作决定。",
+								"order": 70.0,
+								"repeatable": true,
+								"stage": 4.0,
+								"targeting_mode": "active_writer"
+							},
+							"CLAMP_A_HOLD_WRITER_P5": {
+								"actor_id": "anchor_fixture_a",
+								"label": "夹具A压住城市写入线",
+								"message": "夹具A卡住一段写入线，让它停在馆体外侧。",
+								"order": 70.0,
+								"repeatable": true,
+								"stage": 5.0,
+								"targeting_mode": "active_writer"
+							},
+							"CLAMP_B_ARM_BUFFER_P4": {
+								"actor_id": "anchor_fixture_b",
+								"branch": "PHYSICAL",
+								"label": "夹具B武装实体配重缓冲",
+								"message": "夹具B把实体馆藏配重压入受力槽；下一次关键冲击才会自动消耗缓冲。",
+								"order": 71.0,
+								"repeatable": true,
+								"resource": "physical_buffer",
+								"stage": 4.0
+							},
+							"CLAMP_B_ARM_BUFFER_P5": {
+								"actor_id": "anchor_fixture_b",
+								"branch": "PHYSICAL",
+								"label": "夹具B武装实体配重缓冲",
+								"message": "夹具B把仅剩的一次实体配重缓冲扣在城市段冲击方向。",
+								"order": 71.0,
+								"repeatable": true,
+								"resource": "physical_buffer",
+								"stage": 5.0
+							},
+							"CLAMP_B_BLOCK_MARKER": {
+								"actor_id": "anchor_fixture_b",
+								"label": "夹具B挡住标记线",
+								"message": "第二只夹具封住主动标记的直线落点。",
+								"order": 90.0,
+								"repeatable": true,
+								"stage": 1.0,
+								"targeting_mode": "active_writer"
+							},
+							"CLAMP_B_HOLD_FINAL_F": {
+								"actor_id": "anchor_fixture_b",
+								"anchor_filter": "F",
+								"label": "夹具B保持已准备的F锚预载",
+								"message": "夹具B将F锚预载保持在绿区，最终退销仍只属于跌跌。",
+								"order": 42.0,
+								"requires": [
+									"DOUDENG_CONFIRM_HARD_STOP"
+								],
+								"stage": 1.0,
+								"targeting_mode": "prepared_anchor"
+							},
+							"CORRIDOR_FOLD": {
+								"actor_id": "__system__",
+								"label": "锁泊臂同步收成道路姿态",
+								"message": "两侧锁泊臂在公开预览中同步收回；热量与档案冷却先结算，再建立城市检查点。",
+								"order": 0.0,
+								"stage": 5.0
+							},
+							"DEPLOY_BOTH_LOCK_ARMS": {
+								"actor_id": "wanji_body_control",
+								"body_target": "HALF_RISE",
+								"label": "馆体动作3/3：展开两侧锁泊臂",
+								"message": "外锁臂作为半身承重展开；右侧卡死已经由玩家排除。",
+								"order": 30.0,
+								"requires": [
+									"OPEN_B1_RIBS"
+								],
+								"stage": 4.0,
+								"targeting_mode": "body_transition"
+							},
+							"DIEDIE_BRACE_ACTIVE_MARKER": {
+								"actor_id": "diedie",
+								"label": "支住本回合主动标记",
+								"message": "跌跌把主动标记引向相邻非关键格，本回合写入为零。",
+								"order": 90.0,
+								"repeatable": true,
+								"stage": 1.0,
+								"targeting_mode": "active_writer"
+							},
+							"DIEDIE_BRACE_WRITER_P4": {
+								"actor_id": "diedie",
+								"label": "跌跌复位支住主动标记",
+								"message": "跌跌用上一轮失败振动找平，让主动落点滑到非关键格。",
+								"order": 70.0,
+								"repeatable": true,
+								"stage": 4.0,
+								"targeting_mode": "active_writer"
+							},
+							"DIEDIE_RELEASE_A": {
+								"actor_id": "diedie",
+								"label": "释放A锚低位预载",
+								"message": "跌跌贴住A锚底部，等预载曲线归零才退销。",
+								"order": 10.0,
+								"position_prompt": "先让跌跌走到A锚低位槽。",
+								"required_cells": [
+									[
+										3.0,
+										6.0
+									]
+								],
+								"stage": 1.0
+							},
+							"DIEDIE_RELEASE_B": {
+								"actor_id": "diedie",
+								"label": "释放B锚低位预载",
+								"message": "B锚机械销退到底；跌跌仍保留下一回合行动。",
+								"order": 20.0,
+								"position_prompt": "先让跌跌走到B锚低位槽。",
+								"required_cells": [
+									[
+										5.0,
+										6.0
+									]
+								],
+								"requires": [
+									"DIEDIE_RELEASE_A"
+								],
+								"stage": 1.0
+							},
+							"DIEDIE_RELEASE_F": {
+								"actor_id": "diedie",
+								"label": "释放F锚最终预载",
+								"message": "夹具保持没有越权；跌跌完成最后一枚退销，馆守Z仍保持单臂承重。",
+								"order": 50.0,
+								"position_prompt": "F锚必须先由夹具保持，再由跌跌在胸前承重点完成最终退销。",
+								"required_cells": [
+									[
+										4.0,
+										4.0
+									]
+								],
+								"requires": [
+									"DOUDENG_CONFIRM_HARD_STOP",
+									"FINAL_F_CLAMP_HOLDING"
+								],
+								"stage": 1.0
+							},
+							"DIEDIE_RESEAT_WRITER_P5": {
+								"actor_id": "diedie",
+								"label": "跌跌重找平城市落点",
+								"message": "跌跌沿车体失败振动重新找平，让主动标记离开关键承压格。",
+								"order": 70.0,
+								"repeatable": true,
+								"stage": 5.0,
+								"targeting_mode": "active_writer"
+							},
+							"DIEDIE_ROUTE_CARGO_A": {
+								"actor_id": "diedie",
+								"cargo_slot": 0.0,
+								"label": "第一类载荷：内轨→固定台→安全舱",
+								"message": "第一类载荷完成三段物理回执。",
+								"order": 10.0,
+								"stage": 2.0,
+								"targeting_mode": "cargo_traverse"
+							},
+							"DIEDIE_TRACE_JAM": {
+								"actor_id": "diedie",
+								"label": "沿失败振动追到锁根",
+								"message": "跌跌找到第二枚偏斜卡扣，没有靠近黑展柜。",
+								"order": 30.0,
+								"position_prompt": "让跌跌走到右锁根的振动读点。",
+								"required_cells": [
+									[
+										11.0,
+										7.0
+									]
+								],
+								"requires": [
+									"SHADOW_JAM_RIGHT_LOCK"
+								],
+								"stage": 3.0
+							},
+							"DOG_ARCHIVE_COOL_P4": {
+								"actor_id": "machine_dog",
+								"branch": "ARCHIVE",
+								"label": "消耗档案分支：冷却余量 +2",
+								"message": "机器犬为服务器冷却回补两格余量。",
+								"order": 81.0,
+								"repeatable": true,
+								"resource": "archive_phase_cool",
+								"stage": 4.0
+							},
+							"DOG_ARCHIVE_COOL_P5": {
+								"actor_id": "machine_dog",
+								"branch": "ARCHIVE",
+								"label": "消耗档案分支：冷却余量 +2",
+								"message": "机器犬为城市段档案冷却回补两格余量。",
+								"order": 81.0,
+								"repeatable": true,
+								"resource": "archive_phase_cool",
+								"stage": 5.0
+							},
+							"DOG_CLEAR_RIGHT_LOCK": {
+								"actor_id": "machine_dog",
+								"label": "冷却并清理右锁卡扣",
+								"message": "冷却软管和固定夹具共同把右锁臂拉出黑框受力线。",
+								"order": 40.0,
+								"position_prompt": "机器犬必须抵达右锁泊臂卡扣。",
+								"required_cells": [
+									[
+										12.0,
+										7.0
+									]
+								],
+								"requires": [
+									"DIEDIE_TRACE_JAM"
+								],
+								"stage": 3.0
+							},
+							"DOG_COOL_RELEASE_C": {
+								"actor_id": "machine_dog",
+								"label": "冷却并释放C锚热卡扣",
+								"message": "冷却软管压住C锚热峰，Owner释放回执转绿。",
+								"order": 10.0,
+								"position_prompt": "机器犬必须靠近C锚热卡扣。",
+								"required_cells": [
+									[
+										7.0,
+										6.0
+									]
+								],
+								"stage": 1.0
+							},
+							"DOG_COOL_RELEASE_D": {
+								"actor_id": "machine_dog",
+								"label": "冷却并释放D锚热卡扣",
+								"message": "D锚降到可触温度，第二枚热卡扣退开。",
+								"order": 20.0,
+								"position_prompt": "机器犬必须靠近D锚热卡扣。",
+								"required_cells": [
+									[
+										7.0,
+										5.0
+									]
+								],
+								"requires": [
+									"DOG_COOL_RELEASE_C"
+								],
+								"stage": 1.0
+							},
+							"DOG_DECOY_ACTIVE_MARKER": {
+								"actor_id": "machine_dog",
+								"label": "诱导本回合主动标记",
+								"message": "机器犬拖动反光软管，主动无人机改写到无效落点。",
+								"order": 90.0,
+								"repeatable": true,
+								"stage": 1.0,
+								"targeting_mode": "active_writer"
+							},
+							"DOG_DECOY_WRITER_P4": {
+								"actor_id": "machine_dog",
+								"label": "机器犬诱导主动标记",
+								"message": "机器犬拖着反光软管穿过空格，主动标记跟错了目标。",
+								"order": 70.0,
+								"repeatable": true,
+								"stage": 4.0,
+								"targeting_mode": "active_writer"
+							},
+							"DOG_DECOY_WRITER_P5": {
+								"actor_id": "machine_dog",
+								"label": "机器犬诱导城市主动标记",
+								"message": "机器犬把软管反光拖向旧址，主动标记被带离城市设施。",
+								"order": 70.0,
+								"repeatable": true,
+								"stage": 5.0,
+								"targeting_mode": "active_writer"
+							},
+							"DOG_FINAL_COOL": {
+								"actor_id": "machine_dog",
+								"label": "机器犬守住最后冷却区段",
+								"message": "机器犬把软管从车辙前拖开，商业风道旧伤仍在，但热量没有越过八格红线。",
+								"order": 40.0,
+								"requires": [
+									"TANGJIAO_COUNTERWEIGHT"
+								],
+								"stage": 6.0
+							},
+							"DOG_LIFE_GLOBAL_COOL_P4": {
+								"actor_id": "machine_dog",
+								"branch": "LIFE",
+								"label": "消耗生活分支：全区冷却 -3热",
+								"message": "机器犬接通生活循环支路，馆体热量下降三格。",
+								"order": 80.0,
+								"repeatable": true,
+								"resource": "life_global_cool",
+								"stage": 4.0
+							},
+							"DOG_LIFE_GLOBAL_COOL_P5": {
+								"actor_id": "machine_dog",
+								"branch": "LIFE",
+								"label": "消耗生活分支：全区冷却 -3热",
+								"message": "生活循环支路为城市段释放最后一次全区冷却。",
+								"order": 80.0,
+								"repeatable": true,
+								"resource": "life_global_cool",
+								"stage": 5.0
+							},
+							"DOG_ROUTE_CARGO_B": {
+								"actor_id": "machine_dog",
+								"cargo_slot": 1.0,
+								"label": "第二类载荷：内轨→固定台→安全舱",
+								"message": "第二类载荷避开共享轨，独立进入另一侧安全舱。",
+								"order": 20.0,
+								"requires": [
+									"DIEDIE_ROUTE_CARGO_A"
+								],
+								"stage": 2.0,
+								"targeting_mode": "cargo_traverse"
+							},
+							"DOUDENG_CONFIRM_HARD_STOP": {
+								"actor_id": "doudeng_post",
+								"label": "测试单臂承重硬停",
+								"message": "兜灯让馆守Z和B1供能确实断开一拍，F锚负载才转绿。",
+								"order": 40.0,
+								"requires": [
+									"GUARDIAN_PROACTIVE_LEFT_SUPPORT"
+								],
+								"stage": 1.0
+							},
+							"DOUDENG_FINAL_HARD_STOP": {
+								"actor_id": "doudeng_post",
+								"label": "兜灯确认最终硬停可执行",
+								"message": "兜灯再次按下硬停，馆守Z和B1供能同时响应；她随后亲手复位，不由系统代按。",
+								"order": 50.0,
+								"requires": [
+									"DOG_FINAL_COOL"
+								],
+								"stage": 6.0
+							},
+							"DOUDENG_HARD_STOP_P4": {
+								"actor_id": "doudeng_post",
+								"label": "把B1硬停保持在绿位",
+								"message": "兜灯亲手压下硬停测试，绿灯亮起后仍由她握着复位权。",
+								"order": 73.0,
+								"repeatable": true,
+								"stage": 4.0
+							},
+							"DOUDENG_HARD_STOP_P5": {
+								"actor_id": "doudeng_post",
+								"label": "保持城市段B1硬停绿位",
+								"message": "兜灯让馆守Z与B1供能同断一拍，确认这一步仍能被人停下。",
+								"order": 74.0,
+								"repeatable": true,
+								"stage": 5.0
+							},
+							"DOUDENG_HARD_STOP_SHADOW": {
+								"actor_id": "doudeng_post",
+								"label": "确认锁泊扩张硬停",
+								"message": "兜灯切断外锁追加供能，停止权没有交给黑框。",
+								"order": 60.0,
+								"requires": [
+									"LUHENG_SIGN_REVISED_ENVELOPE"
+								],
+								"stage": 3.0
+							},
+							"DOUDENG_TEST_STOP": {
+								"actor_id": "doudeng_post",
+								"label": "半身态执行一次硬停",
+								"message": "兜灯在最高受力点按下硬停，确认半身仍可停。",
+								"order": 90.0,
+								"requires": [
+									"DEPLOY_BOTH_LOCK_ARMS"
+								],
+								"stage": 4.0
+							},
+							"FINALIZE_CRUISE": {
+								"actor_id": "jicun_post",
+								"label": "进入受损低速巡航",
+								"message": "移动脊柱接管重量。万机馆带着缺臂、漏热和留置清单越过东门；Battle Clear只产生本话本地结果。",
+								"order": 80.0,
+								"requires": [
+									"JICUN_CONFIRM_EAST_GATE"
+								],
+								"stage": 6.0
+							},
+							"FINAL_F_CLAMP_HOLDING": {
+								"actor_id": "__system__",
+								"label": "F锚夹具保持回执",
+								"message": "一只固定夹具正在保持已准备的F预载。",
+								"order": 43.0,
+								"stage": 1.0
+							},
+							"GUARDIAN_PROACTIVE_LEFT_SUPPORT": {
+								"actor_id": "guardian_z",
+								"label": "馆守Z主动露出左肩承重点",
+								"message": "没有启动口令。馆守Z先送出左肩，然后停在兜灯的硬停范围内。",
+								"order": 30.0,
+								"requires": [
+									"DIEDIE_RELEASE_A",
+									"DIEDIE_RELEASE_B",
+									"DOG_COOL_RELEASE_C",
+									"DOG_COOL_RELEASE_D",
+									"TANGJIAO_UNLOCK_E"
+								],
+								"stage": 1.0,
+								"target_markers": [
+									{
+										"cell": [
+											4.0,
+											4.0
+										],
+										"label": "F锚胸前承重点",
+										"resolution": "commit"
+									}
+								],
+								"targeting_mode": "single_marker"
+							},
+							"GUARDIAN_SCREEN_WRITER_P4": {
+								"actor_id": "guardian_z",
+								"label": "馆守Z左臂遮蔽主动标记",
+								"message": "单臂屏蔽截断本回合主动写入，但右肩缺口仍保持可见。",
+								"order": 82.0,
+								"repeatable": true,
+								"stage": 4.0,
+								"targeting_mode": "active_writer"
+							},
+							"GUARDIAN_SCREEN_WRITER_P5": {
+								"actor_id": "guardian_z",
+								"label": "馆守Z左臂护住城市供能线",
+								"message": "左臂屏蔽把主动标记留在馆体外侧。",
+								"order": 82.0,
+								"repeatable": true,
+								"stage": 5.0,
+								"targeting_mode": "active_writer"
+							},
+							"JICUN_ACCEPT_ANCHOR_CHECK": {
+								"actor_id": "jicun_post",
+								"label": "接受六锚本地检查",
+								"message": "纪存只接受六锚释放，不把下一步预先算作成功。",
+								"order": 70.0,
+								"requires": [
+									"OLD_GUARDIAN_VERIFY_SIX"
+								],
+								"stage": 1.0
+							},
+							"JICUN_CONFIRM_EAST_GATE": {
+								"actor_id": "jicun_post",
+								"label": "纪存确认东门与零疏散载荷",
+								"message": "纪存读回东门净空、四名操作员、五个Owner和零疏散载荷，西侧捷径保持未使用。",
+								"order": 70.0,
+								"requires": [
+									"OLD_GUARDIAN_CONFIRM_OWNER_SET"
+								],
+								"stage": 6.0
+							},
+							"JICUN_CONFIRM_NO_EMPEROR_CONTROL": {
+								"actor_id": "jicun_post",
+								"label": "登记局部影像、无控制关系",
+								"message": "纪存只记录卡锁已排与无控制源，不给那只眼睛补上主人。",
+								"order": 80.0,
+								"requires": [
+									"TANGJIAO_CONFIRM_FIXTURE"
+								],
+								"stage": 3.0
+							},
+							"JICUN_MEMORY_POWER_ORDER": {
+								"actor_id": "jicun_post",
+								"label": "辨认低可信灯光供电动作",
+								"message": "反灼只留下“灯可以离开原址”的动作感，没有给出路线答案。",
+								"order": 10.0,
+								"requires": [
+									"AUTO_PREMOVE_BODY"
+								],
+								"stage": 3.0,
+								"target_markers": [
+									{
+										"cell": [
+											7.0,
+											5.0
+										],
+										"label": "留言墙移动供电",
+										"resolution": "commit"
+									}
+								],
+								"targeting_mode": "single_marker"
+							},
+							"JICUN_PREVIEW_BODY_LOAD_P1": {
+								"actor_id": "jicun_post",
+								"label": "预览下一段馆体承重",
+								"message": "纪存把下一段承重格留在公屏上，没有把预览写成命令。",
+								"order": 5.0,
+								"repeatable": true,
+								"stage": 1.0
+							},
+							"JICUN_PREVIEW_BODY_P4": {
+								"actor_id": "jicun_post",
+								"label": "公开下一次馆体占格",
+								"message": "纪存只把下一步进入与离开格公开；本回合仍可不用这条路线。",
+								"order": 72.0,
+								"repeatable": true,
+								"stage": 4.0
+							},
+							"JICUN_PREVIEW_BODY_P5": {
+								"actor_id": "jicun_post",
+								"label": "公开下一段东行占格",
+								"message": "纪存把下一段进入、离开和压塌格全部公开；预览没有替任何岗位确认。",
+								"order": 72.0,
+								"repeatable": true,
+								"stage": 5.0
+							},
+							"JICUN_RECORD_UNCARRIED": {
+								"actor_id": "jicun_post",
+								"label": "记录两项具体未带走物",
+								"message": "两项物件、柜号和旧址位置进入公开清单，灯保持亮着。",
+								"order": 30.0,
+								"requires": [
+									"DOG_ROUTE_CARGO_B"
+								],
+								"stage": 2.0,
+								"targeting_mode": "uncarried_record"
+							},
+							"JICUN_UNDO_BODY_ACTION_P5": {
+								"actor_id": "jicun_post",
+								"label": "撤回本回合馆体动作",
+								"message": "纪存撤回刚确认的馆体动作；Mask、热量、冷却和锁臂恢复到确认前，下一条路线仍须重新选择。",
+								"order": 73.0,
+								"repeatable": true,
+								"resource": "body_undo",
+								"stage": 5.0
+							},
+							"LUHENG_RECALC_WRITER_P4": {
+								"actor_id": "luheng_post",
+								"label": "按当前伤形复算关键落点",
+								"message": "陆衡划掉上一轮包络，主动写入从关键冲击降为当前可承受落点。",
+								"order": 75.0,
+								"repeatable": true,
+								"stage": 4.0
+							},
+							"LUHENG_REVEAL_TRUE_LANDING_P1": {
+								"actor_id": "luheng_post",
+								"label": "复核主动标记真实落点",
+								"message": "陆衡把中继线压暗，只留下本回合真正会落下的那一格。",
+								"order": 5.0,
+								"repeatable": true,
+								"stage": 1.0
+							},
+							"LUHENG_SIGN_REVISED_ENVELOPE": {
+								"actor_id": "luheng_post",
+								"label": "公开划掉旧模型并签修订包络",
+								"message": "陆衡把第一版固定建筑箭头作废，只签当前不对称移动包络。",
+								"order": 50.0,
+								"requires": [
+									"DOG_CLEAR_RIGHT_LOCK"
+								],
+								"stage": 3.0
+							},
+							"LUHENG_SLOW_SAFE_MOVE_P5": {
+								"actor_id": "luheng_post",
+								"label": "复算本回合低速安全包络",
+								"message": "陆衡按当前伤形重算速度，主动关键冲击被降为可承受写入。",
+								"order": 76.0,
+								"repeatable": true,
+								"stage": 5.0
+							},
+							"LUHENG_VERIFY_CITY_ENVELOPE": {
+								"actor_id": "luheng_post",
+								"label": "陆衡复核医院电网与管线包络",
+								"message": "陆衡逐项读回医院电网、东侧管线和东门净空，只签当前速度与当前受损轮廓。",
+								"order": 20.0,
+								"requires": [
+									"QIHAI_PUBLIC_DELAY_RECEIPT"
+								],
+								"stage": 6.0
+							},
+							"OLD_GUARDIAN_ASSERT_LOADOUT": {
+								"actor_id": "old_guardian_post",
+								"label": "核对两类安全、一类留置",
+								"message": "两类载荷在不同安全舱；第三类仍在旧址亮灯，人员与消防货物不在枚举。",
+								"order": 50.0,
+								"requires": [
+									"TANGJIAO_DECOUPLE_UNCARRIED"
+								],
+								"stage": 2.0
+							},
+							"OLD_GUARDIAN_CONFIRM_OPERATOR_TRACKERS_P3": {
+								"actor_id": "old_guardian_post",
+								"label": "逐一确认四枚岗位定位器与独立停止权",
+								"message": "旧守护者按纪存、兜灯、唐胶、陆衡逐一回读：四枚定位器都在各自保护框内，四条停止权仍彼此独立。",
+								"order": 90.0,
+								"requires": [
+									"JICUN_CONFIRM_NO_EMPEROR_CONTROL"
+								],
+								"stage": 3.0
+							},
+							"OLD_GUARDIAN_CONFIRM_OWNER_SET": {
+								"actor_id": "old_guardian_post",
+								"label": "旧守护者核对五个Owner",
+								"message": "旧守护者按岗位播报纪存、兜灯、唐胶、陆衡和自己；四枚定位器都在保护框内，七海只在远程回执上。",
+								"order": 60.0,
+								"requires": [
+									"DOUDENG_FINAL_HARD_STOP"
+								],
+								"stage": 6.0
+							},
+							"OLD_GUARDIAN_DISPATCH_P1": {
+								"actor_id": "old_guardian_post",
+								"label": "调度一台未行动小机 +1移动",
+								"message": "旧守护者只调度一台尚未行动的小机；其余路线保持原样。",
+								"order": 5.0,
+								"repeatable": true,
+								"stage": 1.0,
+								"targeting_mode": "dispatch_unit"
+							},
+							"OLD_GUARDIAN_DISPATCH_P4": {
+								"actor_id": "old_guardian_post",
+								"label": "调度一台未行动小机 +1移动",
+								"message": "旧守护者为一台未行动小机腾出一段导览轨，其余小机不跟着移动。",
+								"order": 76.0,
+								"repeatable": true,
+								"stage": 4.0,
+								"targeting_mode": "dispatch_unit"
+							},
+							"OLD_GUARDIAN_DISPATCH_P5": {
+								"actor_id": "old_guardian_post",
+								"label": "调度一台未行动小机 +1移动",
+								"message": "旧守护者只为一台小机开放一段城市导览轨。",
+								"order": 77.0,
+								"repeatable": true,
+								"stage": 5.0,
+								"targeting_mode": "dispatch_unit"
+							},
+							"OLD_GUARDIAN_VERIFY_SIX": {
+								"actor_id": "old_guardian_post",
+								"label": "逐点复诵六锚回执",
+								"message": "旧守护者按A到F复诵：机械销离位，城市地基仍在，停止权可用。",
+								"order": 60.0,
+								"requires": [
+									"DIEDIE_RELEASE_F"
+								],
+								"stage": 1.0
+							},
+							"OPEN_B1_RIBS": {
+								"actor_id": "wanji_body_control",
+								"body_target": "HALF_RISE_RIBS",
+								"label": "馆体动作2/3：打开B1肋架",
+								"message": "B1脊柱两侧展开，烧损风道与移动骨架同时露出。",
+								"order": 20.0,
+								"requires": [
+									"SLIDE_L1_ARMOR"
+								],
+								"stage": 4.0,
+								"targeting_mode": "body_transition"
+							},
+							"QIHAI_PUBLIC_DELAY_RECEIPT": {
+								"actor_id": "qihai_remote_post",
+								"label": "读取七海的东锁公开延迟回执",
+								"message": "远程值守席公开写入四十秒：四名登记操作员、零疏散载荷、精确两类货载、东行低速；停职延长同时生效。",
+								"order": 10.0,
+								"stage": 6.0
+							},
+							"SHADOW_JAM_RIGHT_LOCK": {
+								"actor_id": "__system__",
+								"label": "皇影黑框卡住右锁泊臂",
+								"message": "无光眼睁开，黑框咬住右锁臂；旧拘束只阻止继续扩张。",
+								"order": 20.0,
+								"requires": [
+									"JICUN_MEMORY_POWER_ORDER"
+								],
+								"stage": 3.0
+							},
+							"SLIDE_L1_ARMOR": {
+								"actor_id": "wanji_body_control",
+								"body_target": "HALF_RISE_ARMOR",
+								"label": "馆体动作1/3：滑开L1展陈甲片",
+								"message": "留言墙与模型病院所在展层沿旧轨滑开，下一圈占格公开。",
+								"order": 10.0,
+								"stage": 4.0,
+								"targeting_mode": "body_transition"
+							},
+							"TANGJIAO_CONFIRM_FIXTURE": {
+								"actor_id": "tangjiao_post",
+								"label": "复核两类固定座仍在安全位",
+								"message": "唐胶逐项复核携带位与留置位，没有用乐观口令替代机械扣。",
+								"order": 70.0,
+								"requires": [
+									"DOUDENG_HARD_STOP_SHADOW"
+								],
+								"stage": 3.0
+							},
+							"TANGJIAO_COUNTERWEIGHT": {
+								"actor_id": "tangjiao_post",
+								"label": "唐胶锁死最后一组配重",
+								"message": "唐胶把最后一组固定带压进机械扣，留置清单与两个携带位的编号仍能一一对上。",
+								"order": 30.0,
+								"requires": [
+									"LUHENG_VERIFY_CITY_ENVELOPE"
+								],
+								"stage": 6.0
+							},
+							"TANGJIAO_DECOUPLE_UNCARRIED": {
+								"actor_id": "tangjiao_post",
+								"label": "非破坏解耦未携带类",
+								"message": "唐胶释放移动侧固定与供能，没有再切断一段永久结构。",
+								"order": 40.0,
+								"requires": [
+									"JICUN_RECORD_UNCARRIED"
+								],
+								"stage": 2.0,
+								"target_markers": [
+									{
+										"cell": [
+											12.0,
+											8.0
+										],
+										"label": "旧址留置固定座",
+										"resolution": "commit"
+									}
+								],
+								"targeting_mode": "single_marker"
+							},
+							"TANGJIAO_RESEAT_P4": {
+								"actor_id": "tangjiao_post",
+								"label": "重置本回合载荷固定座",
+								"message": "唐胶逐扣重压携带位；固定座绿灯不代表下一步已经获准。",
+								"order": 74.0,
+								"repeatable": true,
+								"stage": 4.0
+							},
+							"TANGJIAO_RESEAT_P5": {
+								"actor_id": "tangjiao_post",
+								"label": "重置城市段载荷固定座",
+								"message": "唐胶重新压紧两类载荷，留置类仍在旧址清单中，没有被悄悄补回。",
+								"order": 75.0,
+								"repeatable": true,
+								"stage": 5.0
+							},
+							"TANGJIAO_UNLOCK_E": {
+								"actor_id": "tangjiao_post",
+								"label": "解除E锚上的展轨固定座",
+								"message": "唐胶确认后来加装的展轨座不再把E锚压回地基。",
+								"order": 10.0,
+								"stage": 1.0,
+								"target_markers": [
+									{
+										"cell": [
+											6.0,
+											7.0
+										],
+										"label": "E锚展轨固定座",
+										"resolution": "commit"
+									}
+								],
+								"targeting_mode": "single_marker"
+							}
+						},
+						"body_states": [
+							"FIXED_BUILDING",
+							"PREMOVED_ONE_SECTION",
+							"HALF_RISE",
+							"CRUISE_CARRIER_WITH_DAMAGE"
+						],
+						"evacuee_payload_count": 0.0,
+						"hard_nonclaims": [
+							"NO_HIDDEN_OR_RESPAWNED_PEOPLE",
+							"NO_PEOPLE_IN_LOADOUT_ENUM",
+							"NO_THREE_OF_THREE_LOADOUT",
+							"NO_QIHAI_ONBOARD_OR_WRITE_AUTHORITY",
+							"NO_GUARDIAN_RIGHT_ARM_RECOVERY_OR_E04_FLYING_FIST",
+							"NO_EMPEROR_CONTROL_OR_FREE_CORRECTION",
+							"NO_PERSISTENT_WRITE_BEFORE_RT054",
+							"NO_AUTOMATIC_ONE_CUTSCENE_TRANSFORMATION"
+						],
+						"loadout_combinations": [
+							"LIFE_PHYSICAL",
+							"LIFE_ARCHIVE",
+							"PHYSICAL_ARCHIVE"
+						],
+						"loadout_staging_cells": {
+							"anchor_fixture_a": [
+								4.0,
+								10.0
+							],
+							"anchor_fixture_b": [
+								10.0,
+								10.0
+							],
+							"diedie": [
+								2.0,
+								9.0
+							],
+							"machine_dog": [
+								12.0,
+								9.0
+							]
+						},
+						"local_checkpoints": [
+							"ANCHOR_LOCAL",
+							"LOADOUT_LOCAL",
+							"HALF_RISE_LOCAL",
+							"CITY_LOCAL"
+						],
+						"owner_set": [
+							"JICUN",
+							"DOUDENG",
+							"TANGJIAO",
+							"LUHENG",
+							"OLD_GUARDIAN"
+						],
+						"people_cargo": "FORBIDDEN",
+						"production_body_states": [
+							"FIXED_BUILDING",
+							"HALF_RISE",
+							"CRUISE_CARRIER_WITH_DAMAGE"
+						],
+						"registered_operator_crew": [
+							"JICUN",
+							"DOUDENG",
+							"TANGJIAO",
+							"LUHENG"
+						],
+						"source_grid": "16x12_single_isometric_city_carrier_map",
+						"stage_requirements": {
+							"1": {
+								"one_of": [],
+								"required": [
+									"DIEDIE_RELEASE_A",
+									"DIEDIE_RELEASE_B",
+									"DOG_COOL_RELEASE_C",
+									"DOG_COOL_RELEASE_D",
+									"TANGJIAO_UNLOCK_E",
+									"GUARDIAN_PROACTIVE_LEFT_SUPPORT",
+									"DOUDENG_CONFIRM_HARD_STOP",
+									"FINAL_F_CLAMP_HOLDING",
+									"DIEDIE_RELEASE_F",
+									"OLD_GUARDIAN_VERIFY_SIX",
+									"JICUN_ACCEPT_ANCHOR_CHECK"
+								]
+							},
+							"2": {
+								"one_of": [],
+								"required": [
+									"DIEDIE_ROUTE_CARGO_A",
+									"DOG_ROUTE_CARGO_B",
+									"JICUN_RECORD_UNCARRIED",
+									"TANGJIAO_DECOUPLE_UNCARRIED",
+									"OLD_GUARDIAN_ASSERT_LOADOUT"
+								]
+							},
+							"3": {
+								"one_of": [],
+								"required": [
+									"AUTO_PREMOVE_BODY",
+									"JICUN_MEMORY_POWER_ORDER",
+									"SHADOW_JAM_RIGHT_LOCK",
+									"DIEDIE_TRACE_JAM",
+									"DOG_CLEAR_RIGHT_LOCK",
+									"LUHENG_SIGN_REVISED_ENVELOPE",
+									"DOUDENG_HARD_STOP_SHADOW",
+									"TANGJIAO_CONFIRM_FIXTURE",
+									"JICUN_CONFIRM_NO_EMPEROR_CONTROL",
+									"OLD_GUARDIAN_CONFIRM_OPERATOR_TRACKERS_P3"
+								]
+							},
+							"4": {
+								"one_of": [],
+								"required": [
+									"SLIDE_L1_ARMOR",
+									"OPEN_B1_RIBS",
+									"DEPLOY_BOTH_LOCK_ARMS",
+									"DOUDENG_TEST_STOP"
+								]
+							},
+							"5": {
+								"one_of": [],
+								"required": [
+									"CORRIDOR_FOLD",
+									"CITY_MOVE_EAST_1",
+									"CITY_MOVE_EAST_2",
+									"CITY_MOVE_EAST_GATE"
+								]
+							},
+							"6": {
+								"one_of": [],
+								"required": [
+									"QIHAI_PUBLIC_DELAY_RECEIPT",
+									"LUHENG_VERIFY_CITY_ENVELOPE",
+									"TANGJIAO_COUNTERWEIGHT",
+									"DOG_FINAL_COOL",
+									"DOUDENG_FINAL_HARD_STOP",
+									"OLD_GUARDIAN_CONFIRM_OWNER_SET",
+									"JICUN_CONFIRM_EAST_GATE",
+									"FINALIZE_CRUISE"
+								]
+							}
+						}
+					},
+					"scenario_driver": "c01e04_carrier_escape_v1",
+					"stable_object_bindings": [
+						{
+							"binding_id": "BIND_C01E04_SIX_ANCHORS_TO_RELEASE_CHAIN",
+							"label": "六条穿过移动脊柱的真实力线",
+							"stable_object_id": "OBJ_C01E04_SIX_EXTERNAL_ANCHORS",
+							"targets": [
+								{
+									"kind": "unit",
+									"target_id": "wanji_body_control"
+								},
+								{
+									"kind": "battle_flag",
+									"target_id": "JICUN_ACCEPT_ANCHOR_CHECK"
+								}
+							]
+						},
+						{
+							"binding_id": "BIND_C01E04_SINGLE_ARM_COUPLER_TO_GUARDIAN_SUPPORT",
+							"label": "只承认左肩的单臂胸前接驳座",
+							"stable_object_id": "OBJ_C01E04_SINGLE_ARM_CHEST_COUPLER",
+							"targets": [
+								{
+									"kind": "unit",
+									"target_id": "guardian_z"
+								},
+								{
+									"kind": "battle_flag",
+									"target_id": "GUARDIAN_PROACTIVE_LEFT_SUPPORT"
+								},
+								{
+									"kind": "battle_flag",
+									"target_id": "DOUDENG_CONFIRM_HARD_STOP"
+								}
+							]
+						},
+						{
+							"binding_id": "BIND_C01E04_THREE_RAILS_TO_EXACT_TWO_LOADOUT",
+							"label": "三类真实载荷与两条固定链",
+							"stable_object_id": "OBJ_C01E04_THREE_LOADOUT_RAILS",
+							"targets": [
+								{
+									"kind": "battle_flag",
+									"target_id": "OLD_GUARDIAN_ASSERT_LOADOUT"
+								},
+								{
+									"kind": "battle_flag",
+									"target_id": "JICUN_RECORD_UNCARRIED"
+								}
+							]
+						}
+					],
+					"start_prompt": "三架风险标记无人机已经公开六锚目标。先用地图行动体做真实释放，再由对应岗位核对。",
+					"status": "candidate_runtime_graybox",
+					"title": "万机馆站起来 / 六阶段城市撤收战",
+					"turn_limit": 16.0,
+					"units": [
+						{
+							"canon_entity_id": "V353U038",
+							"cell": [
+								2.0,
+								9.0
+							],
+							"hp": 1.0,
+							"id": "diedie",
+							"map_token": "跌",
+							"move": 4.0,
+							"name": "跌跌 / 低位锚点与失败振动",
+							"no_hp_ui": true,
+							"scenario_role": "map_actor_anchor_vibration",
+							"team": "player",
+							"weapons": []
+						},
+						{
+							"canon_entity_id": "V353U040",
+							"cell": [
+								11.0,
+								8.0
+							],
+							"hp": 1.0,
+							"id": "machine_dog",
+							"map_token": "犬",
+							"move": 5.0,
+							"name": "机器犬 / 冷却与锁臂排障",
+							"no_hp_ui": true,
+							"scenario_role": "map_actor_cooling_lock_clear",
+							"team": "player",
+							"weapons": []
+						},
+						{
+							"cell": [
+								4.0,
+								9.0
+							],
+							"hp": 1.0,
+							"id": "anchor_fixture_a",
+							"map_token": "夹A",
+							"move": 2.0,
+							"name": "固定夹具A / 锚线遮蔽",
+							"no_hp_ui": true,
+							"scenario_role": "map_actor_fixture_no_owner_substitute",
+							"team": "player",
+							"weapons": []
+						},
+						{
+							"cell": [
+								9.0,
+								9.0
+							],
+							"hp": 1.0,
+							"id": "anchor_fixture_b",
+							"map_token": "夹B",
+							"move": 2.0,
+							"name": "固定夹具B / 载荷配重",
+							"no_hp_ui": true,
+							"scenario_role": "map_actor_fixture_no_owner_substitute",
+							"team": "player",
+							"weapons": []
+						},
+						{
+							"canon_entity_id": "V353U001",
+							"cell": [
+								4.0,
+								2.0
+							],
+							"hp": 1.0,
+							"id": "guardian_z",
+							"map_token": "Z",
+							"move": 0.0,
+							"name": "馆守Z / 永久单臂胸前承重",
+							"no_hp_ui": true,
+							"scenario_role": "single_arm_proactive_support_with_hard_stop",
+							"team": "player",
+							"weapons": []
+						},
+						{
+							"canon_entity_id": "MECHA_WANJI_MOBILE_CHASSIS",
+							"cell": [
+								6.0,
+								5.0
+							],
+							"hp": 1.0,
+							"id": "wanji_body_control",
+							"map_token": "馆",
+							"move": 0.0,
+							"name": "万机馆本体 / 共享巨型动作",
+							"no_hp_ui": true,
+							"scenario_role": "carrier_body_action_handle",
+							"team": "player",
+							"weapons": []
+						},
+						{
+							"canon_entity_id": "CH_JICUN",
+							"cell": [
+								4.0,
+								4.0
+							],
+							"hp": 1.0,
+							"id": "jicun_post",
+							"map_token": "纪",
+							"move": 0.0,
+							"name": "纪存 / 西侧路由与东门确认",
+							"no_hp_ui": true,
+							"scenario_role": "protected_operator_post_not_cargo",
+							"team": "player",
+							"weapons": []
+						},
+						{
+							"canon_entity_id": "CH001",
+							"cell": [
+								6.0,
+								4.0
+							],
+							"hp": 1.0,
+							"id": "doudeng_post",
+							"map_token": "兜",
+							"move": 0.0,
+							"name": "兜灯 / 馆守Z与B1供电硬停",
+							"no_hp_ui": true,
+							"scenario_role": "protected_operator_post_hard_stop_owner",
+							"team": "player",
+							"weapons": []
+						},
+						{
+							"canon_entity_id": "CH_TANGJIAO",
+							"cell": [
+								8.0,
+								4.0
+							],
+							"hp": 1.0,
+							"id": "tangjiao_post",
+							"map_token": "唐",
+							"move": 0.0,
+							"name": "唐胶 / 载荷固定与留置清单",
+							"no_hp_ui": true,
+							"scenario_role": "protected_operator_post_cargo_owner",
+							"team": "player",
+							"weapons": []
+						},
+						{
+							"canon_entity_id": "CH_LUHENG",
+							"cell": [
+								10.0,
+								4.0
+							],
+							"hp": 1.0,
+							"id": "luheng_post",
+							"map_token": "陆",
+							"move": 0.0,
+							"name": "陆衡 / 当前移动包络签字",
+							"no_hp_ui": true,
+							"scenario_role": "protected_operator_post_engineering_owner",
+							"team": "player",
+							"weapons": []
+						},
+						{
+							"canon_entity_id": "CH002",
+							"cell": [
+								12.0,
+								4.0
+							],
+							"hp": 1.0,
+							"id": "old_guardian_post",
+							"map_token": "导",
+							"move": 0.0,
+							"name": "旧守护者 / 调度与独立停止",
+							"no_hp_ui": true,
+							"scenario_role": "nonhuman_owner_dispatch_and_stop",
+							"team": "player",
+							"weapons": []
+						},
+						{
+							"canon_entity_id": "CH_QIHAI",
+							"cell": [
+								15.0,
+								1.0
+							],
+							"hp": 1.0,
+							"id": "qihai_remote_post",
+							"map_token": "讯",
+							"move": 0.0,
+							"name": "七海 / 远程只读申诉席（不在舰）",
+							"no_hp_ui": true,
+							"scenario_role": "remote_receipt_not_local_owner_not_onboard",
+							"team": "player",
+							"weapons": []
+						},
+						{
+							"cell": [
+								12.0,
+								7.0
+							],
+							"hp": 1.0,
+							"id": "right_lock_sensor",
+							"map_token": "锁",
+							"move": 0.0,
+							"name": "右锁泊臂监视点",
+							"no_hp_ui": true,
+							"scenario_role": "public_shadow_jam_observer",
+							"team": "object",
+							"weapons": []
+						},
+						{
+							"cell": [
+								12.0,
+								2.0
+							],
+							"hp": 1.0,
+							"id": "drone_d1",
+							"intent_target_id": "anchor_a",
+							"intent_verb": "标记",
+							"map_token": "D1",
+							"move": 4.0,
+							"name": "风险标记无人机D1",
+							"no_hp_ui": true,
+							"scenario_role": "public_intent_firelock_writer",
+							"team": "enemy",
+							"weapons": []
+						},
+						{
+							"cell": [
+								14.0,
+								9.0
+							],
+							"hp": 1.0,
+							"id": "drone_d2",
+							"intent_target_id": "anchor_c",
+							"intent_verb": "中继",
+							"map_token": "D2",
+							"move": 4.0,
+							"name": "风险标记无人机D2",
+							"no_hp_ui": true,
+							"scenario_role": "public_intent_firelock_writer",
+							"team": "enemy",
+							"weapons": []
+						},
+						{
+							"cell": [
+								10.0,
+								10.0
+							],
+							"hp": 1.0,
+							"id": "drone_d3",
+							"intent_target_id": "anchor_e",
+							"intent_verb": "中继",
+							"map_token": "D3",
+							"move": 4.0,
+							"name": "风险标记无人机D3",
+							"no_hp_ui": true,
+							"scenario_role": "public_intent_firelock_writer",
+							"team": "enemy",
+							"weapons": []
+						},
+						{
+							"canon_entity_id": "MECHA_BLACK_SHOWCASE_EMPEROR_SHADOW",
+							"cell": [
+								11.0,
+								7.0
+							],
+							"hp": 0.0,
+							"id": "emperor_shadow",
+							"map_token": "影",
+							"move": 0.0,
+							"name": "皇影 / 黑展柜局部影像",
+							"no_hp_ui": true,
+							"scenario_role": "first_visible_restrained_no_control",
+							"team": "object",
+							"weapons": []
+						}
+					],
+					"variant_id": "story_first_exact_two_of_three_v1",
+					"withdraw_allowed": false
+				},
+				"battle_definition_path": "res://content/episodes/c01/e04/battle/c01_e04_carrier_escape_6p.json",
+				"cancel_edges": [
+					"c01e04_carrier_escape"
+				],
+				"capture_local_facts": true,
+				"commit_policy": "local_transition_only",
+				"commitment_anchors": [
+					{
+						"anchor_id": "C01E04_ENACT_EXACT_TWO_LOADOUT",
+						"source_action_id": "OLD_GUARDIAN_ASSERT_LOADOUT",
+						"visible_action": "战斗只搬运Desk已经提交的两类载荷，并让第三类持续在旧址亮灯。"
+					},
+					{
+						"anchor_id": "C01E04_ENACT_DISTRIBUTED_STOP_RIGHTS",
+						"source_action_id": "DOUDENG_FINAL_HARD_STOP",
+						"visible_action": "每段馆体动作都必须重新经过四名操作员的独立停止权，零号单一管理员捷径保持断开。"
+					}
+				],
+				"completion_contract": "OUTCOME_C01E04_RT008_RT047_LOCAL_CLEAR_V01",
+				"failure_edges": [
+					"c01e04_carrier_escape"
+				],
+				"mode": "TACTICAL",
+				"node_id": "c01e04_carrier_escape",
+				"result_transaction_id": "C01E04:RT008_RT047:BATTLE_LOCAL_CLEAR:V01",
+				"scene_id": "SCN_C01E04_CARRIER_ESCAPE",
+				"skip_result_fact": true,
+				"soft_fail_edges": [
+					"c01e04_aftercare"
+				],
+				"success_edges": [
+					"c01e04_aftercare"
+				],
+				"title": "六阶段城市撤收战 / 万机馆站起来",
+				"transition": {
+					"accent": "f0b83f",
+					"cause": "六锚、火锁回写、已选载荷、城市应急区和永久单臂承重必须在同一张公开意图图上依次解决。",
+					"continuity": {
+						"action_refs": [
+							"C01E04_ZERO_SHORTCUT_REFUSED_LOCAL"
+						],
+						"responsibility_refs": [
+							"CH_JICUN",
+							"CH001",
+							"CH_TANGJIAO",
+							"CH_LUHENG",
+							"CH002"
+						],
+						"types": [
+							"action",
+							"responsibility"
+						]
+					},
+					"duration": 1.45,
+					"eyebrow": "16×12斜45度城市棋盘",
+					"fade_seconds": 0.5,
+					"handoff": "四个本地检查点覆盖六锚、载荷固定、半身与城市走廊；战斗只消费并复核战前Bundle，不提供第二次选择。",
+					"kind": "scale_shift",
+					"location": "B1移动脊柱 / 万机馆旧址至东门走廊",
+					"time_label": "23:31",
+					"title": "玩家控制的不是一台机体，而是一座会改写棋盘的受伤博物馆",
+					"transition_id": "C01E04-TR-03-SIX-STAGE-CARRIER"
+				}
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"c01e04_aftercare"
+				],
+				"commit_policy": "local_transition_only",
+				"completion_contract": "OUTCOME_C01E04_RT048_RT053_LOCAL_V01",
+				"failure_edges": [
+					"c01e04_aftercare"
+				],
+				"lines": [
+					{
+						"beat_id": "c01e04_after_01",
+						"speaker": "旁白",
+						"stage_action": "万机馆越过东门后保持最低巡航速度；封锁线与旧馆门牌逐渐落到后方",
+						"text": "没有胜利镜头立刻切走。缺臂的馆守Z仍压在胸前承重点，机器犬的冷却软管还在车辙边抖。"
+					},
+					{
+						"actor_id": "CH_LUHENG",
+						"beat_id": "c01e04_after_02",
+						"speaker": "陆衡",
+						"stage_action": "在工程回执上框住速度、倾角与当前热量",
+						"text": "我签的是这段、这个速度、这副缺臂轮廓。明天换工况，重新算。"
+					},
+					{
+						"actor_id": "CH_TANGJIAO",
+						"beat_id": "c01e04_after_03",
+						"speaker": "唐胶",
+						"stage_action": "把第三类留置物的柜号与旧址照片逐项对上",
+						"text": "别写‘其余留馆’。这一格有名字，这一格有修复日期。"
+					},
+					{
+						"actor_id": "CH001",
+						"beat_id": "c01e04_after_04",
+						"speaker": "兜灯",
+						"stage_action": "听完馆守Z右肩封口与左肩受力回声",
+						"text": "右边还是空的。硬停能用。今晚先到这。"
+					},
+					{
+						"beat_id": "c01e04_after_05",
+						"source_kind": "broadcast",
+						"speaker": "旧守护者",
+						"text": "四名登记操作员定位正常。五个Owner回执齐全。本馆未登记步行服务，请勿追赶。"
+					},
+					{
+						"beat_id": "c01e04_after_06",
+						"speaker": "旁白",
+						"stage_action": "封锁线外二十九名观众在广播后才开始跟着笑；消防队长把点名板翻到背面",
+						"text": "笑声很短。旧址的右臂桥、地基、门牌和第三类载荷没有因此消失。"
+					},
+					{
+						"actor_id": "CH_QIHAI",
+						"beat_id": "c01e04_after_07",
+						"source_kind": "radio",
+						"speaker": "七海",
+						"stage_action": "远程回执同时显示东锁延迟40秒与停职延长",
+						"text": "东门记录闭合。风险编号保留，军方追踪权保留，我的审查也保留。"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e04_after_08",
+						"speaker": "纪存",
+						"stage_action": "把路线回放停在东行走廊，没有打开西侧捷径层",
+						"text": "我们走的是你提交的那条。"
+					},
+					{
+						"actor_id": "CH_QIHAI",
+						"beat_id": "c01e04_after_09",
+						"speaker": "七海",
+						"stage_action": "看一眼桌边冷掉的晚餐纸袋，把下一通来电按成静音",
+						"text": "我看见了。先查你们还剩多少小时。"
+					},
+					{
+						"beat_id": "c01e04_after_10",
+						"speaker": "旁白",
+						"stage_action": "B1生活循环、旧制转接与燃料兼容三栏同时转黄",
+						"text": "最长的一栏停在三十六小时。巡展航图只亮起一个仍能处理旧规格的地点：木桶旧件市。"
+					}
+				],
+				"mode": "NARRATIVE",
+				"node_id": "c01e04_aftercare",
+				"outcome_facts": [
+					{
+						"id": "C01E04_AFTERCARE_COMPLETE_LOCAL",
+						"to": true
+					},
+					{
+						"id": "C01E04_PUBLIC_UNCARRIED_LIST_VISIBLE_LOCAL",
+						"to": true
+					},
+					{
+						"id": "C01E04_FIRST_STABLE_CRUISE_SEGMENT_LOCAL",
+						"to": true
+					}
+				],
+				"player_summary": "万机馆走完第一个稳定区段。陆衡只签当前包络；唐胶把第三类载荷逐件留档；兜灯确认馆守Z的永久单臂承重与硬停；七海的四十秒公开回执与停职延长同时生效。",
+				"presentation": {
+					"background": "res://assets/backgrounds/story_first/bg_c01e01_front_hall_closing_v01.png",
+					"cast": [
+						{
+							"accent": "58c8d9",
+							"actor_id": "CH_JICUN",
+							"display_name": "纪存",
+							"portrait_path": "res://assets/portraits/portrait_jicun.png",
+							"side": "left"
+						},
+						{
+							"accent": "dca55b",
+							"actor_id": "CH_QIHAI",
+							"display_name": "七海 · 远程只读回执",
+							"portrait_path": "res://assets/portraits/portrait_qihai.png",
+							"side": "right"
+						},
+						{
+							"accent": "65bda7",
+							"actor_id": "CH001",
+							"display_name": "兜灯",
+							"portrait_path": "res://assets/portraits/portrait_doudeng.png",
+							"side": "right"
+						}
+					],
+					"eyebrow": "东门外 / 第一个稳定区段",
+					"portrait_visibility": "active_only",
+					"profile": "standard_adv",
+					"time_label": "23:49",
+					"title": "旧址仍亮着一盏灯"
+				},
+				"scene_id": "SCN_C01E04_STORY_NARRATIVE",
+				"soft_fail_edges": [
+					"c01e04_rt054_atomic_snapshot"
+				],
+				"success_edges": [
+					"c01e04_rt054_atomic_snapshot"
+				],
+				"title": "战后安置 / 旧址仍亮着一盏灯",
+				"transaction_id": "C01E04:RT048_RT053:LOCAL:V01",
+				"transition": {
+					"accent": "65bda7",
+					"cause": "万机馆以受损巡航态越过封存圈；馆守Z、四操作员、五Owner与城市关键区均保持有效。",
+					"continuity": {
+						"action_refs": [
+							"C01E04_RT008_RT047_LOCAL_CLEAR"
+						],
+						"responsibility_refs": [
+							"CH_LUHENG",
+							"CH_TANGJIAO",
+							"CH001",
+							"CH_QIHAI"
+						],
+						"types": [
+							"action",
+							"responsibility"
+						]
+					},
+					"duration": 1.3,
+					"eyebrow": "Battle Clear / RT054尚未提交",
+					"fade_seconds": 0.46,
+					"handoff": "陆衡、唐胶、兜灯、七海分别完成包络、留置、单臂支援和公开回执的战后责任确认。",
+					"kind": "settlement",
+					"location": "东门外低速稳定区 / 万机馆旧址",
+					"time_label": "23:49",
+					"title": "先让巨构走完第一个稳定区段，再点清没能带走的东西",
+					"transition_id": "C01E04-TR-04-AFTERCARE"
+				}
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [],
+				"completion_contract": "OUTCOME_C01E04_RT054_ATOMIC_SNAPSHOT_V01",
+				"failure_edges": [],
+				"lines": [
+					{
+						"beat_id": "c01e04_rt054_01",
+						"speaker": "旁白",
+						"stage_action": "导航图上的旧馆名熄灭；WBM001风险编号留在右上角",
+						"text": "旧址没有跟来。右臂复合桥和第三类留置物仍在城市那头，一盏档案室灯隔着越来越远的街区亮着。"
+					},
+					{
+						"beat_id": "c01e04_rt054_02",
+						"source_kind": "broadcast",
+						"speaker": "旧守护者",
+						"text": "今日闭馆。明日九点开馆。临时展厅地址更新中。"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e04_rt054_03",
+						"speaker": "纪存",
+						"stage_action": "右腕灼红沿胸口旧供电顺序亮了一瞬；他把动作记下，没有补写来源",
+						"text": "灯能离开原址。路线还不知道。"
+					},
+					{
+						"beat_id": "c01e04_rt054_04",
+						"speaker": "旁白",
+						"stage_action": "远星接收窗只闪过OPEN、CLOSE、OPEN三个错序字样，随即恢复噪声",
+						"text": "没有人来得及把那半帧当成回答。"
+					},
+					{
+						"beat_id": "c01e04_rt054_05",
+						"source_kind": "system",
+						"speaker": "航图",
+						"text": "生命循环与旧制转接兼容窗口：35:59:59。下一可达维护点：木桶旧件市。"
+					}
+				],
+				"merge_episode_local_facts": true,
+				"mode": "NARRATIVE",
+				"node_id": "c01e04_rt054_atomic_snapshot",
+				"outcome_payload": {
+					"authority_changes": [
+						{
+							"authority_id": "AUTH_ZERO_SHORTCUT_ADMIN_BRIDGE",
+							"state": "physically_removed_route_closed"
+						},
+						{
+							"authority_id": "AUTH_DISTRIBUTED_HARD_STOPS",
+							"state": "restored_and_verified"
+						},
+						{
+							"authority_id": "AUTH_QIHAI_SYSTEM_WRITE",
+							"state": "disabled_remote_appeal_only"
+						},
+						{
+							"authority_id": "AUTH_WANJI_EAST_CORRIDOR",
+							"state": "public_40_second_window_consumed"
+						}
+					],
+					"entity_changes": [
+						{
+							"condition": "cruise_carrier_with_damage",
+							"entity_id": "WBM001",
+							"site": "lost",
+							"temporary_open": true
+						},
+						{
+							"condition": "chest_bearing_single_arm",
+							"e04_flying_fist": false,
+							"entity_id": "V353U001",
+							"right_arm": "old_site_composite_bridge"
+						},
+						{
+							"condition": "owner_dispatched_map_actor",
+							"entity_id": "V353U038",
+							"zero_route_equipment_reclassification": "restored"
+						},
+						{
+							"condition": "first_visible_restrained_no_control",
+							"entity_id": "MECHA_BLACK_SHOWCASE_EMPEROR_SHADOW",
+							"right_lock_jam": "cleared_by_player"
+						},
+						{
+							"condition": "onboard_protected_operator",
+							"engineering_scope": "current_verified_envelope_only",
+							"entity_id": "CH_LUHENG"
+						},
+						{
+							"condition": "remote_read_only_appeal_submitter",
+							"entity_id": "CH_QIHAI",
+							"onboard": false,
+							"suspension": "extended"
+						}
+					],
+					"facts": [
+						{
+							"id": "WANJI_SITE_LOST",
+							"to": true
+						},
+						{
+							"id": "JICUN_BURN_01",
+							"to": "ACQUIRED_RIGHT_WRIST_TO_CHEST"
+						},
+						{
+							"id": "WBM001_ACTIVE",
+							"to": "CRUISE_CARRIER_WITH_DAMAGE"
+						},
+						{
+							"id": "JICUN_MEMORY_FRAGMENT_01",
+							"to": "LIGHTS_CAN_LEAVE_SITE_LOW_CONFIDENCE"
+						},
+						{
+							"id": "CURATOR_OLD_ROUTE_SHADOW",
+							"to": "CONFLICTING_INSTRUCTIONS_AND_ADMIN_BIND_VISIBLE"
+						},
+						{
+							"id": "ZERO_SHORTCUT_REFUSED",
+							"to": true
+						},
+						{
+							"id": "ZERO_SHORTCUT_SLOW_HULL_FIELD",
+							"to": "BLANK_NOT_ZERO"
+						},
+						{
+							"id": "ZERO_SHORTCUT_CURRENT_HARM",
+							"to": "DIEDIE_RECLASSIFIED_AND_DISTRIBUTED_STOP_GRAYED_THEN_RESTORED"
+						},
+						{
+							"id": "ROUTE_MODEL_STREET_SURVIVAL_LOCK",
+							"to": "36_HOURS"
+						},
+						{
+							"id": "WANJI_LOADOUT_EXACT_TWO_OF_THREE",
+							"to": true
+						},
+						{
+							"id": "PEOPLE_CARGO",
+							"to": "FORBIDDEN"
+						},
+						{
+							"id": "WBM001_MOBILE_RISK_ID",
+							"to": "ACTIVE"
+						},
+						{
+							"id": "QIHAI_FIRELOCK_DELAY_RECORD",
+							"to": "PUBLIC_40_SECONDS_WITH_REVIEW_AND_SUSPENSION_EXTENSION"
+						},
+						{
+							"id": "E04_REGISTERED_OPERATOR_CREW",
+							"to": "JICUN+DOUDENG+TANGJIAO+LUHENG"
+						},
+						{
+							"id": "E04_OPERATOR_CREW_COUNT",
+							"to": "4_ONBOARD_PROTECTED_POSTS"
+						},
+						{
+							"id": "E04_OWNER_CHECKS",
+							"to": "JICUN+DOUDENG+TANGJIAO+LUHENG+OLD_GUARDIAN:5_GREEN"
+						},
+						{
+							"id": "E04_EVACUEE_PAYLOAD_COUNT",
+							"to": 0.0
+						},
+						{
+							"id": "B1_MOVING_SPINE_PREVIOUS",
+							"to": "PHYSICALLY_LOCKED_BY_MILITARY"
+						},
+						{
+							"id": "B1_MOVING_SPINE",
+							"to": "RELEASED_LOW_SPEED_CRUISE_AFTER_SIX_ANCHORS"
+						},
+						{
+							"id": "GZ_BASIC_RESIDENT",
+							"to": "CHEST_BEARING_SINGLE_ARM"
+						},
+						{
+							"id": "BLACK_SHOWCASE_SHADOW",
+							"to": "FIRST_VISIBLE_RESTRAINED_NO_CONTROL"
+						},
+						{
+							"id": "BLACK_SHOWCASE_RIGHT_LOCK_JAM",
+							"to": "CLEARED_BY_PLAYER_WITHOUT_EMPEROR_CONTROL"
+						},
+						{
+							"id": "TEMPORARY_OPEN_STATUS",
+							"to": "ACTIVE"
+						}
+					],
+					"player_summary": "万机馆失去旧址，以受损巡航态临时开馆；纪存、兜灯、唐胶、陆衡四名必要操作员与旧守护者五Owner在位，零疏散载荷。三类非人载荷精确保二，第三类公开留置；馆守Z永久单臂，皇影右锁臂卡死已由玩家排除。三十六小时航图锁定木桶旧件市。",
+					"promises_and_debts": [
+						{
+							"cause": "wanji_departure",
+							"debt_id": "DEBT_C01E04_OLD_SITE",
+							"owner": "CH_JICUN",
+							"state": "open_permanent_loss"
+						},
+						{
+							"cause": "legacy_life_support_adapter_and_fuel_compatibility",
+							"debt_id": "DEBT_C01E04_SURVIVAL_WINDOW",
+							"owner": "WBM001",
+							"state": "open_36_hours"
+						},
+						{
+							"cause": "e03_right_arm_bridge_and_e04_chest_bearing",
+							"debt_id": "DEBT_C01E04_GUARDIAN_SINGLE_ARM",
+							"owner": "V353U001",
+							"state": "open_permanent_scar"
+						},
+						{
+							"cause": "public_firelock_delay_appeal",
+							"debt_id": "DEBT_C01E04_QIHAI_REVIEW",
+							"owner": "CH_QIHAI",
+							"state": "open_suspension_extended"
+						},
+						{
+							"cause": "exact_two_of_three",
+							"debt_id": "DEBT_C01E04_UNCARRIED_CLASS",
+							"owner": "CH_TANGJIAO",
+							"state": "open_resolved_from_bundle"
+						}
+					],
+					"relationship_edges": [
+						{
+							"change": "he_follows_the_route_she_can_defend_and_she_keeps_the_risk_record",
+							"edge_id": "REL_JICUN_QIHAI_C01E04",
+							"from": "CH_JICUN",
+							"state": "public_route_kept_without_private_shortcut",
+							"to": "CH_QIHAI"
+						},
+						{
+							"change": "guardian_offers_left_shoulder_then_waits_for_her_stop",
+							"edge_id": "REL_DOUDENG_GZ_C01E04",
+							"from": "CH001",
+							"state": "proactive_support_with_executable_hard_stop",
+							"to": "V353U001"
+						},
+						{
+							"change": "mystery_gesture_never_overrides_failure_data",
+							"edge_id": "REL_JICUN_LUHENG_C01E04",
+							"from": "CH_JICUN",
+							"state": "shared_tested_envelope",
+							"to": "CH_LUHENG"
+						}
+					],
+					"resolution": "success",
+					"transaction_id": "C01E04:RT054:ATOMIC_SNAPSHOT:V01",
+					"world_object_changes": [
+						{
+							"known_state": "site_lost_right_arm_bridge_and_uncarried_class_visible",
+							"object_id": "OBJ_C01E04_OLD_SITE"
+						},
+						{
+							"known_state": "released_low_speed_cruise_after_six_anchors",
+							"object_id": "OBJ_C01E04_B1_MOVING_SPINE",
+							"previous_state": "physically_locked_by_military"
+						},
+						{
+							"known_state": "resolved_from_wanji_loadout_bundle_id_and_publicly_listed",
+							"object_id": "OBJ_C01E04_PUBLIC_UNCARRIED_CLASS"
+						},
+						{
+							"known_state": "intact_zero_damage",
+							"object_id": "OBJ_C01E04_HOSPITAL_GRID"
+						},
+						{
+							"known_state": "intact_zero_damage",
+							"object_id": "OBJ_C01E04_EAST_CITY_PIPE"
+						}
+					]
+				},
+				"presentation": {
+					"background": "res://assets/backgrounds/story_first/bg_c01e01_archive_room_v01.png",
+					"cast": [
+						{
+							"accent": "58c8d9",
+							"actor_id": "CH_JICUN",
+							"display_name": "纪存",
+							"portrait_path": "res://assets/portraits/portrait_jicun.png",
+							"side": "left"
+						},
+						{
+							"accent": "dca55b",
+							"actor_id": "CH_QIHAI",
+							"display_name": "七海 · 远程",
+							"portrait_path": "res://assets/portraits/portrait_qihai.png",
+							"side": "right"
+						}
+					],
+					"eyebrow": "WBM001 / 受损巡航态",
+					"portrait_visibility": "active_only",
+					"profile": "standard_adv",
+					"time_label": "23:52",
+					"title": "临时开馆中"
+				},
+				"required_episode_local_fact_ids": [
+					"WANJI_LOADOUT_BUNDLE_ID",
+					"LIFE_SUPPORT_EQUIPMENT",
+					"UNIQUE_PHYSICAL_COLLECTION",
+					"ARCHIVE_SERVER",
+					"ARCHIVE_PRIORITY_COLD_BACKUP"
+				],
+				"scene_id": "SCN_C01E04_STORY_NARRATIVE",
+				"soft_fail_edges": [],
+				"success_edges": [],
+				"terminal": true,
+				"title": "RT054 / 临时开馆中",
+				"transaction_id": "C01E04:RT054:ATOMIC_SNAPSHOT:V01",
+				"transition": {
+					"accent": "58c8d9",
+					"cause": "余波、公开留置清单、四操作员保护框、五Owner与三十六小时航图均已确认。",
+					"continuity": {
+						"action_refs": [
+							"C01E04_AFTERCARE_COMPLETE_LOCAL"
+						],
+						"responsibility_refs": [
+							"CH_JICUN",
+							"CH001",
+							"CH_TANGJIAO",
+							"CH_LUHENG",
+							"CH002",
+							"CH_QIHAI"
+						],
+						"types": [
+							"action",
+							"responsibility"
+						]
+					},
+					"duration": 1.15,
+					"eyebrow": "第一个稳定巡航区段",
+					"fade_seconds": 0.42,
+					"handoff": "RT054一次提交固定结果与战术节点暂存的五个精确Bundle事实，作为C02唯一入口。",
+					"kind": "aftermath",
+					"location": "WBM001受损巡航态 / 木桶旧件市航路",
+					"time_label": "23:52",
+					"title": "旧馆门熄灭，临时开馆状态仍然亮着",
+					"transition_id": "C01E04-TR-05-RT054"
+				}
+			}
+		],
+		"start_node_id": "c01e04_regulated_reentry",
+		"status": "candidate_runtime_production"
+	},
+	"manifest": {
+		"activity_definitions": [
+			"res://content/episodes/c01/e04/activity/c01_e04_exact_two_loadout.json"
+		],
+		"battle": "res://content/episodes/c01/e04/battle/c01_e04_carrier_escape_6p.json",
+		"bundle_output": "res://content/generated/episodes/c01/e04/story_first.bundle.json",
+		"canon_level": "accepted_story_candidate_runtime_production",
+		"claims": [
+			"eight_node_story_first_episode_graph_from_rt035_to_rt054",
+			"playable_b1_three_of_five_engineering_inspection",
+			"pre_tactical_exact_two_loadout_constraint_with_three_distinct_previews",
+			"six_stage_16x12_isometric_carrier_escape_scenario",
+			"exact_three_two_of_three_loadout_combinations",
+			"four_local_checkpoint_no_persistent_write_semantics",
+			"four_registered_operator_posts_and_five_owner_checks",
+			"zero_route_effective_then_current_harm_restored",
+			"playable_zero_route_core_retrieval_hard_stop_and_bridge_removal",
+			"public_corridor_hearing_required_before_tactical_start",
+			"single_arm_guardian_support_and_player_cleared_emperor_lock_jam",
+			"rt054_merges_five_local_loadout_facts_into_one_atomic_handoff",
+			"chapter_c01_candidate_runner_reaches_rt054_without_cross_episode_reset"
+		],
+		"episode_id": "C01E04-STORY-FIRST-CANDIDATE",
+		"experience_contract": {
+			"acceptance_questions": [
+				"为什么所有人已经安全后，万机馆反而必须立刻离开原址？",
+				"B1三项必要巡检怎样证明它是一副受伤的移动身体，而不是固定建筑？",
+				"零号高速路为什么确实有效，却仍必须由纪存亲手折断？",
+				"三种二选三组合各自保住什么，又把什么真实缺口带进C02？",
+				"玩家在战场上怎样看见第三类载荷确实留在旧址，而不是菜单文字？",
+				"四名操作员和旧守护者五个Owner怎样分别保留停止权，而不是合成一个主角按钮？",
+				"万机馆越过东门的巨构动作为什么既是胜利，也是失去旧址与固定身份的不可逆时刻？"
+			],
+			"capacity_band": "standard",
+			"capacity_evidence": {
+				"receipt_paths": [],
+				"status": "pending_external"
+			},
+			"commitment_model": "choice",
+			"consumption_ledger": [
+				{
+					"result_id": "COMMIT_C01E04_EXACT_TWO_LOADOUT",
+					"slots": {
+						"character": {
+							"consumer_id": "c01e04_aftercare",
+							"consumer_kind": "node",
+							"visible_evidence": "唐胶拒绝用‘其余留馆’抹平具体物件，兜灯确认永久单臂硬停，七海的东门回执与停职延长同时生效。"
+						},
+						"conflict": {
+							"consumer_id": "C01E04-CARRIER-ESCAPE-SIX-STAGE",
+							"consumer_kind": "battle",
+							"visible_evidence": "战场只消费已提交组合：两类必须逐段送入安全舱，第三类必须完成解耦、留置与编号核对。"
+						},
+						"immediate": {
+							"consumer_id": "OBJ_C01E04_THREE_LOADOUT_RAILS",
+							"consumer_kind": "world_object",
+							"visible_evidence": "生活维持、实体原件和档案服务器各占一条真实固定链；两个槽填满后第三条仍在现场亮灯。"
+						},
+						"settlement": {
+							"consumer_id": "COMMIT_C01E04_EXACT_TWO_LOADOUT",
+							"consumer_kind": "commitment_group",
+							"visible_evidence": "三种组合分别写入LIFE_PHYSICAL、LIFE_ARCHIVE或PHYSICAL_ARCHIVE，并把对应缺口送入C02。"
+						}
+					},
+					"source_node_id": "c01e04_exact_two_loadout"
+				}
+			],
+			"dramatic_object_id": "OBJ_C01E04_THREE_LOADOUT_RAILS",
+			"dramatic_question": "万机馆必须在拆除前离开固定地基，但三类非人员载荷只能保住两类；什么必须留下，谁又有权让这座受伤的馆体停下？",
+			"episode_knot_id": "KNOT_C01E04_EXACT_TWO_AND_WANJI_BODY",
+			"human_claims": [
+				{
+					"claim": "离开原址不能靠把跌跌设备化和集中管理员权；路线、占格、未带走物与停止权都必须公开。",
+					"claim_owner": "CH_JICUN"
+				},
+				{
+					"claim": "馆守Z现在只有左肩，所有工程包络都必须承认这副身体；她的硬停权在每一次馆体动作后仍然有效。",
+					"claim_owner": "CH001"
+				}
+			],
+			"irreversible_cost": {
+				"state_refs": [
+					"WANJI_SITE_LOST",
+					"WBM001_ACTIVE",
+					"ZERO_SHORTCUT_REFUSED",
+					"WANJI_LOADOUT_BUNDLE_ID",
+					"ROUTE_MODEL_STREET_SURVIVAL_LOCK"
+				],
+				"text": "万机馆永久失去固定旧址与固定博物馆身份；右臂桥和第三类未选载荷留在城市，零号高速路由被纪存折断，馆体带着伤形进入36小时受损巡航。"
+			},
+			"machine_claim": {
+				"action_cue_id": "CUE_C01E04_WANJI_BODY_CROSSES_EAST_GATE",
+				"claim": "万机馆不是一栋被搬走的建筑；它以受伤、漏热、缺臂和可被四个人分别叫停的身体第一次自己离开地基。",
+				"mecha_id": "MECHA_WANJI_MOBILE_CHASSIS"
+			},
+			"next_debt_future_window": "C02木桶旧件市必须读取RT054和WANJI_LOADOUT_BUNDLE_ID，对未携带第三类给出真实缺口；不得补回旧址、右臂、第三槽或七海现场权限。",
+			"next_debt_id": "DEBT_C01E04_THIRTY_SIX_HOURS_AND_MISSING_CARGO",
+			"next_debt_origin": "东门之后只剩36小时生命循环兼容窗口；三种二选三组合分别造成档案、实体原件或生活维持缺口，移动风险编号与军方追踪同时保留。",
+			"player_commitment_id": "COMMIT_C01E04_EXACT_TWO_LOADOUT",
+			"required_consumption_slots": [
+				"immediate",
+				"conflict",
+				"character",
+				"settlement"
+			],
+			"required_continuity": [
+				"action",
+				"responsibility"
+			],
+			"settlement_model": "desk_choice",
+			"skip_reasons": {
+				"SIGNAL": "皇影只以三次受限黑框卡锁首显，不在本话开放信号解释或控制关系判断。",
+				"TIMING": "本话核心是工程巡检、精确载荷选择和巨构地图身体，节拍玩法会争夺已经很高的规则带宽。"
+			},
+			"stable_object_bindings": [
+				{
+					"mode_bindings": [
+						{
+							"anchor_id": "inspect_three_loadout_rails",
+							"mode": "SPATIAL",
+							"node_id": "c01e04_b1_engineering_inspection"
+						},
+						{
+							"anchor_id": "LIFE_SUPPORT",
+							"mode": "DESK",
+							"node_id": "c01e04_exact_two_loadout"
+						},
+						{
+							"anchor_id": "BIND_C01E04_THREE_RAILS_TO_EXACT_TWO_LOADOUT",
+							"mode": "TACTICAL",
+							"node_id": "c01e04_carrier_escape"
+						},
+						{
+							"anchor_id": "c01e04_after_03",
+							"mode": "NARRATIVE",
+							"node_id": "c01e04_aftercare"
+						}
+					],
+					"stable_object_id": "OBJ_C01E04_THREE_LOADOUT_RAILS"
+				}
+			]
+		},
+		"experience_contract_required": true,
+		"experience_contract_version": 1.0,
+		"graph": "res://content/episodes/c01/e04/graph.story_first.json",
+		"investigations": [
+			"res://content/episodes/c01/e04/explore/c01_e04_b1_engineering_inspection.json"
+		],
+		"loadout_contract_id": "V358LOAD004",
+		"mecha_id": "MECHA_WANJI_MOBILE_CHASSIS",
+		"non_claims": [
+			"formal_episode_accepted",
+			"production_art_complete",
+			"final_carrier_body_animation_complete",
+			"emperor_shadow_final_art_complete",
+			"chapter_c01_production_complete",
+			"c02_runtime_handoff_validated",
+			"windows_runtime_validated"
+		],
+		"presentation_assets": [
+			"res://assets/backgrounds/bg_hangar.png",
+			"res://assets/tactical_maps/story_first/bg_c01e04_carrier_escape_isometric_v01.png",
+			"res://assets/tactical_maps/story_first/spr_wanji_mobile_chassis_v01.png",
+			"res://assets/backgrounds/story_first/bg_c01e01_guardian_atrium_model_hospital_v01.png",
+			"res://assets/backgrounds/story_first/bg_c01e01_zero_corridor_v01.png",
+			"res://assets/backgrounds/story_first/bg_c01e01_front_hall_closing_v01.png",
+			"res://assets/backgrounds/story_first/bg_c01e01_archive_room_v01.png",
+			"res://assets/portraits/portrait_jicun.png",
+			"res://assets/portraits/portrait_doudeng.png",
+			"res://assets/portraits/portrait_qihai.png",
+			"res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png",
+			"res://assets/battle_presentation/c01/story_first/manifest.json",
+			"res://assets/battle_presentation/c01/story_first/sprite_diedie_idle_v01.png",
+			"res://assets/battle_presentation/c01/story_first/sprite_machine_dog_idle_v01.png",
+			"res://assets/battle_presentation/c01/story_first/sprite_evac_group_base_v01.png",
+			"res://assets/battle_presentation/c01/story_first/sprite_path_frame_reclosing_v01.png",
+			"res://assets/battle_presentation/c01/story_first/sprite_status_patcher_active_v01.png",
+			"res://assets/battle_presentation/c01/fire_bridge/sprite_fire_bridge_deployed_v01.png",
+			"res://assets/characters/story_first/sprite_jicun_walk_right_strip_v01.png",
+			"res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_kneel_idle_v01.png",
+			"res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_single_arm_support_v01.png",
+			"res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_kneel_guard_v01.png",
+			"res://assets/battle_presentation/c01/guardian_z/pose_gz_c01_kneel_contact_v01.png",
+			"res://assets/battle_presentation/c01/guardian_z/pose_gz_c01_kneel_palm_guard_v01.png",
+			"res://assets/battle_presentation/c01/guardian_z/cutin_doudeng_c01_tense_v01.png",
+			"res://assets/battle_presentation/c01/guardian_z/cutin_doudeng_c01_safety_lock_v01.png",
+			"res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_idle_v01.png",
+			"res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_scan_v01.png",
+			"res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_lock_v01.png",
+			"res://assets/portraits/portrait_haosi.png",
+			"res://assets/units/unit_brave_fist.svg",
+			"res://assets/units/enemy_seal_frame.svg"
+		],
+		"source_slot_id": "V357-C01-S04",
+		"status": "candidate",
+		"story_source": "DOC_V359_C01E04_STORY_FIRST_V1",
+		"transition_contract": "required"
+	},
+	"resource_index": [
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/backgrounds/bg_hangar.png",
+			"resource_id": "bg_hangar.png",
+			"sha256": "c610d301a113ff2a5baa23ed3624cc45b7c95b0e680bca4186bcf84d708b7686"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/backgrounds/story_first/bg_c01e01_archive_room_v01.png",
+			"resource_id": "bg_c01e01_archive_room_v01.png",
+			"sha256": "068ed72c654a11145508393aabc7bbc320b1f10c16a295025d00360ffd2ac0e6"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/backgrounds/story_first/bg_c01e01_front_hall_closing_v01.png",
+			"resource_id": "bg_c01e01_front_hall_closing_v01.png",
+			"sha256": "5dd6cf33a221661cafdbb36aa1595455f9c6565ae6c63dfeb1ff167a55757a32"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/backgrounds/story_first/bg_c01e01_guardian_atrium_model_hospital_v01.png",
+			"resource_id": "bg_c01e01_guardian_atrium_model_hospital_v01.png",
+			"sha256": "674c31b3c6bd8d44cf7a2c20d66ba08f53016a536742c99af3fa4281fc44d63c"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/backgrounds/story_first/bg_c01e01_zero_corridor_v01.png",
+			"resource_id": "bg_c01e01_zero_corridor_v01.png",
+			"sha256": "d6904944226243ddc5166187c384eb3a9a95af58fac66ac240d892b37d838703"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/fire_bridge/sprite_fire_bridge_deployed_v01.png",
+			"resource_id": "sprite_fire_bridge_deployed_v01.png",
+			"sha256": "c3fb6a913466d1f40b079357f44393e271b2e06f8cd4b6285bc26b3685834c6f"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/guardian_z/cutin_doudeng_c01_safety_lock_v01.png",
+			"resource_id": "cutin_doudeng_c01_safety_lock_v01.png",
+			"sha256": "4a355eb15ccc169553f7ea294517c154d82d0cb2b093367d13fc16ae77dbce79"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/guardian_z/cutin_doudeng_c01_tense_v01.png",
+			"resource_id": "cutin_doudeng_c01_tense_v01.png",
+			"sha256": "c846e48b04b7d8671fd4853330487d0f39d1df98a70550d1f03d49770a26f159"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/guardian_z/pose_gz_c01_kneel_contact_v01.png",
+			"resource_id": "pose_gz_c01_kneel_contact_v01.png",
+			"sha256": "ef33acfc9ea93eb649664f9e2b7cc5580475f156ecc705636d48a1674a63c110"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/guardian_z/pose_gz_c01_kneel_palm_guard_v01.png",
+			"resource_id": "pose_gz_c01_kneel_palm_guard_v01.png",
+			"sha256": "e1cbb624bf078dbafe463e308318ebde4e87a088b8b26c139293ef183198c9df"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_kneel_guard_v01.png",
+			"resource_id": "sprite_gz_c01_kneel_guard_v01.png",
+			"sha256": "2782e0922400534b0ad4359e4f8c0a58f077dbcfbaa5ad29b94aa56e0f39240c"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_kneel_idle_v01.png",
+			"resource_id": "sprite_gz_c01_kneel_idle_v01.png",
+			"sha256": "021fddee667eb47c18c0237449308d39312b75fad620820ead28c5e27d096bd0"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_single_arm_support_v01.png",
+			"resource_id": "sprite_gz_c01_single_arm_support_v01.png",
+			"sha256": "f2e8b201a80397a8e2e9bba42770ebfc434d901d7d1ef116953b87826ef1dfdd"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_idle_v01.png",
+			"resource_id": "sprite_seal_drone_c01_idle_v01.png",
+			"sha256": "0853afbe45602cc412718a11d4cdb760eb0c15d96974061b4ff2358ce0351de4"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_lock_v01.png",
+			"resource_id": "sprite_seal_drone_c01_lock_v01.png",
+			"sha256": "1dffe70114d9572a455eb66628b679415304f8e986b3bc6606eecab755dbc007"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_scan_v01.png",
+			"resource_id": "sprite_seal_drone_c01_scan_v01.png",
+			"sha256": "d5d68e5120b2ac9a5208476b892045ced1727d15188928a564d1d633fe6fd8ec"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/story_first/manifest.json",
+			"resource_id": "manifest.json",
+			"sha256": "37a03fe2568b3c4390175cc780d647ac3b87f7772fb008b78b5f956763b8f758"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/story_first/sprite_diedie_idle_v01.png",
+			"resource_id": "sprite_diedie_idle_v01.png",
+			"sha256": "916d3298c12a9e349e18ab8a4f44dc7e035bf571d73b7046061ca4c199565536"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/story_first/sprite_evac_group_base_v01.png",
+			"resource_id": "sprite_evac_group_base_v01.png",
+			"sha256": "660f66a4b9da5c8a3e49e78399a79a57a115b18a46acb1bb6a691c119d12d32e"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/story_first/sprite_machine_dog_idle_v01.png",
+			"resource_id": "sprite_machine_dog_idle_v01.png",
+			"sha256": "dd7b22231ac2f85183d7e02a2e9f023b6f80a203729def44ebb38f6a542edea0"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/story_first/sprite_path_frame_reclosing_v01.png",
+			"resource_id": "sprite_path_frame_reclosing_v01.png",
+			"sha256": "aea9005e7ca50380e5d2e9c2855fa9beff1d9a0c2cc0d720ed9473fc12b13a04"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/story_first/sprite_status_patcher_active_v01.png",
+			"resource_id": "sprite_status_patcher_active_v01.png",
+			"sha256": "8f73dd239e323dbff1b6332e79225339e2d6c7ea3cef6676a03b1b2417d465af"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/characters/story_first/sprite_jicun_walk_right_strip_v01.png",
+			"resource_id": "sprite_jicun_walk_right_strip_v01.png",
+			"sha256": "1ff25afcdd6f560f2fe1a9ced40a7bc13f1bf58bc9a235a936b631539fe179b5"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png",
+			"resource_id": "character_line_tangjiao_doudeng_qihai_v3.png",
+			"sha256": "dee381907f159bcde771bf839531b8f85fdc84befb353a943fa7584e16fb5529"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/portraits/portrait_doudeng.png",
+			"resource_id": "portrait_doudeng.png",
+			"sha256": "183b19dbffc64faf4d6fb352231ce01babbcd145109fcf5719a85f1ed1c826ce"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/portraits/portrait_haosi.png",
+			"resource_id": "portrait_haosi.png",
+			"sha256": "36496a089da0dc2f811f7cf423f42e2f0429ac2dc977900d95c217715b36f5f0"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/portraits/portrait_jicun.png",
+			"resource_id": "portrait_jicun.png",
+			"sha256": "e9a79a5ade6d34e6641a0b1671f758140539c4617b1f767668c9ed591d51ba31"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/portraits/portrait_qihai.png",
+			"resource_id": "portrait_qihai.png",
+			"sha256": "f2fb3c027b981d2ecfc189c88b7e8ca2483168160522b750953a4e6bcfee2e4d"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/tactical_maps/story_first/bg_c01e04_carrier_escape_isometric_v01.png",
+			"resource_id": "bg_c01e04_carrier_escape_isometric_v01.png",
+			"sha256": "7f9f6fbcb48beb407bad31226392167f3f98c4ca7f521d9b5c6a5413bbd76f9c"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/tactical_maps/story_first/spr_wanji_mobile_chassis_v01.png",
+			"resource_id": "spr_wanji_mobile_chassis_v01.png",
+			"sha256": "6f27b6d3e70cb3c3f730bb66e50e819c74c717148765d4b17364b946858b170a"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/units/enemy_seal_frame.svg",
+			"resource_id": "enemy_seal_frame.svg",
+			"sha256": "7b527fd06ae1b43295ddfd694ee24f8b5353b45c06dac9ee8930a61d7535aaff"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/units/unit_brave_fist.svg",
+			"resource_id": "unit_brave_fist.svg",
+			"sha256": "669fa190226bbae82480ccf1fd0632d45f8dd5bbe8fa40e61e26822781204262"
+		},
+		{
+			"kind": "activity",
+			"path": "res://content/episodes/c01/e04/activity/c01_e04_exact_two_loadout.json",
+			"resource_id": "C01E04-EXACT-TWO-LOADOUT",
+			"sha256": "f9934a34c60d6ac0b4acce14d7ca7498a85efb1e11554a0c4ebe7a89c4f3b9ef"
+		},
+		{
+			"kind": "battle",
+			"path": "res://content/episodes/c01/e04/battle/c01_e04_carrier_escape_6p.json",
+			"resource_id": "C01E04-CARRIER-ESCAPE-SIX-STAGE@story_first_exact_two_of_three_v1",
+			"sha256": "218c5a2a474b7adb8192f9f3bec52672b55c88f2a37c983c41dd133f4377756b"
+		},
+		{
+			"kind": "investigation",
+			"path": "res://content/episodes/c01/e04/explore/c01_e04_b1_engineering_inspection.json",
+			"resource_id": "C01E04-B1-ENGINEERING-INSPECTION",
+			"sha256": "bb4e81818e296da9b6e07916157fbadcd72810750fe355a778d94382aba00c0a"
+		}
+	],
+	"resources_by_path": {
+		"res://content/episodes/c01/e04/activity/c01_e04_exact_two_loadout.json": {
+			"activity_id": "C01E04-EXACT-TWO-LOADOUT",
+			"allow_partial_commit": false,
+			"assign_label": "放入当前固定链",
+			"canon_refs": [
+				"CONCEPT_HYBRID_PLAY_EXPERIENCE",
+				"N_C01E04_ATOMIC_SNAPSHOT"
+			],
+			"card_column_title": "三类可见载荷",
+			"card_metric_label": "负载",
+			"cards": [
+				{
+					"detail": "净水转接、旧制温控、应急循环；保住36小时的身体条件。",
+					"id": "LIFE_SUPPORT",
+					"label": "生活维持设备",
+					"risk": 1.0,
+					"source_node": "OBJ_C01E04_THREE_LOADOUT_RAILS",
+					"tags": [
+						"cargo"
+					]
+				},
+				{
+					"detail": "小满画筒、孤本模型托、不可复制断件；可作移动配重。",
+					"id": "PHYSICAL_COLLECTION",
+					"label": "实体独有馆藏",
+					"risk": 2.0,
+					"source_node": "OBJ_C01E04_THREE_LOADOUT_RAILS",
+					"tags": [
+						"cargo"
+					]
+				},
+				{
+					"detail": "许可链、维修史、访问记录；可预告火锁，但持续占用冷却。",
+					"id": "ARCHIVE_SERVER",
+					"label": "档案服务器",
+					"risk": 2.0,
+					"source_node": "OBJ_C01E04_THREE_LOADOUT_RAILS",
+					"tags": [
+						"cargo"
+					]
+				}
+			],
+			"combination_outcomes": {
+				"ARCHIVE_SERVER+LIFE_SUPPORT": {
+					"facts": [
+						{
+							"id": "WANJI_LOADOUT_BUNDLE_ID",
+							"to": "LIFE_ARCHIVE"
+						},
+						{
+							"id": "LIFE_SUPPORT_EQUIPMENT",
+							"to": "CARRIED_OPERATIONAL"
+						},
+						{
+							"id": "UNIQUE_PHYSICAL_COLLECTION",
+							"to": "OLD_SITE_PUBLIC_UNCARRIED"
+						},
+						{
+							"id": "ARCHIVE_SERVER",
+							"to": "CARRIED_OPERATIONAL"
+						},
+						{
+							"id": "ARCHIVE_PRIORITY_COLD_BACKUP",
+							"to": "NOT_APPLICABLE_CARRIED"
+						}
+					],
+					"preview": [
+						"一次全区冷却 + 预告一条假意图",
+						"每回合持续占用冷却余量",
+						"实体原件与托管线留在旧址"
+					],
+					"resolution": "success",
+					"ui_summary": "生活维持与档案服务器进入内轨；实体独有馆藏逐件进入公开留置清单。",
+					"unlocked_flags": [
+						"c01e04_loadout_life_archive"
+					]
+				},
+				"ARCHIVE_SERVER+PHYSICAL_COLLECTION": {
+					"facts": [
+						{
+							"id": "WANJI_LOADOUT_BUNDLE_ID",
+							"to": "PHYSICAL_ARCHIVE"
+						},
+						{
+							"id": "LIFE_SUPPORT_EQUIPMENT",
+							"to": "OLD_SITE_PUBLIC_UNCARRIED"
+						},
+						{
+							"id": "UNIQUE_PHYSICAL_COLLECTION",
+							"to": "CARRIED_OPERATIONAL"
+						},
+						{
+							"id": "ARCHIVE_SERVER",
+							"to": "CARRIED_OPERATIONAL"
+						},
+						{
+							"id": "ARCHIVE_PRIORITY_COLD_BACKUP",
+							"to": "NOT_APPLICABLE_CARRIED"
+						}
+					],
+					"preview": [
+						"可移动配重 + 预告一条假意图",
+						"总重与持续冷却同时增加",
+						"净水与温控旧件成为C02首要缺口"
+					],
+					"resolution": "success",
+					"ui_summary": "实体独有馆藏与档案服务器进入内轨；生活维持件按编号亮灯留置旧址。",
+					"unlocked_flags": [
+						"c01e04_loadout_physical_archive"
+					]
+				},
+				"LIFE_SUPPORT+PHYSICAL_COLLECTION": {
+					"facts": [
+						{
+							"id": "WANJI_LOADOUT_BUNDLE_ID",
+							"to": "LIFE_PHYSICAL"
+						},
+						{
+							"id": "LIFE_SUPPORT_EQUIPMENT",
+							"to": "CARRIED_OPERATIONAL"
+						},
+						{
+							"id": "UNIQUE_PHYSICAL_COLLECTION",
+							"to": "CARRIED_OPERATIONAL"
+						},
+						{
+							"id": "ARCHIVE_SERVER",
+							"to": "OLD_SITE_PUBLIC_UNCARRIED"
+						},
+						{
+							"id": "ARCHIVE_PRIORITY_COLD_BACKUP",
+							"to": "COMPLETE_AT_OLD_SITE"
+						}
+					],
+					"preview": [
+						"一次全区冷却 + 可移动配重",
+						"占外锁转接位并增加总重",
+						"许可、维修史与访问记录留在旧址"
+					],
+					"resolution": "success",
+					"ui_summary": "生活维持与实体独有馆藏进入内轨；档案服务器完成优先冷备后亮灯留在旧址。",
+					"unlocked_flags": [
+						"c01e04_loadout_life_physical"
+					]
+				}
+			},
+			"commit_label": "确认精确二选三 [C]",
+			"commitments": [
+				{
+					"commitment_group_id": "COMMIT_C01E04_EXACT_TWO_LOADOUT",
+					"commitment_id": "COMMIT_C01E04_LIFE_PHYSICAL",
+					"cost": "许可、维修史与访问记录留在旧址，只完成优先冷备。",
+					"next": "C02拥有身体续航与实体配重，但缺少随行档案查询。",
+					"title": "保生活维持与实体独有馆藏"
+				},
+				{
+					"commitment_group_id": "COMMIT_C01E04_EXACT_TWO_LOADOUT",
+					"commitment_id": "COMMIT_C01E04_LIFE_ARCHIVE",
+					"cost": "小满画筒、孤本模型托和不可复制断件逐件留在旧址。",
+					"next": "C02拥有身体续航与记录能力，但失去实体原件及移动配重。",
+					"title": "保生活维持与档案服务器"
+				},
+				{
+					"commitment_group_id": "COMMIT_C01E04_EXACT_TWO_LOADOUT",
+					"commitment_id": "COMMIT_C01E04_PHYSICAL_ARCHIVE",
+					"cost": "净水与旧制温控转接件留在旧址，三十六小时生命循环成为硬期限。",
+					"next": "C02保住物与记忆，却必须优先寻找生活维持接口。",
+					"title": "保实体独有馆藏与档案服务器"
+				}
+			],
+			"eyebrow": "B1实体载荷台 / 人员禁止进入载荷表",
+			"grammar": "CONSTRAINT",
+			"host_profile": "crisis",
+			"outcomes": {
+				"clear": {
+					"preview": [
+						"只填了一条固定链",
+						"不能进入战术阶段"
+					],
+					"resolution": "soft_failure",
+					"ui_summary": "另一条固定链仍空着。"
+				},
+				"fail": {
+					"preview": [
+						"尚未形成可执行载荷",
+						"人员始终不进入载荷表"
+					],
+					"resolution": "soft_failure",
+					"ui_summary": "先选择两类具体载荷。"
+				},
+				"perfect": {
+					"preview": [
+						"精确两类固定",
+						"第三类亮灯留置",
+						"战场读取该组合"
+					],
+					"resolution": "success",
+					"ui_summary": "两条固定链成立；第三类必须留在旧址。"
+				}
+			},
+			"perfect_requires_optional": false,
+			"preview_column_title": "本话收益 / 当前代价 / C02缺口",
+			"preview_metric_label": "总负载",
+			"preview_required_label": "固定链",
+			"prompt": "三类都是真实物件，也都占真实接口。选择前可反复预览；两个固定槽填满后才能提交，提交后不存在隐藏的第三槽。",
+			"required_slot_prefix": "固定",
+			"safe_risk": 4.0,
+			"score_band_labels": {
+				"clear": "固定未完成",
+				"fail": "尚未成案",
+				"perfect": "方案成立"
+			},
+			"show_optional_preview": false,
+			"show_slot_accepts": false,
+			"slot_column_title": "仅有的两条固定链",
+			"slots": [
+				{
+					"accepts": [
+						"cargo"
+					],
+					"id": "inner_chain_a",
+					"incompatible_text": "人员、消防接驳货物与未登记对象不能进入固定链。",
+					"label": "A链 / 内轨与外锁转接",
+					"required": true
+				},
+				{
+					"accepts": [
+						"cargo"
+					],
+					"id": "inner_chain_b",
+					"incompatible_text": "人员、消防接驳货物与未登记对象不能进入固定链。",
+					"label": "B链 / 配重与冷却接口",
+					"required": true
+				}
+			],
+			"template_id": "T_EXACT_TWO_VISIBLE_CARGO",
+			"title": "不是救谁，是带走哪一种明天",
+			"transaction_id": "C01E04:RT008_LOADOUT:LOCAL:V01",
+			"unassign_label": "从固定链撤回"
+		},
+		"res://content/episodes/c01/e04/battle/c01_e04_carrier_escape_6p.json": {
+			"battle_clear_scope": "local_before_rt054",
+			"battle_id": "C01E04-CARRIER-ESCAPE-SIX-STAGE",
+			"canon_source": "DOC_C01E04_STORY_FIRST_CANON_MIGRATION_V1",
+			"failure_policy": "local_checkpoint_only_no_persistent_write",
+			"graybox_source": "C01E04-graybox-constants-v1.tsv",
+			"grid": {
+				"blocked": [
+					[
+						0.0,
+						0.0
+					],
+					[
+						1.0,
+						0.0
+					],
+					[
+						2.0,
+						0.0
+					],
+					[
+						3.0,
+						0.0
+					],
+					[
+						12.0,
+						0.0
+					],
+					[
+						13.0,
+						0.0
+					],
+					[
+						14.0,
+						0.0
+					],
+					[
+						15.0,
+						0.0
+					],
+					[
+						0.0,
+						5.0
+					],
+					[
+						15.0,
+						5.0
+					],
+					[
+						0.0,
+						6.0
+					],
+					[
+						15.0,
+						6.0
+					],
+					[
+						0.0,
+						11.0
+					],
+					[
+						1.0,
+						11.0
+					],
+					[
+						14.0,
+						11.0
+					],
+					[
+						15.0,
+						11.0
+					]
+				],
+				"height": 12.0,
+				"width": 16.0
+			},
+			"isometric_layout": {
+				"body_state_order": [
+					"FIXED_BUILDING",
+					"PREMOVED_ONE_SECTION",
+					"HALF_RISE",
+					"CRUISE_CARRIER_WITH_DAMAGE"
+				],
+				"camera_rule": "active_footprint_never_covered_by_status_sidebar",
+				"enabled": true,
+				"landmarks": {
+					"message_wall_chest_light": [
+						7.0,
+						5.0
+					],
+					"model_hospital_left_shoulder": [
+						9.0,
+						5.0
+					],
+					"real_machine_stage_external_lock_base": [
+						11.0,
+						7.0
+					]
+				},
+				"production_body_states": [
+					"FIXED_BUILDING",
+					"HALF_RISE",
+					"CRUISE_CARRIER_WITH_DAMAGE"
+				],
+				"projection": "diamond_45_degree",
+				"screen_origin": [
+					520.0,
+					154.0
+				],
+				"tile_size": [
+					64.0,
+					32.0
+				]
+			},
+			"machine_claim_cues": [
+				{
+					"cue_id": "CUE_C01E04_WANJI_BODY_CROSSES_EAST_GATE",
+					"unit_id": "wanji_body_control",
+					"visible_action": "万机馆先滑开L1甲片、展开B1肋架和锁泊臂，再按四个独立停止权一步步离开地基，以缺臂漏热的受损身体越过东门。"
+				}
+			],
+			"mid_events": [],
+			"objective_text": "解除六锚，精确保住三类非人载荷中的两类，让万机馆从固定建筑转入受损巡航；四名操作员、五个独立停机责任位、医院电网、城市管线和东门包络必须保持有效。",
+			"objectives": [
+				{
+					"cell": [
+						8.0,
+						7.0
+					],
+					"id": "carrier_body",
+					"integrity": 3.0,
+					"name": "万机馆移动底盘",
+					"required": true,
+					"scenario_role": "three_production_states_plus_one_transition"
+				},
+				{
+					"cell": [
+						3.0,
+						6.0
+					],
+					"id": "anchor_a",
+					"integrity": 1.0,
+					"name": "A锚 / 低位预载",
+					"required": true,
+					"scenario_role": "physical_anchor_preload"
+				},
+				{
+					"cell": [
+						5.0,
+						6.0
+					],
+					"id": "anchor_b",
+					"integrity": 1.0,
+					"name": "B锚 / 低位预载",
+					"required": true,
+					"scenario_role": "physical_anchor_preload"
+				},
+				{
+					"cell": [
+						7.0,
+						6.0
+					],
+					"id": "anchor_c",
+					"integrity": 1.0,
+					"name": "C锚 / 热卡扣",
+					"required": true,
+					"scenario_role": "physical_anchor_hot_latch"
+				},
+				{
+					"cell": [
+						7.0,
+						5.0
+					],
+					"id": "anchor_d",
+					"integrity": 1.0,
+					"name": "D锚 / 热卡扣",
+					"required": true,
+					"scenario_role": "physical_anchor_hot_latch"
+				},
+				{
+					"cell": [
+						6.0,
+						7.0
+					],
+					"id": "anchor_e",
+					"integrity": 1.0,
+					"name": "E锚 / 展轨固定座",
+					"required": true,
+					"scenario_role": "physical_anchor_exhibit_fixture"
+				},
+				{
+					"cell": [
+						4.0,
+						4.0
+					],
+					"id": "anchor_f",
+					"integrity": 1.0,
+					"name": "F锚 / 胸前负载",
+					"required": true,
+					"scenario_role": "physical_anchor_chest_load"
+				},
+				{
+					"cell": [
+						3.0,
+						8.0
+					],
+					"id": "life_support_equipment",
+					"integrity": 1.0,
+					"name": "生活维持设备轨",
+					"required": true,
+					"scenario_role": "loadout_life"
+				},
+				{
+					"cell": [
+						5.0,
+						8.0
+					],
+					"id": "unique_physical_collection",
+					"integrity": 1.0,
+					"name": "实体独有馆藏轨",
+					"required": true,
+					"scenario_role": "loadout_physical"
+				},
+				{
+					"cell": [
+						7.0,
+						8.0
+					],
+					"id": "archive_server",
+					"integrity": 1.0,
+					"name": "档案服务器冷却轨",
+					"required": true,
+					"scenario_role": "loadout_archive"
+				},
+				{
+					"cell": [
+						7.0,
+						5.0
+					],
+					"id": "message_wall_landmark",
+					"integrity": 1.0,
+					"name": "留言墙 / 胸部灯带",
+					"required": true,
+					"scenario_role": "body_landmark_chest"
+				},
+				{
+					"cell": [
+						9.0,
+						5.0
+					],
+					"id": "model_hospital_landmark",
+					"integrity": 1.0,
+					"name": "模型病院 / 左肩位",
+					"required": true,
+					"scenario_role": "body_landmark_shoulder"
+				},
+				{
+					"cell": [
+						11.0,
+						8.0
+					],
+					"id": "real_machine_stage_landmark",
+					"integrity": 1.0,
+					"name": "真机台 / 外锁基",
+					"required": true,
+					"scenario_role": "body_landmark_lock_base"
+				},
+				{
+					"cell": [
+						13.0,
+						7.0
+					],
+					"id": "right_lock_arm",
+					"integrity": 1.0,
+					"name": "右侧锁泊臂",
+					"required": true,
+					"scenario_role": "shadow_jam_then_player_clear"
+				},
+				{
+					"cell": [
+						2.0,
+						2.0
+					],
+					"id": "hospital_grid",
+					"integrity": 1.0,
+					"name": "医院电网禁入区",
+					"required": true,
+					"scenario_role": "critical_city_zone_zero_damage"
+				},
+				{
+					"cell": [
+						12.0,
+						9.0
+					],
+					"id": "east_pipe",
+					"integrity": 1.0,
+					"name": "东侧城市管线",
+					"required": true,
+					"scenario_role": "critical_pipe_zero_damage"
+				},
+				{
+					"cell": [
+						14.0,
+						6.0
+					],
+					"id": "city_gate",
+					"integrity": 1.0,
+					"name": "东门低速包络",
+					"required": true,
+					"scenario_role": "public_route_exit"
+				},
+				{
+					"cell": [
+						2.0,
+						10.0
+					],
+					"id": "old_site",
+					"integrity": 1.0,
+					"name": "旧馆址与未带走清单",
+					"required": false,
+					"scenario_role": "permanent_visible_loss"
+				},
+				{
+					"cell": [
+						1.0,
+						9.0
+					],
+					"id": "right_arm_bridge",
+					"integrity": 1.0,
+					"name": "馆守Z右臂旧址复合桥",
+					"required": false,
+					"scenario_role": "permanent_old_site_scar_no_cargo"
+				},
+				{
+					"cell": [
+						2.0,
+						7.0
+					],
+					"id": "zero_route_bridge",
+					"integrity": 1.0,
+					"name": "零号管理员桥接片",
+					"required": false,
+					"scenario_role": "physically_removed_before_battle"
+				}
+			],
+			"patch_catalog": {},
+			"presentation_manifest_path": "res://assets/battle_presentation/c01/story_first/manifest.json",
+			"runtime_contract_source": "C01E04-runtime-contract-v1.tsv",
+			"scenario_contract": {
+				"action_catalog": {
+					"AUTO_PREMOVE_BODY": {
+						"actor_id": "__system__",
+						"label": "馆体提前向东位移一节",
+						"message": "完整启动命令前，B1脊柱先向东错开一节。",
+						"order": 0.0,
+						"stage": 3.0
+					},
+					"CITY_DEPLOY_LEFT_ARM": {
+						"actor_id": "wanji_body_control",
+						"arm_target": "LEFT_DEPLOYED",
+						"label": "可选：展开左锁臂遮蔽",
+						"message": "左锁臂只在当前基座对应格展开；匹配侧主动标记被挡住。",
+						"order": 50.0,
+						"repeatable": true,
+						"stage": 5.0,
+						"targeting_mode": "arm_transition"
+					},
+					"CITY_DEPLOY_RIGHT_ARM": {
+						"actor_id": "wanji_body_control",
+						"arm_target": "RIGHT_DEPLOYED",
+						"label": "可选：展开右锁臂遮蔽",
+						"message": "右锁臂在东门前可展开一次；东门基座始终禁止右臂外伸。",
+						"order": 52.0,
+						"repeatable": true,
+						"stage": 5.0,
+						"targeting_mode": "arm_transition"
+					},
+					"CITY_MOVE_EAST_1": {
+						"actor_id": "wanji_body_control",
+						"body_target": "EAST_1",
+						"label": "馆体东移1/3：进入EAST_1",
+						"message": "固定馆体离开旧地基，第一段东行占格成立。",
+						"order": 10.0,
+						"stage": 5.0,
+						"targeting_mode": "body_transition"
+					},
+					"CITY_MOVE_EAST_2": {
+						"actor_id": "wanji_body_control",
+						"body_target": "EAST_2",
+						"label": "馆体东移2/3：进入EAST_2",
+						"message": "第二段东移避开北侧应急区与第一处地下管线。",
+						"order": 20.0,
+						"requires": [
+							"CITY_MOVE_EAST_1"
+						],
+						"stage": 5.0,
+						"targeting_mode": "body_transition"
+					},
+					"CITY_MOVE_EAST_GATE": {
+						"actor_id": "wanji_body_control",
+						"body_target": "EAST_GATE",
+						"label": "馆体东移3/3：抵达东门",
+						"message": "第三段占格落在七海公开申请的东门低速包络。",
+						"order": 30.0,
+						"requires": [
+							"CITY_MOVE_EAST_2"
+						],
+						"stage": 5.0,
+						"targeting_mode": "body_transition"
+					},
+					"CITY_RETRACT_LEFT_ARM": {
+						"actor_id": "wanji_body_control",
+						"arm_target": "BOTH_RETRACTED",
+						"label": "收回左锁臂继续移动",
+						"message": "左锁臂收回道路姿态，下一回合才能继续东移。",
+						"order": 51.0,
+						"repeatable": true,
+						"stage": 5.0,
+						"targeting_mode": "arm_transition"
+					},
+					"CITY_RETRACT_RIGHT_ARM": {
+						"actor_id": "wanji_body_control",
+						"arm_target": "BOTH_RETRACTED",
+						"label": "收回右锁臂继续移动",
+						"message": "右锁臂收回道路姿态，馆体恢复合法移动轮廓。",
+						"order": 53.0,
+						"repeatable": true,
+						"stage": 5.0,
+						"targeting_mode": "arm_transition"
+					},
+					"CITY_ROTATE_BACK": {
+						"actor_id": "wanji_body_control",
+						"body_target": "EAST_1",
+						"label": "可选：从转体姿态复位",
+						"message": "馆体复位到EAST_1，继续东行。",
+						"order": 41.0,
+						"repeatable": true,
+						"stage": 5.0,
+						"targeting_mode": "body_transition"
+					},
+					"CITY_ROTATE_OUT": {
+						"actor_id": "wanji_body_control",
+						"body_target": "EAST_1_ROT",
+						"label": "可选：在EAST_1转体",
+						"message": "半身转入唯一安全侧姿态；下一次只能转回。",
+						"order": 40.0,
+						"repeatable": true,
+						"requires": [
+							"CITY_MOVE_EAST_1"
+						],
+						"stage": 5.0,
+						"targeting_mode": "body_transition"
+					},
+					"CLAMP_A_BLOCK_MARKER": {
+						"actor_id": "anchor_fixture_a",
+						"label": "夹具A挡住标记线",
+						"message": "夹具只挡线，不替锚点Owner退销。",
+						"order": 90.0,
+						"repeatable": true,
+						"stage": 1.0,
+						"targeting_mode": "active_writer"
+					},
+					"CLAMP_A_HOLD_FINAL_F": {
+						"actor_id": "anchor_fixture_a",
+						"anchor_filter": "F",
+						"label": "夹具A保持已准备的F锚预载",
+						"message": "夹具A只保持馆守Z胸前的F预载，不替跌跌执行最终退销。",
+						"order": 42.0,
+						"requires": [
+							"DOUDENG_CONFIRM_HARD_STOP"
+						],
+						"stage": 1.0,
+						"targeting_mode": "prepared_anchor"
+					},
+					"CLAMP_A_HOLD_WRITER_P4": {
+						"actor_id": "anchor_fixture_a",
+						"label": "夹具A压住主动写入线",
+						"message": "夹具A把写入线压在空承台上，不替任何Owner作决定。",
+						"order": 70.0,
+						"repeatable": true,
+						"stage": 4.0,
+						"targeting_mode": "active_writer"
+					},
+					"CLAMP_A_HOLD_WRITER_P5": {
+						"actor_id": "anchor_fixture_a",
+						"label": "夹具A压住城市写入线",
+						"message": "夹具A卡住一段写入线，让它停在馆体外侧。",
+						"order": 70.0,
+						"repeatable": true,
+						"stage": 5.0,
+						"targeting_mode": "active_writer"
+					},
+					"CLAMP_B_ARM_BUFFER_P4": {
+						"actor_id": "anchor_fixture_b",
+						"branch": "PHYSICAL",
+						"label": "夹具B武装实体配重缓冲",
+						"message": "夹具B把实体馆藏配重压入受力槽；下一次关键冲击才会自动消耗缓冲。",
+						"order": 71.0,
+						"repeatable": true,
+						"resource": "physical_buffer",
+						"stage": 4.0
+					},
+					"CLAMP_B_ARM_BUFFER_P5": {
+						"actor_id": "anchor_fixture_b",
+						"branch": "PHYSICAL",
+						"label": "夹具B武装实体配重缓冲",
+						"message": "夹具B把仅剩的一次实体配重缓冲扣在城市段冲击方向。",
+						"order": 71.0,
+						"repeatable": true,
+						"resource": "physical_buffer",
+						"stage": 5.0
+					},
+					"CLAMP_B_BLOCK_MARKER": {
+						"actor_id": "anchor_fixture_b",
+						"label": "夹具B挡住标记线",
+						"message": "第二只夹具封住主动标记的直线落点。",
+						"order": 90.0,
+						"repeatable": true,
+						"stage": 1.0,
+						"targeting_mode": "active_writer"
+					},
+					"CLAMP_B_HOLD_FINAL_F": {
+						"actor_id": "anchor_fixture_b",
+						"anchor_filter": "F",
+						"label": "夹具B保持已准备的F锚预载",
+						"message": "夹具B将F锚预载保持在绿区，最终退销仍只属于跌跌。",
+						"order": 42.0,
+						"requires": [
+							"DOUDENG_CONFIRM_HARD_STOP"
+						],
+						"stage": 1.0,
+						"targeting_mode": "prepared_anchor"
+					},
+					"CORRIDOR_FOLD": {
+						"actor_id": "__system__",
+						"label": "锁泊臂同步收成道路姿态",
+						"message": "两侧锁泊臂在公开预览中同步收回；热量与档案冷却先结算，再建立城市检查点。",
+						"order": 0.0,
+						"stage": 5.0
+					},
+					"DEPLOY_BOTH_LOCK_ARMS": {
+						"actor_id": "wanji_body_control",
+						"body_target": "HALF_RISE",
+						"label": "馆体动作3/3：展开两侧锁泊臂",
+						"message": "外锁臂作为半身承重展开；右侧卡死已经由玩家排除。",
+						"order": 30.0,
+						"requires": [
+							"OPEN_B1_RIBS"
+						],
+						"stage": 4.0,
+						"targeting_mode": "body_transition"
+					},
+					"DIEDIE_BRACE_ACTIVE_MARKER": {
+						"actor_id": "diedie",
+						"label": "支住本回合主动标记",
+						"message": "跌跌把主动标记引向相邻非关键格，本回合写入为零。",
+						"order": 90.0,
+						"repeatable": true,
+						"stage": 1.0,
+						"targeting_mode": "active_writer"
+					},
+					"DIEDIE_BRACE_WRITER_P4": {
+						"actor_id": "diedie",
+						"label": "跌跌复位支住主动标记",
+						"message": "跌跌用上一轮失败振动找平，让主动落点滑到非关键格。",
+						"order": 70.0,
+						"repeatable": true,
+						"stage": 4.0,
+						"targeting_mode": "active_writer"
+					},
+					"DIEDIE_RELEASE_A": {
+						"actor_id": "diedie",
+						"label": "释放A锚低位预载",
+						"message": "跌跌贴住A锚底部，等预载曲线归零才退销。",
+						"order": 10.0,
+						"position_prompt": "先让跌跌走到A锚低位槽。",
+						"required_cells": [
+							[
+								3.0,
+								6.0
+							]
+						],
+						"stage": 1.0
+					},
+					"DIEDIE_RELEASE_B": {
+						"actor_id": "diedie",
+						"label": "释放B锚低位预载",
+						"message": "B锚机械销退到底；跌跌仍保留下一回合行动。",
+						"order": 20.0,
+						"position_prompt": "先让跌跌走到B锚低位槽。",
+						"required_cells": [
+							[
+								5.0,
+								6.0
+							]
+						],
+						"requires": [
+							"DIEDIE_RELEASE_A"
+						],
+						"stage": 1.0
+					},
+					"DIEDIE_RELEASE_F": {
+						"actor_id": "diedie",
+						"label": "释放F锚最终预载",
+						"message": "夹具保持没有越权；跌跌完成最后一枚退销，馆守Z仍保持单臂承重。",
+						"order": 50.0,
+						"position_prompt": "F锚必须先由夹具保持，再由跌跌在胸前承重点完成最终退销。",
+						"required_cells": [
+							[
+								4.0,
+								4.0
+							]
+						],
+						"requires": [
+							"DOUDENG_CONFIRM_HARD_STOP",
+							"FINAL_F_CLAMP_HOLDING"
+						],
+						"stage": 1.0
+					},
+					"DIEDIE_RESEAT_WRITER_P5": {
+						"actor_id": "diedie",
+						"label": "跌跌重找平城市落点",
+						"message": "跌跌沿车体失败振动重新找平，让主动标记离开关键承压格。",
+						"order": 70.0,
+						"repeatable": true,
+						"stage": 5.0,
+						"targeting_mode": "active_writer"
+					},
+					"DIEDIE_ROUTE_CARGO_A": {
+						"actor_id": "diedie",
+						"cargo_slot": 0.0,
+						"label": "第一类载荷：内轨→固定台→安全舱",
+						"message": "第一类载荷完成三段物理回执。",
+						"order": 10.0,
+						"stage": 2.0,
+						"targeting_mode": "cargo_traverse"
+					},
+					"DIEDIE_TRACE_JAM": {
+						"actor_id": "diedie",
+						"label": "沿失败振动追到锁根",
+						"message": "跌跌找到第二枚偏斜卡扣，没有靠近黑展柜。",
+						"order": 30.0,
+						"position_prompt": "让跌跌走到右锁根的振动读点。",
+						"required_cells": [
+							[
+								11.0,
+								7.0
+							]
+						],
+						"requires": [
+							"SHADOW_JAM_RIGHT_LOCK"
+						],
+						"stage": 3.0
+					},
+					"DOG_ARCHIVE_COOL_P4": {
+						"actor_id": "machine_dog",
+						"branch": "ARCHIVE",
+						"label": "消耗档案分支：冷却余量 +2",
+						"message": "机器犬为服务器冷却回补两格余量。",
+						"order": 81.0,
+						"repeatable": true,
+						"resource": "archive_phase_cool",
+						"stage": 4.0
+					},
+					"DOG_ARCHIVE_COOL_P5": {
+						"actor_id": "machine_dog",
+						"branch": "ARCHIVE",
+						"label": "消耗档案分支：冷却余量 +2",
+						"message": "机器犬为城市段档案冷却回补两格余量。",
+						"order": 81.0,
+						"repeatable": true,
+						"resource": "archive_phase_cool",
+						"stage": 5.0
+					},
+					"DOG_CLEAR_RIGHT_LOCK": {
+						"actor_id": "machine_dog",
+						"label": "冷却并清理右锁卡扣",
+						"message": "冷却软管和固定夹具共同把右锁臂拉出黑框受力线。",
+						"order": 40.0,
+						"position_prompt": "机器犬必须抵达右锁泊臂卡扣。",
+						"required_cells": [
+							[
+								12.0,
+								7.0
+							]
+						],
+						"requires": [
+							"DIEDIE_TRACE_JAM"
+						],
+						"stage": 3.0
+					},
+					"DOG_COOL_RELEASE_C": {
+						"actor_id": "machine_dog",
+						"label": "冷却并释放C锚热卡扣",
+						"message": "冷却软管压住C锚热峰，Owner释放回执转绿。",
+						"order": 10.0,
+						"position_prompt": "机器犬必须靠近C锚热卡扣。",
+						"required_cells": [
+							[
+								7.0,
+								6.0
+							]
+						],
+						"stage": 1.0
+					},
+					"DOG_COOL_RELEASE_D": {
+						"actor_id": "machine_dog",
+						"label": "冷却并释放D锚热卡扣",
+						"message": "D锚降到可触温度，第二枚热卡扣退开。",
+						"order": 20.0,
+						"position_prompt": "机器犬必须靠近D锚热卡扣。",
+						"required_cells": [
+							[
+								7.0,
+								5.0
+							]
+						],
+						"requires": [
+							"DOG_COOL_RELEASE_C"
+						],
+						"stage": 1.0
+					},
+					"DOG_DECOY_ACTIVE_MARKER": {
+						"actor_id": "machine_dog",
+						"label": "诱导本回合主动标记",
+						"message": "机器犬拖动反光软管，主动无人机改写到无效落点。",
+						"order": 90.0,
+						"repeatable": true,
+						"stage": 1.0,
+						"targeting_mode": "active_writer"
+					},
+					"DOG_DECOY_WRITER_P4": {
+						"actor_id": "machine_dog",
+						"label": "机器犬诱导主动标记",
+						"message": "机器犬拖着反光软管穿过空格，主动标记跟错了目标。",
+						"order": 70.0,
+						"repeatable": true,
+						"stage": 4.0,
+						"targeting_mode": "active_writer"
+					},
+					"DOG_DECOY_WRITER_P5": {
+						"actor_id": "machine_dog",
+						"label": "机器犬诱导城市主动标记",
+						"message": "机器犬把软管反光拖向旧址，主动标记被带离城市设施。",
+						"order": 70.0,
+						"repeatable": true,
+						"stage": 5.0,
+						"targeting_mode": "active_writer"
+					},
+					"DOG_FINAL_COOL": {
+						"actor_id": "machine_dog",
+						"label": "机器犬守住最后冷却区段",
+						"message": "机器犬把软管从车辙前拖开，商业风道旧伤仍在，但热量没有越过八格红线。",
+						"order": 40.0,
+						"requires": [
+							"TANGJIAO_COUNTERWEIGHT"
+						],
+						"stage": 6.0
+					},
+					"DOG_LIFE_GLOBAL_COOL_P4": {
+						"actor_id": "machine_dog",
+						"branch": "LIFE",
+						"label": "消耗生活分支：全区冷却 -3热",
+						"message": "机器犬接通生活循环支路，馆体热量下降三格。",
+						"order": 80.0,
+						"repeatable": true,
+						"resource": "life_global_cool",
+						"stage": 4.0
+					},
+					"DOG_LIFE_GLOBAL_COOL_P5": {
+						"actor_id": "machine_dog",
+						"branch": "LIFE",
+						"label": "消耗生活分支：全区冷却 -3热",
+						"message": "生活循环支路为城市段释放最后一次全区冷却。",
+						"order": 80.0,
+						"repeatable": true,
+						"resource": "life_global_cool",
+						"stage": 5.0
+					},
+					"DOG_ROUTE_CARGO_B": {
+						"actor_id": "machine_dog",
+						"cargo_slot": 1.0,
+						"label": "第二类载荷：内轨→固定台→安全舱",
+						"message": "第二类载荷避开共享轨，独立进入另一侧安全舱。",
+						"order": 20.0,
+						"requires": [
+							"DIEDIE_ROUTE_CARGO_A"
+						],
+						"stage": 2.0,
+						"targeting_mode": "cargo_traverse"
+					},
+					"DOUDENG_CONFIRM_HARD_STOP": {
+						"actor_id": "doudeng_post",
+						"label": "测试单臂承重硬停",
+						"message": "兜灯让馆守Z和B1供能确实断开一拍，F锚负载才转绿。",
+						"order": 40.0,
+						"requires": [
+							"GUARDIAN_PROACTIVE_LEFT_SUPPORT"
+						],
+						"stage": 1.0
+					},
+					"DOUDENG_FINAL_HARD_STOP": {
+						"actor_id": "doudeng_post",
+						"label": "兜灯确认最终硬停可执行",
+						"message": "兜灯再次按下硬停，馆守Z和B1供能同时响应；她随后亲手复位，不由系统代按。",
+						"order": 50.0,
+						"requires": [
+							"DOG_FINAL_COOL"
+						],
+						"stage": 6.0
+					},
+					"DOUDENG_HARD_STOP_P4": {
+						"actor_id": "doudeng_post",
+						"label": "把B1硬停保持在绿位",
+						"message": "兜灯亲手压下硬停测试，绿灯亮起后仍由她握着复位权。",
+						"order": 73.0,
+						"repeatable": true,
+						"stage": 4.0
+					},
+					"DOUDENG_HARD_STOP_P5": {
+						"actor_id": "doudeng_post",
+						"label": "保持城市段B1硬停绿位",
+						"message": "兜灯让馆守Z与B1供能同断一拍，确认这一步仍能被人停下。",
+						"order": 74.0,
+						"repeatable": true,
+						"stage": 5.0
+					},
+					"DOUDENG_HARD_STOP_SHADOW": {
+						"actor_id": "doudeng_post",
+						"label": "确认锁泊扩张硬停",
+						"message": "兜灯切断外锁追加供能，停止权没有交给黑框。",
+						"order": 60.0,
+						"requires": [
+							"LUHENG_SIGN_REVISED_ENVELOPE"
+						],
+						"stage": 3.0
+					},
+					"DOUDENG_TEST_STOP": {
+						"actor_id": "doudeng_post",
+						"label": "半身态执行一次硬停",
+						"message": "兜灯在最高受力点按下硬停，确认半身仍可停。",
+						"order": 90.0,
+						"requires": [
+							"DEPLOY_BOTH_LOCK_ARMS"
+						],
+						"stage": 4.0
+					},
+					"FINALIZE_CRUISE": {
+						"actor_id": "jicun_post",
+						"label": "进入受损低速巡航",
+						"message": "移动脊柱接管重量。万机馆带着缺臂、漏热和留置清单越过东门；Battle Clear只产生本话本地结果。",
+						"order": 80.0,
+						"requires": [
+							"JICUN_CONFIRM_EAST_GATE"
+						],
+						"stage": 6.0
+					},
+					"FINAL_F_CLAMP_HOLDING": {
+						"actor_id": "__system__",
+						"label": "F锚夹具保持回执",
+						"message": "一只固定夹具正在保持已准备的F预载。",
+						"order": 43.0,
+						"stage": 1.0
+					},
+					"GUARDIAN_PROACTIVE_LEFT_SUPPORT": {
+						"actor_id": "guardian_z",
+						"label": "馆守Z主动露出左肩承重点",
+						"message": "没有启动口令。馆守Z先送出左肩，然后停在兜灯的硬停范围内。",
+						"order": 30.0,
+						"requires": [
+							"DIEDIE_RELEASE_A",
+							"DIEDIE_RELEASE_B",
+							"DOG_COOL_RELEASE_C",
+							"DOG_COOL_RELEASE_D",
+							"TANGJIAO_UNLOCK_E"
+						],
+						"stage": 1.0,
+						"target_markers": [
+							{
+								"cell": [
+									4.0,
+									4.0
+								],
+								"label": "F锚胸前承重点",
+								"resolution": "commit"
+							}
+						],
+						"targeting_mode": "single_marker"
+					},
+					"GUARDIAN_SCREEN_WRITER_P4": {
+						"actor_id": "guardian_z",
+						"label": "馆守Z左臂遮蔽主动标记",
+						"message": "单臂屏蔽截断本回合主动写入，但右肩缺口仍保持可见。",
+						"order": 82.0,
+						"repeatable": true,
+						"stage": 4.0,
+						"targeting_mode": "active_writer"
+					},
+					"GUARDIAN_SCREEN_WRITER_P5": {
+						"actor_id": "guardian_z",
+						"label": "馆守Z左臂护住城市供能线",
+						"message": "左臂屏蔽把主动标记留在馆体外侧。",
+						"order": 82.0,
+						"repeatable": true,
+						"stage": 5.0,
+						"targeting_mode": "active_writer"
+					},
+					"JICUN_ACCEPT_ANCHOR_CHECK": {
+						"actor_id": "jicun_post",
+						"label": "接受六锚本地检查",
+						"message": "纪存只接受六锚释放，不把下一步预先算作成功。",
+						"order": 70.0,
+						"requires": [
+							"OLD_GUARDIAN_VERIFY_SIX"
+						],
+						"stage": 1.0
+					},
+					"JICUN_CONFIRM_EAST_GATE": {
+						"actor_id": "jicun_post",
+						"label": "纪存确认东门与零疏散载荷",
+						"message": "纪存读回东门净空、四名操作员、五个Owner和零疏散载荷，西侧捷径保持未使用。",
+						"order": 70.0,
+						"requires": [
+							"OLD_GUARDIAN_CONFIRM_OWNER_SET"
+						],
+						"stage": 6.0
+					},
+					"JICUN_CONFIRM_NO_EMPEROR_CONTROL": {
+						"actor_id": "jicun_post",
+						"label": "登记局部影像、无控制关系",
+						"message": "纪存只记录卡锁已排与无控制源，不给那只眼睛补上主人。",
+						"order": 80.0,
+						"requires": [
+							"TANGJIAO_CONFIRM_FIXTURE"
+						],
+						"stage": 3.0
+					},
+					"JICUN_MEMORY_POWER_ORDER": {
+						"actor_id": "jicun_post",
+						"label": "辨认低可信灯光供电动作",
+						"message": "反灼只留下“灯可以离开原址”的动作感，没有给出路线答案。",
+						"order": 10.0,
+						"requires": [
+							"AUTO_PREMOVE_BODY"
+						],
+						"stage": 3.0,
+						"target_markers": [
+							{
+								"cell": [
+									7.0,
+									5.0
+								],
+								"label": "留言墙移动供电",
+								"resolution": "commit"
+							}
+						],
+						"targeting_mode": "single_marker"
+					},
+					"JICUN_PREVIEW_BODY_LOAD_P1": {
+						"actor_id": "jicun_post",
+						"label": "预览下一段馆体承重",
+						"message": "纪存把下一段承重格留在公屏上，没有把预览写成命令。",
+						"order": 5.0,
+						"repeatable": true,
+						"stage": 1.0
+					},
+					"JICUN_PREVIEW_BODY_P4": {
+						"actor_id": "jicun_post",
+						"label": "公开下一次馆体占格",
+						"message": "纪存只把下一步进入与离开格公开；本回合仍可不用这条路线。",
+						"order": 72.0,
+						"repeatable": true,
+						"stage": 4.0
+					},
+					"JICUN_PREVIEW_BODY_P5": {
+						"actor_id": "jicun_post",
+						"label": "公开下一段东行占格",
+						"message": "纪存把下一段进入、离开和压塌格全部公开；预览没有替任何岗位确认。",
+						"order": 72.0,
+						"repeatable": true,
+						"stage": 5.0
+					},
+					"JICUN_RECORD_UNCARRIED": {
+						"actor_id": "jicun_post",
+						"label": "记录两项具体未带走物",
+						"message": "两项物件、柜号和旧址位置进入公开清单，灯保持亮着。",
+						"order": 30.0,
+						"requires": [
+							"DOG_ROUTE_CARGO_B"
+						],
+						"stage": 2.0,
+						"targeting_mode": "uncarried_record"
+					},
+					"JICUN_UNDO_BODY_ACTION_P5": {
+						"actor_id": "jicun_post",
+						"label": "撤回本回合馆体动作",
+						"message": "纪存撤回刚确认的馆体动作；Mask、热量、冷却和锁臂恢复到确认前，下一条路线仍须重新选择。",
+						"order": 73.0,
+						"repeatable": true,
+						"resource": "body_undo",
+						"stage": 5.0
+					},
+					"LUHENG_RECALC_WRITER_P4": {
+						"actor_id": "luheng_post",
+						"label": "按当前伤形复算关键落点",
+						"message": "陆衡划掉上一轮包络，主动写入从关键冲击降为当前可承受落点。",
+						"order": 75.0,
+						"repeatable": true,
+						"stage": 4.0
+					},
+					"LUHENG_REVEAL_TRUE_LANDING_P1": {
+						"actor_id": "luheng_post",
+						"label": "复核主动标记真实落点",
+						"message": "陆衡把中继线压暗，只留下本回合真正会落下的那一格。",
+						"order": 5.0,
+						"repeatable": true,
+						"stage": 1.0
+					},
+					"LUHENG_SIGN_REVISED_ENVELOPE": {
+						"actor_id": "luheng_post",
+						"label": "公开划掉旧模型并签修订包络",
+						"message": "陆衡把第一版固定建筑箭头作废，只签当前不对称移动包络。",
+						"order": 50.0,
+						"requires": [
+							"DOG_CLEAR_RIGHT_LOCK"
+						],
+						"stage": 3.0
+					},
+					"LUHENG_SLOW_SAFE_MOVE_P5": {
+						"actor_id": "luheng_post",
+						"label": "复算本回合低速安全包络",
+						"message": "陆衡按当前伤形重算速度，主动关键冲击被降为可承受写入。",
+						"order": 76.0,
+						"repeatable": true,
+						"stage": 5.0
+					},
+					"LUHENG_VERIFY_CITY_ENVELOPE": {
+						"actor_id": "luheng_post",
+						"label": "陆衡复核医院电网与管线包络",
+						"message": "陆衡逐项读回医院电网、东侧管线和东门净空，只签当前速度与当前受损轮廓。",
+						"order": 20.0,
+						"requires": [
+							"QIHAI_PUBLIC_DELAY_RECEIPT"
+						],
+						"stage": 6.0
+					},
+					"OLD_GUARDIAN_ASSERT_LOADOUT": {
+						"actor_id": "old_guardian_post",
+						"label": "核对两类安全、一类留置",
+						"message": "两类载荷在不同安全舱；第三类仍在旧址亮灯，人员与消防货物不在枚举。",
+						"order": 50.0,
+						"requires": [
+							"TANGJIAO_DECOUPLE_UNCARRIED"
+						],
+						"stage": 2.0
+					},
+					"OLD_GUARDIAN_CONFIRM_OPERATOR_TRACKERS_P3": {
+						"actor_id": "old_guardian_post",
+						"label": "逐一确认四枚岗位定位器与独立停止权",
+						"message": "旧守护者按纪存、兜灯、唐胶、陆衡逐一回读：四枚定位器都在各自保护框内，四条停止权仍彼此独立。",
+						"order": 90.0,
+						"requires": [
+							"JICUN_CONFIRM_NO_EMPEROR_CONTROL"
+						],
+						"stage": 3.0
+					},
+					"OLD_GUARDIAN_CONFIRM_OWNER_SET": {
+						"actor_id": "old_guardian_post",
+						"label": "旧守护者核对五个Owner",
+						"message": "旧守护者按岗位播报纪存、兜灯、唐胶、陆衡和自己；四枚定位器都在保护框内，七海只在远程回执上。",
+						"order": 60.0,
+						"requires": [
+							"DOUDENG_FINAL_HARD_STOP"
+						],
+						"stage": 6.0
+					},
+					"OLD_GUARDIAN_DISPATCH_P1": {
+						"actor_id": "old_guardian_post",
+						"label": "调度一台未行动小机 +1移动",
+						"message": "旧守护者只调度一台尚未行动的小机；其余路线保持原样。",
+						"order": 5.0,
+						"repeatable": true,
+						"stage": 1.0,
+						"targeting_mode": "dispatch_unit"
+					},
+					"OLD_GUARDIAN_DISPATCH_P4": {
+						"actor_id": "old_guardian_post",
+						"label": "调度一台未行动小机 +1移动",
+						"message": "旧守护者为一台未行动小机腾出一段导览轨，其余小机不跟着移动。",
+						"order": 76.0,
+						"repeatable": true,
+						"stage": 4.0,
+						"targeting_mode": "dispatch_unit"
+					},
+					"OLD_GUARDIAN_DISPATCH_P5": {
+						"actor_id": "old_guardian_post",
+						"label": "调度一台未行动小机 +1移动",
+						"message": "旧守护者只为一台小机开放一段城市导览轨。",
+						"order": 77.0,
+						"repeatable": true,
+						"stage": 5.0,
+						"targeting_mode": "dispatch_unit"
+					},
+					"OLD_GUARDIAN_VERIFY_SIX": {
+						"actor_id": "old_guardian_post",
+						"label": "逐点复诵六锚回执",
+						"message": "旧守护者按A到F复诵：机械销离位，城市地基仍在，停止权可用。",
+						"order": 60.0,
+						"requires": [
+							"DIEDIE_RELEASE_F"
+						],
+						"stage": 1.0
+					},
+					"OPEN_B1_RIBS": {
+						"actor_id": "wanji_body_control",
+						"body_target": "HALF_RISE_RIBS",
+						"label": "馆体动作2/3：打开B1肋架",
+						"message": "B1脊柱两侧展开，烧损风道与移动骨架同时露出。",
+						"order": 20.0,
+						"requires": [
+							"SLIDE_L1_ARMOR"
+						],
+						"stage": 4.0,
+						"targeting_mode": "body_transition"
+					},
+					"QIHAI_PUBLIC_DELAY_RECEIPT": {
+						"actor_id": "qihai_remote_post",
+						"label": "读取七海的东锁公开延迟回执",
+						"message": "远程值守席公开写入四十秒：四名登记操作员、零疏散载荷、精确两类货载、东行低速；停职延长同时生效。",
+						"order": 10.0,
+						"stage": 6.0
+					},
+					"SHADOW_JAM_RIGHT_LOCK": {
+						"actor_id": "__system__",
+						"label": "皇影黑框卡住右锁泊臂",
+						"message": "无光眼睁开，黑框咬住右锁臂；旧拘束只阻止继续扩张。",
+						"order": 20.0,
+						"requires": [
+							"JICUN_MEMORY_POWER_ORDER"
+						],
+						"stage": 3.0
+					},
+					"SLIDE_L1_ARMOR": {
+						"actor_id": "wanji_body_control",
+						"body_target": "HALF_RISE_ARMOR",
+						"label": "馆体动作1/3：滑开L1展陈甲片",
+						"message": "留言墙与模型病院所在展层沿旧轨滑开，下一圈占格公开。",
+						"order": 10.0,
+						"stage": 4.0,
+						"targeting_mode": "body_transition"
+					},
+					"TANGJIAO_CONFIRM_FIXTURE": {
+						"actor_id": "tangjiao_post",
+						"label": "复核两类固定座仍在安全位",
+						"message": "唐胶逐项复核携带位与留置位，没有用乐观口令替代机械扣。",
+						"order": 70.0,
+						"requires": [
+							"DOUDENG_HARD_STOP_SHADOW"
+						],
+						"stage": 3.0
+					},
+					"TANGJIAO_COUNTERWEIGHT": {
+						"actor_id": "tangjiao_post",
+						"label": "唐胶锁死最后一组配重",
+						"message": "唐胶把最后一组固定带压进机械扣，留置清单与两个携带位的编号仍能一一对上。",
+						"order": 30.0,
+						"requires": [
+							"LUHENG_VERIFY_CITY_ENVELOPE"
+						],
+						"stage": 6.0
+					},
+					"TANGJIAO_DECOUPLE_UNCARRIED": {
+						"actor_id": "tangjiao_post",
+						"label": "非破坏解耦未携带类",
+						"message": "唐胶释放移动侧固定与供能，没有再切断一段永久结构。",
+						"order": 40.0,
+						"requires": [
+							"JICUN_RECORD_UNCARRIED"
+						],
+						"stage": 2.0,
+						"target_markers": [
+							{
+								"cell": [
+									12.0,
+									8.0
+								],
+								"label": "旧址留置固定座",
+								"resolution": "commit"
+							}
+						],
+						"targeting_mode": "single_marker"
+					},
+					"TANGJIAO_RESEAT_P4": {
+						"actor_id": "tangjiao_post",
+						"label": "重置本回合载荷固定座",
+						"message": "唐胶逐扣重压携带位；固定座绿灯不代表下一步已经获准。",
+						"order": 74.0,
+						"repeatable": true,
+						"stage": 4.0
+					},
+					"TANGJIAO_RESEAT_P5": {
+						"actor_id": "tangjiao_post",
+						"label": "重置城市段载荷固定座",
+						"message": "唐胶重新压紧两类载荷，留置类仍在旧址清单中，没有被悄悄补回。",
+						"order": 75.0,
+						"repeatable": true,
+						"stage": 5.0
+					},
+					"TANGJIAO_UNLOCK_E": {
+						"actor_id": "tangjiao_post",
+						"label": "解除E锚上的展轨固定座",
+						"message": "唐胶确认后来加装的展轨座不再把E锚压回地基。",
+						"order": 10.0,
+						"stage": 1.0,
+						"target_markers": [
+							{
+								"cell": [
+									6.0,
+									7.0
+								],
+								"label": "E锚展轨固定座",
+								"resolution": "commit"
+							}
+						],
+						"targeting_mode": "single_marker"
+					}
+				},
+				"body_states": [
+					"FIXED_BUILDING",
+					"PREMOVED_ONE_SECTION",
+					"HALF_RISE",
+					"CRUISE_CARRIER_WITH_DAMAGE"
+				],
+				"evacuee_payload_count": 0.0,
+				"hard_nonclaims": [
+					"NO_HIDDEN_OR_RESPAWNED_PEOPLE",
+					"NO_PEOPLE_IN_LOADOUT_ENUM",
+					"NO_THREE_OF_THREE_LOADOUT",
+					"NO_QIHAI_ONBOARD_OR_WRITE_AUTHORITY",
+					"NO_GUARDIAN_RIGHT_ARM_RECOVERY_OR_E04_FLYING_FIST",
+					"NO_EMPEROR_CONTROL_OR_FREE_CORRECTION",
+					"NO_PERSISTENT_WRITE_BEFORE_RT054",
+					"NO_AUTOMATIC_ONE_CUTSCENE_TRANSFORMATION"
+				],
+				"loadout_combinations": [
+					"LIFE_PHYSICAL",
+					"LIFE_ARCHIVE",
+					"PHYSICAL_ARCHIVE"
+				],
+				"loadout_staging_cells": {
+					"anchor_fixture_a": [
+						4.0,
+						10.0
+					],
+					"anchor_fixture_b": [
+						10.0,
+						10.0
+					],
+					"diedie": [
+						2.0,
+						9.0
+					],
+					"machine_dog": [
+						12.0,
+						9.0
+					]
+				},
+				"local_checkpoints": [
+					"ANCHOR_LOCAL",
+					"LOADOUT_LOCAL",
+					"HALF_RISE_LOCAL",
+					"CITY_LOCAL"
+				],
+				"owner_set": [
+					"JICUN",
+					"DOUDENG",
+					"TANGJIAO",
+					"LUHENG",
+					"OLD_GUARDIAN"
+				],
+				"people_cargo": "FORBIDDEN",
+				"production_body_states": [
+					"FIXED_BUILDING",
+					"HALF_RISE",
+					"CRUISE_CARRIER_WITH_DAMAGE"
+				],
+				"registered_operator_crew": [
+					"JICUN",
+					"DOUDENG",
+					"TANGJIAO",
+					"LUHENG"
+				],
+				"source_grid": "16x12_single_isometric_city_carrier_map",
+				"stage_requirements": {
+					"1": {
+						"one_of": [],
+						"required": [
+							"DIEDIE_RELEASE_A",
+							"DIEDIE_RELEASE_B",
+							"DOG_COOL_RELEASE_C",
+							"DOG_COOL_RELEASE_D",
+							"TANGJIAO_UNLOCK_E",
+							"GUARDIAN_PROACTIVE_LEFT_SUPPORT",
+							"DOUDENG_CONFIRM_HARD_STOP",
+							"FINAL_F_CLAMP_HOLDING",
+							"DIEDIE_RELEASE_F",
+							"OLD_GUARDIAN_VERIFY_SIX",
+							"JICUN_ACCEPT_ANCHOR_CHECK"
+						]
+					},
+					"2": {
+						"one_of": [],
+						"required": [
+							"DIEDIE_ROUTE_CARGO_A",
+							"DOG_ROUTE_CARGO_B",
+							"JICUN_RECORD_UNCARRIED",
+							"TANGJIAO_DECOUPLE_UNCARRIED",
+							"OLD_GUARDIAN_ASSERT_LOADOUT"
+						]
+					},
+					"3": {
+						"one_of": [],
+						"required": [
+							"AUTO_PREMOVE_BODY",
+							"JICUN_MEMORY_POWER_ORDER",
+							"SHADOW_JAM_RIGHT_LOCK",
+							"DIEDIE_TRACE_JAM",
+							"DOG_CLEAR_RIGHT_LOCK",
+							"LUHENG_SIGN_REVISED_ENVELOPE",
+							"DOUDENG_HARD_STOP_SHADOW",
+							"TANGJIAO_CONFIRM_FIXTURE",
+							"JICUN_CONFIRM_NO_EMPEROR_CONTROL",
+							"OLD_GUARDIAN_CONFIRM_OPERATOR_TRACKERS_P3"
+						]
+					},
+					"4": {
+						"one_of": [],
+						"required": [
+							"SLIDE_L1_ARMOR",
+							"OPEN_B1_RIBS",
+							"DEPLOY_BOTH_LOCK_ARMS",
+							"DOUDENG_TEST_STOP"
+						]
+					},
+					"5": {
+						"one_of": [],
+						"required": [
+							"CORRIDOR_FOLD",
+							"CITY_MOVE_EAST_1",
+							"CITY_MOVE_EAST_2",
+							"CITY_MOVE_EAST_GATE"
+						]
+					},
+					"6": {
+						"one_of": [],
+						"required": [
+							"QIHAI_PUBLIC_DELAY_RECEIPT",
+							"LUHENG_VERIFY_CITY_ENVELOPE",
+							"TANGJIAO_COUNTERWEIGHT",
+							"DOG_FINAL_COOL",
+							"DOUDENG_FINAL_HARD_STOP",
+							"OLD_GUARDIAN_CONFIRM_OWNER_SET",
+							"JICUN_CONFIRM_EAST_GATE",
+							"FINALIZE_CRUISE"
+						]
+					}
+				}
+			},
+			"scenario_driver": "c01e04_carrier_escape_v1",
+			"stable_object_bindings": [
+				{
+					"binding_id": "BIND_C01E04_SIX_ANCHORS_TO_RELEASE_CHAIN",
+					"label": "六条穿过移动脊柱的真实力线",
+					"stable_object_id": "OBJ_C01E04_SIX_EXTERNAL_ANCHORS",
+					"targets": [
+						{
+							"kind": "unit",
+							"target_id": "wanji_body_control"
+						},
+						{
+							"kind": "battle_flag",
+							"target_id": "JICUN_ACCEPT_ANCHOR_CHECK"
+						}
+					]
+				},
+				{
+					"binding_id": "BIND_C01E04_SINGLE_ARM_COUPLER_TO_GUARDIAN_SUPPORT",
+					"label": "只承认左肩的单臂胸前接驳座",
+					"stable_object_id": "OBJ_C01E04_SINGLE_ARM_CHEST_COUPLER",
+					"targets": [
+						{
+							"kind": "unit",
+							"target_id": "guardian_z"
+						},
+						{
+							"kind": "battle_flag",
+							"target_id": "GUARDIAN_PROACTIVE_LEFT_SUPPORT"
+						},
+						{
+							"kind": "battle_flag",
+							"target_id": "DOUDENG_CONFIRM_HARD_STOP"
+						}
+					]
+				},
+				{
+					"binding_id": "BIND_C01E04_THREE_RAILS_TO_EXACT_TWO_LOADOUT",
+					"label": "三类真实载荷与两条固定链",
+					"stable_object_id": "OBJ_C01E04_THREE_LOADOUT_RAILS",
+					"targets": [
+						{
+							"kind": "battle_flag",
+							"target_id": "OLD_GUARDIAN_ASSERT_LOADOUT"
+						},
+						{
+							"kind": "battle_flag",
+							"target_id": "JICUN_RECORD_UNCARRIED"
+						}
+					]
+				}
+			],
+			"start_prompt": "三架风险标记无人机已经公开六锚目标。先用地图行动体做真实释放，再由对应岗位核对。",
+			"status": "candidate_runtime_graybox",
+			"title": "万机馆站起来 / 六阶段城市撤收战",
+			"turn_limit": 16.0,
+			"units": [
+				{
+					"canon_entity_id": "V353U038",
+					"cell": [
+						2.0,
+						9.0
+					],
+					"hp": 1.0,
+					"id": "diedie",
+					"map_token": "跌",
+					"move": 4.0,
+					"name": "跌跌 / 低位锚点与失败振动",
+					"no_hp_ui": true,
+					"scenario_role": "map_actor_anchor_vibration",
+					"team": "player",
+					"weapons": []
+				},
+				{
+					"canon_entity_id": "V353U040",
+					"cell": [
+						11.0,
+						8.0
+					],
+					"hp": 1.0,
+					"id": "machine_dog",
+					"map_token": "犬",
+					"move": 5.0,
+					"name": "机器犬 / 冷却与锁臂排障",
+					"no_hp_ui": true,
+					"scenario_role": "map_actor_cooling_lock_clear",
+					"team": "player",
+					"weapons": []
+				},
+				{
+					"cell": [
+						4.0,
+						9.0
+					],
+					"hp": 1.0,
+					"id": "anchor_fixture_a",
+					"map_token": "夹A",
+					"move": 2.0,
+					"name": "固定夹具A / 锚线遮蔽",
+					"no_hp_ui": true,
+					"scenario_role": "map_actor_fixture_no_owner_substitute",
+					"team": "player",
+					"weapons": []
+				},
+				{
+					"cell": [
+						9.0,
+						9.0
+					],
+					"hp": 1.0,
+					"id": "anchor_fixture_b",
+					"map_token": "夹B",
+					"move": 2.0,
+					"name": "固定夹具B / 载荷配重",
+					"no_hp_ui": true,
+					"scenario_role": "map_actor_fixture_no_owner_substitute",
+					"team": "player",
+					"weapons": []
+				},
+				{
+					"canon_entity_id": "V353U001",
+					"cell": [
+						4.0,
+						2.0
+					],
+					"hp": 1.0,
+					"id": "guardian_z",
+					"map_token": "Z",
+					"move": 0.0,
+					"name": "馆守Z / 永久单臂胸前承重",
+					"no_hp_ui": true,
+					"scenario_role": "single_arm_proactive_support_with_hard_stop",
+					"team": "player",
+					"weapons": []
+				},
+				{
+					"canon_entity_id": "MECHA_WANJI_MOBILE_CHASSIS",
+					"cell": [
+						6.0,
+						5.0
+					],
+					"hp": 1.0,
+					"id": "wanji_body_control",
+					"map_token": "馆",
+					"move": 0.0,
+					"name": "万机馆本体 / 共享巨型动作",
+					"no_hp_ui": true,
+					"scenario_role": "carrier_body_action_handle",
+					"team": "player",
+					"weapons": []
+				},
+				{
+					"canon_entity_id": "CH_JICUN",
+					"cell": [
+						4.0,
+						4.0
+					],
+					"hp": 1.0,
+					"id": "jicun_post",
+					"map_token": "纪",
+					"move": 0.0,
+					"name": "纪存 / 西侧路由与东门确认",
+					"no_hp_ui": true,
+					"scenario_role": "protected_operator_post_not_cargo",
+					"team": "player",
+					"weapons": []
+				},
+				{
+					"canon_entity_id": "CH001",
+					"cell": [
+						6.0,
+						4.0
+					],
+					"hp": 1.0,
+					"id": "doudeng_post",
+					"map_token": "兜",
+					"move": 0.0,
+					"name": "兜灯 / 馆守Z与B1供电硬停",
+					"no_hp_ui": true,
+					"scenario_role": "protected_operator_post_hard_stop_owner",
+					"team": "player",
+					"weapons": []
+				},
+				{
+					"canon_entity_id": "CH_TANGJIAO",
+					"cell": [
+						8.0,
+						4.0
+					],
+					"hp": 1.0,
+					"id": "tangjiao_post",
+					"map_token": "唐",
+					"move": 0.0,
+					"name": "唐胶 / 载荷固定与留置清单",
+					"no_hp_ui": true,
+					"scenario_role": "protected_operator_post_cargo_owner",
+					"team": "player",
+					"weapons": []
+				},
+				{
+					"canon_entity_id": "CH_LUHENG",
+					"cell": [
+						10.0,
+						4.0
+					],
+					"hp": 1.0,
+					"id": "luheng_post",
+					"map_token": "陆",
+					"move": 0.0,
+					"name": "陆衡 / 当前移动包络签字",
+					"no_hp_ui": true,
+					"scenario_role": "protected_operator_post_engineering_owner",
+					"team": "player",
+					"weapons": []
+				},
+				{
+					"canon_entity_id": "CH002",
+					"cell": [
+						12.0,
+						4.0
+					],
+					"hp": 1.0,
+					"id": "old_guardian_post",
+					"map_token": "导",
+					"move": 0.0,
+					"name": "旧守护者 / 调度与独立停止",
+					"no_hp_ui": true,
+					"scenario_role": "nonhuman_owner_dispatch_and_stop",
+					"team": "player",
+					"weapons": []
+				},
+				{
+					"canon_entity_id": "CH_QIHAI",
+					"cell": [
+						15.0,
+						1.0
+					],
+					"hp": 1.0,
+					"id": "qihai_remote_post",
+					"map_token": "讯",
+					"move": 0.0,
+					"name": "七海 / 远程只读申诉席（不在舰）",
+					"no_hp_ui": true,
+					"scenario_role": "remote_receipt_not_local_owner_not_onboard",
+					"team": "player",
+					"weapons": []
+				},
+				{
+					"cell": [
+						12.0,
+						7.0
+					],
+					"hp": 1.0,
+					"id": "right_lock_sensor",
+					"map_token": "锁",
+					"move": 0.0,
+					"name": "右锁泊臂监视点",
+					"no_hp_ui": true,
+					"scenario_role": "public_shadow_jam_observer",
+					"team": "object",
+					"weapons": []
+				},
+				{
+					"cell": [
+						12.0,
+						2.0
+					],
+					"hp": 1.0,
+					"id": "drone_d1",
+					"intent_target_id": "anchor_a",
+					"intent_verb": "标记",
+					"map_token": "D1",
+					"move": 4.0,
+					"name": "风险标记无人机D1",
+					"no_hp_ui": true,
+					"scenario_role": "public_intent_firelock_writer",
+					"team": "enemy",
+					"weapons": []
+				},
+				{
+					"cell": [
+						14.0,
+						9.0
+					],
+					"hp": 1.0,
+					"id": "drone_d2",
+					"intent_target_id": "anchor_c",
+					"intent_verb": "中继",
+					"map_token": "D2",
+					"move": 4.0,
+					"name": "风险标记无人机D2",
+					"no_hp_ui": true,
+					"scenario_role": "public_intent_firelock_writer",
+					"team": "enemy",
+					"weapons": []
+				},
+				{
+					"cell": [
+						10.0,
+						10.0
+					],
+					"hp": 1.0,
+					"id": "drone_d3",
+					"intent_target_id": "anchor_e",
+					"intent_verb": "中继",
+					"map_token": "D3",
+					"move": 4.0,
+					"name": "风险标记无人机D3",
+					"no_hp_ui": true,
+					"scenario_role": "public_intent_firelock_writer",
+					"team": "enemy",
+					"weapons": []
+				},
+				{
+					"canon_entity_id": "MECHA_BLACK_SHOWCASE_EMPEROR_SHADOW",
+					"cell": [
+						11.0,
+						7.0
+					],
+					"hp": 0.0,
+					"id": "emperor_shadow",
+					"map_token": "影",
+					"move": 0.0,
+					"name": "皇影 / 黑展柜局部影像",
+					"no_hp_ui": true,
+					"scenario_role": "first_visible_restrained_no_control",
+					"team": "object",
+					"weapons": []
+				}
+			],
+			"variant_id": "story_first_exact_two_of_three_v1",
+			"withdraw_allowed": false
+		},
+		"res://content/episodes/c01/e04/explore/c01_e04_b1_engineering_inspection.json": {
+			"background_path": "res://assets/backgrounds/bg_hangar.png",
+			"evidence_facts": {
+				"inspect_single_arm_chest_coupler": "C01E04_B1_SINGLE_ARM_COUPLER_CONFIRMED_LOCAL",
+				"inspect_six_external_anchors": "C01E04_B1_ANCHOR_FORCE_CONFIRMED_LOCAL",
+				"inspect_three_loadout_rails": "C01E04_B1_THREE_LOADOUT_ENTRIES_CONFIRMED_LOCAL"
+			},
+			"investigation_id": "C01E04-B1-ENGINEERING-INSPECTION",
+			"location": "万机馆B1移动脊柱 / 消防监管返入区",
+			"play_bounds": [
+				48.0,
+				112.0,
+				860.0,
+				548.0
+			],
+			"player_start": [
+				118.0,
+				598.0
+			],
+			"required_object_ids": [
+				"OBJ_C01E04_SIX_EXTERNAL_ANCHORS",
+				"OBJ_C01E04_SINGLE_ARM_CHEST_COUPLER",
+				"OBJ_C01E04_THREE_LOADOUT_RAILS"
+			],
+			"required_offer_ids": [
+				"inspect_six_external_anchors",
+				"inspect_single_arm_chest_coupler",
+				"inspect_three_loadout_rails"
+			],
+			"runtime_contract_source": "C01E04_RT001_RT005",
+			"spatial_cast": [
+				{
+					"accent": "58c8d9",
+					"actor_id": "CH_JICUN",
+					"display_name": "纪存",
+					"portrait_path": "res://assets/portraits/portrait_jicun.png",
+					"side": "left"
+				},
+				{
+					"accent": "65bda7",
+					"actor_id": "CH001",
+					"display_name": "兜灯",
+					"portrait_path": "res://assets/portraits/portrait_doudeng.png",
+					"side": "right"
+				},
+				{
+					"accent": "e2a74b",
+					"actor_id": "CH_TANGJIAO",
+					"display_name": "唐胶",
+					"portrait_path": "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png",
+					"side": "right"
+				},
+				{
+					"accent": "7fa8b5",
+					"actor_id": "CH_LUHENG",
+					"display_name": "陆衡 / 市政结构响应",
+					"portrait_path": "",
+					"side": "right"
+				}
+			],
+			"stable_objects": [
+				{
+					"initial_state": "fixed_building_model_still_assumed",
+					"interaction_offers": [
+						{
+							"add_tags": [
+								"b1_key_condition",
+								"anchor_force",
+								"mobile_spine"
+							],
+							"failure_continuation": {
+								"player_feedback": "固定建筑模型仍不收敛；保留六条原始力线，换成移动体重算。",
+								"policy": "remain_in_spatial"
+							},
+							"first_sequence": [
+								{
+									"beat_id": "e04_b1_anchor_01",
+									"speaker": "旁白",
+									"stage_action": "六枚锚的应变曲线同时投到地面",
+									"text": "陆衡先按固定建筑画出卸载顺序，东侧锚的箭头却穿过地基，继续向馆内延伸。"
+								},
+								{
+									"actor_id": "CH_LUHENG",
+									"beat_id": "e04_b1_anchor_02",
+									"speaker": "陆衡",
+									"text": "箭头不该穿楼。谁的传感器漂了？"
+								},
+								{
+									"actor_id": "CH_JICUN",
+									"beat_id": "e04_b1_anchor_03",
+									"speaker": "纪存",
+									"stage_action": "调出跌跌在E03三次失败位移中的振动记录",
+									"text": "三次都往同一个方向漂。不是今天才坏。"
+								},
+								{
+									"actor_id": "CH_LUHENG",
+									"beat_id": "e04_b1_anchor_04",
+									"speaker": "陆衡",
+									"stage_action": "删去地基支承层，只留下贯穿各区的骨架",
+									"text": "不是地基托楼。是楼在踩地基。按移动体重算。"
+								},
+								{
+									"actor_id": "CH_TANGJIAO",
+									"beat_id": "e04_b1_anchor_05",
+									"speaker": "唐胶",
+									"text": "先别给它起新名字。把六根钉子一根根拔明白。"
+								}
+							],
+							"first_text": "六锚的力线没有回到地基，而是穿过移动脊柱指向馆守Z缺失的右臂。",
+							"known_state": "six_anchor_force_routes_cross_mobile_spine",
+							"offer_id": "inspect_six_external_anchors",
+							"outcome_contract": {
+								"state_source": "known_state",
+								"target_id": "OBJ_C01E04_SIX_EXTERNAL_ANCHORS"
+							},
+							"repeat_policy": "once_then_recap",
+							"repeat_sequence": [
+								{
+									"actor_id": "CH_LUHENG",
+									"beat_id": "e04_b1_anchor_repeat",
+									"speaker": "陆衡",
+									"text": "六点同时位移，固定建筑模型不收敛。结论没变。"
+								}
+							],
+							"repeat_text": "六条力线仍穿过移动脊柱；固定建筑图已经被划掉。"
+						}
+					],
+					"interaction_radius": 92.0,
+					"label": "六枚外部锚的入土回执",
+					"position": [
+						196.0,
+						244.0
+					],
+					"stable_object_id": "OBJ_C01E04_SIX_EXTERNAL_ANCHORS"
+				},
+				{
+					"initial_state": "symmetric_outline_still_visible",
+					"interaction_offers": [
+						{
+							"add_tags": [
+								"b1_key_condition",
+								"guardian_z",
+								"single_arm_bearing"
+							],
+							"failure_continuation": {
+								"player_feedback": "对称补全仍在制造一只不存在的右臂；删掉补线后再闭合包络。",
+								"policy": "remain_in_spatial"
+							},
+							"first_sequence": [
+								{
+									"beat_id": "e04_b1_coupler_01",
+									"speaker": "旁白",
+									"stage_action": "接驳屏自动补出一条半透明右肩中心线",
+									"text": "算法把缺口当成尚未识别的对称部件。"
+								},
+								{
+									"actor_id": "CH001",
+									"beat_id": "e04_b1_coupler_02",
+									"speaker": "兜灯",
+									"stage_action": "用油笔沿空掉的右肩画一道叉",
+									"text": "右边没有手。别在包络里补一条。"
+								},
+								{
+									"actor_id": "CH_LUHENG",
+									"beat_id": "e04_b1_coupler_03",
+									"speaker": "陆衡",
+									"text": "只靠左肩，胸前座会多吃十一度扭矩。"
+								},
+								{
+									"actor_id": "CH001",
+									"beat_id": "e04_b1_coupler_04",
+									"speaker": "兜灯",
+									"text": "那就算十一度。不要算一只不存在的手。"
+								},
+								{
+									"beat_id": "e04_b1_coupler_05",
+									"speaker": "旁白",
+									"stage_action": "对称中心线从工程图上消失",
+									"text": "新的安全包络第一次按馆守Z现在的身体闭合。"
+								}
+							],
+							"first_text": "胸前接驳只能从左肩承重；右侧旧轮廓不得被软件补回。",
+							"known_state": "left_shoulder_only_chest_bearing_envelope",
+							"offer_id": "inspect_single_arm_chest_coupler",
+							"outcome_contract": {
+								"state_source": "known_state",
+								"target_id": "OBJ_C01E04_SINGLE_ARM_CHEST_COUPLER"
+							},
+							"repeat_policy": "once_then_recap",
+							"repeat_sequence": [
+								{
+									"actor_id": "CH001",
+									"beat_id": "e04_b1_coupler_repeat",
+									"speaker": "兜灯",
+									"text": "左肩承重，右肩封口，硬停保留。别替它长回来。"
+								}
+							],
+							"repeat_text": "右边仍是空的；当前包络只承认左肩。"
+						}
+					],
+					"interaction_radius": 94.0,
+					"label": "馆守Z胸前单臂接驳座",
+					"position": [
+						452.0,
+						354.0
+					],
+					"stable_object_id": "OBJ_C01E04_SINGLE_ARM_CHEST_COUPLER"
+				},
+				{
+					"initial_state": "three_classes_unmeasured",
+					"interaction_offers": [
+						{
+							"add_tags": [
+								"b1_key_condition",
+								"loadout_entries",
+								"exact_two"
+							],
+							"failure_continuation": {
+								"player_feedback": "三条固定链仍未逐件量清；人员不能被塞进载荷表凑数。",
+								"policy": "remain_in_spatial"
+							},
+							"first_sequence": [
+								{
+									"beat_id": "e04_b1_rail_01",
+									"speaker": "旁白",
+									"stage_action": "三条载荷轨分别亮起水循环蓝、实体标签黄和服务器冷却白",
+									"text": "每条轨都有重量、接口和离开以后会留下的空位。"
+								},
+								{
+									"actor_id": "CH_TANGJIAO",
+									"beat_id": "e04_b1_rail_02",
+									"speaker": "唐胶",
+									"stage_action": "把小满的画筒、孤本模型托和断件盒逐件摆进黄色轮廓",
+									"text": "别写‘实体馆藏一批’。这些东西离开柜子以后还得知道自己是哪一件。"
+								},
+								{
+									"actor_id": "CH001",
+									"beat_id": "e04_b1_rail_03",
+									"speaker": "兜灯",
+									"stage_action": "检查净水转接件与温控旧制插头",
+									"text": "生活循环不带，三十六小时会先从这里缩水。"
+								},
+								{
+									"actor_id": "CH_LUHENG",
+									"beat_id": "e04_b1_rail_04",
+									"speaker": "陆衡",
+									"text": "服务器每回合吃冷却，实体轨吃重量，生活轨占外锁转接位。没有免费第三条。"
+								},
+								{
+									"actor_id": "CH_JICUN",
+									"beat_id": "e04_b1_rail_05",
+									"speaker": "纪存",
+									"text": "人员呢？"
+								},
+								{
+									"actor_id": "CH_LUHENG",
+									"beat_id": "e04_b1_rail_06",
+									"speaker": "陆衡",
+									"stage_action": "把人员栏从载荷表顶部移出",
+									"text": "楼外二十九人不回装。馆内四个是岗位，不是货。"
+								}
+							],
+							"first_text": "生活维持、实体独有馆藏和档案服务器各占一条真实固定链；窗口只够完成两条。",
+							"known_state": "exact_two_rails_can_be_fixed_in_window",
+							"offer_id": "inspect_three_loadout_rails",
+							"outcome_contract": {
+								"state_source": "known_state",
+								"target_id": "OBJ_C01E04_THREE_LOADOUT_RAILS"
+							},
+							"repeat_policy": "once_then_recap",
+							"repeat_sequence": [
+								{
+									"actor_id": "CH_JICUN",
+									"beat_id": "e04_b1_rail_repeat",
+									"speaker": "纪存",
+									"text": "三类，保两类。人员不进载荷表。"
+								}
+							],
+							"repeat_text": "三类仍各占一条固定链，人员不进表，窗口仍只够两条。"
+						}
+					],
+					"interaction_radius": 96.0,
+					"label": "三类非人员载荷入口",
+					"position": [
+						708.0,
+						492.0
+					],
+					"stable_object_id": "OBJ_C01E04_THREE_LOADOUT_RAILS"
+				},
+				{
+					"initial_state": "corporate_recovery_scar",
+					"interaction_offers": [
+						{
+							"failure_continuation": {
+								"player_feedback": "锚位仍是空的；这条回收痕迹不阻断B1三项工程条件。",
+								"policy": "short_recap"
+							},
+							"first_sequence": [
+								{
+									"beat_id": "e04_b1_fist_01",
+									"speaker": "旁白",
+									"text": "锚位的红漆被运输架拖出两道新痕，中央没有机体，只有一枚折断的报价夹。"
+								},
+								{
+									"actor_id": "CH_JICUN",
+									"beat_id": "e04_b1_fist_02",
+									"speaker": "纪存",
+									"text": "豪司至少把签名带走了。"
+								},
+								{
+									"actor_id": "CH_TANGJIAO",
+									"beat_id": "e04_b1_fist_03",
+									"speaker": "唐胶",
+									"text": "报价夹留下了。很符合他们的运输习惯。"
+								}
+							],
+							"first_text": "勇拳已由企业完成回收；空锚位只保留刮痕，不生成一台可以再次带走的机体。",
+							"known_state": "empty_anchor_not_cargo",
+							"offer_id": "review_empty_brave_fist_anchor",
+							"outcome_contract": {
+								"state_source": "known_state",
+								"target_id": "OBJ_C01E04_EMPTY_BRAVE_FIST_ANCHOR"
+							},
+							"repeat_policy": "once_then_recap",
+							"repeat_sequence": [
+								{
+									"beat_id": "e04_b1_fist_repeat",
+									"speaker": "旁白",
+									"text": "空锚位没有因为多看一眼就把勇拳送回来。"
+								}
+							],
+							"repeat_text": "锚位仍是空的。豪司和勇拳都不在馆内。"
+						}
+					],
+					"interaction_radius": 80.0,
+					"label": "已经空掉的勇拳锚位",
+					"position": [
+						318.0,
+						568.0
+					],
+					"stable_object_id": "OBJ_C01E04_EMPTY_BRAVE_FIST_ANCHOR",
+					"tactical_skip_reason": "勇拳与豪司已被企业回收；空锚位只保留关系与回收痕迹，不能凭调查重新生成一台单位。"
+				},
+				{
+					"initial_state": "folded_under_city_clearance",
+					"interaction_offers": [
+						{
+							"failure_continuation": {
+								"player_feedback": "展开和收回仍是两个后续动作；可先完成三项必要检查。",
+								"policy": "short_recap"
+							},
+							"first_sequence": [
+								{
+									"actor_id": "CH_LUHENG",
+									"beat_id": "e04_b1_lock_01",
+									"speaker": "陆衡",
+									"stage_action": "把展开轮廓叠到东行道路净空线上",
+									"text": "抬升要展开，过街要收回。中间多一次热和一次锁定窗口。"
+								},
+								{
+									"actor_id": "CH001",
+									"beat_id": "e04_b1_lock_02",
+									"speaker": "兜灯",
+									"text": "收回之前给我硬停预览。右边卡住也不能硬拖。"
+								},
+								{
+									"actor_id": "CH_JICUN",
+									"beat_id": "e04_b1_lock_03",
+									"speaker": "纪存",
+									"text": "这项留到城市包络，不在巡检里假装已经解决。"
+								}
+							],
+							"first_text": "锁泊臂半身抬升时展开承重，穿城前必须同步收回；两步属于同一套机构。",
+							"known_state": "same_mechanism_bears_then_folds_for_city",
+							"offer_id": "review_external_lock_arms",
+							"outcome_contract": {
+								"state_source": "known_state",
+								"target_id": "OBJ_C01E04_EXTERNAL_LOCK_ARMS"
+							},
+							"repeat_policy": "once_then_recap",
+							"repeat_sequence": [
+								{
+									"actor_id": "CH_LUHENG",
+									"beat_id": "e04_b1_lock_repeat",
+									"speaker": "陆衡",
+									"text": "展开承重，收回过街。两次动作，两次结算。"
+								}
+							],
+							"repeat_text": "先展开承重，再收回避让；锁泊臂不会免费切换姿态。"
+						}
+					],
+					"interaction_radius": 84.0,
+					"label": "两侧外部锁泊臂",
+					"position": [
+						816.0,
+						208.0
+					],
+					"stable_object_id": "OBJ_C01E04_EXTERNAL_LOCK_ARMS",
+					"tactical_skip_reason": "锁泊臂的展开与收回由城市包络阶段的既有动作结算；巡检对象只提供可选预告，不另造重复机关。"
+				}
+			],
+			"status": "candidate_runtime_data",
+			"story_source": "DOC_V359_C01E04_STORY_FIRST_V1",
+			"target_minutes": "5-7",
+			"title": "它不是固定建筑"
+		}
+	},
+	"source_fingerprint": "743357a241fd63c6515d701465a06c01a2dd8c24e5ad019a00ad0afaf13b240f",
+	"source_manifest_path": "res://content/episodes/c01/e04/manifest.story_first.json",
+	"status": "candidate"
+}

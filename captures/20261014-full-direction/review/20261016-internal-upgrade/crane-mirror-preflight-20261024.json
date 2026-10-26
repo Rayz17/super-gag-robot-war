@@ -1,0 +1,141 @@
+{
+  "structure_pass": true,
+  "errors": [],
+  "packages": 52,
+  "source_items": 331,
+  "production_complete": false,
+  "player_acceptance": false,
+  "runtime": {
+    "delivery_project": "game-godot",
+    "scene": "res://scenes/formula_lab/linked_campaign/round_campaign.tscn",
+    "launcher": "工务城-v5接上归途.command"
+  },
+  "read_next": [
+    "docs/superpowers/specs/production/游戏制作方法与工程约定.md",
+    "docs/superpowers/specs/work-packages/2026-10-02-chao-gag-linked-operation-candidate/v5完整整改计划-20261008/实施进度-20261010.json",
+    "docs/superpowers/specs/work-packages/2026-10-02-chao-gag-linked-operation-candidate/v5完整整改计划-20261008/05-施工与验收.md",
+    "docs/superpowers/specs/work-packages/2026-10-02-chao-gag-linked-operation-candidate/v5完整整改计划-20261008/制作流程.json"
+  ],
+  "experience_template": "docs/superpowers/specs/production/体验批次模板.md",
+  "production_focus": {
+    "id": "GW-MAIN-DECISION-CONTINUATION",
+    "experience": "出击立即得到可响应反馈→进入真实三面战役→在B识别桥的公开威胁→比较顶推/护盾/C切线→执行并核对敌方阶段→决定下一手",
+    "finish_line": "先恢复原05主线的完整决策段与现有资产/声画，迁移到其他工作面/编队；继续全52/331，局部与脚本通过不能关闭整包。",
+    "current_step": "§185当前R8源手/髋甲归属与B完整替代解实际执行通过脚本；原生095806仅F2生效、鼠标被工具拒绝。新两市政基础模型已下载60积分，源部件检查后接共享家族。",
+    "resume_at": "接续B完整段原生鼠标阻断，市政两体源部件/共享动作接入；继续全52/331，变形/声音/首玩不冒签。",
+    "work": [
+      {
+        "kind": "experience",
+        "experience_step": "同一三面主战役换编队→看招式/目标/代价→逐机执行→核对轮末和下一决定",
+        "purpose": "在主工程推广已做完整决策段，检验能力来源与协作差异；保留全52/331和原生/连续声画缺口",
+        "evidence": [
+          {
+            "path": "artifacts/formulas/production-lab-v1/qa/B16-20261012/continuation-r2/environment-defeat-05.log.result.json",
+            "sha256": "30bf5a781d52a0646e0c0a76606a3446b1d9cee1cdc58ab79523822331d6dfab"
+          },
+          {
+            "path": "artifacts/formulas/production-lab-v1/qa/B16-20261012/continuation-r2/target-comms-shortcut-06.log.result.json",
+            "sha256": "1c11d38ab8a49f77236e6af0b69669a8bb5732bc052c98d527bb0cb77fec8a7b"
+          },
+          {
+            "path": "artifacts/formulas/production-lab-v1/qa/B16-20261012/continuation-r2/native-b-ui-20261023-182531/native-observation.json",
+            "sha256": "e6b906c5aa55ffc9223fd071b4735f3f50d287ea3e9c7adcccef5f91d3abfc04"
+          }
+        ]
+      }
+    ],
+    "asset_holds": [],
+    "source_design_receipts": [
+      {
+        "asset": "M04及六角色当前批",
+        "status": "fixed_source_people_and_default_combined_M04_partially_integrated",
+        "canon": "CML132",
+        "source": {
+          "path": "captures/20261014-full-direction/review/20261016-internal-upgrade/source-design-freeze-20261018.json",
+          "sha256": "d456e8e38bed992e128d8170e042d713cd43a6abd1be687bec2cab3e5a236084"
+        },
+        "file_count": 29,
+        "hash_mismatches": 0,
+        "verified_user_thread": "01a13f08-23a0-74c2-b2f5-7913c7e81470",
+        "verified_user_turn": "01a14e6a-5cff-7632-aaab-e56873f10549",
+        "runtime_replaced": false,
+        "people_runtime_images_integrated": true,
+        "mecha_runtime_replaced": true,
+        "mecha_runtime_scope": "默认完整R11；四源独立可操作局核心R4/三车R3/合体R5，仅技术集成；设计确认与音画/用户验收仍分开",
+        "core_components_runtime_replaced": true,
+        "runtime_manifest": {
+          "path": "game-godot/assets/formula_lab/linked_campaign_v6/models/brave-fixed-20261018-manifest.json",
+          "sha256": "105e8c6bb452cfc76fa06dc49cad6bd26cb319c9fcf89f3b9a680e27cbdcfc69"
+        }
+      }
+    ],
+    "dependencies_resolved": [
+      {
+        "id": "CML132-four-models",
+        "at": "2026-10-19T14:01:00.818122+08:00",
+        "evidence": {
+          "path": "artifacts/formulas/production-lab-v1/source/gongwu-components-production-20261019/credential-generation-complete.json",
+          "sha256": "f0812baac5a7b8c78d6ee43c43b5e1f2e0661fa1b4aee2b4b6be81fcffb0430f"
+        },
+        "scope": "仅四份原始模型和积分/凭据处理完成，未认可运行或品质"
+      },
+      {
+        "id": "SUPPORT-FOUR-MODEL-CREDIT-AUTH-20261024",
+        "at": "2026-10-24T03:07:19.088877+08:00",
+        "scope": "仅四任务源图发送/120已有积分授权，模型下载和品质另验",
+        "evidence": {
+          "path": "artifacts/formulas/production-lab-v1/source/gongwu-support-mecha-20261024/credit-authorization.json",
+          "sha256": "dc14d7535550328d6f08ffe4f141146111104e76579d2a0379402138cd325222"
+        }
+      },
+      {
+        "id": "SUPPORT-FOUR-MODELS-RAW-20261024",
+        "at": "2026-10-24T03:43:20.159732+08:00",
+        "scope": "仅四份原始模型下载，累计120已有积分且票据释放；未当作绑定/运行或品质完成",
+        "evidence": [
+          {
+            "path": "artifacts/formulas/production-lab-v1/source/gongwu-support-mecha-20261024/generation-complete.json",
+            "sha256": "f55495eb55421537b91cc227be1fa69ee8761ad596663ec0c893717ab3dbfa1c"
+          }
+        ]
+      }
+    ],
+    "last_internal_review": {
+      "at": "2026-10-24T10:38:29.212537+08:00",
+      "scope": "§185 B完整替代解 / 源手重叠域 / 原生失败真实记录",
+      "evidence": [
+        {
+          "path": "artifacts/formulas/production-lab-v1/qa/B16-20261012/continuation-r2/b-current-author-observation-20261024-r1.json",
+          "sha256": "21aa906c0cc5630b383b3419e8f7c0690686e4d9ef8fa7808941c35d27026bf7"
+        },
+        {
+          "path": "artifacts/formulas/production-lab-v1/qa/B16-20261012/continuation-r2/b-core-current-20261024-01.log.result.json",
+          "sha256": "be22f478033fb0c5f74d00fe8ac493857232b8f1cf5d4092e16fc2eed10a6e65"
+        },
+        {
+          "path": "artifacts/formulas/production-lab-v1/qa/B16-20261012/continuation-r2/native-b-ui-20261024-095806/native-observation.json",
+          "sha256": "13d553c226298babbf3c96d68f95f7565a057399deececa72afb9e618cb56b01"
+        }
+      ],
+      "quality_record_pass": false,
+      "delivery_submitted": false,
+      "native_windows_closed": true,
+      "formal_saves_unchanged": true,
+      "audio_listened": false
+    }
+  },
+  "method_actions": [
+    {
+      "defect_id": "DEF-AIRCRAFT-COMPONENT-CONTINUITY",
+      "packages": [
+        "A03",
+        "R02",
+        "V04"
+      ],
+      "observed_failed_attempts": 3,
+      "last_attempt": "PACKING-GESTURE-R3",
+      "required": "改变制作方法并实测；planned尚不能作为已换法证据"
+    }
+  ],
+  "method_migration": "R2检查制作主线、真实量测/评审及重复失败换法；历史记录不倒填，未解决缺陷不阻止修复命令"
+}

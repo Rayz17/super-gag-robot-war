@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:chao-gag:c01cdv1:g1.5:m1:asset-slot-schema:v1",
+  "title": "C01E02 G1.5 M1 Candidate Asset Slot Manifest",
+  "schema_version": "1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "manifest_id",
+    "schema_version",
+    "runtime_lane",
+    "status",
+    "contract_receipt",
+    "asset_policy",
+    "approved_handoffs",
+    "slots"
+  ],
+  "properties": {
+    "manifest_id": {"type": "string", "const": "C01CDV1-G1.5-M1-ASSET-SLOTS-V1"},
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "runtime_lane": {"type": "string", "const": "candidate_runtime_demo"},
+    "status": {"type": "string", "const": "candidate_interface_fixture_only"},
+    "contract_receipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "contract_commit",
+        "contract_path",
+        "contract_sha256",
+        "parent_production_baseline",
+        "frozen_snapshot",
+        "content_fingerprint"
+      ],
+      "properties": {
+        "contract_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "contract_path": {"type": "string"},
+        "contract_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "parent_production_baseline": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "frozen_snapshot": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "content_fingerprint": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "asset_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "producer_handoff_required",
+        "resource_root",
+        "no_implicit_asset_search",
+        "default_resolution",
+        "unknown_action_policy",
+        "missing_optional_action_policy"
+      ],
+      "properties": {
+        "producer_handoff_required": {"type": "boolean", "const": true},
+        "resource_root": {"type": "string", "const": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets/"},
+        "no_implicit_asset_search": {"type": "boolean", "const": true},
+        "default_resolution": {"type": "string", "const": "named_geometry_fallback"},
+        "unknown_action_policy": {"type": "string", "const": "fail_closed"},
+        "missing_optional_action_policy": {"type": "string", "const": "declared_action_fallback"}
+      }
+    },
+    "approved_handoffs": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/handoff"}
+    },
+    "slots": {
+      "type": "array",
+      "minItems": 6,
+      "items": {"$ref": "#/$defs/slot"}
+    }
+  },
+  "$defs": {
+    "vec2": {
+      "type": "array",
+      "prefixItems": [{"type": "number"}, {"type": "number"}],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "fallback": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fixture_id", "geometry", "label", "primary_color", "accent_color"],
+      "properties": {
+        "fixture_id": {"type": "string"},
+        "geometry": {"type": "string"},
+        "label": {"type": "string"},
+        "primary_color": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"},
+        "accent_color": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"}
+      }
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "fallback_action"],
+      "properties": {
+        "required": {"type": "boolean"},
+        "fallback_action": {"type": ["string", "null"]}
+      }
+    },
+    "slot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "slot_id",
+        "subject_id",
+        "slot_kind",
+        "accepted_binding_kind",
+        "runtime_allowed",
+        "approved_asset_binding",
+        "fallback"
+      ],
+      "properties": {
+        "slot_id": {"type": "string"},
+        "subject_id": {"type": "string"},
+        "slot_kind": {"enum": ["tactical_qsd", "static_cutin", "optional_video"]},
+        "accepted_binding_kind": {"enum": ["sprite_sheet", "static_image", "video"]},
+        "runtime_allowed": {"type": "boolean"},
+        "approved_asset_binding": {"type": ["string", "null"]},
+        "footprint": {"$ref": "#/$defs/vec2"},
+        "footprint_anchor": {"type": "string"},
+        "sprite_pivot": {"type": "string"},
+        "pivot_normalized": {"$ref": "#/$defs/vec2"},
+        "sorting_anchor": {"type": "string"},
+        "facings": {"type": "array", "items": {"enum": ["north", "east", "south", "west"]}, "minItems": 4, "maxItems": 4},
+        "default_facing": {"enum": ["north", "east", "south", "west"]},
+        "preview_sizes_px": {"type": "array", "items": {"enum": [96, 128]}, "minItems": 2, "maxItems": 2},
+        "actions": {"type": "object", "additionalProperties": {"$ref": "#/$defs/action"}},
+        "allowed_canvas_sizes": {"type": "array", "items": {"$ref": "#/$defs/vec2"}, "minItems": 1},
+        "semantic_result_id": {"type": "string"},
+        "static_fallback_slot_id": {"type": "string"},
+        "fallback": {"$ref": "#/$defs/fallback"}
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "producer_handoff_id",
+        "stable_id",
+        "slot_id",
+        "usage",
+        "resource_path",
+        "sha256",
+        "runtime_allowed",
+        "approval_state",
+        "content_fingerprint",
+        "binding_kind",
+        "native_size"
+      ],
+      "properties": {
+        "producer_handoff_id": {"type": "string"},
+        "stable_id": {"type": "string"},
+        "slot_id": {"type": "string"},
+        "usage": {"type": "string"},
+        "resource_path": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "runtime_allowed": {"type": "boolean", "const": true},
+        "approval_state": {"type": "string", "const": "producer_handoff"},
+        "content_fingerprint": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "binding_kind": {"enum": ["sprite_sheet", "static_image", "video"]},
+        "native_size": {"$ref": "#/$defs/vec2"},
+        "actions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {"enum": ["north", "east", "south", "west"]}
+          }
+        }
+      }
+    }
+  }
+}

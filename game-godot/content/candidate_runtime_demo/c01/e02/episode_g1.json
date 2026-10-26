@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "episode_id": "C01CDV1-E02-M2",
+  "runtime_lane": "candidate_runtime_demo",
+  "contract_id": "C01CDV1",
+  "contract_revision": 2,
+  "build_id": "C01CDV1-M2-R2",
+  "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+  "save_schema": 2,
+  "save_namespace": "c01_current_candidate/c01/e02/r2",
+  "start_node_id": "c01cdv1_e02_s01_evac_route",
+  "terminal_state_id": "c01cdv1_e02_phase_checkpoint_p1",
+  "nodes": [
+    {
+      "node_id": "c01cdv1_e02_s01_evac_route",
+      "segment_id": "E02-S01",
+      "mode": "candidate_exploration",
+      "checkpoint": "CP0",
+      "allow_skip": false
+    },
+    {
+      "node_id": "c01cdv1_e02_s02_evac_confirm",
+      "segment_id": "E02-S02",
+      "mode": "candidate_settlement",
+      "checkpoint": "CP0",
+      "allow_skip": false
+    },
+    {
+      "node_id": "c01cdv1_e02_s03_same_body_reveal",
+      "segment_id": "E02-S03",
+      "mode": "candidate_exploration_adv",
+      "checkpoint": "CP1",
+      "allow_skip": false
+    },
+    {
+      "node_id": "c01cdv1_e02_s04_qihai_revoke",
+      "segment_id": "E02-S04",
+      "mode": "candidate_dual_location_adv",
+      "checkpoint": "CP1",
+      "allow_skip": false
+    },
+    {
+      "node_id": "c01cdv1_e02_s05_guardian_stand",
+      "segment_id": "E02-S05",
+      "mode": "candidate_cinematic",
+      "checkpoint": "CP1",
+      "allow_skip": true
+    },
+    {
+      "node_id": "c01cdv1_e02_s06_scrolling_street",
+      "segment_id": "E02-S06",
+      "mode": "candidate_tactical",
+      "checkpoint": "CP2",
+      "allow_skip": false
+    },
+    {
+      "node_id": "c01cdv1_e02_s07_shield_bash_setpiece",
+      "segment_id": "E02-S07",
+      "mode": "candidate_setpiece_presentation",
+      "checkpoint": "PHASE_P1",
+      "allow_skip": true
+    }
+  ],
+  "phase_checkpoint": {
+    "operation_id": "OP-C01-BREAKER",
+    "encounter_id": "ENC-C01-GROUND",
+    "phase_id": "P1",
+    "mission_clear": false,
+    "episode_boundary": "phase_checkpoint"
+  },
+  "setpiece": {
+    "action_id": "shield_bash",
+    "authorization": "single_use_story_state",
+    "required_input": "confirm_shield_bash",
+    "settlement_before_presentation": true,
+    "full_skip_equivalent": true,
+    "video_optional": true,
+    "fallback_slot_id": "CUTIN_C01CDV1_SHIELD_BASH_STATIC"
+  },
+  "source_parent": "res://content/candidate_runtime_demo/c01/e02/generated/materialized_snapshot.json"
+}

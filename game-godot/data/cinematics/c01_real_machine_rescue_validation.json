@@ -1,0 +1,394 @@
+{
+  "schema_version": "2.0",
+  "package_id": "C01_REAL_MACHINE_RESCUE_2P5D_VALIDATION_V01",
+  "scene_id": "SCN_C01_RM_RESCUE_2P5D_V01",
+  "status": "candidate_production_validation",
+  "target_minutes": [8, 12],
+  "asset_policy": {
+    "approved_manifest": "res://../docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery-manifest.json",
+    "forbidden_final_assets": [
+      "res://assets/portraits/portrait_jicun.png",
+      "res://assets/portraits/portrait_doudeng.png",
+      "res://assets/portraits/portrait_qihai.png"
+    ],
+    "missing_stable_ids_use_geometry_placeholders": true
+  },
+  "sequence_order": [
+    "SEQ_C01_RM_WHITE_FRAME_V01",
+    "SEQ_C01_RM_NORMAL_FAILURE_V01",
+    "SEQ_C01_RM_DIEDIE_FALL_V01",
+    "SEQ_C01_RM_GZ_LOW_HEAT_V01",
+    "SEQ_C01_RM_AFTERGLOW_V01",
+    "SEQ_C01_RM_FOUR_ORDERS_V01"
+  ],
+  "sequences": [
+    {
+      "sequence_id": "SEQ_C01_RM_WHITE_FRAME_V01",
+      "canon_scene_id": "V355-C01E01",
+      "duration": 5.8,
+      "cues": [
+        {"at": 0.0, "cue_id": "wf_lock", "type": "input", "payload": {"locked": true}},
+        {"at": 0.1, "cue_id": "wf_camera", "type": "camera", "payload": {"target": [1480, 570], "zoom": [1.05, 1.05], "duration": 0.8}},
+        {"at": 0.5, "cue_id": "wf_show", "type": "stage", "payload": {"action": "white_frame_show"}},
+        {"at": 1.0, "cue_id": "wf_caption", "type": "caption", "payload": {"text": "授权提示晚了半拍。白框已经完成首轮分类。"}},
+        {"at": 1.8, "cue_id": "wf_classify", "type": "stage", "payload": {"action": "white_frame_classify"}},
+        {"at": 4.1, "cue_id": "wf_flash", "type": "flash", "payload": {"value": 0.28}},
+        {"at": 5.6, "cue_id": "wf_restore", "type": "restore", "payload": {"white_frame": "classified", "camera_position": [1480, 570], "camera_zoom": [1.0, 1.0], "input_locked": false}}
+      ],
+      "final_visual_state": {"white_frame": "classified", "camera_position": [1480, 570], "camera_zoom": [1.0, 1.0], "input_locked": false},
+      "outcome": {"facts": [{"fact_id": "C01RM_WHITE_FRAME_CLASSIFIED", "to_state": true}]}
+    },
+    {
+      "sequence_id": "SEQ_C01_RM_NORMAL_FAILURE_V01",
+      "canon_scene_id": "V355-C01E01",
+      "duration": 4.7,
+      "cues": [
+        {"at": 0.0, "cue_id": "r1_lock", "type": "input", "payload": {"locked": true}},
+        {"at": 0.2, "cue_id": "r1_dog", "type": "actor_move", "payload": {"actor_id": "machine_dog", "target": [1430, 650], "duration": 1.1, "state": "towing"}},
+        {"at": 0.6, "cue_id": "r1_diedie", "type": "actor_move", "payload": {"actor_id": "diedie", "target": [1690, 650], "duration": 1.4, "state": "walk"}},
+        {"at": 2.0, "cue_id": "r1_reseal", "type": "stage", "payload": {"action": "normal_rescue_resealed"}},
+        {"at": 2.2, "cue_id": "r1_caption", "type": "caption", "payload": {"text": "标准动作全部命中预测。门线重新归入资产区。"}},
+        {"at": 4.5, "cue_id": "r1_restore", "type": "restore", "payload": {"white_frame": "resealed", "input_locked": false}}
+      ],
+      "final_visual_state": {"white_frame": "resealed", "input_locked": false},
+      "outcome": {"facts": [{"fact_id": "C01RM_NORMAL_RESCUE_FAILED", "to_state": true}]}
+    },
+    {
+      "sequence_id": "SEQ_C01_RM_DIEDIE_FALL_V01",
+      "canon_scene_id": "V355-C01E01",
+      "duration": 4.4,
+      "cues": [
+        {"at": 0.0, "cue_id": "r2_lock", "type": "input", "payload": {"locked": true}},
+        {"at": 0.1, "cue_id": "r2_camera", "type": "camera", "payload": {"target": [1100, 600], "zoom": [1.18, 1.18], "duration": 0.6}},
+        {"at": 0.6, "cue_id": "r2_move", "type": "actor_move", "payload": {"actor_id": "diedie", "target": [1120, 615], "duration": 1.0, "state": "walk"}},
+        {"at": 1.8, "cue_id": "r2_fall", "type": "stage", "payload": {"action": "diedie_fall_sensor"}},
+        {"at": 2.0, "cue_id": "r2_caption", "type": "caption", "payload": {"text": "不是重新站稳。是把摔倒放在正确的位置。"}},
+        {"at": 2.7, "cue_id": "r2_lock_frame", "type": "stage", "payload": {"action": "path_frame_locked"}},
+        {"at": 4.2, "cue_id": "r2_restore", "type": "restore", "payload": {"diedie_state": "fallen", "frame_locked": true, "camera_position": [1100, 600], "camera_zoom": [1.0, 1.0], "input_locked": false}}
+      ],
+      "final_visual_state": {"diedie_state": "fallen", "frame_locked": true, "camera_position": [1100, 600], "camera_zoom": [1.0, 1.0], "input_locked": false},
+      "outcome": {"facts": [{"fact_id": "C01RM_DIEDIE_FALL_LOCKED", "to_state": true}, {"fact_id": "FAILURE_AS_TACTICAL_VALUE_SEED", "to_state": true}]}
+    },
+    {
+      "sequence_id": "SEQ_C01_RM_GZ_LOW_HEAT_V01",
+      "canon_scene_id": "V355-C01E01",
+      "duration": 8.0,
+      "cues": [
+        {"at": 0.0, "cue_id": "gz_lock", "type": "input", "payload": {"locked": true}},
+        {"at": 0.1, "cue_id": "gz_cutin", "type": "cutin", "payload": {"asset_path": "res://assets/battle_presentation/c01/guardian_z/cutin_doudeng_c01_safety_lock_v01.png", "duration": 1.35}},
+        {"at": 1.0, "cue_id": "gz_camera", "type": "camera", "payload": {"target": [920, 330], "zoom": [1.12, 1.12], "duration": 0.8}},
+        {"at": 1.5, "cue_id": "gz_pose", "type": "mecha", "payload": {"asset_path": "res://assets/battle_presentation/c01/guardian_z/pose_gz_c01_kneel_palm_guard_v01.png", "visible": true, "pose": "half_kneel"}},
+        {"at": 2.6, "cue_id": "gz_low_heat", "type": "chest_glow", "payload": {"value": 0.78, "duration": 0.7}},
+        {"at": 3.2, "cue_id": "gz_beam", "type": "stage", "payload": {"action": "low_heat_beam_once"}},
+        {"at": 3.7, "cue_id": "gz_flash", "type": "flash", "payload": {"value": 0.45}},
+        {"at": 4.0, "cue_id": "gz_caption", "type": "caption", "payload": {"text": "低温琥珀光经裂罩折成窄扇。贴片胶层开始卷起。"}},
+        {"at": 5.0, "cue_id": "gz_disable", "type": "stage", "payload": {"action": "patcher_disabled"}},
+        {"at": 5.6, "cue_id": "gz_hard_stop", "type": "chest_glow", "payload": {"value": 0.10, "duration": 0.24}},
+        {"at": 5.8, "cue_id": "gz_hard_stop_caption", "type": "caption", "payload": {"text": "兜灯切断主动输出。一次，不多照一秒。"}},
+        {"at": 7.8, "cue_id": "gz_restore", "type": "restore", "payload": {"guardian_visible": true, "guardian_pose": "half_kneel", "chest_glow": 0.10, "patcher_state": "disabled", "input_locked": false}}
+      ],
+      "final_visual_state": {"guardian_visible": true, "guardian_pose": "half_kneel", "chest_glow": 0.10, "patcher_state": "disabled", "input_locked": false},
+      "outcome": {"facts": [{"fact_id": "C01RM_LOW_HEAT_RESCUE_CLEARED", "to_state": true}], "mecha_changes": [{"mecha_id": "MECHA_GUARDIAN_Z", "pose": "half_kneel", "power_state": "low_heat_hard_stopped", "output_count": 1}]}
+    },
+    {
+      "sequence_id": "SEQ_C01_RM_AFTERGLOW_V01",
+      "canon_scene_id": "V355-C01E01",
+      "duration": 6.0,
+      "cues": [
+        {"at": 0.0, "cue_id": "after_lock", "type": "input", "payload": {"locked": true}},
+        {"at": 0.2, "cue_id": "after_diedie", "type": "actor_move", "payload": {"actor_id": "diedie", "target": [1080, 745], "duration": 2.2, "state": "walk"}},
+        {"at": 0.5, "cue_id": "after_dog", "type": "actor_move", "payload": {"actor_id": "machine_dog", "target": [1170, 748], "duration": 2.0, "state": "walk"}},
+        {"at": 0.6, "cue_id": "after_visitor", "type": "actor_move", "payload": {"actor_id": "visitor", "target": [1830, 590], "duration": 2.1, "state": "walk"}},
+        {"at": 2.7, "cue_id": "after_charge", "type": "stage", "payload": {"action": "recharge_green"}},
+        {"at": 3.0, "cue_id": "after_lights", "type": "lights", "payload": {"value": 0.18, "duration": 1.8}},
+        {"at": 3.1, "cue_id": "after_caption", "type": "caption", "payload": {"text": "展厅从远到近熄灯。最后只剩两枚回充绿灯和胸牌余辉。"}},
+        {"at": 5.8, "cue_id": "after_restore", "type": "restore", "payload": {"room_light": 0.18, "recharge": "charged", "input_locked": false}}
+      ],
+      "final_visual_state": {"room_light": 0.18, "recharge": "charged", "input_locked": false},
+      "outcome": {"facts": [{"fact_id": "C01_VISITOR_RESCUE_SEED", "to_state": true}]}
+    },
+    {
+      "sequence_id": "SEQ_C01_RM_FOUR_ORDERS_V01",
+      "canon_scene_id": "V355-C01E01",
+      "duration": 4.6,
+      "cues": [
+        {"at": 0.0, "cue_id": "orders_lock", "type": "input", "payload": {"locked": true}},
+        {"at": 0.2, "cue_id": "orders_stage", "type": "stage", "payload": {"action": "four_orders_show"}},
+        {"at": 0.4, "cue_id": "orders_one", "type": "audio", "payload": {"sound": "order_1"}},
+        {"at": 1.2, "cue_id": "orders_two", "type": "audio", "payload": {"sound": "order_2"}},
+        {"at": 2.0, "cue_id": "orders_three", "type": "audio", "payload": {"sound": "order_3"}},
+        {"at": 2.8, "cue_id": "orders_four", "type": "audio", "payload": {"sound": "order_4"}},
+        {"at": 4.4, "cue_id": "orders_restore", "type": "restore", "payload": {"four_orders": true, "input_locked": false}}
+      ],
+      "final_visual_state": {"four_orders": true, "input_locked": false},
+      "outcome": {"facts": [{"fact_id": "C01RM_FOUR_ORDERS_ENTERED", "to_state": true}]}
+    }
+  ],
+  "spatial_activities": [
+    {"activity_id": "AUTHORITY_DOUDENG", "hotspot_id": "doudeng", "phase": "P0_AUTHORITY", "beat_id": "authority_doudeng", "fact_id": "C01RM_STOP_AUTHORITY_CONFIRMED"},
+    {"activity_id": "AUTHORITY_TANGJIAO", "hotspot_id": "tangjiao", "phase": "P0_AUTHORITY", "beat_id": "authority_tangjiao", "fact_id": "C01RM_DISASSEMBLY_AUTHORITY_CONFIRMED"},
+    {"activity_id": "PATROL_DIEDIE", "hotspot_id": "diedie", "phase": "P1_PATROL", "beat_id": "inspect_diedie", "fact_id": "C01RM_DIEDIE_PROFILE_READ"},
+    {"activity_id": "PATROL_DOG", "hotspot_id": "machine_dog", "phase": "P1_PATROL", "beat_id": "inspect_machine_dog", "fact_id": "C01RM_MANUAL_RESCUE_ROUTE_READ"},
+    {"activity_id": "PATROL_DOOR", "hotspot_id": "old_door", "phase": "P1_PATROL", "beat_id": "inspect_old_door", "fact_id": "C01RM_MANUAL_RESCUE_ROUTE_READ"},
+    {"activity_id": "PATROL_VISITOR", "hotspot_id": "visitor", "phase": "P1_PATROL", "beat_id": "inspect_visitor", "fact_id": "C01RM_ACCESSIBLE_LANE_READ"},
+    {"activity_id": "PATROL_LOW_HEAT", "hotspot_id": "low_heat", "phase": "P1_PATROL", "beat_id": "inspect_low_heat", "fact_id": "C01RM_LOW_HEAT_SECTOR_READ"}
+  ],
+  "tactical_rounds": [
+    {
+      "round_id": "R1_NORMAL_RESCUE",
+      "objective": "分别确认跌跌机械复位与机器犬牵引。",
+      "actions": [
+        {"action_id": "R1_DIEDIE_RESET", "actor_id": "diedie", "label": "机械复位", "result_key": "r1_diedie_reset"},
+        {"action_id": "R1_DOG_PULL", "actor_id": "machine_dog", "label": "牵引观众", "result_key": "r1_dog_pull"}
+      ]
+    },
+    {
+      "round_id": "R2_FAILURE_BLOCK",
+      "objective": "选择跌跌主动摔倒的位置。选错可观察后果并撤回一次。",
+      "positions": [
+        {"position_id": "soft_pad", "label": "软垫边", "locks_frame": false},
+        {"position_id": "rail_sensor", "label": "导轨感应区", "locks_frame": true}
+      ]
+    },
+    {
+      "round_id": "R3_LOW_HEAT_RESCUE",
+      "objective": "诱导贴片机、拆导光罩、清空照射线，再批准一次低热胸灯。",
+      "actions": [
+        {"action_id": "R3_DOG_LURE", "actor_id": "machine_dog", "label": "开门、牵引并诱导", "result_key": "dog_lured"},
+        {"action_id": "R3_CRACK_PANEL", "actor_id": "tangjiao", "label": "钻坏安全罩", "result_key": "guide_panel_cracked"},
+        {"action_id": "R3_RECALL_DOG", "actor_id": "machine_dog", "label": "召回充电线外", "result_key": "dog_recalled"},
+        {"action_id": "R3_SAFETY_REVIEW", "actor_id": "doudeng", "label": "执行照射安全审查", "result_key": "safety_approved"}
+      ],
+      "sectors": [
+        {"sector_id": "sector_a", "label": "低热扇区 A", "conditional_occupant": "machine_dog"},
+        {"sector_id": "sector_b", "label": "扇区 B", "fixed_occupant": "diedie"}
+      ]
+    }
+  ],
+  "audit_operations": [
+    {"operation_id": "AUDIT_COMPARE_TIMELINES", "label": "比对三条时间线", "beat_id": "audit_compare"},
+    {"operation_id": "AUDIT_RESTORE_DELAY", "label": "恢复延迟上报记录", "beat_id": "audit_restore_delay"},
+    {"operation_id": "AUDIT_DISABLE_AUTOCLOSE", "label": "关闭自动结案与删档", "beat_id": "audit_disable_autoclose"},
+    {"operation_id": "AUDIT_SIGN_MIRROR", "label": "实名锁定不可覆盖镜像", "beat_id": "audit_sign_mirror"}
+  ],
+  "dialogue_beats": [
+    {
+      "beat_id": "entry",
+      "lines": [
+        {"speaker": "闭馆广播", "profile": "scene_caption", "text": "现实机器区将在十分钟后断开观众电源。仍在自检的设备会留在原位，不会被赶着表演一次成功。"},
+        {"speaker": "唐胶", "profile": "scene_caption", "text": "总算说了句像人话的广播。是谁改的？"},
+        {"speaker": "纪存", "profile": "scene_caption", "text": "旧守护者。它最近把投诉信当语言教材。"},
+        {"speaker": "兜灯", "profile": "scene_caption", "text": "闲话等断电后。你要留馆守 Z 接应，就先把谁能停它说清楚。"},
+        {"speaker": "系统", "profile": "scene_caption", "text": "走近兜灯与唐胶，确认停机权、拆解权与最终责任。"}
+      ]
+    },
+    {
+      "beat_id": "authority_doudeng",
+      "lines": [
+        {"speaker": "纪存", "profile": "scene_caption", "text": "停机权还在你手里吗？"},
+        {"speaker": "兜灯", "profile": "scene_caption", "text": "在。我刚按过测试停机，继电器会断。"},
+        {"speaker": "纪存", "profile": "halfbody_focus", "side": "left", "role_line": "纪存 / 几何半身占位", "text": "写在我名字前面。真出事，先让你的按钮有效，再来找我算总账。"},
+        {"speaker": "兜灯", "profile": "scene_caption", "text": "行。你要是把‘救人’当过热理由，我照样切。"}
+      ]
+    },
+    {
+      "beat_id": "authority_tangjiao",
+      "lines": [
+        {"speaker": "唐胶", "profile": "scene_caption", "text": "拆解权给我可以。先说明白：整块罩拆下来，边缘一定留钻痕。"},
+        {"speaker": "纪存", "profile": "scene_caption", "text": "需要拆的时候，你决定怎么拆。要不要拆，我担。"},
+        {"speaker": "唐胶", "profile": "scene_caption", "text": "这句我存一下。省得明天有人拿着完好率问我，为什么救人不无痕。"},
+        {"speaker": "系统", "profile": "scene_caption", "text": "交权完成。闭馆巡检开放：四项条件必须在房间里实际确认。"}
+      ]
+    },
+    {
+      "beat_id": "inspect_diedie",
+      "lines": [
+        {"speaker": "纪存", "profile": "scene_caption", "text": "今天最后一次。你愿意走到充电线外吗？"},
+        {"speaker": "跌跌", "profile": "scene_caption", "text": "站立测试：第九次。目标不是不摔，是摔了还能回到充电位。"},
+        {"speaker": "成年观众", "profile": "scene_caption", "text": "不着急。我那条腿也不喜欢别人倒数。"},
+        {"speaker": "系统", "profile": "scene_caption", "text": "已读：失败记录、窄缝通行、任务后回充终点。"}
+      ]
+    },
+    {
+      "beat_id": "inspect_machine_dog",
+      "lines": [
+        {"speaker": "机器犬", "profile": "scene_caption", "text": "门内指令：留置。门外指令：撤离。等待人类确认对象。"},
+        {"speaker": "纪存", "profile": "scene_caption", "text": "你负责开门和出力。让谁走哪条线，不用你替我们背。"},
+        {"speaker": "系统", "profile": "scene_caption", "text": "已读：手动牵引线、双指令冲突、旧门开门能力。"}
+      ]
+    },
+    {
+      "beat_id": "inspect_old_door",
+      "lines": [
+        {"speaker": "唐胶", "profile": "scene_caption", "text": "这道宽门没接新分类器。丑是丑，至少不会看见轮椅就问是不是资产。"},
+        {"speaker": "纪存", "profile": "scene_caption", "text": "手动锁能开。代价是把旧搬运路由公开到事故日志。"},
+        {"speaker": "系统", "profile": "scene_caption", "text": "已读：旧服务宽门与公开责任。"}
+      ]
+    },
+    {
+      "beat_id": "inspect_visitor",
+      "lines": [
+        {"speaker": "纪存", "profile": "scene_caption", "text": "从这里到门口，哪一段最难走？"},
+        {"speaker": "成年观众", "profile": "scene_caption", "text": "不是坡。那块地砖反光，我落杖时看不清边。灯再暗一点，我宁可自己慢慢来。"},
+        {"speaker": "纪存", "profile": "scene_caption", "text": "机器犬只给拉力。跨哪一步，你说了算。"},
+        {"speaker": "系统", "profile": "scene_caption", "text": "已读：成人自主跨步、无台阶路线、低照度风险。"}
+      ]
+    },
+    {
+      "beat_id": "inspect_low_heat",
+      "lines": [
+        {"speaker": "兜灯", "profile": "scene_caption", "text": "南侧母线刚隔离。这里不会被自动照明加热。"},
+        {"speaker": "唐胶", "profile": "scene_caption", "text": "如果非得借胸灯，只能把光折进这一块。输出不许加。"},
+        {"speaker": "系统", "profile": "scene_caption", "text": "已读：低热扇区、可改光路、主动力锁死。"}
+      ]
+    },
+    {
+      "beat_id": "white_frame_reject",
+      "lines": [
+        {"speaker": "系统", "profile": "scene_caption", "text": "人类紧急出口可用。辅助资产将留置。"},
+        {"speaker": "成年观众", "profile": "scene_caption", "text": "辅助资产是说我的支具，还是说我？"},
+        {"speaker": "纪存", "profile": "halfbody_focus", "side": "left", "role_line": "纪存 / 承担旧路由公开责任", "text": "关掉这条。人和机器走同一条线。旧搬运路由由我公开，迟报也记在我名下。"},
+        {"speaker": "兜灯", "profile": "scene_caption", "text": "早三分钟听我的，现在不用走旧路。"},
+        {"speaker": "纪存", "profile": "scene_caption", "text": "对。先救人，账别替我藏。"},
+        {"speaker": "系统", "profile": "scene_caption", "text": "三步战术开始。R1：按训练执行标准救援。"}
+      ]
+    },
+    {
+      "beat_id": "r1_failure",
+      "lines": [
+        {"speaker": "系统", "profile": "scene_caption", "text": "复位、牵引均完成。成功样机规则已预测标准动作。路径框重新封闭。"},
+        {"speaker": "机器犬", "profile": "scene_caption", "text": "门已开。路线对象未确认。停止牵引。"},
+        {"speaker": "兜灯", "profile": "scene_caption", "text": "不是力量不够。它在等我们做正确动作，然后提前把正确答案封掉。"},
+        {"speaker": "纪存", "profile": "scene_caption", "text": "那就别再给它一份成功示范。调跌跌的失败记录。"}
+      ]
+    },
+    {
+      "beat_id": "r2_wrong",
+      "lines": [
+        {"speaker": "系统", "profile": "scene_caption", "text": "软垫位没有覆盖导轨传感器。白框继续闭合。"},
+        {"speaker": "纪存", "profile": "scene_caption", "text": "看见了。撤回预览，我们换位置，不让它真的摔这一下。"}
+      ]
+    },
+    {
+      "beat_id": "r2_confirm",
+      "lines": [
+        {"speaker": "纪存", "profile": "scene_caption", "text": "这次倒在哪里，由你和我们一起决定。"},
+        {"speaker": "跌跌", "profile": "cinematic_cutin", "title": "第十次站立 / 主动失败占格", "text": "导轨感应区确认。跌倒路径由现场共同批准。"},
+        {"speaker": "唐胶", "profile": "scene_caption", "text": "馆里最诚实的占格文化。"},
+        {"speaker": "兜灯", "profile": "scene_caption", "text": "别庆祝。它还躺在风险区。"}
+      ]
+    },
+    {
+      "beat_id": "r3_lure",
+      "lines": [
+        {"speaker": "机器犬", "profile": "scene_caption", "text": "旧门开放。牵引力建立。待迁移资产预测已跟随。"},
+        {"speaker": "成年观众", "profile": "scene_caption", "text": "拉住就行。过门槛那一步我自己来。"},
+        {"speaker": "纪存", "profile": "scene_caption", "text": "好。你走你的，它把贴片机带去低热区。"},
+        {"speaker": "系统", "profile": "scene_caption", "text": "诱导完成。机器犬仍位于照射扇区 A。"}
+      ]
+    },
+    {
+      "beat_id": "r3_crack",
+      "lines": [
+        {"speaker": "唐胶", "profile": "scene_caption", "text": "导光可以。代价是一块本来完好的罩。"},
+        {"speaker": "纪存", "profile": "scene_caption", "text": "拆。责任记我，钻痕记你，别给这块罩编个壮烈故事。"},
+        {"speaker": "唐胶", "profile": "scene_caption", "text": "放心，它明天只会变成一块需要补订的罩。"},
+        {"speaker": "系统", "profile": "scene_caption", "text": "导光折线建立。下一步：选择扇区并执行安全审查。"}
+      ]
+    },
+    {
+      "beat_id": "safety_reject",
+      "lines": [
+        {"speaker": "兜灯", "profile": "halfbody_focus", "side": "right", "role_line": "兜灯 / 安全拒绝 / 批准资产", "text": "不放行。{reason}"},
+        {"speaker": "兜灯", "profile": "scene_caption", "text": "按钮没坏。我拒绝，就是因为它现在真的还能停。"}
+      ]
+    },
+    {
+      "beat_id": "dog_recalled",
+      "lines": [
+        {"speaker": "纪存", "profile": "scene_caption", "text": "机器犬，退出扇区 A。回到充电线外，不要再追贴片机。"},
+        {"speaker": "机器犬", "profile": "scene_caption", "text": "诱导终止。回充路线确认。"}
+      ]
+    },
+    {
+      "beat_id": "safety_pass",
+      "lines": [
+        {"speaker": "兜灯", "profile": "halfbody_focus", "side": "right", "role_line": "兜灯 / 一次低热释放批准", "text": "观众离线。跌跌不在 A 区。机器犬已退出。主动力锁死。批准一次低热胸灯。"},
+        {"speaker": "纪存", "profile": "scene_caption", "text": "扇区 A，按裂罩折线。只照贴片胶层。"},
+        {"speaker": "兜灯", "profile": "scene_caption", "text": "收到。命中后我切，不等你喊停。"}
+      ]
+    },
+    {
+      "beat_id": "afterglow",
+      "lines": [
+        {"speaker": "成年观众", "profile": "scene_caption", "text": "绿灯都亮了。那我走了，别为了让我放心，又叫它们多站一次。"},
+        {"speaker": "纪存", "profile": "scene_caption", "text": "不会。今天到这里。"},
+        {"speaker": "跌跌", "profile": "scene_caption", "text": "回充完成。第十次站立记录：允许保留摔倒。"},
+        {"speaker": "闭馆广播", "profile": "scene_caption", "text": "现实机器区已断开观众电源。两台设备进入回充。"}
+      ]
+    },
+    {
+      "beat_id": "audit_intro",
+      "lines": [
+        {"speaker": "七海", "profile": "halfbody_focus", "side": "right", "remote": true, "role_line": "代哥安全封存局 / 远程事故审计", "text": "我接管事故审计视图。现场停机权、旧路由和馆守 Z 都不在我的权限内。"},
+        {"speaker": "纪存", "profile": "scene_caption", "text": "那你能做什么？"},
+        {"speaker": "七海", "profile": "scene_caption", "remote": true, "text": "把谁先动手、谁晚了几分钟、谁关掉删档，留在同一张表上。你按顺序看。"}
+      ]
+    },
+    {
+      "beat_id": "audit_compare",
+      "lines": [
+        {"speaker": "七海", "profile": "scene_caption", "remote": true, "text": "贴片机入馆，早于正式授权。路径框首轮分类，早于授权摘要生成。"},
+        {"speaker": "审计视图", "profile": "scene_caption", "text": "时间线差：-00:02:14 / -00:00:37。异常不是救援后才发生。"}
+      ]
+    },
+    {
+      "beat_id": "audit_restore_delay",
+      "lines": [
+        {"speaker": "七海", "profile": "scene_caption", "remote": true, "text": "本地缓存恢复。兜灯要求升级；纪存选择走完闭馆路线再复核。"},
+        {"speaker": "纪存", "profile": "scene_caption", "text": "把迟报放事故链起点。别让后面的救援把它盖过去。"}
+      ]
+    },
+    {
+      "beat_id": "audit_disable_autoclose",
+      "lines": [
+        {"speaker": "七海", "profile": "scene_caption", "remote": true, "text": "关闭‘无人受伤自动结案’。关闭缓存到时删档。原始日志转不可覆盖镜像。"},
+        {"speaker": "审计视图", "profile": "scene_caption", "text": "自动结案：OFF / 定时删档：OFF / 镜像：待实名。"}
+      ]
+    },
+    {
+      "beat_id": "audit_sign_mirror",
+      "lines": [
+        {"speaker": "七海", "profile": "halfbody_focus", "side": "right", "remote": true, "role_line": "七海 / 实名签署 / 不撤令", "text": "执行链、时间差、迟报和救援记录已锁。签署人：七海。"},
+        {"speaker": "纪存", "profile": "scene_caption", "text": "你会拿它去拆馆。"},
+        {"speaker": "七海", "profile": "scene_caption", "remote": true, "text": "我保证不删。"},
+        {"speaker": "纪存", "profile": "scene_caption", "text": "我问的不是这个。"},
+        {"speaker": "七海", "profile": "scene_caption", "remote": true, "text": "那我没有可以保证的。"}
+      ]
+    },
+    {
+      "beat_id": "four_orders",
+      "lines": [
+        {"speaker": "系统", "profile": "cinematic_cutin", "title": "四张封存令进入", "text": "安全封存 / 商品资产 / 数字运营 / 军方风险。四条处置链引用了同一份不可覆盖镜像。"}
+      ]
+    }
+  ],
+  "preview_outcome": {
+    "transaction_id": "SCN_C01_RM_RESCUE_2P5D_V01:PREVIEW_OUTCOME_V01",
+    "authority": "preview_only",
+    "must_not_write": ["formal_episode_save", "battle_session", "canon_state"],
+    "required_facts": [
+      "C01RM_STOP_AUTHORITY_CONFIRMED",
+      "C01RM_DISASSEMBLY_AUTHORITY_CONFIRMED",
+      "C01RM_NORMAL_RESCUE_FAILED",
+      "C01RM_DIEDIE_FALL_LOCKED",
+      "C01RM_DOG_LURE_READY",
+      "C01RM_LOW_HEAT_RESCUE_CLEARED",
+      "C01_VISITOR_RESCUE_SEED",
+      "JICUN_DELAYED_ANOMALY_ESCALATION",
+      "JICUN_PUBLIC_OLD_ROUTE_RESPONSIBILITY",
+      "FAILURE_AS_TACTICAL_VALUE_SEED",
+      "QH_EARLY_PATCHER_AUDIT_MIRROR_LOCKED"
+    ]
+  }
+}

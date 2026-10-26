@@ -1,0 +1,25 @@
+{
+  "artifact": "GZ_CAMERA_V2_SOUTH_TWO_HAND_SHIELD_STATIC_POSE_CALL01",
+  "decision": "USER_REJECTED",
+  "decision_date": "2026-08-23",
+  "supersedes_internal_receipt_status": "POSE_FIRST_READ_PASS_ALPHA_FAIL_STOPPED",
+  "rejected_raw": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a13-section2-gz-south-twohand-shield-pose-master-candidate/call01/generation-raw/GZ_SOUTH_TWO_HAND_SHIELD_CALL01_RAW_ALPHA_FAIL.png",
+    "sha256": "88bca67bb3d0fb50f559e60bc43c7cd42130fe8840a55f438dd05130b79c61d0"
+  },
+  "user_rejection": {
+    "guardian_z": "Reads as an old-draft Guardian Z rather than an accepted current demo asset.",
+    "shield": "Reads as a rectangular armor plate with bullet holes, not a retired heavy hero-robot shield.",
+    "combined_result": "Double failure; pose readability does not rescue the rejected identity and prop design."
+  },
+  "consequences": {
+    "alpha_recovery_cancelled": true,
+    "additional_processing_cancelled": true,
+    "godot_integration": false,
+    "runtime_promotion": false,
+    "canon_promotion": false,
+    "reuse_as_visual_reference": false,
+    "history_evidence_preserved": true
+  },
+  "next_authorized_gate": "New Art Asset Section 2 user-confirmation board for the retired heavy shield alone; no Guardian Z or mecha generation."
+}

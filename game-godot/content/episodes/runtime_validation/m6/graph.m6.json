@@ -1,0 +1,565 @@
+{
+  "episode_id": "C02E03-MULTI-PLAY-M6-VALIDATION",
+  "start_node_id": "m6_intro",
+  "status": "runtime_validation_only",
+  "canon_refs": ["V357-C02-S03", "C02E03-AUCTION", "LOC_MODEL_STREET", "MECHA_OLD_BOXER_KING", "CH_TANGJIAO"],
+  "nodes": [
+    {
+      "node_id": "m6_intro",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_MULTI_PLAY_M6_NARRATIVE",
+      "title": "旧件市 / 传奇复活直播前",
+      "transition": {
+        "transition_id": "M6-TR-01-LIVE-COUNTDOWN",
+        "kind": "opening",
+        "eyebrow": "旧件市还没收摊",
+        "title": "一场不肯等维修的复活直播",
+        "location": "旧件市 · 唐胶维修棚",
+        "time_label": "开播前九分钟",
+        "cause": "买家要看旧拳王原样复刻冠军动作；它的右拳却总比影子慢一拍。",
+        "handoff": "先听它的关节，不替它把那一拍补快。",
+        "duration": 1.25,
+        "fade_seconds": 0.45,
+        "accent": "f4bf3f"
+      },
+      "completion_contract": "OUTCOME_M6_C02_INTRO_V01",
+      "transaction_id": "M6:C02:INTRO:V01",
+      "outcome_facts": [{"id": "M6_C02_WORKSHOP_CAUSE_SEEN", "to": true}],
+      "player_summary": "直播催促旧拳王复刻冠军动作；纪存和唐胶决定先确认它的身体。",
+      "presentation": {
+        "profile": "standard_adv",
+        "background": "res://assets/backgrounds/bg_model_street_workshop_m6_v1.png",
+        "eyebrow": "旧件市 · 唐胶维修棚",
+        "title": "传奇复活直播前",
+        "time_label": "开播前九分钟",
+        "cast": [
+          {"actor_id": "CH_JICUN", "display_name": "纪存", "side": "left", "portrait_path": "res://assets/portraits/portrait_jicun_entity_b_v1.png", "accent": "58c8d9"},
+          {"actor_id": "CH_TANGJIAO", "display_name": "唐胶", "side": "right", "portrait_path": "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png", "source_rect": [190, 25, 300, 336], "accent": "e8a84c"}
+        ]
+      },
+      "lines": [
+        {"beat_id": "m6_intro_broadcast", "source_kind": "broadcast", "speaker": "胶价王直播", "stage_action": "维修棚旧屏自动亮起", "text": "传奇复活倒计时九分钟。旧动作、原比例、零瑕疵。"},
+        {"beat_id": "m6_intro_tangjiao", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "扳手没有离开膝轴", "text": "零瑕疵？它膝轴每转一次都在刮。你先把倒计时从我工位上拿开。"},
+        {"beat_id": "m6_intro_jicun", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "把影子录像调回原速", "text": "右拳慢的不是电机。它在等影子先出拳。"},
+        {"beat_id": "m6_intro_handoff", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "关掉自动补帧", "text": "那就别替它补快。看身体，留零件，最后一拍让它自己拿。"}
+      ],
+      "success_edges": ["m6_workshop"],
+      "soft_fail_edges": ["m6_workshop"],
+      "failure_edges": ["m6_workshop"],
+      "cancel_edges": ["m6_workshop"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "m6_workshop",
+      "mode": "SPATIAL",
+      "scene_id": "SCN_MULTI_PLAY_M6_C02_WORKSHOP",
+      "title": "旧件市维修棚 / 身体检查与漏拍校准",
+      "transition": {
+        "transition_id": "M6-TR-02-BODY-BEFORE-POSE",
+        "kind": "location_shift",
+        "eyebrow": "先看身体，再谈传奇",
+        "title": "那一拍藏在旧伤里",
+        "location": "旧件市 · 维修棚内场",
+        "time_label": "开播前七分钟",
+        "cause": "纪存听见右拳在等一段已经不存在的影子；唐胶拒绝把迟疑修成故障。",
+        "handoff": "亲手检查关节、分配有限零件，再让旧拳王自己找回出拳的时机。",
+        "continuity": {
+          "types": ["object", "action", "responsibility"],
+          "object_refs": ["OBJ_M6_RIGHT_GLOVE", "OBJ_M6_SHADOW_TAPE"],
+          "action_refs": ["OUTCOME_M6_C02_INTRO_V01"],
+          "responsibility_refs": ["CH_JICUN", "CH_TANGJIAO"]
+        },
+        "duration": 1.05,
+        "fade_seconds": 0.4,
+        "accent": "46c7d8"
+      },
+      "location_id": "LOC_MODEL_STREET",
+      "mecha_id": "MECHA_OLD_BOXER_KING",
+      "spatial_layout": {
+        "start_room_id": "workshop_front",
+        "start_spawn_id": "entry",
+        "rooms": [
+          {
+            "room_id": "workshop_front",
+            "label": "直播前台",
+            "description": "原速录像和复活直播终端隔着一条堆满线盘的通道互相打架。",
+            "landmark": "头顶黄灯下的老录像机",
+            "palette": "cold_monitor",
+            "play_rect": [28, 96, 790, 586],
+            "spawn_points": {"entry": [176, 560], "from_repair": [744, 552]},
+            "portals": [
+              {"portal_id": "front_to_repair", "label": "隔热帘后的维修内场", "verb": "掀开隔热帘", "position": [766, 552], "interaction_radius": 66, "target_room_id": "repair_floor", "target_spawn_id": "from_front"}
+            ]
+          },
+          {
+            "room_id": "repair_floor",
+            "label": "维修内场",
+            "description": "旧拳王被固定在承力架上，右拳和左膝之间横着一整副身体。",
+            "landmark": "占满两层楼高的旧拳王本体",
+            "palette": "warm_worklight",
+            "play_rect": [28, 96, 790, 586],
+            "spawn_points": {"from_front": [82, 552], "from_storage": [742, 552]},
+            "portals": [
+              {"portal_id": "repair_to_front", "label": "直播前台", "verb": "拨开隔热帘", "position": [54, 552], "interaction_radius": 66, "target_room_id": "workshop_front", "target_spawn_id": "from_repair", "use_saved_return": true},
+              {"portal_id": "repair_to_storage", "label": "后仓防火门", "verb": "侧身挤过承力架", "position": [766, 552], "interaction_radius": 66, "target_room_id": "back_storage", "target_spawn_id": "from_repair"}
+            ]
+          },
+          {
+            "room_id": "back_storage",
+            "label": "零件后仓",
+            "description": "一套伸缩撑杆在仓门和擂台之间二选一，唐胶的零件盘靠着唯一出口。",
+            "landmark": "每次报警都少回一下的后仓门",
+            "palette": "alarm_storage",
+            "play_rect": [28, 96, 790, 586],
+            "spawn_points": {"from_repair": [82, 552]},
+            "portals": [
+              {"portal_id": "storage_to_repair", "label": "维修内场", "verb": "跨过地上的油管", "position": [54, 552], "interaction_radius": 66, "target_room_id": "repair_floor", "target_spawn_id": "from_storage", "use_saved_return": true}
+            ]
+          }
+        ]
+      },
+      "spatial_presentation": {
+        "eyebrow": "旧件市 · 唐胶维修棚",
+        "title": "别替它把那一拍补快",
+        "time_label": "开播前七分钟",
+        "cast": [
+          {"actor_id": "CH_JICUN", "display_name": "纪存", "side": "left", "portrait_path": "res://assets/portraits/portrait_jicun_entity_b_v1.png", "accent": "58c8d9"},
+          {"actor_id": "CH_TANGJIAO", "display_name": "唐胶", "side": "right", "portrait_path": "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png", "source_rect": [190, 25, 300, 336], "accent": "e8a84c"}
+        ]
+      },
+      "spatial_npcs": [
+        {
+          "actor_id": "CH_TANGJIAO",
+          "display_name": "唐胶",
+          "interaction_radius": 78,
+          "accent": "e8a84c",
+          "placements": [
+            {"placement_id": "beside_old_boxer", "room_id": "repair_floor", "position": [662, 330], "priority": 0},
+            {"placement_id": "at_repair_bench", "room_id": "back_storage", "position": [590, 454], "priority": 10, "requires_offer_groups": [["inspect_right_glove", "inspect_knee_bearing"], ["inspect_shadow_tape", "inspect_warehouse_gate"]]}
+          ],
+          "interaction_offers": [
+            {
+              "offer_id": "talk_tangjiao_body_first",
+              "beats": [
+                {"beat_id": "m6_talk_body_01", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "仰头看了一遍承力架", "text": "先拆右拳？"},
+                {"beat_id": "m6_talk_body_02", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "扳手卡在左膝轴上", "text": "你要是只看见拳，就会给一条腿修出工伤。先听它怎么把重量送过去。"},
+                {"beat_id": "m6_talk_body_03", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "手伸到一半又收回", "text": "所以不拆。先让它转三圈。"},
+                {"beat_id": "m6_talk_body_04", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "终于把扳手递过来", "text": "第三圈会轻一下。别把那一下当成修好了。"}
+              ],
+              "repeat_beats": [
+                {"beat_id": "m6_talk_body_recap", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "下巴朝膝轴一抬", "text": "三圈。听见它把重量交出去，再去看拳。"}
+              ]
+            },
+            {
+              "offer_id": "talk_tangjiao_plan_ready",
+              "requires_offer_groups": [["inspect_right_glove", "inspect_knee_bearing"], ["inspect_shadow_tape", "inspect_warehouse_gate"]],
+              "beats": [
+                {"beat_id": "m6_plan_ready_01", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "把最后一套撑杆横在零件盘上", "text": "身体的账和后门的账都在这儿。你先保哪一边？", "choices": [
+                  {"choice_id": "protect_load", "label": "先保承力"},
+                  {"choice_id": "protect_exit", "label": "先保出口"}
+                ]},
+                {"beat_id": "m6_plan_ready_load", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "手指停在承力槽", "text": "先让它站得住。出口的风险我记在方案里，不装没看见。", "requires_choices": {"m6_plan_ready_01": "protect_load"}},
+                {"beat_id": "m6_plan_ready_exit", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "先把撑杆推回仓门一侧", "text": "先留住出口。擂台少一根撑杆，就让动作少一点，不能让人少一条路。", "requires_choices": {"m6_plan_ready_01": "protect_exit"}},
+                {"beat_id": "m6_plan_ready_04", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "把零件盘让出半个身位", "text": "行。现在去盘里排。说过的话不算方案，零件落在哪儿才算。"}
+              ],
+              "repeat_beats": [
+                {"beat_id": "m6_plan_ready_recap", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "敲了敲零件盘的空槽", "text": "账没变。去盘里排，空着也要说清楚为什么空。"}
+              ]
+            }
+          ]
+        }
+      ],
+      "stable_objects": [
+        {
+          "stable_object_id": "OBJ_M6_RIGHT_GLOVE",
+          "legacy_id": "right_glove",
+          "label": "旧拳王右拳护具",
+          "room_id": "repair_floor",
+          "position": [555, 255],
+          "interaction_radius": 78,
+          "initial_state": "mounted_worn",
+          "interaction_offers": [
+            {
+              "offer_id": "inspect_right_glove",
+              "action": "inspect",
+              "speaker": "唐胶",
+              "first_text": "唐胶没抬头，只把护具往灯下转了半圈：划痕从拳背一路拐进肘轴。不是一只手坏了，是整副身体还在等旧拳路把它带过去。",
+              "repeat_text": "划痕的方向没变。唐胶把护具放回原角度：右拳只是锚，别把它拆成另一台机体。",
+              "first_sequence": [
+                {"beat_id": "m6_glove_01", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "托住护具，没有解锁卡扣", "text": "拳背的漆先掉，肘轴后掉。它不是撞上去的。"},
+                {"beat_id": "m6_glove_02", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "把工作灯转低半圈", "text": "再看里面。划痕拐进肘轴，说明它每次都在半路收拳。"},
+                {"beat_id": "m6_glove_03", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "顺着划痕比到左膝", "text": "不是右拳坏。整副身体还在等旧拳路把它带过去。"},
+                {"beat_id": "m6_glove_04", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "护具回到原来的角度", "text": "这才是一条身体的理由。右拳只是锚，别给我拆成另一台机体。"}
+              ],
+              "repeat_sequence": [
+                {"beat_id": "m6_glove_recap", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "沿旧划痕重新比了一遍", "text": "方向没变：拳背到肘轴，再把问题送回整副身体。"}
+              ],
+              "repeat_policy": "once_then_recap",
+              "outcome_contract": {"kind": "world_object_change", "target_id": "OBJ_M6_RIGHT_GLOVE", "known_state": "body_anchor_confirmed"},
+              "failure_continuation": {"policy": "remain_in_spatial", "state_change": "none", "player_feedback": "没有足够条件时仍留在维修棚，可先听膝轴或对照原速录像。"},
+              "known_state": "body_anchor_confirmed",
+              "add_tags": ["body_evidence", "right_fist_anchor"]
+            }
+          ]
+        },
+        {
+          "stable_object_id": "OBJ_M6_KNEE_BEARING",
+          "legacy_id": "knee_bearing",
+          "label": "左膝旧轴",
+          "room_id": "repair_floor",
+          "position": [394, 446],
+          "interaction_radius": 78,
+          "initial_state": "dry_scrape",
+          "interaction_offers": [
+            {
+              "offer_id": "inspect_knee_bearing",
+              "action": "listen",
+              "speaker": "纪存",
+              "first_text": "纪存扶住膝甲。轴承刮到第三圈才轻一下，像有人把重量从左脚换回右脚。唐胶说：这声音还知道自己替谁承力，先别换新。",
+              "repeat_text": "第三圈，还是那一下轻响。旧轴没有变好，只是把身体的受力顺序又说了一遍。",
+              "first_sequence": [
+                {"beat_id": "m6_knee_01", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "手掌压住膝甲外沿", "text": "慢一点。你拧得快，它什么都来不及说。"},
+                {"beat_id": "m6_knee_02", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "把旧轴转到第三圈", "text": "前两圈都刮。第三圈轻了一下。"},
+                {"beat_id": "m6_knee_03", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "指节贴着轴承听回震", "text": "那一下不是顺了，是它把重量从左脚交回右脚。"},
+                {"beat_id": "m6_knee_04", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "松开膝甲，没去拿新轴", "text": "声音还记得替谁承力。先不换。"}
+              ],
+              "repeat_sequence": [
+                {"beat_id": "m6_knee_recap", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "跟着第三圈的轻响点了一下头", "text": "旧轴没变好。受力顺序还在，这就够你写进方案。"}
+              ],
+              "repeat_policy": "once_then_recap",
+              "outcome_contract": {"kind": "world_object_change", "target_id": "OBJ_M6_KNEE_BEARING", "known_state": "load_path_confirmed"},
+              "failure_continuation": {"policy": "remain_in_spatial", "state_change": "none", "player_feedback": "听不清时不会重置调查，可换到右拳或录像形成另一条身体证据。"},
+              "known_state": "load_path_confirmed",
+              "add_tags": ["body_evidence", "knee_load_path"]
+            }
+          ]
+        },
+        {
+          "stable_object_id": "OBJ_M6_SHADOW_TAPE",
+          "legacy_id": "shadow_tape",
+          "label": "冠军动作原速录像",
+          "room_id": "workshop_front",
+          "position": [184, 244],
+          "interaction_radius": 82,
+          "initial_state": "auto_frame_enabled",
+          "interaction_offers": [
+            {
+              "offer_id": "inspect_shadow_tape",
+              "action": "play_original_speed",
+              "speaker": "纪存",
+              "first_text": "纪存把补帧关掉。画面立刻难看起来，也终于诚实：影子先出拳，旧拳王停了半拍，等一个早就不在场的陪练位。",
+              "repeat_text": "原速画面仍在那半拍处发涩。它不是追不上影子，是每次都先确认影子有没有回来。",
+              "first_sequence": [
+                {"beat_id": "m6_tape_01", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "把播放速度从“顺滑”拨回“原速”", "text": "这段谁补过帧？"},
+                {"beat_id": "m6_tape_02", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "隔着帘子喊，扳手声没停", "text": "直播那边。嫌死人和旧机器都不够利索。"},
+                {"beat_id": "m6_tape_03", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "在第三次挥拳前停住画面", "text": "影子先抬肩。它停半拍，不是追不上，是在等陪练位有人。"},
+                {"beat_id": "m6_tape_04", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "帘后安静了一秒", "text": "那人早不在了。录像留下，补帧关掉。"}
+              ],
+              "repeat_sequence": [
+                {"beat_id": "m6_tape_recap", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "原速又走过那半拍", "text": "它每次都先确认空位。迟到的是影子，不是拳。"}
+              ],
+              "repeat_policy": "repeat_variant",
+              "repeat_variants": ["原速画面仍在那半拍处发涩。它不是追不上影子，是每次都先确认影子有没有回来。", "再放一次，唐胶只看膝轴：影子抬肩时，旧拳王才肯把重量交给右拳。"],
+              "outcome_contract": {"kind": "world_object_change", "target_id": "OBJ_M6_SHADOW_TAPE", "known_state": "original_delay_confirmed"},
+              "failure_continuation": {"policy": "short_recap", "state_change": "none", "player_feedback": "录像始终可按原速重看，但重复观看只补观察角度，不重复提交事实。"},
+              "known_state": "original_delay_confirmed",
+              "add_tags": ["context_evidence", "shadow_delay"]
+            }
+          ]
+        },
+        {
+          "stable_object_id": "OBJ_M6_WAREHOUSE_GATE_PANEL",
+          "legacy_id": "warehouse_alarm",
+          "label": "后仓门报警器",
+          "room_id": "back_storage",
+          "position": [684, 246],
+          "interaction_radius": 78,
+          "initial_state": "single_strut_remaining",
+          "interaction_offers": [
+            {
+              "offer_id": "inspect_warehouse_gate",
+              "action": "test_alarm",
+              "speaker": "唐胶",
+              "first_text": "报警器亮两次，仓门只回了一次。唐胶用扳手敲了敲伸缩撑杆：最后一套，拿去撑擂台，仓门就得靠人顶。",
+              "repeat_text": "红灯还是两下，撑杆还是一套。这个数不会因为直播倒计时变多。",
+              "first_sequence": [
+                {"beat_id": "m6_gate_01", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "按下测试键，红灯闪了两次", "text": "两次报警，一次回位。"},
+                {"beat_id": "m6_gate_02", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "膝盖顶住回弹的仓门", "text": "别松。它现在只认一套撑杆。"},
+                {"beat_id": "m6_gate_03", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "用肩把门推回锁位", "text": "撑杆拿去擂台，这扇门就得靠人。"},
+                {"beat_id": "m6_gate_04", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "拿粉笔在门框写下“一套”", "text": "对。现场的理由不是怕，是库存。就这一套。"}
+              ],
+              "repeat_sequence": [
+                {"beat_id": "m6_gate_recap", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "粉笔字旁又补了一道横线", "text": "红灯两下，回位一下，撑杆一套。倒计时不会把它变成两套。"}
+              ],
+              "repeat_policy": "once_then_recap",
+              "outcome_contract": {"kind": "world_object_change", "target_id": "OBJ_M6_WAREHOUSE_GATE_PANEL", "known_state": "evacuation_limit_confirmed"},
+              "failure_continuation": {"policy": "remain_in_spatial", "state_change": "none", "player_feedback": "报警器检查失败也不会封路，玩家仍可从录像或机体身体取得现场理由。"},
+              "known_state": "evacuation_limit_confirmed",
+              "add_tags": ["context_evidence", "warehouse_exit"]
+            }
+          ]
+        },
+        {
+          "stable_object_id": "OBJ_M6_LIVE_TERMINAL",
+          "legacy_id": "auction_terminal",
+          "label": "复活直播终端",
+          "room_id": "workshop_front",
+          "position": [626, 258],
+          "interaction_radius": 78,
+          "initial_state": "countdown_locked",
+          "locked_text": "终端只滚动倒计时。没有原速录像作比较，纪存还不知道该关掉哪一层修饰。",
+          "interaction_offers": [
+            {
+              "offer_id": "inspect_live_terminal",
+              "action": "disable_auto_frame",
+              "speaker": "纪存",
+              "first_text": "纪存把“动作优化”拨到关闭。终端警告成片率会下降。唐胶瞥了一眼：让它难看。先让大家看见它到底慢在哪里。",
+              "repeat_text": "“动作优化：关闭”。倒计时还在走，但那半拍不会再被系统擦掉。",
+              "first_sequence": [
+                {"beat_id": "m6_terminal_01", "source_kind": "broadcast", "speaker": "直播终端", "stage_action": "黄色警告覆盖画面", "text": "关闭动作优化将降低复活完成度与成片率。"},
+                {"beat_id": "m6_terminal_02", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "手指停在确认键上", "text": "它慢的那半拍，正好是你们准备擦掉的东西。"},
+                {"beat_id": "m6_terminal_03", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "从帘后探出半张脸", "text": "让它难看。先让人看见它到底慢在哪儿。"},
+                {"beat_id": "m6_terminal_04", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "确认关闭，倒计时没有停止", "text": "原速主档。补帧下线。直播照旧。"}
+              ],
+              "repeat_sequence": [
+                {"beat_id": "m6_terminal_recap", "source_kind": "broadcast", "speaker": "直播终端", "stage_action": "倒计时仍在跳", "text": "动作优化：关闭。原速信号正在写入主档。"}
+              ],
+              "repeat_policy": "once_then_recap",
+              "outcome_contract": {"kind": "world_object_change", "target_id": "OBJ_M6_LIVE_TERMINAL", "known_state": "auto_frame_disabled"},
+              "failure_continuation": {"policy": "alternative_offer", "state_change": "none", "player_feedback": "终端未解锁时回到原速录像；玩家不失去时间线，也不会被迫重复已完成调查。"},
+              "requires_all_offer_ids": ["inspect_shadow_tape"],
+              "known_state": "auto_frame_disabled",
+              "add_tags": ["broadcast_evidence", "truthful_feed"]
+            }
+          ]
+        },
+        {
+          "stable_object_id": "OBJ_M6_REPAIR_BENCH",
+          "legacy_id": "repair_bench",
+          "label": "唐胶的零件盘",
+          "room_id": "back_storage",
+          "position": [454, 488],
+          "interaction_radius": 84,
+          "initial_state": "plan_locked",
+          "locked_text": "唐胶按住零件盘：先给我一条身体的理由，再给我一条现场的理由。零件不是投票用的。",
+          "interaction_offers": [
+            {
+              "offer_id": "open_repair_plan",
+              "action": "open_activity",
+              "speaker": "唐胶",
+              "first_text": "唐胶把三件旧零件推成一排：身体怎么承力、现场哪里会先垮，你都看过了。现在说，谁替谁承担。",
+              "repeat_text": "零件盘保持原样。唐胶用扳手点了点空槽：草案在这儿，改的是责任，不是刚才看见的事实。",
+              "first_sequence": [
+                {"beat_id": "m6_bench_01", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "三件旧零件被推成一排", "text": "身体怎么承力、后门哪里会先垮，你都摸过了。"},
+                {"beat_id": "m6_bench_02", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "把原速录像的时间码写在纸角", "text": "还有它自己留下的半拍。"},
+                {"beat_id": "m6_bench_03", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "扳手点过三个责任槽", "text": "那就排。谁替谁承担，哪一项宁可空着。"}
+              ],
+              "repeat_sequence": [
+                {"beat_id": "m6_bench_recap", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "零件盘保持原样", "text": "事实没变。要改就改责任，别回头改你刚才看见的东西。"}
+              ],
+              "repeat_policy": "once_then_recap",
+              "outcome_contract": {"kind": "world_object_change", "target_id": "OBJ_M6_REPAIR_BENCH", "known_state": "repair_plan_opened"},
+              "failure_continuation": {"policy": "alternative_offer", "state_change": "none", "player_feedback": "零件盘未解锁时明确缺少身体或现场证据，玩家可任选对应对象继续，不要求搜齐全部热点。"},
+              "requires_offer_groups": [["inspect_right_glove", "inspect_knee_bearing"], ["inspect_shadow_tape", "inspect_warehouse_gate"]],
+              "known_state": "repair_plan_opened",
+              "add_tags": ["activity_gate"],
+              "opens_phase": "constraint"
+            }
+          ]
+        }
+      ],
+      "activity_definition_path": "res://content/activities/constraint/c02_old_boxer_repair_plan_validation.json",
+      "timing_definition_path": "res://content/activities/timing/a003_old_boxer_missed_beat_validation.json",
+      "transaction_id": "M6:C02:WORKSHOP:COMPOSITE:V01",
+      "completion_contract": "OUTCOME_M6_C02_WORKSHOP_V01",
+      "success_edges": ["m6_tactical"],
+      "soft_fail_edges": ["m6_tactical"],
+      "failure_edges": ["m6_tactical"],
+      "cancel_edges": ["m6_tactical"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "m6_tactical",
+      "mode": "TACTICAL",
+      "scene_id": "SCN_MULTI_PLAY_M6_TACTICAL",
+      "title": "旧件市擂台 / 坍塌仓库单图翻转",
+      "transition": {
+        "transition_id": "M6-TR-03-RING-FLIPS",
+        "kind": "pressure_escalation",
+        "eyebrow": "直播灯亮，仓库顶先塌了",
+        "title": "擂台翻成救援现场",
+        "location": "旧件市 · 临时擂台与后仓",
+        "time_label": "开播前四分钟",
+        "cause": "维修方案刚落到旧拳王身上，直播吊架便压穿后仓；工人、旧件柜和出口同时受困。",
+        "handoff": "把刚才保留或舍弃的身体条件带进战场，先救人，再决定那一拳该不该打完。",
+        "continuity": {
+          "types": ["object", "action", "responsibility"],
+          "object_refs": ["OBJ_M6_RIGHT_GLOVE", "OBJ_M6_WAREHOUSE_GATE_PANEL", "OBJ_M6_SHADOW_TAPE"],
+          "action_refs": ["M6:C02:WORKSHOP:COMPOSITE:V01"],
+          "responsibility_refs": ["CH_JICUN", "CH_TANGJIAO", "MECHA_OLD_BOXER_KING"]
+        },
+        "duration": 1.35,
+        "fade_seconds": 0.48,
+        "accent": "ef6b4a"
+      },
+      "battle_definition_path": "res://content/episodes/runtime_validation/m6/battle/c02_m6_old_boxer_arena_flip.json",
+      "completion_contract": "OUTCOME_M6_C02_TACTICAL_V01",
+      "result_transaction_id": "M6:C02:TACTICAL:RESULT:V01",
+      "result_fact_id": "M6_C02_TACTICAL_RESOLUTION",
+      "variant_fact_id": "M6_C02_TACTICAL_VARIANT_USED",
+      "result_debt_id": "M6_C02_RESCUE_UNFINISHED",
+      "result_debt_owner": "CH_JICUN",
+      "reaction_prefix": "REACT_M6_C02_TACTICAL",
+      "success_edges": ["m6_reaction"],
+      "soft_fail_edges": ["m6_reaction"],
+      "failure_edges": ["m6_reaction"],
+      "cancel_edges": ["m6_reaction"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "m6_reaction",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_MULTI_PLAY_M6_REACTION",
+      "title": "拳面前一掌 / 不把停拳剪成赢",
+      "transition": {
+        "transition_id": "M6-TR-04-HELD-PUNCH",
+        "kind": "aftermath",
+        "eyebrow": "火势压下去以后",
+        "title": "它少打的那一拍，接住了一个人",
+        "location": "旧件市 · 倾斜擂台前沿",
+        "time_label": "警报解除后",
+        "cause": "旧拳王没有完成镜头要的冠军动作；它把右拳停在了坠落工人的头顶。",
+        "handoff": "让纪存和唐胶面对这个结果：它是失手、旧伤，还是一次属于它自己的选择。",
+        "continuity": {
+          "types": ["object", "action", "responsibility"],
+          "object_refs": ["OBJ_M6_RIGHT_GLOVE", "OBJ_M6_SHADOW_TAPE"],
+          "action_refs": ["OUTCOME_M6_C02_TACTICAL_V01", "CUE_M6_OLD_BOXER_HOLD_PUNCH"],
+          "responsibility_refs": ["MECHA_OLD_BOXER_KING", "CH_JICUN", "CH_TANGJIAO"]
+        },
+        "duration": 1.2,
+        "fade_seconds": 0.44,
+        "accent": "7fd7c4"
+      },
+      "completion_contract": "OUTCOME_M6_C02_REACTION_V01",
+      "transaction_id": "M6:C02:REACTION:V01",
+      "presentation": {
+        "profile": "standard_adv",
+        "background": "res://assets/backgrounds/bg_model_street_ring_aftermath_m6_v1.png",
+        "eyebrow": "警报解除后 · 倾斜擂台前沿",
+        "title": "拳面前一掌",
+        "time_label": "旧件市",
+        "cast": [
+          {"actor_id": "CH_JICUN", "display_name": "纪存", "side": "left", "portrait_path": "res://assets/portraits/portrait_jicun_entity_b_v1.png", "accent": "58c8d9"},
+          {"actor_id": "CH_TANGJIAO", "display_name": "唐胶", "side": "right", "portrait_path": "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png", "source_rect": [190, 25, 300, 336], "accent": "e8a84c"}
+        ]
+      },
+      "success_edges": ["m6_desk"],
+      "soft_fail_edges": ["m6_desk"],
+      "failure_edges": ["m6_desk"],
+      "cancel_edges": ["m6_desk"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "m6_desk",
+      "mode": "DESK",
+      "scene_id": "SCN_MULTI_PLAY_M6_DESK",
+      "title": "M6 / 旧件市结算笔记",
+      "transition": {
+        "transition_id": "M6-TR-05-WHAT-REMAINS",
+        "kind": "settlement",
+        "eyebrow": "旧件市开始收摊",
+        "title": "没打完的动作，也要有人负责保存",
+        "location": "旧件市 · 临时清点桌",
+        "time_label": "当晚闭摊后",
+        "cause": "救援结束了，受损旧件、停拳记录和两个人对维修的分歧没有随警报消失。",
+        "handoff": "把身体状态、战场后果、人物承诺和未结责任写回同一份记录。",
+        "continuity": {
+          "types": ["object", "action", "responsibility"],
+          "object_refs": ["OBJ_M6_RIGHT_GLOVE", "OBJ_M6_SHADOW_TAPE", "OBJ_M6_WAREHOUSE_GATE_PANEL"],
+          "action_refs": ["OUTCOME_M6_C02_REACTION_V01", "M6_C02_TACTICAL_RESOLUTION"],
+          "responsibility_refs": ["CH_JICUN", "CH_TANGJIAO", "DEBT_M6_BODY_OR_WAREHOUSE_RECHECK"]
+        },
+        "duration": 1.0,
+        "fade_seconds": 0.38,
+        "accent": "d9b35f"
+      },
+      "completion_contract": "OUTCOME_M6_C02_DESK_V01",
+      "transaction_id": "M6:C02:DESK:V01",
+      "outcome_facts": [{"id": "M6_C02_RUNTIME_PROOF_REVIEWED", "to": true}],
+      "player_summary": "维修选择、擂台后果、人物反应和未结债务已经回到同一份现场笔记。",
+      "workbench": {
+        "background": "res://assets/backgrounds/bg_model_street_settlement_desk_m6_v1.png",
+        "eyebrow": "旧件市 · 临时清点桌",
+        "title": "没打完的动作，也要有人负责保存",
+        "time_label": "当晚闭摊后",
+        "evidence_cards": [
+          {
+            "evidence_id": "EV_M6_ORIGINAL_SPEED",
+            "label": "原速录像",
+            "detail": "自动补帧已关闭；停拳前后半秒仍完整保留。",
+            "status": "母带完整"
+          },
+          {
+            "evidence_id": "EV_M6_RIGHT_FIST_BODY",
+            "label": "右拳身体记录",
+            "detail": "维修分配和三段反馈决定它还能承担多少动作。",
+            "status_source": {
+              "kind": "activity_band",
+              "activity_id": "A003_OLD_BOXER_MISSED_BEAT",
+              "labels": {"perfect": "停拳窗口清晰", "good": "承力可读，仍需复查", "clear": "限载可动", "fail": "轴抖未消", "unknown": "记录不完整"}
+            }
+          },
+          {
+            "evidence_id": "EV_M6_WAREHOUSE_RESCUE",
+            "label": "后仓救援记录",
+            "detail": "比分牌已断电；伤员、仓门和旧件损伤进入同一份清点。",
+            "status_source": {
+              "kind": "world_fact",
+              "fact_id": "M6_C02_TACTICAL_RESOLUTION",
+              "fallback": "待核",
+              "labels": {"success": "救援完成", "costly_success": "救援完成，仓体受损", "soft_failure": "人员撤出，目标有损", "failure": "紧急善后", "withdrawal": "主动撤离后善后"}
+            }
+          }
+        ],
+        "commitments": [
+          {
+            "commitment_id": "preserve_original_speed_repair_fist",
+            "commitment_group_id": "COMMIT_M6_REPAIR_WITHOUT_ERASING_DELAY",
+            "title": "原速入主档，先修右拳",
+            "description": "拒绝冠军回归剪辑；把有限零件优先留给旧拳王的承力链。",
+            "immediate": "原速录像成为主档；唐胶取得下次校正前的维修异议权。",
+            "cost": "后仓封闭时间延长，直播款项继续冻结。",
+            "next": "复查右拳承力链，再决定是否恢复任何演示。",
+            "resolution": "costly_success",
+            "facts": [{"id": "M6_DESK_POLICY_ORIGINAL_SPEED_FIST_FIRST", "to": true}],
+            "entity_changes": [{"entity_id": "MECHA_OLD_BOXER_KING", "condition": "right_fist_repair_priority"}],
+            "relationship_edges": [{"edge_id": "JICUN_TANGJIAO_REPAIR_TRUST", "from": "CH_JICUN", "to": "CH_TANGJIAO", "state": "shares_original_speed_record"}],
+            "promises_and_debts": [{"debt_id": "M6_C02_WAREHOUSE_REPAIR_BACKLOG", "state": "open", "owner": "CH_JICUN", "cause": "right_fist_first"}],
+            "player_summary": "原速录像进入主档；旧拳王右拳优先复查，后仓修复被推迟。"
+          },
+          {
+            "commitment_id": "preserve_original_speed_repair_warehouse",
+            "commitment_group_id": "COMMIT_M6_REPAIR_WITHOUT_ERASING_DELAY",
+            "title": "原速留母带，先补后仓",
+            "description": "公开停拳片段但暂缓身体结论；零件先恢复工人通行路线。",
+            "immediate": "后仓恢复通行；停拳只以待核记录公开，不包装成冠军回归。",
+            "cost": "旧拳王右拳继续限载，本轮复活直播取消。",
+            "next": "保留原速母带，等身体复查后再解释那一拍。",
+            "resolution": "costly_success",
+            "facts": [{"id": "M6_DESK_POLICY_ORIGINAL_SPEED_WAREHOUSE_FIRST", "to": true}],
+            "entity_changes": [{"entity_id": "MECHA_OLD_BOXER_KING", "condition": "right_fist_load_restricted"}],
+            "relationship_edges": [{"edge_id": "JICUN_TANGJIAO_REPAIR_TRUST", "from": "CH_JICUN", "to": "CH_TANGJIAO", "state": "trusted_to_delay_verdict"}],
+            "promises_and_debts": [{"debt_id": "M6_C02_RIGHT_FIST_BODY_RECHECK", "state": "open", "owner": "CH_TANGJIAO", "cause": "warehouse_first"}],
+            "player_summary": "原速母带被保留；后仓先恢复通行，旧拳王右拳继续限载等待复查。"
+          }
+        ]
+      },
+      "success_edges": [],
+      "soft_fail_edges": [],
+      "failure_edges": [],
+      "cancel_edges": [],
+      "terminal": true,
+      "autosave": "before_enter_and_after_commit"
+    }
+  ]
+}

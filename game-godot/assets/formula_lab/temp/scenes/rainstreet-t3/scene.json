@@ -1,0 +1,1197 @@
+{
+  "schema_version": 1,
+  "scene_id": "rainstreet-t3-candidate-v1",
+  "camera_id": "tactical-t3-dimetric-v1",
+  "design_size": [
+    1280,
+    720
+  ],
+  "grid_origin_px": [
+    640,
+    249.84
+  ],
+  "basis_x": [
+    34,
+    17
+  ],
+  "basis_y": [
+    -34,
+    17
+  ],
+  "board_size": [
+    7,
+    7
+  ],
+  "blocked": [],
+  "terrain": [
+    {
+      "cell": [
+        3,
+        3
+      ],
+      "kind": "support",
+      "label": "环心"
+    },
+    {
+      "cell": [
+        0,
+        3
+      ],
+      "kind": "line",
+      "label": "绳圈"
+    },
+    {
+      "cell": [
+        6,
+        3
+      ],
+      "kind": "line",
+      "label": "绳圈"
+    }
+  ],
+  "texture_path": "res://assets/formula_lab/temp/scenes/rainstreet-t3/tactical.png",
+  "texture_sha256": "e56fe0ec0f8ba1b2c89c74df21730ddce02ef971d3274fd9a7a79442a8e76d96",
+  "landmarks": [
+    {
+      "id": "grid_0_0",
+      "cell": [
+        0,
+        0
+      ],
+      "world": [
+        -6.0,
+        0.0,
+        0.0
+      ],
+      "screen_px": [
+        639.999939,
+        249.839996
+      ]
+    },
+    {
+      "id": "grid_6_0",
+      "cell": [
+        6,
+        0
+      ],
+      "world": [
+        -6.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        843.999939,
+        351.839996
+      ]
+    },
+    {
+      "id": "grid_6_6",
+      "cell": [
+        6,
+        6
+      ],
+      "world": [
+        6.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        639.999939,
+        453.839935
+      ]
+    },
+    {
+      "id": "grid_0_6",
+      "cell": [
+        0,
+        6
+      ],
+      "world": [
+        6.0,
+        0.0,
+        0.0
+      ],
+      "screen_px": [
+        436.0,
+        351.839935
+      ]
+    },
+    {
+      "id": "grid_3_3",
+      "cell": [
+        3,
+        3
+      ],
+      "world": [
+        0.0,
+        6.0,
+        0.0
+      ],
+      "screen_px": [
+        639.999939,
+        351.839935
+      ]
+    }
+  ],
+  "projection_error_px": {
+    "origin_px": 6.103515625e-05,
+    "basis_x_px": 3.0517578125e-05,
+    "basis_y_px": 6.823937919616058e-05
+  },
+  "cell_visibility_raycast": [
+    {
+      "cell": [
+        0,
+        0
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        1,
+        0
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "cell": [
+        2,
+        0
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "cell": [
+        3,
+        0
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 2.6e-05
+    },
+    {
+      "cell": [
+        4,
+        0
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        5,
+        0
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        6,
+        0
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        0,
+        1
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 2.6e-05
+    },
+    {
+      "cell": [
+        1,
+        1
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        2,
+        1
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "cell": [
+        3,
+        1
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        4,
+        1
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        5,
+        1
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "cell": [
+        6,
+        1
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 2.6e-05
+    },
+    {
+      "cell": [
+        0,
+        2
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 2.6e-05
+    },
+    {
+      "cell": [
+        1,
+        2
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        2,
+        2
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "cell": [
+        3,
+        2
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        4,
+        2
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        5,
+        2
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        6,
+        2
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 2.6e-05
+    },
+    {
+      "cell": [
+        0,
+        3
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        1,
+        3
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "cell": [
+        2,
+        3
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "cell": [
+        3,
+        3
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        4,
+        3
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        5,
+        3
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "cell": [
+        6,
+        3
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        0,
+        4
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 2.6e-05
+    },
+    {
+      "cell": [
+        1,
+        4
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        2,
+        4
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": -5e-06
+    },
+    {
+      "cell": [
+        3,
+        4
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "cell": [
+        4,
+        4
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        5,
+        4
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        6,
+        4
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        0,
+        5
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 2.6e-05
+    },
+    {
+      "cell": [
+        1,
+        5
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "cell": [
+        2,
+        5
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        3,
+        5
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "cell": [
+        4,
+        5
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "cell": [
+        5,
+        5
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        6,
+        5
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        0,
+        6
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        1,
+        6
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "cell": [
+        2,
+        6
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        3,
+        6
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        4,
+        6
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "cell": [
+        5,
+        6
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "cell": [
+        6,
+        6
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    }
+  ],
+  "grid_corner_visibility_raycast": [
+    {
+      "corner": [
+        0,
+        0
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out lateral limit",
+      "hit_z": 0.000517
+    },
+    {
+      "corner": [
+        1,
+        0
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out lateral limit",
+      "hit_z": 0.000517
+    },
+    {
+      "corner": [
+        2,
+        0
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out lateral limit",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        3,
+        0
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out lateral limit",
+      "hit_z": 0.000494
+    },
+    {
+      "corner": [
+        4,
+        0
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out lateral limit",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        5,
+        0
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out lateral limit",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        6,
+        0
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out lateral limit",
+      "hit_z": 0.000517
+    },
+    {
+      "corner": [
+        7,
+        0
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out transverse limit.001",
+      "hit_z": 0.000494
+    },
+    {
+      "corner": [
+        0,
+        1
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out transverse limit",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        1,
+        1
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "corner": [
+        2,
+        1
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 2.6e-05
+    },
+    {
+      "corner": [
+        3,
+        1
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "corner": [
+        4,
+        1
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "corner": [
+        5,
+        1
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "corner": [
+        6,
+        1
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "corner": [
+        7,
+        1
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out transverse limit.001",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        0,
+        2
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out transverse limit",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        1,
+        2
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "corner": [
+        2,
+        2
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "corner": [
+        3,
+        2
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "corner": [
+        4,
+        2
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "corner": [
+        5,
+        2
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "corner": [
+        6,
+        2
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "corner": [
+        7,
+        2
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out transverse limit.001",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        0,
+        3
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out transverse limit",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        1,
+        3
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "corner": [
+        2,
+        3
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "corner": [
+        3,
+        3
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "corner": [
+        4,
+        3
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "corner": [
+        5,
+        3
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 2.6e-05
+    },
+    {
+      "corner": [
+        6,
+        3
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "corner": [
+        7,
+        3
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out transverse limit.001",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        0,
+        4
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out transverse limit",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        1,
+        4
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "corner": [
+        2,
+        4
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "corner": [
+        3,
+        4
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "corner": [
+        4,
+        4
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": -5e-06
+    },
+    {
+      "corner": [
+        5,
+        4
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "corner": [
+        6,
+        4
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "corner": [
+        7,
+        4
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out transverse limit.001",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        0,
+        5
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out transverse limit",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        1,
+        5
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "corner": [
+        2,
+        5
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "corner": [
+        3,
+        5
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "corner": [
+        4,
+        5
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "corner": [
+        5,
+        5
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "corner": [
+        6,
+        5
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 2.6e-05
+    },
+    {
+      "corner": [
+        7,
+        5
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out transverse limit.001",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        0,
+        6
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out transverse limit",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        1,
+        6
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 1.8e-05
+    },
+    {
+      "corner": [
+        2,
+        6
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "corner": [
+        3,
+        6
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "corner": [
+        4,
+        6
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 3e-06
+    },
+    {
+      "corner": [
+        5,
+        6
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 2.6e-05
+    },
+    {
+      "corner": [
+        6,
+        6
+      ],
+      "ground_visible": true,
+      "first_hit": "Continuous wet street foundation",
+      "hit_z": 2.6e-05
+    },
+    {
+      "corner": [
+        7,
+        6
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out transverse limit.001",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        0,
+        7
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out transverse limit",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        1,
+        7
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out lateral limit.001",
+      "hit_z": 0.000517
+    },
+    {
+      "corner": [
+        2,
+        7
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out lateral limit.001",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        3,
+        7
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out lateral limit.001",
+      "hit_z": 0.000494
+    },
+    {
+      "corner": [
+        4,
+        7
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out lateral limit.001",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        5,
+        7
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out lateral limit.001",
+      "hit_z": 0.000502
+    },
+    {
+      "corner": [
+        6,
+        7
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out lateral limit.001",
+      "hit_z": 0.000517
+    },
+    {
+      "corner": [
+        7,
+        7
+      ],
+      "ground_visible": true,
+      "first_hit": "T3 painted ring-out transverse limit.001",
+      "hit_z": 0.000502
+    }
+  ],
+  "ring_boundary_world": {
+    "x": [
+      -7,
+      7
+    ],
+    "y": [
+      -1,
+      13
+    ],
+    "white_line_center_on_logical_boundary": true,
+    "white_line_width": 0.08,
+    "paint_top_z": 0.0005,
+    "rope_and_posts_outside": true
+  },
+  "world_cell_size": 2,
+  "grid_origin_world": [
+    -6.0,
+    0.0,
+    0.0
+  ],
+  "cell_axis_x_world": [
+    0.0,
+    2.0,
+    0.0
+  ],
+  "cell_axis_y_world": [
+    2.0,
+    0.0,
+    0.0
+  ],
+  "status": "candidate_registered_ground_plane_only",
+  "user_visual_acceptance": false,
+  "source_blend": "/Users/rayz/Documents/超gag机器人大战/artifacts/formulas/visual-targets-v1/blender/rain_street_candidate.blend",
+  "source_script": "/Users/rayz/Documents/超gag机器人大战/artifacts/formulas/visual-targets-v1/blender/build_rain_street.py",
+  "registration_scope": "T3 plan ground plane only; contact camera is unregistered research"
+}

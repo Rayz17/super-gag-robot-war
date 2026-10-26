@@ -1,0 +1,15 @@
+phase_or_use	subject	logical_motion_or_facing	map_sprite_requirement	engine_or_fx_requirement	production_status	blocker_or_note
+planning	GUARDIAN_Z	N/E/S/W endpoint facing	four map_dimetric idle or plant facings	selection outline; foot ring; 2x2 ghost; projected facing fan	BLOCKED_AFTER_ONE_CAMERA_PILOT	V10X design turnaround is identity reference only; no direct crop
+route_move	GUARDIAN_Z	facing from every route segment	minimal step clips only for directions actually traversed	position tween; foot bob; turn cue; dust	BLOCKED_G2_A1_R2	current director incorrectly applies final_facing to whole route
+T2_intercept	GUARDIAN_Z	derive from corrected approach and contact normal	intercept or brace entry keyframe	contact preview and projected force arrow	BLOCKED_CONTACT_GEOMETRY	current fixture facing and footprint contact edge disagree
+T3_contact	GUARDIAN_Z	derive from signed contact normal	brace; contact; recoil_hold sparse clips	hit-stop; shake; directional debris; post-contact offset	BLOCKED_CONTACT_GEOMETRY	requires sockets and signed impulse/recoil vector
+T3_T5	BREAKER	intended north charge but exact geometry unresolved	idle; charge; contact_compress; side_exposed; red_charge in only signed facing	translation; compression; recoil; red-seam emissive layer	BLOCKED_CONTACT_GEOMETRY	B+X identity pilot and contact socket both missing
+T2	RIFT_SWARM_PRIMARY	west path in current intent	west idle; lunge; deflected	path tween; spin; flash; throw vector	PARTIAL_APPROVED_SOURCE	A5 four-facing idle is correct camera source; sparse action frames still missing
+ambient	RIFT_SWARM_OTHER	north and south current placements	existing A5 idle facings	micro wander	SOURCE_AVAILABLE	no full action atlas required for round 1
+T1	EMERGENCY_VEHICLE	east	east map_dimetric idle or drive with minimal wheel/body variation	path tween; suspension bob; warning light; rain	BLOCKED_CAMERA_PILOT	pure side-view vehicle is forbidden on A4
+T4	CITY_GUN	external shot to BREAKER impact socket	no independent unit sprite	projected beam; flash; debris; directional recoil	BLOCKED_IMPACT_SOCKET	must target signed side-armor socket
+T1_T5	ROAD	world layer state	intact; A long crack arc; B twin dents	debris; rain splash; local damage mask	BLOCKED_A4_LAYER_REGISTRATION	shared 2400x1350 origin and crop proof required
+T1_T5	WARNING_FACILITY	world layer state	active; A damaged	alarm light; sparks	BLOCKED_A4_LAYER_REGISTRATION	z and occlusion semantics required
+round_1	HEAVY_SHIELD	wall mounted only	static three-old-marks state	no pickup or deformation	DEFERRED	shield use begins after round 1
+planning	UI_PREVIEW	world cardinal projected to map	no extra unit sprite	route band; ghost; contact corridor; force arrows	BLOCKED_G2_A1_R2	all overlay vectors must use 40x20 projection
+round_1	LIBTV_CUTIN	not required	no replacement for map contact entry or exit	optional later peak only after map state is valid	DEFERRED	first giant contact remains in scrolling tactical map

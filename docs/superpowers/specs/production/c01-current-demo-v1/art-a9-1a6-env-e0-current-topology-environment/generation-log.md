@@ -1,0 +1,23 @@
+# ENV-E0 generation log
+
+- Task: `A9_1A6_ENV_E0_CURRENT_TOPOLOGY_ENVIRONMENT_DERIVATION`
+- Build method: deterministic crop / mask / mirror / offset / overlap reassembly / level blocking / validation.
+- ImageGen calls: `0`
+- LibTV generation calls: `0`
+- Blender calls: `0`
+- Godot writes or runs: `0`
+- Call03: `false`
+- Call04: `false`
+- Actor or mecha visible drawing: `0`
+- Stateful object visible drawing: `0`
+- Runtime handoff: `none`
+- Canon migration: `none`
+- Visible parent scope: six exact Task98 registered donor rectangles only.
+- Old A4 pixels: `unused`.
+- Call02 full frame: `not reused`; parent raw opened only to extract the six exact rectangles.
+- Task98 actor-free guide: `not reused as pixels`; exact projection regenerated from `visual_projection.gd` because the old guide builder carried a +20px Y offset.
+- Task102 producer correction: `e8556f917456da83d933842b9ace9542f5238635d5166a6f5b7adbfad0d62378`; its three named Task98 boards are History-only.
+- Weather/FX: not baked; only surface material wetness remains in donor-derived visible texture.
+- Cleanplate padding: transparent top 58px / bottom 78px; 1280×584 map crop is never stretched.
+- Visual self-review state: `FAIL_50_PERCENT_INSUFFICIENT_DONOR_COVERAGE_PROGRAMMATIC_COLLAGE`.
+- Visual refinement after failure: `stopped`; no reroll, no generation, no extra donor, no hidden repair.

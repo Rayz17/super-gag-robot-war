@@ -1,0 +1,80 @@
+{
+  "schema_id": "GZ_V10X_CARDINAL_PRE_INTERNAL_ALPHA_FIX_HISTORY_V1",
+  "status": "MIXED_HISTORY_SNAPSHOT_WITH_REJECTED_ALPHA_BYTES",
+  "reason": "east/south border-only alpha cleanup left opaque checkerboard inside closed pose negative space; north/west bytes are unchanged inventory",
+  "user_report": "抠图还有很多白色区域没有镂空",
+  "snapshot_candidate_sha256": {
+    "north": "467118cb7f98b315b50b9ae3b530024a1e42e55c56bf0f392e8560030416b5fb",
+    "east": "c6dd358980e19045626e0ed17de0614b543a971d7275cde76816e3f1d1f3b0de",
+    "south": "0b3d2f437558216b8d3a94a1ea5255f7b9310a94447ba530a1d89b210ccfc12d",
+    "west": "d598b63903b87c76027401aa140a3b52cd4b689f13ce38570a60aa44f9a92351"
+  },
+  "rejected_alpha_candidate_sha256": {
+    "east": "c6dd358980e19045626e0ed17de0614b543a971d7275cde76816e3f1d1f3b0de",
+    "south": "0b3d2f437558216b8d3a94a1ea5255f7b9310a94447ba530a1d89b210ccfc12d"
+  },
+  "unchanged_inventory_candidate_sha256": {
+    "north": "467118cb7f98b315b50b9ae3b530024a1e42e55c56bf0f392e8560030416b5fb",
+    "west": "d598b63903b87c76027401aa140a3b52cd4b689f13ce38570a60aa44f9a92351"
+  },
+  "runtime_allowed": false,
+  "default_allowed": false,
+  "canon_allowed": false,
+  "archived_files": [
+    {
+      "source_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/masters/GUARDIAN_Z_V10X_CAMERA_V2_CARDINAL_NEUTRAL_SHARED_MASTER_RGBA_1254.png",
+      "history_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/_history/pre-internal-alpha-hole-fix-20260824/GUARDIAN_Z_V10X_CAMERA_V2_CARDINAL_NEUTRAL_SHARED_MASTER_RGBA_1254.png",
+      "sha256": "3fca40226bc45bc368a1fe1eebab50a774ef9a4859a0b47fa565e5ed785de538"
+    },
+    {
+      "source_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/map-candidates/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_NORTH_CANDIDATE_256.png",
+      "history_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/_history/pre-internal-alpha-hole-fix-20260824/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_NORTH_CANDIDATE_256.png",
+      "sha256": "467118cb7f98b315b50b9ae3b530024a1e42e55c56bf0f392e8560030416b5fb"
+    },
+    {
+      "source_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/map-candidates/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_EAST_CANDIDATE_256.png",
+      "history_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/_history/pre-internal-alpha-hole-fix-20260824/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_EAST_CANDIDATE_256.png",
+      "sha256": "c6dd358980e19045626e0ed17de0614b543a971d7275cde76816e3f1d1f3b0de"
+    },
+    {
+      "source_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/map-candidates/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_SOUTH_CANDIDATE_256.png",
+      "history_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/_history/pre-internal-alpha-hole-fix-20260824/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_SOUTH_CANDIDATE_256.png",
+      "sha256": "0b3d2f437558216b8d3a94a1ea5255f7b9310a94447ba530a1d89b210ccfc12d"
+    },
+    {
+      "source_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/map-candidates/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_WEST_CANDIDATE_256.png",
+      "history_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/_history/pre-internal-alpha-hole-fix-20260824/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_WEST_CANDIDATE_256.png",
+      "sha256": "d598b63903b87c76027401aa140a3b52cd4b689f13ce38570a60aa44f9a92351"
+    },
+    {
+      "source_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/qa/GUARDIAN_Z_V10X_CAMERA_V2_CARDINALS_DARK_LIGHT_QA_100PCT.png",
+      "history_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/_history/pre-internal-alpha-hole-fix-20260824/GUARDIAN_Z_V10X_CAMERA_V2_CARDINALS_DARK_LIGHT_QA_100PCT.png",
+      "sha256": "d789e07696bf2efd3f62e0cccecbf81f6ab4d271583fea3c468f4e464d7a6335"
+    },
+    {
+      "source_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/qa/GUARDIAN_Z_V10X_CAMERA_V2_CARDINALS_DARK_LIGHT_QA_50PCT.png",
+      "history_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/_history/pre-internal-alpha-hole-fix-20260824/GUARDIAN_Z_V10X_CAMERA_V2_CARDINALS_DARK_LIGHT_QA_50PCT.png",
+      "sha256": "c79c1894a789bca82f50f737af018e49e9a3eaea868870a3bbcfbae2d551f4ed"
+    },
+    {
+      "source_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/qa/GUARDIAN_Z_V10X_CAMERA_V2_CARDINAL_DIRECTION_PIVOT_READBACK.png",
+      "history_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/_history/pre-internal-alpha-hole-fix-20260824/GUARDIAN_Z_V10X_CAMERA_V2_CARDINAL_DIRECTION_PIVOT_READBACK.png",
+      "sha256": "af88ec0b1eec8e6822775cccfa65bf654b1a85da025b16f0488c70097943dae5"
+    },
+    {
+      "source_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/receipts/CALL01_GZ_V10X_CARDINAL_NEUTRAL_METADATA.json",
+      "history_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/_history/pre-internal-alpha-hole-fix-20260824/CALL01_GZ_V10X_CARDINAL_NEUTRAL_METADATA.json",
+      "sha256": "0636b9c8d92eb26cfb5e09ac69b90b08e6c416044d4a49b8103c83af0509e5e9"
+    },
+    {
+      "source_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/receipts/CALL01_DELIVERY_HASHES.sha256",
+      "history_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/_history/pre-internal-alpha-hole-fix-20260824/CALL01_DELIVERY_HASHES.sha256",
+      "sha256": "9181eeae6b6376dc014adc1da19c27544be9023ba2b538e4d3ba13033d70e15f"
+    },
+    {
+      "source_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/receipts/CALL01_USER_ACCEPTED_CAMERA_V2_CARDINAL_BASE_RECEIPT.md",
+      "history_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/_history/pre-internal-alpha-hole-fix-20260824/CALL01_USER_ACCEPTED_CAMERA_V2_CARDINAL_BASE_RECEIPT.md",
+      "sha256": "1ce32c759d5664deaf176b8e481225a8b23b281ef0ef95229215ec26eb4832d0"
+    }
+  ]
+}

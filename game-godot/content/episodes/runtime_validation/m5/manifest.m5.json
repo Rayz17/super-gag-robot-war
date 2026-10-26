@@ -1,0 +1,25 @@
+{
+  "episode_id": "MULTI-PLAY-M5-CONSTRAINT-VALIDATION",
+  "status": "runtime_validation_only",
+  "graph": "res://content/episodes/runtime_validation/m5/graph.m5.json",
+  "bundle_output": "res://content/generated/episodes/runtime_validation/m5.bundle.json",
+  "activity_definitions": [
+    "res://content/activities/constraint/a008_route_planning_validation.json",
+    "res://content/activities/constraint/a006_legal_negotiation_validation.json",
+    "res://content/activities/constraint/a012_crisis_routing_validation.json"
+  ],
+  "battle": "res://content/activities/constraint/m5_constraint_consumption_battle.json",
+  "claims": [
+    "one_constraint_controller_reused_across_three_host_authorities",
+    "reversible_draft_and_single_commit",
+    "fail_clear_good_perfect_soft_outcomes",
+    "activity_result_save_restore",
+    "activity_battle_setup_patch_consumption"
+  ],
+  "non_claims": [
+    "formal_c05_c08_c11_story_continuity",
+    "formal_activity_content_promoted",
+    "all_hybrid_activity_grammars_complete",
+    "production_art_promoted"
+  ]
+}

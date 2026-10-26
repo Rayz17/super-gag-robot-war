@@ -1,0 +1,96 @@
+{
+  "revision": "brave-body-orientation-audit-r6",
+  "date": "2026-10-17",
+  "user_instruction": "越改越不对了，请审视每个身体部件，判断其朝向和形状再画",
+  "coordinate_convention": "前=脸、机鼻、拳、膝钻与足尖的共同朝向；后=背包/列车车头退向/后跟；左右按机体自身，不能按画面临时互换",
+  "rejected_latest": {
+    "file": "samples/M04-side-selected-parts-r5-rejected.png",
+    "sha256": "b04b8bf2abc019abcc949acdc2a327a0ed95635aaf027c46c1e97a0b792e24e5",
+    "reason": "用户否定本轮整合；作者观察到肩翼拔高、前侧履带像另一套悬挂小履带。"
+  },
+  "parts": [
+    {
+      "part": "头/冠/长发",
+      "orientation": "朝前；长发在颅后",
+      "shape_and_connection": "保留正面银冠、长发与眼/面甲形状；不为露出背包挪头或改脸",
+      "source": "samples/M04-brave-combined-master-r4b.png"
+    },
+    {
+      "part": "中央机身/胸机鼻",
+      "orientation": "机鼻沿前向，中心固定在胸背",
+      "shape_and_connection": "短钝机鼻有厚度；不拉成长鸟喙，不绕肩轴随上臂整体转",
+      "source": "samples/M04-brave-combined-master-r4b.png"
+    },
+    {
+      "part": "肩甲/主机翼",
+      "orientation": "左右翼展向两侧；侧面造型按用户所选",
+      "shape_and_connection": "采用附件二中间侧图有厚度的斜三角肩翼罩；最高点和斜率按该图，不抬成头顶大翼，不压成细条",
+      "source": "refs/brave-user-shoulder-threeview-20261017.png"
+    },
+    {
+      "part": "发动机/翼根支架",
+      "orientation": "发动机长轴沿前后；进气口朝前",
+      "shape_and_connection": "保留朝前筒体与朝后尾端；翼根支架与核心肩关节分开，不能拿朝外圆盘当肩关节",
+      "source": "samples/M04-shoulder-profile-r4.png"
+    },
+    {
+      "part": "核心肩/上臂/肘",
+      "orientation": "上臂由肩甲下方下垂，肘连接前臂",
+      "shape_and_connection": "按完整勇拳身体保留白肩甲和黑关节；发动机、翼罩不替代肩/臂",
+      "source": "samples/M04-brave-combined-master-r4b.png"
+    },
+    {
+      "part": "加强拳臂/列车炮壳",
+      "orientation": "拳前；车头退向肘后",
+      "shape_and_connection": "钢拳/腕甲确实增重；列车中段左右展开包在臂外，不把整列小火车放上肩",
+      "source": "samples/M04-brave-combined-master-r4b.png"
+    },
+    {
+      "part": "骨盆/大腿",
+      "orientation": "重心在足间；大腿延续核心腿",
+      "shape_and_connection": "保留白甲、橙边和髋/膝分段，不把钻探外挂长到股部或抹掉原腿",
+      "source": "samples/M04-brave-combined-master-r4b.png"
+    },
+    {
+      "part": "膝关节/钻头",
+      "orientation": "膝轴横向；钻头沿前向",
+      "shape_and_connection": "钻架在膝前；钻尖和足尖同向，不能朝外或从胯部伸出",
+      "source": "samples/M04-brave-combined-master-r4b.png"
+    },
+    {
+      "part": "小腿前/后履带与轮系",
+      "orientation": "带面沿小腿前后；轮轴横向",
+      "shape_and_connection": "前、后带面属于同一可理解的腿部履带壳/轮系，顶部/底部回转有去向；不另挂一条独立小履带。前带不能被大白甲彻底盖没",
+      "source": "refs/brave-user-leg-front-rear-markup-20261017.png"
+    },
+    {
+      "part": "小腿装甲/机构",
+      "orientation": "外侧壳围轮系，前甲接膝至踝",
+      "shape_and_connection": "保留正面黑带/白甲/橙支架层级；用轮毂、分段护板、凹入机构形成主次，不用随机液压杆和碎件填满",
+      "source": "samples/M04-brave-combined-master-r4b.png"
+    },
+    {
+      "part": "踝/足尖/后跟",
+      "orientation": "足尖朝前，后跟朝后，踝在小腿下",
+      "shape_and_connection": "沿用户认可的后跟与轮组，保留脚掌承重和踝连接，不加长成船形足，不把悬挂带直接垂进脚面",
+      "source": "refs/brave-user-leg-front-rear-markup-20261017.png"
+    },
+    {
+      "part": "背包/竖鳍/小腿后甲",
+      "orientation": "背包在躯干后；格栅朝后；竖鳍向上",
+      "shape_and_connection": "只取绿框：中置上下双矩形格栅、橙黑包框、肩后竖鳍，后腿橙脊板/凹槽/履带/后跟；不顺带取小拳与矮身材",
+      "source": "refs/brave-user-back-selection-20261017.png"
+    }
+  ],
+  "method": "返回用户选定中间侧图作为姿态/肩翼结构底稿；先仅抽出并修发动机方向，观察后再分区处理腿/拳。不把本次失败图作为下一轮编辑目标。",
+  "method_state": "applied",
+  "approval_scope": "只保留用户明确选中的局部，不推定任何新整合稿通过",
+  "model_hold": "paused_design_pending",
+  "handoff_sent": false,
+  "actual_method": "返回用户选定侧图作结构底稿，先仅修发动机；再局部修腿/拳；背稿单独按背向审查，修翼下排气端；侧稿补被发遮住的背鳍边，并单独收短胸机鼻。未用R5失败整机继续叠部件。",
+  "actual_outputs": [
+    "samples/M04-side-body-reviewed-r6d.png",
+    "samples/M04-rear-exhaust-corrected-r6b.png"
+  ],
+  "view_review_status": "author inspected actual per-step images; not single-model orthographic proof or user acceptance"
+}

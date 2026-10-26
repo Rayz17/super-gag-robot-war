@@ -1,0 +1,427 @@
+[
+  {
+    "id": "G01",
+    "group": "G",
+    "template": "graphic",
+    "key": "hover",
+    "name": "自由探索悬停",
+    "purpose": "光标发现对象",
+    "design": "贴实际脚印，强度低于选中；不盖对象主体",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G02",
+    "group": "G",
+    "template": "graphic",
+    "key": "selected",
+    "name": "选中足迹",
+    "purpose": "选中了谁",
+    "design": "1×1/2×2/3×3完整脚印；微型外观不缩掉实际选择范围",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G03",
+    "group": "G",
+    "template": "graphic",
+    "key": "move_range",
+    "name": "可达范围",
+    "purpose": "能走到哪里",
+    "design": "轻底/边界清楚；多格单位按真实合法终点显示",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G04",
+    "group": "G",
+    "template": "graphic",
+    "key": "route",
+    "name": "连续路径",
+    "purpose": "将怎样走",
+    "design": "方向箭头从起点流向终点；绕障路径与费用一致",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G05",
+    "group": "G",
+    "template": "graphic",
+    "key": "landing",
+    "name": "终点与落位",
+    "purpose": "到达后占哪里",
+    "design": "完整占格与朝向；高层落点标高度",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G06",
+    "group": "G",
+    "template": "graphic",
+    "key": "invalid",
+    "name": "不可用目标",
+    "purpose": "为什么不能做",
+    "design": "阻挡点或缺少条件就近标出；不弹大菜单",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G07",
+    "group": "G",
+    "template": "graphic",
+    "key": "melee",
+    "name": "近战与扇面",
+    "purpose": "真实受影响目标",
+    "design": "范围按规则而非挥动刀光猜；主目标与余波区分",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G08",
+    "group": "G",
+    "template": "graphic",
+    "key": "ray",
+    "name": "直射轨迹",
+    "purpose": "第一遮挡物与终点",
+    "design": "起点有武器来源，遮挡后虚线/截断符号；世界空间深度正确",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G09",
+    "group": "G",
+    "template": "graphic",
+    "key": "pierce",
+    "name": "贯穿轨迹",
+    "purpose": "多对象受影响",
+    "design": "贯穿目标逐一标示，停止点明确",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G10",
+    "group": "G",
+    "template": "graphic",
+    "key": "lob",
+    "name": "投射弧线",
+    "purpose": "投掷与炮弹落点",
+    "design": "明显弧线和落点；飞行弧与地面影响区域分开",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G11",
+    "group": "G",
+    "template": "graphic",
+    "key": "blast",
+    "name": "爆炸范围",
+    "purpose": "连爆与友伤",
+    "design": "中心/邻接/二级连爆分层；盾保护不隐藏受影响事实",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G12",
+    "group": "G",
+    "template": "graphic",
+    "key": "push",
+    "name": "推拉位移",
+    "purpose": "目标去哪",
+    "design": "大箭头、落点影与步数；前推/侧推/拉回不同方向",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G13",
+    "group": "G",
+    "template": "graphic",
+    "key": "collision",
+    "name": "碰撞结果",
+    "purpose": "谁撞谁与损失",
+    "design": "接触处撞击符号、双方损失及停止格",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G14",
+    "group": "G",
+    "template": "graphic",
+    "key": "fall",
+    "name": "落水坠坑",
+    "purpose": "地形后果",
+    "design": "落点危险符号与消失/失能反馈，飞行豁免明确",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G15",
+    "group": "G",
+    "template": "graphic",
+    "key": "hp",
+    "name": "预计耐久变化",
+    "purpose": "将失去或恢复多少",
+    "design": "损失段闪烁与保留段稳定，恢复另色/纹理；不是只有漂浮数字",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G16",
+    "group": "G",
+    "template": "graphic",
+    "key": "threat_wall",
+    "name": "敌方目标光墙",
+    "purpose": "建筑正在被瞄准",
+    "design": "标准高度红色半透明墙罩脚印，深度遮挡正确；不能2D框线穿过楼脸",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G17",
+    "group": "G",
+    "template": "graphic",
+    "key": "intent",
+    "name": "敌方承诺方向与顺序",
+    "purpose": "敌人即将干什么",
+    "design": "顺序徽标与设施编号分层；悬停明显轨迹、目标、HP变化",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G18",
+    "group": "G",
+    "template": "graphic",
+    "key": "cancelled",
+    "name": "被取消的威胁",
+    "purpose": "这一手避免了什么",
+    "design": "旧轨迹淡去/断开、被保住对象的损失归零；不只写一句文字",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G19",
+    "group": "G",
+    "template": "graphic",
+    "key": "reinforcement",
+    "name": "增援位置与时间",
+    "purpose": "会从哪出来",
+    "design": "格位、敌种剪影与轮次分开；未入场不画成已站在格子上",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G20",
+    "group": "G",
+    "template": "graphic",
+    "key": "cross_board",
+    "name": "跨区因果线",
+    "purpose": "哪边影响哪边",
+    "design": "源设施→目标区域/对象，状态变化沿线发生；全城总览与局部提示同语义",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G21",
+    "group": "G",
+    "template": "graphic",
+    "key": "convoy",
+    "name": "撤离路线与阻塞",
+    "purpose": "保护哪段路",
+    "design": "车头朝向、C→B→东出口连续；阻塞点/下一可走段清楚",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G22",
+    "group": "G",
+    "template": "graphic",
+    "key": "height",
+    "name": "上层承重与净空",
+    "purpose": "高低空间规则",
+    "design": "层号、垂直连接、承重危险；不会贴到楼体假平面",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G23",
+    "group": "G",
+    "template": "graphic",
+    "key": "equipment",
+    "name": "吊运变形合体包络",
+    "purpose": "空间和载荷限制",
+    "design": "载荷/新形态完整脚印、扫掠障碍、落位方向；合法与失败可分",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G24",
+    "group": "G",
+    "template": "graphic",
+    "key": "cost",
+    "name": "移动行动与资源费用",
+    "purpose": "一手的代价",
+    "design": "图标+数值留位，移动/主行动/弹药/备件不同符号",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "G25",
+    "group": "G",
+    "template": "graphic",
+    "key": "area_tools",
+    "name": "修理支撑导引作用区",
+    "purpose": "非伤害技能范围",
+    "design": "支撑接口、维修邻接、护群来源可见；不套攻击箭头",
+    "states": [
+      "默认",
+      "悬停",
+      "预览",
+      "执行",
+      "减少动态/色觉适配"
+    ],
+    "status": "todo"
+  }
+]

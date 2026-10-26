@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-20",
+  "generation_mode": "built-in image_gen",
+  "source_images": [
+    "samples/M05-head-upward-L-r5.png"
+  ],
+  "prompt": "Use case: precise-object-edit.\nThis two-view head now has the CORRECT upward L-horn in the RIGHT PROFILE PANEL. Keep the ENTIRE RIGHT PANEL exactly unchanged.\n\nEdit only the CENTRAL UPWARD HORN in the LEFT, FRONT-VIEW PANEL to make its projection physically consistent:\n- The horn lies in the sagittal center plane, so its rear-facing barb points away from the camera in the FRONT view, not to the left or right.\n- HIDE the single lateral barb currently protruding toward the right side of the front panel. Do not remove the rearward barb from the right profile.\n- Make the front panel's tall central horn outline EXACTLY BILATERALLY SYMMETRIC about the face centerline: one upward point centered over the nose, matched left/right shaft edges, matched facets, and a centered foreshortened root/elbow. The two side facets are equal in width. No sideways notch, hook, prong or offset.\n- Keep the central horn tall and UPWARD pointing, with the short forward base shown foreshortened. Do not turn it into the old horizontal spear or a small diamond end-cap.\nDo not change the four other crown fins, face, navy helmet volume, warm eyes, ivory mask, crimson chin, gold cheek frames, ears, neck, panel spacing or image scale. Same clean KINETIC CEL style and true transparent background, no text or arrows.",
+  "output": "samples/M05-head-upward-L-r5b.png",
+  "transparent_background": true,
+  "source_refs": [
+    {
+      "file": "samples/M05-head-upward-L-r5.png",
+      "sha256": "667c1fabcdba1ac4fbda49d5787a1dbd160e8f168e7e6c5f8c16202557b7cddf"
+    }
+  ]
+}

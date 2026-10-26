@@ -1,0 +1,338 @@
+{
+  "task": "ENV_A8_CAMERA_V2_STRUCTURE_PLAN_RECOMPOSITION",
+  "status": "A_PLAN_GATE_PRODUCER_REVIEWED_AND_RELEASED_TO_GATE2",
+  "authority": "Task125",
+  "zero_imagegen": true,
+  "qa_only": true,
+  "not_plan_asset": true,
+  "runtime_bindable": false,
+  "actor_free": true,
+  "stateful_objects_included": false,
+  "real_actor_pixels_included": false,
+  "manual_structure_offsets": false,
+  "world_canvas_px": [
+    2400,
+    1350
+  ],
+  "world_canvas_origin_raw_px": [
+    -920,
+    -99
+  ],
+  "raw_to_source_canvas_translation_px": [
+    920,
+    99
+  ],
+  "profile": "A_PLAN",
+  "camera_raw_px": [
+    400,
+    708
+  ],
+  "source_canvas_crop_px": [
+    680,
+    515,
+    1280,
+    584
+  ],
+  "map_draw_origin_in_frame_px": [
+    0,
+    58
+  ],
+  "frame_px": [
+    1280,
+    720
+  ],
+  "foundation_draw_order": [
+    "NW_BLOCK",
+    "NM_BLOCK",
+    "NE_BLOCK",
+    "SW_BLOCK",
+    "SE_BLOCK",
+    "BROKEN_SKYWALK"
+  ],
+  "occluder_draw_order_by_front_edge": [
+    "NW_BLOCK",
+    "NM_BLOCK",
+    "BROKEN_SKYWALK",
+    "SW_BLOCK",
+    "NE_BLOCK",
+    "SE_BLOCK"
+  ],
+  "structure_placements": [
+    {
+      "object_id": "NW_BLOCK",
+      "grid_rect": [
+        1,
+        0,
+        7,
+        5
+      ],
+      "visual_bounds_raw": [
+        -160,
+        -90,
+        480,
+        378
+      ],
+      "source_canvas_position_px": [
+        760,
+        9
+      ],
+      "local_canvas_px": [
+        480,
+        378
+      ],
+      "front_edge_raw": [
+        80,
+        288
+      ],
+      "manual_offset_px": [
+        0,
+        0
+      ],
+      "display_scale": [
+        1,
+        1
+      ],
+      "independent_toggle_layers": [
+        "foundation",
+        "occluder"
+      ]
+    },
+    {
+      "object_id": "NM_BLOCK",
+      "grid_rect": [
+        10,
+        0,
+        5,
+        4
+      ],
+      "visual_bounds_raw": [
+        240,
+        144,
+        360,
+        288
+      ],
+      "source_canvas_position_px": [
+        1160,
+        243
+      ],
+      "local_canvas_px": [
+        360,
+        288
+      ],
+      "front_edge_raw": [
+        420,
+        432
+      ],
+      "manual_offset_px": [
+        0,
+        0
+      ],
+      "display_scale": [
+        1,
+        1
+      ],
+      "independent_toggle_layers": [
+        "foundation",
+        "occluder"
+      ]
+    },
+    {
+      "object_id": "NE_BLOCK",
+      "grid_rect": [
+        22,
+        0,
+        7,
+        4
+      ],
+      "visual_bounds_raw": [
+        720,
+        414,
+        440,
+        354
+      ],
+      "source_canvas_position_px": [
+        1640,
+        513
+      ],
+      "local_canvas_px": [
+        440,
+        354
+      ],
+      "front_edge_raw": [
+        940,
+        768
+      ],
+      "manual_offset_px": [
+        0,
+        0
+      ],
+      "display_scale": [
+        1,
+        1
+      ],
+      "independent_toggle_layers": [
+        "foundation",
+        "occluder"
+      ]
+    },
+    {
+      "object_id": "SW_BLOCK",
+      "grid_rect": [
+        0,
+        15,
+        8,
+        3
+      ],
+      "visual_bounds_raw": [
+        -720,
+        264,
+        440,
+        336
+      ],
+      "source_canvas_position_px": [
+        200,
+        363
+      ],
+      "local_canvas_px": [
+        440,
+        336
+      ],
+      "front_edge_raw": [
+        -500,
+        600
+      ],
+      "manual_offset_px": [
+        0,
+        0
+      ],
+      "display_scale": [
+        1,
+        1
+      ],
+      "independent_toggle_layers": [
+        "foundation",
+        "occluder"
+      ]
+    },
+    {
+      "object_id": "SE_BLOCK",
+      "grid_rect": [
+        26,
+        14,
+        6,
+        4
+      ],
+      "visual_bounds_raw": [
+        320,
+        846,
+        400,
+        330
+      ],
+      "source_canvas_position_px": [
+        1240,
+        945
+      ],
+      "local_canvas_px": [
+        400,
+        330
+      ],
+      "front_edge_raw": [
+        520,
+        1176
+      ],
+      "manual_offset_px": [
+        0,
+        0
+      ],
+      "display_scale": [
+        1,
+        1
+      ],
+      "independent_toggle_layers": [
+        "foundation",
+        "occluder"
+      ]
+    },
+    {
+      "object_id": "BROKEN_SKYWALK",
+      "grid_rect": [
+        8,
+        5,
+        7,
+        2
+      ],
+      "visual_bounds_raw": [
+        40,
+        234,
+        360,
+        270
+      ],
+      "source_canvas_position_px": [
+        960,
+        333
+      ],
+      "local_canvas_px": [
+        360,
+        270
+      ],
+      "front_edge_raw": [
+        220,
+        504
+      ],
+      "manual_offset_px": [
+        0,
+        0
+      ],
+      "display_scale": [
+        1,
+        1
+      ],
+      "independent_toggle_layers": [
+        "foundation",
+        "occluder"
+      ]
+    }
+  ],
+  "independent_toggle_count": 6,
+  "four_profile_built": false,
+  "occlusion_proxy_qa_built": false,
+  "producer_visual_review": "PASS_GAMEPLAY_STAGING_AND_LOW_OCCLUSION / FAIL_FINAL_ENVIRONMENT_RICHNESS",
+  "stop_gate": "RELEASED_TO_GATE2_BY_PRODUCER",
+  "inputs_sha256": {
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a2-simple-recomposition/delivery/GROUND_BAKE_CURRENT_V2_2400x1350.png": "893e0df76d0cbcacba93fc22ef307f15e1dd04748cc4b016ed4bf8cc2537d27a",
+    "game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/camera_v2_freeze/current-topology-camera-v2-40x24-contract.json": "756f77db883fd060fdd323d2533191ade689c0a1362f92f043fac17dbe28ab4a",
+    "game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/camera_v2_freeze/camera-v2-structure-object-registration.tsv": "0133cf5c5af7a6dba659221249b9e0bb45c51bebc8cb9b81c50cf9d920d25b7b",
+    "game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/camera_v2_freeze/camera-v2-sprite-slot-and-socket-contract.json": "a6874f033554c71af2e3c1d634cd2671d4a3efd1494ba0bccb491579c0117cce",
+    "game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/golden_slice_profile.json": "61b49e5328e702cd654d28ff39c5c380ba0ae3e78753330635036d33f689523c",
+    "docs/superpowers/specs/production/c01-current-demo-v1/125-c01e02-env-a6-a7-producer-asset-acceptance-and-a8-plan-recomposition-release.md": "d6cb1fe4614f440f5da51a480e221797f5afffa25f4ce0ec66ab6852f7f30280",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/BROKEN_SKYWALK_FOUNDATION_CAMERA_V2_RGBA.png": "f1d05d9e94478c3914079f5c2829eabb7f1631dbefe642be9caa0394f47b5508",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/BROKEN_SKYWALK_OCCLUDER_CAMERA_V2_RGBA.png": "2e15deace00bce12e7fb4c6915f4d2787b8f453aea8cad0176bab69dfb893d78",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/NE_BLOCK_FOUNDATION_CAMERA_V2_RGBA.png": "a032b4b5ff4f9f9bd916486688aaf8f9337dc32e328ac30411606b6734893674",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/NE_BLOCK_OCCLUDER_CAMERA_V2_RGBA.png": "95e0eed523edb99b847f1a18d0bee3e39a4df58faa0609ada4c963ef8ccbc414",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/NM_BLOCK_FOUNDATION_CAMERA_V2_RGBA.png": "9cdb08e1cce1e0d16c864d5596df6fe335d391412d3ad8a23a5aedae71ba2d28",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/NM_BLOCK_OCCLUDER_CAMERA_V2_RGBA.png": "cc84fdaa9dd89b7dc590d8c3788a5b47a8234c90dfcd15f1649aa7cc75e732a5",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/NW_BLOCK_FOUNDATION_CAMERA_V2_RGBA.png": "c06ad74d83f8cad6c59fc17cd2a7f240a15f10bbbae80b7ead409f081528e54a",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/NW_BLOCK_OCCLUDER_CAMERA_V2_RGBA.png": "8f361ca8269fb955e32772cdb14fbda527e77fcec2f4e8488d0cf399fcee27cf",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/SE_BLOCK_FOUNDATION_CAMERA_V2_RGBA.png": "216f042d24cf9b5892509d7eb1ad40d26082b6e7cd8cc95a8da811b566878e26",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/SE_BLOCK_OCCLUDER_CAMERA_V2_RGBA.png": "155d426195753c20440de727c548e9434b31aa0da90a20e15bffb00c6c6bab4a",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/SW_BLOCK_FOUNDATION_CAMERA_V2_RGBA.png": "10e4cb0d67d02df181ad414fe2df1c1c0c7e2e127a07f00b11a31079a1a59a31",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/SW_BLOCK_OCCLUDER_CAMERA_V2_RGBA.png": "b8f99a2e6b5f183e488fe23ac98e3c948278bdb9d00db148f076853b49f04c5c",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a8-camera-v2-structure-plan-recomposition/A8-camera-v2-structure-plan-recomposition-objective.md": "3bbc02cc248d297b544c336fa6ed41a8c17f2305c395d327a4b41cdf856c7fea"
+  },
+  "outputs": {
+    "qa/gate1-a-plan/A8_A_PLAN_ACTOR_FREE_CLEANPLATE_1280x720.png": {
+      "sha256": "817d612d62b367d86451c43279aa4d3fa3d889564522e30cf6bb2b97f41dbfca",
+      "size_px": [
+        1280,
+        720
+      ]
+    },
+    "qa/gate1-a-plan/A8_A_PLAN_ACTOR_FREE_CLEANPLATE_50_PERCENT_640x360.png": {
+      "sha256": "6c13e7cb8b5cc01f0124e040c68b3992bf9f8911cc757c6ea62d14291cbb8ec1",
+      "size_px": [
+        640,
+        360
+      ]
+    }
+  }
+}

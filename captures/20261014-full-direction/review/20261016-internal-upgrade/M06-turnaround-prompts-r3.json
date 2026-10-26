@@ -1,0 +1,24 @@
+{
+  "mode": "built-in image_gen",
+  "parent": {
+    "file": "samples/M06-labor-identity-r2b.png",
+    "sha256": "3741b164b4ee558f65927cccfdfc2aff0efa7bba30c0458d6d6c56c7af078de0",
+    "selected_regions": [
+      "左侧整机A",
+      "右上A头部设计",
+      "右下供能背架设计"
+    ],
+    "excluded_regions": [
+      "B头型备选",
+      "C头型备选"
+    ]
+  },
+  "prompts": [
+    "M06-front-turnaround-prompt-r3.txt",
+    "M06-side-turnaround-prompt-r3.txt",
+    "M06-rear-turnaround-prompt-r3.txt",
+    "M06-side-projection-correction-prompt-r3b.txt",
+    "M06-side-components-projection-prompt-r3c.txt"
+  ],
+  "side_correction_primary_reference": "samples/M06-front-r3.png"
+}

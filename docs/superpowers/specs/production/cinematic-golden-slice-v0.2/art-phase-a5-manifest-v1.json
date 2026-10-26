@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "package_id": "ART_C01_RM_2P5D_PHASE_A5_V01",
+  "generated_at": "2026-07-14",
+  "scene_id": "SCN_C01_RM_RESCUE_2P5D_V01",
+  "phase": "phase_a5_runtime_composition_trial",
+  "source_contract": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/perspective-integration-trial-contract-v1.md",
+  "session_goal": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-phase-a5-perspective-trial-goal-v1.md",
+  "metrics_path": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-phase-a5-layout-metrics-v1.json",
+  "workflow_path": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/a5/sources/phase-a5-generation-and-composite-workflow-v1.md",
+  "source_keyframe": {
+    "stable_id": "KF_C01_RM_2P5D_STYLE_V01",
+    "approval_status": "pending_user_approval",
+    "runtime_allowed": false,
+    "preserved_as": "style_material_lighting_character_language_reference_only"
+  },
+  "phase_b_generation_allowed": false,
+  "assets": [
+    {
+      "stable_id": "KF_C01_RM_2P5D_RUNTIME_LAYOUT_V03",
+      "delivery_path": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/a5/review/kf_c01_rm_2p5d_runtime_layout_v03.png",
+      "source_path": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/a5/sources/build_a5_artifacts.py",
+      "source_model_or_tool": "OpenAI built-in image generation references plus deterministic Pillow composite",
+      "width": 1280,
+      "height": 720,
+      "alpha": "opaque_srgb",
+      "safe_area": {"left": 32, "top": 56, "right": 32, "bottom": 118},
+      "approval_status": "candidate_trial",
+      "runtime_allowed": false,
+      "phase_b_generation_allowed": false,
+      "actor_height_px": {"doudeng": 180, "visitor": 175, "jicun": 190, "tangjiao": 200, "diedie": 78, "machine_dog": 84},
+      "sha256": "2dc684d019d3afc09eca54f760732c9399529e80bcd0f778253e70ca60f3c52a"
+    },
+    {
+      "stable_id": "LAYOUT_C01_RM_CAMERA_DEPTH_V01",
+      "delivery_path": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/a5/review/layout_c01_rm_camera_depth_v01.png",
+      "source_path": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/a5/sources/build_a5_artifacts.py",
+      "source_model_or_tool": "Deterministic Pillow annotation over the clean plate",
+      "width": 1920,
+      "height": 900,
+      "alpha": "opaque_srgb",
+      "approval_status": "candidate_trial",
+      "runtime_allowed": false,
+      "phase_b_generation_allowed": false,
+      "camera_crop_rects": [[0, 90, 1280, 720], [320, 90, 1280, 720], [640, 90, 1280, 720]],
+      "sha256": "7dd874f30e26c4f40bddda095f3c46ef24ae1e6e21b427b1eb4d3621899212f2"
+    },
+    {
+      "stable_id": "PLATE_C01_RM_HALL_CLEAN_TRIAL_V01",
+      "delivery_path": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/a5/review/plate_c01_rm_hall_clean_trial_v01.png",
+      "source_path": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/a5/sources/plate_c01_rm_hall_clean_trial_source_v02.png",
+      "source_model_or_tool": "OpenAI built-in image generation with two targeted clean-plate revisions; exact-size fit by sips",
+      "width": 1920,
+      "height": 900,
+      "alpha": "opaque_srgb",
+      "approval_status": "candidate_trial",
+      "runtime_allowed": false,
+      "phase_b_generation_allowed": false,
+      "content_guarantees": [
+        "no_human_or_small_robot_or_patch_machine",
+        "no_ui_white_frame_or_readable_text",
+        "no_movable_old_door_leaf",
+        "no_charging_device_or_switchable_work_table",
+        "no_active_low_heat_or_chest_light",
+        "no_baked_foreground_rail",
+        "guardian_z_far_half_kneel_unlit_only"
+      ],
+      "sha256": "eff3d9db7bc90c42da3a07052e7af08bd86a3f5175ede2377db81bca6d7d2534"
+    },
+    {
+      "stable_id": "BREAKDOWN_C01_RM_RUNTIME_LAYERS_V01",
+      "delivery_path": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/a5/review/breakdown_c01_rm_runtime_layers_v01.png",
+      "source_path": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/a5/sources/build_a5_artifacts.py",
+      "source_model_or_tool": "Deterministic Pillow layer-responsibility diagram over the clean plate",
+      "width": 1920,
+      "height": 900,
+      "alpha": "opaque_srgb",
+      "approval_status": "candidate_trial",
+      "runtime_allowed": false,
+      "phase_b_generation_allowed": false,
+      "declared_outputs": {"opaque": ["FAR", "MID_CLEAN"], "alpha": ["PROP", "FG", "SPRITE"], "mask_or_vector": ["MASK", "walkable", "pivot", "occlusion", "safe_area"]},
+      "sha256": "05701e33f7f42aefd57d1412c62529007456582510a1be7fad7a52f3d71d3410"
+    },
+    {
+      "stable_id": "SCALE_C01_RM_ACTOR_BRIDGE_V01",
+      "delivery_path": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/a5/review/scale_c01_rm_actor_bridge_v01.png",
+      "source_path": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/a5/sources/build_a5_artifacts.py",
+      "source_model_or_tool": "CML001 locked transparent stand plus deterministic Pillow scaling; bridge subject silhouettes for small robots",
+      "width": 1280,
+      "height": 720,
+      "alpha": "opaque_srgb",
+      "approval_status": "candidate_trial",
+      "runtime_allowed": false,
+      "phase_b_generation_allowed": false,
+      "adult_height_samples_px": [165, 190, 220],
+      "small_robot_height_samples_px": [60, 80, 100],
+      "pivot": "foot_center",
+      "sha256": "70e19a091037442f1253d37918c5fe0032b4ca4e39bfab837682847cafb4ea5b"
+    }
+  ],
+  "supporting_evidence": {
+    "camera_zone_contact_sheet": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/a5/review/zone-evidence/camera_zone_clean_contact_sheet.png",
+    "zone_a_crop": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/a5/review/zone-evidence/zone_a_entry_clean_crop.png",
+    "zone_b_crop": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/a5/review/zone-evidence/zone_b_real_machine_clean_crop.png",
+    "zone_c_crop": "docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/a5/review/zone-evidence/zone_c_old_door_low_heat_clean_crop.png"
+  },
+  "decision_gate": {
+    "status": "ready_for_joint_acceptance",
+    "decision_request": "Confirm the oblique-side-view projection, camera centers, actor pixel range and layer responsibility before any Phase B generation.",
+    "does_not_imply": "No asset in this package is approved for runtime; Phase B remains closed; the project-wide art style is not locked."
+  }
+}

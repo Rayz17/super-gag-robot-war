@@ -1,0 +1,73 @@
+{
+  "activity_id": "A006",
+  "template_id": "T_DIALOGUE_CONTRACT",
+  "grammar": "CONSTRAINT",
+  "host_profile": "legal",
+  "title": "清算白名单谈判 / 好处和束缚同时签字",
+  "prompt": "白名单需要事实依据、具名担责和可选限制条款。每张牌都能救下一些东西，也会授权另一些东西。",
+  "transaction_id": "M5:A006:LEGAL:V01",
+  "canon_refs": ["ORG_DAIGE", "CH_QIHAI", "CH_JICUN", "CONCEPT_HYBRID_PLAY_EXPERIENCE"],
+  "safe_risk": 4,
+  "allow_partial_commit": true,
+  "slots": [
+    {"id": "evidence", "label": "可核验依据", "required": true, "accepts": ["evidence"]},
+    {"id": "risk_bearer", "label": "事故责任人", "required": true, "accepts": ["commitment"]},
+    {"id": "restriction", "label": "临时限制条款", "required": false, "accepts": ["clause"]}
+  ],
+  "cards": [
+    {"id": "disaster_archive", "label": "清算部阻灾档案", "detail": "证明秩序确实救过人，也承认记录被选择性公开。", "tags": ["evidence"], "risk": 1},
+    {"id": "museum_damage_log", "label": "万机馆损伤记录", "detail": "证明封存正在扩大损伤，同时暴露馆内异常响应。", "tags": ["evidence"], "risk": 2},
+    {"id": "jicun_signature", "label": "纪存具名担责", "detail": "不让七海代签；所有超额动作先记在纪存名下。", "tags": ["commitment"], "risk": 2},
+    {"id": "qihai_guarantee", "label": "七海流程担保", "detail": "审批更稳，但把她重新绑回执行链。", "tags": ["commitment"], "risk": 3},
+    {"id": "damage_cap", "label": "城市损伤上限", "detail": "换取支援，同时限制地图攻击和建筑破坏。", "tags": ["clause"], "risk": 1}
+  ],
+  "conflicts": [
+    {"a": "museum_damage_log", "b": "qihai_guarantee", "reason": "用馆方反证同时要求七海替流程担保，会把责任再次推回她身上。"}
+  ],
+  "outcomes": {
+    "perfect": {
+      "resolution": "success",
+      "preview": ["临时白名单通过", "城市支援开放", "损伤上限成为真实束缚"],
+      "variable_delta": {"enterprise_pressure": -1},
+      "pressure_delta": {"city_damage_risk": -1},
+      "battle_modifiers": ["city_support:enabled", "damage_budget:limited"],
+      "unlocked_flags": ["c08_temporary_whitelist"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M5_LEGAL_PERFECT", "schema": "constraint_legal_v1"}],
+      "authority_changes": [{"authority_id": "C08_TEMPORARY_WHITELIST", "state": "granted_with_damage_cap"}],
+      "reaction_requests": [{"reaction_id": "REACT_QIHAI_NOT_FORCED_TO_GUARANTEE", "window": "after_activity"}],
+      "ui_summary": "白名单通过。清算部会支援疏散，也会逐格核算你造成的城市损伤。"
+    },
+    "good": {
+      "resolution": "success",
+      "preview": ["白名单主体通过", "没有额外城市支援"],
+      "variable_delta": {"enterprise_pressure": 0},
+      "battle_modifiers": ["damage_budget:limited"],
+      "unlocked_flags": ["c08_core_whitelist"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M5_LEGAL_GOOD", "schema": "constraint_legal_v1"}],
+      "authority_changes": [{"authority_id": "C08_TEMPORARY_WHITELIST", "state": "granted_core_only"}],
+      "ui_summary": "核心白名单通过；你获得通行，不获得替你收拾残局的支援。"
+    },
+    "clear": {
+      "resolution": "costly_success",
+      "preview": ["只形成临时观察许可", "封存观察员进入战场"],
+      "variable_delta": {"enterprise_pressure": 1},
+      "battle_modifiers": ["legal_observer:deployed"],
+      "unlocked_flags": ["c08_observed_entry"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M5_LEGAL_CLEAR", "schema": "constraint_legal_v1"}],
+      "promises_and_debts": [{"debt_id": "M5_C08_INCOMPLETE_WHITELIST", "state": "open", "owner": "CH_JICUN"}],
+      "soft_fail": "观察员随队，超额破坏将追加封存压力",
+      "ui_summary": "你拿到的是观察许可，不是白名单。下一场战斗会有人逐格记账。"
+    },
+    "fail": {
+      "resolution": "soft_failure",
+      "preview": ["谈判未形成合同", "战斗仍可进入", "封存观察与破坏计费同时生效"],
+      "variable_delta": {"enterprise_pressure": 2},
+      "pressure_delta": {"city_damage_risk": 1},
+      "battle_modifiers": ["legal_observer:deployed", "damage_fee:active"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M5_LEGAL_FAIL", "schema": "constraint_legal_v1"}],
+      "promises_and_debts": [{"debt_id": "M5_C08_NO_WHITELIST", "state": "open", "owner": "CH_JICUN"}],
+      "soft_fail": "白名单未通过，战斗追加观察与破坏计费",
+      "ui_summary": "白名单未通过。门没有关，但每一次破坏都会成为下一张清算单。"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "status": "DETERMINISTIC_DIAGNOSTIC_ONLY",
+  "cleanplate": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c1-current-topology-scene-first/call02-a-plan/delivery/PLAN_SHARED_CURRENT_PHYSICAL_CLEANPLATE_1280x720.png",
+    "sha256": "fe584aa232441962d54b3b3f168baa6a96c110503ee8b6891eafe7e9dee625d8"
+  },
+  "layers": {
+    "ui_only": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c1-current-topology-scene-first/call02-a-plan/layers/UI_ONLY_1280x720.png",
+      "sha256": "798964fa41cd43b13cf745f05a8adcf2d090384d8e951054ee25e155a3d268a4"
+    },
+    "route_only": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c1-current-topology-scene-first/call02-a-plan/layers/ROUTE_ONLY_1280x720.png",
+      "sha256": "8d2b0d19af6f77320afb66b224e9c3df0b8338d30501f7c6bea965c285ba54bd"
+    },
+    "ghost_only": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c1-current-topology-scene-first/call02-a-plan/layers/GHOST_ONLY_1280x720.png",
+      "sha256": "a3b6bc42cf926e962b916cd6cb4efaa17e8738127bf6e9fed6627e05b585ddfe"
+    },
+    "edge_cue_only": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c1-current-topology-scene-first/call02-a-plan/layers/EDGE_CUE_ONLY_1280x720.png",
+      "sha256": "81156de9e499eaac800c8a9b72f6f452b3e8abc179f0477123659b4016cde8b2"
+    },
+    "no_screen_ui_with_world_intent": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c1-current-topology-scene-first/call02-a-plan/layers/NO_SCREEN_UI_WITH_WORLD_INTENT_1280x720.png",
+      "sha256": "30d49055e08474c9d8de551f4c10d523521f3d26234f6ab07aae75a759be1d7e"
+    }
+  },
+  "composition_order": [
+    "cleanplate",
+    "route",
+    "ghost",
+    "edge_cue",
+    "screen_ui"
+  ],
+  "integrated": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c1-current-topology-scene-first/call02-a-plan/delivery/GF_PLAN_A_INTEGRATED_LOOK_TARGET_1280x720.png",
+    "sha256": "710dd89c481c73a56a63ff6e80930d91d334b3bff68897112264f2cee0b2d6f2"
+  },
+  "projection": {
+    "type": "orthographic_dimetric_2_to_1",
+    "runtime_raw_origin_px": [
+      -880,
+      -170
+    ],
+    "effective_camera_raw_px": [
+      -480,
+      420
+    ],
+    "map_rect_center_px": [
+      640,
+      350
+    ],
+    "tile_half_px": [
+      40,
+      20
+    ],
+    "registration": "footprint_bottom_center"
+  },
+  "physical_actor_pixels_modified": false,
+  "identity_repair_attempted": false,
+  "integrated_frame_disposition": "FAILURE_DIAGNOSTIC_NOT_PASS"
+}

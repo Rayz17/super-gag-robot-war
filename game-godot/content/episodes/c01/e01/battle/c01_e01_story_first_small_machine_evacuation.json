@@ -1,0 +1,368 @@
+{
+  "battle_id": "C01E01-SMALL-MACHINE-EVACUATION",
+  "variant_id": "V359-C01E01-STORY-FIRST-3R-V01",
+  "status": "candidate_runtime_production",
+  "canon_source": "DOC_V359_C01E01_STORY_FIRST_V1",
+  "runtime_contract_source": "DATA_C01E01_RUNTIME_CONTRACT_V1",
+  "graybox_source": "DATA_C01E01_GRAYBOX_CONSTANTS_V1",
+  "scenario_driver": "c01e01_small_machine_evacuation_v1",
+  "presentation_manifest_path": "res://assets/battle_presentation/c01/story_first/manifest.json",
+  "failure_policy": "retry_without_commit",
+  "battle_clear_scope": "episode_local_until_rt013s",
+  "title": "万机馆主展厅 / 三回合小型救援",
+  "objective_text": "让A11、B10、C3、D5四组共29人越过闭馆线，在第三回合抵达前厅黄线。",
+  "start_prompt": "先看本回合情境动作。这里没有普通攻击，也不以全灭为目标。",
+  "turn_limit": 3,
+  "withdraw_allowed": false,
+  "grid": {
+    "width": 8,
+    "height": 10,
+    "blocked": []
+  },
+  "units": [
+    {
+      "id": "diedie",
+      "canon_entity_id": "CH057",
+      "name": "跌跌 / 0.7m现实小机",
+      "team": "player",
+      "cell": [0, 6],
+      "hp": 1,
+      "move": 3,
+      "map_token": "跌",
+      "scenario_role": "context_actor",
+      "weapons": []
+    },
+    {
+      "id": "machine_dog",
+      "canon_entity_id": "MECHA_DOOR_MACHINE_DOG",
+      "lifecycle_id": "V353U040",
+      "name": "机器犬 / 四足牵引机",
+      "team": "player",
+      "cell": [6, 6],
+      "hp": 1,
+      "move": 3,
+      "map_token": "犬",
+      "scenario_role": "context_actor",
+      "weapons": []
+    },
+    {
+      "id": "evac_a11",
+      "name": "A11 / 普通观众11人",
+      "team": "object",
+      "cell": [1, 5],
+      "hp": 1,
+      "move": 0,
+      "map_token": "11",
+      "scenario_role": "evac_token",
+      "people_count": 11,
+      "no_hp_ui": true,
+      "route": [[1, 5], [1, 4], [1, 3], [1, 2], [1, 1]],
+      "weapons": []
+    },
+    {
+      "id": "evac_b10",
+      "name": "B10 / 普通观众10人",
+      "team": "object",
+      "cell": [2, 6],
+      "hp": 1,
+      "move": 0,
+      "map_token": "10",
+      "scenario_role": "evac_token",
+      "people_count": 10,
+      "no_hp_ui": true,
+      "route": [[2, 6], [2, 5], [2, 4], [2, 3], [2, 2], [2, 1]],
+      "weapons": []
+    },
+    {
+      "id": "evac_c3",
+      "name": "C3 / 小满、阿澄与前厅值守员",
+      "team": "object",
+      "cell": [3, 6],
+      "hp": 1,
+      "move": 0,
+      "map_token": "3",
+      "scenario_role": "evac_token",
+      "people_count": 3,
+      "no_hp_ui": true,
+      "never_split": true,
+      "route": [[3, 6], [3, 5], [3, 4], [3, 3], [3, 2], [3, 1]],
+      "weapons": []
+    },
+    {
+      "id": "evac_d5",
+      "name": "D5 / 四名需协助成人与维修员",
+      "team": "object",
+      "cell": [6, 4],
+      "hp": 1,
+      "move": 0,
+      "map_token": "5",
+      "scenario_role": "evac_token",
+      "people_count": 5,
+      "no_hp_ui": true,
+      "contains_repair_worker_from_setup": true,
+      "route": [[6, 4], [5, 4], [4, 4], [4, 3], [4, 2], [4, 1]],
+      "weapons": []
+    },
+    {
+      "id": "path_frame",
+      "canon_entity_id": "ENEMY_SEAL_PATH_FRAME",
+      "name": "活动路径框家族",
+      "team": "object",
+      "cell": [0, 3],
+      "hp": 1,
+      "move": 0,
+      "map_token": "框",
+      "scenario_role": "functional_module",
+      "no_hp_ui": true,
+      "no_attack_kit": true,
+      "weapons": []
+    },
+    {
+      "id": "patcher_p1",
+      "canon_entity_id": "ENEMY_SEAL_DRONE",
+      "name": "贴片机 P1",
+      "team": "object",
+      "cell": [5, 3],
+      "hp": 1,
+      "move": 0,
+      "map_token": "贴",
+      "scenario_role": "functional_module",
+      "no_hp_ui": true,
+      "no_attack_kit": true,
+      "weapons": []
+    },
+    {
+      "id": "patcher_p2",
+      "canon_entity_id": "ENEMY_SEAL_DRONE",
+      "name": "贴片机 P2",
+      "team": "object",
+      "cell": [6, 3],
+      "hp": 1,
+      "move": 0,
+      "map_token": "贴",
+      "scenario_role": "functional_module",
+      "no_hp_ui": true,
+      "no_attack_kit": true,
+      "weapons": []
+    },
+    {
+      "id": "guardian_z_support",
+      "canon_entity_id": "MECHA_GUARDIAN_Z",
+      "name": "馆守Z / 半跪胸灯场景支援",
+      "team": "object",
+      "cell": [0, 8],
+      "hp": 1,
+      "move": 0,
+      "map_token": "Z",
+      "scenario_role": "giant_terrain_support",
+      "no_hp_ui": true,
+      "not_player_controllable": true,
+      "weapons": []
+    }
+  ],
+  "objectives": [
+    {
+      "id": "yellow_line_a",
+      "name": "A组黄线格",
+      "cell": [1, 1],
+      "integrity": 1,
+      "required": true,
+      "scenario_role": "staging_cell"
+    },
+    {
+      "id": "yellow_line_b",
+      "name": "B组黄线格",
+      "cell": [2, 1],
+      "integrity": 1,
+      "required": true,
+      "scenario_role": "staging_cell"
+    },
+    {
+      "id": "yellow_line_c",
+      "name": "C组黄线格",
+      "cell": [3, 1],
+      "integrity": 1,
+      "required": true,
+      "scenario_role": "staging_cell"
+    },
+    {
+      "id": "yellow_line_d5",
+      "name": "D5组黄线格",
+      "cell": [4, 1],
+      "integrity": 1,
+      "required": true,
+      "scenario_role": "staging_cell"
+    }
+  ],
+  "scenario_contract": {
+    "phase_order": ["player_units", "evac_auto", "environment", "local_round_receipt"],
+    "failure_checkpoint": "battle_start",
+    "failure_settlement_round": 3,
+    "evac_tick_priority": ["evac_a11", "evac_b10", "evac_c3", "evac_d5"],
+    "evac_routes": {
+      "evac_a11": [[1, 5], [1, 4], [1, 3], [1, 2], [1, 1]],
+      "evac_b10": [[2, 6], [2, 5], [2, 4], [2, 3], [2, 2], [2, 1]],
+      "evac_c3": [[3, 6], [3, 5], [3, 4], [3, 3], [3, 2], [3, 1]],
+      "evac_d5": [[6, 4], [5, 4], [4, 4], [4, 3], [4, 2], [4, 1]]
+    },
+    "evac_steps_by_round": {
+      "evac_a11": [2, 2, 0],
+      "evac_b10": [2, 2, 1],
+      "evac_c3": [2, 2, 1],
+      "evac_d5": [0, 3, 2]
+    },
+    "gate_dependencies": {
+      "1": {
+        "C01E01_RESET_MAIN_GATE": ["evac_a11", "evac_b10", "evac_c3"],
+        "C01E01_OPEN_SIDE_DOOR_ACCEPT_PATCHER": ["evac_d5"]
+      },
+      "2": {
+        "C01E01_ACTIVE_FALL_CONFIRMED": ["evac_a11", "evac_b10", "evac_c3", "evac_d5"]
+      },
+      "3": {
+        "C01E01_SAFE_ANGLE_CONFIRMED": ["evac_b10", "evac_c3", "evac_d5"]
+      }
+    },
+    "dog_tether_contract": {
+      "attach_action": "C01E01_OPEN_SIDE_DOOR_ACCEPT_PATCHER",
+      "attached_token_id": "evac_d5",
+      "accepted_patcher_count": 1,
+      "independent_action_rounds": [1],
+      "shared_cell_after_attachment": true
+    },
+    "path_frame_cells": [[0, 3], [1, 3], [2, 3], [3, 3], [4, 3]],
+    "side_door_cell": [6, 5],
+    "reflector_sockets": [
+      {"cell": [2, 7], "resolution": "BLOCKED_BY_DOUDENG"},
+      {"cell": [3, 7], "resolution": "SAFE_ANGLE_CONFIRMED"},
+      {"cell": [4, 7], "resolution": "BLOCKED_BY_DOUDENG"}
+    ],
+    "charge_cells": {
+      "diedie": [0, 7],
+      "machine_dog": [7, 7]
+    },
+    "round_requirements": {
+      "1": ["C01E01_OPEN_SIDE_DOOR_ACCEPT_PATCHER", "C01E01_RESET_MAIN_GATE"],
+      "2": ["C01E01_ACTIVE_FALL_CONFIRMED"],
+      "3": ["C01E01_SAFE_ANGLE_CONFIRMED"]
+    },
+    "round_receipts": {
+      "1": {
+        "evac_a11": [1, 3],
+        "evac_b10": [2, 4],
+        "evac_c3": [3, 4],
+        "evac_d5": [6, 4],
+        "machine_dog_state": "ATTACHED_TO_D5",
+        "frame_state": "RECLOSING"
+      },
+      "2": {
+        "evac_a11": [1, 1],
+        "evac_b10": [2, 2],
+        "evac_c3": [3, 2],
+        "evac_d5": [4, 3],
+        "frame_state": "JAM_EXPIRED"
+      },
+      "3": {
+        "evac_a11": [1, 1],
+        "evac_b10": [2, 1],
+        "evac_c3": [3, 1],
+        "evac_d5": [4, 1],
+        "people_staged": 29,
+        "tokens_staged": 4,
+        "frame_state": "UNANCHORED"
+      }
+    }
+  },
+  "mid_events": [
+    {
+      "event_id": "C01E01-R1-FRAME-RECLOSE",
+      "timing": "scenario_round_end",
+      "turn": 1,
+      "message": "路径框记住了标准复位路线，地面箭头重新折回资产区。",
+      "actions": []
+    },
+    {
+      "event_id": "C01E01-R2-NINE-PM-DINNER-BAG",
+      "timing": "scenario_round_end",
+      "turn": 2,
+      "message": "九点钟响；机器犬拖着D5经过路径框，顺嘴叼走纪存的晚饭袋。",
+      "actions": []
+    },
+    {
+      "event_id": "C01E01-R3-GUARDIAN-DIMS-PETAL",
+      "timing": "scenario_support_confirmed",
+      "turn": 3,
+      "message": "馆守Z只亮胸灯外圈，又收暗靠近机器犬的一瓣，把安全阴影让到它脚下。",
+      "actions": []
+    }
+  ],
+  "machine_claim_cues": [
+    {
+      "cue_id": "CUE_C01E01_DIEDIE_ACTIVE_FALL",
+      "unit_id": "diedie",
+      "visible_action": "跌跌收回撑地手，主动把肩壳压上路径框传感轨，并在最后一组通过后自己站起。"
+    },
+    {
+      "cue_id": "CUE_C01E01_GUARDIAN_DIM_PETAL",
+      "unit_id": "guardian_z_support",
+      "visible_action": "馆守Z不站起、不挥拳，只偏头并收暗靠近人群的一瓣胸灯。"
+    }
+  ],
+  "stable_object_bindings": [
+    {
+      "binding_id": "BIND_C01E01_ROUTE_TO_YELLOW_LINE",
+      "stable_object_id": "OBJ_C01E01_CLOSING_ROUTE",
+      "label": "最后一条闭馆路线",
+      "targets": [
+        {"kind": "objective", "target_id": "yellow_line_a"},
+        {"kind": "cell", "cell": [4, 1]}
+      ]
+    },
+    {
+      "binding_id": "BIND_C01E01_CHEST_LIGHT_TO_SUPPORT",
+      "stable_object_id": "OBJ_C01E01_GUARDIAN_CHEST_LIGHT",
+      "label": "馆守Z低热胸灯",
+      "targets": [
+        {"kind": "unit", "target_id": "guardian_z_support"},
+        {"kind": "mid_event", "target_id": "C01E01-R3-GUARDIAN-DIMS-PETAL"}
+      ]
+    },
+    {
+      "binding_id": "BIND_C01E01_MODEL_LATCH_TO_SAFE_REFLECTOR",
+      "stable_object_id": "OBJ_C01E01_MODEL_HOSPITAL_LATCH",
+      "label": "三相架安全罩与唐胶的材料边界",
+      "targets": [
+        {"kind": "mid_event", "target_id": "C01E01-R3-GUARDIAN-DIMS-PETAL"},
+        {"kind": "cell", "cell": [3, 7]}
+      ]
+    },
+    {
+      "binding_id": "BIND_C01E01_DIEDIE_BODY_TO_ACTIVE_FALL",
+      "stable_object_id": "OBJ_C01E01_DIEDIE_BODY",
+      "label": "跌跌的左膝与侧倒方向",
+      "targets": [
+        {"kind": "unit_component", "target_id": "diedie", "component_id": "left_knee_and_shoulder"},
+        {"kind": "cell", "cell": [0, 3]}
+      ]
+    },
+    {
+      "binding_id": "BIND_C01E01_DOG_ROUTE_TO_SIDE_DOOR",
+      "stable_object_id": "OBJ_C01E01_ROBOT_DOG_ROUTE",
+      "label": "机器犬的侧门与工具柜声源",
+      "targets": [
+        {"kind": "unit", "target_id": "machine_dog"},
+        {"kind": "cell", "cell": [6, 5]}
+      ]
+    },
+    {
+      "binding_id": "BIND_C01E01_ZERO_GATE_TO_LOCKDOWN",
+      "stable_object_id": "OBJ_C01E01_ZERO_GATE",
+      "label": "0号门后的风险闸咬合",
+      "targets": [
+        {"kind": "battle_flag", "target_id": "zero_gate_lockdown_origin"},
+        {"kind": "unit", "target_id": "path_frame"}
+      ]
+    }
+  ],
+  "patch_catalog": {}
+}

@@ -1,0 +1,56 @@
+{
+  "config_id": "C01E02-M2.5-A4-STATIC-5-PLUS-A5-RIFT-SWARM-96-ACTIVE",
+  "schema_version": "1.0.0",
+  "config_kind": "C01E02_R2_CANDIDATE_ACTIVE_ASSET_BINDING",
+  "runtime_lane": "candidate_runtime_demo",
+  "lifecycle_status": "active",
+  "contract_binding": {
+    "contract_revision": 2,
+    "build_id": "C01CDV1-M2-R2",
+    "save_schema": 2,
+    "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4"
+  },
+  "profile_binding": {
+    "profile_id": "c01cdv1_e02_scroll_m2_r2",
+    "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8"
+  },
+  "selection_policy": {
+    "no_implicit_asset_search": true,
+    "priority": [
+      "disable_active_art",
+      "explicit_environment_receipt",
+      "this_default_binding"
+    ],
+    "invalid_explicit_receipt_falls_through": false,
+    "visual_lane_failure_is_nonfatal": true
+  },
+  "receipt_binding": {
+    "receipt_id": "C01E02-A4-STATIC-5-PLUS-A5-RIFT-SWARM-96-V1-VALIDATED-R2",
+    "resource_path": "res://content/candidate_runtime_demo/c01/e02/asset_integration_r2/validated_receipts/a4_static_5_plus_a5_rift_swarm_96.validated.json",
+    "sha256": "c284fe2b04f04526cd22280e47e89f879f2d3d5e3d5c8a82528e27b71b7e2e5e",
+    "source_batch_sha256": "abd97837d9abe811862b3a0e5878e6263fd46379eb6f4336fb6af18bb5bd1e36",
+    "expected_validated_handoff_count": 6,
+    "expected_slot_ids": [
+      "ENEMY_C01CDV1_RIFT_SWARM_MASTER",
+      "MAP_C01CDV1_R2_BASE",
+      "MAP_C01CDV1_R2_BUILDINGS",
+      "MAP_C01CDV1_R2_FOREGROUND",
+      "MAP_C01CDV1_R2_OCCLUSION_MASK",
+      "MAP_C01CDV1_R2_ROOFS"
+    ]
+  },
+  "static_manifest_baseline": {
+    "approved_handoffs": 0,
+    "runtime_art_loaded": false
+  },
+  "runtime_expectation": {
+    "validated_handoff_count": 6,
+    "loaded_slot_count": 6,
+    "resource_probe_count": 6,
+    "runtime_art_loaded": true,
+    "remaining_first_13_fallback_count": 7
+  },
+  "excluded_slots": {
+    "MAP_C01CDV1_R2_STATE_LAYERS": "approved_source_not_integrated_static_state_would_double_draw_wall_hung_shield"
+  }
+}

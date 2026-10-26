@@ -1,0 +1,88 @@
+{
+  "status": "RIG_TECHNICAL_PROOF_NOT_CANDIDATE",
+  "gate": "INFEASIBLE_FROM_ALLOWED_PIXELS",
+  "runtime": false,
+  "canon": false,
+  "godot_binding": false,
+  "camera_v2_south_screen_vector": [
+    -40,
+    24
+  ],
+  "sources": {
+    "guardian_z": {
+      "path": ".superpowers/brainstorm/37837-1782033239/content/guardian-z-user-selected-base.png",
+      "sha256": "a9688f07d923d79680e1ba13a1cc51135b72dd29b38cf25242e2239107b86521",
+      "mode": "RGB",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": false,
+      "authority": "CML008 Hard identity source"
+    },
+    "shield": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a17-section2-true-retired-heavy-shield-candidate/user-confirmation-call01/generation-raw/TRUE_RETIRED_HEAVY_SHIELD_CALL01_RAW.png",
+      "sha256": "169c162c5b2bd0761d535d7dee8573fc547952090dfa7947c3b9630af1c72305",
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1024
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_zero_pixels": 703274,
+      "alpha_partial_pixels": 869590,
+      "alpha_opaque_pixels": 0,
+      "authority": "A17 user-accepted Candidate design base",
+      "view_crop_sizes": {
+        "front": [
+          686,
+          1024
+        ],
+        "back": [
+          654,
+          988
+        ],
+        "edge": [
+          242,
+          995
+        ]
+      }
+    }
+  },
+  "deterministically_reusable": [
+    "shield_front",
+    "shield_back",
+    "shield_edge"
+  ],
+  "missing_for_block_bash": [
+    "guardian_z_south_three_quarter_body_base",
+    "left_upper_arm_south",
+    "left_forearm_south_block_and_bash",
+    "left_closed_grip_hand_with_handle_contact",
+    "right_upper_arm_south",
+    "right_forearm_south_block_and_bash",
+    "right_closed_grip_hand_with_handle_contact",
+    "shield_body_and_hand_occlusion_masks",
+    "block_braced_leg_and_weight_shift",
+    "bash_torso_twist_braced_leg_and_contact_edge"
+  ],
+  "outputs": {
+    "qa/RIG_SOURCE_FEASIBILITY_AUDIT_NOT_CANDIDATE_2400x1600.png": {
+      "size": [
+        2400,
+        1600
+      ],
+      "sha256": "8f0c55b362baf107190f2275c097aa4e90957900f35bb3c1237ef08266155a58"
+    },
+    "qa/RIG_SOURCE_FEASIBILITY_AUDIT_NOT_CANDIDATE_1200x800.png": {
+      "size": [
+        1200,
+        800
+      ],
+      "sha256": "51bb3685f20a7237cf5c170f14a8ed7a9f6a69c9f4bfaed23530f545cf601c94"
+    }
+  }
+}

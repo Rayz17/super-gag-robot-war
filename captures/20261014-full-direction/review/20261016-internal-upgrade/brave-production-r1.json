@@ -1,0 +1,88 @@
+{
+  "revision": "brave-source-production-r1",
+  "date": "2026-10-17",
+  "purpose": "社勇王整合造型与列车炮结构样例；不是新的施工进度台账",
+  "authority": "最新用户的V19比例、V11→V17拳重、V17轰炸机上覆、V18胸腿与明确列车炮展开要求",
+  "decision_record": "user-art-decisions-20261016.json",
+  "decision_sha256": "4c380cf7fa08fc95b4fed59d7c59671e3adb1f60c658fdb21964d03ce4345121",
+  "canonical_entities": [
+    "MECHA_BRAVE_FIST_PROTOTYPE",
+    "V353U024"
+  ],
+  "generation_mode": "built-in image_gen; local references actually supplied",
+  "full_body": {
+    "file": "samples/M04-brave-combined-master-r1.png",
+    "sha256": "cae42e7ae9a7568311cbd1e635118acab9104566eaafec654f2f1ecc66a15ea6",
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-136987cd-83f3-4a99-a96e-ca79d6800b42.png",
+    "prompt": "brave-combined-prompt-r1-used.json",
+    "reference_roles": [
+      {
+        "path": "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/refs/brave-core-longhair-v11-source.jpg",
+        "role": "CORE identity: complete same robot, same head, long orange/ivory mane, oversized fists. Do not copy its slender uncombined arm thickness."
+      },
+      {
+        "path": "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/refs/brave-v17-upper-source.jpg",
+        "role": "Bomber OVERLAY across entire upper body: huge coherent shoulder-to-shoulder flying wing with central cockpit nose; fist/forearm mass target."
+      },
+      {
+        "path": "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/refs/brave-v18-chest-legs-source.jpg",
+        "role": "Chest fold organization merged into same bomber nose and drill/tread lower leg armor; NOT train shoulders or engine cuffs."
+      },
+      {
+        "path": "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/refs/brave-v19-proportion-source.jpg",
+        "role": "HEIGHT AND HEAD-TO-BODY PROPORTIONS ONLY: taller torso/legs; NOT its train shoulders or small fists."
+      },
+      {
+        "path": "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-train-arm-structure-r2.png",
+        "role": "ARM WEAPON DESIGN: ONE split train section OUTSIDE each existing reinforced arm, cab points BACKWARD toward/past elbow, halves at anatomical left/right, huge gray fist protrudes front."
+      }
+    ]
+  },
+  "arm_structure": {
+    "current": "samples/M04-train-arm-structure-r2.png",
+    "sha256": "40d8f8bec33e4f181e7c1c3e6f7297557bfaffb379f687944734cae940b7337e",
+    "earlier": "samples/M04-train-arm-structure-r1.png",
+    "prompt": "brave-train-arm-prompt-r2.json",
+    "reference_version_note": "原疑似V20图源未找到；新稿按明确设计要求绘制，不能冒称复原V20"
+  },
+  "author_source_review": {
+    "inspected": "actual full generated combined r1 and both arm sheets; original selected source images",
+    "visible_results": [
+      "头冠、长发/鬃发与完整人形核心的连续性保留；没有把核心改成拳头内胆。",
+      "整机延展腰腿，保留大肩翼和实际巨拳；不是将矮版图片拉长。",
+      "上身用同一中心机鼻/座舱组织橙色胸甲与横向翼壳；没有重复堆两套中央飞机。",
+      "两侧灰色指节、拳掌与橙色重拳甲实体可读，外侧再加列车半壳；不靠发光环代替拳的体量。",
+      "车头在前臂后端、向肘后；前端保留巨拳和左右半壳。膝部钻头、履带与宽足属于腿架，未冒充手部武器。"
+    ],
+    "remaining": [
+      "整机候选尚待用户决定方向，不能据作者目视称为最终机设。",
+      "正侧/背面、四来源分件与同基准核心/合体对照还需制作。当前侧向结构页为示意而非精密正投影。",
+      "翼壳上的窗/门形细节仍需在分件稿中强调航空构件语汇，避免和前臂列车车厢读成同物。",
+      "核心与外甲后续需要在共享骨架及正常战棋距离检查；当前没有新低模、UV、绑定、动作或声音交付。"
+    ]
+  },
+  "review_states": {
+    "source_author_reviewed": true,
+    "user_design_accepted": false,
+    "model_produced": false,
+    "runtime_integrated": false,
+    "native_input_checked": false,
+    "independent_visual_reviewed": false
+  },
+  "next": "用户确认整合主方向后，制作匹配的正侧背/分件和完整核心风格稿，再沿现有brave动作骨架做一个候选实例；其他已分工人物可并行。",
+  "preparation_failure": "Initial six-reference call was rejected before generation; actual call kept five identity/component references. This is not counted as a visual failed attempt.",
+  "user_feedback_20261017": {
+    "date": "2026-10-17",
+    "authority": "direct_user_feedback",
+    "verbatim": "冲击感比不上V17，但是方向挺不错，双拳不够强力。人物转绘看上去没有用新的风格",
+    "scope": {
+      "M04": "组合方向获正面意见；V17冲击力与双拳力度未达到，整机未通过",
+      "H04_H07_H09": "R1人物转绘未达到新画风；撤回作者先前新风格已到位的判断；保留原形象选择及三主角既有认可"
+    },
+    "next_method": {
+      "M04": "增强真实拳掌/指节/前臂结构体量和上覆轰炸机横向压迫感，保持V19头身比例；不以光圈替代实体",
+      "characters": "直接用外援实际新画风作为首要参考，原稿只提供身份设计清单；兜灯先校准，再推广"
+    }
+  },
+  "current_status": "direction_promising_fist_and_impact_revision_required"
+}

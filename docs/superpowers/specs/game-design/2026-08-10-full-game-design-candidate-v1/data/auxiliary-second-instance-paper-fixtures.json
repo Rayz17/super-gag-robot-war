@@ -1,0 +1,160 @@
+{
+  "authority_boundary": {
+    "build_status": "zero_build",
+    "canon_write_allowed": false,
+    "demo_write_allowed": false,
+    "human_evidence_status": "not_run",
+    "reader_write_allowed": false,
+    "replication_evidence_status": "no_replication_evidence",
+    "runtime_write_allowed": false
+  },
+  "canonicalization": "UTF-8 JSON; fixture hash is SHA-256 of RFC-8259-compatible object without canonical_sha256, encoded by json.dumps(ensure_ascii=False, sort_keys=True, separators=(',', ':'))",
+  "fixtures": [
+    {
+      "actions": ["HELP", "MOVE", "OBSERVE", "PHOTO", "REPORT", "RETURN", "TALK"],
+      "activity_id": "TEST_EX1_R2_WINDBREAK_DEPOT",
+      "base_fixture_id": "FX-D05-EX1",
+      "build_status": "zero_build",
+      "canonical_sha256": "ccc75ce38d4bb8a9320a99581180acb1b06f84fb086df3c3a85efd2a0233528b",
+      "content": {
+        "actors": ["TEST_ACTOR_EX1_R2_CARRIER", "TEST_ACTOR_EX1_R2_KEEPER", "TEST_ACTOR_EX1_R2_RECEIVER"],
+        "adjacency": {
+          "TEST_EX1_R2_N0_GATE": ["TEST_EX1_R2_N1_WIND_BRIDGE", "TEST_EX1_R2_N2_SERVICE_TRENCH"],
+          "TEST_EX1_R2_N1_WIND_BRIDGE": ["TEST_EX1_R2_N0_GATE", "TEST_EX1_R2_N3_SIGNAL_COURT"],
+          "TEST_EX1_R2_N2_SERVICE_TRENCH": ["TEST_EX1_R2_N0_GATE", "TEST_EX1_R2_N3_SIGNAL_COURT", "TEST_EX1_R2_N4_COVERED_RAMP"],
+          "TEST_EX1_R2_N3_SIGNAL_COURT": ["TEST_EX1_R2_N1_WIND_BRIDGE", "TEST_EX1_R2_N2_SERVICE_TRENCH", "TEST_EX1_R2_N5_CRANE_BEACON"],
+          "TEST_EX1_R2_N4_COVERED_RAMP": ["TEST_EX1_R2_N2_SERVICE_TRENCH", "TEST_EX1_R2_N5_CRANE_BEACON"],
+          "TEST_EX1_R2_N5_CRANE_BEACON": ["TEST_EX1_R2_N3_SIGNAL_COURT", "TEST_EX1_R2_N4_COVERED_RAMP"]
+        },
+        "entry_node": "TEST_EX1_R2_N0_GATE",
+        "facts": [
+          {"fact_id": "TEST_FACT_EX1_R2_FOOT_ONLY", "node_id": "TEST_EX1_R2_N1_WIND_BRIDGE", "statement": "上层抗风桥当前只承行人"},
+          {"fact_id": "TEST_FACT_EX1_R2_GUST_WINDOW", "node_id": "TEST_EX1_R2_N3_SIGNAL_COURT", "statement": "信号庭存在可复述的侧风时窗"},
+          {"fact_id": "TEST_FACT_EX1_R2_CART_LEVEL", "node_id": "TEST_EX1_R2_N2_SERVICE_TRENCH", "statement": "搬运车要求低风且连续平面"},
+          {"fact_id": "TEST_FACT_EX1_R2_TRACK_MATCH", "node_id": "TEST_EX1_R2_N4_COVERED_RAMP", "statement": "遮蔽坡道轮迹与搬运车匹配"}
+        ],
+        "future_consumers": ["TEST_CONSUMER_EX1_R2_ROUTE_CARD", "TEST_CONSUMER_EX1_R2_KEEPER_REPLY"],
+        "goal_node": "TEST_EX1_R2_N5_CRANE_BEACON",
+        "helper_gate": {
+          "blocked_node": "TEST_EX1_R2_N4_COVERED_RAMP",
+          "help_action_target": "TEST_OBJECT_EX1_R2_BRAKE_CHOCK",
+          "optional": true
+        },
+        "report_rule": {"clear_min_supported_facts": 2, "partial_min_supported_facts": 1, "unsupported_clear_rejected": true},
+        "routes": [
+          ["TEST_EX1_R2_N0_GATE", "TEST_EX1_R2_N1_WIND_BRIDGE", "TEST_EX1_R2_N3_SIGNAL_COURT", "TEST_EX1_R2_N5_CRANE_BEACON"],
+          ["TEST_EX1_R2_N0_GATE", "TEST_EX1_R2_N2_SERVICE_TRENCH", "TEST_EX1_R2_N3_SIGNAL_COURT", "TEST_EX1_R2_N5_CRANE_BEACON"],
+          ["TEST_EX1_R2_N0_GATE", "TEST_EX1_R2_N2_SERVICE_TRENCH", "TEST_EX1_R2_N4_COVERED_RAMP", "TEST_EX1_R2_N5_CRANE_BEACON"]
+        ],
+        "withdraw_node": "TEST_EX1_R2_N0_GATE"
+      },
+      "family_id": "AUX_EX1",
+      "fixture_id": "FX-D05-EX1-R2-PAPER",
+      "human_evidence_status": "not_run",
+      "initial_state": {"helped": [], "route_summary": "none", "visited": ["TEST_EX1_R2_N0_GATE"]},
+      "maturity_claim": "paper_preflight_only",
+      "new_input_action_count": 0,
+      "new_persistent_state_domain_count": 0,
+      "new_settlement_page_count": 0,
+      "new_top_level_code_count": 0,
+      "new_ui_surface_count": 0,
+      "outcomes": ["clear", "partial", "withdraw"],
+      "output_gate_id": "AOG_SPATIAL",
+      "persistent_state_domains": ["ST_EVIDENCE", "ST_LOCATION", "ST_RELATION", "ST_RESULT"],
+      "prototype_id": "P-EX1-R2",
+      "replication_evidence_status": "no_replication_evidence",
+      "ui_surfaces": ["UI_AUX_INTERACT_PROMPT", "UI_AUX_OUTCOME_CARD", "UI_AUX_ROUTE_NOTE", "UI_AUX_SPATIAL_VIEW"]
+    },
+    {
+      "actions": ["ANNOTATE_SUPPORT", "COMMIT_REPORT", "CONFIGURE", "INSPECT", "PREVIEW_SAFETY", "REVISE_HYPOTHESIS", "RUN_TEST", "WITHDRAW"],
+      "activity_id": "TEST_EX2_R2_TORSION_ARM",
+      "base_fixture_id": "FX-D05-EX2",
+      "build_status": "zero_build",
+      "canonical_sha256": "88dad30a898c13f0aa8ba30ba408e1ede45266f03a3784257738c607f59a30aa",
+      "content": {
+        "evidence": [
+          {"evidence_id": "TEST_EVID_EX2_R2_PRELOAD", "source_id": "TEST_SOURCE_EX2_R2_GAUGE", "supports": "TEST_HYP_EX2_R2_PRELOAD_PRIMARY"},
+          {"evidence_id": "TEST_EVID_EX2_R2_LOG", "source_id": "TEST_SOURCE_EX2_R2_CONTROL_LOG", "supports": "TEST_HYP_EX2_R2_GAIN_PRIMARY"},
+          {"evidence_id": "TEST_EVID_EX2_R2_CURRENT", "source_id": "TEST_SOURCE_EX2_R2_CURRENT_TRACE", "supports": "TEST_HYP_EX2_R2_PRELOAD_PRIMARY"}
+        ],
+        "formula": {"gain_coefficient": "0.70", "intercept": "-0.48", "load_coefficient": "0.004", "patch_bonus": {"none": "0.00", "preload_shim": "0.28"}},
+        "future_consumers": ["TEST_CONSUMER_EX2_R2_ACCEPTED_SETUP", "TEST_CONSUMER_EX2_R2_RETEST_ORDER"],
+        "hypotheses": ["TEST_HYP_EX2_R2_PRELOAD_PRIMARY", "TEST_HYP_EX2_R2_GAIN_PRIMARY"],
+        "required_cases": [
+          {"expected_band": "stable", "gain": "reduced", "load": "rated", "patch": "none"},
+          {"expected_band": "stable", "gain": "nominal", "load": "rated", "patch": "preload_shim"},
+          {"expected_band": "outside_safe_envelope", "gain": "high", "load": "rated", "patch": "none"},
+          {"expected_band": "rejected_scope", "gain": "reduced", "load": "overload", "patch": "none"}
+        ],
+        "thresholds": {"bounded_max": "0.45", "stable_max": "0.20"},
+        "variables": {
+          "gain": {"high": "1.10", "nominal": "0.85", "reduced": "0.55"},
+          "load": {"low": "30", "overload": "100", "rated": "70"},
+          "patch": ["none", "preload_shim"]
+        }
+      },
+      "family_id": "AUX_EX2",
+      "fixture_id": "FX-D05-EX2-R2-PAPER",
+      "human_evidence_status": "not_run",
+      "initial_state": {"collected_evidence": [], "configuration_draft": null, "hypothesis_states": ["candidate", "candidate"], "test_runs": 0},
+      "maturity_claim": "paper_preflight_only",
+      "new_input_action_count": 0,
+      "new_persistent_state_domain_count": 0,
+      "new_settlement_page_count": 0,
+      "new_top_level_code_count": 0,
+      "new_ui_surface_count": 0,
+      "outcomes": ["clear", "partial", "withdraw"],
+      "output_gate_id": "AOG_EVIDENCE",
+      "persistent_state_domains": ["ST_BODY", "ST_EVIDENCE", "ST_HYPOTHESIS", "ST_RESULT"],
+      "prototype_id": "P-EX2-R2",
+      "replication_evidence_status": "no_replication_evidence",
+      "ui_surfaces": ["UI_AUX_CONFIG_3SLOT", "UI_AUX_EVIDENCE_BOARD", "UI_AUX_OUTCOME_CARD", "UI_AUX_REPORT_CARD", "UI_AUX_SAFETY_PREVIEW"]
+    },
+    {
+      "actions": ["APPLY", "LINK", "OBSERVE", "RETURN", "SUBMIT_INTERPRETATION"],
+      "activity_id": "TEST_EX3_R2_MIRROR_RELAY",
+      "base_fixture_id": "FX-D05-EX3",
+      "build_status": "zero_build",
+      "canonical_sha256": "321634d825cb1ce44846685e45a8a039277c5b266b023e18ca5a14064cb9add0",
+      "content": {
+        "correct_current_sequence": "RIGHT-2-LEFT",
+        "future_consumers": ["TEST_CONSUMER_EX3_R2_ROUTE_DELTA", "TEST_CONSUMER_EX3_R2_UNRESOLVED_NOTE"],
+        "hypotheses": ["TEST_HYP_EX3_R2_NOTE_LITERAL", "TEST_HYP_EX3_R2_LOG_REINTERPRETED"],
+        "inventory_items": [],
+        "knowledge_nodes": [
+          {"claim": "输入包含左右标签与1/2时长", "knowledge_id": "TEST_KN_EX3_R2_MARKS", "observed_at": "VISIT1_T00", "source_id": "TEST_SOURCE_EX3_R2_MARKS"},
+          {"claim": "LEFT-2-RIGHT", "knowledge_id": "TEST_KN_EX3_R2_OLD_LOG", "observed_at": "SOURCE_T_MINUS_20", "source_id": "TEST_SOURCE_EX3_R2_OLD_LOG"},
+          {"claim": "RIGHT-1-LEFT", "knowledge_id": "TEST_KN_EX3_R2_FIELD_NOTE", "observed_at": "SOURCE_T_MINUS_8", "source_id": "TEST_SOURCE_EX3_R2_FIELD_NOTE"},
+          {"claim": "T-10之前记录的LEFT/RIGHT标签镜像，时长不变", "knowledge_id": "TEST_KN_EX3_R2_CALIBRATION", "observed_at": "INTERLUDE_T_MINUS_10", "source_id": "TEST_SOURCE_EX3_R2_CALIBRATION"},
+          {"claim": "中段时长必须为2", "knowledge_id": "TEST_KN_EX3_R2_LIVE_ECHO", "observed_at": "VISIT2_T02", "source_id": "TEST_SOURCE_EX3_R2_LIVE_ECHO"}
+        ],
+        "observer_projections": {
+          "BACKEND_TEST_ORACLE": ["TEST_KN_EX3_R2_MARKS", "TEST_KN_EX3_R2_OLD_LOG", "TEST_KN_EX3_R2_FIELD_NOTE", "TEST_KN_EX3_R2_CALIBRATION", "TEST_KN_EX3_R2_LIVE_ECHO", "TEST_ORACLE_EX3_R2_SEQUENCE"],
+          "PLAYER_VISIT_1": ["TEST_KN_EX3_R2_MARKS", "TEST_KN_EX3_R2_OLD_LOG", "TEST_KN_EX3_R2_FIELD_NOTE"],
+          "PLAYER_VISIT_2": ["TEST_KN_EX3_R2_MARKS", "TEST_KN_EX3_R2_OLD_LOG", "TEST_KN_EX3_R2_FIELD_NOTE", "TEST_KN_EX3_R2_CALIBRATION", "TEST_KN_EX3_R2_LIVE_ECHO"]
+        },
+        "physical_nodes": ["TEST_EX3_R2_ENTRY", "TEST_EX3_R2_CONSOLE", "TEST_EX3_R2_SIDE_PLATFORM", "TEST_EX3_R2_RETURN"],
+        "relations_allowed": ["contradicts", "later_than", "same_subject", "supports"],
+        "route_change": {"after": "accessible", "before": "closed", "requires_evidence": ["TEST_KN_EX3_R2_OLD_LOG", "TEST_KN_EX3_R2_CALIBRATION", "TEST_KN_EX3_R2_LIVE_ECHO"], "target_id": "TEST_EX3_R2_SIDE_PLATFORM"},
+        "unresolved_id": "TEST_UNKNOWN_EX3_R2_NOTE_DIFFERENCE"
+      },
+      "family_id": "AUX_EX3",
+      "fixture_id": "FX-D05-EX3-R2-PAPER",
+      "human_evidence_status": "not_run",
+      "initial_state": {"hypothesis_states": ["candidate", "candidate"], "route_state": "closed", "visit": 1},
+      "maturity_claim": "paper_preflight_only",
+      "new_input_action_count": 0,
+      "new_persistent_state_domain_count": 0,
+      "new_settlement_page_count": 0,
+      "new_top_level_code_count": 0,
+      "new_ui_surface_count": 0,
+      "outcomes": ["clear", "partial", "withdraw"],
+      "output_gate_id": "AOG_EVIDENCE",
+      "persistent_state_domains": ["ST_EVIDENCE", "ST_HYPOTHESIS", "ST_KNOWLEDGE", "ST_LOCATION", "ST_RESULT"],
+      "prototype_id": "P-EX3-R2",
+      "replication_evidence_status": "no_replication_evidence",
+      "ui_surfaces": ["UI_AUX_EVIDENCE_BOARD", "UI_AUX_KNOWLEDGE_LINKS", "UI_AUX_OUTCOME_CARD", "UI_AUX_ROUTE_DELTA", "UI_AUX_SOURCE_TIMELINE"]
+    }
+  ],
+  "schema_id": "d05_auxiliary_second_instance_paper_preflight_v1"
+}

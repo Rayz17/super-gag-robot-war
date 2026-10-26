@@ -1,0 +1,264 @@
+{
+  "revision": "aircraft-existing-design-recolour-r2",
+  "date": "2026-10-22",
+  "existing_batch": "design-followthrough-r1.json",
+  "user_request": "那你还是调整一下雷灵和歌翼的这个设计吧。",
+  "execution": "built-in image_gen; each character initial two-form edit followed by local surface cleanup",
+  "status": "candidate_source_colour_and_drawing_studies",
+  "reader": "aircraft-existing-design-recolour-r2.html",
+  "items": [
+    {
+      "id": "M08",
+      "name": "雷翎",
+      "runtime_id": "leiling",
+      "file": "samples/M08-existing-design-recolour-r2b.png",
+      "sha256": "5474a29046c48281a5e839b3031025f0c60b5fc00b2567eb12567f5fe2d18ed3",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-a93de11b-5b78-44f9-b6b7-5dec79c5ed20.png",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "previous_surface_attempt": {
+        "file": "samples/M08-existing-design-recolour-r2.png",
+        "sha256": "1afc6439315474e0932313f5a0446fa501afee7c641e97c4724c889378b85a64",
+        "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-67bdf0a1-cd4e-4157-bdab-bc3ea47d9680.png",
+        "pixel_size": [
+          1672,
+          941
+        ],
+        "mode": "RGB"
+      },
+      "source_refs": [
+        {
+          "file": "captures/20261014-full-direction/review/20261016-internal-upgrade/aircraft-runtime-comparison-20261022/leiling_robot.png",
+          "sha256": "256624e19bc10b621ca44c661dd3deb1d32e53421d250e254318e7eeb83e90d2",
+          "role": "exact existing robot identity/pose"
+        },
+        {
+          "file": "captures/20261014-full-direction/review/20261016-internal-upgrade/aircraft-runtime-comparison-20261022/leiling_aircraft.png",
+          "sha256": "75f3dec6c333c9140d1d22abfd9b8b6131859d6cf046afdd58041e3b935ee641",
+          "role": "exact existing aircraft identity/view"
+        },
+        {
+          "file": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98",
+          "role": "drawing style only; no parts or colours transferred"
+        }
+      ],
+      "prompts": [
+        "M08-existing-design-recolour-prompt-r2.txt",
+        "M08-existing-design-cleanup-prompt-r2b.txt"
+      ],
+      "scope": "colour and drawing-language study preserving existing design identifiers; not new geometry master",
+      "user_accepted": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "M14",
+      "name": "歌翼",
+      "runtime_id": "song",
+      "file": "samples/M14-existing-design-recolour-r2b.png",
+      "sha256": "7734603a6d9ad4a1e6d11c17973feb1bb0b29cb678f321f564da0da747854ea1",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-64a8625f-58a7-40e2-83f9-c77a2ae4a6ae.png",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGB",
+      "previous_surface_attempt": {
+        "file": "samples/M14-existing-design-recolour-r2.png",
+        "sha256": "db9414d752c8de1b08e479e165b7473ffaee9b8c169f206ad6299feaa59df6d5",
+        "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-507a03f1-4ced-4cc0-b64c-8280836fc440.png",
+        "pixel_size": [
+          1774,
+          887
+        ],
+        "mode": "RGB"
+      },
+      "source_refs": [
+        {
+          "file": "captures/20261014-full-direction/review/20261016-internal-upgrade/aircraft-runtime-comparison-20261022/song_robot.png",
+          "sha256": "a64a3a6a3bd222975d7ed11bb0f35b6c8232e635f8b9162fd1e54130cd59aa77",
+          "role": "exact existing robot identity/pose"
+        },
+        {
+          "file": "captures/20261014-full-direction/review/20261016-internal-upgrade/aircraft-runtime-comparison-20261022/song_aircraft.png",
+          "sha256": "26cd03fc00c8a916f1cabb11f4c8df5ca45cd4ab523b6fa658b35dabf6288b8f",
+          "role": "exact existing aircraft identity/view"
+        },
+        {
+          "file": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98",
+          "role": "drawing style only; no parts or colours transferred"
+        }
+      ],
+      "prompts": [
+        "M14-existing-design-recolour-prompt-r2.txt",
+        "M14-existing-design-cleanup-prompt-r2b.txt"
+      ],
+      "scope": "colour and drawing-language study preserving existing design identifiers; not new geometry master",
+      "user_accepted": false,
+      "runtime_integrated": false
+    }
+  ],
+  "source_models": [
+    {
+      "actual_gameplay_input": false,
+      "aircraft": false,
+      "camera_position": "(-33.54, 39.56, -114.6)",
+      "camera_size": 21.7600002288818,
+      "id": "leiling",
+      "image": "leiling_robot.png",
+      "model": "res://assets/formula_lab/linked_campaign_v4/models/leiling.glb",
+      "model_sha256": "7aeab406f65bfd7ed29588738f3eadde0e5f10f5dda90f444d18ca7c57262d31",
+      "pose": "existing idle at 0.20s",
+      "same_normal_tactical_scene": false,
+      "source_geometry_and_paint_unchanged": true,
+      "view": "diagnostic studio using existing game renderer",
+      "visual_size": "(15.56442, 17.0, 9.164582)",
+      "project_model": "game-godot/assets/formula_lab/linked_campaign_v4/models/leiling.glb",
+      "capture_file": "aircraft-runtime-comparison-20261022/leiling_robot.png",
+      "capture_sha256": "256624e19bc10b621ca44c661dd3deb1d32e53421d250e254318e7eeb83e90d2"
+    },
+    {
+      "actual_gameplay_input": false,
+      "aircraft": true,
+      "camera_position": "(-30.1, 46.02428, -108.0)",
+      "camera_size": 28.7999992370605,
+      "id": "leiling",
+      "image": "leiling_aircraft.png",
+      "model": "res://assets/formula_lab/linked_campaign_v4/models/leiling_aircraft.glb",
+      "model_sha256": "44b842fbaa35eb31d31c7ad22d75ec9d23b1e1770a4c6fff975d07009fa74a41",
+      "pose": "existing idle at 0.20s",
+      "same_normal_tactical_scene": false,
+      "source_geometry_and_paint_unchanged": true,
+      "view": "diagnostic studio using existing game renderer",
+      "visual_size": "(22.5, 10.84857, 20.85422)",
+      "project_model": "game-godot/assets/formula_lab/linked_campaign_v4/models/leiling_aircraft.glb",
+      "capture_file": "aircraft-runtime-comparison-20261022/leiling_aircraft.png",
+      "capture_sha256": "75f3dec6c333c9140d1d22abfd9b8b6131859d6cf046afdd58041e3b935ee641"
+    },
+    {
+      "actual_gameplay_input": false,
+      "aircraft": false,
+      "camera_position": "(-33.07051, 39.78239, -113.1174)",
+      "camera_size": 23.3414459228516,
+      "id": "song",
+      "image": "song_robot.png",
+      "model": "res://assets/formula_lab/linked_campaign_v4/models/song.glb",
+      "model_sha256": "cd63f580ac257eef666aee4b2e9b33bd48a3c5571f62980d5b4738aa9cd8e882",
+      "pose": "existing idle at 0.20s",
+      "same_normal_tactical_scene": false,
+      "source_geometry_and_paint_unchanged": true,
+      "view": "diagnostic studio using existing game renderer",
+      "visual_size": "(18.2355, 17.0, 10.01117)",
+      "project_model": "game-godot/assets/formula_lab/linked_campaign_v4/models/song.glb",
+      "capture_file": "aircraft-runtime-comparison-20261022/song_robot.png",
+      "capture_sha256": "a64a3a6a3bd222975d7ed11bb0f35b6c8232e635f8b9162fd1e54130cd59aa77"
+    },
+    {
+      "actual_gameplay_input": false,
+      "aircraft": true,
+      "camera_position": "(-30.1, 44.22317, -108.0)",
+      "camera_size": 28.7999992370605,
+      "id": "song",
+      "image": "song_aircraft.png",
+      "model": "res://assets/formula_lab/linked_campaign_v4/models/song_aircraft.glb",
+      "model_sha256": "c34d30cd1d2fb3bb0ae66dace2c347ca4fe1fd09f9d764c86f8dabd01136cf8e",
+      "pose": "existing idle at 0.20s",
+      "same_normal_tactical_scene": false,
+      "source_geometry_and_paint_unchanged": true,
+      "view": "diagnostic studio using existing game renderer",
+      "visual_size": "(22.5, 7.246338, 18.46313)",
+      "project_model": "game-godot/assets/formula_lab/linked_campaign_v4/models/song_aircraft.glb",
+      "capture_file": "aircraft-runtime-comparison-20261022/song_aircraft.png",
+      "capture_sha256": "26cd03fc00c8a916f1cabb11f4c8df5ca45cd4ab523b6fa658b35dabf6288b8f"
+    }
+  ],
+  "art_direction": {
+    "file": "docs/superpowers/specs/production/art-direction-v0.3/series-art-direction-ab-lock-v1.md",
+    "sha256": "094591234a3284690d8ce689330b2ceb61cdd9bf571326ed23eac85dbdf23e85",
+    "role": "current Working drawing language"
+  },
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "samples/M08-existing-design-recolour-r2b.png",
+      "samples/M14-existing-design-recolour-r2b.png"
+    ],
+    "observations": {
+      "M08": [
+        "保留窄长头盔、红中脊与双尖、叶形黄胸核、放射刃翼、宽胫尖足和原下垂短枪。",
+        "主块从旧紫灰蓝整理为更清楚的钴蓝/墨蓝，朱红和象牙仍沿原部件分布；手和枪改深石墨。",
+        "首轮肩臂残留旧贴图裂纹样亮线；R2b已局部清理，肩/胫以完整蓝面和少量硬阴影为主。"
+      ],
+      "M14": [
+        "保留长双红角、尖收头脸、黄胸核、横肩翼、垂翼臂甲和修长腿足。",
+        "沿现用红白涂装改为暖象牙与朱红大面，关节/手/足收为石墨，座舱和少量功能边保留暖黄。",
+        "首轮红色臂翼和腿甲残留碎亮线；R2b已局部清理，红色长面与象牙甲片的分区更完整。"
+      ]
+    },
+    "final_surface_observation": {
+      "M08": "已实看R2b：肩甲的淡蓝裂纹样亮线大部分去除，肩/胫的大蓝面更完整；原红中脊、放射刃翼、黄胸核、下垂短枪与航空发动机群仍可追认。",
+      "M14": "已实看R2b：红色臂翼和胫甲的碎亮线明显减少，暖象牙/朱红/石墨大块关系清楚；长双红角、肩翼、垂翼甲和修长身形仍可追认。"
+    },
+    "invariant_limits": "主要外轮廓、头胸和翼形经作者实看保留；生成线稿不等于逐顶点或逐面精确保持原模型，隐面与发动机内部未验证。"
+  },
+  "limitations": [
+    "二维重绘保留主要识别点，不等于原模型逐面换色；白底编排与原诊断图不是同像素相机对照。",
+    "两形态的轮廓和涂装关系供设计审阅，未验证完整折变、三视几何或连续动作。",
+    "未改原模型/贴图/骨架/动作或运行入口；新色样未获用户采用。"
+  ],
+  "runtime_assets_modified": false,
+  "canon_changed": false,
+  "main_thread_messaged": false,
+  "experience_check": {
+    "scope": "asset source-design review only",
+    "original_batch": "design-followthrough-r1.json",
+    "start": "现用机设有记忆点，但表面偏旧紫灰/冷白与碎反光。",
+    "actual_input": "四张原模型取图作为机设输入，原固定社勇王仅作画法参照，分别重绘后局部清理表面。",
+    "visible_result": "两台保留不同轮廓与原英雄色关系，共享哑光硬阴影和墨线；具体采用待用户判断。",
+    "next_decision": "同源配色稿供继续生产；原模型的材质、正常战棋镜头和三视仍需实际落地核对。",
+    "metrics": {
+      "M08_source_capture_pixels": [
+        1200,
+        1200
+      ],
+      "M08_colour_sheet_pixels": [
+        1672,
+        941
+      ],
+      "M14_source_capture_pixels": [
+        1200,
+        1200
+      ],
+      "M14_colour_sheet_pixels": [
+        1774,
+        887
+      ],
+      "same_pixel_camera_comparison": false,
+      "normal_tactical_projection_height": "not measured in this source study",
+      "HUD_states": "not applicable to isolated design sheet"
+    },
+    "rules_input_motion_sound_performance": "本轮未改玩法、输入、动作、声音或运行；不以此关闭相应完整体验要求。",
+    "reviewer": "author",
+    "independent_review": false,
+    "user_acceptance": false
+  },
+  "verification": {
+    "native_generated_images_copied_byte_identical": 4,
+    "final_two_form_studies": 2,
+    "existing_models_unchanged": 4,
+    "previous_fixed_images_unchanged": 39,
+    "M11_confirmed_master_unchanged": true,
+    "runtime_replaced": false,
+    "canon_migrated": false,
+    "source_acceptance_added": false,
+    "normal_tactical_scene_verified": false,
+    "browser_render_verified": false
+  },
+  "later_user_correction_and_synthesis": "aircraft-synthesis-production-r3.json",
+  "current_design_route": false
+}

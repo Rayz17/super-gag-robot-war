@@ -1,0 +1,130 @@
+{
+  "episode_id": "C02E03-MULTI-PLAY-M6-VALIDATION",
+  "status": "runtime_validation_only",
+  "canon_level": "candidate_runtime_proof",
+  "location_id": "LOC_MODEL_STREET",
+  "mecha_id": "MECHA_OLD_BOXER_KING",
+  "source_slot_id": "V357-C02-S03",
+  "transition_contract": "required",
+  "graph": "res://content/episodes/runtime_validation/m6/graph.m6.json",
+  "bundle_output": "res://content/generated/episodes/runtime_validation/m6.bundle.json",
+  "activities": [
+    "res://content/activities/constraint/c02_old_boxer_repair_plan_validation.json",
+    "res://content/activities/timing/a003_old_boxer_missed_beat_validation.json"
+  ],
+  "battle": "res://content/episodes/runtime_validation/m6/battle/c02_m6_old_boxer_arena_flip.json",
+  "presentation_assets": [
+    "res://assets/backgrounds/bg_model_street_workshop_m6_v1.png",
+    "res://assets/backgrounds/bg_model_street_ring_aftermath_m6_v1.png",
+    "res://assets/backgrounds/bg_model_street_settlement_desk_m6_v1.png",
+    "res://assets/portraits/portrait_jicun_entity_b_v1.png",
+    "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png",
+    "res://assets/battle_presentation/m6/old_boxer/manifest.json",
+    "res://assets/battle_presentation/m6/old_boxer/sprite_old_boxer_map_idle_v01.png",
+    "res://assets/battle_presentation/m6/old_boxer/pose_old_boxer_missed_beat_v01.png"
+  ],
+  "experience_contract_version": 1,
+  "experience_contract_required": true,
+  "experience_contract": {
+    "episode_knot_id": "KNOT_M6_OLD_BOXER_MISSED_BEAT",
+    "dramatic_object_id": "OBJ_M6_RIGHT_GLOVE",
+    "dramatic_question": "修好一台机器人，是否也包括保留它不肯完成的动作？",
+    "human_claims": [
+      {
+        "claim_owner": "CH_TANGJIAO",
+        "claim": "维修必须先听懂旧拳王怎样承力，不能为了直播把旧伤和迟疑一起磨平。"
+      },
+      {
+        "claim_owner": "CH_JICUN",
+        "claim": "原速记录必须被保留，让以后的人能分辨故障、旧伤和机器自己的停手。"
+      }
+    ],
+    "machine_claim": {
+      "mecha_id": "MECHA_OLD_BOXER_KING",
+      "claim": "它宁可放弃被包装成冠军复活，也要用没有打完的一拳接住眼前的人。",
+      "action_cue_id": "CUE_M6_OLD_BOXER_HOLD_PUNCH"
+    },
+    "player_commitment_id": "COMMIT_M6_REPAIR_WITHOUT_ERASING_DELAY",
+    "commitment_model": "choice",
+    "settlement_model": "desk_choice",
+    "irreversible_cost": {
+      "text": "无论先修右拳还是先补后仓，另一项身体或空间责任都会被推迟，复活直播也无法按原计划成立。",
+      "state_refs": [
+        "MECHA_OLD_BOXER_KING:right_fist_condition",
+        "OBJ_M6_WAREHOUSE_GATE_PANEL:warehouse_access",
+        "JICUN_TANGJIAO_REPAIR_TRUST"
+      ]
+    },
+    "next_debt_id": "DEBT_M6_BODY_OR_WAREHOUSE_RECHECK",
+    "next_debt_origin": "m6_desk 的两个承诺方向分别留下右拳复查或后仓修复积压。",
+    "next_debt_future_window": "下一次旧拳王出场或旧件市返场前必须消费对应维修责任。",
+    "capacity_band": "standard",
+    "capacity_evidence": {
+      "status": "pending_external",
+      "receipt_paths": []
+    },
+    "required_continuity": ["object", "action", "responsibility"],
+    "required_consumption_slots": ["immediate", "conflict", "character", "settlement"],
+    "skip_reasons": {
+      "SIGNAL": "本话的问题来自可触碰的身体和原速录像，不需要再增加版本筛选语法；SIGNAL 继续等待真人认知负担验证。"
+    },
+    "stable_object_bindings": [
+      {
+        "stable_object_id": "OBJ_M6_RIGHT_GLOVE",
+        "mode_bindings": [
+          {"mode": "NARRATIVE", "node_id": "m6_intro", "anchor_id": "m6_intro_jicun"},
+          {"mode": "SPATIAL", "node_id": "m6_workshop", "anchor_id": "inspect_right_glove"},
+          {"mode": "TACTICAL", "node_id": "m6_tactical", "anchor_id": "BIND_M6_RIGHT_GLOVE_TO_FIST"},
+          {"mode": "NARRATIVE", "node_id": "m6_reaction", "anchor_id": "m6_reaction"},
+          {"mode": "DESK", "node_id": "m6_desk", "anchor_id": "EV_M6_RIGHT_FIST_BODY"}
+        ]
+      },
+      {
+        "stable_object_id": "OBJ_M6_SHADOW_TAPE",
+        "mode_bindings": [
+          {"mode": "NARRATIVE", "node_id": "m6_intro", "anchor_id": "m6_intro_jicun"},
+          {"mode": "SPATIAL", "node_id": "m6_workshop", "anchor_id": "inspect_shadow_tape"},
+          {"mode": "TACTICAL", "node_id": "m6_tactical", "anchor_id": "BIND_M6_SHADOW_TAPE_TO_ECHO"},
+          {"mode": "DESK", "node_id": "m6_desk", "anchor_id": "EV_M6_ORIGINAL_SPEED"}
+        ]
+      }
+    ],
+    "consumption_ledger": [
+      {
+        "result_id": "COMMIT_M6_REPAIR_WITHOUT_ERASING_DELAY",
+        "source_node_id": "m6_workshop",
+        "slots": {
+          "immediate": {
+            "consumer_kind": "world_object",
+            "consumer_id": "OBJ_M6_RIGHT_GLOVE",
+            "visible_evidence": "维修提交后右拳的已知身体状态、姿态和可用动作立即改变。"
+          },
+          "conflict": {
+            "consumer_kind": "node",
+            "consumer_id": "m6_tactical",
+            "visible_evidence": "维修方案与漏拍校准共同改变旧拳王、伤员、仓门和救援路线。"
+          },
+          "character": {
+            "consumer_kind": "node",
+            "consumer_id": "m6_reaction",
+            "visible_evidence": "唐胶根据玩家是否保留原速和旧拳王是否停拳，改变维修权限与对纪存的信任。"
+          },
+          "settlement": {
+            "consumer_kind": "commitment_group",
+            "consumer_id": "COMMIT_M6_REPAIR_WITHOUT_ERASING_DELAY",
+            "visible_evidence": "玩家比较母带、身体记录和救援结果后，必须决定先修右拳还是先补后仓。"
+          }
+        }
+      }
+    ],
+    "acceptance_questions": [
+      "这次直播为什么从冠军复活动作变成了仓库救援？",
+      "你在维修棚做的哪项决定改变了战场？",
+      "旧拳王最后为什么没有把那一拳打完？",
+      "唐胶因此改变了对纪存的什么权限或态度？",
+      "结算以后，右拳和后仓之间还有哪一项责任没有完成？"
+    ]
+  },
+  "visible_consumptions": ["spatial_object_and_machine_state", "tactical_setup_patch", "character_relationship_reaction", "desk_settlement"],
+  "production_gates_not_proven": ["capacity_receipt", "windows_runtime", "physical_controller", "external_blind_playtest", "formal_episode_content_acceptance"]
+}

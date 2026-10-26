@@ -1,0 +1,241 @@
+{
+  "investigation_id": "C01E02-FIRELINE-EVIDENCE-THREE-CHAIN",
+  "status": "candidate_runtime_data",
+  "runtime_contract_source": "C01E02_RT004_RT007",
+  "story_source": "DOC_V359_C01E02_STORY_FIRST_V1",
+  "title": "图少了半层",
+  "location": "万机馆L1前厅 / B1入口",
+  "target_minutes": "5-8",
+  "background_path": "res://assets/backgrounds/story_first/bg_c01e02_front_hall_fireline_v01.png",
+  "play_bounds": [48, 112, 860, 548],
+  "player_start": [454, 598],
+  "required_offer_ids": [
+    "inspect_dog_smoke_streamer",
+    "retrieve_diedie_temperature_strip",
+    "trace_double_wall_pipe"
+  ],
+  "required_object_ids": [
+    "OBJ_C01E02_DOG_SMOKE_STREAMER",
+    "OBJ_C01E02_DIEDIE_TEMPERATURE_STRIP",
+    "OBJ_C01E02_DOUBLE_WALL_PIPE"
+  ],
+  "evidence_facts": {
+    "inspect_dog_smoke_streamer": "OLD_LAYER_EVIDENCE_1_OF_3",
+    "retrieve_diedie_temperature_strip": "OLD_LAYER_EVIDENCE_2_OF_3",
+    "trace_double_wall_pipe": "OLD_LAYER_EVIDENCE_3_OF_3"
+  },
+  "spatial_cast": [
+    {
+      "actor_id": "CH_JICUN",
+      "display_name": "纪存",
+      "side": "left",
+      "portrait_path": "res://assets/portraits/portrait_jicun.png",
+      "accent": "58c8d9"
+    },
+    {
+      "actor_id": "CH_QIHAI",
+      "display_name": "七海 / 公务频道",
+      "side": "right",
+      "portrait_path": "res://assets/portraits/portrait_qihai.png",
+      "accent": "d7a43a"
+    },
+    {
+      "actor_id": "CH001",
+      "display_name": "兜灯",
+      "side": "right",
+      "portrait_path": "res://assets/portraits/portrait_doudeng.png",
+      "accent": "65bda7"
+    },
+    {
+      "actor_id": "CH_TANGJIAO",
+      "display_name": "唐胶",
+      "side": "right",
+      "portrait_path": "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png",
+      "asset_status": "candidate_composite_needs_individual_crop",
+      "accent": "d8885e"
+    },
+    {
+      "actor_id": "V353U038",
+      "display_name": "跌跌",
+      "side": "right",
+      "portrait_path": "res://assets/battle_presentation/c01/story_first/sprite_diedie_idle_v01.png",
+      "asset_status": "candidate_sprite_as_dialogue_portrait",
+      "accent": "79c6d5"
+    }
+  ],
+  "stable_objects": [
+    {
+      "stable_object_id": "OBJ_C01E02_DOG_SMOKE_STREAMER",
+      "label": "机器犬的烟流飘带",
+      "position": [224, 432],
+      "interaction_radius": 92,
+      "initial_state": "direction_conflict_unconfirmed",
+      "interaction_offers": [
+        {
+          "offer_id": "inspect_dog_smoke_streamer",
+          "repeat_policy": "once_then_recap",
+          "failure_continuation": {"policy": "remain_in_spatial", "player_feedback": "烟流标还在低处摆动；换一个站位再读，调查不会因此退出。"},
+          "outcome_contract": {"target_id": "OBJ_C01E02_DOG_SMOKE_STREAMER", "state_source": "known_state"},
+          "known_state": "sensor_and_streamer_directions_conflict",
+          "add_tags": ["old_layer_evidence", "smoke_direction"],
+          "state_changes": {"evidence_index": 1, "evidence_confirmed": true},
+          "first_text": "传感器指向西门，烟流飘带却反向指回馆内。",
+          "repeat_text": "传感器仍指西门，飘带仍向馆内；矛盾没有消失。",
+          "first_sequence": [
+            {"beat_id": "e02_dog_01", "speaker": "旁白", "stage_action": "机器犬走向西门，忽然把四足钉在地面", "text": "它的鼻端传感器朝着出口，背上的烟流飘带却反向指回馆内。"},
+            {"beat_id": "e02_dog_02", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "text": "传感器朝哪边？"},
+            {"beat_id": "e02_dog_03", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "西门。"},
+            {"beat_id": "e02_dog_04", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "text": "飘带呢？"},
+            {"beat_id": "e02_dog_05", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "蹲下，把飘带末端压到地面参照线", "text": "往馆里。它们不该相反。"},
+            {"beat_id": "e02_dog_06", "speaker": "旁白", "stage_action": "机器犬向前试半步，低位烟反而更浓", "text": "纪存没有给矛盾命名，只把方向和时间写进公共现场层。"}
+          ],
+          "repeat_sequence": [
+            {"beat_id": "e02_dog_repeat", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "传感器向外，飘带向里。先留着，别让图替现场改答案。"}
+          ]
+        }
+      ]
+    },
+    {
+      "stable_object_id": "OBJ_C01E02_DIEDIE_TEMPERATURE_STRIP",
+      "label": "跌跌带回的双色温度片",
+      "position": [522, 526],
+      "interaction_radius": 94,
+      "initial_state": "strip_not_retrieved",
+      "interaction_offers": [
+        {
+          "offer_id": "retrieve_diedie_temperature_strip",
+          "repeat_policy": "once_then_recap",
+          "failure_continuation": {"policy": "remain_in_spatial", "player_feedback": "跌跌仍压着双色温度片；先从低位绕近，失败不会替玩家读出结果。"},
+          "outcome_contract": {"target_id": "OBJ_C01E02_DIEDIE_TEMPERATURE_STRIP", "state_source": "known_state"},
+          "known_state": "east_cool_west_bleached_by_heat",
+          "add_tags": ["old_layer_evidence", "reverse_heat_direction"],
+          "state_changes": {"evidence_index": 2, "evidence_confirmed": true},
+          "first_text": "跌跌从低位缝里带回温度片：靠东一面冷，靠西一面被烤白。",
+          "repeat_text": "东冷西白；温度片已经留档，不必让跌跌再钻一次。",
+          "first_sequence": [
+            {"beat_id": "e02_strip_01", "speaker": "旁白", "stage_action": "地板缝先伸出一只发热的短臂", "text": "跌跌滚出烟层，把烧卷的双色温度片推到纪存鞋边。"},
+            {"beat_id": "e02_strip_02", "actor_id": "V353U038", "speaker": "跌跌", "text": "拿。烫过。"},
+            {"beat_id": "e02_strip_03", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "只捏住没有卷边的一角", "text": "你从东边钻进去，西边把它烤白了？"},
+            {"beat_id": "e02_strip_04", "actor_id": "V353U038", "speaker": "跌跌", "stage_action": "短臂在地砖上敲一下", "text": "嗯。里面风，往回跑。"},
+            {"beat_id": "e02_strip_05", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "text": "先拍正反面。解释晚十秒。"},
+            {"beat_id": "e02_strip_06", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "终端快门响两次", "text": "已经传了。跌跌，别再进去。"}
+          ],
+          "repeat_sequence": [
+            {"beat_id": "e02_strip_repeat", "speaker": "旁白", "text": "温度片还躺在耐热袋里。跌跌把短臂收回膝边，没有再往缝里钻。"}
+          ]
+        }
+      ]
+    },
+    {
+      "stable_object_id": "OBJ_C01E02_DOUBLE_WALL_PIPE",
+      "label": "墙后的双层旧管",
+      "position": [748, 318],
+      "interaction_radius": 96,
+      "initial_state": "single_pipe_assumed",
+      "interaction_offers": [
+        {
+          "offer_id": "trace_double_wall_pipe",
+          "repeat_policy": "once_then_recap",
+          "failure_continuation": {"policy": "remain_in_spatial", "player_feedback": "敲击回声还没闭合；沿墙脚继续追到旧层接口。"},
+          "outcome_contract": {"target_id": "OBJ_C01E02_DOUBLE_WALL_PIPE", "state_source": "known_state"},
+          "known_state": "double_layer_pipe_confirmed",
+          "add_tags": ["old_layer_evidence", "double_wall_echo", "low_temperature_trace"],
+          "state_changes": {"evidence_index": 3, "evidence_confirmed": true},
+          "first_text": "敲墙回声与低温示踪重合，证明现行图漏掉一层旧管。",
+          "repeat_text": "双层回声与低温线仍重合，不必再烧一次九十秒示踪。",
+          "first_sequence": [
+            {"beat_id": "e02_pipe_01", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "用扳手背点一下墙面", "text": "敲左边。别使劲。"},
+            {"beat_id": "e02_pipe_02", "speaker": "旁白", "stage_action": "纪存照做，墙后回声短促", "text": "唐胶把扳手向右移了十厘米。"},
+            {"beat_id": "e02_pipe_03", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "text": "再敲。"},
+            {"beat_id": "e02_pipe_04", "actor_id": "CH001", "speaker": "兜灯", "stage_action": "拇指停在低温继电按钮上", "text": "示踪只有九十秒。只接这段？"},
+            {"beat_id": "e02_pipe_05", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "只接这段。馆守Z主动力继续硬停。"},
+            {"beat_id": "e02_pipe_06", "speaker": "旁白", "stage_action": "三条蓝色低温线在墙后先后亮起", "text": "第二次回声更低。不是一根旧管，而是两层管叠在一起。"},
+            {"beat_id": "e02_pipe_07", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "text": "图里那根是真的。墙里还有一根。"},
+            {"beat_id": "e02_pipe_08", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "图没错。它少了半层。"},
+            {"beat_id": "e02_pipe_09", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "text": "两张都少。把坐标发我。"}
+          ],
+          "repeat_sequence": [
+            {"beat_id": "e02_pipe_repeat", "actor_id": "CH001", "speaker": "兜灯", "text": "示踪留档了。别再耗那九十秒，接下来把泵接回来。"}
+          ]
+        }
+      ]
+    },
+    {
+      "stable_object_id": "OBJ_C01E02_DOOR_HEAT_WARP",
+      "label": "半开防火门的热变形标",
+      "position": [356, 194],
+      "interaction_radius": 82,
+      "initial_state": "optional_hint",
+      "tactical_skip_reason": "门的翘曲只补足旧层与现行图的物理矛盾；战术层直接读取共同消防图，不把同一门再做一枚任务按钮。",
+      "interaction_offers": [
+        {
+          "offer_id": "review_door_heat_warp",
+          "repeat_policy": "once_then_recap",
+          "failure_continuation": {"policy": "short_recap", "player_feedback": "门仍卡在原位；这条旁证可以稍后再看，不阻断三条主证据。"},
+          "outcome_contract": {"target_id": "OBJ_C01E02_DOOR_HEAT_WARP", "state_source": "known_state"},
+          "known_state": "door_heat_direction_hint_only",
+          "first_text": "门框东侧先弯；它能提示热从哪来，但不能单独证明旧管层。",
+          "repeat_text": "门框仍在变形。它是提示，不是第四份证据。",
+          "first_sequence": [
+            {"beat_id": "e02_door_hint_01", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "东边先弯。记着，别拿它替代墙里的证据。"},
+            {"beat_id": "e02_door_hint_02", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "text": "终于有一次，你没让一块变形塑料负责解释整座馆。"}
+          ],
+          "repeat_sequence": [
+            {"beat_id": "e02_door_hint_repeat", "speaker": "旁白", "text": "热变形刻度又向红区走了一格。"}
+          ]
+        }
+      ]
+    },
+    {
+      "stable_object_id": "OBJ_C01E02_WET_DINNER_BAG",
+      "label": "湿透的晚饭袋",
+      "position": [142, 558],
+      "interaction_radius": 74,
+      "initial_state": "ordinary_object",
+      "tactical_skip_reason": "晚饭袋是人物在火场里仍有普通生活的情绪物件，不转换成战术加成、证物或机关。",
+      "interaction_offers": [
+        {
+          "offer_id": "look_wet_dinner_bag",
+          "repeat_policy": "once_then_recap",
+          "failure_continuation": {"policy": "short_recap", "player_feedback": "袋子还在墙边滴水；不看它也不会卡住撤离调查。"},
+          "outcome_contract": {"target_id": "OBJ_C01E02_WET_DINNER_BAG", "state_source": "known_state"},
+          "known_state": "ordinary_object_not_evidence",
+          "first_text": "袋角还在滴水。没有线索，也没有人有空吃。",
+          "repeat_text": "晚饭仍然只是晚饭。",
+          "first_sequence": [
+            {"beat_id": "e02_bag_01", "speaker": "旁白", "text": "机器犬把袋子放下半秒，又叼起来。纪存没有打开它。"}
+          ],
+          "repeat_sequence": [
+            {"beat_id": "e02_bag_repeat", "speaker": "旁白", "text": "晚饭仍然只是晚饭。"}
+          ]
+        }
+      ]
+    },
+    {
+      "stable_object_id": "OBJ_C01E02_UNNUMBERED_BOLTS",
+      "label": "无编号螺栓盒",
+      "position": [676, 566],
+      "interaction_radius": 74,
+      "initial_state": "ordinary_object",
+      "tactical_skip_reason": "这盒普通螺栓只守住火场的日常尺度，不赋予可攻击目标、谜底或即时战术收益。",
+      "interaction_offers": [
+        {
+          "offer_id": "look_unnumbered_bolts",
+          "repeat_policy": "once_then_recap",
+          "failure_continuation": {"policy": "short_recap", "player_feedback": "它仍只是一盒螺栓；这项可选查看不阻断主调查。"},
+          "outcome_contract": {"target_id": "OBJ_C01E02_UNNUMBERED_BOLTS", "state_source": "known_state"},
+          "known_state": "ordinary_object_not_evidence",
+          "first_text": "一盒常用螺栓，标签被水泡掉。它不是0号门钥匙。",
+          "repeat_text": "还是螺栓。不会因为多看一眼就变成谜底。",
+          "first_sequence": [
+            {"beat_id": "e02_bolts_01", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "普通M12。唐胶，先别骂，盒子不是我泡的。"},
+            {"beat_id": "e02_bolts_02", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "text": "我在救人。账以后算。"}
+          ],
+          "repeat_sequence": [
+            {"beat_id": "e02_bolts_repeat", "speaker": "旁白", "text": "盒里只有螺栓，没有等待被发现的秘密。"}
+          ]
+        }
+      ]
+    }
+  ]
+}

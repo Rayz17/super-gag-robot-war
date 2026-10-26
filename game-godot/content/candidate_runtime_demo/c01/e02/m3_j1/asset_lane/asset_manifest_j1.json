@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "identity": {
+    "joint_contract_id": "C01E02M3J1",
+    "build_id": "C01CDV1-M3-J1-G1-M1A",
+    "rules_profile_id": "c01cdv1_e02_shared_round_m3_j1",
+    "asset_profile_id": "c01cdv1_e02_m3_j1_fixture_lane_v1",
+    "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+    "handoff_scope": "fixture_validation_only",
+    "real_art_handoff": "none",
+    "u2_visual_playtest_ready": false
+  },
+  "fixture_policy": {
+    "resource_root": "res://tests/fixtures/candidate_runtime_demo/m3_j1/assets",
+    "receipt_path": "res://tests/fixtures/candidate_runtime_demo/m3_j1/fixture_exact_handoff_j1.json",
+    "required_fixture_user_approval_id": "FIXTURE-U1-C01E02-M3J1-TEST-ONLY",
+    "required_fixture_producer_handoff_id": "FIXTURE-P1-C01E02-M3J1-TEST-ONLY",
+    "directory_scan_forbidden": true,
+    "real_art_probe_forbidden": true,
+    "denied_path_fragments": [
+      "story_first/",
+      "assets/portraits/",
+      "assets/units/",
+      "battle_presentation/c01/",
+      "frozen-assets/",
+      "approved_runtime_assets_r2/",
+      "producer-a4/",
+      "producer-a5/",
+      "art-a6-character-comms-ui/",
+      "art-a7-round-presentation/"
+    ]
+  },
+  "world_projection": {
+    "canvas_world_origin": [-880, -170],
+    "asset_pixel_formula": "pixel=(880+(x-y)*40,170+(x+y)*20)",
+    "tile_half": [40, 20],
+    "layer_order": ["MAP_BASE", "MAP_BUILDINGS", "WORLD_UNITS", "WORLD_SHIELD", "WORLD_FX", "MAP_ROOFS", "MAP_FOREGROUND"],
+    "occlusion_mask_mode": "sample_only"
+  },
+  "slots": [
+    {"slot_id":"MAP_BASE","stable_id":"ENV_C01_A4_MAP_BASE","usage":"world_layer","media_type":"image","identity_critical":false,"expected":{"dimensions":[2400,1350],"alpha_mode":"opaque","pivot":[0.0,0.0],"safe_rect":[0,0,2400,1350]},"fallback":{"kind":"named_geometry","label":"MAP BASE unavailable"}},
+    {"slot_id":"MAP_BUILDINGS","stable_id":"ENV_C01_A4_MAP_BUILDINGS","usage":"world_layer","media_type":"image","identity_critical":false,"expected":{"dimensions":[2400,1350],"alpha_mode":"required","pivot":[0.0,0.0],"safe_rect":[0,0,2400,1350]},"fallback":{"kind":"named_geometry","label":"BUILDINGS unavailable"}},
+    {"slot_id":"MAP_ROOFS","stable_id":"ENV_C01_A4_MAP_ROOFS","usage":"world_layer","media_type":"image","identity_critical":false,"expected":{"dimensions":[2400,1350],"alpha_mode":"required","pivot":[0.0,0.0],"safe_rect":[0,0,2400,1350]},"fallback":{"kind":"named_geometry","label":"ROOFS unavailable"}},
+    {"slot_id":"MAP_FOREGROUND","stable_id":"ENV_C01_A4_MAP_FOREGROUND","usage":"world_layer","media_type":"image","identity_critical":false,"expected":{"dimensions":[2400,1350],"alpha_mode":"required","pivot":[0.0,0.0],"safe_rect":[0,0,2400,1350]},"fallback":{"kind":"named_geometry","label":"FOREGROUND unavailable"}},
+    {"slot_id":"MAP_OCCLUSION_MASK","stable_id":"ENV_C01_A4_OCCLUSION_MASK","usage":"occlusion_mask","media_type":"image","identity_critical":false,"expected":{"dimensions":[2400,1350],"alpha_mode":"opaque","pivot":[0.0,0.0],"safe_rect":[0,0,2400,1350]},"fallback":{"kind":"no_occlusion_sample","label":"MASK unavailable"}},
+
+    {"slot_id":"SWARM_ATLAS","stable_id":"ENEMY_C01_RIFT_SWARM_MASTER","usage":"world_atlas","media_type":"image","identity_critical":true,"expected":{"dimensions":[384,96],"alpha_mode":"required","pivot":[0.5,1.0],"safe_rect":[0,0,384,96],"atlas":{"frame_size":[96,96],"columns":4,"rows":1,"frame_order":["idle_south","idle_west","idle_north","idle_east"]}},"fallback":{"kind":"identity_schematic","label":"RIFT SWARM unavailable"}},
+    {"slot_id":"GUARDIAN_Z_ATLAS","stable_id":"V353U001","usage":"world_atlas","media_type":"image","identity_critical":true,"expected":{"dimensions":[1280,1024],"alpha_mode":"required","pivot":[0.5,1.0],"safe_rect":[0,0,1280,1024],"atlas":{"frame_size":[256,256],"columns":5,"rows":4,"frame_order":["idle_south","move_south","brace_south","impact_south","recover_south","idle_west","move_west","brace_west","impact_west","recover_west","idle_north","move_north","brace_north","impact_north","recover_north","idle_east","move_east","brace_east","impact_east","recover_east"]}},"fallback":{"kind":"identity_schematic","label":"GUARDIAN Z unavailable"}},
+    {"slot_id":"BREAKER_ATLAS","stable_id":"ENEMY_C01_BREAKER","usage":"world_atlas","media_type":"image","identity_critical":true,"expected":{"dimensions":[960,1280],"alpha_mode":"required","pivot":[0.5,1.0],"safe_rect":[0,0,960,1280],"atlas":{"frame_size":[320,320],"columns":3,"rows":4,"frame_order":["idle_south","charge_south","impact_south","idle_west","charge_west","impact_west","idle_north","charge_north","impact_north","idle_east","charge_east","impact_east"]}},"fallback":{"kind":"identity_schematic","label":"BREAKER unavailable"}},
+    {"slot_id":"EMERGENCY_VEHICLE_ATLAS","stable_id":"TARGET_C01_EMERGENCY_VEHICLE","usage":"world_atlas","media_type":"image","identity_critical":false,"expected":{"dimensions":[512,128],"alpha_mode":"required","pivot":[0.5,1.0],"safe_rect":[0,0,512,128],"atlas":{"frame_size":[128,128],"columns":4,"rows":1,"frame_order":["idle_south","idle_west","idle_north","idle_east"]}},"fallback":{"kind":"named_geometry","label":"EMERGENCY VEHICLE unavailable"}},
+    {"slot_id":"WALL_SHIELD","stable_id":"PROP_C01CDV1_RETIRED_SHIELD_WALL_HUNG","usage":"world_sprite","media_type":"image","identity_critical":true,"expected":{"dimensions":[256,256],"alpha_mode":"required","pivot":[0.5,1.0],"safe_rect":[16,16,224,224]},"fallback":{"kind":"identity_schematic","label":"WALL SHIELD unavailable"}},
+    {"slot_id":"ROUND_FX_ATLAS","stable_id":"FX_C01_M3J1_SHARED_ROUND","usage":"world_atlas","media_type":"image","identity_critical":false,"expected":{"dimensions":[2048,256],"alpha_mode":"required","pivot":[0.5,0.5],"safe_rect":[0,0,2048,256],"atlas":{"frame_size":[256,256],"columns":8,"rows":1,"frame_order":["trail_01","trail_02","deflect_01","deflect_02","contact_01","contact_02","shot_01","shot_02"]}},"fallback":{"kind":"disclosed_fx_fallback","label":"ROUND FX unavailable"}},
+
+    {"slot_id":"PORTRAIT_JICUN","stable_id":"CH_JICUN","usage":"screen_atlas","media_type":"image","identity_critical":true,"expected":{"dimensions":[2304,768],"alpha_mode":"required","pivot":[0.5,1.0],"safe_rect":[0,0,2304,768],"atlas":{"frame_size":[768,768],"columns":3,"rows":1,"frame_order":["observe","tense","resolve"]}},"fallback":{"kind":"identity_frame","label":"纪存 / 导览席 / portrait unavailable"}},
+    {"slot_id":"PORTRAIT_QIHAI","stable_id":"CH_QIHAI","usage":"screen_atlas","media_type":"image","identity_critical":true,"expected":{"dimensions":[2304,768],"alpha_mode":"required","pivot":[0.5,1.0],"safe_rect":[0,0,2304,768],"atlas":{"frame_size":[768,768],"columns":3,"rows":1,"frame_order":["observe","tense","resolve"]}},"fallback":{"kind":"identity_frame","label":"七海 / 远程权限 / portrait unavailable"}},
+    {"slot_id":"PORTRAIT_OLD_GUARDIAN","stable_id":"CH_OLD_GUARDIAN","usage":"screen_atlas","media_type":"image","identity_critical":true,"expected":{"dimensions":[3072,768],"alpha_mode":"required","pivot":[0.5,1.0],"safe_rect":[0,0,3072,768],"atlas":{"frame_size":[1024,768],"columns":3,"rows":1,"frame_order":["lamp_idle","speaker_active","signal_resolve"]}},"fallback":{"kind":"identity_frame","label":"旧守护者 / 馆守Z本体 / portrait unavailable"}},
+    {"slot_id":"PORTRAIT_DOUDENG","stable_id":"CH_DOUDENG","usage":"screen_atlas","media_type":"image","identity_critical":true,"expected":{"dimensions":[1280,640],"alpha_mode":"required","pivot":[0.5,1.0],"safe_rect":[0,0,1280,640],"atlas":{"frame_size":[640,640],"columns":2,"rows":1,"frame_order":["observe","tense"]}},"fallback":{"kind":"identity_frame","label":"兜灯 / portrait unavailable"}},
+    {"slot_id":"CUTIN_GIANT_CONTACT","stable_id":"PRES_C01E02_GIANT_CONTACT","usage":"screen_texture","media_type":"image","identity_critical":true,"expected":{"dimensions":[1600,900],"alpha_mode":"opaque","pivot":[0.5,0.5],"safe_rect":[80,45,1440,810]},"fallback":{"kind":"identity_frame","label":"GIANT CONTACT unavailable"}},
+
+    {"slot_id":"AUDIO_UI_CONFIRM","stable_id":"AUDIO_C01_UI_CONFIRM","usage":"audio_ui","media_type":"audio","identity_critical":false,"expected":{"format":"wav_pcm16","sample_rate":22050,"channels":1,"duration_ms":[180,320]},"fallback":{"kind":"silent_disclosed","label":"UI audio unavailable"}},
+    {"slot_id":"AUDIO_WORLD_CONTACT","stable_id":"AUDIO_C01_WORLD_CONTACT","usage":"audio_world_one_shot","media_type":"audio","identity_critical":false,"expected":{"format":"wav_pcm16","sample_rate":22050,"channels":1,"duration_ms":[280,460]},"fallback":{"kind":"silent_disclosed","label":"world audio unavailable"}},
+    {"slot_id":"AUDIO_AMBIENCE_LOOP","stable_id":"AUDIO_C01_AMBIENCE_LOOP","usage":"audio_ambience_loop","media_type":"audio","identity_critical":false,"expected":{"format":"wav_pcm16","sample_rate":22050,"channels":2,"duration_ms":[900,1200]},"fallback":{"kind":"silent_disclosed","label":"ambience unavailable"}}
+  ]
+}

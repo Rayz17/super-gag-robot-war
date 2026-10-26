@@ -1,0 +1,21 @@
+STYLE LOCK = Astra KINETIC_CEL (must match references):
+- Hard-edge cel color blocks, pressure ink outlines, max two hard shadow tiers
+- Super Robot Wars / 超级系 readable silhouette; half-Q STANDARD readability
+- Gongwu industrial palette: steel teal / concrete beige / warning vermilion
+- NOT photoreal, NOT AAA PBR, NOT wasteland photo rust, NOT alien biotech, NOT ITB grayboard
+- Direction concept sheet: one clear hero view + small state callouts if needed; NOT full turnaround PSD
+Reference images (match stroke weight, cel blocking, palette):
+- style-lock/01-kinetic-cel-storyframe-v23a.png
+- style-lock/11-tactics-user-accepted.png
+- style-lock/02-mech-hero.jpg
+
+ASSET ID F13 | key=hydraulic | template=part
+NAME: 工程液压顶具
+PURPOSE: 共享工具与产物
+DESIGN BRIEF: 活塞、反力座和可收纳接口清楚；顶不动物体时回弹，不能变成刀
+STATES to imply on sheet: 收纳, 伸出, 回弹
+IDENTITY retain: 沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。活塞、反力座和可收纳接口清楚；顶不动物体时回弹，不能变成刀
+PROJECT DESIGN: 从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。
+AVOID: 合体、变形与拆卸不能凭空更换头胸或增减零件；不可从母体单张动作图猜背面。
+CONTEXT: M06：预算二号是低成本维修、撤离、补给机，擅长以廉价替代件完成重要工程。它与城市工务体系相连，预算限制是工作条件，不是纯笑话。
+Output: single art-direction concept painting, clean readable silhouette, labeled states as small insets OK, no fake UI text walls, no photoreal materials.

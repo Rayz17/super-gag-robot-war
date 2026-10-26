@@ -1,0 +1,25 @@
+stable_id	slot_id	state	facing	frame	production_resolution	alias_or_source	continuous_phase_scope	motion_or_hold	clip_key	cross_facing_fallback	missing_clip_allowed	real_pixel_status
+V353U001	guardian_z_map_current	idle	east	0	new_frame		PLAN,T1,T2 hold	hold	idle/east/0	false	false	planned_not_generated
+V353U001	guardian_z_map_current	move	east	0	same_facing_alias_plus_engine_tween	idle/east/0	T3 east route segment	route_tween	move/east/0	false	false	planned_not_generated
+V353U001	guardian_z_map_current	move	north	0	new_frame_plus_engine_tween		T3 north route segment	route_tween	move/north/0	false	false	planned_not_generated
+V353U001	guardian_z_map_current	brace	east	0	new_frame		T3 east settle/anticipation	hold	brace/east/0	false	false	planned_not_generated
+V353U001	guardian_z_map_current	brace	north	0	new_frame		T3 turn bridge	hold	brace/north/0	false	false	planned_not_generated
+V353U001	guardian_z_map_current	brace	south	0	new_frame		T3 contact anticipation	hold	brace/south/0	false	false	planned_not_generated
+V353U001	guardian_z_map_current	contact	south	0	new_frame		T3 contact hit-stop	hit_stop	contact/south/0	false	false	planned_not_generated
+V353U001	guardian_z_map_current	recoil	east	0	new_frame		B T3 post through T5	hold	recoil/east/0	false	false	planned_not_generated
+V353U001	guardian_z_map_current	recoil	south	0	new_frame		A T3 post through T5	hold	recoil/south/0	false	false	planned_not_generated
+ENEMY_C01_BREAKER	breaker_map_current	charge	north	0	new_frame		PLAN,T1,T2 and T3 approach	hold_or_route_tween	charge/north/0	false	false	planned_not_generated
+ENEMY_C01_BREAKER	breaker_map_current	contact	north	0	new_frame		T3 contact	hit_stop	contact/north/0	false	false	planned_not_generated
+ENEMY_C01_BREAKER	breaker_map_current	recoil	north	0	new_frame		T3 post	hold	recoil/north/0	false	false	planned_not_generated
+ENEMY_C01_BREAKER	breaker_map_current	side_hit	north	0	new_frame		T4	hold	side_hit/north/0	false	false	planned_not_generated
+ENEMY_C01_BREAKER	breaker_map_current	red_charge	north	0	new_frame		T5	hold	red_charge/north/0	false	false	planned_not_generated
+TARGET_C01_EMERGENCY_VEHICLE_01	emergency_vehicle_map_current	waiting	east	0	new_frame		PLAN,T1 start	hold	waiting/east/0	false	false	planned_not_generated
+TARGET_C01_EMERGENCY_VEHICLE_01	emergency_vehicle_map_current	drive	east	0	new_frame_plus_engine_tween		T1 route	route_tween	drive/east/0	false	false	planned_not_generated
+TARGET_C01_EMERGENCY_VEHICLE_01	emergency_vehicle_map_current	recoil	east	0	new_frame		T1 embodied consequence	hold	recoil/east/0	false	false	planned_not_generated
+TARGET_C01_EMERGENCY_VEHICLE_01	emergency_vehicle_map_current	passed	east	0	same_facing_alias	waiting/east/0	T1 finish through T5	hold	passed/east/0	false	false	planned_not_generated
+ENEMY_C01_RIFT_SWARM_01	rift_swarm_map_current	idle	west	0	new_current_rect_from_exact_A5	A5 west exact pixels	PLAN,T1,T2 start	hold	idle/west/0	false	false	planned_not_generated
+ENEMY_C01_RIFT_SWARM_01	rift_swarm_map_current	move	west	0	same_facing_alias_plus_engine_tween	idle/west/0	T2 route	route_tween	move/west/0	false	false	planned_not_generated
+ENEMY_C01_RIFT_SWARM_01	rift_swarm_map_current	recoil	west	0	new_frame		T2 embodied consequence	hold	recoil/west/0	false	false	planned_not_generated
+ENEMY_C01_RIFT_SWARM_01	rift_swarm_map_current	deflected	west	0	new_frame		T2 finish through T5	hold	deflected/west/0	false	false	planned_not_generated
+ENEMY_C01_RIFT_SWARM_02	rift_swarm_map_current	idle	north	0	new_current_rect_from_exact_A5	A5 north exact pixels	PLAN through T5 hold	hold	idle/north/0	false	false	planned_not_generated
+ENEMY_C01_RIFT_SWARM_03	rift_swarm_map_current	idle	south	0	new_current_rect_from_exact_A5	A5 south exact pixels	PLAN through T5 hold	hold	idle/south/0	false	false	planned_not_generated

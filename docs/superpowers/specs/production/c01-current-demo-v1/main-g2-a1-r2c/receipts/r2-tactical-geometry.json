@@ -1,0 +1,732 @@
+{
+  "contacts": {
+    "b_settle_east": {
+      "approach_grid_vector": [
+        0.0,
+        -1.0
+      ],
+      "approach_matches_contact_normal": true,
+      "approach_screen_vector_px": [
+        40.0,
+        -20.0
+      ],
+      "breaker_facing_matches_contact_normal": true,
+      "breaker_rect": [
+        20.0,
+        11.0,
+        3,
+        3
+      ],
+      "contact": true,
+      "contact_edge": "guardian_south_to_breaker_north",
+      "contact_normal_grid": [
+        0.0,
+        1.0
+      ],
+      "contact_normal_screen_px": [
+        -40.0,
+        20.0
+      ],
+      "contact_without_gap_or_overlap": true,
+      "guardian_facing_matches_contact_normal": false,
+      "guardian_rect": [
+        19.0,
+        9.0,
+        2,
+        2
+      ],
+      "impact_socket_grid": [
+        20.0,
+        10.5
+      ],
+      "impact_socket_raw_px": [
+        -500.0,
+        440.0
+      ],
+      "impulse_grid_vector": [
+        0.0,
+        -1.0
+      ],
+      "impulse_screen_vector_px": [
+        40.0,
+        -20.0
+      ],
+      "narrative_front_contact_closed": false,
+      "no_footprint_overlap": true,
+      "post_contact_anchor": [
+        19.0,
+        8.5
+      ],
+      "recoil_grid_vector": [
+        0.0,
+        -0.5
+      ],
+      "recoil_screen_vector_px": [
+        20.0,
+        -10.0
+      ],
+      "rectangles_overlap": false,
+      "shared_contact_edge_cells": 1
+    },
+    "staged_a": {
+      "approach_grid_vector": [
+        0.0,
+        -1.0
+      ],
+      "approach_matches_contact_normal": true,
+      "approach_screen_vector_px": [
+        40.0,
+        -20.0
+      ],
+      "breaker_facing_matches_contact_normal": true,
+      "breaker_rect": [
+        20.0,
+        11.0,
+        3,
+        3
+      ],
+      "contact": true,
+      "contact_edge": "guardian_south_to_breaker_north",
+      "contact_normal_grid": [
+        0.0,
+        1.0
+      ],
+      "contact_normal_screen_px": [
+        -40.0,
+        20.0
+      ],
+      "contact_without_gap_or_overlap": true,
+      "guardian_facing_matches_contact_normal": true,
+      "guardian_rect": [
+        20.0,
+        9.0,
+        2,
+        2
+      ],
+      "impact_socket_grid": [
+        20.5,
+        10.5
+      ],
+      "impact_socket_raw_px": [
+        -480.0,
+        450.0
+      ],
+      "impulse_grid_vector": [
+        0.0,
+        -1.0
+      ],
+      "impulse_screen_vector_px": [
+        40.0,
+        -20.0
+      ],
+      "narrative_front_contact_closed": true,
+      "no_footprint_overlap": true,
+      "post_contact_anchor": [
+        20.0,
+        8.5
+      ],
+      "recoil_grid_vector": [
+        0.0,
+        -0.5
+      ],
+      "recoil_screen_vector_px": [
+        20.0,
+        -10.0
+      ],
+      "rectangles_overlap": false,
+      "shared_contact_edge_cells": 2
+    },
+    "staged_b": {
+      "approach_grid_vector": [
+        0.0,
+        -1.0
+      ],
+      "approach_matches_contact_normal": true,
+      "approach_screen_vector_px": [
+        40.0,
+        -20.0
+      ],
+      "breaker_facing_matches_contact_normal": true,
+      "breaker_rect": [
+        20.0,
+        11.0,
+        3,
+        3
+      ],
+      "contact": true,
+      "contact_edge": "guardian_south_to_breaker_north",
+      "contact_normal_grid": [
+        0.0,
+        1.0
+      ],
+      "contact_normal_screen_px": [
+        -40.0,
+        20.0
+      ],
+      "contact_without_gap_or_overlap": true,
+      "guardian_facing_matches_contact_normal": true,
+      "guardian_rect": [
+        19.0,
+        9.0,
+        2,
+        2
+      ],
+      "impact_socket_grid": [
+        20.0,
+        10.5
+      ],
+      "impact_socket_raw_px": [
+        -500.0,
+        440.0
+      ],
+      "impulse_grid_vector": [
+        0.0,
+        -1.0
+      ],
+      "impulse_screen_vector_px": [
+        40.0,
+        -20.0
+      ],
+      "narrative_front_contact_closed": true,
+      "no_footprint_overlap": true,
+      "post_contact_anchor": [
+        19.0,
+        8.5
+      ],
+      "recoil_grid_vector": [
+        0.0,
+        -0.5
+      ],
+      "recoil_screen_vector_px": [
+        20.0,
+        -10.0
+      ],
+      "rectangles_overlap": false,
+      "shared_contact_edge_cells": 1
+    }
+  },
+  "evidence_class": "g2_a1_r2_proxy_geometry_machine_receipt",
+  "footpoints": {
+    "1x1": [
+      -600.0,
+      390.0
+    ],
+    "2x2": [
+      -560.0,
+      450.0
+    ],
+    "3x3": [
+      -520.0,
+      550.0
+    ]
+  },
+  "formal_profile_override": false,
+  "g2_b_allowed": false,
+  "projection": {
+    "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+    "directions": {
+      "east": {
+        "grid_delta": [
+          1,
+          0
+        ],
+        "screen_delta_px": [
+          40.0,
+          20.0
+        ]
+      },
+      "north": {
+        "grid_delta": [
+          0,
+          -1
+        ],
+        "screen_delta_px": [
+          40.0,
+          -20.0
+        ]
+      },
+      "south": {
+        "grid_delta": [
+          0,
+          1
+        ],
+        "screen_delta_px": [
+          -40.0,
+          20.0
+        ]
+      },
+      "west": {
+        "grid_delta": [
+          -1,
+          0
+        ],
+        "screen_delta_px": [
+          -40.0,
+          -20.0
+        ]
+      }
+    },
+    "projection_id": "A4_ISOMETRIC_40X20",
+    "view_space": "map_dimetric_40x20"
+  },
+  "real_art_loaded": 0,
+  "resolver": {
+    "approved_handoffs": [],
+    "camera_contract_guard": "A4_MAP_SPRITE_CAMERA_V1",
+    "directory_scan_used": false,
+    "fixture_count": 11,
+    "identity_critical_fallback_count": 0,
+    "integrated_visual_playtest_ready": false,
+    "manifest_id": "C01E02_G2A1_R2_GEOMETRY_PROXY_V1",
+    "probe_count": 0,
+    "real_art_loaded": 0,
+    "strict_geometry_bindings": true,
+    "view_space_guard": "map_dimetric_40x20"
+  },
+  "route_receipts": {
+    "r1_failure": {
+      "endpoint_settle_separate": true,
+      "final_facing": "west",
+      "segment_facings": [
+        "east",
+        "east",
+        "south"
+      ],
+      "segments": [
+        {
+          "facing": "east",
+          "from": [
+            15.0,
+            11.0
+          ],
+          "grid_delta": [
+            1.0,
+            0.0
+          ],
+          "screen_delta_px": [
+            40.0,
+            20.0
+          ],
+          "segment_index": 0,
+          "to": [
+            16.0,
+            11.0
+          ],
+          "valid_cardinal": true
+        },
+        {
+          "facing": "east",
+          "from": [
+            16.0,
+            11.0
+          ],
+          "grid_delta": [
+            1.0,
+            0.0
+          ],
+          "screen_delta_px": [
+            40.0,
+            20.0
+          ],
+          "segment_index": 1,
+          "to": [
+            17.0,
+            11.0
+          ],
+          "valid_cardinal": true
+        },
+        {
+          "facing": "south",
+          "from": [
+            17.0,
+            11.0
+          ],
+          "grid_delta": [
+            0.0,
+            1.0
+          ],
+          "screen_delta_px": [
+            -40.0,
+            20.0
+          ],
+          "segment_index": 2,
+          "to": [
+            17.0,
+            12.0
+          ],
+          "valid_cardinal": true
+        }
+      ]
+    },
+    "r1_strategy_a": {
+      "endpoint_settle_separate": true,
+      "final_facing": "south",
+      "segment_facings": [
+        "east",
+        "east",
+        "east",
+        "north",
+        "east",
+        "north",
+        "east"
+      ],
+      "segments": [
+        {
+          "facing": "east",
+          "from": [
+            15.0,
+            11.0
+          ],
+          "grid_delta": [
+            1.0,
+            0.0
+          ],
+          "screen_delta_px": [
+            40.0,
+            20.0
+          ],
+          "segment_index": 0,
+          "to": [
+            16.0,
+            11.0
+          ],
+          "valid_cardinal": true
+        },
+        {
+          "facing": "east",
+          "from": [
+            16.0,
+            11.0
+          ],
+          "grid_delta": [
+            1.0,
+            0.0
+          ],
+          "screen_delta_px": [
+            40.0,
+            20.0
+          ],
+          "segment_index": 1,
+          "to": [
+            17.0,
+            11.0
+          ],
+          "valid_cardinal": true
+        },
+        {
+          "facing": "east",
+          "from": [
+            17.0,
+            11.0
+          ],
+          "grid_delta": [
+            1.0,
+            0.0
+          ],
+          "screen_delta_px": [
+            40.0,
+            20.0
+          ],
+          "segment_index": 2,
+          "to": [
+            18.0,
+            11.0
+          ],
+          "valid_cardinal": true
+        },
+        {
+          "facing": "north",
+          "from": [
+            18.0,
+            11.0
+          ],
+          "grid_delta": [
+            0.0,
+            -1.0
+          ],
+          "screen_delta_px": [
+            40.0,
+            -20.0
+          ],
+          "segment_index": 3,
+          "to": [
+            18.0,
+            10.0
+          ],
+          "valid_cardinal": true
+        },
+        {
+          "facing": "east",
+          "from": [
+            18.0,
+            10.0
+          ],
+          "grid_delta": [
+            1.0,
+            0.0
+          ],
+          "screen_delta_px": [
+            40.0,
+            20.0
+          ],
+          "segment_index": 4,
+          "to": [
+            19.0,
+            10.0
+          ],
+          "valid_cardinal": true
+        },
+        {
+          "facing": "north",
+          "from": [
+            19.0,
+            10.0
+          ],
+          "grid_delta": [
+            0.0,
+            -1.0
+          ],
+          "screen_delta_px": [
+            40.0,
+            -20.0
+          ],
+          "segment_index": 5,
+          "to": [
+            19.0,
+            9.0
+          ],
+          "valid_cardinal": true
+        },
+        {
+          "facing": "east",
+          "from": [
+            19.0,
+            9.0
+          ],
+          "grid_delta": [
+            1.0,
+            0.0
+          ],
+          "screen_delta_px": [
+            40.0,
+            20.0
+          ],
+          "segment_index": 6,
+          "to": [
+            20.0,
+            9.0
+          ],
+          "valid_cardinal": true
+        }
+      ]
+    },
+    "r1_strategy_b": {
+      "endpoint_settle_separate": true,
+      "final_facing": "east",
+      "segment_facings": [
+        "north",
+        "east",
+        "east",
+        "east",
+        "east",
+        "north"
+      ],
+      "segments": [
+        {
+          "facing": "north",
+          "from": [
+            15.0,
+            11.0
+          ],
+          "grid_delta": [
+            0.0,
+            -1.0
+          ],
+          "screen_delta_px": [
+            40.0,
+            -20.0
+          ],
+          "segment_index": 0,
+          "to": [
+            15.0,
+            10.0
+          ],
+          "valid_cardinal": true
+        },
+        {
+          "facing": "east",
+          "from": [
+            15.0,
+            10.0
+          ],
+          "grid_delta": [
+            1.0,
+            0.0
+          ],
+          "screen_delta_px": [
+            40.0,
+            20.0
+          ],
+          "segment_index": 1,
+          "to": [
+            16.0,
+            10.0
+          ],
+          "valid_cardinal": true
+        },
+        {
+          "facing": "east",
+          "from": [
+            16.0,
+            10.0
+          ],
+          "grid_delta": [
+            1.0,
+            0.0
+          ],
+          "screen_delta_px": [
+            40.0,
+            20.0
+          ],
+          "segment_index": 2,
+          "to": [
+            17.0,
+            10.0
+          ],
+          "valid_cardinal": true
+        },
+        {
+          "facing": "east",
+          "from": [
+            17.0,
+            10.0
+          ],
+          "grid_delta": [
+            1.0,
+            0.0
+          ],
+          "screen_delta_px": [
+            40.0,
+            20.0
+          ],
+          "segment_index": 3,
+          "to": [
+            18.0,
+            10.0
+          ],
+          "valid_cardinal": true
+        },
+        {
+          "facing": "east",
+          "from": [
+            18.0,
+            10.0
+          ],
+          "grid_delta": [
+            1.0,
+            0.0
+          ],
+          "screen_delta_px": [
+            40.0,
+            20.0
+          ],
+          "segment_index": 4,
+          "to": [
+            19.0,
+            10.0
+          ],
+          "valid_cardinal": true
+        },
+        {
+          "facing": "north",
+          "from": [
+            19.0,
+            10.0
+          ],
+          "grid_delta": [
+            0.0,
+            -1.0
+          ],
+          "screen_delta_px": [
+            40.0,
+            -20.0
+          ],
+          "segment_index": 5,
+          "to": [
+            19.0,
+            9.0
+          ],
+          "valid_cardinal": true
+        }
+      ]
+    }
+  },
+  "sparse_clip": {
+    "active_east": {
+      "alias_signature": "R2-GZ-ACTIVE-IDLE",
+      "available_frame_count": 1,
+      "clip_key": "idle/east/0",
+      "facing": "east",
+      "frame": 0,
+      "rect": [
+        0.0,
+        0.0,
+        256.0,
+        256.0
+      ],
+      "state": "idle",
+      "valid": true
+    },
+    "undeclared_move_west": {
+      "facing": "west",
+      "reason": "sparse_clip_missing",
+      "state": "move",
+      "valid": false
+    }
+  },
+  "strict_binding_guard": {
+    "bad_camera": {
+      "errors": [
+        "camera_contract_rejected:CINEMATIC_CAMERA"
+      ],
+      "reason": "geometry_binding_invalid",
+      "valid": false
+    },
+    "bad_pivot": {
+      "errors": [
+        "pivot_normalized_out_of_range",
+        "pivot_px_out_of_range"
+      ],
+      "reason": "geometry_binding_invalid",
+      "valid": false
+    },
+    "cinematic": {
+      "errors": [
+        "view_space_rejected:cinematic"
+      ],
+      "reason": "geometry_binding_invalid",
+      "valid": false
+    },
+    "cinematic_composite": {
+      "errors": [
+        "view_space_rejected:cinematic_composite"
+      ],
+      "reason": "geometry_binding_invalid",
+      "valid": false
+    },
+    "design_orthographic": {
+      "errors": [
+        "view_space_rejected:design_orthographic"
+      ],
+      "reason": "geometry_binding_invalid",
+      "valid": false
+    },
+    "screen_ui": {
+      "errors": [
+        "view_space_rejected:screen_ui"
+      ],
+      "reason": "geometry_binding_invalid",
+      "valid": false
+    }
+  }
+}

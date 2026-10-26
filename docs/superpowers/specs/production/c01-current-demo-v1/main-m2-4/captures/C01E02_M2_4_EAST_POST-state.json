@@ -1,0 +1,134 @@
+{
+	"actual_camera_center": [
+		830.0,
+		620.0
+	],
+	"asset_render_audit": {
+		"fallback_slots": [
+			"MAP_C01CDV1_R2_STATE_LAYERS",
+			"ENEMY_C01CDV1_RIFT_SWARM_MASTER",
+			"MECHA_C01CDV1_GUARDIAN_Z",
+			"ENEMY_C01CDV1_BREAKER_GROUND",
+			"PROP_C01CDV1_RETIRED_SHIELD_HEAT_DEFORMED"
+		],
+		"map_layers": [
+			"MAP_C01CDV1_R2_BASE",
+			"MAP_C01CDV1_R2_BUILDINGS",
+			"MAP_C01CDV1_R2_ROOFS",
+			"MAP_C01CDV1_R2_FOREGROUND"
+		],
+		"occlusion_mask_alpha": 0.0,
+		"occlusion_mask_sampled": true,
+		"overhead_alpha": 1.0,
+		"overhead_faded_for_selected_unit": false,
+		"selected_unit_occluded": false,
+		"shield_draw_count": 1,
+		"shield_draw_source": "named_geometry_fallback"
+	},
+	"binding_source": "default_active_config",
+	"breaker_weight_state": "first_knockdown",
+	"build_id": "C01CDV1-M2-R2",
+	"camera_source_rect": [
+		1180.0,
+		503.0,
+		900.0,
+		594.0
+	],
+	"capture_id": "EAST_POST",
+	"capture_role": "phase_checkpoint_after_setpiece",
+	"content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+	"fallback_slot_ids": [
+		"ENEMY_C01CDV1_BREAKER_GROUND",
+		"ENEMY_C01CDV1_RIFT_SWARM_MASTER",
+		"MAP_C01CDV1_R2_STATE_LAYERS",
+		"MECHA_C01CDV1_GUARDIAN_Z",
+		"PROP_C01CDV1_RETIRED_SHIELD_HEAT_DEFORMED",
+		"PROP_C01CDV1_RETIRED_SHIELD_HELD_COLD",
+		"PROP_C01CDV1_RETIRED_SHIELD_RED_BLOCKED",
+		"PROP_C01CDV1_RETIRED_SHIELD_WALL_HUNG"
+	],
+	"finisher_ready": true,
+	"finisher_triggered": true,
+	"gameplay_state_mutation_from_asset_lane": false,
+	"loaded_slot_count": 5,
+	"loaded_slot_ids": [
+		"MAP_C01CDV1_R2_BASE",
+		"MAP_C01CDV1_R2_BUILDINGS",
+		"MAP_C01CDV1_R2_FOREGROUND",
+		"MAP_C01CDV1_R2_OCCLUSION_MASK",
+		"MAP_C01CDV1_R2_ROOFS"
+	],
+	"png_sha256": "529c6bf3f29025e305c1d61fc75047a2e0c0a3278631ec9909a644c64935b789",
+	"profile_id": "c01cdv1_e02_scroll_m2_r2",
+	"requested_camera_center": [
+		830.0,
+		620.0
+	],
+	"rescue_lane_state": "cleared",
+	"resource_probe_count": 5,
+	"runtime_art_loaded": true,
+	"save_signature": "a2a1ffc04c59f3d8a2d5a93ba65e445cf19840434f7791a3b4f4d1887f1678a6",
+	"screen_rect": [
+		0,
+		54,
+		900,
+		594
+	],
+	"setpiece_commit_count": 1,
+	"shield_state": "heat_deformed",
+	"state_id": "c01cdv1_e02_phase_checkpoint_p1",
+	"state_signature": "a2f493bd14ef642f6d3034d5c32547a817f8c84a83eb0c882f5014e79c86411c",
+	"swarm_organization_state": "scattered",
+	"swarm_survivor_count": 5,
+	"swarm_survivors": [
+		{
+			"organization_state": "scattered",
+			"position": [
+				17,
+				7
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_01",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				18,
+				7
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_02",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				26,
+				5
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_03",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				29,
+				8
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_05",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				20,
+				10
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_06",
+			"status": "active"
+		}
+	],
+	"tactical_signature": "c01cdv1_e02_scroll_m2_r2|(32, 18)|turn=6|guardian=(21, 9)|breaker=(23, 8):first_knockdown|shield=true:true|rescue=cleared|ENEMY_C01_RIFT_SWARM_01@(17, 7):2|ENEMY_C01_RIFT_SWARM_02@(18, 7):2|ENEMY_C01_RIFT_SWARM_03@(26, 5):2|ENEMY_C01_RIFT_SWARM_05@(29, 8):2|ENEMY_C01_RIFT_SWARM_06@(20, 10):2|TARGET_C01_EAST_EXIT@(31, 4):6:active|TARGET_C01_EMERGENCY_AMBULANCE@(31, 4):1:evacuated|TARGET_C01_EMERGENCY_BRIDGE_TRUCK@(31, 4):4:evacuated|TARGET_C01_SECURITY_GATE@(25, 5):5:active|TARGET_C01_WARNING_RELAY@(19, 7):2:active",
+	"topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+	"turn": 6,
+	"validated_handoff_count": 5
+}

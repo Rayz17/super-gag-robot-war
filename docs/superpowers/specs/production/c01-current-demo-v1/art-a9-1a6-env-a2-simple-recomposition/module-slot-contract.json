@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "task_id": "C01E02_ENV_A2_SIMPLE_2D_RECOMPOSITION",
+  "status": "DISPATCHED_ZERO_GENERATION / SIMPLE_2D_ONLY / CANDIDATE",
+  "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+  "world_canvas": {
+    "size_px": [
+      2400,
+      1350
+    ],
+    "origin_raw_px": [
+      -920,
+      -99
+    ]
+  },
+  "ground_policy": {
+    "method": "Pillow continuous low-frequency base",
+    "pixel_parent": null,
+    "zones": "soft 16-24px transitions",
+    "visible_repeat": false
+  },
+  "shield_support": {
+    "resource_id": "PROP_C01CDV1_RETIRED_SHIELD_SUPPORT_PLINTH",
+    "derived_from": "PROP_C01CDV1_RETIRED_SHIELD alpha bbox",
+    "anchor_unchanged": true
+  },
+  "structures": [
+    {
+      "object_id": "NW_BLOCK",
+      "grid_rect": [
+        1,
+        0,
+        7,
+        5
+      ],
+      "local_canvas_px": [
+        480,
+        378
+      ],
+      "pivot_local_px": [
+        240,
+        378
+      ],
+      "visual_bounds_raw": [
+        -160,
+        -90,
+        480,
+        378
+      ],
+      "front_edge_raw": [
+        80,
+        288
+      ],
+      "world_height_class": "HIGH",
+      "world_height_px": 90,
+      "anchor_changed": false
+    },
+    {
+      "object_id": "NM_BLOCK",
+      "grid_rect": [
+        10,
+        0,
+        5,
+        4
+      ],
+      "local_canvas_px": [
+        360,
+        288
+      ],
+      "pivot_local_px": [
+        180,
+        288
+      ],
+      "visual_bounds_raw": [
+        240,
+        144,
+        360,
+        288
+      ],
+      "front_edge_raw": [
+        420,
+        432
+      ],
+      "world_height_class": "MEDIUM",
+      "world_height_px": 72,
+      "anchor_changed": false
+    },
+    {
+      "object_id": "NE_BLOCK",
+      "grid_rect": [
+        22,
+        0,
+        7,
+        4
+      ],
+      "local_canvas_px": [
+        440,
+        354
+      ],
+      "pivot_local_px": [
+        220,
+        354
+      ],
+      "visual_bounds_raw": [
+        720,
+        414,
+        440,
+        354
+      ],
+      "front_edge_raw": [
+        940,
+        768
+      ],
+      "world_height_class": "HIGH",
+      "world_height_px": 90,
+      "anchor_changed": false
+    },
+    {
+      "object_id": "SW_BLOCK",
+      "grid_rect": [
+        0,
+        15,
+        8,
+        3
+      ],
+      "local_canvas_px": [
+        440,
+        336
+      ],
+      "pivot_local_px": [
+        220,
+        336
+      ],
+      "visual_bounds_raw": [
+        -720,
+        264,
+        440,
+        336
+      ],
+      "front_edge_raw": [
+        -500,
+        600
+      ],
+      "world_height_class": "MEDIUM",
+      "world_height_px": 72,
+      "anchor_changed": false
+    },
+    {
+      "object_id": "SE_BLOCK",
+      "grid_rect": [
+        26,
+        14,
+        6,
+        4
+      ],
+      "local_canvas_px": [
+        400,
+        330
+      ],
+      "pivot_local_px": [
+        200,
+        330
+      ],
+      "visual_bounds_raw": [
+        320,
+        846,
+        400,
+        330
+      ],
+      "front_edge_raw": [
+        520,
+        1176
+      ],
+      "world_height_class": "HIGH",
+      "world_height_px": 90,
+      "anchor_changed": false
+    },
+    {
+      "object_id": "BROKEN_SKYWALK",
+      "grid_rect": [
+        8,
+        5,
+        7,
+        2
+      ],
+      "local_canvas_px": [
+        360,
+        270
+      ],
+      "pivot_local_px": [
+        180,
+        270
+      ],
+      "visual_bounds_raw": [
+        40,
+        234,
+        360,
+        270
+      ],
+      "front_edge_raw": [
+        220,
+        504
+      ],
+      "world_height_class": "LOW",
+      "world_height_px": 54,
+      "anchor_changed": false
+    }
+  ],
+  "state_objects": [
+    {
+      "object_id": "PROP_C01CDV1_RETIRED_SHIELD",
+      "pivot_local_px": [
+        160,
+        244
+      ],
+      "foot_raw": [
+        160,
+        600
+      ],
+      "state": "wall_hung_3_scorches",
+      "anchor_changed": false
+    },
+    {
+      "object_id": "TARGET_C01_EAST_EXIT",
+      "pivot_local_px": [
+        180,
+        286
+      ],
+      "foot_raw": [
+        960,
+        936
+      ],
+      "state": "active_first_round_open",
+      "anchor_changed": false
+    },
+    {
+      "object_id": "TARGET_C01_SECURITY_GATE_ACTIVE",
+      "pivot_local_px": [
+        128,
+        242
+      ],
+      "foot_raw": [
+        760,
+        864
+      ],
+      "state": "active",
+      "anchor_changed": false
+    },
+    {
+      "object_id": "TARGET_C01_SECURITY_GATE_DAMAGED",
+      "pivot_local_px": [
+        128,
+        242
+      ],
+      "foot_raw": [
+        760,
+        864
+      ],
+      "state": "damaged",
+      "anchor_changed": false
+    }
+  ],
+  "imagegen_calls_used": 0,
+  "runtime_allowed": false,
+  "canon_changed": false
+}

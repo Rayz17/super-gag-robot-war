@@ -1,0 +1,211 @@
+{
+  "battle_id": "C02-M6-OLD-BOXER-ARENA-FLIP",
+  "variant_id": "M6-RUNTIME-VALIDATION-V01",
+  "status": "runtime_validation_only",
+  "title": "拳王漏掉一拍 / 擂台翻成仓库",
+  "presentation_manifest_path": "res://assets/battle_presentation/m6/old_boxer/manifest.json",
+  "objective_text": "前半压制百刃；第二回合拳台坍塌后，保护伤员与仓门，并决定最后一拳是否落下。",
+  "start_prompt": "查看红色意图线。旧拳王赢下回合不等于赢下这场事。",
+  "turn_limit": 3,
+  "withdraw_allowed": true,
+  "grid": {
+    "width": 9,
+    "height": 6,
+    "blocked": [[4, 0], [4, 5]]
+  },
+  "units": [
+    {
+      "id": "old_boxer_king",
+      "canon_entity_id": "MECHA_OLD_BOXER_KING",
+      "name": "旧拳王机 / 自己的一拍",
+      "map_token": "拳",
+      "team": "player",
+      "cell": [1, 2],
+      "hp": 24,
+      "en": 12,
+      "move": 3,
+      "weapons": [
+        {"id": "body_jab", "name": "承力刺拳", "power": 6, "min": 1, "max": 1, "hit": 100, "en": 2, "post_move": true},
+        {"id": "missed_beat_guard", "name": "漏拍停拳", "power": 4, "min": 1, "max": 2, "hit": 100, "en": 3, "post_move": true}
+      ]
+    },
+    {
+      "id": "shadow_sparring",
+      "canon_entity_id": "MECHA_SHADOW_SPARRING_MACHINE",
+      "name": "影子陪练机 / 条件保留",
+      "map_token": "影",
+      "team": "player",
+      "cell": [1, 3],
+      "hp": 12,
+      "en": 10,
+      "move": 4,
+      "weapons": [
+        {"id": "echo_guard", "name": "延迟复现", "power": 4, "min": 1, "max": 2, "hit": 95, "en": 2, "post_move": true}
+      ]
+    },
+    {
+      "id": "cargo_leader",
+      "canon_entity_id": "V353U043",
+      "name": "货柜领袖 / 作业变形",
+      "map_token": "撑",
+      "team": "player",
+      "cell": [1, 4],
+      "hp": 18,
+      "en": 14,
+      "move": 3,
+      "weapons": [
+        {"id": "strut_push", "name": "顶撑推进", "power": 5, "min": 1, "max": 2, "hit": 96, "en": 2, "post_move": true}
+      ]
+    },
+    {
+      "id": "bairen_champion",
+      "canon_entity_id": "ENEMY_C02_FULL_ARMOR_CHAMPION_BAIREN",
+      "name": "全装冠军百刃 / 基础版",
+      "map_token": "刃",
+      "team": "enemy",
+      "cell": [6, 2],
+      "hp": 20,
+      "move": 3,
+      "intent_target_id": "injured_worker",
+      "intent_verb": "过量重击",
+      "weapons": []
+    },
+    {
+      "id": "auction_hammer_arm",
+      "canon_entity_id": "ENEMY_AUCTION_HAMMER_ARM",
+      "name": "拍卖锤机械臂",
+      "map_token": "槌",
+      "team": "enemy",
+      "cell": [7, 4],
+      "hp": 9,
+      "move": 2,
+      "intent_target_id": "warehouse_gate",
+      "intent_verb": "落槌封锁",
+      "weapons": []
+    },
+    {
+      "id": "live_camera_drone",
+      "canon_entity_id": "ENEMY_LIVE_CAMERA_DRONE",
+      "name": "直播镜头无人机",
+      "map_token": "镜",
+      "team": "enemy",
+      "cell": [7, 0],
+      "hp": 7,
+      "move": 3,
+      "intent_target_id": "evidence_cache",
+      "intent_verb": "剪辑覆盖",
+      "weapons": []
+    }
+  ],
+  "objectives": [
+    {"id": "injured_worker", "name": "坍塌区伤员", "map_token": "伤", "cell": [4, 2], "integrity": 2, "required": true},
+    {"id": "warehouse_gate", "name": "仓门与撤离口", "map_token": "门", "cell": [8, 5], "integrity": 3, "required": true},
+    {"id": "evidence_cache", "name": "失败录像与回收日志", "map_token": "证", "cell": [8, 0], "integrity": 2, "required": false}
+  ],
+  "mid_events": [
+    {
+      "event_id": "M6-C02-RING-COLLAPSE",
+      "timing": "turn_start",
+      "turn": 2,
+      "message": "第二回合：百刃重击压穿拳台。护栏、拳绳与观众通道翻成仓库救援地形，胜负改为伤员和仓门。",
+      "actions": [
+        {"type": "add_blocked_cell", "cell": [4, 1]},
+        {"type": "add_blocked_cell", "cell": [4, 3]},
+        {"type": "damage_objective", "objective_id": "warehouse_gate", "amount": 1}
+      ],
+      "state_variants": [
+        {
+          "variant_id": "controlled_rescue",
+          "requires_known_objects": ["OBJ_M6_WAREHOUSE_GATE_PANEL", "OBJ_M6_REPAIR_BENCH"],
+          "message": "第二回合：拳台塌向后仓。因为纪存读过仓门警报、唐胶也打开了维修草案，旧拳王没有追击百刃；左膝落地、右拳顶门，撤离口没有再承受坍塌损伤。",
+          "actions_replace": [
+            {"type": "add_blocked_cell", "cell": [4, 1]},
+            {"type": "add_blocked_cell", "cell": [4, 3]}
+          ]
+        },
+        {
+          "variant_id": "exit_warning_known",
+          "requires_known_objects": ["OBJ_M6_WAREHOUSE_GATE_PANEL"],
+          "message": "第二回合：拳台压向后仓。纪存提前认出仓门报警方向，货柜领袖抢出半个身位；撤离口没有再吃坍塌伤害，但旧拳王的承力顺序仍靠临场判断。",
+          "actions_replace": [
+            {"type": "add_blocked_cell", "cell": [4, 1]},
+            {"type": "add_blocked_cell", "cell": [4, 3]}
+          ]
+        }
+      ]
+    }
+  ],
+  "machine_claim_cues": [
+    {
+      "cue_id": "CUE_M6_OLD_BOXER_HOLD_PUNCH",
+      "unit_id": "old_boxer_king",
+      "weapon_id": "missed_beat_guard",
+      "visible_action": "旧拳王主动把右拳停在坠落工人的头顶，以拳面承住碎梁，而不是完成直播要求的冠军重击。"
+    }
+  ],
+  "stable_object_bindings": [
+    {
+      "binding_id": "BIND_M6_RIGHT_GLOVE_TO_FIST",
+      "stable_object_id": "OBJ_M6_RIGHT_GLOVE",
+      "label": "旧拳王右拳护具",
+      "targets": [
+        {"kind": "unit_component", "target_id": "old_boxer_king", "component_id": "right_fist"},
+        {"kind": "weapon", "target_id": "old_boxer_king", "weapon_id": "body_jab"}
+      ]
+    },
+    {
+      "binding_id": "BIND_M6_KNEE_TO_BODY",
+      "stable_object_id": "OBJ_M6_KNEE_BEARING",
+      "label": "左膝旧轴",
+      "targets": [
+        {"kind": "unit_component", "target_id": "old_boxer_king", "component_id": "left_knee"}
+      ]
+    },
+    {
+      "binding_id": "BIND_M6_SHADOW_TAPE_TO_ECHO",
+      "stable_object_id": "OBJ_M6_SHADOW_TAPE",
+      "label": "冠军动作原速录像",
+      "targets": [
+        {"kind": "unit", "target_id": "shadow_sparring"},
+        {"kind": "objective", "target_id": "evidence_cache"}
+      ]
+    },
+    {
+      "binding_id": "BIND_M6_GATE_PANEL_TO_RESCUE",
+      "stable_object_id": "OBJ_M6_WAREHOUSE_GATE_PANEL",
+      "label": "后仓门报警器",
+      "targets": [
+        {"kind": "objective", "target_id": "warehouse_gate"},
+        {"kind": "mid_event", "target_id": "M6-C02-RING-COLLAPSE"},
+        {"kind": "cell", "cell": [8, 5]}
+      ]
+    },
+    {
+      "binding_id": "BIND_M6_TERMINAL_TO_BROADCAST",
+      "stable_object_id": "OBJ_M6_LIVE_TERMINAL",
+      "label": "复活直播终端",
+      "targets": [
+        {"kind": "unit", "target_id": "live_camera_drone"},
+        {"kind": "objective", "target_id": "evidence_cache"}
+      ]
+    },
+    {
+      "binding_id": "BIND_M6_BENCH_TO_PLAN",
+      "stable_object_id": "OBJ_M6_REPAIR_BENCH",
+      "label": "唐胶的零件盘",
+      "targets": [
+        {"kind": "battle_flag", "target_id": "repair_plan"}
+      ]
+    }
+  ],
+  "patch_catalog": {
+    "PATCH_M6_PLAN_PERFECT": {"operations": [{"op": "objective_integrity_delta", "objective_id": "warehouse_gate", "delta": 2}, {"op": "set_flag", "key": "repair_plan", "value": "body_memory_rescue"}]},
+    "PATCH_M6_PLAN_GOOD": {"operations": [{"op": "objective_integrity_delta", "objective_id": "warehouse_gate", "delta": 1}, {"op": "set_flag", "key": "repair_plan", "value": "body_memory"}]},
+    "PATCH_M6_PLAN_CLEAR": {"operations": [{"op": "add_blocked_cells", "cells": [[3, 4]]}, {"op": "set_flag", "key": "repair_plan", "value": "partial"}]},
+    "PATCH_M6_PLAN_FAIL": {"operations": [{"op": "objective_integrity_delta", "objective_id": "warehouse_gate", "delta": -1}, {"op": "set_flag", "key": "repair_plan", "value": "minimum_power"}]},
+    "PATCH_M6_TIMING_PERFECT": {"operations": [{"op": "set_unit_property", "unit_id": "old_boxer_king", "property": "en", "value": 18}, {"op": "objective_integrity_delta", "objective_id": "injured_worker", "delta": 1}]},
+    "PATCH_M6_TIMING_GOOD": {"operations": [{"op": "set_unit_property", "unit_id": "old_boxer_king", "property": "en", "value": 15}, {"op": "set_flag", "key": "missed_beat", "value": "narrow"}]},
+    "PATCH_M6_TIMING_CLEAR": {"operations": [{"op": "set_unit_property", "unit_id": "old_boxer_king", "property": "en", "value": 13}, {"op": "add_blocked_cells", "cells": [[2, 4]]}]},
+    "PATCH_M6_TIMING_FAIL": {"operations": [{"op": "set_unit_property", "unit_id": "old_boxer_king", "property": "en", "value": 10}, {"op": "objective_integrity_delta", "objective_id": "injured_worker", "delta": -1}]}
+  }
+}

@@ -40,7 +40,7 @@ for (const r of records) {
 }
 const meta = JSON.parse(fs.readFileSync(path.join(root, 'review/snapshot-metadata.json'), 'utf8'));
 if (meta.included_files !== records.length || meta.manifest_sha256 !== sha(fs.readFileSync(manifestPath))) errors.push('metadata_manifest_mismatch');
-const navigation = ['README.md', 'AGENTS.md', 'review/01-阅读指南与当前资料.md', 'review/02-外部评审提示词.md', 'review/03-版本分歧与待核问题.md', 'review/04-美术风格与已定资产.md', 'review/art/README.md', 'review/SNAPSHOT.md'];
+const navigation = ['README.md', 'AGENTS.md', 'review/00-总目录.md', 'review/01-阅读指南与当前资料.md', 'review/02-外部评审提示词.md', 'review/03-版本分歧与待核问题.md', 'review/04-美术风格与已定资产.md', 'review/05-全量资产与设定覆盖说明.md', 'review/art/README.md', 'review/library/README.md', 'review/library/SETTINGS.md', 'review/SNAPSHOT.md', ...fs.readdirSync(path.join(root, 'review/library/galleries')).filter(p => p.endsWith('.md')).map(p => 'review/library/galleries/' + p)];
 let navigationLinks = 0;
 for (const relative of navigation) {
   const full = path.join(root, relative), text = fs.readFileSync(full, 'utf8');

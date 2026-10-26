@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "contract_id": "C01E02_CAMERA_V2_SPRITE_SLOT_AND_SOCKET_CONTRACT_V1",
+  "task_id": "G2_A2_C4B_CAMERA_V2_EXACT_INTERFACE_FREEZE",
+  "status": "CAMERA_V2_40X24_CANDIDATE_FIXTURE_AND_A5_COMPATIBILITY_ONLY",
+  "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+  "view_space": "map_dimetric_40x24",
+  "runtime_bindable": false,
+  "real_art_loaded": 0,
+  "slot_order": ["V353U001","ENEMY_C01_BREAKER","TARGET_C01_EMERGENCY_VEHICLE_01","ENEMY_C01_RIFT_SWARM"],
+  "locked_source_contracts": [
+    {"input_id":"TASK111_OBJECTIVE","path":"docs/superpowers/specs/production/c01-current-demo-v1/111-c01e02-g2-a2-c4b-camera-v2-exact-interface-freeze-objective.md","sha256":"7302a78a104533e1f97591cdfe78084ecaecfb181764939ded5c5d262e1f12bb"},
+    {"input_id":"TASK98_ATLAS_SCHEMA","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/atlas-schema-current.json","sha256":"159c0af021c99a8c778692f5b02794e5ec55a476514da55ff55958baa19e8e5d"},
+    {"input_id":"TASK98_SLOT_CONTRACT","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/map-camera-slot-contract.json","sha256":"17e195dcac011be803bd69d893a918830dd838a5aa7a4aedd3e76bab45fb1a24"},
+    {"input_id":"TASK98_SOCKET_CONTRACT","path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/socket-contact-contract.json","sha256":"c954af9b0ac7e5a1ef0e55f95b613367af9ab5ddbaec3fc55f5f4a258e5b8ea5"},
+    {"input_id":"TASK102_REGISTRATION_CORRECTION","path":"docs/superpowers/specs/production/c01-current-demo-v1/102-c01e02-task98-runtime-grid-registration-producer-correction.md","sha256":"e8556f917456da83d933842b9ace9542f5238635d5166a6f5b7adbfad0d62378"},
+    {"input_id":"C3_NEUTRAL_BINDING","path":"game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/c3_neutral_atlas_binding.json","sha256":"60ae9fe302779ace5570f674b379efe55fdc3d50ccd3b93895ce610ff2fcde30"}
+  ],
+  "registration": {
+    "registration_point":"footprint_bottom_center",
+    "sprite_top_left_formula":"footpoint_screen-pivot_px*display_scale",
+    "socket_screen_formula":"footpoint_screen+sockets_local[socket_id]*display_scale",
+    "depth_key_formula":"round(footpoint_screen.y)+z_bias",
+    "required_socket_ids":["body","shield","weapon","impact","target"],
+    "task98_socket_status":"PROVISIONAL_REMEASURE_ON_REAL_ART",
+    "contact_screen_tolerance_px":0.5
+  },
+  "slots": {
+    "V353U001": {
+      "stable_id":"V353U001","slot_id":"guardian_z_map_camera_v2","native_canvas":[256,256],"native_size":[256,256],"atlas_size":[768,768],"pivot_px":[128,224],"display_scale":[1,1],"footprint":[2,2],"z_bias":1,"registration_point":"footprint_bottom_center","filter":"nearest","mipmap":false,
+      "facings":["east","north","south"],"facing_screen_vectors":{"east":[40,24],"north":[40,-24],"south":[-40,24]},
+      "sockets_local":{"body":[0,-74],"shield":[-46,-62],"weapon":[46,-72],"impact":[-20,-10],"target":[-20,-10]},
+      "resource_path":"res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_guardian_z_neutral_768x768.png","sha256":"12196a8b5e66c5b8ebd891ae232361238ce08d3ec56d13a72e216eed4db73988","resource_role":"C3_NEUTRAL_FIXTURE_VALIDATION_ONLY",
+      "regions":{"idle/east/0":[0,0,256,256],"move/north/0":[256,0,256,256],"brace/east/0":[512,0,256,256],"brace/north/0":[0,256,256,256],"brace/south/0":[256,256,256,256],"contact/south/0":[512,256,256,256],"recoil/east/0":[0,512,256,256],"recoil/south/0":[256,512,256,256]}
+    },
+    "ENEMY_C01_BREAKER": {
+      "stable_id":"ENEMY_C01_BREAKER","slot_id":"breaker_map_camera_v2","native_canvas":[384,384],"native_size":[384,384],"atlas_size":[1152,768],"pivot_px":[192,320],"display_scale":[1,1],"footprint":[3,3],"z_bias":2,"registration_point":"footprint_bottom_center","filter":"nearest","mipmap":false,
+      "facings":["north"],"facing_screen_vectors":{"north":[40,-24]},
+      "sockets_local":{"body":[0,-98],"shield":[-68,-84],"weapon":[68,-96],"impact":[12,-18],"target":[12,-18]},
+      "resource_path":"res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_breaker_neutral_1152x768.png","sha256":"debdafd803f9f5c68420726e3b9abf29ab4a2608eecb6a61833fce4fc3407391","resource_role":"C3_NEUTRAL_FIXTURE_VALIDATION_ONLY",
+      "regions":{"charge/north/0":[0,0,384,384],"contact/north/0":[384,0,384,384],"recoil/north/0":[768,0,384,384],"side_hit/north/0":[0,384,384,384],"red_charge/north/0":[384,384,384,384]}
+    },
+    "TARGET_C01_EMERGENCY_VEHICLE_01": {
+      "stable_id":"TARGET_C01_EMERGENCY_VEHICLE_01","slot_id":"emergency_vehicle_map_camera_v2","native_canvas":[128,128],"native_size":[128,128],"atlas_size":[256,256],"pivot_px":[64,96],"display_scale":[1,1],"footprint":[1,1],"z_bias":0,"registration_point":"footprint_bottom_center","filter":"nearest","mipmap":false,
+      "facings":["east"],"facing_screen_vectors":{"east":[40,24]},
+      "sockets_local":{"body":[0,-37],"shield":[-21,-32],"weapon":[23,-36],"impact":[0,-43],"target":[0,-43]},
+      "resource_path":"res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_emergency_vehicle_neutral_256x256.png","sha256":"315db68cdde10d4ac1ba049d393d785c3a401b7e02f4160864aeb39373e342d6","resource_role":"C3_NEUTRAL_FIXTURE_VALIDATION_ONLY",
+      "regions":{"waiting/east/0":[0,0,128,128],"drive/east/0":[128,0,128,128],"recoil/east/0":[0,128,128,128]}
+    },
+    "ENEMY_C01_RIFT_SWARM": {
+      "stable_id":"ENEMY_C01_RIFT_SWARM","slot_id":"rift_swarm_map_camera_v2","native_canvas":[96,96],"native_size":[96,96],"atlas_size":[384,96],"pivot_px":[48,96],"display_scale":[1,1],"footprint":[1,1],"z_bias":0,"registration_point":"footprint_bottom_center","filter":"nearest","mipmap":false,"a5_real_pixel_pivot_reregistered":true,
+      "facings":["north","east","south","west"],"facing_screen_vectors":{"north":[40,-24],"east":[40,24],"south":[-40,24],"west":[-40,-24]},
+      "sockets_local":{"body":[0,-28],"shield":[-16,-24],"weapon":[17,-27],"impact":[0,-32],"target":[0,-32]},
+      "resource_path":"res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a5_rift_swarm/rift-swarm-idle-96.png","source_approval_path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a5-rift-swarm-four-facing-atlas/A5_RIFT_SWARM_A_IDLE_96_384x96.png","sha256":"1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b","resource_role":"EXISTING_APPROVED_A5_COMPATIBILITY_TEST_ONLY",
+      "regions":{"idle/north/0":[0,0,96,96],"idle/east/0":[96,0,96,96],"idle/south/0":[192,0,96,96],"idle/west/0":[288,0,96,96]},
+      "subject_phase_clips":{"ENEMY_C01_RIFT_SWARM_01":{"PLAN":"idle/west/0"},"ENEMY_C01_RIFT_SWARM_02":{"PLAN":"idle/north/0"},"ENEMY_C01_RIFT_SWARM_03":{"PLAN":"idle/south/0"}},
+      "runtime_bindable":false
+    }
+  },
+  "contact_proxy_fixture_binding": {
+    "stable_id":"ENEMY_C01_RIFT_SWARM_CONTACT_PROXY","slot_id":"rift_swarm_neutral_contact_proxy_camera_v2","native_canvas":[96,96],"native_size":[96,96],"atlas_size":[384,192],"pivot_px":[48,72],"display_scale":[1,1],"footprint":[1,1],"z_bias":0,"registration_point":"footprint_bottom_center","filter":"nearest","mipmap":false,
+    "facings":["north","east","south","west"],"facing_screen_vectors":{"north":[40,-24],"east":[40,24],"south":[-40,24],"west":[-40,-24]},
+    "sockets_local":{"body":[0,-28],"shield":[-16,-24],"weapon":[17,-27],"impact":[0,-32],"target":[0,-32]},
+    "resource_path":"res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_rift_swarm_neutral_384x192.png","sha256":"ff96a2b0ee1e02d4941684b1953b51072b969b364f185bfc097bd1cc2f8bc65b","resource_role":"C3_NEUTRAL_CONTACT_FIXTURE_VALIDATION_ONLY",
+    "regions":{"idle/north/0":[0,0,96,96],"idle/east/0":[96,0,96,96],"idle/south/0":[192,0,96,96],"idle/west/0":[288,0,96,96],"recoil/west/0":[0,96,96,96],"deflected/west/0":[96,96,96,96]},
+    "subject_phase_clips":{"ENEMY_C01_RIFT_SWARM_01":{"CONTACT":"deflected/west/0"},"ENEMY_C01_RIFT_SWARM_02":{"CONTACT":"idle/north/0"},"ENEMY_C01_RIFT_SWARM_03":{"CONTACT":"idle/south/0"}},
+    "binding_role":"CONTACT_NEUTRAL_PROXY_FIXTURE_ONLY","formal_camera_v2_slot_pivot_px":[48,96],"active_proxy_pivot_px":[48,72],"contact_proxy_fixture_binding_used":true,
+    "runtime_bindable":false,"fixture_validation_only":true
+  },
+  "a5_plan_compatibility": {
+    "stable_id":"ENEMY_C01_RIFT_SWARM_A5_PLAN","slot_id":"rift_swarm_a5_existing_approved_plan_camera_v2","native_canvas":[96,96],"native_size":[96,96],"atlas_size":[384,96],"pivot_px":[48,96],"display_scale":[1,1],"footprint":[1,1],"z_bias":0,"registration_point":"footprint_bottom_center","filter":"nearest","mipmap":false,"a5_real_pixel_pivot_reregistered":true,
+    "facings":["north","east","south","west"],"facing_screen_vectors":{"north":[40,-24],"east":[40,24],"south":[-40,24],"west":[-40,-24]},
+    "sockets_local":{"body":[0,-28],"shield":[-16,-24],"weapon":[17,-27],"impact":[0,-32],"target":[0,-32]},
+    "resource_path":"res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a5_rift_swarm/rift-swarm-idle-96.png","source_approval_path":"docs/superpowers/specs/production/c01-current-demo-v1/art-a5-rift-swarm-four-facing-atlas/A5_RIFT_SWARM_A_IDLE_96_384x96.png","sha256":"1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b","resource_role":"EXISTING_APPROVED_A5_COMPATIBILITY_TEST_ONLY",
+    "regions":{"idle/north/0":[0,0,96,96],"idle/east/0":[96,0,96,96],"idle/south/0":[192,0,96,96],"idle/west/0":[288,0,96,96]},
+    "subject_phase_clips":{"ENEMY_C01_RIFT_SWARM_01":{"PLAN":"idle/west/0"},"ENEMY_C01_RIFT_SWARM_02":{"PLAN":"idle/north/0"},"ENEMY_C01_RIFT_SWARM_03":{"PLAN":"idle/south/0"}},
+    "compatibility_status":"PENDING_ACTUAL_FRAME_PRODUCER_REVIEW","runtime_bindable":false
+  },
+  "contact_screen_readback": {
+    "A_CONTACT": {
+      "V353U001":{"footpoint":[680,374],"sockets_screen":{"body":[680,300],"shield":[634,312],"weapon":[726,302],"impact":[660,364],"target":[660,364]}},
+      "ENEMY_C01_BREAKER":{"footpoint":[600,470],"sockets_screen":{"body":[600,372],"shield":[532,386],"weapon":[668,374],"impact":[612,452],"target":[612,452]}},
+      "TARGET_C01_EMERGENCY_VEHICLE_01":{"footpoint":[840,422],"sockets_screen":{"body":[840,385],"shield":[819,390],"weapon":[863,386],"impact":[840,379],"target":[840,379]}},
+      "ENEMY_C01_RIFT_SWARM_01":{"footpoint":[760,374],"sockets_screen":{"body":[760,346],"shield":[744,350],"weapon":[777,347],"impact":[760,342],"target":[760,342]}},
+      "ENEMY_C01_RIFT_SWARM_02":{"footpoint":[840,566],"sockets_screen":{"body":[840,538],"shield":[824,542],"weapon":[857,539],"impact":[840,534],"target":[840,534]}},
+      "ENEMY_C01_RIFT_SWARM_03":{"footpoint":[1200,446],"sockets_screen":{"body":[1200,418],"shield":[1184,422],"weapon":[1217,419],"impact":[1200,414],"target":[1200,414]}}
+    },
+    "B_CONTACT": {
+      "V353U001":{"footpoint":[660,362],"sockets_screen":{"body":[660,288],"shield":[614,300],"weapon":[706,290],"impact":[640,352],"target":[640,352]}},
+      "ENEMY_C01_BREAKER":{"footpoint":[620,482],"sockets_screen":{"body":[620,384],"shield":[552,398],"weapon":[688,386],"impact":[632,464],"target":[632,464]}},
+      "TARGET_C01_EMERGENCY_VEHICLE_01":{"footpoint":[860,434],"sockets_screen":{"body":[860,397],"shield":[839,402],"weapon":[883,398],"impact":[860,391],"target":[860,391]}},
+      "ENEMY_C01_RIFT_SWARM_01":{"footpoint":[820,362],"sockets_screen":{"body":[820,334],"shield":[804,338],"weapon":[837,335],"impact":[820,330],"target":[820,330]}},
+      "ENEMY_C01_RIFT_SWARM_02":{"footpoint":[900,602],"sockets_screen":{"body":[900,574],"shield":[884,578],"weapon":[917,575],"impact":[900,570],"target":[900,570]}},
+      "ENEMY_C01_RIFT_SWARM_03":{"footpoint":[1220,506],"sockets_screen":{"body":[1220,478],"shield":[1204,482],"weapon":[1237,479],"impact":[1220,474],"target":[1220,474]}}
+    }
+  },
+  "gates": {"fixture_validation_only":true,"approved_handoffs":[],"new_identity_pixels_loaded":false,"a5_actual_frame_required_for_final_verdict":true,"call03_allowed":false,"runtime_promotion":false}
+}

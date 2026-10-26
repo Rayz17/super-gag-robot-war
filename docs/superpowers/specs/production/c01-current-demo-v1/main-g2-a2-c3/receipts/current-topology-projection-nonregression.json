@@ -1,0 +1,1454 @@
+{
+  "a4_fixture_validation_only": true,
+  "approved_handoffs": [],
+  "artillery_visibility": {
+    "classification": "offscreen_right",
+    "distances_to_edge_px": {
+      "bottom": 242.0,
+      "left": 1320.0,
+      "right": -40.0,
+      "top": 342.0
+    },
+    "edge_band_px": 48.0,
+    "footpoint_screen": [
+      1320.0,
+      400.0
+    ],
+    "inside": false,
+    "map_viewport_rect": [
+      0.0,
+      58.0,
+      1280.0,
+      584.0
+    ]
+  },
+  "camera_groups": {
+    "CONTACT_A": {
+      "camera_profile": "CONTACT_A",
+      "projection": {
+        "active_camera_profile": "CONTACT_A",
+        "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1760.0,
+          -340.0
+        ],
+        "control_points": [
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -880.0,
+              -170.0
+            ],
+            "expected_source_px": [
+              880.0,
+              170.0
+            ],
+            "grid": [
+              0.0,
+              0.0
+            ],
+            "raw_px": [
+              -880.0,
+              -170.0
+            ],
+            "source_px": [
+              880.0,
+              170.0
+            ]
+          },
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -720.0,
+              350.0
+            ],
+            "expected_source_px": [
+              1040.0,
+              690.0
+            ],
+            "grid": [
+              15.0,
+              11.0
+            ],
+            "raw_px": [
+              -720.0,
+              350.0
+            ],
+            "source_px": [
+              1040.0,
+              690.0
+            ]
+          },
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -480.0,
+              450.0
+            ],
+            "expected_source_px": [
+              1280.0,
+              790.0
+            ],
+            "grid": [
+              20.5,
+              10.5
+            ],
+            "raw_px": [
+              -480.0,
+              450.0
+            ],
+            "source_px": [
+              1280.0,
+              790.0
+            ]
+          }
+        ],
+        "crop_formula": "effective_camera - map_size/(2*zoom) - canvas_origin",
+        "derived_crop_rect_px": [
+          640.0,
+          498.0,
+          1280.0,
+          584.0
+        ],
+        "derived_layer_top_left_px": [
+          -640.0,
+          -440.0
+        ],
+        "effective_camera_center_raw_px": [
+          -480.0,
+          450.0
+        ],
+        "errors": [],
+        "formula": "map_rect.center + (raw - effective_camera) * zoom + shake",
+        "layer_formula": "map_rect.center + (canvas_origin - effective_camera) * zoom + shake",
+        "map_viewport_rect": [
+          0.0,
+          58.0,
+          1280.0,
+          584.0
+        ],
+        "projection_origin_raw_px": [
+          -880.0,
+          -170.0
+        ],
+        "shake_px": [
+          0.0,
+          0.0
+        ],
+        "source_formula": "raw - canvas_origin",
+        "tile_half_px": [
+          40.0,
+          20.0
+        ],
+        "valid": true,
+        "view_space": "map_dimetric_40x20",
+        "zoom": 1.0
+      }
+    },
+    "CONTACT_B": {
+      "camera_profile": "CONTACT_B",
+      "projection": {
+        "active_camera_profile": "CONTACT_B",
+        "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1760.0,
+          -340.0
+        ],
+        "control_points": [
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -880.0,
+              -170.0
+            ],
+            "expected_source_px": [
+              880.0,
+              170.0
+            ],
+            "grid": [
+              0.0,
+              0.0
+            ],
+            "raw_px": [
+              -880.0,
+              -170.0
+            ],
+            "source_px": [
+              880.0,
+              170.0
+            ]
+          },
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -720.0,
+              350.0
+            ],
+            "expected_source_px": [
+              1040.0,
+              690.0
+            ],
+            "grid": [
+              15.0,
+              11.0
+            ],
+            "raw_px": [
+              -720.0,
+              350.0
+            ],
+            "source_px": [
+              1040.0,
+              690.0
+            ]
+          },
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -480.0,
+              450.0
+            ],
+            "expected_source_px": [
+              1280.0,
+              790.0
+            ],
+            "grid": [
+              20.5,
+              10.5
+            ],
+            "raw_px": [
+              -480.0,
+              450.0
+            ],
+            "source_px": [
+              1280.0,
+              790.0
+            ]
+          }
+        ],
+        "crop_formula": "effective_camera - map_size/(2*zoom) - canvas_origin",
+        "derived_crop_rect_px": [
+          620.0,
+          488.0,
+          1280.0,
+          584.0
+        ],
+        "derived_layer_top_left_px": [
+          -620.0,
+          -430.0
+        ],
+        "effective_camera_center_raw_px": [
+          -500.0,
+          440.0
+        ],
+        "errors": [],
+        "formula": "map_rect.center + (raw - effective_camera) * zoom + shake",
+        "layer_formula": "map_rect.center + (canvas_origin - effective_camera) * zoom + shake",
+        "map_viewport_rect": [
+          0.0,
+          58.0,
+          1280.0,
+          584.0
+        ],
+        "projection_origin_raw_px": [
+          -880.0,
+          -170.0
+        ],
+        "shake_px": [
+          0.0,
+          0.0
+        ],
+        "source_formula": "raw - canvas_origin",
+        "tile_half_px": [
+          40.0,
+          20.0
+        ],
+        "valid": true,
+        "view_space": "map_dimetric_40x20",
+        "zoom": 1.0
+      }
+    },
+    "PLAN": {
+      "camera_profile": "PUBLIC_PLAN_SUMMARY",
+      "projection": {
+        "active_camera_profile": "PUBLIC_PLAN_SUMMARY",
+        "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1760.0,
+          -340.0
+        ],
+        "control_points": [
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -880.0,
+              -170.0
+            ],
+            "expected_source_px": [
+              880.0,
+              170.0
+            ],
+            "grid": [
+              0.0,
+              0.0
+            ],
+            "raw_px": [
+              -880.0,
+              -170.0
+            ],
+            "source_px": [
+              880.0,
+              170.0
+            ]
+          },
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -720.0,
+              350.0
+            ],
+            "expected_source_px": [
+              1040.0,
+              690.0
+            ],
+            "grid": [
+              15.0,
+              11.0
+            ],
+            "raw_px": [
+              -720.0,
+              350.0
+            ],
+            "source_px": [
+              1040.0,
+              690.0
+            ]
+          },
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -480.0,
+              450.0
+            ],
+            "expected_source_px": [
+              1280.0,
+              790.0
+            ],
+            "grid": [
+              20.5,
+              10.5
+            ],
+            "raw_px": [
+              -480.0,
+              450.0
+            ],
+            "source_px": [
+              1280.0,
+              790.0
+            ]
+          }
+        ],
+        "crop_formula": "effective_camera - map_size/(2*zoom) - canvas_origin",
+        "derived_crop_rect_px": [
+          640.0,
+          468.0,
+          1280.0,
+          584.0
+        ],
+        "derived_layer_top_left_px": [
+          -640.0,
+          -410.0
+        ],
+        "effective_camera_center_raw_px": [
+          -480.0,
+          420.0
+        ],
+        "errors": [],
+        "formula": "map_rect.center + (raw - effective_camera) * zoom + shake",
+        "layer_formula": "map_rect.center + (canvas_origin - effective_camera) * zoom + shake",
+        "map_viewport_rect": [
+          0.0,
+          58.0,
+          1280.0,
+          584.0
+        ],
+        "projection_origin_raw_px": [
+          -880.0,
+          -170.0
+        ],
+        "shake_px": [
+          0.0,
+          0.0
+        ],
+        "source_formula": "raw - canvas_origin",
+        "tile_half_px": [
+          40.0,
+          20.0
+        ],
+        "valid": true,
+        "view_space": "map_dimetric_40x20",
+        "zoom": 1.0
+      }
+    },
+    "PUBLIC": {
+      "camera_profile": "PUBLIC_PLAN_SUMMARY",
+      "projection": {
+        "active_camera_profile": "PUBLIC_PLAN_SUMMARY",
+        "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1760.0,
+          -340.0
+        ],
+        "control_points": [
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -880.0,
+              -170.0
+            ],
+            "expected_source_px": [
+              880.0,
+              170.0
+            ],
+            "grid": [
+              0.0,
+              0.0
+            ],
+            "raw_px": [
+              -880.0,
+              -170.0
+            ],
+            "source_px": [
+              880.0,
+              170.0
+            ]
+          },
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -720.0,
+              350.0
+            ],
+            "expected_source_px": [
+              1040.0,
+              690.0
+            ],
+            "grid": [
+              15.0,
+              11.0
+            ],
+            "raw_px": [
+              -720.0,
+              350.0
+            ],
+            "source_px": [
+              1040.0,
+              690.0
+            ]
+          },
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -480.0,
+              450.0
+            ],
+            "expected_source_px": [
+              1280.0,
+              790.0
+            ],
+            "grid": [
+              20.5,
+              10.5
+            ],
+            "raw_px": [
+              -480.0,
+              450.0
+            ],
+            "source_px": [
+              1280.0,
+              790.0
+            ]
+          }
+        ],
+        "crop_formula": "effective_camera - map_size/(2*zoom) - canvas_origin",
+        "derived_crop_rect_px": [
+          640.0,
+          468.0,
+          1280.0,
+          584.0
+        ],
+        "derived_layer_top_left_px": [
+          -640.0,
+          -410.0
+        ],
+        "effective_camera_center_raw_px": [
+          -480.0,
+          420.0
+        ],
+        "errors": [],
+        "formula": "map_rect.center + (raw - effective_camera) * zoom + shake",
+        "layer_formula": "map_rect.center + (canvas_origin - effective_camera) * zoom + shake",
+        "map_viewport_rect": [
+          0.0,
+          58.0,
+          1280.0,
+          584.0
+        ],
+        "projection_origin_raw_px": [
+          -880.0,
+          -170.0
+        ],
+        "shake_px": [
+          0.0,
+          0.0
+        ],
+        "source_formula": "raw - canvas_origin",
+        "tile_half_px": [
+          40.0,
+          20.0
+        ],
+        "valid": true,
+        "view_space": "map_dimetric_40x20",
+        "zoom": 1.0
+      }
+    },
+    "SUMMARY": {
+      "camera_profile": "PUBLIC_PLAN_SUMMARY",
+      "projection": {
+        "active_camera_profile": "PUBLIC_PLAN_SUMMARY",
+        "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1760.0,
+          -340.0
+        ],
+        "control_points": [
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -880.0,
+              -170.0
+            ],
+            "expected_source_px": [
+              880.0,
+              170.0
+            ],
+            "grid": [
+              0.0,
+              0.0
+            ],
+            "raw_px": [
+              -880.0,
+              -170.0
+            ],
+            "source_px": [
+              880.0,
+              170.0
+            ]
+          },
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -720.0,
+              350.0
+            ],
+            "expected_source_px": [
+              1040.0,
+              690.0
+            ],
+            "grid": [
+              15.0,
+              11.0
+            ],
+            "raw_px": [
+              -720.0,
+              350.0
+            ],
+            "source_px": [
+              1040.0,
+              690.0
+            ]
+          },
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -480.0,
+              450.0
+            ],
+            "expected_source_px": [
+              1280.0,
+              790.0
+            ],
+            "grid": [
+              20.5,
+              10.5
+            ],
+            "raw_px": [
+              -480.0,
+              450.0
+            ],
+            "source_px": [
+              1280.0,
+              790.0
+            ]
+          }
+        ],
+        "crop_formula": "effective_camera - map_size/(2*zoom) - canvas_origin",
+        "derived_crop_rect_px": [
+          640.0,
+          468.0,
+          1280.0,
+          584.0
+        ],
+        "derived_layer_top_left_px": [
+          -640.0,
+          -410.0
+        ],
+        "effective_camera_center_raw_px": [
+          -480.0,
+          420.0
+        ],
+        "errors": [],
+        "formula": "map_rect.center + (raw - effective_camera) * zoom + shake",
+        "layer_formula": "map_rect.center + (canvas_origin - effective_camera) * zoom + shake",
+        "map_viewport_rect": [
+          0.0,
+          58.0,
+          1280.0,
+          584.0
+        ],
+        "projection_origin_raw_px": [
+          -880.0,
+          -170.0
+        ],
+        "shake_px": [
+          0.0,
+          0.0
+        ],
+        "source_formula": "raw - canvas_origin",
+        "tile_half_px": [
+          40.0,
+          20.0
+        ],
+        "valid": true,
+        "view_space": "map_dimetric_40x20",
+        "zoom": 1.0
+      }
+    }
+  },
+  "camera_profiles": {
+    "CONTACT_A": {
+      "active_camera_profile": "CONTACT_A",
+      "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+      "canvas_origin_raw_px": [
+        -1760.0,
+        -340.0
+      ],
+      "control_points": [
+        {
+          "error_px": 0.0,
+          "expected_raw_px": [
+            -880.0,
+            -170.0
+          ],
+          "expected_source_px": [
+            880.0,
+            170.0
+          ],
+          "grid": [
+            0.0,
+            0.0
+          ],
+          "raw_px": [
+            -880.0,
+            -170.0
+          ],
+          "source_px": [
+            880.0,
+            170.0
+          ]
+        },
+        {
+          "error_px": 0.0,
+          "expected_raw_px": [
+            -720.0,
+            350.0
+          ],
+          "expected_source_px": [
+            1040.0,
+            690.0
+          ],
+          "grid": [
+            15.0,
+            11.0
+          ],
+          "raw_px": [
+            -720.0,
+            350.0
+          ],
+          "source_px": [
+            1040.0,
+            690.0
+          ]
+        },
+        {
+          "error_px": 0.0,
+          "expected_raw_px": [
+            -480.0,
+            450.0
+          ],
+          "expected_source_px": [
+            1280.0,
+            790.0
+          ],
+          "grid": [
+            20.5,
+            10.5
+          ],
+          "raw_px": [
+            -480.0,
+            450.0
+          ],
+          "source_px": [
+            1280.0,
+            790.0
+          ]
+        }
+      ],
+      "crop_formula": "effective_camera - map_size/(2*zoom) - canvas_origin",
+      "derived_crop_rect_px": [
+        640.0,
+        498.0,
+        1280.0,
+        584.0
+      ],
+      "derived_layer_top_left_px": [
+        -640.0,
+        -440.0
+      ],
+      "effective_camera_center_raw_px": [
+        -480.0,
+        450.0
+      ],
+      "errors": [],
+      "formula": "map_rect.center + (raw - effective_camera) * zoom + shake",
+      "layer_formula": "map_rect.center + (canvas_origin - effective_camera) * zoom + shake",
+      "map_viewport_rect": [
+        0.0,
+        58.0,
+        1280.0,
+        584.0
+      ],
+      "projection_origin_raw_px": [
+        -880.0,
+        -170.0
+      ],
+      "shake_px": [
+        0.0,
+        0.0
+      ],
+      "source_formula": "raw - canvas_origin",
+      "tile_half_px": [
+        40.0,
+        20.0
+      ],
+      "valid": true,
+      "view_space": "map_dimetric_40x20",
+      "zoom": 1.0
+    },
+    "CONTACT_B": {
+      "active_camera_profile": "CONTACT_B",
+      "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+      "canvas_origin_raw_px": [
+        -1760.0,
+        -340.0
+      ],
+      "control_points": [
+        {
+          "error_px": 0.0,
+          "expected_raw_px": [
+            -880.0,
+            -170.0
+          ],
+          "expected_source_px": [
+            880.0,
+            170.0
+          ],
+          "grid": [
+            0.0,
+            0.0
+          ],
+          "raw_px": [
+            -880.0,
+            -170.0
+          ],
+          "source_px": [
+            880.0,
+            170.0
+          ]
+        },
+        {
+          "error_px": 0.0,
+          "expected_raw_px": [
+            -720.0,
+            350.0
+          ],
+          "expected_source_px": [
+            1040.0,
+            690.0
+          ],
+          "grid": [
+            15.0,
+            11.0
+          ],
+          "raw_px": [
+            -720.0,
+            350.0
+          ],
+          "source_px": [
+            1040.0,
+            690.0
+          ]
+        },
+        {
+          "error_px": 0.0,
+          "expected_raw_px": [
+            -480.0,
+            450.0
+          ],
+          "expected_source_px": [
+            1280.0,
+            790.0
+          ],
+          "grid": [
+            20.5,
+            10.5
+          ],
+          "raw_px": [
+            -480.0,
+            450.0
+          ],
+          "source_px": [
+            1280.0,
+            790.0
+          ]
+        }
+      ],
+      "crop_formula": "effective_camera - map_size/(2*zoom) - canvas_origin",
+      "derived_crop_rect_px": [
+        620.0,
+        488.0,
+        1280.0,
+        584.0
+      ],
+      "derived_layer_top_left_px": [
+        -620.0,
+        -430.0
+      ],
+      "effective_camera_center_raw_px": [
+        -500.0,
+        440.0
+      ],
+      "errors": [],
+      "formula": "map_rect.center + (raw - effective_camera) * zoom + shake",
+      "layer_formula": "map_rect.center + (canvas_origin - effective_camera) * zoom + shake",
+      "map_viewport_rect": [
+        0.0,
+        58.0,
+        1280.0,
+        584.0
+      ],
+      "projection_origin_raw_px": [
+        -880.0,
+        -170.0
+      ],
+      "shake_px": [
+        0.0,
+        0.0
+      ],
+      "source_formula": "raw - canvas_origin",
+      "tile_half_px": [
+        40.0,
+        20.0
+      ],
+      "valid": true,
+      "view_space": "map_dimetric_40x20",
+      "zoom": 1.0
+    },
+    "NO_FOCUS": {
+      "active_camera_profile": "NO_FOCUS",
+      "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+      "canvas_origin_raw_px": [
+        -1760.0,
+        -340.0
+      ],
+      "control_points": [
+        {
+          "error_px": 0.0,
+          "expected_raw_px": [
+            -880.0,
+            -170.0
+          ],
+          "expected_source_px": [
+            880.0,
+            170.0
+          ],
+          "grid": [
+            0.0,
+            0.0
+          ],
+          "raw_px": [
+            -880.0,
+            -170.0
+          ],
+          "source_px": [
+            880.0,
+            170.0
+          ]
+        },
+        {
+          "error_px": 0.0,
+          "expected_raw_px": [
+            -720.0,
+            350.0
+          ],
+          "expected_source_px": [
+            1040.0,
+            690.0
+          ],
+          "grid": [
+            15.0,
+            11.0
+          ],
+          "raw_px": [
+            -720.0,
+            350.0
+          ],
+          "source_px": [
+            1040.0,
+            690.0
+          ]
+        },
+        {
+          "error_px": 0.0,
+          "expected_raw_px": [
+            -480.0,
+            450.0
+          ],
+          "expected_source_px": [
+            1280.0,
+            790.0
+          ],
+          "grid": [
+            20.5,
+            10.5
+          ],
+          "raw_px": [
+            -480.0,
+            450.0
+          ],
+          "source_px": [
+            1280.0,
+            790.0
+          ]
+        }
+      ],
+      "crop_formula": "effective_camera - map_size/(2*zoom) - canvas_origin",
+      "derived_crop_rect_px": [
+        400.0,
+        398.0,
+        1280.0,
+        584.0
+      ],
+      "derived_layer_top_left_px": [
+        -400.0,
+        -340.0
+      ],
+      "effective_camera_center_raw_px": [
+        -720.0,
+        350.0
+      ],
+      "errors": [],
+      "formula": "map_rect.center + (raw - effective_camera) * zoom + shake",
+      "layer_formula": "map_rect.center + (canvas_origin - effective_camera) * zoom + shake",
+      "map_viewport_rect": [
+        0.0,
+        58.0,
+        1280.0,
+        584.0
+      ],
+      "projection_origin_raw_px": [
+        -880.0,
+        -170.0
+      ],
+      "shake_px": [
+        0.0,
+        0.0
+      ],
+      "source_formula": "raw - canvas_origin",
+      "tile_half_px": [
+        40.0,
+        20.0
+      ],
+      "valid": true,
+      "view_space": "map_dimetric_40x20",
+      "zoom": 1.0
+    },
+    "PUBLIC_PLAN_SUMMARY": {
+      "active_camera_profile": "PUBLIC_PLAN_SUMMARY",
+      "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+      "canvas_origin_raw_px": [
+        -1760.0,
+        -340.0
+      ],
+      "control_points": [
+        {
+          "error_px": 0.0,
+          "expected_raw_px": [
+            -880.0,
+            -170.0
+          ],
+          "expected_source_px": [
+            880.0,
+            170.0
+          ],
+          "grid": [
+            0.0,
+            0.0
+          ],
+          "raw_px": [
+            -880.0,
+            -170.0
+          ],
+          "source_px": [
+            880.0,
+            170.0
+          ]
+        },
+        {
+          "error_px": 0.0,
+          "expected_raw_px": [
+            -720.0,
+            350.0
+          ],
+          "expected_source_px": [
+            1040.0,
+            690.0
+          ],
+          "grid": [
+            15.0,
+            11.0
+          ],
+          "raw_px": [
+            -720.0,
+            350.0
+          ],
+          "source_px": [
+            1040.0,
+            690.0
+          ]
+        },
+        {
+          "error_px": 0.0,
+          "expected_raw_px": [
+            -480.0,
+            450.0
+          ],
+          "expected_source_px": [
+            1280.0,
+            790.0
+          ],
+          "grid": [
+            20.5,
+            10.5
+          ],
+          "raw_px": [
+            -480.0,
+            450.0
+          ],
+          "source_px": [
+            1280.0,
+            790.0
+          ]
+        }
+      ],
+      "crop_formula": "effective_camera - map_size/(2*zoom) - canvas_origin",
+      "derived_crop_rect_px": [
+        640.0,
+        468.0,
+        1280.0,
+        584.0
+      ],
+      "derived_layer_top_left_px": [
+        -640.0,
+        -410.0
+      ],
+      "effective_camera_center_raw_px": [
+        -480.0,
+        420.0
+      ],
+      "errors": [],
+      "formula": "map_rect.center + (raw - effective_camera) * zoom + shake",
+      "layer_formula": "map_rect.center + (canvas_origin - effective_camera) * zoom + shake",
+      "map_viewport_rect": [
+        0.0,
+        58.0,
+        1280.0,
+        584.0
+      ],
+      "projection_origin_raw_px": [
+        -880.0,
+        -170.0
+      ],
+      "shake_px": [
+        0.0,
+        0.0
+      ],
+      "source_formula": "raw - canvas_origin",
+      "tile_half_px": [
+        40.0,
+        20.0
+      ],
+      "valid": true,
+      "view_space": "map_dimetric_40x20",
+      "zoom": 1.0
+    }
+  },
+  "canon_modified": false,
+  "copy": {
+    "jicun_line": "人都在后面。把它引到南边去。",
+    "objective": "让应急车通过，挡开扑向东门的小体，并站到冲线前。",
+    "strategy_a": "正面卡位｜本轮热量24｜警戒设施受损｜道路损伤42｜第二轮热量68、余量1",
+    "strategy_a_responsibility": "正面卡位｜本轮热量24｜警戒设施受损｜道路损伤42｜第二轮热量68、余量1",
+    "strategy_b": "先护撤离线、接触前转身｜本轮热量46｜警戒设施保全｜道路损伤24｜第二轮热量88、余量0",
+    "strategy_b_responsibility": "先护撤离线、接触前转身｜本轮热量46｜警戒设施保全｜道路损伤24｜第二轮热量88、余量0",
+    "strategy_copy_source": "same Resolver preview world_result formatter",
+    "timeline": [
+      "应急车",
+      "小体",
+      "巨体接触",
+      "城市炮",
+      "赤红蓄能"
+    ],
+    "top_threats": [
+      "应急车先穿过落脚区",
+      "小体将在第二时点扑向东门",
+      "BREAKER沿直线冲入街区"
+    ]
+  },
+  "default_entry_changed": false,
+  "evidence_class": "g2_a2_c1_single_projection_current_topology_receipt",
+  "footpoints": {
+    "one_by_one": [
+      840.0,
+      360.0
+    ],
+    "three_by_three": [
+      520.0,
+      520.0
+    ],
+    "two_by_two": [
+      400.0,
+      340.0
+    ]
+  },
+  "g2_b_allowed": false,
+  "layer_registry": [
+    "GROUND_BASE_CURRENT",
+    "STRUCTURES_CURRENT",
+    "ROOFS_FOREGROUND_CURRENT",
+    "OCCLUSION_CONTROL_CURRENT",
+    "STATIC_LIGHT_WEATHER_CURRENT",
+    "DYNAMIC_WORLD_OBJECTS"
+  ],
+  "projection": {
+    "active_camera_profile": "PUBLIC_PLAN_SUMMARY",
+    "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+    "canvas_origin_raw_px": [
+      -1760.0,
+      -340.0
+    ],
+    "control_points": [
+      {
+        "error_px": 0.0,
+        "expected_raw_px": [
+          -880.0,
+          -170.0
+        ],
+        "expected_source_px": [
+          880.0,
+          170.0
+        ],
+        "grid": [
+          0.0,
+          0.0
+        ],
+        "raw_px": [
+          -880.0,
+          -170.0
+        ],
+        "source_px": [
+          880.0,
+          170.0
+        ]
+      },
+      {
+        "error_px": 0.0,
+        "expected_raw_px": [
+          -720.0,
+          350.0
+        ],
+        "expected_source_px": [
+          1040.0,
+          690.0
+        ],
+        "grid": [
+          15.0,
+          11.0
+        ],
+        "raw_px": [
+          -720.0,
+          350.0
+        ],
+        "source_px": [
+          1040.0,
+          690.0
+        ]
+      },
+      {
+        "error_px": 0.0,
+        "expected_raw_px": [
+          -480.0,
+          450.0
+        ],
+        "expected_source_px": [
+          1280.0,
+          790.0
+        ],
+        "grid": [
+          20.5,
+          10.5
+        ],
+        "raw_px": [
+          -480.0,
+          450.0
+        ],
+        "source_px": [
+          1280.0,
+          790.0
+        ]
+      }
+    ],
+    "crop_formula": "effective_camera - map_size/(2*zoom) - canvas_origin",
+    "derived_crop_rect_px": [
+      640.0,
+      468.0,
+      1280.0,
+      584.0
+    ],
+    "derived_layer_top_left_px": [
+      -640.0,
+      -410.0
+    ],
+    "effective_camera_center_raw_px": [
+      -480.0,
+      420.0
+    ],
+    "errors": [],
+    "formula": "map_rect.center + (raw - effective_camera) * zoom + shake",
+    "layer_formula": "map_rect.center + (canvas_origin - effective_camera) * zoom + shake",
+    "map_viewport_rect": [
+      0.0,
+      58.0,
+      1280.0,
+      584.0
+    ],
+    "projection_origin_raw_px": [
+      -880.0,
+      -170.0
+    ],
+    "shake_px": [
+      0.0,
+      0.0
+    ],
+    "source_formula": "raw - canvas_origin",
+    "tile_half_px": [
+      40.0,
+      20.0
+    ],
+    "valid": true,
+    "view_space": "map_dimetric_40x20",
+    "zoom": 1.0
+  },
+  "real_art_loaded": 0,
+  "runtime_promotion": false,
+  "save_enabled": false,
+  "subject_visibility": {
+    "ENEMY_C01_BREAKER": {
+      "classification": "onscreen",
+      "distances_to_edge_px": {
+        "bottom": 122.0,
+        "left": 520.0,
+        "right": 760.0,
+        "top": 462.0
+      },
+      "edge_band_px": 48.0,
+      "footpoint_screen": [
+        520.0,
+        520.0
+      ],
+      "inside": true,
+      "map_viewport_rect": [
+        0.0,
+        58.0,
+        1280.0,
+        584.0
+      ]
+    },
+    "ENEMY_C01_RIFT_SWARM_01": {
+      "classification": "onscreen",
+      "distances_to_edge_px": {
+        "bottom": 282.0,
+        "left": 840.0,
+        "right": 440.0,
+        "top": 302.0
+      },
+      "edge_band_px": 48.0,
+      "footpoint_screen": [
+        840.0,
+        360.0
+      ],
+      "inside": true,
+      "map_viewport_rect": [
+        0.0,
+        58.0,
+        1280.0,
+        584.0
+      ]
+    },
+    "ENEMY_C01_RIFT_SWARM_02": {
+      "classification": "onscreen",
+      "distances_to_edge_px": {
+        "bottom": 102.0,
+        "left": 800.0,
+        "right": 480.0,
+        "top": 482.0
+      },
+      "edge_band_px": 48.0,
+      "footpoint_screen": [
+        800.0,
+        540.0
+      ],
+      "inside": true,
+      "map_viewport_rect": [
+        0.0,
+        58.0,
+        1280.0,
+        584.0
+      ]
+    },
+    "ENEMY_C01_RIFT_SWARM_03": {
+      "classification": "onscreen",
+      "distances_to_edge_px": {
+        "bottom": 182.0,
+        "left": 1200.0,
+        "right": 80.0,
+        "top": 402.0
+      },
+      "edge_band_px": 48.0,
+      "footpoint_screen": [
+        1200.0,
+        460.0
+      ],
+      "inside": true,
+      "map_viewport_rect": [
+        0.0,
+        58.0,
+        1280.0,
+        584.0
+      ]
+    },
+    "TARGET_C01_EAST_EXIT": {
+      "classification": "onscreen",
+      "distances_to_edge_px": {
+        "bottom": 102.0,
+        "left": 1200.0,
+        "right": 80.0,
+        "top": 482.0
+      },
+      "edge_band_px": 48.0,
+      "footpoint_screen": [
+        1200.0,
+        540.0
+      ],
+      "inside": true,
+      "map_viewport_rect": [
+        0.0,
+        58.0,
+        1280.0,
+        584.0
+      ]
+    },
+    "TARGET_C01_EMERGENCY_VEHICLE_01": {
+      "classification": "onscreen",
+      "distances_to_edge_px": {
+        "bottom": 322.0,
+        "left": 520.0,
+        "right": 760.0,
+        "top": 262.0
+      },
+      "edge_band_px": 48.0,
+      "footpoint_screen": [
+        520.0,
+        320.0
+      ],
+      "inside": true,
+      "map_viewport_rect": [
+        0.0,
+        58.0,
+        1280.0,
+        584.0
+      ]
+    },
+    "TARGET_C01_SECURITY_GATE": {
+      "classification": "onscreen",
+      "distances_to_edge_px": {
+        "bottom": 162.0,
+        "left": 1000.0,
+        "right": 280.0,
+        "top": 422.0
+      },
+      "edge_band_px": 48.0,
+      "footpoint_screen": [
+        1000.0,
+        480.0
+      ],
+      "inside": true,
+      "map_viewport_rect": [
+        0.0,
+        58.0,
+        1280.0,
+        584.0
+      ]
+    },
+    "V353U001": {
+      "classification": "onscreen",
+      "distances_to_edge_px": {
+        "bottom": 302.0,
+        "left": 400.0,
+        "right": 880.0,
+        "top": 282.0
+      },
+      "edge_band_px": 48.0,
+      "footpoint_screen": [
+        400.0,
+        340.0
+      ],
+      "inside": true,
+      "map_viewport_rect": [
+        0.0,
+        58.0,
+        1280.0,
+        584.0
+      ]
+    }
+  }
+}

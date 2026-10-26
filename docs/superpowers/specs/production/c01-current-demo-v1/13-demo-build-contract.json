@@ -1,0 +1,89 @@
+{
+  "contract_id": "C01CDV1-G1",
+  "contract_version": "1.0.0",
+  "snapshot_ref": "fe7a0764d11f5ac5f9d11accb7398df664132b0b",
+  "hash_algorithm": "sha256",
+  "fingerprint_algorithm": "sha256_utf8_lf_v1",
+  "fingerprint_payload_order": [
+    "contract_id=<value>",
+    "contract_version=<value>",
+    "snapshot_ref=<value>",
+    "d0=gameplay_finisher|confirm_shield_bash|finisher_triggered=true|confirmed_gameplay_finisher|breaker_destroyed=false",
+    "for each semantic_files entry in listed order: <path>\\t<sha256>",
+    "one LF after every line including the final line"
+  ],
+  "source_manifest": {
+    "path": "docs/superpowers/specs/production/c01-current-demo-v1/09-frozen-source-snapshot.tsv",
+    "entry_count": 18
+  },
+  "visual_manifest": {
+    "path": "docs/superpowers/specs/production/c01-current-demo-v1/09b-frozen-visual-snapshot.tsv",
+    "entry_count": 7
+  },
+  "d0": {
+    "outcome": "gameplay_finisher",
+    "required_input": "confirm_shield_bash",
+    "trigger_state": "finisher_triggered=true",
+    "knockdown_state": "confirmed_gameplay_finisher",
+    "breaker_destroyed": false
+  },
+  "semantic_files": [
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/00-demo-source-authorization.md",
+      "sha256": "4b13e04b45fbc3c5d5f8c770c7a5921044cde5c9238ca91aabd571101e97e6ab"
+    },
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/01-source-lock.tsv",
+      "sha256": "0b5edbd8a7472d6a6c0ef3ce3e70efb858d715855721f5d44a858dc82189dc2d"
+    },
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/02-e02-s01-s07-beat-runtime-map.tsv",
+      "sha256": "cb7c74b80af20f339ecea63b1cb11e13162abb1ef257bbf575f79a2e28b34584"
+    },
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/03-e02-duration-interaction-budget.tsv",
+      "sha256": "4ca90cc18cbefa53936bb17e37b2dcccd13fcaead6dee697eed09d64c5e40df8"
+    },
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/04-e02-previs-v0.1.md",
+      "sha256": "ca601618c484250c2db5bf6677cb122715476e08561e8229f4fa5f8881192640"
+    },
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/05-e02-asset-call-matrix.tsv",
+      "sha256": "d4b1db2ab9c93129329ae86860e25e66a42f992593ed8bd1d9d1dc480e23f267"
+    },
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/06-e02-state-checkpoint-contract.tsv",
+      "sha256": "c1450b64d941b9ee513d3a0800b712eac522a726217c759e07a773813b333bbf"
+    },
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/07-legacy-denylist.tsv",
+      "sha256": "53eac4ef1b0c4b9a8d173c8392daa58510a31b4bda3290fd0be9942e61a5c920"
+    },
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/08-g1-user-decision-card.md",
+      "sha256": "52d6486d17f81b9914231f402f726106b2fa8cf67264650b15c2e0db5fe2e36b"
+    },
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/09-frozen-source-snapshot.tsv",
+      "sha256": "5d37ad8c5639ae41f01f856097656caa378598c13ce3278d17876803412808d4"
+    },
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/09b-frozen-visual-snapshot.tsv",
+      "sha256": "4eec352ef11b7f6706559c2d7f3285136dba6781e4892066718696795dd89713"
+    },
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/10-cross-session-coordination.md",
+      "sha256": "2440f94bc880e89990d9825b51bcb7d476b106db8a4ffe1ae740dccff063d82d"
+    },
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/11-g1-art-session-objective.md",
+      "sha256": "0674623f4e7e09be0a6ac05da86028c844644318be9fb3866edaf1c80307f996"
+    },
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/12-g1-main-program-objective.md",
+      "sha256": "1b382a01577641bcf9d180c3538f85304d6a57ed77a64224435ef74058e05d37"
+    }
+  ],
+  "content_fingerprint": "944febc74eecb05f7b7c163728910befb2dc9a210a971c3d71526841e3d5af94"
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-19",
+  "generation_mode": "built-in image_gen",
+  "user_correction": "中间三根天线可以长点",
+  "source_images": [
+    "samples/M05-head-five-crown-r3.png"
+  ],
+  "prompt": "Use case: precise-object-edit\nEdit only the five golden crown blades of this exact King head to apply the user's latest correction: the MIDDLE THREE blades should be LONGER.\nKeep the exact same frontal symmetrical face, navy helmet, warm ivory eyes, ivory angular jaw, gold cheek frames, crimson chin, neck and drawing style. Do not redesign any face feature.\nKeep the OUTERMOST LEFT and OUTERMOST RIGHT blades exactly the same shape, roots, width and direction as now.\nLengthen the CENTRAL vertical blade and the two INNER diagonal blades by about 25 percent along their existing straight axes, measured from their fixed roots. The inner pair must remain exactly mirrored. Keep all blade widths, roots and crown-band positions unchanged. EXACTLY FIVE total crown blades: three long in the middle, two shorter outside. No extra tips.\nExpand the portrait canvas upward as needed, preserving the skull and face's real shape and existing size; do not flatten, squish or shrink the face to fit. Leave clear transparent air around all five tips. One head only, perfectly frontal, true transparent background. Same clean KINETIC CEL painted-armor illustration, no text, no extra views.",
+  "output": "samples/M05-head-three-long-r3b.png",
+  "transparent_background": true,
+  "source_refs": [
+    {
+      "file": "samples/M05-head-five-crown-r3.png",
+      "sha256": "3d11d6007484d53f2df6f44d52daf7aa4929118fe2e8c0b8e880e15e5197b150"
+    }
+  ]
+}

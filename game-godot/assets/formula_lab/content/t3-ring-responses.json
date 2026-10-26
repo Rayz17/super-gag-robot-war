@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "scope": "formula_lab_candidate",
+  "source": "artifacts/formulas/visual-targets-v1/narrative/t3-ring-voices-v1.md",
+  "rules": [
+    {"id":"finisher_received","event_kind":"unit_hit","actor_id":"fx_student","target_id":"fx_master","action_id":"first_finisher","min_amount":1,"lines":[{"speaker_id":"fx_master","text":"行。这一拳我认。"},{"speaker_id":"fx_student","text":"……那我能先坐会儿吗？","hp_at_most":4}]},
+    {"id":"ring_out_ropes_down","event_kind":"ring_out","actor_id":"fx_student","target_id":"fx_master","objective_id":"fx_ring_rope","integrity_at_most":0,"lines":[{"speaker_id":"fx_master","text":"赢了。现在帮我把绳子捡回来。","allow_ring_out_comms":true},{"speaker_id":"fx_student","text":"……一起？"}]},
+    {"id":"ring_out_ropes_intact","event_kind":"ring_out","actor_id":"fx_student","target_id":"fx_master","objective_id":"fx_ring_rope","integrity_above":0,"lines":[{"speaker_id":"fx_student","text":"这回算我赢！"},{"speaker_id":"fx_master","text":"算。下次我可记着了。","allow_ring_out_comms":true}]},
+    {"id":"first_actual_hit","event_kind":"unit_hit","actor_id":"fx_master","target_id":"fx_student","min_amount":1,"lines":[{"speaker_id":"fx_student","text":"嘶……您还真打啊。"},{"speaker_id":"fx_master","text":"你自己说的，别让。"}]},
+    {"id":"first_actual_push","event_kind":"pushed","actor_id":"fx_student","target_id":"fx_master","lines":[{"speaker_id":"fx_master","text":"等会儿，你怎么一直挤我？"},{"speaker_id":"fx_student","text":"您这不是也没让路嘛。"}]},
+    {"id":"first_finisher_windup","event_kind":"action_windup","actor_id":"fx_student","action_id":"first_finisher","lines":[{"speaker_id":"fx_student","text":"这回，您接好了！"}]}
+  ]
+}

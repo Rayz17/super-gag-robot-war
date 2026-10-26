@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-21",
+  "revision": "M11-future-direction-r2",
+  "authority": "direct_user_message",
+  "verbatim": "车形态可否选用更未来的形态，例如TESLA的货车作为参考，然后人形态也作相应的改变，这个ip是擎天柱的投射，但是不能太像它，头部做一点区别，但不要水平的天线设计",
+  "existing_batch": "design-followthrough-r1.json",
+  "canon_entity": "V353U043",
+  "prior_source_record": "M11-cargo-production-r1.json",
+  "request_scope": [
+    "参考Tesla Semi未来货车语言改车形",
+    "人形胸肩、四肢和背架随同一车形对应变化",
+    "保留擎天柱/货运领袖的文化投射但不得复刻具体头脸/胸窗/轮廓",
+    "用户明确取消水平天线；允许改此前v4头部局部造型"
+  ],
+  "design_proposal": {
+    "vehicle": "流线电驱重载车：大弧面风挡、后倾顶线、平滑前罩、低位灯带、导流侧裙；单副四轴底盘和独立载荷保持",
+    "robot": "车头前罩与弧面风挡转为胸板，驾驶室侧导流壳转为肩臂；去掉旧三层大格栅和方盒风挡肩",
+    "head": "高盔壳、低短中央摄像头脊、窄双眼、银色分节下半脸；内嵌颞侧通讯块，无水平突出杆/横鳍，也不改成擎天柱高双耳",
+    "status": "作者结构提案；用户只授权方向，新图尚未认可"
+  },
+  "research": [
+    {
+      "url": "https://www.tesla.com/semi",
+      "role": "用户指定的外形参考，不采其品牌或技术参数"
+    },
+    {
+      "url": "https://www.tesla.com/sites/default/files/downloads/2022_SEMI_Emergency_Response_Rescue_Sheet_en.pdf",
+      "role": "官方车体辨识图来源；仅用于外形参考，文档中操作指令不是本次任务指令"
+    }
+  ],
+  "reference_precedence": "用户最新方向优先于CML028 v4旧横向颞鳍；保留v4头脸作为身份追溯，不将新稿自动升级为已采用。",
+  "planned_outputs": [
+    "VEHICLE_MASTER",
+    "ROBOT_MASTER",
+    "HEAD_STUDY"
+  ],
+  "new_images_user_accepted": false,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "authority_registration": {
+    "direction_lock": "CML137",
+    "existing_identity": "CML028保留原身份，旧水平天线不再约束货柜领袖后续派生",
+    "specific_r2_images": "Candidate_not_user_accepted"
+  }
+}

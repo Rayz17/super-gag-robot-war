@@ -1,0 +1,212 @@
+{
+  "date": "2026-10-21",
+  "revision": "M11-cargo-production-r1",
+  "asset": "货柜领袖双形态与机器人正侧背",
+  "canon_entity": "V353U043",
+  "generation_mode": "built-in image_gen",
+  "intent": "generate_from_references_and_derive_views",
+  "existing_batch": "design-followthrough-r1.json",
+  "direction_record": "M11-cargo-direction-r1.json",
+  "reader": "M11-cargo-r1.html",
+  "items": [
+    {
+      "id": "FRONT",
+      "file": "samples/M11-robot-front-r1.png",
+      "sha256": "f60fc012b13dad7e8efe6f5f672257f515bc4d48b21137fa774a85dc47a8120c",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "background": "opaque_warm_white",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-9bff9183-c916-47fd-8e41-7ddf4307e87e.png",
+      "role": "正面：v4头部、驾驶室格栅胸、风挡肩壳",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "SIDE",
+      "file": "samples/M11-robot-side-r1b.png",
+      "sha256": "5659dbb2a037dfcd0b7aac4da0e1569493d1472eb2be83447808046980832a92",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "background": "opaque_warm_white",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-eb3c450e-e364-4e65-8b12-78d789469386.png",
+      "role": "左侧：收正斜角，四个公路轮位和小踝轴分开",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "REAR",
+      "file": "samples/M11-robot-rear-r1b.png",
+      "sha256": "a05ca29be2e4f6a327cb5e70fdb0ef878dc45dbec1b9dbbc7c07800f863f78d4",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "background": "opaque_warm_white",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-5bc230fa-9e7d-46cb-b867-3c75a7655c8c.png",
+      "role": "背面：轮胎胎面朝观察者，浅折叠货台骨架",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "VEHICLE",
+      "file": "samples/M11-cargo-truck-r1.png",
+      "sha256": "36d778b7108173f1021a219fa6b7b2cea7d7d2ce8379dda871c3423efbd17fee",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "background": "opaque_warm_white",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-afecf00e-ea3e-4c18-8e55-fdb58c1eee1e.png",
+      "role": "车形：四轴刚性底盘、单个独立货柜、对应风挡格栅",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    }
+  ],
+  "source_refs": [
+    {
+      "file": ".superpowers/brainstorm/37837-1782033239/content/mecha_r18_cargo_leader_face_v4.png",
+      "path_base": "project_root",
+      "role": "CML028固定头部身份：额头摄像头、青色双眼、分节面甲、短横向颞鳍",
+      "sha256": "e397b0ec0fbce5e2e80fb8b7e2ba181a37633950075a8634017388c71f660061"
+    },
+    {
+      "file": "captures/20261014-full-direction/review/20261016-r3-wave3/images/350e62d2c9dfa371de4a74a8fe4c7ed7579c14f9b85a760b6774886300904146.jpg",
+      "path_base": "project_root",
+      "role": "当前宽厚白蓝橙货运躯体和车辆外形参考，不采旧通用头脸与错误三轴标注",
+      "sha256": "350e62d2c9dfa371de4a74a8fe4c7ed7579c14f9b85a760b6774886300904146"
+    }
+  ],
+  "prompt_index": "M11-cargo-prompts-r1.json",
+  "prompts": [
+    "M11-front-prompt-r1.json",
+    "M11-side-prompt-r1.json",
+    "M11-rear-prompt-r1.json",
+    "M11-vehicle-prompt-r1.json",
+    "M11-rear-axis-prompt-r1b.json",
+    "M11-side-profile-prompt-r1b.json"
+  ],
+  "method": "固定头部v4与当前身体参考→单独正面母稿→实际正面约束侧背→局部修正背面轮轴视向及侧面斜角→同一四轴底盘货车",
+  "parts_mapping": [
+    {
+      "part": "驾驶室风挡/角顶",
+      "vehicle": "两片前风挡与驾驶室左右上壳",
+      "robot": "两侧肩壳上前方"
+    },
+    {
+      "part": "车头格栅/检修框",
+      "vehicle": "三层藏蓝格栅、四枚小橙灯、白框",
+      "robot": "胸板"
+    },
+    {
+      "part": "第一轴左右轮位",
+      "vehicle": "驾驶室前轴",
+      "robot": "左右肩后"
+    },
+    {
+      "part": "第二轴左右轮位",
+      "vehicle": "驾驶室后轴",
+      "robot": "左右前臂外后"
+    },
+    {
+      "part": "第三/第四轴轮位",
+      "vehicle": "货台后双轴",
+      "robot": "每侧小腿外后的竖向双轮"
+    },
+    {
+      "part": "货台骨架",
+      "vehicle": "承载横梁/纵轨/角锁",
+      "robot": "浅折叠背架"
+    },
+    {
+      "part": "单个货柜",
+      "vehicle": "货台上的独立载荷",
+      "robot": "先卸在地面，保持完整体积，不成为第二套身体甲"
+    }
+  ],
+  "attempts": [
+    {
+      "file": "samples/M11-robot-side-r1.png",
+      "sha256": "d9c5adc176c517211387359b2f63bd7029ac77032e72be43a3066fb3c90996a5",
+      "observed": true,
+      "status": "history_not_selected",
+      "issue": "侧向带前斜角，脚部朝向尚未收正"
+    },
+    {
+      "file": "samples/M11-robot-rear-r1.png",
+      "sha256": "c30d47516fbc594bb9db0b05574ba5303fa0617f76eb8c9d00d7048ce6b7bd02",
+      "observed": true,
+      "status": "history_not_selected",
+      "issue": "轮毂面错误朝向背视观察者"
+    },
+    {
+      "file": "samples/M11-robot-side-r1b.png",
+      "observed": true,
+      "status": "selected_author_revision_not_user_acceptance"
+    },
+    {
+      "file": "samples/M11-robot-rear-r1b.png",
+      "observed": true,
+      "status": "selected_author_revision_not_user_acceptance"
+    }
+  ],
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "samples/M11-robot-front-r1.png",
+      "samples/M11-robot-side-r1b.png",
+      "samples/M11-robot-rear-r1b.png",
+      "samples/M11-cargo-truck-r1.png",
+      "samples/M11-robot-side-r1.png",
+      "samples/M11-robot-rear-r1.png",
+      ".superpowers/brainstorm/37837-1782033239/content/mecha_r18_cargo_leader_face_v4.png",
+      "captures/20261014-full-direction/review/20261016-r3-wave3/images/350e62d2c9dfa371de4a74a8fe4c7ed7579c14f9b85a760b6774886300904146.jpg"
+    ],
+    "observed": [
+      "头部沿CML028 v4保留中央橙框竖向摄像头、分离青色双眼、银色横向分节面甲、蓝盔与短白横向颞鳍，没有改成旧来源的通用头脸。",
+      "白甲/藏蓝车架/安全橙角锁保持工程货运身份；正面风挡在肩上，深色三层格栅与四枚小灯成为胸板。",
+      "机器人肩后、前臂外后、小腿外后双轮共每侧四个公路轮位；左侧稿四个橙心轮毂可数，小踝轴圈为关节盖，不计轮位。",
+      "车形近侧四个轮位清晰可数：驾驶室前轴、驾驶室后轴、货台后双轴；为一副刚性底盘，未增加牵引头/挂车。",
+      "背面初稿把侧置轮毂正对后方；R1b局部改成窄黑胎面，保留肩、肘、膝、踝和原背架位置。",
+      "侧稿首版偏斜角；R1b减少胸格栅前表面露出并收正脚部，以同一四轮位和长腿绘制侧向。",
+      "背部是浅折叠货台和四角锁，不重复驾驶室风挡/格栅；货车只载一个正常体积独立货柜，机器人卸柜后展开。"
+    ],
+    "limits": [
+      "各面为独立绘制源稿，局部板线、视角和轮位投影仍有手绘漂移；不是同一模型的精确正交投影。",
+      "驾驶室与货台去向、先卸柜后展开为本批结构提案；铰链轨迹、转轴净空、质量/容积与连续变形尚未通过同模型验证。",
+      "四张新源图等待本轮用户看稿；未替换游戏模型、立绘或运行资产。"
+    ]
+  },
+  "new_images_user_accepted": false,
+  "identity_lock_changed": false,
+  "runtime_changed": false,
+  "handoff_sent": false
+}

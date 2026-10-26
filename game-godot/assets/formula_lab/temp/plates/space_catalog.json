@@ -1,0 +1,414 @@
+{
+	"schema_id": "FORMULA_LAB_SPACE_PLATE_V1",
+	"notes": "砖名 → 场面井种材质带。小屋照宽幅裁切按气氛换可重复小块：shed=灰泥/石径，bay=工房混凝土，hall=馆厅废砖/路砖。combat_haze 走 sky 砖的 sky_loft 远空带（只坐 haze 带，不是整张庭院照）。execute_berm 可换档 horizon 地平带（远景丘陵坐 crest far_band，不是整张庭院照，也不是六块灰混凝土）。lamp_canopy 可换档 vista 远景 loft（远空/穹顶/远城坐立绘层开口）+ floor_plane 近花田/土径坐进已收地板多边形；opening=stands 时同一张绘景接到站地线，不再重印地板梯形卡，不是整张 garden.png 垫地，也不是湿沥青盖住花田，也不是陶土棚盒；柜台/记录板/旧柜按 vista.stand/face/span 经 loft 映射成侧视立面，脚落花田/土径，vista.along 取样土径/花白/穹顶铜，绘景拥有门洞，不叠暗矩形。shed_canopy 可换档 interior 侧视房间（后墙/地面分带坐进已收多边形，不是俯视砖盒）。bay_canopy 可换档 workshop 侧视工房（混凝土后墙/透视地分带坐进已收多边形，不是俯视砖盒，也不是棚石膏 interior；装卸台/控制台/缓冲尺/校准板/缩尺架按 workshop.stand/face/span 映射成侧视立面，脚落混凝土，workshop.along 取样混凝土/钢木/警戒黄）。sea_chart 可换档 chart 海图绘景（有机氖青岸坐进 chart.sit，不是梯形陆块，也不是整张废港照）。leftover_distance 可换档 leftover 清图留棋绘景（砖尘暮空/有机碎堤/扬尘沥青坐进已收多边形，不是废砖盒，也不是浮空格网，也不是整张 battle-day 庭院照）。hall_canopy 可换档 hall 馆厅绘景（2.5D 远墙/石地分带坐进已收多边形，不是废砖盒，也不是户外庭院，也不是棚石膏 interior；调度台/展签/修理架/提交凳/空泊位/烟灰缸按 hall.stand/face/span 映射成侧视立面，脚落石地/毯，hall.along 取样橡/铁/纸/锡，不是俯视体积盒）。yard_canopy 可换档 yard 侧视暮院（同一张 tile-yard 接到走到线，地板/树篱多边形不再重印俯视草钻，不是花田穹顶 vista，也不是棚石膏 interior；小屋/坡道/限宽架按 stand/face/span 经 loft 映射成侧视立面，yard.along 取样锈棚木/锈/土，坐井台 write_stand 可改脚点）。quay_canopy 可换档 quay 侧视暮湾（同一张 tile-quay 接到走到线，墙/木台/泊位多边形不再重印俯视木盒，不是外场暮院 yard，也不是棚石膏 interior；残骸/卷帘/撤离口按 stand/face/span 经 loft 映射成侧视立面，quay.along 取样湿木/锈铁/暮金水光，坐井台 write_plate_stand 可改脚点）。hall.along 按角色取样石/橡/铁/铜/纸/毯/锡，坐井台演算家具沿色。interior.along 按角色取样灰泥/石径/铁栅/管/纸，楼梯/货架/通风口走演算沿色，不是小屋照贴纸。已是材质小块的 source_uv 保留。坐井台可改。不进 CML。",
+	"tiles": {
+		"chrome": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-chrome.png",
+			"bands": {
+				"execute_pad": [0.0, 0.60, 1.0, 0.375]
+			},
+			"provenance": {
+				"status": "new_formula_lab_candidate_environment",
+				"source": "artifacts/formulas/visual-targets-v1/blender/build_rain_street.py",
+				"user_authorized_date": "2026-09-06",
+				"projection": "low_camera_ground_only",
+				"user_visual_acceptance": false
+			}
+		},
+		"house": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-house.png",
+			"bands": {
+				"wall_face": [0.77, 0.41, 0.05, 0.05],
+				"floor_plane": [0.38, 0.68, 0.06, 0.06],
+				"yard": [0.2, 0.48, 0.06, 0.06],
+				"lamp": [0.77, 0.41, 0.05, 0.05],
+				"prop_body": [0.44, 0.2, 0.18, 0.14]
+			}
+		},
+		"grass": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-grass.png",
+			"bands": {
+				"wall_face": [0.32, 0.54, 0.08, 0.08],
+				"floor_plane": [0.42, 0.26, 0.16, 0.14],
+				"yard": [0.42, 0.26, 0.16, 0.14],
+				"prop_body": [0.32, 0.22, 0.36, 0.32]
+			}
+		},
+		"road": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-road.png",
+			"bands": {
+				"wall_face": [0.32, 0.54, 0.08, 0.08],
+				"floor_plane": [0.42, 0.26, 0.16, 0.14],
+				"hall": [0.62, 0.24, 0.1, 0.1],
+				"prop_body": [0.32, 0.22, 0.36, 0.32],
+				"board_pad": [0.18, 0.28, 0.64, 0.36]
+			}
+		},
+		"ruin": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-ruin.png",
+			"bands": {
+				"wall_face": [0.2, 0.38, 0.12, 0.12],
+				"floor_plane": [0.34, 0.48, 0.1, 0.1],
+				"bay": [0.2, 0.38, 0.12, 0.12],
+				"hall": [0.42, 0.3, 0.1, 0.1],
+				"prop_body": [0.32, 0.22, 0.36, 0.32]
+			}
+		},
+		"forest": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-forest.png",
+			"bands": {
+				"wall_face": [0.32, 0.54, 0.08, 0.08],
+				"floor_plane": [0.42, 0.26, 0.16, 0.14],
+				"prop_body": [0.32, 0.22, 0.36, 0.32]
+			}
+		},
+		"dock": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-dock.png",
+			"bands": {
+				"wall_face": [0.32, 0.54, 0.08, 0.08],
+				"floor_plane": [0.42, 0.26, 0.16, 0.14],
+				"prop_body": [0.32, 0.22, 0.36, 0.32]
+			}
+		},
+		"water": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-water.png",
+			"bands": {
+				"wall_face": [0.32, 0.54, 0.08, 0.08],
+				"floor_plane": [0.42, 0.26, 0.16, 0.14],
+				"prop_body": [0.32, 0.22, 0.36, 0.32]
+			}
+		},
+		"sky": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-sky.png",
+			"bands": {
+				"sky_loft": [0.0, 0.0, 1.0, 1.0],
+				"combat": [0.0, 0.0, 1.0, 1.0],
+				"wall_face": [0.12, 0.08, 0.36, 0.72],
+				"floor_plane": [0.40, 0.20, 0.36, 0.60],
+				"prop_body": [0.62, 0.16, 0.28, 0.64]
+			}
+		},
+		"horizon": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-horizon.png",
+			"bands": {
+				"sky_loft": [0.0, 0.0, 1.0, 1.0],
+				"combat": [0.0, 0.0, 1.0, 1.0],
+				"wall_face": [0.08, 0.06, 0.84, 0.40],
+				"floor_plane": [0.06, 0.52, 0.88, 0.42],
+				"prop_body": [0.18, 0.46, 0.64, 0.42]
+			}
+		},
+		"vista": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-vista.png",
+			"bands": {
+				"sky_loft": [0.0, 0.0, 1.0, 1.0],
+				"lamp": [0.0, 0.0, 1.0, 1.0],
+				"combat": [0.0, 0.0, 1.0, 1.0],
+				"wall_face": [0.08, 0.10, 0.84, 0.46],
+				"floor_plane": [0.0, 0.48, 1.0, 0.52],
+				"prop_body": [0.22, 0.42, 0.56, 0.40]
+			},
+			"stand": {
+				"desk": 0.96,
+				"board": 0.94,
+				"cabinet": 0.90,
+				"gate": 0.88
+			},
+			"face": {
+				"desk": 0.40,
+				"board": 1.08,
+				"cabinet": 1.35,
+				"gate": 1.10
+			},
+			"span": {
+				"desk": 236,
+				"board": 132,
+				"cabinet": 92,
+				"gate": 72
+			},
+			"along": {
+				"stone": [0.12, 0.91, 0.08, 0.06],
+				"oak": [0.11, 0.86, 0.08, 0.08],
+				"iron": [0.26, 0.70, 0.06, 0.08],
+				"brass": [0.38, 0.96, 0.04, 0.04],
+				"paper": [0.38, 0.94, 0.08, 0.06],
+				"carpet": [0.54, 0.85, 0.08, 0.06],
+				"pewter": [0.76, 0.40, 0.08, 0.08]
+			}
+		},
+		"interior": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-interior.png",
+			"bands": {
+				"wall_face": [0.0, 0.0, 1.0, 0.58],
+				"floor_plane": [0.04, 0.54, 0.92, 0.44],
+				"shed": [0.0, 0.0, 1.0, 0.58],
+				"sky_loft": [0.0, 0.0, 1.0, 0.58],
+				"wall_left": [0.0, 0.0, 0.14, 0.58],
+				"wall_right": [0.86, 0.0, 0.14, 0.58],
+				"prop_body": [0.22, 0.20, 0.36, 0.32]
+			},
+			"stand": {
+				"desk": 0.64,
+				"log": 0.62,
+				"board": 0.40,
+				"cabinet": 0.40,
+				"rack": 0.76,
+				"pedestal": 0.69
+			},
+			"face": {
+				"desk": 0.42,
+				"log": 0.22,
+				"board": 1.15,
+				"cabinet": 1.35,
+				"rack": 1.20,
+				"pedestal": 0.55
+			},
+			"span": {
+				"desk": 200,
+				"log": 72,
+				"board": 88,
+				"cabinet": 92,
+				"rack": 120,
+				"pedestal": 80
+			},
+			"along": {
+				"stone": [0.20, 0.22, 0.10, 0.12],
+				"oak": [0.40, 0.72, 0.16, 0.12],
+				"iron": [0.16, 0.14, 0.08, 0.10],
+				"brass": [0.80, 0.08, 0.10, 0.06],
+				"paper": [0.50, 0.18, 0.10, 0.12],
+				"carpet": [0.30, 0.52, 0.12, 0.06],
+				"pewter": [0.70, 0.78, 0.10, 0.08]
+			}
+		},
+		"workshop": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-workshop.png",
+			"bands": {
+				"wall_face": [0.0, 0.0, 1.0, 0.58],
+				"floor_plane": [0.04, 0.54, 0.92, 0.44],
+				"bay": [0.0, 0.0, 1.0, 0.58],
+				"sky_loft": [0.0, 0.0, 1.0, 0.58],
+				"wall_left": [0.0, 0.0, 0.14, 0.58],
+				"wall_right": [0.86, 0.0, 0.14, 0.58],
+				"prop_body": [0.22, 0.20, 0.36, 0.32]
+			},
+			"stand": {
+				"dock": 0.80,
+				"console": 0.62,
+				"gauge": 0.80,
+				"board": 0.40,
+				"rack": 0.76,
+				"lane": 0.80,
+				"alcove": 0.76
+			},
+			"face": {
+				"dock": 0.28,
+				"console": 0.58,
+				"gauge": 1.20,
+				"board": 1.15,
+				"rack": 1.10,
+				"lane": 0.18,
+				"alcove": 1.24
+			},
+			"span": {
+				"dock": 420,
+				"console": 168,
+				"gauge": 72,
+				"board": 88,
+				"rack": 110,
+				"lane": 240,
+				"alcove": 148
+			},
+			"along": {
+				"stone": [0.42, 0.22, 0.12, 0.10],
+				"oak": [0.48, 0.36, 0.12, 0.08],
+				"iron": [0.28, 0.72, 0.14, 0.10],
+				"brass": [0.52, 0.34, 0.10, 0.06],
+				"paper": [0.30, 0.08, 0.10, 0.08],
+				"carpet": [0.56, 0.80, 0.12, 0.08],
+				"pewter": [0.16, 0.12, 0.08, 0.08]
+			}
+		},
+		"chart": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-chart.png",
+			"bands": {
+				"sky_loft": [0.0, 0.0, 1.0, 1.0],
+				"sea": [0.0, 0.0, 1.0, 1.0],
+				"wall_face": [0.08, 0.06, 0.84, 0.40],
+				"floor_plane": [0.10, 0.48, 0.80, 0.44],
+				"prop_body": [0.22, 0.36, 0.56, 0.40]
+			}
+		},
+		"leftover": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-leftover.png",
+			"bands": {
+				"sky_loft": [0.0, 0.0, 1.0, 0.44],
+				"dusk": [0.0, 0.0, 1.0, 0.44],
+				"wall_face": [0.0, 0.0, 1.0, 0.44],
+				"floor_plane": [0.06, 0.40, 0.88, 0.52],
+				"wall_left": [0.0, 0.0, 0.18, 0.62],
+				"wall_right": [0.82, 0.0, 0.18, 0.62],
+				"prop_body": [0.22, 0.36, 0.36, 0.28],
+				"leftover_pad": [0.28, 0.52, 0.44, 0.28],
+				"leftover_dock": [0.02, 0.50, 0.20, 0.28]
+			}
+		},
+		"hall": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-hall.png",
+			"bands": {
+				"sky_loft": [0.0, 0.0, 1.0, 0.46],
+				"canopy": [0.0, 0.0, 1.0, 0.46],
+				"hall": [0.0, 0.0, 1.0, 0.46],
+				"wall_face": [0.0, 0.0, 1.0, 0.46],
+				"floor_plane": [0.08, 0.46, 0.84, 0.48],
+				"wall_left": [0.0, 0.0, 0.16, 0.62],
+				"wall_right": [0.84, 0.0, 0.16, 0.62],
+				"prop_body": [0.28, 0.28, 0.28, 0.28]
+			},
+			"stand": {
+				"desk": 0.60,
+				"sign": 0.56,
+				"rack": 0.56,
+				"hoop": 0.52,
+				"slip": 0.58,
+				"bench": 0.88,
+				"berth": 0.82,
+				"ashtray": 0.78
+			},
+			"face": {
+				"desk": 0.42,
+				"sign": 1.15,
+				"rack": 1.20,
+				"hoop": 0.36,
+				"slip": 0.22,
+				"bench": 0.28,
+				"berth": 0.22,
+				"ashtray": 0.28
+			},
+			"span": {
+				"desk": 200,
+				"sign": 88,
+				"rack": 120,
+				"hoop": 56,
+				"slip": 72,
+				"bench": 168,
+				"berth": 160,
+				"ashtray": 48
+			},
+			"along": {
+				"stone": [0.50, 0.14, 0.08, 0.08],
+				"oak": [0.22, 0.60, 0.08, 0.08],
+				"iron": [0.16, 0.28, 0.06, 0.10],
+				"brass": [0.23, 0.15, 0.03, 0.04],
+				"paper": [0.40, 0.15, 0.03, 0.04],
+				"carpet": [0.50, 0.68, 0.08, 0.08],
+				"pewter": [0.76, 0.56, 0.08, 0.08]
+			}
+		},
+		"yard": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-yard.png",
+			"bands": {
+				"sky_loft": [0.0, 0.0, 1.0, 1.0],
+				"canopy": [0.0, 0.0, 1.0, 0.48],
+				"yard": [0.0, 0.0, 1.0, 0.48],
+				"wall_face": [0.0, 0.0, 1.0, 0.48],
+				"floor_plane": [0.0, 0.48, 1.0, 0.52],
+				"wall_left": [0.0, 0.0, 0.16, 0.62],
+				"wall_right": [0.84, 0.0, 0.16, 0.62],
+				"prop_body": [0.28, 0.36, 0.36, 0.32]
+			},
+			"stand": {
+				"near": 0.92,
+				"far": 0.84,
+				"ramp": 0.88,
+				"gate": 0.90
+			},
+			"face": {
+				"near": 0.58,
+				"far": 0.32,
+				"ramp": 0.26,
+				"gate": 1.15
+			},
+			"span": {
+				"near": 176,
+				"far": 220,
+				"ramp": 210,
+				"gate": 72
+			},
+			"along": {
+				"stone": [0.44, 0.69, 0.10, 0.08],
+				"oak": [0.55, 0.28, 0.08, 0.08],
+				"iron": [0.10, 0.20, 0.06, 0.10],
+				"brass": [0.62, 0.24, 0.04, 0.04],
+				"paper": [0.48, 0.18, 0.04, 0.04],
+				"carpet": [0.23, 0.79, 0.10, 0.08],
+				"pewter": [0.65, 0.26, 0.10, 0.08]
+			}
+		},
+		"quay": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-quay.png",
+			"bands": {
+				"sky_loft": [0.0, 0.0, 1.0, 1.0],
+				"canopy": [0.0, 0.0, 1.0, 0.48],
+				"quay": [0.0, 0.0, 1.0, 0.48],
+				"wall_face": [0.0, 0.0, 1.0, 0.48],
+				"floor_plane": [0.0, 0.48, 1.0, 0.52],
+				"wall_left": [0.0, 0.0, 0.22, 0.62],
+				"wall_right": [0.78, 0.0, 0.22, 0.62],
+				"prop_body": [0.28, 0.36, 0.36, 0.32]
+			},
+			"stand": {
+				"wreck": 0.88,
+				"shutter": 0.86,
+				"gate": 0.88
+			},
+			"face": {
+				"wreck": 0.28,
+				"shutter": 1.20,
+				"gate": 1.10
+			},
+			"span": {
+				"wreck": 280,
+				"shutter": 88,
+				"gate": 72
+			},
+			"along": {
+				"stone": [0.08, 0.58, 0.10, 0.08],
+				"oak": [0.40, 0.72, 0.12, 0.10],
+				"iron": [0.04, 0.28, 0.06, 0.10],
+				"brass": [0.60, 0.34, 0.08, 0.06],
+				"paper": [0.50, 0.12, 0.10, 0.08],
+				"carpet": [0.48, 0.82, 0.12, 0.08],
+				"pewter": [0.18, 0.42, 0.08, 0.10]
+			}
+		},
+		"patrol": {
+			"tex": "res://assets/formula_lab/temp/tiles/tile-patrol.png",
+			"bands": {
+				"sky_loft": [0.0, 0.0, 1.0, 0.42],
+				"canopy": [0.0, 0.0, 1.0, 0.42],
+				"lamp": [0.0, 0.0, 1.0, 0.42],
+				"wall_face": [0.0, 0.0, 1.0, 0.48],
+				"floor_plane": [0.06, 0.42, 0.88, 0.54],
+				"wall_left": [0.0, 0.0, 0.16, 0.62],
+				"wall_right": [0.84, 0.0, 0.16, 0.62],
+				"prop_body": [0.22, 0.34, 0.20, 0.36],
+				"shed_near": [0.22, 0.34, 0.20, 0.36],
+				"shed_long": [0.40, 0.36, 0.22, 0.34],
+				"shed_far": [0.60, 0.38, 0.16, 0.32],
+				"cabinet": [0.60, 0.38, 0.16, 0.32],
+				"gate": [0.78, 0.82, 0.10, 0.10],
+				"opening": [0.84, 0.08, 0.14, 0.52]
+			},
+			"along": {
+				"stone": [0.12, 0.18, 0.08, 0.08],
+				"oak": [0.28, 0.42, 0.08, 0.08],
+				"iron": [0.30, 0.36, 0.08, 0.06],
+				"brass": [0.48, 0.12, 0.06, 0.06],
+				"paper": [0.78, 0.82, 0.08, 0.08],
+				"carpet": [0.50, 0.70, 0.10, 0.10],
+				"pewter": [0.70, 0.50, 0.08, 0.08]
+			}
+		}
+	}
+}

@@ -1,0 +1,96 @@
+{
+  "approved_handoffs": [],
+  "canon_modified": false,
+  "cue_profile_alias": "c01e02_g2_a2_c2_screen_embodied_cues_v1",
+  "default_entry_changed": false,
+  "driver_direct_session_calls": false,
+  "evidence_class": "g2_a2_c2_timeline_presentation_seconds_and_semantic_nonregression",
+  "full_skip_semantic_modified": false,
+  "fun_proven": false,
+  "g2_b_allowed": false,
+  "logical_timeslices_modified": false,
+  "r2_r3_checked_by": "g2_a2_c1_route_family_test.gd",
+  "real_art_loaded": 0,
+  "runtime_promotion": false,
+  "save_enabled": false,
+  "strategies": {
+    "A": {
+      "event_ids": [
+        "GS-R1-E1-VEHICLE",
+        "GS-R1-E2-SWARM",
+        "GS-R1-E3-CONTACT",
+        "GS-R1-E4-CITY-GUN",
+        "GS-R1-E5-ROAD-RED"
+      ],
+      "full_duration_ms": 13320,
+      "full_skip_semantic_equal": true,
+      "round_result_hash": "b4511d8fe51af415611c4e4f0c26e6226c1c0816b2c256726c8844de1615ad50",
+      "semantic_result_hash": "83ff76e9d563a72383e8dcc74ed0654c3c35e2f3c943a8f9a731312c5cc68b19",
+      "skip_duration_ms": 0,
+      "timeslices": [
+        "T1",
+        "T2",
+        "T3.00",
+        "T4",
+        "T5"
+      ],
+      "world_fields": {
+        "breaker_post_contact_anchor": [
+          21,
+          11
+        ],
+        "guardian_heat": 24,
+        "impact_socket_grid": [
+          20.5,
+          10.5
+        ],
+        "road_damage": 42,
+        "side_armor_socket_grid": [
+          24.0,
+          12.5
+        ],
+        "warning_facility_state": "damaged"
+      }
+    },
+    "B": {
+      "event_ids": [
+        "GS-R1-E1-VEHICLE",
+        "GS-R1-E2-SWARM",
+        "GS-R1-E3-CONTACT",
+        "GS-R1-E4-CITY-GUN",
+        "GS-R1-E5-ROAD-RED"
+      ],
+      "full_duration_ms": 13320,
+      "full_skip_semantic_equal": true,
+      "round_result_hash": "c3b307b9698d645598594cb6674c86779a13420b9934cf562f379d112d1f41fa",
+      "semantic_result_hash": "4d387c29d9121044dc25821a9b72961d0b81bd1d6c403b6f123b35cc322deec7",
+      "skip_duration_ms": 0,
+      "timeslices": [
+        "T1",
+        "T2",
+        "T3.25",
+        "T4",
+        "T5"
+      ],
+      "world_fields": {
+        "breaker_post_contact_anchor": [
+          21,
+          10
+        ],
+        "guardian_heat": 46,
+        "impact_socket_grid": [
+          20.0,
+          10.5
+        ],
+        "road_damage": 24,
+        "side_armor_socket_grid": [
+          24.0,
+          11.5
+        ],
+        "warning_facility_state": "active"
+      }
+    }
+  },
+  "total_round_one_presentation_ms": 13320.0,
+  "world_result_modified": false
+}

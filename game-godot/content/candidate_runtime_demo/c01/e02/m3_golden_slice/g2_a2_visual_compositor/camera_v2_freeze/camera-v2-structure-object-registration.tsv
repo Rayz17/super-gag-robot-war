@@ -1,0 +1,12 @@
+record_type	object_id	grid_rect	anchor	footprint	world_height_class	world_height_px	z_bias	registration_point	front_edge_raw	front_edge_A_PLAN	front_edge_B_PLAN	front_edge_A_CONTACT	front_edge_B_CONTACT	visual_bounds_raw	reveal_cell_count	foundation_color	occluder_color	focusable	source
+STRUCTURE	NW_BLOCK	1,0,7,5	NA	NA	HIGH	90	0	structure_front_edge	80,288	320,-70	320,-70	320,-106	340,-94	-160,-90,480,378	65	193541	315766	true	camera_contract.structures
+STRUCTURE	NM_BLOCK	10,0,5,4	NA	NA	MEDIUM	72	0	structure_front_edge	420,432	660,74	660,74	660,38	680,50	240,144,360,288	45	23343e	4a5960	true	camera_contract.structures
+STRUCTURE	NE_BLOCK	22,0,7,4	NA	NA	HIGH	90	0	structure_front_edge	940,768	1180,410	1180,410	1180,374	1200,386	720,414,440,354	60	17383b	2f6260	true	camera_contract.structures
+STRUCTURE	SW_BLOCK	0,15,8,3	NA	NA	MEDIUM	72	0	structure_front_edge	-500,600	-260,242	-260,242	-260,206	-240,218	-720,264,440,336	58	303135	5d5550	true	camera_contract.structures
+STRUCTURE	SE_BLOCK	26,14,6,4	NA	NA	HIGH	90	0	structure_front_edge	520,1176	760,818	760,818	760,782	780,794	320,846,400,330	64	26353b	4d6168	true	camera_contract.structures
+STRUCTURE	BROKEN_SKYWALK	8,5,7,2	NA	NA	LOW	54	0	structure_front_edge	220,504	460,146	460,146	460,110	480,122	40,234,360,270	65	343138	6a606f	true	camera_contract.structures
+TACTICAL_OBJECT	PROP_C01CDV1_RETIRED_SHIELD	14,10,1,1	14,10	1,1	NA	0	0	footprint_bottom_center	160,600	400,242	400,242	400,206	420,218	NA	NA	NA	NA	false	session.round_snapshot.objects[object_id=PROP_C01CDV1_RETIRED_SHIELD]
+TACTICAL_OBJECT	TARGET_C01_EAST_EXIT	31,7,1,1	31,7	1,1	NA	0	0	footprint_bottom_center	960,936	1200,578	1200,578	1200,542	1220,554	NA	NA	NA	NA	false	session.round_snapshot.entities[unit_id=TARGET_C01_EAST_EXIT]
+TACTICAL_OBJECT	TARGET_C01_SECURITY_GATE	27,8,1,1	27,8	1,1	NA	0	0	footprint_bottom_center	760,864	1000,506	1000,506	1000,470	1020,482	NA	NA	NA	NA	false	session.resolved.world_result.entities[unit_id=TARGET_C01_SECURITY_GATE]
+TACTICAL_OBJECT	ALLY_C01_CITY_ARTILLERY	29,2,1,1	29,2	1,1	NA	0	0	footprint_bottom_center	1080,768	1320,410	1320,410	1320,374	1340,386	NA	NA	NA	NA	false	session.intent_set.intents[action_type=CONDITIONAL_SIDE_ARMOR_SHOT].source_anchor
+AREA	PROTECTION_ZONE_RECT	20,5,12,7	NA	NA	NA	0	0	structure_front_edge	700,1032	940,674	940,674	940,638	960,650	NA	NA	NA	NA	false	session.round_snapshot.terrain_zones[zone_id=TERRAIN_C01_RESCUE_LANE]

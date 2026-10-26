@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "receipt_id": "C01E02_M3_R05_M0_ZERO_HANDOFF_RECEIPT",
+  "claim_level": "presentation_judgeability_only",
+  "build_id": "C01CDV1-M3-R0.5-PRES",
+  "packing": {
+    "contract_id": "C01E02_R05_MEDIA_PACKING_V2",
+    "contract_sha256": "fe75667eac656756e35ddbbb784e250d39c0f8b05c2c14f719234d653b944012",
+    "manifest_sha256": "5abc1b5f718cdd1b9c2e6dff2e323a177ce3302625dbc81345134687eae5c053",
+    "validator_result": "PASS",
+    "visual_slot_count": 28,
+    "audio_slot_count": 16,
+    "atlas_origin": "top_left",
+    "frame_order": "row_major"
+  },
+  "runtime_state": {
+    "approved_handoffs": [],
+    "validated_handoff_count": 0,
+    "loaded_slot_count": 0,
+    "resource_probe_count": 0,
+    "runtime_art_loaded": false,
+    "runtime_allowed": false,
+    "runtime_handoff": "none"
+  },
+  "qihai_presence_consumer": {
+    "presence_id": "R05_PRESENCE_QIHAI_REMOTE",
+    "actor_id": "CH_QIHAI",
+    "portrait_slot": "R05_PORTRAIT_QIHAI_REMOTE",
+    "expression_state": "decision",
+    "fallback_mode": "named_geometry_fallback",
+    "interactive": false,
+    "command_capability": "none",
+    "artillery_authority": false,
+    "line_text": "",
+    "resource_probe_count": 0
+  },
+  "audio_boundary": {
+    "handoff_contract": "wav_pcm_s24le_48000hz_exact_per_slot_channels_duration_loop",
+    "real_audio_handoff_validated": false,
+    "runtime_fallback": "procedural AudioStreamWAV only",
+    "runtime_fallback_sample_rate": 48000,
+    "runtime_fallback_engine_format": "pcm_s16",
+    "note": "The synthesized fallback and AVI carrier are not evidence of a 24-bit A7 handoff."
+  },
+  "directory_access": {
+    "a6_output_read": false,
+    "a7_output_read": false,
+    "real_asset_probe": false
+  },
+  "handoff_authorized": false,
+  "r1_ready": false
+}

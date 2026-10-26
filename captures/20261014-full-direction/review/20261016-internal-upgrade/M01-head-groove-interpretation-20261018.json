@@ -1,0 +1,43 @@
+{
+  "id": "M01_HEAD_GROOVE_INTERPRETATION_20261018",
+  "date": "2026-10-18",
+  "authority": "direct_user_message_in_this_chat",
+  "verbatim": "我的意思是：头顶天线的黄色凹槽，应该是我画的两个黄色线的位置，而中间应该是白色的，而不是凹槽。这样才能跟图二的侧视图的凹槽的相对位置对应上。你理解一下",
+  "user_attachments": [
+    {
+      "file": "refs/M01-user-twin-grooves-markup-r11.png",
+      "sha256": "1282d52ea7ae59f0641539170bc3a6aa9c6a1328a87bc7f34e8605524fd633d7"
+    },
+    {
+      "file": "refs/M01-user-side-reference-r11.png",
+      "sha256": "de1257ab1577d2cdf20ccd5d072786778ad005f5cb5e933a56cba5bef20972ac"
+    }
+  ],
+  "prior_adoption_receipt": "M01-head-design-adoption-20261018.json",
+  "adopted_source": {
+    "file": "samples/M01-head-center-groove-three-quarter-r9b.png",
+    "sha256": "38a0f36ea2361abede5ec969777db584a5a4d3d6a806f1bf001f899440cf4aa4",
+    "record": "M01-head-center-groove-production-r9.json"
+  },
+  "correct_cross_section": [
+    "白色外缘",
+    "左侧黄色凹槽",
+    "连续白色中脊",
+    "右侧黄色凹槽",
+    "白色外缘"
+  ],
+  "view_rule": "正面看两条左右对称长凹槽；已采用三分之四显示近侧槽，远侧槽可被遮挡。图二保持。",
+  "small_lower_inset": "下方独立矩形小黄块保持，不是要填白的长槽。",
+  "supersedes_author_interpretation": "此前作者的单一中轴黄色长槽及对应Blender中央顶槽模型均错误，停止作为当前生产依据。",
+  "scope": "明确已采用头部的正确空间解释，并据用户标注修正正面；不是重新设计侧视。",
+  "front_r11_user_accepted": true,
+  "runtime_accepted": false,
+  "canon_lock": "CML133",
+  "handoff_sent": false,
+  "later_head_acceptance": {
+    "date": "2026-10-19",
+    "receipt": "M01-head-design-fixed-20261019.json",
+    "front_r11_user_accepted": true
+  },
+  "original_front_r11_user_accepted_at_creation": false
+}

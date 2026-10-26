@@ -1,0 +1,626 @@
+{
+  "schema_version": "1.6.15",
+  "profile_id": "C01E02_TACTICAL_VISUAL_INTERFACE_V1",
+  "status": "CAMERA_V2_MODULAR_STRUCTURE_AND_TEMPORAL_OBJECT_QA_PRODUCER_SIGNED_NOT_FINAL_PLAN_BREAKER_HUMAN_CONCEPT_AUTHORIZATION_PENDING_CALL04_REAL_ART_UA91_G2B_BLOCKED",
+  "authority_scope": "Candidate production interface only; no Canon or Runtime promotion",
+  "producer_gameplay_alignment": {
+    "governing_contract": "88-c01e02-r2c-fun-first-current-topology-map-and-interaction-contract.md",
+    "main_program_objective": "89-c01e02-g2-a2-c1-current-topology-fixture-free-golden-turn-objective.md",
+    "art_preproduction_objective": "90-c01e02-a9-1a6-s-c1-current-topology-scene-first-preproduction-objective.md",
+    "art_preproduction_acceptance": "91-c01e02-a9-1a6-s-c1-preproduction-producer-acceptance.md",
+    "status": "MAIN_PREFLIGHT_DISPATCHED_ART_PREPRODUCTION_ACCEPTED_CALL02_BLOCKED_FUN_NOT_PROVEN",
+    "first_round_route_policy": "equivalent_shortest_route_families_with_existing_routes_retained_as_hero_routes",
+    "route_families": {
+      "A_BODY_INTERCEPT_FAMILY": {
+        "origin": [15, 11],
+        "required_steps": 7,
+        "endpoint": [20, 9],
+        "settle_facing": "south",
+        "player_choice": "BODY_INTERCEPT"
+      },
+      "B_PROTECT_LANE_FAMILY": {
+        "origin": [15, 11],
+        "required_steps": 6,
+        "endpoint": [19, 9],
+        "settle_facing": "east",
+        "contact_facing": "south",
+        "player_choice": "PROTECT_LANE_RESPONSE"
+      }
+    },
+    "hero_route_exact_required_for_success": false,
+    "round_two_and_three_route_rules_changed": false,
+    "strategy_contrast": {
+      "A": "lower_guardian_heat_and_more_round2_margin_at_cost_of_facility_damage_and_road_damage_42",
+      "B": "facility_active_and_road_damage_24_at_cost_of_higher_guardian_heat_and_zero_round2_margin"
+    },
+    "visible_pixel_release_gate": "P89_G2_A2_C1_PRODUCER_ACTUAL_FRAME_REVIEW"
+  },
+  "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+  "legacy_fixture_camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+  "coordinate_spaces": {
+    "design_orthographic": {
+      "map_bind_allowed": false,
+      "purpose": "identity proportion structure and palette reference"
+    },
+    "map_dimetric_40x20": {
+      "map_bind_allowed": true,
+      "purpose": "tactical map movement contact and world interaction"
+    },
+    "screen_ui": {
+      "map_bind_allowed": false,
+      "purpose": "communications and HUD"
+    },
+    "cinematic": {
+      "map_bind_allowed": false,
+      "purpose": "LibTV and cut-in with exact map state entry and return"
+    }
+  },
+  "projection": {
+    "type": "orthographic_dimetric_2_to_1",
+    "grid_size_cells": [32, 18],
+    "world_axes": {
+      "x_positive": "east",
+      "y_positive": "south"
+    },
+    "tile_half_px": [40, 20],
+    "runtime_raw_origin_px": [-880, -170],
+    "forward_formula": {
+      "screen_x": "origin_x + (grid_x - grid_y) * 40",
+      "screen_y": "origin_y + (grid_x + grid_y) * 20"
+    },
+    "art_camera_equivalent": {
+      "projection_formula_is_authoritative": true,
+      "yaw_degrees_approx": 45,
+      "elevation_degrees_approx": 30,
+      "viewer_world_quadrant": "southeast_positive_x_positive_y",
+      "perspective_convergence": false,
+      "depth_scale_by_map_y": false,
+      "top_surfaces_visible": true
+    },
+    "runtime_viewport_px": [1280, 720],
+    "a4_shared_layer_canvas_px": [2400, 1350],
+    "a4_to_runtime_registration": {
+      "status": "P88_SIGNED_G2_A2_C1_JOINT_REGISTRATION_AND_CURRENT_TOPOLOGY_PREFLIGHT_DISPATCHED",
+      "governing_correction": "85-c01e02-a4-runtime-joint-registration-and-current-object-space-correction.md",
+      "user_decision_gate": "86-c01e02-a4-legacy-topology-vs-current-r2c-map-route-user-decision.md",
+      "superseded_receipt": "80-c01e02-r2c-producer-exact-geometry-acceptance-and-parallel-visual-dispatch.md",
+      "joint_registration_proven": false,
+      "current_visual_topology_proven": false,
+      "corrected_canvas_origin_raw_px": [-1760, -340],
+      "legacy_canvas_origin_raw_px_forbidden": [-1680, -350],
+      "camera_crop_policy": "derive effective_camera crop and layer_top_left per frame from the single projection formula; no shared hard-coded crop constant",
+      "shared_public_plan_summary_camera": {
+        "effective_camera_raw_px": [-480, 420],
+        "zoom": 1.0,
+        "shake_px": [0, 0],
+        "crop_rect_px": [640, 468, 1280, 584],
+        "layer_screen_top_left_px": [-640, -410],
+        "purpose": "stable A B responsibility comparison without map jump",
+        "supersedes_85_independent_plan_focus_rows_only": true
+      },
+      "a4_semantic_authority": "visual_material_layering_and_occlusion_donor_only_route_A_selected",
+      "map_topology_conflict": {
+        "legacy_a4": {
+          "retired_shield": [11, 10],
+          "east_exit": [31, 4],
+          "security_gate": [25, 5]
+        },
+        "current_r2c": {
+          "retired_shield": [14, 10],
+          "east_exit": [31, 7],
+          "security_gate": [27, 8]
+        }
+      }
+    }
+  },
+  "camera_a0_pilot": {
+    "status": "COMPLETE_PRODUCER_SELECTED_CAM_A0_V2A_40X24_BY_110",
+    "current_formal_camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+    "formal_camera_v2_selected": true,
+    "selected_candidate_id": "CAM_A0_V2A_40X24",
+    "selected_tile_half_px": [40,24],
+    "selection_acceptance": "110-c01e02-p109-camera-a0-and-focus-reveal-producer-acceptance.md",
+    "selection_acceptance_sha256": "66e5cf7ac2b7e0ea06c33b26698124fd0918c7ab173104be8a2a6733e4f4d78e",
+    "variants": [
+      {"candidate_id":"CAM_A0_V1_40X20","tile_half_px":[40,20],"role":"current_low_elevation_baseline","runtime_bindable":false},
+      {"candidate_id":"CAM_A0_V2A_40X24","tile_half_px":[40,24],"role":"mid_elevation_candidate","runtime_bindable":false},
+      {"candidate_id":"CAM_A0_V2B_40X26","tile_half_px":[40,26],"role":"higher_elevation_candidate","runtime_bindable":false}
+    ],
+    "fair_framing": {
+      "formula": "screen=map_rect.center+P_h(cell)-P_h(focus); P_h(x,y)=((x-y)*40,(x+y)*h)",
+      "zoom": 1.0,
+      "shake_px": [0,0],
+      "plan_A_B_focus": [19.75,9.75],
+      "contact_A_focus": [20.5,10.5],
+      "contact_B_focus": [20,10.5],
+      "no_focus_readback": [15,11]
+    },
+    "shared_invariants": [
+      "grid_32x18",
+      "current_topology_anchors_and_passability",
+      "A_B_route_families_results_and_T1_T5",
+      "orthographic_no_convergence_no_depth_scale",
+      "footprint_bottom_center_registration",
+      "same_UI_safe_zones_and_product_state"
+    ],
+    "comparison_frames_required": 12,
+    "focus_reveal_frames_required_min": 8,
+    "environment_or_sprite_art_allowed": false,
+    "camera_v2_selection_requires": "P109_CAMERA_A0_AND_FOCUS_REVEAL_PRODUCER_USER_VISUAL_SELECTION_COMPLETE_BY_110",
+    "camera_v2_exact_interface_requires": "G2_A2_C4B_CAMERA_V2_EXACT_INTERFACE_FREEZE",
+    "environment_may_consume_pilot_camera_directly": false
+  },
+  "camera_v2_exact_interface": {
+    "status": "COMPLETE_PRODUCER_ACCEPTED_BY_112_FOR_ENV_A1_AND_FUTURE_MAP_ART_CANDIDATES",
+    "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+    "view_space": "map_dimetric_40x24",
+    "tile_half_px": [40,24],
+    "runtime_bindable": false,
+    "existing_c2_c3_c4_consumers_remain_on": "CURRENT_TOPOLOGY_CAMERA_V1",
+    "producer_acceptance": "112-c01e02-p111-camera-v2-exact-interface-producer-acceptance.md",
+    "producer_acceptance_sha256": "2eda6f614f46b0ba8ef43adc76ff08152d63d3560a5e4b19989c7612d44a2793",
+    "task111_completion": "main-g2-a2-c4b-camera-v2-freeze/06-completion-report.md",
+    "task111_completion_sha256": "b82b07a35bd4dabc60bc3dd909c84554787f6857a15d1026cff92bc0f06f0c45",
+    "task111_delivery_manifest": "main-g2-a2-c4b-camera-v2-freeze/delivery-hashes.sha256",
+    "task111_delivery_manifest_sha256": "cf01823c07d904c38ffad076f08fddba6b0d72f0fcb68ab731ab0cdcb3a7d83b",
+    "exact_camera_contract": "game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/camera_v2_freeze/current-topology-camera-v2-40x24-contract.json",
+    "exact_camera_contract_sha256": "756f77db883fd060fdd323d2533191ade689c0a1362f92f043fac17dbe28ab4a",
+    "structure_object_registration": "game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/camera_v2_freeze/camera-v2-structure-object-registration.tsv",
+    "structure_object_registration_sha256": "0133cf5c5af7a6dba659221249b9e0bb45c51bebc8cb9b81c50cf9d920d25b7b",
+    "sprite_socket_contract": "game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/camera_v2_freeze/camera-v2-sprite-slot-and-socket-contract.json",
+    "sprite_socket_contract_sha256": "a6874f033554c71af2e3c1d634cd2671d4a3efd1494ba0bccb491579c0117cce",
+    "a5_plan_compatibility": {
+      "verdict": "V2_COMPATIBLE_FOR_PLAN",
+      "receipt": "main-g2-a2-c4b-camera-v2-freeze/receipts/05-A5-camera-v2-compatibility-receipt.json",
+      "receipt_sha256": "63cb547dff5c2672883451fb942181b835a30c301ea6030b656d9874e4bc1f20",
+      "pivot_px": [48,96],
+      "display_scale": [1,1],
+      "plan_only": true,
+      "full_t1_t5_real_art_compatible": false,
+      "runtime_bound": false
+    }
+  },
+  "direction_semantics": [
+    {
+      "facing": "north",
+      "grid_delta": [0, -1],
+      "screen_delta_px": [40, -20],
+      "screen_read": "upper_right",
+      "design_turnaround_alias_forbidden": "back"
+    },
+    {
+      "facing": "east",
+      "grid_delta": [1, 0],
+      "screen_delta_px": [40, 20],
+      "screen_read": "lower_right",
+      "design_turnaround_alias_forbidden": "strict_side"
+    },
+    {
+      "facing": "south",
+      "grid_delta": [0, 1],
+      "screen_delta_px": [-40, 20],
+      "screen_read": "lower_left",
+      "design_turnaround_alias_forbidden": "front"
+    },
+    {
+      "facing": "west",
+      "grid_delta": [-1, 0],
+      "screen_delta_px": [-40, -20],
+      "screen_read": "upper_left",
+      "design_turnaround_alias_forbidden": "strict_side"
+    }
+  ],
+  "registration": {
+    "anchor_semantics": "minimum_grid_cell_of_rectangular_footprint",
+    "registration_point": "footprint_bottom_center",
+    "footprint_bottom_center_algorithm": "project every occupied cell center; x=(min_screen_x+max_screen_x)/2; y=max_screen_y+tile_half_y",
+    "frame_pivot_required": ["normalized_xy", "pixel_xy"],
+    "common_ground_contact_across_frames": true,
+    "shadow_uses_same_ground_plane": true,
+    "candidate_canvas_px": {
+      "rift_swarm": [96, 96],
+      "emergency_vehicle": [128, 128],
+      "guardian_z": [256, 256],
+      "breaker": [384, 384]
+    }
+  },
+  "depth_occlusion": {
+    "unit_sort_key": "footpoint_screen_y_plus_explicit_z_bias",
+    "anchor_y_sort_forbidden": true,
+    "type_container_sort_forbidden": true,
+    "roof_foreground_policy": "C3_SINGLE_OWNER_SIMPLE_LOCAL_PANEL_FADE_FIXTURE_SUPPORTED_ROUTE_A2_TARGETS_SEPARATE_STRUCTURE_OCCLUDERS_AND_FOCUS_DRIVEN_ALPHA_REVEAL",
+    "map_layers_share_canvas_origin_pivot_and_mask_semantics": true,
+    "legacy_a4_state_layer_default_visible": false,
+    "legacy_a4_objects_are_current_world_authority": false,
+    "current_stateful_objects_must_be_separable_and_read_from_session_or_resolver": true,
+    "joint_mask_registration_status": "A8_ACTUAL_STRUCTURE_QA_PROVES_INTERSECT_ONLY_WHOLE_OCCLUDER_ALPHA_0_34_CANDIDATE_NOT_RUNTIME_BOUND",
+    "route_a2_target": {
+      "ground_bake_contains_interactive_structures": false,
+      "structure_instances_separate": true,
+      "structure_sort_key": "front_edge_footpoint_screen_y_plus_z_bias",
+      "structure_front_edge_formula": "same_as_footprint_bottom_center_over_all_grid_rect_cells",
+      "foundation_always_visible": true,
+      "only_occluder_alpha_changes": true,
+      "opaque_alpha": 1.0,
+      "revealed_alpha": 0.34,
+      "reveal_reasons": ["execution_subject_occluded","selected_subject_occluded","route_or_endpoint_occluded","cursor_focus_behind_occluder"],
+      "building_self_focus_stays_opaque": true,
+      "forbidden": ["SubViewport","ViewportTexture","pixel_mask","alpha_contour","realtime_light","normal_map","actor_alpha_mutation","second_occlusion_owner"],
+      "actual_structure_qa_status": "PRODUCER_SIGNED_BY_127_ONLY_SE_BLOCK_REVEALED_IN_A_PLAN_PROXY",
+      "runtime_bound": false
+    }
+  },
+  "movement": {
+    "segment_facing_source": "delta_between_adjacent_route_points",
+    "final_facing_scope": "endpoint_settle_only",
+    "route_ghost_fan_sprite_and_summary_share_projection": true,
+    "input_semantics": "world_cardinal",
+    "ui_renders_projected_world_vector": true
+  },
+  "interaction": {
+    "logical_contact_source": "grid_footprint",
+    "visual_contact_requires_sockets": true,
+    "required_socket_fields": [
+      "body_socket_px",
+      "shield_socket_px",
+      "weapon_socket_px",
+      "impact_socket_px",
+      "target_socket_px"
+    ],
+    "required_vector_fields": [
+      "approach_grid_vector",
+      "approach_screen_vector",
+      "impulse_grid_vector",
+      "recoil_screen_vector",
+      "post_contact_anchor"
+    ],
+    "round_1_contact_geometry": {
+      "status": "STAGGERED_FRONT_CONTACT_V1_CANDIDATE_EXACT_REACCEPTED_BY_84",
+      "scene_target_lookdev_allowed": false,
+      "formal_contact_art_allowed": false,
+      "real_art_handoff_allowed": false,
+      "logic_geometry_governing_receipt": "80-c01e02-r2c-producer-exact-geometry-acceptance-and-parallel-visual-dispatch.md",
+      "visual_registration_correction": "85-c01e02-a4-runtime-joint-registration-and-current-object-space-correction.md",
+      "pause_reason": "legacy A4 topology and current R2C world differ; joint pixel registration and current visual topology are not proven",
+      "completed_correction": "83-c01e02-r2c-c1-primary-swarm-ground-occupancy-correction-objective.md",
+      "producer_reacceptance": "84-c01e02-r2c-c1-producer-reacceptance-and-parallel-resume-receipt.md"
+    },
+    "primary_swarm_ground_occupancy": {
+      "strategy": "A_BODY_INTERCEPT",
+      "invalid_history_anchor": [
+        21,
+        9
+      ],
+      "sole_candidate_ground_anchor": [
+        22,
+        9
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "grounded": true,
+      "blocks_route": false,
+      "display_anchor_alias_forbidden": true,
+      "status": "CANDIDATE_EXACT_ACCEPTED_BY_84"
+    }
+  },
+  "full_scene_contract": {
+    "plan_current_entities": {
+      "V353U001": {"anchor":[15,11],"footprint":[2,2],"facing":"east"},
+      "ENEMY_C01_BREAKER": {"anchor":[20,13],"footprint":[3,3],"facing":"north"},
+      "TARGET_C01_EMERGENCY_VEHICLE_01": {"anchor":[17,10],"footprint":[1,1],"facing":"east"},
+      "ENEMY_C01_RIFT_SWARM_01": {"anchor":[22,7],"footprint":[1,1],"facing":"west"},
+      "ENEMY_C01_RIFT_SWARM_02": {"anchor":[26,12],"footprint":[1,1],"facing":"north"},
+      "ENEMY_C01_RIFT_SWARM_03": {"anchor":[29,5],"footprint":[1,1],"facing":"south"}
+    },
+    "plan_objects": {
+      "TARGET_C01_EAST_EXIT": [31,7],
+      "TARGET_C01_SECURITY_GATE": [27,8],
+      "PROP_C01CDV1_RETIRED_SHIELD": [14,10],
+      "PROTECTION_ZONE_RECT": [20,5,12,7],
+      "ALLY_C01_CITY_ARTILLERY": [29,2]
+    },
+    "intent_trajectories": {
+      "TARGET_C01_EMERGENCY_VEHICLE_01": [[17,10],[18,10],[21,10],[24,9]],
+      "ENEMY_C01_RIFT_SWARM_01": [[22,7],[21,8],[20,9],[20,10]],
+      "ENEMY_C01_BREAKER": [[20,13],[20,12],[20,11]]
+    },
+    "contact_t3_entity_state": {
+      "strategy_scope": "A_BODY_INTERCEPT_FAMILY_ONLY",
+      "V353U001": {"anchor":[20,9],"facing":"south"},
+      "ENEMY_C01_BREAKER": {"anchor":[20,11],"facing":"north"},
+      "TARGET_C01_EMERGENCY_VEHICLE_01": {"anchor":[24,9],"status":"passed_lane_still_active"},
+      "ENEMY_C01_RIFT_SWARM_01": {"anchor":[22,9],"status":"deflected_alive","grounded":true},
+      "ENEMY_C01_RIFT_SWARM_02": {"anchor":[27,12]},
+      "ENEMY_C01_RIFT_SWARM_03": {"anchor":[29,5]}
+    },
+    "contact_t3_entity_state_b_pending_task89_readback": {
+      "strategy_scope": "B_PROTECT_LANE_FAMILY_ONLY",
+      "status": "KNOWN_CORE_STATE_PENDING_COMPLETE_ACTUAL_READBACK",
+      "V353U001": {"anchor":[19,9],"facing":"south"},
+      "ENEMY_C01_BREAKER": {"anchor":[20,11],"facing":"north"},
+      "ENEMY_C01_RIFT_SWARM_01": {"anchor":[22,8],"status":"deflected_alive","grounded":true}
+    },
+    "deterministic_ui_copy": {
+      "objective": "让应急车通过，挡开扑向东门的小体，并站到冲线前。",
+      "jicun_line": "人都在后面。把它引到南边去。",
+      "top_threats": ["应急车先穿过落脚区","小体将在第二时点扑向东门","BREAKER沿直线冲入街区"],
+      "timeline": ["应急车","小体","巨体接触","城市炮","赤红蓄能"],
+      "strategy_a": "正面卡位｜本轮热量24｜警戒设施受损｜道路损伤42｜第二轮热量68、余量1",
+      "strategy_b": "先护撤离线、接触前转身｜本轮热量46｜警戒设施保全｜道路损伤24｜第二轮热量88、余量0"
+    },
+    "contact_t3_physical_fx_allowed": ["contact_highlight","micro_crack","small_directional_debris","water_splash"],
+    "hud_forecast_only_until_later_timeslice": ["T4_city_artillery","T5_red_charge","T5_full_road_buckle"],
+    "candidate_environment_temporal_state_contract": {
+      "authority": "126-c01e02-env-a9-camera-v2-stateful-object-and-road-result-pack-objective.md",
+      "producer_acceptance": "127-c01e02-env-a8-a9-producer-actual-frame-acceptance.md",
+      "PLAN": {
+        "retired_shield": "wall_hung_3_scorches_not_acquired",
+        "east_exit": "first_round_open",
+        "warning_facility": "active",
+        "road": "intact"
+      },
+      "CONTACT_A_B": {
+        "retired_shield": "wall_hung_3_scorches_not_acquired",
+        "east_exit": "first_round_open",
+        "warning_facility": "active",
+        "road_asset": null,
+        "physical_fx_only": "micro_crack"
+      },
+      "T5_A": {
+        "warning_facility": "damaged",
+        "road_result": "long_broken_arc_42"
+      },
+      "T5_B": {
+        "warning_facility": "active",
+        "road_result": "twin_buckles_24"
+      },
+      "contact_full_T5_consequence_leak_allowed": false,
+      "runtime_bound": false
+    },
+    "roof_foreground_layers_must_remain": true,
+    "global_layer_fade_forbidden": true
+  },
+  "asset_binding": {
+    "required_fields": [
+      "stable_id",
+      "slot_id",
+      "revision",
+      "sha256",
+      "view_space",
+      "camera_contract_id",
+      "native_size",
+      "display_scale",
+      "footprint",
+      "pivot_normalized",
+      "pivot_px",
+      "atlas_frames",
+      "state_aliases",
+      "fps_or_hold",
+      "facings",
+      "interaction_sockets"
+    ],
+    "sparse_clip_map_required": true,
+    "rectangular_state_facing_cartesian_product_required": false,
+    "reject_wrong_view_space": true,
+    "reject_wrong_camera_contract_id": true
+  },
+  "visual_recovery_pipeline": {
+    "governing_call02_failure_review": "97-c01e02-a9-1a6-s-c1-call02-producer-visual-failure-review.md",
+    "call02_review_sha256": "1ef4459756a44aaa3f9ee08a3036189164f5e0e4712c9252d4a2a65d0eb75767",
+    "call02_status": "FAIL_WHOLE_SCREEN_FAIL_50_PERCENT_FAIL_100_PERCENT_IDENTITY_AND_REGISTRATION",
+    "call02_allowed_role": "environment_method_donor_only",
+    "call02_forbidden_roles": [
+      "current_topology_exact_cleanplate",
+      "unit_or_object_pixel_source",
+      "map_registration_source",
+      "CONTACT_parent_image",
+      "Runtime_or_real_art_handoff"
+    ],
+    "call_budget": {
+      "total": 4,
+      "used": 3,
+      "remaining": 1,
+      "automatic_reroll": false
+    },
+    "sprite_first_preproduction_objective": "98-c01e02-a9-1a6-s-c2-sprite-first-map-camera-master-preproduction-objective.md",
+    "sprite_first_preproduction_sha256": "7c82e7af59f36e52f795e14b84d647692582ad7643310beed8a26445a4edfdca",
+    "sprite_first_preproduction_delivery_manifest_sha256": "41f5ba27a5b12088e84424c73e4fd6aa6aa93ba2bd7285e4bcb8eb94a94e50be",
+    "p98_product_preflight_acceptance": "100-c01e02-g2-a2-c2-producer-playability-preflight-acceptance.md",
+    "p98_product_preflight_acceptance_sha256": "cd4d128a023136be7197190382b9724b002ad9f093247ce25160838e9d1ffdcc",
+    "current_phase": "ENV_A8_A9_CAMERA_V2_MODULAR_ENVIRONMENT_AND_TEMPORAL_OBJECT_QA_PRODUCER_SIGNED_BREAKER_HUMAN_CONCEPT_AUTHORIZATION_PENDING_CALL04_FALSE",
+    "real_atlas_neutral_consumer_objective": "99-c01e02-g2-a2-c3-current-topology-real-atlas-neutral-consumer-objective.md",
+    "real_atlas_neutral_consumer_sha256": "2ebe650c55709f84fbdcee27ac390a43bf6f53cda8f461e54a1dd5eb355f6594",
+    "real_atlas_neutral_consumer_completion": "main-g2-a2-c3/06-completion-report.md",
+    "real_atlas_neutral_consumer_completion_sha256": "1361431998cc953f0ec4a6de60737ac35daa30e84d335cca46847b1ee11160db",
+    "real_atlas_neutral_consumer_delivery_manifest_sha256": "b70fe98a3ca1019b5445cbbabb3862e29c614a52dbf6dee15b692a59bb4bca19",
+    "p99_producer_acceptance": "106-c01e02-p99-sprite-first-preproduction-and-c3-producer-acceptance.md",
+    "p99_producer_acceptance_sha256": "10c8df7490f21c2df12c513981867fd0168e86f9e789e46105c192996d2d4bf1",
+    "task105_simple_2d_occlusion_correction": "105-c01e02-task99-simple-2d-board-lighting-occlusion-producer-correction.md",
+    "task105_simple_2d_occlusion_correction_sha256": "6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7",
+    "real_atlas_neutral_consumer_required_before_Call03": true,
+    "environment_derivation_objective": "101-c01e02-a9-1a6-env-e0-current-topology-environment-derivation-objective.md",
+    "environment_derivation_objective_sha256": "2f895fa89e25407d7f096df6ad1cc2c5baf7ef1e4395d48dea7de1bd0834f7cc",
+    "environment_derivation_generation_calls": 0,
+    "environment_derivation_status": "MECHANICAL_GEOMETRY_PASS_VISUAL_50_PERCENT_FAIL_VISUAL_100_PERCENT_FAIL_E1_E2_NOT_CONSUMABLE",
+    "environment_visual_rejection": "103-c01e02-env-e0-producer-50-100-visual-rejection.md",
+    "environment_visual_rejection_sha256": "cb68357819b6c72f803fb50eb7d3a24f2a3affb3e2f58335e8d03671b2854070",
+    "runtime_grid_registration_acceptance": "104-c01e02-task98-runtime-grid-registration-producer-acceptance.md",
+    "runtime_grid_registration_acceptance_sha256": "1ad0c1d0d5958f432f81479a119310769eaba3b769637b07ba7bcde127edfe61",
+    "environment_route_user_decision": "107-c01e02-current-topology-premium-environment-route-user-decision.md",
+    "environment_route_user_decision_sha256": "2f730aafd66c2aa1fada4a75bc533c5da25de6e7d4bcb15b0879457be0279459",
+    "environment_route_user_decision_status": "ROUTE_A_USER_APPROVED_EXECUTION_METHOD_SUPERSEDED_BY_108",
+    "route_a2_approval": "108-c01e02-route-a2-modular-environment-and-interaction-user-approval.md",
+    "route_a2_approval_sha256": "c33bc0ffa4fe6f5ecc553001e640eba18a39a917a0c4691def8c940ca0ad0280",
+    "route_a2_status": "USER_APPROVED_MODULAR_GROUND_STRUCTURES_OBJECTS_AND_FOCUS_REVEAL",
+    "camera_a0_pilot_objective": "109-c01e02-g2-a2-c4-camera-a0-modular-structure-focus-reveal-pilot-objective.md",
+    "camera_a0_pilot_objective_sha256": "f67a86dda43d1a509e92f13a2f1f3e26fb29892c9d56a58fb9c5f7755242fd80",
+    "camera_a0_completion": "main-g2-a2-c4-camera-a0-pilot/06-completion-report.md",
+    "camera_a0_completion_sha256": "0d33c774c47620789d31a3131408f2137a98e890b2e68064b7890d24bbe5a773",
+    "camera_a0_delivery_manifest_sha256": "185e3fc55de904cb096e6073236a2e51bc8acd7bb1cb2489101cae0b7efb798f",
+    "p109_camera_selection_acceptance": "110-c01e02-p109-camera-a0-and-focus-reveal-producer-acceptance.md",
+    "p109_camera_selection_acceptance_sha256": "66e5cf7ac2b7e0ea06c33b26698124fd0918c7ab173104be8a2a6733e4f4d78e",
+    "camera_v2_exact_freeze_objective": "111-c01e02-g2-a2-c4b-camera-v2-exact-interface-freeze-objective.md",
+    "camera_v2_exact_freeze_objective_sha256": "7302a78a104533e1f97591cdfe78084ecaecfb181764939ded5c5d262e1f12bb",
+    "camera_v2_exact_completion": "main-g2-a2-c4b-camera-v2-freeze/06-completion-report.md",
+    "camera_v2_exact_completion_sha256": "b82b07a35bd4dabc60bc3dd909c84554787f6857a15d1026cff92bc0f06f0c45",
+    "camera_v2_exact_delivery_manifest_sha256": "cf01823c07d904c38ffad076f08fddba6b0d72f0fcb68ab731ab0cdcb3a7d83b",
+    "p111_camera_v2_producer_acceptance": "112-c01e02-p111-camera-v2-exact-interface-producer-acceptance.md",
+    "p111_camera_v2_producer_acceptance_sha256": "2eda6f614f46b0ba8ef43adc76ff08152d63d3560a5e4b19989c7612d44a2793",
+    "env_a1_objective": "113-c01e02-a9-1a6-env-a1-modular-tactical-environment-kit-master-objective.md",
+    "env_a1_objective_sha256": "f8148ac350ca30a48e991ac73aaf6de3949b3f85c00a473d643819ab601efdde",
+    "env_a1_completion": "art-a9-1a6-env-a1-modular-tactical-environment-kit-master/completion-report.md",
+    "env_a1_completion_sha256": "d5d7c00a753993afec03a25e0e04e0ae5aed741477185f3b72c637e8ffbfb299",
+    "env_a1_delivery_manifest_sha256": "d41a981ca5201814840437bdb43c2f768946f5b8742b4633471a4db051b39264",
+    "env_a1_asset_manifest_sha256": "83107fd9df8d29249312929e6c53307cdb56cf2fecad5b63424d8bc7fd6b323d",
+    "p102_env_a1_producer_review": "115-c01e02-p102-env-a1-producer-visual-review-and-parallel-release.md",
+    "p102_env_a1_producer_review_sha256": "ec545f37d766a248e4c0a5b9dff5e9056a703bb0b53d30fd3a767175bd06140c",
+    "env_a2_recomposition_objective": "117-c01e02-env-a2-simple-2d-recomposition-objective.md",
+    "env_a2_recomposition_objective_sha256": "fe868c48b3673c81ef7ef370c6e2a8e4a9e5dd7ebe3a9e371c0af970cf8634fd",
+    "env_a2_producer_visual_review_objective": "118-c01e02-p103-env-a2-producer-visual-review-objective.md",
+    "env_a2_producer_visual_review_objective_sha256": "c9e8ccfb43a1eb2b92051303ff89f1d8c33c07b5fb8fce234447e111cd8995d8",
+    "env_a2_producer_visual_review_status": "COMPLETE_VISUAL_FAIL_GROUND_GEOMETRY_RETAINED_STRUCTURE_AND_OBJECT_PIXELS_NOT_PROMOTED",
+    "env_a2_completion": "art-a9-1a6-env-a2-simple-recomposition/completion-report.md",
+    "env_a2_completion_sha256": "e661aeb295b65bd620affb00634d2f75120ff523fc52feb823fe387a0ca1e25f",
+    "env_a2_delivery_manifest_sha256": "4d6a9305c2b6a9984b990b3d784187d32514ea5639e837f23c69fbe4cd800b7d",
+    "env_a2_camera_v2_visual_rejection": "119-c01e02-p103-env-a2-camera-v2-visual-rejection.md",
+    "env_a2_camera_v2_visual_rejection_sha256": "ef122975a05ca606040d735368ea7b02edded8512a18dcb868affb20b20ef887",
+    "env_a3_exact_structure_pilot_objective": "121-c01e02-env-a3-camera-v2-exact-structure-pilot-objective.md",
+    "env_a3_exact_structure_pilot_status": "COMPLETE_ZERO_GENERATION_SIX_STRUCTURE_GEOMETRY_AND_REVEAL_METHOD_PASS_NOT_FINAL_ART",
+    "env_a3_exact_structure_pilot_completion": "art-a9-1a6-env-a3-camera-v2-exact-structure-pilot/completion-report.md",
+    "env_a3_exact_structure_pilot_completion_sha256": "cac62e4e0c61965b232824988e198ac7b92a05857667c3a8cc0ec3c804fa2ff3",
+    "env_a3_exact_structure_pilot_delivery_manifest_sha256": "cd1d16abc2206a6eaefbf3320a4edff7b8b98c1ea1bf071529ca5b19ff465dc8",
+    "env_a3_exact_structure_pilot_readback_sha256": "93261faa967a84a26047c8b3eea3e2a18a73dc94fbcdc8351295eaa0eb1f27a9",
+    "env_a4_exact_structure_materialization_objective": "122-c01e02-env-a4-camera-v2-exact-six-structure-materialization-objective.md",
+    "env_a4_exact_structure_materialization_status": "COMPLETE_MECHANICAL_PASS_VISUAL_PROGRAM_BOX_FAIL_NO_BATCH_BY_123",
+    "env_a4_a5_a6_producer_gate": "123-c01e02-env-a4-failure-a5-structure-acceptance-a6-release.md",
+    "env_a4_a5_a6_producer_gate_sha256": "3611bc95e41bb669a219a5fffd9a7754e6dce440599da79e607fd81eba959f11",
+    "env_a5_structure_enrichment_status": "COMPLETE_STRUCTURE_HIERARCHY_PASS_NOT_FINAL_ART_BY_123",
+    "env_a6_structure_material_status": "COMPLETE_ASSET_METHOD_CANDIDATE_PASS_NOT_FINAL_PLAN_BY_125",
+    "env_a6_a7_producer_acceptance": "125-c01e02-env-a6-a7-producer-asset-acceptance-and-a8-plan-recomposition-release.md",
+    "env_a6_a7_producer_acceptance_sha256": "d6cb1fe4614f440f5da51a480e221797f5afffa25f4ce0ec66ab6852f7f30280",
+    "env_a7_six_structure_asset_status": "COMPLETE_SIX_ROLE_DISTINCT_MODULAR_ASSET_CANDIDATE_NOT_FINAL_PLAN",
+    "env_a7_delivery_manifest_sha256": "ef67ad3be40ecb5f9a26f7bfe9a5149d281d090aef4e9c2be6e619d1673cb36f",
+    "env_a8_structure_recomposition_status": "COMPLETE_EXACT_RECOMPOSITION_AND_INTERSECT_ONLY_REVEAL_PASS_ENVIRONMENT_RICHNESS_NOT_FINAL",
+    "env_a8_completion_sha256": "ffd51a06639f9a2f1ccade2387af8bb441be0c9aba4f55b911eaa48f10e43638",
+    "env_a8_delivery_manifest_sha256": "11dcd7a2c76949968ae04161ad216e489ccb43d0766ae2479833b4b06deb6563",
+    "env_a9_objective": "126-c01e02-env-a9-camera-v2-stateful-object-and-road-result-pack-objective.md",
+    "env_a9_objective_sha256": "0d48dc30abd6f84fb6b54c0f2f54e5e36bde6eb40da6ff4d23a33d29a0c4ef20",
+    "env_a9_status": "COMPLETE_SEVEN_RGBA_AND_FIVE_STATE_TEMPORAL_QA_PRODUCER_SIGNED_NOT_FINAL_PLAN",
+    "env_a9_completion_sha256": "a25e3ac7b061d62e94da50655c4dfbe9fcbc4155892f43f2b3b85363eeff5d9b",
+    "env_a9_delivery_manifest_sha256": "b046ac71a393f087ef5de83a4b90e46ee33f4d94cd587e7bc54b16c09b64b9bd",
+    "env_a8_a9_producer_acceptance": "127-c01e02-env-a8-a9-producer-actual-frame-acceptance.md",
+    "env_a8_a9_producer_acceptance_sha256": "1c3e8810f9165eb2e58edc6ccb72e17af478f29db6fac106797fcef94ad9d874",
+    "environment_extra_generation_budget_approved": true,
+    "environment_extra_generation_budget": {"total":1,"used":1,"remaining":0,"automatic_reroll":false},
+    "environment_generation_execution_allowed": false,
+    "environment_generation_status": "ENV_A1_ONE_CALL_MODULE_SOURCE_USABLE_BUT_WRONG_CAMERA_STRUCTURE_PIXELS_ENV_A2_MECHANICAL_PASS_VISUAL_FAIL_NO_REROLL",
+    "environment_generation_blocked_until": null,
+    "environment_asset_method": "GROUND_ONLY_BASE_PLUS_SEPARATE_STRUCTURE_AND_SEPARATE_STATEFUL_TACTICAL_OBJECT_RESOURCES_NOT_WHOLE_SCENE_BAKE",
+    "environment_producer_50_100_review_required_before_PLAN_recomposition": true,
+    "current_proxy_consumer_limitation": "Camera_V2_modular_structures_and_stateful_object_temporal_QA_are_producer_signed_but_real_character_masters_final_PLAN_RUNTIME_and_final_60fps_are_not_proven_real_art_loaded_zero",
+    "separation_order": [
+      "real_AtlasTexture_identity_neutral_consumer_preflight_complete_by_106",
+      "route_A2_modular_environment_and_focus_reveal_user_approved_by_108",
+      "camera_A0_and_focus_reveal_proxy_pilot_then_P109_user_selection",
+      "C4B_camera_V2_exact_projection_registration_pivot_socket_and_A5_compatibility_freeze",
+      "one_ENV_A1_modular_environment_call_then_P102_visual_fail_module_sources_retained",
+      "parallel_branch_A_ENV_A2_mechanical_pass_then_P103_camera_angle_visual_fail",
+      "parallel_branch_B_Call03_consumed_then_P100_turtle_wrong_north_visual_fail",
+      "replacement_Camera_V2_six_structure_assets_and_stateful_object_temporal_QA_complete",
+      "BREAKER_human_concept_resource_authorization_required_before_any_replacement_master",
+      "deterministic_PLAN_recomposition",
+      "producer_3_10_30_and_50_100_review",
+      "CONTACT_and_sparse_clips_only_after_PLAN_acceptance"
+    ],
+    "plan_slots": {
+      "Guardian_Z": {
+        "native_size": [256, 256],
+        "footprint": [2, 2],
+        "pivot_normalized": [0.5, 0.875],
+        "pivot_px": [128, 224],
+        "first_clip": "idle/east/0"
+      },
+      "BREAKER": {
+        "native_size": [384, 384],
+        "footprint": [3, 3],
+        "pivot_normalized": [0.5, 0.8333333333],
+        "pivot_px": [192, 320],
+        "first_clip": "charge/north/0"
+      }
+    },
+    "call03_breaker_objective": "116-c01e02-call03-breaker-north-camera-v2-master-objective.md",
+    "call03_breaker_objective_sha256": "da9a7f3add17703a477eb3bb90db92b413b37f2a5107b36301ac5ebc691002fd",
+    "call03_camera_v2_geometry_guide": "art-a9-1a6-s-c2-call03-breaker-north-v2/source-guides/BREAKER_NORTH_CAMERA_V2_40X24_GEOMETRY_GUIDE_384.png",
+    "call03_camera_v2_geometry_guide_sha256": "fedfd4e3150b4856f4120fb832b2b3a8f1ba00f9a0b6b90f2c2c4701497d7131",
+    "call03_breaker_safe_identity_board": "art-a9-1a6-s-c2-sprite-first-map-camera-masters/BREAKER_BX_ISOLATED_SAFE_REFERENCE_BOARD_2400x1800.png",
+    "call03_breaker_safe_identity_board_sha256": "e36bd3c9d186806d88614bd9f9df1eb97b56228889cc96b2cad1fda992170ee3",
+    "call03_breaker_raw": "art-a9-1a6-s-c2-call03-breaker-north-v2/generation-raw/CALL03_BREAKER_NORTH_RAW.png",
+    "call03_breaker_raw_sha256": "0aef14923503f0c132343cb0223306580470911bfe32b9e57a5fe33e0664c592",
+    "call03_breaker_failure_manifest_sha256": "cc99940c750949f6093bcfa6b76a787828c3db3c62768d0c3735a57a2af60632",
+    "call03_breaker_producer_visual_rejection": "120-c01e02-p100-call03-breaker-producer-visual-rejection.md",
+    "call03_breaker_producer_visual_rejection_sha256": "0cffd0551fe79161a9c47acd704b7febe363328597c601119db6f270e932d384",
+    "call03_breaker_status": "COMPLETE_VISUAL_FAIL_TURTLE_QUADRUPED_WRONG_NORTH_NO_MASTER_NO_REROLL",
+    "breaker_script_scaffold_status": "STOP_REV1_REV4_HISTORY_NO_SOLE_SCAFFOLD_NO_REV5_NO_OVERPAINT",
+    "breaker_script_scaffold_stop": "124-c01e02-breaker-script-scaffold-stop-and-human-concept-resource-gate.md",
+    "breaker_script_scaffold_stop_sha256": "d0d564e91faf808ae90a69bcaf95f42aea1dd6cdcc5ce3200825f544f4f3e98d",
+    "breaker_sole_scaffold": null,
+    "breaker_human_concept_resource_authorized": false,
+    "breaker_human_concept_next_deliverable": "one_192_black_silhouette_then_one_384_north_BX_master_from_blank_Camera_V2_canvas",
+    "call03_environment_pixels_allowed": false,
+    "call03_BREAKER_allowed": false,
+    "call04_Guardian_Z_allowed": false,
+    "real_art_loaded": 0
+  },
+  "gates": {
+    "g2_a1_r2_geometry_calibration": "complete_candidate_exact_reaccepted_by_84",
+    "r2c_c1_swarm_ground_occupancy": "complete_candidate_exact_reaccepted_by_84",
+    "u86_map_world_authority_decision": "complete_route_A_user_approved_2026_08_20",
+    "p87_main_planner_gameplay_alignment": "complete_fun_first_contract_and_dispatch_objectives_signed",
+    "a9_1a6_scene_target_lookdev_legacy_81": "held_superseded_for_execution_by_90_call01_history_only",
+    "g2_a2_visual_compositor_proxy_legacy_82": "held_superseded_for_execution_by_89_source_wip_reuse_only",
+    "g2_a2_c1_current_topology_fixture_free_golden_turn": "complete_candidate_preflight_task93_corrected_lookdev_scope_only",
+    "g2_a2_c1_continuous_nonheadless_player_trace_correction": "complete_candidate_evidence_by_93",
+    "a9_1a6_s_c1_current_topology_preproduction": "complete_producer_verified_release_superseded_by_p94",
+    "p89_g2_a2_c1_producer_actual_frame_review": "complete_lookdev_precondition_CALL02_PLAN_only_FUN_not_proven_by_94",
+    "a9_1a6_s_c1_current_topology_scene_lookdev": "complete_Call02_visual_fail_environment_method_donor_only",
+    "art_call02": "complete_visual_fail_identity_and_registration_by_97",
+    "g2_a2_c2_screen_input_timeline_and_embodied_consequence": "complete_candidate_product_preflight_by_100_FUN_not_proven",
+    "p97_call02_A_PLAN_producer_visual_review": "complete_visual_fail_signed_by_97",
+    "p98_g2_a2_c2_producer_playability_preflight_review": "complete_product_preflight_FUN_not_proven_by_100",
+    "art_call03_A_CONTACT": "stopped_permanently_Call02_failed",
+    "a9_1a6_s_c2_sprite_first_map_camera_preproduction": "complete_zero_generation_producer_prechecked_for_C3_Call03_false",
+    "g2_a2_c3_real_atlas_neutral_consumer": "complete_candidate_fixture_only_preflight_signed_by_106_final_60fps_not_proven",
+    "a9_1a6_env_e0_current_topology_environment_derivation": "complete_mechanical_geometry_only_visual_rejected_by_103_E1_E2_not_consumable",
+    "u107_current_topology_premium_environment_route_decision": "complete_route_A_user_approved_method_superseded_by_108_generation_held",
+    "u108_route_A2_modular_environment_and_interaction_approval": "complete_user_approved_environment_budget_released_to_ENV_A1_by_112",
+    "g2_a2_c4_camera_A0_modular_structure_focus_reveal_pilot": "complete_candidate_proxy_pilot_by_110",
+    "p109_camera_A0_and_focus_reveal_producer_user_visual_selection": "complete_producer_selected_40X24_by_110",
+    "g2_a2_c4b_camera_V2_exact_interface_freeze": "complete_candidate_exact_interface_producer_signed_by_112",
+    "p111_camera_V2_exact_interface_producer_review": "complete_ENV_A1_released_by_112",
+    "a9_1a6_env_A1_modular_tactical_environment_kit_master": "complete_mechanical_PASS_integrated_visual_FAIL_module_source_retained_by_115",
+    "p102_current_topology_environment_50_100_producer_review": "complete_visual_FAIL_module_source_retained_ENV_A2_and_environment_independent_Call03_parallel_released_by_115",
+    "p99_sprite_first_preproduction_producer_review": "complete_candidate_fixture_preproduction_by_106_Call03_false",
+    "a9_1a6_env_A2_simple_2D_recomposition": "complete_mechanical_PASS_visual_camera_mismatch_FAIL_by_119",
+    "p103_env_A2_simple_2D_recomposition_producer_review": "complete_visual_FAIL_structure_edges_20_25deg_vs_Camera_V2_30_96deg_by_119",
+    "a9_1a6_env_A3_Camera_V2_exact_structure_pilot": "complete_zero_generation_six_structure_40x24_geometry_and_0_34_reveal_method_PASS_not_final_art",
+    "a9_1a6_env_A4_Camera_V2_exact_six_structure_materialization": "complete_mechanical_PASS_visual_program_box_FAIL_no_batch_by_123",
+    "a9_1a6_env_A5_Camera_V2_one_structure_enrichment": "complete_structure_hierarchy_PASS_not_final_art_by_123",
+    "a9_1a6_env_A6_Camera_V2_one_structure_material_pilot": "complete_asset_method_candidate_PASS_not_final_PLAN_by_125",
+    "a9_1a6_env_A7_Camera_V2_six_structure_asset_pack": "complete_six_role_distinct_modular_assets_by_125",
+    "a9_1a6_env_A8_Camera_V2_structure_plan_recomposition": "complete_exact_recomposition_and_intersect_only_reveal_PASS_environment_richness_not_final_by_127",
+    "a9_1a6_env_A9_Camera_V2_stateful_object_road_pack": "complete_seven_RGBA_and_five_state_temporal_QA_producer_signed_not_final_by_127",
+    "art_call03_BREAKER_plan_master": "complete_visual_FAIL_turtle_quadruped_wrong_north_no_master_by_120",
+    "p100_call03_BREAKER_producer_visual_review": "complete_visual_FAIL_by_120_Call04_false",
+    "breaker_script_scaffold_exploration": "complete_STOP_requires_human_concept_redraw_by_124",
+    "breaker_human_concept_resource_authorization": "blocked_waiting_explicit_user_authorization",
+    "art_call04_Guardian_Z_plan_master": "blocked_by_BREAKER_visual_failure_and_no_replacement_master",
+    "plan_deterministic_recomposition": "blocked_by_replacement_Camera_V2_environment_BREAKER_and_Guardian_masters",
+    "UA91": "blocked",
+    "a9_1b": "blocked",
+    "signed_exact_handoff": "blocked",
+    "g2_b": "blocked",
+    "runtime_promotion": "forbidden"
+  }
+}

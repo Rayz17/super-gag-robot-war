@@ -1,0 +1,713 @@
+{
+  "schema_id": "runstate_v2_r0_p1_fixture_pack_v1",
+  "authority_boundary": {
+    "canon_write_allowed": false,
+    "reader_write_allowed": false,
+    "runtime_write_allowed": false,
+    "demo_write_allowed": false,
+    "build_status": "zero_build",
+    "human_evidence_status": "not_run"
+  },
+  "fixtures": [
+    {
+      "fixture_id": "FX-RS2-R0-ATOMIC",
+      "stage": "R0",
+      "case_kind": "full",
+      "purpose": "最低全局状态、三 owner 原子提交、唯一物件、资源小数串、投影与重放",
+      "before_state": {
+        "schema_id": "run_state_v2",
+        "schema_version": 2,
+        "run_id": "TEST_RUN_R0",
+        "state_revision": 5,
+        "run_status": "active",
+        "authority_boundary": "candidate_only_zero_build",
+        "last_stable_checkpoint_id": "TEST_CP_R0_BEFORE",
+        "world_clock": {
+          "clock_version": 1,
+          "cycle_index": 0,
+          "elapsed_ms": 0,
+          "scheduler_contract_id": "TEST_D04_SCHEDULER_CLOCK_V1",
+          "last_boundary": "TEST_CP_R0_BEFORE"
+        },
+        "domain_versions": {
+          "ST_BODY": 1,
+          "ST_EQUIPMENT": 1,
+          "ST_RESOURCE": 1,
+          "ST_RESULT": 1
+        },
+        "domains": {
+          "ST_BODY": {
+            "state_id": "ST_BODY",
+            "owner_system": "SYS-BODY",
+            "owner_group_id": "SOG-BODY",
+            "domain_version": 1,
+            "records": {
+              "TEST_BODY_GZ": {
+                "_record_version": 1,
+                "_last_transaction_id": "TEST_SEED_R0_BODY",
+                "_source_authority": "test_fixture",
+                "_visibility_scope": "player",
+                "_observer_ids": [],
+                "_redact_fields": [],
+                "body_id": "TEST_BODY_GZ",
+                "machine_soul_id": "TEST_SOUL_GZ",
+                "systems": {
+                  "left_arm": "disabled",
+                  "right_system": "damaged"
+                },
+                "interfaces": {
+                  "maintenance_port": "open"
+                },
+                "mobility": ["walk", "brace"],
+                "weapons": ["TEST_WEAPON_GZ_FIST"],
+                "tools": ["TEST_TOOL_GZ_TOW"],
+                "integrity": {
+                  "left_arm": "destroyed",
+                  "right_system": "damaged"
+                },
+                "heat": {
+                  "current": 0,
+                  "cap": 3
+                },
+                "energy": {
+                  "current": 2,
+                  "cap": 3
+                },
+                "ammo": {
+                  "TEST_TOOL_GZ_TOW": 1
+                }
+              }
+            }
+          },
+          "ST_EQUIPMENT": {
+            "state_id": "ST_EQUIPMENT",
+            "owner_system": "SYS-BODY",
+            "owner_group_id": "SOG-BODY",
+            "domain_version": 1,
+            "records": {
+              "TEST_ITEM_R0_REPAIR_COUPLER": {
+                "_record_version": 1,
+                "_last_transaction_id": "TEST_SEED_R0_ITEM",
+                "_source_authority": "test_fixture",
+                "_visibility_scope": "player",
+                "_observer_ids": [],
+                "_redact_fields": [],
+                "item_id": "TEST_ITEM_R0_REPAIR_COUPLER",
+                "instance_or_unique": "unique",
+                "owner": "TEST_WANJI",
+                "slot": "TEST_STORAGE",
+                "compatibility": ["TEST_BODY_GZ"],
+                "condition": {
+                  "state": "serviceable"
+                },
+                "source": "TEST_SOURCE_R0_SALVAGE",
+                "installed_state": "stored"
+              }
+            }
+          },
+          "ST_RESOURCE": {
+            "state_id": "ST_RESOURCE",
+            "owner_system": "SYS-SETTLE",
+            "owner_group_id": "SOG-SETTLE",
+            "domain_version": 1,
+            "records": {
+              "RES_COMMON_MATERIALS": {
+                "_record_version": 1,
+                "_last_transaction_id": "TEST_SEED_R0_RESOURCE",
+                "_source_authority": "test_fixture",
+                "_visibility_scope": "player",
+                "_observer_ids": [],
+                "_redact_fields": [],
+                "resource_id": "RES_COMMON_MATERIALS",
+                "domain_owner_system": "SYS-SETTLE",
+                "source_mode": "hub",
+                "balance_before": "2",
+                "delta": "0",
+                "balance_after": "2",
+                "cap_rule_ref": "TEST_CAP_COMMON_MATERIALS",
+                "source": "TEST_SEED_R0_RESOURCE",
+                "use": "TEST_NONE",
+                "reset_rule": "persistent_no_automatic_reset",
+                "receipt_id": "TEST_RCPT_R0_RESOURCE_SEED"
+              }
+            }
+          },
+          "ST_RESULT": {
+            "state_id": "ST_RESULT",
+            "owner_system": "SYS-SETTLE",
+            "owner_group_id": "SOG-SETTLE",
+            "domain_version": 1,
+            "records": {
+              "TEST_RESULT_R0_HUB": {
+                "_record_version": 1,
+                "_last_transaction_id": "TEST_SEED_R0_RESULT",
+                "_source_authority": "test_fixture",
+                "_visibility_scope": "player",
+                "_observer_ids": [],
+                "_redact_fields": [],
+                "result_id": "TEST_RESULT_R0_HUB",
+                "transaction_id": "TEST_SEED_R0_RESULT",
+                "source_mode": "hub",
+                "source_node": "TEST_NODE_R0_HUB",
+                "resolution": "partial",
+                "objective_results": [
+                  {
+                    "event_id": "TEST_EVENT_R0_SEED",
+                    "state": "prepared"
+                  }
+                ],
+                "changes": [],
+                "future_consumers": ["TEST_CONSUMER_R0_DEPART"],
+                "player_summary": ["维修方案已经准备。"]
+              }
+            }
+          }
+        },
+        "transaction_ledger": {},
+        "commit_order": []
+      },
+      "transaction": {
+        "schema_id": "state_transaction_v2",
+        "schema_version": 2,
+        "transaction_group_id": "TEST_TX_R0_ATOMIC_001",
+        "proposal_hash": "9c64caf00e5b71eb9d01062616387d5982396d451192844bcf3bfe33a3183a9c",
+        "source_mode": "hub",
+        "source_node_id": "TEST_NODE_R0_REPAIR",
+        "source_checkpoint_id": "TEST_CP_R0_BEFORE",
+        "settlement_level": "ACTIVITY",
+        "resolution": "clear",
+        "expected_state_revision": 5,
+        "required_owner_groups": ["SOG-BODY", "SOG-NARR", "SOG-SETTLE"],
+        "operations": [
+          {
+            "op_id": "TEST_OP_R0_STORY_CREATE",
+            "state_id": "ST_STORY",
+            "owner_group_id": "SOG-NARR",
+            "op_kind": "OP_CREATE_RECORD",
+            "record_id": "TEST_FACT_R0_REPAIR_COMMITTED",
+            "from_version": 0,
+            "to_version": 1,
+            "payload": {
+              "_record_version": 1,
+              "_last_transaction_id": "TEST_TX_R0_ATOMIC_001",
+              "_source_authority": "test_fixture",
+              "_visibility_scope": "public",
+              "_observer_ids": [],
+              "_redact_fields": [],
+              "fact_id": "TEST_FACT_R0_REPAIR_COMMITTED",
+              "value": "repair_committed",
+              "source_scene": "TEST_SCENE_R0_REPAIR",
+              "visibility": "public",
+              "committed_at": "TEST_T_R0_COMMIT",
+              "supersedes": "NONE"
+            },
+            "cause_ref": "TEST_RESULT_R0_HUB",
+            "visibility_scope": "public",
+            "observer_ids": [],
+            "redact_fields": [],
+            "expected_record_hash": "NONE"
+          },
+          {
+            "op_id": "TEST_OP_R0_BODY_PATCH",
+            "state_id": "ST_BODY",
+            "owner_group_id": "SOG-BODY",
+            "op_kind": "OP_PATCH_RECORD",
+            "record_id": "TEST_BODY_GZ",
+            "from_version": 1,
+            "to_version": 2,
+            "payload": {
+              "patch": {
+                "integrity": {
+                  "left_arm": "destroyed",
+                  "right_system": "stable_after_repair"
+                }
+              }
+            },
+            "cause_ref": "TEST_RESULT_R0_HUB",
+            "visibility_scope": "player",
+            "observer_ids": [],
+            "redact_fields": [],
+            "expected_record_hash": "cafc91b2e0b1ca90c1381bbd5ae258a418448bebdcc31e82d65d73fd13a7b8f1"
+          },
+          {
+            "op_id": "TEST_OP_R0_RESOURCE_DELTA",
+            "state_id": "ST_RESOURCE",
+            "owner_group_id": "SOG-SETTLE",
+            "op_kind": "OP_RESOURCE_DELTA",
+            "record_id": "RES_COMMON_MATERIALS",
+            "from_version": 1,
+            "to_version": 2,
+            "payload": {
+              "resource_id": "RES_COMMON_MATERIALS",
+              "domain_owner_system": "SYS-SETTLE",
+              "source_mode": "hub",
+              "balance_before": "2",
+              "delta": "-1",
+              "balance_after": "1",
+              "cap_rule_ref": "TEST_CAP_COMMON_MATERIALS",
+              "source": "TEST_RESULT_R0_HUB",
+              "use": "TEST_REPAIR_GZ_RIGHT_SYSTEM",
+              "reset_rule": "persistent_no_automatic_reset",
+              "receipt_id": "TEST_RCPT_R0_RESOURCE_COMMIT"
+            },
+            "cause_ref": "TEST_RESULT_R0_HUB",
+            "visibility_scope": "player",
+            "observer_ids": [],
+            "redact_fields": [],
+            "expected_record_hash": "6f4ebf0ef538d8f692eb92ce1eae13c35957a0ce5618941c9bac06ad99e57c71"
+          },
+          {
+            "op_id": "TEST_OP_R0_UNIQUE_TRANSFER",
+            "state_id": "ST_EQUIPMENT",
+            "owner_group_id": "SOG-BODY",
+            "op_kind": "OP_TRANSFER_UNIQUE",
+            "record_id": "TEST_ITEM_R0_REPAIR_COUPLER",
+            "from_version": 1,
+            "to_version": 2,
+            "payload": {
+              "item_id": "TEST_ITEM_R0_REPAIR_COUPLER",
+              "from_owner": "TEST_WANJI",
+              "to_owner": "TEST_BODY_GZ",
+              "from_slot": "TEST_STORAGE",
+              "to_slot": "TEST_SLOT_AUX",
+              "installed_state": "installed"
+            },
+            "cause_ref": "TEST_RESULT_R0_HUB",
+            "visibility_scope": "player",
+            "observer_ids": [],
+            "redact_fields": [],
+            "expected_record_hash": "fa5a706b976cad95818587459ed233642dbe449ddf594b1fdd4a9fa07680afa4"
+          },
+          {
+            "op_id": "TEST_OP_R0_RESULT_APPEND",
+            "state_id": "ST_RESULT",
+            "owner_group_id": "SOG-SETTLE",
+            "op_kind": "OP_APPEND_EVENT",
+            "record_id": "TEST_RESULT_R0_HUB",
+            "from_version": 1,
+            "to_version": 2,
+            "payload": {
+              "list_field": "objective_results",
+              "event_id": "TEST_EVENT_R0_REPAIR",
+              "event_value": {
+                "event_id": "TEST_EVENT_R0_REPAIR",
+                "state": "committed"
+              }
+            },
+            "cause_ref": "TEST_RESULT_R0_HUB",
+            "visibility_scope": "player",
+            "observer_ids": [],
+            "redact_fields": [],
+            "expected_record_hash": "3ec52fb5b3e249f054912c648713d09c97b29905279f4f64bef0c2d52c873253"
+          }
+        ],
+        "future_consumers": ["TEST_CONSUMER_R0_DEPART"],
+        "player_summary": ["馆守Z恢复了一个具名功能，消耗1份通用材料。"],
+        "source_authority": "test_fixture",
+        "idempotency_key": "TEST_TX_R0_ATOMIC_001",
+        "build_status": "zero_build",
+        "human_evidence_status": "not_run"
+      },
+      "prepared_receipts": [
+        {
+          "receipt_id": "TEST_PREP_R0_BODY",
+          "owner_group_id": "SOG-BODY",
+          "owner_system": "SYS-BODY",
+          "owner_version": "ST_BODY@1;ST_EQUIPMENT@1",
+          "proposal_hash": "9c64caf00e5b71eb9d01062616387d5982396d451192844bcf3bfe33a3183a9c",
+          "accepted_operation_ids": ["TEST_OP_R0_BODY_PATCH", "TEST_OP_R0_UNIQUE_TRANSFER"],
+          "rejected_operation_ids": [],
+          "reason_codes": [],
+          "prepared_at_checkpoint": "TEST_CP_R0_BEFORE",
+          "status": "prepared"
+        },
+        {
+          "receipt_id": "TEST_PREP_R0_NARR",
+          "owner_group_id": "SOG-NARR",
+          "owner_system": "SYS-NARR",
+          "owner_version": "ST_STORY@0",
+          "proposal_hash": "9c64caf00e5b71eb9d01062616387d5982396d451192844bcf3bfe33a3183a9c",
+          "accepted_operation_ids": ["TEST_OP_R0_STORY_CREATE"],
+          "rejected_operation_ids": [],
+          "reason_codes": [],
+          "prepared_at_checkpoint": "TEST_CP_R0_BEFORE",
+          "status": "prepared"
+        },
+        {
+          "receipt_id": "TEST_PREP_R0_SETTLE",
+          "owner_group_id": "SOG-SETTLE",
+          "owner_system": "SYS-SETTLE",
+          "owner_version": "ST_RESOURCE@1;ST_RESULT@1",
+          "proposal_hash": "9c64caf00e5b71eb9d01062616387d5982396d451192844bcf3bfe33a3183a9c",
+          "accepted_operation_ids": ["TEST_OP_R0_RESOURCE_DELTA", "TEST_OP_R0_RESULT_APPEND"],
+          "rejected_operation_ids": [],
+          "reason_codes": [],
+          "prepared_at_checkpoint": "TEST_CP_R0_BEFORE",
+          "status": "prepared"
+        }
+      ],
+      "expected": {
+        "commit_status": "accepted",
+        "reason_code": "committed",
+        "state_revision_after": 6,
+        "receipt_id": "RCPT_TEST_TX_R0_ATOMIC_001",
+        "replay_status": "idempotent_replay",
+        "replay_state_revision_after": 6,
+        "after_values": {
+          "domains.ST_STORY.records.TEST_FACT_R0_REPAIR_COMMITTED.value": "repair_committed",
+          "domains.ST_BODY.records.TEST_BODY_GZ.integrity.right_system": "stable_after_repair",
+          "domains.ST_EQUIPMENT.records.TEST_ITEM_R0_REPAIR_COUPLER.owner": "TEST_BODY_GZ",
+          "domains.ST_EQUIPMENT.records.TEST_ITEM_R0_REPAIR_COUPLER.slot": "TEST_SLOT_AUX",
+          "domains.ST_RESOURCE.records.RES_COMMON_MATERIALS.balance_after": "1",
+          "domains.ST_RESULT.records.TEST_RESULT_R0_HUB.objective_results.1.event_id": "TEST_EVENT_R0_REPAIR"
+        },
+        "projection_knowledge_owner": "PLAYER",
+        "visible_paths": [
+          "visible_records.ST_STORY.TEST_FACT_R0_REPAIR_COMMITTED.value",
+          "visible_records.ST_BODY.TEST_BODY_GZ.integrity.right_system",
+          "visible_records.ST_RESOURCE.RES_COMMON_MATERIALS.balance_after"
+        ],
+        "redacted_paths": [],
+        "forbidden_projection_values": []
+      },
+      "build_status": "zero_build",
+      "human_evidence_status": "not_run",
+      "canonical_sha256": "d4d7a545a34b1101ad69468d0066d3b9c7521f8b79f434f014eaeb3ec6f72f06"
+    },
+    {
+      "fixture_id": "FX-RS2-R0-MISSING-OWNER",
+      "stage": "R0",
+      "case_kind": "derived_fault",
+      "derives_from": "FX-RS2-R0-ATOMIC",
+      "fault_injection": {
+        "remove_prepared_owner_group": "SOG-BODY"
+      },
+      "expected": {
+        "commit_status": "rejected",
+        "reason_code": "E_PREPARED_OWNER_MISSING",
+        "state_revision_after": 5,
+        "unchanged_paths": [
+          "domains.ST_BODY.records.TEST_BODY_GZ.integrity.right_system",
+          "domains.ST_EQUIPMENT.records.TEST_ITEM_R0_REPAIR_COUPLER.owner",
+          "domains.ST_RESOURCE.records.RES_COMMON_MATERIALS.balance_after",
+          "commit_order"
+        ],
+        "accepted_receipt_absent": true
+      },
+      "build_status": "zero_build",
+      "human_evidence_status": "not_run",
+      "canonical_sha256": "7299df3a322bb361b9181e264991e240f6879d4d815e88ef81e5acb02bf48859"
+    },
+    {
+      "fixture_id": "FX-RS2-P1-C2-REDACTION",
+      "stage": "P1",
+      "case_kind": "full",
+      "purpose": "有限接触更新、动作同意撤回、带宽消费、观察者投影和后台字段删改",
+      "before_state": {
+        "schema_id": "run_state_v2",
+        "schema_version": 2,
+        "run_id": "TEST_RUN_P1",
+        "state_revision": 12,
+        "run_status": "active",
+        "authority_boundary": "candidate_only_zero_build",
+        "last_stable_checkpoint_id": "TEST_CP_P1_BEFORE",
+        "world_clock": {
+          "clock_version": 1,
+          "cycle_index": 3,
+          "elapsed_ms": 24000,
+          "scheduler_contract_id": "TEST_D04_SCHEDULER_CLOCK_V1",
+          "last_boundary": "TEST_CP_P1_BEFORE"
+        },
+        "domain_versions": {
+          "ST_CONSENT": 1,
+          "ST_CONTACT": 1,
+          "ST_RESOURCE": 1
+        },
+        "domains": {
+          "ST_CONTACT": {
+            "state_id": "ST_CONTACT",
+            "owner_system": "SYS-C2",
+            "owner_group_id": "SOG-C2",
+            "domain_version": 1,
+            "records": {
+              "TEST_CONTACT_P1_ALPHA": {
+                "_record_version": 1,
+                "_last_transaction_id": "TEST_SEED_P1_CONTACT",
+                "_source_authority": "test_fixture",
+                "_visibility_scope": "observer_set",
+                "_observer_ids": ["CH_JICUN", "PLAYER"],
+                "_redact_fields": ["extensions.backend_exact_identity"],
+                "extensions": {
+                  "backend_exact_identity": "TEST_SECRET_ENEMY_ALPHA"
+                },
+                "contact_id": "TEST_CONTACT_P1_ALPHA",
+                "reported_type": "unknown_heavy",
+                "position_or_error_area": {
+                  "x": 9,
+                  "y": 4,
+                  "radius": 2
+                },
+                "identity_level": "shape_only",
+                "source_id": "TEST_SENSOR_P1_A",
+                "observed_at": "TEST_CLOCK_24000MS",
+                "confidence": "0.40",
+                "shared_with": ["CH_JICUN", "PLAYER"],
+                "stale_after": "TEST_CLOCK_32000MS"
+              }
+            }
+          },
+          "ST_CONSENT": {
+            "state_id": "ST_CONSENT",
+            "owner_system": "SYS-REL",
+            "owner_group_id": "SOG-REL",
+            "domain_version": 1,
+            "records": {
+              "TEST_CONSENT_P1_ROUTE": {
+                "_record_version": 1,
+                "_last_transaction_id": "TEST_SEED_P1_CONSENT",
+                "_source_authority": "test_fixture",
+                "_visibility_scope": "player",
+                "_observer_ids": [],
+                "_redact_fields": [],
+                "consent_id": "TEST_CONSENT_P1_ROUTE",
+                "subject_id": "TEST_SOUL_P1_UNIT",
+                "proposed_action": "TEST_ACTION_P1_ROUTE",
+                "requester": "CH_JICUN",
+                "conditions": ["stop_on_new_contact"],
+                "response": "accepted_with_condition",
+                "responded_at": "TEST_CLOCK_20000MS",
+                "withdrawal_window": "open_until_commit"
+              }
+            }
+          },
+          "ST_RESOURCE": {
+            "state_id": "ST_RESOURCE",
+            "owner_system": "SYS-SETTLE",
+            "owner_group_id": "SOG-SETTLE",
+            "domain_version": 1,
+            "records": {
+              "RES_COMMAND_BANDWIDTH": {
+                "_record_version": 1,
+                "_last_transaction_id": "TEST_SEED_P1_RESOURCE",
+                "_source_authority": "test_fixture",
+                "_visibility_scope": "player",
+                "_observer_ids": [],
+                "_redact_fields": [],
+                "resource_id": "RES_COMMAND_BANDWIDTH",
+                "domain_owner_system": "SYS-C2",
+                "source_mode": "tactical",
+                "balance_before": "2",
+                "delta": "0",
+                "balance_after": "2",
+                "cap_rule_ref": "TEST_CAP_COMMAND_BANDWIDTH",
+                "source": "TEST_SCHEDULER_P1_CYCLE",
+                "use": "TEST_NONE",
+                "reset_rule": "reset_to_2_at_scheduler_cycle_close",
+                "receipt_id": "TEST_RCPT_P1_RESOURCE_SEED"
+              }
+            }
+          }
+        },
+        "transaction_ledger": {},
+        "commit_order": []
+      },
+      "transaction": {
+        "schema_id": "state_transaction_v2",
+        "schema_version": 2,
+        "transaction_group_id": "TEST_TX_P1_C2_001",
+        "proposal_hash": "a3d17ed7d53f290d68355abc43999c17fc87365a9a91f0101ae28d7ce95f1781",
+        "source_mode": "tactical",
+        "source_node_id": "TEST_NODE_P1_C2_CONTACT",
+        "source_checkpoint_id": "TEST_CP_P1_BEFORE",
+        "settlement_level": "ENCOUNTER",
+        "resolution": "partial",
+        "expected_state_revision": 12,
+        "required_owner_groups": ["SOG-C2", "SOG-REL", "SOG-SETTLE"],
+        "operations": [
+          {
+            "op_id": "TEST_OP_P1_CONTACT_REPLACE",
+            "state_id": "ST_CONTACT",
+            "owner_group_id": "SOG-C2",
+            "op_kind": "OP_REPLACE_RECORD",
+            "record_id": "TEST_CONTACT_P1_ALPHA",
+            "from_version": 1,
+            "to_version": 2,
+            "payload": {
+              "_record_version": 2,
+              "_last_transaction_id": "TEST_TX_P1_C2_001",
+              "_source_authority": "test_fixture",
+              "_visibility_scope": "observer_set",
+              "_observer_ids": ["CH_JICUN", "PLAYER"],
+              "_redact_fields": ["extensions.backend_exact_identity"],
+              "extensions": {
+                "backend_exact_identity": "TEST_SECRET_ENEMY_ALPHA_CONFIRMED"
+              },
+              "contact_id": "TEST_CONTACT_P1_ALPHA",
+              "reported_type": "heavy_biped_possible",
+              "position_or_error_area": {
+                "x": 8,
+                "y": 4,
+                "radius": 1
+              },
+              "identity_level": "class_probable",
+              "source_id": "TEST_SENSOR_P1_A",
+              "observed_at": "TEST_CLOCK_28000MS",
+              "confidence": "0.70",
+              "shared_with": ["CH_JICUN", "PLAYER"],
+              "stale_after": "TEST_CLOCK_36000MS"
+            },
+            "cause_ref": "TEST_REPORT_P1_CONTACT_UPDATE",
+            "visibility_scope": "observer_set",
+            "observer_ids": ["CH_JICUN", "PLAYER"],
+            "redact_fields": ["extensions.backend_exact_identity"],
+            "expected_record_hash": "b74e6b3e8dd3141ebc0152c7a55220013c89a72887995f2c4ada42e55d15d681"
+          },
+          {
+            "op_id": "TEST_OP_P1_CONSENT_CLOSE",
+            "state_id": "ST_CONSENT",
+            "owner_group_id": "SOG-REL",
+            "op_kind": "OP_CLOSE_RECORD",
+            "record_id": "TEST_CONSENT_P1_ROUTE",
+            "from_version": 1,
+            "to_version": 2,
+            "payload": {
+              "status_or_resolution_patch": {
+                "response": "withdrawn",
+                "withdrawal_window": "closed"
+              },
+              "closed_reason": "subject_withdrawal"
+            },
+            "cause_ref": "TEST_CONTACT_P1_ALPHA",
+            "visibility_scope": "player",
+            "observer_ids": [],
+            "redact_fields": [],
+            "expected_record_hash": "014b9189ca9956dc0f671ab5c2dcf0dc3b257f338d989d0d91ac2f2057cd51be"
+          },
+          {
+            "op_id": "TEST_OP_P1_BANDWIDTH_DELTA",
+            "state_id": "ST_RESOURCE",
+            "owner_group_id": "SOG-SETTLE",
+            "op_kind": "OP_RESOURCE_DELTA",
+            "record_id": "RES_COMMAND_BANDWIDTH",
+            "from_version": 1,
+            "to_version": 2,
+            "payload": {
+              "resource_id": "RES_COMMAND_BANDWIDTH",
+              "domain_owner_system": "SYS-C2",
+              "source_mode": "tactical",
+              "balance_before": "2",
+              "delta": "-1",
+              "balance_after": "1",
+              "cap_rule_ref": "TEST_CAP_COMMAND_BANDWIDTH",
+              "source": "TEST_SCHEDULER_P1_CYCLE",
+              "use": "TEST_ACTION_P1_CONTACT_UPDATE",
+              "reset_rule": "reset_to_2_at_scheduler_cycle_close",
+              "receipt_id": "TEST_RCPT_P1_RESOURCE_COMMIT"
+            },
+            "cause_ref": "TEST_ACTION_P1_CONTACT_UPDATE",
+            "visibility_scope": "player",
+            "observer_ids": [],
+            "redact_fields": [],
+            "expected_record_hash": "7de8566a18016ea17c1a786c0c7026d8d3253fa668aa09a8531124da50f2765c"
+          }
+        ],
+        "future_consumers": ["TEST_CONSUMER_P1_REPLAN"],
+        "player_summary": ["接触范围缩小，但原路线同意已撤回；本周期消耗1点指挥带宽。"],
+        "source_authority": "test_fixture",
+        "idempotency_key": "TEST_TX_P1_C2_001",
+        "build_status": "zero_build",
+        "human_evidence_status": "not_run"
+      },
+      "prepared_receipts": [
+        {
+          "receipt_id": "TEST_PREP_P1_C2",
+          "owner_group_id": "SOG-C2",
+          "owner_system": "SYS-C2",
+          "owner_version": "ST_CONTACT@1",
+          "proposal_hash": "a3d17ed7d53f290d68355abc43999c17fc87365a9a91f0101ae28d7ce95f1781",
+          "accepted_operation_ids": ["TEST_OP_P1_CONTACT_REPLACE"],
+          "rejected_operation_ids": [],
+          "reason_codes": [],
+          "prepared_at_checkpoint": "TEST_CP_P1_BEFORE",
+          "status": "prepared"
+        },
+        {
+          "receipt_id": "TEST_PREP_P1_REL",
+          "owner_group_id": "SOG-REL",
+          "owner_system": "SYS-REL",
+          "owner_version": "ST_CONSENT@1",
+          "proposal_hash": "a3d17ed7d53f290d68355abc43999c17fc87365a9a91f0101ae28d7ce95f1781",
+          "accepted_operation_ids": ["TEST_OP_P1_CONSENT_CLOSE"],
+          "rejected_operation_ids": [],
+          "reason_codes": [],
+          "prepared_at_checkpoint": "TEST_CP_P1_BEFORE",
+          "status": "prepared"
+        },
+        {
+          "receipt_id": "TEST_PREP_P1_SETTLE",
+          "owner_group_id": "SOG-SETTLE",
+          "owner_system": "SYS-SETTLE",
+          "owner_version": "ST_RESOURCE@1",
+          "proposal_hash": "a3d17ed7d53f290d68355abc43999c17fc87365a9a91f0101ae28d7ce95f1781",
+          "accepted_operation_ids": ["TEST_OP_P1_BANDWIDTH_DELTA"],
+          "rejected_operation_ids": [],
+          "reason_codes": [],
+          "prepared_at_checkpoint": "TEST_CP_P1_BEFORE",
+          "status": "prepared"
+        }
+      ],
+      "expected": {
+        "commit_status": "accepted",
+        "reason_code": "committed",
+        "state_revision_after": 13,
+        "receipt_id": "RCPT_TEST_TX_P1_C2_001",
+        "replay_status": "idempotent_replay",
+        "replay_state_revision_after": 13,
+        "after_values": {
+          "domains.ST_CONTACT.records.TEST_CONTACT_P1_ALPHA.reported_type": "heavy_biped_possible",
+          "domains.ST_CONTACT.records.TEST_CONTACT_P1_ALPHA.confidence": "0.70",
+          "domains.ST_CONSENT.records.TEST_CONSENT_P1_ROUTE.response": "withdrawn",
+          "domains.ST_CONSENT.records.TEST_CONSENT_P1_ROUTE.withdrawal_window": "closed",
+          "domains.ST_RESOURCE.records.RES_COMMAND_BANDWIDTH.balance_after": "1"
+        },
+        "projection_knowledge_owner": "PLAYER",
+        "visible_paths": [
+          "visible_records.ST_CONTACT.TEST_CONTACT_P1_ALPHA.reported_type",
+          "visible_records.ST_CONTACT.TEST_CONTACT_P1_ALPHA.confidence",
+          "visible_records.ST_CONSENT.TEST_CONSENT_P1_ROUTE.response",
+          "visible_records.ST_RESOURCE.RES_COMMAND_BANDWIDTH.balance_after"
+        ],
+        "redacted_paths": ["ST_CONTACT.TEST_CONTACT_P1_ALPHA.extensions.backend_exact_identity"],
+        "forbidden_projection_values": ["TEST_SECRET_ENEMY_ALPHA", "TEST_SECRET_ENEMY_ALPHA_CONFIRMED"]
+      },
+      "build_status": "zero_build",
+      "human_evidence_status": "not_run",
+      "canonical_sha256": "7da730909df26bc89042bb904696c13e7dbcbb212bd3119b058332952a7adfce"
+    },
+    {
+      "fixture_id": "FX-RS2-P1-STALE-REVISION",
+      "stage": "P1",
+      "case_kind": "derived_fault",
+      "derives_from": "FX-RS2-P1-C2-REDACTION",
+      "fault_injection": {
+        "expected_state_revision": 11,
+        "rebind_proposal_and_prepare_hashes": true
+      },
+      "expected": {
+        "commit_status": "rejected",
+        "reason_code": "E_STATE_REVISION_STALE",
+        "state_revision_after": 12,
+        "unchanged_paths": [
+          "domains.ST_CONTACT.records.TEST_CONTACT_P1_ALPHA.reported_type",
+          "domains.ST_CONSENT.records.TEST_CONSENT_P1_ROUTE.response",
+          "domains.ST_RESOURCE.records.RES_COMMAND_BANDWIDTH.balance_after",
+          "commit_order"
+        ],
+        "accepted_receipt_absent": true
+      },
+      "build_status": "zero_build",
+      "human_evidence_status": "not_run",
+      "canonical_sha256": "abd6e96493ca704a7b001b316035bcce1d32117ca0b804f46319fb52656c3f49"
+    }
+  ]
+}

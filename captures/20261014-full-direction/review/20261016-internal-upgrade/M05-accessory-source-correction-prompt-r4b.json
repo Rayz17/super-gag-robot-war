@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-19",
+  "generation_mode": "built-in image_gen",
+  "source_images": [
+    "samples/M05-accessory-kits-r4.png",
+    "samples/M05-core-body-r4.png"
+  ],
+  "prompt": "Use case: precise-object-edit.\nEdit ONLY the TOP LEFT ARMOR-SET GROUP in image 1. Keep all other five accessory groups and their layout exactly unchanged.\nImage 2 is the base body authority. The twin gold rectangular CHEST RADIATORS, the champion chest panel, and central ivory groin plate belong to the BASE BODY, so they must NOT be duplicated as detachable kit parts.\n\nIn the TOP LEFT GROUP:\n- KEEP the matching two thick navy/ivory/gold shoulder outer caps.\n- REMOVE the complete navy chest panel with its two gold rectangular radiator blocks.\n- REMOVE the central ivory groin plate.\n- In the resulting space, show a thin OPEN U-SHAPED CHEST-EDGE OVER-ARMOR FRAME: a dark mounting rim with ivory corner plates and gold edging, empty in the middle. No chest surface, no radiator, no emblem.\n- Keep the waist-side over-armor as TWO separate small navy/gold side skirt plates, disconnected from any crotch/body.\n- Keep a matching pair of hollow outboard shin over-armor shells, empty inside, not full legs or boots.\nThese are clearly detachable shells which fit OVER the base's armor, not a second base body.\n\nDo not change the wing fans/boosters, two heavy cannons, right-arm gold drill, shield front/back views, or four leg missile pods in the other five cells.\nPreserve all colors, component identities, clean KINETIC CEL drawing, spacing, and full uncropped shapes. True transparent background with zero-alpha empty areas; no colored fog, no text, no labels, no arrows.",
+  "output": "samples/M05-accessory-kits-r4b.png",
+  "transparent_background": true,
+  "source_refs": [
+    {
+      "file": "samples/M05-accessory-kits-r4.png",
+      "sha256": "32c04c6a21310adf41758831c65fa5c270cf0f91afe411eb327d2f43f13ab012"
+    },
+    {
+      "file": "samples/M05-core-body-r4.png",
+      "sha256": "b00b3ecd70638a328a945c841ed06a07fe5ead23efe05b882f779f72425321f4"
+    }
+  ]
+}

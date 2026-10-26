@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-20",
+  "revision": "M05-battle-mask-direction-r8",
+  "asset": "M05 / 王者可收纳战斗面罩",
+  "authority": "direct_user_message_in_this_chat",
+  "verbatim": "这稿可以，我觉得还可以给王者设计一个战斗面罩，就是可以像奥利安——>擎天柱那样进行转换",
+  "existing_batch": "design-followthrough-r1.json",
+  "prior_source_decision": {
+    "status": "R7_source_design_accepted",
+    "scope": "当前呈现的R7素体与全装源设计可采用；面罩为追加设计。",
+    "files": [
+      {
+        "id": "CORE",
+        "file": "samples/M05-core-head-sync-r7.png",
+        "sha256": "361686a39fabac8f01cbee6ae0405e21d72b319a0d192894c73e645c5158dd20"
+      },
+      {
+        "id": "FULL",
+        "file": "samples/M05-full-head-sync-r7.png",
+        "sha256": "65087a2473924af093136a98e511b6687d43f584677e6d755ecd4a5dab0d7fcc"
+      }
+    ],
+    "excludes": [
+      "未绘制的精确三视及隐藏结构",
+      "模型、绑定、动作、战棋镜头与运行认可"
+    ]
+  },
+  "head_authority": "M05-head-design-fixed-20261020.json",
+  "new_mask_status": "candidate_pending_user",
+  "author_proposal": {
+    "normal": "保留R6b现有白脸、红下巴、眼睛和皇冠。",
+    "mask": "象牙白两半折面护甲覆盖口鼻，中央拼缝/脊线，藏蓝下缘和少量金边，保留红色下巴锁扣。",
+    "deployment": "面板收在两侧颊甲后，伸出再向面前合拢；耳罩与头冠固定不动。",
+    "retraction": "沿原路径分开后退，回到颊甲内，恢复原有脸。"
+  },
+  "reference": {
+    "url": "https://www.hasbropulse.com/product/transformers-one-mdlx-optimus-primeorion-pax/HPM6100000",
+    "role": "只借用普通脸/战斗面罩两种识别状态，官方产品列有奥利安脸与带面罩擎天柱两个头；不据此断言本轮双侧合拢为原作机关。",
+    "used_as_image_input": false
+  },
+  "runtime_changed": false,
+  "new_mask_user_accepted": false,
+  "handoff_sent": false
+}

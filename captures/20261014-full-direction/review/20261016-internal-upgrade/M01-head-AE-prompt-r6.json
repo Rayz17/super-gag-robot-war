@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-18",
+  "mode": "built-in image_gen",
+  "user_directive": "我想整合A和E，但是需要做成对称脸部，而且要避免和馆守z太相似",
+  "references": [
+    {
+      "file": "samples/M01-head-A-single-crest-r5.png",
+      "role": "selected central ridge and face/visor"
+    },
+    {
+      "file": "samples/M01-head-E-offset-angle-r5.png",
+      "role": "selected short folded cutout fin; duplicate as a mirrored pair"
+    }
+  ],
+  "guardian_contrast": {
+    "observed": "game-godot/assets/formula_lab/linked_campaign_v6/portraits/guardian.png",
+    "also_observed": "refs/guardian-project-identity-v10x.png",
+    "used_as_generation_input": false,
+    "avoid": [
+      "前额横向金角",
+      "高直红额块",
+      "分开的双眼",
+      "白色通气栅面罩",
+      "藏蓝/朱红配色"
+    ]
+  },
+  "prompt": "Use case: precise-object-edit / same-mecha head design integration.\nAsset type: ONE character head reference sheet with TWO views of the SAME new Unbranded One head: a true straight-on front bust at left and a front three-quarter bust at right.\nInput image 1 (A) is the selected source of the CENTRAL CROWN RIDGE, overall compact teal cranium and closed ivory face with continuous amber visor.\nInput image 2 (E) is the selected source of the SHORT FOLDED-ANGLE TEMPLE FIN with its open triangular cutout. Combine these two designs into a coherent single head. Do not create alternative designs.\n\nUSER REQUIREMENTS:\n- Merge A and E.\n- Make the face AND head hardware bilaterally symmetrical. Mirror the chosen short E temple fin to BOTH sides. Forehead, brow, visor, cheek armor, chin plate, side sensor disks and crown fins have exactly paired left/right structure and paint. No off-center ridge, mismatched service patches or one-sided antenna.\n- Distinguish this machine from the existing Guardian Z, which has a tall dark vertical forehead block with red inset, a WIDE GOLD BROW V/HORN stretching across the front, two separated amber eyes and a white vented mouth grille. Do NOT reproduce ANY of that combination. Guardian Z is not being redesigned.\n\nCONCRETE MERGE:\nKeep A's single sculpted ivory center ridge with a narrow recessed ochre channel, integrated low into a rounded-angular teal helmet and sweeping backward along the skull. Its height is modest; it is a central crest, not two upright ears or a tall rectangular forehead tower.\nE's short folded-angle fins attach just BEHIND the two round temple sensor housings. They point backward-out in low shallow planes, with ivory forward edge, ochre inner face and one triangular negative-space cutout each. Both fins are the same structure, mirrored. Tips stay below the crest apex and project backward, never into a gold horizontal brow V. Keep them compact: their exposed length is about one half of the helmet's front-to-back depth. Do not return to the previously rejected tall parallel ear fins. The central crest and the two short rearward fins must coexist visibly; do not erase either selected idea.\nA slim continuous amber optical visor is one connected dark recessed curved horizontal band; no two separate humanoid eyes. The brow belongs to the teal shell, not a gold frontal V.\nLower face: a single smooth angular ivory shield with a slightly broad flat lower edge, balanced teal cheek recesses, no nose, no mouth slits, no grille, no red chin, no forehead jewel. Keep an athletic, intelligent, confident mechanical face rather than an angry samurai mask.\nPalette: deep teal dominant helmet, warm ivory crest/cheek/face, restrained ochre accents in crest channel and short fins, graphite inner neck, amber visor. NO navy/red body or Guardian Z brow geometry. Keep the same ordinary ivory shoulder shells and only a small amount of teal upper chest beneath the neck; no body redesign.\n\nTWO-VIEW CONSISTENCY:\nBoth panels show exactly this one helmet: same center ridge and ochre channel, same two mirrored rearward cutout fins, same round temple housings, same visor and faceplate boundaries. On the left, the head must face DEAD STRAIGHT FORWARD with no yaw, roll or tilt; equal cranium halves, equal cheek plates and two identical fins are directly assessable. The right is the same head turned roughly 25 degrees toward viewer's left. Do not substitute a different crown or one extra fin in the other view. The far fin in the three-quarter view may be partially occluded by the skull but must be present.\nHead-and-upper-shoulder busts only, equal head size and same eye/chin level, generous 10% margins around crown and fin tips. No full body, extra profile inset, third head or other robot. Leave a clear gap between the two views.\n\nSTYLE AND OUTPUT:\nClean current KINETIC_CEL matching the supplied images: controlled pressure-varying dark ink, crisp painted armor planes, one or two hard cel shadows, restrained seams and mechanical mounting. No photoreal PBR, plastic toy rendering, grime or excessive greebles.\nWide landscape composition, approximately 2:1, high-quality drawn reference sheet. Actual transparent background with no gradient, glow, floor, cast shadow or frame. No letters, labels, captions, numbers, arrows, logos or watermark. Text and comparison notes will be added outside the image."
+}

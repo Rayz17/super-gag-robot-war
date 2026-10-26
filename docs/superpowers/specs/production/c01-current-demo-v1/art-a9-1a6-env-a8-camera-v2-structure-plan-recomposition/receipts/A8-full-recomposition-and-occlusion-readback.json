@@ -1,0 +1,733 @@
+{
+  "task": "ENV_A8_CAMERA_V2_STRUCTURE_PLAN_RECOMPOSITION",
+  "status": "PRODUCER_PASS_EXACT_STRUCTURE_RECOMPOSITION_AND_INTERSECT_ONLY_REVEAL_NOT_FINAL_PLAN",
+  "gate1_producer_decision": "PASS_GAMEPLAY_STAGING_AND_LOW_OCCLUSION / FAIL_FINAL_ENVIRONMENT_RICHNESS",
+  "zero_imagegen": true,
+  "qa_only": true,
+  "not_plan_asset": true,
+  "runtime_bindable": false,
+  "manual_structure_offsets": false,
+  "camera_modified": false,
+  "topology_modified": false,
+  "real_actor_pixels_included": false,
+  "four_profile_built": true,
+  "four_profile_actor_free": true,
+  "profile_readback": {
+    "A_PLAN": {
+      "branch": "A",
+      "phase": "PLAN",
+      "camera_raw_px": [
+        400,
+        708
+      ],
+      "source_canvas_crop_px": [
+        680,
+        515,
+        1280,
+        584
+      ],
+      "frame_100": "qa/four-profile-actor-free-cleanplates/A8_A_PLAN_ACTOR_FREE_CLEANPLATE_1280x720.png",
+      "frame_50": "qa/four-profile-actor-free-cleanplates/A8_A_PLAN_ACTOR_FREE_CLEANPLATE_50_PERCENT_640x360.png"
+    },
+    "B_PLAN": {
+      "branch": "B",
+      "phase": "PLAN",
+      "camera_raw_px": [
+        400,
+        708
+      ],
+      "source_canvas_crop_px": [
+        680,
+        515,
+        1280,
+        584
+      ],
+      "frame_100": "qa/four-profile-actor-free-cleanplates/A8_B_PLAN_ACTOR_FREE_CLEANPLATE_1280x720.png",
+      "frame_50": "qa/four-profile-actor-free-cleanplates/A8_B_PLAN_ACTOR_FREE_CLEANPLATE_50_PERCENT_640x360.png"
+    },
+    "A_CONTACT": {
+      "branch": "A",
+      "phase": "CONTACT",
+      "camera_raw_px": [
+        400,
+        744
+      ],
+      "source_canvas_crop_px": [
+        680,
+        551,
+        1280,
+        584
+      ],
+      "frame_100": "qa/four-profile-actor-free-cleanplates/A8_A_CONTACT_ACTOR_FREE_CLEANPLATE_1280x720.png",
+      "frame_50": "qa/four-profile-actor-free-cleanplates/A8_A_CONTACT_ACTOR_FREE_CLEANPLATE_50_PERCENT_640x360.png"
+    },
+    "B_CONTACT": {
+      "branch": "B",
+      "phase": "CONTACT",
+      "camera_raw_px": [
+        380,
+        732
+      ],
+      "source_canvas_crop_px": [
+        660,
+        539,
+        1280,
+        584
+      ],
+      "frame_100": "qa/four-profile-actor-free-cleanplates/A8_B_CONTACT_ACTOR_FREE_CLEANPLATE_1280x720.png",
+      "frame_50": "qa/four-profile-actor-free-cleanplates/A8_B_CONTACT_ACTOR_FREE_CLEANPLATE_50_PERCENT_640x360.png"
+    }
+  },
+  "foundation_draw_order": [
+    "NW_BLOCK",
+    "NM_BLOCK",
+    "NE_BLOCK",
+    "SW_BLOCK",
+    "SE_BLOCK",
+    "BROKEN_SKYWALK"
+  ],
+  "occluder_draw_order_by_front_edge": [
+    "NW_BLOCK",
+    "NM_BLOCK",
+    "BROKEN_SKYWALK",
+    "SW_BLOCK",
+    "NE_BLOCK",
+    "SE_BLOCK"
+  ],
+  "structure_placements": [
+    {
+      "object_id": "NW_BLOCK",
+      "grid_rect": [
+        1,
+        0,
+        7,
+        5
+      ],
+      "visual_bounds_raw": [
+        -160,
+        -90,
+        480,
+        378
+      ],
+      "source_canvas_position_px": [
+        760,
+        9
+      ],
+      "front_edge_raw": [
+        80,
+        288
+      ],
+      "depth_key_raw": 288,
+      "normal_occluder_alpha": 1.0,
+      "reveal_occluder_alpha_when_intersecting": 0.34,
+      "foundation_alpha_all_states": 1.0,
+      "independent_toggle": true
+    },
+    {
+      "object_id": "NM_BLOCK",
+      "grid_rect": [
+        10,
+        0,
+        5,
+        4
+      ],
+      "visual_bounds_raw": [
+        240,
+        144,
+        360,
+        288
+      ],
+      "source_canvas_position_px": [
+        1160,
+        243
+      ],
+      "front_edge_raw": [
+        420,
+        432
+      ],
+      "depth_key_raw": 432,
+      "normal_occluder_alpha": 1.0,
+      "reveal_occluder_alpha_when_intersecting": 0.34,
+      "foundation_alpha_all_states": 1.0,
+      "independent_toggle": true
+    },
+    {
+      "object_id": "NE_BLOCK",
+      "grid_rect": [
+        22,
+        0,
+        7,
+        4
+      ],
+      "visual_bounds_raw": [
+        720,
+        414,
+        440,
+        354
+      ],
+      "source_canvas_position_px": [
+        1640,
+        513
+      ],
+      "front_edge_raw": [
+        940,
+        768
+      ],
+      "depth_key_raw": 768,
+      "normal_occluder_alpha": 1.0,
+      "reveal_occluder_alpha_when_intersecting": 0.34,
+      "foundation_alpha_all_states": 1.0,
+      "independent_toggle": true
+    },
+    {
+      "object_id": "SW_BLOCK",
+      "grid_rect": [
+        0,
+        15,
+        8,
+        3
+      ],
+      "visual_bounds_raw": [
+        -720,
+        264,
+        440,
+        336
+      ],
+      "source_canvas_position_px": [
+        200,
+        363
+      ],
+      "front_edge_raw": [
+        -500,
+        600
+      ],
+      "depth_key_raw": 600,
+      "normal_occluder_alpha": 1.0,
+      "reveal_occluder_alpha_when_intersecting": 0.34,
+      "foundation_alpha_all_states": 1.0,
+      "independent_toggle": true
+    },
+    {
+      "object_id": "SE_BLOCK",
+      "grid_rect": [
+        26,
+        14,
+        6,
+        4
+      ],
+      "visual_bounds_raw": [
+        320,
+        846,
+        400,
+        330
+      ],
+      "source_canvas_position_px": [
+        1240,
+        945
+      ],
+      "front_edge_raw": [
+        520,
+        1176
+      ],
+      "depth_key_raw": 1176,
+      "normal_occluder_alpha": 1.0,
+      "reveal_occluder_alpha_when_intersecting": 0.34,
+      "foundation_alpha_all_states": 1.0,
+      "independent_toggle": true
+    },
+    {
+      "object_id": "BROKEN_SKYWALK",
+      "grid_rect": [
+        8,
+        5,
+        7,
+        2
+      ],
+      "visual_bounds_raw": [
+        40,
+        234,
+        360,
+        270
+      ],
+      "source_canvas_position_px": [
+        960,
+        333
+      ],
+      "front_edge_raw": [
+        220,
+        504
+      ],
+      "depth_key_raw": 504,
+      "normal_occluder_alpha": 1.0,
+      "reveal_occluder_alpha_when_intersecting": 0.34,
+      "foundation_alpha_all_states": 1.0,
+      "independent_toggle": true
+    }
+  ],
+  "independent_toggle_count": 6,
+  "proxy_profile": "A_PLAN",
+  "proxy_actor_readback": {
+    "V353U001": {
+      "anchor": [
+        15,
+        11
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "facing": "east",
+      "native_canvas_px": [
+        256,
+        256
+      ],
+      "pivot_px": [
+        128,
+        224
+      ],
+      "z_bias": 1,
+      "footpoint_raw_px": [
+        160,
+        696
+      ],
+      "footpoint_source_canvas_px": [
+        1080,
+        795
+      ],
+      "footpoint_A_PLAN_screen_px": [
+        400,
+        338
+      ],
+      "expected_A_PLAN_screen_px": [
+        400,
+        338
+      ],
+      "top_left_source_canvas_px": [
+        952,
+        571
+      ],
+      "real_actor_pixels": false,
+      "proxy_only": true
+    },
+    "ENEMY_C01_BREAKER": {
+      "anchor": [
+        20,
+        13
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "facing": "north",
+      "native_canvas_px": [
+        384,
+        384
+      ],
+      "pivot_px": [
+        192,
+        320
+      ],
+      "z_bias": 2,
+      "footpoint_raw_px": [
+        280,
+        912
+      ],
+      "footpoint_source_canvas_px": [
+        1200,
+        1011
+      ],
+      "footpoint_A_PLAN_screen_px": [
+        520,
+        554
+      ],
+      "expected_A_PLAN_screen_px": [
+        520,
+        554
+      ],
+      "top_left_source_canvas_px": [
+        1008,
+        691
+      ],
+      "real_actor_pixels": false,
+      "proxy_only": true
+    }
+  },
+  "route_readback": {
+    "GZ_A_ROUTE_2X2": {
+      "anchors": [
+        [
+          15,
+          11
+        ],
+        [
+          16,
+          11
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          18,
+          11
+        ],
+        [
+          18,
+          10
+        ],
+        [
+          19,
+          10
+        ],
+        [
+          19,
+          9
+        ],
+        [
+          20,
+          9
+        ]
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "footpoints_source_canvas_px": [
+        [
+          1080,
+          795
+        ],
+        [
+          1120,
+          819
+        ],
+        [
+          1160,
+          843
+        ],
+        [
+          1200,
+          867
+        ],
+        [
+          1240,
+          843
+        ],
+        [
+          1280,
+          867
+        ],
+        [
+          1320,
+          843
+        ],
+        [
+          1360,
+          867
+        ]
+      ],
+      "coverage_kind": "union_of_exact_projected_footprint_polygons"
+    },
+    "BREAKER_PUBLIC_ROUTE_3X3": {
+      "anchors": [
+        [
+          20,
+          13
+        ],
+        [
+          20,
+          12
+        ],
+        [
+          20,
+          11
+        ]
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "footpoints_source_canvas_px": [
+        [
+          1200,
+          1011
+        ],
+        [
+          1240,
+          987
+        ],
+        [
+          1280,
+          963
+        ]
+      ],
+      "coverage_kind": "union_of_exact_projected_footprint_polygons"
+    }
+  },
+  "intersection_method": "exact placed occluder alpha vs union of projected route/footprint coverage; actor-body overlap only when structure depth key is in front",
+  "intersecting_occluder_ids": [
+    "SE_BLOCK"
+  ],
+  "intersecting_occluder_count": 1,
+  "non_intersecting_occluder_count": 5,
+  "whole_map_fade": false,
+  "foundation_alpha_all_states": 1.0,
+  "intersection_audit": {
+    "NW_BLOCK": {
+      "front_edge_raw_y": 288,
+      "route_or_footprint_intersection_px": 0,
+      "actor_body_intersection_px_in_front_only": {
+        "V353U001": 0,
+        "ENEMY_C01_BREAKER": 0
+      },
+      "actor_body_raw_intersection_px_all_depths": {
+        "V353U001": 0,
+        "ENEMY_C01_BREAKER": 0
+      },
+      "reveal_triggered": false,
+      "normal_alpha": 1.0,
+      "reveal_alpha": 1.0
+    },
+    "NM_BLOCK": {
+      "front_edge_raw_y": 432,
+      "route_or_footprint_intersection_px": 0,
+      "actor_body_intersection_px_in_front_only": {
+        "V353U001": 0,
+        "ENEMY_C01_BREAKER": 0
+      },
+      "actor_body_raw_intersection_px_all_depths": {
+        "V353U001": 0,
+        "ENEMY_C01_BREAKER": 0
+      },
+      "reveal_triggered": false,
+      "normal_alpha": 1.0,
+      "reveal_alpha": 1.0
+    },
+    "NE_BLOCK": {
+      "front_edge_raw_y": 768,
+      "route_or_footprint_intersection_px": 0,
+      "actor_body_intersection_px_in_front_only": {
+        "V353U001": 0,
+        "ENEMY_C01_BREAKER": 0
+      },
+      "actor_body_raw_intersection_px_all_depths": {
+        "V353U001": 0,
+        "ENEMY_C01_BREAKER": 0
+      },
+      "reveal_triggered": false,
+      "normal_alpha": 1.0,
+      "reveal_alpha": 1.0
+    },
+    "SW_BLOCK": {
+      "front_edge_raw_y": 600,
+      "route_or_footprint_intersection_px": 0,
+      "actor_body_intersection_px_in_front_only": {
+        "V353U001": 0,
+        "ENEMY_C01_BREAKER": 0
+      },
+      "actor_body_raw_intersection_px_all_depths": {
+        "V353U001": 0,
+        "ENEMY_C01_BREAKER": 0
+      },
+      "reveal_triggered": false,
+      "normal_alpha": 1.0,
+      "reveal_alpha": 1.0
+    },
+    "SE_BLOCK": {
+      "front_edge_raw_y": 1176,
+      "route_or_footprint_intersection_px": 0,
+      "actor_body_intersection_px_in_front_only": {
+        "V353U001": 0,
+        "ENEMY_C01_BREAKER": 109
+      },
+      "actor_body_raw_intersection_px_all_depths": {
+        "V353U001": 0,
+        "ENEMY_C01_BREAKER": 109
+      },
+      "reveal_triggered": true,
+      "normal_alpha": 1.0,
+      "reveal_alpha": 0.34
+    },
+    "BROKEN_SKYWALK": {
+      "front_edge_raw_y": 504,
+      "route_or_footprint_intersection_px": 0,
+      "actor_body_intersection_px_in_front_only": {
+        "V353U001": 0,
+        "ENEMY_C01_BREAKER": 0
+      },
+      "actor_body_raw_intersection_px_all_depths": {
+        "V353U001": 0,
+        "ENEMY_C01_BREAKER": 0
+      },
+      "reveal_triggered": false,
+      "normal_alpha": 1.0,
+      "reveal_alpha": 1.0
+    }
+  },
+  "normal_vs_reveal_pixel_diff_audit": {
+    "changed_pixel_count": 48497,
+    "changed_bbox_source_canvas_px": [
+      1283,
+      969,
+      1591,
+      1252
+    ],
+    "allowed_occluder_ids": [
+      "SE_BLOCK"
+    ],
+    "changed_pixels_outside_allowed_occluders": 0,
+    "only_intersecting_occluders_changed": true
+  },
+  "producer_visual_review": "PASS_EXACT_STRUCTURE_RECOMPOSITION_AND_INTERSECT_ONLY_REVEAL / FAIL_FINAL_ENVIRONMENT_RICHNESS / NOT_FINAL_PLAN",
+  "known_environment_gap": "seven independent gameplay-object and road-result layers",
+  "next_gap_exact_slots": [
+    "PROP_C01CDV1_RETIRED_SHIELD",
+    "PROP_C01CDV1_RETIRED_SHIELD_SUPPORT_PLINTH",
+    "TARGET_C01_EAST_EXIT",
+    "TARGET_C01_SECURITY_GATE_ACTIVE",
+    "TARGET_C01_SECURITY_GATE_DAMAGED",
+    "ROAD_DAMAGE_A_42_OVERLAY",
+    "ROAD_DAMAGE_B_24_OVERLAY"
+  ],
+  "not_the_gap": [
+    "building rebake",
+    "camera change",
+    "building position change",
+    "topology change",
+    "arbitrary decoration"
+  ],
+  "closed": [
+    "STATEFUL_OBJECT_ART",
+    "REAL_ACTOR_PIXELS",
+    "FINAL_PLAN",
+    "FINAL_CONTACT",
+    "RUNTIME",
+    "DEFAULT",
+    "SAVE",
+    "CANON",
+    "HUMAN_PLAYTEST"
+  ],
+  "inputs_sha256": {
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a2-simple-recomposition/delivery/GROUND_BAKE_CURRENT_V2_2400x1350.png": "893e0df76d0cbcacba93fc22ef307f15e1dd04748cc4b016ed4bf8cc2537d27a",
+    "game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/camera_v2_freeze/current-topology-camera-v2-40x24-contract.json": "756f77db883fd060fdd323d2533191ade689c0a1362f92f043fac17dbe28ab4a",
+    "game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/camera_v2_freeze/camera-v2-structure-object-registration.tsv": "0133cf5c5af7a6dba659221249b9e0bb45c51bebc8cb9b81c50cf9d920d25b7b",
+    "game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/camera_v2_freeze/camera-v2-sprite-slot-and-socket-contract.json": "a6874f033554c71af2e3c1d634cd2671d4a3efd1494ba0bccb491579c0117cce",
+    "game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/golden_slice_profile.json": "61b49e5328e702cd654d28ff39c5c380ba0ae3e78753330635036d33f689523c",
+    "docs/superpowers/specs/production/c01-current-demo-v1/125-c01e02-env-a6-a7-producer-asset-acceptance-and-a8-plan-recomposition-release.md": "d6cb1fe4614f440f5da51a480e221797f5afffa25f4ce0ec66ab6852f7f30280",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/BROKEN_SKYWALK_FOUNDATION_CAMERA_V2_RGBA.png": "f1d05d9e94478c3914079f5c2829eabb7f1631dbefe642be9caa0394f47b5508",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/BROKEN_SKYWALK_OCCLUDER_CAMERA_V2_RGBA.png": "2e15deace00bce12e7fb4c6915f4d2787b8f453aea8cad0176bab69dfb893d78",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/NE_BLOCK_FOUNDATION_CAMERA_V2_RGBA.png": "a032b4b5ff4f9f9bd916486688aaf8f9337dc32e328ac30411606b6734893674",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/NE_BLOCK_OCCLUDER_CAMERA_V2_RGBA.png": "95e0eed523edb99b847f1a18d0bee3e39a4df58faa0609ada4c963ef8ccbc414",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/NM_BLOCK_FOUNDATION_CAMERA_V2_RGBA.png": "9cdb08e1cce1e0d16c864d5596df6fe335d391412d3ad8a23a5aedae71ba2d28",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/NM_BLOCK_OCCLUDER_CAMERA_V2_RGBA.png": "cc84fdaa9dd89b7dc590d8c3788a5b47a8234c90dfcd15f1649aa7cc75e732a5",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/NW_BLOCK_FOUNDATION_CAMERA_V2_RGBA.png": "c06ad74d83f8cad6c59fc17cd2a7f240a15f10bbbae80b7ead409f081528e54a",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/NW_BLOCK_OCCLUDER_CAMERA_V2_RGBA.png": "8f361ca8269fb955e32772cdb14fbda527e77fcec2f4e8488d0cf399fcee27cf",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/SE_BLOCK_FOUNDATION_CAMERA_V2_RGBA.png": "216f042d24cf9b5892509d7eb1ad40d26082b6e7cd8cc95a8da811b566878e26",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/SE_BLOCK_OCCLUDER_CAMERA_V2_RGBA.png": "155d426195753c20440de727c548e9434b31aa0da90a20e15bffb00c6c6bab4a",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/SW_BLOCK_FOUNDATION_CAMERA_V2_RGBA.png": "10e4cb0d67d02df181ad414fe2df1c1c0c7e2e127a07f00b11a31079a1a59a31",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a7-camera-v2-six-structure-asset-pack/delivery/structures/SW_BLOCK_OCCLUDER_CAMERA_V2_RGBA.png": "b8f99a2e6b5f183e488fe23ac98e3c948278bdb9d00db148f076853b49f04c5c",
+    "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a8-camera-v2-structure-plan-recomposition/A8-camera-v2-structure-plan-recomposition-objective.md": "3bbc02cc248d297b544c336fa6ed41a8c17f2305c395d327a4b41cdf856c7fea"
+  },
+  "outputs": {
+    "qa/four-profile-actor-free-cleanplates/A8_A_PLAN_ACTOR_FREE_CLEANPLATE_1280x720.png": {
+      "sha256": "817d612d62b367d86451c43279aa4d3fa3d889564522e30cf6bb2b97f41dbfca",
+      "size_px": [
+        1280,
+        720
+      ],
+      "mode": "RGBA"
+    },
+    "qa/four-profile-actor-free-cleanplates/A8_A_PLAN_ACTOR_FREE_CLEANPLATE_50_PERCENT_640x360.png": {
+      "sha256": "6c13e7cb8b5cc01f0124e040c68b3992bf9f8911cc757c6ea62d14291cbb8ec1",
+      "size_px": [
+        640,
+        360
+      ],
+      "mode": "RGBA"
+    },
+    "qa/four-profile-actor-free-cleanplates/A8_B_PLAN_ACTOR_FREE_CLEANPLATE_1280x720.png": {
+      "sha256": "817d612d62b367d86451c43279aa4d3fa3d889564522e30cf6bb2b97f41dbfca",
+      "size_px": [
+        1280,
+        720
+      ],
+      "mode": "RGBA"
+    },
+    "qa/four-profile-actor-free-cleanplates/A8_B_PLAN_ACTOR_FREE_CLEANPLATE_50_PERCENT_640x360.png": {
+      "sha256": "6c13e7cb8b5cc01f0124e040c68b3992bf9f8911cc757c6ea62d14291cbb8ec1",
+      "size_px": [
+        640,
+        360
+      ],
+      "mode": "RGBA"
+    },
+    "qa/four-profile-actor-free-cleanplates/A8_A_CONTACT_ACTOR_FREE_CLEANPLATE_1280x720.png": {
+      "sha256": "c2580ad89792b122742272066752639939b5192dd9acc80944a3b58e16871058",
+      "size_px": [
+        1280,
+        720
+      ],
+      "mode": "RGBA"
+    },
+    "qa/four-profile-actor-free-cleanplates/A8_A_CONTACT_ACTOR_FREE_CLEANPLATE_50_PERCENT_640x360.png": {
+      "sha256": "ec9013233890459e945d606878d71dcde2b396d30da4bed58ccb3203647b0222",
+      "size_px": [
+        640,
+        360
+      ],
+      "mode": "RGBA"
+    },
+    "qa/four-profile-actor-free-cleanplates/A8_B_CONTACT_ACTOR_FREE_CLEANPLATE_1280x720.png": {
+      "sha256": "308ee3d771a5994a940b8b5b392fbe9aeeb95878be6346e3bd7116bf20fd9bc6",
+      "size_px": [
+        1280,
+        720
+      ],
+      "mode": "RGBA"
+    },
+    "qa/four-profile-actor-free-cleanplates/A8_B_CONTACT_ACTOR_FREE_CLEANPLATE_50_PERCENT_640x360.png": {
+      "sha256": "3a414dc121f0801d488404bd78faddccb5f583b7cc726b490f87567112ab12b2",
+      "size_px": [
+        640,
+        360
+      ],
+      "mode": "RGBA"
+    },
+    "qa/four-profile-actor-free-cleanplates/A8_FOUR_PROFILE_ACTOR_FREE_BOARD_1280x780.png": {
+      "sha256": "a02747617818479f14a5905821851bd244cced38f1e2117539da28b9d9028b03",
+      "size_px": [
+        1280,
+        780
+      ],
+      "mode": "RGBA"
+    },
+    "qa/occlusion-proxy/A8_A_PLAN_EXACT_FOOTPRINT_ROUTE_PROXY_NORMAL_1280x720.png": {
+      "sha256": "8cf950fba37acecc2c5ae14bc1ea495356f3c5046552b8c5390f3a0aefd99229",
+      "size_px": [
+        1280,
+        720
+      ],
+      "mode": "RGBA"
+    },
+    "qa/occlusion-proxy/A8_A_PLAN_EXACT_FOOTPRINT_ROUTE_PROXY_INTERSECT_ONLY_REVEAL_034_1280x720.png": {
+      "sha256": "9d3b8997a4dfd1b98233db735b99ac6f665b37084580fef5dcfca0f83781d370",
+      "size_px": [
+        1280,
+        720
+      ],
+      "mode": "RGBA"
+    },
+    "qa/occlusion-proxy/A8_A_PLAN_OCCLUSION_NORMAL_VS_INTERSECT_ONLY_034_COMPARISON_1280x420.png": {
+      "sha256": "3ef41cfdee8c3da3bd606994681af843cc9978c68392f95972560062443aa8a5",
+      "size_px": [
+        1280,
+        420
+      ],
+      "mode": "RGBA"
+    },
+    "receipts/A8-structure-toggle-and-reveal-matrix.tsv": {
+      "sha256": "be29aade04029e47bc5dd5a7e37fb6e96c26ef9a1ba40247bb37ebb4e1185f68",
+      "bytes": 541
+    }
+  }
+}

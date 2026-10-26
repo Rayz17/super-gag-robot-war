@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>Guardian Z Camera V2 south shield block single-subject geometry guide</title>
+  <desc>Pose-only control derived from the prior BLOCK geometry. It exposes both arm-to-rear-grip load paths. Not final art.</desc>
+  <defs>
+    <style>
+      .bg { fill:#f3f0e8; }
+      .axis { fill:none; stroke:#22aab0; stroke-width:9; stroke-dasharray:22 16; opacity:.8; }
+      .body { fill:#263f5a; stroke:#121b22; stroke-width:12; stroke-linejoin:round; }
+      .red { fill:#bf4136; stroke:#e5b54c; stroke-width:9; }
+      .gold { fill:#e6b247; stroke:#3b2d21; stroke-width:8; }
+      .eye { fill:#f7df72; stroke:#332a22; stroke-width:6; }
+      .limb-shadow { fill:none; stroke:#14212c; stroke-width:76; stroke-linecap:round; stroke-linejoin:round; }
+      .limb { fill:none; stroke:#31577e; stroke-width:55; stroke-linecap:round; stroke-linejoin:round; }
+      .hand { fill:#172633; stroke:#f2c651; stroke-width:8; }
+      .shield { fill:#234f82; stroke:#202c34; stroke-width:24; stroke-linejoin:round; }
+      .shield-panel { fill:#eee7d7; stroke:#d6a13c; stroke-width:10; stroke-linejoin:round; }
+      .spine { fill:none; stroke:#303b42; stroke-width:22; stroke-linecap:round; }
+      .grip { fill:#5ee0cb; stroke:#153030; stroke-width:8; }
+      .pivot { stroke:#df4b3e; stroke-width:8; }
+      .force { fill:none; stroke:#df4b3e; stroke-width:14; stroke-linecap:round; marker-end:url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#df4b3e"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1024" height="1024"/>
+  <path class="axis" d="M840,105 L150,865"/>
+
+  <!-- Same compact 4.2-head body and Camera V2 south down-left lean. -->
+  <path class="body" d="M475,520 L420,656 L362,856 L473,883 L540,704 L584,547 Z"/>
+  <path class="body" d="M585,535 L646,662 L738,824 L831,763 L719,608 L676,495 Z"/>
+  <path class="body" d="M338,840 L476,855 L494,905 L312,896 Z"/>
+  <path class="body" d="M722,814 L832,746 L891,814 L750,895 Z"/>
+  <path class="body" d="M430,301 L489,235 L650,239 L717,333 L663,541 L471,553 L399,411 Z"/>
+  <path class="red" d="M425,331 L519,292 L535,459 L460,480 Z"/>
+  <path class="red" d="M530,291 L660,322 L643,474 L542,456 Z"/>
+  <path class="gold" d="M528,279 L563,279 L573,464 L541,472 Z"/>
+
+  <path class="body" d="M507,108 L556,61 L637,80 L685,144 L654,246 L580,276 L500,229 L477,159 Z"/>
+  <path class="gold" d="M507,126 L417,56 L448,168 Z"/>
+  <path class="gold" d="M627,94 L726,42 L684,176 Z"/>
+  <path class="gold" d="M562,70 L591,11 L612,83 Z"/>
+  <path class="eye" d="M511,169 L558,174 L543,197 L504,189 Z"/>
+  <path class="eye" d="M570,173 L625,157 L632,182 L585,197 Z"/>
+
+  <!-- A17 is in front of chest/abdomen. Camera sees its rear load frame; its scarred front faces the opponent down-left. -->
+  <path class="shield" d="M246,338 L474,284 L674,397 L657,690 L455,869 L221,716 Z"/>
+  <path class="shield-panel" d="M281,377 L468,327 L628,418 L614,658 L453,811 L267,688 Z"/>
+  <path class="spine" d="M469,329 L456,806"/>
+  <path class="spine" d="M354,424 L353,624 M558,438 L553,639"/>
+
+  <!-- Both arm-to-hand-to-rear-grip load paths remain visible on the camera-facing rear plane. -->
+  <path class="limb-shadow" d="M431,336 L322,412 L370,512"/>
+  <path class="limb" d="M431,336 L322,412 L370,512"/>
+  <path class="limb-shadow" d="M681,344 L764,430 L553,524"/>
+  <path class="limb" d="M681,344 L764,430 L553,524"/>
+  <path class="hand" d="M337,476 C358,454 393,459 408,486 L404,532 C380,551 348,542 333,516 Z"/>
+  <path class="hand" d="M523,489 C544,465 579,471 596,497 L589,542 C566,561 532,552 517,524 Z"/>
+  <circle class="grip" cx="370" cy="512" r="16"/>
+  <circle class="grip" cx="553" cy="524" r="16"/>
+
+  <path class="force" d="M915,242 L696,424"/>
+  <path class="force" d="M265,723 L105,873"/>
+  <path class="pivot" d="M482,896 L542,896 M512,866 L512,926"/>
+</svg>

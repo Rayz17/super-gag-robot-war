@@ -1,0 +1,2247 @@
+{
+	"bundle_schema_version": 1,
+	"canon_boundary": "runtime_validation_only",
+	"compiler_contract": {
+		"activity_grammars_validated": true,
+		"battle_presentation_manifest_validated": true,
+		"battle_refs_validated": true,
+		"canon_refs_validation": "external_canon_check_godot_strict_required",
+		"capacity_receipt_validated": false,
+		"experience_contract_validated": false,
+		"experience_production_gate_status": "missing",
+		"graph_validated": true,
+		"investigation_resources_validated": true,
+		"patch_consumers_validated": true,
+		"presentation_refs_validated": true,
+		"scene_refs_validated": true,
+		"spatial_layout_validated": false,
+		"stable_object_continuity_validated": true,
+		"transition_contract_validated": true
+	},
+	"episode_id": "MULTI-PLAY-M5-CONSTRAINT-VALIDATION",
+	"experience_contract_report": {
+		"accepted": true,
+		"capacity_receipt_validated": false,
+		"details": {},
+		"enabled": false,
+		"errors": [],
+		"gate_status": "missing",
+		"required": false,
+		"structure_validated": false,
+		"warnings": []
+	},
+	"graph": {
+		"episode_id": "MULTI-PLAY-M5-CONSTRAINT-VALIDATION",
+		"nodes": [
+			{
+				"activity_definition": {
+					"activity_id": "A008",
+					"allow_partial_commit": true,
+					"canon_refs": [
+						"CONCEPT_HYBRID_PLAY_EXPERIENCE",
+						"CONCEPT_MISSION_BALANCE_TARGETS"
+					],
+					"cards": [
+						{
+							"detail": "路线短，但只能单向通行。",
+							"id": "harbor_tunnel",
+							"label": "港区旧隧道",
+							"risk": 1.0,
+							"tags": [
+								"route"
+							]
+						},
+						{
+							"detail": "速度快，会暴露在红色机视野里。",
+							"id": "rail_bridge",
+							"label": "高架铁路桥",
+							"risk": 3.0,
+							"tags": [
+								"route"
+							]
+						},
+						{
+							"detail": "不追击王牌，留下来推船。",
+							"id": "grey_gull_line",
+							"label": "灰鸥量产队",
+							"risk": 1.0,
+							"tags": [
+								"defense",
+								"escort"
+							]
+						},
+						{
+							"detail": "能拖走王牌，也会把英雄债留给赤罡。",
+							"id": "red_decoy",
+							"label": "赤色诱饵航线",
+							"risk": 3.0,
+							"tags": [
+								"decoy"
+							]
+						},
+						{
+							"detail": "降低补给效率，优先运走伤员。",
+							"id": "repair_convoy",
+							"label": "预算救援车队",
+							"risk": 1.0,
+							"tags": [
+								"logistics",
+								"repair"
+							]
+						}
+					],
+					"conflicts": [
+						{
+							"a": "rail_bridge",
+							"b": "red_decoy",
+							"reason": "两条高可见路线会把追击火力同时引向市民队列。"
+						}
+					],
+					"grammar": "CONSTRAINT",
+					"host_profile": "route",
+					"outcomes": {
+						"clear": {
+							"battle_modifiers": [
+								"civilian_queue:+2"
+							],
+							"battle_setup_patches": [
+								{
+									"patch_id": "PATCH_M5_ROUTE_CLEAR",
+									"schema": "constraint_route_v1"
+								}
+							],
+							"preview": [
+								"仅一项主要责任有人承担",
+								"保护队列变长"
+							],
+							"promises_and_debts": [
+								{
+									"debt_id": "M5_C05_UNCOVERED_ROUTE",
+									"owner": "CH_JICUN",
+									"state": "open"
+								}
+							],
+							"resolution": "costly_success",
+							"soft_fail": "一条撤离责任无人承担，战场队列增长",
+							"ui_summary": "一条路线先开了；没人负责的那一段会以更长队列进入战场。",
+							"unlocked_flags": [
+								"c05_partial_route_plan"
+							],
+							"variable_delta": {
+								"route_debt": 1.0
+							}
+						},
+						"fail": {
+							"battle_modifiers": [
+								"civilian_queue:+3"
+							],
+							"battle_setup_patches": [
+								{
+									"patch_id": "PATCH_M5_ROUTE_FAIL",
+									"schema": "constraint_route_v1"
+								}
+							],
+							"preview": [
+								"没有形成可执行路线",
+								"战斗使用临时撤离点"
+							],
+							"promises_and_debts": [
+								{
+									"debt_id": "M5_C05_NO_ROUTE_PLAN",
+									"owner": "CH_JICUN",
+									"state": "open"
+								}
+							],
+							"resolution": "soft_failure",
+							"soft_fail": "临时撤离点启用，市民队列进入危险格",
+							"ui_summary": "没有形成计划。战斗不会取消，但第一条黄线只能现场决定。",
+							"variable_delta": {
+								"route_debt": 2.0
+							}
+						},
+						"good": {
+							"battle_modifiers": [
+								"evacuation_points:+1"
+							],
+							"battle_setup_patches": [
+								{
+									"patch_id": "PATCH_M5_ROUTE_GOOD",
+									"schema": "constraint_route_v1"
+								}
+							],
+							"preview": [
+								"两项主要撤离责任成立",
+								"补给线未被单独保护"
+							],
+							"resolution": "success",
+							"ui_summary": "主要撤离线成立；补给与伤员仍会在战场上争用同一条路。",
+							"unlocked_flags": [
+								"c05_core_route_plan"
+							],
+							"variable_delta": {
+								"route_debt": 0.0
+							}
+						},
+						"perfect": {
+							"battle_modifiers": [
+								"evacuation_points:+1",
+								"supply_convoy:ready"
+							],
+							"battle_setup_patches": [
+								{
+									"patch_id": "PATCH_M5_ROUTE_PERFECT",
+									"schema": "constraint_route_v1"
+								}
+							],
+							"facts": [
+								{
+									"id": "M5_A008_THREE_LANES_COMMITTED",
+									"to": true
+								}
+							],
+							"preview": [
+								"三条撤离线全部成立",
+								"战场初始撤退点增加",
+								"路线债下降"
+							],
+							"reaction_requests": [
+								{
+									"reaction_id": "REACT_C05_GREY_GULL_ACCEPTS_REAR_GUARD",
+									"window": "after_activity"
+								}
+							],
+							"resolution": "success",
+							"resource_delta": {
+								"audience_trust": 1.0
+							},
+							"ui_summary": "三条线都有人负责；战场仍要亲自把他们送出去。",
+							"unlocked_flags": [
+								"c05_three_lane_plan"
+							],
+							"variable_delta": {
+								"route_debt": -1.0
+							}
+						}
+					},
+					"prompt": "把三项有限能力放进航线。草案可随时撤销，提交后由战场执行。",
+					"safe_risk": 4.0,
+					"slots": [
+						{
+							"accepts": [
+								"route",
+								"escort"
+							],
+							"id": "civilian_lane",
+							"incompatible_text": "这项能力不能直接维持市民通路。",
+							"label": "市民撤离口",
+							"required": true
+						},
+						{
+							"accepts": [
+								"defense",
+								"decoy"
+							],
+							"id": "rear_guard",
+							"incompatible_text": "这里需要能拖住追击的单位。",
+							"label": "追击阻断线",
+							"required": true
+						},
+						{
+							"accepts": [
+								"logistics",
+								"repair"
+							],
+							"id": "supply_lane",
+							"incompatible_text": "补给线只能接收运输或维修能力。",
+							"label": "补给与伤员线",
+							"required": false
+						}
+					],
+					"template_id": "T_ROUTE_PLANNING",
+					"title": "撤退路线规划 / 把胜利改写成离开",
+					"transaction_id": "M5:A008:ROUTE:V01"
+				},
+				"activity_definition_path": "res://content/activities/constraint/a008_route_planning_validation.json",
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"M5-A006-NARRATIVE"
+				],
+				"completion_contract": "OUTCOME_M5_A008_ROUTE_V01",
+				"failure_edges": [
+					"M5-A006-NARRATIVE"
+				],
+				"mode": "DESK",
+				"node_id": "M5-A008-DESK",
+				"scene_id": "SCN_MULTI_PLAY_M5_CONSTRAINT",
+				"soft_fail_edges": [
+					"M5-A006-NARRATIVE"
+				],
+				"success_edges": [
+					"M5-A006-NARRATIVE"
+				],
+				"title": "A008 / 撤退路线规划"
+			},
+			{
+				"activity_definition": {
+					"activity_id": "A006",
+					"allow_partial_commit": true,
+					"canon_refs": [
+						"ORG_DAIGE",
+						"CH_QIHAI",
+						"CH_JICUN",
+						"CONCEPT_HYBRID_PLAY_EXPERIENCE"
+					],
+					"cards": [
+						{
+							"detail": "证明秩序确实救过人，也承认记录被选择性公开。",
+							"id": "disaster_archive",
+							"label": "清算部阻灾档案",
+							"risk": 1.0,
+							"tags": [
+								"evidence"
+							]
+						},
+						{
+							"detail": "证明封存正在扩大损伤，同时暴露馆内异常响应。",
+							"id": "museum_damage_log",
+							"label": "万机馆损伤记录",
+							"risk": 2.0,
+							"tags": [
+								"evidence"
+							]
+						},
+						{
+							"detail": "不让七海代签；所有超额动作先记在纪存名下。",
+							"id": "jicun_signature",
+							"label": "纪存具名担责",
+							"risk": 2.0,
+							"tags": [
+								"commitment"
+							]
+						},
+						{
+							"detail": "审批更稳，但把她重新绑回执行链。",
+							"id": "qihai_guarantee",
+							"label": "七海流程担保",
+							"risk": 3.0,
+							"tags": [
+								"commitment"
+							]
+						},
+						{
+							"detail": "换取支援，同时限制地图攻击和建筑破坏。",
+							"id": "damage_cap",
+							"label": "城市损伤上限",
+							"risk": 1.0,
+							"tags": [
+								"clause"
+							]
+						}
+					],
+					"conflicts": [
+						{
+							"a": "museum_damage_log",
+							"b": "qihai_guarantee",
+							"reason": "用馆方反证同时要求七海替流程担保，会把责任再次推回她身上。"
+						}
+					],
+					"grammar": "CONSTRAINT",
+					"host_profile": "legal",
+					"outcomes": {
+						"clear": {
+							"battle_modifiers": [
+								"legal_observer:deployed"
+							],
+							"battle_setup_patches": [
+								{
+									"patch_id": "PATCH_M5_LEGAL_CLEAR",
+									"schema": "constraint_legal_v1"
+								}
+							],
+							"preview": [
+								"只形成临时观察许可",
+								"封存观察员进入战场"
+							],
+							"promises_and_debts": [
+								{
+									"debt_id": "M5_C08_INCOMPLETE_WHITELIST",
+									"owner": "CH_JICUN",
+									"state": "open"
+								}
+							],
+							"resolution": "costly_success",
+							"soft_fail": "观察员随队，超额破坏将追加封存压力",
+							"ui_summary": "你拿到的是观察许可，不是白名单。下一场战斗会有人逐格记账。",
+							"unlocked_flags": [
+								"c08_observed_entry"
+							],
+							"variable_delta": {
+								"enterprise_pressure": 1.0
+							}
+						},
+						"fail": {
+							"battle_modifiers": [
+								"legal_observer:deployed",
+								"damage_fee:active"
+							],
+							"battle_setup_patches": [
+								{
+									"patch_id": "PATCH_M5_LEGAL_FAIL",
+									"schema": "constraint_legal_v1"
+								}
+							],
+							"pressure_delta": {
+								"city_damage_risk": 1.0
+							},
+							"preview": [
+								"谈判未形成合同",
+								"战斗仍可进入",
+								"封存观察与破坏计费同时生效"
+							],
+							"promises_and_debts": [
+								{
+									"debt_id": "M5_C08_NO_WHITELIST",
+									"owner": "CH_JICUN",
+									"state": "open"
+								}
+							],
+							"resolution": "soft_failure",
+							"soft_fail": "白名单未通过，战斗追加观察与破坏计费",
+							"ui_summary": "白名单未通过。门没有关，但每一次破坏都会成为下一张清算单。",
+							"variable_delta": {
+								"enterprise_pressure": 2.0
+							}
+						},
+						"good": {
+							"authority_changes": [
+								{
+									"authority_id": "C08_TEMPORARY_WHITELIST",
+									"state": "granted_core_only"
+								}
+							],
+							"battle_modifiers": [
+								"damage_budget:limited"
+							],
+							"battle_setup_patches": [
+								{
+									"patch_id": "PATCH_M5_LEGAL_GOOD",
+									"schema": "constraint_legal_v1"
+								}
+							],
+							"preview": [
+								"白名单主体通过",
+								"没有额外城市支援"
+							],
+							"resolution": "success",
+							"ui_summary": "核心白名单通过；你获得通行，不获得替你收拾残局的支援。",
+							"unlocked_flags": [
+								"c08_core_whitelist"
+							],
+							"variable_delta": {
+								"enterprise_pressure": 0.0
+							}
+						},
+						"perfect": {
+							"authority_changes": [
+								{
+									"authority_id": "C08_TEMPORARY_WHITELIST",
+									"state": "granted_with_damage_cap"
+								}
+							],
+							"battle_modifiers": [
+								"city_support:enabled",
+								"damage_budget:limited"
+							],
+							"battle_setup_patches": [
+								{
+									"patch_id": "PATCH_M5_LEGAL_PERFECT",
+									"schema": "constraint_legal_v1"
+								}
+							],
+							"pressure_delta": {
+								"city_damage_risk": -1.0
+							},
+							"preview": [
+								"临时白名单通过",
+								"城市支援开放",
+								"损伤上限成为真实束缚"
+							],
+							"reaction_requests": [
+								{
+									"reaction_id": "REACT_QIHAI_NOT_FORCED_TO_GUARANTEE",
+									"window": "after_activity"
+								}
+							],
+							"resolution": "success",
+							"ui_summary": "白名单通过。清算部会支援疏散，也会逐格核算你造成的城市损伤。",
+							"unlocked_flags": [
+								"c08_temporary_whitelist"
+							],
+							"variable_delta": {
+								"enterprise_pressure": -1.0
+							}
+						}
+					},
+					"prompt": "白名单需要事实依据、具名担责和可选限制条款。每张牌都能救下一些东西，也会授权另一些东西。",
+					"safe_risk": 4.0,
+					"slots": [
+						{
+							"accepts": [
+								"evidence"
+							],
+							"id": "evidence",
+							"label": "可核验依据",
+							"required": true
+						},
+						{
+							"accepts": [
+								"commitment"
+							],
+							"id": "risk_bearer",
+							"label": "事故责任人",
+							"required": true
+						},
+						{
+							"accepts": [
+								"clause"
+							],
+							"id": "restriction",
+							"label": "临时限制条款",
+							"required": false
+						}
+					],
+					"template_id": "T_DIALOGUE_CONTRACT",
+					"title": "清算白名单谈判 / 好处和束缚同时签字",
+					"transaction_id": "M5:A006:LEGAL:V01"
+				},
+				"activity_definition_path": "res://content/activities/constraint/a006_legal_negotiation_validation.json",
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"M5-A012-SPATIAL"
+				],
+				"completion_contract": "OUTCOME_M5_A006_LEGAL_V01",
+				"failure_edges": [
+					"M5-A012-SPATIAL"
+				],
+				"mode": "NARRATIVE",
+				"node_id": "M5-A006-NARRATIVE",
+				"scene_id": "SCN_MULTI_PLAY_M5_CONSTRAINT",
+				"soft_fail_edges": [
+					"M5-A012-SPATIAL"
+				],
+				"success_edges": [
+					"M5-A012-SPATIAL"
+				],
+				"title": "A006 / 清算白名单谈判"
+			},
+			{
+				"activity_definition": {
+					"activity_id": "A012",
+					"allow_partial_commit": true,
+					"canon_refs": [
+						"LOC_WANJI_MUSEUM",
+						"CH_JICUN",
+						"CONCEPT_HYBRID_PLAY_EXPERIENCE"
+					],
+					"cards": [
+						{
+							"detail": "保住最低出击能力，主展厅会整层熄灯。",
+							"id": "reserve_bus",
+							"label": "展陈备用母线",
+							"risk": 1.0,
+							"tags": [
+								"power"
+							]
+						},
+						{
+							"detail": "修复快；分给动力后就不能亲自检查火线。",
+							"id": "doudeng_team",
+							"label": "兜灯整备组",
+							"risk": 1.0,
+							"tags": [
+								"repair",
+								"fire"
+							]
+						},
+						{
+							"detail": "隔断可靠，会把一段生活区暂时封死。",
+							"id": "manual_bulkhead",
+							"label": "手动防火门",
+							"risk": 2.0,
+							"tags": [
+								"structure",
+								"fire"
+							]
+						},
+						{
+							"detail": "按观众规则逐间确认，不会漏掉没登记的人。",
+							"id": "old_guardian_search",
+							"label": "旧守护者广播网",
+							"risk": 1.0,
+							"tags": [
+								"search"
+							]
+						},
+						{
+							"detail": "搜索快，但尾流会扩大烟气流动。",
+							"id": "fast_mecha_sweep",
+							"label": "高速机体扫舱",
+							"risk": 3.0,
+							"tags": [
+								"search",
+								"escort"
+							]
+						}
+					],
+					"conflicts": [
+						{
+							"a": "manual_bulkhead",
+							"b": "fast_mecha_sweep",
+							"reason": "防火门关闭后高速机体无法通过，两个方案不能同时成立。"
+						}
+					],
+					"grammar": "CONSTRAINT",
+					"host_profile": "crisis",
+					"outcomes": {
+						"clear": {
+							"battle_modifiers": [
+								"ship_facilities:partial_lock"
+							],
+							"battle_setup_patches": [
+								{
+									"patch_id": "PATCH_M5_CRISIS_CLEAR",
+									"schema": "constraint_crisis_v1"
+								}
+							],
+							"preview": [
+								"至少一条核心线成立",
+								"未分配设施进入锁定"
+							],
+							"promises_and_debts": [
+								{
+									"debt_id": "M5_C11_UNSTAFFED_FACILITY",
+									"owner": "CH_JICUN",
+									"state": "open"
+								}
+							],
+							"resolution": "costly_success",
+							"soft_fail": "未分配设施暂时锁定，但最低出击能力保留",
+							"ui_summary": "一部分舰还活着，另一部分暂时成了黑掉的房间。",
+							"unlocked_flags": [
+								"c11_partial_facilities"
+							],
+							"variable_delta": {
+								"route_debt": 1.0
+							}
+						},
+						"fail": {
+							"battle_modifiers": [
+								"ship_facilities:minimum_only"
+							],
+							"battle_setup_patches": [
+								{
+									"patch_id": "PATCH_M5_CRISIS_FAIL",
+									"schema": "constraint_crisis_v1"
+								}
+							],
+							"preview": [
+								"自动最低保全启动",
+								"整备与支援设施大面积锁定"
+							],
+							"promises_and_debts": [
+								{
+									"debt_id": "M5_C11_SYSTEMIC_LOCKOUT",
+									"owner": "CH_JICUN",
+									"state": "open"
+								}
+							],
+							"resolution": "soft_failure",
+							"soft_fail": "仅保留最低出击能力，其他设施进入锁定",
+							"ui_summary": "自动保全替你作了决定：还能出击，但这里暂时不再像一个家。",
+							"unlocked_flags": [
+								"c11_minimum_operation_only"
+							],
+							"variable_delta": {
+								"route_debt": 2.0
+							}
+						},
+						"good": {
+							"battle_modifiers": [
+								"ship_facilities:core_online"
+							],
+							"battle_setup_patches": [
+								{
+									"patch_id": "PATCH_M5_CRISIS_GOOD",
+									"schema": "constraint_crisis_v1"
+								}
+							],
+							"preview": [
+								"三项核心责任有人承担",
+								"高风险组合留下额外维修"
+							],
+							"resolution": "success",
+							"ui_summary": "最低出击能力仍在；高风险调度让战后维修队列变长。",
+							"unlocked_flags": [
+								"c11_core_facilities_saved"
+							],
+							"variable_delta": {
+								"route_debt": 0.0
+							}
+						},
+						"perfect": {
+							"battle_modifiers": [
+								"ship_facilities:core_online",
+								"missing_people:located"
+							],
+							"battle_setup_patches": [
+								{
+									"patch_id": "PATCH_M5_CRISIS_PERFECT",
+									"schema": "constraint_crisis_v1"
+								}
+							],
+							"facts": [
+								{
+									"id": "M5_A012_MINIMUM_OPERATION_PRESERVED",
+									"to": true
+								}
+							],
+							"preview": [
+								"三项核心设施保留",
+								"最低出击能力维持",
+								"失联人员逐间确认"
+							],
+							"reaction_requests": [
+								{
+									"reaction_id": "REACT_C11_CREW_SEES_DARK_EXHIBITION",
+									"window": "after_activity"
+								}
+							],
+							"resolution": "success",
+							"ui_summary": "核心设施和人员线都保住了；代价是主展厅整层熄灯。",
+							"unlocked_flags": [
+								"c11_core_facilities_saved",
+								"c11_people_located"
+							],
+							"variable_delta": {
+								"route_debt": -1.0
+							}
+						}
+					},
+					"perfect_requires_optional": false,
+					"prompt": "电力、火线和人员同时出问题。不能让一个人兼任三个英雄，也不能一次锁死所有最低出击能力。",
+					"safe_risk": 4.0,
+					"slots": [
+						{
+							"accepts": [
+								"power",
+								"repair"
+							],
+							"id": "power_bus",
+							"label": "最低动力母线",
+							"required": true
+						},
+						{
+							"accepts": [
+								"fire",
+								"structure"
+							],
+							"id": "fire_break",
+							"label": "生活区防火隔断",
+							"required": true
+						},
+						{
+							"accepts": [
+								"search",
+								"escort"
+							],
+							"id": "missing_people",
+							"label": "失联人员搜索",
+							"required": true
+						}
+					],
+					"template_id": "T_REPAIR_ROUTING",
+					"title": "舰内灾害调度 / 家在系统层裂开",
+					"transaction_id": "M5:A012:CRISIS:V01"
+				},
+				"activity_definition_path": "res://content/activities/constraint/a012_crisis_routing_validation.json",
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"M5-TACTICAL-CONSUMPTION"
+				],
+				"completion_contract": "OUTCOME_M5_A012_CRISIS_V01",
+				"failure_edges": [
+					"M5-TACTICAL-CONSUMPTION"
+				],
+				"mode": "SPATIAL",
+				"node_id": "M5-A012-SPATIAL",
+				"scene_id": "SCN_MULTI_PLAY_M5_CONSTRAINT",
+				"soft_fail_edges": [
+					"M5-TACTICAL-CONSUMPTION"
+				],
+				"success_edges": [
+					"M5-TACTICAL-CONSUMPTION"
+				],
+				"title": "A012 / 舰内灾害调度"
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"battle_definition": {
+					"battle_id": "M5-CONSTRAINT-HANDOFF",
+					"grid": {
+						"blocked": [
+							[
+								4.0,
+								2.0
+							]
+						],
+						"height": 5.0,
+						"width": 8.0
+					},
+					"mid_events": [
+						{
+							"actions": [],
+							"event_id": "M5-R2-CONSEQUENCE-CHECK",
+							"message": "第二回合：撤离口、观察权限与最低动力同时结算。没有一项前置决定停留在菜单里。",
+							"timing": "turn_start",
+							"turn": 2.0
+						}
+					],
+					"objective_text": "保护撤离节点与动力母线；路线、法务和灾害调度的提交结果会直接改变地图。",
+					"objectives": [
+						{
+							"cell": [
+								7.0,
+								1.0
+							],
+							"id": "evac_node",
+							"integrity": 4.0,
+							"name": "市民撤离节点",
+							"required": true
+						},
+						{
+							"cell": [
+								7.0,
+								3.0
+							],
+							"id": "power_bus",
+							"integrity": 4.0,
+							"name": "最低动力母线",
+							"required": true
+						},
+						{
+							"cell": [
+								4.0,
+								4.0
+							],
+							"id": "evidence_cache",
+							"integrity": 2.0,
+							"name": "法务证据缓存",
+							"required": false
+						}
+					],
+					"patch_catalog": {
+						"PATCH_M5_CRISIS_CLEAR": {
+							"operations": [
+								{
+									"cells": [
+										[
+											2.0,
+											3.0
+										]
+									],
+									"op": "add_blocked_cells"
+								},
+								{
+									"key": "facility_state",
+									"op": "set_flag",
+									"value": "partial_lock"
+								}
+							]
+						},
+						"PATCH_M5_CRISIS_FAIL": {
+							"operations": [
+								{
+									"cells": [
+										[
+											2.0,
+											3.0
+										],
+										[
+											3.0,
+											3.0
+										]
+									],
+									"op": "add_blocked_cells"
+								},
+								{
+									"delta": -1.0,
+									"objective_id": "power_bus",
+									"op": "objective_integrity_delta"
+								}
+							]
+						},
+						"PATCH_M5_CRISIS_GOOD": {
+							"operations": [
+								{
+									"op": "set_unit_property",
+									"property": "en",
+									"unit_id": "guardian_validation",
+									"value": 18.0
+								},
+								{
+									"key": "facility_state",
+									"op": "set_flag",
+									"value": "core_online"
+								}
+							]
+						},
+						"PATCH_M5_CRISIS_PERFECT": {
+							"operations": [
+								{
+									"op": "set_unit_property",
+									"property": "en",
+									"unit_id": "guardian_validation",
+									"value": 24.0
+								},
+								{
+									"delta": 2.0,
+									"objective_id": "power_bus",
+									"op": "objective_integrity_delta"
+								}
+							]
+						},
+						"PATCH_M5_LEGAL_CLEAR": {
+							"operations": [
+								{
+									"cells": [
+										[
+											4.0,
+											1.0
+										]
+									],
+									"op": "add_blocked_cells"
+								},
+								{
+									"key": "legal_access",
+									"op": "set_flag",
+									"value": "observed"
+								}
+							]
+						},
+						"PATCH_M5_LEGAL_FAIL": {
+							"operations": [
+								{
+									"cells": [
+										[
+											4.0,
+											1.0
+										]
+									],
+									"op": "add_blocked_cells"
+								},
+								{
+									"delta": -1.0,
+									"objective_id": "evidence_cache",
+									"op": "objective_integrity_delta"
+								}
+							]
+						},
+						"PATCH_M5_LEGAL_GOOD": {
+							"operations": [
+								{
+									"key": "legal_access",
+									"op": "set_flag",
+									"value": "core_whitelist"
+								}
+							]
+						},
+						"PATCH_M5_LEGAL_PERFECT": {
+							"operations": [
+								{
+									"op": "set_unit_property",
+									"property": "en",
+									"unit_id": "escort_validation",
+									"value": 16.0
+								},
+								{
+									"key": "legal_access",
+									"op": "set_flag",
+									"value": "whitelist_with_support"
+								}
+							]
+						},
+						"PATCH_M5_ROUTE_CLEAR": {
+							"operations": [
+								{
+									"cells": [
+										[
+											3.0,
+											3.0
+										]
+									],
+									"op": "add_blocked_cells"
+								},
+								{
+									"key": "route_plan",
+									"op": "set_flag",
+									"value": "partial"
+								}
+							]
+						},
+						"PATCH_M5_ROUTE_FAIL": {
+							"operations": [
+								{
+									"cells": [
+										[
+											3.0,
+											2.0
+										],
+										[
+											3.0,
+											3.0
+										]
+									],
+									"op": "add_blocked_cells"
+								},
+								{
+									"delta": -1.0,
+									"objective_id": "evac_node",
+									"op": "objective_integrity_delta"
+								}
+							]
+						},
+						"PATCH_M5_ROUTE_GOOD": {
+							"operations": [
+								{
+									"delta": 1.0,
+									"objective_id": "evac_node",
+									"op": "objective_integrity_delta"
+								},
+								{
+									"key": "route_plan",
+									"op": "set_flag",
+									"value": "core"
+								}
+							]
+						},
+						"PATCH_M5_ROUTE_PERFECT": {
+							"operations": [
+								{
+									"delta": 2.0,
+									"objective_id": "evac_node",
+									"op": "objective_integrity_delta"
+								},
+								{
+									"key": "route_plan",
+									"op": "set_flag",
+									"value": "three_lane"
+								}
+							]
+						}
+					},
+					"start_prompt": "先查看 PATCH 列表。前面提交的方案已经成为本场战斗的地形、权限与资源。",
+					"status": "runtime_validation_only",
+					"title": "三项承诺 / 同一张战场账单",
+					"turn_limit": 2.0,
+					"units": [
+						{
+							"cell": [
+								1.0,
+								1.0
+							],
+							"en": 14.0,
+							"hp": 16.0,
+							"id": "guardian_validation",
+							"move": 3.0,
+							"name": "馆守 Z / 最低响应",
+							"team": "player",
+							"weapons": [
+								{
+									"en": 2.0,
+									"hit": 100.0,
+									"id": "low_heat_guard",
+									"max": 2.0,
+									"min": 1.0,
+									"name": "低热保护掌",
+									"post_move": true,
+									"power": 5.0
+								}
+							]
+						},
+						{
+							"cell": [
+								1.0,
+								3.0
+							],
+							"en": 10.0,
+							"hp": 11.0,
+							"id": "escort_validation",
+							"move": 4.0,
+							"name": "灰鸥 / 撤离护送",
+							"team": "player",
+							"weapons": [
+								{
+									"en": 0.0,
+									"hit": 100.0,
+									"id": "route_push",
+									"max": 1.0,
+									"min": 1.0,
+									"name": "路线推离",
+									"post_move": true,
+									"power": 4.0
+								}
+							]
+						},
+						{
+							"cell": [
+								5.0,
+								1.0
+							],
+							"hp": 7.0,
+							"id": "audit_drone_a",
+							"intent_target_id": "evac_node",
+							"intent_verb": "核销",
+							"move": 3.0,
+							"name": "封存观察机 A",
+							"team": "enemy"
+						},
+						{
+							"cell": [
+								6.0,
+								3.0
+							],
+							"hp": 7.0,
+							"id": "audit_drone_b",
+							"intent_target_id": "power_bus",
+							"intent_verb": "断路",
+							"move": 3.0,
+							"name": "封存观察机 B",
+							"team": "enemy"
+						}
+					],
+					"variant_id": "M5-RUNTIME-VALIDATION-V01",
+					"withdraw_allowed": true
+				},
+				"battle_definition_path": "res://content/activities/constraint/m5_constraint_consumption_battle.json",
+				"cancel_edges": [
+					"M5-DESK-REVIEW"
+				],
+				"completion_contract": "OUTCOME_M5_TACTICAL_CONSUMPTION_V01",
+				"failure_edges": [
+					"M5-DESK-REVIEW"
+				],
+				"mode": "TACTICAL",
+				"node_id": "M5-TACTICAL-CONSUMPTION",
+				"reaction_prefix": "REACT_M5_CONSTRAINT_HANDOFF",
+				"result_debt_id": "M5_CONSTRAINT_HANDOFF_UNFINISHED",
+				"result_fact_id": "M5_CONSTRAINT_HANDOFF_RESOLUTION",
+				"result_transaction_id": "M5:TACTICAL:CONSUMPTION:V01",
+				"scene_id": "SCN_MULTI_PLAY_M5_TACTICAL",
+				"soft_fail_edges": [
+					"M5-DESK-REVIEW"
+				],
+				"success_edges": [
+					"M5-DESK-REVIEW"
+				],
+				"title": "三项承诺 / 同一张战场账单",
+				"variant_fact_id": "M5_CONSTRAINT_BATTLE_VARIANT_USED"
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [],
+				"completion_contract": "OUTCOME_M5_DESK_REVIEW_V01",
+				"failure_edges": [],
+				"mode": "DESK",
+				"node_id": "M5-DESK-REVIEW",
+				"player_summary": "三个活动结果、战场消费记录和遗留债务已经返回同一份档案。",
+				"scene_id": "SCN_MULTI_PLAY_M5_DESK",
+				"soft_fail_edges": [],
+				"success_edges": [],
+				"terminal": true,
+				"title": "M5 / 活动结果回看",
+				"transaction_id": "M5:DESK:REVIEW:V01"
+			}
+		],
+		"start_node_id": "M5-A008-DESK"
+	},
+	"manifest": {
+		"activity_definitions": [
+			"res://content/activities/constraint/a008_route_planning_validation.json",
+			"res://content/activities/constraint/a006_legal_negotiation_validation.json",
+			"res://content/activities/constraint/a012_crisis_routing_validation.json"
+		],
+		"battle": "res://content/activities/constraint/m5_constraint_consumption_battle.json",
+		"bundle_output": "res://content/generated/episodes/runtime_validation/m5.bundle.json",
+		"claims": [
+			"one_constraint_controller_reused_across_three_host_authorities",
+			"reversible_draft_and_single_commit",
+			"fail_clear_good_perfect_soft_outcomes",
+			"activity_result_save_restore",
+			"activity_battle_setup_patch_consumption"
+		],
+		"episode_id": "MULTI-PLAY-M5-CONSTRAINT-VALIDATION",
+		"graph": "res://content/episodes/runtime_validation/m5/graph.m5.json",
+		"non_claims": [
+			"formal_c05_c08_c11_story_continuity",
+			"formal_activity_content_promoted",
+			"all_hybrid_activity_grammars_complete",
+			"production_art_promoted"
+		],
+		"status": "runtime_validation_only"
+	},
+	"resource_index": [
+		{
+			"kind": "activity",
+			"path": "res://content/activities/constraint/a006_legal_negotiation_validation.json",
+			"resource_id": "A006",
+			"sha256": "0b1e5913737a99123ca54e51279cb6b2a214c6d091c90c485467c2d5817cd800"
+		},
+		{
+			"kind": "activity",
+			"path": "res://content/activities/constraint/a008_route_planning_validation.json",
+			"resource_id": "A008",
+			"sha256": "7785f51ddc1da55cc2c64e8048bd305f69653af44793af77cbbbafd43a0b83b0"
+		},
+		{
+			"kind": "activity",
+			"path": "res://content/activities/constraint/a012_crisis_routing_validation.json",
+			"resource_id": "A012",
+			"sha256": "c6acdde68d8de98402e4ac0b12279f741c42e857dcbf573e105db6d1672b8d74"
+		},
+		{
+			"kind": "battle",
+			"path": "res://content/activities/constraint/m5_constraint_consumption_battle.json",
+			"resource_id": "M5-CONSTRAINT-HANDOFF@M5-RUNTIME-VALIDATION-V01",
+			"sha256": "3e6f56ae1b1a2f45191c56e4e6da4ab13c663f2a35ad06cadf971fe193735a98"
+		}
+	],
+	"resources_by_path": {
+		"res://content/activities/constraint/a006_legal_negotiation_validation.json": {
+			"activity_id": "A006",
+			"allow_partial_commit": true,
+			"canon_refs": [
+				"ORG_DAIGE",
+				"CH_QIHAI",
+				"CH_JICUN",
+				"CONCEPT_HYBRID_PLAY_EXPERIENCE"
+			],
+			"cards": [
+				{
+					"detail": "证明秩序确实救过人，也承认记录被选择性公开。",
+					"id": "disaster_archive",
+					"label": "清算部阻灾档案",
+					"risk": 1.0,
+					"tags": [
+						"evidence"
+					]
+				},
+				{
+					"detail": "证明封存正在扩大损伤，同时暴露馆内异常响应。",
+					"id": "museum_damage_log",
+					"label": "万机馆损伤记录",
+					"risk": 2.0,
+					"tags": [
+						"evidence"
+					]
+				},
+				{
+					"detail": "不让七海代签；所有超额动作先记在纪存名下。",
+					"id": "jicun_signature",
+					"label": "纪存具名担责",
+					"risk": 2.0,
+					"tags": [
+						"commitment"
+					]
+				},
+				{
+					"detail": "审批更稳，但把她重新绑回执行链。",
+					"id": "qihai_guarantee",
+					"label": "七海流程担保",
+					"risk": 3.0,
+					"tags": [
+						"commitment"
+					]
+				},
+				{
+					"detail": "换取支援，同时限制地图攻击和建筑破坏。",
+					"id": "damage_cap",
+					"label": "城市损伤上限",
+					"risk": 1.0,
+					"tags": [
+						"clause"
+					]
+				}
+			],
+			"conflicts": [
+				{
+					"a": "museum_damage_log",
+					"b": "qihai_guarantee",
+					"reason": "用馆方反证同时要求七海替流程担保，会把责任再次推回她身上。"
+				}
+			],
+			"grammar": "CONSTRAINT",
+			"host_profile": "legal",
+			"outcomes": {
+				"clear": {
+					"battle_modifiers": [
+						"legal_observer:deployed"
+					],
+					"battle_setup_patches": [
+						{
+							"patch_id": "PATCH_M5_LEGAL_CLEAR",
+							"schema": "constraint_legal_v1"
+						}
+					],
+					"preview": [
+						"只形成临时观察许可",
+						"封存观察员进入战场"
+					],
+					"promises_and_debts": [
+						{
+							"debt_id": "M5_C08_INCOMPLETE_WHITELIST",
+							"owner": "CH_JICUN",
+							"state": "open"
+						}
+					],
+					"resolution": "costly_success",
+					"soft_fail": "观察员随队，超额破坏将追加封存压力",
+					"ui_summary": "你拿到的是观察许可，不是白名单。下一场战斗会有人逐格记账。",
+					"unlocked_flags": [
+						"c08_observed_entry"
+					],
+					"variable_delta": {
+						"enterprise_pressure": 1.0
+					}
+				},
+				"fail": {
+					"battle_modifiers": [
+						"legal_observer:deployed",
+						"damage_fee:active"
+					],
+					"battle_setup_patches": [
+						{
+							"patch_id": "PATCH_M5_LEGAL_FAIL",
+							"schema": "constraint_legal_v1"
+						}
+					],
+					"pressure_delta": {
+						"city_damage_risk": 1.0
+					},
+					"preview": [
+						"谈判未形成合同",
+						"战斗仍可进入",
+						"封存观察与破坏计费同时生效"
+					],
+					"promises_and_debts": [
+						{
+							"debt_id": "M5_C08_NO_WHITELIST",
+							"owner": "CH_JICUN",
+							"state": "open"
+						}
+					],
+					"resolution": "soft_failure",
+					"soft_fail": "白名单未通过，战斗追加观察与破坏计费",
+					"ui_summary": "白名单未通过。门没有关，但每一次破坏都会成为下一张清算单。",
+					"variable_delta": {
+						"enterprise_pressure": 2.0
+					}
+				},
+				"good": {
+					"authority_changes": [
+						{
+							"authority_id": "C08_TEMPORARY_WHITELIST",
+							"state": "granted_core_only"
+						}
+					],
+					"battle_modifiers": [
+						"damage_budget:limited"
+					],
+					"battle_setup_patches": [
+						{
+							"patch_id": "PATCH_M5_LEGAL_GOOD",
+							"schema": "constraint_legal_v1"
+						}
+					],
+					"preview": [
+						"白名单主体通过",
+						"没有额外城市支援"
+					],
+					"resolution": "success",
+					"ui_summary": "核心白名单通过；你获得通行，不获得替你收拾残局的支援。",
+					"unlocked_flags": [
+						"c08_core_whitelist"
+					],
+					"variable_delta": {
+						"enterprise_pressure": 0.0
+					}
+				},
+				"perfect": {
+					"authority_changes": [
+						{
+							"authority_id": "C08_TEMPORARY_WHITELIST",
+							"state": "granted_with_damage_cap"
+						}
+					],
+					"battle_modifiers": [
+						"city_support:enabled",
+						"damage_budget:limited"
+					],
+					"battle_setup_patches": [
+						{
+							"patch_id": "PATCH_M5_LEGAL_PERFECT",
+							"schema": "constraint_legal_v1"
+						}
+					],
+					"pressure_delta": {
+						"city_damage_risk": -1.0
+					},
+					"preview": [
+						"临时白名单通过",
+						"城市支援开放",
+						"损伤上限成为真实束缚"
+					],
+					"reaction_requests": [
+						{
+							"reaction_id": "REACT_QIHAI_NOT_FORCED_TO_GUARANTEE",
+							"window": "after_activity"
+						}
+					],
+					"resolution": "success",
+					"ui_summary": "白名单通过。清算部会支援疏散，也会逐格核算你造成的城市损伤。",
+					"unlocked_flags": [
+						"c08_temporary_whitelist"
+					],
+					"variable_delta": {
+						"enterprise_pressure": -1.0
+					}
+				}
+			},
+			"prompt": "白名单需要事实依据、具名担责和可选限制条款。每张牌都能救下一些东西，也会授权另一些东西。",
+			"safe_risk": 4.0,
+			"slots": [
+				{
+					"accepts": [
+						"evidence"
+					],
+					"id": "evidence",
+					"label": "可核验依据",
+					"required": true
+				},
+				{
+					"accepts": [
+						"commitment"
+					],
+					"id": "risk_bearer",
+					"label": "事故责任人",
+					"required": true
+				},
+				{
+					"accepts": [
+						"clause"
+					],
+					"id": "restriction",
+					"label": "临时限制条款",
+					"required": false
+				}
+			],
+			"template_id": "T_DIALOGUE_CONTRACT",
+			"title": "清算白名单谈判 / 好处和束缚同时签字",
+			"transaction_id": "M5:A006:LEGAL:V01"
+		},
+		"res://content/activities/constraint/a008_route_planning_validation.json": {
+			"activity_id": "A008",
+			"allow_partial_commit": true,
+			"canon_refs": [
+				"CONCEPT_HYBRID_PLAY_EXPERIENCE",
+				"CONCEPT_MISSION_BALANCE_TARGETS"
+			],
+			"cards": [
+				{
+					"detail": "路线短，但只能单向通行。",
+					"id": "harbor_tunnel",
+					"label": "港区旧隧道",
+					"risk": 1.0,
+					"tags": [
+						"route"
+					]
+				},
+				{
+					"detail": "速度快，会暴露在红色机视野里。",
+					"id": "rail_bridge",
+					"label": "高架铁路桥",
+					"risk": 3.0,
+					"tags": [
+						"route"
+					]
+				},
+				{
+					"detail": "不追击王牌，留下来推船。",
+					"id": "grey_gull_line",
+					"label": "灰鸥量产队",
+					"risk": 1.0,
+					"tags": [
+						"defense",
+						"escort"
+					]
+				},
+				{
+					"detail": "能拖走王牌，也会把英雄债留给赤罡。",
+					"id": "red_decoy",
+					"label": "赤色诱饵航线",
+					"risk": 3.0,
+					"tags": [
+						"decoy"
+					]
+				},
+				{
+					"detail": "降低补给效率，优先运走伤员。",
+					"id": "repair_convoy",
+					"label": "预算救援车队",
+					"risk": 1.0,
+					"tags": [
+						"logistics",
+						"repair"
+					]
+				}
+			],
+			"conflicts": [
+				{
+					"a": "rail_bridge",
+					"b": "red_decoy",
+					"reason": "两条高可见路线会把追击火力同时引向市民队列。"
+				}
+			],
+			"grammar": "CONSTRAINT",
+			"host_profile": "route",
+			"outcomes": {
+				"clear": {
+					"battle_modifiers": [
+						"civilian_queue:+2"
+					],
+					"battle_setup_patches": [
+						{
+							"patch_id": "PATCH_M5_ROUTE_CLEAR",
+							"schema": "constraint_route_v1"
+						}
+					],
+					"preview": [
+						"仅一项主要责任有人承担",
+						"保护队列变长"
+					],
+					"promises_and_debts": [
+						{
+							"debt_id": "M5_C05_UNCOVERED_ROUTE",
+							"owner": "CH_JICUN",
+							"state": "open"
+						}
+					],
+					"resolution": "costly_success",
+					"soft_fail": "一条撤离责任无人承担，战场队列增长",
+					"ui_summary": "一条路线先开了；没人负责的那一段会以更长队列进入战场。",
+					"unlocked_flags": [
+						"c05_partial_route_plan"
+					],
+					"variable_delta": {
+						"route_debt": 1.0
+					}
+				},
+				"fail": {
+					"battle_modifiers": [
+						"civilian_queue:+3"
+					],
+					"battle_setup_patches": [
+						{
+							"patch_id": "PATCH_M5_ROUTE_FAIL",
+							"schema": "constraint_route_v1"
+						}
+					],
+					"preview": [
+						"没有形成可执行路线",
+						"战斗使用临时撤离点"
+					],
+					"promises_and_debts": [
+						{
+							"debt_id": "M5_C05_NO_ROUTE_PLAN",
+							"owner": "CH_JICUN",
+							"state": "open"
+						}
+					],
+					"resolution": "soft_failure",
+					"soft_fail": "临时撤离点启用，市民队列进入危险格",
+					"ui_summary": "没有形成计划。战斗不会取消，但第一条黄线只能现场决定。",
+					"variable_delta": {
+						"route_debt": 2.0
+					}
+				},
+				"good": {
+					"battle_modifiers": [
+						"evacuation_points:+1"
+					],
+					"battle_setup_patches": [
+						{
+							"patch_id": "PATCH_M5_ROUTE_GOOD",
+							"schema": "constraint_route_v1"
+						}
+					],
+					"preview": [
+						"两项主要撤离责任成立",
+						"补给线未被单独保护"
+					],
+					"resolution": "success",
+					"ui_summary": "主要撤离线成立；补给与伤员仍会在战场上争用同一条路。",
+					"unlocked_flags": [
+						"c05_core_route_plan"
+					],
+					"variable_delta": {
+						"route_debt": 0.0
+					}
+				},
+				"perfect": {
+					"battle_modifiers": [
+						"evacuation_points:+1",
+						"supply_convoy:ready"
+					],
+					"battle_setup_patches": [
+						{
+							"patch_id": "PATCH_M5_ROUTE_PERFECT",
+							"schema": "constraint_route_v1"
+						}
+					],
+					"facts": [
+						{
+							"id": "M5_A008_THREE_LANES_COMMITTED",
+							"to": true
+						}
+					],
+					"preview": [
+						"三条撤离线全部成立",
+						"战场初始撤退点增加",
+						"路线债下降"
+					],
+					"reaction_requests": [
+						{
+							"reaction_id": "REACT_C05_GREY_GULL_ACCEPTS_REAR_GUARD",
+							"window": "after_activity"
+						}
+					],
+					"resolution": "success",
+					"resource_delta": {
+						"audience_trust": 1.0
+					},
+					"ui_summary": "三条线都有人负责；战场仍要亲自把他们送出去。",
+					"unlocked_flags": [
+						"c05_three_lane_plan"
+					],
+					"variable_delta": {
+						"route_debt": -1.0
+					}
+				}
+			},
+			"prompt": "把三项有限能力放进航线。草案可随时撤销，提交后由战场执行。",
+			"safe_risk": 4.0,
+			"slots": [
+				{
+					"accepts": [
+						"route",
+						"escort"
+					],
+					"id": "civilian_lane",
+					"incompatible_text": "这项能力不能直接维持市民通路。",
+					"label": "市民撤离口",
+					"required": true
+				},
+				{
+					"accepts": [
+						"defense",
+						"decoy"
+					],
+					"id": "rear_guard",
+					"incompatible_text": "这里需要能拖住追击的单位。",
+					"label": "追击阻断线",
+					"required": true
+				},
+				{
+					"accepts": [
+						"logistics",
+						"repair"
+					],
+					"id": "supply_lane",
+					"incompatible_text": "补给线只能接收运输或维修能力。",
+					"label": "补给与伤员线",
+					"required": false
+				}
+			],
+			"template_id": "T_ROUTE_PLANNING",
+			"title": "撤退路线规划 / 把胜利改写成离开",
+			"transaction_id": "M5:A008:ROUTE:V01"
+		},
+		"res://content/activities/constraint/a012_crisis_routing_validation.json": {
+			"activity_id": "A012",
+			"allow_partial_commit": true,
+			"canon_refs": [
+				"LOC_WANJI_MUSEUM",
+				"CH_JICUN",
+				"CONCEPT_HYBRID_PLAY_EXPERIENCE"
+			],
+			"cards": [
+				{
+					"detail": "保住最低出击能力，主展厅会整层熄灯。",
+					"id": "reserve_bus",
+					"label": "展陈备用母线",
+					"risk": 1.0,
+					"tags": [
+						"power"
+					]
+				},
+				{
+					"detail": "修复快；分给动力后就不能亲自检查火线。",
+					"id": "doudeng_team",
+					"label": "兜灯整备组",
+					"risk": 1.0,
+					"tags": [
+						"repair",
+						"fire"
+					]
+				},
+				{
+					"detail": "隔断可靠，会把一段生活区暂时封死。",
+					"id": "manual_bulkhead",
+					"label": "手动防火门",
+					"risk": 2.0,
+					"tags": [
+						"structure",
+						"fire"
+					]
+				},
+				{
+					"detail": "按观众规则逐间确认，不会漏掉没登记的人。",
+					"id": "old_guardian_search",
+					"label": "旧守护者广播网",
+					"risk": 1.0,
+					"tags": [
+						"search"
+					]
+				},
+				{
+					"detail": "搜索快，但尾流会扩大烟气流动。",
+					"id": "fast_mecha_sweep",
+					"label": "高速机体扫舱",
+					"risk": 3.0,
+					"tags": [
+						"search",
+						"escort"
+					]
+				}
+			],
+			"conflicts": [
+				{
+					"a": "manual_bulkhead",
+					"b": "fast_mecha_sweep",
+					"reason": "防火门关闭后高速机体无法通过，两个方案不能同时成立。"
+				}
+			],
+			"grammar": "CONSTRAINT",
+			"host_profile": "crisis",
+			"outcomes": {
+				"clear": {
+					"battle_modifiers": [
+						"ship_facilities:partial_lock"
+					],
+					"battle_setup_patches": [
+						{
+							"patch_id": "PATCH_M5_CRISIS_CLEAR",
+							"schema": "constraint_crisis_v1"
+						}
+					],
+					"preview": [
+						"至少一条核心线成立",
+						"未分配设施进入锁定"
+					],
+					"promises_and_debts": [
+						{
+							"debt_id": "M5_C11_UNSTAFFED_FACILITY",
+							"owner": "CH_JICUN",
+							"state": "open"
+						}
+					],
+					"resolution": "costly_success",
+					"soft_fail": "未分配设施暂时锁定，但最低出击能力保留",
+					"ui_summary": "一部分舰还活着，另一部分暂时成了黑掉的房间。",
+					"unlocked_flags": [
+						"c11_partial_facilities"
+					],
+					"variable_delta": {
+						"route_debt": 1.0
+					}
+				},
+				"fail": {
+					"battle_modifiers": [
+						"ship_facilities:minimum_only"
+					],
+					"battle_setup_patches": [
+						{
+							"patch_id": "PATCH_M5_CRISIS_FAIL",
+							"schema": "constraint_crisis_v1"
+						}
+					],
+					"preview": [
+						"自动最低保全启动",
+						"整备与支援设施大面积锁定"
+					],
+					"promises_and_debts": [
+						{
+							"debt_id": "M5_C11_SYSTEMIC_LOCKOUT",
+							"owner": "CH_JICUN",
+							"state": "open"
+						}
+					],
+					"resolution": "soft_failure",
+					"soft_fail": "仅保留最低出击能力，其他设施进入锁定",
+					"ui_summary": "自动保全替你作了决定：还能出击，但这里暂时不再像一个家。",
+					"unlocked_flags": [
+						"c11_minimum_operation_only"
+					],
+					"variable_delta": {
+						"route_debt": 2.0
+					}
+				},
+				"good": {
+					"battle_modifiers": [
+						"ship_facilities:core_online"
+					],
+					"battle_setup_patches": [
+						{
+							"patch_id": "PATCH_M5_CRISIS_GOOD",
+							"schema": "constraint_crisis_v1"
+						}
+					],
+					"preview": [
+						"三项核心责任有人承担",
+						"高风险组合留下额外维修"
+					],
+					"resolution": "success",
+					"ui_summary": "最低出击能力仍在；高风险调度让战后维修队列变长。",
+					"unlocked_flags": [
+						"c11_core_facilities_saved"
+					],
+					"variable_delta": {
+						"route_debt": 0.0
+					}
+				},
+				"perfect": {
+					"battle_modifiers": [
+						"ship_facilities:core_online",
+						"missing_people:located"
+					],
+					"battle_setup_patches": [
+						{
+							"patch_id": "PATCH_M5_CRISIS_PERFECT",
+							"schema": "constraint_crisis_v1"
+						}
+					],
+					"facts": [
+						{
+							"id": "M5_A012_MINIMUM_OPERATION_PRESERVED",
+							"to": true
+						}
+					],
+					"preview": [
+						"三项核心设施保留",
+						"最低出击能力维持",
+						"失联人员逐间确认"
+					],
+					"reaction_requests": [
+						{
+							"reaction_id": "REACT_C11_CREW_SEES_DARK_EXHIBITION",
+							"window": "after_activity"
+						}
+					],
+					"resolution": "success",
+					"ui_summary": "核心设施和人员线都保住了；代价是主展厅整层熄灯。",
+					"unlocked_flags": [
+						"c11_core_facilities_saved",
+						"c11_people_located"
+					],
+					"variable_delta": {
+						"route_debt": -1.0
+					}
+				}
+			},
+			"perfect_requires_optional": false,
+			"prompt": "电力、火线和人员同时出问题。不能让一个人兼任三个英雄，也不能一次锁死所有最低出击能力。",
+			"safe_risk": 4.0,
+			"slots": [
+				{
+					"accepts": [
+						"power",
+						"repair"
+					],
+					"id": "power_bus",
+					"label": "最低动力母线",
+					"required": true
+				},
+				{
+					"accepts": [
+						"fire",
+						"structure"
+					],
+					"id": "fire_break",
+					"label": "生活区防火隔断",
+					"required": true
+				},
+				{
+					"accepts": [
+						"search",
+						"escort"
+					],
+					"id": "missing_people",
+					"label": "失联人员搜索",
+					"required": true
+				}
+			],
+			"template_id": "T_REPAIR_ROUTING",
+			"title": "舰内灾害调度 / 家在系统层裂开",
+			"transaction_id": "M5:A012:CRISIS:V01"
+		},
+		"res://content/activities/constraint/m5_constraint_consumption_battle.json": {
+			"battle_id": "M5-CONSTRAINT-HANDOFF",
+			"grid": {
+				"blocked": [
+					[
+						4.0,
+						2.0
+					]
+				],
+				"height": 5.0,
+				"width": 8.0
+			},
+			"mid_events": [
+				{
+					"actions": [],
+					"event_id": "M5-R2-CONSEQUENCE-CHECK",
+					"message": "第二回合：撤离口、观察权限与最低动力同时结算。没有一项前置决定停留在菜单里。",
+					"timing": "turn_start",
+					"turn": 2.0
+				}
+			],
+			"objective_text": "保护撤离节点与动力母线；路线、法务和灾害调度的提交结果会直接改变地图。",
+			"objectives": [
+				{
+					"cell": [
+						7.0,
+						1.0
+					],
+					"id": "evac_node",
+					"integrity": 4.0,
+					"name": "市民撤离节点",
+					"required": true
+				},
+				{
+					"cell": [
+						7.0,
+						3.0
+					],
+					"id": "power_bus",
+					"integrity": 4.0,
+					"name": "最低动力母线",
+					"required": true
+				},
+				{
+					"cell": [
+						4.0,
+						4.0
+					],
+					"id": "evidence_cache",
+					"integrity": 2.0,
+					"name": "法务证据缓存",
+					"required": false
+				}
+			],
+			"patch_catalog": {
+				"PATCH_M5_CRISIS_CLEAR": {
+					"operations": [
+						{
+							"cells": [
+								[
+									2.0,
+									3.0
+								]
+							],
+							"op": "add_blocked_cells"
+						},
+						{
+							"key": "facility_state",
+							"op": "set_flag",
+							"value": "partial_lock"
+						}
+					]
+				},
+				"PATCH_M5_CRISIS_FAIL": {
+					"operations": [
+						{
+							"cells": [
+								[
+									2.0,
+									3.0
+								],
+								[
+									3.0,
+									3.0
+								]
+							],
+							"op": "add_blocked_cells"
+						},
+						{
+							"delta": -1.0,
+							"objective_id": "power_bus",
+							"op": "objective_integrity_delta"
+						}
+					]
+				},
+				"PATCH_M5_CRISIS_GOOD": {
+					"operations": [
+						{
+							"op": "set_unit_property",
+							"property": "en",
+							"unit_id": "guardian_validation",
+							"value": 18.0
+						},
+						{
+							"key": "facility_state",
+							"op": "set_flag",
+							"value": "core_online"
+						}
+					]
+				},
+				"PATCH_M5_CRISIS_PERFECT": {
+					"operations": [
+						{
+							"op": "set_unit_property",
+							"property": "en",
+							"unit_id": "guardian_validation",
+							"value": 24.0
+						},
+						{
+							"delta": 2.0,
+							"objective_id": "power_bus",
+							"op": "objective_integrity_delta"
+						}
+					]
+				},
+				"PATCH_M5_LEGAL_CLEAR": {
+					"operations": [
+						{
+							"cells": [
+								[
+									4.0,
+									1.0
+								]
+							],
+							"op": "add_blocked_cells"
+						},
+						{
+							"key": "legal_access",
+							"op": "set_flag",
+							"value": "observed"
+						}
+					]
+				},
+				"PATCH_M5_LEGAL_FAIL": {
+					"operations": [
+						{
+							"cells": [
+								[
+									4.0,
+									1.0
+								]
+							],
+							"op": "add_blocked_cells"
+						},
+						{
+							"delta": -1.0,
+							"objective_id": "evidence_cache",
+							"op": "objective_integrity_delta"
+						}
+					]
+				},
+				"PATCH_M5_LEGAL_GOOD": {
+					"operations": [
+						{
+							"key": "legal_access",
+							"op": "set_flag",
+							"value": "core_whitelist"
+						}
+					]
+				},
+				"PATCH_M5_LEGAL_PERFECT": {
+					"operations": [
+						{
+							"op": "set_unit_property",
+							"property": "en",
+							"unit_id": "escort_validation",
+							"value": 16.0
+						},
+						{
+							"key": "legal_access",
+							"op": "set_flag",
+							"value": "whitelist_with_support"
+						}
+					]
+				},
+				"PATCH_M5_ROUTE_CLEAR": {
+					"operations": [
+						{
+							"cells": [
+								[
+									3.0,
+									3.0
+								]
+							],
+							"op": "add_blocked_cells"
+						},
+						{
+							"key": "route_plan",
+							"op": "set_flag",
+							"value": "partial"
+						}
+					]
+				},
+				"PATCH_M5_ROUTE_FAIL": {
+					"operations": [
+						{
+							"cells": [
+								[
+									3.0,
+									2.0
+								],
+								[
+									3.0,
+									3.0
+								]
+							],
+							"op": "add_blocked_cells"
+						},
+						{
+							"delta": -1.0,
+							"objective_id": "evac_node",
+							"op": "objective_integrity_delta"
+						}
+					]
+				},
+				"PATCH_M5_ROUTE_GOOD": {
+					"operations": [
+						{
+							"delta": 1.0,
+							"objective_id": "evac_node",
+							"op": "objective_integrity_delta"
+						},
+						{
+							"key": "route_plan",
+							"op": "set_flag",
+							"value": "core"
+						}
+					]
+				},
+				"PATCH_M5_ROUTE_PERFECT": {
+					"operations": [
+						{
+							"delta": 2.0,
+							"objective_id": "evac_node",
+							"op": "objective_integrity_delta"
+						},
+						{
+							"key": "route_plan",
+							"op": "set_flag",
+							"value": "three_lane"
+						}
+					]
+				}
+			},
+			"start_prompt": "先查看 PATCH 列表。前面提交的方案已经成为本场战斗的地形、权限与资源。",
+			"status": "runtime_validation_only",
+			"title": "三项承诺 / 同一张战场账单",
+			"turn_limit": 2.0,
+			"units": [
+				{
+					"cell": [
+						1.0,
+						1.0
+					],
+					"en": 14.0,
+					"hp": 16.0,
+					"id": "guardian_validation",
+					"move": 3.0,
+					"name": "馆守 Z / 最低响应",
+					"team": "player",
+					"weapons": [
+						{
+							"en": 2.0,
+							"hit": 100.0,
+							"id": "low_heat_guard",
+							"max": 2.0,
+							"min": 1.0,
+							"name": "低热保护掌",
+							"post_move": true,
+							"power": 5.0
+						}
+					]
+				},
+				{
+					"cell": [
+						1.0,
+						3.0
+					],
+					"en": 10.0,
+					"hp": 11.0,
+					"id": "escort_validation",
+					"move": 4.0,
+					"name": "灰鸥 / 撤离护送",
+					"team": "player",
+					"weapons": [
+						{
+							"en": 0.0,
+							"hit": 100.0,
+							"id": "route_push",
+							"max": 1.0,
+							"min": 1.0,
+							"name": "路线推离",
+							"post_move": true,
+							"power": 4.0
+						}
+					]
+				},
+				{
+					"cell": [
+						5.0,
+						1.0
+					],
+					"hp": 7.0,
+					"id": "audit_drone_a",
+					"intent_target_id": "evac_node",
+					"intent_verb": "核销",
+					"move": 3.0,
+					"name": "封存观察机 A",
+					"team": "enemy"
+				},
+				{
+					"cell": [
+						6.0,
+						3.0
+					],
+					"hp": 7.0,
+					"id": "audit_drone_b",
+					"intent_target_id": "power_bus",
+					"intent_verb": "断路",
+					"move": 3.0,
+					"name": "封存观察机 B",
+					"team": "enemy"
+				}
+			],
+			"variant_id": "M5-RUNTIME-VALIDATION-V01",
+			"withdraw_allowed": true
+		}
+	},
+	"source_fingerprint": "65528a532e04968ead21d208d2f3287621429a155cdbf4c19799f0dba25757c2",
+	"source_manifest_path": "res://content/episodes/runtime_validation/m5/manifest.m5.json",
+	"status": "runtime_validation_only"
+}

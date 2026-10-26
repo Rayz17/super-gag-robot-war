@@ -1,0 +1,45 @@
+{
+  "mode": "built-in image_gen",
+  "items": [
+    {
+      "id": "M06",
+      "files": [
+        "M06-public-works-master-prompt-r1.txt",
+        "M06-public-works-local-correction-prompt-r1b.txt"
+      ],
+      "reference_roles": [
+        {
+          "file": "refs/M06-public-works-original-20261023.jpg",
+          "sha256": "e0af32775ebde492fa870edb0552fe34ced1adc6479d2b44d03a741c142a3934",
+          "project_original": "captures/20261014-full-direction/review/20261015-latest-review/images/e0af32775ebde492fa870edb0552fe34ced1adc6479d2b44d03a741c142a3934.jpg",
+          "role": "原有身份与造型依据"
+        },
+        {
+          "file": "samples/M14-front-airframe-r6.png",
+          "sha256": "4464ffa6fc330864a8b5245c9515f1ed320ce938c1d0befc39c6882664f6d540",
+          "role": "仅取已确定项目画法，不取机体身份/比例/配色"
+        }
+      ]
+    },
+    {
+      "id": "M07",
+      "files": [
+        "M07-public-works-master-prompt-r1.txt",
+        "M07-public-works-local-correction-prompt-r1b.txt"
+      ],
+      "reference_roles": [
+        {
+          "file": "refs/M07-public-works-original-20261023.jpg",
+          "sha256": "232edd1b03a9dfc8e8f70aa0c93dc57b11a5e8b5069a9a8be45603742639f6c0",
+          "project_original": "captures/20261014-full-direction/review/20261015-latest-review/images/232edd1b03a9dfc8e8f70aa0c93dc57b11a5e8b5069a9a8be45603742639f6c0.jpg",
+          "role": "原有身份与造型依据"
+        },
+        {
+          "file": "samples/M14-front-airframe-r6.png",
+          "sha256": "4464ffa6fc330864a8b5245c9515f1ed320ce938c1d0befc39c6882664f6d540",
+          "role": "仅取已确定项目画法，不取机体身份/比例/配色"
+        }
+      ]
+    }
+  ]
+}

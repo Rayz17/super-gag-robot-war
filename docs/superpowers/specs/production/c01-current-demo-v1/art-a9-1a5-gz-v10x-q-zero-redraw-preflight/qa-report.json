@@ -1,0 +1,139 @@
+{
+  "task": "75-c01e02-guardian-z-v10x-q-lineage-recovery-and-asset-governance-correction §5.1",
+  "authority": "Candidate",
+  "runtime_allowed": false,
+  "redesign": false,
+  "visible_pixel_generation": false,
+  "imagegen_calls": 0,
+  "blender_calls": 0,
+  "svg_calls": 0,
+  "pillow_visible_mecha_drawing": false,
+  "operations": [
+    "byte_copy",
+    "fixed_crop",
+    "transparent_pad",
+    "single_resize",
+    "layout",
+    "qa",
+    "hash"
+  ],
+  "source_lock_pass_all": true,
+  "fixed_crop_pixel_equal": {
+    "south_sheet": true,
+    "west": true,
+    "north": true,
+    "east": true
+  },
+  "fixed_crop_pixel_equal_all": true,
+  "south_exact_copy": true,
+  "output_alpha_present_all": true,
+  "display_scale": [
+    256,
+    256
+  ],
+  "display_pivot": [
+    128,
+    243
+  ],
+  "half_review_scale": [
+    128,
+    128
+  ],
+  "half_review_pivot": [
+    64,
+    121
+  ],
+  "map_anchor": [
+    382,
+    434
+  ],
+  "map_footprint": "2x2",
+  "structure_risk_metrics": {
+    "south_master_vs_sheet_front_alpha_iou": 0.753272,
+    "west_vs_mirrored_east_alpha_iou": 0.715415,
+    "interpretation": "same-source lineage proven; exact rig-like structural equivalence not proven",
+    "pass_fail_role": "risk evidence only; no automatic visual threshold"
+  },
+  "directions": {
+    "south": {
+      "source": "330346 front exact",
+      "size": [
+        256,
+        256
+      ],
+      "alpha_bbox": [
+        41,
+        16,
+        217,
+        244
+      ],
+      "alpha_nonzero": 27647,
+      "pivot": [
+        128,
+        243
+      ],
+      "resize": "one native-to-256 LANCZOS"
+    },
+    "west": {
+      "source": "3873 fixed cell 1",
+      "size": [
+        256,
+        256
+      ],
+      "alpha_bbox": [
+        83,
+        15,
+        171,
+        244
+      ],
+      "alpha_nonzero": 14289,
+      "pivot": [
+        128,
+        243
+      ],
+      "resize": "one native-to-256 LANCZOS"
+    },
+    "north": {
+      "source": "3873 fixed cell 2",
+      "size": [
+        256,
+        256
+      ],
+      "alpha_bbox": [
+        47,
+        15,
+        209,
+        244
+      ],
+      "alpha_nonzero": 27322,
+      "pivot": [
+        128,
+        243
+      ],
+      "resize": "one native-to-256 LANCZOS"
+    },
+    "east": {
+      "source": "3873 fixed cell 3",
+      "size": [
+        256,
+        256
+      ],
+      "alpha_bbox": [
+        88,
+        15,
+        166,
+        244
+      ],
+      "alpha_nonzero": 12619,
+      "pivot": [
+        128,
+        243
+      ],
+      "resize": "one native-to-256 LANCZOS"
+    }
+  },
+  "machine_pass": true,
+  "visual_pass": "PENDING_PRODUCER_ACTUAL_PIXEL_PREFLIGHT",
+  "ua91": "NOT_OPEN",
+  "downstream": "STOPPED"
+}

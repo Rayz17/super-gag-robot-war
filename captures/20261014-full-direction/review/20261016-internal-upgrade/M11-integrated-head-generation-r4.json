@@ -1,0 +1,21 @@
+{
+  "mode": "built_in_image_gen",
+  "use_case": "stylized-concept",
+  "prompt_file": "M11-integrated-head-prompt-r4.txt",
+  "references": [
+    {
+      "path": "samples/M11-future-head-r2.png",
+      "role": "prior identity and style; helmet shape redesign target"
+    },
+    {
+      "path": "samples/M11-user-helmet-reference-r4.png",
+      "role": "user structural inspiration only"
+    }
+  ],
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-15caa586-1b6e-435f-92cd-b054a9383181.png",
+  "selected_output": "samples/M11-integrated-head-options-r4.png",
+  "selection": "current_head_options_for_review",
+  "user_adopted": false,
+  "author_preference": "B",
+  "prior_crown_options_superseded": true
+}

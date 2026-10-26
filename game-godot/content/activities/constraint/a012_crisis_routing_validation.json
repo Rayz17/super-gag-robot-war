@@ -1,0 +1,72 @@
+{
+  "activity_id": "A012",
+  "template_id": "T_REPAIR_ROUTING",
+  "grammar": "CONSTRAINT",
+  "host_profile": "crisis",
+  "title": "舰内灾害调度 / 家在系统层裂开",
+  "prompt": "电力、火线和人员同时出问题。不能让一个人兼任三个英雄，也不能一次锁死所有最低出击能力。",
+  "transaction_id": "M5:A012:CRISIS:V01",
+  "canon_refs": ["LOC_WANJI_MUSEUM", "CH_JICUN", "CONCEPT_HYBRID_PLAY_EXPERIENCE"],
+  "safe_risk": 4,
+  "perfect_requires_optional": false,
+  "allow_partial_commit": true,
+  "slots": [
+    {"id": "power_bus", "label": "最低动力母线", "required": true, "accepts": ["power", "repair"]},
+    {"id": "fire_break", "label": "生活区防火隔断", "required": true, "accepts": ["fire", "structure"]},
+    {"id": "missing_people", "label": "失联人员搜索", "required": true, "accepts": ["search", "escort"]}
+  ],
+  "cards": [
+    {"id": "reserve_bus", "label": "展陈备用母线", "detail": "保住最低出击能力，主展厅会整层熄灯。", "tags": ["power"], "risk": 1},
+    {"id": "doudeng_team", "label": "兜灯整备组", "detail": "修复快；分给动力后就不能亲自检查火线。", "tags": ["repair", "fire"], "risk": 1},
+    {"id": "manual_bulkhead", "label": "手动防火门", "detail": "隔断可靠，会把一段生活区暂时封死。", "tags": ["structure", "fire"], "risk": 2},
+    {"id": "old_guardian_search", "label": "旧守护者广播网", "detail": "按观众规则逐间确认，不会漏掉没登记的人。", "tags": ["search"], "risk": 1},
+    {"id": "fast_mecha_sweep", "label": "高速机体扫舱", "detail": "搜索快，但尾流会扩大烟气流动。", "tags": ["search", "escort"], "risk": 3}
+  ],
+  "conflicts": [
+    {"a": "manual_bulkhead", "b": "fast_mecha_sweep", "reason": "防火门关闭后高速机体无法通过，两个方案不能同时成立。"}
+  ],
+  "outcomes": {
+    "perfect": {
+      "resolution": "success",
+      "preview": ["三项核心设施保留", "最低出击能力维持", "失联人员逐间确认"],
+      "variable_delta": {"route_debt": -1},
+      "battle_modifiers": ["ship_facilities:core_online", "missing_people:located"],
+      "unlocked_flags": ["c11_core_facilities_saved", "c11_people_located"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M5_CRISIS_PERFECT", "schema": "constraint_crisis_v1"}],
+      "facts": [{"id": "M5_A012_MINIMUM_OPERATION_PRESERVED", "to": true}],
+      "reaction_requests": [{"reaction_id": "REACT_C11_CREW_SEES_DARK_EXHIBITION", "window": "after_activity"}],
+      "ui_summary": "核心设施和人员线都保住了；代价是主展厅整层熄灯。"
+    },
+    "good": {
+      "resolution": "success",
+      "preview": ["三项核心责任有人承担", "高风险组合留下额外维修"],
+      "variable_delta": {"route_debt": 0},
+      "battle_modifiers": ["ship_facilities:core_online"],
+      "unlocked_flags": ["c11_core_facilities_saved"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M5_CRISIS_GOOD", "schema": "constraint_crisis_v1"}],
+      "ui_summary": "最低出击能力仍在；高风险调度让战后维修队列变长。"
+    },
+    "clear": {
+      "resolution": "costly_success",
+      "preview": ["至少一条核心线成立", "未分配设施进入锁定"],
+      "variable_delta": {"route_debt": 1},
+      "battle_modifiers": ["ship_facilities:partial_lock"],
+      "unlocked_flags": ["c11_partial_facilities"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M5_CRISIS_CLEAR", "schema": "constraint_crisis_v1"}],
+      "promises_and_debts": [{"debt_id": "M5_C11_UNSTAFFED_FACILITY", "state": "open", "owner": "CH_JICUN"}],
+      "soft_fail": "未分配设施暂时锁定，但最低出击能力保留",
+      "ui_summary": "一部分舰还活着，另一部分暂时成了黑掉的房间。"
+    },
+    "fail": {
+      "resolution": "soft_failure",
+      "preview": ["自动最低保全启动", "整备与支援设施大面积锁定"],
+      "variable_delta": {"route_debt": 2},
+      "battle_modifiers": ["ship_facilities:minimum_only"],
+      "unlocked_flags": ["c11_minimum_operation_only"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M5_CRISIS_FAIL", "schema": "constraint_crisis_v1"}],
+      "promises_and_debts": [{"debt_id": "M5_C11_SYSTEMIC_LOCKOUT", "state": "open", "owner": "CH_JICUN"}],
+      "soft_fail": "仅保留最低出击能力，其他设施进入锁定",
+      "ui_summary": "自动保全替你作了决定：还能出击，但这里暂时不再像一个家。"
+    }
+  }
+}

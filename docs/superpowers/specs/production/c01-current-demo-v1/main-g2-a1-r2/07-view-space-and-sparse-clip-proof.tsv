@@ -1,0 +1,17 @@
+proof_id	contract	input	consumer_result	error_or_selection	evidence	result
+VS_ACCEPT	view_space	map_dimetric_40x20	accepted by strict R2 resolver	view_space_guard=map_dimetric_40x20	receipts/tactical-geometry.json	PASS
+VS_REJECT_1	view_space	design_orthographic	rejected fail-closed	view_space_rejected:design_orthographic	g2_a1_r2_tactical_geometry_test	PASS
+VS_REJECT_2	view_space	screen_ui	rejected fail-closed	view_space_rejected:screen_ui	g2_a1_r2_tactical_geometry_test	PASS
+VS_REJECT_3	view_space	cinematic	rejected fail-closed	view_space_rejected:cinematic	g2_a1_r2_tactical_geometry_test	PASS
+VS_REJECT_4	view_space	cinematic_composite	rejected fail-closed	view_space_rejected:cinematic_composite	g2_a1_r2_tactical_geometry_test	PASS
+CAMERA_ACCEPT	camera_contract_id	A4_MAP_SPRITE_CAMERA_V1	accepted by strict R2 resolver	camera_contract_guard=A4_MAP_SPRITE_CAMERA_V1	receipts/tactical-geometry.json	PASS
+CAMERA_REJECT	camera_contract_id	CINEMATIC_CAMERA	rejected fail-closed	camera_contract_rejected:CINEMATIC_CAMERA	g2_a1_r2_tactical_geometry_test	PASS
+PIVOT_REJECT	pivot normalized and pixel	[0.5,1.171875]_[128,300]_native[256,256]	rejected fail-closed	pivot_normalized_out_of_range;pivot_px_out_of_range	g2_a1_r2_tactical_geometry_test	PASS
+SPARSE_ALIAS	state/facing/frame	active/east/0	resolved only through signed alias	clip=idle/east/0;alias_signature=R2-GZ-ACTIVE-IDLE	receipts/tactical-geometry.json	PASS
+SPARSE_FAIL	state/facing/frame	move/west/0	rejected fail-closed	sparse_clip_missing	receipts/tactical-geometry.json	PASS
+SPARSE_ACTUAL_A_EAST	state/facing/frame	move/east/0	AtlasTexture exact sparse rect consumed	selected_clip_key=move/east/0	02_ROUTE_EAST_SEGMENT	PASS
+SPARSE_ACTUAL_A_NORTH	state/facing/frame	move/north/1	AtlasTexture exact sparse rect consumed	selected_clip_key=move/north/1	03_ROUTE_NORTH_SEGMENT	PASS
+SPARSE_ACTUAL_B_NORTH	state/facing/frame	move/north/*	AtlasTexture exact sparse rect consumed	current_segment=north	06_ROUTE_B_NORTH_SEGMENT	PASS
+SPARSE_ACTUAL_B_EAST	state/facing/frame	move/east/*	AtlasTexture exact sparse rect consumed	current_segment=east	07_ROUTE_B_EAST_SEGMENT	PASS
+LEGACY_ADAPTER	old R1 Cartesian fixture	R1 synthetic fixture atlas	allowed only behind explicit test adapter	R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY;not exact-handoff default	11 existing Golden Slice regressions	PASS_COMPATIBILITY_ONLY
+HANDOFF_GATE	exact handoff	approved_handoffs=[]	runtime loading denied	unit_real_art_loaded=0;integrated_visual_playtest_ready=false;G2B=false	r2_geometry_proxy_manifest.json	PASS_BOUNDARY

@@ -1,0 +1,165 @@
+{
+  "date": "2026-10-20",
+  "revision": "M05-red-fin-production-r9",
+  "asset": "M05 / 王者红色中线鳍与双状态头部",
+  "canon_entity": "MECHA_C02_COMPLETE_KING",
+  "generation_mode": "built-in image_gen",
+  "request_record": "M05-mask-and-fin-direction-r9.json",
+  "parent_head_acceptance": "M05-head-design-fixed-20261020.json",
+  "parent_mask_acceptance": "M05-mask-and-fin-direction-r9.json",
+  "source_refs": [
+    {
+      "file": "samples/M05-battle-mask-r8.png",
+      "sha256": "2c4ef388416980cf0979c5ad1f300750fd361a6249d35fcb31c8f579f358bf66",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bbox_above_8": [
+        107,
+        15,
+        1693,
+        880
+      ]
+    },
+    {
+      "file": "samples/M05-head-riese-r6b.png",
+      "sha256": "f501ee445276a6f057fa5f095c9993c4492c700a3bc0808d26ff36cb1c84a886",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bbox_above_8": [
+        107,
+        15,
+        1692,
+        880
+      ]
+    },
+    {
+      "file": "refs/M05-user-red-fin-position-r9.png",
+      "sha256": "660a49f4ea9b8766557da14178786cf6135821ddbbabf20954e332ab6ca8b472",
+      "pixel_size": [
+        277,
+        322
+      ],
+      "mode": "RGB",
+      "alpha_range": null,
+      "bbox_above_8": null
+    }
+  ],
+  "prompts": [
+    "M05-red-fin-prompt-r9.json",
+    "M05-red-fin-final-prompts-r9.json"
+  ],
+  "items": [
+    {
+      "file": "samples/M05-red-fin-battle-r9b.png",
+      "sha256": "8c3c9a069efb5d9b0d54cad100bada8a54bf1e660f32f133642fd0d3fe451d9c",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bbox_above_8": [
+        108,
+        15,
+        1694,
+        882
+      ],
+      "id": "MASK",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-3ba0d170-ef49-48e9-8f15-974527b8b5fd.png",
+      "user_accepted": true,
+      "runtime_integrated": false,
+      "handoff_sent": false,
+      "acceptance_receipt": "M05-red-fin-design-fixed-and-turnaround-r10.json",
+      "accepted_scope": "R9指定双状态头部源设计"
+    },
+    {
+      "file": "samples/M05-red-fin-normal-r9.png",
+      "sha256": "4669cb53d0088c6b96c4843a72d3b5435463d77c2e947fc77ff20cd2892594c1",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bbox_above_8": [
+        102,
+        10,
+        1695,
+        882
+      ],
+      "id": "NORMAL",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-25f16475-f822-4f31-bd7c-e96afab2aafa.png",
+      "user_accepted": true,
+      "runtime_integrated": false,
+      "handoff_sent": false,
+      "acceptance_receipt": "M05-red-fin-design-fixed-and-turnaround-r10.json",
+      "accepted_scope": "R9指定双状态头部源设计"
+    }
+  ],
+  "attempts": [
+    {
+      "file": "samples/M05-red-fin-battle-r9.png",
+      "sha256": "0c08d307c9f2a942bb5741cd8608c22c3515ea2ec26fc16cdfe124e292a79a6e",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bbox_above_8": [
+        107,
+        15,
+        1694,
+        882
+      ],
+      "result": "侧面鳍形沿标注；前视红色背衬多露，需局部遮挡修正。"
+    }
+  ],
+  "author_review": {
+    "reviewer": "author",
+    "actual_media": "并看用户红色标线、R8已选面罩、R9加鳍首稿、R9b遮挡修正稿和R9普通脸稿。",
+    "observed": [
+      "侧面红色三角鳍沿头盔中线安装，根部沿蓝色盔顶，峰位向后上挑，金色冠件保持。",
+      "R9首稿前视错误露出中角两边的红色三角背衬；R9b已去掉，薄鳍因处在更高的金色中角后而被遮住，侧面红鳍保留。",
+      "普通脸与战斗面罩两种源稿都保留同一侧面红鳍、金色五构件、圆耳罩和原眼眉，口鼻护甲覆盖状态不同。"
+    ],
+    "limits": [
+      "红鳍是用户最新追加方向，具体新图仍待看；R8面罩源图此前已认可，不把认可扩大为R9新头稿。",
+      "两状态为手绘源稿，各处有小量描线/比例漂移；并非同一模型逐像素或正交投影。",
+      "R7整机源图尚未合入新增红鳍与闭合面罩，保留其已认可源设计；本轮未据此改运行。",
+      "面罩转换三格板仅为局部构造示意，未验证收纳体积、轴线轨迹与连续运动。"
+    ],
+    "independent_review": false
+  },
+  "reader": "M05-battle-mask-r8.html",
+  "existing_batch": "design-followthrough-r1.json#experience_record_m05_red_fin_r9",
+  "status": "red_fin_dual_state_head_source_design_fixed",
+  "user_accepted": true,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "status_at_creation": "red_fin_dual_head_source_candidates",
+  "acceptance_receipt": "M05-red-fin-design-fixed-and-turnaround-r10.json"
+}

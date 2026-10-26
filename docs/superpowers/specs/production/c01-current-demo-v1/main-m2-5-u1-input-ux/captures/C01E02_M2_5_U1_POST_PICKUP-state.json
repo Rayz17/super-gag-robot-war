@@ -1,0 +1,32 @@
+{
+	"capture_id": "POST_PICKUP",
+	"current_node_id": "c01cdv1_e02_s06_scrolling_street",
+	"cursor": [
+		9,
+		10
+	],
+	"fallback_slot_count": 7,
+	"guardian_anchor": [
+		9,
+		10
+	],
+	"loaded_slot_count": 6,
+	"message": "本回合行动已完成；按 E 结束回合后继续向东",
+	"move_availability": {
+		"enabled": false,
+		"message": "本回合已经移动，请结束回合",
+		"reason_id": "move_spent"
+	},
+	"move_selected": false,
+	"png_sha256": "c1aba6c70634dd7c667757ffcd9cb31abe1b0ed2960c0e71971000381530a75b",
+	"recommended": {
+		"action": "end",
+		"label": "下一步：结束回合，继续向东 [E]"
+	},
+	"shield_availability": {
+		"enabled": false,
+		"message": "退役重盾已经取得",
+		"reason_id": "shield_already_acquired"
+	},
+	"turn": 1
+}

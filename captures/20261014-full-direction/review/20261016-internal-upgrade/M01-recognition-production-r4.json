@@ -1,0 +1,81 @@
+{
+  "revision": "M01-recognition-production-r4",
+  "date": "2026-10-18",
+  "asset": "M01 / 无牌一号",
+  "file": "samples/M01-recognition-master-r4.png",
+  "sha256": "d4721216800f31bd533265654fdbd3de2608bf5e5c48cca92482d00c6898852e",
+  "pixel_size": [
+    1024,
+    1536
+  ],
+  "mode": "RGBA",
+  "alpha": {
+    "range": [
+      0,
+      254
+    ],
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "background_samples": [
+      0,
+      0,
+      0
+    ],
+    "visible_bbox": [
+      33,
+      0,
+      1016,
+      1536
+    ]
+  },
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-0d7e5b5c-4e8f-4751-803e-a6775a2653ce.png",
+  "generation_mode": "built-in image_gen referenced-image edit",
+  "prompt": "M01-recognition-prompt-r4.json",
+  "existing_batch": "design-followthrough-r1.json#production_focus",
+  "current_status": "head_design_rejected_by_user_history_only",
+  "source_refs": [
+    {
+      "file": "samples/M01-independent-master-v3.png",
+      "sha256": "ac047172aa63c60ecd4bacd79ab4396476feb3d5e6c40c9670cc62464d8f6a1a",
+      "role": "未确认候选的体型/配色起点"
+    },
+    {
+      "file": "samples/M04-front-backpack-fins-r7.png",
+      "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98",
+      "role": "只参考已确认画法，不借用机体形象"
+    }
+  ],
+  "author_review": {
+    "reviewer": "author",
+    "actually_viewed": "完整原图；本次生成工具内联展示",
+    "observations": [
+      "双侧阶梯折角冠片由耳侧抬起并后扫，比v3平头盔具有明确外轮廓。",
+      "胸部改为象牙白横桥、单侧金锁扣/斜撑，与窄琥珀传感窗、前臂金色击打护轨共同识别。",
+      "白/青绿/赭金和运动型比例保留，与社勇王的橙白巨拳轮廓区分。",
+      "两条手臂/拳、双腿/独立脚、关节和转腰可读；未画武器或机翼。"
+    ],
+    "open_design_questions": [
+      "冠片较长，仍带明显双耳倾向；这是本次具体设计提案，待用户判断是否合适，不继续批量派生。",
+      "当前只是一张三分之四源稿；正侧背、隐藏面和运动净空未由同模型验证。"
+    ],
+    "legal_clearance_claimed": false,
+    "independent_review": false,
+    "runtime_viewed": false
+  },
+  "source_design_user_accepted": false,
+  "runtime_integrated": false,
+  "handoff_sent": false,
+  "next": "比较六种新头型；馆守Z沿用现有，不重做。",
+  "head_design_user_rejected": true,
+  "head_derivation_allowed": false,
+  "feedback": {
+    "date": "2026-10-18",
+    "verbatim": "这个耳朵太丑了，多提供几个头部参考；馆守z不用重做了，沿用现有的就行",
+    "scope": "明确否定长耳头冠；不虚构对胸甲/身体的其他评价。"
+  },
+  "superseded_head_exploration": "M01-head-directions-production-r5.json"
+}

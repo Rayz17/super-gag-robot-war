@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0",
+  "package_id": "C01_CINEMATIC_GOLDEN_VALIDATION_V01",
+  "purpose": "Until-Then-style narrative staging plus Guardian Z mecha payoff validation",
+  "sequence_order": [
+    "C01E01_ZERO_ANOMALY_GOLDEN_V01",
+    "C01E03_GUARDIAN_HALF_START_GOLDEN_V01"
+  ],
+  "sequences": [
+    {
+      "sequence_id": "C01E01_ZERO_ANOMALY_GOLDEN_V01",
+      "canon_scene_id": "C01E01-ZERO-ANOMALY",
+      "duration": 13.8,
+      "input_policy": "locked_during_sequence",
+      "canon_refs": [
+        "CH_JICUN",
+        "VOICE_ZERO_CORRIDOR",
+        "LOC_ZERO_CORRIDOR",
+        "CANON-RULE-002",
+        "CANON-RULE-003"
+      ],
+      "cues": [
+        {"at": 0.0, "cue_id": "zero_lock", "type": "input", "payload": {"locked": true}},
+        {"at": 0.0, "cue_id": "zero_actor_stop", "type": "actor_pose", "payload": {"actor_id": "jicun", "pose": "braced"}},
+        {"at": 0.0, "cue_id": "zero_camera_push", "type": "camera", "payload": {"position": [920, 350], "zoom": [1.12, 1.12], "duration": 1.8}},
+        {"at": 0.2, "cue_id": "zero_ambient_cut", "type": "audio", "payload": {"sound": "ambient_cut"}},
+        {"at": 0.5, "cue_id": "zero_lights_1", "type": "lights", "payload": {"value": 0.74, "duration": 0.45}},
+        {"at": 1.2, "cue_id": "zero_lights_2", "type": "lights", "payload": {"value": 0.43, "duration": 0.55}},
+        {"at": 2.0, "cue_id": "zero_lights_3", "type": "lights", "payload": {"value": 0.16, "duration": 0.65}},
+        {"at": 2.4, "cue_id": "zero_reflection_wakes", "type": "anomaly", "payload": {"value": 0.28, "duration": 1.1}},
+        {"at": 3.2, "cue_id": "zero_knock_1", "type": "audio", "payload": {"sound": "knock"}},
+        {"at": 3.2, "cue_id": "zero_knock_caption", "type": "caption", "payload": {"text": "嗒。"}},
+        {"at": 3.3, "cue_id": "zero_knock_shake", "type": "camera", "payload": {"shake": 2.5, "duration": 0.24}},
+        {"at": 4.1, "cue_id": "zero_voice_1", "type": "dialogue", "payload": {"speaker": "未知声音", "text": "今天也要闭馆吗？", "portrait": "unknown"}},
+        {"at": 6.3, "cue_id": "zero_jicun_turn", "type": "actor_pose", "payload": {"actor_id": "jicun", "pose": "look_right"}},
+        {"at": 6.8, "cue_id": "zero_jicun_line", "type": "dialogue", "payload": {"speaker": "纪存", "text": "谁在里面？", "portrait": "jicun"}},
+        {"at": 8.8, "cue_id": "zero_knock_2", "type": "audio", "payload": {"sound": "knock_low"}},
+        {"at": 9.0, "cue_id": "zero_reflection_answers", "type": "anomaly", "payload": {"value": 0.92, "duration": 0.7}},
+        {"at": 9.4, "cue_id": "zero_voice_2", "type": "dialogue", "payload": {"speaker": "未知声音", "text": "观众。", "portrait": "unknown"}},
+        {"at": 11.2, "cue_id": "zero_system_line", "type": "dialogue", "payload": {"speaker": "旁白", "text": "门没有开。主展厅方向，响起一声普通通讯接通音。", "portrait": "system"}},
+        {"at": 11.5, "cue_id": "zero_comm_beep", "type": "audio", "payload": {"sound": "comm_beep"}},
+        {"at": 12.5, "cue_id": "zero_unlock_toast", "type": "toast", "payload": {"text": "普通通讯 / 已亮起"}}
+      ],
+      "final_visual_state": {
+        "stage_mode": "zero_corridor",
+        "corridor_light_level": 0.18,
+        "anomaly_strength": 0.28,
+        "actor_position": [1020, 580],
+        "actor_pose": "look_right",
+        "actor_visible": true,
+        "camera_position": [920, 350],
+        "camera_zoom": [1.12, 1.12],
+        "mecha_visible": false,
+        "dialogue_visible": false,
+        "cutin_visible": false,
+        "fade_alpha": 0.0
+      },
+      "outcome": {
+        "transaction_id": "C01_CINEMATIC_ZERO_HEARD_PREVIEW",
+        "facts": [
+          {"fact_id": "zero_anomaly_heard", "to_state": true},
+          {"fact_id": "qihai_console_unlocked", "to_state": true}
+        ],
+        "player_summary": ["0号侧廊异响让主展厅普通通讯台亮起。"]
+      }
+    },
+    {
+      "sequence_id": "C01E03_GUARDIAN_HALF_START_GOLDEN_V01",
+      "canon_scene_id": "C01E03-01",
+      "duration": 20.8,
+      "input_policy": "locked_during_sequence",
+      "canon_refs": [
+        "CH_JICUN",
+        "CH002",
+        "MECHA_GUARDIAN_Z",
+        "CML008"
+      ],
+      "cues": [
+        {"at": 0.0, "cue_id": "guardian_lock", "type": "input", "payload": {"locked": true}},
+        {"at": 0.0, "cue_id": "guardian_stage", "type": "stage", "payload": {"stage_mode": "guardian_hall"}},
+        {"at": 0.0, "cue_id": "guardian_actor_hide", "type": "actor_visible", "payload": {"actor_id": "jicun", "visible": false}},
+        {"at": 0.0, "cue_id": "guardian_fade_in", "type": "fade", "payload": {"alpha": 0.0, "from": 1.0, "duration": 0.9}},
+        {"at": 0.0, "cue_id": "guardian_camera_establish", "type": "camera", "payload": {"position": [800, 360], "zoom": [1.0, 1.0], "duration": 0.0}},
+        {"at": 0.4, "cue_id": "guardian_pose_reveal", "type": "mecha", "payload": {"action": "show_start", "position": [930, 375], "scale": 0.38, "duration": 1.2}},
+        {"at": 0.6, "cue_id": "guardian_smoke", "type": "dust", "payload": {"value": 0.55, "duration": 1.4}},
+        {"at": 1.0, "cue_id": "guardian_metal_strain", "type": "audio", "payload": {"sound": "metal_strain"}},
+        {"at": 1.4, "cue_id": "guardian_camera_push", "type": "camera", "payload": {"position": [850, 338], "zoom": [1.08, 1.08], "duration": 2.0}},
+        {"at": 2.4, "cue_id": "guardian_doudeng_cutin_1", "type": "cutin", "payload": {"visible": true, "asset": "doudeng_command"}},
+        {"at": 2.4, "cue_id": "guardian_doudeng_line_1", "type": "dialogue", "payload": {"speaker": "兜灯", "text": "右臂不完整，主动力断开，脚踝锁还没拆。你现在起来，摔一次就能把前厅压没。", "portrait": "doudeng"}},
+        {"at": 2.6, "cue_id": "guardian_safety_alert", "type": "audio", "payload": {"sound": "safety_alert"}},
+        {"at": 5.6, "cue_id": "guardian_doudeng_cutin_hide_1", "type": "cutin", "payload": {"visible": false}},
+        {"at": 5.8, "cue_id": "guardian_old_line_1", "type": "dialogue", "payload": {"speaker": "旧守护者", "text": "前厅当前无人。", "portrait": "guardian"}},
+        {"at": 7.7, "cue_id": "guardian_doudeng_cutin_2", "type": "cutin", "payload": {"visible": true, "asset": "doudeng_observe"}},
+        {"at": 7.7, "cue_id": "guardian_doudeng_line_2", "type": "dialogue", "payload": {"speaker": "兜灯", "text": "你还学会顶嘴了？", "portrait": "doudeng"}},
+        {"at": 9.3, "cue_id": "guardian_doudeng_cutin_hide_2", "type": "cutin", "payload": {"visible": false}},
+        {"at": 9.5, "cue_id": "guardian_old_line_2", "type": "dialogue", "payload": {"speaker": "旧守护者", "text": "本机未学习。本机正在闭馆。", "portrait": "guardian"}},
+        {"at": 11.6, "cue_id": "guardian_finger_move", "type": "mecha", "payload": {"action": "micro_rise", "position": [930, 366], "scale": 0.385, "duration": 1.0}},
+        {"at": 11.7, "cue_id": "guardian_dust_fall", "type": "dust", "payload": {"value": 0.95, "duration": 0.45}},
+        {"at": 11.9, "cue_id": "guardian_servo", "type": "audio", "payload": {"sound": "servo"}},
+        {"at": 12.0, "cue_id": "guardian_camera_shake", "type": "camera", "payload": {"shake": 4.0, "duration": 0.32}},
+        {"at": 12.5, "cue_id": "guardian_motion_toast", "type": "toast", "payload": {"text": "右手食指 / 动作确认"}},
+        {"at": 13.4, "cue_id": "guardian_jicun_line", "type": "dialogue", "payload": {"speaker": "纪存", "text": "旧守护者，确认当前任务。", "portrait": "jicun"}},
+        {"at": 15.4, "cue_id": "guardian_chest_wake", "type": "chest_glow", "payload": {"value": 0.92, "duration": 1.1}},
+        {"at": 15.5, "cue_id": "guardian_chest_audio", "type": "audio", "payload": {"sound": "chest_wake"}},
+        {"at": 16.0, "cue_id": "guardian_old_mission", "type": "dialogue", "payload": {"speaker": "旧守护者", "text": "主展厅进入紧急闭馆。请勿奔跑。展厅地滑。", "portrait": "guardian"}},
+        {"at": 18.8, "cue_id": "guardian_title_flash", "type": "flash", "payload": {"value": 0.5}},
+        {"at": 18.9, "cue_id": "guardian_title", "type": "toast", "payload": {"text": "馆守 Z / 半启动"}},
+        {"at": 19.0, "cue_id": "guardian_confirm_audio", "type": "audio", "payload": {"sound": "confirm"}}
+      ],
+      "final_visual_state": {
+        "stage_mode": "guardian_hall",
+        "corridor_light_level": 1.0,
+        "anomaly_strength": 0.0,
+        "chest_glow": 0.72,
+        "dust_level": 0.46,
+        "actor_position": [1020, 580],
+        "actor_pose": "look_up",
+        "actor_visible": false,
+        "camera_position": [850, 338],
+        "camera_zoom": [1.08, 1.08],
+        "mecha_visible": true,
+        "mecha_position": [930, 366],
+        "mecha_scale": 0.385,
+        "dialogue_visible": false,
+        "cutin_visible": false,
+        "fade_alpha": 0.0
+      },
+      "outcome": {
+        "transaction_id": "C01_CINEMATIC_GUARDIAN_HALF_START_PREVIEW",
+        "facts": [
+          {"fact_id": "guardian_z_half_start", "to_state": true}
+        ],
+        "mecha_changes": [
+          {"mecha_id": "MECHA_GUARDIAN_Z", "pose": "half_kneel", "power_state": "low_heat", "right_arm": "repairing"}
+        ],
+        "player_summary": ["馆守 Z 只完成半启动；脚踝锁、低热与右臂维修限制均保留。"]
+      }
+    }
+  ]
+}

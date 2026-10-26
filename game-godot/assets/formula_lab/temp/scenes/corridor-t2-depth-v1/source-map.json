@@ -1,0 +1,83 @@
+{
+  "candidate": true,
+  "not_canon": true,
+  "runtime_allowed": false,
+  "user_visual_acceptance": false,
+  "sources": [
+    {
+      "kind": "frozen_source_background_png",
+      "path": "/Users/rayz/Documents/超gag机器人大战/artifacts/formulas/visual-targets-v1/art/tactical-corridor-depth-v1/source-frozen/background.png",
+      "sha256": "bfa669e593969c063d737e16d39e050aca92f9f7e0d8e6aab4c6d2d33632140a"
+    },
+    {
+      "kind": "frozen_source_corridor-t2-candidate-v1_blend",
+      "path": "/Users/rayz/Documents/超gag机器人大战/artifacts/formulas/visual-targets-v1/art/tactical-corridor-depth-v1/source-frozen/corridor-t2-candidate-v1.blend",
+      "sha256": "1cb4b26c774ce471365906330036fca4ef96609e7efcee91ce7db5c928965c93"
+    },
+    {
+      "kind": "frozen_source_scene_json",
+      "path": "/Users/rayz/Documents/超gag机器人大战/artifacts/formulas/visual-targets-v1/art/tactical-corridor-depth-v1/source-frozen/scene.json",
+      "sha256": "270020fa4dc31b1d66553f7ec62e367b8bc1f59d76ffb45bc61d7056ea17acd3"
+    },
+    {
+      "kind": "frozen_source_delivery_json",
+      "path": "/Users/rayz/Documents/超gag机器人大战/artifacts/formulas/visual-targets-v1/art/tactical-corridor-depth-v1/source-frozen/delivery.json",
+      "sha256": "341728d144dcdb8006cd7fd0ae7ceddf5243177f42fef85e0134a6fcf7e62344"
+    },
+    {
+      "kind": "frozen_source_build_environments_v2_py",
+      "path": "/Users/rayz/Documents/超gag机器人大战/artifacts/formulas/visual-targets-v1/art/tactical-corridor-depth-v1/source-frozen/build_environments_v2.py",
+      "sha256": "92c97531f14a908261dd187605536a647cb23bd594dcfe3ec467eaf599545a0d"
+    },
+    {
+      "kind": "depth_export_builder",
+      "path": "/Users/rayz/Documents/超gag机器人大战/artifacts/formulas/visual-targets-v1/art/tactical-corridor-depth-v1/build_tactical_corridor_depth.py",
+      "sha256": "c5241c2040a61b1808f9f3a1aaf73eb94bcb2177c8671cf318efc3f839562089"
+    },
+    {
+      "kind": "same_camera_rgb_2x",
+      "path": "/Users/rayz/Documents/超gag机器人大战/artifacts/formulas/visual-targets-v1/art/tactical-corridor-depth-v1/background-2x.png",
+      "sha256": "01ac715813fcd242ddb5a8b7340d26c8539cdc7df76c98477f8a959cd3079d00"
+    },
+    {
+      "kind": "float32_view_z_exr",
+      "path": "/Users/rayz/Documents/超gag机器人大战/artifacts/formulas/visual-targets-v1/art/tactical-corridor-depth-v1/view-z-2x.exr",
+      "sha256": "713260afed006549cf938eb088b9a9723ae5a764d49c5dd1b3f2fceb4a356f42"
+    },
+    {
+      "kind": "contact_contract",
+      "path": "/Users/rayz/Documents/超gag机器人大战/artifacts/formulas/visual-targets-v1/art/tactical-corridor-depth-v1/contact-contract.json",
+      "sha256": "4c20f35a28bf75114ab058795eea99ef7d2803a7e548c0e98b7d3f98f08e3f44"
+    },
+    {
+      "kind": "check_report",
+      "path": "/Users/rayz/Documents/超gag机器人大战/artifacts/formulas/visual-targets-v1/art/tactical-corridor-depth-v1/check-report.json",
+      "sha256": "3c55b31b17189acd04b0c3634b7f2073a1ccd838efbd2b5670342e82d08d79c5"
+    },
+    {
+      "kind": "rebuild_instructions",
+      "path": "/Users/rayz/Documents/超gag机器人大战/artifacts/formulas/visual-targets-v1/art/tactical-corridor-depth-v1/REBUILD.txt",
+      "sha256": "dacb7f8c63b3e54583eb81c4d334a128eb901150269428079ce4c637a1fcedee"
+    },
+    {
+      "kind": "depth_export_source_map",
+      "path": "/Users/rayz/Documents/超gag机器人大战/artifacts/formulas/visual-targets-v1/art/tactical-corridor-depth-v1/source-map.json",
+      "sha256": "48272712644d578e3c0921f4f135c8da3ae10e3a63649536ebc331dc3eac2e49"
+    },
+    {
+      "kind": "environment_stager",
+      "path": "/Users/rayz/Documents/超gag机器人大战/artifacts/formulas/visual-targets-v1/art/tactical-corridor-depth-v1/stage_environment.py",
+      "sha256": "302e8500e9346a89980e52019c8253a24feaba344c3a73de679a02a17a562e30"
+    }
+  ],
+  "outputs": {
+    "scene.json": "d9b39e8c7e30382a300cb8197a279a5bf1ca46a780e2d11cbac598c350249372",
+    "background.png": "01ac715813fcd242ddb5a8b7340d26c8539cdc7df76c98477f8a959cd3079d00",
+    "depth.exr": "713260afed006549cf938eb088b9a9723ae5a764d49c5dd1b3f2fceb4a356f42"
+  },
+  "limits": [
+    "F TAC_T2 industrial corridor only; this is not an arena, city or T5 environment.",
+    "Projected contact and depth data only; no board rule, event, unit or objective changes.",
+    "Candidate engineering evidence; this is not visual acceptance."
+  ]
+}

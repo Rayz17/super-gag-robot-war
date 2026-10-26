@@ -1,0 +1,238 @@
+{
+  "date": "2026-10-21",
+  "revision": "M11-turnaround-structure-production-r7",
+  "asset": "货柜领袖指定头部/勇者颏甲、人形和车形三视与可变结构优化",
+  "canon_entity": "V353U043",
+  "existing_batch": "design-followthrough-r1.json",
+  "reader": "M11-turnaround-structure-r7.html",
+  "generation_mode": "built-in image_gen; Blender rigid head-bay envelope",
+  "direction_record": "M11-head-aspect-chin-direction-r7.json",
+  "head_selection_receipt": "M11-head-selected-and-turnaround-r6.json",
+  "head_source_user_accepted": true,
+  "selected_head_reference": {
+    "file": "samples/M11-selected-head-r6.png",
+    "sha256": "3a6496028f8328c6ef3300f9b9b836d3e88ce8e8befe5564f01a2339fecd43ec",
+    "user_accepted": true,
+    "scope": "指定eac75eab头部源设计及其眼形、面甲、双耳侧钝头天线；授权整合整机三视与可变结构优化"
+  },
+  "items": [
+    {
+      "id": "HEAD_OPTIONS",
+      "file": "samples/M11-chin-head-r7.png",
+      "sha256": "fb38e443161d04f9a41930347977a563991790ab310e1a4bfcf05e9439910404",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-3f758670-9ec7-4477-9f31-e23f095121aa.png",
+      "prompts": [
+        "M11-chin-prompt-r7.txt"
+      ],
+      "role": "附图原头比例与双天线，新增前凸颏甲",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "FRONT",
+      "file": "samples/M11-front-r7b.png",
+      "sha256": "8fdafe14e02f026da155ae371719d9a77f541d6b8b7262ab5c6533484d4e5e7c",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-721f44e5-67c0-4c9b-a154-e532a03d04ff.png",
+      "prompts": [
+        "M11-front-aspect-prompt-r7.txt",
+        "M11-front-restore-prompt-r7b.txt"
+      ],
+      "role": "整机正面：长腿身形、恢复头部纵向体积与颏甲",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "SIDE",
+      "file": "samples/M11-side-r7c.png",
+      "sha256": "716a61153a2b4cfb919f36edce6e1ad66eef9d6c554f9f70b9f548d9f93ea507",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-f432c94e-76df-4bdf-9f59-371ba381b977.png",
+      "prompts": [
+        "M11-side-prompt-r7.txt",
+        "M11-side-correction-prompt-r7b.txt",
+        "M11-side-height-prompt-r7c.txt"
+      ],
+      "role": "整机左侧：收正视角、减薄背架、修正头高",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "REAR",
+      "file": "samples/M11-rear-r7.png",
+      "sha256": "c4e3653ade2649cef1d66e0bc0f7aba229c79f605129dce9f2d4591d24a3e2c5",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-68c7052f-2188-4f09-ba8d-d23aaa46e7c2.png",
+      "prompts": [
+        "M11-rear-prompt-r7.txt"
+      ],
+      "role": "整机背面：三片货台背架、侧向轮组胎缘",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "VEHICLE",
+      "file": "samples/M11-vehicle-views-r7.png",
+      "sha256": "affa0fff5a2062100843ad03fd08a7fe7469ce26625d00b34689a2b18584b0e6",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-02bb53f3-2d59-4957-bdc0-ae92da71abd7.png",
+      "prompts": [
+        "M11-vehicle-views-prompt-r7.txt"
+      ],
+      "role": "车形前侧背：四轴、单柜、摄像头后视",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "HEAD_MECHANISM",
+      "file": "samples/M11-head-mechanism-r7b.png",
+      "sha256": "2b64c197f4d033a1f63b80d601279990f82daad453c599fbe0563ac675fc5311",
+      "pixel_size": [
+        1942,
+        809
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-1fe4c2e2-df20-4cb6-b685-31a10496f012.png",
+      "prompts": [
+        "M11-head-mechanism-prompt-r7.txt",
+        "M11-head-arrow-prompt-r7b.txt"
+      ],
+      "role": "天线后折与独立头仓剖面，移除误导的水平箭头",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "CHASSIS_MECHANISM",
+      "file": "samples/M11-chassis-mechanism-r7b.png",
+      "sha256": "7d91b062303473452a8f7987aecd5c165a8a57a837a04d596b9c33007d561c28",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-e1dfeecf-ec9e-4f10-bc88-93a15e3294bd.png",
+      "prompts": [
+        "M11-chassis-mechanism-prompt-r7.txt",
+        "M11-chassis-clean-prompt-r7b.txt"
+      ],
+      "role": "前轮架、后腿架与三片货台分件；带柜变形错误分镜已移除",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    }
+  ],
+  "body_context": {
+    "id": "ROBOT",
+    "file": "samples/M11-future-robot-r2.png",
+    "sha256": "0dad97e6598041a2103351afe5554d36f4701977ba6d19c21da1cb05620ab502",
+    "pixel_size": [
+      1024,
+      1536
+    ],
+    "mode": "RGB",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "background": "opaque_warm_white",
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-13f13bf1-4522-4d53-9adc-3f4eecbe0eb4.png",
+    "role": "R2颈下/配色/车壳分配参考；旧头部不作为R4当前头部，未绘成R4整机",
+    "prompt_record": "M11-future-robot-prompt-r2.json",
+    "user_accepted": false,
+    "runtime_integrated": false,
+    "handoff_sent": false
+  },
+  "vehicle_context": {
+    "id": "VEHICLE",
+    "file": "samples/M11-vehicle-views-r7.png",
+    "sha256": "affa0fff5a2062100843ad03fd08a7fe7469ce26625d00b34689a2b18584b0e6",
+    "pixel_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-02bb53f3-2d59-4957-bdc0-ae92da71abd7.png",
+    "prompts": [
+      "M11-vehicle-views-prompt-r7.txt"
+    ],
+    "role": "车形前侧背：四轴、单柜、摄像头后视",
+    "user_accepted": false,
+    "runtime_integrated": false,
+    "handoff_sent": false
+  },
+  "layout_study": {
+    "directory": "M11-head-bay-r7",
+    "record": "M11-head-bay-r7/head-bay-check.json",
+    "source": "M11-head-bay-r7/build_head_bay.py",
+    "editable_model": "M11-head-bay-r7/M11-head-bay-r7.blend",
+    "motion": "M11-head-bay-r7/M11-head-bay-motion-r7.mp4",
+    "same_inventory_sample_check": true,
+    "full_transformation_verified": false
+  },
+  "prior_whole_body_layout": "M11-kinematic-r4/layout-check.json",
+  "prompt_index": "M11-turnaround-structure-prompts-r7.json",
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "samples/M11-chin-head-r7.png",
+      "samples/M11-front-r7b.png",
+      "samples/M11-side-r7c.png",
+      "samples/M11-rear-r7.png",
+      "samples/M11-vehicle-views-r7.png",
+      "samples/M11-head-mechanism-r7b.png",
+      "samples/M11-chassis-mechanism-r7b.png",
+      "M11-head-bay-r7/01-deployed.png",
+      "M11-head-bay-r7/02-antennas-folded.png",
+      "M11-head-bay-r7/03-head-lowering.png",
+      "M11-head-bay-r7/04-stored-hatch-closed.png"
+    ],
+    "observed": [
+      "原指定头稿eac75eab按用户明确附图采用；作者后出的平眼R5b不替代该原图。",
+      "新增颏甲在正面为短厚五边形块，斜视向前凸出；额部、双天线和原眼形保留。",
+      "原R2颈下身形作为长腿比例基准；正面改为局部修头高，不继续全身重组；侧面另修视角/背架厚度和头高。",
+      "三视每侧肩后1轮、前臂外后1轮、小腿外后2轮；背面主要露胎缘，不把轮毂转向后方。",
+      "车形三面仍是四轴刚性底盘与一个可卸货柜，柱侧双镜头后视；车后防钻梁分件和车架导轨缝可追认。",
+      "头部剖面明确独立后驾驶室头仓、天线后折导槽、升降/短滑轨与舱盖；颏甲前侧另留空间。",
+      "结构板A/B/C解释轮架、长腿架和三片货台；初稿底部错误带柜分镜已由内置生图移除。"
+    ],
+    "limits": [
+      "各视角为独立绘制源稿，局部板线、相机投影和细节仍有漂移，不是同一精细模型的严格正交。",
+      "指定头部原图已采用；新增颏甲、整机/车形三视与结构绘制稿尚未由用户认可。",
+      "头仓草模只做归一化矩形包络、刚体数量/尺寸与收纳终态检查，不是毫米装配、全三角碰撞或整机空间证明。",
+      "头仓与驾驶空间分离是本次结构设计；实际座椅、线束、壁厚与整车比例仍需详细模型校核。",
+      "前轮保持接地至脚板锁止/重心移入支撑区为顺序提案，未验证整机受力、重心和动力学；货柜须先卸下完整留地。",
+      "作者实际查看源图及头仓四状态；视频已导出，未以导出成功冒充正常速度连续动作验收。"
+    ]
+  },
+  "new_images_user_accepted": false,
+  "runtime_changed": false,
+  "handoff_sent": false
+}

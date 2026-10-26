@@ -1,0 +1,147 @@
+{
+	"schema_id": "FORMULA_LAB_SPACE_NEED_V1",
+	"notes": "场面 feature 按 kind/volume/finish 反算井种。墙/地走房间盒 dest + 可重复材质带。小屋照宽幅按气氛换块（shed/bay/hall），已是材质小块的 source_uv 保留。combat_haze 反算 sky_loft 远空带。execute_berm 的 tex/plate/join=sky 反算 horizon 地平带（坐 crest far_band，不是房间盒，不是整张庭院照）。lamp_canopy 的 tex/plate=vista 反算绘景远景 loft（远空/穹顶/远城坐立绘层开口）+ floor_plane 近花田/土径坐进已收地板多边形；opening=stands 时绘景接到站地线，不再重印地板梯形卡，不是整张 garden.png 垫地，也不是湿沥青盖住花田，也不是陶土棚盒。shed_canopy 的 plate=interior 反算侧视房间绘景（后墙/侧翼/地面分带坐进已收多边形，不是俯视砖盒，也不是整张 cottage 照；货架/整理台/交接本/记事板/展台/连廊柜按 interior.stand/face/span 映射成侧视立面，脚落石径）。bay_canopy 的 plate=workshop 反算侧视工房绘景（混凝土后墙/侧翼/透视地分带坐进已收多边形，不是俯视砖盒，也不是棚石膏 interior，也不是金偶像户外崖滩整张垫底；装卸台/控制台/缓冲尺/校准板/缩尺架/检查道/缩尺龛按 workshop.stand/face/span 映射成侧视立面，脚落混凝土，控制台脚落台面，检查槽沿落台缘，龛底落工房地）。sea_chart 的 plate=chart 反算海图绘景（有机氖青岸坐进 chart.sit，不是梯形陆块，也不是整张废港照）。leftover_distance 的 plate=leftover 反算清图留棋绘景（砖尘暮空/有机碎堤/扬尘沥青坐进已收多边形，不是废砖盒，也不是浮空格网，也不是整张 battle-day 庭院照）；leftover_pad / leftover_dock 按接触四边形演算 dest：垫 contain-sit 中央碎沥青、坞 contain-sit 左侧碎堤沥青（外扩岛，编队卡/缺席卡坐在清图绘景上，不是构造金属垫/坞）。board_pad 按接触四边形演算 dest：plate=road 时 contain-sit tile-road 湿沥青菱（T0/T3 外扩岛，T1 stance=single 紧凑 sit 不外扩，机体站在绘景等距沥青上，不是构造赭环/冷尘金属垫；不把 plate=road 抄进气氛/堤/地）。hall_canopy 的 plate=hall 反算馆厅绘景（2.5D 远墙/石地分带坐进已收多边形，不是废砖盒，也不是户外庭院，也不是棚石膏 interior；调度台/展签/修理架/提交凳/空泊位/烟灰缸按 hall.stand/face/span 映射成侧视立面，脚落石地/毯）。yard_canopy 的 plate=yard 反算侧视暮院绘景（同一张 tile-yard 接到走到线，地板/树篱多边形不再重印俯视草钻，不是花田穹顶 vista，也不是棚石膏 interior；小屋/坡道/限宽架按 stand/face/span 经 loft 映射成侧视立面，yard.along 取样锈棚）。quay_canopy 的 plate=quay 反算侧视暮湾绘景（同一张 tile-quay 接到走到线，墙/木台/泊位多边形不再重印俯视木盒，不是外场暮院 yard，也不是棚石膏 interior；残骸/卷帘/撤离口按 stand/face/span 经 loft 映射成侧视立面，quay.along 取样湿木/锈铁）。lamp_canopy 地图态的 plate=patrol 反算等距巡查绘景（同一张 tile-patrol 的 loft/墙/地分带坐进已收多边形，占格屋按 cluster footprint → dest quad contain-sit prop_body，不是橙盒屋，也不是侧视 vista 柜，也不是 leftover 废港整张，也不是 SRWY 草地）；柜/闸/坞口按 feature 近沿演算 dest：柜 contain-sit shed_far 绘景码（2:1 等距菱），闸 contain-sit 地标警戒带（紧凑 sit），坞口运行时绘景拥有坞喉不重印卡；坐井台可编 dest 分带并盖范例，不是陶土木柜台 (163,84,47)、不是褐框 opening 卡、不是构造铁柜/铁闸。立绘层 lamp_canopy 仍走 vista。hall.along 按配置 UV 取样石/橡/铁/铜/纸/毯/锡，家具体积走演算沿色（不是废砖橙棕，也不改已收体积）。interior.along 按配置 UV 取样灰泥/石径/铁栅，楼梯/货架/通风口走演算沿色（不是小屋照贴纸，也不改已收体积）。坐井台可编材质带、演算沿色；有 stand 的砖在 prop_body 收成 stand/face/span 演算器并盖 loft+立面范例。不进 CML，不声称验收。",
+	"roles": {
+		"wall": "wall_face",
+		"floor": "floor_plane",
+		"yard": "floor_plane",
+		"dock": "floor_plane",
+		"cavity": "floor_plane",
+		"ground": "floor_plane",
+		"prop": "prop_body",
+		"door": "prop_body",
+		"wreck": "prop_body",
+		"stair": "prop_body",
+		"sky": "sky_loft",
+		"haze": "sky_loft",
+		"horizon": "sky_loft",
+		"berm": "sky_loft",
+		"vista": "sky_loft",
+		"interior": "wall_face",
+		"room": "wall_face",
+		"workshop": "wall_face",
+		"chart": "sky_loft",
+		"leftover": "sky_loft",
+		"hall": "wall_face"
+	},
+	"needs": {
+		"wall_face": {
+			"sit": "room_box_face",
+			"uv": "source_uv",
+			"span": "source_wh",
+			"repeat": "material",
+			"accept": "tile",
+			"slots": ["space.wall_face"]
+		},
+		"floor_plane": {
+			"sit": "room_box_ground",
+			"uv": "source_uv",
+			"span": "source_wh",
+			"repeat": "material",
+			"accept": "tile",
+			"slots": ["space.floor_plane"]
+		},
+		"prop_body": {
+			"sit": "face_plane",
+			"uv": "source_uv",
+			"span": "source_wh",
+			"accept": "tile",
+			"slots": ["space.prop_body"],
+			"stand": "有 stand 的砖走 loft 映射，坐井台编 stand/face/span，不再只编 source_uv"
+		},
+		"sky_loft": {
+			"sit": "haze_loft",
+			"uv": "source_uv",
+			"span": "source_wh",
+			"repeat": "panorama",
+			"accept": "tile",
+			"slots": ["space.sky_loft"]
+		},
+		"cabinet": {
+			"sit": "patrol_along_dest",
+			"uv": "source_uv",
+			"span": "source_wh",
+			"accept": "tile",
+			"slots": ["space.cabinet"]
+		},
+		"gate": {
+			"sit": "patrol_along_dest",
+			"uv": "source_uv",
+			"span": "source_wh",
+			"accept": "tile",
+			"slots": ["space.gate"]
+		},
+		"opening": {
+			"sit": "patrol_along_dest",
+			"uv": "source_uv",
+			"span": "source_wh",
+			"accept": "tile",
+			"slots": ["space.opening"]
+		},
+		"leftover_pad": {
+			"sit": "leftover_along_dest",
+			"uv": "source_uv",
+			"span": "source_wh",
+			"accept": "tile",
+			"slots": ["space.leftover_pad"]
+		},
+		"leftover_dock": {
+			"sit": "leftover_along_dest",
+			"uv": "source_uv",
+			"span": "source_wh",
+			"accept": "tile",
+			"slots": ["space.leftover_dock"]
+		},
+		"board_pad": {
+			"sit": "board_pad_along_dest",
+			"uv": "source_uv",
+			"span": "source_wh",
+			"accept": "tile",
+			"slots": ["space.board_pad"]
+		},
+		"execute_pad": {
+			"sit": "execute_pad_along_dest",
+			"uv": "source_uv",
+			"span": "source_wh",
+			"accept": "tile",
+			"slots": ["space.execute_pad"],
+			"projection": "low_camera_horizon_strip",
+			"activation": "explicit plate=chrome only; no texture-only activation"
+		}
+	},
+	"examples": [
+		["house", "wall_face"],
+		["house", "floor_plane"],
+		["house", "prop_body"],
+		["grass", "floor_plane"],
+		["road", "floor_plane"],
+		["dock", "wall_face"],
+		["sky", "sky_loft"],
+		["horizon", "sky_loft"],
+		["vista", "sky_loft"],
+		["vista", "floor_plane"],
+		["interior", "wall_face"],
+		["interior", "floor_plane"],
+		["workshop", "wall_face"],
+		["workshop", "floor_plane"],
+		["chart", "sky_loft"],
+		["leftover", "sky_loft"],
+		["leftover", "floor_plane"],
+		["leftover", "leftover_pad"],
+		["leftover", "leftover_dock"],
+		["road", "board_pad"],
+		["hall", "wall_face"],
+		["hall", "floor_plane"],
+		["yard", "sky_loft"],
+		["yard", "floor_plane"],
+		["quay", "sky_loft"],
+		["quay", "floor_plane"],
+		["patrol", "sky_loft"],
+		["patrol", "floor_plane"],
+		["patrol", "prop_body"],
+		["patrol", "cabinet"],
+		["patrol", "gate"],
+		["patrol", "opening"],
+		["chrome", "execute_pad"]
+	]
+}

@@ -1,0 +1,101 @@
+{
+  "activity_id": "A003_OLD_BOXER_MISSED_BEAT",
+  "template_id": "T_REPAIR_TIMING",
+  "grammar": "TIMING",
+  "host_profile": "old_boxer_body_feedback",
+  "title": "旧拳王校准 / 把一拍还给它",
+  "prompt": "按住确认键，在承力、转髋与停拳三个身体反馈点松开。失手不会重考，只会把损伤带进擂台。",
+  "transaction_id": "M6:C02:A003:OLD_BOXER_TIMING:V01",
+  "canon_refs": ["MECHA_OLD_BOXER_KING", "R22", "C02E03-AUCTION", "TERM_OLD_BOXER_BODY_NOT_GLOVE"],
+  "start_position": 0.08,
+  "speed": 0.52,
+  "stages": [
+    {
+      "id": "right_fist_load",
+      "label": "右拳承力",
+      "target": 0.24,
+      "hold_target": 0.22,
+      "speed": 0.48,
+      "perfect_window": 0.045,
+      "good_window": 0.11,
+      "clear_window": 0.22,
+      "perfect_hold_window": 0.08,
+      "good_hold_window": 0.18,
+      "minimum_hold": 0.05
+    },
+    {
+      "id": "hip_transfer",
+      "label": "转髋传力",
+      "target": 0.56,
+      "hold_target": 0.3,
+      "speed": 0.6,
+      "perfect_window": 0.045,
+      "good_window": 0.11,
+      "clear_window": 0.22,
+      "perfect_hold_window": 0.08,
+      "good_hold_window": 0.18,
+      "minimum_hold": 0.05
+    },
+    {
+      "id": "missed_beat_release",
+      "label": "漏拍停拳",
+      "target": 0.8,
+      "hold_target": 0.26,
+      "speed": 0.7,
+      "perfect_window": 0.045,
+      "good_window": 0.11,
+      "clear_window": 0.22,
+      "perfect_hold_window": 0.08,
+      "good_hold_window": 0.18,
+      "minimum_hold": 0.05
+    }
+  ],
+  "outcomes": {
+    "perfect": {
+      "resolution": "success",
+      "preview": ["三段承力都保留", "旧拳王可主动停拳", "伤员保护余量增加"],
+      "resource_delta": {"repair_parts": -1},
+      "variable_delta": {"old_boxer_stability": 2},
+      "battle_modifiers": ["old_boxer_en:+6", "injured_worker_integrity:+1"],
+      "unlocked_flags": ["old_boxer_own_rhythm", "missed_beat_guard"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M6_TIMING_PERFECT", "schema": "timing_old_boxer_v1"}],
+      "facts": [{"id": "M6_OLD_BOXER_BODY_FEEDBACK_HELD", "to": "perfect"}],
+      "entity_changes": [{"entity_id": "MECHA_OLD_BOXER_KING", "condition": "body_feedback_stable", "timing_band": "perfect"}],
+      "ui_summary": "三段反馈都接住了；最后一拳仍由旧拳王自己决定落不落。"
+    },
+    "good": {
+      "resolution": "success",
+      "preview": ["主要承力成立", "停拳窗口较窄"],
+      "variable_delta": {"old_boxer_stability": 1},
+      "battle_modifiers": ["old_boxer_en:+3"],
+      "unlocked_flags": ["old_boxer_own_rhythm"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M6_TIMING_GOOD", "schema": "timing_old_boxer_v1"}],
+      "facts": [{"id": "M6_OLD_BOXER_BODY_FEEDBACK_HELD", "to": "good"}],
+      "entity_changes": [{"entity_id": "MECHA_OLD_BOXER_KING", "condition": "body_feedback_usable", "timing_band": "good"}],
+      "ui_summary": "承力已经能用；它会在擂台上自己补完最后那一拍。"
+    },
+    "clear": {
+      "resolution": "costly_success",
+      "preview": ["机体可以出场", "膝轴会把误差带进坍塌区"],
+      "variable_delta": {"old_boxer_stability": 0},
+      "battle_modifiers": ["old_boxer_en:+1", "warehouse_lane:unstable"],
+      "unlocked_flags": ["old_boxer_manual_guard"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M6_TIMING_CLEAR", "schema": "timing_old_boxer_v1"}],
+      "promises_and_debts": [{"debt_id": "M6_OLD_BOXER_KNEE_LOAD", "state": "open", "owner": "CH_TANGJIAO"}],
+      "entity_changes": [{"entity_id": "MECHA_OLD_BOXER_KING", "condition": "knee_load_unsettled", "timing_band": "clear"}],
+      "soft_fail": "膝轴误差进入战场，救援通道更窄",
+      "ui_summary": "它能上场，但膝轴会在最坏的时候提醒你这次校准少了一步。"
+    },
+    "fail": {
+      "resolution": "soft_failure",
+      "preview": ["不阻断出场", "影子模式残留", "伤员保护余量下降"],
+      "variable_delta": {"old_boxer_stability": -1},
+      "battle_modifiers": ["old_boxer_en:-2", "injured_worker_integrity:-1"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M6_TIMING_FAIL", "schema": "timing_old_boxer_v1"}],
+      "promises_and_debts": [{"debt_id": "M6_OLD_BOXER_SHADOW_RESIDUE", "state": "open", "owner": "CH_JICUN"}],
+      "entity_changes": [{"entity_id": "MECHA_OLD_BOXER_KING", "condition": "shadow_residue_active", "timing_band": "fail"}],
+      "soft_fail": "影子残留进入擂台，停拳要在战场完成",
+      "ui_summary": "校准没接住。比赛照常开始，停拳这件事只能在有人站在拳头前时完成。"
+    }
+  }
+}

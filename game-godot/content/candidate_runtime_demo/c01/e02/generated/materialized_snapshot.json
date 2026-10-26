@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "contract_id": "C01CDV1",
+  "contract_revision": 2,
+  "build_id": "C01CDV1-M2-R2",
+  "save_schema": 2,
+  "save_namespace": "c01_current_candidate/c01/e02/r2",
+  "producer_contract_sha256": "6a2a05c4a4627106e716b45202aafcf10a3466f94d53211617feaaed5398bf94",
+  "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+  "source_selection": "explicit_frozen_worktree_paths_by_sha256",
+  "source_hashes": {
+    "accepted_reader_hash": "c9a9aa490badea3d2de937e0003b80547974fed27103b31ec9181cd3583cfc8b",
+    "user_acceptance_hash": "3d11387d92120cfdeeb0069a2a7cdfbe677ed0ea2ac5ae6649038de7b0cd532b",
+    "story_play_topology_hash": "5d640ed3e70854a178194ceeeffe7d444a928547a414af3407674b9d4f4be5aa",
+    "gameflow_hash": "68ac0efa2d8316f33eb41ca745568684dd180021931355e8ff1d0798196b5296",
+    "global_topology_hash": "550da9196bb9029aa0ceb7d75cd1bfdb73c852dd806fb4b609f1765c652eee76"
+  },
+  "source_locks": [
+    {
+      "role": "accepted_reader",
+      "path": "docs/superpowers/specs/剧情梗概/V35.9/rebuild/reader/C01-闭馆以后万机出击.md",
+      "sha256": "c9a9aa490badea3d2de937e0003b80547974fed27103b31ec9181cd3583cfc8b",
+      "runtime_asset": false
+    },
+    {
+      "role": "user_acceptance",
+      "path": "docs/superpowers/specs/剧情梗概/V35.9/rebuild/reviews/C01/C01-用户创作验收回执.md",
+      "sha256": "3d11387d92120cfdeeb0069a2a7cdfbe677ed0ea2ac5ae6649038de7b0cd532b",
+      "runtime_asset": false
+    },
+    {
+      "role": "story_play_topology",
+      "path": "docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C01/C01-剧情游玩拓扑与状态桥接.tsv",
+      "sha256": "5d640ed3e70854a178194ceeeffe7d444a928547a414af3407674b9d4f4be5aa",
+      "runtime_asset": false
+    },
+    {
+      "role": "gameflow",
+      "path": "docs/superpowers/specs/story-runtime/effect-tests/C01-story-gameplay-separation-2026-08-07/gameflow/C01-游戏流程解构-v1.md",
+      "sha256": "68ac0efa2d8316f33eb41ca745568684dd180021931355e8ff1d0798196b5296",
+      "runtime_asset": false
+    },
+    {
+      "role": "global_topology",
+      "path": "docs/superpowers/specs/2026-08-08-chao-gag-story-play-operation-topology-contract-v1.md",
+      "sha256": "550da9196bb9029aa0ceb7d75cd1bfdb73c852dd806fb4b609f1765c652eee76",
+      "runtime_asset": false
+    }
+  ],
+  "runtime_contract": {
+    "encounter_id": "ENC-C01-GROUND",
+    "episode": "C01E02",
+    "episode_boundary": "phase_checkpoint",
+    "mission_clear": false,
+    "operation_id": "OP-C01-BREAKER",
+    "phase_id": "P1",
+    "swarm_organization_state": "scattered",
+    "tactical_profile_id": "c01cdv1_e02_scroll_m2_r2",
+    "terminal_state_id": "c01cdv1_e02_phase_checkpoint_p1"
+  },
+  "story_order_lock": [
+    "retired_shield_acquired",
+    "red_impact_blocked",
+    "rescue_lane_cleared",
+    "confirm_shield_bash"
+  ],
+  "forbidden_outcomes": [
+    "mission_clear",
+    "breaker_destroyed",
+    "breaker_core_revealed",
+    "breaker_flight_form",
+    "guardian_z_right_forearm_destroyed"
+  ]
+}

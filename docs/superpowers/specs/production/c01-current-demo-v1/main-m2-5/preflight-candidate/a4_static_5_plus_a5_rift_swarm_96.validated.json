@@ -1,0 +1,402 @@
+{
+  "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+  "contract_binding": {
+    "build_id": "C01CDV1-M2-R2",
+    "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+    "contract_revision": 2,
+    "save_schema": 2
+  },
+  "gameplay_state_mutation": false,
+  "lifecycle_status": "active",
+  "profile_binding": {
+    "profile_id": "c01cdv1_e02_scroll_m2_r2",
+    "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8"
+  },
+  "receipt_id": "C01E02-A4-STATIC-5-PLUS-A5-RIFT-SWARM-96-V1-VALIDATED-R2",
+  "receipt_kind": "C01E02_M2_2_FROZEN_VALIDATED_HANDOFFS",
+  "receipt_payload_sha256": "74388c294b05eef5a922cc51fcf63e11ffd514b2eef0e6e3bde96e4bf560b386",
+  "runtime_art_loaded": true,
+  "runtime_lane": "candidate_runtime_demo",
+  "schema_version": "1.0.0",
+  "source_batch": {
+    "batch_id": "C01E02-A4-STATIC-5-PLUS-A5-RIFT-SWARM-96-V1",
+    "sha256": "abd97837d9abe811862b3a0e5878e6263fd46379eb6f4336fb6af18bb5bd1e36",
+    "submitted_count": 6,
+    "validated_count": 6
+  },
+  "synthetic_fixture": false,
+  "validated_receipts": [
+    {
+      "actions": [
+        "idle"
+      ],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 96,
+        "width": 384
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {
+          "idle/east": [
+            96,
+            0,
+            96,
+            96
+          ],
+          "idle/north": [
+            0,
+            0,
+            96,
+            96
+          ],
+          "idle/south": [
+            192,
+            0,
+            96,
+            96
+          ],
+          "idle/west": [
+            288,
+            0,
+            96,
+            96
+          ]
+        }
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "sprite_sheet",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "89c1507c57a026e9c28da11137b69adf1a077bbcbbbfce797adb37a4d67206e1",
+      "facings": [
+        "north",
+        "east",
+        "south",
+        "west"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 96,
+        "width": 384
+      },
+      "native_size": [
+        384,
+        96
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        1.0
+      ],
+      "producer_handoff_id": "C01E02-A5-RIFT-SWARM-96-01",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a5_rift_swarm/rift-swarm-idle-96.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+      "slot_id": "ENEMY_C01CDV1_RIFT_SWARM_MASTER",
+      "stable_id": "ENEMY_C01_RIFT_SWARM",
+      "subject_id": "ENEMY_C01_RIFT_SWARM",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "rift_swarm_tactical_qsd_master",
+      "validation_gate": "candidate_asset_resolver_r2"
+    },
+    {
+      "actions": [],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 2,
+        "has_alpha": false,
+        "height": 1350,
+        "width": 2400
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {}
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "static_image",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "e08490f5f508c5bdea8fe0ccb8040559fc65598bb9b8dbdb3d54347fc99cf9d2",
+      "facings": [
+        "none"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": false,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": false,
+        "height": 1350,
+        "width": 2400
+      },
+      "native_size": [
+        2400,
+        1350
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "producer_handoff_id": "C01E02-A4-MAP-B-STATIC-01",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-base.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "6fd40a256afee225457594558edf274823de5d1e771d1f570d0263c5df217789",
+      "slot_id": "MAP_C01CDV1_R2_BASE",
+      "stable_id": "MAP_C01CDV1_SCROLLING_STREET_R2_BASE",
+      "subject_id": "c01cdv1_e02_scroll_m2_r2",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "rolling_map_base",
+      "validation_gate": "candidate_asset_resolver_r2"
+    },
+    {
+      "actions": [],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 1350,
+        "width": 2400
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {}
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "static_image",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "fda6f615a2bbaf956740f337d51788385187e74552970f3f96ab590f7a5942c6",
+      "facings": [
+        "none"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 1350,
+        "width": 2400
+      },
+      "native_size": [
+        2400,
+        1350
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "producer_handoff_id": "C01E02-A4-MAP-B-STATIC-02",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-buildings.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "db3f83eeb3ed5e583d0a831a203ab0d5446a594f9ed9e34f25f175f290f62237",
+      "slot_id": "MAP_C01CDV1_R2_BUILDINGS",
+      "stable_id": "MAP_C01CDV1_SCROLLING_STREET_R2_BUILDINGS",
+      "subject_id": "c01cdv1_e02_scroll_m2_r2",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "rolling_map_buildings",
+      "validation_gate": "candidate_asset_resolver_r2"
+    },
+    {
+      "actions": [],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 1350,
+        "width": 2400
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {}
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "static_image",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "a93108640cceca1e6a588c510003bb8d35f8fa7f7ae1cfe4e7b522b8cef9067d",
+      "facings": [
+        "none"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 1350,
+        "width": 2400
+      },
+      "native_size": [
+        2400,
+        1350
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "producer_handoff_id": "C01E02-A4-MAP-B-STATIC-04",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-foreground.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "454b3cf845ba91d7d7f13e201874bbbe79f871297a36930a24348823df1525a3",
+      "slot_id": "MAP_C01CDV1_R2_FOREGROUND",
+      "stable_id": "MAP_C01CDV1_SCROLLING_STREET_R2_FOREGROUND",
+      "subject_id": "c01cdv1_e02_scroll_m2_r2",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "rolling_map_foreground",
+      "validation_gate": "candidate_asset_resolver_r2"
+    },
+    {
+      "actions": [],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 1350,
+        "width": 2400
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {}
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "static_image",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "3348823374846ce11efb9dacdd4f4b65c79960aa293b4ddc71a9c30add2ce693",
+      "facings": [
+        "none"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 1350,
+        "width": 2400
+      },
+      "native_size": [
+        2400,
+        1350
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "producer_handoff_id": "C01E02-A4-MAP-B-STATIC-05",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-occlusion-mask.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "b5f68f4749f6bff2025409622888d8e8faa17d977aca372caa43121eec18e899",
+      "slot_id": "MAP_C01CDV1_R2_OCCLUSION_MASK",
+      "stable_id": "MAP_C01CDV1_SCROLLING_STREET_R2_OCCLUSION_MASK",
+      "subject_id": "c01cdv1_e02_scroll_m2_r2",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "rolling_map_occlusion_mask",
+      "validation_gate": "candidate_asset_resolver_r2"
+    },
+    {
+      "actions": [],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 1350,
+        "width": 2400
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {}
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "static_image",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "8e38febb533a535a1e8006ab58643e195f4949444610600c66cc544714fd4968",
+      "facings": [
+        "none"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 1350,
+        "width": 2400
+      },
+      "native_size": [
+        2400,
+        1350
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "producer_handoff_id": "C01E02-A4-MAP-B-STATIC-03",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-roofs.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "7fea3c7918ff85bb1d5df1f4bcc5856afac1d8fa7f174d59b862f985962f11a9",
+      "slot_id": "MAP_C01CDV1_R2_ROOFS",
+      "stable_id": "MAP_C01CDV1_SCROLLING_STREET_R2_ROOFS",
+      "subject_id": "c01cdv1_e02_scroll_m2_r2",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "rolling_map_roofs",
+      "validation_gate": "candidate_asset_resolver_r2"
+    }
+  ]
+}

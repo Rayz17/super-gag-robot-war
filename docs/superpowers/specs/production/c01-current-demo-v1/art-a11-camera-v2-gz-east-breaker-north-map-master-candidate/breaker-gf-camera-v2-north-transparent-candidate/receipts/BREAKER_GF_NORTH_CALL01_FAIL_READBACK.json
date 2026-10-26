@@ -1,0 +1,64 @@
+{
+  "status": "FAIL_STOP_NO_REROLL",
+  "candidate_gate_pass": false,
+  "imagegen_calls": 1,
+  "reroll_count": 0,
+  "imagegen_mode": "built_in_generate_with_visual_references",
+  "reference_inputs": [
+    {
+      "path": "gf-current-breaker-camera-v2-north-candidate/source-guides/BREAKER_GF_PLAN_CONTACT_TIGHT_REFERENCE_1536x768.png",
+      "sha256": "b6d0aab9944d7a918b12c317caea19cebf041c53cbf8b823638d870a97b47cd1",
+      "role": "GF identity, asymmetric layered black armor, red slit, low load-bearing form"
+    },
+    {
+      "path": "source-guides/BREAKER_NORTH_CAMERA_V2_EXACT_GUIDE_384.png",
+      "sha256": "cdcc9b4dd7bdc9224252e883d0263fd359a70dd198209b77348e566e18ed5160",
+      "role": "Camera V2 north vector [40,-24], 3x3, canvas and pivot contract"
+    }
+  ],
+  "negative_reference_only_not_sent_to_imagegen": "gf-current-breaker-camera-v2-north-candidate/qa/BREAKER_GF_REFERENCE_VS_CAMERA_V2_NORTH_CANDIDATE_50_100_2000x1260.png",
+  "raw_output": {
+    "path": "breaker-gf-camera-v2-north-transparent-candidate/generation-raw/BREAKER_GF_NORTH_CALL01_RAW_FAIL.png",
+    "sha256": "f827ad3a4eb9a91bccde2e0b2fb6b5d99a644c312c32cbf81be6912ec2fa6ed8",
+    "size": [1402, 1122],
+    "mode": "RGB",
+    "transparent": false,
+    "checkerboard_baked_into_rgb": true
+  },
+  "deterministic_review_scale": {
+    "path": "breaker-gf-camera-v2-north-transparent-candidate/review/BREAKER_GF_NORTH_CALL01_FAIL_REVIEW_384.png",
+    "sha256": "3fd55a9a8e103eb95bacb01d83b79a4a32521b48093573b04bffecf34343f414",
+    "size": [384, 384],
+    "mode": "RGB",
+    "source_scaled_size": [384, 307],
+    "paste_xy": [0, 13],
+    "resampling": "LANCZOS",
+    "alpha_safe": false,
+    "reason_alpha_safe_false": "The sole ImageGen output is RGB with a baked checkerboard, so no alpha channel exists to preserve.",
+    "intended_pivot_px": [192, 320],
+    "pivot_registered": false,
+    "footprint_cells": [3, 3]
+  },
+  "qa_board": {
+    "path": "breaker-gf-camera-v2-north-transparent-candidate/qa/BREAKER_GF_REFERENCE_VS_NORTH_CALL01_FAIL_50_100_2000x1200.png",
+    "sha256": "819a731ba8cc35994c8bd8bc3ff4fa755afbb6f231194ba350891590a38f9bdc",
+    "size": [2000, 1200]
+  },
+  "hard_gate_review": {
+    "required_facing": "screen upper-right, vector [40,-24]",
+    "north_pass": false,
+    "north_failure": "Both diagonal ends gained head-like wedges and red slits; the longest impact nose still reads at screen lower-left, so the front is ambiguous and not reliably north.",
+    "gf_first_read_pass": false,
+    "gf_failure": "Some black leaf-like plates and warm edges remain, but the body became an elongated near-symmetrical shuttle with four repeated supports and duplicated head/red-slit cues instead of the approved GF asymmetric low breaching shell.",
+    "transparent_alpha_pass": false,
+    "map_readability_only": "The black mass and red details remain readable at 384 and 192, but readability cannot override the identity, facing, and alpha failures."
+  },
+  "prompt_summary": "Generate one isolated GF-faithful BREAKER with genuine transparency in elevated orthographic Camera V2 north; head, red slit and impact nose at upper-right, rear at lower-left; preserve irregular asymmetric layered black armor and compact load-bearing supports; forbid turtle, ordinary quadruped, insect, symmetric vehicle, scene, shadow and baked checkerboard.",
+  "promotion": {
+    "candidate_asset": false,
+    "godot_bound": false,
+    "runtime": false,
+    "canon": false,
+    "producer_visual_approval": false
+  }
+}

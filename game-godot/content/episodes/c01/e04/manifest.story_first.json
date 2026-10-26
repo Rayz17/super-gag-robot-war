@@ -1,0 +1,143 @@
+{
+  "episode_id": "C01E04-STORY-FIRST-CANDIDATE",
+  "status": "candidate",
+  "canon_level": "accepted_story_candidate_runtime_production",
+  "source_slot_id": "V357-C01-S04",
+  "loadout_contract_id": "V358LOAD004",
+  "mecha_id": "MECHA_WANJI_MOBILE_CHASSIS",
+  "story_source": "DOC_V359_C01E04_STORY_FIRST_V1",
+  "graph": "res://content/episodes/c01/e04/graph.story_first.json",
+  "bundle_output": "res://content/generated/episodes/c01/e04/story_first.bundle.json",
+  "transition_contract": "required",
+  "investigations": [
+    "res://content/episodes/c01/e04/explore/c01_e04_b1_engineering_inspection.json"
+  ],
+  "activity_definitions": [
+    "res://content/episodes/c01/e04/activity/c01_e04_exact_two_loadout.json"
+  ],
+  "battle": "res://content/episodes/c01/e04/battle/c01_e04_carrier_escape_6p.json",
+  "presentation_assets": [
+    "res://assets/backgrounds/bg_hangar.png",
+    "res://assets/tactical_maps/story_first/bg_c01e04_carrier_escape_isometric_v01.png",
+    "res://assets/tactical_maps/story_first/spr_wanji_mobile_chassis_v01.png",
+    "res://assets/backgrounds/story_first/bg_c01e01_guardian_atrium_model_hospital_v01.png",
+    "res://assets/backgrounds/story_first/bg_c01e01_zero_corridor_v01.png",
+    "res://assets/backgrounds/story_first/bg_c01e01_front_hall_closing_v01.png",
+    "res://assets/backgrounds/story_first/bg_c01e01_archive_room_v01.png",
+    "res://assets/portraits/portrait_jicun.png",
+    "res://assets/portraits/portrait_doudeng.png",
+    "res://assets/portraits/portrait_qihai.png",
+    "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png",
+    "res://assets/battle_presentation/c01/story_first/manifest.json",
+    "res://assets/battle_presentation/c01/story_first/sprite_diedie_idle_v01.png",
+    "res://assets/battle_presentation/c01/story_first/sprite_machine_dog_idle_v01.png",
+    "res://assets/battle_presentation/c01/story_first/sprite_evac_group_base_v01.png",
+    "res://assets/battle_presentation/c01/story_first/sprite_path_frame_reclosing_v01.png",
+    "res://assets/battle_presentation/c01/story_first/sprite_status_patcher_active_v01.png",
+    "res://assets/battle_presentation/c01/fire_bridge/sprite_fire_bridge_deployed_v01.png",
+    "res://assets/characters/story_first/sprite_jicun_walk_right_strip_v01.png",
+    "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_kneel_idle_v01.png",
+    "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_single_arm_support_v01.png",
+    "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_kneel_guard_v01.png",
+    "res://assets/battle_presentation/c01/guardian_z/pose_gz_c01_kneel_contact_v01.png",
+    "res://assets/battle_presentation/c01/guardian_z/pose_gz_c01_kneel_palm_guard_v01.png",
+    "res://assets/battle_presentation/c01/guardian_z/cutin_doudeng_c01_tense_v01.png",
+    "res://assets/battle_presentation/c01/guardian_z/cutin_doudeng_c01_safety_lock_v01.png",
+    "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_idle_v01.png",
+    "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_scan_v01.png",
+    "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_lock_v01.png",
+    "res://assets/portraits/portrait_haosi.png",
+    "res://assets/units/unit_brave_fist.svg",
+    "res://assets/units/enemy_seal_frame.svg"
+  ],
+  "experience_contract_version": 1,
+  "experience_contract_required": true,
+  "experience_contract": {
+    "episode_knot_id": "KNOT_C01E04_EXACT_TWO_AND_WANJI_BODY",
+    "dramatic_object_id": "OBJ_C01E04_THREE_LOADOUT_RAILS",
+    "dramatic_question": "万机馆必须在拆除前离开固定地基，但三类非人员载荷只能保住两类；什么必须留下，谁又有权让这座受伤的馆体停下？",
+    "human_claims": [
+      {"claim_owner": "CH_JICUN", "claim": "离开原址不能靠把跌跌设备化和集中管理员权；路线、占格、未带走物与停止权都必须公开。"},
+      {"claim_owner": "CH001", "claim": "馆守Z现在只有左肩，所有工程包络都必须承认这副身体；她的硬停权在每一次馆体动作后仍然有效。"}
+    ],
+    "machine_claim": {
+      "mecha_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "claim": "万机馆不是一栋被搬走的建筑；它以受伤、漏热、缺臂和可被四个人分别叫停的身体第一次自己离开地基。",
+      "action_cue_id": "CUE_C01E04_WANJI_BODY_CROSSES_EAST_GATE"
+    },
+    "player_commitment_id": "COMMIT_C01E04_EXACT_TWO_LOADOUT",
+    "commitment_model": "choice",
+    "settlement_model": "desk_choice",
+    "irreversible_cost": {
+      "text": "万机馆永久失去固定旧址与固定博物馆身份；右臂桥和第三类未选载荷留在城市，零号高速路由被纪存折断，馆体带着伤形进入36小时受损巡航。",
+      "state_refs": ["WANJI_SITE_LOST", "WBM001_ACTIVE", "ZERO_SHORTCUT_REFUSED", "WANJI_LOADOUT_BUNDLE_ID", "ROUTE_MODEL_STREET_SURVIVAL_LOCK"]
+    },
+    "next_debt_id": "DEBT_C01E04_THIRTY_SIX_HOURS_AND_MISSING_CARGO",
+    "next_debt_origin": "东门之后只剩36小时生命循环兼容窗口；三种二选三组合分别造成档案、实体原件或生活维持缺口，移动风险编号与军方追踪同时保留。",
+    "next_debt_future_window": "C02木桶旧件市必须读取RT054和WANJI_LOADOUT_BUNDLE_ID，对未携带第三类给出真实缺口；不得补回旧址、右臂、第三槽或七海现场权限。",
+    "capacity_band": "standard",
+    "capacity_evidence": {"status": "pending_external", "receipt_paths": []},
+    "required_continuity": ["action", "responsibility"],
+    "required_consumption_slots": ["immediate", "conflict", "character", "settlement"],
+    "skip_reasons": {
+      "TIMING": "本话核心是工程巡检、精确载荷选择和巨构地图身体，节拍玩法会争夺已经很高的规则带宽。",
+      "SIGNAL": "皇影只以三次受限黑框卡锁首显，不在本话开放信号解释或控制关系判断。"
+    },
+    "stable_object_bindings": [
+      {
+        "stable_object_id": "OBJ_C01E04_THREE_LOADOUT_RAILS",
+        "mode_bindings": [
+          {"mode": "SPATIAL", "node_id": "c01e04_b1_engineering_inspection", "anchor_id": "inspect_three_loadout_rails"},
+          {"mode": "DESK", "node_id": "c01e04_exact_two_loadout", "anchor_id": "LIFE_SUPPORT"},
+          {"mode": "TACTICAL", "node_id": "c01e04_carrier_escape", "anchor_id": "BIND_C01E04_THREE_RAILS_TO_EXACT_TWO_LOADOUT"},
+          {"mode": "NARRATIVE", "node_id": "c01e04_aftercare", "anchor_id": "c01e04_after_03"}
+        ]
+      }
+    ],
+    "consumption_ledger": [
+      {
+        "result_id": "COMMIT_C01E04_EXACT_TWO_LOADOUT",
+        "source_node_id": "c01e04_exact_two_loadout",
+        "slots": {
+          "immediate": {"consumer_kind": "world_object", "consumer_id": "OBJ_C01E04_THREE_LOADOUT_RAILS", "visible_evidence": "生活维持、实体原件和档案服务器各占一条真实固定链；两个槽填满后第三条仍在现场亮灯。"},
+          "conflict": {"consumer_kind": "battle", "consumer_id": "C01E04-CARRIER-ESCAPE-SIX-STAGE", "visible_evidence": "战场只消费已提交组合：两类必须逐段送入安全舱，第三类必须完成解耦、留置与编号核对。"},
+          "character": {"consumer_kind": "node", "consumer_id": "c01e04_aftercare", "visible_evidence": "唐胶拒绝用‘其余留馆’抹平具体物件，兜灯确认永久单臂硬停，七海的东门回执与停职延长同时生效。"},
+          "settlement": {"consumer_kind": "commitment_group", "consumer_id": "COMMIT_C01E04_EXACT_TWO_LOADOUT", "visible_evidence": "三种组合分别写入LIFE_PHYSICAL、LIFE_ARCHIVE或PHYSICAL_ARCHIVE，并把对应缺口送入C02。"}
+        }
+      }
+    ],
+    "acceptance_questions": [
+      "为什么所有人已经安全后，万机馆反而必须立刻离开原址？",
+      "B1三项必要巡检怎样证明它是一副受伤的移动身体，而不是固定建筑？",
+      "零号高速路为什么确实有效，却仍必须由纪存亲手折断？",
+      "三种二选三组合各自保住什么，又把什么真实缺口带进C02？",
+      "玩家在战场上怎样看见第三类载荷确实留在旧址，而不是菜单文字？",
+      "四名操作员和旧守护者五个Owner怎样分别保留停止权，而不是合成一个主角按钮？",
+      "万机馆越过东门的巨构动作为什么既是胜利，也是失去旧址与固定身份的不可逆时刻？"
+    ]
+  },
+  "claims": [
+    "eight_node_story_first_episode_graph_from_rt035_to_rt054",
+    "playable_b1_three_of_five_engineering_inspection",
+    "pre_tactical_exact_two_loadout_constraint_with_three_distinct_previews",
+    "six_stage_16x12_isometric_carrier_escape_scenario",
+    "exact_three_two_of_three_loadout_combinations",
+    "four_local_checkpoint_no_persistent_write_semantics",
+    "four_registered_operator_posts_and_five_owner_checks",
+    "zero_route_effective_then_current_harm_restored",
+    "playable_zero_route_core_retrieval_hard_stop_and_bridge_removal",
+    "public_corridor_hearing_required_before_tactical_start",
+    "single_arm_guardian_support_and_player_cleared_emperor_lock_jam",
+    "rt054_merges_five_local_loadout_facts_into_one_atomic_handoff",
+    "chapter_c01_candidate_runner_reaches_rt054_without_cross_episode_reset"
+  ],
+  "non_claims": [
+    "formal_episode_accepted",
+    "production_art_complete",
+    "final_carrier_body_animation_complete",
+    "emperor_shadow_final_art_complete",
+    "chapter_c01_production_complete",
+    "c02_runtime_handoff_validated",
+    "windows_runtime_validated"
+  ]
+}

@@ -1,0 +1,713 @@
+{
+  "schema_version": "1.0.0",
+  "schema_id": "C01E02_CURRENT_TOPOLOGY_SPARSE_ATLAS_SCHEMA_V1",
+  "status": "STRUCTURE_FROZEN_RESOURCE_BYTES_PENDING_EXTERNAL_P99_RECEIPT",
+  "view_space": "map_dimetric_40x20",
+  "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+  "filter": "nearest",
+  "mipmap": false,
+  "centered": false,
+  "shadow_owner": "engine_independent_ground_shadow_layer",
+  "sprite_png_contains_shadow": false,
+  "socket_contract_id": "C01E02_MAP_CAMERA_SOCKET_CONTACT_V1",
+  "binding_resolution": {
+    "mode": "p99_exact_receipt_overlay",
+    "join_key": [
+      "stable_id",
+      "slot_id",
+      "revision",
+      "resource_path"
+    ],
+    "P99_may_modify_task98_schema": false,
+    "fail_closed_until_exact_sha_resolved": true,
+    "resolved_fixture_must_remain_fixture_validation_only": true
+  },
+  "assets": [
+    {
+      "stable_id": "V353U001",
+      "slot_id": "guardian_z_map_current",
+      "revision": "task98_preproduction_v1",
+      "view_space": "map_dimetric_40x20",
+      "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+      "resource_binding_id": "guardian_z_map_current_p99_fixture_binding",
+      "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_guardian_z_neutral_768x768.png",
+      "sha256": null,
+      "sha256_status": "PENDING_P99_EXACT_RECEIPT",
+      "binding_mode": "p99_exact_receipt_overlay",
+      "binding_owner": "G2_A2_C3",
+      "native_size": [
+        256,
+        256
+      ],
+      "atlas_size": [
+        768,
+        768
+      ],
+      "display_scale": [
+        1.0,
+        1.0
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "pivot_normalized": [
+        0.5,
+        0.875
+      ],
+      "pivot_px": [
+        128,
+        224
+      ],
+      "z_bias": 1,
+      "sparse_clips": {
+        "idle/east/0": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "move/north/0": [
+          256,
+          0,
+          256,
+          256
+        ],
+        "brace/east/0": [
+          512,
+          0,
+          256,
+          256
+        ],
+        "brace/north/0": [
+          0,
+          256,
+          256,
+          256
+        ],
+        "brace/south/0": [
+          256,
+          256,
+          256,
+          256
+        ],
+        "contact/south/0": [
+          512,
+          256,
+          256,
+          256
+        ],
+        "recoil/east/0": [
+          0,
+          512,
+          256,
+          256
+        ],
+        "recoil/south/0": [
+          256,
+          512,
+          256,
+          256
+        ]
+      },
+      "physical_clip_aliases_with_signature": [
+        {
+          "stable_id": "V353U001",
+          "slot_id": "guardian_z_map_current",
+          "revision": "task98_preproduction_v1",
+          "alias_kind": "physical_clip_alias",
+          "alias_key": "move/east/0",
+          "source_clip_key": "idle/east/0",
+          "facing_policy": "preserve_exact",
+          "native_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "socket_contract_id": "C01E02_MAP_CAMERA_SOCKET_CONTACT_V1",
+          "resource_binding_id": "guardian_z_map_current_p99_fixture_binding",
+          "canonical_payload_sha256": "42658d2dd69ec9875cd1337dac29c0890cb5c33f457ed818075298ba7e0e8b75",
+          "one_hop": true,
+          "cycle_forbidden": true
+        }
+      ],
+      "state_aliases_with_signature": [
+        {
+          "stable_id": "V353U001",
+          "slot_id": "guardian_z_map_current",
+          "revision": "task98_preproduction_v1",
+          "alias_kind": "physical_clip_alias",
+          "alias_key": "move/east/0",
+          "source_clip_key": "idle/east/0",
+          "facing_policy": "preserve_exact",
+          "native_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "socket_contract_id": "C01E02_MAP_CAMERA_SOCKET_CONTACT_V1",
+          "resource_binding_id": "guardian_z_map_current_p99_fixture_binding",
+          "canonical_payload_sha256": "42658d2dd69ec9875cd1337dac29c0890cb5c33f457ed818075298ba7e0e8b75",
+          "one_hop": true,
+          "cycle_forbidden": true
+        }
+      ],
+      "semantic_state_aliases": {
+        "active": "idle",
+        "moving": "move",
+        "anticipation": "brace",
+        "holding_first_contact": "brace",
+        "impact": "contact",
+        "recoil_hold": "recoil"
+      },
+      "fps_or_hold": {
+        "idle": "hold",
+        "move": "engine_route_tween_after_rect_resolution",
+        "brace": "hold",
+        "contact": "hit_stop_hold",
+        "recoil": "hold"
+      },
+      "loop": {
+        "idle": true,
+        "move": false,
+        "brace": false,
+        "contact": false,
+        "recoil": false
+      },
+      "facings": [
+        "east",
+        "north",
+        "south"
+      ],
+      "interaction_sockets": {
+        "body": [
+          0,
+          -74
+        ],
+        "shield": [
+          -46,
+          -62
+        ],
+        "weapon": [
+          46,
+          -72
+        ],
+        "impact": [
+          -20,
+          -10
+        ],
+        "target": [
+          -20,
+          -10
+        ]
+      },
+      "filter": "nearest",
+      "mipmap": false,
+      "shadow_owner": "engine_independent_ground_shadow_layer",
+      "fixture_validation_only": true,
+      "runtime_bindable": false,
+      "fail_closed": true
+    },
+    {
+      "stable_id": "ENEMY_C01_BREAKER",
+      "slot_id": "breaker_map_current",
+      "revision": "task98_preproduction_v1",
+      "view_space": "map_dimetric_40x20",
+      "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+      "resource_binding_id": "breaker_map_current_p99_fixture_binding",
+      "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_breaker_neutral_1152x768.png",
+      "sha256": null,
+      "sha256_status": "PENDING_P99_EXACT_RECEIPT",
+      "binding_mode": "p99_exact_receipt_overlay",
+      "binding_owner": "G2_A2_C3",
+      "native_size": [
+        384,
+        384
+      ],
+      "atlas_size": [
+        1152,
+        768
+      ],
+      "display_scale": [
+        1.0,
+        1.0
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "pivot_normalized": [
+        0.5,
+        0.8333333333
+      ],
+      "pivot_px": [
+        192,
+        320
+      ],
+      "z_bias": 2,
+      "sparse_clips": {
+        "charge/north/0": [
+          0,
+          0,
+          384,
+          384
+        ],
+        "contact/north/0": [
+          384,
+          0,
+          384,
+          384
+        ],
+        "recoil/north/0": [
+          768,
+          0,
+          384,
+          384
+        ],
+        "side_hit/north/0": [
+          0,
+          384,
+          384,
+          384
+        ],
+        "red_charge/north/0": [
+          384,
+          384,
+          384,
+          384
+        ]
+      },
+      "physical_clip_aliases_with_signature": [],
+      "state_aliases_with_signature": [],
+      "semantic_state_aliases": {
+        "charging_run": "charge",
+        "anticipation": "charge",
+        "brace": "charge",
+        "impact": "contact",
+        "charge_partially_redirected": "recoil",
+        "recover": "recoil",
+        "side_armor_hit": "side_hit"
+      },
+      "fps_or_hold": {
+        "charge": "hold_or_engine_route_tween_after_rect_resolution",
+        "contact": "hit_stop_hold",
+        "recoil": "hold",
+        "side_hit": "hold",
+        "red_charge": "hold"
+      },
+      "loop": {
+        "charge": true,
+        "contact": false,
+        "recoil": false,
+        "side_hit": false,
+        "red_charge": true
+      },
+      "facings": [
+        "north"
+      ],
+      "interaction_sockets": {
+        "body": [
+          0,
+          -98
+        ],
+        "shield": [
+          -68,
+          -84
+        ],
+        "weapon": [
+          68,
+          -96
+        ],
+        "impact": [
+          12,
+          -18
+        ],
+        "target": [
+          12,
+          -18
+        ]
+      },
+      "filter": "nearest",
+      "mipmap": false,
+      "shadow_owner": "engine_independent_ground_shadow_layer",
+      "fixture_validation_only": true,
+      "runtime_bindable": false,
+      "fail_closed": true
+    },
+    {
+      "stable_id": "TARGET_C01_EMERGENCY_VEHICLE_01",
+      "slot_id": "emergency_vehicle_map_current",
+      "revision": "task98_preproduction_v1",
+      "view_space": "map_dimetric_40x20",
+      "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+      "resource_binding_id": "emergency_vehicle_map_current_p99_fixture_binding",
+      "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_emergency_vehicle_neutral_256x256.png",
+      "sha256": null,
+      "sha256_status": "PENDING_P99_EXACT_RECEIPT",
+      "binding_mode": "p99_exact_receipt_overlay",
+      "binding_owner": "G2_A2_C3",
+      "native_size": [
+        128,
+        128
+      ],
+      "atlas_size": [
+        256,
+        256
+      ],
+      "display_scale": [
+        1.0,
+        1.0
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "pivot_normalized": [
+        0.5,
+        0.75
+      ],
+      "pivot_px": [
+        64,
+        96
+      ],
+      "z_bias": 0,
+      "sparse_clips": {
+        "waiting/east/0": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "drive/east/0": [
+          128,
+          0,
+          128,
+          128
+        ],
+        "recoil/east/0": [
+          0,
+          128,
+          128,
+          128
+        ]
+      },
+      "physical_clip_aliases_with_signature": [
+        {
+          "stable_id": "TARGET_C01_EMERGENCY_VEHICLE_01",
+          "slot_id": "emergency_vehicle_map_current",
+          "revision": "task98_preproduction_v1",
+          "alias_kind": "physical_clip_alias",
+          "alias_key": "passed/east/0",
+          "source_clip_key": "waiting/east/0",
+          "facing_policy": "preserve_exact",
+          "native_size": [
+            128,
+            128
+          ],
+          "pivot_px": [
+            64,
+            96
+          ],
+          "socket_contract_id": "C01E02_MAP_CAMERA_SOCKET_CONTACT_V1",
+          "resource_binding_id": "emergency_vehicle_map_current_p99_fixture_binding",
+          "canonical_payload_sha256": "fee4ab9fd2b7815c758463aac9f6d6ed86943212e90e3ff8241994f4a92c9bf2",
+          "one_hop": true,
+          "cycle_forbidden": true
+        }
+      ],
+      "state_aliases_with_signature": [
+        {
+          "stable_id": "TARGET_C01_EMERGENCY_VEHICLE_01",
+          "slot_id": "emergency_vehicle_map_current",
+          "revision": "task98_preproduction_v1",
+          "alias_kind": "physical_clip_alias",
+          "alias_key": "passed/east/0",
+          "source_clip_key": "waiting/east/0",
+          "facing_policy": "preserve_exact",
+          "native_size": [
+            128,
+            128
+          ],
+          "pivot_px": [
+            64,
+            96
+          ],
+          "socket_contract_id": "C01E02_MAP_CAMERA_SOCKET_CONTACT_V1",
+          "resource_binding_id": "emergency_vehicle_map_current_p99_fixture_binding",
+          "canonical_payload_sha256": "fee4ab9fd2b7815c758463aac9f6d6ed86943212e90e3ff8241994f4a92c9bf2",
+          "one_hop": true,
+          "cycle_forbidden": true
+        }
+      ],
+      "semantic_state_aliases": {
+        "active": "waiting",
+        "moving": "drive",
+        "move": "drive",
+        "passed_lane_still_active": "passed"
+      },
+      "fps_or_hold": {
+        "waiting": "hold",
+        "drive": "engine_route_tween_after_rect_resolution",
+        "recoil": "hold",
+        "passed": "hold"
+      },
+      "loop": {
+        "waiting": true,
+        "drive": false,
+        "recoil": false,
+        "passed": true
+      },
+      "facings": [
+        "east"
+      ],
+      "interaction_sockets": {
+        "body": [
+          0,
+          -37
+        ],
+        "shield": [
+          -21,
+          -32
+        ],
+        "weapon": [
+          23,
+          -36
+        ],
+        "impact": [
+          0,
+          -43
+        ],
+        "target": [
+          0,
+          -43
+        ]
+      },
+      "filter": "nearest",
+      "mipmap": false,
+      "shadow_owner": "engine_independent_ground_shadow_layer",
+      "fixture_validation_only": true,
+      "runtime_bindable": false,
+      "fail_closed": true
+    },
+    {
+      "stable_id": "ENEMY_C01_RIFT_SWARM",
+      "slot_id": "rift_swarm_map_current",
+      "revision": "task98_preproduction_v1",
+      "view_space": "map_dimetric_40x20",
+      "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+      "resource_binding_id": "rift_swarm_map_current_p99_fixture_binding",
+      "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_rift_swarm_neutral_384x192.png",
+      "sha256": null,
+      "sha256_status": "PENDING_P99_EXACT_RECEIPT",
+      "binding_mode": "p99_exact_receipt_overlay",
+      "binding_owner": "G2_A2_C3",
+      "native_size": [
+        96,
+        96
+      ],
+      "atlas_size": [
+        384,
+        192
+      ],
+      "display_scale": [
+        1.0,
+        1.0
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "pivot_normalized": [
+        0.5,
+        0.75
+      ],
+      "pivot_px": [
+        48,
+        72
+      ],
+      "z_bias": 0,
+      "sparse_clips": {
+        "idle/north/0": [
+          0,
+          0,
+          96,
+          96
+        ],
+        "idle/east/0": [
+          96,
+          0,
+          96,
+          96
+        ],
+        "idle/south/0": [
+          192,
+          0,
+          96,
+          96
+        ],
+        "idle/west/0": [
+          288,
+          0,
+          96,
+          96
+        ],
+        "recoil/west/0": [
+          0,
+          96,
+          96,
+          96
+        ],
+        "deflected/west/0": [
+          96,
+          96,
+          96,
+          96
+        ]
+      },
+      "physical_clip_aliases_with_signature": [
+        {
+          "stable_id": "ENEMY_C01_RIFT_SWARM",
+          "slot_id": "rift_swarm_map_current",
+          "revision": "task98_preproduction_v1",
+          "alias_kind": "physical_clip_alias",
+          "alias_key": "move/west/0",
+          "source_clip_key": "idle/west/0",
+          "facing_policy": "preserve_exact",
+          "native_size": [
+            96,
+            96
+          ],
+          "pivot_px": [
+            48,
+            72
+          ],
+          "socket_contract_id": "C01E02_MAP_CAMERA_SOCKET_CONTACT_V1",
+          "resource_binding_id": "rift_swarm_map_current_p99_fixture_binding",
+          "canonical_payload_sha256": "bca4532418bd6967dce10e326f93ad050f835a8747e1f8b0568eb1362e2055f9",
+          "one_hop": true,
+          "cycle_forbidden": true
+        }
+      ],
+      "state_aliases_with_signature": [
+        {
+          "stable_id": "ENEMY_C01_RIFT_SWARM",
+          "slot_id": "rift_swarm_map_current",
+          "revision": "task98_preproduction_v1",
+          "alias_kind": "physical_clip_alias",
+          "alias_key": "move/west/0",
+          "source_clip_key": "idle/west/0",
+          "facing_policy": "preserve_exact",
+          "native_size": [
+            96,
+            96
+          ],
+          "pivot_px": [
+            48,
+            72
+          ],
+          "socket_contract_id": "C01E02_MAP_CAMERA_SOCKET_CONTACT_V1",
+          "resource_binding_id": "rift_swarm_map_current_p99_fixture_binding",
+          "canonical_payload_sha256": "bca4532418bd6967dce10e326f93ad050f835a8747e1f8b0568eb1362e2055f9",
+          "one_hop": true,
+          "cycle_forbidden": true
+        }
+      ],
+      "semantic_state_aliases": {
+        "active": "idle",
+        "anticipation": "idle",
+        "scattered_active": "idle",
+        "moving": "move",
+        "move": "move",
+        "deflected_alive": "deflected"
+      },
+      "fps_or_hold": {
+        "idle": "hold",
+        "move": "engine_route_tween_after_rect_resolution",
+        "recoil": "hold",
+        "deflected": "hold"
+      },
+      "loop": {
+        "idle": true,
+        "move": false,
+        "recoil": false,
+        "deflected": true
+      },
+      "facings": [
+        "north",
+        "east",
+        "south",
+        "west"
+      ],
+      "interaction_sockets": {
+        "body": [
+          0,
+          -28
+        ],
+        "shield": [
+          -16,
+          -24
+        ],
+        "weapon": [
+          17,
+          -27
+        ],
+        "impact": [
+          0,
+          -32
+        ],
+        "target": [
+          0,
+          -32
+        ]
+      },
+      "filter": "nearest",
+      "mipmap": false,
+      "shadow_owner": "engine_independent_ground_shadow_layer",
+      "fixture_validation_only": true,
+      "runtime_bindable": false,
+      "fail_closed": true,
+      "instance_bindings": [
+        {
+          "stable_id": "ENEMY_C01_RIFT_SWARM_01",
+          "initial_clip": "idle/west/0"
+        },
+        {
+          "stable_id": "ENEMY_C01_RIFT_SWARM_02",
+          "initial_clip": "idle/north/0"
+        },
+        {
+          "stable_id": "ENEMY_C01_RIFT_SWARM_03",
+          "initial_clip": "idle/south/0"
+        }
+      ],
+      "future_real_art_source": {
+        "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a5-rift-swarm-four-facing-atlas/A5_RIFT_SWARM_A_IDLE_96_384x96.png",
+        "sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+        "allowed_operation": "exact frame copy into current atlas after separate gate",
+        "used_by_P99_fixture": false
+      }
+    }
+  ],
+  "global_fail_closed_rules": [
+    "missing_clip",
+    "wrong_camera_contract_id",
+    "wrong_view_space",
+    "wrong_pivot",
+    "wrong_sha256",
+    "rect_out_of_bounds",
+    "alias_cycle",
+    "alias_more_than_one_hop",
+    "cross_facing_alias",
+    "signature_mismatch"
+  ],
+  "fallback_behavior": "hide_current_subject_and_emit_one_unique_reason; never previous frame, first frame, or cross-facing fallback",
+  "fixture_validation_only": true,
+  "runtime_bindable": false,
+  "real_art_loaded": 0
+}

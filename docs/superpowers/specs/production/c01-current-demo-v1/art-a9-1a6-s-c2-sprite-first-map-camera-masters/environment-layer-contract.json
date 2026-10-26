@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0.1",
+  "contract_id": "C01E02_CURRENT_TOPOLOGY_ENVIRONMENT_LAYERS_V1",
+  "status": "PREPRODUCTION_ONLY_NO_VISIBLE_TARGET_PIXELS",
+  "view_space": "map_dimetric_40x20",
+  "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+  "world_canvas": {
+    "size_px": [
+      2400,
+      1350
+    ],
+    "origin_raw_px": [
+      -1760,
+      -340
+    ],
+    "shared_pivot": [
+      0,
+      0
+    ],
+    "raw_to_canvas_formula": "canvas_xy = raw_xy - origin_raw_px"
+  },
+  "screen_guide": {
+    "size_px": [
+      1280,
+      720
+    ],
+    "camera_raw_px": [
+      -480,
+      420
+    ],
+    "crop_rect_in_world_canvas_px": [
+      640,
+      468,
+      1280,
+      584
+    ],
+    "role": "framing_and_geometry_guide_only_not_delivery_substitute"
+  },
+  "visible_z_constants": {
+    "base_ground": -1200,
+    "buildings_world_body": -900,
+    "roof": 900,
+    "foreground": 1100
+  },
+  "layer_responsibilities": [
+    {
+      "group": "base_ground",
+      "visible": true,
+      "visible_z": -1200,
+      "required_separable": true,
+      "contents": [
+        "ground_base",
+        "road_and_rescue_lane_material"
+      ],
+      "actor_free_initially": true
+    },
+    {
+      "group": "buildings_world_body",
+      "visible": true,
+      "visible_z": -900,
+      "required_separable": true,
+      "contents": [
+        "building_world_body"
+      ],
+      "actor_free_initially": true
+    },
+    {
+      "group": "stateful_objects",
+      "visible": true,
+      "visible_z": null,
+      "required_separable": true,
+      "contents": [
+        "retired_shield",
+        "east_exit",
+        "security_gate_or_facility"
+      ],
+      "depth_sort_policy": "footprint_bottom_center_screen_y_plus_explicit_z_bias",
+      "fixed_front_overlay_forbidden": true,
+      "split_when_needed": [
+        "body",
+        "roof",
+        "foreground"
+      ],
+      "split_policy": "body joins actor depth sort; roof and foreground pieces use local ownership/mask semantics and may not force every object in front of every actor",
+      "actor_free_initially": true,
+      "session_or_resolver_owned": true
+    },
+    {
+      "group": "roof",
+      "visible": true,
+      "visible_z": 900,
+      "required_separable": true,
+      "contents": [
+        "roof"
+      ],
+      "local_mask_only": true,
+      "global_fade_forbidden": true
+    },
+    {
+      "group": "foreground",
+      "visible": true,
+      "visible_z": 1100,
+      "required_separable": true,
+      "contents": [
+        "foreground_parapet"
+      ],
+      "local_mask_only": true,
+      "global_fade_forbidden": true
+    },
+    {
+      "group": "occlusion_control",
+      "visible": false,
+      "visible_z": null,
+      "required_separable": true,
+      "contents": [
+        "local_occlusion_control"
+      ],
+      "occupies_visible_z": false,
+      "actor_free_mask": "fully_empty"
+    },
+    {
+      "group": "weather_fx",
+      "visible": true,
+      "visible_z": null,
+      "required_separable": true,
+      "contents": [
+        "rain",
+        "wetness_response",
+        "contact_weather_fx"
+      ],
+      "visible_z_policy": "independent_effect_owner_not_static_environment_or_actor_sort",
+      "must_not_bake_into_cleanplate": true
+    },
+    {
+      "group": "stateful_nonphysical_overlays",
+      "visible": true,
+      "visible_z": null,
+      "required_separable": true,
+      "contents": [
+        "protection_zone_overlay",
+        "route",
+        "ghost",
+        "intent_trajectory"
+      ],
+      "owner": "deterministic_overlay_or_UI_consumer",
+      "must_not_bake_into_cleanplate": true,
+      "actor_free_initially": true
+    }
+  ],
+  "current_topology_source": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/golden_slice_profile.json",
+    "sha256": "61b49e5328e702cd654d28ff39c5c380ba0ae3e78753330635036d33f689523c",
+    "ordered_zone_override": "later terrain_zones entry wins"
+  },
+  "actor_free_guide_exclusions": [
+    "all actors",
+    "vehicle",
+    "three swarms",
+    "shield",
+    "east exit",
+    "security facility",
+    "protection overlay",
+    "artillery",
+    "route",
+    "ghost",
+    "UI",
+    "T3-T5 FX"
+  ],
+  "shadow_owner": "engine_independent_ground_shadow_layer",
+  "screen_cleanplate_may_replace_world_canvas": false,
+  "legacy_A4_pixels_are_current_geometry": false
+}

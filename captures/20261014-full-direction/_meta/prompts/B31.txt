@@ -1,0 +1,21 @@
+STYLE LOCK = Astra KINETIC_CEL (must match references):
+- Hard-edge cel color blocks, pressure ink outlines, max two hard shadow tiers
+- Super Robot Wars / 超级系 readable silhouette; half-Q STANDARD readability
+- Gongwu industrial palette: steel teal / concrete beige / warning vermilion
+- NOT photoreal, NOT AAA PBR, NOT wasteland photo rust, NOT alien biotech, NOT ITB grayboard
+- Direction concept sheet: one clear hero view + small state callouts if needed; NOT full turnaround PSD
+Reference images (match stroke weight, cel blocking, palette):
+- style-lock/01-kinetic-cel-storyframe-v23a.png
+- style-lock/11-tactics-user-accepted.png
+- style-lock/02-mech-hero.jpg
+
+Building-specific:
+- Cel industrial architecture (flat steel/concrete/vermilion panels), NOT PBR rust photos
+- Also match incoming/dir-B01-refuge-v2-locked.jpg for city material language
+
+ASSET ID B31 | key=signal | template=building
+NAME: 轨旁信号与站台设施
+PURPOSE: 行车方向和可用路线
+DESIGN BRIEF: 独立信号灯/道岔指示/站台边缘；不能与敌方攻击红色闪烁争夺注意
+STATES to imply on sheet: 停止, 放行, 故障
+Output: single art-direction concept painting, clean readable silhouette, labeled states as small insets OK, no fake UI text walls, no photoreal materials.

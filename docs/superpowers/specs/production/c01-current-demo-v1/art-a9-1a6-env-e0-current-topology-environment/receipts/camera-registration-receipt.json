@@ -1,0 +1,176 @@
+{
+  "contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+  "grid_size": [
+    32,
+    18
+  ],
+  "tile_half_px": [
+    40.0,
+    20.0
+  ],
+  "raw_origin_px": [
+    -880.0,
+    -170.0
+  ],
+  "world_canvas_size_px": [
+    2400,
+    1350
+  ],
+  "world_canvas_origin_raw_px": [
+    -1760.0,
+    -340.0
+  ],
+  "integer_grid_coordinate_semantics": "cell_center",
+  "rect_boundary_formula": "(x-.5,y-.5),(x+w-.5,y-.5),(x+w-.5,y+h-.5),(x-.5,y+h-.5)",
+  "task98_visible_guide_pixel_reuse": false,
+  "task98_guide_known_shift_px": [
+    0,
+    20
+  ],
+  "map_viewport_rect": [
+    0,
+    58,
+    1280,
+    584
+  ],
+  "cleanplate_padding": {
+    "top_px": 58,
+    "bottom_px": 78,
+    "left_px": 0,
+    "right_px": 0,
+    "alpha": 0
+  },
+  "cameras": [
+    {
+      "camera_id": "NO_FOCUS",
+      "camera_center_raw_px": [
+        -720.0,
+        350.0
+      ],
+      "map_crop_world_canvas_px": [
+        400,
+        398,
+        1280,
+        584
+      ],
+      "map_crop_half_open_xyxy": [
+        400,
+        398,
+        1680,
+        982
+      ],
+      "layer_top_left_screen_px": [
+        -400,
+        -340
+      ],
+      "destination_rect_screen_px": [
+        0,
+        58,
+        1280,
+        584
+      ],
+      "padding_policy": "transparent_top_58_bottom_78_no_environment_extrapolation",
+      "cleanplate_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-e0-current-topology-environment/cleanplates/NO_FOCUS_CLEANPLATE_1280x720.png",
+      "cleanplate_sha256": "7fe467e7bbeaae18317a6a1fe87876d47805d51c46f7ebd4ebe0750643e385fd"
+    },
+    {
+      "camera_id": "PLAN",
+      "camera_center_raw_px": [
+        -480.0,
+        420.0
+      ],
+      "map_crop_world_canvas_px": [
+        640,
+        468,
+        1280,
+        584
+      ],
+      "map_crop_half_open_xyxy": [
+        640,
+        468,
+        1920,
+        1052
+      ],
+      "layer_top_left_screen_px": [
+        -640,
+        -410
+      ],
+      "destination_rect_screen_px": [
+        0,
+        58,
+        1280,
+        584
+      ],
+      "padding_policy": "transparent_top_58_bottom_78_no_environment_extrapolation",
+      "cleanplate_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-e0-current-topology-environment/cleanplates/PLAN_CLEANPLATE_1280x720.png",
+      "cleanplate_sha256": "e5c04dc37ff6bbb5a9932e5e1886a65a26b5cade2d5b222cc71a5727fc338f68"
+    },
+    {
+      "camera_id": "CONTACT_A",
+      "camera_center_raw_px": [
+        -480.0,
+        450.0
+      ],
+      "map_crop_world_canvas_px": [
+        640,
+        498,
+        1280,
+        584
+      ],
+      "map_crop_half_open_xyxy": [
+        640,
+        498,
+        1920,
+        1082
+      ],
+      "layer_top_left_screen_px": [
+        -640,
+        -440
+      ],
+      "destination_rect_screen_px": [
+        0,
+        58,
+        1280,
+        584
+      ],
+      "padding_policy": "transparent_top_58_bottom_78_no_environment_extrapolation",
+      "cleanplate_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-e0-current-topology-environment/cleanplates/CONTACT_A_CLEANPLATE_1280x720.png",
+      "cleanplate_sha256": "7d06ed630980d7c76f519ec301c06af108c84bf5a9d936195ff38a107aaf0391"
+    },
+    {
+      "camera_id": "CONTACT_B",
+      "camera_center_raw_px": [
+        -500.0,
+        440.0
+      ],
+      "map_crop_world_canvas_px": [
+        620,
+        488,
+        1280,
+        584
+      ],
+      "map_crop_half_open_xyxy": [
+        620,
+        488,
+        1900,
+        1072
+      ],
+      "layer_top_left_screen_px": [
+        -620,
+        -430
+      ],
+      "destination_rect_screen_px": [
+        0,
+        58,
+        1280,
+        584
+      ],
+      "padding_policy": "transparent_top_58_bottom_78_no_environment_extrapolation",
+      "cleanplate_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-e0-current-topology-environment/cleanplates/CONTACT_B_CLEANPLATE_1280x720.png",
+      "cleanplate_sha256": "7c53cad72a5d8a4eaf51e7db39f6bce6197e55acf74cdf5ab42bba595a9b7916"
+    }
+  ],
+  "max_control_point_error_px": 0.0,
+  "control_point_threshold_px": 0.5,
+  "pass": true
+}

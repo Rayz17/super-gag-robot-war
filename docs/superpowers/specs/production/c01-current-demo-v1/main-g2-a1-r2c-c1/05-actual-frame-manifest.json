@@ -1,0 +1,2781 @@
+{
+  "acceptance_gate": "WAITING_PRODUCER_REACCEPTANCE",
+  "canon_modified": false,
+  "capture_count": 2,
+  "captures": [
+    {
+      "actual_runtime_frame": true,
+      "camera": {
+        "center": [
+          -720.0,
+          350.0
+        ],
+        "cursor": [
+          15,
+          11
+        ],
+        "edge_threshold": 92.0,
+        "edge_trigger_rect": [
+          -1268.0,
+          150.0,
+          1096.0,
+          400.0
+        ],
+        "last_focus_crossed_edge": false,
+        "map_is_larger_than_view": true,
+        "performance_focus_cell": [
+          20,
+          10
+        ],
+        "performance_shake": [
+          0.0,
+          0.0
+        ],
+        "performance_zoom": 1.03723958333333,
+        "projection_id": "A4_ISOMETRIC_40X20",
+        "safe_ratio": 0.6,
+        "target": [
+          -720.0,
+          350.0
+        ],
+        "tile_half": [
+          40.0,
+          20.0
+        ],
+        "viewport_rect": [
+          0.0,
+          58.0,
+          1280.0,
+          584.0
+        ],
+        "world_bounds": [
+          -1650.0,
+          -260.0,
+          2100.0,
+          1140.0
+        ],
+        "world_origin": [
+          -880.0,
+          -170.0
+        ]
+      },
+      "canon_modified": false,
+      "capture_id": "A_T2_SWARM_DEFLECT",
+      "capture_method": "Godot root viewport get_texture().get_image() during natural Session/Resolver/PerformanceDirector sequence; no offline composite or static state injection",
+      "continuous_sequence_frame": true,
+      "default_entry_changed": false,
+      "event_id": "GS-R1-E2-SWARM",
+      "evidence_class": "g2_a1_r2c_c1_actual_godot_root_viewport_continuous_sequence",
+      "filename": "C01E02_G2A1_R2C_C1_A_T2_SWARM_DEFLECT_ACTUAL_1280x720.png",
+      "g2_b_allowed": false,
+      "ground_rectangles": {
+        "breaker_rendered": {
+          "anchor": [
+            20,
+            13
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "half_open": {
+            "x": [
+              20,
+              23
+            ],
+            "y": [
+              13,
+              16
+            ]
+          }
+        },
+        "guardian": {
+          "anchor": [
+            20,
+            9
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "half_open": {
+            "x": [
+              20,
+              22
+            ],
+            "y": [
+              9,
+              11
+            ]
+          }
+        },
+        "primary_swarm": {
+          "anchor": [
+            22,
+            9
+          ],
+          "footprint": [
+            1,
+            1
+          ],
+          "half_open": {
+            "x": [
+              22,
+              23
+            ],
+            "y": [
+              9,
+              10
+            ]
+          }
+        }
+      },
+      "overlay": {
+        "display_only_alias": false,
+        "mode": "r2c_c1_ground_occupancy_readback",
+        "swarm_anchor_source": "rendered actor cell derived from resolver world and T2 track"
+      },
+      "performance": {
+        "actors": {
+          "ENEMY_C01_BREAKER": {
+            "animation": "idle",
+            "cell": [
+              20.0,
+              13.0
+            ],
+            "facing": "north",
+            "footpoint_screen": [
+              579.062194824219,
+              537.13525390625
+            ],
+            "footprint": [
+              3,
+              3
+            ],
+            "screen_position": [
+              579.062194824219,
+              537.13525390625
+            ],
+            "state": "charging_run",
+            "z_sort_key": 537
+          },
+          "ENEMY_C01_RIFT_SWARM_01": {
+            "animation": "aftermath",
+            "cell": [
+              22.0,
+              9.0
+            ],
+            "facing": "west",
+            "footpoint_screen": [
+              827.999633789062,
+              412.666534423828
+            ],
+            "footprint": [
+              1,
+              1
+            ],
+            "screen_position": [
+              827.999633789062,
+              412.666534423828
+            ],
+            "state": "deflected_alive",
+            "z_sort_key": 413
+          },
+          "ENEMY_C01_RIFT_SWARM_02": {
+            "animation": "idle",
+            "cell": [
+              26.0,
+              12.0
+            ],
+            "facing": "north",
+            "footpoint_screen": [
+              869.4892578125,
+              557.880065917969
+            ],
+            "footprint": [
+              1,
+              1
+            ],
+            "screen_position": [
+              869.4892578125,
+              557.880065917969
+            ],
+            "state": "active",
+            "z_sort_key": 558
+          },
+          "ENEMY_C01_RIFT_SWARM_03": {
+            "animation": "idle",
+            "cell": [
+              29.0,
+              5.0
+            ],
+            "facing": "south",
+            "footpoint_screen": [
+              1284.38500976562,
+              474.900909423828
+            ],
+            "footprint": [
+              1,
+              1
+            ],
+            "screen_position": [
+              1284.38500976562,
+              474.900909423828
+            ],
+            "state": "active",
+            "z_sort_key": 475
+          },
+          "TARGET_C01_EAST_EXIT": {
+            "animation": "idle",
+            "cell": [
+              31.0,
+              7.0
+            ],
+            "facing": "east",
+            "footpoint_screen": [
+              1284.38500976562,
+              557.880065917969
+            ],
+            "footprint": [
+              1,
+              1
+            ],
+            "screen_position": [
+              1284.38500976562,
+              557.880065917969
+            ],
+            "state": "active",
+            "z_sort_key": 558
+          },
+          "TARGET_C01_EMERGENCY_VEHICLE_01": {
+            "animation": "idle",
+            "cell": [
+              24.0,
+              9.0
+            ],
+            "facing": "east",
+            "footpoint_screen": [
+              910.978820800781,
+              454.156127929688
+            ],
+            "footprint": [
+              1,
+              1
+            ],
+            "screen_position": [
+              910.978820800781,
+              454.156127929688
+            ],
+            "state": "passed_lane_still_active",
+            "z_sort_key": 454
+          },
+          "TARGET_C01_FINAL_VEHICLE": {
+            "animation": "idle",
+            "cell": [
+              13.0,
+              9.0
+            ],
+            "facing": "east",
+            "footpoint_screen": [
+              454.593444824219,
+              225.963424682617
+            ],
+            "footprint": [
+              1,
+              1
+            ],
+            "screen_position": [
+              454.593444824219,
+              225.963424682617
+            ],
+            "state": "waiting",
+            "z_sort_key": 226
+          },
+          "TARGET_C01_SECURITY_GATE": {
+            "animation": "idle",
+            "cell": [
+              27.0,
+              8.0
+            ],
+            "facing": "south",
+            "footpoint_screen": [
+              1076.93713378906,
+              495.645690917969
+            ],
+            "footprint": [
+              1,
+              1
+            ],
+            "screen_position": [
+              1076.93713378906,
+              495.645690917969
+            ],
+            "state": "active",
+            "z_sort_key": 496
+          },
+          "V353U001": {
+            "animation": "aftermath",
+            "cell": [
+              20.0,
+              9.0
+            ],
+            "facing": "south",
+            "footpoint_screen": [
+              745.0205078125,
+              412.666534423828
+            ],
+            "footprint": [
+              2,
+              2
+            ],
+            "screen_position": [
+              745.0205078125,
+              412.666534423828
+            ],
+            "state": "holding_first_contact",
+            "z_sort_key": 413
+          }
+        },
+        "camera": {
+          "center": [
+            -720.0,
+            350.0
+          ],
+          "cursor": [
+            15,
+            11
+          ],
+          "edge_threshold": 92.0,
+          "edge_trigger_rect": [
+            -1268.0,
+            150.0,
+            1096.0,
+            400.0
+          ],
+          "last_focus_crossed_edge": false,
+          "map_is_larger_than_view": true,
+          "performance_focus_cell": [
+            20,
+            10
+          ],
+          "performance_shake": [
+            0.0,
+            0.0
+          ],
+          "performance_zoom": 1.03723958333333,
+          "projection_id": "A4_ISOMETRIC_40X20",
+          "safe_ratio": 0.6,
+          "target": [
+            -720.0,
+            350.0
+          ],
+          "tile_half": [
+            40.0,
+            20.0
+          ],
+          "viewport_rect": [
+            0.0,
+            58.0,
+            1280.0,
+            584.0
+          ],
+          "world_bounds": [
+            -1650.0,
+            -260.0,
+            2100.0,
+            1140.0
+          ],
+          "world_origin": [
+            -880.0,
+            -170.0
+          ]
+        },
+        "contact_geometry": {},
+        "event_id": "GS-R1-E2-SWARM",
+        "flash_alpha": 0.0,
+        "hit_stop_active": false,
+        "layer_registration": {
+          "canvas_offset_from_projection_origin_px": [
+            -800,
+            -180
+          ],
+          "canvas_origin_raw_px": [
+            -1680,
+            -350
+          ],
+          "canvas_size": [
+            2400,
+            1350
+          ],
+          "layer_count": 6,
+          "layers": {
+            "VS_MAP_BASE": {
+              "canvas_origin_raw_px": [],
+              "canvas_size": [],
+              "crop_rect_px": [
+                -1158.27233886719,
+                128.06689453125,
+                1234.04467773438,
+                563.032897949219
+              ],
+              "layer": "base",
+              "mask_semantics": "",
+              "native_size": [
+                32,
+                32
+              ],
+              "screen_scale": [
+                1.03723958333333,
+                1.03723958333333
+              ],
+              "screen_top_left": [
+                579.062194824219,
+                225.963424682617
+              ],
+              "visible": true,
+              "z": -120
+            },
+            "VS_MAP_BUILDINGS": {
+              "canvas_origin_raw_px": [],
+              "canvas_size": [],
+              "crop_rect_px": [
+                -1158.27233886719,
+                128.06689453125,
+                1234.04467773438,
+                563.032897949219
+              ],
+              "layer": "buildings",
+              "mask_semantics": "",
+              "native_size": [
+                32,
+                32
+              ],
+              "screen_scale": [
+                1.03723958333333,
+                1.03723958333333
+              ],
+              "screen_top_left": [
+                579.062194824219,
+                225.963424682617
+              ],
+              "visible": true,
+              "z": -80
+            },
+            "VS_MAP_FOREGROUND": {
+              "canvas_origin_raw_px": [],
+              "canvas_size": [],
+              "crop_rect_px": [
+                -1158.27233886719,
+                128.06689453125,
+                1234.04467773438,
+                563.032897949219
+              ],
+              "layer": "foreground",
+              "mask_semantics": "",
+              "native_size": [
+                32,
+                32
+              ],
+              "screen_scale": [
+                1.03723958333333,
+                1.03723958333333
+              ],
+              "screen_top_left": [
+                579.062194824219,
+                225.963424682617
+              ],
+              "visible": true,
+              "z": 90
+            },
+            "VS_MAP_LIGHTING": {
+              "canvas_origin_raw_px": [],
+              "canvas_size": [],
+              "crop_rect_px": [
+                -1158.27233886719,
+                128.06689453125,
+                1234.04467773438,
+                563.032897949219
+              ],
+              "layer": "lighting",
+              "mask_semantics": "",
+              "native_size": [
+                32,
+                32
+              ],
+              "screen_scale": [
+                1.03723958333333,
+                1.03723958333333
+              ],
+              "screen_top_left": [
+                579.062194824219,
+                225.963424682617
+              ],
+              "visible": true,
+              "z": 100
+            },
+            "VS_MAP_OCCLUSION": {
+              "canvas_origin_raw_px": [],
+              "canvas_size": [],
+              "crop_rect_px": [
+                -1158.27233886719,
+                128.06689453125,
+                1234.04467773438,
+                563.032897949219
+              ],
+              "layer": "occlusion",
+              "mask_semantics": "",
+              "native_size": [
+                32,
+                32
+              ],
+              "screen_scale": [
+                1.03723958333333,
+                1.03723958333333
+              ],
+              "screen_top_left": [
+                579.062194824219,
+                225.963424682617
+              ],
+              "visible": false,
+              "z": 95
+            },
+            "VS_MAP_ROOFS": {
+              "canvas_origin_raw_px": [],
+              "canvas_size": [],
+              "crop_rect_px": [
+                -1158.27233886719,
+                128.06689453125,
+                1234.04467773438,
+                563.032897949219
+              ],
+              "layer": "roofs",
+              "mask_semantics": "",
+              "native_size": [
+                32,
+                32
+              ],
+              "screen_scale": [
+                1.03723958333333,
+                1.03723958333333
+              ],
+              "screen_top_left": [
+                579.062194824219,
+                225.963424682617
+              ],
+              "visible": true,
+              "z": 40
+            }
+          },
+          "occlusion_policy": "fade_50_percent_plus_outline_candidate",
+          "projection_origin_raw_px": [
+            -880.0,
+            -170.0
+          ],
+          "viewport_rect": [
+            0.0,
+            58.0,
+            1280.0,
+            584.0
+          ],
+          "zoom": 1.03723958333333
+        },
+        "occlusion_candidate": {
+          "footpoint_raw_px": [
+            0.0,
+            0.0
+          ],
+          "mask_alpha": 0.0,
+          "mask_sampled": true,
+          "outline_required": false,
+          "overhead_faded": false,
+          "policy": "fade_50_percent_plus_outline_candidate",
+          "subject_id": ""
+        },
+        "performance_history": [
+          {
+            "event_id": "GS-R1-E1-VEHICLE",
+            "phase": "anticipation",
+            "signature": "GS-R1-E1-VEHICLE:anticipation",
+            "timeslice": "T1"
+          },
+          {
+            "event_id": "GS-R1-E1-VEHICLE",
+            "phase": "motion",
+            "signature": "GS-R1-E1-VEHICLE:motion",
+            "timeslice": "T1"
+          },
+          {
+            "event_id": "GS-R1-E1-VEHICLE",
+            "phase": "directional_shake_flash",
+            "signature": "GS-R1-E1-VEHICLE:directional_shake_flash",
+            "timeslice": "T1"
+          },
+          {
+            "event_id": "GS-R1-E1-VEHICLE",
+            "phase": "recoil",
+            "signature": "GS-R1-E1-VEHICLE:recoil",
+            "timeslice": "T1"
+          },
+          {
+            "event_id": "GS-R1-E1-VEHICLE",
+            "phase": "environment_aftermath",
+            "signature": "GS-R1-E1-VEHICLE:environment_aftermath",
+            "timeslice": "T1"
+          },
+          {
+            "event_id": "GS-R1-E2-SWARM",
+            "phase": "anticipation",
+            "signature": "GS-R1-E2-SWARM:anticipation",
+            "timeslice": "T2"
+          },
+          {
+            "event_id": "GS-R1-E2-SWARM",
+            "phase": "motion",
+            "signature": "GS-R1-E2-SWARM:motion",
+            "timeslice": "T2"
+          },
+          {
+            "event_id": "GS-R1-E2-SWARM",
+            "phase": "contact_hit_stop",
+            "signature": "GS-R1-E2-SWARM:contact_hit_stop",
+            "timeslice": "T2"
+          },
+          {
+            "event_id": "GS-R1-E2-SWARM",
+            "phase": "directional_shake_flash",
+            "signature": "GS-R1-E2-SWARM:directional_shake_flash",
+            "timeslice": "T2"
+          },
+          {
+            "event_id": "GS-R1-E2-SWARM",
+            "phase": "recoil",
+            "signature": "GS-R1-E2-SWARM:recoil",
+            "timeslice": "T2"
+          },
+          {
+            "event_id": "GS-R1-E2-SWARM",
+            "phase": "environment_aftermath",
+            "signature": "GS-R1-E2-SWARM:environment_aftermath",
+            "timeslice": "T2"
+          }
+        ],
+        "phase": "environment_aftermath",
+        "semantic_binding_count": 15,
+        "semantic_consumers": {
+          "VS_BREAKER_QSD": [
+            {
+              "atlas_region": [
+                96.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [
+                1.0,
+                1.0
+              ],
+              "footpoint_screen": [
+                579.062194824219,
+                537.13525390625
+              ],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [
+                0.5,
+                0.819999992847443
+              ],
+              "pivot_px": [
+                24.0,
+                39.3600006103516
+              ],
+              "selected_clip_key": "",
+              "selected_facing": "north",
+              "selected_frame": 2,
+              "selected_state": "charge",
+              "state_alias_signature": "",
+              "subject_id": "ENEMY_C01_BREAKER",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 537
+            }
+          ],
+          "VS_FX_CONTACT_FLASH": [
+            {
+              "atlas_region": [
+                96.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 0.349999994039536,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "default",
+              "selected_frame": 2,
+              "selected_state": "flash",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "AtlasTexture",
+              "visible": false,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_FX_RED_IMPACT": [
+            {
+              "atlas_region": [
+                96.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 0.349999994039536,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "default",
+              "selected_frame": 2,
+              "selected_state": "impact",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "AtlasTexture",
+              "visible": false,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_FX_ROAD_DEBRIS": [
+            {
+              "atlas_region": [
+                96.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 0.349999994039536,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "default",
+              "selected_frame": 2,
+              "selected_state": "debris",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "AtlasTexture",
+              "visible": false,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_FX_SHIELD_BASH": [
+            {
+              "atlas_region": [
+                96.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 0.349999994039536,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "default",
+              "selected_frame": 2,
+              "selected_state": "impact",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "AtlasTexture",
+              "visible": false,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_GUARDIAN_QSD": [
+            {
+              "atlas_region": [
+                96.0,
+                96.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [
+                1.0,
+                1.0
+              ],
+              "footpoint_screen": [
+                745.0205078125,
+                412.666534423828
+              ],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [
+                0.5,
+                0.879999995231628
+              ],
+              "pivot_px": [
+                24.0,
+                42.2399978637695
+              ],
+              "selected_clip_key": "",
+              "selected_facing": "south",
+              "selected_frame": 2,
+              "selected_state": "idle",
+              "state_alias_signature": "",
+              "subject_id": "V353U001",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 413
+            }
+          ],
+          "VS_MAP_BASE": [
+            {
+              "atlas_region": [],
+              "clip_contract": "",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "",
+              "selected_frame": -1,
+              "selected_state": "",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "ImageTexture",
+              "visible": true,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_MAP_BUILDINGS": [
+            {
+              "atlas_region": [],
+              "clip_contract": "",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "",
+              "selected_frame": -1,
+              "selected_state": "",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "ImageTexture",
+              "visible": true,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_MAP_FOREGROUND": [
+            {
+              "atlas_region": [],
+              "clip_contract": "",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "",
+              "selected_frame": -1,
+              "selected_state": "",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "ImageTexture",
+              "visible": true,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_MAP_LIGHTING": [
+            {
+              "atlas_region": [],
+              "clip_contract": "",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "",
+              "selected_frame": -1,
+              "selected_state": "",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "ImageTexture",
+              "visible": true,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_MAP_OCCLUSION": [
+            {
+              "atlas_region": [],
+              "clip_contract": "",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "",
+              "selected_frame": -1,
+              "selected_state": "",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "ImageTexture",
+              "visible": false,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_MAP_ROOFS": [
+            {
+              "atlas_region": [],
+              "clip_contract": "",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "",
+              "selected_frame": -1,
+              "selected_state": "",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "ImageTexture",
+              "visible": true,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_SHIELD_STATES": [
+            {
+              "atlas_region": [
+                96.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [
+                1.0,
+                1.0
+              ],
+              "footpoint_screen": [
+                454.593444824219,
+                267.453002929688
+              ],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [
+                0.5,
+                0.850000023841858
+              ],
+              "pivot_px": [
+                24.0,
+                40.8000030517578
+              ],
+              "selected_clip_key": "",
+              "selected_facing": "south",
+              "selected_frame": 2,
+              "selected_state": "wall_hung_3_scorches",
+              "state_alias_signature": "",
+              "subject_id": "PROP_C01CDV1_RETIRED_SHIELD",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 267
+            }
+          ],
+          "VS_SWARM_QSD": [
+            {
+              "atlas_region": [
+                96.0,
+                144.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [
+                1.0,
+                1.0
+              ],
+              "footpoint_screen": [
+                827.999633789062,
+                412.666534423828
+              ],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [
+                0.5,
+                0.75
+              ],
+              "pivot_px": [
+                24.0,
+                36.0
+              ],
+              "selected_clip_key": "",
+              "selected_facing": "west",
+              "selected_frame": 2,
+              "selected_state": "idle",
+              "state_alias_signature": "",
+              "subject_id": "ENEMY_C01_RIFT_SWARM_01",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 413
+            },
+            {
+              "atlas_region": [
+                96.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [
+                1.0,
+                1.0
+              ],
+              "footpoint_screen": [
+                869.4892578125,
+                557.880065917969
+              ],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [
+                0.5,
+                0.75
+              ],
+              "pivot_px": [
+                24.0,
+                36.0
+              ],
+              "selected_clip_key": "",
+              "selected_facing": "north",
+              "selected_frame": 2,
+              "selected_state": "idle",
+              "state_alias_signature": "",
+              "subject_id": "ENEMY_C01_RIFT_SWARM_02",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 558
+            },
+            {
+              "atlas_region": [
+                96.0,
+                96.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [
+                1.0,
+                1.0
+              ],
+              "footpoint_screen": [
+                1284.38500976562,
+                474.900909423828
+              ],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [
+                0.5,
+                0.75
+              ],
+              "pivot_px": [
+                24.0,
+                36.0
+              ],
+              "selected_clip_key": "",
+              "selected_facing": "south",
+              "selected_frame": 2,
+              "selected_state": "idle",
+              "state_alias_signature": "",
+              "subject_id": "ENEMY_C01_RIFT_SWARM_03",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 475
+            }
+          ],
+          "VS_VEHICLE_EAST": [
+            {
+              "atlas_region": [
+                96.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [
+                1.0,
+                1.0
+              ],
+              "footpoint_screen": [
+                910.978820800781,
+                454.156127929688
+              ],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [
+                0.5,
+                0.720000028610229
+              ],
+              "pivot_px": [
+                24.0,
+                34.560001373291
+              ],
+              "selected_clip_key": "",
+              "selected_facing": "east",
+              "selected_frame": 2,
+              "selected_state": "waiting",
+              "state_alias_signature": "",
+              "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 454
+            },
+            {
+              "atlas_region": [
+                96.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [
+                1.0,
+                1.0
+              ],
+              "footpoint_screen": [
+                454.593444824219,
+                225.963424682617
+              ],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [
+                0.5,
+                0.720000028610229
+              ],
+              "pivot_px": [
+                24.0,
+                34.560001373291
+              ],
+              "selected_clip_key": "",
+              "selected_facing": "east",
+              "selected_frame": 2,
+              "selected_state": "waiting",
+              "state_alias_signature": "",
+              "subject_id": "TARGET_C01_FINAL_VEHICLE",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 226
+            }
+          ]
+        },
+        "timeslice": "T2",
+        "visible_fx": [
+          "ContactFlash"
+        ]
+      },
+      "phase": "environment_aftermath",
+      "pixel_sample": {
+        "center": "101722ff",
+        "sampled_opaque_pixels": 1032,
+        "sampled_unique_colors": 76
+      },
+      "png_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a1-r2c-c1/captures/C01E02_G2A1_R2C_C1_A_T2_SWARM_DEFLECT_ACTUAL_1280x720.png",
+      "png_sha256": "7a04670b113e0db25be2eb91582013ac34ab5ddffa8d9803b3b7ef0da522287c",
+      "proxy_only": true,
+      "real_art_loaded": 0,
+      "runtime_promotion": false,
+      "save_enabled": false,
+      "sequence_time_ms": 1920.0,
+      "source_chain": {
+        "entity_anchor": [
+          22,
+          9
+        ],
+        "overlay_anchor": [
+          22.0,
+          9.0
+        ],
+        "rendered_actor_cell": [
+          22.0,
+          9.0
+        ],
+        "resolver_world_anchor": [
+          22,
+          9
+        ],
+        "t2_performance_final_cell": [
+          22,
+          9
+        ]
+      },
+      "source_chain_single_truth": true,
+      "static_injection": false,
+      "subjects": {
+        "ENEMY_C01_BREAKER": {
+          "animation": "idle",
+          "cell": [
+            20.0,
+            13.0
+          ],
+          "facing": "north",
+          "footpoint_screen": [
+            579.062194824219,
+            537.13525390625
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "screen_position": [
+            579.062194824219,
+            537.13525390625
+          ],
+          "state": "charging_run",
+          "z_sort_key": 537
+        },
+        "ENEMY_C01_RIFT_SWARM_01": {
+          "animation": "aftermath",
+          "cell": [
+            22.0,
+            9.0
+          ],
+          "facing": "west",
+          "footpoint_screen": [
+            827.999633789062,
+            412.666534423828
+          ],
+          "footprint": [
+            1,
+            1
+          ],
+          "screen_position": [
+            827.999633789062,
+            412.666534423828
+          ],
+          "state": "deflected_alive",
+          "z_sort_key": 413
+        },
+        "V353U001": {
+          "animation": "aftermath",
+          "cell": [
+            20.0,
+            9.0
+          ],
+          "facing": "south",
+          "footpoint_screen": [
+            745.0205078125,
+            412.666534423828
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "screen_position": [
+            745.0205078125,
+            412.666534423828
+          ],
+          "state": "holding_first_contact",
+          "z_sort_key": 413
+        }
+      },
+      "timeslice": "T2",
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "actual_runtime_frame": true,
+      "camera": {
+        "center": [
+          -720.0,
+          350.0
+        ],
+        "cursor": [
+          15,
+          11
+        ],
+        "edge_threshold": 92.0,
+        "edge_trigger_rect": [
+          -1268.0,
+          150.0,
+          1096.0,
+          400.0
+        ],
+        "last_focus_crossed_edge": false,
+        "map_is_larger_than_view": true,
+        "performance_focus_cell": [
+          20.5,
+          10.5
+        ],
+        "performance_shake": [
+          0.0,
+          0.0
+        ],
+        "performance_zoom": 1.08,
+        "projection_id": "A4_ISOMETRIC_40X20",
+        "safe_ratio": 0.6,
+        "target": [
+          -720.0,
+          350.0
+        ],
+        "tile_half": [
+          40.0,
+          20.0
+        ],
+        "viewport_rect": [
+          0.0,
+          58.0,
+          1280.0,
+          584.0
+        ],
+        "world_bounds": [
+          -1650.0,
+          -260.0,
+          2100.0,
+          1140.0
+        ],
+        "world_origin": [
+          -880.0,
+          -170.0
+        ]
+      },
+      "canon_modified": false,
+      "capture_id": "A_T3_CONTACT",
+      "capture_method": "Godot root viewport get_texture().get_image() during natural Session/Resolver/PerformanceDirector sequence; no offline composite or static state injection",
+      "continuous_sequence_frame": true,
+      "default_entry_changed": false,
+      "event_id": "GS-R1-E3-CONTACT",
+      "evidence_class": "g2_a1_r2c_c1_actual_godot_root_viewport_continuous_sequence",
+      "filename": "C01E02_G2A1_R2C_C1_A_T3_CONTACT_ACTUAL_1280x720.png",
+      "g2_b_allowed": false,
+      "ground_rectangles": {
+        "breaker_contact_contract": {
+          "anchor": [
+            20,
+            11
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "half_open": {
+            "x": [
+              20,
+              23
+            ],
+            "y": [
+              11,
+              14
+            ]
+          }
+        },
+        "breaker_rendered": {
+          "anchor": [
+            20,
+            11
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "half_open": {
+            "x": [
+              20,
+              23
+            ],
+            "y": [
+              11,
+              14
+            ]
+          }
+        },
+        "guardian": {
+          "anchor": [
+            20,
+            9
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "half_open": {
+            "x": [
+              20,
+              22
+            ],
+            "y": [
+              9,
+              11
+            ]
+          }
+        },
+        "primary_swarm": {
+          "anchor": [
+            22,
+            9
+          ],
+          "footprint": [
+            1,
+            1
+          ],
+          "half_open": {
+            "x": [
+              22,
+              23
+            ],
+            "y": [
+              9,
+              10
+            ]
+          }
+        }
+      },
+      "overlay": {
+        "display_only_alias": false,
+        "mode": "r2c_c1_ground_occupancy_readback",
+        "swarm_anchor_source": "rendered actor cell derived from resolver world and T2 track"
+      },
+      "performance": {
+        "actors": {
+          "ENEMY_C01_BREAKER": {
+            "animation": "impact",
+            "cell": [
+              20.0,
+              11.0
+            ],
+            "facing": "north",
+            "footpoint_screen": [
+              596.799987792969,
+              458.0
+            ],
+            "footprint": [
+              3,
+              3
+            ],
+            "screen_position": [
+              596.799987792969,
+              458.0
+            ],
+            "state": "contact",
+            "z_sort_key": 458
+          },
+          "ENEMY_C01_RIFT_SWARM_01": {
+            "animation": "idle",
+            "cell": [
+              22.0,
+              9.0
+            ],
+            "facing": "west",
+            "footpoint_screen": [
+              769.599975585938,
+              371.600006103516
+            ],
+            "footprint": [
+              1,
+              1
+            ],
+            "screen_position": [
+              769.599975585938,
+              371.600006103516
+            ],
+            "state": "deflected_alive",
+            "z_sort_key": 372
+          },
+          "ENEMY_C01_RIFT_SWARM_02": {
+            "animation": "idle",
+            "cell": [
+              26.0,
+              12.0
+            ],
+            "facing": "north",
+            "footpoint_screen": [
+              812.799987792969,
+              522.799987792969
+            ],
+            "footprint": [
+              1,
+              1
+            ],
+            "screen_position": [
+              812.799987792969,
+              522.799987792969
+            ],
+            "state": "active",
+            "z_sort_key": 523
+          },
+          "ENEMY_C01_RIFT_SWARM_03": {
+            "animation": "idle",
+            "cell": [
+              29.0,
+              5.0
+            ],
+            "facing": "south",
+            "footpoint_screen": [
+              1244.80004882812,
+              436.399993896484
+            ],
+            "footprint": [
+              1,
+              1
+            ],
+            "screen_position": [
+              1244.80004882812,
+              436.399993896484
+            ],
+            "state": "active",
+            "z_sort_key": 436
+          },
+          "TARGET_C01_EAST_EXIT": {
+            "animation": "idle",
+            "cell": [
+              31.0,
+              7.0
+            ],
+            "facing": "east",
+            "footpoint_screen": [
+              1244.80004882812,
+              522.799987792969
+            ],
+            "footprint": [
+              1,
+              1
+            ],
+            "screen_position": [
+              1244.80004882812,
+              522.799987792969
+            ],
+            "state": "active",
+            "z_sort_key": 523
+          },
+          "TARGET_C01_EMERGENCY_VEHICLE_01": {
+            "animation": "idle",
+            "cell": [
+              24.0,
+              9.0
+            ],
+            "facing": "east",
+            "footpoint_screen": [
+              856.0,
+              414.799987792969
+            ],
+            "footprint": [
+              1,
+              1
+            ],
+            "screen_position": [
+              856.0,
+              414.799987792969
+            ],
+            "state": "passed_lane_still_active",
+            "z_sort_key": 415
+          },
+          "TARGET_C01_FINAL_VEHICLE": {
+            "animation": "idle",
+            "cell": [
+              13.0,
+              9.0
+            ],
+            "facing": "east",
+            "footpoint_screen": [
+              380.799987792969,
+              177.199996948242
+            ],
+            "footprint": [
+              1,
+              1
+            ],
+            "screen_position": [
+              380.799987792969,
+              177.199996948242
+            ],
+            "state": "waiting",
+            "z_sort_key": 177
+          },
+          "TARGET_C01_SECURITY_GATE": {
+            "animation": "idle",
+            "cell": [
+              27.0,
+              8.0
+            ],
+            "facing": "south",
+            "footpoint_screen": [
+              1028.80004882812,
+              458.0
+            ],
+            "footprint": [
+              1,
+              1
+            ],
+            "screen_position": [
+              1028.80004882812,
+              458.0
+            ],
+            "state": "active",
+            "z_sort_key": 458
+          },
+          "V353U001": {
+            "animation": "impact",
+            "cell": [
+              20.0,
+              9.0
+            ],
+            "facing": "south",
+            "footpoint_screen": [
+              683.200012207031,
+              371.600006103516
+            ],
+            "footprint": [
+              2,
+              2
+            ],
+            "screen_position": [
+              683.200012207031,
+              371.600006103516
+            ],
+            "state": "contact",
+            "z_sort_key": 372
+          }
+        },
+        "camera": {
+          "center": [
+            -720.0,
+            350.0
+          ],
+          "cursor": [
+            15,
+            11
+          ],
+          "edge_threshold": 92.0,
+          "edge_trigger_rect": [
+            -1268.0,
+            150.0,
+            1096.0,
+            400.0
+          ],
+          "last_focus_crossed_edge": false,
+          "map_is_larger_than_view": true,
+          "performance_focus_cell": [
+            20.5,
+            10.5
+          ],
+          "performance_shake": [
+            0.0,
+            0.0
+          ],
+          "performance_zoom": 1.08,
+          "projection_id": "A4_ISOMETRIC_40X20",
+          "safe_ratio": 0.6,
+          "target": [
+            -720.0,
+            350.0
+          ],
+          "tile_half": [
+            40.0,
+            20.0
+          ],
+          "viewport_rect": [
+            0.0,
+            58.0,
+            1280.0,
+            584.0
+          ],
+          "world_bounds": [
+            -1650.0,
+            -260.0,
+            2100.0,
+            1140.0
+          ],
+          "world_origin": [
+            -880.0,
+            -170.0
+          ]
+        },
+        "contact_geometry": {
+          "approach_grid_vector": [
+            0.0,
+            -1.0
+          ],
+          "approach_matches_contact_normal": true,
+          "approach_screen_vector_px": [
+            40.0,
+            -20.0
+          ],
+          "breaker_facing_matches_contact_normal": true,
+          "breaker_rect": [
+            20.0,
+            11.0,
+            3,
+            3
+          ],
+          "contact": true,
+          "contact_edge": "guardian_south_to_breaker_north",
+          "contact_normal_grid": [
+            0.0,
+            1.0
+          ],
+          "contact_normal_screen_px": [
+            -40.0,
+            20.0
+          ],
+          "contact_without_gap_or_overlap": true,
+          "guardian_facing_matches_contact_normal": true,
+          "guardian_rect": [
+            20.0,
+            9.0,
+            2,
+            2
+          ],
+          "impact_socket_grid": [
+            20.5,
+            10.5
+          ],
+          "impact_socket_raw_px": [
+            -480.0,
+            450.0
+          ],
+          "impulse_grid_vector": [
+            0.0,
+            -1.0
+          ],
+          "impulse_screen_vector_px": [
+            40.0,
+            -20.0
+          ],
+          "narrative_front_contact_closed": true,
+          "no_footprint_overlap": true,
+          "post_contact_anchor": [
+            20.0,
+            8.5
+          ],
+          "recoil_grid_vector": [
+            0.0,
+            -0.5
+          ],
+          "recoil_screen_vector_px": [
+            20.0,
+            -10.0
+          ],
+          "rectangles_overlap": false,
+          "shared_contact_edge_cells": 2
+        },
+        "event_id": "GS-R1-E3-CONTACT",
+        "flash_alpha": 0.38,
+        "hit_stop_active": true,
+        "layer_registration": {
+          "canvas_offset_from_projection_origin_px": [
+            -800,
+            -180
+          ],
+          "canvas_origin_raw_px": [
+            -1680,
+            -350
+          ],
+          "canvas_size": [
+            2400,
+            1350
+          ],
+          "layer_count": 6,
+          "layers": {
+            "VS_MAP_BASE": {
+              "canvas_origin_raw_px": [],
+              "canvas_size": [],
+              "crop_rect_px": [
+                -1072.59252929688,
+                179.629638671875,
+                1185.18518066406,
+                540.74072265625
+              ],
+              "layer": "base",
+              "mask_semantics": "",
+              "native_size": [
+                32,
+                32
+              ],
+              "screen_scale": [
+                1.08,
+                1.08
+              ],
+              "screen_top_left": [
+                510.399993896484,
+                177.199996948242
+              ],
+              "visible": true,
+              "z": -120
+            },
+            "VS_MAP_BUILDINGS": {
+              "canvas_origin_raw_px": [],
+              "canvas_size": [],
+              "crop_rect_px": [
+                -1072.59252929688,
+                179.629638671875,
+                1185.18518066406,
+                540.74072265625
+              ],
+              "layer": "buildings",
+              "mask_semantics": "",
+              "native_size": [
+                32,
+                32
+              ],
+              "screen_scale": [
+                1.08,
+                1.08
+              ],
+              "screen_top_left": [
+                510.399993896484,
+                177.199996948242
+              ],
+              "visible": true,
+              "z": -80
+            },
+            "VS_MAP_FOREGROUND": {
+              "canvas_origin_raw_px": [],
+              "canvas_size": [],
+              "crop_rect_px": [
+                -1072.59252929688,
+                179.629638671875,
+                1185.18518066406,
+                540.74072265625
+              ],
+              "layer": "foreground",
+              "mask_semantics": "",
+              "native_size": [
+                32,
+                32
+              ],
+              "screen_scale": [
+                1.08,
+                1.08
+              ],
+              "screen_top_left": [
+                510.399993896484,
+                177.199996948242
+              ],
+              "visible": true,
+              "z": 90
+            },
+            "VS_MAP_LIGHTING": {
+              "canvas_origin_raw_px": [],
+              "canvas_size": [],
+              "crop_rect_px": [
+                -1072.59252929688,
+                179.629638671875,
+                1185.18518066406,
+                540.74072265625
+              ],
+              "layer": "lighting",
+              "mask_semantics": "",
+              "native_size": [
+                32,
+                32
+              ],
+              "screen_scale": [
+                1.08,
+                1.08
+              ],
+              "screen_top_left": [
+                510.399993896484,
+                177.199996948242
+              ],
+              "visible": true,
+              "z": 100
+            },
+            "VS_MAP_OCCLUSION": {
+              "canvas_origin_raw_px": [],
+              "canvas_size": [],
+              "crop_rect_px": [
+                -1072.59252929688,
+                179.629638671875,
+                1185.18518066406,
+                540.74072265625
+              ],
+              "layer": "occlusion",
+              "mask_semantics": "",
+              "native_size": [
+                32,
+                32
+              ],
+              "screen_scale": [
+                1.08,
+                1.08
+              ],
+              "screen_top_left": [
+                510.399993896484,
+                177.199996948242
+              ],
+              "visible": false,
+              "z": 95
+            },
+            "VS_MAP_ROOFS": {
+              "canvas_origin_raw_px": [],
+              "canvas_size": [],
+              "crop_rect_px": [
+                -1072.59252929688,
+                179.629638671875,
+                1185.18518066406,
+                540.74072265625
+              ],
+              "layer": "roofs",
+              "mask_semantics": "",
+              "native_size": [
+                32,
+                32
+              ],
+              "screen_scale": [
+                1.08,
+                1.08
+              ],
+              "screen_top_left": [
+                510.399993896484,
+                177.199996948242
+              ],
+              "visible": true,
+              "z": 40
+            }
+          },
+          "occlusion_policy": "fade_50_percent_plus_outline_candidate",
+          "projection_origin_raw_px": [
+            -880.0,
+            -170.0
+          ],
+          "viewport_rect": [
+            0.0,
+            58.0,
+            1280.0,
+            584.0
+          ],
+          "zoom": 1.08
+        },
+        "occlusion_candidate": {
+          "footpoint_raw_px": [
+            0.0,
+            0.0
+          ],
+          "mask_alpha": 0.0,
+          "mask_sampled": true,
+          "outline_required": false,
+          "overhead_faded": false,
+          "policy": "fade_50_percent_plus_outline_candidate",
+          "subject_id": ""
+        },
+        "performance_history": [
+          {
+            "event_id": "GS-R1-E1-VEHICLE",
+            "phase": "anticipation",
+            "signature": "GS-R1-E1-VEHICLE:anticipation",
+            "timeslice": "T1"
+          },
+          {
+            "event_id": "GS-R1-E1-VEHICLE",
+            "phase": "motion",
+            "signature": "GS-R1-E1-VEHICLE:motion",
+            "timeslice": "T1"
+          },
+          {
+            "event_id": "GS-R1-E1-VEHICLE",
+            "phase": "directional_shake_flash",
+            "signature": "GS-R1-E1-VEHICLE:directional_shake_flash",
+            "timeslice": "T1"
+          },
+          {
+            "event_id": "GS-R1-E1-VEHICLE",
+            "phase": "recoil",
+            "signature": "GS-R1-E1-VEHICLE:recoil",
+            "timeslice": "T1"
+          },
+          {
+            "event_id": "GS-R1-E1-VEHICLE",
+            "phase": "environment_aftermath",
+            "signature": "GS-R1-E1-VEHICLE:environment_aftermath",
+            "timeslice": "T1"
+          },
+          {
+            "event_id": "GS-R1-E2-SWARM",
+            "phase": "anticipation",
+            "signature": "GS-R1-E2-SWARM:anticipation",
+            "timeslice": "T2"
+          },
+          {
+            "event_id": "GS-R1-E2-SWARM",
+            "phase": "motion",
+            "signature": "GS-R1-E2-SWARM:motion",
+            "timeslice": "T2"
+          },
+          {
+            "event_id": "GS-R1-E2-SWARM",
+            "phase": "contact_hit_stop",
+            "signature": "GS-R1-E2-SWARM:contact_hit_stop",
+            "timeslice": "T2"
+          },
+          {
+            "event_id": "GS-R1-E2-SWARM",
+            "phase": "directional_shake_flash",
+            "signature": "GS-R1-E2-SWARM:directional_shake_flash",
+            "timeslice": "T2"
+          },
+          {
+            "event_id": "GS-R1-E2-SWARM",
+            "phase": "recoil",
+            "signature": "GS-R1-E2-SWARM:recoil",
+            "timeslice": "T2"
+          },
+          {
+            "event_id": "GS-R1-E2-SWARM",
+            "phase": "environment_aftermath",
+            "signature": "GS-R1-E2-SWARM:environment_aftermath",
+            "timeslice": "T2"
+          },
+          {
+            "event_id": "GS-R1-E3-CONTACT",
+            "phase": "anticipation",
+            "signature": "GS-R1-E3-CONTACT:anticipation",
+            "timeslice": "T3.00"
+          },
+          {
+            "event_id": "GS-R1-E3-CONTACT",
+            "phase": "motion",
+            "signature": "GS-R1-E3-CONTACT:motion",
+            "timeslice": "T3.00"
+          },
+          {
+            "event_id": "GS-R1-E3-CONTACT",
+            "phase": "contact_hit_stop",
+            "signature": "GS-R1-E3-CONTACT:contact_hit_stop",
+            "timeslice": "T3.00"
+          }
+        ],
+        "phase": "contact_hit_stop",
+        "semantic_binding_count": 15,
+        "semantic_consumers": {
+          "VS_BREAKER_QSD": [
+            {
+              "atlas_region": [
+                0.0,
+                192.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [
+                1.0,
+                1.0
+              ],
+              "footpoint_screen": [
+                596.799987792969,
+                458.0
+              ],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [
+                0.5,
+                0.819999992847443
+              ],
+              "pivot_px": [
+                24.0,
+                39.3600006103516
+              ],
+              "selected_clip_key": "",
+              "selected_facing": "north",
+              "selected_frame": 0,
+              "selected_state": "contact",
+              "state_alias_signature": "",
+              "subject_id": "ENEMY_C01_BREAKER",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 458
+            }
+          ],
+          "VS_FX_CONTACT_FLASH": [
+            {
+              "atlas_region": [
+                0.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "default",
+              "selected_frame": 0,
+              "selected_state": "flash",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_FX_RED_IMPACT": [
+            {
+              "atlas_region": [
+                0.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "default",
+              "selected_frame": 0,
+              "selected_state": "impact",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "AtlasTexture",
+              "visible": false,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_FX_ROAD_DEBRIS": [
+            {
+              "atlas_region": [
+                0.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "default",
+              "selected_frame": 0,
+              "selected_state": "debris",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "AtlasTexture",
+              "visible": false,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_FX_SHIELD_BASH": [
+            {
+              "atlas_region": [
+                0.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "default",
+              "selected_frame": 0,
+              "selected_state": "impact",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "AtlasTexture",
+              "visible": false,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_GUARDIAN_QSD": [
+            {
+              "atlas_region": [
+                0.0,
+                672.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [
+                1.0,
+                1.0
+              ],
+              "footpoint_screen": [
+                683.200012207031,
+                371.600006103516
+              ],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [
+                0.5,
+                0.879999995231628
+              ],
+              "pivot_px": [
+                24.0,
+                42.2399978637695
+              ],
+              "selected_clip_key": "",
+              "selected_facing": "south",
+              "selected_frame": 0,
+              "selected_state": "contact",
+              "state_alias_signature": "",
+              "subject_id": "V353U001",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 372
+            }
+          ],
+          "VS_MAP_BASE": [
+            {
+              "atlas_region": [],
+              "clip_contract": "",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "",
+              "selected_frame": -1,
+              "selected_state": "",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "ImageTexture",
+              "visible": true,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_MAP_BUILDINGS": [
+            {
+              "atlas_region": [],
+              "clip_contract": "",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "",
+              "selected_frame": -1,
+              "selected_state": "",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "ImageTexture",
+              "visible": true,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_MAP_FOREGROUND": [
+            {
+              "atlas_region": [],
+              "clip_contract": "",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "",
+              "selected_frame": -1,
+              "selected_state": "",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "ImageTexture",
+              "visible": true,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_MAP_LIGHTING": [
+            {
+              "atlas_region": [],
+              "clip_contract": "",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "",
+              "selected_frame": -1,
+              "selected_state": "",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "ImageTexture",
+              "visible": true,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_MAP_OCCLUSION": [
+            {
+              "atlas_region": [],
+              "clip_contract": "",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "",
+              "selected_frame": -1,
+              "selected_state": "",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "ImageTexture",
+              "visible": false,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_MAP_ROOFS": [
+            {
+              "atlas_region": [],
+              "clip_contract": "",
+              "display_scale": [],
+              "footpoint_screen": [],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [],
+              "pivot_px": [],
+              "selected_clip_key": "",
+              "selected_facing": "",
+              "selected_frame": -1,
+              "selected_state": "",
+              "state_alias_signature": "",
+              "subject_id": "",
+              "texture_class": "ImageTexture",
+              "visible": true,
+              "z_sort_key": 0
+            }
+          ],
+          "VS_SHIELD_STATES": [
+            {
+              "atlas_region": [
+                0.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [
+                1.0,
+                1.0
+              ],
+              "footpoint_screen": [
+                380.799987792969,
+                220.399993896484
+              ],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [
+                0.5,
+                0.850000023841858
+              ],
+              "pivot_px": [
+                24.0,
+                40.8000030517578
+              ],
+              "selected_clip_key": "",
+              "selected_facing": "south",
+              "selected_frame": 0,
+              "selected_state": "wall_hung_3_scorches",
+              "state_alias_signature": "",
+              "subject_id": "PROP_C01CDV1_RETIRED_SHIELD",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 220
+            }
+          ],
+          "VS_SWARM_QSD": [
+            {
+              "atlas_region": [
+                0.0,
+                144.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [
+                1.0,
+                1.0
+              ],
+              "footpoint_screen": [
+                769.599975585938,
+                371.600006103516
+              ],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [
+                0.5,
+                0.75
+              ],
+              "pivot_px": [
+                24.0,
+                36.0
+              ],
+              "selected_clip_key": "",
+              "selected_facing": "west",
+              "selected_frame": 0,
+              "selected_state": "idle",
+              "state_alias_signature": "",
+              "subject_id": "ENEMY_C01_RIFT_SWARM_01",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 372
+            },
+            {
+              "atlas_region": [
+                0.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [
+                1.0,
+                1.0
+              ],
+              "footpoint_screen": [
+                812.799987792969,
+                522.799987792969
+              ],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [
+                0.5,
+                0.75
+              ],
+              "pivot_px": [
+                24.0,
+                36.0
+              ],
+              "selected_clip_key": "",
+              "selected_facing": "north",
+              "selected_frame": 0,
+              "selected_state": "idle",
+              "state_alias_signature": "",
+              "subject_id": "ENEMY_C01_RIFT_SWARM_02",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 523
+            },
+            {
+              "atlas_region": [
+                0.0,
+                96.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [
+                1.0,
+                1.0
+              ],
+              "footpoint_screen": [
+                1244.80004882812,
+                436.399993896484
+              ],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [
+                0.5,
+                0.75
+              ],
+              "pivot_px": [
+                24.0,
+                36.0
+              ],
+              "selected_clip_key": "",
+              "selected_facing": "south",
+              "selected_frame": 0,
+              "selected_state": "idle",
+              "state_alias_signature": "",
+              "subject_id": "ENEMY_C01_RIFT_SWARM_03",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 436
+            }
+          ],
+          "VS_VEHICLE_EAST": [
+            {
+              "atlas_region": [
+                0.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [
+                1.0,
+                1.0
+              ],
+              "footpoint_screen": [
+                856.0,
+                414.799987792969
+              ],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [
+                0.5,
+                0.720000028610229
+              ],
+              "pivot_px": [
+                24.0,
+                34.560001373291
+              ],
+              "selected_clip_key": "",
+              "selected_facing": "east",
+              "selected_frame": 0,
+              "selected_state": "waiting",
+              "state_alias_signature": "",
+              "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 415
+            },
+            {
+              "atlas_region": [
+                0.0,
+                0.0,
+                48.0,
+                48.0
+              ],
+              "clip_contract": "R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY",
+              "display_scale": [
+                1.0,
+                1.0
+              ],
+              "footpoint_screen": [
+                380.799987792969,
+                177.199996948242
+              ],
+              "interaction_socket_px": {},
+              "interaction_socket_screen": {},
+              "modulate_alpha": 1.0,
+              "pivot_normalized": [
+                0.5,
+                0.720000028610229
+              ],
+              "pivot_px": [
+                24.0,
+                34.560001373291
+              ],
+              "selected_clip_key": "",
+              "selected_facing": "east",
+              "selected_frame": 0,
+              "selected_state": "waiting",
+              "state_alias_signature": "",
+              "subject_id": "TARGET_C01_FINAL_VEHICLE",
+              "texture_class": "AtlasTexture",
+              "visible": true,
+              "z_sort_key": 177
+            }
+          ]
+        },
+        "timeslice": "T3.00",
+        "visible_fx": [
+          "ContactFlash",
+          "RoadDebris",
+          "ScreenFlash"
+        ]
+      },
+      "phase": "contact_hit_stop",
+      "pixel_sample": {
+        "center": "ffd5aeff",
+        "sampled_opaque_pixels": 1032,
+        "sampled_unique_colors": 78
+      },
+      "png_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a1-r2c-c1/captures/C01E02_G2A1_R2C_C1_A_T3_CONTACT_ACTUAL_1280x720.png",
+      "png_sha256": "8b504ee85752dfdd55c1ea6c654df2e870ef10b0aa4689e2102ae9221164b563",
+      "proxy_only": true,
+      "real_art_loaded": 0,
+      "runtime_promotion": false,
+      "save_enabled": false,
+      "sequence_time_ms": 2585.0,
+      "source_chain": {
+        "entity_anchor": [
+          22,
+          9
+        ],
+        "overlay_anchor": [
+          22.0,
+          9.0
+        ],
+        "rendered_actor_cell": [
+          22.0,
+          9.0
+        ],
+        "resolver_world_anchor": [
+          22,
+          9
+        ],
+        "t2_performance_final_cell": [
+          22,
+          9
+        ]
+      },
+      "source_chain_single_truth": true,
+      "static_injection": false,
+      "subjects": {
+        "ENEMY_C01_BREAKER": {
+          "animation": "impact",
+          "cell": [
+            20.0,
+            11.0
+          ],
+          "facing": "north",
+          "footpoint_screen": [
+            596.799987792969,
+            458.0
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "screen_position": [
+            596.799987792969,
+            458.0
+          ],
+          "state": "contact",
+          "z_sort_key": 458
+        },
+        "ENEMY_C01_RIFT_SWARM_01": {
+          "animation": "idle",
+          "cell": [
+            22.0,
+            9.0
+          ],
+          "facing": "west",
+          "footpoint_screen": [
+            769.599975585938,
+            371.600006103516
+          ],
+          "footprint": [
+            1,
+            1
+          ],
+          "screen_position": [
+            769.599975585938,
+            371.600006103516
+          ],
+          "state": "deflected_alive",
+          "z_sort_key": 372
+        },
+        "V353U001": {
+          "animation": "impact",
+          "cell": [
+            20.0,
+            9.0
+          ],
+          "facing": "south",
+          "footpoint_screen": [
+            683.200012207031,
+            371.600006103516
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "screen_position": [
+            683.200012207031,
+            371.600006103516
+          ],
+          "state": "contact",
+          "z_sort_key": 372
+        }
+      },
+      "timeslice": "T3.00",
+      "viewport": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "continuous_sequence": true,
+  "correction_id": "R2C-C1-PRIMARY-SWARM-GROUND-OCCUPANCY",
+  "default_entry_changed": false,
+  "evidence_class": "g2_a1_r2c_c1_actual_godot_root_viewport_continuous_sequence",
+  "g2_b_allowed": false,
+  "proxy_only": true,
+  "real_art_loaded": 0,
+  "required_capture_ids": [
+    "A_T2_SWARM_DEFLECT",
+    "A_T3_CONTACT"
+  ],
+  "root_viewport": [
+    1280,
+    720
+  ],
+  "runtime_promotion": false,
+  "save_enabled": false,
+  "single_truth_anchor": [
+    22,
+    9
+  ],
+  "source_chain_single_truth": true,
+  "static_injection": false
+}

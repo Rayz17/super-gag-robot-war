@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "status": "STOP_SCRIPT_SCAFFOLD_REQUIRES_HUMAN_CONCEPT_REDRAW",
+  "final_art": false,
+  "scaffold_ready": false,
+  "sole_scaffold": null,
+  "human_concept_redraw_required": true,
+  "external_or_human_concept_resource_authorized": false,
+  "human_overpaint_on_rev4_allowed": false,
+  "call04_allowed": false,
+  "history_scaffolds": [
+    {"path": "qa/BREAKER_NORTH_CAMERA_V2_REV1_REJECTED_384.png", "status": "HISTORY_REJECTED_TURTLE_QUADRUPED"},
+    {"path": "qa/BREAKER_NORTH_CAMERA_V2_REV2_REJECTED_384.png", "status": "HISTORY_REJECTED_DOME_SHELL_WEAK_HIERARCHY"},
+    {"path": "qa/BREAKER_NORTH_CAMERA_V2_REV3_REJECTED_384.png", "status": "HISTORY_REJECTED_HUNCHED_APE_BEAR_BLACK_UNION"},
+    {
+      "path": "qa/BREAKER_NORTH_CAMERA_V2_REV4_REJECTED_SCAFFOLD_RGBA_1536.png",
+      "sha256": "80f3e428eb83632549d7789588c0d3337bc8d86d23a6d53a60db560ec5b982a2",
+      "status": "HISTORY_REJECTED_HUNCHED_APE_BIPED_BEAR_FINAL_SCRIPT_TRY"
+    }
+  ],
+  "coordinate_target_for_future_human_concept": {
+    "work_canvas_px": [1536, 1536],
+    "final_slot_px": [384, 384],
+    "work_scale": 4,
+    "view_space": "map_dimetric_40x24",
+    "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+    "registration_point": "footprint_bottom_center",
+    "footprint": [3, 3],
+    "pivot_final_px": [192, 320],
+    "pivot_work_px": [768, 1280],
+    "tile_half_final_px": [40, 24],
+    "tile_half_work_px": [160, 96],
+    "north_vector_final_px": [40, -24],
+    "north_vector_work_px": [160, -96],
+    "manual_screen_offset_allowed": false
+  },
+  "provisional_sockets_for_future_remeasurement": {
+    "body": {"local_final_px": [0, -98], "local_work_px": [0, -392], "absolute_work_px": [768, 888]},
+    "shield": {"local_final_px": [-68, -84], "local_work_px": [-272, -336], "absolute_work_px": [496, 944]},
+    "weapon": {"local_final_px": [68, -96], "local_work_px": [272, -384], "absolute_work_px": [1040, 896]},
+    "impact": {"local_final_px": [12, -18], "local_work_px": [48, -72], "absolute_work_px": [816, 1208]},
+    "target": {"local_final_px": [12, -18], "local_work_px": [48, -72], "absolute_work_px": [816, 1208]}
+  },
+  "future_human_concept_black_union_gate": {
+    "flat_offset_siege_wedge_required": true,
+    "rear_diagonal_cut_required": true,
+    "mechanical_hinge_angle_required": true,
+    "splayed_wedge_impact_feet_required": true,
+    "thin_rear_brackets_required": true,
+    "recessed_horizontal_head_slot_required": true,
+    "turtle_ape_bear_quadruped_vehicle_read_allowed": false
+  },
+  "gates": {
+    "script_rev5_allowed": false,
+    "imagegen_allowed": false,
+    "human_overpaint_on_history_allowed": false,
+    "new_human_concept_requires_producer_authorization": true,
+    "actual_frame_50_100_review_required_after_new_concept": true,
+    "machine_pass_replaces_visual_pass": false,
+    "other_facings_allowed": false,
+    "actions_allowed": false,
+    "atlas_allowed": false,
+    "runtime_allowed": false,
+    "ua91_allowed": false,
+    "call04_allowed": false
+  }
+}

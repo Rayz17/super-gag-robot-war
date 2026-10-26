@@ -1,0 +1,705 @@
+{
+  "opening": [
+    {
+      "actor": "location",
+      "line": "第一日 · 临近中午\n万机馆抵达木桶街。",
+      "shot": "arrival"
+    },
+    {
+      "actor": "event",
+      "line": "重载道上，牵引车阵转进弯口。",
+      "shot": "cargo_roll",
+      "event": true,
+      "duration": 4.2
+    },
+    {
+      "actor": "event",
+      "line": "驾驶室抬起，货柜展开。车轮收向肩后和小腿。",
+      "shot": "cargo_transform",
+      "event": true,
+      "duration": 4.2,
+      "cue": "impact"
+    },
+    {
+      "actor": "event",
+      "line": "火种货柜领袖 · 十四米级自主作业机",
+      "shot": "cargo_pull",
+      "event": true,
+      "duration": 4.8
+    },
+    {
+      "actor": "narrator",
+      "line": "它把主牵引索绕到背后，双脚踏住承重板。车队与它一起，牵着两百多米的货运环转过弯口。"
+    },
+    {
+      "actor": "jicun",
+      "line": "它能拉我们过去吗？"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "有路就能拉。没路，它也得跟你一起掉水里。"
+    },
+    {
+      "actor": "event",
+      "line": "远处，头车按了一声低沉的喇叭。",
+      "shot": "cargo_pull",
+      "event": true,
+      "duration": 1.9,
+      "cue": "horn"
+    },
+    {
+      "actor": "old",
+      "line": "翻译：不接跨海拖舰业务。"
+    },
+    {
+      "actor": "event",
+      "line": "第二声喇叭来得更急。",
+      "shot": "cargo_pull",
+      "event": true,
+      "duration": 1.5,
+      "cue": "horn"
+    },
+    {
+      "actor": "old",
+      "line": "修正：它反对我的翻译。"
+    },
+    {
+      "actor": "event",
+      "line": "牵引车阵放慢。货运环沿地面托架，落入赛事泊位。",
+      "shot": "cargo_berth",
+      "event": true,
+      "duration": 4.4
+    },
+    {
+      "actor": "narrator",
+      "line": "万机馆的姿态推进器同时工作，将舰体一点点送进巨构泊位。最后一道缆索收紧。",
+      "shot": "arrival"
+    },
+    {
+      "actor": "doudeng",
+      "line": "纪存，下来。刚才那不是靠泊声。",
+      "cue": "impact"
+    },
+    {
+      "actor": "event",
+      "line": "舰底 · 主循环设备检查窗",
+      "shot": "rotor",
+      "event": true,
+      "duration": 3.8
+    },
+    {
+      "actor": "narrator",
+      "line": "几米高的窗口里，叶片已烧成不均匀的暗色。中央主轴本应笔直，现在却弯了。"
+    },
+    {
+      "actor": "old",
+      "line": "本馆已稳定靠泊。"
+    },
+    {
+      "actor": "doudeng",
+      "line": "它说的是现在。"
+    },
+    {
+      "actor": "old",
+      "line": "我的陈述没有错。"
+    },
+    {
+      "actor": "doudeng",
+      "line": "把后果也说了。"
+    },
+    {
+      "actor": "old",
+      "line": "再次进入航行功率，主轴可能断裂。"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "这个我修不了。"
+    },
+    {
+      "actor": "doudeng",
+      "line": "难得。"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "我只是不爱夸口。"
+    },
+    {
+      "actor": "doudeng",
+      "line": "你刚才说自己能把一条街修回来。"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "街又不转这么快。"
+    },
+    {
+      "actor": "narrator",
+      "line": "木桶街送来了设备图。这里能拆装和吊运，却没有能放下旧转子的校正床。工务城有，但万机馆开不到那里。"
+    },
+    {
+      "actor": "jicun",
+      "line": "这个轮廓……在旁边的货运环中央？"
+    },
+    {
+      "actor": "event",
+      "line": "最后一届木桶杯冠军奖品 · 九米主循环转子",
+      "shot": "prize",
+      "event": true,
+      "duration": 4.6
+    },
+    {
+      "actor": "narrator",
+      "line": "运输架里的新转子有三层楼高。工人站上升降台，才能够到中心接口。"
+    },
+    {
+      "actor": "doudeng",
+      "line": "临时连接，降低输出。不能完全修好，不过可以开到工务城。"
+    },
+    {
+      "actor": "jicun",
+      "line": "我们把它买下来。"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "行。你把钱变出来。"
+    }
+  ],
+  "first_registration": [
+    {
+      "actor": "jiaojia",
+      "line": "新转子的现价？稍等，给你看支出页。",
+      "shot": "street"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "……我们要是有这个钱，刚才就不用飘进来了。"
+    },
+    {
+      "actor": "jicun",
+      "line": "能不能先借用？到工务城以后，把万机馆未来的巡展分成交给杂鱼港。"
+    },
+    {
+      "actor": "jiaojia",
+      "line": "它不是我从路边捡的。购入、运输、重做运输架，再把它送到这里参加动力测试，每一项都在这儿。"
+    },
+    {
+      "actor": "jiaojia",
+      "line": "我现在把冠军奖品拿走，直播商和赞助方就有理由停款。木桶街搬新地方的钱也在里面。"
+    },
+    {
+      "actor": "jiaojia",
+      "line": "你们愿意全补，我现在就叫人拆。"
+    },
+    {
+      "actor": "jicun",
+      "line": "那比赛结束后再谈。"
+    },
+    {
+      "actor": "jiaojia",
+      "line": "得和冠军谈。奖品属于获胜者，不属于我。"
+    },
+    {
+      "actor": "jiaojia",
+      "line": "木桶杯一结束，这个泊位就要让给搬迁车队。你们还停在这里，我也得叫人把你们挪开。"
+    },
+    {
+      "actor": "narrator",
+      "line": "纪存看了一眼现金账户，又看了一眼未来巡展的空白收入页。"
+    },
+    {
+      "actor": "jicun",
+      "line": "那我们报名。"
+    },
+    {
+      "actor": "narrator",
+      "line": "“万机馆”的报名被退了回来。接待屏上亮出临时保全人的权限。"
+    },
+    {
+      "actor": "jiaojia",
+      "line": "能停泊、保命、维修，也能接收救命的替换件。"
+    },
+    {
+      "actor": "jiaojia",
+      "line": "拿一船待移交资产去参加商业赛事，不行。"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "走吧。"
+    },
+    {
+      "actor": "jicun",
+      "line": "去哪儿？"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "找一个有资格上场、又肯把奖品借给你的人。"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "最好还打得过那台。"
+    }
+  ],
+  "king": [
+    {
+      "actor": "jiaojia",
+      "line": "本体、年度强化、最终决战追加套件，今天全都在这里。",
+      "shot": "king_wing"
+    },
+    {
+      "actor": "jiaojia",
+      "line": "大家最关心的问题我先回答：包含本体。"
+    },
+    {
+      "actor": "narrator",
+      "line": "看台上笑成一片。二十米高的完全版王者站在外环，第一排障碍墙升了起来。"
+    },
+    {
+      "actor": "event",
+      "line": "长翼展开 · 沿外环低空加速，越过墙顶",
+      "shot": "king_wing",
+      "event": true,
+      "duration": 3.8,
+      "cue": "boost"
+    },
+    {
+      "actor": "event",
+      "line": "双盾交替 · 正面撞开，侧后接住回摆",
+      "shot": "king_shield",
+      "event": true,
+      "duration": 3.6,
+      "cue": "impact"
+    },
+    {
+      "actor": "event",
+      "line": "右手接装巨型钻头 · 破开加厚工事",
+      "shot": "king_drill",
+      "event": true,
+      "duration": 3.8,
+      "cue": "impact"
+    },
+    {
+      "actor": "event",
+      "line": "背炮越过肩头 · 四块远端靶板同时贯穿",
+      "shot": "king_cannon",
+      "event": true,
+      "duration": 4,
+      "cue": "impact"
+    },
+    {
+      "actor": "narrator",
+      "line": "四组设备重新贴回身体。从第一步到最后一发，没有一件只是为了显得更多。"
+    },
+    {
+      "actor": "jicun",
+      "line": "本体也很强。"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "废话。本体不强，往哪儿挂那么多东西。"
+    }
+  ],
+  "model": [
+    {
+      "actor": "tangjiao",
+      "line": "桌面模型和玩具留内街。人能抬的电机、关节送中圈；巨机部件上平板车，走外圈工房。",
+      "shot": "street"
+    },
+    {
+      "actor": "worker",
+      "line": "这个肩盾收回去的动作可以留，里面的结构得重做。不然放大以后撑不住。"
+    },
+    {
+      "actor": "jicun",
+      "line": "所以送到三号工房的是图。"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "和动作要求。塑料留这儿。"
+    },
+    {
+      "actor": "narrator",
+      "line": "模型师把盾臂又转了一次。工程员在纸上划掉旧支点，写下了新的结构问题。"
+    }
+  ],
+  "workshop": [
+    {
+      "actor": "narrator",
+      "line": "分派图前，唐胶的脚步慢了下来。",
+      "shot": "workshop"
+    },
+    {
+      "actor": "zhaomei",
+      "line": "照片是我发的。怕你看见木桶街三个字，又装作没收到。"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "馆里刚落稳，晚了一点。"
+    },
+    {
+      "actor": "zhaomei",
+      "line": "先干活吧。"
+    },
+    {
+      "actor": "narrator",
+      "line": "她接过万机馆的部件清单，没有当着满屋的人追问。唐胶也没往那张老工作台上看。"
+    },
+    {
+      "actor": "worker",
+      "line": "赵姐，这张旧式液压件订单，发给谁？"
+    },
+    {
+      "actor": "zhaomei",
+      "line": "这个我拿不准，先别出库。"
+    },
+    {
+      "actor": "event",
+      "line": "型号改过三次，页角还夹着两张退件单。",
+      "shot": "ledger",
+      "event": true,
+      "duration": 3.5
+    },
+    {
+      "actor": "zhaomei",
+      "line": "张师傅，我把照片发你了。对，就是以前退回来两次的那一型。你帮我看看接口。"
+    },
+    {
+      "actor": "narrator",
+      "line": "赵梅听着电话笑起来。订单转给中圈电控组，分派图上又补了一个联系人。",
+      "shot": "workshop"
+    },
+    {
+      "actor": "narrator",
+      "line": "旧本子前几页的字迹更快。后面则用铅笔补满了“打过电话”“仍然不懂”和“返工原因”。"
+    },
+    {
+      "actor": "zhaomei",
+      "line": "这件等张师傅回话。报名快截止了，你们先定参赛机。"
+    },
+    {
+      "actor": "event",
+      "line": "三号工房的卷门升起。一台机体自己走了出来。",
+      "shot": "mecha",
+      "event": true,
+      "duration": 4.1
+    },
+    {
+      "actor": "hero",
+      "line": "我参加。"
+    },
+    {
+      "actor": "narrator",
+      "line": "十六米高的机体，两侧并不对称。肩甲、前臂、膝部来自不同年代，涂层下保留着一道道修补边界。"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "无牌一号。"
+    },
+    {
+      "actor": "jiaojia",
+      "line": "九十秒穿过两台门卫，敲响钟。短距推进拆掉这么多年了，只靠走，时间不够。"
+    },
+    {
+      "actor": "jicun",
+      "line": "舰外还有一组侧推组件。兜灯，能拆给它吗？"
+    },
+    {
+      "actor": "doudeng",
+      "line": "可以拆，但别当飞行器用。万机馆借它横挪，这台用它短冲。"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "身体能打，右胯得先开盖检查。想不想打，你们问它。"
+    },
+    {
+      "actor": "zhaomei",
+      "line": "合作社担保已提交。确认板亮了，你自己来。"
+    },
+    {
+      "actor": "hero",
+      "line": "我在这里替他们试过很多东西。没有打完过自己的比赛。"
+    },
+    {
+      "actor": "narrator",
+      "line": "它伸手按下确认板，又看向外泊位。馆守Z站在舰侧，右前臂仍然缺着。"
+    },
+    {
+      "actor": "hero",
+      "line": "它也没有修完。"
+    },
+    {
+      "actor": "old",
+      "line": "本馆正在维修。"
+    },
+    {
+      "actor": "hero",
+      "line": "我也是。"
+    }
+  ],
+  "workshop_ready": [
+    {
+      "actor": "zhaomei",
+      "line": "担保我来签。借来的东西，比赛后要好好还回去。",
+      "shot": "workshop"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "把侧推固定再检查一遍。钟在前面，别光盯着门卫。"
+    }
+  ],
+  "loan": [
+    {
+      "actor": "jicun",
+      "line": "兜灯，侧推组件赛后能装回去吗？",
+      "shot": "arrival"
+    },
+    {
+      "actor": "doudeng",
+      "line": "东西没撞坏就能。拆了以后万机馆自己挪不了，先把泊位的防风固定补上。"
+    },
+    {
+      "actor": "narrator",
+      "line": "纪存把拆借方案发回原城。七海仍在那里接受调查，也负责接收万机馆的安全状态。"
+    },
+    {
+      "actor": "qihai",
+      "line": "你要拆的是右侧那组？"
+    },
+    {
+      "actor": "jicun",
+      "line": "对。木桶街会用支撑车和缆索固定舰体。"
+    },
+    {
+      "actor": "qihai",
+      "line": "方案里没有海风数据。"
+    },
+    {
+      "actor": "jicun",
+      "line": "……我让他们补。"
+    },
+    {
+      "actor": "qihai",
+      "line": "昨晚右侧已经受过冲击。固定以后，把那一面的检查画面发我。"
+    },
+    {
+      "actor": "jicun",
+      "line": "好。"
+    },
+    {
+      "actor": "qihai",
+      "line": "等你们到了工务城，再谈那顿饭。"
+    },
+    {
+      "actor": "jicun",
+      "line": "好。"
+    },
+    {
+      "actor": "event",
+      "line": "地面支撑车就位 · 防风缆索收紧",
+      "shot": "mooring",
+      "event": true,
+      "duration": 4.3
+    },
+    {
+      "actor": "narrator",
+      "line": "两辆支撑车顶住舰腹。地勤补做了海风条件下的固定测试，兜灯重新检查右舷。"
+    },
+    {
+      "actor": "doudeng",
+      "line": "固定够了。可以拆。比赛结束马上装回来。"
+    }
+  ],
+  "confirm": [
+    {
+      "actor": "zhaomei",
+      "line": "合作社的本地赛事担保，由我来签。",
+      "shot": "street"
+    },
+    {
+      "actor": "jicun",
+      "line": "侧推组件赛后归还万机馆。"
+    },
+    {
+      "actor": "hero",
+      "line": "冠军奖品由合作社代管。限定安装到万机馆，不能转卖。"
+    },
+    {
+      "actor": "narrator",
+      "line": "三项确认完成。报名页面终于出现了无牌一号的名字。"
+    },
+    {
+      "actor": "jiaojia",
+      "line": "卫冕冠军完全版王者，特邀挑战者旧拳王，地方优胜者坞工杰克，三席已定。"
+    },
+    {
+      "actor": "jiaojia",
+      "line": "最后一席——无牌一号，去争吧。"
+    }
+  ],
+  "briefing": [
+    {
+      "actor": "jiaojia",
+      "line": "九十秒，穿过两台门卫，敲响货运环中央的参赛钟。",
+      "shot": "battle"
+    },
+    {
+      "actor": "jiaojia",
+      "line": "可以推、拦，也可以摔出界。双方都不准用杀伤武器。钟响晋级；超时或出界，资格战结束。"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "别跟盾面硬顶。它压上来，你就找它让出来的地方。"
+    },
+    {
+      "actor": "doudeng",
+      "line": "借来的侧推先给你一次短冲。最后敲钟那次，留着。"
+    },
+    {
+      "actor": "jicun",
+      "line": "我在场边看着。你自己选怎么过去。"
+    }
+  ],
+  "clash": [
+    {
+      "actor": "narrator",
+      "line": "重门卫迎面撞来。无牌左脚犁过地面，双臂接住了全部重量。",
+      "shot": "clash"
+    },
+    {
+      "actor": "hero",
+      "line": "……"
+    },
+    {
+      "actor": "narrator",
+      "line": "右拳收向腰侧，门卫正面已经空了。它却停在那里，没有踏出下一步。"
+    },
+    {
+      "actor": "narrator",
+      "line": "看台的呼声渐渐低下来。蓄起的力量从震动的装甲间散掉。"
+    },
+    {
+      "actor": "jicun",
+      "line": "还剩十秒。"
+    },
+    {
+      "actor": "hero",
+      "line": "那就先把这场比赛打完。"
+    }
+  ],
+  "won": [
+    {
+      "actor": "narrator",
+      "line": "最后一次侧推。无牌擦过门卫手臂，左掌拍响参赛钟。",
+      "shot": "bell"
+    },
+    {
+      "actor": "jiaojia",
+      "line": "四强最后一席——无牌一号！"
+    },
+    {
+      "actor": "king",
+      "line": "援护机A-7。"
+    },
+    {
+      "actor": "hero",
+      "line": "……？"
+    },
+    {
+      "actor": "king",
+      "line": "护甲交接准备。"
+    },
+    {
+      "actor": "narrator",
+      "line": "无牌回头，左肩仍保持着承受冲撞的角度。王者抬起一只手，却在半途停住。"
+    },
+    {
+      "actor": "narrator",
+      "line": "大屏把两台机收进画面。像是排练过的站位，没人记得结尾。"
+    }
+  ],
+  "return": [
+    {
+      "actor": "tangjiao",
+      "line": "先回工房。右胯的盖还得再看一眼。",
+      "shot": "workshop"
+    },
+    {
+      "actor": "zhaomei",
+      "line": "资格拿到了，借来的东西一样要还。"
+    },
+    {
+      "actor": "jicun",
+      "line": "我知道。奖品还在台上。"
+    },
+    {
+      "actor": "hero",
+      "line": "下一场，我还想自己打完。"
+    },
+    {
+      "actor": "narrator",
+      "line": "四强名单贴在工房门边。万机馆仍停在缆索之间，尚不能驶向工务城。"
+    }
+  ],
+  "workbench_after": [
+    {
+      "actor": "tangjiao",
+      "line": "接住以后停在原地，力量就耗在装甲里了。",
+      "shot": "workshop"
+    },
+    {
+      "actor": "hero",
+      "line": "我知道它应该还有下一步。"
+    },
+    {
+      "actor": "tangjiao",
+      "line": "那就先记住刚才卡住的地方。别用坏掉的东西硬试。"
+    }
+  ],
+  "poster_after": [
+    {
+      "actor": "location",
+      "line": "另一座城 · 白鸢的工作间",
+      "shot": "remote"
+    },
+    {
+      "actor": "event",
+      "line": "内容匹配提醒：左侧赛事画面，右侧三年前的分镜。",
+      "shot": "remote",
+      "event": true,
+      "duration": 4.8
+    },
+    {
+      "actor": "narrator",
+      "line": "直播里，无牌接住门卫，右拳收回腰侧。旧稿里，一台没有名字的支援机挡在主角机前——故事到这里突然中止。"
+    },
+    {
+      "actor": "narrator",
+      "line": "她打开木桶杯宣传页。那份临时补完的分镜，被装进了“失落终章首度复原”。"
+    },
+    {
+      "actor": "baiyuan",
+      "line": "这张我没卖。"
+    },
+    {
+      "actor": "narrator",
+      "line": "白鸢拿起外套。走到门口又回来，把那张没有结局的图导入终端。"
+    },
+    {
+      "actor": "location",
+      "line": "前往木桶街的下一班跨城列车，一小时后出发。"
+    }
+  ],
+  "rotor_after": [
+    {
+      "actor": "doudeng",
+      "line": "能走到工务城的那个转子，还没拿到。",
+      "shot": "rotor"
+    },
+    {
+      "actor": "jicun",
+      "line": "我知道。才过了资格赛。"
+    },
+    {
+      "actor": "doudeng",
+      "line": "那就别把起航时间填上。"
+    }
+  ]
+}

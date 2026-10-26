@@ -1,0 +1,223 @@
+{
+  "revision": "M08-turnaround-r5",
+  "date": "2026-10-22",
+  "existing_batch": "design-followthrough-r1.json",
+  "status": "history_overcorrection_rejected_by_user",
+  "reader": "M08-turnaround-r5.html",
+  "latest_user_feedback": "你这个三视图好像也将雷零又做矮了呀。按设定图它不是比较秀气修长的吗",
+  "selected_master": {
+    "id": "M08",
+    "name": "雷翎",
+    "file": "samples/M08-synthesis-r3.png",
+    "sha256": "54347f96fab0cd383baa6178ab49b4ea43c3645df2fa85eaaa3c294636bc77c3",
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-ebcbbb49-df98-4005-af0d-604a8fb5ac17.png",
+    "pixel_size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "role": "综合整机、同设计头部近景与航空态候选",
+    "source_refs": [
+      {
+        "file": "captures/20261014-full-direction/review/20261016-internal-upgrade/refs/M08-user-head-reference-20261022.png",
+        "sha256": "353765511b8fbbe1c77310eb4f2114e428aa7203a0fd91cfe32e022ef8f9e89d",
+        "role": "用户指定头型灵感；采用侧部开放V形天线，不采用橙色或文字"
+      },
+      {
+        "file": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M08-dual-form-r1b.png",
+        "sha256": "09fcac664054bf81f70c5f04fc658678912206045038e03bcc6fa96c84ebd77d",
+        "role": "前建议稿的关节、航空胸与武器结构及绘制完成度"
+      },
+      {
+        "file": "captures/20261014-full-direction/review/20261016-internal-upgrade/aircraft-runtime-comparison-20261022/leiling_robot.png",
+        "sha256": "256624e19bc10b621ca44c661dd3deb1d32e53421d250e254318e7eeb83e90d2",
+        "role": "现用机设的红白蓝对比、刃翼节奏；旧头胸/腿不锁死"
+      },
+      {
+        "file": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-front-backpack-fins-r7.png",
+        "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98",
+        "role": "本系列插画完成度，仅取画法"
+      }
+    ],
+    "prompt": "M08-synthesis-design-prompt-r3.txt",
+    "user_accepted": false,
+    "runtime_integrated": false
+  },
+  "items": [
+    {
+      "id": "FRONT",
+      "label": "正面",
+      "file": "samples/M08-front-slender-r5.png",
+      "sha256": "5e8ae26eee4cdd5b3b89d6f01f606a6c257b992dd8c55300d6448bec63d8e6a2",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-2ea271d5-2e61-46cd-b9b2-c26017f0ba1f.png",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "prompt": "M08-front-slender-prompt-r5.txt",
+      "individual_new_image_user_accepted": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "SIDE",
+      "label": "左侧面",
+      "file": "samples/M08-side-slender-r5.png",
+      "sha256": "2e9a6bda5c118059e534979061f91b911020b282bacd3b7d3748296b81c0797c",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-95004525-1a40-4cd7-bfb6-153f2478aa13.png",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "prompt": "M08-side-slender-prompt-r5.txt",
+      "individual_new_image_user_accepted": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "REAR",
+      "label": "背面",
+      "file": "samples/M08-rear-slender-r5.png",
+      "sha256": "a3d6257da590ac5c441cabed08b50d086afea52a699315d638bbedde1f25c3db",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-df724db2-a08c-40fa-b0f1-f061507b6230.png",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "prompt": "M08-rear-slender-prompt-r5.txt",
+      "individual_new_image_user_accepted": false,
+      "runtime_integrated": false
+    }
+  ],
+  "previous_rejected_proportions": {
+    "record": "M08-turnaround-production-r4.json",
+    "items": [
+      {
+        "id": "FRONT",
+        "label": "正面",
+        "file": "samples/M08-front-r4.png",
+        "sha256": "5bd179f1c498007fd7b4ccc217f9622a840d8786dee4d8b377a895d3ec09e3af",
+        "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-57b51851-917b-43a8-945a-ff5fffdd5695.png",
+        "pixel_size": [
+          1254,
+          1254
+        ],
+        "mode": "RGB",
+        "prompts": [
+          "M08-front-prompt-r4.txt"
+        ],
+        "individual_new_image_user_accepted": false,
+        "runtime_integrated": false
+      },
+      {
+        "id": "SIDE",
+        "label": "左侧面",
+        "file": "samples/M08-side-r4b.png",
+        "sha256": "a38a09bf4febb79e9118abfb565218b4b71c3496f3ede87470b2dc598dd9cb79",
+        "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-580b8aba-4fc8-4fb7-8814-d4bbc6b9940c.png",
+        "pixel_size": [
+          1254,
+          1254
+        ],
+        "mode": "RGB",
+        "prompts": [
+          "M08-side-prompt-r4.txt",
+          "M08-side-view-correction-prompt-r4b.txt"
+        ],
+        "individual_new_image_user_accepted": false,
+        "runtime_integrated": false
+      },
+      {
+        "id": "REAR",
+        "label": "背面",
+        "file": "samples/M08-rear-r4b.png",
+        "sha256": "f0a480bc2906d0e16415ce4a929c1196396dabe6d21cfca2c987b21dc68d0845",
+        "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-ba6878ed-d672-45da-bf21-94f6315afa40.png",
+        "pixel_size": [
+          1254,
+          1254
+        ],
+        "mode": "RGB",
+        "prompts": [
+          "M08-rear-prompt-r4.txt",
+          "M08-rear-view-correction-prompt-r4b.txt"
+        ],
+        "individual_new_image_user_accepted": false,
+        "runtime_integrated": false
+      }
+    ]
+  },
+  "generation_mode": "built-in image_gen; return to original R3 proportions for a new front anchor, then match side/rear",
+  "proportion_method": {
+    "old": "R4使用通用8至8.5头身绘制约束，肩胸与腿甲偏宽。",
+    "new": "R3左侧全身为比例主依据，收窄肩胸和四肢、拉开长腰、提高髋线、延续长腿。",
+    "drawing_targets": "约10个完整盔壳高、不含长天线；腿段约62-64%。仅绘制试值，不是生成结果精密量测或新Canon尺寸。",
+    "head": "盔型保持纵向体积，必要时整头等比调整，禁止压扁。"
+  },
+  "equipment_state": {
+    "wings": "同一展开状态",
+    "rifle": "始终机体右手；正面画面左、背面画面右、左侧面在远侧",
+    "design": "沿R3头胸/翼甲/配色，不增减新装备"
+  },
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "samples/M08-synthesis-r3.png",
+      "samples/M08-front-r4.png",
+      "samples/M08-front-slender-r5.png",
+      "samples/M08-side-slender-r5.png",
+      "samples/M08-rear-slender-r5.png"
+    ],
+    "observations": [
+      "R4的肩胸相对身高更宽，腰段短、髋位偏低；即使有长胫甲，整机仍显敦实。用户关于变矮的反馈成立，撤回上轮修长观感判断。",
+      "新正面肩胸和骨盆明显收窄，腰段可读，髋线提高，细长大腿和胫甲形成连续长腿线条；头盔保持完整纵向体积，没有将面部压扁。",
+      "新侧面沿新正面延长腰腿并收细关节、前臂和小腿；远侧脚仍露少量轮廓，属于有少量透视的绘制设定，不称严格工程正交。",
+      "新背面延续窄背长腰、小骨盆与长腿，保留闭合肩后壳、石墨脊柱及双小腿喷口；长枪仍在机体右手。",
+      "三张保持同一头冠、琥珀座舱身份、红白蓝刃翼和配色；没有借画幅变高直接拉伸原位图。"
+    ],
+    "coarse_source_frame_measurement": {
+      "method": "作者按原尺寸图面估读盔壳顶、足底与肩甲外缘；仅用于诊断躯干宽高，不是模型尺寸。坐标约有12像素误差。",
+      "R4_front": {
+        "file": "samples/M08-front-r4.png",
+        "helmet_shell_top_y_approx": 93,
+        "sole_y_approx": 1200,
+        "shoulder_outer_x_approx": [
+          343,
+          911
+        ],
+        "shoulder_width_over_shell_to_sole_height_approx": 0.51
+      },
+      "R5_front": {
+        "file": "samples/M08-front-slender-r5.png",
+        "helmet_shell_top_y_approx": 130,
+        "sole_y_approx": 1470,
+        "shoulder_outer_x_approx": [
+          239,
+          779
+        ],
+        "shoulder_width_over_shell_to_sole_height_approx": 0.4
+      },
+      "excludes": "背包翼展、长天线、枪和地面投影均不算肩宽或身高。"
+    },
+    "proportion_outcome": "author_observed_improvement_in_source_drawings",
+    "proportion_result": "相同机体部位的图面宽高比下降，肩胸收窄、髋线提高、腰腿拉长；正侧背恢复更轻巧修长的观感。精确投影和隐面同件性仍需模型核对。",
+    "drawing_target_is_not_measured_result": "约10盔壳高与腿段占比是本轮绘制试值，不作为既定尺寸或生成结果精密量测。",
+    "new_images_user_accepted": false,
+    "runtime_tested": false
+  },
+  "limits": [
+    "二维绘制源图，侧向仍有少量插画透视；隐面和完整变形不由三张图独自证明。",
+    "新修正图按要求交付，尚无逐图新用户认可。"
+  ],
+  "new_turnaround_images_user_accepted": false,
+  "runtime_assets_modified": false,
+  "canon_changed": false,
+  "handoff_sent": false,
+  "later_user_feedback": {
+    "date": "2026-10-23",
+    "scope": "过瘦过长，不以此稿继续改比例",
+    "new_basis": "用户指明歌翼比例正确；两台主形不错，减少过度高达化线条。"
+  }
+}

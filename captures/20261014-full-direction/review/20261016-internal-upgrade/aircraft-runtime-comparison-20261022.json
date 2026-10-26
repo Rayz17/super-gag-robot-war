@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-22",
+  "revision": "aircraft-runtime-comparison-20261022",
+  "existing_batch": "design-followthrough-r1.json",
+  "authority": "direct_user_comparison_request_and_author_asset_review",
+  "latest_user_request": "比较歌翼、雷翎的IP投射、系列/画法与现用Demo机设；若新设计不能更有记忆点/特色，优先现用资产调整配色。",
+  "author_verdict": "两张新稿未显示足以替换当前Demo机设的优势；保留现用机设，后续先做保形配色/材质对齐。",
+  "projection_relation": "来自两个不同IP谱系；应共享本作绘制语言，不应强行改成同机架或仅因一批制作而当成同系列。",
+  "runtime_models": [
+    {
+      "actual_gameplay_input": false,
+      "aircraft": false,
+      "camera_position": "(-33.54, 39.56, -114.6)",
+      "camera_size": 21.7600002288818,
+      "id": "leiling",
+      "image": "leiling_robot.png",
+      "model": "res://assets/formula_lab/linked_campaign_v4/models/leiling.glb",
+      "model_sha256": "7aeab406f65bfd7ed29588738f3eadde0e5f10f5dda90f444d18ca7c57262d31",
+      "pose": "existing idle at 0.20s",
+      "same_normal_tactical_scene": false,
+      "source_geometry_and_paint_unchanged": true,
+      "view": "diagnostic studio using existing game renderer",
+      "visual_size": "(15.56442, 17.0, 9.164582)",
+      "project_model": "game-godot/assets/formula_lab/linked_campaign_v4/models/leiling.glb",
+      "capture_file": "aircraft-runtime-comparison-20261022/leiling_robot.png",
+      "capture_sha256": "256624e19bc10b621ca44c661dd3deb1d32e53421d250e254318e7eeb83e90d2"
+    },
+    {
+      "actual_gameplay_input": false,
+      "aircraft": true,
+      "camera_position": "(-30.1, 46.02428, -108.0)",
+      "camera_size": 28.7999992370605,
+      "id": "leiling",
+      "image": "leiling_aircraft.png",
+      "model": "res://assets/formula_lab/linked_campaign_v4/models/leiling_aircraft.glb",
+      "model_sha256": "44b842fbaa35eb31d31c7ad22d75ec9d23b1e1770a4c6fff975d07009fa74a41",
+      "pose": "existing idle at 0.20s",
+      "same_normal_tactical_scene": false,
+      "source_geometry_and_paint_unchanged": true,
+      "view": "diagnostic studio using existing game renderer",
+      "visual_size": "(22.5, 10.84857, 20.85422)",
+      "project_model": "game-godot/assets/formula_lab/linked_campaign_v4/models/leiling_aircraft.glb",
+      "capture_file": "aircraft-runtime-comparison-20261022/leiling_aircraft.png",
+      "capture_sha256": "75f3dec6c333c9140d1d22abfd9b8b6131859d6cf046afdd58041e3b935ee641"
+    },
+    {
+      "actual_gameplay_input": false,
+      "aircraft": false,
+      "camera_position": "(-33.07051, 39.78239, -113.1174)",
+      "camera_size": 23.3414459228516,
+      "id": "song",
+      "image": "song_robot.png",
+      "model": "res://assets/formula_lab/linked_campaign_v4/models/song.glb",
+      "model_sha256": "cd63f580ac257eef666aee4b2e9b33bd48a3c5571f62980d5b4738aa9cd8e882",
+      "pose": "existing idle at 0.20s",
+      "same_normal_tactical_scene": false,
+      "source_geometry_and_paint_unchanged": true,
+      "view": "diagnostic studio using existing game renderer",
+      "visual_size": "(18.2355, 17.0, 10.01117)",
+      "project_model": "game-godot/assets/formula_lab/linked_campaign_v4/models/song.glb",
+      "capture_file": "aircraft-runtime-comparison-20261022/song_robot.png",
+      "capture_sha256": "a64a3a6a3bd222975d7ed11bb0f35b6c8232e635f8b9162fd1e54130cd59aa77"
+    },
+    {
+      "actual_gameplay_input": false,
+      "aircraft": true,
+      "camera_position": "(-30.1, 44.22317, -108.0)",
+      "camera_size": 28.7999992370605,
+      "id": "song",
+      "image": "song_aircraft.png",
+      "model": "res://assets/formula_lab/linked_campaign_v4/models/song_aircraft.glb",
+      "model_sha256": "c34d30cd1d2fb3bb0ae66dace2c347ca4fe1fd09f9d764c86f8dabd01136cf8e",
+      "pose": "existing idle at 0.20s",
+      "same_normal_tactical_scene": false,
+      "source_geometry_and_paint_unchanged": true,
+      "view": "diagnostic studio using existing game renderer",
+      "visual_size": "(22.5, 7.246338, 18.46313)",
+      "project_model": "game-godot/assets/formula_lab/linked_campaign_v4/models/song_aircraft.glb",
+      "capture_file": "aircraft-runtime-comparison-20261022/song_aircraft.png",
+      "capture_sha256": "26cd03fc00c8a916f1cabb11f4c8df5ca45cd4ab523b6fa658b35dabf6288b8f"
+    }
+  ],
+  "source_evidence": [
+    {
+      "file": "docs/superpowers/specs/data/canon/entities.tsv",
+      "evidence": "V353U047当前喷气重涂定位",
+      "sha256": "1e4a69d834224786309f3f43b9ae1347ef4a14e024e889028b3d86fb03815da5"
+    },
+    {
+      "file": "docs/superpowers/specs/data/canon/character_mecha_art_locks.tsv",
+      "evidence": "CML023/R04星翼巡演当前美术参考与人物机体关系",
+      "sha256": "a9d44abcc647708d5ca80110afd8e14defe7b82aa8e1dd678b1e58c684420ff5"
+    },
+    {
+      "file": "docs/superpowers/specs/data/research/robot_culture_ip_roster_mapping_v0_1.tsv",
+      "evidence": "IP005 Macross文化投射研究映射",
+      "sha256": "04a27bee95d229a55cd2adfb5710d600b165cac18eefad22f44ffcb19800f671"
+    },
+    {
+      "file": "docs/superpowers/specs/data/story/v35_3_playable_roster_expansion_v35_3.tsv",
+      "evidence": "V353U016 Macross、V353U047 Starscream重涂映射；文化来源证据，不据旧首登行推进当前故事",
+      "sha256": "681617716294434707ace1dd7caa170c7a4bdeac3cba3a72380b4611d7d75f2c"
+    },
+    {
+      "file": "game-godot/scripts/formula_lab/linked_campaign/campaign_world.gd",
+      "evidence": "当前load_body/model_key原模型加载与cel材质绑定",
+      "sha256": "6537819a84784531144d9edb52e702a9612b571f8f5911771cf527afe5f52e0c"
+    },
+    {
+      "file": "game-godot/scripts/formula_lab/linked_campaign/rounds/round_world.gd",
+      "evidence": "prepare_resources中的当前人形/航空态路径",
+      "sha256": "4fb9bc988b3c9f470e64d614ee810d6a5d15bc747799b0a8577e2c64363f6e2c"
+    },
+    {
+      "file": "docs/superpowers/specs/production/art-direction-v0.3/series-art-direction-ab-lock-v1.md",
+      "evidence": "Working画法：英雄色、墨线、大色块、最多两级阴影、非玩具反射",
+      "sha256": "094591234a3284690d8ce689330b2ceb61cdd9bf571326ed23eac85dbdf23e85"
+    }
+  ],
+  "findings": {
+    "M08": {
+      "name": "雷翎",
+      "runtime_id": "leiling",
+      "projection": "Transformers / Starscream重涂喷气机谱系",
+      "projection_scope": "项目档案只锁到喷气重涂谱系，未锁定为某个具体原作型号。",
+      "existing": [
+        "喙状窄头、深色红刃、背部放射翼形成鲜明大轮廓。",
+        "深主色与红/象牙切面、黄胸核心已形成集中识别点。",
+        "航空态有多层翼面与推进器群；具体数量与部件收纳仍需原结构工序校核。"
+      ],
+      "draft": [
+        "新稿独立头、长枪、紫色座舱和三角翼清楚，但整体更接近通用航空枪兵。",
+        "没有提出比现用放射翼更强的轮廓记忆点，蓝紫近色使大色块层次偏弱。",
+        "双喷口/翼根和枪轨可作为结构研究参考，不能据此证明整体更优。"
+      ],
+      "decision": "保留现用人形/航空态机设，先做保形换色和材质对齐；新稿不作为整机替换母版。",
+      "colour_trial": "维持深色航空机气质；以墨蓝/钴蓝建立清楚主块，朱红集中翼尖与少数动作部位，黄色收在胸部/传感器。具体比例待同构图色样比较。"
+    },
+    "M14": {
+      "name": "歌翼可变机",
+      "runtime_id": "song",
+      "projection": "Macross / 超时空要塞可变战机与歌声支援谱系",
+      "projection_scope": "项目R04星翼巡演的文化/可变战机投射，不照搬具体VF型号。",
+      "existing": [
+        "长双角、收尖面部、象牙白/红肩翼与垂翼裙甲，轮廓修长且醒目。",
+        "黄色胸部核心与展开翼面形成较稳定的视觉中心。",
+        "现用红白航空态与人形有同一套切色和流线关系。"
+      ],
+      "draft": [
+        "粉白座舱胸和四发动机分配更直白，但头胸和轮廓更普通。",
+        "粉色没有当前歌翼颜色采用回执；从外援候选继续沿用，不等于符合本作当前美术方向。",
+        "四挂舱可追认是结构研究收获，尚未证明比现用翼形更有角色特色。"
+      ],
+      "decision": "保留现用头胸/肩翼/腿足和骨架，先统一红白涂装的色块与材质；新稿不作为整机替换母版。",
+      "colour_trial": "维持象牙白为主，朱红集中胸肩与翼面，墨蓝/石墨负责关节和暗部；减少大面积冷纯白、金属碎高光与常驻划痕。"
+    }
+  },
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "aircraft-runtime-comparison-20261022/leiling_robot.png",
+      "aircraft-runtime-comparison-20261022/leiling_aircraft.png",
+      "aircraft-runtime-comparison-20261022/song_robot.png",
+      "aircraft-runtime-comparison-20261022/song_aircraft.png",
+      "samples/M08-dual-form-r1b.png",
+      "samples/M14-dual-form-r1.png"
+    ],
+    "material_findings": [
+      "新雷翎近似蓝紫铺满、细碎高光和面板密度偏均匀。",
+      "新歌翼粉白色权未经采用，造型趋于通用轻型机。",
+      "现用模型机设更强，但旧贴图仍有常驻划痕、冷灰/硬白切换和局部碎反射，需按Working画法做有限材质清理。"
+    ]
+  },
+  "comparison_limits": [
+    "现用资产由当前游戏加载器独立取图，几何/原贴图未改；新稿是白底二维设定图。二者不具备相同光照、相机或材质条件，不据此量化实机换色效果。",
+    "本轮没有重新游玩整段Demo、执行原生输入、复核连续变形或动作声音。",
+    "没有修改现用模型、贴图、骨架、动作或运行入口；保形色样尚未制作。"
+  ],
+  "new_drafts_recommended_as_replacements": false,
+  "runtime_modified": false,
+  "canon_changed": false,
+  "main_thread_messaged": false,
+  "reader": "aircraft-runtime-comparison-20261022.html",
+  "later_user_correction_and_synthesis": "aircraft-synthesis-production-r3.json",
+  "current_design_route": false
+}

@@ -1,0 +1,90 @@
+{
+  "scope": "头部/双天线与矩形头仓的同件包络研究；不是完整整机模型",
+  "source": "build_head_bay.py",
+  "editable_model": "M11-head-bay-r7.blend",
+  "states": [
+    {
+      "t": 0,
+      "file": "01-deployed.png"
+    },
+    {
+      "t": 0.32,
+      "file": "02-antennas-folded.png"
+    },
+    {
+      "t": 0.62,
+      "file": "03-head-lowering.png"
+    },
+    {
+      "t": 1,
+      "file": "04-stored-hatch-closed.png"
+    }
+  ],
+  "motion": "M11-head-bay-motion-r7.mp4",
+  "rigid_samples_checked": 121,
+  "same_geometry_signature": "e81d168ed8c0dabcabb5f8e5cf32739aaad1d2c1e2f3180ffb01e502462686c6",
+  "mesh_scaling_or_morphing_used": false,
+  "head_design_height_width_envelope": [
+    1.08,
+    1.0
+  ],
+  "antenna_count": 2,
+  "antenna_mast_length": 0.68,
+  "bay_inner_bounds": {
+    "xmin": -0.65,
+    "xmax": 0.65,
+    "ymin": -0.78,
+    "ymax": 0.99,
+    "zmin": -0.65,
+    "zmax": 0.64
+  },
+  "stored_head_bounds": {
+    "min": [
+      -0.5,
+      -0.6100000143051147,
+      -0.5400000214576721
+    ],
+    "max": [
+      0.5,
+      0.7600000500679016,
+      0.5400000214576721
+    ]
+  },
+  "stored_clearance_normalized_units": {
+    "left": 0.15000000000000002,
+    "right": 0.15000000000000002,
+    "front_chin": 0.16999998569488528,
+    "rear_antenna": 0.22999994993209838,
+    "floor": 0.1099999785423279,
+    "closed_lid": 0.0999999785423279
+  },
+  "side_wall_and_floor_vertex_sweep_checked": true,
+  "hatch_sequence": "舱盖已开→折天线→下降/后滑→关盖",
+  "cab_reference_separation": 0.12,
+  "limits": [
+    "归一化草模，不是毫米尺寸或精细头部/车壳",
+    "只检查头部刚体顶点对矩形侧壁/底面及收纳终态；不是整机全三角碰撞认证",
+    "驾驶室仅隔开的包络，不证明真人乘坐和管线布置",
+    "未验证整机重心/受力/变形支撑，也未完整视觉播放检查视频"
+  ],
+  "full_vehicle_transformation_verified": false,
+  "continuous_visual_playback_review_performed": false,
+  "user_accepted": false,
+  "runtime_integrated": false,
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "01-deployed.png",
+      "02-antennas-folded.png",
+      "03-head-lowering.png",
+      "04-stored-hatch-closed.png"
+    ],
+    "findings": [
+      "四状态已查看；头部正常纵向包络和前凸颏甲保持，两根天线同件转动不缩放。",
+      "已修相机，首末状态完整入画；剖切侧壁为观察用，不是无壁结构。",
+      "收纳终态颏甲/天线尾/舱盖有正余量；此结论仅限矩形草模包络。"
+    ],
+    "continuous_playback_review": false
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "evidence_class": "g2_a2_c2_external_raw_screen_trace_validation",
+  "source_manifest": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c2/receipts/actual-input-frame-manifest.json",
+  "validators_recomputed_from_raw_arrays": true,
+  "trusted_self_report_only": false,
+  "strategies": {
+    "A": {
+      "strategy": "A",
+      "input_event_count": 23,
+      "session_call_count": 79,
+      "lifecycle": [
+        "PUBLIC_SITUATION",
+        "EDITABLE_DRAFT",
+        "COMMIT_SUMMARY",
+        "EDITABLE_DRAFT",
+        "COMMIT_SUMMARY",
+        "JOINT_RESOLUTION",
+        "ROUND_RESULT"
+      ],
+      "hold_ms_recomputed": 670.657,
+      "hold_frames_recomputed": 59,
+      "execution_ms_recomputed": 13334.692,
+      "event_ticks_usec": {
+        "GS-R1-E1-VEHICLE": 2437979,
+        "GS-R1-E2-SWARM": 5071334,
+        "GS-R1-E3-CONTACT": 7476340,
+        "GS-R1-E4-CITY-GUN": 11448032,
+        "GS-R1-E5-ROAD-RED": 13382693
+      },
+      "single_instances": {
+        "scene": 40298874349,
+        "control": 42177922643,
+        "session": -9223371996505569809,
+        "director": 40416314871
+      },
+      "driver_direct_session_calls": false,
+      "artillery_gate": {
+        "source_rows": 34,
+        "preflight_states_false": [
+          "COMMIT_SUMMARY",
+          "EDITABLE_DRAFT",
+          "PUBLIC_SITUATION"
+        ],
+        "contact_timeslice_false": "T3.00",
+        "first_true": {
+          "event_id": "GS-R1-E4-CITY-GUN",
+          "timeslice": "T4",
+          "phase": "motion",
+          "engine_frame": 525,
+          "ticks_usec": 11753215
+        },
+        "t4_true_row_count": 5,
+        "physical_shot_before_t4": false,
+        "pass": true
+      },
+      "responsibility": {
+        "strategy": "A",
+        "field_sources": {
+          "round1_heat": "world_result.guardian_heat",
+          "facility_state": "world_result.warning_facility_state",
+          "road_damage": "world_result.road_damage",
+          "contact_timeslice": "event_log[GS-R1-E3-CONTACT].timeslice",
+          "contact_edge_cells": "plan_summary.contact_geometry.shared_contact_edge_cells",
+          "round2_heat": "readonly_round2_preview.world_result.guardian_heat",
+          "round2_margin": "readonly_round2_preview.world_result.remaining_timing_margin"
+        },
+        "copy_recomputed_equal": true,
+        "r2_projection_valid": true,
+        "static_copy_used": false,
+        "pass": true
+      },
+      "comparison": {
+        "source": "keyboard_c",
+        "input_serial": 14,
+        "other_strategy": "B",
+        "current_route_family_id": "A_BODY_INTERCEPT_FAMILY",
+        "other_route_family_id": "B_PROTECT_LANE_FAMILY",
+        "current_resolver_token": "028eb5ce716072492e28418392d2a4c9903d6902a29a0d6ec921a12b67063b09",
+        "other_resolver_token": "c3b307b9698d645598594cb6674c86779a13420b9934cf562f379d112d1f41fa",
+        "current_draft_signature_unchanged": true,
+        "selected_strategy_unchanged": true,
+        "other_result": {
+          "strategy": "B",
+          "field_sources": {
+            "round1_heat": "world_result.guardian_heat",
+            "facility_state": "world_result.warning_facility_state",
+            "road_damage": "world_result.road_damage",
+            "contact_timeslice": "event_log[GS-R1-E3-CONTACT].timeslice",
+            "contact_edge_cells": "plan_summary.contact_geometry.shared_contact_edge_cells",
+            "round2_heat": "readonly_round2_preview.world_result.guardian_heat",
+            "round2_margin": "readonly_round2_preview.world_result.remaining_timing_margin"
+          },
+          "copy_recomputed_equal": true,
+          "r2_projection_valid": true,
+          "static_copy_used": false,
+          "pass": true
+        },
+        "pass": true
+      },
+      "invalid_draft_repair": {
+        "invalid_input_serial": 7,
+        "invalid_draft_hash": "1dc7700d407e7193be7cb4b9cb8f460e6cc68fed6411c89ef06009c5cebec96f",
+        "route_family_failures": [
+          "route_family_endpoint_mismatch"
+        ],
+        "undo_input_serial": 10,
+        "post_undo_draft_hash": "e5c6c808308cce3cbb1c26ce8d6c4d9a4ac26a9653e65c5a2c6737e42b819e4d",
+        "redraw_success_input_serial": 11,
+        "rejected_entry_count_separate": 1,
+        "raw_order_recomputed": true,
+        "pass": true
+      },
+      "timeline": {
+        "payload_shape": "ordered_event_sequence_array_pairs",
+        "preview_hash_recomputed": "f2c371076ce470393f8bff389b6317191053963c5920e0bd8ad8d081cbd44e6e",
+        "execute_hash_recomputed": "f2c371076ce470393f8bff389b6317191053963c5920e0bd8ad8d081cbd44e6e",
+        "adjacent_swap_hash_recomputed": "239d9d4a27b7cd5f77ca1e7bbf70b2e2ae743ea3db2d4868740e8547f57f3cc4",
+        "adjacent_swap_differs": true,
+        "sources_independent": true,
+        "pass": true
+      },
+      "pass": true
+    },
+    "B": {
+      "strategy": "B",
+      "input_event_count": 29,
+      "session_call_count": 72,
+      "lifecycle": [
+        "PUBLIC_SITUATION",
+        "EDITABLE_DRAFT",
+        "COMMIT_SUMMARY",
+        "EDITABLE_DRAFT",
+        "COMMIT_SUMMARY",
+        "JOINT_RESOLUTION",
+        "ROUND_RESULT"
+      ],
+      "hold_ms_recomputed": 681.415,
+      "hold_frames_recomputed": 60,
+      "execution_ms_recomputed": 13322.257,
+      "event_ticks_usec": {
+        "GS-R1-E1-VEHICLE": 17136093,
+        "GS-R1-E2-SWARM": 19756582,
+        "GS-R1-E3-CONTACT": 22175678,
+        "GS-R1-E4-CITY-GUN": 26147193,
+        "GS-R1-E5-ROAD-RED": 28074098
+      },
+      "single_instances": {
+        "scene": 74406954477,
+        "control": 76235671159,
+        "session": -9223371962397489675,
+        "director": 74524395000
+      },
+      "driver_direct_session_calls": false,
+      "artillery_gate": {
+        "source_rows": 34,
+        "preflight_states_false": [
+          "COMMIT_SUMMARY",
+          "EDITABLE_DRAFT",
+          "PUBLIC_SITUATION"
+        ],
+        "contact_timeslice_false": "T3.25",
+        "first_true": {
+          "event_id": "GS-R1-E4-CITY-GUN",
+          "timeslice": "T4",
+          "phase": "motion",
+          "engine_frame": 1298,
+          "ticks_usec": 26426135
+        },
+        "t4_true_row_count": 5,
+        "physical_shot_before_t4": false,
+        "pass": true
+      },
+      "responsibility": {
+        "strategy": "B",
+        "field_sources": {
+          "round1_heat": "world_result.guardian_heat",
+          "facility_state": "world_result.warning_facility_state",
+          "road_damage": "world_result.road_damage",
+          "contact_timeslice": "event_log[GS-R1-E3-CONTACT].timeslice",
+          "contact_edge_cells": "plan_summary.contact_geometry.shared_contact_edge_cells",
+          "round2_heat": "readonly_round2_preview.world_result.guardian_heat",
+          "round2_margin": "readonly_round2_preview.world_result.remaining_timing_margin"
+        },
+        "copy_recomputed_equal": true,
+        "r2_projection_valid": true,
+        "static_copy_used": false,
+        "pass": true
+      },
+      "comparison": {
+        "source": "joy_back",
+        "input_serial": 12,
+        "other_strategy": "A",
+        "current_route_family_id": "B_PROTECT_LANE_FAMILY",
+        "other_route_family_id": "A_BODY_INTERCEPT_FAMILY",
+        "current_resolver_token": "6b2c5392eedb8d9b9e4d44658d481492c2a3498c02e16762c758b51bfd331e50",
+        "other_resolver_token": "b4511d8fe51af415611c4e4f0c26e6226c1c0816b2c256726c8844de1615ad50",
+        "current_draft_signature_unchanged": true,
+        "selected_strategy_unchanged": true,
+        "other_result": {
+          "strategy": "A",
+          "field_sources": {
+            "round1_heat": "world_result.guardian_heat",
+            "facility_state": "world_result.warning_facility_state",
+            "road_damage": "world_result.road_damage",
+            "contact_timeslice": "event_log[GS-R1-E3-CONTACT].timeslice",
+            "contact_edge_cells": "plan_summary.contact_geometry.shared_contact_edge_cells",
+            "round2_heat": "readonly_round2_preview.world_result.guardian_heat",
+            "round2_margin": "readonly_round2_preview.world_result.remaining_timing_margin"
+          },
+          "copy_recomputed_equal": true,
+          "r2_projection_valid": true,
+          "static_copy_used": false,
+          "pass": true
+        },
+        "pass": true
+      },
+      "invalid_draft_repair": {
+        "required": false,
+        "pass": true
+      },
+      "timeline": {
+        "payload_shape": "ordered_event_sequence_array_pairs",
+        "preview_hash_recomputed": "36d1216bc2176377b9929d87d518a7d81ec0a8e9c41cb81a807d17e841dbb2aa",
+        "execute_hash_recomputed": "36d1216bc2176377b9929d87d518a7d81ec0a8e9c41cb81a807d17e841dbb2aa",
+        "adjacent_swap_hash_recomputed": "a2596d6fe9a122fad3ee4b47d12516fff8931abc7b7ca779cf87552b7049c5c2",
+        "adjacent_swap_differs": true,
+        "sources_independent": true,
+        "pass": true
+      },
+      "pass": true
+    }
+  },
+  "preview_execute_same_timeline": true,
+  "timeline_tokens_recomputed_from_ordered_preview_and_active_plan_payloads": true,
+  "timeline_adjacent_swap_negative_control": true,
+  "responsibility_copy_recomputed_from_public_preview_fields": true,
+  "active_comparison_readonly_distinct_result": true,
+  "accepted_invalid_draft_undo_redraw_recomputed": true,
+  "c2_product_copy_whitelist_only": true,
+  "logical_order": [
+    "GS-R1-E1-VEHICLE",
+    "GS-R1-E2-SWARM",
+    "GS-R1-E3-CONTACT",
+    "GS-R1-E4-CITY-GUN",
+    "GS-R1-E5-ROAD-RED"
+  ],
+  "actual_frame_artillery_gate": {
+    "checked_frame_count": 15,
+    "all_non_t4_frames_false": true,
+    "all_non_t4_frames_without_physical_shot_mark": true
+  },
+  "actual_product_frames": {
+    "invalid_route_family_draft": "01B_A_INVALID_ROUTE_DRAFT",
+    "keyboard_compare": "02C_A_COMPARE_OTHER",
+    "controller_compare": "07C_B_COMPARE_OTHER",
+    "frame_count": 15,
+    "pass": true
+  },
+  "status": [
+    "SCREEN_INPUT_PREFLIGHT_SUPPORTED",
+    "LIVE_DRAFT_PREFLIGHT_SUPPORTED",
+    "MAP_CONSEQUENCE_PREFLIGHT_SUPPORTED",
+    "FUN_NOT_PROVEN"
+  ],
+  "pass": true
+}

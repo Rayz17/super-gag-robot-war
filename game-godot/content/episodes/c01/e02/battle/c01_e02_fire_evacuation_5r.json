@@ -1,0 +1,467 @@
+{
+  "battle_id": "C01E02-FIRE-EVACUATION-FIVE-ROUND",
+  "variant_id": "story_first_representative_route_v1",
+  "status": "candidate_runtime_data",
+  "title": "四张封存令 / 五回合消防撤离",
+  "scenario_driver": "c01e02_fire_evacuation_v1",
+  "runtime_contract_source": "DATA_C01E02_RUNTIME_CONTRACT_V1",
+  "graybox_source": "DATA_C01E02_GRAYBOX_CONSTANTS_V1",
+  "canon_source": "DOC_V359_C01E02_STORY_FIRST_V1",
+  "presentation_manifest_path": "res://assets/battle_presentation/c01/fire_evacuation/manifest.json",
+  "grid": {
+    "width": 12,
+    "height": 14,
+    "blocked": []
+  },
+  "coordinate_contract": {
+    "source_system": "one_based_xy",
+    "runtime_system": "zero_based_xy",
+    "runtime_offset": [-1, -1]
+  },
+  "turn_limit": 5,
+  "withdraw_allowed": false,
+  "failure_policy": "r1_r4_restart_without_commit_r5_local_checkpoint",
+  "battle_clear_scope": "episode_local_until_baihan_adv_and_rt038",
+  "objective_text": "第1至4回合让四组29人离楼；第5回合反折第三桥段（SEG3），保住三名核心人员和两名消防接驳员的退路。",
+  "start_prompt": "这里不是歼灭战。按小机、工作人员、消防支援的顺序完成工序，再结束回合。",
+  "stable_object_bindings": [
+    {
+      "binding_id": "BIND_C01E02_DOG_STREAMER_TO_SMOKE_ROUTE",
+      "stable_object_id": "OBJ_C01E02_DOG_SMOKE_STREAMER",
+      "label": "机器犬读出的反向低位烟流",
+      "targets": [{"kind": "unit", "target_id": "machine_dog"}, {"kind": "battle_flag", "target_id": "DOG_GUIDE_HOSE_HARNESS"}]
+    },
+    {
+      "binding_id": "BIND_C01E02_TEMPERATURE_STRIP_TO_DIEDIE_CLUTCH",
+      "stable_object_id": "OBJ_C01E02_DIEDIE_TEMPERATURE_STRIP",
+      "label": "跌跌带回的东冷西白温度片",
+      "targets": [{"kind": "unit", "target_id": "diedie"}, {"kind": "battle_flag", "target_id": "DIEDIE_CLUTCH_PREP"}]
+    },
+    {
+      "binding_id": "BIND_C01E02_DOUBLE_PIPE_TO_FIRE_BRANCH",
+      "stable_object_id": "OBJ_C01E02_DOUBLE_WALL_PIPE",
+      "label": "共同消防图中的双层旧管",
+      "targets": [{"kind": "unit", "target_id": "fire_bridge"}, {"kind": "battle_flag", "target_id": "JICUN_CONFIRM_FIRE_BRANCH"}]
+    }
+  ],
+  "machine_claim_cues": [
+    {
+      "cue_id": "CUE_C01E02_FIRE_BRIDGE_REVERSE_BRACE",
+      "unit_id": "fire_bridge",
+      "visible_action": "消防架桥机把SEG3反折成斜撑，左前腿越过红线仍不换位，以真实过载保住馆内五人的最后退路。"
+    }
+  ],
+  "units": [
+    {
+      "id": "diedie",
+      "canon_entity_id": "V353U038",
+      "name": "跌跌 / 泵站机械工序",
+      "team": "player",
+      "cell": [9, 8],
+      "source_cell": [10, 9],
+      "hp": 1,
+      "move": 3,
+      "map_token": "跌",
+      "scenario_role": "small_context_actor",
+      "no_hp_ui": true,
+      "weapons": []
+    },
+    {
+      "id": "machine_dog",
+      "canon_entity_id": "V353U040",
+      "name": "机器犬 / C3与软管牵引",
+      "team": "player",
+      "cell": [7, 4],
+      "source_cell": [8, 5],
+      "hp": 1,
+      "move": 3,
+      "map_token": "犬",
+      "scenario_role": "small_context_actor_r1_only",
+      "no_hp_ui": true,
+      "weapons": []
+    },
+    {
+      "id": "jicun",
+      "canon_entity_id": "CH_JICUN",
+      "name": "纪存 / 现场工序",
+      "team": "player",
+      "cell": [10, 5],
+      "hp": 1,
+      "move": 0,
+      "map_token": "纪",
+      "scenario_role": "staff_process",
+      "no_hp_ui": true,
+      "weapons": []
+    },
+    {
+      "id": "tangjiao",
+      "canon_entity_id": "CH_TANGJIAO",
+      "name": "唐胶 / 材料工序",
+      "team": "player",
+      "cell": [10, 6],
+      "hp": 1,
+      "move": 0,
+      "map_token": "唐",
+      "scenario_role": "staff_process",
+      "no_hp_ui": true,
+      "weapons": []
+    },
+    {
+      "id": "doudeng",
+      "canon_entity_id": "CH001",
+      "name": "兜灯 / 电气硬停工序",
+      "team": "player",
+      "cell": [10, 7],
+      "hp": 1,
+      "move": 0,
+      "map_token": "兜",
+      "scenario_role": "staff_process",
+      "no_hp_ui": true,
+      "weapons": []
+    },
+    {
+      "id": "fire_bridge",
+      "canon_entity_id": "V353U034",
+      "name": "消防架桥机 / 固定联合救援端",
+      "team": "player",
+      "cell": [3, 10],
+      "source_cell": [4, 11],
+      "hp": 1,
+      "move": 0,
+      "map_token": "桥",
+      "scenario_role": "fixed_full_map_support",
+      "no_hp_ui": true,
+      "no_attack_kit": true,
+      "weapons": []
+    },
+    {
+      "id": "evac_a11",
+      "name": "A11 / 普通观众11人",
+      "team": "object",
+      "cell": [8, 2],
+      "source_cell": [9, 3],
+      "hp": 1,
+      "move": 0,
+      "map_token": "11",
+      "scenario_role": "evac_token",
+      "people_count": 11,
+      "no_hp_ui": true,
+      "weapons": []
+    },
+    {
+      "id": "evac_b10",
+      "name": "B10 / 普通观众10人",
+      "team": "object",
+      "cell": [9, 3],
+      "source_cell": [10, 4],
+      "hp": 1,
+      "move": 0,
+      "map_token": "10",
+      "scenario_role": "evac_token",
+      "people_count": 10,
+      "no_hp_ui": true,
+      "weapons": []
+    },
+    {
+      "id": "evac_c3",
+      "name": "C3 / 小满、阿澄与前厅值守员",
+      "team": "object",
+      "cell": [7, 4],
+      "source_cell": [8, 5],
+      "hp": 1,
+      "move": 0,
+      "map_token": "3",
+      "scenario_role": "evac_token",
+      "people_count": 3,
+      "never_split": true,
+      "no_hp_ui": true,
+      "weapons": []
+    },
+    {
+      "id": "evac_d5",
+      "name": "D5 / 四名需协助成人与同一维修员",
+      "team": "object",
+      "cell": [9, 5],
+      "source_cell": [10, 6],
+      "hp": 1,
+      "move": 0,
+      "map_token": "5",
+      "scenario_role": "evac_token_powered_pallet",
+      "people_count": 5,
+      "contains_repair_worker_from_e01": true,
+      "no_hp_ui": true,
+      "weapons": []
+    },
+    {
+      "id": "needle_cart",
+      "canon_entity_id": "ENEMY_COOLING_NEEDLE_CART",
+      "name": "冷却针车 / 固定轨道工具",
+      "team": "object",
+      "cell": [8, 9],
+      "source_cell": [9, 10],
+      "hp": 1,
+      "move": 0,
+      "map_token": "针",
+      "scenario_role": "functional_rail_tool",
+      "no_hp_ui": true,
+      "no_attack_kit": true,
+      "weapons": []
+    },
+    {
+      "id": "ruler_machine",
+      "canon_entity_id": "ENEMY_CUTTING_RULER_MACHINE",
+      "name": "切割标尺机 / 固定轨道工具",
+      "team": "object",
+      "cell": [10, 12],
+      "source_cell": [11, 13],
+      "hp": 1,
+      "move": 0,
+      "map_token": "尺",
+      "scenario_role": "functional_rail_tool",
+      "no_hp_ui": true,
+      "no_attack_kit": true,
+      "weapons": []
+    },
+    {
+      "id": "guardian_z_passive",
+      "canon_entity_id": "V353U001",
+      "name": "馆守Z / 半跪被动冷却",
+      "team": "object",
+      "cell": [10, 1],
+      "hp": 1,
+      "move": 0,
+      "map_token": "Z",
+      "scenario_role": "passive_scene_anchor",
+      "not_player_controllable": true,
+      "no_hp_ui": true,
+      "weapons": []
+    },
+    {
+      "id": "brave_transport",
+      "canon_entity_id": "MECHA_BRAVE_FIST_PROTOTYPE",
+      "name": "勇拳试作机 / 封闭运输架",
+      "team": "object",
+      "cell": [6, 10],
+      "source_cell": [7, 11],
+      "hp": 1,
+      "move": 0,
+      "map_token": "勇",
+      "scenario_role": "static_transport_asset",
+      "not_player_controllable": true,
+      "no_hp_ui": true,
+      "weapons": []
+    },
+    {
+      "id": "fire_crew_f2a",
+      "name": "城市消防接驳员F2A",
+      "team": "object",
+      "cell": [0, 5],
+      "hp": 1,
+      "move": 0,
+      "map_token": "F",
+      "scenario_role": "r5_external_handoff_adult",
+      "hidden": true,
+      "no_hp_ui": true,
+      "weapons": []
+    },
+    {
+      "id": "fire_crew_f2b",
+      "name": "城市消防接驳员F2B",
+      "team": "object",
+      "cell": [0, 7],
+      "hp": 1,
+      "move": 0,
+      "map_token": "F",
+      "scenario_role": "r5_external_handoff_adult",
+      "hidden": true,
+      "no_hp_ui": true,
+      "weapons": []
+    }
+  ],
+  "objectives": [
+    {"id": "c3_custody", "name": "C3照看组完整", "cell": [0, 6], "integrity": 1, "required": true, "scenario_role": "guard"},
+    {"id": "b1_fire_pump", "name": "B1泵手动低压", "cell": [11, 9], "integrity": 1, "required": true, "scenario_role": "guard"},
+    {"id": "west_exit", "name": "西门撤离口", "cell": [1, 6], "integrity": 1, "required": true, "scenario_role": "egress"},
+    {"id": "five_person_egress", "name": "R5五人退路", "cell": [6, 7], "integrity": 1, "required": true, "scenario_role": "r5_guard"}
+  ],
+  "scenario_contract": {
+    "source_grid": "12x14_one_based_eight_neighbor_no_corner_cut",
+    "phase_order_r1_r4": ["small_units", "staff_work", "fire_support", "enemy_tools", "evac_auto", "environment", "local_receipt"],
+    "phase_order_r5": ["relation_event", "f2_entry", "local_checkpoint", "brave_preview", "fire_support", "beam_fall", "local_guard"],
+    "initial_state": {
+      "people_initial": 32,
+      "evac_people": 29,
+      "core_staff_inside": 3,
+      "pump_state": "ZERO_PRESSURE_MIL_LOCK",
+      "door_state": "HALF_OPEN_LOCKED",
+      "bridge_state": "STOWED",
+      "needle_state": "RAIL_ENTRY",
+      "ruler_state": "RAIL_ENTRY",
+      "qihai_write_state": "ACTIVE",
+      "city_fire_support_state": "ACTIVE",
+      "guardian_z_state": "HALF_KNEEL_MAIN_AND_CHEST_OFF_ARM_ATTACHED",
+      "brave_state": "LOCKED_LICENSE_DARK_PRESSURE_ZERO_BODY_ZERO",
+      "baihan_state": "NO_CELL_REMOTE_ONLY"
+    },
+    "fire_points_by_round": {"1": 3, "2": 1, "3": 1, "4": 1, "5": 1},
+    "staff_ap_by_round": {"1": 2, "2": 2, "3": 2, "4": 2, "5": 0},
+    "round_layers": {
+      "1": [
+        {"id": "small_units", "required": ["DIEDIE_CLUTCH_PREP", "DOG_GUIDE_HOSE_HARNESS"]},
+        {"id": "staff_work", "required": ["TANGJIAO_BARRIER_PREP", "DOUDENG_TRACE_LOCK"]},
+        {"id": "fire_support", "required": ["FIRE_DEPLOY_SEG1_SEG2_SEG3"]}
+      ],
+      "2": [
+        {"id": "small_units", "required": ["DIEDIE_LATCH_RESET"]},
+        {"id": "staff_work", "required": ["JICUN_INNER_DOOR", "TANGJIAO_BARRIER_SHIFT"]},
+        {"id": "fire_support", "one_of": [["FIRE_WATER_CURTAIN", "FIRE_PREEMPTIVE_INTERFACE_FLUSH"]]}
+      ],
+      "3": [
+        {"id": "small_units", "required": ["DIEDIE_CLUTCH_LOCK"]},
+        {"id": "staff_work", "required": ["DOUDENG_LOW_VOLTAGE_BYPASS", "JICUN_CONFIRM_FIRE_BRANCH"]},
+        {"id": "fire_support", "one_of": [["FIRE_INTERFACE_FLUSH", "FIRE_DELAYED_WATER_CURTAIN"]]}
+      ],
+      "4": [
+        {"id": "small_units", "required": ["DIEDIE_MOVE_TO_RECESS"]},
+        {"id": "staff_work", "required": ["TANGJIAO_TURN_BARRIER", "DOUDENG_BRIDGE_COOLING"]},
+        {"id": "fire_support", "required": ["FIRE_DECK_COOLING"]}
+      ],
+      "5": [
+        {"id": "fire_support", "required": ["FIRE_REVERSE_SEG3"]}
+      ]
+    },
+    "action_catalog": {
+      "DIEDIE_CLUTCH_PREP": {"round": 1, "layer": "small_units", "actor_id": "diedie", "label": "准备机械离合", "required_cell": [9, 9]},
+      "DOG_GUIDE_HOSE_HARNESS": {"round": 1, "layer": "small_units", "actor_id": "machine_dog", "label": "挂接C3与消防软管", "required_cell": [7, 4]},
+      "TANGJIAO_BARRIER_PREP": {"round": 1, "layer": "staff_work", "actor_id": "tangjiao", "label": "按纹理准备隔板"},
+      "DOUDENG_TRACE_LOCK": {"round": 1, "layer": "staff_work", "actor_id": "doudeng", "label": "锁定低温示踪边界"},
+      "FIRE_DEPLOY_SEG1_SEG2_SEG3": {"round": 1, "layer": "fire_support", "actor_id": "fire_bridge", "label": "确认SEG1→SEG2→SEG3联合施工", "fire_cost": 3, "targeting_mode": "ordered_bridge_deploy"},
+
+      "DIEDIE_LATCH_RESET": {"round": 2, "layer": "small_units", "actor_id": "diedie", "label": "复位泵闩", "required_cell": [9, 9]},
+      "JICUN_INNER_DOOR": {"round": 2, "layer": "staff_work", "actor_id": "jicun", "label": "保持内侧防火门"},
+      "TANGJIAO_BARRIER_SHIFT": {"round": 2, "layer": "staff_work", "actor_id": "tangjiao", "label": "转斜材料隔板"},
+      "FIRE_WATER_CURTAIN": {"round": 2, "layer": "fire_support", "actor_id": "fire_bridge", "label": "护人水幕 / D5烟值低，针车接触", "fire_cost": 1},
+      "FIRE_PREEMPTIVE_INTERFACE_FLUSH": {"round": 2, "layer": "fire_support", "actor_id": "fire_bridge", "label": "抢先冲洗 / 针车后退，D5烟值高", "fire_cost": 1},
+
+      "DIEDIE_CLUTCH_LOCK": {"round": 3, "layer": "small_units", "actor_id": "diedie", "label": "锁定机械离合", "required_cell": [9, 9]},
+      "DOUDENG_LOW_VOLTAGE_BYPASS": {"round": 3, "layer": "staff_work", "actor_id": "doudeng", "label": "接入消防低压旁路"},
+      "JICUN_CONFIRM_FIRE_BRANCH": {"round": 3, "layer": "staff_work", "actor_id": "jicun", "label": "确认补偿工序"},
+      "FIRE_INTERFACE_FLUSH": {"round": 3, "layer": "fire_support", "actor_id": "fire_bridge", "label": "冲洗针车接口", "fire_cost": 1, "requires_r2_choice": "FIRE_WATER_CURTAIN"},
+      "FIRE_DELAYED_WATER_CURTAIN": {"round": 3, "layer": "fire_support", "actor_id": "fire_bridge", "label": "补延迟水幕", "fire_cost": 1, "requires_r2_choice": "FIRE_PREEMPTIVE_INTERFACE_FLUSH"},
+
+      "DIEDIE_MOVE_TO_RECESS": {"round": 4, "layer": "small_units", "actor_id": "diedie", "label": "退入泵站检修凹位", "required_cell": [8, 8]},
+      "TANGJIAO_TURN_BARRIER": {"round": 4, "layer": "staff_work", "actor_id": "tangjiao", "label": "隔板转向慢速组背风面"},
+      "DOUDENG_BRIDGE_COOLING": {"round": 4, "layer": "staff_work", "actor_id": "doudeng", "label": "批准桥面冷却边界"},
+      "FIRE_DECK_COOLING": {"round": 4, "layer": "fire_support", "actor_id": "fire_bridge", "label": "剩余冷却全部送桥面", "fire_cost": 1},
+
+      "FIRE_REVERSE_SEG3": {"round": 5, "layer": "fire_support", "actor_id": "fire_bridge", "label": "反折SEG3保住五人退路", "fire_cost": 1}
+    },
+    "round_receipts": {
+      "1": {
+        "token_cells": {"evac_a11": [7, 4], "evac_b10": [8, 4], "evac_c3": [6, 5], "evac_d5": [8, 5]},
+        "smoke": {"evac_a11": 0, "evac_b10": 1, "evac_c3": 0, "evac_d5": 1}
+      },
+      "2": {
+        "token_cells": {"evac_a11": [6, 6], "evac_b10": [6, 7], "evac_c3": [4, 5], "evac_d5": [8, 7]}
+      },
+      "3": {
+        "token_cells": {"evac_a11": [3, 6], "evac_b10": [3, 7], "evac_c3": [2, 5], "evac_d5": [4, 7]},
+        "smoke": {"evac_a11": 0, "evac_b10": 1, "evac_c3": 0, "evac_d5": 2}
+      },
+      "4": {
+        "token_cells": {"evac_a11": [0, 4], "evac_b10": [0, 5], "evac_c3": [0, 6], "evac_d5": [0, 7]},
+        "people_outside": 29,
+        "tokens_outside": 4
+      }
+    },
+    "ordered_bridge_deployment": {
+      "sequence": ["SEG1", "SEG2", "SEG3"],
+      "target_cells": {
+        "SEG1": [2, 6],
+        "SEG2": [4, 6],
+        "SEG3": [6, 6]
+      },
+      "segment_cells": {
+        "SEG1": [[2, 6], [3, 6]],
+        "SEG2": [[4, 6], [5, 6]],
+        "SEG3": [[6, 6], [7, 6]]
+      },
+      "invalid_preview_cost": 0
+    },
+    "evac_routes": {
+      "evac_a11": [[8, 2], [8, 3], [7, 3], [7, 4], [6, 5], [6, 6], [5, 6], [4, 6], [3, 6], [2, 6], [1, 5], [0, 4]],
+      "evac_b10": [[9, 3], [9, 4], [8, 4], [7, 5], [7, 6], [6, 7], [5, 7], [4, 7], [3, 7], [2, 7], [1, 6], [0, 5]],
+      "evac_c3": [[7, 4], [7, 5], [6, 5], [5, 5], [4, 5], [3, 5], [2, 5], [1, 6], [0, 6]],
+      "evac_d5": [[9, 5], [8, 5], [8, 6], [8, 7], [7, 7], [6, 7], [5, 7], [4, 7], [3, 7], [2, 7], [1, 7], [0, 7]]
+    },
+    "evac_steps_by_round": {
+      "evac_a11": [3, 2, 3, 3],
+      "evac_b10": [2, 3, 3, 3],
+      "evac_c3": [2, 2, 2, 2],
+      "evac_d5": [1, 2, 4, 4]
+    },
+    "evac_tick_priority": ["evac_c3", "evac_b10", "evac_d5", "evac_a11"],
+    "tool_motion": {
+      "1": {
+        "needle_cart": {"body_path": [[8, 9], [7, 9]], "arm_path": [], "end_state": "R1_BODY_RAIL_ENTRY"},
+        "ruler_machine": {"body_path": [[10, 12], [10, 11]], "arm_path": [], "end_state": "R1_BODY_RAIL_ENTRY"}
+      },
+      "2_water": {
+        "needle_cart": {"body_path": [[7, 9]], "arm_path": [[7, 8], [7, 7]], "end_state": "CONTACT_SEG3_INTERFACE"},
+        "ruler_machine": {"body_path": [[10, 11], [10, 10], [10, 11]], "arm_path": [[10, 9]], "end_state": "DEFLECTED_ARM_RETRACTED"}
+      },
+      "2_preemptive": {
+        "needle_cart": {"body_path": [[7, 9], [6, 9]], "arm_path": [], "end_state": "PREEMPTIVE_RECOIL"},
+        "ruler_machine": {"body_path": [[10, 11], [10, 10], [10, 11]], "arm_path": [[10, 9]], "end_state": "DEFLECTED_ARM_RETRACTED"}
+      },
+      "3_water": {
+        "needle_cart": {"body_path": [[7, 9], [6, 9]], "arm_path": [[7, 7], [7, 8]], "end_state": "RECOILED_ARM_RETRACTED"}
+      },
+      "3_preemptive": {
+        "needle_cart": {"body_path": [[6, 9]], "arm_path": [], "end_state": "RECOILED_ARM_RETRACTED"}
+      }
+    },
+    "r5_entry_routes": {
+      "fire_crew_f2a": [[0, 5], [1, 5], [2, 5], [2, 6]],
+      "fire_crew_f2b": [[0, 7], [1, 7], [2, 7]]
+    },
+    "r5_egress_routes": {
+      "jicun": [[9, 9], [9, 8], [8, 7], [7, 7], [6, 7], [5, 7], [4, 7], [3, 7], [2, 7], [1, 7]],
+      "tangjiao": [[8, 7], [7, 7], [6, 7], [5, 7], [4, 7], [3, 7], [2, 7], [1, 7]],
+      "doudeng": [[9, 3], [8, 4], [7, 5], [6, 5], [5, 5], [4, 5], [3, 5], [2, 5], [1, 6]],
+      "fire_crew_f2a": [[2, 6], [1, 6]],
+      "fire_crew_f2b": [[2, 7], [1, 7]]
+    },
+    "r5_egress_release_order": ["fire_crew_f2b", "tangjiao", "jicun", "doudeng", "fire_crew_f2a"],
+    "r5_positions": {
+      "jicun": [9, 9],
+      "tangjiao": [8, 7],
+      "doudeng": [9, 3],
+      "diedie": [8, 8],
+      "fire_crew_f2a": [2, 6],
+      "fire_crew_f2b": [2, 7],
+      "machine_dog": [0, 6]
+    },
+    "fire_bridge_footprint_source": {
+      "body": [[4, 11], [5, 11], [4, 12], [5, 12]],
+      "legs": [[3, 10], [6, 10], [3, 13], [6, 13]],
+      "hydrant": [2, 12]
+    },
+    "bridge_segments_source": {
+      "SEG1": [[3, 7], [4, 7]],
+      "SEG2": [[5, 7], [6, 7]],
+      "SEG3": [[7, 7], [8, 7]],
+      "service_strip": [[7, 8], [8, 8]]
+    },
+    "hard_nonclaims": [
+      "NO_HAOSI_IN_E02",
+      "NO_GUARDIAN_Z_BODY_ACTION",
+      "NO_BRAVE_BODY_ACTION",
+      "NO_BAIHAN_CELL_HP_OR_TARGET",
+      "NO_FIRE_BRIDGE_FREE_MOVE_HP_ATTACK_OR_COUNTER",
+      "NO_EPISODE_PERSISTENCE_BEFORE_BAIHAN_ADV"
+    ]
+  },
+  "mid_events": [],
+  "patch_catalog": {}
+}

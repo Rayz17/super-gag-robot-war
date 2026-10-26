@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024">
+  <title>Guardian Z south shield hold block bash geometry guide</title>
+  <desc>Internal pose-only guide. Three 512 by 1024 cells share one body proportion and foot pivot. Not final art.</desc>
+  <defs>
+    <style>
+      .panel { fill:#f3f0e8; stroke:#24333b; stroke-width:4; }
+      .axis { fill:none; stroke:#18a6a6; stroke-width:8; stroke-dasharray:18 14; opacity:.78; }
+      .joint { fill:#ffd35b; stroke:#241e19; stroke-width:5; }
+      .limb-back { fill:none; stroke:#17242e; stroke-width:58; stroke-linecap:round; stroke-linejoin:round; }
+      .limb-front { fill:none; stroke:#294b70; stroke-width:42; stroke-linecap:round; stroke-linejoin:round; }
+      .torso { fill:#243f5d; stroke:#121a21; stroke-width:9; }
+      .chest { fill:#bf3c32; stroke:#e7b44d; stroke-width:8; }
+      .core { fill:#194d80; stroke:#e7b44d; stroke-width:7; }
+      .head { fill:#202d3b; stroke:#121a21; stroke-width:8; }
+      .horn { fill:#e7b44d; stroke:#382d20; stroke-width:6; }
+      .eye { fill:#f9e17a; stroke:#2a2520; stroke-width:4; }
+      .leg { fill:#243f5d; stroke:#121a21; stroke-width:10; }
+      .foot { fill:#1b3047; stroke:#121a21; stroke-width:9; }
+      .shield { fill:#234f82; stroke:#242c32; stroke-width:18; stroke-linejoin:round; }
+      .shield-panel { fill:#eee7d6; stroke:#d29c36; stroke-width:7; stroke-linejoin:round; }
+      .shield-spine { fill:none; stroke:#303a40; stroke-width:18; stroke-linecap:round; }
+      .force { fill:none; stroke:#e24b3e; stroke-width:12; stroke-linecap:round; marker-end:url(#arrow); }
+      .pivot { stroke:#d94538; stroke-width:6; }
+      .grip { fill:#62e0cc; stroke:#132a2a; stroke-width:6; }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,6 L0,12 z" fill="#e24b3e"/>
+    </marker>
+    <g id="head">
+      <path class="head" d="M-54,-52 L-28,-84 L30,-79 L58,-42 L43,34 L0,55 L-43,35 Z"/>
+      <path class="horn" d="M-38,-60 L-95,-111 L-76,-28 Z"/>
+      <path class="horn" d="M30,-68 L87,-108 L67,-22 Z"/>
+      <path class="horn" d="M-3,-84 L18,-139 L27,-76 Z"/>
+      <path class="eye" d="M-38,-18 L-3,-8 L-14,9 L-42,2 Z"/>
+      <path class="eye" d="M4,-8 L40,-18 L43,2 L14,9 Z"/>
+    </g>
+    <g id="torso">
+      <path class="torso" d="M-111,-40 L-72,-104 L77,-100 L116,-25 L82,111 L-77,112 Z"/>
+      <path class="chest" d="M-94,-37 L-17,-72 L-8,56 L-73,75 Z"/>
+      <path class="chest" d="M-12,-73 L79,-43 L69,74 L0,56 Z"/>
+      <path class="core" d="M-19,-70 L15,-70 L18,57 L-7,61 Z"/>
+    </g>
+  </defs>
+
+  <rect x="4" y="4" width="504" height="1016" rx="20" class="panel"/>
+  <rect x="516" y="4" width="504" height="1016" rx="20" class="panel"/>
+  <rect x="1028" y="4" width="504" height="1016" rx="20" class="panel"/>
+
+  <!-- HOLD: upright ready stance, shield fully in front, two hands on rear grips. -->
+  <g id="shield-hold">
+    <path class="axis" d="M405,142 L103,835"/>
+    <path class="leg" d="M228,596 L184,722 L166,859 L238,872 L267,733 L286,608 Z"/>
+    <path class="leg" d="M301,600 L308,736 L321,864 L391,848 L368,711 L358,585 Z"/>
+    <path class="foot" d="M147,847 L238,850 L254,895 L133,895 Z"/>
+    <path class="foot" d="M315,844 L390,831 L417,886 L316,895 Z"/>
+    <g transform="translate(286 242) rotate(-13)"><use href="#head"/></g>
+    <g transform="translate(286 424) rotate(-10)"><use href="#torso"/></g>
+    <path class="limb-back" d="M205,351 L150,465 L174,541"/>
+    <path class="limb-front" d="M205,351 L150,465 L174,541"/>
+    <path class="limb-back" d="M363,351 L331,463 L273,528"/>
+    <path class="limb-front" d="M363,351 L331,463 L273,528"/>
+    <path class="shield" d="M75,331 L208,284 L302,365 L280,625 L157,772 L61,655 Z"/>
+    <path class="shield-panel" d="M94,353 L202,317 L267,379 L249,593 L160,719 L91,630 Z"/>
+    <path class="shield-spine" d="M197,326 L173,699"/>
+    <circle class="grip" cx="174" cy="541" r="20"/>
+    <circle class="grip" cx="273" cy="528" r="20"/>
+    <path class="force" d="M422,285 L310,421"/>
+    <path class="pivot" d="M236,896 L276,896 M256,876 L256,916"/>
+  </g>
+
+  <!-- BLOCK: crouched brace, shield high and forward, shoulders-elbows-wrists form two load paths. -->
+  <g id="shield-block">
+    <path class="axis" d="M917,142 L615,835"/>
+    <path class="leg" d="M727,603 L652,719 L622,853 L704,877 L751,739 L789,622 Z"/>
+    <path class="leg" d="M814,613 L844,720 L881,850 L949,819 L895,686 L874,587 Z"/>
+    <path class="foot" d="M598,840 L707,853 L721,899 L583,890 Z"/>
+    <path class="foot" d="M868,827 L952,802 L989,865 L878,894 Z"/>
+    <g transform="translate(805 269) rotate(-17)"><use href="#head"/></g>
+    <g transform="translate(802 455) rotate(-14)"><use href="#torso"/></g>
+    <path class="limb-back" d="M713,378 L646,468 L677,534"/>
+    <path class="limb-front" d="M713,378 L646,468 L677,534"/>
+    <path class="limb-back" d="M883,381 L851,482 L776,548"/>
+    <path class="limb-front" d="M883,381 L851,482 L776,548"/>
+    <path class="shield" d="M564,278 L716,246 L814,352 L790,631 L659,788 L548,650 Z"/>
+    <path class="shield-panel" d="M589,309 L710,280 L777,366 L757,600 L663,733 L581,622 Z"/>
+    <path class="shield-spine" d="M709,286 L684,713"/>
+    <circle class="grip" cx="677" cy="534" r="20"/>
+    <circle class="grip" cx="776" cy="548" r="20"/>
+    <path class="force" d="M986,245 L827,406"/>
+    <path class="force" d="M593,699 L486,808"/>
+    <path class="pivot" d="M748,896 L788,896 M768,876 L768,916"/>
+  </g>
+
+  <!-- BASH CONTACT: shield edge leads down-left, torso/hips twist, both hands remain connected. -->
+  <g id="shield-bash-contact">
+    <path class="axis" d="M1429,142 L1127,835"/>
+    <path class="leg" d="M1222,599 L1146,700 L1102,839 L1181,873 L1248,732 L1285,613 Z"/>
+    <path class="leg" d="M1316,612 L1372,704 L1428,831 L1492,786 L1419,666 L1374,575 Z"/>
+    <path class="foot" d="M1072,827 L1184,849 L1194,897 L1052,884 Z"/>
+    <path class="foot" d="M1410,811 L1494,770 L1530,831 L1427,891 Z"/>
+    <g transform="translate(1324 261) rotate(-25)"><use href="#head"/></g>
+    <g transform="translate(1301 450) rotate(-28)"><use href="#torso"/></g>
+    <path class="limb-back" d="M1208,368 L1138,453 L1176,526"/>
+    <path class="limb-front" d="M1208,368 L1138,453 L1176,526"/>
+    <path class="limb-back" d="M1388,382 L1324,483 L1239,549"/>
+    <path class="limb-front" d="M1388,382 L1324,483 L1239,549"/>
+    <path class="shield" d="M1048,418 L1144,365 L1287,539 L1259,641 L1130,739 L1034,669 Z"/>
+    <path class="shield-panel" d="M1075,437 L1139,403 L1249,540 L1225,611 L1127,692 L1068,648 Z"/>
+    <path class="shield-spine" d="M1118,422 L1219,640"/>
+    <circle class="grip" cx="1176" cy="526" r="20"/>
+    <circle class="grip" cx="1239" cy="549" r="20"/>
+    <path class="force" d="M1316,543 L986,750"/>
+    <path class="pivot" d="M1260,896 L1300,896 M1280,876 L1280,916"/>
+  </g>
+</svg>

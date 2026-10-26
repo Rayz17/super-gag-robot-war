@@ -1,0 +1,105 @@
+{
+  "chapter_schema_version": 1,
+  "chapter_id": "C01-STORY-FIRST",
+  "build_id": "c01-story-first-candidate-20260717",
+  "save_slot": "c01_story_first_chapter_manual",
+  "episodes": [
+    {
+      "bundle_path": "res://content/generated/episodes/c01/e01/story_first.bundle.json",
+      "start_gate": {},
+      "completion_gate": {
+        "receipt_transaction_id": "C01E01:RT013S:ATOMIC_SNAPSHOT:V01",
+        "required_transactions": [{"id": "C01E01:RT013S:ATOMIC_SNAPSHOT:V01", "count": 1}],
+        "required_facts": [{"id": "C01_PHYSICAL_SNAPSHOT", "equals": "RT013S_ATOMIC_PAYLOAD"}],
+        "error_code": "c01e01_completed_without_rt013s"
+      },
+      "interlude": {
+        "episode_label": "第一话 完",
+        "title": "最后一条闭馆路线",
+        "background": "res://assets/tactical_maps/story_first/bg_c01e01_main_hall_isometric_v01.png",
+        "result": "四张接管令已经落下。二十九人仍聚在前厅，B1消防泵被切走；火警开始倒数。",
+        "next_label": "第二话 · 四张封存令",
+        "next_goal": "沿着黑水和旧管线追下去，在消防线合拢前找出火从哪里回来。",
+        "accent": "d6a42d"
+      }
+    },
+    {
+      "bundle_path": "res://content/generated/episodes/c01/e02/story_first.bundle.json",
+      "start_gate": {
+        "required_transactions": [{"id": "C01E01:RT013S:ATOMIC_SNAPSHOT:V01", "count": 1}],
+        "required_facts": [{"id": "C01_PHYSICAL_SNAPSHOT", "equals": "RT013S_ATOMIC_PAYLOAD"}],
+        "error_code": "c01e02_requires_committed_rt013s"
+      },
+      "completion_gate": {
+        "receipt_transaction_id": "C01E02:RT038:ATOMIC_SNAPSHOT:V01",
+        "required_transactions": [{"id": "C01E02:RT038:ATOMIC_SNAPSHOT:V01", "count": 1}],
+        "required_facts": [
+          {"id": "C01E02_PHYSICAL_SNAPSHOT", "equals": "RT038_ATOMIC_PAYLOAD"},
+          {"id": "ALL_29_OUTSIDE_BUILDING", "truthy": true}
+        ],
+        "error_code": "c01e02_completed_without_rt038"
+      },
+      "interlude": {
+        "episode_label": "第二话 完",
+        "title": "四张封存令",
+        "background": "res://assets/tactical_maps/story_first/bg_c01e02_fire_evacuation_isometric_v01.png",
+        "result": "二十九人已经出楼。纪存、唐胶、兜灯与两名消防接驳员仍在内侧；完整地图公开后，十八米封存落点出现。",
+        "next_label": "第三话 · 断臂成桥",
+        "next_goal": "白函第一次带着身体进入万机馆。桥板上还有五个人。",
+        "accent": "d95f56"
+      }
+    },
+    {
+      "bundle_path": "res://content/generated/episodes/c01/e03/story_first.bundle.json",
+      "start_gate": {
+        "required_transactions": [{"id": "C01E02:RT038:ATOMIC_SNAPSHOT:V01", "count": 1}],
+        "required_facts": [
+          {"id": "C01E02_PHYSICAL_SNAPSHOT", "equals": "RT038_ATOMIC_PAYLOAD"},
+          {"id": "ALL_29_OUTSIDE_BUILDING", "truthy": true}
+        ],
+        "error_code": "c01e03_requires_committed_rt038"
+      },
+      "completion_gate": {
+        "receipt_transaction_id": "C01E03:RT035:ATOMIC_SNAPSHOT:V01",
+        "validator_script": "res://scripts/core/episode/c01e04_input_contract_validator.gd",
+        "error_code": "c01e03_completed_without_rt035"
+      },
+      "interlude": {
+        "episode_label": "第三话 完",
+        "title": "断臂成桥",
+        "background": "res://assets/tactical_maps/story_first/bg_c01e03_dual_level_hall_isometric_v01.png",
+        "result": "五人和消防设备安全越桥。馆守Z的右臂留在旧址，勇拳被企业回收，B1移动脊柱被六锚锁死。",
+        "next_label": "第四话 · 万机馆站起来",
+        "next_goal": "固定建筑已经无法原地活下去。让整座馆带着伤离开旧址。",
+        "accent": "58c8d9"
+      }
+    },
+    {
+      "bundle_path": "res://content/generated/episodes/c01/e04/story_first.bundle.json",
+      "start_gate": {
+        "validator_script": "res://scripts/core/episode/c01e04_input_contract_validator.gd",
+        "error_code": "c01e04_requires_exact_rt035"
+      },
+      "completion_gate": {
+        "receipt_transaction_id": "C01E04:RT054:ATOMIC_SNAPSHOT:V01",
+        "required_transactions": [{"id": "C01E04:RT054:ATOMIC_SNAPSHOT:V01", "count": 1}],
+        "required_facts": [
+          {"id": "WBM001_ACTIVE", "equals": "CRUISE_CARRIER_WITH_DAMAGE"},
+          {"id": "WANJI_LOADOUT_BUNDLE_ID", "one_of": ["LIFE_PHYSICAL", "LIFE_ARCHIVE", "PHYSICAL_ARCHIVE"]},
+          {"id": "ZERO_SHORTCUT_CURRENT_HARM", "equals": "DIEDIE_RECLASSIFIED_AND_DISTRIBUTED_STOP_GRAYED_THEN_RESTORED"}
+        ],
+        "error_code": "c01e04_completed_without_rt054"
+      },
+      "interlude": {
+        "episode_label": "第一章 完",
+        "title": "闭馆以后，万机出击",
+        "background": "res://assets/tactical_maps/story_first/bg_c01e04_carrier_escape_isometric_v01.png",
+        "result": "万机馆以受损巡航态穿过东门。四名必要操作员随舰，馆守Z保持永久单臂；旧址和未带走的东西没有被胜利抹掉。",
+        "next_label": "三十六小时后 · 木桶旧件市",
+        "next_goal": "旧式生活接口正在失效。下一站不是庆功宴，是一条仍愿意修机器的街。",
+        "accent": "58c8d9",
+        "append_loadout_summary": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-21",
+  "generation_mode": "built-in image_gen",
+  "intent": "precise-object-edit",
+  "input_roles": [
+    {
+      "file": "samples/M11-robot-side-r1.png",
+      "role": "edit target: camera angle"
+    },
+    {
+      "file": "samples/M11-robot-front-r1.png",
+      "role": "identity and body proportions"
+    }
+  ],
+  "prompt": "Use case: precise-object-edit.\nInput image 1 is the edit target: M11 Cargo Leader side source drawing. It has a little unwanted three-quarter camera angle. Correct ONLY its camera/projection to an exact LEFT PROFILE (90 degree turn from straight front), robot facing image LEFT. Input 2 is the FRONT identity/proportion reference only. Keep the design, normal high helmet volume, face identity, all armor/cab/grille shapes, part count, tall body/long thighs and shins, palette, cel rendering, and four road wheels on each side.\nTrue side projection requirements: single visible left eye; single left temple/ear housing, with its ivory short straight temple rod; head camera seen as a narrow edge on forehead front, not a front rectangle facing us. Face projects left in profile; helmet is not squashed. We see ONLY the left side surface of the cab shoulder and left side edges of the chest. The navy FRONT radiator grille now faces image LEFT and is seen EDGE-ON as a thin projecting stepped front boundary: do NOT show its broad grille face to viewer. Same with orange/ivory bumper safety stripe, it faces left and cannot be a broad band on this side view. Near shoulder window is its actual left-facing side window panel, not an added glass panel on the rear.\nNear-side four tire discs remain visible side-on: one behind near shoulder, one outer rear of near forearm, TWO vertically in near outer calf, matching target positions and diameters. Four small orange hubs only for these four tires; small ankle orange pivot distinct. No hip road wheel. Compact folded flatbed frame remains on back, no cargo mounted.\nBoth legs straight in neutral stance, one primary near leg profile and only tiny far-leg sliver. Both feet face exactly image LEFT, one principal foot profile, not a foot turned toward viewer. Do not show the toe's FRONT face, only side silhouette from heel at right to toe at left. Keep both feet grounded at same baseline. Near arm lowered and hand in neutral profile. Match existing portrait composition, full robot visible with margin, warm-white background, soft shadow.\nThis is a projection correction, no new styling, no accessories, no weapons, no container, no text, no inset.",
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-eb3c450e-e364-4e65-8b12-78d789469386.png"
+}

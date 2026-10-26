@@ -1,0 +1,10 @@
+formula_id	plain_name	kind	normalized_modes	c01_c03_token_count	c01_c03_episode_coverage	owner_systems	runtime_status	slice_status	tier_min	tier_max	slice_priority	blocks	authority_status	notes
+FML_NARRATIVE	叙事对话与过场ADV	playable	story	44	13/13	SYS-NARR;SYS-REL;SYS-PRESENT	ready	not_started	NARR_T0	NARR_T5	P1	所有话	candidate_design	最大公式。NarrativeModeScene+图节点lines+choices可直接切；缺图退化为色块可跑
+FML_TACTICAL	前线物理战术	playable	tactical	22	11/13	SYS-TACT;SYS-C2;SYS-BODY;SYS-ROSTER	partial	not_started	TAC_T0	TAC_T11	P2	战术全线	candidate_design	格战核在但C01四场units.weapons全空；21条TACT_*合同引擎零实现。TAC_T0–T11是C01–C03已见类型，后章可加档
+FML_INVESTIGATION	调查与工程实证	playable	investigation_or_engineering	10	7/13	SYS-EXPL;SYS-BODY	skeleton	not_started	INV_T0	INV_T3	P6	C02全章	candidate_design	现网只有"收集N个offer然后commit"的勾选列表；证据板/假说/可停止试验全缺
+FML_EXPLORATION	空间探索与撤离路线	playable	exploration	4	4/13	SYS-EXPL	partial	not_started	EXPL_T0	EXPL_T3	P5	C01E01;C01E02	candidate_design	SPATIAL有话内特化无通用壳；E01场景preload七张底图缺文件会解析期失败
+FML_SETTLEMENT	三级结算	playable	operation_settlement;chapter_settlement	8	5/13	SYS-SETTLE	fragments	not_started	SET_T0	SET_T3	P3	战术收口;章末	candidate_design	只有战术RESULT卡+Desk+章间过场；Operation/Chapter两级无场景
+FML_WORLD_ROUTE	世界图路线提交	playable	world_map	3	3/13	SYS-WORLD	none	not_started	WR_T0	WR_T2	P8	章末收口	candidate_design	前三章只做已设计目的地提交（world_commit_only），非任务卡比较循环
+FML_HUB	万机馆生活与时间	playable	hub	0	0/13	SYS-HUB	none	not_started	HUB_T0	HUB_T1	P10	全剧生活层	candidate_design	c01_c03_*列是样本计数，不是公式是否存在。全剧公式。C12是完整周期样本位置。STORY_IN_HUB_*不是本公式
+PROTO_BOUNDARY	检查点与清关触发	protocol	boundary_event	10	7/13	SYS-NARR;SYS-SETTLE	usable	not_started	BND_T0	BND_T1	P3	战术;结算	candidate_design	用节点transition+autosave+mid_events即可覆盖，不必造新mode类型
+PROTO_NEXT_ENCOUNTER	跨遭遇接续	protocol	next_encounter	1	1/13	SYS-NARR	usable	not_started	NXT_T0	NXT_T0	P3	战术;章内多话	candidate_design	现有实现是收据+fact闸门（continue_episode保RunState），非独立节点类型

@@ -1,0 +1,231 @@
+{
+  "date": "2026-10-19",
+  "revision": "M05-modular-production-r4",
+  "asset": "M05 / 完全版王者（全装王者）",
+  "canon_entity": "MECHA_C02_COMPLETE_KING",
+  "generation_mode": "built-in image_gen",
+  "direction_record": "M05-modular-direction-r4.json",
+  "module_catalog": "M05-module-catalog-r4.json",
+  "prompt_index": "M05-modular-prompts-r4.json",
+  "existing_batch": "design-followthrough-r1.json#experience_record_m05_modular_r4",
+  "reader": "M05-modular-r4.html",
+  "status": "head_core_full_and_kit_source_candidates_pending_user",
+  "items": [
+    {
+      "id": "HEAD",
+      "file": "samples/M05-head-L-harpoon-r4b.png",
+      "sha256": "61580e218a504b4679ea15e5bf5f8544e3d9255f72865323d23799b32f7c1993",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bbox_above_8": [
+        98,
+        6,
+        1620,
+        928
+      ],
+      "clear_margin_pixels_above_8": {
+        "left": 98,
+        "top": 6,
+        "right": 52,
+        "bottom": 13
+      },
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-cc73a129-99a8-4ead-80fc-7411576ee3c0.png",
+      "prompt": "M05-head-L-front-axis-prompt-r4b.json",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "CORE",
+      "file": "samples/M05-core-body-r4.png",
+      "sha256": "b00b3ecd70638a328a945c841ed06a07fe5ead23efe05b882f779f72425321f4",
+      "pixel_size": [
+        1181,
+        1331
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bbox_above_8": [
+        160,
+        11,
+        1138,
+        1297
+      ],
+      "clear_margin_pixels_above_8": {
+        "left": 160,
+        "top": 11,
+        "right": 43,
+        "bottom": 34
+      },
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-2dddfca7-e157-4007-b875-47c8e0331907.png",
+      "prompt": "M05-core-body-prompt-r4.json",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "FULL",
+      "file": "samples/M05-modular-full-r4.png",
+      "sha256": "5ff45579fee7bbf87fa562b7a02f451846057b3b9f8c1e5c26d4421fc7396b50",
+      "pixel_size": [
+        1448,
+        1086
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bbox_above_8": [
+        51,
+        9,
+        1374,
+        1063
+      ],
+      "clear_margin_pixels_above_8": {
+        "left": 51,
+        "top": 9,
+        "right": 74,
+        "bottom": 23
+      },
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-e19db208-eef1-4859-a347-5bcd0bb937b8.png",
+      "prompt": "M05-modular-full-prompt-r4.json",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "KITS",
+      "file": "samples/M05-accessory-kits-r4b.png",
+      "sha256": "2a0f10226dbcc59a80dfa3248065b16c4364756bd26e77363ffbfe6edc240fdb",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "bbox_above_8": [
+        18,
+        13,
+        1519,
+        1010
+      ],
+      "clear_margin_pixels_above_8": {
+        "left": 18,
+        "top": 13,
+        "right": 17,
+        "bottom": 14
+      },
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-8daff3ef-0da2-407a-acb8-cff20f451b3d.png",
+      "prompt": "M05-accessory-source-correction-prompt-r4b.json",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    }
+  ],
+  "source_refs": [
+    {
+      "file": "refs/M05-user-overdesign-A-r3.png",
+      "sha256": "bab2a17743020c8bc60bfaa398e82714cba161e79d659a3cd5b03b39bd573564",
+      "role": "用户图一；只研究武装分组、挂载层次和冗余"
+    },
+    {
+      "file": "refs/M05-user-overdesign-B-r3.png",
+      "sha256": "2d4914394ed698aaac3d359e767c0b14a808a00c46232a4dfd0812d9da5e2472",
+      "role": "用户图二；只研究外挂体量和后背外扩"
+    },
+    {
+      "file": "refs/M05-user-overdesign-C-r3.png",
+      "sha256": "f69d4ff4cd6b92ba6439a6192a1982d711836cf67b8ff81452a6a393ee9091d7",
+      "role": "用户图三；只研究厚重外甲和中心本体层级"
+    },
+    {
+      "file": "refs/M05-user-face-D-r3.png",
+      "sha256": "af771807d129f91ab7d281a5f21a763075c7dcdafb72d70b5e29e3d1b751e7cf",
+      "role": "用户补给图四；指定王者脸部依据，皇冠天线改为五瓣对称"
+    },
+    {
+      "file": "samples/M05-full-loadout-style-r2.png",
+      "sha256": "017550aa8e0070bd458e5ad185e0ae5953bf1ec347a76c32a427d59fb9af129a",
+      "role": "原配色/机体与装备依据"
+    }
+  ],
+  "attempts": [
+    {
+      "file": "samples/M05-head-five-crown-r3.png",
+      "status": "history_superseded_by_L_horn_request",
+      "result": "按图四脸生成五瓣直冠；不是当前中轴形态。",
+      "sha256": "3d11d6007484d53f2df6f44d52daf7aa4929118fe2e8c0b8e880e15e5197b150"
+    },
+    {
+      "file": "samples/M05-head-three-long-r3b.png",
+      "status": "history_superseded_by_L_horn_request",
+      "result": "按插入意见加长中央三瓣；随后中轴直瓣被L角新要求覆盖。",
+      "sha256": "f1296036da6f4c827c3bb436a79fdda6b0239de0406dbc0d16246b9966053901"
+    },
+    {
+      "file": "samples/M05-head-L-harpoon-r4.png",
+      "status": "local_front_axis_correction_required",
+      "result": "侧面L角/倒钩朝向正确，正面端面偏向画面一侧。",
+      "sha256": "5cff587931fb7ed2400f329b7cf0d564c0fe12ec8d8e3c12b2dca33551dc70d6"
+    },
+    {
+      "file": "samples/M05-head-L-harpoon-r4b.png",
+      "status": "selected_pending_user",
+      "result": "局部收正前视端面，保留侧面L形。",
+      "sha256": "61580e218a504b4679ea15e5bf5f8544e3d9255f72865323d23799b32f7c1993"
+    },
+    {
+      "file": "samples/M05-accessory-kits-r4.png",
+      "status": "source_ownership_correction_required",
+      "result": "外甲包误含素体胸散热口与中央胯甲。",
+      "sha256": "32c04c6a21310adf41758831c65fa5c270cf0f91afe411eb327d2f43f13ab012"
+    },
+    {
+      "file": "samples/M05-accessory-kits-r4b.png",
+      "status": "selected_pending_user",
+      "result": "去除重复素体部位，补空心胸缘框与腰侧甲；其余五组保留。",
+      "sha256": "2a0f10226dbcc59a80dfa3248065b16c4364756bd26e77363ffbfe6edc240fdb"
+    }
+  ],
+  "author_review": {
+    "reviewer": "author",
+    "actual_media": "实际完整查看四张当前源稿，并对照用户四张参考、此前直冠/前视偏轴与外甲归属错误稿；未进行游戏或模型操作。",
+    "observed": [
+      "头部正面保留图四的双眼、白面、红下巴和金色脸框；两对侧瓣可辨，中央角在左侧向面前伸出并有朝回倒钩。",
+      "R4初稿正面前伸件偏向一侧，R4b局部改为中轴对称端面；右侧轮廓沿原正确L形保留，未声称同模型投影。",
+      "素体具有完整双手、双矩形胸散热口、冠军胸徽、红腹和金色圆关节；移除钻盾/炮翼/腿侧弹仓后仍保留王者身份。",
+      "全装稿有自身右臂钻/左盾、两门矩形背肩炮、额外厚肩层、分层翼、两件低位推进舱和四个腿侧弹仓；装备仍分组可读。",
+      "配件板可辨六组。首稿误把素体胸散热口和中央胯甲列入外装，R4b已局部去除，换为空心胸缘框和腰侧附甲。"
+    ],
+    "limits": [
+      "四张是手绘源设计候选，素体/全装镜位与姿态有少量漂移；肩甲倒角、徽纹、翼片分组和炮架隐藏面尚须同一母稿继续收敛，不能当作精确爆炸装配或同模型正侧背。",
+      "盾组图是主盾正背与挂架，不把两视图计为两片已完成盾体。双盾拆分及其与Reader的数量对接未完成；没有借本轮源图自动改故事。",
+      "套件后盖和内侧等新补隐藏面为候选；未验证关节活动、装卸顺序或部件互不干涉。",
+      "原始PNG保留生成透明通道，但未完成游戏用切边/统一安全边、正常战棋镜头、模型或运行检查。本轮新图尚未由用户固定。"
+    ],
+    "independent_review": false
+  },
+  "user_accepted": false,
+  "canon_changed_by_this_batch": false,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "later_user_correction": "M05-head-upward-L-direction-r5.json",
+  "current_head_geometry_status": "horizontal_terminal_horn_rejected_by_user",
+  "current_usage_scope": "历史R4错角整机保留来源；当前已选头部看R6b、素体/全装同步看R7，配件板继续单独参考。",
+  "latest_head_record": "M05-head-riese-production-r6.json",
+  "current_body_sync_record": "M05-modular-head-sync-production-r7.json"
+}

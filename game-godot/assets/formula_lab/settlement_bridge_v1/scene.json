@@ -1,0 +1,7547 @@
+{
+  "schema_version": 1,
+  "scene_id": "settlement-bridge-v1",
+  "camera_id": "settlement-bridge-dimetric-v1",
+  "design_size": [
+    1280,
+    720
+  ],
+  "grid_origin_px": [
+    640.0,
+    249.83999633789062
+  ],
+  "basis_x": [
+    34,
+    17
+  ],
+  "basis_y": [
+    -34,
+    17
+  ],
+  "board_size": [
+    7,
+    4
+  ],
+  "blocked": [
+    [
+      0,
+      0
+    ]
+  ],
+  "terrain": [
+    {
+      "cell": [
+        3,
+        1
+      ],
+      "kind": "bridge",
+      "label": "主桥"
+    }
+  ],
+  "texture_path": "res://assets/formula_lab/settlement_bridge_v1/background.png",
+  "texture_sha256": "fc9c1aaab402608fc10ada3f19ae4628f8ef71f40aed036f3a3e91946d12d7a5",
+  "landmarks": [
+    {
+      "id": "grid_0_0",
+      "cell": [
+        0,
+        0
+      ],
+      "world": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "screen_px": [
+        640.0000610351562,
+        249.8399658203125
+      ]
+    },
+    {
+      "id": "grid_6_0",
+      "cell": [
+        6,
+        0
+      ],
+      "world": [
+        0.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        844.0001220703125,
+        351.8399353027344
+      ]
+    },
+    {
+      "id": "grid_6_3",
+      "cell": [
+        6,
+        3
+      ],
+      "world": [
+        12.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        742.0000610351562,
+        402.8399658203125
+      ]
+    },
+    {
+      "id": "grid_0_3",
+      "cell": [
+        0,
+        3
+      ],
+      "world": [
+        12.0,
+        0.0,
+        0.0
+      ],
+      "screen_px": [
+        538.0000610351562,
+        300.8399658203125
+      ]
+    },
+    {
+      "id": "grid_3_1",
+      "cell": [
+        3,
+        1
+      ],
+      "world": [
+        4.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        708.0,
+        317.8399658203125
+      ]
+    }
+  ],
+  "projection_error_px": {
+    "origin": 6.823937919616058e-05,
+    "basis_x": 6.103515625e-05,
+    "basis_y": 0.0
+  },
+  "cell_visibility_raycast": [
+    {
+      "sample": [
+        0,
+        0
+      ],
+      "kind": "cell_center",
+      "blocked": true,
+      "visible_support": false,
+      "ground_visible": false,
+      "ok": true,
+      "world": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "screen_px": [
+        640.0000610351562,
+        249.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Existing blocked pocket, anonymous masonry.003",
+      "role": "blocked_debris",
+      "hit_world": [
+        0.5814188718795776,
+        0.5814191699028015,
+        0.4747300148010254
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        0,
+        0
+      ]
+    },
+    {
+      "sample": [
+        1,
+        0
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        4.0,
+        0.0
+      ],
+      "screen_px": [
+        674.0001220703125,
+        266.8399658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        -7.62939453125e-06,
+        3.9999847412109375,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        1,
+        0
+      ]
+    },
+    {
+      "sample": [
+        2,
+        0
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        8.0,
+        0.0
+      ],
+      "screen_px": [
+        708.0,
+        283.8399353027344
+      ],
+      "projection_error_px": 6.103515625e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        -7.62939453125e-06,
+        7.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        2,
+        0
+      ]
+    },
+    {
+      "sample": [
+        3,
+        0
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        742.0000610351562,
+        300.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        0.0,
+        12.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        3,
+        0
+      ]
+    },
+    {
+      "sample": [
+        4,
+        0
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        16.0,
+        0.0
+      ],
+      "screen_px": [
+        776.0000610351562,
+        317.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        0.0,
+        16.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        4,
+        0
+      ]
+    },
+    {
+      "sample": [
+        5,
+        0
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        20.0,
+        0.0
+      ],
+      "screen_px": [
+        810.0000610351562,
+        334.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        -1.52587890625e-05,
+        19.999984741210938,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        5,
+        0
+      ]
+    },
+    {
+      "sample": [
+        6,
+        0
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        844.0001220703125,
+        351.8399353027344
+      ],
+      "projection_error_px": 0.00013647875839232116,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        7.62939453125e-06,
+        24.00000762939453,
+        9.179115295410156e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        6,
+        0
+      ]
+    },
+    {
+      "sample": [
+        0,
+        1
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "screen_px": [
+        606.0000610351562,
+        266.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        4.0,
+        -7.62939453125e-06,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        0,
+        1
+      ]
+    },
+    {
+      "sample": [
+        1,
+        1
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        4.0,
+        0.0
+      ],
+      "screen_px": [
+        640.0000610351562,
+        283.8399353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        4.0,
+        3.9999923706054688,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        1,
+        1
+      ]
+    },
+    {
+      "sample": [
+        2,
+        1
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        8.0,
+        0.0
+      ],
+      "screen_px": [
+        674.0001220703125,
+        300.8399658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        4.0000152587890625,
+        8.000015258789062,
+        4.589557647705078e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        2,
+        1
+      ]
+    },
+    {
+      "sample": [
+        3,
+        1
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        708.0,
+        317.8399658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        4.0,
+        12.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        3,
+        1
+      ]
+    },
+    {
+      "sample": [
+        4,
+        1
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        16.0,
+        0.0
+      ],
+      "screen_px": [
+        742.0000610351562,
+        334.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        3.9999847412109375,
+        15.999984741210938,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        4,
+        1
+      ]
+    },
+    {
+      "sample": [
+        5,
+        1
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        20.0,
+        0.0
+      ],
+      "screen_px": [
+        776.0000610351562,
+        351.8399353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        4.000007629394531,
+        20.00000762939453,
+        9.179115295410156e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        5,
+        1
+      ]
+    },
+    {
+      "sample": [
+        6,
+        1
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        810.0000610351562,
+        368.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        4.000022888183594,
+        24.000022888183594,
+        1.6808509826660156e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        6,
+        1
+      ]
+    },
+    {
+      "sample": [
+        0,
+        2
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        0.0,
+        0.0
+      ],
+      "screen_px": [
+        572.0000610351562,
+        283.8399353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        7.999992370605469,
+        -1.52587890625e-05,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        0,
+        2
+      ]
+    },
+    {
+      "sample": [
+        1,
+        2
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        4.0,
+        0.0
+      ],
+      "screen_px": [
+        606.0000610351562,
+        300.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        8.000015258789062,
+        4.000007629394531,
+        9.179115295410156e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        1,
+        2
+      ]
+    },
+    {
+      "sample": [
+        2,
+        2
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        8.0,
+        0.0
+      ],
+      "screen_px": [
+        640.0000610351562,
+        317.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        8.0,
+        8.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        2,
+        2
+      ]
+    },
+    {
+      "sample": [
+        3,
+        2
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        674.0001220703125,
+        334.8399658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        7.9999847412109375,
+        11.999984741210938,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        3,
+        2
+      ]
+    },
+    {
+      "sample": [
+        4,
+        2
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        16.0,
+        0.0
+      ],
+      "screen_px": [
+        708.0,
+        351.8399353027344
+      ],
+      "projection_error_px": 6.103515625e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        8.000007629394531,
+        16.00000762939453,
+        4.589557647705078e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        4,
+        2
+      ]
+    },
+    {
+      "sample": [
+        5,
+        2
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        20.0,
+        0.0
+      ],
+      "screen_px": [
+        742.0000610351562,
+        368.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        8.0,
+        20.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        5,
+        2
+      ]
+    },
+    {
+      "sample": [
+        6,
+        2
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        776.0000610351562,
+        385.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        8.0,
+        24.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        6,
+        2
+      ]
+    },
+    {
+      "sample": [
+        0,
+        3
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        0.0,
+        0.0
+      ],
+      "screen_px": [
+        538.0000610351562,
+        300.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        11.999992370605469,
+        -1.52587890625e-05,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        0,
+        3
+      ]
+    },
+    {
+      "sample": [
+        1,
+        3
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        4.0,
+        0.0
+      ],
+      "screen_px": [
+        572.0000610351562,
+        317.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        11.999984741210938,
+        3.9999847412109375,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        1,
+        3
+      ]
+    },
+    {
+      "sample": [
+        2,
+        3
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        8.0,
+        0.0
+      ],
+      "screen_px": [
+        606.0000610351562,
+        334.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        11.999984741210938,
+        7.9999847412109375,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        2,
+        3
+      ]
+    },
+    {
+      "sample": [
+        3,
+        3
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        640.0000610351562,
+        351.8399353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        11.999992370605469,
+        11.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        3,
+        3
+      ]
+    },
+    {
+      "sample": [
+        4,
+        3
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        16.0,
+        0.0
+      ],
+      "screen_px": [
+        674.0001220703125,
+        368.8399658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        12.000007629394531,
+        16.00000762939453,
+        4.589557647705078e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        4,
+        3
+      ]
+    },
+    {
+      "sample": [
+        5,
+        3
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        20.0,
+        0.0
+      ],
+      "screen_px": [
+        708.0,
+        385.8399658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        12.0,
+        20.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        5,
+        3
+      ]
+    },
+    {
+      "sample": [
+        6,
+        3
+      ],
+      "kind": "cell_center",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        742.0000610351562,
+        402.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        12.0,
+        24.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cell": [
+        6,
+        3
+      ]
+    }
+  ],
+  "grid_corner_visibility_raycast": [
+    {
+      "sample": [
+        -0.5,
+        -0.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        -2.0,
+        -2.0,
+        -0.0
+      ],
+      "screen_px": [
+        640.0000610351562,
+        232.83995056152344
+      ],
+      "projection_error_px": 7.62939453125e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        -2.0,
+        -2.0000076293945312,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0.5,
+        -0.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        -2.0,
+        2.0,
+        0.0
+      ],
+      "screen_px": [
+        674.0001220703125,
+        249.8399658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        -2.0000152587890625,
+        1.9999847412109375,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.5,
+        -0.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        -2.0,
+        6.0,
+        0.0
+      ],
+      "screen_px": [
+        708.0,
+        266.8399658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        -1.9999847412109375,
+        6.0000152587890625,
+        1.2218952178955078e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.5,
+        -0.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        -2.0,
+        10.0,
+        0.0
+      ],
+      "screen_px": [
+        742.0000610351562,
+        283.8399353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        -2.0,
+        10.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.5,
+        -0.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        -2.0,
+        14.0,
+        0.0
+      ],
+      "screen_px": [
+        776.0000610351562,
+        300.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        -2.0000076293945312,
+        13.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.5,
+        -0.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        -2.0,
+        18.0,
+        0.0
+      ],
+      "screen_px": [
+        810.0000610351562,
+        317.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        -2.0,
+        18.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.5,
+        -0.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        -2.0,
+        22.0,
+        0.0
+      ],
+      "screen_px": [
+        844.0,
+        334.8399658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        -2.0,
+        22.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6.5,
+        -0.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        -2.0,
+        26.0,
+        0.0
+      ],
+      "screen_px": [
+        878.0,
+        351.8399353027344
+      ],
+      "projection_error_px": 6.103515625e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        -2.0,
+        26.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        -0.5,
+        0.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        2.0,
+        -2.0,
+        0.0
+      ],
+      "screen_px": [
+        606.0000610351562,
+        249.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        2.0,
+        -2.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0.5,
+        0.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        2.0,
+        2.0,
+        0.0
+      ],
+      "screen_px": [
+        640.0000610351562,
+        266.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        2.0,
+        1.9999923706054688,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.5,
+        0.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        2.0,
+        6.0,
+        0.0
+      ],
+      "screen_px": [
+        674.0001220703125,
+        283.8399353027344
+      ],
+      "projection_error_px": 0.00013647875839232116,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        2.0,
+        6.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.5,
+        0.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        2.0,
+        10.0,
+        0.0
+      ],
+      "screen_px": [
+        708.0,
+        300.8399658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        2.0000152587890625,
+        10.000015258789062,
+        4.589557647705078e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.5,
+        0.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        2.0,
+        14.0,
+        0.0
+      ],
+      "screen_px": [
+        742.0000610351562,
+        317.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        2.0,
+        14.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.5,
+        0.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        2.0,
+        18.0,
+        0.0
+      ],
+      "screen_px": [
+        776.0000610351562,
+        334.8399353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        2.0000076293945312,
+        18.00000762939453,
+        4.589557647705078e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.5,
+        0.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        2.0,
+        22.0,
+        0.0
+      ],
+      "screen_px": [
+        810.0000610351562,
+        351.8399353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        2.0000076293945312,
+        22.00000762939453,
+        9.179115295410156e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6.5,
+        0.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        2.0,
+        26.0,
+        0.0
+      ],
+      "screen_px": [
+        844.0001220703125,
+        368.8399658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        1.9999923706054688,
+        25.99999237060547,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        -0.5,
+        1.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        6.0,
+        -2.0,
+        0.0
+      ],
+      "screen_px": [
+        572.0000610351562,
+        266.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        6.0,
+        -2.0000076293945312,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0.5,
+        1.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        6.0,
+        2.0,
+        0.0
+      ],
+      "screen_px": [
+        606.0000610351562,
+        283.8399353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        5.999992370605469,
+        1.9999847412109375,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.5,
+        1.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        6.0,
+        6.0,
+        0.0
+      ],
+      "screen_px": [
+        640.0000610351562,
+        300.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        6.0,
+        6.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.5,
+        1.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        6.0,
+        10.0,
+        0.0
+      ],
+      "screen_px": [
+        674.0001220703125,
+        317.8399658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        5.9999847412109375,
+        9.999984741210938,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.5,
+        1.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        6.0,
+        14.0,
+        0.0
+      ],
+      "screen_px": [
+        708.0,
+        334.8399658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        6.0,
+        14.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.5,
+        1.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        6.0,
+        18.0,
+        0.0
+      ],
+      "screen_px": [
+        742.0000610351562,
+        351.8399353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        6.0,
+        18.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.5,
+        1.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        6.0,
+        22.0,
+        0.0
+      ],
+      "screen_px": [
+        776.0000610351562,
+        368.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        6.0,
+        22.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6.5,
+        1.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        6.0,
+        26.0,
+        0.0
+      ],
+      "screen_px": [
+        810.0000610351562,
+        385.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        6.000007629394531,
+        26.00000762939453,
+        9.179115295410156e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        -0.5,
+        2.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        10.0,
+        -2.0,
+        0.0
+      ],
+      "screen_px": [
+        538.0000610351562,
+        283.8399353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        9.999992370605469,
+        -2.0000152587890625,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0.5,
+        2.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        10.0,
+        2.0,
+        0.0
+      ],
+      "screen_px": [
+        572.0000610351562,
+        300.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        9.999992370605469,
+        1.9999847412109375,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.5,
+        2.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        10.0,
+        6.0,
+        0.0
+      ],
+      "screen_px": [
+        606.0000610351562,
+        317.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        10.0,
+        6.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.5,
+        2.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        10.0,
+        10.0,
+        0.0
+      ],
+      "screen_px": [
+        640.0000610351562,
+        334.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        9.999984741210938,
+        9.999984741210938,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.5,
+        2.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        10.0,
+        14.0,
+        0.0
+      ],
+      "screen_px": [
+        674.0001220703125,
+        351.8399353027344
+      ],
+      "projection_error_px": 0.00013647875839232116,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        10.0,
+        14.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.5,
+        2.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        10.0,
+        18.0,
+        0.0
+      ],
+      "screen_px": [
+        708.0,
+        368.8399658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        9.999992370605469,
+        17.99999237060547,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.5,
+        2.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        10.0,
+        22.0,
+        0.0
+      ],
+      "screen_px": [
+        742.0000610351562,
+        385.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        9.999992370605469,
+        21.99999237060547,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6.5,
+        2.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        10.0,
+        26.0,
+        0.0
+      ],
+      "screen_px": [
+        776.0000610351562,
+        402.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        10.000007629394531,
+        26.00000762939453,
+        9.179115295410156e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        -0.5,
+        3.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        14.0,
+        -2.0,
+        0.0
+      ],
+      "screen_px": [
+        504.0000915527344,
+        300.8399658203125
+      ],
+      "projection_error_px": 9.650505554713072e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        14.000015258789062,
+        -1.9999923706054688,
+        9.179115295410156e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0.5,
+        3.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        14.0,
+        2.0,
+        0.0
+      ],
+      "screen_px": [
+        538.0000610351562,
+        317.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        13.999984741210938,
+        1.9999847412109375,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.5,
+        3.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        14.0,
+        6.0,
+        0.0
+      ],
+      "screen_px": [
+        572.0000610351562,
+        334.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        14.0,
+        6.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.5,
+        3.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        14.0,
+        10.0,
+        0.0
+      ],
+      "screen_px": [
+        606.0000610351562,
+        351.8399353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        13.999984741210938,
+        9.999984741210938,
+        -1.8298625946044922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.5,
+        3.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        14.0,
+        14.0,
+        0.0
+      ],
+      "screen_px": [
+        640.0000610351562,
+        368.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        14.000007629394531,
+        14.000007629394531,
+        4.589557647705078e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.5,
+        3.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        14.0,
+        18.0,
+        0.0
+      ],
+      "screen_px": [
+        674.0001220703125,
+        385.8399658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        14.0,
+        18.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.5,
+        3.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        14.0,
+        22.0,
+        0.0
+      ],
+      "screen_px": [
+        708.0,
+        402.8399658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        14.0,
+        22.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6.5,
+        3.5
+      ],
+      "kind": "grid_corner",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        14.0,
+        26.0,
+        0.0
+      ],
+      "screen_px": [
+        742.0000610351562,
+        419.8399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        14.0,
+        26.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "cell_interior_visibility_raycast": [
+    {
+      "sample": [
+        0.75,
+        0
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        3.0,
+        0.0
+      ],
+      "screen_px": [
+        665.5,
+        262.5899353027344
+      ],
+      "projection_error_px": 6.103515625e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        0.0,
+        2.9999923706054688,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.25,
+        0
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        5.0,
+        0.0
+      ],
+      "screen_px": [
+        682.5000610351562,
+        271.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        -7.62939453125e-06,
+        4.999992370605469,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1,
+        -0.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        -1.0,
+        4.0,
+        0.0
+      ],
+      "screen_px": [
+        682.5000610351562,
+        262.5899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        -1.0,
+        3.9999923706054688,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1,
+        0.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        1.0,
+        4.0,
+        0.0
+      ],
+      "screen_px": [
+        665.5,
+        271.0899658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        0.9999923706054688,
+        3.9999847412109375,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.75,
+        0
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        7.0,
+        0.0
+      ],
+      "screen_px": [
+        699.5000610351562,
+        279.5899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        -1.52587890625e-05,
+        6.9999847412109375,
+        -1.8298625946044922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.25,
+        0
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        9.0,
+        0.0
+      ],
+      "screen_px": [
+        716.5001220703125,
+        288.0899353027344
+      ],
+      "projection_error_px": 0.00013647875839232116,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        -1.52587890625e-05,
+        8.999984741210938,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2,
+        -0.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        -1.0,
+        8.0,
+        0.0
+      ],
+      "screen_px": [
+        716.5001220703125,
+        279.5899353027344
+      ],
+      "projection_error_px": 0.00013647875839232116,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        -1.0,
+        8.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2,
+        0.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        1.0,
+        8.0,
+        0.0
+      ],
+      "screen_px": [
+        699.5000610351562,
+        288.0899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        1.0,
+        8.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.75,
+        0
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        11.0,
+        0.0
+      ],
+      "screen_px": [
+        733.5000610351562,
+        296.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        -2.288818359375e-05,
+        10.999977111816406,
+        -1.8298625946044922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.25,
+        0
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        13.0,
+        0.0
+      ],
+      "screen_px": [
+        750.5,
+        305.0899353027344
+      ],
+      "projection_error_px": 6.103515625e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        -2.288818359375e-05,
+        12.999977111816406,
+        -1.8298625946044922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3,
+        -0.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        -1.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        750.5,
+        296.5899658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        -1.0000228881835938,
+        11.999977111816406,
+        -1.8298625946044922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3,
+        0.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        1.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        733.5000610351562,
+        305.0899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        0.9999771118164062,
+        11.999977111816406,
+        -1.8298625946044922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.75,
+        0
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        15.0,
+        0.0
+      ],
+      "screen_px": [
+        767.5000610351562,
+        313.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        -7.62939453125e-06,
+        14.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.25,
+        0
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        17.0,
+        0.0
+      ],
+      "screen_px": [
+        784.5000610351562,
+        322.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        -7.62939453125e-06,
+        16.99999237060547,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4,
+        -0.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        -1.0,
+        16.0,
+        0.0
+      ],
+      "screen_px": [
+        784.5000610351562,
+        313.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        -1.0,
+        16.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4,
+        0.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        1.0,
+        16.0,
+        0.0
+      ],
+      "screen_px": [
+        767.5000610351562,
+        322.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        1.0,
+        16.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.75,
+        0
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        19.0,
+        0.0
+      ],
+      "screen_px": [
+        801.5,
+        330.5899353027344
+      ],
+      "projection_error_px": 6.103515625e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        -7.62939453125e-06,
+        18.99999237060547,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.25,
+        0
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        21.0,
+        0.0
+      ],
+      "screen_px": [
+        818.5000610351562,
+        339.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        0.0,
+        21.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5,
+        -0.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        -1.0,
+        20.0,
+        0.0
+      ],
+      "screen_px": [
+        818.5000610351562,
+        330.5899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        -1.0000152587890625,
+        19.999984741210938,
+        -1.3709068298339844e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5,
+        0.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        1.0,
+        20.0,
+        0.0
+      ],
+      "screen_px": [
+        801.5,
+        339.0899658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        0.9999847412109375,
+        19.999984741210938,
+        -1.3709068298339844e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.75,
+        0
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        23.0,
+        0.0
+      ],
+      "screen_px": [
+        835.5,
+        347.5899658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        0.0,
+        23.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6.25,
+        0
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        25.0,
+        0.0
+      ],
+      "screen_px": [
+        852.5000610351562,
+        356.0899963378906
+      ],
+      "projection_error_px": 6.103515625e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        0.0,
+        25.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6,
+        -0.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        -1.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        852.5000610351562,
+        347.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        -1.0,
+        24.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6,
+        0.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        1.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        835.5,
+        356.0899353027344
+      ],
+      "projection_error_px": 6.103515625e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        1.0,
+        24.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        -0.25,
+        1
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        -1.0,
+        0.0
+      ],
+      "screen_px": [
+        597.5000610351562,
+        262.5899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        3.9999923706054688,
+        -1.0000152587890625,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0.25,
+        1
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        1.0,
+        0.0
+      ],
+      "screen_px": [
+        614.5000610351562,
+        271.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        3.9999847412109375,
+        0.9999771118164062,
+        -1.3709068298339844e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0,
+        0.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "screen_px": [
+        614.5000610351562,
+        262.5899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        3.0,
+        -7.62939453125e-06,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0,
+        1.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        5.0,
+        0.0,
+        0.0
+      ],
+      "screen_px": [
+        597.5000610351562,
+        271.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        5.0,
+        -7.62939453125e-06,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0.75,
+        1
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        3.0,
+        0.0
+      ],
+      "screen_px": [
+        631.5000610351562,
+        279.5899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        4.0,
+        3.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.25,
+        1
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        5.0,
+        0.0
+      ],
+      "screen_px": [
+        648.5000610351562,
+        288.0899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        3.9999771118164062,
+        4.999969482421875,
+        -1.3709068298339844e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1,
+        0.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        3.0,
+        4.0,
+        0.0
+      ],
+      "screen_px": [
+        648.5000610351562,
+        279.5899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        2.9999847412109375,
+        3.9999847412109375,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1,
+        1.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        5.0,
+        4.0,
+        0.0
+      ],
+      "screen_px": [
+        631.5000610351562,
+        288.0899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        4.999992370605469,
+        3.9999923706054688,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.75,
+        1
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        7.0,
+        0.0
+      ],
+      "screen_px": [
+        665.5,
+        296.5899658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        3.9999847412109375,
+        6.9999847412109375,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.25,
+        1
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        9.0,
+        0.0
+      ],
+      "screen_px": [
+        682.5000610351562,
+        305.0899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        3.9999923706054688,
+        8.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2,
+        0.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        3.0,
+        8.0,
+        0.0
+      ],
+      "screen_px": [
+        682.5000610351562,
+        296.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        3.0,
+        8.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2,
+        1.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        5.0,
+        8.0,
+        0.0
+      ],
+      "screen_px": [
+        665.5,
+        305.0899353027344
+      ],
+      "projection_error_px": 6.103515625e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        5.0,
+        8.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.75,
+        1
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        11.0,
+        0.0
+      ],
+      "screen_px": [
+        699.5000610351562,
+        313.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        3.9999771118164062,
+        10.999977111816406,
+        -1.8298625946044922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.25,
+        1
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        13.0,
+        0.0
+      ],
+      "screen_px": [
+        716.5001220703125,
+        322.0899658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        3.9999847412109375,
+        12.999984741210938,
+        -1.8298625946044922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3,
+        0.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        3.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        716.5001220703125,
+        313.5899658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        2.9999771118164062,
+        11.999977111816406,
+        -1.8298625946044922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3,
+        1.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        5.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        699.5000610351562,
+        322.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        4.9999847412109375,
+        11.999984741210938,
+        -1.8298625946044922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.75,
+        1
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        15.0,
+        0.0
+      ],
+      "screen_px": [
+        733.5000610351562,
+        330.5899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        3.9999923706054688,
+        14.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.25,
+        1
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        17.0,
+        0.0
+      ],
+      "screen_px": [
+        750.5,
+        339.0899658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        4.0,
+        17.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4,
+        0.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        3.0,
+        16.0,
+        0.0
+      ],
+      "screen_px": [
+        750.5,
+        330.5899353027344
+      ],
+      "projection_error_px": 6.103515625e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        3.0,
+        16.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4,
+        1.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        5.0,
+        16.0,
+        0.0
+      ],
+      "screen_px": [
+        733.5000610351562,
+        339.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        4.999992370605469,
+        15.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.75,
+        1
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        19.0,
+        0.0
+      ],
+      "screen_px": [
+        767.5000610351562,
+        347.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        3.9999923706054688,
+        18.99999237060547,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.25,
+        1
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        21.0,
+        0.0
+      ],
+      "screen_px": [
+        784.5000610351562,
+        356.0899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        4.0,
+        21.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5,
+        0.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        3.0,
+        20.0,
+        0.0
+      ],
+      "screen_px": [
+        784.5000610351562,
+        347.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        2.9999847412109375,
+        19.999984741210938,
+        -1.3709068298339844e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5,
+        1.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        5.0,
+        20.0,
+        0.0
+      ],
+      "screen_px": [
+        767.5000610351562,
+        356.0899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        4.999992370605469,
+        19.99999237060547,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.75,
+        1
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        23.0,
+        0.0
+      ],
+      "screen_px": [
+        801.5001220703125,
+        364.5899353027344
+      ],
+      "projection_error_px": 0.00013647875839232116,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        4.0,
+        23.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6.25,
+        1
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        25.0,
+        0.0
+      ],
+      "screen_px": [
+        818.5000610351562,
+        373.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        4.0,
+        25.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6,
+        0.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        3.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        818.5000610351562,
+        364.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        3.0000076293945312,
+        24.00000762939453,
+        9.179115295410156e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6,
+        1.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        5.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        801.5001220703125,
+        373.0899658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        5.0,
+        24.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        -0.25,
+        2
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        -1.0,
+        0.0
+      ],
+      "screen_px": [
+        563.5000610351562,
+        279.5899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        7.999992370605469,
+        -1.0000076293945312,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0.25,
+        2
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        1.0,
+        0.0
+      ],
+      "screen_px": [
+        580.5000610351562,
+        288.0899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        7.9999847412109375,
+        0.9999771118164062,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0,
+        1.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        7.0,
+        0.0,
+        0.0
+      ],
+      "screen_px": [
+        580.5000610351562,
+        279.5899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        6.9999847412109375,
+        -1.52587890625e-05,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0,
+        2.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        9.0,
+        0.0,
+        0.0
+      ],
+      "screen_px": [
+        563.5000610351562,
+        288.0899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        9.0,
+        -7.62939453125e-06,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0.75,
+        2
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        3.0,
+        0.0
+      ],
+      "screen_px": [
+        597.5000610351562,
+        296.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        7.9999847412109375,
+        2.9999771118164062,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.25,
+        2
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        5.0,
+        0.0
+      ],
+      "screen_px": [
+        614.5000610351562,
+        305.0899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        7.999977111816406,
+        4.999969482421875,
+        -1.3709068298339844e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1,
+        1.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        7.0,
+        4.0,
+        0.0
+      ],
+      "screen_px": [
+        614.5000610351562,
+        296.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        6.999992370605469,
+        3.9999923706054688,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1,
+        2.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        9.0,
+        4.0,
+        0.0
+      ],
+      "screen_px": [
+        597.5000610351562,
+        305.0899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        8.999992370605469,
+        3.9999847412109375,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.75,
+        2
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        7.0,
+        0.0
+      ],
+      "screen_px": [
+        631.5000610351562,
+        313.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        7.999977111816406,
+        6.999977111816406,
+        -1.8298625946044922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.25,
+        2
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        9.0,
+        0.0
+      ],
+      "screen_px": [
+        648.5000610351562,
+        322.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        7.999992370605469,
+        8.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2,
+        1.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        7.0,
+        8.0,
+        0.0
+      ],
+      "screen_px": [
+        648.5000610351562,
+        313.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        6.999977111816406,
+        7.999977111816406,
+        -1.8298625946044922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2,
+        2.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        9.0,
+        8.0,
+        0.0
+      ],
+      "screen_px": [
+        631.5000610351562,
+        322.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        8.999992370605469,
+        7.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.75,
+        2
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        11.0,
+        0.0
+      ],
+      "screen_px": [
+        665.5,
+        330.5899353027344
+      ],
+      "projection_error_px": 6.103515625e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        7.999992370605469,
+        10.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.25,
+        2
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        13.0,
+        0.0
+      ],
+      "screen_px": [
+        682.5000610351562,
+        339.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        8.0,
+        13.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3,
+        1.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        7.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        682.5000610351562,
+        330.5899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        6.999992370605469,
+        11.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3,
+        2.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        9.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        665.5001220703125,
+        339.0899658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        8.999992370605469,
+        11.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.75,
+        2
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        15.0,
+        0.0
+      ],
+      "screen_px": [
+        699.5000610351562,
+        347.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        7.999992370605469,
+        14.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.25,
+        2
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        17.0,
+        0.0
+      ],
+      "screen_px": [
+        716.5001220703125,
+        356.0899353027344
+      ],
+      "projection_error_px": 0.00013647875839232116,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        8.000015258789062,
+        17.000015258789062,
+        4.589557647705078e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4,
+        1.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        7.0,
+        16.0,
+        0.0
+      ],
+      "screen_px": [
+        716.5001220703125,
+        347.5899658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        6.9999847412109375,
+        15.999984741210938,
+        -1.8298625946044922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4,
+        2.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        9.0,
+        16.0,
+        0.0
+      ],
+      "screen_px": [
+        699.5000610351562,
+        356.0899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        9.000015258789062,
+        16.000015258789062,
+        4.589557647705078e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.75,
+        2
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        19.0,
+        0.0
+      ],
+      "screen_px": [
+        733.5000610351562,
+        364.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        8.000007629394531,
+        19.00000762939453,
+        4.589557647705078e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.25,
+        2
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        21.0,
+        0.0
+      ],
+      "screen_px": [
+        750.5,
+        373.0899658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        8.0,
+        21.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5,
+        1.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        7.0,
+        20.0,
+        0.0
+      ],
+      "screen_px": [
+        750.5,
+        364.5899658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        7.000007629394531,
+        20.00000762939453,
+        9.179115295410156e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5,
+        2.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        9.0,
+        20.0,
+        0.0
+      ],
+      "screen_px": [
+        733.5000610351562,
+        373.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        9.0,
+        20.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.75,
+        2
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        23.0,
+        0.0
+      ],
+      "screen_px": [
+        767.5000610351562,
+        381.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        8.0,
+        23.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6.25,
+        2
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        25.0,
+        0.0
+      ],
+      "screen_px": [
+        784.5000610351562,
+        390.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        8.0,
+        25.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6,
+        1.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        7.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        784.5000610351562,
+        381.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        7.0,
+        24.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6,
+        2.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        9.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        767.5000610351562,
+        390.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        9.0,
+        24.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        -0.25,
+        3
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        -1.0,
+        0.0
+      ],
+      "screen_px": [
+        529.5000610351562,
+        296.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        11.999984741210938,
+        -1.0000228881835938,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0.25,
+        3
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        1.0,
+        0.0
+      ],
+      "screen_px": [
+        546.5001220703125,
+        305.0899353027344
+      ],
+      "projection_error_px": 0.00013647875839232116,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        11.999992370605469,
+        0.9999847412109375,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0,
+        2.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        11.0,
+        0.0,
+        0.0
+      ],
+      "screen_px": [
+        546.5001220703125,
+        296.5899658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        10.999984741210938,
+        -2.288818359375e-05,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0,
+        3.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        13.0,
+        0.0,
+        0.0
+      ],
+      "screen_px": [
+        529.5000610351562,
+        305.0899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        13.0,
+        -7.62939453125e-06,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0.75,
+        3
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        3.0,
+        0.0
+      ],
+      "screen_px": [
+        563.5000610351562,
+        313.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        11.999977111816406,
+        2.999969482421875,
+        -1.3709068298339844e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.25,
+        3
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        5.0,
+        0.0
+      ],
+      "screen_px": [
+        580.5000610351562,
+        322.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        11.999984741210938,
+        4.999977111816406,
+        -1.3709068298339844e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1,
+        2.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        11.0,
+        4.0,
+        0.0
+      ],
+      "screen_px": [
+        580.5000610351562,
+        313.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        11.0,
+        3.9999923706054688,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1,
+        3.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        13.0,
+        4.0,
+        0.0
+      ],
+      "screen_px": [
+        563.5000610351562,
+        322.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        12.999992370605469,
+        3.9999847412109375,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.75,
+        3
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        7.0,
+        0.0
+      ],
+      "screen_px": [
+        597.5000610351562,
+        330.5899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        11.999992370605469,
+        6.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.25,
+        3
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        9.0,
+        0.0
+      ],
+      "screen_px": [
+        614.5000610351562,
+        339.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        11.999992370605469,
+        8.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2,
+        2.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        11.0,
+        8.0,
+        0.0
+      ],
+      "screen_px": [
+        614.5000610351562,
+        330.5899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        10.999992370605469,
+        7.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2,
+        3.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        13.0,
+        8.0,
+        0.0
+      ],
+      "screen_px": [
+        597.5000610351562,
+        339.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        12.999984741210938,
+        7.9999847412109375,
+        -1.8298625946044922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.75,
+        3
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        11.0,
+        0.0
+      ],
+      "screen_px": [
+        631.5000610351562,
+        347.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        11.999992370605469,
+        10.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.25,
+        3
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        13.0,
+        0.0
+      ],
+      "screen_px": [
+        648.5000610351562,
+        356.0899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        12.0,
+        13.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3,
+        2.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        11.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        648.5000610351562,
+        347.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        11.0,
+        12.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3,
+        3.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        13.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        631.5000610351562,
+        356.0899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        13.0,
+        12.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.75,
+        3
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        15.0,
+        0.0
+      ],
+      "screen_px": [
+        665.5,
+        364.5899658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        11.999984741210938,
+        14.999984741210938,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.25,
+        3
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        17.0,
+        0.0
+      ],
+      "screen_px": [
+        682.5000610351562,
+        373.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        11.999984741210938,
+        16.999984741210938,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4,
+        2.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        11.0,
+        16.0,
+        0.0
+      ],
+      "screen_px": [
+        682.5000610351562,
+        364.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        11.000015258789062,
+        16.000015258789062,
+        1.2218952178955078e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4,
+        3.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        13.0,
+        16.0,
+        0.0
+      ],
+      "screen_px": [
+        665.5,
+        373.0899658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        13.000007629394531,
+        16.00000762939453,
+        4.589557647705078e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.75,
+        3
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        19.0,
+        0.0
+      ],
+      "screen_px": [
+        699.5000610351562,
+        381.5899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        12.000007629394531,
+        19.00000762939453,
+        9.179115295410156e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.25,
+        3
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        21.0,
+        0.0
+      ],
+      "screen_px": [
+        716.5001220703125,
+        390.0899658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        12.000007629394531,
+        21.00000762939453,
+        9.179115295410156e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5,
+        2.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        11.0,
+        20.0,
+        0.0
+      ],
+      "screen_px": [
+        716.5,
+        381.5899658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        11.0,
+        20.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5,
+        3.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        13.0,
+        20.0,
+        0.0
+      ],
+      "screen_px": [
+        699.5000610351562,
+        390.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        13.0,
+        20.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.75,
+        3
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        23.0,
+        0.0
+      ],
+      "screen_px": [
+        733.5000610351562,
+        398.5899353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        12.000022888183594,
+        23.000022888183594,
+        1.6808509826660156e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6.25,
+        3
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        25.0,
+        0.0
+      ],
+      "screen_px": [
+        750.5,
+        407.0899658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        12.0,
+        25.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6,
+        2.75
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        11.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        750.5,
+        398.5899658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        11.0,
+        24.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6,
+        3.25
+      ],
+      "kind": "cell_interior",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        13.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        733.5000610351562,
+        407.0899658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        13.0,
+        24.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "walkable_neighbor_visibility_raycast": [
+    {
+      "sample": [
+        1.5,
+        0.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        6.0,
+        0.0
+      ],
+      "screen_px": [
+        691.0000610351562,
+        275.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        7.62939453125e-06,
+        6.000007629394531,
+        4.589557647705078e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.0,
+        0.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        2.0,
+        4.0,
+        0.0
+      ],
+      "screen_px": [
+        657.0000610351562,
+        275.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        1.9999923706054688,
+        3.9999847412109375,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.5,
+        0.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        10.0,
+        0.0
+      ],
+      "screen_px": [
+        725.0000610351562,
+        292.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        -7.62939453125e-06,
+        9.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.0,
+        0.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        2.0,
+        8.0,
+        0.0
+      ],
+      "screen_px": [
+        691.0000610351562,
+        292.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        2.0,
+        8.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.5,
+        0.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        14.0,
+        0.0
+      ],
+      "screen_px": [
+        759.0001220703125,
+        309.3399353027344
+      ],
+      "projection_error_px": 0.00013647875839232116,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        0.0,
+        14.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.0,
+        0.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        2.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        725.0000610351562,
+        309.3399353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        1.9999923706054688,
+        11.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.5,
+        0.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        18.0,
+        0.0
+      ],
+      "screen_px": [
+        793.0,
+        326.3399658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        0.0,
+        18.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.0,
+        0.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        2.0,
+        16.0,
+        0.0
+      ],
+      "screen_px": [
+        759.0001220703125,
+        326.3399658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        2.0,
+        16.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.5,
+        0.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        0.0,
+        22.0,
+        0.0
+      ],
+      "screen_px": [
+        827.0000610351562,
+        343.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        0.0,
+        22.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.0,
+        0.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        2.0,
+        20.0,
+        0.0
+      ],
+      "screen_px": [
+        793.0,
+        343.3399658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        2.0,
+        20.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6.0,
+        0.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        2.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        827.0000610351562,
+        360.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        2.0,
+        24.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0.5,
+        1.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        2.0,
+        0.0
+      ],
+      "screen_px": [
+        623.0000610351562,
+        275.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        4.0,
+        1.9999923706054688,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0.0,
+        1.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        6.0,
+        0.0,
+        0.0
+      ],
+      "screen_px": [
+        589.0000610351562,
+        275.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        5.999992370605469,
+        -1.52587890625e-05,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.5,
+        1.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        6.0,
+        0.0
+      ],
+      "screen_px": [
+        657.0000610351562,
+        292.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        4.0,
+        6.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.0,
+        1.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        6.0,
+        4.0,
+        0.0
+      ],
+      "screen_px": [
+        623.0000610351562,
+        292.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        5.999992370605469,
+        3.9999847412109375,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.5,
+        1.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        10.0,
+        0.0
+      ],
+      "screen_px": [
+        691.0000610351562,
+        309.3399353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        4.0,
+        10.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.0,
+        1.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        6.0,
+        8.0,
+        0.0
+      ],
+      "screen_px": [
+        657.0000610351562,
+        309.3399353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        6.0,
+        8.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.5,
+        1.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        14.0,
+        0.0
+      ],
+      "screen_px": [
+        725.0000610351562,
+        326.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        3.9999847412109375,
+        13.999984741210938,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.0,
+        1.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        6.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        691.0000610351562,
+        326.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        6.0,
+        12.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.5,
+        1.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        18.0,
+        0.0
+      ],
+      "screen_px": [
+        759.0,
+        343.3399658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        3.9999923706054688,
+        17.99999237060547,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.0,
+        1.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        6.0,
+        16.0,
+        0.0
+      ],
+      "screen_px": [
+        725.0000610351562,
+        343.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        5.999992370605469,
+        15.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.5,
+        1.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        4.0,
+        22.0,
+        0.0
+      ],
+      "screen_px": [
+        793.0,
+        360.3399658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        4.000007629394531,
+        22.00000762939453,
+        9.179115295410156e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.0,
+        1.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        6.0,
+        20.0,
+        0.0
+      ],
+      "screen_px": [
+        759.0,
+        360.3399658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        6.0,
+        20.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6.0,
+        1.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        6.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        793.0,
+        377.3399658203125
+      ],
+      "projection_error_px": 3.0517578125e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        6.0,
+        24.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0.5,
+        2.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        2.0,
+        0.0
+      ],
+      "screen_px": [
+        589.0000610351562,
+        292.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        8.0,
+        1.9999923706054688,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0.0,
+        2.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        10.0,
+        0.0,
+        0.0
+      ],
+      "screen_px": [
+        555.0000610351562,
+        292.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        9.999992370605469,
+        -1.52587890625e-05,
+        -6.079673767089844e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.5,
+        2.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        6.0,
+        0.0
+      ],
+      "screen_px": [
+        623.0000610351562,
+        309.3399353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        8.0,
+        6.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.0,
+        2.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        10.0,
+        4.0,
+        0.0
+      ],
+      "screen_px": [
+        589.0001220703125,
+        309.3399353027344
+      ],
+      "projection_error_px": 0.00013647875839232116,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        10.0,
+        3.9999923706054688,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.5,
+        2.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        10.0,
+        0.0
+      ],
+      "screen_px": [
+        657.0000610351562,
+        326.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        7.999977111816406,
+        9.999977111816406,
+        -1.8298625946044922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.0,
+        2.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        10.0,
+        8.0,
+        0.0
+      ],
+      "screen_px": [
+        623.0000610351562,
+        326.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        10.0,
+        8.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.5,
+        2.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        14.0,
+        0.0
+      ],
+      "screen_px": [
+        691.0000610351562,
+        343.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        8.000015258789062,
+        14.000015258789062,
+        1.2218952178955078e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.0,
+        2.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        10.0,
+        12.0,
+        0.0
+      ],
+      "screen_px": [
+        657.0000610351562,
+        343.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        9.999992370605469,
+        11.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.5,
+        2.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        18.0,
+        0.0
+      ],
+      "screen_px": [
+        725.0000610351562,
+        360.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        7.999992370605469,
+        17.99999237060547,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.0,
+        2.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        10.0,
+        16.0,
+        0.0
+      ],
+      "screen_px": [
+        691.0000610351562,
+        360.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        10.000007629394531,
+        16.00000762939453,
+        4.589557647705078e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.5,
+        2.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        8.0,
+        22.0,
+        0.0
+      ],
+      "screen_px": [
+        759.0001220703125,
+        377.3399658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        8.000007629394531,
+        22.00000762939453,
+        9.179115295410156e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.0,
+        2.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        10.0,
+        20.0,
+        0.0
+      ],
+      "screen_px": [
+        725.0000610351562,
+        377.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        10.000015258789062,
+        20.000015258789062,
+        9.179115295410156e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        6.0,
+        2.5
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        10.0,
+        24.0,
+        0.0
+      ],
+      "screen_px": [
+        759.0001220703125,
+        394.3399658203125
+      ],
+      "projection_error_px": 0.00012582719804741396,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        10.0,
+        24.0,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        0.5,
+        3.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        2.0,
+        0.0
+      ],
+      "screen_px": [
+        555.0000610351562,
+        309.3399353027344
+      ],
+      "projection_error_px": 8.631674575031098e-05,
+      "first_hit": "South bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        12.0,
+        1.9999923706054688,
+        1.5497207641601562e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        1.5,
+        3.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        6.0,
+        0.0
+      ],
+      "screen_px": [
+        589.0000610351562,
+        326.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        11.999984741210938,
+        5.9999847412109375,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        2.5,
+        3.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        10.0,
+        0.0
+      ],
+      "screen_px": [
+        623.0000610351562,
+        343.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        11.999992370605469,
+        9.999992370605469,
+        -1.0669231414794922e-05
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        3.5,
+        3.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        14.0,
+        0.0
+      ],
+      "screen_px": [
+        657.0000610351562,
+        360.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        12.000007629394531,
+        14.000007629394531,
+        4.589557647705078e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        4.5,
+        3.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        18.0,
+        0.0
+      ],
+      "screen_px": [
+        691.0000610351562,
+        377.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "Unbroken main bridge support surface",
+      "role": "ground",
+      "hit_world": [
+        12.0,
+        18.0,
+        -3.039836883544922e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "sample": [
+        5.5,
+        3.0
+      ],
+      "kind": "walkable_neighbor_midpoint",
+      "blocked": false,
+      "visible_support": true,
+      "ground_visible": true,
+      "ok": true,
+      "world": [
+        12.0,
+        22.0,
+        0.0
+      ],
+      "screen_px": [
+        725.0000610351562,
+        394.3399658203125
+      ],
+      "projection_error_px": 6.823937919616058e-05,
+      "first_hit": "North bank continuous quay support",
+      "role": "ground",
+      "hit_world": [
+        12.000015258789062,
+        22.000015258789062,
+        9.179115295410156e-06
+      ],
+      "hit_normal": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "world_cell_size": 4.0,
+  "grid_origin_world": [
+    0,
+    0,
+    0
+  ],
+  "cell_axis_x_world": [
+    0.0,
+    4.0,
+    0.0
+  ],
+  "cell_axis_y_world": [
+    4.0,
+    0.0,
+    0.0
+  ],
+  "coordinate_system": "Blender right handed Z up; grid x=world +Y, grid y=world +X; scene metres",
+  "scale_scope": "Environment scale only; no physical mecha-body registration or rules change",
+  "status": "candidate_registered_environment_only",
+  "candidate": true,
+  "not_canon": true,
+  "runtime_allowed": false,
+  "user_visual_acceptance": false,
+  "source_blend": "artifacts/formulas/visual-targets-v1/art/settlement-bridge-v1/blender/settlement_bridge_candidate.blend",
+  "source_script": "artifacts/formulas/visual-targets-v1/art/settlement-bridge-v1/blender/build_settlement_bridge.py",
+  "source_script_sha256": "9d27064d6a198427bb3f7029ea430bf3be90b14dd12e7d5e741380a2eb30d6b0",
+  "source_blend_sha256": "890005885d5cbdf976ca8420dc2e887d6cc30c138b1ab13d4e0fe1738f3a5520",
+  "camera": {
+    "type": "ORTHO",
+    "ortho_scale": 106.48196411132812,
+    "location": [
+      106.0,
+      112.0,
+      81.649658203125
+    ],
+    "rotation_euler": [
+      1.0471974611282349,
+      2.063460691204e-08,
+      2.356194496154785
+    ],
+    "shift_x": -0.039843786507844925,
+    "shift_y": -0.026296736672520638,
+    "matrix_world": [
+      [
+        -0.7071067690849304,
+        -0.35355344414711,
+        0.6123723983764648,
+        106.0
+      ],
+      [
+        0.7071067690849304,
+        -0.35355344414711,
+        0.6123723983764648,
+        112.0
+      ],
+      [
+        -2.063460691204e-08,
+        0.8660253882408142,
+        0.5000000596046448,
+        81.649658203125
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "no_baked_characters_mecha_ui_path_or_body_damage": true
+}

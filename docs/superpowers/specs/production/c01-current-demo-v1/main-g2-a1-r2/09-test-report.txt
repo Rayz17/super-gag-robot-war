@@ -1,0 +1,56 @@
+C01E02 G2-A.1-R2 TEST REPORT
+Date: 2026-08-19 Asia/Shanghai
+Scope: tactical geometry consumer calibration proxy only
+Godot: 4.7.stable.official.5b4e0cb0f
+Actual-frame renderer: OpenGL 4.1 Metal Compatibility, Apple M2 Max
+
+1. Specialized suite
+Command: scripts/test_c01e02_m3_golden_slice_g2_a1_r2.sh
+Result: PASS
+Coverage: input hash lock; projection; A/B/failure segment facings; endpoint settle; 1x1/2x2/3x3 footpoint; pivot and z; wrong view-space/camera/pivot rejection; sparse clip and signed alias; 11 existing Golden Slice/R1 regressions; seven GUI-rendered actual frames; six A4 layers; shared contact socket; direct scene smoke; isolation.
+Expected terminal receipt: C01E02_G2A1_R2_SPECIALIZED_PASS machine=true actual_frames=7 producer_visual_signoff=pending contact_staging=BLOCKED_BY_CONTACT_STAGING_DECISION
+Logs: logs/00-contract-hashes.log through logs/60-isolation.log
+
+2. New focused test
+Command: godot --headless --path game-godot --script res://tests/candidate_runtime_demo/m3_golden_slice/g2_a1_r2_tactical_geometry_test.gd
+Result: PASS
+Receipt: receipts/tactical-geometry.json
+Terminal: C01E02_G2A1_R2_TACTICAL_GEOMETRY_OK projection=true segment_facing=true footprint=true guards=true sparse=true contact_decision=pending
+
+3. Existing direct regressions preserved
+Result: PASS 11/11
+Tests: g2_a_domain_contract_test; g2_a_session_flow_test; g2_a_ui_interaction_test; g2_a_presentation_asset_test; g2_a1_map_performance_consumer_test; g2_a1_input_overlay_test; g2_a1_strategy_constraint_visibility_test; g2_a1_audio_bus_runtime_test; g2_a1_asset_fail_closed_test; g2_a1_r1_contact_audio_timing_test; g2_a1_r1_real_fixture_consumer_test.
+Important boundary: R1 legacy Cartesian fixtures pass only through R1_CARTESIAN_FIXTURE_TO_RUNTIME_TEST_ONLY. This is not an exact-handoff default path.
+
+4. Actual-frame capture
+Command: godot --path game-godot --script res://tests/candidate_runtime_demo/m3_golden_slice/g2_a1_r2_actual_frame_capture_driver.gd
+Result: PASS 7/7 at 1280x720
+Method: Godot root viewport get_texture().get_image(); no Pillow, SVG, or offline composition.
+Frames: direction fan; Strategy A east segment; Strategy A north segment; registration and occlusion; contact socket and force; Strategy B north segment; Strategy B east segment.
+Receipt: 08-capture-manifest.json
+Visual inspection performed for evidence quality: all seven PNGs opened from disk and inspected. This is not producer acceptance.
+
+5. Full repository Godot suite
+Command: scripts/godot-test.sh
+Result: PASS
+Log: logs/70-full-godot-test.log
+
+6. Canon and layered-pipeline read-only checks
+Commands and results:
+- scripts/canon-check-godot.sh --report: PASS
+- scripts/canon-check-godot.sh --strict: PASS
+- python3 scripts/check_canon_authority.py: PASS
+- scripts/canon-smoke-test.sh: PASS
+- python3 scripts/report_v35_layered_pipeline.py --check: PASS, dashboard current
+Logs: logs/71-canon-check-report.log through logs/75-v35-layered-pipeline.log
+
+7. Isolation receipts
+Formal Golden Slice profile SHA256 remained 28ba689ea08d08201e2c9dbce0de65c7ba085f54181d7b0034bcd298d8d2af28.
+Default main scene remained res://scenes/startup_router.tscn.
+No save service, operation commit, default-entry write, real Guardian Z/BREAKER art, signed handoff, Runtime promotion, Canon edit, git add, commit, or clean was performed.
+Existing A4 six-layer files were read only by the test capture driver. Unit real art loaded: 0.
+
+8. Non-machine stopping gates
+Producer actual-frame visual sign-off: PENDING.
+Contact staging: BLOCKED_BY_CONTACT_STAGING_DECISION.
+Machine PASS does not clear either gate and does not authorize A9.1-A6, UA91, A9.1-B, exact handoff, or G2-B.

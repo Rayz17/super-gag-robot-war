@@ -1,0 +1,183 @@
+{
+  "task": "70-c01e02-a9-1a3-imagegen-mask-failure-and-layered-svg-pilot",
+  "authority": "Candidate",
+  "runtime_allowed": false,
+  "imagegen_calls": 0,
+  "blender_calls": 0,
+  "visible_machine_geometry": "hand-authored SVG path only",
+  "source_locks": [
+    {
+      "source_id": "TASK70",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/70-c01e02-a9-1a3-imagegen-mask-failure-and-layered-svg-pilot.md",
+      "expected_sha256": "e8a992e25eafc8d55eed32c5021dadb8c5946ca11fecc3383870b7822a97d341",
+      "actual_sha256": "e8a992e25eafc8d55eed32c5021dadb8c5946ca11fecc3383870b7822a97d341",
+      "pass": true
+    },
+    {
+      "source_id": "BOARD38",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/38-c01e02-m3-r0-5-production-board.tsv",
+      "expected_sha256": "a9954978e9972faaa060c497368f2c52dafe14b73bc03b28d8cd8139ecc35c6a",
+      "actual_sha256": "a9954978e9972faaa060c497368f2c52dafe14b73bc03b28d8cd8139ecc35c6a",
+      "pass": true
+    },
+    {
+      "source_id": "GZ_C128",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-g1-5/GZ_QSD_A1_candidate_C_128.png",
+      "expected_sha256": "d72cfc1873da2d89bc22d867536b3d73547fc17d4ed154c40fec26a5fd71214e",
+      "actual_sha256": "d72cfc1873da2d89bc22d867536b3d73547fc17d4ed154c40fec26a5fd71214e",
+      "pass": true
+    },
+    {
+      "source_id": "GZ_C_BOARD",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-g1-5/GZ_QSD_A1_direction_board_1920x1080.png",
+      "expected_sha256": "4d8e7975649b2b85458a838afd9bc2fe8e3a90fd8cbcfe8a7929b8ae9ae6c225",
+      "actual_sha256": "4d8e7975649b2b85458a838afd9bc2fe8e3a90fd8cbcfe8a7929b8ae9ae6c225",
+      "pass": true
+    },
+    {
+      "source_id": "GZ_CML008",
+      "path": ".superpowers/brainstorm/37837-1782033239/content/guardian-z-user-selected-base.png",
+      "expected_sha256": "a9688f07d923d79680e1ba13a1cc51135b72dd29b38cf25242e2239107b86521",
+      "actual_sha256": "a9688f07d923d79680e1ba13a1cc51135b72dd29b38cf25242e2239107b86521",
+      "pass": true
+    },
+    {
+      "source_id": "GZ_V10X",
+      "path": "docs/superpowers/specs/production/art-direction-v0.3/art-delivery/review/guardian_z_collector_e02_lockframe_candidate_v10x.png",
+      "expected_sha256": "e1d6b00d743e925d37a8fe4c74a1ef9114e1d7b0f4826fc2285bd6dae1470ade",
+      "actual_sha256": "e1d6b00d743e925d37a8fe4c74a1ef9114e1d7b0f4826fc2285bd6dae1470ade",
+      "pass": true
+    },
+    {
+      "source_id": "GZ_A2_LOCAL",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a2-master-production-correction/delivery/GUARDIAN_Z_V10X_KINETIC_FRONT_RGBA_1024.png",
+      "expected_sha256": "59033c5ae3dc713ec2fa669e5c4e711d2843c0449533bc6b993a6d01339e3366",
+      "actual_sha256": "59033c5ae3dc713ec2fa669e5c4e711d2843c0449533bc6b993a6d01339e3366",
+      "pass": true
+    },
+    {
+      "source_id": "CML128_A",
+      "path": "docs/superpowers/specs/production/art-direction-v0.3/art-delivery/review/series_style_storyframe_v23a_kinetic_cel.png",
+      "expected_sha256": "8a546082e8fd2f1b0f9c6e8a8b1e602a647f478112887e93a8f44148e4867842",
+      "actual_sha256": "8a546082e8fd2f1b0f9c6e8a8b1e602a647f478112887e93a8f44148e4867842",
+      "pass": true
+    },
+    {
+      "source_id": "BR_B128",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-g1-5/b1-breaker-ground/BREAKER_B1_candidate_B_128.png",
+      "expected_sha256": "e8000411704e9da6408eb746080545850e23d5eb3e63afd33f251a9ab33c7ac4",
+      "actual_sha256": "e8000411704e9da6408eb746080545850e23d5eb3e63afd33f251a9ab33c7ac4",
+      "pass": true
+    },
+    {
+      "source_id": "BR_B_ID",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-g1-5/b1-breaker-ground/BREAKER_B1_candidate_B_identity_sheet_1800x1200.png",
+      "expected_sha256": "7035ba01896844d0e74a0e7989f26177fe4010b0458f742e200da5d0f900f868",
+      "actual_sha256": "7035ba01896844d0e74a0e7989f26177fe4010b0458f742e200da5d0f900f868",
+      "pass": true
+    },
+    {
+      "source_id": "BR_X",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-g1-5/b1-breaker-ground/BREAKER_B1_surface_relation_board_1800x1100.png",
+      "expected_sha256": "cdedf6b1c59b953395decc3a94221903a25ec3ba631b9727382177fe05a40d85",
+      "actual_sha256": "cdedf6b1c59b953395decc3a94221903a25ec3ba631b9727382177fe05a40d85",
+      "pass": true
+    },
+    {
+      "source_id": "BR_A_LOCAL",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a-identity-style-scale-masters/delivery/BREAKER_BX_GROUND_SHELL_MASTER_RGBA_1400.png",
+      "expected_sha256": "cbeb1ecb18e9d1ed41dd96d939c56e1f00f0eeab3f1af6bd4ddca048e8e02113",
+      "actual_sha256": "cbeb1ecb18e9d1ed41dd96d939c56e1f00f0eeab3f1af6bd4ddca048e8e02113",
+      "pass": true
+    },
+    {
+      "source_id": "BR_A2_STYLE",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a2-master-production-correction/delivery/BREAKER_BX_NONANIMAL_KINETIC_MASTER_RGBA_1400.png",
+      "expected_sha256": "b47ebc4a6b8538f23892229f5554ae6c33b066ac37cf7077a71399e6931fb89d",
+      "actual_sha256": "b47ebc4a6b8538f23892229f5554ae6c33b066ac37cf7077a71399e6931fb89d",
+      "pass": true
+    },
+    {
+      "source_id": "A4_VIEWPORT",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a4-map-b-six-layer/A4_MAP_B_viewport_central_1280x720.png",
+      "expected_sha256": "b8ccc9b6eefb802b929a6d674e668611c6d9a88e123e24a2991710ae7e5f4ea9",
+      "actual_sha256": "b8ccc9b6eefb802b929a6d674e668611c6d9a88e123e24a2991710ae7e5f4ea9",
+      "pass": true
+    }
+  ],
+  "source_lock_pass_all": true,
+  "pilots": [
+    {
+      "key": "guardian_z",
+      "svg": "GUARDIAN_Z_C_SOUTH_IDLE_MASTER.svg",
+      "png": "GUARDIAN_Z_C_SOUTH_IDLE_256.png",
+      "frame": [
+        256,
+        256
+      ],
+      "bbox": [
+        26,
+        12,
+        230,
+        254
+      ],
+      "expected_bbox": [
+        26,
+        12,
+        230,
+        254
+      ],
+      "bbox_size": [
+        204,
+        242
+      ],
+      "pivot": [
+        128,
+        254
+      ],
+      "silhouette_iou": 1.0,
+      "center_drift_px": 0.0,
+      "outside_mask_alpha_max": 0,
+      "missing_layers": [],
+      "disallowed_svg_geometry": [],
+      "machine_pass": true
+    },
+    {
+      "key": "breaker",
+      "svg": "BREAKER_BX_NORTH_CHARGE_READY_MASTER.svg",
+      "png": "BREAKER_BX_NORTH_CHARGE_READY_384.png",
+      "frame": [
+        384,
+        384
+      ],
+      "bbox": [
+        33,
+        18,
+        351,
+        348
+      ],
+      "expected_bbox": [
+        33,
+        18,
+        351,
+        348
+      ],
+      "bbox_size": [
+        318,
+        330
+      ],
+      "pivot": [
+        192,
+        348
+      ],
+      "silhouette_iou": 1.0,
+      "center_drift_px": 0.0,
+      "outside_mask_alpha_max": 0,
+      "missing_layers": [],
+      "disallowed_svg_geometry": [],
+      "machine_pass": true
+    }
+  ],
+  "machine_pass_all": true,
+  "visual_pass": "PENDING_PRODUCER_PIXEL_REVIEW"
+}

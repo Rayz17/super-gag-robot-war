@@ -1,0 +1,1574 @@
+{
+  "schema_id": "C01_GROUND_MECHA_BINDINGS_V1",
+  "pose_binding_schema_id": "C01_GROUND_MECHA_ACTION_FACING_BINDINGS_V1",
+  "candidate_only": true,
+  "runtime_promotion": false,
+  "default_promotion": false,
+  "canon_promotion": false,
+  "breaker_phase_projection_schema_id": "C01_BREAKER_PHASE_PROJECTION_BINDINGS_V1",
+  "breaker_phase_projection": {
+    "world_subject_id": "ENEMY_C01_BREAKER",
+    "trigger_phase": "flying_core",
+    "required_ground_shell_state": "broken",
+    "logical_entity_count": 1,
+    "projection_visual_count": 2,
+    "world_entity_ids_added": [],
+    "slots": {
+      "ground_shell_broken": {
+        "projection_id": "BREAKER_PHASE_PROJECTION_GROUND_SHELL_BROKEN",
+        "projection_role": "ground_shell_broken",
+        "world_subject_id": "ENEMY_C01_BREAKER",
+        "world_entity": false,
+        "anchor_source": "world_subject_anchor",
+        "screen_offset": [
+          0.0,
+          0.0
+        ],
+        "facing": "north",
+        "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+        "user_visual_acceptance": false,
+        "runtime_promotion": false,
+        "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_ground_shell_broken_projection_candidate.png",
+        "sha256": "b50c0254d5fb44627dcd7368148375ed4affa61ca9660d6767277d600fa80a34",
+        "canvas_size": [
+          384,
+          384
+        ],
+        "pivot_px": [
+          192,
+          300
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "fallback": ""
+      },
+      "flight_core": {
+        "projection_id": "BREAKER_PHASE_PROJECTION_FLIGHT_CORE",
+        "projection_role": "flight_core",
+        "world_subject_id": "ENEMY_C01_BREAKER",
+        "world_entity": false,
+        "anchor_source": "world_subject_anchor",
+        "screen_offset": [
+          0.0,
+          -176.0
+        ],
+        "facing": "north",
+        "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+        "user_visual_acceptance": false,
+        "runtime_promotion": false,
+        "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_flight_core_ground_projection_candidate.png",
+        "sha256": "1d715a028363a3d5b0174cb9a29f4f635b2e3594137804b7a070742fd68fc0b9",
+        "canvas_size": [
+          384,
+          384
+        ],
+        "pivot_px": [
+          192,
+          320
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "fallback": ""
+      }
+    }
+  },
+  "history_unbound_sources": {
+    "V353U001_OLD_EAST_CAMERA_V2": {
+      "subject_id": "V353U001",
+      "approval_state": "FORBIDDEN_HISTORY",
+      "texture_load": false,
+      "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/guardian_z_east_camera_v2_candidate.png",
+      "sha256": "3ffdcf568828e5398049a27445c9e21e5965967067f16422280e1965c7b8070e",
+      "reason": "Retained on disk for traceability only. CML130 and Call01 make the V10X exact idle/east and idle/south rows the only loadable C01E02 Guardian Z poses; this old east sprite remains forbidden.",
+      "fallback_allowed": false
+    },
+    "V353U001_V10X_IDLE_EAST_PRE_ALPHA_FIX": {
+      "subject_id": "V353U001",
+      "action": "idle",
+      "facing": "east",
+      "approval_state": "FORBIDDEN_HISTORY",
+      "texture_load": false,
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/_history/pre-internal-alpha-hole-fix-20260824/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_EAST_CANDIDATE_256.png",
+      "sha256": "c6dd358980e19045626e0ed17de0614b543a971d7275cde76816e3f1d1f3b0de",
+      "reason": "Rejected alpha history: the arm-to-torso negative space retained an opaque checker/white component. Trace only; never load or reuse as art input.",
+      "fallback_allowed": false
+    },
+    "V353U001_V10X_IDLE_SOUTH_PRE_ALPHA_FIX": {
+      "subject_id": "V353U001",
+      "action": "idle",
+      "facing": "south",
+      "approval_state": "FORBIDDEN_HISTORY",
+      "texture_load": false,
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/_history/pre-internal-alpha-hole-fix-20260824/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_SOUTH_CANDIDATE_256.png",
+      "sha256": "0b3d2f437558216b8d3a94a1ea5255f7b9310a94447ba530a1d89b210ccfc12d",
+      "reason": "Rejected alpha history: the arm-to-torso negative space retained an opaque checker/white component. Trace only; never load or reuse as art input.",
+      "fallback_allowed": false
+    },
+    "ENEMY_C01_BREAKER_A37_NORTH_512_BLENDER_FAIL": {
+      "subject_id": "ENEMY_C01_BREAKER",
+      "approval_state": "FORBIDDEN_HISTORY",
+      "texture_load": false,
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a37-section2-breaker-shared-3d-turntable-candidate/delivery/BREAKER_A37_NORTH_512_RGBA_CANDIDATE.png",
+      "sha256": "629557dd08311b1f410c1927ec0abe7b7aeb885c4a42e318eb8fc50cf470f1b5",
+      "reason": "User-stopped Blender route. Trace only; its bytes are forbidden even if copied under the Candidate asset root.",
+      "fallback_allowed": false
+    },
+    "ENEMY_C01_BREAKER_A37_WEST_512_BLENDER_FAIL": {
+      "subject_id": "ENEMY_C01_BREAKER",
+      "approval_state": "FORBIDDEN_HISTORY",
+      "texture_load": false,
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a37-section2-breaker-shared-3d-turntable-candidate/delivery/BREAKER_A37_WEST_512_RGBA_CANDIDATE.png",
+      "sha256": "0175daf36e47f20550429c12d5a2c20d026d14c939e5d36aebabeb584a68c641",
+      "reason": "User-stopped Blender route. Trace only; its bytes are forbidden even if copied under the Candidate asset root.",
+      "fallback_allowed": false
+    },
+    "ENEMY_C01_BREAKER_A37_NORTH_1024_BLENDER_FAIL": {
+      "subject_id": "ENEMY_C01_BREAKER",
+      "approval_state": "FORBIDDEN_HISTORY",
+      "texture_load": false,
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a37-section2-breaker-shared-3d-turntable-candidate/raw/BREAKER_A37_NORTH_1024_RGBA_CANDIDATE.png",
+      "sha256": "a32a9808870b6b661b2d4e75d3b91c4fe9a24a7da60b1695a0d3c7ab72cd9a77",
+      "reason": "User-stopped Blender route. Trace only; its bytes are forbidden even if copied under the Candidate asset root.",
+      "fallback_allowed": false
+    },
+    "ENEMY_C01_BREAKER_A37_WEST_1024_BLENDER_FAIL": {
+      "subject_id": "ENEMY_C01_BREAKER",
+      "approval_state": "FORBIDDEN_HISTORY",
+      "texture_load": false,
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a37-section2-breaker-shared-3d-turntable-candidate/raw/BREAKER_A37_WEST_1024_RGBA_CANDIDATE.png",
+      "sha256": "60f4b400f5c16e9d44b3ba65b1513c4944a221486142b2cc4813f7b0bd25425a",
+      "reason": "User-stopped Blender route. Trace only; its bytes are forbidden even if copied under the Candidate asset root.",
+      "fallback_allowed": false
+    }
+  },
+  "bindings": {
+    "ENEMY_C01_BREAKER": {
+      "subject_id": "ENEMY_C01_BREAKER",
+      "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+      "user_visual_acceptance": false,
+      "texture_load": true,
+      "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_north_camera_v2_candidate.png",
+      "sha256": "6b20111c80e3dc76adb5a05b55395359b7d1bdc2ec189060859058e53dbffde1",
+      "canvas_size": [
+        384,
+        384
+      ],
+      "pivot_px": [
+        192,
+        320
+      ],
+      "scale": [
+        1.0,
+        1.0
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "facing": "north",
+      "source_boundary": "User-accepted GF design translated by locked raw e63708c0 and deterministic 0-ImageGen alpha; pending user actual-frame review"
+    }
+  },
+  "pose_bindings": {
+    "V353U001": {
+      "__unbound__": {
+        "approval_state": "FORBIDDEN_HISTORY",
+        "texture_load": false,
+        "reason": "No base binding exists. Only exact V10X idle/east and idle/south pose rows are loadable; all missing actions and facings continue to fail closed without exposing a fallback."
+      },
+      "idle": {
+        "east": {
+          "subject_id": "V353U001",
+          "action": "idle",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "user_direction_acceptance": true,
+          "alpha_repair_pending_user_review": true,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/guardian_z_v10x_idle_east_camera_v2_user_accepted_candidate.png",
+          "sha256": "1f6907776a382dd9daacdb8854725392c8f8d662b402654250327eb66bb9bdb7",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "east",
+          "reuse_role": "exact_alpha_repaired_idle_candidate",
+          "source_boundary": "Call01 user-accepted V10X direction with deterministic internal alpha-hole repair; Candidate-only exact idle/east binding pending renewed actual-frame visual review"
+        },
+        "south": {
+          "subject_id": "V353U001",
+          "action": "idle",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "user_direction_acceptance": true,
+          "alpha_repair_pending_user_review": true,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/guardian_z_v10x_idle_south_camera_v2_user_accepted_candidate.png",
+          "sha256": "d1181e1b5d24903ed6f0e54c7e262815ddbed9e22e7a8135992dda188821b796",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "south",
+          "reuse_role": "exact_alpha_repaired_idle_candidate",
+          "source_boundary": "Call01 user-accepted V10X direction with deterministic internal alpha-hole repair; Candidate-only exact idle/south binding pending renewed actual-frame visual review"
+        },
+        "north": {
+          "subject_id": "V353U001",
+          "action": "idle",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/guardian_z_v10x_idle_north_camera_v2_candidate.png",
+          "sha256": "68d47bc34517f5ce56cf5b5cf9ec360b3b605fbf4d252003052cf85e803f9184",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "north",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "2026-08-26 Candidate idle/north back view without magenta plate; both arms intact; not a rotation or mirror of accepted south/east"
+        },
+        "west": {
+          "subject_id": "V353U001",
+          "action": "idle",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/guardian_z_v10x_idle_west_camera_v2_candidate.png",
+          "sha256": "94ca942cb1a038b7a5d633bb8656fb5dbef5c701fa884c7125358069bc24c3c4",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "west",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Independently generated idle/west Candidate; not a horizontal mirror of accepted idle/east"
+        }
+      },
+      "brace": {
+        "east": {
+          "subject_id": "V353U001",
+          "action": "brace",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/guardian_z_v10x_brace_east_camera_v2_candidate.png",
+          "sha256": "af2e6cc0d8bde79c756c175027f71d339549235fc737926a34adc890d706eebe",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "east",
+          "reuse_role": "stock_camera_v2_candidate_reuse",
+          "source_boundary": "Reused Camera V2 brace/east Candidate from the V10X E02 wave-B campaign; not Runtime"
+        },
+        "south": {
+          "subject_id": "V353U001",
+          "action": "brace",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/guardian_z_v10x_brace_south_camera_v2_candidate.png",
+          "sha256": "a40e94a3c611367ebdf7d1c8fad708f90971f848e8429b1764ebcfb08707d696",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "south",
+          "reuse_role": "stock_camera_v2_candidate_reuse",
+          "source_boundary": "Reused Camera V2 brace/south Candidate from the V10X E02 wave-B campaign; not Runtime"
+        }
+      },
+      "shield_block": {
+        "south": {
+          "subject_id": "V353U001",
+          "action": "shield_block",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/guardian_z_v10x_shield_block_south_camera_v2_candidate.png",
+          "sha256": "875c0756bdaaf099429c8004189fc5fee2588d9f597e5bc4c66c67095459422e",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "south",
+          "reuse_role": "stock_camera_v2_candidate_reuse",
+          "source_boundary": "Reused Camera V2 shield_block/south Candidate from the V10X E02 shield campaign; not Runtime"
+        }
+      },
+      "shield_hold": {
+        "south": {
+          "subject_id": "V353U001",
+          "action": "shield_hold",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/guardian_z_v10x_shield_hold_south_camera_v2_candidate.png",
+          "sha256": "94d45b03e2f3dbacb99fa27aae817c17b39a1268518579253481edbbf3f70cde",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "south",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Candidate-only exact action+facing row pending user actual-frame visual review; not Runtime/Default/Canon"
+        }
+      },
+      "shield_bash": {
+        "south": {
+          "subject_id": "V353U001",
+          "action": "shield_bash",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/guardian_z_v10x_shield_bash_south_camera_v2_candidate.png",
+          "sha256": "92d1f1b484fac4ec185b1f5881f4d7c939d6009a7b630ab32dc91e3d812445f2",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "south",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Candidate-only exact action+facing row pending user actual-frame visual review; not Runtime/Default/Canon"
+        }
+      },
+      "shield_take": {
+        "south": {
+          "subject_id": "V353U001",
+          "action": "shield_take",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/guardian_z_v10x_shield_take_south_camera_v2_candidate.png",
+          "sha256": "36df0bb019f931b0368a0be538c1720953697765f3009749b2de65bb05bae6fc",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "south",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Candidate-only exact action+facing row pending user actual-frame visual review; not Runtime/Default/Canon"
+        }
+      },
+      "south_drill_block": {
+        "north": {
+          "subject_id": "V353U001",
+          "action": "south_drill_block",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/guardian_z_v10x_south_drill_block_north_camera_v2_candidate.png",
+          "sha256": "afb2f952b91bdb269d6a372d64fedb2b60bfb825aa5e74aed4c6e2ca15ea32a7",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "north",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Candidate-only exact action+facing row pending user actual-frame visual review; not Runtime/Default/Canon"
+        }
+      },
+      "autonomous_overload_rocket_fist": {
+        "north": {
+          "subject_id": "V353U001",
+          "action": "autonomous_overload_rocket_fist",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/guardian_z_v10x_autonomous_overload_north_camera_v2_candidate.png",
+          "sha256": "34d1e5285f549922f694de55f467f6dbc6b380469e58ea6f6cac661f287d4618",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "north",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Candidate-only exact action+facing row pending user actual-frame visual review; not Runtime/Default/Canon"
+        }
+      },
+      "right_arm_destroyed": {
+        "north": {
+          "subject_id": "V353U001",
+          "action": "right_arm_destroyed",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/guardian_z_v10x_right_arm_destroyed_north_camera_v2_candidate.png",
+          "sha256": "5ee47c78cbe2aecf1cb988b0ee07af054655a223f26cbfea6e65a1552aad8fc4",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "north",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Candidate-only exact action+facing row pending user actual-frame visual review; not Runtime/Default/Canon"
+        }
+      }
+    },
+    "ENEMY_C01_BREAKER": {
+      "idle": {
+        "north": {
+          "subject_id": "ENEMY_C01_BREAKER",
+          "action": "idle",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "texture_load": true,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_north_camera_v2_candidate.png",
+          "sha256": "6b20111c80e3dc76adb5a05b55395359b7d1bdc2ec189060859058e53dbffde1",
+          "canvas_size": [
+            384,
+            384
+          ],
+          "pivot_px": [
+            192,
+            320
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "facing": "north",
+          "reuse_role": "exact_idle_pose",
+          "source_boundary": "Exact Candidate idle/north pose"
+        },
+        "west": {
+          "subject_id": "ENEMY_C01_BREAKER",
+          "action": "idle",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_idle_west_camera_v2_candidate.png",
+          "sha256": "c301138c125db86278340bdbaaf238f9f5bc908cffdd92bf7213f40699ab042b",
+          "canvas_size": [
+            384,
+            384
+          ],
+          "pivot_px": [
+            192,
+            320
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "facing": "west",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Independently generated idle/west Candidate; not a horizontal mirror of idle/north; not A37 Blender"
+        }
+      },
+      "charge": {
+        "north": {
+          "subject_id": "ENEMY_C01_BREAKER",
+          "action": "charge",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "texture_load": true,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_north_camera_v2_candidate.png",
+          "sha256": "6b20111c80e3dc76adb5a05b55395359b7d1bdc2ec189060859058e53dbffde1",
+          "canvas_size": [
+            384,
+            384
+          ],
+          "pivot_px": [
+            192,
+            320
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "facing": "north",
+          "reuse_role": "explicit_north_static_action_row",
+          "static_reuse": true,
+          "independent_action_asset": false,
+          "reuse_source_action": "idle",
+          "source_boundary": "Static reuse of the exact idle/north Candidate body for charge/north review; this is not an independent charge action asset and permits no cross-facing or generic action fallback"
+        }
+      },
+      "contact": {
+        "north": {
+          "subject_id": "ENEMY_C01_BREAKER",
+          "action": "contact",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "texture_load": true,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_north_camera_v2_candidate.png",
+          "sha256": "6b20111c80e3dc76adb5a05b55395359b7d1bdc2ec189060859058e53dbffde1",
+          "canvas_size": [
+            384,
+            384
+          ],
+          "pivot_px": [
+            192,
+            320
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "facing": "north",
+          "reuse_role": "explicit_north_static_action_row",
+          "static_reuse": true,
+          "independent_action_asset": false,
+          "reuse_source_action": "idle",
+          "source_boundary": "Static reuse of the exact idle/north Candidate body for contact/north review; this is not an independent contact action asset and permits no cross-facing or generic action fallback"
+        }
+      },
+      "red_beam": {
+        "west": {
+          "subject_id": "ENEMY_C01_BREAKER",
+          "action": "red_beam",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_red_beam_west_camera_v2_candidate.png",
+          "sha256": "93ecc88ed48852a4537ffa1514d7ee956fab4d1cea39f0305bcbe9d1ca2baf61",
+          "canvas_size": [
+            384,
+            384
+          ],
+          "pivot_px": [
+            192,
+            320
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "facing": "west",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Candidate-only exact action+facing row pending user actual-frame visual review; not Runtime/Default/Canon"
+        }
+      },
+      "hit_recoil": {
+        "west": {
+          "subject_id": "ENEMY_C01_BREAKER",
+          "action": "hit_recoil",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_hit_recoil_west_camera_v2_candidate.png",
+          "sha256": "2614390d915099dc85d5e585619bf40d9ce32cb2487d18463a81567a6ea953f5",
+          "canvas_size": [
+            384,
+            384
+          ],
+          "pivot_px": [
+            192,
+            320
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "facing": "west",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Candidate-only exact action+facing row pending user actual-frame visual review; not Runtime/Default/Canon"
+        },
+        "north": {
+          "subject_id": "ENEMY_C01_BREAKER",
+          "action": "hit_recoil",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_hit_recoil_north_camera_v2_candidate.png",
+          "sha256": "db6e1556ded862ceaac53f82948cf6a21e1a36c032b74cd41e5277f6d10650d2",
+          "canvas_size": [
+            384,
+            384
+          ],
+          "pivot_px": [
+            192,
+            320
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "facing": "north",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Candidate-only exact action+facing row pending user actual-frame visual review; not Runtime/Default/Canon"
+        }
+      },
+      "red_charge": {
+        "west": {
+          "subject_id": "ENEMY_C01_BREAKER",
+          "action": "red_charge",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_idle_west_camera_v2_candidate.png",
+          "sha256": "c301138c125db86278340bdbaaf238f9f5bc908cffdd92bf7213f40699ab042b",
+          "canvas_size": [
+            384,
+            384
+          ],
+          "pivot_px": [
+            192,
+            320
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "facing": "west",
+          "reuse_role": "explicit_static_action_row",
+          "source_boundary": "Static reuse of exact idle/west Candidate body; not an independent action asset and permits no cross-facing or generic fallback",
+          "static_reuse": true,
+          "independent_action_asset": false,
+          "reuse_source_action": "idle"
+        }
+      },
+      "recover_balance": {
+        "west": {
+          "subject_id": "ENEMY_C01_BREAKER",
+          "action": "recover_balance",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_idle_west_camera_v2_candidate.png",
+          "sha256": "c301138c125db86278340bdbaaf238f9f5bc908cffdd92bf7213f40699ab042b",
+          "canvas_size": [
+            384,
+            384
+          ],
+          "pivot_px": [
+            192,
+            320
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "facing": "west",
+          "reuse_role": "explicit_static_action_row",
+          "source_boundary": "Static reuse of exact idle/west Candidate body; not an independent action asset and permits no cross-facing or generic fallback",
+          "static_reuse": true,
+          "independent_action_asset": false,
+          "reuse_source_action": "idle"
+        }
+      },
+      "drill_tell": {
+        "north": {
+          "subject_id": "ENEMY_C01_BREAKER",
+          "action": "drill_tell",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_drill_tell_north_camera_v2_candidate.png",
+          "sha256": "e91684e0b754df9084af19887b075997a44c29cbc8886ceceaf1e239fd3c0b63",
+          "canvas_size": [
+            384,
+            384
+          ],
+          "pivot_px": [
+            192,
+            320
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "facing": "north",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Candidate-only exact action+facing row pending user actual-frame visual review; not Runtime/Default/Canon"
+        }
+      },
+      "red_slit_open": {
+        "north": {
+          "subject_id": "ENEMY_C01_BREAKER",
+          "action": "red_slit_open",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_red_slit_open_north_camera_v2_candidate.png",
+          "sha256": "8497fb0772b2c3e681586e3b62088ce04a87e268ad83bc957ac25885e5e62a15",
+          "canvas_size": [
+            384,
+            384
+          ],
+          "pivot_px": [
+            192,
+            320
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "facing": "north",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Candidate-only exact action+facing row pending user actual-frame visual review; not Runtime/Default/Canon"
+        }
+      },
+      "fist_caught": {
+        "south": {
+          "subject_id": "ENEMY_C01_BREAKER",
+          "action": "fist_caught",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_fist_caught_south_camera_v2_candidate.png",
+          "sha256": "0e80c0214b36865b23c5594c69282358381f7551e25972f33ff47aa6e4c10513",
+          "canvas_size": [
+            384,
+            384
+          ],
+          "pivot_px": [
+            192,
+            320
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "facing": "south",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Candidate-only exact action+facing row pending user actual-frame visual review; not Runtime/Default/Canon"
+        },
+        "north": {
+          "subject_id": "ENEMY_C01_BREAKER",
+          "action": "fist_caught",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_fist_caught_north_camera_v2_candidate.png",
+          "sha256": "3b629fe22974a1ccf299de9694a327e0bec644c4230040681312ce5f9e1b72b2",
+          "canvas_size": [
+            384,
+            384
+          ],
+          "pivot_px": [
+            192,
+            320
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "facing": "north",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Candidate-only exact action+facing row pending user actual-frame visual review; not Runtime/Default/Canon"
+        }
+      },
+      "attack_windup": {
+        "north": {
+          "subject_id": "ENEMY_C01_BREAKER",
+          "action": "attack_windup",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_north_camera_v2_candidate.png",
+          "sha256": "6b20111c80e3dc76adb5a05b55395359b7d1bdc2ec189060859058e53dbffde1",
+          "canvas_size": [
+            384,
+            384
+          ],
+          "pivot_px": [
+            192,
+            320
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            3,
+            3
+          ],
+          "facing": "north",
+          "reuse_role": "explicit_static_action_row",
+          "source_boundary": "Static reuse of exact idle/north Candidate body; not an independent action asset and permits no cross-facing or generic fallback",
+          "static_reuse": true,
+          "independent_action_asset": false,
+          "reuse_source_action": "idle"
+        }
+      }
+    },
+    "MECHA_BRAVE_FIST_PROTOTYPE": {
+      "idle": {
+        "east": {
+          "subject_id": "MECHA_BRAVE_FIST_PROTOTYPE",
+          "action": "idle",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/brave_fist_idle_east_camera_v2_candidate.png",
+          "sha256": "0096c0ed022a50e22e2166e9a719df8b74096d4cf0b63271dfa7cfcb8e6bb331",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "east",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "A33 identity-locked orange-gold heavy twin-fist mane-crown idle/east Candidate; facing right; not mirrored west"
+        },
+        "south": {
+          "subject_id": "MECHA_BRAVE_FIST_PROTOTYPE",
+          "action": "idle",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/brave_fist_idle_south_camera_v2_candidate.png",
+          "sha256": "1a41ff987c7227e5155cca71f4b8f9bda4137cbf325b6800f8048b2d44e6216b",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "south",
+          "reuse_role": "stock_camera_v2_candidate_reuse",
+          "source_boundary": "Reused A33-descended idle/south Camera V2 Candidate from the E03 campaign; not Runtime"
+        },
+        "west": {
+          "subject_id": "MECHA_BRAVE_FIST_PROTOTYPE",
+          "action": "idle",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/brave_fist_idle_west_camera_v2_candidate.png",
+          "sha256": "36c254ce8335adc5fb3e57c73be8911333e9433a4a28f47f8f74d134b96213ef",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "west",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Independently generated idle/west Candidate facing left; not a horizontal mirror of idle/east"
+        },
+        "north": {
+          "subject_id": "MECHA_BRAVE_FIST_PROTOTYPE",
+          "action": "idle",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/brave_fist_idle_north_camera_v2_candidate.png",
+          "sha256": "498dc6e168fcd7f36b9c1623362d72cc8b2cee8b35799a3a812a0e287a7786be",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "north",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Independently generated idle/north Candidate; not a rotation of south/east"
+        }
+      },
+      "rear_impact_return": {
+        "east": {
+          "subject_id": "MECHA_BRAVE_FIST_PROTOTYPE",
+          "action": "rear_impact_return",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/brave_fist_rear_impact_return_east_camera_v2_candidate.png",
+          "sha256": "7401c43c63de3dbb094f8352d7b7591381ab68a60145d184ff8e2d0081be4a20",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "east",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Candidate-only exact action+facing row pending user actual-frame visual review; not Runtime/Default/Canon"
+        },
+        "south": {
+          "subject_id": "MECHA_BRAVE_FIST_PROTOTYPE",
+          "action": "rear_impact_return",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/brave_fist_idle_south_camera_v2_candidate.png",
+          "sha256": "1a41ff987c7227e5155cca71f4b8f9bda4137cbf325b6800f8048b2d44e6216b",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "south",
+          "reuse_role": "explicit_static_action_row",
+          "source_boundary": "Static reuse of exact idle/south Candidate body; not an independent action asset and permits no cross-facing or generic fallback",
+          "static_reuse": true,
+          "independent_action_asset": false,
+          "reuse_source_action": "idle"
+        },
+        "north": {
+          "subject_id": "MECHA_BRAVE_FIST_PROTOTYPE",
+          "action": "rear_impact_return",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/brave_fist_idle_north_camera_v2_candidate.png",
+          "sha256": "498dc6e168fcd7f36b9c1623362d72cc8b2cee8b35799a3a812a0e287a7786be",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "north",
+          "reuse_role": "explicit_static_action_row",
+          "source_boundary": "Static reuse of exact idle/north Candidate body; not an independent action asset and permits no cross-facing or generic fallback",
+          "static_reuse": true,
+          "independent_action_asset": false,
+          "reuse_source_action": "idle"
+        }
+      },
+      "north_return_strikes": {
+        "east": {
+          "subject_id": "MECHA_BRAVE_FIST_PROTOTYPE",
+          "action": "north_return_strikes",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/brave_fist_north_return_strikes_east_camera_v2_candidate.png",
+          "sha256": "98f69f7cd85776f9c73f289c0e385c21a86d9493513ee3090f7fd947eee4f0bc",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "east",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Candidate-only exact action+facing row pending user actual-frame visual review; not Runtime/Default/Canon"
+        },
+        "south": {
+          "subject_id": "MECHA_BRAVE_FIST_PROTOTYPE",
+          "action": "north_return_strikes",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/brave_fist_idle_south_camera_v2_candidate.png",
+          "sha256": "1a41ff987c7227e5155cca71f4b8f9bda4137cbf325b6800f8048b2d44e6216b",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "south",
+          "reuse_role": "explicit_static_action_row",
+          "source_boundary": "Static reuse of exact idle/south Candidate body; not an independent action asset and permits no cross-facing or generic fallback",
+          "static_reuse": true,
+          "independent_action_asset": false,
+          "reuse_source_action": "idle"
+        },
+        "north": {
+          "subject_id": "MECHA_BRAVE_FIST_PROTOTYPE",
+          "action": "north_return_strikes",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/brave_fist_idle_north_camera_v2_candidate.png",
+          "sha256": "498dc6e168fcd7f36b9c1623362d72cc8b2cee8b35799a3a812a0e287a7786be",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "north",
+          "reuse_role": "explicit_static_action_row",
+          "source_boundary": "Static reuse of exact idle/north Candidate body; not an independent action asset and permits no cross-facing or generic fallback",
+          "static_reuse": true,
+          "independent_action_asset": false,
+          "reuse_source_action": "idle"
+        }
+      },
+      "return_overload_fist": {
+        "east": {
+          "subject_id": "MECHA_BRAVE_FIST_PROTOTYPE",
+          "action": "return_overload_fist",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/brave_fist_return_overload_east_camera_v2_candidate.png",
+          "sha256": "f4b7d4793b1f1cafc061c5f437ec0d882e8208ed2f0640ab778c8f707de4355f",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "east",
+          "reuse_role": "exact_action_facing_candidate",
+          "source_boundary": "Candidate-only exact action+facing row pending user actual-frame visual review; not Runtime/Default/Canon"
+        },
+        "south": {
+          "subject_id": "MECHA_BRAVE_FIST_PROTOTYPE",
+          "action": "return_overload_fist",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/brave_fist_return_overload_south_camera_v2_candidate.png",
+          "sha256": "d1e6a0a525e08c717f402138b1e38b6360ea574d81790157640bdeb18c88aa3d",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "south",
+          "reuse_role": "stock_camera_v2_candidate_reuse",
+          "source_boundary": "Reused A33-descended return_overload/south Camera V2 Candidate from the E03 campaign; not Runtime"
+        },
+        "north": {
+          "subject_id": "MECHA_BRAVE_FIST_PROTOTYPE",
+          "action": "return_overload_fist",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/brave_fist_idle_north_camera_v2_candidate.png",
+          "sha256": "498dc6e168fcd7f36b9c1623362d72cc8b2cee8b35799a3a812a0e287a7786be",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "north",
+          "reuse_role": "explicit_static_action_row",
+          "source_boundary": "Static reuse of exact idle/north Candidate body; not an independent action asset and permits no cross-facing or generic fallback",
+          "static_reuse": true,
+          "independent_action_asset": false,
+          "reuse_source_action": "idle"
+        },
+        "west": {
+          "subject_id": "MECHA_BRAVE_FIST_PROTOTYPE",
+          "action": "return_overload_fist",
+          "approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "user_visual_acceptance": false,
+          "candidate_only": true,
+          "texture_load": true,
+          "runtime_promotion": false,
+          "default_promotion": false,
+          "canon_promotion": false,
+          "path": "res://content/c01_breaker_demo/assets/candidate_ground_mecha/brave_fist_idle_west_camera_v2_candidate.png",
+          "sha256": "36c254ce8335adc5fb3e57c73be8911333e9433a4a28f47f8f74d134b96213ef",
+          "canvas_size": [
+            256,
+            256
+          ],
+          "pivot_px": [
+            128,
+            224
+          ],
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "footprint": [
+            2,
+            2
+          ],
+          "facing": "west",
+          "reuse_role": "explicit_static_action_row",
+          "source_boundary": "Static reuse of exact idle/west Candidate body; not an independent action asset and permits no cross-facing or generic fallback",
+          "static_reuse": true,
+          "independent_action_asset": false,
+          "reuse_source_action": "idle"
+        }
+      }
+    }
+  }
+}

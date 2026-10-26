@@ -1,0 +1,89 @@
+{
+  "mode": "built-in image_gen",
+  "items": [
+    {
+      "id": "M08",
+      "views": [
+        {
+          "view": "FRONT",
+          "files": [
+            "M08-front-airframe-prompt-r6.txt"
+          ]
+        },
+        {
+          "view": "SIDE",
+          "files": [
+            "M08-side-airframe-prompt-r6.txt",
+            "M08-side-view-airframe-correction-prompt-r6b.txt"
+          ]
+        },
+        {
+          "view": "REAR",
+          "files": [
+            "M08-rear-airframe-prompt-r6.txt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M14",
+      "views": [
+        {
+          "view": "FRONT",
+          "files": [
+            "M14-front-airframe-prompt-r6.txt"
+          ]
+        },
+        {
+          "view": "SIDE",
+          "files": [
+            "M14-side-airframe-prompt-r6.txt"
+          ]
+        },
+        {
+          "view": "REAR",
+          "files": [
+            "M14-rear-airframe-prompt-r6.txt"
+          ]
+        }
+      ]
+    }
+  ],
+  "reference_roles": [
+    {
+      "file": "samples/M14-front-r5.png",
+      "role": "用户指定的体态比例基准；雷翎仅取比例，歌翼保留自身比例",
+      "sha256": "9e2bcc5394936d5046cad313e360766fe61c6be35b1e40375d910c68a0212ba5"
+    },
+    {
+      "file": "samples/M08-synthesis-r3.png",
+      "role": "雷翎身份/主形/配色母稿",
+      "sha256": "54347f96fab0cd383baa6178ab49b4ea43c3645df2fa85eaaa3c294636bc77c3"
+    },
+    {
+      "file": "samples/M14-music-support-r4.png",
+      "role": "已采用歌翼R4主形、音乐模块与配色母稿",
+      "sha256": "928a96c6ba11c3235a4674fa76c0c95da5e3bdc3b65e93262c891c5b920a1e14"
+    },
+    {
+      "file": "samples/M14-side-r5b.png",
+      "role": "侧向投影与部件状态参考",
+      "sha256": "a85f5c640142c1afd29d648c7f8eb30c8bdfadbcff451cc3c592aa9dc447c159"
+    },
+    {
+      "file": "samples/M14-rear-r5b.png",
+      "role": "歌翼背面/声翼背壳参考",
+      "sha256": "d88be557062c378b2a274b63027f80dab407135f1779b60a43b45ee7aa97f5ea"
+    },
+    {
+      "file": "samples/M08-rear-r4b.png",
+      "role": "雷翎隐面连接参考，不作为比例依据",
+      "sha256": "f0a480bc2906d0e16415ce4a929c1196396dabe6d21cfca2c987b21dc68d0845"
+    },
+    {
+      "file": "samples/M08-side-r4b.png",
+      "role": "雷翎侧面局部修正的相机与遮挡依据，不作为比例依据",
+      "sha256": "a38a09bf4febb79e9118abfb565218b4b71c3496f3ede87470b2dc598dd9cb79"
+    }
+  ]
+}

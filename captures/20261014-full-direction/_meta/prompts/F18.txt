@@ -1,0 +1,21 @@
+STYLE LOCK = Astra KINETIC_CEL (must match references):
+- Hard-edge cel color blocks, pressure ink outlines, max two hard shadow tiers
+- Super Robot Wars / 超级系 readable silhouette; half-Q STANDARD readability
+- Gongwu industrial palette: steel teal / concrete beige / warning vermilion
+- NOT photoreal, NOT AAA PBR, NOT wasteland photo rust, NOT alien biotech, NOT ITB grayboard
+- Direction concept sheet: one clear hero view + small state callouts if needed; NOT full turnaround PSD
+Reference images (match stroke weight, cel blocking, palette):
+- style-lock/01-kinetic-cel-storyframe-v23a.png
+- style-lock/11-tactics-user-accepted.png
+- style-lock/02-mech-hero.jpg
+
+ASSET ID F18 | key=projectile_kit | template=part
+NAME: 炮弹导弹与弹壳
+PURPOSE: 共享工具与产物
+DESIGN BRIEF: 爆破导弹、震荡弹、跨区炮弹用弹头/尾迹区分；具体伤害范围由规则显示
+STATES to imply on sheet: 飞行, 命中, 残骸
+IDENTITY retain: 沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。爆破导弹、震荡弹、跨区炮弹用弹头/尾迹区分；具体伤害范围由规则显示
+PROJECT DESIGN: 从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。
+AVOID: 合体、变形与拆卸不能凭空更换头胸或增减零件；不可从母体单张动作图猜背面。
+CONTEXT: M08：雷翎承担远射、侦察与机动换位。它与同模重涂的文化有关，颜色不是它的全部身份；轮换与自主开火属于自己的选择。 / M14：歌翼在本Demo承担航空机动、震荡投弹；家族的意义不止能飞，还包含歌、文化和支援。此次外援提供现有形态，不自行写新歌姬或增加战斗规则。 / E04：外敌的驻定架设炮击者。在架设点蓄力，可能跨战场炮击；移动、断供或干扰会影响其工作。
+Output: single art-direction concept painting, clean readable silhouette, labeled states as small insets OK, no fake UI text walls, no photoreal materials.

@@ -1,0 +1,18 @@
+gate	command_or_test	result	evidence
+contract hashes	scripts/test_c01e02_m3_j1.sh	PASS	00-contract-hashes.log
+G1 resolver	m3_j1_shared_round_contract_test.gd	PASS	60 deterministic replays plus reorder invariance
+G1 playable flow	m3_j1_playable_flow_test.gd	PASS	continuous cursor; waypoints; summary return; hold commit
+M1a exact loader	m3_j1_asset_loader_test.gd	PASS	19 loaded fixtures; pre-probe rejects; slot-local drift
+M1a consumers	m3_j1_real_consumers_test.gd	PASS	Sprite2D/AtlasTexture/TextureRect; three audio channels
+J1 direct scene	c01e02_m3_j1_sandbox.tscn headless smoke	PASS	non-default scene parses and starts
+runtime denylist	J1 runtime res:// old-path audit	PASS	zero old asset/runtime references
+default entry	startup_router_smoke_test.gd	PASS	default remains C01CDV1-M2-R2
+M2 core	c01e02_g1_contract_test.gd	PASS	20 replays; phase P1 preserved
+M2 A4/A5	c01e02_m2_5_active_atlas_test.gd	PASS	6 instances; 4 facings; loaded 6/fallback 7
+R0 core and flow	m3_r0 shared-round plus playable-flow tests	PASS	previous candidate remains unchanged
+R0.5 presentation	m3_r05 presentation plus UI-flow tests	PASS	zero probes; prior shell preserved
+Canon dashboard	report_v35_layered_pipeline.py --check	PASS	dashboard current
+Canon authority	check_canon_authority.py plus canon-smoke-test.sh	PASS	authority and smoke passed
+Godot Canon	scripts/canon-check-godot.sh --report/--strict	PASS	no runtime violations
+full Godot regression	scripts/godot-test.sh	PASS	exit 0; all existing smoke tests passed
+whitespace	git diff --check	PASS	global and J1-only

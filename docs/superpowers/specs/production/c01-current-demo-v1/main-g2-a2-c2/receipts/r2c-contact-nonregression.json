@@ -1,0 +1,906 @@
+{
+  "canon_modified": false,
+  "default_entry_changed": false,
+  "dynamic_overlap_rejected_in_preview_and_execute": true,
+  "evidence_class": "g2_a1_r2c_contact_staging_machine_receipt",
+  "g2_b_allowed": false,
+  "preview_execute_same_resolver": true,
+  "producer_actual_frame_acceptance_required": true,
+  "real_art_loaded": 0,
+  "runtime_promotion": false,
+  "staging_id": "STAGGERED_FRONT_CONTACT_V1",
+  "strategies": {
+    "A": {
+      "contact_geometry": {
+        "approach_grid_vector": [
+          0.0,
+          -1.0
+        ],
+        "approach_matches_contact_normal": true,
+        "approach_screen_vector_px": [
+          40.0,
+          -20.0
+        ],
+        "breaker_facing_matches_contact_normal": true,
+        "breaker_rect": [
+          20.0,
+          11.0,
+          3,
+          3
+        ],
+        "contact": true,
+        "contact_edge": "guardian_south_to_breaker_north",
+        "contact_normal_grid": [
+          0.0,
+          1.0
+        ],
+        "contact_normal_screen_px": [
+          -40.0,
+          20.0
+        ],
+        "contact_without_gap_or_overlap": true,
+        "guardian_facing_matches_contact_normal": true,
+        "guardian_rect": [
+          20.0,
+          9.0,
+          2,
+          2
+        ],
+        "impact_socket_grid": [
+          20.5,
+          10.5
+        ],
+        "impact_socket_raw_px": [
+          -480.0,
+          450.0
+        ],
+        "impulse_grid_vector": [
+          0.0,
+          -1.0
+        ],
+        "impulse_screen_vector_px": [
+          40.0,
+          -20.0
+        ],
+        "narrative_front_contact_closed": true,
+        "no_footprint_overlap": true,
+        "post_contact_anchor": [
+          20.0,
+          8.5
+        ],
+        "recoil_grid_vector": [
+          0.0,
+          -0.5
+        ],
+        "recoil_screen_vector_px": [
+          20.0,
+          -10.0
+        ],
+        "rectangles_overlap": false,
+        "shared_contact_edge_cells": 2
+      },
+      "r1_phase_readback": {
+        "contact_anchor": [
+          20,
+          9
+        ],
+        "contact_facing": "south",
+        "contact_timeslice": "T3.00",
+        "planning_endpoint": [
+          20,
+          9
+        ],
+        "planning_route": [
+          [
+            15.0,
+            11.0
+          ],
+          [
+            16.0,
+            11.0
+          ],
+          [
+            17.0,
+            11.0
+          ],
+          [
+            18.0,
+            11.0
+          ],
+          [
+            18.0,
+            10.0
+          ],
+          [
+            19.0,
+            10.0
+          ],
+          [
+            19.0,
+            9.0
+          ],
+          [
+            20.0,
+            9.0
+          ]
+        ],
+        "post_breaker_anchor": [
+          21,
+          11
+        ],
+        "post_breaker_facing": "north",
+        "post_guardian_anchor": [
+          20,
+          9
+        ],
+        "settle_facing": "south",
+        "staging_id": "STAGGERED_FRONT_CONTACT_V1",
+        "strategy_path": "A_BODY_INTERCEPT",
+        "visual_recoil_anchor": [
+          20.0,
+          8.5
+        ]
+      },
+      "r1_round_result_hash": "b4511d8fe51af415611c4e4f0c26e6226c1c0816b2c256726c8844de1615ad50",
+      "r1_world": {
+        "breaker_depth": 11,
+        "breaker_post_contact_anchor": [
+          21,
+          11
+        ],
+        "guardian_heat": 24,
+        "guardian_position": [
+          20,
+          9
+        ],
+        "guardian_post_contact_anchor": [
+          20,
+          9
+        ],
+        "guardian_visual_recoil_anchor": [
+          20.0,
+          8.5
+        ],
+        "impact_socket_grid": [
+          20.5,
+          10.5
+        ],
+        "remaining_timing_margin": 4,
+        "road_damage": 42,
+        "side_armor_socket_grid": [
+          24.0,
+          12.5
+        ],
+        "strategy_path": "A_BODY_INTERCEPT",
+        "swarm_positions": {
+          "ENEMY_C01_RIFT_SWARM_01": [
+            22,
+            9
+          ],
+          "ENEMY_C01_RIFT_SWARM_02": [
+            27,
+            12
+          ],
+          "ENEMY_C01_RIFT_SWARM_03": [
+            29,
+            5
+          ]
+        },
+        "warning_facility_state": "damaged"
+      },
+      "r2_constraints": {
+        "dynamic_blockers": [
+          {
+            "anchor": [
+              21,
+              11
+            ],
+            "footprint": [
+              3,
+              3
+            ],
+            "source_round": 1,
+            "unit_id": "ENEMY_C01_BREAKER"
+          }
+        ],
+        "dynamic_conflicts": [],
+        "efficiency_receipt": {
+          "block_anchor": [
+            17,
+            10
+          ],
+          "dynamic_blockers": [
+            {
+              "anchor": [
+                21,
+                11
+              ],
+              "footprint": [
+                3,
+                3
+              ],
+              "source_round": 1,
+              "unit_id": "ENEMY_C01_BREAKER"
+            }
+          ],
+          "efficient_steps": 10,
+          "origin": [
+            20,
+            9
+          ],
+          "shield_anchor": [
+            14,
+            10
+          ],
+          "to_block_route": [
+            [
+              14,
+              10
+            ],
+            [
+              15,
+              10
+            ],
+            [
+              16,
+              10
+            ],
+            [
+              17,
+              10
+            ]
+          ],
+          "to_shield_route": [
+            [
+              20,
+              9
+            ],
+            [
+              19,
+              9
+            ],
+            [
+              19,
+              10
+            ],
+            [
+              18,
+              10
+            ],
+            [
+              17,
+              10
+            ],
+            [
+              16,
+              10
+            ],
+            [
+              15,
+              10
+            ],
+            [
+              14,
+              10
+            ]
+          ],
+          "valid": true
+        },
+        "efficient_steps": 10,
+        "exact_route_valid": true,
+        "heat_after": 68,
+        "heat_cost": 6,
+        "heat_limit": 90,
+        "risk_cells": [
+          {
+            "cell": [
+              19,
+              9
+            ],
+            "kind": "road_break",
+            "label": "长裂路面"
+          },
+          {
+            "cell": [
+              18,
+              9
+            ],
+            "kind": "road_break",
+            "label": "长裂路面"
+          },
+          {
+            "cell": [
+              17,
+              9
+            ],
+            "kind": "road_break",
+            "label": "长裂路面"
+          }
+        ],
+        "route_steps": 10,
+        "target_metrics_valid": true,
+        "timing_cost": 3,
+        "timing_margin_after": 1
+      },
+      "r2_input_readback": {
+        "breaker_depth": 11,
+        "breaker_entity_anchor": [
+          21,
+          11
+        ],
+        "breaker_footprint": [
+          3.0,
+          3.0
+        ],
+        "breaker_post_contact_anchor": [
+          21,
+          11
+        ],
+        "dynamic_red_source_anchor": [
+          21,
+          11
+        ],
+        "guardian_heat": 24,
+        "guardian_position": [
+          20,
+          9
+        ],
+        "guardian_post_contact_anchor": [
+          20,
+          9
+        ],
+        "remaining_timing_margin": 4,
+        "road_damage": 42,
+        "strategy_path": "A_BODY_INTERCEPT",
+        "swarm_positions": {
+          "ENEMY_C01_RIFT_SWARM_01": [
+            22,
+            9
+          ],
+          "ENEMY_C01_RIFT_SWARM_02": [
+            27,
+            12
+          ],
+          "ENEMY_C01_RIFT_SWARM_03": [
+            29,
+            5
+          ]
+        },
+        "valid": true,
+        "warning_facility_state": "damaged"
+      },
+      "r2_round_result_hash": "e74b7ec9e936d61b78578597a03c3debea593bdfff2133de8b741c18b2ed5d2d",
+      "r2_route": [
+        [
+          20.0,
+          9.0
+        ],
+        [
+          19.0,
+          9.0
+        ],
+        [
+          18.0,
+          9.0
+        ],
+        [
+          17.0,
+          9.0
+        ],
+        [
+          16.0,
+          9.0
+        ],
+        [
+          15.0,
+          9.0
+        ],
+        [
+          14.0,
+          9.0
+        ],
+        [
+          14.0,
+          10.0
+        ],
+        [
+          15.0,
+          10.0
+        ],
+        [
+          16.0,
+          10.0
+        ],
+        [
+          17.0,
+          10.0
+        ]
+      ],
+      "side_armor_geometry": {
+        "artillery_line_grid": [
+          -5.0,
+          10.5
+        ],
+        "artillery_source_grid": [
+          29.0,
+          2.0
+        ],
+        "derived_from_post_pose": true,
+        "east_side_armor_socket_grid": [
+          24.0,
+          12.5
+        ],
+        "matches_strategy_contract": true,
+        "post_breaker_anchor": [
+          21,
+          11
+        ],
+        "post_breaker_facing": "north",
+        "post_breaker_footprint": [
+          3,
+          3
+        ],
+        "post_pose_valid": true,
+        "socket_rule": "east_edge_vertical_center",
+        "source_distinct": true,
+        "source_on_east": true,
+        "valid": true
+      },
+      "temporal_clearance": {
+        "guardian_staging_complete_by": "T2",
+        "no_simultaneous_occupancy": true,
+        "ordering_valid": true,
+        "resolution_order": [
+          "vehicle_crosses",
+          "guardian_occupies_staging",
+          "swarm_deflects",
+          "breaker_contacts"
+        ],
+        "shared_corridor_cells": [
+          [
+            18,
+            10
+          ],
+          [
+            21,
+            10
+          ]
+        ],
+        "shared_corridor_requires_ordering": true,
+        "vehicle_timeslice": "T1"
+      }
+    },
+    "B": {
+      "contact_geometry": {
+        "approach_grid_vector": [
+          0.0,
+          -1.0
+        ],
+        "approach_matches_contact_normal": true,
+        "approach_screen_vector_px": [
+          40.0,
+          -20.0
+        ],
+        "breaker_facing_matches_contact_normal": true,
+        "breaker_rect": [
+          20.0,
+          11.0,
+          3,
+          3
+        ],
+        "contact": true,
+        "contact_edge": "guardian_south_to_breaker_north",
+        "contact_normal_grid": [
+          0.0,
+          1.0
+        ],
+        "contact_normal_screen_px": [
+          -40.0,
+          20.0
+        ],
+        "contact_without_gap_or_overlap": true,
+        "guardian_facing_matches_contact_normal": true,
+        "guardian_rect": [
+          19.0,
+          9.0,
+          2,
+          2
+        ],
+        "impact_socket_grid": [
+          20.0,
+          10.5
+        ],
+        "impact_socket_raw_px": [
+          -500.0,
+          440.0
+        ],
+        "impulse_grid_vector": [
+          0.0,
+          -1.0
+        ],
+        "impulse_screen_vector_px": [
+          40.0,
+          -20.0
+        ],
+        "narrative_front_contact_closed": true,
+        "no_footprint_overlap": true,
+        "post_contact_anchor": [
+          19.0,
+          8.5
+        ],
+        "recoil_grid_vector": [
+          0.0,
+          -0.5
+        ],
+        "recoil_screen_vector_px": [
+          20.0,
+          -10.0
+        ],
+        "rectangles_overlap": false,
+        "shared_contact_edge_cells": 1
+      },
+      "r1_phase_readback": {
+        "contact_anchor": [
+          19,
+          9
+        ],
+        "contact_facing": "south",
+        "contact_timeslice": "T3.25",
+        "planning_endpoint": [
+          19,
+          9
+        ],
+        "planning_route": [
+          [
+            15.0,
+            11.0
+          ],
+          [
+            15.0,
+            10.0
+          ],
+          [
+            16.0,
+            10.0
+          ],
+          [
+            17.0,
+            10.0
+          ],
+          [
+            18.0,
+            10.0
+          ],
+          [
+            19.0,
+            10.0
+          ],
+          [
+            19.0,
+            9.0
+          ]
+        ],
+        "post_breaker_anchor": [
+          21,
+          10
+        ],
+        "post_breaker_facing": "north",
+        "post_guardian_anchor": [
+          19,
+          9
+        ],
+        "settle_facing": "east",
+        "staging_id": "STAGGERED_FRONT_CONTACT_V1",
+        "strategy_path": "B_PROTECT_LANE_PREPARE",
+        "visual_recoil_anchor": [
+          19.0,
+          8.5
+        ]
+      },
+      "r1_round_result_hash": "c3b307b9698d645598594cb6674c86779a13420b9934cf562f379d112d1f41fa",
+      "r1_world": {
+        "breaker_depth": 10,
+        "breaker_post_contact_anchor": [
+          21,
+          10
+        ],
+        "guardian_heat": 46,
+        "guardian_position": [
+          19,
+          9
+        ],
+        "guardian_post_contact_anchor": [
+          19,
+          9
+        ],
+        "guardian_visual_recoil_anchor": [
+          19.0,
+          8.5
+        ],
+        "impact_socket_grid": [
+          20.0,
+          10.5
+        ],
+        "remaining_timing_margin": 1,
+        "road_damage": 24,
+        "side_armor_socket_grid": [
+          24.0,
+          11.5
+        ],
+        "strategy_path": "B_PROTECT_LANE_PREPARE",
+        "swarm_positions": {
+          "ENEMY_C01_RIFT_SWARM_01": [
+            22,
+            8
+          ],
+          "ENEMY_C01_RIFT_SWARM_02": [
+            28,
+            12
+          ],
+          "ENEMY_C01_RIFT_SWARM_03": [
+            30,
+            6
+          ]
+        },
+        "warning_facility_state": "active"
+      },
+      "r2_constraints": {
+        "dynamic_blockers": [
+          {
+            "anchor": [
+              21,
+              10
+            ],
+            "footprint": [
+              3,
+              3
+            ],
+            "source_round": 1,
+            "unit_id": "ENEMY_C01_BREAKER"
+          }
+        ],
+        "dynamic_conflicts": [],
+        "efficiency_receipt": {
+          "block_anchor": [
+            17,
+            10
+          ],
+          "dynamic_blockers": [
+            {
+              "anchor": [
+                21,
+                10
+              ],
+              "footprint": [
+                3,
+                3
+              ],
+              "source_round": 1,
+              "unit_id": "ENEMY_C01_BREAKER"
+            }
+          ],
+          "efficient_steps": 9,
+          "origin": [
+            19,
+            9
+          ],
+          "shield_anchor": [
+            14,
+            10
+          ],
+          "to_block_route": [
+            [
+              14,
+              10
+            ],
+            [
+              15,
+              10
+            ],
+            [
+              16,
+              10
+            ],
+            [
+              17,
+              10
+            ]
+          ],
+          "to_shield_route": [
+            [
+              19,
+              9
+            ],
+            [
+              19,
+              10
+            ],
+            [
+              18,
+              10
+            ],
+            [
+              17,
+              10
+            ],
+            [
+              16,
+              10
+            ],
+            [
+              15,
+              10
+            ],
+            [
+              14,
+              10
+            ]
+          ],
+          "valid": true
+        },
+        "efficient_steps": 9,
+        "exact_route_valid": true,
+        "heat_after": 88,
+        "heat_cost": 6,
+        "heat_limit": 90,
+        "risk_cells": [
+          {
+            "cell": [
+              18,
+              9
+            ],
+            "kind": "swarm_pressure",
+            "label": "小体压线"
+          }
+        ],
+        "route_steps": 9,
+        "target_metrics_valid": true,
+        "timing_cost": 1,
+        "timing_margin_after": 0
+      },
+      "r2_input_readback": {
+        "breaker_depth": 10,
+        "breaker_entity_anchor": [
+          21,
+          10
+        ],
+        "breaker_footprint": [
+          3.0,
+          3.0
+        ],
+        "breaker_post_contact_anchor": [
+          21,
+          10
+        ],
+        "dynamic_red_source_anchor": [
+          21,
+          10
+        ],
+        "guardian_heat": 46,
+        "guardian_position": [
+          19,
+          9
+        ],
+        "guardian_post_contact_anchor": [
+          19,
+          9
+        ],
+        "remaining_timing_margin": 1,
+        "road_damage": 24,
+        "strategy_path": "B_PROTECT_LANE_PREPARE",
+        "swarm_positions": {
+          "ENEMY_C01_RIFT_SWARM_01": [
+            22,
+            8
+          ],
+          "ENEMY_C01_RIFT_SWARM_02": [
+            28,
+            12
+          ],
+          "ENEMY_C01_RIFT_SWARM_03": [
+            30,
+            6
+          ]
+        },
+        "valid": true,
+        "warning_facility_state": "active"
+      },
+      "r2_round_result_hash": "f09de07bb6b0b32c1a44e7ca1d5e24a6cbc3bac498010cb92490b781bd6480a6",
+      "r2_route": [
+        [
+          19.0,
+          9.0
+        ],
+        [
+          18.0,
+          9.0
+        ],
+        [
+          17.0,
+          9.0
+        ],
+        [
+          16.0,
+          9.0
+        ],
+        [
+          15.0,
+          9.0
+        ],
+        [
+          14.0,
+          9.0
+        ],
+        [
+          14.0,
+          10.0
+        ],
+        [
+          15.0,
+          10.0
+        ],
+        [
+          16.0,
+          10.0
+        ],
+        [
+          17.0,
+          10.0
+        ]
+      ],
+      "side_armor_geometry": {
+        "artillery_line_grid": [
+          -5.0,
+          9.5
+        ],
+        "artillery_source_grid": [
+          29.0,
+          2.0
+        ],
+        "derived_from_post_pose": true,
+        "east_side_armor_socket_grid": [
+          24.0,
+          11.5
+        ],
+        "matches_strategy_contract": true,
+        "post_breaker_anchor": [
+          21,
+          10
+        ],
+        "post_breaker_facing": "north",
+        "post_breaker_footprint": [
+          3,
+          3
+        ],
+        "post_pose_valid": true,
+        "socket_rule": "east_edge_vertical_center",
+        "source_distinct": true,
+        "source_on_east": true,
+        "valid": true
+      },
+      "temporal_clearance": {
+        "guardian_staging_complete_by": "T2",
+        "no_simultaneous_occupancy": true,
+        "ordering_valid": true,
+        "resolution_order": [
+          "vehicle_crosses",
+          "guardian_occupies_staging",
+          "swarm_deflects",
+          "breaker_contacts"
+        ],
+        "shared_corridor_cells": [
+          [
+            17,
+            10
+          ],
+          [
+            18,
+            10
+          ]
+        ],
+        "shared_corridor_requires_ordering": true,
+        "vehicle_timeslice": "T1"
+      }
+    }
+  }
+}

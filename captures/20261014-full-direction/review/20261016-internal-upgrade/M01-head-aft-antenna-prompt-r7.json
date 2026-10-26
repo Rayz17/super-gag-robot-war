@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-18",
+  "mode": "built-in image_gen",
+  "use_case": "precise-object-edit",
+  "user_directive": "耳朵两边的天线指向，我觉得不要有翻折角度，就与头部天线保持指向后方",
+  "references": [
+    {
+      "file": "samples/M01-head-AE-symmetric-r6.png",
+      "role": "edit target, exact user attached source",
+      "sha256": "d8fdd4e4443b9b6708fa8c3848f04468d53aa837ac73d30963e72a23037cf76c"
+    }
+  ],
+  "transparent_background": true,
+  "prompt": "Use case: precise-object-edit.\nAsset type: local correction to the supplied two-view mecha head sheet.\nInput image 1 is the EDIT TARGET. Keep the same exact helmet and the same front bust on the left and three-quarter bust on the right. Do not redesign this robot.\n\nChange ONLY the pair of small antennas above/behind the round temple hubs in BOTH views. The user says: “耳朵两边的天线指向，不要有翻折角度，就与头部天线保持指向后方”.\n\nReplace each current angled, folded, outward-flaring triangular ear fin with ONE STRAIGHT, SLIM, TAPERED AFT-POINTING VANE. From the temple mounting base to its tip the antenna has a single straight unbroken longitudinal direction; NO elbow, kink, dog-leg, bent tip, folded plane, or V-shaped change of direction. Both antennas point toward the BACK of the skull, running parallel in direction to the central ivory/ochre crest's front-to-back axis. They do NOT point outward to the sides or upward as animal ears. Keep them a matched bilateral pair, with the same ivory and restrained ochre materials. Root remains just above and behind each existing circular ear sensor; no new mounting mechanism.\n\nOn the left true FRONT view the aft-facing vanes must be naturally foreshortened and partly hidden behind the helmet; do not flare them sideways just to show them. They read as compact narrow paired edges at the sides of the head, not broad golden triangular ears. The full helmet silhouette and closed mask stay symmetrical.\nOn the right THREE-QUARTER view the near-side vane visibly extends straight BACK along the side of the skull toward the upper-right of the image, following the rearward travel of the central crown ridge. The far-side vane is naturally occluded. Both views must describe the exact same pair of straight aft-facing parts.\n\nPreserve aggressively: all teal cranium plates, the central ivory crown ridge and ochre channel, continuous amber visor, closed ivory faceplate, cheek armor, round temple hubs, graphite neck, collar, shoulders, head proportions, cel shading, ink style, palette, relative view sizes, cameras and framing. No new horns, face features, symbols, panels, labels or design variants. Preserve original transparent background. Wide approximately 2:1 sheet with the same two busts; no extra inset or third head. This is a tiny antenna direction/shape correction only."
+}

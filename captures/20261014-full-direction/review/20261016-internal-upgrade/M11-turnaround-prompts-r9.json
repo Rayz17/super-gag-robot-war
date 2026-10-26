@@ -1,0 +1,38 @@
+{
+  "generation_mode": "built_in_image_gen",
+  "selected_master": {
+    "file": "samples/M11-posture-r8.png",
+    "sha256": "8c7b229f42d8e840814a55dad1cf224d5b5b05f51a90841e86583d7f05dc78c9",
+    "user_accepted": true,
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-f415d834-8d6c-408a-a1ef-4234fda981f8.png"
+  },
+  "outputs": [
+    {
+      "file": "samples/M11-front-r9.png",
+      "prompts": [
+        "M11-front-prompt-r9.txt"
+      ]
+    },
+    {
+      "file": "samples/M11-side-r9.png",
+      "prompts": [
+        "M11-side-prompt-r9.txt"
+      ]
+    },
+    {
+      "file": "samples/M11-rear-r9.png",
+      "prompts": [
+        "M11-rear-prompt-r9.txt"
+      ]
+    }
+  ],
+  "inputs": {
+    "primary_design_master": "samples/M11-posture-r8.png",
+    "view_guides": [
+      "samples/M11-front-r7b.png",
+      "samples/M11-side-r7c.png",
+      "samples/M11-rear-r7.png"
+    ],
+    "head_reference": "samples/M11-selected-head-r6.png"
+  }
+}

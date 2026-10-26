@@ -1,0 +1,158 @@
+{
+  "revision": "M08-turnaround-r4",
+  "date": "2026-10-22",
+  "existing_batch": "design-followthrough-r1.json",
+  "status": "history_proportion_rejected_by_user",
+  "reader": "M08-turnaround-r4.html",
+  "authority": {
+    "turnaround_request_verbatim": "雷翎的呢？",
+    "source_basis": "用户正面反馈后的R3综合稿；本次补派生三视，不扩大源图或运行认可。",
+    "new_turnaround_images_user_accepted": false
+  },
+  "selected_master": {
+    "id": "M08",
+    "name": "雷翎",
+    "file": "samples/M08-synthesis-r3.png",
+    "sha256": "54347f96fab0cd383baa6178ab49b4ea43c3645df2fa85eaaa3c294636bc77c3",
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-ebcbbb49-df98-4005-af0d-604a8fb5ac17.png",
+    "pixel_size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "role": "综合整机、同设计头部近景与航空态候选",
+    "source_refs": [
+      {
+        "file": "captures/20261014-full-direction/review/20261016-internal-upgrade/refs/M08-user-head-reference-20261022.png",
+        "sha256": "353765511b8fbbe1c77310eb4f2114e428aa7203a0fd91cfe32e022ef8f9e89d",
+        "role": "用户指定头型灵感；采用侧部开放V形天线，不采用橙色或文字"
+      },
+      {
+        "file": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M08-dual-form-r1b.png",
+        "sha256": "09fcac664054bf81f70c5f04fc658678912206045038e03bcc6fa96c84ebd77d",
+        "role": "前建议稿的关节、航空胸与武器结构及绘制完成度"
+      },
+      {
+        "file": "captures/20261014-full-direction/review/20261016-internal-upgrade/aircraft-runtime-comparison-20261022/leiling_robot.png",
+        "sha256": "256624e19bc10b621ca44c661dd3deb1d32e53421d250e254318e7eeb83e90d2",
+        "role": "现用机设的红白蓝对比、刃翼节奏；旧头胸/腿不锁死"
+      },
+      {
+        "file": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-front-backpack-fins-r7.png",
+        "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98",
+        "role": "本系列插画完成度，仅取画法"
+      }
+    ],
+    "prompt": "M08-synthesis-design-prompt-r3.txt",
+    "user_accepted": false,
+    "runtime_integrated": false
+  },
+  "generation_mode": "built-in image_gen; front anchor then side/rear with targeted view corrections",
+  "items": [
+    {
+      "id": "FRONT",
+      "label": "正面",
+      "file": "samples/M08-front-r4.png",
+      "sha256": "5bd179f1c498007fd7b4ccc217f9622a840d8786dee4d8b377a895d3ec09e3af",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-57b51851-917b-43a8-945a-ff5fffdd5695.png",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "prompts": [
+        "M08-front-prompt-r4.txt"
+      ],
+      "individual_new_image_user_accepted": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "SIDE",
+      "label": "左侧面",
+      "file": "samples/M08-side-r4b.png",
+      "sha256": "a38a09bf4febb79e9118abfb565218b4b71c3496f3ede87470b2dc598dd9cb79",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-580b8aba-4fc8-4fb7-8814-d4bbc6b9940c.png",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "prompts": [
+        "M08-side-prompt-r4.txt",
+        "M08-side-view-correction-prompt-r4b.txt"
+      ],
+      "individual_new_image_user_accepted": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "REAR",
+      "label": "背面",
+      "file": "samples/M08-rear-r4b.png",
+      "sha256": "f0a480bc2906d0e16415ce4a929c1196396dabe6d21cfca2c987b21dc68d0845",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-ba6878ed-d672-45da-bf21-94f6315afa40.png",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "prompts": [
+        "M08-rear-prompt-r4.txt",
+        "M08-rear-view-correction-prompt-r4b.txt"
+      ],
+      "individual_new_image_user_accepted": false,
+      "runtime_integrated": false
+    }
+  ],
+  "historical_attempts": [
+    {
+      "id": "SIDE_ATTEMPT",
+      "file": "samples/M08-side_attempt-r4.png",
+      "sha256": "286b22d87d6b704f4046459fe083e9faa17aa836c60f49d09677f63697b19cdb",
+      "status": "historical_view_attempt"
+    },
+    {
+      "id": "REAR_ATTEMPT",
+      "file": "samples/M08-rear_attempt-r4.png",
+      "sha256": "f02ed50542c5c792f547bcbe0b4e06e5ae329b064bad6b4fe3e7f61586201802",
+      "status": "historical_view_attempt"
+    }
+  ],
+  "equipment_state": {
+    "wings": "同一展开状态；侧面观察厚度与翼根，正背观察刃翼轮廓",
+    "rifle": "仅一把，始终为机体右手持握；正面在画面左，背面在画面右，左侧面在远侧",
+    "hidden_structure": "背部脊柱、闭合肩后壳与双小腿发动机为本轮补画的隐面；仍需同件模型核对"
+  },
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "samples/M08-front-r4.png",
+      "samples/M08-side-r4b.png",
+      "samples/M08-rear-r4b.png"
+    ],
+    "observations": [
+      "正面保留R3对称V形侧天线、纵向蓝红额部、琥珀座舱、象牙肩进气框和修长腿；单把长枪在机体右手，即画面左侧。",
+      "侧面修正后头胸肩的侧向投影更明确，双腿和双足大幅重叠；近侧空手、远侧长枪的关系与左侧视向一致。仍有少量插画透视和远侧轮廓，不标为严格工程正交。",
+      "背面修正前肩壳误露前进气口、背上躯干复用胸部装饰，且骨盆复制长白前裆；修正后肩后壳闭合、上背为蓝甲和石墨脊柱、骨盆为短后甲。",
+      "背面长枪仍为画面右侧，翼片数量、展开轮廓和红白蓝色块延续正面；小腿双喷口、后跟与翼根可见，没有在背面重画脸部或座舱。",
+      "源图主识别点与装备侧别可对照；背面细节为补画隐面，三张插画不能独自证明同件几何和完整变形。"
+    ],
+    "correction_outcome": "improved_in_source_drawings",
+    "correction_result": "侧面投影趋于侧向且双足重叠；背面改成闭合肩后壳、蓝甲脊柱与短后骨盆。插画透视和隐面几何仍需同件模型核对。",
+    "normal_tactical_frame_metrics": "不适用本次二维源设定工序；当前运行模型未替换，不填写运行画面、动作或实听通过。",
+    "new_images_user_accepted": false,
+    "runtime_tested": false
+  },
+  "limits": [
+    "本批为二维绘制设定源图，隐面分件、精确投影和完整变形仍需同件模型核对。",
+    "未改变歌翼已采用R4来源、人物身份、故事、当前模型或运行加载。"
+  ],
+  "runtime_assets_modified": false,
+  "canon_changed": false,
+  "handoff_sent": false,
+  "later_user_feedback": {
+    "verbatim": "你这个三视图好像也将雷零又做矮了呀。按设定图它不是比较秀气修长的吗",
+    "rejected_scope": "R4身形比例与秀气修长观感",
+    "next": "按R3原稿修比例R5，R4不再为新三视身形锚"
+  }
+}

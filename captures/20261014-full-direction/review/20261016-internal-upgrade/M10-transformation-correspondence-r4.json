@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-24",
+  "status": "visual_transformation_proposal",
+  "parent_robot_views": [
+    "samples/M10-front-r3b.png",
+    "samples/M10-side-r3b.png",
+    "samples/M10-rear-r3.png"
+  ],
+  "vehicle_sheet": "samples/M10-vehicle-turnaround-r4.png",
+  "sequence_sheet": "samples/M10-transformation-sequence-r4.png",
+  "components": [
+    {
+      "id": "A",
+      "part": "驾驶室胸/头仓",
+      "robot": "胸部两窗驾驶室，头部在其上方",
+      "vehicle": "驾驶室保持朝前，头部下沉入车顶舱，躯干滑轨压缩"
+    },
+    {
+      "id": "B",
+      "part": "手臂与侧工具柜",
+      "robot": "肩柜、前臂喷嘴与可用手掌",
+      "vehicle": "拳掌收入前臂，臂体转入驾驶室后方两侧工具柜"
+    },
+    {
+      "id": "C",
+      "part": "髋轮/胫轮与底盘",
+      "robot": "一对髋轮，两侧各双胫轮",
+      "vehicle": "髋轮对应前轴；下肢向后折转，双胫轮从竖向对应后串列双轴，共三轴六轮"
+    },
+    {
+      "id": "D",
+      "part": "双桥板包",
+      "robot": "背部两包纵向折叠桥板",
+      "vehicle": "根部铰接转入车顶纵向收纳；作业时由托架与液压件举升/展开"
+    },
+    {
+      "id": "E",
+      "part": "消防水路",
+      "robot": "右后腰双水罐，左后腰卷盘",
+      "vehicle": "右侧驾驶室后双罐，左侧卷盘/泵组；水路保持同侧"
+    },
+    {
+      "id": "F",
+      "part": "稳定支腿",
+      "robot": "后腰/底盘侧工具壳收纳",
+      "vehicle": "四支腿按两侧各二展开；不变成机器人主腿"
+    }
+  ],
+  "steps": [
+    "01 人形与部件索引",
+    "02 头部/拳掌收纳，肩臂向车身侧后收合",
+    "03 躯干滑轨压缩，下肢折转，轮组落为三轴底盘",
+    "04 双桥板包转入水平托架",
+    "05 载具运输形态",
+    "06 四支腿稳定、桥面展开与水幕作业"
+  ],
+  "limits": [
+    "动作图用半透明叠影标示前后姿态，不能将叠影计为新增零件。",
+    "中间动作是本轮结构设计提案；驾驶舱净空、折转路径/碰撞、线束水路、承重与完整变形尚未以同件模型或连续运动验证。"
+  ],
+  "user_accepted": false
+}

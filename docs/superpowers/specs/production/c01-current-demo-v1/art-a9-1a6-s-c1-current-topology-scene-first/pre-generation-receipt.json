@@ -1,0 +1,85 @@
+{
+  "schema_version": "A9_1A6_S_C1_PREGEN_RECEIPT_V1",
+  "task_id": "A9_1A6_S_C1_CURRENT_TOPOLOGY_SCENE_FIRST_PREPRODUCTION",
+  "status": "PREGENERATION_PACKAGE_READY_FOR_PRODUCER_REVIEW_CALL02_BLOCKED",
+  "authority": "Candidate_only",
+  "runtime_allowed": false,
+  "exact_handoff": false,
+  "input_contracts": {
+    "p90_sha256": "67332c6d9644ca0fbcf42aac1a850717201496d34ec0808e4c3013eae9fe4898",
+    "p88_current_sha256": "6a26aad909719cb01e9c2f411dae251eb2bfa278d163121f9a3d68ddc0cf06af",
+    "p88_superseded_dispatch_sha256": "5c3dbcd71ed8154c127e674f35ff9c78d843c479461e79d6fbc3585e9cab2ed9",
+    "p88_supersession_reason": "read_only_BFS_recalculation_evidence_added_only_no_art_scope_or_gate_change",
+    "p87_sha256": "79ab8d7837e1402a63fc9a3fa0f78ffe2a96941bcfb040dd45a87d6aef3ee4fc",
+    "p85_sha256": "488153a6d35583763bb7594bd890505a6cc68834fda187180f5ae12d1aa48abe",
+    "tactical_interface_sha256": "607724af9bc6cf21619cc8411e17f02ec337154a4d28320bec536edd21178135"
+  },
+  "bfs_readback": {
+    "route_family_A_legal_monotone_shortest_count": 21,
+    "route_family_B_legal_monotone_shortest_count": 15,
+    "direct_click_A_endpoint_path": [[15, 11], [15, 10], [15, 9], [16, 9], [17, 9], [18, 9], [19, 9], [20, 9]],
+    "direct_click_B_endpoint_path": [[15, 11], [15, 10], [15, 9], [16, 9], [17, 9], [18, 9], [19, 9]],
+    "scope_effect": "none_visual_preproduction_scope_unchanged"
+  },
+  "imagegen_budget": {
+    "maximum_total_calls": 4,
+    "imagegen_calls_used": 1,
+    "imagegen_calls_remaining_total": 3,
+    "imagegen_calls_currently_callable": 0,
+    "call02_allowed": false,
+    "no_imagegen_call_in_task90": true
+  },
+  "call01": {
+    "status": "INVALIDATED_AS_EXACT_TARGET_BY_P85_MATERIAL_LIGHTING_MOOD_DONOR_ONLY",
+    "raw_sha256": "3ef48a982f5b85f0322451e50c1560b3666dd537b68aafecb5499dde96ac1c46",
+    "used_as_task90_board_input": false,
+    "exact_target_allowed": false
+  },
+  "reference_safety": {
+    "safe_identity_style_board_sha256": "dc473235883669165e0eef58ce8c9d390e719e946e133648893b7d0ca83f3276",
+    "safe_board_copy_mode": "byte_exact_copy",
+    "unsafe_identity_conflicting_board_status": "forbidden_unused_identity_conflicting",
+    "orthographic_reference_as_map_sprite": false,
+    "guardian_z_wings_or_backpack_allowed": false,
+    "extra_swarm_allowed": false
+  },
+  "visible_pixel_boundary": {
+    "new_target_scene_pixels_created": false,
+    "target_map_or_actor_pixels_generated_or_edited": false,
+    "map_language_board_role": "legacy_A4_material_value_layer_occlusion_vocabulary_only",
+    "overlay_template_role": "deterministic_transparent_screen_space_UI_only",
+    "identity_style_board_role": "byte_exact_producer_checked_reference_copy_only"
+  },
+  "task89_release_gate": {
+    "task89_objective_sha256": "ecd331d25e14c14e152ffc80303509e7e5c231f3fbfa4d34dc91cd7ff96d7321",
+    "task89_completion_receipt_supplied": false,
+    "producer_signed_actual_frame_sha_supplied": false,
+    "producer_actual_pixel_signoff_supplied": false,
+    "explicit_CALL02_ALLOWED_supplied": false,
+    "release_state": "BLOCKED"
+  },
+  "deliverables": [
+    "source-lineage.tsv",
+    "authority-layer-readback.md",
+    "shot-plan.md",
+    "map-language-board.png",
+    "identity-style-safe-board.png",
+    "prompt-plan.md",
+    "overlay-ui-cleanplate-contract.md",
+    "deterministic-overlay-ui-template-1280x720.png",
+    "build_preproduction_boards.py",
+    "preproduction-completion-report.md",
+    "delivery-hashes.sha256"
+  ],
+  "prohibited_actions_confirmed": {
+    "ImageGen": false,
+    "Blender": false,
+    "new_mecha_or_map_design": false,
+    "Sprite_or_Atlas": false,
+    "Godot_or_Runtime": false,
+    "UA91_or_G2_B": false,
+    "LibTV": false,
+    "Canon_migration": false,
+    "git_add_commit_clean": false
+  }
+}

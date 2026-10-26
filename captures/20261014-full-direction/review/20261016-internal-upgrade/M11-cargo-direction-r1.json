@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-21",
+  "revision": "M11-cargo-direction-r1",
+  "request": "好的 这批素材过了，继续下一批",
+  "generation_mode": "built-in image_gen",
+  "intent": "generate_from_references",
+  "existing_batch": "design-followthrough-r1.json",
+  "canon_sources": [
+    "CML028",
+    "V353U043"
+  ],
+  "selection": "下一批先做M11货柜领袖，机器人/四轴货车/独立货柜对应。",
+  "source_roles": [
+    {
+      "file": "../20261016-r3-wave3/images/350e62d2c9dfa371de4a74a8fe4c7ed7579c14f9b85a760b6774886300904146.jpg",
+      "role": "躯干/货车外形与白蓝橙配色参考；其旧通用头脸不采用，三轴文字与图不符"
+    },
+    {
+      "file": ".superpowers/brainstorm/37837-1782033239/content/mecha_r18_cargo_leader_face_v4.png",
+      "role": "CML028已锁定头部身份，以原始项目路径为准",
+      "path_base": "project_root"
+    }
+  ],
+  "structural_proposal": {
+    "wheel_positions": "四轴/八轮位，每侧肩后1、前臂外后1、小腿外后竖向2；踝侧橙圈为关节轴盖，不计公路轮位",
+    "cab": "风挡分至肩上，格栅/检修前板构成胸甲",
+    "cargo": "单个货柜保持独立载荷，先卸柜再展开，无货柜复制/压缩",
+    "status": "本会话结构提案，待新图审视；不改变剧情、实机或玩具尺度身份",
+    "initial_wheel_positions": "四轴/八轮位，每侧肩后1、髋外1、小腿外后竖向2",
+    "author_adjustment": "实际前稿将第二轮位放在前臂外后而非髋外；该布置不挤占髋关节，后续侧背与货车按同一八轮位跟进，原提示保留。"
+  },
+  "planned_images": [
+    "FRONT",
+    "SIDE",
+    "REAR",
+    "VEHICLE"
+  ],
+  "user_accepted": false,
+  "runtime_changed": false,
+  "handoff_sent": false
+}

@@ -1,0 +1,113 @@
+{
+  "task_id": "A9_1A6_ENV_A6_CAMERA_V2_ONE_STRUCTURE_MATERIAL_PILOT",
+  "status": "PRODUCER_PASS_ASSET_METHOD_CANDIDATE_NOT_FINAL_PLAN",
+  "scope": "NW_BLOCK_ONLY_NO_BATCH",
+  "upstream_producer_verdict": "A5_PASS_STRUCTURE_HIERARCHY_NOT_FINAL_ART",
+  "registration": {
+    "grid_rect": [
+      1,
+      0,
+      7,
+      5
+    ],
+    "local_canvas_px": [
+      480,
+      378
+    ],
+    "pivot_local_px": [
+      240,
+      378
+    ],
+    "front_edge_raw": [
+      80,
+      288
+    ],
+    "visual_bounds_raw": [
+      -160,
+      -90,
+      480,
+      378
+    ],
+    "world_height_limit_px": 90,
+    "authored_max_height_px": 82
+  },
+  "camera": {
+    "axis_vectors_px": [
+      [
+        40,
+        24
+      ],
+      [
+        -40,
+        24
+      ]
+    ],
+    "axis_angles_deg": [
+      30.9637565,
+      -30.9637565
+    ],
+    "allowed_structural_line_families": [
+      "+30.9637565_deg",
+      "-30.9637565_deg",
+      "vertical"
+    ],
+    "manual_screen_offset": false
+  },
+  "foundation": {
+    "source_sha256": "c06ad74d83f8cad6c59fc17cd2a7f240a15f10bbbae80b7ead409f081528e54a",
+    "output_sha256": "c06ad74d83f8cad6c59fc17cd2a7f240a15f10bbbae80b7ead409f081528e54a",
+    "byte_identical": true
+  },
+  "occluder": {
+    "source_sha256": "67a7cfcdbf5a3c78e547d03e6371591db32d00716e5b6a86c2359046d11315e3",
+    "output_sha256": "8f361ca8269fb955e32772cdb14fbda527e77fcec2f4e8488d0cf399fcee27cf",
+    "source_alpha_sha256": "527d5f703233b04c224de54cd036bff71b8638835b1e8cddcfd32b2d2c6cd630",
+    "output_alpha_sha256": "527d5f703233b04c224de54cd036bff71b8638835b1e8cddcfd32b2d2c6cd630",
+    "alpha_pixel_identical": true,
+    "alpha_bbox_local": [
+      30,
+      49,
+      412,
+      336
+    ],
+    "normal_alpha": 1.0,
+    "reveal_alpha": 0.34
+  },
+  "material_blocks": [
+    "main_waterproof_roof",
+    "main_window_facade",
+    "east_service_wing",
+    "offset_equipment_room",
+    "short_eave_and_entrance",
+    "foundation",
+    "restrained_amber_edges"
+  ],
+  "material_features": [
+    "roof_drain_strip",
+    "continuous_window_band",
+    "entrance",
+    "equipment_louver",
+    "three_warm_edge_lights",
+    "low_frequency_rain_wear"
+  ],
+  "old_donor_pixels_used": false,
+  "imagegen_calls": 0,
+  "dynamic_lighting": false,
+  "shader": false,
+  "subviewport": false,
+  "outputs": [
+    "delivery/NW_BLOCK_FOUNDATION_CAMERA_V2_RGBA.png",
+    "delivery/NW_BLOCK_OCCLUDER_CAMERA_V2_MATERIAL_RGBA.png",
+    "qa/NW_BLOCK_A6_MATERIAL_COMPARISON_100_PERCENT_1120x620.png",
+    "qa/NW_BLOCK_A6_MATERIAL_COMPARISON_50_PERCENT_560x310.png",
+    "qa/NW_BLOCK_A6_MAP_PROXY_NORMAL_REVEAL_1120x620.png",
+    "source-lineage.tsv"
+  ],
+  "machine_pass": true,
+  "producer_visual_review": "COMPLETE_PASS_ASSET_METHOD_CANDIDATE",
+  "six_structure_batch_released": "A7_ASSET_PACK_ONLY",
+  "producer_verdict": "PASS_ASSET_METHOD_CANDIDATE",
+  "producer_verdict_date": "2026-08-22",
+  "final_plan_pass": false,
+  "a7_six_structure_asset_pack_released": true
+}

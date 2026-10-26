@@ -1,0 +1,367 @@
+{
+  "episode_id": "C01E02-STORY-FIRST-CANDIDATE",
+  "start_node_id": "c01e02_black_water",
+  "status": "candidate_runtime_production",
+  "canon_refs": [
+    "DOC_V359_C01E02_STORY_FIRST_V1",
+    "DATA_C01E02_RUNTIME_CONTRACT_V1",
+    "DATA_C01E02_GRAYBOX_CONSTANTS_V1",
+    "DOC_C01E02_STORY_FIRST_CANON_MIGRATION_V1",
+    "V357-C01-S02",
+    "CH_JICUN",
+    "CH_QIHAI",
+    "CH_TANGJIAO",
+    "CH001",
+    "V353U034",
+    "V353U038",
+    "V353U040",
+    "MECHA_BRAVE_FIST_PROTOTYPE",
+    "ENEMY_COOLING_NEEDLE_CART",
+    "ENEMY_CUTTING_RULER_MACHINE",
+    "ENEMY_C01_SEAL_COMMANDER_BAIHAN"
+  ],
+  "nodes": [
+    {
+      "node_id": "c01e02_black_water",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_C01E02_STORY_NARRATIVE",
+      "title": "一滴黑水 / 四令之后",
+      "commit_policy": "local_transition_only",
+      "transition": {
+        "transition_id": "C01E02-TR-01-BLACK-WATER",
+        "kind": "opening",
+        "eyebrow": "万机馆 · L1前厅",
+        "title": "他们越过了闭馆线，还没有离开建筑",
+        "location": "L1前厅 / 西门内侧",
+        "time_label": "21:04",
+        "cause": "四令同时切走门、胸灯、旧路数字钥匙和B1消防泵；东侧烟从半开门下压进前厅。",
+        "handoff": "七海第一次改变现场系统：切断东侧高压。电弧停下，旧风阀却随之落下。",
+        "duration": 1.25,
+        "fade_seconds": 0.44,
+        "accent": "d95f56"
+      },
+      "completion_contract": "OUTCOME_C01E02_RT001_RT003_LOCAL_V01",
+      "transaction_id": "C01E02:RT001_RT003:LOCAL:V01",
+      "outcome_facts": [
+        {"id": "C01E02_LOCAL_RT013S_READ", "to": true},
+        {"id": "C01E02_LOCAL_EAST_HV_CUT_ACTIVE", "to": true},
+        {"id": "C01E02_LOCAL_SMOKE_PRESSURE_HIGH", "to": true}
+      ],
+      "player_summary": "E01快照被原样读取；七海切断东侧高压先止住电弧，随后因缺失旧风阀层而加剧低位烟压。",
+      "presentation": {
+        "profile": "standard_adv",
+        "background": "res://assets/backgrounds/story_first/bg_c01e01_four_orders_v01.png",
+        "portrait_visibility": "active_only",
+        "eyebrow": "万机馆 · L1前厅",
+        "title": "一滴黑水",
+        "time_label": "21:04",
+        "cast": [
+          {"actor_id": "CH_JICUN", "display_name": "纪存", "side": "left", "portrait_path": "res://assets/portraits/portrait_jicun.png", "accent": "58c8d9"},
+          {"actor_id": "CH_QIHAI", "display_name": "七海 · 公务风险频道", "side": "right", "portrait_path": "res://assets/portraits/portrait_qihai.png", "accent": "dca55b"}
+        ]
+      },
+      "lines": [
+        {"beat_id": "c01e02_bw_01", "speaker": "旁白", "stage_action": "前厅第一只喷头咳出一滴黑水", "text": "黑水落在黄色闭馆线上。二十九个人刚好都在线的另一边，离街灯不过几十米。"},
+        {"beat_id": "c01e02_bw_02", "speaker": "前厅值守员", "stage_action": "一手护住小满，一手把阿澄拉回黄线内", "text": "二十九。C组三个都在。慢速组五个也在。"},
+        {"beat_id": "c01e02_bw_03", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "看一眼半开的防火门，再看西门", "text": "西门出去。别回头拿东西。"},
+        {"beat_id": "c01e02_bw_04", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "stage_action": "公务窗口压住私人频道，没有制服投影", "text": "东侧不能走。二十九人走西侧装卸坪。把你刚发的消防图放大。"},
+        {"beat_id": "c01e02_bw_05", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "消防图只剩门、泵和一条旧回线", "text": "门半开，泵压零，旧钥匙还冻着。你能动哪一项？"},
+        {"beat_id": "c01e02_bw_06", "actor_id": "CH_QIHAI", "speaker": "七海", "text": "东侧高压。西侧出口标志和维生不碰。"},
+        {"beat_id": "c01e02_bw_07", "speaker": "旁白", "stage_action": "切电令落下，门后的蓝白电弧立即熄灭", "text": "前厅安静了一秒。伤亡预测第一次向下跳。"},
+        {"beat_id": "c01e02_bw_08", "speaker": "旁白", "stage_action": "墙内传来一连串沉闷落锁声", "text": "随后，旧风阀失去保持电流。低位烟像被一只手推着，贴地涌向西门。"},
+        {"beat_id": "c01e02_bw_09", "actor_id": "CH_QIHAI", "speaker": "七海", "stage_action": "盯着骤升的预测，没有先替自己辩护", "text": "图上为什么没有这组风阀？"},
+        {"beat_id": "c01e02_bw_10", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "机器犬在烟里停住，跌跌朝地板缝转身", "text": "因为这张图只画了现在。我们去找还活着的旧层。"}
+      ],
+      "success_edges": ["c01e02_fireline_evidence"],
+      "soft_fail_edges": ["c01e02_fireline_evidence"],
+      "failure_edges": ["c01e02_fireline_evidence"],
+      "cancel_edges": ["c01e02_black_water"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "c01e02_fireline_evidence",
+      "mode": "SPATIAL",
+      "scene_id": "SCN_C01E02_FIRELINE_INVESTIGATION",
+      "title": "图少了半层 / 火线三证",
+      "commit_policy": "local_transition_only",
+      "transition": {
+        "transition_id": "C01E02-TR-02-FIRELINE-EVIDENCE",
+        "kind": "location_shift",
+        "eyebrow": "L1前厅 / B1入口",
+        "title": "不要让图替现场改答案",
+        "location": "半开防火门、地板缝与双层旧管之间",
+        "time_label": "21:05",
+        "cause": "七海的命令局部正确，却因所有现行图缺少旧回风层而反转了烟压。",
+        "handoff": "机器犬读流向、跌跌取温度片、唐胶与兜灯确认墙后双层管。三证顺序自由。",
+        "continuity": {
+          "types": ["action", "responsibility"],
+          "action_refs": ["C01E02_LOCAL_SMOKE_PRESSURE_HIGH"],
+          "responsibility_refs": ["CH_JICUN", "CH_QIHAI"]
+        },
+        "duration": 1.05,
+        "fade_seconds": 0.38,
+        "accent": "49c7d8"
+      },
+      "completion_contract": "OUTCOME_C01E02_OLD_LAYER_EVIDENCE_READY_V01",
+      "transaction_id": "C01E02:FIRELINE_EVIDENCE:LOCAL:V01",
+      "investigation_definition_path": "res://content/episodes/c01/e02/explore/c01_e02_fireline_investigation.json",
+      "success_edges": ["c01e02_public_map_setup"],
+      "soft_fail_edges": ["c01e02_public_map_setup"],
+      "failure_edges": ["c01e02_fireline_evidence"],
+      "cancel_edges": ["c01e02_fireline_evidence"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "c01e02_public_map_setup",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_C01E02_STORY_NARRATIVE",
+      "title": "共同救援图 / 四条腿落地",
+      "commit_policy": "local_transition_only",
+      "transition": {
+        "transition_id": "C01E02-TR-03-PUBLIC-MAP",
+        "kind": "scale_shift",
+        "eyebrow": "联合救援端接入",
+        "title": "一张谁都没有独占的现场图",
+        "location": "L1前厅 / 西侧装卸坪",
+        "time_label": "21:09",
+        "cause": "三项物证证明两张消防图都少了同一层旧管；单方命令无法再可靠救人。",
+        "handoff": "纪存开放离线结构底图共同写入；消防架桥机按固定支援位逐腿落地。",
+        "continuity": {
+          "types": ["action", "responsibility"],
+          "action_refs": ["OLD_LAYER_EVIDENCE_READY"],
+          "responsibility_refs": ["CH_JICUN", "CH_QIHAI", "CH_TANGJIAO", "CH001"]
+        },
+        "duration": 1.2,
+        "fade_seconds": 0.42,
+        "accent": "f0b83f"
+      },
+      "completion_contract": "OUTCOME_C01E02_RT008_RT010_LOCAL_V01",
+      "transaction_id": "C01E02:RT008_RT010:LOCAL:V01",
+      "outcome_facts": [
+        {"id": "C01E02_LOCAL_PUBLIC_COEDIT_FIRE_EVAC_LAYER_ACTIVE", "to": true},
+        {"id": "C01E02_LOCAL_FIRE_SUPPORT_ACTIVE", "to": true},
+        {"id": "C01E02_LOCAL_PHASE_ORDER_LOCKED", "to": true}
+      ],
+      "player_summary": "现行火场层、材料管线、低温示踪、小机实时点与城市消防负载合成一张公共救援图；消防架桥机固定接入。",
+      "presentation": {
+        "profile": "standard_adv",
+        "background": "res://assets/backgrounds/story_first/bg_c01e01_front_hall_closing_v01.png",
+        "portrait_visibility": "active_only",
+        "eyebrow": "L1前厅 / 西侧装卸坪",
+        "title": "共同救援图",
+        "time_label": "21:09",
+        "cast": [
+          {"actor_id": "CH_JICUN", "display_name": "纪存", "side": "left", "portrait_path": "res://assets/portraits/portrait_jicun.png", "accent": "58c8d9"},
+          {"actor_id": "CH_QIHAI", "display_name": "七海 · 公务风险频道", "side": "right", "portrait_path": "res://assets/portraits/portrait_qihai.png", "accent": "dca55b"},
+          {"actor_id": "CH001", "display_name": "兜灯", "side": "right", "portrait_path": "res://assets/portraits/portrait_doudeng.png", "accent": "65bda7"}
+        ]
+      },
+      "lines": [
+        {"beat_id": "c01e02_map_01", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "stage_action": "把三份物证钉在现行火场图边缘", "text": "传感器没坏，温度片没反，墙也没有多长一根管。两张图都少了同一层。"},
+        {"beat_id": "c01e02_map_02", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "从旧终端拔掉只读锁片", "text": "我开离线结构底图。只开消防和撤离层。谁看见什么，谁写。"},
+        {"beat_id": "c01e02_map_03", "actor_id": "CH_QIHAI", "speaker": "七海", "text": "完整移动脊道呢？"},
+        {"beat_id": "c01e02_map_04", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "不在这张图里。现在也用不上。"},
+        {"beat_id": "c01e02_map_05", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "把双层管和材料耐温线画成两种粗细", "text": "细线是能走水，粗线是烧了以后还能走水。别混。"},
+        {"beat_id": "c01e02_map_06", "actor_id": "CH001", "speaker": "兜灯", "stage_action": "把九十秒低温示踪接到旧层，主动力保持硬停", "text": "蓝的只亮九十秒。馆守Z主电不接。"},
+        {"beat_id": "c01e02_map_07", "speaker": "城市消防", "source_kind": "radio", "stage_action": "西门外的栓压与地面承载区叠入底图", "text": "西侧栓压只有一轮。四号落腿区不能压，下面是旧管。"},
+        {"beat_id": "c01e02_map_08", "speaker": "旁白", "stage_action": "机器犬把实时烟流点拖进图层，跌跌在B1入口敲出机械回应", "text": "五种互不完整的读数第一次落在同一张地面投影上。"},
+        {"beat_id": "c01e02_map_09", "speaker": "旁白", "stage_action": "橙白消防架桥机从烟中倒车进入", "text": "低矮作业头之后，是厚实承力躯干、三段折叠桥板和四条各自拥有髋轴的机械腿。"},
+        {"beat_id": "c01e02_map_10", "speaker": "消防驾驶员", "source_kind": "radio", "stage_action": "第一条腿探地，拒绝标红的旧管区", "text": "这个点不落。你们的图刚救了我一条腿。"},
+        {"beat_id": "c01e02_map_11", "speaker": "旁白", "stage_action": "四腿依次承重，没有英雄式落地音乐", "text": "液压泄压、倒车蜂鸣和驾驶员报压，把它钉进唯一合法的固定支援位。"},
+        {"beat_id": "c01e02_map_12", "speaker": "消防驾驶员", "source_kind": "radio", "text": "四条腿，三段桥。水只够按顺序来一遍。你们先救哪一步，喊清楚。"},
+        {"beat_id": "c01e02_map_13", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "把二十九人四组端点、B1泵和两台轨道工具同时点亮", "text": "先小机，再工作人员，再消防支援。工具机动完，人再走。环境最后算。"}
+      ],
+      "success_edges": ["c01e02_fire_evacuation"],
+      "soft_fail_edges": ["c01e02_fire_evacuation"],
+      "failure_edges": ["c01e02_public_map_setup"],
+      "cancel_edges": ["c01e02_public_map_setup"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "c01e02_fire_evacuation",
+      "mode": "TACTICAL",
+      "scene_id": "SCN_C01E02_FIRE_EVACUATION",
+      "title": "五回合消防撤离 / 29人出楼",
+      "commit_policy": "local_transition_only",
+      "transition": {
+        "transition_id": "C01E02-TR-04-FIVE-ROUND-EVAC",
+        "kind": "pressure_escalation",
+        "eyebrow": "联合救援端在线",
+        "title": "这里不是歼灭战",
+        "location": "L1前厅 / B1入口 / 西侧装卸坪",
+        "time_label": "21:10",
+        "cause": "共同救援图让小机、工作人员和固定消防支援首次能按同一回合顺序协作。",
+        "handoff": "R1-R4送29人离楼；R5反折SEG3，保住馆内五人的唯一退路。",
+        "continuity": {
+          "types": ["action", "responsibility"],
+          "action_refs": ["C01E02_LOCAL_PUBLIC_COEDIT_FIRE_EVAC_LAYER_ACTIVE"],
+          "responsibility_refs": ["CH_JICUN", "V353U034", "C01_EVAC_TOKEN_MODEL"]
+        },
+        "duration": 1.25,
+        "fade_seconds": 0.42,
+        "accent": "e45e62"
+      },
+      "completion_contract": "OUTCOME_C01E02_RT011_RT036_LOCAL_CLEAR_V01",
+      "battle_definition_path": "res://content/episodes/c01/e02/battle/c01_e02_fire_evacuation_5r.json",
+      "commitment_anchors": [
+        {"anchor_id": "C01E02_COMMIT_SHARED_FIRE_BRANCH", "source_action_id": "JICUN_CONFIRM_FIRE_BRANCH", "visible_action": "玩家让纪存按三项现场证据确认消防支路，而不是继续服从缺层的现行图。"},
+        {"anchor_id": "C01E02_COMMIT_REVERSE_SEG3", "source_action_id": "FIRE_REVERSE_SEG3", "visible_action": "玩家把消防架桥机最后的结构余量留给馆内五人，接受左前腿永久过载。"}
+      ],
+      "result_transaction_id": "C01E02:RT011_RT036:BATTLE_LOCAL_CLEAR:V01",
+      "skip_result_fact": true,
+      "success_edges": ["c01e02_baihan_remote"],
+      "soft_fail_edges": ["c01e02_baihan_remote"],
+      "failure_edges": ["c01e02_fire_evacuation"],
+      "cancel_edges": ["c01e02_fire_evacuation"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "c01e02_baihan_remote",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_C01E02_STORY_NARRATIVE",
+      "title": "主动迁移 / 十八米落点",
+      "transition": {
+        "transition_id": "C01E02-TR-05-BAIHAN-PRESET",
+        "kind": "settlement",
+        "eyebrow": "R5 Battle Clear · 仍未清场",
+        "title": "救援被改写成了另一种说法",
+        "location": "西门内侧 / 十八米中庭框位",
+        "time_label": "21:18",
+        "cause": "29人已经离楼，SEG3反折保住五人退路；公共救援图也完整暴露了消防接口与行动顺序。",
+        "handoff": "白函远程改报并预量十八米框位；台词结束后一次提交RT038完整快照。",
+        "continuity": {
+          "types": ["action", "responsibility"],
+          "action_refs": ["R5_CLEAR_LOCAL_ONLY", "SEG3_REVERSE_BRACE_COMPLETE"],
+          "responsibility_refs": ["CH_JICUN", "CH_QIHAI", "ENEMY_C01_SEAL_COMMANDER_BAIHAN"]
+        },
+        "duration": 1.3,
+        "fade_seconds": 0.46,
+        "accent": "f0b83f"
+      },
+      "completion_contract": "OUTCOME_C01E02_RT038_ATOMIC_SNAPSHOT_V01",
+      "transaction_id": "C01E02:RT038:ATOMIC_SNAPSHOT:V01",
+      "outcome_payload": {
+        "transaction_id": "C01E02:RT038:ATOMIC_SNAPSHOT:V01",
+        "resolution": "success",
+        "facts": [
+          {"id": "C01E02_ATOMIC_TRANSACTION", "to": "COMMITTED"},
+          {"id": "C01E02_PHYSICAL_SNAPSHOT", "to": "RT038_ATOMIC_PAYLOAD"},
+          {"id": "ALL_29_OUTSIDE_BUILDING", "to": true},
+          {"id": "C01E02_EVAC_ENDPOINTS", "to": "A11_1_5;B10_1_6;C3_1_7;D5_1_8_HIDDEN_OUTSIDE"},
+          {"id": "C3_CUSTODY_INTACT", "to": true},
+          {"id": "D5_ORIGINAL_REPAIR_WORKER_INTACT", "to": true},
+          {"id": "CORE_STAFF_INSIDE", "to": "JICUN;TANGJIAO;DOUDENG"},
+          {"id": "FIRE_HANDOFF_ADULTS_INSIDE", "to": "F2_NEW_EXTERNAL_NOT_IN_INITIAL_32"},
+          {"id": "QH_FIRST_SYSTEM_COMMAND", "to": "EAST_HIGH_VOLTAGE_CUT_WITH_WEST_LIFE_SUPPORT_PRESERVED"},
+          {"id": "QH_FIRST_PUBLIC_REVERSAL", "to": true},
+          {"id": "QH_SUSPENDED_INTERNAL_REVIEW", "to": true},
+          {"id": "QH_SYSTEM_WRITE", "to": "DISABLED"},
+          {"id": "CITY_FIRE_RESCUE_SUPPORT", "to": "ACTIVE_THROUGH_R5"},
+          {"id": "OLD_LAYER_EVIDENCE_READY", "to": true},
+          {"id": "JICUN_PUBLIC_COEDIT_FIRE_EVAC_LAYER", "to": true},
+          {"id": "JICUN_QH_RELATION_BEAT", "to": "THIRTY_TWO_NOT_TWENTY_NINE"},
+          {"id": "B1_FIRE_PUMP", "to": "MANUAL_OPERABLE_LOW_PRESSURE"},
+          {"id": "WEST_FIRE_SUPPLY", "to": "HEAT_DEFORMED_LIMITED"},
+          {"id": "S02_EVAC_SCAR", "to": "FIRE_SUPPLY_BURNED"},
+          {"id": "COMMERCIAL_SERVICE_DUCT", "to": "LOCAL_BURN_DAMAGE"},
+          {"id": "ARCHIVE_SERVER_BANK", "to": "INTACT_EMERGENCY_COOLING"},
+          {"id": "WEST_EXIT", "to": "OPEN_MANUAL_WITH_REVERSE_BRACE"},
+          {"id": "CITY_GRID", "to": "PARTIAL_ISOLATION_LIFE_SUPPORT_ON"},
+          {"id": "OLD_ROUTE_DIGITAL_KEY", "to": "FROZEN_NOT_FULLY_EXPOSED"},
+          {"id": "FULL_MOVING_SPINE", "to": "NOT_EXPOSED"},
+          {"id": "WANJI_B2", "to": "CLOSED"},
+          {"id": "FIRE_BRIDGE_MECHA", "to": "FIRST_VISIBLE_SUPPORT_LEFT_FRONT_LEG_OVERLOAD"},
+          {"id": "FIRE_BRIDGE_SEGMENT_3", "to": "REVERSE_BRACE"},
+          {"id": "DIEDIE", "to": "TEMP_SUPPORT_RECHARGE_REQUIRED"},
+          {"id": "ROBOT_DOG", "to": "TEMP_SUPPORT_RECHARGE_REQUIRED"},
+          {"id": "GUARDIAN_Z", "to": "HALF_KNEELING_ARM_ATTACHED_PASSIVE_COOLING_ONLY"},
+          {"id": "BRAVE_FIST", "to": "TRANSPORT_AUTO_REQUEST_CUT_AT_EXTERNAL_RELAY_LICENSE_DARK_NO_BODY_ACTION"},
+          {"id": "BRAVE_FIST_HAOSI", "to": "ABSENT"},
+          {"id": "BRAVE_FIST_LICENSE", "to": "DARK"},
+          {"id": "BRAVE_FIST_CABIN_PRESSURE", "to": 0},
+          {"id": "BRAVE_FIST_BODY_DISPLACEMENT", "to": 0},
+          {"id": "BAIHAN", "to": "REMOTE_ONLY_ATRIUM_FRAME_PRESET"},
+          {"id": "BAIHAN_BODY_PRESENT", "to": false},
+          {"id": "COOLING_NEEDLE_CART", "to": "RECOILED_ARM_RETRACTED"},
+          {"id": "CUTTING_RULER_MACHINE", "to": "DEFLECTED_RECOIL_ARM_RETRACTED"},
+          {"id": "WANJI_INTERNAL_MAP_EXPOSED", "to": "PUBLIC_FULL_FIRE_AND_EVAC_LAYER"},
+          {"id": "DAIGE_SAMPLE_GAIN", "to": "FIRE_MAP;FIRE_BRIDGE_INTERFACE;QH_REVERSAL_PATTERN;RESCUE_REFRAMED_AS_ASSET_MIGRATION"},
+          {"id": "WJ_L1_EXHIBIT_LIGHTS", "to": "OFF_BY_CLOSING_SEQUENCE"},
+          {"id": "FAR_STAR_BLANK_REPLY", "to": "L1_READ_ONLY_L3_CACHE_JICUN_ID_FLASH_UNVERIFIED"}
+        ],
+        "entity_changes": [
+          {"entity_id": "CH_JICUN", "condition": "inside_fireline", "source_cell": [10, 10]},
+          {"entity_id": "CH_TANGJIAO", "condition": "inside_fireline", "source_cell": [9, 8]},
+          {"entity_id": "CH001", "condition": "inside_fireline", "source_cell": [10, 4]},
+          {"entity_id": "CITY_FIRE_F2A", "condition": "external_handoff_inside", "source_cell": [3, 7], "initial_32": false},
+          {"entity_id": "CITY_FIRE_F2B", "condition": "external_handoff_inside", "source_cell": [3, 8], "initial_32": false},
+          {"entity_id": "V353U038", "condition": "pump_recess_recharge_required", "source_cell": [9, 9]},
+          {"entity_id": "V353U040", "condition": "outside_with_c3_recharge_required", "source_cell": [1, 7]},
+          {"entity_id": "V353U034", "condition": "fixed_support_left_front_leg_overloaded", "seg3": "reverse_brace"},
+          {"entity_id": "V353U001", "condition": "half_kneeling_power_off", "chest_light": "off", "right_arm_core": "attached", "right_forearm_armor": "service_state"},
+          {"entity_id": "MECHA_BRAVE_FIST_PROTOTYPE", "condition": "transport_locked", "haosi_present": false, "license_light": "dark", "cabin_pressure": 0, "body_displacement": 0},
+          {"entity_id": "ENEMY_C01_SEAL_COMMANDER_BAIHAN", "condition": "remote_projection_only", "body_present": false, "atrium_measurement_m": 18},
+          {"entity_id": "ENEMY_COOLING_NEEDLE_CART", "condition": "recoiled_arm_retracted"},
+          {"entity_id": "ENEMY_CUTTING_RULER_MACHINE", "condition": "deflected_recoil_arm_retracted"}
+        ],
+        "world_object_changes": [
+          {"object_id": "OBJ_C01E02_B1_FIRE_PUMP", "known_state": "manual_operable_low_pressure"},
+          {"object_id": "OBJ_C01E02_WEST_FIRE_SUPPLY", "known_state": "heat_deformed_limited", "scar": "FIRE_SUPPLY_BURNED"},
+          {"object_id": "OBJ_C01E02_COMMERCIAL_SERVICE_DUCT", "known_state": "local_burn_damage"},
+          {"object_id": "OBJ_C01E02_ARCHIVE_SERVER_BANK", "known_state": "intact_emergency_cooling"},
+          {"object_id": "OBJ_C01E02_WEST_EXIT", "known_state": "open_manual_with_reverse_brace"},
+          {"object_id": "OBJ_C01E02_SEG3", "known_state": "reverse_brace", "service_strip": "open"},
+          {"object_id": "OBJ_C01E02_PUBLIC_FIRE_EVAC_LAYER", "known_state": "shared_write_exposed"},
+          {"object_id": "OBJ_C01E02_FULL_MOVING_SPINE", "known_state": "not_exposed"},
+          {"object_id": "OBJ_C01E02_B2", "known_state": "closed"}
+        ],
+        "authority_changes": [
+          {"authority_id": "AUTH_QIHAI_SYSTEM_WRITE", "state": "disabled", "cause": "first_public_reversal_and_internal_review"},
+          {"authority_id": "AUTH_CITY_FIRE_RESCUE_SUPPORT", "state": "active_through_r5"},
+          {"authority_id": "AUTH_WANJI_PUBLIC_FIRE_EVAC_COEDIT", "state": "exposed_shared_write"},
+          {"authority_id": "AUTH_WANJI_FULL_MOVING_SPINE", "state": "withheld_not_exposed"}
+        ],
+        "relationship_edges": [
+          {"edge_id": "REL_JICUN_QIHAI_C01E02", "from": "CH_JICUN", "to": "CH_QIHAI", "state": "thirty_two_not_twenty_nine", "change": "he_keeps_public_channel_open_after_her_suspension"},
+          {"edge_id": "REL_TANGJIAO_DOUDENG_C01E02", "from": "CH_TANGJIAO", "to": "CH001", "state": "material_and_power_mutual_trust", "change": "grip_cut_and_high_temperature_clamp_exchanged_without_recheck"}
+        ],
+        "promises_and_debts": [
+          {"debt_id": "DEBT_C01E02_BAIHAN_BODY_ENTRY", "state": "open", "owner": "ENEMY_C01_SEAL_COMMANDER_BAIHAN", "cause": "18m_atrium_frame_preset"},
+          {"debt_id": "DEBT_C01E02_FIRE_SUPPORT_DAMAGE", "state": "open", "owner": "V353U034", "cause": "left_front_leg_overload_and_seg3_sacrificed"},
+          {"debt_id": "DEBT_C01E02_QIHAI_SUSPENSION", "state": "open", "owner": "CH_QIHAI", "cause": "public_reversal_after_wrong_layer_command"}
+        ],
+        "player_summary": "29人已离楼，五人退路仍通；七海停权，消防供水受损，SEG3反折承梁。白函把救援改报为资产迁移并预量18米中庭框位，RT038一次提交。"
+      },
+      "presentation": {
+        "profile": "standard_adv",
+        "background": "res://assets/backgrounds/story_first/bg_c01e01_four_orders_v01.png",
+        "portrait_visibility": "active_only",
+        "eyebrow": "西门内侧 / R5之后",
+        "title": "主动迁移",
+        "time_label": "21:18",
+        "cast": [
+          {"actor_id": "CH_JICUN", "display_name": "纪存", "side": "left", "portrait_path": "res://assets/portraits/portrait_jicun.png", "accent": "58c8d9"},
+          {"actor_id": "CH_QIHAI", "display_name": "七海 · 停权频道", "side": "right", "portrait_path": "res://assets/portraits/portrait_qihai.png", "accent": "a38f72"}
+        ]
+      },
+      "lines": [
+        {"beat_id": "c01e02_end_01", "speaker": "旁白", "stage_action": "梁和桥停止下沉", "text": "楼外的29 / 29保持绿色。馆内三名核心人员与两名接驳员的出口，还在共同救援图上亮着一条窄线。"},
+        {"beat_id": "c01e02_end_02", "speaker": "消防驾驶员", "source_kind": "radio", "stage_action": "连续报出最后三次压力", "text": "左前腿红线内。桥不回收。人能走。"},
+        {"beat_id": "c01e02_end_03", "speaker": "旁白", "stage_action": "镜头越过反折桥板，落到卷帘门后的运输架", "text": "勇拳试作机许可灯全灭，机内压力为零。它从头到尾没有移动。"},
+        {"beat_id": "c01e02_end_04", "actor_id": "CH_QIHAI", "speaker": "七海", "stage_action": "窗口被停权灰条截去一半", "text": "城市消防频道还在。我只能听。"},
+        {"beat_id": "c01e02_end_05", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "没有把她移出共同救援图", "text": "那就听着。还没清场。"},
+        {"beat_id": "c01e02_end_06", "speaker": "旁白", "stage_action": "冷却针车和标尺机停在轨道止挡处", "text": "两台工具机没有退场。它们像在等一个尚未进入馆内的指挥身体。"},
+        {"beat_id": "c01e02_end_07", "speaker": "白函 · 远程封存语音", "source_kind": "system", "stage_action": "白色折叠线越过消防图，沿中庭地面开合", "text": "未授权资产活动确认。消防桥铺设、人工泵站恢复、封闭运输架周边位移，统一记录为封存对象主动迁移。", "visual_effect": {"type": "measurement_frame", "rect": [430, 106, 420, 330], "progress": 0.38, "height_label": "18.0 m", "phase_label": "REMOTE PRESET / 38%", "color": "e9f1f5"}},
+        {"beat_id": "c01e02_end_08", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "十八米测量线从馆守Z脚边向上合拢", "text": "它没在量桥。", "visual_effect": {"type": "measurement_frame", "rect": [430, 106, 420, 330], "progress": 0.58, "height_label": "18.0 m", "phase_label": "REMOTE PRESET / 58%", "color": "e9f1f5"}},
+        {"beat_id": "c01e02_end_09", "actor_id": "CH_QIHAI", "speaker": "七海", "stage_action": "看见远程框位正好容下一具完整白色重框", "text": "它在给什么东西留落点？", "visual_effect": {"type": "measurement_frame", "rect": [430, 106, 420, 330], "progress": 0.78, "height_label": "18.0 m", "phase_label": "REMOTE PRESET / 78%", "color": "f0bd45"}},
+        {"beat_id": "c01e02_end_10", "speaker": "旁白", "stage_action": "十八米框位合到一半，画面切黑", "text": "没有东西回答。远程测量仍在继续。", "visual_effect": {"type": "measurement_frame", "rect": [430, 106, 420, 330], "progress": 0.91, "height_label": "18.0 m", "phase_label": "SIGNAL LOST / 91%", "color": "d95f59"}}
+      ],
+      "success_edges": [],
+      "soft_fail_edges": [],
+      "failure_edges": [],
+      "cancel_edges": [],
+      "terminal": true,
+      "autosave": "before_enter_and_after_commit"
+    }
+  ]
+}

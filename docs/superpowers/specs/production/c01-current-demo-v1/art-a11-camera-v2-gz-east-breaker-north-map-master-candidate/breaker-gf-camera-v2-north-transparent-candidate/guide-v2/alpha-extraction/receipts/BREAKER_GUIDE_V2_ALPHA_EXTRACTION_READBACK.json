@@ -1,0 +1,81 @@
+{
+  "artifact": "BREAKER_GUIDE_V2_ALPHA_EXTRACTION",
+  "status": "CANDIDATE_REVIEW_REQUIRED",
+  "candidate_gate": "PASS_WITH_MINOR_RENDER_DRIFT",
+  "scope": {
+    "lane": "Candidate only",
+    "godot_integration": false,
+    "runtime_promotion": false,
+    "canon_promotion": false,
+    "producer_approval": false
+  },
+  "imagegen": {
+    "calls_this_alpha_extraction": 1,
+    "known_a11_lineage_calls_before": 6,
+    "known_a11_lineage_calls_after": 7,
+    "operation": "background extraction edit",
+    "sole_edit_target": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/breaker-gf-camera-v2-north-transparent-candidate/guide-v2/generation-raw/BREAKER_GUIDE_V2_CALL01_RAW_ALPHA_FAIL.png",
+      "sha256": "b97c2d3743384d0ca2eac39cec21c6dd2513b050d2ef5c9c8bae4edca9375f29",
+      "mode": "RGB",
+      "size": [1254, 1254]
+    },
+    "instruction_summary": "Remove only the baked pale checkerboard into real alpha while preserving identity, Camera V2 north direction, upper-right unique head and red slit, composition, armor, lighting, and all limb endpoints; no crop, rotate, redesign, added shadow, or text."
+  },
+  "extracted_raw": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/breaker-gf-camera-v2-north-transparent-candidate/guide-v2/alpha-extraction/generation-raw/BREAKER_GUIDE_V2_CALL01_ALPHA_EXTRACTED_RAW_1254.png",
+    "sha256": "4dcecbb6edd1f090d714f471d6d607a06082c9112fa14fc174ac1decb4888172",
+    "mode": "RGBA",
+    "size": [1254, 1254],
+    "alpha_extrema": [0, 255],
+    "alpha_bbox_any": [0, 19, 1213, 1254],
+    "alpha_bbox_ge16": [72, 145, 1210, 1147],
+    "alpha_bbox_ge128": [73, 146, 1210, 1146],
+    "alpha_zero_pixels": 1006017,
+    "visible_alpha_percentiles_ge16": {
+      "p01": 168,
+      "p05": 252,
+      "p50": 253,
+      "p95": 253,
+      "p99": 254
+    }
+  },
+  "source_comparison": {
+    "source_rough_subject_bbox_rgb_lt235": [72, 145, 1209, 1146],
+    "visible_framing_delta_px": "<=1",
+    "rgb_mae_on_extracted_alpha_ge128": 13.5041,
+    "rgb_absdiff_p95_on_extracted_alpha_ge128": 34,
+    "rgb_absdiff_p99_on_extracted_alpha_ge128": 92,
+    "pixel_exact": false
+  },
+  "delivery": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/breaker-gf-camera-v2-north-transparent-candidate/guide-v2/alpha-extraction/delivery/BREAKER_GUIDE_V2_NORTH_TRANSPARENT_MASTER_CANDIDATE_384.png",
+    "sha256": "92c5212e6dd14f42fd9e262645b618cac855d21d7181f08030448b04c2c3c7a7",
+    "mode": "RGBA",
+    "size": [384, 384],
+    "pivot": [192, 320],
+    "source_crop_alpha_ge16": [72, 145, 1210, 1147],
+    "source_crop_size": [1138, 1002],
+    "deterministic_scale": 0.3033932135728543,
+    "resized_subject_size": [345, 304],
+    "paste_xy": [20, 16],
+    "alpha_bbox_any": [20, 16, 365, 320],
+    "alpha_bbox_ge16": [20, 16, 365, 320]
+  },
+  "qa_board": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/breaker-gf-camera-v2-north-transparent-candidate/guide-v2/alpha-extraction/qa/BREAKER_GUIDE_V2_SOURCE_VS_ALPHA_CANDIDATE_50_100_2000x1200.png",
+    "sha256": "4c167535c49018866569fb42a1f323b7275625cafb76356ea65fa4981967b305",
+    "views": ["source_50_percent", "extracted_raw_50_percent", "candidate_100_percent", "candidate_50_percent"]
+  },
+  "visual_self_review": {
+    "identity_preserved": true,
+    "camera_v2_north_read_preserved": true,
+    "unique_upper_right_head_and_red_slit_preserved": true,
+    "armor_plate_topology_preserved": true,
+    "all_visible_limbs_and_stabilizers_preserved": true,
+    "crop_rotation_or_reframe_detected": false,
+    "added_or_removed_parts_detected": false,
+    "minor_render_drift_detected": true,
+    "minor_render_drift_note": "Subtle seam, gold-edge highlight, and dark-tone redraw is visible. The result is structurally faithful but not pixel-exact."
+  }
+}

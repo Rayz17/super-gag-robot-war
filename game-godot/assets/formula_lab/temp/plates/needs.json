@@ -1,0 +1,147 @@
+{
+  "schema_id": "FORMULA_LAB_SIT_NEED_V1",
+  "notes": "场面槽位点名井种，井种点名 sit 函数与该编的锚点。活路径用 slot/role 反算井种再 place_slot，不在壳里硬编 sit。公式台按井种运算/放置/编辑，J 盖官方井尺寸范例图。不进 CML，不声称验收。",
+  "author": {
+    "mecha_cutout": "源图脚底=foot_uv（默认 0.50,0.90），裁高 crop_h；整机 contain-sit。倒伏机骸走 wreck_hull contain_floor，黑棚底先 punch 成 alpha。金条芯片另写 chip_uv 头胸（默认 0.50,0.30）+ chip_h。拒收 doll/dark-battle。",
+    "portrait_stand": "路径必须走 /portraits/，resolve=stand。脸点=face_uv（默认 0.50,0.16），bust_h 盖头肩。不要把机甲 token 当人。"
+  },
+  "roles": {
+    "aar_card": "settlement.aar_card",
+    "sortie_bay": "world.sortie_bay",
+    "designated_chip": "world.designated_chip",
+    "iso_token": "tactical.iso_token",
+    "map_token": "narrative.map_token",
+    "hall_figure": "hub.hall_figure",
+    "walker": "exploration.walker",
+    "hotspot_figure": "exploration.hotspot_figure",
+    "hotspot_cluster": "exploration.hotspot_cluster",
+    "execute_stand": "tactical.execute_stand",
+    "execute_wreck": "tactical.execute_wreck",
+    "adv_stand": "narrative.adv_stand",
+    "dialogue_bust": "tactical.dialogue_bust",
+    "roster": "tactical.roster"
+  },
+  "examples": [
+    ["乙", "aar"],
+    ["乙", "sortie"],
+    ["乙", "chip"],
+    ["乙", "iso_token"],
+    ["乙", "execute_stand"],
+    ["乙", "roster_chip"],
+    ["擂主（甲）", "iso_token"],
+    ["擂主（甲）", "roster_chip"],
+    ["值班员甲立绘", "hall_figure"],
+    ["值班员甲立绘", "dialogue_bust"],
+    ["值班员甲立绘", "adv_stand"],
+    ["乙", "room_avatar"],
+    ["值班员甲立绘", "hotspot_figure"],
+    ["接班员乙立绘", "dialogue_bust"],
+    ["机骸", "wreck_hull"]
+  ],
+  "needs": {
+    "aar": {
+      "sit": "contain",
+      "resolve": "cutout",
+      "uv": "foot_uv",
+      "span": "crop_h",
+      "accept": "mecha",
+      "slots": ["settlement.aar_card"]
+    },
+    "sortie": {
+      "sit": "contain",
+      "resolve": "cutout",
+      "uv": "foot_uv",
+      "span": "crop_h",
+      "accept": "mecha",
+      "slots": ["world.sortie_bay"]
+    },
+    "chip": {
+      "sit": "contain",
+      "resolve": "cutout",
+      "uv": "foot_uv",
+      "span": "crop_h",
+      "accept": "mecha",
+      "slots": ["world.designated_chip"]
+    },
+    "iso_token": {
+      "sit": "contain",
+      "resolve": "cutout",
+      "uv": "foot_uv",
+      "span": "crop_h",
+      "accept": "mecha",
+      "slots": ["tactical.iso_token", "narrative.map_token"]
+    },
+    "hall_figure": {
+      "sit": "contain",
+      "resolve": "cutout",
+      "uv": "foot_uv",
+      "span": "crop_h",
+      "accept": "any",
+      "slots": ["hub.hall_figure"]
+    },
+    "room_avatar": {
+      "sit": "contain",
+      "resolve": "cutout",
+      "uv": "foot_uv",
+      "span": "crop_h",
+      "accept": "any",
+      "slots": ["exploration.walker"]
+    },
+    "hotspot_figure": {
+      "sit": "contain",
+      "resolve": "cutout",
+      "uv": "foot_uv",
+      "span": "crop_h",
+      "accept": "any",
+      "slots": ["exploration.hotspot_figure"]
+    },
+    "hotspot_cluster": {
+      "sit": "contain",
+      "resolve": "cutout",
+      "uv": "foot_uv",
+      "span": "crop_h",
+      "accept": "any",
+      "slots": ["exploration.hotspot_cluster"]
+    },
+    "execute_stand": {
+      "sit": "contain_floor",
+      "resolve": "cutout",
+      "uv": "foot_uv",
+      "span": "crop_h",
+      "accept": "mecha",
+      "slots": ["tactical.execute_stand"]
+    },
+    "adv_stand": {
+      "sit": "contain_floor",
+      "resolve": "stand",
+      "uv": "foot_uv",
+      "span": "crop_h",
+      "accept": "portrait",
+      "slots": ["narrative.adv_stand"]
+    },
+    "dialogue_bust": {
+      "sit": "bust",
+      "resolve": "stand",
+      "uv": "face_uv",
+      "span": "bust_h",
+      "accept": "portrait",
+      "slots": ["tactical.dialogue_bust"]
+    },
+    "roster_chip": {
+      "sit": "chip",
+      "resolve": "cutout",
+      "uv": "chip_uv",
+      "span": "chip_h",
+      "accept": "mecha",
+      "slots": ["tactical.roster"]
+    },
+    "wreck_hull": {
+      "sit": "contain_floor",
+      "resolve": "cutout",
+      "uv": "foot_uv",
+      "span": "crop_h",
+      "accept": "mecha",
+      "slots": ["tactical.execute_wreck"]
+    }
+  }
+}

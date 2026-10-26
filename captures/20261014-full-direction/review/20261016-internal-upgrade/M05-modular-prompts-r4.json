@@ -1,0 +1,166 @@
+{
+  "date": "2026-10-19",
+  "generation_mode": "built-in image_gen",
+  "direction": "M05-modular-direction-r4.json",
+  "prompts": [
+    {
+      "file": "M05-head-crown-prompt-r3.json",
+      "sha256": "5f44dace0d509afe0e1c2d998983492024f1458a19ec67a7ff5de40805621abc"
+    },
+    {
+      "file": "M05-head-three-long-prompt-r3b.json",
+      "sha256": "5109c857ff9b2c5ac5931955200d6e04d195b5ddcbdc11cf2a06eff18e3ad693"
+    },
+    {
+      "file": "M05-head-L-harpoon-prompt-r4.json",
+      "sha256": "e0b6f5875f3187704c62aa725c91481dfbe204c1457387d8b0073ecbdb403043"
+    },
+    {
+      "file": "M05-head-L-front-axis-prompt-r4b.json",
+      "sha256": "710fde744a428a4f05ff1079096d23df86e26cf374e61e3fda673ebf5f69268e"
+    },
+    {
+      "file": "M05-core-body-prompt-r4.json",
+      "sha256": "90ff77ac3a9c773e6982c6df824e01498dfce30aafaa49d9ce4ea5304a7ae4cc"
+    },
+    {
+      "file": "M05-modular-full-prompt-r4.json",
+      "sha256": "2f72728558e9d19f02b918cfd2ad9f1baa7f4c7da8454ddaf38860f683458442"
+    },
+    {
+      "file": "M05-accessory-kits-prompt-r4.json",
+      "sha256": "279d29381e43a71ad2bcf91b2a90fea7f8dca0fc8681e3a219b2957270a5fbdb"
+    },
+    {
+      "file": "M05-accessory-source-correction-prompt-r4b.json",
+      "sha256": "030915d3e4a18cb56c3344addb471b938b8633ec68e43868ff357dad82a1faae"
+    }
+  ],
+  "selected_outputs": [
+    {
+      "id": "HEAD",
+      "file": "samples/M05-head-L-harpoon-r4b.png",
+      "sha256": "61580e218a504b4679ea15e5bf5f8544e3d9255f72865323d23799b32f7c1993",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bbox_above_8": [
+        98,
+        6,
+        1620,
+        928
+      ],
+      "clear_margin_pixels_above_8": {
+        "left": 98,
+        "top": 6,
+        "right": 52,
+        "bottom": 13
+      },
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-cc73a129-99a8-4ead-80fc-7411576ee3c0.png",
+      "prompt": "M05-head-L-front-axis-prompt-r4b.json",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "CORE",
+      "file": "samples/M05-core-body-r4.png",
+      "sha256": "b00b3ecd70638a328a945c841ed06a07fe5ead23efe05b882f779f72425321f4",
+      "pixel_size": [
+        1181,
+        1331
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bbox_above_8": [
+        160,
+        11,
+        1138,
+        1297
+      ],
+      "clear_margin_pixels_above_8": {
+        "left": 160,
+        "top": 11,
+        "right": 43,
+        "bottom": 34
+      },
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-2dddfca7-e157-4007-b875-47c8e0331907.png",
+      "prompt": "M05-core-body-prompt-r4.json",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "FULL",
+      "file": "samples/M05-modular-full-r4.png",
+      "sha256": "5ff45579fee7bbf87fa562b7a02f451846057b3b9f8c1e5c26d4421fc7396b50",
+      "pixel_size": [
+        1448,
+        1086
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bbox_above_8": [
+        51,
+        9,
+        1374,
+        1063
+      ],
+      "clear_margin_pixels_above_8": {
+        "left": 51,
+        "top": 9,
+        "right": 74,
+        "bottom": 23
+      },
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-e19db208-eef1-4859-a347-5bcd0bb937b8.png",
+      "prompt": "M05-modular-full-prompt-r4.json",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "KITS",
+      "file": "samples/M05-accessory-kits-r4b.png",
+      "sha256": "2a0f10226dbcc59a80dfa3248065b16c4364756bd26e77363ffbfe6edc240fdb",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "bbox_above_8": [
+        18,
+        13,
+        1519,
+        1010
+      ],
+      "clear_margin_pixels_above_8": {
+        "left": 18,
+        "top": 13,
+        "right": 17,
+        "bottom": 14
+      },
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-8daff3ef-0da2-407a-acb8-cff20f451b3d.png",
+      "prompt": "M05-accessory-source-correction-prompt-r4b.json",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    }
+  ],
+  "scope": "实际使用的提示词；其中直冠两稿已被后续L角要求覆盖。"
+}

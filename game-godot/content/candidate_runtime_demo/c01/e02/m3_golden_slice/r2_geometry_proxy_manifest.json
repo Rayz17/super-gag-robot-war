@@ -1,0 +1,264 @@
+{
+  "schema_version": 3,
+  "manifest_id": "C01E02_G2A1_R2_GEOMETRY_PROXY_V1",
+  "build_id": "C01E02-GS-G2A-R2-CALIBRATION",
+  "asset_mode": "calibration_proxy_only",
+  "sha256_semantics": "calibration binding receipt only; not an exact-handoff producer asset hash; actual read-only A4 source hashes are recorded in main-g2-a1-r2/05-a4-layer-registration.json",
+  "approved_handoffs": [],
+  "runtime_art_loaded": 0,
+  "integrated_visual_playtest_ready": false,
+  "formal_profile_override": false,
+  "slots": [
+    {
+      "slot_id": "VS_MAP_BASE",
+      "usage": "a4_registered_base",
+      "media_type": "texture",
+      "identity_critical": false,
+      "runtime_allowed": false,
+      "fixture_binding": {
+        "target": "map_layer", "layer": "base", "stable_id": "R2_A4_BASE_PROXY", "revision": 1,
+        "sha256": "98b2248d9b0691e7c8bf6eb2005572c4e13330e25b11f3e70403169ca19d7a8c",
+        "view_space": "map_dimetric_40x20", "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "native_size": [2400, 1350], "display_scale": [1.0, 1.0],
+        "pivot_normalized": [0.0, 0.0], "pivot_px": [0, 0],
+        "canvas_size": [2400, 1350], "canvas_origin_raw_px": [-1680, -350],
+        "crop_policy": "camera_rect_intersection", "mask_semantics": "opaque_world_base", "z": -1200
+      }
+    },
+    {
+      "slot_id": "VS_MAP_BUILDINGS",
+      "usage": "a4_registered_buildings",
+      "media_type": "texture",
+      "identity_critical": false,
+      "runtime_allowed": false,
+      "fixture_binding": {
+        "target": "map_layer", "layer": "buildings", "stable_id": "R2_A4_BUILDINGS_PROXY", "revision": 1,
+        "sha256": "7bd431c28406affa111ac4f39be78dfc9f1e9fa2e7915ecf7cfd98eb81360921",
+        "view_space": "map_dimetric_40x20", "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "native_size": [2400, 1350], "display_scale": [1.0, 1.0],
+        "pivot_normalized": [0.0, 0.0], "pivot_px": [0, 0],
+        "canvas_size": [2400, 1350], "canvas_origin_raw_px": [-1680, -350],
+        "crop_policy": "camera_rect_intersection", "mask_semantics": "world_body", "z": -900
+      }
+    },
+    {
+      "slot_id": "VS_MAP_ROOFS",
+      "usage": "a4_registered_roofs",
+      "media_type": "texture",
+      "identity_critical": false,
+      "runtime_allowed": false,
+      "fixture_binding": {
+        "target": "map_layer", "layer": "roofs", "stable_id": "R2_A4_ROOFS_PROXY", "revision": 1,
+        "sha256": "339476411d9fb2250b6b439f8f4b95b971723e0fd08daf6d9714ab37f9bbadc6",
+        "view_space": "map_dimetric_40x20", "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "native_size": [2400, 1350], "display_scale": [1.0, 1.0],
+        "pivot_normalized": [0.0, 0.0], "pivot_px": [0, 0],
+        "canvas_size": [2400, 1350], "canvas_origin_raw_px": [-1680, -350],
+        "crop_policy": "camera_rect_intersection", "mask_semantics": "fade_50_outline_candidate", "z": 900
+      }
+    },
+    {
+      "slot_id": "VS_MAP_FOREGROUND",
+      "usage": "a4_registered_foreground",
+      "media_type": "texture",
+      "identity_critical": false,
+      "runtime_allowed": false,
+      "fixture_binding": {
+        "target": "map_layer", "layer": "foreground", "stable_id": "R2_A4_FOREGROUND_PROXY", "revision": 1,
+        "sha256": "927e303421f3e633461c23a0c6455cf773c728f8b2f3dec2d5d77fa3d3002ff8",
+        "view_space": "map_dimetric_40x20", "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "native_size": [2400, 1350], "display_scale": [1.0, 1.0],
+        "pivot_normalized": [0.0, 0.0], "pivot_px": [0, 0],
+        "canvas_size": [2400, 1350], "canvas_origin_raw_px": [-1680, -350],
+        "crop_policy": "camera_rect_intersection", "mask_semantics": "fade_50_outline_candidate", "z": 1100
+      }
+    },
+    {
+      "slot_id": "VS_MAP_OCCLUSION",
+      "usage": "a4_registered_occlusion_mask",
+      "media_type": "texture",
+      "identity_critical": false,
+      "runtime_allowed": false,
+      "fixture_binding": {
+        "target": "map_layer", "layer": "occlusion", "stable_id": "R2_A4_OCCLUSION_PROXY", "revision": 1,
+        "sha256": "c8271169c70e072c40880d5cdaf868e9eece31d3f6f1841141f5a5ee02741e58",
+        "view_space": "map_dimetric_40x20", "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "native_size": [2400, 1350], "display_scale": [1.0, 1.0],
+        "pivot_normalized": [0.0, 0.0], "pivot_px": [0, 0],
+        "canvas_size": [2400, 1350], "canvas_origin_raw_px": [-1680, -350],
+        "crop_policy": "camera_rect_intersection", "mask_semantics": "sample_only_rgba_control", "z": 1200
+      }
+    },
+    {
+      "slot_id": "VS_MAP_LIGHTING",
+      "usage": "a4_registered_state_layer_legacy_slot_name",
+      "media_type": "texture",
+      "identity_critical": false,
+      "runtime_allowed": false,
+      "fixture_binding": {
+        "target": "map_layer", "layer": "state_layers", "stable_id": "R2_A4_STATE_PROXY", "revision": 1,
+        "sha256": "ed79f928e423691102c356eb7bb1171f427a0e238f679c4f76bfda00e3d3f7a0",
+        "view_space": "map_dimetric_40x20", "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "native_size": [2400, 1350], "display_scale": [1.0, 1.0],
+        "pivot_normalized": [0.0, 0.0], "pivot_px": [0, 0],
+        "canvas_size": [2400, 1350], "canvas_origin_raw_px": [-1680, -350],
+        "crop_policy": "camera_rect_intersection", "mask_semantics": "state_overlay", "z": -200
+      }
+    },
+    {
+      "slot_id": "VS_GUARDIAN_QSD",
+      "usage": "guardian_geometry_proxy",
+      "media_type": "atlas",
+      "identity_critical": false,
+      "runtime_allowed": false,
+      "fixture_binding": {
+        "target": "world_unit", "subject_ids": ["V353U001"], "stable_id": "R2_GUARDIAN_GEOMETRY_PROXY", "revision": 1,
+        "sha256": "e8ff69a856a846cfce7e2324f089e0b1f5aec8547238edfd8f3fdb220a0421b0",
+        "view_space": "map_dimetric_40x20", "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "native_size": [256, 256], "atlas_size": [768, 1536], "display_scale": [1.0, 1.0], "footprint": [2, 2],
+        "pivot_normalized": [0.5, 0.875], "pivot_px": [128, 224], "z_bias": 1,
+        "fps_or_hold": {"fps": 8, "hold_last": true},
+        "sparse_clips": {
+          "idle/east/0": [0, 0, 256, 256], "idle/south/0": [256, 0, 256, 256],
+          "move/east/0": [0, 256, 256, 256], "move/east/1": [256, 256, 256, 256],
+          "move/north/0": [0, 512, 256, 256], "move/north/1": [256, 512, 256, 256],
+          "brace/south/0": [0, 768, 256, 256], "brace/east/0": [256, 768, 256, 256],
+          "contact/south/0": [0, 1024, 256, 256], "contact/south/1": [256, 1024, 256, 256], "contact/east/0": [512, 1024, 256, 256],
+          "recoil/south/0": [0, 1280, 256, 256], "recoil/east/0": [256, 1280, 256, 256]
+        },
+        "state_aliases": {
+          "active": {"target": "idle", "signature": "R2-GZ-ACTIVE-IDLE"},
+          "anticipation": {"target": "brace", "signature": "R2-GZ-ANTICIPATION-BRACE"},
+          "impact": {"target": "contact", "signature": "R2-GZ-IMPACT-CONTACT"},
+          "holding_first_contact": {"target": "brace", "signature": "R2-GZ-HOLD-BRACE"},
+          "contact_failed": {"target": "brace", "signature": "R2-GZ-FAIL-BRACE"},
+          "recoil_hold": {"target": "recoil", "signature": "R2-GZ-RECOIL-HOLD"}
+        },
+        "interaction_sockets": {
+          "body_socket_px": [128, 150], "shield_socket_px": [86, 170], "weapon_socket_px": [170, 160],
+          "impact_socket_px": [108, 214], "target_socket_px": [108, 214]
+        }
+      }
+    },
+    {
+      "slot_id": "VS_BREAKER_QSD",
+      "usage": "breaker_geometry_proxy",
+      "media_type": "atlas",
+      "identity_critical": false,
+      "runtime_allowed": false,
+      "fixture_binding": {
+        "target": "world_unit", "subject_ids": ["ENEMY_C01_BREAKER"], "stable_id": "R2_BREAKER_GEOMETRY_PROXY", "revision": 1,
+        "sha256": "2669e75fbbaae5d7f6a24b3a79435885151ea37371bfedb66f4876c132725147",
+        "view_space": "map_dimetric_40x20", "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "native_size": [384, 384], "atlas_size": [768, 1920], "display_scale": [1.0, 1.0], "footprint": [3, 3],
+        "pivot_normalized": [0.5, 0.8333333333], "pivot_px": [192, 320], "z_bias": 2,
+        "fps_or_hold": {"fps": 8, "hold_last": true},
+        "sparse_clips": {
+          "charge/north/0": [0, 0, 384, 384], "charge/north/1": [384, 0, 384, 384],
+          "contact/north/0": [0, 384, 384, 384], "contact/north/1": [384, 384, 384, 384],
+          "recoil/north/0": [0, 768, 384, 384], "recoil/north/1": [384, 768, 384, 384],
+          "side_hit/north/0": [0, 1152, 384, 384],
+          "red_charge/north/0": [0, 1536, 384, 384], "red_charge/north/1": [384, 1536, 384, 384]
+        },
+        "state_aliases": {
+          "charging_run": {"target": "charge", "signature": "R2-BR-CHARGING-CHARGE"},
+          "anticipation": {"target": "charge", "signature": "R2-BR-ANTICIPATION-CHARGE"},
+          "impact": {"target": "contact", "signature": "R2-BR-IMPACT-CONTACT"},
+          "charge_partially_redirected": {"target": "recoil", "signature": "R2-BR-PARTIAL-RECOIL"},
+          "late_contact_deeper": {"target": "recoil", "signature": "R2-BR-LATE-RECOIL"},
+          "side_armor_hit": {"target": "side_hit", "signature": "R2-BR-SIDE-HIT"}
+        },
+        "interaction_sockets": {
+          "body_socket_px": [192, 220], "shield_socket_px": [192, 250], "weapon_socket_px": [176, 206],
+          "impact_socket_px": [212, 210], "target_socket_px": [212, 210]
+        }
+      }
+    },
+    {
+      "slot_id": "VS_SWARM_QSD",
+      "usage": "swarm_geometry_proxy",
+      "media_type": "atlas",
+      "identity_critical": false,
+      "runtime_allowed": false,
+      "fixture_binding": {
+        "target": "world_unit_group", "subject_prefix": "ENEMY_C01_RIFT_SWARM_", "stable_id": "R2_SWARM_GEOMETRY_PROXY", "revision": 1,
+        "sha256": "4fffb2f504431ddd8ac3ac73907a58ac819628e19f88eb344241a8552748a5b7",
+        "view_space": "map_dimetric_40x20", "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "native_size": [96, 96], "atlas_size": [384, 384], "display_scale": [1.0, 1.0], "footprint": [1, 1],
+        "pivot_normalized": [0.5, 0.75], "pivot_px": [48, 72], "z_bias": 0,
+        "fps_or_hold": {"fps": 10, "hold_last": true},
+        "sparse_clips": {
+          "idle/west/0": [0, 0, 96, 96], "idle/north/0": [96, 0, 96, 96], "idle/south/0": [192, 0, 96, 96],
+          "move/west/0": [0, 96, 96, 96], "move/west/1": [96, 96, 96, 96],
+          "deflected/west/0": [0, 192, 96, 96], "deflected/west/1": [96, 192, 96, 96],
+          "scattered/west/0": [0, 288, 96, 96]
+        },
+        "state_aliases": {
+          "active": {"target": "idle", "signature": "R2-SW-ACTIVE-IDLE"},
+          "anticipation": {"target": "move", "signature": "R2-SW-ANTICIPATION-MOVE"},
+          "impact": {"target": "deflected", "signature": "R2-SW-IMPACT-DEFLECTED"},
+          "deflected_alive": {"target": "deflected", "signature": "R2-SW-ALIVE-DEFLECTED"},
+          "scattered_active": {"target": "idle", "signature": "R2-SW-SCATTERED-IDLE"}
+        },
+        "interaction_sockets": {
+          "body_socket_px": [48, 54], "shield_socket_px": [30, 58], "weapon_socket_px": [66, 52],
+          "impact_socket_px": [48, 60], "target_socket_px": [48, 60]
+        }
+      }
+    },
+    {
+      "slot_id": "VS_VEHICLE_EAST",
+      "usage": "vehicle_geometry_proxy",
+      "media_type": "atlas",
+      "identity_critical": false,
+      "runtime_allowed": false,
+      "fixture_binding": {
+        "target": "world_unit_group", "subject_prefix": "TARGET_C01_", "kind": "emergency_vehicle", "stable_id": "R2_VEHICLE_GEOMETRY_PROXY", "revision": 1,
+        "sha256": "bcef70ca94aa85d9e1b46ad834905353b3718724a0390f6777795cd521a8b7f2",
+        "view_space": "map_dimetric_40x20", "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "native_size": [128, 128], "atlas_size": [384, 384], "display_scale": [1.0, 1.0], "footprint": [1, 1],
+        "pivot_normalized": [0.5, 0.75], "pivot_px": [64, 96], "z_bias": 0,
+        "fps_or_hold": {"fps": 10, "hold_last": true},
+        "sparse_clips": {
+          "waiting/east/0": [0, 0, 128, 128],
+          "drive/east/0": [0, 128, 128, 128], "drive/east/1": [128, 128, 128, 128], "drive/east/2": [256, 128, 128, 128],
+          "passed/east/0": [0, 256, 128, 128]
+        },
+        "state_aliases": {
+          "moving": {"target": "drive", "signature": "R2-VEH-MOVING-DRIVE"},
+          "anticipation": {"target": "drive", "signature": "R2-VEH-ANTICIPATION-DRIVE"},
+          "passed_lane_still_active": {"target": "passed", "signature": "R2-VEH-PASSED-HOLD"}
+        },
+        "interaction_sockets": {
+          "body_socket_px": [64, 70], "shield_socket_px": [36, 76], "weapon_socket_px": [92, 72],
+          "impact_socket_px": [96, 78], "target_socket_px": [32, 78]
+        }
+      }
+    },
+    {
+      "slot_id": "VS_SHIELD_STATES",
+      "usage": "shield_geometry_proxy",
+      "media_type": "atlas",
+      "identity_critical": false,
+      "runtime_allowed": false,
+      "fixture_binding": {
+        "target": "world_object", "subject_ids": ["PROP_C01CDV1_RETIRED_SHIELD"], "stable_id": "R2_SHIELD_GEOMETRY_PROXY", "revision": 1,
+        "sha256": "edef0faf72778821381b6a28574e494e72176a8132b732621980daa687cc84a1",
+        "view_space": "map_dimetric_40x20", "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "native_size": [128, 128], "atlas_size": [384, 128], "display_scale": [1.0, 1.0], "footprint": [1, 1],
+        "pivot_normalized": [0.5, 0.875], "pivot_px": [64, 112], "z_bias": 1,
+        "fps_or_hold": {"hold_ms": 0, "hold_last": true},
+        "sparse_clips": {
+          "wall_hung_3_scorches/south/0": [0, 0, 128, 128],
+          "held_cold/south/0": [128, 0, 128, 128],
+          "held_red_blocked_4_scorches_heat_deformed/south/0": [256, 0, 128, 128]
+        },
+        "state_aliases": {},
+        "interaction_sockets": {
+          "body_socket_px": [64, 76], "shield_socket_px": [64, 76], "weapon_socket_px": [64, 48],
+          "impact_socket_px": [64, 54], "target_socket_px": [64, 54]
+        }
+      }
+    }
+  ]
+}

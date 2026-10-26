@@ -1,0 +1,28 @@
+{
+  "status": "STOPPED_ON_FIRST_READ_FAILURE",
+  "candidate_only": true,
+  "runtime_allowed": false,
+  "real_art_loaded": 0,
+  "input_hashes_verified": true,
+  "camera_v2_guides": {
+    "mechanical_readback_pass": true,
+    "guardian_z": {"canvas": [256, 256], "pivot": [128, 224], "facing": "east", "angle_degrees": 30.9637565},
+    "breaker": {"canvas": [384, 384], "pivot": [192, 320], "facing": "north", "angle_degrees": -30.9637565}
+  },
+  "imagegen": {
+    "guardian_z_calls": 1,
+    "breaker_calls": 1,
+    "rerolls": 0,
+    "raw_exact_copies_verified": true
+  },
+  "raw_output": {
+    "guardian_z": {"dimensions": [1254, 1254], "mode": "RGB", "genuine_alpha": false},
+    "breaker": {"dimensions": [1254, 1254], "mode": "RGB", "genuine_alpha": false}
+  },
+  "target_masters_present": false,
+  "same_screen_ratio_readback_present": false,
+  "mechanical_pass": false,
+  "visual_self_review_pass": false,
+  "overall_pass": false,
+  "verdict": "BREAKER_FIRST_READ_FAIL_STOP_NO_MASTER_PROMOTION"
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-21",
+  "generation_mode": "built-in image_gen",
+  "intent": "generate_structural_concept_from_actual_layout",
+  "input_roles": [
+    {
+      "file": "samples/M11-camera-truck-r3.png",
+      "role": "actual vehicle style and mirrorless camera target"
+    },
+    {
+      "file": "samples/M11-future-robot-r2.png",
+      "role": "body proportions and face; panel connections revised"
+    },
+    {
+      "file": "samples/M11-crown-options-r3.png",
+      "role": "top-row crown A for study only"
+    },
+    {
+      "file": "M11-kinematic-r3/02-cab-shift-and-arm-open.png",
+      "role": "same-part intermediate layout reference, not final art style"
+    },
+    {
+      "file": "M11-kinematic-r3/04-robot-crown-up.png",
+      "role": "same-part final layout reference, not final art style"
+    }
+  ],
+  "prompt": "Use case: infographic-diagram\nAsset type: M11 Cargo Leader TRANSFORMATION LAYOUT concept sheet, based on a rigid-part study.\nInput roles: Image 1 is the current futuristic truck's ACTUAL styling and flush two-lens camera reference. Image 2 is the prior robot's styling/proportions/face reference, but add crown A and revise panel connections as described. Image 3 is the antenna comparison: use TOP ROW OPTION A only, one central short upright swept-back fin; bottom-row twin fins are NOT selected for this study. Images 4 and 5 are simplified 3D KINEMATIC LAYOUT references only, showing an intermediate posture and the final same-part arrangement; do NOT copy their crude rectangular toy forms or gray materials.\nCreate a detailed crisp Japanese mechanical animation design sheet on warm white background, FOUR LARGE PANELS in a 2x2 landscape board, numbered simply 1, 2, 3, 4 in top-left of each. Read left-to-right then down. Same actual machine, same finite parts, same size scale in every panel. Main priority is readable mechanical CORRESPONDENCE and visible hinges/rails, not decorative action. No extra stages, no long text or fake certification.\nIMPORTANT: The single cargo container has ALREADY BEEN UNLOADED BEFORE panel 1; show it intact on the ground as one small contextual box off to the right, same dimensions and position in the scene throughout. Do NOT show the container shrinking, folding into limbs or duplicated on chest/back. The four panels illustrate BODY transformation only, not the unloading action.\nPANEL 1: the sleek electric truck CAB + uncovered rigid FOUR-AXLE flatbed, exactly FOUR road wheel positions on each side / EIGHT total. Cab has one panoramic curved windshield, smooth ivory/navy nose and no radiator grille, flush camera lens windows with NO conventional mirrors. Three distinct hinged flatbed floor sections visible after cargo removed. Roof rear equipment bay closed, head hidden.\nPANEL 2: mechanical opening: rear bumper splits into two foot bases contacting ground, cab slides BACK along a visible short central rail toward the rear-frame hip joint. Cab side/top shells open outward on visible hinges toward shoulder positions. Z-folded arm structures unfold from the cab sides; two front axles separate into LEFT/RIGHT electric wheel carrier halves. Show a couple of orange curved / linear arrows at these actual hinges and slider directions, not random arrows.\nPANEL 3: standing-up transition matching the kinematic reference: two REAR longitudinal chassis beams swing downward into long left/right legs; the rear tandem FOUR wheels stay attached to those lower-leg frames and become TWO wheels vertically stacked on the OUTER rear of EACH calf. The first axle's two wheel carriers flip up behind shoulders; second axle's two wheels rotate on carriers to outside rear of forearms. All EIGHT road tires remain identifiable; no tracks or extra wheels. Cab has slid back to align torso over hip, avoiding a whole cab cantilevered far in front. Three flatbed FLOOR plates accordion-fold on their existing hinges into a shallow stacked back rack, not a new cargo box.\nPANEL 4: final tall mature heroic robot, full body not squat. One unchanged curved cab windshield is upper chest, smooth cab nose shield below it; cab roof/side shells form rounded swept shoulder caps, cab door-side shells become forearm covers. Complete thighs, knees, long shins, broad feet derived from rear bumper/underrun frame. Forehead-camera head lifts from the CAB REAR EQUIPMENT BAY, with ONE CENTRAL short upright swept-back shark-fin antenna (option A) now deployed. Same navy/ivory/orange head, separate cyan eyes, segmented silver mask; no side rods, no tall paired ear spires. Antenna root hinge visible and thin orange seam on fin. In reverse it folds BACK DOWN before the head lowers into bay.\nKeep same relative part dimensions across panels, no magic size change of tires, windscreen, nose shell, head or cargo. No duplicating whole cab panels on both chest and shoulders: shoulder caps are roof/side shells, not extra windshield copies. Show shallow flatbed rails on rear and actual pivot/slider joins. Robot has no weapons, wings, thrusters or second cargo container.\nUse crisp dark lines, restrained cel shading, ivory armor / navy frame / small orange safety latches, blue windshield, black rubber and orange hubs. Sparse orange motion arrows, clean white gutters, no other typography, branding or watermark. This is a STRUCTURAL DESIGN PROPOSAL illustration, not a claim of manufacturing or collision validation.",
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-d0b950a4-e5bc-4ec1-92ad-1d1ea8699a78.png",
+  "selection": "not_selected",
+  "actual_observed_rejection": "第2格凭空新增前支撑腿且后车架仍完整；第4格头身比压短；不作为变形依据。"
+}

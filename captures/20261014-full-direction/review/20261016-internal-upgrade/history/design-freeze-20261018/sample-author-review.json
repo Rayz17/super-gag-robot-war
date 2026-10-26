@@ -1,0 +1,1277 @@
+{
+  "status": "H01/H02/H03 identity directions explicitly accepted by user; other identities, combinations and runtime remain separate candidates",
+  "mode": "built-in image_gen; no CLI fallback",
+  "assets": [
+    {
+      "file": "samples/H03-qihai-dialogue-v1.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "404762ecc0ff561f8bc1fe758c1b16f4cb2e7aab33d15b62a1d273d4cbf41b64",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "selected": true,
+      "identity_direction_accepted_by_user": true,
+      "acceptance_scope": "current identity direction only"
+    },
+    {
+      "file": "samples/M01-hero-master-v1.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "a1c45632226c1b7dd0b2884493833f82c4f28aad27cd3e337fb67b3f94e40e36",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "selected": false,
+      "status": "old M01 visual identity rejected; retain historical composition/process only"
+    },
+    {
+      "file": "samples/E01-cable-biter-master-v1.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "sha256": "c2be26f1f39558690a785adb4566412c795c1a009fb7fcc317476c181aebe754",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "selected": true
+    },
+    {
+      "file": "samples/B01-refuge-habitat-master-v1.png",
+      "size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "sha256": "c780fd298a28103a32509f0071ca657d8a95c301670e209db4183ed533b2a3c4",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "selected": true
+    },
+    {
+      "file": "samples/M01-rising-punch-event-v1.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "9943a2afa66e65db12d16e3dc99b46858546a43928a66af387ff31157b900142",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "selected": false,
+      "status": "old M01 visual identity rejected; retain historical composition/process only"
+    },
+    {
+      "file": "samples/tactics-lookdev-v2.png",
+      "size": [
+        1586,
+        992
+      ],
+      "mode": "RGB",
+      "sha256": "fe4c9c253749c952b588df07363c224f061af43fad75da59ad836dd4a9cd2a73",
+      "alpha_extrema": null,
+      "selected": false,
+      "status": "old M01 visual identity rejected; retain historical composition/process only"
+    },
+    {
+      "file": "samples/M01-independent-master-v3.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "ac047172aa63c60ecd4bacd79ab4396476feb3d5e6c40c9670cc62464d8f6a1a",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "selected": true,
+      "status": "independent identity candidate; user confirmation pending"
+    }
+  ],
+  "viewed_comparisons": [
+    "all four changed-image contact sheets; critical current images at full size",
+    "four selected source parents and generated outputs",
+    "alpha-check.jpg on light background",
+    "small-scale-check.jpg at 80/100/140px scale",
+    "tactics-lookdev-v1/v2 with current B16-R2 stored normal view",
+    "M01-independent-check-v3.jpg; old versus new source, actual alpha composite and 100/160px scale"
+  ],
+  "findings": {
+    "H03": "Current new identity explicitly accepted by user with H01 and H02; expression/portrait derivatives and runtime not automatically accepted.",
+    "M01": "v3 remains a candidate. Repairing old overall Gundam likeness must not become a global ban on V-shaped/branched/ear antennas or a bland-helmet template. Next sample needs strong original crown/chest/fist identifiers.",
+    "E01": "Mandible/segmented shell identity kept; indigo-plum palette is a candidate and remains readable against light deck. Do not mass recolor all enemies.",
+    "B01": "Closed roof and six-story residential mass; source details finer than actors, simplify rails/equipment when building low-poly.",
+    "TACTICS": "Existing scene diagrams retain rejected old M01. Environment/value/scale study only; actor identity requires update after new direction decision.",
+    "M01_previous": "Preserving old head/chest was rejected by user. Old body no longer an upgrade master.",
+    "M03": "User accepts retaining project prior iterated Guardian identity with current style; latest muscular external design remains an optional direction. Current damage state must still be derived correctly.",
+    "M04": "User finds combined direction promising, but impact falls short of v17 and actual fists insufficiently powerful. R1 is not design accepted."
+  },
+  "alpha_note": "Tool preview shows RGB under alpha=0. Light-background composition confirms those glows do not display. Initial identity-faithful v1 chosen; unneeded cleanup variants kept as process, not runtime assets.",
+  "checks_not_performed": [
+    "browser render/interaction because explicit file-navigation security denial was not bypassed",
+    "new Godot input, continuous model motion or audio playback",
+    "runtime replacement and end-to-end acceptance"
+  ],
+  "scope_unchanged": "52 packages and 331 source requirements remain open; this is source adoption and preview only",
+  "project_files_changed": [
+    "captures/20261014-full-direction/review-v2.html",
+    "this review directory",
+    "append-only note in existing B16 experience report"
+  ],
+  "user_feedback_revision": "2026-10-16: old M01 rejected as too Gundam-like; previous preserve-head/chest recommendation withdrawn",
+  "identity_directions_accepted_by_user": [
+    "H01",
+    "H02",
+    "H03"
+  ],
+  "current_user_direction_ref": "user-art-decisions-20261016.json",
+  "latest_user_feedback": {
+    "date": "2026-10-17",
+    "authority": "direct_user_message_in_this_chat",
+    "verbatim": "社勇王的躯干不够壮实，也丢失了V17那个轰炸机的特征框架（以及应该有的翅膀部件），头部相对勇拳没有变化和提升（可以采用V17的感觉），但是感觉挺对的，方向完全对，美术风格也对。人物的配色按新风格微调即可，形象过关",
+    "brave_scope": {
+      "overall_direction": true,
+      "drawing_style": true,
+      "finished_structure": false,
+      "remaining": [
+        "躯干更壮实",
+        "恢复V17完整上覆轰炸机框架与翼件",
+        "头部应体现相对勇拳的合体升级，可采用V17感觉"
+      ]
+    },
+    "characters_scope": {
+      "ids": [
+        "H04",
+        "H07",
+        "H09"
+      ],
+      "identity_and_drawing_direction": true,
+      "color_refinement": "只按新风格微调配色；不重画身份",
+      "all_derivatives_runtime_accepted": false
+    }
+  },
+  "latest_source_correction": {
+    "status": "plan_and_reference_roles_updated",
+    "new_integrated_art_generated": false,
+    "runtime_changed": false,
+    "v20_verified": false,
+    "retention_note": "grok-delivery/iterations/20261013-direction-locked/NOTES.md",
+    "next_art_sample": [
+      "front / three-quarter full body",
+      "raised arm side view and shell opening",
+      "core / combined comparison on same ground baseline"
+    ]
+  },
+  "dialogue_exports_r1": {
+    "record": "dialogue-production-r1.json",
+    "produced": [
+      "H01-jicun-dialogue-r1.png",
+      "H02-baiyuan-dialogue-r1.png"
+    ],
+    "reused": "H03-qihai-dialogue-v1.png",
+    "review": "author inspected actual generated images and source parents; pixel anchors and real alpha checked; receiver runtime and independent quality remain unverified",
+    "runtime_changed": false,
+    "user_export_accepted": false
+  },
+  "brave_arm_structure_attempts": [
+    {
+      "id": "r1",
+      "file": "samples/M04-train-arm-structure-r1.png",
+      "observed": true,
+      "result": "needs_revision",
+      "findings": "Rear cab and outward fist continuity read correctly, but two shells/muzzles read as vertical upper/lower pods; lateral opening is not unambiguous. Do not promote to combined body yet.",
+      "next_method": "Use top plan and head-on front views of one split housing rather than three side views; retain same train nose / fist identity."
+    },
+    {
+      "id": "r2",
+      "file": "samples/M04-train-arm-structure-r2.png",
+      "observed": true,
+      "result": "improved_direction_candidate",
+      "findings": "Head-on view now shows actual giant fist inside left/right half-shells. Rear cab, inner arm and the opened shells can be separated; middle view is a plan-like schematic rather than exact orthographic. One consistent split sleeve replaces two complete tube pods.",
+      "boundary": "Author structure review only; user design decision and actual joints/model state remain unapproved. Enough to test whole-body silhouette, not to stamp production acceptance."
+    }
+  ],
+  "brave_combined_r1": {
+    "record": "brave-production-r1.json",
+    "user_accepted": false,
+    "runtime_integrated": false
+  },
+  "supporting_character_r1": {
+    "record": "supporting-character-production-r1.json",
+    "ids": [
+      "H04",
+      "H07",
+      "H09"
+    ],
+    "parent_shape_selected_by_user": true,
+    "exact_new_exports_user_accepted": false,
+    "runtime_by_producer": false,
+    "observed": "User rejected new-style fulfillment; retaining identities succeeded but cleaning old drawings did not establish the new rendering style. Earlier author assessment withdrawn."
+  },
+  "user_feedback_20261017": {
+    "date": "2026-10-17",
+    "authority": "direct_user_feedback",
+    "verbatim": "冲击感比不上V17，但是方向挺不错，双拳不够强力。人物转绘看上去没有用新的风格",
+    "scope": {
+      "M04": "组合方向获正面意见；V17冲击力与双拳力度未达到，整机未通过",
+      "H04_H07_H09": "R1人物转绘未达到新画风；撤回作者先前新风格已到位的判断；保留原形象选择及三主角既有认可"
+    },
+    "next_method": {
+      "M04": "增强真实拳掌/指节/前臂结构体量和上覆轰炸机横向压迫感，保持V19头身比例；不以光圈替代实体",
+      "characters": "直接用外援实际新画风作为首要参考，原稿只提供身份设计清单；兜灯先校准，再推广"
+    }
+  },
+  "brave_combined_r2": {
+    "record": "brave-production-r2.json",
+    "user_accepted": false,
+    "runtime_integrated": false,
+    "finding": "Actual enlarged palms/knuckles and thick wrists replace weak fists; bomber-wing/train detail ambiguity still open.",
+    "overall_direction_and_style_user_accepted": true,
+    "remaining_structure": [
+      "躯干更壮实",
+      "恢复V17完整上覆轰炸机框架与翼件",
+      "头部应体现相对勇拳的合体升级，可采用V17感觉"
+    ]
+  },
+  "supporting_character_r2": {
+    "record": "supporting-character-production-r2.json",
+    "ids": [
+      "H04",
+      "H07",
+      "H09"
+    ],
+    "method_actually_changed": true,
+    "author_observed": "External flat animation styles first, original shapes second; Doudeng R2 calibrated before the other two. New faces/hair/cloth shadow planes visibly simpler; exact user style acceptance remains open.",
+    "user_accepted": false,
+    "runtime_by_producer": false,
+    "identity_and_style_user_accepted": true,
+    "color_refinement_pending": true
+  },
+  "brave_upper_architecture_attempts": [
+    {
+      "id": "r3a",
+      "file": "samples/M04-upper-architecture-r3a.png",
+      "observed": true,
+      "result": "partial_intermediate_not_selected_for_whole_body",
+      "findings": "躯干/颈侧与头冠增加，翼面仍细长，翼上仍像舷窗，右翼尖被画幅裁断；不能将其称为完整轰炸机框架已恢复。",
+      "method_change_applied_next": "以轰炸机单体为唯一结构编辑对象，先转绘独立上覆翼身组件，排除R2窄肩形体的参考牵引，再装回整机。"
+    }
+  ],
+  "brave_combined_r3": {
+    "record": "brave-production-r3.json",
+    "observed": true,
+    "method_change_actually_executed": true,
+    "user_accepted": false,
+    "runtime_integrated": false
+  },
+  "supporting_character_r3": {
+    "record": "supporting-character-production-r3.json",
+    "accepted_parent_ids": [
+      "H04",
+      "H07",
+      "H09"
+    ],
+    "scope": "palette refinement only",
+    "actual_identity_comparison": true,
+    "runtime_by_producer": false
+  },
+  "latest_brave_feedback": {
+    "date": "2026-10-17",
+    "authority": "direct_user_message_with_R3_attachment",
+    "source_image": "samples/M04-brave-combined-master-r3.png",
+    "verbatim": "还行，钻头角度有点问题，头部保留头发，但用V17的更好；轰炸机意思对了，机翼部分考虑肩膀的可动结构（可以将机身和机翼中间拆开，就能让肩关节能旋转），轰炸机本体可以调一下配色，机头可以更像V18，而且不用是尖头，让它更好看",
+    "scope": "认可R3轰炸机总体意思；不是全部结构/整机最终验收",
+    "next": [
+      "头部取V17感觉，保留长发",
+      "机身与左右机翼可独立分件，给肩关节旋转留净空",
+      "轰炸机配色微调，减少灰黑覆盖、保持橙/象牙白/石墨区分",
+      "胸部机头向V18靠拢，收短为饱满钝鼻，不做尖喙",
+      "两枚膝部钻头以各自膝盖的朝前轴线/足尖方向校正，不朝内互指或随意左右横出"
+    ]
+  },
+  "brave_combined_r4": {
+    "record": "brave-production-r4.json",
+    "observed": true,
+    "user_accepted": false,
+    "runtime_integrated": false,
+    "selected_full_body": "samples/M04-brave-combined-master-r4b.png",
+    "not_completed": "3D articulation and front/side axis checks"
+  },
+  "brave_followthrough_attempts": [
+    {
+      "file": "samples/F09-brave-core-master-r1.png",
+      "observed": true,
+      "result": "source_candidate",
+      "findings": "完整核心、轻装拳与长发成立，无提前出现的机翼/履带/膝钻；胸章仍须按原创图形处理，不将近似派系标志直接投产。"
+    },
+    {
+      "file": "samples/M04-shoulder-motion-study-r1.png",
+      "observed": true,
+      "result": "motion_intent_candidate",
+      "findings": "可见抬臂与近侧翼/发动机让位，胸部中心未整体扭转；双帧说明分件意图，不能作为可动检查或实际剪辑通过。"
+    },
+    {
+      "file": "samples/M04-side-rear-study-r1.png",
+      "observed": true,
+      "result": "not_usable_as_orthographic",
+      "findings": "左图仍是三分之四，非要求的纯侧视；后图脚部/腿前后解释仍含混。保留为观察用候选，不交成可直接建模三视图。",
+      "next_method": "改为单独一张严格纯侧视，去掉同页多视图竞争，整体正反问题不靠改标题掩盖。"
+    },
+    {
+      "file": "samples/M04-side-interpretation-r2.png",
+      "observed": true,
+      "result": "side_interpretation_only",
+      "finding": "改为单图后可见前后关系和钻头前向，身体接近侧面；发动机仍保留透视，胸机鼻深度较主稿夸张。不得称为精确正投影。",
+      "method_decision": "不再用多轮生图冒充机械三视图。当前阶段交R4母稿/侧向解释/分件关系；准确正侧背由后续批准的模型投影统一产生，M04新三维制作仍暂停。"
+    },
+    {
+      "file": "samples/F09-brave-core-master-r2.png",
+      "observed": true,
+      "result": "source_candidate_badge_removed",
+      "findings": "移除近似既有派系徽记，保留长发、完整核心、双拳和无外挂的完整四肢。"
+    }
+  ],
+  "baiyuan_hand_defect_20261017": {
+    "reported_by": "user in this chat",
+    "old_source_also_defective": true,
+    "invalid_files": [
+      "samples/H02-baiyuan-dialogue-r1.png",
+      "samples/H02-baiyuan-concentrating-r1-rejected-three-hands.png"
+    ],
+    "repaired_default": "samples/H02-baiyuan-dialogue-r2-anatomy.png",
+    "repaired_expression": "samples/H02-baiyuan-concentrating-r2.png",
+    "author_viewed": true,
+    "user_repair_acceptance": false,
+    "runtime_replaced": false
+  },
+  "people_expressions_r1": {
+    "record": "people-expression-production-r1.json",
+    "count": 6,
+    "actual_images_inspected": true,
+    "runtime_checked": false,
+    "new_handoff_sent": false
+  },
+  "design_followthrough_verification_20261017": {
+    "basis": [
+      "actual generated full portraits viewed",
+      "two-hand repair default/alternate visually inspected",
+      "existing full-body/shoulder/side studies inspected",
+      "current reader and manifest static/source checks"
+    ],
+    "record": "design-followthrough-r1.json",
+    "expression_record": "people-expression-production-r1.json",
+    "static_report": "r4-static-check.json",
+    "source_hashes_matched": true,
+    "reader_static_check_pass": true,
+    "browser_render_verified": false,
+    "native_input_verified": false,
+    "runtime_changed": false,
+    "new_design_handoff_sent": false,
+    "user_new_export_acceptance": false,
+    "model_hold_retained": true
+  },
+  "defect_ledger": [
+    {
+      "id": "ART-BRAVE-VIEWS-01",
+      "defect": "generated side/rear views not sufficiently consistent or orthographic",
+      "attempts": [
+        {
+          "file": "samples/M04-side-rear-study-r1.png",
+          "result": "not pure side view; rear legs ambiguous",
+          "observed": true
+        },
+        {
+          "file": "samples/M04-side-interpretation-r2.png",
+          "result": "still perspective and elongated chest nose",
+          "observed": true
+        },
+        {
+          "file": "samples/M04-component-side-study-r3.png",
+          "observed": true,
+          "outcome": "persists",
+          "result": "isolated components; shoulder cockpit/engine directions still reversed"
+        },
+        {
+          "file": "samples/M04-shoulder-profile-r4.png",
+          "observed": true,
+          "outcome": "improved",
+          "result": "authored axes/layers guide fixes shoulder front direction and part separation; component scope only"
+        },
+        {
+          "file": "samples/M04-side-reconstruction-r4.png",
+          "observed": true,
+          "outcome": "improved",
+          "result": "front/shoulder/leg-guide constrained side; forward engine, separate core shoulder, articulated ankle and boot observed; not exact-geometry or user approval"
+        },
+        {
+          "file": "samples/M04-side-selected-parts-r5-rejected.png",
+          "observed": true,
+          "outcome": "persists",
+          "result": "用户否定本轮整合；作者观察到肩翼拔高、前侧履带像另一套悬挂小履带。"
+        },
+        {
+          "file": "samples/M04-side-structure-baseline-r6a.png",
+          "observed": true,
+          "outcome": "scoped_revision",
+          "result": "仅抽出选定侧图并校正引擎轴线，保留肩甲位置。"
+        },
+        {
+          "file": "samples/M04-side-local-leg-fist-r6b.png",
+          "observed": true,
+          "outcome": "scoped_revision",
+          "result": "局部补前后带面与共同轮系、分段腿甲和拳腕实体。"
+        },
+        {
+          "file": "samples/M04-rear-selected-parts-r6a.png",
+          "observed": true,
+          "outcome": "persists",
+          "result": "采用绿框背包/后腿，作者检查发现翼下后端仍像进气风扇，不能直接沿用。"
+        },
+        {
+          "file": "samples/M04-rear-exhaust-corrected-r6b.png",
+          "observed": true,
+          "outcome": "scoped_revision",
+          "result": "仅将两个翼下发动机背向开口改为无风扇/轮毂的凹入排气端。"
+        },
+        {
+          "file": "samples/M04-side-fin-aligned-r6c.png",
+          "observed": true,
+          "outcome": "scoped_revision",
+          "result": "仅补侧向可见背鳍边，不抬升主肩翼。"
+        },
+        {
+          "file": "samples/M04-side-body-reviewed-r6d.png",
+          "observed": true,
+          "outcome": "scoped_revision",
+          "result": "仅收掉胸机鼻尖端，恢复短钝端面。"
+        }
+      ],
+      "method_change_executed": "返回用户选定侧图作结构底稿，先仅修发动机；再局部修腿/拳；背稿单独按背向审查，修翼下排气端；侧稿补被发遮住的背鳍边，并单独收短胸机鼻。未用R5失败整机继续叠部件。",
+      "remaining": "用户检查新腿细图；严格同模型视图、隐藏面与活动尚未验证。",
+      "closed": false,
+      "latest_user_evidence": {
+        "date": "2026-10-17",
+        "verbatim": "社勇王侧视图的肩甲不对，腿部的侧面也不对，结合正面视图看就有明显的问题。"
+      },
+      "current_record": "brave-components-production-r12.json",
+      "current_author_result": "本轮局部修订/对应图已实际形成，用户新图确认与同模型精度尚未代签。",
+      "method_changes": [
+        {
+          "status": "applied",
+          "old": "infer whole hidden machine from one perspective source",
+          "new": "part-first profile, then explicitly authored 2D axes and segment hierarchy, then constrained reconstruction",
+          "evidence": [
+            "M04-shoulder-profile-layout-r4.svg",
+            "M04-leg-profile-layout-r4.svg",
+            "samples/M04-shoulder-profile-r4.png",
+            "samples/M04-side-reconstruction-r4.png"
+          ],
+          "reason": "repeated inconsistent shoulder/leg cross-view structure",
+          "remaining": "exact geometry and user judgment remain separate"
+        },
+        {
+          "status": "applied",
+          "old": "把整机轮廓/多张参考混合，靠长提示重建全体",
+          "new": "选定侧稿作固定结构底稿，每步限定局部；背向端单独检查和修正",
+          "evidence": [
+            "brave-body-orientation-audit-r6.json",
+            "brave-body-production-r6.json"
+          ],
+          "reason": "R5被用户否定，要求先审视每个部件的朝向/形状再画"
+        },
+        {
+          "status": "applied",
+          "old": "从整机混合多图直接生成隐藏全体",
+          "new": "固定四个单体母稿，各自派生视图；发现单一视图错误只编辑对应面板",
+          "evidence": [
+            "brave-bomber-views-prompt-r8.json",
+            "brave-bomber-profile-panel-prompt-r8b.json",
+            "samples/M04-bomber-views-r8a.png",
+            "samples/M04-bomber-views-r8b.png"
+          ]
+        },
+        {
+          "status": "applied",
+          "old": "重新生成完整安装腿导致履带、胫甲和足形反复变化；把原头画成自带冠甲展开。",
+          "new": "直接用已确认整体图局部作为终态；仅画外架。面罩从轰炸机内舱取出并安装到原头，图和部件清单同时改。",
+          "evidence": [
+            "brave-components-r8.html#drill-source-terminal-r9",
+            "samples/F11-leg-kit-source-locked-r9.png",
+            "samples/F09-bomber-mask-loading-r9b.png",
+            "samples/M04-bomber-mask-assembly-r9.png"
+          ]
+        },
+        {
+          "status": "applied",
+          "old": "仍让R9外架图自行铺满竖向画幅，再以整机局部作旁证，未限制膝到踝长度；作者将旁证误当作分件已经对齐。",
+          "new": "弃用R9作为生图输入。只用用户新指定的整机/钻机，加手绘式二维比例约束图；先固定膝轴、踝和脚底三条线，再重绘前侧/外侧完整腿足细节。",
+          "evidence": [
+            "F11-leg-proportion-guide-r10.svg",
+            "F11-leg-proportion-guide-r10.png",
+            "brave-leg-redraw-prompt-r10.json",
+            "samples/F11-leg-proportion-redraw-r10.png"
+          ],
+          "proportion_guide_scope": "作者本轮施工约束，非用户新增的精确尺寸标准；图二图三仍是造型依据",
+          "rejected_source": "samples/F11-leg-kit-source-locked-r9.png"
+        }
+      ],
+      "latest_selected_baseline": "本轮11张整体选用；具体问题以BR11-01至08为准，旧失败和未选变体保留历史。"
+    },
+    {
+      "id": "ART-H02-ANATOMY-01",
+      "reported_by": "user",
+      "defect": "three hands in old mother and facial derivative",
+      "repair": "two-handed mother repaired first, expression rederived from repaired mother",
+      "author_visual_result": "exactly two hands, linked sleeves and book support observed",
+      "files": [
+        "samples/H02-baiyuan-dialogue-r2-anatomy.png",
+        "samples/H02-baiyuan-concentrating-r2.png"
+      ],
+      "runtime_closed": false,
+      "user_accepted": false
+    },
+    {
+      "id": "ART-M04-FRONT-FINS-01",
+      "reported_by": "user",
+      "defect": "选定正面缺少侧背稿可见的两片背包竖翼",
+      "source": "samples/M04-brave-combined-master-r4b.png",
+      "repair": "samples/M04-front-backpack-fins-r7.png",
+      "author_visual_result": "两片竖翼已出现于肩后，橙边深灰翼面、前后遮挡可辨。",
+      "user_accepted": true,
+      "runtime_closed": false,
+      "record": "brave-front-backpack-fins-r7.json",
+      "acceptance_scope": "front fin addition only"
+    },
+    {
+      "id": "ART-R8-BOMBER-SIDE-01",
+      "issue": "右上侧视初稿是三分之四",
+      "attempts": [
+        {
+          "file": "samples/M04-bomber-views-r8a.png",
+          "outcome": "failed_profile"
+        },
+        {
+          "file": "samples/M04-bomber-views-r8b.png",
+          "outcome": "local_side_projection_improved"
+        }
+      ],
+      "author_source_fix_observed": true,
+      "user_accepted": false,
+      "runtime_closed": false
+    },
+    {
+      "id": "ART-R8-ASSEMBLY-01",
+      "issue": "轰炸机部件重复/安装翼姿偏离，列车装臂像闭合车厢",
+      "attempts": [
+        {
+          "file": "samples/M04-bomber-assembly-r8a.png",
+          "outcome": "duplicate_canopy_and_intakes_steep_wings"
+        },
+        {
+          "file": "samples/M04-bomber-assembly-r8b.png",
+          "outcome": "local_duplicate_removal_and_rest_pose_restored"
+        },
+        {
+          "file": "samples/F12-subtrain-assembly-r8a.png",
+          "outcome": "installed_panel_closed_carriage"
+        },
+        {
+          "file": "samples/F12-subtrain-assembly-r8b.png",
+          "outcome": "lateral_leaves_open_core_arm_visible"
+        }
+      ],
+      "method_change": "同一装配母稿只修明确错误区域，不用整个整机重新生成来掩盖。",
+      "author_source_fix_observed": true,
+      "user_accepted": false,
+      "runtime_closed": false
+    },
+    {
+      "id": "ART-R9-TRACK-MASK-01",
+      "reported_by": "user",
+      "issues": [
+        "R8装配腿履带/胫甲/足结构与已确认整机不一致",
+        "R8头部升级未体现轰炸机内置面罩加载，并擅自解释为核心冠甲抬升"
+      ],
+      "rejected_current_sources": [
+        "samples/F11-drill-assembly-r8.png",
+        "samples/F09-core-enhancement-r8.png"
+      ],
+      "method_change": {
+        "status": "applied",
+        "old": "把同机整体腿再次由生成器重画成安装终态",
+        "new": "安装终态直接以已确认整机图局部作为固定视觉依据；只生成外腿架/展开件；面罩来源明确绑定轰炸机",
+        "source": "samples/M04-front-backpack-fins-r7.png",
+        "generated_repair": [
+          "samples/F11-leg-kit-source-locked-r9.png",
+          "samples/F09-bomber-mask-loading-r9b.png",
+          "samples/M04-bomber-mask-assembly-r9.png"
+        ]
+      },
+      "closed": false,
+      "runtime_closed": false,
+      "user_accepted": false,
+      "author_fix_observed": false,
+      "current_record": "brave-components-production-r12.json",
+      "scope_note": "旧作者整体修好判断已被用户腿部反证撤回；面罩来源修订保留。R10仅记录实际腿部重绘观察，不关闭共同缺陷。",
+      "attempts": [
+        {
+          "file": "samples/F11-leg-kit-source-locked-r9.png",
+          "observed": true,
+          "outcome": "persists",
+          "reviewer": "user",
+          "result": "附件一与附件二钻机、附件三整机不一致且腿长完全错误。"
+        },
+        {
+          "file": "samples/F11-leg-proportion-redraw-r10.png",
+          "observed": true,
+          "outcome": "author_observed_improvement_pending_user",
+          "reviewer": "author",
+          "result": "膝踝间距缩短、冗长轮梯去除；实际两幅完整腿足已画，仍未签用户/模型认可。"
+        }
+      ],
+      "method_changes": [
+        {
+          "status": "applied",
+          "old": "仍让R9外架图自行铺满竖向画幅，再以整机局部作旁证，未限制膝到踝长度；作者将旁证误当作分件已经对齐。",
+          "new": "弃用R9作为生图输入。只用用户新指定的整机/钻机，加手绘式二维比例约束图；先固定膝轴、踝和脚底三条线，再重绘前侧/外侧完整腿足细节。",
+          "evidence": [
+            "F11-leg-proportion-guide-r10.svg",
+            "F11-leg-proportion-guide-r10.png",
+            "brave-leg-redraw-prompt-r10.json",
+            "samples/F11-leg-proportion-redraw-r10.png"
+          ],
+          "proportion_guide_scope": "作者本轮施工约束，非用户新增的精确尺寸标准；图二图三仍是造型依据",
+          "rejected_source": "samples/F11-leg-kit-source-locked-r9.png"
+        }
+      ],
+      "latest_selected_baseline": "本轮11张整体选用；具体问题以BR11-01至08为准，旧失败和未选变体保留历史。",
+      "current_author_result": "本轮局部修订/对应图已实际形成，用户新图确认与同模型精度尚未代签。"
+    },
+    {
+      "id": "ART-R12-TRAIN-SLEEVE-01",
+      "defect": "new rest-state train shell is a long sealed car with a fist attached; approved installed armor is compact and open on the inner forearm",
+      "closed": false,
+      "attempts": [
+        {
+          "file": "samples/F12-train-two-states-r12a-rejected.png",
+          "observed": true,
+          "outcome": "persists",
+          "reviewer": "author",
+          "result": "壳长与拳比例不符；待机整节封闭车厢感明显，开壳示意未表达与整机同一臂套。"
+        },
+        {
+          "file": "samples/F12-train-two-states-r12b-rejected.png",
+          "observed": true,
+          "outcome": "persists",
+          "reviewer": "author",
+          "result": "生成器把外壳前端又画成第二个带风挡车头，且待机仍闭合，不能采用。"
+        },
+        {
+          "file": "samples/F12-train-protective-cradle-r12c.png",
+          "observed": true,
+          "outcome": "author_observed_improvement_pending_user",
+          "reviewer": "author",
+          "result": "改为单面板局部收壳后，单个后向车头、原前臂长开口和露出的巨拳可见；对应剖面图补小翼折收，非模型同位验证。"
+        }
+      ],
+      "method_changes": [
+        {
+          "status": "applied_to_next_prompt",
+          "old": "先按独立列车展开图组织横向长车再把拳接上",
+          "new": "以整机弯臂和巨拳为首要形状/比例依据，再叠同一臂套的收拢/展开两态；不以失败长车为底图",
+          "reason": "该稿只有状态变化，未遵守已选整机的短厚臂甲与巨拳关系"
+        },
+        {
+          "status": "applied",
+          "old": "用整机与载具多张参考重建一张双态全图，导致新增车头/封闭车厢",
+          "new": "仅从用户选定展开图的右下安装面板抽出同一只前臂，局部收拢现有两半壳；不重新生成列车身份或完整双态图",
+          "reason": "两次可见结果未解决同一主缺陷；改为单面板局部编辑",
+          "evidence": [
+            "brave-train-local-closing-prompt-r12c.json"
+          ]
+        }
+      ],
+      "current_record": "brave-components-production-r12.json"
+    }
+  ],
+  "brave_profile_correction_20261017": [
+    {
+      "file": "samples/M04-component-side-study-r3.png",
+      "observed": true,
+      "method": "front-only isolated components instead of whole-robot side generation",
+      "result": "partial_not_accepted",
+      "findings": [
+        "发动机改为可见筒身而非外向圆盘，腿足分段更清楚。",
+        "肩部仍画成三分之四，中央机鼻在画面右侧而发动机朝左，前后方向自相矛盾；不得称作修好。"
+      ],
+      "next_actual_method": "先手工明确二维轴线和前后层级的侧向构成图，再按该构成重绘肩部；不再让整机图自行推断朝向。"
+    },
+    {
+      "file": "samples/M04-shoulder-profile-r4.png",
+      "observed": true,
+      "method": "authored 2D axes/layer guide + unchanged front appearance master",
+      "result": "orientation_and_separation_improved_candidate",
+      "findings": [
+        "机鼻和发动机入气口同朝画面左方。",
+        "外翼为薄侧向轮廓，发动机显示筒壁而非外向风扇圆盘。",
+        "翼架连接、发动机、下方白肩甲/上臂关节分别可读。"
+      ]
+    },
+    {
+      "file": "samples/M04-side-reconstruction-r4.png",
+      "observed": true,
+      "method": "authored 2D axes/segment guides; corrected isolated shoulder first; rebuilt whole side from front + shoulder + leg guide without rejected side source",
+      "result": "targeted_revision_candidate_not_final_orthographic",
+      "findings": [
+        "肩部采用前向筒形发动机、薄翼侧缘和独立白肩甲。",
+        "膝钻朝腿前方；小腿后侧履带止于踝上，黑色踝连接和独立足甲可读。",
+        "保留长发银冠、巨拳、后向列车臂壳及象牙白/橙/石墨分区。"
+      ],
+      "user_accepted": false
+    },
+    {
+      "file": "samples/M04-side-selected-parts-r5-rejected.png",
+      "observed": true,
+      "result": "user_rejected",
+      "user_verbatim": "越改越不对了，请审视每个身体部件，判断其朝向和形状再画",
+      "finding": "用户否定本轮整合；作者观察到肩翼拔高、前侧履带像另一套悬挂小履带。",
+      "next_audit": "brave-body-orientation-audit-r6.json"
+    }
+  ],
+  "latest_side_revision_checks": {
+    "record": "brave-side-correction-r4.json",
+    "source_files_matched": true,
+    "reader_static_check": "r4-static-check.json",
+    "author_media": "actual front, old side, component trial, authored guides, new shoulder and new side viewed in this turn",
+    "browser_render_verified": false,
+    "runtime_verified": false,
+    "user_accepted": false,
+    "new_handoff_sent": false
+  },
+  "brave_body_review_r6": {
+    "record": "brave-body-production-r6.json",
+    "actual_images_reviewed": true,
+    "part_audit_done_before_redraw": true,
+    "selected_side": "samples/M04-side-body-reviewed-r6d.png",
+    "selected_rear": "samples/M04-rear-exhaust-corrected-r6b.png",
+    "source_is_model_orthographic": false,
+    "user_accepted": false,
+    "new_handoff_sent": false,
+    "verification": {
+      "source_hashes": "checked actual files",
+      "reader_static_report": "r4-static-check.json",
+      "reader_static_pass": true,
+      "actual_source_media": "front, chosen side shoulder, engine reference, track markup, rear markup, all generated intermediate/final images viewed",
+      "browser_render_verified": false,
+      "native_or_model_verified": false,
+      "user_final_acceptance": false
+    }
+  },
+  "brave_front_fins_r7": {
+    "record": "brave-front-backpack-fins-r7.json",
+    "date": "2026-10-18",
+    "observed": true,
+    "new_file": "samples/M04-front-backpack-fins-r7.png",
+    "findings": [
+      "两片橙边深灰翼面的竖翼位于肩根后方；远侧部分被长发遮挡。",
+      "水平主翼、发动机朝向、冠甲与长发、厚重拳体、臂外列车壳、膝钻及腿足整体延续正面母稿。",
+      "全身姿态、构图、1254×1254尺寸及象牙色背景保持；未声称未编辑区域逐像素相同。"
+    ],
+    "scope": {
+      "user_selected_reference_set": true,
+      "new_front_user_accepted": true,
+      "model_hold": "paused_design_pending",
+      "model_generated": false,
+      "runtime_changed": false,
+      "handoff_sent": false,
+      "canon_changed": false
+    },
+    "user_front_confirmation": {
+      "date": "2026-10-18",
+      "authority": "direct_user_message_in_this_chat",
+      "verbatim": "ok。现在是否需要最后修正社勇王四个合体机组的设计和三视图",
+      "file": "samples/M04-front-backpack-fins-r7.png",
+      "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98",
+      "scope": "本次正面补翼稿可收为后续四机对齐的整机外观基准；四机单体、精确三视、三维及运行分别检查。",
+      "not_inferred": [
+        "four component designs accepted",
+        "exact orthographic views verified",
+        "runtime accepted"
+      ]
+    }
+  },
+  "brave_components_r8": {
+    "record": "brave-components-production-r8.json",
+    "kind": "author_source_inspection",
+    "viewed": [
+      {
+        "master": "samples/F09-brave-core-master-r2.png",
+        "views": "samples/F09-core-views-r8.png",
+        "assembly": "samples/F09-core-enhancement-r8.png"
+      },
+      {
+        "master": "samples/M04-bomber-master-r8.png",
+        "views": "samples/M04-bomber-views-r8b.png",
+        "assembly": "samples/M04-bomber-assembly-r8b.png"
+      },
+      {
+        "master": "samples/F12-subtrain-master-r8.png",
+        "views": "samples/F12-subtrain-views-r8.png",
+        "assembly": "samples/F12-subtrain-assembly-r8b.png"
+      },
+      {
+        "master": "samples/F11-drill-master-r8.png",
+        "views": "samples/F11-drill-views-r8.png",
+        "assembly": "samples/F11-drill-assembly-r8.png"
+      }
+    ],
+    "user_accepted": false,
+    "runtime_changed": false,
+    "user_correction": "用户否定腿部一致性与头部来源，R8的对应肯定撤回，见R9。"
+  },
+  "brave_components_r9": {
+    "record": "brave-components-production-r9.json",
+    "author_review": {
+      "kind": "source_image_inspection",
+      "reviewer": "author",
+      "findings": [
+        {
+          "asset": "F09",
+          "media": "samples/F09-bomber-mask-loading-r9b.png",
+          "observed": "内舱存放空面罩→原头前加载→罩上，非原头生长冠甲。"
+        },
+        {
+          "asset": "F12-bomber",
+          "media": "samples/M04-bomber-mask-assembly-r9.png",
+          "observed": "原头、内舱与面罩属于同一装配说明；翼架研究未另改形。"
+        },
+        {
+          "asset": "F11",
+          "media": [
+            "samples/F11-leg-kit-source-locked-r9.png",
+            "samples/M04-front-backpack-fins-r7.png"
+          ],
+          "observed": "新图只画外架和分开的甲靴；终态以原整体图实际像素区域呈现，未对整体图绘制变更。"
+        }
+      ],
+      "not_verified": [
+        "same-model geometry projection",
+        "real animation or collision",
+        "normal game camera/runtime",
+        "independent or human acceptance"
+      ]
+    },
+    "user_accepted": false,
+    "runtime_changed": false
+  },
+  "brave_components_r10": {
+    "record": "brave-components-production-r10.json",
+    "new_leg": {
+      "file": "samples/F11-leg-proportion-redraw-r10.png",
+      "sha256": "300ed2e17c6c78d6f39fd32843ab985efa1d0337bebb5f844b41135b88ccf75c",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-10f7ef2e-91e7-40da-ab1f-daf63984beb9.png",
+      "prompt": "brave-leg-redraw-prompt-r10.json",
+      "kind": "installed_leg_detail_two_oblique_views_not_exploded_assembly",
+      "author_observations": [
+        "实际查看1536×1024新图：两幅均包含大腿下段、膝钻、小腿、踝和完整脚掌；左前侧、右外侧观察，不声称严格正交投影。",
+        "相比R9，膝钻轴线到踝连接的距离明显缩短，去掉多级重复胫甲和长轮梯；宽厚脚掌仍保留，未纵向拉伸原图。",
+        "前带面、后侧回转带、分段白甲、橙支架、侧轮和脚跟分层可读；钻头与各自足尖同向。",
+        "钻机的象牙白多边形侧盖、橙支架和黑履带语言进入细图；这不是已经验证的完整机械变形路径。",
+        "两幅仍为绘制的方向观察，不能作为同一模型精确侧投影；隐藏面和全部拆装步骤尚未做同模型核对。"
+      ]
+    },
+    "source_refs": [
+      {
+        "file": "samples/F11-drill-master-r8.png",
+        "sha256": "a6158af8733402fab671a6e4e302d31ffb52d443fce467cd448f4b704327f354",
+        "pixel_size": [
+          1536,
+          1024
+        ],
+        "role": "user_attachment_2_component_shape_authority"
+      },
+      {
+        "file": "samples/M04-front-backpack-fins-r7.png",
+        "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98",
+        "pixel_size": [
+          1254,
+          1254
+        ],
+        "role": "user_attachment_3_installed_shape_and_proportion_authority"
+      }
+    ],
+    "author_observations": [
+      "实际查看1536×1024新图：两幅均包含大腿下段、膝钻、小腿、踝和完整脚掌；左前侧、右外侧观察，不声称严格正交投影。",
+      "相比R9，膝钻轴线到踝连接的距离明显缩短，去掉多级重复胫甲和长轮梯；宽厚脚掌仍保留，未纵向拉伸原图。",
+      "前带面、后侧回转带、分段白甲、橙支架、侧轮和脚跟分层可读；钻头与各自足尖同向。",
+      "钻机的象牙白多边形侧盖、橙支架和黑履带语言进入细图；这不是已经验证的完整机械变形路径。",
+      "两幅仍为绘制的方向观察，不能作为同一模型精确侧投影；隐藏面和全部拆装步骤尚未做同模型核对。"
+    ],
+    "rejected_r9_claim_withdrawn": true,
+    "independent_review": false,
+    "user_accepted": false,
+    "runtime_changed": false
+  },
+  "brave_selected_set_r11": {
+    "record": "brave-components-production-r11.json",
+    "baseline_user_accepted": true,
+    "source_count": 11,
+    "actual_media": [
+      "samples/M04-side-fin-aligned-r6c.png",
+      "samples/M04-rear-selected-parts-r6a.png",
+      "samples/M04-bomber-master-r8.png",
+      "samples/F12-subtrain-master-r8.png",
+      "samples/F11-drill-master-r8.png",
+      "samples/F09-core-views-r8.png",
+      "samples/F12-subtrain-assembly-r8b.png",
+      "samples/M04-bomber-assembly-r8b.png",
+      "samples/F09-bomber-mask-loading-r9.png",
+      "samples/M04-front-backpack-fins-r7.png",
+      "samples/F09-brave-core-master-r1.png"
+    ],
+    "reviewer": "author",
+    "identified_issues": [
+      {
+        "id": "BR11-01",
+        "kind": "visible_difference",
+        "group": "局部修图",
+        "title": "面罩终态与加载前的原头统一",
+        "images": [
+          6,
+          8,
+          9,
+          10,
+          11
+        ],
+        "observation": "图9装好后额前出现青色宝石；图10整机额部是橙色竖片/石墨底。图8左上灰色核心又已戴合体头冠，与图9后加载的过程冲突。",
+        "correction": "以图10作为合体头终态，图6/11作为原头；图9只校正外面罩额部，图8灰色核心恢复原头。保留长发和原头本体，不改成换整颗头，也不解释为核心自己长出新冠。",
+        "preserve": "保留图9的机身内收纳→加载→装好机制与图8翼架让位。",
+        "status": "identified_not_redrawn"
+      },
+      {
+        "id": "BR11-02",
+        "kind": "visible_difference",
+        "group": "局部修图",
+        "title": "背面发动机尾端改为排气口",
+        "images": [
+          1,
+          2,
+          3,
+          10
+        ],
+        "observation": "图2背向的翼下两台发动机仍能读到进气风扇/轮毂；图1、3、10已经规定进气端朝前。",
+        "correction": "仅修改图2翼下两处后端开口：无进气风扇，改为凹入深色排气喷口/分瓣尾圈。保持发动机筒长、肩甲斜三角体积、翼根与背包位置。",
+        "preserve": "不重新解释图1肩甲，不把选定侧肩压成薄平翼条。",
+        "status": "identified_not_redrawn"
+      },
+      {
+        "id": "BR11-03",
+        "kind": "visible_shape_difference",
+        "group": "局部修图",
+        "title": "胸部机鼻统一短钝端面",
+        "images": [
+          1,
+          3,
+          8,
+          10
+        ],
+        "observation": "图1侧胸机鼻仍读成偏尖长的下探前端；图3、10是更饱满的短钝机鼻。图8细部也需随主稿核对。",
+        "correction": "以图3机鼻立体形与图10胸部安装外观为准，侧面收尖、收短，保留橙色端面/象牙白颊框与蓝黑舱窗。只改鼻端，不重造肩胸框架。",
+        "preserve": "侧向纵深可以比正面显著；不因正常透视差异横向挤压整张图。",
+        "status": "identified_not_redrawn"
+      },
+      {
+        "id": "BR11-04",
+        "kind": "missing_correspondence_not_proven_geometry_error",
+        "group": "补清部件对应",
+        "title": "单体机身与双格栅背包需要对应",
+        "images": [
+          2,
+          3,
+          8
+        ],
+        "observation": "图2明确上下两处矩形格栅；图3和图8独立背包部件只清楚交代一处。由现有角度不能断言另一口不存在，但来源尚未说明。",
+        "correction": "背包终态沿图2。补一张后下侧小示意，说明第二格栅随哪片机身翻到背部；图8分件补齐双口和同一壳体边界。无需为此改整架飞机轮廓。",
+        "preserve": "双竖翼和中置背包的总体位置不改；无需工程级精密变形。",
+        "status": "mapping_to_be_drawn"
+      },
+      {
+        "id": "BR11-05",
+        "kind": "state_definition_gap",
+        "group": "补清部件对应",
+        "title": "列车臂壳明确收拢与展开两个状态",
+        "images": [
+          1,
+          2,
+          4,
+          7,
+          10
+        ],
+        "observation": "图7是大幅开壳的安装/炮击状态；图1、2、10主要看到收拢的列车外侧壳。它们可解释成同一结构的两个状态，不能只凭外观差异判成不同车型。短翼和底盘件在展开态的去向未交代。",
+        "correction": "固定待机收拢/炮击展开两态：一节对应一臂，两半壳左右打开，车头永远退向肘后，中间连接端朝拳前；短翼贴壳折收。用一次侧向开合说明炮口和核心前臂的位置，不缩小或遮掉巨拳。",
+        "preserve": "保留图4车型、图7开壳方向与图10整机待机轮廓。",
+        "status": "two_state_mapping_to_be_drawn"
+      },
+      {
+        "id": "BR11-06",
+        "kind": "missing_correspondence",
+        "group": "补清部件对应",
+        "title": "钻机履带、座舱与腿足的去向补齐",
+        "images": [
+          1,
+          2,
+          5,
+          10
+        ],
+        "observation": "图5每个半车体有分组履带、座舱窗面和分段白壳；图1/2/10规定了膝钻、胫甲、踝及脚掌，但原有图未清楚交代这些载具部件分别归到哪里。不能因画法相似就宣布变形闭合。",
+        "correction": "安装后形态以图10为首要比例依据、图1/2补侧后。只补同色编号分件示意：左右半车各进一腿，膝钻、胫前白甲、前后带面、踝足/后跟分别标清；座舱窗面折入内后侧。履带分组的具体分配在这张示意中核对，不另生一副长腿。",
+        "preserve": "不采用R9长小腿。R10细图未包含在本次11张选择中，保留作补充候选，不自行替换图10。无需连续真实机械折变模拟。",
+        "status": "mapping_to_be_drawn"
+      },
+      {
+        "id": "BR11-07",
+        "kind": "visible_decal_difference",
+        "group": "制作时归一",
+        "title": "勇拳胸口标识统一",
+        "images": [
+          6,
+          11
+        ],
+        "observation": "图11有橙色胸标，图6三视留白。主体结构与形象并无因此冲突。",
+        "correction": "建议制作母版暂按图6胸前留白，图11继续负责主体造型；若需要标记，另用项目原创标志，作为可换贴花，不重画胸甲。",
+        "preserve": "本条是作者建议，用户本次选定图11并未单独否定或批准胸标的最终版本。",
+        "status": "recommendation_not_applied"
+      },
+      {
+        "id": "BR11-08",
+        "kind": "material_and_state_normalization",
+        "group": "制作时归一",
+        "title": "腕部能量环和材质按同一位置/状态表达",
+        "images": [
+          6,
+          9,
+          10,
+          11
+        ],
+        "observation": "图6/9/11腕环明显，图10合体后不明显；可由外甲遮挡或发光状态解释，不能据此擅自给整机补满亮蓝光条。各图的橙白石墨已属同一家族。",
+        "correction": "腕环绑定同一腕部结构；合体后允许外甲遮住，只露局部窄缝，动作时再增强。统一象牙白、主橙、石墨、金属与玻璃的材质来源，保留轰炸机偏石墨、列车偏白、钻机橙白的色块分工。",
+        "preserve": "不把所有机组洗成相同橙灰比例；不改已选的英雄色和重拳轮廓。",
+        "status": "production_normalization_not_applied"
+      }
+    ],
+    "new_images_generated": false,
+    "corrections_completed": false
+  },
+  "brave_components_r12": {
+    "record": "brave-components-production-r12.json",
+    "actual_media": [
+      "samples/M04-bomber-backpack-assembly-r12.png",
+      "samples/M04-backpack-fold-map-r12.png",
+      "samples/F12-train-protective-cradle-r12c.png",
+      "samples/M04-side-body-reviewed-r6d.png",
+      "samples/M04-rear-exhaust-corrected-r6b.png",
+      "samples/F09-bomber-mask-loading-r9b.png",
+      "samples/F09-brave-core-master-r2.png",
+      "F11-component-routing-r12.png",
+      "F12-shell-state-framework-r12.png"
+    ],
+    "reviewer": "author",
+    "findings": [
+      {
+        "id": "BR11-01",
+        "kind": "visible_difference",
+        "group": "局部修图",
+        "title": "面罩终态与加载前的原头统一",
+        "images": [
+          6,
+          8,
+          9,
+          10,
+          11
+        ],
+        "observation": "图9装好后额前出现青色宝石；图10整机额部是橙色竖片/石墨底。图8左上灰色核心又已戴合体头冠，与图9后加载的过程冲突。",
+        "correction": "以图10作为合体头终态，图6/11作为原头；图9只校正外面罩额部，图8灰色核心恢复原头。保留长发和原头本体，不改成换整颗头，也不解释为核心自己长出新冠。",
+        "preserve": "保留图9的机身内收纳→加载→装好机制与图8翼架让位。",
+        "status": "source_revision_drawn_author_observed_pending_user",
+        "actual_media": [
+          "samples/F09-bomber-mask-loading-r9b.png",
+          "samples/M04-bomber-backpack-assembly-r12.png"
+        ],
+        "actual_work": "加载前保留原头、外面罩独立，最终额部沿整机；复用合格局部稿并补新装配图。",
+        "new_user_accepted": false
+      },
+      {
+        "id": "BR11-02",
+        "kind": "visible_difference",
+        "group": "局部修图",
+        "title": "背面发动机尾端改为排气口",
+        "images": [
+          1,
+          2,
+          3,
+          10
+        ],
+        "observation": "图2背向的翼下两台发动机仍能读到进气风扇/轮毂；图1、3、10已经规定进气端朝前。",
+        "correction": "仅修改图2翼下两处后端开口：无进气风扇，改为凹入深色排气喷口/分瓣尾圈。保持发动机筒长、肩甲斜三角体积、翼根与背包位置。",
+        "preserve": "不重新解释图1肩甲，不把选定侧肩压成薄平翼条。",
+        "status": "source_revision_drawn_author_observed_pending_user",
+        "actual_media": [
+          "samples/M04-rear-exhaust-corrected-r6b.png"
+        ],
+        "actual_work": "两台翼下发动机背向开口已为深色排气端，未改正向进气或肩翼形状。",
+        "new_user_accepted": false
+      },
+      {
+        "id": "BR11-03",
+        "kind": "visible_shape_difference",
+        "group": "局部修图",
+        "title": "胸部机鼻统一短钝端面",
+        "images": [
+          1,
+          3,
+          8,
+          10
+        ],
+        "observation": "图1侧胸机鼻仍读成偏尖长的下探前端；图3、10是更饱满的短钝机鼻。图8细部也需随主稿核对。",
+        "correction": "以图3机鼻立体形与图10胸部安装外观为准，侧面收尖、收短，保留橙色端面/象牙白颊框与蓝黑舱窗。只改鼻端，不重造肩胸框架。",
+        "preserve": "侧向纵深可以比正面显著；不因正常透视差异横向挤压整张图。",
+        "status": "source_revision_drawn_author_observed_pending_user",
+        "actual_media": [
+          "samples/M04-side-body-reviewed-r6d.png"
+        ],
+        "actual_work": "侧胸前端改用短钝局部版本，其余侧稿结构沿用。",
+        "new_user_accepted": false
+      },
+      {
+        "id": "BR11-04",
+        "kind": "missing_correspondence_not_proven_geometry_error",
+        "group": "补清部件对应",
+        "title": "单体机身与双格栅背包需要对应",
+        "images": [
+          2,
+          3,
+          8
+        ],
+        "observation": "图2明确上下两处矩形格栅；图3和图8独立背包部件只清楚交代一处。由现有角度不能断言另一口不存在，但来源尚未说明。",
+        "correction": "背包终态沿图2。补一张后下侧小示意，说明第二格栅随哪片机身翻到背部；图8分件补齐双口和同一壳体边界。无需为此改整架飞机轮廓。",
+        "preserve": "双竖翼和中置背包的总体位置不改；无需工程级精密变形。",
+        "status": "source_revision_drawn_author_observed_pending_user",
+        "actual_media": [
+          "samples/M04-bomber-backpack-assembly-r12.png",
+          "samples/M04-backpack-fold-map-r12.png"
+        ],
+        "actual_work": "独立背包两口已补，另画下模块从机身后下方翻出的三阶段。",
+        "new_user_accepted": false
+      },
+      {
+        "id": "BR11-05",
+        "kind": "state_definition_gap",
+        "group": "补清部件对应",
+        "title": "列车臂壳明确收拢与展开两个状态",
+        "images": [
+          1,
+          2,
+          4,
+          7,
+          10
+        ],
+        "observation": "图7是大幅开壳的安装/炮击状态；图1、2、10主要看到收拢的列车外侧壳。它们可解释成同一结构的两个状态，不能只凭外观差异判成不同车型。短翼和底盘件在展开态的去向未交代。",
+        "correction": "固定待机收拢/炮击展开两态：一节对应一臂，两半壳左右打开，车头永远退向肘后，中间连接端朝拳前；短翼贴壳折收。用一次侧向开合说明炮口和核心前臂的位置，不缩小或遮掉巨拳。",
+        "preserve": "保留图4车型、图7开壳方向与图10整机待机轮廓。",
+        "status": "source_revision_drawn_author_observed_pending_user",
+        "actual_media": [
+          "samples/F12-train-protective-cradle-r12c.png",
+          "samples/F12-subtrain-assembly-r8b.png",
+          "F12-shell-state-framework-r12.png"
+        ],
+        "actual_work": "保护U套、原展开态与同一两壳/小翼状态对应；两张失败长车稿停止当前采用，保留尝试。",
+        "new_user_accepted": false
+      },
+      {
+        "id": "BR11-06",
+        "kind": "missing_correspondence",
+        "group": "补清部件对应",
+        "title": "钻机履带、座舱与腿足的去向补齐",
+        "images": [
+          1,
+          2,
+          5,
+          10
+        ],
+        "observation": "图5每个半车体有分组履带、座舱窗面和分段白壳；图1/2/10规定了膝钻、胫甲、踝及脚掌，但原有图未清楚交代这些载具部件分别归到哪里。不能因画法相似就宣布变形闭合。",
+        "correction": "安装后形态以图10为首要比例依据、图1/2补侧后。只补同色编号分件示意：左右半车各进一腿，膝钻、胫前白甲、前后带面、踝足/后跟分别标清；座舱窗面折入内后侧。履带分组的具体分配在这张示意中核对，不另生一副长腿。",
+        "preserve": "不采用R9长小腿。R10细图未包含在本次11张选择中，保留作补充候选，不自行替换图10。无需连续真实机械折变模拟。",
+        "status": "source_revision_drawn_author_observed_pending_user",
+        "actual_media": [
+          "F11-component-routing-r12.png"
+        ],
+        "actual_work": "在不重画选定腿的前提下，把两半钻机的五组部件去向逐项画清；未宣称精密变形尺寸验证。",
+        "new_user_accepted": false
+      },
+      {
+        "id": "BR11-07",
+        "kind": "visible_decal_difference",
+        "group": "制作时归一",
+        "title": "勇拳胸口标识统一",
+        "images": [
+          6,
+          11
+        ],
+        "observation": "图11有橙色胸标，图6三视留白。主体结构与形象并无因此冲突。",
+        "correction": "建议制作母版暂按图6胸前留白，图11继续负责主体造型；若需要标记，另用项目原创标志，作为可换贴花，不重画胸甲。",
+        "preserve": "本条是作者建议，用户本次选定图11并未单独否定或批准胸标的最终版本。",
+        "status": "source_revision_drawn_author_observed_pending_user",
+        "actual_media": [
+          "samples/F09-brave-core-master-r2.png",
+          "samples/F09-core-views-r8.png"
+        ],
+        "actual_work": "主体与三视均用无胸标版本。",
+        "new_user_accepted": false
+      },
+      {
+        "id": "BR11-08",
+        "kind": "material_and_state_normalization",
+        "group": "制作时归一",
+        "title": "腕部能量环和材质按同一位置/状态表达",
+        "images": [
+          6,
+          9,
+          10,
+          11
+        ],
+        "observation": "图6/9/11腕环明显，图10合体后不明显；可由外甲遮挡或发光状态解释，不能据此擅自给整机补满亮蓝光条。各图的橙白石墨已属同一家族。",
+        "correction": "腕环绑定同一腕部结构；合体后允许外甲遮住，只露局部窄缝，动作时再增强。统一象牙白、主橙、石墨、金属与玻璃的材质来源，保留轰炸机偏石墨、列车偏白、钻机橙白的色块分工。",
+        "preserve": "不把所有机组洗成相同橙灰比例；不改已选的英雄色和重拳轮廓。",
+        "status": "source_revision_drawn_author_observed_pending_user",
+        "actual_media": [
+          "samples/F09-bomber-mask-loading-r9b.png",
+          "F12-shell-state-framework-r12.png"
+        ],
+        "actual_work": "能量环保留原腕位置，合体壳遮挡与动作增亮分别表达；共同材质角色记录，未改运行材质。",
+        "new_user_accepted": false
+      }
+    ],
+    "new_user_accepted": false,
+    "runtime_changed": false
+  }
+}

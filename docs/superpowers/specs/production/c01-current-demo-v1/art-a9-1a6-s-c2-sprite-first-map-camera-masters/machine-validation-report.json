@@ -1,0 +1,852 @@
+{
+  "task": "A9_1A6_S_C2_SPRITE_FIRST_MAP_CAMERA_MASTER_PREPRODUCTION",
+  "status": "MACHINE_QA_PASS_RUNTIME_GRID_REGISTRATION_CORRECTED_PRODUCER_VISUAL_ACCEPTANCE_PENDING",
+  "source_sha_checks": [
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/97-c01e02-a9-1a6-s-c1-call02-producer-visual-failure-review.md",
+      "expected": "1ef4459756a44aaa3f9ee08a3036189164f5e0e4712c9252d4a2a65d0eb75767",
+      "actual": "1ef4459756a44aaa3f9ee08a3036189164f5e0e4712c9252d4a2a65d0eb75767",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/98-c01e02-a9-1a6-s-c2-sprite-first-map-camera-master-preproduction-objective.md",
+      "expected": "7c82e7af59f36e52f795e14b84d647692582ad7643310beed8a26445a4edfdca",
+      "actual": "7c82e7af59f36e52f795e14b84d647692582ad7643310beed8a26445a4edfdca",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/99-c01e02-g2-a2-c3-current-topology-real-atlas-neutral-consumer-objective.md",
+      "expected": "f00252166c86b3f4f3cc0d2431db584c887777cd2876a5c55268aa17570e513b",
+      "actual": "f00252166c86b3f4f3cc0d2431db584c887777cd2876a5c55268aa17570e513b",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/38-c01e02-m3-r0-5-production-board.tsv",
+      "expected": "8758870be3904f5cb51b004ee8175d8df40820223c07f3f72c60968668e79a08",
+      "actual": "8758870be3904f5cb51b004ee8175d8df40820223c07f3f72c60968668e79a08",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/c01e02-tactical-visual-interface-v1.json",
+      "expected": "cdea5bd2f1715c076b4050cbc4f41ad203e94b896eed10e04e518f5bd483e312",
+      "actual": "cdea5bd2f1715c076b4050cbc4f41ad203e94b896eed10e04e518f5bd483e312",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/golden_slice_profile.json",
+      "expected": "61b49e5328e702cd654d28ff39c5c380ba0ae3e78753330635036d33f689523c",
+      "actual": "61b49e5328e702cd654d28ff39c5c380ba0ae3e78753330635036d33f689523c",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/current_topology_map_contract.json",
+      "expected": "74c6bbb3f732a61d3ed5a55d9c209b628152b9411395339d665aeeb0d76ab875",
+      "actual": "74c6bbb3f732a61d3ed5a55d9c209b628152b9411395339d665aeeb0d76ab875",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/visual_compositor_profile.json",
+      "expected": "13719d8a3bde0cc06acbed893198943164f2541cdc0b112cc5897ff38f4c3451",
+      "actual": "13719d8a3bde0cc06acbed893198943164f2541cdc0b112cc5897ff38f4c3451",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/visual_projection.gd",
+      "expected": "4f1fb4e029abb12d33abe3494425c3766916e7c3f9daf4395f0f682d5c6e3aed",
+      "actual": "4f1fb4e029abb12d33abe3494425c3766916e7c3f9daf4395f0f682d5c6e3aed",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/current_topology_layer.gd",
+      "expected": "395b5139f68f4421757d949b285c420a981463adb9592f5f7563e52f3a764f24",
+      "actual": "395b5139f68f4421757d949b285c420a981463adb9592f5f7563e52f3a764f24",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/.superpowers/brainstorm/37837-1782033239/content/guardian-z-user-selected-base.png",
+      "expected": "a9688f07d923d79680e1ba13a1cc51135b72dd29b38cf25242e2239107b86521",
+      "actual": "a9688f07d923d79680e1ba13a1cc51135b72dd29b38cf25242e2239107b86521",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/art-direction-v0.3/art-delivery/review/guardian_z_collector_e02_lockframe_candidate_v10x.png",
+      "expected": "e1d6b00d743e925d37a8fe4c74a1ef9114e1d7b0f4826fc2285bd6dae1470ade",
+      "actual": "e1d6b00d743e925d37a8fe4c74a1ef9114e1d7b0f4826fc2285bd6dae1470ade",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a-identity-style-scale-masters/sources/guardian_z_v10x_qsd_turnaround_imagegen_v2.png",
+      "expected": "c701f3efa72301720117bae08b1479d704315c5a4de62034bf385263ea57f412",
+      "actual": "c701f3efa72301720117bae08b1479d704315c5a4de62034bf385263ea57f412",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a-identity-style-scale-masters/delivery/GUARDIAN_Z_V10X_QSD_FOUR_DIRECTION_RGBA_2560x960.png",
+      "expected": "3873ed1ac32949f5ba2cdfbc334131b1a7d202124aaab1192d3211c0eb006ee9",
+      "actual": "3873ed1ac32949f5ba2cdfbc334131b1a7d202124aaab1192d3211c0eb006ee9",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-g1-5/GZ_QSD_A1_direction_board_1920x1080.png",
+      "expected": "4d8e7975649b2b85458a838afd9bc2fe8e3a90fd8cbcfe8a7929b8ae9ae6c225",
+      "actual": "4d8e7975649b2b85458a838afd9bc2fe8e3a90fd8cbcfe8a7929b8ae9ae6c225",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-g1-5/b1-breaker-ground/BREAKER_B1_candidate_B_identity_sheet_1800x1200.png",
+      "expected": "7035ba01896844d0e74a0e7989f26177fe4010b0458f742e200da5d0f900f868",
+      "actual": "7035ba01896844d0e74a0e7989f26177fe4010b0458f742e200da5d0f900f868",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-g1-5/b1-breaker-ground/BREAKER_B1_surface_relation_board_1800x1100.png",
+      "expected": "cdedf6b1c59b953395decc3a94221903a25ec3ba631b9727382177fe05a40d85",
+      "actual": "cdedf6b1c59b953395decc3a94221903a25ec3ba631b9727382177fe05a40d85",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-g1-5/b1-breaker-ground/BREAKER_B1_candidate_B_128.png",
+      "expected": "e8000411704e9da6408eb746080545850e23d5eb3e63afd33f251a9ab33c7ac4",
+      "actual": "e8000411704e9da6408eb746080545850e23d5eb3e63afd33f251a9ab33c7ac4",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/art-direction-v0.3/art-delivery/review/series_style_storyframe_v23a_kinetic_cel.png",
+      "expected": "8a546082e8fd2f1b0f9c6e8a8b1e602a647f478112887e93a8f44148e4867842",
+      "actual": "8a546082e8fd2f1b0f9c6e8a8b1e602a647f478112887e93a8f44148e4867842",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a5-rift-swarm-four-facing-atlas/A5_RIFT_SWARM_A_IDLE_96_384x96.png",
+      "expected": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+      "actual": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+      "match": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c1-current-topology-scene-first/call02-a-plan/generation-raw/CALL02_A_PLAN_RAW.png",
+      "expected": "98f30a9797591204f702ad1b36aaad1042c2cece1fd35a088b44d828f9e156d5",
+      "actual": "98f30a9797591204f702ad1b36aaad1042c2cece1fd35a088b44d828f9e156d5",
+      "match": true
+    }
+  ],
+  "png_checks": [
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/GUARDIAN_Z_EAST_MAP_CAMERA_GEOMETRY_GUIDE_256.png",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGBA",
+      "pass": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/BREAKER_NORTH_MAP_CAMERA_GEOMETRY_GUIDE_384.png",
+      "size": [
+        384,
+        384
+      ],
+      "mode": "RGBA",
+      "pass": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/GUARDIAN_Z_ISOLATED_SAFE_REFERENCE_BOARD_2400x1800.png",
+      "size": [
+        2400,
+        1800
+      ],
+      "mode": "RGBA",
+      "pass": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/BREAKER_BX_ISOLATED_SAFE_REFERENCE_BOARD_2400x1800.png",
+      "size": [
+        2400,
+        1800
+      ],
+      "mode": "RGBA",
+      "pass": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/CURRENT_TOPOLOGY_ACTOR_FREE_WORLD_GUIDE_1280x720.png",
+      "size": [
+        1280,
+        720
+      ],
+      "mode": "RGBA",
+      "pass": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/CALL02_ENVIRONMENT_METHOD_DONOR_CROP_SHEET_1600x1200.png",
+      "size": [
+        1600,
+        1200
+      ],
+      "mode": "RGBA",
+      "pass": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/PLAN_SLOT_COMPOSITE_QA_1280x720.png",
+      "size": [
+        1280,
+        720
+      ],
+      "mode": "RGBA",
+      "pass": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/PLAN_SLOT_COMPOSITE_QA_50_PERCENT_640x360.png",
+      "size": [
+        640,
+        360
+      ],
+      "mode": "RGBA",
+      "pass": true
+    }
+  ],
+  "safe_board_source_isolation": {
+    "guardian_board_breaker_sources_opened": 0,
+    "breaker_board_guardian_sources_opened": 0,
+    "CML128_anatomy_pixels_embedded": 0,
+    "call02_unit_or_object_pixels_permitted": 0
+  },
+  "phase_matrix_rows": 24,
+  "continuity_readback_rows": 126,
+  "missing_clip_allowed": false,
+  "cross_facing_fallback": false,
+  "producer_interface_contract_corrections": {
+    "environment_visible_z_constants": {
+      "base_ground": -1200,
+      "buildings_world_body": -900,
+      "roof": 900,
+      "foreground": 1100
+    },
+    "stateful_objects_use_footpoint_depth_sort": true,
+    "stateful_objects_fixed_front_overlay": false,
+    "occlusion_control_visible": false,
+    "weather_fx_baked_into_cleanplate": false,
+    "shared_PLAN_screen_points_are_CONTACT_truth": false,
+    "CONTACT_A_camera_and_targets": {
+      "camera_raw_px": [
+        -480,
+        450
+      ],
+      "impact_screen_px": [
+        640,
+        350
+      ],
+      "t4_side_armor_screen_px": [
+        700,
+        460
+      ]
+    },
+    "CONTACT_B_camera_and_targets": {
+      "camera_raw_px": [
+        -500,
+        440
+      ],
+      "impact_screen_px": [
+        640,
+        350
+      ],
+      "t4_side_armor_screen_px": [
+        760,
+        450
+      ]
+    },
+    "pass": true
+  },
+  "ImageGen_calls": 0,
+  "Call03_allowed": false,
+  "Call04_allowed": false,
+  "P99_invoked": false,
+  "real_art_loaded": 0,
+  "FUN_NOT_PROVEN": true,
+  "runtime_grid_registration_correction": {
+    "task_id": "TASK102_RUNTIME_GRID_REGISTRATION_CORRECTION",
+    "authority_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/102-c01e02-task98-runtime-grid-registration-producer-correction.md",
+    "authority_sha256": "e8556f917456da83d933842b9ace9542f5238635d5166a6f5b7adbfad0d62378",
+    "status": "MACHINE_PASS_AWAITING_PRODUCER_VISUAL_REGISTRATION_ACCEPTANCE",
+    "runtime_truth": {
+      "integer_grid_coordinate_is_cell_center": true,
+      "cell_boundary": "(x-0.5,y-0.5)..(x+0.5,y+0.5)",
+      "rect_boundary": "(x-0.5,y-0.5)..(x+w-0.5,y+h-0.5)",
+      "projection_source_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/visual_projection.gd",
+      "projection_source_sha256": "4f1fb4e029abb12d33abe3494425c3766916e7c3f9daf4395f0f682d5c6e3aed"
+    },
+    "history_archive": [
+      {
+        "filename": "CURRENT_TOPOLOGY_ACTOR_FREE_WORLD_GUIDE_1280x720.png",
+        "disposition": "History_invalid_runtime_registration",
+        "pre_fix_sha256": "8aa4909af5aefe0cf1959e1c941bb5c9437567e429ffa487dedd1663f36b5c3a",
+        "history_archive_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/_history/task102-pre-runtime-grid-correction/CURRENT_TOPOLOGY_ACTOR_FREE_WORLD_GUIDE_1280x720.png",
+        "history_archive_sha256": "8aa4909af5aefe0cf1959e1c941bb5c9437567e429ffa487dedd1663f36b5c3a",
+        "history_bytes_preserved": true
+      },
+      {
+        "filename": "PLAN_SLOT_COMPOSITE_QA_1280x720.png",
+        "disposition": "History_invalid_runtime_registration",
+        "pre_fix_sha256": "772c299994d47510dce3f30f6fb07fc4d2d4ba39744886dacff0b64558f96348",
+        "history_archive_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/_history/task102-pre-runtime-grid-correction/PLAN_SLOT_COMPOSITE_QA_1280x720.png",
+        "history_archive_sha256": "772c299994d47510dce3f30f6fb07fc4d2d4ba39744886dacff0b64558f96348",
+        "history_bytes_preserved": true
+      },
+      {
+        "filename": "PLAN_SLOT_COMPOSITE_QA_50_PERCENT_640x360.png",
+        "disposition": "History_invalid_runtime_registration",
+        "pre_fix_sha256": "75bb1b09ec4201c8b66f624b00789237766f1db41177c0fff52cf6e346681a33",
+        "history_archive_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/_history/task102-pre-runtime-grid-correction/PLAN_SLOT_COMPOSITE_QA_50_PERCENT_640x360.png",
+        "history_archive_sha256": "75bb1b09ec4201c8b66f624b00789237766f1db41177c0fff52cf6e346681a33",
+        "history_bytes_preserved": true
+      }
+    ],
+    "corrected_files": [
+      {
+        "filename": "CURRENT_TOPOLOGY_ACTOR_FREE_WORLD_GUIDE_1280x720.png",
+        "pre_fix_sha256": "8aa4909af5aefe0cf1959e1c941bb5c9437567e429ffa487dedd1663f36b5c3a",
+        "corrected_sha256": "948aa1acfdf7b27cd8a18085c228684f0b80b744048b54dee961bc6c9378f2df",
+        "bytes_changed": true,
+        "size_px": [
+          1280,
+          720
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "filename": "PLAN_SLOT_COMPOSITE_QA_1280x720.png",
+        "pre_fix_sha256": "772c299994d47510dce3f30f6fb07fc4d2d4ba39744886dacff0b64558f96348",
+        "corrected_sha256": "8daed6efaf7c170a207f6b106e3035eef6af043d84a6bf9eefc00d0ef2785ec2",
+        "bytes_changed": true,
+        "size_px": [
+          1280,
+          720
+        ],
+        "mode": "RGBA"
+      },
+      {
+        "filename": "PLAN_SLOT_COMPOSITE_QA_50_PERCENT_640x360.png",
+        "pre_fix_sha256": "75bb1b09ec4201c8b66f624b00789237766f1db41177c0fff52cf6e346681a33",
+        "corrected_sha256": "cd75c0ca4b64a5de439df07fa8abea77e4b081fd6db002de6fe1d9f1e944a906",
+        "bytes_changed": true,
+        "size_px": [
+          640,
+          360
+        ],
+        "mode": "RGBA"
+      }
+    ],
+    "runtime_projection_control_points": [
+      {
+        "control_id": "GRID_0_0_PLAN",
+        "grid": [
+          0.0,
+          0.0
+        ],
+        "camera_raw_px": [
+          -480,
+          420
+        ],
+        "expected_screen_px": [
+          240.0,
+          -240.0
+        ],
+        "actual_screen_px": [
+          240.0,
+          -240.0
+        ],
+        "error_px": 0.0,
+        "pass_lte_0_5px": true
+      },
+      {
+        "control_id": "GRID_15_11_PLAN",
+        "grid": [
+          15.0,
+          11.0
+        ],
+        "camera_raw_px": [
+          -480,
+          420
+        ],
+        "expected_screen_px": [
+          400.0,
+          280.0
+        ],
+        "actual_screen_px": [
+          400.0,
+          280.0
+        ],
+        "error_px": 0.0,
+        "pass_lte_0_5px": true
+      },
+      {
+        "control_id": "A_IMPACT_CONTACT_A",
+        "grid": [
+          20.5,
+          10.5
+        ],
+        "camera_raw_px": [
+          -480.0,
+          450.0
+        ],
+        "expected_screen_px": [
+          640.0,
+          350.0
+        ],
+        "actual_screen_px": [
+          640.0,
+          350.0
+        ],
+        "error_px": 0.0,
+        "pass_lte_0_5px": true
+      },
+      {
+        "control_id": "B_IMPACT_CONTACT_B",
+        "grid": [
+          20.0,
+          10.5
+        ],
+        "camera_raw_px": [
+          -500.0,
+          440.0
+        ],
+        "expected_screen_px": [
+          640.0,
+          350.0
+        ],
+        "actual_screen_px": [
+          640.0,
+          350.0
+        ],
+        "error_px": 0.0,
+        "pass_lte_0_5px": true
+      },
+      {
+        "control_id": "GRID_31_17_PLAN",
+        "grid": [
+          31.0,
+          17.0
+        ],
+        "camera_raw_px": [
+          -480,
+          420
+        ],
+        "expected_screen_px": [
+          800.0,
+          720.0
+        ],
+        "actual_screen_px": [
+          800.0,
+          720.0
+        ],
+        "error_px": 0.0,
+        "pass_lte_0_5px": true
+      }
+    ],
+    "footpoint_readback": [
+      {
+        "subject_id": "V353U001",
+        "anchor": [
+          15,
+          11
+        ],
+        "footprint": [
+          2,
+          2
+        ],
+        "expected_footpoint_screen_px": [
+          400.0,
+          340.0
+        ],
+        "actual_footpoint_screen_px": [
+          400.0,
+          340.0
+        ],
+        "error_px": 0.0,
+        "rendered_center_pixel_rgba": [
+          70,
+          218,
+          238,
+          255
+        ],
+        "expected_marker_rgba": [
+          70,
+          218,
+          238,
+          255
+        ],
+        "rendered_marker_center_exact": true,
+        "pass": true
+      },
+      {
+        "subject_id": "ENEMY_C01_BREAKER",
+        "anchor": [
+          20,
+          13
+        ],
+        "footprint": [
+          3,
+          3
+        ],
+        "expected_footpoint_screen_px": [
+          520.0,
+          520.0
+        ],
+        "actual_footpoint_screen_px": [
+          520.0,
+          520.0
+        ],
+        "error_px": 0.0,
+        "rendered_center_pixel_rgba": [
+          240,
+          90,
+          166,
+          255
+        ],
+        "expected_marker_rgba": [
+          240,
+          90,
+          166,
+          255
+        ],
+        "rendered_marker_center_exact": true,
+        "pass": true
+      },
+      {
+        "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01",
+        "anchor": [
+          17,
+          10
+        ],
+        "footprint": [
+          1,
+          1
+        ],
+        "expected_footpoint_screen_px": [
+          520.0,
+          320.0
+        ],
+        "actual_footpoint_screen_px": [
+          520.0,
+          320.0
+        ],
+        "error_px": 0.0,
+        "rendered_center_pixel_rgba": [
+          255,
+          171,
+          70,
+          255
+        ],
+        "expected_marker_rgba": [
+          255,
+          171,
+          70,
+          255
+        ],
+        "rendered_marker_center_exact": true,
+        "pass": true
+      },
+      {
+        "subject_id": "ENEMY_C01_RIFT_SWARM_01",
+        "anchor": [
+          22,
+          7
+        ],
+        "footprint": [
+          1,
+          1
+        ],
+        "expected_footpoint_screen_px": [
+          840.0,
+          360.0
+        ],
+        "actual_footpoint_screen_px": [
+          840.0,
+          360.0
+        ],
+        "error_px": 0.0,
+        "rendered_center_pixel_rgba": [
+          103,
+          220,
+          146,
+          255
+        ],
+        "expected_marker_rgba": [
+          103,
+          220,
+          146,
+          255
+        ],
+        "rendered_marker_center_exact": true,
+        "pass": true
+      },
+      {
+        "subject_id": "ENEMY_C01_RIFT_SWARM_02",
+        "anchor": [
+          26,
+          12
+        ],
+        "footprint": [
+          1,
+          1
+        ],
+        "expected_footpoint_screen_px": [
+          800.0,
+          540.0
+        ],
+        "actual_footpoint_screen_px": [
+          800.0,
+          540.0
+        ],
+        "error_px": 0.0,
+        "rendered_center_pixel_rgba": [
+          103,
+          220,
+          146,
+          255
+        ],
+        "expected_marker_rgba": [
+          103,
+          220,
+          146,
+          255
+        ],
+        "rendered_marker_center_exact": true,
+        "pass": true
+      },
+      {
+        "subject_id": "ENEMY_C01_RIFT_SWARM_03",
+        "anchor": [
+          29,
+          5
+        ],
+        "footprint": [
+          1,
+          1
+        ],
+        "expected_footpoint_screen_px": [
+          1200.0,
+          460.0
+        ],
+        "actual_footpoint_screen_px": [
+          1200.0,
+          460.0
+        ],
+        "error_px": 0.0,
+        "rendered_center_pixel_rgba": [
+          103,
+          220,
+          146,
+          255
+        ],
+        "expected_marker_rgba": [
+          103,
+          220,
+          146,
+          255
+        ],
+        "rendered_marker_center_exact": true,
+        "pass": true
+      }
+    ],
+    "rect_polygon_readback": [
+      {
+        "rect_id": "SELECTION_POCKET",
+        "grid_rect": [
+          15,
+          9,
+          6,
+          3
+        ],
+        "expected_polygon_screen_px": [
+          [
+            480,
+            220
+          ],
+          [
+            720,
+            340
+          ],
+          [
+            600,
+            400
+          ],
+          [
+            360,
+            280
+          ]
+        ],
+        "actual_polygon_screen_px": [
+          [
+            480,
+            220
+          ],
+          [
+            720,
+            340
+          ],
+          [
+            600,
+            400
+          ],
+          [
+            360,
+            280
+          ]
+        ],
+        "error_px": 0.0,
+        "pass_lte_0_5px": true
+      },
+      {
+        "rect_id": "BREAKER_CHARGE_AVENUE",
+        "grid_rect": [
+          20,
+          11,
+          3,
+          5
+        ],
+        "expected_polygon_screen_px": [
+          [
+            600,
+            360
+          ],
+          [
+            720,
+            420
+          ],
+          [
+            520,
+            520
+          ],
+          [
+            400,
+            460
+          ]
+        ],
+        "actual_polygon_screen_px": [
+          [
+            600,
+            360
+          ],
+          [
+            720,
+            420
+          ],
+          [
+            520,
+            520
+          ],
+          [
+            400,
+            460
+          ]
+        ],
+        "error_px": 0.0,
+        "pass_lte_0_5px": true
+      }
+    ],
+    "rendered_terrain_center_pixel_readback": [
+      {
+        "sample_id": "ROAD_CELL_15_11",
+        "grid_cell_center": [
+          15,
+          11
+        ],
+        "screen_px": [
+          400,
+          280
+        ],
+        "expected_rgba": [
+          48,
+          64,
+          76,
+          255
+        ],
+        "actual_rgba": [
+          48,
+          64,
+          76,
+          255
+        ],
+        "pass": true
+      },
+      {
+        "sample_id": "RESCUE_CELL_20_11",
+        "grid_cell_center": [
+          20,
+          11
+        ],
+        "screen_px": [
+          600,
+          380
+        ],
+        "expected_rgba": [
+          46,
+          67,
+          78,
+          255
+        ],
+        "actual_rgba": [
+          46,
+          67,
+          78,
+          255
+        ],
+        "pass": true
+      },
+      {
+        "sample_id": "SECURITY_APRON_CELL_25_8",
+        "grid_cell_center": [
+          25,
+          8
+        ],
+        "screen_px": [
+          920,
+          420
+        ],
+        "expected_rgba": [
+          55,
+          67,
+          75,
+          255
+        ],
+        "actual_rgba": [
+          55,
+          67,
+          75,
+          255
+        ],
+        "pass": true
+      }
+    ],
+    "max_control_error_px": 0.0,
+    "max_footpoint_error_px": 0.0,
+    "max_rect_vertex_error_px": 0.0,
+    "protected_files_before": {
+      "GUARDIAN_Z_EAST_MAP_CAMERA_GEOMETRY_GUIDE_256.png": "a9900c16436e10c0050831c2aa1c364d0618d9877fffde382410be77a56f0ef0",
+      "BREAKER_NORTH_MAP_CAMERA_GEOMETRY_GUIDE_384.png": "a6e213f8defaba97ed4581009a2bfbf2366361c140588078de4a008c06337f30",
+      "atlas-schema-current.json": "159c0af021c99a8c778692f5b02794e5ec55a476514da55ff55958baa19e8e5d",
+      "map-camera-slot-contract.json": "17e195dcac011be803bd69d893a918830dd838a5aa7a4aedd3e76bab45fb1a24",
+      "socket-contact-contract.json": "c954af9b0ac7e5a1ef0e55f95b613367af9ab5ddbaec3fc55f5f4a258e5b8ea5",
+      "first-round-state-facing-phase-matrix.tsv": "992ff3e6c35eb5cf6aa69ae928190f5c8ac3bb11927474569e1211ebb655bb2e",
+      "first-round-phase-continuity-readback.tsv": "e03f74e3e81ce888554b7ec0ba7e8e5c8e81600a1bc1f1974b755d73b7d64199"
+    },
+    "protected_files_after": {
+      "GUARDIAN_Z_EAST_MAP_CAMERA_GEOMETRY_GUIDE_256.png": "a9900c16436e10c0050831c2aa1c364d0618d9877fffde382410be77a56f0ef0",
+      "BREAKER_NORTH_MAP_CAMERA_GEOMETRY_GUIDE_384.png": "a6e213f8defaba97ed4581009a2bfbf2366361c140588078de4a008c06337f30",
+      "atlas-schema-current.json": "159c0af021c99a8c778692f5b02794e5ec55a476514da55ff55958baa19e8e5d",
+      "map-camera-slot-contract.json": "17e195dcac011be803bd69d893a918830dd838a5aa7a4aedd3e76bab45fb1a24",
+      "socket-contact-contract.json": "c954af9b0ac7e5a1ef0e55f95b613367af9ab5ddbaec3fc55f5f4a258e5b8ea5",
+      "first-round-state-facing-phase-matrix.tsv": "992ff3e6c35eb5cf6aa69ae928190f5c8ac3bb11927474569e1211ebb655bb2e",
+      "first-round-phase-continuity-readback.tsv": "e03f74e3e81ce888554b7ec0ba7e8e5c8e81600a1bc1f1974b755d73b7d64199"
+    },
+    "protected_files_byte_identical": true,
+    "all_other_existing_top_level_files_byte_identical": true,
+    "executor_visual_inspection": "PASS_TERRAIN_AND_FOOTPOINT_SINGLE_RUNTIME_COORDINATE_SYSTEM",
+    "ImageGen_calls": 0,
+    "Call03_allowed": false,
+    "Call04_allowed": false,
+    "new_visible_target_pixels_generated": false,
+    "real_art_loaded": 0,
+    "producer_visual_acceptance_required": true,
+    "machine_pass": true
+  }
+}

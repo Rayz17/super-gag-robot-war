@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-20",
+  "generation_mode": "built-in image_gen",
+  "source_images": [
+    "samples/M05-head-L-harpoon-r4b.png"
+  ],
+  "user_correction": "不是向前此刺出的L，是向上刺出的L，类似独角仙那种角",
+  "prompt": "Use case: precise-object-edit\nAsset: Complete King head correction. TWO views of the SAME helmet: centered FRONT on the left, LEFT SIDE PROFILE looking LEFT on the right.\n\nUser correction (authoritative): “不是向前刺出的L，是向上刺出的L，类似独角仙那种角”.\nChange ONLY the ONE central gold L-shaped horn. Keep the exact face, navy helmet volume, eyes, ivory jaw, red chin, gold cheek frames, ears, collar, drawing style, and all FOUR paired side crown fins.\n\nNEW central horn geometry:\nIt is an UPWARD-POINTING rhinoceros-beetle-like mechanical horn with an L-shaped dogleg at its BASE.\nStarting from its forehead attachment, a SHORT, STOUT BASE runs forward a little, then bends UPWARD into a LONG RISEN HORN. The LONG terminal shaft and main sharp tip point UP TOWARD THE SKY. The shaft can gently arc upward like a beetle horn but must retain a clear L-shaped base/elbow. Near its upper tip retain ONE small backward/downward-facing harpoon barb.\nThe long part is the vertical/upward horn. The short part is the forward base. This reverses the current incorrect geometry where a vertical root ends in a long horizontal forward spear.\n\nRIGHT PANEL / TRUE LEFT PROFILE:\nThe nose points LEFT on the canvas.\nFrom the forehead root, the horn base goes a SHORT distance LEFT, then at the forward elbow turns UP, rising clearly above the forehead. Its tall MAIN TIP points UP. The small upper barb points BACK toward the head (RIGHT and slightly DOWN).\nThe side outline should resemble an upright L with the tall limb in front and the short foot attached back toward the forehead. DO NOT retain a long left-pointing horizontal spear. No downward-pointing main tip.\n\nLEFT PANEL / FRONT:\nShow that SAME tall upward central horn visibly rising along the face centerline, between the long inner crown fins. It is NOT a foreshortened diamond end-cap any more. Short projecting root is seen foreshortened; long upper shaft is visibly vertical. The tiny rear-facing barb may be mostly hidden behind the central shaft in this exact front view; do not introduce left-right asymmetry to show it.\nExactly FIVE crown MAIN MEMBERS/ROOTS total: ONE upward central beetle L-horn + one mirrored long inner pair + one mirrored shorter outer pair. No additional horns, spikes or forks.\n\nKeep the face and skull naturally tall and entirely unchanged. Preserve the front/profile head scale, paired fin shapes and clean KINETIC CEL navy/ivory/gold/crimson palette with hard shadows. Expand canvas above if needed to fit every tip with clear margin; do not compress the face or crown.\nTrue transparent background. No text, annotations, extra views, body or weapons.",
+  "output": "samples/M05-head-upward-L-r5.png",
+  "transparent_background": true,
+  "source_refs": [
+    {
+      "file": "samples/M05-head-L-harpoon-r4b.png",
+      "sha256": "61580e218a504b4679ea15e5bf5f8544e3d9255f72865323d23799b32f7c1993"
+    }
+  ]
+}

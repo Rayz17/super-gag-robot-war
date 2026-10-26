@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-20",
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "jobs": [
+    {
+      "id": "MASK",
+      "prompt": "Use case: precise-object-edit. Correct ONLY the red fin's FRONT-VIEW PROJECTION in the LEFT head. Preserve the entire RIGHT SIDE PROFILE including its broad triangular crimson dorsal fin exactly. This is one thin flat fin on the sagittal midline, directly BEHIND the broad gold center horn and SHORTER than that gold horn. Therefore in strict FRONT view the red fin is COMPLETELY OCCLUDED by the gold horn, not visible as a triangular red backing or two red stripes. Remove ONLY the two exposed red side slivers behind the upper center gold horn in the left head; restore underlying navy/transparent areas naturally. Keep all gold edges, all five gold antennas, their dimensions, helmet dome, faceplate, eyes, cheek vents, red chin tab, neck, camera, composition and alpha exactly unchanged. Do not remove or change any part of the side-profile red fin. No other changes. No letters, no arrows, no extra objects.",
+      "referenced_image_paths": [
+        "samples/M05-red-fin-battle-r9.png"
+      ]
+    },
+    {
+      "id": "NORMAL",
+      "prompt": "Use case: precise-object-edit. Image 1 is the edit target: King's NEW helmet with one crimson midline dorsal fin and closed battle mask, front-left and left-profile-right sheet. Image 2 is the authority for the original NORMAL FACE only.\nCreate the NORMAL FACE state of exactly the Image 1 helmet: retract/remove ONLY the two ivory battle-mask cover halves and restore the original normal navy nose bridge, ivory angular face, subtle mouth line, heavy jaw and crimson chin from Image 2, in both views. Keep exact same helmet dome, gold crown with FIVE members, eyes, ears, cheek frames, and especially the side-profile triangular crimson top fin from Image 1 completely unchanged. Do not remove the new red fin when the mask retracts. Keep head scale/camera/collar fixed, no flattened skull.\nOne additional projection correction is REQUIRED in the left FRONT head: this red fin is a thin sagittal blade directly BEHIND and SHORTER than the broad gold center horn, so it is completely occluded in strict front view. Remove the two incorrectly exposed red slivers beside that upper center gold horn; retain the SIDE PROFILE red fin exactly. Do not make two red horns or shift the gold horn aside.\nThe same helmet and fin must work for normal and battle states; only lower face coverage changes. No labels, no arrows, no extra heads or insets. Preserve genuine transparent background and existing cel drawing style.",
+      "referenced_image_paths": [
+        "samples/M05-red-fin-battle-r9.png",
+        "samples/M05-head-riese-r6b.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+  "contract_binding": {
+    "build_id": "C01CDV1-M2-R2",
+    "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+    "contract_revision": 2,
+    "save_schema": 2
+  },
+  "gameplay_state_mutation": false,
+  "lifecycle_status": "active",
+  "profile_binding": {
+    "profile_id": "c01cdv1_e02_scroll_m2_r2",
+    "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8"
+  },
+  "receipt_id": "C01E02-M2-2-SYNTH-SINGLE-VALIDATED-R2",
+  "receipt_kind": "C01E02_M2_2_FROZEN_VALIDATED_HANDOFFS",
+  "receipt_payload_sha256": "e4ab585b8a3c2a58a96f6a6258c37e57564cec04f754303505d6d06003612a4d",
+  "runtime_art_loaded": false,
+  "runtime_lane": "candidate_runtime_demo",
+  "schema_version": "1.0.0",
+  "source_batch": {
+    "batch_id": "C01E02-M2-2-SYNTH-SINGLE",
+    "sha256": "9994f784321fa1c38a00604db010f48674adbb27bd196744fc01566a4637f365",
+    "submitted_count": 1,
+    "validated_count": 1
+  },
+  "synthetic_fixture": true,
+  "validated_receipts": [
+    {
+      "actions": [
+        "idle"
+      ],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 128,
+        "width": 512
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {
+          "idle/east": [
+            128,
+            0,
+            128,
+            128
+          ],
+          "idle/north": [
+            0,
+            0,
+            128,
+            128
+          ],
+          "idle/south": [
+            256,
+            0,
+            128,
+            128
+          ],
+          "idle/west": [
+            384,
+            0,
+            128,
+            128
+          ]
+        }
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "sprite_sheet",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "e86133b200ee5383a30dc0bc24b9f8743fc20ceb84d566adf876b8388013f82a",
+      "facings": [
+        "north",
+        "east",
+        "south",
+        "west"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 128,
+        "width": 512
+      },
+      "native_size": [
+        512,
+        128
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        1.0
+      ],
+      "producer_handoff_id": "C01E02-M2-2-SYNTH-07",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://tests/fixtures/candidate_asset_r2/m2_2/mecha_c01cdv1_guardian_z.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "2b256a85dc11b01802840dbc9f97ffa7c06e5eaac31d1faa7c828db1909bf737",
+      "slot_id": "MECHA_C01CDV1_GUARDIAN_Z",
+      "stable_id": "V353U001",
+      "subject_id": "V353U001",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "guardian_z_tactical_qsd",
+      "validation_gate": "candidate_asset_resolver_r2"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+	"breaker_alive": true,
+	"breaker_destroyed": false,
+	"breaker_first_knockdown": true,
+	"building_damage_state": {
+		"DESTRUCT_C01_SECURITY_KIOSK": "damaged",
+		"DESTRUCT_C01_SKYWALK_SUPPORT": "damaged",
+		"TERRAIN_C01_NE_BLOCK": "facade_cracked_by_red_impact"
+	},
+	"encounter_id": "ENC-C01-GROUND",
+	"episode_boundary": "phase_checkpoint",
+	"guardian_z_left_forearm": "intact",
+	"guardian_z_right_forearm": "intact",
+	"mission_clear": false,
+	"operation_id": "OP-C01-BREAKER",
+	"phase_id": "P1",
+	"red_impact_blocked": true,
+	"rescue_lane_cleared": true,
+	"retired_shield_acquired": true,
+	"retired_shield_fourth_scorch": true,
+	"retired_shield_heat_deformed": true,
+	"retired_shield_penetrated": false,
+	"road_damage_state": {
+		"DESTRUCT_C01_ROADSIDE_SIGN": "destroyed",
+		"DESTRUCT_C01_ROAD_BARRIER": "destroyed"
+	},
+	"setpiece_action_id": "shield_bash",
+	"setpiece_commit_count": 1,
+	"swarm_organization_state": "scattered",
+	"swarm_survivor_count": 5,
+	"swarm_survivor_positions": [
+		{
+			"organization_state": "scattered",
+			"position": [
+				17,
+				7
+			],
+			"status": "active",
+			"unit_id": "ENEMY_C01_RIFT_SWARM_01"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				18,
+				7
+			],
+			"status": "active",
+			"unit_id": "ENEMY_C01_RIFT_SWARM_02"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				26,
+				5
+			],
+			"status": "active",
+			"unit_id": "ENEMY_C01_RIFT_SWARM_03"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				29,
+				8
+			],
+			"status": "active",
+			"unit_id": "ENEMY_C01_RIFT_SWARM_05"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				20,
+				10
+			],
+			"status": "active",
+			"unit_id": "ENEMY_C01_RIFT_SWARM_06"
+		}
+	]
+}

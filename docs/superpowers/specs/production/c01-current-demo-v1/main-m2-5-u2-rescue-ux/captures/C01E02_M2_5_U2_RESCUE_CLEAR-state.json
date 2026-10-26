@@ -1,0 +1,36 @@
+{
+	"brace_availability": {
+		"enabled": true,
+		"message": "当前位置可以立盾迎击赤红冲击",
+		"reason_id": "brace_available"
+	},
+	"capture_id": "RESCUE_CLEAR",
+	"current_node_id": "c01cdv1_e02_s06_scrolling_street",
+	"guardian_anchor": [
+		20,
+		9
+	],
+	"intercept_availability": {
+		"enabled": false,
+		"message": "只能击退馆守Z边缘相邻的小体；这不是挡赤红冲击的指令",
+		"reason_id": "no_adjacent_swarm"
+	},
+	"message": "撤离线已清空。一次性盾拍已授权，请亲手确认",
+	"png_sha256": "355953845255f1540ed0bc24a73f148625beb1cf5558ec83c1b317a5d36b9f5c",
+	"recommended": {
+		"action": "finisher",
+		"label": "下一步：确认盾拍 [F]"
+	},
+	"red_impact_blocked": true,
+	"rescue_lane_cleared": true,
+	"rescue_progress": {
+		"active_vehicles": 0,
+		"completed_legs": 4,
+		"evacuated_vehicles": 2,
+		"lowest_hp": 1,
+		"remaining_turns": 0,
+		"total_legs": 4,
+		"total_vehicles": 2
+	},
+	"turn": 6
+}

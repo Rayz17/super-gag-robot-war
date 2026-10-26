@@ -1,0 +1,533 @@
+{
+  "schema_version": 1,
+  "asset_id": "LAB_JOINT_BENCH_V1",
+  "kind": "transparent_environment_prop_source",
+  "candidate": true,
+  "not_canon": true,
+  "runtime_allowed": false,
+  "user_visual_acceptance": false,
+  "no_people_no_mecha_no_text": true,
+  "ground_shadow_baked": false,
+  "self_shadow_only": true,
+  "not_a_seated_character_or_runtime_occlusion_proof": true,
+  "engine": "4.4.3",
+  "render_engine": "BLENDER_EEVEE_NEXT",
+  "technique_sources_only": [
+    "artifacts/formulas/visual-targets-v1/art/joint-room-v1/blender/build_joint_room.py",
+    "artifacts/formulas/visual-targets-v1/art/joint-room-v2/blender/build_joint_room_v2.py"
+  ],
+  "imported_blends_or_bitmaps": [],
+  "geometry": {
+    "units": "metres",
+    "seat_length": 1.8,
+    "seat_depth": 0.423,
+    "seat_top_z": 0.47,
+    "slat_count": 5,
+    "leg_count": 4,
+    "mesh_object_count": 18,
+    "forward_world": [
+      0,
+      -1,
+      0
+    ],
+    "up_world": [
+      0,
+      0,
+      1
+    ]
+  },
+  "camera": {
+    "type": "ORTHO",
+    "elevation_deg": 42.0,
+    "azimuth_deg_from_front_to_positive_x": 15.0,
+    "ortho_scale": 2.25,
+    "matrix_world": [
+      [
+        0.9659258127212524,
+        -0.17318376898765564,
+        0.19234006106853485,
+        1.5387202501296997
+      ],
+      [
+        0.2588190734386444,
+        0.6463305354118347,
+        -0.717822790145874,
+        -5.742582321166992
+      ],
+      [
+        1.0192149346721635e-08,
+        0.7431448698043823,
+        0.6691305637359619,
+        5.588045120239258
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "target_world_m": [
+      0.0,
+      0.0,
+      0.23499999940395355
+    ],
+    "frame": [
+      1024,
+      768
+    ],
+    "same_elevation_technique_not_same_room_projection": true
+  },
+  "contact_points": {
+    "seat_contact_center": {
+      "world_m": [
+        0,
+        0,
+        0.47
+      ],
+      "pixel_xy": [
+        512.0001220703125,
+        304.5200500488281
+      ],
+      "uv": [
+        0.5000001192092896,
+        0.3965104818344116
+      ],
+      "contact_proof": {
+        "object": "Seat_slat_02",
+        "ray_hit_world_m": [
+          0.0,
+          0.0,
+          0.4700000286102295
+        ],
+        "normal_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "distance_error_m": 2.9802322387695312e-08
+      }
+    },
+    "seat_contact_left": {
+      "world_m": [
+        -0.45,
+        0,
+        0.47
+      ],
+      "pixel_xy": [
+        314.1784973144531,
+        269.05201721191406
+      ],
+      "uv": [
+        0.30681493878364563,
+        0.35032814741134644
+      ],
+      "contact_proof": {
+        "object": "Seat_slat_02",
+        "ray_hit_world_m": [
+          -0.44999998807907104,
+          0.0,
+          0.4700000286102295
+        ],
+        "normal_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "distance_error_m": 2.9802322387695312e-08
+      }
+    },
+    "seat_contact_right": {
+      "world_m": [
+        0.45,
+        0,
+        0.47
+      ],
+      "pixel_xy": [
+        709.8217163085938,
+        339.9880828857422
+      ],
+      "uv": [
+        0.6931852698326111,
+        0.4426928162574768
+      ],
+      "contact_proof": {
+        "object": "Seat_slat_02",
+        "ray_hit_world_m": [
+          0.44999998807907104,
+          0.0,
+          0.4700000286102295
+        ],
+        "normal_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "distance_error_m": 2.9802322387695312e-08
+      }
+    },
+    "seat_front_center": {
+      "world_m": [
+        0,
+        -0.205,
+        0.47
+      ],
+      "pixel_xy": [
+        487.8528747558594,
+        364.8212585449219
+      ],
+      "uv": [
+        0.4764188230037689,
+        0.4750276803970337
+      ]
+    },
+    "seat_back_center": {
+      "world_m": [
+        0,
+        0.205,
+        0.47
+      ],
+      "pixel_xy": [
+        536.1473388671875,
+        244.21884155273438
+      ],
+      "uv": [
+        0.5235813856124878,
+        0.31799328327178955
+      ]
+    },
+    "floor_origin": {
+      "world_m": [
+        0,
+        0,
+        0
+      ],
+      "pixel_xy": [
+        512.0001220703125,
+        463.48038482666016
+      ],
+      "uv": [
+        0.5000001192092896,
+        0.6034900844097137
+      ]
+    },
+    "front_left_ground": {
+      "world_m": [
+        -0.725,
+        -0.205,
+        0
+      ],
+      "pixel_xy": [
+        169.14027404785156,
+        466.63863372802734
+      ],
+      "uv": [
+        0.16517604887485504,
+        0.6076023876667023
+      ],
+      "contact_proof": {
+        "object": "Ground_pad_-1_-1",
+        "ray_hit_world_m": [
+          -0.7250000238418579,
+          -0.20499999821186066,
+          -3.725290298461914e-08
+        ],
+        "normal_world": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "distance_error_m": 3.725290298461914e-08
+      }
+    },
+    "front_right_ground": {
+      "world_m": [
+        0.725,
+        -0.205,
+        0
+      ],
+      "pixel_xy": [
+        806.5654296875,
+        580.9245071411133
+      ],
+      "uv": [
+        0.7876615524291992,
+        0.7564121186733246
+      ],
+      "contact_proof": {
+        "object": "Ground_pad_1_-1",
+        "ray_hit_world_m": [
+          0.7250000238418579,
+          -0.20499999821186066,
+          -3.725290298461914e-08
+        ],
+        "normal_world": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "distance_error_m": 3.725290298461914e-08
+      }
+    },
+    "back_left_ground": {
+      "world_m": [
+        -0.725,
+        0.205,
+        0
+      ],
+      "pixel_xy": [
+        217.43475341796875,
+        346.03623962402344
+      ],
+      "uv": [
+        0.2123386263847351,
+        0.4505680203437805
+      ],
+      "contact_proof": {
+        "object": "Ground_pad_-1_1",
+        "ray_hit_world_m": [
+          -0.7250000238418579,
+          0.20499999821186066,
+          -3.725290298461914e-08
+        ],
+        "normal_world": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "distance_error_m": 3.725290298461914e-08
+      }
+    },
+    "back_right_ground": {
+      "world_m": [
+        0.725,
+        0.205,
+        0
+      ],
+      "pixel_xy": [
+        854.8599243164062,
+        460.3221130371094
+      ],
+      "uv": [
+        0.8348241448402405,
+        0.5993777513504028
+      ],
+      "contact_proof": {
+        "object": "Ground_pad_1_1",
+        "ray_hit_world_m": [
+          0.7250000238418579,
+          0.20499999821186066,
+          -3.725290298461914e-08
+        ],
+        "normal_world": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "distance_error_m": 3.725290298461914e-08
+      }
+    }
+  },
+  "projected_geometry_envelope_px": [
+    [
+      91.44400787353516,
+      295.79718017578125
+    ],
+    [
+      111.93972778320312,
+      244.6146697998047
+    ],
+    [
+      131.02194213867188,
+      196.96202087402344
+    ],
+    [
+      141.26980590820312,
+      171.37078857421875
+    ],
+    [
+      932.5562133789062,
+      313.242919921875
+    ],
+    [
+      932.5562133789062,
+      326.771484375
+    ],
+    [
+      923.7218627929688,
+      348.83290100097656
+    ],
+    [
+      882.7304077148438,
+      451.1978530883789
+    ],
+    [
+      817.8289184570312,
+      593.9784622192383
+    ],
+    [
+      180.40370178222656,
+      479.69258880615234
+    ],
+    [
+      149.6314239501953,
+      474.1753234863281
+    ],
+    [
+      91.44400787353516,
+      309.32569885253906
+    ]
+  ],
+  "alpha": {
+    "decoded_channels": 4,
+    "pixel_size": [
+      1024,
+      768
+    ],
+    "alpha_nonzero_bbox_xywh": [
+      90,
+      172,
+      844,
+      423
+    ],
+    "alpha_nonzero_convex_envelope_pixel_edges": [
+      [
+        90,
+        296
+      ],
+      [
+        92,
+        290
+      ],
+      [
+        112,
+        240
+      ],
+      [
+        139,
+        173
+      ],
+      [
+        141,
+        172
+      ],
+      [
+        148,
+        172
+      ],
+      [
+        154,
+        173
+      ],
+      [
+        210,
+        183
+      ],
+      [
+        461,
+        228
+      ],
+      [
+        857,
+        299
+      ],
+      [
+        896,
+        306
+      ],
+      [
+        929,
+        312
+      ],
+      [
+        932,
+        313
+      ],
+      [
+        933,
+        314
+      ],
+      [
+        934,
+        316
+      ],
+      [
+        934,
+        327
+      ],
+      [
+        933,
+        330
+      ],
+      [
+        887,
+        445
+      ],
+      [
+        822,
+        589
+      ],
+      [
+        820,
+        593
+      ],
+      [
+        819,
+        594
+      ],
+      [
+        817,
+        595
+      ],
+      [
+        816,
+        595
+      ],
+      [
+        810,
+        594
+      ],
+      [
+        163,
+        478
+      ],
+      [
+        152,
+        476
+      ],
+      [
+        150,
+        475
+      ],
+      [
+        148,
+        473
+      ],
+      [
+        90,
+        307
+      ]
+    ],
+    "nonzero_pixels": 132344,
+    "opaque_pixels": 125318,
+    "antialiased_pixels": 7026,
+    "transparent_pixels": 654088,
+    "all_four_corners_fully_transparent": true,
+    "no_post_render_crop_or_alpha_processing": true
+  },
+  "files": {
+    "png": {
+      "path": "game-godot/assets/formula_lab/joint_bench_v1/bench.png",
+      "sha256": "752c47270a21c20d6f4663880ecf1acff5f91bb7ecbe9cadb7d6e2e1d92ea72f"
+    },
+    "blend": {
+      "path": "artifacts/formulas/visual-targets-v1/art/joint-bench-v1/blender/joint_bench_candidate.blend",
+      "sha256": "e7ee4a32636be730fce07ba46f70c2e8249d581afd3d653abaf376e3bc1625a6"
+    },
+    "script": {
+      "path": "artifacts/formulas/visual-targets-v1/art/joint-bench-v1/blender/build_joint_bench.py",
+      "sha256": "ebd73f350248b5e305ffccaff758cf9bc7c81bc196edca636cb5927ef37a35f9"
+    }
+  },
+  "integration_boundary": "Prop source only. Root must choose scale/placement, calibrate seat-body contact and foreground occlusion against the actual room; no gameplay facts are changed by this asset."
+}

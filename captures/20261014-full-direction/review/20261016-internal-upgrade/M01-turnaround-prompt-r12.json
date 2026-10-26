@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-18",
+  "mode": "built-in image_gen",
+  "user_directive": "ok这样可以了，补上无牌的三视图；继续下一批",
+  "asset": "M01 / 无牌一号",
+  "references": [
+    {
+      "file": "samples/M01-recognition-master-r4.png",
+      "role": "existing body below neck only; rejected old head excluded"
+    },
+    {
+      "file": "samples/M01-head-twin-side-grooves-r11.png",
+      "role": "newly user-approved front head; solid white spine plus two side grooves"
+    },
+    {
+      "file": "samples/M01-head-center-groove-three-quarter-r9b.png",
+      "role": "adopted same-head volume for side/back"
+    }
+  ],
+  "scope": "当前全身三视图派生候选；用户确认的是R11头部，不能扩大为新画三视图或整机完成认可。",
+  "transparent_background": true,
+  "prompt": "Use case: stylized-concept / mecha reference turnaround.\nCreate ONE clean full-body THREE-VIEW SHEET of Unbranded One / M01.\nInput 1 supplies the CURRENT BODY design BELOW THE NECK only. Keep its torso, limb proportions, panels and palette. Its old long-ear HEAD IS REJECTED and must be replaced.\nInput 2 is the USER-APPROVED exact FRONT head, now fixed.\nInput 3 is the USER-ADOPTED THREE-QUARTER head. Use the same approved head's volume for profile and back. Do not redesign this head.\n\nThree same-scale full-body views on one wide landscape sheet:\nLEFT true FRONT, CENTER true LEFT-SIDE PROFILE facing image-left, RIGHT true BACK.\nNo three-quarter body poses. All are the SAME robot in a neutral upright turnaround stance, feet parallel, fists relaxed closed, arms slightly clear of the torso. Crown apex, shoulder pivot, elbow, hip, knee, ankle and soles line up at the same heights. Full crown to both soles visible in each view, generous margins and gaps. No labels or text.\n\nAPPROVED HEAD:\nContinuous amber visor, smooth closed ivory mask, teal cheek/crown shell, round temple hubs. The center crown is a SOLID WHITE CENTRAL SPINE flanked by TWO narrow recessed yellow channels. Front sees TWO channels, one on each side of the white spine, exactly input 2. Profile shows the near channel in its proper lateral position, exactly as input 3; far channel may be hidden. Back preserves the same solid white spine and paired side-channel construction wherever visible. Never draw one yellow groove on the centerline.\nBoth compact temple antenna vanes are straight and point BACK in the same longitudinal direction as the crest, not up as long ears and not folded or flared sideways. Front foreshortening makes them narrow. NO old giant R4 ear crown, no forehead jewel, mouth grille, separate humanoid eyes or gold brow V.\n\nSAME BODY IN ALL VIEWS:\nAgile athletic martial-arts frame from input 1; do not make it chibi or a huge-fisted heavy boxer.\nRounded ivory shoulder caps with teal top panels and ochre edge accents; visible graphite circular shoulder pivots.\nBroad compact teal sternum shield with stepped ivory upper bridge. A restrained ochre latch on the ROBOT'S OWN LEFT upper chest (viewer-right in front) and diagonal ochre side rib brace stay on that same physical side; do not mirror asymmetry between views.\nOpen dark segmented rotary abdomen, compact white/teal hip guards and mobile pelvis.\nIvory upper arms, compact ivory/teal forearm guards with an ochre raised OUTSIDE strike rail, ivory cuffs, graphite segmented fingers and three ochre knuckle plates. These are blunt striking guards, not blades.\nIvory/teal thigh armor, black circular knees with small ochre hubs, tall ivory shin armor with teal inset and small dark vent; articulated broad running boots with teal toes, ivory instep and ochre heel accents. Same kneecap panels, calf silhouette, ankle structure and shoe lengths in profile/back. Knees bend forward anatomically, no reversed joints.\nBack logically continues the same compact thorax: teal central back shell, small inset ventilation and exposed graphite waist/spine. No large new backpack, wings, cannons, shield, drill, swords or other accessories. Minimal newly revealed reverse-side detail; derive shapes and seams from existing body volumes.\n\nWarm ivory dominant, deep teal secondary, restrained ochre structural accents and graphite inner joints. Preserve this machine's palette; no orange/red restyle. Match current KINETIC_CEL: confident dark variable ink, large painted armor planes, crisp one/two hard cel shadows, restrained seams. Match input 2/3 head drawing quality. No photoreal toy look, gradients, grime noise, extra logos or text.\nActual transparent background, no floor, cast shadow, checkerboard, title or frame. ONE three-view sheet only."
+}

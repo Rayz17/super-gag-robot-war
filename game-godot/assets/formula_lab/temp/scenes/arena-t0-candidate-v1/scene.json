@@ -1,0 +1,101 @@
+{
+  "schema_version": 2,
+  "profile": "candidate_tactical_orthographic_v1",
+  "candidate": true,
+  "not_canon": true,
+  "runtime_allowed": false,
+  "scene_id": "arena-t0-candidate-v1",
+  "camera_id": "tactical-t0-dimetric-v1",
+  "design_size": [
+    1280,
+    720
+  ],
+  "grid_origin_px": [
+    640.000061,
+    249.84021
+  ],
+  "basis_x": [
+    37.0,
+    18.5
+  ],
+  "basis_y": [
+    -37.000061,
+    18.5
+  ],
+  "board_size": [
+    7,
+    5
+  ],
+  "blocked": [],
+  "terrain": [
+    {
+      "cell": [
+        3,
+        2
+      ],
+      "kind": "support",
+      "label": "环心"
+    }
+  ],
+  "exit_cells": [],
+  "ring_out": false,
+  "texture_path": "res://assets/formula_lab/temp/scenes/arena-t0-candidate-v1/background.png",
+  "texture_sha256": "8ccac4998dc50fdd8866547ed9586db6bd151d9514c042de586e9aa01f783b91",
+  "landmarks": [
+    {
+      "id": "corner_nw",
+      "cell": [
+        0,
+        0
+      ],
+      "screen_px": [
+        640.000061,
+        249.84021
+      ]
+    },
+    {
+      "id": "corner_ne",
+      "cell": [
+        6,
+        0
+      ],
+      "screen_px": [
+        862.000061,
+        360.84021
+      ]
+    },
+    {
+      "id": "corner_se",
+      "cell": [
+        6,
+        4
+      ],
+      "screen_px": [
+        714.0,
+        434.840179
+      ]
+    },
+    {
+      "id": "corner_sw",
+      "cell": [
+        0,
+        4
+      ],
+      "screen_px": [
+        492.000061,
+        323.840179
+      ]
+    },
+    {
+      "id": "floor_center",
+      "cell": [
+        3.0,
+        2.0
+      ],
+      "screen_px": [
+        677.000061,
+        342.34021
+      ]
+    }
+  ]
+}

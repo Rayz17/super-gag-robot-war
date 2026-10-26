@@ -1,0 +1,2764 @@
+{
+  "a4_layer_count": 6,
+  "a4_layer_sources": {
+    "VS_MAP_BASE": {
+      "binding": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_policy": "camera_rect_intersection",
+        "display_scale": [
+          1.0,
+          1.0
+        ],
+        "layer": "base",
+        "mask_semantics": "opaque_world_base",
+        "native_size": [
+          2400.0,
+          1350.0
+        ],
+        "pivot_normalized": [
+          0.0,
+          0.0
+        ],
+        "pivot_px": [
+          0.0,
+          0.0
+        ],
+        "revision": 1.0,
+        "sha256": "98b2248d9b0691e7c8bf6eb2005572c4e13330e25b11f3e70403169ca19d7a8c",
+        "stable_id": "R2_A4_BASE_PROXY",
+        "target": "map_layer",
+        "view_space": "map_dimetric_40x20",
+        "z": -1200.0
+      },
+      "source_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-base.png",
+      "source_sha256": "6fd40a256afee225457594558edf274823de5d1e771d1f570d0263c5df217789",
+      "source_size": [
+        2400,
+        1350
+      ]
+    },
+    "VS_MAP_BUILDINGS": {
+      "binding": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_policy": "camera_rect_intersection",
+        "display_scale": [
+          1.0,
+          1.0
+        ],
+        "layer": "buildings",
+        "mask_semantics": "world_body",
+        "native_size": [
+          2400.0,
+          1350.0
+        ],
+        "pivot_normalized": [
+          0.0,
+          0.0
+        ],
+        "pivot_px": [
+          0.0,
+          0.0
+        ],
+        "revision": 1.0,
+        "sha256": "7bd431c28406affa111ac4f39be78dfc9f1e9fa2e7915ecf7cfd98eb81360921",
+        "stable_id": "R2_A4_BUILDINGS_PROXY",
+        "target": "map_layer",
+        "view_space": "map_dimetric_40x20",
+        "z": -900.0
+      },
+      "source_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-buildings.png",
+      "source_sha256": "db3f83eeb3ed5e583d0a831a203ab0d5446a594f9ed9e34f25f175f290f62237",
+      "source_size": [
+        2400,
+        1350
+      ]
+    },
+    "VS_MAP_FOREGROUND": {
+      "binding": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_policy": "camera_rect_intersection",
+        "display_scale": [
+          1.0,
+          1.0
+        ],
+        "layer": "foreground",
+        "mask_semantics": "fade_50_outline_candidate",
+        "native_size": [
+          2400.0,
+          1350.0
+        ],
+        "pivot_normalized": [
+          0.0,
+          0.0
+        ],
+        "pivot_px": [
+          0.0,
+          0.0
+        ],
+        "revision": 1.0,
+        "sha256": "927e303421f3e633461c23a0c6455cf773c728f8b2f3dec2d5d77fa3d3002ff8",
+        "stable_id": "R2_A4_FOREGROUND_PROXY",
+        "target": "map_layer",
+        "view_space": "map_dimetric_40x20",
+        "z": 1100.0
+      },
+      "source_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-foreground.png",
+      "source_sha256": "454b3cf845ba91d7d7f13e201874bbbe79f871297a36930a24348823df1525a3",
+      "source_size": [
+        2400,
+        1350
+      ]
+    },
+    "VS_MAP_LIGHTING": {
+      "binding": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_policy": "camera_rect_intersection",
+        "display_scale": [
+          1.0,
+          1.0
+        ],
+        "layer": "state_layers",
+        "mask_semantics": "state_overlay",
+        "native_size": [
+          2400.0,
+          1350.0
+        ],
+        "pivot_normalized": [
+          0.0,
+          0.0
+        ],
+        "pivot_px": [
+          0.0,
+          0.0
+        ],
+        "revision": 1.0,
+        "sha256": "ed79f928e423691102c356eb7bb1171f427a0e238f679c4f76bfda00e3d3f7a0",
+        "stable_id": "R2_A4_STATE_PROXY",
+        "target": "map_layer",
+        "view_space": "map_dimetric_40x20",
+        "z": -200.0
+      },
+      "source_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a4-map-b-six-layer/A4_MAP_B_STATE_LAYERS_2400x1350.png",
+      "source_sha256": "05833205230b087b3024545a1344174fb1a73c7975087fcf06808d62b01d3ff1",
+      "source_size": [
+        2400,
+        1350
+      ]
+    },
+    "VS_MAP_OCCLUSION": {
+      "binding": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_policy": "camera_rect_intersection",
+        "display_scale": [
+          1.0,
+          1.0
+        ],
+        "layer": "occlusion",
+        "mask_semantics": "sample_only_rgba_control",
+        "native_size": [
+          2400.0,
+          1350.0
+        ],
+        "pivot_normalized": [
+          0.0,
+          0.0
+        ],
+        "pivot_px": [
+          0.0,
+          0.0
+        ],
+        "revision": 1.0,
+        "sha256": "c8271169c70e072c40880d5cdaf868e9eece31d3f6f1841141f5a5ee02741e58",
+        "stable_id": "R2_A4_OCCLUSION_PROXY",
+        "target": "map_layer",
+        "view_space": "map_dimetric_40x20",
+        "z": 1200.0
+      },
+      "source_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-occlusion-mask.png",
+      "source_sha256": "b5f68f4749f6bff2025409622888d8e8faa17d977aca372caa43121eec18e899",
+      "source_size": [
+        2400,
+        1350
+      ]
+    },
+    "VS_MAP_ROOFS": {
+      "binding": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_policy": "camera_rect_intersection",
+        "display_scale": [
+          1.0,
+          1.0
+        ],
+        "layer": "roofs",
+        "mask_semantics": "fade_50_outline_candidate",
+        "native_size": [
+          2400.0,
+          1350.0
+        ],
+        "pivot_normalized": [
+          0.0,
+          0.0
+        ],
+        "pivot_px": [
+          0.0,
+          0.0
+        ],
+        "revision": 1.0,
+        "sha256": "339476411d9fb2250b6b439f8f4b95b971723e0fd08daf6d9714ab37f9bbadc6",
+        "stable_id": "R2_A4_ROOFS_PROXY",
+        "target": "map_layer",
+        "view_space": "map_dimetric_40x20",
+        "z": 900.0
+      },
+      "source_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-roofs.png",
+      "source_sha256": "7fea3c7918ff85bb1d5df1f4bcc5856afac1d8fa7f174d59b862f985962f11a9",
+      "source_size": [
+        2400,
+        1350
+      ]
+    }
+  },
+  "acceptance_gate": "PENDING_PRODUCER_R2C_ACTUAL_FRAME_ACCEPTANCE",
+  "calibration_proxy_only": true,
+  "canon_modified": false,
+  "capture_count": 5,
+  "captures": [
+    {
+      "actual_runtime_frame": true,
+      "calibration_proxy_only": true,
+      "camera": {
+        "center": [
+          -720.0,
+          350.0
+        ],
+        "cursor": [
+          15,
+          11
+        ],
+        "edge_threshold": 92.0,
+        "edge_trigger_rect": [
+          -1268.0,
+          150.0,
+          1096.0,
+          400.0
+        ],
+        "last_focus_crossed_edge": false,
+        "map_is_larger_than_view": true,
+        "performance_focus_cell": [
+          19.0,
+          10.0
+        ],
+        "performance_shake": [
+          0.0,
+          0.0
+        ],
+        "performance_zoom": 1.0,
+        "projection_id": "A4_ISOMETRIC_40X20",
+        "safe_ratio": 0.6,
+        "target": [
+          -720.0,
+          350.0
+        ],
+        "tile_half": [
+          40.0,
+          20.0
+        ],
+        "viewport_rect": [
+          0.0,
+          58.0,
+          1280.0,
+          584.0
+        ],
+        "world_bounds": [
+          -1650.0,
+          -260.0,
+          2100.0,
+          1140.0
+        ],
+        "world_origin": [
+          -880.0,
+          -170.0
+        ]
+      },
+      "capture_id": "01_A_T2_SOUTH_BRACE",
+      "capture_method": "Godot root viewport get_texture().get_image(); no offline composite",
+      "default_entry_changed": false,
+      "evidence_class": "g2_a1_r2c_actual_godot_root_viewport_proxy_contact_staging",
+      "existing_a4_layers_loaded": 6,
+      "formal_profile_override": false,
+      "g2_b_allowed": false,
+      "geometry": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "directions": {
+          "east": {
+            "grid_delta": [
+              1,
+              0
+            ],
+            "screen_delta_px": [
+              40.0,
+              20.0
+            ]
+          },
+          "north": {
+            "grid_delta": [
+              0,
+              -1
+            ],
+            "screen_delta_px": [
+              40.0,
+              -20.0
+            ]
+          },
+          "south": {
+            "grid_delta": [
+              0,
+              1
+            ],
+            "screen_delta_px": [
+              -40.0,
+              20.0
+            ]
+          },
+          "west": {
+            "grid_delta": [
+              -1,
+              0
+            ],
+            "screen_delta_px": [
+              -40.0,
+              -20.0
+            ]
+          }
+        },
+        "projection_id": "A4_ISOMETRIC_40X20",
+        "projection_origin": [
+          -880.0,
+          -170.0
+        ],
+        "tile_half": [
+          40.0,
+          20.0
+        ],
+        "view_space": "map_dimetric_40x20"
+      },
+      "pixel_sample": {
+        "center": "4c4b87ff",
+        "sampled_opaque_pixels": 1032,
+        "sampled_unique_colors": 70
+      },
+      "png_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a1-r2c/captures/C01E02_G2A1_R2C_01_A_T2_SOUTH_BRACE_ACTUAL_1280x720.png",
+      "png_sha256": "ed09fa9b99b9da69bfcf547c560f4a736c2a9a8f2dbecedd4e56766ae42441a0",
+      "runtime_promotion": false,
+      "state": {
+        "contact_facing": "south",
+        "phase": "settle",
+        "planning_endpoint": [
+          20,
+          9
+        ],
+        "route": [
+          [
+            15.0,
+            11.0
+          ],
+          [
+            16.0,
+            11.0
+          ],
+          [
+            17.0,
+            11.0
+          ],
+          [
+            18.0,
+            11.0
+          ],
+          [
+            18.0,
+            10.0
+          ],
+          [
+            19.0,
+            10.0
+          ],
+          [
+            19.0,
+            9.0
+          ],
+          [
+            20.0,
+            9.0
+          ]
+        ],
+        "settle_facing": "south",
+        "strategy": "A",
+        "timeslice": "T2"
+      },
+      "unit_real_art_loaded": 0,
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "actual_runtime_frame": true,
+      "calibration_proxy_only": true,
+      "camera": {
+        "center": [
+          -720.0,
+          350.0
+        ],
+        "cursor": [
+          15,
+          11
+        ],
+        "edge_threshold": 92.0,
+        "edge_trigger_rect": [
+          -1268.0,
+          150.0,
+          1096.0,
+          400.0
+        ],
+        "last_focus_crossed_edge": false,
+        "map_is_larger_than_view": true,
+        "performance_focus_cell": [
+          20.5,
+          10.5
+        ],
+        "performance_shake": [
+          0.0,
+          0.0
+        ],
+        "performance_zoom": 1.0,
+        "projection_id": "A4_ISOMETRIC_40X20",
+        "safe_ratio": 0.6,
+        "target": [
+          -720.0,
+          350.0
+        ],
+        "tile_half": [
+          40.0,
+          20.0
+        ],
+        "viewport_rect": [
+          0.0,
+          58.0,
+          1280.0,
+          584.0
+        ],
+        "world_bounds": [
+          -1650.0,
+          -260.0,
+          2100.0,
+          1140.0
+        ],
+        "world_origin": [
+          -880.0,
+          -170.0
+        ]
+      },
+      "capture_id": "02_A_T3_FRONT_CONTACT",
+      "capture_method": "Godot root viewport get_texture().get_image(); no offline composite",
+      "default_entry_changed": false,
+      "evidence_class": "g2_a1_r2c_actual_godot_root_viewport_proxy_contact_staging",
+      "existing_a4_layers_loaded": 6,
+      "formal_profile_override": false,
+      "g2_b_allowed": false,
+      "geometry": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "directions": {
+          "east": {
+            "grid_delta": [
+              1,
+              0
+            ],
+            "screen_delta_px": [
+              40.0,
+              20.0
+            ]
+          },
+          "north": {
+            "grid_delta": [
+              0,
+              -1
+            ],
+            "screen_delta_px": [
+              40.0,
+              -20.0
+            ]
+          },
+          "south": {
+            "grid_delta": [
+              0,
+              1
+            ],
+            "screen_delta_px": [
+              -40.0,
+              20.0
+            ]
+          },
+          "west": {
+            "grid_delta": [
+              -1,
+              0
+            ],
+            "screen_delta_px": [
+              -40.0,
+              -20.0
+            ]
+          }
+        },
+        "projection_id": "A4_ISOMETRIC_40X20",
+        "projection_origin": [
+          -880.0,
+          -170.0
+        ],
+        "tile_half": [
+          40.0,
+          20.0
+        ],
+        "view_space": "map_dimetric_40x20"
+      },
+      "pixel_sample": {
+        "center": "cd91adff",
+        "sampled_opaque_pixels": 1032,
+        "sampled_unique_colors": 76
+      },
+      "png_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a1-r2c/captures/C01E02_G2A1_R2C_02_A_T3_FRONT_CONTACT_ACTUAL_1280x720.png",
+      "png_sha256": "dda2ac1253015bb7053242cc594fb007fdca89274d6a2f4b05d02eeb4753067c",
+      "runtime_promotion": false,
+      "state": {
+        "contact": {
+          "approach_grid_vector": [
+            0.0,
+            -1.0
+          ],
+          "approach_matches_contact_normal": true,
+          "approach_screen_vector_px": [
+            40.0,
+            -20.0
+          ],
+          "breaker_facing_matches_contact_normal": true,
+          "breaker_rect": [
+            20.0,
+            11.0,
+            3,
+            3
+          ],
+          "contact": true,
+          "contact_edge": "guardian_south_to_breaker_north",
+          "contact_normal_grid": [
+            0.0,
+            1.0
+          ],
+          "contact_normal_screen_px": [
+            -40.0,
+            20.0
+          ],
+          "contact_without_gap_or_overlap": true,
+          "guardian_facing_matches_contact_normal": true,
+          "guardian_rect": [
+            20.0,
+            9.0,
+            2,
+            2
+          ],
+          "impact_socket_grid": [
+            20.5,
+            10.5
+          ],
+          "impact_socket_raw_px": [
+            -480.0,
+            450.0
+          ],
+          "impulse_grid_vector": [
+            0.0,
+            -1.0
+          ],
+          "impulse_screen_vector_px": [
+            40.0,
+            -20.0
+          ],
+          "narrative_front_contact_closed": true,
+          "no_footprint_overlap": true,
+          "post_contact_anchor": [
+            20.0,
+            8.5
+          ],
+          "recoil_grid_vector": [
+            0.0,
+            -0.5
+          ],
+          "recoil_screen_vector_px": [
+            20.0,
+            -10.0
+          ],
+          "rectangles_overlap": false,
+          "shared_contact_edge_cells": 2
+        },
+        "phase": "contact",
+        "post_breaker_anchor": [
+          21,
+          11
+        ],
+        "post_guardian_anchor": [
+          20,
+          9
+        ],
+        "side_armor_socket_grid": [
+          24.0,
+          12.5
+        ],
+        "strategy": "A",
+        "timeslice": "T3.00",
+        "visual_recoil_anchor": [
+          20.0,
+          8.5
+        ]
+      },
+      "unit_real_art_loaded": 0,
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "actual_runtime_frame": true,
+      "calibration_proxy_only": true,
+      "camera": {
+        "center": [
+          -720.0,
+          350.0
+        ],
+        "cursor": [
+          15,
+          11
+        ],
+        "edge_threshold": 92.0,
+        "edge_trigger_rect": [
+          -1268.0,
+          150.0,
+          1096.0,
+          400.0
+        ],
+        "last_focus_crossed_edge": false,
+        "map_is_larger_than_view": true,
+        "performance_focus_cell": [
+          18.5,
+          10.0
+        ],
+        "performance_shake": [
+          0.0,
+          0.0
+        ],
+        "performance_zoom": 1.0,
+        "projection_id": "A4_ISOMETRIC_40X20",
+        "safe_ratio": 0.6,
+        "target": [
+          -720.0,
+          350.0
+        ],
+        "tile_half": [
+          40.0,
+          20.0
+        ],
+        "viewport_rect": [
+          0.0,
+          58.0,
+          1280.0,
+          584.0
+        ],
+        "world_bounds": [
+          -1650.0,
+          -260.0,
+          2100.0,
+          1140.0
+        ],
+        "world_origin": [
+          -880.0,
+          -170.0
+        ]
+      },
+      "capture_id": "03_B_T2_EAST_TO_SOUTH",
+      "capture_method": "Godot root viewport get_texture().get_image(); no offline composite",
+      "default_entry_changed": false,
+      "evidence_class": "g2_a1_r2c_actual_godot_root_viewport_proxy_contact_staging",
+      "existing_a4_layers_loaded": 6,
+      "formal_profile_override": false,
+      "g2_b_allowed": false,
+      "geometry": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "directions": {
+          "east": {
+            "grid_delta": [
+              1,
+              0
+            ],
+            "screen_delta_px": [
+              40.0,
+              20.0
+            ]
+          },
+          "north": {
+            "grid_delta": [
+              0,
+              -1
+            ],
+            "screen_delta_px": [
+              40.0,
+              -20.0
+            ]
+          },
+          "south": {
+            "grid_delta": [
+              0,
+              1
+            ],
+            "screen_delta_px": [
+              -40.0,
+              20.0
+            ]
+          },
+          "west": {
+            "grid_delta": [
+              -1,
+              0
+            ],
+            "screen_delta_px": [
+              -40.0,
+              -20.0
+            ]
+          }
+        },
+        "projection_id": "A4_ISOMETRIC_40X20",
+        "projection_origin": [
+          -880.0,
+          -170.0
+        ],
+        "tile_half": [
+          40.0,
+          20.0
+        ],
+        "view_space": "map_dimetric_40x20"
+      },
+      "pixel_sample": {
+        "center": "605ba8ff",
+        "sampled_opaque_pixels": 1032,
+        "sampled_unique_colors": 70
+      },
+      "png_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a1-r2c/captures/C01E02_G2A1_R2C_03_B_T2_EAST_TO_SOUTH_ACTUAL_1280x720.png",
+      "png_sha256": "00437ca28648c3fd410d39edcfd4e164f042507aa6cf2271eee9578311a99df8",
+      "runtime_promotion": false,
+      "state": {
+        "contact_facing": "south",
+        "contact_timeslice": "T3.25",
+        "phase": "settle_and_interaction_preview",
+        "planning_endpoint": [
+          19,
+          9
+        ],
+        "route": [
+          [
+            15.0,
+            11.0
+          ],
+          [
+            15.0,
+            10.0
+          ],
+          [
+            16.0,
+            10.0
+          ],
+          [
+            17.0,
+            10.0
+          ],
+          [
+            18.0,
+            10.0
+          ],
+          [
+            19.0,
+            10.0
+          ],
+          [
+            19.0,
+            9.0
+          ]
+        ],
+        "settle_facing": "east",
+        "strategy": "B",
+        "timeslice": "T2_PREVIEW"
+      },
+      "unit_real_art_loaded": 0,
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "actual_runtime_frame": true,
+      "calibration_proxy_only": true,
+      "camera": {
+        "center": [
+          -720.0,
+          350.0
+        ],
+        "cursor": [
+          15,
+          11
+        ],
+        "edge_threshold": 92.0,
+        "edge_trigger_rect": [
+          -1268.0,
+          150.0,
+          1096.0,
+          400.0
+        ],
+        "last_focus_crossed_edge": false,
+        "map_is_larger_than_view": true,
+        "performance_focus_cell": [
+          20.0,
+          10.5
+        ],
+        "performance_shake": [
+          0.0,
+          0.0
+        ],
+        "performance_zoom": 1.0,
+        "projection_id": "A4_ISOMETRIC_40X20",
+        "safe_ratio": 0.6,
+        "target": [
+          -720.0,
+          350.0
+        ],
+        "tile_half": [
+          40.0,
+          20.0
+        ],
+        "viewport_rect": [
+          0.0,
+          58.0,
+          1280.0,
+          584.0
+        ],
+        "world_bounds": [
+          -1650.0,
+          -260.0,
+          2100.0,
+          1140.0
+        ],
+        "world_origin": [
+          -880.0,
+          -170.0
+        ]
+      },
+      "capture_id": "04_B_T3_25_OFFSET_CONTACT",
+      "capture_method": "Godot root viewport get_texture().get_image(); no offline composite",
+      "default_entry_changed": false,
+      "evidence_class": "g2_a1_r2c_actual_godot_root_viewport_proxy_contact_staging",
+      "existing_a4_layers_loaded": 6,
+      "formal_profile_override": false,
+      "g2_b_allowed": false,
+      "geometry": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "directions": {
+          "east": {
+            "grid_delta": [
+              1,
+              0
+            ],
+            "screen_delta_px": [
+              40.0,
+              20.0
+            ]
+          },
+          "north": {
+            "grid_delta": [
+              0,
+              -1
+            ],
+            "screen_delta_px": [
+              40.0,
+              -20.0
+            ]
+          },
+          "south": {
+            "grid_delta": [
+              0,
+              1
+            ],
+            "screen_delta_px": [
+              -40.0,
+              20.0
+            ]
+          },
+          "west": {
+            "grid_delta": [
+              -1,
+              0
+            ],
+            "screen_delta_px": [
+              -40.0,
+              -20.0
+            ]
+          }
+        },
+        "projection_id": "A4_ISOMETRIC_40X20",
+        "projection_origin": [
+          -880.0,
+          -170.0
+        ],
+        "tile_half": [
+          40.0,
+          20.0
+        ],
+        "view_space": "map_dimetric_40x20"
+      },
+      "pixel_sample": {
+        "center": "cc91adff",
+        "sampled_opaque_pixels": 1032,
+        "sampled_unique_colors": 87
+      },
+      "png_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a1-r2c/captures/C01E02_G2A1_R2C_04_B_T3_25_OFFSET_CONTACT_ACTUAL_1280x720.png",
+      "png_sha256": "b14193a0b8f9c1100341c6c627432a587bf70a46febfb90b1c54622522750ef3",
+      "runtime_promotion": false,
+      "state": {
+        "comparison_anchor_A": [
+          20,
+          9
+        ],
+        "contact": {
+          "approach_grid_vector": [
+            0.0,
+            -1.0
+          ],
+          "approach_matches_contact_normal": true,
+          "approach_screen_vector_px": [
+            40.0,
+            -20.0
+          ],
+          "breaker_facing_matches_contact_normal": true,
+          "breaker_rect": [
+            20.0,
+            11.0,
+            3,
+            3
+          ],
+          "contact": true,
+          "contact_edge": "guardian_south_to_breaker_north",
+          "contact_normal_grid": [
+            0.0,
+            1.0
+          ],
+          "contact_normal_screen_px": [
+            -40.0,
+            20.0
+          ],
+          "contact_without_gap_or_overlap": true,
+          "guardian_facing_matches_contact_normal": true,
+          "guardian_rect": [
+            19.0,
+            9.0,
+            2,
+            2
+          ],
+          "impact_socket_grid": [
+            20.0,
+            10.5
+          ],
+          "impact_socket_raw_px": [
+            -500.0,
+            440.0
+          ],
+          "impulse_grid_vector": [
+            0.0,
+            -1.0
+          ],
+          "impulse_screen_vector_px": [
+            40.0,
+            -20.0
+          ],
+          "narrative_front_contact_closed": true,
+          "no_footprint_overlap": true,
+          "post_contact_anchor": [
+            19.0,
+            8.5
+          ],
+          "recoil_grid_vector": [
+            0.0,
+            -0.5
+          ],
+          "recoil_screen_vector_px": [
+            20.0,
+            -10.0
+          ],
+          "rectangles_overlap": false,
+          "shared_contact_edge_cells": 1
+        },
+        "phase": "contact",
+        "post_breaker_anchor": [
+          21,
+          10
+        ],
+        "post_guardian_anchor": [
+          19,
+          9
+        ],
+        "side_armor_socket_grid": [
+          24.0,
+          11.5
+        ],
+        "strategy": "B",
+        "timeslice": "T3.25",
+        "visual_recoil_anchor": [
+          19.0,
+          8.5
+        ]
+      },
+      "unit_real_art_loaded": 0,
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    {
+      "actual_runtime_frame": true,
+      "calibration_proxy_only": true,
+      "camera": {
+        "center": [
+          -720.0,
+          350.0
+        ],
+        "cursor": [
+          15,
+          11
+        ],
+        "edge_threshold": 92.0,
+        "edge_trigger_rect": [
+          -1268.0,
+          150.0,
+          1096.0,
+          400.0
+        ],
+        "last_focus_crossed_edge": false,
+        "map_is_larger_than_view": true,
+        "performance_focus_cell": [
+          17.5,
+          9.5
+        ],
+        "performance_shake": [
+          0.0,
+          0.0
+        ],
+        "performance_zoom": 1.0,
+        "projection_id": "A4_ISOMETRIC_40X20",
+        "safe_ratio": 0.6,
+        "target": [
+          -720.0,
+          350.0
+        ],
+        "tile_half": [
+          40.0,
+          20.0
+        ],
+        "viewport_rect": [
+          0.0,
+          58.0,
+          1280.0,
+          584.0
+        ],
+        "world_bounds": [
+          -1650.0,
+          -260.0,
+          2100.0,
+          1140.0
+        ],
+        "world_origin": [
+          -880.0,
+          -170.0
+        ]
+      },
+      "capture_id": "05_R2_DYNAMIC_BREAKER_BLOCK",
+      "capture_method": "Godot root viewport get_texture().get_image(); no offline composite",
+      "default_entry_changed": false,
+      "evidence_class": "g2_a1_r2c_actual_godot_root_viewport_proxy_contact_staging",
+      "existing_a4_layers_loaded": 6,
+      "formal_profile_override": false,
+      "g2_b_allowed": false,
+      "geometry": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "directions": {
+          "east": {
+            "grid_delta": [
+              1,
+              0
+            ],
+            "screen_delta_px": [
+              40.0,
+              20.0
+            ]
+          },
+          "north": {
+            "grid_delta": [
+              0,
+              -1
+            ],
+            "screen_delta_px": [
+              40.0,
+              -20.0
+            ]
+          },
+          "south": {
+            "grid_delta": [
+              0,
+              1
+            ],
+            "screen_delta_px": [
+              -40.0,
+              20.0
+            ]
+          },
+          "west": {
+            "grid_delta": [
+              -1,
+              0
+            ],
+            "screen_delta_px": [
+              -40.0,
+              -20.0
+            ]
+          }
+        },
+        "projection_id": "A4_ISOMETRIC_40X20",
+        "projection_origin": [
+          -880.0,
+          -170.0
+        ],
+        "tile_half": [
+          40.0,
+          20.0
+        ],
+        "view_space": "map_dimetric_40x20"
+      },
+      "pixel_sample": {
+        "center": "58699cff",
+        "sampled_opaque_pixels": 1032,
+        "sampled_unique_colors": 102
+      },
+      "png_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a1-r2c/captures/C01E02_G2A1_R2C_05_R2_DYNAMIC_BREAKER_BLOCK_ACTUAL_1280x720.png",
+      "png_sha256": "6f8093c45380f16fb61248c10e340cebb394c984a3770d536d556d0c7ab6884a",
+      "runtime_promotion": false,
+      "state": {
+        "dynamic_breaker_anchor": [
+          21,
+          11
+        ],
+        "dynamic_breaker_footprint": [
+          3,
+          3
+        ],
+        "legal_route": [
+          [
+            20.0,
+            9.0
+          ],
+          [
+            19.0,
+            9.0
+          ],
+          [
+            18.0,
+            9.0
+          ],
+          [
+            17.0,
+            9.0
+          ],
+          [
+            16.0,
+            9.0
+          ],
+          [
+            15.0,
+            9.0
+          ],
+          [
+            14.0,
+            9.0
+          ],
+          [
+            14.0,
+            10.0
+          ],
+          [
+            15.0,
+            10.0
+          ],
+          [
+            16.0,
+            10.0
+          ],
+          [
+            17.0,
+            10.0
+          ]
+        ],
+        "preview_execute_same_resolver": true,
+        "rejected_guardian_anchor": [
+          20,
+          10
+        ],
+        "round": 2,
+        "strategy": "A"
+      },
+      "unit_real_art_loaded": 0,
+      "viewport": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "consumer_receipt": {
+    "audio_binding_count": 0,
+    "binding_count": 11,
+    "binding_receipts": {
+      "VS_BREAKER_QSD": {
+        "binding": {
+          "atlas_size": [
+            768.0,
+            1920.0
+          ],
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "fixture_sparse_clip_layout": {
+            "atlas_size": [
+              768,
+              1920
+            ],
+            "cartesian_product": false,
+            "clip_count": 9
+          },
+          "footprint": [
+            3.0,
+            3.0
+          ],
+          "fps_or_hold": {
+            "fps": 8.0,
+            "hold_last": true
+          },
+          "interaction_sockets": {
+            "body_socket_px": [
+              192.0,
+              220.0
+            ],
+            "impact_socket_px": [
+              212.0,
+              210.0
+            ],
+            "shield_socket_px": [
+              192.0,
+              250.0
+            ],
+            "target_socket_px": [
+              212.0,
+              210.0
+            ],
+            "weapon_socket_px": [
+              176.0,
+              206.0
+            ]
+          },
+          "native_size": [
+            384.0,
+            384.0
+          ],
+          "pivot_normalized": [
+            0.5,
+            0.8333333333
+          ],
+          "pivot_px": [
+            192.0,
+            320.0
+          ],
+          "revision": 1.0,
+          "sha256": "2669e75fbbaae5d7f6a24b3a79435885151ea37371bfedb66f4876c132725147",
+          "sparse_clips": {
+            "charge/north/0": [
+              0.0,
+              0.0,
+              384.0,
+              384.0
+            ],
+            "charge/north/1": [
+              384.0,
+              0.0,
+              384.0,
+              384.0
+            ],
+            "contact/north/0": [
+              0.0,
+              384.0,
+              384.0,
+              384.0
+            ],
+            "contact/north/1": [
+              384.0,
+              384.0,
+              384.0,
+              384.0
+            ],
+            "recoil/north/0": [
+              0.0,
+              768.0,
+              384.0,
+              384.0
+            ],
+            "recoil/north/1": [
+              384.0,
+              768.0,
+              384.0,
+              384.0
+            ],
+            "red_charge/north/0": [
+              0.0,
+              1536.0,
+              384.0,
+              384.0
+            ],
+            "red_charge/north/1": [
+              384.0,
+              1536.0,
+              384.0,
+              384.0
+            ],
+            "side_hit/north/0": [
+              0.0,
+              1152.0,
+              384.0,
+              384.0
+            ]
+          },
+          "stable_id": "R2_BREAKER_GEOMETRY_PROXY",
+          "state_aliases": {
+            "anticipation": {
+              "signature": "R2-BR-ANTICIPATION-CHARGE",
+              "target": "charge"
+            },
+            "charge_partially_redirected": {
+              "signature": "R2-BR-PARTIAL-RECOIL",
+              "target": "recoil"
+            },
+            "charging_run": {
+              "signature": "R2-BR-CHARGING-CHARGE",
+              "target": "charge"
+            },
+            "impact": {
+              "signature": "R2-BR-IMPACT-CONTACT",
+              "target": "contact"
+            },
+            "late_contact_deeper": {
+              "signature": "R2-BR-LATE-RECOIL",
+              "target": "recoil"
+            },
+            "side_armor_hit": {
+              "signature": "R2-BR-SIDE-HIT",
+              "target": "side_hit"
+            }
+          },
+          "subject_ids": [
+            "ENEMY_C01_BREAKER"
+          ],
+          "target": "world_unit",
+          "view_space": "map_dimetric_40x20",
+          "z_bias": 2.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticUnitFixtures/@Node2D@56",
+        "runtime_real": false,
+        "target": "world_unit"
+      },
+      "VS_GUARDIAN_QSD": {
+        "binding": {
+          "atlas_size": [
+            768.0,
+            1536.0
+          ],
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "fixture_sparse_clip_layout": {
+            "atlas_size": [
+              768,
+              1536
+            ],
+            "cartesian_product": false,
+            "clip_count": 13
+          },
+          "footprint": [
+            2.0,
+            2.0
+          ],
+          "fps_or_hold": {
+            "fps": 8.0,
+            "hold_last": true
+          },
+          "interaction_sockets": {
+            "body_socket_px": [
+              128.0,
+              150.0
+            ],
+            "impact_socket_px": [
+              108.0,
+              214.0
+            ],
+            "shield_socket_px": [
+              86.0,
+              170.0
+            ],
+            "target_socket_px": [
+              108.0,
+              214.0
+            ],
+            "weapon_socket_px": [
+              170.0,
+              160.0
+            ]
+          },
+          "native_size": [
+            256.0,
+            256.0
+          ],
+          "pivot_normalized": [
+            0.5,
+            0.875
+          ],
+          "pivot_px": [
+            128.0,
+            224.0
+          ],
+          "revision": 1.0,
+          "sha256": "e8ff69a856a846cfce7e2324f089e0b1f5aec8547238edfd8f3fdb220a0421b0",
+          "sparse_clips": {
+            "brace/east/0": [
+              256.0,
+              768.0,
+              256.0,
+              256.0
+            ],
+            "brace/south/0": [
+              0.0,
+              768.0,
+              256.0,
+              256.0
+            ],
+            "contact/east/0": [
+              512.0,
+              1024.0,
+              256.0,
+              256.0
+            ],
+            "contact/south/0": [
+              0.0,
+              1024.0,
+              256.0,
+              256.0
+            ],
+            "contact/south/1": [
+              256.0,
+              1024.0,
+              256.0,
+              256.0
+            ],
+            "idle/east/0": [
+              0.0,
+              0.0,
+              256.0,
+              256.0
+            ],
+            "idle/south/0": [
+              256.0,
+              0.0,
+              256.0,
+              256.0
+            ],
+            "move/east/0": [
+              0.0,
+              256.0,
+              256.0,
+              256.0
+            ],
+            "move/east/1": [
+              256.0,
+              256.0,
+              256.0,
+              256.0
+            ],
+            "move/north/0": [
+              0.0,
+              512.0,
+              256.0,
+              256.0
+            ],
+            "move/north/1": [
+              256.0,
+              512.0,
+              256.0,
+              256.0
+            ],
+            "recoil/east/0": [
+              256.0,
+              1280.0,
+              256.0,
+              256.0
+            ],
+            "recoil/south/0": [
+              0.0,
+              1280.0,
+              256.0,
+              256.0
+            ]
+          },
+          "stable_id": "R2_GUARDIAN_GEOMETRY_PROXY",
+          "state_aliases": {
+            "active": {
+              "signature": "R2-GZ-ACTIVE-IDLE",
+              "target": "idle"
+            },
+            "anticipation": {
+              "signature": "R2-GZ-ANTICIPATION-BRACE",
+              "target": "brace"
+            },
+            "contact_failed": {
+              "signature": "R2-GZ-FAIL-BRACE",
+              "target": "brace"
+            },
+            "holding_first_contact": {
+              "signature": "R2-GZ-HOLD-BRACE",
+              "target": "brace"
+            },
+            "impact": {
+              "signature": "R2-GZ-IMPACT-CONTACT",
+              "target": "contact"
+            },
+            "recoil_hold": {
+              "signature": "R2-GZ-RECOIL-HOLD",
+              "target": "recoil"
+            }
+          },
+          "subject_ids": [
+            "V353U001"
+          ],
+          "target": "world_unit",
+          "view_space": "map_dimetric_40x20",
+          "z_bias": 1.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticUnitFixtures/@Node2D@57",
+        "runtime_real": false,
+        "target": "world_unit"
+      },
+      "VS_MAP_BASE": {
+        "binding": {
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "canvas_origin_raw_px": [
+            -1680.0,
+            -350.0
+          ],
+          "canvas_size": [
+            2400.0,
+            1350.0
+          ],
+          "crop_policy": "camera_rect_intersection",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "layer": "base",
+          "mask_semantics": "opaque_world_base",
+          "native_size": [
+            2400.0,
+            1350.0
+          ],
+          "pivot_normalized": [
+            0.0,
+            0.0
+          ],
+          "pivot_px": [
+            0.0,
+            0.0
+          ],
+          "revision": 1.0,
+          "sha256": "98b2248d9b0691e7c8bf6eb2005572c4e13330e25b11f3e70403169ca19d7a8c",
+          "stable_id": "R2_A4_BASE_PROXY",
+          "target": "map_layer",
+          "view_space": "map_dimetric_40x20",
+          "z": -1200.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticMapFixtures/@Node2D@58",
+        "runtime_real": false,
+        "target": "map_layer"
+      },
+      "VS_MAP_BUILDINGS": {
+        "binding": {
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "canvas_origin_raw_px": [
+            -1680.0,
+            -350.0
+          ],
+          "canvas_size": [
+            2400.0,
+            1350.0
+          ],
+          "crop_policy": "camera_rect_intersection",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "layer": "buildings",
+          "mask_semantics": "world_body",
+          "native_size": [
+            2400.0,
+            1350.0
+          ],
+          "pivot_normalized": [
+            0.0,
+            0.0
+          ],
+          "pivot_px": [
+            0.0,
+            0.0
+          ],
+          "revision": 1.0,
+          "sha256": "7bd431c28406affa111ac4f39be78dfc9f1e9fa2e7915ecf7cfd98eb81360921",
+          "stable_id": "R2_A4_BUILDINGS_PROXY",
+          "target": "map_layer",
+          "view_space": "map_dimetric_40x20",
+          "z": -900.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticMapFixtures/@Node2D@60",
+        "runtime_real": false,
+        "target": "map_layer"
+      },
+      "VS_MAP_FOREGROUND": {
+        "binding": {
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "canvas_origin_raw_px": [
+            -1680.0,
+            -350.0
+          ],
+          "canvas_size": [
+            2400.0,
+            1350.0
+          ],
+          "crop_policy": "camera_rect_intersection",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "layer": "foreground",
+          "mask_semantics": "fade_50_outline_candidate",
+          "native_size": [
+            2400.0,
+            1350.0
+          ],
+          "pivot_normalized": [
+            0.0,
+            0.0
+          ],
+          "pivot_px": [
+            0.0,
+            0.0
+          ],
+          "revision": 1.0,
+          "sha256": "927e303421f3e633461c23a0c6455cf773c728f8b2f3dec2d5d77fa3d3002ff8",
+          "stable_id": "R2_A4_FOREGROUND_PROXY",
+          "target": "map_layer",
+          "view_space": "map_dimetric_40x20",
+          "z": 1100.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticMapFixtures/@Node2D@62",
+        "runtime_real": false,
+        "target": "map_layer"
+      },
+      "VS_MAP_LIGHTING": {
+        "binding": {
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "canvas_origin_raw_px": [
+            -1680.0,
+            -350.0
+          ],
+          "canvas_size": [
+            2400.0,
+            1350.0
+          ],
+          "crop_policy": "camera_rect_intersection",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "layer": "state_layers",
+          "mask_semantics": "state_overlay",
+          "native_size": [
+            2400.0,
+            1350.0
+          ],
+          "pivot_normalized": [
+            0.0,
+            0.0
+          ],
+          "pivot_px": [
+            0.0,
+            0.0
+          ],
+          "revision": 1.0,
+          "sha256": "ed79f928e423691102c356eb7bb1171f427a0e238f679c4f76bfda00e3d3f7a0",
+          "stable_id": "R2_A4_STATE_PROXY",
+          "target": "map_layer",
+          "view_space": "map_dimetric_40x20",
+          "z": -200.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticMapFixtures/@Node2D@64",
+        "runtime_real": false,
+        "target": "map_layer"
+      },
+      "VS_MAP_OCCLUSION": {
+        "binding": {
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "canvas_origin_raw_px": [
+            -1680.0,
+            -350.0
+          ],
+          "canvas_size": [
+            2400.0,
+            1350.0
+          ],
+          "crop_policy": "camera_rect_intersection",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "layer": "occlusion",
+          "mask_semantics": "sample_only_rgba_control",
+          "native_size": [
+            2400.0,
+            1350.0
+          ],
+          "pivot_normalized": [
+            0.0,
+            0.0
+          ],
+          "pivot_px": [
+            0.0,
+            0.0
+          ],
+          "revision": 1.0,
+          "sha256": "c8271169c70e072c40880d5cdaf868e9eece31d3f6f1841141f5a5ee02741e58",
+          "stable_id": "R2_A4_OCCLUSION_PROXY",
+          "target": "map_layer",
+          "view_space": "map_dimetric_40x20",
+          "z": 1200.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticMapFixtures/@Node2D@66",
+        "runtime_real": false,
+        "target": "map_layer"
+      },
+      "VS_MAP_ROOFS": {
+        "binding": {
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "canvas_origin_raw_px": [
+            -1680.0,
+            -350.0
+          ],
+          "canvas_size": [
+            2400.0,
+            1350.0
+          ],
+          "crop_policy": "camera_rect_intersection",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "layer": "roofs",
+          "mask_semantics": "fade_50_outline_candidate",
+          "native_size": [
+            2400.0,
+            1350.0
+          ],
+          "pivot_normalized": [
+            0.0,
+            0.0
+          ],
+          "pivot_px": [
+            0.0,
+            0.0
+          ],
+          "revision": 1.0,
+          "sha256": "339476411d9fb2250b6b439f8f4b95b971723e0fd08daf6d9714ab37f9bbadc6",
+          "stable_id": "R2_A4_ROOFS_PROXY",
+          "target": "map_layer",
+          "view_space": "map_dimetric_40x20",
+          "z": 900.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticMapFixtures/@Node2D@68",
+        "runtime_real": false,
+        "target": "map_layer"
+      },
+      "VS_SHIELD_STATES": {
+        "binding": {
+          "atlas_size": [
+            384.0,
+            128.0
+          ],
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "fixture_sparse_clip_layout": {
+            "atlas_size": [
+              384,
+              128
+            ],
+            "cartesian_product": false,
+            "clip_count": 3
+          },
+          "footprint": [
+            1.0,
+            1.0
+          ],
+          "fps_or_hold": {
+            "hold_last": true,
+            "hold_ms": 0.0
+          },
+          "interaction_sockets": {
+            "body_socket_px": [
+              64.0,
+              76.0
+            ],
+            "impact_socket_px": [
+              64.0,
+              54.0
+            ],
+            "shield_socket_px": [
+              64.0,
+              76.0
+            ],
+            "target_socket_px": [
+              64.0,
+              54.0
+            ],
+            "weapon_socket_px": [
+              64.0,
+              48.0
+            ]
+          },
+          "native_size": [
+            128.0,
+            128.0
+          ],
+          "pivot_normalized": [
+            0.5,
+            0.875
+          ],
+          "pivot_px": [
+            64.0,
+            112.0
+          ],
+          "revision": 1.0,
+          "sha256": "edef0faf72778821381b6a28574e494e72176a8132b732621980daa687cc84a1",
+          "sparse_clips": {
+            "held_cold/south/0": [
+              128.0,
+              0.0,
+              128.0,
+              128.0
+            ],
+            "held_red_blocked_4_scorches_heat_deformed/south/0": [
+              256.0,
+              0.0,
+              128.0,
+              128.0
+            ],
+            "wall_hung_3_scorches/south/0": [
+              0.0,
+              0.0,
+              128.0,
+              128.0
+            ]
+          },
+          "stable_id": "R2_SHIELD_GEOMETRY_PROXY",
+          "state_aliases": {},
+          "subject_ids": [
+            "PROP_C01CDV1_RETIRED_SHIELD"
+          ],
+          "target": "world_object",
+          "view_space": "map_dimetric_40x20",
+          "z_bias": 1.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticUnitFixtures/@Node2D@70",
+        "runtime_real": false,
+        "target": "world_object"
+      },
+      "VS_SWARM_QSD": {
+        "binding": {
+          "atlas_size": [
+            384.0,
+            384.0
+          ],
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "fixture_sparse_clip_layout": {
+            "atlas_size": [
+              384,
+              384
+            ],
+            "cartesian_product": false,
+            "clip_count": 8
+          },
+          "footprint": [
+            1.0,
+            1.0
+          ],
+          "fps_or_hold": {
+            "fps": 10.0,
+            "hold_last": true
+          },
+          "interaction_sockets": {
+            "body_socket_px": [
+              48.0,
+              54.0
+            ],
+            "impact_socket_px": [
+              48.0,
+              60.0
+            ],
+            "shield_socket_px": [
+              30.0,
+              58.0
+            ],
+            "target_socket_px": [
+              48.0,
+              60.0
+            ],
+            "weapon_socket_px": [
+              66.0,
+              52.0
+            ]
+          },
+          "native_size": [
+            96.0,
+            96.0
+          ],
+          "pivot_normalized": [
+            0.5,
+            0.75
+          ],
+          "pivot_px": [
+            48.0,
+            72.0
+          ],
+          "revision": 1.0,
+          "sha256": "4fffb2f504431ddd8ac3ac73907a58ac819628e19f88eb344241a8552748a5b7",
+          "sparse_clips": {
+            "deflected/west/0": [
+              0.0,
+              192.0,
+              96.0,
+              96.0
+            ],
+            "deflected/west/1": [
+              96.0,
+              192.0,
+              96.0,
+              96.0
+            ],
+            "idle/north/0": [
+              96.0,
+              0.0,
+              96.0,
+              96.0
+            ],
+            "idle/south/0": [
+              192.0,
+              0.0,
+              96.0,
+              96.0
+            ],
+            "idle/west/0": [
+              0.0,
+              0.0,
+              96.0,
+              96.0
+            ],
+            "move/west/0": [
+              0.0,
+              96.0,
+              96.0,
+              96.0
+            ],
+            "move/west/1": [
+              96.0,
+              96.0,
+              96.0,
+              96.0
+            ],
+            "scattered/west/0": [
+              0.0,
+              288.0,
+              96.0,
+              96.0
+            ]
+          },
+          "stable_id": "R2_SWARM_GEOMETRY_PROXY",
+          "state_aliases": {
+            "active": {
+              "signature": "R2-SW-ACTIVE-IDLE",
+              "target": "idle"
+            },
+            "anticipation": {
+              "signature": "R2-SW-ANTICIPATION-MOVE",
+              "target": "move"
+            },
+            "deflected_alive": {
+              "signature": "R2-SW-ALIVE-DEFLECTED",
+              "target": "deflected"
+            },
+            "impact": {
+              "signature": "R2-SW-IMPACT-DEFLECTED",
+              "target": "deflected"
+            },
+            "scattered_active": {
+              "signature": "R2-SW-SCATTERED-IDLE",
+              "target": "idle"
+            }
+          },
+          "subject_prefix": "ENEMY_C01_RIFT_SWARM_",
+          "target": "world_unit_group",
+          "view_space": "map_dimetric_40x20",
+          "z_bias": 0.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticUnitFixtures/@Node2D@71",
+        "runtime_real": false,
+        "target": "world_unit_group"
+      },
+      "VS_VEHICLE_EAST": {
+        "binding": {
+          "atlas_size": [
+            384.0,
+            384.0
+          ],
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "fixture_sparse_clip_layout": {
+            "atlas_size": [
+              384,
+              384
+            ],
+            "cartesian_product": false,
+            "clip_count": 5
+          },
+          "footprint": [
+            1.0,
+            1.0
+          ],
+          "fps_or_hold": {
+            "fps": 10.0,
+            "hold_last": true
+          },
+          "interaction_sockets": {
+            "body_socket_px": [
+              64.0,
+              70.0
+            ],
+            "impact_socket_px": [
+              96.0,
+              78.0
+            ],
+            "shield_socket_px": [
+              36.0,
+              76.0
+            ],
+            "target_socket_px": [
+              32.0,
+              78.0
+            ],
+            "weapon_socket_px": [
+              92.0,
+              72.0
+            ]
+          },
+          "kind": "emergency_vehicle",
+          "native_size": [
+            128.0,
+            128.0
+          ],
+          "pivot_normalized": [
+            0.5,
+            0.75
+          ],
+          "pivot_px": [
+            64.0,
+            96.0
+          ],
+          "revision": 1.0,
+          "sha256": "bcef70ca94aa85d9e1b46ad834905353b3718724a0390f6777795cd521a8b7f2",
+          "sparse_clips": {
+            "drive/east/0": [
+              0.0,
+              128.0,
+              128.0,
+              128.0
+            ],
+            "drive/east/1": [
+              128.0,
+              128.0,
+              128.0,
+              128.0
+            ],
+            "drive/east/2": [
+              256.0,
+              128.0,
+              128.0,
+              128.0
+            ],
+            "passed/east/0": [
+              0.0,
+              256.0,
+              128.0,
+              128.0
+            ],
+            "waiting/east/0": [
+              0.0,
+              0.0,
+              128.0,
+              128.0
+            ]
+          },
+          "stable_id": "R2_VEHICLE_GEOMETRY_PROXY",
+          "state_aliases": {
+            "anticipation": {
+              "signature": "R2-VEH-ANTICIPATION-DRIVE",
+              "target": "drive"
+            },
+            "moving": {
+              "signature": "R2-VEH-MOVING-DRIVE",
+              "target": "drive"
+            },
+            "passed_lane_still_active": {
+              "signature": "R2-VEH-PASSED-HOLD",
+              "target": "passed"
+            }
+          },
+          "subject_prefix": "TARGET_C01_",
+          "target": "world_unit_group",
+          "view_space": "map_dimetric_40x20",
+          "z_bias": 0.0
+        },
+        "fixture_only": true,
+        "node_path": "/root/C01E02M3GoldenSlice/TacticalWorldView/SemanticUnitFixtures/@Node2D@72",
+        "runtime_real": false,
+        "target": "world_unit_group"
+      }
+    },
+    "consumer_count": 11,
+    "fixture_consumer_count": 11,
+    "fx_binding_count": 0,
+    "integrated_visual_playtest_ready": false,
+    "map_binding_count": 6,
+    "real_consumer_count": 0,
+    "runtime_art_loaded": 0,
+    "screen_binding_count": 0,
+    "technical_schematic_overlay_count": 0,
+    "unit_binding_count": 5
+  },
+  "default_entry_changed": false,
+  "evidence_class": "g2_a1_r2c_actual_godot_root_viewport_proxy_contact_staging",
+  "formal_profile_override": false,
+  "g2_b_allowed": false,
+  "layer_registration": {
+    "canvas_offset_from_projection_origin_px": [
+      -800,
+      -180
+    ],
+    "canvas_origin_raw_px": [
+      -1680,
+      -350
+    ],
+    "canvas_size": [
+      2400,
+      1350
+    ],
+    "evidence_class": "g2_a1_r2c_existing_a4_registration_readback",
+    "layer_count": 6,
+    "layers": {
+      "VS_MAP_BASE": {
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_rect_px": [
+          480.0,
+          428.0,
+          1280.0,
+          584.0
+        ],
+        "layer": "base",
+        "mask_semantics": "opaque_world_base",
+        "native_size": [
+          2400,
+          1350
+        ],
+        "screen_scale": [
+          1.0,
+          1.0
+        ],
+        "screen_top_left": [
+          -480.0,
+          -370.0
+        ],
+        "visible": true,
+        "z": -1200
+      },
+      "VS_MAP_BUILDINGS": {
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_rect_px": [
+          480.0,
+          428.0,
+          1280.0,
+          584.0
+        ],
+        "layer": "buildings",
+        "mask_semantics": "world_body",
+        "native_size": [
+          2400,
+          1350
+        ],
+        "screen_scale": [
+          1.0,
+          1.0
+        ],
+        "screen_top_left": [
+          -480.0,
+          -370.0
+        ],
+        "visible": true,
+        "z": -900
+      },
+      "VS_MAP_FOREGROUND": {
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_rect_px": [
+          480.0,
+          428.0,
+          1280.0,
+          584.0
+        ],
+        "layer": "foreground",
+        "mask_semantics": "fade_50_outline_candidate",
+        "native_size": [
+          2400,
+          1350
+        ],
+        "screen_scale": [
+          1.0,
+          1.0
+        ],
+        "screen_top_left": [
+          -480.0,
+          -370.0
+        ],
+        "visible": true,
+        "z": 1100
+      },
+      "VS_MAP_LIGHTING": {
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_rect_px": [
+          480.0,
+          428.0,
+          1280.0,
+          584.0
+        ],
+        "layer": "state_layers",
+        "mask_semantics": "state_overlay",
+        "native_size": [
+          2400,
+          1350
+        ],
+        "screen_scale": [
+          1.0,
+          1.0
+        ],
+        "screen_top_left": [
+          -480.0,
+          -370.0
+        ],
+        "visible": true,
+        "z": -200
+      },
+      "VS_MAP_OCCLUSION": {
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_rect_px": [
+          480.0,
+          428.0,
+          1280.0,
+          584.0
+        ],
+        "layer": "occlusion",
+        "mask_semantics": "sample_only_rgba_control",
+        "native_size": [
+          2400,
+          1350
+        ],
+        "screen_scale": [
+          1.0,
+          1.0
+        ],
+        "screen_top_left": [
+          -480.0,
+          -370.0
+        ],
+        "visible": false,
+        "z": 1200
+      },
+      "VS_MAP_ROOFS": {
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_rect_px": [
+          480.0,
+          428.0,
+          1280.0,
+          584.0
+        ],
+        "layer": "roofs",
+        "mask_semantics": "fade_50_outline_candidate",
+        "native_size": [
+          2400,
+          1350
+        ],
+        "screen_scale": [
+          1.0,
+          1.0
+        ],
+        "screen_top_left": [
+          -480.0,
+          -370.0
+        ],
+        "visible": true,
+        "z": 900
+      }
+    },
+    "occlusion_policy": "fade_50_percent_plus_outline_candidate",
+    "projection_origin_raw_px": [
+      -880.0,
+      -170.0
+    ],
+    "source_policy": "existing A4 layers read-only; identity-free unit proxies only",
+    "sources": {
+      "VS_MAP_BASE": {
+        "binding": {
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "canvas_origin_raw_px": [
+            -1680.0,
+            -350.0
+          ],
+          "canvas_size": [
+            2400.0,
+            1350.0
+          ],
+          "crop_policy": "camera_rect_intersection",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "layer": "base",
+          "mask_semantics": "opaque_world_base",
+          "native_size": [
+            2400.0,
+            1350.0
+          ],
+          "pivot_normalized": [
+            0.0,
+            0.0
+          ],
+          "pivot_px": [
+            0.0,
+            0.0
+          ],
+          "revision": 1.0,
+          "sha256": "98b2248d9b0691e7c8bf6eb2005572c4e13330e25b11f3e70403169ca19d7a8c",
+          "stable_id": "R2_A4_BASE_PROXY",
+          "target": "map_layer",
+          "view_space": "map_dimetric_40x20",
+          "z": -1200.0
+        },
+        "source_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-base.png",
+        "source_sha256": "6fd40a256afee225457594558edf274823de5d1e771d1f570d0263c5df217789",
+        "source_size": [
+          2400,
+          1350
+        ]
+      },
+      "VS_MAP_BUILDINGS": {
+        "binding": {
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "canvas_origin_raw_px": [
+            -1680.0,
+            -350.0
+          ],
+          "canvas_size": [
+            2400.0,
+            1350.0
+          ],
+          "crop_policy": "camera_rect_intersection",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "layer": "buildings",
+          "mask_semantics": "world_body",
+          "native_size": [
+            2400.0,
+            1350.0
+          ],
+          "pivot_normalized": [
+            0.0,
+            0.0
+          ],
+          "pivot_px": [
+            0.0,
+            0.0
+          ],
+          "revision": 1.0,
+          "sha256": "7bd431c28406affa111ac4f39be78dfc9f1e9fa2e7915ecf7cfd98eb81360921",
+          "stable_id": "R2_A4_BUILDINGS_PROXY",
+          "target": "map_layer",
+          "view_space": "map_dimetric_40x20",
+          "z": -900.0
+        },
+        "source_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-buildings.png",
+        "source_sha256": "db3f83eeb3ed5e583d0a831a203ab0d5446a594f9ed9e34f25f175f290f62237",
+        "source_size": [
+          2400,
+          1350
+        ]
+      },
+      "VS_MAP_FOREGROUND": {
+        "binding": {
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "canvas_origin_raw_px": [
+            -1680.0,
+            -350.0
+          ],
+          "canvas_size": [
+            2400.0,
+            1350.0
+          ],
+          "crop_policy": "camera_rect_intersection",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "layer": "foreground",
+          "mask_semantics": "fade_50_outline_candidate",
+          "native_size": [
+            2400.0,
+            1350.0
+          ],
+          "pivot_normalized": [
+            0.0,
+            0.0
+          ],
+          "pivot_px": [
+            0.0,
+            0.0
+          ],
+          "revision": 1.0,
+          "sha256": "927e303421f3e633461c23a0c6455cf773c728f8b2f3dec2d5d77fa3d3002ff8",
+          "stable_id": "R2_A4_FOREGROUND_PROXY",
+          "target": "map_layer",
+          "view_space": "map_dimetric_40x20",
+          "z": 1100.0
+        },
+        "source_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-foreground.png",
+        "source_sha256": "454b3cf845ba91d7d7f13e201874bbbe79f871297a36930a24348823df1525a3",
+        "source_size": [
+          2400,
+          1350
+        ]
+      },
+      "VS_MAP_LIGHTING": {
+        "binding": {
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "canvas_origin_raw_px": [
+            -1680.0,
+            -350.0
+          ],
+          "canvas_size": [
+            2400.0,
+            1350.0
+          ],
+          "crop_policy": "camera_rect_intersection",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "layer": "state_layers",
+          "mask_semantics": "state_overlay",
+          "native_size": [
+            2400.0,
+            1350.0
+          ],
+          "pivot_normalized": [
+            0.0,
+            0.0
+          ],
+          "pivot_px": [
+            0.0,
+            0.0
+          ],
+          "revision": 1.0,
+          "sha256": "ed79f928e423691102c356eb7bb1171f427a0e238f679c4f76bfda00e3d3f7a0",
+          "stable_id": "R2_A4_STATE_PROXY",
+          "target": "map_layer",
+          "view_space": "map_dimetric_40x20",
+          "z": -200.0
+        },
+        "source_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a4-map-b-six-layer/A4_MAP_B_STATE_LAYERS_2400x1350.png",
+        "source_sha256": "05833205230b087b3024545a1344174fb1a73c7975087fcf06808d62b01d3ff1",
+        "source_size": [
+          2400,
+          1350
+        ]
+      },
+      "VS_MAP_OCCLUSION": {
+        "binding": {
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "canvas_origin_raw_px": [
+            -1680.0,
+            -350.0
+          ],
+          "canvas_size": [
+            2400.0,
+            1350.0
+          ],
+          "crop_policy": "camera_rect_intersection",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "layer": "occlusion",
+          "mask_semantics": "sample_only_rgba_control",
+          "native_size": [
+            2400.0,
+            1350.0
+          ],
+          "pivot_normalized": [
+            0.0,
+            0.0
+          ],
+          "pivot_px": [
+            0.0,
+            0.0
+          ],
+          "revision": 1.0,
+          "sha256": "c8271169c70e072c40880d5cdaf868e9eece31d3f6f1841141f5a5ee02741e58",
+          "stable_id": "R2_A4_OCCLUSION_PROXY",
+          "target": "map_layer",
+          "view_space": "map_dimetric_40x20",
+          "z": 1200.0
+        },
+        "source_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-occlusion-mask.png",
+        "source_sha256": "b5f68f4749f6bff2025409622888d8e8faa17d977aca372caa43121eec18e899",
+        "source_size": [
+          2400,
+          1350
+        ]
+      },
+      "VS_MAP_ROOFS": {
+        "binding": {
+          "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+          "canvas_origin_raw_px": [
+            -1680.0,
+            -350.0
+          ],
+          "canvas_size": [
+            2400.0,
+            1350.0
+          ],
+          "crop_policy": "camera_rect_intersection",
+          "display_scale": [
+            1.0,
+            1.0
+          ],
+          "layer": "roofs",
+          "mask_semantics": "fade_50_outline_candidate",
+          "native_size": [
+            2400.0,
+            1350.0
+          ],
+          "pivot_normalized": [
+            0.0,
+            0.0
+          ],
+          "pivot_px": [
+            0.0,
+            0.0
+          ],
+          "revision": 1.0,
+          "sha256": "339476411d9fb2250b6b439f8f4b95b971723e0fd08daf6d9714ab37f9bbadc6",
+          "stable_id": "R2_A4_ROOFS_PROXY",
+          "target": "map_layer",
+          "view_space": "map_dimetric_40x20",
+          "z": 900.0
+        },
+        "source_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-roofs.png",
+        "source_sha256": "7fea3c7918ff85bb1d5df1f4bcc5856afac1d8fa7f174d59b862f985962f11a9",
+        "source_size": [
+          2400,
+          1350
+        ]
+      }
+    },
+    "unit_real_art_loaded": 0,
+    "viewport_rect": [
+      0.0,
+      58.0,
+      1280.0,
+      584.0
+    ],
+    "zoom": 1.0
+  },
+  "producer_actual_frame_acceptance_required": true,
+  "required_capture_ids": [
+    "01_A_T2_SOUTH_BRACE",
+    "02_A_T3_FRONT_CONTACT",
+    "03_B_T2_EAST_TO_SOUTH",
+    "04_B_T3_25_OFFSET_CONTACT"
+  ],
+  "resolver_receipt": {
+    "approved_handoffs": [],
+    "camera_contract_guard": "A4_MAP_SPRITE_CAMERA_V1",
+    "directory_scan_used": false,
+    "fixture_count": 11,
+    "identity_critical_fallback_count": 0,
+    "integrated_visual_playtest_ready": false,
+    "manifest_id": "C01E02_G2A1_R2_GEOMETRY_PROXY_V1",
+    "probe_count": 0,
+    "real_art_loaded": 0,
+    "strict_geometry_bindings": true,
+    "view_space_guard": "map_dimetric_40x20"
+  },
+  "runtime_promotion": false,
+  "staging_id": "STAGGERED_FRONT_CONTACT_V1",
+  "supplemental_capture_ids": [
+    "05_R2_DYNAMIC_BREAKER_BLOCK"
+  ],
+  "unit_real_art_loaded": 0
+}

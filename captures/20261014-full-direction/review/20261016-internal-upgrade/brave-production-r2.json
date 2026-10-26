@@ -1,0 +1,79 @@
+{
+  "revision": "M04-brave-combined-r2",
+  "date": "2026-10-17",
+  "purpose": "按用户对R1的拳重与冲击力反馈实际重画整机；源图样例，不代替模型或运行",
+  "previous_record": "brave-production-r1.json",
+  "feedback": "冲击感比不上V17，但是方向挺不错，双拳不够强力",
+  "full_body": {
+    "file": "samples/M04-brave-combined-master-r2.png",
+    "sha256": "9157ad71acbb8b5069367c1f46e01cc7327775e8da614be0856f82ce87120dd6",
+    "pixel_size": [
+      1024,
+      1536
+    ],
+    "mode": "RGB",
+    "alpha": null,
+    "generated": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-3133e7e2-6d16-4d5a-b733-e32b14736690.png"
+  },
+  "arm_structure": {
+    "current": "samples/M04-train-arm-structure-r2.png",
+    "sha256": "40d8f8bec33e4f181e7c1c3e6f7297557bfaffb379f687944734cae940b7337e",
+    "role": "沿用上一轮左右开壳/车头朝后的结构图；不是本轮新生成，也不是正投影或绑定验收"
+  },
+  "prompt": "brave-combined-prompt-r2.json",
+  "current_status": "overall_direction_and_style_accepted_torso_bomber_head_revision_required",
+  "direction_feedback_positive_for_r1": true,
+  "full_design_accepted": false,
+  "sources": [
+    "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-brave-combined-master-r1.png",
+    "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/refs/brave-v17-upper-source.jpg",
+    "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/refs/brave-v19-proportion-source.jpg",
+    "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-train-arm-structure-r2.png",
+    "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/refs/brave-v18-chest-legs-source.jpg"
+  ],
+  "author_review": {
+    "actual_new_image_viewed": true,
+    "observed_changes": [
+      "实际拳掌、指节与拳甲扩大，拳头突出于臂套；短粗腕轴和厚前臂强化实体负重路径。",
+      "双拳更向前，胸肩/翼面张开，上身前倾加强正面重量；保留长腿、高身材、长发冠与膝钻履带。",
+      "仍然只使用一个主胸机鼻，列车壳在臂外，非手或膝部替代钻炮。"
+    ],
+    "remaining": [
+      "翼面仍有过强的列车舷窗感，下一轮分件应沿实际轰炸机单体收回航空件外形；不因此说轰炸机结构已定稿。",
+      "当前抬拳构图与R1不同，冲击力提升不能全归于实体设计；两稿同页保留给用户直接看。",
+      "前臂半壳内侧、背部与镜面左右的机械一致性仍需正侧背/分件校准。",
+      "用户尚未确认R2整机；没有制作/接入新GLB、UV、骨架或动作。"
+    ]
+  },
+  "model_produced": false,
+  "runtime_integrated": false,
+  "user_accepted": false,
+  "generation_mode": "built-in image_gen",
+  "user_feedback_20261017_followup": {
+    "date": "2026-10-17",
+    "authority": "direct_user_message_in_this_chat",
+    "verbatim": "社勇王的躯干不够壮实，也丢失了V17那个轰炸机的特征框架（以及应该有的翅膀部件），头部相对勇拳没有变化和提升（可以采用V17的感觉），但是感觉挺对的，方向完全对，美术风格也对。人物的配色按新风格微调即可，形象过关",
+    "brave_scope": {
+      "overall_direction": true,
+      "drawing_style": true,
+      "finished_structure": false,
+      "remaining": [
+        "躯干更壮实",
+        "恢复V17完整上覆轰炸机框架与翼件",
+        "头部应体现相对勇拳的合体升级，可采用V17感觉"
+      ]
+    },
+    "characters_scope": {
+      "ids": [
+        "H04",
+        "H07",
+        "H09"
+      ],
+      "identity_and_drawing_direction": true,
+      "color_refinement": "只按新风格微调配色；不重画身份",
+      "all_derivatives_runtime_accepted": false
+    }
+  },
+  "overall_direction_accepted": true,
+  "drawing_style_accepted": true
+}

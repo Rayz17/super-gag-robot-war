@@ -1,0 +1,804 @@
+{
+  "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+  "contract_binding": {
+    "build_id": "C01CDV1-M2-R2",
+    "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+    "contract_revision": 2,
+    "save_schema": 2
+  },
+  "gameplay_state_mutation": false,
+  "lifecycle_status": "active",
+  "profile_binding": {
+    "profile_id": "c01cdv1_e02_scroll_m2_r2",
+    "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8"
+  },
+  "receipt_id": "C01E02-M2-2-SYNTH-PARTIAL-BAD-ROOF-VALIDATED-R2",
+  "receipt_kind": "C01E02_M2_2_FROZEN_VALIDATED_HANDOFFS",
+  "receipt_payload_sha256": "6ecdb3cabae2fbede54d71359129e79181eae3fad2ffdd96e1bf440ac405157d",
+  "runtime_art_loaded": false,
+  "runtime_lane": "candidate_runtime_demo",
+  "schema_version": "1.0.0",
+  "source_batch": {
+    "batch_id": "C01E02-M2-2-SYNTH-PARTIAL-BAD-ROOF",
+    "sha256": "a4d2aa47ff910eae526cad87bae4a9ecf63c4c6884e1812e385bb94df7239f65",
+    "submitted_count": 13,
+    "validated_count": 12
+  },
+  "synthetic_fixture": true,
+  "validated_receipts": [
+    {
+      "actions": [
+        "idle"
+      ],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 128,
+        "width": 512
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {
+          "idle/east": [
+            128,
+            0,
+            128,
+            128
+          ],
+          "idle/north": [
+            0,
+            0,
+            128,
+            128
+          ],
+          "idle/south": [
+            256,
+            0,
+            128,
+            128
+          ],
+          "idle/west": [
+            384,
+            0,
+            128,
+            128
+          ]
+        }
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "sprite_sheet",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "cbd137b8af8c842f6f64c5fb04484b6c4671dc2bfaec26cd1dede30754848f3e",
+      "facings": [
+        "north",
+        "east",
+        "south",
+        "west"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 128,
+        "width": 512
+      },
+      "native_size": [
+        512,
+        128
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        1.0
+      ],
+      "producer_handoff_id": "C01E02-M2-2-SYNTH-08",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://tests/fixtures/candidate_asset_r2/m2_2/enemy_c01cdv1_breaker_ground.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "0ecad9cd0dceebc88375deff9a1443d2b5136aba20d521ed433650e1c355b6f5",
+      "slot_id": "ENEMY_C01CDV1_BREAKER_GROUND",
+      "stable_id": "ENEMY_C01_BREAKER",
+      "subject_id": "ENEMY_C01_BREAKER",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "breaker_ground_tactical_qsd",
+      "validation_gate": "candidate_asset_resolver_r2"
+    },
+    {
+      "actions": [
+        "idle"
+      ],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 128,
+        "width": 512
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {
+          "idle/east": [
+            128,
+            0,
+            128,
+            128
+          ],
+          "idle/north": [
+            0,
+            0,
+            128,
+            128
+          ],
+          "idle/south": [
+            256,
+            0,
+            128,
+            128
+          ],
+          "idle/west": [
+            384,
+            0,
+            128,
+            128
+          ]
+        }
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "sprite_sheet",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "1a6fe838240f713618be177a84c17bda0042ea64638ba07284507a8ade50482d",
+      "facings": [
+        "north",
+        "east",
+        "south",
+        "west"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 128,
+        "width": 512
+      },
+      "native_size": [
+        512,
+        128
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        1.0
+      ],
+      "producer_handoff_id": "C01E02-M2-2-SYNTH-09",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://tests/fixtures/candidate_asset_r2/m2_2/enemy_c01cdv1_rift_swarm_master.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "fe1420823d0be64104e3561836e79ce2832b355ba6bd66b4df1395f97c2a0b03",
+      "slot_id": "ENEMY_C01CDV1_RIFT_SWARM_MASTER",
+      "stable_id": "ENEMY_C01_RIFT_SWARM",
+      "subject_id": "ENEMY_C01_RIFT_SWARM",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "rift_swarm_tactical_qsd_master",
+      "validation_gate": "candidate_asset_resolver_r2"
+    },
+    {
+      "actions": [],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 2,
+        "has_alpha": false,
+        "height": 1350,
+        "width": 2400
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {}
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "static_image",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "66663a83110fdb03a14f41d84ba161edc95740b1b0bba1b5667127b9766eb28f",
+      "facings": [
+        "none"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": false,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": false,
+        "height": 1350,
+        "width": 2400
+      },
+      "native_size": [
+        2400,
+        1350
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "producer_handoff_id": "C01E02-M2-2-SYNTH-01",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://tests/fixtures/candidate_asset_r2/m2_2/map-base.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "b0f1f5c780225dc13cb0dc03f576f34649534fe19038c42f37d453df1b8efe92",
+      "slot_id": "MAP_C01CDV1_R2_BASE",
+      "stable_id": "MAP_C01CDV1_SCROLLING_STREET_R2_BASE",
+      "subject_id": "c01cdv1_e02_scroll_m2_r2",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "rolling_map_base",
+      "validation_gate": "candidate_asset_resolver_r2"
+    },
+    {
+      "actions": [],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 1350,
+        "width": 2400
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {}
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "static_image",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "6eefdca2365a1cf859b93a2ca4c528dbf2bf803c64065fe37e416636d963ef21",
+      "facings": [
+        "none"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 1350,
+        "width": 2400
+      },
+      "native_size": [
+        2400,
+        1350
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "producer_handoff_id": "C01E02-M2-2-SYNTH-02",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://tests/fixtures/candidate_asset_r2/m2_2/map-buildings.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "f175254c2540f2e6d6dd687a9f556663f67333dc5772772a14d326dd88a3f85e",
+      "slot_id": "MAP_C01CDV1_R2_BUILDINGS",
+      "stable_id": "MAP_C01CDV1_SCROLLING_STREET_R2_BUILDINGS",
+      "subject_id": "c01cdv1_e02_scroll_m2_r2",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "rolling_map_buildings",
+      "validation_gate": "candidate_asset_resolver_r2"
+    },
+    {
+      "actions": [],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 1350,
+        "width": 2400
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {}
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "static_image",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "133d64ced78a73ff37df5449e62e2a378132f371dd38972b067df322b35b4bb0",
+      "facings": [
+        "none"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 1350,
+        "width": 2400
+      },
+      "native_size": [
+        2400,
+        1350
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "producer_handoff_id": "C01E02-M2-2-SYNTH-04",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://tests/fixtures/candidate_asset_r2/m2_2/map-foreground.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "233a4bee1bc6848823a8d1be1060cfa0d3224c3ccbbcd2eec999411d7a049cac",
+      "slot_id": "MAP_C01CDV1_R2_FOREGROUND",
+      "stable_id": "MAP_C01CDV1_SCROLLING_STREET_R2_FOREGROUND",
+      "subject_id": "c01cdv1_e02_scroll_m2_r2",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "rolling_map_foreground",
+      "validation_gate": "candidate_asset_resolver_r2"
+    },
+    {
+      "actions": [],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 1350,
+        "width": 2400
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {}
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "static_image",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "a9b5d5acccc41eb71d7463e58cf0f3712101b7d23dcefe3c9ad5c94917cb72ef",
+      "facings": [
+        "none"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 1350,
+        "width": 2400
+      },
+      "native_size": [
+        2400,
+        1350
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "producer_handoff_id": "C01E02-M2-2-SYNTH-05",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://tests/fixtures/candidate_asset_r2/m2_2/map-occlusion-mask.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "5d545534e4c47c4157b6000e4c0f38b6b7194632eeb5ff02b5ef43ad213a394f",
+      "slot_id": "MAP_C01CDV1_R2_OCCLUSION_MASK",
+      "stable_id": "MAP_C01CDV1_SCROLLING_STREET_R2_OCCLUSION_MASK",
+      "subject_id": "c01cdv1_e02_scroll_m2_r2",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "rolling_map_occlusion_mask",
+      "validation_gate": "candidate_asset_resolver_r2"
+    },
+    {
+      "actions": [],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 1350,
+        "width": 2400
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {}
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "sprite_sheet",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "eaaa42489f29466643da989bdddd5ccb10d0af1b2ba18e795b5c954977c59acc",
+      "facings": [
+        "none"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 1350,
+        "width": 2400
+      },
+      "native_size": [
+        2400,
+        1350
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "producer_handoff_id": "C01E02-M2-2-SYNTH-06",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://tests/fixtures/candidate_asset_r2/m2_2/map-state-layers.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "d8017155c88ee3002c50a607355c3b7a8ce1007b3b5377d8470e5461622ea96e",
+      "slot_id": "MAP_C01CDV1_R2_STATE_LAYERS",
+      "stable_id": "MAP_C01CDV1_SCROLLING_STREET_R2_STATE_LAYERS",
+      "subject_id": "c01cdv1_e02_scroll_m2_r2",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "rolling_map_damage_state_layers",
+      "validation_gate": "candidate_asset_resolver_r2"
+    },
+    {
+      "actions": [
+        "idle"
+      ],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 128,
+        "width": 512
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {
+          "idle/east": [
+            128,
+            0,
+            128,
+            128
+          ],
+          "idle/north": [
+            0,
+            0,
+            128,
+            128
+          ],
+          "idle/south": [
+            256,
+            0,
+            128,
+            128
+          ],
+          "idle/west": [
+            384,
+            0,
+            128,
+            128
+          ]
+        }
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "sprite_sheet",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "e86133b200ee5383a30dc0bc24b9f8743fc20ceb84d566adf876b8388013f82a",
+      "facings": [
+        "north",
+        "east",
+        "south",
+        "west"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 128,
+        "width": 512
+      },
+      "native_size": [
+        512,
+        128
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        1.0
+      ],
+      "producer_handoff_id": "C01E02-M2-2-SYNTH-07",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://tests/fixtures/candidate_asset_r2/m2_2/mecha_c01cdv1_guardian_z.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "2b256a85dc11b01802840dbc9f97ffa7c06e5eaac31d1faa7c828db1909bf737",
+      "slot_id": "MECHA_C01CDV1_GUARDIAN_Z",
+      "stable_id": "V353U001",
+      "subject_id": "V353U001",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "guardian_z_tactical_qsd",
+      "validation_gate": "candidate_asset_resolver_r2"
+    },
+    {
+      "actions": [],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 128,
+        "width": 128
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {}
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "static_image",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "98c533aa74f6e097f689613443fb4b37e7b1652eaf75d1f04697b4e45614a740",
+      "facings": [
+        "none"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 128,
+        "width": 128
+      },
+      "native_size": [
+        128,
+        128
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        1.0
+      ],
+      "producer_handoff_id": "C01E02-M2-2-SYNTH-13",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://tests/fixtures/candidate_asset_r2/m2_2/prop_c01cdv1_retired_shield_heat_deformed.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "f6b16d2cfb96fd6002b8eb64304399f41dd7c786a9234a922ec01b6faa7c2aeb",
+      "slot_id": "PROP_C01CDV1_RETIRED_SHIELD_HEAT_DEFORMED",
+      "stable_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "subject_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "retired_shield_heat_deformed",
+      "validation_gate": "candidate_asset_resolver_r2"
+    },
+    {
+      "actions": [],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 128,
+        "width": 128
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {}
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "static_image",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "11c72eabce8a397a33e2d30e35b54c484096a44255b477abaf5546ee465e0661",
+      "facings": [
+        "none"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 128,
+        "width": 128
+      },
+      "native_size": [
+        128,
+        128
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        1.0
+      ],
+      "producer_handoff_id": "C01E02-M2-2-SYNTH-11",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://tests/fixtures/candidate_asset_r2/m2_2/prop_c01cdv1_retired_shield_held_cold.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "6155580d83dd420d47ae91cd089e2a8bbf8c81fee96f793ac120e9ced3fbb38d",
+      "slot_id": "PROP_C01CDV1_RETIRED_SHIELD_HELD_COLD",
+      "stable_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "subject_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "retired_shield_held_cold",
+      "validation_gate": "candidate_asset_resolver_r2"
+    },
+    {
+      "actions": [],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 128,
+        "width": 128
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {}
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "static_image",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "2cfa929d9e494b470f9c8df24f9b8be5f5c407db04807bd4c4fadbbd1d3e1e4c",
+      "facings": [
+        "none"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 128,
+        "width": 128
+      },
+      "native_size": [
+        128,
+        128
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        1.0
+      ],
+      "producer_handoff_id": "C01E02-M2-2-SYNTH-12",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://tests/fixtures/candidate_asset_r2/m2_2/prop_c01cdv1_retired_shield_red_blocked.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "d2e399205064e2a54dee72d58e49a8d1a0c59decbb94f83913ac4dbca83a68f6",
+      "slot_id": "PROP_C01CDV1_RETIRED_SHIELD_RED_BLOCKED",
+      "stable_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "subject_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "retired_shield_red_blocked",
+      "validation_gate": "candidate_asset_resolver_r2"
+    },
+    {
+      "actions": [],
+      "actual_media": {
+        "bit_depth": 8,
+        "codec": "png",
+        "color_type": 6,
+        "has_alpha": true,
+        "height": 128,
+        "width": 128
+      },
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {}
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "static_image",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "entry_payload_sha256": "88108c37bf00238b24f6480f28b1952e54fb49b54e0d9b3d6d93f3fc1bbaaaeb",
+      "facings": [
+        "none"
+      ],
+      "fail_closed": false,
+      "gameplay_state_mutation": false,
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 128,
+        "width": 128
+      },
+      "native_size": [
+        128,
+        128
+      ],
+      "ok": true,
+      "pivot": [
+        0.5,
+        1.0
+      ],
+      "producer_handoff_id": "C01E02-M2-2-SYNTH-10",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "reason": "all_metadata_and_real_media_verified",
+      "resolution": "producer_handoff_verified_candidate_asset",
+      "resource_path": "res://tests/fixtures/candidate_asset_r2/m2_2/prop_c01cdv1_retired_shield_wall_hung.png",
+      "resource_probe_invoked": true,
+      "runtime_allowed": true,
+      "sha256": "e6dba5f8f4f7708c6e0d3a53cc5c2a5ce727b6275d2f81a7d10e2a6477346e21",
+      "slot_id": "PROP_C01CDV1_RETIRED_SHIELD_WALL_HUNG",
+      "stable_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "subject_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "retired_shield_wall_hung",
+      "validation_gate": "candidate_asset_resolver_r2"
+    }
+  ]
+}

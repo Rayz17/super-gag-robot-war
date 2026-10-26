@@ -1,0 +1,242 @@
+[
+  {
+    "id": "T01",
+    "group": "T",
+    "template": "terrain",
+    "key": "concrete",
+    "name": "承重混凝土地坪",
+    "purpose": "常态步行面",
+    "design": "中明度矿物色、板缝与有厚度边缘；低对比表面纹理，不能照片噪点盖住角色",
+    "states": [
+      "常态",
+      "边缘接缝",
+      "适用状态变化"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "T02",
+    "group": "T",
+    "template": "terrain",
+    "key": "painted_steel",
+    "name": "涂装金属甲板",
+    "purpose": "工业地面",
+    "design": "成片涂装与检修板分区；边缘和螺栓不铺满全地面",
+    "states": [
+      "常态",
+      "边缘接缝",
+      "适用状态变化"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "T03",
+    "group": "T",
+    "template": "terrain",
+    "key": "grating",
+    "name": "格栅与排水槽",
+    "purpose": "材料差别",
+    "design": "格栅真实深度与暗腔；密纹在正常镜头不闪烁",
+    "states": [
+      "常态",
+      "边缘接缝",
+      "适用状态变化"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "T04",
+    "group": "T",
+    "template": "terrain",
+    "key": "rail",
+    "name": "轨道与道岔",
+    "purpose": "列车路线",
+    "design": "轨、枕木/扣件、路基和岔口；方向连续、不可跨地图倒转",
+    "states": [
+      "常态",
+      "边缘接缝",
+      "适用状态变化"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "T05",
+    "group": "T",
+    "template": "terrain",
+    "key": "conveyor",
+    "name": "输送带",
+    "purpose": "自动位移地形",
+    "design": "运行方向与规则一致；纹理流动朝实际输送方向",
+    "states": [
+      "常态",
+      "边缘接缝",
+      "适用状态变化"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "T06",
+    "group": "T",
+    "template": "terrain",
+    "key": "rubble",
+    "name": "碎石与残骸地面",
+    "purpose": "额外移动代价",
+    "design": "少量大块碎料、可见低起伏；与不可通行残墙区分",
+    "states": [
+      "常态",
+      "边缘接缝",
+      "适用状态变化"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "T07",
+    "group": "T",
+    "template": "terrain",
+    "key": "shallow_water",
+    "name": "浅水",
+    "purpose": "涉水地形",
+    "design": "可见渠底、岸沿和水线；涉水单位不误显示坠落",
+    "states": [
+      "常态",
+      "边缘接缝",
+      "适用状态变化"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "T08",
+    "group": "T",
+    "template": "terrain",
+    "key": "deep_water",
+    "name": "深渠与深水",
+    "purpose": "坠落/淹没风险",
+    "design": "有渠壁、水面高度和连续深度；不要死黑坑或镜面摄影水",
+    "states": [
+      "常态",
+      "边缘接缝",
+      "适用状态变化"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "T09",
+    "group": "T",
+    "template": "terrain",
+    "key": "pit",
+    "name": "深坑与结构缺口",
+    "purpose": "不支撑地面",
+    "design": "可见侧壁/梁断口，边缘脚印清楚；不把黑方块直接贴地",
+    "states": [
+      "常态",
+      "边缘接缝",
+      "适用状态变化"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "T10",
+    "group": "T",
+    "template": "terrain",
+    "key": "oil",
+    "name": "油面与可燃物",
+    "purpose": "燃烧连锁",
+    "design": "局部油膜形状与暗反光；低对比，不与水混同",
+    "states": [
+      "常态",
+      "边缘接缝",
+      "适用状态变化"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "T11",
+    "group": "T",
+    "template": "terrain",
+    "key": "burnt",
+    "name": "燃后地面",
+    "purpose": "持续状态结果",
+    "design": "烧痕、少量残烟与材质变化；火消失后仍有结果但不永久遮格",
+    "states": [
+      "常态",
+      "边缘接缝",
+      "适用状态变化"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "T12",
+    "group": "T",
+    "template": "terrain",
+    "key": "electrical",
+    "name": "带电地面",
+    "purpose": "电击危害",
+    "design": "导电材料/破缆来源、边界与短放电；持续危险标记另由UI处理",
+    "states": [
+      "常态",
+      "边缘接缝",
+      "适用状态变化"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "T13",
+    "group": "T",
+    "template": "terrain",
+    "key": "upper",
+    "name": "可行走屋顶与平台",
+    "purpose": "上层/净空",
+    "design": "屋顶有厚度、可走面和栏杆缺口；不能与背景屋顶混同",
+    "states": [
+      "常态",
+      "边缘接缝",
+      "适用状态变化"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "T14",
+    "group": "T",
+    "template": "terrain",
+    "key": "slope",
+    "name": "坡道与阶梯",
+    "purpose": "高度连接",
+    "design": "起终点、坡向、梁支撑有实体；显示高差但不制造虚假阻挡",
+    "states": [
+      "常态",
+      "边缘接缝",
+      "适用状态变化"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "T15",
+    "group": "T",
+    "template": "terrain",
+    "key": "bridge_debris",
+    "name": "塌桥断面与沉落物",
+    "purpose": "通路被毁",
+    "design": "断梁、桥板和水花/落尘接口；不能仍保留完整桥面贴图",
+    "states": [
+      "常态",
+      "边缘接缝",
+      "适用状态变化"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "T16",
+    "group": "T",
+    "template": "terrain",
+    "key": "material_families",
+    "name": "统一表面材料家族",
+    "purpose": "建筑/机体/场地材质衔接",
+    "design": "涂装金属、裸金属、混凝土、玻璃、橡胶、发光件分家；同画法不同材质，避免全塑料",
+    "states": [
+      "常态",
+      "边缘接缝",
+      "适用状态变化"
+    ],
+    "status": "todo"
+  }
+]

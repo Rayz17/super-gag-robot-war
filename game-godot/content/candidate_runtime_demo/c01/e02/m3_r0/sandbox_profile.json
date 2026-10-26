@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "identity": {
+    "sandbox_contract_id": "C01E02M3R0",
+    "sandbox_contract_revision": 1,
+    "build_id": "C01CDV1-M3-R0-SANDBOX",
+    "rules_profile_id": "c01cdv1_e02_shared_round_m3_r0",
+    "runtime_lane": "candidate_development_sandbox",
+    "entry_role": "non_default",
+    "save_mode": "disabled",
+    "save_schema": null,
+    "save_namespace": null,
+    "operation_commit": false,
+    "story_checkpoint_write": false,
+    "asset_mode": "named_geometry_only"
+  },
+  "round": {
+    "round_id": "M3-R0-ROUND-001",
+    "max_route_steps": 6,
+    "grid": [32, 18],
+    "guardian_success_anchor_rect": [18, 9, 3, 3],
+    "guardian_reaction_zone_rect": [18, 8, 5, 4],
+    "swarm_lane_target": [20, 10],
+    "breaker_contact_anchor": [20, 11],
+    "fallback_guard_anchor": [18, 10],
+    "rescue_lane_rect": [20, 5, 12, 6]
+  },
+  "projection": {
+    "tile_half": [30, 15],
+    "map_screen_rect": [0, 54, 900, 556],
+    "edge_threshold": 84,
+    "camera_smoothing_seconds": 0.16
+  },
+  "terrain_zones": [
+    {"zone_id": "TERRAIN_C01_MAIN_ROAD", "kind": "road", "rect": [0, 7, 32, 6], "passable": true},
+    {"zone_id": "TERRAIN_C01_RESCUE_LANE", "kind": "rescue_lane", "rect": [20, 5, 12, 6], "passable": true},
+    {"zone_id": "TERRAIN_C01_NW_BLOCK", "kind": "building", "rect": [1, 0, 7, 5], "passable": false},
+    {"zone_id": "TERRAIN_C01_NM_BLOCK", "kind": "building", "rect": [10, 0, 5, 4], "passable": false},
+    {"zone_id": "TERRAIN_C01_NE_BLOCK", "kind": "building", "rect": [22, 0, 7, 4], "passable": false},
+    {"zone_id": "TERRAIN_C01_SW_BLOCK", "kind": "building", "rect": [0, 15, 8, 3], "passable": false},
+    {"zone_id": "TERRAIN_C01_SE_BLOCK", "kind": "building", "rect": [26, 14, 6, 4], "passable": false},
+    {"zone_id": "TERRAIN_C01_BROKEN_SKYWALK", "kind": "broken_corridor", "rect": [8, 5, 7, 2], "passable": false},
+    {"zone_id": "TERRAIN_C01_SECURITY_APRON", "kind": "security_apron", "rect": [24, 4, 8, 7], "passable": true}
+  ],
+  "entities": [
+    {
+      "unit_id": "V353U001",
+      "kind": "guardian",
+      "display_name": "馆守Z",
+      "anchor": [15, 11],
+      "footprint": [2, 2],
+      "facing": "east",
+      "controllable": true,
+      "status": "active",
+      "load": 0
+    },
+    {
+      "unit_id": "ENEMY_C01_BREAKER",
+      "kind": "boss",
+      "display_name": "BREAKER",
+      "anchor": [20, 13],
+      "footprint": [3, 3],
+      "facing": "north",
+      "controllable": false,
+      "status": "charging_run",
+      "alive": true,
+      "first_knockdown": false,
+      "red_charge_state": "dormant"
+    },
+    {
+      "unit_id": "ENEMY_C01_RIFT_SWARM_01",
+      "kind": "swarm",
+      "display_name": "突入小体 01",
+      "anchor": [22, 7],
+      "footprint": [1, 1],
+      "facing": "west",
+      "controllable": false,
+      "status": "active",
+      "alive": true,
+      "organization_state": "scattered"
+    },
+    {
+      "unit_id": "ENEMY_C01_RIFT_SWARM_02",
+      "kind": "swarm",
+      "display_name": "突入小体 02",
+      "anchor": [26, 12],
+      "footprint": [1, 1],
+      "facing": "north",
+      "controllable": false,
+      "status": "active",
+      "alive": true,
+      "organization_state": "scattered"
+    },
+    {
+      "unit_id": "ENEMY_C01_RIFT_SWARM_03",
+      "kind": "swarm",
+      "display_name": "突入小体 03",
+      "anchor": [29, 5],
+      "footprint": [1, 1],
+      "facing": "south",
+      "controllable": false,
+      "status": "active",
+      "alive": true,
+      "organization_state": "scattered"
+    },
+    {
+      "unit_id": "TARGET_C01_EMERGENCY_AMBULANCE",
+      "kind": "emergency_vehicle",
+      "display_name": "最后应急车 [自动]",
+      "anchor": [17, 10],
+      "footprint": [1, 1],
+      "facing": "east",
+      "controllable": false,
+      "status": "moving",
+      "route": [[17, 10], [18, 10], [21, 10], [24, 9]]
+    },
+    {
+      "unit_id": "TARGET_C01_EAST_EXIT",
+      "kind": "evacuation_exit",
+      "display_name": "东侧撤离口",
+      "anchor": [31, 7],
+      "footprint": [1, 1],
+      "facing": "east",
+      "controllable": false,
+      "status": "active"
+    },
+    {
+      "unit_id": "TARGET_C01_SECURITY_GATE",
+      "kind": "security_target",
+      "display_name": "东门警戒设施",
+      "anchor": [27, 8],
+      "footprint": [1, 1],
+      "facing": "south",
+      "controllable": false,
+      "status": "active"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "PROP_C01CDV1_RETIRED_SHIELD_WALL_HUNG",
+      "kind": "retired_shield",
+      "display_name": "退役重盾",
+      "anchor": [11, 10],
+      "state": "wall_hung_3_scorches"
+    },
+    {
+      "object_id": "ENV_C01_ROAD_SURFACE",
+      "kind": "road_surface",
+      "display_name": "旧会展广场路面",
+      "state": "intact",
+      "integrity": 100
+    },
+    {
+      "object_id": "ALLY_C01_CITY_ARTILLERY",
+      "kind": "autonomous_support",
+      "display_name": "城市边缘炮火",
+      "state": "tracking",
+      "controllable": false
+    }
+  ],
+  "frozen_intents": [
+    {
+      "intent_id": "INTENT_R0_VEHICLE_CROSS",
+      "actor_id": "TARGET_C01_EMERGENCY_AMBULANCE",
+      "confidence_state": "confirmed",
+      "action_type": "AUTO_CROSS_LANDING_ZONE",
+      "target_id": "TARGET_C01_EAST_EXIT",
+      "estimated_timeslice": 1,
+      "information_source": "CITY_RESCUE_ROUTE_TELEMETRY",
+      "valid_time": "M3-R0-ROUND-001"
+    },
+    {
+      "intent_id": "INTENT_R0_SWARM_LANE",
+      "actor_id": "ENEMY_C01_RIFT_SWARM_01",
+      "confidence_state": "confirmed",
+      "action_type": "ENTER_ATTACK_RESCUE_LINE",
+      "target_id": "RESCUE_LANE_EAST",
+      "estimated_timeslice": 2,
+      "information_source": "DIRECT_LINE_OF_SIGHT",
+      "valid_time": "M3-R0-ROUND-001"
+    },
+    {
+      "intent_id": "INTENT_R0_BREAKER_CHARGE",
+      "actor_id": "ENEMY_C01_BREAKER",
+      "confidence_state": "confirmed",
+      "action_type": "STRAIGHT_CHARGE_NORTH_CITY",
+      "target_id": "NORTH_CITY_AXIS",
+      "estimated_timeslice": 3,
+      "information_source": "THERMAL_AND_TRAJECTORY_LOCK",
+      "valid_time": "M3-R0-ROUND-001"
+    },
+    {
+      "intent_id": "INTENT_R0_CITY_GUN",
+      "actor_id": "ALLY_C01_CITY_ARTILLERY",
+      "confidence_state": "confirmed",
+      "action_type": "CONDITIONAL_SIDE_ARMOR_SHOT",
+      "target_id": "ENEMY_C01_BREAKER_SIDE_ARMOR",
+      "estimated_timeslice": 4,
+      "information_source": "PUBLIC_AUTONOMOUS_SUPPORT_PLAN",
+      "valid_time": "M3-R0-ROUND-001"
+    },
+    {
+      "intent_id": "INTENT_R0_ROAD_RESPONSE",
+      "actor_id": "ENV_C01_ROAD_SURFACE",
+      "confidence_state": "confirmed",
+      "action_type": "BUCKLE_ON_HEAVY_CONTACT",
+      "target_id": "CONTACT_GROUP_R0_GIANTS",
+      "estimated_timeslice": 5,
+      "information_source": "KNOWN_LOAD_MODEL",
+      "valid_time": "M3-R0-ROUND-001"
+    }
+  ],
+  "fallbacks": {
+    "GUARD_EXIT": {
+      "fallback_id": "GUARD_EXIT",
+      "display_name": "后续路线失效时退守出口",
+      "anchor": [18, 10],
+      "final_facing": "south"
+    },
+    "HOLD_LAST_LEGAL": {
+      "fallback_id": "HOLD_LAST_LEGAL",
+      "display_name": "停在最后合法位置"
+    },
+    "NONE": {
+      "fallback_id": "NONE",
+      "display_name": "无备用；停在最后合法位置"
+    }
+  },
+  "acceptance_fixtures": {
+    "success_main_action": {
+      "unit_plans": [{
+        "unit_id": "V353U001",
+        "route": [[15, 11], [16, 11], [17, 11], [18, 11], [18, 10]],
+        "final_facing": "south",
+        "main_action": "BODY_REDIRECT",
+        "prepared_reaction": null,
+        "fallback": {"fallback_id": "GUARD_EXIT"}
+      }]
+    },
+    "success_prepared_reaction": {
+      "unit_plans": [{
+        "unit_id": "V353U001",
+        "route": [[15, 11], [16, 11], [17, 11], [18, 11], [19, 11], [19, 10], [19, 9]],
+        "final_facing": "east",
+        "main_action": null,
+        "prepared_reaction": {
+          "trigger_id": "SWARM_ENTERS_RESCUE_LINE",
+          "response_id": "LATERAL_LEG_DEFLECT",
+          "max_triggers": 1
+        },
+        "fallback": {"fallback_id": "GUARD_EXIT"}
+      }]
+    },
+    "explainable_failure": {
+      "unit_plans": [{
+        "unit_id": "V353U001",
+        "route": [[15, 11], [16, 11], [17, 11], [17, 12]],
+        "final_facing": "west",
+        "main_action": "BODY_REDIRECT",
+        "prepared_reaction": null,
+        "fallback": {"fallback_id": "HOLD_LAST_LEGAL"}
+      }]
+    },
+    "fallback_taken": {
+      "unit_plans": [{
+        "unit_id": "V353U001",
+        "route": [[15, 11], [16, 11], [17, 11], [18, 11], [19, 11], [19, 10], [20, 10]],
+        "final_facing": "south",
+        "main_action": "HOLD_EXIT",
+        "prepared_reaction": null,
+        "fallback": {"fallback_id": "GUARD_EXIT"}
+      }]
+    }
+  }
+}

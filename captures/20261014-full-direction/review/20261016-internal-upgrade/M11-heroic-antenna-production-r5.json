@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-21",
+  "revision": "M11-heroic-antenna-production-r5",
+  "asset": "货柜领袖明确天线与正面角色神态修正",
+  "canon_entity": "V353U043",
+  "existing_batch": "design-followthrough-r1.json",
+  "generation_mode": "built-in image_gen",
+  "reader": "M11-heroic-antenna-r5.html",
+  "direction_record": "M11-heroic-antenna-direction-r5.json",
+  "prior_source_record": "M11-structure-and-head-production-r4.json",
+  "items": [
+    {
+      "id": "HEAD_OPTIONS",
+      "file": "samples/M11-heroic-antenna-head-r5b.png",
+      "sha256": "f7f4a4d8f89e126801e9da63479bafc7168aff4d9fa2fe2d1558f14d900ab94c",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-b30ba480-67e6-4562-8197-376bb0a64342.png",
+      "role": "同一领袖头部正面和左前斜视：明确耳侧钝头天线、紧凑侧盔与平稳眼眉",
+      "prompt_record": "M11-heroic-head-prompts-r5.json",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    }
+  ],
+  "vehicle_context": {
+    "id": "VEHICLE",
+    "file": "samples/M11-camera-truck-r3.png",
+    "sha256": "c702fce6fabb6698cd48f94d76ed11a04c6555d97a5eb16396440a1fb91cad1c",
+    "pixel_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-312e3e6b-99c8-4df8-af84-dcea79b22436.png",
+    "prompt_record": "M11-camera-vehicle-prompt-r3.json",
+    "role": "流线未来四轴货车，柱侧摄像头后视窗口与单个独立货柜",
+    "user_accepted": false,
+    "runtime_integrated": false,
+    "handoff_sent": false
+  },
+  "body_context": {
+    "id": "ROBOT",
+    "file": "samples/M11-future-robot-r2.png",
+    "sha256": "0dad97e6598041a2103351afe5554d36f4701977ba6d19c21da1cb05620ab502",
+    "pixel_size": [
+      1024,
+      1536
+    ],
+    "mode": "RGB",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "background": "opaque_warm_white",
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-13f13bf1-4522-4d53-9adc-3f4eecbe0eb4.png",
+    "role": "R2颈下/配色/车壳分配参考；旧头部不作为R4当前头部，未绘成R4整机",
+    "prompt_record": "M11-future-robot-prompt-r2.json",
+    "user_accepted": false,
+    "runtime_integrated": false,
+    "handoff_sent": false
+  },
+  "layout_study": {
+    "directory": "M11-kinematic-r4",
+    "record": "M11-kinematic-r4/layout-check.json",
+    "source": "M11-kinematic-r4/build_layout.py",
+    "editable_model": "M11-kinematic-r4/M11-rigid-layout-r4.blend",
+    "motion": "M11-kinematic-r4/M11-layout-motion-r4.mp4",
+    "same_inventory_sample_check": true,
+    "full_transformation_verified": false
+  },
+  "prompt_index": "M11-heroic-head-prompts-r5.json",
+  "references": [
+    {
+      "file": "samples/M11-user-helmet-reference-r4.png",
+      "role": "用户天线与头盔构造参考，未临摹具体头脸"
+    },
+    {
+      "file": "samples/M11-future-robot-r2.png",
+      "role": "仅机体配色和画法，不沿R4眼镜蛇盔型派生"
+    }
+  ],
+  "attempts": [
+    {
+      "file": "samples/M11-heroic-antenna-head-r5-attempt.png",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-eac75eab-512b-4f99-9502-66396fa8de6d.png",
+      "prompt": "M11-heroic-antenna-head-prompt-r5.txt",
+      "author_observation": "天线与头罩已改变，但眼眉仍内压偏凶，不作为末选。",
+      "selected": false
+    },
+    {
+      "file": "samples/M11-heroic-antenna-head-r5b.png",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-b30ba480-67e6-4562-8197-376bb0a64342.png",
+      "prompt": "M11-heroic-eyes-prompt-r5b.txt",
+      "edit_target": "samples/M11-heroic-antenna-head-r5-attempt.png",
+      "author_observation": "保持天线与头壳，单独放平眼眉/打开眼形。",
+      "selected_for_review": true
+    }
+  ],
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "samples/M11-user-helmet-reference-r4.png",
+      "samples/M11-integrated-head-options-r4.png",
+      "samples/M11-future-robot-r2.png",
+      "samples/M11-heroic-antenna-head-r5-attempt.png",
+      "samples/M11-heroic-antenna-head-r5b.png"
+    ],
+    "observed": [
+      "正面两侧各有一根明确外伸的象牙白钝头天线，起根于耳后通讯结构，斜视中仍可见两根；不是把灯槽叫作天线。",
+      "头壳保持正常纵向体积，撤去R4白色包围式额框和侧向张开的宽冠轮廓，侧罩收为竖向紧凑结构。",
+      "银色面罩从密集叠鳞收为三块较大面甲；末次局部修正将尖锐内压的眼眉改成更平稳、开放的发光眼形。",
+      "保持藏蓝、象牙白、安全橙、青色双眼与中央相机身份；新增天线为作者具体方案，尚未由用户采用。"
+    ],
+    "limits": [
+      "两视为源设计绘制，斜视并非严格侧面或同模型正交，局部投影和细节仍需后续统一。",
+      "天线细部与头部几何未合入R2整机，也未验证设备仓真实收纳空间；R4通用头部草模不能证明新天线收纳成立。",
+      "上一轮R4 A/B已被用户否定，不再推荐或作为当前头型；新稿仍待用户看稿。"
+    ]
+  },
+  "new_images_user_accepted": false,
+  "runtime_changed": false,
+  "handoff_sent": false
+}

@@ -1,0 +1,105 @@
+{
+  "revision": "M01-head-crest-consistency-production-r8",
+  "date": "2026-10-18",
+  "asset": "M01 / 无牌一号",
+  "user_directive": "这样可以。但是注意你的正面和侧面里，头顶天线的呈现出现了不一致。",
+  "file": "samples/M01-head-crest-consistency-r8.png",
+  "sha256": "464cb1fd7505de9e9bdbd12c3427ee583b5c41765f37f7dda74fb821916974fd",
+  "pixel_size": [
+    1774,
+    887
+  ],
+  "mode": "RGBA",
+  "alpha": {
+    "range": [
+      0,
+      255
+    ],
+    "top_corners": [
+      0,
+      0
+    ]
+  },
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-c666b4bd-fbd0-4c50-b81a-178a1fb76e2f.png",
+  "generation_mode": "built-in image_gen; precise-object-edit of R7 crest consistency",
+  "prompt": "M01-head-crest-consistency-prompt-r8.json",
+  "reader": "M01-head-AE-r6.html",
+  "existing_batch": "design-followthrough-r1.json#experience_record_m01_r8",
+  "edit_target": {
+    "record": "M01-head-aft-antenna-production-r7.json",
+    "file": "samples/M01-head-aft-antenna-r7.png",
+    "sha256": "fec7ad02b6d55306726b2012fe0ba9fd375f260a41c4d1f2538ba619572bb6be"
+  },
+  "preserved_user_acceptance": {
+    "date": "2026-10-18",
+    "authority": "direct_user_message_in_this_chat",
+    "verbatim": "这样可以。但是注意你的正面和侧面里，头顶天线的呈现出现了不一致。",
+    "source_file": "samples/M01-head-aft-antenna-r7.png",
+    "source_sha256": "fec7ad02b6d55306726b2012fe0ba9fd375f260a41c4d1f2538ba619572bb6be",
+    "accepted_scope": "R7总体设计及两侧无折角直线后向天线可沿用。",
+    "remaining_correction": "头顶冠脊的正面与三分之四表达不一致，需要局部修正。",
+    "whole_sheet_unconditional_acceptance": false,
+    "runtime_acceptance": false
+  },
+  "selected_sources": [
+    {
+      "id": "A",
+      "file": "samples/M01-head-A-single-crest-r5.png",
+      "sha256": "481bbf45af76e2ba2bf3845c6075315c1571416aef74f4417b93902e145e6b7c",
+      "adopted_part": "中轴冠脊、封闭面甲及连续传感窗"
+    },
+    {
+      "id": "E",
+      "file": "samples/M01-head-E-offset-angle-r5.png",
+      "sha256": "0115cb6c4100ca4020d5c33877a38d703f156180f8eb1b38368d538e4d6a396c",
+      "adopted_part": "保留双侧枢座与短侧部特征，按最新用户意见改为无折角的直线后向天线",
+      "historical_adopted_part": "短折角镂空侧翼，改成双侧镜像"
+    }
+  ],
+  "guardian_contrast": {
+    "file": "refs/guardian-existing-contrast-20261018.png",
+    "sha256": "1d776b53fc11ae55fc540e35066786fd73bb0635ebc2e1db1ca07eafdd461357",
+    "origin": "game-godot/assets/formula_lab/linked_campaign_v6/portraits/guardian.png",
+    "source_was_observed": true,
+    "source_copied_without_pixel_changes": true,
+    "used_as_generation_input": false,
+    "guardian_changed": false
+  },
+  "shared_crest_definition": [
+    "同一中轴贴盔后向冠脊；双侧象牙白脊边夹一条赭金实心嵌槽。",
+    "长金槽向额部收尖，与下方短矩形金嵌件之间保留白色桥接。",
+    "两个视图保持同一部件数量、分段及末端结构；允许透视遮挡，不能另画成分叉角。"
+  ],
+  "author_review": {
+    "reviewer": "author",
+    "actual_media": "实际工具返回的R8完整双视图，与R7原图目视对照。",
+    "observed": [
+      "正面中央白色双脊边、长金槽与下部短矩形嵌件延续。",
+      "三分之四长金槽向额部收尖，近侧白色脊边补出相应分段，修正旧图槽尾及分段不对应。",
+      "两侧已认可直线后向天线、圆侧枢、连续琥珀视窗、封闭面甲与配色保持。"
+    ],
+    "limits": [
+      "二维局部修图，仍不声称同一三维模型的严格投影；最终建模需由同一冠脊零件输出各视图。",
+      "未制作整机装回、正常战棋镜头、连续动作或声音。"
+    ],
+    "independent_review": false,
+    "later_correction": "此前观察只确认槽尾/分段变化，没有解决凹缝所在面的错误；用户明确反证，R8不得作为冠脊正确性的已通过依据。"
+  },
+  "entry_preflight": {
+    "structure_pass": false,
+    "errors": [
+      "DEF-M04-CLOSED-FIST换法制作证据文件缺失或内容已变"
+    ],
+    "scope": "主玩法M04制作证据问题不由本源图会话修写；本次继续独立M01局部修正，未把全项目preflight记为通过。"
+  },
+  "user_accepted": false,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "latest_user_review": {
+    "date": "2026-10-18",
+    "authority": "direct_user_message_in_this_chat",
+    "verbatim": "你看这个黄色的凹缝，在正面看是在头顶天线的中间的，在侧面看，它却变成了头顶天线的，就是偏两边的这个地方，这是不对的。",
+    "result": "crest_groove_position_still_wrong",
+    "evidence": "refs/M01-user-marked-groove-error-r9.png"
+  }
+}

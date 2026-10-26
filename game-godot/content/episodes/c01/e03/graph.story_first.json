@@ -1,0 +1,304 @@
+{
+  "episode_id": "C01E03-STORY-FIRST-CANDIDATE",
+  "start_node_id": "c01e03_baihan_body_entry",
+  "nodes": [
+    {
+      "node_id": "c01e03_baihan_body_entry",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_C01E03_STORY_NARRATIVE",
+      "title": "桥板上还有五个人 / 白函有了身体",
+      "commit_policy": "local_transition_only",
+      "transition": {
+        "transition_id": "C01E03-TR-01-BODY-ENTRY",
+        "kind": "pressure_escalation",
+        "eyebrow": "RT038之后 / 五人仍在L2",
+        "title": "二十九人出楼，不等于现场已经清空",
+        "location": "万机馆中庭 L1 / L2",
+        "time_label": "21:19",
+        "cause": "五人必须完成低压旁路、桥板止挡和两件接驳设备的分段交接；白函沿已公开消防图得到十八米落点。",
+        "handoff": "白函具身切断旧楼梯；玩家进入八阶段双层巨型救援战。",
+        "continuity": {
+          "types": ["action", "responsibility"],
+          "action_refs": ["C01E02_PHYSICAL_SNAPSHOT", "ALL_29_OUTSIDE_BUILDING"],
+          "responsibility_refs": ["CH_JICUN", "CH001", "ENEMY_C01_SEAL_COMMANDER_BAIHAN"]
+        },
+        "duration": 1.25,
+        "fade_seconds": 0.42,
+        "accent": "e45e62"
+      },
+      "completion_contract": "OUTCOME_C01E03_RT001_RT003_LOCAL_V01",
+      "transaction_id": "C01E03:RT001_RT003:LOCAL:V01",
+      "outcome_facts": [
+        {"id": "C01E03_LOCAL_INPUT_RT038_READ", "to": true},
+        {"id": "C01E03_LOCAL_BAIHAN_BODY_ENTRY", "to": true}
+      ],
+      "player_summary": "29人保持楼外；纪存、唐胶、兜灯与两名消防接驳员在L2继续交接。白函第一次以完整重框身体切断旧楼梯。",
+      "presentation": {
+        "profile": "standard_adv",
+        "background": "res://assets/backgrounds/story_first/bg_c01e01_guardian_atrium_model_hospital_v01.png",
+        "portrait_visibility": "active_only",
+        "eyebrow": "万机馆中庭 / RT038后一分",
+        "title": "桥板上还有五个人",
+        "time_label": "21:19",
+        "cast": [
+          {"actor_id": "CH_JICUN", "display_name": "纪存", "side": "left", "portrait_path": "res://assets/portraits/portrait_jicun.png", "accent": "58c8d9"},
+          {"actor_id": "CH_QIHAI", "display_name": "七海 · 普通电话", "side": "right", "portrait_path": "res://assets/portraits/portrait_qihai.png", "accent": "a38f72"},
+          {"actor_id": "CH001", "display_name": "兜灯", "side": "right", "portrait_path": "res://assets/portraits/portrait_doudeng.png", "accent": "65bda7"}
+        ]
+      },
+      "lines": [
+        {"beat_id": "c01e03_open_01", "speaker": "消防架桥机操作员", "source_kind": "radio", "stage_action": "楼外远程舱第三次报压", "text": "压力暂时稳定。注意，是暂时。SEG3左前腿还在红线里。"},
+        {"beat_id": "c01e03_open_02", "speaker": "旁白", "stage_action": "共同救援图把五个蓝点放大", "text": "纪存守楼板位移，兜灯守低压旁路，唐胶守桥板止挡；两名接驳员各护一件必须送出的设备。少一个岗位，稳定就只是屏幕上的假话。"},
+        {"beat_id": "c01e03_open_03", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "把二十九个楼外点缩到图边，不删除", "text": "楼外二十九。馆内五。先交泵，再交设备，最后撤岗位。"},
+        {"beat_id": "c01e03_open_04", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "stage_action": "停权频道断开后改拨普通电话", "text": "纪存，回答我。你还在里面吗？"},
+        {"beat_id": "c01e03_open_05", "speaker": "旁白", "stage_action": "第一只白色重框脚落在旧楼梯边", "text": "纪存还没回答，旧楼梯先错开了半个平台。四声极重的扣合从中庭上方依次落下。"},
+        {"beat_id": "c01e03_open_06", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "text": "我听见了。"},
+        {"beat_id": "c01e03_open_07", "speaker": "旁白", "stage_action": "白函四脚找平、主框展开、内收臂翻到身体两侧", "text": "E02里提前半拍的白线终于有了重量。它比馆守Z略窄，像一台专门把巨大东西装进盒子的机器。"},
+        {"beat_id": "c01e03_open_08", "speaker": "白函", "source_kind": "system", "stage_action": "主框横移切断L2唇口与L1承台", "text": "火场资产正在二次位移。人员离开价值回收区；大型机体保持原姿态。"},
+        {"beat_id": "c01e03_open_09", "speaker": "唐胶", "stage_action": "看见人员离开线穿过下沉展层", "text": "它不是来打架的。它是来把整间屋子装走的。"},
+        {"beat_id": "c01e03_open_10", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "text": "我没有写权限了。你把现场给我留着，别把自己也留在里面。"},
+        {"beat_id": "c01e03_open_11", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "把手机塞回衣袋，重新标出五个蓝点", "text": "五个人。一条回路。先别挂。"}
+      ],
+      "success_edges": ["c01e03_broken_arm_bridge"],
+      "soft_fail_edges": ["c01e03_broken_arm_bridge"],
+      "failure_edges": ["c01e03_baihan_body_entry"],
+      "cancel_edges": ["c01e03_baihan_body_entry"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "c01e03_broken_arm_bridge",
+      "mode": "TACTICAL",
+      "scene_id": "SCN_C01E03_BROKEN_ARM_BRIDGE",
+      "title": "八阶段双层巨型救援战 / 断臂成桥",
+      "commit_policy": "local_transition_only",
+      "transition": {
+        "transition_id": "C01E03-TR-02-EIGHT-STAGE",
+        "kind": "scale_shift",
+        "eyebrow": "白函区域切断成立",
+        "title": "让十八米巨神动一下，也要先给楼层一个答案",
+        "location": "中庭L1南侧 / L2消防转运唇口",
+        "time_label": "21:20",
+        "cause": "白函主框切断唯一回路；馆守Z、勇拳和SEG3都能救人，却没有一台能按最漂亮的方式行动。",
+        "handoff": "分配支援、接梁、飞拳、断臂探索、主动切离、五人单向清桥。",
+        "continuity": {
+          "types": ["action", "responsibility"],
+          "action_refs": ["C01E03_LOCAL_BAIHAN_BODY_ENTRY"],
+          "responsibility_refs": ["CH_JICUN", "CH001", "CH036", "V353U001"]
+        },
+        "duration": 1.35,
+        "fade_seconds": 0.46,
+        "accent": "f0b83f"
+      },
+      "completion_contract": "OUTCOME_C01E03_RT004_RT032_LOCAL_CLEAR_V01",
+      "battle_definition_path": "res://content/episodes/c01/e03/battle/c01_e03_broken_arm_bridge_8p.json",
+      "commitment_anchors": [
+        {"anchor_id": "C01E03_COMMIT_CANCEL_FULL_SHOULDER", "source_action_id": "CANCEL_FULL_SHOULDER", "visible_action": "玩家预览整肩动作会让五人同时标红后，亲手按住实体断开键取消它。"},
+        {"anchor_id": "C01E03_COMMIT_CUT_REPAIRABLE_ARM", "source_action_id": "DOUDENG_CUT_MAIN_TENDON", "visible_action": "玩家在共同验证第四筋后接受兜灯切断仍可修的主筋，让右臂永久成为桥。"},
+        {"anchor_id": "C01E03_COMMIT_JICUN_CROSSES_LAST", "source_action_id": "CROSS_JICUN", "visible_action": "玩家先送设备、接驳员、唐胶和兜灯过桥，再让纪存最后清桥。"}
+      ],
+      "investigation_definition_path": "res://content/episodes/c01/e03/explore/c01_e03_right_arm_fourth_rib.json",
+      "embedded_spatial_interlude": {
+        "interlude_id": "C01E03_P6_RIGHT_ARM_FOURTH_RIB",
+        "scene_id": "SCN_C01E03_ARM_RIB_EXPLORATION",
+        "transaction_id": "C01E03:RT019_RT023:EMBEDDED_SPATIAL:V01",
+        "completion_contract": "OUTCOME_C01E03_FOURTH_RIB_LOCAL_V01",
+        "open_prompt": "P5结构姿态锁定。纪存进入右臂内腔；外层棋盘暂停在EXPLORE_ENTRY_LOCAL。",
+        "trigger": {
+          "scenario_driver": "c01e03_broken_arm_bridge_v1",
+          "stage": 6,
+          "checkpoint_id": "EXPLORE_ENTRY_LOCAL"
+        },
+        "completion_action_sequence": [
+          {"actor_id": "jicun", "action_id": "RIB_CHECK_UPPER"},
+          {"actor_id": "jicun", "action_id": "RIB_CHECK_OUTER"},
+          {"actor_id": "jicun", "action_id": "RIB_CHECK_THIRD"},
+          {"actor_id": "jicun", "action_id": "MEMORY_FIND_HIDDEN_PANEL"},
+          {"actor_id": "tangjiao", "action_id": "INPUT_TANGJIAO_KNOCK"},
+          {"actor_id": "brave_fist", "action_id": "INPUT_BRAVE_LOAD_CENTER"},
+          {"actor_id": "diedie", "action_id": "INPUT_DIEDIE_PAD_GREEN"},
+          {"actor_id": "jicun", "action_id": "VERIFY_FOURTH_RIB"}
+        ]
+      },
+      "result_transaction_id": "C01E03:RT004_RT032:BATTLE_LOCAL_CLEAR:V01",
+      "skip_result_fact": true,
+      "success_edges": ["c01e03_left_hand_aftercare"],
+      "soft_fail_edges": ["c01e03_left_hand_aftercare"],
+      "failure_edges": ["c01e03_broken_arm_bridge"],
+      "cancel_edges": ["c01e03_broken_arm_bridge"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "c01e03_left_hand_aftercare",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_C01E03_STORY_NARRATIVE",
+      "title": "左手递来的工具 / 勇拳不留下",
+      "commit_policy": "local_transition_only",
+      "transition": {
+        "transition_id": "C01E03-TR-03-AFTERCARE",
+        "kind": "settlement",
+        "eyebrow": "Battle Clear · RT035尚未提交",
+        "title": "先处理人的手，再处理机器的断口",
+        "location": "L1南侧维修承台 / 西门安全线",
+        "time_label": "21:34",
+        "cause": "五人和两件设备已经清桥；馆守Z永久失去右臂，白函带双伤撤离。",
+        "handoff": "企业回收勇拳；唐胶与兜灯处理断口；馆守Z用左手递回普通扳手。",
+        "continuity": {
+          "types": ["action", "responsibility"],
+          "action_refs": ["C01E03_BATTLE_LOCAL_CLEAR"],
+          "responsibility_refs": ["CH001", "CH_TANGJIAO", "CH036", "V353U001"]
+        },
+        "duration": 1.2,
+        "fade_seconds": 0.42,
+        "accent": "65bda7"
+      },
+      "completion_contract": "OUTCOME_C01E03_RT033_LOCAL_V01",
+      "transaction_id": "C01E03:RT033:LOCAL:V01",
+      "outcome_facts": [{"id": "C01E03_LOCAL_AFTERCARE_COMPLETE", "to": true}],
+      "player_summary": "勇拳由企业完整回收并剥离数据；豪司留在安全区受罚。唐胶与兜灯处理人的手和馆守Z断口，馆守Z用左手递回扳手。",
+      "presentation": {
+        "profile": "standard_adv",
+        "background": "res://assets/backgrounds/story_first/bg_c01e01_guardian_atrium_model_hospital_v01.png",
+        "portrait_visibility": "active_only",
+        "eyebrow": "维修承台 / 清桥后",
+        "title": "左手递来的工具",
+        "time_label": "21:34",
+        "cast": [
+          {"actor_id": "CH001", "display_name": "兜灯", "side": "left", "portrait_path": "res://assets/portraits/portrait_doudeng.png", "accent": "65bda7"},
+          {"actor_id": "CH036", "display_name": "豪司", "side": "right", "portrait_path": "res://assets/portraits/portrait_haosi.png", "accent": "f0b83f"},
+          {"actor_id": "CH_JICUN", "display_name": "纪存", "side": "left", "portrait_path": "res://assets/portraits/portrait_jicun.png", "accent": "64b7cb"},
+          {"actor_id": "CH_QIHAI", "display_name": "七海 · 普通电话", "side": "right", "portrait_path": "res://assets/portraits/portrait_qihai.png", "accent": "a38f72"}
+        ]
+      },
+      "lines": [
+        {"beat_id": "c01e03_after_01", "speaker": "旁白", "stage_action": "企业拖援车沿L1西侧安全线进场", "text": "拖援组当着豪司的面卸下驾驶记录盒、剥离训练数据，再把勇拳连同运输架拖过西门。它没有因此加入万机馆。"},
+        {"beat_id": "c01e03_after_02", "actor_id": "CH036", "speaker": "豪司", "stage_action": "在事故经过里划掉一次‘未经批准’", "text": "改成‘本人决定’。机器没有替我决定。"},
+        {"beat_id": "c01e03_after_03", "speaker": "旁白", "stage_action": "唐胶先拔下切割器电池", "text": "他这才看见兜灯右手还在发抖，掌根被工具震出一条红痕。"},
+        {"beat_id": "c01e03_after_04", "actor_id": "CH001", "speaker": "兜灯", "stage_action": "让唐胶把冷却纱布绕到第二圈", "text": "这把先别入库。电池你拆，断口我封。"},
+        {"beat_id": "c01e03_after_05", "speaker": "唐胶", "stage_action": "馆守Z左手缓慢降到安全高度，掌心放着普通扳手", "text": "左手也挺会递东西。"},
+        {"beat_id": "c01e03_after_06", "speaker": "旁白", "stage_action": "兜灯瞪他一眼，再伸手拿走扳手", "text": "眼泪是在这句不合时宜的话之后才掉下来的。"},
+        {"beat_id": "c01e03_after_07", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "text": "五个？"},
+        {"beat_id": "c01e03_after_08", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "都过来了。"},
+        {"beat_id": "c01e03_after_09", "actor_id": "CH_QIHAI", "speaker": "七海", "source_kind": "radio", "text": "你呢？"},
+        {"beat_id": "c01e03_after_10", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "低头看掌心尚未退去的灼红", "text": "也在这边。"}
+      ],
+      "success_edges": ["c01e03_six_anchor_lock"],
+      "soft_fail_edges": ["c01e03_six_anchor_lock"],
+      "failure_edges": ["c01e03_left_hand_aftercare"],
+      "cancel_edges": ["c01e03_left_hand_aftercare"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "c01e03_six_anchor_lock",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_C01E03_STORY_NARRATIVE",
+      "title": "地下六声锁响 / RT035",
+      "transition": {
+        "transition_id": "C01E03-TR-04-SIX-ANCHORS",
+        "kind": "aftermath",
+        "eyebrow": "外部监视阈值越线",
+        "title": "锁住的不是逃生暗道，是一副从未展开的身体",
+        "location": "B1基础袋 / 城市外圈锚机",
+        "time_label": "21:37",
+        "cause": "馆守Z本话累积位移越过外部阈值，六处旧对位痕把待命锚机引向B1移动脊柱。",
+        "handoff": "六锚物理落锁后一次提交RT035精确27键；E04必须从这一个快照开始。",
+        "continuity": {
+          "types": ["action", "responsibility"],
+          "action_refs": ["C01E03_LOCAL_AFTERCARE_COMPLETE"],
+          "responsibility_refs": ["CH_JICUN", "V353U001", "ENEMY_C01_SEAL_COMMANDER_BAIHAN"]
+        },
+        "duration": 1.3,
+        "fade_seconds": 0.46,
+        "accent": "e45e62"
+      },
+      "completion_contract": "OUTCOME_C01E03_RT035_ATOMIC_SNAPSHOT_V01",
+      "transaction_id": "C01E03:RT035:ATOMIC_SNAPSHOT:V01",
+      "outcome_payload": {
+        "transaction_id": "C01E03:RT035:ATOMIC_SNAPSHOT:V01",
+        "resolution": "success",
+        "facts": [
+          {"id": "GZ_RIGHT_ARM_LOST", "to": true},
+          {"id": "GZ_CONTROL_STATE", "to": "FIRST_CONTROL_COMPLETE_SINGLE_ARM"},
+          {"id": "GZ_RIGHT_ARM_LOCATION", "to": "OLD_SITE_L1_L2_COMPOSITE_BRIDGE"},
+          {"id": "GZ_RIGHT_ARM_CARGO", "to": "FORBIDDEN"},
+          {"id": "HAOSI_CORP_PUNISHMENT", "to": "ACTIVE"},
+          {"id": "BRAVE_FIST_RECOVERY", "to": "CORPORATE_COMPLETE"},
+          {"id": "BRAVE_FIST_DATA", "to": "STRIPPED"},
+          {"id": "BRAVE_FIST_PROTOTYPE", "to": "RECOVERED_BY_CORPORATE"},
+          {"id": "JICUN_MEMORY_FRAGMENT_00", "to": "ACQUIRED_LOW_CONFIDENCE"},
+          {"id": "INDEX_DAMAGE_AS_FUNCTION_SAMPLE", "to": "ACQUIRED_BY_BAIHAN_SINGLE_LOCAL_SAMPLE"},
+          {"id": "BAIHAN_RIGHT_SHOULDER", "to": "CRACKED"},
+          {"id": "BAIHAN_INNER_RETRACTOR", "to": "SEVERED"},
+          {"id": "E03_INHERITED_INSIDE_HUMANS", "to": 5},
+          {"id": "HAOSI_POST_SNAPSHOT_ENTRY", "to": 1},
+          {"id": "PEAK_ONSITE_HUMANS", "to": 6},
+          {"id": "BRIDGE_EVAC_HUMANS", "to": 5},
+          {"id": "FIVE_INSIDE_HUMANS", "to": "SAFE"},
+          {"id": "HAOSI_SAFE_EXIT", "to": true},
+          {"id": "PEOPLE_CARGO", "to": "FORBIDDEN"},
+          {"id": "B1_MOVING_SPINE", "to": "PHYSICALLY_LOCKED_BY_MILITARY"},
+          {"id": "E03_ATOMIC_COMMIT", "to": "COMPLETE_AFTER_SIX_ANCHORS"},
+          {"id": "C01_OUTSIDE_EVACUEES", "to": 29},
+          {"id": "E03_FIRE_HANDOFF_CARGO", "to": "2_SAFE"},
+          {"id": "FIRE_SUPPLY_BURNED", "to": true},
+          {"id": "COMMERCIAL_DUCT_DAMAGE", "to": "LOCAL_BURNED_HEAT_LEAK"},
+          {"id": "ARCHIVE_MAIN_VAULT_COOLING", "to": "EMERGENCY_LOW_PRESSURE_ACTIVE"},
+          {"id": "FIRE_BRIDGE_LEFT_FRONT_LEG", "to": "OVERLOAD_PERSISTENT"}
+        ],
+        "entity_changes": [
+          {"entity_id": "V353U001", "condition": "first_control_complete_single_arm", "right_arm": "old_site_composite_bridge", "translation": 0},
+          {"entity_id": "MECHA_GUARDIAN_FLYING_FIST_UNIT", "condition": "old_site_committed", "cargo_allowed": false},
+          {"entity_id": "MECHA_BRAVE_FIST_PROTOTYPE", "condition": "corporate_recovered_data_stripped", "formal_join": false},
+          {"entity_id": "CH036", "condition": "safe_corporate_punishment_active"},
+          {"entity_id": "ENEMY_C01_SEAL_COMMANDER_BAIHAN", "condition": "retreated_damaged", "right_shoulder": "cracked", "inner_retractor": "severed"},
+          {"entity_id": "V353U034", "condition": "fixed_support_left_front_leg_overloaded", "seg3": "arm_cradle_then_old_site_support"}
+        ],
+        "world_object_changes": [
+          {"object_id": "OBJ_C01E03_RIGHT_ARM_BRIDGE", "known_state": "old_site_l1_l2_composite_bridge", "cargo_allowed": false},
+          {"object_id": "OBJ_C01E03_B1_SIX_ANCHORS", "known_state": "physically_locked_by_military"},
+          {"object_id": "OBJ_C01E02_WEST_FIRE_SUPPLY", "known_state": "heat_deformed_limited", "scar": "FIRE_SUPPLY_BURNED"}
+        ],
+        "authority_changes": [
+          {"authority_id": "AUTH_QIHAI_SYSTEM_WRITE", "state": "disabled"},
+          {"authority_id": "AUTH_WANJI_FULL_MOVING_SPINE", "state": "physically_locked_external_source_unknown"}
+        ],
+        "relationship_edges": [
+          {"edge_id": "REL_JICUN_QIHAI_C01E03", "from": "CH_JICUN", "to": "CH_QIHAI", "state": "ordinary_phone_cannot_replace_onsite", "change": "he_answers_also_on_this_side_after_five_safe"},
+          {"edge_id": "REL_TANGJIAO_DOUDENG_C01E03", "from": "CH_TANGJIAO", "to": "CH001", "state": "shared_cut_and_aftercare", "change": "she_gives_him_half_the_break_work_after_he_supports_her_hand"},
+          {"edge_id": "REL_HAOSI_BRAVE_FIST_C01E03", "from": "CH036", "to": "MECHA_BRAVE_FIST_PROTOTYPE", "state": "responsibility_without_ai_endorsement", "change": "he_signs_and_loses_the_machine_without_calling_it_a_reward"}
+        ],
+        "promises_and_debts": [
+          {"debt_id": "DEBT_C01E03_GUARDIAN_RIGHT_ARM", "state": "open_permanent_scar", "owner": "V353U001", "cause": "active_bridge_conversion"},
+          {"debt_id": "DEBT_C01E03_BAIHAN_SAMPLE", "state": "open", "owner": "ENEMY_C01_SEAL_COMMANDER_BAIHAN", "cause": "damaged_body_to_support_function"},
+          {"debt_id": "DEBT_C01E03_B1_SIX_ANCHORS", "state": "open", "owner": "CH_JICUN", "cause": "moving_spine_physically_locked"}
+        ],
+        "player_summary": "五人和两件设备安全；馆守Z右臂永久留作旧址复合桥，勇拳被企业回收，白函带双伤和一条功能样本撤离。六枚外部锚钉锁死B1移动脊柱。"
+      },
+      "presentation": {
+        "profile": "standard_adv",
+        "background": "res://assets/backgrounds/story_first/bg_c01e01_archive_room_v01.png",
+        "portrait_visibility": "active_only",
+        "eyebrow": "B1基础袋 / 外部阈值越线",
+        "title": "地下传来六声锁响",
+        "time_label": "21:37",
+        "cast": [
+          {"actor_id": "CH_JICUN", "display_name": "纪存", "side": "left", "portrait_path": "res://assets/portraits/portrait_jicun.png", "accent": "58c8d9"}
+        ]
+      },
+      "lines": [
+        {"beat_id": "c01e03_anchor_01", "speaker": "旁白", "stage_action": "白函撤离回执完成外部同步", "text": "回执只留下一个客观数值：馆守Z的累积位移越过外部监视阈值。"},
+        {"beat_id": "c01e03_anchor_02", "speaker": "旁白", "stage_action": "六处旧对位痕从淡光变成指向线", "text": "早已在外圈待命的锚机沿着它们对准B1基础袋。"},
+        {"beat_id": "c01e03_anchor_03", "speaker": "音效", "source_kind": "broadcast", "stage_action": "第一枚外部锚钉落下", "text": "咚。"},
+        {"beat_id": "c01e03_anchor_04", "speaker": "旁白", "stage_action": "随后五声等间隔重响", "text": "没有长篇命令。六个基础节点被物理锁死，完整移动脊柱仍没有向外公开。"},
+        {"beat_id": "c01e03_anchor_05", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "看见城市拆分倒计时覆盖结构图", "text": "他们不是刚发现这六个点。他们在等馆守Z动。"},
+        {"beat_id": "c01e03_anchor_06", "speaker": "旁白", "stage_action": "镜头从右臂旧址桥下降到B1锁点", "text": "锁住的不是一条逃生暗道，而是一副从未被允许完整展开的身体。"},
+        {"beat_id": "c01e03_anchor_07", "speaker": "系统", "source_kind": "system", "text": "火场稳定后：万机馆按楼层、危险资产与可回收机体分区拆除。"}
+      ],
+      "success_edges": [],
+      "soft_fail_edges": [],
+      "failure_edges": [],
+      "cancel_edges": [],
+      "terminal": true,
+      "autosave": "before_enter_and_after_commit"
+    }
+  ]
+}

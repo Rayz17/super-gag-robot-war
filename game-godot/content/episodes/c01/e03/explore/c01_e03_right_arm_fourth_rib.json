@@ -1,0 +1,266 @@
+{
+  "investigation_id": "C01E03-RIGHT-ARM-FOURTH-RIB",
+  "status": "candidate_runtime_data",
+  "runtime_contract_source": "C01E03_RT019_RT023_RT038",
+  "story_source": "DOC_V359_C01E03_STORY_FIRST_V1",
+  "title": "人在一只仍可修的右臂里面",
+  "location": "馆守Z右前臂内腔 / 白函回收轨悬置区",
+  "target_minutes": "4-6",
+  "background_path": "res://assets/backgrounds/story_first/bg_c01e03_right_arm_interior_v01.png",
+  "play_bounds": [48, 112, 860, 548],
+  "player_start": [116, 604],
+  "required_offer_ids": [
+    "exclude_upper_cavity_rib",
+    "exclude_outer_armor_beam",
+    "exclude_heat_brittle_third_rib",
+    "find_hidden_panel_only",
+    "read_tangjiao_knock",
+    "read_brave_load_center",
+    "read_diedie_pad_green",
+    "resolve_fourth_rib_alignment"
+  ],
+  "required_object_ids": [
+    "OBJ_C01E03_UPPER_CAVITY_RIB",
+    "OBJ_C01E03_OUTER_ARMOR_BEAM",
+    "OBJ_C01E03_HEAT_BRITTLE_THIRD_RIB",
+    "OBJ_C01E03_HIDDEN_SUBRIB_PANEL",
+    "OBJ_C01E03_TANGJIAO_KNOCK_FEED",
+    "OBJ_C01E03_BRAVE_LOAD_CENTER_FEED",
+    "OBJ_C01E03_DIEDIE_PAD_FEED",
+    "OBJ_C01E03_FOURTH_RIB_ALIGNMENT"
+  ],
+  "visible_search_offer_ids": [
+    "exclude_upper_cavity_rib",
+    "exclude_outer_armor_beam",
+    "exclude_heat_brittle_third_rib"
+  ],
+  "external_ready_offer_ids": [
+    "read_tangjiao_knock",
+    "read_brave_load_center",
+    "read_diedie_pad_green"
+  ],
+  "spatial_cast": [
+    {"actor_id": "CH_JICUN", "display_name": "纪存", "side": "left", "portrait_path": "res://assets/portraits/portrait_jicun.png", "accent": "58c8d9"},
+    {"actor_id": "CH_TANGJIAO", "display_name": "唐胶 / 外部材料席", "side": "right", "portrait_path": "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png", "source_rect": [190, 25, 300, 336], "accent": "e2a74b"},
+    {"actor_id": "CH036", "display_name": "豪司 / 勇拳锚位", "side": "right", "portrait_path": "res://assets/portraits/portrait_haosi.png", "accent": "e38b50"},
+    {"actor_id": "CH057", "display_name": "跌跌 / 底部垫片", "side": "right", "portrait_path": "res://assets/battle_presentation/c01/story_first/sprite_diedie_idle_v01.png", "accent": "79d49a"}
+  ],
+  "stable_objects": [
+    {
+      "stable_object_id": "OBJ_C01E03_UPPER_CAVITY_RIB",
+      "label": "上腔筋 / 空响",
+      "position": [206, 228],
+      "interaction_radius": 84,
+      "initial_state": "visible_unverified",
+      "interaction_offers": [{
+        "offer_id": "exclude_upper_cavity_rib",
+        "repeat_policy": "once_then_recap",
+        "failure_continuation": {"policy": "remain_in_spatial", "player_feedback": "上腔承力仍不闭合；返回入口继续排除，调查不会自动替你选筋。"},
+        "outcome_contract": {"target_id": "OBJ_C01E03_UPPER_CAVITY_RIB", "state_source": "known_state"},
+        "known_state": "excluded_hollow_echo",
+        "add_tags": ["visible_false_rib", "search_tick"],
+        "first_text": "回声先到，振动后到；这里是空腔，不是承力线。",
+        "repeat_text": "空响仍比振动快半拍。上腔筋已排除。",
+        "first_sequence": [
+          {"beat_id": "e03_arm_upper_01", "speaker": "旁白", "stage_action": "纪存把扳手横贴在上腔筋上，外面的拖曳声隔着金属传进来", "text": "第一下像敲在门上，第二下却从脚底回来。"},
+          {"beat_id": "e03_arm_upper_02", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "声音走得太快。真把人压上来，它会先把人弹回白函那边。"},
+          {"beat_id": "e03_arm_upper_03", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "source_kind": "broadcast", "text": "划掉。别因为它长得最像梁，就给它升职。"}
+        ],
+        "repeat_sequence": [
+          {"beat_id": "e03_arm_upper_repeat", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "空腔回声。不能承人。"}
+        ]
+      }]
+    },
+    {
+      "stable_object_id": "OBJ_C01E03_OUTER_ARMOR_BEAM",
+      "label": "外甲梁 / 只承壳",
+      "position": [470, 202],
+      "interaction_radius": 84,
+      "initial_state": "visible_unverified",
+      "interaction_offers": [{
+        "offer_id": "exclude_outer_armor_beam",
+        "repeat_policy": "once_then_recap",
+        "failure_continuation": {"policy": "remain_in_spatial", "player_feedback": "外甲梁只传外壳震动；继续找能承人的内部筋。"},
+        "outcome_contract": {"target_id": "OBJ_C01E03_OUTER_ARMOR_BEAM", "state_source": "known_state"},
+        "known_state": "excluded_shell_only",
+        "add_tags": ["visible_false_rib", "search_tick"],
+        "first_text": "梁纹止在外甲，载荷没有进入腕部骨架。",
+        "repeat_text": "外甲梁只托壳，不托桥。",
+        "first_sequence": [
+          {"beat_id": "e03_arm_outer_01", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "沿着铆点爬到裂口边，向外看了一眼勇拳的拳背", "text": "它只跟着外壳走。勇拳一松，整条线就没了。"},
+          {"beat_id": "e03_arm_outer_02", "actor_id": "CH036", "speaker": "豪司", "source_kind": "broadcast", "text": "我没松。你要试的话先说，我不想拿你的脚当测力纸。"},
+          {"beat_id": "e03_arm_outer_03", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "不用试。外甲梁排除。你继续守中心。"}
+        ],
+        "repeat_sequence": [
+          {"beat_id": "e03_arm_outer_repeat", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "壳在承，骨架没接上。排除。"}
+        ]
+      }]
+    },
+    {
+      "stable_object_id": "OBJ_C01E03_HEAT_BRITTLE_THIRD_RIB",
+      "label": "第三肋 / 热脆",
+      "position": [708, 282],
+      "interaction_radius": 84,
+      "initial_state": "visible_unverified",
+      "interaction_offers": [{
+        "offer_id": "exclude_heat_brittle_third_rib",
+        "repeat_policy": "once_then_recap",
+        "failure_continuation": {"policy": "remain_in_spatial", "player_feedback": "第三筋的热脆痕仍在扩展；退回安全踏点再继续。"},
+        "outcome_contract": {"target_id": "OBJ_C01E03_HEAT_BRITTLE_THIRD_RIB", "state_source": "known_state"},
+        "known_state": "excluded_heat_brittle",
+        "add_tags": ["visible_false_rib", "search_tick"],
+        "first_text": "漆膜下面已有白化裂纹，第三肋只能维持现状。",
+        "repeat_text": "白化裂纹没有消失。第三肋仍不可承桥。",
+        "first_sequence": [
+          {"beat_id": "e03_arm_third_01", "speaker": "旁白", "stage_action": "纪存刮开一小片起泡的隔热漆，指甲下落出白色粉末", "text": "裂纹没有响。它早就在这里。"},
+          {"beat_id": "e03_arm_third_02", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "不是刚才那一拳打坏的。热风把它慢慢烤脆了。"},
+          {"beat_id": "e03_arm_third_03", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "source_kind": "broadcast", "text": "那就别让它临死前还背五个人。第三条也划。"}
+        ],
+        "repeat_sequence": [
+          {"beat_id": "e03_arm_third_repeat", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "热脆。能留着，不能拿来赌。"}
+        ]
+      }]
+    },
+    {
+      "stable_object_id": "OBJ_C01E03_HIDDEN_SUBRIB_PANEL",
+      "label": "无编号隔板",
+      "position": [744, 478],
+      "interaction_radius": 82,
+      "initial_state": "not_yet_located",
+      "hidden_until_interactable": true,
+      "locked_text": "三条看得见的承力线还没有逐一排除。",
+      "interaction_offers": [{
+        "offer_id": "find_hidden_panel_only",
+        "repeat_policy": "once_then_recap",
+        "failure_continuation": {"policy": "remain_in_spatial", "player_feedback": "旧检修缝还没有完全露出；沿铆钉间距继续摸索。"},
+        "outcome_contract": {"target_id": "OBJ_C01E03_HIDDEN_SUBRIB_PANEL", "state_source": "known_state"},
+        "requires_all_offer_ids": ["exclude_upper_cavity_rib", "exclude_outer_armor_beam", "exclude_heat_brittle_third_rib"],
+        "known_state": "hidden_panel_location_only",
+        "add_tags": ["memory_low_confidence", "hidden_panel"],
+        "first_text": "身体记忆只指出一块无编号隔板，没有给出切割许可。",
+        "repeat_text": "隔板位置已知；答案仍在外面的三项实测里。",
+        "first_sequence": [
+          {"beat_id": "e03_arm_memory_01", "speaker": "旁白", "stage_action": "纪存的右掌忽然泛起一阵并不存在的灼痛", "text": "他下意识把手贴向一块没有编号、也没有检修箭头的隔板。"},
+          {"beat_id": "e03_arm_memory_02", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "我知道门在哪。不知道为什么知道。"},
+          {"beat_id": "e03_arm_memory_03", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "source_kind": "broadcast", "text": "那就只拿它当门。别让一阵手疼替我们签字。"},
+          {"beat_id": "e03_arm_memory_04", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "在隔板旁写下“位置：低置信；承力：未验证”", "text": "收到。开门，重新量。"}
+        ],
+        "repeat_sequence": [
+          {"beat_id": "e03_arm_memory_repeat", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "它只帮我找到这里。后面的数不听它的。"}
+        ]
+      }]
+    },
+    {
+      "stable_object_id": "OBJ_C01E03_TANGJIAO_KNOCK_FEED",
+      "label": "材料回声 / 短短长",
+      "position": [560, 474],
+      "interaction_radius": 76,
+      "initial_state": "feed_dark",
+      "hidden_until_offer_complete": "find_hidden_panel_only",
+      "locked_text": "无编号隔板还没有打开。",
+      "interaction_offers": [{
+        "offer_id": "read_tangjiao_knock",
+        "repeat_policy": "once_then_recap",
+        "failure_continuation": {"policy": "remain_in_spatial", "player_feedback": "唐胶的敲击还没与内部位置对齐；停下听完下一组。"},
+        "outcome_contract": {"target_id": "OBJ_C01E03_TANGJIAO_KNOCK_FEED", "state_source": "known_state"},
+        "requires_all_offer_ids": ["find_hidden_panel_only"],
+        "known_state": "ready_short_short_long",
+        "add_tags": ["external_ready", "material_knock"],
+        "first_text": "短、短、长的外部敲击与隐藏副筋回声重合。",
+        "repeat_text": "唐胶的短、短、长仍与副筋回声重合。",
+        "first_sequence": [
+          {"beat_id": "e03_arm_tang_01", "speaker": "旁白", "stage_action": "两下短响贴着腕骨过来，第三下拖得很长", "text": "金属粉尘从同一条细缝落下。"},
+          {"beat_id": "e03_arm_tang_02", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "source_kind": "broadcast", "text": "短、短、长。我再敲一次，你听落点，不听节拍。"},
+          {"beat_id": "e03_arm_tang_03", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "落在隔板后面。材料线对上了。"}
+        ],
+        "repeat_sequence": [
+          {"beat_id": "e03_arm_tang_repeat", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "source_kind": "broadcast", "text": "短、短、长。落点没跑。"}
+        ]
+      }]
+    },
+    {
+      "stable_object_id": "OBJ_C01E03_BRAVE_LOAD_CENTER_FEED",
+      "label": "勇拳负载 / 中心",
+      "position": [370, 490],
+      "interaction_radius": 76,
+      "initial_state": "feed_dark",
+      "hidden_until_offer_complete": "find_hidden_panel_only",
+      "locked_text": "无编号隔板还没有打开。",
+      "interaction_offers": [{
+        "offer_id": "read_brave_load_center",
+        "repeat_policy": "once_then_recap",
+        "failure_continuation": {"policy": "remain_in_spatial", "player_feedback": "勇拳的载荷中心还在漂；等豪司把接触梁稳住再读。"},
+        "outcome_contract": {"target_id": "OBJ_C01E03_BRAVE_LOAD_CENTER_FEED", "state_source": "known_state"},
+        "requires_all_offer_ids": ["find_hidden_panel_only"],
+        "known_state": "ready_load_center",
+        "add_tags": ["external_ready", "load_center"],
+        "first_text": "勇拳没有追加动作，载荷中心保持在公开基线。",
+        "repeat_text": "勇拳负载中心仍在基线上，没有偷抬。",
+        "first_sequence": [
+          {"beat_id": "e03_arm_brave_01", "actor_id": "CH036", "speaker": "豪司", "source_kind": "broadcast", "stage_action": "勇拳拳背上的负载线停止跳动", "text": "我现在什么都不加。中心线在你左脚下面。"},
+          {"beat_id": "e03_arm_brave_02", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "看到了。别追着我修正，让它保持。"},
+          {"beat_id": "e03_arm_brave_03", "actor_id": "CH036", "speaker": "豪司", "source_kind": "broadcast", "text": "保持。今天这拳只负责托，不负责好看。"}
+        ],
+        "repeat_sequence": [
+          {"beat_id": "e03_arm_brave_repeat", "actor_id": "CH036", "speaker": "豪司", "source_kind": "broadcast", "text": "中心没动。你慢点走。"}
+        ]
+      }]
+    },
+    {
+      "stable_object_id": "OBJ_C01E03_DIEDIE_PAD_FEED",
+      "label": "跌跌垫片 / 绿色",
+      "position": [180, 482],
+      "interaction_radius": 76,
+      "initial_state": "feed_dark",
+      "hidden_until_offer_complete": "find_hidden_panel_only",
+      "locked_text": "无编号隔板还没有打开。",
+      "interaction_offers": [{
+        "offer_id": "read_diedie_pad_green",
+        "repeat_policy": "once_then_recap",
+        "failure_continuation": {"policy": "remain_in_spatial", "player_feedback": "底部垫片还没回绿；等跌跌重新压稳支点。"},
+        "outcome_contract": {"target_id": "OBJ_C01E03_DIEDIE_PAD_FEED", "state_source": "known_state"},
+        "requires_all_offer_ids": ["find_hidden_panel_only"],
+        "known_state": "ready_pad_green",
+        "add_tags": ["external_ready", "pad_green"],
+        "first_text": "跌跌压住底部垫片，绿色状态没有闪回黄色。",
+        "repeat_text": "垫片仍是绿色，跌跌没有离开受力点。",
+        "first_sequence": [
+          {"beat_id": "e03_arm_diedie_01", "speaker": "旁白", "stage_action": "一枚绿色方块在腕内小屏上亮稳；画面角落，跌跌正用整个身体压住垫片", "text": "它没有庆祝，只把两只脚又往外分了一点。"},
+          {"beat_id": "e03_arm_diedie_02", "actor_id": "CH057", "speaker": "跌跌", "source_kind": "broadcast", "text": "绿。没黄。还压着。"},
+          {"beat_id": "e03_arm_diedie_03", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "收到。你是第三个，不是附注。"}
+        ],
+        "repeat_sequence": [
+          {"beat_id": "e03_arm_diedie_repeat", "actor_id": "CH057", "speaker": "跌跌", "source_kind": "broadcast", "text": "绿。还在。"}
+        ]
+      }]
+    },
+    {
+      "stable_object_id": "OBJ_C01E03_FOURTH_RIB_ALIGNMENT",
+      "label": "第四筋联合校准",
+      "position": [484, 348],
+      "interaction_radius": 88,
+      "initial_state": "waiting_external_inputs",
+      "hidden_until_offer_complete": "find_hidden_panel_only",
+      "locked_text": "第四筋还缺外部就绪输入；靠近三块信号板逐项确认。",
+      "interaction_offers": [{
+        "offer_id": "resolve_fourth_rib_alignment",
+        "repeat_policy": "disabled_after_commit",
+        "failure_continuation": {"policy": "remain_in_spatial", "player_feedback": "强按轮廓会复原三项公开输入；第四筋只有在三者交集成立时才提交。"},
+        "outcome_contract": {"target_id": "OBJ_C01E03_FOURTH_RIB_ALIGNMENT", "state_source": "known_state"},
+        "requires_all_offer_ids": ["read_tangjiao_knock", "read_brave_load_center", "read_diedie_pad_green"],
+        "known_state": "alignment_choice_pending",
+        "add_tags": ["search_tick", "alignment_resolution"],
+        "first_text": "三项外部输入齐备；可以共同验证，也可以冒险按可见轮廓强行闭合。",
+        "first_sequence": [
+          {"beat_id": "e03_arm_final_01", "speaker": "旁白", "stage_action": "短短长、中心线与绿色垫片被叠到同一条隐藏副筋上", "text": "三条来自不同人的线没有完全重合，却围出了同一段安全宽度。"},
+          {"beat_id": "e03_arm_final_choice", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "第四格只够做一次。", "choices": [
+            {"choice_id": "verify_public_inputs", "label": "按三项公开输入验证"},
+            {"choice_id": "force_visible_outline", "label": "强按可见轮廓闭合"}
+          ]},
+          {"beat_id": "e03_arm_final_verify", "actor_id": "CH_JICUN", "speaker": "纪存", "requires_choices": {"e03_arm_final_choice": "verify_public_inputs"}, "stage_action": "把三项输入的交集写进第四筋承重窗", "text": "一人，一件货。再多一克也不算。把结果送给兜灯。"},
+          {"beat_id": "e03_arm_final_force", "speaker": "旁白", "requires_choices": {"e03_arm_final_choice": "force_visible_outline"}, "stage_action": "可见轮廓刚闭合，绿色垫片立刻闪黄", "text": "第四格被错误轮廓吃掉。外部三项姿态同时复原，纪存回到右臂入口。"}
+        ]
+      }]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "task_id": "A9_1A6_ENV_E0_CURRENT_TOPOLOGY_ENVIRONMENT_DERIVATION",
+  "status": "MACHINE_PASS_VISUAL_REVIEW_NOT_IMPLIED",
+  "input_sha_pass": true,
+  "task98_manifest_members_pass": true,
+  "layer_checks": [
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-e0-current-topology-environment/env-e2-layers/BASE_GROUND_OPAQUE_2400x1350.png",
+      "size": [
+        2400,
+        1350
+      ],
+      "mode": "RGB",
+      "pass_size": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-e0-current-topology-environment/env-e2-layers/BUILDINGS_WORLD_BODY_RGBA_2400x1350.png",
+      "size": [
+        2400,
+        1350
+      ],
+      "mode": "RGBA",
+      "pass_size": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-e0-current-topology-environment/env-e2-layers/ROOF_RGBA_2400x1350.png",
+      "size": [
+        2400,
+        1350
+      ],
+      "mode": "RGBA",
+      "pass_size": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-e0-current-topology-environment/env-e2-layers/FOREGROUND_RGBA_2400x1350.png",
+      "size": [
+        2400,
+        1350
+      ],
+      "mode": "RGBA",
+      "pass_size": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-e0-current-topology-environment/env-e2-layers/OCCLUSION_CONTROL_RGBA_2400x1350.png",
+      "size": [
+        2400,
+        1350
+      ],
+      "mode": "RGBA",
+      "pass_size": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-e0-current-topology-environment/env-e2-layers/WETNESS_EMISSIVE_CONTROL_RGBA_2400x1350.png",
+      "size": [
+        2400,
+        1350
+      ],
+      "mode": "RGBA",
+      "pass_size": true
+    }
+  ],
+  "cleanplate_checks": [
+    {
+      "camera_id": "NO_FOCUS",
+      "size": [
+        1280,
+        720
+      ],
+      "top_padding_alpha_zero": true,
+      "bottom_padding_alpha_zero": true,
+      "map_rows_opaque_ratio": 1.0,
+      "pass": true
+    },
+    {
+      "camera_id": "PLAN",
+      "size": [
+        1280,
+        720
+      ],
+      "top_padding_alpha_zero": true,
+      "bottom_padding_alpha_zero": true,
+      "map_rows_opaque_ratio": 1.0,
+      "pass": true
+    },
+    {
+      "camera_id": "CONTACT_A",
+      "size": [
+        1280,
+        720
+      ],
+      "top_padding_alpha_zero": true,
+      "bottom_padding_alpha_zero": true,
+      "map_rows_opaque_ratio": 1.0,
+      "pass": true
+    },
+    {
+      "camera_id": "CONTACT_B",
+      "size": [
+        1280,
+        720
+      ],
+      "top_padding_alpha_zero": true,
+      "bottom_padding_alpha_zero": true,
+      "map_rows_opaque_ratio": 1.0,
+      "pass": true
+    }
+  ],
+  "base_alpha_opaque": true,
+  "max_registration_error_px": 0.0,
+  "repetition_metrics": {
+    "metric_scope": "deterministic E2 material quilt transform signatures",
+    "native_donor_pixel_total": 209850,
+    "world_canvas_pixel_total": 3240000,
+    "native_donor_coverage_ratio_of_canvas": 0.064769,
+    "minimum_area_reuse_before_safe_subcrop_exclusions": 15.4396,
+    "total_patches": 540,
+    "unique_transform_signatures": 540,
+    "exact_duplicate_patch_count": 0,
+    "exact_duplicate_ratio": 0.0,
+    "max_exact_signature_reuse": 1,
+    "subjective_visible_repetition_requires_50_percent_human_review": true,
+    "visible_50_percent_repetition_pass": false,
+    "visible_failure_despite_unique_transform_signatures": true,
+    "transform_signature_metric_is_not_visual_quality_proof": true,
+    "machine_threshold_duplicate_ratio_lte": 0.12,
+    "machine_pass": true
+  },
+  "stateful_objects_baked": false,
+  "weather_fx_baked": false,
+  "controls_in_cleanplates": false,
+  "imagegen_calls": 0,
+  "libtv_generation_calls": 0,
+  "godot_writes": 0,
+  "call03": false,
+  "call04": false,
+  "visual_50_100_review_required": true,
+  "visual_self_review_pass": false,
+  "visual_failure_code": "BLOCKED_INSUFFICIENT_DONOR_COVERAGE_FOR_PRODUCT_ENVIRONMENT",
+  "candidate_visual_promotion_allowed": false,
+  "pass": true
+}

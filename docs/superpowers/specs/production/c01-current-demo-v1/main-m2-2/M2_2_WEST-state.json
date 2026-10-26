@@ -1,0 +1,156 @@
+{
+	"actual_camera_center": [
+		-160.0,
+		320.0
+	],
+	"actual_world_rect": [
+		-610.0,
+		23.0,
+		290.0,
+		617.0
+	],
+	"approved_handoffs": 0,
+	"asset_render_audit": {
+		"map_layers": [
+			"MAP_C01CDV1_R2_BASE",
+			"MAP_C01CDV1_R2_BUILDINGS",
+			"MAP_C01CDV1_R2_STATE_LAYERS",
+			"MAP_C01CDV1_R2_ROOFS",
+			"MAP_C01CDV1_R2_FOREGROUND"
+		],
+		"occlusion_mask_alpha": 0.862745106220245,
+		"occlusion_mask_sampled": true,
+		"overhead_alpha": 0.280000001192093,
+		"overhead_faded_for_selected_unit": true,
+		"qsd_frames": {
+			"ENEMY_C01_RIFT_SWARM_01": {
+				"anchor": "(13, 6)",
+				"frame_id": "idle/east",
+				"slot_id": "ENEMY_C01CDV1_RIFT_SWARM_MASTER"
+			},
+			"ENEMY_C01_RIFT_SWARM_04": {
+				"anchor": "(15, 12)",
+				"frame_id": "idle/north",
+				"slot_id": "ENEMY_C01CDV1_RIFT_SWARM_MASTER"
+			},
+			"V353U001": {
+				"anchor": "(5, 10)",
+				"frame_id": "idle/east",
+				"slot_id": "MECHA_C01CDV1_GUARDIAN_Z"
+			}
+		},
+		"selected_unit_occluded": true,
+		"selected_unit_outline_drawn": true,
+		"shield_draw_count": 1,
+		"shield_draw_source": "verified_candidate_asset",
+		"shield_slot_id": "PROP_C01CDV1_RETIRED_SHIELD_WALL_HUNG",
+		"shield_state": "wall_hung"
+	},
+	"breaker_weight_state": "driving_forward",
+	"build_id": "C01CDV1-M2-R2",
+	"camera_bounds": [
+		-270.0,
+		277.0,
+		1100.0,
+		406.0
+	],
+	"capture_id": "WEST",
+	"capture_role": "guardian_z_and_retired_shield",
+	"content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+	"finisher_ready": false,
+	"finisher_triggered": false,
+	"gameplay_state_mutation": false,
+	"loaded_slot_count": 13,
+	"loaded_slot_ids": [
+		"ENEMY_C01CDV1_BREAKER_GROUND",
+		"ENEMY_C01CDV1_RIFT_SWARM_MASTER",
+		"MAP_C01CDV1_R2_BASE",
+		"MAP_C01CDV1_R2_BUILDINGS",
+		"MAP_C01CDV1_R2_FOREGROUND",
+		"MAP_C01CDV1_R2_OCCLUSION_MASK",
+		"MAP_C01CDV1_R2_ROOFS",
+		"MAP_C01CDV1_R2_STATE_LAYERS",
+		"MECHA_C01CDV1_GUARDIAN_Z",
+		"PROP_C01CDV1_RETIRED_SHIELD_HEAT_DEFORMED",
+		"PROP_C01CDV1_RETIRED_SHIELD_HELD_COLD",
+		"PROP_C01CDV1_RETIRED_SHIELD_RED_BLOCKED",
+		"PROP_C01CDV1_RETIRED_SHIELD_WALL_HUNG"
+	],
+	"profile_id": "c01cdv1_e02_scroll_m2_r2",
+	"requested_review_center": [
+		-160.0,
+		320.0
+	],
+	"rescue_lane_state": "active",
+	"resource_probe_count": 13,
+	"runtime_art_loaded": false,
+	"screen_rect": [
+		0,
+		54,
+		900,
+		594
+	],
+	"shield_state": "wall_hung",
+	"swarm_organization_state": "scattered",
+	"swarm_survivor_count": 6,
+	"swarm_survivors": [
+		{
+			"organization_state": "scattered",
+			"position": [
+				13,
+				6
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_01",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				18,
+				5
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_02",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				27,
+				6
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_03",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				15,
+				12
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_04",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				29,
+				11
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_05",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				21,
+				14
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_06",
+			"status": "active"
+		}
+	],
+	"synthetic_fixture": true,
+	"tactical_signature": "c01cdv1_e02_scroll_m2_r2|(32, 18)|turn=1|guardian=(5, 10)|breaker=(23, 8):driving_forward|shield=false:false|rescue=active|ENEMY_C01_RIFT_SWARM_01@(13, 6):2|ENEMY_C01_RIFT_SWARM_02@(18, 5):2|ENEMY_C01_RIFT_SWARM_03@(27, 6):2|ENEMY_C01_RIFT_SWARM_04@(15, 12):2|ENEMY_C01_RIFT_SWARM_05@(29, 11):2|ENEMY_C01_RIFT_SWARM_06@(21, 14):2|TARGET_C01_EAST_EXIT@(31, 4):6:active|TARGET_C01_EMERGENCY_AMBULANCE@(27, 4):4:active|TARGET_C01_EMERGENCY_BRIDGE_TRUCK@(28, 5):4:active|TARGET_C01_SECURITY_GATE@(25, 5):5:active|TARGET_C01_WARNING_RELAY@(19, 7):5:active",
+	"topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+	"turn": 1
+}

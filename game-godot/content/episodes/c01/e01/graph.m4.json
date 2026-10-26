@@ -1,0 +1,120 @@
+{
+  "episode_id": "C01E01-MULTI-PLAY-M4",
+  "start_node_id": "C01E01-M4-NARRATIVE",
+  "nodes": [
+    {
+      "node_id": "C01E01-M4-NARRATIVE",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_C01_M1_NARRATIVE",
+      "title": "三小时前 / 一条保护线",
+      "completion_contract": "OUTCOME_C01_M4_INTRO_V01",
+      "transaction_id": "C01E01:M4:NARRATIVE_INTRO:V01",
+      "outcome_facts": [{"id": "M4_RUNTIME_INTRO_SEEN", "to": true}],
+      "player_summary": "纪存决定先确认现场，再把空间判断带进保护战。",
+      "lines": [
+        {"speaker": "旁白", "text": "火灾后的短镜头被按停。时间退回三小时前。"},
+        {"speaker": "纪存", "text": "先去看现场。别把猜的东西带进战场。"}
+      ],
+      "success_edges": ["C01E01-M4-RM-INCIDENT"],
+      "soft_fail_edges": ["C01E01-M4-RM-INCIDENT"],
+      "failure_edges": ["C01E01-M4-RM-INCIDENT"],
+      "cancel_edges": ["C01E01-M4-RM-INCIDENT"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "C01E01-M4-RM-INCIDENT",
+      "mode": "SPATIAL",
+      "scene_id": "SCN_C01_RM_RESCUE_2P5D_V01",
+      "title": "现实机器区 / 失败占格救援",
+      "objective": "确认停机权、失败路径和低热支援边界。",
+      "completion_contract": "OUTCOME_C01_RM_INCIDENT_M4_V01",
+      "required_context": ["RM_ROOM_STATE", "DOUDENG_POSITION", "DIEDIE_CONDITION"],
+      "success_edges": ["C01E01-M4-TACTICAL"],
+      "soft_fail_edges": ["C01E01-M4-TACTICAL"],
+      "failure_edges": ["C01E01-M4-TACTICAL"],
+      "cancel_edges": ["C01E01-M4-TACTICAL"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "C01E01-M4-TACTICAL",
+      "mode": "TACTICAL",
+      "scene_id": "SCN_C01_M4_TACTICAL",
+      "title": "主展厅保护线 / 数据驱动战术场景",
+      "objective": "让空间事件的结果进入战棋，并让战棋结果返回人物与记录。",
+      "completion_contract": "OUTCOME_C01_M4_TACTICAL_V01",
+      "battle_definition_path": "res://content/episodes/c01/e01/battle/c01_e01_v3510_candidate_3t.json",
+      "success_edges": ["C01E01-M4-AFTER-SUCCESS"],
+      "soft_fail_edges": ["C01E01-M4-AFTER-COST"],
+      "failure_edges": ["C01E01-M4-AFTER-FAILURE"],
+      "cancel_edges": ["C01E01-M4-AFTER-WITHDRAW"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "C01E01-M4-AFTER-SUCCESS",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_C01_M1_NARRATIVE",
+      "title": "保护线成立",
+      "completion_contract": "OUTCOME_C01_M4_AFTER_SUCCESS_V01",
+      "transaction_id": "C01E01:M4:AFTER_SUCCESS:V01",
+      "player_summary": "保护线成立后的即时反应已进入剧情。",
+      "lines": [
+        {"speaker": "旧守护者", "text": "观众通路维持。本机姿态：半跪。"},
+        {"speaker": "兜灯", "text": "没过线。别庆祝，吊索还在掉。"}
+      ],
+      "success_edges": ["C01E01-M4-DESK"], "soft_fail_edges": ["C01E01-M4-DESK"], "failure_edges": ["C01E01-M4-DESK"], "cancel_edges": ["C01E01-M4-DESK"]
+    },
+    {
+      "node_id": "C01E01-M4-AFTER-COST",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_C01_M1_NARRATIVE",
+      "title": "保住主要线，留下次生责任",
+      "completion_contract": "OUTCOME_C01_M4_AFTER_COST_V01",
+      "transaction_id": "C01E01:M4:AFTER_COST:V01",
+      "player_summary": "战术软失败没有被抹掉，而是进入人物责任。",
+      "lines": [
+        {"speaker": "阿澄", "text": "七个还在。旧件柜没了。别把两件事说成一样。"},
+        {"speaker": "纪存", "text": "不一样。丢的那件也记我名下。"}
+      ],
+      "success_edges": ["C01E01-M4-DESK"], "soft_fail_edges": ["C01E01-M4-DESK"], "failure_edges": ["C01E01-M4-DESK"], "cancel_edges": ["C01E01-M4-DESK"]
+    },
+    {
+      "node_id": "C01E01-M4-AFTER-FAILURE",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_C01_M1_NARRATIVE",
+      "title": "保护线被压穿",
+      "completion_contract": "OUTCOME_C01_M4_AFTER_FAILURE_V01",
+      "transaction_id": "C01E01:M4:AFTER_FAILURE:V01",
+      "player_summary": "战斗失败继续成为剧情事实，没有读档式抹除。",
+      "lines": [
+        {"speaker": "旁白", "text": "白线越过留言墙。纸没有燃烧，只是开始不再属于写下它的人。"},
+        {"speaker": "纪存", "text": "先带人出去。东西丢在哪一格，我记得。"}
+      ],
+      "success_edges": ["C01E01-M4-DESK"], "soft_fail_edges": ["C01E01-M4-DESK"], "failure_edges": ["C01E01-M4-DESK"], "cancel_edges": ["C01E01-M4-DESK"]
+    },
+    {
+      "node_id": "C01E01-M4-AFTER-WITHDRAW",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_C01_M1_NARRATIVE",
+      "title": "主动撤离",
+      "completion_contract": "OUTCOME_C01_M4_AFTER_WITHDRAW_V01",
+      "transaction_id": "C01E01:M4:AFTER_WITHDRAW:V01",
+      "player_summary": "撤离是承担后果的选择，不是取消战斗。",
+      "lines": [
+        {"speaker": "纪存", "text": "黄线往外。不要等我把这地方解释成胜利。"},
+        {"speaker": "七海", "text": "撤离记录已生成。责任栏还是空的。你确定要填自己？"}
+      ],
+      "success_edges": ["C01E01-M4-DESK"], "soft_fail_edges": ["C01E01-M4-DESK"], "failure_edges": ["C01E01-M4-DESK"], "cancel_edges": ["C01E01-M4-DESK"]
+    },
+    {
+      "node_id": "C01E01-M4-DESK",
+      "mode": "DESK",
+      "scene_id": "SCN_C01_M1_DESK",
+      "title": "现场结算 / 世界记得什么",
+      "completion_contract": "OUTCOME_C01_M4_DESK_V01",
+      "transaction_id": "C01E01:M4:DESK_REVIEW:V01",
+      "success_edges": [], "soft_fail_edges": [], "failure_edges": [], "cancel_edges": [],
+      "terminal": true,
+      "autosave": "before_enter_and_after_commit"
+    }
+  ]
+}

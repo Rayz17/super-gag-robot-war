@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "identity": {
+    "golden_slice_contract_id": "C01E02_GOLDEN_SLICE_G2_A",
+    "contract_revision": 1,
+    "build_id": "C01E02-GS-G2A-INTERNAL",
+    "rules_profile_id": "c01e02_golden_slice_three_round_g2a",
+    "runtime_lane": "candidate_internal_engineering",
+    "entry_role": "non_default",
+    "save_mode": "disabled",
+    "save_schema": null,
+    "operation_commit": false,
+    "story_checkpoint_write": false,
+    "asset_mode": "semantic_slots_zero_handoff",
+    "real_art_handoff": "none",
+    "real_art_loaded": 0,
+    "integrated_visual_playtest_ready": false
+  },
+  "consumer_readiness": {
+    "correction_contract_id": "C01E02_G2_A1_MAP_PERFORMANCE_READINESS",
+    "revision": 1,
+    "r2_geometry_consumer_accepted": true,
+    "contact_staging_contract_id": "STAGGERED_FRONT_CONTACT_V1",
+    "contact_staging_revision": 1,
+    "fixture_validation_only": true,
+    "user_capture_allowed": false,
+    "g2_b_allowed": false
+  },
+  "grid": [32, 18],
+  "projection": {
+    "projection_id": "A4_ISOMETRIC_40X20",
+    "tile_half": [40, 20],
+    "world_origin": [-880, -170],
+    "map_screen_rect": [0, 58, 1280, 584],
+    "edge_threshold": 92,
+    "safe_ratio": 0.60,
+    "camera_smoothing_seconds": 0.16
+  },
+  "contact_staging": {
+    "staging_id": "STAGGERED_FRONT_CONTACT_V1",
+    "revision": 1,
+    "guardian_footprint": [2, 2],
+    "breaker_footprint": [3, 3],
+    "breaker_public_route": [[20, 13], [20, 12], [20, 11]],
+    "breaker_contact_anchor": [20, 11],
+    "breaker_contact_facing": "north",
+    "approach_grid_vector": [0, -1],
+    "contact_normal_grid": [0, 1],
+    "artillery_source_anchor": [29, 2],
+    "strategies": {
+      "A_BODY_INTERCEPT": {
+        "planning_route": [[15, 11], [16, 11], [17, 11], [18, 11], [18, 10], [19, 10], [19, 9], [20, 9]],
+        "planning_route_role": "hero_route",
+        "route_family_contract": {
+          "route_family_id": "A_BODY_INTERCEPT_FAMILY",
+          "origin": [15, 11],
+          "exact_steps": 7,
+          "endpoint": [20, 9],
+          "selection_kind": "main_action",
+          "required_selection": "BODY_INTERCEPT",
+          "settle_facing": "south",
+          "contact_facing": "south",
+          "equivalent_monotonic_shortest_route_count": 21,
+          "direct_endpoint_bfs_route": [[15, 11], [15, 10], [15, 9], [16, 9], [17, 9], [18, 9], [19, 9], [20, 9]],
+          "acceptance": "continuous_and_2x2_placeable_and_exact_shortest_family"
+        },
+        "planning_endpoint": [20, 9],
+        "settle_facing": "south",
+        "contact_facing": "south",
+        "contact_timeslice": "T3.00",
+        "contact_edge": "guardian_south_to_breaker_north",
+        "contact_edge_cells": 2,
+        "impact_socket_grid": [20.5, 10.5],
+        "visual_recoil_anchor": [20, 8.5],
+        "post_guardian_anchor": [20, 9],
+        "post_breaker_anchor": [21, 11],
+        "post_breaker_facing": "north",
+        "east_side_armor_socket_grid": [24, 12.5],
+        "second_round_route": [[20, 9], [19, 9], [18, 9], [17, 9], [16, 9], [15, 9], [14, 9], [14, 10], [15, 10], [16, 10], [17, 10]],
+        "second_round_target_heat": 68,
+        "second_round_target_margin": 1
+      },
+      "B_PROTECT_LANE_PREPARE": {
+        "planning_route": [[15, 11], [15, 10], [16, 10], [17, 10], [18, 10], [19, 10], [19, 9]],
+        "planning_route_role": "hero_route",
+        "route_family_contract": {
+          "route_family_id": "B_PROTECT_LANE_FAMILY",
+          "origin": [15, 11],
+          "exact_steps": 6,
+          "endpoint": [19, 9],
+          "selection_kind": "prepared_reaction",
+          "required_selection": "PROTECT_LANE_RESPONSE",
+          "settle_facing": "east",
+          "contact_facing": "south",
+          "equivalent_monotonic_shortest_route_count": 15,
+          "direct_endpoint_bfs_route": [[15, 11], [15, 10], [15, 9], [16, 9], [17, 9], [18, 9], [19, 9]],
+          "acceptance": "continuous_and_2x2_placeable_and_exact_shortest_family"
+        },
+        "planning_endpoint": [19, 9],
+        "settle_facing": "east",
+        "contact_facing": "south",
+        "contact_timeslice": "T3.25",
+        "contact_edge": "guardian_south_to_breaker_north",
+        "contact_edge_cells": 1,
+        "impact_socket_grid": [20, 10.5],
+        "visual_recoil_anchor": [19, 8.5],
+        "post_guardian_anchor": [19, 9],
+        "post_breaker_anchor": [21, 10],
+        "post_breaker_facing": "north",
+        "east_side_armor_socket_grid": [24, 11.5],
+        "second_round_route": [[19, 9], [18, 9], [17, 9], [16, 9], [15, 9], [14, 9], [14, 10], [15, 10], [16, 10], [17, 10]],
+        "second_round_target_heat": 88,
+        "second_round_target_margin": 0
+      }
+    }
+  },
+  "terrain_zones": [
+    {"zone_id":"TERRAIN_C01_MAIN_ROAD","kind":"road","rect":[0,7,32,7],"passable":true},
+    {"zone_id":"TERRAIN_C01_RESCUE_LANE","kind":"rescue_lane","rect":[20,5,12,7],"passable":true},
+    {"zone_id":"TERRAIN_C01_NW_BLOCK","kind":"building","rect":[1,0,7,5],"passable":false},
+    {"zone_id":"TERRAIN_C01_NM_BLOCK","kind":"building","rect":[10,0,5,4],"passable":false},
+    {"zone_id":"TERRAIN_C01_NE_BLOCK","kind":"building","rect":[22,0,7,4],"passable":false},
+    {"zone_id":"TERRAIN_C01_SW_BLOCK","kind":"building","rect":[0,15,8,3],"passable":false},
+    {"zone_id":"TERRAIN_C01_SE_BLOCK","kind":"building","rect":[26,14,6,4],"passable":false},
+    {"zone_id":"TERRAIN_C01_BROKEN_SKYWALK","kind":"broken_corridor","rect":[8,5,7,2],"passable":false},
+    {"zone_id":"TERRAIN_C01_SECURITY_APRON","kind":"security_apron","rect":[24,4,8,8],"passable":true}
+  ],
+  "initial_world": {
+    "round_number": 1,
+    "guardian_position": [15, 11],
+    "guardian_facing": "east",
+    "guardian_heat": 0,
+    "guardian_heat_limit": 90,
+    "contact_staging_id": "",
+    "guardian_planning_endpoint": [15, 11],
+    "guardian_settle_facing": "east",
+    "guardian_contact_anchor": [],
+    "guardian_contact_facing": "",
+    "guardian_visual_recoil_anchor": [],
+    "guardian_post_contact_anchor": [15, 11],
+    "breaker_contact_anchor": [],
+    "breaker_post_contact_anchor": [20, 13],
+    "breaker_post_contact_facing": "north",
+    "impact_socket_grid": [],
+    "side_armor_socket_grid": [],
+    "side_armor_exposed": false,
+    "artillery_line": {},
+    "strategy_path": "",
+    "breaker_depth": 13,
+    "road_damage": 0,
+    "warning_facility_state": "active",
+    "swarm_positions": {
+      "ENEMY_C01_RIFT_SWARM_01": [22, 7],
+      "ENEMY_C01_RIFT_SWARM_02": [26, 12],
+      "ENEMY_C01_RIFT_SWARM_03": [29, 5]
+    },
+    "remaining_timing_margin": 0,
+    "route_timing_cost": 0,
+    "round2_constraints": {},
+    "rescue_lane_state": "active",
+    "shield_state": "wall_hung_3_scorches",
+    "red_impact_state": "dormant",
+    "breaker_balance": "charging_run",
+    "shield_bash_window": "closed",
+    "shield_bash_resolved": false,
+    "p1_checkpoint": false,
+    "mission_clear": false,
+    "swarm_organization_state": "scattered",
+    "last_vehicle_state": "waiting_behind_lane",
+    "east_gate_state": "open",
+    "entities": [
+      {"unit_id":"V353U001","kind":"guardian","display_name":"馆守Z","anchor":[15,11],"footprint":[2,2],"facing":"east","controllable":true,"status":"active","alive":true},
+      {"unit_id":"ENEMY_C01_BREAKER","kind":"boss","display_name":"BREAKER","anchor":[20,13],"footprint":[3,3],"facing":"north","controllable":false,"blocks_route":true,"status":"charging_run","alive":true,"first_knockdown":false,"red_charge_state":"dormant"},
+      {"unit_id":"ENEMY_C01_RIFT_SWARM_01","kind":"swarm","display_name":"突入小体 01","anchor":[22,7],"footprint":[1,1],"facing":"west","controllable":false,"status":"active","alive":true,"organization_state":"scattered"},
+      {"unit_id":"ENEMY_C01_RIFT_SWARM_02","kind":"swarm","display_name":"突入小体 02","anchor":[26,12],"footprint":[1,1],"facing":"north","controllable":false,"status":"active","alive":true,"organization_state":"scattered"},
+      {"unit_id":"ENEMY_C01_RIFT_SWARM_03","kind":"swarm","display_name":"突入小体 03","anchor":[29,5],"footprint":[1,1],"facing":"south","controllable":false,"status":"active","alive":true,"organization_state":"scattered"},
+      {"unit_id":"TARGET_C01_EMERGENCY_VEHICLE_01","kind":"emergency_vehicle","display_name":"应急车","anchor":[17,10],"footprint":[1,1],"facing":"east","controllable":false,"status":"moving"},
+      {"unit_id":"TARGET_C01_FINAL_VEHICLE","kind":"emergency_vehicle","display_name":"最后车辆","anchor":[13,9],"footprint":[1,1],"facing":"east","controllable":false,"status":"waiting"},
+      {"unit_id":"TARGET_C01_EAST_EXIT","kind":"evacuation_exit","display_name":"东侧撤离口","anchor":[31,7],"footprint":[1,1],"facing":"east","controllable":false,"status":"active"},
+      {"unit_id":"TARGET_C01_SECURITY_GATE","kind":"security_target","display_name":"东门警戒设施","anchor":[27,8],"footprint":[1,1],"facing":"south","controllable":false,"status":"active"}
+    ],
+    "objects": [
+      {"object_id":"PROP_C01CDV1_RETIRED_SHIELD","kind":"retired_shield","display_name":"退役重盾","anchor":[14,10],"state":"wall_hung_3_scorches"},
+      {"object_id":"ENV_C01_ROAD_SURFACE","kind":"road_surface","display_name":"旧会展广场路面","state":"intact","damage":0},
+      {"object_id":"ALLY_C01_CITY_ARTILLERY","kind":"autonomous_support","display_name":"城市边缘炮火","state":"tracking","controllable":false},
+      {"object_id":"ENV_C01_EAST_GATE","kind":"evacuation_gate","display_name":"东门","state":"open"}
+    ]
+  },
+  "rounds": {
+    "1": {
+      "round_id": "GS-R1-FIRST-CONTACT",
+      "objective": "让应急车通过，挡开扑向东门的小体，并站到冲线前。",
+      "max_route_steps": 7,
+      "max_waypoints": 5,
+      "top_threats": ["应急车先穿过落脚区", "小体将在第二时点扑向东门", "BREAKER沿直线冲入街区"],
+      "timeline": ["vehicle", "swarm", "giant_contact", "city_artillery", "red_charge"],
+      "actions": ["BODY_INTERCEPT"],
+      "prepared_reactions": ["PROTECT_LANE_RESPONSE"],
+      "frozen_intents": [
+        {"intent_id":"GS-R1-I1-VEHICLE","actor_id":"TARGET_C01_EMERGENCY_VEHICLE_01","action_type":"AUTO_CROSS_LANDING_ZONE","target_id":"TARGET_C01_EAST_EXIT","timeslice":1,"trajectory":[[17,10],[18,10],[21,10],[24,9]]},
+        {"intent_id":"GS-R1-I2-SWARM","actor_id":"ENEMY_C01_RIFT_SWARM_01","action_type":"ENTER_ATTACK_RESCUE_LINE","target_id":"RESCUE_LANE_EAST","timeslice":2,"target_anchor":[20,10],"trajectory":[[22,7],[21,8],[20,9],[20,10]],"emits_trigger":{"event_type":"ENTITY_ENTERED_AREA","actor_id":"ENEMY_C01_RIFT_SWARM_01","target_id":"RESCUE_LANE_EAST","timeslice":2}},
+        {"intent_id":"GS-R1-I3-BREAKER","actor_id":"ENEMY_C01_BREAKER","action_type":"STRAIGHT_CHARGE_NORTH_CITY","target_id":"NORTH_CITY_AXIS","timeslice":3,"trajectory":[[20,13],[20,12],[20,11]],"approach_vector":[0,-1]},
+        {"intent_id":"GS-R1-I4-CITY-GUN","actor_id":"ALLY_C01_CITY_ARTILLERY","action_type":"CONDITIONAL_SIDE_ARMOR_SHOT","target_id":"ENEMY_C01_BREAKER_SIDE_ARMOR","timeslice":4,"source_anchor":[29,2],"target_anchor_source":"POST_CONTACT_BREAKER_EAST_SIDE_ARMOR_SOCKET","condition":{"signal":"BREAKER_SIDE_ARMOR_EXPOSED"}},
+        {"intent_id":"GS-R1-I5-ROAD","actor_id":"ENV_C01_ROAD_SURFACE","action_type":"BUCKLE_ON_HEAVY_CONTACT","target_id":"GIANT_CONTACT","timeslice":5,"target_anchor_source":"STAGGERED_FRONT_CONTACT_V1_IMPACT_SOCKET","visual_area":[19,9,5,5],"condition":{"signal":"HEAVY_CONTACT_OCCURRED"}}
+      ],
+      "overlay": {
+        "protection_zones": [{"label":"东侧保护线","rect":[20,5,12,7]}],
+        "contest_cells": [[18,10],[19,9],[20,9],[19,10]],
+        "target_anchors": [{"label":"应急车","anchor":[17,10]},{"label":"小体扑线点","anchor":[20,10]},{"label":"A全前缘承接","anchor":[20,9]},{"label":"B错一格承接","anchor":[19,9]},{"label":"城市炮源","anchor":[29,2]}],
+        "timing_anchors": [{"token":"T1","anchor":[18,10]},{"token":"T2","anchor":[20,10]},{"token":"T3","anchor":[20,11]},{"token":"T4","anchor":[24,6]},{"token":"T5","anchor":[21,11]}]
+      }
+    },
+    "2": {
+      "round_id": "GS-R2-SHIELD-BLOCK",
+      "objective": "经过展墙取得退役重盾，在赤红冲击到达前回到保护线。",
+      "max_route_steps": 10,
+      "max_waypoints": 5,
+      "top_threats": ["赤红冲击将在第二时点到达", "最后车辆仍在保护线后", "高热会压缩绕行余量"],
+      "timeline": ["shield_take", "red_impact", "final_vehicle", "east_gate", "breaker_balance"],
+      "actions": ["TAKE_SHIELD_BLOCK_RED"],
+      "prepared_reactions": [],
+      "frozen_intents": [
+        {"intent_id":"GS-R2-I1-SHIELD","actor_id":"V353U001","action_type":"TAKE_WALL_SHIELD","target_id":"PROP_C01CDV1_RETIRED_SHIELD","timeslice":1,"required_anchor":[14,10],"target_anchor":[14,10],"visual_area":[14,10,1,1]},
+        {"intent_id":"GS-R2-I2-RED","actor_id":"ENEMY_C01_BREAKER","action_type":"RELEASE_RED_IMPACT","target_id":"RESCUE_LANE_EAST","timeslice":2,"target_anchor":[17,10],"trajectory_source":"POST_CONTACT_BREAKER_ANCHOR","condition":{"signal":"BREAKER_RED_CHARGE_READY"}},
+        {"intent_id":"GS-R2-I3-FINAL-VEHICLE","actor_id":"TARGET_C01_FINAL_VEHICLE","action_type":"AUTO_CROSS_AFTER_BLOCK","target_id":"TARGET_C01_EAST_EXIT","timeslice":3,"target_anchor":[29,8],"visual_trajectory":[[13,9],[18,9],[24,9],[29,8]],"condition":{"signal":"RED_IMPACT_BLOCKED"}},
+        {"intent_id":"GS-R2-I4-GATE","actor_id":"ENV_C01_EAST_GATE","action_type":"CLOSE_AFTER_FINAL_VEHICLE","target_id":"TARGET_C01_EAST_EXIT","timeslice":4,"target_anchor":[31,7],"visual_area":[30,6,2,4],"condition":{"signal":"FINAL_VEHICLE_PASSED"}},
+        {"intent_id":"GS-R2-I5-BALANCE","actor_id":"ENEMY_C01_BREAKER","action_type":"RECOVER_WEIGHT_AFTER_IMPACT","target_id":"SELF","timeslice":5,"target_anchor_source":"POST_CONTACT_BREAKER_ANCHOR","visual_area_source":"POST_CONTACT_BREAKER_FOOTPRINT","condition":{"signal":"RED_IMPACT_RESOLVED"}}
+      ],
+      "overlay": {
+        "protection_zones": [{"label":"赤红挡击线","rect":[17,9,2,3]},{"label":"最后车辆保护区","rect":[13,8,17,3]}],
+        "contest_cells": [[14,10],[17,9],[17,10]],
+        "target_anchors": [{"label":"墙挂重盾","anchor":[14,10]},{"label":"挡击位","anchor":[17,10]},{"label":"最后车辆","anchor":[13,9]},{"label":"东门","anchor":[31,7]},{"label":"偏轴重心","anchor":[21,11]}],
+        "timing_anchors": [{"token":"T1","anchor":[14,10]},{"token":"T2","anchor":[17,10]},{"token":"T3","anchor":[24,9]},{"token":"T4","anchor":[31,7]},{"token":"T5","anchor":[21,11]}]
+      }
+    },
+    "3": {
+      "round_id": "GS-R3-SHIELD-BASH",
+      "objective": "利用未收回的重心，以身体、位置和朝向制造一次盾拍。",
+      "max_route_steps": 6,
+      "max_waypoints": 4,
+      "top_threats": ["偏轴窗口只维持一轮", "南侧推力线不能偏离", "小体仍在街区边缘活动"],
+      "timeline": ["side_press", "balance_window", "shield_bash", "first_knockdown", "p1_hook"],
+      "actions": ["SIDE_PRESS_SHIELD_BASH"],
+      "prepared_reactions": [],
+      "frozen_intents": [
+        {"intent_id":"GS-R3-I1-SIDE","actor_id":"V353U001","action_type":"BUILD_SIDE_PRESS","target_id":"ENEMY_C01_BREAKER","timeslice":1,"legal_contact_anchors":[[19,10],[20,10]],"target_anchor":[[19,10],[20,10]],"visual_area":[19,10,2,1],"required_facing":"south"},
+        {"intent_id":"GS-R3-I2-WINDOW","actor_id":"ENEMY_C01_BREAKER","action_type":"RECOVER_OFF_AXIS_BALANCE","target_id":"SELF","timeslice":2,"target_anchor":[21,11],"visual_area":[20,10,3,3],"condition":{"signal":"BREAKER_OFF_AXIS_UNRECOVERED"}},
+        {"intent_id":"GS-R3-I3-BASH","actor_id":"V353U001","action_type":"CONTEXTUAL_SHIELD_BASH","target_id":"ENEMY_C01_BREAKER","timeslice":3,"target_anchor":[21,11],"visual_trajectory":[[20,10],[21,11]],"condition":{"signal":"SHIELD_BASH_OPPORTUNITY"}},
+        {"intent_id":"GS-R3-I4-KNOCKDOWN","actor_id":"ENEMY_C01_BREAKER","action_type":"FIRST_KNOCKDOWN_ALIVE","target_id":"SELF","timeslice":4,"target_anchor":[21,13],"visual_trajectory":[[21,11],[21,13]],"condition":{"signal":"SHIELD_BASH_RESOLVED"}},
+        {"intent_id":"GS-R3-I5-P1","actor_id":"ENEMY_C01_BREAKER","action_type":"BEGIN_RECOVERY_P1_HOOK","target_id":"SELF","timeslice":5,"target_anchor":[21,13],"visual_area":[20,12,3,3],"condition":{"signal":"FIRST_KNOCKDOWN_ALIVE"}}
+      ],
+      "overlay": {
+        "protection_zones": [{"label":"已清空撤离线","rect":[20,5,12,7]}],
+        "contest_cells": [[19,10],[20,10]],
+        "target_anchors": [{"label":"侧压位一","anchor":[19,10]},{"label":"侧压位二","anchor":[20,10]},{"label":"偏轴窗口","anchor":[21,11]},{"label":"盾拍接触点","anchor":[21,11]},{"label":"起身位置","anchor":[21,13]}],
+        "timing_anchors": [{"token":"T1","anchor":[19,10]},{"token":"T2","anchor":[21,11]},{"token":"T3","anchor":[21,11]},{"token":"T4","anchor":[21,13]},{"token":"T5","anchor":[21,13]}]
+      }
+    }
+  },
+  "fixtures": {
+    "r1_strategy_a": {"round":1,"unit_plans":[{"unit_id":"V353U001","waypoints":[[18,11],[18,10],[19,10],[19,9],[20,9]],"route":[[15,11],[16,11],[17,11],[18,11],[18,10],[19,10],[19,9],[20,9]],"planning_endpoint":[20,9],"final_facing":"south","settle_facing":"south","contact_facing":"south","contact_timeslice":"T3.00","visual_recoil_anchor":[20,8.5],"post_contact_world_anchor":[20,9],"post_breaker_world_anchor":[21,11],"main_action":"BODY_INTERCEPT","prepared_reaction":null,"fallback":{"fallback_id":"HOLD_LAST_LEGAL"}}]},
+    "r1_strategy_b": {"round":1,"unit_plans":[{"unit_id":"V353U001","waypoints":[[15,10],[19,10],[19,9]],"route":[[15,11],[15,10],[16,10],[17,10],[18,10],[19,10],[19,9]],"planning_endpoint":[19,9],"final_facing":"east","settle_facing":"east","contact_facing":"south","contact_timeslice":"T3.25","visual_recoil_anchor":[19,8.5],"post_contact_world_anchor":[19,9],"post_breaker_world_anchor":[21,10],"main_action":null,"prepared_reaction":{"reaction_id":"PROTECT_LANE_RESPONSE","trigger":{"event_type":"ENTITY_ENTERED_AREA","actor_id":"ENEMY_C01_RIFT_SWARM_01","target_id":"RESCUE_LANE_EAST","timeslice":2},"response":"LATERAL_BODY_DEFLECT"},"fallback":{"fallback_id":"GUARD_EXIT"}}]},
+    "r1_failure": {"round":1,"unit_plans":[{"unit_id":"V353U001","waypoints":[[17,11],[17,12]],"route":[[15,11],[16,11],[17,11],[17,12]],"final_facing":"west","main_action":"BODY_INTERCEPT","prepared_reaction":null,"fallback":{"fallback_id":"HOLD_LAST_LEGAL"}}]},
+    "r2_from_a": {"round":2,"unit_plans":[{"unit_id":"V353U001","waypoints":[[14,9],[14,10],[17,10]],"route":[[20,9],[19,9],[18,9],[17,9],[16,9],[15,9],[14,9],[14,10],[15,10],[16,10],[17,10]],"final_facing":"south","settle_facing":"south","source_world_contract":"POST_A_BREAKER_21_11_3X3","main_action":"TAKE_SHIELD_BLOCK_RED","prepared_reaction":null,"fallback":{"fallback_id":"HOLD_LAST_LEGAL"}}]},
+    "r2_from_b": {"round":2,"unit_plans":[{"unit_id":"V353U001","waypoints":[[14,9],[14,10],[17,10]],"route":[[19,9],[18,9],[17,9],[16,9],[15,9],[14,9],[14,10],[15,10],[16,10],[17,10]],"final_facing":"south","settle_facing":"south","source_world_contract":"POST_B_BREAKER_21_10_3X3","main_action":"TAKE_SHIELD_BLOCK_RED","prepared_reaction":null,"fallback":{"fallback_id":"HOLD_LAST_LEGAL"}}]},
+    "r2_failure": {"round":2,"unit_plans":[{"unit_id":"V353U001","waypoints":[[14,9],[14,10],[17,10]],"route":[[20,9],[19,9],[18,9],[17,9],[16,9],[15,9],[14,9],[14,10],[15,10],[16,10],[17,10]],"final_facing":"east","settle_facing":"east","source_world_contract":"POST_A_BREAKER_21_11_3X3","main_action":"TAKE_SHIELD_BLOCK_RED","prepared_reaction":null,"fallback":{"fallback_id":"HOLD_LAST_LEGAL"}}]},
+    "r3_success": {"round":3,"unit_plans":[{"unit_id":"V353U001","waypoints":[[20,10]],"route":[[17,10],[18,10],[19,10],[20,10]],"final_facing":"south","main_action":"SIDE_PRESS_SHIELD_BASH","prepared_reaction":null,"fallback":{"fallback_id":"REOFFSET_NEXT_ROUND"}}]},
+    "r3_failure": {"round":3,"unit_plans":[{"unit_id":"V353U001","waypoints":[[18,10]],"route":[[17,10],[18,10]],"final_facing":"east","main_action":"SIDE_PRESS_SHIELD_BASH","prepared_reaction":null,"fallback":{"fallback_id":"REOFFSET_NEXT_ROUND"}}]}
+  }
+}

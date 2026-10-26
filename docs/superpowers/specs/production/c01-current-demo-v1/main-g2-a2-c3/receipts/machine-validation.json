@@ -1,0 +1,1620 @@
+{
+  "schema_version": "1.0.0",
+  "validator_id": "C01E02_G2_A2_C3_TASK99_EXTERNAL_MACHINE_VALIDATOR",
+  "evidence_class": "external_raw_recompute_no_self_pass_trust",
+  "validator_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/tests/candidate_runtime_demo/m3_golden_slice/g2_a2_visual_compositor/validate_g2_a2_c3_task99.py",
+  "inputs": {
+    "capture_manifest": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/actual-input-frame-manifest.json",
+      "sha256": "7510dfe997509af057dbf6e2b6981767f8690377b02b41de36cf8c14ed1093d9"
+    },
+    "real_stage_fixture_receipt": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/real-stage-fixture.json",
+      "sha256": "43a9d569a1a054594456dd15260122185b6ab76f92d3933dee777030cae9c72d"
+    },
+    "z_receipt": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/z-overlap.json",
+      "sha256": "3b67375e51eb61798cb7f5667fb515d32ba9bf970d75da6d6b0df5ff184c8e3f"
+    },
+    "performance_receipt": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/performance-600-frames.json",
+      "sha256": "270f966604a69990be3996a1d85d0835e4bb42e4a9e6ac1e45cd9b38781bb715"
+    },
+    "regression_summary": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/regression-summary.json",
+      "sha256": "1f4ae0ed21876ac8793fc1342ee7fe0d5350bb4f4ba1abeff350ac72e27450b6"
+    },
+    "socket_contract": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/socket-contact-contract.json",
+      "sha256": "c954af9b0ac7e5a1ef0e55f95b613367af9ab5ddbaec3fc55f5f4a258e5b8ea5"
+    }
+  },
+  "sections": {
+    "locked_repo_inputs": {
+      "pass": true,
+      "errors": [],
+      "lock_count": 19,
+      "minimum_embedded_authority_locks": [
+        "task99",
+        "task102",
+        "task98_atlas_schema",
+        "task98_slot_contract",
+        "task98_socket_contract",
+        "task98_phase_matrix",
+        "task98_continuity"
+      ],
+      "rows": {
+        "task99": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/99-c01e02-g2-a2-c3-current-topology-real-atlas-neutral-consumer-objective.md",
+          "expected_sha256": "2ebe650c55709f84fbdcee27ac390a43bf6f53cda8f461e54a1dd5eb355f6594",
+          "actual_sha256": "2ebe650c55709f84fbdcee27ac390a43bf6f53cda8f461e54a1dd5eb355f6594",
+          "pass": true
+        },
+        "task102": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/102-c01e02-task98-runtime-grid-registration-producer-correction.md",
+          "expected_sha256": "e8556f917456da83d933842b9ace9542f5238635d5166a6f5b7adbfad0d62378",
+          "actual_sha256": "e8556f917456da83d933842b9ace9542f5238635d5166a6f5b7adbfad0d62378",
+          "pass": true
+        },
+        "task105": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/105-c01e02-task99-simple-2d-board-lighting-occlusion-producer-correction.md",
+          "expected_sha256": "6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7",
+          "actual_sha256": "6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7",
+          "pass": true
+        },
+        "task98_atlas_schema": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/atlas-schema-current.json",
+          "expected_sha256": "159c0af021c99a8c778692f5b02794e5ec55a476514da55ff55958baa19e8e5d",
+          "actual_sha256": "159c0af021c99a8c778692f5b02794e5ec55a476514da55ff55958baa19e8e5d",
+          "pass": true
+        },
+        "task98_slot_contract": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/map-camera-slot-contract.json",
+          "expected_sha256": "17e195dcac011be803bd69d893a918830dd838a5aa7a4aedd3e76bab45fb1a24",
+          "actual_sha256": "17e195dcac011be803bd69d893a918830dd838a5aa7a4aedd3e76bab45fb1a24",
+          "pass": true
+        },
+        "task98_socket_contract": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/socket-contact-contract.json",
+          "expected_sha256": "c954af9b0ac7e5a1ef0e55f95b613367af9ab5ddbaec3fc55f5f4a258e5b8ea5",
+          "actual_sha256": "c954af9b0ac7e5a1ef0e55f95b613367af9ab5ddbaec3fc55f5f4a258e5b8ea5",
+          "pass": true
+        },
+        "task98_phase_matrix": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/first-round-state-facing-phase-matrix.tsv",
+          "expected_sha256": "992ff3e6c35eb5cf6aa69ae928190f5c8ac3bb11927474569e1211ebb655bb2e",
+          "actual_sha256": "992ff3e6c35eb5cf6aa69ae928190f5c8ac3bb11927474569e1211ebb655bb2e",
+          "pass": true
+        },
+        "task98_continuity": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/first-round-phase-continuity-readback.tsv",
+          "expected_sha256": "e03f74e3e81ce888554b7ec0ba7e8e5c8e81600a1bc1f1974b755d73b7d64199",
+          "actual_sha256": "e03f74e3e81ce888554b7ec0ba7e8e5c8e81600a1bc1f1974b755d73b7d64199",
+          "pass": true
+        },
+        "task98_delivery_manifest_current": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/delivery-hashes.sha256",
+          "expected_sha256": "1e0aa9666398fa3149a48c64e404fcc67b181c18dbabe67b64d9690d11952741",
+          "actual_sha256": "1e0aa9666398fa3149a48c64e404fcc67b181c18dbabe67b64d9690d11952741",
+          "pass": true
+        },
+        "production_board": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/38-c01e02-m3-r0-5-production-board.tsv",
+          "expected_sha256": "6402757d50ef070e38b03369f5c04d9a22ab459ab8deb14e87db5575d601764e",
+          "actual_sha256": "6402757d50ef070e38b03369f5c04d9a22ab459ab8deb14e87db5575d601764e",
+          "pass": true
+        },
+        "tactical_interface_1_6_4": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/c01e02-tactical-visual-interface-v1.json",
+          "expected_sha256": "faeff89ec153b25d37dc991f56aa75b6580bf47db958b4e828b46ac81c08635c",
+          "actual_sha256": "faeff89ec153b25d37dc991f56aa75b6580bf47db958b4e828b46ac81c08635c",
+          "pass": true
+        },
+        "p98_acceptance": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/100-c01e02-g2-a2-c2-producer-playability-preflight-acceptance.md",
+          "expected_sha256": "cd4d128a023136be7197190382b9724b002ad9f093247ce25160838e9d1ffdcc",
+          "actual_sha256": "cd4d128a023136be7197190382b9724b002ad9f093247ce25160838e9d1ffdcc",
+          "pass": true
+        },
+        "task96_c2_manifest": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c2/delivery-hashes.sha256",
+          "expected_sha256": "b8bcb8c0f94f56ba60a48ad7b2c756108ebee16a1e712facece8946c30877d60",
+          "actual_sha256": "b8bcb8c0f94f56ba60a48ad7b2c756108ebee16a1e712facece8946c30877d60",
+          "pass": true
+        },
+        "c3_binding": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/c3_neutral_atlas_binding.json",
+          "expected_sha256": "60ae9fe302779ace5570f674b379efe55fdc3d50ccd3b93895ce610ff2fcde30",
+          "actual_sha256": "60ae9fe302779ace5570f674b379efe55fdc3d50ccd3b93895ce610ff2fcde30",
+          "pass": true
+        },
+        "c3_png_guardian": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_guardian_z_neutral_768x768.png",
+          "expected_sha256": "12196a8b5e66c5b8ebd891ae232361238ce08d3ec56d13a72e216eed4db73988",
+          "actual_sha256": "12196a8b5e66c5b8ebd891ae232361238ce08d3ec56d13a72e216eed4db73988",
+          "pass": true
+        },
+        "c3_png_breaker": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_breaker_neutral_1152x768.png",
+          "expected_sha256": "debdafd803f9f5c68420726e3b9abf29ab4a2608eecb6a61833fce4fc3407391",
+          "actual_sha256": "debdafd803f9f5c68420726e3b9abf29ab4a2608eecb6a61833fce4fc3407391",
+          "pass": true
+        },
+        "c3_png_vehicle": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_emergency_vehicle_neutral_256x256.png",
+          "expected_sha256": "315db68cdde10d4ac1ba049d393d785c3a401b7e02f4160864aeb39373e342d6",
+          "actual_sha256": "315db68cdde10d4ac1ba049d393d785c3a401b7e02f4160864aeb39373e342d6",
+          "pass": true
+        },
+        "c3_png_swarm": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_rift_swarm_neutral_384x192.png",
+          "expected_sha256": "ff96a2b0ee1e02d4941684b1953b51072b969b364f185bfc097bd1cc2f8bc65b",
+          "actual_sha256": "ff96a2b0ee1e02d4941684b1953b51072b969b364f185bfc097bd1cc2f8bc65b",
+          "pass": true
+        },
+        "c2_topology_layer": {
+          "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/current_topology_layer.gd",
+          "expected_sha256": "395b5139f68f4421757d949b285c420a981463adb9592f5f7563e52f3a764f24",
+          "actual_sha256": "395b5139f68f4421757d949b285c420a981463adb9592f5f7563e52f3a764f24",
+          "pass": true
+        }
+      }
+    },
+    "task105_input_lock": {
+      "pass": true,
+      "errors": [],
+      "expected_sha256": "6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7",
+      "reported_sha256_by_input": {
+        "capture_manifest": "6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7",
+        "real_stage_fixture_receipt": "6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7",
+        "z_receipt": "6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7",
+        "performance_receipt": "6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7"
+      },
+      "actual_file_checks": [
+        {
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/105-c01e02-task99-simple-2d-board-lighting-occlusion-producer-correction.md",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/105-c01e02-task99-simple-2d-board-lighting-occlusion-producer-correction.md",
+          "actual_sha256": "6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7",
+          "pass": true
+        },
+        {
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/105-c01e02-task99-simple-2d-board-lighting-occlusion-producer-correction.md",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/105-c01e02-task99-simple-2d-board-lighting-occlusion-producer-correction.md",
+          "actual_sha256": "6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7",
+          "pass": true
+        },
+        {
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/105-c01e02-task99-simple-2d-board-lighting-occlusion-producer-correction.md",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/105-c01e02-task99-simple-2d-board-lighting-occlusion-producer-correction.md",
+          "actual_sha256": "6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7",
+          "pass": true
+        }
+      ]
+    },
+    "socket_contract": {
+      "pass": true,
+      "errors": [],
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/socket-contact-contract.json",
+      "sha256": "c954af9b0ac7e5a1ef0e55f95b613367af9ab5ddbaec3fc55f5f4a258e5b8ea5",
+      "screen_tolerance_px": 0.5,
+      "base_count": 4
+    },
+    "active_capture": {
+      "pass": true,
+      "errors": [],
+      "branches": {
+        "A": {
+          "phase_trace": {
+            "pass": true,
+            "errors": [],
+            "frame_count": 1065,
+            "actor_row_count": 6390,
+            "first_phase_order": [
+              "PLAN",
+              "T1_WAIT",
+              "T1_DRIVE",
+              "T1_RECOIL",
+              "T1_PASSED",
+              "T2_IDLE",
+              "T2_MOVE",
+              "T2_RECOIL",
+              "T2_DEFLECTED",
+              "T3_MOVE_EAST",
+              "T3_MOVE_NORTH",
+              "T3_BRACE_EAST",
+              "T3_BRACE_NORTH",
+              "T3_BRACE_SOUTH",
+              "T3_CONTACT",
+              "T3_POST_A",
+              "T4_SIDE_HIT_A",
+              "T5_RED_CHARGE_A",
+              "PLAN"
+            ],
+            "phase_count": 18,
+            "stable_instances_by_subject": {
+              "V353U001": {
+                "actor": 49778001598,
+                "sprite": 49811556032,
+                "source_texture": -9223371987764640153
+              },
+              "ENEMY_C01_BREAKER": {
+                "actor": 49845110466,
+                "sprite": 49878664900,
+                "source_texture": -9223371987697531306
+              },
+              "TARGET_C01_EMERGENCY_VEHICLE_01": {
+                "actor": 49912219334,
+                "sprite": 49945773768,
+                "source_texture": -9223371987630422440
+              },
+              "ENEMY_C01_RIFT_SWARM_01": {
+                "actor": 49979328202,
+                "sprite": 50012882636,
+                "source_texture": -9223371987563313573
+              },
+              "ENEMY_C01_RIFT_SWARM_02": {
+                "actor": 50046437070,
+                "sprite": 50079991504,
+                "source_texture": -9223371987563313573
+              },
+              "ENEMY_C01_RIFT_SWARM_03": {
+                "actor": 50113545938,
+                "sprite": 50147100372,
+                "source_texture": -9223371987563313573
+              }
+            },
+            "logical_clips_seen": [
+              "brace/east/0",
+              "brace/north/0",
+              "brace/south/0",
+              "charge/north/0",
+              "contact/north/0",
+              "contact/south/0",
+              "deflected/west/0",
+              "drive/east/0",
+              "idle/east/0",
+              "idle/north/0",
+              "idle/south/0",
+              "idle/west/0",
+              "move/east/0",
+              "move/north/0",
+              "move/west/0",
+              "passed/east/0",
+              "recoil/east/0",
+              "recoil/north/0",
+              "recoil/south/0",
+              "recoil/west/0",
+              "red_charge/north/0",
+              "side_hit/north/0",
+              "waiting/east/0"
+            ],
+            "distinct_rect_count_by_base": {
+              "V353U001": 7,
+              "ENEMY_C01_BREAKER": 5,
+              "TARGET_C01_EMERGENCY_VEHICLE_01": 3,
+              "ENEMY_C01_RIFT_SWARM": 5
+            }
+          },
+          "contact": {
+            "pass": true,
+            "errors": [],
+            "impact_world": [
+              20.5,
+              10.5
+            ],
+            "external_impact_screen": [
+              640.0,
+              350.000263671875
+            ],
+            "camera": [
+              -480.0,
+              449.999755859375
+            ],
+            "breaker_post_anchor": [
+              21,
+              11
+            ],
+            "t4_side_world": [
+              24.0,
+              12.5
+            ],
+            "external_t4_side_screen": [
+              700.0,
+              460.0
+            ]
+          },
+          "input": {
+            "pass": true,
+            "errors": [],
+            "raw_input_counts": {
+              "mouse": 1,
+              "keyboard": 5,
+              "joy": 0,
+              "screen": 6
+            },
+            "session_call_count": 95,
+            "actual_input_serial_count": 6
+          },
+          "plan_frame_geometry": {
+            "pass": true,
+            "errors": [],
+            "actor_count": 6
+          },
+          "contact_frame_geometry": {
+            "pass": true,
+            "errors": [],
+            "actor_count": 6
+          },
+          "resource_receipt": {
+            "pass": true,
+            "errors": []
+          },
+          "pass": true
+        },
+        "B": {
+          "phase_trace": {
+            "pass": true,
+            "errors": [],
+            "frame_count": 1029,
+            "actor_row_count": 6174,
+            "first_phase_order": [
+              "PLAN",
+              "T1_WAIT",
+              "T1_DRIVE",
+              "T1_RECOIL",
+              "T1_PASSED",
+              "T2_IDLE",
+              "T2_MOVE",
+              "T2_RECOIL",
+              "T2_DEFLECTED",
+              "T3_MOVE_EAST",
+              "T3_MOVE_NORTH",
+              "T3_BRACE_EAST",
+              "T3_BRACE_NORTH",
+              "T3_BRACE_SOUTH",
+              "T3_CONTACT",
+              "T3_POST_B",
+              "T4_SIDE_HIT_B",
+              "T5_RED_CHARGE_B",
+              "PLAN"
+            ],
+            "phase_count": 18,
+            "stable_instances_by_subject": {
+              "V353U001": {
+                "actor": 88197826242,
+                "sprite": 88231380677,
+                "source_texture": -9223371949344815554
+              },
+              "ENEMY_C01_BREAKER": {
+                "actor": 88264935112,
+                "sprite": 88298489546,
+                "source_texture": -9223371949277706688
+              },
+              "TARGET_C01_EMERGENCY_VEHICLE_01": {
+                "actor": 88332043981,
+                "sprite": 88365598416,
+                "source_texture": -9223371949210597822
+              },
+              "ENEMY_C01_RIFT_SWARM_01": {
+                "actor": 88399152850,
+                "sprite": 88432707285,
+                "source_texture": -9223371949143488956
+              },
+              "ENEMY_C01_RIFT_SWARM_02": {
+                "actor": 88466261585,
+                "sprite": 88499816019,
+                "source_texture": -9223371949143488956
+              },
+              "ENEMY_C01_RIFT_SWARM_03": {
+                "actor": 88533370458,
+                "sprite": 88566925036,
+                "source_texture": -9223371949143488956
+              }
+            },
+            "logical_clips_seen": [
+              "brace/east/0",
+              "brace/north/0",
+              "brace/south/0",
+              "charge/north/0",
+              "contact/north/0",
+              "contact/south/0",
+              "deflected/west/0",
+              "drive/east/0",
+              "idle/east/0",
+              "idle/north/0",
+              "idle/south/0",
+              "idle/west/0",
+              "move/east/0",
+              "move/north/0",
+              "move/west/0",
+              "passed/east/0",
+              "recoil/east/0",
+              "recoil/north/0",
+              "recoil/west/0",
+              "red_charge/north/0",
+              "side_hit/north/0",
+              "waiting/east/0"
+            ],
+            "distinct_rect_count_by_base": {
+              "V353U001": 7,
+              "ENEMY_C01_BREAKER": 5,
+              "TARGET_C01_EMERGENCY_VEHICLE_01": 3,
+              "ENEMY_C01_RIFT_SWARM": 5
+            }
+          },
+          "contact": {
+            "pass": true,
+            "errors": [],
+            "impact_world": [
+              20.0,
+              10.5
+            ],
+            "external_impact_screen": [
+              639.9997692871093,
+              350.00023071289075
+            ],
+            "camera": [
+              -499.999786376953,
+              439.999786376953
+            ],
+            "breaker_post_anchor": [
+              21,
+              10
+            ],
+            "t4_side_world": [
+              24.0,
+              11.5
+            ],
+            "external_t4_side_screen": [
+              760.0,
+              450.0
+            ]
+          },
+          "input": {
+            "pass": true,
+            "errors": [],
+            "raw_input_counts": {
+              "mouse": 0,
+              "keyboard": 0,
+              "joy": 14,
+              "screen": 14
+            },
+            "session_call_count": 86,
+            "actual_input_serial_count": 14
+          },
+          "plan_frame_geometry": {
+            "pass": true,
+            "errors": [],
+            "actor_count": 6
+          },
+          "contact_frame_geometry": {
+            "pass": true,
+            "errors": [],
+            "actor_count": 6
+          },
+          "resource_receipt": {
+            "pass": true,
+            "errors": []
+          },
+          "pass": true
+        }
+      },
+      "locked_atlas_phase_authority": {
+        "pass": true,
+        "errors": [],
+        "matrix_clip_count": 24,
+        "continuity_row_count": 126,
+        "phase_order": [
+          "PLAN",
+          "T1_WAIT",
+          "T1_DRIVE",
+          "T1_RECOIL",
+          "T1_PASSED",
+          "T2_IDLE",
+          "T2_MOVE",
+          "T2_RECOIL",
+          "T2_DEFLECTED",
+          "T3_MOVE_EAST",
+          "T3_MOVE_NORTH",
+          "T3_BRACE_EAST",
+          "T3_BRACE_NORTH",
+          "T3_BRACE_SOUTH",
+          "T3_CONTACT",
+          "T3_POST_A",
+          "T3_POST_B",
+          "T4_SIDE_HIT_A",
+          "T4_SIDE_HIT_B",
+          "T5_RED_CHARGE_A",
+          "T5_RED_CHARGE_B"
+        ],
+        "signed_same_facing_one_hop_alias_count": 3
+      },
+      "simple_occlusion_pair": {
+        "pass": true,
+        "errors": [],
+        "owner_instance_ids": [
+          48486155866,
+          48486155866,
+          48486155866,
+          48486155866
+        ],
+        "faded_panel_counts": {
+          "triggered": 1,
+          "normal": 0,
+          "restored": 1
+        },
+        "panel_ids": {
+          "triggered": [
+            "TERRAIN_C01_SE_BLOCK"
+          ],
+          "normal": [],
+          "restored": [
+            "TERRAIN_C01_SE_BLOCK"
+          ],
+          "target": "TERRAIN_C01_SE_BLOCK"
+        },
+        "target_panel_alpha_sequence": [
+          0.38,
+          0.94,
+          0.38
+        ],
+        "triggered_normal_png_sha_different": true,
+        "triggered_frame": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/ROOF_PANEL_TRIGGERED.png",
+        "normal_frame": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/ROOF_PANEL_NORMAL.png",
+        "actor_snapshots_equal": true,
+        "actor_positions_before_equal_restored": true,
+        "normal_moved_subjects_external": [
+          "ENEMY_C01_BREAKER",
+          "ENEMY_C01_RIFT_SWARM_02"
+        ],
+        "non_target_panel_rows_unchanged": true,
+        "legacy_owner_hidden": true,
+        "unique_visible_owner_count": 1
+      }
+    },
+    "real_stage_fixture": {
+      "pass": true,
+      "errors": [],
+      "negative_reason_set": [
+        "missing_clip",
+        "rect_out_of_bounds",
+        "wrong_camera_contract_id",
+        "wrong_pivot",
+        "wrong_sha256"
+      ],
+      "region_slot_set": [
+        "ENEMY_C01_BREAKER",
+        "ENEMY_C01_RIFT_SWARM",
+        "TARGET_C01_EMERGENCY_VEHICLE_01",
+        "V353U001"
+      ],
+      "negative_case_count": 5,
+      "region_case_count": 4,
+      "external_baseline_patch_sha256": "b13b904d00c48610d980cbdf105d06fa6d061340c3d0eeea270f20de707ed81b"
+    },
+    "z_overlap": {
+      "pass": true,
+      "errors": [],
+      "footprints": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "external_triple_intersection_rect_px": [
+        576.0,
+        324.0,
+        128.0,
+        108.0
+      ],
+      "external_order_by_footpoint": [
+        "ENEMY_C01_BREAKER",
+        "V353U001",
+        "TARGET_C01_EMERGENCY_VEHICLE_01"
+      ],
+      "external_order_by_z": [
+        "ENEMY_C01_BREAKER",
+        "V353U001",
+        "TARGET_C01_EMERGENCY_VEHICLE_01"
+      ],
+      "actual_frame": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/z-overlap/C3_Z_OVERLAP_1X1_2X2_3X3.png",
+      "actual_frame_sha256": "663d235a1871746436828e5c2841adf167e2f4515d10f2854a12d163cc82642c",
+      "actual_frame_dimensions": [
+        1280,
+        720
+      ],
+      "fixture_anchor_footpoint_constants": {
+        "ENEMY_C01_BREAKER": {
+          "anchor": [
+            18,
+            8
+          ],
+          "footpoint": [
+            640,
+            380
+          ]
+        },
+        "V353U001": {
+          "anchor": [
+            20,
+            9
+          ],
+          "footpoint": [
+            680,
+            400
+          ]
+        },
+        "TARGET_C01_EMERGENCY_VEHICLE_01": {
+          "anchor": [
+            21,
+            11
+          ],
+          "footpoint": [
+            640,
+            420
+          ]
+        }
+      }
+    },
+    "performance": {
+      "pass": true,
+      "errors": [],
+      "sample_count": 600,
+      "external_first_phase_order": [
+        "T1_WAIT",
+        "T1_DRIVE",
+        "T1_RECOIL",
+        "T1_PASSED",
+        "T2_IDLE",
+        "T2_MOVE",
+        "T2_RECOIL",
+        "T2_DEFLECTED",
+        "T3_MOVE_EAST",
+        "T3_MOVE_NORTH",
+        "T3_BRACE_EAST",
+        "T3_BRACE_NORTH",
+        "T3_BRACE_SOUTH",
+        "T3_CONTACT",
+        "T3_POST_A",
+        "T4_SIDE_HIT_A",
+        "T5_RED_CHARGE_A",
+        "PLAN"
+      ],
+      "external_event_ids": [
+        "GS-R1-E1-VEHICLE",
+        "GS-R1-E2-SWARM",
+        "GS-R1-E3-CONTACT",
+        "GS-R1-E4-CITY-GUN",
+        "GS-R1-E5-ROAD-RED",
+        "SEQUENCE_COMPLETE"
+      ],
+      "external_p50_ms": 8.402,
+      "external_p95_ms": 26.053,
+      "external_max_ms": 30.066,
+      "external_frames_over_33_3ms": 0,
+      "fixture_performance_scope": "FIXTURE_30FPS_STABILITY_ONLY",
+      "final_60fps_status": "FINAL_60FPS_NOT_PROVEN",
+      "strict_60fps_raw_pass": false,
+      "strict_60fps_raw_conclusion": "STRICT_60FPS_RAW_FAIL",
+      "contact_seen": true,
+      "dynamic_camera_seen": true,
+      "non_origin_contact_region_seen": true,
+      "owner_generation_changed": true,
+      "tracked_layer_generation_changed": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "stable_instance_ids": {
+        "scene": 42110813682,
+        "stage": 45264930427,
+        "owner": 44073748059
+      }
+    },
+    "scope_boundaries": {
+      "pass": true,
+      "errors": [],
+      "call03_closed_in_all_inputs": true,
+      "call04_closed": true,
+      "ua91_closed": true,
+      "g2_b_fun_default_save_runtime_canon_closed": true
+    },
+    "regressions": {
+      "pass": true,
+      "errors": [],
+      "artifact_count": 6,
+      "coverage": [
+        "B_SIGNED_HASHES",
+        "C2_SCREEN_INPUT",
+        "FULL_SKIP",
+        "R1_ROUTE_FAMILY",
+        "R2",
+        "R3"
+      ],
+      "checked_artifacts": [
+        {
+          "id": "screen-input-contract",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/screen-input-contract.json",
+          "expected_sha256": "9ca718a23ee61c451f8280f986504d93fc927cf7da418a8d10d1cc9cde84ccb6",
+          "actual_sha256": "9ca718a23ee61c451f8280f986504d93fc927cf7da418a8d10d1cc9cde84ccb6",
+          "covers": [
+            "C2_SCREEN_INPUT"
+          ]
+        },
+        {
+          "id": "timeline-semantic-nonregression",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/timeline-semantic-nonregression.json",
+          "expected_sha256": "936263feb8c5540f19fe86fb2946d0c1527d3a48b1dfbc7c987c571c694cf7f9",
+          "actual_sha256": "936263feb8c5540f19fe86fb2946d0c1527d3a48b1dfbc7c987c571c694cf7f9",
+          "covers": [
+            "FULL_SKIP"
+          ]
+        },
+        {
+          "id": "route-family-nonregression",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/route-family-nonregression.json",
+          "expected_sha256": "eaaac741a00be0b2fb35272a5c090241ecabdff4767a0643d00db91f17031c33",
+          "actual_sha256": "eaaac741a00be0b2fb35272a5c090241ecabdff4767a0643d00db91f17031c33",
+          "covers": [
+            "R1_ROUTE_FAMILY",
+            "R3"
+          ]
+        },
+        {
+          "id": "r2c-contact-nonregression",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/r2c-contact-nonregression.json",
+          "expected_sha256": "3681d22e69dc539e8fd485b92829a33cd4e4fcaf7401345d92747de4002e3dbe",
+          "actual_sha256": "3681d22e69dc539e8fd485b92829a33cd4e4fcaf7401345d92747de4002e3dbe",
+          "covers": [
+            "R2",
+            "B_SIGNED_HASHES"
+          ]
+        },
+        {
+          "id": "r2c-c1-determinism",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/r2c-c1-determinism-nonregression.json",
+          "expected_sha256": "0f48b9c8dae9982c0b8bbda9746b775d93cbaeb87f132968eb065b31752098e5",
+          "actual_sha256": "0f48b9c8dae9982c0b8bbda9746b775d93cbaeb87f132968eb065b31752098e5",
+          "covers": [
+            "B_SIGNED_HASHES"
+          ]
+        },
+        {
+          "id": "unique-final-regression-log",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/logs/99-final-regression.log",
+          "expected_sha256": "e957a8df9b0531fee73fd442e31c395324400e74e66ca39c04b7bc054e8881ad",
+          "actual_sha256": "e957a8df9b0531fee73fd442e31c395324400e74e66ca39c04b7bc054e8881ad",
+          "covers": []
+        }
+      ],
+      "json_receipt_count": 5,
+      "expected_b_r1_hash": "c3b307b9698d645598594cb6674c86779a13420b9934cf562f379d112d1f41fa",
+      "expected_b_r2_hash": "f09de07bb6b0b32c1a44e7ca1d5e24a6cbc3bac498010cb92490b781bd6480a6"
+    },
+    "referenced_png_sha256": {
+      "pass": true,
+      "errors": [],
+      "reference_count": 30,
+      "rows": [
+        {
+          "input": "capture_manifest",
+          "location": "$.branches.A.contact_frame.path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/A_CONTACT.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/A_CONTACT.png",
+          "expected_sha256": "123ff912be6e8e30584bab177a9de985d0eac614024c35dca05c2366f64502da",
+          "actual_sha256": "123ff912be6e8e30584bab177a9de985d0eac614024c35dca05c2366f64502da",
+          "pass": true
+        },
+        {
+          "input": "capture_manifest",
+          "location": "$.branches.A.load_after.resources[0].resource_path",
+          "raw_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_breaker_neutral_1152x768.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_breaker_neutral_1152x768.png",
+          "expected_sha256": "debdafd803f9f5c68420726e3b9abf29ab4a2608eecb6a61833fce4fc3407391",
+          "actual_sha256": "debdafd803f9f5c68420726e3b9abf29ab4a2608eecb6a61833fce4fc3407391",
+          "pass": true
+        },
+        {
+          "input": "capture_manifest",
+          "location": "$.branches.A.load_after.resources[1].resource_path",
+          "raw_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_rift_swarm_neutral_384x192.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_rift_swarm_neutral_384x192.png",
+          "expected_sha256": "ff96a2b0ee1e02d4941684b1953b51072b969b364f185bfc097bd1cc2f8bc65b",
+          "actual_sha256": "ff96a2b0ee1e02d4941684b1953b51072b969b364f185bfc097bd1cc2f8bc65b",
+          "pass": true
+        },
+        {
+          "input": "capture_manifest",
+          "location": "$.branches.A.load_after.resources[2].resource_path",
+          "raw_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_emergency_vehicle_neutral_256x256.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_emergency_vehicle_neutral_256x256.png",
+          "expected_sha256": "315db68cdde10d4ac1ba049d393d785c3a401b7e02f4160864aeb39373e342d6",
+          "actual_sha256": "315db68cdde10d4ac1ba049d393d785c3a401b7e02f4160864aeb39373e342d6",
+          "pass": true
+        },
+        {
+          "input": "capture_manifest",
+          "location": "$.branches.A.load_after.resources[3].resource_path",
+          "raw_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_guardian_z_neutral_768x768.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_guardian_z_neutral_768x768.png",
+          "expected_sha256": "12196a8b5e66c5b8ebd891ae232361238ce08d3ec56d13a72e216eed4db73988",
+          "actual_sha256": "12196a8b5e66c5b8ebd891ae232361238ce08d3ec56d13a72e216eed4db73988",
+          "pass": true
+        },
+        {
+          "input": "capture_manifest",
+          "location": "$.branches.A.plan_frame.path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/A_PLAN.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/A_PLAN.png",
+          "expected_sha256": "f270a47758ad2c5d9b1cdf28ebfff060caddcc3d17ad52286ce22524e1b5c172",
+          "actual_sha256": "f270a47758ad2c5d9b1cdf28ebfff060caddcc3d17ad52286ce22524e1b5c172",
+          "pass": true
+        },
+        {
+          "input": "capture_manifest",
+          "location": "$.branches.A.simple_occlusion_pair.normal_frame.path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/ROOF_PANEL_NORMAL.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/ROOF_PANEL_NORMAL.png",
+          "expected_sha256": "2728a52036f6b233b6933e11e325fb9799d1ff09ee042c8448d7724a05ae8404",
+          "actual_sha256": "2728a52036f6b233b6933e11e325fb9799d1ff09ee042c8448d7724a05ae8404",
+          "pass": true
+        },
+        {
+          "input": "capture_manifest",
+          "location": "$.branches.A.simple_occlusion_pair.triggered_frame.path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/ROOF_PANEL_TRIGGERED.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/ROOF_PANEL_TRIGGERED.png",
+          "expected_sha256": "f270a47758ad2c5d9b1cdf28ebfff060caddcc3d17ad52286ce22524e1b5c172",
+          "actual_sha256": "f270a47758ad2c5d9b1cdf28ebfff060caddcc3d17ad52286ce22524e1b5c172",
+          "pass": true
+        },
+        {
+          "input": "capture_manifest",
+          "location": "$.branches.B.contact_frame.path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/B_CONTACT.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/B_CONTACT.png",
+          "expected_sha256": "1237911ba2251896b85041d6945ad3de63daf8713da139a706b4c01e816f49fa",
+          "actual_sha256": "1237911ba2251896b85041d6945ad3de63daf8713da139a706b4c01e816f49fa",
+          "pass": true
+        },
+        {
+          "input": "capture_manifest",
+          "location": "$.branches.B.plan_frame.path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/B_PLAN.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/B_PLAN.png",
+          "expected_sha256": "1596a4fc3ce3cb71bae2ba3e193e14b8ab6b4ec817b6e2c1b947996c52eb3119",
+          "actual_sha256": "1596a4fc3ce3cb71bae2ba3e193e14b8ab6b4ec817b6e2c1b947996c52eb3119",
+          "pass": true
+        },
+        {
+          "input": "capture_manifest",
+          "location": "$.single_frame_z_overlap.actual_frame.path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/z-overlap/C3_Z_OVERLAP_1X1_2X2_3X3.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/z-overlap/C3_Z_OVERLAP_1X1_2X2_3X3.png",
+          "expected_sha256": "663d235a1871746436828e5c2841adf167e2f4515d10f2854a12d163cc82642c",
+          "actual_sha256": "663d235a1871746436828e5c2841adf167e2f4515d10f2854a12d163cc82642c",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[0].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_BASELINE_PLAN.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_BASELINE_PLAN.png",
+          "expected_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "actual_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[1].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_MISSING_CLIP.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_MISSING_CLIP.png",
+          "expected_sha256": "d06ba185fa4b9ed43c88ddade79ecdae7bf7eefda025558a1a218dc53d7f53ce",
+          "actual_sha256": "d06ba185fa4b9ed43c88ddade79ecdae7bf7eefda025558a1a218dc53d7f53ce",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[2].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_MISSING_CLIP.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_MISSING_CLIP.png",
+          "expected_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "actual_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[3].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_WRONG_CAMERA_CONTRACT_ID.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_WRONG_CAMERA_CONTRACT_ID.png",
+          "expected_sha256": "d06ba185fa4b9ed43c88ddade79ecdae7bf7eefda025558a1a218dc53d7f53ce",
+          "actual_sha256": "d06ba185fa4b9ed43c88ddade79ecdae7bf7eefda025558a1a218dc53d7f53ce",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[4].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_WRONG_CAMERA_CONTRACT_ID.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_WRONG_CAMERA_CONTRACT_ID.png",
+          "expected_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "actual_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[5].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_WRONG_PIVOT.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_WRONG_PIVOT.png",
+          "expected_sha256": "d06ba185fa4b9ed43c88ddade79ecdae7bf7eefda025558a1a218dc53d7f53ce",
+          "actual_sha256": "d06ba185fa4b9ed43c88ddade79ecdae7bf7eefda025558a1a218dc53d7f53ce",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[6].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_WRONG_PIVOT.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_WRONG_PIVOT.png",
+          "expected_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "actual_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[7].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_WRONG_SHA256.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_WRONG_SHA256.png",
+          "expected_sha256": "d06ba185fa4b9ed43c88ddade79ecdae7bf7eefda025558a1a218dc53d7f53ce",
+          "actual_sha256": "d06ba185fa4b9ed43c88ddade79ecdae7bf7eefda025558a1a218dc53d7f53ce",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[8].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_WRONG_SHA256.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_WRONG_SHA256.png",
+          "expected_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "actual_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[9].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_RECT_OUT_OF_BOUNDS.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_RECT_OUT_OF_BOUNDS.png",
+          "expected_sha256": "d06ba185fa4b9ed43c88ddade79ecdae7bf7eefda025558a1a218dc53d7f53ce",
+          "actual_sha256": "d06ba185fa4b9ed43c88ddade79ecdae7bf7eefda025558a1a218dc53d7f53ce",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[10].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_RECT_OUT_OF_BOUNDS.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_RECT_OUT_OF_BOUNDS.png",
+          "expected_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "actual_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[11].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_V353U001_PLAN.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_V353U001_PLAN.png",
+          "expected_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "actual_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[12].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_V353U001_T3_BRACE_EAST.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_V353U001_T3_BRACE_EAST.png",
+          "expected_sha256": "25281febdc555d413a99362636434de855be97e12bb5676796bca89d1c5a230a",
+          "actual_sha256": "25281febdc555d413a99362636434de855be97e12bb5676796bca89d1c5a230a",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[13].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_ENEMY_C01_BREAKER_PLAN.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_ENEMY_C01_BREAKER_PLAN.png",
+          "expected_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "actual_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[14].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_ENEMY_C01_BREAKER_T4_SIDE_HIT_A.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_ENEMY_C01_BREAKER_T4_SIDE_HIT_A.png",
+          "expected_sha256": "ec877986a1a6157395b40323ba41b95d34f7cb1ed45372bc32b82e0427b7586b",
+          "actual_sha256": "ec877986a1a6157395b40323ba41b95d34f7cb1ed45372bc32b82e0427b7586b",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[15].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_TARGET_C01_EMERGENCY_VEHICLE_01_PLAN.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_TARGET_C01_EMERGENCY_VEHICLE_01_PLAN.png",
+          "expected_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "actual_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[16].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_TARGET_C01_EMERGENCY_VEHICLE_01_T1_DRIVE.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_TARGET_C01_EMERGENCY_VEHICLE_01_T1_DRIVE.png",
+          "expected_sha256": "90f19f5280fcc21943aa0b045b5a7df911cf5d3dcf9b5d5b45587b796c622b16",
+          "actual_sha256": "90f19f5280fcc21943aa0b045b5a7df911cf5d3dcf9b5d5b45587b796c622b16",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[17].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_ENEMY_C01_RIFT_SWARM_PLAN.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_ENEMY_C01_RIFT_SWARM_PLAN.png",
+          "expected_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "actual_sha256": "e46003c2daf4afe1d55a0cbd99be737d23f03172e4db202029c0f7fcb6d6d21d",
+          "pass": true
+        },
+        {
+          "input": "real_stage_fixture_receipt",
+          "location": "$.captures[18].path",
+          "raw_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_ENEMY_C01_RIFT_SWARM_T2_RECOIL.png",
+          "resolved_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_ENEMY_C01_RIFT_SWARM_T2_RECOIL.png",
+          "expected_sha256": "c663890bfce7c5b4b5c223f90a2badec2dac858dfc73a58a86329c886c9cfe18",
+          "actual_sha256": "c663890bfce7c5b4b5c223f90a2badec2dac858dfc73a58a86329c886c9cfe18",
+          "pass": true
+        }
+      ]
+    },
+    "evidence_freshness": {
+      "pass": true,
+      "errors": [],
+      "run_start_epoch_ns": 1787254034000000000,
+      "latest_source_mtime_ns": 1787254001653646073,
+      "fresh_artifact_count": 65,
+      "artifact_count": 65,
+      "rows": [
+        {
+          "id": "capture_manifest",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/actual-input-frame-manifest.json",
+          "mtime_ns": 1787254075432759432,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "real_stage_fixture_receipt",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/real-stage-fixture.json",
+          "mtime_ns": 1787254043266023280,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "z_receipt",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/z-overlap.json",
+          "mtime_ns": 1787254041056026602,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "performance_receipt",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/performance-600-frames.json",
+          "mtime_ns": 1787254085307633827,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "regression_summary",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/regression-summary.json",
+          "mtime_ns": 1787254158353778757,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "regression_artifact:screen-input-contract",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/screen-input-contract.json",
+          "mtime_ns": 1787254115734410221,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "regression_artifact:timeline-semantic-nonregression",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/timeline-semantic-nonregression.json",
+          "mtime_ns": 1787254116118973527,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "regression_artifact:route-family-nonregression",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/route-family-nonregression.json",
+          "mtime_ns": 1787254116803099772,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "regression_artifact:r2c-contact-nonregression",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/r2c-contact-nonregression.json",
+          "mtime_ns": 1787254128802206319,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "regression_artifact:r2c-c1-determinism",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/receipts/r2c-c1-determinism-nonregression.json",
+          "mtime_ns": 1787254130670635207,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "regression_artifact:unique-final-regression-log",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/logs/99-final-regression.log",
+          "mtime_ns": 1787254158316150517,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:capture_manifest:$.branches.A.contact_frame.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/A_CONTACT.png",
+          "mtime_ns": 1787254052273791555,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:capture_manifest:$.branches.A.plan_frame.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/A_PLAN.png",
+          "mtime_ns": 1787254044553374821,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:capture_manifest:$.branches.A.simple_occlusion_pair.normal_frame.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/ROOF_PANEL_NORMAL.png",
+          "mtime_ns": 1787254044669913802,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:capture_manifest:$.branches.A.simple_occlusion_pair.triggered_frame.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/ROOF_PANEL_TRIGGERED.png",
+          "mtime_ns": 1787254044611674854,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:capture_manifest:$.branches.B.contact_frame.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/B_CONTACT.png",
+          "mtime_ns": 1787254067329549215,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:capture_manifest:$.branches.B.plan_frame.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/B_PLAN.png",
+          "mtime_ns": 1787254059796755453,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:capture_manifest:$.frames[0].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/A_PLAN.png",
+          "mtime_ns": 1787254044553374821,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:capture_manifest:$.frames[1].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/ROOF_PANEL_TRIGGERED.png",
+          "mtime_ns": 1787254044611674854,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:capture_manifest:$.frames[2].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/ROOF_PANEL_NORMAL.png",
+          "mtime_ns": 1787254044669913802,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:capture_manifest:$.frames[3].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/A_CONTACT.png",
+          "mtime_ns": 1787254052273791555,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:capture_manifest:$.frames[4].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/B_PLAN.png",
+          "mtime_ns": 1787254059796755453,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:capture_manifest:$.frames[5].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/B_CONTACT.png",
+          "mtime_ns": 1787254067329549215,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:capture_manifest:$.simple_occlusion_pair.normal_frame.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/ROOF_PANEL_NORMAL.png",
+          "mtime_ns": 1787254044669913802,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:capture_manifest:$.simple_occlusion_pair.triggered_frame.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/task105/ROOF_PANEL_TRIGGERED.png",
+          "mtime_ns": 1787254044611674854,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:capture_manifest:$.single_frame_z_overlap.actual_frame.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/z-overlap/C3_Z_OVERLAP_1X1_2X2_3X3.png",
+          "mtime_ns": 1787254041040347297,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[0].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_BASELINE_PLAN.png",
+          "mtime_ns": 1787254042217492782,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[1].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_MISSING_CLIP.png",
+          "mtime_ns": 1787254042276818579,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[2].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_MISSING_CLIP.png",
+          "mtime_ns": 1787254042335385324,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[3].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_WRONG_CAMERA_CONTRACT_ID.png",
+          "mtime_ns": 1787254042391637162,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[4].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_WRONG_CAMERA_CONTRACT_ID.png",
+          "mtime_ns": 1787254042448656510,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[5].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_WRONG_PIVOT.png",
+          "mtime_ns": 1787254042506408244,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[6].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_WRONG_PIVOT.png",
+          "mtime_ns": 1787254042562448703,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[7].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_WRONG_SHA256.png",
+          "mtime_ns": 1787254042619146547,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[8].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_WRONG_SHA256.png",
+          "mtime_ns": 1787254042674598373,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[9].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_RECT_OUT_OF_BOUNDS.png",
+          "mtime_ns": 1787254042731864058,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[10].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_RECT_OUT_OF_BOUNDS.png",
+          "mtime_ns": 1787254042789237869,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[11].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_V353U001_PLAN.png",
+          "mtime_ns": 1787254042846307343,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[12].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_V353U001_T3_BRACE_EAST.png",
+          "mtime_ns": 1787254042898515665,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[13].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_ENEMY_C01_BREAKER_PLAN.png",
+          "mtime_ns": 1787254042958890644,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[14].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_ENEMY_C01_BREAKER_T4_SIDE_HIT_A.png",
+          "mtime_ns": 1787254043013551959,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[15].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_TARGET_C01_EMERGENCY_VEHICLE_01_PLAN.png",
+          "mtime_ns": 1787254043076027426,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[16].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_TARGET_C01_EMERGENCY_VEHICLE_01_T1_DRIVE.png",
+          "mtime_ns": 1787254043128512376,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[17].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_ENEMY_C01_RIFT_SWARM_PLAN.png",
+          "mtime_ns": 1787254043186158525,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.captures[18].path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_ENEMY_C01_RIFT_SWARM_T2_RECOIL.png",
+          "mtime_ns": 1787254043238547058,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.invalid_scene_evidence.baseline_capture.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_BASELINE_PLAN.png",
+          "mtime_ns": 1787254042217492782,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.invalid_scene_evidence.cases[0].invalid_capture.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_MISSING_CLIP.png",
+          "mtime_ns": 1787254042276818579,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.invalid_scene_evidence.cases[0].restored_capture.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_MISSING_CLIP.png",
+          "mtime_ns": 1787254042335385324,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.invalid_scene_evidence.cases[1].invalid_capture.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_WRONG_CAMERA_CONTRACT_ID.png",
+          "mtime_ns": 1787254042391637162,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.invalid_scene_evidence.cases[1].restored_capture.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_WRONG_CAMERA_CONTRACT_ID.png",
+          "mtime_ns": 1787254042448656510,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.invalid_scene_evidence.cases[2].invalid_capture.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_WRONG_PIVOT.png",
+          "mtime_ns": 1787254042506408244,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.invalid_scene_evidence.cases[2].restored_capture.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_WRONG_PIVOT.png",
+          "mtime_ns": 1787254042562448703,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.invalid_scene_evidence.cases[3].invalid_capture.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_WRONG_SHA256.png",
+          "mtime_ns": 1787254042619146547,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.invalid_scene_evidence.cases[3].restored_capture.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_WRONG_SHA256.png",
+          "mtime_ns": 1787254042674598373,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.invalid_scene_evidence.cases[4].invalid_capture.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/NEG_RECT_OUT_OF_BOUNDS.png",
+          "mtime_ns": 1787254042731864058,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.invalid_scene_evidence.cases[4].restored_capture.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RESTORED_AFTER_RECT_OUT_OF_BOUNDS.png",
+          "mtime_ns": 1787254042789237869,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.region_switch_evidence.cases[0].frame_a.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_V353U001_PLAN.png",
+          "mtime_ns": 1787254042846307343,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.region_switch_evidence.cases[0].frame_b.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_V353U001_T3_BRACE_EAST.png",
+          "mtime_ns": 1787254042898515665,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.region_switch_evidence.cases[1].frame_a.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_ENEMY_C01_BREAKER_PLAN.png",
+          "mtime_ns": 1787254042958890644,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.region_switch_evidence.cases[1].frame_b.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_ENEMY_C01_BREAKER_T4_SIDE_HIT_A.png",
+          "mtime_ns": 1787254043013551959,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.region_switch_evidence.cases[2].frame_a.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_TARGET_C01_EMERGENCY_VEHICLE_01_PLAN.png",
+          "mtime_ns": 1787254043076027426,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.region_switch_evidence.cases[2].frame_b.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_TARGET_C01_EMERGENCY_VEHICLE_01_T1_DRIVE.png",
+          "mtime_ns": 1787254043128512376,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.region_switch_evidence.cases[3].frame_a.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_ENEMY_C01_RIFT_SWARM_PLAN.png",
+          "mtime_ns": 1787254043186158525,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:real_stage_fixture_receipt:$.region_switch_evidence.cases[3].frame_b.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/real-stage-fixture/RECT_ENEMY_C01_RIFT_SWARM_T2_RECOIL.png",
+          "mtime_ns": 1787254043238547058,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        },
+        {
+          "id": "actual_png:z_receipt:$.actual_frame.path",
+          "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/z-overlap/C3_Z_OVERLAP_1X1_2X2_3X3.png",
+          "mtime_ns": 1787254041040347297,
+          "run_start_epoch_ns": 1787254034000000000,
+          "latest_source_mtime_ns": 1787254001653646073,
+          "pass": true
+        }
+      ]
+    }
+  },
+  "self_reported_valid_or_pass_fields_used_as_authority": false,
+  "raw_arrays_and_files_recomputed": true,
+  "fixture_performance_scope": "FIXTURE_30FPS_STABILITY_ONLY",
+  "final_60fps_status": "FINAL_60FPS_NOT_PROVEN",
+  "strict_60fps_raw_conclusion": "STRICT_60FPS_RAW_FAIL",
+  "error_count": 0,
+  "errors": [],
+  "machine_validation_pass": true,
+  "status": "PASS"
+}

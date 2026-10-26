@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-21",
+  "generation_mode": "built-in image_gen",
+  "intent": "generate_from_references",
+  "input_roles": [
+    {
+      "file": "samples/M11-robot-front-r1.png",
+      "role": "actual master part and palette reference"
+    },
+    {
+      "file": "samples/M11-robot-side-r1.png",
+      "role": "four wheel positions on each side"
+    },
+    {
+      "file": "../20261016-r3-wave3/images/350e62d2c9dfa371de4a74a8fe4c7ed7579c14f9b85a760b6774886300904146.jpg",
+      "role": "truck silhouette only"
+    }
+  ],
+  "prompt": "Use case: stylized-concept.\nAsset type: M11 Cargo Leader FOUR-AXLE TRUCK vehicle source design.\nInput image 1: current robot FRONT master, exact parts, color, chassis and lamp identity. Input image 2: current robot LEFT SIDE master showing its finite eight wheel positions. Input image 3: earlier truck/body style reference; its generic robot head and erroneous printed 3-axle wording are NOT authoritative.\nDraw ONE complete original industrial rigid cargo truck in front-left three-quarter view, nose pointing image lower-left, long body receding to upper-right. Whole vehicle visible with generous canvas margins, landscape format, eye-level slightly above wheels, clean warm-white ground and soft contact shadow. No robot or humans in image.\nMatch the actual robot's ivory armor, navy structural chassis and grille, dark blue glass, safety-orange wheel-center caps, marker lamps, latches, matching slight wear. The cab is an original tall broad cab-over-engine cube with chamfered corners and twin dark windshield panes; these panes and ivory corner roofs are the TWO robot shoulder shells. Cab FRONT is the robot's three-tier navy radiator grille with four small amber lamps, ivory side frame, two small vertical vents and orange corner clamps; lower thin orange/ivory diagonal safety strip. There is no robot face or chest outside the closed truck, and no horns/crown. Use appropriate large dark side mirrors and subtle recessed headlights, no logos or writing.\nEXACT CHASSIS: FOUR AXLES, EIGHT wheel positions total, equal-diameter rugged black ROAD TIRES with dark steel hubs and small orange centers. On the near left side show exactly FOUR separate wheel circles: axle 1 under the front cab, axle 2 under the cab rear/frame just before load deck, axles 3 and 4 as the rear tandem under cargo. Far-side wheels only where perspective permits, not extra axles. NOT a six-wheeler, not five axle, no tracks, no articulated tractor plus trailer. This single rigid load-bearing flatbed truck's wheels map to robot shoulder/forearm/two calf wheels on each side.\nOn the flatbed carry exactly ONE rectangular detachable freight container, ivory ribbed side panels, navy top/bottom perimeter frame, orange cast corner blocks and visible corner twist-locks. Cargo box is a normal untransformed removable load; its length fits the flatbed, slightly taller than cab roof or about level, with serviceable plain rectangular rear cargo doors. Keep a readable narrow separation line between box bottom and navy flatbed, underframe tie points. No duplicate chest-box/body-box, no shrinking or folding container, no weapons, no missile launcher, no thruster, no train styling. Flatbed hinges/rails originate from the robot's shallow folded back chassis.\nStyle: precisely readable Japanese mechanical animation concept art matching robot inputs, crisp linework, restrained cel shading, broad material planes, practical factory seams and faint edge scratches. High detail where mechanical function requires it. No labels, typography, arrows, extra inset, floating parts, border, human scale silhouette or watermark.",
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-afecf00e-ea3e-4c18-8e55-fdb58c1eee1e.png"
+}

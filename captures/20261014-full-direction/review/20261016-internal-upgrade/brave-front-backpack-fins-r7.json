@@ -1,0 +1,92 @@
+{
+  "revision": "brave-front-backpack-fins-r7",
+  "date": "2026-10-18",
+  "user_request": "这几张相对比较好，就是正面也需要补上能看见背包处两片竖起的机翼，就可以了",
+  "selected_sources": [
+    {
+      "file": "samples/M04-side-fin-aligned-r6c.png",
+      "sha256": "8330b0de4b0ce731293b8dcd8a73134ff45d80113eadb0940f37e670cdaf6564",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "view": "side",
+      "current_use": "user_selected_reference_20261018"
+    },
+    {
+      "file": "samples/M04-rear-selected-parts-r6a.png",
+      "sha256": "230eaea440744d380d05d9358fd9494907bfd075e5622b5c7f8cfa5e7c74c972",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "view": "rear_three_quarter",
+      "current_use": "user_selected_reference_20261018"
+    },
+    {
+      "file": "samples/M04-brave-combined-master-r4b.png",
+      "sha256": "c632800c50509af21a32d00405f576bf1c9d22411bd8f66898bcfeecc0e045bc",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "view": "front_three_quarter",
+      "current_use": "user_selected_edit_target_20261018"
+    }
+  ],
+  "current_front": {
+    "file": "samples/M04-front-backpack-fins-r7.png",
+    "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98",
+    "pixel_size": [
+      1254,
+      1254
+    ],
+    "view": "front_three_quarter",
+    "current_use": "front_fins_addition_candidate",
+    "prompt": "brave-front-backpack-fins-prompt-r7.json"
+  },
+  "edit_scope": "仅在选中正面补出背包两片竖翼；头、胸、双拳、水平主翼、引擎、膝钻和履带腿按原稿保留。侧背使用本次用户附图，不替换成后续变体。",
+  "generation_mode": "built_in_image_gen",
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-f58999c0-60ef-4648-a047-71e250e39780.png",
+  "author_visual_review": {
+    "inspected": true,
+    "media": "samples/M04-front-backpack-fins-r7.png",
+    "findings": [
+      "两片橙边深灰翼面的竖翼位于肩根后方；远侧部分被长发遮挡。",
+      "水平主翼、发动机朝向、冠甲与长发、厚重拳体、臂外列车壳、膝钻及腿足整体延续正面母稿。",
+      "全身姿态、构图、1254×1254尺寸及象牙色背景保持；未声称未编辑区域逐像素相同。"
+    ],
+    "kind": "author_source_image_inspection_not_runtime_review"
+  },
+  "scope": {
+    "user_selected_reference_set": true,
+    "new_front_user_accepted": true,
+    "model_hold": "paused_design_pending",
+    "model_generated": false,
+    "runtime_changed": false,
+    "handoff_sent": false,
+    "canon_changed": false
+  },
+  "remaining": [
+    "本批是二维源图编辑，未验证同一模型的正侧背投影、绑定或运行。"
+  ],
+  "supersedes_current_view_selection_only": {
+    "previous_record": "brave-body-production-r6.json",
+    "previous_side": "samples/M04-side-body-reviewed-r6d.png",
+    "previous_rear": "samples/M04-rear-exhaust-corrected-r6b.png",
+    "history_retained": true
+  },
+  "user_front_confirmation": {
+    "date": "2026-10-18",
+    "authority": "direct_user_message_in_this_chat",
+    "verbatim": "ok。现在是否需要最后修正社勇王四个合体机组的设计和三视图",
+    "file": "samples/M04-front-backpack-fins-r7.png",
+    "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98",
+    "scope": "本次正面补翼稿可收为后续四机对齐的整机外观基准；四机单体、精确三视、三维及运行分别检查。",
+    "not_inferred": [
+      "four component designs accepted",
+      "exact orthographic views verified",
+      "runtime accepted"
+    ]
+  }
+}

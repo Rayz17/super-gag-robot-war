@@ -1,0 +1,167 @@
+{
+  "status": "MACHINE_ALPHA_SCALE_PASS_VISUAL_USER_REVIEW_PENDING",
+  "technical_pass": true,
+  "imagegen_calls": 1,
+  "rerolls": 0,
+  "input": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-brave-fist-e03-idle-south-camera-v2-candidate/call01/generation-raw/BRAVE_FIST_E03_IDLE_SOUTH_CALL01_RAW_RGB_1254.png",
+    "sha256": "09395f3d1bb628fae21ae37c9ec3c7793413823b4b72a562d1d93bcba56c6afd",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB"
+  },
+  "identity_source": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a33-section2-brave-fist-heavy-twin-fist-mane-crown-rework-candidate/delivery/BRAVE_FIST_A33_HEAVY_TWIN_FIST_MANE_CROWN_MASTER_USER_REVIEW_CANDIDATE.png",
+    "source_id": "BF_A33_USER_ACCEPTED_IDENTITY",
+    "sha256": "9bda4674457b71968c8923bcd231a77b3bf64cb5214e22186756a58707a15217"
+  },
+  "master": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-brave-fist-e03-idle-south-camera-v2-candidate/call01/masters/BRAVE_FIST_E03_IDLE_SOUTH_CALL01_RGBA_MASTER_1254.png",
+    "sha256": "e4574ee96ff8055a76edcda10878af23c90df461078d12ab4a71495c12a59fc2",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "checker_model": {
+      "dark": 246.0,
+      "bright": 254.0,
+      "midpoint": 250.0,
+      "amplitude": 4.0,
+      "separable_sign": 1.0,
+      "border_residual_p99": 2.3333282470703125,
+      "background_threshold": 3.3333282470703125
+    },
+    "outer_background_label_count": 1,
+    "enclosed_checker_background_component_count_removed": 3,
+    "enclosed_checker_background_components_removed": [
+      {
+        "area": 1076,
+        "bbox": [
+          462,
+          354,
+          46,
+          76
+        ],
+        "bright_minus_dark": 7.1083526611328125,
+        "mean_chroma": 0.6124535202980042
+      },
+      {
+        "area": 10006,
+        "bbox": [
+          685,
+          378,
+          103,
+          231
+        ],
+        "bright_minus_dark": 6.8369903564453125,
+        "mean_chroma": 0.37907254695892334
+      },
+      {
+        "area": 48,
+        "bbox": [
+          456,
+          468,
+          9,
+          15
+        ],
+        "bright_minus_dark": 5.5844573974609375,
+        "mean_chroma": 0.5416666865348816
+      }
+    ],
+    "restored_nonchecker_enclosed_highlight_component_count": 300,
+    "restored_nonchecker_enclosed_highlight_pixel_count": 626,
+    "foreground_component_count_before_keep_largest": 128,
+    "kept_foreground_pixels": 541389,
+    "discarded_isolated_pixels": 1627,
+    "foreground_bbox_exclusive": [
+      201,
+      58,
+      993,
+      1225
+    ],
+    "alpha_bbox_exclusive": [
+      201,
+      58,
+      993,
+      1225
+    ],
+    "transparent_pixel_count": 1031552,
+    "partial_alpha_pixel_count": 11908,
+    "opaque_pixel_count": 529056,
+    "outside_foreground_nontransparent_pixels": 0,
+    "transparent_component_count_8_connected": 4,
+    "enclosed_transparent_component_count": 3,
+    "internal_core_rgb_changed_pixels": 0,
+    "opaque_rgb_changed_pixels": 0,
+    "edge_rgb_changed_pixels": 11908,
+    "edge_rgb_changed_bbox_exclusive": [
+      201,
+      58,
+      993,
+      1225
+    ],
+    "edge_band_pixels": 28260,
+    "neutral_white_core_preserved_pixels": 858,
+    "opaque_checker_component_count": 0,
+    "opaque_checker_components": [],
+    "transparent_rgb_nonzero_pixels": 0
+  },
+  "sprite": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-brave-fist-e03-idle-south-camera-v2-candidate/call01/map-candidate/BRAVE_FIST_E03_IDLE_SOUTH_CAMERA_V2_CANDIDATE_RGBA_256.png",
+    "sha256": "1a41ff987c7227e5155cca71f4b8f9bda4137cbf325b6800f8048b2d44e6216b",
+    "size": [
+      256,
+      256
+    ],
+    "mode": "RGBA",
+    "full_canvas_resized_side": 223,
+    "scale_from_master": 0.17783094098883573,
+    "placement_offset": [
+      22,
+      6
+    ],
+    "alpha_bbox_exclusive": [
+      58,
+      16,
+      199,
+      224
+    ],
+    "visible_size": [
+      141,
+      208
+    ],
+    "pivot": [
+      128,
+      224
+    ],
+    "footprint": [
+      2,
+      2
+    ],
+    "scale": [
+      1,
+      1
+    ],
+    "clipped_alpha_pixels": 0
+  },
+  "qa": {
+    "100pct_black": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-brave-fist-e03-idle-south-camera-v2-candidate/call01/qa/100pct/BRAVE_FIST_E03_IDLE_SOUTH_100PCT_BLACK_ALPHA_QA.png",
+    "100pct_white": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-brave-fist-e03-idle-south-camera-v2-candidate/call01/qa/100pct/BRAVE_FIST_E03_IDLE_SOUTH_100PCT_WHITE_ALPHA_QA.png",
+    "100pct_magenta": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-brave-fist-e03-idle-south-camera-v2-candidate/call01/qa/100pct/BRAVE_FIST_E03_IDLE_SOUTH_100PCT_MAGENTA_ALPHA_QA.png",
+    "100pct_green": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-brave-fist-e03-idle-south-camera-v2-candidate/call01/qa/100pct/BRAVE_FIST_E03_IDLE_SOUTH_100PCT_GREEN_ALPHA_QA.png",
+    "100pct_4background_board": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-brave-fist-e03-idle-south-camera-v2-candidate/call01/qa/BRAVE_FIST_E03_IDLE_SOUTH_100PCT_4BACKGROUND_ALPHA_QA.png",
+    "alpha_internal_space_mask": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-brave-fist-e03-idle-south-camera-v2-candidate/call01/qa/BRAVE_FIST_E03_IDLE_SOUTH_ALPHA_INTERNAL_SPACE_MASK_1254.png",
+    "50pct_camera_v2_scale": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-brave-fist-e03-idle-south-camera-v2-candidate/call01/qa/BRAVE_FIST_E03_IDLE_SOUTH_50PCT_CAMERA_V2_SCALE_QA.png"
+  },
+  "lifecycle": {
+    "authority": "Candidate",
+    "user": false,
+    "runtime": false,
+    "default": false,
+    "canon": false,
+    "godot_binding": false
+  }
+}

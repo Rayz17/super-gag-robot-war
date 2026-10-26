@@ -1,0 +1,91 @@
+{
+  "task_id": "C01E02_ENV_A3_CAMERA_V2_EXACT_STRUCTURE_PILOT",
+  "status": "ZERO_GENERATION_ONE_STRUCTURE_PILOT_NOT_FINAL_ART",
+  "object_id": "NW_BLOCK",
+  "anchor": "NA_STRUCTURE_GRID_RECT_OWNER",
+  "grid_rect": [
+    1,
+    0,
+    7,
+    5
+  ],
+  "footprint_cells": [
+    7,
+    5
+  ],
+  "local_canvas_px": [
+    480,
+    378
+  ],
+  "pivot_local_px": [
+    240,
+    378
+  ],
+  "visual_bounds_raw": [
+    -160,
+    -90,
+    480,
+    378
+  ],
+  "front_edge_raw": [
+    80,
+    288
+  ],
+  "front_edge_A_PLAN": [
+    320,
+    -70
+  ],
+  "world_height_class": "HIGH",
+  "world_height_limit_px": 90,
+  "authored_occluder_height_px": 84,
+  "projection": {
+    "matrix": [
+      [
+        40,
+        -40
+      ],
+      [
+        24,
+        24
+      ]
+    ],
+    "axis_vectors_px": [
+      [
+        40,
+        24
+      ],
+      [
+        -40,
+        24
+      ]
+    ],
+    "axis_slopes": [
+      0.6,
+      -0.6
+    ],
+    "axis_angles_deg": [
+      30.9637565,
+      -30.9637565
+    ],
+    "perspective_convergence": false,
+    "manual_screen_offset": false
+  },
+  "interaction_alpha": {
+    "normal_foundation": 1.0,
+    "normal_occluder": 1.0,
+    "reveal_foundation": 1.0,
+    "reveal_occluder": 0.34,
+    "restore_foundation": 1.0,
+    "restore_occluder": 1.0
+  },
+  "source_lineage": {
+    "visible_structure_pixels": "procedural_vector_from_CAMERA_V2_40X24_only",
+    "visible_structure_pixel_donors": [],
+    "A_PLAN_background_only": "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a2-simple-recomposition/delivery/GROUND_BAKE_CURRENT_V2_2400x1350.png",
+    "comparison_only_not_donor": [
+      "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a2-simple-recomposition/delivery/structures/NW_BLOCK_FOUNDATION_RGBA.png",
+      "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a2-simple-recomposition/delivery/structures/NW_BLOCK_OCCLUDER_RGBA.png"
+    ]
+  },
+  "known_camera_fact": "NW_BLOCK exact front edge is offscreen above the selected A_PLAN crop; overview and focus panels do not change placement"
+}

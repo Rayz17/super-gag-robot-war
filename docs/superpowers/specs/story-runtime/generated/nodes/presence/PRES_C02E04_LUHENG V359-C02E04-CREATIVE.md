@@ -1,0 +1,62 @@
+---
+id: "PRES_C02E04_LUHENG"
+title: "V359-C02E04-CREATIVE"
+record_type: "scene_presence"
+authority: "working"
+lifecycle: "active"
+version_scope: "V35_C02_D5"
+owner: "story"
+source_table: "docs/superpowers/specs/data/canon/scene_entity_presence.tsv"
+source_of_truth: "docs/superpowers/specs/剧情梗概/V35结构再设计/V35-C02五话人物在场与旧分镜年代归属修复-2026-08-05.md"
+generated: true
+aliases:
+  - "V359-C02E04-CREATIVE"
+tags:
+  - "story-runtime/current"
+  - "story-runtime/scene-presence"
+  - "canon/working"
+---
+
+# V359-C02E04-CREATIVE
+
+> [!warning] Current Canon 自动投影
+> 本页由 Canon 源表生成。请勿直接编辑；应修改权威源并重建。
+
+## 身份
+
+- **ID：** `PRES_C02E04_LUHENG`
+- **记录类型：** `scene_presence`
+- **权威：** `working` / `active`
+- **版本范围：** `V35_C02_D5`
+
+## 关系
+
+- **所属场景：** [[docs/superpowers/specs/story-runtime/generated/nodes/scenes/V359-C02E04-CREATIVE 最终话照旧开打|最终话照旧开打]]
+- **在场主体：** [[docs/superpowers/specs/story-runtime/generated/nodes/entities/characters/CH_LUHENG 陆衡|陆衡]]
+
+## Canon 字段
+
+| 字段 | 当前值 |
+| --- | --- |
+| `presence_id` | PRES_C02E04_LUHENG |
+| `scene_id` | V359-C02E04-CREATIVE |
+| `entity_id` | CH_LUHENG |
+| `requirement` | optional |
+| `presence_mode` | remote_live |
+| `lifecycle_claim` | continued_remote |
+| `scene_function` | 远程提示万机馆与货运环的工程极限 |
+| `control_state` | 只提供工程判断，不控制现场实机、舞台或舰体 |
+| `knowledge_state` | 只知道获准传来的结构与赛事数据 |
+| `entry_state` | 仍在工务城 |
+| `exit_state` | 保持远程合作，C03才肉身登场 |
+| `source_refs` | docs/superpowers/specs/data/canon/entities.tsv;docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C02/C02-完整剧情总纲.md |
+| `status` | working_current |
+| `notes` | 不得让远程提示替现场人物完成救场 |
+
+## 权威来源
+
+- 注册表：`docs/superpowers/specs/data/canon/scene_entity_presence.tsv`
+- Source of Truth：`docs/superpowers/specs/剧情梗概/V35结构再设计/V35-C02五话人物在场与旧分镜年代归属修复-2026-08-05.md`
+- 最近确认：`2026-08-05`
+- Owner：`story`
+- 权威注记：只可远程提示工程极限，不替现场人物救场。

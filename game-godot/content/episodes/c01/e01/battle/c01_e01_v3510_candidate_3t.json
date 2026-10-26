@@ -1,0 +1,88 @@
+{
+  "battle_id": "C01E01-PROTECTION-LINE",
+  "variant_id": "V3510-C01E01-CANDIDATE-3T",
+  "status": "frozen_candidate_runtime_validation",
+  "title": "现实机器区 / 三回合救援候选",
+  "objective_text": "撑过3回合或解除全部封存执行机；留言墙备份箱与撤离灯不能归零。",
+  "start_prompt": "先看执行意图，再决定由谁占住路线。",
+  "turn_limit": 3,
+  "withdraw_allowed": true,
+  "grid": {
+    "width": 9,
+    "height": 6,
+    "blocked": [[4, 1], [4, 2], [4, 3]]
+  },
+  "units": [
+    {
+      "id": "guardian_z",
+      "name": "馆守 Z / 半跪支援",
+      "team": "player",
+      "cell": [1, 2],
+      "hp": 20,
+      "en": 20,
+      "move": 0,
+      "weapons": [
+        {"id": "low_heat_palm", "name": "低热量掌部防卫", "power": 5, "min": 1, "max": 3, "hit": 100, "en": 2, "post_move": true}
+      ]
+    },
+    {
+      "id": "diedie",
+      "name": "跌跌 / 失败占格",
+      "team": "player",
+      "cell": [1, 4],
+      "hp": 10,
+      "en": 12,
+      "move": 4,
+      "weapons": [
+        {"id": "balance_bump", "name": "重心偏移顶靠", "power": 3, "min": 1, "max": 1, "hit": 100, "en": 0, "post_move": true}
+      ]
+    },
+    {
+      "id": "machine_dog",
+      "name": "机器狗 / 导览回收型",
+      "team": "player",
+      "cell": [2, 4],
+      "hp": 8,
+      "en": 10,
+      "move": 5,
+      "weapons": [
+        {"id": "route_clamp", "name": "路线夹持", "power": 3, "min": 1, "max": 2, "hit": 100, "en": 0, "post_move": true}
+      ]
+    },
+    {"id": "seal_drone_a", "name": "封存无人机 A", "team": "enemy", "cell": [3, 1], "hp": 6, "move": 3, "intent_target_id": "message_wall", "intent_verb": "贴签"},
+    {"id": "seal_drone_b", "name": "封存无人机 B", "team": "enemy", "cell": [6, 4], "hp": 6, "move": 3, "intent_target_id": "evac_beacon", "intent_verb": "截断"},
+    {"id": "seal_drone_c", "name": "封存无人机 C", "team": "enemy", "cell": [7, 2], "hp": 7, "move": 3, "intent_target_id": "message_wall", "intent_verb": "采样"}
+  ],
+  "objectives": [
+    {"id": "message_wall", "name": "留言墙备份箱", "cell": [8, 1], "integrity": 5, "required": true},
+    {"id": "evac_beacon", "name": "观众撤离灯", "cell": [8, 4], "integrity": 4, "required": true},
+    {"id": "model_hospital", "name": "模型病院旧件柜", "cell": [5, 5], "integrity": 2, "required": false}
+  ],
+  "mid_events": [
+    {
+      "event_id": "C01E01-3T-R2-REINFORCEMENT",
+      "timing": "turn_start",
+      "turn": 2,
+      "message": "东侧吊轨放下一台封存无人机；它的白线先指向撤离灯。",
+      "actions": [
+        {"type": "spawn_unit", "unit": {"id": "seal_drone_reinforcement", "name": "封存无人机增援", "team": "enemy", "cell": [8, 5], "hp": 5, "move": 3, "intent_target_id": "evac_beacon", "intent_verb": "封路"}}
+      ]
+    },
+    {
+      "event_id": "C01E01-3T-R3-LOW-HEAT",
+      "timing": "turn_start",
+      "turn": 3,
+      "message": "馆守 Z 胸牌亮了一次。兜灯仍握着总闸，机体没有起身。",
+      "actions": []
+    }
+  ],
+  "patch_catalog": {
+    "PATCH_C01_FAILURE_BLOCK_LINE_B": {
+      "operations": [
+        {"op": "add_blocked_cells", "cells": [[4, 4]]},
+        {"op": "objective_integrity_delta", "objective_id": "evac_beacon", "delta": 1},
+        {"op": "set_flag", "key": "failure_block_line", "value": true}
+      ]
+    }
+  }
+}

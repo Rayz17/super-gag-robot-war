@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-19",
+  "revision": "M01-family-production-r13",
+  "asset": "M01 / 无牌一号",
+  "generation_mode": "built-in image_gen",
+  "file": "samples/M01-family-master-r13.png",
+  "sha256": "8e87cab7de5a2a458cb5fd1f107b635027594b058fb5ad56d22174a4b559cb00",
+  "pixel_size": [
+    1024,
+    1536
+  ],
+  "mode": "RGBA",
+  "alpha_range": [
+    0,
+    254
+  ],
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-234a9f90-7cda-45f8-9658-563996970d9e.png",
+  "prompt": "M01-family-master-prompt-r13.json",
+  "source_refs": [
+    {
+      "file": "samples/M05-full-loadout-r1b.png",
+      "sha256": "0df4a2889f99df35087ce69e9dbf5b05d5a2afee54aaf7f54d761a2f5d1ebff1",
+      "pixel_size": [
+        1448,
+        1086
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "role": "王者同系列棱面/装甲结构及过武装层级；不取其配色与豪华装备"
+    },
+    {
+      "file": "samples/M01-head-twin-side-grooves-r11.png",
+      "sha256": "b92f8b78770ea11d6185e59f2089148ff408f19b841616272c63eb9f9925cf44",
+      "pixel_size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "role": "历史头部识别要素；宽圆体量不沿用"
+    }
+  ],
+  "user_direction": "M01-M05-series-direction-20261019.json",
+  "status": "body_family_candidate_head_reopened_by_user",
+  "user_accepted": false,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "existing_batch": "design-followthrough-r1.json#experience_record_m01_r13",
+  "reader": "M01-family-head-review-r14.html#body",
+  "heroic_study": {
+    "file": "samples/M01-hero-pose-r13.png",
+    "sha256": "cb13f9a39c94328deca7f81224cd42347797d8bb41dba7367c9da3875be435e9",
+    "pixel_size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      254
+    ],
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-c0c978e9-e438-45e8-98ab-ea8ed1f2aae7.png",
+    "prompt": "M01-hero-pose-prompt-r13.json",
+    "status": "mood_and_pose_study_old_head_not_current_head_authority",
+    "user_accepted": false
+  },
+  "author_review": {
+    "reviewer": "author",
+    "actual_media": "完整R13立姿与动作工具返回图，和R12矮圆三视/王者全装并排。",
+    "observed": [
+      "头部占全身比例缩小、颈部可辨，腿与靴形明显拉长。",
+      "胸甲/双散热块、阶梯肩甲/圆轴、四肢倒角与金色关节向王者家族靠拢；无牌仍青白金且没有翼炮钻盾。",
+      "金色前臂护轨与拳背块保留，动作稿通过拳线与身体对角形成主角气质。"
+    ],
+    "limits": [
+      "用户已明确R13头冠仍差，不能把整体新稿或头部标成已确认。",
+      "动作稿是气质草图，末端更近高举拳，未验证完整逆转天冲拳的接力/踏步/命中；不是动画验收。",
+      "新胸肩比原预想的量产简洁度更华丽；头冠选定后仍应检查装饰是否过量。",
+      "没有同模型正投影、游戏切边或运行检查。"
+    ],
+    "independent_review": false
+  },
+  "latest_head_review": "M01-head-position-direction-r14.json"
+}

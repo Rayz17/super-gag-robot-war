@@ -1,0 +1,25 @@
+{
+  "scope": "Isolated Candidate duel; display crops from current-proportion source art, no redraw, no Canon or art acceptance promotion.",
+  "sources": [
+    {
+      "destination": "game-godot/assets/candidate/c02_short_plan/jicun_full_reference.png",
+      "source": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-jicun-e07-postbattle-call-candidate/delivery/JICUN_E07_POSTBATTLE_CALL_CANDIDATE_RGBA_ALPHA_FIX_V3.png",
+      "sha256": "a828de1699a493589c611ea52ef0125603e6e934ec149ec5246880c2871b113e"
+    },
+    {
+      "destination": "game-godot/assets/candidate/c02_short_plan/baiyuan_full_reference.png",
+      "source": ".superpowers/brainstorm/37837-1782033239/content/asset-production/baiyuan-v31-candidate-v2/baiyuan_stand_candidate_v2.png",
+      "sha256": "b11b8924f48a3a5860797abb649908887bbeffaa3458cf6b216d828f2aaa0843"
+    }
+  ],
+  "baiyuan_v4_cleanup": {
+    "source": "game-godot/assets/candidate/c02_short_plan/baiyuan_full_reference.png",
+    "source_sha256": "b11b8924f48a3a5860797abb649908887bbeffaa3458cf6b216d828f2aaa0843",
+    "silhouette": "game-godot/assets/candidate/c02_short_plan/baiyuan_clean_silhouette_v4.png",
+    "sha256": "e3eb3077f1fd045f52906921681b147ad64341c6b53d829cdfe2b80653366bcb",
+    "tool": "built-in image_gen",
+    "use": "Alpha intersection only in CanvasItem shader; original RGB and face retained; latest full-body AtlasTexture crop unchanged",
+    "prompt_file": "artifacts/c02_short_plan/baiyuan-cleanup-prompt.txt",
+    "unaccepted_repaint_used": false
+  }
+}

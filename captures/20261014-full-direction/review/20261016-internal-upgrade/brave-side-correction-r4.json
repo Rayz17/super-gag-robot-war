@@ -1,0 +1,92 @@
+{
+  "revision": "brave-side-correction-r4",
+  "date": "2026-10-17",
+  "purpose": "repair user-reported cross-view inconsistency; not an engineering-accuracy signoff",
+  "feedback": "社勇王侧视图的肩甲不对，腿部的侧面也不对，结合正面视图看就有明显的问题。",
+  "front_master": {
+    "file": "samples/M04-brave-combined-master-r4b.png",
+    "sha256": "c632800c50509af21a32d00405f576bf1c9d22411bd8f66898bcfeecc0e045bc",
+    "unchanged": true
+  },
+  "rejected_previous_side": {
+    "file": "samples/M04-side-interpretation-r2.png",
+    "sha256": "32810e5db3c7ad3962502d99cd7349b8d37b49cecfb37be8a418f85c26fd75ea",
+    "current_use": "history_only_do_not_model_or_derive",
+    "issues": [
+      "发动机外向圆盘与正面前向发动机不一致，翼根/核心肩甲层级改变。",
+      "小腿和足甲变为连体履带块，踝关节分段丢失。",
+      "胸机鼻前伸偏长，不能只称为透视上的差异。"
+    ]
+  },
+  "component_trial": {
+    "file": "samples/M04-component-side-study-r3.png",
+    "sha256": "bc8a232dfcedcadf315d00ac369d3117547c74dd8036c860fdae519383b99227",
+    "prompt": "brave-component-side-correction-prompt-r3.json",
+    "status": "partial_rejected_shoulder_orientation",
+    "finding": "腿足分段改善，但肩图机鼻朝右、发动机朝左，仍不一致。"
+  },
+  "layout_guides": [
+    {
+      "file": "M04-shoulder-profile-layout-r4.svg",
+      "sha256": "bd526bdc802f45c53f2cbaaab90ee01c1affbf9ed6dd48ab28a004e5137f569d",
+      "render": "M04-shoulder-profile-layout-r4.png",
+      "render_sha256": "bb92d864985d2540ac183a947819107555c9fefd8dea065ce626d2bf2034ef6e",
+      "purpose": "authored 2D axis/layer guide only"
+    },
+    {
+      "file": "M04-leg-profile-layout-r4.svg",
+      "sha256": "e2f27c167d8145020c0050a2ba0cecf73dfb7ac5e7015e56df0d8e375d794600",
+      "render": "M04-leg-profile-layout-r4.png",
+      "render_sha256": "80cf79a850fdfe62f5d490bacf4d1f5877d7995edd94495975cb1b40aee046ce",
+      "purpose": "authored 2D calf/ankle/boot guide only"
+    }
+  ],
+  "shoulder": {
+    "file": "samples/M04-shoulder-profile-r4.png",
+    "sha256": "3f0ae713154925d40ce0d1b67ef83bcaa3a33d1e7958a32d4a6cdfa7cbe4790a",
+    "prompt": "brave-shoulder-profile-correction-prompt-r4.json",
+    "author_observation": [
+      "机鼻和发动机入气口同朝画面左方。",
+      "外翼为薄侧向轮廓，发动机显示筒壁而非外向风扇圆盘。",
+      "翼架连接、发动机、下方白肩甲/上臂关节分别可读。"
+    ],
+    "current_use": "corrected_component_candidate"
+  },
+  "new_side": {
+    "file": "samples/M04-side-reconstruction-r4.png",
+    "sha256": "3ee31121fc2f3014da2ce8a4d7dbd2bff8dd4d36c3ab7bf311cbd31f57f50679",
+    "pixel_size": [
+      1024,
+      1536
+    ],
+    "prompt": "brave-side-reconstruction-prompt-r4.json",
+    "author_observation": [
+      "肩部采用前向筒形发动机、薄翼侧缘和独立白肩甲。",
+      "膝钻朝腿前方；小腿后侧履带止于踝上，黑色踝连接和独立足甲可读。",
+      "保留长发银冠、巨拳、后向列车臂壳及象牙白/橙/石墨分区。"
+    ],
+    "current_use": "side_revision_candidate_after_component_and_layout_constraints",
+    "not_claimed": [
+      "not exact orthographic geometry from one model",
+      "not user final approval",
+      "not 3D/rigging/motion or runtime verified"
+    ]
+  },
+  "method_changes": {
+    "old": "whole-body side generation inferred hidden structure from three-quarter front source",
+    "intermediate": "isolated component attempt still reversed shoulder chest/engine direction",
+    "applied": "authored 2D axes/segment guides; corrected isolated shoulder first; rebuilt whole side from front + shoulder + leg guide without rejected side source",
+    "pixel_edits_by_code": "none; SVG layout guides rendered by sharp, raster art made with built-in image_gen"
+  },
+  "user_accepted": false,
+  "new_handoff_sent": false,
+  "model_hold": "paused_design_pending",
+  "runtime_changed": false,
+  "canon_changed": false,
+  "later_correction_20261017": {
+    "record": "brave-body-production-r6.json",
+    "withdrawn_author_rule": "用户明确选择附件二侧面肩甲，作者将其压成薄翼条的推断撤回",
+    "engine_direction_retained": true,
+    "old_side_not_current": true
+  }
+}

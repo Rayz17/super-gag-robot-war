@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-20",
+  "revision": "M05-mask-and-fin-direction-r9",
+  "authority": "direct_user_message_with_marked_reference_in_this_chat",
+  "verbatim": "可以，就这样设计，我觉得在头盔这个位置太单调，头顶中间再加一个红色的鳍状",
+  "mask_source_accepted": true,
+  "accepted_mask_source": {
+    "file": "samples/M05-battle-mask-r8.png",
+    "sha256": "2c4ef388416980cf0979c5ad1f300750fd361a6249d35fcb31c8f579f358bf66",
+    "pixel_size": [
+      1774,
+      887
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ]
+  },
+  "accepted_scope": "指定R8战斗面罩源设计；普通白脸继续作为收纳状态，未将认可扩大为转换动画或模型机构。",
+  "placement_reference": {
+    "file": "refs/M05-user-red-fin-position-r9.png",
+    "sha256": "660a49f4ea9b8766557da14178786cf6135821ddbbabf20954e332ab6ca8b472",
+    "pixel_size": [
+      277,
+      322
+    ],
+    "mode": "RGB",
+    "alpha_range": null
+  },
+  "fin_request": "头顶正中、金色主角后方增加红色矢状鳍；侧面依标线展开，正面按遮挡关系呈现。",
+  "fin_output_status": "dual_state_source_design_fixed",
+  "must_keep": [
+    "R8已选面罩",
+    "既有五构件金色皇冠与耳罩",
+    "头壳正常体量和青黑眼眶/浅色眼睛",
+    "普通/战斗共用头盔，红鳍不随面罩开合消失"
+  ],
+  "prior_request": "M05-battle-mask-direction-r8.json",
+  "new_fin_user_accepted": true,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "fin_production_record": "M05-red-fin-production-r9.json",
+  "acceptance_receipt": "M05-red-fin-design-fixed-and-turnaround-r10.json"
+}

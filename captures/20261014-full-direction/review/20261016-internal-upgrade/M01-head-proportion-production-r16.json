@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-19",
+  "revision": "M01-head-proportion-production-r16",
+  "asset": "M01 / 无牌一号",
+  "file": "samples/M01-head-proportion-r16.png",
+  "sha256": "d8ecc8461fa9a1685b6b07ccfc9696970a2efb4eec9642c63bd7969c3e4c6e61",
+  "pixel_size": [
+    1129,
+    1393
+  ],
+  "mode": "RGBA",
+  "alpha_range": [
+    0,
+    255
+  ],
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-e2402650-d28d-4ae0-ba2c-5b69f957e59e.png",
+  "generation_mode": "built-in image_gen",
+  "prompt": "M01-head-proportion-prompt-r16.json",
+  "request_record": "M01-head-proportion-direction-r16.json",
+  "source_refs": [
+    {
+      "file": "samples/M01-synthesis-head-r15.png",
+      "role": "唯一编辑母稿；保留综合结构、两侧后位天线、低额块、视窗面甲与色系",
+      "sha256": "203d0f83b7c252d15a561f4d4a12b4c1e1d4ab13cc8213ac3fb6f5d05d0526d0"
+    }
+  ],
+  "upstream_reference_record": "M01-synthesis-head-production-r15.json",
+  "reader": "M01-family-head-review-r14.html#head-proportion-r16",
+  "existing_batch": "design-followthrough-r1.json#experience_record_m01_r16",
+  "status": "head_source_design_accepted_r16_whole_machine_separate",
+  "preserved_synthesis_direction_may_continue": true,
+  "user_accepted": true,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "author_review": {
+    "reviewer": "author",
+    "actual_media": "R16完整返回图与R15原图实际并看。",
+    "observed": [
+      "下颌至真实盔顶的头壳本体恢复纵向体积，额部/颞侧/面甲关系变得更竖向。",
+      "侧部壳体收紧，额块与面甲沿纵轴延续；不是通过单独加高天线冒充头高。",
+      "低中央额块、两根侧后主天线、连续琥珀视窗、白面甲和青白金保持。"
+    ],
+    "manual_image_landmarks_approximate": {
+      "method": "作者在原图目测头壳极值标点的二维近似，不是分割器、3D同位或精确工程尺寸；不计天线。",
+      "R15_pixels": {
+        "roof_y": 134,
+        "chin_y": 684,
+        "outer_temples_x": [
+          438,
+          1104
+        ],
+        "approx_chin_to_roof_over_width": 0.83
+      },
+      "R16_pixels": {
+        "roof_y": 174,
+        "chin_y": 926,
+        "outer_temples_x": [
+          290,
+          988
+        ],
+        "approx_chin_to_roof_over_width": 1.08
+      },
+      "uncertainty": "人工目测约有数十像素误差，只用于识别矮宽趋势是否改变；不以此签美术通过。"
+    },
+    "limits": [
+      "R16头部源设计随后由用户明确认可，范围见本次回执；整机/多视图/模型/运行分别验证。",
+      "手绘单张，镜位/裁切存在差异；天线根位和正侧背仍需同模型验证。",
+      "颈下只作截取上下文，未重新批准整机比例、绑定或动作。",
+      "没有游戏切边、运行或正常战棋镜头验证。"
+    ],
+    "independent_review": false
+  },
+  "head_design_fixed": true,
+  "user_acceptance_receipt": "mecha-source-decisions-20261019-r17.json",
+  "acceptance_scope": "当前R16头部源设计固定；低额块、侧后双天线、正常纵向头壳体积及视窗面甲/色系。",
+  "acceptance_excludes": [
+    "R13颈下与新头合回后的整机比例",
+    "新正侧背与隐面",
+    "模型/绑定/动作/正常战棋镜头/运行"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "evidence_class": "engineering_shell_evidence_only",
+  "real_asset_loader_implemented": false,
+  "user_visual_playtest_eligible": false,
+  "identity_aware_fallback_revision": "M0.1",
+  "identity": {
+    "presentation_contract_id": "C01E02M3R05",
+    "presentation_contract_revision": 1,
+    "build_id": "C01CDV1-M3-R0.5-PRES",
+    "rules_profile_id": "c01cdv1_e02_shared_round_m3_r0",
+    "presentation_profile_id": "c01cdv1_e02_m3_r05_presentation_v1",
+    "runtime_lane": "candidate_development_presentation",
+    "entry_role": "non_default",
+    "save_mode": "disabled",
+    "story_checkpoint_write": false,
+    "operation_commit": false,
+    "default_demo_unchanged": true
+  },
+  "layout": {
+    "visual_layout_profile_id": "c01cdv1_e02_m3_r05_layout_40x20_v1",
+    "logical_grid": [32, 18],
+    "visual_projection": "isometric_tile_half_40x20",
+    "tile_half": [40, 20],
+    "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+    "viewport": [1280, 720],
+    "top_bar_rect": [0, 0, 1280, 48],
+    "plan_board_rect": [0, 48, 900, 552],
+    "plan_panel_rect": [900, 48, 380, 552],
+    "timeline_rect": [0, 600, 1280, 120],
+    "blocking_comms_rect": [0, 548, 1280, 172],
+    "resolution_board_rect": [0, 48, 1280, 672],
+    "short_comms_size": [360, 132]
+  },
+  "projection_proof_anchors": {
+    "guardian_start": [15, 11],
+    "breaker_start": [20, 13],
+    "east_exit": [31, 7],
+    "wall_hung_shield": [11, 10],
+    "fixed_origin": [0, 0],
+    "fixed_rescue_contact": [20, 10],
+    "fixed_far_corner": [31, 17]
+  },
+  "reveal": {
+    "situation_seconds": 3.4,
+    "doudeng_minimum_seconds": 1.4
+  },
+  "beats": [
+    {
+      "beat_id": "R05-B03",
+      "source_event_id": "EV-R0-T1-VEHICLE",
+      "duration_seconds": 2.8,
+      "camera_focus": [20, 10],
+      "asset_slots": ["R05_VEHICLE_EAST_MOVE", "R05_SFX_VEHICLE_PASS"]
+    },
+    {
+      "beat_id": "R05-B04",
+      "source_event_id": "EV-R0-T2-LANE-CONTACT",
+      "duration_seconds": 2.9,
+      "camera_focus": [21, 9],
+      "asset_slots": ["R05_GUARDIAN_MAP_ACTION_4DIR", "R05_RIFT_SWARM_IDLE_4DIR", "R05_CUTIN_SWARM_INTERCEPT", "R05_FX_CONTACT_DUST", "R05_SFX_SWARM_RUSH"]
+    },
+    {
+      "beat_id": "R05-B05",
+      "source_event_id": "EV-R0-T3-GIANT-CONTACT",
+      "duration_seconds": 5.0,
+      "camera_focus": [20, 12],
+      "asset_slots": ["R05_GUARDIAN_MAP_ACTION_4DIR", "R05_BREAKER_MAP_ACTION_4DIR", "R05_CUTIN_GIANT_CONTACT", "R05_FX_CONTACT_DUST", "R05_SFX_GIANT_CONTACT", "R05_SFX_ROAD_BREAK"]
+    },
+    {
+      "beat_id": "R05-B06",
+      "source_event_id": "EV-R0-T4-CITY-ARTILLERY",
+      "duration_seconds": 2.6,
+      "camera_focus": [21, 12],
+      "asset_slots": ["R05_BREAKER_MAP_ACTION_4DIR", "R05_CUTIN_ARTILLERY_SIDE_HIT", "R05_FX_ARTILLERY_HIT", "R05_SFX_ARTILLERY_HIT"]
+    },
+    {
+      "beat_id": "R05-B07",
+      "source_event_id": "EV-R0-T5-ROAD-AND-RED-CHARGE",
+      "duration_seconds": 3.5,
+      "camera_focus": [17, 11],
+      "asset_slots": ["R05_BREAKER_MAP_ACTION_4DIR", "R05_SHIELD_WALL_HUNG", "R05_CUTIN_RED_CHARGE", "R05_FX_RED_CHARGE", "R05_SFX_RED_CHARGE_LOOP", "R05_SFX_RED_CHARGE_STING", "R05_SFX_RAIN_ALERT_AMBIENCE"]
+    },
+    {
+      "beat_id": "R05-B08",
+      "source_event_id": "AFTERMATH",
+      "duration_seconds": 2.2,
+      "camera_focus": [19, 11],
+      "asset_slots": ["R05_COMMS_OLD_GUARDIAN", "R05_SFX_COMMS_CLOSE"]
+    }
+  ],
+  "player_language": {
+    "objective": "把冲线引离北侧，守住仍在撤离的人",
+    "result_success": ["冲线已偏开", "撤离仍在进行", "红光正在聚集"],
+    "result_failure": ["冲线没有被接住", "撤离仍在进行", "红光正在聚集"]
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "alpha_proof": {
+    "coverage_intersection_pixels": 7472,
+    "expected_source_sha256": "b5f68f4749f6bff2025409622888d8e8faa17d977aca372caa43121eec18e899",
+    "inside_patch_alpha_changed": 2094,
+    "output_without_control_coverage": 0,
+    "outside_patch_alpha_changed": 0,
+    "outside_patch_checked_pixel_by_pixel": true,
+    "outside_patch_sample_count": 740075,
+    "simulated_result_sha256": "9a395e39b0f466bd0cb2d67bdb7c229d44c4fa9582f9279a9e71f73078036edf",
+    "source_sha256": "b5f68f4749f6bff2025409622888d8e8faa17d977aca372caa43121eec18e899",
+    "source_sha_matches": true,
+    "valid": true
+  },
+  "approved_handoffs": [],
+  "evidence_class": "g2_a2_c1_legacy_a4_occlusion_method_donor_fixture_validation_only",
+  "legacy_a4_required_current_control_source": false,
+  "legacy_a4_visible_pixels": false,
+  "mask": {
+    "actor_patch_pixels": 67339,
+    "channel_nonzero_pixels": {
+      "A": 7472,
+      "B": 2671,
+      "G": 213,
+      "R": 2159
+    },
+    "channel_semantics": {
+      "A": "coverage",
+      "B": "safety_fringe",
+      "G": "roof_outline",
+      "R": "fade_fill"
+    },
+    "control_coverage_pixels_in_dirty_rect": 7472,
+    "control_crop_rect": [
+      640,
+      468,
+      1280,
+      584
+    ],
+    "control_source": "A4 MAP_OCCLUSION_CONTROL Image",
+    "control_source_size": [
+      2400,
+      1350
+    ],
+    "coverage_intersection_pixels": 7472,
+    "dirty_pixels_examined": 87751,
+    "expected_source_sha256": "b5f68f4749f6bff2025409622888d8e8faa17d977aca372caa43121eec18e899",
+    "footpoint_ring_used": false,
+    "full_frame_recount_used": false,
+    "local_patch_only": true,
+    "mask_size": [
+      1280,
+      584
+    ],
+    "open_road_patch_pixels_rejected": 59867,
+    "outline_source": "A4 G intersect CompoundMapActor alpha contour",
+    "output_without_control_coverage": 0,
+    "outside_patch_alpha_changed": 0,
+    "outside_patch_alpha_samples": 0,
+    "patch_rects": [
+      [
+        464,
+        233,
+        113,
+        241
+      ],
+      [
+        440,
+        263,
+        164,
+        89
+      ],
+      [
+        805,
+        231,
+        71,
+        83
+      ],
+      [
+        798,
+        249,
+        85,
+        46
+      ],
+      [
+        765,
+        411,
+        71,
+        83
+      ],
+      [
+        758,
+        429,
+        85,
+        46
+      ],
+      [
+        1165,
+        331,
+        71,
+        83
+      ],
+      [
+        1158,
+        349,
+        85,
+        46
+      ],
+      [
+        1153,
+        383,
+        95,
+        111
+      ],
+      [
+        1145,
+        370,
+        111,
+        36
+      ],
+      [
+        473,
+        229,
+        95,
+        45
+      ],
+      [
+        484,
+        215,
+        73,
+        38
+      ],
+      [
+        971,
+        335,
+        59,
+        99
+      ],
+      [
+        965,
+        321,
+        71,
+        63
+      ],
+      [
+        357,
+        107,
+        87,
+        187
+      ],
+      [
+        341,
+        129,
+        121,
+        74
+      ]
+    ],
+    "performance_update_mode": "dirty_rect_only",
+    "source_sha256": "b5f68f4749f6bff2025409622888d8e8faa17d977aca372caa43121eec18e899",
+    "source_sha_matches": true
+  },
+  "product_scene_layer_ids": [
+    "GROUND_BASE_CURRENT",
+    "STRUCTURES_CURRENT",
+    "ROOFS_FOREGROUND_CURRENT",
+    "OCCLUSION_CONTROL_CURRENT",
+    "STATIC_LIGHT_WEATHER_CURRENT",
+    "DYNAMIC_WORLD_OBJECTS"
+  ],
+  "real_art_loaded": 0,
+  "topology_or_object_registration_proven_by_this_fixture": false
+}

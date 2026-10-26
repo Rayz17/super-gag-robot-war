@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-19",
+  "mode": "built-in image_gen",
+  "use_case": "precise-object-edit",
+  "asset": "M01 / 无牌一号",
+  "user_directive": "就看着还行，但是为什么你总是会把头压扁？",
+  "scope": "综合方向保留，仅修头部纵向比例/横向展宽；新修图不自动认可。",
+  "reference": {
+    "file": "samples/M01-synthesis-head-r15.png",
+    "role": "唯一编辑母稿；保留综合结构、两侧后位天线、低额块、视窗面甲与色系",
+    "sha256": "203d0f83b7c252d15a561f4d4a12b4c1e1d4ab13cc8213ac3fb6f5d05d0526d0"
+  },
+  "method_change": "停止把克制/小头解释为压低盔顶；以头壳本体高宽而非天线高度组织体积，改竖向构图且收拢颞侧，不通过像素拉伸伪修正。",
+  "author_construction_targets": {
+    "chin_to_roof_height_vs_outer_temple_width": "1.1至1.2，为作者本次施工目标，非用户新增精确规格",
+    "vertical_volume_increase": "约15%至20%，以实际返回图复看",
+    "temporal_spread_reduction": "约12%至15%，以实际返回图复看"
+  },
+  "transparent_background": true,
+  "prompt": "Use case: precise-object-edit\nAsset type: M01 head proportion correction R16. Edit the one supplied R15 image.\n\nPrimary request: the user says the head is repeatedly being SQUASHED FLAT. Keep the Baikanfu/Optimus architectural synthesis and fix the skull-to-face proportions. Preserve its identity, palette and design features. The main skull and jaw must themselves become naturally taller and more slender; antenna height must NOT be used to fake a taller head.\n\nChange ONLY the head's volume/proportion:\n- Redraw the helmet as an upright, close-fitting adult robot head. From the chin to the actual helmet ROOF (excluding both antennae), its height should be about 1.1 to 1.2 times the total width across the outer temporal housings in this near-frontal view. It should read as a vertical faceted helmet, not a low wide bowl.\n- Reduce the lateral spread of the temple/ear housings and brow by around 12-15%. Bring the circular hinge caps inward and make their housings closer-fitting and vertically organized. No big round disks projecting outward.\n- Restore about 15-20% more real chin-to-roof height through the cranium, temple sidewalls and jaw/face opening together. Establish a clear forehead plane, upward sidewalls and full cranium above the visor, then a dignified closed face-mask below. Do not simply raise a horn or mechanically stretch pixels.\n- Lift the visor slightly from its low position and allow a little more face-mask/jaw height below. The helmet and lower face must balance. No comically long horse mask, elongated snout, pin chin or huge green dome.\n- Keep the roof's controlled flat facets, but give them proper VERTICAL VOLUME and sidewall height. Do not press the top down to make the design look restrained. Do not spread the brow horizontally for a fake heroic expression.\n\nKEEP UNCHANGED:\nExactly two ivory/ochre main antenna blades, anchored at the upper REAR temporal housings, straight with a slight backward rake. Preserve their actual shape and moderate length; they move with the corrected skull roots. No bent angle, forehead V, animal ears, new spike or central tall fin.\nThe short LOW central ivory forehead-keystone with the small rectangular gold inset. No long roof strap or gold roof channels.\nOne continuous narrow amber optical visor, teal cheek frames, sealed ivory mask with subtle central fold, graphite neck. The same deep teal / ivory / restrained ochre colors and serious alert expression.\nSame visible ochre collar and original upper chest/shoulder geometry. No shoulder redesign, torso stretch, new weapons or insignia.\n\nComposition is part of the correction:\nUse an UPRIGHT PORTRAIT composition, head plus neck/collar with just shoulder roots; shoulders may be cropped at the sides. Do not widen the head to fill a landscape canvas. Same near-frontal three-quarter camera, eye level, about 20 degrees. Leave clear margin around both antenna tips. Preserve the natural proportions within the head, rather than squeezing the whole image to fit.\nSame precise KINETIC_CEL hand-drawn lines and crisp two-step shadows; redraw the plane relationships cleanly, no smeared scaling, no photoreal toy plastic, PBR, chrome, bloom or render gradients.\nONE head only, no second view, diagram, measurements, text, labels or logos.\nActual transparent background, preserve alpha; no checkerboard, haze, colored background, floor or cast shadow."
+}

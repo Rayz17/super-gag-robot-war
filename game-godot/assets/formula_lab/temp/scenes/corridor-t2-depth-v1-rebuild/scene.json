@@ -1,0 +1,233 @@
+{
+  "schema_version": 2,
+  "profile": "candidate_tactical_orthographic_v1",
+  "candidate": true,
+  "not_canon": true,
+  "runtime_allowed": false,
+  "scene_id": "corridor-t2-candidate-v1",
+  "camera_id": "tactical-t2-dimetric-v1",
+  "design_size": [
+    1280,
+    720
+  ],
+  "grid_origin_px": [
+    640.000122,
+    249.840302
+  ],
+  "basis_x": [
+    33.000061,
+    16.499969
+  ],
+  "basis_y": [
+    -32.999939,
+    16.499969
+  ],
+  "board_size": [
+    9,
+    5
+  ],
+  "blocked": [
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      6,
+      1
+    ]
+  ],
+  "terrain": [
+    {
+      "cell": [
+        3,
+        2
+      ],
+      "kind": "rubble",
+      "label": "环体碎屑"
+    },
+    {
+      "cell": [
+        5,
+        2
+      ],
+      "kind": "rubble",
+      "label": "环体碎屑"
+    },
+    {
+      "cell": [
+        7,
+        2
+      ],
+      "kind": "line",
+      "label": "外圈线"
+    }
+  ],
+  "exit_cells": [
+    [
+      8,
+      2
+    ],
+    [
+      8,
+      3
+    ]
+  ],
+  "ring_out": false,
+  "texture_path": "res://assets/formula_lab/temp/scenes/corridor-t2-depth-v1-rebuild/background.png",
+  "texture_sha256": "01ac715813fcd242ddb5a8b7340d26c8539cdc7df76c98477f8a959cd3079d00",
+  "landmarks": [
+    {
+      "id": "corner_nw",
+      "cell": [
+        0,
+        0
+      ],
+      "screen_px": [
+        640.000122,
+        249.840302
+      ]
+    },
+    {
+      "id": "corner_ne",
+      "cell": [
+        8,
+        0
+      ],
+      "screen_px": [
+        904.000183,
+        381.840271
+      ]
+    },
+    {
+      "id": "corner_se",
+      "cell": [
+        8,
+        4
+      ],
+      "screen_px": [
+        772.000183,
+        447.84024
+      ]
+    },
+    {
+      "id": "corner_sw",
+      "cell": [
+        0,
+        4
+      ],
+      "screen_px": [
+        508.000183,
+        315.840271
+      ]
+    },
+    {
+      "id": "floor_center",
+      "cell": [
+        4.0,
+        2.0
+      ],
+      "screen_px": [
+        706.000122,
+        348.84024
+      ]
+    }
+  ],
+  "projected_depth": {
+    "schema_version": 1,
+    "camera_id": "tactical-t2-dimetric-v1",
+    "texture_path": "res://assets/formula_lab/temp/scenes/corridor-t2-depth-v1-rebuild/depth.exr",
+    "texture_sha256": "713260afed006549cf938eb088b9a9723ae5a764d49c5dd1b3f2fceb4a356f42",
+    "encoding": "linear_view_z_float32",
+    "origin": "top_left",
+    "image_size": [
+      2560,
+      1440
+    ],
+    "ground_depth_uv": [
+      0.0,
+      -53.443603515625,
+      88.35581970214844
+    ],
+    "pixel_y_to_view_z": 0.012371141804892506,
+    "z_to_screen_px": [
+      0.0,
+      -20.208320618
+    ],
+    "z_to_view_depth": -0.5,
+    "bias_world": 0.02,
+    "ground_triangles": [
+      [
+        [
+          44.0,
+          42.0,
+          0.0
+        ],
+        [
+          -36.0,
+          -38.0,
+          0.0
+        ],
+        [
+          44.0,
+          -38.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          44.0,
+          42.0,
+          0.0
+        ],
+        [
+          -36.0,
+          42.0,
+          0.0
+        ],
+        [
+          -36.0,
+          -38.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          8.800000191,
+          4.799999952,
+          0.01
+        ],
+        [
+          -0.800000191,
+          -0.799999952,
+          0.01
+        ],
+        [
+          8.800000191,
+          -0.799999952,
+          0.01
+        ]
+      ],
+      [
+        [
+          8.800000191,
+          4.799999952,
+          0.01
+        ],
+        [
+          -0.800000191,
+          4.799999952,
+          0.01
+        ],
+        [
+          -0.800000191,
+          -0.799999952,
+          0.01
+        ]
+      ]
+    ]
+  }
+}

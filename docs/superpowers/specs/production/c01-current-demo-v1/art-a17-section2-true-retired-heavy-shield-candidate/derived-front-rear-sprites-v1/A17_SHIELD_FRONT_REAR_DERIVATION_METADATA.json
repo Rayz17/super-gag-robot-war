@@ -1,0 +1,346 @@
+{
+  "schema_id": "A17_USER_ACCEPTED_DESIGN_BASE_DERIVED_FRONT_REAR_SPRITES_V1",
+  "status": "USER_ACCEPTED_DESIGN_BASE_DERIVED_MAP_SPRITE_REVIEW_ONLY",
+  "candidate_only": true,
+  "design_base_user_accepted": true,
+  "derived_sprite_actual_frame_user_acceptance": false,
+  "runtime": false,
+  "canon": false,
+  "godot_bound": false,
+  "imagegen_called": false,
+  "creative_redraw": false,
+  "source": {
+    "path": "user-confirmation-call01/generation-raw/TRUE_RETIRED_HEAVY_SHIELD_CALL01_RAW.png",
+    "sha256": "169c162c5b2bd0761d535d7dee8573fc547952090dfa7947c3b9630af1c72305",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA"
+  },
+  "derivation": {
+    "method": "largest_8_connected_alpha_component_per_locked_source_window_then_exact_master_copy",
+    "map_resample": "premultiplied_alpha_lanczos",
+    "excluded_sources": [
+      "A2",
+      "A13",
+      "A14",
+      "A18",
+      "A19",
+      "A22"
+    ],
+    "pixel_generation": false,
+    "pixel_repaint": false
+  },
+  "visual_owner_contract": {
+    "single_visual_owner": true,
+    "allowed_owners": [
+      "wall_mount_state",
+      "future_true_gz_holder_composite_state"
+    ],
+    "mutual_exclusion_required": true,
+    "independent_composed_prop_binding_allowed": false
+  },
+  "roles": {
+    "front_exterior": {
+      "extraction": {
+        "source_window_px": [
+          0,
+          0,
+          720,
+          1024
+        ],
+        "source_alpha_component_count": 78,
+        "selected_component_pixels": 443395,
+        "discarded_nonselected_alpha_pixels": 155,
+        "source_selected_bbox_xyxy": [
+          22,
+          0,
+          707,
+          1016
+        ],
+        "selected_component_is_largest": true,
+        "connectivity": 8,
+        "alpha_threshold": 0
+      },
+      "master": {
+        "canvas_size": [
+          768,
+          1152
+        ],
+        "copy_offset_px": [
+          41,
+          68
+        ],
+        "alpha_bbox_xyxy": [
+          41,
+          68,
+          726,
+          1084
+        ],
+        "native_source_pixels_preserved": true,
+        "resampled": false,
+        "path": "derived-front-rear-sprites-v1/masters/A17_SHIELD_FRONT_EXTERIOR_RGBA_MASTER_768x1152.png",
+        "sha256": "8c20afbefefd04716e580ae5791338524ebc8c520256cdc047fae6de3ca7de47",
+        "mode": "RGBA"
+      },
+      "map_candidate": {
+        "canvas_size": [
+          256,
+          256
+        ],
+        "source_selected_bbox_xyxy": [
+          22,
+          0,
+          707,
+          1016
+        ],
+        "normalized_subject_size_px": [
+          140,
+          208
+        ],
+        "copy_offset_px": [
+          58,
+          16
+        ],
+        "alpha_bbox_xyxy": [
+          58,
+          16,
+          198,
+          224
+        ],
+        "ground_tip_pivot_px": [
+          128,
+          224
+        ],
+        "nominal_sprite_scale": [
+          1.0,
+          1.0
+        ],
+        "provisional_held_scale_relative_to_18m_gz": [
+          0.4,
+          0.4
+        ],
+        "held_scale_gate": "DEFERRED_PENDING_TRUE_USER_ACCEPTED_GZ_MASTER_ACTUAL_FRAME",
+        "resample": "premultiplied_alpha_lanczos",
+        "path": "derived-front-rear-sprites-v1/map-candidates/A17_SHIELD_FRONT_EXTERIOR_MAP_CANDIDATE_256x256.png",
+        "sha256": "447f29510ec5c19b9ad44d01741e30d3b55875f047c124bc89d078458d5b9bbe",
+        "mode": "RGBA"
+      },
+      "pixel_gate": {
+        "status": "PASS_DETERMINISTIC_SPRITE_EXTRACTION_ONLY",
+        "master_active_rgba_exactly_matches_source": true,
+        "master_alpha_components": 1,
+        "master_alpha_component_pixels": [
+          443395
+        ],
+        "map_alpha_components": 1,
+        "map_alpha_component_pixels": [
+          19031
+        ],
+        "master_edge_alpha_counts_top_bottom_left_right": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "map_edge_alpha_counts_top_bottom_left_right": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "no_other_view_pixels": true,
+        "no_baked_background": true,
+        "no_subject_crop": true
+      },
+      "orientation": {
+        "surface_role": "enemy_facing_exterior",
+        "holder_and_shield_front_direction": "same",
+        "holder_position": "behind_shield_rear_interior",
+        "grips_visible": false,
+        "hands_drawn": false,
+        "hands_must_not_be_visible_on_front": true,
+        "front_edge_socket_px": [
+          170.818,
+          96.457
+        ],
+        "front_edge_socket_source_px": [
+          574.0,
+          393.0
+        ],
+        "held_attachment_pivot_px_transferred_from_rear": [
+          115.623,
+          104.747
+        ]
+      }
+    },
+    "rear_interior": {
+      "extraction": {
+        "source_window_px": [
+          720,
+          0,
+          1280,
+          1024
+        ],
+        "source_alpha_component_count": 89,
+        "selected_component_pixels": 316457,
+        "discarded_nonselected_alpha_pixels": 142,
+        "source_selected_bbox_xyxy": [
+          722,
+          64,
+          1264,
+          964
+        ],
+        "selected_component_is_largest": true,
+        "connectivity": 8,
+        "alpha_threshold": 0
+      },
+      "master": {
+        "canvas_size": [
+          768,
+          1152
+        ],
+        "copy_offset_px": [
+          113,
+          126
+        ],
+        "alpha_bbox_xyxy": [
+          113,
+          126,
+          655,
+          1026
+        ],
+        "native_source_pixels_preserved": true,
+        "resampled": false,
+        "path": "derived-front-rear-sprites-v1/masters/A17_SHIELD_REAR_INTERIOR_RGBA_MASTER_768x1152.png",
+        "sha256": "7e9db3af4e7ccf9c361edbc6ebbadf74a4c61c9281eaa62373814a8cefe6bfe0",
+        "mode": "RGBA"
+      },
+      "map_candidate": {
+        "canvas_size": [
+          256,
+          256
+        ],
+        "source_selected_bbox_xyxy": [
+          722,
+          64,
+          1264,
+          964
+        ],
+        "normalized_subject_size_px": [
+          125,
+          208
+        ],
+        "copy_offset_px": [
+          65,
+          16
+        ],
+        "alpha_bbox_xyxy": [
+          65,
+          16,
+          190,
+          224
+        ],
+        "ground_tip_pivot_px": [
+          128,
+          224
+        ],
+        "nominal_sprite_scale": [
+          1.0,
+          1.0
+        ],
+        "provisional_held_scale_relative_to_18m_gz": [
+          0.4,
+          0.4
+        ],
+        "held_scale_gate": "DEFERRED_PENDING_TRUE_USER_ACCEPTED_GZ_MASTER_ACTUAL_FRAME",
+        "resample": "premultiplied_alpha_lanczos",
+        "path": "derived-front-rear-sprites-v1/map-candidates/A17_SHIELD_REAR_INTERIOR_MAP_CANDIDATE_256x256.png",
+        "sha256": "98aaeb90ce155dffa89b56d42c9e137aeb43a3fb061f37f079a77bfc89107be7",
+        "mode": "RGBA"
+      },
+      "pixel_gate": {
+        "status": "PASS_DETERMINISTIC_SPRITE_EXTRACTION_ONLY",
+        "master_active_rgba_exactly_matches_source": true,
+        "master_alpha_components": 1,
+        "master_alpha_component_pixels": [
+          316457
+        ],
+        "map_alpha_components": 1,
+        "map_alpha_component_pixels": [
+          17243
+        ],
+        "master_edge_alpha_counts_top_bottom_left_right": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "map_edge_alpha_counts_top_bottom_left_right": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "no_other_view_pixels": true,
+        "no_baked_background": true,
+        "no_subject_crop": true
+      },
+      "orientation": {
+        "surface_role": "holder_facing_interior",
+        "holder_and_shield_front_direction": "same",
+        "holder_position": "immediately_behind_this_surface",
+        "grips_visible": true,
+        "hands_drawn": false,
+        "hands_allowed_only_at_rear_grip_sockets": true,
+        "rear_grip_socket_px": [
+          [
+            96.827,
+            104.747
+          ],
+          [
+            134.419,
+            104.747
+          ]
+        ],
+        "rear_grip_socket_source_px": [
+          [
+            860.0,
+            448.0
+          ],
+          [
+            1023.0,
+            448.0
+          ]
+        ],
+        "held_attachment_pivot_px": [
+          115.623,
+          104.747
+        ]
+      }
+    }
+  },
+  "qa": {
+    "front_100pct": {
+      "path": "derived-front-rear-sprites-v1/qa/A17_SHIELD_FRONT_EXTERIOR_ALPHA_DARK_LIGHT_QA_100PCT.png",
+      "sha256": "99f3d53c49911071a9ce2a56567792477bff67669fa44ce62b7bb6a901b1f438"
+    },
+    "rear_100pct": {
+      "path": "derived-front-rear-sprites-v1/qa/A17_SHIELD_REAR_INTERIOR_ALPHA_DARK_LIGHT_QA_100PCT.png",
+      "sha256": "df82cbd61118146e5d597386f190132f694c964781622dcebf7c9787e0b5dba4"
+    },
+    "combined_50pct": {
+      "path": "derived-front-rear-sprites-v1/qa/A17_SHIELD_FRONT_REAR_DARK_LIGHT_QA_50PCT.png",
+      "sha256": "61da1e19b51a86e40616109a3528b378edaf9612e6a7e06112e7a6706c58e2f9"
+    }
+  },
+  "hard_gates": {
+    "front_exterior_and_gz_face_same_enemy_direction": true,
+    "rear_interior_and_grips_face_holder": true,
+    "hands_visible_on_front_forbidden": true,
+    "hands_are_not_part_of_these_shield_only_sprites": true,
+    "true_gz_source_required_before_held_actual_frame": true,
+    "camera_v2_exact_held_pose_proven": false
+  }
+}

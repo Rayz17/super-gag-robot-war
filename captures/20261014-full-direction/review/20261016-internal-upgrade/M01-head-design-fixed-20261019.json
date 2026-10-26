@@ -1,0 +1,74 @@
+{
+  "id": "M01_HEAD_DESIGN_FIXED_20261019",
+  "date": "2026-10-19",
+  "authority": "direct_user_message_in_this_chat",
+  "verbatim": "ok这样可以了，补上无牌的三视图；继续下一批",
+  "status": "head_source_design_fixed",
+  "scope": "确认R11修正后的无牌头部：前视双侧黄槽、白色中脊；已采用三分之四保持。授权补整机三视图并继续下一批。",
+  "files": [
+    {
+      "file": "samples/M01-head-twin-side-grooves-r11.png",
+      "sha256": "b92f8b78770ea11d6185e59f2089148ff408f19b841616272c63eb9f9925cf44",
+      "pixel_size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 684747,
+        "fully_opaque_pixels": 524,
+        "partially_transparent_pixels": 887817,
+        "corners": [
+          0,
+          0,
+          253,
+          253
+        ]
+      }
+    },
+    {
+      "file": "samples/M01-head-center-groove-three-quarter-r9b.png",
+      "sha256": "38a0f36ea2361abede5ec969777db584a5a4d3d6a806f1bf001f899440cf4aa4",
+      "pixel_size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 698028,
+        "fully_opaque_pixels": 744,
+        "partially_transparent_pixels": 874316,
+        "corners": [
+          0,
+          0,
+          253,
+          254
+        ]
+      }
+    }
+  ],
+  "correct_cross_section": [
+    "白色外缘",
+    "左侧黄色凹槽",
+    "连续白色中脊",
+    "右侧黄色凹槽",
+    "白色外缘"
+  ],
+  "prior_adoption": "M01-head-design-adoption-20261018.json",
+  "does_not_accept": [
+    "此前尚未绘制的整机三视图R12b",
+    "M02及M05新样例",
+    "模型、绑定、动作、声音、战棋画面和运行结果"
+  ],
+  "canon_lock": "CML133",
+  "runtime_accepted": false,
+  "handoff_sent": false
+}

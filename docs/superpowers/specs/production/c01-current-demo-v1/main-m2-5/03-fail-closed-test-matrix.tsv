@@ -1,0 +1,12 @@
+case_id	selection	validated	loaded	probes	runtime_art_loaded	fallback_count	expected_reason_or_scope	result
+default-six	default_active_config	6	6	6	true	7	current combined production receipt	PASS
+explicit-fixture-six	explicit_environment_receipt	6	6	6	false	7	fixture never claims production runtime art	PASS
+historical-five	explicit_environment_receipt	5	5	5	true	8	M2.4 receipt remains readable only when explicitly selected	PASS
+missing-a5	explicit_environment_receipt	6	5	6	false	8	ENEMY_C01CDV1_RIFT_SWARM_MASTER only; validated_asset_sha256_changed_after_preflight	PASS
+bad-a5-sha	explicit_environment_receipt	6	5	6	false	8	ENEMY_C01CDV1_RIFT_SWARM_MASTER only; validated_asset_sha256_changed_after_preflight	PASS
+missing-a4-roof	explicit_environment_receipt	6	5	6	false	8	MAP_C01CDV1_R2_ROOFS only; A5 remains loaded	PASS
+disable-wins	disable_over_any_receipt	0	0	0	false	13	disable active art has highest priority	PASS
+missing-config	active_config_rejected	0	0	0	false	13	candidate_r2_active_config_file_sha256_mismatch	PASS
+bad-config-hash	active_config_rejected	0	0	0	false	13	candidate_r2_active_config_file_sha256_mismatch	PASS
+bad-receipt-hash	active_receipt_rejected	0	0	0	false	13	r2_validated_receipt_file_sha256_mismatch	PASS
+invalid-explicit-receipt	explicit_receipt_rejected_no_default_fallthrough	0	0	0	false	13	r2_validated_receipt_file_sha256_mismatch	PASS

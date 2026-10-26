@@ -1,0 +1,2149 @@
+{
+  "approved_handoffs": [],
+  "call03_allowed": false,
+  "distinct_rect_count_by_slot": {
+    "ENEMY_C01_BREAKER": 5,
+    "ENEMY_C01_RIFT_SWARM": 5,
+    "TARGET_C01_EMERGENCY_VEHICLE_01": 3,
+    "V353U001": 8
+  },
+  "expected_A_phase_order": [
+    "PLAN",
+    "T1_WAIT",
+    "T1_DRIVE",
+    "T1_RECOIL",
+    "T1_PASSED",
+    "T2_IDLE",
+    "T2_MOVE",
+    "T2_RECOIL",
+    "T2_DEFLECTED",
+    "T3_MOVE_EAST",
+    "T3_MOVE_NORTH",
+    "T3_BRACE_EAST",
+    "T3_BRACE_NORTH",
+    "T3_BRACE_SOUTH",
+    "T3_CONTACT",
+    "T3_POST_A",
+    "T4_SIDE_HIT_A",
+    "T5_RED_CHARGE_A"
+  ],
+  "expected_B_phase_order": [
+    "PLAN",
+    "T1_WAIT",
+    "T1_DRIVE",
+    "T1_RECOIL",
+    "T1_PASSED",
+    "T2_IDLE",
+    "T2_MOVE",
+    "T2_RECOIL",
+    "T2_DEFLECTED",
+    "T3_MOVE_EAST",
+    "T3_MOVE_NORTH",
+    "T3_BRACE_EAST",
+    "T3_BRACE_NORTH",
+    "T3_BRACE_SOUTH",
+    "T3_CONTACT",
+    "T3_POST_B",
+    "T4_SIDE_HIT_B",
+    "T5_RED_CHARGE_B"
+  ],
+  "expected_phase_ids": [
+    "PLAN",
+    "T1_WAIT",
+    "T1_DRIVE",
+    "T1_RECOIL",
+    "T1_PASSED",
+    "T2_IDLE",
+    "T2_MOVE",
+    "T2_RECOIL",
+    "T2_DEFLECTED",
+    "T3_MOVE_EAST",
+    "T3_MOVE_NORTH",
+    "T3_BRACE_EAST",
+    "T3_BRACE_NORTH",
+    "T3_BRACE_SOUTH",
+    "T3_CONTACT",
+    "T3_POST_A",
+    "T3_POST_B",
+    "T4_SIDE_HIT_A",
+    "T4_SIDE_HIT_B",
+    "T5_RED_CHARGE_A",
+    "T5_RED_CHARGE_B"
+  ],
+  "final_60fps_status": "FINAL_60FPS_NOT_PROVEN",
+  "fixture_performance_scope": "FIXTURE_30FPS_STABILITY_ONLY",
+  "fixture_validation_only": true,
+  "load_snapshot": {
+    "cached_atlas_texture_instance_ids": [
+      -9223371991824726419,
+      -9223371991807949202,
+      -9223371991791171985,
+      -9223371991774394768,
+      -9223371991757617551,
+      -9223371991690508683,
+      -9223371991673731466,
+      -9223371991656954249,
+      -9223371991640177032,
+      -9223371991623399815,
+      -9223371991606622598,
+      -9223371991740840334,
+      -9223371991724063117,
+      -9223371991707285900,
+      -9223371991958944155,
+      -9223371991942166938,
+      -9223371991925389721,
+      -9223371991908612504,
+      -9223371991891835287,
+      -9223371991875058070,
+      -9223371991858280853,
+      -9223371991841503636
+    ],
+    "cached_atlas_texture_region_count": 22,
+    "cached_atlas_texture_region_keys": [
+      "ENEMY_C01_BREAKER|charge/north/0",
+      "ENEMY_C01_BREAKER|contact/north/0",
+      "ENEMY_C01_BREAKER|recoil/north/0",
+      "ENEMY_C01_BREAKER|red_charge/north/0",
+      "ENEMY_C01_BREAKER|side_hit/north/0",
+      "ENEMY_C01_RIFT_SWARM|deflected/west/0",
+      "ENEMY_C01_RIFT_SWARM|idle/east/0",
+      "ENEMY_C01_RIFT_SWARM|idle/north/0",
+      "ENEMY_C01_RIFT_SWARM|idle/south/0",
+      "ENEMY_C01_RIFT_SWARM|idle/west/0",
+      "ENEMY_C01_RIFT_SWARM|recoil/west/0",
+      "TARGET_C01_EMERGENCY_VEHICLE_01|drive/east/0",
+      "TARGET_C01_EMERGENCY_VEHICLE_01|recoil/east/0",
+      "TARGET_C01_EMERGENCY_VEHICLE_01|waiting/east/0",
+      "V353U001|brace/east/0",
+      "V353U001|brace/north/0",
+      "V353U001|brace/south/0",
+      "V353U001|contact/south/0",
+      "V353U001|idle/east/0",
+      "V353U001|move/north/0",
+      "V353U001|recoil/east/0",
+      "V353U001|recoil/south/0"
+    ],
+    "estimated_vram_bytes": 6455296,
+    "load_count_by_resource": {
+      "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_breaker_neutral_1152x768.png": 1,
+      "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_emergency_vehicle_neutral_256x256.png": 1,
+      "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_guardian_z_neutral_768x768.png": 1,
+      "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_rift_swarm_neutral_384x192.png": 1
+    },
+    "reload_count": 0,
+    "resources": [
+      {
+        "estimated_vram_bytes": 3538944,
+        "filter": "nearest",
+        "format": "RGBA8",
+        "has_alpha": true,
+        "image_texture_instance_id": -9223371992109939104,
+        "load_count": 1,
+        "mipmap": false,
+        "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_breaker_neutral_1152x768.png",
+        "sha256": "debdafd803f9f5c68420726e3b9abf29ab4a2608eecb6a61833fce4fc3407391",
+        "size_px": [
+          1152,
+          768
+        ],
+        "slot_id": "breaker_map_current",
+        "stable_id": "ENEMY_C01_BREAKER"
+      },
+      {
+        "estimated_vram_bytes": 294912,
+        "filter": "nearest",
+        "format": "RGBA8",
+        "has_alpha": true,
+        "image_texture_instance_id": -9223371991975721372,
+        "load_count": 1,
+        "mipmap": false,
+        "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_rift_swarm_neutral_384x192.png",
+        "sha256": "ff96a2b0ee1e02d4941684b1953b51072b969b364f185bfc097bd1cc2f8bc65b",
+        "size_px": [
+          384,
+          192
+        ],
+        "slot_id": "rift_swarm_map_current",
+        "stable_id": "ENEMY_C01_RIFT_SWARM"
+      },
+      {
+        "estimated_vram_bytes": 262144,
+        "filter": "nearest",
+        "format": "RGBA8",
+        "has_alpha": true,
+        "image_texture_instance_id": -9223371992042830238,
+        "load_count": 1,
+        "mipmap": false,
+        "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_emergency_vehicle_neutral_256x256.png",
+        "sha256": "315db68cdde10d4ac1ba049d393d785c3a401b7e02f4160864aeb39373e342d6",
+        "size_px": [
+          256,
+          256
+        ],
+        "slot_id": "emergency_vehicle_map_current",
+        "stable_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+      },
+      {
+        "estimated_vram_bytes": 2359296,
+        "filter": "nearest",
+        "format": "RGBA8",
+        "has_alpha": true,
+        "image_texture_instance_id": -9223371992177047970,
+        "load_count": 1,
+        "mipmap": false,
+        "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_guardian_z_neutral_768x768.png",
+        "sha256": "12196a8b5e66c5b8ebd891ae232361238ce08d3ec56d13a72e216eed4db73988",
+        "size_px": [
+          768,
+          768
+        ],
+        "slot_id": "guardian_z_map_current",
+        "stable_id": "V353U001"
+      }
+    ],
+    "startup_prebuilt_atlas_texture_count": 22,
+    "total_load_count": 4,
+    "unique_image_texture_count": 4
+  },
+  "negative_results": [
+    {
+      "clip_key": "missing/state/9",
+      "hidden": true,
+      "missing_reason": "missing_clip",
+      "subject_id": "ENEMY_C01_BREAKER",
+      "unique_reason_count": 1,
+      "valid": false
+    },
+    {
+      "clip_key": "charge/north/0",
+      "hidden": true,
+      "missing_reason": "wrong_camera_contract_id",
+      "subject_id": "ENEMY_C01_BREAKER",
+      "unique_reason_count": 1,
+      "valid": false
+    },
+    {
+      "clip_key": "charge/north/0",
+      "hidden": true,
+      "missing_reason": "wrong_pivot",
+      "subject_id": "ENEMY_C01_BREAKER",
+      "unique_reason_count": 1,
+      "valid": false
+    },
+    {
+      "clip_key": "charge/north/0",
+      "hidden": true,
+      "missing_reason": "wrong_sha256",
+      "subject_id": "ENEMY_C01_BREAKER",
+      "unique_reason_count": 1,
+      "valid": false
+    },
+    {
+      "clip_key": "charge/north/0",
+      "hidden": true,
+      "missing_reason": "rect_out_of_bounds",
+      "subject_id": "ENEMY_C01_BREAKER",
+      "unique_reason_count": 1,
+      "valid": false
+    }
+  ],
+  "original_c2_topology_layers": {
+    "active_c3_roof_owner": {
+      "exists": true,
+      "node_instance_id": 44073748059,
+      "node_name": "ROOFS_FOREGROUND_CURRENT",
+      "visible_in_tree": true,
+      "visible_property": true
+    },
+    "c2_ground_structures_weather_retained": true,
+    "legacy_c2_roof_owner": {
+      "exists": true,
+      "node_instance_id": 42530244100,
+      "node_name": "C2_ROOFS_FOREGROUND_CURRENT_HIDDEN",
+      "visible_in_tree": false,
+      "visible_property": false
+    },
+    "old_new_choose_one": true,
+    "rows": [
+      {
+        "exists": true,
+        "node_instance_id": 42496689662,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/current_topology_layer.gd",
+        "slot_id": "GROUND_BASE_CURRENT",
+        "visible_in_tree": true,
+        "visible_property": true
+      },
+      {
+        "exists": true,
+        "node_instance_id": 42513466879,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/current_topology_layer.gd",
+        "slot_id": "STRUCTURES_CURRENT",
+        "visible_in_tree": true,
+        "visible_property": true
+      },
+      {
+        "exists": true,
+        "node_instance_id": 44073748059,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/c3_simple_roof_panel_layer.gd",
+        "slot_id": "ROOFS_FOREGROUND_CURRENT",
+        "visible_in_tree": true,
+        "visible_property": true
+      },
+      {
+        "exists": true,
+        "node_instance_id": 42563798533,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/current_topology_layer.gd",
+        "slot_id": "STATIC_LIGHT_WEATHER_CURRENT",
+        "visible_in_tree": true,
+        "visible_property": true
+      },
+      {
+        "exists": true,
+        "node_instance_id": 42547021315,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/current_topology_layer.gd",
+        "slot_id": "OCCLUSION_CONTROL_CURRENT",
+        "visible_in_tree": false,
+        "visible_property": false
+      }
+    ],
+    "split_topology_active": false,
+    "valid": true
+  },
+  "plan_actor_readback": {
+    "ENEMY_C01_BREAKER": {
+      "actor_alpha_shader_enabled": false,
+      "actor_alpha_unchanged": true,
+      "actor_instance_id": 45432702594,
+      "actor_material_is_null": true,
+      "actor_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "actor_self_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "alias_one_hop": false,
+      "alias_signature": "",
+      "alias_used": false,
+      "atlas_image_texture_instance_id": -9223371992109939104,
+      "atlas_texture_instance_id": -9223371991824726419,
+      "atlas_texture_region": [
+        0.0,
+        0.0,
+        384.0,
+        384.0
+      ],
+      "centered": false,
+      "clip_key": "charge/north/0",
+      "coverage_owner": "ROOFS_FOREGROUND_CURRENT",
+      "cpu_contour_mask_enabled": false,
+      "display_scale": [
+        1.0,
+        1.0
+      ],
+      "effective_canvas_z": 522,
+      "environment_depth_band": {
+        "buildings_world_body": -900,
+        "inside": true,
+        "policy_source": "Task98 environment-layer-contract stateful_objects footpoint depth sort",
+        "roof": 900
+      },
+      "facing": "north",
+      "footpoint_error_px": 0.0,
+      "footpoint_reconstructed": [
+        520.0,
+        520.0
+      ],
+      "footpoint_screen": [
+        520.0,
+        520.0
+      ],
+      "footpoint_source": "projection.footprint_bottom_center_screen(anchor,schema.footprint)",
+      "footprint": [
+        3,
+        3
+      ],
+      "frame": 0,
+      "ground_anchor": [
+        20.0,
+        13.0
+      ],
+      "independent_projection_footpoint": [
+        520.0,
+        520.0
+      ],
+      "mask_build_count": 0,
+      "mask_texture_instance_id": 0,
+      "mipmap": false,
+      "missing_reason": "",
+      "passed_footpoint_projection_error_px": 0.0,
+      "phase": "PLAN",
+      "pivot_px": [
+        192.0,
+        320.0
+      ],
+      "projection_expected": [
+        520.0,
+        520.0
+      ],
+      "realtime_actor_alpha_mask_enabled": false,
+      "rect": [
+        0.0,
+        0.0,
+        384.0,
+        384.0
+      ],
+      "resolved_physical_clip_key": "charge/north/0",
+      "schema_footprint": [
+        3.0,
+        3.0
+      ],
+      "shadow_effective_canvas_z": 521,
+      "shadow_owner": "engine_independent_ground_shadow_layer",
+      "shadow_visible": true,
+      "shadow_z_as_relative": false,
+      "sockets_local_from_footpoint": {
+        "body": [
+          0.0,
+          -98.0
+        ],
+        "impact": [
+          12.0,
+          -18.0
+        ],
+        "shield": [
+          -68.0,
+          -84.0
+        ],
+        "target": [
+          12.0,
+          -18.0
+        ],
+        "weapon": [
+          68.0,
+          -96.0
+        ]
+      },
+      "sockets_screen": {
+        "body": [
+          520.0,
+          422.0
+        ],
+        "impact": [
+          532.0,
+          502.0
+        ],
+        "shield": [
+          452.0,
+          436.0
+        ],
+        "target": [
+          532.0,
+          502.0
+        ],
+        "weapon": [
+          588.0,
+          424.0
+        ]
+      },
+      "source_footprint": [
+        3,
+        3
+      ],
+      "source_footprint_matches_schema": true,
+      "sprite_class": "Sprite2D",
+      "sprite_instance_id": 45466257028,
+      "sprite_material_is_null": true,
+      "sprite_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sprite_png_contains_shadow": false,
+      "sprite_self_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sprite_top_left": [
+        328.0,
+        200.0
+      ],
+      "state": "charge",
+      "subject_id": "ENEMY_C01_BREAKER",
+      "texture_class": "AtlasTexture",
+      "texture_filter": "nearest",
+      "visible": true,
+      "z_as_relative": false,
+      "z_bias": 2,
+      "z_formula": "footpoint_screen_y + explicit_z_bias",
+      "z_sort": 522
+    },
+    "ENEMY_C01_RIFT_SWARM_01": {
+      "actor_alpha_shader_enabled": false,
+      "actor_alpha_unchanged": true,
+      "actor_instance_id": 45566920330,
+      "actor_material_is_null": true,
+      "actor_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "actor_self_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "alias_one_hop": false,
+      "alias_signature": "",
+      "alias_used": false,
+      "atlas_image_texture_instance_id": -9223371991975721372,
+      "atlas_texture_instance_id": -9223371991623399815,
+      "atlas_texture_region": [
+        288.0,
+        0.0,
+        96.0,
+        96.0
+      ],
+      "centered": false,
+      "clip_key": "idle/west/0",
+      "coverage_owner": "ROOFS_FOREGROUND_CURRENT",
+      "cpu_contour_mask_enabled": false,
+      "display_scale": [
+        1.0,
+        1.0
+      ],
+      "effective_canvas_z": 360,
+      "environment_depth_band": {
+        "buildings_world_body": -900,
+        "inside": true,
+        "policy_source": "Task98 environment-layer-contract stateful_objects footpoint depth sort",
+        "roof": 900
+      },
+      "facing": "west",
+      "footpoint_error_px": 0.0,
+      "footpoint_reconstructed": [
+        840.0,
+        360.0
+      ],
+      "footpoint_screen": [
+        840.0,
+        360.0
+      ],
+      "footpoint_source": "projection.footprint_bottom_center_screen(anchor,schema.footprint)",
+      "footprint": [
+        1,
+        1
+      ],
+      "frame": 0,
+      "ground_anchor": [
+        22.0,
+        7.0
+      ],
+      "independent_projection_footpoint": [
+        840.0,
+        360.0
+      ],
+      "mask_build_count": 0,
+      "mask_texture_instance_id": 0,
+      "mipmap": false,
+      "missing_reason": "",
+      "passed_footpoint_projection_error_px": 0.0,
+      "phase": "PLAN",
+      "pivot_px": [
+        48.0,
+        72.0
+      ],
+      "projection_expected": [
+        840.0,
+        360.0
+      ],
+      "realtime_actor_alpha_mask_enabled": false,
+      "rect": [
+        288.0,
+        0.0,
+        96.0,
+        96.0
+      ],
+      "resolved_physical_clip_key": "idle/west/0",
+      "schema_footprint": [
+        1.0,
+        1.0
+      ],
+      "shadow_effective_canvas_z": 359,
+      "shadow_owner": "engine_independent_ground_shadow_layer",
+      "shadow_visible": true,
+      "shadow_z_as_relative": false,
+      "sockets_local_from_footpoint": {
+        "body": [
+          0.0,
+          -28.0
+        ],
+        "impact": [
+          0.0,
+          -32.0
+        ],
+        "shield": [
+          -16.0,
+          -24.0
+        ],
+        "target": [
+          0.0,
+          -32.0
+        ],
+        "weapon": [
+          17.0,
+          -27.0
+        ]
+      },
+      "sockets_screen": {
+        "body": [
+          840.0,
+          332.0
+        ],
+        "impact": [
+          840.0,
+          328.0
+        ],
+        "shield": [
+          824.0,
+          336.0
+        ],
+        "target": [
+          840.0,
+          328.0
+        ],
+        "weapon": [
+          857.0,
+          333.0
+        ]
+      },
+      "source_footprint": [
+        1,
+        1
+      ],
+      "source_footprint_matches_schema": true,
+      "sprite_class": "Sprite2D",
+      "sprite_instance_id": 45600474764,
+      "sprite_material_is_null": true,
+      "sprite_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sprite_png_contains_shadow": false,
+      "sprite_self_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sprite_top_left": [
+        792.0,
+        288.0
+      ],
+      "state": "idle",
+      "subject_id": "ENEMY_C01_RIFT_SWARM_01",
+      "texture_class": "AtlasTexture",
+      "texture_filter": "nearest",
+      "visible": true,
+      "z_as_relative": false,
+      "z_bias": 0,
+      "z_formula": "footpoint_screen_y + explicit_z_bias",
+      "z_sort": 360
+    },
+    "ENEMY_C01_RIFT_SWARM_02": {
+      "actor_alpha_shader_enabled": false,
+      "actor_alpha_unchanged": true,
+      "actor_instance_id": 45634029198,
+      "actor_material_is_null": true,
+      "actor_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "actor_self_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "alias_one_hop": false,
+      "alias_signature": "",
+      "alias_used": false,
+      "atlas_image_texture_instance_id": -9223371991975721372,
+      "atlas_texture_instance_id": -9223371991656954249,
+      "atlas_texture_region": [
+        0.0,
+        0.0,
+        96.0,
+        96.0
+      ],
+      "centered": false,
+      "clip_key": "idle/north/0",
+      "coverage_owner": "ROOFS_FOREGROUND_CURRENT",
+      "cpu_contour_mask_enabled": false,
+      "display_scale": [
+        1.0,
+        1.0
+      ],
+      "effective_canvas_z": 540,
+      "environment_depth_band": {
+        "buildings_world_body": -900,
+        "inside": true,
+        "policy_source": "Task98 environment-layer-contract stateful_objects footpoint depth sort",
+        "roof": 900
+      },
+      "facing": "north",
+      "footpoint_error_px": 0.0,
+      "footpoint_reconstructed": [
+        800.0,
+        540.0
+      ],
+      "footpoint_screen": [
+        800.0,
+        540.0
+      ],
+      "footpoint_source": "projection.footprint_bottom_center_screen(anchor,schema.footprint)",
+      "footprint": [
+        1,
+        1
+      ],
+      "frame": 0,
+      "ground_anchor": [
+        26.0,
+        12.0
+      ],
+      "independent_projection_footpoint": [
+        800.0,
+        540.0
+      ],
+      "mask_build_count": 0,
+      "mask_texture_instance_id": 0,
+      "mipmap": false,
+      "missing_reason": "",
+      "passed_footpoint_projection_error_px": 0.0,
+      "phase": "PLAN",
+      "pivot_px": [
+        48.0,
+        72.0
+      ],
+      "projection_expected": [
+        800.0,
+        540.0
+      ],
+      "realtime_actor_alpha_mask_enabled": false,
+      "rect": [
+        0.0,
+        0.0,
+        96.0,
+        96.0
+      ],
+      "resolved_physical_clip_key": "idle/north/0",
+      "schema_footprint": [
+        1.0,
+        1.0
+      ],
+      "shadow_effective_canvas_z": 539,
+      "shadow_owner": "engine_independent_ground_shadow_layer",
+      "shadow_visible": true,
+      "shadow_z_as_relative": false,
+      "sockets_local_from_footpoint": {
+        "body": [
+          0.0,
+          -28.0
+        ],
+        "impact": [
+          0.0,
+          -32.0
+        ],
+        "shield": [
+          -16.0,
+          -24.0
+        ],
+        "target": [
+          0.0,
+          -32.0
+        ],
+        "weapon": [
+          17.0,
+          -27.0
+        ]
+      },
+      "sockets_screen": {
+        "body": [
+          800.0,
+          512.0
+        ],
+        "impact": [
+          800.0,
+          508.0
+        ],
+        "shield": [
+          784.0,
+          516.0
+        ],
+        "target": [
+          800.0,
+          508.0
+        ],
+        "weapon": [
+          817.0,
+          513.0
+        ]
+      },
+      "source_footprint": [
+        1,
+        1
+      ],
+      "source_footprint_matches_schema": true,
+      "sprite_class": "Sprite2D",
+      "sprite_instance_id": 45667583632,
+      "sprite_material_is_null": true,
+      "sprite_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sprite_png_contains_shadow": false,
+      "sprite_self_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sprite_top_left": [
+        752.0,
+        468.0
+      ],
+      "state": "idle",
+      "subject_id": "ENEMY_C01_RIFT_SWARM_02",
+      "texture_class": "AtlasTexture",
+      "texture_filter": "nearest",
+      "visible": true,
+      "z_as_relative": false,
+      "z_bias": 0,
+      "z_formula": "footpoint_screen_y + explicit_z_bias",
+      "z_sort": 540
+    },
+    "ENEMY_C01_RIFT_SWARM_03": {
+      "actor_alpha_shader_enabled": false,
+      "actor_alpha_unchanged": true,
+      "actor_instance_id": 45701138066,
+      "actor_material_is_null": true,
+      "actor_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "actor_self_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "alias_one_hop": false,
+      "alias_signature": "",
+      "alias_used": false,
+      "atlas_image_texture_instance_id": -9223371991975721372,
+      "atlas_texture_instance_id": -9223371991640177032,
+      "atlas_texture_region": [
+        192.0,
+        0.0,
+        96.0,
+        96.0
+      ],
+      "centered": false,
+      "clip_key": "idle/south/0",
+      "coverage_owner": "ROOFS_FOREGROUND_CURRENT",
+      "cpu_contour_mask_enabled": false,
+      "display_scale": [
+        1.0,
+        1.0
+      ],
+      "effective_canvas_z": 460,
+      "environment_depth_band": {
+        "buildings_world_body": -900,
+        "inside": true,
+        "policy_source": "Task98 environment-layer-contract stateful_objects footpoint depth sort",
+        "roof": 900
+      },
+      "facing": "south",
+      "footpoint_error_px": 0.0,
+      "footpoint_reconstructed": [
+        1200.0,
+        460.0
+      ],
+      "footpoint_screen": [
+        1200.0,
+        460.0
+      ],
+      "footpoint_source": "projection.footprint_bottom_center_screen(anchor,schema.footprint)",
+      "footprint": [
+        1,
+        1
+      ],
+      "frame": 0,
+      "ground_anchor": [
+        29.0,
+        5.0
+      ],
+      "independent_projection_footpoint": [
+        1200.0,
+        460.0
+      ],
+      "mask_build_count": 0,
+      "mask_texture_instance_id": 0,
+      "mipmap": false,
+      "missing_reason": "",
+      "passed_footpoint_projection_error_px": 0.0,
+      "phase": "PLAN",
+      "pivot_px": [
+        48.0,
+        72.0
+      ],
+      "projection_expected": [
+        1200.0,
+        460.0
+      ],
+      "realtime_actor_alpha_mask_enabled": false,
+      "rect": [
+        192.0,
+        0.0,
+        96.0,
+        96.0
+      ],
+      "resolved_physical_clip_key": "idle/south/0",
+      "schema_footprint": [
+        1.0,
+        1.0
+      ],
+      "shadow_effective_canvas_z": 459,
+      "shadow_owner": "engine_independent_ground_shadow_layer",
+      "shadow_visible": true,
+      "shadow_z_as_relative": false,
+      "sockets_local_from_footpoint": {
+        "body": [
+          0.0,
+          -28.0
+        ],
+        "impact": [
+          0.0,
+          -32.0
+        ],
+        "shield": [
+          -16.0,
+          -24.0
+        ],
+        "target": [
+          0.0,
+          -32.0
+        ],
+        "weapon": [
+          17.0,
+          -27.0
+        ]
+      },
+      "sockets_screen": {
+        "body": [
+          1200.0,
+          432.0
+        ],
+        "impact": [
+          1200.0,
+          428.0
+        ],
+        "shield": [
+          1184.0,
+          436.0
+        ],
+        "target": [
+          1200.0,
+          428.0
+        ],
+        "weapon": [
+          1217.0,
+          433.0
+        ]
+      },
+      "source_footprint": [
+        1,
+        1
+      ],
+      "source_footprint_matches_schema": true,
+      "sprite_class": "Sprite2D",
+      "sprite_instance_id": 45734692500,
+      "sprite_material_is_null": true,
+      "sprite_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sprite_png_contains_shadow": false,
+      "sprite_self_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sprite_top_left": [
+        1152.0,
+        388.0
+      ],
+      "state": "idle",
+      "subject_id": "ENEMY_C01_RIFT_SWARM_03",
+      "texture_class": "AtlasTexture",
+      "texture_filter": "nearest",
+      "visible": true,
+      "z_as_relative": false,
+      "z_bias": 0,
+      "z_formula": "footpoint_screen_y + explicit_z_bias",
+      "z_sort": 460
+    },
+    "TARGET_C01_EMERGENCY_VEHICLE_01": {
+      "actor_alpha_shader_enabled": false,
+      "actor_alpha_unchanged": true,
+      "actor_instance_id": 45499811462,
+      "actor_material_is_null": true,
+      "actor_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "actor_self_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "alias_one_hop": false,
+      "alias_signature": "",
+      "alias_used": false,
+      "atlas_image_texture_instance_id": -9223371992042830238,
+      "atlas_texture_instance_id": -9223371991707285900,
+      "atlas_texture_region": [
+        0.0,
+        0.0,
+        128.0,
+        128.0
+      ],
+      "centered": false,
+      "clip_key": "waiting/east/0",
+      "coverage_owner": "ROOFS_FOREGROUND_CURRENT",
+      "cpu_contour_mask_enabled": false,
+      "display_scale": [
+        1.0,
+        1.0
+      ],
+      "effective_canvas_z": 320,
+      "environment_depth_band": {
+        "buildings_world_body": -900,
+        "inside": true,
+        "policy_source": "Task98 environment-layer-contract stateful_objects footpoint depth sort",
+        "roof": 900
+      },
+      "facing": "east",
+      "footpoint_error_px": 0.0,
+      "footpoint_reconstructed": [
+        520.0,
+        320.0
+      ],
+      "footpoint_screen": [
+        520.0,
+        320.0
+      ],
+      "footpoint_source": "projection.footprint_bottom_center_screen(anchor,schema.footprint)",
+      "footprint": [
+        1,
+        1
+      ],
+      "frame": 0,
+      "ground_anchor": [
+        17.0,
+        10.0
+      ],
+      "independent_projection_footpoint": [
+        520.0,
+        320.0
+      ],
+      "mask_build_count": 0,
+      "mask_texture_instance_id": 0,
+      "mipmap": false,
+      "missing_reason": "",
+      "passed_footpoint_projection_error_px": 0.0,
+      "phase": "PLAN",
+      "pivot_px": [
+        64.0,
+        96.0
+      ],
+      "projection_expected": [
+        520.0,
+        320.0
+      ],
+      "realtime_actor_alpha_mask_enabled": false,
+      "rect": [
+        0.0,
+        0.0,
+        128.0,
+        128.0
+      ],
+      "resolved_physical_clip_key": "waiting/east/0",
+      "schema_footprint": [
+        1.0,
+        1.0
+      ],
+      "shadow_effective_canvas_z": 319,
+      "shadow_owner": "engine_independent_ground_shadow_layer",
+      "shadow_visible": true,
+      "shadow_z_as_relative": false,
+      "sockets_local_from_footpoint": {
+        "body": [
+          0.0,
+          -37.0
+        ],
+        "impact": [
+          0.0,
+          -43.0
+        ],
+        "shield": [
+          -21.0,
+          -32.0
+        ],
+        "target": [
+          0.0,
+          -43.0
+        ],
+        "weapon": [
+          23.0,
+          -36.0
+        ]
+      },
+      "sockets_screen": {
+        "body": [
+          520.0,
+          283.0
+        ],
+        "impact": [
+          520.0,
+          277.0
+        ],
+        "shield": [
+          499.0,
+          288.0
+        ],
+        "target": [
+          520.0,
+          277.0
+        ],
+        "weapon": [
+          543.0,
+          284.0
+        ]
+      },
+      "source_footprint": [
+        1,
+        1
+      ],
+      "source_footprint_matches_schema": true,
+      "sprite_class": "Sprite2D",
+      "sprite_instance_id": 45533365896,
+      "sprite_material_is_null": true,
+      "sprite_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sprite_png_contains_shadow": false,
+      "sprite_self_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sprite_top_left": [
+        456.0,
+        224.0
+      ],
+      "state": "waiting",
+      "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01",
+      "texture_class": "AtlasTexture",
+      "texture_filter": "nearest",
+      "visible": true,
+      "z_as_relative": false,
+      "z_bias": 0,
+      "z_formula": "footpoint_screen_y + explicit_z_bias",
+      "z_sort": 320
+    },
+    "V353U001": {
+      "actor_alpha_shader_enabled": false,
+      "actor_alpha_unchanged": true,
+      "actor_instance_id": 45365593726,
+      "actor_material_is_null": true,
+      "actor_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "actor_self_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "alias_one_hop": false,
+      "alias_signature": "",
+      "alias_used": false,
+      "atlas_image_texture_instance_id": -9223371992177047970,
+      "atlas_texture_instance_id": -9223371991891835287,
+      "atlas_texture_region": [
+        0.0,
+        0.0,
+        256.0,
+        256.0
+      ],
+      "centered": false,
+      "clip_key": "idle/east/0",
+      "coverage_owner": "ROOFS_FOREGROUND_CURRENT",
+      "cpu_contour_mask_enabled": false,
+      "display_scale": [
+        1.0,
+        1.0
+      ],
+      "effective_canvas_z": 341,
+      "environment_depth_band": {
+        "buildings_world_body": -900,
+        "inside": true,
+        "policy_source": "Task98 environment-layer-contract stateful_objects footpoint depth sort",
+        "roof": 900
+      },
+      "facing": "east",
+      "footpoint_error_px": 0.0,
+      "footpoint_reconstructed": [
+        400.0,
+        340.0
+      ],
+      "footpoint_screen": [
+        400.0,
+        340.0
+      ],
+      "footpoint_source": "projection.footprint_bottom_center_screen(anchor,schema.footprint)",
+      "footprint": [
+        2,
+        2
+      ],
+      "frame": 0,
+      "ground_anchor": [
+        15.0,
+        11.0
+      ],
+      "independent_projection_footpoint": [
+        400.0,
+        340.0
+      ],
+      "mask_build_count": 0,
+      "mask_texture_instance_id": 0,
+      "mipmap": false,
+      "missing_reason": "",
+      "passed_footpoint_projection_error_px": 0.0,
+      "phase": "PLAN",
+      "pivot_px": [
+        128.0,
+        224.0
+      ],
+      "projection_expected": [
+        400.0,
+        340.0
+      ],
+      "realtime_actor_alpha_mask_enabled": false,
+      "rect": [
+        0.0,
+        0.0,
+        256.0,
+        256.0
+      ],
+      "resolved_physical_clip_key": "idle/east/0",
+      "schema_footprint": [
+        2.0,
+        2.0
+      ],
+      "shadow_effective_canvas_z": 340,
+      "shadow_owner": "engine_independent_ground_shadow_layer",
+      "shadow_visible": true,
+      "shadow_z_as_relative": false,
+      "sockets_local_from_footpoint": {
+        "body": [
+          0.0,
+          -74.0
+        ],
+        "impact": [
+          -20.0,
+          -10.0
+        ],
+        "shield": [
+          -46.0,
+          -62.0
+        ],
+        "target": [
+          -20.0,
+          -10.0
+        ],
+        "weapon": [
+          46.0,
+          -72.0
+        ]
+      },
+      "sockets_screen": {
+        "body": [
+          400.0,
+          266.0
+        ],
+        "impact": [
+          380.0,
+          330.0
+        ],
+        "shield": [
+          354.0,
+          278.0
+        ],
+        "target": [
+          380.0,
+          330.0
+        ],
+        "weapon": [
+          446.0,
+          268.0
+        ]
+      },
+      "source_footprint": [
+        2,
+        2
+      ],
+      "source_footprint_matches_schema": true,
+      "sprite_class": "Sprite2D",
+      "sprite_instance_id": 45399148160,
+      "sprite_material_is_null": true,
+      "sprite_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sprite_png_contains_shadow": false,
+      "sprite_self_modulate": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sprite_top_left": [
+        272.0,
+        116.0
+      ],
+      "state": "idle",
+      "subject_id": "V353U001",
+      "texture_class": "AtlasTexture",
+      "texture_filter": "nearest",
+      "visible": true,
+      "z_as_relative": false,
+      "z_bias": 1,
+      "z_formula": "footpoint_screen_y + explicit_z_bias",
+      "z_sort": 341
+    }
+  },
+  "real_art_loaded": 0,
+  "registry": {
+    "approved_handoffs": [],
+    "call03_allowed": false,
+    "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+    "continuity_phase_count": 21,
+    "continuity_row_count": 126,
+    "errors": [],
+    "fixture_validation_only": true,
+    "load_snapshot": {
+      "cached_atlas_texture_instance_ids": [
+        -9223371991824726419,
+        -9223371991807949202,
+        -9223371991791171985,
+        -9223371991774394768,
+        -9223371991757617551,
+        -9223371991690508683,
+        -9223371991673731466,
+        -9223371991656954249,
+        -9223371991640177032,
+        -9223371991623399815,
+        -9223371991606622598,
+        -9223371991740840334,
+        -9223371991724063117,
+        -9223371991707285900,
+        -9223371991958944155,
+        -9223371991942166938,
+        -9223371991925389721,
+        -9223371991908612504,
+        -9223371991891835287,
+        -9223371991875058070,
+        -9223371991858280853,
+        -9223371991841503636
+      ],
+      "cached_atlas_texture_region_count": 22,
+      "cached_atlas_texture_region_keys": [
+        "ENEMY_C01_BREAKER|charge/north/0",
+        "ENEMY_C01_BREAKER|contact/north/0",
+        "ENEMY_C01_BREAKER|recoil/north/0",
+        "ENEMY_C01_BREAKER|red_charge/north/0",
+        "ENEMY_C01_BREAKER|side_hit/north/0",
+        "ENEMY_C01_RIFT_SWARM|deflected/west/0",
+        "ENEMY_C01_RIFT_SWARM|idle/east/0",
+        "ENEMY_C01_RIFT_SWARM|idle/north/0",
+        "ENEMY_C01_RIFT_SWARM|idle/south/0",
+        "ENEMY_C01_RIFT_SWARM|idle/west/0",
+        "ENEMY_C01_RIFT_SWARM|recoil/west/0",
+        "TARGET_C01_EMERGENCY_VEHICLE_01|drive/east/0",
+        "TARGET_C01_EMERGENCY_VEHICLE_01|recoil/east/0",
+        "TARGET_C01_EMERGENCY_VEHICLE_01|waiting/east/0",
+        "V353U001|brace/east/0",
+        "V353U001|brace/north/0",
+        "V353U001|brace/south/0",
+        "V353U001|contact/south/0",
+        "V353U001|idle/east/0",
+        "V353U001|move/north/0",
+        "V353U001|recoil/east/0",
+        "V353U001|recoil/south/0"
+      ],
+      "estimated_vram_bytes": 6455296,
+      "load_count_by_resource": {
+        "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_breaker_neutral_1152x768.png": 1,
+        "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_emergency_vehicle_neutral_256x256.png": 1,
+        "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_guardian_z_neutral_768x768.png": 1,
+        "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_rift_swarm_neutral_384x192.png": 1
+      },
+      "reload_count": 0,
+      "resources": [
+        {
+          "estimated_vram_bytes": 3538944,
+          "filter": "nearest",
+          "format": "RGBA8",
+          "has_alpha": true,
+          "image_texture_instance_id": -9223371992109939104,
+          "load_count": 1,
+          "mipmap": false,
+          "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_breaker_neutral_1152x768.png",
+          "sha256": "debdafd803f9f5c68420726e3b9abf29ab4a2608eecb6a61833fce4fc3407391",
+          "size_px": [
+            1152,
+            768
+          ],
+          "slot_id": "breaker_map_current",
+          "stable_id": "ENEMY_C01_BREAKER"
+        },
+        {
+          "estimated_vram_bytes": 294912,
+          "filter": "nearest",
+          "format": "RGBA8",
+          "has_alpha": true,
+          "image_texture_instance_id": -9223371991975721372,
+          "load_count": 1,
+          "mipmap": false,
+          "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_rift_swarm_neutral_384x192.png",
+          "sha256": "ff96a2b0ee1e02d4941684b1953b51072b969b364f185bfc097bd1cc2f8bc65b",
+          "size_px": [
+            384,
+            192
+          ],
+          "slot_id": "rift_swarm_map_current",
+          "stable_id": "ENEMY_C01_RIFT_SWARM"
+        },
+        {
+          "estimated_vram_bytes": 262144,
+          "filter": "nearest",
+          "format": "RGBA8",
+          "has_alpha": true,
+          "image_texture_instance_id": -9223371992042830238,
+          "load_count": 1,
+          "mipmap": false,
+          "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_emergency_vehicle_neutral_256x256.png",
+          "sha256": "315db68cdde10d4ac1ba049d393d785c3a401b7e02f4160864aeb39373e342d6",
+          "size_px": [
+            256,
+            256
+          ],
+          "slot_id": "emergency_vehicle_map_current",
+          "stable_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+        },
+        {
+          "estimated_vram_bytes": 2359296,
+          "filter": "nearest",
+          "format": "RGBA8",
+          "has_alpha": true,
+          "image_texture_instance_id": -9223371992177047970,
+          "load_count": 1,
+          "mipmap": false,
+          "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_guardian_z_neutral_768x768.png",
+          "sha256": "12196a8b5e66c5b8ebd891ae232361238ce08d3ec56d13a72e216eed4db73988",
+          "size_px": [
+            768,
+            768
+          ],
+          "slot_id": "guardian_z_map_current",
+          "stable_id": "V353U001"
+        }
+      ],
+      "startup_prebuilt_atlas_texture_count": 22,
+      "total_load_count": 4,
+      "unique_image_texture_count": 4
+    },
+    "phase_matrix_clip_count": 24,
+    "real_art_loaded": 0,
+    "schema_id": "C01E02_CURRENT_TOPOLOGY_SPARSE_ATLAS_SCHEMA_V1",
+    "schema_status": "STRUCTURE_FROZEN_RESOURCE_BYTES_PENDING_EXTERNAL_P99_RECEIPT",
+    "signed_same_facing_one_hop_aliases": [
+      {
+        "alias_key": "move/east/0",
+        "cycle_forbidden": true,
+        "one_hop": true,
+        "same_facing": true,
+        "signature": "42658d2dd69ec9875cd1337dac29c0890cb5c33f457ed818075298ba7e0e8b75",
+        "signature_valid": true,
+        "source_clip_key": "idle/east/0",
+        "stable_id": "V353U001"
+      },
+      {
+        "alias_key": "passed/east/0",
+        "cycle_forbidden": true,
+        "one_hop": true,
+        "same_facing": true,
+        "signature": "fee4ab9fd2b7815c758463aac9f6d6ed86943212e90e3ff8241994f4a92c9bf2",
+        "signature_valid": true,
+        "source_clip_key": "waiting/east/0",
+        "stable_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+      },
+      {
+        "alias_key": "move/west/0",
+        "cycle_forbidden": true,
+        "one_hop": true,
+        "same_facing": true,
+        "signature": "bca4532418bd6967dce10e326f93ad050f835a8747e1f8b0568eb1362e2055f9",
+        "signature_valid": true,
+        "source_clip_key": "idle/west/0",
+        "stable_id": "ENEMY_C01_RIFT_SWARM"
+      }
+    ],
+    "valid": true,
+    "view_space": "map_dimetric_40x20"
+  },
+  "resolved_phase_matrix": [
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "idle/east/0",
+      "rect": [
+        0.0,
+        0.0,
+        256.0,
+        256.0
+      ],
+      "stable_id": "V353U001"
+    },
+    {
+      "alias_signature": "42658d2dd69ec9875cd1337dac29c0890cb5c33f457ed818075298ba7e0e8b75",
+      "alias_used": true,
+      "clip_key": "move/east/0",
+      "rect": [
+        0.0,
+        0.0,
+        256.0,
+        256.0
+      ],
+      "stable_id": "V353U001"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "move/north/0",
+      "rect": [
+        256.0,
+        0.0,
+        256.0,
+        256.0
+      ],
+      "stable_id": "V353U001"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "brace/east/0",
+      "rect": [
+        512.0,
+        0.0,
+        256.0,
+        256.0
+      ],
+      "stable_id": "V353U001"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "brace/north/0",
+      "rect": [
+        0.0,
+        256.0,
+        256.0,
+        256.0
+      ],
+      "stable_id": "V353U001"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "brace/south/0",
+      "rect": [
+        256.0,
+        256.0,
+        256.0,
+        256.0
+      ],
+      "stable_id": "V353U001"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "contact/south/0",
+      "rect": [
+        512.0,
+        256.0,
+        256.0,
+        256.0
+      ],
+      "stable_id": "V353U001"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "recoil/east/0",
+      "rect": [
+        0.0,
+        512.0,
+        256.0,
+        256.0
+      ],
+      "stable_id": "V353U001"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "recoil/south/0",
+      "rect": [
+        256.0,
+        512.0,
+        256.0,
+        256.0
+      ],
+      "stable_id": "V353U001"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "charge/north/0",
+      "rect": [
+        0.0,
+        0.0,
+        384.0,
+        384.0
+      ],
+      "stable_id": "ENEMY_C01_BREAKER"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "contact/north/0",
+      "rect": [
+        384.0,
+        0.0,
+        384.0,
+        384.0
+      ],
+      "stable_id": "ENEMY_C01_BREAKER"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "recoil/north/0",
+      "rect": [
+        768.0,
+        0.0,
+        384.0,
+        384.0
+      ],
+      "stable_id": "ENEMY_C01_BREAKER"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "side_hit/north/0",
+      "rect": [
+        0.0,
+        384.0,
+        384.0,
+        384.0
+      ],
+      "stable_id": "ENEMY_C01_BREAKER"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "red_charge/north/0",
+      "rect": [
+        384.0,
+        384.0,
+        384.0,
+        384.0
+      ],
+      "stable_id": "ENEMY_C01_BREAKER"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "waiting/east/0",
+      "rect": [
+        0.0,
+        0.0,
+        128.0,
+        128.0
+      ],
+      "stable_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "drive/east/0",
+      "rect": [
+        128.0,
+        0.0,
+        128.0,
+        128.0
+      ],
+      "stable_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "recoil/east/0",
+      "rect": [
+        0.0,
+        128.0,
+        128.0,
+        128.0
+      ],
+      "stable_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+    },
+    {
+      "alias_signature": "fee4ab9fd2b7815c758463aac9f6d6ed86943212e90e3ff8241994f4a92c9bf2",
+      "alias_used": true,
+      "clip_key": "passed/east/0",
+      "rect": [
+        0.0,
+        0.0,
+        128.0,
+        128.0
+      ],
+      "stable_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "idle/west/0",
+      "rect": [
+        288.0,
+        0.0,
+        96.0,
+        96.0
+      ],
+      "stable_id": "ENEMY_C01_RIFT_SWARM_01"
+    },
+    {
+      "alias_signature": "bca4532418bd6967dce10e326f93ad050f835a8747e1f8b0568eb1362e2055f9",
+      "alias_used": true,
+      "clip_key": "move/west/0",
+      "rect": [
+        288.0,
+        0.0,
+        96.0,
+        96.0
+      ],
+      "stable_id": "ENEMY_C01_RIFT_SWARM_01"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "recoil/west/0",
+      "rect": [
+        0.0,
+        96.0,
+        96.0,
+        96.0
+      ],
+      "stable_id": "ENEMY_C01_RIFT_SWARM_01"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "deflected/west/0",
+      "rect": [
+        96.0,
+        96.0,
+        96.0,
+        96.0
+      ],
+      "stable_id": "ENEMY_C01_RIFT_SWARM_01"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "idle/north/0",
+      "rect": [
+        0.0,
+        0.0,
+        96.0,
+        96.0
+      ],
+      "stable_id": "ENEMY_C01_RIFT_SWARM_02"
+    },
+    {
+      "alias_signature": "",
+      "alias_used": false,
+      "clip_key": "idle/south/0",
+      "rect": [
+        192.0,
+        0.0,
+        96.0,
+        96.0
+      ],
+      "stable_id": "ENEMY_C01_RIFT_SWARM_03"
+    }
+  ],
+  "scene_complex_path_audit": {
+    "forbidden_active_node_count": 0,
+    "forbidden_active_nodes": [],
+    "legacy_c2_roof_owner_hidden": true,
+    "sole_owner_is_c3_small_panel_owner": true,
+    "valid": true,
+    "visible_simple_owner_count": 1,
+    "visible_simple_owners": [
+      {
+        "instance_id": 44073748059,
+        "path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/ROOFS_FOREGROUND_CURRENT",
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/c3_simple_roof_panel_layer.gd"
+      }
+    ]
+  },
+  "scene_tree_proxy_audit": {
+    "any_actor_effectively_visible": false,
+    "any_body_effectively_visible": false,
+    "any_shadow_effectively_visible": false,
+    "node_count": 8,
+    "nodes": [
+      {
+        "actor_visible_in_tree": false,
+        "actor_visible_property": false,
+        "body_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@11/body",
+        "body_visible_in_tree": false,
+        "body_visible_property": false,
+        "compound_actor_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@11",
+        "replaced_by_c3_real_atlas": true,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/compound_map_actor.gd",
+        "shadow_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@11/shadow",
+        "shadow_visible_in_tree": false,
+        "shadow_visible_property": false,
+        "subject_id": "ENEMY_C01_BREAKER"
+      },
+      {
+        "actor_visible_in_tree": false,
+        "actor_visible_property": false,
+        "body_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@12/body",
+        "body_visible_in_tree": false,
+        "body_visible_property": false,
+        "compound_actor_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@12",
+        "replaced_by_c3_real_atlas": true,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/compound_map_actor.gd",
+        "shadow_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@12/shadow",
+        "shadow_visible_in_tree": false,
+        "shadow_visible_property": false,
+        "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+      },
+      {
+        "actor_visible_in_tree": false,
+        "actor_visible_property": false,
+        "body_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@13/body",
+        "body_visible_in_tree": false,
+        "body_visible_property": false,
+        "compound_actor_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@13",
+        "replaced_by_c3_real_atlas": true,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/compound_map_actor.gd",
+        "shadow_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@13/shadow",
+        "shadow_visible_in_tree": false,
+        "shadow_visible_property": false,
+        "subject_id": "ENEMY_C01_RIFT_SWARM_02"
+      },
+      {
+        "actor_visible_in_tree": false,
+        "actor_visible_property": false,
+        "body_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@14/body",
+        "body_visible_in_tree": false,
+        "body_visible_property": false,
+        "compound_actor_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@14",
+        "replaced_by_c3_real_atlas": true,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/compound_map_actor.gd",
+        "shadow_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@14/shadow",
+        "shadow_visible_in_tree": false,
+        "shadow_visible_property": false,
+        "subject_id": "ENEMY_C01_RIFT_SWARM_03"
+      },
+      {
+        "actor_visible_in_tree": true,
+        "actor_visible_property": true,
+        "body_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@15/body",
+        "body_visible_in_tree": true,
+        "body_visible_property": true,
+        "compound_actor_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@15",
+        "replaced_by_c3_real_atlas": false,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/compound_map_actor.gd",
+        "shadow_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@15/shadow",
+        "shadow_visible_in_tree": true,
+        "shadow_visible_property": true,
+        "subject_id": "TARGET_C01_EAST_EXIT"
+      },
+      {
+        "actor_visible_in_tree": false,
+        "actor_visible_property": false,
+        "body_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@16/body",
+        "body_visible_in_tree": false,
+        "body_visible_property": false,
+        "compound_actor_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@16",
+        "replaced_by_c3_real_atlas": true,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/compound_map_actor.gd",
+        "shadow_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@16/shadow",
+        "shadow_visible_in_tree": false,
+        "shadow_visible_property": false,
+        "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+      },
+      {
+        "actor_visible_in_tree": true,
+        "actor_visible_property": true,
+        "body_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@17/body",
+        "body_visible_in_tree": true,
+        "body_visible_property": true,
+        "compound_actor_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@17",
+        "replaced_by_c3_real_atlas": false,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/compound_map_actor.gd",
+        "shadow_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@17/shadow",
+        "shadow_visible_in_tree": true,
+        "shadow_visible_property": true,
+        "subject_id": "TARGET_C01_SECURITY_GATE"
+      },
+      {
+        "actor_visible_in_tree": false,
+        "actor_visible_property": false,
+        "body_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@18/body",
+        "body_visible_in_tree": false,
+        "body_visible_property": false,
+        "compound_actor_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@18",
+        "replaced_by_c3_real_atlas": true,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/compound_map_actor.gd",
+        "shadow_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@18/shadow",
+        "shadow_visible_in_tree": false,
+        "shadow_visible_property": false,
+        "subject_id": "V353U001"
+      }
+    ],
+    "replaced_node_count": 6,
+    "visibility_aggregates_apply_to_replaced_nodes_only": true
+  },
+  "simple_2d_occlusion": {
+    "coverage_owner": "ROOFS_FOREGROUND_CURRENT",
+    "cpu_contour_mask_enabled": false,
+    "dirty_patch_pixel_scan_enabled": false,
+    "legacy_c2_roof_owner_hidden": true,
+    "mode": "c3_small_zone_panel_local_fade",
+    "occlusion_control_debug_enabled": false,
+    "owner": {
+      "cpu_contour_mask_enabled": false,
+      "deduplicated_update_count": 0,
+      "draw_count": 1,
+      "faded_alpha": 0.38,
+      "faded_panel_count": 1,
+      "faded_subjects": [
+        "ENEMY_C01_BREAKER",
+        "ENEMY_C01_RIFT_SWARM_02"
+      ],
+      "implementation": "six fixed current-topology roof/foreground panels with bounds-triggered preset alpha",
+      "mode": "c3_small_zone_panel_local_fade",
+      "node_instance_id": 44073748059,
+      "node_name": "ROOFS_FOREGROUND_CURRENT",
+      "node_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/ROOFS_FOREGROUND_CURRENT",
+      "normal_alpha": 0.94,
+      "owner_id": "C3_SIMPLE_ROOF_PANEL_OWNER",
+      "owner_instance_id": 44073748059,
+      "owner_node_name": "ROOFS_FOREGROUND_CURRENT",
+      "owner_node_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/ROOFS_FOREGROUND_CURRENT",
+      "panel_count": 6,
+      "panel_draw_rows": [
+        {
+          "alpha": 0.94,
+          "faded": false,
+          "grid_rect": [
+            1.0,
+            0.0,
+            7.0,
+            5.0
+          ],
+          "overlapping_subjects": [],
+          "panel_id": "TERRAIN_C01_NW_BLOCK",
+          "screen_bounds": [
+            80.0,
+            -292.0,
+            480.0,
+            240.0
+          ]
+        },
+        {
+          "alpha": 0.94,
+          "faded": false,
+          "grid_rect": [
+            10.0,
+            0.0,
+            5.0,
+            4.0
+          ],
+          "overlapping_subjects": [],
+          "panel_id": "TERRAIN_C01_NM_BLOCK",
+          "screen_bounds": [
+            480.0,
+            -130.0,
+            360.0,
+            180.0
+          ]
+        },
+        {
+          "alpha": 0.94,
+          "faded": false,
+          "grid_rect": [
+            22.0,
+            0.0,
+            7.0,
+            4.0
+          ],
+          "overlapping_subjects": [],
+          "panel_id": "TERRAIN_C01_NE_BLOCK",
+          "screen_bounds": [
+            960.0,
+            92.0,
+            440.0,
+            220.0
+          ]
+        },
+        {
+          "alpha": 0.94,
+          "faded": false,
+          "grid_rect": [
+            0.0,
+            15.0,
+            8.0,
+            3.0
+          ],
+          "overlapping_subjects": [],
+          "panel_id": "TERRAIN_C01_SW_BLOCK",
+          "screen_bounds": [
+            -480.0,
+            -12.0,
+            440.0,
+            220.0
+          ]
+        },
+        {
+          "alpha": 0.38,
+          "faded": true,
+          "grid_rect": [
+            26.0,
+            14.0,
+            6.0,
+            4.0
+          ],
+          "overlapping_subjects": [
+            "ENEMY_C01_BREAKER",
+            "ENEMY_C01_RIFT_SWARM_02"
+          ],
+          "panel_id": "TERRAIN_C01_SE_BLOCK",
+          "screen_bounds": [
+            560.0,
+            470.0,
+            400.0,
+            200.0
+          ]
+        },
+        {
+          "alpha": 0.94,
+          "faded": false,
+          "grid_rect": [
+            8.0,
+            5.0,
+            7.0,
+            2.0
+          ],
+          "overlapping_subjects": [],
+          "panel_id": "TERRAIN_C01_BROKEN_SKYWALK",
+          "screen_bounds": [
+            280.0,
+            -88.0,
+            360.0,
+            180.0
+          ]
+        }
+      ],
+      "pixel_sampling_enabled": false,
+      "projection_cache_enabled": false,
+      "projection_cache_entries": 0,
+      "real_art_loaded": 0,
+      "realtime_actor_alpha_mask_enabled": false,
+      "redraw_request_count": 2,
+      "role": "procedural_roofs_and_local_fade_foreground",
+      "second_occlusion_path_enabled": false,
+      "slot_id": "ROOFS_FOREGROUND_CURRENT",
+      "sprite_alpha_mutated": false,
+      "subviewport_enabled": false,
+      "topology_source": "golden_slice_profile.terrain_zones[passable=false]",
+      "trigger_rule": "fixed panel polygon bounds intersects footprint_bottom_center 1x1/2x2/3x3 display bounds",
+      "update_count": 1,
+      "viewport_texture_enabled": false,
+      "visible_a4_pixels": false,
+      "visible_in_tree": true,
+      "visible_property": true,
+      "z": 900,
+      "z_as_relative": false
+    },
+    "realtime_actor_alpha_mask_enabled": false,
+    "second_occlusion_path_enabled": false,
+    "single_owner": true,
+    "split_topology_enabled": false,
+    "subject_alpha_unchanged": true,
+    "subviewport_enabled": false,
+    "viewport_texture_enabled": false
+  },
+  "task105_sha256": "6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7",
+  "task_id": "G2_A2_C3_CURRENT_TOPOLOGY_REAL_ATLAS_NEUTRAL_CONSUMER"
+}

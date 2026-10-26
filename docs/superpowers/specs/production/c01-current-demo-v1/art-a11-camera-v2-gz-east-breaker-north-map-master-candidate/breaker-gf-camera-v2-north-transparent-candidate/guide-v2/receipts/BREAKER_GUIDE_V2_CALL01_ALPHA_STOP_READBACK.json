@@ -1,0 +1,74 @@
+{
+  "status": "VISUAL_PASS_ALPHA_FAIL_STOP",
+  "candidate_gate_pass": false,
+  "attempt_id": "GUIDE-V2_CALL01",
+  "attempt_is_reroll_of_previous_call01": false,
+  "imagegen_calls_this_attempt": 1,
+  "reroll_count_this_attempt": 0,
+  "known_a11_imagegen_lineage_calls_before": 5,
+  "known_a11_imagegen_lineage_calls_after": 6,
+  "call_count_increment": 1,
+  "input_count": 2,
+  "inputs": [
+    {
+      "index": 1,
+      "path": "breaker-gf-camera-v2-north-transparent-candidate/review/BREAKER_CAMERA_V2_NORTH_SINGLE_POLARITY_GUIDE_384_NOT_FINAL_ART.png",
+      "sha256": "2f90f341d2798eaedbeee2d358e9d5d3c8ec9e38a039aad04d07dc2af5068e7c",
+      "role": "sole geometry, polarity, facing, Camera V2 and framing authority"
+    },
+    {
+      "index": 2,
+      "path": "gf-current-breaker-camera-v2-north-candidate/source-guides/BREAKER_GF_PLAN_CONTACT_TIGHT_REFERENCE_1536x768.png",
+      "sha256": "b6d0aab9944d7a918b12c317caea19cebf041c53cbf8b823638d870a97b47cd1",
+      "role": "sole identity, armor-plate, color, material and surface authority"
+    }
+  ],
+  "excluded_inputs": [
+    "old abstract north guide",
+    "previous failed raw",
+    "full-screen GF renders",
+    "B/X boards"
+  ],
+  "raw_output": {
+    "path": "breaker-gf-camera-v2-north-transparent-candidate/guide-v2/generation-raw/BREAKER_GUIDE_V2_CALL01_RAW_ALPHA_FAIL.png",
+    "sha256": "b97c2d3743384d0ca2eac39cec21c6dd2513b050d2ef5c9c8bae4edca9375f29",
+    "size": [1254, 1254],
+    "mode": "RGB",
+    "transparent": false,
+    "alpha_bbox": null,
+    "checkerboard_baked_into_rgb": true
+  },
+  "visual_gate": {
+    "pass": true,
+    "unique_head_upper_right": true,
+    "unique_red_slit_upper_right": true,
+    "impact_front_upper_right": true,
+    "large_asymmetric_shell_mass_center_left": true,
+    "two_primary_load_bearing_limbs_on_right_half": true,
+    "two_short_rear_stabilizers_lower_left": true,
+    "elevated_orthographic_camera_v2_read": true,
+    "second_head_present": false,
+    "symmetric_shuttle_read": false,
+    "ordinary_turtle_or_beetle_read": false,
+    "gf_identity_read": "PASS_AS_VISUAL_CANDIDATE_WITH_MINOR_PLATE_SIMPLIFICATION"
+  },
+  "alpha_gate": {
+    "pass": false,
+    "reason": "The built-in tool returned RGB with a visible checkerboard baked into the pixels despite an explicit genuine-alpha requirement."
+  },
+  "stopped_outputs": {
+    "alpha_safe_384_created": false,
+    "pivot_registered": false,
+    "intended_pivot_px": [192, 320],
+    "fifty_one_hundred_board_created": false,
+    "third_imagegen_call_made": false
+  },
+  "prompt_summary": "Use Image 1 only for one-way Camera V2 north topology and Image 2 only for approved GF identity and materials; create one isolated ground BREAKER with one upper-right head and red slit, center-left asymmetric leaf-plate shell, two dominant right-side front supports, two short lower-left rear stabilizers, and genuine transparent alpha; forbid second head, symmetric shuttle, ordinary turtle, insect, repeated legs, scene, shadow and text.",
+  "promotion": {
+    "candidate_asset": false,
+    "godot_bound": false,
+    "runtime": false,
+    "canon": false,
+    "producer_visual_approval": false
+  }
+}

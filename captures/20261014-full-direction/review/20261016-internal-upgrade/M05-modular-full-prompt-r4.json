@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-19",
+  "generation_mode": "built-in image_gen",
+  "source_images": [
+    "samples/M05-core-body-r4.png",
+    "samples/M05-full-loadout-style-r2.png",
+    "refs/M05-user-overdesign-A-r3.png",
+    "refs/M05-user-overdesign-B-r3.png",
+    "refs/M05-user-overdesign-C-r3.png"
+  ],
+  "prompt": "Use case: compositing / identity-preserving accessory assembly\nAsset: Full-Armored Complete King, a deluxe lead mecha with MULTIPLE useful accessory packs stacked onto ONE underlying hero chassis.\nImage 1: EXACT BASE BODY AUTHORITY. Keep this same character, face, head, crown, torso, limb lengths, boots, pose and palette.\nImage 2: existing KING EQUIPMENT AUTHORITY: huge right-arm gold drill, left-arm champion shield, two rectangular shoulder cannons, multi-layer navy/white/red wing fans, wing-root thrusters and four outboard leg missile pods.\nImages 3,4,5: USER'S OVERDESIGN EXAMPLES — use only the abstract ideas of clearly layered attachment frames, equipment extending substantially beyond the body, and thick modular armor volumes. Do not copy their faces, weapons, colors, symbols or specific wing shapes. This must remain our King, not a collage of those machines.\n\nASSEMBLE SIX ACCESSORY GROUPS onto the exact base in image 1:\n1 Royal over-armor: additional clearly separate THICK NAVY/IVORY/GOLD shoulder caps over the existing small shoulder armor; a second stepped shoulder layer and visible dark attachment spacers. Chest-side armor rim, layered waist skirt and outboard shin guards. Keep base chest's twin gold rectangular louvres and small original champion emblem readable.\n2 Mobility: original paired layered blade-wing fans and wing-root thrusters on a separate dark outer dorsal outrigger frame. Add a matched pair of elongated LOW REAR AUXILIARY BOOSTER NACELLES hanging behind the hips, navy with ivory bands, gold fittings and crimson end accents. These are a restrained new candidate accessory, not fuel tanks copied from refs. They create depth behind the body; lower ends stop around lower calf, do not replace legs.\n3 Heavy cannon pack: EXACTLY TWO rectangular navy/ivory primary cannons on gold circular elevation trunnions connected to a central dorsal load beam. Set them above/outside the shoulders, pointing forward in parallel, with clear air between the head/crown and cannons. Cannons are on the back frame, never on the head.\n4 Right arm drill pack: the enormous spiral gold drill from image 2 attaches to the anatomical RIGHT forearm (viewer LEFT), with a dark/gold motor collar. It projects diagonally forward/down-left. It is not on a leg or the pelvis.\n5 Left arm stacked shield pack: retain the existing ivory champion shield, navy/gold border and crimson inset on the anatomical LEFT forearm (viewer RIGHT). A second thick navy/ivory backing shield plate is visibly nested behind it through a shared two-stage mounting bracket; no third shield, no new weapon.\n6 Four leg missile pods: one on each outer thigh and each outer calf, existing dark circular launch tubes inside ivory/navy/gold rectangular housings, connected to the base's outboard rails. Keep knee and ankle clearance.\n\nHEAD MUST STAY EXACTLY AS IMAGE 1: recognizable navy/ivory face, warm eyes, crimson chin, gold cheek frame; total FIVE crown members: long inner pair + shorter outer pair + ONE CENTER FORWARD L-HARPOON HORN with a rearward barb. The central member is physically bent toward the front, not a straight center spike. Keep normal tall skull volume and facial visibility. Do not make extra crown spikes, do not bury head in cannons or wings.\n\nDesign hierarchy: gorgeous thick premium full equipment, extravagant redundant capability and multiple attachment layers, still a capable intentional champion. Large accessory masses > medium frames > sparse small fasteners; maintain negative space around face and wrists. Do not slim the body to pay for the equipment. Original navy/ivory/crimson/gold palette, no teal.\nStyle: exactly the clean KINETIC CEL paint style of image 1: controlled black contours, broad flat painted armor planes, two-step hard shadows, simple gold highlights, no tiny scratch noise, no chrome or 3D toy finish.\nComposition: one complete full-body figure in same stance and three-quarter camera as image 1. WIDE landscape canvas so both layered wings, both cannon tips, complete drill tip, shield tip and both boot soles have visible clear air around them. Fit the entire figure smaller within the frame with generous margins, not close to the crop. True transparent background. No labels, arrows, floor, text or extra views.",
+  "output": "samples/M05-modular-full-r4.png",
+  "transparent_background": true,
+  "source_refs": [
+    {
+      "file": "samples/M05-core-body-r4.png",
+      "sha256": "b00b3ecd70638a328a945c841ed06a07fe5ead23efe05b882f779f72425321f4"
+    },
+    {
+      "file": "samples/M05-full-loadout-style-r2.png",
+      "sha256": "017550aa8e0070bd458e5ad185e0ae5953bf1ec347a76c32a427d59fb9af129a"
+    },
+    {
+      "file": "refs/M05-user-overdesign-A-r3.png",
+      "sha256": "bab2a17743020c8bc60bfaa398e82714cba161e79d659a3cd5b03b39bd573564"
+    },
+    {
+      "file": "refs/M05-user-overdesign-B-r3.png",
+      "sha256": "2d4914394ed698aaac3d359e767c0b14a808a00c46232a4dfd0812d9da5e2472"
+    },
+    {
+      "file": "refs/M05-user-overdesign-C-r3.png",
+      "sha256": "f69d4ff4cd6b92ba6439a6192a1982d711836cf67b8ff81452a6a393ee9091d7"
+    }
+  ]
+}

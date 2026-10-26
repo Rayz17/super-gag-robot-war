@@ -1,0 +1,41 @@
+{
+  "clean_event_payload_hash": "c3b307b9698d645598594cb6674c86779a13420b9934cf562f379d112d1f41fa",
+  "contaminated_event_payload_hash": "63e94b9203b555ffe719ab29fe5b7236845403e5c2124a406c1e487a6e63a67a",
+  "contaminated_observed_hash": "63e94b9203b555ffe719ab29fe5b7236845403e5c2124a406c1e487a6e63a67a",
+  "current_event_contains_route_family": true,
+  "current_round_result_hash": "63e94b9203b555ffe719ab29fe5b7236845403e5c2124a406c1e487a6e63a67a",
+  "event_id": "GS-R1-E3-CONTACT",
+  "evidence_class": "g2_a2_c1_route_family_event_hash_field_isolation",
+  "field_level_changed_paths": [
+    "events[2].facts.phase_readback.route_family"
+  ],
+  "fixture": "r1_strategy_b",
+  "ledger_unchanged": true,
+  "mode": "pre_fix",
+  "old_test_expectation_modified": false,
+  "resolution": "route-family evidence is retained outside the hashed T1-T5 event payload",
+  "route_family_evidence_retained": {
+    "plan_summary_route_family": {
+      "contiguous": true,
+      "endpoint_valid": true,
+      "exact_steps_valid": true,
+      "failures": [],
+      "footprint_placeable": true,
+      "hero_route_exact": true,
+      "origin_valid": true,
+      "route_family_id": "B_PROTECT_LANE_FAMILY",
+      "route_family_valid": true,
+      "route_steps": 6,
+      "selection_valid": true,
+      "settle_facing_valid": true
+    },
+    "round_receipt_hero_route_exact": true,
+    "round_receipt_route_family_id": "B_PROTECT_LANE_FAMILY",
+    "round_receipt_route_family_valid": true
+  },
+  "settlement_counts_unchanged": true,
+  "signed_expected_hash": "c3b307b9698d645598594cb6674c86779a13420b9934cf562f379d112d1f41fa",
+  "sole_changed_path": true,
+  "strategy": "B_PROTECT_LANE_PREPARE",
+  "world_unchanged": true
+}

@@ -1,0 +1,193 @@
+{
+  "schema_id": "C01E03_DUAL_MECHA_PROFILE_V1",
+  "world_schema_id": "C01E03_DUAL_MECHA_WORLD_V1",
+  "session_schema_id": "C01E03_DUAL_MECHA_SESSION_V1",
+  "source_operation_schema_id": "C01_BREAKER_OPERATION_STATE_V1",
+  "required_operation_segment": "E03_DUAL_MECHA_BREAK_SHELL",
+  "grid": [32, 18],
+  "route_policy": "bounded_continuous_route_no_exact_path",
+  "route_collision_policy": {
+    "policy_id": "E03_PHYSICAL_OCCUPANCY_V1",
+    "terrain_source": "world.terrain_zones",
+    "block_impassable_terrain": true,
+    "blocking_entity_kinds": ["boss", "swarm", "emergency_vehicle"],
+    "block_planned_friendly_routes": true,
+    "moving_friend_origin_vacates": true,
+    "blocking_object_flag": "blocks_route"
+  },
+  "qte": false,
+  "units": {
+    "guardian_z": "V353U001",
+    "brave_fist": "MECHA_BRAVE_FIST_PROTOTYPE",
+    "breaker": "ENEMY_C01_BREAKER"
+  },
+  "continuity_fields": [
+    "road_damage",
+    "shield_state",
+    "east_gate_state",
+    "rescue_lane_state"
+  ],
+  "rounds": [
+    {
+      "round_number": 4,
+      "round_id": "E03-R4-BRAVE-FIST-FIRST-PINCER",
+      "title": "两台小一号的机器人",
+      "objective": "馆守Z留在BREAKER正面，勇拳绕到后侧；看清第一次失配后合上夹击。",
+      "editable_units": ["V353U001", "MECHA_BRAVE_FIST_PROTOTYPE"],
+      "public_intents": [
+        {"timeslice": "T1", "actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "intent": "勇拳从高架斜坡入场，先以自身承受一次冲击。"},
+        {"timeslice": "T2", "actor_id": "ENEMY_C01_BREAKER", "intent": "BREAKER顶住裂盾继续向北挤压。"},
+        {"timeslice": "T3", "actor_id": "V353U001", "intent": "馆守Z留在北侧正面，不追勇拳的速度。"},
+        {"timeslice": "T4", "actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "intent": "勇拳转到南侧后送回冲击，完成第一次夹击。"}
+      ],
+      "timeline": ["brave_fist_entry", "first_misalignment", "front_hold", "first_pincer"],
+      "plan_contracts": {
+        "V353U001": {
+          "control_mode": "editable",
+          "checks": [
+            {"condition_id": "R4-GZ-ROUTE", "type": "route", "max_steps": 8, "avoid_subject": "ENEMY_C01_BREAKER", "physical_clearance": true, "label": "馆守Z路线须走可通行空地（不超过8格）", "hint": "可留在原地；移动时不能穿建筑、BREAKER、车辆、小体或未让开的友军，按2×2足迹判定。"},
+            {"condition_id": "R4-GZ-NORTH", "type": "endpoint_side", "subject": "ENEMY_C01_BREAKER", "axis": "vertical", "side": "north", "min_axis_gap": 2, "max_manhattan": 7, "label": "馆守Z终点在BREAKER北侧正面", "hint": "站在Boss与北面居民区之间。"},
+            {"condition_id": "R4-GZ-FACE", "type": "faces_subject", "subject": "ENEMY_C01_BREAKER", "label": "馆守Z最终朝向BREAKER", "hint": "朝向会随你选的终点而变。"},
+            {"condition_id": "R4-GZ-ACTION", "type": "selection", "field": "action", "equals": "FRONT_SHIELD_HOLD", "label": "馆守Z选择正面持盾", "hint": "动作：正面持盾。"},
+            {"condition_id": "R4-GZ-TIMING", "type": "selection", "field": "timing", "equals": "T2_HOLD_FRONT", "label": "馆守Z在T2顶住北向挤压", "hint": "时机：T2守正面。"}
+          ]
+        },
+        "MECHA_BRAVE_FIST_PROTOTYPE": {
+          "control_mode": "editable",
+          "checks": [
+            {"condition_id": "R4-BF-ROUTE", "type": "route", "max_steps": 20, "avoid_subject": "ENEMY_C01_BREAKER", "physical_clearance": true, "label": "勇拳路线须走可通行空地（不超过20格）", "hint": "沿西南侧或南侧空旷通道绕后均可；不能穿建筑、车辆、小体或馆守Z占地。"},
+            {"condition_id": "R4-BF-SOUTH", "type": "endpoint_side", "subject": "ENEMY_C01_BREAKER", "axis": "vertical", "side": "south", "min_axis_gap": 2, "max_manhattan": 7, "label": "勇拳终点在BREAKER南侧后方", "hint": "与馆守Z分居Boss前后。"},
+            {"condition_id": "R4-BF-FACE", "type": "faces_subject", "subject": "ENEMY_C01_BREAKER", "label": "勇拳最终朝向BREAKER", "hint": "从后方把冲击送回去。"},
+            {"condition_id": "R4-BF-ACTION", "type": "selection", "field": "action", "equals": "REAR_IMPACT_RETURN", "label": "勇拳选择后侧回送冲击", "hint": "动作：后侧回送冲击。"},
+            {"condition_id": "R4-BF-TIMING", "type": "selection", "field": "timing", "equals": "T4_CLOSE_PINCER", "label": "勇拳在T4合上夹击", "hint": "时机：T4夹击合拢。"}
+          ]
+        }
+      },
+      "joint_checks": [
+        {"condition_id": "R4-JOINT-OPPOSITE", "type": "opposite_sides", "axis": "vertical", "subject": "ENEMY_C01_BREAKER", "units": ["V353U001", "MECHA_BRAVE_FIST_PROTOTYPE"], "label": "两台机体分居BREAKER南北两侧", "hint": "一台守正面，一台转到后方。"}
+      ],
+      "outcome": {
+        "world_set": {"first_pincer_misalignment_observed": true, "first_pincer_complete": true, "shield_state": "held_pierced_crack", "e03_surface_damage": "e02_gouge_plus_pincer_scuffs"},
+        "guardian_set": {"status": "front_hold_after_first_pincer", "shield_state": "held_pierced_crack"},
+        "brave_fist_set": {"status": "rear_return_after_first_pincer", "impact_charge_state": "stored_once"},
+        "breaker_set": {"status": "pinned_between_two_mecha", "phase": "ground_shell", "alive": true},
+        "story_flags_set": {"brave_fist_first_battle": true, "first_pincer_corrected": true},
+        "object_set": {"PROP_C01CDV1_RETIRED_SHIELD": {"state": "held_pierced_crack"}},
+        "events": [
+          {"event_id": "E03-R4-E1-BRAVE-FIST-ENTRY", "timeslice": "T1", "text": "勇拳越过黄线后从斜坡入场。"},
+          {"event_id": "E03-R4-E2-SHIELD-CRACK", "timeslice": "T2", "text": "馆守Z顶住挤压，重盾裂纹贯穿。"},
+          {"event_id": "E03-R4-E3-FIRST-MISALIGNMENT", "timeslice": "T3", "text": "勇拳过快，第一次夹击几乎擦身而过。"},
+          {"event_id": "E03-R4-E4-FIRST-PINCER", "timeslice": "T4", "text": "公开修正后，勇拳从后侧回送冲击，第一次夹击合上。"}
+        ]
+      }
+    },
+    {
+      "round_number": 5,
+      "round_id": "E03-R5-BLOCK-DRILL-WAIT-RED-SLIT",
+      "title": "红色裂口",
+      "objective": "馆守Z在南侧堵住下钻，勇拳在北侧送回；两机和城市炮都等红裂张开再打。",
+      "editable_units": ["V353U001", "MECHA_BRAVE_FIST_PROTOTYPE"],
+      "public_intents": [
+        {"timeslice": "T1", "actor_id": "ENEMY_C01_BREAKER", "intent": "BREAKER压低身体，准备再次下钻。"},
+        {"timeslice": "T2", "actor_id": "V353U001", "intent": "馆守Z可在南侧用重盾封住下沉方向。"},
+        {"timeslice": "T3", "actor_id": "ENEMY_C01_BREAKER", "intent": "下钻前胸甲中央的红裂会再次张开。"},
+        {"timeslice": "T4", "actor_id": "ALLY_C01_CITY_ARTILLERY", "intent": "城市炮已收到等红裂的标记，不会提前开火。"}
+      ],
+      "timeline": ["drill_tell", "south_block", "red_slit_open", "focused_fire"],
+      "plan_contracts": {
+        "V353U001": {
+          "control_mode": "editable",
+          "checks": [
+            {"condition_id": "R5-GZ-ROUTE", "type": "route", "max_steps": 10, "avoid_subject": "ENEMY_C01_BREAKER", "physical_clearance": true, "label": "馆守Z路线须走可通行空地（不超过10格）", "hint": "从Boss西侧空地绕到南侧；避开建筑、车辆、小体与勇拳规划路线。"},
+            {"condition_id": "R5-GZ-SOUTH", "type": "endpoint_side", "subject": "ENEMY_C01_BREAKER", "axis": "vertical", "side": "south", "min_axis_gap": 2, "max_manhattan": 7, "label": "馆守Z终点在BREAKER南侧堵钻位", "hint": "用盾占住Boss下沉的后路。"},
+            {"condition_id": "R5-GZ-FACE", "type": "faces_subject", "subject": "ENEMY_C01_BREAKER", "label": "馆守Z最终朝向BREAKER", "hint": "朝向Boss才能压住下钻。"},
+            {"condition_id": "R5-GZ-ACTION", "type": "selection", "field": "action", "equals": "SOUTH_DRILL_BLOCK", "label": "馆守Z选择南侧堵钻", "hint": "动作：南侧堵钻。"},
+            {"condition_id": "R5-GZ-TIMING", "type": "selection", "field": "timing", "equals": "ON_RED_SLIT_OPEN", "label": "馆守Z等红裂张开再施压", "hint": "时机：红裂张开。"}
+          ]
+        },
+        "MECHA_BRAVE_FIST_PROTOTYPE": {
+          "control_mode": "editable",
+          "checks": [
+            {"condition_id": "R5-BF-ROUTE", "type": "route", "max_steps": 12, "avoid_subject": "ENEMY_C01_BREAKER", "physical_clearance": true, "label": "勇拳路线须走可通行空地（不超过12格）", "hint": "可沿Boss东侧换位到北侧；避开车辆、小体与馆守Z规划路线。"},
+            {"condition_id": "R5-BF-NORTH", "type": "endpoint_side", "subject": "ENEMY_C01_BREAKER", "axis": "vertical", "side": "north", "min_axis_gap": 2, "max_manhattan": 7, "label": "勇拳终点在BREAKER北侧回送位", "hint": "与南侧的馆守Z对向挤压。"},
+            {"condition_id": "R5-BF-FACE", "type": "faces_subject", "subject": "ENEMY_C01_BREAKER", "label": "勇拳最终朝向BREAKER", "hint": "从北侧把Boss送回广场中央。"},
+            {"condition_id": "R5-BF-ACTION", "type": "selection", "field": "action", "equals": "NORTH_RETURN_STRIKES", "label": "勇拳选择北侧回送连击", "hint": "动作：北侧回送连击。"},
+            {"condition_id": "R5-BF-TIMING", "type": "selection", "field": "timing", "equals": "ON_RED_SLIT_OPEN", "label": "勇拳等红裂张开再回送冲击", "hint": "时机：红裂张开。"}
+          ]
+        }
+      },
+      "joint_checks": [
+        {"condition_id": "R5-PRIOR-PINCER", "type": "world_flag", "field": "first_pincer_complete", "equals": true, "label": "第一次夹击已完成，两机可执行第二次分工", "hint": "须先完成R4。"},
+        {"condition_id": "R5-JOINT-OPPOSITE", "type": "opposite_sides", "axis": "vertical", "subject": "ENEMY_C01_BREAKER", "units": ["V353U001", "MECHA_BRAVE_FIST_PROTOTYPE"], "label": "馆守Z在南、勇拳在北，形成堵钻回送轴", "hint": "两台机体不要挤在同一边。"}
+      ],
+      "outcome": {
+        "world_set": {"drill_denied": true, "red_slit_window": "confirmed_public", "city_artillery_state": "holding_for_red_slit", "ground_shell_damage": "red_slit_surround_fissured"},
+        "guardian_set": {"status": "south_drill_block", "shield_state": "held_pierced_crack"},
+        "brave_fist_set": {"status": "north_return_strikes", "impact_charge_state": "stored_repeatedly"},
+        "breaker_set": {"status": "drill_denied_red_slit_fissured", "phase": "ground_shell", "red_slit_state": "confirmed_public", "alive": true},
+        "story_flags_set": {"red_slit_mark_shared": true, "city_fire_waited_for_window": true},
+        "events": [
+          {"event_id": "E03-R5-E1-DRILL-TELL", "timeslice": "T1", "text": "BREAKER第三次伏低，下钻意图完全公开。"},
+          {"event_id": "E03-R5-E2-DRILL-BLOCK", "timeslice": "T2", "text": "馆守Z在南侧封住下沉，勇拳从北侧把外壳送回中央。"},
+          {"event_id": "E03-R5-E3-RED-SLIT", "timeslice": "T3", "text": "胸甲红裂再次张开，弱点位置被共享。"},
+          {"event_id": "E03-R5-E4-FOCUSED-FIRE", "timeslice": "T4", "text": "两机与城市炮只在红裂张开时合击，裂口周围被打松。"}
+        ]
+      }
+    },
+    {
+      "round_number": 6,
+      "round_id": "E03-R6-AUTONOMOUS-ROCKET-FIST-RELAY",
+      "title": "双拳打碎外壳",
+      "objective": "馆守Z已自主决定过载发射右拳；玩家只需把勇拳放到北侧接力位，在红裂窗口把冲击补到飞拳尾部。",
+      "editable_units": ["MECHA_BRAVE_FIST_PROTOTYPE"],
+      "public_intents": [
+        {"timeslice": "T1", "actor_id": "V353U001", "intent": "馆守Z自主选择过载发射最后一次完整点火的右拳；此动作不由玩家覆盖。"},
+        {"timeslice": "T2", "actor_id": "ENEMY_C01_BREAKER", "intent": "BREAKER会用双爪夹住飞拳，内部红光同时向背甲收缩。"},
+        {"timeslice": "T3", "actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "intent": "勇拳可从北侧接力位补中飞拳尾部。"},
+        {"timeslice": "T4", "actor_id": "ENEMY_C01_BREAKER", "intent": "外壳破碎后飞行核心会显形并使幸存小体同步；这不是Mission Clear。"}
+      ],
+      "timeline": ["autonomous_overload_launch", "fist_caught", "brave_fist_relay", "shell_break_core_reveal"],
+      "plan_contracts": {
+        "V353U001": {
+          "control_mode": "autonomous_locked",
+          "locked_plan": {"route_mode": "hold_origin", "final_facing": "toward_subject", "subject": "ENEMY_C01_BREAKER", "action": "AUTONOMOUS_OVERLOAD_ROCKET_FIST", "timing": "T1_AUTO_ON_RED_SLIT", "target": "BREAKER_RED_SLIT", "weakpoint_window": "RED_SLIT_OPEN"},
+          "checks": [
+            {"condition_id": "R6-GZ-AUTONOMOUS", "type": "locked_plan", "label": "馆守Z自主过载飞拳已锁定，玩家不承担这个角色决定", "hint": "不需要替馆守Z按发射键。"}
+          ]
+        },
+        "MECHA_BRAVE_FIST_PROTOTYPE": {
+          "control_mode": "editable",
+          "checks": [
+            {"condition_id": "R6-BF-ROUTE", "type": "route", "max_steps": 8, "avoid_subject": "ENEMY_C01_BREAKER", "physical_clearance": true, "label": "勇拳路线须走可通行空地（不超过8格）", "hint": "从北侧短距换到断高架接力区；避开小体、车辆和馆守Z发射位。"},
+            {"condition_id": "R6-BF-NORTH", "type": "endpoint_side", "subject": "ENEMY_C01_BREAKER", "axis": "vertical", "side": "north", "min_axis_gap": 3, "max_manhattan": 7, "label": "勇拳终点在BREAKER北侧接力区", "hint": "站到飞拳穿过红裂的同轴后方。"},
+            {"condition_id": "R6-BF-FACE", "type": "faces_subject", "subject": "ENEMY_C01_BREAKER", "label": "勇拳最终朝向BREAKER", "hint": "拳甲需对准飞拳尾部。"},
+            {"condition_id": "R6-BF-ACTION", "type": "selection", "field": "action", "equals": "RETURN_OVERLOAD_FIST", "label": "勇拳选择回送过载飞拳", "hint": "动作：飞拳接力。"},
+            {"condition_id": "R6-BF-TIMING", "type": "selection", "field": "timing", "equals": "T3_AFTER_FIST_CAUGHT", "label": "勇拳在飞拳被夹住后接力", "hint": "这是回合计划时机，不是QTE。"},
+            {"condition_id": "R6-BF-TARGET", "type": "selection", "field": "target", "equals": "ROCKET_FIST_TAIL", "label": "勇拳的接力目标是飞拳尾部", "hint": "不要直接攻击外壳。"},
+            {"condition_id": "R6-BF-WINDOW", "type": "selection", "field": "weakpoint_window", "equals": "RED_SLIT_OPEN", "label": "勇拳把红裂张开设为弱点窗口", "hint": "在计划里锁定红裂窗口即可，不做反应按键。"}
+          ]
+        }
+      },
+      "joint_checks": [
+        {"condition_id": "R6-PRIOR-RED", "type": "world_flag", "field": "red_slit_window", "equals": "confirmed_public", "label": "红裂已在R5被公开确认", "hint": "须先完成R5的堵钻与观察。"},
+        {"condition_id": "R6-JOINT-OPPOSITE", "type": "opposite_sides", "axis": "vertical", "subject": "ENEMY_C01_BREAKER", "units": ["V353U001", "MECHA_BRAVE_FIST_PROTOTYPE"], "label": "馆守Z的发射位与勇拳接力位分居BREAKER南北两侧", "hint": "保持一条穿过红裂的接力轴。"}
+      ],
+      "outcome": {
+        "world_set": {"guardian_right_arm_state": "destroyed_overload_no_return", "breaker_ground_shell_state": "broken", "breaker_core_revealed": true, "breaker_core_state": "airborne_alive", "swarm_organization_state": "synchronized", "e03_encounter_complete": true, "encounter_complete": true, "e03_checkpoint": "E03_GROUND_SHELL_BROKEN_CORE_REVEALED", "mission_clear": false},
+        "guardian_set": {"status": "right_arm_destroyed_after_overload", "right_arm_state": "destroyed_overload_no_return"},
+        "brave_fist_set": {"status": "relay_complete_core_pursuit", "impact_charge_state": "released_into_rocket_fist"},
+        "breaker_set": {"status": "flying_core_revealed_alive", "phase": "flying_core", "ground_shell_state": "broken", "core_revealed": true, "alive": true},
+        "swarm_set": {"organization": "synchronized", "control_state": "core_pulse_synchronized"},
+        "all_swarm_entities_set": {"organization_state": "synchronized", "status": "core_pulse_synchronized"},
+        "story_flags_set": {"guardian_z_autonomous_overload_choice": true, "dual_fist_shell_break": true, "guardian_z_right_arm_destroyed": true, "breaker_flying_core_revealed": true},
+        "events": [
+          {"event_id": "E03-R6-E1-AUTONOMOUS-OVERLOAD", "timeslice": "T1", "text": "馆守Z自主过载发射右拳。"},
+          {"event_id": "E03-R6-E2-FIST-CAUGHT", "timeslice": "T2", "text": "BREAKER双爪夹住飞拳，红光向背甲收缩。"},
+          {"event_id": "E03-R6-E3-BRAVE-FIST-RELAY", "timeslice": "T3", "text": "勇拳在接力位命中飞拳尾部，蓄力环将冲击全部送回。"},
+          {"event_id": "E03-R6-E4-SHELL-BREAK", "timeslice": "T4", "text": "双拳破壳；馆守Z右前臂与回收机构一同毁损。"},
+          {"event_id": "E03-R6-E5-CORE-PULSE", "timeslice": "T5", "text": "飞行核心显形并使小体同步；BREAKER仍存活，未达成Mission Clear。"}
+        ]
+      }
+    }
+  ]
+}

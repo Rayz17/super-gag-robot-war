@@ -1,0 +1,122 @@
+{
+  "producer_correction_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/102-c01e02-task98-runtime-grid-registration-producer-correction.md",
+  "producer_correction_sha256": "e8556f917456da83d933842b9ace9542f5238635d5166a6f5b7adbfad0d62378",
+  "history_guides": [
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/CURRENT_TOPOLOGY_ACTOR_FREE_WORLD_GUIDE_1280x720.png",
+      "sha256": "8aa4909af5aefe0cf1959e1c941bb5c9437567e429ffa487dedd1663f36b5c3a",
+      "new_role": "History_trace_only",
+      "pixel_consumed_by_task101": false,
+      "reason": "cell_diamond used x+0.5,y+0.5 and shifts terrain grid +20px screen Y",
+      "actual_sha256": "8aa4909af5aefe0cf1959e1c941bb5c9437567e429ffa487dedd1663f36b5c3a",
+      "hash_pass": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/PLAN_SLOT_COMPOSITE_QA_1280x720.png",
+      "sha256": "772c299994d47510dce3f30f6fb07fc4d2d4ba39744886dacff0b64558f96348",
+      "new_role": "History_trace_only",
+      "pixel_consumed_by_task101": false,
+      "reason": "correct actor footpoints were composited over +20px-shifted terrain guide",
+      "actual_sha256": "772c299994d47510dce3f30f6fb07fc4d2d4ba39744886dacff0b64558f96348",
+      "hash_pass": true
+    },
+    {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/PLAN_SLOT_COMPOSITE_QA_50_PERCENT_640x360.png",
+      "sha256": "75bb1b09ec4201c8b66f624b00789237766f1db41177c0fff52cf6e346681a33",
+      "new_role": "History_trace_only",
+      "pixel_consumed_by_task101": false,
+      "reason": "50 percent derivative of invalid composite registration evidence",
+      "actual_sha256": "75bb1b09ec4201c8b66f624b00789237766f1db41177c0fff52cf6e346681a33",
+      "hash_pass": true
+    }
+  ],
+  "inherited_contract_values": {
+    "source_authority": "runtime visual_projection.gd + compositor profile, not Task98 guide pixels",
+    "grid_size": [
+      32,
+      18
+    ],
+    "integer_grid_is_cell_center": true,
+    "tile_half_px": [
+      40.0,
+      20.0
+    ],
+    "raw_origin_px": [
+      -880.0,
+      -170.0
+    ],
+    "world_canvas_size_px": [
+      2400,
+      1350
+    ],
+    "world_canvas_origin_raw_px": [
+      -1760.0,
+      -340.0
+    ],
+    "map_viewport_rect": [
+      0,
+      58,
+      1280,
+      584
+    ],
+    "camera_centers_raw_px": {
+      "NO_FOCUS": [
+        -720.0,
+        350.0
+      ],
+      "PLAN": [
+        -480.0,
+        420.0
+      ],
+      "CONTACT_A": [
+        -480.0,
+        450.0
+      ],
+      "CONTACT_B": [
+        -500.0,
+        440.0
+      ]
+    },
+    "camera_map_crops_world_canvas_px": {
+      "NO_FOCUS": [
+        400,
+        398,
+        1280,
+        584
+      ],
+      "PLAN": [
+        640,
+        468,
+        1280,
+        584
+      ],
+      "CONTACT_A": [
+        640,
+        498,
+        1280,
+        584
+      ],
+      "CONTACT_B": [
+        620,
+        488,
+        1280,
+        584
+      ]
+    },
+    "visible_z": {
+      "base": -1200,
+      "buildings": -900,
+      "roof": 900,
+      "foreground": 1100
+    },
+    "layer_and_owner_contracts": "inherited where independent of invalid guide pixels",
+    "atlas_pivot_socket_phase_contracts": "unaffected by Task102 but not consumed as visible environment pixels"
+  },
+  "registration_proof_source": "fresh Task101 computation from runtime projection truth",
+  "task98_guide_pixels_used_as_registration_proof": false,
+  "control_point_count": 20,
+  "distinct_grid_points": 5,
+  "max_error_px": 0.0,
+  "threshold_px": 0.5,
+  "pass": true
+}

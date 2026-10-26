@@ -1,0 +1,11 @@
+evidence	entity_or_sample	anchor	footprint	footpoint_raw_or_screen_px	pivot_normalized	pivot_px	display_scale	footpoint_z_main	z_bias	consumer_z	clip_or_policy	actual_capture	result
+machine_reference	1x1_reference	[17,10]	[1,1]	raw[-600,390]	N/A	N/A	N/A	390	0	390	cell_bottom_center	g2_a1_r2_tactical_geometry_test	PASS
+machine_reference	2x2_reference	[18,10]	[2,2]	raw[-560,450]	N/A	N/A	N/A	450	1	451	full_footprint_bottom_center	g2_a1_r2_tactical_geometry_test	PASS
+machine_reference	3x3_reference	[20,11]	[3,3]	raw[-520,550]	N/A	N/A	N/A	550	2	552	full_footprint_bottom_center	g2_a1_r2_tactical_geometry_test	PASS
+actual_frame	ENEMY_C01_RIFT_SWARM_01	[8,6]	[1,1]	screen[625.60,562.80]	[0.5,0.75]	[48,72]	[1,1]	563	0	563	idle/west/0	04_REGISTRATION_OCCLUSION	PASS
+actual_frame	V353U001	[0,0]	[2,2]	screen[545.60,322.80]	[0.5,0.875]	[128,224]	[1,1]	323	1	324	idle/east/0	04_REGISTRATION_OCCLUSION	PASS
+actual_frame	ENEMY_C01_BREAKER	[8,0]	[3,3]	screen[865.60,522.80]	[0.5,0.8333333333]	[192,320]	[1,1]	523	2	525	charge/north/1	04_REGISTRATION_OCCLUSION	PASS
+cross_grid_motion	V353U001_east_segment	[15,11]	[2,2]	screen[388,329]	[0.5,0.875]	[128,224]	[1,1]	329	1	330	move/east/0	02_ROUTE_EAST_SEGMENT	PASS
+cross_grid_motion	V353U001_north_segment	[18,11]	[2,2]	screen[514,392]	[0.5,0.875]	[128,224]	[1,1]	392	1	393	move/north/1	03_ROUTE_NORTH_SEGMENT	PASS
+occlusion_candidate	V353U001	[0,0]	[2,2]	raw[-880,-110]	N/A	N/A	N/A	N/A	N/A	N/A	mask_alpha=1.0 roofs_and_foreground_alpha=0.50 outline_required=true	04_REGISTRATION_OCCLUSION	PASS_MACHINE_CANDIDATE_PRODUCER_VISUAL_SIGNOFF_PENDING
+z_crossing	all_three_visible	[0,0];[8,0];[8,6]	[2,2];[3,3];[1,1]	screen_y=322.8;522.8;562.8	per_binding	per_binding	[1,1]	323;523;563	1;2;0	324;525;563	footpoint_screen_y_is_primary_key	04_REGISTRATION_OCCLUSION	PASS

@@ -1,0 +1,123 @@
+{
+  "artifact": "GZ_CAMERA_V2_SOUTH_TWO_HAND_SHIELD_STATIC_POSE_CALL01",
+  "section": "Art Asset Section 2",
+  "status": "POSE_FIRST_READ_PASS_ALPHA_FAIL_STOPPED",
+  "candidate_gate": "RAW_ONLY_NO_RGBA_DELIVERY",
+  "scope": {
+    "lane": "Candidate exploration only",
+    "action_atlas": false,
+    "single_reusable_static_pose": true,
+    "godot_integration": false,
+    "runtime_promotion": false,
+    "canon_promotion": false,
+    "producer_approval": false
+  },
+  "canon_and_camera": {
+    "CML008": "Hard current Guardian Z identity; C01E02 intact twin arms and heavy-shield state",
+    "shield_form": "legacy retired-heavy-shield Candidate reference; this call does not promote its design",
+    "camera_contract": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+    "projection": "orthographic_dimetric",
+    "logical_facing": "south",
+    "screen_direction": "lower-left",
+    "footprint": [2, 2],
+    "target_canvas": [256, 256],
+    "target_pivot": [128, 224]
+  },
+  "imagegen": {
+    "engine": "built-in ImageGen",
+    "mode": "reference-guided generation",
+    "calls": 1,
+    "rerolls": 0,
+    "alpha_extraction_calls": 0,
+    "further_generation_allowed_in_this_call": false,
+    "prompt_record": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a13-section2-gz-south-twohand-shield-pose-master-candidate/call01/receipts/GZ_SOUTH_TWO_HAND_SHIELD_CALL01_PROMPT.md",
+      "sha256": "082c4d7c711eee57eaa810a0421aa483459da3d110833f6e7889768a4572896f"
+    }
+  },
+  "references": [
+    {
+      "image_index": 1,
+      "role": "identity, head and chest language, cylindrical forearms, mass and blue-silver-red-gold palette only",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/frozen-assets/cml008-guardian-z-current-base.png",
+      "sha256": "a9688f07d923d79680e1ba13a1cc51135b72dd29b38cf25242e2239107b86521"
+    },
+    {
+      "image_index": 2,
+      "role": "retired heavy shield rectangle, thickness, wear and three old impact scars only; wall support excluded",
+      "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/c01_breaker_demo/assets/candidate_composed_battle/props/retired_shield_legacy_a2_candidate.png",
+      "sha256": "b8c13e5145692d9151769b2b8c96232f60bd7f7e246934357379d0124255ab46"
+    },
+    {
+      "image_index": 3,
+      "role": "shield-in-front action relationship only; one-hand side hold and eye-level camera rejected",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-g1/PV06_S07_SHIELD_IMPACT_1280x720.png",
+      "sha256": "95b55efccd7d0ca9c14f2570036f71ac7df6f24468d46cdb0cf9db1a2d13ffce"
+    },
+    {
+      "image_index": 4,
+      "role": "south equals screen lower-left and planted brace only; simplified identity rejected",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a8-current-visual-pack/phase-b1-1/assets/guardian_z_south/guardian-z-south-b1-1-brace-256x256.png",
+      "sha256": "f8c3a379d3be8fcca6271c388f50c10e4976caae09eb33af233622be1224ae93"
+    },
+    {
+      "image_index": 5,
+      "role": "elevated Camera V2 dimetric view and polished map-art finish only",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-gold-frame/delivery/GF_CONTACT_1280x720_v2.png",
+      "sha256": "83b713d6f700aa3b0bacc541902d98b92baa3de7730f502a1197a783b71c1633"
+    }
+  ],
+  "excluded_pose_anchor": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/c01_breaker_demo/assets/candidate_ground_mecha/guardian_z_east_camera_v2_candidate.png",
+    "supplied_to_imagegen": false,
+    "reason": "wrong east neutral pose must not anchor the south shield action"
+  },
+  "raw_output": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a13-section2-gz-south-twohand-shield-pose-master-candidate/call01/generation-raw/GZ_SOUTH_TWO_HAND_SHIELD_CALL01_RAW_ALPHA_FAIL.png",
+    "sha256": "88bca67bb3d0fb50f559e60bc43c7cd42130fe8840a55f438dd05130b79c61d0",
+    "mode": "RGB",
+    "size": [1254, 1254],
+    "true_alpha": false,
+    "background": "baked checkerboard",
+    "preserved_without_alpha_extraction": true
+  },
+  "visual_gate": {
+    "status": "PASS_FOR_POSE_CANDIDATE_ONLY",
+    "identity": "PASS: confirmed helmet, face grille, red chest, navy armor, silver joints, gold accents and cylindrical forearms remain readable",
+    "e02_two_arm_state": "PASS: both arms and both hands are present",
+    "shield_front_relationship": "PASS: shield is centered in front of chest and abdomen, not on the back or beside the body",
+    "two_hand_grip": "PASS: one hand is visibly wrapped around each shield edge",
+    "face_and_shoulders": "PASS: face and both shoulder masses remain readable above and around the shield",
+    "brace": "PASS: wide planted feet, bent knees and lowered center of mass",
+    "south_camera_first_read": "PASS_FOR_CANDIDATE: elevated three-quarter view aims toward screen lower-left; exact runtime registration not tested",
+    "root_motion_reuse": "PASS: static stored-force hold contains no swing trail and can be translated for R2 block and R3 bash",
+    "extra_actor_or_environment": false
+  },
+  "scale_qa": {
+    "target_100": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a13-section2-gz-south-twohand-shield-pose-master-candidate/call01/qa/GZ_SOUTH_TWO_HAND_SHIELD_CALL01_TARGET_100_256.png",
+      "sha256": "66876b89024232a76d21a9039f52991073f259a8b173f962e95047059db4d6b2",
+      "size": [256, 256],
+      "read": "hands, shield edges, face, shoulders and heavy stance remain clear"
+    },
+    "target_50": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a13-section2-gz-south-twohand-shield-pose-master-candidate/call01/qa/GZ_SOUTH_TWO_HAND_SHIELD_CALL01_TARGET_50_128.png",
+      "sha256": "b449229093304dee39b437ece4e16c50920ed0adb5815c981e81ae503bd4fdd6",
+      "size": [128, 128],
+      "read": "front two-hand shield hold, head-chest palette and weight remain readable"
+    },
+    "board": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a13-section2-gz-south-twohand-shield-pose-master-candidate/call01/qa/GZ_SOUTH_TWO_HAND_SHIELD_CALL01_RAW_50_100_QA_1800x1100.png",
+      "sha256": "40c99d5d64140f81af1ed9ce02cae50224fca461bcbf6341d04fe151d1f1e42b",
+      "size": [1800, 1100]
+    }
+  },
+  "stop_record": {
+    "reason": "Pose first-read is correct, but the single generated PNG has no alpha channel and contains a baked checkerboard.",
+    "reroll_performed": false,
+    "alpha_extraction_performed": false,
+    "deterministic_256_rgba_written": false,
+    "runtime_asset_written": false,
+    "next_gate": "producer visual review of the raw pose; any alpha salvage or new generation requires a separate authorized task"
+  }
+}

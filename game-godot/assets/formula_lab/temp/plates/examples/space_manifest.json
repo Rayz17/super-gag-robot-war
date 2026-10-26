@@ -1,0 +1,565 @@
+{
+	"examples": [
+		{
+			"kind": "wall_face",
+			"name": "house",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/house__wall_face.png",
+			"reason": "",
+			"sit": "room_box_face",
+			"size": [
+				240,
+				160
+			],
+			"slot": "space.wall_face"
+		},
+		{
+			"kind": "floor_plane",
+			"name": "house",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/house__floor_plane.png",
+			"reason": "",
+			"sit": "room_box_ground",
+			"size": [
+				280,
+				150
+			],
+			"slot": "space.floor_plane"
+		},
+		{
+			"kind": "prop_body",
+			"name": "house",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/house__prop_body.png",
+			"reason": "",
+			"sit": "face_plane",
+			"size": [
+				160,
+				120
+			],
+			"slot": "space.prop_body"
+		},
+		{
+			"kind": "floor_plane",
+			"name": "grass",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/grass__floor_plane.png",
+			"reason": "",
+			"sit": "room_box_ground",
+			"size": [
+				280,
+				150
+			],
+			"slot": "space.floor_plane"
+		},
+		{
+			"kind": "floor_plane",
+			"name": "road",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/road__floor_plane.png",
+			"reason": "",
+			"sit": "room_box_ground",
+			"size": [
+				280,
+				150
+			],
+			"slot": "space.floor_plane"
+		},
+		{
+			"kind": "wall_face",
+			"name": "dock",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/dock__wall_face.png",
+			"reason": "",
+			"sit": "room_box_face",
+			"size": [
+				240,
+				160
+			],
+			"slot": "space.wall_face"
+		},
+		{
+			"kind": "sky_loft",
+			"name": "sky",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/sky__sky_loft.png",
+			"reason": "",
+			"sit": "haze_loft",
+			"size": [
+				320,
+				140
+			],
+			"slot": "space.sky_loft"
+		},
+		{
+			"kind": "sky_loft",
+			"name": "horizon",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/horizon__sky_loft.png",
+			"reason": "",
+			"sit": "haze_loft",
+			"size": [
+				320,
+				140
+			],
+			"slot": "space.sky_loft"
+		},
+		{
+			"kind": "sky_loft",
+			"name": "vista",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/vista__sky_loft.png",
+			"reason": "",
+			"sit": "haze_loft",
+			"size": [
+				320,
+				140
+			],
+			"slot": "space.sky_loft"
+		},
+		{
+			"kind": "floor_plane",
+			"name": "vista",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/vista__floor_plane.png",
+			"reason": "",
+			"sit": "room_box_ground",
+			"size": [
+				280,
+				150
+			],
+			"slot": "space.floor_plane"
+		},
+		{
+			"kind": "wall_face",
+			"name": "interior",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/interior__wall_face.png",
+			"reason": "",
+			"sit": "room_box_face",
+			"size": [
+				240,
+				160
+			],
+			"slot": "space.wall_face"
+		},
+		{
+			"kind": "floor_plane",
+			"name": "interior",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/interior__floor_plane.png",
+			"reason": "",
+			"sit": "room_box_ground",
+			"size": [
+				280,
+				150
+			],
+			"slot": "space.floor_plane"
+		},
+		{
+			"kind": "wall_face",
+			"name": "workshop",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/workshop__wall_face.png",
+			"reason": "",
+			"sit": "room_box_face",
+			"size": [
+				240,
+				160
+			],
+			"slot": "space.wall_face"
+		},
+		{
+			"kind": "floor_plane",
+			"name": "workshop",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/workshop__floor_plane.png",
+			"reason": "",
+			"sit": "room_box_ground",
+			"size": [
+				280,
+				150
+			],
+			"slot": "space.floor_plane"
+		},
+		{
+			"kind": "sky_loft",
+			"name": "chart",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/chart__sky_loft.png",
+			"reason": "",
+			"sit": "haze_loft",
+			"size": [
+				320,
+				140
+			],
+			"slot": "space.sky_loft"
+		},
+		{
+			"kind": "sky_loft",
+			"name": "leftover",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/leftover__sky_loft.png",
+			"reason": "",
+			"sit": "haze_loft",
+			"size": [
+				320,
+				140
+			],
+			"slot": "space.sky_loft"
+		},
+		{
+			"kind": "floor_plane",
+			"name": "leftover",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/leftover__floor_plane.png",
+			"reason": "",
+			"sit": "room_box_ground",
+			"size": [
+				280,
+				150
+			],
+			"slot": "space.floor_plane"
+		},
+		{
+			"kind": "leftover_pad",
+			"name": "leftover",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/leftover__leftover_pad.png",
+			"reason": "",
+			"sit": "leftover_along_dest",
+			"size": [
+				280,
+				140
+			],
+			"slot": "space.leftover_pad"
+		},
+		{
+			"kind": "leftover_dock",
+			"name": "leftover",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/leftover__leftover_dock.png",
+			"reason": "",
+			"sit": "leftover_along_dest",
+			"size": [
+				200,
+				120
+			],
+			"slot": "space.leftover_dock"
+		},
+		{
+			"kind": "board_pad",
+			"name": "road",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/road__board_pad.png",
+			"reason": "",
+			"sit": "board_pad_along_dest",
+			"size": [
+				240,
+				140
+			],
+			"slot": "space.board_pad"
+		},
+		{
+			"kind": "wall_face",
+			"name": "hall",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/hall__wall_face.png",
+			"reason": "",
+			"sit": "room_box_face",
+			"size": [
+				240,
+				160
+			],
+			"slot": "space.wall_face"
+		},
+		{
+			"kind": "floor_plane",
+			"name": "hall",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/hall__floor_plane.png",
+			"reason": "",
+			"sit": "room_box_ground",
+			"size": [
+				280,
+				150
+			],
+			"slot": "space.floor_plane"
+		},
+		{
+			"kind": "sky_loft",
+			"name": "yard",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/yard__sky_loft.png",
+			"reason": "",
+			"sit": "haze_loft",
+			"size": [
+				320,
+				140
+			],
+			"slot": "space.sky_loft"
+		},
+		{
+			"kind": "floor_plane",
+			"name": "yard",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/yard__floor_plane.png",
+			"reason": "",
+			"sit": "room_box_ground",
+			"size": [
+				280,
+				150
+			],
+			"slot": "space.floor_plane"
+		},
+		{
+			"kind": "sky_loft",
+			"name": "quay",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/quay__sky_loft.png",
+			"reason": "",
+			"sit": "haze_loft",
+			"size": [
+				320,
+				140
+			],
+			"slot": "space.sky_loft"
+		},
+		{
+			"kind": "floor_plane",
+			"name": "quay",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/quay__floor_plane.png",
+			"reason": "",
+			"sit": "room_box_ground",
+			"size": [
+				280,
+				150
+			],
+			"slot": "space.floor_plane"
+		},
+		{
+			"kind": "sky_loft",
+			"name": "patrol",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/patrol__sky_loft.png",
+			"reason": "",
+			"sit": "haze_loft",
+			"size": [
+				320,
+				140
+			],
+			"slot": "space.sky_loft"
+		},
+		{
+			"kind": "floor_plane",
+			"name": "patrol",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/patrol__floor_plane.png",
+			"reason": "",
+			"sit": "room_box_ground",
+			"size": [
+				280,
+				150
+			],
+			"slot": "space.floor_plane"
+		},
+		{
+			"kind": "prop_body",
+			"name": "patrol",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/patrol__prop_body.png",
+			"reason": "",
+			"sit": "face_plane",
+			"size": [
+				160,
+				120
+			],
+			"slot": "space.prop_body"
+		},
+		{
+			"kind": "cabinet",
+			"name": "patrol",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/patrol__cabinet.png",
+			"reason": "",
+			"sit": "patrol_along_dest",
+			"size": [
+				160,
+				140
+			],
+			"slot": "space.cabinet"
+		},
+		{
+			"kind": "gate",
+			"name": "patrol",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/patrol__gate.png",
+			"reason": "",
+			"sit": "patrol_along_dest",
+			"size": [
+				140,
+				80
+			],
+			"slot": "space.gate"
+		},
+		{
+			"kind": "opening",
+			"name": "patrol",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/patrol__opening.png",
+			"reason": "",
+			"sit": "patrol_along_dest",
+			"size": [
+				120,
+				180
+			],
+			"slot": "space.opening"
+		},
+		{
+			"kind": "along",
+			"name": "vista",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/vista__along.png",
+			"reason": "",
+			"size": [
+				280,
+				48
+			]
+		},
+		{
+			"kind": "along",
+			"name": "interior",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/interior__along.png",
+			"reason": "",
+			"size": [
+				280,
+				48
+			]
+		},
+		{
+			"kind": "along",
+			"name": "workshop",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/workshop__along.png",
+			"reason": "",
+			"size": [
+				280,
+				48
+			]
+		},
+		{
+			"kind": "along",
+			"name": "hall",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/hall__along.png",
+			"reason": "",
+			"size": [
+				280,
+				48
+			]
+		},
+		{
+			"kind": "along",
+			"name": "yard",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/yard__along.png",
+			"reason": "",
+			"size": [
+				280,
+				48
+			]
+		},
+		{
+			"kind": "along",
+			"name": "quay",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/quay__along.png",
+			"reason": "",
+			"size": [
+				280,
+				48
+			]
+		},
+		{
+			"kind": "along",
+			"name": "patrol",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/patrol__along.png",
+			"reason": "",
+			"size": [
+				280,
+				48
+			]
+		},
+		{
+			"kind": "stand",
+			"name": "vista",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/vista__stand.png",
+			"reason": "",
+			"size": [
+				360,
+				180
+			]
+		},
+		{
+			"kind": "stand",
+			"name": "interior",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/interior__stand.png",
+			"reason": "",
+			"size": [
+				360,
+				180
+			]
+		},
+		{
+			"kind": "stand",
+			"name": "workshop",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/workshop__stand.png",
+			"reason": "",
+			"size": [
+				360,
+				180
+			]
+		},
+		{
+			"kind": "stand",
+			"name": "hall",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/hall__stand.png",
+			"reason": "",
+			"size": [
+				360,
+				180
+			]
+		},
+		{
+			"kind": "stand",
+			"name": "yard",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/yard__stand.png",
+			"reason": "",
+			"size": [
+				360,
+				180
+			]
+		},
+		{
+			"kind": "stand",
+			"name": "quay",
+			"ok": true,
+			"path": "res://assets/formula_lab/temp/plates/examples/quay__stand.png",
+			"reason": "",
+			"size": [
+				360,
+				180
+			]
+		}
+	],
+	"notes": "场面井尺寸范例：砖 × 井种，墙/地按房间盒 + 材质重复盖印。有 stand 的砖另盖 loft+立面演算卡。坐井台 J 可单张重盖。不进 CML。",
+	"schema_id": "FORMULA_LAB_SPACE_EXAMPLE_V1"
+}

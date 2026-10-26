@@ -1,0 +1,416 @@
+{
+  "schema_version": "1.1.0",
+  "task": "Section2_GZ_V10X_CameraV2_cardinal_neutral_Call01",
+  "status": "USER_ACCEPTED_DIRECTION_ALPHA_REPAIRED_CANDIDATE",
+  "authority_scope": "C01E02_demo_visual_derivation_only",
+  "user_design_direction_accepted": true,
+  "user_actual_frame_accepted": false,
+  "alpha_repair_pending_user_visual_review": true,
+  "candidate_exact_pose_binding_allowed": true,
+  "candidate_exact_pose_binding_keys": [
+    "V353U001|idle|east",
+    "V353U001|idle|south"
+  ],
+  "runtime_allowed": false,
+  "default_allowed": false,
+  "canon_promoted": false,
+  "generation": {
+    "mode": "built_in_imagegen",
+    "call_count": 1,
+    "random_reroll_count": 0,
+    "raw_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/generation-raw/GUARDIAN_Z_V10X_CAMERA_V2_CARDINAL_NEUTRAL_CALL01_RAW.png",
+    "raw_sha256": "d27940dd013feb670ce5417be58312010e9addfd78ae7ef7d232f9f6d335daf1"
+  },
+  "source_lock": {
+    "sole_positive_identity_parent": {
+      "path": "docs/superpowers/specs/production/art-direction-v0.3/art-delivery/review/guardian_z_collector_e02_lockframe_candidate_v10x.png",
+      "sha256": "e1d6b00d743e925d37a8fe4c74a1ef9114e1d7b0f4826fc2285bd6dae1470ade"
+    },
+    "auxiliary_design_orthographic_reference": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a-identity-style-scale-masters/delivery/GUARDIAN_Z_V10X_QSD_FOUR_DIRECTION_RGBA_2560x960.png",
+      "sha256": "3873ed1ac32949f5ba2cdfbc334131b1a7d202124aaab1192d3211c0eb006ee9",
+      "direct_map_sprite_allowed": false
+    },
+    "forbidden_history_input_count": 0
+  },
+  "camera": {
+    "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+    "view_space": "map_dimetric_40x24",
+    "contract_source": {
+      "path": "game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/camera_v2_freeze/current-topology-camera-v2-40x24-contract.json",
+      "sha256": "756f77db883fd060fdd323d2533191ade689c0a1362f92f043fac17dbe28ab4a"
+    },
+    "projection": "P(x,y)=((x-y)*40,(x+y)*24)",
+    "global_contract_migration_performed": false,
+    "legacy_40x20_camera_used_as_positive_source": false,
+    "fixed_parallel_camera": true,
+    "top_planes_visible": true,
+    "direction_screen_vectors": {
+      "north": [
+        40,
+        -24
+      ],
+      "east": [
+        40,
+        24
+      ],
+      "south": [
+        -40,
+        24
+      ],
+      "west": [
+        -40,
+        -24
+      ]
+    }
+  },
+  "map_contract": {
+    "canvas_px": [
+      256,
+      256
+    ],
+    "pivot_px": [
+      128,
+      224
+    ],
+    "footprint": [
+      2,
+      2
+    ],
+    "display_scale": [
+      1,
+      1
+    ],
+    "cross_facing_fallback": false,
+    "mirror_allowed": false
+  },
+  "alpha_cleanup": {
+    "rgb_bytes_unchanged": true,
+    "method": "border_connected_strict_checker_plus_exact_internal_component_fringe_removal",
+    "strict_classifier": {
+      "minimum_channel": 224,
+      "maximum_chroma": 14
+    },
+    "internal_fringe_classifier": {
+      "minimum_channel": 180,
+      "maximum_chroma": 30
+    },
+    "canvas_pixels": 1572516,
+    "border_connected_transparent_pixels": 1099672,
+    "internal_background_transparent_pixels": 3101,
+    "transparent_pixels": 1102773,
+    "opaque_pixels": 469743,
+    "partial_alpha_pixels": 0,
+    "removed_internal_background_components": [
+      {
+        "label": "east_right_arm_to_torso_negative_space",
+        "strict_bbox": [
+          958,
+          215,
+          986,
+          352
+        ],
+        "strict_pixels": 1305,
+        "removed_bbox": [
+          958,
+          214,
+          986,
+          364
+        ],
+        "removed_pixels": 1420,
+        "selection": "exact_strict_component_then_neutral_fringe_growth"
+      },
+      {
+        "label": "south_left_arm_to_torso_negative_space",
+        "strict_bbox": [
+          244,
+          819,
+          273,
+          970
+        ],
+        "strict_pixels": 1582,
+        "removed_bbox": [
+          243,
+          819,
+          274,
+          971
+        ],
+        "removed_pixels": 1681,
+        "selection": "exact_strict_component_then_neutral_fringe_growth"
+      }
+    ],
+    "white_silver_armour_sentinels_preserved": {
+      "north_thigh_armour": [
+        358,
+        330
+      ],
+      "east_chest_keel": [
+        880,
+        170
+      ],
+      "east_left_thigh_armour": [
+        842,
+        305
+      ],
+      "east_right_thigh_armour": [
+        920,
+        335
+      ],
+      "east_left_wrist_ring": [
+        790,
+        215
+      ],
+      "east_right_wrist_ring": [
+        995,
+        275
+      ],
+      "east_left_toe_armour": [
+        780,
+        510
+      ],
+      "east_right_toe_armour": [
+        950,
+        570
+      ],
+      "south_left_toe_armour": [
+        274,
+        1175
+      ],
+      "south_right_toe_armour": [
+        445,
+        1115
+      ],
+      "south_chest_keel": [
+        348,
+        780
+      ],
+      "south_left_wrist_ring": [
+        234,
+        885
+      ],
+      "south_right_wrist_ring": [
+        428,
+        820
+      ]
+    },
+    "master_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/masters/GUARDIAN_Z_V10X_CAMERA_V2_CARDINAL_NEUTRAL_SHARED_MASTER_RGBA_1254.png",
+    "master_sha256": "3ea73fac822c7c169d2715ab95a36f549c19f330a5c02bb9c031a0ecacf9cd3a",
+    "pre_fix_snapshot_candidate_sha256": {
+      "north": "467118cb7f98b315b50b9ae3b530024a1e42e55c56bf0f392e8560030416b5fb",
+      "east": "c6dd358980e19045626e0ed17de0614b543a971d7275cde76816e3f1d1f3b0de",
+      "south": "0b3d2f437558216b8d3a94a1ea5255f7b9310a94447ba530a1d89b210ccfc12d",
+      "west": "d598b63903b87c76027401aa140a3b52cd4b689f13ce38570a60aa44f9a92351"
+    },
+    "rejected_alpha_candidate_sha256": {
+      "east": "c6dd358980e19045626e0ed17de0614b543a971d7275cde76816e3f1d1f3b0de",
+      "south": "0b3d2f437558216b8d3a94a1ea5255f7b9310a94447ba530a1d89b210ccfc12d"
+    },
+    "rejected_history_manifest_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/_history/pre-internal-alpha-hole-fix-20260824/REJECTED_ALPHA_HISTORY_MANIFEST.json"
+  },
+  "derived_candidates": {
+    "north": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/map-candidates/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_NORTH_CANDIDATE_256.png",
+      "sha256": "467118cb7f98b315b50b9ae3b530024a1e42e55c56bf0f392e8560030416b5fb",
+      "source_quadrant_bbox": [
+        195,
+        28,
+        491,
+        594
+      ],
+      "candidate_visible_bbox": [
+        75,
+        22,
+        181,
+        224
+      ],
+      "candidate_visible_size": [
+        106,
+        202
+      ],
+      "pivot_px": [
+        128,
+        224
+      ],
+      "foot_error_px": 0,
+      "screen_vector": [
+        40,
+        -24
+      ],
+      "view_read": "rear + one side",
+      "alpha_128_component_count": 1,
+      "largest_alpha_128_component_pixels": 14803,
+      "largest_alpha_128_component_bbox": [
+        75,
+        22,
+        181,
+        224
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "east": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/map-candidates/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_EAST_CANDIDATE_256.png",
+      "sha256": "1f6907776a382dd9daacdb8854725392c8f8d662b402654250327eb66bb9bdb7",
+      "source_quadrant_bbox": [
+        120,
+        28,
+        435,
+        610
+      ],
+      "candidate_visible_bbox": [
+        72,
+        16,
+        185,
+        224
+      ],
+      "candidate_visible_size": [
+        113,
+        208
+      ],
+      "pivot_px": [
+        128,
+        224
+      ],
+      "foot_error_px": 0,
+      "screen_vector": [
+        40,
+        24
+      ],
+      "view_read": "front + one side",
+      "alpha_128_component_count": 1,
+      "largest_alpha_128_component_pixels": 15444,
+      "largest_alpha_128_component_bbox": [
+        72,
+        16,
+        185,
+        224
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "south": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/map-candidates/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_SOUTH_CANDIDATE_256.png",
+      "sha256": "d1181e1b5d24903ed6f0e54c7e262815ddbed9e22e7a8135992dda188821b796",
+      "source_quadrant_bbox": [
+        167,
+        11,
+        479,
+        592
+      ],
+      "candidate_visible_bbox": [
+        72,
+        16,
+        184,
+        224
+      ],
+      "candidate_visible_size": [
+        112,
+        208
+      ],
+      "pivot_px": [
+        128,
+        224
+      ],
+      "foot_error_px": 0,
+      "screen_vector": [
+        -40,
+        24
+      ],
+      "view_read": "front + opposite side",
+      "alpha_128_component_count": 1,
+      "largest_alpha_128_component_pixels": 15143,
+      "largest_alpha_128_component_bbox": [
+        72,
+        16,
+        184,
+        224
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "west": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/map-candidates/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_WEST_CANDIDATE_256.png",
+      "sha256": "d598b63903b87c76027401aa140a3b52cd4b689f13ce38570a60aa44f9a92351",
+      "source_quadrant_bbox": [
+        110,
+        11,
+        408,
+        578
+      ],
+      "candidate_visible_bbox": [
+        75,
+        21,
+        182,
+        224
+      ],
+      "candidate_visible_size": [
+        107,
+        203
+      ],
+      "pivot_px": [
+        128,
+        224
+      ],
+      "foot_error_px": 0,
+      "screen_vector": [
+        -40,
+        -24
+      ],
+      "view_read": "rear + opposite side",
+      "alpha_128_component_count": 1,
+      "largest_alpha_128_component_pixels": 14874,
+      "largest_alpha_128_component_bbox": [
+        75,
+        21,
+        182,
+        224
+      ],
+      "corner_alpha": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "qa": {
+    "dark_light_100pct": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/qa/GUARDIAN_Z_V10X_CAMERA_V2_CARDINALS_DARK_LIGHT_QA_100PCT.png",
+      "sha256": "e2968687f49129284440ca0d8c87c364562467de56df02446329b073f1ba9017"
+    },
+    "dark_light_50pct": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/qa/GUARDIAN_Z_V10X_CAMERA_V2_CARDINALS_DARK_LIGHT_QA_50PCT.png",
+      "sha256": "6c0513680a80ef76063be0ad8bba30f2cd6fbef4a625f44a243a2ab16d5796a3"
+    },
+    "direction_pivot_readback": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/qa/GUARDIAN_Z_V10X_CAMERA_V2_CARDINAL_DIRECTION_PIVOT_READBACK.png",
+      "sha256": "3c28c0b7d21c955fa407aa49c56d5ece042e75cbeb43ba0dac2d51e696e9dc07"
+    },
+    "multibackground_alpha_100_50": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/qa/GUARDIAN_Z_V10X_CAMERA_V2_CARDINALS_MULTIBACKGROUND_ALPHA_QA_100_50.png",
+      "sha256": "f86dc2d25e16538626e63fe42b015bdd3fcae0ed46164d04d84b46509c4a2db0"
+    }
+  },
+  "visual_gate": {
+    "section2_identity_read": "PASS_FOR_USER_GATE_ONLY",
+    "section2_camera_read": "PASS_FOR_USER_GATE_ONLY",
+    "section2_alpha_read": "PASS_DETERMINISTIC_INTERNAL_HOLE_CLEANUP_PENDING_USER_ACTUAL_FRAME_REVIEW",
+    "source_hashes_and_camera_contract_verified": true,
+    "producer_user_visual_acceptance": false,
+    "prior_design_and_direction_acceptance_preserved": true,
+    "next_if_user_accepts": "restore repaired cardinal bytes to accepted Candidate base and continue exact action production",
+    "next_if_user_rejects": "keep pre-fix bytes in REJECTED_ALPHA_HISTORY and correct only the identified alpha region"
+  }
+}

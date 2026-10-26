@@ -1,0 +1,67 @@
+{
+  "status": "Candidate",
+  "assets": [
+    {
+      "file": "impact-atlas.png",
+      "source": "/Users/rayz/.codex/generated_images/01a0bec5-d56c-70d3-b5c2-86e083edb7c8/exec-4afebecf-d1d8-44f5-a7f1-04d567dbc211.png",
+      "sha256": "44d6f488bd07b8c47d67ee4b11d9e571cfd6feb2e478d24eab753584fee375ae",
+      "method": "OpenAI built-in imagegen",
+      "purpose": "Four raster accents; generated black matte, composited additively, not transparent-alpha art."
+    },
+    {
+      "file": "vanguard-07.glb",
+      "source": "artifacts/c02_model_motion/source/public/models/vanguard-07.glb",
+      "sha256": "b2c198b4dd8569d215ef13d416349ffddf643a5618f9862f897d6b1d08a1401f",
+      "license": "CC0 1.0",
+      "upstream": "https://github.com/RamonLinares/atlas-09",
+      "revision": "1b8fb9d54160215c071c5a29a49b1c36dc01f0df",
+      "purpose": "Rifle test shell; normalized height and adapted bones/sole support in Godot. Not final character design."
+    },
+    {
+      "file": "workshop-kinetic.png",
+      "source": "/Users/rayz/.codex/generated_images/01a0bec5-d56c-70d3-b5c2-86e083edb7c8/exec-99f33063-90d3-4bc0-969c-b976fc2beee8.png",
+      "method": "OpenAI built-in imagegen using the locked A style reference",
+      "purpose": "Cold ivory/navy workshop atlas. Staff door and machine shutter use separate UV regions and physical dimensions.",
+      "sha256": "d385ae02f6aab8150ed3766a3f28a39f3fda20462612c0fc6dd39d4ea852fbbf"
+    },
+    {
+      "file": "guardian-v10x.glb",
+      "source": "artifacts/c02_stage_v8/source/build_guardian_kinetic.py",
+      "method": "Authored Blender polygon profiles and named rigid joints",
+      "purpose": "V10X identity-derived C02 Candidate, 18m, original right forearm absent; left-arm attack. Not accepted model master.",
+      "sha256": "47020676d04bada8ac1721cb5939472f7cb9c8ee1d0d28f4fc2e425c4b6e7995"
+    }
+  ],
+  "shared_models": [
+    "../c02_forge/titan-06.glb",
+    "../c02_forge/atlas-09.glb"
+  ],
+  "portraits": "../c02_short_plan/portrait-sources.json",
+  "sound": "Existing V6 synthesized audio; no new licensed audio or subjective listening claim.",
+  "rejected_trial": "Aether02 removed from runtime: silhouette inconsistent with squad.",
+  "rejected_art_trials": [
+    {
+      "file": "workshop-painted.png",
+      "source": "/Users/rayz/.codex/generated_images/01a0bec5-d56c-70d3-b5c2-86e083edb7c8/exec-bb074faf-0f8e-4870-bbb9-a1c70ae0e9ad.png",
+      "sha256": "1a4495bcd76809a2f694fa9b9343a73db14f666935f6e2a0532161b3717d31a7",
+      "method": "OpenAI built-in imagegen",
+      "purpose": "Front elevation on an actual 3D workshop volume; authored for this candidate.",
+      "runtime": false,
+      "reason": "Rejected warm/olive art trial; inconsistent with locked A KINETIC_CEL direction",
+      "archive": "artifacts/c02_stage_v8/rejected-trials/workshop-painted.png"
+    },
+    {
+      "file": "yard-painted.png",
+      "source": "/Users/rayz/.codex/generated_images/01a0bec5-d56c-70d3-b5c2-86e083edb7c8/exec-62d74308-fd4d-4a9f-affc-ff4b84f6c843.png",
+      "sha256": "d2f50dede470a39aeceb5d40701a2faa3c0d22d785b525418f80ff329dc334cf",
+      "method": "OpenAI built-in imagegen",
+      "purpose": "Ground paint texture, muted and tinted at runtime, with code grid and direction overlays.",
+      "runtime": false,
+      "reason": "Rejected warm/olive art trial; inconsistent with locked A KINETIC_CEL direction",
+      "archive": "artifacts/c02_stage_v8/rejected-trials/yard-painted.png"
+    }
+  ],
+  "style_authority": "docs/superpowers/specs/production/art-direction-v0.3/series-art-direction-ab-lock-v1.md",
+  "guardian_identity": "docs/superpowers/specs/production/art-direction-v0.3/art-delivery/review/guardian_z_collector_e02_lockframe_candidate_v10x.png",
+  "scale": "1 Godot unit = 1 metre; machine neutral heights 16/17/18m; staff door 2.3m; hangar clear opening21m; no globally enlarged personnel fixtures."
+}

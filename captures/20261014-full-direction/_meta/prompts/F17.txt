@@ -1,0 +1,21 @@
+STYLE LOCK = Astra KINETIC_CEL (must match references):
+- Hard-edge cel color blocks, pressure ink outlines, max two hard shadow tiers
+- Super Robot Wars / 超级系 readable silhouette; half-Q STANDARD readability
+- Gongwu industrial palette: steel teal / concrete beige / warning vermilion
+- NOT photoreal, NOT AAA PBR, NOT wasteland photo rust, NOT alien biotech, NOT ITB grayboard
+- Direction concept sheet: one clear hero view + small state callouts if needed; NOT full turnaround PSD
+Reference images (match stroke weight, cel blocking, palette):
+- style-lock/01-kinetic-cel-storyframe-v23a.png
+- style-lock/11-tactics-user-accepted.png
+- style-lock/02-mech-hero.jpg
+
+ASSET ID F17 | key=bridge_kit | template=part
+NAME: 消防应急桥板
+PURPOSE: 共享工具与产物
+DESIGN BRIEF: 装载、展开、桥面与铰接端能对应；有限长度的实体
+STATES to imply on sheet: 收纳, 展开, 接地, 毁坏
+IDENTITY retain: 沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。装载、展开、桥面与铰接端能对应；有限长度的实体
+PROJECT DESIGN: 从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。
+AVOID: 合体、变形与拆卸不能凭空更换头胸或增减零件；不可从母体单张动作图猜背面。
+CONTEXT: M10：消防架桥机属于城市消防驾驶组，用整块桥板压住燃烧通道、铺设安全撤离路，同时灭火和冷却。它有原驾驶组与所属城市，不自动属于主角舰队。
+Output: single art-direction concept painting, clean readable silhouette, labeled states as small insets OK, no fake UI text walls, no photoreal materials.

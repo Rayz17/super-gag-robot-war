@@ -1,0 +1,200 @@
+{
+  "episode_id": "C01E01-STORY-FIRST-P5-CANDIDATE",
+  "status": "candidate",
+  "canon_level": "accepted_story_candidate_runtime_production",
+  "source_slot_id": "V357-C01-S01",
+  "loadout_contract_id": "V358LOAD001",
+  "location_id": "LOC_WANJI_MAIN_HALL",
+  "mecha_id": "CH057",
+  "story_source": "DOC_V359_C01E01_STORY_FIRST_V1",
+  "runtime_contract_source": "DATA_C01E01_RUNTIME_CONTRACT_V1",
+  "graybox_source": "DATA_C01E01_GRAYBOX_CONSTANTS_V1",
+  "transition_contract": "required",
+  "graph": "res://content/episodes/c01/e01/graph.story_first.json",
+  "bundle_output": "res://content/generated/episodes/c01/e01/story_first.bundle.json",
+  "battle": "res://content/episodes/c01/e01/battle/c01_e01_story_first_small_machine_evacuation.json",
+  "presentation_assets": [
+    "res://assets/backgrounds/story_first/bg_c01e01_front_hall_closing_v01.png",
+    "res://assets/backgrounds/story_first/bg_c01e01_guardian_atrium_model_hospital_v01.png",
+    "res://assets/backgrounds/story_first/bg_c01e01_real_machine_stage_v01.png",
+    "res://assets/backgrounds/story_first/bg_c01e01_old_film_hall_v01.png",
+    "res://assets/backgrounds/story_first/bg_c01e01_archive_room_v01.png",
+    "res://assets/backgrounds/story_first/bg_c01e01_zero_corridor_v01.png",
+    "res://assets/backgrounds/story_first/bg_c01e01_cold_open_after_fire_v01.png",
+    "res://assets/backgrounds/story_first/bg_c01e01_four_orders_v01.png",
+    "res://assets/characters/story_first/sprite_jicun_walk_right_strip_v01.png",
+    "res://assets/tactical_maps/story_first/bg_c01e01_main_hall_isometric_v01.png",
+    "res://assets/portraits/portrait_doudeng.png",
+    "res://assets/portraits/portrait_jicun.png",
+    "res://assets/portraits/portrait_qihai.png",
+    "res://assets/battle_presentation/c01/story_first/manifest.json",
+    "res://assets/battle_presentation/c01/story_first/sprite_diedie_idle_v01.png",
+    "res://assets/battle_presentation/c01/story_first/sprite_machine_dog_idle_v01.png",
+    "res://assets/battle_presentation/c01/story_first/sprite_evac_group_base_v01.png",
+    "res://assets/battle_presentation/c01/story_first/sprite_path_frame_reclosing_v01.png",
+    "res://assets/battle_presentation/c01/story_first/sprite_status_patcher_active_v01.png",
+    "res://assets/battle_presentation/c01/fire_bridge/sprite_fire_bridge_deployed_v01.png",
+    "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_kneel_idle_v01.png",
+    "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_single_arm_support_v01.png",
+    "res://assets/battle_presentation/c01/guardian_z/pose_gz_c01_kneel_contact_v01.png",
+    "res://assets/battle_presentation/c01/guardian_z/cutin_doudeng_c01_tense_v01.png",
+    "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_idle_v01.png",
+    "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_scan_v01.png",
+    "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_lock_v01.png",
+    "res://assets/tactical_maps/story_first/bg_c01e04_carrier_escape_isometric_v01.png",
+    "res://assets/tactical_maps/story_first/spr_wanji_mobile_chassis_v01.png",
+    "res://assets/portraits/portrait_haosi.png",
+    "res://assets/units/unit_brave_fist.svg",
+    "res://assets/units/enemy_seal_frame.svg"
+  ],
+  "claims": [
+    "story_first_episode_graph",
+    "six_stop_l1_spatial_route",
+    "context_action_tactical_contract",
+    "failure_retry_without_persistent_commit",
+    "rt013s_single_atomic_episode_handoff",
+    "enacted_commitment_without_forced_desk",
+    "candidate_battle_presentation_manifest"
+  ],
+  "non_claims": [
+    "formal_episode_runtime_complete",
+    "capacity_receipt_validated",
+    "production_art_complete",
+    "windows_runtime_validated",
+    "physical_controller_validated"
+  ],
+  "experience_contract_version": 1,
+  "experience_contract_required": true,
+  "experience_contract": {
+    "episode_knot_id": "KNOT_C01E01_LAST_CLOSING_ROUTE",
+    "dramatic_object_id": "OBJ_C01E01_CLOSING_ROUTE",
+    "dramatic_question": "怎样让二十九名观众在九点前越过闭馆线，同时不把人和机器交给标准姿态分类？",
+    "human_claims": [
+      {
+        "claim_owner": "CH_JICUN",
+        "claim": "闭馆仍是一场具体照看：每个人安全到前厅，每台机器按自己的身体完成最后一段路。"
+      },
+      {
+        "claim_owner": "CH001",
+        "claim": "低热支援必须服从硬停和材料边界；救人不能成为越过专业停止权的借口。"
+      }
+    ],
+    "machine_claim": {
+      "mecha_id": "CH057",
+      "claim": "跌倒不是应该删除的故障；它能主动选择怎样倒下，并用这副不完美的身体替别人占住一条路。",
+      "action_cue_id": "CUE_C01E01_DIEDIE_ACTIVE_FALL"
+    },
+    "player_commitment_id": "COMMIT_C01E01_PEOPLE_FIRST_WITHOUT_FULL_SPINE",
+    "commitment_model": "enacted",
+    "commitment_evidence": [
+      {
+        "node_id": "c01e01_small_machine_rescue",
+        "anchor_id": "C01E01_OPEN_SIDE_DOOR_ACCEPT_PATCHER",
+        "visible_action": "玩家接受一台贴片机进入，以换取机器犬和D5的救援通路。"
+      },
+      {
+        "node_id": "c01e01_small_machine_rescue",
+        "anchor_id": "C01E01_ACTIVE_FALL_CONFIRMED",
+        "visible_action": "玩家确认跌跌主动侧倒，让它用肩壳卡住路径框传感轨。"
+      },
+      {
+        "node_id": "c01e01_small_machine_rescue",
+        "anchor_id": "C01E01_SAFE_ANGLE_CONFIRMED",
+        "visible_action": "玩家在兜灯硬停与唐胶材料否决内选择唯一安全胸灯角。"
+      }
+    ],
+    "settlement_model": "narrative_consequence",
+    "irreversible_cost": {
+      "text": "纪存没有开启完整搬运脊道，却仍因发送真实消防回线而暴露路由地址与自己的唤醒声纹；四令因此取得物理介入口。",
+      "state_refs": [
+        "C01_FIRE_ROUTE_CAPTURE",
+        "FULL_MOVING_SPINE",
+        "WJ_B1_FIRE_PUMP",
+        "GZ_GUIDE_LIGHT",
+        "C01_PHYSICAL_SNAPSHOT"
+      ]
+    },
+    "next_debt_id": "DEBT_C01E01_29_STILL_INSIDE_FOUR_SYSTEMS_SEIZED",
+    "next_debt_origin": "四枚Token全部越过闭馆线却只到L1前厅；四令随后分别切走防火门、馆守Z胸灯、旧路由钥匙和B1泵站。",
+    "next_debt_future_window": "C01E02必须从RT013S唯一快照开始，把29人真正送出建筑；不得重置门、灯、钥匙、泵、右臂或七海频道状态。",
+    "capacity_band": "compact",
+    "capacity_evidence": {
+      "status": "pending_external",
+      "receipt_paths": []
+    },
+    "required_continuity": ["object", "action", "responsibility"],
+    "required_consumption_slots": ["immediate", "conflict", "character", "settlement"],
+    "skip_reasons": {
+      "DESK": "二十九人仍未离楼，四令切断设施后火场在数秒内开始；此时打开责任比较界面会破坏已验收因果，责任由尾声具身后果直接交给E02。",
+      "CONSTRAINT": "不开完整搬运脊道与只用消防回线的限制已经进入ADV和Tactical规则，不另切独立资源分配小游戏。",
+      "TIMING": "本话教学重点是尺寸、牵引、占格与环境反射；身体节奏玩法留给后续拥有独立动作判断的Episode。",
+      "SIGNAL": "空白回信和0号信号只作为未验证症状出现；第一话不得让玩家在小游戏里提前判断宏观真相。"
+    },
+    "stable_object_bindings": [
+      {
+        "stable_object_id": "OBJ_C01E01_CLOSING_ROUTE",
+        "mode_bindings": [
+          {"mode": "NARRATIVE", "node_id": "c01e01_before_nine", "anchor_id": "c01e01_route_line"},
+          {"mode": "SPATIAL", "node_id": "c01e01_closing_route", "anchor_id": "confirm_closing_count"},
+          {"mode": "TACTICAL", "node_id": "c01e01_small_machine_rescue", "anchor_id": "BIND_C01E01_ROUTE_TO_YELLOW_LINE"},
+          {"mode": "NARRATIVE", "node_id": "c01e01_four_orders_tag", "anchor_id": "c01e01_tag_01"}
+        ]
+      },
+      {
+        "stable_object_id": "OBJ_C01E01_DIEDIE_BODY",
+        "mode_bindings": [
+          {"mode": "NARRATIVE", "node_id": "c01e01_zero_and_lockdown", "anchor_id": "c01e01_diedie_fall"},
+          {"mode": "SPATIAL", "node_id": "c01e01_closing_route", "anchor_id": "inspect_real_machine_stage"},
+          {"mode": "TACTICAL", "node_id": "c01e01_small_machine_rescue", "anchor_id": "BIND_C01E01_DIEDIE_BODY_TO_ACTIVE_FALL"},
+          {"mode": "NARRATIVE", "node_id": "c01e01_lights_out", "anchor_id": "c01e01_clear_02"}
+        ]
+      }
+    ],
+    "consumption_ledger": [
+      {
+        "result_id": "COMMIT_C01E01_PEOPLE_FIRST_WITHOUT_FULL_SPINE",
+        "source_node_id": "c01e01_small_machine_rescue",
+        "slots": {
+          "immediate": {
+            "consumer_kind": "world_object",
+            "consumer_id": "OBJ_C01E01_CLOSING_ROUTE",
+            "visible_evidence": "四枚人员Token沿安全箭头逐回合推进；黄线角标明确显示29人仍是四个不可任意拆分的责任组。"
+          },
+          "conflict": {
+            "consumer_kind": "battle",
+            "consumer_id": "C01E01-SMALL-MACHINE-EVACUATION",
+            "visible_evidence": "开侧门、主动侧倒和安全胸灯角不是加分项，而是三回合撤离成立的规则动作。"
+          },
+          "character": {
+            "consumer_kind": "node",
+            "consumer_id": "c01e01_lights_out",
+            "visible_evidence": "跌跌自己站起、机器犬叼回湿晚饭袋、纪存短暂发笑；七海先问人数与照看组，再转入公务频道。"
+          },
+          "settlement": {
+            "consumer_kind": "node",
+            "consumer_id": "c01e01_four_orders_tag",
+            "visible_evidence": "消防路由与声纹捕获后，门、胸灯、数字钥匙和泵站在同一场景被物理切走，RT013S一次提交。"
+          }
+        }
+      }
+    ],
+    "acceptance_questions": [
+      "为什么第一话真正可控的是跌跌和机器犬，而不是十八米馆守Z？",
+      "跌跌为什么要主动摔倒，而不是等玩家把它修好？",
+      "机器犬为什么自己认定维修员需要救援，玩家又实际决定了什么？",
+      "馆守Z为什么只亮胸灯外圈并主动收暗一瓣，而没有站起来战斗？",
+      "二十九人全部越过闭馆线以后，为什么仍然不安全？",
+      "七海在什么时候从私人语音转成公务风险频道，第一条真正改变系统的命令为什么仍留到E02？",
+      "纪存没有暴露完整搬运脊道，为什么仍然付出了不可逆代价？"
+    ]
+  },
+  "production_gates_not_proven": [
+    "six_stop_spatial_runtime",
+    "c01e01_scenario_driver",
+    "formal_battle_presentation_art_lock",
+    "capacity_receipt",
+    "external_blind_playtest",
+    "windows_runtime",
+    "physical_controller"
+  ]
+}

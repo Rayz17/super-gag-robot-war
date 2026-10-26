@@ -1,0 +1,658 @@
+{
+  "schema_version": "1.2-runtime-adapter",
+  "source_schema_version": "1.2",
+  "contract_version": "0.1",
+  "presentation_id": "BP_C01_GZ_PALM_GUARD_V01",
+  "generated_at": "2026-07-13",
+  "source_manifest": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery-manifest.json",
+  "source_manifest_sha256": "cbf4d0e0e53e60a4decefafa6c7d2d0d42222bf4bf9c743c72660d75cd764f30",
+  "assets": [
+    {
+      "stable_id": "POSE_GZ_C01_KNEEL_START_V01",
+      "canon_story_source": [
+        "CML008",
+        "V357-C01-S02",
+        "runtime-contract.md 4.1"
+      ],
+      "source_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/sources/guardian_z_pose_start_chroma_v01.png",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/pose_gz_c01_kneel_start_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/guardian_z/pose_gz_c01_kneel_start_v01.png",
+      "width": 2048,
+      "height": 2048,
+      "pivot": [
+        1024,
+        1856
+      ],
+      "safe_area": {
+        "left": 128,
+        "top": 128,
+        "right": 320,
+        "bottom": 128
+      },
+      "alpha": "straight_srgb",
+      "state": "half_kneel_start",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py; Pillow",
+      "prompt_version": "GZ-C01-POSE-START-v1",
+      "prompt": "Identity-preserving half-kneel start pose; lower one open palm; low chest light; exact locked Guardian Z armor and camera.",
+      "runtime_allowed": true,
+      "sha256": "e2c57f849d137a1f96228aa17ab3983d28893ac516f9646cd57f5c3b5944527d",
+      "asset_id": "POSE_GZ_C01_KNEEL_START_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    },
+    {
+      "stable_id": "POSE_GZ_C01_KNEEL_PALM_GUARD_V01",
+      "canon_story_source": [
+        "CML008",
+        "V357-C01-S02",
+        "runtime-contract.md 2, 4.1"
+      ],
+      "source_path": ".superpowers/brainstorm/37837-1782033239/content/asset-production/v31-c01-opening-p0-v1/guardian_z_half_kneel_guard.png",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/pose_gz_c01_kneel_palm_guard_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/guardian_z/pose_gz_c01_kneel_palm_guard_v01.png",
+      "width": 2048,
+      "height": 2048,
+      "pivot": [
+        1024,
+        1856
+      ],
+      "safe_area": {
+        "left": 128,
+        "top": 128,
+        "right": 320,
+        "bottom": 128
+      },
+      "alpha": "straight_srgb",
+      "state": "locked_current",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "Existing locked source; Pillow normalization only",
+      "prompt_version": "source-predates-delivery",
+      "prompt": "No generation prompt used; resized and positioned from the approved half-kneel source.",
+      "runtime_allowed": true,
+      "sha256": "e1cbb624bf078dbafe463e308318ebde4e87a088b8b26c139293ef183198c9df",
+      "asset_id": "POSE_GZ_C01_KNEEL_PALM_GUARD_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    },
+    {
+      "stable_id": "POSE_GZ_C01_KNEEL_CONTACT_V01",
+      "canon_story_source": [
+        "CML008",
+        "V357-C01-S02",
+        "runtime-contract.md 4.1"
+      ],
+      "source_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/sources/guardian_z_pose_contact_chroma_v01.png",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/pose_gz_c01_kneel_contact_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/guardian_z/pose_gz_c01_kneel_contact_v01.png",
+      "width": 2048,
+      "height": 2048,
+      "pivot": [
+        1024,
+        1856
+      ],
+      "safe_area": {
+        "left": 128,
+        "top": 128,
+        "right": 320,
+        "bottom": 128
+      },
+      "alpha": "straight_srgb",
+      "state": "palm_guard_contact",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py; Pillow",
+      "prompt_version": "GZ-C01-POSE-CONTACT-v1",
+      "prompt": "Identity-preserving half-kneel contact/recoil end pose; one palm remains defensive; low chest light.",
+      "runtime_allowed": true,
+      "sha256": "ef33acfc9ea93eb649664f9e2b7cc5580475f156ecc705636d48a1674a63c110",
+      "asset_id": "POSE_GZ_C01_KNEEL_CONTACT_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    },
+    {
+      "stable_id": "SPR_GZ_C01_KNEEL_IDLE_V01",
+      "canon_story_source": [
+        "CML008",
+        "V357-C01-S02",
+        "runtime-contract.md 4.2"
+      ],
+      "source_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/sources/guardian_z_map_idle_chroma_v01.png",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/sprite_gz_c01_kneel_idle_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_kneel_idle_v01.png",
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        256,
+        432
+      ],
+      "safe_area": {
+        "left": 32,
+        "top": 32,
+        "right": 32,
+        "bottom": 32
+      },
+      "alpha": "straight_srgb",
+      "state": "half_kneel_idle",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py; Pillow",
+      "prompt_version": "GZ-C01-MAP-IDLE-v1",
+      "prompt": "Dedicated half-kneel chibi idle at fixed three-quarter map camera; no standing pose.",
+      "runtime_allowed": true,
+      "sha256": "021fddee667eb47c18c0237449308d39312b75fad620820ead28c5e27d096bd0",
+      "asset_id": "SPR_GZ_C01_KNEEL_IDLE_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    },
+    {
+      "stable_id": "SPR_GZ_C01_KNEEL_GUARD_V01",
+      "canon_story_source": [
+        "CML008",
+        "V357-C01-S02",
+        "runtime-contract.md 2, 4.2"
+      ],
+      "source_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/sources/guardian_z_map_guard_chroma_v01.png",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/sprite_gz_c01_kneel_guard_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_kneel_guard_v01.png",
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        256,
+        432
+      ],
+      "safe_area": {
+        "left": 32,
+        "top": 32,
+        "right": 32,
+        "bottom": 32
+      },
+      "alpha": "straight_srgb",
+      "state": "palm_guard",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py; Pillow",
+      "prompt_version": "GZ-C01-MAP-GUARD-v1",
+      "prompt": "Dedicated half-kneel chibi state with exactly one open defensive palm and fixed map camera.",
+      "runtime_allowed": true,
+      "sha256": "2782e0922400534b0ad4359e4f8c0a58f077dbcfbaa5ad29b94aa56e0f39240c",
+      "asset_id": "SPR_GZ_C01_KNEEL_GUARD_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    },
+    {
+      "stable_id": "SPR_GZ_C01_KNEEL_RECOIL_V01",
+      "canon_story_source": [
+        "CML008",
+        "V357-C01-S02",
+        "runtime-contract.md 4.2"
+      ],
+      "source_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/sources/guardian_z_map_recoil_chroma_v02.png",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/sprite_gz_c01_kneel_recoil_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_kneel_recoil_v01.png",
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        256,
+        432
+      ],
+      "safe_area": {
+        "left": 32,
+        "top": 32,
+        "right": 32,
+        "bottom": 32
+      },
+      "alpha": "straight_srgb",
+      "state": "recoil",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py; Pillow",
+      "prompt_version": "GZ-C01-MAP-RECOIL-v2",
+      "prompt": "Dedicated half-kneel chibi recoil with a clearly compressed shoulder line and backward torso read at 128 pixels; fixed footing and camera; no explosion.",
+      "runtime_allowed": true,
+      "sha256": "f8811239665b48f4e30c2deaee06ba8be323c222ea6467d430034270bc2b3dd7",
+      "asset_id": "SPR_GZ_C01_KNEEL_RECOIL_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    },
+    {
+      "stable_id": "SHADOW_GZ_C01_KNEEL_V01",
+      "canon_story_source": [
+        "runtime-contract.md 4.2"
+      ],
+      "source_path": "docs/superpowers/specs/production/battle-presentation-v0.1/build_art_delivery.py",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/shadow_gz_c01_kneel_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/guardian_z/shadow_gz_c01_kneel_v01.png",
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        256,
+        432
+      ],
+      "safe_area": {
+        "left": 32,
+        "top": 32,
+        "right": 32,
+        "bottom": 32
+      },
+      "alpha": "straight_srgb",
+      "state": "runtime_support",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "Pillow deterministic ellipse and blur",
+      "prompt_version": "deterministic-v1",
+      "prompt": "No generation prompt used.",
+      "runtime_allowed": true,
+      "sha256": "025e9883b689ad93e0a406cd584bd328d82b305c4f883703a9d5a388084b07e9",
+      "asset_id": "SHADOW_GZ_C01_KNEEL_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    },
+    {
+      "stable_id": "CUTIN_DOUDENG_C01_COMMAND_V01",
+      "canon_story_source": [
+        "CML002",
+        "V357-C01-S02",
+        "runtime-contract.md 4.3"
+      ],
+      "source_path": ".superpowers/brainstorm/37837-1782033239/content/asset-production/core-cast-v1/core_doudeng_expressions.png",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/cutin_doudeng_c01_command_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/guardian_z/cutin_doudeng_c01_command_v01.png",
+      "width": 1920,
+      "height": 640,
+      "pivot": [
+        960,
+        320
+      ],
+      "safe_area": {
+        "left": 160,
+        "top": 64,
+        "right": 160,
+        "bottom": 64
+      },
+      "alpha": "straight_srgb",
+      "state": "locked_current",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "Existing locked source; Pillow quadrant extraction and layout",
+      "prompt_version": "source-predates-delivery",
+      "prompt": "No generation prompt used.",
+      "runtime_allowed": true,
+      "sha256": "4a1ba3bd014ddb2127ece33b342e1403d637ff199fd2b8d3a88d030d020c54b3",
+      "asset_id": "CUTIN_DOUDENG_C01_COMMAND_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    },
+    {
+      "stable_id": "CUTIN_DOUDENG_C01_OBSERVE_V01",
+      "canon_story_source": [
+        "CML002",
+        "V357-C01-S02",
+        "runtime-contract.md 4.3"
+      ],
+      "source_path": ".superpowers/brainstorm/37837-1782033239/content/asset-production/core-cast-v1/core_doudeng_expressions.png",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/cutin_doudeng_c01_observe_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/guardian_z/cutin_doudeng_c01_observe_v01.png",
+      "width": 1920,
+      "height": 640,
+      "pivot": [
+        960,
+        320
+      ],
+      "safe_area": {
+        "left": 160,
+        "top": 64,
+        "right": 160,
+        "bottom": 64
+      },
+      "alpha": "straight_srgb",
+      "state": "locked_current",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "Existing locked source; Pillow quadrant extraction and layout",
+      "prompt_version": "source-predates-delivery",
+      "prompt": "No generation prompt used.",
+      "runtime_allowed": true,
+      "sha256": "b8530e98b9d76edb9275680488558167ad368697fe6f55a3af00ac5492196d3a",
+      "asset_id": "CUTIN_DOUDENG_C01_OBSERVE_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    },
+    {
+      "stable_id": "CUTIN_DOUDENG_C01_TENSE_V01",
+      "canon_story_source": [
+        "CML002",
+        "V357-C01-S02",
+        "runtime-contract.md 4.3"
+      ],
+      "source_path": ".superpowers/brainstorm/37837-1782033239/content/asset-production/core-cast-v1/core_doudeng_expressions.png",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/cutin_doudeng_c01_tense_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/guardian_z/cutin_doudeng_c01_tense_v01.png",
+      "width": 1920,
+      "height": 640,
+      "pivot": [
+        960,
+        320
+      ],
+      "safe_area": {
+        "left": 160,
+        "top": 64,
+        "right": 160,
+        "bottom": 64
+      },
+      "alpha": "straight_srgb",
+      "state": "locked_current",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "Existing locked source; Pillow quadrant extraction and layout",
+      "prompt_version": "source-predates-delivery",
+      "prompt": "No generation prompt used.",
+      "runtime_allowed": true,
+      "sha256": "c846e48b04b7d8671fd4853330487d0f39d1df98a70550d1f03d49770a26f159",
+      "asset_id": "CUTIN_DOUDENG_C01_TENSE_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    },
+    {
+      "stable_id": "CUTIN_DOUDENG_C01_SAFETY_LOCK_V01",
+      "canon_story_source": [
+        "CML002",
+        "V357-C01-S02",
+        "runtime-contract.md 2, 4.3"
+      ],
+      "source_path": ".superpowers/brainstorm/37837-1782033239/content/asset-production/core-cast-v1/core_doudeng_expressions.png",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/cutin_doudeng_c01_safety_lock_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/guardian_z/cutin_doudeng_c01_safety_lock_v01.png",
+      "width": 1920,
+      "height": 640,
+      "pivot": [
+        960,
+        320
+      ],
+      "safe_area": {
+        "left": 160,
+        "top": 64,
+        "right": 160,
+        "bottom": 64
+      },
+      "alpha": "straight_srgb",
+      "state": "locked_current",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "Existing locked source; Pillow quadrant extraction and layout",
+      "prompt_version": "source-predates-delivery",
+      "prompt": "No generation prompt used.",
+      "runtime_allowed": true,
+      "sha256": "4a355eb15ccc169553f7ea294517c154d82d0cb2b093367d13fc16ae77dbce79",
+      "asset_id": "CUTIN_DOUDENG_C01_SAFETY_LOCK_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    },
+    {
+      "stable_id": "SPR_SEAL_DRONE_C01_IDLE_V01",
+      "canon_story_source": [
+        "CML031",
+        "ENEMY_SEAL_DRONE",
+        "wanji_c01_mecha_scene_asset_contract_v1.json"
+      ],
+      "source_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/sources/seal_drone_b_base_chroma_v01.png",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/sprite_seal_drone_c01_idle_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_idle_v01.png",
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        256,
+        416
+      ],
+      "safe_area": {
+        "left": 32,
+        "top": 32,
+        "right": 32,
+        "bottom": 32
+      },
+      "alpha": "straight_srgb",
+      "state": "idle",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py; Pillow identity-preserving deterministic state derivation",
+      "prompt_version": "SEAL-DRONE-B-CLEAN-MASTER-v1+STATE-DERIVATIVE-v1",
+      "prompt": "Selected B hover archive-case identity: off-white shell, navy spine, brass joints, four folding clamp limbs, horizontal sealing slot, abstract segmented number lamp; no monster face, conventional weapons, text, or extra limbs.",
+      "runtime_allowed": true,
+      "sha256": "0853afbe45602cc412718a11d4cdb760eb0c15d96974061b4ff2358ce0351de4",
+      "asset_id": "SPR_SEAL_DRONE_C01_IDLE_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    },
+    {
+      "stable_id": "SPR_SEAL_DRONE_C01_SCAN_V01",
+      "canon_story_source": [
+        "CML031",
+        "ENEMY_SEAL_DRONE",
+        "wanji_c01_mecha_scene_asset_contract_v1.json"
+      ],
+      "source_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/sources/seal_drone_b_base_chroma_v01.png",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/sprite_seal_drone_c01_scan_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_scan_v01.png",
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        256,
+        416
+      ],
+      "safe_area": {
+        "left": 32,
+        "top": 32,
+        "right": 32,
+        "bottom": 32
+      },
+      "alpha": "straight_srgb",
+      "state": "scan",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py; Pillow identity-preserving deterministic state derivation",
+      "prompt_version": "SEAL-DRONE-B-CLEAN-MASTER-v1+STATE-DERIVATIVE-v1",
+      "prompt": "Selected B hover archive-case identity: off-white shell, navy spine, brass joints, four folding clamp limbs, horizontal sealing slot, abstract segmented number lamp; no monster face, conventional weapons, text, or extra limbs.",
+      "runtime_allowed": true,
+      "sha256": "d5d68e5120b2ac9a5208476b892045ced1727d15188928a564d1d633fe6fd8ec",
+      "asset_id": "SPR_SEAL_DRONE_C01_SCAN_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    },
+    {
+      "stable_id": "SPR_SEAL_DRONE_C01_LOCK_V01",
+      "canon_story_source": [
+        "CML031",
+        "ENEMY_SEAL_DRONE",
+        "wanji_c01_mecha_scene_asset_contract_v1.json"
+      ],
+      "source_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/sources/seal_drone_b_base_chroma_v01.png",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/sprite_seal_drone_c01_lock_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_lock_v01.png",
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        256,
+        416
+      ],
+      "safe_area": {
+        "left": 32,
+        "top": 32,
+        "right": 32,
+        "bottom": 32
+      },
+      "alpha": "straight_srgb",
+      "state": "lock",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py; Pillow identity-preserving deterministic state derivation",
+      "prompt_version": "SEAL-DRONE-B-CLEAN-MASTER-v1+STATE-DERIVATIVE-v1",
+      "prompt": "Selected B hover archive-case identity: off-white shell, navy spine, brass joints, four folding clamp limbs, horizontal sealing slot, abstract segmented number lamp; no monster face, conventional weapons, text, or extra limbs.",
+      "runtime_allowed": true,
+      "sha256": "1dffe70114d9572a455eb66628b679415304f8e986b3bc6606eecab755dbc007",
+      "asset_id": "SPR_SEAL_DRONE_C01_LOCK_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    },
+    {
+      "stable_id": "SPR_SEAL_DRONE_C01_HIT_V01",
+      "canon_story_source": [
+        "CML031",
+        "ENEMY_SEAL_DRONE",
+        "wanji_c01_mecha_scene_asset_contract_v1.json"
+      ],
+      "source_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/sources/seal_drone_b_base_chroma_v01.png",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/sprite_seal_drone_c01_hit_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_hit_v01.png",
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        256,
+        416
+      ],
+      "safe_area": {
+        "left": 24,
+        "top": 24,
+        "right": 24,
+        "bottom": 24
+      },
+      "alpha": "straight_srgb",
+      "state": "hit",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py; Pillow identity-preserving deterministic state derivation",
+      "prompt_version": "SEAL-DRONE-B-CLEAN-MASTER-v1+STATE-DERIVATIVE-v1",
+      "prompt": "Selected B hover archive-case identity: off-white shell, navy spine, brass joints, four folding clamp limbs, horizontal sealing slot, abstract segmented number lamp; no monster face, conventional weapons, text, or extra limbs.",
+      "runtime_allowed": true,
+      "sha256": "24abddb0e4113e45a57baf735c7cdb7f6eb8401f5994682e0fc2a7d9988ca9bf",
+      "asset_id": "SPR_SEAL_DRONE_C01_HIT_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    },
+    {
+      "stable_id": "SPR_SEAL_DRONE_C01_DISABLED_V01",
+      "canon_story_source": [
+        "CML031",
+        "ENEMY_SEAL_DRONE",
+        "wanji_c01_mecha_scene_asset_contract_v1.json"
+      ],
+      "source_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/sources/seal_drone_b_base_chroma_v01.png",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/sprite_seal_drone_c01_disabled_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_disabled_v01.png",
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        256,
+        416
+      ],
+      "safe_area": {
+        "left": 24,
+        "top": 24,
+        "right": 24,
+        "bottom": 24
+      },
+      "alpha": "straight_srgb",
+      "state": "disabled",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py; Pillow identity-preserving deterministic state derivation",
+      "prompt_version": "SEAL-DRONE-B-CLEAN-MASTER-v1+STATE-DERIVATIVE-v1",
+      "prompt": "Selected B hover archive-case identity: off-white shell, navy spine, brass joints, four folding clamp limbs, horizontal sealing slot, abstract segmented number lamp; no monster face, conventional weapons, text, or extra limbs.",
+      "runtime_allowed": true,
+      "sha256": "6c02cd15360c15f3a09a643a8393f033c4fa5515e61aae65690efd949e072d34",
+      "asset_id": "SPR_SEAL_DRONE_C01_DISABLED_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    },
+    {
+      "stable_id": "SHADOW_SEAL_DRONE_C01_V01",
+      "canon_story_source": [
+        "CML031",
+        "ENEMY_SEAL_DRONE",
+        "wanji_c01_mecha_scene_asset_contract_v1.json"
+      ],
+      "source_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/sources/seal_drone_b_base_chroma_v01.png",
+      "delivery_path": "docs/superpowers/specs/production/battle-presentation-v0.1/art-delivery/approved/shadow_seal_drone_c01_v01.png",
+      "runtime_path": "res://assets/battle_presentation/c01/seal_drone/shadow_seal_drone_c01_v01.png",
+      "width": 512,
+      "height": 512,
+      "pivot": [
+        256,
+        416
+      ],
+      "safe_area": {
+        "left": 32,
+        "top": 32,
+        "right": 32,
+        "bottom": 32
+      },
+      "alpha": "straight_srgb",
+      "state": "runtime_support",
+      "approval_status": "approved_for_runtime",
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py; Pillow identity-preserving deterministic state derivation",
+      "prompt_version": "SEAL-DRONE-B-CLEAN-MASTER-v1+STATE-DERIVATIVE-v1",
+      "prompt": "Selected B hover archive-case identity: off-white shell, navy spine, brass joints, four folding clamp limbs, horizontal sealing slot, abstract segmented number lamp; no monster face, conventional weapons, text, or extra limbs.",
+      "runtime_allowed": true,
+      "sha256": "7846229d7ce52073833de35f0406a96a19bc4322901102eea79dd65875a8984f",
+      "asset_id": "SHADOW_SEAL_DRONE_C01_V01",
+      "status": "approved_for_runtime",
+      "source_approval_status": "approved_for_runtime"
+    }
+  ],
+  "animation_sequences": [
+    {
+      "stable_id": "ANIM_GZ_C01_MAP_HALF_KNEEL_DEFENSE_V01",
+      "approval_status": "approved_for_runtime",
+      "frames": [
+        {
+          "asset_id": "SPR_GZ_C01_KNEEL_IDLE_V01",
+          "duration_ms": 400
+        },
+        {
+          "asset_id": "SPR_GZ_C01_KNEEL_GUARD_V01",
+          "duration_ms": 220
+        },
+        {
+          "asset_id": "SPR_GZ_C01_KNEEL_RECOIL_V01",
+          "duration_ms": 160
+        },
+        {
+          "asset_id": "SPR_GZ_C01_KNEEL_IDLE_V01",
+          "duration_ms": 240
+        }
+      ],
+      "notes": "Return-to-idle intentionally reuses the identical idle asset so the end axis and volume cannot drift. This is a four-state sequence, not four invented Q-version frames from one illustration."
+    },
+    {
+      "stable_id": "ANIM_GZ_C01_FULLSCALE_PALM_GUARD_V01",
+      "approval_status": "approved_for_runtime",
+      "frames": [
+        {
+          "asset_id": "POSE_GZ_C01_KNEEL_START_V01"
+        },
+        {
+          "asset_id": "POSE_GZ_C01_KNEEL_PALM_GUARD_V01"
+        },
+        {
+          "asset_id": "POSE_GZ_C01_KNEEL_CONTACT_V01"
+        }
+      ]
+    },
+    {
+      "stable_id": "ANIM_SEAL_DRONE_C01_SCAN_LOCK_V01",
+      "approval_status": "approved_for_runtime",
+      "frames": [
+        {
+          "asset_id": "SPR_SEAL_DRONE_C01_IDLE_V01",
+          "duration_ms": 300
+        },
+        {
+          "asset_id": "SPR_SEAL_DRONE_C01_SCAN_V01",
+          "duration_ms": 260
+        },
+        {
+          "asset_id": "SPR_SEAL_DRONE_C01_LOCK_V01",
+          "duration_ms": 480
+        },
+        {
+          "asset_id": "SPR_SEAL_DRONE_C01_IDLE_V01",
+          "duration_ms": 240
+        }
+      ],
+      "notes": "Hit and disabled are reaction states, not forced into the scan-lock sequence."
+    }
+  ],
+  "video_gate": {
+    "status": "mother_frames_approved_video_not_started",
+    "platform": null,
+    "model": null,
+    "commercial_terms_confirmed": false,
+    "allowed_outputs_after_approval": "2-3 candidates around 2 seconds each",
+    "midjourney_policy": "Prompt and manual-submission package only; no unofficial automation."
+  }
+}

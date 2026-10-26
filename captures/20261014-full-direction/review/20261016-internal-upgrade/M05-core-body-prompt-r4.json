@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-19",
+  "generation_mode": "built-in image_gen",
+  "source_images": [
+    "samples/M05-full-loadout-style-r2.png",
+    "samples/M05-head-L-harpoon-r4b.png"
+  ],
+  "prompt": "Use case: precise-object-edit\nAsset type: Complete King BASE BODY / unarmored accessory-free chassis source illustration.\nDerive the SAME King in image 1 with the detachable accessory packs removed, and fit the exact NEW HEAD in image 2. One complete full-body standing character, no separate inset views.\n\nImage 1 is authority for the underlying King body, colors and family. Image 2 is the new head authority, superseding image 1's head. Match its navy helmet, warm ivory eyes, ivory angular jaw, crimson chin, gold cheeks, and five-member crown: four paired side fins (long inner pair, shorter outer pair) and ONE central FORWARD L-SHAPED HARPOON HORN. The central horn rises and turns forward with a small backward barb, as clearly shown in the side reference. Do not convert it back to a straight vertical blade. Maintain its exact physical design when viewed in three-quarter perspective.\n\nBase body to RETAIN:\n- A tall, substantial, muscular premium hero chassis, broader chest and stronger thighs/calves than the related teal mass-production unit. Normal tall head volume, long enough legs, confident heavy feet, shoulder/waist articulation.\n- Navy main torso, ivory upper arms/thighs/shin panels, crimson abdomen and small accents, flat gold edging/joint caps.\n- Two recessed rectangular gold chest cooling louvres and the existing small gold champion chest emblem; layered red abdominal core.\n- Compact, sloped navy/ivory permanent shoulder under-armor, exposed dark round shoulder/elbow/knee joints with gold caps.\n- Complete normal humanoid forearms and TWO NORMAL HANDS, relaxed fists, clearly visible wrist/forearm quick-mount collars. Right drill can later slide onto the right forearm; left shield clips to left forearm, neither is attached now.\n- Clear upper-back connector sockets and leg outboard quick-mount rails, integrated into actual armor.\n- Existing navy/ivory broad boots with gold toe caps. Keep complete knees, ankles and soles.\n\nREMOVE from image 1, revealing the base body beneath:\nALL layered wing fans and wing-root thrusters, both heavy shoulder cannons and their dorsal backbone, right drill, left shield, all four thigh/calf missile pods, enlarged detachable shoulder outer caps, and extra overlying waist/shin armor shells. Do not leave weapons floating or strewn around.\nThe base has a normal small back housing, not an invisible backpack. Simplify only detachable mass, not the royal identity or underlying leg length. Crown is still worn as identity equipment; it has a detachable head-band interface.\n\nComposition: same upright heroic three-quarter stance as the original but both arms naturally down/slightly out to show the body, feet apart grounded. Slight eye-level three-quarter camera, no wide-angle distortion. Entire crown and all feet inside a portrait canvas with ample clear margin. Head/face must remain readable; do not bury head in shoulders.\nStyle: same clean KINETIC CEL painting, thick controlled contours, broad matte painted planes, two-step hard shadows, restrained gold highlights. No tiny scratches, no chrome glare, no realistic 3D toy render.\nTrue transparent background, one base robot only, no text or logos beyond the existing original champion emblem.",
+  "output": "samples/M05-core-body-r4.png",
+  "transparent_background": true,
+  "source_refs": [
+    {
+      "file": "samples/M05-full-loadout-style-r2.png",
+      "sha256": "017550aa8e0070bd458e5ad185e0ae5953bf1ec347a76c32a427d59fb9af129a"
+    },
+    {
+      "file": "samples/M05-head-L-harpoon-r4b.png",
+      "sha256": "61580e218a504b4679ea15e5bf5f8544e3d9255f72865323d23799b32f7c1993"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-19",
+  "generation_mode": "built-in image_gen",
+  "user_accepted": false,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "status": "source_candidate_pending_user_review",
+  "existing_batch": "design-followthrough-r1.json",
+  "independent_review": false,
+  "revision": "M05-full-loadout-production-r1",
+  "asset": "M05 / 完全版王者",
+  "canon_entity": "MECHA_C02_COMPLETE_KING",
+  "file": "samples/M05-full-loadout-r1b.png",
+  "sha256": "0df4a2889f99df35087ce69e9dbf5b05d5a2afee54aaf7f54d761a2f5d1ebff1",
+  "pixel_size": [
+    1448,
+    1086
+  ],
+  "mode": "RGBA",
+  "alpha": {
+    "range": [
+      0,
+      255
+    ],
+    "fully_transparent_pixels": 888407,
+    "fully_opaque_pixels": 1237,
+    "partially_transparent_pixels": 682884,
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-8ba40e5c-6b0b-4e30-9e7c-4c441ae8b5a6.png",
+  "prompts": [
+    "M05-full-loadout-prompt-r1.json",
+    "M05-full-loadout-framing-prompt-r1b.json"
+  ],
+  "source_refs": [
+    {
+      "file": "../20261016-r3-wave1/images/eecab69cba7e4674fcd49ce5f770f748d002673310f28047037009a1f3ab907f.jpg",
+      "role": "latest body/head family/palette and right drill-left shield authority",
+      "sha256": "eecab69cba7e4674fcd49ce5f770f748d002673310f28047037009a1f3ab907f"
+    },
+    {
+      "file": "../20261016-r3-wave1/images/238d61d6f6bb0cb924984939b9b06983f443b46f46f666f7ba9664ad5c6cbbf2.jpg",
+      "role": "layered wing/backpack construction",
+      "sha256": "238d61d6f6bb0cb924984939b9b06983f443b46f46f666f7ba9664ad5c6cbbf2"
+    },
+    {
+      "file": "game-godot/assets/formula_lab/chapter_c02_v2/king-drill.png",
+      "role": "earlier actual full-equipment mass/arm drill/cannon support; style and red chest not adopted",
+      "base": "project",
+      "sha256": "82e58b537b8ac490c99fbc9fa9c99cec05a0911bd4983f26479cc8c813830783"
+    }
+  ],
+  "reader": "next-batch-mecha-20261019.html#complete-king",
+  "author_review": {
+    "actual_media": "实际完整M05全装备首稿及补画幅R1b，对照当前M05、F04层翼与项目右臂钻旧源图。",
+    "observed": [
+      "自身右臂大金钻（画面左侧）、自身左臂白盾（画面右侧）；钻不在腿或胯。",
+      "两门主炮有金色圆轴座，位于背肩，向躯干前方平行；未挂在头盔上。",
+      "分层机械翼、翼根小翼/推进器、外侧腿甲发射舱恢复装备密度；头胸仍可辨。",
+      "R1b画幅内所有翼尖、钻尖、盾尖和鞋底完整；上左被裁掉的红色尖端已补。"
+    ],
+    "limits": [
+      "新样例尚未获用户确认，头部冠片具体数量/额前短冲角和各炮轴活动范围须在放大结构稿继续固定。",
+      "画幅留白并非严格统一5%；部分翼尖和鞋底仍较靠边，游戏导出须另留安全边。",
+      "手绘源图不能证明翼/炮/盾运动互不干涉；未做模型、动作或运行。"
+    ]
+  },
+  "attempts": [
+    {
+      "file": "samples/M05-full-loadout-r1-draft-cropped.png",
+      "sha256": "655bc80f8c4e1431093fe1df523277330c518c3107fde0e9e8c54a37e14352ae",
+      "pixel_size": [
+        1448,
+        1086
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 740717,
+        "fully_opaque_pixels": 1032,
+        "partially_transparent_pixels": 830779,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "selected": false,
+      "result": "two_upper_left_wing_tips_clipped_and_boots_too_close_to_edge"
+    },
+    {
+      "file": "samples/M05-full-loadout-r1b.png",
+      "selected": true,
+      "result": "full_silhouette_in_frame_pending_user",
+      "method": "统一缩小画幅内同一机体，补回两处缺损翼尖，不重新设计装备。"
+    }
+  ],
+  "next_after_source_confirmation": [
+    "固定相同头冠、盾徽、臂钻接口、双主炮轴座与层翼分组",
+    "制作结构/活动让位图及正侧背；完整装备与主动卸装保持同一机体身份"
+  ]
+}

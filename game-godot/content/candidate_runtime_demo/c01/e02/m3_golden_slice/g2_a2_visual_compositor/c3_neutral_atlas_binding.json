@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "binding_id": "C01E02_G2_A2_C3_NEUTRAL_ATLAS_EXACT_RECEIPT_OVERLAY_V1",
+  "task_id": "G2_A2_C3_CURRENT_TOPOLOGY_REAL_ATLAS_NEUTRAL_CONSUMER",
+  "status": "FIXTURE_ONLY_REAL_ART_ZERO",
+  "producer_correction": {
+    "path": "docs/superpowers/specs/production/c01-current-demo-v1/102-c01e02-task98-runtime-grid-registration-producer-correction.md",
+    "sha256": "e8556f917456da83d933842b9ace9542f5238635d5166a6f5b7adbfad0d62378",
+    "superseded_visual_registration_artifacts": [
+      "CURRENT_TOPOLOGY_ACTOR_FREE_WORLD_GUIDE_1280x720.png",
+      "PLAN_SLOT_COMPOSITE_QA_1280x720.png",
+      "PLAN_SLOT_COMPOSITE_QA_50_PERCENT_640x360.png"
+    ],
+    "task98_composite_zero_pixel_claim_allowed": false,
+    "c3_registration_evidence_source": "runtime_projection_helper_plus_actual_C3_GPU_frames_only"
+  },
+  "task98_inputs": {
+    "atlas_schema_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/atlas-schema-current.json",
+    "atlas_schema_sha256": "159c0af021c99a8c778692f5b02794e5ec55a476514da55ff55958baa19e8e5d",
+    "slot_contract_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/map-camera-slot-contract.json",
+    "slot_contract_sha256": "17e195dcac011be803bd69d893a918830dd838a5aa7a4aedd3e76bab45fb1a24",
+    "socket_contract_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/socket-contact-contract.json",
+    "socket_contract_sha256": "c954af9b0ac7e5a1ef0e55f95b613367af9ab5ddbaec3fc55f5f4a258e5b8ea5",
+    "phase_matrix_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/first-round-state-facing-phase-matrix.tsv",
+    "phase_matrix_sha256": "992ff3e6c35eb5cf6aa69ae928190f5c8ac3bb11927474569e1211ebb655bb2e",
+    "continuity_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-s-c2-sprite-first-map-camera-masters/first-round-phase-continuity-readback.tsv",
+    "continuity_sha256": "e03f74e3e81ce888554b7ec0ba7e8e5c8e81600a1bc1f1974b755d73b7d64199"
+  },
+  "bindings": [
+    {
+      "stable_id": "V353U001",
+      "slot_id": "guardian_z_map_current",
+      "revision": "task98_preproduction_v1",
+      "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_guardian_z_neutral_768x768.png",
+      "sha256": "12196a8b5e66c5b8ebd891ae232361238ce08d3ec56d13a72e216eed4db73988"
+    },
+    {
+      "stable_id": "ENEMY_C01_BREAKER",
+      "slot_id": "breaker_map_current",
+      "revision": "task98_preproduction_v1",
+      "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_breaker_neutral_1152x768.png",
+      "sha256": "debdafd803f9f5c68420726e3b9abf29ab4a2608eecb6a61833fce4fc3407391"
+    },
+    {
+      "stable_id": "TARGET_C01_EMERGENCY_VEHICLE_01",
+      "slot_id": "emergency_vehicle_map_current",
+      "revision": "task98_preproduction_v1",
+      "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_emergency_vehicle_neutral_256x256.png",
+      "sha256": "315db68cdde10d4ac1ba049d393d785c3a401b7e02f4160864aeb39373e342d6"
+    },
+    {
+      "stable_id": "ENEMY_C01_RIFT_SWARM",
+      "slot_id": "rift_swarm_map_current",
+      "revision": "task98_preproduction_v1",
+      "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_rift_swarm_neutral_384x192.png",
+      "sha256": "ff96a2b0ee1e02d4941684b1953b51072b969b364f185bfc097bd1cc2f8bc65b"
+    }
+  ],
+  "generation_receipt": {
+    "generator": "scripts/generate_c01e02_g2_a2_c3_neutral_atlases.py",
+    "visible_primitive_allowlist": [
+      "bitmap_frame_number",
+      "facing_arrow",
+      "socket_cross",
+      "asymmetric_color_block",
+      "neutral_frame_border"
+    ],
+    "identity_pixels_loaded": false,
+    "source_art_opened": false,
+    "sprite_png_contains_shadow": false
+  },
+  "view_space": "map_dimetric_40x20",
+  "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+  "approved_handoffs": [],
+  "fixture_validation_only": true,
+  "runtime_bindable": false,
+  "real_art_loaded": 0,
+  "call03_allowed": false
+}

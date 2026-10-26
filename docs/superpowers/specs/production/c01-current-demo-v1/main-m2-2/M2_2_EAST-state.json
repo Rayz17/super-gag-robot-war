@@ -1,0 +1,166 @@
+{
+	"actual_camera_center": [
+		830.0,
+		620.0
+	],
+	"actual_world_rect": [
+		380.0,
+		323.0,
+		1280.0,
+		917.0
+	],
+	"approved_handoffs": 0,
+	"asset_render_audit": {
+		"map_layers": [
+			"MAP_C01CDV1_R2_BASE",
+			"MAP_C01CDV1_R2_BUILDINGS",
+			"MAP_C01CDV1_R2_STATE_LAYERS",
+			"MAP_C01CDV1_R2_ROOFS",
+			"MAP_C01CDV1_R2_FOREGROUND"
+		],
+		"occlusion_mask_alpha": 0.0,
+		"occlusion_mask_sampled": true,
+		"overhead_alpha": 1.0,
+		"overhead_faded_for_selected_unit": false,
+		"qsd_frames": {
+			"ENEMY_C01_BREAKER": {
+				"anchor": "(23, 8)",
+				"frame_id": "idle/south",
+				"slot_id": "ENEMY_C01CDV1_BREAKER_GROUND"
+			},
+			"ENEMY_C01_RIFT_SWARM_01": {
+				"anchor": "(17, 7)",
+				"frame_id": "idle/east",
+				"slot_id": "ENEMY_C01CDV1_RIFT_SWARM_MASTER"
+			},
+			"ENEMY_C01_RIFT_SWARM_02": {
+				"anchor": "(18, 7)",
+				"frame_id": "idle/south",
+				"slot_id": "ENEMY_C01CDV1_RIFT_SWARM_MASTER"
+			},
+			"ENEMY_C01_RIFT_SWARM_03": {
+				"anchor": "(26, 5)",
+				"frame_id": "idle/west",
+				"slot_id": "ENEMY_C01CDV1_RIFT_SWARM_MASTER"
+			},
+			"ENEMY_C01_RIFT_SWARM_05": {
+				"anchor": "(29, 8)",
+				"frame_id": "idle/east",
+				"slot_id": "ENEMY_C01CDV1_RIFT_SWARM_MASTER"
+			},
+			"ENEMY_C01_RIFT_SWARM_06": {
+				"anchor": "(20, 10)",
+				"frame_id": "idle/north",
+				"slot_id": "ENEMY_C01CDV1_RIFT_SWARM_MASTER"
+			},
+			"V353U001": {
+				"anchor": "(21, 9)",
+				"frame_id": "idle/east",
+				"slot_id": "MECHA_C01CDV1_GUARDIAN_Z"
+			}
+		},
+		"selected_unit_occluded": false,
+		"shield_draw_count": 1,
+		"shield_draw_source": "verified_candidate_asset",
+		"shield_slot_id": "PROP_C01CDV1_RETIRED_SHIELD_HEAT_DEFORMED",
+		"shield_state": "heat_deformed"
+	},
+	"breaker_weight_state": "off_axis",
+	"build_id": "C01CDV1-M2-R2",
+	"camera_bounds": [
+		-270.0,
+		277.0,
+		1100.0,
+		406.0
+	],
+	"capture_id": "EAST",
+	"capture_role": "cleared_rescue_lane_and_finisher_ready",
+	"content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+	"finisher_ready": true,
+	"finisher_triggered": false,
+	"gameplay_state_mutation": false,
+	"loaded_slot_count": 13,
+	"loaded_slot_ids": [
+		"ENEMY_C01CDV1_BREAKER_GROUND",
+		"ENEMY_C01CDV1_RIFT_SWARM_MASTER",
+		"MAP_C01CDV1_R2_BASE",
+		"MAP_C01CDV1_R2_BUILDINGS",
+		"MAP_C01CDV1_R2_FOREGROUND",
+		"MAP_C01CDV1_R2_OCCLUSION_MASK",
+		"MAP_C01CDV1_R2_ROOFS",
+		"MAP_C01CDV1_R2_STATE_LAYERS",
+		"MECHA_C01CDV1_GUARDIAN_Z",
+		"PROP_C01CDV1_RETIRED_SHIELD_HEAT_DEFORMED",
+		"PROP_C01CDV1_RETIRED_SHIELD_HELD_COLD",
+		"PROP_C01CDV1_RETIRED_SHIELD_RED_BLOCKED",
+		"PROP_C01CDV1_RETIRED_SHIELD_WALL_HUNG"
+	],
+	"profile_id": "c01cdv1_e02_scroll_m2_r2",
+	"requested_review_center": [
+		830.0,
+		620.0
+	],
+	"rescue_lane_state": "cleared",
+	"resource_probe_count": 13,
+	"runtime_art_loaded": false,
+	"screen_rect": [
+		0,
+		54,
+		900,
+		594
+	],
+	"shield_state": "heat_deformed",
+	"swarm_organization_state": "scattered",
+	"swarm_survivor_count": 5,
+	"swarm_survivors": [
+		{
+			"organization_state": "scattered",
+			"position": [
+				17,
+				7
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_01",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				18,
+				7
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_02",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				26,
+				5
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_03",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				29,
+				8
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_05",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				20,
+				10
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_06",
+			"status": "active"
+		}
+	],
+	"synthetic_fixture": true,
+	"tactical_signature": "c01cdv1_e02_scroll_m2_r2|(32, 18)|turn=6|guardian=(21, 9)|breaker=(23, 8):off_axis|shield=true:true|rescue=cleared|ENEMY_C01_RIFT_SWARM_01@(17, 7):2|ENEMY_C01_RIFT_SWARM_02@(18, 7):2|ENEMY_C01_RIFT_SWARM_03@(26, 5):2|ENEMY_C01_RIFT_SWARM_05@(29, 8):2|ENEMY_C01_RIFT_SWARM_06@(20, 10):2|TARGET_C01_EAST_EXIT@(31, 4):6:active|TARGET_C01_EMERGENCY_AMBULANCE@(31, 4):1:evacuated|TARGET_C01_EMERGENCY_BRIDGE_TRUCK@(31, 4):4:evacuated|TARGET_C01_SECURITY_GATE@(25, 5):5:active|TARGET_C01_WARNING_RELAY@(19, 7):2:active",
+	"topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+	"turn": 6
+}

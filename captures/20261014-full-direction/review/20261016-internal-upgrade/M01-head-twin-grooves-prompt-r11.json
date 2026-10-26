@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-18",
+  "mode": "built-in image_gen",
+  "use_case": "precise-object-edit",
+  "user_directive": "头顶天线的黄色凹槽应位于标出的两条黄线，中间应是白色而不是凹槽，才能对应侧视图。",
+  "references": [
+    {
+      "file": "samples/M01-head-front-matched-r10.png",
+      "role": "clean front edit target"
+    },
+    {
+      "file": "refs/M01-user-twin-grooves-markup-r11.png",
+      "original": "/var/folders/jq/4hgyhb2n1plf_fcxf2f9pw_w0000gn/T/codex-clipboard-835d4f65-c138-4539-b836-920f652c0967.png",
+      "role": "user marks exact LEFT/RIGHT groove positions; center must be solid white"
+    },
+    {
+      "file": "refs/M01-user-side-reference-r11.png",
+      "original": "/var/folders/jq/4hgyhb2n1plf_fcxf2f9pw_w0000gn/T/codex-clipboard-da2b73ca-acc4-48e7-b049-648feba339fd.png",
+      "role": "adopted side view remains unchanged"
+    }
+  ],
+  "method_change": "撤回作者一直沿用的单中槽截面；按用户标线固定双侧槽和白中脊的五区截面，直接编辑正面，不再重画已采用侧视。",
+  "transparent_background": true,
+  "prompt": "Use case: precise-object-edit.\nImage 1 is the clean FRONT head EDIT TARGET.\nImage 2 is the user's annotated FRONT view. Its TWO hand-drawn yellow lines mark the correct locations of TWO real recessed gold channels.\nImage 3 is the adopted three-quarter head reference and must NOT be changed.\n\nONLY correct the FRONT crown in image 1:\n1. COMPLETELY REMOVE the long yellow groove currently on the exact vertical CENTERLINE. Fill that entire old slot, including its dark recessed borders, with continuous flush IVORY-WHITE ARMOR. The center is a solid WHITE SPINE, never a groove, dark slit, empty fork, or yellow strip.\n2. Make EXACTLY TWO long narrow recessed ochre-gold channels, one on the LEFT and one on the RIGHT of that solid white spine, located on the two lines marked in image 2. They are mirrored, equal length and width, and follow the crown rearward. They lie WITHIN the left and right white crown bands, not on the teal shell or outside antennas.\n3. Across the crown from left to right, the material sequence MUST be: WHITE OUTER RIM / GOLD RECESSED CHANNEL / BROAD SOLID WHITE CENTRAL SPINE / GOLD RECESSED CHANNEL / WHITE OUTER RIM. The frontal crown has TWO GOLD CHANNELS AND NO CENTRAL GOLD CHANNEL.\n4. Render the two new channels as actual narrow machined recesses with the existing ochre-gold palette and fine shaded edges. The bright yellow strokes in image 2 are placement marks only; do not reproduce thick marker strokes or the checkerboard.\n5. Preserve the small separate rectangular gold forehead insert BELOW the long crown channels, exactly where it is. This lower small insert remains gold; it is not the long central channel being removed.\n6. Keep the crown's outer silhouette, existing armor panel segments, overall height and face proportions. Integrate the new solid center with the surrounding ivory crown, rather than merely recoloring a recessed center slot white.\n\nThis corrects a prior misunderstanding. The adopted three-quarter view exposes the NEAR SIDE CHANNEL; its other side channel is hidden by perspective. It is NOT a single yellow channel on the central spine. Do not move the two new channels back to the middle.\n\nStrictly preserve ALL else in image 1: face, continuous amber visor, closed ivory mask, teal helmet plates and cheeks, symmetric circular temple sensors, two accepted straight rearward temple antennas, neck, gold collar, shoulder shells, cel shading, ink style, palette, original front camera and crop. Actual transparent background. ONE front bust only, no extra views, words, arrows or labels."
+}

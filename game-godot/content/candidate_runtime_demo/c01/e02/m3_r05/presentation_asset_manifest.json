@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "manifest_role": "zero_handoff_schema",
+  "packing_status": "contract_mirrored_zero_handoff",
+  "packing_contract": {
+    "packing_contract_id": "C01E02_R05_MEDIA_PACKING_V2",
+    "resource_path": "res://../docs/superpowers/specs/production/c01-current-demo-v1/42-c01e02-m3-r0-5-media-packing-v2.json",
+    "sha256": "fe75667eac656756e35ddbbb784e250d39c0f8b05c2c14f719234d653b944012"
+  },
+  "identity": {
+    "build_id": "C01CDV1-M3-R0.5-PRES",
+    "presentation_profile_id": "c01cdv1_e02_m3_r05_presentation_v1",
+    "visual_layout_profile_id": "c01cdv1_e02_m3_r05_layout_40x20_v1",
+    "rules_profile_id": "c01cdv1_e02_shared_round_m3_r0",
+    "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+    "candidate_asset_root": "res://content/candidate_runtime_demo/c01/e02/m3_r05/runtime_assets",
+    "runtime_allowed": false,
+    "runtime_handoff": "none"
+  },
+  "coordinate_conventions": {
+    "atlas_origin": "top_left",
+    "frame_order": "row_major",
+    "safe_rect_format": "x_y_width_height_in_single_frame_pixels",
+    "pivot_format": "normalized_within_single_frame",
+    "facings": ["north", "east", "south", "west"]
+  },
+  "approved_handoffs": [],
+  "runtime_state": {
+    "validated_handoff_count": 0,
+    "loaded_slot_count": 0,
+    "resource_probe_count": 0,
+    "runtime_art_loaded": false
+  },
+  "visual_slots": [
+    {"slot_id":"R05_MAP_BASE","expected_stable_id":"MAP_C01CDV1_SCROLLING_STREET_R2_BASE","binding_kind":"static_image","total_size":[2400,1350],"frame_size":[2400,1350],"grid":[1,1],"frame_count":1,"frame_order":["static"],"has_alpha":false,"pivot":[0.5,0.5],"safe_rect":[0,0,2400,1350],"fallback":{"shape":"iso_grid","label":"旧会展广场","color":"26343a"}},
+    {"slot_id":"R05_MAP_BUILDINGS","expected_stable_id":"MAP_C01CDV1_SCROLLING_STREET_R2_BUILDINGS","binding_kind":"static_image","total_size":[2400,1350],"frame_size":[2400,1350],"grid":[1,1],"frame_count":1,"frame_order":["static"],"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[0,0,2400,1350],"fallback":{"shape":"extruded_blocks","label":"城市建筑","color":"354149"}},
+    {"slot_id":"R05_MAP_ROOFS","expected_stable_id":"MAP_C01CDV1_SCROLLING_STREET_R2_ROOFS","binding_kind":"static_image","total_size":[2400,1350],"frame_size":[2400,1350],"grid":[1,1],"frame_count":1,"frame_order":["static"],"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[0,0,2400,1350],"fallback":{"shape":"roof_diamonds","label":"屋顶层","color":"46505a"}},
+    {"slot_id":"R05_MAP_FOREGROUND","expected_stable_id":"MAP_C01CDV1_SCROLLING_STREET_R2_FOREGROUND","binding_kind":"static_image","total_size":[2400,1350],"frame_size":[2400,1350],"grid":[1,1],"frame_count":1,"frame_order":["static"],"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[0,0,2400,1350],"fallback":{"shape":"foreground_lines","label":"前景层","color":"182126"}},
+    {"slot_id":"R05_MAP_OCCLUSION_MASK","expected_stable_id":"MAP_C01CDV1_SCROLLING_STREET_R2_OCCLUSION_MASK","binding_kind":"static_image","total_size":[2400,1350],"frame_size":[2400,1350],"grid":[1,1],"frame_count":1,"frame_order":["static"],"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[0,0,2400,1350],"fallback":{"shape":"occlusion_mask","label":"遮挡层","color":"10171b"}},
+    {"slot_id":"R05_RIFT_SWARM_IDLE_4DIR","expected_stable_id":"ENEMY_C01_RIFT_SWARM","binding_kind":"sprite_atlas","total_size":[384,96],"frame_size":[96,96],"grid":[4,1],"frame_count":4,"frame_order":["idle/north","idle/east","idle/south","idle/west"],"has_alpha":true,"pivot":[0.5,1.0],"safe_rect":[0,0,96,96],"fallback":{"shape":"rift_kite","label":"突入小体","color":"d55e58"}},
+    {"slot_id":"R05_CUTIN_DOUDENG_OBSERVE","expected_stable_id":"CUTIN_DOUDENG_C01_OBSERVE_V01","binding_kind":"static_image","total_size":[1920,640],"frame_size":[1920,640],"grid":[1,1],"frame_count":1,"frame_order":["observe"],"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[160,64,1600,512],"fallback":{"shape":"portrait_badge","label":"兜灯 / 机况","color":"d6a64d"}},
+    {"slot_id":"R05_CUTIN_DOUDENG_TENSE","expected_stable_id":"CUTIN_DOUDENG_C01_TENSE_V01","binding_kind":"static_image","total_size":[1920,640],"frame_size":[1920,640],"grid":[1,1],"frame_count":1,"frame_order":["tense"],"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[160,64,1600,512],"fallback":{"shape":"portrait_badge","label":"兜灯 / 承力","color":"e16d55"}},
+    {"slot_id":"R05_PORTRAIT_JICUN","expected_stable_id":"CH_JICUN","binding_kind":"state_atlas","total_size":[2304,768],"frame_size":[768,768],"grid":[3,1],"frame_count":3,"frame_order":["focused","alarm","resolve"],"has_alpha":true,"pivot":[0.5,1.0],"safe_rect":[96,48,576,696],"fallback":{"shape":"portrait_badge","label":"纪存 / 路线","color":"51a7c0"}},
+    {"slot_id":"R05_PORTRAIT_QIHAI_REMOTE","expected_stable_id":"CH_QIHAI","binding_kind":"state_atlas","total_size":[2304,768],"frame_size":[768,768],"grid":[3,1],"frame_count":3,"frame_order":["controlled","decision","concerned"],"has_alpha":true,"pivot":[0.5,1.0],"safe_rect":[96,48,576,696],"source_layers_required":["character_rgba","remote_noise_mask"],"fallback":{"shape":"remote_badge","label":"七海 / 远程","color":"75a7d8"}},
+    {"slot_id":"R05_COMMS_OLD_GUARDIAN","expected_stable_id":"CH002","binding_kind":"state_atlas","total_size":[3072,768],"frame_size":[1024,768],"grid":[3,1],"frame_count":3,"frame_order":["guide","contact","shield_gaze"],"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[48,32,928,704],"source_layers_required":["head_rgba","chest_rgba","waveform_rgba"],"fallback":{"shape":"machine_wave","label":"旧守护者 / 机体","color":"6fc6b1"}},
+    {"slot_id":"R05_GUARDIAN_MAP_ACTION_4DIR","expected_stable_id":"V353U001","binding_kind":"sprite_atlas","total_size":[1280,1024],"frame_size":[256,256],"grid":[5,4],"frame_count":20,"column_actions":["idle","step_a","step_b","brace","recoil"],"row_facings":["north","east","south","west"],"frame_order":["idle/north","step_a/north","step_b/north","brace/north","recoil/north","idle/east","step_a/east","step_b/east","brace/east","recoil/east","idle/south","step_a/south","step_b/south","brace/south","recoil/south","idle/west","step_a/west","step_b/west","brace/west","recoil/west"],"has_alpha":true,"pivot":[0.5,0.88],"safe_rect":[0,0,256,256],"fallback":{"shape":"guardian_body","label":"馆守Z","color":"58aeb1"}},
+    {"slot_id":"R05_BREAKER_MAP_ACTION_4DIR","expected_stable_id":"ENEMY_C01_BREAKER","binding_kind":"sprite_atlas","total_size":[960,1280],"frame_size":[320,320],"grid":[3,4],"frame_count":12,"column_actions":["idle","charge","contact"],"row_facings":["north","east","south","west"],"frame_order":["idle/north","charge/north","contact/north","idle/east","charge/east","contact/east","idle/south","charge/south","contact/south","idle/west","charge/west","contact/west"],"has_alpha":true,"pivot":[0.5,0.9],"safe_rect":[0,0,320,320],"fallback":{"shape":"breaker_shell","label":"BREAKER","color":"b64b53"}},
+    {"slot_id":"R05_VEHICLE_EAST_MOVE","expected_stable_id":"TARGET_C01_EMERGENCY_AMBULANCE","binding_kind":"sprite_atlas","total_size":[512,128],"frame_size":[128,128],"grid":[4,1],"frame_count":4,"frame_order":["idle/east","move_a/east","move_b/east","move_c/east"],"fps":12,"has_alpha":true,"pivot":[0.5,0.82],"safe_rect":[0,0,128,128],"fallback":{"shape":"ambulance","label":"应急车 / 自动","color":"d4a449"}},
+    {"slot_id":"R05_SHIELD_WALL_HUNG","expected_stable_id":"PROP_C01CDV1_RETIRED_SHIELD_WALL_HUNG","binding_kind":"static_image","total_size":[256,256],"frame_size":[256,256],"grid":[1,1],"frame_count":1,"frame_order":["wall_hung_3_scorches"],"has_alpha":true,"pivot":[0.5,1.0],"safe_rect":[0,0,256,256],"fallback":{"shape":"wall_shield","label":"三焦痕重盾","color":"b58a52"}},
+    {"slot_id":"R05_CUTIN_SWARM_INTERCEPT","expected_stable_id":"V353U001","binding_kind":"layered_static_image","total_size":[1600,900],"frame_size":[1600,900],"grid":[1,1],"frame_count":1,"frame_order":["swarm_intercept"],"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[80,45,1440,810],"fallback":{"shape":"speed_frame","label":"截击关键帧","color":"5fc2b2"}},
+    {"slot_id":"R05_CUTIN_GIANT_CONTACT","expected_stable_id":"V353U001;ENEMY_C01_BREAKER","binding_kind":"layered_static_image","total_size":[1600,900],"frame_size":[1600,900],"grid":[1,1],"frame_count":1,"frame_order":["giant_contact"],"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[80,45,1440,810],"fallback":{"shape":"impact_frame","label":"巨体接触","color":"e5b754"}},
+    {"slot_id":"R05_CUTIN_ARTILLERY_SIDE_HIT","expected_stable_id":"ENEMY_C01_BREAKER","binding_kind":"layered_static_image","total_size":[1600,900],"frame_size":[1600,900],"grid":[1,1],"frame_count":1,"frame_order":["artillery_side_hit"],"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[80,45,1440,810],"fallback":{"shape":"impact_frame","label":"侧甲命中","color":"f1e5b0"}},
+    {"slot_id":"R05_CUTIN_RED_CHARGE","expected_stable_id":"ENEMY_C01_BREAKER","binding_kind":"layered_static_image","total_size":[1600,900],"frame_size":[1600,900],"grid":[1,1],"frame_count":1,"frame_order":["red_charge_only"],"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[80,45,1440,810],"fallback":{"shape":"charge_frame","label":"红缝聚光","color":"dc4450"}},
+    {"slot_id":"R05_FX_CONTACT_DUST","expected_stable_id":"PRES_C01E02_R05_CONTACT_DUST","binding_kind":"fx_atlas","total_size":[2048,256],"frame_size":[256,256],"grid":[8,1],"frame_count":8,"frame_order":["f00","f01","f02","f03","f04","f05","f06","f07"],"fps":18,"has_alpha":true,"pivot":[0.5,1.0],"safe_rect":[0,0,256,256],"fallback":{"shape":"dust_bursts","label":"碰撞尘土","color":"9b8b74"}},
+    {"slot_id":"R05_ROAD_STATE_LONG_BROKEN_ARC","expected_stable_id":"PRES_C01E02_R05_ROAD_LONG_BROKEN_ARC","binding_kind":"full_map_state_layer","total_size":[2400,1350],"frame_size":[2400,1350],"grid":[1,1],"frame_count":1,"frame_order":["long_broken_arc_72"],"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[0,0,2400,1350],"fallback":{"shape":"long_broken_arc","label":"长弧裂痕 / 72","color":"b99771"}},
+    {"slot_id":"R05_FX_ROAD_LONG_BROKEN_ARC_PROCESS","expected_stable_id":"PRES_C01E02_R05_ROAD_LONG_BROKEN_ARC","binding_kind":"fx_atlas","total_size":[3072,256],"frame_size":[512,256],"grid":[6,1],"frame_count":6,"frame_order":["f00","f01","f02","f03","f04","f05"],"fps":18,"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[0,0,512,256],"fallback":{"shape":"long_broken_arc_process","label":"长弧翻起过程","color":"b99771"}},
+    {"slot_id":"R05_ROAD_STATE_TWIN_BUCKLES","expected_stable_id":"PRES_C01E02_R05_ROAD_TWIN_BUCKLES","binding_kind":"full_map_state_layer","total_size":[2400,1350],"frame_size":[2400,1350],"grid":[1,1],"frame_count":1,"frame_order":["twin_buckles_80"],"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[0,0,2400,1350],"fallback":{"shape":"twin_buckles","label":"双隆起 / 80","color":"c3a16f"}},
+    {"slot_id":"R05_FX_ROAD_TWIN_BUCKLES_PROCESS","expected_stable_id":"PRES_C01E02_R05_ROAD_TWIN_BUCKLES","binding_kind":"fx_atlas","total_size":[3072,256],"frame_size":[512,256],"grid":[6,1],"frame_count":6,"frame_order":["f00","f01","f02","f03","f04","f05"],"fps":18,"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[0,0,512,256],"fallback":{"shape":"twin_buckles_process","label":"双隆起过程","color":"c3a16f"}},
+    {"slot_id":"R05_ROAD_STATE_BREAKER_STRAIGHT_GOUGE","expected_stable_id":"PRES_C01E02_R05_ROAD_BREAKER_STRAIGHT_GOUGE","binding_kind":"full_map_state_layer","total_size":[2400,1350],"frame_size":[2400,1350],"grid":[1,1],"frame_count":1,"frame_order":["breaker_straight_gouge_62"],"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[0,0,2400,1350],"fallback":{"shape":"straight_gouge","label":"直线犁沟 / 62","color":"a87968"}},
+    {"slot_id":"R05_FX_ROAD_BREAKER_STRAIGHT_GOUGE_PROCESS","expected_stable_id":"PRES_C01E02_R05_ROAD_BREAKER_STRAIGHT_GOUGE","binding_kind":"fx_atlas","total_size":[3072,256],"frame_size":[512,256],"grid":[6,1],"frame_count":6,"frame_order":["f00","f01","f02","f03","f04","f05"],"fps":18,"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[0,0,512,256],"fallback":{"shape":"straight_gouge_process","label":"直线犁沟过程","color":"a87968"}},
+    {"slot_id":"R05_FX_ARTILLERY_HIT","expected_stable_id":"PRES_C01E02_R05_ARTILLERY_HIT","binding_kind":"fx_atlas","total_size":[2048,256],"frame_size":[256,256],"grid":[8,1],"frame_count":8,"frame_order":["f00","f01","f02","f03","f04","f05","f06","f07"],"fps":18,"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[0,0,256,256],"fallback":{"shape":"white_flash_fragments","label":"炮击白闪","color":"fff2bd"}},
+    {"slot_id":"R05_FX_RED_CHARGE","expected_stable_id":"PRES_C01E02_R05_RED_CHARGE","binding_kind":"fx_atlas","total_size":[2048,256],"frame_size":[256,256],"grid":[8,1],"frame_count":8,"frame_order":["f00","f01","f02","f03","f04","f05","f06","f07"],"fps":18,"loop":true,"has_alpha":true,"pivot":[0.5,0.5],"safe_rect":[0,0,256,256],"fallback":{"shape":"red_charge_loop","label":"红光蓄能","color":"e34751"}}
+  ],
+  "audio_slots": [
+    {"slot_id":"R05_SFX_COMMS_OPEN","expected_stable_id":"PRES_R05_SFX_COMMS_OPEN","codec":"wav_pcm_s24le","sample_rate":48000,"channels":2,"duration_ms":180,"loop":false,"fallback":{"wave":"sine","frequency_hz":660}},
+    {"slot_id":"R05_SFX_COMMS_CLOSE","expected_stable_id":"PRES_R05_SFX_COMMS_CLOSE","codec":"wav_pcm_s24le","sample_rate":48000,"channels":2,"duration_ms":160,"loop":false,"fallback":{"wave":"sine","frequency_hz":440}},
+    {"slot_id":"R05_SFX_CURSOR","expected_stable_id":"PRES_R05_SFX_CURSOR","codec":"wav_pcm_s24le","sample_rate":48000,"channels":2,"duration_ms":60,"loop":false,"fallback":{"wave":"sine","frequency_hz":880}},
+    {"slot_id":"R05_SFX_CONFIRM","expected_stable_id":"PRES_R05_SFX_CONFIRM","codec":"wav_pcm_s24le","sample_rate":48000,"channels":2,"duration_ms":160,"loop":false,"fallback":{"wave":"triangle","frequency_hz":520}},
+    {"slot_id":"R05_SFX_ILLEGAL","expected_stable_id":"PRES_R05_SFX_ILLEGAL","codec":"wav_pcm_s24le","sample_rate":48000,"channels":2,"duration_ms":220,"loop":false,"fallback":{"wave":"square","frequency_hz":170}},
+    {"slot_id":"R05_SFX_SUMMARY_OPEN","expected_stable_id":"PRES_R05_SFX_SUMMARY_OPEN","codec":"wav_pcm_s24le","sample_rate":48000,"channels":2,"duration_ms":240,"loop":false,"fallback":{"wave":"sine","frequency_hz":590}},
+    {"slot_id":"R05_SFX_HOLD_LOOP","expected_stable_id":"PRES_R05_SFX_HOLD_LOOP","codec":"wav_pcm_s24le","sample_rate":48000,"channels":2,"duration_ms":1000,"loop":true,"fallback":{"wave":"pulse","frequency_hz":210}},
+    {"slot_id":"R05_SFX_FOOTSTEP","expected_stable_id":"PRES_R05_SFX_FOOTSTEP","codec":"wav_pcm_s24le","sample_rate":48000,"channels":1,"duration_ms":450,"loop":false,"fallback":{"wave":"noise","frequency_hz":82}},
+    {"slot_id":"R05_SFX_ROAD_BREAK","expected_stable_id":"PRES_R05_SFX_ROAD_BREAK","codec":"wav_pcm_s24le","sample_rate":48000,"channels":1,"duration_ms":1200,"loop":false,"fallback":{"wave":"noise","frequency_hz":64}},
+    {"slot_id":"R05_SFX_VEHICLE_PASS","expected_stable_id":"PRES_R05_SFX_VEHICLE_PASS","codec":"wav_pcm_s24le","sample_rate":48000,"channels":1,"duration_ms":1200,"loop":false,"fallback":{"wave":"sweep","frequency_hz":130}},
+    {"slot_id":"R05_SFX_SWARM_RUSH","expected_stable_id":"PRES_R05_SFX_SWARM_RUSH","codec":"wav_pcm_s24le","sample_rate":48000,"channels":1,"duration_ms":750,"loop":false,"fallback":{"wave":"sweep","frequency_hz":340}},
+    {"slot_id":"R05_SFX_GIANT_CONTACT","expected_stable_id":"PRES_R05_SFX_GIANT_CONTACT","codec":"wav_pcm_s24le","sample_rate":48000,"channels":1,"duration_ms":1400,"loop":false,"fallback":{"wave":"noise","frequency_hz":58}},
+    {"slot_id":"R05_SFX_ARTILLERY_HIT","expected_stable_id":"PRES_R05_SFX_ARTILLERY_HIT","codec":"wav_pcm_s24le","sample_rate":48000,"channels":1,"duration_ms":1250,"loop":false,"fallback":{"wave":"noise","frequency_hz":120}},
+    {"slot_id":"R05_SFX_RED_CHARGE_LOOP","expected_stable_id":"PRES_R05_SFX_RED_CHARGE_LOOP","codec":"wav_pcm_s24le","sample_rate":48000,"channels":1,"duration_ms":1500,"loop":true,"fallback":{"wave":"sweep","frequency_hz":110}},
+    {"slot_id":"R05_SFX_RED_CHARGE_STING","expected_stable_id":"PRES_R05_SFX_RED_CHARGE_STING","codec":"wav_pcm_s24le","sample_rate":48000,"channels":1,"duration_ms":2500,"loop":false,"fallback":{"wave":"sine","frequency_hz":96}},
+    {"slot_id":"R05_SFX_RAIN_ALERT_AMBIENCE","expected_stable_id":"PRES_R05_SFX_RAIN_ALERT_AMBIENCE","codec":"wav_pcm_s24le","sample_rate":48000,"channels":2,"duration_ms":36000,"loop":true,"fallback":{"wave":"noise","frequency_hz":42}}
+  ]
+}

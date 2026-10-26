@@ -1,0 +1,48 @@
+{
+  "mode": "built-in image_gen",
+  "approved_master": {
+    "file": "samples/M14-music-support-r4.png",
+    "sha256": "928a96c6ba11c3235a4674fa76c0c95da5e3bdc3b65e93262c891c5b920a1e14",
+    "user_accepted": true
+  },
+  "front_anchor": {
+    "id": "FRONT",
+    "label": "正面",
+    "file": "samples/M14-front-r5.png",
+    "sha256": "9e2bcc5394936d5046cad313e360766fe61c6be35b1e40375d910c68a0212ba5",
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-ec73a73a-01f9-4365-aad9-e03487d0c1b7.png",
+    "pixel_size": [
+      1024,
+      1536
+    ],
+    "mode": "RGB",
+    "prompts": [
+      "M14-front-prompt-r5.txt"
+    ],
+    "role": "authorized derived source drawing",
+    "individual_new_image_user_accepted": false,
+    "runtime_integrated": false
+  },
+  "items": [
+    {
+      "id": "FRONT",
+      "files": [
+        "M14-front-prompt-r5.txt"
+      ]
+    },
+    {
+      "id": "SIDE",
+      "files": [
+        "M14-side-prompt-r5.txt",
+        "M14-side-view-correction-prompt-r5b.txt"
+      ]
+    },
+    {
+      "id": "REAR",
+      "files": [
+        "M14-rear-prompt-r5.txt",
+        "M14-rear-view-correction-prompt-r5b.txt"
+      ]
+    }
+  ]
+}

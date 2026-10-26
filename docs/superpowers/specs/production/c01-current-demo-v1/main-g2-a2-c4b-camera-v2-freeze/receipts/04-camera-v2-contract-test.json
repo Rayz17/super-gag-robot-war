@@ -1,0 +1,1282 @@
+{
+	"schema_version": 1,
+	"task_id": "G2_A2_C4B_CAMERA_V2_EXACT_INTERFACE_FREEZE",
+	"camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+	"view_space": "map_dimetric_40x24",
+	"runtime_bindable": false,
+	"profiles": [
+		{
+			"profile_id": "A_PLAN",
+			"receipt": {
+				"valid": true,
+				"errors": [],
+				"camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+				"view_space": "map_dimetric_40x24",
+				"runtime_bindable": false,
+				"profile_id": "A_PLAN",
+				"focus_profile": "A_PLAN",
+				"focus_cell": [
+					19.75,
+					9.75
+				],
+				"tile_half_px": [
+					40.0,
+					24.0
+				],
+				"grid_size": [
+					32,
+					18
+				],
+				"map_viewport_rect_px": [
+					0.0,
+					58.0,
+					1280.0,
+					584.0
+				],
+				"map_center_screen_px": [
+					640.0,
+					350.0
+				],
+				"camera_raw_px": [
+					400.0,
+					708.0
+				],
+				"camera_source_canvas_px": [
+					1320.0,
+					807.0
+				],
+				"projection_local_crop_px": [
+					-240.0,
+					416.0,
+					1280.0,
+					584.0
+				],
+				"source_canvas_crop_px": [
+					680.0,
+					515.0,
+					1280.0,
+					584.0
+				],
+				"crop_rect_px": [
+					-240.0,
+					416.0,
+					1280.0,
+					584.0
+				],
+				"canvas_draw_origin_screen_px": [
+					-680.0,
+					-457.0
+				],
+				"world_canvas_origin_raw_px": [
+					-920.0,
+					-99.0
+				],
+				"zoom": 1.0,
+				"shake_px": [
+					0.0,
+					0.0
+				],
+				"facing_vectors": {
+					"north": [
+						40.0,
+						-24.0
+					],
+					"east": [
+						40.0,
+						24.0
+					],
+					"south": [
+						-40.0,
+						24.0
+					],
+					"west": [
+						-40.0,
+						-24.0
+					]
+				},
+				"formula": "P(x,y)=((x-y)*40,(x+y)*24)",
+				"registration_point": "footprint_bottom_center"
+			},
+			"expected": {
+				"branch": "A",
+				"phase": "PLAN",
+				"focus_grid": [
+					19.75,
+					9.75
+				],
+				"camera_raw_px": [
+					400.0,
+					708.0
+				],
+				"camera_source_canvas_px": [
+					1320.0,
+					807.0
+				],
+				"projection_local_crop_px": [
+					-240.0,
+					416.0,
+					1280.0,
+					584.0
+				],
+				"source_canvas_crop_px": [
+					680.0,
+					515.0,
+					1280.0,
+					584.0
+				],
+				"canvas_draw_origin_screen_px": [
+					-680.0,
+					-457.0
+				]
+			}
+		},
+		{
+			"profile_id": "B_PLAN",
+			"receipt": {
+				"valid": true,
+				"errors": [],
+				"camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+				"view_space": "map_dimetric_40x24",
+				"runtime_bindable": false,
+				"profile_id": "B_PLAN",
+				"focus_profile": "B_PLAN",
+				"focus_cell": [
+					19.75,
+					9.75
+				],
+				"tile_half_px": [
+					40.0,
+					24.0
+				],
+				"grid_size": [
+					32,
+					18
+				],
+				"map_viewport_rect_px": [
+					0.0,
+					58.0,
+					1280.0,
+					584.0
+				],
+				"map_center_screen_px": [
+					640.0,
+					350.0
+				],
+				"camera_raw_px": [
+					400.0,
+					708.0
+				],
+				"camera_source_canvas_px": [
+					1320.0,
+					807.0
+				],
+				"projection_local_crop_px": [
+					-240.0,
+					416.0,
+					1280.0,
+					584.0
+				],
+				"source_canvas_crop_px": [
+					680.0,
+					515.0,
+					1280.0,
+					584.0
+				],
+				"crop_rect_px": [
+					-240.0,
+					416.0,
+					1280.0,
+					584.0
+				],
+				"canvas_draw_origin_screen_px": [
+					-680.0,
+					-457.0
+				],
+				"world_canvas_origin_raw_px": [
+					-920.0,
+					-99.0
+				],
+				"zoom": 1.0,
+				"shake_px": [
+					0.0,
+					0.0
+				],
+				"facing_vectors": {
+					"north": [
+						40.0,
+						-24.0
+					],
+					"east": [
+						40.0,
+						24.0
+					],
+					"south": [
+						-40.0,
+						24.0
+					],
+					"west": [
+						-40.0,
+						-24.0
+					]
+				},
+				"formula": "P(x,y)=((x-y)*40,(x+y)*24)",
+				"registration_point": "footprint_bottom_center"
+			},
+			"expected": {
+				"branch": "B",
+				"phase": "PLAN",
+				"focus_grid": [
+					19.75,
+					9.75
+				],
+				"camera_raw_px": [
+					400.0,
+					708.0
+				],
+				"camera_source_canvas_px": [
+					1320.0,
+					807.0
+				],
+				"projection_local_crop_px": [
+					-240.0,
+					416.0,
+					1280.0,
+					584.0
+				],
+				"source_canvas_crop_px": [
+					680.0,
+					515.0,
+					1280.0,
+					584.0
+				],
+				"canvas_draw_origin_screen_px": [
+					-680.0,
+					-457.0
+				]
+			}
+		},
+		{
+			"profile_id": "A_CONTACT",
+			"receipt": {
+				"valid": true,
+				"errors": [],
+				"camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+				"view_space": "map_dimetric_40x24",
+				"runtime_bindable": false,
+				"profile_id": "A_CONTACT",
+				"focus_profile": "A_CONTACT",
+				"focus_cell": [
+					20.5,
+					10.5
+				],
+				"tile_half_px": [
+					40.0,
+					24.0
+				],
+				"grid_size": [
+					32,
+					18
+				],
+				"map_viewport_rect_px": [
+					0.0,
+					58.0,
+					1280.0,
+					584.0
+				],
+				"map_center_screen_px": [
+					640.0,
+					350.0
+				],
+				"camera_raw_px": [
+					400.0,
+					744.0
+				],
+				"camera_source_canvas_px": [
+					1320.0,
+					843.0
+				],
+				"projection_local_crop_px": [
+					-240.0,
+					452.0,
+					1280.0,
+					584.0
+				],
+				"source_canvas_crop_px": [
+					680.0,
+					551.0,
+					1280.0,
+					584.0
+				],
+				"crop_rect_px": [
+					-240.0,
+					452.0,
+					1280.0,
+					584.0
+				],
+				"canvas_draw_origin_screen_px": [
+					-680.0,
+					-493.0
+				],
+				"world_canvas_origin_raw_px": [
+					-920.0,
+					-99.0
+				],
+				"zoom": 1.0,
+				"shake_px": [
+					0.0,
+					0.0
+				],
+				"facing_vectors": {
+					"north": [
+						40.0,
+						-24.0
+					],
+					"east": [
+						40.0,
+						24.0
+					],
+					"south": [
+						-40.0,
+						24.0
+					],
+					"west": [
+						-40.0,
+						-24.0
+					]
+				},
+				"formula": "P(x,y)=((x-y)*40,(x+y)*24)",
+				"registration_point": "footprint_bottom_center"
+			},
+			"expected": {
+				"branch": "A",
+				"phase": "CONTACT",
+				"timeslice": "T3.00",
+				"focus_grid": [
+					20.5,
+					10.5
+				],
+				"camera_raw_px": [
+					400.0,
+					744.0
+				],
+				"camera_source_canvas_px": [
+					1320.0,
+					843.0
+				],
+				"projection_local_crop_px": [
+					-240.0,
+					452.0,
+					1280.0,
+					584.0
+				],
+				"source_canvas_crop_px": [
+					680.0,
+					551.0,
+					1280.0,
+					584.0
+				],
+				"canvas_draw_origin_screen_px": [
+					-680.0,
+					-493.0
+				]
+			}
+		},
+		{
+			"profile_id": "B_CONTACT",
+			"receipt": {
+				"valid": true,
+				"errors": [],
+				"camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+				"view_space": "map_dimetric_40x24",
+				"runtime_bindable": false,
+				"profile_id": "B_CONTACT",
+				"focus_profile": "B_CONTACT",
+				"focus_cell": [
+					20.0,
+					10.5
+				],
+				"tile_half_px": [
+					40.0,
+					24.0
+				],
+				"grid_size": [
+					32,
+					18
+				],
+				"map_viewport_rect_px": [
+					0.0,
+					58.0,
+					1280.0,
+					584.0
+				],
+				"map_center_screen_px": [
+					640.0,
+					350.0
+				],
+				"camera_raw_px": [
+					380.0,
+					732.0
+				],
+				"camera_source_canvas_px": [
+					1300.0,
+					831.0
+				],
+				"projection_local_crop_px": [
+					-260.0,
+					440.0,
+					1280.0,
+					584.0
+				],
+				"source_canvas_crop_px": [
+					660.0,
+					539.0,
+					1280.0,
+					584.0
+				],
+				"crop_rect_px": [
+					-260.0,
+					440.0,
+					1280.0,
+					584.0
+				],
+				"canvas_draw_origin_screen_px": [
+					-660.0,
+					-481.0
+				],
+				"world_canvas_origin_raw_px": [
+					-920.0,
+					-99.0
+				],
+				"zoom": 1.0,
+				"shake_px": [
+					0.0,
+					0.0
+				],
+				"facing_vectors": {
+					"north": [
+						40.0,
+						-24.0
+					],
+					"east": [
+						40.0,
+						24.0
+					],
+					"south": [
+						-40.0,
+						24.0
+					],
+					"west": [
+						-40.0,
+						-24.0
+					]
+				},
+				"formula": "P(x,y)=((x-y)*40,(x+y)*24)",
+				"registration_point": "footprint_bottom_center"
+			},
+			"expected": {
+				"branch": "B",
+				"phase": "CONTACT",
+				"timeslice": "T3.25",
+				"focus_grid": [
+					20.0,
+					10.5
+				],
+				"camera_raw_px": [
+					380.0,
+					732.0
+				],
+				"camera_source_canvas_px": [
+					1300.0,
+					831.0
+				],
+				"projection_local_crop_px": [
+					-260.0,
+					440.0,
+					1280.0,
+					584.0
+				],
+				"source_canvas_crop_px": [
+					660.0,
+					539.0,
+					1280.0,
+					584.0
+				],
+				"canvas_draw_origin_screen_px": [
+					-660.0,
+					-481.0
+				]
+			}
+		}
+	],
+	"direction_rows": [
+		{
+			"profile_id": "A_PLAN",
+			"branch": "A",
+			"phase": "PLAN",
+			"timeslice": "PLAN",
+			"focus_grid_x": "19.75",
+			"focus_grid_y": "9.75",
+			"camera_raw_x": "400",
+			"camera_raw_y": "708",
+			"camera_source_x": "1320",
+			"camera_source_y": "807",
+			"projection_local_crop_x": "-240",
+			"projection_local_crop_y": "416",
+			"source_canvas_crop_x": "680",
+			"source_canvas_crop_y": "515",
+			"crop_w": "1280",
+			"crop_h": "584",
+			"facing": "north",
+			"grid_delta_x": "0",
+			"grid_delta_y": "-1",
+			"screen_delta_x": "40",
+			"screen_delta_y": "-24"
+		},
+		{
+			"profile_id": "A_PLAN",
+			"branch": "A",
+			"phase": "PLAN",
+			"timeslice": "PLAN",
+			"focus_grid_x": "19.75",
+			"focus_grid_y": "9.75",
+			"camera_raw_x": "400",
+			"camera_raw_y": "708",
+			"camera_source_x": "1320",
+			"camera_source_y": "807",
+			"projection_local_crop_x": "-240",
+			"projection_local_crop_y": "416",
+			"source_canvas_crop_x": "680",
+			"source_canvas_crop_y": "515",
+			"crop_w": "1280",
+			"crop_h": "584",
+			"facing": "east",
+			"grid_delta_x": "1",
+			"grid_delta_y": "0",
+			"screen_delta_x": "40",
+			"screen_delta_y": "24"
+		},
+		{
+			"profile_id": "A_PLAN",
+			"branch": "A",
+			"phase": "PLAN",
+			"timeslice": "PLAN",
+			"focus_grid_x": "19.75",
+			"focus_grid_y": "9.75",
+			"camera_raw_x": "400",
+			"camera_raw_y": "708",
+			"camera_source_x": "1320",
+			"camera_source_y": "807",
+			"projection_local_crop_x": "-240",
+			"projection_local_crop_y": "416",
+			"source_canvas_crop_x": "680",
+			"source_canvas_crop_y": "515",
+			"crop_w": "1280",
+			"crop_h": "584",
+			"facing": "south",
+			"grid_delta_x": "0",
+			"grid_delta_y": "1",
+			"screen_delta_x": "-40",
+			"screen_delta_y": "24"
+		},
+		{
+			"profile_id": "A_PLAN",
+			"branch": "A",
+			"phase": "PLAN",
+			"timeslice": "PLAN",
+			"focus_grid_x": "19.75",
+			"focus_grid_y": "9.75",
+			"camera_raw_x": "400",
+			"camera_raw_y": "708",
+			"camera_source_x": "1320",
+			"camera_source_y": "807",
+			"projection_local_crop_x": "-240",
+			"projection_local_crop_y": "416",
+			"source_canvas_crop_x": "680",
+			"source_canvas_crop_y": "515",
+			"crop_w": "1280",
+			"crop_h": "584",
+			"facing": "west",
+			"grid_delta_x": "-1",
+			"grid_delta_y": "0",
+			"screen_delta_x": "-40",
+			"screen_delta_y": "-24"
+		},
+		{
+			"profile_id": "B_PLAN",
+			"branch": "B",
+			"phase": "PLAN",
+			"timeslice": "PLAN",
+			"focus_grid_x": "19.75",
+			"focus_grid_y": "9.75",
+			"camera_raw_x": "400",
+			"camera_raw_y": "708",
+			"camera_source_x": "1320",
+			"camera_source_y": "807",
+			"projection_local_crop_x": "-240",
+			"projection_local_crop_y": "416",
+			"source_canvas_crop_x": "680",
+			"source_canvas_crop_y": "515",
+			"crop_w": "1280",
+			"crop_h": "584",
+			"facing": "north",
+			"grid_delta_x": "0",
+			"grid_delta_y": "-1",
+			"screen_delta_x": "40",
+			"screen_delta_y": "-24"
+		},
+		{
+			"profile_id": "B_PLAN",
+			"branch": "B",
+			"phase": "PLAN",
+			"timeslice": "PLAN",
+			"focus_grid_x": "19.75",
+			"focus_grid_y": "9.75",
+			"camera_raw_x": "400",
+			"camera_raw_y": "708",
+			"camera_source_x": "1320",
+			"camera_source_y": "807",
+			"projection_local_crop_x": "-240",
+			"projection_local_crop_y": "416",
+			"source_canvas_crop_x": "680",
+			"source_canvas_crop_y": "515",
+			"crop_w": "1280",
+			"crop_h": "584",
+			"facing": "east",
+			"grid_delta_x": "1",
+			"grid_delta_y": "0",
+			"screen_delta_x": "40",
+			"screen_delta_y": "24"
+		},
+		{
+			"profile_id": "B_PLAN",
+			"branch": "B",
+			"phase": "PLAN",
+			"timeslice": "PLAN",
+			"focus_grid_x": "19.75",
+			"focus_grid_y": "9.75",
+			"camera_raw_x": "400",
+			"camera_raw_y": "708",
+			"camera_source_x": "1320",
+			"camera_source_y": "807",
+			"projection_local_crop_x": "-240",
+			"projection_local_crop_y": "416",
+			"source_canvas_crop_x": "680",
+			"source_canvas_crop_y": "515",
+			"crop_w": "1280",
+			"crop_h": "584",
+			"facing": "south",
+			"grid_delta_x": "0",
+			"grid_delta_y": "1",
+			"screen_delta_x": "-40",
+			"screen_delta_y": "24"
+		},
+		{
+			"profile_id": "B_PLAN",
+			"branch": "B",
+			"phase": "PLAN",
+			"timeslice": "PLAN",
+			"focus_grid_x": "19.75",
+			"focus_grid_y": "9.75",
+			"camera_raw_x": "400",
+			"camera_raw_y": "708",
+			"camera_source_x": "1320",
+			"camera_source_y": "807",
+			"projection_local_crop_x": "-240",
+			"projection_local_crop_y": "416",
+			"source_canvas_crop_x": "680",
+			"source_canvas_crop_y": "515",
+			"crop_w": "1280",
+			"crop_h": "584",
+			"facing": "west",
+			"grid_delta_x": "-1",
+			"grid_delta_y": "0",
+			"screen_delta_x": "-40",
+			"screen_delta_y": "-24"
+		},
+		{
+			"profile_id": "A_CONTACT",
+			"branch": "A",
+			"phase": "CONTACT",
+			"timeslice": "T3.00",
+			"focus_grid_x": "20.5",
+			"focus_grid_y": "10.5",
+			"camera_raw_x": "400",
+			"camera_raw_y": "744",
+			"camera_source_x": "1320",
+			"camera_source_y": "843",
+			"projection_local_crop_x": "-240",
+			"projection_local_crop_y": "452",
+			"source_canvas_crop_x": "680",
+			"source_canvas_crop_y": "551",
+			"crop_w": "1280",
+			"crop_h": "584",
+			"facing": "north",
+			"grid_delta_x": "0",
+			"grid_delta_y": "-1",
+			"screen_delta_x": "40",
+			"screen_delta_y": "-24"
+		},
+		{
+			"profile_id": "A_CONTACT",
+			"branch": "A",
+			"phase": "CONTACT",
+			"timeslice": "T3.00",
+			"focus_grid_x": "20.5",
+			"focus_grid_y": "10.5",
+			"camera_raw_x": "400",
+			"camera_raw_y": "744",
+			"camera_source_x": "1320",
+			"camera_source_y": "843",
+			"projection_local_crop_x": "-240",
+			"projection_local_crop_y": "452",
+			"source_canvas_crop_x": "680",
+			"source_canvas_crop_y": "551",
+			"crop_w": "1280",
+			"crop_h": "584",
+			"facing": "east",
+			"grid_delta_x": "1",
+			"grid_delta_y": "0",
+			"screen_delta_x": "40",
+			"screen_delta_y": "24"
+		},
+		{
+			"profile_id": "A_CONTACT",
+			"branch": "A",
+			"phase": "CONTACT",
+			"timeslice": "T3.00",
+			"focus_grid_x": "20.5",
+			"focus_grid_y": "10.5",
+			"camera_raw_x": "400",
+			"camera_raw_y": "744",
+			"camera_source_x": "1320",
+			"camera_source_y": "843",
+			"projection_local_crop_x": "-240",
+			"projection_local_crop_y": "452",
+			"source_canvas_crop_x": "680",
+			"source_canvas_crop_y": "551",
+			"crop_w": "1280",
+			"crop_h": "584",
+			"facing": "south",
+			"grid_delta_x": "0",
+			"grid_delta_y": "1",
+			"screen_delta_x": "-40",
+			"screen_delta_y": "24"
+		},
+		{
+			"profile_id": "A_CONTACT",
+			"branch": "A",
+			"phase": "CONTACT",
+			"timeslice": "T3.00",
+			"focus_grid_x": "20.5",
+			"focus_grid_y": "10.5",
+			"camera_raw_x": "400",
+			"camera_raw_y": "744",
+			"camera_source_x": "1320",
+			"camera_source_y": "843",
+			"projection_local_crop_x": "-240",
+			"projection_local_crop_y": "452",
+			"source_canvas_crop_x": "680",
+			"source_canvas_crop_y": "551",
+			"crop_w": "1280",
+			"crop_h": "584",
+			"facing": "west",
+			"grid_delta_x": "-1",
+			"grid_delta_y": "0",
+			"screen_delta_x": "-40",
+			"screen_delta_y": "-24"
+		},
+		{
+			"profile_id": "B_CONTACT",
+			"branch": "B",
+			"phase": "CONTACT",
+			"timeslice": "T3.25",
+			"focus_grid_x": "20",
+			"focus_grid_y": "10.5",
+			"camera_raw_x": "380",
+			"camera_raw_y": "732",
+			"camera_source_x": "1300",
+			"camera_source_y": "831",
+			"projection_local_crop_x": "-260",
+			"projection_local_crop_y": "440",
+			"source_canvas_crop_x": "660",
+			"source_canvas_crop_y": "539",
+			"crop_w": "1280",
+			"crop_h": "584",
+			"facing": "north",
+			"grid_delta_x": "0",
+			"grid_delta_y": "-1",
+			"screen_delta_x": "40",
+			"screen_delta_y": "-24"
+		},
+		{
+			"profile_id": "B_CONTACT",
+			"branch": "B",
+			"phase": "CONTACT",
+			"timeslice": "T3.25",
+			"focus_grid_x": "20",
+			"focus_grid_y": "10.5",
+			"camera_raw_x": "380",
+			"camera_raw_y": "732",
+			"camera_source_x": "1300",
+			"camera_source_y": "831",
+			"projection_local_crop_x": "-260",
+			"projection_local_crop_y": "440",
+			"source_canvas_crop_x": "660",
+			"source_canvas_crop_y": "539",
+			"crop_w": "1280",
+			"crop_h": "584",
+			"facing": "east",
+			"grid_delta_x": "1",
+			"grid_delta_y": "0",
+			"screen_delta_x": "40",
+			"screen_delta_y": "24"
+		},
+		{
+			"profile_id": "B_CONTACT",
+			"branch": "B",
+			"phase": "CONTACT",
+			"timeslice": "T3.25",
+			"focus_grid_x": "20",
+			"focus_grid_y": "10.5",
+			"camera_raw_x": "380",
+			"camera_raw_y": "732",
+			"camera_source_x": "1300",
+			"camera_source_y": "831",
+			"projection_local_crop_x": "-260",
+			"projection_local_crop_y": "440",
+			"source_canvas_crop_x": "660",
+			"source_canvas_crop_y": "539",
+			"crop_w": "1280",
+			"crop_h": "584",
+			"facing": "south",
+			"grid_delta_x": "0",
+			"grid_delta_y": "1",
+			"screen_delta_x": "-40",
+			"screen_delta_y": "24"
+		},
+		{
+			"profile_id": "B_CONTACT",
+			"branch": "B",
+			"phase": "CONTACT",
+			"timeslice": "T3.25",
+			"focus_grid_x": "20",
+			"focus_grid_y": "10.5",
+			"camera_raw_x": "380",
+			"camera_raw_y": "732",
+			"camera_source_x": "1300",
+			"camera_source_y": "831",
+			"projection_local_crop_x": "-260",
+			"projection_local_crop_y": "440",
+			"source_canvas_crop_x": "660",
+			"source_canvas_crop_y": "539",
+			"crop_w": "1280",
+			"crop_h": "584",
+			"facing": "west",
+			"grid_delta_x": "-1",
+			"grid_delta_y": "0",
+			"screen_delta_x": "-40",
+			"screen_delta_y": "-24"
+		}
+	],
+	"registration_rows": [
+		{
+			"record_type": "STRUCTURE",
+			"object_id": "NW_BLOCK",
+			"grid_rect": "1,0,7,5",
+			"anchor": "NA",
+			"footprint": "NA",
+			"world_height_class": "HIGH",
+			"world_height_px": "90",
+			"z_bias": "0",
+			"registration_point": "structure_front_edge",
+			"front_edge_raw": "80,288",
+			"front_edge_A_PLAN": "320,-70",
+			"front_edge_B_PLAN": "320,-70",
+			"front_edge_A_CONTACT": "320,-106",
+			"front_edge_B_CONTACT": "340,-94",
+			"visual_bounds_raw": "-160,-90,480,378",
+			"reveal_cell_count": "65",
+			"foundation_color": "193541",
+			"occluder_color": "315766",
+			"focusable": "true",
+			"source": "camera_contract.structures"
+		},
+		{
+			"record_type": "STRUCTURE",
+			"object_id": "NM_BLOCK",
+			"grid_rect": "10,0,5,4",
+			"anchor": "NA",
+			"footprint": "NA",
+			"world_height_class": "MEDIUM",
+			"world_height_px": "72",
+			"z_bias": "0",
+			"registration_point": "structure_front_edge",
+			"front_edge_raw": "420,432",
+			"front_edge_A_PLAN": "660,74",
+			"front_edge_B_PLAN": "660,74",
+			"front_edge_A_CONTACT": "660,38",
+			"front_edge_B_CONTACT": "680,50",
+			"visual_bounds_raw": "240,144,360,288",
+			"reveal_cell_count": "45",
+			"foundation_color": "23343e",
+			"occluder_color": "4a5960",
+			"focusable": "true",
+			"source": "camera_contract.structures"
+		},
+		{
+			"record_type": "STRUCTURE",
+			"object_id": "NE_BLOCK",
+			"grid_rect": "22,0,7,4",
+			"anchor": "NA",
+			"footprint": "NA",
+			"world_height_class": "HIGH",
+			"world_height_px": "90",
+			"z_bias": "0",
+			"registration_point": "structure_front_edge",
+			"front_edge_raw": "940,768",
+			"front_edge_A_PLAN": "1180,410",
+			"front_edge_B_PLAN": "1180,410",
+			"front_edge_A_CONTACT": "1180,374",
+			"front_edge_B_CONTACT": "1200,386",
+			"visual_bounds_raw": "720,414,440,354",
+			"reveal_cell_count": "60",
+			"foundation_color": "17383b",
+			"occluder_color": "2f6260",
+			"focusable": "true",
+			"source": "camera_contract.structures"
+		},
+		{
+			"record_type": "STRUCTURE",
+			"object_id": "SW_BLOCK",
+			"grid_rect": "0,15,8,3",
+			"anchor": "NA",
+			"footprint": "NA",
+			"world_height_class": "MEDIUM",
+			"world_height_px": "72",
+			"z_bias": "0",
+			"registration_point": "structure_front_edge",
+			"front_edge_raw": "-500,600",
+			"front_edge_A_PLAN": "-260,242",
+			"front_edge_B_PLAN": "-260,242",
+			"front_edge_A_CONTACT": "-260,206",
+			"front_edge_B_CONTACT": "-240,218",
+			"visual_bounds_raw": "-720,264,440,336",
+			"reveal_cell_count": "58",
+			"foundation_color": "303135",
+			"occluder_color": "5d5550",
+			"focusable": "true",
+			"source": "camera_contract.structures"
+		},
+		{
+			"record_type": "STRUCTURE",
+			"object_id": "SE_BLOCK",
+			"grid_rect": "26,14,6,4",
+			"anchor": "NA",
+			"footprint": "NA",
+			"world_height_class": "HIGH",
+			"world_height_px": "90",
+			"z_bias": "0",
+			"registration_point": "structure_front_edge",
+			"front_edge_raw": "520,1176",
+			"front_edge_A_PLAN": "760,818",
+			"front_edge_B_PLAN": "760,818",
+			"front_edge_A_CONTACT": "760,782",
+			"front_edge_B_CONTACT": "780,794",
+			"visual_bounds_raw": "320,846,400,330",
+			"reveal_cell_count": "64",
+			"foundation_color": "26353b",
+			"occluder_color": "4d6168",
+			"focusable": "true",
+			"source": "camera_contract.structures"
+		},
+		{
+			"record_type": "STRUCTURE",
+			"object_id": "BROKEN_SKYWALK",
+			"grid_rect": "8,5,7,2",
+			"anchor": "NA",
+			"footprint": "NA",
+			"world_height_class": "LOW",
+			"world_height_px": "54",
+			"z_bias": "0",
+			"registration_point": "structure_front_edge",
+			"front_edge_raw": "220,504",
+			"front_edge_A_PLAN": "460,146",
+			"front_edge_B_PLAN": "460,146",
+			"front_edge_A_CONTACT": "460,110",
+			"front_edge_B_CONTACT": "480,122",
+			"visual_bounds_raw": "40,234,360,270",
+			"reveal_cell_count": "65",
+			"foundation_color": "343138",
+			"occluder_color": "6a606f",
+			"focusable": "true",
+			"source": "camera_contract.structures"
+		},
+		{
+			"record_type": "TACTICAL_OBJECT",
+			"object_id": "PROP_C01CDV1_RETIRED_SHIELD",
+			"grid_rect": "14,10,1,1",
+			"anchor": "14,10",
+			"footprint": "1,1",
+			"world_height_class": "NA",
+			"world_height_px": "0",
+			"z_bias": "0",
+			"registration_point": "footprint_bottom_center",
+			"front_edge_raw": "160,600",
+			"front_edge_A_PLAN": "400,242",
+			"front_edge_B_PLAN": "400,242",
+			"front_edge_A_CONTACT": "400,206",
+			"front_edge_B_CONTACT": "420,218",
+			"visual_bounds_raw": "NA",
+			"reveal_cell_count": "NA",
+			"foundation_color": "NA",
+			"occluder_color": "NA",
+			"focusable": "false",
+			"source": "session.round_snapshot.objects[object_id=PROP_C01CDV1_RETIRED_SHIELD]"
+		},
+		{
+			"record_type": "TACTICAL_OBJECT",
+			"object_id": "TARGET_C01_EAST_EXIT",
+			"grid_rect": "31,7,1,1",
+			"anchor": "31,7",
+			"footprint": "1,1",
+			"world_height_class": "NA",
+			"world_height_px": "0",
+			"z_bias": "0",
+			"registration_point": "footprint_bottom_center",
+			"front_edge_raw": "960,936",
+			"front_edge_A_PLAN": "1200,578",
+			"front_edge_B_PLAN": "1200,578",
+			"front_edge_A_CONTACT": "1200,542",
+			"front_edge_B_CONTACT": "1220,554",
+			"visual_bounds_raw": "NA",
+			"reveal_cell_count": "NA",
+			"foundation_color": "NA",
+			"occluder_color": "NA",
+			"focusable": "false",
+			"source": "session.round_snapshot.entities[unit_id=TARGET_C01_EAST_EXIT]"
+		},
+		{
+			"record_type": "TACTICAL_OBJECT",
+			"object_id": "TARGET_C01_SECURITY_GATE",
+			"grid_rect": "27,8,1,1",
+			"anchor": "27,8",
+			"footprint": "1,1",
+			"world_height_class": "NA",
+			"world_height_px": "0",
+			"z_bias": "0",
+			"registration_point": "footprint_bottom_center",
+			"front_edge_raw": "760,864",
+			"front_edge_A_PLAN": "1000,506",
+			"front_edge_B_PLAN": "1000,506",
+			"front_edge_A_CONTACT": "1000,470",
+			"front_edge_B_CONTACT": "1020,482",
+			"visual_bounds_raw": "NA",
+			"reveal_cell_count": "NA",
+			"foundation_color": "NA",
+			"occluder_color": "NA",
+			"focusable": "false",
+			"source": "session.resolved.world_result.entities[unit_id=TARGET_C01_SECURITY_GATE]"
+		},
+		{
+			"record_type": "TACTICAL_OBJECT",
+			"object_id": "ALLY_C01_CITY_ARTILLERY",
+			"grid_rect": "29,2,1,1",
+			"anchor": "29,2",
+			"footprint": "1,1",
+			"world_height_class": "NA",
+			"world_height_px": "0",
+			"z_bias": "0",
+			"registration_point": "footprint_bottom_center",
+			"front_edge_raw": "1080,768",
+			"front_edge_A_PLAN": "1320,410",
+			"front_edge_B_PLAN": "1320,410",
+			"front_edge_A_CONTACT": "1320,374",
+			"front_edge_B_CONTACT": "1340,386",
+			"visual_bounds_raw": "NA",
+			"reveal_cell_count": "NA",
+			"foundation_color": "NA",
+			"occluder_color": "NA",
+			"focusable": "false",
+			"source": "session.intent_set.intents[action_type=CONDITIONAL_SIDE_ARMOR_SHOT].source_anchor"
+		},
+		{
+			"record_type": "AREA",
+			"object_id": "PROTECTION_ZONE_RECT",
+			"grid_rect": "20,5,12,7",
+			"anchor": "NA",
+			"footprint": "NA",
+			"world_height_class": "NA",
+			"world_height_px": "0",
+			"z_bias": "0",
+			"registration_point": "structure_front_edge",
+			"front_edge_raw": "700,1032",
+			"front_edge_A_PLAN": "940,674",
+			"front_edge_B_PLAN": "940,674",
+			"front_edge_A_CONTACT": "940,638",
+			"front_edge_B_CONTACT": "960,650",
+			"visual_bounds_raw": "NA",
+			"reveal_cell_count": "NA",
+			"foundation_color": "NA",
+			"occluder_color": "NA",
+			"focusable": "false",
+			"source": "session.round_snapshot.terrain_zones[zone_id=TERRAIN_C01_RESCUE_LANE]"
+		}
+	],
+	"slot_ids": [
+		"V353U001",
+		"ENEMY_C01_BREAKER",
+		"TARGET_C01_EMERGENCY_VEHICLE_01",
+		"ENEMY_C01_RIFT_SWARM"
+	],
+	"contact_proxy_fixture_binding": {
+		"stable_id": "ENEMY_C01_RIFT_SWARM_CONTACT_PROXY",
+		"slot_id": "rift_swarm_neutral_contact_proxy_camera_v2",
+		"native_canvas": [
+			96.0,
+			96.0
+		],
+		"native_size": [
+			96.0,
+			96.0
+		],
+		"atlas_size": [
+			384.0,
+			192.0
+		],
+		"pivot_px": [
+			48.0,
+			72.0
+		],
+		"display_scale": [
+			1.0,
+			1.0
+		],
+		"footprint": [
+			1.0,
+			1.0
+		],
+		"z_bias": 0.0,
+		"registration_point": "footprint_bottom_center",
+		"filter": "nearest",
+		"mipmap": false,
+		"facings": [
+			"north",
+			"east",
+			"south",
+			"west"
+		],
+		"facing_screen_vectors": {
+			"north": [
+				40.0,
+				-24.0
+			],
+			"east": [
+				40.0,
+				24.0
+			],
+			"south": [
+				-40.0,
+				24.0
+			],
+			"west": [
+				-40.0,
+				-24.0
+			]
+		},
+		"sockets_local": {
+			"body": [
+				0.0,
+				-28.0
+			],
+			"shield": [
+				-16.0,
+				-24.0
+			],
+			"weapon": [
+				17.0,
+				-27.0
+			],
+			"impact": [
+				0.0,
+				-32.0
+			],
+			"target": [
+				0.0,
+				-32.0
+			]
+		},
+		"resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_rift_swarm_neutral_384x192.png",
+		"sha256": "ff96a2b0ee1e02d4941684b1953b51072b969b364f185bfc097bd1cc2f8bc65b",
+		"resource_role": "C3_NEUTRAL_CONTACT_FIXTURE_VALIDATION_ONLY",
+		"regions": {
+			"idle/north/0": [
+				0.0,
+				0.0,
+				96.0,
+				96.0
+			],
+			"idle/east/0": [
+				96.0,
+				0.0,
+				96.0,
+				96.0
+			],
+			"idle/south/0": [
+				192.0,
+				0.0,
+				96.0,
+				96.0
+			],
+			"idle/west/0": [
+				288.0,
+				0.0,
+				96.0,
+				96.0
+			],
+			"recoil/west/0": [
+				0.0,
+				96.0,
+				96.0,
+				96.0
+			],
+			"deflected/west/0": [
+				96.0,
+				96.0,
+				96.0,
+				96.0
+			]
+		},
+		"subject_phase_clips": {
+			"ENEMY_C01_RIFT_SWARM_01": {
+				"CONTACT": "deflected/west/0"
+			},
+			"ENEMY_C01_RIFT_SWARM_02": {
+				"CONTACT": "idle/north/0"
+			},
+			"ENEMY_C01_RIFT_SWARM_03": {
+				"CONTACT": "idle/south/0"
+			}
+		},
+		"binding_role": "CONTACT_NEUTRAL_PROXY_FIXTURE_ONLY",
+		"formal_camera_v2_slot_pivot_px": [
+			48.0,
+			96.0
+		],
+		"active_proxy_pivot_px": [
+			48.0,
+			72.0
+		],
+		"contact_proxy_fixture_binding_used": true,
+		"runtime_bindable": false,
+		"fixture_validation_only": true
+	},
+	"gameplay_changed": false,
+	"imagegen_used": false,
+	"runtime_real_art_loaded": 0,
+	"env_a1_open": false,
+	"call03_allowed": false,
+	"call04_allowed": false,
+	"stop_gate": "P111_PRODUCER_RELEASE_TO_ENV_A1",
+	"valid": true,
+	"failure_count": 0
+}

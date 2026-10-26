@@ -1,0 +1,24 @@
+{
+  "task_id": "G2_A2_C1_CONTINUOUS_NONHEADLESS_PLAYER_TRACE_CORRECTION",
+  "task_sha256": "e16bbe51ff8d078e69cee159ba216d5b4f334b7db31ee0f8298fc948132cf06c",
+  "superseded_claims": [
+    {
+      "path": "receipts/natural-sequence.json",
+      "scope": "45-75 second complete player-chain authority",
+      "retained_scope": "PerformanceDirector and visual lifecycle regression only"
+    },
+    {
+      "path": "receipts/actual-frame-manifest.json#/natural_sequence",
+      "scope": "45-75 second complete player-chain authority",
+      "retained_scope": "12-frame visual and Director-event history only"
+    }
+  ],
+  "current_authority": [
+    "receipts/continuous-player-trace-A.json",
+    "receipts/continuous-player-trace-B.json",
+    "logs/continuous-player-trace-validation.log"
+  ],
+  "actual_frame_content_modified": false,
+  "actual_frame_manifest_modified": false,
+  "call02_allowed": false
+}

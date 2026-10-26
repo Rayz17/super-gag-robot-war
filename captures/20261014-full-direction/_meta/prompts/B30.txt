@@ -1,0 +1,21 @@
+STYLE LOCK = Astra KINETIC_CEL (must match references):
+- Hard-edge cel color blocks, pressure ink outlines, max two hard shadow tiers
+- Super Robot Wars / 超级系 readable silhouette; half-Q STANDARD readability
+- Gongwu industrial palette: steel teal / concrete beige / warning vermilion
+- NOT photoreal, NOT AAA PBR, NOT wasteland photo rust, NOT alien biotech, NOT ITB grayboard
+- Direction concept sheet: one clear hero view + small state callouts if needed; NOT full turnaround PSD
+Reference images (match stroke weight, cel blocking, palette):
+- style-lock/01-kinetic-cel-storyframe-v23a.png
+- style-lock/11-tactics-user-accepted.png
+- style-lock/02-mech-hero.jpg
+
+Building-specific:
+- Cel industrial architecture (flat steel/concrete/vermilion panels), NOT PBR rust photos
+- Also match incoming/dir-B01-refuge-v2-locked.jpg for city material language
+
+ASSET ID B30 | key=support_strut | template=building
+NAME: 临时支杆与承重架
+PURPOSE: 支撑/交接通桥
+DESIGN BRIEF: 上端接触、底座和斜撑方向清楚；卸载后保留现场物件
+STATES to imply on sheet: 收纳, 安装, 受力, 损坏
+Output: single art-direction concept painting, clean readable silhouette, labeled states as small insets OK, no fake UI text walls, no photoreal materials.

@@ -1,0 +1,344 @@
+{
+  "status": "PRODUCER_ACTUAL_FRAME_SIGNED_SEVEN_RGBA_AND_FIVE_STATE_TEMPORAL_QA_PASS_NOT_FINAL_PLAN",
+  "full_states": {
+    "A_PLAN": {
+      "state_id": "A_PLAN",
+      "profile_id": "A_PLAN",
+      "camera_crop": [
+        680,
+        515,
+        1280,
+        584
+      ],
+      "facility_state": "active",
+      "road_state": "intact",
+      "contact_micro_crack_fx": false,
+      "road_asset": null,
+      "shield_state": "wall_hung_3_scorches_not_acquired",
+      "east_exit_state": "round1_open",
+      "placements": {
+        "PROP_C01CDV1_RETIRED_SHIELD": {
+          "asset": "RETIRED_SHIELD_WALL_HUNG_3_SCORCHES_CAMERA_V2_RGBA.png",
+          "footpoint": [
+            400,
+            242
+          ],
+          "pivot": [
+            128,
+            196
+          ],
+          "manual_offset": [
+            0,
+            0
+          ]
+        },
+        "TARGET_C01_SECURITY_GATE": {
+          "asset": "WARNING_FACILITY_ACTIVE_CAMERA_V2_RGBA.png",
+          "footpoint": [
+            1000,
+            506
+          ],
+          "pivot": [
+            110,
+            196
+          ],
+          "manual_offset": [
+            0,
+            0
+          ]
+        },
+        "TARGET_C01_EAST_EXIT": {
+          "asset": "EAST_EXIT_FIRST_ROUND_OPEN_CAMERA_V2_RGBA.png",
+          "footpoint": [
+            1200,
+            578
+          ],
+          "pivot": [
+            150,
+            196
+          ],
+          "manual_offset": [
+            0,
+            0
+          ]
+        }
+      },
+      "forbidden_visible_assets": [],
+      "qa_100": "qa/full-states/A9_A_PLAN_ACTOR_FREE_STATE_QA_1280x720.png",
+      "qa_50": "qa/full-states/A9_A_PLAN_ACTOR_FREE_STATE_QA_50_PERCENT_640x360.png"
+    },
+    "A_CONTACT": {
+      "state_id": "A_CONTACT",
+      "profile_id": "A_CONTACT",
+      "camera_crop": [
+        680,
+        551,
+        1280,
+        584
+      ],
+      "facility_state": "active",
+      "road_state": "intact",
+      "contact_micro_crack_fx": true,
+      "road_asset": null,
+      "shield_state": "wall_hung_3_scorches_not_acquired",
+      "east_exit_state": "round1_open",
+      "placements": {
+        "PROP_C01CDV1_RETIRED_SHIELD": {
+          "asset": "RETIRED_SHIELD_WALL_HUNG_3_SCORCHES_CAMERA_V2_RGBA.png",
+          "footpoint": [
+            400,
+            206
+          ],
+          "pivot": [
+            128,
+            196
+          ],
+          "manual_offset": [
+            0,
+            0
+          ]
+        },
+        "TARGET_C01_SECURITY_GATE": {
+          "asset": "WARNING_FACILITY_ACTIVE_CAMERA_V2_RGBA.png",
+          "footpoint": [
+            1000,
+            470
+          ],
+          "pivot": [
+            110,
+            196
+          ],
+          "manual_offset": [
+            0,
+            0
+          ]
+        },
+        "TARGET_C01_EAST_EXIT": {
+          "asset": "EAST_EXIT_FIRST_ROUND_OPEN_CAMERA_V2_RGBA.png",
+          "footpoint": [
+            1200,
+            542
+          ],
+          "pivot": [
+            150,
+            196
+          ],
+          "manual_offset": [
+            0,
+            0
+          ]
+        }
+      },
+      "forbidden_visible_assets": [],
+      "qa_100": "qa/full-states/A9_A_CONTACT_ACTOR_FREE_STATE_QA_1280x720.png",
+      "qa_50": "qa/full-states/A9_A_CONTACT_ACTOR_FREE_STATE_QA_50_PERCENT_640x360.png"
+    },
+    "A_T5_RESULT": {
+      "state_id": "A_T5_RESULT",
+      "profile_id": "A_CONTACT",
+      "camera_crop": [
+        680,
+        551,
+        1280,
+        584
+      ],
+      "facility_state": "damaged",
+      "road_state": "long_broken_arc_42",
+      "contact_micro_crack_fx": false,
+      "road_asset": "ROAD_RESULT_A_LONG_BROKEN_ARC_42_RGBA_2400x1350.png",
+      "shield_state": "wall_hung_3_scorches_not_acquired",
+      "east_exit_state": "round1_open",
+      "placements": {
+        "PROP_C01CDV1_RETIRED_SHIELD": {
+          "asset": "RETIRED_SHIELD_WALL_HUNG_3_SCORCHES_CAMERA_V2_RGBA.png",
+          "footpoint": [
+            400,
+            206
+          ],
+          "pivot": [
+            128,
+            196
+          ],
+          "manual_offset": [
+            0,
+            0
+          ]
+        },
+        "TARGET_C01_SECURITY_GATE": {
+          "asset": "WARNING_FACILITY_DAMAGED_CAMERA_V2_RGBA.png",
+          "footpoint": [
+            1000,
+            470
+          ],
+          "pivot": [
+            110,
+            196
+          ],
+          "manual_offset": [
+            0,
+            0
+          ]
+        },
+        "TARGET_C01_EAST_EXIT": {
+          "asset": "EAST_EXIT_FIRST_ROUND_OPEN_CAMERA_V2_RGBA.png",
+          "footpoint": [
+            1200,
+            542
+          ],
+          "pivot": [
+            150,
+            196
+          ],
+          "manual_offset": [
+            0,
+            0
+          ]
+        }
+      },
+      "forbidden_visible_assets": [],
+      "qa_100": "qa/full-states/A9_A_T5_RESULT_ACTOR_FREE_STATE_QA_1280x720.png",
+      "qa_50": "qa/full-states/A9_A_T5_RESULT_ACTOR_FREE_STATE_QA_50_PERCENT_640x360.png"
+    },
+    "B_CONTACT": {
+      "state_id": "B_CONTACT",
+      "profile_id": "B_CONTACT",
+      "camera_crop": [
+        660,
+        539,
+        1280,
+        584
+      ],
+      "facility_state": "active",
+      "road_state": "intact",
+      "contact_micro_crack_fx": true,
+      "road_asset": null,
+      "shield_state": "wall_hung_3_scorches_not_acquired",
+      "east_exit_state": "round1_open",
+      "placements": {
+        "PROP_C01CDV1_RETIRED_SHIELD": {
+          "asset": "RETIRED_SHIELD_WALL_HUNG_3_SCORCHES_CAMERA_V2_RGBA.png",
+          "footpoint": [
+            420,
+            218
+          ],
+          "pivot": [
+            128,
+            196
+          ],
+          "manual_offset": [
+            0,
+            0
+          ]
+        },
+        "TARGET_C01_SECURITY_GATE": {
+          "asset": "WARNING_FACILITY_ACTIVE_CAMERA_V2_RGBA.png",
+          "footpoint": [
+            1020,
+            482
+          ],
+          "pivot": [
+            110,
+            196
+          ],
+          "manual_offset": [
+            0,
+            0
+          ]
+        },
+        "TARGET_C01_EAST_EXIT": {
+          "asset": "EAST_EXIT_FIRST_ROUND_OPEN_CAMERA_V2_RGBA.png",
+          "footpoint": [
+            1220,
+            554
+          ],
+          "pivot": [
+            150,
+            196
+          ],
+          "manual_offset": [
+            0,
+            0
+          ]
+        }
+      },
+      "forbidden_visible_assets": [],
+      "qa_100": "qa/full-states/A9_B_CONTACT_ACTOR_FREE_STATE_QA_1280x720.png",
+      "qa_50": "qa/full-states/A9_B_CONTACT_ACTOR_FREE_STATE_QA_50_PERCENT_640x360.png"
+    },
+    "B_T5_RESULT": {
+      "state_id": "B_T5_RESULT",
+      "profile_id": "B_CONTACT",
+      "camera_crop": [
+        660,
+        539,
+        1280,
+        584
+      ],
+      "facility_state": "active",
+      "road_state": "twin_buckles_24",
+      "contact_micro_crack_fx": false,
+      "road_asset": "ROAD_RESULT_B_TWIN_BUCKLES_24_RGBA_2400x1350.png",
+      "shield_state": "wall_hung_3_scorches_not_acquired",
+      "east_exit_state": "round1_open",
+      "placements": {
+        "PROP_C01CDV1_RETIRED_SHIELD": {
+          "asset": "RETIRED_SHIELD_WALL_HUNG_3_SCORCHES_CAMERA_V2_RGBA.png",
+          "footpoint": [
+            420,
+            218
+          ],
+          "pivot": [
+            128,
+            196
+          ],
+          "manual_offset": [
+            0,
+            0
+          ]
+        },
+        "TARGET_C01_SECURITY_GATE": {
+          "asset": "WARNING_FACILITY_ACTIVE_CAMERA_V2_RGBA.png",
+          "footpoint": [
+            1020,
+            482
+          ],
+          "pivot": [
+            110,
+            196
+          ],
+          "manual_offset": [
+            0,
+            0
+          ]
+        },
+        "TARGET_C01_EAST_EXIT": {
+          "asset": "EAST_EXIT_FIRST_ROUND_OPEN_CAMERA_V2_RGBA.png",
+          "footpoint": [
+            1220,
+            554
+          ],
+          "pivot": [
+            150,
+            196
+          ],
+          "manual_offset": [
+            0,
+            0
+          ]
+        }
+      },
+      "forbidden_visible_assets": [],
+      "qa_100": "qa/full-states/A9_B_T5_RESULT_ACTOR_FREE_STATE_QA_1280x720.png",
+      "qa_50": "qa/full-states/A9_B_T5_RESULT_ACTOR_FREE_STATE_QA_50_PERCENT_640x360.png"
+    }
+  },
+  "temporal_assertions": {
+    "PLAN_intact_active": true,
+    "A_CONTACT_micro_crack_only_active_no_A42": true,
+    "B_CONTACT_micro_crack_only_active_no_B24": true,
+    "A_T5_damaged_long_broken_arc_42": true,
+    "B_T5_active_twin_buckles_24": true,
+    "shield_wall_hung_not_acquired_all_states": true,
+    "east_exit_round1_open_all_states": true
+  }
+}

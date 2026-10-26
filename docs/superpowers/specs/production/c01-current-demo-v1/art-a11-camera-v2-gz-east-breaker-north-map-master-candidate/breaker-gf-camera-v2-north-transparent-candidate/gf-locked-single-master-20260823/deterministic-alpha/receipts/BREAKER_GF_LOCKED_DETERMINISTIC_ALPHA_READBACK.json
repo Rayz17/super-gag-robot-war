@@ -1,0 +1,128 @@
+{
+  "artifact": "BREAKER_GF_LOCKED_DETERMINISTIC_ALPHA",
+  "status": "CANDIDATE_PENDING_USER_ACTUAL_FRAME_ACCEPTANCE",
+  "operations": [
+    "periodic_checker_background_model",
+    "deterministic_alpha_matte",
+    "partial_edge_unmatte_only",
+    "premultiplied_lanczos_resize",
+    "transparent_canvas_registration"
+  ],
+  "forbidden_operations_confirmed_absent": [
+    "imagegen",
+    "repaint",
+    "inpaint",
+    "rotation",
+    "mirror",
+    "subject_reshape",
+    "new_breaker_generation"
+  ],
+  "boundaries": {
+    "candidate_only": true,
+    "user_design_acceptance": true,
+    "user_actual_frame_acceptance": false,
+    "runtime_promotion": false,
+    "canon_promotion": false
+  },
+  "locked_raw": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/breaker-gf-camera-v2-north-transparent-candidate/gf-locked-single-master-20260823/generation-raw/BREAKER_GF_LOCKED_SINGLE_MASTER_CALL01_RAW_FAIL.png",
+    "sha256": "e63708c04a22459debc83bfa614ddea9d68a7142a09b18fc23f522300b02f1cb",
+    "mode": "RGB",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  "source_rgba": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/breaker-gf-camera-v2-north-transparent-candidate/gf-locked-single-master-20260823/deterministic-alpha/source/BREAKER_GF_LOCKED_SINGLE_MASTER_DETERMINISTIC_RGBA_1254.png",
+    "sha256": "4f93ae3729cb21da59740010e193a66786e2cde9be038fb980337a6401da6d05",
+    "checker_period_px": 50,
+    "checker_sample_rows": 90,
+    "background_residual_top90_percentiles": {
+      "50": 1.0,
+      "95": 3.7749,
+      "99": 9.8489,
+      "99.9": 13.3041,
+      "100": 15.5885
+    },
+    "alpha_zero_pixels": 973929,
+    "alpha_partial_pixels": 1821,
+    "alpha_opaque_pixels": 596766,
+    "alpha_bbox_any": [
+      39,
+      101,
+      1232,
+      1133
+    ],
+    "alpha_bbox_ge16": [
+      39,
+      101,
+      1232,
+      1133
+    ],
+    "subject_rgb_exact_pixels": 596766,
+    "partial_edge_rgb_decontaminated_only": true
+  },
+  "delivery": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/breaker-gf-camera-v2-north-transparent-candidate/gf-locked-single-master-20260823/deterministic-alpha/delivery/BREAKER_GF_LOCKED_NORTH_TRANSPARENT_MASTER_CANDIDATE_384.png",
+    "sha256": "6b20111c80e3dc76adb5a05b55395359b7d1bdc2ec189060859058e53dbffde1",
+    "source_crop_alpha_ge16": [
+      39,
+      101,
+      1232,
+      1133
+    ],
+    "source_crop_size": [
+      1193,
+      1032
+    ],
+    "resized_subject_size": [
+      351,
+      304
+    ],
+    "paste_xy": [
+      16,
+      16
+    ],
+    "pivot_px": [
+      192,
+      320
+    ],
+    "canvas_size": [
+      384,
+      384
+    ],
+    "alpha_bbox_any": [
+      16,
+      16,
+      367,
+      320
+    ],
+    "alpha_bbox_ge16": [
+      16,
+      16,
+      367,
+      320
+    ],
+    "alpha_zero_pixels": 93353,
+    "alpha_partial_pixels": 4694,
+    "alpha_opaque_pixels": 49409
+  },
+  "north": {
+    "subject_centroid": [
+      695.155,
+      545.692
+    ],
+    "red_accent_centroid": [
+      906.916,
+      607.802
+    ],
+    "principal_axis_toward_red_degrees": -34.1381,
+    "camera_v2_north_target_degrees": -30.9637565,
+    "absolute_delta_degrees": 3.1744
+  },
+  "qa": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/breaker-gf-camera-v2-north-transparent-candidate/gf-locked-single-master-20260823/deterministic-alpha/qa/BREAKER_GF_LOCKED_ALPHA_QA_1600x1000.png",
+    "sha256": "f40cf7466a293dd3c1ac98a0c430b6184448340c6957013d02a0e62d41759f91"
+  }
+}

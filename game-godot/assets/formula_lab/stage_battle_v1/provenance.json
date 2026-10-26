@@ -1,0 +1,34 @@
+{
+  "status": "candidate",
+  "purpose": "Formula Lab map actors; normal dialogue portraits stay unchanged",
+  "generated_with": "image_gen",
+  "map_proportion": "compact chibi candidate; not an accepted final style or numeric proportion lock",
+  "source_art": [
+    "res://assets/candidate/c02_short_plan/jicun_full_reference.png",
+    "res://assets/candidate/c02_short_plan/baiyuan_full_reference.png"
+  ],
+  "generation_prompt": "Create a production-ready transparent sprite atlas for a stylish chibi SRPG game. Use the two referenced images ONLY for character identity and costume; do NOT retain their adult body proportions. Exactly TWO ROWS and FOUR COLUMNS, eight separate full-body sprites, identical-size cells, generous empty margins, no overlap, no labels, no grid, no floor, no shadows, truly transparent alpha background. Landscape canvas 1536x1024. Each figure about 360px tall and exactly 3 heads tall: large expressive head, compact torso, short readable limbs, pleasing sophisticated chibi adults, not babies. Crisp navy contour lines, flat cel colors, only two hard shadow levels, clean large shapes. Row1: JICUN the young adult man, tousled black hair, navy long coat with light ivory open-neck shirt, clipped small silver ID badge, black trousers and boots, compact wrist terminal on left forearm. 4 columns: (1) three-quarter front idle facing right, (2) profile facing right walking with left foot forward, (3) profile facing right walking with right foot forward, (4) three-quarter front looking down at glowing blue wrist terminal. Row2: BAIYUAN the adult woman, long silver-white hair, ivory flowing coat/dress over charcoal underdress, tiny warm gold trim, black high collar, compact dark blue sketchbook; preserve dignified artist personality; avoid exaggerated cleavage or long legs. 4 columns: (1) three-quarter front idle facing left holding closed book, (2) profile walking facing left left foot forward, (3) profile walking facing left right foot forward, (4) three-quarter front writing in open sketchbook with pen. Matching head size and consistent designs across all poses. Feet aligned within each row at 92% of cell height. Clean silhouette: no flying paper, no floating fragments, no glitter, no photorealism. For use as small map actors viewed with a stylized 3D miniature workshop. Draw ALL sprites fully from hair to soles, do not crop bodies.",
+  "refinement_prompt": "Edit this transparent chibi sprite atlas, preserving 1536x1024, exact 4-column 2-row registration, transparent alpha, style, colors, face identity and the size/position of each sprite. Only change the TWO sprites in column THREE. Their walking leg positions must be opposite to column TWO: where column TWO has the front-facing leg extended forward, column THREE must have that leg behind and the other leg extended forward, with corresponding opposite swinging arms. Make the leg silhouettes distinctly different for two-frame walk animation. Keep all other six sprites unchanged. Keep bodies chibi around three heads tall. Do not add any background, particles, floating sheets, labels, borders, ground or shadows. Keep head and torso registration consistent between the two walking columns.",
+  "output_source": "/Users/rayz/.codex/generated_images/01a0bec5-d56c-70d3-b5c2-86e083edb7c8/exec-562bab92-89f2-4636-b35a-3b9f7dff0c33.png",
+  "layout": {
+    "columns": 4,
+    "rows": 2,
+    "row_0": "jicun",
+    "row_1": "baiyuan",
+    "frames": [
+      "idle",
+      "step_a",
+      "step_b",
+      "terminal_or_book"
+    ]
+  },
+  "limitations": [
+    "Only three-quarter map facing; horizontal flip does not replace a proper directional atlas.",
+    "Two-step pose contrast is still modest; more expressive locomotion remains to be authored."
+  ],
+  "review": {
+    "status": "rejected_for_production",
+    "date": "2026-09-26",
+    "reason": "用户指出人物 sprite 生硬，多方向手脚动画不成立。该图集仅保留为结构联调样本。"
+  }
+}

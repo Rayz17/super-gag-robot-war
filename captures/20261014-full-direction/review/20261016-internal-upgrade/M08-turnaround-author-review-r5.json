@@ -1,0 +1,23 @@
+{
+  "reviewer": "author",
+  "independent_review": false,
+  "actual_media": ["samples/M08-synthesis-r3.png", "samples/M08-front-r4.png", "samples/M08-front-slender-r5.png", "samples/M08-side-slender-r5.png", "samples/M08-rear-slender-r5.png"],
+  "observations": [
+    "R4的肩胸相对身高更宽，腰段短、髋位偏低；即使有长胫甲，整机仍显敦实。用户关于变矮的反馈成立，撤回上轮修长观感判断。",
+    "新正面肩胸和骨盆明显收窄，腰段可读，髋线提高，细长大腿和胫甲形成连续长腿线条；头盔保持完整纵向体积，没有将面部压扁。",
+    "新侧面沿新正面延长腰腿并收细关节、前臂和小腿；远侧脚仍露少量轮廓，属于有少量透视的绘制设定，不称严格工程正交。",
+    "新背面延续窄背长腰、小骨盆与长腿，保留闭合肩后壳、石墨脊柱及双小腿喷口；长枪仍在机体右手。",
+    "三张保持同一头冠、琥珀座舱身份、红白蓝刃翼和配色；没有借画幅变高直接拉伸原位图。"
+  ],
+  "coarse_source_frame_measurement": {
+    "method": "作者按原尺寸图面估读盔壳顶、足底与肩甲外缘；仅用于诊断躯干宽高，不是模型尺寸。坐标约有12像素误差。",
+    "R4_front": {"file": "samples/M08-front-r4.png", "helmet_shell_top_y_approx": 93, "sole_y_approx": 1200, "shoulder_outer_x_approx": [343, 911], "shoulder_width_over_shell_to_sole_height_approx": 0.51},
+    "R5_front": {"file": "samples/M08-front-slender-r5.png", "helmet_shell_top_y_approx": 130, "sole_y_approx": 1470, "shoulder_outer_x_approx": [239, 779], "shoulder_width_over_shell_to_sole_height_approx": 0.40},
+    "excludes": "背包翼展、长天线、枪和地面投影均不算肩宽或身高。"
+  },
+  "proportion_outcome": "author_observed_improvement_in_source_drawings",
+  "proportion_result": "相同机体部位的图面宽高比下降，肩胸收窄、髋线提高、腰腿拉长；正侧背恢复更轻巧修长的观感。精确投影和隐面同件性仍需模型核对。",
+  "drawing_target_is_not_measured_result": "约10盔壳高与腿段占比是本轮绘制试值，不作为既定尺寸或生成结果精密量测。",
+  "new_images_user_accepted": false,
+  "runtime_tested": false
+}

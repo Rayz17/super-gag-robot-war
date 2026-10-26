@@ -1,0 +1,76 @@
+{
+  "generation_mode": "built_in_image_gen",
+  "selected_outputs": [
+    {
+      "id": "HEAD_OPTIONS",
+      "file": "samples/M11-chin-head-r7.png",
+      "prompts": [
+        "M11-chin-prompt-r7.txt"
+      ],
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-3f758670-9ec7-4477-9f31-e23f095121aa.png"
+    },
+    {
+      "id": "FRONT",
+      "file": "samples/M11-front-r7b.png",
+      "prompts": [
+        "M11-front-aspect-prompt-r7.txt",
+        "M11-front-restore-prompt-r7b.txt"
+      ],
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-721f44e5-67c0-4c9b-a154-e532a03d04ff.png"
+    },
+    {
+      "id": "SIDE",
+      "file": "samples/M11-side-r7c.png",
+      "prompts": [
+        "M11-side-prompt-r7.txt",
+        "M11-side-correction-prompt-r7b.txt",
+        "M11-side-height-prompt-r7c.txt"
+      ],
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-f432c94e-76df-4bdf-9f59-371ba381b977.png"
+    },
+    {
+      "id": "REAR",
+      "file": "samples/M11-rear-r7.png",
+      "prompts": [
+        "M11-rear-prompt-r7.txt"
+      ],
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-68c7052f-2188-4f09-ba8d-d23aaa46e7c2.png"
+    },
+    {
+      "id": "VEHICLE",
+      "file": "samples/M11-vehicle-views-r7.png",
+      "prompts": [
+        "M11-vehicle-views-prompt-r7.txt"
+      ],
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-02bb53f3-2d59-4957-bdc0-ae92da71abd7.png"
+    },
+    {
+      "id": "HEAD_MECHANISM",
+      "file": "samples/M11-head-mechanism-r7b.png",
+      "prompts": [
+        "M11-head-mechanism-prompt-r7.txt",
+        "M11-head-arrow-prompt-r7b.txt"
+      ],
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-1fe4c2e2-df20-4cb6-b685-31a10496f012.png"
+    },
+    {
+      "id": "CHASSIS_MECHANISM",
+      "file": "samples/M11-chassis-mechanism-r7b.png",
+      "prompts": [
+        "M11-chassis-mechanism-prompt-r7.txt",
+        "M11-chassis-clean-prompt-r7b.txt"
+      ],
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-e1dfeecf-ec9e-4f10-bc88-93a15e3294bd.png"
+    }
+  ],
+  "explicit_head_source": "samples/M11-selected-head-r6.png",
+  "proportion_source": "samples/M11-future-robot-r2.png",
+  "not_selected": [
+    "samples/M11-front-r6-proportion-attempt.png",
+    "samples/M11-front-r6b-flat-head-attempt.png",
+    "samples/M11-front-r7-aspect-attempt.png",
+    "samples/M11-side-r7-angle-attempt.png",
+    "samples/M11-side-r7b-head-height-attempt.png",
+    "samples/M11-chassis-r7-support-attempt.png"
+  ]
+}

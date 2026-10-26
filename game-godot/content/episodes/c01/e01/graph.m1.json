@@ -1,0 +1,52 @@
+{
+  "episode_id": "C01E01-MULTI-PLAY-M1",
+  "start_node_id": "C01E01-M1-NARRATIVE",
+  "nodes": [
+    {
+      "node_id": "C01E01-M1-NARRATIVE",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_C01_M1_NARRATIVE",
+      "title": "三小时前 / 运行时接入",
+      "objective": "建立一条可保存的叙事上下文。",
+      "completion_contract": "OUTCOME_C01_M1_INTRO_V01",
+      "lines": [
+        {"speaker": "旁白", "text": "火灾后的短镜头被按停。时间退回三小时前。"},
+        {"speaker": "纪存", "text": "先把最后一条闭馆路线走完。"}
+      ],
+      "success_edges": ["C01E01-RM-INCIDENT"],
+      "soft_fail_edges": ["C01E01-RM-INCIDENT"],
+      "failure_edges": ["C01E01-RM-INCIDENT"],
+      "cancel_edges": ["C01E01-RM-INCIDENT"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "C01E01-RM-INCIDENT",
+      "mode": "SPATIAL",
+      "scene_id": "SCN_C01_RM_RESCUE_2P5D_V01",
+      "title": "现实机器区 / 失败占格救援",
+      "objective": "确认停机权、失败路径和低热支援边界。",
+      "completion_contract": "OUTCOME_C01_RM_INCIDENT_V01",
+      "required_context": ["RM_ROOM_STATE", "DOUDENG_POSITION", "DIEDIE_CONDITION"],
+      "success_edges": ["C01E01-M1-DESK"],
+      "soft_fail_edges": ["C01E01-M1-DESK"],
+      "failure_edges": ["C01E01-M1-DESK"],
+      "cancel_edges": ["C01E01-M1-DESK"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "C01E01-M1-DESK",
+      "mode": "DESK",
+      "scene_id": "SCN_C01_M1_DESK",
+      "title": "现场结算 / 未完成项",
+      "objective": "把现场结果投影成可读记录和下一步责任。",
+      "completion_contract": "OUTCOME_C01_M1_DESK_V01",
+      "transaction_id": "C01E01:M1:DESK_REVIEW:V01",
+      "success_edges": [],
+      "soft_fail_edges": [],
+      "failure_edges": [],
+      "cancel_edges": [],
+      "terminal": true,
+      "autosave": "before_enter_and_after_commit"
+    }
+  ]
+}

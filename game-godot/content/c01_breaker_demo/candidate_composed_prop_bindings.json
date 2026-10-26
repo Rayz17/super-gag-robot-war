@@ -1,0 +1,56 @@
+{
+  "schema_id": "C01_COMPOSED_PROP_BINDINGS_V2",
+  "candidate_only": true,
+  "runtime_promotion": false,
+  "runtime_texture_loading_enabled": false,
+  "bindings": {
+    "PROP_C01CDV1_RETIRED_SHIELD": {
+      "subject_id": "PROP_C01CDV1_RETIRED_SHIELD",
+      "binding_source": "C01_COMPOSED_PROP_BINDINGS_V2",
+      "asset_class": "composed_prop_design_base",
+      "approval_state": "USER_ACCEPTED_A17_DESIGN_BASE_ONLY",
+      "user_design_acceptance": true,
+      "user_runtime_pose_acceptance": false,
+      "runtime_pose_ready": false,
+      "runtime_promotion": false,
+      "design_source_artifact": "docs/superpowers/specs/production/c01-current-demo-v1/art-a17-section2-true-retired-heavy-shield-candidate/user-confirmation-call01/generation-raw/TRUE_RETIRED_HEAVY_SHIELD_CALL01_RAW.png",
+      "design_source_sha256": "169c162c5b2bd0761d535d7dee8573fc547952090dfa7947c3b9630af1c72305",
+      "user_decision_receipt": "docs/superpowers/specs/production/c01-current-demo-v1/art-a17-section2-true-retired-heavy-shield-candidate/receipts/USER_ACCEPTANCE_2026-08-23.md",
+      "required_runtime_pose_contracts": [
+        {
+          "action": "shield_block",
+          "facing": "south",
+          "camera_contract": "Camera V2",
+          "holder": "V353U001",
+          "grip": "two_hand_rear_inner",
+          "shield_front_orientation": "same_as_holder_front_faces_threat",
+          "hand_contact_side": "shield_back_inner"
+        },
+        {
+          "action": "shield_bash",
+          "facing": "south",
+          "camera_contract": "Camera V2",
+          "holder": "V353U001",
+          "grip": "two_hand_rear_inner",
+          "shield_front_orientation": "same_as_holder_front_faces_threat",
+          "hand_contact_side": "shield_back_inner"
+        }
+      ],
+      "blocked_reason": "missing_user_approved_runtime_shield_pose"
+    }
+  },
+  "history_only_assets": [
+    {
+      "path": "res://content/c01_breaker_demo/assets/candidate_composed_battle/props/retired_shield_legacy_a2_candidate.png",
+      "sha256": "b8c13e5145692d9151769b2b8c96232f60bd7f7e246934357379d0124255ab46",
+      "runtime_binding": false,
+      "history_reason": "legacy A2 rectangular armor-plate proxy; retained for traceability only"
+    },
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a2-simple-recomposition/delivery/tactical-objects/PROP_C01CDV1_RETIRED_SHIELD_RGBA.png",
+      "sha256": "b8c13e5145692d9151769b2b8c96232f60bd7f7e246934357379d0124255ab46",
+      "runtime_binding": false,
+      "history_reason": "A2 source artifact; never a current composed-stage texture binding"
+    }
+  ]
+}

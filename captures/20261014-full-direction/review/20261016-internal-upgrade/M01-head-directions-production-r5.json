@@ -1,0 +1,269 @@
+{
+  "revision": "M01-head-directions-production-r5",
+  "date": "2026-10-18",
+  "asset": "M01 / 无牌一号",
+  "user_directive": "这个耳朵太丑了，多提供几个头部参考；馆守z不用重做了，沿用现有的就行",
+  "existing_batch": "design-followthrough-r1.json#experience_record_m01_r5",
+  "scope": "六种头部设计参考，未选定；保留白青绿赭金、体术定位和共同画法，不是六台新机体。",
+  "generation_mode": "built-in image_gen; six separate referenced-image calls",
+  "reference": {
+    "file": "samples/M01-independent-master-v3.png",
+    "sha256": "ac047172aa63c60ecd4bacd79ab4396476feb3d5e6c40c9670cc62464d8f6a1a",
+    "role": "unapproved palette/body/drawing family only; each head is a new candidate"
+  },
+  "items": [
+    {
+      "id": "A",
+      "title": "中央独冠",
+      "file": "samples/M01-head-A-single-crest-r5.png",
+      "sha256": "481bbf45af76e2ba2bf3845c6075315c1571416aef74f4417b93902e145e6b7c",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-93de1ef2-ba87-464c-b6df-555e9822f390.png",
+      "mode": "RGBA",
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "top_corner_samples": [
+          0,
+          0
+        ],
+        "visible_bbox": [
+          0,
+          39,
+          1254,
+          1254
+        ]
+      },
+      "prompt_record": "M01-head-directions-prompts-r5.json#A",
+      "author_observation": "中轴冠脊向后延伸，侧面贴合，保留整条琥珀传感窗。",
+      "author_assessment": "最简洁、运动感强；与v3的亲缘最近。",
+      "source_design_user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false,
+      "selected_for_combination": true
+    },
+    {
+      "id": "B",
+      "title": "低位V冠",
+      "file": "samples/M01-head-B-low-v-crown-r5.png",
+      "sha256": "7552d74333293f1ebf3069695637126c3dec7741e547ab4edfbf1b4b989ba798",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-a1d70b98-e242-4660-b276-fe09628fb0d4.png",
+      "mode": "RGBA",
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "top_corner_samples": [
+          0,
+          0
+        ],
+        "visible_bbox": [
+          0,
+          28,
+          1254,
+          1254
+        ]
+      },
+      "prompt_record": "M01-head-directions-prompts-r5.json#B",
+      "author_observation": "宽而低的金色V眉冠横向展开，冠端低于盔顶，侧面没有两根竖长耳。",
+      "author_assessment": "英雄感明确，仍带经典角冠气质，需由用户判断。",
+      "source_design_user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false,
+      "selected_for_combination": false
+    },
+    {
+      "id": "C",
+      "title": "重眉面甲",
+      "file": "samples/M01-head-C-boxer-brow-r5.png",
+      "sha256": "97ab814cf0136415d18a5a38fbf68434f471c706cac10e1d86d92bedba5f8ad6",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-7b43f046-35ab-46a5-94b0-ec136f788969.png",
+      "mode": "RGBA",
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "top_corner_samples": [
+          0,
+          0
+        ],
+        "visible_bbox": [
+          0,
+          49,
+          1254,
+          1254
+        ]
+      },
+      "prompt_record": "M01-head-directions-prompts-r5.json#C",
+      "author_observation": "厚白眉桥、分开的琥珀双眼与紧凑颊甲；无突出角片。",
+      "author_assessment": "视线与面甲最有近战/拳手气质，可优先比较。",
+      "source_design_user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false,
+      "selected_for_combination": false
+    },
+    {
+      "id": "D",
+      "title": "三齿短冠",
+      "file": "samples/M01-head-D-three-tooth-crown-r5.png",
+      "sha256": "f069389e9d69761e4e42f868ba5f2cfa14d689a3c91a70d26098b373493f89d1",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-da28ebe7-a567-42c2-8999-80f8038c9e51.png",
+      "mode": "RGBA",
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "top_corner_samples": [
+          0,
+          0
+        ],
+        "visible_bbox": [
+          0,
+          65,
+          1254,
+          1254
+        ]
+      },
+      "prompt_record": "M01-head-directions-prompts-r5.json#D",
+      "author_observation": "中央高、两侧低的三齿白冠整合在额前，眼部为双光学形。",
+      "author_assessment": "头部焦点明确，比C更偏英雄机，可优先比较。",
+      "source_design_user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false,
+      "selected_for_combination": false
+    },
+    {
+      "id": "E",
+      "title": "单侧折角",
+      "file": "samples/M01-head-E-offset-angle-r5.png",
+      "sha256": "0115cb6c4100ca4020d5c33877a38d703f156180f8eb1b38368d538e4d6a396c",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-8fc07ef1-f7eb-43e7-a120-d48f580d2548.png",
+      "mode": "RGBA",
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "top_corner_samples": [
+          0,
+          0
+        ],
+        "visible_bbox": [
+          0,
+          31,
+          1254,
+          1254
+        ]
+      },
+      "prompt_record": "M01-head-directions-prompts-r5.json#E",
+      "author_observation": "画面可见一侧是短折角镂空翼，另一侧保持贴合；连续传感窗。",
+      "author_assessment": "非对称更有改件感，单侧外伸件仍需判断喜好。",
+      "source_design_user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false,
+      "selected_for_combination": true
+    },
+    {
+      "id": "F",
+      "title": "后掠翼冠",
+      "file": "samples/M01-head-F-swept-crown-r5.png",
+      "sha256": "a9e123584ff6b4b07a3fc3f95810327b462d44aaca8828291152d62b5171f3ee",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-d5448c72-9663-454e-b56c-20ed3ba6808d.png",
+      "mode": "RGBA",
+      "alpha": {
+        "range": [
+          0,
+          255
+        ],
+        "top_corner_samples": [
+          0,
+          0
+        ],
+        "visible_bbox": [
+          0,
+          73,
+          1254,
+          1254
+        ]
+      },
+      "prompt_record": "M01-head-directions-prompts-r5.json#F",
+      "author_observation": "双片冠翼向后横向扫出，白色眉桥与收尖面甲形成前后轮廓。",
+      "author_assessment": "速度感强；仍有侧向冠翼，因此不作为默认推荐。",
+      "source_design_user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false,
+      "selected_for_combination": false
+    }
+  ],
+  "reader": "M01-head-directions-r5.html",
+  "author_review": {
+    "reviewer": "author",
+    "actually_viewed": "六张工具返回的完整原图，逐张查看头冠朝向、眼部、面甲、颈部与构图。",
+    "preferred_comparison": [
+      "C重眉面甲",
+      "D三齿短冠"
+    ],
+    "common_checks": [
+      "六张均无上一版两根直立长耳；每张只有一颗头与肩部局部。",
+      "同一画法、色系与相近三分之四视角；光学形和面甲有意作为设计差异，不声称严格同模型同相机。"
+    ],
+    "not_checked": [
+      "游戏内正常战棋镜头辨识",
+      "同模型投影/隐藏面/绑定",
+      "用户形象确认",
+      "独立质量评审"
+    ],
+    "legal_clearance_claimed": false
+  },
+  "rejected_reference": {
+    "file": "samples/M01-recognition-master-r4.png",
+    "sha256": "d4721216800f31bd533265654fdbd3de2608bf5e5c48cca92482d00c6898852e",
+    "scope": "长耳式头冠明确否定，不作新头部派生来源；本条不虚构对胸甲/身体的额外用户结论。"
+  },
+  "guardian_decision": {
+    "reuse_existing": true,
+    "redesign_cancelled": true,
+    "style_repaint_cancelled": true,
+    "scope": "馆守Z沿用现有，不另开造型/画风重做；现有玩法与必要技术维护保持原职责。"
+  },
+  "user_accepted": false,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "current_user_selection": {
+    "verbatim": "我想整合A和E，但是需要做成对称脸部，而且要避免和馆守z太相似",
+    "selected_for_combination": [
+      "A",
+      "E"
+    ],
+    "scope": "组合方向，不是两张各自定稿",
+    "current_record": "M01-head-AE-production-r6.json"
+  }
+}

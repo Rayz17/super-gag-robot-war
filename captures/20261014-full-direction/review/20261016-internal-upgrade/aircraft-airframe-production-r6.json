@@ -1,0 +1,271 @@
+{
+  "revision": "aircraft-airframe-r6",
+  "date": "2026-10-23",
+  "existing_batch": "design-followthrough-r1.json",
+  "status": "user_accepted_source_designs_fixed",
+  "reader": "aircraft-airframe-r6.html",
+  "user_direction": {
+    "body_reference": "歌翼三视比例正确；雷翎按此即可，R5过瘦过长。",
+    "forms": "两台整体形态不错，保留主形。",
+    "surface": "减少过度高达化的装饰切面，增强可变战机航空结构语言。"
+  },
+  "method_change": {
+    "old": "用8头身/10头身、缩窄肩宽和加长腿等数字反向拉比例。",
+    "new": "直接使用歌翼实际图像为体态锚；身份/体态/航空表面分工，先校正正面再同步侧背。",
+    "status": "applied",
+    "evidence": [
+      "samples/M08-front-airframe-r6.png",
+      "samples/M14-front-airframe-r6.png"
+    ]
+  },
+  "generation_mode": "built-in image_gen",
+  "source_refs": [
+    {
+      "file": "samples/M14-front-r5.png",
+      "role": "用户指定的体态比例基准；雷翎仅取比例，歌翼保留自身比例",
+      "sha256": "9e2bcc5394936d5046cad313e360766fe61c6be35b1e40375d910c68a0212ba5"
+    },
+    {
+      "file": "samples/M08-synthesis-r3.png",
+      "role": "雷翎身份/主形/配色母稿",
+      "sha256": "54347f96fab0cd383baa6178ab49b4ea43c3645df2fa85eaaa3c294636bc77c3"
+    },
+    {
+      "file": "samples/M14-music-support-r4.png",
+      "role": "已采用歌翼R4主形、音乐模块与配色母稿",
+      "sha256": "928a96c6ba11c3235a4674fa76c0c95da5e3bdc3b65e93262c891c5b920a1e14"
+    },
+    {
+      "file": "samples/M14-side-r5b.png",
+      "role": "侧向投影与部件状态参考",
+      "sha256": "a85f5c640142c1afd29d648c7f8eb30c8bdfadbcff451cc3c592aa9dc447c159"
+    },
+    {
+      "file": "samples/M14-rear-r5b.png",
+      "role": "歌翼背面/声翼背壳参考",
+      "sha256": "d88be557062c378b2a274b63027f80dab407135f1779b60a43b45ee7aa97f5ea"
+    },
+    {
+      "file": "samples/M08-rear-r4b.png",
+      "role": "雷翎隐面连接参考，不作为比例依据",
+      "sha256": "f0a480bc2906d0e16415ce4a929c1196396dabe6d21cfca2c987b21dc68d0845"
+    },
+    {
+      "file": "samples/M08-side-r4b.png",
+      "role": "雷翎侧面局部修正的相机与遮挡依据，不作为比例依据",
+      "sha256": "a38a09bf4febb79e9118abfb565218b4b71c3496f3ede87470b2dc598dd9cb79"
+    }
+  ],
+  "primary_reference_links": [
+    {
+      "url": "https://macross.jp/pages/series?title=macross",
+      "role": "官方VF-1J/1S三态资料"
+    },
+    {
+      "url": "https://macross.jp/pages/series?title=macrossf",
+      "role": "官方VF-25可变战机三态资料"
+    },
+    {
+      "url": "https://macross.jp/pages/series?title=macrossdelta",
+      "role": "官方音乐支援与可变战机资料"
+    }
+  ],
+  "reference_interpretation": "三态/功能为官方资料；整流罩、进气道和简化蒙皮的具体取舍是本轮设计判断，并未向生图工具输入官方图像。",
+  "items": [
+    {
+      "id": "M08",
+      "name": "雷翎",
+      "views": [
+        {
+          "id": "FRONT",
+          "label": "正面",
+          "file": "samples/M08-front-airframe-r6.png",
+          "sha256": "51b1c0a8723bc55478c9f76d0abde557f5d4d2d1678236fc98e25676ed2a4566",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-e97920fe-8a85-47d3-86dc-23a6f79fd776.png",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "prompt": "M08-front-airframe-prompt-r6.txt",
+          "additional_prompts": [],
+          "user_accepted": true,
+          "runtime_integrated": false
+        },
+        {
+          "id": "SIDE",
+          "label": "左侧面",
+          "file": "samples/M08-side-airframe-r6.png",
+          "sha256": "71f1d2ad8eb6940c27eb5c310fd313bde40c27cbd882a47d8b1f90efad8788d8",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-d47be078-7c8a-4806-9062-06fe6070c9c8.png",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "prompt": "M08-side-airframe-prompt-r6.txt",
+          "additional_prompts": [
+            "M08-side-view-airframe-correction-prompt-r6b.txt"
+          ],
+          "user_accepted": true,
+          "runtime_integrated": false
+        },
+        {
+          "id": "REAR",
+          "label": "背面",
+          "file": "samples/M08-rear-airframe-r6.png",
+          "sha256": "552e3e2caf35f34f7aaf95cf65e042eb9012c0e80cae04abd417183c56bc0961",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-9917181e-4acd-4979-a055-d4125e20f394.png",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "prompt": "M08-rear-airframe-prompt-r6.txt",
+          "additional_prompts": [],
+          "user_accepted": true,
+          "runtime_integrated": false
+        }
+      ],
+      "front": {
+        "id": "FRONT",
+        "label": "正面",
+        "file": "samples/M08-front-airframe-r6.png",
+        "sha256": "51b1c0a8723bc55478c9f76d0abde557f5d4d2d1678236fc98e25676ed2a4566",
+        "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-e97920fe-8a85-47d3-86dc-23a6f79fd776.png",
+        "pixel_size": [
+          1024,
+          1536
+        ],
+        "mode": "RGB",
+        "prompt": "M08-front-airframe-prompt-r6.txt",
+        "additional_prompts": [],
+        "user_accepted": true,
+        "runtime_integrated": false
+      },
+      "role": "保留主形的航空结构线修订；雷翎体态按歌翼基准",
+      "new_images_user_accepted": true
+    },
+    {
+      "id": "M14",
+      "name": "歌翼",
+      "views": [
+        {
+          "id": "FRONT",
+          "label": "正面",
+          "file": "samples/M14-front-airframe-r6.png",
+          "sha256": "4464ffa6fc330864a8b5245c9515f1ed320ce938c1d0befc39c6882664f6d540",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-d8e228b5-428c-4dfb-8102-0b4bf400e665.png",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "prompt": "M14-front-airframe-prompt-r6.txt",
+          "additional_prompts": [],
+          "user_accepted": true,
+          "runtime_integrated": false
+        },
+        {
+          "id": "SIDE",
+          "label": "左侧面",
+          "file": "samples/M14-side-airframe-r6.png",
+          "sha256": "c40ba2531149a34f2b48b0278387717ac71ff2ad5496c64ba3abb91e5f47af13",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-7b6adfe2-d28b-4809-ad8e-db0cf9c3ee23.png",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "prompt": "M14-side-airframe-prompt-r6.txt",
+          "additional_prompts": [],
+          "user_accepted": true,
+          "runtime_integrated": false
+        },
+        {
+          "id": "REAR",
+          "label": "背面",
+          "file": "samples/M14-rear-airframe-r6.png",
+          "sha256": "587c0313fd0833bdf1818f9ec1a07d873579090b681f56470bced53640265a42",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-de32ae42-13aa-40b0-9ed7-904bd67286b4.png",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "prompt": "M14-rear-airframe-prompt-r6.txt",
+          "additional_prompts": [],
+          "user_accepted": true,
+          "runtime_integrated": false
+        }
+      ],
+      "front": {
+        "id": "FRONT",
+        "label": "正面",
+        "file": "samples/M14-front-airframe-r6.png",
+        "sha256": "4464ffa6fc330864a8b5245c9515f1ed320ce938c1d0befc39c6882664f6d540",
+        "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-d8e228b5-428c-4dfb-8102-0b4bf400e665.png",
+        "pixel_size": [
+          1024,
+          1536
+        ],
+        "mode": "RGB",
+        "prompt": "M14-front-airframe-prompt-r6.txt",
+        "additional_prompts": [],
+        "user_accepted": true,
+        "runtime_integrated": false
+      },
+      "role": "保留主形的航空结构线修订；雷翎体态按歌翼基准",
+      "new_images_user_accepted": true
+    }
+  ],
+  "historical_attempts": [
+    {
+      "file": "samples/M08-side-airframe-attempt-r6.png",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-0bbcc616-3940-4c34-a396-81a3bab183fe.png",
+      "status": "historical_failed_view_attempt",
+      "reason": "侧面初稿仍为三分之四转角",
+      "sha256": "8c4998c11a5bdbf0c54e69c50166450f55c1555ee6bd82fbb74724648540cbea"
+    }
+  ],
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "samples/M14-front-r5.png",
+      "samples/M08-synthesis-r3.png",
+      "samples/M14-music-support-r4.png",
+      "samples/M08-front-airframe-r6.png",
+      "samples/M08-side-airframe-r6.png",
+      "samples/M08-rear-airframe-r6.png",
+      "samples/M14-front-airframe-r6.png",
+      "samples/M14-side-airframe-r6.png",
+      "samples/M14-rear-airframe-r6.png"
+    ],
+    "observations": [
+      "新雷翎正面直接参照歌翼体态后，恢复了中等肩胸和四肢厚度、较紧凑腰段；不再沿R5继续拉长小腿或缩小头部。头盔保持纵向体积，V形侧冠、座舱胸、长枪和刃翼仍可识别。",
+      "歌翼正面的头/胸/髋/腿相对位置保持，肩部改为带圆角的明确进气框，大腿改为长整片蒙皮，胫甲用连续舱盖与较少检修线；细碎菱形与多层装饰折面减少。",
+      "歌翼侧背同步圆角肩壳、简化的腿/臂蒙皮和短中央腰甲；声翼仍向前展开，背面只见红白外壳，正面仍为每侧一大一小扬声器。已有多喷口布局沿用，没有声称本轮证明完整航空对应。",
+      "雷翎背面保持闭合象牙肩后壳、石墨脊柱、短后髋甲、双小腿喷口和右手长枪；翼片展开状态与正面相同。",
+      "雷翎侧面初稿仍有明显三分之四转角。改为以旧侧向图仅作相机与遮挡依据、新正面约束比例后，翼片投影变为薄层，双腿双足重叠，近侧空手与远侧长枪关系更清楚。仍有少量插画透视，不标为严格工程正交。",
+      "雷翎保留自身较锐利的头冠/刃翼与喷气远射身份；歌翼的航空机壳调整更明显。表面收敛是设计判断，不把两台统一成同一机架，也不以原图数量判断美术通过。"
+    ],
+    "proportion_outcome": "author_observed_balance_against_named_reference",
+    "proportion_result": "以歌翼实际正面作图像比例锚，雷翎恢复适中的肩胸/四肢厚度与腰腿平衡；没有继续使用10头身数值反调。新图仍待用户判断。",
+    "surface_outcome": "author_observed_airframe_surface_refinement",
+    "surface_result": "歌翼明确化圆角进气框与连续舱盖/蒙皮，雷翎收敛内部折面且保留自身刃翼；六图同主形派生，航空态和完整折变仍未由模型验证。",
+    "normal_tactical_metrics": "本轮为二维源图工序，不填写运行投影、连续动作、实听或原生试玩通过。",
+    "new_images_user_accepted": false,
+    "runtime_tested": false
+  },
+  "authority_scope": "当前R6雷翎/歌翼正侧背6张源设计确定，可交付主对话；不扩大为模型、完整变形、声音或运行验收。",
+  "limits": [
+    "六张为二维绘制源设定，侧向带少量插画透视，细部隐面与同件模型仍需核对。",
+    "本次未重画航空态，旧航空母稿只作来源；新表面与完整变形的对应尚未由模型证明。"
+  ],
+  "canon_changed": false,
+  "runtime_assets_modified": false,
+  "handoff_sent": false,
+  "source_acceptance_receipt": "aircraft-design-fixed-20261023-r6.json",
+  "source_design_user_accepted": true
+}

@@ -1,0 +1,198 @@
+{
+  "date": "2026-10-23",
+  "revision": "city-response-source-r2",
+  "existing_batch": "design-followthrough-r1.json",
+  "reader": "city-response-source-r2.html",
+  "status": "R2_masters_user_accepted_turnarounds_authorized",
+  "generation_mode": "built-in image_gen",
+  "items": [
+    {
+      "id": "M09",
+      "name": "灰崎警备劳务机",
+      "canon_entity": "V353U033",
+      "role": "城市非致命警备、交通封控与六面隔离墙",
+      "file": "samples/M09-curved-labor-r2.png",
+      "sha256": "9355ad11dda42d079ab9a55a98ee39d904aedcb564ca88c1354ad4c170180288",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-448a5be7-edc5-4caf-bf23-ae90e09cd59e.png",
+      "prompt": "M09-curved-labor-surface-prompt-r2.txt",
+      "user_accepted": true,
+      "runtime_integrated": false,
+      "handoff_sent": false,
+      "existing_consumer_refs": [
+        "game-godot/assets/formula_lab/linked_campaign_v4/models/police.glb",
+        "game-godot/assets/formula_lab/linked_campaign_v6/portraits/police.png"
+      ],
+      "acceptance_scope": "采用灰崎R2源板：当前巡逻盔头型、灰白/蓝灰/红反光标记、成人身形与连续曲面外壳；六面平板交通墙，手持一面、背负五面。",
+      "source_acceptance_receipt": "city-response-design-fixed-20261023-r2.json"
+    },
+    {
+      "id": "M10",
+      "name": "消防架桥机",
+      "canon_entity": "V353U034",
+      "role": "双足工程变形机／消防架桥载具的视觉提案",
+      "file": "samples/M10-engineering-transformer-r2.png",
+      "sha256": "cd4b733daceee495c87182691608eb50f17d2284249a1e154f88645fa721c01d",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-68f4a068-1713-4c37-9d9f-892b0848068b.png",
+      "prompt": "M10-engineering-transformer-prompt-r2.txt",
+      "user_accepted": true,
+      "runtime_integrated": false,
+      "handoff_sent": false,
+      "existing_consumer_refs": [
+        "game-godot/assets/formula_lab/linked_campaign_v4/models/fire.glb",
+        "game-godot/assets/formula_lab/linked_campaign_v6/portraits/fire.png"
+      ],
+      "acceptance_scope": "采用消防架桥机R2源板：橙白双足工程人形与消防架桥载具，驾驶室胸、六轮组、成对折叠桥板、消防水路；四稳定腿用于车辆作业支撑。",
+      "source_acceptance_receipt": "city-response-design-fixed-20261023-r2.json"
+    }
+  ],
+  "historical_attempts": [
+    {
+      "id": "M09",
+      "file": "samples/M09-wall-count-attempt-r1.png",
+      "sha256": "e258675b74874d90c628814fd91c3c30967ece31a9935079d635531ffe3e7ec2",
+      "reason": "首稿背上六面加手持一面，数量误为七",
+      "current_source": false
+    },
+    {
+      "id": "M09",
+      "file": "samples/M09-patrol-master-r1b.png",
+      "sha256": "bbaab892ffa3455f611af4e671992956de97d8e4da3c25b6cd72f3ad5ffa1b98",
+      "reason": "用户肯定头部/配色，但要求躯体壳面改成Patlabor曲面语言",
+      "current_source": false
+    },
+    {
+      "id": "M10",
+      "file": "samples/M10-rejected-quad-apparatus-r1.png",
+      "sha256": "f0e61c4dc7d4419adbe25166719c7e47898628f9c7ee55c514b3d1afdd82e2b1",
+      "reason": "用户明确否定四足主形并要求工程类变形金刚设计",
+      "current_source": false
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "M09",
+      "file": "samples/M09-patrol-master-r1b.png",
+      "sha256": "bbaab892ffa3455f611af4e671992956de97d8e4da3c25b6cd72f3ad5ffa1b98",
+      "role": "本轮M09曲面修改的直接目标；用户肯定头部与配色的指定图"
+    },
+    {
+      "id": "M09",
+      "file": "refs/M09-city-response-original-20261023.jpg",
+      "sha256": "678242e27bce3dee57c83a1b8d68b9e94f4e2697457df322c9936c1870fdd977",
+      "role": "原有身份/部件参考；不以旧图覆盖用户新要求或当前故事"
+    },
+    {
+      "id": "M10",
+      "file": "refs/M10-city-response-original-20261023.jpg",
+      "sha256": "67c9e65b0153d34b6f96a3906faba8a7c0ec5d509b6f62ddb9dbde6284e136de",
+      "role": "原有身份/部件参考；不以旧图覆盖用户新要求或当前故事"
+    },
+    {
+      "file": "refs/M09-patlabor-official-20261023.png",
+      "sha256": "551774ad2881795901b4396ae1f7595c9f50e056b36fa565da7772da0e88f8aa",
+      "source": "https://patlabor.tokyo/mechanic/689/",
+      "role": "官方Patlabor外壳曲面与关节参考；不取原头、纹章或黑白涂装"
+    },
+    {
+      "file": "refs/M10-grapple-official-01-20261023.jpg",
+      "sha256": "047616a6a57e16c97d00eeae1f956c5ddc216c5fd90b76d554af981a73d7fcf2",
+      "source": "https://tf.takaratomy.co.jp/products-lineup/tf_mp/mp-35",
+      "role": "官方Grapple载具部件组织参考；不复制头脸、具体造型或商标"
+    },
+    {
+      "file": "samples/M06-front-r3.png",
+      "sha256": "222bff39fa66bcea24e60c0a5be8675158a78aa89587844d10cc99fbf49ffe7d",
+      "source": "M06-turnaround-design-fixed-20261023-r3.json",
+      "role": "已确定项目墨线/块面与成人比例参考，不复制机体身份"
+    }
+  ],
+  "authority_basis": [
+    {
+      "source": "docs/superpowers/specs/data/canon/entities.tsv",
+      "ids": [
+        "V353U033",
+        "V353U034"
+      ],
+      "use": "警务/封控与消防/架桥/降温职业职责"
+    },
+    {
+      "source": "docs/superpowers/specs/data/research/robot_ip_deep_dossier_pool_v1.tsv",
+      "id": "IPD016",
+      "use": "Patlabor城市职业机体系，不能用通用军事杂兵替代"
+    },
+    {
+      "source": "docs/superpowers/specs/剧情梗概/V35.9/rebuild/reader/C01-闭馆以后万机出击.md",
+      "anchor": "橙白色消防架桥机、倒车、四条稳定腿和背部桥板",
+      "use": "保留橙白消防、架桥与支撑；不得把稳定腿硬解释为四足主形"
+    },
+    {
+      "source": "docs/superpowers/specs/剧情梗概/V35.9/rebuild/reader/C03-章节连续阅读稿.md",
+      "anchor": "灰崎六面交通墙、消防水幕与热障",
+      "use": "配件服务具体职业动作"
+    }
+  ],
+  "latest_user_feedback": {
+    "M09": {
+      "date": "2026-10-23",
+      "user_verbatim": "这个应该是机动警察ip的投射机体，乍一眼还不错，配色和头部设计都挺好，现在是线条上应该也参考机动警察机体的那种相对曲面较多的设计，现在这个设计比较像机动步兵。",
+      "source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-9635f65b-78b5-4045-9e82-a7e45b961e9f.png",
+      "sha256": "bbaab892ffa3455f611af4e671992956de97d8e4da3c25b6cd72f3ad5ffa1b98",
+      "preserve": [
+        "头部设计",
+        "灰白/蓝灰/红反光标记配色",
+        "当前身形",
+        "六面交通墙"
+      ],
+      "change": [
+        "肩胸前臂小腿改连续曲面",
+        "减少碎切面与装甲折角",
+        "关节防尘套和活动空间更清楚"
+      ],
+      "full_source_accepted": false
+    },
+    "M10": {
+      "date": "2026-10-23",
+      "user_verbatim": "这台机体设计太鬼畜了，你可以工程类变形金刚的设计来做",
+      "rejected_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-f2cd65dd-4d46-417d-9a4a-a2ab9651ea97.png",
+      "decision": "撤回四足背桥主形；改工程变形金刚式双足人形/工程消防载具，四稳定腿只用于车辆作业支撑。"
+    }
+  },
+  "interpretation": {
+    "M09": "保留用户肯定的头部/灰白配色/身形/六墙，专改肩胸臂腿的连续曲面和结构线。",
+    "M10": "按用户最新要求重做工程变形语言：正常双足人形和消防架桥载具；四支腿只作车辆施工支撑。车型、轮组和部件对应为候选设计，不自动增加剧情或玩法。"
+  },
+  "author_review": "city-response-author-review-r2.json",
+  "experience": {
+    "start": "下一批城市职业机需要从形态上读出交通封控与消防架桥两种职责。",
+    "input": "沿M09已肯定局部改曲面；撤回M10四足主形，参考工程变形机重组人形/车型/工作形态。",
+    "visible_consequence": "两张源板分别展示头部/交通墙/携行关系与双足人形/载具/稳定支腿作业关系。",
+    "next": "直接绘制两机同形正侧背；按实际图核对头身比、交通墙数量/侧别、消防轮组/桥板/水路。"
+  },
+  "pending_previous_batch": [
+    {
+      "id": "M07",
+      "file": "samples/M07-public-works-master-r1b.png",
+      "state": "原源板保留，未扩大为多视/模型完成"
+    }
+  ],
+  "limits": [
+    "两张当前R2父源由用户“可以，出三视图”采用；新增正侧背另作派生源图交付。",
+    "M10变形、桥面受力/收纳、支腿和水路是视觉提案，未由同件机构或连续动作验证。",
+    "主工程模型、战棋镜头、规则、声音与运行未改。"
+  ],
+  "canon_changed": true,
+  "runtime_assets_modified": false,
+  "handoff_sent": false,
+  "source_design_user_accepted": true,
+  "source_acceptance_receipt": "city-response-design-fixed-20261023-r2.json"
+}

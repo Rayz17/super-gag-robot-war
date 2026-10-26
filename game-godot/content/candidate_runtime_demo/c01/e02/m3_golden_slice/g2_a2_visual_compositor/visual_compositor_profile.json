@@ -1,0 +1,798 @@
+{
+  "schema_version": 1,
+  "profile_id": "C01E02_G2_A2_VISUAL_COMPOSITOR_PROXY_V1",
+  "status": "G2_A2_PROXY_ONLY_NON_DEFAULT",
+  "identity": {
+    "entry_role": "non_default",
+    "save_mode": "disabled",
+    "runtime_promotion": false,
+    "canon_modified": false,
+    "g2_b_allowed": false,
+    "fixture_validation_only": true,
+    "approved_handoffs": [],
+    "real_art_loaded": 0,
+    "forbidden_visible_sources": [
+      "A9",
+      "V10X",
+      "B+X",
+      "CML001",
+      "81-c01e02-a9-1a6-s-scene-first-lookdev-objective"
+    ]
+  },
+  "geometry": {
+    "view_space": "map_dimetric_40x20",
+    "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+    "grid_size": [32, 18],
+    "tile_half_px": [40, 20],
+    "projection_origin_raw_px": [-880, -170],
+    "viewport_px": [1280, 720],
+    "map_viewport_rect": [0, 58, 1280, 584],
+    "camera_smoothing_seconds": 0.16,
+    "canvas_size_px": [2400, 1350],
+    "canvas_origin_raw_px": [-1760, -340],
+    "default_camera_profile": "PUBLIC_PLAN_SUMMARY",
+    "camera_groups": {
+      "PUBLIC": {"camera_profile":"PUBLIC_PLAN_SUMMARY"},
+      "PLAN": {"camera_profile":"PUBLIC_PLAN_SUMMARY"},
+      "SUMMARY": {"camera_profile":"PUBLIC_PLAN_SUMMARY"},
+      "CONTACT_A": {"camera_profile":"CONTACT_A"},
+      "CONTACT_B": {"camera_profile":"CONTACT_B"}
+    },
+    "camera_profiles": {
+      "NO_FOCUS": {"camera_center_raw_px":[-720,350],"zoom":1.0,"shake_px":[0,0],"crop_rect_px":[400,398,1280,584],"layer_top_left_px":[-400,-340]},
+      "PUBLIC_PLAN_SUMMARY": {"camera_center_raw_px":[-480,420],"zoom":1.0,"shake_px":[0,0],"crop_rect_px":[640,468,1280,584],"layer_top_left_px":[-640,-410]},
+      "CONTACT_A": {"camera_center_raw_px":[-480,450],"zoom":1.0,"shake_px":[0,0],"crop_rect_px":[640,498,1280,584],"layer_top_left_px":[-640,-440]},
+      "CONTACT_B": {"camera_center_raw_px":[-500,440],"zoom":1.0,"shake_px":[0,0],"crop_rect_px":[620,488,1280,584],"layer_top_left_px":[-620,-430]}
+    },
+    "registration_control_points": [
+      {"grid":[0,0],"raw_px":[-880,-170],"source_px":[880,170]},
+      {"grid":[15,11],"raw_px":[-720,350],"source_px":[1040,690]},
+      {"grid":[20.5,10.5],"raw_px":[-480,450],"source_px":[1280,790]}
+    ],
+    "registration_point": "footprint_bottom_center",
+    "sort_key": "footpoint_screen_y_plus_explicit_z_bias",
+    "single_projection_helper": "visual_projection.gd"
+  },
+  "current_topology_contract_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/current_topology_map_contract.json",
+  "map_layers": [
+    {
+      "slot_id": "MAP_BASE",
+      "role": "base",
+      "source_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-base.png",
+      "expected_sha256": "6fd40a256afee225457594558edf274823de5d1e771d1f570d0263c5df217789",
+      "z": -1200,
+      "filter": "linear",
+      "mask_semantics": "opaque_world_base",
+      "fixture_validation_only": true,
+      "default_visible": false
+    },
+    {
+      "slot_id": "MAP_BUILDINGS",
+      "role": "buildings",
+      "source_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-buildings.png",
+      "expected_sha256": "db3f83eeb3ed5e583d0a831a203ab0d5446a594f9ed9e34f25f175f290f62237",
+      "z": -900,
+      "filter": "linear",
+      "mask_semantics": "world_body",
+      "fixture_validation_only": true,
+      "default_visible": false
+    },
+    {
+      "slot_id": "MAP_STATE_LIGHTING",
+      "role": "state_lighting",
+      "source_path": "res://../docs/superpowers/specs/production/c01-current-demo-v1/art-a4-map-b-six-layer/A4_MAP_B_STATE_LAYERS_2400x1350.png",
+      "expected_sha256": "05833205230b087b3024545a1344174fb1a73c7975087fcf06808d62b01d3ff1",
+      "z": -200,
+      "filter": "linear",
+      "mask_semantics": "mixed_state_proxy_fixture_only",
+      "fixture_validation_only": true,
+      "default_visible": false
+    },
+    {
+      "slot_id": "MAP_ROOFS",
+      "role": "roofs",
+      "source_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-roofs.png",
+      "expected_sha256": "7fea3c7918ff85bb1d5df1f4bcc5856afac1d8fa7f174d59b862f985962f11a9",
+      "z": 900,
+      "filter": "linear",
+      "mask_semantics": "local_actor_alpha_patch",
+      "fixture_validation_only": true,
+      "default_visible": false
+    },
+    {
+      "slot_id": "MAP_FOREGROUND",
+      "role": "foreground",
+      "source_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-foreground.png",
+      "expected_sha256": "454b3cf845ba91d7d7f13e201874bbbe79f871297a36930a24348823df1525a3",
+      "z": 1100,
+      "filter": "linear",
+      "mask_semantics": "local_actor_alpha_patch",
+      "fixture_validation_only": true,
+      "default_visible": false
+    },
+    {
+      "slot_id": "MAP_OCCLUSION_CONTROL",
+      "role": "occlusion_control",
+      "source_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-occlusion-mask.png",
+      "expected_sha256": "b5f68f4749f6bff2025409622888d8e8faa17d977aca372caa43121eec18e899",
+      "z": 1200,
+      "filter": "linear",
+      "mask_semantics": "R=fade_fill;G=roof_outline;B=safety_fringe;A=coverage",
+      "fixture_validation_only": true,
+      "default_visible": false
+    }
+  ],
+  "filter_comparison": {
+    "map_proxy_modes_compared": ["nearest", "linear"],
+    "selected": "linear",
+    "reason": "A4 diagonal roof and road edges retain registration while linear avoids nearest stair-step shimmer at 1.0 zoom",
+    "future_unit_filter_independent": true
+  },
+  "occlusion": {
+    "control_source_slot": "MAP_OCCLUSION_CONTROL",
+    "control_source_required": true,
+    "channel_semantics": {
+      "R": "fade_fill",
+      "G": "roof_outline",
+      "B": "safety_fringe",
+      "A": "coverage"
+    },
+    "fade_alpha": 0.28,
+    "patch_source": "A4 control RGBA intersect CompoundMapActor alpha local patch",
+    "coverage_policy": "output is forbidden where A4 control alpha is zero",
+    "rgb_policy": "output RGB may only sample the matching A4 control RGB channel",
+    "outline_source": "A4 G sampled through CompoundMapActor alpha contour",
+    "footpoint_ring_forbidden": true,
+    "outside_patch_alpha_unchanged": true,
+    "performance_policy": "dirty_rect_only_no_full_frame_recount"
+  },
+  "compound_actor_bindings": {
+    "PROXY_SCOUT_1X1": {
+      "stable_id": "PROXY_SCOUT_1X1",
+      "view_space": "map_dimetric_40x20",
+      "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+      "frame_canvas_px": [96, 96],
+      "display_scale": [1.0, 1.0],
+      "footprint": [1, 1],
+      "pivot_normalized": [0.5, 0.75],
+      "pivot_px": [48, 72],
+      "z_bias": 0,
+      "sockets": {
+        "body": [0, -28],
+        "shield": [-16, -24],
+        "weapon": [17, -27],
+        "impact": [0, -32],
+        "target": [0, -32]
+      },
+      "clip_resolution": {
+        "fail_closed": true,
+        "no_cross_facing_fallback": true,
+        "state_aliases": {
+          "active": "idle",
+          "moving": "move",
+          "move": "move",
+          "drive": "move",
+          "anticipation": "idle",
+          "scattered_active": "idle",
+          "deflected": "deflected",
+          "deflected_alive": "deflected",
+          "passed_lane_still_active": "passed"
+        },
+        "facing_aliases": {"north":"north","east":"east","south":"south","west":"west"}
+      },
+      "sparse_clips": {
+        "idle/south/0": [0, 0, 96, 96],
+        "idle/west/0": [0, 0, 96, 96],
+        "idle/north/0": [0, 0, 96, 96],
+        "idle/east/0": [0, 0, 96, 96],
+        "move/east/0": [0, 0, 96, 96],
+        "move/south/0": [0, 0, 96, 96],
+        "move/west/0": [0, 0, 96, 96],
+        "deflected/west/0": [0, 0, 96, 96],
+        "passed/east/0": [0, 0, 96, 96]
+      }
+    },
+    "PROXY_GIANT_2X2": {
+      "stable_id": "PROXY_GIANT_2X2",
+      "view_space": "map_dimetric_40x20",
+      "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+      "frame_canvas_px": [256, 256],
+      "display_scale": [1.0, 1.0],
+      "footprint": [2, 2],
+      "pivot_normalized": [0.5, 0.875],
+      "pivot_px": [128, 224],
+      "z_bias": 1,
+      "sockets": {
+        "body": [0, -74],
+        "shield": [-46, -62],
+        "weapon": [46, -72],
+        "impact": [-20, -10],
+        "target": [-20, -10]
+      },
+      "clip_resolution": {
+        "fail_closed": true,
+        "no_cross_facing_fallback": true,
+        "state_aliases": {
+          "active": "idle",
+          "moving": "move",
+          "move": "move",
+          "brace": "brace",
+          "anticipation": "brace",
+          "holding_first_contact": "brace",
+          "contact": "contact",
+          "impact": "contact",
+          "recoil": "recoil",
+          "recoil_hold": "recoil"
+        },
+        "facing_aliases": {"north":"north","east":"east","south":"south","west":"west"}
+      },
+      "sparse_clips": {
+        "idle/east/0": [0, 0, 256, 256],
+        "idle/south/0": [0, 0, 256, 256],
+        "move/east/0": [0, 0, 256, 256],
+        "move/north/0": [0, 0, 256, 256],
+        "brace/east/0": [0, 0, 256, 256],
+        "brace/south/0": [0, 0, 256, 256],
+        "contact/south/0": [0, 0, 256, 256],
+        "recoil/south/0": [0, 0, 256, 256]
+      }
+    },
+    "PROXY_HEAVY_3X3": {
+      "stable_id": "PROXY_HEAVY_3X3",
+      "view_space": "map_dimetric_40x20",
+      "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+      "frame_canvas_px": [384, 384],
+      "display_scale": [1.0, 1.0],
+      "footprint": [3, 3],
+      "pivot_normalized": [0.5, 0.8333333333],
+      "pivot_px": [192, 320],
+      "z_bias": 2,
+      "sockets": {
+        "body": [0, -98],
+        "shield": [-68, -84],
+        "weapon": [68, -96],
+        "impact": [12, -18],
+        "target": [12, -18]
+      },
+      "clip_resolution": {
+        "fail_closed": true,
+        "no_cross_facing_fallback": true,
+        "state_aliases": {
+          "charging_run": "charge",
+          "charge": "charge",
+          "anticipation": "charge",
+          "brace": "brace",
+          "recover": "recover",
+          "contact": "contact",
+          "impact": "contact",
+          "recoil": "recoil",
+          "charge_partially_redirected": "recoil",
+          "side_armor_hit": "side_hit",
+          "red_charge": "red_charge"
+        },
+        "facing_aliases": {"north":"north","east":"east","south":"south","west":"west"}
+      },
+      "sparse_clips": {
+        "charge/north/0": [0, 0, 384, 384],
+        "brace/north/0": [0, 0, 384, 384],
+        "recover/north/0": [0, 0, 384, 384],
+        "contact/north/0": [0, 0, 384, 384],
+        "recoil/north/0": [0, 0, 384, 384],
+        "side_hit/north/0": [0, 0, 384, 384],
+        "red_charge/north/0": [0, 0, 384, 384]
+      }
+    }
+  },
+  "subject_proxy_bindings": {
+    "V353U001": {
+      "proxy_binding": "PROXY_GIANT_2X2",
+      "visual_role": "guardian_proxy",
+      "public_label": "馆守Z",
+      "required_resolved_clips": {
+        "GF_PLAN_RECOMPOSED": {"state":"active","facing":"east","resolved_key":"idle/east/0"},
+        "GF_CONTACT_RECOMPOSED": {"state":"contact","facing":"south","resolved_key":"contact/south/0"}
+      }
+    },
+    "ENEMY_C01_BREAKER": {
+      "proxy_binding": "PROXY_HEAVY_3X3",
+      "visual_role": "breaker_proxy",
+      "public_label": "BREAKER",
+      "required_resolved_clips": {
+        "GF_PLAN_RECOMPOSED": {"state":"charging_run","facing":"north","resolved_key":"charge/north/0"},
+        "GF_CONTACT_RECOMPOSED": {"state":"contact","facing":"north","resolved_key":"contact/north/0"}
+      }
+    },
+    "TARGET_C01_EMERGENCY_VEHICLE_01": {
+      "proxy_binding": "PROXY_SCOUT_1X1",
+      "visual_role": "emergency_vehicle_proxy",
+      "public_label": "应急车",
+      "required_resolved_clips": {
+        "GF_PLAN_RECOMPOSED": {"state":"moving","facing":"east","resolved_key":"move/east/0"},
+        "GF_CONTACT_RECOMPOSED": {"state":"passed_lane_still_active","facing":"east","resolved_key":"passed/east/0"}
+      }
+    },
+    "ENEMY_C01_RIFT_SWARM_01": {
+      "proxy_binding": "PROXY_SCOUT_1X1",
+      "visual_role": "rift_swarm_proxy",
+      "public_label": "小体一",
+      "required_resolved_clips": {
+        "GF_PLAN_RECOMPOSED": {"state":"active","facing":"west","resolved_key":"idle/west/0"},
+        "GF_CONTACT_RECOMPOSED": {"state":"deflected_alive","facing":"west","resolved_key":"deflected/west/0"}
+      }
+    },
+    "ENEMY_C01_RIFT_SWARM_02": {
+      "proxy_binding": "PROXY_SCOUT_1X1",
+      "visual_role": "rift_swarm_proxy",
+      "public_label": "小体二",
+      "required_resolved_clips": {
+        "GF_PLAN_RECOMPOSED": {"state":"active","facing":"north","resolved_key":"idle/north/0"},
+        "GF_CONTACT_RECOMPOSED": {"state":"scattered_active","facing":"north","resolved_key":"idle/north/0"}
+      }
+    },
+    "ENEMY_C01_RIFT_SWARM_03": {
+      "proxy_binding": "PROXY_SCOUT_1X1",
+      "visual_role": "rift_swarm_proxy",
+      "public_label": "小体三",
+      "required_resolved_clips": {
+        "GF_PLAN_RECOMPOSED": {"state":"active","facing":"south","resolved_key":"idle/south/0"},
+        "GF_CONTACT_RECOMPOSED": {"state":"scattered_active","facing":"south","resolved_key":"idle/south/0"}
+      }
+    },
+    "TARGET_C01_EAST_EXIT": {
+      "proxy_binding": "PROXY_SCOUT_1X1",
+      "visual_role": "east_exit_landmark_proxy",
+      "public_label": "东门",
+      "required_resolved_clips": {
+        "GF_PLAN_RECOMPOSED": {"state":"active","facing":"east","resolved_key":"idle/east/0"},
+        "GF_CONTACT_RECOMPOSED": {"state":"active","facing":"east","resolved_key":"idle/east/0"}
+      }
+    },
+    "TARGET_C01_SECURITY_GATE": {
+      "proxy_binding": "PROXY_SCOUT_1X1",
+      "visual_role": "warning_facility_proxy",
+      "public_label": "警戒设施",
+      "required_resolved_clips": {
+        "GF_PLAN_RECOMPOSED": {"state":"active","facing":"south","resolved_key":"idle/south/0"},
+        "GF_CONTACT_RECOMPOSED": {"state":"active","facing":"south","resolved_key":"idle/south/0"}
+      }
+    }
+  },
+  "threat_visual_bindings": [
+    {"subject_id":"TARGET_C01_EMERGENCY_VEHICLE_01","copy_index":0,"public_label":"应急车路线","color":"#58d9ef","marker_shape":"diamond"},
+    {"subject_id":"ENEMY_C01_RIFT_SWARM_01","copy_index":1,"public_label":"小体扑线","color":"#ff9b4a","marker_shape":"triangle"},
+    {"subject_id":"ENEMY_C01_BREAKER","copy_index":2,"public_label":"BREAKER冲线","color":"#ff4964","marker_shape":"square"}
+  ],
+  "safe_zones": {
+    "plan_presenter_rect": [0, 90, 300, 360],
+    "plan_presenter_max_width_ratio": 0.25,
+    "contact_status_rect": [12, 92, 78, 240],
+    "contact_map_visible_min_ratio": 0.88,
+    "central_tactical_safe_rect": [256, 116, 768, 430],
+    "central_tactical_safe_ratio": 0.60,
+    "top_objective_rect": [320, 8, 640, 44],
+    "top_threat_rect": [968, 8, 300, 44],
+    "bottom_timeline_rect": [286, 650, 708, 58],
+    "timeline_tokens": ["应急车", "小体", "巨体接触", "城市炮", "赤红蓄能"]
+  },
+  "deterministic_copy_contract": {
+    "objective": {
+      "source": "session.current_objective()",
+      "expected_text": "让应急车通过，挡开扑向东门的小体，并站到冲线前。"
+    },
+    "jicun_line": {
+      "source": "visual_compositor_profile.deterministic_copy_contract.jicun_line.expected_text",
+      "static_authority": "82-c01e02-g2-a2-visual-compositor-proxy-objective.md#G2-A2.5",
+      "expected_text": "人都在后面。把它引到南边去。"
+    },
+    "top_threats": {
+      "source": "session.current_threats()",
+      "expected_texts": [
+        "应急车先穿过落脚区",
+        "小体将在第二时点扑向东门",
+        "BREAKER沿直线冲入街区"
+      ]
+    },
+    "timeline": {
+      "semantic_source": "session.current_timeline()",
+      "expected_semantic_order": ["vehicle", "swarm", "giant_contact", "city_artillery", "red_charge"],
+      "display_source": "visual_compositor_profile.safe_zones.timeline_tokens",
+      "expected_texts": ["应急车", "小体", "巨体接触", "城市炮", "赤红蓄能"]
+    },
+    "strategy_a": {
+      "metric_sources": [
+        "session.preview.plan_summary.strategy_path",
+        "session.resolved.world_result.guardian_heat",
+        "session.resolved.world_result.remaining_timing_margin",
+        "session.resolved.world_result.round2_constraints"
+      ],
+      "display_source": "visual_compositor_adapter same Resolver preview formatter",
+      "expected_text": "正面卡位｜本轮热量24｜警戒设施受损｜道路损伤42｜第二轮热量68、余量1",
+      "responsibility_source": "same resolver preview world_result used by execute",
+      "responsibility_expected_text": "正面卡位｜本轮热量24｜警戒设施受损｜道路损伤42｜第二轮热量68、余量1"
+    },
+    "strategy_b": {
+      "metric_sources": [
+        "session.preview.plan_summary.strategy_path",
+        "session.resolved.world_result.guardian_heat",
+        "session.resolved.world_result.remaining_timing_margin",
+        "session.resolved.world_result.round2_constraints"
+      ],
+      "display_source": "visual_compositor_adapter same Resolver preview formatter",
+      "expected_text": "先护撤离线、接触前转身｜本轮热量46｜警戒设施保全｜道路损伤24｜第二轮热量88、余量0",
+      "responsibility_source": "same resolver preview world_result used by execute",
+      "responsibility_expected_text": "先护撤离线、接触前转身｜本轮热量46｜警戒设施保全｜道路损伤24｜第二轮热量88、余量0"
+    },
+    "scene_may_compose_or_rewrite": false
+  },
+  "weather_fx": {
+    "far_rain_count": 72,
+    "near_rain_count": 42,
+    "far_speed": 210,
+    "near_speed": 440,
+    "wind": [-0.22, 1.0],
+    "wetland_mask_hook": "MAP_WETLAND_MASK",
+    "reflection_hook": "MAP_BAKED_REFLECTION",
+    "foot_splash_hook": "FX_FOOT_SPLASH",
+    "heavy_splash_hook": "FX_HEAVY_SPLASH",
+    "contact_hooks": ["hit_stop", "directional_shake", "single_frame_highlight", "debris", "water_splash", "recoil", "road_damage_mask"]
+  },
+  "capture_states": {
+    "GF_PLAN_RECOMPOSED": "A_PLAN_COMPOSITOR_PROXY",
+    "GF_CONTACT_RECOMPOSED": "A_CONTACT_COMPOSITOR_PROXY",
+    "GF_CONTACT_B_RECOMPOSED": "B_CONTACT_COMPOSITOR_PROXY",
+    "required_actual_frame_ids": [
+      "00_JOINT_REGISTRATION_CONTROL",
+      "01_PUBLIC_SITUATION",
+      "02_EDITABLE_DRAFT_A",
+      "03_EDITABLE_DRAFT_B",
+      "04_COMMIT_SUMMARY_A",
+      "05_COMMIT_SUMMARY_B",
+      "06_T1_VEHICLE",
+      "07_T2_SWARM",
+      "08_T3_CONTACT_HITSTOP",
+      "09_T5_A_B_CONSEQUENCE_COMPARE",
+      "10_LOCAL_OCCLUSION_METHOD"
+    ]
+  },
+  "public_state_policy": {
+    "runtime_truth_order": [
+      "performance_director.current_frame.entity_overrides",
+      "session.resolved.world_result",
+      "session.round_snapshot",
+      "session.intent_set",
+      "visual_compositor_profile.full_scene_subject_mappings.*.expected"
+    ],
+    "profile_values_are_validation_expectations": true,
+    "scene_hardcoded_gameplay_positions_forbidden": true,
+    "display_anchor_alias_forbidden": true,
+    "adapter_fail_closed_on_exact_mismatch": true
+  },
+  "full_scene_subject_mappings": {
+    "GF_PLAN_RECOMPOSED": {
+      "state_source": "session.round_snapshot + session.intent_set + session.draft",
+      "subjects": {
+        "V353U001": {
+          "compound_actor": "PROXY_GIANT_2X2",
+          "source": "session.round_snapshot.entities[unit_id=V353U001]",
+          "presentation_visibility": "onscreen",
+          "expected": {"anchor":[15,11],"footprint":[2,2],"facing":"east","status":"active"}
+        },
+        "ENEMY_C01_BREAKER": {
+          "compound_actor": "PROXY_HEAVY_3X3",
+          "source": "session.round_snapshot.entities[unit_id=ENEMY_C01_BREAKER]",
+          "presentation_visibility": "onscreen",
+          "expected": {"anchor":[20,13],"footprint":[3,3],"facing":"north","status":"charging_run"}
+        },
+        "TARGET_C01_EMERGENCY_VEHICLE_01": {
+          "compound_actor": "PROXY_SCOUT_1X1",
+          "source": "session.round_snapshot.entities[unit_id=TARGET_C01_EMERGENCY_VEHICLE_01]",
+          "presentation_visibility": "onscreen",
+          "expected": {"anchor":[17,10],"footprint":[1,1],"facing":"east","status":"moving"}
+        },
+        "ENEMY_C01_RIFT_SWARM_01": {
+          "compound_actor": "PROXY_SCOUT_1X1",
+          "source": "session.round_snapshot.entities[unit_id=ENEMY_C01_RIFT_SWARM_01]",
+          "presentation_visibility": "onscreen",
+          "expected": {"anchor":[22,7],"footprint":[1,1],"facing":"west","status":"active"}
+        },
+        "ENEMY_C01_RIFT_SWARM_02": {
+          "compound_actor": "PROXY_SCOUT_1X1",
+          "source": "session.round_snapshot.entities[unit_id=ENEMY_C01_RIFT_SWARM_02]",
+          "presentation_visibility": "onscreen_edge",
+          "expected": {"anchor":[26,12],"footprint":[1,1],"facing":"north","status":"active"}
+        },
+        "ENEMY_C01_RIFT_SWARM_03": {
+          "compound_actor": "PROXY_SCOUT_1X1",
+          "source": "session.round_snapshot.entities[unit_id=ENEMY_C01_RIFT_SWARM_03]",
+        "presentation_visibility": "onscreen",
+          "expected": {"anchor":[29,5],"footprint":[1,1],"facing":"south","status":"active"}
+        },
+      "TARGET_C01_EAST_EXIT": {
+          "compound_actor": "PROXY_SCOUT_1X1",
+          "source": "session.round_snapshot.entities[unit_id=TARGET_C01_EAST_EXIT]",
+        "presentation_visibility": "onscreen",
+          "expected": {"anchor":[31,7],"footprint":[1,1],"facing":"east","status":"active"}
+        },
+        "TARGET_C01_SECURITY_GATE": {
+          "compound_actor": "PROXY_SCOUT_1X1",
+          "source": "session.round_snapshot.entities[unit_id=TARGET_C01_SECURITY_GATE]",
+          "presentation_visibility": "onscreen_edge",
+          "expected": {"anchor":[27,8],"footprint":[1,1],"facing":"south","status":"active"}
+        }
+      },
+      "ghosts": {
+        "GUARDIAN_ENDPOINT": {
+          "compound_actor": "PROXY_GIANT_2X2",
+          "anchor_source": "session.draft.unit_plans[0].planning_endpoint",
+          "facing_source": "session.draft.unit_plans[0].final_facing",
+          "expected": {"anchor":[20,9],"footprint":[2,2],"facing":"south"}
+        },
+        "BREAKER_CORRIDOR_ENDPOINT": {
+          "compound_actor": "PROXY_HEAVY_3X3",
+          "anchor_source": "session.intent_set.intents[action_type=STRAIGHT_CHARGE_NORTH_CITY].trajectory[-1]",
+          "facing_source": "session.round_snapshot.entities[unit_id=ENEMY_C01_BREAKER].facing",
+          "expected": {"anchor":[20,11],"footprint":[3,3],"facing":"north"}
+        }
+      },
+      "objects": {
+        "PROP_C01CDV1_RETIRED_SHIELD": {
+          "render_kind": "wall_hung_proxy_marker",
+          "anchor_source": "session.round_snapshot.objects[object_id=PROP_C01CDV1_RETIRED_SHIELD].anchor",
+          "state_source": "session.round_snapshot.objects[object_id=PROP_C01CDV1_RETIRED_SHIELD]",
+          "expected_is_validation_only": true,
+          "expected": {"anchor":[14,10],"state":"wall_hung_3_scorches","acquired":false}
+        },
+        "PROTECTION_ZONE_RECT": {
+          "render_kind": "projected_area",
+          "rect_source": "session.round_snapshot.terrain_zones[zone_id=TERRAIN_C01_RESCUE_LANE].rect",
+          "expected": {"rect":[20,5,12,7]}
+        },
+        "ALLY_C01_CITY_ARTILLERY": {
+          "render_kind": "source_marker",
+          "anchor_source": "session.intent_set.intents[action_type=CONDITIONAL_SIDE_ARMOR_SHOT].source_anchor",
+          "state_source": "session.round_snapshot.objects[object_id=ALLY_C01_CITY_ARTILLERY]",
+          "expected": {"anchor":[29,2],"state":"tracking"}
+        }
+      },
+      "intent_trajectories": {
+        "TARGET_C01_EMERGENCY_VEHICLE_01": {
+          "source": "session.intent_set.intents[action_type=AUTO_CROSS_LANDING_ZONE].trajectory",
+          "expected": [[17,10],[18,10],[21,10],[24,9]]
+        },
+        "ENEMY_C01_RIFT_SWARM_01": {
+          "source": "session.intent_set.intents[action_type=ENTER_ATTACK_RESCUE_LINE].trajectory",
+          "expected": [[22,7],[21,8],[20,9],[20,10]]
+        },
+        "ENEMY_C01_BREAKER": {
+          "source": "session.intent_set.intents[action_type=STRAIGHT_CHARGE_NORTH_CITY].trajectory",
+          "expected": [[20,13],[20,12],[20,11]]
+        }
+      }
+    },
+    "GF_CONTACT_RECOMPOSED": {
+      "timeslice": "T3.00",
+      "state_source": "performance_director.current_frame.entity_overrides merged over session.resolved.world_result",
+      "subjects": {
+        "V353U001": {
+          "compound_actor": "PROXY_GIANT_2X2",
+          "source": "performance_director.current_frame.entity_overrides[V353U001]",
+          "presentation_visibility": "onscreen",
+          "expected": {"anchor":[20,9],"footprint":[2,2],"facing":"south","state":"contact"}
+        },
+        "ENEMY_C01_BREAKER": {
+          "compound_actor": "PROXY_HEAVY_3X3",
+          "source": "performance_director.current_frame.entity_overrides[ENEMY_C01_BREAKER]",
+          "presentation_visibility": "onscreen",
+          "expected": {"anchor":[20,11],"footprint":[3,3],"facing":"north","state":"contact"}
+        },
+        "TARGET_C01_EMERGENCY_VEHICLE_01": {
+          "compound_actor": "PROXY_SCOUT_1X1",
+          "source": "performance_director.current_frame.entity_overrides[TARGET_C01_EMERGENCY_VEHICLE_01]",
+          "presentation_visibility": "onscreen",
+          "expected": {"anchor":[24,9],"footprint":[1,1],"facing":"east","state":"passed_lane_still_active"}
+        },
+        "ENEMY_C01_RIFT_SWARM_01": {
+          "compound_actor": "PROXY_SCOUT_1X1",
+          "source": "performance_director.current_frame.entity_overrides[ENEMY_C01_RIFT_SWARM_01]",
+          "presentation_visibility": "onscreen",
+          "expected": {"anchor":[22,9],"footprint":[1,1],"facing":"west","state":"deflected_alive","grounded":true,"blocks_route":false}
+        },
+        "ENEMY_C01_RIFT_SWARM_02": {
+          "compound_actor": "PROXY_SCOUT_1X1",
+          "source": "session.resolved.world_result.entities[unit_id=ENEMY_C01_RIFT_SWARM_02]",
+          "presentation_visibility": "onscreen_edge",
+          "expected": {"anchor":[27,12],"footprint":[1,1]}
+        },
+      "ENEMY_C01_RIFT_SWARM_03": {
+          "compound_actor": "PROXY_SCOUT_1X1",
+          "source": "session.resolved.world_result.entities[unit_id=ENEMY_C01_RIFT_SWARM_03]",
+        "presentation_visibility": "onscreen",
+          "expected": {"anchor":[29,5],"footprint":[1,1]}
+        }
+      },
+      "required_objects": {
+        "TARGET_C01_EAST_EXIT": {
+          "anchor_source": "session.resolved.world_result.entities[unit_id=TARGET_C01_EAST_EXIT].anchor",
+          "state_source": "session.resolved.world_result.entities[unit_id=TARGET_C01_EAST_EXIT].status",
+          "expected": {"anchor":[31,7],"state":"active"}
+        },
+        "TARGET_C01_SECURITY_GATE": {
+          "anchor_source": "session.resolved.world_result.entities[unit_id=TARGET_C01_SECURITY_GATE].anchor",
+          "state_source": "session.resolved.world_result.warning_facility_state",
+          "expected": {"anchor":[27,8],"state":"damaged"}
+        },
+        "PROP_C01CDV1_RETIRED_SHIELD": {
+          "anchor_source": "session.resolved.world_result.objects[object_id=PROP_C01CDV1_RETIRED_SHIELD].anchor",
+          "state_source": "session.resolved.world_result.objects[object_id=PROP_C01CDV1_RETIRED_SHIELD].state",
+          "expected_is_validation_only": true,
+          "expected": {"anchor":[14,10],"state":"wall_hung_3_scorches","acquired":false}
+        },
+        "PROTECTION_ZONE_RECT": {
+          "rect_source": "session.resolved.world_result.terrain_zones[zone_id=TERRAIN_C01_RESCUE_LANE].rect",
+          "expected": {"rect":[20,5,12,7]}
+        },
+        "ALLY_C01_CITY_ARTILLERY": {
+          "anchor_source": "session.intent_set.intents[action_type=CONDITIONAL_SIDE_ARMOR_SHOT].source_anchor",
+          "logical_resolved_state_source": "session.resolved.world_result.objects[object_id=ALLY_C01_CITY_ARTILLERY].state",
+          "expected_logical_resolved_state": "fired_hit_side_armor",
+          "presentation_state_source": "visual_compositor_profile.full_scene_subject_mappings.GF_CONTACT_RECOMPOSED.required_objects.ALLY_C01_CITY_ARTILLERY.presentation_state",
+          "presentation_state": "tracking",
+          "presentation_mode": "forecast_only",
+          "renderer_state_source": "presentation_state",
+          "expected": {"anchor":[29,2]},
+          "physical_shot_allowed": false
+        }
+      }
+    },
+    "GF_CONTACT_B_RECOMPOSED": {
+      "timeslice": "T3.25",
+      "strategy_scope": "B_PROTECT_LANE_FAMILY_ONLY",
+      "state_source": "performance_director.current_frame.entity_overrides merged over session.resolved.world_result",
+      "subjects": {
+        "V353U001": {
+          "compound_actor": "PROXY_GIANT_2X2",
+          "source": "performance_director.current_frame.entity_overrides[V353U001]",
+          "presentation_visibility": "onscreen",
+          "expected": {"anchor":[19,9],"footprint":[2,2],"facing":"south","state":"contact"}
+        },
+        "ENEMY_C01_BREAKER": {
+          "compound_actor": "PROXY_HEAVY_3X3",
+          "source": "performance_director.current_frame.entity_overrides[ENEMY_C01_BREAKER]",
+          "presentation_visibility": "onscreen",
+          "expected": {"anchor":[20,11],"footprint":[3,3],"facing":"north","state":"contact"}
+        },
+        "TARGET_C01_EMERGENCY_VEHICLE_01": {
+          "compound_actor": "PROXY_SCOUT_1X1",
+          "source": "performance_director.current_frame.entity_overrides[TARGET_C01_EMERGENCY_VEHICLE_01]",
+          "presentation_visibility": "onscreen",
+          "expected": {"anchor":[24,9],"footprint":[1,1],"facing":"east","state":"passed_lane_still_active"}
+        },
+        "ENEMY_C01_RIFT_SWARM_01": {
+          "compound_actor": "PROXY_SCOUT_1X1",
+          "source": "performance_director.current_frame.entity_overrides[ENEMY_C01_RIFT_SWARM_01]",
+          "presentation_visibility": "onscreen",
+          "expected": {"anchor":[22,8],"footprint":[1,1],"facing":"west","state":"deflected_alive","grounded":true,"blocks_route":false}
+        },
+        "ENEMY_C01_RIFT_SWARM_02": {
+          "compound_actor": "PROXY_SCOUT_1X1",
+          "source": "session.resolved.world_result.entities[unit_id=ENEMY_C01_RIFT_SWARM_02]",
+          "presentation_visibility": "onscreen_edge",
+          "expected": {"anchor":[28,12],"footprint":[1,1]}
+        },
+        "ENEMY_C01_RIFT_SWARM_03": {
+          "compound_actor": "PROXY_SCOUT_1X1",
+          "source": "session.resolved.world_result.entities[unit_id=ENEMY_C01_RIFT_SWARM_03]",
+          "presentation_visibility": "onscreen",
+          "expected": {"anchor":[30,6],"footprint":[1,1]}
+        }
+      },
+      "required_objects": {
+        "TARGET_C01_EAST_EXIT": {
+          "anchor_source": "session.resolved.world_result.entities[unit_id=TARGET_C01_EAST_EXIT].anchor",
+          "state_source": "session.resolved.world_result.entities[unit_id=TARGET_C01_EAST_EXIT].status",
+          "expected": {"anchor":[31,7],"state":"active"}
+        },
+        "TARGET_C01_SECURITY_GATE": {
+          "anchor_source": "session.resolved.world_result.entities[unit_id=TARGET_C01_SECURITY_GATE].anchor",
+          "state_source": "session.resolved.world_result.warning_facility_state",
+          "expected": {"anchor":[27,8],"state":"active"}
+        },
+        "PROP_C01CDV1_RETIRED_SHIELD": {
+          "anchor_source": "session.resolved.world_result.objects[object_id=PROP_C01CDV1_RETIRED_SHIELD].anchor",
+          "state_source": "session.resolved.world_result.objects[object_id=PROP_C01CDV1_RETIRED_SHIELD].state",
+          "expected_is_validation_only": true,
+          "expected": {"anchor":[14,10],"state":"wall_hung_3_scorches","acquired":false}
+        },
+        "PROTECTION_ZONE_RECT": {
+          "rect_source": "session.resolved.world_result.terrain_zones[zone_id=TERRAIN_C01_RESCUE_LANE].rect",
+          "expected": {"rect":[20,5,12,7]}
+        },
+        "ALLY_C01_CITY_ARTILLERY": {
+          "anchor_source": "session.intent_set.intents[action_type=CONDITIONAL_SIDE_ARMOR_SHOT].source_anchor",
+          "logical_resolved_state_source": "session.resolved.world_result.objects[object_id=ALLY_C01_CITY_ARTILLERY].state",
+          "expected_logical_resolved_state": "fired_hit_side_armor",
+          "presentation_state": "tracking",
+          "presentation_mode": "forecast_only",
+          "renderer_state_source": "presentation_state",
+          "expected": {"anchor":[29,2]},
+          "physical_shot_allowed": false
+        }
+      }
+    }
+  },
+  "phase_policy": {
+    "A_CONTACT_COMPOSITOR_PROXY": {
+      "timeslice": "T3.00",
+      "entity_fx_allowed": ["contact_highlight", "micro_crack", "small_directional_debris", "water_splash"],
+      "shared_socket_source": "performance_director.current_frame.contact_geometry.impact_socket_grid",
+      "hud_forecast_only": ["T4_city_artillery", "T5_red_charge", "T5_full_road_buckle"],
+      "entity_fx_forbidden_before_timeslice": ["city_artillery_impact", "red_charge_release", "full_road_buckle"],
+      "future_state_projection": {
+        "T4_CITY_ARTILLERY": {
+          "logical_resolved_state_source": "session.resolved.world_result.objects[object_id=ALLY_C01_CITY_ARTILLERY].state",
+          "expected_logical_resolved_state": "fired_hit_side_armor",
+          "presentation_state": "tracking",
+          "presentation_mode": "forecast_only",
+          "renderer_state_source": "presentation_state",
+          "physical_beam_or_impact_allowed": false
+        },
+        "T5_RED_CHARGE": {
+          "logical_resolved_state_source": "session.resolved.world_result.red_impact_state",
+          "expected_logical_resolved_state": "charging",
+          "presentation_state": "forecast_only",
+          "renderer_state_source": "presentation_state",
+          "physical_red_release_allowed": false
+        },
+        "T5_ROAD_BUCKLE": {
+          "logical_resolved_state_source": "session.resolved.world_result.objects[object_id=ENV_C01_ROAD_SURFACE].state",
+          "expected_logical_resolved_state": "long_broken_arc",
+          "presentation_state": "micro_crack_only",
+          "renderer_state_source": "presentation_state",
+          "full_road_buckle_allowed": false
+        }
+      },
+      "audio_policy": "trigger_and_bus_duck_proxy_only"
+    },
+    "B_CONTACT_COMPOSITOR_PROXY": {
+      "timeslice": "T3.25",
+      "entity_fx_allowed": ["contact_highlight", "micro_crack", "small_directional_debris", "water_splash"],
+      "shared_socket_source": "performance_director.current_frame.contact_geometry.impact_socket_grid",
+      "hud_forecast_only": ["T4_city_artillery", "T5_red_charge", "T5_full_road_buckle"],
+      "entity_fx_forbidden_before_timeslice": ["city_artillery_impact", "red_charge_release", "full_road_buckle"],
+      "future_state_projection": {
+        "T4_CITY_ARTILLERY": {
+          "logical_resolved_state_source": "session.resolved.world_result.objects[object_id=ALLY_C01_CITY_ARTILLERY].state",
+          "expected_logical_resolved_state": "fired_hit_side_armor",
+          "presentation_state": "tracking",
+          "presentation_mode": "forecast_only",
+          "renderer_state_source": "presentation_state",
+          "physical_beam_or_impact_allowed": false
+        },
+        "T5_RED_CHARGE": {
+          "logical_resolved_state_source": "session.resolved.world_result.red_impact_state",
+          "expected_logical_resolved_state": "charging",
+          "presentation_state": "forecast_only",
+          "renderer_state_source": "presentation_state",
+          "physical_red_release_allowed": false
+        },
+        "T5_ROAD_BUCKLE": {
+          "logical_resolved_state_source": "session.resolved.world_result.objects[object_id=ENV_C01_ROAD_SURFACE].state",
+          "expected_logical_resolved_state": "twin_buckles",
+          "presentation_state": "micro_crack_only",
+          "renderer_state_source": "presentation_state",
+          "full_road_buckle_allowed": false
+        }
+      },
+      "audio_policy": "trigger_and_bus_duck_proxy_only"
+    }
+  },
+  "performance": {
+    "warmup_frames": 120,
+    "sample_frames": 600,
+    "viewport": [1280, 720],
+    "headless_allowed": false,
+    "capture_io_during_window": false,
+    "p95_target_ms": 16.7,
+    "max_target_ms": 33.3
+  }
+}

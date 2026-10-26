@@ -1,0 +1,208 @@
+{
+  "schema_version": 2,
+  "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+  "spatial_profile": {
+    "profile_id": "c01cdv1_spatial_m2_r2",
+    "world_size": [1920, 900],
+    "viewport": [1280, 720],
+    "camera_centers": [[640, 450], [960, 450], [1280, 450]],
+    "camera_transition_seconds": 0.55,
+    "walk_bounds": [120, 260, 1680, 500],
+    "joint_s01_state": {
+      "stable_state_id": "C01CDV1_JOINT_S01_CAMB_V1",
+      "camera_center": [960, 450],
+      "crop_rect": [320, 90, 1280, 720],
+      "player_anchor": [845, 716],
+      "anchors": {
+        "diedie_fire_door": [475, 680],
+        "machine_dog": [850, 655],
+        "laoyu": [980, 676],
+        "fire_bridge": [1170, 573],
+        "xiaoman": [1492, 676],
+        "east_exit": [1792, 650],
+        "underground": [260, 675],
+        "foreground_occluder": [1080, 640]
+      },
+      "main_floor_quad": [[80, 700], [1680, 570], [1880, 760], [260, 875]],
+      "underground_rect": [170, 480, 180, 195],
+      "east_exit_rect": [1700, 290, 185, 360]
+    }
+  },
+  "tactical_profile": {
+    "profile_id": "c01cdv1_e02_scroll_m2_r2",
+    "grid": [32, 18],
+    "projection": {
+      "tile_half": [40, 20],
+      "viewport": [900, 594],
+      "screen_rect": [0, 54, 900, 594],
+      "edge_threshold": 92,
+      "camera_smoothing_seconds": 0.18,
+      "camera_scroll_speed": 780,
+      "initial_focus_cell": [6, 10]
+    },
+    "swarm_organization_state": "scattered",
+    "minimum_phase_survivors": 2,
+    "guardian_move_range": 6,
+    "shield_hotspot": [11, 10],
+    "guard_zone": [21, 9, 2, 2],
+    "red_impact_deadline_turn": 5,
+    "units": [
+      {
+        "unit_id": "V353U001",
+        "kind": "guardian",
+        "display_name": "馆守Z",
+        "anchor": [5, 10],
+        "footprint": [2, 2],
+        "facing": "east",
+        "controllable": true,
+        "hp": 8
+      },
+      {
+        "unit_id": "ENEMY_C01_BREAKER",
+        "kind": "boss",
+        "display_name": "BREAKER",
+        "anchor": [23, 8],
+        "footprint": [3, 3],
+        "facing": "west",
+        "controllable": false,
+        "hp": 99
+      },
+      {
+        "unit_id": "ENEMY_C01_RIFT_SWARM_01",
+        "kind": "swarm",
+        "display_name": "突入小体 01",
+        "anchor": [13, 6],
+        "footprint": [1, 1],
+        "facing": "east",
+        "controllable": false,
+        "hp": 2
+      },
+      {
+        "unit_id": "ENEMY_C01_RIFT_SWARM_02",
+        "kind": "swarm",
+        "display_name": "突入小体 02",
+        "anchor": [18, 5],
+        "footprint": [1, 1],
+        "facing": "east",
+        "controllable": false,
+        "hp": 2
+      },
+      {
+        "unit_id": "ENEMY_C01_RIFT_SWARM_03",
+        "kind": "swarm",
+        "display_name": "突入小体 03",
+        "anchor": [27, 6],
+        "footprint": [1, 1],
+        "facing": "north",
+        "controllable": false,
+        "hp": 2
+      },
+      {
+        "unit_id": "ENEMY_C01_RIFT_SWARM_04",
+        "kind": "swarm",
+        "display_name": "突入小体 04",
+        "anchor": [15, 12],
+        "footprint": [1, 1],
+        "facing": "north",
+        "controllable": false,
+        "hp": 2
+      },
+      {
+        "unit_id": "ENEMY_C01_RIFT_SWARM_05",
+        "kind": "swarm",
+        "display_name": "突入小体 05",
+        "anchor": [29, 11],
+        "footprint": [1, 1],
+        "facing": "west",
+        "controllable": false,
+        "hp": 2
+      },
+      {
+        "unit_id": "ENEMY_C01_RIFT_SWARM_06",
+        "kind": "swarm",
+        "display_name": "突入小体 06",
+        "anchor": [21, 14],
+        "footprint": [1, 1],
+        "facing": "north",
+        "controllable": false,
+        "hp": 2
+      },
+      {
+        "unit_id": "TARGET_C01_EMERGENCY_AMBULANCE",
+        "kind": "emergency_vehicle",
+        "display_name": "最后救护车",
+        "anchor": [27, 4],
+        "footprint": [1, 1],
+        "facing": "east",
+        "controllable": false,
+        "hp": 4,
+        "route": [[27, 4], [29, 4], [31, 4]]
+      },
+      {
+        "unit_id": "TARGET_C01_EMERGENCY_BRIDGE_TRUCK",
+        "kind": "emergency_vehicle",
+        "display_name": "消防架桥机",
+        "anchor": [28, 5],
+        "footprint": [1, 1],
+        "facing": "east",
+        "controllable": false,
+        "hp": 4,
+        "route": [[28, 5], [30, 5], [31, 4]]
+      },
+      {
+        "unit_id": "TARGET_C01_EAST_EXIT",
+        "kind": "evacuation_exit",
+        "display_name": "东侧撤离口",
+        "anchor": [31, 4],
+        "footprint": [1, 1],
+        "facing": "east",
+        "controllable": false,
+        "hp": 6
+      },
+      {
+        "unit_id": "TARGET_C01_SECURITY_GATE",
+        "kind": "security_target",
+        "display_name": "东门警戒闸",
+        "anchor": [25, 5],
+        "footprint": [1, 1],
+        "facing": "south",
+        "controllable": false,
+        "hp": 5
+      },
+      {
+        "unit_id": "TARGET_C01_WARNING_RELAY",
+        "kind": "security_target",
+        "display_name": "街区警报中继",
+        "anchor": [19, 7],
+        "footprint": [1, 1],
+        "facing": "south",
+        "controllable": false,
+        "hp": 5
+      }
+    ],
+    "terrain_zones": [
+      {"zone_id": "TERRAIN_C01_MAIN_ROAD", "kind": "road", "rect": [0, 7, 32, 5], "passable": true},
+      {"zone_id": "TERRAIN_C01_RESCUE_LANE", "kind": "rescue_lane", "rect": [15, 3, 17, 3], "passable": true},
+      {"zone_id": "TERRAIN_C01_NW_BLOCK", "kind": "building", "rect": [1, 0, 7, 5], "passable": false},
+      {"zone_id": "TERRAIN_C01_NM_BLOCK", "kind": "building", "rect": [10, 0, 5, 4], "passable": false},
+      {"zone_id": "TERRAIN_C01_NE_BLOCK", "kind": "building", "rect": [19, 0, 6, 3], "passable": false},
+      {"zone_id": "TERRAIN_C01_SW_BLOCK", "kind": "building", "rect": [0, 14, 8, 4], "passable": false},
+      {"zone_id": "TERRAIN_C01_SM_BLOCK", "kind": "building", "rect": [10, 14, 7, 4], "passable": false},
+      {"zone_id": "TERRAIN_C01_SE_BLOCK", "kind": "building", "rect": [25, 14, 7, 4], "passable": false},
+      {"zone_id": "TERRAIN_C01_BROKEN_SKYWALK", "kind": "broken_corridor", "rect": [8, 5, 8, 2], "passable": false},
+      {"zone_id": "TERRAIN_C01_SECURITY_APRON", "kind": "security_apron", "rect": [24, 3, 8, 5], "passable": true}
+    ],
+    "destructibles": [
+      {"object_id": "DESTRUCT_C01_ROAD_BARRIER", "kind": "road_barrier", "anchor": [14, 9], "hp": 2, "state": "intact"},
+      {"object_id": "DESTRUCT_C01_SKYWALK_SUPPORT", "kind": "skywalk_support", "anchor": [16, 6], "hp": 3, "state": "cracked"},
+      {"object_id": "DESTRUCT_C01_SECURITY_KIOSK", "kind": "security_kiosk", "anchor": [24, 6], "hp": 2, "state": "intact"},
+      {"object_id": "DESTRUCT_C01_ROADSIDE_SIGN", "kind": "roadside_sign", "anchor": [20, 12], "hp": 1, "state": "intact"}
+    ],
+    "phase_checkpoint": {
+      "operation_id": "OP-C01-BREAKER",
+      "encounter_id": "ENC-C01-GROUND",
+      "phase_id": "P1",
+      "episode_boundary": "phase_checkpoint"
+    }
+  }
+}

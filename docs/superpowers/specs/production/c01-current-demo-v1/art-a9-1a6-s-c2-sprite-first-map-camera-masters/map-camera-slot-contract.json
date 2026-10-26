@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "A9_1A6_S_C2_SPRITE_FIRST_MAP_CAMERA_MASTER_PREPRODUCTION",
+  "status": "PREPRODUCTION_ONLY_IMAGEGEN_0_CALL03_FALSE_CALL04_FALSE",
+  "authority_scope": "Candidate production evidence only; no Canon, Runtime, UA91, or handoff",
+  "view_space": "map_dimetric_40x20",
+  "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+  "projection": {
+    "type": "orthographic_dimetric_2_to_1",
+    "grid_size_cells": [
+      32,
+      18
+    ],
+    "tile_half_px": [
+      40,
+      20
+    ],
+    "runtime_raw_origin_px": [
+      -880,
+      -170
+    ],
+    "plan_camera_raw_px": [
+      -480,
+      420
+    ],
+    "map_viewport_rect_px": [
+      0,
+      58,
+      1280,
+      584
+    ],
+    "world_canvas_px": [
+      2400,
+      1350
+    ],
+    "world_canvas_origin_raw_px": [
+      -1760,
+      -340
+    ],
+    "direction_vectors_screen_px": {
+      "north": [
+        40,
+        -20
+      ],
+      "east": [
+        40,
+        20
+      ],
+      "south": [
+        -40,
+        20
+      ],
+      "west": [
+        -40,
+        -20
+      ]
+    }
+  },
+  "registration": {
+    "anchor_semantics": "minimum_grid_cell_of_rectangular_footprint",
+    "registration_point": "footprint_bottom_center",
+    "sort_key": "footpoint_screen_y + explicit_z_bias",
+    "centered": false,
+    "sprite_top_left_formula": "footpoint_screen - pivot_px * display_scale",
+    "max_footpoint_error_px": 0.5,
+    "cross_facing_fallback": false,
+    "missing_clip_behavior": "hide_subject_and_emit_single_reason"
+  },
+  "slots": [
+    {
+      "stable_id": "V353U001",
+      "slot_id": "guardian_z_map_current",
+      "native_size": [
+        256,
+        256
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "pivot_normalized": [
+        0.5,
+        0.875
+      ],
+      "pivot_px": [
+        128,
+        224
+      ],
+      "facing": "east",
+      "facing_screen_vector_px": [
+        40,
+        20
+      ],
+      "first_clip": "idle/east/0",
+      "z_bias": 1,
+      "socket_placeholders_local_from_footpoint_px": {
+        "body": [
+          0,
+          -74
+        ],
+        "shield": [
+          -46,
+          -62
+        ],
+        "weapon": [
+          46,
+          -72
+        ],
+        "impact": [
+          -20,
+          -10
+        ],
+        "target": [
+          -20,
+          -10
+        ]
+      },
+      "visual_status": "not_generated",
+      "identity_source_direct_map_bind_allowed": false
+    },
+    {
+      "stable_id": "ENEMY_C01_BREAKER",
+      "slot_id": "breaker_map_current",
+      "native_size": [
+        384,
+        384
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "pivot_normalized": [
+        0.5,
+        0.8333333333
+      ],
+      "pivot_px": [
+        192,
+        320
+      ],
+      "facing": "north",
+      "facing_screen_vector_px": [
+        40,
+        -20
+      ],
+      "first_clip": "charge/north/0",
+      "z_bias": 2,
+      "socket_placeholders_local_from_footpoint_px": {
+        "body": [
+          0,
+          -98
+        ],
+        "shield": [
+          -68,
+          -84
+        ],
+        "weapon": [
+          68,
+          -96
+        ],
+        "impact": [
+          12,
+          -18
+        ],
+        "target": [
+          12,
+          -18
+        ]
+      },
+      "visual_status": "not_generated",
+      "identity_source_direct_map_bind_allowed": false
+    }
+  ],
+  "consumer_gate": {
+    "required_objective": "G2_A2_C3",
+    "P99_invoked": false,
+    "real_art_loaded": 0,
+    "fixture_validation_only": true
+  }
+}

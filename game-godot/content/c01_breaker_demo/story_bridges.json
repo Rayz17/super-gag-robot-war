@@ -1,0 +1,421 @@
+{
+  "schema_id": "C01_BREAKER_OPERATION_STORY_BRIDGES_V1",
+  "candidate_only": true,
+  "source": "Current accepted C01 Reader V35.9",
+  "bridges": {
+    "PROLOGUE": {
+      "segment_type": "prologue",
+      "background_mode": "FRONT_HALL_LAST_OPEN_DAY_TO_ALERT",
+      "map_input_locked": true,
+      "return_segment": "E02_GROUND_CHECKPOINT",
+      "beats": [
+        {
+          "beat_id": "P01_LAST_TOUR",
+          "speaker": "纪存",
+          "line": "所以今天再看一次。",
+          "action_slice_slot": "JICUN_PROLOGUE_LAST_TOUR",
+          "action_slice_subject": "纪存",
+          "action_slice_kind": "character",
+          "visual_mode": "jicun_candidate_slice",
+          "stage_direction": "万机馆最后开放日。最后一场导览走向主展厅，明早以后这批藏品将被分开运走。"
+        },
+        {
+          "beat_id": "P02_DINNER_DEADLINE",
+          "speaker": "佐伯七海",
+          "line": "我等到八点半。再晚，主菜我替你选。",
+          "action_slice_slot": "QIHAI_PROLOGUE_DINNER_CALL",
+          "action_slice_subject": "佐伯七海",
+          "action_slice_kind": "character",
+          "visual_mode": "remote_comms",
+          "stage_direction": "最后一批观众正在离馆；滨海塔楼的靠窗餐桌仍等着另一个人。"
+        },
+        {
+          "beat_id": "P03_BREAKER_ALERT",
+          "speaker": "城市应急广播",
+          "line": "裂星潮突入体。临时呼号BREAKER。预计在万机馆南侧广场破土。",
+          "action_slice_slot": "CITY_EMERGENCY_PROLOGUE_ALERT",
+          "action_slice_subject": "城市应急态势图",
+          "action_slice_kind": "system",
+          "visual_mode": "system_status",
+          "stage_direction": "震动带折向万机馆；一枚停用多年的航行指示灯无故闪亮。"
+        },
+        {
+          "beat_id": "P04_EAST_RAMP_EVACUATION",
+          "speaker": "佐伯七海",
+          "line": "纪存，别锁门。带所有人走东侧货运坡道。应急队正在过去。",
+          "action_slice_slot": "QIHAI_PROLOGUE_EVACUATION",
+          "action_slice_subject": "佐伯七海",
+          "action_slice_kind": "character",
+          "visual_mode": "remote_comms",
+          "stage_direction": "纪存改写导览路线：不拿行李，不下楼，观众先走东侧坡道。"
+        },
+        {
+          "beat_id": "P05_EMERGENCY_MUSEUM_GUARD",
+          "speaker": "旧守护者",
+          "line": "导览中止。进入紧急守馆程序。",
+          "action_slice_slot": "GUARDIAN_Z_PROLOGUE_GUARDIAN_WAKE",
+          "action_slice_subject": "馆守Z",
+          "action_slice_kind": "mecha",
+          "visual_mode": "system_status",
+          "stage_direction": "馆守Z胸口亮起多年未见的金光；主展厅深处传来沉重的金属摩擦声。"
+        }
+      ]
+    },
+    "BRIDGE_A_HAOSI_CROSSES_LINE": {
+      "segment_type": "story_bridge",
+      "background_mode": "PERSISTENT_E02_GROUND_MAP",
+      "map_input_locked": true,
+      "return_segment": "E03_DUAL_MECHA_BREAK_SHELL",
+      "beats": [
+        {
+          "beat_id": "A01_RECOVERY_CARD",
+          "speaker": "勇气株式会社回收同事",
+          "line": "签完就走。你现在把它开出去，今天的测试、机体保险和你的试驾资格都可能没了。",
+          "action_slice_slot": "HAOSI_RECEIVES_RECOVERY_CARD",
+          "action_slice_subject": "荒川豪司",
+          "action_slice_kind": "character",
+          "visual_mode": "remote_comms",
+          "stage_direction": "豪司隔着雨幕看见馆守Z刚完成盾拍，BREAKER正在重新撑起。"
+        },
+        {
+          "beat_id": "A02_TWO_REJECTIONS",
+          "speaker": "系统",
+          "line": "两次城市防灾待命申请：未批准。",
+          "action_slice_slot": "HAOSI_TWO_REJECTED_REQUESTS",
+          "action_slice_subject": "审批终端",
+          "action_slice_kind": "system",
+          "visual_mode": "system_status",
+          "stage_direction": "两个红色未批准并排显示；豪司在回收卡上签名。"
+        },
+        {
+          "beat_id": "A03_RELEASE_HANDLE",
+          "speaker": "勇气株式会社回收同事",
+          "line": "那是事故脱离用的！不是出击许可！",
+          "action_slice_slot": "HAOSI_PULLS_EMERGENCY_RELEASE",
+          "action_slice_subject": "荒川豪司",
+          "action_slice_kind": "character",
+          "visual_mode": "map_wide_caption",
+          "stage_direction": "运输架固定臂开始松开。"
+        },
+        {
+          "beat_id": "A04_HAOSI_ACKNOWLEDGES_COST",
+          "speaker": "荒川豪司",
+          "line": "我知道。你先退到护栏后面。",
+          "action_slice_slot": "HAOSI_COMMS_DECISION",
+          "action_slice_subject": "荒川豪司",
+          "action_slice_kind": "character",
+          "visual_mode": "remote_comms",
+          "stage_direction": "豪司扣上安全带；不是误触，也不是他人授权。"
+        },
+        {
+          "beat_id": "A05_CROSS_YELLOW_LINE",
+          "speaker": "荒川豪司",
+          "line": "等我回来再说。",
+          "action_slice_slot": "BRAVE_FIST_BREAKS_TRANSPORT_LOCK",
+          "action_slice_subject": "勇拳",
+          "action_slice_kind": "mecha",
+          "visual_mode": "map_wide_caption",
+          "stage_direction": "勇拳挣开最后两只固定夹，第一次越过不准跨出的黄色测试线。",
+          "beat_image": "res://content/c01_breaker_demo/assets/candidate_cutscenes/c01_cutscene_haosi_yellow_line.png",
+          "beat_image_approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "beat_image_user_visual_acceptance": false,
+          "beat_image_runtime_promotion": false,
+          "beat_video": "res://content/c01_breaker_demo/assets/candidate_cutscenes/c01_cutscene_haosi_yellow_line.ogv",
+          "beat_video_approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "beat_video_user_visual_acceptance": false,
+          "beat_video_runtime_promotion": false
+        }
+      ]
+    },
+    "BRIDGE_B_CORE_REVEAL_TO_CARRIER": {
+      "segment_type": "story_bridge",
+      "background_mode": "PERSISTENT_E03_GROUND_TO_MUSEUM_DEPARTURE",
+      "map_input_locked": true,
+      "return_segment": "E04_CARRIER_CORE_BATTLE",
+      "beats": [
+        {
+          "beat_id": "B01_CORE_RISES",
+          "speaker": "纪存",
+          "line": "壳里还有东西。所有人离开它的航线！",
+          "action_slice_slot": "JICUN_CORE_REVEAL_COMMAND",
+          "action_slice_subject": "纪存",
+          "action_slice_kind": "character",
+          "visual_mode": "jicun_candidate_slice",
+          "stage_direction": "飞行核心从破碎背甲升起，薄翼展开。",
+          "beat_image": "res://content/c01_breaker_demo/assets/candidate_cutscenes/c01_cutscene_dual_fist_shell_break.png",
+          "beat_image_approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "beat_image_user_visual_acceptance": false,
+          "beat_image_runtime_promotion": false,
+          "beat_video": "res://content/c01_breaker_demo/assets/candidate_cutscenes/c01_cutscene_dual_fist_shell_break.ogv",
+          "beat_video_approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "beat_video_user_visual_acceptance": false,
+          "beat_video_runtime_promotion": false
+        },
+        {
+          "beat_id": "B02_SWARM_SYNCHRONIZES",
+          "speaker": "兜灯",
+          "line": "街区内外的小体同步了。它们在给核心让路。",
+          "action_slice_slot": "DOUDENG_MACHINE_STATUS_WARNING",
+          "action_slice_subject": "兜灯",
+          "action_slice_kind": "character",
+          "visual_mode": "map_wide_caption",
+          "stage_direction": "分散小体第一次踩上同一个节奏，转向万机馆。"
+        },
+        {
+          "beat_id": "B03_MUSEUM_RESPONDS",
+          "speaker": "馆守Z",
+          "line": "记录修正。那不是应急发电机，是巡展舰的航行炉。",
+          "action_slice_slot": "GUARDIAN_Z_CARRIER_RECOGNITION",
+          "action_slice_subject": "馆守Z",
+          "action_slice_kind": "mecha",
+          "visual_mode": "system_status",
+          "stage_direction": "导览图退出楼层模式，显示百余米巡展舰轮廓。"
+        },
+        {
+          "beat_id": "B04_TAKE_THE_MUSEUM_TO_SEA",
+          "speaker": "纪存",
+          "line": "它们在追万机馆。我们把馆开出去，把它们带到海上。",
+          "action_slice_slot": "JICUN_EMERGENCY_DEPARTURE_DECISION",
+          "action_slice_subject": "纪存",
+          "action_slice_kind": "character",
+          "visual_mode": "jicun_candidate_slice",
+          "stage_direction": "终端上的敌影正在从街区、海面和低云聚向万机馆；紧急离港模式第一次亮起。"
+        },
+        {
+          "beat_id": "B05_LAST_BRIDGE_WITHDRAWS",
+          "speaker": "兜灯",
+          "line": "里面怎么样？",
+          "action_slice_slot": "DOUDENG_RIGHT_SHOULDER_INSPECTION",
+          "action_slice_subject": "兜灯",
+          "action_slice_kind": "character",
+          "visual_mode": "map_wide_caption",
+          "stage_direction": "馆守Z锁入外部泊位，用裂盾替最后一段检修桥挡下小体；勇拳把敌体送回拦截炮火。"
+        },
+        {
+          "beat_id": "B06_JICUN_IS_STILL_INSIDE",
+          "speaker": "纪存",
+          "line": "有点响，别的没事。",
+          "action_slice_slot": "JICUN_EXITS_GUARDIAN_CHEST",
+          "action_slice_subject": "纪存",
+          "action_slice_kind": "character",
+          "visual_mode": "map_wide_caption",
+          "stage_direction": "纪存从馆守Z胸前导览席进入主厅；右臂残片留在封锁广场。"
+        },
+        {
+          "beat_id": "B07_DISCONNECT_THE_MUSEUM",
+          "speaker": "唐胶",
+          "line": "落地以后改了这么多轮，门厅、管线、广告牌，什么都往舰骨上接。现在想走，还得一件件摘下来。",
+          "action_slice_slot": "TANGJIAO_DISCONNECTS_CITY_SERVICES",
+          "action_slice_subject": "唐胶",
+          "action_slice_kind": "character",
+          "visual_mode": "system_status",
+          "stage_direction": "水、电、排污逐项脱离；藏品固定架升起，最后一批人员与设备完成撤收。"
+        },
+        {
+          "beat_id": "B08_QIHAI_CLEARS_THE_ROUTE",
+          "speaker": "佐伯七海",
+          "line": "东侧民用航路已经清空，防空炮的禁射区我也发给你了。别误会，我批不了你起飞。",
+          "action_slice_slot": "QIHAI_PRIVATE_ROUTE_CLEARANCE",
+          "action_slice_subject": "佐伯七海",
+          "action_slice_kind": "character",
+          "visual_mode": "remote_comms",
+          "stage_direction": "七海只提供公开航路与禁射区，不替纪存作离港决定。"
+        },
+        {
+          "beat_id": "B09_JICUN_ACCEPTS_ONLY_THE_MAP",
+          "speaker": "纪存",
+          "line": "我知道。图够用了。",
+          "action_slice_slot": "JICUN_ACCEPTS_DEPARTURE_ROUTE",
+          "action_slice_subject": "纪存",
+          "action_slice_kind": "character",
+          "visual_mode": "system_status",
+          "stage_direction": "前厅恢复公共航行台；纪存把东侧净空航路交给自动航行系统。"
+        },
+        {
+          "beat_id": "B10_TOUR_ARM_IS_NOT_A_FIST",
+          "speaker": "兜灯",
+          "line": "这是装货的，打不了拳。",
+          "action_slice_slot": "DOUDENG_INSTALLS_TOUR_ARM",
+          "action_slice_subject": "兜灯",
+          "action_slice_kind": "character",
+          "visual_mode": "system_status",
+          "stage_direction": "黄色巡展臂接入馆守Z已烧毁的右肩；长期展陈接口第一次重新承力。"
+        },
+        {
+          "beat_id": "B11_GUARDIAN_ACCEPTS_THE_TOOL",
+          "speaker": "馆守Z",
+          "line": "能把甲板上的东西拿开。足够。",
+          "action_slice_slot": "GUARDIAN_Z_TESTS_TOUR_CLAW",
+          "action_slice_subject": "馆守Z",
+          "action_slice_kind": "mecha",
+          "visual_mode": "map_wide_caption",
+          "stage_direction": "三指夹爪开合；馆守Z不把装卸臂伪装成恢复的右拳。"
+        },
+        {
+          "beat_id": "B12_BOOSTER_ONE_USE_ONLY",
+          "speaker": "兜灯",
+          "line": "真要用，只能送你出去一次。烧完就没了。",
+          "action_slice_slot": "DOUDENG_LOCKS_PROPULSION_FRAME",
+          "action_slice_subject": "兜灯",
+          "action_slice_kind": "character",
+          "visual_mode": "system_status",
+          "stage_direction": "四喷口推进骨架固定完成但保持熄火；裂盾平放在前甲板作为最后着舰承载物。"
+        },
+        {
+          "beat_id": "B13_AUTOMATIC_DEPARTURE_READY",
+          "speaker": "自动航行系统",
+          "line": "航向已接收。自动离港待命。",
+          "action_slice_slot": "MUSEUM_CARRIER_DEPARTURE_STATUS",
+          "action_slice_subject": "万机馆巡展舰",
+          "action_slice_kind": "environment",
+          "visual_mode": "system_status",
+          "stage_direction": "近防炮升起，只负责赶开贴舰小体；推进、舰体平衡与转向仍由自动航行系统执行。"
+        },
+        {
+          "beat_id": "B14_LEAVE_THE_GROUND",
+          "speaker": "纪存",
+          "line": "所有人固定。我们离开地面。",
+          "action_slice_slot": "JICUN_DEPARTURE_COMMIT",
+          "action_slice_subject": "纪存",
+          "action_slice_kind": "character",
+          "visual_mode": "jicun_candidate_slice",
+          "stage_direction": "勇拳在屋顶上空拖住飞行核心；外围附属结构断离，万机馆主舰体与前甲板一同升过楼顶。",
+          "beat_image": "res://content/c01_breaker_demo/assets/candidate_cutscenes/c01_cutscene_wanji_launch.png",
+          "beat_image_approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "beat_image_user_visual_acceptance": false,
+          "beat_image_runtime_promotion": false,
+          "beat_video": "res://content/c01_breaker_demo/assets/candidate_cutscenes/c01_cutscene_wanji_launch.ogv",
+          "beat_video_approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "beat_video_user_visual_acceptance": false,
+          "beat_video_runtime_promotion": false
+        }
+      ]
+    },
+    "EPILOGUE_SEVENTH_TOUR": {
+      "segment_type": "post_battle_recovery",
+      "background_mode": "CARRIER_DECK_TO_FRONT_HALL_RECOVERY",
+      "map_input_locked": true,
+      "return_segment": "DEMO_COMPLETE",
+      "beats": [
+        {
+          "beat_id": "E01_SEVENTH_TOUR_APPEARS",
+          "speaker": "系统",
+          "line": "第七次巡展",
+          "action_slice_slot": "MUSEUM_ROUTE_SIGN_SEVENTH_TOUR",
+          "action_slice_subject": "第七次巡展路线牌",
+          "action_slice_kind": "environment",
+          "visual_mode": "system_status",
+          "stage_direction": "核心爆炸，小体失去统一节奏；前厅路线牌在第六次巡展下方增加新的一行。",
+          "beat_image": "res://content/c01_breaker_demo/assets/candidate_cutscenes/c01_cutscene_final_left_punch.png",
+          "beat_image_approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "beat_image_user_visual_acceptance": false,
+          "beat_image_runtime_promotion": false,
+          "beat_video": "res://content/c01_breaker_demo/assets/candidate_cutscenes/c01_cutscene_final_left_punch.ogv",
+          "beat_video_approval_state": "CANDIDATE_VISUAL_REVIEW_ONLY",
+          "beat_video_user_visual_acceptance": false,
+          "beat_video_runtime_promotion": false
+        },
+        {
+          "beat_id": "E02_HAOSI_RECALL_CHANNEL",
+          "speaker": "勇气株式会社召回频道",
+          "line": "勇拳，回收艇已接近。请确认返航。",
+          "action_slice_slot": "HAOSI_RECEIVES_RECALL_AFTER_BATTLE",
+          "action_slice_subject": "荒川豪司",
+          "action_slice_kind": "character",
+          "visual_mode": "map_wide_caption",
+          "stage_direction": "勇拳的拳甲轻轻碰了碰馆守Z仍能活动的黄色夹爪。"
+        },
+        {
+          "beat_id": "E03_HAOSI_SAYS_NEXT_TIME",
+          "speaker": "荒川豪司",
+          "line": "下次见。",
+          "action_slice_slot": "HAOSI_POST_BATTLE_FAREWELL",
+          "action_slice_subject": "荒川豪司",
+          "action_slice_kind": "character",
+          "visual_mode": "remote_comms",
+          "stage_direction": "豪司没有因此自动入队；回收艇仍在等待。"
+        },
+        {
+          "beat_id": "E04_GUARDIAN_INVITES_RETURN",
+          "speaker": "馆守Z",
+          "line": "欢迎再次参观。",
+          "action_slice_slot": "GUARDIAN_Z_POST_BATTLE_REPLY",
+          "action_slice_subject": "馆守Z",
+          "action_slice_kind": "mecha",
+          "visual_mode": "map_wide_caption",
+          "stage_direction": "回收艇带着勇拳转向城市；馆守Z留在第七次巡展的前甲板。"
+        },
+        {
+          "beat_id": "E05_GUIDE_TERMINAL_RETURNS",
+          "speaker": "馆守Z",
+          "line": "本次出击记录已同步。导览服务恢复。",
+          "action_slice_slot": "GUARDIAN_Z_WHEELED_GUIDE_TERMINAL",
+          "action_slice_subject": "馆守Z轮式导览终端",
+          "action_slice_kind": "mecha",
+          "visual_mode": "system_status",
+          "stage_direction": "兜灯接入备用轮式导览终端；脚边的小终端与馆守Z胸前主控灯同时闪烁。"
+        },
+        {
+          "beat_id": "E06_MISSED_DINNER",
+          "speaker": "佐伯七海",
+          "line": "餐厅把位置留到警报解除。现在厨房下班了。",
+          "action_slice_slot": "QIHAI_RETURNS_TO_EMPTY_RESTAURANT",
+          "action_slice_subject": "佐伯七海",
+          "action_slice_kind": "character",
+          "visual_mode": "remote_comms",
+          "stage_direction": "滨海塔楼靠窗的位置仍摆着两只没用过的主餐盘。"
+        },
+        {
+          "beat_id": "E07_NEXT_TIME_I_BOOK",
+          "speaker": "纪存",
+          "line": "下次我来订。",
+          "action_slice_slot": "JICUN_POST_BATTLE_CALL",
+          "action_slice_subject": "纪存",
+          "action_slice_kind": "character",
+          "visual_mode": "remote_comms",
+          "stage_direction": "这是战后关系的继续，不是胜利结算奖励。"
+        },
+        {
+          "beat_id": "E08_ROTOR_STILL_HEATING",
+          "speaker": "兜灯",
+          "line": "主循环转子的温度还在升。现在还能飞，停下来以后能不能再启动，我不敢保证。",
+          "action_slice_slot": "DOUDENG_MAIN_ROTOR_WARNING",
+          "action_slice_subject": "兜灯",
+          "action_slice_kind": "character",
+          "visual_mode": "system_status",
+          "stage_direction": "万机馆已经降到巡航功率，前厅仍因异常震动轻轻发抖。"
+        },
+        {
+          "beat_id": "E09_MUTONG_STREET_RESPONDS",
+          "speaker": "赵梅",
+          "line": "木桶街能停这艘船，街上还有一具九米级的新转子正在试车。能不能接，我现在不敢答应。先过来，落地再量。",
+          "action_slice_slot": "ZHAOMEI_PUBLIC_REPAIR_RESPONSE",
+          "action_slice_subject": "赵梅",
+          "action_slice_kind": "character",
+          "visual_mode": "remote_comms",
+          "stage_direction": "公共维修频道收到重载泊位照片；唐胶补发完整接口图。"
+        },
+        {
+          "beat_id": "E10_NEXT_ROUTE_MUTONG_STREET",
+          "speaker": "纪存",
+          "line": "去木桶街。",
+          "action_slice_slot": "JICUN_SETS_MUTONG_STREET_ROUTE",
+          "action_slice_subject": "纪存",
+          "action_slice_kind": "character",
+          "visual_mode": "jicun_candidate_slice",
+          "stage_direction": "万机馆转向东南；下一段航向进入路线牌。"
+        },
+        {
+          "beat_id": "E11_UNKNOWN_WHITE_COMPOSITE",
+          "speaker": "城市清障记录",
+          "line": "来源：未知白色复合材料。",
+          "action_slice_slot": "WHITE_SAMPLER_POST_CREDIT_STINGER",
+          "action_slice_subject": "无标志白色采样机",
+          "action_slice_kind": "mecha",
+          "visual_mode": "system_status",
+          "stage_direction": "无标志采样机带走右臂碎片后遗落一枚白色衬片；清障员将它装入编号袋。"
+        }
+      ]
+    }
+  }
+}

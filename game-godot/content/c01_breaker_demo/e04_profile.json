@@ -1,0 +1,420 @@
+{
+  "schema_id": "C01E04_BREAKER_DEMO_PROFILE_V1",
+  "world_schema_id": "C01E04_BREAKER_DEMO_WORLD_V1",
+  "session_schema_id": "C01E04_BREAKER_DEMO_SESSION_V1",
+  "source_e03_world_schema_id": "C01E03_DUAL_MECHA_WORLD_V1",
+  "demo_id": "C01-E04-CARRIER-CORE-VERTICAL-SLICE",
+  "candidate_boundary": {
+    "entry_role": "full_demo_segment_non_default",
+    "runner_binding": true,
+    "scene_binding": true,
+    "save_commit": false,
+    "art_binding": false,
+    "visual_playtest_ready": false,
+    "note": "Bound to the non-default C01 full-demo runner and scene. It must not promote old E04 scenes or placeholder mecha art."
+  },
+  "story_authority": {
+    "reader": "docs/superpowers/specs/剧情梗概/V35.9/rebuild/reader/C01-闭馆以后万机出击.md",
+    "episode": "C01E04《博物馆追上天空》",
+    "bridge_b_carry": [
+      "馆守Z右前臂已经永久报废",
+      "BREAKER地面外壳已破，飞行核心仍存活",
+      "飞行核心已同步幸存小体并转攻万机馆",
+      "万机馆确认巡展舰身体仍连成一体并进入紧急离港"
+    ],
+    "forbidden_substitutions": [
+      "馆守Z用黄色巡展臂打拳",
+      "馆守Z以右拳完成最终击杀",
+      "万机馆变成人形GAG或自由暴走",
+      "勇拳无人驾驶或拥有独立灵魂",
+      "把旧E04场景或错误BREAKER美术作为正式表现"
+    ]
+  },
+  "route_policy": "two_public_route_families_no_exact_path",
+  "qte": false,
+  "generic_air_combat_system": false,
+  "units": {
+    "guardian_z": "V353U001",
+    "brave_fist": "MECHA_BRAVE_FIST_PROTOTYPE",
+    "wanji": "CARRIER_WANJI_TOURING_SHIP",
+    "breaker": "ENEMY_C01_BREAKER"
+  },
+  "planner_actors": [
+    "V353U001",
+    "MECHA_BRAVE_FIST_PROTOTYPE",
+    "CARRIER_WANJI_TOURING_SHIP"
+  ],
+  "continuity_fields": [
+    "p1_checkpoint",
+    "road_damage",
+    "east_gate_state",
+    "rescue_lane_state",
+    "shield_state_before_e03",
+    "e03_round_results",
+    "source_operation_schema_id",
+    "source_operation_checkpoint"
+  ],
+  "rounds": [
+    {
+      "round_number": 7,
+      "round_id": "E04-R7-DEPARTURE-WINDOW",
+      "title": "把离开的时间打出来",
+      "decision_mode": "cooperative_causal_assembly",
+      "decision_mode_label": "协同因果编排",
+      "route_strategy": false,
+      "objective": "勇拳顶住第三次俯冲，馆守Z用裂盾护住最后一段撤收，万机馆收桥、近防清舰并沿东线离地。",
+      "top_threats": [
+        "BREAKER正从高空第三次俯冲前厅",
+        "最后一段检修桥尚未完全回收",
+        "同步小体正贴近泊位，近防只能打弱小近目标"
+      ],
+      "public_intents": [
+        {"timeslice": "T1", "actor_id": "ENEMY_C01_BREAKER", "intent": "核心沿屋顶高侧俯冲，目标是前厅而不是馆守Z。"},
+        {"timeslice": "T2", "actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "intent": "勇拳可在防空换弹时从侧面撞偏薄翼。"},
+        {"timeslice": "T3", "actor_id": "V353U001", "intent": "馆守Z追不上空中核心；裂盾还能护住最后一段桥和撤收人员。"},
+        {"timeslice": "T4", "actor_id": "CARRIER_WANJI_TOURING_SHIP", "intent": "人员固定后自动系统收桥解锚；近防只清贴舰小体并开始离地。"}
+      ],
+      "timeline": ["core_third_dive", "brave_intercept", "shield_last_bridge", "retract_mount_and_lift"],
+      "allowed_orders": {
+        "V353U001": [
+          {"action_id": "CHASE_FLIGHT_CORE_FROM_GROUND", "zone_id": "CITY_ROOFLINE", "trigger_id": "ON_CORE_DIVE", "target_id": "ENEMY_C01_BREAKER", "label": "从地面追击飞行核心"},
+          {"action_id": "SHIELD_LAST_BRIDGE_AND_DOCK", "zone_id": "FOREDECK_OUTER_BERTH", "trigger_id": "WHILE_LAST_BRIDGE_RETRACTS", "target_id": "LAST_SERVICE_BRIDGE", "label": "裂盾护桥并回前甲板固定座"}
+        ],
+        "MECHA_BRAVE_FIST_PROTOTYPE": [
+          {"action_id": "INTERCEPT_CORE_DIVE", "zone_id": "ROOF_HIGH_SIDE", "trigger_id": "ON_AA_COOLDOWN", "target_id": "ENEMY_C01_BREAKER", "label": "在防空换弹时撞偏核心"},
+          {"action_id": "CLEAR_DECK_SWARM", "zone_id": "FOREDECK_LOW", "trigger_id": "ON_SWARM_CONTACT", "target_id": "SYNC_SWARM", "label": "落到甲板清理贴舰小体"}
+        ],
+        "CARRIER_WANJI_TOURING_SHIP": [
+          {"action_id": "LIFT_BEFORE_BRIDGE_RETRACTS", "zone_id": "EAST_DEPARTURE_AXIS", "trigger_id": "IMMEDIATE", "target_id": "OPEN_EAST_CORRIDOR", "label": "立即起升并拖带末桥"},
+          {"action_id": "RETRACT_LIFT_WITH_CLOSE_DEFENSE", "zone_id": "EAST_DEPARTURE_AXIS", "trigger_id": "AFTER_PERSONNEL_SECURED", "target_id": "OPEN_EAST_CORRIDOR", "label": "收桥解锚、近防清舰后自动离地"}
+        ]
+      },
+      "public_checks": [
+        {"condition_id": "R7-GZ-SHIELD", "type": "order_equals", "actor_id": "V353U001", "action_id": "SHIELD_LAST_BRIDGE_AND_DOCK", "zone_id": "FOREDECK_OUTER_BERTH", "trigger_id": "WHILE_LAST_BRIDGE_RETRACTS", "target_id": "LAST_SERVICE_BRIDGE", "label": "馆守Z留在能保护最后一段桥的位置", "hint": "它追不上飞行核心；让裂盾完成最后一次护桥。"},
+        {"condition_id": "R7-BF-CORE", "type": "order_equals", "actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "action_id": "INTERCEPT_CORE_DIVE", "zone_id": "ROOF_HIGH_SIDE", "trigger_id": "ON_AA_COOLDOWN", "target_id": "ENEMY_C01_BREAKER", "label": "勇拳填住防空换弹时的空中窗口", "hint": "贴舰小体可交给近防，勇拳必须盯核心。"},
+        {"condition_id": "R7-WANJI-SAFE-LIFT", "type": "order_equals", "actor_id": "CARRIER_WANJI_TOURING_SHIP", "action_id": "RETRACT_LIFT_WITH_CLOSE_DEFENSE", "zone_id": "EAST_DEPARTURE_AXIS", "trigger_id": "AFTER_PERSONNEL_SECURED", "target_id": "OPEN_EAST_CORRIDOR", "label": "万机馆在人、桥、锚都完成撤收后离地", "hint": "先收桥并让近防打开贴舰通路，再沿东线起升。"}
+      ],
+      "route_choices": [],
+      "outcome": {
+        "world_set": {
+          "departure_window_secured": true,
+          "last_bridge_state": "retracted",
+          "external_anchor_state": "released",
+          "shield_state": "cracked_corner_missing",
+          "city_exposure_state": "carrier_clearing_rooftops",
+          "mission_clear": false
+        },
+        "guardian_set": {
+          "status": "fixed_to_foredeck_after_last_bridge_guard",
+          "right_arm_state": "destroyed_overload_no_return",
+          "touring_arm_state": "mounted_clamp_only",
+          "touring_arm_can_punch": false,
+          "booster_state": "mounted_one_shot_ready",
+          "shield_state": "cracked_corner_missing"
+        },
+        "brave_fist_set": {
+          "status": "airborne_core_intercept",
+          "right_thruster_state": "one_bank_failed",
+          "human_piloted": true
+        },
+        "breaker_set": {
+          "status": "flight_core_forced_high",
+          "phase": "flying_core",
+          "alive": true,
+          "red_aperture_state": "covered_during_dive"
+        },
+        "swarm_set": {"organization": "synchronized", "position_state": "following_core_toward_carrier"},
+        "wanji_set": {
+          "body_mode": "damaged_touring_carrier",
+          "flight_state": "airborne_eastbound_above_rooftops",
+          "balance_state": "self_leveling_after_right_settlement",
+          "near_defense_state": "active_close_weak_targets_only",
+          "navigation_control": "automatic_flight_jicun_heading_selection"
+        },
+        "story_flags_set": {"emergency_departure_confirmed": true, "touring_arm_mounted": true, "one_shot_booster_mounted": true},
+        "events": [
+          {"event_id": "E04-R7-E1-CORE-DIVE", "timeslice": "T1", "text": "BREAKER第三次俯冲前厅。"},
+          {"event_id": "E04-R7-E2-BRAVE-INTERCEPT", "timeslice": "T2", "text": "勇拳在防空换弹时撞偏薄翼。"},
+          {"event_id": "E04-R7-E3-LAST-BRIDGE", "timeslice": "T3", "text": "馆守Z的裂盾护住最后一段桥，盾角再崩落一块。"},
+          {"event_id": "E04-R7-E4-LIFT", "timeslice": "T4", "text": "黄色巡展臂与一次性推进骨架装妥，万机馆收桥解锚并越过楼顶。"}
+        ]
+      }
+    },
+    {
+      "round_number": 8,
+      "round_id": "E04-R8-ESCORT-TO-SEA",
+      "title": "把敌人带到海上",
+      "decision_mode": "public_route_tradeoff",
+      "decision_mode_label": "公开航路取舍",
+      "route_strategy": true,
+      "objective": "选择一条公开的东向航路；馆守Z用巡展臂清甲板，勇拳守两翼，万机馆用近防开路，把核心和小体完整带离城市。",
+      "top_threats": [
+        "同步小体正在舰艏和两翼合围",
+        "近防炮只够清贴舰目标且会过热",
+        "BREAKER仍在等机会再次贴近前厅"
+      ],
+      "public_intents": [
+        {"timeslice": "T1", "actor_id": "CARRIER_WANJI_TOURING_SHIP", "intent": "自动系统沿玩家选择的东向航路转向；两条公开航路都可成功。"},
+        {"timeslice": "T2", "actor_id": "V353U001", "intent": "黄色巡展臂只能夹住并抛开掠过甲板的小体，不能打拳。"},
+        {"timeslice": "T3", "actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "intent": "勇拳沿两翼截击，把追兵送进城市防空远射界并阻止核心贴舰。"},
+        {"timeslice": "T4", "actor_id": "ENEMY_C01_BREAKER", "intent": "核心与同步小体会继续追万机馆，而不是转回居民区。"}
+      ],
+      "timeline": ["choose_public_east_route", "close_defense_opens_lane", "touring_arm_clears_bow", "brave_fist_flank_escort", "carrier_reaches_open_sea"],
+      "allowed_orders": {
+        "V353U001": [
+          {"action_id": "PATROL_ARM_THROW_BOARDERS", "zone_id": "BOW_DECK_ARC", "trigger_id": "ON_BOARDING_SWARM", "target_id": "SYNC_SWARM", "label": "用黄色夹爪把甲板小体抛出舰外"},
+          {"action_id": "PATROL_ARM_PUNCH_CORE", "zone_id": "BOW_SKY", "trigger_id": "ON_CORE_APPROACH", "target_id": "ENEMY_C01_BREAKER", "label": "用黄色装卸臂迎击飞行核心"}
+        ],
+        "MECHA_BRAVE_FIST_PROTOTYPE": [
+          {"action_id": "LAND_AND_GUARD_BOW", "zone_id": "FOREDECK", "trigger_id": "ON_SWARM_CONTACT", "target_id": "SYNC_SWARM", "label": "落到舰艏清理登舰小体"},
+          {"action_id": "FLANK_CORE_KEEP_HIGH", "zone_id": "BOTH_FLANKS", "trigger_id": "BEFORE_CORE_CLOSES", "target_id": "ENEMY_C01_BREAKER", "label": "沿两翼截击并保持核心高度"}
+        ],
+        "CARRIER_WANJI_TOURING_SHIP": [
+          {"action_id": "TURN_BACK_TOWARD_CITY", "zone_id": "CITY_ROOFLINE", "trigger_id": "ON_NEAR_DEFENSE_HEAT", "target_id": "WANJI_BERTH", "label": "近防升温后转回内城泊位"},
+          {"action_id": "HEAD_EAST_WITH_CLOSE_DEFENSE", "zone_id": "EASTBOUND_CORRIDOR", "trigger_id": "ON_CORRIDOR_OPEN", "target_id": "OPEN_SEA", "label": "近防开窄路，自动系统持续向东"}
+        ]
+      },
+      "public_checks": [
+        {"condition_id": "R8-PRIOR-DEPARTURE", "type": "world_field_equals", "field": "departure_window_secured", "equals": true, "label": "万机馆已经完成安全离地", "hint": "先完成上一轮。"},
+        {"condition_id": "R8-ROUTE", "type": "route_choice_in", "values": ["OPEN_WATER_DIRECT", "AA_EDGE_CORRIDOR"], "label": "选择一条公开东向航路", "hint": "两条都能成功：直出外海压近防，防空边线压导航修正。"},
+        {"condition_id": "R8-GZ-CLAMP", "type": "order_equals", "actor_id": "V353U001", "action_id": "PATROL_ARM_THROW_BOARDERS", "zone_id": "BOW_DECK_ARC", "trigger_id": "ON_BOARDING_SWARM", "target_id": "SYNC_SWARM", "label": "馆守Z把巡展臂当夹爪而不是拳头", "hint": "这只装卸臂只能夹、抛甲板小体。"},
+        {"condition_id": "R8-BF-FLANK", "type": "order_equals", "actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "action_id": "FLANK_CORE_KEEP_HIGH", "zone_id": "BOTH_FLANKS", "trigger_id": "BEFORE_CORE_CLOSES", "target_id": "ENEMY_C01_BREAKER", "label": "勇拳继续承担空中护航", "hint": "不要把唯一能跟上核心的机体留在甲板。"},
+        {"condition_id": "R8-WANJI-EAST", "type": "order_equals", "actor_id": "CARRIER_WANJI_TOURING_SHIP", "action_id": "HEAD_EAST_WITH_CLOSE_DEFENSE", "zone_id": "EASTBOUND_CORRIDOR", "trigger_id": "ON_CORRIDOR_OPEN", "target_id": "OPEN_SEA", "label": "万机馆保持东向并让近防只开窄路", "hint": "不能把敌群带回城市。"}
+      ],
+      "route_choices": [
+        {
+          "route_id": "OPEN_WATER_DIRECT",
+          "label": "直出外海",
+          "public_tradeoff": "航向修正少，但舰艏追兵更密，近防与勇拳负担更高。",
+          "world_set": {"near_defense_heat": 2, "navigation_correction_load": 1, "brave_fist_thruster_wear": 2, "route_result": "shorter_heavier_intercept"}
+        },
+        {
+          "route_id": "AA_EDGE_CORRIDOR",
+          "label": "防空边线",
+          "public_tradeoff": "远射界能分担追兵，但狭窄禁射边界要求更多航向修正。",
+          "world_set": {"near_defense_heat": 1, "navigation_correction_load": 2, "brave_fist_thruster_wear": 1, "route_result": "longer_tighter_navigation"}
+        }
+      ],
+      "outcome": {
+        "world_set": {
+          "carrier_over_open_sea": true,
+          "city_exposure_state": "protected_enemy_group_drew_offshore",
+          "near_defense_state": "hot_but_operational",
+          "mission_clear": false
+        },
+        "guardian_set": {"status": "bow_clamp_and_throw_guard", "touring_arm_state": "mounted_clamp_only", "touring_arm_can_punch": false, "right_arm_state": "destroyed_overload_no_return"},
+        "brave_fist_set": {"status": "two_flank_air_escort", "human_piloted": true},
+        "breaker_set": {"status": "flight_core_held_above_carrier", "phase": "flying_core", "alive": true, "red_aperture_state": "covered"},
+        "swarm_set": {"organization": "synchronized", "position_state": "pursuing_carrier_over_sea"},
+        "wanji_set": {"flight_state": "eastbound_over_open_sea", "balance_state": "stable_damaged_carrier", "near_defense_state": "hot_but_operational"},
+        "story_flags_set": {"enemy_group_drawn_offshore": true, "city_kept_out_of_final_fight": true},
+        "events": [
+          {"event_id": "E04-R8-E1-CORRIDOR", "timeslice": "T1", "text": "万机馆按公开航路向东，近防只打贴舰弱目标。"},
+          {"event_id": "E04-R8-E2-PATROL-ARM", "timeslice": "T2", "text": "馆守Z用黄色夹爪把掠过舰艏的小体抛出舰外。"},
+          {"event_id": "E04-R8-E3-FLANK-ESCORT", "timeslice": "T3", "text": "勇拳沿两翼截击，把追兵送入远射界。"},
+          {"event_id": "E04-R8-E4-OPEN-SEA", "timeslice": "T4", "text": "核心和同步小体全部追出城市，最终战场转到海上。"}
+        ]
+      }
+    },
+    {
+      "round_number": 9,
+      "round_id": "E04-R9-LEFT-FIST-CORE-KILL",
+      "title": "就是现在",
+      "decision_mode": "cooperative_causal_assembly",
+      "decision_mode_label": "协同因果编排",
+      "route_strategy": false,
+      "objective": "勇拳接住并原路送回核心的俯冲，万机馆稳住舰艏，馆守Z只在赤红孔洞完全暴露后点燃一次性推进骨架，以左拳贯穿核心。",
+      "top_threats": [
+        "BREAKER收拢薄翼直刺前厅",
+        "推进骨架只能点火一次且无法保证返航",
+        "裂盾只能放平作为坠落缓冲，不能再正面格挡"
+      ],
+      "public_intents": [
+        {"timeslice": "T1", "actor_id": "ENEMY_C01_BREAKER", "intent": "核心沿前厅正面直线俯冲，赤红孔洞仍被姿态遮住。"},
+        {"timeslice": "T2", "actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "intent": "勇拳接住俯冲并原路送回，孔洞会在回抛顶点完全暴露。"},
+        {"timeslice": "T3", "actor_id": "V353U001", "intent": "馆守Z把裂盾放平；推进骨架只在回抛后点一次，最终攻击必须使用左拳。"}
+      ],
+      "route_inheritance": {
+        "source_world_field": "wanji_state.selected_route",
+        "variants": {
+          "OPEN_WATER_DIRECT": {
+            "public_summary": "继承直出外海：近防热量高，万机馆必须交替散热后稳住舰艏。",
+            "public_intent": {"timeslice": "T4", "actor_id": "CARRIER_WANJI_TOURING_SHIP", "intent": "直出外海使近防热量升高；万机馆先交替散热，再稳住舰艏并保留回落区。"},
+            "wanji_options": [
+              {"action_id": "CHASE_CORE_WITH_CARRIER", "zone_id": "OFF_AXIS_HIGH", "trigger_id": "ON_CORE_RETURN", "target_id": "ENEMY_C01_BREAKER", "label": "受损巡展舰追击回抛核心"},
+              {"action_id": "VENT_CLOSE_DEFENSE_AND_HOLD_BOW", "zone_id": "OPEN_SEA_BOW", "trigger_id": "BEFORE_CORE_RETURN", "target_id": "LANDING_SHIELD_ZONE", "label": "近防交替散热，稳住舰艏并保留回落区"}
+            ],
+            "wanji_check": {"condition_id": "R9-WANJI-HOLD", "type": "order_equals", "actor_id": "CARRIER_WANJI_TOURING_SHIP", "action_id": "VENT_CLOSE_DEFENSE_AND_HOLD_BOW", "zone_id": "OPEN_SEA_BOW", "trigger_id": "BEFORE_CORE_RETURN", "target_id": "LANDING_SHIELD_ZONE", "label": "直出外海后，万机馆先交替散热再稳住舰艏", "hint": "直出外海使近防热量更高；先交替散热，再保持馆守Z的上升线和两机回落区。"},
+            "performance_semantic": "direct_route_heat_vent_then_hold",
+            "performance_event": {"event_id": "E04-R9-E4-LANDING", "timeslice": "T4", "text": "万机馆让近防交替散热并稳住舰艏；勇拳托住馆守Z左肩，两机落在放平的裂盾上。"}
+          },
+          "AA_EDGE_CORRIDOR": {
+            "public_summary": "继承防空边线：导航修正负荷高，万机馆必须完成航向修正后稳住舰艏。",
+            "public_intent": {"timeslice": "T4", "actor_id": "CARRIER_WANJI_TOURING_SHIP", "intent": "防空边线留下较高导航修正负荷；万机馆先修正禁射边界，再稳住舰艏并保留回落区。"},
+            "wanji_options": [
+              {"action_id": "CORRECT_AA_EDGE_AND_HOLD_BOW", "zone_id": "AA_EDGE_EXIT_BOW", "trigger_id": "BEFORE_CORE_RETURN", "target_id": "LANDING_SHIELD_ZONE", "label": "修正防空边线，稳住舰艏并保留回落区"},
+              {"action_id": "CHASE_CORE_WITH_CARRIER", "zone_id": "OFF_AXIS_HIGH", "trigger_id": "ON_CORE_RETURN", "target_id": "ENEMY_C01_BREAKER", "label": "受损巡展舰追击回抛核心"}
+            ],
+            "wanji_check": {"condition_id": "R9-WANJI-HOLD", "type": "order_equals", "actor_id": "CARRIER_WANJI_TOURING_SHIP", "action_id": "CORRECT_AA_EDGE_AND_HOLD_BOW", "zone_id": "AA_EDGE_EXIT_BOW", "trigger_id": "BEFORE_CORE_RETURN", "target_id": "LANDING_SHIELD_ZONE", "label": "防空边线后，万机馆先修正航向再稳住舰艏", "hint": "防空边线留下更高导航修正负荷；先退出禁射边界，再保持馆守Z的上升线和两机回落区。"},
+            "performance_semantic": "aa_edge_navigation_correct_then_hold",
+            "performance_event": {"event_id": "E04-R9-E4-LANDING", "timeslice": "T4", "text": "万机馆完成防空边线航向修正并稳住舰艏；勇拳托住馆守Z左肩，两机落在放平的裂盾上。"}
+          }
+        }
+      },
+      "timeline": ["core_front_hall_dive", "brave_returns_dive_force", "red_aperture_exposed", "one_shot_boost_left_punch", "shield_catches_two_mecha", "seventh_tour"],
+      "allowed_orders": {
+        "V353U001": [
+          {"action_id": "BOOST_BEFORE_APERTURE_OPENS", "zone_id": "CORE_DIVE_LINE", "trigger_id": "ON_CORE_DIVE", "target_id": "ENEMY_C01_BREAKER", "label": "核心俯冲时提前点燃推进骨架"},
+          {"action_id": "ONE_SHOT_BOOST_LEFT_PUNCH", "zone_id": "RED_APERTURE_LINE", "trigger_id": "AFTER_BRAVE_RETURN", "target_id": "BREAKER_RED_APERTURE", "label": "勇拳回抛后，一次点火、左拳贯穿赤红孔洞"},
+          {"action_id": "TOURING_ARM_FINISHER", "zone_id": "RED_APERTURE_LINE", "trigger_id": "AFTER_BRAVE_RETURN", "target_id": "BREAKER_RED_APERTURE", "label": "用黄色装卸臂沿赤孔轴突进"}
+        ],
+        "MECHA_BRAVE_FIST_PROTOTYPE": [
+          {"action_id": "STRIKE_CORE_AWAY_FROM_CARRIER", "zone_id": "OFF_AXIS_HIGH", "trigger_id": "ON_CORE_FRONT_HALL_DIVE", "target_id": "ENEMY_C01_BREAKER", "label": "将核心打向外海高侧"},
+          {"action_id": "RETURN_DIVE_FORCE_AND_PIN", "zone_id": "CORE_RETURN_LANE", "trigger_id": "ON_CORE_FRONT_HALL_DIVE", "target_id": "ENEMY_C01_BREAKER", "label": "接住俯冲并原路送回，随后补拳定线"}
+        ],
+        "CARRIER_WANJI_TOURING_SHIP": [
+          {"action_id": "VENT_CLOSE_DEFENSE_AND_HOLD_BOW", "zone_id": "OPEN_SEA_BOW", "trigger_id": "BEFORE_CORE_RETURN", "target_id": "LANDING_SHIELD_ZONE", "label": "近防交替散热，稳住舰艏并保留回落区"},
+          {"action_id": "CORRECT_AA_EDGE_AND_HOLD_BOW", "zone_id": "AA_EDGE_EXIT_BOW", "trigger_id": "BEFORE_CORE_RETURN", "target_id": "LANDING_SHIELD_ZONE", "label": "修正防空边线，稳住舰艏并保留回落区"},
+          {"action_id": "CHASE_CORE_WITH_CARRIER", "zone_id": "OFF_AXIS_HIGH", "trigger_id": "ON_CORE_RETURN", "target_id": "ENEMY_C01_BREAKER", "label": "受损巡展舰追击回抛核心"}
+        ]
+      },
+      "public_checks": [
+        {"condition_id": "R9-PRIOR-SEA", "type": "world_field_equals", "field": "carrier_over_open_sea", "equals": true, "label": "最终战已经转移到海上", "hint": "先把敌群完整带离城市。"},
+        {"condition_id": "R9-BF-RETURN", "type": "order_equals", "actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "action_id": "RETURN_DIVE_FORCE_AND_PIN", "zone_id": "CORE_RETURN_LANE", "trigger_id": "ON_CORE_FRONT_HALL_DIVE", "target_id": "ENEMY_C01_BREAKER", "label": "勇拳把俯冲原路送回并维持贯穿轴", "hint": "不能把核心打出馆守Z的上升线。"},
+        {"condition_id": "R9-WANJI-HOLD", "type": "route_inherited_order", "actor_id": "CARRIER_WANJI_TOURING_SHIP", "label": "按上一轮公开航路处理万机馆负荷并稳住舰艏", "hint": "上一轮航路会公开决定本轮的散热或航向修正命令。"},
+        {"condition_id": "R9-GZ-LEFT-FIST", "type": "order_equals", "actor_id": "V353U001", "action_id": "ONE_SHOT_BOOST_LEFT_PUNCH", "zone_id": "RED_APERTURE_LINE", "trigger_id": "AFTER_BRAVE_RETURN", "target_id": "BREAKER_RED_APERTURE", "label": "馆守Z只在孔洞暴露后用左拳发动一次终结", "hint": "黄色臂不能打拳；推进骨架也只有一次。"}
+      ],
+      "route_choices": [],
+      "outcome": {
+        "world_set": {
+          "breaker_core_state": "destroyed_by_guardian_left_fist",
+          "shield_state": "shattered_landing_pad",
+          "foredeck_state": "dented_after_dual_mecha_landing",
+          "e04_encounter_complete": true,
+          "encounter_complete": true,
+          "e04_checkpoint": "E04_BREAKER_CORE_DESTROYED_SEVENTH_TOUR",
+          "seventh_tour_state": "active",
+          "mission_clear": true
+        },
+        "guardian_set": {
+          "status": "safe_on_shattered_shield_after_core_kill",
+          "right_arm_state": "destroyed_overload_no_return",
+          "touring_arm_state": "mounted_clamp_only",
+          "touring_arm_can_punch": false,
+          "booster_state": "burned_out_after_single_launch",
+          "final_attack_arm": "left",
+          "left_fist_state": "intact_after_core_pierce",
+          "shield_state": "shattered_landing_pad"
+        },
+        "brave_fist_set": {
+          "status": "supported_guardian_landing_then_recovered",
+          "human_piloted": true,
+          "recovery_state": "company_recovery_craft_departed"
+        },
+        "breaker_set": {
+          "status": "flight_core_destroyed_by_left_fist",
+          "phase": "destroyed_core",
+          "alive": false,
+          "red_aperture_state": "pierced"
+        },
+        "swarm_set": {"organization": "desynchronized", "control_state": "core_destroyed_no_common_rhythm", "position_state": "scattered_over_sea"},
+        "wanji_set": {
+          "flight_state": "stable_over_open_sea",
+          "foredeck_state": "dented_after_dual_mecha_landing",
+          "tour_status": "seventh_tour_active",
+          "near_defense_state": "clearing_desynchronized_remnants"
+        },
+        "story_flags_set": {"guardian_left_fist_core_kill": true, "brave_fist_supported_landing": true, "brave_fist_recovered_by_company": true, "seventh_tour_started": true},
+        "all_swarm_entities_set": {"organization_state": "desynchronized", "status": "core_destroyed_no_common_rhythm"},
+        "object_set": {"PROP_C01CDV1_RETIRED_SHIELD": {"state": "shattered_landing_pad"}},
+        "entity_set": {
+          "V353U001": {"status": "safe_after_core_kill", "alive": true},
+          "MECHA_BRAVE_FIST_PROTOTYPE": {"status": "recovered_after_support", "alive": true},
+          "ENEMY_C01_BREAKER": {"status": "destroyed_core", "phase": "destroyed_core", "alive": false},
+          "CARRIER_WANJI_TOURING_SHIP": {"status": "seventh_tour_active", "alive": true}
+        },
+        "events": [
+          {"event_id": "E04-R9-E1-CORE-DIVE", "timeslice": "T1", "text": "BREAKER收拢薄翼直刺前厅。"},
+          {"event_id": "E04-R9-E2-RETURN", "timeslice": "T2", "text": "勇拳接住俯冲并原路送回，赤红孔洞完全暴露。"},
+          {"event_id": "E04-R9-E3-LEFT-FIST", "timeslice": "T3", "text": "馆守Z点燃一次性推进骨架，以左拳贯穿飞行核心。"},
+          {"event_id": "E04-R9-E4-LANDING", "timeslice": "T4", "text": "勇拳托住馆守Z左肩，两机落在放平的裂盾上；盾碎、前甲板凹陷。"},
+          {"event_id": "E04-R9-E5-SEVENTH-TOUR", "timeslice": "RESULT", "text": "同步小体失去共同节奏，路线牌新增“第七次巡展”；Mission Clear。"}
+        ]
+      }
+    }
+  ],
+  "fixtures": {
+    "r7_success": {
+      "round_number": 7,
+      "route_choice": "",
+      "orders": {
+        "V353U001": {"actor_id": "V353U001", "action_id": "SHIELD_LAST_BRIDGE_AND_DOCK", "zone_id": "FOREDECK_OUTER_BERTH", "trigger_id": "WHILE_LAST_BRIDGE_RETRACTS", "target_id": "LAST_SERVICE_BRIDGE"},
+        "MECHA_BRAVE_FIST_PROTOTYPE": {"actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "action_id": "INTERCEPT_CORE_DIVE", "zone_id": "ROOF_HIGH_SIDE", "trigger_id": "ON_AA_COOLDOWN", "target_id": "ENEMY_C01_BREAKER"},
+        "CARRIER_WANJI_TOURING_SHIP": {"actor_id": "CARRIER_WANJI_TOURING_SHIP", "action_id": "RETRACT_LIFT_WITH_CLOSE_DEFENSE", "zone_id": "EAST_DEPARTURE_AXIS", "trigger_id": "AFTER_PERSONNEL_SECURED", "target_id": "OPEN_EAST_CORRIDOR"}
+      }
+    },
+    "r7_failure_chase_core": {
+      "round_number": 7,
+      "route_choice": "",
+      "orders": {
+        "V353U001": {"actor_id": "V353U001", "action_id": "CHASE_FLIGHT_CORE_FROM_GROUND", "zone_id": "CITY_ROOFLINE", "trigger_id": "ON_CORE_DIVE", "target_id": "ENEMY_C01_BREAKER"},
+        "MECHA_BRAVE_FIST_PROTOTYPE": {"actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "action_id": "CLEAR_DECK_SWARM", "zone_id": "FOREDECK_LOW", "trigger_id": "ON_SWARM_CONTACT", "target_id": "SYNC_SWARM"},
+        "CARRIER_WANJI_TOURING_SHIP": {"actor_id": "CARRIER_WANJI_TOURING_SHIP", "action_id": "LIFT_BEFORE_BRIDGE_RETRACTS", "zone_id": "EAST_DEPARTURE_AXIS", "trigger_id": "IMMEDIATE", "target_id": "OPEN_EAST_CORRIDOR"}
+      }
+    },
+    "r8_direct": {
+      "round_number": 8,
+      "route_choice": "OPEN_WATER_DIRECT",
+      "orders": {
+        "V353U001": {"actor_id": "V353U001", "action_id": "PATROL_ARM_THROW_BOARDERS", "zone_id": "BOW_DECK_ARC", "trigger_id": "ON_BOARDING_SWARM", "target_id": "SYNC_SWARM"},
+        "MECHA_BRAVE_FIST_PROTOTYPE": {"actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "action_id": "FLANK_CORE_KEEP_HIGH", "zone_id": "BOTH_FLANKS", "trigger_id": "BEFORE_CORE_CLOSES", "target_id": "ENEMY_C01_BREAKER"},
+        "CARRIER_WANJI_TOURING_SHIP": {"actor_id": "CARRIER_WANJI_TOURING_SHIP", "action_id": "HEAD_EAST_WITH_CLOSE_DEFENSE", "zone_id": "EASTBOUND_CORRIDOR", "trigger_id": "ON_CORRIDOR_OPEN", "target_id": "OPEN_SEA"}
+      }
+    },
+    "r8_aa_edge": {
+      "round_number": 8,
+      "route_choice": "AA_EDGE_CORRIDOR",
+      "orders": {
+        "V353U001": {"actor_id": "V353U001", "action_id": "PATROL_ARM_THROW_BOARDERS", "zone_id": "BOW_DECK_ARC", "trigger_id": "ON_BOARDING_SWARM", "target_id": "SYNC_SWARM"},
+        "MECHA_BRAVE_FIST_PROTOTYPE": {"actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "action_id": "FLANK_CORE_KEEP_HIGH", "zone_id": "BOTH_FLANKS", "trigger_id": "BEFORE_CORE_CLOSES", "target_id": "ENEMY_C01_BREAKER"},
+        "CARRIER_WANJI_TOURING_SHIP": {"actor_id": "CARRIER_WANJI_TOURING_SHIP", "action_id": "HEAD_EAST_WITH_CLOSE_DEFENSE", "zone_id": "EASTBOUND_CORRIDOR", "trigger_id": "ON_CORRIDOR_OPEN", "target_id": "OPEN_SEA"}
+      }
+    },
+    "r8_failure_touring_arm_punch": {
+      "round_number": 8,
+      "route_choice": "OPEN_WATER_DIRECT",
+      "orders": {
+        "V353U001": {"actor_id": "V353U001", "action_id": "PATROL_ARM_PUNCH_CORE", "zone_id": "BOW_SKY", "trigger_id": "ON_CORE_APPROACH", "target_id": "ENEMY_C01_BREAKER"},
+        "MECHA_BRAVE_FIST_PROTOTYPE": {"actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "action_id": "FLANK_CORE_KEEP_HIGH", "zone_id": "BOTH_FLANKS", "trigger_id": "BEFORE_CORE_CLOSES", "target_id": "ENEMY_C01_BREAKER"},
+        "CARRIER_WANJI_TOURING_SHIP": {"actor_id": "CARRIER_WANJI_TOURING_SHIP", "action_id": "HEAD_EAST_WITH_CLOSE_DEFENSE", "zone_id": "EASTBOUND_CORRIDOR", "trigger_id": "ON_CORRIDOR_OPEN", "target_id": "OPEN_SEA"}
+      }
+    },
+    "r9_direct": {
+      "round_number": 9,
+      "route_choice": "",
+      "orders": {
+        "V353U001": {"actor_id": "V353U001", "action_id": "ONE_SHOT_BOOST_LEFT_PUNCH", "zone_id": "RED_APERTURE_LINE", "trigger_id": "AFTER_BRAVE_RETURN", "target_id": "BREAKER_RED_APERTURE"},
+        "MECHA_BRAVE_FIST_PROTOTYPE": {"actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "action_id": "RETURN_DIVE_FORCE_AND_PIN", "zone_id": "CORE_RETURN_LANE", "trigger_id": "ON_CORE_FRONT_HALL_DIVE", "target_id": "ENEMY_C01_BREAKER"},
+        "CARRIER_WANJI_TOURING_SHIP": {"actor_id": "CARRIER_WANJI_TOURING_SHIP", "action_id": "VENT_CLOSE_DEFENSE_AND_HOLD_BOW", "zone_id": "OPEN_SEA_BOW", "trigger_id": "BEFORE_CORE_RETURN", "target_id": "LANDING_SHIELD_ZONE"}
+      }
+    },
+    "r9_success": {
+      "round_number": 9,
+      "route_choice": "",
+      "orders": {
+        "V353U001": {"actor_id": "V353U001", "action_id": "ONE_SHOT_BOOST_LEFT_PUNCH", "zone_id": "RED_APERTURE_LINE", "trigger_id": "AFTER_BRAVE_RETURN", "target_id": "BREAKER_RED_APERTURE"},
+        "MECHA_BRAVE_FIST_PROTOTYPE": {"actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "action_id": "RETURN_DIVE_FORCE_AND_PIN", "zone_id": "CORE_RETURN_LANE", "trigger_id": "ON_CORE_FRONT_HALL_DIVE", "target_id": "ENEMY_C01_BREAKER"},
+        "CARRIER_WANJI_TOURING_SHIP": {"actor_id": "CARRIER_WANJI_TOURING_SHIP", "action_id": "CORRECT_AA_EDGE_AND_HOLD_BOW", "zone_id": "AA_EDGE_EXIT_BOW", "trigger_id": "BEFORE_CORE_RETURN", "target_id": "LANDING_SHIELD_ZONE"}
+      }
+    },
+    "r9_failure_early_launch": {
+      "round_number": 9,
+      "route_choice": "",
+      "orders": {
+        "V353U001": {"actor_id": "V353U001", "action_id": "BOOST_BEFORE_APERTURE_OPENS", "zone_id": "CORE_DIVE_LINE", "trigger_id": "ON_CORE_DIVE", "target_id": "ENEMY_C01_BREAKER"},
+        "MECHA_BRAVE_FIST_PROTOTYPE": {"actor_id": "MECHA_BRAVE_FIST_PROTOTYPE", "action_id": "RETURN_DIVE_FORCE_AND_PIN", "zone_id": "CORE_RETURN_LANE", "trigger_id": "ON_CORE_FRONT_HALL_DIVE", "target_id": "ENEMY_C01_BREAKER"},
+        "CARRIER_WANJI_TOURING_SHIP": {"actor_id": "CARRIER_WANJI_TOURING_SHIP", "action_id": "CORRECT_AA_EDGE_AND_HOLD_BOW", "zone_id": "AA_EDGE_EXIT_BOW", "trigger_id": "BEFORE_CORE_RETURN", "target_id": "LANDING_SHIELD_ZONE"}
+      }
+    }
+  }
+}

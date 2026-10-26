@@ -1,0 +1,396 @@
+{
+  "candidate": true,
+  "not_canon": true,
+  "runtime_allowed": false,
+  "user_visual_acceptance": false,
+  "fixture_only": true,
+  "placement_inspection_only": true,
+  "production_input": false,
+  "payload": {
+    "board": {
+      "registered_plate": "res://assets/formula_lab/temp/scenes/tactical-city-depth-v3/scene.json",
+      "sit": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "width": 18,
+      "height": 14,
+      "origin_uv": [
+        0.43750008906250004,
+        0.1600000861111111
+      ],
+      "cell_width": 64.000016,
+      "cell_height": 31.999998,
+      "blocked": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          17,
+          9
+        ]
+      ],
+      "terrain": [],
+      "exit_cells": [
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "ring_out": false
+    },
+    "units": [
+      {
+        "id": "fx_ring_holder",
+        "display_name": "擂主（甲）",
+        "team": "player",
+        "scale": "mecha",
+        "cell": [
+          9,
+          12
+        ],
+        "facing": "e",
+        "hp": 12,
+        "move": 2,
+        "map_token": "甲",
+        "token_radius": 20,
+        "commandable": false,
+        "body_functions": [
+          {
+            "id": "arm_right",
+            "label": "右臂重拳",
+            "state": "ok"
+          },
+          {
+            "id": "legs",
+            "label": "锚定腿",
+            "state": "ok"
+          },
+          {
+            "id": "sensor",
+            "label": "近距传感",
+            "state": "limited"
+          }
+        ],
+        "actions": [
+          {
+            "action_id": "holder_heavy",
+            "kind": "main",
+            "label": "阈值重拳（公开战法）",
+            "contract_action_id": "TACT_MELEE",
+            "duration_ticks": 3,
+            "range": {
+              "min": 1,
+              "max": 1
+            },
+            "requires_front_arc": true,
+            "needs_target": true,
+            "target_teams": [
+              "enemy"
+            ],
+            "cost_label": "热量 +2；收招 1 拍",
+            "preview": "接触时刻 t3；力向 正面；功能结果 右臂重拳",
+            "effect": {
+              "kind": "damage_unit",
+              "amount": 3
+            }
+          },
+          {
+            "action_id": "holder_guard",
+            "kind": "hold",
+            "label": "落腿稳住（放弃本轮动作）",
+            "contract_action_id": "TACT_WAIT_CONDITION",
+            "duration_ticks": 1,
+            "cost_label": "无",
+            "preview": "只放弃本轮动作，敌方与环境仍会推进"
+          }
+        ],
+        "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+        "map_token_profile": {
+          "schema_version": 1,
+          "scope": "TAC_T3_map_identity_token",
+          "unit_id": "fx_ring_holder",
+          "sprite_path": "res://assets/formula_lab/temp/cutouts/alpha-repair-20260909-v1/mecha-lin.png",
+          "source_sha256": "49b8b6575a4e08c2b0b816f61d1e90ab1f725802fa1ea230f67b4133d5b5a4e4",
+          "source_size": [
+            1024,
+            1024
+          ],
+          "frame_uv": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "head_uv": [
+            0.448,
+            0.12
+          ],
+          "foot_uv": [
+            0.565,
+            0.93
+          ],
+          "max_size_px": [
+            56,
+            64
+          ],
+          "source_view": "screen_left_front_3q_unregistered_camera",
+          "mirror_allowed": false,
+          "sprite_facing_authority": false,
+          "action_pose_complete": false,
+          "not_canon": true,
+          "user_visual_acceptance": false,
+          "quality_debt": [
+            "manual_lowest_toe_virtual_support",
+            "source_camera_not_registered_to_city",
+            "static_billboard_not_action_or_3d_body",
+            "user_art_acceptance_pending"
+          ]
+        }
+      }
+    ],
+    "default_band": "mecha",
+    "round_limit": 1,
+    "intent_script": [
+      {
+        "round": 1,
+        "actor_id": "fx_ring_holder",
+        "readability": "confirmed",
+        "source": "QA fixture schema placeholder; no begin_round or execution",
+        "action_type": "hold",
+        "duration_ticks": 1,
+        "path": [],
+        "effect": {
+          "kind": "none"
+        }
+      }
+    ],
+    "victory": {
+      "kind": "rule_score",
+      "label": "仅摆位校准，不执行胜负",
+      "body_account_label": "不执行回合，不修改身体账"
+    }
+  },
+  "inspection_cells": [
+    [
+      9,
+      12
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      2,
+      6
+    ]
+  ],
+  "limits": [
+    "Existing white/cyan original RGB with approved alpha repair; no source pixels edited here.",
+    "Virtual support is a QA placement decision, not a registered 3D mecha or action pose.",
+    "bias_world is 0.02 world-distance along view Z, not world vertical height."
+  ]
+}

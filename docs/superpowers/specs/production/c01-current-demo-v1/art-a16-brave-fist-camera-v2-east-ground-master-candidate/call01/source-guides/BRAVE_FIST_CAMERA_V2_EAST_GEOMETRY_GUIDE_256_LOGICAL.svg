@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#0e141b"/>
+  <rect x="1" y="1" width="254" height="254" fill="none" stroke="#667c8b" stroke-width="1"/>
+  <rect x="10" y="10" width="236" height="214" fill="none" stroke="#465e6d" stroke-width="0.75" stroke-dasharray="4 4"/>
+
+  <text x="12" y="20" fill="#d8e2e8" font-family="Arial, sans-serif" font-size="7" font-weight="700">CAMERA V2 EAST — GEOMETRY ONLY</text>
+  <text x="12" y="28" fill="#8597a5" font-family="Arial, sans-serif" font-size="4.2">256 LOGICAL · 2×2 · PIVOT [128,224] · NO IDENTITY</text>
+
+  <g opacity="0.92">
+    <polygon points="128,176 208,200 128,224 48,200" fill="#1b313b" stroke="#4ed2e0" stroke-width="1.2"/>
+    <line x1="48" y1="200" x2="208" y2="200" stroke="#294d59" stroke-width="0.5"/>
+    <line x1="128" y1="176" x2="128" y2="224" stroke="#294d59" stroke-width="0.5"/>
+  </g>
+
+  <g id="neutral-humanoid-envelope" stroke="#17222b" stroke-width="1" stroke-linejoin="round">
+    <!-- Head: cyan top plane, orange east-facing plane. -->
+    <polygon points="113,43 126,35 141,44 128,52" fill="#d8e0e5"/>
+    <polygon points="113,43 128,52 128,70 113,61" fill="#aeb9c1"/>
+    <polygon points="128,52 141,44 141,62 128,70" fill="#ef7641"/>
+    <polyline points="113,43 126,35 141,44" fill="none" stroke="#2aa4c0" stroke-width="1.4"/>
+
+    <!-- Neck and torso, yawed so its front plane faces screen lower-right. -->
+    <polygon points="121,68 130,63 139,68 130,74" fill="#cbd4da"/>
+    <polygon points="98,77 128,59 160,78 130,96" fill="#dbe2e6"/>
+    <polygon points="98,77 130,96 130,128 98,109" fill="#aeb9c1"/>
+    <polygon points="130,96 160,78 160,110 130,128" fill="#ef7641"/>
+    <polyline points="98,77 128,59 160,78" fill="none" stroke="#2aa4c0" stroke-width="1.5"/>
+
+    <!-- Pelvis. -->
+    <polygon points="110,126 130,114 151,126 131,138" fill="#d6dee3"/>
+    <polygon points="110,126 131,138 131,153 110,141" fill="#9eabb4"/>
+    <polygon points="131,138 151,126 151,141 131,153" fill="#e76e3d"/>
+
+    <!-- Far arm, lifted only enough to remain visible behind the torso. -->
+    <polygon points="151,79 163,72 174,79 162,86" fill="#d3dbe0"/>
+    <polygon points="162,86 174,79 171,119 160,126" fill="#e0703f"/>
+    <polygon points="151,79 162,86 160,126 150,120" fill="#9faeb7"/>
+    <polygon points="158,123 170,116 180,123 168,130" fill="#d0d8dd"/>
+    <polygon points="158,123 168,130 165,149 155,143" fill="#9ba8b1"/>
+    <polygon points="168,130 180,123 177,142 165,149" fill="#ec7440"/>
+
+    <!-- Near arm, clearly forward/down but not crossing the torso. -->
+    <polygon points="89,82 101,75 112,82 100,89" fill="#d3dbe0"/>
+    <polygon points="89,82 100,89 96,130 85,124" fill="#9daab3"/>
+    <polygon points="100,89 112,82 108,123 96,130" fill="#e57240"/>
+    <polygon points="82,126 96,118 108,125 94,133" fill="#d0d8dd"/>
+    <polygon points="82,126 94,133 91,151 79,144" fill="#9ba8b1"/>
+    <polygon points="94,133 108,125 105,143 91,151" fill="#ed7541"/>
+
+    <!-- Far leg. -->
+    <polygon points="132,151 145,143 157,150 144,158" fill="#cbd4da"/>
+    <polygon points="132,151 144,158 142,194 130,187" fill="#9eabb4"/>
+    <polygon points="144,158 157,150 155,186 142,194" fill="#df6e3e"/>
+    <polygon points="130,188 142,195 140,216 128,209" fill="#97a5ae"/>
+    <polygon points="142,195 155,187 153,208 140,216" fill="#e67340"/>
+    <polygon points="128,209 140,216 158,216 145,209" fill="#d3dbe0"/>
+    <polygon points="140,216 158,216 158,220 140,224" fill="#eb7440"/>
+
+    <!-- Near leg, slightly advanced along east axis; its sole reaches the pivot. -->
+    <polygon points="108,149 121,142 134,149 121,157" fill="#cfd7dc"/>
+    <polygon points="108,149 121,157 117,193 105,186" fill="#9ba8b1"/>
+    <polygon points="121,157 134,149 130,185 117,193" fill="#e2713f"/>
+    <polygon points="104,187 117,194 113,216 101,209" fill="#96a4ad"/>
+    <polygon points="117,194 130,186 126,208 113,216" fill="#e67340"/>
+    <polygon points="101,209 113,216 133,216 120,209" fill="#d3dbe0"/>
+    <polygon points="113,216 133,216 128,224 108,224" fill="#ed7541"/>
+  </g>
+
+  <!-- Pivot and facing cues remain separate from anatomy. -->
+  <g stroke="#ff4f79" fill="none" stroke-width="1.5">
+    <line x1="120" y1="224" x2="136" y2="224"/>
+    <line x1="128" y1="216" x2="128" y2="232"/>
+    <circle cx="128" cy="224" r="3"/>
+  </g>
+  <text x="137" y="228" fill="#ff7c9a" font-family="Arial, sans-serif" font-size="4.5">PIVOT [128,224]</text>
+
+  <g stroke="#ffbf47" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="178" y1="185" x2="224" y2="213"/>
+    <polyline points="213,210 224,213 220,202"/>
+  </g>
+  <text x="182" y="181" fill="#ffcf72" font-family="Arial, sans-serif" font-size="5.2" font-weight="700">EAST [40,24]</text>
+
+  <g stroke="#82a2ff" fill="none" stroke-width="1.3" stroke-linecap="round">
+    <line x1="18" y1="210" x2="18" y2="54"/>
+    <polyline points="14,60 18,54 22,60"/>
+  </g>
+  <text x="23" y="60" fill="#9bb5ff" font-family="Arial, sans-serif" font-size="4.5">ELEVATED ORTHOGRAPHIC</text>
+  <text x="23" y="67" fill="#9bb5ff" font-family="Arial, sans-serif" font-size="4.5">TOP PLANES VISIBLE</text>
+
+  <rect x="10" y="238" width="236" height="10" rx="2" fill="#202b34"/>
+  <text x="128" y="245" text-anchor="middle" fill="#dce5ea" font-family="Arial, sans-serif" font-size="4.5">POSE / CAMERA / FOOTPOINT ONLY · DO NOT COPY BLOCK ANATOMY OR COLORS</text>
+</svg>

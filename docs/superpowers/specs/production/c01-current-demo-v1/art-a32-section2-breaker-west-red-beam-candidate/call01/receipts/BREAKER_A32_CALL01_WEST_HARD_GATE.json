@@ -1,0 +1,124 @@
+{
+  "schema_id": "BREAKER_A32_CALL01_WEST_HARD_GATE_V1",
+  "raw": {
+    "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a32-section2-breaker-west-red-beam-candidate/call01/generation-raw/BREAKER_A32_CALL01_WEST_RAW.png",
+    "sha256": "398a8408fff6395ef67577f7e431d8aaa689d35898c8a9cf310395ddfd8d9195",
+    "size": [
+      1254,
+      1254
+    ],
+    "pixel_format": "rgb24",
+    "has_alpha": false
+  },
+  "geometry": {
+    "dark_subject_bbox_inclusive": [
+      66,
+      274,
+      1161,
+      1037
+    ],
+    "dark_subject_centroid": [
+      619.315,
+      594.63
+    ],
+    "red_accent_centroid": [
+      227.606,
+      640.157
+    ],
+    "principal_axis_toward_red_degrees": 165.6712,
+    "centroid_to_red_degrees": 173.3705,
+    "camera_v2_west_target_degrees": -149.0362,
+    "principal_axis_delta_degrees": 45.2926,
+    "centroid_to_red_delta_degrees": 37.5932,
+    "hard_gate_tolerance_degrees": 10.0,
+    "west_axis_pass": false
+  },
+  "alpha": {
+    "true_alpha_pass": false,
+    "baked_checker_detected": true,
+    "top_background_quantized_colors": [
+      {
+        "rgb": [
+          248,
+          248,
+          248
+        ],
+        "count": 49041
+      },
+      {
+        "rgb": [
+          256,
+          256,
+          256
+        ],
+        "count": 37493
+      },
+      {
+        "rgb": [
+          252,
+          252,
+          252
+        ],
+        "count": 6698
+      },
+      {
+        "rgb": [
+          256,
+          252,
+          256
+        ],
+        "count": 3520
+      },
+      {
+        "rgb": [
+          256,
+          252,
+          252
+        ],
+        "count": 768
+      },
+      {
+        "rgb": [
+          252,
+          252,
+          256
+        ],
+        "count": 556
+      },
+      {
+        "rgb": [
+          252,
+          256,
+          252
+        ],
+        "count": 418
+      },
+      {
+        "rgb": [
+          256,
+          256,
+          252
+        ],
+        "count": 348
+      }
+    ],
+    "deterministic_recoverability": "not_attempted_after_geometry_hard_fail"
+  },
+  "hard_gate": {
+    "identity_leaf_armor_low_body_four_limb_visual_read": "manual_review_required",
+    "west_polarity": "fail",
+    "alpha_or_safe_recoverability": "not_proven",
+    "overall": "FAIL_STOP",
+    "reason": "camera_v2_west_axis_not_met; true_alpha_absent"
+  },
+  "qa": {
+    "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a32-section2-breaker-west-red-beam-candidate/call01/qa/BREAKER_A32_CALL01_WEST_HARD_GATE_FAIL_QA_50_100.png",
+    "sha256": "0a3487bb15b5293f5d1b285bc94003ab8822f50c5fd720b729d83cee9100ffc3",
+    "layout": [
+      "raw_half_scale",
+      "head_crop_one_to_one",
+      "west_geometry_guide",
+      "current_north_positive"
+    ]
+  }
+}

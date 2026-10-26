@@ -1,0 +1,1988 @@
+{
+  "scope": "independent_lab_candidate_not_wanji_not_C01_not_C04",
+  "not_canon": true,
+  "user_visual_acceptance": false,
+  "style_target": "A_KINETIC_CEL_not_self_certified",
+  "revision": 1,
+  "source_kind": "explicit_v1_independent_lab_blend_not_chapter_source",
+  "v1_blend_sha256": "c05aebba535d47c03f153ce927c5a095793a09c1a81101de0f52c874517c04f6",
+  "v1_script_sha256": "3c63d2e2e2ceeaf2a425da8b4ddeacbe4ba109979e0fa43c2aabd0dc33a4544a",
+  "script_sha256": "1aa2aad33818030e8ea4e4577a1482ef9a685cfad3c35dce28e93324f3571e7d",
+  "verification_method": "fresh_evaluated_mesh_and_camera_and_inverse_projection_in_same_Blender_process_not_copied_v1_JSON",
+  "all_original_evaluated_meshes_exactly_unchanged": true,
+  "all_cameras_exactly_unchanged": true,
+  "all_footprints_and_foot_projections_exactly_unchanged": true,
+  "original_mesh_counts": {
+    "hallway": 153,
+    "annex": 86
+  },
+  "baseline_geometry": {
+    "hallway_closed": {
+      "STATE_door_handle": "a2044de833746a612e77093cc45fda8e99ba1d57fa9aeb2419b1cb5040ab1791",
+      "STATE_door_motor_status_lamp": "51a467c47368bc1cb1615afc8da5d5a6f952d37dc9c4fb1d300c7707c12fca2f",
+      "STATE_sliding_door_leaf": "c689a2e1b339541174f76c3a8e833775aac6e992a597bc776929a7114b52dce5",
+      "STATE_toolbox": "e97e23a26053009964880aec69a2b1747cabbea08c85c44f883358463a60cfda",
+      "STATE_toolbox_grip": "7bb8f2a831f00f86e998123ac481fb54625b3312e2fea26de24e4642a2106557",
+      "back_wall_lower_wainscot": "9c17425b727c857ec5f378405beb1e3aa6e0aa4914b80f8e53e2f744a5d71548",
+      "back_wall_lower_wainscot.001": "ed3a56b9d579269e58115ef59dbb8fbdab0668cf5b8d979aafe6574f5c56642e",
+      "back_wall_slab": "784783ec83a992792ab6e7943ff8deecfbcc5e4b4abcfd353a63781c975590b8",
+      "back_wall_slab.001": "272b34369eb6ecb5804a5e8488d92f674f3e9e97cc1e4700fc66cf8c60b46f3d",
+      "blank_closed_log_binder": "b912c45c0424297829a9c1e95ab08b836403becca58b2314d6caa76677542472",
+      "central_sorting_and_workbench_body": "634cd6c030b830e6066b7af558479644c71508fd2a4050eddbd80d4847be4b31",
+      "central_sorting_and_workbench_door_inset": "b73449016e2d68d5933cc83127332c76488d6d44e616e755776eebacfd3a7159",
+      "central_sorting_and_workbench_door_inset.001": "562dc961bd2cbe0216143cb812133bf5f0a0fcd48a417c36f97fb277ad62a0a8",
+      "central_sorting_and_workbench_door_inset.002": "756443e26bd43eaee05725858b653f3ecc60075d0494b261d696d8408146e8dc",
+      "central_sorting_and_workbench_door_inset.003": "6890cf823bbfbbcab556468469aaada1b15ca5d64d76326397ad064db7179dcd",
+      "central_sorting_and_workbench_door_inset.004": "b46e21598e94da851e72650217ecc86d5a2bd67d7157313e4c478c9d0f20d37d",
+      "central_sorting_and_workbench_pull": "998de62a2c5baed338ecf2daf9d3dc0fe4a7a309b2b8322f27b0e9be33c7900f",
+      "central_sorting_and_workbench_pull.001": "b16968093b1f684c865267f8b0183723bdb0def07a36c88dcc9d35b7b4f8fcfc",
+      "central_sorting_and_workbench_pull.002": "e2dc2fcecbe79f346f0fc67caad00b95c659a3e64bb6b49986a73b609dbfff50",
+      "central_sorting_and_workbench_pull.003": "13044d404c3a9fd5947b7bcad680d912514a2a61fc16656e8c9e2bbca503efad",
+      "central_sorting_and_workbench_pull.004": "3540563311e5a0a458362ad1e789b8bfd2939a205a4b0f464ad565a40c5c4fac",
+      "central_sorting_and_workbench_wood_top": "e4a4816bfb27b00fde0caaca78987f9bae6efaf59674bd88bc71a6d53330ed6e",
+      "clerestory_blue_glass": "c9ed9e5f9f113549c0834868b73ebbdac872cf8dbc7f45be0aeb66ccc69c0cc6",
+      "clerestory_blue_glass.001": "b67162e0a56bed785d293b1ca7a41f6b67edddcb9254e5143db3cc78791b3c60",
+      "clerestory_blue_glass.002": "7ffe335a196689cf7d11ea9551579ed0e3aa45580ba6d0bde344c7ee129b36d3",
+      "clerestory_blue_glass.003": "566e47beba264f5163015d95268807d89ca0c700d278978bd4e985c34e3f47d7",
+      "clerestory_blue_glass.004": "0867d28b6d769ccf12137d7bba6e914e58aad584f89221694a3569d86305e121",
+      "clerestory_divider": "3676bba9ede7fd151b8157d926c32fdeeb0089d9634a3cf3a64630ca208b4bab",
+      "clerestory_divider.001": "1d7137b1c4da6d98495f3fa95a861e4c7f67a944ab1fd6e0b90066f113ccf85f",
+      "clerestory_divider.002": "c72a0f984e134ee74d5bbb5d8f4ba9c0d732863c483ebecab69302581625f550",
+      "clerestory_divider.003": "7065c4fcef929800e37e1abfeae838116abbd4d974d09a93526ca68eabc107ca",
+      "clerestory_divider.004": "b10e29e239c708400d896fa0899926f05900c9bbf0e48fcdfc2c4aa57dea17d9",
+      "clerestory_recess": "1976f8d5d5d36f7f2e8fa360e02ec6bf5f38fad4b988c73f9aed8ea790188c46",
+      "clerestory_recess.001": "ff04812065edaeca78f6a28a05e3c8bf693a49bfc88539d306bedf8ccc90f026",
+      "clerestory_recess.002": "c0849130f8f7ea27cc4394a263b42828ee9e66537fbc6d2cc59c31127309891d",
+      "clerestory_recess.003": "c264673edc2413b95b383db7dfcf497f2487286ce3233c89d683fbb353edd16f",
+      "clerestory_recess.004": "81dd0e3f55df6a0dfdbc95422dd5456875059b863c76dae09736d87570bbdc70",
+      "continuous_walkable_floor": "faf983a12a986f1dca563523cf81d99f151c8f72a25b897c44033d66bdf3f18f",
+      "desk_lamp_base": "5dadc8ff3d407a1da5697cfd08d3f79343efbfda70f46022b69c8396cb872ff9",
+      "desk_lamp_fixed_glow": "92fdfee7760935d463571b13de7e33317ac1dd34dabf06ca461ad11d00698b1b",
+      "desk_lamp_shade": "3af158c4b2c7f5516de096be8b227f95a17be251eace6294e3b86d6a13ce6bcc",
+      "desk_lamp_stem": "ab926e653a679e6523b368797ac690d765fd15c212b88a40410f161fd55eb91d",
+      "doorway_dark_interior": "4c7980b5cdfa2f566655f845b83cb13f69e41ec70e95c72799bd8a88f049a6c3",
+      "doorway_interior_amber_edge": "9f69698f7ec7a0573ebbc09bf9f61899ccc691749c4747499df3436acd6b344b",
+      "duty_record_stack": "e80ebea0b297d9ef571737139a5c8e62e405e67ffcfe39b33168e34e37d3ab22",
+      "duty_record_stack.001": "fc918d8d0c9fa61da02b2bea983f3e072966bd9eb09ee3e61cacdfc02d7392a9",
+      "duty_record_stack.002": "a771bf8bd71010fa2f7c51147e8435bac0fd1c4ef25d3124e9455cc7047b88a9",
+      "duty_station_body": "59bc6973ec2839233b8120266eefdb4d74a43761ef47c4e23556cab4c38be358",
+      "duty_station_door_inset": "b2e06cfa7ec2d26f6af5fe7dc6ba60435bd707b5639411cbd133db4b3621bd8b",
+      "duty_station_door_inset.001": "2a34b67cfab5f00e61225be19326345d82c3485c8cc9e1d5f25c9ebd7485e51a",
+      "duty_station_pull": "ada9904571049291144e378b1977ce279930b31dc8235da92b96a06ff6f58a2c",
+      "duty_station_pull.001": "dcabc32ed82348f302ed1d6c4fdaba6ca858f3122482d6a176919932ca3fab21",
+      "duty_station_tray": "ee36e700ed7aa252c6b0e200ec2097675c9d0d396413ea8d800789b952a5b9e9",
+      "duty_station_wood_top": "51aca0b9254c12793549b79068a556f3f098bd78cec936ea037d2ffaa1bebab3",
+      "floor_expansion_seam_x": "f589a0a4244431b89f6431db4c173d7586f470256365a38954d778da7a1b15ee",
+      "floor_expansion_seam_x.001": "96d1aeffedc3d2949fdd2988c61fad1a20106e9747dc95b3c6352645b60d65c1",
+      "floor_expansion_seam_x.002": "b45aeaa4c7259713d8e5f1fed1bcc90f835db5f7ef44fb5b57f8950ae14e81e2",
+      "floor_expansion_seam_x.003": "31a05aaf8d93d43fbaeb561580339f9e058048940e6f106ed426d2fb5024fd51",
+      "floor_expansion_seam_x.004": "ea60b6dd91522c0130a29456564c5136eb96ebc981818cb265ca2f651125d8c8",
+      "floor_expansion_seam_x.005": "e9fbc068fb947217b6bd0ad1c5e9e82e4ce66d368650b026489e71ef13961de9",
+      "floor_expansion_seam_x.006": "5de8e241a85b0fae4ff6069e147e7523c37e93a50ff479ba2dc75fec64fe2a86",
+      "floor_expansion_seam_y": "fa982a4f996e92273cd440df368bdcf285a3fde3683fcaad26a3640a8513a92f",
+      "floor_expansion_seam_y.001": "cf8617268e860a2f10a42c189acad118e2a9a6e8ae1ee4fb5eaa3fccfd8abc2a",
+      "floor_expansion_seam_y.002": "bb970f1c3d9278d611c347f8a90f6d5f663584b78a3d08f1cb6a4851de9c4506",
+      "floor_expansion_seam_y.003": "058efadb8c014bfce06e9e82dd19522f5b06a6504162f943b9a0f703a8dc342b",
+      "floor_expansion_seam_y.004": "6da930e75b9053ba37b9f133c3e3bfcaf40633f2a281ca4bb8340d45c370d6ad",
+      "handoff_log_cabinet_body": "385eb51df38ab31ebd640ba293ef3d624d5a7ad218ae0e1699513f9c968c8e94",
+      "handoff_log_cabinet_door_inset": "e689c76a15ebefc81e394b1d8fce1d89c49c9a55f47f869f8de945e116726e6a",
+      "handoff_log_cabinet_door_inset.001": "cd6a1a35583989169c921293b87be123e2948d0d65d22507dd5c96c5704d58c7",
+      "handoff_log_cabinet_door_inset.002": "64a2fa52b89e6d6a325ae31c446f537d05453753fcabc7f8a18f0a5e096acb65",
+      "handoff_log_cabinet_pull": "fd80de761f22de260a8f5339183d2fcc994713cae4b77e71e3195bf5ec00ecff",
+      "handoff_log_cabinet_pull.001": "da945d12d9ee30b949c20f8381a7677f08e7309bb941e4215a62450336277b9a",
+      "handoff_log_cabinet_pull.002": "143e6b9d3348b3c6aeec2362da5948edbd159fe36dfa8d7b0931298c0131b22e",
+      "handoff_log_cabinet_wood_top": "017e632d26057fb7a8d7fe205b43f0890510bc2269a38ab741dc9b7061c1a89a",
+      "handoff_open_paper_stack": "7b4fbd41cc47378840d5518cab3f758d0d5e7b0d7e46f3dd2c70482259bd7cff",
+      "handoff_open_paper_stack.001": "8dc6f72df0c3c7ef5ecfef7b7d05d3824aefe6c59e89a7c6a3f85bfcbabe984b",
+      "handoff_open_paper_stack.002": "eb5f723388b528d21a3c096dcfa0ac5c9aa6b173703416a23c5307130f62484b",
+      "handoff_open_paper_stack.003": "892103b9335774043bb4c697b22a21217eb10a068b931e7712a4ba6c866b8d5a",
+      "handoff_open_paper_stack.004": "2749cf7fe722b0ad57c3cde54bf2ed2032f7542b01d8001714df92eecac1521e",
+      "lintel_above_door": "33912fc5353c51260f932d8a4717fa8077ec5b8f3dee755266e7d1cb4678acea",
+      "log_divider": "ae0dfc76e2998a12638100ab99fcb5fffd147600c2e65706f417da9355ce6e7a",
+      "log_divider.001": "01a9c42c0e4eef46c17b5acfb1f9cd52b647b7c4b90df7bd1ad6b9caccc05dd2",
+      "log_divider.002": "f4bc856957597358e3cdb3342e8f52c2b5c87415148f50808bbcebd7b2024e19",
+      "log_divider.003": "640ce2360dc6c114299bc4aab81e6df347b50df3bdc49fb1e27026bed34c99ac",
+      "log_pigeonhole_back": "23c3e420cf9f0b1f779806c504cacac24371c63720859fe231436c69f92eb40c",
+      "log_shelf": "693c749de7d3722632bf7b6b5284f72314afd457d3ae676616e4fc528d066dd7",
+      "log_shelf.001": "746ef614b431af5abf23880d6d4df93193756b493569ce8d77c5c7e6f911998c",
+      "log_shelf.002": "1e0a3c2b72577a4211bed1fbc544c4c902905f7797e93298db20e193f1ef77d2",
+      "log_shelf.003": "24ffacd23167c2d836ae72d89f2f25a82dcf3f8911dbdd1281ea9b7c63e2bb59",
+      "log_shelf.004": "321f977bd7c566e5037fd9bc1338a73edd3236a674c8529104973d50caf05f01",
+      "log_shelf.005": "b5269cdb9d6f971c2981c6af6f9520df337d094e02532ea008cc146e1942a0c1",
+      "log_shelf.006": "d507b61d94727766ecf08f44ba0f58ccda86a94045794b7edaea3d8f5465c4c0",
+      "log_shelf.007": "81ce33ad5f7951972f852aff736e61d604a4ba5658e5ba38ae04b1bd7cdc3221",
+      "motor_service_box": "3e1608826f2e88c13b1653de3c0c7ce4c449b6103513c3a95ce80d2a7b86c74c",
+      "motor_vent": "5c8f9fc162688c67a3273b2c3ea78476dd83848ef4294865a7a93680042b78d7",
+      "motor_vent.001": "5c959b1fdd973b183eabc7b39bacf9bf029884720952c1ca9eda203046e7a5b5",
+      "motor_vent.002": "0792ac42db1557f0a4b5342998c2af91da24ded9c0c02368912ee3e9c1ca933d",
+      "side_return_wall": "d42df191145f9247105a1e9a625593420b1bd4c9402cd00bfe57945eccd44a1f",
+      "side_return_wall.001": "40ce480079e685d48c35aee74e1ee04d8454b461101fa0f756722ff9577f90e7",
+      "sliding_door_floor_rail": "e6556fcbaafdc96e26050408bdb182c17daa8994e5cb539711b75ed42abdabfd",
+      "sliding_door_jamb": "3ebb3666f659e682656ac9f154887a245786ae322ab94df172d3c48bacc2329a",
+      "sliding_door_jamb.001": "e746cea639aadfa062ad49f2eb056b6dcee5784f438d989cd8e96da20af1b576",
+      "sliding_door_top_rail": "da8b284229c2485bd3a00febb95c73c237e4b6bd49acd1347769d8c41043e1f3",
+      "sorted_unlettered_documents": "19194e6912cdc4351fe59abdf04edec7e17ba060ff5fa69fa8ec74f5e159ab51",
+      "sorted_unlettered_documents.001": "caa0dbce0e3dc7b2aea2ff36a98bf70e4dcdc31b285e07d8d32e62f28704f349",
+      "sorted_unlettered_documents.002": "1952cbcf57817cf24cbe62e60397b28c0b1f2c0d5f7fbb4ec12519df86be7ff3",
+      "sorted_unlettered_documents.003": "e7037ba4ec4bff7be71b0d3b524fed898f31d5b9e826ac0826929b400bb7a3fc",
+      "sorted_unlettered_documents.004": "8d1442c3a99c123ee612e6aa8813b7aa10f760f429cbf555de60f2542b8b7632",
+      "sorted_unlettered_documents.005": "a0f547d416f45d02908d842e9453d7e94a402529984f0814e6c4115a7f0d720f",
+      "sorted_unlettered_documents.006": "d79d995a7f02269020dd851511451f6156ddf8fa45b923c2648f8969bb973a13",
+      "sorted_unlettered_documents.007": "43383e013cc531f52f9204cc1437039a8b34e542685efb5f3ef11e18aef87ddb",
+      "sorted_unlettered_documents.008": "55241bf3dfcd7f07acb9a73eaef6f7e291b2252a95bf9ab0d842e674b034865f",
+      "sorted_unlettered_documents.009": "ed8d8777367b08156d365d65ca2c9c1700e3432895c403d44c7b4b15f9de53c9",
+      "sorted_unlettered_documents.010": "8f299785c6d0c62862e0504a52c7d775407439a69090417b0c46d8139ecf9eda",
+      "sorted_unlettered_documents.011": "89bb35d76df24b40ca6b0eed44c9cc38cbe11a8ddb4aaa6d06b46e5b8bdac7f2",
+      "tool_board": "8e741f0989c71b876ccdc241876cc9800a0900dcce4295e6a9c38e2975ab1f62",
+      "unlettered_hanging_tool": "54b4458f909e04ede2e33a1a082f7e3b8a622fc3f41055490abc53a8d4f01606",
+      "unlettered_hanging_tool.001": "d593695910e7af1cab61f6c91e4cabb04df7889e2b3202aad2c4bad13a362fe1",
+      "unlettered_hanging_tool.002": "f831072c0dff5cff6d913ff73d4f3876b81cc988efc81d75f3a3a32b294bfdea",
+      "unlettered_hanging_tool.003": "7cb7c1c079abe7c45ba8f32f68e7dccc492cda087c0173151714a6185cb06f30",
+      "unlettered_logbooks": "3003175b41e49ac86663b1a422252aafb275e7d3316973c0d9d59ba09e35a5ac",
+      "unlettered_logbooks.001": "9023d2fd0dc3fd4de513a6da3c7c2a25dca7097b14203e631a3628619492c56c",
+      "unlettered_logbooks.002": "abc9bf3314ca3d1be7bc2fb80fd96b5f0eb1a63c6ed42dd6b7320e2e673bfaa7",
+      "unlettered_logbooks.003": "d81d4743729b316898da3e49eddb29eeeb0330ac5d356ee464bb62245a27c90c",
+      "unlettered_logbooks.004": "e0bd8469961306ff050956dbae7f7b0be2f759fc9bcf06e08c206019763e7172",
+      "unlettered_logbooks.005": "a1300a3cf39cea63ea5755b13c822d3e8cd8cc17caf4e923ab5401efb5c1d6b9",
+      "unlettered_logbooks.006": "91834491a6d2e436d6c223ad7f4d83da6e2f07fe593f120abcb65879bd2bddcd",
+      "unlettered_logbooks.007": "d0f95181e93dd79218efe99a746a925af92d6e702acb4c95d7f8a7ee887663b9",
+      "unlettered_logbooks.008": "89369e031d98bc7064bc1c3076e5447f5bb55bd1035f7a9b15a46be072ab1382",
+      "unlettered_logbooks.009": "a3fdce5dc7b1188457d6616e08293a224c94ff68228629ae992113a7eb5e8fd6",
+      "unlettered_logbooks.010": "287bf77b9eb1e38a18c8a5b55d5575630f17fe42d443630effacb8604cc5c8ee",
+      "unlettered_logbooks.011": "81e731d43dc09717324bff23c05b18843a72092700ab2c2fd289cb4349e805c7",
+      "unlettered_logbooks.012": "8729f7dfc8a8c6d9db45fadbfa006ae5500ab45552cd0acd3278ac8976fbb192",
+      "unlettered_logbooks.013": "60f1b2e81401f2c7bec7b97e133cd847f8264cfe7fd5e9af48fd02775f60f47d",
+      "unlettered_logbooks.014": "e39627febde49b72ff1740d5f05eedd710b33edf4d48c180d9f1595a23449c06",
+      "unlettered_logbooks.015": "2546ccb9e28dc4803ac430820a0bb686f14076e937f53797a886646909dc4b8c",
+      "unlettered_logbooks.016": "5b7a99f438b6ed758471744adb0bfdfd1adb244e47c906bdd9757ee0a84a67de",
+      "unlettered_logbooks.017": "4bb8a31957bc92f0e66e20dcd9d7cd69297e0afc8acde9fe080a0318ee269e16",
+      "unlettered_logbooks.018": "3fd38d8682d2d763be4f4c4951bce233d4052726050cfd84b5d2c56c87523445",
+      "unlettered_logbooks.019": "cab707ef788faef3c0f2b089fb99f7cd5aa0cfc6357fc2b4e93110eceb92ee4f",
+      "unlettered_logbooks.020": "d706196262673b849d385aa9ff096daebac07fdd18ffb49637f69f933a2f4525",
+      "unlettered_logbooks.021": "ff9cd0daa547aa59cb98ccc6b8525cb300e4e8bc95f8231dfca889ef706f0577",
+      "unlettered_logbooks.022": "d9ab3deb5a87d7ac37fbccdbb9159d59d176c04b875015b1fc24639a13086ffb",
+      "unlettered_logbooks.023": "844c6ef2eef4f691971c11033e7f0254769f918ff19e2635bad278cc455c7d71",
+      "upper_amber_strip": "439993b6a4d28bb1421bff0d52c7fb757b4e2d8c342fc4c3c976bce2bbeda95f",
+      "upper_header_beam": "7beac801d84dab3021cc48c079ddb7734b08fed4f9d564375caf884d5b1aed61",
+      "wall_vertical_joint": "90d4e8859f326b328ef596530e74b47955ff51ca71ac2819c04620ce7bcc56dd",
+      "wall_vertical_joint.001": "140a029b11f2f26382906a4c4341b7557eb6a4d375462d18aee780082455aa95",
+      "wall_vertical_joint.002": "d6503ad413f8b2a15b6a1275b8f326f7a4aeef03e20fab346bd3a9835c8f6747",
+      "wall_vertical_joint.003": "30a79aa79bfd3f19921f5e7268c504a552c741113f494d786eaacd4865314c11",
+      "wall_vertical_joint.004": "53f7754801503779278fc732614915d194084d70ac5ecfba88ef845d55802b09",
+      "warm_wall_dado": "aee26651337068fe56c6eb7ee70d4775bd8220b14beba95887457dbf3aa98f1a",
+      "warm_wall_dado.001": "3a4e01b23dd7cda6c22e099e23427923ac7e024bb67311a60a6e8be7699624db"
+    },
+    "hallway_open": {
+      "STATE_door_handle": "913bf3dba3a89a326a63a601f2d74efda22636acc6a4ff314f2b35eb44efdb4c",
+      "STATE_door_motor_status_lamp": "51a467c47368bc1cb1615afc8da5d5a6f952d37dc9c4fb1d300c7707c12fca2f",
+      "STATE_sliding_door_leaf": "3e0d616af0441d28e2bbb975364241768867ac72d680936b146f4a69a39aaf1d",
+      "STATE_toolbox": "e97e23a26053009964880aec69a2b1747cabbea08c85c44f883358463a60cfda",
+      "STATE_toolbox_grip": "7bb8f2a831f00f86e998123ac481fb54625b3312e2fea26de24e4642a2106557",
+      "back_wall_lower_wainscot": "9c17425b727c857ec5f378405beb1e3aa6e0aa4914b80f8e53e2f744a5d71548",
+      "back_wall_lower_wainscot.001": "ed3a56b9d579269e58115ef59dbb8fbdab0668cf5b8d979aafe6574f5c56642e",
+      "back_wall_slab": "784783ec83a992792ab6e7943ff8deecfbcc5e4b4abcfd353a63781c975590b8",
+      "back_wall_slab.001": "272b34369eb6ecb5804a5e8488d92f674f3e9e97cc1e4700fc66cf8c60b46f3d",
+      "blank_closed_log_binder": "b912c45c0424297829a9c1e95ab08b836403becca58b2314d6caa76677542472",
+      "central_sorting_and_workbench_body": "634cd6c030b830e6066b7af558479644c71508fd2a4050eddbd80d4847be4b31",
+      "central_sorting_and_workbench_door_inset": "b73449016e2d68d5933cc83127332c76488d6d44e616e755776eebacfd3a7159",
+      "central_sorting_and_workbench_door_inset.001": "562dc961bd2cbe0216143cb812133bf5f0a0fcd48a417c36f97fb277ad62a0a8",
+      "central_sorting_and_workbench_door_inset.002": "756443e26bd43eaee05725858b653f3ecc60075d0494b261d696d8408146e8dc",
+      "central_sorting_and_workbench_door_inset.003": "6890cf823bbfbbcab556468469aaada1b15ca5d64d76326397ad064db7179dcd",
+      "central_sorting_and_workbench_door_inset.004": "b46e21598e94da851e72650217ecc86d5a2bd67d7157313e4c478c9d0f20d37d",
+      "central_sorting_and_workbench_pull": "998de62a2c5baed338ecf2daf9d3dc0fe4a7a309b2b8322f27b0e9be33c7900f",
+      "central_sorting_and_workbench_pull.001": "b16968093b1f684c865267f8b0183723bdb0def07a36c88dcc9d35b7b4f8fcfc",
+      "central_sorting_and_workbench_pull.002": "e2dc2fcecbe79f346f0fc67caad00b95c659a3e64bb6b49986a73b609dbfff50",
+      "central_sorting_and_workbench_pull.003": "13044d404c3a9fd5947b7bcad680d912514a2a61fc16656e8c9e2bbca503efad",
+      "central_sorting_and_workbench_pull.004": "3540563311e5a0a458362ad1e789b8bfd2939a205a4b0f464ad565a40c5c4fac",
+      "central_sorting_and_workbench_wood_top": "e4a4816bfb27b00fde0caaca78987f9bae6efaf59674bd88bc71a6d53330ed6e",
+      "clerestory_blue_glass": "c9ed9e5f9f113549c0834868b73ebbdac872cf8dbc7f45be0aeb66ccc69c0cc6",
+      "clerestory_blue_glass.001": "b67162e0a56bed785d293b1ca7a41f6b67edddcb9254e5143db3cc78791b3c60",
+      "clerestory_blue_glass.002": "7ffe335a196689cf7d11ea9551579ed0e3aa45580ba6d0bde344c7ee129b36d3",
+      "clerestory_blue_glass.003": "566e47beba264f5163015d95268807d89ca0c700d278978bd4e985c34e3f47d7",
+      "clerestory_blue_glass.004": "0867d28b6d769ccf12137d7bba6e914e58aad584f89221694a3569d86305e121",
+      "clerestory_divider": "3676bba9ede7fd151b8157d926c32fdeeb0089d9634a3cf3a64630ca208b4bab",
+      "clerestory_divider.001": "1d7137b1c4da6d98495f3fa95a861e4c7f67a944ab1fd6e0b90066f113ccf85f",
+      "clerestory_divider.002": "c72a0f984e134ee74d5bbb5d8f4ba9c0d732863c483ebecab69302581625f550",
+      "clerestory_divider.003": "7065c4fcef929800e37e1abfeae838116abbd4d974d09a93526ca68eabc107ca",
+      "clerestory_divider.004": "b10e29e239c708400d896fa0899926f05900c9bbf0e48fcdfc2c4aa57dea17d9",
+      "clerestory_recess": "1976f8d5d5d36f7f2e8fa360e02ec6bf5f38fad4b988c73f9aed8ea790188c46",
+      "clerestory_recess.001": "ff04812065edaeca78f6a28a05e3c8bf693a49bfc88539d306bedf8ccc90f026",
+      "clerestory_recess.002": "c0849130f8f7ea27cc4394a263b42828ee9e66537fbc6d2cc59c31127309891d",
+      "clerestory_recess.003": "c264673edc2413b95b383db7dfcf497f2487286ce3233c89d683fbb353edd16f",
+      "clerestory_recess.004": "81dd0e3f55df6a0dfdbc95422dd5456875059b863c76dae09736d87570bbdc70",
+      "continuous_walkable_floor": "faf983a12a986f1dca563523cf81d99f151c8f72a25b897c44033d66bdf3f18f",
+      "desk_lamp_base": "5dadc8ff3d407a1da5697cfd08d3f79343efbfda70f46022b69c8396cb872ff9",
+      "desk_lamp_fixed_glow": "92fdfee7760935d463571b13de7e33317ac1dd34dabf06ca461ad11d00698b1b",
+      "desk_lamp_shade": "3af158c4b2c7f5516de096be8b227f95a17be251eace6294e3b86d6a13ce6bcc",
+      "desk_lamp_stem": "ab926e653a679e6523b368797ac690d765fd15c212b88a40410f161fd55eb91d",
+      "doorway_dark_interior": "4c7980b5cdfa2f566655f845b83cb13f69e41ec70e95c72799bd8a88f049a6c3",
+      "doorway_interior_amber_edge": "9f69698f7ec7a0573ebbc09bf9f61899ccc691749c4747499df3436acd6b344b",
+      "duty_record_stack": "e80ebea0b297d9ef571737139a5c8e62e405e67ffcfe39b33168e34e37d3ab22",
+      "duty_record_stack.001": "fc918d8d0c9fa61da02b2bea983f3e072966bd9eb09ee3e61cacdfc02d7392a9",
+      "duty_record_stack.002": "a771bf8bd71010fa2f7c51147e8435bac0fd1c4ef25d3124e9455cc7047b88a9",
+      "duty_station_body": "59bc6973ec2839233b8120266eefdb4d74a43761ef47c4e23556cab4c38be358",
+      "duty_station_door_inset": "b2e06cfa7ec2d26f6af5fe7dc6ba60435bd707b5639411cbd133db4b3621bd8b",
+      "duty_station_door_inset.001": "2a34b67cfab5f00e61225be19326345d82c3485c8cc9e1d5f25c9ebd7485e51a",
+      "duty_station_pull": "ada9904571049291144e378b1977ce279930b31dc8235da92b96a06ff6f58a2c",
+      "duty_station_pull.001": "dcabc32ed82348f302ed1d6c4fdaba6ca858f3122482d6a176919932ca3fab21",
+      "duty_station_tray": "ee36e700ed7aa252c6b0e200ec2097675c9d0d396413ea8d800789b952a5b9e9",
+      "duty_station_wood_top": "51aca0b9254c12793549b79068a556f3f098bd78cec936ea037d2ffaa1bebab3",
+      "floor_expansion_seam_x": "f589a0a4244431b89f6431db4c173d7586f470256365a38954d778da7a1b15ee",
+      "floor_expansion_seam_x.001": "96d1aeffedc3d2949fdd2988c61fad1a20106e9747dc95b3c6352645b60d65c1",
+      "floor_expansion_seam_x.002": "b45aeaa4c7259713d8e5f1fed1bcc90f835db5f7ef44fb5b57f8950ae14e81e2",
+      "floor_expansion_seam_x.003": "31a05aaf8d93d43fbaeb561580339f9e058048940e6f106ed426d2fb5024fd51",
+      "floor_expansion_seam_x.004": "ea60b6dd91522c0130a29456564c5136eb96ebc981818cb265ca2f651125d8c8",
+      "floor_expansion_seam_x.005": "e9fbc068fb947217b6bd0ad1c5e9e82e4ce66d368650b026489e71ef13961de9",
+      "floor_expansion_seam_x.006": "5de8e241a85b0fae4ff6069e147e7523c37e93a50ff479ba2dc75fec64fe2a86",
+      "floor_expansion_seam_y": "fa982a4f996e92273cd440df368bdcf285a3fde3683fcaad26a3640a8513a92f",
+      "floor_expansion_seam_y.001": "cf8617268e860a2f10a42c189acad118e2a9a6e8ae1ee4fb5eaa3fccfd8abc2a",
+      "floor_expansion_seam_y.002": "bb970f1c3d9278d611c347f8a90f6d5f663584b78a3d08f1cb6a4851de9c4506",
+      "floor_expansion_seam_y.003": "058efadb8c014bfce06e9e82dd19522f5b06a6504162f943b9a0f703a8dc342b",
+      "floor_expansion_seam_y.004": "6da930e75b9053ba37b9f133c3e3bfcaf40633f2a281ca4bb8340d45c370d6ad",
+      "handoff_log_cabinet_body": "385eb51df38ab31ebd640ba293ef3d624d5a7ad218ae0e1699513f9c968c8e94",
+      "handoff_log_cabinet_door_inset": "e689c76a15ebefc81e394b1d8fce1d89c49c9a55f47f869f8de945e116726e6a",
+      "handoff_log_cabinet_door_inset.001": "cd6a1a35583989169c921293b87be123e2948d0d65d22507dd5c96c5704d58c7",
+      "handoff_log_cabinet_door_inset.002": "64a2fa52b89e6d6a325ae31c446f537d05453753fcabc7f8a18f0a5e096acb65",
+      "handoff_log_cabinet_pull": "fd80de761f22de260a8f5339183d2fcc994713cae4b77e71e3195bf5ec00ecff",
+      "handoff_log_cabinet_pull.001": "da945d12d9ee30b949c20f8381a7677f08e7309bb941e4215a62450336277b9a",
+      "handoff_log_cabinet_pull.002": "143e6b9d3348b3c6aeec2362da5948edbd159fe36dfa8d7b0931298c0131b22e",
+      "handoff_log_cabinet_wood_top": "017e632d26057fb7a8d7fe205b43f0890510bc2269a38ab741dc9b7061c1a89a",
+      "handoff_open_paper_stack": "7b4fbd41cc47378840d5518cab3f758d0d5e7b0d7e46f3dd2c70482259bd7cff",
+      "handoff_open_paper_stack.001": "8dc6f72df0c3c7ef5ecfef7b7d05d3824aefe6c59e89a7c6a3f85bfcbabe984b",
+      "handoff_open_paper_stack.002": "eb5f723388b528d21a3c096dcfa0ac5c9aa6b173703416a23c5307130f62484b",
+      "handoff_open_paper_stack.003": "892103b9335774043bb4c697b22a21217eb10a068b931e7712a4ba6c866b8d5a",
+      "handoff_open_paper_stack.004": "2749cf7fe722b0ad57c3cde54bf2ed2032f7542b01d8001714df92eecac1521e",
+      "lintel_above_door": "33912fc5353c51260f932d8a4717fa8077ec5b8f3dee755266e7d1cb4678acea",
+      "log_divider": "ae0dfc76e2998a12638100ab99fcb5fffd147600c2e65706f417da9355ce6e7a",
+      "log_divider.001": "01a9c42c0e4eef46c17b5acfb1f9cd52b647b7c4b90df7bd1ad6b9caccc05dd2",
+      "log_divider.002": "f4bc856957597358e3cdb3342e8f52c2b5c87415148f50808bbcebd7b2024e19",
+      "log_divider.003": "640ce2360dc6c114299bc4aab81e6df347b50df3bdc49fb1e27026bed34c99ac",
+      "log_pigeonhole_back": "23c3e420cf9f0b1f779806c504cacac24371c63720859fe231436c69f92eb40c",
+      "log_shelf": "693c749de7d3722632bf7b6b5284f72314afd457d3ae676616e4fc528d066dd7",
+      "log_shelf.001": "746ef614b431af5abf23880d6d4df93193756b493569ce8d77c5c7e6f911998c",
+      "log_shelf.002": "1e0a3c2b72577a4211bed1fbc544c4c902905f7797e93298db20e193f1ef77d2",
+      "log_shelf.003": "24ffacd23167c2d836ae72d89f2f25a82dcf3f8911dbdd1281ea9b7c63e2bb59",
+      "log_shelf.004": "321f977bd7c566e5037fd9bc1338a73edd3236a674c8529104973d50caf05f01",
+      "log_shelf.005": "b5269cdb9d6f971c2981c6af6f9520df337d094e02532ea008cc146e1942a0c1",
+      "log_shelf.006": "d507b61d94727766ecf08f44ba0f58ccda86a94045794b7edaea3d8f5465c4c0",
+      "log_shelf.007": "81ce33ad5f7951972f852aff736e61d604a4ba5658e5ba38ae04b1bd7cdc3221",
+      "motor_service_box": "3e1608826f2e88c13b1653de3c0c7ce4c449b6103513c3a95ce80d2a7b86c74c",
+      "motor_vent": "5c8f9fc162688c67a3273b2c3ea78476dd83848ef4294865a7a93680042b78d7",
+      "motor_vent.001": "5c959b1fdd973b183eabc7b39bacf9bf029884720952c1ca9eda203046e7a5b5",
+      "motor_vent.002": "0792ac42db1557f0a4b5342998c2af91da24ded9c0c02368912ee3e9c1ca933d",
+      "side_return_wall": "d42df191145f9247105a1e9a625593420b1bd4c9402cd00bfe57945eccd44a1f",
+      "side_return_wall.001": "40ce480079e685d48c35aee74e1ee04d8454b461101fa0f756722ff9577f90e7",
+      "sliding_door_floor_rail": "e6556fcbaafdc96e26050408bdb182c17daa8994e5cb539711b75ed42abdabfd",
+      "sliding_door_jamb": "3ebb3666f659e682656ac9f154887a245786ae322ab94df172d3c48bacc2329a",
+      "sliding_door_jamb.001": "e746cea639aadfa062ad49f2eb056b6dcee5784f438d989cd8e96da20af1b576",
+      "sliding_door_top_rail": "da8b284229c2485bd3a00febb95c73c237e4b6bd49acd1347769d8c41043e1f3",
+      "sorted_unlettered_documents": "19194e6912cdc4351fe59abdf04edec7e17ba060ff5fa69fa8ec74f5e159ab51",
+      "sorted_unlettered_documents.001": "caa0dbce0e3dc7b2aea2ff36a98bf70e4dcdc31b285e07d8d32e62f28704f349",
+      "sorted_unlettered_documents.002": "1952cbcf57817cf24cbe62e60397b28c0b1f2c0d5f7fbb4ec12519df86be7ff3",
+      "sorted_unlettered_documents.003": "e7037ba4ec4bff7be71b0d3b524fed898f31d5b9e826ac0826929b400bb7a3fc",
+      "sorted_unlettered_documents.004": "8d1442c3a99c123ee612e6aa8813b7aa10f760f429cbf555de60f2542b8b7632",
+      "sorted_unlettered_documents.005": "a0f547d416f45d02908d842e9453d7e94a402529984f0814e6c4115a7f0d720f",
+      "sorted_unlettered_documents.006": "d79d995a7f02269020dd851511451f6156ddf8fa45b923c2648f8969bb973a13",
+      "sorted_unlettered_documents.007": "43383e013cc531f52f9204cc1437039a8b34e542685efb5f3ef11e18aef87ddb",
+      "sorted_unlettered_documents.008": "55241bf3dfcd7f07acb9a73eaef6f7e291b2252a95bf9ab0d842e674b034865f",
+      "sorted_unlettered_documents.009": "ed8d8777367b08156d365d65ca2c9c1700e3432895c403d44c7b4b15f9de53c9",
+      "sorted_unlettered_documents.010": "8f299785c6d0c62862e0504a52c7d775407439a69090417b0c46d8139ecf9eda",
+      "sorted_unlettered_documents.011": "89bb35d76df24b40ca6b0eed44c9cc38cbe11a8ddb4aaa6d06b46e5b8bdac7f2",
+      "tool_board": "8e741f0989c71b876ccdc241876cc9800a0900dcce4295e6a9c38e2975ab1f62",
+      "unlettered_hanging_tool": "54b4458f909e04ede2e33a1a082f7e3b8a622fc3f41055490abc53a8d4f01606",
+      "unlettered_hanging_tool.001": "d593695910e7af1cab61f6c91e4cabb04df7889e2b3202aad2c4bad13a362fe1",
+      "unlettered_hanging_tool.002": "f831072c0dff5cff6d913ff73d4f3876b81cc988efc81d75f3a3a32b294bfdea",
+      "unlettered_hanging_tool.003": "7cb7c1c079abe7c45ba8f32f68e7dccc492cda087c0173151714a6185cb06f30",
+      "unlettered_logbooks": "3003175b41e49ac86663b1a422252aafb275e7d3316973c0d9d59ba09e35a5ac",
+      "unlettered_logbooks.001": "9023d2fd0dc3fd4de513a6da3c7c2a25dca7097b14203e631a3628619492c56c",
+      "unlettered_logbooks.002": "abc9bf3314ca3d1be7bc2fb80fd96b5f0eb1a63c6ed42dd6b7320e2e673bfaa7",
+      "unlettered_logbooks.003": "d81d4743729b316898da3e49eddb29eeeb0330ac5d356ee464bb62245a27c90c",
+      "unlettered_logbooks.004": "e0bd8469961306ff050956dbae7f7b0be2f759fc9bcf06e08c206019763e7172",
+      "unlettered_logbooks.005": "a1300a3cf39cea63ea5755b13c822d3e8cd8cc17caf4e923ab5401efb5c1d6b9",
+      "unlettered_logbooks.006": "91834491a6d2e436d6c223ad7f4d83da6e2f07fe593f120abcb65879bd2bddcd",
+      "unlettered_logbooks.007": "d0f95181e93dd79218efe99a746a925af92d6e702acb4c95d7f8a7ee887663b9",
+      "unlettered_logbooks.008": "89369e031d98bc7064bc1c3076e5447f5bb55bd1035f7a9b15a46be072ab1382",
+      "unlettered_logbooks.009": "a3fdce5dc7b1188457d6616e08293a224c94ff68228629ae992113a7eb5e8fd6",
+      "unlettered_logbooks.010": "287bf77b9eb1e38a18c8a5b55d5575630f17fe42d443630effacb8604cc5c8ee",
+      "unlettered_logbooks.011": "81e731d43dc09717324bff23c05b18843a72092700ab2c2fd289cb4349e805c7",
+      "unlettered_logbooks.012": "8729f7dfc8a8c6d9db45fadbfa006ae5500ab45552cd0acd3278ac8976fbb192",
+      "unlettered_logbooks.013": "60f1b2e81401f2c7bec7b97e133cd847f8264cfe7fd5e9af48fd02775f60f47d",
+      "unlettered_logbooks.014": "e39627febde49b72ff1740d5f05eedd710b33edf4d48c180d9f1595a23449c06",
+      "unlettered_logbooks.015": "2546ccb9e28dc4803ac430820a0bb686f14076e937f53797a886646909dc4b8c",
+      "unlettered_logbooks.016": "5b7a99f438b6ed758471744adb0bfdfd1adb244e47c906bdd9757ee0a84a67de",
+      "unlettered_logbooks.017": "4bb8a31957bc92f0e66e20dcd9d7cd69297e0afc8acde9fe080a0318ee269e16",
+      "unlettered_logbooks.018": "3fd38d8682d2d763be4f4c4951bce233d4052726050cfd84b5d2c56c87523445",
+      "unlettered_logbooks.019": "cab707ef788faef3c0f2b089fb99f7cd5aa0cfc6357fc2b4e93110eceb92ee4f",
+      "unlettered_logbooks.020": "d706196262673b849d385aa9ff096daebac07fdd18ffb49637f69f933a2f4525",
+      "unlettered_logbooks.021": "ff9cd0daa547aa59cb98ccc6b8525cb300e4e8bc95f8231dfca889ef706f0577",
+      "unlettered_logbooks.022": "d9ab3deb5a87d7ac37fbccdbb9159d59d176c04b875015b1fc24639a13086ffb",
+      "unlettered_logbooks.023": "844c6ef2eef4f691971c11033e7f0254769f918ff19e2635bad278cc455c7d71",
+      "upper_amber_strip": "439993b6a4d28bb1421bff0d52c7fb757b4e2d8c342fc4c3c976bce2bbeda95f",
+      "upper_header_beam": "7beac801d84dab3021cc48c079ddb7734b08fed4f9d564375caf884d5b1aed61",
+      "wall_vertical_joint": "90d4e8859f326b328ef596530e74b47955ff51ca71ac2819c04620ce7bcc56dd",
+      "wall_vertical_joint.001": "140a029b11f2f26382906a4c4341b7557eb6a4d375462d18aee780082455aa95",
+      "wall_vertical_joint.002": "d6503ad413f8b2a15b6a1275b8f326f7a4aeef03e20fab346bd3a9835c8f6747",
+      "wall_vertical_joint.003": "30a79aa79bfd3f19921f5e7268c504a552c741113f494d786eaacd4865314c11",
+      "wall_vertical_joint.004": "53f7754801503779278fc732614915d194084d70ac5ecfba88ef845d55802b09",
+      "warm_wall_dado": "aee26651337068fe56c6eb7ee70d4775bd8220b14beba95887457dbf3aa98f1a",
+      "warm_wall_dado.001": "3a4e01b23dd7cda6c22e099e23427923ac7e024bb67311a60a6e8be7699624db"
+    },
+    "hallway_repaired": {
+      "STATE_door_handle": "913bf3dba3a89a326a63a601f2d74efda22636acc6a4ff314f2b35eb44efdb4c",
+      "STATE_door_motor_status_lamp": "51a467c47368bc1cb1615afc8da5d5a6f952d37dc9c4fb1d300c7707c12fca2f",
+      "STATE_sliding_door_leaf": "3e0d616af0441d28e2bbb975364241768867ac72d680936b146f4a69a39aaf1d",
+      "STATE_toolbox": "126bd05313e897223c4f6d9392e01092fe57cac27c002c6c840dae724560ea3e",
+      "STATE_toolbox_grip": "56fbc232dccbeed328a6ff42d73dfdf6b125be875df6a43d201955b19d1412fc",
+      "back_wall_lower_wainscot": "9c17425b727c857ec5f378405beb1e3aa6e0aa4914b80f8e53e2f744a5d71548",
+      "back_wall_lower_wainscot.001": "ed3a56b9d579269e58115ef59dbb8fbdab0668cf5b8d979aafe6574f5c56642e",
+      "back_wall_slab": "784783ec83a992792ab6e7943ff8deecfbcc5e4b4abcfd353a63781c975590b8",
+      "back_wall_slab.001": "272b34369eb6ecb5804a5e8488d92f674f3e9e97cc1e4700fc66cf8c60b46f3d",
+      "blank_closed_log_binder": "b912c45c0424297829a9c1e95ab08b836403becca58b2314d6caa76677542472",
+      "central_sorting_and_workbench_body": "634cd6c030b830e6066b7af558479644c71508fd2a4050eddbd80d4847be4b31",
+      "central_sorting_and_workbench_door_inset": "b73449016e2d68d5933cc83127332c76488d6d44e616e755776eebacfd3a7159",
+      "central_sorting_and_workbench_door_inset.001": "562dc961bd2cbe0216143cb812133bf5f0a0fcd48a417c36f97fb277ad62a0a8",
+      "central_sorting_and_workbench_door_inset.002": "756443e26bd43eaee05725858b653f3ecc60075d0494b261d696d8408146e8dc",
+      "central_sorting_and_workbench_door_inset.003": "6890cf823bbfbbcab556468469aaada1b15ca5d64d76326397ad064db7179dcd",
+      "central_sorting_and_workbench_door_inset.004": "b46e21598e94da851e72650217ecc86d5a2bd67d7157313e4c478c9d0f20d37d",
+      "central_sorting_and_workbench_pull": "998de62a2c5baed338ecf2daf9d3dc0fe4a7a309b2b8322f27b0e9be33c7900f",
+      "central_sorting_and_workbench_pull.001": "b16968093b1f684c865267f8b0183723bdb0def07a36c88dcc9d35b7b4f8fcfc",
+      "central_sorting_and_workbench_pull.002": "e2dc2fcecbe79f346f0fc67caad00b95c659a3e64bb6b49986a73b609dbfff50",
+      "central_sorting_and_workbench_pull.003": "13044d404c3a9fd5947b7bcad680d912514a2a61fc16656e8c9e2bbca503efad",
+      "central_sorting_and_workbench_pull.004": "3540563311e5a0a458362ad1e789b8bfd2939a205a4b0f464ad565a40c5c4fac",
+      "central_sorting_and_workbench_wood_top": "e4a4816bfb27b00fde0caaca78987f9bae6efaf59674bd88bc71a6d53330ed6e",
+      "clerestory_blue_glass": "c9ed9e5f9f113549c0834868b73ebbdac872cf8dbc7f45be0aeb66ccc69c0cc6",
+      "clerestory_blue_glass.001": "b67162e0a56bed785d293b1ca7a41f6b67edddcb9254e5143db3cc78791b3c60",
+      "clerestory_blue_glass.002": "7ffe335a196689cf7d11ea9551579ed0e3aa45580ba6d0bde344c7ee129b36d3",
+      "clerestory_blue_glass.003": "566e47beba264f5163015d95268807d89ca0c700d278978bd4e985c34e3f47d7",
+      "clerestory_blue_glass.004": "0867d28b6d769ccf12137d7bba6e914e58aad584f89221694a3569d86305e121",
+      "clerestory_divider": "3676bba9ede7fd151b8157d926c32fdeeb0089d9634a3cf3a64630ca208b4bab",
+      "clerestory_divider.001": "1d7137b1c4da6d98495f3fa95a861e4c7f67a944ab1fd6e0b90066f113ccf85f",
+      "clerestory_divider.002": "c72a0f984e134ee74d5bbb5d8f4ba9c0d732863c483ebecab69302581625f550",
+      "clerestory_divider.003": "7065c4fcef929800e37e1abfeae838116abbd4d974d09a93526ca68eabc107ca",
+      "clerestory_divider.004": "b10e29e239c708400d896fa0899926f05900c9bbf0e48fcdfc2c4aa57dea17d9",
+      "clerestory_recess": "1976f8d5d5d36f7f2e8fa360e02ec6bf5f38fad4b988c73f9aed8ea790188c46",
+      "clerestory_recess.001": "ff04812065edaeca78f6a28a05e3c8bf693a49bfc88539d306bedf8ccc90f026",
+      "clerestory_recess.002": "c0849130f8f7ea27cc4394a263b42828ee9e66537fbc6d2cc59c31127309891d",
+      "clerestory_recess.003": "c264673edc2413b95b383db7dfcf497f2487286ce3233c89d683fbb353edd16f",
+      "clerestory_recess.004": "81dd0e3f55df6a0dfdbc95422dd5456875059b863c76dae09736d87570bbdc70",
+      "continuous_walkable_floor": "faf983a12a986f1dca563523cf81d99f151c8f72a25b897c44033d66bdf3f18f",
+      "desk_lamp_base": "5dadc8ff3d407a1da5697cfd08d3f79343efbfda70f46022b69c8396cb872ff9",
+      "desk_lamp_fixed_glow": "92fdfee7760935d463571b13de7e33317ac1dd34dabf06ca461ad11d00698b1b",
+      "desk_lamp_shade": "3af158c4b2c7f5516de096be8b227f95a17be251eace6294e3b86d6a13ce6bcc",
+      "desk_lamp_stem": "ab926e653a679e6523b368797ac690d765fd15c212b88a40410f161fd55eb91d",
+      "doorway_dark_interior": "4c7980b5cdfa2f566655f845b83cb13f69e41ec70e95c72799bd8a88f049a6c3",
+      "doorway_interior_amber_edge": "9f69698f7ec7a0573ebbc09bf9f61899ccc691749c4747499df3436acd6b344b",
+      "duty_record_stack": "e80ebea0b297d9ef571737139a5c8e62e405e67ffcfe39b33168e34e37d3ab22",
+      "duty_record_stack.001": "fc918d8d0c9fa61da02b2bea983f3e072966bd9eb09ee3e61cacdfc02d7392a9",
+      "duty_record_stack.002": "a771bf8bd71010fa2f7c51147e8435bac0fd1c4ef25d3124e9455cc7047b88a9",
+      "duty_station_body": "59bc6973ec2839233b8120266eefdb4d74a43761ef47c4e23556cab4c38be358",
+      "duty_station_door_inset": "b2e06cfa7ec2d26f6af5fe7dc6ba60435bd707b5639411cbd133db4b3621bd8b",
+      "duty_station_door_inset.001": "2a34b67cfab5f00e61225be19326345d82c3485c8cc9e1d5f25c9ebd7485e51a",
+      "duty_station_pull": "ada9904571049291144e378b1977ce279930b31dc8235da92b96a06ff6f58a2c",
+      "duty_station_pull.001": "dcabc32ed82348f302ed1d6c4fdaba6ca858f3122482d6a176919932ca3fab21",
+      "duty_station_tray": "ee36e700ed7aa252c6b0e200ec2097675c9d0d396413ea8d800789b952a5b9e9",
+      "duty_station_wood_top": "51aca0b9254c12793549b79068a556f3f098bd78cec936ea037d2ffaa1bebab3",
+      "floor_expansion_seam_x": "f589a0a4244431b89f6431db4c173d7586f470256365a38954d778da7a1b15ee",
+      "floor_expansion_seam_x.001": "96d1aeffedc3d2949fdd2988c61fad1a20106e9747dc95b3c6352645b60d65c1",
+      "floor_expansion_seam_x.002": "b45aeaa4c7259713d8e5f1fed1bcc90f835db5f7ef44fb5b57f8950ae14e81e2",
+      "floor_expansion_seam_x.003": "31a05aaf8d93d43fbaeb561580339f9e058048940e6f106ed426d2fb5024fd51",
+      "floor_expansion_seam_x.004": "ea60b6dd91522c0130a29456564c5136eb96ebc981818cb265ca2f651125d8c8",
+      "floor_expansion_seam_x.005": "e9fbc068fb947217b6bd0ad1c5e9e82e4ce66d368650b026489e71ef13961de9",
+      "floor_expansion_seam_x.006": "5de8e241a85b0fae4ff6069e147e7523c37e93a50ff479ba2dc75fec64fe2a86",
+      "floor_expansion_seam_y": "fa982a4f996e92273cd440df368bdcf285a3fde3683fcaad26a3640a8513a92f",
+      "floor_expansion_seam_y.001": "cf8617268e860a2f10a42c189acad118e2a9a6e8ae1ee4fb5eaa3fccfd8abc2a",
+      "floor_expansion_seam_y.002": "bb970f1c3d9278d611c347f8a90f6d5f663584b78a3d08f1cb6a4851de9c4506",
+      "floor_expansion_seam_y.003": "058efadb8c014bfce06e9e82dd19522f5b06a6504162f943b9a0f703a8dc342b",
+      "floor_expansion_seam_y.004": "6da930e75b9053ba37b9f133c3e3bfcaf40633f2a281ca4bb8340d45c370d6ad",
+      "handoff_log_cabinet_body": "385eb51df38ab31ebd640ba293ef3d624d5a7ad218ae0e1699513f9c968c8e94",
+      "handoff_log_cabinet_door_inset": "e689c76a15ebefc81e394b1d8fce1d89c49c9a55f47f869f8de945e116726e6a",
+      "handoff_log_cabinet_door_inset.001": "cd6a1a35583989169c921293b87be123e2948d0d65d22507dd5c96c5704d58c7",
+      "handoff_log_cabinet_door_inset.002": "64a2fa52b89e6d6a325ae31c446f537d05453753fcabc7f8a18f0a5e096acb65",
+      "handoff_log_cabinet_pull": "fd80de761f22de260a8f5339183d2fcc994713cae4b77e71e3195bf5ec00ecff",
+      "handoff_log_cabinet_pull.001": "da945d12d9ee30b949c20f8381a7677f08e7309bb941e4215a62450336277b9a",
+      "handoff_log_cabinet_pull.002": "143e6b9d3348b3c6aeec2362da5948edbd159fe36dfa8d7b0931298c0131b22e",
+      "handoff_log_cabinet_wood_top": "017e632d26057fb7a8d7fe205b43f0890510bc2269a38ab741dc9b7061c1a89a",
+      "handoff_open_paper_stack": "7b4fbd41cc47378840d5518cab3f758d0d5e7b0d7e46f3dd2c70482259bd7cff",
+      "handoff_open_paper_stack.001": "8dc6f72df0c3c7ef5ecfef7b7d05d3824aefe6c59e89a7c6a3f85bfcbabe984b",
+      "handoff_open_paper_stack.002": "eb5f723388b528d21a3c096dcfa0ac5c9aa6b173703416a23c5307130f62484b",
+      "handoff_open_paper_stack.003": "892103b9335774043bb4c697b22a21217eb10a068b931e7712a4ba6c866b8d5a",
+      "handoff_open_paper_stack.004": "2749cf7fe722b0ad57c3cde54bf2ed2032f7542b01d8001714df92eecac1521e",
+      "lintel_above_door": "33912fc5353c51260f932d8a4717fa8077ec5b8f3dee755266e7d1cb4678acea",
+      "log_divider": "ae0dfc76e2998a12638100ab99fcb5fffd147600c2e65706f417da9355ce6e7a",
+      "log_divider.001": "01a9c42c0e4eef46c17b5acfb1f9cd52b647b7c4b90df7bd1ad6b9caccc05dd2",
+      "log_divider.002": "f4bc856957597358e3cdb3342e8f52c2b5c87415148f50808bbcebd7b2024e19",
+      "log_divider.003": "640ce2360dc6c114299bc4aab81e6df347b50df3bdc49fb1e27026bed34c99ac",
+      "log_pigeonhole_back": "23c3e420cf9f0b1f779806c504cacac24371c63720859fe231436c69f92eb40c",
+      "log_shelf": "693c749de7d3722632bf7b6b5284f72314afd457d3ae676616e4fc528d066dd7",
+      "log_shelf.001": "746ef614b431af5abf23880d6d4df93193756b493569ce8d77c5c7e6f911998c",
+      "log_shelf.002": "1e0a3c2b72577a4211bed1fbc544c4c902905f7797e93298db20e193f1ef77d2",
+      "log_shelf.003": "24ffacd23167c2d836ae72d89f2f25a82dcf3f8911dbdd1281ea9b7c63e2bb59",
+      "log_shelf.004": "321f977bd7c566e5037fd9bc1338a73edd3236a674c8529104973d50caf05f01",
+      "log_shelf.005": "b5269cdb9d6f971c2981c6af6f9520df337d094e02532ea008cc146e1942a0c1",
+      "log_shelf.006": "d507b61d94727766ecf08f44ba0f58ccda86a94045794b7edaea3d8f5465c4c0",
+      "log_shelf.007": "81ce33ad5f7951972f852aff736e61d604a4ba5658e5ba38ae04b1bd7cdc3221",
+      "motor_service_box": "3e1608826f2e88c13b1653de3c0c7ce4c449b6103513c3a95ce80d2a7b86c74c",
+      "motor_vent": "5c8f9fc162688c67a3273b2c3ea78476dd83848ef4294865a7a93680042b78d7",
+      "motor_vent.001": "5c959b1fdd973b183eabc7b39bacf9bf029884720952c1ca9eda203046e7a5b5",
+      "motor_vent.002": "0792ac42db1557f0a4b5342998c2af91da24ded9c0c02368912ee3e9c1ca933d",
+      "side_return_wall": "d42df191145f9247105a1e9a625593420b1bd4c9402cd00bfe57945eccd44a1f",
+      "side_return_wall.001": "40ce480079e685d48c35aee74e1ee04d8454b461101fa0f756722ff9577f90e7",
+      "sliding_door_floor_rail": "e6556fcbaafdc96e26050408bdb182c17daa8994e5cb539711b75ed42abdabfd",
+      "sliding_door_jamb": "3ebb3666f659e682656ac9f154887a245786ae322ab94df172d3c48bacc2329a",
+      "sliding_door_jamb.001": "e746cea639aadfa062ad49f2eb056b6dcee5784f438d989cd8e96da20af1b576",
+      "sliding_door_top_rail": "da8b284229c2485bd3a00febb95c73c237e4b6bd49acd1347769d8c41043e1f3",
+      "sorted_unlettered_documents": "19194e6912cdc4351fe59abdf04edec7e17ba060ff5fa69fa8ec74f5e159ab51",
+      "sorted_unlettered_documents.001": "caa0dbce0e3dc7b2aea2ff36a98bf70e4dcdc31b285e07d8d32e62f28704f349",
+      "sorted_unlettered_documents.002": "1952cbcf57817cf24cbe62e60397b28c0b1f2c0d5f7fbb4ec12519df86be7ff3",
+      "sorted_unlettered_documents.003": "e7037ba4ec4bff7be71b0d3b524fed898f31d5b9e826ac0826929b400bb7a3fc",
+      "sorted_unlettered_documents.004": "8d1442c3a99c123ee612e6aa8813b7aa10f760f429cbf555de60f2542b8b7632",
+      "sorted_unlettered_documents.005": "a0f547d416f45d02908d842e9453d7e94a402529984f0814e6c4115a7f0d720f",
+      "sorted_unlettered_documents.006": "d79d995a7f02269020dd851511451f6156ddf8fa45b923c2648f8969bb973a13",
+      "sorted_unlettered_documents.007": "43383e013cc531f52f9204cc1437039a8b34e542685efb5f3ef11e18aef87ddb",
+      "sorted_unlettered_documents.008": "55241bf3dfcd7f07acb9a73eaef6f7e291b2252a95bf9ab0d842e674b034865f",
+      "sorted_unlettered_documents.009": "ed8d8777367b08156d365d65ca2c9c1700e3432895c403d44c7b4b15f9de53c9",
+      "sorted_unlettered_documents.010": "8f299785c6d0c62862e0504a52c7d775407439a69090417b0c46d8139ecf9eda",
+      "sorted_unlettered_documents.011": "89bb35d76df24b40ca6b0eed44c9cc38cbe11a8ddb4aaa6d06b46e5b8bdac7f2",
+      "tool_board": "8e741f0989c71b876ccdc241876cc9800a0900dcce4295e6a9c38e2975ab1f62",
+      "unlettered_hanging_tool": "54b4458f909e04ede2e33a1a082f7e3b8a622fc3f41055490abc53a8d4f01606",
+      "unlettered_hanging_tool.001": "d593695910e7af1cab61f6c91e4cabb04df7889e2b3202aad2c4bad13a362fe1",
+      "unlettered_hanging_tool.002": "f831072c0dff5cff6d913ff73d4f3876b81cc988efc81d75f3a3a32b294bfdea",
+      "unlettered_hanging_tool.003": "7cb7c1c079abe7c45ba8f32f68e7dccc492cda087c0173151714a6185cb06f30",
+      "unlettered_logbooks": "3003175b41e49ac86663b1a422252aafb275e7d3316973c0d9d59ba09e35a5ac",
+      "unlettered_logbooks.001": "9023d2fd0dc3fd4de513a6da3c7c2a25dca7097b14203e631a3628619492c56c",
+      "unlettered_logbooks.002": "abc9bf3314ca3d1be7bc2fb80fd96b5f0eb1a63c6ed42dd6b7320e2e673bfaa7",
+      "unlettered_logbooks.003": "d81d4743729b316898da3e49eddb29eeeb0330ac5d356ee464bb62245a27c90c",
+      "unlettered_logbooks.004": "e0bd8469961306ff050956dbae7f7b0be2f759fc9bcf06e08c206019763e7172",
+      "unlettered_logbooks.005": "a1300a3cf39cea63ea5755b13c822d3e8cd8cc17caf4e923ab5401efb5c1d6b9",
+      "unlettered_logbooks.006": "91834491a6d2e436d6c223ad7f4d83da6e2f07fe593f120abcb65879bd2bddcd",
+      "unlettered_logbooks.007": "d0f95181e93dd79218efe99a746a925af92d6e702acb4c95d7f8a7ee887663b9",
+      "unlettered_logbooks.008": "89369e031d98bc7064bc1c3076e5447f5bb55bd1035f7a9b15a46be072ab1382",
+      "unlettered_logbooks.009": "a3fdce5dc7b1188457d6616e08293a224c94ff68228629ae992113a7eb5e8fd6",
+      "unlettered_logbooks.010": "287bf77b9eb1e38a18c8a5b55d5575630f17fe42d443630effacb8604cc5c8ee",
+      "unlettered_logbooks.011": "81e731d43dc09717324bff23c05b18843a72092700ab2c2fd289cb4349e805c7",
+      "unlettered_logbooks.012": "8729f7dfc8a8c6d9db45fadbfa006ae5500ab45552cd0acd3278ac8976fbb192",
+      "unlettered_logbooks.013": "60f1b2e81401f2c7bec7b97e133cd847f8264cfe7fd5e9af48fd02775f60f47d",
+      "unlettered_logbooks.014": "e39627febde49b72ff1740d5f05eedd710b33edf4d48c180d9f1595a23449c06",
+      "unlettered_logbooks.015": "2546ccb9e28dc4803ac430820a0bb686f14076e937f53797a886646909dc4b8c",
+      "unlettered_logbooks.016": "5b7a99f438b6ed758471744adb0bfdfd1adb244e47c906bdd9757ee0a84a67de",
+      "unlettered_logbooks.017": "4bb8a31957bc92f0e66e20dcd9d7cd69297e0afc8acde9fe080a0318ee269e16",
+      "unlettered_logbooks.018": "3fd38d8682d2d763be4f4c4951bce233d4052726050cfd84b5d2c56c87523445",
+      "unlettered_logbooks.019": "cab707ef788faef3c0f2b089fb99f7cd5aa0cfc6357fc2b4e93110eceb92ee4f",
+      "unlettered_logbooks.020": "d706196262673b849d385aa9ff096daebac07fdd18ffb49637f69f933a2f4525",
+      "unlettered_logbooks.021": "ff9cd0daa547aa59cb98ccc6b8525cb300e4e8bc95f8231dfca889ef706f0577",
+      "unlettered_logbooks.022": "d9ab3deb5a87d7ac37fbccdbb9159d59d176c04b875015b1fc24639a13086ffb",
+      "unlettered_logbooks.023": "844c6ef2eef4f691971c11033e7f0254769f918ff19e2635bad278cc455c7d71",
+      "upper_amber_strip": "439993b6a4d28bb1421bff0d52c7fb757b4e2d8c342fc4c3c976bce2bbeda95f",
+      "upper_header_beam": "7beac801d84dab3021cc48c079ddb7734b08fed4f9d564375caf884d5b1aed61",
+      "wall_vertical_joint": "90d4e8859f326b328ef596530e74b47955ff51ca71ac2819c04620ce7bcc56dd",
+      "wall_vertical_joint.001": "140a029b11f2f26382906a4c4341b7557eb6a4d375462d18aee780082455aa95",
+      "wall_vertical_joint.002": "d6503ad413f8b2a15b6a1275b8f326f7a4aeef03e20fab346bd3a9835c8f6747",
+      "wall_vertical_joint.003": "30a79aa79bfd3f19921f5e7268c504a552c741113f494d786eaacd4865314c11",
+      "wall_vertical_joint.004": "53f7754801503779278fc732614915d194084d70ac5ecfba88ef845d55802b09",
+      "warm_wall_dado": "aee26651337068fe56c6eb7ee70d4775bd8220b14beba95887457dbf3aa98f1a",
+      "warm_wall_dado.001": "3a4e01b23dd7cda6c22e099e23427923ac7e024bb67311a60a6e8be7699624db"
+    },
+    "annex": {
+      "annex_blank_notice_board": "0e5c7452ebd953f4a4d76250f7c7020fd23155e904b40122633808d0d1ea71e2",
+      "annex_blank_paper_no_text": "a9e3b08456f79cfa8be5ff09bcc1ea2db5dce9ce5f62c4b2cf4e334942350eb7",
+      "annex_blank_paper_no_text.001": "c728898ca41e521787c9dfe2d6c7d8f1f7ff876d29eec701c628f94926ee2086",
+      "annex_blank_paper_no_text.002": "560c51a1d6049b584ba9692e473f9794875a0aa2bd1d349aedd03827247832a9",
+      "annex_blank_tray": "620ebace54dc99deffa91befd98796eae99cd8fdb97e970219b89461506efc0a",
+      "annex_handoff_counter_body": "10a47d924d80bf6691e368fc6160fc74f6ca2fa0ecd7b218b0d450ba3183789e",
+      "annex_handoff_counter_door_inset": "dcf20006fca9b7e830087a8a9397ab04df2a9e898b9c3712ca16fa561153d971",
+      "annex_handoff_counter_door_inset.001": "b2d559f8e0128bbe17e3fdaf425dde5370550f7848cbaf14b617aa112a9f671d",
+      "annex_handoff_counter_door_inset.002": "e8f47cdb88ab58474635af18df15cd0f94688bb0ba7bf988e5c7c82be95e1820",
+      "annex_handoff_counter_door_inset.003": "ff5aa82802480d0ca7feb49ab7cd47f9d1863879356b7af69a25f5c152c004d2",
+      "annex_handoff_counter_door_inset.004": "8457e634a0d7b9f661d9331fe2312d7e2f2f746c1b4d84b5756e10bd6ee1ee45",
+      "annex_handoff_counter_pull": "b7daa88d0ac744135bb4242dba2cd5c82c94e12176d3ee5addb925b70cfc72e6",
+      "annex_handoff_counter_pull.001": "77df6fe5ffe4b9b66f48cbca16ba0520cf72094cefd22859c266fa7d5c71639d",
+      "annex_handoff_counter_pull.002": "6228c0089953f6c475cc9ef8b96df92a5c1f3fce0a4704b7c699248ed6c2c803",
+      "annex_handoff_counter_pull.003": "ba3739fcc6e0bbbaa8c1a7e70adf16ea620478360191831a04c7b7d71b6f4a2e",
+      "annex_handoff_counter_pull.004": "891f1d7fcdb8086316009673b7f6db2a7a76cf7dc3a401571226a5481dfe9706",
+      "annex_handoff_counter_wood_top": "9a7504d27c70b206a01485b98c3ec78cb8c6c7b25ecbea968a29058f8077da9d",
+      "annex_handoff_documents": "26108f3201daf1f4fe09ee24a2614dfc0f58835daebe1fcb6b1dba6ddc1c42b2",
+      "annex_handoff_documents.001": "13fe17077539aba3da87e7dee5aa4f305af68853bdac65aa4a8de10fa7ffcec0",
+      "annex_handoff_documents.002": "670e969c5d9cd9207dd9feb93c11f491e4f2b95d736e266d0077e30e903ba6d6",
+      "annex_handoff_documents.003": "020e811188d52f67ccbeace77f6e817865ade9cf3682086c9456dfa78a2c22d1",
+      "annex_handoff_documents.004": "7fee02d9410276df61369c3acc18336e3f36c58da51a302735df2c5358b7d120",
+      "annex_return_header": "f678a96033e5d18cafe4b8aec327edda6118e6d231282cb794b055b02a6c36e4",
+      "annex_return_jamb": "dbca8cff67a574c95a47862deb89043a27c692ff18fb4932e853e6f8b023f23e",
+      "annex_return_jamb.001": "c1841fa0529c811fbc7851a6c8a5facd64d00073cbc0cd0e1354c682c2b9c4f5",
+      "annex_return_opening": "1cdf6d04a58bfd1e7caf87601cb6071a6a06e483b5d8b91ff227c82a3839a905",
+      "annex_storage_low_body": "832b930c7f23840ed7eee4787e357b27112f5c276d94e71fe26ba96e177e2c4a",
+      "annex_storage_low_door_inset": "bac7c2922ded11312a8b98e8bf98b8827a668daeb8edbc7a522f0181fe3af1e9",
+      "annex_storage_low_door_inset.001": "1642285bd412f9822a6e6b09cc529461b140dafe4a1ea206d07f57252c31f368",
+      "annex_storage_low_door_inset.002": "3aaf0a9dda7dc8d39ea5bc65e20da3caa33c845357f40223ea798d06939166d3",
+      "annex_storage_low_pull": "5bb148dfca21150cd0ff154c1255f11f2343b26475c90066c03b97b56e772625",
+      "annex_storage_low_pull.001": "291edc2c01e3811575aad08d6bc9b72fdb028a0fa7854aec3097184a9ad1a7f4",
+      "annex_storage_low_pull.002": "b71431e0c229bee22ecd9062e9d07e03ac0a4ac8e97a428249b5ca35e74af654",
+      "annex_storage_low_wood_top": "fbbd2fa84fe07e60a9629884262b9d57c483877f67e3282a40b028b4457e26d8",
+      "annex_storage_shelf": "b326cd3710873ca793556e42344c84dc9e40eb701cf717305a9ce863cbebd29d",
+      "annex_storage_shelf.001": "6d046df6ac813b33eae54e6c4e4246ef32f855ead7d1c87266e24274fe16af16",
+      "annex_unlettered_storage_box": "879bbaf4914b9b3773c2197e07c386a21956d07e5bbe192517415765d6247936",
+      "annex_unlettered_storage_box.001": "e22ffd757bd63102046787b656ee585bb7eda632f41321dd8b44a4956b253934",
+      "annex_unlettered_storage_box.002": "ea18b19ef663914fd3fcab6646682729f309bbbe7100b551c560c374d31455b2",
+      "annex_unlettered_storage_box.003": "c1b07531c29555ed2930402babf9f0f620eb753f8d828892351d8f63ccbbba11",
+      "annex_unlettered_storage_box.004": "55474763111bf93d244fd27ec0c84424d661bda034f4beaa0e030a20f91e44b5",
+      "annex_unlettered_storage_box.005": "b83f22fcc73fa8b0ef2ea5ceba653a3c965beb1066a49a334790d5c9c1500a27",
+      "back_wall_lower_wainscot.002": "eaf42eedfa9cbe2ef95178db6ab8a2adec723e73cd5b5a8a13375a16da38668a",
+      "back_wall_lower_wainscot.003": "1a251ae6815438f817df8cd5e809b41ce7ccfff328faf8c1e6b6d4e285935404",
+      "back_wall_slab.002": "60cb7c3233fb3f70056e8106e80ea411c99050f938496d625209e19cf2447fe2",
+      "back_wall_slab.003": "2050e5c3a3a3de315190e8b55fb0a0c3cab5b9f7932f8d7cbc31c7e0995af940",
+      "clerestory_blue_glass.005": "c9ed9e5f9f113549c0834868b73ebbdac872cf8dbc7f45be0aeb66ccc69c0cc6",
+      "clerestory_blue_glass.006": "b67162e0a56bed785d293b1ca7a41f6b67edddcb9254e5143db3cc78791b3c60",
+      "clerestory_blue_glass.007": "7ffe335a196689cf7d11ea9551579ed0e3aa45580ba6d0bde344c7ee129b36d3",
+      "clerestory_blue_glass.008": "566e47beba264f5163015d95268807d89ca0c700d278978bd4e985c34e3f47d7",
+      "clerestory_blue_glass.009": "0867d28b6d769ccf12137d7bba6e914e58aad584f89221694a3569d86305e121",
+      "clerestory_divider.005": "3676bba9ede7fd151b8157d926c32fdeeb0089d9634a3cf3a64630ca208b4bab",
+      "clerestory_divider.006": "1d7137b1c4da6d98495f3fa95a861e4c7f67a944ab1fd6e0b90066f113ccf85f",
+      "clerestory_divider.007": "c72a0f984e134ee74d5bbb5d8f4ba9c0d732863c483ebecab69302581625f550",
+      "clerestory_divider.008": "7065c4fcef929800e37e1abfeae838116abbd4d974d09a93526ca68eabc107ca",
+      "clerestory_divider.009": "b10e29e239c708400d896fa0899926f05900c9bbf0e48fcdfc2c4aa57dea17d9",
+      "clerestory_recess.005": "1976f8d5d5d36f7f2e8fa360e02ec6bf5f38fad4b988c73f9aed8ea790188c46",
+      "clerestory_recess.006": "ff04812065edaeca78f6a28a05e3c8bf693a49bfc88539d306bedf8ccc90f026",
+      "clerestory_recess.007": "c0849130f8f7ea27cc4394a263b42828ee9e66537fbc6d2cc59c31127309891d",
+      "clerestory_recess.008": "c264673edc2413b95b383db7dfcf497f2487286ce3233c89d683fbb353edd16f",
+      "clerestory_recess.009": "81dd0e3f55df6a0dfdbc95422dd5456875059b863c76dae09736d87570bbdc70",
+      "continuous_walkable_floor.001": "faf983a12a986f1dca563523cf81d99f151c8f72a25b897c44033d66bdf3f18f",
+      "floor_expansion_seam_x.007": "f589a0a4244431b89f6431db4c173d7586f470256365a38954d778da7a1b15ee",
+      "floor_expansion_seam_x.008": "96d1aeffedc3d2949fdd2988c61fad1a20106e9747dc95b3c6352645b60d65c1",
+      "floor_expansion_seam_x.009": "b45aeaa4c7259713d8e5f1fed1bcc90f835db5f7ef44fb5b57f8950ae14e81e2",
+      "floor_expansion_seam_x.010": "31a05aaf8d93d43fbaeb561580339f9e058048940e6f106ed426d2fb5024fd51",
+      "floor_expansion_seam_x.011": "ea60b6dd91522c0130a29456564c5136eb96ebc981818cb265ca2f651125d8c8",
+      "floor_expansion_seam_x.012": "e9fbc068fb947217b6bd0ad1c5e9e82e4ce66d368650b026489e71ef13961de9",
+      "floor_expansion_seam_x.013": "5de8e241a85b0fae4ff6069e147e7523c37e93a50ff479ba2dc75fec64fe2a86",
+      "floor_expansion_seam_y.005": "fa982a4f996e92273cd440df368bdcf285a3fde3683fcaad26a3640a8513a92f",
+      "floor_expansion_seam_y.006": "cf8617268e860a2f10a42c189acad118e2a9a6e8ae1ee4fb5eaa3fccfd8abc2a",
+      "floor_expansion_seam_y.007": "bb970f1c3d9278d611c347f8a90f6d5f663584b78a3d08f1cb6a4851de9c4506",
+      "floor_expansion_seam_y.008": "058efadb8c014bfce06e9e82dd19522f5b06a6504162f943b9a0f703a8dc342b",
+      "floor_expansion_seam_y.009": "6da930e75b9053ba37b9f133c3e3bfcaf40633f2a281ca4bb8340d45c370d6ad",
+      "lintel_above_door.001": "4cb3ddd0b11c38e0e42d7b285c4bb52f5b71a2f85972ac2daea7e7475806388b",
+      "side_return_wall.002": "d42df191145f9247105a1e9a625593420b1bd4c9402cd00bfe57945eccd44a1f",
+      "side_return_wall.003": "40ce480079e685d48c35aee74e1ee04d8454b461101fa0f756722ff9577f90e7",
+      "upper_amber_strip.001": "439993b6a4d28bb1421bff0d52c7fb757b4e2d8c342fc4c3c976bce2bbeda95f",
+      "upper_header_beam.001": "7beac801d84dab3021cc48c079ddb7734b08fed4f9d564375caf884d5b1aed61",
+      "wall_vertical_joint.005": "90d4e8859f326b328ef596530e74b47955ff51ca71ac2819c04620ce7bcc56dd",
+      "wall_vertical_joint.006": "140a029b11f2f26382906a4c4341b7557eb6a4d375462d18aee780082455aa95",
+      "wall_vertical_joint.007": "d6503ad413f8b2a15b6a1275b8f326f7a4aeef03e20fab346bd3a9835c8f6747",
+      "wall_vertical_joint.008": "30a79aa79bfd3f19921f5e7268c504a552c741113f494d786eaacd4865314c11",
+      "wall_vertical_joint.009": "53f7754801503779278fc732614915d194084d70ac5ecfba88ef845d55802b09",
+      "warm_wall_dado.002": "439f90fbd0ec337483936d403154bf9b1a97ac75257292b319b75c6f3714d581",
+      "warm_wall_dado.003": "552ee815f8b84e5abe14c39e401444b79d8fa0d5a2786bb349f88de7cbd648d9"
+    }
+  },
+  "v2_geometry": {
+    "hallway_closed": {
+      "STATE_door_handle": "a2044de833746a612e77093cc45fda8e99ba1d57fa9aeb2419b1cb5040ab1791",
+      "STATE_door_motor_status_lamp": "51a467c47368bc1cb1615afc8da5d5a6f952d37dc9c4fb1d300c7707c12fca2f",
+      "STATE_sliding_door_leaf": "c689a2e1b339541174f76c3a8e833775aac6e992a597bc776929a7114b52dce5",
+      "STATE_toolbox": "e97e23a26053009964880aec69a2b1747cabbea08c85c44f883358463a60cfda",
+      "STATE_toolbox_grip": "7bb8f2a831f00f86e998123ac481fb54625b3312e2fea26de24e4642a2106557",
+      "back_wall_lower_wainscot": "9c17425b727c857ec5f378405beb1e3aa6e0aa4914b80f8e53e2f744a5d71548",
+      "back_wall_lower_wainscot.001": "ed3a56b9d579269e58115ef59dbb8fbdab0668cf5b8d979aafe6574f5c56642e",
+      "back_wall_slab": "784783ec83a992792ab6e7943ff8deecfbcc5e4b4abcfd353a63781c975590b8",
+      "back_wall_slab.001": "272b34369eb6ecb5804a5e8488d92f674f3e9e97cc1e4700fc66cf8c60b46f3d",
+      "blank_closed_log_binder": "b912c45c0424297829a9c1e95ab08b836403becca58b2314d6caa76677542472",
+      "central_sorting_and_workbench_body": "634cd6c030b830e6066b7af558479644c71508fd2a4050eddbd80d4847be4b31",
+      "central_sorting_and_workbench_door_inset": "b73449016e2d68d5933cc83127332c76488d6d44e616e755776eebacfd3a7159",
+      "central_sorting_and_workbench_door_inset.001": "562dc961bd2cbe0216143cb812133bf5f0a0fcd48a417c36f97fb277ad62a0a8",
+      "central_sorting_and_workbench_door_inset.002": "756443e26bd43eaee05725858b653f3ecc60075d0494b261d696d8408146e8dc",
+      "central_sorting_and_workbench_door_inset.003": "6890cf823bbfbbcab556468469aaada1b15ca5d64d76326397ad064db7179dcd",
+      "central_sorting_and_workbench_door_inset.004": "b46e21598e94da851e72650217ecc86d5a2bd67d7157313e4c478c9d0f20d37d",
+      "central_sorting_and_workbench_pull": "998de62a2c5baed338ecf2daf9d3dc0fe4a7a309b2b8322f27b0e9be33c7900f",
+      "central_sorting_and_workbench_pull.001": "b16968093b1f684c865267f8b0183723bdb0def07a36c88dcc9d35b7b4f8fcfc",
+      "central_sorting_and_workbench_pull.002": "e2dc2fcecbe79f346f0fc67caad00b95c659a3e64bb6b49986a73b609dbfff50",
+      "central_sorting_and_workbench_pull.003": "13044d404c3a9fd5947b7bcad680d912514a2a61fc16656e8c9e2bbca503efad",
+      "central_sorting_and_workbench_pull.004": "3540563311e5a0a458362ad1e789b8bfd2939a205a4b0f464ad565a40c5c4fac",
+      "central_sorting_and_workbench_wood_top": "e4a4816bfb27b00fde0caaca78987f9bae6efaf59674bd88bc71a6d53330ed6e",
+      "clerestory_blue_glass": "c9ed9e5f9f113549c0834868b73ebbdac872cf8dbc7f45be0aeb66ccc69c0cc6",
+      "clerestory_blue_glass.001": "b67162e0a56bed785d293b1ca7a41f6b67edddcb9254e5143db3cc78791b3c60",
+      "clerestory_blue_glass.002": "7ffe335a196689cf7d11ea9551579ed0e3aa45580ba6d0bde344c7ee129b36d3",
+      "clerestory_blue_glass.003": "566e47beba264f5163015d95268807d89ca0c700d278978bd4e985c34e3f47d7",
+      "clerestory_blue_glass.004": "0867d28b6d769ccf12137d7bba6e914e58aad584f89221694a3569d86305e121",
+      "clerestory_divider": "3676bba9ede7fd151b8157d926c32fdeeb0089d9634a3cf3a64630ca208b4bab",
+      "clerestory_divider.001": "1d7137b1c4da6d98495f3fa95a861e4c7f67a944ab1fd6e0b90066f113ccf85f",
+      "clerestory_divider.002": "c72a0f984e134ee74d5bbb5d8f4ba9c0d732863c483ebecab69302581625f550",
+      "clerestory_divider.003": "7065c4fcef929800e37e1abfeae838116abbd4d974d09a93526ca68eabc107ca",
+      "clerestory_divider.004": "b10e29e239c708400d896fa0899926f05900c9bbf0e48fcdfc2c4aa57dea17d9",
+      "clerestory_recess": "1976f8d5d5d36f7f2e8fa360e02ec6bf5f38fad4b988c73f9aed8ea790188c46",
+      "clerestory_recess.001": "ff04812065edaeca78f6a28a05e3c8bf693a49bfc88539d306bedf8ccc90f026",
+      "clerestory_recess.002": "c0849130f8f7ea27cc4394a263b42828ee9e66537fbc6d2cc59c31127309891d",
+      "clerestory_recess.003": "c264673edc2413b95b383db7dfcf497f2487286ce3233c89d683fbb353edd16f",
+      "clerestory_recess.004": "81dd0e3f55df6a0dfdbc95422dd5456875059b863c76dae09736d87570bbdc70",
+      "continuous_walkable_floor": "faf983a12a986f1dca563523cf81d99f151c8f72a25b897c44033d66bdf3f18f",
+      "desk_lamp_base": "5dadc8ff3d407a1da5697cfd08d3f79343efbfda70f46022b69c8396cb872ff9",
+      "desk_lamp_fixed_glow": "92fdfee7760935d463571b13de7e33317ac1dd34dabf06ca461ad11d00698b1b",
+      "desk_lamp_shade": "3af158c4b2c7f5516de096be8b227f95a17be251eace6294e3b86d6a13ce6bcc",
+      "desk_lamp_stem": "ab926e653a679e6523b368797ac690d765fd15c212b88a40410f161fd55eb91d",
+      "doorway_dark_interior": "4c7980b5cdfa2f566655f845b83cb13f69e41ec70e95c72799bd8a88f049a6c3",
+      "doorway_interior_amber_edge": "9f69698f7ec7a0573ebbc09bf9f61899ccc691749c4747499df3436acd6b344b",
+      "duty_record_stack": "e80ebea0b297d9ef571737139a5c8e62e405e67ffcfe39b33168e34e37d3ab22",
+      "duty_record_stack.001": "fc918d8d0c9fa61da02b2bea983f3e072966bd9eb09ee3e61cacdfc02d7392a9",
+      "duty_record_stack.002": "a771bf8bd71010fa2f7c51147e8435bac0fd1c4ef25d3124e9455cc7047b88a9",
+      "duty_station_body": "59bc6973ec2839233b8120266eefdb4d74a43761ef47c4e23556cab4c38be358",
+      "duty_station_door_inset": "b2e06cfa7ec2d26f6af5fe7dc6ba60435bd707b5639411cbd133db4b3621bd8b",
+      "duty_station_door_inset.001": "2a34b67cfab5f00e61225be19326345d82c3485c8cc9e1d5f25c9ebd7485e51a",
+      "duty_station_pull": "ada9904571049291144e378b1977ce279930b31dc8235da92b96a06ff6f58a2c",
+      "duty_station_pull.001": "dcabc32ed82348f302ed1d6c4fdaba6ca858f3122482d6a176919932ca3fab21",
+      "duty_station_tray": "ee36e700ed7aa252c6b0e200ec2097675c9d0d396413ea8d800789b952a5b9e9",
+      "duty_station_wood_top": "51aca0b9254c12793549b79068a556f3f098bd78cec936ea037d2ffaa1bebab3",
+      "floor_expansion_seam_x": "f589a0a4244431b89f6431db4c173d7586f470256365a38954d778da7a1b15ee",
+      "floor_expansion_seam_x.001": "96d1aeffedc3d2949fdd2988c61fad1a20106e9747dc95b3c6352645b60d65c1",
+      "floor_expansion_seam_x.002": "b45aeaa4c7259713d8e5f1fed1bcc90f835db5f7ef44fb5b57f8950ae14e81e2",
+      "floor_expansion_seam_x.003": "31a05aaf8d93d43fbaeb561580339f9e058048940e6f106ed426d2fb5024fd51",
+      "floor_expansion_seam_x.004": "ea60b6dd91522c0130a29456564c5136eb96ebc981818cb265ca2f651125d8c8",
+      "floor_expansion_seam_x.005": "e9fbc068fb947217b6bd0ad1c5e9e82e4ce66d368650b026489e71ef13961de9",
+      "floor_expansion_seam_x.006": "5de8e241a85b0fae4ff6069e147e7523c37e93a50ff479ba2dc75fec64fe2a86",
+      "floor_expansion_seam_y": "fa982a4f996e92273cd440df368bdcf285a3fde3683fcaad26a3640a8513a92f",
+      "floor_expansion_seam_y.001": "cf8617268e860a2f10a42c189acad118e2a9a6e8ae1ee4fb5eaa3fccfd8abc2a",
+      "floor_expansion_seam_y.002": "bb970f1c3d9278d611c347f8a90f6d5f663584b78a3d08f1cb6a4851de9c4506",
+      "floor_expansion_seam_y.003": "058efadb8c014bfce06e9e82dd19522f5b06a6504162f943b9a0f703a8dc342b",
+      "floor_expansion_seam_y.004": "6da930e75b9053ba37b9f133c3e3bfcaf40633f2a281ca4bb8340d45c370d6ad",
+      "handoff_log_cabinet_body": "385eb51df38ab31ebd640ba293ef3d624d5a7ad218ae0e1699513f9c968c8e94",
+      "handoff_log_cabinet_door_inset": "e689c76a15ebefc81e394b1d8fce1d89c49c9a55f47f869f8de945e116726e6a",
+      "handoff_log_cabinet_door_inset.001": "cd6a1a35583989169c921293b87be123e2948d0d65d22507dd5c96c5704d58c7",
+      "handoff_log_cabinet_door_inset.002": "64a2fa52b89e6d6a325ae31c446f537d05453753fcabc7f8a18f0a5e096acb65",
+      "handoff_log_cabinet_pull": "fd80de761f22de260a8f5339183d2fcc994713cae4b77e71e3195bf5ec00ecff",
+      "handoff_log_cabinet_pull.001": "da945d12d9ee30b949c20f8381a7677f08e7309bb941e4215a62450336277b9a",
+      "handoff_log_cabinet_pull.002": "143e6b9d3348b3c6aeec2362da5948edbd159fe36dfa8d7b0931298c0131b22e",
+      "handoff_log_cabinet_wood_top": "017e632d26057fb7a8d7fe205b43f0890510bc2269a38ab741dc9b7061c1a89a",
+      "handoff_open_paper_stack": "7b4fbd41cc47378840d5518cab3f758d0d5e7b0d7e46f3dd2c70482259bd7cff",
+      "handoff_open_paper_stack.001": "8dc6f72df0c3c7ef5ecfef7b7d05d3824aefe6c59e89a7c6a3f85bfcbabe984b",
+      "handoff_open_paper_stack.002": "eb5f723388b528d21a3c096dcfa0ac5c9aa6b173703416a23c5307130f62484b",
+      "handoff_open_paper_stack.003": "892103b9335774043bb4c697b22a21217eb10a068b931e7712a4ba6c866b8d5a",
+      "handoff_open_paper_stack.004": "2749cf7fe722b0ad57c3cde54bf2ed2032f7542b01d8001714df92eecac1521e",
+      "lintel_above_door": "33912fc5353c51260f932d8a4717fa8077ec5b8f3dee755266e7d1cb4678acea",
+      "log_divider": "ae0dfc76e2998a12638100ab99fcb5fffd147600c2e65706f417da9355ce6e7a",
+      "log_divider.001": "01a9c42c0e4eef46c17b5acfb1f9cd52b647b7c4b90df7bd1ad6b9caccc05dd2",
+      "log_divider.002": "f4bc856957597358e3cdb3342e8f52c2b5c87415148f50808bbcebd7b2024e19",
+      "log_divider.003": "640ce2360dc6c114299bc4aab81e6df347b50df3bdc49fb1e27026bed34c99ac",
+      "log_pigeonhole_back": "23c3e420cf9f0b1f779806c504cacac24371c63720859fe231436c69f92eb40c",
+      "log_shelf": "693c749de7d3722632bf7b6b5284f72314afd457d3ae676616e4fc528d066dd7",
+      "log_shelf.001": "746ef614b431af5abf23880d6d4df93193756b493569ce8d77c5c7e6f911998c",
+      "log_shelf.002": "1e0a3c2b72577a4211bed1fbc544c4c902905f7797e93298db20e193f1ef77d2",
+      "log_shelf.003": "24ffacd23167c2d836ae72d89f2f25a82dcf3f8911dbdd1281ea9b7c63e2bb59",
+      "log_shelf.004": "321f977bd7c566e5037fd9bc1338a73edd3236a674c8529104973d50caf05f01",
+      "log_shelf.005": "b5269cdb9d6f971c2981c6af6f9520df337d094e02532ea008cc146e1942a0c1",
+      "log_shelf.006": "d507b61d94727766ecf08f44ba0f58ccda86a94045794b7edaea3d8f5465c4c0",
+      "log_shelf.007": "81ce33ad5f7951972f852aff736e61d604a4ba5658e5ba38ae04b1bd7cdc3221",
+      "motor_service_box": "3e1608826f2e88c13b1653de3c0c7ce4c449b6103513c3a95ce80d2a7b86c74c",
+      "motor_vent": "5c8f9fc162688c67a3273b2c3ea78476dd83848ef4294865a7a93680042b78d7",
+      "motor_vent.001": "5c959b1fdd973b183eabc7b39bacf9bf029884720952c1ca9eda203046e7a5b5",
+      "motor_vent.002": "0792ac42db1557f0a4b5342998c2af91da24ded9c0c02368912ee3e9c1ca933d",
+      "side_return_wall": "d42df191145f9247105a1e9a625593420b1bd4c9402cd00bfe57945eccd44a1f",
+      "side_return_wall.001": "40ce480079e685d48c35aee74e1ee04d8454b461101fa0f756722ff9577f90e7",
+      "sliding_door_floor_rail": "e6556fcbaafdc96e26050408bdb182c17daa8994e5cb539711b75ed42abdabfd",
+      "sliding_door_jamb": "3ebb3666f659e682656ac9f154887a245786ae322ab94df172d3c48bacc2329a",
+      "sliding_door_jamb.001": "e746cea639aadfa062ad49f2eb056b6dcee5784f438d989cd8e96da20af1b576",
+      "sliding_door_top_rail": "da8b284229c2485bd3a00febb95c73c237e4b6bd49acd1347769d8c41043e1f3",
+      "sorted_unlettered_documents": "19194e6912cdc4351fe59abdf04edec7e17ba060ff5fa69fa8ec74f5e159ab51",
+      "sorted_unlettered_documents.001": "caa0dbce0e3dc7b2aea2ff36a98bf70e4dcdc31b285e07d8d32e62f28704f349",
+      "sorted_unlettered_documents.002": "1952cbcf57817cf24cbe62e60397b28c0b1f2c0d5f7fbb4ec12519df86be7ff3",
+      "sorted_unlettered_documents.003": "e7037ba4ec4bff7be71b0d3b524fed898f31d5b9e826ac0826929b400bb7a3fc",
+      "sorted_unlettered_documents.004": "8d1442c3a99c123ee612e6aa8813b7aa10f760f429cbf555de60f2542b8b7632",
+      "sorted_unlettered_documents.005": "a0f547d416f45d02908d842e9453d7e94a402529984f0814e6c4115a7f0d720f",
+      "sorted_unlettered_documents.006": "d79d995a7f02269020dd851511451f6156ddf8fa45b923c2648f8969bb973a13",
+      "sorted_unlettered_documents.007": "43383e013cc531f52f9204cc1437039a8b34e542685efb5f3ef11e18aef87ddb",
+      "sorted_unlettered_documents.008": "55241bf3dfcd7f07acb9a73eaef6f7e291b2252a95bf9ab0d842e674b034865f",
+      "sorted_unlettered_documents.009": "ed8d8777367b08156d365d65ca2c9c1700e3432895c403d44c7b4b15f9de53c9",
+      "sorted_unlettered_documents.010": "8f299785c6d0c62862e0504a52c7d775407439a69090417b0c46d8139ecf9eda",
+      "sorted_unlettered_documents.011": "89bb35d76df24b40ca6b0eed44c9cc38cbe11a8ddb4aaa6d06b46e5b8bdac7f2",
+      "tool_board": "8e741f0989c71b876ccdc241876cc9800a0900dcce4295e6a9c38e2975ab1f62",
+      "unlettered_hanging_tool": "54b4458f909e04ede2e33a1a082f7e3b8a622fc3f41055490abc53a8d4f01606",
+      "unlettered_hanging_tool.001": "d593695910e7af1cab61f6c91e4cabb04df7889e2b3202aad2c4bad13a362fe1",
+      "unlettered_hanging_tool.002": "f831072c0dff5cff6d913ff73d4f3876b81cc988efc81d75f3a3a32b294bfdea",
+      "unlettered_hanging_tool.003": "7cb7c1c079abe7c45ba8f32f68e7dccc492cda087c0173151714a6185cb06f30",
+      "unlettered_logbooks": "3003175b41e49ac86663b1a422252aafb275e7d3316973c0d9d59ba09e35a5ac",
+      "unlettered_logbooks.001": "9023d2fd0dc3fd4de513a6da3c7c2a25dca7097b14203e631a3628619492c56c",
+      "unlettered_logbooks.002": "abc9bf3314ca3d1be7bc2fb80fd96b5f0eb1a63c6ed42dd6b7320e2e673bfaa7",
+      "unlettered_logbooks.003": "d81d4743729b316898da3e49eddb29eeeb0330ac5d356ee464bb62245a27c90c",
+      "unlettered_logbooks.004": "e0bd8469961306ff050956dbae7f7b0be2f759fc9bcf06e08c206019763e7172",
+      "unlettered_logbooks.005": "a1300a3cf39cea63ea5755b13c822d3e8cd8cc17caf4e923ab5401efb5c1d6b9",
+      "unlettered_logbooks.006": "91834491a6d2e436d6c223ad7f4d83da6e2f07fe593f120abcb65879bd2bddcd",
+      "unlettered_logbooks.007": "d0f95181e93dd79218efe99a746a925af92d6e702acb4c95d7f8a7ee887663b9",
+      "unlettered_logbooks.008": "89369e031d98bc7064bc1c3076e5447f5bb55bd1035f7a9b15a46be072ab1382",
+      "unlettered_logbooks.009": "a3fdce5dc7b1188457d6616e08293a224c94ff68228629ae992113a7eb5e8fd6",
+      "unlettered_logbooks.010": "287bf77b9eb1e38a18c8a5b55d5575630f17fe42d443630effacb8604cc5c8ee",
+      "unlettered_logbooks.011": "81e731d43dc09717324bff23c05b18843a72092700ab2c2fd289cb4349e805c7",
+      "unlettered_logbooks.012": "8729f7dfc8a8c6d9db45fadbfa006ae5500ab45552cd0acd3278ac8976fbb192",
+      "unlettered_logbooks.013": "60f1b2e81401f2c7bec7b97e133cd847f8264cfe7fd5e9af48fd02775f60f47d",
+      "unlettered_logbooks.014": "e39627febde49b72ff1740d5f05eedd710b33edf4d48c180d9f1595a23449c06",
+      "unlettered_logbooks.015": "2546ccb9e28dc4803ac430820a0bb686f14076e937f53797a886646909dc4b8c",
+      "unlettered_logbooks.016": "5b7a99f438b6ed758471744adb0bfdfd1adb244e47c906bdd9757ee0a84a67de",
+      "unlettered_logbooks.017": "4bb8a31957bc92f0e66e20dcd9d7cd69297e0afc8acde9fe080a0318ee269e16",
+      "unlettered_logbooks.018": "3fd38d8682d2d763be4f4c4951bce233d4052726050cfd84b5d2c56c87523445",
+      "unlettered_logbooks.019": "cab707ef788faef3c0f2b089fb99f7cd5aa0cfc6357fc2b4e93110eceb92ee4f",
+      "unlettered_logbooks.020": "d706196262673b849d385aa9ff096daebac07fdd18ffb49637f69f933a2f4525",
+      "unlettered_logbooks.021": "ff9cd0daa547aa59cb98ccc6b8525cb300e4e8bc95f8231dfca889ef706f0577",
+      "unlettered_logbooks.022": "d9ab3deb5a87d7ac37fbccdbb9159d59d176c04b875015b1fc24639a13086ffb",
+      "unlettered_logbooks.023": "844c6ef2eef4f691971c11033e7f0254769f918ff19e2635bad278cc455c7d71",
+      "upper_amber_strip": "439993b6a4d28bb1421bff0d52c7fb757b4e2d8c342fc4c3c976bce2bbeda95f",
+      "upper_header_beam": "7beac801d84dab3021cc48c079ddb7734b08fed4f9d564375caf884d5b1aed61",
+      "wall_vertical_joint": "90d4e8859f326b328ef596530e74b47955ff51ca71ac2819c04620ce7bcc56dd",
+      "wall_vertical_joint.001": "140a029b11f2f26382906a4c4341b7557eb6a4d375462d18aee780082455aa95",
+      "wall_vertical_joint.002": "d6503ad413f8b2a15b6a1275b8f326f7a4aeef03e20fab346bd3a9835c8f6747",
+      "wall_vertical_joint.003": "30a79aa79bfd3f19921f5e7268c504a552c741113f494d786eaacd4865314c11",
+      "wall_vertical_joint.004": "53f7754801503779278fc732614915d194084d70ac5ecfba88ef845d55802b09",
+      "warm_wall_dado": "aee26651337068fe56c6eb7ee70d4775bd8220b14beba95887457dbf3aa98f1a",
+      "warm_wall_dado.001": "3a4e01b23dd7cda6c22e099e23427923ac7e024bb67311a60a6e8be7699624db"
+    },
+    "hallway_open": {
+      "STATE_door_handle": "913bf3dba3a89a326a63a601f2d74efda22636acc6a4ff314f2b35eb44efdb4c",
+      "STATE_door_motor_status_lamp": "51a467c47368bc1cb1615afc8da5d5a6f952d37dc9c4fb1d300c7707c12fca2f",
+      "STATE_sliding_door_leaf": "3e0d616af0441d28e2bbb975364241768867ac72d680936b146f4a69a39aaf1d",
+      "STATE_toolbox": "e97e23a26053009964880aec69a2b1747cabbea08c85c44f883358463a60cfda",
+      "STATE_toolbox_grip": "7bb8f2a831f00f86e998123ac481fb54625b3312e2fea26de24e4642a2106557",
+      "back_wall_lower_wainscot": "9c17425b727c857ec5f378405beb1e3aa6e0aa4914b80f8e53e2f744a5d71548",
+      "back_wall_lower_wainscot.001": "ed3a56b9d579269e58115ef59dbb8fbdab0668cf5b8d979aafe6574f5c56642e",
+      "back_wall_slab": "784783ec83a992792ab6e7943ff8deecfbcc5e4b4abcfd353a63781c975590b8",
+      "back_wall_slab.001": "272b34369eb6ecb5804a5e8488d92f674f3e9e97cc1e4700fc66cf8c60b46f3d",
+      "blank_closed_log_binder": "b912c45c0424297829a9c1e95ab08b836403becca58b2314d6caa76677542472",
+      "central_sorting_and_workbench_body": "634cd6c030b830e6066b7af558479644c71508fd2a4050eddbd80d4847be4b31",
+      "central_sorting_and_workbench_door_inset": "b73449016e2d68d5933cc83127332c76488d6d44e616e755776eebacfd3a7159",
+      "central_sorting_and_workbench_door_inset.001": "562dc961bd2cbe0216143cb812133bf5f0a0fcd48a417c36f97fb277ad62a0a8",
+      "central_sorting_and_workbench_door_inset.002": "756443e26bd43eaee05725858b653f3ecc60075d0494b261d696d8408146e8dc",
+      "central_sorting_and_workbench_door_inset.003": "6890cf823bbfbbcab556468469aaada1b15ca5d64d76326397ad064db7179dcd",
+      "central_sorting_and_workbench_door_inset.004": "b46e21598e94da851e72650217ecc86d5a2bd67d7157313e4c478c9d0f20d37d",
+      "central_sorting_and_workbench_pull": "998de62a2c5baed338ecf2daf9d3dc0fe4a7a309b2b8322f27b0e9be33c7900f",
+      "central_sorting_and_workbench_pull.001": "b16968093b1f684c865267f8b0183723bdb0def07a36c88dcc9d35b7b4f8fcfc",
+      "central_sorting_and_workbench_pull.002": "e2dc2fcecbe79f346f0fc67caad00b95c659a3e64bb6b49986a73b609dbfff50",
+      "central_sorting_and_workbench_pull.003": "13044d404c3a9fd5947b7bcad680d912514a2a61fc16656e8c9e2bbca503efad",
+      "central_sorting_and_workbench_pull.004": "3540563311e5a0a458362ad1e789b8bfd2939a205a4b0f464ad565a40c5c4fac",
+      "central_sorting_and_workbench_wood_top": "e4a4816bfb27b00fde0caaca78987f9bae6efaf59674bd88bc71a6d53330ed6e",
+      "clerestory_blue_glass": "c9ed9e5f9f113549c0834868b73ebbdac872cf8dbc7f45be0aeb66ccc69c0cc6",
+      "clerestory_blue_glass.001": "b67162e0a56bed785d293b1ca7a41f6b67edddcb9254e5143db3cc78791b3c60",
+      "clerestory_blue_glass.002": "7ffe335a196689cf7d11ea9551579ed0e3aa45580ba6d0bde344c7ee129b36d3",
+      "clerestory_blue_glass.003": "566e47beba264f5163015d95268807d89ca0c700d278978bd4e985c34e3f47d7",
+      "clerestory_blue_glass.004": "0867d28b6d769ccf12137d7bba6e914e58aad584f89221694a3569d86305e121",
+      "clerestory_divider": "3676bba9ede7fd151b8157d926c32fdeeb0089d9634a3cf3a64630ca208b4bab",
+      "clerestory_divider.001": "1d7137b1c4da6d98495f3fa95a861e4c7f67a944ab1fd6e0b90066f113ccf85f",
+      "clerestory_divider.002": "c72a0f984e134ee74d5bbb5d8f4ba9c0d732863c483ebecab69302581625f550",
+      "clerestory_divider.003": "7065c4fcef929800e37e1abfeae838116abbd4d974d09a93526ca68eabc107ca",
+      "clerestory_divider.004": "b10e29e239c708400d896fa0899926f05900c9bbf0e48fcdfc2c4aa57dea17d9",
+      "clerestory_recess": "1976f8d5d5d36f7f2e8fa360e02ec6bf5f38fad4b988c73f9aed8ea790188c46",
+      "clerestory_recess.001": "ff04812065edaeca78f6a28a05e3c8bf693a49bfc88539d306bedf8ccc90f026",
+      "clerestory_recess.002": "c0849130f8f7ea27cc4394a263b42828ee9e66537fbc6d2cc59c31127309891d",
+      "clerestory_recess.003": "c264673edc2413b95b383db7dfcf497f2487286ce3233c89d683fbb353edd16f",
+      "clerestory_recess.004": "81dd0e3f55df6a0dfdbc95422dd5456875059b863c76dae09736d87570bbdc70",
+      "continuous_walkable_floor": "faf983a12a986f1dca563523cf81d99f151c8f72a25b897c44033d66bdf3f18f",
+      "desk_lamp_base": "5dadc8ff3d407a1da5697cfd08d3f79343efbfda70f46022b69c8396cb872ff9",
+      "desk_lamp_fixed_glow": "92fdfee7760935d463571b13de7e33317ac1dd34dabf06ca461ad11d00698b1b",
+      "desk_lamp_shade": "3af158c4b2c7f5516de096be8b227f95a17be251eace6294e3b86d6a13ce6bcc",
+      "desk_lamp_stem": "ab926e653a679e6523b368797ac690d765fd15c212b88a40410f161fd55eb91d",
+      "doorway_dark_interior": "4c7980b5cdfa2f566655f845b83cb13f69e41ec70e95c72799bd8a88f049a6c3",
+      "doorway_interior_amber_edge": "9f69698f7ec7a0573ebbc09bf9f61899ccc691749c4747499df3436acd6b344b",
+      "duty_record_stack": "e80ebea0b297d9ef571737139a5c8e62e405e67ffcfe39b33168e34e37d3ab22",
+      "duty_record_stack.001": "fc918d8d0c9fa61da02b2bea983f3e072966bd9eb09ee3e61cacdfc02d7392a9",
+      "duty_record_stack.002": "a771bf8bd71010fa2f7c51147e8435bac0fd1c4ef25d3124e9455cc7047b88a9",
+      "duty_station_body": "59bc6973ec2839233b8120266eefdb4d74a43761ef47c4e23556cab4c38be358",
+      "duty_station_door_inset": "b2e06cfa7ec2d26f6af5fe7dc6ba60435bd707b5639411cbd133db4b3621bd8b",
+      "duty_station_door_inset.001": "2a34b67cfab5f00e61225be19326345d82c3485c8cc9e1d5f25c9ebd7485e51a",
+      "duty_station_pull": "ada9904571049291144e378b1977ce279930b31dc8235da92b96a06ff6f58a2c",
+      "duty_station_pull.001": "dcabc32ed82348f302ed1d6c4fdaba6ca858f3122482d6a176919932ca3fab21",
+      "duty_station_tray": "ee36e700ed7aa252c6b0e200ec2097675c9d0d396413ea8d800789b952a5b9e9",
+      "duty_station_wood_top": "51aca0b9254c12793549b79068a556f3f098bd78cec936ea037d2ffaa1bebab3",
+      "floor_expansion_seam_x": "f589a0a4244431b89f6431db4c173d7586f470256365a38954d778da7a1b15ee",
+      "floor_expansion_seam_x.001": "96d1aeffedc3d2949fdd2988c61fad1a20106e9747dc95b3c6352645b60d65c1",
+      "floor_expansion_seam_x.002": "b45aeaa4c7259713d8e5f1fed1bcc90f835db5f7ef44fb5b57f8950ae14e81e2",
+      "floor_expansion_seam_x.003": "31a05aaf8d93d43fbaeb561580339f9e058048940e6f106ed426d2fb5024fd51",
+      "floor_expansion_seam_x.004": "ea60b6dd91522c0130a29456564c5136eb96ebc981818cb265ca2f651125d8c8",
+      "floor_expansion_seam_x.005": "e9fbc068fb947217b6bd0ad1c5e9e82e4ce66d368650b026489e71ef13961de9",
+      "floor_expansion_seam_x.006": "5de8e241a85b0fae4ff6069e147e7523c37e93a50ff479ba2dc75fec64fe2a86",
+      "floor_expansion_seam_y": "fa982a4f996e92273cd440df368bdcf285a3fde3683fcaad26a3640a8513a92f",
+      "floor_expansion_seam_y.001": "cf8617268e860a2f10a42c189acad118e2a9a6e8ae1ee4fb5eaa3fccfd8abc2a",
+      "floor_expansion_seam_y.002": "bb970f1c3d9278d611c347f8a90f6d5f663584b78a3d08f1cb6a4851de9c4506",
+      "floor_expansion_seam_y.003": "058efadb8c014bfce06e9e82dd19522f5b06a6504162f943b9a0f703a8dc342b",
+      "floor_expansion_seam_y.004": "6da930e75b9053ba37b9f133c3e3bfcaf40633f2a281ca4bb8340d45c370d6ad",
+      "handoff_log_cabinet_body": "385eb51df38ab31ebd640ba293ef3d624d5a7ad218ae0e1699513f9c968c8e94",
+      "handoff_log_cabinet_door_inset": "e689c76a15ebefc81e394b1d8fce1d89c49c9a55f47f869f8de945e116726e6a",
+      "handoff_log_cabinet_door_inset.001": "cd6a1a35583989169c921293b87be123e2948d0d65d22507dd5c96c5704d58c7",
+      "handoff_log_cabinet_door_inset.002": "64a2fa52b89e6d6a325ae31c446f537d05453753fcabc7f8a18f0a5e096acb65",
+      "handoff_log_cabinet_pull": "fd80de761f22de260a8f5339183d2fcc994713cae4b77e71e3195bf5ec00ecff",
+      "handoff_log_cabinet_pull.001": "da945d12d9ee30b949c20f8381a7677f08e7309bb941e4215a62450336277b9a",
+      "handoff_log_cabinet_pull.002": "143e6b9d3348b3c6aeec2362da5948edbd159fe36dfa8d7b0931298c0131b22e",
+      "handoff_log_cabinet_wood_top": "017e632d26057fb7a8d7fe205b43f0890510bc2269a38ab741dc9b7061c1a89a",
+      "handoff_open_paper_stack": "7b4fbd41cc47378840d5518cab3f758d0d5e7b0d7e46f3dd2c70482259bd7cff",
+      "handoff_open_paper_stack.001": "8dc6f72df0c3c7ef5ecfef7b7d05d3824aefe6c59e89a7c6a3f85bfcbabe984b",
+      "handoff_open_paper_stack.002": "eb5f723388b528d21a3c096dcfa0ac5c9aa6b173703416a23c5307130f62484b",
+      "handoff_open_paper_stack.003": "892103b9335774043bb4c697b22a21217eb10a068b931e7712a4ba6c866b8d5a",
+      "handoff_open_paper_stack.004": "2749cf7fe722b0ad57c3cde54bf2ed2032f7542b01d8001714df92eecac1521e",
+      "lintel_above_door": "33912fc5353c51260f932d8a4717fa8077ec5b8f3dee755266e7d1cb4678acea",
+      "log_divider": "ae0dfc76e2998a12638100ab99fcb5fffd147600c2e65706f417da9355ce6e7a",
+      "log_divider.001": "01a9c42c0e4eef46c17b5acfb1f9cd52b647b7c4b90df7bd1ad6b9caccc05dd2",
+      "log_divider.002": "f4bc856957597358e3cdb3342e8f52c2b5c87415148f50808bbcebd7b2024e19",
+      "log_divider.003": "640ce2360dc6c114299bc4aab81e6df347b50df3bdc49fb1e27026bed34c99ac",
+      "log_pigeonhole_back": "23c3e420cf9f0b1f779806c504cacac24371c63720859fe231436c69f92eb40c",
+      "log_shelf": "693c749de7d3722632bf7b6b5284f72314afd457d3ae676616e4fc528d066dd7",
+      "log_shelf.001": "746ef614b431af5abf23880d6d4df93193756b493569ce8d77c5c7e6f911998c",
+      "log_shelf.002": "1e0a3c2b72577a4211bed1fbc544c4c902905f7797e93298db20e193f1ef77d2",
+      "log_shelf.003": "24ffacd23167c2d836ae72d89f2f25a82dcf3f8911dbdd1281ea9b7c63e2bb59",
+      "log_shelf.004": "321f977bd7c566e5037fd9bc1338a73edd3236a674c8529104973d50caf05f01",
+      "log_shelf.005": "b5269cdb9d6f971c2981c6af6f9520df337d094e02532ea008cc146e1942a0c1",
+      "log_shelf.006": "d507b61d94727766ecf08f44ba0f58ccda86a94045794b7edaea3d8f5465c4c0",
+      "log_shelf.007": "81ce33ad5f7951972f852aff736e61d604a4ba5658e5ba38ae04b1bd7cdc3221",
+      "motor_service_box": "3e1608826f2e88c13b1653de3c0c7ce4c449b6103513c3a95ce80d2a7b86c74c",
+      "motor_vent": "5c8f9fc162688c67a3273b2c3ea78476dd83848ef4294865a7a93680042b78d7",
+      "motor_vent.001": "5c959b1fdd973b183eabc7b39bacf9bf029884720952c1ca9eda203046e7a5b5",
+      "motor_vent.002": "0792ac42db1557f0a4b5342998c2af91da24ded9c0c02368912ee3e9c1ca933d",
+      "side_return_wall": "d42df191145f9247105a1e9a625593420b1bd4c9402cd00bfe57945eccd44a1f",
+      "side_return_wall.001": "40ce480079e685d48c35aee74e1ee04d8454b461101fa0f756722ff9577f90e7",
+      "sliding_door_floor_rail": "e6556fcbaafdc96e26050408bdb182c17daa8994e5cb539711b75ed42abdabfd",
+      "sliding_door_jamb": "3ebb3666f659e682656ac9f154887a245786ae322ab94df172d3c48bacc2329a",
+      "sliding_door_jamb.001": "e746cea639aadfa062ad49f2eb056b6dcee5784f438d989cd8e96da20af1b576",
+      "sliding_door_top_rail": "da8b284229c2485bd3a00febb95c73c237e4b6bd49acd1347769d8c41043e1f3",
+      "sorted_unlettered_documents": "19194e6912cdc4351fe59abdf04edec7e17ba060ff5fa69fa8ec74f5e159ab51",
+      "sorted_unlettered_documents.001": "caa0dbce0e3dc7b2aea2ff36a98bf70e4dcdc31b285e07d8d32e62f28704f349",
+      "sorted_unlettered_documents.002": "1952cbcf57817cf24cbe62e60397b28c0b1f2c0d5f7fbb4ec12519df86be7ff3",
+      "sorted_unlettered_documents.003": "e7037ba4ec4bff7be71b0d3b524fed898f31d5b9e826ac0826929b400bb7a3fc",
+      "sorted_unlettered_documents.004": "8d1442c3a99c123ee612e6aa8813b7aa10f760f429cbf555de60f2542b8b7632",
+      "sorted_unlettered_documents.005": "a0f547d416f45d02908d842e9453d7e94a402529984f0814e6c4115a7f0d720f",
+      "sorted_unlettered_documents.006": "d79d995a7f02269020dd851511451f6156ddf8fa45b923c2648f8969bb973a13",
+      "sorted_unlettered_documents.007": "43383e013cc531f52f9204cc1437039a8b34e542685efb5f3ef11e18aef87ddb",
+      "sorted_unlettered_documents.008": "55241bf3dfcd7f07acb9a73eaef6f7e291b2252a95bf9ab0d842e674b034865f",
+      "sorted_unlettered_documents.009": "ed8d8777367b08156d365d65ca2c9c1700e3432895c403d44c7b4b15f9de53c9",
+      "sorted_unlettered_documents.010": "8f299785c6d0c62862e0504a52c7d775407439a69090417b0c46d8139ecf9eda",
+      "sorted_unlettered_documents.011": "89bb35d76df24b40ca6b0eed44c9cc38cbe11a8ddb4aaa6d06b46e5b8bdac7f2",
+      "tool_board": "8e741f0989c71b876ccdc241876cc9800a0900dcce4295e6a9c38e2975ab1f62",
+      "unlettered_hanging_tool": "54b4458f909e04ede2e33a1a082f7e3b8a622fc3f41055490abc53a8d4f01606",
+      "unlettered_hanging_tool.001": "d593695910e7af1cab61f6c91e4cabb04df7889e2b3202aad2c4bad13a362fe1",
+      "unlettered_hanging_tool.002": "f831072c0dff5cff6d913ff73d4f3876b81cc988efc81d75f3a3a32b294bfdea",
+      "unlettered_hanging_tool.003": "7cb7c1c079abe7c45ba8f32f68e7dccc492cda087c0173151714a6185cb06f30",
+      "unlettered_logbooks": "3003175b41e49ac86663b1a422252aafb275e7d3316973c0d9d59ba09e35a5ac",
+      "unlettered_logbooks.001": "9023d2fd0dc3fd4de513a6da3c7c2a25dca7097b14203e631a3628619492c56c",
+      "unlettered_logbooks.002": "abc9bf3314ca3d1be7bc2fb80fd96b5f0eb1a63c6ed42dd6b7320e2e673bfaa7",
+      "unlettered_logbooks.003": "d81d4743729b316898da3e49eddb29eeeb0330ac5d356ee464bb62245a27c90c",
+      "unlettered_logbooks.004": "e0bd8469961306ff050956dbae7f7b0be2f759fc9bcf06e08c206019763e7172",
+      "unlettered_logbooks.005": "a1300a3cf39cea63ea5755b13c822d3e8cd8cc17caf4e923ab5401efb5c1d6b9",
+      "unlettered_logbooks.006": "91834491a6d2e436d6c223ad7f4d83da6e2f07fe593f120abcb65879bd2bddcd",
+      "unlettered_logbooks.007": "d0f95181e93dd79218efe99a746a925af92d6e702acb4c95d7f8a7ee887663b9",
+      "unlettered_logbooks.008": "89369e031d98bc7064bc1c3076e5447f5bb55bd1035f7a9b15a46be072ab1382",
+      "unlettered_logbooks.009": "a3fdce5dc7b1188457d6616e08293a224c94ff68228629ae992113a7eb5e8fd6",
+      "unlettered_logbooks.010": "287bf77b9eb1e38a18c8a5b55d5575630f17fe42d443630effacb8604cc5c8ee",
+      "unlettered_logbooks.011": "81e731d43dc09717324bff23c05b18843a72092700ab2c2fd289cb4349e805c7",
+      "unlettered_logbooks.012": "8729f7dfc8a8c6d9db45fadbfa006ae5500ab45552cd0acd3278ac8976fbb192",
+      "unlettered_logbooks.013": "60f1b2e81401f2c7bec7b97e133cd847f8264cfe7fd5e9af48fd02775f60f47d",
+      "unlettered_logbooks.014": "e39627febde49b72ff1740d5f05eedd710b33edf4d48c180d9f1595a23449c06",
+      "unlettered_logbooks.015": "2546ccb9e28dc4803ac430820a0bb686f14076e937f53797a886646909dc4b8c",
+      "unlettered_logbooks.016": "5b7a99f438b6ed758471744adb0bfdfd1adb244e47c906bdd9757ee0a84a67de",
+      "unlettered_logbooks.017": "4bb8a31957bc92f0e66e20dcd9d7cd69297e0afc8acde9fe080a0318ee269e16",
+      "unlettered_logbooks.018": "3fd38d8682d2d763be4f4c4951bce233d4052726050cfd84b5d2c56c87523445",
+      "unlettered_logbooks.019": "cab707ef788faef3c0f2b089fb99f7cd5aa0cfc6357fc2b4e93110eceb92ee4f",
+      "unlettered_logbooks.020": "d706196262673b849d385aa9ff096daebac07fdd18ffb49637f69f933a2f4525",
+      "unlettered_logbooks.021": "ff9cd0daa547aa59cb98ccc6b8525cb300e4e8bc95f8231dfca889ef706f0577",
+      "unlettered_logbooks.022": "d9ab3deb5a87d7ac37fbccdbb9159d59d176c04b875015b1fc24639a13086ffb",
+      "unlettered_logbooks.023": "844c6ef2eef4f691971c11033e7f0254769f918ff19e2635bad278cc455c7d71",
+      "upper_amber_strip": "439993b6a4d28bb1421bff0d52c7fb757b4e2d8c342fc4c3c976bce2bbeda95f",
+      "upper_header_beam": "7beac801d84dab3021cc48c079ddb7734b08fed4f9d564375caf884d5b1aed61",
+      "wall_vertical_joint": "90d4e8859f326b328ef596530e74b47955ff51ca71ac2819c04620ce7bcc56dd",
+      "wall_vertical_joint.001": "140a029b11f2f26382906a4c4341b7557eb6a4d375462d18aee780082455aa95",
+      "wall_vertical_joint.002": "d6503ad413f8b2a15b6a1275b8f326f7a4aeef03e20fab346bd3a9835c8f6747",
+      "wall_vertical_joint.003": "30a79aa79bfd3f19921f5e7268c504a552c741113f494d786eaacd4865314c11",
+      "wall_vertical_joint.004": "53f7754801503779278fc732614915d194084d70ac5ecfba88ef845d55802b09",
+      "warm_wall_dado": "aee26651337068fe56c6eb7ee70d4775bd8220b14beba95887457dbf3aa98f1a",
+      "warm_wall_dado.001": "3a4e01b23dd7cda6c22e099e23427923ac7e024bb67311a60a6e8be7699624db"
+    },
+    "hallway_repaired": {
+      "STATE_door_handle": "913bf3dba3a89a326a63a601f2d74efda22636acc6a4ff314f2b35eb44efdb4c",
+      "STATE_door_motor_status_lamp": "51a467c47368bc1cb1615afc8da5d5a6f952d37dc9c4fb1d300c7707c12fca2f",
+      "STATE_sliding_door_leaf": "3e0d616af0441d28e2bbb975364241768867ac72d680936b146f4a69a39aaf1d",
+      "STATE_toolbox": "126bd05313e897223c4f6d9392e01092fe57cac27c002c6c840dae724560ea3e",
+      "STATE_toolbox_grip": "56fbc232dccbeed328a6ff42d73dfdf6b125be875df6a43d201955b19d1412fc",
+      "back_wall_lower_wainscot": "9c17425b727c857ec5f378405beb1e3aa6e0aa4914b80f8e53e2f744a5d71548",
+      "back_wall_lower_wainscot.001": "ed3a56b9d579269e58115ef59dbb8fbdab0668cf5b8d979aafe6574f5c56642e",
+      "back_wall_slab": "784783ec83a992792ab6e7943ff8deecfbcc5e4b4abcfd353a63781c975590b8",
+      "back_wall_slab.001": "272b34369eb6ecb5804a5e8488d92f674f3e9e97cc1e4700fc66cf8c60b46f3d",
+      "blank_closed_log_binder": "b912c45c0424297829a9c1e95ab08b836403becca58b2314d6caa76677542472",
+      "central_sorting_and_workbench_body": "634cd6c030b830e6066b7af558479644c71508fd2a4050eddbd80d4847be4b31",
+      "central_sorting_and_workbench_door_inset": "b73449016e2d68d5933cc83127332c76488d6d44e616e755776eebacfd3a7159",
+      "central_sorting_and_workbench_door_inset.001": "562dc961bd2cbe0216143cb812133bf5f0a0fcd48a417c36f97fb277ad62a0a8",
+      "central_sorting_and_workbench_door_inset.002": "756443e26bd43eaee05725858b653f3ecc60075d0494b261d696d8408146e8dc",
+      "central_sorting_and_workbench_door_inset.003": "6890cf823bbfbbcab556468469aaada1b15ca5d64d76326397ad064db7179dcd",
+      "central_sorting_and_workbench_door_inset.004": "b46e21598e94da851e72650217ecc86d5a2bd67d7157313e4c478c9d0f20d37d",
+      "central_sorting_and_workbench_pull": "998de62a2c5baed338ecf2daf9d3dc0fe4a7a309b2b8322f27b0e9be33c7900f",
+      "central_sorting_and_workbench_pull.001": "b16968093b1f684c865267f8b0183723bdb0def07a36c88dcc9d35b7b4f8fcfc",
+      "central_sorting_and_workbench_pull.002": "e2dc2fcecbe79f346f0fc67caad00b95c659a3e64bb6b49986a73b609dbfff50",
+      "central_sorting_and_workbench_pull.003": "13044d404c3a9fd5947b7bcad680d912514a2a61fc16656e8c9e2bbca503efad",
+      "central_sorting_and_workbench_pull.004": "3540563311e5a0a458362ad1e789b8bfd2939a205a4b0f464ad565a40c5c4fac",
+      "central_sorting_and_workbench_wood_top": "e4a4816bfb27b00fde0caaca78987f9bae6efaf59674bd88bc71a6d53330ed6e",
+      "clerestory_blue_glass": "c9ed9e5f9f113549c0834868b73ebbdac872cf8dbc7f45be0aeb66ccc69c0cc6",
+      "clerestory_blue_glass.001": "b67162e0a56bed785d293b1ca7a41f6b67edddcb9254e5143db3cc78791b3c60",
+      "clerestory_blue_glass.002": "7ffe335a196689cf7d11ea9551579ed0e3aa45580ba6d0bde344c7ee129b36d3",
+      "clerestory_blue_glass.003": "566e47beba264f5163015d95268807d89ca0c700d278978bd4e985c34e3f47d7",
+      "clerestory_blue_glass.004": "0867d28b6d769ccf12137d7bba6e914e58aad584f89221694a3569d86305e121",
+      "clerestory_divider": "3676bba9ede7fd151b8157d926c32fdeeb0089d9634a3cf3a64630ca208b4bab",
+      "clerestory_divider.001": "1d7137b1c4da6d98495f3fa95a861e4c7f67a944ab1fd6e0b90066f113ccf85f",
+      "clerestory_divider.002": "c72a0f984e134ee74d5bbb5d8f4ba9c0d732863c483ebecab69302581625f550",
+      "clerestory_divider.003": "7065c4fcef929800e37e1abfeae838116abbd4d974d09a93526ca68eabc107ca",
+      "clerestory_divider.004": "b10e29e239c708400d896fa0899926f05900c9bbf0e48fcdfc2c4aa57dea17d9",
+      "clerestory_recess": "1976f8d5d5d36f7f2e8fa360e02ec6bf5f38fad4b988c73f9aed8ea790188c46",
+      "clerestory_recess.001": "ff04812065edaeca78f6a28a05e3c8bf693a49bfc88539d306bedf8ccc90f026",
+      "clerestory_recess.002": "c0849130f8f7ea27cc4394a263b42828ee9e66537fbc6d2cc59c31127309891d",
+      "clerestory_recess.003": "c264673edc2413b95b383db7dfcf497f2487286ce3233c89d683fbb353edd16f",
+      "clerestory_recess.004": "81dd0e3f55df6a0dfdbc95422dd5456875059b863c76dae09736d87570bbdc70",
+      "continuous_walkable_floor": "faf983a12a986f1dca563523cf81d99f151c8f72a25b897c44033d66bdf3f18f",
+      "desk_lamp_base": "5dadc8ff3d407a1da5697cfd08d3f79343efbfda70f46022b69c8396cb872ff9",
+      "desk_lamp_fixed_glow": "92fdfee7760935d463571b13de7e33317ac1dd34dabf06ca461ad11d00698b1b",
+      "desk_lamp_shade": "3af158c4b2c7f5516de096be8b227f95a17be251eace6294e3b86d6a13ce6bcc",
+      "desk_lamp_stem": "ab926e653a679e6523b368797ac690d765fd15c212b88a40410f161fd55eb91d",
+      "doorway_dark_interior": "4c7980b5cdfa2f566655f845b83cb13f69e41ec70e95c72799bd8a88f049a6c3",
+      "doorway_interior_amber_edge": "9f69698f7ec7a0573ebbc09bf9f61899ccc691749c4747499df3436acd6b344b",
+      "duty_record_stack": "e80ebea0b297d9ef571737139a5c8e62e405e67ffcfe39b33168e34e37d3ab22",
+      "duty_record_stack.001": "fc918d8d0c9fa61da02b2bea983f3e072966bd9eb09ee3e61cacdfc02d7392a9",
+      "duty_record_stack.002": "a771bf8bd71010fa2f7c51147e8435bac0fd1c4ef25d3124e9455cc7047b88a9",
+      "duty_station_body": "59bc6973ec2839233b8120266eefdb4d74a43761ef47c4e23556cab4c38be358",
+      "duty_station_door_inset": "b2e06cfa7ec2d26f6af5fe7dc6ba60435bd707b5639411cbd133db4b3621bd8b",
+      "duty_station_door_inset.001": "2a34b67cfab5f00e61225be19326345d82c3485c8cc9e1d5f25c9ebd7485e51a",
+      "duty_station_pull": "ada9904571049291144e378b1977ce279930b31dc8235da92b96a06ff6f58a2c",
+      "duty_station_pull.001": "dcabc32ed82348f302ed1d6c4fdaba6ca858f3122482d6a176919932ca3fab21",
+      "duty_station_tray": "ee36e700ed7aa252c6b0e200ec2097675c9d0d396413ea8d800789b952a5b9e9",
+      "duty_station_wood_top": "51aca0b9254c12793549b79068a556f3f098bd78cec936ea037d2ffaa1bebab3",
+      "floor_expansion_seam_x": "f589a0a4244431b89f6431db4c173d7586f470256365a38954d778da7a1b15ee",
+      "floor_expansion_seam_x.001": "96d1aeffedc3d2949fdd2988c61fad1a20106e9747dc95b3c6352645b60d65c1",
+      "floor_expansion_seam_x.002": "b45aeaa4c7259713d8e5f1fed1bcc90f835db5f7ef44fb5b57f8950ae14e81e2",
+      "floor_expansion_seam_x.003": "31a05aaf8d93d43fbaeb561580339f9e058048940e6f106ed426d2fb5024fd51",
+      "floor_expansion_seam_x.004": "ea60b6dd91522c0130a29456564c5136eb96ebc981818cb265ca2f651125d8c8",
+      "floor_expansion_seam_x.005": "e9fbc068fb947217b6bd0ad1c5e9e82e4ce66d368650b026489e71ef13961de9",
+      "floor_expansion_seam_x.006": "5de8e241a85b0fae4ff6069e147e7523c37e93a50ff479ba2dc75fec64fe2a86",
+      "floor_expansion_seam_y": "fa982a4f996e92273cd440df368bdcf285a3fde3683fcaad26a3640a8513a92f",
+      "floor_expansion_seam_y.001": "cf8617268e860a2f10a42c189acad118e2a9a6e8ae1ee4fb5eaa3fccfd8abc2a",
+      "floor_expansion_seam_y.002": "bb970f1c3d9278d611c347f8a90f6d5f663584b78a3d08f1cb6a4851de9c4506",
+      "floor_expansion_seam_y.003": "058efadb8c014bfce06e9e82dd19522f5b06a6504162f943b9a0f703a8dc342b",
+      "floor_expansion_seam_y.004": "6da930e75b9053ba37b9f133c3e3bfcaf40633f2a281ca4bb8340d45c370d6ad",
+      "handoff_log_cabinet_body": "385eb51df38ab31ebd640ba293ef3d624d5a7ad218ae0e1699513f9c968c8e94",
+      "handoff_log_cabinet_door_inset": "e689c76a15ebefc81e394b1d8fce1d89c49c9a55f47f869f8de945e116726e6a",
+      "handoff_log_cabinet_door_inset.001": "cd6a1a35583989169c921293b87be123e2948d0d65d22507dd5c96c5704d58c7",
+      "handoff_log_cabinet_door_inset.002": "64a2fa52b89e6d6a325ae31c446f537d05453753fcabc7f8a18f0a5e096acb65",
+      "handoff_log_cabinet_pull": "fd80de761f22de260a8f5339183d2fcc994713cae4b77e71e3195bf5ec00ecff",
+      "handoff_log_cabinet_pull.001": "da945d12d9ee30b949c20f8381a7677f08e7309bb941e4215a62450336277b9a",
+      "handoff_log_cabinet_pull.002": "143e6b9d3348b3c6aeec2362da5948edbd159fe36dfa8d7b0931298c0131b22e",
+      "handoff_log_cabinet_wood_top": "017e632d26057fb7a8d7fe205b43f0890510bc2269a38ab741dc9b7061c1a89a",
+      "handoff_open_paper_stack": "7b4fbd41cc47378840d5518cab3f758d0d5e7b0d7e46f3dd2c70482259bd7cff",
+      "handoff_open_paper_stack.001": "8dc6f72df0c3c7ef5ecfef7b7d05d3824aefe6c59e89a7c6a3f85bfcbabe984b",
+      "handoff_open_paper_stack.002": "eb5f723388b528d21a3c096dcfa0ac5c9aa6b173703416a23c5307130f62484b",
+      "handoff_open_paper_stack.003": "892103b9335774043bb4c697b22a21217eb10a068b931e7712a4ba6c866b8d5a",
+      "handoff_open_paper_stack.004": "2749cf7fe722b0ad57c3cde54bf2ed2032f7542b01d8001714df92eecac1521e",
+      "lintel_above_door": "33912fc5353c51260f932d8a4717fa8077ec5b8f3dee755266e7d1cb4678acea",
+      "log_divider": "ae0dfc76e2998a12638100ab99fcb5fffd147600c2e65706f417da9355ce6e7a",
+      "log_divider.001": "01a9c42c0e4eef46c17b5acfb1f9cd52b647b7c4b90df7bd1ad6b9caccc05dd2",
+      "log_divider.002": "f4bc856957597358e3cdb3342e8f52c2b5c87415148f50808bbcebd7b2024e19",
+      "log_divider.003": "640ce2360dc6c114299bc4aab81e6df347b50df3bdc49fb1e27026bed34c99ac",
+      "log_pigeonhole_back": "23c3e420cf9f0b1f779806c504cacac24371c63720859fe231436c69f92eb40c",
+      "log_shelf": "693c749de7d3722632bf7b6b5284f72314afd457d3ae676616e4fc528d066dd7",
+      "log_shelf.001": "746ef614b431af5abf23880d6d4df93193756b493569ce8d77c5c7e6f911998c",
+      "log_shelf.002": "1e0a3c2b72577a4211bed1fbc544c4c902905f7797e93298db20e193f1ef77d2",
+      "log_shelf.003": "24ffacd23167c2d836ae72d89f2f25a82dcf3f8911dbdd1281ea9b7c63e2bb59",
+      "log_shelf.004": "321f977bd7c566e5037fd9bc1338a73edd3236a674c8529104973d50caf05f01",
+      "log_shelf.005": "b5269cdb9d6f971c2981c6af6f9520df337d094e02532ea008cc146e1942a0c1",
+      "log_shelf.006": "d507b61d94727766ecf08f44ba0f58ccda86a94045794b7edaea3d8f5465c4c0",
+      "log_shelf.007": "81ce33ad5f7951972f852aff736e61d604a4ba5658e5ba38ae04b1bd7cdc3221",
+      "motor_service_box": "3e1608826f2e88c13b1653de3c0c7ce4c449b6103513c3a95ce80d2a7b86c74c",
+      "motor_vent": "5c8f9fc162688c67a3273b2c3ea78476dd83848ef4294865a7a93680042b78d7",
+      "motor_vent.001": "5c959b1fdd973b183eabc7b39bacf9bf029884720952c1ca9eda203046e7a5b5",
+      "motor_vent.002": "0792ac42db1557f0a4b5342998c2af91da24ded9c0c02368912ee3e9c1ca933d",
+      "side_return_wall": "d42df191145f9247105a1e9a625593420b1bd4c9402cd00bfe57945eccd44a1f",
+      "side_return_wall.001": "40ce480079e685d48c35aee74e1ee04d8454b461101fa0f756722ff9577f90e7",
+      "sliding_door_floor_rail": "e6556fcbaafdc96e26050408bdb182c17daa8994e5cb539711b75ed42abdabfd",
+      "sliding_door_jamb": "3ebb3666f659e682656ac9f154887a245786ae322ab94df172d3c48bacc2329a",
+      "sliding_door_jamb.001": "e746cea639aadfa062ad49f2eb056b6dcee5784f438d989cd8e96da20af1b576",
+      "sliding_door_top_rail": "da8b284229c2485bd3a00febb95c73c237e4b6bd49acd1347769d8c41043e1f3",
+      "sorted_unlettered_documents": "19194e6912cdc4351fe59abdf04edec7e17ba060ff5fa69fa8ec74f5e159ab51",
+      "sorted_unlettered_documents.001": "caa0dbce0e3dc7b2aea2ff36a98bf70e4dcdc31b285e07d8d32e62f28704f349",
+      "sorted_unlettered_documents.002": "1952cbcf57817cf24cbe62e60397b28c0b1f2c0d5f7fbb4ec12519df86be7ff3",
+      "sorted_unlettered_documents.003": "e7037ba4ec4bff7be71b0d3b524fed898f31d5b9e826ac0826929b400bb7a3fc",
+      "sorted_unlettered_documents.004": "8d1442c3a99c123ee612e6aa8813b7aa10f760f429cbf555de60f2542b8b7632",
+      "sorted_unlettered_documents.005": "a0f547d416f45d02908d842e9453d7e94a402529984f0814e6c4115a7f0d720f",
+      "sorted_unlettered_documents.006": "d79d995a7f02269020dd851511451f6156ddf8fa45b923c2648f8969bb973a13",
+      "sorted_unlettered_documents.007": "43383e013cc531f52f9204cc1437039a8b34e542685efb5f3ef11e18aef87ddb",
+      "sorted_unlettered_documents.008": "55241bf3dfcd7f07acb9a73eaef6f7e291b2252a95bf9ab0d842e674b034865f",
+      "sorted_unlettered_documents.009": "ed8d8777367b08156d365d65ca2c9c1700e3432895c403d44c7b4b15f9de53c9",
+      "sorted_unlettered_documents.010": "8f299785c6d0c62862e0504a52c7d775407439a69090417b0c46d8139ecf9eda",
+      "sorted_unlettered_documents.011": "89bb35d76df24b40ca6b0eed44c9cc38cbe11a8ddb4aaa6d06b46e5b8bdac7f2",
+      "tool_board": "8e741f0989c71b876ccdc241876cc9800a0900dcce4295e6a9c38e2975ab1f62",
+      "unlettered_hanging_tool": "54b4458f909e04ede2e33a1a082f7e3b8a622fc3f41055490abc53a8d4f01606",
+      "unlettered_hanging_tool.001": "d593695910e7af1cab61f6c91e4cabb04df7889e2b3202aad2c4bad13a362fe1",
+      "unlettered_hanging_tool.002": "f831072c0dff5cff6d913ff73d4f3876b81cc988efc81d75f3a3a32b294bfdea",
+      "unlettered_hanging_tool.003": "7cb7c1c079abe7c45ba8f32f68e7dccc492cda087c0173151714a6185cb06f30",
+      "unlettered_logbooks": "3003175b41e49ac86663b1a422252aafb275e7d3316973c0d9d59ba09e35a5ac",
+      "unlettered_logbooks.001": "9023d2fd0dc3fd4de513a6da3c7c2a25dca7097b14203e631a3628619492c56c",
+      "unlettered_logbooks.002": "abc9bf3314ca3d1be7bc2fb80fd96b5f0eb1a63c6ed42dd6b7320e2e673bfaa7",
+      "unlettered_logbooks.003": "d81d4743729b316898da3e49eddb29eeeb0330ac5d356ee464bb62245a27c90c",
+      "unlettered_logbooks.004": "e0bd8469961306ff050956dbae7f7b0be2f759fc9bcf06e08c206019763e7172",
+      "unlettered_logbooks.005": "a1300a3cf39cea63ea5755b13c822d3e8cd8cc17caf4e923ab5401efb5c1d6b9",
+      "unlettered_logbooks.006": "91834491a6d2e436d6c223ad7f4d83da6e2f07fe593f120abcb65879bd2bddcd",
+      "unlettered_logbooks.007": "d0f95181e93dd79218efe99a746a925af92d6e702acb4c95d7f8a7ee887663b9",
+      "unlettered_logbooks.008": "89369e031d98bc7064bc1c3076e5447f5bb55bd1035f7a9b15a46be072ab1382",
+      "unlettered_logbooks.009": "a3fdce5dc7b1188457d6616e08293a224c94ff68228629ae992113a7eb5e8fd6",
+      "unlettered_logbooks.010": "287bf77b9eb1e38a18c8a5b55d5575630f17fe42d443630effacb8604cc5c8ee",
+      "unlettered_logbooks.011": "81e731d43dc09717324bff23c05b18843a72092700ab2c2fd289cb4349e805c7",
+      "unlettered_logbooks.012": "8729f7dfc8a8c6d9db45fadbfa006ae5500ab45552cd0acd3278ac8976fbb192",
+      "unlettered_logbooks.013": "60f1b2e81401f2c7bec7b97e133cd847f8264cfe7fd5e9af48fd02775f60f47d",
+      "unlettered_logbooks.014": "e39627febde49b72ff1740d5f05eedd710b33edf4d48c180d9f1595a23449c06",
+      "unlettered_logbooks.015": "2546ccb9e28dc4803ac430820a0bb686f14076e937f53797a886646909dc4b8c",
+      "unlettered_logbooks.016": "5b7a99f438b6ed758471744adb0bfdfd1adb244e47c906bdd9757ee0a84a67de",
+      "unlettered_logbooks.017": "4bb8a31957bc92f0e66e20dcd9d7cd69297e0afc8acde9fe080a0318ee269e16",
+      "unlettered_logbooks.018": "3fd38d8682d2d763be4f4c4951bce233d4052726050cfd84b5d2c56c87523445",
+      "unlettered_logbooks.019": "cab707ef788faef3c0f2b089fb99f7cd5aa0cfc6357fc2b4e93110eceb92ee4f",
+      "unlettered_logbooks.020": "d706196262673b849d385aa9ff096daebac07fdd18ffb49637f69f933a2f4525",
+      "unlettered_logbooks.021": "ff9cd0daa547aa59cb98ccc6b8525cb300e4e8bc95f8231dfca889ef706f0577",
+      "unlettered_logbooks.022": "d9ab3deb5a87d7ac37fbccdbb9159d59d176c04b875015b1fc24639a13086ffb",
+      "unlettered_logbooks.023": "844c6ef2eef4f691971c11033e7f0254769f918ff19e2635bad278cc455c7d71",
+      "upper_amber_strip": "439993b6a4d28bb1421bff0d52c7fb757b4e2d8c342fc4c3c976bce2bbeda95f",
+      "upper_header_beam": "7beac801d84dab3021cc48c079ddb7734b08fed4f9d564375caf884d5b1aed61",
+      "wall_vertical_joint": "90d4e8859f326b328ef596530e74b47955ff51ca71ac2819c04620ce7bcc56dd",
+      "wall_vertical_joint.001": "140a029b11f2f26382906a4c4341b7557eb6a4d375462d18aee780082455aa95",
+      "wall_vertical_joint.002": "d6503ad413f8b2a15b6a1275b8f326f7a4aeef03e20fab346bd3a9835c8f6747",
+      "wall_vertical_joint.003": "30a79aa79bfd3f19921f5e7268c504a552c741113f494d786eaacd4865314c11",
+      "wall_vertical_joint.004": "53f7754801503779278fc732614915d194084d70ac5ecfba88ef845d55802b09",
+      "warm_wall_dado": "aee26651337068fe56c6eb7ee70d4775bd8220b14beba95887457dbf3aa98f1a",
+      "warm_wall_dado.001": "3a4e01b23dd7cda6c22e099e23427923ac7e024bb67311a60a6e8be7699624db"
+    },
+    "annex": {
+      "annex_blank_notice_board": "0e5c7452ebd953f4a4d76250f7c7020fd23155e904b40122633808d0d1ea71e2",
+      "annex_blank_paper_no_text": "a9e3b08456f79cfa8be5ff09bcc1ea2db5dce9ce5f62c4b2cf4e334942350eb7",
+      "annex_blank_paper_no_text.001": "c728898ca41e521787c9dfe2d6c7d8f1f7ff876d29eec701c628f94926ee2086",
+      "annex_blank_paper_no_text.002": "560c51a1d6049b584ba9692e473f9794875a0aa2bd1d349aedd03827247832a9",
+      "annex_blank_tray": "620ebace54dc99deffa91befd98796eae99cd8fdb97e970219b89461506efc0a",
+      "annex_handoff_counter_body": "10a47d924d80bf6691e368fc6160fc74f6ca2fa0ecd7b218b0d450ba3183789e",
+      "annex_handoff_counter_door_inset": "dcf20006fca9b7e830087a8a9397ab04df2a9e898b9c3712ca16fa561153d971",
+      "annex_handoff_counter_door_inset.001": "b2d559f8e0128bbe17e3fdaf425dde5370550f7848cbaf14b617aa112a9f671d",
+      "annex_handoff_counter_door_inset.002": "e8f47cdb88ab58474635af18df15cd0f94688bb0ba7bf988e5c7c82be95e1820",
+      "annex_handoff_counter_door_inset.003": "ff5aa82802480d0ca7feb49ab7cd47f9d1863879356b7af69a25f5c152c004d2",
+      "annex_handoff_counter_door_inset.004": "8457e634a0d7b9f661d9331fe2312d7e2f2f746c1b4d84b5756e10bd6ee1ee45",
+      "annex_handoff_counter_pull": "b7daa88d0ac744135bb4242dba2cd5c82c94e12176d3ee5addb925b70cfc72e6",
+      "annex_handoff_counter_pull.001": "77df6fe5ffe4b9b66f48cbca16ba0520cf72094cefd22859c266fa7d5c71639d",
+      "annex_handoff_counter_pull.002": "6228c0089953f6c475cc9ef8b96df92a5c1f3fce0a4704b7c699248ed6c2c803",
+      "annex_handoff_counter_pull.003": "ba3739fcc6e0bbbaa8c1a7e70adf16ea620478360191831a04c7b7d71b6f4a2e",
+      "annex_handoff_counter_pull.004": "891f1d7fcdb8086316009673b7f6db2a7a76cf7dc3a401571226a5481dfe9706",
+      "annex_handoff_counter_wood_top": "9a7504d27c70b206a01485b98c3ec78cb8c6c7b25ecbea968a29058f8077da9d",
+      "annex_handoff_documents": "26108f3201daf1f4fe09ee24a2614dfc0f58835daebe1fcb6b1dba6ddc1c42b2",
+      "annex_handoff_documents.001": "13fe17077539aba3da87e7dee5aa4f305af68853bdac65aa4a8de10fa7ffcec0",
+      "annex_handoff_documents.002": "670e969c5d9cd9207dd9feb93c11f491e4f2b95d736e266d0077e30e903ba6d6",
+      "annex_handoff_documents.003": "020e811188d52f67ccbeace77f6e817865ade9cf3682086c9456dfa78a2c22d1",
+      "annex_handoff_documents.004": "7fee02d9410276df61369c3acc18336e3f36c58da51a302735df2c5358b7d120",
+      "annex_return_header": "f678a96033e5d18cafe4b8aec327edda6118e6d231282cb794b055b02a6c36e4",
+      "annex_return_jamb": "dbca8cff67a574c95a47862deb89043a27c692ff18fb4932e853e6f8b023f23e",
+      "annex_return_jamb.001": "c1841fa0529c811fbc7851a6c8a5facd64d00073cbc0cd0e1354c682c2b9c4f5",
+      "annex_return_opening": "1cdf6d04a58bfd1e7caf87601cb6071a6a06e483b5d8b91ff227c82a3839a905",
+      "annex_storage_low_body": "832b930c7f23840ed7eee4787e357b27112f5c276d94e71fe26ba96e177e2c4a",
+      "annex_storage_low_door_inset": "bac7c2922ded11312a8b98e8bf98b8827a668daeb8edbc7a522f0181fe3af1e9",
+      "annex_storage_low_door_inset.001": "1642285bd412f9822a6e6b09cc529461b140dafe4a1ea206d07f57252c31f368",
+      "annex_storage_low_door_inset.002": "3aaf0a9dda7dc8d39ea5bc65e20da3caa33c845357f40223ea798d06939166d3",
+      "annex_storage_low_pull": "5bb148dfca21150cd0ff154c1255f11f2343b26475c90066c03b97b56e772625",
+      "annex_storage_low_pull.001": "291edc2c01e3811575aad08d6bc9b72fdb028a0fa7854aec3097184a9ad1a7f4",
+      "annex_storage_low_pull.002": "b71431e0c229bee22ecd9062e9d07e03ac0a4ac8e97a428249b5ca35e74af654",
+      "annex_storage_low_wood_top": "fbbd2fa84fe07e60a9629884262b9d57c483877f67e3282a40b028b4457e26d8",
+      "annex_storage_shelf": "b326cd3710873ca793556e42344c84dc9e40eb701cf717305a9ce863cbebd29d",
+      "annex_storage_shelf.001": "6d046df6ac813b33eae54e6c4e4246ef32f855ead7d1c87266e24274fe16af16",
+      "annex_unlettered_storage_box": "879bbaf4914b9b3773c2197e07c386a21956d07e5bbe192517415765d6247936",
+      "annex_unlettered_storage_box.001": "e22ffd757bd63102046787b656ee585bb7eda632f41321dd8b44a4956b253934",
+      "annex_unlettered_storage_box.002": "ea18b19ef663914fd3fcab6646682729f309bbbe7100b551c560c374d31455b2",
+      "annex_unlettered_storage_box.003": "c1b07531c29555ed2930402babf9f0f620eb753f8d828892351d8f63ccbbba11",
+      "annex_unlettered_storage_box.004": "55474763111bf93d244fd27ec0c84424d661bda034f4beaa0e030a20f91e44b5",
+      "annex_unlettered_storage_box.005": "b83f22fcc73fa8b0ef2ea5ceba653a3c965beb1066a49a334790d5c9c1500a27",
+      "back_wall_lower_wainscot.002": "eaf42eedfa9cbe2ef95178db6ab8a2adec723e73cd5b5a8a13375a16da38668a",
+      "back_wall_lower_wainscot.003": "1a251ae6815438f817df8cd5e809b41ce7ccfff328faf8c1e6b6d4e285935404",
+      "back_wall_slab.002": "60cb7c3233fb3f70056e8106e80ea411c99050f938496d625209e19cf2447fe2",
+      "back_wall_slab.003": "2050e5c3a3a3de315190e8b55fb0a0c3cab5b9f7932f8d7cbc31c7e0995af940",
+      "clerestory_blue_glass.005": "c9ed9e5f9f113549c0834868b73ebbdac872cf8dbc7f45be0aeb66ccc69c0cc6",
+      "clerestory_blue_glass.006": "b67162e0a56bed785d293b1ca7a41f6b67edddcb9254e5143db3cc78791b3c60",
+      "clerestory_blue_glass.007": "7ffe335a196689cf7d11ea9551579ed0e3aa45580ba6d0bde344c7ee129b36d3",
+      "clerestory_blue_glass.008": "566e47beba264f5163015d95268807d89ca0c700d278978bd4e985c34e3f47d7",
+      "clerestory_blue_glass.009": "0867d28b6d769ccf12137d7bba6e914e58aad584f89221694a3569d86305e121",
+      "clerestory_divider.005": "3676bba9ede7fd151b8157d926c32fdeeb0089d9634a3cf3a64630ca208b4bab",
+      "clerestory_divider.006": "1d7137b1c4da6d98495f3fa95a861e4c7f67a944ab1fd6e0b90066f113ccf85f",
+      "clerestory_divider.007": "c72a0f984e134ee74d5bbb5d8f4ba9c0d732863c483ebecab69302581625f550",
+      "clerestory_divider.008": "7065c4fcef929800e37e1abfeae838116abbd4d974d09a93526ca68eabc107ca",
+      "clerestory_divider.009": "b10e29e239c708400d896fa0899926f05900c9bbf0e48fcdfc2c4aa57dea17d9",
+      "clerestory_recess.005": "1976f8d5d5d36f7f2e8fa360e02ec6bf5f38fad4b988c73f9aed8ea790188c46",
+      "clerestory_recess.006": "ff04812065edaeca78f6a28a05e3c8bf693a49bfc88539d306bedf8ccc90f026",
+      "clerestory_recess.007": "c0849130f8f7ea27cc4394a263b42828ee9e66537fbc6d2cc59c31127309891d",
+      "clerestory_recess.008": "c264673edc2413b95b383db7dfcf497f2487286ce3233c89d683fbb353edd16f",
+      "clerestory_recess.009": "81dd0e3f55df6a0dfdbc95422dd5456875059b863c76dae09736d87570bbdc70",
+      "continuous_walkable_floor.001": "faf983a12a986f1dca563523cf81d99f151c8f72a25b897c44033d66bdf3f18f",
+      "floor_expansion_seam_x.007": "f589a0a4244431b89f6431db4c173d7586f470256365a38954d778da7a1b15ee",
+      "floor_expansion_seam_x.008": "96d1aeffedc3d2949fdd2988c61fad1a20106e9747dc95b3c6352645b60d65c1",
+      "floor_expansion_seam_x.009": "b45aeaa4c7259713d8e5f1fed1bcc90f835db5f7ef44fb5b57f8950ae14e81e2",
+      "floor_expansion_seam_x.010": "31a05aaf8d93d43fbaeb561580339f9e058048940e6f106ed426d2fb5024fd51",
+      "floor_expansion_seam_x.011": "ea60b6dd91522c0130a29456564c5136eb96ebc981818cb265ca2f651125d8c8",
+      "floor_expansion_seam_x.012": "e9fbc068fb947217b6bd0ad1c5e9e82e4ce66d368650b026489e71ef13961de9",
+      "floor_expansion_seam_x.013": "5de8e241a85b0fae4ff6069e147e7523c37e93a50ff479ba2dc75fec64fe2a86",
+      "floor_expansion_seam_y.005": "fa982a4f996e92273cd440df368bdcf285a3fde3683fcaad26a3640a8513a92f",
+      "floor_expansion_seam_y.006": "cf8617268e860a2f10a42c189acad118e2a9a6e8ae1ee4fb5eaa3fccfd8abc2a",
+      "floor_expansion_seam_y.007": "bb970f1c3d9278d611c347f8a90f6d5f663584b78a3d08f1cb6a4851de9c4506",
+      "floor_expansion_seam_y.008": "058efadb8c014bfce06e9e82dd19522f5b06a6504162f943b9a0f703a8dc342b",
+      "floor_expansion_seam_y.009": "6da930e75b9053ba37b9f133c3e3bfcaf40633f2a281ca4bb8340d45c370d6ad",
+      "lintel_above_door.001": "4cb3ddd0b11c38e0e42d7b285c4bb52f5b71a2f85972ac2daea7e7475806388b",
+      "side_return_wall.002": "d42df191145f9247105a1e9a625593420b1bd4c9402cd00bfe57945eccd44a1f",
+      "side_return_wall.003": "40ce480079e685d48c35aee74e1ee04d8454b461101fa0f756722ff9577f90e7",
+      "upper_amber_strip.001": "439993b6a4d28bb1421bff0d52c7fb757b4e2d8c342fc4c3c976bce2bbeda95f",
+      "upper_header_beam.001": "7beac801d84dab3021cc48c079ddb7734b08fed4f9d564375caf884d5b1aed61",
+      "wall_vertical_joint.005": "90d4e8859f326b328ef596530e74b47955ff51ca71ac2819c04620ce7bcc56dd",
+      "wall_vertical_joint.006": "140a029b11f2f26382906a4c4341b7557eb6a4d375462d18aee780082455aa95",
+      "wall_vertical_joint.007": "d6503ad413f8b2a15b6a1275b8f326f7a4aeef03e20fab346bd3a9835c8f6747",
+      "wall_vertical_joint.008": "30a79aa79bfd3f19921f5e7268c504a552c741113f494d786eaacd4865314c11",
+      "wall_vertical_joint.009": "53f7754801503779278fc732614915d194084d70ac5ecfba88ef845d55802b09",
+      "warm_wall_dado.002": "439f90fbd0ec337483936d403154bf9b1a97ac75257292b319b75c6f3714d581",
+      "warm_wall_dado.003": "552ee815f8b84e5abe14c39e401444b79d8fa0d5a2786bb349f88de7cbd648d9"
+    }
+  },
+  "camera": {
+    "hallway": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6691306233406067,
+          -0.7431448101997375,
+          -14.862896919250488
+        ],
+        [
+          0.0,
+          0.7431448101997375,
+          0.6691306233406067,
+          15.95061206817627
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "type": "ORTHO",
+      "ortho_scale": 14.800000190734863,
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "size": [
+        1280,
+        720
+      ],
+      "percentage": 100
+    },
+    "annex": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6691306233406067,
+          -0.7431448101997375,
+          -14.862896919250488
+        ],
+        [
+          0.0,
+          0.7431448101997375,
+          0.6691306233406067,
+          15.95061206817627
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "type": "ORTHO",
+      "ortho_scale": 14.800000190734863,
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "size": [
+        1280,
+        720
+      ],
+      "percentage": 100
+    }
+  },
+  "projection": {
+    "hallway_closed": {
+      "walk_polygon_screen": [
+        [
+          96,
+          426
+        ],
+        [
+          1184,
+          426
+        ],
+        [
+          1184,
+          544
+        ],
+        [
+          96,
+          544
+        ]
+      ],
+      "walk_polygon_world": [
+        [
+          -6.289999961853027,
+          1.7115802764892578,
+          0.0
+        ],
+        [
+          6.289999961853027,
+          1.7115802764892578,
+          0.0
+        ],
+        [
+          6.289999961853027,
+          -0.32744693756103516,
+          0.0
+        ],
+        [
+          -6.289999961853027,
+          -0.32744693756103516,
+          0.0
+        ]
+      ],
+      "walk_polygon_blocker_overlaps": [],
+      "hotspots": {
+        "handoff_log": {
+          "screen": [
+            230,
+            455
+          ],
+          "world_floor": [
+            -4.740624904632568,
+            1.2104625701904297,
+            0.0
+          ],
+          "reprojected": [
+            230.00001907348633,
+            455.00006675720215
+          ],
+          "pixel_error": 6.942853822021979e-05,
+          "blocks_floor_hits": []
+        },
+        "door_track": {
+          "screen": [
+            990,
+            495
+          ],
+          "world_floor": [
+            4.046875,
+            0.5192661285400391,
+            9.5367431640625e-07
+          ],
+          "reprojected": [
+            990.0,
+            495.00006437301636
+          ],
+          "pixel_error": 6.437301635742188e-05,
+          "blocks_floor_hits": []
+        },
+        "sorting_table": {
+          "screen": [
+            480,
+            455
+          ],
+          "world_floor": [
+            -1.850000023841858,
+            1.2104625701904297,
+            0.0
+          ],
+          "reprojected": [
+            480.0,
+            455.00006675720215
+          ],
+          "pixel_error": 6.67572021484375e-05,
+          "blocks_floor_hits": []
+        },
+        "duty_station": {
+          "screen": [
+            745,
+            465
+          ],
+          "world_floor": [
+            1.2140625715255737,
+            1.037663459777832,
+            0.0
+          ],
+          "reprojected": [
+            745.0,
+            465.00007152557373
+          ],
+          "pixel_error": 7.152557373046875e-05,
+          "blocks_floor_hits": []
+        },
+        "workbench": {
+          "screen": [
+            610,
+            485
+          ],
+          "world_floor": [
+            -0.34687501192092896,
+            0.6920661926269531,
+            -9.5367431640625e-07
+          ],
+          "reprojected": [
+            610.0,
+            485.00012397766113
+          ],
+          "pixel_error": 0.0001239776611328125,
+          "blocks_floor_hits": []
+        },
+        "side_door": {
+          "screen": [
+            1100,
+            465
+          ],
+          "world_floor": [
+            5.318749904632568,
+            1.037663459777832,
+            0.0
+          ],
+          "reprojected": [
+            1100.0,
+            465.00007152557373
+          ],
+          "pixel_error": 7.152557373046875e-05,
+          "blocks_floor_hits": []
+        },
+        "rest": {
+          "screen": [
+            315,
+            505
+          ],
+          "world_floor": [
+            -3.7578125,
+            0.3464670181274414,
+            0.0
+          ],
+          "reprojected": [
+            315.0,
+            505.0001335144043
+          ],
+          "pixel_error": 0.000133514404296875,
+          "blocks_floor_hits": []
+        }
+      },
+      "camera": {
+        "matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.6691306233406067,
+            -0.7431448101997375,
+            -14.862896919250488
+          ],
+          [
+            0.0,
+            0.7431448101997375,
+            0.6691306233406067,
+            15.95061206817627
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 14.800000190734863,
+        "shift": [
+          0.0,
+          0.0
+        ],
+        "size": [
+          1280,
+          720
+        ],
+        "percentage": 100
+      },
+      "ui_reserved_y_greater_than": 590,
+      "floor_plane_z": 0
+    },
+    "hallway_open": {
+      "walk_polygon_screen": [
+        [
+          96,
+          426
+        ],
+        [
+          1184,
+          426
+        ],
+        [
+          1184,
+          544
+        ],
+        [
+          96,
+          544
+        ]
+      ],
+      "walk_polygon_world": [
+        [
+          -6.289999961853027,
+          1.7115802764892578,
+          0.0
+        ],
+        [
+          6.289999961853027,
+          1.7115802764892578,
+          0.0
+        ],
+        [
+          6.289999961853027,
+          -0.32744693756103516,
+          0.0
+        ],
+        [
+          -6.289999961853027,
+          -0.32744693756103516,
+          0.0
+        ]
+      ],
+      "walk_polygon_blocker_overlaps": [],
+      "hotspots": {
+        "handoff_log": {
+          "screen": [
+            230,
+            455
+          ],
+          "world_floor": [
+            -4.740624904632568,
+            1.2104625701904297,
+            0.0
+          ],
+          "reprojected": [
+            230.00001907348633,
+            455.00006675720215
+          ],
+          "pixel_error": 6.942853822021979e-05,
+          "blocks_floor_hits": []
+        },
+        "door_track": {
+          "screen": [
+            990,
+            495
+          ],
+          "world_floor": [
+            4.046875,
+            0.5192661285400391,
+            9.5367431640625e-07
+          ],
+          "reprojected": [
+            990.0,
+            495.00006437301636
+          ],
+          "pixel_error": 6.437301635742188e-05,
+          "blocks_floor_hits": []
+        },
+        "sorting_table": {
+          "screen": [
+            480,
+            455
+          ],
+          "world_floor": [
+            -1.850000023841858,
+            1.2104625701904297,
+            0.0
+          ],
+          "reprojected": [
+            480.0,
+            455.00006675720215
+          ],
+          "pixel_error": 6.67572021484375e-05,
+          "blocks_floor_hits": []
+        },
+        "duty_station": {
+          "screen": [
+            745,
+            465
+          ],
+          "world_floor": [
+            1.2140625715255737,
+            1.037663459777832,
+            0.0
+          ],
+          "reprojected": [
+            745.0,
+            465.00007152557373
+          ],
+          "pixel_error": 7.152557373046875e-05,
+          "blocks_floor_hits": []
+        },
+        "workbench": {
+          "screen": [
+            610,
+            485
+          ],
+          "world_floor": [
+            -0.34687501192092896,
+            0.6920661926269531,
+            -9.5367431640625e-07
+          ],
+          "reprojected": [
+            610.0,
+            485.00012397766113
+          ],
+          "pixel_error": 0.0001239776611328125,
+          "blocks_floor_hits": []
+        },
+        "side_door": {
+          "screen": [
+            1100,
+            465
+          ],
+          "world_floor": [
+            5.318749904632568,
+            1.037663459777832,
+            0.0
+          ],
+          "reprojected": [
+            1100.0,
+            465.00007152557373
+          ],
+          "pixel_error": 7.152557373046875e-05,
+          "blocks_floor_hits": []
+        },
+        "rest": {
+          "screen": [
+            315,
+            505
+          ],
+          "world_floor": [
+            -3.7578125,
+            0.3464670181274414,
+            0.0
+          ],
+          "reprojected": [
+            315.0,
+            505.0001335144043
+          ],
+          "pixel_error": 0.000133514404296875,
+          "blocks_floor_hits": []
+        }
+      },
+      "camera": {
+        "matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.6691306233406067,
+            -0.7431448101997375,
+            -14.862896919250488
+          ],
+          [
+            0.0,
+            0.7431448101997375,
+            0.6691306233406067,
+            15.95061206817627
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 14.800000190734863,
+        "shift": [
+          0.0,
+          0.0
+        ],
+        "size": [
+          1280,
+          720
+        ],
+        "percentage": 100
+      },
+      "ui_reserved_y_greater_than": 590,
+      "floor_plane_z": 0
+    },
+    "hallway_repaired": {
+      "walk_polygon_screen": [
+        [
+          96,
+          426
+        ],
+        [
+          1184,
+          426
+        ],
+        [
+          1184,
+          544
+        ],
+        [
+          96,
+          544
+        ]
+      ],
+      "walk_polygon_world": [
+        [
+          -6.289999961853027,
+          1.7115802764892578,
+          0.0
+        ],
+        [
+          6.289999961853027,
+          1.7115802764892578,
+          0.0
+        ],
+        [
+          6.289999961853027,
+          -0.32744693756103516,
+          0.0
+        ],
+        [
+          -6.289999961853027,
+          -0.32744693756103516,
+          0.0
+        ]
+      ],
+      "walk_polygon_blocker_overlaps": [],
+      "hotspots": {
+        "handoff_log": {
+          "screen": [
+            230,
+            455
+          ],
+          "world_floor": [
+            -4.740624904632568,
+            1.2104625701904297,
+            0.0
+          ],
+          "reprojected": [
+            230.00001907348633,
+            455.00006675720215
+          ],
+          "pixel_error": 6.942853822021979e-05,
+          "blocks_floor_hits": []
+        },
+        "door_track": {
+          "screen": [
+            990,
+            495
+          ],
+          "world_floor": [
+            4.046875,
+            0.5192661285400391,
+            9.5367431640625e-07
+          ],
+          "reprojected": [
+            990.0,
+            495.00006437301636
+          ],
+          "pixel_error": 6.437301635742188e-05,
+          "blocks_floor_hits": []
+        },
+        "sorting_table": {
+          "screen": [
+            480,
+            455
+          ],
+          "world_floor": [
+            -1.850000023841858,
+            1.2104625701904297,
+            0.0
+          ],
+          "reprojected": [
+            480.0,
+            455.00006675720215
+          ],
+          "pixel_error": 6.67572021484375e-05,
+          "blocks_floor_hits": []
+        },
+        "duty_station": {
+          "screen": [
+            745,
+            465
+          ],
+          "world_floor": [
+            1.2140625715255737,
+            1.037663459777832,
+            0.0
+          ],
+          "reprojected": [
+            745.0,
+            465.00007152557373
+          ],
+          "pixel_error": 7.152557373046875e-05,
+          "blocks_floor_hits": []
+        },
+        "workbench": {
+          "screen": [
+            610,
+            485
+          ],
+          "world_floor": [
+            -0.34687501192092896,
+            0.6920661926269531,
+            -9.5367431640625e-07
+          ],
+          "reprojected": [
+            610.0,
+            485.00012397766113
+          ],
+          "pixel_error": 0.0001239776611328125,
+          "blocks_floor_hits": []
+        },
+        "side_door": {
+          "screen": [
+            1100,
+            465
+          ],
+          "world_floor": [
+            5.318749904632568,
+            1.037663459777832,
+            0.0
+          ],
+          "reprojected": [
+            1100.0,
+            465.00007152557373
+          ],
+          "pixel_error": 7.152557373046875e-05,
+          "blocks_floor_hits": []
+        },
+        "rest": {
+          "screen": [
+            315,
+            505
+          ],
+          "world_floor": [
+            -3.7578125,
+            0.3464670181274414,
+            0.0
+          ],
+          "reprojected": [
+            315.0,
+            505.0001335144043
+          ],
+          "pixel_error": 0.000133514404296875,
+          "blocks_floor_hits": []
+        }
+      },
+      "camera": {
+        "matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.6691306233406067,
+            -0.7431448101997375,
+            -14.862896919250488
+          ],
+          [
+            0.0,
+            0.7431448101997375,
+            0.6691306233406067,
+            15.95061206817627
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 14.800000190734863,
+        "shift": [
+          0.0,
+          0.0
+        ],
+        "size": [
+          1280,
+          720
+        ],
+        "percentage": 100
+      },
+      "ui_reserved_y_greater_than": 590,
+      "floor_plane_z": 0
+    },
+    "annex": {
+      "walk_polygon_screen": [
+        [
+          96,
+          426
+        ],
+        [
+          1184,
+          426
+        ],
+        [
+          1184,
+          544
+        ],
+        [
+          96,
+          544
+        ]
+      ],
+      "walk_polygon_world": [
+        [
+          -6.289999961853027,
+          1.7115802764892578,
+          0.0
+        ],
+        [
+          6.289999961853027,
+          1.7115802764892578,
+          0.0
+        ],
+        [
+          6.289999961853027,
+          -0.32744693756103516,
+          0.0
+        ],
+        [
+          -6.289999961853027,
+          -0.32744693756103516,
+          0.0
+        ]
+      ],
+      "walk_polygon_blocker_overlaps": [],
+      "hotspots": {
+        "entry": {
+          "screen": [
+            230,
+            490
+          ],
+          "world_floor": [
+            -4.740624904632568,
+            0.6056661605834961,
+            9.5367431640625e-07
+          ],
+          "reprojected": [
+            230.00001907348633,
+            490.0000190734863
+          ],
+          "pixel_error": 2.697398304697218e-05,
+          "blocks_floor_hits": []
+        },
+        "return_door": {
+          "screen": [
+            170,
+            490
+          ],
+          "world_floor": [
+            -5.434375286102295,
+            0.6056661605834961,
+            9.5367431640625e-07
+          ],
+          "reprojected": [
+            169.99998092651367,
+            490.0000190734863
+          ],
+          "pixel_error": 2.697398304697218e-05,
+          "blocks_floor_hits": []
+        },
+        "handoff": {
+          "screen": [
+            720,
+            470
+          ],
+          "world_floor": [
+            0.925000011920929,
+            0.9512653350830078,
+            0.0
+          ],
+          "reprojected": [
+            720.0,
+            470.00000953674316
+          ],
+          "pixel_error": 9.5367431640625e-06,
+          "blocks_floor_hits": []
+        }
+      },
+      "camera": {
+        "matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.6691306233406067,
+            -0.7431448101997375,
+            -14.862896919250488
+          ],
+          [
+            0.0,
+            0.7431448101997375,
+            0.6691306233406067,
+            15.95061206817627
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 14.800000190734863,
+        "shift": [
+          0.0,
+          0.0
+        ],
+        "size": [
+          1280,
+          720
+        ],
+        "percentage": 100
+      },
+      "ui_reserved_y_greater_than": 590,
+      "floor_plane_z": 0
+    }
+  },
+  "observed_state_changes": {
+    "hallway_closed_to_hallway_open": [
+      "STATE_door_handle",
+      "STATE_sliding_door_leaf"
+    ],
+    "hallway_open_to_hallway_repaired": [
+      "STATE_door_motor_status_lamp",
+      "STATE_toolbox",
+      "STATE_toolbox_grip"
+    ]
+  },
+  "shading": "Eevee white diffuse to ShaderToRGB to constant three-color ramp to emission; no specular",
+  "lines": "selected Freestyle ink-blue contours: pressure tapered .85-1.65 px focal, 1.0 px secondary, .55 px structural; no global uniform outline",
+  "render_size": [
+    1280,
+    720
+  ],
+  "no_characters_mecha_text_icons": true,
+  "life_props": "small tea cup and folded cloth on existing countertops only",
+  "rendered_files": {
+    "hallway_closed": "4ac9349e44f134ef65c11d08d2e302d4b87373ddda57a7a6c5fd04a9f62e421f",
+    "hallway_open": "00fef6129e0dbfd58dbb37ef914fc7e18807875287eb01836f0f4775b4b9e32e",
+    "hallway_repaired": "6e6422c723a23c9e97fa9a119b7c609b010ddfea600d9f4c0a66dd93c5190a48",
+    "annex": "02c8e2149e29bb60e7223766689d3343b51dc68b56ff46d6a0e698ea83a66010"
+  }
+}

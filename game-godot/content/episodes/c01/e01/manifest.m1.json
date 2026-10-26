@@ -1,0 +1,23 @@
+{
+  "episode_id": "C01E01-MULTI-PLAY-M1",
+  "status": "runtime_validation_only",
+  "graph": "res://content/episodes/c01/e01/graph.m1.json",
+  "bundle_output": "res://content/generated/episodes/c01/e01/m1.bundle.json",
+  "mode_scenes": [
+    "SCN_C01_M1_NARRATIVE",
+    "SCN_C01_RM_RESCUE_2P5D_V01",
+    "SCN_C01_M1_DESK"
+  ],
+  "claims": [
+    "mode_switch",
+    "input_context_handoff",
+    "transaction_idempotency",
+    "save_restore",
+    "spatial_incident_integration"
+  ],
+  "non_claims": [
+    "formal_c01_episode_complete",
+    "formal_srpg_connected",
+    "phase_b_art_promoted"
+  ]
+}

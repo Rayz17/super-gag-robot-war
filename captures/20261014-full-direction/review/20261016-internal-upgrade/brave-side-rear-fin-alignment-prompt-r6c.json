@@ -1,0 +1,12 @@
+{
+  "mode": "built_in_image_gen",
+  "scope": "局部朝向/跨视图核对后的修补，不重新生成整机结构",
+  "arguments": {
+    "referenced_image_paths": [
+      "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-side-local-leg-fist-r6b.png",
+      "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-rear-selected-parts-r6a.png"
+    ],
+    "transparent_background": false,
+    "prompt": "Use case: precise-object-edit. Image 1 is the current SIDE drawing: preserve its entire robot and exact geometry, pose, head, crown, mane, chest, triangular shoulder housing HEIGHT/SLOPE, correct fore-aft engine, enlarged hand, thigh, knee drill, front/rear calf tread assembly and boot. Image 2 is the SAME machine's REAR design. Reconcile ONLY a small rear-pack/fin silhouette detail on Image 1: Image 2 has a slim orange-edged graphite VERTICAL TAIL FIN at each rear shoulder root, behind the main wing housing and mostly behind the long mane. In this side view add only the appropriate near fin's narrow dark/orange edge, partly occluded by the existing mane, and a restrained sliver of the orange/graphite central rear pack if it is visible. Do not draw two fins side by side in a side view; the far fin is occluded. Its height belongs to the same rear pack as Image 2, but do not enlarge or raise the existing main triangular shoulder/wing. The main shoulder wedge stays exactly where it is in Image 1, not turned into a flag above the head. No extra engine, wing, third fin or new backpack design. Do not move the head, shorten or move the mane, change the arm, fist, leg, track, boot, engine orientation, crop, style or colors. This is only a small rear-silhouette compatibility edit, not a whole robot reconstruction. Same ivory background, no labels."
+  }
+}

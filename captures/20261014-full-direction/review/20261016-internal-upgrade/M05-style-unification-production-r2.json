@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-19",
+  "revision": "M05-style-unification-production-r2",
+  "asset": "M05 / 完全版王者（全装王者）",
+  "canon_entity": "MECHA_C02_COMPLETE_KING",
+  "generation_mode": "built-in image_gen",
+  "file": "samples/M05-full-loadout-style-r2.png",
+  "sha256": "017550aa8e0070bd458e5ad185e0ae5953bf1ec347a76c32a427d59fb9af129a",
+  "pixel_size": [
+    1448,
+    1086
+  ],
+  "mode": "RGBA",
+  "alpha": {
+    "range": [
+      0,
+      255
+    ],
+    "bbox_above_8": [
+      124,
+      8,
+      1343,
+      1059
+    ],
+    "clear_margin_pixels_above_8": {
+      "left": 124,
+      "top": 8,
+      "right": 105,
+      "bottom": 27
+    },
+    "all_image_edges_clear_above_32": true
+  },
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-8cca5f5e-1f9a-439e-89f5-8873b61f2839.png",
+  "prompt": "M05-style-unification-prompt-r2.json",
+  "source_refs": [
+    {
+      "file": "samples/M05-full-loadout-r1b.png",
+      "sha256": "0df4a2889f99df35087ce69e9dbf5b05d5a2afee54aaf7f54d761a2f5d1ebff1",
+      "role": "唯一造型/装备/配色/姿态母稿"
+    },
+    {
+      "file": "samples/M01-head-proportion-r16.png",
+      "sha256": "d8ecc8461fa9a1685b6b07ccfc9696970a2efb4eec9642c63bd7969c3e4c6e61",
+      "role": "已确认头部；只取大块面、线条与分层明暗，不复制无牌头型"
+    },
+    {
+      "file": "samples/M01-family-master-r13.png",
+      "sha256": "8e87cab7de5a2a458cb5fd1f107b635027594b058fb5ad56d22174a4b559cb00",
+      "role": "只取颈下装甲和关节画法；该图旧头型禁止回流"
+    }
+  ],
+  "reader": "M05-style-match-r2.html",
+  "request_receipt": "mecha-source-decisions-20261019-r17.json",
+  "existing_batch": "design-followthrough-r1.json#experience_record_m05_style_r2",
+  "status": "style_unification_sample_pending_user",
+  "user_accepted": false,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "author_review": {
+    "reviewer": "author",
+    "actual_media": "实际完整R2与R1b并看，并对照已确认无牌R16及R13颈下。",
+    "observed": [
+      "蓝白装甲的明暗面更整洁，微刻线与闪亮金属反光减少，金边仍保留华丽与层次。",
+      "自身右臂大金钻/左臂白盾、两门背肩前向主炮、圆轴座、层翼与翼根推进器、腿侧武器舱和双足保留。",
+      "无牌青白金未复制给王者；王者仍为藏蓝/象牙白/绯红/金色的厚重全装。"
+    ],
+    "limits": [
+      "只比较绘制风格；手绘重绘存在小倒角/徽纹/头冠细节漂移，具体结构仍须沿同一母稿固定。",
+      "全轮廓没有碰到图像边缘，但最上翼尖留白约8像素，未达到提示词约5%安全边；游戏切边/导出另做。",
+      "没有同一模型投影、活动让位或运行验证；本张尚待用户看稿。"
+    ],
+    "independent_review": false
+  }
+}

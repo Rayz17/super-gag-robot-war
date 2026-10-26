@@ -1,0 +1,1553 @@
+{
+  "approved_handoffs": [],
+  "canon_modified": false,
+  "default_entry_changed": false,
+  "evidence_class": "g2_a2_c1_current_topology_pre_scene_contract",
+  "first_read_subject_roles": {
+    "ENEMY_C01_BREAKER": [
+      "breaker_proxy",
+      "BREAKER"
+    ],
+    "ENEMY_C01_RIFT_SWARM_01": [
+      "rift_swarm_proxy",
+      "小体一"
+    ],
+    "ENEMY_C01_RIFT_SWARM_02": [
+      "rift_swarm_proxy",
+      "小体二"
+    ],
+    "ENEMY_C01_RIFT_SWARM_03": [
+      "rift_swarm_proxy",
+      "小体三"
+    ],
+    "TARGET_C01_EAST_EXIT": [
+      "east_exit_landmark_proxy",
+      "东门"
+    ],
+    "TARGET_C01_EMERGENCY_VEHICLE_01": [
+      "emergency_vehicle_proxy",
+      "应急车"
+    ],
+    "TARGET_C01_SECURITY_GATE": [
+      "warning_facility_proxy",
+      "警戒设施"
+    ],
+    "V353U001": [
+      "guardian_proxy",
+      "馆守Z"
+    ]
+  },
+  "g2_b_allowed": false,
+  "intent_trajectories": [
+    "ENEMY_C01_BREAKER",
+    "ENEMY_C01_RIFT_SWARM_01",
+    "TARGET_C01_EMERGENCY_VEHICLE_01"
+  ],
+  "layer_ids": [
+    "GROUND_BASE_CURRENT",
+    "STRUCTURES_CURRENT",
+    "ROOFS_FOREGROUND_CURRENT",
+    "OCCLUSION_CONTROL_CURRENT",
+    "STATIC_LIGHT_WEATHER_CURRENT",
+    "DYNAMIC_WORLD_OBJECTS"
+  ],
+  "legacy_a4_required_product_control": false,
+  "legacy_a4_role": "material_and_occlusion_method_donor_fixture_validation_only",
+  "legacy_a4_visible_pixels": false,
+  "local_roof_fade": {
+    "debug_occlusion": false,
+    "local_fade_cell_count": 4,
+    "local_fade_subjects": [
+      "ENEMY_C01_RIFT_SWARM_02"
+    ],
+    "real_art_loaded": 0,
+    "registered": true,
+    "role": "procedural_roofs_and_local_fade_foreground",
+    "slot_id": "ROOFS_FOREGROUND_CURRENT",
+    "topology_source": "golden_slice_profile.terrain_zones",
+    "visible_a4_pixels": false,
+    "z": 900
+  },
+  "objects_and_areas": [
+    "ALLY_C01_CITY_ARTILLERY",
+    "PROP_C01CDV1_RETIRED_SHIELD",
+    "PROTECTION_ZONE_RECT"
+  ],
+  "plan_public_subject_ids": [
+    "ENEMY_C01_BREAKER",
+    "ENEMY_C01_RIFT_SWARM_01",
+    "ENEMY_C01_RIFT_SWARM_02",
+    "ENEMY_C01_RIFT_SWARM_03",
+    "TARGET_C01_EAST_EXIT",
+    "TARGET_C01_EMERGENCY_VEHICLE_01",
+    "TARGET_C01_SECURITY_GATE",
+    "V353U001"
+  ],
+  "real_art_loaded": 0,
+  "runtime_promotion": false,
+  "save_enabled": false,
+  "scene": {
+    "actors": {
+      "ENEMY_C01_BREAKER": {
+        "binding_id": "PROXY_HEAVY_3X3",
+        "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+        "children": [
+          "shadow",
+          "body",
+          "attachment",
+          "emissive",
+          "fx"
+        ],
+        "display_anchor_alias": false,
+        "errors": [],
+        "facing": "north",
+        "footpoint_screen": [
+          520.0,
+          520.0
+        ],
+        "footprint": [
+          3,
+          3
+        ],
+        "ground_anchor": [
+          20.0,
+          13.0
+        ],
+        "public_label": "BREAKER",
+        "resolved_clip": {
+          "binding_id": "PROXY_HEAVY_3X3",
+          "canonical_facing": "north",
+          "canonical_state": "charge",
+          "input_facing": "north",
+          "input_state": "charging_run",
+          "key": "charge/north/0",
+          "rect": [
+            0.0,
+            0.0,
+            384.0,
+            384.0
+          ],
+          "subject_id": "ENEMY_C01_BREAKER",
+          "valid": true
+        },
+        "single_ground_anchor": true,
+        "sockets_screen": {
+          "body": [
+            520.0,
+            422.0
+          ],
+          "impact": [
+            532.0,
+            502.0
+          ],
+          "shield": [
+            452.0,
+            436.0
+          ],
+          "target": [
+            532.0,
+            502.0
+          ],
+          "weapon": [
+            588.0,
+            424.0
+          ]
+        },
+        "sort_key": 522,
+        "state": "charging_run",
+        "subject_id": "ENEMY_C01_BREAKER",
+        "valid": true,
+        "view_space": "map_dimetric_40x20",
+        "visual_role": "breaker_proxy"
+      },
+      "ENEMY_C01_RIFT_SWARM_01": {
+        "binding_id": "PROXY_SCOUT_1X1",
+        "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+        "children": [
+          "shadow",
+          "body",
+          "attachment",
+          "emissive",
+          "fx"
+        ],
+        "display_anchor_alias": false,
+        "errors": [],
+        "facing": "west",
+        "footpoint_screen": [
+          840.0,
+          360.0
+        ],
+        "footprint": [
+          1,
+          1
+        ],
+        "ground_anchor": [
+          22.0,
+          7.0
+        ],
+        "public_label": "小体一",
+        "resolved_clip": {
+          "binding_id": "PROXY_SCOUT_1X1",
+          "canonical_facing": "west",
+          "canonical_state": "idle",
+          "input_facing": "west",
+          "input_state": "active",
+          "key": "idle/west/0",
+          "rect": [
+            0.0,
+            0.0,
+            96.0,
+            96.0
+          ],
+          "subject_id": "ENEMY_C01_RIFT_SWARM_01",
+          "valid": true
+        },
+        "single_ground_anchor": true,
+        "sockets_screen": {
+          "body": [
+            840.0,
+            332.0
+          ],
+          "impact": [
+            840.0,
+            328.0
+          ],
+          "shield": [
+            824.0,
+            336.0
+          ],
+          "target": [
+            840.0,
+            328.0
+          ],
+          "weapon": [
+            857.0,
+            333.0
+          ]
+        },
+        "sort_key": 360,
+        "state": "active",
+        "subject_id": "ENEMY_C01_RIFT_SWARM_01",
+        "valid": true,
+        "view_space": "map_dimetric_40x20",
+        "visual_role": "rift_swarm_proxy"
+      },
+      "ENEMY_C01_RIFT_SWARM_02": {
+        "binding_id": "PROXY_SCOUT_1X1",
+        "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+        "children": [
+          "shadow",
+          "body",
+          "attachment",
+          "emissive",
+          "fx"
+        ],
+        "display_anchor_alias": false,
+        "errors": [],
+        "facing": "north",
+        "footpoint_screen": [
+          800.0,
+          540.0
+        ],
+        "footprint": [
+          1,
+          1
+        ],
+        "ground_anchor": [
+          26.0,
+          12.0
+        ],
+        "public_label": "小体二",
+        "resolved_clip": {
+          "binding_id": "PROXY_SCOUT_1X1",
+          "canonical_facing": "north",
+          "canonical_state": "idle",
+          "input_facing": "north",
+          "input_state": "active",
+          "key": "idle/north/0",
+          "rect": [
+            0.0,
+            0.0,
+            96.0,
+            96.0
+          ],
+          "subject_id": "ENEMY_C01_RIFT_SWARM_02",
+          "valid": true
+        },
+        "single_ground_anchor": true,
+        "sockets_screen": {
+          "body": [
+            800.0,
+            512.0
+          ],
+          "impact": [
+            800.0,
+            508.0
+          ],
+          "shield": [
+            784.0,
+            516.0
+          ],
+          "target": [
+            800.0,
+            508.0
+          ],
+          "weapon": [
+            817.0,
+            513.0
+          ]
+        },
+        "sort_key": 540,
+        "state": "active",
+        "subject_id": "ENEMY_C01_RIFT_SWARM_02",
+        "valid": true,
+        "view_space": "map_dimetric_40x20",
+        "visual_role": "rift_swarm_proxy"
+      },
+      "ENEMY_C01_RIFT_SWARM_03": {
+        "binding_id": "PROXY_SCOUT_1X1",
+        "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+        "children": [
+          "shadow",
+          "body",
+          "attachment",
+          "emissive",
+          "fx"
+        ],
+        "display_anchor_alias": false,
+        "errors": [],
+        "facing": "south",
+        "footpoint_screen": [
+          1200.0,
+          460.0
+        ],
+        "footprint": [
+          1,
+          1
+        ],
+        "ground_anchor": [
+          29.0,
+          5.0
+        ],
+        "public_label": "小体三",
+        "resolved_clip": {
+          "binding_id": "PROXY_SCOUT_1X1",
+          "canonical_facing": "south",
+          "canonical_state": "idle",
+          "input_facing": "south",
+          "input_state": "active",
+          "key": "idle/south/0",
+          "rect": [
+            0.0,
+            0.0,
+            96.0,
+            96.0
+          ],
+          "subject_id": "ENEMY_C01_RIFT_SWARM_03",
+          "valid": true
+        },
+        "single_ground_anchor": true,
+        "sockets_screen": {
+          "body": [
+            1200.0,
+            432.0
+          ],
+          "impact": [
+            1200.0,
+            428.0
+          ],
+          "shield": [
+            1184.0,
+            436.0
+          ],
+          "target": [
+            1200.0,
+            428.0
+          ],
+          "weapon": [
+            1217.0,
+            433.0
+          ]
+        },
+        "sort_key": 460,
+        "state": "active",
+        "subject_id": "ENEMY_C01_RIFT_SWARM_03",
+        "valid": true,
+        "view_space": "map_dimetric_40x20",
+        "visual_role": "rift_swarm_proxy"
+      },
+      "TARGET_C01_EAST_EXIT": {
+        "binding_id": "PROXY_SCOUT_1X1",
+        "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+        "children": [
+          "shadow",
+          "body",
+          "attachment",
+          "emissive",
+          "fx"
+        ],
+        "display_anchor_alias": false,
+        "errors": [],
+        "facing": "east",
+        "footpoint_screen": [
+          1200.0,
+          540.0
+        ],
+        "footprint": [
+          1,
+          1
+        ],
+        "ground_anchor": [
+          31.0,
+          7.0
+        ],
+        "public_label": "东门",
+        "resolved_clip": {
+          "binding_id": "PROXY_SCOUT_1X1",
+          "canonical_facing": "east",
+          "canonical_state": "idle",
+          "input_facing": "east",
+          "input_state": "active",
+          "key": "idle/east/0",
+          "rect": [
+            0.0,
+            0.0,
+            96.0,
+            96.0
+          ],
+          "subject_id": "TARGET_C01_EAST_EXIT",
+          "valid": true
+        },
+        "single_ground_anchor": true,
+        "sockets_screen": {
+          "body": [
+            1200.0,
+            512.0
+          ],
+          "impact": [
+            1200.0,
+            508.0
+          ],
+          "shield": [
+            1184.0,
+            516.0
+          ],
+          "target": [
+            1200.0,
+            508.0
+          ],
+          "weapon": [
+            1217.0,
+            513.0
+          ]
+        },
+        "sort_key": 540,
+        "state": "active",
+        "subject_id": "TARGET_C01_EAST_EXIT",
+        "valid": true,
+        "view_space": "map_dimetric_40x20",
+        "visual_role": "east_exit_landmark_proxy"
+      },
+      "TARGET_C01_EMERGENCY_VEHICLE_01": {
+        "binding_id": "PROXY_SCOUT_1X1",
+        "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+        "children": [
+          "shadow",
+          "body",
+          "attachment",
+          "emissive",
+          "fx"
+        ],
+        "display_anchor_alias": false,
+        "errors": [],
+        "facing": "east",
+        "footpoint_screen": [
+          520.0,
+          320.0
+        ],
+        "footprint": [
+          1,
+          1
+        ],
+        "ground_anchor": [
+          17.0,
+          10.0
+        ],
+        "public_label": "应急车",
+        "resolved_clip": {
+          "binding_id": "PROXY_SCOUT_1X1",
+          "canonical_facing": "east",
+          "canonical_state": "move",
+          "input_facing": "east",
+          "input_state": "moving",
+          "key": "move/east/0",
+          "rect": [
+            0.0,
+            0.0,
+            96.0,
+            96.0
+          ],
+          "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01",
+          "valid": true
+        },
+        "single_ground_anchor": true,
+        "sockets_screen": {
+          "body": [
+            520.0,
+            292.0
+          ],
+          "impact": [
+            520.0,
+            288.0
+          ],
+          "shield": [
+            504.0,
+            296.0
+          ],
+          "target": [
+            520.0,
+            288.0
+          ],
+          "weapon": [
+            537.0,
+            293.0
+          ]
+        },
+        "sort_key": 320,
+        "state": "moving",
+        "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01",
+        "valid": true,
+        "view_space": "map_dimetric_40x20",
+        "visual_role": "emergency_vehicle_proxy"
+      },
+      "TARGET_C01_SECURITY_GATE": {
+        "binding_id": "PROXY_SCOUT_1X1",
+        "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+        "children": [
+          "shadow",
+          "body",
+          "attachment",
+          "emissive",
+          "fx"
+        ],
+        "display_anchor_alias": false,
+        "errors": [],
+        "facing": "south",
+        "footpoint_screen": [
+          1000.0,
+          480.0
+        ],
+        "footprint": [
+          1,
+          1
+        ],
+        "ground_anchor": [
+          27.0,
+          8.0
+        ],
+        "public_label": "警戒设施",
+        "resolved_clip": {
+          "binding_id": "PROXY_SCOUT_1X1",
+          "canonical_facing": "south",
+          "canonical_state": "idle",
+          "input_facing": "south",
+          "input_state": "active",
+          "key": "idle/south/0",
+          "rect": [
+            0.0,
+            0.0,
+            96.0,
+            96.0
+          ],
+          "subject_id": "TARGET_C01_SECURITY_GATE",
+          "valid": true
+        },
+        "single_ground_anchor": true,
+        "sockets_screen": {
+          "body": [
+            1000.0,
+            452.0
+          ],
+          "impact": [
+            1000.0,
+            448.0
+          ],
+          "shield": [
+            984.0,
+            456.0
+          ],
+          "target": [
+            1000.0,
+            448.0
+          ],
+          "weapon": [
+            1017.0,
+            453.0
+          ]
+        },
+        "sort_key": 480,
+        "state": "active",
+        "subject_id": "TARGET_C01_SECURITY_GATE",
+        "valid": true,
+        "view_space": "map_dimetric_40x20",
+        "visual_role": "warning_facility_proxy"
+      },
+      "V353U001": {
+        "binding_id": "PROXY_GIANT_2X2",
+        "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+        "children": [
+          "shadow",
+          "body",
+          "attachment",
+          "emissive",
+          "fx"
+        ],
+        "display_anchor_alias": false,
+        "errors": [],
+        "facing": "east",
+        "footpoint_screen": [
+          400.0,
+          340.0
+        ],
+        "footprint": [
+          2,
+          2
+        ],
+        "ground_anchor": [
+          15.0,
+          11.0
+        ],
+        "public_label": "馆守Z",
+        "resolved_clip": {
+          "binding_id": "PROXY_GIANT_2X2",
+          "canonical_facing": "east",
+          "canonical_state": "idle",
+          "input_facing": "east",
+          "input_state": "active",
+          "key": "idle/east/0",
+          "rect": [
+            0.0,
+            0.0,
+            256.0,
+            256.0
+          ],
+          "subject_id": "V353U001",
+          "valid": true
+        },
+        "single_ground_anchor": true,
+        "sockets_screen": {
+          "body": [
+            400.0,
+            266.0
+          ],
+          "impact": [
+            380.0,
+            330.0
+          ],
+          "shield": [
+            354.0,
+            278.0
+          ],
+          "target": [
+            380.0,
+            330.0
+          ],
+          "weapon": [
+            446.0,
+            268.0
+          ]
+        },
+        "sort_key": 341,
+        "state": "active",
+        "subject_id": "V353U001",
+        "valid": true,
+        "view_space": "map_dimetric_40x20",
+        "visual_role": "guardian_proxy"
+      }
+    },
+    "approved_handoffs": [],
+    "canon_modified": false,
+    "default_entry_changed": false,
+    "display_stage": "PLAN",
+    "entry_role": "non_default",
+    "fixture_load_count": 0,
+    "fx": {
+      "event_id": "",
+      "phase": "",
+      "physical_fx_drawn": [],
+      "t3_city_artillery_physical": false,
+      "t3_full_road_buckle_physical": false,
+      "t3_red_release_physical": false,
+      "timeslice": ""
+    },
+    "g2_b_allowed": false,
+    "interaction": {
+      "authored_by_input": true,
+      "direct_draft_mutation": false,
+      "final_preview_success": true,
+      "final_route": [
+        [
+          15,
+          11
+        ],
+        [
+          16,
+          11
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          18,
+          11
+        ],
+        [
+          18,
+          10
+        ],
+        [
+          19,
+          10
+        ],
+        [
+          19,
+          9
+        ],
+        [
+          20,
+          9
+        ]
+      ],
+      "fixture_load_count": 0,
+      "input_equivalence": "keyboard_mouse",
+      "invalid_plan_failure_reasons": [],
+      "invalid_plan_seen": false,
+      "preview_execute_same_resolver_token": "04ccd4fa86925501d2eb19ac71acd6b3a78126573fbba8e5abf8545657436a29",
+      "public_api_calls": [
+        "begin_planning",
+        "append_waypoint:[18.0, 11.0]",
+        "append_waypoint:[18.0, 10.0]",
+        "append_waypoint:[19.0, 10.0]",
+        "append_waypoint:[19.0, 9.0]",
+        "append_waypoint:[20.0, 9.0]",
+        "set_final_facing:south",
+        "set_main_action:BODY_INTERCEPT",
+        "open_summary",
+        "return_to_edit",
+        "undo_waypoint",
+        "append_waypoint:[20.0, 9.0]",
+        "open_summary"
+      ],
+      "return_to_edit": true,
+      "started_from_empty_draft": true,
+      "strategy": "A",
+      "undo_and_redraw": true
+    },
+    "layer_count": 6,
+    "layer_registry": [
+      {
+        "debug_occlusion": false,
+        "local_fade_cell_count": 0,
+        "local_fade_subjects": [],
+        "real_art_loaded": 0,
+        "registered": true,
+        "role": "procedural_ground_road_drainage_wetness",
+        "slot_id": "GROUND_BASE_CURRENT",
+        "topology_source": "golden_slice_profile.terrain_zones",
+        "visible_a4_pixels": false,
+        "z": -1200
+      },
+      {
+        "debug_occlusion": false,
+        "local_fade_cell_count": 0,
+        "local_fade_subjects": [],
+        "real_art_loaded": 0,
+        "registered": true,
+        "role": "procedural_building_facades_in_impassable_zones",
+        "slot_id": "STRUCTURES_CURRENT",
+        "topology_source": "golden_slice_profile.terrain_zones",
+        "visible_a4_pixels": false,
+        "z": -900
+      },
+      {
+        "debug_occlusion": false,
+        "local_fade_cell_count": 4,
+        "local_fade_subjects": [
+          "ENEMY_C01_RIFT_SWARM_02"
+        ],
+        "real_art_loaded": 0,
+        "registered": true,
+        "role": "procedural_roofs_and_local_fade_foreground",
+        "slot_id": "ROOFS_FOREGROUND_CURRENT",
+        "topology_source": "golden_slice_profile.terrain_zones",
+        "visible_a4_pixels": false,
+        "z": 900
+      },
+      {
+        "debug_occlusion": false,
+        "local_fade_cell_count": 0,
+        "local_fade_subjects": [],
+        "real_art_loaded": 0,
+        "registered": true,
+        "role": "current_topology_rgba_control_proxy",
+        "slot_id": "OCCLUSION_CONTROL_CURRENT",
+        "topology_source": "golden_slice_profile.terrain_zones",
+        "visible_a4_pixels": false,
+        "z": 1000
+      },
+      {
+        "debug_occlusion": false,
+        "local_fade_cell_count": 0,
+        "local_fade_subjects": [],
+        "real_art_loaded": 0,
+        "registered": true,
+        "role": "rain_wet_reflection_and_static_edge_lights",
+        "slot_id": "STATIC_LIGHT_WEATHER_CURRENT",
+        "topology_source": "golden_slice_profile.terrain_zones",
+        "visible_a4_pixels": false,
+        "z": 1050
+      },
+      {
+        "real_art_loaded": 0,
+        "registered": true,
+        "role": "session_resolver_entities_objects_routes_intents_fx",
+        "slot_id": "DYNAMIC_WORLD_OBJECTS",
+        "visible_a4_pixels": false,
+        "z": 1200.0
+      }
+    ],
+    "map_contract_id": "C01E02_G2_A2_C1_CURRENT_TOPOLOGY_MAP_V1",
+    "missing_clip_subjects": [],
+    "overlay": {
+      "contact_geometry": {},
+      "contact_impact_area_intent_labels_suppressed": false,
+      "contact_overlay": false,
+      "contact_primary_focus": "plan_intent_triplet",
+      "contact_resolved_intents_deemphasized": false,
+      "debug_grid_visible": false,
+      "default_full_grid": false,
+      "endpoint": [
+        20,
+        9
+      ],
+      "final_facing": "south",
+      "intent_trajectories": {
+        "ENEMY_C01_BREAKER": [
+          [
+            20.0,
+            13.0
+          ],
+          [
+            20.0,
+            12.0
+          ],
+          [
+            20.0,
+            11.0
+          ]
+        ],
+        "ENEMY_C01_RIFT_SWARM_01": [
+          [
+            22.0,
+            7.0
+          ],
+          [
+            21.0,
+            8.0
+          ],
+          [
+            20.0,
+            9.0
+          ],
+          [
+            20.0,
+            10.0
+          ]
+        ],
+        "TARGET_C01_EMERGENCY_VEHICLE_01": [
+          [
+            17.0,
+            10.0
+          ],
+          [
+            18.0,
+            10.0
+          ],
+          [
+            21.0,
+            10.0
+          ],
+          [
+            24.0,
+            9.0
+          ]
+        ]
+      },
+      "intent_trajectory_count": 3,
+      "objects": {
+        "ALLY_C01_CITY_ARTILLERY": {
+          "anchor": [
+            29.0,
+            2.0
+          ],
+          "logical_resolved_state": "tracking",
+          "physical_shot_allowed": false,
+          "physical_shot_fail_closed_default": true,
+          "physical_shot_source": "performance_director.current_frame event_id=GS-R1-E4-CITY-GUN + physical phase + fx[type=artillery_beam].alpha>0",
+          "presentation_state": "tracking",
+          "renderer_state": "tracking",
+          "source_contract": {
+            "anchor_source": "session.intent_set.intents[action_type=CONDITIONAL_SIDE_ARMOR_SHOT].source_anchor",
+            "expected": {
+              "anchor": [
+                29.0,
+                2.0
+              ],
+              "state": "tracking"
+            },
+            "render_kind": "source_marker",
+            "state_source": "session.round_snapshot.objects[object_id=ALLY_C01_CITY_ARTILLERY]"
+          }
+        },
+        "PROP_C01CDV1_RETIRED_SHIELD": {
+          "anchor": [
+            14.0,
+            10.0
+          ],
+          "source_contract": {
+            "anchor_source": "session.round_snapshot.objects[object_id=PROP_C01CDV1_RETIRED_SHIELD].anchor",
+            "expected": {
+              "acquired": false,
+              "anchor": [
+                14.0,
+                10.0
+              ],
+              "state": "wall_hung_3_scorches"
+            },
+            "expected_is_validation_only": true,
+            "render_kind": "wall_hung_proxy_marker",
+            "state_source": "session.round_snapshot.objects[object_id=PROP_C01CDV1_RETIRED_SHIELD]"
+          },
+          "state": "wall_hung_3_scorches"
+        },
+        "PROTECTION_ZONE_RECT": {
+          "rect": [
+            20.0,
+            5.0,
+            12.0,
+            7.0
+          ],
+          "source_contract": {
+            "expected": {
+              "rect": [
+                20.0,
+                5.0,
+                12.0,
+                7.0
+              ]
+            },
+            "rect_source": "session.round_snapshot.terrain_zones[zone_id=TERRAIN_C01_RESCUE_LANE].rect",
+            "render_kind": "projected_area"
+          }
+        }
+      },
+      "projection": {
+        "active_camera_profile": "PUBLIC_PLAN_SUMMARY",
+        "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1760.0,
+          -340.0
+        ],
+        "control_points": [
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -880.0,
+              -170.0
+            ],
+            "expected_source_px": [
+              880.0,
+              170.0
+            ],
+            "grid": [
+              0.0,
+              0.0
+            ],
+            "raw_px": [
+              -880.0,
+              -170.0
+            ],
+            "source_px": [
+              880.0,
+              170.0
+            ]
+          },
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -720.0,
+              350.0
+            ],
+            "expected_source_px": [
+              1040.0,
+              690.0
+            ],
+            "grid": [
+              15.0,
+              11.0
+            ],
+            "raw_px": [
+              -720.0,
+              350.0
+            ],
+            "source_px": [
+              1040.0,
+              690.0
+            ]
+          },
+          {
+            "error_px": 0.0,
+            "expected_raw_px": [
+              -480.0,
+              450.0
+            ],
+            "expected_source_px": [
+              1280.0,
+              790.0
+            ],
+            "grid": [
+              20.5,
+              10.5
+            ],
+            "raw_px": [
+              -480.0,
+              450.0
+            ],
+            "source_px": [
+              1280.0,
+              790.0
+            ]
+          }
+        ],
+        "crop_formula": "effective_camera - map_size/(2*zoom) - canvas_origin",
+        "derived_crop_rect_px": [
+          640.0,
+          468.0,
+          1280.0,
+          584.0
+        ],
+        "derived_layer_top_left_px": [
+          -640.0,
+          -410.0
+        ],
+        "effective_camera_center_raw_px": [
+          -480.0,
+          420.0
+        ],
+        "errors": [],
+        "formula": "map_rect.center + (raw - effective_camera) * zoom + shake",
+        "layer_formula": "map_rect.center + (canvas_origin - effective_camera) * zoom + shake",
+        "map_viewport_rect": [
+          0.0,
+          58.0,
+          1280.0,
+          584.0
+        ],
+        "projection_origin_raw_px": [
+          -880.0,
+          -170.0
+        ],
+        "shake_px": [
+          0.0,
+          0.0
+        ],
+        "source_formula": "raw - canvas_origin",
+        "tile_half_px": [
+          40.0,
+          20.0
+        ],
+        "valid": true,
+        "view_space": "map_dimetric_40x20",
+        "zoom": 1.0
+      },
+      "route": [
+        [
+          15,
+          11
+        ],
+        [
+          16,
+          11
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          18,
+          11
+        ],
+        [
+          18,
+          10
+        ],
+        [
+          19,
+          10
+        ],
+        [
+          19,
+          9
+        ],
+        [
+          20,
+          9
+        ]
+      ],
+      "route_segment_facings": [
+        "east",
+        "east",
+        "east",
+        "north",
+        "east",
+        "north",
+        "east"
+      ],
+      "strategy": "A",
+      "t4_side_line_mode": "HUD_FORECAST_DASHED_NOT_PHYSICAL",
+      "threat_color_shape_binding_count": 3,
+      "threat_visual_bindings": [
+        {
+          "color": "#58d9ef",
+          "copy_index": 0.0,
+          "marker_shape": "diamond",
+          "public_label": "应急车路线",
+          "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+        },
+        {
+          "color": "#ff9b4a",
+          "copy_index": 1.0,
+          "marker_shape": "triangle",
+          "public_label": "小体扑线",
+          "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+        },
+        {
+          "color": "#ff4964",
+          "copy_index": 2.0,
+          "marker_shape": "square",
+          "public_label": "BREAKER冲线",
+          "subject_id": "ENEMY_C01_BREAKER"
+        }
+      ],
+      "top_threat_count": 3,
+      "visible_subject_count": 8
+    },
+    "phase_policy": {
+      "audio_proxy": {
+        "ducking_db": 0.0,
+        "formal_sfx": false,
+        "triggered": false
+      },
+      "event_id": "",
+      "forbidden_physical_fx_present": false,
+      "future_state_projection": {
+        "T4_city_artillery": {
+          "logical_resolved_state": "",
+          "physical_beam_or_impact": false,
+          "presentation_state": "tracking"
+        },
+        "T5_red_charge": {
+          "logical_resolved_state": "",
+          "physical_red_release": false,
+          "presentation_state": "forecast_only"
+        },
+        "T5_road_buckle": {
+          "full_road_buckle": false,
+          "logical_resolved_state": "",
+          "presentation_state": "micro_crack_only"
+        }
+      },
+      "hud_forecast_only": [
+        "T4_city_artillery",
+        "T5_red_charge",
+        "T5_full_road_buckle"
+      ],
+      "physical_fx": [],
+      "shared_socket": [],
+      "timeslice": ""
+    },
+    "profile_id": "C01E02_G2_A2_VISUAL_COMPOSITOR_PROXY_V1",
+    "projection": {
+      "active_camera_profile": "PUBLIC_PLAN_SUMMARY",
+      "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V1",
+      "canvas_origin_raw_px": [
+        -1760.0,
+        -340.0
+      ],
+      "control_points": [
+        {
+          "error_px": 0.0,
+          "expected_raw_px": [
+            -880.0,
+            -170.0
+          ],
+          "expected_source_px": [
+            880.0,
+            170.0
+          ],
+          "grid": [
+            0.0,
+            0.0
+          ],
+          "raw_px": [
+            -880.0,
+            -170.0
+          ],
+          "source_px": [
+            880.0,
+            170.0
+          ]
+        },
+        {
+          "error_px": 0.0,
+          "expected_raw_px": [
+            -720.0,
+            350.0
+          ],
+          "expected_source_px": [
+            1040.0,
+            690.0
+          ],
+          "grid": [
+            15.0,
+            11.0
+          ],
+          "raw_px": [
+            -720.0,
+            350.0
+          ],
+          "source_px": [
+            1040.0,
+            690.0
+          ]
+        },
+        {
+          "error_px": 0.0,
+          "expected_raw_px": [
+            -480.0,
+            450.0
+          ],
+          "expected_source_px": [
+            1280.0,
+            790.0
+          ],
+          "grid": [
+            20.5,
+            10.5
+          ],
+          "raw_px": [
+            -480.0,
+            450.0
+          ],
+          "source_px": [
+            1280.0,
+            790.0
+          ]
+        }
+      ],
+      "crop_formula": "effective_camera - map_size/(2*zoom) - canvas_origin",
+      "derived_crop_rect_px": [
+        640.0,
+        468.0,
+        1280.0,
+        584.0
+      ],
+      "derived_layer_top_left_px": [
+        -640.0,
+        -410.0
+      ],
+      "effective_camera_center_raw_px": [
+        -480.0,
+        420.0
+      ],
+      "errors": [],
+      "formula": "map_rect.center + (raw - effective_camera) * zoom + shake",
+      "layer_formula": "map_rect.center + (canvas_origin - effective_camera) * zoom + shake",
+      "map_viewport_rect": [
+        0.0,
+        58.0,
+        1280.0,
+        584.0
+      ],
+      "projection_origin_raw_px": [
+        -880.0,
+        -170.0
+      ],
+      "shake_px": [
+        0.0,
+        0.0
+      ],
+      "source_formula": "raw - canvas_origin",
+      "tile_half_px": [
+        40.0,
+        20.0
+      ],
+      "valid": true,
+      "view_space": "map_dimetric_40x20",
+      "zoom": 1.0
+    },
+    "real_art_loaded": 0.0,
+    "responsibility": {
+      "A": {
+        "copy": "正面卡位｜本轮热量24｜警戒设施受损｜道路损伤42｜第二轮热量68、余量1",
+        "facility_state": "damaged",
+        "fixture_load_count": 0,
+        "responsibility_copy": "正面卡位｜本轮热量24｜警戒设施受损｜道路损伤42｜第二轮热量68、余量1",
+        "road_damage": 42,
+        "round1_heat": 24,
+        "route_family_id": "A_BODY_INTERCEPT_FAMILY",
+        "route_family_valid": true,
+        "same_resolver_token": "04ccd4fa86925501d2eb19ac71acd6b3a78126573fbba8e5abf8545657436a29",
+        "second_round_heat": 68.0,
+        "second_round_margin": 1.0,
+        "source": "GoldenSliceSession public API preview using same resolver token as execute",
+        "strategy": "A",
+        "valid": true
+      },
+      "B": {
+        "copy": "先护撤离线、接触前转身｜本轮热量46｜警戒设施保全｜道路损伤24｜第二轮热量88、余量0",
+        "facility_state": "active",
+        "fixture_load_count": 0,
+        "responsibility_copy": "先护撤离线、接触前转身｜本轮热量46｜警戒设施保全｜道路损伤24｜第二轮热量88、余量0",
+        "road_damage": 24,
+        "round1_heat": 46,
+        "route_family_id": "B_PROTECT_LANE_FAMILY",
+        "route_family_valid": true,
+        "same_resolver_token": "b4bdbb28130b7de918316d47d20a15d2ea7e7ee6d3212bc7c67dea3199b69808",
+        "second_round_heat": 88.0,
+        "second_round_margin": 0.0,
+        "source": "GoldenSliceSession public API preview using same resolver token as execute",
+        "strategy": "B",
+        "valid": true
+      }
+    },
+    "runtime_promotion": false,
+    "save_mode": "disabled",
+    "strategy": "A",
+    "trace": {
+      "contact_boundary_sequence_time_ms": 1e99999,
+      "contact_hit_stop_seen": false,
+      "direct_phase_injection": false,
+      "driver": "GoldenSliceSession + resolver + PerformanceDirector",
+      "duration_ms": 0.0,
+      "presenter_exit_reason": "",
+      "presenter_exit_sequence_time_ms": 1e99999,
+      "presenter_exit_strict_comparison": "exit_time < contact_time",
+      "presenter_exited_before_contact": false,
+      "recoil_seen": false,
+      "route_segment_facings_seen": [],
+      "sample_count": 0,
+      "trace": []
+    },
+    "ui": {
+      "central_safe_ratio": 0.6,
+      "command_drawer_collapsed_on_cursor_motion": true,
+      "contact_current_strategy_visible": false,
+      "contact_map_clear_at_least_88_percent": true,
+      "contact_map_clear_ratio": 1.0,
+      "contact_timeslice": "",
+      "copy": {
+        "jicun_line": "人都在后面。把它引到南边去。",
+        "objective": "让应急车通过，挡开扑向东门的小体，并站到冲线前。",
+        "strategy_a": "正面卡位｜本轮热量24｜警戒设施受损｜道路损伤42｜第二轮热量68、余量1",
+        "strategy_a_responsibility": "正面卡位｜本轮热量24｜警戒设施受损｜道路损伤42｜第二轮热量68、余量1",
+        "strategy_b": "先护撤离线、接触前转身｜本轮热量46｜警戒设施保全｜道路损伤24｜第二轮热量88、余量0",
+        "strategy_b_responsibility": "先护撤离线、接触前转身｜本轮热量46｜警戒设施保全｜道路损伤24｜第二轮热量88、余量0",
+        "strategy_copy_source": "same Resolver preview world_result formatter",
+        "timeline": [
+          "应急车",
+          "小体",
+          "巨体接触",
+          "城市炮",
+          "赤红蓄能"
+        ],
+        "top_threats": [
+          "应急车先穿过落脚区",
+          "小体将在第二时点扑向东门",
+          "BREAKER沿直线冲入街区"
+        ]
+      },
+      "copy_composed_by_scene": false,
+      "forbidden_engineering_copy_present": false,
+      "objective_count": 1,
+      "plan_presenter_width_ratio": 0.234375,
+      "plan_presenter_within_25_percent": true,
+      "presenter_compact": false,
+      "presenter_visible": true,
+      "product_visible_copy": [
+        "让应急车通过，挡开扑向东门的小体，并站到冲线前。",
+        "人都在后面。把它引到南边去。",
+        "正面卡位｜本轮热量24｜警戒设施受损｜道路损伤42｜第二轮热量68、余量1",
+        "先护撤离线、接触前转身｜本轮热量46｜警戒设施保全｜道路损伤24｜第二轮热量88、余量0",
+        "纪存｜战术通讯",
+        "警戒设施受损",
+        "警戒设施保全",
+        "第一轮热量",
+        "第二轮热量",
+        "第二轮余量",
+        "路线可行",
+        "可查看预计后果",
+        "提交前摘要",
+        "路线、保护责任与城市代价已确认",
+        "返回修改",
+        "长按确认提交",
+        "当前方案",
+        "正面承接",
+        "护线转身",
+        "选择后果对比",
+        "共同结算后的两种代价",
+        "应急车先穿过落脚区",
+        "小体将在第二时点扑向东门",
+        "BREAKER沿直线冲入街区",
+        "应急车",
+        "小体",
+        "巨体接触",
+        "城市炮",
+        "赤红蓄能"
+      ],
+      "responsibility": {
+        "A": {
+          "copy": "正面卡位｜本轮热量24｜警戒设施受损｜道路损伤42｜第二轮热量68、余量1",
+          "facility_state": "damaged",
+          "fixture_load_count": 0,
+          "responsibility_copy": "正面卡位｜本轮热量24｜警戒设施受损｜道路损伤42｜第二轮热量68、余量1",
+          "road_damage": 42,
+          "round1_heat": 24,
+          "route_family_id": "A_BODY_INTERCEPT_FAMILY",
+          "route_family_valid": true,
+          "same_resolver_token": "04ccd4fa86925501d2eb19ac71acd6b3a78126573fbba8e5abf8545657436a29",
+          "second_round_heat": 68.0,
+          "second_round_margin": 1.0,
+          "source": "GoldenSliceSession public API preview using same resolver token as execute",
+          "strategy": "A",
+          "valid": true
+        },
+        "B": {
+          "copy": "先护撤离线、接触前转身｜本轮热量46｜警戒设施保全｜道路损伤24｜第二轮热量88、余量0",
+          "facility_state": "active",
+          "fixture_load_count": 0,
+          "responsibility_copy": "先护撤离线、接触前转身｜本轮热量46｜警戒设施保全｜道路损伤24｜第二轮热量88、余量0",
+          "road_damage": 24,
+          "round1_heat": 46,
+          "route_family_id": "B_PROTECT_LANE_FAMILY",
+          "route_family_valid": true,
+          "same_resolver_token": "b4bdbb28130b7de918316d47d20a15d2ea7e7ee6d3212bc7c67dea3199b69808",
+          "second_round_heat": 88.0,
+          "second_round_margin": 0.0,
+          "source": "GoldenSliceSession public API preview using same resolver token as execute",
+          "strategy": "B",
+          "valid": true
+        }
+      },
+      "route_feedback": {
+        "committed_plan_hash": "1287a4da2ff8a34cf8e9e4ce55bd83e1671f88449fda547b8ae3c3ca90f2b5ad",
+        "event_prestate_hashes": [
+          "6c73aa60f7ed4567073e2d4ba4d99a9d8b80937881dfe68f4c892fac18f20904",
+          "6c73aa60f7ed4567073e2d4ba4d99a9d8b80937881dfe68f4c892fac18f20904",
+          "6c73aa60f7ed4567073e2d4ba4d99a9d8b80937881dfe68f4c892fac18f20904",
+          "6c73aa60f7ed4567073e2d4ba4d99a9d8b80937881dfe68f4c892fac18f20904",
+          "6c73aa60f7ed4567073e2d4ba4d99a9d8b80937881dfe68f4c892fac18f20904"
+        ],
+        "hero_route_exact": true,
+        "mission_clear": false,
+        "mutation_field_count": 45,
+        "prestate_hash": "6c73aa60f7ed4567073e2d4ba4d99a9d8b80937881dfe68f4c892fac18f20904",
+        "public_intent_hash": "39f3f96183f8988bf6a6eb00961e7391f11454efd63c3b5f20146b5d18e0ef7c",
+        "round_id": "GS-R1-FIRST-CONTACT",
+        "round_number": 1,
+        "round_result_hash": "04ccd4fa86925501d2eb19ac71acd6b3a78126573fbba8e5abf8545657436a29",
+        "round_start_hash": "6c73aa60f7ed4567073e2d4ba4d99a9d8b80937881dfe68f4c892fac18f20904",
+        "route_family_failures": [],
+        "route_family_id": "A_BODY_INTERCEPT_FAMILY",
+        "route_family_valid": true,
+        "route_hash": "547c0f2dc954eed468278295edf20b31b24a4c4a4bffe2acab6e313a6990be1f",
+        "route_steps": 7,
+        "settlement_counts": {
+          "entity": 6,
+          "object": 2,
+          "world": 1
+        },
+        "strategy_path": "A_BODY_INTERCEPT",
+        "success": true,
+        "timeslices": [
+          "T1",
+          "T2",
+          "T3.00",
+          "T4",
+          "T5"
+        ]
+      },
+      "stage": "PLAN",
+      "summary_hold_commit_visible": false,
+      "summary_lifecycle_distinct": false,
+      "summary_return_edit_visible": false,
+      "threat_color_shape_binding_complete": true,
+      "threat_visual_bindings": [
+        {
+          "color": "#58d9ef",
+          "copy_index": 0.0,
+          "marker_shape": "diamond",
+          "public_label": "应急车路线",
+          "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+        },
+        {
+          "color": "#ff9b4a",
+          "copy_index": 1.0,
+          "marker_shape": "triangle",
+          "public_label": "小体扑线",
+          "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+        },
+        {
+          "color": "#ff4964",
+          "copy_index": 2.0,
+          "marker_shape": "square",
+          "public_label": "BREAKER冲线",
+          "subject_id": "ENEMY_C01_BREAKER"
+        }
+      ],
+      "timeline": [
+        "应急车",
+        "小体",
+        "巨体接触",
+        "城市炮",
+        "赤红蓄能"
+      ],
+      "top_threat_count": 3
+    },
+    "visible_subject_count": 8
+  },
+  "threat_visual_bindings": [
+    {
+      "color": "#58d9ef",
+      "copy_index": 0.0,
+      "marker_shape": "diamond",
+      "public_label": "应急车路线",
+      "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+    },
+    {
+      "color": "#ff9b4a",
+      "copy_index": 1.0,
+      "marker_shape": "triangle",
+      "public_label": "小体扑线",
+      "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+    },
+    {
+      "color": "#ff4964",
+      "copy_index": 2.0,
+      "marker_shape": "square",
+      "public_label": "BREAKER冲线",
+      "subject_id": "ENEMY_C01_BREAKER"
+    }
+  ]
+}

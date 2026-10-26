@@ -1,0 +1,191 @@
+{
+  "battle_id": "C01E03-BROKEN-ARM-BRIDGE-EIGHT-STAGE",
+  "variant_id": "story_first_representative_route_v1",
+  "status": "candidate_runtime_graybox",
+  "title": "断臂成桥 / 双层巨型救援战",
+  "scenario_driver": "c01e03_broken_arm_bridge_v1",
+  "runtime_contract_source": "C01E03-runtime-contract-v1.tsv",
+  "graybox_source": "C01E03-graybox-constants-v1.tsv",
+  "canon_source": "DOC_V359_C01E03_STORY_FIRST_V1",
+  "presentation_manifest_path": "res://assets/battle_presentation/c01/story_first/manifest.json",
+  "grid": {
+    "width": 16,
+    "height": 12,
+    "blocked": [[4, 2], [5, 2], [6, 2], [7, 2], [8, 2], [13, 3], [13, 4], [14, 4], [14, 5]]
+  },
+  "dual_plane_layout": {
+    "enabled": true,
+    "tile_size": [64, 32],
+    "planes": {
+      "L1": {
+        "label": "L1 南侧维修承台 / 西侧安全线",
+        "bounds": [1, 4, 13, 10],
+        "screen_origin": [335, 250],
+        "elevation_m": 0.0,
+        "side_depth_px": 6,
+        "fill": "10282d",
+        "outline": "2a6570"
+      },
+      "L2": {
+        "label": "L2 消防转运危险唇口",
+        "bounds": [9, 4, 13, 8],
+        "screen_origin": [680, 286],
+        "elevation_m": 0.9,
+        "side_depth_px": 16,
+        "fill": "302326",
+        "outline": "9a5048"
+      }
+    },
+    "unit_visual_overrides": {
+      "guardian_z": {"draw_size": [136, 136], "offset": [12, -51]},
+      "baihan": {"draw_size": [88, 88], "offset": [-8, -26]},
+      "brave_fist": {"draw_size": [78, 78], "offset": [0, -23]},
+      "diedie": {"draw_size": [46, 46], "offset": [0, -11]},
+      "machine_dog": {"draw_size": [50, 50], "offset": [0, -11]}
+    },
+    "vertical_edges": [
+      {"edge_id": "OLD_STAIR", "from_plane": "L2", "from_cell": [9, 6], "to_plane": "L1", "to_cell": [8, 6], "state": "disabled_by_baihan"},
+      {"edge_id": "RIGHT_ARM_BRIDGE", "from_plane": "L2", "from_cell": [9, 6], "to_plane": "L1", "to_cell": [8, 6], "state": "opens_after_main_tendon_cut", "one_way": true}
+    ],
+    "bridge_geometry": {
+      "horizontal_gap_m": 4.2,
+      "height_delta_m": 0.9,
+      "l2_overlap_m": 0.8,
+      "l1_overlap_m": 0.8,
+      "segments": ["L2_OVERLAP", "ARM_MID", "L1_SLIDER_OVERLAP"]
+    }
+  },
+  "turn_limit": 8,
+  "withdraw_allowed": false,
+  "failure_policy": "local_checkpoint_only_no_persistent_write",
+  "battle_clear_scope": "local_before_rt035",
+  "objective_text": "让馆守Z合法动作一次，将仍可修的右臂固定为桥，并送出L2五人和两件接驳设备。巨型动作先结算楼层受力。",
+  "start_prompt": "P1：五人仍在L2。白函已经切断旧楼梯，先分配主动支援带宽。",
+  "stable_object_bindings": [
+    {"binding_id": "BIND_C01E03_UPPER_RIB_TO_CHECK", "stable_object_id": "OBJ_C01E03_UPPER_CAVITY_RIB", "label": "上腔空响排除", "targets": [{"kind": "battle_flag", "target_id": "RIB_CHECK_UPPER"}]},
+    {"binding_id": "BIND_C01E03_OUTER_BEAM_TO_CHECK", "stable_object_id": "OBJ_C01E03_OUTER_ARMOR_BEAM", "label": "外甲梁排除", "targets": [{"kind": "battle_flag", "target_id": "RIB_CHECK_OUTER"}]},
+    {"binding_id": "BIND_C01E03_THIRD_RIB_TO_CHECK", "stable_object_id": "OBJ_C01E03_HEAT_BRITTLE_THIRD_RIB", "label": "第三肋热脆排除", "targets": [{"kind": "battle_flag", "target_id": "RIB_CHECK_THIRD"}]},
+    {"binding_id": "BIND_C01E03_HIDDEN_PANEL_TO_MEMORY_DOOR", "stable_object_id": "OBJ_C01E03_HIDDEN_SUBRIB_PANEL", "label": "低置信身体记忆只找到门", "targets": [{"kind": "battle_flag", "target_id": "MEMORY_FIND_HIDDEN_PANEL"}]},
+    {"binding_id": "BIND_C01E03_TANG_KNOCK_TO_PUBLIC_INPUT", "stable_object_id": "OBJ_C01E03_TANGJIAO_KNOCK_FEED", "label": "唐胶材料敲击输入", "targets": [{"kind": "unit", "target_id": "tangjiao"}, {"kind": "battle_flag", "target_id": "INPUT_TANGJIAO_KNOCK"}]},
+    {"binding_id": "BIND_C01E03_BRAVE_CENTER_TO_PUBLIC_INPUT", "stable_object_id": "OBJ_C01E03_BRAVE_LOAD_CENTER_FEED", "label": "勇拳公开载荷中心", "targets": [{"kind": "unit", "target_id": "brave_fist"}, {"kind": "battle_flag", "target_id": "INPUT_BRAVE_LOAD_CENTER"}]},
+    {"binding_id": "BIND_C01E03_DIEDIE_PAD_TO_PUBLIC_INPUT", "stable_object_id": "OBJ_C01E03_DIEDIE_PAD_FEED", "label": "跌跌底垫绿色输入", "targets": [{"kind": "unit", "target_id": "diedie"}, {"kind": "battle_flag", "target_id": "INPUT_DIEDIE_PAD_GREEN"}]},
+    {"binding_id": "BIND_C01E03_FOURTH_RIB_TO_ARM_BRIDGE", "stable_object_id": "OBJ_C01E03_FOURTH_RIB_ALIGNMENT", "label": "第四筋共同验证与切筋桥面", "targets": [{"kind": "unit", "target_id": "right_arm"}, {"kind": "battle_flag", "target_id": "VERIFY_FOURTH_RIB"}, {"kind": "battle_flag", "target_id": "DOUDENG_CUT_MAIN_TENDON"}]}
+  ],
+  "machine_claim_cues": [
+    {
+      "cue_id": "CUE_C01E03_GUARDIAN_RELEASES_REPAIRABLE_ARM",
+      "unit_id": "guardian_z",
+      "visible_action": "馆守Z只抬肩、送拳一次，随后允许兜灯切断仍可修的主筋，把自己的右臂永久留成五个人脚下的桥。"
+    }
+  ],
+  "units": [
+    {"id": "guardian_z", "canon_entity_id": "V353U001", "name": "馆守Z / 18m半跪巨神", "team": "player", "plane": "L1", "cell": [10, 8], "hp": 1, "move": 0, "map_token": "Z", "scenario_role": "giant_fixed_2x2", "no_hp_ui": true, "weapons": []},
+    {"id": "diedie", "canon_entity_id": "V353U038", "name": "跌跌 / 底部垫片", "team": "player", "plane": "L1", "cell": [8, 6], "hp": 1, "move": 0, "map_token": "跌", "scenario_role": "low_post_support", "no_hp_ui": true, "weapons": []},
+    {"id": "machine_dog", "canon_entity_id": "V353U040", "name": "机器犬 / 冷却软管", "team": "player", "plane": "L1", "cell": [7, 6], "hp": 1, "move": 0, "map_token": "犬", "scenario_role": "low_post_support", "no_hp_ui": true, "weapons": []},
+    {"id": "jicun", "canon_entity_id": "CH_JICUN", "name": "纪存 / 撤离几何", "team": "player", "plane": "L2", "cell": [10, 5], "hp": 1, "move": 0, "map_token": "纪", "scenario_role": "l2_human", "no_hp_ui": true, "weapons": []},
+    {"id": "tangjiao", "canon_entity_id": "CH_TANGJIAO", "name": "唐胶 / 材料与敲击", "team": "player", "plane": "L2", "cell": [10, 6], "hp": 1, "move": 0, "map_token": "唐", "scenario_role": "l2_human", "no_hp_ui": true, "weapons": []},
+    {"id": "doudeng", "canon_entity_id": "CH001", "name": "兜灯 / 硬停与切筋", "team": "player", "plane": "L2", "cell": [10, 7], "hp": 1, "move": 0, "map_token": "兜", "scenario_role": "l2_human", "no_hp_ui": true, "weapons": []},
+    {"id": "fire_a", "name": "消防接驳员A / 低压泵", "team": "player", "plane": "L2", "cell": [11, 5], "hp": 1, "move": 0, "map_token": "A", "scenario_role": "l2_human", "no_hp_ui": true, "weapons": []},
+    {"id": "fire_b", "name": "消防接驳员B / 接驳设备", "team": "player", "plane": "L2", "cell": [11, 7], "hp": 1, "move": 0, "map_token": "B", "scenario_role": "l2_human", "no_hp_ui": true, "weapons": []},
+    {"id": "fire_bridge", "canon_entity_id": "V353U034", "name": "消防架桥机 / SEG3固定支援", "team": "player", "plane": "L1", "cell": [12, 9], "hp": 1, "move": 0, "map_token": "桥", "scenario_role": "fixed_support_left_leg_overload", "no_hp_ui": true, "weapons": []},
+    {"id": "brave_fist", "canon_entity_id": "MECHA_BRAVE_FIST_PROTOTYPE", "name": "豪司 / 勇拳试作机", "team": "player", "plane": "L1", "cell": [3, 9], "hp": 0, "move": 1, "map_token": "勇", "scenario_role": "one_step_beam_anchor", "no_hp_ui": true, "weapons": []},
+    {"id": "baihan", "canon_entity_id": "ENEMY_C01_SEAL_COMMANDER_BAIHAN", "name": "白函 / 具身封存指挥机", "team": "enemy", "plane": "L1", "cell": [8, 9], "hp": 1, "move": 0, "map_token": "函", "scenario_role": "geometry_boss", "no_hp_ui": true, "intent_target_id": "l2_egress", "intent_verb": "内收", "weapons": []},
+    {"id": "right_arm", "canon_entity_id": "MECHA_GUARDIAN_FLYING_FIST_UNIT", "name": "馆守Z右臂 / 可修身体", "team": "object", "plane": "L1", "cell": [9, 7], "hp": 0, "move": 0, "map_token": "臂", "scenario_role": "map_body_five_state", "no_hp_ui": true, "weapons": []},
+    {"id": "cargo_pump", "name": "低压泵接驳件", "team": "object", "plane": "L2", "cell": [12, 5], "hp": 1, "move": 0, "map_token": "泵", "scenario_role": "cargo_weight_2", "no_hp_ui": true, "weapons": []},
+    {"id": "cargo_gear", "name": "消防接驳设备", "team": "object", "plane": "L2", "cell": [12, 7], "hp": 1, "move": 0, "map_token": "装", "scenario_role": "cargo_weight_2", "no_hp_ui": true, "weapons": []}
+  ],
+  "objectives": [
+    {"id": "l2_egress", "name": "L2五人唯一退路", "plane": "L2", "cell": [9, 6], "integrity": 1, "required": true, "scenario_role": "bridge_entry"},
+    {"id": "l1_south_safe", "name": "L1南侧安全承台", "plane": "L1", "cell": [8, 6], "integrity": 1, "required": true, "scenario_role": "bridge_exit"},
+    {"id": "secondary_beam", "name": "SEG3—勇拳连续次梁", "plane": "L1", "cell": [6, 9], "integrity": 1, "required": true, "scenario_role": "continuous_beam"}
+  ],
+  "scenario_contract": {
+    "source_grid": "16x12_two_plane_runtime_with_declared_vertical_edges",
+    "planes": ["L1", "L2"],
+    "structure_tick_limit": 5,
+    "search_tick_limit": 4,
+    "bridge_tick_limit": 23,
+    "initial_population": {"outside": 29, "inherited_l2": 5, "later_l1": 1, "peak": 6, "bridge": 5},
+    "right_arm_state_order": ["ARM_ATTACHED_MAINTENANCE", "ARM_RELEASED_ON_SEG3_CRADLE", "ARM_SUSPENDED_RECOVERABLE", "ARM_CUT_COMPOSITE_BRIDGE_ACTIVE", "ARM_OLD_SITE_COMMITTED"],
+    "beam_owner_order": ["SEG3", "SEG3_PLUS_BRAVE", "BRAVE"],
+    "stage_requirements": {
+      "1": {"required": ["GUARDIAN_SHOULDER_12"], "one_of": [["SUPPORT_DIEDIE_PAD", "SUPPORT_DOG_HOSE"]]},
+      "2": {"required": ["BRAVE_SIGN_EMERGENCY_LOAD"]},
+      "3": {"one_of": [["LANE_UPPER_EQUIPMENT", "LANE_LOWER_PERSON"]]},
+      "4": {"required": ["CANCEL_FULL_SHOULDER", "DOUDENG_HARD_STOP", "TANGJIAO_MATERIAL_CHECK", "BRAVE_LOAD_CHECK", "JICUN_EVAC_GEOMETRY", "SEG3_HOLD_REVERSE", "BRAVE_CONTACT_BEAM", "BRAVE_CLAIM_BEAM", "SEG3_PIVOT_CRADLE", "GUARDIAN_RELEASE_ARM"]},
+      "5": {"required": ["GUARDIAN_RAIL_STRIKE"], "one_of": [["DOUDENG_COOLANT_BLEED", "DIEDIE_PAD_RESEAT"]]},
+      "6": {"required": ["RIB_CHECK_UPPER", "RIB_CHECK_OUTER", "RIB_CHECK_THIRD", "MEMORY_FIND_HIDDEN_PANEL", "INPUT_TANGJIAO_KNOCK", "INPUT_BRAVE_LOAD_CENTER", "INPUT_DIEDIE_PAD_GREEN", "VERIFY_FOURTH_RIB"]},
+      "7": {"required": ["DOUDENG_CUT_MAIN_TENDON", "TANGJIAO_ENTER_ARM_MID", "CROSS_TANGJIAO", "CROSS_CARGO1_FIRE_A", "CROSS_CARGO2_FIRE_B", "CROSS_DOUDENG", "CROSS_JICUN"]},
+      "8": {"required": ["FINALIZE_RESCUE"]}
+    },
+    "stage_enemy_intents": {
+      "1": {"actor_id": "baihan", "target_plane": "L2", "target_cell": [9, 6], "label": "主框压住旧楼梯", "verb": "封死退路"},
+      "2": {"actor_id": "baihan", "target_plane": "L1", "target_cell": [3, 9], "label": "西侧回路将在豪司身后闭合", "verb": "闭合西路"},
+      "3": {"actor_id": "baihan", "target_plane": "L2", "target_cell": [12, 6], "label": "双标尺同时预量人和设备", "verb": "预量通道"},
+      "4": {"actor_id": "baihan", "target_plane": "L1", "target_cell": [6, 9], "label": "Owner一旦断档就切走次梁", "verb": "切离次梁"},
+      "5": {"actor_id": "baihan", "target_plane": "L1", "target_cell": [9, 7], "label": "受击后内收索将锁死回收轨", "verb": "锁死回收轨"},
+      "6": {"actor_id": "baihan", "target_plane": "L2", "target_cell": [9, 6], "label": "搜索窗耗尽就回收仍可修右臂", "verb": "推进标尺"},
+      "7": {"actor_id": "baihan", "target_plane": "L1", "target_cell": [8, 6], "label": "桥面相遇或超载即闭合内收索", "verb": "收紧复合桥"},
+      "8": {"actor_id": "baihan", "target_plane": "L1", "target_cell": [4, 9], "label": "撤离前尝试带走勇拳数据盒", "verb": "回收数据"}
+    },
+    "action_catalog": {
+      "SUPPORT_DIEDIE_PAD": {"stage": 1, "order": 10, "actor_id": "diedie", "label": "主动支援：压实底部垫片", "message": "跌跌获得主动带宽；T2与T4各抵消1点楼层位移。"},
+      "SUPPORT_DOG_HOSE": {"stage": 1, "order": 10, "actor_id": "machine_dog", "label": "主动支援：维持冷却软管", "message": "机器犬获得主动带宽；T1与T5各抵消2点热量。"},
+      "GUARDIAN_SHOULDER_12": {"stage": 1, "order": 20, "actor_id": "guardian_z", "label": "只抬右肩12度", "requires_one_of": ["SUPPORT_DIEDIE_PAD", "SUPPORT_DOG_HOSE"], "message": "馆守Z只抬肩。L2先下沉，B1六处旧对位痕才淡淡亮起。"},
+
+      "BRAVE_SIGN_EMERGENCY_LOAD": {"stage": 2, "order": 10, "actor_id": "brave_fist", "label": "实名签署紧急承力", "message": "口号额度冻结。豪司把没喊出的气用在肩背承梁上。"},
+
+      "LANE_UPPER_EQUIPMENT": {"stage": 3, "order": 10, "actor_id": "tangjiao", "label": "上层设备通道：更快、无失足恢复", "message": "唐胶拨开瞄准设备夹具的标尺，低压泵得以提前就位。"},
+      "LANE_LOWER_PERSON": {"stage": 3, "order": 10, "actor_id": "diedie", "label": "下层人员缓冲：较慢、一次恢复", "message": "跌跌顶住人员缓冲边缘；设备较慢，但保留一次退回L2的恢复。"},
+
+      "CANCEL_FULL_SHOULDER": {"stage": 4, "order": 10, "actor_id": "jicun", "targeting_mode": "private_shoulder_cancel", "target_markers": [{"plane": "L1", "cell": [10, 8], "label": "整肩12度以上预览 / 实体断开", "resolution": "commit"}], "label": "预览整肩后按住实体断开键", "message": "整肩预览把五个蓝点同时标红。纪存按住实体断开键，取消只有自己能执行的动作。"},
+      "DOUDENG_HARD_STOP": {"stage": 4, "order": 20, "actor_id": "doudeng", "label": "确认供电硬停", "requires": ["CANCEL_FULL_SHOULDER"], "message": "兜灯保留硬停权：任何越过一次动作的供电都会被切断。"},
+      "TANGJIAO_MATERIAL_CHECK": {"stage": 4, "order": 30, "actor_id": "tangjiao", "label": "确认筋束与刀口材料", "requires": ["DOUDENG_HARD_STOP"], "message": "唐胶确认筋束仍可修，也确认快速释放不会先撕断副筋。"},
+      "BRAVE_LOAD_CHECK": {"stage": 4, "order": 40, "actor_id": "brave_fist", "label": "确认勇拳承梁中心", "requires": ["TANGJIAO_MATERIAL_CHECK"], "message": "勇拳把肩背负载压到中心线，只保留有限推程。"},
+      "JICUN_EVAC_GEOMETRY": {"stage": 4, "order": 50, "actor_id": "jicun", "label": "公开撤离几何", "requires": ["BRAVE_LOAD_CHECK"], "message": "纪存只负责撤离几何；两名接驳员分别复核压力与货物。"},
+      "SEG3_HOLD_REVERSE": {"stage": 4, "order": 60, "actor_id": "fire_bridge", "label": "SEG3保持反折，四足零位移", "requires": ["JICUN_EVAC_GEOMETRY"], "message": "载荷Owner：SEG3。左前腿仍过载，四只脚没有换格。"},
+      "BRAVE_CONTACT_BEAM": {"stage": 4, "order": 70, "actor_id": "brave_fist", "required_plane": "L1", "required_cells": [[4, 9]], "position_prompt": "勇拳要先从L1(3,9)锚位移动一格，肩背贴住L1(4,9)次梁端。", "label": "勇拳肩背接触次梁", "requires": ["SEG3_HOLD_REVERSE"], "message": "载荷Owner：SEG3 + 勇拳。没有一帧让次梁失去主人。"},
+      "BRAVE_CLAIM_BEAM": {"stage": 4, "order": 80, "actor_id": "brave_fist", "label": "吃进预载 / BEAM_CLAIMED", "requires": ["BRAVE_CONTACT_BEAM"], "message": "BEAM_CLAIMED变绿。载荷Owner正式转到勇拳。"},
+      "SEG3_PIVOT_CRADLE": {"stage": 4, "order": 90, "actor_id": "fire_bridge", "label": "SEG3绕固定轴翻为托槽", "requires": ["BRAVE_CLAIM_BEAM"], "message": "勇拳继续承梁，SEG3只绕固定关节旋转成右臂托槽。"},
+      "GUARDIAN_RELEASE_ARM": {"stage": 4, "order": 100, "actor_id": "guardian_z", "label": "右臂快速释放到SEG3托槽", "requires": ["SEG3_PIVOT_CRADLE"], "message": "右臂离肩但尚未飞出；主筋仍活，所有人只同意一次。"},
+
+      "GUARDIAN_RAIL_STRIKE": {"stage": 5, "order": 10, "actor_id": "guardian_z", "targeting_mode": "single_marker", "target_markers": [{"plane": "L1", "cell": [8, 9], "label": "白函右主框 / 破框点", "resolution": "commit"}], "label": "维修轨高速送拳 / 选择破框点", "message": "飞拳撞裂白函右肩并错开主框。回收轨随即锁死，右臂没有回来。"},
+      "DOUDENG_COOLANT_BLEED": {"stage": 5, "order": 20, "actor_id": "doudeng", "support_route": "DIEDIE_PAD_ROUTE", "requires": ["GUARDIAN_RAIL_STRIKE"], "label": "未获优先补位：泄放肩部冷却液", "message": "垫片路线把位移压住；兜灯接手未被照顾的热量，将热压到6。"},
+      "DIEDIE_PAD_RESEAT": {"stage": 5, "order": 20, "actor_id": "diedie", "support_route": "DOG_HOSE_ROUTE", "requires": ["GUARDIAN_RAIL_STRIKE"], "label": "未获优先补位：重新压实底垫", "message": "软管路线把热量压住；跌跌接手未被照顾的位移，将位移压到4。"},
+
+      "RIB_CHECK_UPPER": {"stage": 6, "order": 10, "actor_id": "jicun", "embedded_only": true, "label": "检查上腔筋：排除", "message": "上腔筋回声太空，承力会把人推回白函框内。搜索1/4。"},
+      "RIB_CHECK_OUTER": {"stage": 6, "order": 20, "actor_id": "jicun", "embedded_only": true, "requires": ["RIB_CHECK_UPPER"], "label": "检查外甲梁：排除", "message": "外甲梁只承外壳，不能承担五人和单件货物。搜索2/4。"},
+      "RIB_CHECK_THIRD": {"stage": 6, "order": 30, "actor_id": "jicun", "embedded_only": true, "requires": ["RIB_CHECK_OUTER"], "label": "检查第三肋：热脆排除", "message": "第三肋被热风道烤脆。三条看得见的答案都不成立。搜索3/4。"},
+      "MEMORY_FIND_HIDDEN_PANEL": {"stage": 6, "order": 40, "actor_id": "jicun", "embedded_only": true, "requires": ["RIB_CHECK_THIRD"], "label": "低置信身体记忆：只找隐藏隔板", "message": "掌心反灼指向一块没有编号的隔板。它只找到门，没有替任何人下决定。"},
+      "INPUT_TANGJIAO_KNOCK": {"stage": 6, "order": 50, "actor_id": "tangjiao", "embedded_only": true, "requires": ["MEMORY_FIND_HIDDEN_PANEL"], "label": "外部敲击：短、短、长", "message": "唐胶给出短—短—长回声，隐藏副筋与外部材料纹理对上。"},
+      "INPUT_BRAVE_LOAD_CENTER": {"stage": 6, "order": 60, "actor_id": "brave_fist", "embedded_only": true, "requires": ["MEMORY_FIND_HIDDEN_PANEL"], "label": "勇拳载荷：保持居中", "message": "豪司没有再抬梁，只把负载留在中心线。"},
+      "INPUT_DIEDIE_PAD_GREEN": {"stage": 6, "order": 70, "actor_id": "diedie", "embedded_only": true, "requires": ["MEMORY_FIND_HIDDEN_PANEL"], "label": "底部垫片：绿色", "message": "跌跌用身体压住垫片，绿色没有闪回黄线。"},
+      "FORCE_INVALID_ALIGNMENT": {"stage": 6, "order": 80, "actor_id": "jicun", "embedded_only": true, "requires": ["MEMORY_FIND_HIDDEN_PANEL"], "label": "危险教学：输入未齐时强行验证", "message": "强行验证会耗尽第四格并回到探索入口。"},
+      "VERIFY_FOURTH_RIB": {"stage": 6, "order": 90, "actor_id": "jicun", "embedded_only": true, "requires": ["INPUT_TANGJIAO_KNOCK", "INPUT_BRAVE_LOAD_CENTER", "INPUT_DIEDIE_PAD_GREEN"], "label": "共同验证第四筋", "message": "第四筋只能承一人和单件货物；主筋仍可修。切前检查点成立。"},
+
+      "DOUDENG_CUT_MAIN_TENDON": {"stage": 7, "order": 10, "actor_id": "doudeng", "targeting_mode": "single_marker", "target_markers": [{"plane": "L2", "cell": [9, 6], "label": "副筋外2mm / 正确刀口", "resolution": "commit"}, {"plane": "L2", "cell": [10, 6], "label": "肩侧主筋 / 会抽走桥面", "resolution": "probe", "message": "太靠肩。馆守Z一回正，桥会从人脚下抽走；兜灯没有下刀，行动仍保留。"}], "label": "标定刀口 / 主动切断主筋", "message": "工具电机停下。右臂、1.4米滑架和双安全索成为4.2米复合桥。"},
+      "PREVIEW_BRIDGE_OVERLOAD": {"stage": 7, "order": 15, "actor_id": "guardian_z", "requires": ["DOUDENG_CUT_MAIN_TENDON"], "label": "危险教学：桥上追加巨型动作", "message": "追加巨型动作会立即关闭三段桥并回到切后检查点。"},
+      "TANGJIAO_ENTER_ARM_MID": {"stage": 7, "order": 20, "actor_id": "tangjiao", "requires": ["DOUDENG_CUT_MAIN_TENDON"], "targeting_mode": "tang_enter_mid", "label": "唐胶先行：L2搭接至臂中", "message": "唐胶先走两段，到右臂中点停住；现在可以直出，也可以在下层人员路线实测一次恢复。"},
+      "TANGJIAO_LOWER_MISSTEP_RECOVER": {"stage": 7, "order": 22, "actor_id": "tangjiao", "lane_route": "LOWER_PERSON_ROUTE", "requires": ["TANGJIAO_ENTER_ARM_MID"], "targeting_mode": "tang_misstep", "label": "人员缓冲实测：失足退回L2搭接", "message": "唐胶从臂中滑回L2搭接，没有坠落；一次恢复已经用掉。"},
+      "TANGJIAO_REENTER_ARM_MID": {"stage": 7, "order": 24, "actor_id": "tangjiao", "lane_route": "LOWER_PERSON_ROUTE", "requires": ["TANGJIAO_LOWER_MISSTEP_RECOVER"], "targeting_mode": "tang_reenter", "label": "从L2搭接重新进入臂中", "message": "唐胶重新回到右臂中点；人员缓冲不再提供第二次恢复。"},
+      "CROSS_TANGJIAO": {"stage": 7, "order": 26, "actor_id": "tangjiao", "requires_one_of": ["TANGJIAO_ENTER_ARM_MID", "TANGJIAO_REENTER_ARM_MID"], "targeting_mode": "tang_exit_clear", "bridge_clear_cell": [3, 6], "label": "唐胶：由臂中到L1搭接并清桥", "message": "唐胶从臂中抵达L1滑架端，清空桥面并准备接货。"},
+      "CROSS_CARGO1_FIRE_A": {"stage": 7, "order": 30, "actor_id": "fire_a", "requires": ["CROSS_TANGJIAO"], "targeting_mode": "bridge_traverse", "bridge_companion_id": "cargo_pump", "bridge_clear_cell": [2, 6], "label": "低压泵与A：逐段单独过桥", "message": "整条桥只承一枚weight2货物；A随后清桥。"},
+      "CROSS_CARGO2_FIRE_B": {"stage": 7, "order": 40, "actor_id": "fire_b", "requires": ["CROSS_CARGO1_FIRE_A"], "targeting_mode": "bridge_traverse", "bridge_companion_id": "cargo_gear", "bridge_clear_cell": [2, 5], "label": "消防设备与B：逐段单独过桥", "message": "第二件货物和B依次清桥，没有相遇、逆行或把人当货。"},
+      "CROSS_DOUDENG": {"stage": 7, "order": 50, "actor_id": "doudeng", "requires": ["CROSS_CARGO2_FIRE_B"], "targeting_mode": "bridge_traverse", "bridge_clear_cell": [3, 5], "label": "兜灯：逐段过桥", "message": "兜灯最后看了一次仍可修的断口，才从馆守Z的右臂上走过去。"},
+      "CROSS_JICUN": {"stage": 7, "order": 60, "actor_id": "jicun", "requires": ["CROSS_DOUDENG"], "targeting_mode": "bridge_traverse", "bridge_clear_cell": [3, 4], "label": "纪存最后逐段清桥", "message": "馆守Z用导览音报告：右臂已转作临时通道。请慢行。"},
+
+      "FINALIZE_RESCUE": {"stage": 8, "order": 10, "actor_id": "jicun", "targeting_mode": "single_marker", "target_markers": [{"plane": "L1", "cell": [4, 9], "label": "勇拳拖援位 / 豪司安全", "resolution": "commit"}], "label": "核对西侧拖援与六人安全", "message": "白函用裂框支撑自己带伤撤离；勇拳被企业锁死。Battle Clear只产生本地态。"}
+    },
+    "hard_nonclaims": [
+      "NO_29_OUTSIDE_RESPAWN",
+      "NO_HAOSI_ON_L2_OR_BRIDGE",
+      "NO_FULL_SHOULDER_CONFIRM",
+      "NO_GUARDIAN_TRANSLATION_OR_SECOND_GIANT_ATTACK",
+      "NO_BRAVE_FINISHER_PERSONALITY_OR_FORMAL_JOIN",
+      "NO_RIGHT_ARM_PERSISTENCE_BEFORE_RT035",
+      "NO_PEOPLE_AS_CARGO"
+    ]
+  },
+  "mid_events": [],
+  "patch_catalog": {}
+}

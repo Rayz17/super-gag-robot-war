@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-24",
+  "revision": "crane-mirror-source-r1",
+  "existing_batch": "design-followthrough-r1.json",
+  "reader": "crane-mirror-source-r1.html",
+  "source_package": "crane-mirror-source-20261024-r1.zip",
+  "generation_mode": "built-in image_gen",
+  "basis": "crane-mirror-design-basis-r1.json",
+  "items": [
+    {
+      "id": "M07",
+      "name": "市政吊装机",
+      "canon_entity": "V353U031",
+      "parent": {
+        "id": "M07",
+        "file": "samples/M07-public-works-master-r1b.png",
+        "sha256": "3cb453c3259e123d0c05a5b39d5cd5743e6dc84672cb99f4e8fc69c7b8d7d3fa",
+        "role": "已有吊装机主形与作业/行驶两态；本轮保留设计补收拢态多视"
+      },
+      "views": [
+        {
+          "id": "FRONT",
+          "label": "正面 · 收拢行驶",
+          "file": "samples/M07-front-r2b.png",
+          "sha256": "7d1f3f6ac1c07d74c349f32187521cb396c0793955425fe16accb9f6330db07d",
+          "pixel_size": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-48281e95-c64f-4825-997b-0ab90a4cbb70.png",
+          "user_accepted": false,
+          "runtime_integrated": false,
+          "handoff_sent": false
+        },
+        {
+          "id": "SIDE",
+          "label": "右侧 · 收拢行驶",
+          "file": "samples/M07-side-r2.png",
+          "sha256": "bf33c6f2a8b88e4d96537b5e8f6c3aab0792ebd28b83b549383d70d2b55abfbb",
+          "pixel_size": [
+            1536,
+            1024
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-a933cb50-9f37-4f87-bec8-1bf09d2cd06c.png",
+          "user_accepted": false,
+          "runtime_integrated": false,
+          "handoff_sent": false
+        },
+        {
+          "id": "REAR",
+          "label": "背面 · 收拢行驶",
+          "file": "samples/M07-rear-r2.png",
+          "sha256": "da00c9ddcc3bf84e80986cae0c9e5c8629b1917a522abc6e9c4165bdc2158aa3",
+          "pixel_size": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-d9274a33-254f-4cfb-9ac4-4c0ea1270705.png",
+          "user_accepted": false,
+          "runtime_integrated": false,
+          "handoff_sent": false
+        }
+      ],
+      "source_scope": "沿R1b主形补收拢行驶态多视，源设计尚未代签采用"
+    },
+    {
+      "id": "M12",
+      "name": "镜星",
+      "canon_entity": "V353U046",
+      "file": "samples/M12-mirror-airframe-master-r1.png",
+      "sha256": "369ebb7b49ffe9e21b026aa7be13231eeba73eb310bbaee0b0a8746ebcc1314b",
+      "views": [
+        {
+          "id": "MASTER",
+          "label": "整机 / 头部 / 棱镜收放 / 航空形态试案",
+          "file": "samples/M12-mirror-airframe-master-r1.png",
+          "sha256": "369ebb7b49ffe9e21b026aa7be13231eeba73eb310bbaee0b0a8746ebcc1314b",
+          "pixel_size": [
+            1536,
+            1024
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-b87b36f2-4941-4007-a670-f0c73c298794.png",
+          "user_accepted": false,
+          "runtime_integrated": false,
+          "handoff_sent": false
+        }
+      ],
+      "family_status": "M08_airframe_shared_skeleton_proposal_not_Canon",
+      "source_scope": "保留旧头与颜色，尝试航空共架与可收放干扰棱镜；当前家族选择仍为试案"
+    }
+  ],
+  "source_refs": [
+    {
+      "id": "M07",
+      "file": "samples/M07-public-works-master-r1b.png",
+      "sha256": "3cb453c3259e123d0c05a5b39d5cd5743e6dc84672cb99f4e8fc69c7b8d7d3fa",
+      "role": "已有吊装机主形与作业/行驶两态；本轮保留设计补收拢态多视"
+    },
+    {
+      "id": "M12",
+      "file": "refs/M12-mirror-original-20261024.jpg",
+      "sha256": "19b8747bb48134cd35b5fe6e8090bfab50e2552cfdbaf9a848825bcd88773e0c",
+      "role": "现有镜星菱形独眼头、紫白配色和棱镜识别"
+    },
+    {
+      "id": "M12",
+      "file": "samples/M08-front-airframe-r6.png",
+      "sha256": "51b1c0a8723bc55478c9f76d0abde557f5d4d2d1678236fc98e25676ed2a4566",
+      "role": "已定雷翎航空机架组织供共架试案，不改M08源，也不宣布已定同模"
+    },
+    {
+      "id": "M12",
+      "file": "samples/M09-curved-labor-r2.png",
+      "sha256": "9355ad11dda42d079ab9a55a98ee39d904aedcb564ca88c1354ad4c170180288",
+      "role": "项目墨线/色块/旧化画法参考，不取机体头型、颜色或职业"
+    }
+  ],
+  "prompt_set": [
+    "crane-mirror-source-prompts-r1.json",
+    "crane-mirror-derived-prompts-r1.json",
+    "crane-mirror-rear-prompt-r1.json"
+  ],
+  "author_review": "crane-mirror-author-review-r1.json",
+  "experience": {
+    "start": "灰崎/消防源设计已发主对话；M07多视仍欠，镜星只有旧紫色棱镜稿且母体关系未确定。",
+    "input": "保留吊装母稿补收拢态正侧背；核对镜星当前身份和旧稿，选择航空机架共架试案，并给棱镜实物连接/收放。",
+    "visible_consequence": "四张新源图可查看：吊装行驶态设备对应，镜星整机/独眼头/干扰棱镜两态/航空形态同页。",
+    "next": "当前新稿留本会话看方向；选定后再补镜星同形多视/部件与动作，三视和源设计不代替机构或运行验收。"
+  },
+  "historical_attempts": [
+    {
+      "id": "M07",
+      "file": "samples/M07-front-axis-attempt-r2.png",
+      "reason": "吊臂横摆/吊钩垂落，与行驶态前后轴不一致",
+      "current_source": false
+    }
+  ],
+  "source_design_user_accepted": false,
+  "canon_changed": false,
+  "runtime_assets_modified": false,
+  "handoff_sent": false
+}

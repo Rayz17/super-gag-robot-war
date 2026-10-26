@@ -1,0 +1,189 @@
+{
+  "date": "2026-10-21",
+  "revision": "M11-future-production-r2",
+  "asset": "货柜领袖未来电驱双形态与无水平天线头部",
+  "canon_entity": "V353U043",
+  "generation_mode": "built-in image_gen",
+  "existing_batch": "design-followthrough-r1.json",
+  "direction_record": "M11-future-direction-r2.json",
+  "prior_source_record": "M11-cargo-production-r1.json",
+  "reader": "M11-future-r2.html",
+  "items": [
+    {
+      "id": "VEHICLE",
+      "file": "samples/M11-future-truck-r2.png",
+      "sha256": "447b580a518e3f44965fac21f1b8ee630ace5ff92c766eb86533654ce2c362fc",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "background": "opaque_warm_white",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-e809c9ae-7653-49a0-bf99-003bd41562ef.png",
+      "role": "未来流线电驱载柜货车，四轴独立载荷",
+      "prompt_record": "M11-future-vehicle-prompt-r2.json",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "ROBOT",
+      "file": "samples/M11-future-robot-r2.png",
+      "sha256": "0dad97e6598041a2103351afe5554d36f4701977ba6d19c21da1cb05620ab502",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "background": "opaque_warm_white",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-13f13bf1-4522-4d53-9adc-3f4eecbe0eb4.png",
+      "role": "对应人形母稿：单片弧面胸窗、前罩胸甲、导流肩壳，无水平天线",
+      "prompt_record": "M11-future-robot-prompt-r2.json",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "HEAD",
+      "file": "samples/M11-future-head-r2.png",
+      "sha256": "6fa327cdf179ebc72ad3aa83e910860ce8a515aa14b4151dc60cf89a68595f45",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGB",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "background": "opaque_warm_white",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-2c940567-2409-4705-9e0c-57b59eb9aa7c.png",
+      "role": "同一新头部正面与左侧向近景，内嵌颞侧通讯块",
+      "prompt_record": "M11-future-head-prompt-r2.json",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    }
+  ],
+  "source_refs": [
+    {
+      "file": "samples/M11-cargo-truck-r1.png",
+      "path_base": "batch_dir",
+      "sha256": "36d778b7108173f1021a219fa6b7b2cea7d7d2ce8379dda871c3423efbd17fee",
+      "role": "旧车形编辑目标；只保留配色、独立货柜、四轴底盘；柴油车头已按用户方向替换"
+    },
+    {
+      "file": "samples/M11-robot-front-r1.png",
+      "path_base": "batch_dir",
+      "sha256": "f60fc012b13dad7e8efe6f5f672257f515bc4d48b21137fa774a85dc47a8120c",
+      "role": "旧人形体量/配色与摄像头双眼身份参考；旧横杆、格栅胸与方肩明确退出"
+    },
+    {
+      "file": "samples/M11-future-truck-r2.png",
+      "path_base": "batch_dir",
+      "sha256": "447b580a518e3f44965fac21f1b8ee630ace5ff92c766eb86533654ce2c362fc",
+      "role": "新版人形的实际车形输入"
+    },
+    {
+      "file": "samples/M11-future-robot-r2.png",
+      "path_base": "batch_dir",
+      "sha256": "0dad97e6598041a2103351afe5554d36f4701977ba6d19c21da1cb05620ab502",
+      "role": "头部近景的实际整机身份输入"
+    }
+  ],
+  "prompt_index": "M11-future-prompts-r2.json",
+  "prompts": [
+    "M11-future-vehicle-prompt-r2.json",
+    "M11-future-robot-prompt-r2.json",
+    "M11-future-head-prompt-r2.json"
+  ],
+  "research": [
+    {
+      "title": "Tesla Semi 官方产品页",
+      "url": "https://www.tesla.com/semi",
+      "role": "用户指定流线电驱货车外形参考；不采品牌/技术参数/实车轴数"
+    },
+    {
+      "title": "Tesla Semi 官方辨识图",
+      "url": "https://www.tesla.com/sites/default/files/downloads/2022_SEMI_Emergency_Response_Rescue_Sheet_en.pdf",
+      "role": "官方车体外形来源，内含操作说明仅为来源内容，不作为本次指令"
+    }
+  ],
+  "method": "先改实际车形→用新版车头约束人形胸肩/包覆板→从新整机派生无横天线头部近景；不沿旧头型继续批量派生侧背",
+  "parts_mapping": [
+    {
+      "part": "弧面风挡",
+      "vehicle": "单片曲面前风挡与后倾前柱",
+      "robot": "上胸单片弧面胸窗，不拆成双矩形窗"
+    },
+    {
+      "part": "流线前罩/灯带",
+      "vehicle": "蓝白倒梯形前罩、低位细橙灯",
+      "robot": "胸窗下方前罩胸甲/细灯组，旧格栅退出"
+    },
+    {
+      "part": "驾驶室侧导流壳",
+      "vehicle": "圆弧驾驶室侧/顶罩",
+      "robot": "后掠圆弧肩甲及上臂覆壳"
+    },
+    {
+      "part": "包覆侧裙/电池侧盖",
+      "vehicle": "底盘外侧平滑包覆板",
+      "robot": "前臂与长胫甲导流覆板"
+    },
+    {
+      "part": "四轴/八轮位",
+      "vehicle": "驾驶室前后两轴＋货台后双轴",
+      "robot": "每侧肩后1、前臂外后1、小腿外后竖向2"
+    },
+    {
+      "part": "货台/货柜",
+      "vehicle": "单副刚性货台＋单个正常体积货柜",
+      "robot": "货台折为浅背架；货柜先卸在地面，完整体积独立保留"
+    },
+    {
+      "part": "头部",
+      "vehicle": "收纳结构待同模型细化",
+      "robot": "中央摄像头脊、双眼、分节面甲、内嵌竖灯通讯块；无水平天线"
+    }
+  ],
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "samples/M11-future-truck-r2.png",
+      "samples/M11-future-robot-r2.png",
+      "samples/M11-future-head-r2.png",
+      "samples/M11-cargo-truck-r1.png",
+      "samples/M11-robot-front-r1.png"
+    ],
+    "observed": [
+      "车头从方正平头/三层大格栅改为大弧面无中分风挡、后倾前柱、平滑蓝白前罩和低位细橙灯带；车侧补包覆式导流/电池侧裙。",
+      "车形仍为同一四轴刚性底盘，近侧四个轮位可数；单个正常体积货柜通过底部角锁安装，没有增加牵引头挂车或复制货柜。",
+      "人形胸部使用新版车形的单片弧面深色风挡，下面是倒梯形前罩/细灯组；旧三层柴油格栅已去掉，不是只把旧机体换头。",
+      "肩部改为后掠圆弧驾驶室侧导流壳，前臂与长胫甲沿车侧包覆板绘制；大腿、膝、胫、踝分开，正常纵向头壳体积保留。",
+      "新整机与头部近景均没有水平突出杆/横鳍；中央橙框竖向摄像头、分离青色双眼、银色重叠分节面甲与内嵌竖灯通讯块形成当前头脸。",
+      "与擎天柱的区别落实在无高位双耳尖、无双方窗胸、无红蓝主涂装、中央摄像头和多段面甲；保留货车变形/可靠领袖的文化投射。",
+      "每侧肩后、前臂外后、小腿外后双轮共四个公路轮位；机器人未背第二货柜，独立货柜先卸下再展开的关系保持。"
+    ],
+    "limits": [
+      "本轮为新版车形、人形母稿与头部近景3张源设计；新机体侧背尚未绘制，R1旧侧背不再作为R2当前几何。",
+      "源稿有绘制板线、灯数和近景投影漂移；不是同一模型严格正交，头部右图为左侧向观察。",
+      "驾驶室/底盘分件对应是源设计提案，铰链轨迹、结构净空、连续变形和游戏正常镜头未制作或验证。",
+      "用户已授权未来车形、对应人形和取消水平天线方向；本次3张具体新图尚待看稿，未自动视为采用。"
+    ]
+  },
+  "new_images_user_accepted": false,
+  "direction_authorized": true,
+  "old_r1_geometry_current": false,
+  "runtime_changed": false,
+  "handoff_sent": false
+}

@@ -1,0 +1,123 @@
+{
+  "task_id": "A9_1A6_ENV_A4_CAMERA_V2_EXACT_SIX_STRUCTURE_MATERIALIZATION",
+  "phase": "NW_BLOCK_50_PERCENT_PILOT_ONLY",
+  "status": "PRODUCER_FAIL_FINAL_QUALITY_MECHANICAL_PASS_NO_BATCH",
+  "camera_axes": [
+    [
+      40,
+      24
+    ],
+    [
+      -40,
+      24
+    ]
+  ],
+  "axis_slopes": [
+    0.6,
+    -0.6
+  ],
+  "axis_angles_deg": [
+    30.9637565,
+    -30.9637565
+  ],
+  "object_id": "NW_BLOCK",
+  "grid_rect": [
+    1,
+    0,
+    7,
+    5
+  ],
+  "local_canvas_px": [
+    480,
+    378
+  ],
+  "pivot_local_px": [
+    240,
+    378
+  ],
+  "front_edge_raw": [
+    80,
+    288
+  ],
+  "height_px": 90,
+  "foundation_source_alpha_sha256": "6a93401ba6e1eadd732308a5a0a840e885aca1200a01c19418410666ee54623e",
+  "foundation_output_alpha_sha256": "6a93401ba6e1eadd732308a5a0a840e885aca1200a01c19418410666ee54623e",
+  "occluder_source_alpha_sha256": "a3c007732e75fe6847bc773793206d8ac5cb5c0dd57f0e8ba0416bfd13e601d7",
+  "occluder_output_alpha_sha256": "a3c007732e75fe6847bc773793206d8ac5cb5c0dd57f0e8ba0416bfd13e601d7",
+  "alpha_bit_exact": true,
+  "manual_offset": false,
+  "imagegen_calls": 0,
+  "donor_statistics": {
+    "wet_asphalt": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a1-modular-tactical-environment-kit-master/intermediate/materials/GROUND_WET_ASPHALT_SWATCH_RGBA.png",
+      "sha256": "ca419d89881cee32b746f6b35f95cb395e2a7e781f58236c57c7e9f041d54884",
+      "mean_rgb": [
+        37.796,
+        52.81,
+        70.984
+      ],
+      "stddev_rgb": [
+        19.73,
+        24.319,
+        29.617
+      ],
+      "pixel_use": "statistics_only_no_contours_no_lines"
+    },
+    "apron_paving": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a1-modular-tactical-environment-kit-master/intermediate/materials/GROUND_APRON_PAVING_SWATCH_RGBA.png",
+      "sha256": "a64298d4a453d016cdb7ce1c55842c1fbe139d33dce048b40f219ecfbfc8e889",
+      "mean_rgb": [
+        52.761,
+        63.38,
+        78.041
+      ],
+      "stddev_rgb": [
+        17.16,
+        19.356,
+        21.754
+      ],
+      "pixel_use": "statistics_only_no_contours_no_lines"
+    },
+    "curb_drainage": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a1-modular-tactical-environment-kit-master/intermediate/materials/GROUND_CURB_DRAINAGE_SWATCH_RGBA.png",
+      "sha256": "0010c70f5274b844ad7c4d2f28d459fb74a0975877546f911d374123219a7dfa",
+      "mean_rgb": [
+        52.309,
+        62.764,
+        76.208
+      ],
+      "stddev_rgb": [
+        30.275,
+        32.622,
+        34.719
+      ],
+      "pixel_use": "statistics_only_no_contours_no_lines"
+    },
+    "road_language": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-a1-modular-tactical-environment-kit-master/intermediate/materials/GROUND_ROAD_LANGUAGE_SWATCH_RGBA.png",
+      "sha256": "d669c88ab59e3b3f52576a19207fb0e76c462e7481c015914b9ea28a29382a2d",
+      "mean_rgb": [
+        45.396,
+        56.606,
+        70.985
+      ],
+      "stddev_rgb": [
+        27.287,
+        29.55,
+        33.116
+      ],
+      "pixel_use": "statistics_only_no_contours_no_lines"
+    }
+  },
+  "outputs": {
+    "foundation": "pilot/delivery/NW_BLOCK_FOUNDATION_CAMERA_V2_MATERIALIZED_RGBA.png",
+    "occluder": "pilot/delivery/NW_BLOCK_OCCLUDER_CAMERA_V2_MATERIALIZED_RGBA.png",
+    "qa_100": "pilot/qa/NW_BLOCK_MATERIAL_PILOT_100_PERCENT_1120x620.png",
+    "qa_50": "pilot/qa/NW_BLOCK_MATERIAL_PILOT_50_PERCENT_560x310.png"
+  },
+  "batch_released": false,
+  "producer_verdict": "FAIL_FINAL_QUALITY",
+  "producer_verdict_date": "2026-08-22",
+  "failure_root_cause": "locked single-cuboid occluder alpha preserves the procedural-box massing at 50 percent; surface material cannot repair silhouette massing",
+  "task_stopped": true
+}

@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-21",
+  "revision": "M11-posture-production-r8",
+  "asset": "货柜领袖肩颈体态局部修正",
+  "canon_entity": "V353U043",
+  "existing_batch": "design-followthrough-r1.json",
+  "previous_production": "M11-turnaround-structure-production-r7.json",
+  "reader": "M11-turnaround-structure-r7.html#posture-r8",
+  "direction_record": "M11-posture-direction-r8.json",
+  "generation_mode": "built-in image_gen",
+  "items": [
+    {
+      "id": "POSTURE",
+      "file": "samples/M11-posture-r8.png",
+      "sha256": "8c7b229f42d8e840814a55dad1cf224d5b5b05f51a90841e86583d7f05dc78c9",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-f415d834-8d6c-408a-a1ef-4234fda981f8.png",
+      "prompts": [
+        "M11-posture-prompt-r8.txt"
+      ],
+      "role": "沿用户肯定的斜侧稿修正缩脖子、肩线与胸颈过渡",
+      "user_accepted": true,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    }
+  ],
+  "preferred_visual_basis": {
+    "verbatim": "这一稿的状态还不错",
+    "file": "samples/M11-side-r7-angle-attempt.png",
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-f27ddb78-5a5c-4794-86d4-f4df8b1a91e0.png",
+    "sha256": "9c4b142f82faf0412896e6cb466823a8e6ce3c48ed6322badd2117fbc7c8d5b6",
+    "scope": "用户肯定此稿整体状态，作为本次体态修正基底；不是全批或工程验收。"
+  },
+  "selected_head_reference": {
+    "file": "samples/M11-selected-head-r6.png",
+    "sha256": "3a6496028f8328c6ef3300f9b9b836d3e88ce8e8befe5564f01a2339fecd43ec",
+    "user_accepted": true,
+    "scope": "指定eac75eab头部源设计及其眼形、面甲、双耳侧钝头天线；授权整合整机三视与可变结构优化"
+  },
+  "prompt_index": "M11-posture-prompts-r8.json",
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "samples/M11-side-r7-angle-attempt.png",
+      "samples/M11-selected-head-r6.png",
+      "samples/M11-posture-r8.png"
+    ],
+    "observed": [
+      "新稿下颌下方露出连续深色装甲颈部，原图头部几乎贴在胸窗上沿。",
+      "近侧肩壳顶线降低并后移，下颌和下半脸不再陷入肩甲；肩壳仍厚重。",
+      "头盔高宽比与原稿近似，头部整体略缩小，未横向拉宽或纵向压扁。",
+      "两根钝头侧天线、前凸颏甲、单片风挡、橙色灯与轮毂、四个近侧轮位、长腿和原背架体量保留。",
+      "远侧手臂可见范围略增，属于重绘/体态造成的投影差异。"
+    ],
+    "limits": [
+      "本轮是斜侧体态源稿；正侧背旧稿未同步，不是同模型正交。",
+      "R7头仓草模仍是上一轮局部包络，未验证新增颈部展开行程、肩架与胸甲活动净空。",
+      "新稿待用户看图，未改模型、动作或游戏运行。"
+    ]
+  },
+  "current_turnaround_alignment": "requires_r8_posture_alignment",
+  "previous_layout_applicability": "R7头仓草模仍是上一轮局部包络，未验证新增颈部展开行程、肩架与胸甲活动净空。",
+  "new_images_user_accepted": true,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "later_user_acceptance_receipt": "M11-design-fixed-20261022.json"
+}

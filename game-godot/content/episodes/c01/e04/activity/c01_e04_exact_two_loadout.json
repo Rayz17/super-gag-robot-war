@@ -1,0 +1,91 @@
+{
+  "activity_id": "C01E04-EXACT-TWO-LOADOUT",
+  "template_id": "T_EXACT_TWO_VISIBLE_CARGO",
+  "grammar": "CONSTRAINT",
+  "host_profile": "crisis",
+  "eyebrow": "B1实体载荷台 / 人员禁止进入载荷表",
+  "title": "不是救谁，是带走哪一种明天",
+  "prompt": "三类都是真实物件，也都占真实接口。选择前可反复预览；两个固定槽填满后才能提交，提交后不存在隐藏的第三槽。",
+  "card_column_title": "三类可见载荷",
+  "slot_column_title": "仅有的两条固定链",
+  "preview_column_title": "本话收益 / 当前代价 / C02缺口",
+  "card_metric_label": "负载",
+  "preview_required_label": "固定链",
+  "preview_metric_label": "总负载",
+  "show_optional_preview": false,
+  "show_slot_accepts": false,
+  "score_band_labels": {
+    "perfect": "方案成立",
+    "clear": "固定未完成",
+    "fail": "尚未成案"
+  },
+  "required_slot_prefix": "固定",
+  "assign_label": "放入当前固定链",
+  "unassign_label": "从固定链撤回",
+  "commit_label": "确认精确二选三 [C]",
+  "transaction_id": "C01E04:RT008_LOADOUT:LOCAL:V01",
+  "commitments": [
+    {"commitment_group_id": "COMMIT_C01E04_EXACT_TWO_LOADOUT", "commitment_id": "COMMIT_C01E04_LIFE_PHYSICAL", "title": "保生活维持与实体独有馆藏", "cost": "许可、维修史与访问记录留在旧址，只完成优先冷备。", "next": "C02拥有身体续航与实体配重，但缺少随行档案查询。"},
+    {"commitment_group_id": "COMMIT_C01E04_EXACT_TWO_LOADOUT", "commitment_id": "COMMIT_C01E04_LIFE_ARCHIVE", "title": "保生活维持与档案服务器", "cost": "小满画筒、孤本模型托和不可复制断件逐件留在旧址。", "next": "C02拥有身体续航与记录能力，但失去实体原件及移动配重。"},
+    {"commitment_group_id": "COMMIT_C01E04_EXACT_TWO_LOADOUT", "commitment_id": "COMMIT_C01E04_PHYSICAL_ARCHIVE", "title": "保实体独有馆藏与档案服务器", "cost": "净水与旧制温控转接件留在旧址，三十六小时生命循环成为硬期限。", "next": "C02保住物与记忆，却必须优先寻找生活维持接口。"}
+  ],
+  "canon_refs": ["CONCEPT_HYBRID_PLAY_EXPERIENCE", "N_C01E04_ATOMIC_SNAPSHOT"],
+  "safe_risk": 4,
+  "allow_partial_commit": false,
+  "perfect_requires_optional": false,
+  "slots": [
+    {"id": "inner_chain_a", "label": "A链 / 内轨与外锁转接", "required": true, "accepts": ["cargo"], "incompatible_text": "人员、消防接驳货物与未登记对象不能进入固定链。"},
+    {"id": "inner_chain_b", "label": "B链 / 配重与冷却接口", "required": true, "accepts": ["cargo"], "incompatible_text": "人员、消防接驳货物与未登记对象不能进入固定链。"}
+  ],
+  "cards": [
+    {"id": "LIFE_SUPPORT", "label": "生活维持设备", "detail": "净水转接、旧制温控、应急循环；保住36小时的身体条件。", "tags": ["cargo"], "risk": 1, "source_node": "OBJ_C01E04_THREE_LOADOUT_RAILS"},
+    {"id": "PHYSICAL_COLLECTION", "label": "实体独有馆藏", "detail": "小满画筒、孤本模型托、不可复制断件；可作移动配重。", "tags": ["cargo"], "risk": 2, "source_node": "OBJ_C01E04_THREE_LOADOUT_RAILS"},
+    {"id": "ARCHIVE_SERVER", "label": "档案服务器", "detail": "许可链、维修史、访问记录；可预告火锁，但持续占用冷却。", "tags": ["cargo"], "risk": 2, "source_node": "OBJ_C01E04_THREE_LOADOUT_RAILS"}
+  ],
+  "outcomes": {
+    "perfect": {"resolution": "success", "preview": ["精确两类固定", "第三类亮灯留置", "战场读取该组合"], "ui_summary": "两条固定链成立；第三类必须留在旧址。"},
+    "clear": {"resolution": "soft_failure", "preview": ["只填了一条固定链", "不能进入战术阶段"], "ui_summary": "另一条固定链仍空着。"},
+    "fail": {"resolution": "soft_failure", "preview": ["尚未形成可执行载荷", "人员始终不进入载荷表"], "ui_summary": "先选择两类具体载荷。"}
+  },
+  "combination_outcomes": {
+    "LIFE_SUPPORT+PHYSICAL_COLLECTION": {
+      "resolution": "success",
+      "preview": ["一次全区冷却 + 可移动配重", "占外锁转接位并增加总重", "许可、维修史与访问记录留在旧址"],
+      "facts": [
+        {"id": "WANJI_LOADOUT_BUNDLE_ID", "to": "LIFE_PHYSICAL"},
+        {"id": "LIFE_SUPPORT_EQUIPMENT", "to": "CARRIED_OPERATIONAL"},
+        {"id": "UNIQUE_PHYSICAL_COLLECTION", "to": "CARRIED_OPERATIONAL"},
+        {"id": "ARCHIVE_SERVER", "to": "OLD_SITE_PUBLIC_UNCARRIED"},
+        {"id": "ARCHIVE_PRIORITY_COLD_BACKUP", "to": "COMPLETE_AT_OLD_SITE"}
+      ],
+      "unlocked_flags": ["c01e04_loadout_life_physical"],
+      "ui_summary": "生活维持与实体独有馆藏进入内轨；档案服务器完成优先冷备后亮灯留在旧址。"
+    },
+    "ARCHIVE_SERVER+LIFE_SUPPORT": {
+      "resolution": "success",
+      "preview": ["一次全区冷却 + 预告一条假意图", "每回合持续占用冷却余量", "实体原件与托管线留在旧址"],
+      "facts": [
+        {"id": "WANJI_LOADOUT_BUNDLE_ID", "to": "LIFE_ARCHIVE"},
+        {"id": "LIFE_SUPPORT_EQUIPMENT", "to": "CARRIED_OPERATIONAL"},
+        {"id": "UNIQUE_PHYSICAL_COLLECTION", "to": "OLD_SITE_PUBLIC_UNCARRIED"},
+        {"id": "ARCHIVE_SERVER", "to": "CARRIED_OPERATIONAL"},
+        {"id": "ARCHIVE_PRIORITY_COLD_BACKUP", "to": "NOT_APPLICABLE_CARRIED"}
+      ],
+      "unlocked_flags": ["c01e04_loadout_life_archive"],
+      "ui_summary": "生活维持与档案服务器进入内轨；实体独有馆藏逐件进入公开留置清单。"
+    },
+    "ARCHIVE_SERVER+PHYSICAL_COLLECTION": {
+      "resolution": "success",
+      "preview": ["可移动配重 + 预告一条假意图", "总重与持续冷却同时增加", "净水与温控旧件成为C02首要缺口"],
+      "facts": [
+        {"id": "WANJI_LOADOUT_BUNDLE_ID", "to": "PHYSICAL_ARCHIVE"},
+        {"id": "LIFE_SUPPORT_EQUIPMENT", "to": "OLD_SITE_PUBLIC_UNCARRIED"},
+        {"id": "UNIQUE_PHYSICAL_COLLECTION", "to": "CARRIED_OPERATIONAL"},
+        {"id": "ARCHIVE_SERVER", "to": "CARRIED_OPERATIONAL"},
+        {"id": "ARCHIVE_PRIORITY_COLD_BACKUP", "to": "NOT_APPLICABLE_CARRIED"}
+      ],
+      "unlocked_flags": ["c01e04_loadout_physical_archive"],
+      "ui_summary": "实体独有馆藏与档案服务器进入内轨；生活维持件按编号亮灯留置旧址。"
+    }
+  }
+}

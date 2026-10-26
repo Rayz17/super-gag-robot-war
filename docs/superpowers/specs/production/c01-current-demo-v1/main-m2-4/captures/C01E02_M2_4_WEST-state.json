@@ -1,0 +1,143 @@
+{
+	"actual_camera_center": [
+		-160.0,
+		320.0
+	],
+	"asset_render_audit": {
+		"fallback_slots": [
+			"MAP_C01CDV1_R2_STATE_LAYERS",
+			"MECHA_C01CDV1_GUARDIAN_Z",
+			"ENEMY_C01CDV1_RIFT_SWARM_MASTER",
+			"PROP_C01CDV1_RETIRED_SHIELD_WALL_HUNG"
+		],
+		"map_layers": [
+			"MAP_C01CDV1_R2_BASE",
+			"MAP_C01CDV1_R2_BUILDINGS",
+			"MAP_C01CDV1_R2_ROOFS",
+			"MAP_C01CDV1_R2_FOREGROUND"
+		],
+		"occlusion_mask_alpha": 1.0,
+		"occlusion_mask_sampled": true,
+		"overhead_alpha": 0.280000001192093,
+		"overhead_faded_for_selected_unit": true,
+		"selected_unit_occluded": true,
+		"selected_unit_outline_drawn": true,
+		"shield_draw_count": 1,
+		"shield_draw_source": "named_geometry_fallback"
+	},
+	"binding_source": "default_active_config",
+	"breaker_weight_state": "driving_forward",
+	"build_id": "C01CDV1-M2-R2",
+	"camera_source_rect": [
+		190.0,
+		203.0,
+		900.0,
+		594.0
+	],
+	"capture_id": "WEST",
+	"capture_role": "same_turn_one_camera_review",
+	"content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+	"fallback_slot_ids": [
+		"ENEMY_C01CDV1_BREAKER_GROUND",
+		"ENEMY_C01CDV1_RIFT_SWARM_MASTER",
+		"MAP_C01CDV1_R2_STATE_LAYERS",
+		"MECHA_C01CDV1_GUARDIAN_Z",
+		"PROP_C01CDV1_RETIRED_SHIELD_HEAT_DEFORMED",
+		"PROP_C01CDV1_RETIRED_SHIELD_HELD_COLD",
+		"PROP_C01CDV1_RETIRED_SHIELD_RED_BLOCKED",
+		"PROP_C01CDV1_RETIRED_SHIELD_WALL_HUNG"
+	],
+	"finisher_ready": false,
+	"finisher_triggered": false,
+	"gameplay_state_mutation_from_asset_lane": false,
+	"loaded_slot_count": 5,
+	"loaded_slot_ids": [
+		"MAP_C01CDV1_R2_BASE",
+		"MAP_C01CDV1_R2_BUILDINGS",
+		"MAP_C01CDV1_R2_FOREGROUND",
+		"MAP_C01CDV1_R2_OCCLUSION_MASK",
+		"MAP_C01CDV1_R2_ROOFS"
+	],
+	"png_sha256": "531a52380afff96868b2b3ed0e5a3d84c19f3a9dbb19dc99051d84cbb60658ec",
+	"profile_id": "c01cdv1_e02_scroll_m2_r2",
+	"requested_camera_center": [
+		-160.0,
+		320.0
+	],
+	"rescue_lane_state": "active",
+	"resource_probe_count": 5,
+	"runtime_art_loaded": true,
+	"save_signature": "2a92b3f8b0f8146b5fa4f0e22d1a9a4cb79322627a50f262f6da54a81e855119",
+	"screen_rect": [
+		0,
+		54,
+		900,
+		594
+	],
+	"setpiece_commit_count": 0,
+	"shield_state": "wall_hung",
+	"state_id": "c01cdv1_e02_s06_scrolling_street",
+	"state_signature": "f735adef55121b0730ec9de0d04e8c870191df3e74a1cff0822ab423ce1a2e10",
+	"swarm_organization_state": "scattered",
+	"swarm_survivor_count": 6,
+	"swarm_survivors": [
+		{
+			"organization_state": "scattered",
+			"position": [
+				13,
+				6
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_01",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				18,
+				5
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_02",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				27,
+				6
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_03",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				15,
+				12
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_04",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				29,
+				11
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_05",
+			"status": "active"
+		},
+		{
+			"organization_state": "scattered",
+			"position": [
+				21,
+				14
+			],
+			"stable_id": "ENEMY_C01_RIFT_SWARM_06",
+			"status": "active"
+		}
+	],
+	"tactical_signature": "c01cdv1_e02_scroll_m2_r2|(32, 18)|turn=1|guardian=(5, 10)|breaker=(23, 8):driving_forward|shield=false:false|rescue=active|ENEMY_C01_RIFT_SWARM_01@(13, 6):2|ENEMY_C01_RIFT_SWARM_02@(18, 5):2|ENEMY_C01_RIFT_SWARM_03@(27, 6):2|ENEMY_C01_RIFT_SWARM_04@(15, 12):2|ENEMY_C01_RIFT_SWARM_05@(29, 11):2|ENEMY_C01_RIFT_SWARM_06@(21, 14):2|TARGET_C01_EAST_EXIT@(31, 4):6:active|TARGET_C01_EMERGENCY_AMBULANCE@(27, 4):4:active|TARGET_C01_EMERGENCY_BRIDGE_TRUCK@(28, 5):4:active|TARGET_C01_SECURITY_GATE@(25, 5):5:active|TARGET_C01_WARNING_RELAY@(19, 7):5:active",
+	"topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+	"turn": 1,
+	"validated_handoff_count": 5
+}

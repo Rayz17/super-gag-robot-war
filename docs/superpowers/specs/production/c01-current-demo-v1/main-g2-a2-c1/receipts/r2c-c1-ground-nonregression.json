@@ -1,0 +1,632 @@
+{
+  "canon_modified": false,
+  "correction_id": "R2C-C1-PRIMARY-SWARM-GROUND-OCCUPANCY",
+  "default_entry_changed": false,
+  "evidence_class": "g2_a1_r2c_c1_ground_occupancy_machine_proof",
+  "g2_b_allowed": false,
+  "grid_bounds": {
+    "anchor_within_bounds": true,
+    "half_open": {
+      "x": [
+        0,
+        32
+      ],
+      "y": [
+        0,
+        18
+      ]
+    },
+    "size": [
+      32,
+      18
+    ]
+  },
+  "ground_rectangles": {
+    "breaker_contact": {
+      "anchor": [
+        20,
+        11
+      ],
+      "cells": [
+        [
+          20,
+          11
+        ],
+        [
+          21,
+          11
+        ],
+        [
+          22,
+          11
+        ],
+        [
+          20,
+          12
+        ],
+        [
+          21,
+          12
+        ],
+        [
+          22,
+          12
+        ],
+        [
+          20,
+          13
+        ],
+        [
+          21,
+          13
+        ],
+        [
+          22,
+          13
+        ]
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "half_open": {
+        "x": [
+          20,
+          23
+        ],
+        "y": [
+          11,
+          14
+        ]
+      },
+      "max_inclusive": [
+        22,
+        13
+      ],
+      "min": [
+        20,
+        11
+      ]
+    },
+    "breaker_post_dynamic_supplemental": {
+      "anchor": [
+        21,
+        11
+      ],
+      "cells": [
+        [
+          21,
+          11
+        ],
+        [
+          22,
+          11
+        ],
+        [
+          23,
+          11
+        ],
+        [
+          21,
+          12
+        ],
+        [
+          22,
+          12
+        ],
+        [
+          23,
+          12
+        ],
+        [
+          21,
+          13
+        ],
+        [
+          22,
+          13
+        ],
+        [
+          23,
+          13
+        ]
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "half_open": {
+        "x": [
+          21,
+          24
+        ],
+        "y": [
+          11,
+          14
+        ]
+      },
+      "max_inclusive": [
+        23,
+        13
+      ],
+      "min": [
+        21,
+        11
+      ]
+    },
+    "guardian": {
+      "anchor": [
+        20,
+        9
+      ],
+      "cells": [
+        [
+          20,
+          9
+        ],
+        [
+          21,
+          9
+        ],
+        [
+          20,
+          10
+        ],
+        [
+          21,
+          10
+        ]
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "half_open": {
+        "x": [
+          20,
+          22
+        ],
+        "y": [
+          9,
+          11
+        ]
+      },
+      "max_inclusive": [
+        21,
+        10
+      ],
+      "min": [
+        20,
+        9
+      ]
+    },
+    "primary_swarm": {
+      "anchor": [
+        22,
+        9
+      ],
+      "cells": [
+        [
+          22,
+          9
+        ]
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "half_open": {
+        "x": [
+          22,
+          23
+        ],
+        "y": [
+          9,
+          10
+        ]
+      },
+      "max_inclusive": [
+        22,
+        9
+      ],
+      "min": [
+        22,
+        9
+      ]
+    }
+  },
+  "ground_rectangles_overlap": false,
+  "intersections": {
+    "swarm_breaker_contact": [],
+    "swarm_breaker_post_dynamic_supplemental": [],
+    "swarm_guardian": []
+  },
+  "mutation_nonregression": {
+    "a_changed_paths": [
+      "swarm_positions.ENEMY_C01_RIFT_SWARM_01"
+    ],
+    "a_new": {
+      "breaker_depth": 11,
+      "breaker_post_contact_anchor": [
+        21,
+        11
+      ],
+      "guardian_heat": 24,
+      "guardian_position": [
+        20,
+        9
+      ],
+      "guardian_post_contact_anchor": [
+        20,
+        9
+      ],
+      "guardian_visual_recoil_anchor": [
+        20.0,
+        8.5
+      ],
+      "impact_socket_grid": [
+        20.5,
+        10.5
+      ],
+      "remaining_timing_margin": 4,
+      "road_damage": 42,
+      "side_armor_socket_grid": [
+        24.0,
+        12.5
+      ],
+      "strategy_path": "A_BODY_INTERCEPT",
+      "swarm_positions": {
+        "ENEMY_C01_RIFT_SWARM_01": [
+          22,
+          9
+        ],
+        "ENEMY_C01_RIFT_SWARM_02": [
+          27,
+          12
+        ],
+        "ENEMY_C01_RIFT_SWARM_03": [
+          29,
+          5
+        ]
+      },
+      "warning_facility_state": "damaged"
+    },
+    "a_old": {
+      "breaker_depth": 11.0,
+      "breaker_post_contact_anchor": [
+        21.0,
+        11.0
+      ],
+      "guardian_heat": 24.0,
+      "guardian_position": [
+        20.0,
+        9.0
+      ],
+      "guardian_post_contact_anchor": [
+        20.0,
+        9.0
+      ],
+      "guardian_visual_recoil_anchor": [
+        20.0,
+        8.5
+      ],
+      "impact_socket_grid": [
+        20.5,
+        10.5
+      ],
+      "remaining_timing_margin": 4.0,
+      "road_damage": 42.0,
+      "side_armor_socket_grid": [
+        24.0,
+        12.5
+      ],
+      "strategy_path": "A_BODY_INTERCEPT",
+      "swarm_positions": {
+        "ENEMY_C01_RIFT_SWARM_01": [
+          21.0,
+          9.0
+        ],
+        "ENEMY_C01_RIFT_SWARM_02": [
+          27.0,
+          12.0
+        ],
+        "ENEMY_C01_RIFT_SWARM_03": [
+          29.0,
+          5.0
+        ]
+      },
+      "warning_facility_state": "damaged"
+    },
+    "a_only_allowed_change": true,
+    "b_changed_paths": [],
+    "b_new": {
+      "breaker_depth": 10,
+      "breaker_post_contact_anchor": [
+        21,
+        10
+      ],
+      "guardian_heat": 46,
+      "guardian_position": [
+        19,
+        9
+      ],
+      "guardian_post_contact_anchor": [
+        19,
+        9
+      ],
+      "guardian_visual_recoil_anchor": [
+        19.0,
+        8.5
+      ],
+      "impact_socket_grid": [
+        20.0,
+        10.5
+      ],
+      "remaining_timing_margin": 1,
+      "road_damage": 24,
+      "side_armor_socket_grid": [
+        24.0,
+        11.5
+      ],
+      "strategy_path": "B_PROTECT_LANE_PREPARE",
+      "swarm_positions": {
+        "ENEMY_C01_RIFT_SWARM_01": [
+          22,
+          8
+        ],
+        "ENEMY_C01_RIFT_SWARM_02": [
+          28,
+          12
+        ],
+        "ENEMY_C01_RIFT_SWARM_03": [
+          30,
+          6
+        ]
+      },
+      "warning_facility_state": "active"
+    },
+    "b_old": {
+      "breaker_depth": 10.0,
+      "breaker_post_contact_anchor": [
+        21.0,
+        10.0
+      ],
+      "guardian_heat": 46.0,
+      "guardian_position": [
+        19.0,
+        9.0
+      ],
+      "guardian_post_contact_anchor": [
+        19.0,
+        9.0
+      ],
+      "guardian_visual_recoil_anchor": [
+        19.0,
+        8.5
+      ],
+      "impact_socket_grid": [
+        20.0,
+        10.5
+      ],
+      "remaining_timing_margin": 1.0,
+      "road_damage": 24.0,
+      "side_armor_socket_grid": [
+        24.0,
+        11.5
+      ],
+      "strategy_path": "B_PROTECT_LANE_PREPARE",
+      "swarm_positions": {
+        "ENEMY_C01_RIFT_SWARM_01": [
+          22.0,
+          8.0
+        ],
+        "ENEMY_C01_RIFT_SWARM_02": [
+          28.0,
+          12.0
+        ],
+        "ENEMY_C01_RIFT_SWARM_03": [
+          30.0,
+          6.0
+        ]
+      },
+      "warning_facility_state": "active"
+    }
+  },
+  "old_history_anchor": [
+    21,
+    9
+  ],
+  "old_r2c_receipt": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a1-r2c/receipts/contact-staging.json",
+    "sha256": "199b098524cb4cd7cfcd637d81ba0a2ee2509332d327867f8399178029af1d8c"
+  },
+  "performance": {
+    "event_ids": [
+      "GS-R1-E1-VEHICLE",
+      "GS-R1-E2-SWARM",
+      "GS-R1-E3-CONTACT",
+      "GS-R1-E4-CITY-GUN",
+      "GS-R1-E5-ROAD-RED"
+    ],
+    "t2_track": {
+      "contact_state": "deflected",
+      "endpoint_settle_facing_separate": true,
+      "facing": "west",
+      "final_cell": [
+        22,
+        9
+      ],
+      "final_facing": "west",
+      "final_state": "deflected_alive",
+      "motion_state": "move",
+      "path": [
+        [
+          22.0,
+          7.0
+        ],
+        [
+          21.0,
+          8.0
+        ],
+        [
+          20.0,
+          9.0
+        ],
+        [
+          20.0,
+          10.0
+        ]
+      ],
+      "segment_facings": [
+        "",
+        "",
+        "south"
+      ],
+      "segment_receipts": [
+        {
+          "facing": "",
+          "from": [
+            22.0,
+            7.0
+          ],
+          "grid_delta": [
+            -1.0,
+            1.0
+          ],
+          "screen_delta_px": [
+            -80.0,
+            0.0
+          ],
+          "segment_index": 0,
+          "to": [
+            21.0,
+            8.0
+          ],
+          "valid_cardinal": false
+        },
+        {
+          "facing": "",
+          "from": [
+            21.0,
+            8.0
+          ],
+          "grid_delta": [
+            -1.0,
+            1.0
+          ],
+          "screen_delta_px": [
+            -80.0,
+            0.0
+          ],
+          "segment_index": 1,
+          "to": [
+            20.0,
+            9.0
+          ],
+          "valid_cardinal": false
+        },
+        {
+          "facing": "south",
+          "from": [
+            20.0,
+            9.0
+          ],
+          "grid_delta": [
+            0.0,
+            1.0
+          ],
+          "screen_delta_px": [
+            -40.0,
+            20.0
+          ],
+          "segment_index": 2,
+          "to": [
+            20.0,
+            10.0
+          ],
+          "valid_cardinal": true
+        }
+      ],
+      "unit_id": "ENEMY_C01_RIFT_SWARM_01"
+    },
+    "t3_frame_readback": {
+      "event_id": "GS-R1-E3-CONTACT",
+      "phase": "anticipation",
+      "swarm": {
+        "animation": "idle",
+        "cell": [
+          22,
+          9
+        ],
+        "facing": "west",
+        "state": "deflected_alive"
+      }
+    }
+  },
+  "primary_swarm": {
+    "blocks_route": false,
+    "blocks_route_default_semantics": "absent or false means excluded from resolver dynamic blockers",
+    "grounded": true,
+    "grounded_derivation": "world entity uses its sole grid anchor; no airborne or display-anchor alias exists",
+    "status": "deflected_alive"
+  },
+  "real_art_loaded": 0,
+  "runtime_promotion": false,
+  "save_enabled": false,
+  "sole_candidate_ground_anchor": [
+    22,
+    9
+  ],
+  "source_chain": {
+    "entity_anchor": [
+      22,
+      9
+    ],
+    "resolver_world_anchor": [
+      22,
+      9
+    ],
+    "t2_performance_final_cell": [
+      22,
+      9
+    ],
+    "t3_settled_frame_cell": [
+      22,
+      9
+    ]
+  },
+  "source_chain_single_truth": true,
+  "strategy": "A_BODY_INTERCEPT",
+  "terrain_passable": {
+    "anchor": [
+      22,
+      9
+    ],
+    "containing_zones": [
+      {
+        "kind": "road",
+        "passable": true,
+        "rect": [
+          0.0,
+          7.0,
+          32.0,
+          7.0
+        ],
+        "zone_id": "TERRAIN_C01_MAIN_ROAD"
+      },
+      {
+        "kind": "rescue_lane",
+        "passable": true,
+        "rect": [
+          20.0,
+          5.0,
+          12.0,
+          7.0
+        ],
+        "zone_id": "TERRAIN_C01_RESCUE_LANE"
+      }
+    ],
+    "terrain_passable": true,
+    "within_grid_bounds": true
+  }
+}

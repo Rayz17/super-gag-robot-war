@@ -1,0 +1,88 @@
+{
+  "revision": "M01-head-twin-grooves-production-r11",
+  "date": "2026-10-18",
+  "asset": "M01 / 无牌一号",
+  "user_directive": "我的意思是：头顶天线的黄色凹槽，应该是我画的两个黄色线的位置，而中间应该是白色的，而不是凹槽。这样才能跟图二的侧视图的凹槽的相对位置对应上。你理解一下",
+  "file": "samples/M01-head-twin-side-grooves-r11.png",
+  "sha256": "b92f8b78770ea11d6185e59f2089148ff408f19b841616272c63eb9f9925cf44",
+  "pixel_size": [
+    1312,
+    1199
+  ],
+  "mode": "RGBA",
+  "alpha": {
+    "range": [
+      0,
+      255
+    ]
+  },
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-24ddc8ad-fad9-4fab-8b36-127bf2b811cf.png",
+  "generation_mode": "built-in image_gen; exact front crown groove replacement from user marked positions",
+  "prompt": "M01-head-twin-grooves-prompt-r11.json",
+  "reader": "M01-head-AE-r6.html",
+  "existing_batch": "design-followthrough-r1.json#experience_record_m01_r11",
+  "adopted_design": {
+    "file": "samples/M01-head-center-groove-three-quarter-r9b.png",
+    "sha256": "38a0f36ea2361abede5ec969777db584a5a4d3d6a806f1bf001f899440cf4aa4",
+    "record": "M01-head-center-groove-production-r9.json"
+  },
+  "design_adoption_receipt": "M01-head-design-adoption-20261018.json",
+  "latest_user_interpretation": "M01-head-groove-interpretation-20261018.json",
+  "edit_target": {
+    "file": "samples/M01-head-front-matched-r10.png",
+    "sha256": "c1a6de9811ef46490d868df5ee00d59e6da47aaf0db541ac0f008876d14ef069"
+  },
+  "guardian_contrast": {
+    "file": "refs/guardian-existing-contrast-20261018.png",
+    "sha256": "1d776b53fc11ae55fc540e35066786fd73bb0635ebc2e1db1ca07eafdd461357",
+    "origin": "game-godot/assets/formula_lab/linked_campaign_v6/portraits/guardian.png",
+    "source_was_observed": true,
+    "source_copied_without_pixel_changes": true,
+    "used_as_generation_input": false,
+    "guardian_changed": false
+  },
+  "shared_crest_definition": [
+    "白色外缘",
+    "左侧黄色凹槽",
+    "连续白色中脊",
+    "右侧黄色凹槽",
+    "白色外缘"
+  ],
+  "method_change": {
+    "status": "applied",
+    "old_method": "根据作者误读，把单条中轴槽作为截面并反复匹配两视图；含错误Blender中槽参考。",
+    "new_method": "以用户直接标注的两线位置为依据：填平中轴长槽成白色实体，在左右两线各开一道槽；保持已采用侧视不重绘。",
+    "reason": "R10仍违反用户采用设计的相对槽位置，用户明确给出两条槽及白色中央。",
+    "evidence": [
+      "M01-head-twin-grooves-prompt-r11.json",
+      "refs/M01-user-twin-grooves-markup-r11.png",
+      "samples/M01-head-twin-side-grooves-r11.png"
+    ],
+    "recheck": "长黄槽数量必须为2、中轴为连续白色、下方短黄块保持、侧视源文件不变。"
+  },
+  "author_review": {
+    "reviewer": "author",
+    "actual_media": "R11工具实际完整返回图、用户黄线标注和采用侧视；与R10对照。",
+    "observed": [
+      "原先中轴长黄色槽及黑色凹边被完整白色中脊替换。",
+      "白色中脊左右各有一条长黄色凹槽，前视两条，左右对应。",
+      "两槽下方仍有独立短黄色矩形嵌件，脸部、琥珀视窗、青绿白金及耳侧天线保留。"
+    ],
+    "limits": [
+      "当前头部源设计已由用户确认；新整机三视图另作候选，模型、战棋镜头与运行未验证。",
+      "已废止旧单中槽模型，不把旧几何投影当本次结构证明。"
+    ],
+    "independent_review": false
+  },
+  "entry_preflight": {
+    "structure_pass": true,
+    "errors": [],
+    "scope": "结构预检；不代表52包331项制作完成。"
+  },
+  "user_accepted": true,
+  "adopted_three_quarter_user_accepted": true,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "user_acceptance_receipt": "M01-head-design-fixed-20261019.json",
+  "acceptance_scope": "确认R11修正后的无牌头部：前视双侧黄槽、白色中脊；已采用三分之四保持。授权补整机三视图并继续下一批。"
+}

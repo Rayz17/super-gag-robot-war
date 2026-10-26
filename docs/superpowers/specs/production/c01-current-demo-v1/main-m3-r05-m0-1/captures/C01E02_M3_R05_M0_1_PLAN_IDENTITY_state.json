@@ -1,0 +1,598 @@
+{
+	"beat_receipts": [],
+	"capture_id": "PLAN_IDENTITY",
+	"debug_visible": false,
+	"evidence_class": "engineering_shell_evidence_only",
+	"fixture_id": "success_main_action",
+	"identity_critical_fallback_count": 9,
+	"pixel_sample": {
+		"center": "233137ff",
+		"sampled_opaque_pixels": 720,
+		"sampled_unique_colors": 49
+	},
+	"png_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-m3-r05-m0-1/captures/C01E02_M3_R05_M0_1_PLAN_IDENTITY_1280x720.png",
+	"png_sha256": "5a139d6939e393241a99749f1b0eb379fb9db9533ce8c71dbbb9a079e18e33d8",
+	"real_asset_loader_implemented": false,
+	"round_receipt": {},
+	"shell_receipt": {
+		"assets": {
+			"approved_handoffs": [],
+			"evidence_class": "engineering_shell_evidence_only",
+			"identity_critical_fallback_count": 9,
+			"identity_critical_fallbacks": [
+				{
+					"expected_stable_id": "CH_JICUN",
+					"fallback_mode": "named_geometry_fallback",
+					"loaded": false,
+					"portrait_unavailable": true,
+					"probe_performed": false,
+					"slot_id": "R05_PORTRAIT_JICUN",
+					"status": "portrait_or_identity_unavailable"
+				},
+				{
+					"expected_stable_id": "CH_QIHAI",
+					"fallback_mode": "named_geometry_fallback",
+					"loaded": false,
+					"portrait_unavailable": true,
+					"probe_performed": false,
+					"slot_id": "R05_PORTRAIT_QIHAI_REMOTE",
+					"status": "portrait_or_identity_unavailable"
+				},
+				{
+					"expected_stable_id": "CH002",
+					"fallback_mode": "named_geometry_fallback",
+					"loaded": false,
+					"portrait_unavailable": true,
+					"probe_performed": false,
+					"slot_id": "R05_COMMS_OLD_GUARDIAN",
+					"status": "portrait_or_identity_unavailable"
+				},
+				{
+					"expected_stable_id": "V353U001",
+					"fallback_mode": "named_geometry_fallback",
+					"loaded": false,
+					"portrait_unavailable": false,
+					"probe_performed": false,
+					"slot_id": "R05_GUARDIAN_MAP_ACTION_4DIR",
+					"status": "portrait_or_identity_unavailable"
+				},
+				{
+					"expected_stable_id": "ENEMY_C01_BREAKER",
+					"fallback_mode": "named_geometry_fallback",
+					"loaded": false,
+					"portrait_unavailable": false,
+					"probe_performed": false,
+					"slot_id": "R05_BREAKER_MAP_ACTION_4DIR",
+					"status": "portrait_or_identity_unavailable"
+				},
+				{
+					"expected_stable_id": "PROP_C01CDV1_RETIRED_SHIELD_WALL_HUNG",
+					"fallback_mode": "named_geometry_fallback",
+					"loaded": false,
+					"portrait_unavailable": false,
+					"probe_performed": false,
+					"slot_id": "R05_SHIELD_WALL_HUNG",
+					"status": "portrait_or_identity_unavailable"
+				},
+				{
+					"expected_stable_id": "V353U001;ENEMY_C01_BREAKER",
+					"fallback_mode": "named_geometry_fallback",
+					"loaded": false,
+					"portrait_unavailable": false,
+					"probe_performed": false,
+					"slot_id": "R05_CUTIN_GIANT_CONTACT",
+					"status": "portrait_or_identity_unavailable"
+				},
+				{
+					"expected_stable_id": "CUTIN_DOUDENG_C01_OBSERVE_V01",
+					"fallback_mode": "named_geometry_fallback",
+					"loaded": false,
+					"portrait_unavailable": true,
+					"probe_performed": false,
+					"slot_id": "R05_CUTIN_DOUDENG_OBSERVE",
+					"status": "portrait_or_identity_unavailable"
+				},
+				{
+					"expected_stable_id": "CUTIN_DOUDENG_C01_TENSE_V01",
+					"fallback_mode": "named_geometry_fallback",
+					"loaded": false,
+					"portrait_unavailable": true,
+					"probe_performed": false,
+					"slot_id": "R05_CUTIN_DOUDENG_TENSE",
+					"status": "portrait_or_identity_unavailable"
+				}
+			],
+			"identity_critical_slots": [
+				"R05_PORTRAIT_JICUN",
+				"R05_PORTRAIT_QIHAI_REMOTE",
+				"R05_COMMS_OLD_GUARDIAN",
+				"R05_GUARDIAN_MAP_ACTION_4DIR",
+				"R05_BREAKER_MAP_ACTION_4DIR",
+				"R05_SHIELD_WALL_HUNG",
+				"R05_CUTIN_GIANT_CONTACT",
+				"R05_CUTIN_DOUDENG_OBSERVE",
+				"R05_CUTIN_DOUDENG_TENSE"
+			],
+			"identity_unavailable_status": "portrait_or_identity_unavailable",
+			"loaded_slot_count": 0,
+			"manifest_runtime_allowed_observed": false,
+			"manifest_runtime_toggle_effect": "none_no_loader",
+			"manifest_sha256": "5abc1b5f718cdd1b9c2e6dff2e323a177ce3302625dbc81345134687eae5c053",
+			"packing_validation": {
+				"audio_slot_count": 16,
+				"errors": [],
+				"expected_packing_contract_sha256": "fe75667eac656756e35ddbbb784e250d39c0f8b05c2c14f719234d653b944012",
+				"manifest_sha256": "5abc1b5f718cdd1b9c2e6dff2e323a177ce3302625dbc81345134687eae5c053",
+				"packing_contract_id": "C01E02_R05_MEDIA_PACKING_V2",
+				"packing_contract_path": "res://../docs/superpowers/specs/production/c01-current-demo-v1/42-c01e02-m3-r0-5-media-packing-v2.json",
+				"packing_contract_sha256": "fe75667eac656756e35ddbbb784e250d39c0f8b05c2c14f719234d653b944012",
+				"valid": true,
+				"visual_slot_count": 28
+			},
+			"real_asset_loader_implemented": false,
+			"registered_slot_count": 44,
+			"resource_probe_count": 0,
+			"runtime_art_loaded": false,
+			"u2_block_reasons": [
+				"exact_handoff_loader_not_implemented",
+				"world_real_asset_consumers_not_implemented",
+				"screen_real_asset_consumers_not_implemented",
+				"audio_real_asset_consumer_not_implemented",
+				"identity_critical_slot_fallback:R05_PORTRAIT_JICUN",
+				"identity_critical_slot_fallback:R05_PORTRAIT_QIHAI_REMOTE",
+				"identity_critical_slot_fallback:R05_COMMS_OLD_GUARDIAN",
+				"identity_critical_slot_fallback:R05_GUARDIAN_MAP_ACTION_4DIR",
+				"identity_critical_slot_fallback:R05_BREAKER_MAP_ACTION_4DIR",
+				"identity_critical_slot_fallback:R05_SHIELD_WALL_HUNG",
+				"identity_critical_slot_fallback:R05_CUTIN_GIANT_CONTACT",
+				"identity_critical_slot_fallback:R05_CUTIN_DOUDENG_OBSERVE",
+				"identity_critical_slot_fallback:R05_CUTIN_DOUDENG_TENSE"
+			],
+			"u2_eligible": false,
+			"user_visual_playtest_eligible": false,
+			"validated_handoff_count": 0
+		},
+		"audio": {
+			"external_audio_loaded": false,
+			"generated_cue_count": 0,
+			"played_cues": [],
+			"source": "procedural_pcm_only"
+		},
+		"build_id": "C01CDV1-M3-R0.5-PRES",
+		"comms": {
+			"current_beat": "",
+			"identity_schematic": {
+				"current_channel_label": "",
+				"current_line_text": "",
+				"current_portrait_slot": "",
+				"current_schematic_mode": "",
+				"current_stable_id": "",
+				"evidence_class": "engineering_shell_evidence_only",
+				"fallback_identities": [
+					{
+						"portrait_unavailable": true,
+						"schematic_mode": "human_route",
+						"stable_id": "CH_JICUN"
+					},
+					{
+						"portrait_unavailable": true,
+						"schematic_mode": "human_maintenance",
+						"stable_id": "CH001"
+					},
+					{
+						"portrait_unavailable": true,
+						"schematic_mode": "guardian_machine",
+						"stable_id": "CH002"
+					}
+				],
+				"guardian_machine_features": {
+					"chest_light": true,
+					"human_face": false,
+					"identity_label": "馆守Z本体",
+					"machine_head": true,
+					"speaker_waveform": true
+				},
+				"initial_or_face_glyph_used": false,
+				"portrait_unavailable": true,
+				"real_portraits_consumed": false
+			},
+			"input_blocked": false,
+			"triggered_keys": [],
+			"visible": false
+		},
+		"director_state": "IDLE",
+		"entry_role": "non_default",
+		"evidence_class": "engineering_shell_evidence_only",
+		"frozen_r0": {
+			"execute_count": 0,
+			"profile_path": "res://content/candidate_runtime_demo/c01/e02/m3_r0/sandbox_profile.json",
+			"profile_sha256": "f62a8be16d1aec0da3986bdee20d94366190b7ae428c78a1d20ecdc1fc3d4f2e",
+			"resolver_path": "res://scripts/candidate_runtime_demo/c01/e02/m3_r0/shared_round_resolver.gd",
+			"resolver_sha256": "09de5610d7896abe4c516f98b91e5c7427e5a54d51dd3039e14588e95a6a8386",
+			"rules_profile_id": "c01cdv1_e02_shared_round_m3_r0"
+		},
+		"hud": {
+			"debug_terms_visible": false,
+			"identity_schematic": {
+				"evidence_class": "engineering_shell_evidence_only",
+				"initial_or_face_glyph_used": false,
+				"portrait_unavailable": true,
+				"qihai": {
+					"action_icon_count": 0,
+					"artillery_authority": false,
+					"button_count": 0,
+					"command_capability": "none",
+					"function_label": "远程权限状态",
+					"interactive": false,
+					"portrait_unavailable": true,
+					"schematic_mode": "qihai_remote",
+					"stable_id": "CH_QIHAI",
+					"status_text": "本人停机令已撤回"
+				},
+				"real_portraits_consumed": false,
+				"role_cards": [
+					{
+						"display_name": "纪存",
+						"face_invented": false,
+						"portrait_unavailable": true,
+						"responsibility_label": "路线·人员·危险",
+						"role_label": "导览席",
+						"schematic_mode": "human_route",
+						"stable_id": "CH_JICUN"
+					},
+					{
+						"display_name": "兜灯",
+						"face_invented": false,
+						"portrait_unavailable": true,
+						"responsibility_label": "机况·承力",
+						"role_label": "维修角",
+						"schematic_mode": "human_maintenance",
+						"stable_id": "CH001"
+					},
+					{
+						"display_name": "旧守护者",
+						"face_invented": false,
+						"portrait_unavailable": true,
+						"responsibility_label": "身体自行负责",
+						"role_label": "馆守Z本体",
+						"schematic_mode": "guardian_machine",
+						"stable_id": "CH002"
+					}
+				],
+				"top_bar_operation": "本轮操作：馆守Z"
+			},
+			"plan_panel_rect": [
+				900,
+				48,
+				380,
+				552
+			],
+			"qihai_presence": {
+				"action_icon_count": 0,
+				"button_count": 0,
+				"display_name": "七海",
+				"expression_state": "decision",
+				"fallback_mode": "named_geometry_fallback",
+				"function_label": "远程权限状态",
+				"mouse_filter": 2,
+				"portrait_schematic": "qihai_remote",
+				"portrait_slot": "R05_PORTRAIT_QIHAI_REMOTE",
+				"portrait_unavailable": true,
+				"probe_performed": false,
+				"rect": [
+					920,
+					158,
+					340,
+					72
+				],
+				"source_label": "远程 · 代哥东区封存中心",
+				"status_text": "本人停机令已撤回",
+				"visible": true
+			},
+			"result_visible": false,
+			"summary_button_rect": [
+				920,
+				524,
+				340,
+				54
+			],
+			"timeline_rect": [
+				0,
+				600,
+				1280,
+				120
+			],
+			"top_bar_operation": "本轮操作：馆守Z",
+			"top_bar_rect": [
+				0,
+				0,
+				1280,
+				48
+			]
+		},
+		"presence": {
+			"action_icon_count": 0,
+			"button_count": 0,
+			"display_name": "七海",
+			"expression_state": "decision",
+			"fallback_mode": "named_geometry_fallback",
+			"function_label": "远程权限状态",
+			"mouse_filter": 2,
+			"portrait_schematic": "qihai_remote",
+			"portrait_slot": "R05_PORTRAIT_QIHAI_REMOTE",
+			"portrait_unavailable": true,
+			"probe_performed": false,
+			"rect": [
+				920,
+				158,
+				340,
+				72
+			],
+			"source_label": "远程 · 代哥东区封存中心",
+			"status_text": "本人停机令已撤回",
+			"visible": true
+		},
+		"projection": {
+			"anchors": {
+				"breaker_start": {
+					"cell": [
+						20.0,
+						13.0
+					],
+					"roundtrip": [
+						20,
+						13
+					],
+					"world": [
+						280.0,
+						660.0
+					]
+				},
+				"east_exit": {
+					"cell": [
+						31.0,
+						7.0
+					],
+					"roundtrip": [
+						31,
+						7
+					],
+					"world": [
+						960.0,
+						760.0
+					]
+				},
+				"fixed_far_corner": {
+					"cell": [
+						31.0,
+						17.0
+					],
+					"roundtrip": [
+						31,
+						17
+					],
+					"world": [
+						560.0,
+						960.0
+					]
+				},
+				"fixed_origin": {
+					"cell": [
+						0.0,
+						0.0
+					],
+					"roundtrip": [
+						0,
+						0
+					],
+					"world": [
+						0.0,
+						0.0
+					]
+				},
+				"fixed_rescue_contact": {
+					"cell": [
+						20.0,
+						10.0
+					],
+					"roundtrip": [
+						20,
+						10
+					],
+					"world": [
+						400.0,
+						600.0
+					]
+				},
+				"guardian_start": {
+					"cell": [
+						15.0,
+						11.0
+					],
+					"roundtrip": [
+						15,
+						11
+					],
+					"world": [
+						160.0,
+						520.0
+					]
+				},
+				"wall_hung_shield": {
+					"cell": [
+						11.0,
+						10.0
+					],
+					"roundtrip": [
+						11,
+						10
+					],
+					"world": [
+						40.0,
+						420.0
+					]
+				}
+			},
+			"layout_profile_id": "c01cdv1_e02_m3_r05_layout_40x20_v1",
+			"logical_grid": [
+				32,
+				18
+			],
+			"tile_half": [
+				40,
+				20
+			],
+			"topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+			"visual_projection": "isometric_tile_half_40x20"
+		},
+		"real_asset_loader_implemented": false,
+		"save_mode": "disabled",
+		"screen_schematic": {
+			"evidence_class": "engineering_shell_evidence_only",
+			"initial_or_face_glyph_used": false,
+			"portrait_unavailable": true,
+			"qihai": {
+				"action_icon_count": 0,
+				"artillery_authority": false,
+				"button_count": 0,
+				"command_capability": "none",
+				"function_label": "远程权限状态",
+				"interactive": false,
+				"portrait_unavailable": true,
+				"schematic_mode": "qihai_remote",
+				"stable_id": "CH_QIHAI",
+				"status_text": "本人停机令已撤回"
+			},
+			"real_portraits_consumed": false,
+			"role_cards": [
+				{
+					"display_name": "纪存",
+					"face_invented": false,
+					"portrait_unavailable": true,
+					"responsibility_label": "路线·人员·危险",
+					"role_label": "导览席",
+					"schematic_mode": "human_route",
+					"stable_id": "CH_JICUN"
+				},
+				{
+					"display_name": "兜灯",
+					"face_invented": false,
+					"portrait_unavailable": true,
+					"responsibility_label": "机况·承力",
+					"role_label": "维修角",
+					"schematic_mode": "human_maintenance",
+					"stable_id": "CH001"
+				},
+				{
+					"display_name": "旧守护者",
+					"face_invented": false,
+					"portrait_unavailable": true,
+					"responsibility_label": "身体自行负责",
+					"role_label": "馆守Z本体",
+					"schematic_mode": "guardian_machine",
+					"stable_id": "CH002"
+				}
+			],
+			"top_bar_operation": "本轮操作：馆守Z"
+		},
+		"u2_block_reasons": [
+			"exact_handoff_loader_not_implemented",
+			"world_real_asset_consumers_not_implemented",
+			"screen_real_asset_consumers_not_implemented",
+			"audio_real_asset_consumer_not_implemented",
+			"identity_critical_slot_fallback:R05_PORTRAIT_JICUN",
+			"identity_critical_slot_fallback:R05_PORTRAIT_QIHAI_REMOTE",
+			"identity_critical_slot_fallback:R05_COMMS_OLD_GUARDIAN",
+			"identity_critical_slot_fallback:R05_GUARDIAN_MAP_ACTION_4DIR",
+			"identity_critical_slot_fallback:R05_BREAKER_MAP_ACTION_4DIR",
+			"identity_critical_slot_fallback:R05_SHIELD_WALL_HUNG",
+			"identity_critical_slot_fallback:R05_CUTIN_GIANT_CONTACT",
+			"identity_critical_slot_fallback:R05_CUTIN_DOUDENG_OBSERVE",
+			"identity_critical_slot_fallback:R05_CUTIN_DOUDENG_TENSE"
+		],
+		"u2_eligible": false,
+		"ui_state": "PLAN_EDIT",
+		"user_visual_playtest_eligible": false,
+		"world_schematic": {
+			"breaker": {
+				"features": {
+					"b_plus_x_alien_bioarmor_language": true,
+					"chest_seam_closed": true,
+					"front_limb_weight_bearing": true,
+					"head_below_shoulder_shell": true,
+					"humanoid_black_mecha": false,
+					"low_ram_posture": true,
+					"ordinary_quadruped": false,
+					"red_head_slit_count": 1,
+					"semi_upright": true,
+					"upper_back_core_exit_sealed": true
+				},
+				"footprint": [
+					3,
+					3
+				],
+				"height_class": "near_30m",
+				"pivot": [
+					0.5,
+					0.9
+				],
+				"slot_id": "R05_BREAKER_MAP_ACTION_4DIR",
+				"stable_id": "ENEMY_C01_BREAKER"
+			},
+			"camera_contract": "tactical_board_view_unchanged",
+			"emergency_vehicle": {
+				"autonomous_semantics": true,
+				"medical_cross": false,
+				"stable_id": "TARGET_C01_EMERGENCY_AMBULANCE",
+				"visual_identity": "neutral_emergency_vehicle_technical_outline"
+			},
+			"evidence_class": "engineering_shell_evidence_only",
+			"fallback_mode": "identity_aware_technical_schematic",
+			"guardian_z": {
+				"features": {
+					"arm_loss_depicted": false,
+					"both_forearms_complete": true,
+					"central_red_crown_ornament": true,
+					"circular_gold_chest_core": true,
+					"cylindrical_forearm_count": 2,
+					"gold_horizontal_crown": true,
+					"red_chest": true,
+					"right_shoulder_old_wound": true,
+					"silver_grille_face": true
+				},
+				"footprint": [
+					2,
+					2
+				],
+				"height_m": 18,
+				"pivot": [
+					0.5,
+					0.88
+				],
+				"slot_id": "R05_GUARDIAN_MAP_ACTION_4DIR",
+				"stable_id": "V353U001"
+			},
+			"real_asset_consumed": false,
+			"wall_hung_shield": {
+				"old_scorch_mark_count": 3,
+				"pivot": [
+					0.5,
+					1.0
+				],
+				"red_light_released": false,
+				"slot_id": "R05_SHIELD_WALL_HUNG",
+				"stable_id": "PROP_C01CDV1_RETIRED_SHIELD_WALL_HUNG",
+				"taken": false,
+				"wall_hung": true
+			}
+		}
+	},
+	"u2_eligible": false,
+	"ui_state": "PLAN_EDIT",
+	"user_visual_playtest_eligible": false,
+	"viewport": [
+		1280,
+		720
+	],
+	"world_result": {}
+}

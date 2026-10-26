@@ -1,0 +1,88 @@
+{
+  "revision": "M01-head-aft-antenna-production-r7",
+  "date": "2026-10-18",
+  "asset": "M01 / 无牌一号",
+  "user_directive": "耳朵两边的天线指向，我觉得不要有翻折角度，就与头部天线保持指向后方",
+  "file": "samples/M01-head-aft-antenna-r7.png",
+  "sha256": "fec7ad02b6d55306726b2012fe0ba9fd375f260a41c4d1f2538ba619572bb6be",
+  "pixel_size": [
+    1774,
+    887
+  ],
+  "mode": "RGBA",
+  "alpha": {
+    "range": [
+      0,
+      255
+    ],
+    "top_corners": [
+      0,
+      0
+    ]
+  },
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-1ea77b32-a455-451d-8cfc-d6754e3715da.png",
+  "generation_mode": "built-in image_gen; precise-object-edit of existing two-view sheet",
+  "prompt": "M01-head-aft-antenna-prompt-r7.json",
+  "reader": "M01-head-AE-r6.html",
+  "existing_batch": "design-followthrough-r1.json#experience_record_m01_r7",
+  "edit_target": {
+    "record": "M01-head-AE-production-r6.json",
+    "file": "samples/M01-head-AE-symmetric-r6.png",
+    "sha256": "d8fdd4e4443b9b6708fa8c3848f04468d53aa837ac73d30963e72a23037cf76c"
+  },
+  "selected_sources": [
+    {
+      "id": "A",
+      "file": "samples/M01-head-A-single-crest-r5.png",
+      "sha256": "481bbf45af76e2ba2bf3845c6075315c1571416aef74f4417b93902e145e6b7c",
+      "adopted_part": "中轴冠脊、封闭面甲及连续传感窗"
+    },
+    {
+      "id": "E",
+      "file": "samples/M01-head-E-offset-angle-r5.png",
+      "sha256": "0115cb6c4100ca4020d5c33877a38d703f156180f8eb1b38368d538e4d6a396c",
+      "adopted_part": "保留双侧枢座与短侧部特征，按最新用户意见改为无折角的直线后向天线",
+      "historical_adopted_part": "短折角镂空侧翼，改成双侧镜像"
+    }
+  ],
+  "latest_override": "E作为历史选型来源保留；本次用户明确取消其折角和外张，左右天线改为单段直线向后，与中央冠脊同向。",
+  "selection_scope": "用户表示这版可以，保留总体与侧天线；同时明确头顶冠脊跨视图仍需修正，不能作整张无条件认可。",
+  "guardian_contrast": {
+    "file": "refs/guardian-existing-contrast-20261018.png",
+    "sha256": "1d776b53fc11ae55fc540e35066786fd73bb0635ebc2e1db1ca07eafdd461357",
+    "origin": "game-godot/assets/formula_lab/linked_campaign_v6/portraits/guardian.png",
+    "source_was_observed": true,
+    "source_copied_without_pixel_changes": true,
+    "used_as_generation_input": false,
+    "guardian_changed": false
+  },
+  "author_review": {
+    "reviewer": "author",
+    "actual_media": "实际工具返回完整图：左正面，右三分之四；与用户指定R6图对照。",
+    "observed": [
+      "正面两侧原先外张的大三角侧翼收为窄边，左右成对。",
+      "三分之四近侧天线从枢座后上部直线向头后延伸，原先天线的折弯和镂空三角被去除。",
+      "中轴白色冠脊/赭金槽、连续琥珀视窗、封闭面甲、圆侧枢、青绿白金配色与双视图布局保留。"
+    ],
+    "bilateral_structure_observed": true,
+    "pixel_identical_mirror_claim": false,
+    "limits": [
+      "当前为源图方向修正，不是同一模型正投影；完整机体、正常战棋镜头和动作尚未验证。"
+    ],
+    "independent_review": false
+  },
+  "user_accepted": false,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "scoped_user_acceptance": {
+    "date": "2026-10-18",
+    "authority": "direct_user_message_in_this_chat",
+    "verbatim": "这样可以。但是注意你的正面和侧面里，头顶天线的呈现出现了不一致。",
+    "source_file": "samples/M01-head-aft-antenna-r7.png",
+    "source_sha256": "fec7ad02b6d55306726b2012fe0ba9fd375f260a41c4d1f2538ba619572bb6be",
+    "accepted_scope": "R7总体设计及两侧无折角直线后向天线可沿用。",
+    "remaining_correction": "头顶冠脊的正面与三分之四表达不一致，需要局部修正。",
+    "whole_sheet_unconditional_acceptance": false,
+    "runtime_acceptance": false
+  }
+}

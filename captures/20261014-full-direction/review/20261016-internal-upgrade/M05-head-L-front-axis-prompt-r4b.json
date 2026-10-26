@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-19",
+  "generation_mode": "built-in image_gen",
+  "source_images": [
+    "samples/M05-head-L-harpoon-r4.png"
+  ],
+  "prompt": "Use case: precise-object-edit.\nIn this existing TWO-PANEL King head image, edit ONLY the foreshortened CENTRAL L-horn in the LEFT, FRONT-VIEW PANEL.\nProblem: its golden forward prow currently points toward the left side of the page in the frontal panel, even though the head faces directly toward the viewer.\nCorrection: the central forward prow must aim straight toward the viewer along the physical symmetry plane of the face. Its front-view silhouette must be EXACTLY LEFT-RIGHT SYMMETRIC about the face's centerline. Show a centered broad golden pyramidal/diamond-shaped end cap with the pointed center on the middle axis, equally wide left/right facets, and the vertical stem centered directly beneath it. The small underside barb is centered and foreshortened, not a side-pointing hook in this front panel. Leave a dark gap to the two long inner crown blades.\nDo not add a tall straight center antenna. This remains the same ONE forward L-horn seen head-on.\nDo NOT change any other crown blades, face, eye shapes, color, helmet volume, neck, layout, or scale in the left panel.\nKeep the ENTIRE RIGHT PROFILE PANEL EXACTLY UNCHANGED — its forward L elbow and rearward barb are the correct side geometry.\nPreserve exactly 5 main crown roots: central L-horn plus 4 paired side blades. Same clean navy/ivory/gold/crimson KINETIC CEL style, same transparent background, no text.",
+  "output": "samples/M05-head-L-harpoon-r4b.png",
+  "transparent_background": true,
+  "source_refs": [
+    {
+      "file": "samples/M05-head-L-harpoon-r4.png",
+      "sha256": "5cff587931fb7ed2400f329b7cf0d564c0fe12ec8d8e3c12b2dca33551dc70d6"
+    }
+  ]
+}

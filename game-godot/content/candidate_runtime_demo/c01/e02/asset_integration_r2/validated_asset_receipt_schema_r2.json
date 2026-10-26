@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:chao-gag:c01cdv1:m2.2:r2:validated-asset-receipt:v1",
+  "title": "C01E02 M2.2 Frozen Validated Asset Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "receipt_id",
+    "schema_version",
+    "receipt_kind",
+    "runtime_lane",
+    "authorization_scope",
+    "lifecycle_status",
+    "synthetic_fixture",
+    "runtime_art_loaded",
+    "gameplay_state_mutation",
+    "contract_binding",
+    "profile_binding",
+    "source_batch",
+    "validated_receipts",
+    "receipt_payload_sha256"
+  ],
+  "properties": {
+    "receipt_id": {"type": "string", "minLength": 1},
+    "schema_version": {"const": "1.0.0"},
+    "receipt_kind": {"const": "C01E02_M2_2_FROZEN_VALIDATED_HANDOFFS"},
+    "runtime_lane": {"const": "candidate_runtime_demo"},
+    "authorization_scope": {"const": "C01E02_M2_2_EXACT_SLOT_HANDOFF"},
+    "lifecycle_status": {"const": "active"},
+    "synthetic_fixture": {"type": "boolean"},
+    "runtime_art_loaded": {"type": "boolean"},
+    "gameplay_state_mutation": {"const": false},
+    "contract_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["contract_revision", "build_id", "save_schema", "content_fingerprint"],
+      "properties": {
+        "contract_revision": {"const": 2},
+        "build_id": {"const": "C01CDV1-M2-R2"},
+        "save_schema": {"const": 2},
+        "content_fingerprint": {"const": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4"}
+      }
+    },
+    "profile_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["profile_id", "topology_sha256"],
+      "properties": {
+        "profile_id": {"const": "c01cdv1_e02_scroll_m2_r2"},
+        "topology_sha256": {"const": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8"}
+      }
+    },
+    "source_batch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["batch_id", "sha256", "submitted_count", "validated_count"],
+      "properties": {
+        "batch_id": {"type": "string", "minLength": 1},
+        "sha256": {"pattern": "^[0-9a-f]{64}$"},
+        "submitted_count": {"type": "integer", "minimum": 0},
+        "validated_count": {"type": "integer", "minimum": 0}
+      }
+    },
+    "validated_receipts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "ok", "validation_gate", "producer_handoff_id", "slot_id", "stable_id",
+          "subject_id", "usage", "contract_revision", "build_id", "content_fingerprint", "profile_id",
+          "authorization_scope", "lifecycle_status",
+          "topology_sha256", "resource_path", "sha256", "binding_kind", "native_size",
+          "has_alpha", "pivot", "atlas", "actions", "facings", "media_parameters", "actual_media", "entry_payload_sha256"
+        ]
+      }
+    },
+    "receipt_payload_sha256": {"pattern": "^[0-9a-f]{64}$"}
+  }
+}

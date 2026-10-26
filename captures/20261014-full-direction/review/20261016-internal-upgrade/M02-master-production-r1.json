@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-19",
+  "generation_mode": "built-in image_gen",
+  "user_accepted": false,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "status": "source_direction_usable_continue_no_redesign",
+  "existing_batch": "design-followthrough-r1.json",
+  "independent_review": false,
+  "revision": "M02-master-production-r1",
+  "asset": "M02 / 旧拳王",
+  "canon_entity": "V353U048",
+  "file": "samples/M02-old-boxer-master-r1.png",
+  "sha256": "a21227cbddf4541cfc39dbfc00faace8e93dd4433a61f6181414d516d8eed7e3",
+  "pixel_size": [
+    1206,
+    1305
+  ],
+  "mode": "RGBA",
+  "alpha": {
+    "range": [
+      0,
+      255
+    ],
+    "fully_transparent_pixels": 746273,
+    "fully_opaque_pixels": 1168,
+    "partially_transparent_pixels": 826389,
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-087e35db-8d1c-4873-8f57-eff0cb3f842e.png",
+  "prompt": "M02-master-prompt-r1.json",
+  "source_refs": [
+    {
+      "file": "../20261015-latest-review/images/899a014304ce0a8dfe53f9f83aed0ae5f097b7681409c9145eafcfc59adc62a5.jpg",
+      "role": "M02 head/chest/body/palette master",
+      "sha256": "899a014304ce0a8dfe53f9f83aed0ae5f097b7681409c9145eafcfc59adc62a5"
+    },
+    {
+      "file": "../20261016-r3-wave2/images/a52781859862aec8f9b0ff9b66e058a52a3e2210f07760ce743db076c8f15bf7.jpg",
+      "role": "N10 glove weight/boxing expression only; do not copy changed head/chest",
+      "sha256": "a52781859862aec8f9b0ff9b66e058a52a3e2210f07760ce743db076c8f15bf7"
+    },
+    {
+      "file": "samples/M01-head-twin-side-grooves-r11.png",
+      "role": "current KINETIC_CEL drawing quality only; do not copy identity/palette",
+      "sha256": "b92f8b78770ea11d6185e59f2089148ff408f19b841616272c63eb9f9925cf44"
+    }
+  ],
+  "reader": "next-batch-mecha-20261019.html#old-boxer",
+  "author_review": {
+    "actual_media": "实际完整M02新稿，与M02母稿及N10拳重参考对照。",
+    "observed": [
+      "保留象牙白/土棕/深红身份；紧凑白头盔、短红额块、深色眼窗和重下颌。",
+      "短颈重肩、两只厚红拳套及机械腕口，拳击前探姿势，躯干和双足完整可辨。",
+      "采用收敛的分层明暗和线条；N10只用于拳重，没有复制其另一套头胸。"
+    ],
+    "limits": [
+      "用户最新表示旧拳王问题不大，沿当前方向继续；前探拳有透视放大，不能直接量作左右拳真实尺寸差。",
+      "未派生三视图/头像/动作，未做透明切边或游戏运行。"
+    ]
+  },
+  "next_after_source_confirmation": [
+    "按同一母稿派生无透视正侧背，固定拳套厚度与重心",
+    "保留独立完整机体与非致命拳击动作语义，再制作候选动作与加载资源"
+  ],
+  "source_direction_usable_to_continue": true,
+  "redesign_required": false,
+  "latest_user_feedback_receipt": "mecha-source-decisions-20261019-r17.json",
+  "latest_user_feedback": "旧拳王我觉得问题也不大。",
+  "later_turnaround_record": "M02-turnaround-production-r2.json",
+  "later_turnaround_scope": "2026-10-20按追问补正侧背，源图方向可沿用不扩大为新图/模型/运行认可。"
+}

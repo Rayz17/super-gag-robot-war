@@ -1,0 +1,26 @@
+deny_id	kind	path_or_token	allowed_reuse	forbidden_reuse	reason	validation
+DENY001	content_graph	game-godot/content/episodes/c01/e02/graph.story_first.json	通用Graph schema思路	节点;对白;状态;资源路径;node id	旧“四张封存令”E02，与新版七段内容不同	Candidate bundle不得引用路径或旧node id
+DENY002	content_manifest	game-godot/content/episodes/c01/e02/manifest.story_first.json	manifest字段结构	asset列表;source hash;episode id;输出路径	旧source和旧资产清单	Candidate入口必须使用独立manifest
+DENY003	generated_bundle	game-godot/content/generated/episodes/c01/e02/story_first.bundle.json	编译器性能/测试方法	任何内容或状态	生成物继承旧Graph	Candidate运行时不得加载
+DENY004	story_source	docs/superpowers/specs/剧情梗概/V35.9/rebuild/episodes/C01/C01E02-四张封存令-v1.md	已接受事实回归时显式人工查阅	台词;场景链;四令机制	History/Current旧分层，不是Demo内容源	source lock只允许regression源而非compile source
+DENY005	runtime_contract	docs/superpowers/specs/剧情梗概/V35.9/rebuild/episodes/C01/C01E02-runtime-contract-v1.tsv	测试字段命名经验	27键快照;旧owner链;旧回合	旧路线状态	Candidate checkpoint字段必须来自06
+DENY006	graybox_constants	docs/superpowers/specs/剧情梗概/V35.9/rebuild/episodes/C01/C01E02-graybox-constants-v1.tsv	无	旧格数;回合;火场参数	与新版广场目标无关	Candidate battle definition不得导入
+DENY007	old_node_id	c01e02_black_water	无	运行时节点或别名	旧五节点链	文本与JSON全局零命中
+DENY008	old_node_id	fireline_evidence	无	运行时节点或别名	旧五节点链	文本与JSON全局零命中
+DENY009	old_node_id	public_map_setup	无	运行时节点或别名	旧五节点链	文本与JSON全局零命中
+DENY010	old_node_id	fire_evacuation	无	运行时节点或别名	旧五节点链	文本与JSON全局零命中
+DENY011	old_node_id	baihan_remote	无	运行时节点或别名	旧白函路线	文本与JSON全局零命中
+DENY012	old_fact	29/32人	无	人数状态或对白	新版只锁三十多人且全部安全	内容和状态零命中
+DENY013	old_entity	白函;ENEMY_C01_SEAL_COMMANDER_BAIHAN	History查询	画面;对白;战斗;资料卡	当前正面外敌只有BREAKER	Candidate runtime零命中
+DENY014	old_hook	勇拳测试场亮起金光	无	S07镜头或结尾	新版Candidate已删除	S07文本/shotbook零命中
+DENY015	old_visual	game-godot/assets/characters/story_first/sprite_jicun_walk_right_strip_v01.png	技术尺寸分析	纹理加载;fallback	用户已明确拒绝旧人物资产	Candidate manifest零引用
+DENY016	old_visual	game-godot/assets/backgrounds/story_first/bg_c01e02_front_hall_fireline_v01.png	技术性能分析	背景或Cut-in	旧剧情空间与旧画风	Candidate manifest零引用
+DENY017	old_visual	game-godot/assets/tactical_maps/story_first/bg_c01e02_fire_evacuation_isometric_v01.png	技术性能分析	战术地图	旧火场俯视/等距内容不匹配新版广场	Candidate manifest零引用
+DENY018	old_visual	game-godot/assets/battle_presentation/c01/story_first/	技术sprite loader分析	任何图片	旧小机/人群/状态资产不是最新美术	Candidate manifest零引用
+DENY019	old_visual	demo/chapter1/assets/portraits/	无	人物头像	早期网页Demo旧资产	Candidate manifest零引用
+DENY020	old_validation_asset	docs/superpowers/specs/production/cinematic-golden-slice-v0.2/art-delivery/	构图/坐标/分层方法	纹理或身份母版	旧低热救援试验，不是新版E02资产	只可在source lock中method_only
+DENY021	old_validation_scene	game-godot/scenes/c01_real_machine_rescue_validation.tscn	ModeScene/相机/测试方法	剧情;状态;旧Pose;默认入口	旧低热救援内容	新入口独立且旧场景仍可回归
+DENY022	old_visual	POSE_GZ_C01_KNEEL_PALM_GUARD_V01	技术fallback机制	纹理加载	低热掌防已不存在且机设需最新母版	Candidate manifest零引用
+DENY023	old_visual	portrait_jicun.png;portrait_doudeng.png;portrait_qihai.png	无	任何对白头像	用户已指出旧人物设计回流	脚本/JSON/manifest零引用
+DENY024	state_namespace	c01_story_first_chapter_manual	只读迁移测试	读写正式存档	Candidate必须隔离	运行时断言save namespace独立
+DENY025	content_fallback	load_old_asset_on_missing	无	缺图时静默加载旧图	会再次制造“旧剧情+旧美术”	缺失时显示具名几何fallback并报开发警告

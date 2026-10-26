@@ -1,0 +1,542 @@
+[
+  {
+    "id": "B01",
+    "group": "B",
+    "template": "building",
+    "key": "refuge-habitat",
+    "name": "有人避难楼",
+    "purpose": "现代机甲城市的居民目标",
+    "design": "5–7层住宅体量；入口/窗带/楼板让人读懂尺度；完整楼顶、受损露层、倒塌残壁各自可信",
+    "states": [
+      "完好",
+      "受损",
+      "毁坏"
+    ],
+    "status": "locked"
+  },
+  {
+    "id": "B02",
+    "group": "B",
+    "template": "building",
+    "key": "shelter-illustrated",
+    "name": "渠岸住宅",
+    "purpose": "B区居民与街区",
+    "design": "沿渠立面、后侧与屋顶成套；破损后保留内部楼板厚度和断面，不再用完整屋顶盖残楼",
+    "states": [
+      "完好",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B03",
+    "group": "B",
+    "template": "building",
+    "key": "shelter-c",
+    "name": "环站公寓",
+    "purpose": "C区居住目标",
+    "design": "货运站旁现代公寓，与工业仓库可区分；保持同城材料关系",
+    "states": [
+      "完好",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B04",
+    "group": "B",
+    "template": "building",
+    "key": "office-a",
+    "name": "供能前庭办公楼",
+    "purpose": "A区体量与遮挡",
+    "design": "现代公共设施办公，首层服务入口、窗带、检修层明确；不是小屋",
+    "states": [
+      "完好",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B05",
+    "group": "B",
+    "template": "building",
+    "key": "office-b",
+    "name": "渠岸办公楼",
+    "purpose": "B区街区体量",
+    "design": "钢蓝/矿物材质辅助色；不可与可保护住宅混同",
+    "states": [
+      "完好",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B06",
+    "group": "B",
+    "template": "building",
+    "key": "office-c",
+    "name": "装卸站调度楼",
+    "purpose": "C区调度设施",
+    "design": "观察窗朝向轨道；入口与站台对应；红色点缀有用途",
+    "states": [
+      "完好",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B07",
+    "group": "B",
+    "template": "building",
+    "key": "switchgear-illustrated",
+    "name": "公共供电柜",
+    "purpose": "接电与断电操作",
+    "design": "柜体/母排/隔离刀与指示灯分件；开关动作和能量方向可见，不做内部修线模拟",
+    "states": [
+      "完好",
+      "工作",
+      "断电",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B08",
+    "group": "B",
+    "template": "building",
+    "key": "relay",
+    "name": "远程馈电柜与中继",
+    "purpose": "切线取消跨区炮",
+    "design": "与公共供电柜以端子/接口轮廓区分；不能只靠文字标识",
+    "states": [
+      "完好",
+      "供电",
+      "隔离",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B09",
+    "group": "B",
+    "template": "building",
+    "key": "substation",
+    "name": "变电设施",
+    "purpose": "供能建筑和基础设施",
+    "design": "设备阵列有承重平台、隔离距离与检修通道；不以小圆柱堆砌冒充变电站",
+    "states": [
+      "完好",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B10",
+    "group": "B",
+    "template": "building",
+    "key": "workshop",
+    "name": "维修工房",
+    "purpose": "工程场所与整备背景",
+    "design": "可进出的工业门、天车梁、工位尺度与机体匹配",
+    "states": [
+      "完好",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B11",
+    "group": "B",
+    "template": "building",
+    "key": "terminal",
+    "name": "车站终端与控制台",
+    "purpose": "现场读取和操作",
+    "design": "倾斜控制面、硬件按钮和信号灯；动态字由UI绘制，不画伪文字",
+    "states": [
+      "完好",
+      "可操作",
+      "已完成",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B12",
+    "group": "B",
+    "template": "building",
+    "key": "train-front",
+    "name": "撤离列车车头",
+    "purpose": "首要保护对象与行车方向",
+    "design": "驾驶端和尾端一眼不同；现代轨道救援列车，不是玩具小屋加轮；车轮/车灯可简单运动",
+    "states": [
+      "完好",
+      "停车",
+      "行驶",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B13",
+    "group": "B",
+    "template": "building",
+    "key": "train",
+    "name": "撤离列车车厢",
+    "purpose": "24人撤离的可见载体",
+    "design": "与车头同一列车；窗、门、走行部和连接器保持比例；载人与空置可表达",
+    "states": [
+      "完好",
+      "载人",
+      "停车",
+      "行驶",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B14",
+    "group": "B",
+    "template": "building",
+    "key": "bridge",
+    "name": "跨渠桥面与桥锁",
+    "purpose": "修复、支撑、通车",
+    "design": "断口、铰链、锁座、支撑端点真实成套；桥面未接通与已承重结构不同",
+    "states": [
+      "断开",
+      "临时支撑",
+      "锁固",
+      "受损",
+      "坍塌"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B15",
+    "group": "B",
+    "template": "building",
+    "key": "deck",
+    "name": "上层检修栈桥",
+    "purpose": "多层战场与承重",
+    "design": "楼板厚度、下方梁架、栏杆与缺口；俯视和旋转都读得懂高度",
+    "states": [
+      "完好",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B16",
+    "group": "B",
+    "template": "building",
+    "key": "anchor",
+    "name": "支撑锚点与支座",
+    "purpose": "承重与宿敌侧撑",
+    "design": "安装位置、拉力/压力方向清楚；损坏后确实断开承力构造",
+    "states": [
+      "完好",
+      "受力",
+      "断裂"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B17",
+    "group": "B",
+    "template": "building",
+    "key": "crane",
+    "name": "固定吊机",
+    "purpose": "场景机构与吊运",
+    "design": "塔身、吊臂、绞盘、吊钩分件；回转轴与吊运范围一致",
+    "states": [
+      "收起",
+      "作业",
+      "停机",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B18",
+    "group": "B",
+    "template": "building",
+    "key": "elevator",
+    "name": "升降平台",
+    "purpose": "上下层输送",
+    "design": "轨道、驱动和平台有连续空间关系；不是贴图电梯",
+    "states": [
+      "下层",
+      "运行",
+      "上层",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B19",
+    "group": "B",
+    "template": "building",
+    "key": "turntable",
+    "name": "轨道转台",
+    "purpose": "转向与载物",
+    "design": "桥盘厚度、圆坑、环轨和驱动机构真实；中心轴固定，转90度边界可读",
+    "states": [
+      "静止",
+      "旋转",
+      "就位",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B20",
+    "group": "B",
+    "template": "building",
+    "key": "sluice-drive",
+    "name": "水闸驱动与闸门",
+    "purpose": "水位调节",
+    "design": "门体与侧壁/轨道连接；开启和关闭不是只改水色",
+    "states": [
+      "关闭",
+      "开启",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B21",
+    "group": "B",
+    "template": "building",
+    "key": "pumpstation",
+    "name": "泵站",
+    "purpose": "深渠与排水场景",
+    "design": "进出水管、泵房和平台有工程逻辑；与办公楼不同",
+    "states": [
+      "完好",
+      "运行",
+      "停机",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B22",
+    "group": "B",
+    "template": "building",
+    "key": "crate",
+    "name": "货柜与吊点周转箱",
+    "purpose": "推移、搬运、挡炮与清轨",
+    "design": "标准货柜与较小周转箱两尺寸；吊点、门面、顶面有对应关系",
+    "states": [
+      "完好",
+      "吊起",
+      "受损",
+      "破碎"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B23",
+    "group": "B",
+    "template": "building",
+    "key": "wall",
+    "name": "实体隔离墙",
+    "purpose": "移动/射线阻挡",
+    "design": "施工预制段与警备折叠段两种来源；底座接地、毁坏后留真实空隙",
+    "states": [
+      "收纳",
+      "展开",
+      "完好",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B24",
+    "group": "B",
+    "template": "building",
+    "key": "fuel",
+    "name": "燃料与补给接口",
+    "purpose": "补给及空地任务",
+    "design": "罐体、接头、防护围边；可爆与不可爆对象用结构区别，不能都画同一桶",
+    "states": [
+      "可用",
+      "耗尽",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B25",
+    "group": "B",
+    "template": "building",
+    "key": "capacitor",
+    "name": "隔离电容",
+    "purpose": "爆炸连锁",
+    "design": "电容外壳与连接端、泄放口明确；危险器材不与普通居民物件混淆",
+    "states": [
+      "稳定",
+      "临界",
+      "爆裂"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B26",
+    "group": "B",
+    "template": "building",
+    "key": "rift",
+    "name": "猎巢入口",
+    "purpose": "公开增援与封闭",
+    "design": "裂口/侵入结构有实体边缘；蓄动、出现、封住三个过程；不只红圈贴纸",
+    "states": [
+      "休眠",
+      "预告",
+      "增援",
+      "封闭",
+      "摧毁"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B27",
+    "group": "B",
+    "template": "building",
+    "key": "portal",
+    "name": "承运交接点",
+    "purpose": "跨战场转运",
+    "design": "地面导向、吊运/承运装置与出口一致；不是科幻传送魔法门",
+    "states": [
+      "开放",
+      "繁忙",
+      "阻塞",
+      "关闭"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B28",
+    "group": "B",
+    "template": "building",
+    "key": "equipment_bay",
+    "name": "整备复装工位",
+    "purpose": "可拆装备回装",
+    "design": "停靠线、支架、工具臂和被放置部件匹配；非通用浮空按钮",
+    "states": [
+      "空闲",
+      "占用",
+      "维修",
+      "受损"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B29",
+    "group": "B",
+    "template": "building",
+    "key": "cable",
+    "name": "电缆与母排连接段",
+    "purpose": "供电链路",
+    "design": "绝缘外层、端子、线槽与断点；通断有可见反馈，不用长霓虹线当实体",
+    "states": [
+      "完好",
+      "通电",
+      "断裂"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B30",
+    "group": "B",
+    "template": "building",
+    "key": "support_strut",
+    "name": "临时支杆与承重架",
+    "purpose": "支撑/交接通桥",
+    "design": "上端接触、底座和斜撑方向清楚；卸载后保留现场物件",
+    "states": [
+      "收纳",
+      "安装",
+      "受力",
+      "损坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B31",
+    "group": "B",
+    "template": "building",
+    "key": "signal",
+    "name": "轨旁信号与站台设施",
+    "purpose": "行车方向和可用路线",
+    "design": "独立信号灯/道岔指示/站台边缘；不能与敌方攻击红色闪烁争夺注意",
+    "states": [
+      "停止",
+      "放行",
+      "故障"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B32",
+    "group": "B",
+    "template": "building",
+    "key": "skyline",
+    "name": "城市柱环与远景巨构",
+    "purpose": "三战场属于同一城市",
+    "design": "柱环贯穿A/B/C；桥、站与供能设施有地理关系；巨构远处降低对比",
+    "states": [
+      "日常",
+      "局部事故",
+      "恢复"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B33",
+    "group": "B",
+    "template": "building",
+    "key": "street_kit",
+    "name": "道路街具与边界套件",
+    "purpose": "前中后景、尺度和可读边界",
+    "design": "护栏、灯柱、楼梯、检修口、栏板、管桥按用途成套；保持可走空间",
+    "states": [
+      "完好",
+      "受损"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "B34",
+    "group": "B",
+    "template": "building",
+    "key": "service_hut",
+    "name": "检修室和值班室",
+    "purpose": "小型功能建筑",
+    "design": "允许小尺度但必须标明用途；不能拿小屋作为主居民楼；人尺度入口正常",
+    "states": [
+      "完好",
+      "受损",
+      "毁坏"
+    ],
+    "status": "todo"
+  }
+]

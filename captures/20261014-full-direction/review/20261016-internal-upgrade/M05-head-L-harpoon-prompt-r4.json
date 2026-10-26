@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-19",
+  "generation_mode": "built-in image_gen",
+  "source_images": [
+    "samples/M05-head-three-long-r3b.png",
+    "refs/M05-user-face-D-r3.png"
+  ],
+  "user_latest": "中间的天线改成向前方伸出去的一个L型犄角（左侧看过去是L型，顶端部分有个鱼叉一样的倒钩）",
+  "prompt": "Use case: precise-object-edit\nAsset: Complete King helmet structural close-up, TWO consistent views of ONE design: FRONT on the left and TRUE LEFT PROFILE facing LEFT on the right.\nEdit the King in reference 1 according to the user's latest design. Preserve this exact face (navy brow and helmet, separate pale warm eyes, ivory angular jaw, crimson chin, gold cheek frames and round gold ears). Reference 2 is the user's original face authority.\n\nReplace ONLY THE CENTRAL STRAIGHT crown blade with a single forward-projecting GOLD L-SHAPED HARPOON HORN.\nPhysical geometry: this ONE central horn is on the sagittal center plane of the head. A strong vertical stem rises from the central forehead/crown band; at its upper end it turns a clear right angle TOWARD THE FACE'S FORWARD DIRECTION into a stout horizontal prow. The prow extends forward beyond the brow above the face, never into the eyes. Its front tip tapers like a harpoon and has ONE short rear-pointing barb on its underside near the tip. The barb is an integral sharp backward hook, not a second independent antenna, trident or fishing hook.\nIn TRUE LEFT PROFILE, the nose points LEFT on the page, so the horn's horizontal arm also points LEFT (toward nose/front), with the vertical stem behind it. Show the right-angle L elbow and the small rearward barb clearly.\nIn FRONT view, the same forward arm points toward the viewer, strongly FORESHORTENED. It appears as a broad compact central gold prow above the forehead, not as another tall vertical spear. Keep face unobscured. Do not draw a straight central spike in the front view when the profile has a bent horn.\n\nKeep the OTHER FOUR crown blades: a mirrored pair of LONG inner upward/outward gold blades and a mirrored pair of shorter outer gold blades. Thus exactly FIVE ROOTS/MAIN MEMBERS in total: 4 straight side blades + 1 central L-horn. No additional antennae, ears, forks or forehead spikes. The two inner blades stay long as in reference 1; outer pair stays shorter. All paired face/crown components are symmetric in physical construction, allowing natural overlap of far-side blades in the true profile.\n\nNatural tall skull and face unchanged, never flatten the helmet. Royal, forceful, readable shapes with dark gaps separating horn from inner blades. Gold L-horn belongs to head crown, not a weapon floating in front.\nSame clean KINETIC CEL illustration as the reference: broad painted navy/ivory/gold planes, crimson chin, two-step cel shadows, controlled dark contour. No chrome glare, tiny scratches, new logos or extra colors.\nTwo isolated head-and-neck views at identical head scale and aligned chin/eyes, generous transparent separation and margin. True transparent background. No labels, text, arrows or additional views.",
+  "output": "samples/M05-head-L-harpoon-r4.png",
+  "transparent_background": true,
+  "source_refs": [
+    {
+      "file": "samples/M05-head-three-long-r3b.png",
+      "sha256": "f1296036da6f4c827c3bb436a79fdda6b0239de0406dbc0d16246b9966053901"
+    },
+    {
+      "file": "refs/M05-user-face-D-r3.png",
+      "sha256": "af771807d129f91ab7d281a5f21a763075c7dcdafb72d70b5e29e3d1b751e7cf"
+    }
+  ]
+}

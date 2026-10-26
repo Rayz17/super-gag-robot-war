@@ -1,0 +1,32 @@
+case_id	formula_id	platform	video_id	title	checked_t	what_seen	op_chain	switch	evidence_grade	screenshot	limitation
+TAC-02	FML_TACTICAL	bilibili	BV11N411878E	陷阵之志 不公模式#3 极点守卫 v1.2.88	P1 00:20	机库：时间旅行者+三机甲+武器拖拽说明格	选飞行员→选战队→悬停武器看3x3示意图→开始	hangar→island/battle	video_frame	video-frames/itb-bv11n411878e-p1-0020.png	只核验不公模式一段
+TAC-02	FML_TACTICAL	bilibili	BV11N411878E	同上	P1 04:50	8x8等距盘：绿移动范围、红箭头意图、电网条、结束回合/撤销	选机甲→看绿格落位→武器方向→结束回合	player_plan	video_frame	tac-itb-intent-battlefield.png	与仓内旧账 BV-ITB-01 同片复核
+TAC-02	FML_TACTICAL	bilibili	BV11N411878E	同上	P1 05:05	攻击顺序 0火伤/1再生/2-5敌行动/6刷新；单位头顶编号	悬停「攻击顺序」展开图例	overlay_on	video_frame	tac-itb-attack-order.png	编号是表达不是唯一规则
+TAC-02	FML_TACTICAL	bilibili	BV11N411878E	同上	P1 05:35	「警告！敌方活动」切敌方执行	结束回合后不可再改本轮令	player→enemy_exec	video_frame	video-frames/itb-bv11n411878e-p1-0335.png	执行中无倒带
+WR-02	FML_WORLD_ROUTE	bilibili	BV11N411878E	同上	P2 00:15	岛内分区图：总部绿、威胁区红框、任务卡写奖励目标	点分区→读威胁/奖励→出击	island_select	video_frame	wr-itb-island-select.png	岛内未选区会在总部战被毁掉；未选的其他岛仍在
+NARR-03	FML_NARRATIVE	bilibili	BV1zNh2zsELK	超级机器人大战Y 剧情无解说流程 P1 启航之日	00:80	黑底史诗文+徽章；[J]继续 [K]跳过	确认翻页 / 跳过整段序章	black_adv	video_frame	narr-srwy-black-adv.png	无解说片；键位是 PC 版
+NARR-03	FML_NARRATIVE	bilibili	BV1zNh2zsELK	同上	03:00	俯视游行事件底栏：名牌艾蒂卡、[V]AUTO [K]跳过场面 [Z]记录 [F]百科	场面跳过≠战斗跳过	event_on_map	video_frame	narr-srwy-map-event.png	切镜仍锁走格
+NARR-03	FML_NARRATIVE	bilibili	BV1zNh2zsELK	同上	20:50	地图态 ADV：棋盘还在、蓝菱形、胸像 ZERO、橙词可开百科	J 翻句；F 盖百科	map_adv	video_frame	narr-srwy-map-adv.png	未抽到句内选项专帧
+NARR-03	FML_NARRATIVE	bilibili	BV1zNh2zsELK	同上	25:00	立绘 ADV：双人胸像+底栏同一套 AUTO/场面跳过/记录/百科	同键分层	portrait_adv	video_frame	narr-srwy-portrait-adv.png	
+TAC-03	FML_TACTICAL	bilibili	BV1zNh2zsELK	同上	13:20	战斗演出 HUD：左右 HP/EN 条、胸像战吼、[J]加速 [G]暂停 [K]返回	演出层与地图层键分开	map→battle_anim	video_frame	tac-srwy-battle-hud.png	本 P 未抽到移动/攻击/精神指令菜单本体；缺帧不得用裂湾菜单顶替
+WR-01	FML_WORLD_ROUTE	bilibili	BV1Rr4y1r75Y	超级机器人大战30 精英全流程 P1	23:20	地图态 ADV：旗舰蓝菱形+胸像底栏 AUTO/[F1]指南	战略后仍是棋盘对白	map_adv	video_frame	narr-srw30-map-adv.png	P1 线性关；世界图见 BV1AR4y1b7FF
+WR-01	FML_WORLD_ROUTE	bilibili	BV1Rr4y1r75Y	同上 P2	00:40	舰内走廊立绘 ADV	任务间隙回舰对话	intermission_adv	video_frame	video-frames/srw30-p2-0040.png	世界图不在本片
+WR-01	FML_WORLD_ROUTE	bilibili	BV1AR4y1b7FF	《机战30》地图任务技巧	00:30	任务列表三栏：区域/舰内、推荐/DLC、右栏出击数/指定机体/报酬；△世界地图	列表选任务→确定；△切世界图	mission_list	video_frame	wr-srw30-mission-list.png	PS 键位；中文补丁
+WR-01	FML_WORLD_ROUTE	bilibili	BV1AR4y1b7FF	同上	10:10	亚洲区世界图：地点红X/绿+、光标圈选；区域任务1/舰内任务5；×战略 △任务 □区域移动	图上点选 ⇄ △回列表	world_map	video_frame	wr-srw30-world-map.png	妖精消失未在本帧出现，仍对照万代文
+INV-01	FML_INVESTIGATION	bilibili	BV1pt421N7pw	金偶像谜案 序章	02:00	探索态：定格悬崖现场+底栏词卡+探索/思考滑条	点场景收词；滑条切思考	explore	video_frame	inv-golden-explore-think.png	右侧是录播弹幕，不是游戏 HUD
+INV-01	FML_INVESTIGATION	bilibili	BV1pt421N7pw	同上	02:00–06:00	思考态：合约文书叠在现场上，红虚线槽拖入人名/身份	词库拖槽；11/11 收齐计数	think	video_frame	inv-golden-thinking-doc.png	序章槽少；分段锁定见后案
+INV-02	FML_INVESTIGATION	bilibili	BV1Yb411w722	奥伯拉丁的回归 汉化解说	P4 26:40	账本翻开：章 I「开船运货」左页货网速写、右页海图打 X	Tab 开书；翻页	ledger_chapter	video_frame	inv-obradinn-ledger.png	未抽到三连对盖章动画
+INV-02	FML_INVESTIGATION	bilibili	BV1Yb411w722	同上	P3 03:20	花名册叠在记忆场景上：编号/姓名/职分/籍贯，点选一人	书内列表十字键移动	manifest	video_frame	inv-obradinn-manifest.png	命运填写格未单独成帧
+INV-02	FML_INVESTIGATION	bilibili	BV1Yb411w722	同上	P4 01:20–15:00	1bit 记忆场：尸体/怪物定格、可走甲板	怀表进记忆→在场内走动观察	explore→memory	video_frame	video-frames/obradinn-ch1-0080.png	3D 走船不能当实验室壳
+EXPL-02	FML_EXPLORATION	bilibili	BV1CF411S7RD	星际拓荒 飞船日志全收集	00:15–02:27	船电脑：底栏星球页签、左栏地点、右栏照片、Δ传闻模式、X 标记 HUD	回船→开电脑→地图/传闻切换→标记	ship_computer	video_frame	expl-outerwilds-shiplog.png	全收集档，不是第一小时新手
+HUB-02	FML_HUB	bilibili	BV1NK411Y7Hi	Citizen Sleeper 原文无解说 P1	15:00	顶栏五骰槽（6/4/2/2/!）+右栏对白选项	周期开始掷骰；对话 CONTINUE	cycle_hud	video_frame	hub-sleeper-dice-hud.png	
+HUB-02	FML_HUB	bilibili	BV1NK411Y7Hi	同上	53:20	地点动作卡叠在空间上：左买废料(花 CRYO) 右卸货(空 DICE 槽)；顶栏剩 1 颗骰	把顶栏骰拖进动作卡槽；用完休息	world+action_cards	video_frame	hub-sleeper-action-slots.png	骰面随机成功率必须改掉
+HUB-03	FML_HUB	bilibili	BV1Te411j7FR	Hades 大厅装修	00:20–03:00	等距大厅走动；碰展品出底栏旁白；右侧黑暗/宝石/钥匙等资源	走→交互→人话随布置变	hub_space	video_frame	hub-hades-house-interact.png	装修向；无三格工作卡
+HUB-01	FML_HUB	bilibili	BV1a4411D7zC	风花雪月 #7 修道院钓鱼任务	00:30	3D 散步：日历 6/8 花冠节、指导 Lv.E、活动点 2、右半屏地图叹号/对话泡	走动消耗 AP；钓鱼/谈话不走四选菜单	explore_walk	video_frame	hub-fe3h-monastery-explore.png	四选见 BV1dy4y1B7vP
+HUB-01	FML_HUB	bilibili	BV1dy4y1B7vP	风花雪月教会线 前言与散步指导	03:00	月历：周日红字、角色棋子停在 27 日、教程提示周末选散步	月历走到周日	calendar	video_frame	hub-fe3h-calendar.png	
+HUB-01	FML_HUB	bilibili	BV1dy4y1B7vP	同上	03:20	周日四选：左列散步/讲习/出击/休养，右列月历金框当天，底栏确认时间表	四选形态→确认时间表才进散步	weekend_choice	video_frame	hub-fe3h-weekend-fourchoice.png	讲习/出击/休养未逐项点开，只见菜单形状
+SET-01	FML_SETTLEMENT	bilibili	BV1Hx411t7BZ	XCOM2 天选之战 P1	35:00	战场射击 HUD：命中 81%/侧翼暴击/开火动作条	选人→开火→看百分比确认	tactical	video_frame	tac-xcom2-shot-hud.png	不是结算页
+SET-01	FML_SETTLEMENT	bilibili	BV1Hx411t7BZ	同上	44:10	理事会传输：行动名+奖励工程师+继续	战场胜利→叙事奖励屏→回基地	mission_end	video_frame	set-xcom2-council.png	仍未见出击编队卡槽式 AAR；卡槽结构仍以设计师文为准
+SET-03	FML_SETTLEMENT	bilibili	BV1FQ5PzNESg	旗帜传说 P1	10:00	宴会厅战棋：护甲/力量双条、回合头像条	选攻甲或攻力量	combat	video_frame	set-bannersaga-combat.png	不是行军提交
+WR-03	FML_WORLD_ROUTE	bilibili	BV1FQ5PzNESg	同上	03:00	羊皮纸世界分区图（开场）	叙事用地图，不是点选提交	cinematic_map	video_frame	wr-bannersaga-parchment.png	交互行军桥未抽到
+NARR-X	FML_NARRATIVE	youtube	zVOid6mJwfc	Golden Idol 无解说全程	—	播放器登录墙「确认你不是机器人」	未能观看	blocked	blocked	—	改走 B 站同题材实机

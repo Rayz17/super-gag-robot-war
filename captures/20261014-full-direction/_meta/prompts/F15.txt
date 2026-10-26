@@ -1,0 +1,21 @@
+STYLE LOCK = Astra KINETIC_CEL (must match references):
+- Hard-edge cel color blocks, pressure ink outlines, max two hard shadow tiers
+- Super Robot Wars / 超级系 readable silhouette; half-Q STANDARD readability
+- Gongwu industrial palette: steel teal / concrete beige / warning vermilion
+- NOT photoreal, NOT AAA PBR, NOT wasteland photo rust, NOT alien biotech, NOT ITB grayboard
+- Direction concept sheet: one clear hero view + small state callouts if needed; NOT full turnaround PSD
+Reference images (match stroke weight, cel blocking, palette):
+- style-lock/01-kinetic-cel-storyframe-v23a.png
+- style-lock/11-tactics-user-accepted.png
+- style-lock/02-mech-hero.jpg
+
+ASSET ID F15 | key=tether_tool | template=part
+NAME: 牵引与拘束索具
+PURPOSE: 共享工具与产物
+DESIGN BRIEF: 牵引钩和拘束爪共用材质但形状可分；线缆独立由引擎生成
+STATES to imply on sheet: 发射, 张紧, 松脱
+IDENTITY retain: 沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。牵引钩和拘束爪共用材质但形状可分；线缆独立由引擎生成
+PROJECT DESIGN: 从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。
+AVOID: 合体、变形与拆卸不能凭空更换头胸或增减零件；不可从母体单张动作图猜背面。
+CONTEXT: M03：馆守Z是万机馆18米旧巨神，“旧守护者”是同一机魂的日常称呼。C01原右拳与完整前臂已毁，之后用临时巡展臂装，真正后继右臂要另有剧情。它与兜灯有长期维修和守护关系。 / M09：灰崎警备劳务机承担非致命控制、封路和警戒，可以撤回不安全动作继续协作。制服与劳务的冲突比普通军用战斗更重要。 / M07：市政吊装机是推拉、吊运、改轨和地形施工的城市公共支援；有工作身份，不只是地图上可移动的钩子。
+Output: single art-direction concept painting, clean readable silhouette, labeled states as small insets OK, no fake UI text walls, no photoreal materials.

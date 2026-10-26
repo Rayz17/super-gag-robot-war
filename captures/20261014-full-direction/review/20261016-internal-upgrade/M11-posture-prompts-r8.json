@@ -1,0 +1,27 @@
+{
+  "generation_mode": "built_in_image_gen",
+  "inputs": [
+    {
+      "role": "edit_target",
+      "file": "samples/M11-side-r7-angle-attempt.png",
+      "sha256": "9c4b142f82faf0412896e6cb466823a8e6ce3c48ed6322badd2117fbc7c8d5b6"
+    },
+    {
+      "role": "head_design_reference",
+      "file": "samples/M11-selected-head-r6.png",
+      "sha256": "3a6496028f8328c6ef3300f9b9b836d3e88ce8e8befe5564f01a2339fecd43ec"
+    }
+  ],
+  "selected_outputs": [
+    {
+      "id": "POSTURE",
+      "file": "samples/M11-posture-r8.png",
+      "prompts": [
+        "M11-posture-prompt-r8.txt"
+      ]
+    }
+  ],
+  "reference_urls": [
+    "https://www.hasbropulse.com/product/transformers-studio-series-commander-class-the-transformers-the-movie-8631-optimus-prime/F85145L00"
+  ]
+}

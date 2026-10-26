@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-20",
+  "revision": "M05-red-fin-design-fixed-and-turnaround-r10",
+  "authority": "direct_user_message_in_this_chat",
+  "verbatim": "可以，就这样，继续出这批设计的三视图",
+  "scope": "当前R9红色中线鳍与普通脸/战斗面罩双状态源设计固定，沿该套设计补王者素体、全装和两状态头部三视设定。",
+  "files": [
+    {
+      "id": "MASK",
+      "file": "samples/M05-red-fin-battle-r9b.png",
+      "sha256": "8c3c9a069efb5d9b0d54cad100bada8a54bf1e660f32f133642fd0d3fe451d9c",
+      "pixel_size": [
+        1774,
+        887
+      ]
+    },
+    {
+      "id": "NORMAL",
+      "file": "samples/M05-red-fin-normal-r9.png",
+      "sha256": "4669cb53d0088c6b96c4843a72d3b5435463d77c2e947fc77ff20cd2892594c1",
+      "pixel_size": [
+        1774,
+        887
+      ]
+    }
+  ],
+  "source_record": "M05-red-fin-production-r9.json",
+  "existing_batch": "design-followthrough-r1.json",
+  "authorized_derivatives": [
+    "素体正侧背，普通脸与红鳍合回",
+    "全装正侧背，战斗面罩与红鳍合回",
+    "普通脸/战斗面罩的头部正侧背对照"
+  ],
+  "excludes": [
+    "尚未产生的新三视图质量认可",
+    "同一模型精确投影、隐藏结构、绑定或动作",
+    "战棋镜头、运行或全项目验收"
+  ],
+  "head_source_user_accepted": true,
+  "new_turnaround_images_user_accepted": false,
+  "canon_lock": "CML135",
+  "runtime_changed": false,
+  "handoff_sent": false
+}

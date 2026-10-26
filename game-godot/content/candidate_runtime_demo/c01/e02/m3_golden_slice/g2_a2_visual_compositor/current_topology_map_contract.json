@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "contract_id": "C01E02_G2_A2_C1_CURRENT_TOPOLOGY_MAP_V1",
+  "status": "proxy_only_candidate_non_default",
+  "authority": {
+    "topology_source": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/golden_slice_profile.json",
+    "projection_source": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/visual_compositor_profile.json#geometry",
+    "a4_role": "fixture_and_material_method_donor_only",
+    "a4_visible_pixels_allowed": false,
+    "approved_handoffs": [],
+    "real_art_loaded": 0
+  },
+  "layer_registry": [
+    {"slot_id":"GROUND_BASE_CURRENT","role":"procedural_ground_road_drainage_wetness","z":-1200,"state_source":"golden_slice_profile.terrain_zones","dynamic":false},
+    {"slot_id":"STRUCTURES_CURRENT","role":"procedural_building_facades_in_impassable_zones","z":-900,"state_source":"golden_slice_profile.terrain_zones","dynamic":false},
+    {"slot_id":"ROOFS_FOREGROUND_CURRENT","role":"procedural_roofs_and_local_fade_foreground","z":900,"state_source":"golden_slice_profile.terrain_zones + local_occlusion_mask","dynamic":true},
+    {"slot_id":"OCCLUSION_CONTROL_CURRENT","role":"current_topology_rgba_control_proxy","z":1000,"state_source":"procedural_current_topology_control + CompoundMapActor silhouettes","dynamic":true},
+    {"slot_id":"STATIC_LIGHT_WEATHER_CURRENT","role":"rain_wet_reflection_and_static_edge_lights","z":1050,"state_source":"visual_compositor_profile.weather_fx","dynamic":true},
+    {"slot_id":"DYNAMIC_WORLD_OBJECTS","role":"session_resolver_entities_objects_routes_intents_fx","z":1200,"state_source":"GoldenSliceSession + GoldenSliceResolver + PerformanceDirector","dynamic":true}
+  ],
+  "spatial_roles": {
+    "central_contact_avenue": {"source":"golden_slice_profile.terrain_zones[TERRAIN_C01_MAIN_ROAD]","expected_rect":[0,7,32,7],"read":"wide_wet_2x2_3x3_contact_axis"},
+    "east_life_line": {"source":"golden_slice_profile.terrain_zones[TERRAIN_C01_RESCUE_LANE]","expected_rect":[20,5,12,7],"read":"continuous_cyan_edge_lights_and_evacuation_arrows"},
+    "west_shield_hook": {"source":"session.round_snapshot.objects[PROP_C01CDV1_RETIRED_SHIELD].anchor","expected_anchor":[14,10],"read":"visible_unacquired_secondary_landmark"},
+    "south_breaker_approach": {"source":"session.intent_set.intents[STRAIGHT_CHARGE_NORTH_CITY].trajectory","expected":[[20,13],[20,12],[20,11]],"read":"strongest_red_northbound_axis"},
+    "right_artillery_forecast": {"source":"session.intent_set.intents[CONDITIONAL_SIDE_ARMOR_SHOT].source_anchor","expected_anchor":[29,2],"read":"hud_edge_cue_only_until_T4"}
+  },
+  "plan_public_bindings": {
+    "source_policy": "all product positions read from Session public snapshot/intents; expected values validate only",
+    "subjects": {
+      "V353U001": {"source":"session.round_snapshot.entities[unit_id=V353U001]","expected":{"anchor":[15,11],"footprint":[2,2],"facing":"east"}},
+      "ENEMY_C01_BREAKER": {"source":"session.round_snapshot.entities[unit_id=ENEMY_C01_BREAKER]","expected":{"anchor":[20,13],"footprint":[3,3],"facing":"north"}},
+      "TARGET_C01_EMERGENCY_VEHICLE_01": {"source":"session.round_snapshot.entities[unit_id=TARGET_C01_EMERGENCY_VEHICLE_01]","expected":{"anchor":[17,10],"footprint":[1,1],"facing":"east"}},
+      "ENEMY_C01_RIFT_SWARM_01": {"source":"session.round_snapshot.entities[unit_id=ENEMY_C01_RIFT_SWARM_01]","expected":{"anchor":[22,7],"footprint":[1,1],"facing":"west"}},
+      "ENEMY_C01_RIFT_SWARM_02": {"source":"session.round_snapshot.entities[unit_id=ENEMY_C01_RIFT_SWARM_02]","expected":{"anchor":[26,12],"footprint":[1,1],"facing":"north"}},
+      "ENEMY_C01_RIFT_SWARM_03": {"source":"session.round_snapshot.entities[unit_id=ENEMY_C01_RIFT_SWARM_03]","expected":{"anchor":[29,5],"footprint":[1,1],"facing":"south"}},
+      "TARGET_C01_EAST_EXIT": {"source":"session.round_snapshot.entities[unit_id=TARGET_C01_EAST_EXIT]","expected":{"anchor":[31,7],"footprint":[1,1]}},
+      "TARGET_C01_SECURITY_GATE": {"source":"session.round_snapshot.entities[unit_id=TARGET_C01_SECURITY_GATE]","expected":{"anchor":[27,8],"footprint":[1,1]}}
+    },
+    "objects_and_areas": {
+      "PROP_C01CDV1_RETIRED_SHIELD": {"source":"session.round_snapshot.objects[object_id=PROP_C01CDV1_RETIRED_SHIELD]","expected":{"anchor":[14,10]}},
+      "PROTECTION_ZONE_RECT": {"source":"session.round_snapshot.terrain_zones[zone_id=TERRAIN_C01_RESCUE_LANE]","expected":{"rect":[20,5,12,7]}},
+      "ALLY_C01_CITY_ARTILLERY": {"source":"session.intent_set.intents[action_type=CONDITIONAL_SIDE_ARMOR_SHOT].source_anchor","expected":{"anchor":[29,2]}}
+    },
+    "intent_trajectories": {
+      "TARGET_C01_EMERGENCY_VEHICLE_01": {"source":"session.intent_set.intents[action_type=AUTO_CROSS_LANDING_ZONE].trajectory","expected":[[17,10],[18,10],[21,10],[24,9]]},
+      "ENEMY_C01_RIFT_SWARM_01": {"source":"session.intent_set.intents[action_type=ENTER_ATTACK_RESCUE_LINE].trajectory","expected":[[22,7],[21,8],[20,9],[20,10]]},
+      "ENEMY_C01_BREAKER": {"source":"session.intent_set.intents[action_type=STRAIGHT_CHARGE_NORTH_CITY].trajectory","expected":[[20,13],[20,12],[20,11]]}
+    },
+    "product_reads_legacy_a4_control": false,
+    "legacy_a4_role": "material_and_occlusion_method_donor_fixture_validation_only"
+  },
+  "clearance_contract": {
+    "choice_pocket_rect_inclusive": [15,9,20,11],
+    "choice_pocket_obstruction_allowed": false,
+    "breaker_sweep_rect_inclusive": [20,11,22,15],
+    "breaker_visual_shoulder_lane_cells_each_side": 1,
+    "east_exit_is_primary_landmark": true,
+    "shield_wall_is_secondary_landmark": true
+  },
+  "procedural_style": {
+    "ground": {"asphalt":"#172a34","plaza":"#213744","road_lane":"#304d58","drainage":"#0d1b24","wet_highlight":"#5ba7ae"},
+    "structures": {"facade":"#263c49","roof":"#172832","edge":"#5d7d86","window":"#7fd8d5","warning":"#ef6f4d"},
+    "protection": {"fill":"#155a66","edge":"#55dbd9","arrow":"#9cf6ee"},
+    "threat": {"corridor":"#7e2334","edge":"#ff5f65","forecast":"#f59654"},
+    "rain": {"far":"#6aa7b4","near":"#a7dce1","opacity":0.28}
+  },
+  "dynamic_responsibility": {
+    "source":"same Resolver preview/world_result used by execute",
+    "stored_values_are_validation_expectations_only": true,
+    "product_copy_source":"visual_compositor_adapter formats each same-Resolver preview row in Chinese",
+    "A": {"facility_state":"damaged","road_damage":42,"round1_heat":24,"round2_target_heat":68,"round2_margin":1,"benefit":"lower_heat_and_more_machine_margin","cost":"city_facility_and_road"},
+    "B": {"facility_state":"active","road_damage":24,"round1_heat":46,"round2_target_heat":88,"round2_margin":0,"benefit":"facility_and_road_preserved","cost":"machine_heat_and_timing"},
+    "hidden_peripheral_swarm_intent_allowed": false
+  },
+  "phase_policy": {
+    "T3_physical_only":["micro_crack","small_directional_debris","water_splash","contact_highlight","hit_stop","recoil"],
+    "T4_hud_forecast_only":["city_artillery"],
+    "T5_hud_forecast_only":["red_charge","full_road_buckle"]
+  }
+}

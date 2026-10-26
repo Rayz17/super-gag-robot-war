@@ -1,0 +1,75 @@
+{
+  "revision": "M04-brave-combined-r4b",
+  "date": "2026-10-17",
+  "purpose": "接R3正面方向意见，修V17头保长发、V18感钝机头、翼根分件/转轴、钻头前向与机身配色",
+  "previous_record": "brave-production-r3.json",
+  "full_body": {
+    "file": "samples/M04-brave-combined-master-r4b.png",
+    "sha256": "c632800c50509af21a32d00405f576bf1c9d22411bd8f66898bcfeecc0e045bc",
+    "pixel_size": [
+      1254,
+      1254
+    ],
+    "generated": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-723fbc75-c1c3-4eaf-91fe-bd58f28d11be.png"
+  },
+  "bomber_component": {
+    "file": "samples/M04-bomber-component-r3.png",
+    "sha256": "38c39052cd5053bbb87eba765040a3b16bde29fd176148eca0aa8835905a5577",
+    "pixel_size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "generated": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-12c73b9a-7903-4263-8397-b3ff4073e10b.png"
+  },
+  "arm_structure": {
+    "current": "samples/M04-train-arm-structure-r2.png",
+    "sha256": "40d8f8bec33e4f181e7c1c3e6f7297557bfaffb379f687944734cae940b7337e",
+    "scope": "沿用前轮结构候选；不是本轮新稿或绑定完成"
+  },
+  "prompts": [
+    "brave-combined-prompt-r4.json",
+    "brave-local-head-knee-prompt-r4b.json"
+  ],
+  "user_direction_record": "user-art-decisions-20261016.json",
+  "user_feedback_scope": "用户认为R3轰炸机意思对了、整体还行；R4具体新图未由用户认可",
+  "actual_attempts": [
+    {
+      "file": "samples/M04-brave-combined-master-r4a.png",
+      "observed": true,
+      "result": "partial",
+      "finding": "肩翼轴与钝鼻、配色改善；近侧钻仍朝内偏右，头仍近R3，不能宣布五项都解决。"
+    },
+    {
+      "file": "samples/M04-brave-combined-master-r4b.png",
+      "observed": true,
+      "result": "author_improved_candidate",
+      "finding": "将修改收窄到头与近侧膝钻，银色冠甲/中央橙冠保长发，左侧膝钻转向左前，保留新肩翼轴和钝鼻。"
+    }
+  ],
+  "author_review": {
+    "actual_full_images_compared": true,
+    "visible_changes": [
+      "完整宽后掠翼与双发动机保留，中央胸背机身与两侧翼架间可见分缝、轴环和支架。",
+      "机头由尖喙变为饱满短钝鼻，翼面改为暖白/蓝石墨分区，保留橙色身份。",
+      "银色层叠冠甲比上一稿收敛，保留长鬃发；近侧膝钻按对应足尖前向旋转，不再和远侧同指画面右方。"
+    ],
+    "remaining": [
+      "新头和新机头的具体审美仍由用户判断，不将V17感觉近似当逐零件复刻。",
+      "转轴在源稿可见不等于可动模型已验证；肩抬举、翼架倾转、发动机与臂壳的净空需分件/真实动作检查。",
+      "钻头角度是本视图作者校正，正/侧视和绑定时仍须对齐膝局部前向，不用画面左右作为运行方向。",
+      "核心/合体同源对照、低模/UV/材质/绑定/动作和正常战棋运行仍未由本会话完成。"
+    ]
+  },
+  "assembly_intent": {
+    "central_fuselage": "随胸背安装，不用一体翼面横跨两个肩关节",
+    "left_right_wing_frames": "独立分件，翼根轴接中央机身；发动机各随所属翼架，保留核心肩关节净空",
+    "head": "头冠/护面按本稿，长发保留独立附属层；不抹掉完整勇拳核心",
+    "knee_drills": "以膝部局部前轴和各自足尖/腿朝向为依据，禁止用固定屏幕方向配置"
+  },
+  "model_produced": false,
+  "runtime_integrated": false,
+  "user_accepted": false,
+  "current_status": "r4b_local_refinement_candidate",
+  "generation_mode": "built-in image_gen"
+}

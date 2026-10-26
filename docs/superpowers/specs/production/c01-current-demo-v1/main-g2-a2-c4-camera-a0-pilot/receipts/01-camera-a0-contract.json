@@ -1,0 +1,4013 @@
+{
+  "actor_count_per_focus": 6,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "candidate_id": "CAM_A0_V1_40X20",
+      "canvas_fit": {
+        "canvas_placement_frozen": false,
+        "centered_fit_margin_each_side_px": [
+          200.0,
+          175.0
+        ],
+        "comparison_canvas_px": [
+          2400.0,
+          1350.0
+        ],
+        "fits": true,
+        "projected_board_bounds_px": [
+          -720.0,
+          -20.0,
+          2000.0,
+          1000.0
+        ]
+      },
+      "contacts": [
+        {
+          "actors": [
+            {
+              "anchor": [
+                20.0,
+                9.0
+              ],
+              "error_px": 0.0,
+              "footprint": [
+                2,
+                2
+              ],
+              "screen": [
+                680.0,
+                370.0
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "anchor": [
+                20.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "footprint": [
+                3,
+                3
+              ],
+              "screen": [
+                600.0,
+                450.0
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            }
+          ],
+          "branch": "A",
+          "crop": {
+            "actual": [
+              -240.0,
+              328.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -240.0,
+              328.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -240.0,
+            328.0,
+            1280.0,
+            584.0
+          ],
+          "focus_profile": "CONTACT_A",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ],
+          "impact_error_px": 0.0,
+          "impact_expected": [
+            640.0,
+            350.0
+          ],
+          "impact_screen": [
+            640.0,
+            350.0
+          ],
+          "impact_world": [
+            20.5,
+            10.5
+          ],
+          "strategy_id": "A_BODY_INTERCEPT"
+        },
+        {
+          "actors": [
+            {
+              "anchor": [
+                19.0,
+                9.0
+              ],
+              "error_px": 0.0,
+              "footprint": [
+                2,
+                2
+              ],
+              "screen": [
+                660.0,
+                360.0
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "anchor": [
+                20.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "footprint": [
+                3,
+                3
+              ],
+              "screen": [
+                620.0,
+                460.0
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            }
+          ],
+          "branch": "B",
+          "crop": {
+            "actual": [
+              -260.0,
+              318.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -260.0,
+              318.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -260.0,
+            318.0,
+            1280.0,
+            584.0
+          ],
+          "focus_profile": "CONTACT_B",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ],
+          "impact_error_px": 0.0,
+          "impact_expected": [
+            640.0,
+            350.0
+          ],
+          "impact_screen": [
+            640.0,
+            350.0
+          ],
+          "impact_world": [
+            20.0,
+            10.5
+          ],
+          "strategy_id": "B_PROTECT_LANE_PREPARE"
+        }
+      ],
+      "crop": {
+        "actual": [
+          -240.0,
+          298.0,
+          1280.0,
+          584.0
+        ],
+        "expected_position": [
+          -240.0,
+          298.0
+        ]
+      },
+      "facing_vectors": {
+        "east": {
+          "actual": [
+            40.0,
+            20.0
+          ],
+          "expected": [
+            40.0,
+            20.0
+          ]
+        },
+        "north": {
+          "actual": [
+            40.0,
+            -20.0
+          ],
+          "expected": [
+            40.0,
+            -20.0
+          ]
+        },
+        "south": {
+          "actual": [
+            -40.0,
+            20.0
+          ],
+          "expected": [
+            -40.0,
+            20.0
+          ]
+        },
+        "west": {
+          "actual": [
+            -40.0,
+            -20.0
+          ],
+          "expected": [
+            -40.0,
+            -20.0
+          ]
+        }
+      },
+      "profiles": [
+        {
+          "actors": [
+            {
+              "actual": [
+                400.0,
+                340.0
+              ],
+              "anchor": [
+                15.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                400.0,
+                340.0
+              ],
+              "footprint": [
+                2,
+                2
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "actual": [
+                520.0,
+                520.0
+              ],
+              "anchor": [
+                20.0,
+                13.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                520.0,
+                520.0
+              ],
+              "footprint": [
+                3,
+                3
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            },
+            {
+              "actual": [
+                520.0,
+                320.0
+              ],
+              "anchor": [
+                17.0,
+                10.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                520.0,
+                320.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+            },
+            {
+              "actual": [
+                840.0,
+                360.0
+              ],
+              "anchor": [
+                22.0,
+                7.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                840.0,
+                360.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+            },
+            {
+              "actual": [
+                800.0,
+                540.0
+              ],
+              "anchor": [
+                26.0,
+                12.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                800.0,
+                540.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_02"
+            },
+            {
+              "actual": [
+                1200.0,
+                460.0
+              ],
+              "anchor": [
+                29.0,
+                5.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1200.0,
+                460.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_03"
+            }
+          ],
+          "control_points": [
+            {
+              "actual": [
+                240.0,
+                -240.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                240.0,
+                -240.0
+              ],
+              "grid": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "actual": [
+                400.0,
+                280.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                400.0,
+                280.0
+              ],
+              "grid": [
+                15.0,
+                11.0
+              ]
+            },
+            {
+              "actual": [
+                800.0,
+                720.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                800.0,
+                720.0
+              ],
+              "grid": [
+                31.0,
+                17.0
+              ]
+            }
+          ],
+          "crop": {
+            "actual": [
+              -240.0,
+              298.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -240.0,
+              298.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -240.0,
+            298.0,
+            1280.0,
+            584.0
+          ],
+          "focus_cell": [
+            19.75,
+            9.75
+          ],
+          "focus_profile": "PLAN",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_error_px": 0.0,
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ]
+        },
+        {
+          "actors": [
+            {
+              "actual": [
+                400.0,
+                310.0
+              ],
+              "anchor": [
+                15.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                400.0,
+                310.0
+              ],
+              "footprint": [
+                2,
+                2
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "actual": [
+                520.0,
+                490.0
+              ],
+              "anchor": [
+                20.0,
+                13.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                520.0,
+                490.0
+              ],
+              "footprint": [
+                3,
+                3
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            },
+            {
+              "actual": [
+                520.0,
+                290.0
+              ],
+              "anchor": [
+                17.0,
+                10.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                520.0,
+                290.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+            },
+            {
+              "actual": [
+                840.0,
+                330.0
+              ],
+              "anchor": [
+                22.0,
+                7.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                840.0,
+                330.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+            },
+            {
+              "actual": [
+                800.0,
+                510.0
+              ],
+              "anchor": [
+                26.0,
+                12.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                800.0,
+                510.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_02"
+            },
+            {
+              "actual": [
+                1200.0,
+                430.0
+              ],
+              "anchor": [
+                29.0,
+                5.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1200.0,
+                430.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_03"
+            }
+          ],
+          "control_points": [
+            {
+              "actual": [
+                240.0,
+                -270.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                240.0,
+                -270.0
+              ],
+              "grid": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "actual": [
+                400.0,
+                250.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                400.0,
+                250.0
+              ],
+              "grid": [
+                15.0,
+                11.0
+              ]
+            },
+            {
+              "actual": [
+                800.0,
+                690.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                800.0,
+                690.0
+              ],
+              "grid": [
+                31.0,
+                17.0
+              ]
+            }
+          ],
+          "crop": {
+            "actual": [
+              -240.0,
+              328.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -240.0,
+              328.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -240.0,
+            328.0,
+            1280.0,
+            584.0
+          ],
+          "focus_cell": [
+            20.5,
+            10.5
+          ],
+          "focus_profile": "CONTACT_A",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_error_px": 0.0,
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ]
+        },
+        {
+          "actors": [
+            {
+              "actual": [
+                420.0,
+                320.0
+              ],
+              "anchor": [
+                15.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                420.0,
+                320.0
+              ],
+              "footprint": [
+                2,
+                2
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "actual": [
+                540.0,
+                500.0
+              ],
+              "anchor": [
+                20.0,
+                13.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                540.0,
+                500.0
+              ],
+              "footprint": [
+                3,
+                3
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            },
+            {
+              "actual": [
+                540.0,
+                300.0
+              ],
+              "anchor": [
+                17.0,
+                10.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                540.0,
+                300.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+            },
+            {
+              "actual": [
+                860.0,
+                340.0
+              ],
+              "anchor": [
+                22.0,
+                7.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                860.0,
+                340.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+            },
+            {
+              "actual": [
+                820.0,
+                520.0
+              ],
+              "anchor": [
+                26.0,
+                12.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                820.0,
+                520.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_02"
+            },
+            {
+              "actual": [
+                1220.0,
+                440.0
+              ],
+              "anchor": [
+                29.0,
+                5.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1220.0,
+                440.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_03"
+            }
+          ],
+          "control_points": [
+            {
+              "actual": [
+                260.0,
+                -260.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                260.0,
+                -260.0
+              ],
+              "grid": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "actual": [
+                420.0,
+                260.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                420.0,
+                260.0
+              ],
+              "grid": [
+                15.0,
+                11.0
+              ]
+            },
+            {
+              "actual": [
+                820.0,
+                700.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                820.0,
+                700.0
+              ],
+              "grid": [
+                31.0,
+                17.0
+              ]
+            }
+          ],
+          "crop": {
+            "actual": [
+              -260.0,
+              318.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -260.0,
+              318.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -260.0,
+            318.0,
+            1280.0,
+            584.0
+          ],
+          "focus_cell": [
+            20.0,
+            10.5
+          ],
+          "focus_profile": "CONTACT_B",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_error_px": 0.0,
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ]
+        },
+        {
+          "actors": [
+            {
+              "actual": [
+                640.0,
+                410.0
+              ],
+              "anchor": [
+                15.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                640.0,
+                410.0
+              ],
+              "footprint": [
+                2,
+                2
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "actual": [
+                760.0,
+                590.0
+              ],
+              "anchor": [
+                20.0,
+                13.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                760.0,
+                590.0
+              ],
+              "footprint": [
+                3,
+                3
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            },
+            {
+              "actual": [
+                760.0,
+                390.0
+              ],
+              "anchor": [
+                17.0,
+                10.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                760.0,
+                390.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+            },
+            {
+              "actual": [
+                1080.0,
+                430.0
+              ],
+              "anchor": [
+                22.0,
+                7.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1080.0,
+                430.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+            },
+            {
+              "actual": [
+                1040.0,
+                610.0
+              ],
+              "anchor": [
+                26.0,
+                12.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1040.0,
+                610.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_02"
+            },
+            {
+              "actual": [
+                1440.0,
+                530.0
+              ],
+              "anchor": [
+                29.0,
+                5.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1440.0,
+                530.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_03"
+            }
+          ],
+          "control_points": [
+            {
+              "actual": [
+                480.0,
+                -170.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                480.0,
+                -170.0
+              ],
+              "grid": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "actual": [
+                640.0,
+                350.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                640.0,
+                350.0
+              ],
+              "grid": [
+                15.0,
+                11.0
+              ]
+            },
+            {
+              "actual": [
+                1040.0,
+                790.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1040.0,
+                790.0
+              ],
+              "grid": [
+                31.0,
+                17.0
+              ]
+            }
+          ],
+          "crop": {
+            "actual": [
+              -480.0,
+              228.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -480.0,
+              228.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -480.0,
+            228.0,
+            1280.0,
+            584.0
+          ],
+          "focus_cell": [
+            15.0,
+            11.0
+          ],
+          "focus_profile": "NO_FOCUS",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_error_px": 0.0,
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ]
+        }
+      ],
+      "runtime_bindable": false,
+      "tile_half_px": [
+        40,
+        20.0
+      ]
+    },
+    {
+      "candidate_id": "CAM_A0_V2A_40X24",
+      "canvas_fit": {
+        "canvas_placement_frozen": false,
+        "centered_fit_margin_each_side_px": [
+          200.0,
+          75.0
+        ],
+        "comparison_canvas_px": [
+          2400.0,
+          1350.0
+        ],
+        "fits": true,
+        "projected_board_bounds_px": [
+          -720.0,
+          -24.0,
+          2000.0,
+          1200.0
+        ]
+      },
+      "contacts": [
+        {
+          "actors": [
+            {
+              "anchor": [
+                20.0,
+                9.0
+              ],
+              "error_px": 0.0,
+              "footprint": [
+                2,
+                2
+              ],
+              "screen": [
+                680.0,
+                374.0
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "anchor": [
+                20.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "footprint": [
+                3,
+                3
+              ],
+              "screen": [
+                600.0,
+                470.0
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            }
+          ],
+          "branch": "A",
+          "crop": {
+            "actual": [
+              -240.0,
+              452.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -240.0,
+              452.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -240.0,
+            452.0,
+            1280.0,
+            584.0
+          ],
+          "focus_profile": "CONTACT_A",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ],
+          "impact_error_px": 0.0,
+          "impact_expected": [
+            640.0,
+            350.0
+          ],
+          "impact_screen": [
+            640.0,
+            350.0
+          ],
+          "impact_world": [
+            20.5,
+            10.5
+          ],
+          "strategy_id": "A_BODY_INTERCEPT"
+        },
+        {
+          "actors": [
+            {
+              "anchor": [
+                19.0,
+                9.0
+              ],
+              "error_px": 0.0,
+              "footprint": [
+                2,
+                2
+              ],
+              "screen": [
+                660.0,
+                362.0
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "anchor": [
+                20.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "footprint": [
+                3,
+                3
+              ],
+              "screen": [
+                620.0,
+                482.0
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            }
+          ],
+          "branch": "B",
+          "crop": {
+            "actual": [
+              -260.0,
+              440.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -260.0,
+              440.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -260.0,
+            440.0,
+            1280.0,
+            584.0
+          ],
+          "focus_profile": "CONTACT_B",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ],
+          "impact_error_px": 0.0,
+          "impact_expected": [
+            640.0,
+            350.0
+          ],
+          "impact_screen": [
+            640.0,
+            350.0
+          ],
+          "impact_world": [
+            20.0,
+            10.5
+          ],
+          "strategy_id": "B_PROTECT_LANE_PREPARE"
+        }
+      ],
+      "crop": {
+        "actual": [
+          -240.0,
+          416.0,
+          1280.0,
+          584.0
+        ],
+        "expected_position": [
+          -240.0,
+          416.0
+        ]
+      },
+      "facing_vectors": {
+        "east": {
+          "actual": [
+            40.0,
+            24.0
+          ],
+          "expected": [
+            40.0,
+            24.0
+          ]
+        },
+        "north": {
+          "actual": [
+            40.0,
+            -24.0
+          ],
+          "expected": [
+            40.0,
+            -24.0
+          ]
+        },
+        "south": {
+          "actual": [
+            -40.0,
+            24.0
+          ],
+          "expected": [
+            -40.0,
+            24.0
+          ]
+        },
+        "west": {
+          "actual": [
+            -40.0,
+            -24.0
+          ],
+          "expected": [
+            -40.0,
+            -24.0
+          ]
+        }
+      },
+      "profiles": [
+        {
+          "actors": [
+            {
+              "actual": [
+                400.0,
+                338.0
+              ],
+              "anchor": [
+                15.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                400.0,
+                338.0
+              ],
+              "footprint": [
+                2,
+                2
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "actual": [
+                520.0,
+                554.0
+              ],
+              "anchor": [
+                20.0,
+                13.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                520.0,
+                554.0
+              ],
+              "footprint": [
+                3,
+                3
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            },
+            {
+              "actual": [
+                520.0,
+                314.0
+              ],
+              "anchor": [
+                17.0,
+                10.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                520.0,
+                314.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+            },
+            {
+              "actual": [
+                840.0,
+                362.0
+              ],
+              "anchor": [
+                22.0,
+                7.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                840.0,
+                362.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+            },
+            {
+              "actual": [
+                800.0,
+                578.0
+              ],
+              "anchor": [
+                26.0,
+                12.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                800.0,
+                578.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_02"
+            },
+            {
+              "actual": [
+                1200.0,
+                482.0
+              ],
+              "anchor": [
+                29.0,
+                5.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1200.0,
+                482.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_03"
+            }
+          ],
+          "control_points": [
+            {
+              "actual": [
+                240.0,
+                -358.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                240.0,
+                -358.0
+              ],
+              "grid": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "actual": [
+                400.0,
+                266.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                400.0,
+                266.0
+              ],
+              "grid": [
+                15.0,
+                11.0
+              ]
+            },
+            {
+              "actual": [
+                800.0,
+                794.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                800.0,
+                794.0
+              ],
+              "grid": [
+                31.0,
+                17.0
+              ]
+            }
+          ],
+          "crop": {
+            "actual": [
+              -240.0,
+              416.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -240.0,
+              416.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -240.0,
+            416.0,
+            1280.0,
+            584.0
+          ],
+          "focus_cell": [
+            19.75,
+            9.75
+          ],
+          "focus_profile": "PLAN",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_error_px": 0.0,
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ]
+        },
+        {
+          "actors": [
+            {
+              "actual": [
+                400.0,
+                302.0
+              ],
+              "anchor": [
+                15.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                400.0,
+                302.0
+              ],
+              "footprint": [
+                2,
+                2
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "actual": [
+                520.0,
+                518.0
+              ],
+              "anchor": [
+                20.0,
+                13.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                520.0,
+                518.0
+              ],
+              "footprint": [
+                3,
+                3
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            },
+            {
+              "actual": [
+                520.0,
+                278.0
+              ],
+              "anchor": [
+                17.0,
+                10.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                520.0,
+                278.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+            },
+            {
+              "actual": [
+                840.0,
+                326.0
+              ],
+              "anchor": [
+                22.0,
+                7.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                840.0,
+                326.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+            },
+            {
+              "actual": [
+                800.0,
+                542.0
+              ],
+              "anchor": [
+                26.0,
+                12.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                800.0,
+                542.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_02"
+            },
+            {
+              "actual": [
+                1200.0,
+                446.0
+              ],
+              "anchor": [
+                29.0,
+                5.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1200.0,
+                446.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_03"
+            }
+          ],
+          "control_points": [
+            {
+              "actual": [
+                240.0,
+                -394.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                240.0,
+                -394.0
+              ],
+              "grid": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "actual": [
+                400.0,
+                230.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                400.0,
+                230.0
+              ],
+              "grid": [
+                15.0,
+                11.0
+              ]
+            },
+            {
+              "actual": [
+                800.0,
+                758.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                800.0,
+                758.0
+              ],
+              "grid": [
+                31.0,
+                17.0
+              ]
+            }
+          ],
+          "crop": {
+            "actual": [
+              -240.0,
+              452.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -240.0,
+              452.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -240.0,
+            452.0,
+            1280.0,
+            584.0
+          ],
+          "focus_cell": [
+            20.5,
+            10.5
+          ],
+          "focus_profile": "CONTACT_A",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_error_px": 0.0,
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ]
+        },
+        {
+          "actors": [
+            {
+              "actual": [
+                420.0,
+                314.0
+              ],
+              "anchor": [
+                15.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                420.0,
+                314.0
+              ],
+              "footprint": [
+                2,
+                2
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "actual": [
+                540.0,
+                530.0
+              ],
+              "anchor": [
+                20.0,
+                13.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                540.0,
+                530.0
+              ],
+              "footprint": [
+                3,
+                3
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            },
+            {
+              "actual": [
+                540.0,
+                290.0
+              ],
+              "anchor": [
+                17.0,
+                10.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                540.0,
+                290.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+            },
+            {
+              "actual": [
+                860.0,
+                338.0
+              ],
+              "anchor": [
+                22.0,
+                7.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                860.0,
+                338.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+            },
+            {
+              "actual": [
+                820.0,
+                554.0
+              ],
+              "anchor": [
+                26.0,
+                12.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                820.0,
+                554.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_02"
+            },
+            {
+              "actual": [
+                1220.0,
+                458.0
+              ],
+              "anchor": [
+                29.0,
+                5.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1220.0,
+                458.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_03"
+            }
+          ],
+          "control_points": [
+            {
+              "actual": [
+                260.0,
+                -382.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                260.0,
+                -382.0
+              ],
+              "grid": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "actual": [
+                420.0,
+                242.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                420.0,
+                242.0
+              ],
+              "grid": [
+                15.0,
+                11.0
+              ]
+            },
+            {
+              "actual": [
+                820.0,
+                770.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                820.0,
+                770.0
+              ],
+              "grid": [
+                31.0,
+                17.0
+              ]
+            }
+          ],
+          "crop": {
+            "actual": [
+              -260.0,
+              440.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -260.0,
+              440.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -260.0,
+            440.0,
+            1280.0,
+            584.0
+          ],
+          "focus_cell": [
+            20.0,
+            10.5
+          ],
+          "focus_profile": "CONTACT_B",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_error_px": 0.0,
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ]
+        },
+        {
+          "actors": [
+            {
+              "actual": [
+                640.0,
+                422.0
+              ],
+              "anchor": [
+                15.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                640.0,
+                422.0
+              ],
+              "footprint": [
+                2,
+                2
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "actual": [
+                760.0,
+                638.0
+              ],
+              "anchor": [
+                20.0,
+                13.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                760.0,
+                638.0
+              ],
+              "footprint": [
+                3,
+                3
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            },
+            {
+              "actual": [
+                760.0,
+                398.0
+              ],
+              "anchor": [
+                17.0,
+                10.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                760.0,
+                398.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+            },
+            {
+              "actual": [
+                1080.0,
+                446.0
+              ],
+              "anchor": [
+                22.0,
+                7.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1080.0,
+                446.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+            },
+            {
+              "actual": [
+                1040.0,
+                662.0
+              ],
+              "anchor": [
+                26.0,
+                12.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1040.0,
+                662.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_02"
+            },
+            {
+              "actual": [
+                1440.0,
+                566.0
+              ],
+              "anchor": [
+                29.0,
+                5.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1440.0,
+                566.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_03"
+            }
+          ],
+          "control_points": [
+            {
+              "actual": [
+                480.0,
+                -274.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                480.0,
+                -274.0
+              ],
+              "grid": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "actual": [
+                640.0,
+                350.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                640.0,
+                350.0
+              ],
+              "grid": [
+                15.0,
+                11.0
+              ]
+            },
+            {
+              "actual": [
+                1040.0,
+                878.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1040.0,
+                878.0
+              ],
+              "grid": [
+                31.0,
+                17.0
+              ]
+            }
+          ],
+          "crop": {
+            "actual": [
+              -480.0,
+              332.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -480.0,
+              332.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -480.0,
+            332.0,
+            1280.0,
+            584.0
+          ],
+          "focus_cell": [
+            15.0,
+            11.0
+          ],
+          "focus_profile": "NO_FOCUS",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_error_px": 0.0,
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ]
+        }
+      ],
+      "runtime_bindable": false,
+      "tile_half_px": [
+        40,
+        24.0
+      ]
+    },
+    {
+      "candidate_id": "CAM_A0_V2B_40X26",
+      "canvas_fit": {
+        "canvas_placement_frozen": false,
+        "centered_fit_margin_each_side_px": [
+          200.0,
+          25.0
+        ],
+        "comparison_canvas_px": [
+          2400.0,
+          1350.0
+        ],
+        "fits": true,
+        "projected_board_bounds_px": [
+          -720.0,
+          -26.0,
+          2000.0,
+          1300.0
+        ]
+      },
+      "contacts": [
+        {
+          "actors": [
+            {
+              "anchor": [
+                20.0,
+                9.0
+              ],
+              "error_px": 0.0,
+              "footprint": [
+                2,
+                2
+              ],
+              "screen": [
+                680.0,
+                376.0
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "anchor": [
+                20.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "footprint": [
+                3,
+                3
+              ],
+              "screen": [
+                600.0,
+                480.0
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            }
+          ],
+          "branch": "A",
+          "crop": {
+            "actual": [
+              -240.0,
+              514.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -240.0,
+              514.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -240.0,
+            514.0,
+            1280.0,
+            584.0
+          ],
+          "focus_profile": "CONTACT_A",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ],
+          "impact_error_px": 0.0,
+          "impact_expected": [
+            640.0,
+            350.0
+          ],
+          "impact_screen": [
+            640.0,
+            350.0
+          ],
+          "impact_world": [
+            20.5,
+            10.5
+          ],
+          "strategy_id": "A_BODY_INTERCEPT"
+        },
+        {
+          "actors": [
+            {
+              "anchor": [
+                19.0,
+                9.0
+              ],
+              "error_px": 0.0,
+              "footprint": [
+                2,
+                2
+              ],
+              "screen": [
+                660.0,
+                363.0
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "anchor": [
+                20.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "footprint": [
+                3,
+                3
+              ],
+              "screen": [
+                620.0,
+                493.0
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            }
+          ],
+          "branch": "B",
+          "crop": {
+            "actual": [
+              -260.0,
+              501.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -260.0,
+              501.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -260.0,
+            501.0,
+            1280.0,
+            584.0
+          ],
+          "focus_profile": "CONTACT_B",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ],
+          "impact_error_px": 0.0,
+          "impact_expected": [
+            640.0,
+            350.0
+          ],
+          "impact_screen": [
+            640.0,
+            350.0
+          ],
+          "impact_world": [
+            20.0,
+            10.5
+          ],
+          "strategy_id": "B_PROTECT_LANE_PREPARE"
+        }
+      ],
+      "crop": {
+        "actual": [
+          -240.0,
+          475.0,
+          1280.0,
+          584.0
+        ],
+        "expected_position": [
+          -240.0,
+          475.0
+        ]
+      },
+      "facing_vectors": {
+        "east": {
+          "actual": [
+            40.0,
+            26.0
+          ],
+          "expected": [
+            40.0,
+            26.0
+          ]
+        },
+        "north": {
+          "actual": [
+            40.0,
+            -26.0
+          ],
+          "expected": [
+            40.0,
+            -26.0
+          ]
+        },
+        "south": {
+          "actual": [
+            -40.0,
+            26.0
+          ],
+          "expected": [
+            -40.0,
+            26.0
+          ]
+        },
+        "west": {
+          "actual": [
+            -40.0,
+            -26.0
+          ],
+          "expected": [
+            -40.0,
+            -26.0
+          ]
+        }
+      },
+      "profiles": [
+        {
+          "actors": [
+            {
+              "actual": [
+                400.0,
+                337.0
+              ],
+              "anchor": [
+                15.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                400.0,
+                337.0
+              ],
+              "footprint": [
+                2,
+                2
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "actual": [
+                520.0,
+                571.0
+              ],
+              "anchor": [
+                20.0,
+                13.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                520.0,
+                571.0
+              ],
+              "footprint": [
+                3,
+                3
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            },
+            {
+              "actual": [
+                520.0,
+                311.0
+              ],
+              "anchor": [
+                17.0,
+                10.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                520.0,
+                311.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+            },
+            {
+              "actual": [
+                840.0,
+                363.0
+              ],
+              "anchor": [
+                22.0,
+                7.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                840.0,
+                363.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+            },
+            {
+              "actual": [
+                800.0,
+                597.0
+              ],
+              "anchor": [
+                26.0,
+                12.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                800.0,
+                597.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_02"
+            },
+            {
+              "actual": [
+                1200.0,
+                493.0
+              ],
+              "anchor": [
+                29.0,
+                5.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1200.0,
+                493.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_03"
+            }
+          ],
+          "control_points": [
+            {
+              "actual": [
+                240.0,
+                -417.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                240.0,
+                -417.0
+              ],
+              "grid": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "actual": [
+                400.0,
+                259.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                400.0,
+                259.0
+              ],
+              "grid": [
+                15.0,
+                11.0
+              ]
+            },
+            {
+              "actual": [
+                800.0,
+                831.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                800.0,
+                831.0
+              ],
+              "grid": [
+                31.0,
+                17.0
+              ]
+            }
+          ],
+          "crop": {
+            "actual": [
+              -240.0,
+              475.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -240.0,
+              475.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -240.0,
+            475.0,
+            1280.0,
+            584.0
+          ],
+          "focus_cell": [
+            19.75,
+            9.75
+          ],
+          "focus_profile": "PLAN",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_error_px": 0.0,
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ]
+        },
+        {
+          "actors": [
+            {
+              "actual": [
+                400.0,
+                298.0
+              ],
+              "anchor": [
+                15.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                400.0,
+                298.0
+              ],
+              "footprint": [
+                2,
+                2
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "actual": [
+                520.0,
+                532.0
+              ],
+              "anchor": [
+                20.0,
+                13.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                520.0,
+                532.0
+              ],
+              "footprint": [
+                3,
+                3
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            },
+            {
+              "actual": [
+                520.0,
+                272.0
+              ],
+              "anchor": [
+                17.0,
+                10.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                520.0,
+                272.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+            },
+            {
+              "actual": [
+                840.0,
+                324.0
+              ],
+              "anchor": [
+                22.0,
+                7.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                840.0,
+                324.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+            },
+            {
+              "actual": [
+                800.0,
+                558.0
+              ],
+              "anchor": [
+                26.0,
+                12.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                800.0,
+                558.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_02"
+            },
+            {
+              "actual": [
+                1200.0,
+                454.0
+              ],
+              "anchor": [
+                29.0,
+                5.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1200.0,
+                454.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_03"
+            }
+          ],
+          "control_points": [
+            {
+              "actual": [
+                240.0,
+                -456.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                240.0,
+                -456.0
+              ],
+              "grid": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "actual": [
+                400.0,
+                220.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                400.0,
+                220.0
+              ],
+              "grid": [
+                15.0,
+                11.0
+              ]
+            },
+            {
+              "actual": [
+                800.0,
+                792.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                800.0,
+                792.0
+              ],
+              "grid": [
+                31.0,
+                17.0
+              ]
+            }
+          ],
+          "crop": {
+            "actual": [
+              -240.0,
+              514.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -240.0,
+              514.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -240.0,
+            514.0,
+            1280.0,
+            584.0
+          ],
+          "focus_cell": [
+            20.5,
+            10.5
+          ],
+          "focus_profile": "CONTACT_A",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_error_px": 0.0,
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ]
+        },
+        {
+          "actors": [
+            {
+              "actual": [
+                420.0,
+                311.0
+              ],
+              "anchor": [
+                15.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                420.0,
+                311.0
+              ],
+              "footprint": [
+                2,
+                2
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "actual": [
+                540.0,
+                545.0
+              ],
+              "anchor": [
+                20.0,
+                13.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                540.0,
+                545.0
+              ],
+              "footprint": [
+                3,
+                3
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            },
+            {
+              "actual": [
+                540.0,
+                285.0
+              ],
+              "anchor": [
+                17.0,
+                10.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                540.0,
+                285.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+            },
+            {
+              "actual": [
+                860.0,
+                337.0
+              ],
+              "anchor": [
+                22.0,
+                7.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                860.0,
+                337.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+            },
+            {
+              "actual": [
+                820.0,
+                571.0
+              ],
+              "anchor": [
+                26.0,
+                12.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                820.0,
+                571.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_02"
+            },
+            {
+              "actual": [
+                1220.0,
+                467.0
+              ],
+              "anchor": [
+                29.0,
+                5.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1220.0,
+                467.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_03"
+            }
+          ],
+          "control_points": [
+            {
+              "actual": [
+                260.0,
+                -443.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                260.0,
+                -443.0
+              ],
+              "grid": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "actual": [
+                420.0,
+                233.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                420.0,
+                233.0
+              ],
+              "grid": [
+                15.0,
+                11.0
+              ]
+            },
+            {
+              "actual": [
+                820.0,
+                805.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                820.0,
+                805.0
+              ],
+              "grid": [
+                31.0,
+                17.0
+              ]
+            }
+          ],
+          "crop": {
+            "actual": [
+              -260.0,
+              501.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -260.0,
+              501.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -260.0,
+            501.0,
+            1280.0,
+            584.0
+          ],
+          "focus_cell": [
+            20.0,
+            10.5
+          ],
+          "focus_profile": "CONTACT_B",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_error_px": 0.0,
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ]
+        },
+        {
+          "actors": [
+            {
+              "actual": [
+                640.0,
+                428.0
+              ],
+              "anchor": [
+                15.0,
+                11.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                640.0,
+                428.0
+              ],
+              "footprint": [
+                2,
+                2
+              ],
+              "subject_id": "V353U001"
+            },
+            {
+              "actual": [
+                760.0,
+                662.0
+              ],
+              "anchor": [
+                20.0,
+                13.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                760.0,
+                662.0
+              ],
+              "footprint": [
+                3,
+                3
+              ],
+              "subject_id": "ENEMY_C01_BREAKER"
+            },
+            {
+              "actual": [
+                760.0,
+                402.0
+              ],
+              "anchor": [
+                17.0,
+                10.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                760.0,
+                402.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+            },
+            {
+              "actual": [
+                1080.0,
+                454.0
+              ],
+              "anchor": [
+                22.0,
+                7.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1080.0,
+                454.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+            },
+            {
+              "actual": [
+                1040.0,
+                688.0
+              ],
+              "anchor": [
+                26.0,
+                12.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1040.0,
+                688.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_02"
+            },
+            {
+              "actual": [
+                1440.0,
+                584.0
+              ],
+              "anchor": [
+                29.0,
+                5.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1440.0,
+                584.0
+              ],
+              "footprint": [
+                1,
+                1
+              ],
+              "subject_id": "ENEMY_C01_RIFT_SWARM_03"
+            }
+          ],
+          "control_points": [
+            {
+              "actual": [
+                480.0,
+                -326.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                480.0,
+                -326.0
+              ],
+              "grid": [
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "actual": [
+                640.0,
+                350.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                640.0,
+                350.0
+              ],
+              "grid": [
+                15.0,
+                11.0
+              ]
+            },
+            {
+              "actual": [
+                1040.0,
+                922.0
+              ],
+              "error_px": 0.0,
+              "expected": [
+                1040.0,
+                922.0
+              ],
+              "grid": [
+                31.0,
+                17.0
+              ]
+            }
+          ],
+          "crop": {
+            "actual": [
+              -480.0,
+              384.0,
+              1280.0,
+              584.0
+            ],
+            "error_px": 0.0,
+            "expected": [
+              -480.0,
+              384.0,
+              1280.0,
+              584.0
+            ]
+          },
+          "derived_crop_rect_px": [
+            -480.0,
+            384.0,
+            1280.0,
+            584.0
+          ],
+          "focus_cell": [
+            15.0,
+            11.0
+          ],
+          "focus_profile": "NO_FOCUS",
+          "focus_screen": [
+            640.0,
+            350.0
+          ],
+          "focus_screen_error_px": 0.0,
+          "focus_screen_expected": [
+            640.0,
+            350.0
+          ]
+        }
+      ],
+      "runtime_bindable": false,
+      "tile_half_px": [
+        40,
+        26.0
+      ]
+    }
+  ],
+  "contact_branches": [
+    "A",
+    "B"
+  ],
+  "control_point_count_per_candidate": 3,
+  "current_runtime_camera_claimed": false,
+  "failure_count": 0,
+  "locked_inputs": [
+    {
+      "actual_sha256": "c33bc0ffa4fe6f5ecc553001e640eba18a39a917a0c4691def8c940ca0ad0280",
+      "expected_sha256": "c33bc0ffa4fe6f5ecc553001e640eba18a39a917a0c4691def8c940ca0ad0280",
+      "input_id": "TASK108_USER_APPROVAL",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/108-c01e02-route-a2-modular-environment-and-interaction-user-approval.md",
+      "valid": true
+    },
+    {
+      "actual_sha256": "f67a86dda43d1a509e92f13a2f1f3e26fb29892c9d56a58fb9c5f7755242fd80",
+      "expected_sha256": "f67a86dda43d1a509e92f13a2f1f3e26fb29892c9d56a58fb9c5f7755242fd80",
+      "input_id": "TASK109_OBJECTIVE",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/109-c01e02-g2-a2-c4-camera-a0-modular-structure-focus-reveal-pilot-objective.md",
+      "valid": true
+    },
+    {
+      "actual_sha256": "f3ecc25c78a08cc61db422b832f56131df442f420170f46782b74807c6b9555a",
+      "expected_sha256": "f3ecc25c78a08cc61db422b832f56131df442f420170f46782b74807c6b9555a",
+      "input_id": "TACTICAL_VISUAL_INTERFACE_1_6_6",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/c01e02-tactical-visual-interface-v1.json",
+      "valid": true
+    },
+    {
+      "actual_sha256": "e3a4ef982668a5bf87543bca88e79cf6eb7dd3735f0fcee453569183033477bd",
+      "expected_sha256": "e3a4ef982668a5bf87543bca88e79cf6eb7dd3735f0fcee453569183033477bd",
+      "input_id": "PRODUCTION_BOARD",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/38-c01e02-m3-r0-5-production-board.tsv",
+      "valid": true
+    },
+    {
+      "actual_sha256": "1ad0c1d0d5958f432f81479a119310769eaba3b769637b07ba7bcde127edfe61",
+      "expected_sha256": "1ad0c1d0d5958f432f81479a119310769eaba3b769637b07ba7bcde127edfe61",
+      "input_id": "TASK104_RUNTIME_GRID_ACCEPTANCE",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/104-c01e02-task98-runtime-grid-registration-producer-acceptance.md",
+      "valid": true
+    },
+    {
+      "actual_sha256": "6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7",
+      "expected_sha256": "6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7",
+      "input_id": "TASK105_SIMPLE_2D_CORRECTION",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/105-c01e02-task99-simple-2d-board-lighting-occlusion-producer-correction.md",
+      "valid": true
+    },
+    {
+      "actual_sha256": "10c8df7490f21c2df12c513981867fd0168e86f9e789e46105c192996d2d4bf1",
+      "expected_sha256": "10c8df7490f21c2df12c513981867fd0168e86f9e789e46105c192996d2d4bf1",
+      "input_id": "TASK106_C3_ACCEPTANCE",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/106-c01e02-p99-sprite-first-preproduction-and-c3-producer-acceptance.md",
+      "valid": true
+    },
+    {
+      "actual_sha256": "61b49e5328e702cd654d28ff39c5c380ba0ae3e78753330635036d33f689523c",
+      "expected_sha256": "61b49e5328e702cd654d28ff39c5c380ba0ae3e78753330635036d33f689523c",
+      "input_id": "GOLDEN_SLICE_PROFILE",
+      "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/golden_slice_profile.json",
+      "valid": true
+    },
+    {
+      "actual_sha256": "74c6bbb3f732a61d3ed5a55d9c209b628152b9411395339d665aeeb0d76ab875",
+      "expected_sha256": "74c6bbb3f732a61d3ed5a55d9c209b628152b9411395339d665aeeb0d76ab875",
+      "input_id": "CURRENT_TOPOLOGY_MAP_CONTRACT",
+      "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/current_topology_map_contract.json",
+      "valid": true
+    },
+    {
+      "actual_sha256": "13719d8a3bde0cc06acbed893198943164f2541cdc0b112cc5897ff38f4c3451",
+      "expected_sha256": "13719d8a3bde0cc06acbed893198943164f2541cdc0b112cc5897ff38f4c3451",
+      "input_id": "VISUAL_COMPOSITOR_PROFILE",
+      "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/visual_compositor_profile.json",
+      "valid": true
+    },
+    {
+      "actual_sha256": "60ae9fe302779ace5570f674b379efe55fdc3d50ccd3b93895ce610ff2fcde30",
+      "expected_sha256": "60ae9fe302779ace5570f674b379efe55fdc3d50ccd3b93895ce610ff2fcde30",
+      "input_id": "C3_NEUTRAL_ATLAS_BINDING",
+      "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/c3_neutral_atlas_binding.json",
+      "valid": true
+    },
+    {
+      "actual_sha256": "4f1fb4e029abb12d33abe3494425c3766916e7c3f9daf4395f0f682d5c6e3aed",
+      "expected_sha256": "4f1fb4e029abb12d33abe3494425c3766916e7c3f9daf4395f0f682d5c6e3aed",
+      "input_id": "CURRENT_V1_PROJECTION_ORACLE",
+      "path": "/Users/rayz/Documents/超gag机器人大战/game-godot/scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/visual_projection.gd",
+      "valid": true
+    }
+  ],
+  "maximum_front_edge_error_px": 0.0,
+  "maximum_projection_error_px": 0.0,
+  "maximum_v1_oracle_error_px": 0.0,
+  "projection_contract": "C01E02_CAMERA_A0_PILOT_PROJECTION_V1",
+  "real_art_loaded": 0,
+  "runtime_bindable": false,
+  "structure_count_per_candidate": 6,
+  "structure_derivation": [
+    {
+      "candidate_id": "CAM_A0_V1_40X20",
+      "front_edge_actual": [
+        460.0,
+        180.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        460.0,
+        180.0
+      ],
+      "grid_rect": [
+        8.0,
+        5.0,
+        7.0,
+        2.0
+      ],
+      "object_id": "BROKEN_SKYWALK",
+      "reveal_cell_count": 65,
+      "visual_bounds": [
+        280.0,
+        -45.0,
+        360.0,
+        225.0
+      ],
+      "world_height_class": "LOW"
+    },
+    {
+      "candidate_id": "CAM_A0_V1_40X20",
+      "front_edge_actual": [
+        1180.0,
+        400.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        1180.0,
+        400.0
+      ],
+      "grid_rect": [
+        22.0,
+        0.0,
+        7.0,
+        4.0
+      ],
+      "object_id": "NE_BLOCK",
+      "reveal_cell_count": 60,
+      "visual_bounds": [
+        960.0,
+        105.0,
+        440.0,
+        295.0
+      ],
+      "world_height_class": "HIGH"
+    },
+    {
+      "candidate_id": "CAM_A0_V1_40X20",
+      "front_edge_actual": [
+        660.0,
+        120.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        660.0,
+        120.0
+      ],
+      "grid_rect": [
+        10.0,
+        0.0,
+        5.0,
+        4.0
+      ],
+      "object_id": "NM_BLOCK",
+      "reveal_cell_count": 45,
+      "visual_bounds": [
+        480.0,
+        -120.0,
+        360.0,
+        240.0
+      ],
+      "world_height_class": "MEDIUM"
+    },
+    {
+      "candidate_id": "CAM_A0_V1_40X20",
+      "front_edge_actual": [
+        320.0,
+        0.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        320.0,
+        0.0
+      ],
+      "grid_rect": [
+        1.0,
+        0.0,
+        7.0,
+        5.0
+      ],
+      "object_id": "NW_BLOCK",
+      "reveal_cell_count": 65,
+      "visual_bounds": [
+        80.0,
+        -315.0,
+        480.0,
+        315.0
+      ],
+      "world_height_class": "HIGH"
+    },
+    {
+      "candidate_id": "CAM_A0_V1_40X20",
+      "front_edge_actual": [
+        760.0,
+        740.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        760.0,
+        740.0
+      ],
+      "grid_rect": [
+        26.0,
+        14.0,
+        6.0,
+        4.0
+      ],
+      "object_id": "SE_BLOCK",
+      "reveal_cell_count": 64,
+      "visual_bounds": [
+        560.0,
+        465.0,
+        400.0,
+        275.0
+      ],
+      "world_height_class": "HIGH"
+    },
+    {
+      "candidate_id": "CAM_A0_V1_40X20",
+      "front_edge_actual": [
+        -260.0,
+        260.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        -260.0,
+        260.0
+      ],
+      "grid_rect": [
+        0.0,
+        15.0,
+        8.0,
+        3.0
+      ],
+      "object_id": "SW_BLOCK",
+      "reveal_cell_count": 58,
+      "visual_bounds": [
+        -480.0,
+        -20.0,
+        440.0,
+        280.0
+      ],
+      "world_height_class": "MEDIUM"
+    },
+    {
+      "candidate_id": "CAM_A0_V2A_40X24",
+      "front_edge_actual": [
+        460.0,
+        146.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        460.0,
+        146.0
+      ],
+      "grid_rect": [
+        8.0,
+        5.0,
+        7.0,
+        2.0
+      ],
+      "object_id": "BROKEN_SKYWALK",
+      "reveal_cell_count": 65,
+      "visual_bounds": [
+        280.0,
+        -124.0,
+        360.0,
+        270.0
+      ],
+      "world_height_class": "LOW"
+    },
+    {
+      "candidate_id": "CAM_A0_V2A_40X24",
+      "front_edge_actual": [
+        1180.0,
+        410.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        1180.0,
+        410.0
+      ],
+      "grid_rect": [
+        22.0,
+        0.0,
+        7.0,
+        4.0
+      ],
+      "object_id": "NE_BLOCK",
+      "reveal_cell_count": 60,
+      "visual_bounds": [
+        960.0,
+        56.0,
+        440.0,
+        354.0
+      ],
+      "world_height_class": "HIGH"
+    },
+    {
+      "candidate_id": "CAM_A0_V2A_40X24",
+      "front_edge_actual": [
+        660.0,
+        74.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        660.0,
+        74.0
+      ],
+      "grid_rect": [
+        10.0,
+        0.0,
+        5.0,
+        4.0
+      ],
+      "object_id": "NM_BLOCK",
+      "reveal_cell_count": 45,
+      "visual_bounds": [
+        480.0,
+        -214.0,
+        360.0,
+        288.0
+      ],
+      "world_height_class": "MEDIUM"
+    },
+    {
+      "candidate_id": "CAM_A0_V2A_40X24",
+      "front_edge_actual": [
+        320.0,
+        -70.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        320.0,
+        -70.0
+      ],
+      "grid_rect": [
+        1.0,
+        0.0,
+        7.0,
+        5.0
+      ],
+      "object_id": "NW_BLOCK",
+      "reveal_cell_count": 65,
+      "visual_bounds": [
+        80.0,
+        -448.0,
+        480.0,
+        378.0
+      ],
+      "world_height_class": "HIGH"
+    },
+    {
+      "candidate_id": "CAM_A0_V2A_40X24",
+      "front_edge_actual": [
+        760.0,
+        818.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        760.0,
+        818.0
+      ],
+      "grid_rect": [
+        26.0,
+        14.0,
+        6.0,
+        4.0
+      ],
+      "object_id": "SE_BLOCK",
+      "reveal_cell_count": 64,
+      "visual_bounds": [
+        560.0,
+        488.0,
+        400.0,
+        330.0
+      ],
+      "world_height_class": "HIGH"
+    },
+    {
+      "candidate_id": "CAM_A0_V2A_40X24",
+      "front_edge_actual": [
+        -260.0,
+        242.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        -260.0,
+        242.0
+      ],
+      "grid_rect": [
+        0.0,
+        15.0,
+        8.0,
+        3.0
+      ],
+      "object_id": "SW_BLOCK",
+      "reveal_cell_count": 58,
+      "visual_bounds": [
+        -480.0,
+        -94.0,
+        440.0,
+        336.0
+      ],
+      "world_height_class": "MEDIUM"
+    },
+    {
+      "candidate_id": "CAM_A0_V2B_40X26",
+      "front_edge_actual": [
+        460.0,
+        129.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        460.0,
+        129.0
+      ],
+      "grid_rect": [
+        8.0,
+        5.0,
+        7.0,
+        2.0
+      ],
+      "object_id": "BROKEN_SKYWALK",
+      "reveal_cell_count": 65,
+      "visual_bounds": [
+        280.0,
+        -163.5,
+        360.0,
+        292.5
+      ],
+      "world_height_class": "LOW"
+    },
+    {
+      "candidate_id": "CAM_A0_V2B_40X26",
+      "front_edge_actual": [
+        1180.0,
+        415.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        1180.0,
+        415.0
+      ],
+      "grid_rect": [
+        22.0,
+        0.0,
+        7.0,
+        4.0
+      ],
+      "object_id": "NE_BLOCK",
+      "reveal_cell_count": 60,
+      "visual_bounds": [
+        960.0,
+        31.5,
+        440.0,
+        383.5
+      ],
+      "world_height_class": "HIGH"
+    },
+    {
+      "candidate_id": "CAM_A0_V2B_40X26",
+      "front_edge_actual": [
+        660.0,
+        51.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        660.0,
+        51.0
+      ],
+      "grid_rect": [
+        10.0,
+        0.0,
+        5.0,
+        4.0
+      ],
+      "object_id": "NM_BLOCK",
+      "reveal_cell_count": 45,
+      "visual_bounds": [
+        480.0,
+        -261.0,
+        360.0,
+        312.0
+      ],
+      "world_height_class": "MEDIUM"
+    },
+    {
+      "candidate_id": "CAM_A0_V2B_40X26",
+      "front_edge_actual": [
+        320.0,
+        -105.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        320.0,
+        -105.0
+      ],
+      "grid_rect": [
+        1.0,
+        0.0,
+        7.0,
+        5.0
+      ],
+      "object_id": "NW_BLOCK",
+      "reveal_cell_count": 65,
+      "visual_bounds": [
+        80.0,
+        -514.5,
+        480.0,
+        409.5
+      ],
+      "world_height_class": "HIGH"
+    },
+    {
+      "candidate_id": "CAM_A0_V2B_40X26",
+      "front_edge_actual": [
+        760.0,
+        857.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        760.0,
+        857.0
+      ],
+      "grid_rect": [
+        26.0,
+        14.0,
+        6.0,
+        4.0
+      ],
+      "object_id": "SE_BLOCK",
+      "reveal_cell_count": 64,
+      "visual_bounds": [
+        560.0,
+        499.5,
+        400.0,
+        357.5
+      ],
+      "world_height_class": "HIGH"
+    },
+    {
+      "candidate_id": "CAM_A0_V2B_40X26",
+      "front_edge_actual": [
+        -260.0,
+        233.0
+      ],
+      "front_edge_error_px": 0.0,
+      "front_edge_expected": [
+        -260.0,
+        233.0
+      ],
+      "grid_rect": [
+        0.0,
+        15.0,
+        8.0,
+        3.0
+      ],
+      "object_id": "SW_BLOCK",
+      "reveal_cell_count": 58,
+      "visual_bounds": [
+        -480.0,
+        -131.0,
+        440.0,
+        364.0
+      ],
+      "world_height_class": "MEDIUM"
+    }
+  ],
+  "task_id": "G2_A2_C4_CAMERA_A0_MODULAR_STRUCTURE_FOCUS_REVEAL_PILOT",
+  "tolerance_px": 0.5,
+  "v1_oracle": [
+    {
+      "error_px": 0.0,
+      "focus_profile": "PLAN",
+      "grid": [
+        0.0,
+        0.0
+      ],
+      "oracle": [
+        240.0,
+        -240.0
+      ],
+      "oracle_profile": "PUBLIC_PLAN_SUMMARY",
+      "pilot": [
+        240.0,
+        -240.0
+      ]
+    },
+    {
+      "error_px": 0.0,
+      "focus_profile": "PLAN",
+      "grid": [
+        15.0,
+        11.0
+      ],
+      "oracle": [
+        400.0,
+        280.0
+      ],
+      "oracle_profile": "PUBLIC_PLAN_SUMMARY",
+      "pilot": [
+        400.0,
+        280.0
+      ]
+    },
+    {
+      "error_px": 0.0,
+      "focus_profile": "PLAN",
+      "grid": [
+        31.0,
+        17.0
+      ],
+      "oracle": [
+        800.0,
+        720.0
+      ],
+      "oracle_profile": "PUBLIC_PLAN_SUMMARY",
+      "pilot": [
+        800.0,
+        720.0
+      ]
+    },
+    {
+      "error_px": 0.0,
+      "focus_profile": "CONTACT_A",
+      "grid": [
+        0.0,
+        0.0
+      ],
+      "oracle": [
+        240.0,
+        -270.0
+      ],
+      "oracle_profile": "CONTACT_A",
+      "pilot": [
+        240.0,
+        -270.0
+      ]
+    },
+    {
+      "error_px": 0.0,
+      "focus_profile": "CONTACT_A",
+      "grid": [
+        15.0,
+        11.0
+      ],
+      "oracle": [
+        400.0,
+        250.0
+      ],
+      "oracle_profile": "CONTACT_A",
+      "pilot": [
+        400.0,
+        250.0
+      ]
+    },
+    {
+      "error_px": 0.0,
+      "focus_profile": "CONTACT_A",
+      "grid": [
+        31.0,
+        17.0
+      ],
+      "oracle": [
+        800.0,
+        690.0
+      ],
+      "oracle_profile": "CONTACT_A",
+      "pilot": [
+        800.0,
+        690.0
+      ]
+    },
+    {
+      "error_px": 0.0,
+      "focus_profile": "CONTACT_B",
+      "grid": [
+        0.0,
+        0.0
+      ],
+      "oracle": [
+        260.0,
+        -260.0
+      ],
+      "oracle_profile": "CONTACT_B",
+      "pilot": [
+        260.0,
+        -260.0
+      ]
+    },
+    {
+      "error_px": 0.0,
+      "focus_profile": "CONTACT_B",
+      "grid": [
+        15.0,
+        11.0
+      ],
+      "oracle": [
+        420.0,
+        260.0
+      ],
+      "oracle_profile": "CONTACT_B",
+      "pilot": [
+        420.0,
+        260.0
+      ]
+    },
+    {
+      "error_px": 0.0,
+      "focus_profile": "CONTACT_B",
+      "grid": [
+        31.0,
+        17.0
+      ],
+      "oracle": [
+        820.0,
+        700.0
+      ],
+      "oracle_profile": "CONTACT_B",
+      "pilot": [
+        820.0,
+        700.0
+      ]
+    },
+    {
+      "error_px": 0.0,
+      "focus_profile": "NO_FOCUS",
+      "grid": [
+        0.0,
+        0.0
+      ],
+      "oracle": [
+        480.0,
+        -170.0
+      ],
+      "oracle_profile": "NO_FOCUS",
+      "pilot": [
+        480.0,
+        -170.0
+      ]
+    },
+    {
+      "error_px": 0.0,
+      "focus_profile": "NO_FOCUS",
+      "grid": [
+        15.0,
+        11.0
+      ],
+      "oracle": [
+        640.0,
+        350.0
+      ],
+      "oracle_profile": "NO_FOCUS",
+      "pilot": [
+        640.0,
+        350.0
+      ]
+    },
+    {
+      "error_px": 0.0,
+      "focus_profile": "NO_FOCUS",
+      "grid": [
+        31.0,
+        17.0
+      ],
+      "oracle": [
+        1040.0,
+        790.0
+      ],
+      "oracle_profile": "NO_FOCUS",
+      "pilot": [
+        1040.0,
+        790.0
+      ]
+    }
+  ],
+  "valid": true
+}

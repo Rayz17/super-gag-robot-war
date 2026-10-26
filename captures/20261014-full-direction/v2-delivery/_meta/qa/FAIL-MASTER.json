@@ -1,0 +1,3203 @@
+{
+  "revision": "20261014-qa-merge",
+  "acceptance": "/_meta/qa/ACCEPTANCE.md",
+  "totals": {
+    "inventory": 298,
+    "fail": 201,
+    "pass_union": 90,
+    "lock_skip": 7,
+    "by_group": {
+      "E": 4,
+      "F": 18,
+      "M": 2,
+      "N": 14,
+      "S": 21,
+      "X": 30,
+      "H": 1,
+      "C": 16,
+      "G": 25,
+      "I": 21,
+      "B": 33,
+      "T": 16
+    },
+    "by_priority": {
+      "1": 26,
+      "2": 31,
+      "3": 49,
+      "4": 46,
+      "5": 49
+    }
+  },
+  "pass": [
+    "E01",
+    "E02",
+    "E03",
+    "E05",
+    "E06",
+    "E08",
+    "E09",
+    "H04",
+    "H05",
+    "H06",
+    "H07",
+    "H08",
+    "H09",
+    "H10",
+    "H11",
+    "H12",
+    "I03",
+    "I04",
+    "I05",
+    "I06",
+    "I08",
+    "I09",
+    "I10",
+    "I11",
+    "I12",
+    "I13",
+    "I14",
+    "I16",
+    "I17",
+    "I18",
+    "I19",
+    "I20",
+    "I21",
+    "I22",
+    "I24",
+    "I26",
+    "I28",
+    "I29",
+    "I32",
+    "I33",
+    "I34",
+    "I36",
+    "I37",
+    "I38",
+    "I42",
+    "I43",
+    "I44",
+    "I45",
+    "I48",
+    "I49",
+    "I50",
+    "I52",
+    "I53",
+    "I54",
+    "I55",
+    "I56",
+    "I57",
+    "I59",
+    "I61",
+    "I65",
+    "M01",
+    "M02",
+    "M06",
+    "M07",
+    "M08",
+    "M09",
+    "M10",
+    "M11",
+    "M12",
+    "M14",
+    "U01",
+    "U02",
+    "U03",
+    "U04",
+    "U05",
+    "U06",
+    "U07",
+    "U08",
+    "U09",
+    "U10",
+    "U11",
+    "U12",
+    "U13",
+    "U14",
+    "U15",
+    "U16",
+    "U17",
+    "U18",
+    "U19",
+    "U20"
+  ],
+  "lock_skip": [
+    "B01",
+    "H01",
+    "H02",
+    "H03",
+    "M04",
+    "M05",
+    "M13"
+  ],
+  "fail": [
+    {
+      "id": "E11",
+      "verdicts": [
+        "B2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "E",
+      "priority": 1,
+      "name": "架设体对空装备变体",
+      "file": "dir-E11-antiair-v1.jpg",
+      "reason": "对空变体画成履带双管炮塔，未复用E04架设体四足身体与红核躯干，另起炉灶",
+      "redo": "复用E04身体，只加仰角炮架/跟踪器/对空预备姿；干净单主体"
+    },
+    {
+      "id": "F06",
+      "verdicts": [
+        "B2",
+        "D2",
+        "C"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 1,
+      "name": "货柜领袖车辆形态",
+      "file": "dir-F06-cargo-vehicle-v1.jpg",
+      "reason": "车辆形态青绿白配色+色板图例文字，与M11红蓝身份色脱节；含多状态拼贴说明",
+      "redo": "干净货车单主体；配色派生自M11；变形关联可另出但不换身份色"
+    },
+    {
+      "id": "F07",
+      "verdicts": [
+        "B2",
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 1,
+      "name": "雷翎航空形态",
+      "file": "dir-F07-leiling-aircraft-v1.jpg",
+      "reason": "雷翎航空形态说明拼贴；白青绿配色与主稿M08深蓝紫狙击机身份色脱节",
+      "redo": "干净航空单主体；保留M08狙击轴与蓝紫身份色"
+    },
+    {
+      "id": "F08",
+      "verdicts": [
+        "B2",
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 1,
+      "name": "歌翼航空形态",
+      "file": "dir-F08-song-aircraft-v1.jpg",
+      "reason": "歌翼航空形态说明拼贴；白红蓝与主稿M14白粉羽翼身份色脱节",
+      "redo": "干净航空单主体；配色派生自M14"
+    },
+    {
+      "id": "F09",
+      "verdicts": [
+        "B2",
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 1,
+      "name": "完整勇拳核心机",
+      "file": "dir-F09-brave-core-v1.jpg",
+      "reason": "勇拳核心画成白海军红V鳍常规机+合体状态侧栏，与locked M04橙白双巨拳/头鬃身份剪影不符",
+      "redo": "完整人形核心对齐M04头胸拳甲身份色；干净单主体无状态墙"
+    },
+    {
+      "id": "F10",
+      "verdicts": [
+        "B2",
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 1,
+      "name": "社勇王完整合体",
+      "file": "dir-F10-brave-combined-v1.jpg",
+      "reason": "社勇王合体做成蓝红白说明拼贴，与M04橙白勇拳核心身份色及S14黑灰拳甲系均对不上",
+      "redo": "合体保留勇拳核心身份色块与外组件来源；干净单主体"
+    },
+    {
+      "id": "M03",
+      "verdicts": [
+        "B2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "M",
+      "priority": 1,
+      "name": "馆守 Z",
+      "file": "dir-M03-guardian-z-v1.jpg",
+      "reason": "设计要求右前臂毁损，成稿毁损的是机体左侧（观者右侧）前臂，身份锚左右反了",
+      "redo": "按剧情改为右前臂残损；左臂完整牵引/支撑构造可读；干净单主体"
+    },
+    {
+      "id": "M15",
+      "verdicts": [
+        "B2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "M",
+      "priority": 1,
+      "name": "馆守Z轮式导览终端（旧守护者）",
+      "file": "dir-M15-guardian-terminal-v1.jpg",
+      "reason": "轮式导览终端与同框大机为人白青绿红满装，与馆守Z主稿M03（蓝红白+缺臂）共用身份标识对不上",
+      "redo": "终端与同框大机须共享M03头胸涂装/缺臂或明确同源徽记；勿另起一套配色人形机"
+    },
+    {
+      "id": "N09",
+      "verdicts": [
+        "B2",
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "N",
+      "priority": 1,
+      "name": "无牌拳脚与天冲拳",
+      "file": "dir-N09-hero_martial-v1.jpg",
+      "reason": "无牌拳脚做成剪影教学海报；剪影像驾驶员/英雄拳手，头胸涂装不对齐M01（白青橙V鳍）",
+      "redo": "干净无牌机甲拳脚/天冲拳关键姿分图；对齐M01头胸剪影涂装；无文字墙"
+    },
+    {
+      "id": "N10",
+      "verdicts": [
+        "B2",
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "N",
+      "priority": 1,
+      "name": "旧拳王拳击组",
+      "file": "dir-N10-boxer_boxing-v1.jpg",
+      "reason": "旧拳王拳击组做成带王冠锈蚀铁甲教学板；与M02（棕褐米+红拳套系）头胸身份不一致",
+      "redo": "干净旧拳王机甲勾拳/接拳/重拳分节奏动作；对齐M02涂装剪影；无王冠另设炉灶；无字墙"
+    },
+    {
+      "id": "N11",
+      "verdicts": [
+        "B2",
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "N",
+      "priority": 1,
+      "name": "勇拳与社勇王招牌拳",
+      "file": "dir-N11-brave_signature-v1.jpg",
+      "reason": "勇拳/社勇王招牌拳做成人类武者金线剪影三格板；不是F09/F10社勇王机体",
+      "redo": "干净社勇王/勇拳机甲招牌发力与终式；对齐F09核心/F10合体身份；无人替机；无字墙"
+    },
+    {
+      "id": "N12",
+      "verdicts": [
+        "B2",
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "N",
+      "priority": 1,
+      "name": "王者钻击装备适配",
+      "file": "dir-N12-king_drill_motion-v1.jpg",
+      "reason": "王者钻击做成紫能暗甲教学板；与M05（藏青/白/朱红/金）身份色与剪影不符",
+      "redo": "干净王者右前臂钻轴旋转推进动作；对齐M05/F05头胸涂装；无紫能另设；无字墙"
+    },
+    {
+      "id": "N14",
+      "verdicts": [
+        "B2",
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "N",
+      "priority": 1,
+      "name": "社勇王合体/分离",
+      "file": "dir-N14-combine_motion-v1.jpg",
+      "reason": "社勇王合体做成猛兽战队/五狮合体六格板；与F09/F10社勇王核心+组件身份完全不符",
+      "redo": "干净社勇王合体/分离：保留完整核心、组件真实进场接合；对齐F09/F10；禁动物合体串味；无字墙"
+    },
+    {
+      "id": "S08",
+      "verdicts": [
+        "B2",
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 1,
+      "name": "托桥与列车通过",
+      "file": "dir-S08-bridge_hold-v1.jpg",
+      "reason": "托桥场景说明书；支撑机画成青绿单臂结构臂，与馆守Z(M03)蓝红白缺臂人形剪影不符",
+      "redo": "干净托桥冲击图；支撑机对齐M03缺臂馆守或明确同源；无文字墙"
+    },
+    {
+      "id": "S11",
+      "verdicts": [
+        "B1",
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 1,
+      "name": "七海核验撤令特写",
+      "file": "dir-S11-qihai_revoke-v1.jpg",
+      "reason": "七海撤令做成三格证据决策撤令说明板；深色高领+侧夹与locked七海短波白战术外套身份漂移",
+      "redo": "干净权限撤令特写；对齐locked七海脸发服；无说明书"
+    },
+    {
+      "id": "S14",
+      "verdicts": [
+        "B2",
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 1,
+      "name": "社勇王合体关键镜头",
+      "file": "dir-S14-brave_assembly-v1.jpg",
+      "reason": "社勇王合体关键做成黑灰金说明分镜；与M04橙白勇拳核心及F09–F12蓝红白系均不一致",
+      "redo": "干净合体关键镜头；核心/腿架/肩包来源对齐勇拳家族主稿；无说明书"
+    },
+    {
+      "id": "S15",
+      "verdicts": [
+        "B2",
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 1,
+      "name": "断冠宿敌出场",
+      "file": "dir-S15-rival_reveal-v1.jpg",
+      "reason": "断冠出场做成方向说明书；人形持矛持盾机甲与主稿E10冠环三足环体剪影不符",
+      "redo": "干净宿敌压迫单图；对齐E10独立冠环/弱侧；无说明书"
+    },
+    {
+      "id": "S19",
+      "verdicts": [
+        "B2",
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 1,
+      "name": "货柜领袖事件图",
+      "file": "dir-S19-c02_cargo-v1.jpg",
+      "reason": "货柜领袖事件图做成带大量说明文字的分镜说明书；机甲橙灰集装箱造型与主稿M11（红蓝擎天柱向）不一致",
+      "redo": "干净单主体事件冲击图；机体必须对齐M11头胸涂装剪影；禁止说明书文字墙"
+    },
+    {
+      "id": "S20",
+      "verdicts": [
+        "B3",
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 1,
+      "name": "完全版王者冠军展示与卸甲",
+      "file": "dir-S20-c02_champion-v1.jpg",
+      "reason": "完全版王者冠军展示画成穿金甲人类战士，不是王者机甲；说明书式拼贴",
+      "redo": "王者机甲（对齐M05/F01系）冠军展示与卸装；干净素材无文字墙"
+    },
+    {
+      "id": "S21",
+      "verdicts": [
+        "B1",
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 1,
+      "name": "白鸢作品与现场事件",
+      "file": "dir-S21-c02_baiyuan-v1.jpg",
+      "reason": "白鸢作品/到场做成双栏说明板；到场人物黑发汉服与locked白鸢银白卷发+奶油风衣欧洲创作者身份不符",
+      "redo": "干净作品痕迹与本人到场分图；脸发服对齐locked白鸢；无说明书"
+    },
+    {
+      "id": "X01",
+      "verdicts": [
+        "B3",
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 1,
+      "name": "轻拳命中",
+      "file": "dir-X01-jab-v1.jpg",
+      "reason": "轻拳命中做成四格FX说明书+色板图例；主体是人类拳手对打，不是机体命中特效",
+      "redo": "干净单主体机甲轻拳命中特效（对齐无牌等拳系机）；硬边冲击核+方向短线；无文字墙"
+    },
+    {
+      "id": "X03",
+      "verdicts": [
+        "B3",
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 1,
+      "name": "正蹬与回旋踢",
+      "file": "dir-X03-kick-v1.jpg",
+      "reason": "正蹬/回旋踢做成多面板教学海报；主体是人类角色非机体",
+      "redo": "干净机甲踢技命中特效单图；腿轨迹与接触核分离；无图例长文"
+    },
+    {
+      "id": "X11",
+      "verdicts": [
+        "B3",
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 1,
+      "name": "震荡空爆",
+      "file": "dir-X11-shockwave-v1.jpg",
+      "reason": "震荡空爆做成四格教学板；主体是忍者剪影非机体",
+      "redo": "干净震荡环与方向风迹特效；主体用机体；无图例墙"
+    },
+    {
+      "id": "X14",
+      "verdicts": [
+        "B3",
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 1,
+      "name": "牵引索",
+      "file": "dir-X14-tether-v1.jpg",
+      "reason": "牵引索做成四格教学板；主体是人形剪影非机体钩索",
+      "redo": "干净钩爪张紧/拉回特效；发射点与附着点明确；机体系主体；无字墙"
+    },
+    {
+      "id": "X16",
+      "verdicts": [
+        "B3",
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 1,
+      "name": "棱镜标定",
+      "file": "dir-X16-mark-v1.jpg",
+      "reason": "棱镜标定做成扫描四格+时长标注说明书；士兵剪影非机体",
+      "redo": "干净一次扫描→目标刻印特效；短促不占满轮廓；无时长教学墙"
+    },
+    {
+      "id": "X26",
+      "verdicts": [
+        "B3",
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 1,
+      "name": "落水与坠坑",
+      "file": "dir-X26-water-fall-v1.jpg",
+      "reason": "落水坠坑做成四格+12帧缩略教学板；主体人形剪影",
+      "redo": "干净入水/坠坑特效；飞行免疫不播溺亡；机体系主体；无字墙"
+    },
+    {
+      "id": "E04",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "E",
+      "priority": 2,
+      "name": "远程架设体",
+      "file": "dir-E04-gun-v1.jpg",
+      "reason": "远程架设体做成四格收起/展开/充能/开火状态说明书拼贴，中文状态字条",
+      "redo": "干净单主体架设炮击姿态；状态可另出但禁止多格说明墙"
+    },
+    {
+      "id": "E07",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "E",
+      "priority": 2,
+      "name": "共振护群体",
+      "file": "dir-E07-screen-v1.jpg",
+      "reason": "共振护群体做成上下分栏技术图+SHIELD-ACTIVE图例与中英文状态标注",
+      "redo": "干净单主体护群生效姿态；打断态可另图，禁止图例墙"
+    },
+    {
+      "id": "E10",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "E",
+      "priority": 2,
+      "name": "断冠",
+      "file": "dir-E10-rival-v1.jpg",
+      "reason": "断冠做成三视图/弱点侧示意/材质图例的敌机方向说明书",
+      "redo": "干净2×2宿敌单主体出场立姿；弱侧可读但无标注墙"
+    },
+    {
+      "id": "F01",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 2,
+      "name": "完全版王者轻装本体",
+      "file": "dir-F01-king-light-v1.jpg",
+      "reason": "王者轻装本体做成多格形态状态/连接位/核心特征说明拼贴",
+      "redo": "干净轻装单主体；头胸对齐M05系；无状态侧栏"
+    },
+    {
+      "id": "F02",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 2,
+      "name": "完全版王者双肩炮组",
+      "file": "dir-F02-king-cannon-v1.jpg",
+      "reason": "双肩炮做成挂载/卸装/受损双语状态说明书",
+      "redo": "干净炮组单主体（可含挂载参考）无图例墙；配色对齐M05"
+    },
+    {
+      "id": "F03",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 2,
+      "name": "完全版王者合盾护板",
+      "file": "dir-F03-king-shield-v1.jpg",
+      "reason": "合盾护板做成展开/合拢/卸装/受损STATE REFERENCE色板说明墙",
+      "redo": "干净盾面单主体；握持点可读；无状态拼贴"
+    },
+    {
+      "id": "F04",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 2,
+      "name": "完全版王者飞翼推进包",
+      "file": "dir-F04-king-wing-v1.jpg",
+      "reason": "飞翼推进包做成收束/飞行/卸装/受损多状态说明板",
+      "redo": "干净翼包单主体；翼根推进轴可读"
+    },
+    {
+      "id": "F05",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 2,
+      "name": "完全版王者右臂贯岩钻",
+      "file": "dir-F05-king-drill-v1.jpg",
+      "reason": "右臂贯岩钻做成五态状态展示+构造要点文字墙",
+      "redo": "干净钻臂单主体；根部接右前臂同轴"
+    },
+    {
+      "id": "F11",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 2,
+      "name": "社勇王外部腿架",
+      "file": "dir-F11-brave-boots-v1.jpg",
+      "reason": "外部腿架做成独立/合体/分离/受损双语状态流说明板",
+      "redo": "干净腿架单主体；进入/闭合结构可读"
+    },
+    {
+      "id": "F12",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 2,
+      "name": "社勇王肩背外部组件",
+      "file": "dir-F12-brave-shoulders-v1.jpg",
+      "reason": "肩背外部组件做成五态状态一览+流程图标说明墙",
+      "redo": "干净肩背包单主体；接口位置对齐核心"
+    },
+    {
+      "id": "F13",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 2,
+      "name": "工程液压顶具",
+      "file": "dir-F13-hydraulic-v1.jpg",
+      "reason": "液压顶具做成伸出/回弹/剖面多格双语说明",
+      "redo": "干净顶具单主体；活塞反力座可读"
+    },
+    {
+      "id": "F14",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 2,
+      "name": "焊补工具与备件",
+      "file": "dir-F14-repair-tool-v1.jpg",
+      "reason": "焊补工具做成取用/工作/收回状态示意说明墙",
+      "redo": "干净焊臂+备件匣单主体套装"
+    },
+    {
+      "id": "F15",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 2,
+      "name": "牵引与拘束索具",
+      "file": "dir-F15-tether-tool-v1.jpg",
+      "reason": "牵引拘束索具做成发射/张紧/松脱三格中文说明拼贴",
+      "redo": "干净钩爪单主体动作图"
+    },
+    {
+      "id": "F16",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 2,
+      "name": "折叠隔离墙套件",
+      "file": "dir-F16-barrier-kit-v1.jpg",
+      "reason": "折叠隔离墙做成双型收纳展开落地损坏多格套件说明书",
+      "redo": "干净墙段单主体或分型各一张干净图"
+    },
+    {
+      "id": "F17",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 2,
+      "name": "消防应急桥板",
+      "file": "dir-F17-bridge-kit-v1.jpg",
+      "reason": "消防桥板做成收纳/展开/接地/毁坏四格红框说明",
+      "redo": "干净桥板展开单主体"
+    },
+    {
+      "id": "F18",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "F",
+      "priority": 2,
+      "name": "炮弹导弹与弹壳",
+      "file": "dir-F18-projectile-kit-v1.jpg",
+      "reason": "弹药套件做成三弹种命中残骸图例信息图",
+      "redo": "干净弹种分图或单张展示；无状态图例墙"
+    },
+    {
+      "id": "H13",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "H",
+      "priority": 2,
+      "name": "机器犬及人物地图小单位",
+      "file": "dir-H13-tiny-units-v1.jpg",
+      "reason": "机器犬/人员/工具车做成双语战术小单位说明书+比例图例板",
+      "redo": "干净四分之一格尺度示意单图或分体干净立绘；无图例墙"
+    },
+    {
+      "id": "S01",
+      "verdicts": [
+        "D2",
+        "C"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 2,
+      "name": "工务城三战场总构图",
+      "file": "dir-S01-city_master-v1.jpg",
+      "reason": "工务城三战场总构图做成带色板/分区图例的SCENE DIRECTION说明书；三区色差被图例墙淹没",
+      "redo": "干净总构图俯视；C西站/B东桥/A上供能一眼分区；无图例墙"
+    },
+    {
+      "id": "S02",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 2,
+      "name": "A供能前庭正常战棋画面",
+      "file": "dir-S02-yard_a-v1.jpg",
+      "reason": "A供能前庭战棋做成单位标签/地形图例/目标说明的方向说明书",
+      "redo": "干净档B战棋盘面；实际棋格摆机体敌人建筑；无说明书"
+    },
+    {
+      "id": "S03",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 2,
+      "name": "B跨渠桥座正常战棋画面",
+      "file": "dir-S03-canal_b-v1.jpg",
+      "reason": "B跨渠桥座做成战术图例/色键/地形特写的方向说明书",
+      "redo": "干净桥渠战棋画面；厚度与推落空间可读"
+    },
+    {
+      "id": "S04",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 2,
+      "name": "C环下装卸站正常战棋画面",
+      "file": "dir-S04-station_c-v1.jpg",
+      "reason": "C装卸站做成方向概念侧栏+色板+可读性图例的说明书",
+      "redo": "干净货运站战棋；车头/轨口/货箱阻塞可读"
+    },
+    {
+      "id": "S05",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 2,
+      "name": "指挥廊与部署背景",
+      "file": "dir-S05-command-v1.jpg",
+      "reason": "指挥廊部署背景混入INCIDENT标注/色板/设计意图文字墙",
+      "redo": "干净指挥廊背景；左侧安静区；无HUD/事故标签墙"
+    },
+    {
+      "id": "S06",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 2,
+      "name": "列车与待救检修员",
+      "file": "dir-S06-passengers-v1.jpg",
+      "reason": "列车待救图做成分层标注/动效说明/色块图例的方向板",
+      "redo": "干净救援情绪单图；人群/列车/危险可读可分层"
+    },
+    {
+      "id": "S07",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 2,
+      "name": "母线接通与链路点亮",
+      "file": "dir-S07-power_on-v1.jpg",
+      "reason": "母线接通做成多步序列+能量层剖面+色值指南的说明书",
+      "redo": "干净接通因果单图或短序列分图；无剖面图例墙"
+    },
+    {
+      "id": "S09",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 2,
+      "name": "纪存多方调度特写",
+      "file": "dir-S09-jicun_dispatch-v1.jpg",
+      "reason": "纪存调度特写混入大量方向说明/色板/MATCH LOCKED文字块",
+      "redo": "干净人物调度特写；脸服对齐locked纪存；无说明书"
+    },
+    {
+      "id": "S10",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 2,
+      "name": "白鸢预演特写",
+      "file": "dir-S10-baiyuan_previs-v1.jpg",
+      "reason": "白鸢预演特写做成分镜/视线锥/图例的SCENE DIRECTION说明书",
+      "redo": "干净预演特写；脸发服对齐locked白鸢；无说明书"
+    },
+    {
+      "id": "S12",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 2,
+      "name": "王者右臂巨钻冲击图",
+      "file": "dir-S12-king_drill-v1.jpg",
+      "reason": "王者巨钻冲击图做成MATCH LOCKED参考/色板/合成注释的方向说明书",
+      "redo": "干净档A巨钻冲击单图；对齐M05双炮+右臂钻；无说明书"
+    },
+    {
+      "id": "S13",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 2,
+      "name": "无牌天冲拳冲击图",
+      "file": "dir-S13-hero_sky-v1.jpg",
+      "reason": "天冲拳冲击图做成分镜说明书（发力线注释/分步/色板文字）",
+      "redo": "干净档A冲击单图；机体对齐M01；无说明书字"
+    },
+    {
+      "id": "S16",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 2,
+      "name": "救援成功与失守后果",
+      "file": "dir-S16-outcome-v1.jpg",
+      "reason": "胜败后果做成SUCCESS/FAILURE分栏说明板+色板",
+      "redo": "干净成功/失败分图各一主体；失败按列车/民居/路断分对象"
+    },
+    {
+      "id": "S17",
+      "verdicts": [
+        "D2",
+        "C"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 2,
+      "name": "模型街与港口街景",
+      "file": "dir-S17-c02_street-v1.jpg",
+      "reason": "模型街与港口街景做成双栏方向说明书且同套钢青Gongwu，主题差被模板抹平",
+      "redo": "干净两地街景分图；模型街生活气质与港口物流一眼区分；无说明书"
+    },
+    {
+      "id": "S18",
+      "verdicts": [
+        "D2",
+        "C"
+      ],
+      "sources": [
+        "identity"
+      ],
+      "group": "S",
+      "priority": 2,
+      "name": "模型病院与三号工房",
+      "file": "dir-S18-c02_workshop-v1.jpg",
+      "reason": "模型病院与三号工房做成双栏说明+比例尺色板；同套工业灰绿看不出生活/巨机分区气质差",
+      "redo": "干净两场所分图；人尺度模型桌与巨机工房分区；无说明书"
+    },
+    {
+      "id": "C01",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "C",
+      "priority": 3,
+      "name": "蓄力准备",
+      "file": "dir-C01-charge-v1.jpg",
+      "reason": "蓄力准备做成主图+状态芯片+四阶段缩略教学板（并标王者剪影锚，易串身份）",
+      "redo": "干净蓄力姿态+武器聚能单图；阶段图标可另交；无文字墙"
+    },
+    {
+      "id": "C02",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "C",
+      "priority": 3,
+      "name": "护势与持续支撑",
+      "file": "dir-C02-guard-v1.jpg",
+      "reason": "护势支撑做成四格运动指南+棋盘可读图例说明书",
+      "redo": "干净持续承重/接地反馈单图；不当瞬发技能；无多面板说明书"
+    },
+    {
+      "id": "C03",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "C",
+      "priority": 3,
+      "name": "持续燃烧",
+      "file": "dir-C03-burn-v1.jpg",
+      "reason": "持续燃烧做成四格+结构图例+棋盘尺度正误对照教学板",
+      "redo": "干净火舌/烟分层贴附目标的持续燃烧覆盖；盘面可读；无字墙"
+    },
+    {
+      "id": "C04",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "C",
+      "priority": 3,
+      "name": "烟雾与余烟",
+      "file": "dir-C04-smoke-v1.jpg",
+      "reason": "烟雾与余烟做成规则烟vs余烟双栏对照+状态芯片说明书",
+      "redo": "干净两类烟界素材分交；不擅加规则；无对照说明书"
+    },
+    {
+      "id": "C05",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "C",
+      "priority": 3,
+      "name": "漏电与短路",
+      "file": "dir-C05-electric-v1.jpg",
+      "reason": "漏电短路做成左右双栏+状态流+图例教学板",
+      "redo": "干净局部断线火花与地面电弧两套干净素材；与C06通电分家；无字墙"
+    },
+    {
+      "id": "C06",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "C",
+      "priority": 3,
+      "name": "通电与断电",
+      "file": "dir-C06-power-v1.jpg",
+      "reason": "通电断电做成ON/OFF双图+状态芯片图例板",
+      "redo": "干净灯列/接口通断电状态对比单图或成对素材；不刷整楼发光；无芯片墙"
+    },
+    {
+      "id": "C07",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "C",
+      "priority": 3,
+      "name": "停机与撤令",
+      "file": "dir-C07-shutdown-v1.jpg",
+      "reason": "停机撤令做成与残骸对照的多模块说明书（王者剪影标注）",
+      "redo": "干净停机静止/灯退/解锁单图；与击毁残骸截然不同；无对照说明书"
+    },
+    {
+      "id": "C08",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "C",
+      "priority": 3,
+      "name": "拘束与受阻",
+      "file": "dir-C08-immobilized-v1.jpg",
+      "reason": "拘束受阻做成双态大图+6枚状态芯片+设计规则墙",
+      "redo": "干净索具/关节受阻可读且开火剪影保留；无芯片教学墙"
+    },
+    {
+      "id": "C09",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "C",
+      "priority": 3,
+      "name": "干扰中",
+      "file": "dir-C09-jammed-v1.jpg",
+      "reason": "干扰中做成士兵失锁图+四色状态芯片说明书（主体偏人）",
+      "redo": "干净导引失锁+取消符号状态覆盖；避免读成持续扣血；无芯片墙"
+    },
+    {
+      "id": "C10",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "C",
+      "priority": 3,
+      "name": "被标定",
+      "file": "dir-C10-marked-v1.jpg",
+      "reason": "被标定做成正误对照+芯片+拒绝全场描边教学板",
+      "redo": "干净有来源局部标定标记；无全场永久描边；无正误说明书"
+    },
+    {
+      "id": "C11",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "C",
+      "priority": 3,
+      "name": "护甲与破甲",
+      "file": "dir-C11-armor-v1.jpg",
+      "reason": "护甲破甲做成三栏应力/裂层/芯片图例说明书",
+      "redo": "干净装甲受力/有限破甲裂层覆盖；伤害数字留给游戏；无字墙"
+    },
+    {
+      "id": "C12",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "C",
+      "priority": 3,
+      "name": "轻损重损与失能",
+      "file": "dir-C12-damaged-v1.jpg",
+      "reason": "轻损重损失能做成三色机三栏+缺件条说明书",
+      "redo": "干净状态覆盖层（不随姿重画全身）；重要缺件独立模型另交；无三栏说明书"
+    },
+    {
+      "id": "C13",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "C",
+      "priority": 3,
+      "name": "增援预告与入场",
+      "file": "dir-C13-spawn-v1.jpg",
+      "reason": "增援预告入场做成三阶段+每阶段六芯片教学海报",
+      "redo": "干净入口积聚/露头/出场分阶段示意素材；不与已入场敌混淆；无芯片墙"
+    },
+    {
+      "id": "C14",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "C",
+      "priority": 3,
+      "name": "入口封闭",
+      "file": "dir-C14-closed-v1.jpg",
+      "reason": "入口封闭做成四格关闭流程+成败对照说明书",
+      "redo": "干净物理闸门封闭反馈（预告环消失）；不只关灯；无对照说明书"
+    },
+    {
+      "id": "C15",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "C",
+      "priority": 3,
+      "name": "目标完成与仍阻塞",
+      "file": "dir-C15-objective-v1.jpg",
+      "reason": "目标完成/仍阻塞做成接电通桥行车三行对照说明书",
+      "redo": "干净三类目标完成vs阻塞分套图标/场景素材；禁用万能绿勾；无对照墙"
+    },
+    {
+      "id": "C16",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "C",
+      "priority": 3,
+      "name": "残骸可回收",
+      "file": "dir-C16-scrap-v1.jpg",
+      "reason": "残骸可回收做成三类残骸图例教学板",
+      "redo": "干净可回收高亮/大残骸阻挡/装饰碎屑分套素材；无三类说明书"
+    },
+    {
+      "id": "N01",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "N",
+      "priority": 3,
+      "name": "共享待机",
+      "file": "dir-N01-idle-v1.jpg",
+      "reason": "共享待机做成三重型行×五关键帧教学表；行间资产还串用",
+      "redo": "干净分型（重/轻/多足）待机呼吸关键姿单图或短分镜无字；无三行说明书"
+    },
+    {
+      "id": "N02",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "N",
+      "priority": 3,
+      "name": "共享奔跑与转向",
+      "file": "dir-N02-locomotion-v1.jpg",
+      "reason": "共享奔跑转向做成路径规则信息图（无机体动作）",
+      "redo": "干净沿合法路径连续跑/绕障/停步的机体动作示意；无规则长文"
+    },
+    {
+      "id": "N03",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "N",
+      "priority": 3,
+      "name": "共享飞行与起降",
+      "file": "dir-N03-air_move-v1.jpg",
+      "reason": "共享飞行起降做成VTOL四格教学板",
+      "redo": "干净离地/巡航/转弯/接地机体动作；推力与朝向一致；无字墙"
+    },
+    {
+      "id": "N04",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "N",
+      "priority": 3,
+      "name": "共享射击",
+      "file": "dir-N04-gunner-v1.jpg",
+      "reason": "共享射击做成士兵四阶段+枪/肩炮适配说明板（人替机）",
+      "redo": "干净机体瞄准→发射→后坐→恢复动作示意；挂点适配；无士兵教学墙"
+    },
+    {
+      "id": "N05",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "N",
+      "priority": 3,
+      "name": "共享手部操作",
+      "file": "dir-N05-operate-v1.jpg",
+      "reason": "共享手部操作做成真人手势+UI进度三格说明书",
+      "redo": "干净机体手部操作+设备状态反馈示意；不做柜内接线；无真人摄影教学板"
+    },
+    {
+      "id": "N06",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "N",
+      "priority": 3,
+      "name": "共享维修与液压施力",
+      "file": "dir-N06-work-v1.jpg",
+      "reason": "维修液压施力做成四工具分栏力向图例说明书",
+      "redo": "干净同族工具施力/回弹动作示意；无四栏工程说明书"
+    },
+    {
+      "id": "N07",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "N",
+      "priority": 3,
+      "name": "共享搬运吊运支撑",
+      "file": "dir-N07-carry-v1.jpg",
+      "reason": "搬运吊运支撑做成高度带人偶图例信息图",
+      "redo": "干净提取/移动/放下/承压机体动作示意；共用高度档；无人偶图例墙"
+    },
+    {
+      "id": "N08",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "N",
+      "priority": 3,
+      "name": "共享受击与失衡",
+      "file": "dir-N08-reaction-v1.jpg",
+      "reason": "受击失衡做成5×4人类武者反应矩阵教学板",
+      "redo": "干净机体受击轻重/倒地/复原方向响应示意；无人类矩阵说明书"
+    },
+    {
+      "id": "N13",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "N",
+      "priority": 3,
+      "name": "车辆/航空变形",
+      "file": "dir-N13-form_transition-v1.jpg",
+      "reason": "车辆/航空变形做成卡车↔倾转旋翼双图教学板",
+      "redo": "干净单一形态过渡锁止中姿示意；保质量与剪影连续；无长文说明书"
+    },
+    {
+      "id": "X02",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "重拳与勾拳",
+      "file": "dir-X02-heavy-punch-v1.jpg",
+      "reason": "重拳做成DIRECTION说明书（四状态分镜+战术板+VS轻拳对照文字）",
+      "redo": "干净重拳冲击单图：重量冲击核、地面尘与后移可读；无说明书"
+    },
+    {
+      "id": "X04",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "天冲拳",
+      "file": "dir-X04-sky-v1.jpg",
+      "reason": "天冲拳做成四格分镜+图例+色板文字墙（高风险对S13同污染）",
+      "redo": "干净档A天冲拳冲击单图；机体对齐M01无牌；无分步说明书"
+    },
+    {
+      "id": "X05",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "军刀斩击",
+      "file": "dir-X05-slash-v1.jpg",
+      "reason": "军刀斩击做成四格教学板+轨迹图例墙；非干净刀光特效素材",
+      "redo": "干净斩击特效：刀尖轨迹、斩痕、少量火花；无文字墙"
+    },
+    {
+      "id": "X06",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "右臂巨钻",
+      "file": "dir-X06-drill-fx-v1.jpg",
+      "reason": "巨钻FX做成多面板教学海报+材质反应图例",
+      "redo": "干净钻入推进特效单图（沿钻轴碎屑/火花）；无说明书"
+    },
+    {
+      "id": "X07",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "首体阻挡光束",
+      "file": "dir-X07-beam-v1.jpg",
+      "reason": "阻挡光束做成四层状态教学板+BEAM LAYERS图例",
+      "redo": "干净光束特效：炮口/亮核/外晕/终点刻印；无分层说明书"
+    },
+    {
+      "id": "X08",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "贯穿光束",
+      "file": "dir-X08-pierce-v1.jpg",
+      "reason": "贯穿光束做成深色教学板+四阶段+剪影标尺；非干净贯穿线素材",
+      "redo": "干净贯穿光束单图：贯穿线与命中脉冲分层、墙截断终止；无文字"
+    },
+    {
+      "id": "X09",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "双肩炮齐射",
+      "file": "dir-X09-twin-cannon-v1.jpg",
+      "reason": "双肩炮齐射做成四格说明书+轨迹规则图",
+      "redo": "干净双炮齐射特效：两起点独立后坐与命中；不合成中央激光；无字墙"
+    },
+    {
+      "id": "X10",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "爆破导弹",
+      "file": "dir-X10-missile-v1.jpg",
+      "reason": "爆破导弹做成四格教学海报+图例色板",
+      "redo": "干净导弹飞行-首爆-邻区爆片单图；无说明书"
+    },
+    {
+      "id": "X12",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "跨区炮弹",
+      "file": "dir-X12-artillery-v1.jpg",
+      "reason": "跨区炮弹做成炮口→弹→标记→爆炸四格说明书",
+      "redo": "干净同源炮弹链路冲击图；无设计铁则文字墙"
+    },
+    {
+      "id": "X13",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "酸液喷射",
+      "file": "dir-X13-acid-v1.jpg",
+      "reason": "酸液喷射做成四格教学板（虽有绿色主题色，仍是说明书模板）",
+      "redo": "干净酸液弧线/喷溅特效单图（区别于光束火球）；无文字墙"
+    },
+    {
+      "id": "X15",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "拘束索",
+      "file": "dir-X15-pin-v1.jpg",
+      "reason": "拘束索做成四格机甲教学板+设计笔记",
+      "redo": "干净环扣/索紧锁步特效；保留开火可读；无说明书"
+    },
+    {
+      "id": "X17",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "导引干扰",
+      "file": "dir-X17-jam-v1.jpg",
+      "reason": "导引干扰做成四格+器官参考缩略+规则清单",
+      "redo": "干净导引错相/轨迹断开取消特效（非通用电击）；无文字墙"
+    },
+    {
+      "id": "X18",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "护盾施加与吸收",
+      "file": "dir-X18-shield-v1.jpg",
+      "reason": "护盾展开/吸收/破盾做成三+状态流教学板",
+      "redo": "干净护盾三段特效：薄轮廓可见单位；无流程图说明书"
+    },
+    {
+      "id": "X19",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "泡沫灭火与护场",
+      "file": "dir-X19-foam-v1.jpg",
+      "reason": "泡沫灭火做成四格教学板+核心原则长文",
+      "redo": "干净泡沫喷射/落地/压火特效（不可蓝盾替代）；无字墙"
+    },
+    {
+      "id": "X20",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "焊补与恢复",
+      "file": "dir-X20-weld-v1.jpg",
+      "reason": "焊补恢复做成四格+设计语言图例+禁止假加血框",
+      "redo": "干净焊点/飞溅/补片完成信号特效；无说明书"
+    },
+    {
+      "id": "X21",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "液压顶推",
+      "file": "dir-X21-hydraulic-v1.jpg",
+      "reason": "液压顶推做成四格+符号图例教学海报",
+      "redo": "干净活塞受力/地面尘/位移碰撞特效；无伤无血光；无字墙"
+    },
+    {
+      "id": "X22",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "造墙架桥与产物落地",
+      "file": "dir-X22-construct-v1.jpg",
+      "reason": "造墙架桥落地做成四阶段教学板",
+      "redo": "干净抛出/展开/接地短尘与卡扣特效；无说明书"
+    },
+    {
+      "id": "X23",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "变形锁扣与推进",
+      "file": "dir-X23-transform-lock-v1.jpg",
+      "reason": "变形锁扣推进做成四格+推进火焰正误对照教学板",
+      "redo": "干净机械锁止与短推进流特效；无烟雾遮变形；无对照说明书"
+    },
+    {
+      "id": "X24",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "合体接口",
+      "file": "dir-X24-combine-dock-v1.jpg",
+      "reason": "合体接口做成引导→火花→锁灯→收束四格说明书",
+      "redo": "干净接口接合火花与锁定灯依次特效；不全屏闪白；无字墙"
+    },
+    {
+      "id": "X25",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "单位碰撞与撞墙",
+      "file": "dir-X25-collision-v1.jpg",
+      "reason": "碰撞做成单位/金属/混凝土三列材质教学对照板",
+      "redo": "干净材质区分的撞击片元特效；贴实际边界；无三列说明书"
+    },
+    {
+      "id": "X27",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "击破与残骸",
+      "file": "dir-X27-kill-v1.jpg",
+      "reason": "击破残骸做成四格教学板+机械/异形分套说明",
+      "redo": "干净机械脱落短烟与异形裂解分套特效；无字墙"
+    },
+    {
+      "id": "X28",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "连锁引爆与接力",
+      "file": "dir-X28-chain-v1.jpg",
+      "reason": "连锁引爆做成四格+因果顺序图例说明书",
+      "redo": "干净因果跳转/次级缩短爆炸特效；落点与血格可见；无说明书"
+    },
+    {
+      "id": "X29",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "起飞悬停降落",
+      "file": "dir-X29-flight-v1.jpg",
+      "reason": "起飞悬停降落做成四格+图例教学板",
+      "redo": "干净同力向推进/扬尘/接地特效；无无声飘移；无字墙"
+    },
+    {
+      "id": "X30",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "X",
+      "priority": 3,
+      "name": "巨构震动与断裂",
+      "file": "dir-X30-megastructure-v1.jpg",
+      "reason": "巨构震动断裂做成四格教学板+灯列图例",
+      "redo": "干净局部接缝开裂/碎落/远灯变化；非整城乱摇；无说明书"
+    },
+    {
+      "id": "G01",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "自由探索悬停",
+      "file": "dir-G01-hover-v1.jpg",
+      "reason": "自由探索悬停做成战术覆盖教学板+强度对照+色板",
+      "redo": "干净弱强度悬停脚印覆盖（弱于选中、不盖主体）；无强度对照说明书"
+    },
+    {
+      "id": "G02",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "选中足迹",
+      "file": "dir-G02-selected-v1.jpg",
+      "reason": "选中足迹做成1×1/2×2/3×3对照教学板+图例",
+      "redo": "干净1×1/2×2/3×3完整选中脚印素材；微型外观不缩真实范围；无对照字墙"
+    },
+    {
+      "id": "G03",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "可达范围",
+      "file": "dir-G03-move-range-v1.jpg",
+      "reason": "可达范围做成大棋盘图例+设计原则说明书",
+      "redo": "干净可达格轻底/清晰边界覆盖；多格单位按合法终点；无图例说明书"
+    },
+    {
+      "id": "G04",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "连续路径",
+      "file": "dir-G04-route-v1.jpg",
+      "reason": "连续路径做成绕障费用教学板+费用表",
+      "redo": "干净起点→终点方向路径箭头覆盖；费用与绕障一致；无费用表墙"
+    },
+    {
+      "id": "G05",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "终点与落位",
+      "file": "dir-G05-landing-v1.jpg",
+      "reason": "终点落位做成等距大图+占格朝向/高度多面板说明书",
+      "redo": "干净完整占格+朝向（高层标高）落位示意；无多面板说明书"
+    },
+    {
+      "id": "G06",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "不可用目标",
+      "file": "dir-G06-invalid-v1.jpg",
+      "reason": "不可用目标做成棋盘标注+图例+设计笔记教学板",
+      "redo": "干净就近阻挡/缺条件不可用标；不弹大菜单；无设计笔记墙"
+    },
+    {
+      "id": "G07",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "近战与扇面",
+      "file": "dir-G07-melee-v1.jpg",
+      "reason": "近战扇面做成规则说明书+扇面示例拼贴（fail-seed已标）",
+      "redo": "干净扇面范围覆盖（主目标与余波区分）；按规则格非刀光猜；无规则长文"
+    },
+    {
+      "id": "G08",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "直射轨迹",
+      "file": "dir-G08-ray-v1.jpg",
+      "reason": "直射轨迹做成士兵瞄准射线教学板+深度图例",
+      "redo": "干净武器来源直射线；遮挡后虚线/截断；世界空间深度正确；无士兵教学板"
+    },
+    {
+      "id": "G09",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "贯穿轨迹",
+      "file": "dir-G09-pierce-v1.jpg",
+      "reason": "贯穿轨迹做成标号目标+STOP教学板",
+      "redo": "干净贯穿目标逐标与明确停止点轨迹；无编号教学墙"
+    },
+    {
+      "id": "G10",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "投射弧线",
+      "file": "dir-G10-lob-v1.jpg",
+      "reason": "投射弧线做成弧/落点/AOE图例说明书",
+      "redo": "干净明显弧线与落点；飞行弧与地面影响区分；无警告说明书"
+    },
+    {
+      "id": "G11",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "爆炸范围",
+      "file": "dir-G11-blast-v1.jpg",
+      "reason": "爆炸范围做成中心/邻接/二级分层图例教学板",
+      "redo": "干净中心/邻接/二级连爆分层覆盖；盾不隐藏受影响；无分层图例墙"
+    },
+    {
+      "id": "G12",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "推拉位移",
+      "file": "dir-G12-push-v1.jpg",
+      "reason": "推拉位移做成前推/侧推/拉回三栏教学板",
+      "redo": "干净大箭头+落点影+步数；前推/侧推/拉回可分套；无三栏说明书"
+    },
+    {
+      "id": "G13",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "碰撞结果",
+      "file": "dir-G13-collision-v1.jpg",
+      "reason": "碰撞结果做成接触/双方损失/停止格图例说明书",
+      "redo": "干净接触撞击符号+双方损失+停止格；无图例说明书"
+    },
+    {
+      "id": "G14",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "落水坠坑",
+      "file": "dir-G14-fall-v1.jpg",
+      "reason": "落水坠坑做成人类棋盘+飞行豁免教学板",
+      "redo": "干净落点危险符号与消失/失能反馈；飞行豁免明确；无人类教学板"
+    },
+    {
+      "id": "G15",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "预计耐久变化",
+      "file": "dir-G15-hp-v1.jpg",
+      "reason": "预计耐久变化做成条段图例+用法示例说明书",
+      "redo": "干净损失段闪烁/保留段稳定/恢复另色纹理预览；非仅漂浮数字；无条段说明书"
+    },
+    {
+      "id": "G16",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "敌方目标光墙",
+      "file": "dir-G16-threat-wall-v1.jpg",
+      "reason": "敌方目标光墙做成状态三态+战术解读教学板",
+      "redo": "干净标准高度红色半透明墙罩脚印；深度遮挡正确；无三态教学板"
+    },
+    {
+      "id": "G17",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "敌方承诺方向与顺序",
+      "file": "dir-G17-intent-v1.jpg",
+      "reason": "敌方承诺方向顺序做成设施编号+悬停摘要信息图",
+      "redo": "干净顺序徽标+设施编号+悬停轨迹/目标/HP变化；无信息图墙"
+    },
+    {
+      "id": "G18",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "被取消的威胁",
+      "file": "dir-G18-cancelled-v1.jpg",
+      "reason": "被取消威胁做成旧轨迹断开+零损失图例说明书",
+      "redo": "干净旧轨迹淡去断开+保住对象损失归零视觉；不只文字；无图例说明书"
+    },
+    {
+      "id": "G19",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "增援位置与时间",
+      "file": "dir-G19-reinforcement-v1.jpg",
+      "reason": "增援位置时间做成格位/剪影/轮次分栏教学板",
+      "redo": "干净格位+敌种剪影+轮次分交；未入场不画成已站格；无分栏说明书"
+    },
+    {
+      "id": "G20",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "跨区因果线",
+      "file": "dir-G20-cross-board-v1.jpg",
+      "reason": "跨区因果线做成总览+局部语义对照说明书",
+      "redo": "干净源设施→目标因果线；总览与局部同语义；无双栏说明书"
+    },
+    {
+      "id": "G21",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "撤离路线与阻塞",
+      "file": "dir-G21-convoy-v1.jpg",
+      "reason": "撤离路线阻塞做成地图标注+图例笔记板",
+      "redo": "干净车头朝向与C→B→东出口连续路线+阻塞点；无地图笔记墙"
+    },
+    {
+      "id": "G22",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "上层承重与净空",
+      "file": "dir-G22-height-v1.jpg",
+      "reason": "上层承重净空做成分层爆炸图+图例说明书",
+      "redo": "干净层号/垂直连接/承重危险示意；不贴假楼面；无爆炸图说明书"
+    },
+    {
+      "id": "G23",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "吊运变形合体包络",
+      "file": "dir-G23-equipment-v1.jpg",
+      "reason": "吊运变形合体包络做成合法/非法对照教学板",
+      "redo": "干净载荷/新形态脚印+扫掠障碍+落位朝向；合法失败可分套；无正误教学板"
+    },
+    {
+      "id": "G24",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "移动行动与资源费用",
+      "file": "dir-G24-cost-v1.jpg",
+      "reason": "移动行动资源费用做成棋盘+四费用图标说明书",
+      "redo": "干净移动/主行动/弹药/备件图标+数值留位；无棋盘费用说明书"
+    },
+    {
+      "id": "G25",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "fx"
+      ],
+      "group": "G",
+      "priority": 4,
+      "name": "修理支撑导引作用区",
+      "file": "dir-G25-area-tools-v1.jpg",
+      "reason": "修理支撑导引作用区做成标注场景+图例教学板",
+      "redo": "干净支撑接口/维修邻接/护群来源作用区；不套攻击箭头；无标注说明书"
+    },
+    {
+      "id": "I01",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "截击直拳",
+      "file": "dir-I01-jab-v1.jpg",
+      "reason": "截击直拳做成多段脚注拆解的招式说明书/多标签海报，非1:1技能图标",
+      "redo": "干净方图标：短直拳+撤步隐喻剪影；禁脚注拆解墙"
+    },
+    {
+      "id": "I02",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "正蹬推位",
+      "file": "dir-I02-kick-v1.jpg",
+      "reason": "正蹬推位做成色板/元数据说明书侧栏，非干净技能图标",
+      "redo": "1:1干净脚掌前推图标；禁色板与说明侧栏"
+    },
+    {
+      "id": "I07",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "正面接拳",
+      "file": "dir-I07-counter-v1.jpg",
+      "reason": "正面接拳做成人物半身肖像+信息条，像立绘说明卡而非技能图标",
+      "redo": "干净防御接拳姿态符号（可剪影/拳臂）；禁肖像说明卡"
+    },
+    {
+      "id": "I15",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "首体光束",
+      "file": "dir-I15-beam-v1.jpg",
+      "reason": "首体光束做成图标+穿射HUD示意图双栏说明书",
+      "redo": "1:1干净射线到首实体停止的图标；示意另出"
+    },
+    {
+      "id": "I23",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "铺设桥板",
+      "file": "dir-I23-bridge-v1.jpg",
+      "reason": "铺设桥板做成DEPLOYING进度条与双语标签的多标签海报",
+      "redo": "1:1干净折叠桥展开图标；禁进度条与双栏海报"
+    },
+    {
+      "id": "I25",
+      "verdicts": [
+        "A2",
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "液压顶推",
+      "file": "dir-I25-jack-v1.jpg",
+      "reason": "液压顶推偏PBR写实活塞+仪表UI框，非赛璐璐技能图标",
+      "redo": "硬边色块活塞外推图标；禁PBR与仪表框"
+    },
+    {
+      "id": "I27",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "变形",
+      "file": "dir-I27-transform-v1.jpg",
+      "reason": "变形做成α/ω双形态对照说明书，非单技能图标",
+      "redo": "1:1同一机体两形态剪影切换符号；禁双栏对照墙"
+    },
+    {
+      "id": "I30",
+      "verdicts": [
+        "A2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "操作设备",
+      "file": "dir-I30-operate-v1.jpg",
+      "reason": "操作设备偏PBR机械手握杆写实，非干净技能图标",
+      "redo": "硬边手柄/开关操作符号；禁写实PBR手"
+    },
+    {
+      "id": "I31",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "读取记录",
+      "file": "dir-I31-read-v1.jpg",
+      "reason": "读取记录图标做成古风存档菜单UI截图，不是干净技能图标",
+      "redo": "1:1干净图标：读取/档案动作符号，无菜单列表文字"
+    },
+    {
+      "id": "I35",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "跨区转场",
+      "file": "dir-I35-transfer-v1.jpg",
+      "reason": "跨区转场做成A/B区地图+飞船的多栏UI说明图",
+      "redo": "1:1两区承运/转场符号；禁双区地图墙"
+    },
+    {
+      "id": "I39",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "复装",
+      "file": "dir-I39-reinstall-v1.jpg",
+      "reason": "复装做成带锁定说明文案的说明书式卡片",
+      "redo": "1:1部件回挂点图标；禁说明句与双栏卡"
+    },
+    {
+      "id": "I40",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "合体",
+      "file": "dir-I40-combine-v1.jpg",
+      "reason": "合体做成满屏UI框机甲拼合海报，非1:1技能图标",
+      "redo": "1:1核心与外件合一体符号；禁UI海报框"
+    },
+    {
+      "id": "I41",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "分离",
+      "file": "dir-I41-separate-v1.jpg",
+      "reason": "分离做成合体→分体步骤说明图",
+      "redo": "1:1合体释放组件符号；禁步骤箭头说明"
+    },
+    {
+      "id": "I46",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "空撞",
+      "file": "dir-I46-air_ram-v1.jpg",
+      "reason": "空撞做成多标签海报（ID/中英/元数据墙）",
+      "redo": "1:1飞行接触撞击符号；禁侧栏标签墙"
+    },
+    {
+      "id": "I47",
+      "verdicts": [
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "投弹",
+      "file": "dir-I47-bomb-v1.jpg",
+      "reason": "投弹做成飞机-轨迹-落点连环插画，非1:1技能图标感",
+      "redo": "1:1机下弹体落点/投弹符号，单主体"
+    },
+    {
+      "id": "I51",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "勘测",
+      "file": "dir-I51-survey-v1.jpg",
+      "reason": "勘测做成扫描仪读数+蓝图对照说明书",
+      "redo": "1:1工具与结构读数符号；禁设备截图墙"
+    },
+    {
+      "id": "I58",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "白鸢补页",
+      "file": "dir-I58-archive_plan-v1.jpg",
+      "reason": "白鸢补页做成六格分镜本/备用路线UI截图，非技能图标",
+      "redo": "1:1分镜本/补页动作符号（短标签可）；禁六格本墙"
+    },
+    {
+      "id": "I60",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "七海取证",
+      "file": "dir-I60-record_evidence-v1.jpg",
+      "reason": "七海取证做成完整证据页/监控截图UI，非技能图标",
+      "redo": "1:1证据页与来源符号；禁表格菜单截图"
+    },
+    {
+      "id": "I62",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "陆衡载荷判读",
+      "file": "dir-I62-load_reading-v1.jpg",
+      "reason": "陆衡载荷判读做成满屏载荷HUD诊断屏，非技能图标",
+      "redo": "1:1支撑结构与载荷读数符号；禁诊断屏墙"
+    },
+    {
+      "id": "I63",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "豪司共鸣",
+      "file": "dir-I63-soul_boost-v1.jpg",
+      "reason": "豪司共鸣做成驾驶员+机体半身肖像卡，非干净动作符号",
+      "redo": "1:1驾驶者与机体响应隐喻（共鸣波/双剪影）；禁肖像卡"
+    },
+    {
+      "id": "I64",
+      "verdicts": [
+        "D2",
+        "E"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "I",
+      "priority": 4,
+      "name": "豪司协商",
+      "file": "dir-I64-negotiate-v1.jpg",
+      "reason": "豪司协商做成古装/西装握手全幅叙事插画，非技能图标",
+      "redo": "1:1两主体达成条件符号（握手/契约简符）；禁全幅立绘"
+    },
+    {
+      "id": "B02",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "渠岸住宅",
+      "file": "dir-B02-shelter-illustrated-v1.jpg",
+      "reason": "渠岸住宅做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净渠岸住宅单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B03",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "环站公寓",
+      "file": "dir-B03-shelter-c-v1.jpg",
+      "reason": "环站公寓做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净环站公寓单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B04",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "供能前庭办公楼",
+      "file": "dir-B04-office-a-v1.jpg",
+      "reason": "供能前庭办公楼做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净供能前庭办公楼单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B05",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "渠岸办公楼",
+      "file": "dir-B05-office-b-v1.jpg",
+      "reason": "渠岸办公楼做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净渠岸办公楼单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B06",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "装卸站调度楼",
+      "file": "dir-B06-office-c-v1.jpg",
+      "reason": "装卸站调度楼做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净装卸站调度楼单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B07",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "公共供电柜",
+      "file": "dir-B07-switchgear-v1.jpg",
+      "reason": "公共供电柜做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净公共供电柜单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B08",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "远程馈电柜与中继",
+      "file": "dir-B08-relay-v1.jpg",
+      "reason": "远程馈电柜与中继做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净远程馈电柜与中继单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B09",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "变电设施",
+      "file": "dir-B09-substation-v1.jpg",
+      "reason": "变电设施做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净变电设施单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B10",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "维修工房",
+      "file": "dir-B10-workshop-v1.jpg",
+      "reason": "维修工房做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净维修工房单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B11",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "车站终端与控制台",
+      "file": "dir-B11-terminal-v1.jpg",
+      "reason": "车站终端与控制台做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净车站终端与控制台单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B12",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "撤离列车车头",
+      "file": "dir-B12-train-front-v1.jpg",
+      "reason": "撤离列车车头做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净撤离列车车头单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B13",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "撤离列车车厢",
+      "file": "dir-B13-train-v1.jpg",
+      "reason": "撤离列车车厢做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净撤离列车车厢单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B14",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "跨渠桥面与桥锁",
+      "file": "dir-B14-bridge-v1.jpg",
+      "reason": "跨渠桥面与桥锁做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净跨渠桥面与桥锁单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B15",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "上层检修栈桥",
+      "file": "dir-B15-deck-v1.jpg",
+      "reason": "上层检修栈桥做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净上层检修栈桥单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B16",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "支撑锚点与支座",
+      "file": "dir-B16-anchor-v1.jpg",
+      "reason": "支撑锚点与支座做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净支撑锚点与支座单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B17",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "固定吊机",
+      "file": "dir-B17-crane-v1.jpg",
+      "reason": "固定吊机做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净固定吊机单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B18",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "升降平台",
+      "file": "dir-B18-elevator-v1.jpg",
+      "reason": "升降平台做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净升降平台单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B19",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "轨道转台",
+      "file": "dir-B19-turntable-v1.jpg",
+      "reason": "轨道转台做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净轨道转台单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B20",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "水闸驱动与闸门",
+      "file": "dir-B20-sluice-drive-v1.jpg",
+      "reason": "水闸驱动与闸门做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净水闸驱动与闸门单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B21",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "泵站",
+      "file": "dir-B21-pumpstation-v1.jpg",
+      "reason": "泵站做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净泵站单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B22",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "货柜与吊点周转箱",
+      "file": "dir-B22-crate-v1.jpg",
+      "reason": "货柜与吊点周转箱做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净货柜与吊点周转箱单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B23",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "实体隔离墙",
+      "file": "dir-B23-wall-v1.jpg",
+      "reason": "实体隔离墙做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净实体隔离墙单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B24",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "燃料与补给接口",
+      "file": "dir-B24-fuel-v1.jpg",
+      "reason": "燃料与补给接口做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净燃料与补给接口单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B25",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "隔离电容",
+      "file": "dir-B25-capacitor-v1.jpg",
+      "reason": "隔离电容做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净隔离电容单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B26",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "猎巢入口",
+      "file": "dir-B26-rift-v1.jpg",
+      "reason": "猎巢入口做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净猎巢入口单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B27",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "承运交接点",
+      "file": "dir-B27-portal-v1.jpg",
+      "reason": "承运交接点做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净承运交接点单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B28",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "整备复装工位",
+      "file": "dir-B28-equipment-bay-v1.jpg",
+      "reason": "整备复装工位做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净整备复装工位单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B29",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "电缆与母排连接段",
+      "file": "dir-B29-cable-v1.jpg",
+      "reason": "电缆与母排连接段做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净电缆与母排连接段单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B30",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "临时支杆与承重架",
+      "file": "dir-B30-support-strut-v1.jpg",
+      "reason": "临时支杆与承重架做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净临时支杆与承重架单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B31",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "轨旁信号与站台设施",
+      "file": "dir-B31-signal-v1.jpg",
+      "reason": "轨旁信号与站台设施做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净轨旁信号与站台设施单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B32",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "城市柱环与远景巨构",
+      "file": "dir-B32-skyline-v1.jpg",
+      "reason": "城市柱环与远景巨构做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净城市柱环与远景巨构单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B33",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "道路街具与边界套件",
+      "file": "dir-B33-street-kit-v1.jpg",
+      "reason": "道路街具与边界套件做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净道路街具与边界套件单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "B34",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "B",
+      "priority": 5,
+      "name": "检修室和值班室",
+      "file": "dir-B34-service-hut-v1.jpg",
+      "reason": "检修室和值班室做成多状态/色板/标注的建筑方向说明书拼贴，非干净单主体交付物",
+      "redo": "干净检修室和值班室单主体（可含完好态主视图）；状态/色板勿写入画面；硬边赛璐璐非PBR"
+    },
+    {
+      "id": "T01",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "T",
+      "priority": 5,
+      "name": "承重混凝土地坪",
+      "file": "dir-T01-concrete-v1.jpg",
+      "reason": "承重混凝土地坪做成地形材料说明书（厚度标注/色板/禁PBR字墙）",
+      "redo": "干净地坪材质示意单图；禁说明书字墙"
+    },
+    {
+      "id": "T02",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "T",
+      "priority": 5,
+      "name": "涂装金属甲板",
+      "file": "dir-T02-painted_steel-v1.jpg",
+      "reason": "涂装金属甲板做成方向说明书（hex色卡/用途字墙）",
+      "redo": "干净涂装金属甲板俯视单图；禁色卡说明书"
+    },
+    {
+      "id": "T03",
+      "verdicts": [
+        "A2",
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "T",
+      "priority": 5,
+      "name": "格栅与排水槽",
+      "file": "dir-T03-grating-v1.jpg",
+      "reason": "格栅与排水槽偏PBR写实金属腔体，且为地形材料说明书",
+      "redo": "赛璐璐硬边格栅/排水槽单主体；禁PBR与字墙"
+    },
+    {
+      "id": "T04",
+      "verdicts": [
+        "A2",
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "T",
+      "priority": 5,
+      "name": "轨道与道岔",
+      "file": "dir-T04-rail-v1.jpg",
+      "reason": "轨道与道岔偏写实PBR材质样条+方向说明书",
+      "redo": "赛璐璐轨道/道岔俯视单图；禁PBR与图例墙"
+    },
+    {
+      "id": "T05",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "T",
+      "priority": 5,
+      "name": "输送带",
+      "file": "dir-T05-conveyor-v1.jpg",
+      "reason": "输送带做成规则/方向校验说明书",
+      "redo": "干净输送带单主体，方向可读即可；禁规则字墙"
+    },
+    {
+      "id": "T06",
+      "verdicts": [
+        "A2",
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "T",
+      "priority": 5,
+      "name": "碎石与残骸地面",
+      "file": "dir-T06-rubble-v1.jpg",
+      "reason": "碎石残骸地面偏照片级PBR+材料说明墙",
+      "redo": "赛璐璐碎石低起伏地面单图；禁PBR与说明墙"
+    },
+    {
+      "id": "T07",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "T",
+      "priority": 5,
+      "name": "浅水",
+      "file": "dir-T07-shallow_water-v1.jpg",
+      "reason": "浅水做成多层剖面/涉水单位说明的地形说明书",
+      "redo": "干净浅水俯视/斜视单图，渠底可见；禁剖面说明墙"
+    },
+    {
+      "id": "T08",
+      "verdicts": [
+        "A2",
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "T",
+      "priority": 5,
+      "name": "深渠与深水",
+      "file": "dir-T08-deep_water-v1.jpg",
+      "reason": "深渠深水含写实参考照片与剖面说明墙",
+      "redo": "赛璐璐深渠/深水单图，禁死黑坑与照片水；禁说明墙"
+    },
+    {
+      "id": "T09",
+      "verdicts": [
+        "A2",
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "T",
+      "priority": 5,
+      "name": "深坑与结构缺口",
+      "file": "dir-T09-pit-v1.jpg",
+      "reason": "深坑结构缺口六格PBR混凝土样例说明书",
+      "redo": "赛璐璐深坑/缺口单主体，侧壁可读；禁PBR拼贴"
+    },
+    {
+      "id": "T10",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "T",
+      "priority": 5,
+      "name": "油面与可燃物",
+      "file": "dir-T10-oil-v1.jpg",
+      "reason": "油面做成材料方向说明书（NOTES字墙）",
+      "redo": "干净油膜地面单图，暗反光与水区分；禁NOTES墙"
+    },
+    {
+      "id": "T11",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "T",
+      "priority": 5,
+      "name": "燃后地面",
+      "file": "dir-T11-burnt-v1.jpg",
+      "reason": "燃后地面做成特性/图例说明书",
+      "redo": "干净燃后烧痕地面单图；禁图例墙"
+    },
+    {
+      "id": "T12",
+      "verdicts": [
+        "A2",
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "T",
+      "priority": 5,
+      "name": "带电地面",
+      "file": "dir-T12-electrical-v1.jpg",
+      "reason": "带电地面偏写实PBR破缆放电+材料说明墙",
+      "redo": "赛璐璐破缆/短放电地面单图；危险标记留给UI；禁PBR字墙"
+    },
+    {
+      "id": "T13",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "T",
+      "priority": 5,
+      "name": "可行走屋顶与平台",
+      "file": "dir-T13-upper-v1.jpg",
+      "reason": "可行走屋顶做成原则图标说明墙（含古风屋顶对比注）",
+      "redo": "干净可走屋顶/平台单主体，厚度栏杆可读；禁原则墙"
+    },
+    {
+      "id": "T14",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "T",
+      "priority": 5,
+      "name": "坡道与阶梯",
+      "file": "dir-T14-slope-v1.jpg",
+      "reason": "坡道阶梯做成工程规则四格说明书",
+      "redo": "干净坡道/阶梯单主体，起终点高差可读；禁规则墙"
+    },
+    {
+      "id": "T15",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "T",
+      "priority": 5,
+      "name": "塌桥断面与沉落物",
+      "file": "dir-T15-bridge_debris-v1.jpg",
+      "reason": "塌桥断面做成材料说明方向板",
+      "redo": "干净断梁/桥板/落尘单图；禁完整桥面贴图与说明墙"
+    },
+    {
+      "id": "T16",
+      "verdicts": [
+        "D2"
+      ],
+      "sources": [
+        "btui"
+      ],
+      "group": "T",
+      "priority": 5,
+      "name": "统一表面材料家族",
+      "file": "dir-T16-material_families-v1.jpg",
+      "reason": "材料家族六列色板样条说明书，非战场交付物",
+      "redo": "若需家族示意：干净并排材质条，极短标签；或拆成各材质单图"
+    }
+  ]
+}

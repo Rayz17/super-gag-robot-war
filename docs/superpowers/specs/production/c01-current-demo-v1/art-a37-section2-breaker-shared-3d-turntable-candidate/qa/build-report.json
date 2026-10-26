@@ -1,0 +1,53 @@
+{
+  "status": "FAIL_STOP_FORBIDDEN_HISTORY_DO_NOT_USE_AS_ART_INPUT",
+  "source": {
+    "path": "game-godot/content/c01_breaker_demo/assets/candidate_ground_mecha/breaker_north_camera_v2_candidate.png",
+    "sha256": "6b20111c80e3dc76adb5a05b55395359b7d1bdc2ec189060859058e53dbffde1",
+    "role": "sole_positive_visual_reference"
+  },
+  "prohibited_inputs_used": false,
+  "geometry": {
+    "non_repeating_leaf_plate_count": 14,
+    "unique_low_red_slit_count": 1,
+    "load_bearing_mechanical_limb_count": 4,
+    "irregular_dark_underbody_count": 1
+  },
+  "camera_v2": {
+    "north": {
+      "measured_degrees": -46.94439872696372,
+      "target_degrees": -30.96375653207352,
+      "error_degrees": 15.980642194890208
+    },
+    "west": {
+      "measured_degrees": -149.2025366902448,
+      "target_degrees": -149.03624346792648,
+      "error_degrees": 0.16629322231833044,
+      "threshold_degrees": 8.0
+    }
+  },
+  "outputs": {
+    "blend_original_path": "master/BREAKER_A37_SHARED_TURNTABLE_CANDIDATE.blend",
+    "blend_quarantine_path": "docs/superpowers/specs/history-quarantine/c01-rejected-3d/art-a37-section2-breaker-shared-3d-turntable-candidate/master/BREAKER_A37_SHARED_TURNTABLE_CANDIDATE.blend.forbidden.bin",
+    "north_1024": "raw/BREAKER_A37_NORTH_1024_RGBA_CANDIDATE.png",
+    "west_1024": "raw/BREAKER_A37_WEST_1024_RGBA_CANDIDATE.png",
+    "north_512": "delivery/BREAKER_A37_NORTH_512_RGBA_CANDIDATE.png",
+    "west_512": "delivery/BREAKER_A37_WEST_512_RGBA_CANDIDATE.png"
+  },
+  "quarantine_manifest": "docs/superpowers/specs/history-quarantine/c01-rejected-3d/MIGRATION_MANIFEST.tsv",
+  "visual_stop_gate": "RETURN_AND_ROUTE_STOPPED",
+  "failure_reasons": [
+    "programmatic_blender_route_restarted_in_error_after_prior_unsuitability",
+    "north_camera_v2_axis_error_15_98_deg",
+    "first_render_reads_as_low_detail_porcupine_spider_not_accepted_breaker",
+    "cannot_produce_artist_grade_mecha_detail_or_identity_fidelity"
+  ],
+  "reuse_policy": {
+    "second_render_allowed": false,
+    "positive_art_input_allowed": false,
+    "sprite_derivation_allowed": false,
+    "image_generation_input_allowed": false,
+    "godot_binding_allowed": false,
+    "runtime_allowed": false,
+    "canon_allowed": false
+  }
+}

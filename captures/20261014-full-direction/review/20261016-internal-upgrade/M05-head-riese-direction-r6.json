@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-20",
+  "revision": "M05-head-riese-direction-r6",
+  "asset": "M05 / 完全版王者头部",
+  "user_request": "这个太丑了，参考古铁巨神的头部天线和角的设计",
+  "scope": "否定R5角与天线的具体执行；保持图四脸与王者原色，只重整头部。",
+  "supersedes_execution": "M05-head-upward-L-production-r5.json",
+  "reference_entity": "古铁巨神 / アルトアイゼン・リーゼ / Alteisen Riese",
+  "official_product_page": "https://www.kotobukiya.co.jp/product/detail/p4934054101573/",
+  "reference_access_note": "官方产品文字已读取；官方页浏览器遇安全验证未操作。实际图像输入来自公开模型宣传近照与标准比例插图，逐项列明来源和哈希。",
+  "source_refs": [
+    {
+      "file": "refs/M05-user-face-D-r3.png",
+      "sha256": "af771807d129f91ab7d281a5f21a763075c7dcdafb72d70b5e29e3d1b751e7cf",
+      "pixel_size": [
+        552,
+        476
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "bbox_above_8": [
+        0,
+        0,
+        552,
+        476
+      ],
+      "role": "用户图四脸部身份与配色依据，继续有效"
+    },
+    {
+      "file": "refs/M05-r6-riese-standard-reference.jpg",
+      "sha256": "0b704b025d65863a7b1482a7945fd41ddbfd8230b8af8a473a00c34ae11bee3d",
+      "pixel_size": [
+        571,
+        914
+      ],
+      "mode": "RGB",
+      "alpha_range": null,
+      "bbox_above_8": null,
+      "role": "古铁巨神标准比例插图：头角和细侧天线参考，不迁移身体",
+      "page_url": "https://www.1999.co.jp/10066447",
+      "image_url": "https://www.1999.co.jp/itbig06/10066447t2.jpg"
+    },
+    {
+      "file": "refs/M05-r6-riese-srd-reference.jpg",
+      "sha256": "671ba39a046c8e620cc8ae9bc797b5ccd8c8bd078b805ca101b6a520e7d29c77",
+      "pixel_size": [
+        800,
+        657
+      ],
+      "mode": "RGB",
+      "alpha_range": null,
+      "bbox_above_8": null,
+      "role": "寿屋SD模型宣传近照：厚根和上挑刃形参考；特典放大等离子角，不作王者头身比例",
+      "page_url": "https://otakumode.com/shop/53d5a7373a0c7bf97b01031c/S-R-D-S-Alt-Eisen-Riese-Plastic-Model-Kit-First-Press-Limited-Edition",
+      "image_url": "https://resize.cdn.otakumode.com/ex/800.657/shop/product/ca80343eccd84235991ae8cc10f5b32e.jpg"
+    }
+  ],
+  "author_interpretation": [
+    "额角从厚根连续上挑收尖，避免方折底座和直立箭头。",
+    "保留一中角与两对侧天线的皇冠身份，侧件收细并后退分层。",
+    "前后弧度属于中轴矢状面，不能在正面画成偏向一侧。"
+  ],
+  "current_head": "samples/M05-head-riese-r6b.png",
+  "user_accepted": true,
+  "body_update_pending": true,
+  "handoff_sent": false,
+  "acceptance_receipt": "M05-head-design-fixed-20261020.json"
+}

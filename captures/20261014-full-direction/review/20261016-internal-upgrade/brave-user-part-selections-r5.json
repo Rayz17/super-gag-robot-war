@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-17",
+  "authority": "two_direct_user_messages_with_attachments_in_this_chat",
+  "verbatim_side": "附件二的侧面肩甲是对的（引擎方向不对），你画的引擎方向是对的。你画的脚部履带后侧是对的，但前侧丢失了，腿部正侧面的设计太单调",
+  "verbatim_back": "背面可以使用我绿框的设计",
+  "selected_sources": [
+    {
+      "file": "refs/brave-user-shoulder-threeview-20261017.png",
+      "sha256": "a10db23c933b332bc8fab3e2004c94a00d9879889b5ed8d160429286d939e16b",
+      "scope": "仅采用中间侧视肩甲/翼罩造型；发动机外向错误，不取；整体小拳/身高不取"
+    },
+    {
+      "file": "refs/brave-user-leg-front-rear-markup-20261017.png",
+      "sha256": "79b814bb6dd1ed04491599868aa180f72c9ba5b19c9a1d705807103da8ad6c5b",
+      "scope": "绿框指定前侧履带缺失区与保留后侧履带；丰富腿部正面/侧面结构"
+    },
+    {
+      "file": "refs/brave-user-back-selection-20261017.png",
+      "sha256": "91992304e94be71445dde79e09ccbff7ae4a950df11182395bde426fd3eee44b",
+      "scope": "绿框背包上下叠置矩形格栅、左右竖鳍及小腿后甲/后跟可采用；不采用全图小拳比例"
+    }
+  ],
+  "engine_direction_source": "samples/M04-shoulder-profile-r4.png",
+  "engine_scope": "仅采用前向引擎轴线，不采用该图被作者压平为薄翼的肩甲形",
+  "shoulder_scope": "采用用户附件二中间侧视的有体积三角肩甲/翼罩；不得再以正投影推理改成细平条",
+  "track_scope": "同时保留前、后两侧可读履带，不能让前侧只剩白色板甲；保留用户认可的后侧轮组/履带和后跟",
+  "back_scope": "采用绿框内背包/竖鳍和小腿后甲方案，双腿同体系；不顺带接收原图的缩小双拳和偏矮比例",
+  "not_inferred": [
+    "new exact integrated drawing approved",
+    "3D hold lifted",
+    "permission for frequent progress messages to main thread"
+  ]
+}

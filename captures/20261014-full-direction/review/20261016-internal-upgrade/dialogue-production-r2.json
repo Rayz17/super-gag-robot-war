@@ -1,0 +1,271 @@
+{
+  "revision": "dialogue-handoff-r2-anatomy",
+  "started": "2026-10-16",
+  "producer_thread": "01a13f08-23a0-74c2-b2f5-7913c7e81470",
+  "receiver_thread": "01a0f799-a7fc-7173-b8b2-8ce9f1c8861a",
+  "purpose": "H02 structural repair source; new candidate not sent to receiver or integrated",
+  "accepted_identity_decisions": "user-art-decisions-20261016.json",
+  "receiver_interface": "美术交接说明-20261016.md#8",
+  "consumers": [
+    "game-godot/scripts/formula_lab/linked_campaign/dialogue_presenter.gd",
+    "game-godot/scripts/formula_lab/linked_campaign/rounds/people_portraits.gd",
+    "game-godot/scripts/formula_lab/linked_campaign/rounds/people_commands.gd"
+  ],
+  "formula": "scale = 72.0 / (chin - eye.y); dialogue offset is (eye - crop.position) * scale. Avatar uses same master and portrait_crop, not separately regenerated face.",
+  "items": [
+    {
+      "id": "H01",
+      "name": "纪存",
+      "key": "jicun",
+      "file": "samples/H01-jicun-dialogue-r1.png",
+      "parent": "../20261015-latest-review/images/0fb244f566cec5faf6d6d53e2f9d432f52fe23b907561c966d619900d1d5668b.jpg",
+      "crop": [
+        80,
+        35,
+        890,
+        1150
+      ],
+      "eye": [
+        442,
+        242
+      ],
+      "chin": 376.0,
+      "portrait_crop": [
+        302,
+        58,
+        390,
+        390
+      ],
+      "generated": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-de5014cb-eb64-4b82-a3ef-86216a6f4311.png",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "sha256": "8f8c902d40e26beb9f2a6ad37316c85364aa9630f4d84f8092e1bcf077a9003b",
+      "parent_sha256": "0fb244f566cec5faf6d6d53e2f9d432f52fe23b907561c966d619900d1d5668b",
+      "accepted_identity_direction": true,
+      "export_user_accepted": true,
+      "runtime_integrated": false,
+      "coordinate_space": "original master image pixels; top-left origin; eye is midpoint between eyes; chin is lower face endpoint, not collar",
+      "dialogue_head_scale": 0.5373134328358209,
+      "crop_source": "author visually annotated actual r1 export, then checked within-image bounds; requires receiver normal dialogue view check",
+      "avatar_checks_ui_sizes": [
+        72,
+        112
+      ],
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "corner_values": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_bbox": [
+          0,
+          17,
+          1002,
+          1536
+        ],
+        "background_sample_values": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generation": "built-in image_gen identity-preserving extraction; prompt in dialogue-handoff-prompts-r1.json",
+      "source_design_fixed": true,
+      "source_design_user_accepted": true,
+      "design_freeze_record": "source-design-freeze-20261018.json",
+      "acceptance_scope": "本批具体二维设计；运行及导出技术质量另验",
+      "current_status": "source_design_fixed_runtime_separate"
+    },
+    {
+      "id": "H02",
+      "name": "白鸢",
+      "key": "baiyuan",
+      "file": "samples/H02-baiyuan-dialogue-r2-anatomy.png",
+      "parent": "../20261015-latest-review/images/10d9e60b4cdb0b194c3cc4ed779b51e02b8abba254d9c0fa091bcf8fe6131768.jpg",
+      "crop": [
+        0,
+        15,
+        1024,
+        1150
+      ],
+      "eye": [
+        477,
+        200
+      ],
+      "chin": 314.0,
+      "portrait_crop": [
+        320,
+        46,
+        390,
+        390
+      ],
+      "generated": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-3921da63-0006-4952-9286-7246505029e2.png",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "sha256": "0cc3a65bd4f8453a4f974f4e19900cb4bf3b758be19a65fc5ad28145bcdbec63",
+      "parent_sha256": "10d9e60b4cdb0b194c3cc4ed779b51e02b8abba254d9c0fa091bcf8fe6131768",
+      "accepted_identity_direction": true,
+      "export_user_accepted": true,
+      "runtime_integrated": false,
+      "coordinate_space": "original master image pixels; top-left origin; eye is midpoint between eyes; chin is lower face endpoint, not collar",
+      "dialogue_head_scale": 0.631578947368421,
+      "crop_source": "author visually annotated actual r1 export, then checked within-image bounds; requires receiver normal dialogue view check",
+      "avatar_checks_ui_sizes": [
+        72,
+        112
+      ],
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          0,
+          20,
+          1024,
+          1536
+        ]
+      },
+      "generation": "built-in image_gen localized arm/hand repair; prompt baiyuan-two-hands-repair-prompt-r2.json",
+      "frame_record": "dialogue-production-r2.json",
+      "current_status": "source_design_fixed_runtime_separate",
+      "mode": "RGBA",
+      "supersedes_defective_export": {
+        "file": "samples/H02-baiyuan-dialogue-r1.png",
+        "sha256": "13f877fae71b85f68f9c23ad23d48c4da557b376a355ae52732f6921c3205a8e",
+        "defect": "three hands: pen, left book-edge grip, pocket glove",
+        "disposition": "do_not_use_for_new_derivatives; identity approval remains separate"
+      },
+      "anatomy_author_review": {
+        "two_arms_two_hands": true,
+        "right_hand": "holds pen at image left",
+        "left_hand": "connected across front of waist from image-right sleeve; supports lower right book edge",
+        "third_gripping_hand_removed": true,
+        "pocket_hand_removed": true,
+        "basis": "author inspected actual generated full portrait; not runtime verification or user acceptance"
+      },
+      "source_design_fixed": true,
+      "source_design_user_accepted": true,
+      "design_freeze_record": "source-design-freeze-20261018.json",
+      "acceptance_scope": "本批具体二维设计；运行及导出技术质量另验"
+    },
+    {
+      "id": "H03",
+      "name": "七海",
+      "key": "qihai",
+      "file": "samples/H03-qihai-dialogue-v1.png",
+      "parent": "../../review/20261015-latest-review/images/e1b1aee7237967035c195bfa52d43dda3f0773f12f64abbf2a601ae0d28b273f.jpg",
+      "crop": [
+        0,
+        0,
+        1024,
+        1120
+      ],
+      "eye": [
+        477,
+        222
+      ],
+      "chin": 349.0,
+      "portrait_crop": [
+        302,
+        17,
+        390,
+        390
+      ],
+      "generated": null,
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "sha256": "404762ecc0ff561f8bc1fe758c1b16f4cb2e7aab33d15b62a1d273d4cbf41b64",
+      "parent_sha256": "e1b1aee7237967035c195bfa52d43dda3f0773f12f64abbf2a601ae0d28b273f",
+      "accepted_identity_direction": true,
+      "export_user_accepted": true,
+      "runtime_integrated": false,
+      "coordinate_space": "original master image pixels; top-left origin; eye is midpoint between eyes; chin is lower face endpoint, not collar",
+      "dialogue_head_scale": 0.5669291338582677,
+      "crop_source": "author visually annotated actual r1 export, then checked within-image bounds; requires receiver normal dialogue view check",
+      "avatar_checks_ui_sizes": [
+        72,
+        112
+      ],
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "corner_values": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_bbox": [
+          0,
+          0,
+          1024,
+          1536
+        ],
+        "background_sample_values": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "generation": "reuse existing project cutout; no regeneration or pixel changes this batch",
+      "source_design_fixed": true,
+      "source_design_user_accepted": true,
+      "design_freeze_record": "source-design-freeze-20261018.json",
+      "acceptance_scope": "本批具体二维设计；运行及导出技术质量另验",
+      "current_status": "source_design_fixed_runtime_separate"
+    }
+  ],
+  "runtime_changed_by_producer": false,
+  "author_review": {
+    "media": "actual repaired master and serious variant inspected; old default also examined and found three hands",
+    "findings": [
+      "Corrected default has pen hand and book-supporting hand only; supporting forearm crosses waist continuously from sleeve.",
+      "The earlier body was wrong; approval of identity does not approve its anatomy. H01/H03 unchanged from r1."
+    ],
+    "remaining": [
+      "User review of corrected exact export.",
+      "Grouped handoff and receiver runtime replacement after confirmation."
+    ]
+  },
+  "checks": {
+    "source_files_and_hashes": true,
+    "alpha_read_only_inspected": true,
+    "crop_within_image": true,
+    "normal_runtime_dialogue": false,
+    "native_input": false,
+    "independent_visual_review": false,
+    "user_export_acceptance": false,
+    "source_design_user_accepted": true,
+    "user_export_acceptance_scope": "source design only; crop/alpha/runtime technical QA remains separate"
+  },
+  "date": "2026-10-17",
+  "previous_record": "dialogue-production-r1.json",
+  "handoff_status": "confirmed_source_design_sent_receiver_integration_separate",
+  "source_design_fixed": true,
+  "design_freeze_record": "source-design-freeze-20261018.json",
+  "acceptance_scope": "本批具体图稿的形象、造型、配色、画法及所列装配/状态设计固定；模型、裁切透明边、动作、声音和游戏运行仍按制作结果分别验证。",
+  "handoff_sent": true,
+  "handoff_receipt": "交接发送记录-20261016.json#source-design-freeze-20261018"
+}

@@ -1,0 +1,134 @@
+{
+  "episode_id": "C01E03-STORY-FIRST-CANDIDATE",
+  "status": "candidate",
+  "canon_level": "accepted_story_candidate_runtime_production",
+  "source_slot_id": "V357-C01-S03",
+  "loadout_contract_id": "V358LOAD003",
+  "mecha_id": "V353U001",
+  "story_source": "DOC_V359_C01E03_STORY_FIRST_V1",
+  "graph": "res://content/episodes/c01/e03/graph.story_first.json",
+  "bundle_output": "res://content/generated/episodes/c01/e03/story_first.bundle.json",
+  "transition_contract": "required",
+  "battle": "res://content/episodes/c01/e03/battle/c01_e03_broken_arm_bridge_8p.json",
+  "investigations": [
+    "res://content/episodes/c01/e03/explore/c01_e03_right_arm_fourth_rib.json"
+  ],
+  "presentation_assets": [
+    "res://assets/backgrounds/story_first/bg_c01e03_right_arm_interior_v01.png",
+    "res://assets/tactical_maps/story_first/bg_c01e03_dual_level_hall_isometric_v01.png",
+    "res://assets/backgrounds/story_first/bg_c01e01_guardian_atrium_model_hospital_v01.png",
+    "res://assets/backgrounds/story_first/bg_c01e01_archive_room_v01.png",
+    "res://assets/portraits/portrait_doudeng.png",
+    "res://assets/portraits/portrait_haosi.png",
+    "res://assets/portraits/portrait_jicun.png",
+    "res://assets/portraits/portrait_qihai.png",
+    "res://assets/battle_presentation/c01/story_first/manifest.json",
+    "res://assets/battle_presentation/c01/story_first/sprite_diedie_idle_v01.png",
+    "res://assets/battle_presentation/c01/story_first/sprite_machine_dog_idle_v01.png",
+    "res://assets/battle_presentation/c01/story_first/sprite_evac_group_base_v01.png",
+    "res://assets/battle_presentation/c01/story_first/sprite_path_frame_reclosing_v01.png",
+    "res://assets/battle_presentation/c01/story_first/sprite_status_patcher_active_v01.png",
+    "res://assets/battle_presentation/c01/fire_bridge/sprite_fire_bridge_deployed_v01.png",
+    "res://assets/characters/story_first/sprite_jicun_walk_right_strip_v01.png",
+    "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_kneel_idle_v01.png",
+    "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_single_arm_support_v01.png",
+    "res://assets/battle_presentation/c01/guardian_z/pose_gz_c01_kneel_contact_v01.png",
+    "res://assets/battle_presentation/c01/guardian_z/cutin_doudeng_c01_tense_v01.png",
+    "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_idle_v01.png",
+    "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_scan_v01.png",
+    "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_lock_v01.png",
+    "res://assets/tactical_maps/story_first/bg_c01e04_carrier_escape_isometric_v01.png",
+    "res://assets/tactical_maps/story_first/spr_wanji_mobile_chassis_v01.png",
+    "res://assets/units/unit_brave_fist.svg",
+    "res://assets/units/enemy_seal_frame.svg"
+  ],
+  "experience_contract_version": 1,
+  "experience_contract_required": true,
+  "experience_contract": {
+    "episode_knot_id": "KNOT_C01E03_REPAIRABLE_ARM_BECOMES_BRIDGE",
+    "dramatic_object_id": "OBJ_C01E03_FOURTH_RIB_ALIGNMENT",
+    "dramatic_question": "馆守Z的右臂仍然可以修，但它也是五个人唯一能踩过的桥；谁来决定切断，依据又来自哪里？",
+    "human_claims": [
+      {"claim_owner": "CH_JICUN", "claim": "身体记忆可以帮他找到门，却不能替现场下决定；撤离几何必须由唐胶、豪司、跌跌和兜灯共同验证。"},
+      {"claim_owner": "CH001", "claim": "硬停权包含拒绝巨型捷径，也包含在正确刀口主动切断仍可修的主筋；专业判断必须真的改变机体身体。"}
+    ],
+    "machine_claim": {
+      "mecha_id": "V353U001",
+      "claim": "馆守Z第一次受控行动不是完整站起或漂亮必杀，而是只动一次、放弃可修右臂，让自己的身体成为别人能走的路。",
+      "action_cue_id": "CUE_C01E03_GUARDIAN_RELEASES_REPAIRABLE_ARM"
+    },
+    "player_commitment_id": "COMMIT_C01E03_ARM_BECOMES_BRIDGE",
+    "commitment_model": "enacted",
+    "commitment_evidence": [
+      {"node_id": "c01e03_broken_arm_bridge", "anchor_id": "C01E03_COMMIT_CANCEL_FULL_SHOULDER", "visible_action": "玩家看见整肩预览会把五人一起标红后，主动取消只有纪存能执行的捷径。"},
+      {"node_id": "c01e03_broken_arm_bridge", "anchor_id": "C01E03_COMMIT_CUT_REPAIRABLE_ARM", "visible_action": "玩家完成第四筋共同验证，再允许兜灯切断主筋，接受馆守Z永久单臂。"},
+      {"node_id": "c01e03_broken_arm_bridge", "anchor_id": "C01E03_COMMIT_JICUN_CROSSES_LAST", "visible_action": "玩家逐一送出两件设备和其余人员，让纪存最后离开右臂桥。"}
+    ],
+    "settlement_model": "narrative_consequence",
+    "irreversible_cost": {
+      "text": "馆守Z永久失去右臂，复合桥留在旧址；勇拳被企业回收并剥离数据；馆守Z位移越过监视阈值，B1六个节点被实体锚死。",
+      "state_refs": ["GUARDIAN_Z_RIGHT_ARM", "RIGHT_ARM_COMPOSITE_BRIDGE", "BRAVE_FIST_RECOVERED_BY_CORPORATE_TOW", "B1_MOVING_SPINE", "C01E03_PHYSICAL_SNAPSHOT"]
+    },
+    "next_debt_id": "DEBT_C01E03_WANJI_BODY_LOCKED_FOR_DISASSEMBLY",
+    "next_debt_origin": "五人已经清桥，但六枚外部锚沿馆守Z的位移痕锁死B1；火情稳定后，万机馆将按楼层、机体、档案和危险资产分拆。",
+    "next_debt_future_window": "C01E04必须从RT035精确27键开始；馆守Z保持永久单臂、勇拳与豪司不在馆内、右臂桥留旧址、六锚全部实体落锁。",
+    "capacity_band": "standard",
+    "capacity_evidence": {"status": "pending_external", "receipt_paths": []},
+    "required_continuity": ["action", "responsibility"],
+    "required_consumption_slots": ["immediate", "conflict", "character", "settlement"],
+    "skip_reasons": {
+      "DESK": "右臂内腔调查嵌在白函持续收框的战斗中，切筋责任不能暂停成脱离现场的比较桌。",
+      "CONSTRAINT": "第四筋承载上限、单向过桥与一人一件货已经作为地图和动作约束存在。",
+      "TIMING": "断臂探索重在空间排除和多人输入，不另加节拍判定稀释可读性。",
+      "SIGNAL": "纪存的掌心反灼保持低置信身体症状，不能在本话被信号玩法认证成真相。"
+    },
+    "stable_object_bindings": [
+      {
+        "stable_object_id": "OBJ_C01E03_FOURTH_RIB_ALIGNMENT",
+        "mode_bindings": [
+          {"mode": "NARRATIVE", "node_id": "c01e03_baihan_body_entry", "anchor_id": "c01e03_baihan_body_entry"},
+          {"mode": "SPATIAL", "node_id": "c01e03_broken_arm_bridge", "anchor_id": "resolve_fourth_rib_alignment"},
+          {"mode": "TACTICAL", "node_id": "c01e03_broken_arm_bridge", "anchor_id": "BIND_C01E03_FOURTH_RIB_TO_ARM_BRIDGE"},
+          {"mode": "NARRATIVE", "node_id": "c01e03_left_hand_aftercare", "anchor_id": "c01e03_left_hand_aftercare"}
+        ]
+      }
+    ],
+    "consumption_ledger": [
+      {
+        "result_id": "COMMIT_C01E03_ARM_BECOMES_BRIDGE",
+        "source_node_id": "c01e03_broken_arm_bridge",
+        "slots": {
+          "immediate": {"consumer_kind": "world_object", "consumer_id": "OBJ_C01E03_FOURTH_RIB_ALIGNMENT", "visible_evidence": "三项外部输入在右臂内腔围出唯一安全宽度，玩家只能在验证后标定刀口。"},
+          "conflict": {"consumer_kind": "battle", "consumer_id": "C01E03-BROKEN-ARM-BRIDGE-EIGHT-STAGE", "visible_evidence": "取消整肩、送拳破框、嵌入探索、切筋成桥和五人逐段清桥共同构成八阶段胜利条件。"},
+          "character": {"consumer_kind": "node", "consumer_id": "c01e03_left_hand_aftercare", "visible_evidence": "兜灯先处理发抖的手与断口，唐胶用一句不合时宜的话让她终于掉泪；馆守Z只用左手递回普通扳手。"},
+          "settlement": {"consumer_kind": "node", "consumer_id": "c01e03_six_anchor_lock", "visible_evidence": "右臂桥没有复原，勇拳被拖走，六锚因馆守Z真实位移落锁；RT035精确27键一次提交。"}
+        }
+      }
+    ],
+    "acceptance_questions": [
+      "白函为什么选择切断楼梯和收框，而不是进行普通HP攻击？",
+      "馆守Z为什么只能动作一次，整肩抬升又为什么必须由玩家亲手取消？",
+      "豪司和勇拳怎样参与承梁而没有因此正式加入万机馆？",
+      "纪存的身体记忆为什么只能找到隔板，不能直接给出第四筋答案？",
+      "唐胶、勇拳与跌跌三项外部输入分别承担什么不可替代的验证？",
+      "玩家为什么必须主动切断仍可修的右臂，并让纪存最后清桥？",
+      "战斗胜利后为什么不是庆功，而是断口处理、勇拳回收和六锚落锁？"
+    ]
+  },
+  "claims": [
+    "c01e03_four_node_story_first_episode_graph_with_nested_spatial_p6",
+    "eight_stage_giant_rescue_scenario_driver",
+    "walkable_right_arm_fourth_rib_search_with_explore_local_rollback",
+    "two_real_route_choices",
+    "three_local_checkpoint_semantics",
+    "rt035_exact_27_key_atomic_handoff"
+  ],
+  "non_claims": [
+    "formal_episode_accepted",
+    "production_art_complete",
+    "dual_plane_final_renderer_complete",
+    "capacity_receipt_validated",
+    "chapter_c01_complete",
+    "windows_runtime_validated"
+  ]
+}

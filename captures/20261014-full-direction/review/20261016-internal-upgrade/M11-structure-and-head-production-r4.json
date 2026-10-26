@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-21",
+  "revision": "M11-structure-and-head-production-r4",
+  "asset": "货柜领袖整体盔型两案、摄像头后视与本体布局",
+  "canon_entity": "V353U043",
+  "generation_mode": "built-in image_gen; Blender rigid layout",
+  "existing_batch": "design-followthrough-r1.json",
+  "direction_record": "M11-integrated-head-direction-r4.json",
+  "prior_direction": "M11-transformation-direction-r3.json",
+  "prior_source_record": "M11-future-production-r2.json",
+  "reader": "M11-structure-and-head-r4.html",
+  "items": [
+    {
+      "id": "HEAD_OPTIONS",
+      "file": "samples/M11-integrated-head-options-r4.png",
+      "sha256": "859d4722985fd189baba60862cfb35f8a2c4f1600b3e6ec732bd79bbc700b277",
+      "pixel_size": [
+        1448,
+        1086
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-15caa586-1b6e-435f-92cd-b054a9383181.png",
+      "prompt_record": "M11-integrated-head-prompt-r4.txt",
+      "role": "整体头盔两案：A厚侧盔，B连贯额框；无独立头顶天线，各有正面与左前斜视",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "VEHICLE",
+      "file": "samples/M11-camera-truck-r3.png",
+      "sha256": "c702fce6fabb6698cd48f94d76ed11a04c6555d97a5eb16396440a1fb91cad1c",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-312e3e6b-99c8-4df8-af84-dcea79b22436.png",
+      "prompt_record": "M11-camera-vehicle-prompt-r3.json",
+      "role": "流线未来四轴货车，柱侧摄像头后视窗口与单个独立货柜",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    }
+  ],
+  "body_context": {
+    "id": "ROBOT",
+    "file": "samples/M11-future-robot-r2.png",
+    "sha256": "0dad97e6598041a2103351afe5554d36f4701977ba6d19c21da1cb05620ab502",
+    "pixel_size": [
+      1024,
+      1536
+    ],
+    "mode": "RGB",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "background": "opaque_warm_white",
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-13f13bf1-4522-4d53-9adc-3f4eecbe0eb4.png",
+    "role": "R2颈下/配色/车壳分配参考；旧头部不作为R4当前头部，未绘成R4整机",
+    "prompt_record": "M11-future-robot-prompt-r2.json",
+    "user_accepted": false,
+    "runtime_integrated": false,
+    "handoff_sent": false
+  },
+  "prompt_index": "M11-structure-and-head-prompts-r4.json",
+  "layout_study": {
+    "directory": "M11-kinematic-r4",
+    "record": "M11-kinematic-r4/layout-check.json",
+    "source": "M11-kinematic-r4/build_layout.py",
+    "editable_model": "M11-kinematic-r4/M11-rigid-layout-r4.blend",
+    "motion": "M11-kinematic-r4/M11-layout-motion-r4.mp4",
+    "same_inventory_sample_check": true,
+    "full_transformation_verified": false
+  },
+  "superseded_candidates": [
+    {
+      "file": "samples/M11-crown-options-r3.png",
+      "reason": "用户明确不要独立头顶天线，A单鳍与B独立双鳍均不作为当前"
+    },
+    {
+      "file": "samples/M11-transformation-sheet-r3-attempt.png",
+      "reason": "作者看到多余支撑腿和压缩比例，未采用"
+    },
+    {
+      "directory": "M11-kinematic-r3",
+      "reason": "历史草模含已退出独立冠鳍；当前使用无独立顶鳍的R4通用头部包络"
+    }
+  ],
+  "research": [
+    {
+      "url": "https://evwire.com/p/tesla-semi-europe-walkaround-video-camera-mirrors-new-details",
+      "date": "2026-09-14",
+      "kind": "firsthand_IAA_2026_walkaround",
+      "observation": "欧洲版摄像头后视；来源将其与北美版区分，不泛称所有Semi版本都已取消镜片",
+      "scope": "外形观察；不采技术参数或法规为机体设定"
+    }
+  ],
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "samples/M11-integrated-head-options-r4.png",
+      "samples/M11-camera-truck-r3.png",
+      "samples/M11-user-helmet-reference-r4.png",
+      "M11-kinematic-r4/01-unloaded-vehicle.png",
+      "M11-kinematic-r4/02-cab-shift-and-arm-open.png",
+      "M11-kinematic-r4/03-frame-down-deck-fold.png",
+      "M11-kinematic-r4/04-robot-head-up.png"
+    ],
+    "observed": [
+      "A由厚实的额框、短侧盔和护颊构成，额部相机缩入壳体；侧面琥珀通讯窗贴合外壳，无独立顶部鳍。",
+      "B的象牙白额框连到两侧壳体，侧冠为宽根侧壁和凹入式琥珀窗，与流线车形更接近；作者倾向B，用户未选择。",
+      "两个方案均保留藏蓝盔体、分离青色双眼、银色分节面甲和正常头壳纵向体积；不是擎天柱高双耳结构。",
+      "车形柱侧原易误读为后视镜的部位已改为可见双镜头窗口；车头、近侧四轮位和单个独立货柜保留。",
+      "R3四格插画在第二格增加前支撑腿，末格压缩比例，已退出当前；改为同件刚体布局研究。"
+    ],
+    "limits": [
+      "A/B是独立绘制的正面与斜视，不是同一模型严格正交；侧壳接缝和相机透视仍需统一。",
+      "R4新头部未合到整机，R2整机仅作颈下参考；未继续从未选定头型派生全套三视。",
+      "布局草模说明部件数量、轨迹和去向；不能证明全部净空、驾驶空间、重量与支撑成立。货柜在研究前已卸下，装卸本身不在该动画内。",
+      "视频已由实际关键帧导出；作者本轮查看四状态静帧，未把导出成功冒充连续动作视觉验收。",
+      "新稿均未获用户采用，未替换游戏资源或向其他会话发送。"
+    ]
+  },
+  "new_images_user_accepted": false,
+  "direction_authorized": true,
+  "runtime_changed": false,
+  "handoff_sent": false
+}

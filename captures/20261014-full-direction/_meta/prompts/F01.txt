@@ -1,0 +1,25 @@
+STYLE LOCK = Astra KINETIC_CEL (must match references):
+- Hard-edge cel color blocks, pressure ink outlines, max two hard shadow tiers
+- Super Robot Wars / 超级系 readable silhouette; half-Q STANDARD readability
+- Gongwu industrial palette: steel teal / concrete beige / warning vermilion
+- NOT photoreal, NOT AAA PBR, NOT wasteland photo rust, NOT alien biotech, NOT ITB grayboard
+- Direction concept sheet: one clear hero view + small state callouts if needed; NOT full turnaround PSD
+Reference images (match stroke weight, cel blocking, palette):
+- style-lock/01-kinetic-cel-storyframe-v23a.png
+- style-lock/11-tactics-user-accepted.png
+- style-lock/02-mech-hero.jpg
+
+King/brave lineage:
+- Match incoming/dir-M05-king-v4-locked.jpg for king parts/forms
+- Match incoming/dir-M04-brave-core-v11.jpg for brave combine forms
+
+ASSET ID F01 | key=king_light | template=form
+NAME: 完全版王者轻装本体
+PURPOSE: 卸装后仍是同一冠军
+DESIGN BRIEF: 拆下外装后头胸腰四肢仍完整；不能把轻装画成弱化丑版
+STATES to imply on sheet: 装甲连接位外露, 轻装站姿
+IDENTITY retain: 沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。拆下外装后头胸腰四肢仍完整；不能把轻装画成弱化丑版
+PROJECT DESIGN: 从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。
+AVOID: 合体、变形与拆卸不能凭空更换头胸或增减零件；不可从母体单张动作图猜背面。
+CONTEXT: M05：完全版王者是20米全装竞技冠军，自主机魂享受舞台、冠军和全装备，执意完成二十多年前未播的最终话。不是被装备压垮的笑话，也不是胶价王遥控的道具。它可以主动卸装，未来仍能再度全装。
+Output: single art-direction concept painting, clean readable silhouette, labeled states as small insets OK, no fake UI text walls, no photoreal materials.

@@ -1,0 +1,75 @@
+{
+  "assembled_context_sha256": "da12588d4fc0da2bf4f3d178cd928cbb2ab2d8c16edda3303a5726858d53f78d",
+  "bytes": 61056,
+  "chapter": "C02",
+  "chars": 26924,
+  "context_key": "da12588d4fc0da2bf4f3d178cd928cbb2ab2d8c16edda3303a5726858d53f78d",
+  "continuity_receipt_hashes": {},
+  "entry_receipt_hashes": {},
+  "episode": "C02E01",
+  "fragment_card_sha256": "48d13b66665231e11282a36e06f4ca816837496941448801718bcd200b010f25",
+  "fragment_id": "C02E01-F01",
+  "path": "docs/superpowers/specs/story-runtime/context-packs/C02-runtime-v2/episodes/C02E01-interaction-pilot/compiled/contexts/C02E01-F01-da12588d4fc0.md",
+  "prior_prose_tail_sha256": "44e8ea803c4199b9e73e70b26a75330db230f62f035690c06b7f664c3e7ed825",
+  "retrieval_corpus_hashes": {
+    "docs/superpowers/specs/story-runtime/generated/runtime_corpus.jsonl": "38b98d37aa3e787721306fb4aae515a9c6ecd3f8749fe419d90594f5efe438e4",
+    "docs/superpowers/specs/story-runtime/generated/support/support_runtime_corpus.jsonl": "c1733f67e8fa331008d733ed3269f8948b15f96c30570ee8c70c31e34bc3da5d"
+  },
+  "retrieval_trace": [
+    {
+      "explicit_seed": true,
+      "layer": "current_canon",
+      "node_key": "entity:MECHA_WANJI_MOBILE_CHASSIS",
+      "record_id": "MECHA_WANJI_MOBILE_CHASSIS",
+      "source": "docs/superpowers/specs/剧情梗概/V35-C01用户审定故事回迁与Canon收敛-2026-07-26.md",
+      "title": "万机馆巡展舰体"
+    },
+    {
+      "explicit_seed": true,
+      "layer": "current_canon",
+      "node_key": "entity:V353U043",
+      "record_id": "V353U043",
+      "source": "docs/superpowers/specs/data/canon/entities.tsv",
+      "title": "火种货柜领袖"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "current_canon",
+      "node_key": "scene:V359-C02E01-CREATIVE",
+      "record_id": "V359-C02E01-CREATIVE",
+      "source": "docs/superpowers/specs/data/canon/scenes.tsv",
+      "title": "救命零件，限定发售"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "candidate_support",
+      "node_key": "support:roster_lifecycle:V353U043",
+      "record_id": "V353U043",
+      "source": "docs/superpowers/specs/data/story/v35_series_roster_lifecycle_inventory_v1.tsv",
+      "title": "火种货柜领袖"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "current_canon",
+      "node_key": "scene:V355-C01E04",
+      "record_id": "V355-C01E04",
+      "source": "docs/superpowers/specs/剧情梗概/V35第四层逐章完整总纲/C01/C01-完整剧情总纲.md",
+      "title": "博物馆追上天空"
+    },
+    {
+      "explicit_seed": false,
+      "layer": "current_canon",
+      "node_key": "scene:V359-C02E04-CREATIVE",
+      "record_id": "V359-C02E04-CREATIVE",
+      "source": "docs/superpowers/specs/剧情梗概/V35-C02四话拓扑恢复与Current-Canon迁移-2026-07-26.md",
+      "title": "万机初开"
+    }
+  ],
+  "revision_note_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "schema_version": 1,
+  "stable_prefix_sha256": "c78cc37b82b57923b0762d0253c69e5f87acaed72ed38cdb99fb4d3c4556d1fa",
+  "target_output_chars": {
+    "max": 3800,
+    "min": 1800
+  }
+}

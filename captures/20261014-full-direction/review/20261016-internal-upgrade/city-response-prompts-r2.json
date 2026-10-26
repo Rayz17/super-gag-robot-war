@@ -1,0 +1,50 @@
+{
+  "mode": "built-in image_gen",
+  "current_prompts": [
+    "M09-curved-labor-surface-prompt-r2.txt",
+    "M10-engineering-transformer-prompt-r2.txt"
+  ],
+  "history_prompts": [
+    "M09-city-response-master-prompt-r1.txt",
+    "M09-wall-count-correction-prompt-r1b.txt",
+    "M10-city-response-master-prompt-r1.txt"
+  ],
+  "reference_roles": [
+    {
+      "id": "M09",
+      "file": "samples/M09-patrol-master-r1b.png",
+      "sha256": "bbaab892ffa3455f611af4e671992956de97d8e4da3c25b6cd72f3ad5ffa1b98",
+      "role": "本轮M09曲面修改的直接目标；用户肯定头部与配色的指定图"
+    },
+    {
+      "id": "M09",
+      "file": "refs/M09-city-response-original-20261023.jpg",
+      "sha256": "678242e27bce3dee57c83a1b8d68b9e94f4e2697457df322c9936c1870fdd977",
+      "role": "原有身份/部件参考；不以旧图覆盖用户新要求或当前故事"
+    },
+    {
+      "id": "M10",
+      "file": "refs/M10-city-response-original-20261023.jpg",
+      "sha256": "67c9e65b0153d34b6f96a3906faba8a7c0ec5d509b6f62ddb9dbde6284e136de",
+      "role": "原有身份/部件参考；不以旧图覆盖用户新要求或当前故事"
+    },
+    {
+      "file": "refs/M09-patlabor-official-20261023.png",
+      "sha256": "551774ad2881795901b4396ae1f7595c9f50e056b36fa565da7772da0e88f8aa",
+      "source": "https://patlabor.tokyo/mechanic/689/",
+      "role": "官方Patlabor外壳曲面与关节参考；不取原头、纹章或黑白涂装"
+    },
+    {
+      "file": "refs/M10-grapple-official-01-20261023.jpg",
+      "sha256": "047616a6a57e16c97d00eeae1f956c5ddc216c5fd90b76d554af981a73d7fcf2",
+      "source": "https://tf.takaratomy.co.jp/products-lineup/tf_mp/mp-35",
+      "role": "官方Grapple载具部件组织参考；不复制头脸、具体造型或商标"
+    },
+    {
+      "file": "samples/M06-front-r3.png",
+      "sha256": "222bff39fa66bcea24e60c0a5be8675158a78aa89587844d10cc99fbf49ffe7d",
+      "source": "M06-turnaround-design-fixed-20261023-r3.json",
+      "role": "已确定项目墨线/块面与成人比例参考，不复制机体身份"
+    }
+  ]
+}

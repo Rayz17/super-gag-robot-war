@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-18",
+  "mode": "built-in image_gen",
+  "user_directive": "黄色凹缝正面在中间，侧面偏到了两边，不对。",
+  "references": [
+    {
+      "file": "samples/M01-head-crest-consistency-r8.png",
+      "role": "right head identity and front crown authority"
+    },
+    {
+      "file": "refs/M01-crest-center-groove-three-quarter-r9.png",
+      "role": "same-model solid crest top recess projection"
+    }
+  ],
+  "method_change": "整张局部修图仍保留侧缝歧义，改成单独三分之四头部重绘，使用实际冠脊截面投影。正面沿用原稿，不要求生成器重画。",
+  "transparent_background": true,
+  "prompt": "Use case: precise-object-edit.\nInput 1 is the existing M01 head identity source. Input 2 is the actual 3D geometry guide for the CROWN ONLY. Draw ONLY ONE three-quarter head-and-upper-shoulder bust, facing viewer-left, matching the RIGHT bust of input 1. No front head, no comparison sheet.\n\nRepair the central crown now. REMOVE the old right-view crown representation, which looks like two separate curved white side blades with a yellow seam between them. Instead redraw the crown as ONE SOLID IVORY CREST with a narrow groove carved into the MIDDLE of its TOP FACE. Follow input 2's actual crest perspective: a visible top face contains the yellow recessed floor, white top shoulders border both sides of that floor, and a separate substantial exterior SIDE FACE stays COMPLETELY IVORY. The near white side face must form one broad uninterrupted surface from front to rear, beneath the top rim. It contains NO gold seam, stripe or yellow panel. The yellow groove must move INBOARD onto the top, away from the near outside wall. This spatial placement is the sole purpose of the repair; changing yellow taper or seams alone is insufficient.\n\nThe geometry guide is a single solid crest, not two independent antenna prongs. Give the stylized final crest that same readable solid cross-section and white sidewall thickness, while retaining the approved front-view design's central channel, tapered long gold slot, tiny separate lower gold rectangular inset and white forehead base. Keep the same crest size, rearward sweep and silhouette family as the original head; do not add horns. At the rear, the white banks and yellow channel are integrated into a single capped crest body rather than floating disconnected fingers. Natural perspective may hide part of the recessed gold floor behind the nearer white lip.\n\nPreserve the exact other features of the right head in input 1: swept-back straight temple antenna on the near ear, its circular hub, teal helmet plates, continuous amber visor, closed ivory face mask, teal cheeks, graphite neck, ivory/ochre collar and shoulder shells, athletic hero identity, KINETIC_CEL ink and hard-painted shading. No redesign of the face, ears or palette. Do not copy the guide's simple sphere, render texture, blocky silhouette, or lower forehead details; it supplies physical groove location only. Final is polished drawn concept art matching input 1.\nOne head only, same three-quarter angle, transparent background, generous margins around crest and side antenna. No text, arrows, numbers, diagram, third-party symbols, extra heads or insets."
+}

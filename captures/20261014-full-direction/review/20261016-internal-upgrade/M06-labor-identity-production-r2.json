@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-23",
+  "revision": "M06-labor-identity-r2",
+  "existing_batch": "design-followthrough-r1.json",
+  "reader": "M06-labor-identity-r2.html",
+  "status": "user_accepted_main_and_A_head_source",
+  "generation_mode": "built-in image_gen",
+  "items": [
+    {
+      "id": "M06",
+      "name": "预算二号救援机",
+      "canon_entity": "V353U032",
+      "file": "samples/M06-labor-identity-r2b.png",
+      "sha256": "3741b164b4ee558f65927cccfdfc2aff0efa7bba30c0458d6d6c56c7af078de0",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-b51555a0-e4ba-43a2-979d-d06f85bc58b6.png",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "user_accepted": true,
+      "runtime_integrated": false,
+      "role": "市政维修与应急供能；廉价旧件维持关键公共服务",
+      "source_refs": [
+        {
+          "file": "samples/M06-public-works-master-r1b.png",
+          "sha256": "7d2012da47e9585e08a6aeb184678ee892ccc94c8c07accfa02d2f77db3dbc46",
+          "role": "继承配色、替换腿侧别及成人厚实体态；旧头和通用铠甲不再作为本轮目标"
+        },
+        {
+          "file": "samples/M14-front-airframe-r6.png",
+          "sha256": "4464ffa6fc330864a8b5245c9515f1ed320ce938c1d0befc39c6882664f6d540",
+          "role": "仅取项目墨线与块面阴影，不取航空机体身份、比例或配色"
+        }
+      ],
+      "acceptance_scope": "采用预算二号R2整体方向与A作业盔头型：黄绿白职业机、双目/护颌、检修舱、防尘套、替换色左腿、救援夹具、卷盘和三制式供能背架。",
+      "selected_head": "A"
+    }
+  ],
+  "source_basis": [
+    {
+      "kind": "current_canon",
+      "file": "docs/superpowers/specs/data/canon/entities.tsv",
+      "row": "V353U032",
+      "use": "低费修复、撤离和补给，以廉价替代件完成高价值工程"
+    },
+    {
+      "kind": "project_ip_research",
+      "file": "docs/superpowers/specs/data/research/robot_ip_deep_dossier_pool_v1.tsv",
+      "row": "IPD016",
+      "use": "工务机动队投射Patlabor；城市劳动、维修、预算与公共空间"
+    },
+    {
+      "kind": "accepted_story",
+      "file": "docs/superpowers/specs/剧情梗概/V35.9/rebuild/reader/C03-章节连续阅读稿.md",
+      "anchor": "预算二号的背架连着三代不同的旧电路",
+      "use": "供能背架与转接能力有故事依据；具体卷盘、三种接口外形是本轮候选实现"
+    },
+    {
+      "kind": "official_ip",
+      "url": "https://patlabor.tokyo/",
+      "use": "Labor是进入各行业的通用人形作业机械"
+    },
+    {
+      "kind": "official_ip_mecha",
+      "url": "https://patlabor.tokyo/mechanic/689/",
+      "use": "官方说明二号机头部与维修替换件有关；借用零件历史塑造外形的方法，不投射或复制该单机身份"
+    },
+    {
+      "kind": "official_licensed_model",
+      "url": "https://www.goodsmile.com/ja/product/7467/MODEROID%2B%E3%83%96%E3%83%AB%E3%83%89%E3%83%83%E3%82%B0%E3%82%BB%E3%83%83%E3%83%88",
+      "use": "核实Bulldog作为作业Labor的产品说明；未成功取得照片，未作为已查看图片或图生输入"
+    }
+  ],
+  "user_feedback": "预算二号的ip投射是什么，这个头有点丑，然后机设上没有特色，有没有结合ip自身的特点来确定设计语言",
+  "interpretation": {
+    "confirmed": "工务机动队主要投射Patlabor；预算二号本身未指定等同某一台原作机体。",
+    "design_proposal": "市政维修老兵：作业护盔、可检修躯体、替换件与三代供能适配背架。"
+  },
+  "head_options": [
+    {
+      "id": "A",
+      "direction": "安全作业盔、分离双目和白色护颌；整机采用的研究方向",
+      "author_recommendation": true,
+      "user_accepted": true
+    },
+    {
+      "id": "B",
+      "direction": "焊接护罩方案；是否作为A的可动附件仍须设计确认",
+      "user_accepted": false
+    },
+    {
+      "id": "C",
+      "direction": "设备式救援传感头，提供更强机械感的备选",
+      "user_accepted": false
+    }
+  ],
+  "historical_attempt": {
+    "file": "samples/M06-labor-identity-attempt-r2.png",
+    "sha256": "9d3c21dd27f76ee9e05f48fa80400320befafec393e76c021105dcbb9fc2caeb",
+    "issue": "头部放大图通讯模块的物理侧别与主图不一致"
+  },
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "samples/M06-labor-identity-r2b.png"
+    ],
+    "record": "M06-labor-identity-author-review-r2.json",
+    "user_accepted": false,
+    "runtime_tested": false,
+    "subsequent_user_acceptance": "M06-design-fixed-20261023-r2.json"
+  },
+  "experience": {
+    "start": "玩家需要从外形读出预算二号是维修、撤离与供能职业机。",
+    "input": "以当前Canon、IP研究和已接受C03供能行动重新组织头部、检修躯体与背架。",
+    "visible_consequence": "护盔、胸部检修舱、双目、替换色小腿、救援夹具及卷盘/三制式接口形成具体识别点。",
+    "next": "沿已采用A头型与R2整机补同形正侧背，统一通讯侧别；实际工作动作和运行另验。"
+  },
+  "limits": [
+    "当前整机、A头型及背架外观已采用；B/C仅保留研究，头部透视侧别与机构在后续三视/制作中统一。",
+    "背架接三代旧电路的职责来自当前故事；未据此增加新技能、数值或剧情。",
+    "二维研究图不能证明受力、线缆收放、操纵舱空间或完整机构运动。"
+  ],
+  "unchanged_m07": {
+    "file": "samples/M07-public-works-master-r1b.png",
+    "sha256": "3cb453c3259e123d0c05a5b39d5cd5743e6dc84672cb99f4e8fc69c7b8d7d3fa"
+  },
+  "prompts": [
+    "M06-labor-identity-prompt-r2.txt",
+    "M06-labor-identity-correction-prompt-r2b.txt"
+  ],
+  "canon_changed": true,
+  "runtime_assets_modified": false,
+  "handoff_sent": false,
+  "source_acceptance_receipt": "M06-design-fixed-20261023-r2.json",
+  "source_design_user_accepted": true,
+  "authority_scope": "采用预算二号R2整体方向与A作业盔头型：黄绿白职业机、双目/护颌、检修舱、防尘套、替换色左腿、救援夹具、卷盘和三制式供能背架。",
+  "selected_head": "A"
+}

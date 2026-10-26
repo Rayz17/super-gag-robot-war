@@ -1,0 +1,120 @@
+{
+  "artifact": "GZ_CAMERA_V2_EAST_DIRECTIONAL_CORRECTION_EDIT",
+  "status": "DIRECTION_PASS_ALPHA_FAIL_STOPPED",
+  "candidate_gate": "FAIL_NO_RGBA_DELIVERY",
+  "scope": {
+    "lane": "Candidate exploration only",
+    "transparent_256_candidate_written": false,
+    "godot_integration": false,
+    "runtime_promotion": false,
+    "canon_promotion": false,
+    "producer_approval": false
+  },
+  "canon_and_camera": {
+    "CML008": "Hard current Guardian Z identity; C01E02 intact twin arms",
+    "CML128": "Working A-normal art direction",
+    "camera_contract": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+    "projection": "orthographic_dimetric",
+    "screen_east": [40, 24],
+    "footprint": [2, 2],
+    "target_canvas": [256, 256],
+    "target_pivot": [128, 224]
+  },
+  "imagegen_calls": {
+    "directional_correction_edits": 1,
+    "conditional_alpha_extractions": 1,
+    "rerolls": 0,
+    "known_a11_lineage_calls_before": 8,
+    "known_a11_lineage_calls_after": 10,
+    "further_calls_allowed": false
+  },
+  "directional_edit": {
+    "operation": "identity-preserving whole-body yaw reconstruction",
+    "inputs": [
+      {
+        "image_index": 1,
+        "role": "sole edit target; identity, structure, material, mass, E02 twin arms, and top-plane responsibility",
+        "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/gz-east-camera-v2-dimetric-master-candidate-v2/generation-raw/GZ_CAMERA_V2_EAST_CALL01_VISUAL_FAIL_NEAR_FRONT.png",
+        "sha256": "66f39d81e3f109b7401f8fbc6e7d7ccf9b9beeb06c64a8e0ef225b67ca8cded6"
+      },
+      {
+        "image_index": 2,
+        "role": "sole whole-body yaw, Camera V2, limb ordering, footprint, framing, and pivot responsibility",
+        "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/gz-east-camera-v2-dimetric-master-candidate-v2/source-guides/GZ_CAMERA_V2_EAST_GEOMETRY_GUIDE_1024_NOT_FINAL_ART.png",
+        "sha256": "5074047d28c710eacfda42b6dd709ebaa12bcbb4d502ef8e9e629a72927e9ffc"
+      }
+    ],
+    "output": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/gz-east-camera-v2-dimetric-master-candidate-v2/directional-correction-edit-call01/generation-raw/GZ_CAMERA_V2_EAST_DIRECTIONAL_EDIT_CALL01_RAW_ALPHA_FAIL.png",
+      "sha256": "24868a3483ccaf650af73da3b61887282cf9aa5530bc4f63b0450750f4e2315f",
+      "mode": "RGB",
+      "size": [1254, 1254],
+      "true_alpha": false,
+      "background": "baked checkerboard"
+    }
+  },
+  "visual_gate_128px": {
+    "status": "PASS_WITH_VISUAL_LANDMARK_TOLERANCE",
+    "landmark_method": "producer-facing visual center estimates on a 128x128 whole-canvas review; tolerance approximately plus or minus 2 px",
+    "shoulder_axis": {
+      "screen_left_center": [39, 36],
+      "screen_right_center": [82, 21],
+      "delta": [43, -15],
+      "abs_slope": 0.3488,
+      "right_shoulder_clearly_higher": true,
+      "status": "PASS"
+    },
+    "foot_axis": {
+      "screen_left_center": [54, 110],
+      "screen_right_center": [89, 95],
+      "delta": [35, -15],
+      "abs_slope": 0.4286,
+      "status": "PASS"
+    },
+    "face_and_chest_point_lower_right": true,
+    "whole_body_yaw_not_canvas_rotation": true,
+    "identity_preserved": true,
+    "e02_twin_arms_preserved": true,
+    "raised_top_planes_preserved": true,
+    "approximately_four_head_mass_preserved": true,
+    "wings_backpack_weapon_added": false
+  },
+  "conditional_alpha_extraction": {
+    "operation": "background-extraction",
+    "sole_edit_target": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/gz-east-camera-v2-dimetric-master-candidate-v2/directional-correction-edit-call01/generation-raw/GZ_CAMERA_V2_EAST_DIRECTIONAL_EDIT_CALL01_RAW_ALPHA_FAIL.png",
+    "output": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/gz-east-camera-v2-dimetric-master-candidate-v2/directional-correction-edit-call01/alpha-extraction/generation-raw/GZ_CAMERA_V2_EAST_DIRECTIONAL_EDIT_ALPHA_EXTRACTED_RAW_1254.png",
+      "sha256": "f38e0cdae870100c324919f98e629820e7f25704f9a956dda098d98b2a2dd5cb",
+      "mode": "RGB",
+      "size": [1254, 1254],
+      "true_alpha": false,
+      "background": "baked checkerboard",
+      "status": "FAIL"
+    },
+    "framing_comparison_rgb_lt235": {
+      "directional_edit_bbox": [258, 79, 979, 1177],
+      "extraction_output_bbox": [239, 55, 967, 1160],
+      "top_left_shift": [-19, -24],
+      "bbox_size_before": [721, 1098],
+      "bbox_size_after": [728, 1105],
+      "bbox_growth": [7, 7],
+      "pixel_exact": false
+    }
+  },
+  "qa_board": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/gz-east-camera-v2-dimetric-master-candidate-v2/directional-correction-edit-call01/qa/GZ_CAMERA_V2_EAST_DIRECTIONAL_EDIT_ALPHA_STOP_QA_2400x1400.png",
+    "sha256": "c955048b94d79043d0110468c18e5a5de9c31ca9549085adf1e703cdb57a026e",
+    "views": [
+      "directional_edit_raw_50_percent",
+      "directional_edit_128px_gate_enlarged_4x",
+      "alpha_extraction_output_50_percent"
+    ]
+  },
+  "stop_record": {
+    "reason": "The single permitted technical alpha extraction did not produce an alpha channel.",
+    "delivery_directory_intentionally_empty": true,
+    "deterministic_256_rgba_written": false,
+    "additional_imagegen": false,
+    "deterministic_chroma_salvage": false
+  }
+}

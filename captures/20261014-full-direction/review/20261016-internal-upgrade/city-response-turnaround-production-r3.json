@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-24",
+  "revision": "city-response-turnaround-r3",
+  "existing_batch": "design-followthrough-r1.json",
+  "generation_mode": "built-in image_gen",
+  "reader": "city-response-turnaround-r3.html",
+  "source_package": "city-response-turnaround-source-20261024-r3.zip",
+  "status": "six_source_views_delivered_after_parent_adoption",
+  "parent_acceptance_receipt": "city-response-design-fixed-20261023-r2.json",
+  "items": [
+    {
+      "id": "M09",
+      "name": "灰崎警备劳务机",
+      "canon_entity": "V353U033",
+      "parent": {
+        "file": "samples/M09-curved-labor-r2.png",
+        "sha256": "9355ad11dda42d079ab9a55a98ee39d904aedcb564ca88c1354ad4c170180288",
+        "user_accepted": true
+      },
+      "views": [
+        {
+          "id": "FRONT",
+          "label": "正面",
+          "file": "samples/M09-front-r3b.png",
+          "sha256": "1ab92d77eff86d6cddd6ddb8a9c49ad64de66296631a528e70b1dfb20dcecf65",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-e5d09cb0-f76f-4677-b172-1962fa13675b.png",
+          "user_accepted": false,
+          "runtime_integrated": false
+        },
+        {
+          "id": "SIDE",
+          "label": "侧面",
+          "file": "samples/M09-side-r3c.png",
+          "sha256": "ace0dbeffa0fb862d8b40e870dbd264d470916b56a638da379d582cd600ee10d",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-aef534a2-cb68-4975-ae21-308916dbcf9f.png",
+          "user_accepted": false,
+          "runtime_integrated": false
+        },
+        {
+          "id": "REAR",
+          "label": "背面",
+          "file": "samples/M09-rear-r3b.png",
+          "sha256": "716b5b49d76bb3a92f695d75e7734de3d2e99d4fe00d3ec75714383b7f5bedc0",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-202cf9b1-1991-4667-84c4-07a8d462cb36.png",
+          "user_accepted": false,
+          "runtime_integrated": false
+        }
+      ]
+    },
+    {
+      "id": "M10",
+      "name": "消防架桥机",
+      "canon_entity": "V353U034",
+      "parent": {
+        "file": "samples/M10-engineering-transformer-r2.png",
+        "sha256": "cd4b733daceee495c87182691608eb50f17d2284249a1e154f88645fa721c01d",
+        "user_accepted": true
+      },
+      "views": [
+        {
+          "id": "FRONT",
+          "label": "正面",
+          "file": "samples/M10-front-r3b.png",
+          "sha256": "154c008ba59e390815825ad54bbbcf1adc212ebb10f27d3c0f598b3b6c2ef38e",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-10b2f01d-14a1-4865-8e0d-8fa90e48a456.png",
+          "user_accepted": false,
+          "runtime_integrated": false
+        },
+        {
+          "id": "SIDE",
+          "label": "侧面",
+          "file": "samples/M10-side-r3b.png",
+          "sha256": "a309fea82d4e123a58bf7b1537184d0f1485d12c9bcc4e1c9d1330fe58d92515",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-628ea6ad-d4d3-4781-b683-a876a39a8c3f.png",
+          "user_accepted": false,
+          "runtime_integrated": false
+        },
+        {
+          "id": "REAR",
+          "label": "背面",
+          "file": "samples/M10-rear-r3.png",
+          "sha256": "756f99ba45c7321605fa6ae09d49b0eb4e3236658b024a024e19a14480fc464b",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-705584f1-b3af-431e-abd8-281c8b337b2c.png",
+          "user_accepted": false,
+          "runtime_integrated": false
+        }
+      ]
+    }
+  ],
+  "prompt_set": [
+    "city-response-turnaround-prompts-r3.json",
+    "city-response-front-corrections-r3b.json",
+    "city-response-derived-prompts-r3.json",
+    "city-response-view-corrections-r3.json"
+  ],
+  "author_review": "city-response-turnaround-author-review-r3.json",
+  "experience": {
+    "start": "两张R2整机已采用，三视必须延续现有头身与职业设备。",
+    "input": "分别绘制正面，再以修正正面和R2父源派生侧/背；局部修数量、侧别和后部结构。",
+    "visible_consequence": "两机各有完整独立正侧背；灰崎六墙、后膝和脚跟修正，消防两窗驾驶室/六轮/双桥包/双水罐可以前后对照。",
+    "next": "沿这六张源图与已定父源继续分件、模型及工作动作核对；当前新增图未代签用户认可。"
+  },
+  "historical_attempts": [
+    {
+      "id": "M09",
+      "files": [
+        "samples/M09-front-attempt-r3.png"
+      ],
+      "result": "背包初稿仅四个墙模块，改为三加二。"
+    },
+    {
+      "id": "M10",
+      "files": [
+        "samples/M10-front-attempt-r3.png"
+      ],
+      "result": "正窗与两侧水罐不符，局部统一两窗/右双罐左卷盘。"
+    },
+    {
+      "id": "M09",
+      "files": [
+        "samples/M09-side-attempt-r3.png",
+        "samples/M09-side-attempt-r3b.png",
+        "samples/M09-rear-attempt-r3.png"
+      ],
+      "result": "修正斜侧持墙/墙长、背包多画两墙与背面误用前膝脚尖。"
+    },
+    {
+      "id": "M10",
+      "files": [
+        "samples/M10-side-attempt-r3.png"
+      ],
+      "result": "侧稿脚部错开，局部收正侧向与脚轮廓。"
+    }
+  ],
+  "new_views_user_accepted": false,
+  "runtime_assets_modified": false,
+  "handoff_sent": false
+}

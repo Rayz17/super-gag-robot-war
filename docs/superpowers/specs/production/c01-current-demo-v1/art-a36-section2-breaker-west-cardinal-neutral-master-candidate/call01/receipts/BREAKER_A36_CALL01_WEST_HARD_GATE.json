@@ -1,0 +1,124 @@
+{
+  "schema_id": "BREAKER_A36_CALL01_WEST_CARDINAL_NEUTRAL_HARD_GATE_V1",
+  "raw": {
+    "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a36-section2-breaker-west-cardinal-neutral-master-candidate/call01/generation-raw/BREAKER_A36_CALL01_WEST_CARDINAL_NEUTRAL_HARD_GATE_FAIL_RAW.png",
+    "sha256": "622d59bc9c770148e75d3c78171728a907510ba42497854e8d5fdbd37977581e",
+    "size": [
+      1254,
+      1254
+    ],
+    "pixel_format": "rgb24",
+    "has_alpha": false
+  },
+  "geometry": {
+    "dark_subject_bbox_inclusive": [
+      22,
+      323,
+      1216,
+      920
+    ],
+    "dark_subject_centroid": [
+      588.407,
+      603.485
+    ],
+    "red_accent_centroid": [
+      171.247,
+      598.09
+    ],
+    "principal_axis_toward_red_degrees": -175.8097,
+    "centroid_to_red_degrees": -179.2591,
+    "camera_v2_west_target_degrees": -149.0362,
+    "principal_axis_delta_degrees": 26.7735,
+    "centroid_to_red_delta_degrees": 30.2228,
+    "hard_gate_tolerance_degrees": 10.0,
+    "west_axis_pass": false
+  },
+  "alpha": {
+    "true_alpha_pass": false,
+    "baked_checker_detected": true,
+    "top_background_quantized_colors": [
+      {
+        "rgb": [
+          256,
+          256,
+          256
+        ],
+        "count": 38114
+      },
+      {
+        "rgb": [
+          244,
+          244,
+          244
+        ],
+        "count": 36856
+      },
+      {
+        "rgb": [
+          248,
+          248,
+          248
+        ],
+        "count": 7375
+      },
+      {
+        "rgb": [
+          252,
+          252,
+          252
+        ],
+        "count": 5363
+      },
+      {
+        "rgb": [
+          256,
+          252,
+          256
+        ],
+        "count": 3220
+      },
+      {
+        "rgb": [
+          248,
+          244,
+          244
+        ],
+        "count": 2852
+      },
+      {
+        "rgb": [
+          248,
+          244,
+          248
+        ],
+        "count": 1153
+      },
+      {
+        "rgb": [
+          252,
+          252,
+          256
+        ],
+        "count": 783
+      }
+    ],
+    "deterministic_recoverability": "not_attempted_after_geometry_hard_fail"
+  },
+  "hard_gate": {
+    "identity_leaf_armor_low_body_four_limb_visual_read": "manual_review_required",
+    "west_polarity": "fail",
+    "alpha_or_safe_recoverability": "not_proven",
+    "overall": "FAIL_STOP",
+    "reason": "camera_v2_west_axis_not_met; true_alpha_absent"
+  },
+  "qa": {
+    "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a36-section2-breaker-west-cardinal-neutral-master-candidate/call01/qa/BREAKER_A36_CALL01_WEST_HARD_GATE_FAIL_QA.png",
+      "sha256": "0acf60be9c78ee6df868f6174d35e89b2e5778d63240eb2e3d106329789ec5f3",
+    "layout": [
+      "raw_hard_fail",
+      "fresh_west_geometry_guide",
+      "current_north_positive",
+      "empty_control_quadrant"
+    ]
+  }
+}

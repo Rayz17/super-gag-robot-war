@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-19",
+  "mode": "built-in image_gen",
+  "asset": "M01",
+  "use_case": "precise-object-edit",
+  "target": "samples/M01-turnaround-r12-draft-rear-wrong.png",
+  "author_detected_defects": [
+    "背视图头仍朝正面，出现视窗与面罩",
+    "背面小腿和鞋混入正面膝板、胫甲及脚趾"
+  ],
+  "scope": "仅改右侧背视，保留左正面和中侧面。",
+  "transparent_background": true,
+  "prompt": "Use case: precise-object-edit. Input 1 is a three-view sheet of ONE teal/ivory mecha. LEFT FRONT and CENTER SIDE are usable. RIGHT BACK contains WRONG FRONT-FACING HEAD, SHINS AND TOES. Correct ONLY that RIGHT BACK figure. Preserve the other two figures and all layout/scale.\n\nThe rightmost robot MUST face AWAY from the viewer, from skull through neck, torso, thighs, calves and feet. Its back torso already faces away; keep that back torso.\nBACK OF HEAD: erase the entire forehead, small forehead yellow rectangle, amber eye visor, closed white FACE MASK and cheek-face arrangement from the RIGHT figure. Show the REAR teal helmet shell, back edge of the white central crest, tiny paired gold side-groove endings only where exposed, simple rear service seam, dark nape and neck articulation. The approved crown has a WHITE CENTRAL SPINE and TWO side yellow channels; never a single center yellow groove. NO face, eyes, visor, mouth shield or forehead jewel is visible from behind. The two ear sensor housings and compact rear-pointing temple fins are seen from behind, correctly foreshortened. Keep head height, size, neck position and approved head identity; do not rotate ONLY the head back toward the viewer.\nBACK LEGS: remove front shin-kneecap plates and their front black rectangular vents from the rear view. Show the corresponding REAR calf shells with ivory outer armor, teal calf inserts, graphite back-knee hinge recesses and dark Achilles/ankle flexures. Do not duplicate the front knee/shin assembly on the reverse. Calf shape, leg lengths and lateral armor remain the same physical parts.\nBACK FEET: show HEEL COUNTERS and the rear edge of the sole. No teal toe caps or front instep armor facing the viewer. Toes point away and are hidden behind each heel. Heels have the existing ochre/ivory side blocks around a dark central Achilles/heel mechanism. Keep the same boot length and body stance.\nThe rear elbows, hands and forearm strike guards must also describe the back-facing arms. Do not put large front knuckle plates across rear palms just for decoration.\nLeave the back compact teal thorax, shoulder cap volumes, graphite waist/spine, hip guards, limb widths and palette intact. No added backpack, wings, weapons or new motifs.\n\nAll three remain full-body at one scale, same crown/knee/ankle/sole heights and placement. This is a targeted anatomical orientation repair, not a redesign. Preserve clean KINETIC_CEL, linework and colors. Preserve transparency; no gradient haze/halo, no checkerboard, floor, title, labels or extra panels."
+}

@@ -1,0 +1,203 @@
+{
+  "task_id": "A9_1A6_ENV_A7_CAMERA_V2_SIX_STRUCTURE_ASSET_PACK",
+  "status": "PASS_CANDIDATE_FOR_PRODUCER_SIX_STRUCTURE_REVIEW",
+  "camera_axes": [
+    [
+      40,
+      24
+    ],
+    [
+      -40,
+      24
+    ]
+  ],
+  "axis_angles_deg": [
+    30.9637565,
+    -30.9637565
+  ],
+  "imagegen_calls": 0,
+  "old_donor_pixels_used": false,
+  "structure_count": 6,
+  "foundation_byte_identical_count": 6,
+  "normal_restore_identical_count": 6,
+  "repetition_audit": {
+    "threshold": 0.82,
+    "pairwise": [
+      {
+        "a": "NW_BLOCK",
+        "b": "NM_BLOCK",
+        "normalized_alpha_iou": 0.72806,
+        "high_similarity": false
+      },
+      {
+        "a": "NW_BLOCK",
+        "b": "NE_BLOCK",
+        "normalized_alpha_iou": 0.75561,
+        "high_similarity": false
+      },
+      {
+        "a": "NW_BLOCK",
+        "b": "SW_BLOCK",
+        "normalized_alpha_iou": 0.56053,
+        "high_similarity": false
+      },
+      {
+        "a": "NW_BLOCK",
+        "b": "SE_BLOCK",
+        "normalized_alpha_iou": 0.75363,
+        "high_similarity": false
+      },
+      {
+        "a": "NW_BLOCK",
+        "b": "BROKEN_SKYWALK",
+        "normalized_alpha_iou": 0.44107,
+        "high_similarity": false
+      },
+      {
+        "a": "NM_BLOCK",
+        "b": "NE_BLOCK",
+        "normalized_alpha_iou": 0.70855,
+        "high_similarity": false
+      },
+      {
+        "a": "NM_BLOCK",
+        "b": "SW_BLOCK",
+        "normalized_alpha_iou": 0.53027,
+        "high_similarity": false
+      },
+      {
+        "a": "NM_BLOCK",
+        "b": "SE_BLOCK",
+        "normalized_alpha_iou": 0.65639,
+        "high_similarity": false
+      },
+      {
+        "a": "NM_BLOCK",
+        "b": "BROKEN_SKYWALK",
+        "normalized_alpha_iou": 0.3944,
+        "high_similarity": false
+      },
+      {
+        "a": "NE_BLOCK",
+        "b": "SW_BLOCK",
+        "normalized_alpha_iou": 0.66238,
+        "high_similarity": false
+      },
+      {
+        "a": "NE_BLOCK",
+        "b": "SE_BLOCK",
+        "normalized_alpha_iou": 0.72833,
+        "high_similarity": false
+      },
+      {
+        "a": "NE_BLOCK",
+        "b": "BROKEN_SKYWALK",
+        "normalized_alpha_iou": 0.49782,
+        "high_similarity": false
+      },
+      {
+        "a": "SW_BLOCK",
+        "b": "SE_BLOCK",
+        "normalized_alpha_iou": 0.53595,
+        "high_similarity": false
+      },
+      {
+        "a": "SW_BLOCK",
+        "b": "BROKEN_SKYWALK",
+        "normalized_alpha_iou": 0.75134,
+        "high_similarity": false
+      },
+      {
+        "a": "SE_BLOCK",
+        "b": "BROKEN_SKYWALK",
+        "normalized_alpha_iou": 0.40428,
+        "high_similarity": false
+      }
+    ],
+    "signatures": {
+      "NW_BLOCK": {
+        "role": "exhibition_maintenance_hall",
+        "silhouette_signature": "stepped_low_hall_offset_equipment_room_short_south_eave",
+        "alpha_bbox": [
+          30,
+          49,
+          412,
+          336
+        ],
+        "bbox_aspect": 1.33101,
+        "component_count": 1
+      },
+      "NM_BLOCK": {
+        "role": "office_security_annex",
+        "silhouette_signature": "low_office_bar_front_doorhouse_and_full_72px_corner_watch_tower",
+        "alpha_bbox": [
+          25,
+          53,
+          322,
+          234
+        ],
+        "bbox_aspect": 1.64088,
+        "component_count": 1
+      },
+      "NE_BLOCK": {
+        "role": "warehouse_transport_hall",
+        "silhouette_signature": "long_low_hall_continuous_roof_spine_wide_loading_face",
+        "alpha_bbox": [
+          30,
+          63,
+          411,
+          337
+        ],
+        "bbox_aspect": 1.39051,
+        "component_count": 1
+      },
+      "SW_BLOCK": {
+        "role": "segmented_service_corridor",
+        "silhouette_signature": "very_long_two_end_service_bars_recessed_connector_side_walkway",
+        "alpha_bbox": [
+          29,
+          51,
+          415,
+          318
+        ],
+        "bbox_aspect": 1.44569,
+        "component_count": 1
+      },
+      "SE_BLOCK": {
+        "role": "equipment_energy_station",
+        "silhouette_signature": "low_base_separated_88px_energy_peak_68px_plant_peak_front_heat_exchange_row",
+        "alpha_bbox": [
+          41,
+          22,
+          353,
+          309
+        ],
+        "bbox_aspect": 1.08711,
+        "component_count": 1
+      },
+      "BROKEN_SKYWALK": {
+        "role": "broken_low_skywalk",
+        "silhouette_signature": "two_bridgeheads_two_broken_tongues_clear_center_gap",
+        "alpha_bbox": [
+          25,
+          30,
+          335,
+          256
+        ],
+        "bbox_aspect": 1.37168,
+        "component_count": 2
+      }
+    },
+    "max_high_similarity_clique_size": 1,
+    "three_or_more_near_duplicate_cluster": false,
+    "machine_pass": true,
+    "boundary": "normalized alpha audit supports but does not replace producer 50-percent first-read review"
+  },
+  "three_or_more_first_read_near_duplicate": false,
+  "machine_pass": true,
+  "producer_visual_review": "PENDING",
+  "plan_released": false,
+  "runtime_released": false,
+  "visual_self_review": "CANDIDATE",
+  "task_stopped": false
+}

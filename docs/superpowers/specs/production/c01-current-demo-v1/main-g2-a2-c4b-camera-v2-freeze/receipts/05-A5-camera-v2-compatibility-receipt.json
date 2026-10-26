@@ -1,0 +1,1823 @@
+{
+	"schema_version": 1,
+	"task_id": "G2_A2_C4B_CAMERA_V2_EXACT_INTERFACE_FREEZE",
+	"camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+	"view_space": "map_dimetric_40x24",
+	"verdict": "V2_COMPATIBLE_FOR_PLAN",
+	"compatibility_status": "V2_COMPATIBLE_FOR_PLAN",
+	"redraw_required": false,
+	"full_t1_t5_real_art_compatible": false,
+	"gameplay_changed": false,
+	"atlas_path": "game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a5_rift_swarm/rift-swarm-idle-96.png",
+	"atlas_sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+	"pivot_px": [
+		48,
+		96
+	],
+	"display_scale": [
+		1,
+		1
+	],
+	"fixture_pivot_48_72_used": false,
+	"actual_sprite2d_atlastexture": true,
+	"exact_pivot_px": [
+		48,
+		96
+	],
+	"exact_display_scale": [
+		1,
+		1
+	],
+	"a5_existing_approved_compatibility_pixels_loaded": true,
+	"new_art_generated": false,
+	"runtime_real_art_loaded": 0,
+	"new_environment_guardian_z_breaker_art_loaded": 0,
+	"imagegen_used": false,
+	"a5_evidence_only": true,
+	"a5_runtime_bound": false,
+	"facing_rows": [
+		{
+			"subject_id": "ENEMY_C01_RIFT_SWARM_01",
+			"facing": "west",
+			"anchor": [
+				22.0,
+				7.0
+			],
+			"clip_rect": [
+				288.0,
+				0.0,
+				96.0,
+				96.0
+			],
+			"pivot_px": [
+				48.0,
+				96.0
+			],
+			"display_scale": [
+				1.0,
+				1.0
+			],
+			"footpoint_screen": [
+				840.0,
+				362.0
+			],
+			"sprite_top_left": [
+				792.0,
+				266.0
+			],
+			"alpha_bbox_frame_local": [
+				14,
+				50,
+				84,
+				96
+			],
+			"sprite_class": "Sprite2D",
+			"texture_class": "AtlasTexture",
+			"visible": true,
+			"atlas_texture_region_matches_clip_rect": true
+		},
+		{
+			"subject_id": "ENEMY_C01_RIFT_SWARM_02",
+			"facing": "north",
+			"anchor": [
+				26.0,
+				12.0
+			],
+			"clip_rect": [
+				0.0,
+				0.0,
+				96.0,
+				96.0
+			],
+			"pivot_px": [
+				48.0,
+				96.0
+			],
+			"display_scale": [
+				1.0,
+				1.0
+			],
+			"footpoint_screen": [
+				800.0,
+				578.0
+			],
+			"sprite_top_left": [
+				752.0,
+				482.0
+			],
+			"alpha_bbox_frame_local": [
+				12,
+				50,
+				82,
+				96
+			],
+			"sprite_class": "Sprite2D",
+			"texture_class": "AtlasTexture",
+			"visible": true,
+			"atlas_texture_region_matches_clip_rect": true
+		},
+		{
+			"subject_id": "ENEMY_C01_RIFT_SWARM_03",
+			"facing": "south",
+			"anchor": [
+				29.0,
+				5.0
+			],
+			"clip_rect": [
+				192.0,
+				0.0,
+				96.0,
+				96.0
+			],
+			"pivot_px": [
+				48.0,
+				96.0
+			],
+			"display_scale": [
+				1.0,
+				1.0
+			],
+			"footpoint_screen": [
+				1200.0,
+				482.0
+			],
+			"sprite_top_left": [
+				1152.0,
+				386.0
+			],
+			"alpha_bbox_frame_local": [
+				11,
+				52,
+				85,
+				96
+			],
+			"sprite_class": "Sprite2D",
+			"texture_class": "AtlasTexture",
+			"visible": true,
+			"atlas_texture_region_matches_clip_rect": true
+		}
+	],
+	"evidence_only_focus_reveal": {
+		"evidence_only": true,
+		"gameplay_write_calls": 0,
+		"owner_api": "ModularStructureOwner.set_occluder_alpha",
+		"target_object_id": "SE_BLOCK",
+		"normal_alpha": 1.0,
+		"reveal_alpha": 0.340000003576279,
+		"restored_alpha": 1.0,
+		"foundation_visible_before": true,
+		"foundation_visible_reveal": true,
+		"foundation_visible_after": true,
+		"foundation_alpha_before": 1.0,
+		"foundation_alpha_reveal": 1.0,
+		"foundation_alpha_after": 1.0,
+		"actor_signature_before": {
+			"V353U001": {
+				"actor_instance_id": 41724937814,
+				"sprite_instance_id": 41741715031,
+				"atlas_texture_instance_id": -9223371995985476047,
+				"resource_sha256": "12196a8b5e66c5b8ebd891ae232361238ce08d3ec56d13a72e216eed4db73988",
+				"anchor": [
+					15.0,
+					11.0
+				],
+				"footprint": [
+					2.0,
+					2.0
+				],
+				"pivot_px": [
+					128.0,
+					224.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					400.0,
+					338.0
+				],
+				"sprite_top_left": [
+					272.0,
+					114.0
+				],
+				"atlas_texture_region": [
+					0.0,
+					0.0,
+					256.0,
+					256.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			},
+			"ENEMY_C01_BREAKER": {
+				"actor_instance_id": 41775269465,
+				"sprite_instance_id": 41792046682,
+				"atlas_texture_instance_id": -9223371995767372229,
+				"resource_sha256": "debdafd803f9f5c68420726e3b9abf29ab4a2608eecb6a61833fce4fc3407391",
+				"anchor": [
+					20.0,
+					13.0
+				],
+				"footprint": [
+					3.0,
+					3.0
+				],
+				"pivot_px": [
+					192.0,
+					320.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					520.0,
+					554.0
+				],
+				"sprite_top_left": [
+					328.0,
+					234.0
+				],
+				"atlas_texture_region": [
+					0.0,
+					0.0,
+					384.0,
+					384.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			},
+			"TARGET_C01_EMERGENCY_VEHICLE_01": {
+				"actor_instance_id": 41825601116,
+				"sprite_instance_id": 41842378333,
+				"atlas_texture_instance_id": -9223371995599600062,
+				"resource_sha256": "315db68cdde10d4ac1ba049d393d785c3a401b7e02f4160864aeb39373e342d6",
+				"anchor": [
+					17.0,
+					10.0
+				],
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"pivot_px": [
+					64.0,
+					96.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					520.0,
+					314.0
+				],
+				"sprite_top_left": [
+					456.0,
+					218.0
+				],
+				"atlas_texture_region": [
+					0.0,
+					0.0,
+					128.0,
+					128.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			},
+			"ENEMY_C01_RIFT_SWARM_01": {
+				"actor_instance_id": 41875932767,
+				"sprite_instance_id": 41892709984,
+				"atlas_texture_instance_id": -9223371995415050678,
+				"resource_sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+				"anchor": [
+					22.0,
+					7.0
+				],
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"pivot_px": [
+					48.0,
+					96.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					840.0,
+					362.0
+				],
+				"sprite_top_left": [
+					792.0,
+					266.0
+				],
+				"atlas_texture_region": [
+					288.0,
+					0.0,
+					96.0,
+					96.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			},
+			"ENEMY_C01_RIFT_SWARM_02": {
+				"actor_instance_id": 41926264418,
+				"sprite_instance_id": 41943041635,
+				"atlas_texture_instance_id": -9223371995465382329,
+				"resource_sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+				"anchor": [
+					26.0,
+					12.0
+				],
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"pivot_px": [
+					48.0,
+					96.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					800.0,
+					578.0
+				],
+				"sprite_top_left": [
+					752.0,
+					482.0
+				],
+				"atlas_texture_region": [
+					0.0,
+					0.0,
+					96.0,
+					96.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			},
+			"ENEMY_C01_RIFT_SWARM_03": {
+				"actor_instance_id": 41976596069,
+				"sprite_instance_id": 41993373286,
+				"atlas_texture_instance_id": -9223371995431827895,
+				"resource_sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+				"anchor": [
+					29.0,
+					5.0
+				],
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"pivot_px": [
+					48.0,
+					96.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					1200.0,
+					482.0
+				],
+				"sprite_top_left": [
+					1152.0,
+					386.0
+				],
+				"atlas_texture_region": [
+					192.0,
+					0.0,
+					96.0,
+					96.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			}
+		},
+		"actor_signature_reveal": {
+			"V353U001": {
+				"actor_instance_id": 41724937814,
+				"sprite_instance_id": 41741715031,
+				"atlas_texture_instance_id": -9223371995985476047,
+				"resource_sha256": "12196a8b5e66c5b8ebd891ae232361238ce08d3ec56d13a72e216eed4db73988",
+				"anchor": [
+					15.0,
+					11.0
+				],
+				"footprint": [
+					2.0,
+					2.0
+				],
+				"pivot_px": [
+					128.0,
+					224.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					400.0,
+					338.0
+				],
+				"sprite_top_left": [
+					272.0,
+					114.0
+				],
+				"atlas_texture_region": [
+					0.0,
+					0.0,
+					256.0,
+					256.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			},
+			"ENEMY_C01_BREAKER": {
+				"actor_instance_id": 41775269465,
+				"sprite_instance_id": 41792046682,
+				"atlas_texture_instance_id": -9223371995767372229,
+				"resource_sha256": "debdafd803f9f5c68420726e3b9abf29ab4a2608eecb6a61833fce4fc3407391",
+				"anchor": [
+					20.0,
+					13.0
+				],
+				"footprint": [
+					3.0,
+					3.0
+				],
+				"pivot_px": [
+					192.0,
+					320.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					520.0,
+					554.0
+				],
+				"sprite_top_left": [
+					328.0,
+					234.0
+				],
+				"atlas_texture_region": [
+					0.0,
+					0.0,
+					384.0,
+					384.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			},
+			"TARGET_C01_EMERGENCY_VEHICLE_01": {
+				"actor_instance_id": 41825601116,
+				"sprite_instance_id": 41842378333,
+				"atlas_texture_instance_id": -9223371995599600062,
+				"resource_sha256": "315db68cdde10d4ac1ba049d393d785c3a401b7e02f4160864aeb39373e342d6",
+				"anchor": [
+					17.0,
+					10.0
+				],
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"pivot_px": [
+					64.0,
+					96.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					520.0,
+					314.0
+				],
+				"sprite_top_left": [
+					456.0,
+					218.0
+				],
+				"atlas_texture_region": [
+					0.0,
+					0.0,
+					128.0,
+					128.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			},
+			"ENEMY_C01_RIFT_SWARM_01": {
+				"actor_instance_id": 41875932767,
+				"sprite_instance_id": 41892709984,
+				"atlas_texture_instance_id": -9223371995415050678,
+				"resource_sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+				"anchor": [
+					22.0,
+					7.0
+				],
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"pivot_px": [
+					48.0,
+					96.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					840.0,
+					362.0
+				],
+				"sprite_top_left": [
+					792.0,
+					266.0
+				],
+				"atlas_texture_region": [
+					288.0,
+					0.0,
+					96.0,
+					96.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			},
+			"ENEMY_C01_RIFT_SWARM_02": {
+				"actor_instance_id": 41926264418,
+				"sprite_instance_id": 41943041635,
+				"atlas_texture_instance_id": -9223371995465382329,
+				"resource_sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+				"anchor": [
+					26.0,
+					12.0
+				],
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"pivot_px": [
+					48.0,
+					96.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					800.0,
+					578.0
+				],
+				"sprite_top_left": [
+					752.0,
+					482.0
+				],
+				"atlas_texture_region": [
+					0.0,
+					0.0,
+					96.0,
+					96.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			},
+			"ENEMY_C01_RIFT_SWARM_03": {
+				"actor_instance_id": 41976596069,
+				"sprite_instance_id": 41993373286,
+				"atlas_texture_instance_id": -9223371995431827895,
+				"resource_sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+				"anchor": [
+					29.0,
+					5.0
+				],
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"pivot_px": [
+					48.0,
+					96.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					1200.0,
+					482.0
+				],
+				"sprite_top_left": [
+					1152.0,
+					386.0
+				],
+				"atlas_texture_region": [
+					192.0,
+					0.0,
+					96.0,
+					96.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			}
+		},
+		"actor_signature_after": {
+			"V353U001": {
+				"actor_instance_id": 41724937814,
+				"sprite_instance_id": 41741715031,
+				"atlas_texture_instance_id": -9223371995985476047,
+				"resource_sha256": "12196a8b5e66c5b8ebd891ae232361238ce08d3ec56d13a72e216eed4db73988",
+				"anchor": [
+					15.0,
+					11.0
+				],
+				"footprint": [
+					2.0,
+					2.0
+				],
+				"pivot_px": [
+					128.0,
+					224.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					400.0,
+					338.0
+				],
+				"sprite_top_left": [
+					272.0,
+					114.0
+				],
+				"atlas_texture_region": [
+					0.0,
+					0.0,
+					256.0,
+					256.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			},
+			"ENEMY_C01_BREAKER": {
+				"actor_instance_id": 41775269465,
+				"sprite_instance_id": 41792046682,
+				"atlas_texture_instance_id": -9223371995767372229,
+				"resource_sha256": "debdafd803f9f5c68420726e3b9abf29ab4a2608eecb6a61833fce4fc3407391",
+				"anchor": [
+					20.0,
+					13.0
+				],
+				"footprint": [
+					3.0,
+					3.0
+				],
+				"pivot_px": [
+					192.0,
+					320.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					520.0,
+					554.0
+				],
+				"sprite_top_left": [
+					328.0,
+					234.0
+				],
+				"atlas_texture_region": [
+					0.0,
+					0.0,
+					384.0,
+					384.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			},
+			"TARGET_C01_EMERGENCY_VEHICLE_01": {
+				"actor_instance_id": 41825601116,
+				"sprite_instance_id": 41842378333,
+				"atlas_texture_instance_id": -9223371995599600062,
+				"resource_sha256": "315db68cdde10d4ac1ba049d393d785c3a401b7e02f4160864aeb39373e342d6",
+				"anchor": [
+					17.0,
+					10.0
+				],
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"pivot_px": [
+					64.0,
+					96.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					520.0,
+					314.0
+				],
+				"sprite_top_left": [
+					456.0,
+					218.0
+				],
+				"atlas_texture_region": [
+					0.0,
+					0.0,
+					128.0,
+					128.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			},
+			"ENEMY_C01_RIFT_SWARM_01": {
+				"actor_instance_id": 41875932767,
+				"sprite_instance_id": 41892709984,
+				"atlas_texture_instance_id": -9223371995415050678,
+				"resource_sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+				"anchor": [
+					22.0,
+					7.0
+				],
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"pivot_px": [
+					48.0,
+					96.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					840.0,
+					362.0
+				],
+				"sprite_top_left": [
+					792.0,
+					266.0
+				],
+				"atlas_texture_region": [
+					288.0,
+					0.0,
+					96.0,
+					96.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			},
+			"ENEMY_C01_RIFT_SWARM_02": {
+				"actor_instance_id": 41926264418,
+				"sprite_instance_id": 41943041635,
+				"atlas_texture_instance_id": -9223371995465382329,
+				"resource_sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+				"anchor": [
+					26.0,
+					12.0
+				],
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"pivot_px": [
+					48.0,
+					96.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					800.0,
+					578.0
+				],
+				"sprite_top_left": [
+					752.0,
+					482.0
+				],
+				"atlas_texture_region": [
+					0.0,
+					0.0,
+					96.0,
+					96.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			},
+			"ENEMY_C01_RIFT_SWARM_03": {
+				"actor_instance_id": 41976596069,
+				"sprite_instance_id": 41993373286,
+				"atlas_texture_instance_id": -9223371995431827895,
+				"resource_sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+				"anchor": [
+					29.0,
+					5.0
+				],
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"pivot_px": [
+					48.0,
+					96.0
+				],
+				"display_scale": [
+					1.0,
+					1.0
+				],
+				"footpoint_screen": [
+					1200.0,
+					482.0
+				],
+				"sprite_top_left": [
+					1152.0,
+					386.0
+				],
+				"atlas_texture_region": [
+					192.0,
+					0.0,
+					96.0,
+					96.0
+				],
+				"modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"self_modulate": [
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				],
+				"visible": true
+			}
+		},
+		"actor_anchor_pivot_scale_unchanged": true,
+		"normal_buffer_rgba_sha256": "cf3166f5650545de8f5f05bd8f4a66fbd827d0c1adfa55ba0ec5df5e060b9dba",
+		"reveal_buffer_rgba_sha256": "b090006578a3ce67d20817c4434c66809c9d495812ed6d14a5ec117f615b53e2",
+		"normal_and_reveal_buffers_differ": true,
+		"north_crop_changed_pixels": 11824,
+		"north_crop_actual_pixel_gate": true,
+		"restored": true,
+		"valid": true
+	},
+	"local_crop_frames": [
+		{
+			"file_name": "05_A5_WEST_100P.png",
+			"path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c4b-camera-v2-freeze/captures/05_A5_WEST_100P.png",
+			"sha256": "4cfc1e099d2cdaf7e419d21cdfd26d3ebe6209f03e25be9950251cb4dbd1074a",
+			"width": 160,
+			"height": 160,
+			"scale_percent": 100,
+			"frame_kind": "a5_100_percent_crop",
+			"category": "a5_100_percent_crop",
+			"capture_scale": 1.0,
+			"nonheadless": true,
+			"subject_id": "ENEMY_C01_RIFT_SWARM_01",
+			"facing": "west",
+			"clip_key": "idle/west/0",
+			"source_full_frame": "01_A_PLAN.png",
+			"source_full_frame_sha256": "ea378a914a36a86ef4f0ebf9a8778844c09e677ce96c05470fef1e4adf9571ff",
+			"pixel_source": "same A_PLAN Scene with evidence-only SE_BLOCK focus reveal",
+			"normal_buffer_rgba_sha256": "cf3166f5650545de8f5f05bd8f4a66fbd827d0c1adfa55ba0ec5df5e060b9dba",
+			"reveal_buffer_rgba_sha256": "b090006578a3ce67d20817c4434c66809c9d495812ed6d14a5ec117f615b53e2",
+			"normal_to_reveal_changed_pixels": 0,
+			"source_crop_rect": [
+				760,
+				234,
+				160,
+				160
+			],
+			"sprite_instance_id": 41892709984,
+			"atlas_texture_instance_id": -9223371995415050678,
+			"atlas_texture_region": [
+				288.0,
+				0.0,
+				96.0,
+				96.0
+			],
+			"resource_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a5_rift_swarm/rift-swarm-idle-96.png",
+			"resource_sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+			"pivot_px": [
+				48.0,
+				96.0
+			],
+			"display_scale": [
+				1.0,
+				1.0
+			],
+			"ground_anchor": [
+				22.0,
+				7.0
+			],
+			"footpoint_screen": [
+				840.0,
+				362.0
+			],
+			"sprite_top_left": [
+				792.0,
+				266.0
+			],
+			"sprite_rect_within_crop": [
+				32,
+				32,
+				96,
+				96
+			],
+			"footpoint_within_crop": [
+				80.0,
+				128.0
+			]
+		},
+		{
+			"file_name": "06_A5_NORTH_100P.png",
+			"path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c4b-camera-v2-freeze/captures/06_A5_NORTH_100P.png",
+			"sha256": "99f13a7863cf3767070d1a73b709ad02249119b9fea3cea7b888b6c059baf5f0",
+			"width": 160,
+			"height": 160,
+			"scale_percent": 100,
+			"frame_kind": "a5_100_percent_crop",
+			"category": "a5_100_percent_crop",
+			"capture_scale": 1.0,
+			"nonheadless": true,
+			"subject_id": "ENEMY_C01_RIFT_SWARM_02",
+			"facing": "north",
+			"clip_key": "idle/north/0",
+			"source_full_frame": "01_A_PLAN.png",
+			"source_full_frame_sha256": "ea378a914a36a86ef4f0ebf9a8778844c09e677ce96c05470fef1e4adf9571ff",
+			"pixel_source": "same A_PLAN Scene with evidence-only SE_BLOCK focus reveal",
+			"normal_buffer_rgba_sha256": "cf3166f5650545de8f5f05bd8f4a66fbd827d0c1adfa55ba0ec5df5e060b9dba",
+			"reveal_buffer_rgba_sha256": "b090006578a3ce67d20817c4434c66809c9d495812ed6d14a5ec117f615b53e2",
+			"normal_to_reveal_changed_pixels": 11824,
+			"source_crop_rect": [
+				720,
+				450,
+				160,
+				160
+			],
+			"sprite_instance_id": 41943041635,
+			"atlas_texture_instance_id": -9223371995465382329,
+			"atlas_texture_region": [
+				0.0,
+				0.0,
+				96.0,
+				96.0
+			],
+			"resource_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a5_rift_swarm/rift-swarm-idle-96.png",
+			"resource_sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+			"pivot_px": [
+				48.0,
+				96.0
+			],
+			"display_scale": [
+				1.0,
+				1.0
+			],
+			"ground_anchor": [
+				26.0,
+				12.0
+			],
+			"footpoint_screen": [
+				800.0,
+				578.0
+			],
+			"sprite_top_left": [
+				752.0,
+				482.0
+			],
+			"sprite_rect_within_crop": [
+				32,
+				32,
+				96,
+				96
+			],
+			"footpoint_within_crop": [
+				80.0,
+				128.0
+			]
+		},
+		{
+			"file_name": "07_A5_SOUTH_100P.png",
+			"path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c4b-camera-v2-freeze/captures/07_A5_SOUTH_100P.png",
+			"sha256": "4948c8f84636be9845828a2b4456857e65226c01c8d1361d7823931b76b096b0",
+			"width": 160,
+			"height": 160,
+			"scale_percent": 100,
+			"frame_kind": "a5_100_percent_crop",
+			"category": "a5_100_percent_crop",
+			"capture_scale": 1.0,
+			"nonheadless": true,
+			"subject_id": "ENEMY_C01_RIFT_SWARM_03",
+			"facing": "south",
+			"clip_key": "idle/south/0",
+			"source_full_frame": "01_A_PLAN.png",
+			"source_full_frame_sha256": "ea378a914a36a86ef4f0ebf9a8778844c09e677ce96c05470fef1e4adf9571ff",
+			"pixel_source": "same A_PLAN Scene with evidence-only SE_BLOCK focus reveal",
+			"normal_buffer_rgba_sha256": "cf3166f5650545de8f5f05bd8f4a66fbd827d0c1adfa55ba0ec5df5e060b9dba",
+			"reveal_buffer_rgba_sha256": "b090006578a3ce67d20817c4434c66809c9d495812ed6d14a5ec117f615b53e2",
+			"normal_to_reveal_changed_pixels": 0,
+			"source_crop_rect": [
+				1120,
+				354,
+				160,
+				160
+			],
+			"sprite_instance_id": 41993373286,
+			"atlas_texture_instance_id": -9223371995431827895,
+			"atlas_texture_region": [
+				192.0,
+				0.0,
+				96.0,
+				96.0
+			],
+			"resource_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a5_rift_swarm/rift-swarm-idle-96.png",
+			"resource_sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+			"pivot_px": [
+				48.0,
+				96.0
+			],
+			"display_scale": [
+				1.0,
+				1.0
+			],
+			"ground_anchor": [
+				29.0,
+				5.0
+			],
+			"footpoint_screen": [
+				1200.0,
+				482.0
+			],
+			"sprite_top_left": [
+				1152.0,
+				386.0
+			],
+			"sprite_rect_within_crop": [
+				32,
+				32,
+				96,
+				96
+			],
+			"footpoint_within_crop": [
+				80.0,
+				128.0
+			]
+		}
+	],
+	"local_crop_frame_count": 3,
+	"map_50_percent_frame": {
+		"file_name": "08_A5_PLAN_MAP_50P.png",
+		"path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c4b-camera-v2-freeze/captures/08_A5_PLAN_MAP_50P.png",
+		"sha256": "b7c12ca965da465b1cb181bae20a65d59973110aa4b01d4ba515cf678dfbd081",
+		"width": 640,
+		"height": 360,
+		"scale_percent": 50,
+		"frame_kind": "a5_50_percent_map",
+		"category": "a5_50_percent_map",
+		"capture_scale": 0.5,
+		"nonheadless": true,
+		"source_full_frame": "01_A_PLAN.png",
+		"source_full_frame_sha256": "ea378a914a36a86ef4f0ebf9a8778844c09e677ce96c05470fef1e4adf9571ff",
+		"subject_ids": [
+			"ENEMY_C01_RIFT_SWARM_01",
+			"ENEMY_C01_RIFT_SWARM_02",
+			"ENEMY_C01_RIFT_SWARM_03"
+		],
+		"facing_order": [
+			"west",
+			"north",
+			"south"
+		],
+		"pixel_source": "same A_PLAN Scene with evidence-only SE_BLOCK focus reveal",
+		"normal_buffer_rgba_sha256": "cf3166f5650545de8f5f05bd8f4a66fbd827d0c1adfa55ba0ec5df5e060b9dba",
+		"reveal_buffer_rgba_sha256": "b090006578a3ce67d20817c4434c66809c9d495812ed6d14a5ec117f615b53e2"
+	},
+	"scene_actor_receipt": {
+		"ENEMY_C01_RIFT_SWARM_01": {
+			"subject_id": "ENEMY_C01_RIFT_SWARM_01",
+			"base_stable_id": "ENEMY_C01_RIFT_SWARM",
+			"visible": true,
+			"actor_instance_id": 41875932767,
+			"sprite_instance_id": 41892709984,
+			"shadow_instance_id": 41909487201,
+			"sprite_class": "Sprite2D",
+			"texture_class": "AtlasTexture",
+			"atlas_texture_instance_id": -9223371995415050678,
+			"source_texture_instance_id": -9223371995482159546,
+			"resource_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a5_rift_swarm/rift-swarm-idle-96.png",
+			"resource_sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+			"slot_id": "rift_swarm_a5_existing_approved_plan_camera_v2",
+			"clip_key": "idle/west/0",
+			"rect": [
+				288.0,
+				0.0,
+				96.0,
+				96.0
+			],
+			"atlas_texture_region": [
+				288.0,
+				0.0,
+				96.0,
+				96.0
+			],
+			"pivot_px": [
+				48.0,
+				96.0
+			],
+			"display_scale": [
+				1.0,
+				1.0
+			],
+			"ground_anchor": [
+				22.0,
+				7.0
+			],
+			"source_footprint": [
+				1.0,
+				1.0
+			],
+			"schema_footprint": [
+				1.0,
+				1.0
+			],
+			"footprint": [
+				1.0,
+				1.0
+			],
+			"source_footprint_matches_schema": true,
+			"footpoint_screen": [
+				840.0,
+				362.0
+			],
+			"sprite_top_left": [
+				792.0,
+				266.0
+			],
+			"footpoint_reconstructed": [
+				840.0,
+				362.0
+			],
+			"footpoint_error_px": 0.0,
+			"registration_point": "footprint_bottom_center",
+			"z_bias": 0,
+			"z_sort": 362,
+			"z_as_relative": false,
+			"z_formula": "footpoint_screen_y + z_bias",
+			"shadow_visible": true,
+			"shadow_z": 361,
+			"shadow_owner": "engine_independent_ground_shadow_layer",
+			"sockets_local_from_footpoint": {
+				"body": [
+					0.0,
+					-28.0
+				],
+				"shield": [
+					-16.0,
+					-24.0
+				],
+				"weapon": [
+					17.0,
+					-27.0
+				],
+				"impact": [
+					0.0,
+					-32.0
+				],
+				"target": [
+					0.0,
+					-32.0
+				]
+			},
+			"sockets_screen": {
+				"body": [
+					840.0,
+					334.0
+				],
+				"shield": [
+					824.0,
+					338.0
+				],
+				"weapon": [
+					857.0,
+					335.0
+				],
+				"impact": [
+					840.0,
+					330.0
+				],
+				"target": [
+					840.0,
+					330.0
+				]
+			},
+			"state": "active",
+			"facing": "west",
+			"state_source": "session.round_snapshot",
+			"anchor_source": "session.round_snapshot",
+			"presentation_source": "session.round_snapshot",
+			"public_state_evidence": {
+				"entity_anchor": [
+					22.0,
+					7.0
+				],
+				"entity_footprint": [
+					1.0,
+					1.0
+				],
+				"entity_status": "active",
+				"entity_airborne_present": false,
+				"entity_airborne": false,
+				"entity_display_anchor_present": false,
+				"entity_blocks_route_present": false,
+				"entity_blocks_route": false,
+				"resolver_default_semantics": "absent blocks_route means false; absent airborne/display_anchor means the sole entity anchor is ground truth"
+			},
+			"a5_existing_approved_plan_pixels": true,
+			"binding_role": "A5_FORMAL_PLAN_SLOT",
+			"formal_camera_v2_slot_pivot_px": [
+				48.0,
+				96.0
+			],
+			"active_proxy_pivot_px": [
+				48.0,
+				96.0
+			],
+			"contact_proxy_fixture_binding_used": false,
+			"camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+			"view_space": "map_dimetric_40x24",
+			"texture_filter": "nearest",
+			"mipmap": false,
+			"material_is_null": true,
+			"modulate": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"self_modulate": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		"ENEMY_C01_RIFT_SWARM_02": {
+			"subject_id": "ENEMY_C01_RIFT_SWARM_02",
+			"base_stable_id": "ENEMY_C01_RIFT_SWARM",
+			"visible": true,
+			"actor_instance_id": 41926264418,
+			"sprite_instance_id": 41943041635,
+			"shadow_instance_id": 41959818852,
+			"sprite_class": "Sprite2D",
+			"texture_class": "AtlasTexture",
+			"atlas_texture_instance_id": -9223371995465382329,
+			"source_texture_instance_id": -9223371995482159546,
+			"resource_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a5_rift_swarm/rift-swarm-idle-96.png",
+			"resource_sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+			"slot_id": "rift_swarm_a5_existing_approved_plan_camera_v2",
+			"clip_key": "idle/north/0",
+			"rect": [
+				0.0,
+				0.0,
+				96.0,
+				96.0
+			],
+			"atlas_texture_region": [
+				0.0,
+				0.0,
+				96.0,
+				96.0
+			],
+			"pivot_px": [
+				48.0,
+				96.0
+			],
+			"display_scale": [
+				1.0,
+				1.0
+			],
+			"ground_anchor": [
+				26.0,
+				12.0
+			],
+			"source_footprint": [
+				1.0,
+				1.0
+			],
+			"schema_footprint": [
+				1.0,
+				1.0
+			],
+			"footprint": [
+				1.0,
+				1.0
+			],
+			"source_footprint_matches_schema": true,
+			"footpoint_screen": [
+				800.0,
+				578.0
+			],
+			"sprite_top_left": [
+				752.0,
+				482.0
+			],
+			"footpoint_reconstructed": [
+				800.0,
+				578.0
+			],
+			"footpoint_error_px": 0.0,
+			"registration_point": "footprint_bottom_center",
+			"z_bias": 0,
+			"z_sort": 578,
+			"z_as_relative": false,
+			"z_formula": "footpoint_screen_y + z_bias",
+			"shadow_visible": true,
+			"shadow_z": 577,
+			"shadow_owner": "engine_independent_ground_shadow_layer",
+			"sockets_local_from_footpoint": {
+				"body": [
+					0.0,
+					-28.0
+				],
+				"shield": [
+					-16.0,
+					-24.0
+				],
+				"weapon": [
+					17.0,
+					-27.0
+				],
+				"impact": [
+					0.0,
+					-32.0
+				],
+				"target": [
+					0.0,
+					-32.0
+				]
+			},
+			"sockets_screen": {
+				"body": [
+					800.0,
+					550.0
+				],
+				"shield": [
+					784.0,
+					554.0
+				],
+				"weapon": [
+					817.0,
+					551.0
+				],
+				"impact": [
+					800.0,
+					546.0
+				],
+				"target": [
+					800.0,
+					546.0
+				]
+			},
+			"state": "active",
+			"facing": "north",
+			"state_source": "session.round_snapshot",
+			"anchor_source": "session.round_snapshot",
+			"presentation_source": "session.round_snapshot",
+			"public_state_evidence": {
+				"entity_anchor": [
+					26.0,
+					12.0
+				],
+				"entity_footprint": [
+					1.0,
+					1.0
+				],
+				"entity_status": "active",
+				"entity_airborne_present": false,
+				"entity_airborne": false,
+				"entity_display_anchor_present": false,
+				"entity_blocks_route_present": false,
+				"entity_blocks_route": false,
+				"resolver_default_semantics": "absent blocks_route means false; absent airborne/display_anchor means the sole entity anchor is ground truth"
+			},
+			"a5_existing_approved_plan_pixels": true,
+			"binding_role": "A5_FORMAL_PLAN_SLOT",
+			"formal_camera_v2_slot_pivot_px": [
+				48.0,
+				96.0
+			],
+			"active_proxy_pivot_px": [
+				48.0,
+				96.0
+			],
+			"contact_proxy_fixture_binding_used": false,
+			"camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+			"view_space": "map_dimetric_40x24",
+			"texture_filter": "nearest",
+			"mipmap": false,
+			"material_is_null": true,
+			"modulate": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"self_modulate": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		"ENEMY_C01_RIFT_SWARM_03": {
+			"subject_id": "ENEMY_C01_RIFT_SWARM_03",
+			"base_stable_id": "ENEMY_C01_RIFT_SWARM",
+			"visible": true,
+			"actor_instance_id": 41976596069,
+			"sprite_instance_id": 41993373286,
+			"shadow_instance_id": 42010150503,
+			"sprite_class": "Sprite2D",
+			"texture_class": "AtlasTexture",
+			"atlas_texture_instance_id": -9223371995431827895,
+			"source_texture_instance_id": -9223371995482159546,
+			"resource_path": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a5_rift_swarm/rift-swarm-idle-96.png",
+			"resource_sha256": "1dc037874dda99e3331280f0533590f8f210411687a2d1b53265c5e62456526b",
+			"slot_id": "rift_swarm_a5_existing_approved_plan_camera_v2",
+			"clip_key": "idle/south/0",
+			"rect": [
+				192.0,
+				0.0,
+				96.0,
+				96.0
+			],
+			"atlas_texture_region": [
+				192.0,
+				0.0,
+				96.0,
+				96.0
+			],
+			"pivot_px": [
+				48.0,
+				96.0
+			],
+			"display_scale": [
+				1.0,
+				1.0
+			],
+			"ground_anchor": [
+				29.0,
+				5.0
+			],
+			"source_footprint": [
+				1.0,
+				1.0
+			],
+			"schema_footprint": [
+				1.0,
+				1.0
+			],
+			"footprint": [
+				1.0,
+				1.0
+			],
+			"source_footprint_matches_schema": true,
+			"footpoint_screen": [
+				1200.0,
+				482.0
+			],
+			"sprite_top_left": [
+				1152.0,
+				386.0
+			],
+			"footpoint_reconstructed": [
+				1200.0,
+				482.0
+			],
+			"footpoint_error_px": 0.0,
+			"registration_point": "footprint_bottom_center",
+			"z_bias": 0,
+			"z_sort": 482,
+			"z_as_relative": false,
+			"z_formula": "footpoint_screen_y + z_bias",
+			"shadow_visible": true,
+			"shadow_z": 481,
+			"shadow_owner": "engine_independent_ground_shadow_layer",
+			"sockets_local_from_footpoint": {
+				"body": [
+					0.0,
+					-28.0
+				],
+				"shield": [
+					-16.0,
+					-24.0
+				],
+				"weapon": [
+					17.0,
+					-27.0
+				],
+				"impact": [
+					0.0,
+					-32.0
+				],
+				"target": [
+					0.0,
+					-32.0
+				]
+			},
+			"sockets_screen": {
+				"body": [
+					1200.0,
+					454.0
+				],
+				"shield": [
+					1184.0,
+					458.0
+				],
+				"weapon": [
+					1217.0,
+					455.0
+				],
+				"impact": [
+					1200.0,
+					450.0
+				],
+				"target": [
+					1200.0,
+					450.0
+				]
+			},
+			"state": "active",
+			"facing": "south",
+			"state_source": "session.round_snapshot",
+			"anchor_source": "session.round_snapshot",
+			"presentation_source": "session.round_snapshot",
+			"public_state_evidence": {
+				"entity_anchor": [
+					29.0,
+					5.0
+				],
+				"entity_footprint": [
+					1.0,
+					1.0
+				],
+				"entity_status": "active",
+				"entity_airborne_present": false,
+				"entity_airborne": false,
+				"entity_display_anchor_present": false,
+				"entity_blocks_route_present": false,
+				"entity_blocks_route": false,
+				"resolver_default_semantics": "absent blocks_route means false; absent airborne/display_anchor means the sole entity anchor is ground truth"
+			},
+			"a5_existing_approved_plan_pixels": true,
+			"binding_role": "A5_FORMAL_PLAN_SLOT",
+			"formal_camera_v2_slot_pivot_px": [
+				48.0,
+				96.0
+			],
+			"active_proxy_pivot_px": [
+				48.0,
+				96.0
+			],
+			"contact_proxy_fixture_binding_used": false,
+			"camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+			"view_space": "map_dimetric_40x24",
+			"texture_filter": "nearest",
+			"mipmap": false,
+			"material_is_null": true,
+			"modulate": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			],
+			"self_modulate": [
+				1.0,
+				1.0,
+				1.0,
+				1.0
+			]
+		}
+	},
+	"plan_only": true,
+	"t1_t5_extension_claimed": false,
+	"program_actual_frame_assessment": "V2_COMPATIBLE_FOR_PLAN",
+	"producer_visual_acceptance": false,
+	"producer_visual_reviewed": false,
+	"compatibility_criteria": {
+		"directions_readable": true,
+		"bottom_contact_valid": true,
+		"native_scale_valid": true,
+		"half_map_readable": true,
+		"no_per_facing_transform": true,
+		"no_anchor_or_footprint_change": true
+	},
+	"stop_gate": "P111_PRODUCER_RELEASE_TO_ENV_A1",
+	"valid": true
+}

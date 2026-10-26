@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "candidate": true,
+  "not_canon": true,
+  "runtime_allowed": false,
+  "user_visual_acceptance": false,
+  "scene_id": "rainstreet-t3-candidate-v1",
+  "camera_id": "tactical-t3-dimetric-v1",
+  "source_blend_sha256": "05965a52ff3b52fca93ff38c41bac4fbbf3ec007e7e632c2723cd277b5f1056d",
+  "base_metadata_sha256": "e653da2c154e4bb7d0284974b930517c98f23dc83c82243eee94c9f7dc8e389b",
+  "base_texture_sha256": "e56fe0ec0f8ba1b2c89c74df21730ddce02ef971d3274fd9a7a79442a8e76d96",
+  "objective_id": "fx_ring_rope",
+  "integrity_max": 2,
+  "design_size": [
+    1280,
+    720
+  ],
+  "states": {
+    "2": {
+      "texture_path": "res://assets/formula_lab/temp/scenes/rainstreet-t3/ring-state-v1/integrity-2.png",
+      "texture_sha256": "e59705812b46bc70e54c543590c618d4e28a2ea8556bd6d3a2387e33f7cfa0d7",
+      "seconds": 4.553,
+      "description": "taut"
+    },
+    "1": {
+      "texture_path": "res://assets/formula_lab/temp/scenes/rainstreet-t3/ring-state-v1/integrity-1.png",
+      "texture_sha256": "7ea40481ba80e7f64896dc5e5e3686944d3dc21f883775d82d021670b67c358f",
+      "seconds": 3.846,
+      "description": "slack_continuous"
+    },
+    "0": {
+      "texture_path": "res://assets/formula_lab/temp/scenes/rainstreet-t3/ring-state-v1/integrity-0.png",
+      "texture_sha256": "3403ec09cb820b62b4d7718d6356bbfda1e6d87a748445ff1aca2bda9ba0c9f8",
+      "seconds": 3.844,
+      "description": "detached_slack_ends"
+    }
+  },
+  "source_script_sha256": "5424e6227a3f2012ea26c71beca0507536548d27cfee5a22a11d755e572d6e7a",
+  "landmarks": [
+    {
+      "id": "grid_0_0",
+      "pixel": [
+        639.9999618530273,
+        249.84000205993652
+      ],
+      "error": 2.364283585857501e-05
+    },
+    {
+      "id": "grid_6_0",
+      "pixel": [
+        843.9999389648438,
+        351.8399906158447
+      ],
+      "error": 5.384270035265346e-06
+    },
+    {
+      "id": "grid_6_6",
+      "pixel": [
+        639.9999618530273,
+        453.8399362564087
+      ],
+      "error": 2.2887538523553617e-05
+    },
+    {
+      "id": "grid_0_6",
+      "pixel": [
+        435.99998474121094,
+        351.8399477005005
+      ],
+      "error": 1.98527921376624e-05
+    },
+    {
+      "id": "grid_3_3",
+      "pixel": [
+        639.9999618530273,
+        351.8399477005005
+      ],
+      "error": 2.6145048650528916e-05
+    }
+  ],
+  "unchanged_existing_transforms": true,
+  "rules_changed": false,
+  "boundary": "Depicts cumulative rope load only; no collision, ring-out rule, actor or stage-time mutation."
+}

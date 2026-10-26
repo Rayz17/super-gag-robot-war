@@ -1,0 +1,112 @@
+{
+  "direction": "east",
+  "shield": false,
+  "raw_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-wave-b-actions-candidate/call01/generation-raw/GUARDIAN_Z_V10X_CAMERA_V2_BRACE_EAST_CALL01_RAW.png",
+  "raw_sha256": "8797e794fa1ee4b41c10b10135e55d85ce66e38137d7ef903fe8d6bb5e684071",
+  "raw_mode": "RGB",
+  "raw_size": [
+    1254,
+    1254
+  ],
+  "alpha_cleanup": {
+    "method": "border_connected_strict_checker_plus_exact_internal_component_fringe_removal",
+    "strict_classifier": {
+      "minimum_channel": 224,
+      "maximum_chroma": 14
+    },
+    "internal_fringe_classifier": {
+      "minimum_channel": 180,
+      "maximum_chroma": 30
+    },
+    "canvas_pixels": 1572516,
+    "border_connected_transparent_pixels": 1146060,
+    "internal_background_transparent_pixels": 2952,
+    "transparent_pixels": 1149012,
+    "opaque_pixels": 423504,
+    "partial_alpha_pixels": 0,
+    "removed_internal_background_components": [
+      {
+        "label": "brace_east_right_arm_to_torso_negative_space",
+        "strict_bbox": [
+          761,
+          457,
+          833,
+          534
+        ],
+        "strict_pixels": 2840,
+        "removed_bbox": [
+          761,
+          457,
+          834,
+          535
+        ],
+        "removed_pixels": 2952,
+        "selection": "exact_strict_component_then_neutral_fringe_growth"
+      }
+    ],
+    "white_silver_armour_sentinels_preserved": {
+      "chest_keel": [
+        600,
+        420
+      ],
+      "left_thigh_armour": [
+        485,
+        600
+      ],
+      "right_thigh_armour": [
+        710,
+        665
+      ],
+      "left_toe_armour": [
+        280,
+        950
+      ],
+      "right_toe_armour": [
+        875,
+        1080
+      ]
+    }
+  },
+  "master_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-wave-b-actions-candidate/call01/masters/GUARDIAN_Z_V10X_CAMERA_V2_BRACE_EAST_CALL01_RGBA_MASTER.png",
+  "master_sha256": "114352483baeee643ef299c53fbc359b1bb100951480be8182cc834c646ce945",
+  "candidate_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-wave-b-actions-candidate/call01/map-candidates/GUARDIAN_Z_V10X_CAMERA_V2_BRACE_EAST_CANDIDATE_256.png",
+  "candidate_sha256": "af2e6cc0d8bde79c756c175027f71d339549235fc737926a34adc890d706eebe",
+  "candidate_mode": "RGBA",
+  "candidate_size": [
+    256,
+    256
+  ],
+  "candidate_visible_bbox": [
+    52,
+    28,
+    205,
+    224
+  ],
+  "candidate_visible_size": [
+    153,
+    196
+  ],
+  "pivot_error_px": 0,
+  "alpha_128_component_count": 1,
+  "largest_alpha_128_component_pixels": 16000,
+  "largest_alpha_128_component_bbox": [
+    52,
+    28,
+    205,
+    224
+  ],
+  "corner_alpha": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "qa_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-wave-b-actions-candidate/call01/qa/GUARDIAN_Z_V10X_CAMERA_V2_BRACE_EAST_DARK_LIGHT_50_100_QA.png",
+  "qa_sha256": "f25721b637f297a75ec085cb7e11dfc62bf56c5cc796e2e4f105b1628b561a2e",
+  "socket_readback_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-wave-b-actions-candidate/call01/qa/GUARDIAN_Z_V10X_CAMERA_V2_BRACE_EAST_SOCKET_READBACK.png",
+  "socket_readback_sha256": "925ceefa700eebe1728f3a3d6507bc37e42c37489150e3444162604d867a9bb1",
+  "internal_visual_gate": "PASS_DETERMINISTIC_ALPHA_PIVOT_PENDING_USER_VISUAL_REVIEW",
+  "user_accepted": false,
+  "runtime": false,
+  "canon": false
+}

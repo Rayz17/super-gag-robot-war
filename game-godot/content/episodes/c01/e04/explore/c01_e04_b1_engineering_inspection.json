@@ -1,0 +1,177 @@
+{
+  "investigation_id": "C01E04-B1-ENGINEERING-INSPECTION",
+  "status": "candidate_runtime_data",
+  "runtime_contract_source": "C01E04_RT001_RT005",
+  "story_source": "DOC_V359_C01E04_STORY_FIRST_V1",
+  "title": "它不是固定建筑",
+  "location": "万机馆B1移动脊柱 / 消防监管返入区",
+  "target_minutes": "5-7",
+  "background_path": "res://assets/backgrounds/bg_hangar.png",
+  "play_bounds": [48, 112, 860, 548],
+  "player_start": [118, 598],
+  "required_offer_ids": [
+    "inspect_six_external_anchors",
+    "inspect_single_arm_chest_coupler",
+    "inspect_three_loadout_rails"
+  ],
+  "required_object_ids": [
+    "OBJ_C01E04_SIX_EXTERNAL_ANCHORS",
+    "OBJ_C01E04_SINGLE_ARM_CHEST_COUPLER",
+    "OBJ_C01E04_THREE_LOADOUT_RAILS"
+  ],
+  "evidence_facts": {
+    "inspect_six_external_anchors": "C01E04_B1_ANCHOR_FORCE_CONFIRMED_LOCAL",
+    "inspect_single_arm_chest_coupler": "C01E04_B1_SINGLE_ARM_COUPLER_CONFIRMED_LOCAL",
+    "inspect_three_loadout_rails": "C01E04_B1_THREE_LOADOUT_ENTRIES_CONFIRMED_LOCAL"
+  },
+  "spatial_cast": [
+    {"actor_id": "CH_JICUN", "display_name": "纪存", "side": "left", "portrait_path": "res://assets/portraits/portrait_jicun.png", "accent": "58c8d9"},
+    {"actor_id": "CH001", "display_name": "兜灯", "side": "right", "portrait_path": "res://assets/portraits/portrait_doudeng.png", "accent": "65bda7"},
+    {"actor_id": "CH_TANGJIAO", "display_name": "唐胶", "side": "right", "portrait_path": "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png", "accent": "e2a74b"},
+    {"actor_id": "CH_LUHENG", "display_name": "陆衡 / 市政结构响应", "side": "right", "portrait_path": "", "accent": "7fa8b5"}
+  ],
+  "stable_objects": [
+    {
+      "stable_object_id": "OBJ_C01E04_SIX_EXTERNAL_ANCHORS",
+      "label": "六枚外部锚的入土回执",
+      "position": [196, 244],
+      "interaction_radius": 92,
+      "initial_state": "fixed_building_model_still_assumed",
+      "interaction_offers": [
+        {
+          "offer_id": "inspect_six_external_anchors",
+          "repeat_policy": "once_then_recap",
+          "failure_continuation": {"policy": "remain_in_spatial", "player_feedback": "固定建筑模型仍不收敛；保留六条原始力线，换成移动体重算。"},
+          "outcome_contract": {"target_id": "OBJ_C01E04_SIX_EXTERNAL_ANCHORS", "state_source": "known_state"},
+          "known_state": "six_anchor_force_routes_cross_mobile_spine",
+          "add_tags": ["b1_key_condition", "anchor_force", "mobile_spine"],
+          "first_text": "六锚的力线没有回到地基，而是穿过移动脊柱指向馆守Z缺失的右臂。",
+          "repeat_text": "六条力线仍穿过移动脊柱；固定建筑图已经被划掉。",
+          "first_sequence": [
+            {"beat_id": "e04_b1_anchor_01", "speaker": "旁白", "stage_action": "六枚锚的应变曲线同时投到地面", "text": "陆衡先按固定建筑画出卸载顺序，东侧锚的箭头却穿过地基，继续向馆内延伸。"},
+            {"beat_id": "e04_b1_anchor_02", "actor_id": "CH_LUHENG", "speaker": "陆衡", "text": "箭头不该穿楼。谁的传感器漂了？"},
+            {"beat_id": "e04_b1_anchor_03", "actor_id": "CH_JICUN", "speaker": "纪存", "stage_action": "调出跌跌在E03三次失败位移中的振动记录", "text": "三次都往同一个方向漂。不是今天才坏。"},
+            {"beat_id": "e04_b1_anchor_04", "actor_id": "CH_LUHENG", "speaker": "陆衡", "stage_action": "删去地基支承层，只留下贯穿各区的骨架", "text": "不是地基托楼。是楼在踩地基。按移动体重算。"},
+            {"beat_id": "e04_b1_anchor_05", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "text": "先别给它起新名字。把六根钉子一根根拔明白。"}
+          ],
+          "repeat_sequence": [
+            {"beat_id": "e04_b1_anchor_repeat", "actor_id": "CH_LUHENG", "speaker": "陆衡", "text": "六点同时位移，固定建筑模型不收敛。结论没变。"}
+          ]
+        }
+      ]
+    },
+    {
+      "stable_object_id": "OBJ_C01E04_SINGLE_ARM_CHEST_COUPLER",
+      "label": "馆守Z胸前单臂接驳座",
+      "position": [452, 354],
+      "interaction_radius": 94,
+      "initial_state": "symmetric_outline_still_visible",
+      "interaction_offers": [
+        {
+          "offer_id": "inspect_single_arm_chest_coupler",
+          "repeat_policy": "once_then_recap",
+          "failure_continuation": {"policy": "remain_in_spatial", "player_feedback": "对称补全仍在制造一只不存在的右臂；删掉补线后再闭合包络。"},
+          "outcome_contract": {"target_id": "OBJ_C01E04_SINGLE_ARM_CHEST_COUPLER", "state_source": "known_state"},
+          "known_state": "left_shoulder_only_chest_bearing_envelope",
+          "add_tags": ["b1_key_condition", "guardian_z", "single_arm_bearing"],
+          "first_text": "胸前接驳只能从左肩承重；右侧旧轮廓不得被软件补回。",
+          "repeat_text": "右边仍是空的；当前包络只承认左肩。",
+          "first_sequence": [
+            {"beat_id": "e04_b1_coupler_01", "speaker": "旁白", "stage_action": "接驳屏自动补出一条半透明右肩中心线", "text": "算法把缺口当成尚未识别的对称部件。"},
+            {"beat_id": "e04_b1_coupler_02", "actor_id": "CH001", "speaker": "兜灯", "stage_action": "用油笔沿空掉的右肩画一道叉", "text": "右边没有手。别在包络里补一条。"},
+            {"beat_id": "e04_b1_coupler_03", "actor_id": "CH_LUHENG", "speaker": "陆衡", "text": "只靠左肩，胸前座会多吃十一度扭矩。"},
+            {"beat_id": "e04_b1_coupler_04", "actor_id": "CH001", "speaker": "兜灯", "text": "那就算十一度。不要算一只不存在的手。"},
+            {"beat_id": "e04_b1_coupler_05", "speaker": "旁白", "stage_action": "对称中心线从工程图上消失", "text": "新的安全包络第一次按馆守Z现在的身体闭合。"}
+          ],
+          "repeat_sequence": [
+            {"beat_id": "e04_b1_coupler_repeat", "actor_id": "CH001", "speaker": "兜灯", "text": "左肩承重，右肩封口，硬停保留。别替它长回来。"}
+          ]
+        }
+      ]
+    },
+    {
+      "stable_object_id": "OBJ_C01E04_THREE_LOADOUT_RAILS",
+      "label": "三类非人员载荷入口",
+      "position": [708, 492],
+      "interaction_radius": 96,
+      "initial_state": "three_classes_unmeasured",
+      "interaction_offers": [
+        {
+          "offer_id": "inspect_three_loadout_rails",
+          "repeat_policy": "once_then_recap",
+          "failure_continuation": {"policy": "remain_in_spatial", "player_feedback": "三条固定链仍未逐件量清；人员不能被塞进载荷表凑数。"},
+          "outcome_contract": {"target_id": "OBJ_C01E04_THREE_LOADOUT_RAILS", "state_source": "known_state"},
+          "known_state": "exact_two_rails_can_be_fixed_in_window",
+          "add_tags": ["b1_key_condition", "loadout_entries", "exact_two"],
+          "first_text": "生活维持、实体独有馆藏和档案服务器各占一条真实固定链；窗口只够完成两条。",
+          "repeat_text": "三类仍各占一条固定链，人员不进表，窗口仍只够两条。",
+          "first_sequence": [
+            {"beat_id": "e04_b1_rail_01", "speaker": "旁白", "stage_action": "三条载荷轨分别亮起水循环蓝、实体标签黄和服务器冷却白", "text": "每条轨都有重量、接口和离开以后会留下的空位。"},
+            {"beat_id": "e04_b1_rail_02", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "stage_action": "把小满的画筒、孤本模型托和断件盒逐件摆进黄色轮廓", "text": "别写‘实体馆藏一批’。这些东西离开柜子以后还得知道自己是哪一件。"},
+            {"beat_id": "e04_b1_rail_03", "actor_id": "CH001", "speaker": "兜灯", "stage_action": "检查净水转接件与温控旧制插头", "text": "生活循环不带，三十六小时会先从这里缩水。"},
+            {"beat_id": "e04_b1_rail_04", "actor_id": "CH_LUHENG", "speaker": "陆衡", "text": "服务器每回合吃冷却，实体轨吃重量，生活轨占外锁转接位。没有免费第三条。"},
+            {"beat_id": "e04_b1_rail_05", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "人员呢？"},
+            {"beat_id": "e04_b1_rail_06", "actor_id": "CH_LUHENG", "speaker": "陆衡", "stage_action": "把人员栏从载荷表顶部移出", "text": "楼外二十九人不回装。馆内四个是岗位，不是货。"}
+          ],
+          "repeat_sequence": [
+            {"beat_id": "e04_b1_rail_repeat", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "三类，保两类。人员不进载荷表。"}
+          ]
+        }
+      ]
+    },
+    {
+      "stable_object_id": "OBJ_C01E04_EMPTY_BRAVE_FIST_ANCHOR",
+      "label": "已经空掉的勇拳锚位",
+      "position": [318, 568],
+      "interaction_radius": 80,
+      "initial_state": "corporate_recovery_scar",
+      "tactical_skip_reason": "勇拳与豪司已被企业回收；空锚位只保留关系与回收痕迹，不能凭调查重新生成一台单位。",
+      "interaction_offers": [
+        {
+          "offer_id": "review_empty_brave_fist_anchor",
+          "repeat_policy": "once_then_recap",
+          "failure_continuation": {"policy": "short_recap", "player_feedback": "锚位仍是空的；这条回收痕迹不阻断B1三项工程条件。"},
+          "outcome_contract": {"target_id": "OBJ_C01E04_EMPTY_BRAVE_FIST_ANCHOR", "state_source": "known_state"},
+          "known_state": "empty_anchor_not_cargo",
+          "first_text": "勇拳已由企业完成回收；空锚位只保留刮痕，不生成一台可以再次带走的机体。",
+          "repeat_text": "锚位仍是空的。豪司和勇拳都不在馆内。",
+          "first_sequence": [
+            {"beat_id": "e04_b1_fist_01", "speaker": "旁白", "text": "锚位的红漆被运输架拖出两道新痕，中央没有机体，只有一枚折断的报价夹。"},
+            {"beat_id": "e04_b1_fist_02", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "豪司至少把签名带走了。"},
+            {"beat_id": "e04_b1_fist_03", "actor_id": "CH_TANGJIAO", "speaker": "唐胶", "text": "报价夹留下了。很符合他们的运输习惯。"}
+          ],
+          "repeat_sequence": [
+            {"beat_id": "e04_b1_fist_repeat", "speaker": "旁白", "text": "空锚位没有因为多看一眼就把勇拳送回来。"}
+          ]
+        }
+      ]
+    },
+    {
+      "stable_object_id": "OBJ_C01E04_EXTERNAL_LOCK_ARMS",
+      "label": "两侧外部锁泊臂",
+      "position": [816, 208],
+      "interaction_radius": 84,
+      "initial_state": "folded_under_city_clearance",
+      "tactical_skip_reason": "锁泊臂的展开与收回由城市包络阶段的既有动作结算；巡检对象只提供可选预告，不另造重复机关。",
+      "interaction_offers": [
+        {
+          "offer_id": "review_external_lock_arms",
+          "repeat_policy": "once_then_recap",
+          "failure_continuation": {"policy": "short_recap", "player_feedback": "展开和收回仍是两个后续动作；可先完成三项必要检查。"},
+          "outcome_contract": {"target_id": "OBJ_C01E04_EXTERNAL_LOCK_ARMS", "state_source": "known_state"},
+          "known_state": "same_mechanism_bears_then_folds_for_city",
+          "first_text": "锁泊臂半身抬升时展开承重，穿城前必须同步收回；两步属于同一套机构。",
+          "repeat_text": "先展开承重，再收回避让；锁泊臂不会免费切换姿态。",
+          "first_sequence": [
+            {"beat_id": "e04_b1_lock_01", "actor_id": "CH_LUHENG", "speaker": "陆衡", "stage_action": "把展开轮廓叠到东行道路净空线上", "text": "抬升要展开，过街要收回。中间多一次热和一次锁定窗口。"},
+            {"beat_id": "e04_b1_lock_02", "actor_id": "CH001", "speaker": "兜灯", "text": "收回之前给我硬停预览。右边卡住也不能硬拖。"},
+            {"beat_id": "e04_b1_lock_03", "actor_id": "CH_JICUN", "speaker": "纪存", "text": "这项留到城市包络，不在巡检里假装已经解决。"}
+          ],
+          "repeat_sequence": [
+            {"beat_id": "e04_b1_lock_repeat", "actor_id": "CH_LUHENG", "speaker": "陆衡", "text": "展开承重，收回过街。两次动作，两次结算。"}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "canvas_offset_from_projection_origin_px": [
+    -800,
+    -180
+  ],
+  "canvas_origin_raw_px": [
+    -1680,
+    -350
+  ],
+  "canvas_size": [
+    2400,
+    1350
+  ],
+  "evidence_class": "g2_a1_r2c_existing_a4_registration_readback",
+  "layer_count": 6,
+  "layers": {
+    "VS_MAP_BASE": {
+      "canvas_origin_raw_px": [
+        -1680.0,
+        -350.0
+      ],
+      "canvas_size": [
+        2400.0,
+        1350.0
+      ],
+      "crop_rect_px": [
+        480.0,
+        428.0,
+        1280.0,
+        584.0
+      ],
+      "layer": "base",
+      "mask_semantics": "opaque_world_base",
+      "native_size": [
+        2400,
+        1350
+      ],
+      "screen_scale": [
+        1.0,
+        1.0
+      ],
+      "screen_top_left": [
+        -480.0,
+        -370.0
+      ],
+      "visible": true,
+      "z": -1200
+    },
+    "VS_MAP_BUILDINGS": {
+      "canvas_origin_raw_px": [
+        -1680.0,
+        -350.0
+      ],
+      "canvas_size": [
+        2400.0,
+        1350.0
+      ],
+      "crop_rect_px": [
+        480.0,
+        428.0,
+        1280.0,
+        584.0
+      ],
+      "layer": "buildings",
+      "mask_semantics": "world_body",
+      "native_size": [
+        2400,
+        1350
+      ],
+      "screen_scale": [
+        1.0,
+        1.0
+      ],
+      "screen_top_left": [
+        -480.0,
+        -370.0
+      ],
+      "visible": true,
+      "z": -900
+    },
+    "VS_MAP_FOREGROUND": {
+      "canvas_origin_raw_px": [
+        -1680.0,
+        -350.0
+      ],
+      "canvas_size": [
+        2400.0,
+        1350.0
+      ],
+      "crop_rect_px": [
+        480.0,
+        428.0,
+        1280.0,
+        584.0
+      ],
+      "layer": "foreground",
+      "mask_semantics": "fade_50_outline_candidate",
+      "native_size": [
+        2400,
+        1350
+      ],
+      "screen_scale": [
+        1.0,
+        1.0
+      ],
+      "screen_top_left": [
+        -480.0,
+        -370.0
+      ],
+      "visible": true,
+      "z": 1100
+    },
+    "VS_MAP_LIGHTING": {
+      "canvas_origin_raw_px": [
+        -1680.0,
+        -350.0
+      ],
+      "canvas_size": [
+        2400.0,
+        1350.0
+      ],
+      "crop_rect_px": [
+        480.0,
+        428.0,
+        1280.0,
+        584.0
+      ],
+      "layer": "state_layers",
+      "mask_semantics": "state_overlay",
+      "native_size": [
+        2400,
+        1350
+      ],
+      "screen_scale": [
+        1.0,
+        1.0
+      ],
+      "screen_top_left": [
+        -480.0,
+        -370.0
+      ],
+      "visible": true,
+      "z": -200
+    },
+    "VS_MAP_OCCLUSION": {
+      "canvas_origin_raw_px": [
+        -1680.0,
+        -350.0
+      ],
+      "canvas_size": [
+        2400.0,
+        1350.0
+      ],
+      "crop_rect_px": [
+        480.0,
+        428.0,
+        1280.0,
+        584.0
+      ],
+      "layer": "occlusion",
+      "mask_semantics": "sample_only_rgba_control",
+      "native_size": [
+        2400,
+        1350
+      ],
+      "screen_scale": [
+        1.0,
+        1.0
+      ],
+      "screen_top_left": [
+        -480.0,
+        -370.0
+      ],
+      "visible": false,
+      "z": 1200
+    },
+    "VS_MAP_ROOFS": {
+      "canvas_origin_raw_px": [
+        -1680.0,
+        -350.0
+      ],
+      "canvas_size": [
+        2400.0,
+        1350.0
+      ],
+      "crop_rect_px": [
+        480.0,
+        428.0,
+        1280.0,
+        584.0
+      ],
+      "layer": "roofs",
+      "mask_semantics": "fade_50_outline_candidate",
+      "native_size": [
+        2400,
+        1350
+      ],
+      "screen_scale": [
+        1.0,
+        1.0
+      ],
+      "screen_top_left": [
+        -480.0,
+        -370.0
+      ],
+      "visible": true,
+      "z": 900
+    }
+  },
+  "occlusion_policy": "fade_50_percent_plus_outline_candidate",
+  "projection_origin_raw_px": [
+    -880.0,
+    -170.0
+  ],
+  "source_policy": "existing A4 layers read-only; identity-free unit proxies only",
+  "sources": {
+    "VS_MAP_BASE": {
+      "binding": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_policy": "camera_rect_intersection",
+        "display_scale": [
+          1.0,
+          1.0
+        ],
+        "layer": "base",
+        "mask_semantics": "opaque_world_base",
+        "native_size": [
+          2400.0,
+          1350.0
+        ],
+        "pivot_normalized": [
+          0.0,
+          0.0
+        ],
+        "pivot_px": [
+          0.0,
+          0.0
+        ],
+        "revision": 1.0,
+        "sha256": "98b2248d9b0691e7c8bf6eb2005572c4e13330e25b11f3e70403169ca19d7a8c",
+        "stable_id": "R2_A4_BASE_PROXY",
+        "target": "map_layer",
+        "view_space": "map_dimetric_40x20",
+        "z": -1200.0
+      },
+      "source_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-base.png",
+      "source_sha256": "6fd40a256afee225457594558edf274823de5d1e771d1f570d0263c5df217789",
+      "source_size": [
+        2400,
+        1350
+      ]
+    },
+    "VS_MAP_BUILDINGS": {
+      "binding": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_policy": "camera_rect_intersection",
+        "display_scale": [
+          1.0,
+          1.0
+        ],
+        "layer": "buildings",
+        "mask_semantics": "world_body",
+        "native_size": [
+          2400.0,
+          1350.0
+        ],
+        "pivot_normalized": [
+          0.0,
+          0.0
+        ],
+        "pivot_px": [
+          0.0,
+          0.0
+        ],
+        "revision": 1.0,
+        "sha256": "7bd431c28406affa111ac4f39be78dfc9f1e9fa2e7915ecf7cfd98eb81360921",
+        "stable_id": "R2_A4_BUILDINGS_PROXY",
+        "target": "map_layer",
+        "view_space": "map_dimetric_40x20",
+        "z": -900.0
+      },
+      "source_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-buildings.png",
+      "source_sha256": "db3f83eeb3ed5e583d0a831a203ab0d5446a594f9ed9e34f25f175f290f62237",
+      "source_size": [
+        2400,
+        1350
+      ]
+    },
+    "VS_MAP_FOREGROUND": {
+      "binding": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_policy": "camera_rect_intersection",
+        "display_scale": [
+          1.0,
+          1.0
+        ],
+        "layer": "foreground",
+        "mask_semantics": "fade_50_outline_candidate",
+        "native_size": [
+          2400.0,
+          1350.0
+        ],
+        "pivot_normalized": [
+          0.0,
+          0.0
+        ],
+        "pivot_px": [
+          0.0,
+          0.0
+        ],
+        "revision": 1.0,
+        "sha256": "927e303421f3e633461c23a0c6455cf773c728f8b2f3dec2d5d77fa3d3002ff8",
+        "stable_id": "R2_A4_FOREGROUND_PROXY",
+        "target": "map_layer",
+        "view_space": "map_dimetric_40x20",
+        "z": 1100.0
+      },
+      "source_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-foreground.png",
+      "source_sha256": "454b3cf845ba91d7d7f13e201874bbbe79f871297a36930a24348823df1525a3",
+      "source_size": [
+        2400,
+        1350
+      ]
+    },
+    "VS_MAP_LIGHTING": {
+      "binding": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_policy": "camera_rect_intersection",
+        "display_scale": [
+          1.0,
+          1.0
+        ],
+        "layer": "state_layers",
+        "mask_semantics": "state_overlay",
+        "native_size": [
+          2400.0,
+          1350.0
+        ],
+        "pivot_normalized": [
+          0.0,
+          0.0
+        ],
+        "pivot_px": [
+          0.0,
+          0.0
+        ],
+        "revision": 1.0,
+        "sha256": "ed79f928e423691102c356eb7bb1171f427a0e238f679c4f76bfda00e3d3f7a0",
+        "stable_id": "R2_A4_STATE_PROXY",
+        "target": "map_layer",
+        "view_space": "map_dimetric_40x20",
+        "z": -200.0
+      },
+      "source_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a4-map-b-six-layer/A4_MAP_B_STATE_LAYERS_2400x1350.png",
+      "source_sha256": "05833205230b087b3024545a1344174fb1a73c7975087fcf06808d62b01d3ff1",
+      "source_size": [
+        2400,
+        1350
+      ]
+    },
+    "VS_MAP_OCCLUSION": {
+      "binding": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_policy": "camera_rect_intersection",
+        "display_scale": [
+          1.0,
+          1.0
+        ],
+        "layer": "occlusion",
+        "mask_semantics": "sample_only_rgba_control",
+        "native_size": [
+          2400.0,
+          1350.0
+        ],
+        "pivot_normalized": [
+          0.0,
+          0.0
+        ],
+        "pivot_px": [
+          0.0,
+          0.0
+        ],
+        "revision": 1.0,
+        "sha256": "c8271169c70e072c40880d5cdaf868e9eece31d3f6f1841141f5a5ee02741e58",
+        "stable_id": "R2_A4_OCCLUSION_PROXY",
+        "target": "map_layer",
+        "view_space": "map_dimetric_40x20",
+        "z": 1200.0
+      },
+      "source_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-occlusion-mask.png",
+      "source_sha256": "b5f68f4749f6bff2025409622888d8e8faa17d977aca372caa43121eec18e899",
+      "source_size": [
+        2400,
+        1350
+      ]
+    },
+    "VS_MAP_ROOFS": {
+      "binding": {
+        "camera_contract_id": "A4_MAP_SPRITE_CAMERA_V1",
+        "canvas_origin_raw_px": [
+          -1680.0,
+          -350.0
+        ],
+        "canvas_size": [
+          2400.0,
+          1350.0
+        ],
+        "crop_policy": "camera_rect_intersection",
+        "display_scale": [
+          1.0,
+          1.0
+        ],
+        "layer": "roofs",
+        "mask_semantics": "fade_50_outline_candidate",
+        "native_size": [
+          2400.0,
+          1350.0
+        ],
+        "pivot_normalized": [
+          0.0,
+          0.0
+        ],
+        "pivot_px": [
+          0.0,
+          0.0
+        ],
+        "revision": 1.0,
+        "sha256": "339476411d9fb2250b6b439f8f4b95b971723e0fd08daf6d9714ab37f9bbadc6",
+        "stable_id": "R2_A4_ROOFS_PROXY",
+        "target": "map_layer",
+        "view_space": "map_dimetric_40x20",
+        "z": 900.0
+      },
+      "source_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/content/candidate_runtime_demo/c01/e02/approved_runtime_assets_r2/a4_map_b/map-roofs.png",
+      "source_sha256": "7fea3c7918ff85bb1d5df1f4bcc5856afac1d8fa7f174d59b862f985962f11a9",
+      "source_size": [
+        2400,
+        1350
+      ]
+    }
+  },
+  "unit_real_art_loaded": 0,
+  "viewport_rect": [
+    0.0,
+    58.0,
+    1280.0,
+    584.0
+  ],
+  "zoom": 1.0
+}

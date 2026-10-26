@@ -1,0 +1,518 @@
+{
+  "revision": "user-illustration-portrait-20261026",
+  "scope": "user-requested illustration-only avatar crops; not body redesign",
+  "selection": "artifacts/formulas/production-lab-v1/source/gongwu-illustrated-portraits-20261026/source-selection.json",
+  "selection_sha256": "0343848ee82bb380705d91cebb8c02ab435e865d4eee8604f7d41e5197c40486",
+  "entries": {
+    "hero": {
+      "id": "hero",
+      "source": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M01-head-proportion-r16.png",
+      "source_sha256": "d8ecc8461fa9a1685b6b07ccfc9696970a2efb4eec9642c63bd7969c3e4c6e61",
+      "size": [
+        1129,
+        1393
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        0,
+        140,
+        1129,
+        1269
+      ],
+      "framing": "head_and_half_chest",
+      "source_usage": "current_R16_accepted_head_and_chest_art",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/hero.png",
+      "asset_sha256": "a65ddf57af272087a4222725612e6f0dd14836c18d2cf6636eece2bf3bab1b25",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "boxer": {
+      "id": "boxer",
+      "source": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M02-old-boxer-master-r1.png",
+      "source_sha256": "a21227cbddf4541cfc39dbfc00faace8e93dd4433a61f6181414d516d8eed7e3",
+      "size": [
+        1206,
+        1305
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        545,
+        75,
+        945,
+        475
+      ],
+      "framing": "head_and_half_chest",
+      "source_usage": "existing_single_figure_standing_art_region",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/boxer.png",
+      "asset_sha256": "b631712e2800d47b8d231fe43acde4e3ba8cc2f37c77c36a5d94e16171824754",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "guardian": {
+      "id": "guardian",
+      "source": "docs/superpowers/specs/production/art-direction-v0.3/art-delivery/review/guardian_z_collector_e02_lockframe_candidate_v10x.png",
+      "source_sha256": "e1d6b00d743e925d37a8fe4c74a1ef9114e1d7b0f4826fc2285bd6dae1470ade",
+      "size": [
+        1024,
+        1536
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        280,
+        45,
+        740,
+        505
+      ],
+      "framing": "head_and_half_chest",
+      "source_usage": "existing_single_figure_standing_art_region",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/guardian.png",
+      "asset_sha256": "84b0e6251a18b6e64d2db3b6f47681c9c777f63c952d035bd6a519547d9cf9fd",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "brave": {
+      "id": "brave",
+      "source": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-front-backpack-fins-r7.png",
+      "source_sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98",
+      "size": [
+        1254,
+        1254
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        467,
+        10,
+        807,
+        350
+      ],
+      "framing": "head_and_half_chest",
+      "source_usage": "existing_single_figure_standing_art_region",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/brave.png",
+      "asset_sha256": "919afd8e140797c5f21a3e76e8e5c4f9c7e256b167f95e82d656464b0a057e3d",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "king": {
+      "id": "king",
+      "source": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M05-full-front-backpack-r12.png",
+      "source_sha256": "57f88cd755ec20ed1cd4c3edf8722e7eb3ca62cdfb6c9760a8deeb8a220678d2",
+      "size": [
+        1254,
+        1254
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        465,
+        0,
+        835,
+        370
+      ],
+      "framing": "head_and_half_chest",
+      "source_usage": "latest_fixed_single_body_front_no_matching_later_standing_art",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/king.png",
+      "asset_sha256": "4dbba8582bc35c46f37737eec9079dde613bdf3ba7f4d703ed8fc479cf020d29",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "engineer": {
+      "id": "engineer",
+      "source": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M06-labor-identity-r2b.png",
+      "source_sha256": "3741b164b4ee558f65927cccfdfc2aff0efa7bba30c0458d6d6c56c7af078de0",
+      "size": [
+        1536,
+        1024
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        315,
+        5,
+        635,
+        325
+      ],
+      "framing": "head_and_half_chest",
+      "source_usage": "existing_single_figure_standing_art_region",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/engineer.png",
+      "asset_sha256": "269d10b4a94e142523dde6e478f2ad1a78178ae812262ac807ee7ea9aef5ea19",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "crane": {
+      "id": "crane",
+      "source": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M07-public-works-master-r1b.png",
+      "source_sha256": "3cb453c3259e123d0c05a5b39d5cd5743e6dc84672cb99f4e8fc69c7b8d7d3fa",
+      "size": [
+        1672,
+        941
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        350,
+        275,
+        950,
+        875
+      ],
+      "framing": "recognizable_vehicle_front_or_cab",
+      "source_usage": "existing_single_figure_standing_art_region",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/crane.png",
+      "asset_sha256": "0249c1d8f48f795db3cab9855090145db5d84066f24fceb9743889255864ad01",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "leiling": {
+      "id": "leiling",
+      "source": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M08-front-airframe-r6.png",
+      "source_sha256": "51b1c0a8723bc55478c9f76d0abde557f5d4d2d1678236fc98e25676ed2a4566",
+      "size": [
+        1024,
+        1536
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        290,
+        0,
+        730,
+        440
+      ],
+      "framing": "head_and_half_chest",
+      "source_usage": "latest_fixed_single_body_front_no_matching_later_standing_art",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/leiling.png",
+      "asset_sha256": "9140aa58c38775c1ac51086f2f1e2ba1805dc5ba48743bae629bab25e9698563",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "police": {
+      "id": "police",
+      "source": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M09-curved-labor-r2.png",
+      "source_sha256": "9355ad11dda42d079ab9a55a98ee39d904aedcb564ca88c1354ad4c170180288",
+      "size": [
+        1536,
+        1024
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        280,
+        22,
+        620,
+        362
+      ],
+      "framing": "head_and_half_chest",
+      "source_usage": "existing_single_figure_standing_art_region",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/police.png",
+      "asset_sha256": "570ca4ee74fe44d0dac557e057f760cdf736db7296a99381ba762f1fa47cbf92",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "fire": {
+      "id": "fire",
+      "source": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M10-engineering-transformer-r2.png",
+      "source_sha256": "cd4b733daceee495c87182691608eb50f17d2284249a1e154f88645fa721c01d",
+      "size": [
+        1536,
+        1024
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        200,
+        10,
+        560,
+        370
+      ],
+      "framing": "head_and_half_chest",
+      "source_usage": "existing_single_figure_standing_art_region",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/fire.png",
+      "asset_sha256": "671ea608263e200f6e02a702bba0125fb347965d25121da7e2ef9a60ba8dee39",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "cargo": {
+      "id": "cargo",
+      "source": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M11-posture-r8.png",
+      "source_sha256": "8c7b229f42d8e840814a55dad1cf224d5b5b05f51a90841e86583d7f05dc78c9",
+      "size": [
+        1024,
+        1536
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        220,
+        16,
+        720,
+        516
+      ],
+      "framing": "head_and_half_chest",
+      "source_usage": "existing_single_figure_standing_art_region",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/cargo.png",
+      "asset_sha256": "5e01da7836aec33e774958319740bac5301191b3a59577e7b3192495a587a73e",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "mirror": {
+      "id": "mirror",
+      "source": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M12-mirror-airframe-master-r1.png",
+      "source_sha256": "369ebb7b49ffe9e21b026aa7be13231eeba73eb310bbaee0b0a8746ebcc1314b",
+      "size": [
+        1536,
+        1024
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        230,
+        8,
+        630,
+        408
+      ],
+      "framing": "head_and_half_chest",
+      "source_usage": "existing_single_figure_standing_art_region",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/mirror.png",
+      "asset_sha256": "6f9a2c859458c58fd4c870c481a6f9600b9b3e8d0cafc8abdc47e676e5c501e2",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "white": {
+      "id": "white",
+      "source": "captures/20261014-full-direction/incoming/dir-M13-white-v4-locked.jpg",
+      "source_sha256": "c6fa0d75262e113789057aad5c9d03d0acb0f5d8fe50e7ce48fa2fc267c46fe3",
+      "size": [
+        1280,
+        720
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        370,
+        4,
+        505,
+        139
+      ],
+      "framing": "head_and_half_chest",
+      "source_usage": "main_standing_figure_region_only_not_orthographic_or_head_detail_panels",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/white.png",
+      "asset_sha256": "424a4587fdb0880e17533c2ceedfa29fb18d197e6f1af6c2227c78b1f8eaee4f",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "song": {
+      "id": "song",
+      "source": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M14-front-airframe-r6.png",
+      "source_sha256": "4464ffa6fc330864a8b5245c9515f1ed320ce938c1d0befc39c6882664f6d540",
+      "size": [
+        1024,
+        1536
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        300,
+        20,
+        740,
+        460
+      ],
+      "framing": "head_and_half_chest",
+      "source_usage": "latest_fixed_single_body_front_no_matching_later_standing_art",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/song.png",
+      "asset_sha256": "d149d997bad5f3c3064686e547d3325908740269cc0cb8df0262e1986a98877f",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "core": {
+      "id": "core",
+      "source": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/F09-brave-core-master-r2.png",
+      "source_sha256": "345fd6592587153869c234d728f5282d3e3e74aa4e0ac6fdf91804c9f60e0fe3",
+      "size": [
+        1024,
+        1536
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        280,
+        15,
+        680,
+        415
+      ],
+      "framing": "head_and_half_chest",
+      "source_usage": "existing_single_figure_standing_art_region",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/core.png",
+      "asset_sha256": "d5612c5393a69a78b030a7d9d334b5814a959eee4fdb623838826097fded446d",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "bomber": {
+      "id": "bomber",
+      "source": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-bomber-master-r8.png",
+      "source_sha256": "99d7e68acb1c2206727c383d4210fcfeb50e6b2614516da28128cac0ba298503",
+      "size": [
+        1536,
+        1024
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        270,
+        164,
+        1130,
+        1024
+      ],
+      "framing": "recognizable_vehicle_front_or_cab",
+      "source_usage": "existing_single_figure_standing_art_region",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/bomber.png",
+      "asset_sha256": "287813e48b66ae618436c90b42034eb73a7838b7b187cd74e33e8cf0eaf211dd",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "subtrain": {
+      "id": "subtrain",
+      "source": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/F12-subtrain-master-r8.png",
+      "source_sha256": "332d7d4d5726e992aaf428df6e335cd1fd1a2f68504d62ac2f192c511a325fbc",
+      "size": [
+        1536,
+        1024
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        0,
+        149,
+        875,
+        1024
+      ],
+      "framing": "recognizable_vehicle_front_or_cab",
+      "source_usage": "existing_single_figure_standing_art_region",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/subtrain.png",
+      "asset_sha256": "94104e05e1f2387458073c1ec47e7c974992f01f23a53787af885a8f828856ee",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    },
+    "drill": {
+      "id": "drill",
+      "source": "captures/20261014-full-direction/review/20261016-internal-upgrade/samples/F11-drill-master-r8.png",
+      "source_sha256": "a6158af8733402fab671a6e4e302d31ffb52d443fce467cd448f4b704327f354",
+      "size": [
+        1536,
+        1024
+      ],
+      "kind": "existing_2d_design_or_standing_art",
+      "crop": [
+        0,
+        159,
+        865,
+        1024
+      ],
+      "framing": "recognizable_vehicle_front_or_cab",
+      "source_usage": "existing_single_figure_standing_art_region",
+      "preference": "latest_matching_identity_before_pose_preference; no old face restored",
+      "asset": "res://assets/formula_lab/linked_campaign_v6/portraits/illustrated-20261026/drill.png",
+      "asset_sha256": "32b0b50edd91a9d66d0e05f5c43deacb94ec6f95ed2d17ed38d162dc772354e5",
+      "output_size": [
+        512,
+        512
+      ],
+      "fit": "contain_preserve_aspect",
+      "production": "crop_existing_2d_art"
+    }
+  },
+  "legacy_portraits": {
+    "res://assets/formula_lab/linked_campaign_v6/portraits/boxer-fixed-20261022.png": "boxer",
+    "res://assets/formula_lab/linked_campaign_v6/portraits/king-fixed-r21-20261022.png": "king",
+    "res://assets/formula_lab/linked_campaign_v6/portraits/support-fixed-20261024-r3/engineer.png": "engineer",
+    "res://assets/formula_lab/linked_campaign_v6/portraits/support-fixed-20261024-r3/cargo.png": "cargo",
+    "res://assets/formula_lab/linked_campaign_v6/portraits/support-fixed-20261024-r3/leiling.png": "leiling",
+    "res://assets/formula_lab/linked_campaign_v6/portraits/support-fixed-20261024-r3/song.png": "song",
+    "res://assets/formula_lab/linked_campaign_v6/portraits/roster-refresh-20261024-r1/hero.png": "hero",
+    "res://assets/formula_lab/linked_campaign_v6/portraits/roster-refresh-20261024-r1/guardian.png": "guardian",
+    "res://assets/formula_lab/linked_campaign_v6/portraits/roster-refresh-20261024-r1/crane.png": "crane",
+    "res://assets/formula_lab/linked_campaign_v6/portraits/city-response-20261024-r1/police.png": "police",
+    "res://assets/formula_lab/linked_campaign_v6/portraits/city-response-20261024-r1/fire.png": "fire",
+    "res://assets/formula_lab/linked_campaign_v6/portraits/roster-refresh-20261024-r1/mirror.png": "mirror",
+    "res://assets/formula_lab/linked_campaign_v6/portraits/roster-refresh-20261024-r1/white.png": "white",
+    "res://assets/formula_lab/linked_campaign_v6/portraits/brave.png": "brave",
+    "res://assets/formula_lab/linked_campaign_v6/assembly-fixed-20261019-portraits-r2/core.png": "core",
+    "res://assets/formula_lab/linked_campaign_v6/assembly-fixed-20261019-portraits-r2/bomber.png": "bomber",
+    "res://assets/formula_lab/linked_campaign_v6/assembly-fixed-20261019-portraits-r2/subtrain.png": "subtrain",
+    "res://assets/formula_lab/linked_campaign_v6/assembly-fixed-20261019-portraits-r2/drill.png": "drill",
+    "res://assets/formula_lab/linked_campaign_v6/portraits/roster-refresh-20261024-r1/police.png": "police",
+    "res://assets/formula_lab/linked_campaign_v6/portraits/roster-refresh-20261024-r1/fire.png": "fire"
+  },
+  "runtime_quality_accepted": false,
+  "body_assets_changed": false
+}

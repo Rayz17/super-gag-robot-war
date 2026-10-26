@@ -1,0 +1,4150 @@
+{
+	"bundle_schema_version": 1,
+	"canon_boundary": "candidate",
+	"compiler_contract": {
+		"activity_grammars_validated": true,
+		"battle_presentation_manifest_validated": true,
+		"battle_refs_validated": true,
+		"canon_refs_validation": "external_canon_check_godot_strict_required",
+		"capacity_receipt_validated": false,
+		"experience_contract_validated": true,
+		"experience_production_gate_status": "structure_pass_capacity_pending",
+		"graph_validated": true,
+		"investigation_resources_validated": true,
+		"patch_consumers_validated": true,
+		"presentation_refs_validated": true,
+		"scene_refs_validated": true,
+		"spatial_layout_validated": true,
+		"stable_object_continuity_validated": true,
+		"transition_contract_validated": true
+	},
+	"episode_id": "C01E01-STORY-FIRST-P5-CANDIDATE",
+	"experience_contract_report": {
+		"accepted": true,
+		"capacity_receipt_validated": false,
+		"details": {
+			"capacity": {
+				"band": "compact",
+				"durations_minutes": [],
+				"evidence_status": "pending_external",
+				"receipt_count": 0,
+				"receipt_validated": false,
+				"target_minutes": [
+					22,
+					35
+				]
+			},
+			"consumption_entry_count": 1,
+			"dramatic_object_id": "OBJ_C01E01_CLOSING_ROUTE",
+			"episode_knot_id": "KNOT_C01E01_LAST_CLOSING_ROUTE"
+		},
+		"enabled": true,
+		"errors": [],
+		"gate_status": "structure_pass_capacity_pending",
+		"required": true,
+		"structure_validated": true,
+		"warnings": [
+			"experience_capacity_receipt_pending_external"
+		]
+	},
+	"graph": {
+		"canon_refs": [
+			"DOC_V359_C01E01_STORY_FIRST_V1",
+			"DATA_C01E01_RUNTIME_CONTRACT_V1",
+			"DATA_C01E01_GRAYBOX_CONSTANTS_V1",
+			"DOC_C01E01_STORY_FIRST_CANON_MIGRATION_V1",
+			"V357-C01-S01",
+			"LOC_WANJI_MAIN_HALL",
+			"CH_JICUN",
+			"CH_QIHAI",
+			"CH_TANGJIAO",
+			"CH001",
+			"CH057",
+			"MECHA_DOOR_MACHINE_DOG",
+			"MECHA_GUARDIAN_Z"
+		],
+		"episode_id": "C01E01-STORY-FIRST-P5-CANDIDATE",
+		"nodes": [
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"c01e01_before_nine"
+				],
+				"completion_contract": "OUTCOME_C01E01_COLD_OPEN_V01",
+				"failure_edges": [
+					"c01e01_before_nine"
+				],
+				"lines": [
+					{
+						"beat_id": "c01e01_cold_01",
+						"speaker": "旁白",
+						"stage_action": "消防无人机从烟层上方掠过",
+						"text": "次日零点三十分。旧会展区的消防无人机拍到一条本不该出现在城市天际线上的轮廓。"
+					},
+					{
+						"beat_id": "c01e01_cold_02",
+						"speaker": "旁白",
+						"stage_action": "馆守Z单臂半跪，右肩空着",
+						"text": "地面避难灯沿着一截横跨中庭的巨大手臂闪烁。"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e01_cold_03",
+						"speaker": "纪存",
+						"stage_action": "站在雨里，掌心攥着一把发烫的闭馆钥匙",
+						"text": "……"
+					},
+					{
+						"beat_id": "c01e01_cold_04",
+						"source_kind": "radio",
+						"speaker": "通讯",
+						"stage_action": "有人反复喊纪存的名字",
+						"text": "纪存。纪存，回答。"
+					},
+					{
+						"beat_id": "c01e01_cold_05",
+						"speaker": "旁白",
+						"stage_action": "雨声突然倒放",
+						"text": "画面没有回答。时间退回当晚二十点四十七分。"
+					}
+				],
+				"mode": "NARRATIVE",
+				"node_id": "c01e01_cold_open",
+				"outcome_facts": [
+					{
+						"id": "C01E01_LOCAL_COLD_OPEN_SEEN",
+						"to": true
+					}
+				],
+				"player_summary": "玩家只看见火灾后的巨大轮廓、空右肩与发烫钥匙，没有获得解释。",
+				"presentation": {
+					"background": "res://assets/backgrounds/story_first/bg_c01e01_cold_open_after_fire_v01.png",
+					"cast": [
+						{
+							"accent": "58c8d9",
+							"actor_id": "CH_JICUN",
+							"display_name": "纪存",
+							"portrait_path": "res://assets/portraits/portrait_jicun.png",
+							"side": "left"
+						}
+					],
+					"eyebrow": "旧会展区 · 次日零点三十分",
+					"profile": "standard_adv",
+					"time_label": "00:30",
+					"title": "火灾之后"
+				},
+				"scene_id": "SCN_C01E01_STORY_NARRATIVE",
+				"soft_fail_edges": [
+					"c01e01_before_nine"
+				],
+				"success_edges": [
+					"c01e01_before_nine"
+				],
+				"title": "次日零点三十分 / 火灾之后",
+				"transaction_id": "C01E01:COLD_OPEN:V01",
+				"transition": {
+					"accent": "d95f56",
+					"cause": "消防无人机越过烟层，拍到馆守Z右肩空缺和横跨中庭的巨大手臂。",
+					"duration": 1.35,
+					"eyebrow": "旧会展区 · 次日零点三十分",
+					"fade_seconds": 0.48,
+					"handoff": "纪存握着发烫的闭馆钥匙；画面退回当晚二十点四十七分。",
+					"kind": "opening",
+					"location": "万机馆外 · 雨中",
+					"time_label": "00:30",
+					"title": "火灾之后，有一座不该移动的建筑抬起了头",
+					"transition_id": "C01E01-TR-01-AFTER-FIRE"
+				}
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"c01e01_closing_route"
+				],
+				"completion_contract": "OUTCOME_C01E01_BEFORE_NINE_V01",
+				"failure_edges": [
+					"c01e01_closing_route"
+				],
+				"lines": [
+					{
+						"beat_id": "c01e01_count_01",
+						"speaker": "前厅值守员",
+						"stage_action": "把小满、阿澄和自己编成不可拆照看组",
+						"text": "黄线里二十九。孩子跟我，不拆组。你们三个工作人员另算。"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e01_count_02",
+						"speaker": "纪存",
+						"stage_action": "接过临时闭馆负责人终端",
+						"text": "三十二。先走最后一条路线，九点熄灯。"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e01_route_line",
+						"speaker": "纪存",
+						"stage_action": "钥匙串在掌心转了半圈，主展厅西侧又响了一声塑料卡响",
+						"text": "先走路线。那边听着像是又有东西装反了。"
+					},
+					{
+						"actor_id": "CH_QIHAI",
+						"beat_id": "c01e01_qihai_01",
+						"speaker": "七海",
+						"stage_action": "没有制服投影，也没有公务界面",
+						"text": "餐具拿了吗？"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e01_qihai_02",
+						"speaker": "纪存",
+						"stage_action": "把她留在水槽边的杯子洗净",
+						"text": "马上。"
+					},
+					{
+						"actor_id": "CH_QIHAI",
+						"beat_id": "c01e01_qihai_03",
+						"speaker": "七海",
+						"stage_action": "频道里有一声很轻的叹气",
+						"text": "你说的是拿餐具的马上，还是吃饭的马上？"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e01_qihai_04",
+						"speaker": "纪存",
+						"stage_action": "杯子放进闭馆箱，箱盖没有合上",
+						"text": "两个都算。九点见。"
+					},
+					{
+						"actor_id": "CH_QIHAI",
+						"beat_id": "c01e01_qihai_05",
+						"speaker": "七海",
+						"text": "那就没有一个算。别又把杯子收进馆长办公室，我上次找了两天。"
+					}
+				],
+				"mode": "NARRATIVE",
+				"node_id": "c01e01_before_nine",
+				"outcome_facts": [
+					{
+						"id": "C01E01_LOCAL_HUMAN_COUNT",
+						"to": 32.0
+					},
+					{
+						"id": "C01E01_LOCAL_EVAC_GROUP_COUNT",
+						"to": 29.0
+					},
+					{
+						"id": "C01E01_LOCAL_QIHAI_CHANNEL",
+						"to": "PRIVATE_AUDIO"
+					}
+				],
+				"player_summary": "32人工作数、29人撤离对象、凉饭、旧杯子与七海私人频道已经建立；模型病院的最后闭馆工作留给玩家完成。",
+				"presentation": {
+					"background": "res://assets/backgrounds/story_first/bg_c01e01_front_hall_closing_v01.png",
+					"cast": [
+						{
+							"accent": "58c8d9",
+							"actor_id": "CH_JICUN",
+							"display_name": "纪存",
+							"portrait_path": "res://assets/portraits/portrait_jicun.png",
+							"side": "left"
+						},
+						{
+							"accent": "dca55b",
+							"actor_id": "CH_QIHAI",
+							"display_name": "七海 · 私人语音",
+							"portrait_path": "res://assets/portraits/portrait_qihai.png",
+							"side": "right"
+						}
+					],
+					"eyebrow": "万机馆 · L1前厅",
+					"profile": "standard_adv",
+					"time_label": "20:47",
+					"title": "九点以前"
+				},
+				"scene_id": "SCN_C01E01_STORY_NARRATIVE",
+				"soft_fail_edges": [
+					"c01e01_closing_route"
+				],
+				"success_edges": [
+					"c01e01_closing_route"
+				],
+				"title": "九点以前 / 最后一次闭馆",
+				"transaction_id": "C01E01:BEFORE_NINE:V01",
+				"transition": {
+					"accent": "f0b83f",
+					"cause": "固定馆址最后一个开放日结束，纪存代行闭馆；二十九名观众和三名核心工作人员仍在馆内。",
+					"continuity": {
+						"action_refs": [
+							"OUTCOME_C01E01_COLD_OPEN_V01"
+						],
+						"responsibility_refs": [
+							"CH_JICUN",
+							"C01_HUMAN_COUNT_IN_BUILDING_START"
+						],
+						"types": [
+							"action",
+							"responsibility"
+						]
+					},
+					"duration": 1.15,
+					"eyebrow": "三小时四十三分钟前",
+					"fade_seconds": 0.42,
+					"handoff": "先把每个人送到该去的位置，再在九点整熄灯。",
+					"kind": "aftermath",
+					"location": "万机馆 · L1前厅",
+					"time_label": "20:47",
+					"title": "万机馆还有三十二个人",
+					"transition_id": "C01E01-TR-02-BEFORE-NINE"
+				}
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"c01e01_zero_and_lockdown"
+				],
+				"completion_contract": "OUTCOME_C01E01_CLOSING_ROUTE_V01",
+				"failure_edges": [
+					"c01e01_zero_and_lockdown"
+				],
+				"location_id": "LOC_WANJI_MAIN_HALL",
+				"mode": "SPATIAL",
+				"node_id": "c01e01_closing_route",
+				"route_contract": {
+					"completion_policy": "route_complete_plus_required_interactions_not_all_hotspots",
+					"optional_interactions": [
+						"inspect_cross_floor_view",
+						"inspect_outside_work_screen"
+					],
+					"required_interactions": [
+						"confirm_closing_count",
+						"inspect_guardian_chest_light",
+						"inspect_model_hospital_latch",
+						"inspect_real_machine_stage",
+						"inspect_robot_dog_route",
+						"inspect_far_star_cache",
+						"inspect_archive_closing_box",
+						"inspect_zero_gate"
+					],
+					"station_order": [
+						"front_hall",
+						"guardian_atrium",
+						"model_hospital",
+						"real_machine_stage",
+						"old_film_hall",
+						"archive_room"
+					],
+					"unlock_room_after_route": "staff_corridor"
+				},
+				"scene_id": "SCN_C01E01_CLOSING_ROUTE",
+				"soft_fail_edges": [
+					"c01e01_zero_and_lockdown"
+				],
+				"spatial_cast": [
+					{
+						"accent": "58c8d9",
+						"actor_id": "CH_JICUN",
+						"display_name": "纪存",
+						"portrait_path": "res://assets/portraits/portrait_jicun.png",
+						"side": "left"
+					},
+					{
+						"accent": "f0bd45",
+						"actor_id": "CH001",
+						"display_name": "兜灯",
+						"portrait_path": "res://assets/portraits/portrait_doudeng.png",
+						"side": "right"
+					},
+					{
+						"accent": "e8a84c",
+						"actor_id": "CH_TANGJIAO",
+						"display_name": "唐胶",
+						"portrait_path": "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png",
+						"side": "right",
+						"source_rect": [
+							190.0,
+							25.0,
+							300.0,
+							336.0
+						]
+					},
+					{
+						"accent": "d9b547",
+						"actor_id": "CH057",
+						"display_name": "跌跌",
+						"portrait_path": "res://assets/battle_presentation/c01/story_first/sprite_diedie_idle_v01.png",
+						"side": "right"
+					}
+				],
+				"spatial_layout": {
+					"rooms": [
+						{
+							"description": "十九区总图、观众黄线和最后闭馆路线从这里开始。",
+							"label": "前厅总图",
+							"landmark": "只亮L1八区的十九区总图",
+							"palette": "closing_front",
+							"play_rect": [
+								28.0,
+								96.0,
+								790.0,
+								586.0
+							],
+							"portals": [
+								{
+									"interaction_radius": 66.0,
+									"label": "万机中庭",
+									"portal_id": "front_to_guardian",
+									"position": [
+										760.0,
+										548.0
+									],
+									"target_room_id": "guardian_atrium",
+									"target_spawn_id": "from_front",
+									"verb": "沿闭馆箭头前进"
+								}
+							],
+							"room_id": "front_hall",
+							"spawn_points": {
+								"entry": [
+									116.0,
+									548.0
+								],
+								"from_guardian": [
+									730.0,
+									548.0
+								]
+							}
+						},
+						{
+							"description": "十八米巨神半跪在二十四米净高中庭里，胸口只留一圈低热导览灯。",
+							"label": "馆守Z基座",
+							"landmark": "馆守Z半跪膝部与胸灯",
+							"palette": "giant_atrium",
+							"play_rect": [
+								28.0,
+								96.0,
+								790.0,
+								586.0
+							],
+							"portals": [
+								{
+									"interaction_radius": 66.0,
+									"label": "前厅总图",
+									"portal_id": "guardian_to_front",
+									"position": [
+										54.0,
+										548.0
+									],
+									"target_room_id": "front_hall",
+									"target_spawn_id": "from_guardian",
+									"use_saved_return": true,
+									"verb": "沿原路返回"
+								},
+								{
+									"interaction_radius": 66.0,
+									"label": "合体台与模型病院",
+									"portal_id": "guardian_to_model",
+									"position": [
+										760.0,
+										548.0
+									],
+									"target_room_id": "model_hospital",
+									"target_spawn_id": "from_guardian",
+									"verb": "绕过半跪膝部"
+								}
+							],
+							"room_id": "guardian_atrium",
+							"spawn_points": {
+								"from_front": [
+									78.0,
+									548.0
+								],
+								"from_model": [
+									730.0,
+									548.0
+								]
+							}
+						},
+						{
+							"description": "锁扣、失败零件、重涂盒和修理病历沿暖灯一直铺向视野深处。",
+							"label": "合体台 / 模型病院",
+							"landmark": "三相架与补好腕轴的社勇王模型",
+							"palette": "warm_model_hospital",
+							"play_rect": [
+								28.0,
+								96.0,
+								790.0,
+								586.0
+							],
+							"portals": [
+								{
+									"interaction_radius": 66.0,
+									"label": "馆守Z基座",
+									"portal_id": "model_to_guardian",
+									"position": [
+										54.0,
+										548.0
+									],
+									"target_room_id": "guardian_atrium",
+									"target_spawn_id": "from_model",
+									"use_saved_return": true,
+									"verb": "穿过巨神年表"
+								},
+								{
+									"interaction_radius": 66.0,
+									"label": "现实机器舞台",
+									"portal_id": "model_to_real",
+									"position": [
+										760.0,
+										548.0
+									],
+									"target_room_id": "real_machine_stage",
+									"target_spawn_id": "from_model",
+									"verb": "沿工程灯带前进"
+								}
+							],
+							"room_id": "model_hospital",
+							"spawn_points": {
+								"from_guardian": [
+									78.0,
+									548.0
+								],
+								"from_real": [
+									730.0,
+									548.0
+								]
+							}
+						},
+						{
+							"description": "软垫、充电线、失败记录白板与0.7米小机把巨神尺度拉回脚边。",
+							"label": "现实机器舞台",
+							"landmark": "跌跌左膝与机器犬侧门路线",
+							"palette": "civic_lab",
+							"play_rect": [
+								28.0,
+								96.0,
+								790.0,
+								586.0
+							],
+							"portals": [
+								{
+									"interaction_radius": 66.0,
+									"label": "模型病院",
+									"portal_id": "real_to_model",
+									"position": [
+										54.0,
+										548.0
+									],
+									"target_room_id": "model_hospital",
+									"target_spawn_id": "from_real",
+									"use_saved_return": true,
+									"verb": "跨过充电线"
+								},
+								{
+									"interaction_radius": 66.0,
+									"label": "旧影像厅",
+									"portal_id": "real_to_film",
+									"position": [
+										760.0,
+										548.0
+									],
+									"target_room_id": "old_film_hall",
+									"target_spawn_id": "from_real",
+									"verb": "经过软垫舞台"
+								}
+							],
+							"room_id": "real_machine_stage",
+							"spawn_points": {
+								"from_film": [
+									730.0,
+									548.0
+								],
+								"from_model": [
+									78.0,
+									548.0
+								]
+							}
+						},
+						{
+							"description": "最后一卷片和延迟回信副柜在同一排旧屏下发出不同年代的光。",
+							"label": "旧影像厅",
+							"landmark": "旧片、灾变警报与只读回信副柜",
+							"palette": "archive_snow",
+							"play_rect": [
+								28.0,
+								96.0,
+								790.0,
+								586.0
+							],
+							"portals": [
+								{
+									"interaction_radius": 66.0,
+									"label": "现实机器舞台",
+									"portal_id": "film_to_real",
+									"position": [
+										54.0,
+										548.0
+									],
+									"target_room_id": "real_machine_stage",
+									"target_spawn_id": "from_film",
+									"use_saved_return": true,
+									"verb": "穿过旧弹幕雪"
+								},
+								{
+									"interaction_radius": 66.0,
+									"label": "档案室",
+									"portal_id": "film_to_archive",
+									"position": [
+										760.0,
+										548.0
+									],
+									"target_room_id": "archive_room",
+									"target_spawn_id": "from_film",
+									"verb": "沿员工灯带前进"
+								}
+							],
+							"room_id": "old_film_hall",
+							"spawn_points": {
+								"from_archive": [
+									730.0,
+									548.0
+								],
+								"from_real": [
+									78.0,
+									548.0
+								]
+							}
+						},
+						{
+							"description": "闭馆箱还没有合盖，七海的旧杯子和今晚最后一批纸质记录放在一起。",
+							"label": "档案室",
+							"landmark": "没有合盖的闭馆箱",
+							"palette": "quiet_archive",
+							"play_rect": [
+								28.0,
+								96.0,
+								790.0,
+								586.0
+							],
+							"portals": [
+								{
+									"interaction_radius": 66.0,
+									"label": "旧影像厅",
+									"portal_id": "archive_to_film",
+									"position": [
+										54.0,
+										548.0
+									],
+									"target_room_id": "old_film_hall",
+									"target_spawn_id": "from_archive",
+									"use_saved_return": true,
+									"verb": "退回旧屏走廊"
+								},
+								{
+									"interaction_radius": 66.0,
+									"label": "员工支廊 / 0号门",
+									"portal_id": "archive_to_corridor",
+									"position": [
+										760.0,
+										548.0
+									],
+									"requires_route_complete": true,
+									"target_room_id": "staff_corridor",
+									"target_spawn_id": "from_archive",
+									"verb": "完成六站后进入员工支廊"
+								}
+							],
+							"room_id": "archive_room",
+							"spawn_points": {
+								"from_corridor": [
+									730.0,
+									548.0
+								],
+								"from_film": [
+									78.0,
+									548.0
+								]
+							}
+						},
+						{
+							"description": "不反光的黑门尽头没有导览标识，只有地板深处传来的机械咬合。",
+							"label": "员工支廊 / 0号门",
+							"landmark": "0号侧廊黑门",
+							"palette": "zero_black",
+							"play_rect": [
+								28.0,
+								96.0,
+								790.0,
+								586.0
+							],
+							"portals": [
+								{
+									"interaction_radius": 66.0,
+									"label": "档案室",
+									"portal_id": "corridor_to_archive",
+									"position": [
+										54.0,
+										548.0
+									],
+									"target_room_id": "archive_room",
+									"target_spawn_id": "from_corridor",
+									"use_saved_return": true,
+									"verb": "退回有灯的地方"
+								}
+							],
+							"room_id": "staff_corridor",
+							"spawn_points": {
+								"from_archive": [
+									78.0,
+									548.0
+								]
+							}
+						}
+					],
+					"start_room_id": "front_hall",
+					"start_spawn_id": "entry"
+				},
+				"spatial_npcs": [],
+				"stable_objects": [
+					{
+						"initial_state": "route_not_counted",
+						"interaction_offers": [
+							{
+								"action": "inspect",
+								"actor_id": "CH_JICUN",
+								"add_tags": [
+									"required_route",
+									"people_first"
+								],
+								"failure_continuation": {
+									"player_feedback": "人数确认失败时仍留在前厅，可重新读取黄线角标。",
+									"policy": "remain_in_spatial",
+									"state_change": "none"
+								},
+								"first_sequence": [
+									{
+										"beat_id": "count_staff_groups",
+										"speaker": "前厅值守员",
+										"stage_action": "把小满、阿澄和自己圈成同一组",
+										"text": "黄线里二十九。孩子跟我，三个人不拆。你们三个工作人员另算。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "count_jicun_total",
+										"speaker": "纪存",
+										"stage_action": "在临时闭馆终端上写下32",
+										"text": "馆内三十二，待送到前厅二十九。先别催门，我要知道谁不能被拆开。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "count_player_order",
+										"choices": [
+											{
+												"choice_id": "care_group_first",
+												"label": "先核C组照看关系"
+											},
+											{
+												"choice_id": "slow_group_first",
+												"label": "先核D组牵引条件"
+											}
+										],
+										"speaker": "纪存",
+										"text": "照看组和慢速组都要单独过线。先核哪一组？"
+									},
+									{
+										"beat_id": "count_care_group",
+										"requires_choices": {
+											"count_player_order": "care_group_first"
+										},
+										"speaker": "前厅值守员",
+										"stage_action": "把两个孩子往自己身边拢了半步",
+										"text": "C组三人。谁先到门口都不算，三个人一起到才算。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "count_slow_group",
+										"requires_choices": {
+											"count_player_order": "slow_group_first"
+										},
+										"speaker": "纪存",
+										"stage_action": "把维修员和四名需协助成人标在同一条侧线",
+										"text": "D组五人，要牵引，也要比别人多一扇侧门。别拿平均速度骗自己。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "count_route_close",
+										"speaker": "纪存",
+										"stage_action": "只点亮今晚可走的六站",
+										"text": "好。十九区先别装作都能走。今晚只有六站，走完再熄灯。"
+									}
+								],
+								"first_text": "十九区只亮L1八区；黄线里二十九人，三名核心工作人员另算。今晚只走六站。",
+								"known_state": "count_and_route_confirmed",
+								"offer_id": "confirm_closing_count",
+								"outcome_contract": {
+									"kind": "world_object_change",
+									"known_state": "count_and_route_confirmed",
+									"target_id": "OBJ_C01E01_CLOSING_ROUTE"
+								},
+								"repeat_policy": "once_then_recap",
+								"repeat_text": "路线仍是六站。二十九人还在黄线内，没有任何一组被拆开。",
+								"speaker": "纪存"
+							}
+						],
+						"interaction_radius": 88.0,
+						"label": "最后一条闭馆路线",
+						"position": [
+							320.0,
+							250.0
+						],
+						"room_id": "front_hall",
+						"stable_object_id": "OBJ_C01E01_CLOSING_ROUTE"
+					},
+					{
+						"initial_state": "outer_ring_standby",
+						"interaction_offers": [
+							{
+								"action": "inspect",
+								"actor_id": "CH001",
+								"add_tags": [
+									"required_route",
+									"scene_support"
+								],
+								"failure_continuation": {
+									"player_feedback": "胸灯不可启动时仍可确认主动力断开和兜灯硬停边界。",
+									"policy": "remain_in_spatial",
+									"state_change": "none"
+								},
+								"first_sequence": [
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "guardian_jicun_reads",
+										"speaker": "纪存",
+										"stage_action": "沿维修牌读到主动力断开",
+										"text": "主动力断了，右臂还连着。能亮的只剩胸口外圈。"
+									},
+									{
+										"actor_id": "CH001",
+										"beat_id": "guardian_doudeng_limit",
+										"speaker": "兜灯",
+										"stage_action": "把硬停器扣在自己腕上",
+										"text": "外圈、低热。温度过线，我先掐。它今晚不会站起来。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "guardian_jicun_pushes",
+										"speaker": "纪存",
+										"text": "我要是喊你再多开一瓣呢？"
+									},
+									{
+										"actor_id": "CH001",
+										"beat_id": "guardian_doudeng_answer",
+										"speaker": "兜灯",
+										"stage_action": "检查硬停器是否咬合",
+										"text": "那我先掐，再听你解释。你喊得响，不算散热。"
+									}
+								],
+								"first_text": "主动力断开。只准外圈低热导览灯；温度过线，兜灯的硬停器会先于任何口令切断。",
+								"known_state": "low_heat_and_hard_stop_confirmed",
+								"offer_id": "inspect_guardian_chest_light",
+								"outcome_contract": {
+									"kind": "world_object_change",
+									"known_state": "low_heat_and_hard_stop_confirmed",
+									"target_id": "OBJ_C01E01_GUARDIAN_CHEST_LIGHT"
+								},
+								"repeat_policy": "once_then_recap",
+								"repeat_text": "胸灯仍是READY。外圈、低热、硬停；馆守Z不会在第一话站起来。",
+								"speaker": "兜灯"
+							},
+							{
+								"action": "look_up",
+								"add_tags": [
+									"optional_scale_view"
+								],
+								"failure_continuation": {
+									"player_feedback": "视点被遮挡时仍保留馆守Z低热状态，不影响主线。",
+									"policy": "short_recap",
+									"state_change": "none"
+								},
+								"first_text": "镜头越过馆守Z膝部和头顶，穿过二十四米中庭净高；L2舰桥廊、飞行器天桥和B1重型维修架只在远景与总图中可见。",
+								"known_state": "museum_vertical_scale_seen",
+								"offer_id": "inspect_cross_floor_view",
+								"outcome_contract": {
+									"kind": "world_object_change",
+									"known_state": "museum_vertical_scale_seen",
+									"target_id": "OBJ_C01E01_GUARDIAN_CHEST_LIGHT"
+								},
+								"repeat_policy": "once_then_recap",
+								"repeat_text": "灰色楼层仍锁着。看得见，不等于今晚能走进去。",
+								"speaker": "旁白"
+							}
+						],
+						"interaction_radius": 90.0,
+						"label": "馆守Z低热胸灯",
+						"position": [
+							500.0,
+							238.0
+						],
+						"room_id": "guardian_atrium",
+						"stable_object_id": "OBJ_C01E01_GUARDIAN_CHEST_LIGHT"
+					},
+					{
+						"initial_state": "second_latch_reversed",
+						"interaction_offers": [
+							{
+								"action": "steady",
+								"actor_id": "CH_TANGJIAO",
+								"add_tags": [
+									"required_route",
+									"model_hospital_care"
+								],
+								"failure_continuation": {
+									"player_feedback": "锁扣仍会回弹，纪存可重新托住模型并清理黄线边的散件。",
+									"policy": "remain_in_spatial",
+									"state_change": "none"
+								},
+								"first_sequence": [
+									{
+										"beat_id": "model_latch_click",
+										"speaker": "旁白",
+										"stage_action": "三相架第二个锁扣弹开，半片透明件滑向黄线",
+										"text": "塑料只响了一声。唐胶和纪存同时低头，差点撞在一起。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "model_jicun_stops",
+										"speaker": "纪存",
+										"stage_action": "鞋尖挡住透明件",
+										"text": "停。第二个锁扣。"
+									},
+									{
+										"actor_id": "CH_TANGJIAO",
+										"beat_id": "model_tangjiao_denies",
+										"speaker": "唐胶",
+										"stage_action": "伸手去托模型腰部",
+										"text": "反了。不是我装的。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "model_jicun_counts_staff",
+										"speaker": "纪存",
+										"stage_action": "看了一眼空掉的工作台",
+										"text": "馆里今晚只剩三个工作人员。你可以再缩小一点范围。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "model_player_priority",
+										"choices": [
+											{
+												"choice_id": "clear_floor_first",
+												"label": "先收观众脚边的散件"
+											},
+											{
+												"choice_id": "support_model_first",
+												"label": "先托住模型腰部"
+											}
+										],
+										"speaker": "纪存",
+										"text": "先接哪边？"
+									},
+									{
+										"actor_id": "CH_TANGJIAO",
+										"beat_id": "model_clear_floor",
+										"requires_choices": {
+											"model_player_priority": "clear_floor_first"
+										},
+										"speaker": "唐胶",
+										"stage_action": "把浅盘踢到纪存鞋边",
+										"text": "对，先清脚边。模型晚三秒不会委屈，观众踩上去会。"
+									},
+									{
+										"actor_id": "CH_TANGJIAO",
+										"beat_id": "model_support_body",
+										"requires_choices": {
+											"model_player_priority": "support_model_first"
+										},
+										"speaker": "唐胶",
+										"stage_action": "把纪存的手从肩甲挪到腰侧",
+										"text": "托腰，别托肩。肩轴刚补过，你一使劲我今晚又多一床病号。"
+									},
+									{
+										"actor_id": "CH_TANGJIAO",
+										"beat_id": "model_tangjiao_last_night",
+										"speaker": "唐胶",
+										"stage_action": "锁扣重新咬合，手却没有立刻松开",
+										"text": "反正没有明天。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "model_jicun_last_night",
+										"speaker": "纪存",
+										"stage_action": "把最后一片散件放回浅盘",
+										"text": "那也别让它最后一晚散在观众脚边。"
+									}
+								],
+								"first_text": "三相架第二个锁扣反装，散件已经滑到观众鞋边。先清脚边，再托住模型，唐胶才能把锁扣重新咬合。",
+								"known_state": "latch_reset_and_floor_cleared",
+								"offer_id": "inspect_model_hospital_latch",
+								"outcome_contract": {
+									"kind": "world_object_change",
+									"known_state": "latch_reset_and_floor_cleared",
+									"target_id": "OBJ_C01E01_MODEL_HOSPITAL_LATCH"
+								},
+								"repeat_policy": "once_then_recap",
+								"repeat_text": "锁扣已经回到正向，散件也收进浅盘。唐胶仍用指腹压着接缝，等最后一次回弹。",
+								"speaker": "唐胶"
+							}
+						],
+						"interaction_radius": 88.0,
+						"label": "三相架反装锁扣与安全罩",
+						"position": [
+							480.0,
+							352.0
+						],
+						"room_id": "model_hospital",
+						"stable_object_id": "OBJ_C01E01_MODEL_HOSPITAL_LATCH"
+					},
+					{
+						"initial_state": "left_knee_squeal",
+						"interaction_offers": [
+							{
+								"action": "listen",
+								"actor_id": "CH_JICUN",
+								"add_tags": [
+									"required_route",
+									"body_evidence"
+								],
+								"failure_continuation": {
+									"player_feedback": "没听清时仍可观察软垫与失败记录白板，不封锁路线。",
+									"policy": "remain_in_spatial",
+									"state_change": "none"
+								},
+								"first_sequence": [
+									{
+										"beat_id": "diedie_knee_sound",
+										"speaker": "旁白",
+										"stage_action": "左膝电机先尖叫半秒，身体随后向左偏",
+										"text": "跌跌刚把脚抬离充电线，软垫机还没动，它的左膝先把失败预告了一遍。"
+									},
+									{
+										"actor_id": "CH057",
+										"beat_id": "diedie_self_report",
+										"speaker": "跌跌",
+										"stage_action": "摄像头转向左侧软垫",
+										"text": "左膝行程……未完成。巡检可继续。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "diedie_player_response",
+										"choices": [
+											{
+												"choice_id": "observe_before_help",
+												"label": "先听完左膝那半秒"
+											},
+											{
+												"choice_id": "ask_before_help",
+												"label": "先问跌跌要不要扶"
+											}
+										],
+										"speaker": "纪存",
+										"text": "它还没倒。现在怎么接？"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "diedie_observe_branch",
+										"requires_choices": {
+											"diedie_player_response": "observe_before_help"
+										},
+										"speaker": "纪存",
+										"stage_action": "让软垫机往左挪半米",
+										"text": "先别碰它。垫子往左。它下次多半还往这里倒。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "diedie_ask_branch",
+										"requires_choices": {
+											"diedie_player_response": "ask_before_help"
+										},
+										"speaker": "纪存",
+										"text": "跌跌，要扶正，还是把垫子移过去？"
+									},
+									{
+										"actor_id": "CH057",
+										"beat_id": "diedie_answers_help",
+										"requires_choices": {
+											"diedie_player_response": "ask_before_help"
+										},
+										"speaker": "跌跌",
+										"stage_action": "右脚向左侧软垫点了两下",
+										"text": "拒绝扶正。请求左侧软垫。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "diedie_route_evidence",
+										"speaker": "纪存",
+										"stage_action": "在终端记下左膝声与侧倒方向",
+										"text": "记它怎么倒，别先替它站好。这半秒以后可能是一条路。"
+									}
+								],
+								"first_text": "跌跌迈步前，左膝先尖叫半秒。纪存让软垫机往左挪：它下一次多半还是往这个方向倒。",
+								"known_state": "fall_direction_known",
+								"offer_id": "inspect_real_machine_stage",
+								"outcome_contract": {
+									"kind": "world_object_change",
+									"known_state": "fall_direction_known",
+									"target_id": "OBJ_C01E01_DIEDIE_BODY"
+								},
+								"repeat_policy": "once_then_recap",
+								"repeat_text": "左膝仍先响半秒。摔倒方向不是随机笑料，是身体留下的路线信息。",
+								"speaker": "纪存"
+							}
+						],
+						"interaction_radius": 86.0,
+						"label": "跌跌的左膝与侧倒方向",
+						"position": [
+							350.0,
+							430.0
+						],
+						"room_id": "real_machine_stage",
+						"stable_object_id": "OBJ_C01E01_DIEDIE_BODY"
+					},
+					{
+						"initial_state": "head_turns_to_tool_zone",
+						"interaction_offers": [
+							{
+								"action": "observe",
+								"actor_id": "CH001",
+								"add_tags": [
+									"required_route",
+									"machine_agency"
+								],
+								"failure_continuation": {
+									"player_feedback": "侧门声源尚未确认；机器犬不会被替它指定救援对象。",
+									"policy": "remain_in_spatial",
+									"state_change": "none"
+								},
+								"first_sequence": [
+									{
+										"beat_id": "dog_head_turn",
+										"speaker": "旁白",
+										"stage_action": "机器犬越过纪存，连续两次把头转向维修侧门",
+										"text": "侧门后没有人说话，只有工具柜里很轻的两下敲击。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "dog_jicun_tests",
+										"speaker": "纪存",
+										"stage_action": "在它左侧护栏上敲了一下",
+										"text": "这边。"
+									},
+									{
+										"beat_id": "dog_ignores_test",
+										"speaker": "旁白",
+										"stage_action": "机器犬没回头；工具柜又响两下，它往侧门挪了半步",
+										"text": "它听见了纪存，只是没有选纪存。"
+									},
+									{
+										"actor_id": "CH001",
+										"beat_id": "dog_doudeng_reads",
+										"speaker": "兜灯",
+										"stage_action": "蹲下检查侧门净宽",
+										"text": "别挡它。门后像是维修员，通道只够它进。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "dog_jicun_accepts",
+										"speaker": "纪存",
+										"stage_action": "把侧门标进临时路线",
+										"text": "行。它认人，我们找门。"
+									}
+								],
+								"first_text": "机器犬两次把头转向维修侧门和工具柜。门后空间很窄，大机进不去；它已经把那边当成需要确认的声源。",
+								"known_state": "side_door_sound_route_seen",
+								"offer_id": "inspect_robot_dog_route",
+								"outcome_contract": {
+									"kind": "world_object_change",
+									"known_state": "side_door_sound_route_seen",
+									"target_id": "OBJ_C01E01_ROBOT_DOG_ROUTE"
+								},
+								"repeat_policy": "once_then_recap",
+								"repeat_text": "它仍朝侧门听。玩家以后决定怎样开路，不替它决定该救谁。",
+								"speaker": "兜灯"
+							},
+							{
+								"action": "inspect",
+								"add_tags": [
+									"optional_roster_view"
+								],
+								"failure_continuation": {
+									"player_feedback": "外部屏损坏时只跳过可选机体显影，不影响闭馆救援。",
+									"policy": "short_recap",
+									"state_change": "none"
+								},
+								"first_text": "馆外取件屏里，社勇王在维修锁定中朝红色禁吊点转头；市政吊装机放稳支腿、换受力点并横移半步，让夜班车队回家。",
+								"known_state": "outside_work_chain_seen",
+								"offer_id": "inspect_outside_work_screen",
+								"outcome_contract": {
+									"kind": "world_object_change",
+									"known_state": "outside_work_chain_seen",
+									"target_id": "OBJ_C01E01_ROBOT_DOG_ROUTE"
+								},
+								"repeat_policy": "once_then_recap",
+								"repeat_text": "屏幕仍显示两种工作：一台停下危险吊装，一台把轨道稳稳搬完。",
+								"speaker": "旁白"
+							}
+						],
+						"interaction_radius": 86.0,
+						"label": "机器犬的侧门与声源路线",
+						"position": [
+							610.0,
+							430.0
+						],
+						"room_id": "real_machine_stage",
+						"stable_object_id": "OBJ_C01E01_ROBOT_DOG_ROUTE"
+					},
+					{
+						"initial_state": "offline_cache_idle",
+						"interaction_offers": [
+							{
+								"action": "read_only",
+								"actor_id": "CH_JICUN",
+								"add_tags": [
+									"required_route",
+									"macro_shadow",
+									"read_only"
+								],
+								"failure_continuation": {
+									"player_feedback": "副柜仍是只读离线缓存；可重新核对信封与元数据。",
+									"policy": "remain_in_spatial",
+									"state_change": "none"
+								},
+								"first_sequence": [
+									{
+										"beat_id": "farstar_envelope_prints",
+										"speaker": "旁白",
+										"stage_action": "旧屏熄到一半，只读副柜吐出一只没有正文页的信封",
+										"text": "收件人已经死了很多年。柜子仍把信送到了今晚。"
+									},
+									{
+										"beat_id": "farstar_terminal_reads",
+										"source_kind": "system",
+										"speaker": "档案终端",
+										"stage_action": "离线缓存元数据逐行展开",
+										"text": "来源：L3延迟缓存。正文：0字。回复权限：无。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "farstar_player_check",
+										"choices": [
+											{
+												"choice_id": "capture_recipient_field",
+												"label": "先拍下收件栏"
+											},
+											{
+												"choice_id": "verify_offline_source",
+												"label": "先核对离线来源"
+											}
+										],
+										"speaker": "纪存",
+										"text": "先看哪一处？"
+									},
+									{
+										"beat_id": "farstar_recipient_flash",
+										"requires_choices": {
+											"farstar_player_check": "capture_recipient_field"
+										},
+										"source_kind": "system",
+										"speaker": "档案终端",
+										"stage_action": "收件栏闪过纪存员工编号后恢复死者姓名",
+										"text": "异常字段已截取。无法复现。"
+									},
+									{
+										"beat_id": "farstar_source_check",
+										"requires_choices": {
+											"farstar_player_check": "verify_offline_source"
+										},
+										"source_kind": "system",
+										"speaker": "档案终端",
+										"stage_action": "通讯栈保持灰色，只有离线缓存校验亮起",
+										"text": "未建立实时链路。缓存时钟与L1相差七秒。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "farstar_jicun_closes",
+										"speaker": "纪存",
+										"stage_action": "把空信封装进透明保护套，没有触碰灰色回复区",
+										"text": "记错钟，记闪过的编号。别替空白补话。"
+									}
+								],
+								"first_text": "信封写给一名早已去世的远征者，正文空白；收件栏只闪过一次纪存员工编号。副柜没有回复键。",
+								"known_state": "jicun_id_flash_unverified",
+								"offer_id": "inspect_far_star_cache",
+								"outcome_contract": {
+									"kind": "world_object_change",
+									"known_state": "jicun_id_flash_unverified",
+									"target_id": "OBJ_C01E01_FAR_STAR_CACHE"
+								},
+								"repeat_policy": "once_then_recap",
+								"repeat_text": "仍是离线只读缓存。没有回复键，也没有稳定远星通信。",
+								"speaker": "纪存"
+							}
+						],
+						"interaction_radius": 84.0,
+						"label": "L1延迟回信只读副柜",
+						"position": [
+							580.0,
+							310.0
+						],
+						"room_id": "old_film_hall",
+						"stable_object_id": "OBJ_C01E01_FAR_STAR_CACHE",
+						"tactical_skip_reason": "本话只允许L1读取L3离线缓存；空白回信不能被武器化、占格或转成战斗加成。"
+					},
+					{
+						"initial_state": "cup_drying_lid_open",
+						"interaction_offers": [
+							{
+								"action": "pack",
+								"actor_id": "CH_JICUN",
+								"add_tags": [
+									"required_route",
+									"ordinary_life_object",
+									"qihai_private_continuity"
+								],
+								"failure_continuation": {
+									"player_feedback": "杯底尚未擦干，闭馆箱保持开启；可重新整理餐具。",
+									"policy": "remain_in_spatial",
+									"state_change": "none"
+								},
+								"first_sequence": [
+									{
+										"beat_id": "archive_two_cups",
+										"speaker": "旁白",
+										"stage_action": "一只洗净的杯子在闭馆箱里晾着，另一只仍留在水槽边",
+										"text": "该带走的那只已经洗净。该回来的人，杯子还在原位。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "archive_jicun_curator",
+										"speaker": "纪存",
+										"stage_action": "用指背碰了碰馆长杯口的灰",
+										"text": "馆长的杯子还在。人不在，杯子倒挺守时。"
+									},
+									{
+										"beat_id": "archive_dinner_alarm",
+										"source_kind": "system",
+										"speaker": "档案终端",
+										"stage_action": "私人提醒在角落弹出，没有公务边框",
+										"text": "21:00：晚饭。餐具。把杯子还给七海。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "archive_jicun_almost_promises",
+										"speaker": "纪存",
+										"stage_action": "把餐具压在干毛巾下，手停在箱盖上",
+										"text": "马上。……这次我争取。"
+									},
+									{
+										"beat_id": "archive_lid_open",
+										"speaker": "旁白",
+										"stage_action": "远处传来旧屏退片声，纪存松开箱盖",
+										"text": "箱盖弹回一条缝。闭馆路线还剩旧影像厅的回执没有归档。"
+									}
+								],
+								"first_text": "七海的杯子已经洗净，杯底还湿；馆长的杯子仍在水槽边。纪存把餐具放进闭馆箱，却没有合盖。",
+								"known_state": "closing_box_ready_lid_open",
+								"offer_id": "inspect_archive_closing_box",
+								"outcome_contract": {
+									"kind": "world_object_change",
+									"known_state": "closing_box_ready_lid_open",
+									"target_id": "OBJ_C01E01_ARCHIVE_CLOSING_BOX"
+								},
+								"repeat_policy": "once_then_recap",
+								"repeat_text": "闭馆箱仍留着一条缝。杯子和餐具都在，九点提醒还没有被划掉。",
+								"speaker": "纪存"
+							}
+						],
+						"interaction_radius": 88.0,
+						"label": "没有合盖的闭馆箱",
+						"position": [
+							500.0,
+							360.0
+						],
+						"room_id": "archive_room",
+						"stable_object_id": "OBJ_C01E01_ARCHIVE_CLOSING_BOX",
+						"tactical_skip_reason": "旧杯、餐具和未合盖闭馆箱只承担纪存与七海的普通生活连续性；本话不把私人日常物件转成战斗资源、证据或世界钥匙。"
+					},
+					{
+						"initial_state": "dark_locked",
+						"interaction_offers": [
+							{
+								"action": "inspect",
+								"actor_id": "CH_JICUN",
+								"add_tags": [
+									"required_route",
+									"zero_signal"
+								],
+								"failure_continuation": {
+									"player_feedback": "黑门不打开；异常以风险闸咬合继续，不要求玩家进入0号内部。",
+									"policy": "continue_with_consequence",
+									"state_change": "door_remains_locked"
+								},
+								"first_sequence": [
+									{
+										"beat_id": "zero_panel_message",
+										"source_kind": "system",
+										"speaker": "0号旧面板",
+										"stage_action": "黑门没有打开",
+										"text": "管理员仍在馆内。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "zero_jicun_reaches",
+										"speaker": "纪存",
+										"stage_action": "手停在距面板两指的位置",
+										"text": "我还没碰。"
+									},
+									{
+										"actor_id": "CH001",
+										"beat_id": "zero_doudeng_hears",
+										"speaker": "兜灯",
+										"stage_action": "通讯里先传来一声金属咬合",
+										"text": "我知道。声在你手前面。退半步。"
+									},
+									{
+										"actor_id": "CH_JICUN",
+										"beat_id": "zero_jicun_steps_back",
+										"speaker": "纪存",
+										"stage_action": "照做，视线仍停在门缝",
+										"text": "退了。它说的管理员，不一定是我。"
+									},
+									{
+										"beat_id": "zero_lock_bites",
+										"speaker": "旁白",
+										"stage_action": "员工廊地板深处机械咬合，灰图亮半格后锁死",
+										"text": "这一次，整层楼都听见了。"
+									}
+								],
+								"first_text": "管理员仍在馆内。门缝没有光；纪存伸手前，地板深处先传来一次沉重机械咬合。",
+								"known_state": "administrator_present_unverified",
+								"offer_id": "inspect_zero_gate",
+								"outcome_contract": {
+									"kind": "world_object_change",
+									"known_state": "administrator_present_unverified",
+									"target_id": "OBJ_C01E01_ZERO_GATE"
+								},
+								"repeat_policy": "disabled_after_commit",
+								"repeat_text": "门重新锁死，只剩低频余响。它没有解释谁是管理员。",
+								"speaker": "0号旧面板"
+							}
+						],
+						"interaction_radius": 90.0,
+						"label": "0号侧廊黑门",
+						"locked_text": "六站尚未完成，员工支廊不会开放。",
+						"position": [
+							620.0,
+							280.0
+						],
+						"room_id": "staff_corridor",
+						"stable_object_id": "OBJ_C01E01_ZERO_GATE"
+					}
+				],
+				"success_edges": [
+					"c01e01_zero_and_lockdown"
+				],
+				"title": "L1 / 最后一条闭馆路线",
+				"transaction_id": "C01E01:CLOSING_ROUTE:V01",
+				"transition": {
+					"accent": "49c7d8",
+					"cause": "二十九名观众仍在等待离馆；纪存必须完成固定馆址最后一次闭馆巡检。",
+					"continuity": {
+						"action_refs": [
+							"OUTCOME_C01E01_BEFORE_NINE_V01"
+						],
+						"object_refs": [
+							"OBJ_C01E01_CLOSING_ROUTE"
+						],
+						"responsibility_refs": [
+							"CH_JICUN",
+							"C01E01_LOCAL_EVAC_GROUP_COUNT"
+						],
+						"types": [
+							"object",
+							"action",
+							"responsibility"
+						]
+					},
+					"duration": 1.1,
+					"eyebrow": "十九区总图只亮了L1八区",
+					"fade_seconds": 0.4,
+					"handoff": "沿唯一闭馆箭头走六站；灰色楼层与远景只证明还有更多地方。",
+					"kind": "location_shift",
+					"location": "万机馆 · L1观众层",
+					"time_label": "20:50",
+					"title": "今晚只走六站",
+					"transition_id": "C01E01-TR-03-SIX-STOPS"
+				}
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"c01e01_small_machine_rescue"
+				],
+				"completion_contract": "OUTCOME_C01E01_ZERO_LOCKDOWN_V01",
+				"failure_edges": [
+					"c01e01_small_machine_rescue"
+				],
+				"lines": [
+					{
+						"beat_id": "c01e01_zero_01",
+						"source_kind": "system",
+						"speaker": "0号旧面板",
+						"stage_action": "黑门没有打开",
+						"text": "管理员仍在馆内。"
+					},
+					{
+						"beat_id": "c01e01_zero_02",
+						"speaker": "旁白",
+						"stage_action": "员工廊地板深处机械咬合",
+						"text": "灰图上的旧搬运脊道亮了半格，又立即锁死。整座L1风险闸同时落下。"
+					},
+					{
+						"beat_id": "c01e01_zero_03",
+						"speaker": "预封存广播",
+						"stage_action": "路径框滑入主展厅",
+						"text": "正在建立无争议库存快照。请所有资产保持标准停机姿态。"
+					},
+					{
+						"actor_id": "CH057",
+						"beat_id": "c01e01_diedie_fall",
+						"speaker": "跌跌",
+						"stage_action": "走向充电台时摔倒",
+						"text": "左膝……未完成。巡检继续。"
+					},
+					{
+						"actor_id": "CH001",
+						"beat_id": "c01e01_doudeng_spine",
+						"speaker": "兜灯",
+						"stage_action": "看向旧脊道灰图",
+						"text": "开整条脊道，人能出去。后场也会全部露出去。开不开？"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e01_jicun_route",
+						"speaker": "纪存",
+						"stage_action": "只拆出一段消防回线",
+						"text": "不开整条。四组人不拿整座馆去赌。只用这段。"
+					},
+					{
+						"actor_id": "CH001",
+						"beat_id": "c01e01_doudeng_stop",
+						"speaker": "兜灯",
+						"stage_action": "硬停器扣上手腕",
+						"text": "胸灯只开外圈。温度过线，我先掐。你喊也没用。"
+					},
+					{
+						"actor_id": "CH_TANGJIAO",
+						"beat_id": "c01e01_tangjiao_veto",
+						"speaker": "唐胶",
+						"stage_action": "换掉纪存原先标出的反射角",
+						"text": "照你那样摆，膜没卷，罩先裂。柜子我挑，路线你重算。"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e01_jicun_team",
+						"speaker": "纪存",
+						"stage_action": "叠起观众、小机和两人的专业边界",
+						"text": "行。你们守住不能做的，剩下那条路我找。"
+					}
+				],
+				"mode": "NARRATIVE",
+				"node_id": "c01e01_zero_and_lockdown",
+				"outcome_facts": [
+					{
+						"id": "C01E01_LOCAL_ZERO_SIGNAL",
+						"to": "ADMINISTRATOR_PRESENT_UNVERIFIED"
+					},
+					{
+						"id": "C01E01_LOCAL_FULL_SPINE_EXPOSED",
+						"to": false
+					},
+					{
+						"id": "C01E01_LOCAL_FIRE_ROUTE_SEGMENT_AVAILABLE",
+						"to": true
+					}
+				],
+				"player_summary": "0号异常触发风险闸；纪存拒绝暴露完整搬运脊道，只拆出一段消防回线。",
+				"presentation": {
+					"background": "res://assets/backgrounds/story_first/bg_c01e01_zero_corridor_v01.png",
+					"cast": [
+						{
+							"accent": "58c8d9",
+							"actor_id": "CH_JICUN",
+							"display_name": "纪存",
+							"portrait_path": "res://assets/portraits/portrait_jicun.png",
+							"side": "left"
+						},
+						{
+							"accent": "e6a74f",
+							"actor_id": "CH001",
+							"display_name": "兜灯",
+							"portrait_path": "res://assets/portraits/portrait_doudeng.png",
+							"side": "right"
+						}
+					],
+					"eyebrow": "万机馆 · 员工支廊",
+					"profile": "standard_adv",
+					"time_label": "20:57",
+					"title": "管理员仍在馆内"
+				},
+				"scene_id": "SCN_C01E01_STORY_NARRATIVE",
+				"soft_fail_edges": [
+					"c01e01_small_machine_rescue"
+				],
+				"success_edges": [
+					"c01e01_small_machine_rescue"
+				],
+				"title": "旧警报 / 被列进库存的人",
+				"transaction_id": "C01E01:ZERO_LOCKDOWN:V01",
+				"transition": {
+					"accent": "e45e62",
+					"cause": "0号门自行亮字，旧搬运脊道亮了半格；整座L1风险闸随即落下。",
+					"continuity": {
+						"action_refs": [
+							"OUTCOME_C01E01_CLOSING_ROUTE_V01"
+						],
+						"object_refs": [
+							"OBJ_C01E01_ZERO_GATE",
+							"OBJ_C01E01_CLOSING_ROUTE",
+							"OBJ_C01E01_DIEDIE_BODY"
+						],
+						"responsibility_refs": [
+							"CH_JICUN",
+							"CH001",
+							"CH_TANGJIAO"
+						],
+						"types": [
+							"object",
+							"action",
+							"responsibility"
+						]
+					},
+					"duration": 1.25,
+					"eyebrow": "闭馆路线结束处",
+					"fade_seconds": 0.46,
+					"handoff": "预封存路径框把人和机器一起列进待处置资产区；纪存只公开一段消防回线。",
+					"kind": "pressure_escalation",
+					"location": "万机馆 · 员工支廊至主展厅",
+					"time_label": "20:57",
+					"title": "管理员仍在馆内",
+					"transition_id": "C01E01-TR-04-ZERO-LOCKDOWN"
+				}
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"battle_definition": {
+					"battle_clear_scope": "episode_local_until_rt013s",
+					"battle_id": "C01E01-SMALL-MACHINE-EVACUATION",
+					"canon_source": "DOC_V359_C01E01_STORY_FIRST_V1",
+					"failure_policy": "retry_without_commit",
+					"graybox_source": "DATA_C01E01_GRAYBOX_CONSTANTS_V1",
+					"grid": {
+						"blocked": [],
+						"height": 10.0,
+						"width": 8.0
+					},
+					"machine_claim_cues": [
+						{
+							"cue_id": "CUE_C01E01_DIEDIE_ACTIVE_FALL",
+							"unit_id": "diedie",
+							"visible_action": "跌跌收回撑地手，主动把肩壳压上路径框传感轨，并在最后一组通过后自己站起。"
+						},
+						{
+							"cue_id": "CUE_C01E01_GUARDIAN_DIM_PETAL",
+							"unit_id": "guardian_z_support",
+							"visible_action": "馆守Z不站起、不挥拳，只偏头并收暗靠近人群的一瓣胸灯。"
+						}
+					],
+					"mid_events": [
+						{
+							"actions": [],
+							"event_id": "C01E01-R1-FRAME-RECLOSE",
+							"message": "路径框记住了标准复位路线，地面箭头重新折回资产区。",
+							"timing": "scenario_round_end",
+							"turn": 1.0
+						},
+						{
+							"actions": [],
+							"event_id": "C01E01-R2-NINE-PM-DINNER-BAG",
+							"message": "九点钟响；机器犬拖着D5经过路径框，顺嘴叼走纪存的晚饭袋。",
+							"timing": "scenario_round_end",
+							"turn": 2.0
+						},
+						{
+							"actions": [],
+							"event_id": "C01E01-R3-GUARDIAN-DIMS-PETAL",
+							"message": "馆守Z只亮胸灯外圈，又收暗靠近机器犬的一瓣，把安全阴影让到它脚下。",
+							"timing": "scenario_support_confirmed",
+							"turn": 3.0
+						}
+					],
+					"objective_text": "让A11、B10、C3、D5四组共29人越过闭馆线，在第三回合抵达前厅黄线。",
+					"objectives": [
+						{
+							"cell": [
+								1.0,
+								1.0
+							],
+							"id": "yellow_line_a",
+							"integrity": 1.0,
+							"name": "A组黄线格",
+							"required": true,
+							"scenario_role": "staging_cell"
+						},
+						{
+							"cell": [
+								2.0,
+								1.0
+							],
+							"id": "yellow_line_b",
+							"integrity": 1.0,
+							"name": "B组黄线格",
+							"required": true,
+							"scenario_role": "staging_cell"
+						},
+						{
+							"cell": [
+								3.0,
+								1.0
+							],
+							"id": "yellow_line_c",
+							"integrity": 1.0,
+							"name": "C组黄线格",
+							"required": true,
+							"scenario_role": "staging_cell"
+						},
+						{
+							"cell": [
+								4.0,
+								1.0
+							],
+							"id": "yellow_line_d5",
+							"integrity": 1.0,
+							"name": "D5组黄线格",
+							"required": true,
+							"scenario_role": "staging_cell"
+						}
+					],
+					"patch_catalog": {},
+					"presentation_manifest_path": "res://assets/battle_presentation/c01/story_first/manifest.json",
+					"runtime_contract_source": "DATA_C01E01_RUNTIME_CONTRACT_V1",
+					"scenario_contract": {
+						"charge_cells": {
+							"diedie": [
+								0.0,
+								7.0
+							],
+							"machine_dog": [
+								7.0,
+								7.0
+							]
+						},
+						"dog_tether_contract": {
+							"accepted_patcher_count": 1.0,
+							"attach_action": "C01E01_OPEN_SIDE_DOOR_ACCEPT_PATCHER",
+							"attached_token_id": "evac_d5",
+							"independent_action_rounds": [
+								1.0
+							],
+							"shared_cell_after_attachment": true
+						},
+						"evac_routes": {
+							"evac_a11": [
+								[
+									1.0,
+									5.0
+								],
+								[
+									1.0,
+									4.0
+								],
+								[
+									1.0,
+									3.0
+								],
+								[
+									1.0,
+									2.0
+								],
+								[
+									1.0,
+									1.0
+								]
+							],
+							"evac_b10": [
+								[
+									2.0,
+									6.0
+								],
+								[
+									2.0,
+									5.0
+								],
+								[
+									2.0,
+									4.0
+								],
+								[
+									2.0,
+									3.0
+								],
+								[
+									2.0,
+									2.0
+								],
+								[
+									2.0,
+									1.0
+								]
+							],
+							"evac_c3": [
+								[
+									3.0,
+									6.0
+								],
+								[
+									3.0,
+									5.0
+								],
+								[
+									3.0,
+									4.0
+								],
+								[
+									3.0,
+									3.0
+								],
+								[
+									3.0,
+									2.0
+								],
+								[
+									3.0,
+									1.0
+								]
+							],
+							"evac_d5": [
+								[
+									6.0,
+									4.0
+								],
+								[
+									5.0,
+									4.0
+								],
+								[
+									4.0,
+									4.0
+								],
+								[
+									4.0,
+									3.0
+								],
+								[
+									4.0,
+									2.0
+								],
+								[
+									4.0,
+									1.0
+								]
+							]
+						},
+						"evac_steps_by_round": {
+							"evac_a11": [
+								2.0,
+								2.0,
+								0.0
+							],
+							"evac_b10": [
+								2.0,
+								2.0,
+								1.0
+							],
+							"evac_c3": [
+								2.0,
+								2.0,
+								1.0
+							],
+							"evac_d5": [
+								0.0,
+								3.0,
+								2.0
+							]
+						},
+						"evac_tick_priority": [
+							"evac_a11",
+							"evac_b10",
+							"evac_c3",
+							"evac_d5"
+						],
+						"failure_checkpoint": "battle_start",
+						"failure_settlement_round": 3.0,
+						"gate_dependencies": {
+							"1": {
+								"C01E01_OPEN_SIDE_DOOR_ACCEPT_PATCHER": [
+									"evac_d5"
+								],
+								"C01E01_RESET_MAIN_GATE": [
+									"evac_a11",
+									"evac_b10",
+									"evac_c3"
+								]
+							},
+							"2": {
+								"C01E01_ACTIVE_FALL_CONFIRMED": [
+									"evac_a11",
+									"evac_b10",
+									"evac_c3",
+									"evac_d5"
+								]
+							},
+							"3": {
+								"C01E01_SAFE_ANGLE_CONFIRMED": [
+									"evac_b10",
+									"evac_c3",
+									"evac_d5"
+								]
+							}
+						},
+						"path_frame_cells": [
+							[
+								0.0,
+								3.0
+							],
+							[
+								1.0,
+								3.0
+							],
+							[
+								2.0,
+								3.0
+							],
+							[
+								3.0,
+								3.0
+							],
+							[
+								4.0,
+								3.0
+							]
+						],
+						"phase_order": [
+							"player_units",
+							"evac_auto",
+							"environment",
+							"local_round_receipt"
+						],
+						"reflector_sockets": [
+							{
+								"cell": [
+									2.0,
+									7.0
+								],
+								"resolution": "BLOCKED_BY_DOUDENG"
+							},
+							{
+								"cell": [
+									3.0,
+									7.0
+								],
+								"resolution": "SAFE_ANGLE_CONFIRMED"
+							},
+							{
+								"cell": [
+									4.0,
+									7.0
+								],
+								"resolution": "BLOCKED_BY_DOUDENG"
+							}
+						],
+						"round_receipts": {
+							"1": {
+								"evac_a11": [
+									1.0,
+									3.0
+								],
+								"evac_b10": [
+									2.0,
+									4.0
+								],
+								"evac_c3": [
+									3.0,
+									4.0
+								],
+								"evac_d5": [
+									6.0,
+									4.0
+								],
+								"frame_state": "RECLOSING",
+								"machine_dog_state": "ATTACHED_TO_D5"
+							},
+							"2": {
+								"evac_a11": [
+									1.0,
+									1.0
+								],
+								"evac_b10": [
+									2.0,
+									2.0
+								],
+								"evac_c3": [
+									3.0,
+									2.0
+								],
+								"evac_d5": [
+									4.0,
+									3.0
+								],
+								"frame_state": "JAM_EXPIRED"
+							},
+							"3": {
+								"evac_a11": [
+									1.0,
+									1.0
+								],
+								"evac_b10": [
+									2.0,
+									1.0
+								],
+								"evac_c3": [
+									3.0,
+									1.0
+								],
+								"evac_d5": [
+									4.0,
+									1.0
+								],
+								"frame_state": "UNANCHORED",
+								"people_staged": 29.0,
+								"tokens_staged": 4.0
+							}
+						},
+						"round_requirements": {
+							"1": [
+								"C01E01_OPEN_SIDE_DOOR_ACCEPT_PATCHER",
+								"C01E01_RESET_MAIN_GATE"
+							],
+							"2": [
+								"C01E01_ACTIVE_FALL_CONFIRMED"
+							],
+							"3": [
+								"C01E01_SAFE_ANGLE_CONFIRMED"
+							]
+						},
+						"side_door_cell": [
+							6.0,
+							5.0
+						]
+					},
+					"scenario_driver": "c01e01_small_machine_evacuation_v1",
+					"stable_object_bindings": [
+						{
+							"binding_id": "BIND_C01E01_ROUTE_TO_YELLOW_LINE",
+							"label": "最后一条闭馆路线",
+							"stable_object_id": "OBJ_C01E01_CLOSING_ROUTE",
+							"targets": [
+								{
+									"kind": "objective",
+									"target_id": "yellow_line_a"
+								},
+								{
+									"cell": [
+										4.0,
+										1.0
+									],
+									"kind": "cell"
+								}
+							]
+						},
+						{
+							"binding_id": "BIND_C01E01_CHEST_LIGHT_TO_SUPPORT",
+							"label": "馆守Z低热胸灯",
+							"stable_object_id": "OBJ_C01E01_GUARDIAN_CHEST_LIGHT",
+							"targets": [
+								{
+									"kind": "unit",
+									"target_id": "guardian_z_support"
+								},
+								{
+									"kind": "mid_event",
+									"target_id": "C01E01-R3-GUARDIAN-DIMS-PETAL"
+								}
+							]
+						},
+						{
+							"binding_id": "BIND_C01E01_MODEL_LATCH_TO_SAFE_REFLECTOR",
+							"label": "三相架安全罩与唐胶的材料边界",
+							"stable_object_id": "OBJ_C01E01_MODEL_HOSPITAL_LATCH",
+							"targets": [
+								{
+									"kind": "mid_event",
+									"target_id": "C01E01-R3-GUARDIAN-DIMS-PETAL"
+								},
+								{
+									"cell": [
+										3.0,
+										7.0
+									],
+									"kind": "cell"
+								}
+							]
+						},
+						{
+							"binding_id": "BIND_C01E01_DIEDIE_BODY_TO_ACTIVE_FALL",
+							"label": "跌跌的左膝与侧倒方向",
+							"stable_object_id": "OBJ_C01E01_DIEDIE_BODY",
+							"targets": [
+								{
+									"component_id": "left_knee_and_shoulder",
+									"kind": "unit_component",
+									"target_id": "diedie"
+								},
+								{
+									"cell": [
+										0.0,
+										3.0
+									],
+									"kind": "cell"
+								}
+							]
+						},
+						{
+							"binding_id": "BIND_C01E01_DOG_ROUTE_TO_SIDE_DOOR",
+							"label": "机器犬的侧门与工具柜声源",
+							"stable_object_id": "OBJ_C01E01_ROBOT_DOG_ROUTE",
+							"targets": [
+								{
+									"kind": "unit",
+									"target_id": "machine_dog"
+								},
+								{
+									"cell": [
+										6.0,
+										5.0
+									],
+									"kind": "cell"
+								}
+							]
+						},
+						{
+							"binding_id": "BIND_C01E01_ZERO_GATE_TO_LOCKDOWN",
+							"label": "0号门后的风险闸咬合",
+							"stable_object_id": "OBJ_C01E01_ZERO_GATE",
+							"targets": [
+								{
+									"kind": "battle_flag",
+									"target_id": "zero_gate_lockdown_origin"
+								},
+								{
+									"kind": "unit",
+									"target_id": "path_frame"
+								}
+							]
+						}
+					],
+					"start_prompt": "先看本回合情境动作。这里没有普通攻击，也不以全灭为目标。",
+					"status": "candidate_runtime_production",
+					"title": "万机馆主展厅 / 三回合小型救援",
+					"turn_limit": 3.0,
+					"units": [
+						{
+							"canon_entity_id": "CH057",
+							"cell": [
+								0.0,
+								6.0
+							],
+							"hp": 1.0,
+							"id": "diedie",
+							"map_token": "跌",
+							"move": 3.0,
+							"name": "跌跌 / 0.7m现实小机",
+							"scenario_role": "context_actor",
+							"team": "player",
+							"weapons": []
+						},
+						{
+							"canon_entity_id": "MECHA_DOOR_MACHINE_DOG",
+							"cell": [
+								6.0,
+								6.0
+							],
+							"hp": 1.0,
+							"id": "machine_dog",
+							"lifecycle_id": "V353U040",
+							"map_token": "犬",
+							"move": 3.0,
+							"name": "机器犬 / 四足牵引机",
+							"scenario_role": "context_actor",
+							"team": "player",
+							"weapons": []
+						},
+						{
+							"cell": [
+								1.0,
+								5.0
+							],
+							"hp": 1.0,
+							"id": "evac_a11",
+							"map_token": "11",
+							"move": 0.0,
+							"name": "A11 / 普通观众11人",
+							"no_hp_ui": true,
+							"people_count": 11.0,
+							"route": [
+								[
+									1.0,
+									5.0
+								],
+								[
+									1.0,
+									4.0
+								],
+								[
+									1.0,
+									3.0
+								],
+								[
+									1.0,
+									2.0
+								],
+								[
+									1.0,
+									1.0
+								]
+							],
+							"scenario_role": "evac_token",
+							"team": "object",
+							"weapons": []
+						},
+						{
+							"cell": [
+								2.0,
+								6.0
+							],
+							"hp": 1.0,
+							"id": "evac_b10",
+							"map_token": "10",
+							"move": 0.0,
+							"name": "B10 / 普通观众10人",
+							"no_hp_ui": true,
+							"people_count": 10.0,
+							"route": [
+								[
+									2.0,
+									6.0
+								],
+								[
+									2.0,
+									5.0
+								],
+								[
+									2.0,
+									4.0
+								],
+								[
+									2.0,
+									3.0
+								],
+								[
+									2.0,
+									2.0
+								],
+								[
+									2.0,
+									1.0
+								]
+							],
+							"scenario_role": "evac_token",
+							"team": "object",
+							"weapons": []
+						},
+						{
+							"cell": [
+								3.0,
+								6.0
+							],
+							"hp": 1.0,
+							"id": "evac_c3",
+							"map_token": "3",
+							"move": 0.0,
+							"name": "C3 / 小满、阿澄与前厅值守员",
+							"never_split": true,
+							"no_hp_ui": true,
+							"people_count": 3.0,
+							"route": [
+								[
+									3.0,
+									6.0
+								],
+								[
+									3.0,
+									5.0
+								],
+								[
+									3.0,
+									4.0
+								],
+								[
+									3.0,
+									3.0
+								],
+								[
+									3.0,
+									2.0
+								],
+								[
+									3.0,
+									1.0
+								]
+							],
+							"scenario_role": "evac_token",
+							"team": "object",
+							"weapons": []
+						},
+						{
+							"cell": [
+								6.0,
+								4.0
+							],
+							"contains_repair_worker_from_setup": true,
+							"hp": 1.0,
+							"id": "evac_d5",
+							"map_token": "5",
+							"move": 0.0,
+							"name": "D5 / 四名需协助成人与维修员",
+							"no_hp_ui": true,
+							"people_count": 5.0,
+							"route": [
+								[
+									6.0,
+									4.0
+								],
+								[
+									5.0,
+									4.0
+								],
+								[
+									4.0,
+									4.0
+								],
+								[
+									4.0,
+									3.0
+								],
+								[
+									4.0,
+									2.0
+								],
+								[
+									4.0,
+									1.0
+								]
+							],
+							"scenario_role": "evac_token",
+							"team": "object",
+							"weapons": []
+						},
+						{
+							"canon_entity_id": "ENEMY_SEAL_PATH_FRAME",
+							"cell": [
+								0.0,
+								3.0
+							],
+							"hp": 1.0,
+							"id": "path_frame",
+							"map_token": "框",
+							"move": 0.0,
+							"name": "活动路径框家族",
+							"no_attack_kit": true,
+							"no_hp_ui": true,
+							"scenario_role": "functional_module",
+							"team": "object",
+							"weapons": []
+						},
+						{
+							"canon_entity_id": "ENEMY_SEAL_DRONE",
+							"cell": [
+								5.0,
+								3.0
+							],
+							"hp": 1.0,
+							"id": "patcher_p1",
+							"map_token": "贴",
+							"move": 0.0,
+							"name": "贴片机 P1",
+							"no_attack_kit": true,
+							"no_hp_ui": true,
+							"scenario_role": "functional_module",
+							"team": "object",
+							"weapons": []
+						},
+						{
+							"canon_entity_id": "ENEMY_SEAL_DRONE",
+							"cell": [
+								6.0,
+								3.0
+							],
+							"hp": 1.0,
+							"id": "patcher_p2",
+							"map_token": "贴",
+							"move": 0.0,
+							"name": "贴片机 P2",
+							"no_attack_kit": true,
+							"no_hp_ui": true,
+							"scenario_role": "functional_module",
+							"team": "object",
+							"weapons": []
+						},
+						{
+							"canon_entity_id": "MECHA_GUARDIAN_Z",
+							"cell": [
+								0.0,
+								8.0
+							],
+							"hp": 1.0,
+							"id": "guardian_z_support",
+							"map_token": "Z",
+							"move": 0.0,
+							"name": "馆守Z / 半跪胸灯场景支援",
+							"no_hp_ui": true,
+							"not_player_controllable": true,
+							"scenario_role": "giant_terrain_support",
+							"team": "object",
+							"weapons": []
+						}
+					],
+					"variant_id": "V359-C01E01-STORY-FIRST-3R-V01",
+					"withdraw_allowed": false
+				},
+				"battle_definition_path": "res://content/episodes/c01/e01/battle/c01_e01_story_first_small_machine_evacuation.json",
+				"cancel_edges": [
+					"c01e01_small_machine_rescue"
+				],
+				"commitment_anchors": [
+					{
+						"anchor_id": "C01E01_OPEN_SIDE_DOOR_ACCEPT_PATCHER",
+						"visible_action": "玩家让机器犬开侧门，并接受一台贴片机进入来换取D5通路。"
+					},
+					{
+						"anchor_id": "C01E01_ACTIVE_FALL_CONFIRMED",
+						"visible_action": "玩家确认跌跌主动侧倒，占据传感格一个自动移动阶段。"
+					},
+					{
+						"anchor_id": "C01E01_SAFE_ANGLE_CONFIRMED",
+						"visible_action": "玩家在兜灯硬停与唐胶材料边界内选中唯一安全胸灯角。"
+					}
+				],
+				"completion_contract": "OUTCOME_C01E01_LOCAL_BATTLE_CLEAR_V01",
+				"failure_edges": [
+					"c01e01_small_machine_rescue"
+				],
+				"mode": "TACTICAL",
+				"node_id": "c01e01_small_machine_rescue",
+				"reaction_prefix": "REACT_C01E01_SMALL_RESCUE",
+				"result_transaction_id": "C01E01:LOCAL_BATTLE_CLEAR:V01",
+				"scene_id": "SCN_C01E01_SMALL_MACHINE_RESCUE",
+				"skip_result_fact": true,
+				"soft_fail_edges": [
+					"c01e01_lights_out"
+				],
+				"success_edges": [
+					"c01e01_lights_out"
+				],
+				"title": "主展厅南侧 / 三回合小型救援",
+				"transition": {
+					"accent": "f0b83f",
+					"cause": "路径框读取标准路线，贴片机重写地面箭头；巨型馆守Z无法在馆内起身。",
+					"continuity": {
+						"action_refs": [
+							"OUTCOME_C01E01_ZERO_LOCKDOWN_V01"
+						],
+						"object_refs": [
+							"OBJ_C01E01_CLOSING_ROUTE",
+							"OBJ_C01E01_MODEL_HOSPITAL_LATCH",
+							"OBJ_C01E01_DIEDIE_BODY",
+							"OBJ_C01E01_ROBOT_DOG_ROUTE",
+							"OBJ_C01E01_GUARDIAN_CHEST_LIGHT"
+						],
+						"responsibility_refs": [
+							"CH_JICUN",
+							"CH001",
+							"CH_TANGJIAO",
+							"CH057",
+							"MECHA_DOOR_MACHINE_DOG"
+						],
+						"types": [
+							"object",
+							"action",
+							"responsibility"
+						]
+					},
+					"duration": 1.3,
+					"eyebrow": "巨神做不到的事，交给脚边的小机器",
+					"fade_seconds": 0.48,
+					"handoff": "控制跌跌和机器犬；用身体、牵引和一次低热胸灯支援完成撤离。",
+					"kind": "scale_shift",
+					"location": "万机馆 · 主展厅南侧至前厅",
+					"time_label": "20:58",
+					"title": "三回合，把二十九人送过闭馆线",
+					"transition_id": "C01E01-TR-05-SMALL-MACHINES"
+				},
+				"variant_fact_id": "C01E01_LOCAL_TACTICAL_VARIANT"
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"c01e01_four_orders_tag"
+				],
+				"completion_contract": "OUTCOME_C01E01_LIGHTS_OUT_V01",
+				"failure_edges": [
+					"c01e01_four_orders_tag"
+				],
+				"lines": [
+					{
+						"beat_id": "c01e01_clear_01",
+						"source_kind": "system",
+						"speaker": "旧导览声",
+						"stage_action": "馆守Z收暗靠近人群的一瓣灯",
+						"text": "最后一位观众……已通过。"
+					},
+					{
+						"actor_id": "CH057",
+						"beat_id": "c01e01_clear_02",
+						"speaker": "跌跌",
+						"stage_action": "等最后一组越线，慢慢把自己撑起来",
+						"text": "巡检……最后四格。自行完成。"
+					},
+					{
+						"beat_id": "c01e01_clear_03",
+						"speaker": "旁白",
+						"stage_action": "机器犬把湿纸袋放到纪存脚边",
+						"text": "晚饭袋被口水浸湿一角。刚才伏地的老人先笑了一声。"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e01_clear_04",
+						"speaker": "纪存",
+						"stage_action": "接过湿纸袋，笑得有些无奈",
+						"text": "这个不算救援物资。"
+					},
+					{
+						"beat_id": "c01e01_clear_04a",
+						"speaker": "旁白",
+						"stage_action": "跌跌不等人扶，沿最后四格自己走回充电位",
+						"text": "跌跌左膝仍比右膝慢半秒。它把那半秒一格一格带回充电线，自己站稳。"
+					},
+					{
+						"beat_id": "c01e01_clear_04b",
+						"speaker": "旁白",
+						"stage_action": "机器犬确认D5五人越线后解除牵引，回到自己的充电位伏下",
+						"text": "机器犬最后看了一次那名维修员，才松开牵引扣。它回到墙边，前爪压住充电座，像把今晚的路线存进了身体。"
+					},
+					{
+						"beat_id": "c01e01_clear_05",
+						"speaker": "旁白",
+						"stage_action": "模型街、旧影像厅、现实机器舞台逐区熄灯",
+						"text": "二十九人全部在L1前厅黄线集结。他们还没有离开建筑。"
+					},
+					{
+						"beat_id": "c01e01_qh_official_01",
+						"source_kind": "system",
+						"speaker": "人员核验",
+						"stage_action": "正式风险界面覆盖私人语音",
+						"text": "纪存：馆藏状态不明。"
+					},
+					{
+						"actor_id": "CH_QIHAI",
+						"beat_id": "c01e01_qh_official_02",
+						"speaker": "七海",
+						"stage_action": "先确认黄线内四组人数",
+						"text": "二十九都在？孩子还是原照看组？"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e01_qh_official_03",
+						"speaker": "纪存",
+						"text": "都在。C组没拆。"
+					},
+					{
+						"actor_id": "CH_QIHAI",
+						"beat_id": "c01e01_qh_official_04",
+						"speaker": "七海",
+						"stage_action": "看见刚被唤醒的旧消防回线",
+						"text": "这段路是你从零号门里拿出来的？"
+					},
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e01_qh_official_05",
+						"speaker": "纪存",
+						"stage_action": "删掉“你先别来”",
+						"text": "不是从门里拿的。图是真的，但只是一段。"
+					}
+				],
+				"mode": "NARRATIVE",
+				"node_id": "c01e01_lights_out",
+				"outcome_facts": [
+					{
+						"id": "C01E01_LOCAL_29_STAGED_FRONT_HALL",
+						"to": true
+					},
+					{
+						"id": "C01E01_LOCAL_QIHAI_CHANNEL",
+						"to": "OFFICIAL_RISK_READ_ONLY"
+					}
+				],
+				"player_summary": "战斗动作得到人物回应；闭馆线已越过，但29人仍未离开建筑。",
+				"presentation": {
+					"background": "res://assets/backgrounds/story_first/bg_c01e01_front_hall_closing_v01.png",
+					"cast": [
+						{
+							"accent": "58c8d9",
+							"actor_id": "CH_JICUN",
+							"display_name": "纪存",
+							"portrait_path": "res://assets/portraits/portrait_jicun.png",
+							"side": "left"
+						},
+						{
+							"accent": "dca55b",
+							"actor_id": "CH_QIHAI",
+							"display_name": "七海 · 公务风险频道",
+							"portrait_path": "res://assets/portraits/portrait_qihai.png",
+							"side": "right"
+						}
+					],
+					"eyebrow": "万机馆 · L1前厅黄线",
+					"profile": "standard_adv",
+					"time_label": "21:02",
+					"title": "灯熄灭以后"
+				},
+				"scene_id": "SCN_C01E01_STORY_NARRATIVE",
+				"soft_fail_edges": [
+					"c01e01_four_orders_tag"
+				],
+				"success_edges": [
+					"c01e01_four_orders_tag"
+				],
+				"title": "灯熄灭以后 / 二十九人仍在馆内",
+				"transaction_id": "C01E01:LIGHTS_OUT:V01",
+				"transition": {
+					"accent": "64cbb1",
+					"cause": "四枚Token共二十九人越过资产区闭馆线；跌跌自己站起，馆守Z胸灯已经SPENT。",
+					"continuity": {
+						"action_refs": [
+							"OUTCOME_C01E01_LOCAL_BATTLE_CLEAR_V01",
+							"CUE_C01E01_DIEDIE_ACTIVE_FALL",
+							"CUE_C01E01_GUARDIAN_DIM_PETAL"
+						],
+						"object_refs": [
+							"OBJ_C01E01_CLOSING_ROUTE",
+							"OBJ_C01E01_DIEDIE_BODY",
+							"OBJ_C01E01_GUARDIAN_CHEST_LIGHT"
+						],
+						"responsibility_refs": [
+							"CH_JICUN",
+							"CH_QIHAI",
+							"C01_VISITOR_RESCUE_SEED"
+						],
+						"types": [
+							"object",
+							"action",
+							"responsibility"
+						]
+					},
+					"duration": 1.2,
+					"eyebrow": "本地 Battle Clear",
+					"fade_seconds": 0.44,
+					"handoff": "闭馆成功只把人送到前厅；七海的私人语音因0号异常转为公务风险频道。",
+					"kind": "aftermath",
+					"location": "万机馆 · L1前厅黄线",
+					"time_label": "21:02",
+					"title": "最后一位观众，已通过",
+					"transition_id": "C01E01-TR-06-LIGHTS-OUT"
+				}
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [],
+				"completion_contract": "OUTCOME_C01E01_RT013S_ATOMIC_SNAPSHOT_V01",
+				"failure_edges": [],
+				"lines": [
+					{
+						"actor_id": "CH_JICUN",
+						"beat_id": "c01e01_tag_01",
+						"speaker": "纪存",
+						"stage_action": "发送真实但不完整的消防回线",
+						"text": "图是真的。只发这一段。"
+					},
+					{
+						"beat_id": "c01e01_tag_02",
+						"source_kind": "system",
+						"speaker": "外部接管网",
+						"stage_action": "捕获旧路由地址与纪存声纹",
+						"text": "未申报消防路由。异常唤醒声纹已确认。"
+					},
+					{
+						"beat_id": "c01e01_tag_03",
+						"speaker": "安全接管令",
+						"stage_action": "L1防火门锁死在半开位置",
+						"text": "门体列入待核资产。禁止自动闭合。"
+					},
+					{
+						"beat_id": "c01e01_tag_04",
+						"speaker": "代哥封存令",
+						"stage_action": "馆守Z胸灯熄灭",
+						"text": "未授权活动身体：低功率接口冻结。"
+					},
+					{
+						"beat_id": "c01e01_tag_05",
+						"speaker": "平台冻结令",
+						"stage_action": "旧路由数字钥匙灰显",
+						"text": "异常路径停止分发。"
+					},
+					{
+						"beat_id": "c01e01_tag_06",
+						"speaker": "军方接管令",
+						"stage_action": "B1泵站水压归零",
+						"text": "泵站进入外部控制。"
+					},
+					{
+						"beat_id": "c01e01_tag_07",
+						"speaker": "旁白",
+						"stage_action": "烟从半开的防火门下压进前厅",
+						"text": "天花板喷淋只咳出一滴黑水。"
+					},
+					{
+						"actor_id": "CH_QIHAI",
+						"beat_id": "c01e01_tag_08",
+						"speaker": "七海",
+						"stage_action": "盯着自己收到的火场图",
+						"text": "东侧不能走。把人往西带。现在。"
+					},
+					{
+						"beat_id": "c01e01_tag_09",
+						"speaker": "旁白",
+						"stage_action": "窗外真正的消防警报响起",
+						"text": "闭馆结束。火场开始。"
+					}
+				],
+				"mode": "NARRATIVE",
+				"node_id": "c01e01_four_orders_tag",
+				"outcome_facts": [
+					{
+						"id": "C01_HUMAN_COUNT_IN_BUILDING_START",
+						"to": 32.0
+					},
+					{
+						"id": "C01_EVAC_GROUP_COUNT_START",
+						"to": 29.0
+					},
+					{
+						"id": "C01_EVAC_TOKEN_MODEL",
+						"to": "A11_B10_C3_D5"
+					},
+					{
+						"id": "C01_EVAC_PRIORITY",
+						"to": "PEOPLE_FIRST_FIXED"
+					},
+					{
+						"id": "C01_VISITOR_RESCUE_SEED",
+						"to": "ALL_29_STAGED_AT_L1_FRONT_HALL_NOT_CITY_SAFE"
+					},
+					{
+						"id": "C01_CHILD_CUSTODY",
+						"to": "FRONT_DESK_STAFF_TO_FRONT_HALL_YELLOW_LINE"
+					},
+					{
+						"id": "DIEDIE_TACTICAL_ACTION",
+						"to": "ACTIVE_FALL_SENSOR_JAM_CONFIRMED_BY_PLAYER"
+					},
+					{
+						"id": "ROBOT_DOG_RESCUE_TARGET",
+						"to": "REPAIR_WORKER_AUTONOMOUS"
+					},
+					{
+						"id": "ROBOT_DOG_ROUTE_RISK",
+						"to": "SIDE_DOOR_PATCHER_ENTRY_PLAYER_SELECTED"
+					},
+					{
+						"id": "JICUN_COLLECTION_ANOMALY_SEED",
+						"to": "VISIBLE"
+					},
+					{
+						"id": "ZERO_GATE_SIGNAL",
+						"to": "ADMINISTRATOR_PRESENT_UNVERIFIED"
+					},
+					{
+						"id": "FAR_STAR_BLANK_REPLY",
+						"to": "L1_READ_ONLY_L3_CACHE_JICUN_ID_FLASH_UNVERIFIED"
+					},
+					{
+						"id": "OLD_FIRE_ROUTE_SEGMENT",
+						"to": "EXPOSED"
+					},
+					{
+						"id": "FULL_MOVING_SPINE",
+						"to": "NOT_EXPOSED"
+					},
+					{
+						"id": "QH_MODE",
+						"to": "PRIVATE_AUDIO_TO_OFFICIAL_RISK_CHANNEL_AFTER_ZERO"
+					},
+					{
+						"id": "GZ_RIGHT_ARM_CORE",
+						"to": "ATTACHED"
+					},
+					{
+						"id": "GZ_RIGHT_FOREARM_ARMOR",
+						"to": "REMOVED_FOR_INSPECTION"
+					},
+					{
+						"id": "WJ_L1_EXHIBIT_LIGHTS",
+						"to": "OFF_BY_CLOSING_SEQUENCE"
+					},
+					{
+						"id": "CITY_GRID_POWER",
+						"to": "AVAILABLE"
+					},
+					{
+						"id": "WJ_LIFE_SUPPORT",
+						"to": "ONLINE"
+					},
+					{
+						"id": "WJ_B1_FIRE_PUMP",
+						"to": "SEIZED_ZERO_PRESSURE"
+					},
+					{
+						"id": "GZ_GUIDE_LIGHT",
+						"to": "CUT_BY_TAKEOVER"
+					},
+					{
+						"id": "C01_FIRE_ROUTE_CAPTURE",
+						"to": "EXTERNAL_ROUTE_AND_JICUN_VOICEPRINT_CONFIRMED"
+					},
+					{
+						"id": "DOUDENG_HARD_STOP_AUTHORITY",
+						"to": "PERSISTS_TO_E02_E03"
+					},
+					{
+						"id": "TANGJIAO_MATERIAL_VETO_AUTHORITY",
+						"to": "PERSISTS_TO_E02_E03"
+					},
+					{
+						"id": "C01_CARGO_PRIORITY",
+						"to": "NOT_CREATED_UNTIL_E04"
+					},
+					{
+						"id": "C01_PHYSICAL_SNAPSHOT",
+						"to": "RT013S_ATOMIC_PAYLOAD"
+					}
+				],
+				"player_summary": "消防路由与声纹被捕获；四令切走门、灯、钥匙和泵，唯一C01E01物理快照已原子提交。",
+				"presentation": {
+					"background": "res://assets/backgrounds/story_first/bg_c01e01_four_orders_v01.png",
+					"cast": [
+						{
+							"accent": "58c8d9",
+							"actor_id": "CH_JICUN",
+							"display_name": "纪存",
+							"portrait_path": "res://assets/portraits/portrait_jicun.png",
+							"side": "left"
+						},
+						{
+							"accent": "dca55b",
+							"actor_id": "CH_QIHAI",
+							"display_name": "七海 · 公务风险频道",
+							"portrait_path": "res://assets/portraits/portrait_qihai.png",
+							"side": "right"
+						}
+					],
+					"eyebrow": "万机馆 · L1前厅",
+					"portrait_visibility": "active_only",
+					"profile": "standard_adv",
+					"time_label": "21:03",
+					"title": "四张接管令"
+				},
+				"scene_id": "SCN_C01E01_STORY_NARRATIVE",
+				"soft_fail_edges": [],
+				"success_edges": [],
+				"terminal": true,
+				"title": "四张接管令 / 火警响起",
+				"transaction_id": "C01E01:RT013S:ATOMIC_SNAPSHOT:V01",
+				"transition": {
+					"accent": "e45e62",
+					"cause": "真实但不完整的消防图与纪存声纹被外部网络捕获。",
+					"continuity": {
+						"action_refs": [
+							"OUTCOME_C01E01_LIGHTS_OUT_V01",
+							"C01_FIRE_ROUTE_CAPTURE"
+						],
+						"object_refs": [
+							"OBJ_C01E01_CLOSING_ROUTE",
+							"OBJ_C01E01_GUARDIAN_CHEST_LIGHT",
+							"OBJ_C01E01_ZERO_GATE"
+						],
+						"responsibility_refs": [
+							"CH_JICUN",
+							"CH_QIHAI",
+							"C01_PHYSICAL_SNAPSHOT"
+						],
+						"types": [
+							"object",
+							"action",
+							"responsibility"
+						]
+					},
+					"duration": 1.3,
+					"eyebrow": "消防回线发送完成",
+					"fade_seconds": 0.46,
+					"handoff": "门、胸灯、数字钥匙和泵站被分别切走；E02从唯一物理快照开始。",
+					"kind": "pressure_escalation",
+					"location": "万机馆 · L1前厅",
+					"time_label": "21:03",
+					"title": "四个机构，用的是同一种白色边框",
+					"transition_id": "C01E01-TR-07-FOUR-ORDERS"
+				}
+			}
+		],
+		"start_node_id": "c01e01_cold_open",
+		"status": "candidate_runtime_production"
+	},
+	"manifest": {
+		"battle": "res://content/episodes/c01/e01/battle/c01_e01_story_first_small_machine_evacuation.json",
+		"bundle_output": "res://content/generated/episodes/c01/e01/story_first.bundle.json",
+		"canon_level": "accepted_story_candidate_runtime_production",
+		"claims": [
+			"story_first_episode_graph",
+			"six_stop_l1_spatial_route",
+			"context_action_tactical_contract",
+			"failure_retry_without_persistent_commit",
+			"rt013s_single_atomic_episode_handoff",
+			"enacted_commitment_without_forced_desk",
+			"candidate_battle_presentation_manifest"
+		],
+		"episode_id": "C01E01-STORY-FIRST-P5-CANDIDATE",
+		"experience_contract": {
+			"acceptance_questions": [
+				"为什么第一话真正可控的是跌跌和机器犬，而不是十八米馆守Z？",
+				"跌跌为什么要主动摔倒，而不是等玩家把它修好？",
+				"机器犬为什么自己认定维修员需要救援，玩家又实际决定了什么？",
+				"馆守Z为什么只亮胸灯外圈并主动收暗一瓣，而没有站起来战斗？",
+				"二十九人全部越过闭馆线以后，为什么仍然不安全？",
+				"七海在什么时候从私人语音转成公务风险频道，第一条真正改变系统的命令为什么仍留到E02？",
+				"纪存没有暴露完整搬运脊道，为什么仍然付出了不可逆代价？"
+			],
+			"capacity_band": "compact",
+			"capacity_evidence": {
+				"receipt_paths": [],
+				"status": "pending_external"
+			},
+			"commitment_evidence": [
+				{
+					"anchor_id": "C01E01_OPEN_SIDE_DOOR_ACCEPT_PATCHER",
+					"node_id": "c01e01_small_machine_rescue",
+					"visible_action": "玩家接受一台贴片机进入，以换取机器犬和D5的救援通路。"
+				},
+				{
+					"anchor_id": "C01E01_ACTIVE_FALL_CONFIRMED",
+					"node_id": "c01e01_small_machine_rescue",
+					"visible_action": "玩家确认跌跌主动侧倒，让它用肩壳卡住路径框传感轨。"
+				},
+				{
+					"anchor_id": "C01E01_SAFE_ANGLE_CONFIRMED",
+					"node_id": "c01e01_small_machine_rescue",
+					"visible_action": "玩家在兜灯硬停与唐胶材料否决内选择唯一安全胸灯角。"
+				}
+			],
+			"commitment_model": "enacted",
+			"consumption_ledger": [
+				{
+					"result_id": "COMMIT_C01E01_PEOPLE_FIRST_WITHOUT_FULL_SPINE",
+					"slots": {
+						"character": {
+							"consumer_id": "c01e01_lights_out",
+							"consumer_kind": "node",
+							"visible_evidence": "跌跌自己站起、机器犬叼回湿晚饭袋、纪存短暂发笑；七海先问人数与照看组，再转入公务频道。"
+						},
+						"conflict": {
+							"consumer_id": "C01E01-SMALL-MACHINE-EVACUATION",
+							"consumer_kind": "battle",
+							"visible_evidence": "开侧门、主动侧倒和安全胸灯角不是加分项，而是三回合撤离成立的规则动作。"
+						},
+						"immediate": {
+							"consumer_id": "OBJ_C01E01_CLOSING_ROUTE",
+							"consumer_kind": "world_object",
+							"visible_evidence": "四枚人员Token沿安全箭头逐回合推进；黄线角标明确显示29人仍是四个不可任意拆分的责任组。"
+						},
+						"settlement": {
+							"consumer_id": "c01e01_four_orders_tag",
+							"consumer_kind": "node",
+							"visible_evidence": "消防路由与声纹捕获后，门、胸灯、数字钥匙和泵站在同一场景被物理切走，RT013S一次提交。"
+						}
+					},
+					"source_node_id": "c01e01_small_machine_rescue"
+				}
+			],
+			"dramatic_object_id": "OBJ_C01E01_CLOSING_ROUTE",
+			"dramatic_question": "怎样让二十九名观众在九点前越过闭馆线，同时不把人和机器交给标准姿态分类？",
+			"episode_knot_id": "KNOT_C01E01_LAST_CLOSING_ROUTE",
+			"human_claims": [
+				{
+					"claim": "闭馆仍是一场具体照看：每个人安全到前厅，每台机器按自己的身体完成最后一段路。",
+					"claim_owner": "CH_JICUN"
+				},
+				{
+					"claim": "低热支援必须服从硬停和材料边界；救人不能成为越过专业停止权的借口。",
+					"claim_owner": "CH001"
+				}
+			],
+			"irreversible_cost": {
+				"state_refs": [
+					"C01_FIRE_ROUTE_CAPTURE",
+					"FULL_MOVING_SPINE",
+					"WJ_B1_FIRE_PUMP",
+					"GZ_GUIDE_LIGHT",
+					"C01_PHYSICAL_SNAPSHOT"
+				],
+				"text": "纪存没有开启完整搬运脊道，却仍因发送真实消防回线而暴露路由地址与自己的唤醒声纹；四令因此取得物理介入口。"
+			},
+			"machine_claim": {
+				"action_cue_id": "CUE_C01E01_DIEDIE_ACTIVE_FALL",
+				"claim": "跌倒不是应该删除的故障；它能主动选择怎样倒下，并用这副不完美的身体替别人占住一条路。",
+				"mecha_id": "CH057"
+			},
+			"next_debt_future_window": "C01E02必须从RT013S唯一快照开始，把29人真正送出建筑；不得重置门、灯、钥匙、泵、右臂或七海频道状态。",
+			"next_debt_id": "DEBT_C01E01_29_STILL_INSIDE_FOUR_SYSTEMS_SEIZED",
+			"next_debt_origin": "四枚Token全部越过闭馆线却只到L1前厅；四令随后分别切走防火门、馆守Z胸灯、旧路由钥匙和B1泵站。",
+			"player_commitment_id": "COMMIT_C01E01_PEOPLE_FIRST_WITHOUT_FULL_SPINE",
+			"required_consumption_slots": [
+				"immediate",
+				"conflict",
+				"character",
+				"settlement"
+			],
+			"required_continuity": [
+				"object",
+				"action",
+				"responsibility"
+			],
+			"settlement_model": "narrative_consequence",
+			"skip_reasons": {
+				"CONSTRAINT": "不开完整搬运脊道与只用消防回线的限制已经进入ADV和Tactical规则，不另切独立资源分配小游戏。",
+				"DESK": "二十九人仍未离楼，四令切断设施后火场在数秒内开始；此时打开责任比较界面会破坏已验收因果，责任由尾声具身后果直接交给E02。",
+				"SIGNAL": "空白回信和0号信号只作为未验证症状出现；第一话不得让玩家在小游戏里提前判断宏观真相。",
+				"TIMING": "本话教学重点是尺寸、牵引、占格与环境反射；身体节奏玩法留给后续拥有独立动作判断的Episode。"
+			},
+			"stable_object_bindings": [
+				{
+					"mode_bindings": [
+						{
+							"anchor_id": "c01e01_route_line",
+							"mode": "NARRATIVE",
+							"node_id": "c01e01_before_nine"
+						},
+						{
+							"anchor_id": "confirm_closing_count",
+							"mode": "SPATIAL",
+							"node_id": "c01e01_closing_route"
+						},
+						{
+							"anchor_id": "BIND_C01E01_ROUTE_TO_YELLOW_LINE",
+							"mode": "TACTICAL",
+							"node_id": "c01e01_small_machine_rescue"
+						},
+						{
+							"anchor_id": "c01e01_tag_01",
+							"mode": "NARRATIVE",
+							"node_id": "c01e01_four_orders_tag"
+						}
+					],
+					"stable_object_id": "OBJ_C01E01_CLOSING_ROUTE"
+				},
+				{
+					"mode_bindings": [
+						{
+							"anchor_id": "c01e01_diedie_fall",
+							"mode": "NARRATIVE",
+							"node_id": "c01e01_zero_and_lockdown"
+						},
+						{
+							"anchor_id": "inspect_real_machine_stage",
+							"mode": "SPATIAL",
+							"node_id": "c01e01_closing_route"
+						},
+						{
+							"anchor_id": "BIND_C01E01_DIEDIE_BODY_TO_ACTIVE_FALL",
+							"mode": "TACTICAL",
+							"node_id": "c01e01_small_machine_rescue"
+						},
+						{
+							"anchor_id": "c01e01_clear_02",
+							"mode": "NARRATIVE",
+							"node_id": "c01e01_lights_out"
+						}
+					],
+					"stable_object_id": "OBJ_C01E01_DIEDIE_BODY"
+				}
+			]
+		},
+		"experience_contract_required": true,
+		"experience_contract_version": 1.0,
+		"graph": "res://content/episodes/c01/e01/graph.story_first.json",
+		"graybox_source": "DATA_C01E01_GRAYBOX_CONSTANTS_V1",
+		"loadout_contract_id": "V358LOAD001",
+		"location_id": "LOC_WANJI_MAIN_HALL",
+		"mecha_id": "CH057",
+		"non_claims": [
+			"formal_episode_runtime_complete",
+			"capacity_receipt_validated",
+			"production_art_complete",
+			"windows_runtime_validated",
+			"physical_controller_validated"
+		],
+		"presentation_assets": [
+			"res://assets/backgrounds/story_first/bg_c01e01_front_hall_closing_v01.png",
+			"res://assets/backgrounds/story_first/bg_c01e01_guardian_atrium_model_hospital_v01.png",
+			"res://assets/backgrounds/story_first/bg_c01e01_real_machine_stage_v01.png",
+			"res://assets/backgrounds/story_first/bg_c01e01_old_film_hall_v01.png",
+			"res://assets/backgrounds/story_first/bg_c01e01_archive_room_v01.png",
+			"res://assets/backgrounds/story_first/bg_c01e01_zero_corridor_v01.png",
+			"res://assets/backgrounds/story_first/bg_c01e01_cold_open_after_fire_v01.png",
+			"res://assets/backgrounds/story_first/bg_c01e01_four_orders_v01.png",
+			"res://assets/characters/story_first/sprite_jicun_walk_right_strip_v01.png",
+			"res://assets/tactical_maps/story_first/bg_c01e01_main_hall_isometric_v01.png",
+			"res://assets/portraits/portrait_doudeng.png",
+			"res://assets/portraits/portrait_jicun.png",
+			"res://assets/portraits/portrait_qihai.png",
+			"res://assets/battle_presentation/c01/story_first/manifest.json",
+			"res://assets/battle_presentation/c01/story_first/sprite_diedie_idle_v01.png",
+			"res://assets/battle_presentation/c01/story_first/sprite_machine_dog_idle_v01.png",
+			"res://assets/battle_presentation/c01/story_first/sprite_evac_group_base_v01.png",
+			"res://assets/battle_presentation/c01/story_first/sprite_path_frame_reclosing_v01.png",
+			"res://assets/battle_presentation/c01/story_first/sprite_status_patcher_active_v01.png",
+			"res://assets/battle_presentation/c01/fire_bridge/sprite_fire_bridge_deployed_v01.png",
+			"res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_kneel_idle_v01.png",
+			"res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_single_arm_support_v01.png",
+			"res://assets/battle_presentation/c01/guardian_z/pose_gz_c01_kneel_contact_v01.png",
+			"res://assets/battle_presentation/c01/guardian_z/cutin_doudeng_c01_tense_v01.png",
+			"res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_idle_v01.png",
+			"res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_scan_v01.png",
+			"res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_lock_v01.png",
+			"res://assets/tactical_maps/story_first/bg_c01e04_carrier_escape_isometric_v01.png",
+			"res://assets/tactical_maps/story_first/spr_wanji_mobile_chassis_v01.png",
+			"res://assets/portraits/portrait_haosi.png",
+			"res://assets/units/unit_brave_fist.svg",
+			"res://assets/units/enemy_seal_frame.svg"
+		],
+		"production_gates_not_proven": [
+			"six_stop_spatial_runtime",
+			"c01e01_scenario_driver",
+			"formal_battle_presentation_art_lock",
+			"capacity_receipt",
+			"external_blind_playtest",
+			"windows_runtime",
+			"physical_controller"
+		],
+		"runtime_contract_source": "DATA_C01E01_RUNTIME_CONTRACT_V1",
+		"source_slot_id": "V357-C01-S01",
+		"status": "candidate",
+		"story_source": "DOC_V359_C01E01_STORY_FIRST_V1",
+		"transition_contract": "required"
+	},
+	"resource_index": [
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/backgrounds/story_first/bg_c01e01_archive_room_v01.png",
+			"resource_id": "bg_c01e01_archive_room_v01.png",
+			"sha256": "068ed72c654a11145508393aabc7bbc320b1f10c16a295025d00360ffd2ac0e6"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/backgrounds/story_first/bg_c01e01_cold_open_after_fire_v01.png",
+			"resource_id": "bg_c01e01_cold_open_after_fire_v01.png",
+			"sha256": "ae523eabfcf9e3176c40ddb47b100b6c80ee5ae959f21b559849e4a189b84ae1"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/backgrounds/story_first/bg_c01e01_four_orders_v01.png",
+			"resource_id": "bg_c01e01_four_orders_v01.png",
+			"sha256": "9576f8f7a040672674e350259bb06984c3ef8e7c1ca795e8ff2be5caaad11750"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/backgrounds/story_first/bg_c01e01_front_hall_closing_v01.png",
+			"resource_id": "bg_c01e01_front_hall_closing_v01.png",
+			"sha256": "5dd6cf33a221661cafdbb36aa1595455f9c6565ae6c63dfeb1ff167a55757a32"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/backgrounds/story_first/bg_c01e01_guardian_atrium_model_hospital_v01.png",
+			"resource_id": "bg_c01e01_guardian_atrium_model_hospital_v01.png",
+			"sha256": "674c31b3c6bd8d44cf7a2c20d66ba08f53016a536742c99af3fa4281fc44d63c"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/backgrounds/story_first/bg_c01e01_old_film_hall_v01.png",
+			"resource_id": "bg_c01e01_old_film_hall_v01.png",
+			"sha256": "e0beb1ac3a24c8eb971e72e69acda736ba7531034b955edd25338342fe9dfbc5"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/backgrounds/story_first/bg_c01e01_real_machine_stage_v01.png",
+			"resource_id": "bg_c01e01_real_machine_stage_v01.png",
+			"sha256": "11c2e23e9e89331bbeba026b3de68958d8c40ea1109cf149f2ca581dd52c59db"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/backgrounds/story_first/bg_c01e01_zero_corridor_v01.png",
+			"resource_id": "bg_c01e01_zero_corridor_v01.png",
+			"sha256": "d6904944226243ddc5166187c384eb3a9a95af58fac66ac240d892b37d838703"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/fire_bridge/sprite_fire_bridge_deployed_v01.png",
+			"resource_id": "sprite_fire_bridge_deployed_v01.png",
+			"sha256": "c3fb6a913466d1f40b079357f44393e271b2e06f8cd4b6285bc26b3685834c6f"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/guardian_z/cutin_doudeng_c01_tense_v01.png",
+			"resource_id": "cutin_doudeng_c01_tense_v01.png",
+			"sha256": "c846e48b04b7d8671fd4853330487d0f39d1df98a70550d1f03d49770a26f159"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/guardian_z/pose_gz_c01_kneel_contact_v01.png",
+			"resource_id": "pose_gz_c01_kneel_contact_v01.png",
+			"sha256": "ef33acfc9ea93eb649664f9e2b7cc5580475f156ecc705636d48a1674a63c110"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_kneel_idle_v01.png",
+			"resource_id": "sprite_gz_c01_kneel_idle_v01.png",
+			"sha256": "021fddee667eb47c18c0237449308d39312b75fad620820ead28c5e27d096bd0"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_single_arm_support_v01.png",
+			"resource_id": "sprite_gz_c01_single_arm_support_v01.png",
+			"sha256": "f2e8b201a80397a8e2e9bba42770ebfc434d901d7d1ef116953b87826ef1dfdd"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_idle_v01.png",
+			"resource_id": "sprite_seal_drone_c01_idle_v01.png",
+			"sha256": "0853afbe45602cc412718a11d4cdb760eb0c15d96974061b4ff2358ce0351de4"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_lock_v01.png",
+			"resource_id": "sprite_seal_drone_c01_lock_v01.png",
+			"sha256": "1dffe70114d9572a455eb66628b679415304f8e986b3bc6606eecab755dbc007"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/seal_drone/sprite_seal_drone_c01_scan_v01.png",
+			"resource_id": "sprite_seal_drone_c01_scan_v01.png",
+			"sha256": "d5d68e5120b2ac9a5208476b892045ced1727d15188928a564d1d633fe6fd8ec"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/story_first/manifest.json",
+			"resource_id": "manifest.json",
+			"sha256": "37a03fe2568b3c4390175cc780d647ac3b87f7772fb008b78b5f956763b8f758"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/story_first/sprite_diedie_idle_v01.png",
+			"resource_id": "sprite_diedie_idle_v01.png",
+			"sha256": "916d3298c12a9e349e18ab8a4f44dc7e035bf571d73b7046061ca4c199565536"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/story_first/sprite_evac_group_base_v01.png",
+			"resource_id": "sprite_evac_group_base_v01.png",
+			"sha256": "660f66a4b9da5c8a3e49e78399a79a57a115b18a46acb1bb6a691c119d12d32e"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/story_first/sprite_machine_dog_idle_v01.png",
+			"resource_id": "sprite_machine_dog_idle_v01.png",
+			"sha256": "dd7b22231ac2f85183d7e02a2e9f023b6f80a203729def44ebb38f6a542edea0"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/story_first/sprite_path_frame_reclosing_v01.png",
+			"resource_id": "sprite_path_frame_reclosing_v01.png",
+			"sha256": "aea9005e7ca50380e5d2e9c2855fa9beff1d9a0c2cc0d720ed9473fc12b13a04"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/battle_presentation/c01/story_first/sprite_status_patcher_active_v01.png",
+			"resource_id": "sprite_status_patcher_active_v01.png",
+			"sha256": "8f73dd239e323dbff1b6332e79225339e2d6c7ea3cef6676a03b1b2417d465af"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/characters/story_first/sprite_jicun_walk_right_strip_v01.png",
+			"resource_id": "sprite_jicun_walk_right_strip_v01.png",
+			"sha256": "1ff25afcdd6f560f2fe1a9ced40a7bc13f1bf58bc9a235a936b631539fe179b5"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/portraits/portrait_doudeng.png",
+			"resource_id": "portrait_doudeng.png",
+			"sha256": "183b19dbffc64faf4d6fb352231ce01babbcd145109fcf5719a85f1ed1c826ce"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/portraits/portrait_haosi.png",
+			"resource_id": "portrait_haosi.png",
+			"sha256": "36496a089da0dc2f811f7cf423f42e2f0429ac2dc977900d95c217715b36f5f0"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/portraits/portrait_jicun.png",
+			"resource_id": "portrait_jicun.png",
+			"sha256": "e9a79a5ade6d34e6641a0b1671f758140539c4617b1f767668c9ed591d51ba31"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/portraits/portrait_qihai.png",
+			"resource_id": "portrait_qihai.png",
+			"sha256": "f2fb3c027b981d2ecfc189c88b7e8ca2483168160522b750953a4e6bcfee2e4d"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/tactical_maps/story_first/bg_c01e01_main_hall_isometric_v01.png",
+			"resource_id": "bg_c01e01_main_hall_isometric_v01.png",
+			"sha256": "defe8fb2d09dc41c486aa113b7b97f805a286e49a9487c21f9a9d9e53583ed05"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/tactical_maps/story_first/bg_c01e04_carrier_escape_isometric_v01.png",
+			"resource_id": "bg_c01e04_carrier_escape_isometric_v01.png",
+			"sha256": "7f9f6fbcb48beb407bad31226392167f3f98c4ca7f521d9b5c6a5413bbd76f9c"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/tactical_maps/story_first/spr_wanji_mobile_chassis_v01.png",
+			"resource_id": "spr_wanji_mobile_chassis_v01.png",
+			"sha256": "6f27b6d3e70cb3c3f730bb66e50e819c74c717148765d4b17364b946858b170a"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/units/enemy_seal_frame.svg",
+			"resource_id": "enemy_seal_frame.svg",
+			"sha256": "7b527fd06ae1b43295ddfd694ee24f8b5353b45c06dac9ee8930a61d7535aaff"
+		},
+		{
+			"kind": "presentation_asset",
+			"path": "res://assets/units/unit_brave_fist.svg",
+			"resource_id": "unit_brave_fist.svg",
+			"sha256": "669fa190226bbae82480ccf1fd0632d45f8dd5bbe8fa40e61e26822781204262"
+		},
+		{
+			"kind": "battle",
+			"path": "res://content/episodes/c01/e01/battle/c01_e01_story_first_small_machine_evacuation.json",
+			"resource_id": "C01E01-SMALL-MACHINE-EVACUATION@V359-C01E01-STORY-FIRST-3R-V01",
+			"sha256": "6e9c5878739f1031b0a8af459997812af6df1d5d5c3f70ec99b76e572446685f"
+		}
+	],
+	"resources_by_path": {
+		"res://content/episodes/c01/e01/battle/c01_e01_story_first_small_machine_evacuation.json": {
+			"battle_clear_scope": "episode_local_until_rt013s",
+			"battle_id": "C01E01-SMALL-MACHINE-EVACUATION",
+			"canon_source": "DOC_V359_C01E01_STORY_FIRST_V1",
+			"failure_policy": "retry_without_commit",
+			"graybox_source": "DATA_C01E01_GRAYBOX_CONSTANTS_V1",
+			"grid": {
+				"blocked": [],
+				"height": 10.0,
+				"width": 8.0
+			},
+			"machine_claim_cues": [
+				{
+					"cue_id": "CUE_C01E01_DIEDIE_ACTIVE_FALL",
+					"unit_id": "diedie",
+					"visible_action": "跌跌收回撑地手，主动把肩壳压上路径框传感轨，并在最后一组通过后自己站起。"
+				},
+				{
+					"cue_id": "CUE_C01E01_GUARDIAN_DIM_PETAL",
+					"unit_id": "guardian_z_support",
+					"visible_action": "馆守Z不站起、不挥拳，只偏头并收暗靠近人群的一瓣胸灯。"
+				}
+			],
+			"mid_events": [
+				{
+					"actions": [],
+					"event_id": "C01E01-R1-FRAME-RECLOSE",
+					"message": "路径框记住了标准复位路线，地面箭头重新折回资产区。",
+					"timing": "scenario_round_end",
+					"turn": 1.0
+				},
+				{
+					"actions": [],
+					"event_id": "C01E01-R2-NINE-PM-DINNER-BAG",
+					"message": "九点钟响；机器犬拖着D5经过路径框，顺嘴叼走纪存的晚饭袋。",
+					"timing": "scenario_round_end",
+					"turn": 2.0
+				},
+				{
+					"actions": [],
+					"event_id": "C01E01-R3-GUARDIAN-DIMS-PETAL",
+					"message": "馆守Z只亮胸灯外圈，又收暗靠近机器犬的一瓣，把安全阴影让到它脚下。",
+					"timing": "scenario_support_confirmed",
+					"turn": 3.0
+				}
+			],
+			"objective_text": "让A11、B10、C3、D5四组共29人越过闭馆线，在第三回合抵达前厅黄线。",
+			"objectives": [
+				{
+					"cell": [
+						1.0,
+						1.0
+					],
+					"id": "yellow_line_a",
+					"integrity": 1.0,
+					"name": "A组黄线格",
+					"required": true,
+					"scenario_role": "staging_cell"
+				},
+				{
+					"cell": [
+						2.0,
+						1.0
+					],
+					"id": "yellow_line_b",
+					"integrity": 1.0,
+					"name": "B组黄线格",
+					"required": true,
+					"scenario_role": "staging_cell"
+				},
+				{
+					"cell": [
+						3.0,
+						1.0
+					],
+					"id": "yellow_line_c",
+					"integrity": 1.0,
+					"name": "C组黄线格",
+					"required": true,
+					"scenario_role": "staging_cell"
+				},
+				{
+					"cell": [
+						4.0,
+						1.0
+					],
+					"id": "yellow_line_d5",
+					"integrity": 1.0,
+					"name": "D5组黄线格",
+					"required": true,
+					"scenario_role": "staging_cell"
+				}
+			],
+			"patch_catalog": {},
+			"presentation_manifest_path": "res://assets/battle_presentation/c01/story_first/manifest.json",
+			"runtime_contract_source": "DATA_C01E01_RUNTIME_CONTRACT_V1",
+			"scenario_contract": {
+				"charge_cells": {
+					"diedie": [
+						0.0,
+						7.0
+					],
+					"machine_dog": [
+						7.0,
+						7.0
+					]
+				},
+				"dog_tether_contract": {
+					"accepted_patcher_count": 1.0,
+					"attach_action": "C01E01_OPEN_SIDE_DOOR_ACCEPT_PATCHER",
+					"attached_token_id": "evac_d5",
+					"independent_action_rounds": [
+						1.0
+					],
+					"shared_cell_after_attachment": true
+				},
+				"evac_routes": {
+					"evac_a11": [
+						[
+							1.0,
+							5.0
+						],
+						[
+							1.0,
+							4.0
+						],
+						[
+							1.0,
+							3.0
+						],
+						[
+							1.0,
+							2.0
+						],
+						[
+							1.0,
+							1.0
+						]
+					],
+					"evac_b10": [
+						[
+							2.0,
+							6.0
+						],
+						[
+							2.0,
+							5.0
+						],
+						[
+							2.0,
+							4.0
+						],
+						[
+							2.0,
+							3.0
+						],
+						[
+							2.0,
+							2.0
+						],
+						[
+							2.0,
+							1.0
+						]
+					],
+					"evac_c3": [
+						[
+							3.0,
+							6.0
+						],
+						[
+							3.0,
+							5.0
+						],
+						[
+							3.0,
+							4.0
+						],
+						[
+							3.0,
+							3.0
+						],
+						[
+							3.0,
+							2.0
+						],
+						[
+							3.0,
+							1.0
+						]
+					],
+					"evac_d5": [
+						[
+							6.0,
+							4.0
+						],
+						[
+							5.0,
+							4.0
+						],
+						[
+							4.0,
+							4.0
+						],
+						[
+							4.0,
+							3.0
+						],
+						[
+							4.0,
+							2.0
+						],
+						[
+							4.0,
+							1.0
+						]
+					]
+				},
+				"evac_steps_by_round": {
+					"evac_a11": [
+						2.0,
+						2.0,
+						0.0
+					],
+					"evac_b10": [
+						2.0,
+						2.0,
+						1.0
+					],
+					"evac_c3": [
+						2.0,
+						2.0,
+						1.0
+					],
+					"evac_d5": [
+						0.0,
+						3.0,
+						2.0
+					]
+				},
+				"evac_tick_priority": [
+					"evac_a11",
+					"evac_b10",
+					"evac_c3",
+					"evac_d5"
+				],
+				"failure_checkpoint": "battle_start",
+				"failure_settlement_round": 3.0,
+				"gate_dependencies": {
+					"1": {
+						"C01E01_OPEN_SIDE_DOOR_ACCEPT_PATCHER": [
+							"evac_d5"
+						],
+						"C01E01_RESET_MAIN_GATE": [
+							"evac_a11",
+							"evac_b10",
+							"evac_c3"
+						]
+					},
+					"2": {
+						"C01E01_ACTIVE_FALL_CONFIRMED": [
+							"evac_a11",
+							"evac_b10",
+							"evac_c3",
+							"evac_d5"
+						]
+					},
+					"3": {
+						"C01E01_SAFE_ANGLE_CONFIRMED": [
+							"evac_b10",
+							"evac_c3",
+							"evac_d5"
+						]
+					}
+				},
+				"path_frame_cells": [
+					[
+						0.0,
+						3.0
+					],
+					[
+						1.0,
+						3.0
+					],
+					[
+						2.0,
+						3.0
+					],
+					[
+						3.0,
+						3.0
+					],
+					[
+						4.0,
+						3.0
+					]
+				],
+				"phase_order": [
+					"player_units",
+					"evac_auto",
+					"environment",
+					"local_round_receipt"
+				],
+				"reflector_sockets": [
+					{
+						"cell": [
+							2.0,
+							7.0
+						],
+						"resolution": "BLOCKED_BY_DOUDENG"
+					},
+					{
+						"cell": [
+							3.0,
+							7.0
+						],
+						"resolution": "SAFE_ANGLE_CONFIRMED"
+					},
+					{
+						"cell": [
+							4.0,
+							7.0
+						],
+						"resolution": "BLOCKED_BY_DOUDENG"
+					}
+				],
+				"round_receipts": {
+					"1": {
+						"evac_a11": [
+							1.0,
+							3.0
+						],
+						"evac_b10": [
+							2.0,
+							4.0
+						],
+						"evac_c3": [
+							3.0,
+							4.0
+						],
+						"evac_d5": [
+							6.0,
+							4.0
+						],
+						"frame_state": "RECLOSING",
+						"machine_dog_state": "ATTACHED_TO_D5"
+					},
+					"2": {
+						"evac_a11": [
+							1.0,
+							1.0
+						],
+						"evac_b10": [
+							2.0,
+							2.0
+						],
+						"evac_c3": [
+							3.0,
+							2.0
+						],
+						"evac_d5": [
+							4.0,
+							3.0
+						],
+						"frame_state": "JAM_EXPIRED"
+					},
+					"3": {
+						"evac_a11": [
+							1.0,
+							1.0
+						],
+						"evac_b10": [
+							2.0,
+							1.0
+						],
+						"evac_c3": [
+							3.0,
+							1.0
+						],
+						"evac_d5": [
+							4.0,
+							1.0
+						],
+						"frame_state": "UNANCHORED",
+						"people_staged": 29.0,
+						"tokens_staged": 4.0
+					}
+				},
+				"round_requirements": {
+					"1": [
+						"C01E01_OPEN_SIDE_DOOR_ACCEPT_PATCHER",
+						"C01E01_RESET_MAIN_GATE"
+					],
+					"2": [
+						"C01E01_ACTIVE_FALL_CONFIRMED"
+					],
+					"3": [
+						"C01E01_SAFE_ANGLE_CONFIRMED"
+					]
+				},
+				"side_door_cell": [
+					6.0,
+					5.0
+				]
+			},
+			"scenario_driver": "c01e01_small_machine_evacuation_v1",
+			"stable_object_bindings": [
+				{
+					"binding_id": "BIND_C01E01_ROUTE_TO_YELLOW_LINE",
+					"label": "最后一条闭馆路线",
+					"stable_object_id": "OBJ_C01E01_CLOSING_ROUTE",
+					"targets": [
+						{
+							"kind": "objective",
+							"target_id": "yellow_line_a"
+						},
+						{
+							"cell": [
+								4.0,
+								1.0
+							],
+							"kind": "cell"
+						}
+					]
+				},
+				{
+					"binding_id": "BIND_C01E01_CHEST_LIGHT_TO_SUPPORT",
+					"label": "馆守Z低热胸灯",
+					"stable_object_id": "OBJ_C01E01_GUARDIAN_CHEST_LIGHT",
+					"targets": [
+						{
+							"kind": "unit",
+							"target_id": "guardian_z_support"
+						},
+						{
+							"kind": "mid_event",
+							"target_id": "C01E01-R3-GUARDIAN-DIMS-PETAL"
+						}
+					]
+				},
+				{
+					"binding_id": "BIND_C01E01_MODEL_LATCH_TO_SAFE_REFLECTOR",
+					"label": "三相架安全罩与唐胶的材料边界",
+					"stable_object_id": "OBJ_C01E01_MODEL_HOSPITAL_LATCH",
+					"targets": [
+						{
+							"kind": "mid_event",
+							"target_id": "C01E01-R3-GUARDIAN-DIMS-PETAL"
+						},
+						{
+							"cell": [
+								3.0,
+								7.0
+							],
+							"kind": "cell"
+						}
+					]
+				},
+				{
+					"binding_id": "BIND_C01E01_DIEDIE_BODY_TO_ACTIVE_FALL",
+					"label": "跌跌的左膝与侧倒方向",
+					"stable_object_id": "OBJ_C01E01_DIEDIE_BODY",
+					"targets": [
+						{
+							"component_id": "left_knee_and_shoulder",
+							"kind": "unit_component",
+							"target_id": "diedie"
+						},
+						{
+							"cell": [
+								0.0,
+								3.0
+							],
+							"kind": "cell"
+						}
+					]
+				},
+				{
+					"binding_id": "BIND_C01E01_DOG_ROUTE_TO_SIDE_DOOR",
+					"label": "机器犬的侧门与工具柜声源",
+					"stable_object_id": "OBJ_C01E01_ROBOT_DOG_ROUTE",
+					"targets": [
+						{
+							"kind": "unit",
+							"target_id": "machine_dog"
+						},
+						{
+							"cell": [
+								6.0,
+								5.0
+							],
+							"kind": "cell"
+						}
+					]
+				},
+				{
+					"binding_id": "BIND_C01E01_ZERO_GATE_TO_LOCKDOWN",
+					"label": "0号门后的风险闸咬合",
+					"stable_object_id": "OBJ_C01E01_ZERO_GATE",
+					"targets": [
+						{
+							"kind": "battle_flag",
+							"target_id": "zero_gate_lockdown_origin"
+						},
+						{
+							"kind": "unit",
+							"target_id": "path_frame"
+						}
+					]
+				}
+			],
+			"start_prompt": "先看本回合情境动作。这里没有普通攻击，也不以全灭为目标。",
+			"status": "candidate_runtime_production",
+			"title": "万机馆主展厅 / 三回合小型救援",
+			"turn_limit": 3.0,
+			"units": [
+				{
+					"canon_entity_id": "CH057",
+					"cell": [
+						0.0,
+						6.0
+					],
+					"hp": 1.0,
+					"id": "diedie",
+					"map_token": "跌",
+					"move": 3.0,
+					"name": "跌跌 / 0.7m现实小机",
+					"scenario_role": "context_actor",
+					"team": "player",
+					"weapons": []
+				},
+				{
+					"canon_entity_id": "MECHA_DOOR_MACHINE_DOG",
+					"cell": [
+						6.0,
+						6.0
+					],
+					"hp": 1.0,
+					"id": "machine_dog",
+					"lifecycle_id": "V353U040",
+					"map_token": "犬",
+					"move": 3.0,
+					"name": "机器犬 / 四足牵引机",
+					"scenario_role": "context_actor",
+					"team": "player",
+					"weapons": []
+				},
+				{
+					"cell": [
+						1.0,
+						5.0
+					],
+					"hp": 1.0,
+					"id": "evac_a11",
+					"map_token": "11",
+					"move": 0.0,
+					"name": "A11 / 普通观众11人",
+					"no_hp_ui": true,
+					"people_count": 11.0,
+					"route": [
+						[
+							1.0,
+							5.0
+						],
+						[
+							1.0,
+							4.0
+						],
+						[
+							1.0,
+							3.0
+						],
+						[
+							1.0,
+							2.0
+						],
+						[
+							1.0,
+							1.0
+						]
+					],
+					"scenario_role": "evac_token",
+					"team": "object",
+					"weapons": []
+				},
+				{
+					"cell": [
+						2.0,
+						6.0
+					],
+					"hp": 1.0,
+					"id": "evac_b10",
+					"map_token": "10",
+					"move": 0.0,
+					"name": "B10 / 普通观众10人",
+					"no_hp_ui": true,
+					"people_count": 10.0,
+					"route": [
+						[
+							2.0,
+							6.0
+						],
+						[
+							2.0,
+							5.0
+						],
+						[
+							2.0,
+							4.0
+						],
+						[
+							2.0,
+							3.0
+						],
+						[
+							2.0,
+							2.0
+						],
+						[
+							2.0,
+							1.0
+						]
+					],
+					"scenario_role": "evac_token",
+					"team": "object",
+					"weapons": []
+				},
+				{
+					"cell": [
+						3.0,
+						6.0
+					],
+					"hp": 1.0,
+					"id": "evac_c3",
+					"map_token": "3",
+					"move": 0.0,
+					"name": "C3 / 小满、阿澄与前厅值守员",
+					"never_split": true,
+					"no_hp_ui": true,
+					"people_count": 3.0,
+					"route": [
+						[
+							3.0,
+							6.0
+						],
+						[
+							3.0,
+							5.0
+						],
+						[
+							3.0,
+							4.0
+						],
+						[
+							3.0,
+							3.0
+						],
+						[
+							3.0,
+							2.0
+						],
+						[
+							3.0,
+							1.0
+						]
+					],
+					"scenario_role": "evac_token",
+					"team": "object",
+					"weapons": []
+				},
+				{
+					"cell": [
+						6.0,
+						4.0
+					],
+					"contains_repair_worker_from_setup": true,
+					"hp": 1.0,
+					"id": "evac_d5",
+					"map_token": "5",
+					"move": 0.0,
+					"name": "D5 / 四名需协助成人与维修员",
+					"no_hp_ui": true,
+					"people_count": 5.0,
+					"route": [
+						[
+							6.0,
+							4.0
+						],
+						[
+							5.0,
+							4.0
+						],
+						[
+							4.0,
+							4.0
+						],
+						[
+							4.0,
+							3.0
+						],
+						[
+							4.0,
+							2.0
+						],
+						[
+							4.0,
+							1.0
+						]
+					],
+					"scenario_role": "evac_token",
+					"team": "object",
+					"weapons": []
+				},
+				{
+					"canon_entity_id": "ENEMY_SEAL_PATH_FRAME",
+					"cell": [
+						0.0,
+						3.0
+					],
+					"hp": 1.0,
+					"id": "path_frame",
+					"map_token": "框",
+					"move": 0.0,
+					"name": "活动路径框家族",
+					"no_attack_kit": true,
+					"no_hp_ui": true,
+					"scenario_role": "functional_module",
+					"team": "object",
+					"weapons": []
+				},
+				{
+					"canon_entity_id": "ENEMY_SEAL_DRONE",
+					"cell": [
+						5.0,
+						3.0
+					],
+					"hp": 1.0,
+					"id": "patcher_p1",
+					"map_token": "贴",
+					"move": 0.0,
+					"name": "贴片机 P1",
+					"no_attack_kit": true,
+					"no_hp_ui": true,
+					"scenario_role": "functional_module",
+					"team": "object",
+					"weapons": []
+				},
+				{
+					"canon_entity_id": "ENEMY_SEAL_DRONE",
+					"cell": [
+						6.0,
+						3.0
+					],
+					"hp": 1.0,
+					"id": "patcher_p2",
+					"map_token": "贴",
+					"move": 0.0,
+					"name": "贴片机 P2",
+					"no_attack_kit": true,
+					"no_hp_ui": true,
+					"scenario_role": "functional_module",
+					"team": "object",
+					"weapons": []
+				},
+				{
+					"canon_entity_id": "MECHA_GUARDIAN_Z",
+					"cell": [
+						0.0,
+						8.0
+					],
+					"hp": 1.0,
+					"id": "guardian_z_support",
+					"map_token": "Z",
+					"move": 0.0,
+					"name": "馆守Z / 半跪胸灯场景支援",
+					"no_hp_ui": true,
+					"not_player_controllable": true,
+					"scenario_role": "giant_terrain_support",
+					"team": "object",
+					"weapons": []
+				}
+			],
+			"variant_id": "V359-C01E01-STORY-FIRST-3R-V01",
+			"withdraw_allowed": false
+		}
+	},
+	"source_fingerprint": "c6af27a95fbaa48e7eba22ac4e2799569885037c729e860379511b01262ddc9d",
+	"source_manifest_path": "res://content/episodes/c01/e01/manifest.story_first.json",
+	"status": "candidate"
+}

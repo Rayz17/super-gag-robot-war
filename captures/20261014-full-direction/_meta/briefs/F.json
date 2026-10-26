@@ -1,0 +1,286 @@
+[
+  {
+    "id": "F01",
+    "group": "F",
+    "template": "form",
+    "key": "king_light",
+    "name": "完全版王者轻装本体",
+    "purpose": "卸装后仍是同一冠军",
+    "design": "拆下外装后头胸腰四肢仍完整；不能把轻装画成弱化丑版",
+    "states": [
+      "装甲连接位外露",
+      "轻装站姿"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F02",
+    "group": "F",
+    "template": "part",
+    "key": "king_cannon",
+    "name": "完全版王者双肩炮组",
+    "purpose": "双线射击、卸下后场上操作",
+    "design": "两炮各有背肩轴、炮口与前向；卸装保持同一外形和尺寸",
+    "states": [
+      "挂载",
+      "前指",
+      "卸装",
+      "受损"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F03",
+    "group": "F",
+    "template": "part",
+    "key": "king_shield",
+    "name": "完全版王者合盾护板",
+    "purpose": "护场与卸装",
+    "design": "盾面内外、抓持/挂载点清楚；不遮断头部或成为假胸甲",
+    "states": [
+      "展开",
+      "合拢",
+      "卸装",
+      "受损"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F04",
+    "group": "F",
+    "template": "part",
+    "key": "king_wing",
+    "name": "完全版王者飞翼推进包",
+    "purpose": "飞行及独立回收物",
+    "design": "成对翼根与推进轴明确，安装在背部有承力结构；不要把羽翼漂浮在肩外",
+    "states": [
+      "收束",
+      "飞行",
+      "卸装",
+      "受损"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F05",
+    "group": "F",
+    "template": "part",
+    "key": "king_drill",
+    "name": "完全版王者右臂贯岩钻",
+    "purpose": "近战推进及卸装",
+    "design": "钻具根部连接右前臂，转子轴与推进方向同轴；禁止出现在裆部、膝外或无根悬空",
+    "states": [
+      "静止",
+      "旋转",
+      "伸出",
+      "卸装",
+      "受损"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F06",
+    "group": "F",
+    "template": "form",
+    "key": "cargo_vehicle",
+    "name": "货柜领袖车辆形态",
+    "purpose": "可变机的移动形态",
+    "design": "轮轴、车头、货台与人形同一套零件；运输空间与乘员安全有实际位置",
+    "states": [
+      "常态",
+      "转型中间态",
+      "受损"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F07",
+    "group": "F",
+    "template": "form",
+    "key": "leiling_aircraft",
+    "name": "雷翎航空形态",
+    "purpose": "可变机的移动形态",
+    "design": "保留狙击炮轴与推进器，机翼展开不变成另一台机",
+    "states": [
+      "常态",
+      "转型中间态",
+      "受损"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F08",
+    "group": "F",
+    "template": "form",
+    "key": "song_aircraft",
+    "name": "歌翼航空形态",
+    "purpose": "可变机的移动形态",
+    "design": "机翼、座舱/感测区、弹舱与人形能对应；转型有中间姿态",
+    "states": [
+      "常态",
+      "转型中间态",
+      "受损"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F09",
+    "group": "F",
+    "template": "form",
+    "key": "brave_core",
+    "name": "完整勇拳核心机",
+    "purpose": "合体专关与机体生命周期",
+    "design": "完整有人机器人，有胸躯干四肢；不是只有拳头、空胸内胆或另一台凭空生成的小机",
+    "states": [
+      "独立",
+      "合体中",
+      "合体后",
+      "分离",
+      "受损"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F10",
+    "group": "F",
+    "template": "form",
+    "key": "brave_combined",
+    "name": "社勇王完整合体",
+    "purpose": "合体专关与机体生命周期",
+    "design": "原核心进入外部组件；保留主身份和零件来源，不能瞬间缩放拼出另一套身体",
+    "states": [
+      "独立",
+      "合体中",
+      "合体后",
+      "分离",
+      "受损"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F11",
+    "group": "F",
+    "template": "form",
+    "key": "brave_boots",
+    "name": "社勇王外部腿架",
+    "purpose": "合体专关与机体生命周期",
+    "design": "左右脚甲与腿架有进入/闭合结构，地面独立状态仍能识别",
+    "states": [
+      "独立",
+      "合体中",
+      "合体后",
+      "分离",
+      "受损"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F12",
+    "group": "F",
+    "template": "form",
+    "key": "brave_shoulders",
+    "name": "社勇王肩背外部组件",
+    "purpose": "合体专关与机体生命周期",
+    "design": "肩包、背架和接口一体；与核心接入和分离位置一致",
+    "states": [
+      "独立",
+      "合体中",
+      "合体后",
+      "分离",
+      "受损"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F13",
+    "group": "F",
+    "template": "part",
+    "key": "hydraulic",
+    "name": "工程液压顶具",
+    "purpose": "共享工具与产物",
+    "design": "活塞、反力座和可收纳接口清楚；顶不动物体时回弹，不能变成刀",
+    "states": [
+      "收纳",
+      "伸出",
+      "回弹"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F14",
+    "group": "F",
+    "template": "part",
+    "key": "repair_tool",
+    "name": "焊补工具与备件",
+    "purpose": "共享工具与产物",
+    "design": "焊枪/工具臂、备件匣、补片成套；按动作家族适配，不做每种柜内线路",
+    "states": [
+      "取用",
+      "工作",
+      "收回"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F15",
+    "group": "F",
+    "template": "part",
+    "key": "tether_tool",
+    "name": "牵引与拘束索具",
+    "purpose": "共享工具与产物",
+    "design": "牵引钩和拘束爪共用材质但形状可分；线缆独立由引擎生成",
+    "states": [
+      "发射",
+      "张紧",
+      "松脱"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F16",
+    "group": "F",
+    "template": "part",
+    "key": "barrier_kit",
+    "name": "折叠隔离墙套件",
+    "purpose": "共享工具与产物",
+    "design": "预算二号的预制墙段与灰崎的折叠警戒段分两种，不从地下魔法出现",
+    "states": [
+      "收纳",
+      "展开",
+      "落地",
+      "损坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F17",
+    "group": "F",
+    "template": "part",
+    "key": "bridge_kit",
+    "name": "消防应急桥板",
+    "purpose": "共享工具与产物",
+    "design": "装载、展开、桥面与铰接端能对应；有限长度的实体",
+    "states": [
+      "收纳",
+      "展开",
+      "接地",
+      "毁坏"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "F18",
+    "group": "F",
+    "template": "part",
+    "key": "projectile_kit",
+    "name": "炮弹导弹与弹壳",
+    "purpose": "共享工具与产物",
+    "design": "爆破导弹、震荡弹、跨区炮弹用弹头/尾迹区分；具体伤害范围由规则显示",
+    "states": [
+      "飞行",
+      "命中",
+      "残骸"
+    ],
+    "status": "todo"
+  }
+]

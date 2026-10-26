@@ -1,0 +1,88 @@
+{
+  "source_animation_license": "CC0-1.0",
+  "runtime_model_scope": "Existing project Meshy mecha, original finger reconstruction and original choreography; the CC0 license file covers the downloaded source animation only.",
+  "creators": [
+    "Quaternius",
+    "Gonzalo Furnier"
+  ],
+  "sources": [
+    "https://quaternius.itch.io/universal-animation-library",
+    "https://quaternius.itch.io/universal-animation-library-2"
+  ],
+  "zip_sha256": {
+    "universal-animation-library-2.zip": "4008ea208a604773a2b2177d965f0f5d3195498b5bf838c3f5785d68e95f2a68",
+    "universal-animation-library.zip": "cc73fc4e495b82958207316596317a3f40b9fa38065bde1027937452da537724"
+  },
+  "source_contact_phases": {
+    "Punch_Jab": 0.23333333333333334,
+    "Punch_Cross": 0.3,
+    "Melee_Hook": 0.575
+  },
+  "units": {
+    "hero": {
+      "retargeted": {
+        "Jab": "Punch_Jab",
+        "Drive": "Punch_Cross",
+        "Follow": "Punch_Cross"
+      },
+      "original_choreography_with_guard_blends": [
+        "Brace",
+        "Recoil",
+        "Hook",
+        "Counter",
+        "Special",
+        "Heavy",
+        "Sweep",
+        "Kick",
+        "Wave"
+      ],
+      "new_fk_kicks": [
+        "RoundKick"
+      ],
+      "hand_pose_clips": [
+        "HandFist",
+        "HandPalm",
+        "HandKnife"
+      ],
+      "mechanical_fingers": "4x3 phalanges and 2 thumb hinges per hand; original gauntlets retained",
+      "contact_phase": 0.52
+    },
+    "boxer": {
+      "retargeted": {
+        "Jab": "Punch_Jab",
+        "Drive": "Punch_Cross",
+        "Follow": "Punch_Cross",
+        "CheckJab": "Punch_Jab",
+        "BodyHook": "Melee_Hook",
+        "Hook": "Melee_Hook",
+        "Sweep": "Melee_Hook",
+        "Shock": "Punch_Cross",
+        "Counter": "Punch_Cross",
+        "SlipCounter": "Punch_Cross"
+      },
+      "original_choreography_with_guard_blends": [
+        "Brace",
+        "Recoil",
+        "Special",
+        "Heavy",
+        "Kick",
+        "RoundKick",
+        "Wave",
+        "Overhand",
+        "BellBreaker"
+      ],
+      "new_fk_kicks": [],
+      "hand_pose_clips": [
+        "HandFist",
+        "HandPalm",
+        "HandKnife"
+      ],
+      "mechanical_fingers": "4x3 phalanges and 2 thumb hinges per hand; original gauntlets retained",
+      "contact_phase": 0.52
+    }
+  },
+  "method": "body rotation retarget with T/A calibration, proportion-aware boot IK, shared thigh/shin hinge frames, projected knee poles and bounded ankle orientation on every baked clip; original full-turn FK kick and articulated mechanical hands",
+  "candidate": true,
+  "human_acceptance": false,
+  "revision": "v11.1-knee-ankle"
+}

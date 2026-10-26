@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0.0",
+  "task": "Section2_GZ_V10X_E02_WaveB_actions_Call01",
+  "status": "CANDIDATE_INTERNAL_QA_ONLY",
+  "generation": {
+    "mode": "built_in_imagegen",
+    "random_reroll_count": 0,
+    "call_count": 3,
+    "successful_candidate_count": 2,
+    "blocked_call_count": 1,
+    "not_called_after_stop_count": 3
+  },
+  "camera": {
+    "camera_contract_id": "CURRENT_TOPOLOGY_CAMERA_V2_40X24_CANDIDATE",
+    "view_space": "map_dimetric_40x24"
+  },
+  "map_contract": {
+    "canvas_px": [
+      256,
+      256
+    ],
+    "pivot_px": [
+      128,
+      224
+    ],
+    "footprint": [
+      2,
+      2
+    ],
+    "display_scale": [
+      1,
+      1
+    ],
+    "anchor": "footprint_bottom_center"
+  },
+  "source_lock": {
+    "approved_v10x_idle_east": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/map-candidates/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_EAST_CANDIDATE_256.png",
+      "sha256": "c6dd358980e19045626e0ed17de0614b543a971d7275cde76816e3f1d1f3b0de"
+    },
+    "approved_v10x_idle_south": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/map-candidates/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_SOUTH_CANDIDATE_256.png",
+      "sha256": "0b3d2f437558216b8d3a94a1ea5255f7b9310a94447ba530a1d89b210ccfc12d"
+    },
+    "accepted_a17_shield_design": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a17-section2-true-retired-heavy-shield-candidate/user-confirmation-call01/generation-raw/TRUE_RETIRED_HEAVY_SHIELD_CALL01_RAW.png",
+      "sha256": "169c162c5b2bd0761d535d7dee8573fc547952090dfa7947c3b9630af1c72305"
+    },
+    "old_guardian_and_old_shield_positive_input_count": 0
+  },
+  "actions": {
+    "brace_east": {
+      "direction": "east",
+      "shield": false,
+      "raw_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-wave-b-actions-candidate/call01/generation-raw/GUARDIAN_Z_V10X_CAMERA_V2_BRACE_EAST_CALL01_RAW.png",
+      "raw_sha256": "8797e794fa1ee4b41c10b10135e55d85ce66e38137d7ef903fe8d6bb5e684071",
+      "raw_mode": "RGB",
+      "raw_size": [
+        1254,
+        1254
+      ],
+      "alpha_cleanup": {
+        "canvas_pixels": 1572516,
+        "transparent_pixels": 1146060,
+        "opaque_pixels": 426456,
+        "partial_alpha_pixels": 0
+      },
+      "master_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-wave-b-actions-candidate/call01/masters/GUARDIAN_Z_V10X_CAMERA_V2_BRACE_EAST_CALL01_RGBA_MASTER.png",
+      "master_sha256": "f7f50d815505c6dfc78b939ab5c4f83e06ab3ce6f4110bfb78ab5424ec966358",
+      "candidate_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-wave-b-actions-candidate/call01/map-candidates/GUARDIAN_Z_V10X_CAMERA_V2_BRACE_EAST_CANDIDATE_256.png",
+      "candidate_sha256": "fc316e3169934086d9925e6eda65a8b36c7b4f0b7adaf4a265b70af77c733a8f",
+      "candidate_mode": "RGBA",
+      "candidate_size": [
+        256,
+        256
+      ],
+      "candidate_visible_bbox": [
+        52,
+        28,
+        205,
+        224
+      ],
+      "candidate_visible_size": [
+        153,
+        196
+      ],
+      "pivot_error_px": 0,
+      "qa_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-wave-b-actions-candidate/call01/qa/GUARDIAN_Z_V10X_CAMERA_V2_BRACE_EAST_DARK_LIGHT_50_100_QA.png",
+      "qa_sha256": "5e0f03eb4a0e1addc59decc49617e0516086f336f0a075e86468bd76d7460384",
+      "socket_readback_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-wave-b-actions-candidate/call01/qa/GUARDIAN_Z_V10X_CAMERA_V2_BRACE_EAST_SOCKET_READBACK.png",
+      "socket_readback_sha256": "e5575b4b0d799c16dc3515fcb05f7d91d770357aafbf8e56177db7eba617c564",
+      "internal_visual_gate": "PASS_SECTION2_IDENTITY_ACTION_ALPHA_PIVOT",
+      "user_accepted": false,
+      "runtime": false,
+      "canon": false
+    },
+    "brace_south": {
+      "direction": "south",
+      "shield": false,
+      "raw_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-wave-b-actions-candidate/call01/generation-raw/GUARDIAN_Z_V10X_CAMERA_V2_BRACE_SOUTH_CALL01_RAW.png",
+      "raw_sha256": "d5a4812f8444506d6c688ad332b93a24dd7fa50395b47600bdb302ad4a18157e",
+      "raw_mode": "RGB",
+      "raw_size": [
+        1254,
+        1254
+      ],
+      "alpha_cleanup": {
+        "canvas_pixels": 1572516,
+        "transparent_pixels": 1174308,
+        "opaque_pixels": 398208,
+        "partial_alpha_pixels": 0
+      },
+      "master_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-wave-b-actions-candidate/call01/masters/GUARDIAN_Z_V10X_CAMERA_V2_BRACE_SOUTH_CALL01_RGBA_MASTER.png",
+      "master_sha256": "fe4316835644399d79caed7baa4b5fdf5b93044a67e74dbb70c327132521c9bc",
+      "candidate_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-wave-b-actions-candidate/call01/map-candidates/GUARDIAN_Z_V10X_CAMERA_V2_BRACE_SOUTH_CANDIDATE_256.png",
+      "candidate_sha256": "acfb7180481bf9546128807568b2389bc97886d65f6d2a0cb6e0d35d89e6ccce",
+      "candidate_mode": "RGBA",
+      "candidate_size": [
+        256,
+        256
+      ],
+      "candidate_visible_bbox": [
+        48,
+        28,
+        208,
+        224
+      ],
+      "candidate_visible_size": [
+        160,
+        196
+      ],
+      "pivot_error_px": 0,
+      "qa_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-wave-b-actions-candidate/call01/qa/GUARDIAN_Z_V10X_CAMERA_V2_BRACE_SOUTH_DARK_LIGHT_50_100_QA.png",
+      "qa_sha256": "85c298aabfcdc101d4fa88d5c954cee69c82abdc1315eb7dc6f938889233c230",
+      "socket_readback_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-wave-b-actions-candidate/call01/qa/GUARDIAN_Z_V10X_CAMERA_V2_BRACE_SOUTH_SOCKET_READBACK.png",
+      "socket_readback_sha256": "132b7917dccf28b040ce2681fa2b58baf263d659480aa57d770c59142ec8c6b3",
+      "internal_visual_gate": "PASS_SECTION2_IDENTITY_ACTION_ALPHA_PIVOT",
+      "user_accepted": false,
+      "runtime": false,
+      "canon": false
+    }
+  },
+  "lifecycle": {
+    "user_accepted": false,
+    "runtime": false,
+    "default": false,
+    "canon": false,
+    "godot_bound": false
+  },
+  "first_failure": {
+    "action": "shield_take_south",
+    "raw_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-wave-b-actions-candidate/call01/stage-a-block/generation-raw/GUARDIAN_Z_V10X_CAMERA_V2_SHIELD_TAKE_SOUTH_CALL01_BLOCK_RAW.png",
+    "raw_sha256": "fb61c5bdf53ec50753bd54a737f2148e04804622a5d4ac1078dafcbef496c55f",
+    "failed_gate": "exactly_three_old_scrapes_and_distinct_take_transition",
+    "downstream_calls_stopped": [
+      "shield_hold_south",
+      "shield_block_south",
+      "shield_bash_south"
+    ]
+  }
+}

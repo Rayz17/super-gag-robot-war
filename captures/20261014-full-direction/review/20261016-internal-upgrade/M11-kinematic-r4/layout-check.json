@@ -1,0 +1,82 @@
+{
+  "scope": "卸柜后的本体刚体布局草模；不是生产模型或完整变形验收",
+  "states": [
+    {
+      "t": 0,
+      "file": "01-unloaded-vehicle.png"
+    },
+    {
+      "t": 0.38,
+      "file": "02-cab-shift-and-arm-open.png"
+    },
+    {
+      "t": 0.72,
+      "file": "03-frame-down-deck-fold.png"
+    },
+    {
+      "t": 1,
+      "file": "04-robot-head-up.png"
+    }
+  ],
+  "mesh_count": 74,
+  "road_wheels": [
+    "road-wheel-axle1--1",
+    "road-wheel-axle2--1",
+    "road-wheel-axle3--1",
+    "road-wheel-axle4--1",
+    "road-wheel-axle1-1",
+    "road-wheel-axle2-1",
+    "road-wheel-axle3-1",
+    "road-wheel-axle4-1"
+  ],
+  "road_wheel_count": 8,
+  "same_part_inventory_across_samples": true,
+  "rigid_geometry_signature": "2982d5b884d6ca5c9a92723343c5a7af9925860ac7b0a34cc8c027eeb5bc9e34",
+  "rigid_samples_checked": 121,
+  "mesh_scaling_or_morphing_used": false,
+  "joint_hierarchy_used": true,
+  "joints": [
+    "cab backward carriage",
+    "front half-axle flip links",
+    "shoulder sliders and hinges",
+    "folded elbow / forearm wheel carriers",
+    "rear frame to legs",
+    "ankle counter-rotation and rear bumper foot drop",
+    "three freight-floor hinges",
+    "head lift"
+  ],
+  "head_location_vehicle": "驾驶室后部设备仓示意",
+  "cargo_policy": "单个货柜在研究开始前已卸下，整个本体变形研究中在地面保持尺寸与位置；不模拟装卸动作",
+  "limits": [
+    "车壳为简化包络，未完成全部局部碰撞/净空检查",
+    "未完成驾驶室可用空间、座椅/管线和部件厚度工程校验",
+    "未验证重心、地面反力、动力学与变形时支撑",
+    "头部仅使用无独立顶鳍的通用包络；R4两种整体头盔候选未做精细几何/收纳校验，非用户采用",
+    "与绘制源稿仍需反向对齐，不能把草模直接称作可制造变形机构"
+  ],
+  "collision_clearance_verified": false,
+  "occupant_space_verified": false,
+  "dynamics_verified": false,
+  "user_accepted": false,
+  "runtime_integrated": false,
+  "motion_file": "M11-layout-motion-r4.mp4",
+  "motion_duration_seconds": 6.291666666666667,
+  "continuous_visual_playback_review_performed": false,
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "01-unloaded-vehicle.png",
+      "02-cab-shift-and-arm-open.png",
+      "03-frame-down-deck-fold.png",
+      "04-robot-head-up.png"
+    ],
+    "scope": "四个静态状态逐张查看；未正常速度完整播放视频",
+    "findings": [
+      "四状态使用同一组部件；最终完整头脚入画，长大腿与小腿清楚。",
+      "尾防钻梁作足部、后双轴作小腿轮组、前两轴分离轮架作肩后和前臂轮组；三段货台折成背架。",
+      "中段车头悬起，支撑/承重尚未成立；简化车壳不是绘制细节模型。",
+      "已撤掉被用户否定的独立冠鳍，头部仅通用包络，不代表R4 A或B精确外形。"
+    ]
+  }
+}

@@ -1,0 +1,139 @@
+{
+	"bundle_schema_version": 1,
+	"canon_boundary": "runtime_validation_only",
+	"compiler_contract": {
+		"activity_grammars_validated": true,
+		"battle_presentation_manifest_validated": true,
+		"battle_refs_validated": true,
+		"canon_refs_validation": "external_canon_check_godot_strict_required",
+		"capacity_receipt_validated": false,
+		"experience_contract_validated": false,
+		"experience_production_gate_status": "missing",
+		"graph_validated": true,
+		"investigation_resources_validated": true,
+		"patch_consumers_validated": true,
+		"presentation_refs_validated": true,
+		"scene_refs_validated": true,
+		"spatial_layout_validated": false,
+		"stable_object_continuity_validated": true,
+		"transition_contract_validated": true
+	},
+	"episode_id": "C01E01-MULTI-PLAY-M1",
+	"experience_contract_report": {
+		"accepted": true,
+		"capacity_receipt_validated": false,
+		"details": {},
+		"enabled": false,
+		"errors": [],
+		"gate_status": "missing",
+		"required": false,
+		"structure_validated": false,
+		"warnings": []
+	},
+	"graph": {
+		"episode_id": "C01E01-MULTI-PLAY-M1",
+		"nodes": [
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"C01E01-RM-INCIDENT"
+				],
+				"completion_contract": "OUTCOME_C01_M1_INTRO_V01",
+				"failure_edges": [
+					"C01E01-RM-INCIDENT"
+				],
+				"lines": [
+					{
+						"speaker": "旁白",
+						"text": "火灾后的短镜头被按停。时间退回三小时前。"
+					},
+					{
+						"speaker": "纪存",
+						"text": "先把最后一条闭馆路线走完。"
+					}
+				],
+				"mode": "NARRATIVE",
+				"node_id": "C01E01-M1-NARRATIVE",
+				"objective": "建立一条可保存的叙事上下文。",
+				"scene_id": "SCN_C01_M1_NARRATIVE",
+				"soft_fail_edges": [
+					"C01E01-RM-INCIDENT"
+				],
+				"success_edges": [
+					"C01E01-RM-INCIDENT"
+				],
+				"title": "三小时前 / 运行时接入"
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"C01E01-M1-DESK"
+				],
+				"completion_contract": "OUTCOME_C01_RM_INCIDENT_V01",
+				"failure_edges": [
+					"C01E01-M1-DESK"
+				],
+				"mode": "SPATIAL",
+				"node_id": "C01E01-RM-INCIDENT",
+				"objective": "确认停机权、失败路径和低热支援边界。",
+				"required_context": [
+					"RM_ROOM_STATE",
+					"DOUDENG_POSITION",
+					"DIEDIE_CONDITION"
+				],
+				"scene_id": "SCN_C01_RM_RESCUE_2P5D_V01",
+				"soft_fail_edges": [
+					"C01E01-M1-DESK"
+				],
+				"success_edges": [
+					"C01E01-M1-DESK"
+				],
+				"title": "现实机器区 / 失败占格救援"
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [],
+				"completion_contract": "OUTCOME_C01_M1_DESK_V01",
+				"failure_edges": [],
+				"mode": "DESK",
+				"node_id": "C01E01-M1-DESK",
+				"objective": "把现场结果投影成可读记录和下一步责任。",
+				"scene_id": "SCN_C01_M1_DESK",
+				"soft_fail_edges": [],
+				"success_edges": [],
+				"terminal": true,
+				"title": "现场结算 / 未完成项",
+				"transaction_id": "C01E01:M1:DESK_REVIEW:V01"
+			}
+		],
+		"start_node_id": "C01E01-M1-NARRATIVE"
+	},
+	"manifest": {
+		"bundle_output": "res://content/generated/episodes/c01/e01/m1.bundle.json",
+		"claims": [
+			"mode_switch",
+			"input_context_handoff",
+			"transaction_idempotency",
+			"save_restore",
+			"spatial_incident_integration"
+		],
+		"episode_id": "C01E01-MULTI-PLAY-M1",
+		"graph": "res://content/episodes/c01/e01/graph.m1.json",
+		"mode_scenes": [
+			"SCN_C01_M1_NARRATIVE",
+			"SCN_C01_RM_RESCUE_2P5D_V01",
+			"SCN_C01_M1_DESK"
+		],
+		"non_claims": [
+			"formal_c01_episode_complete",
+			"formal_srpg_connected",
+			"phase_b_art_promoted"
+		],
+		"status": "runtime_validation_only"
+	},
+	"resource_index": [],
+	"resources_by_path": {},
+	"source_fingerprint": "064ec8d8f9e0b1b5c5928ace6bc555c2544963db77b52fb338d05491a422172c",
+	"source_manifest_path": "res://content/episodes/c01/e01/manifest.m1.json",
+	"status": "runtime_validation_only"
+}

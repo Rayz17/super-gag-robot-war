@@ -1,0 +1,254 @@
+{
+  "manifest_id": "BP_M6_OLD_BOXER_RUNTIME_VALIDATION_V01",
+  "runtime_scope": "runtime_validation_only",
+  "canon_refs": [
+    "MECHA_OLD_BOXER_KING",
+    "MECHA_SHADOW_SPARRING_MACHINE",
+    "V353U043",
+    "ENEMY_C02_FULL_ARMOR_CHAMPION_BAIREN",
+    "ENEMY_AUCTION_HAMMER_ARM",
+    "ENEMY_LIVE_CAMERA_DRONE",
+    "CH_TANGJIAO",
+    "C02E03-AUCTION"
+  ],
+  "assets": [
+    {
+      "asset_id": "SPR_OLD_BOXER_M6_MAP_IDLE_V01",
+      "runtime_path": "res://assets/battle_presentation/m6/old_boxer/sprite_old_boxer_map_idle_v01.png",
+      "source_path": "docs/superpowers/specs/production/multi-play-runtime/art-delivery/m6-old-boxer-sources/source_old_boxer_map_idle_chroma_v01.png",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true,
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py",
+      "prompt_version": "M6-OLD-BOXER-MAP-IDLE-v1"
+    },
+    {
+      "asset_id": "POSE_OLD_BOXER_M6_MISSED_BEAT_V01",
+      "runtime_path": "res://assets/battle_presentation/m6/old_boxer/pose_old_boxer_missed_beat_v01.png",
+      "source_path": "docs/superpowers/specs/production/multi-play-runtime/art-delivery/m6-old-boxer-sources/source_old_boxer_missed_beat_pose_chroma_v01.png",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true,
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py",
+      "prompt_version": "M6-OLD-BOXER-MISSED-BEAT-v1"
+    },
+    {
+      "asset_id": "CUTIN_TANGJIAO_M6_REPAIR_V01",
+      "runtime_path": "res://assets/portraits/character_line_tangjiao_doudeng_qihai_v3.png",
+      "source_rect": [190, 25, 220, 300],
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true,
+      "source_model_or_tool": "existing candidate portrait sheet",
+      "prompt_version": "source-predates-manifest"
+    }
+  ],
+  "unit_visuals": [
+    {
+      "unit_id": "old_boxer_king",
+      "states": {
+        "default": "SPR_OLD_BOXER_M6_MAP_IDLE_V01",
+        "READY": "SPR_OLD_BOXER_M6_MAP_IDLE_V01",
+        "MOVED_READY": "SPR_OLD_BOXER_M6_MAP_IDLE_V01",
+        "DONE": "SPR_OLD_BOXER_M6_MAP_IDLE_V01"
+      },
+      "draw_size": [118, 148],
+      "offset": [0, -49],
+      "dim_when_done": true
+    },
+    {
+      "unit_id": "shadow_sparring",
+      "visual_kind": "procedural",
+      "profile": "echo_fighter",
+      "approval_status": "runtime_validation_candidate",
+      "palette": {"base": "335563", "secondary": "14242c", "accent": "79ddeb", "outline": "c9e1e6"},
+      "draw_scale": 1.10,
+      "offset": [0, -8],
+      "dim_when_done": true
+    },
+    {
+      "unit_id": "cargo_leader",
+      "visual_kind": "procedural",
+      "profile": "cargo_lifter",
+      "approval_status": "runtime_validation_candidate",
+      "palette": {"base": "28747a", "secondary": "1d3437", "accent": "e89b3f", "outline": "d9eff0"},
+      "draw_scale": 1.25,
+      "offset": [0, -6],
+      "dim_when_done": true
+    },
+    {
+      "unit_id": "bairen_champion",
+      "visual_kind": "procedural",
+      "profile": "bairen_overarmored",
+      "approval_status": "runtime_validation_candidate",
+      "palette": {"base": "ddd8ce", "secondary": "4b565e", "accent": "e2585d", "outline": "fff6e8"},
+      "draw_scale": 1.20,
+      "offset": [0, -7],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "auction_hammer_arm",
+      "visual_kind": "procedural",
+      "profile": "auction_hammer",
+      "approval_status": "runtime_validation_candidate",
+      "palette": {"base": "3d4650", "secondary": "171d23", "accent": "f0b83f", "outline": "f4ead1"},
+      "draw_scale": 0.95,
+      "offset": [0, -4],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "live_camera_drone",
+      "visual_kind": "procedural",
+      "profile": "camera_drone",
+      "approval_status": "runtime_validation_candidate",
+      "palette": {"base": "343b4b", "secondary": "171c25", "accent": "e76aae", "outline": "f1dce8"},
+      "draw_scale": 0.88,
+      "offset": [0, -10],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "injured_worker",
+      "visual_kind": "procedural",
+      "profile": "rescue_stretcher",
+      "approval_status": "runtime_validation_candidate",
+      "palette": {"base": "d9dfd7", "secondary": "7d8d91", "accent": "59d39b", "outline": "eff8f4"},
+      "draw_scale": 0.82,
+      "offset": [0, 1],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "warehouse_gate",
+      "visual_kind": "procedural",
+      "profile": "warehouse_gate",
+      "approval_status": "runtime_validation_candidate",
+      "palette": {"base": "566268", "secondary": "283239", "accent": "f0b83f", "outline": "e5eceb"},
+      "draw_scale": 0.84,
+      "offset": [0, -2],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "evidence_cache",
+      "visual_kind": "procedural",
+      "profile": "evidence_cache",
+      "approval_status": "runtime_validation_candidate",
+      "palette": {"base": "455963", "secondary": "24333a", "accent": "58c8d9", "outline": "e3f0f2"},
+      "draw_scale": 0.90,
+      "offset": [0, 0],
+      "dim_when_done": false
+    }
+  ],
+  "attack_presentations": [
+    {
+      "presentation_id": "BP_M6_OLD_BOXER_BODY_JAB_V01",
+      "attacker_id": "old_boxer_king",
+      "weapon_ids": ["body_jab"],
+      "header": "旧拳王机 / 承力刺拳",
+      "subheader": "先让旧膝接住重量，再把拳送出去",
+      "footer": "3m / BODY LOAD / REPAIRED RIGHT ARM",
+      "presentation_style": "boxing",
+      "asset_refs": {
+        "attacker_map": "SPR_OLD_BOXER_M6_MAP_IDLE_V01"
+      },
+      "steps_full": [
+        {"type": "map_anim", "duration": 0.62, "asset_id": "SPR_OLD_BOXER_M6_MAP_IDLE_V01", "payload": {"motion": "weight_shift"}},
+        {"type": "camera", "duration": 0.24, "payload": {"motion": "push_in"}},
+        {"type": "pilot_cutin", "duration": 0.66, "asset_id": "CUTIN_TANGJIAO_M6_REPAIR_V01", "payload": {"speaker": "唐胶", "label": "右拳别抡满。膝先把重量接住。", "sublabel": "REPAIR LOAD ORDER / MANUAL"}},
+        {"type": "mecha_pose", "duration": 0.72, "asset_id": "POSE_OLD_BOXER_M6_MISSED_BEAT_V01", "payload": {"footer": "3m / BODY LOAD / REPAIRED RIGHT ARM"}},
+        {"type": "fx", "duration": 0.42, "payload": {"fx": "boxing_impact"}},
+        {"type": "freeze", "duration": 0.14},
+        {"type": "shake", "duration": 0.20, "payload": {"strength": 6.0}},
+        {"type": "damage_popup", "duration": 0.62},
+        {"type": "return_to_map", "duration": 0.18}
+      ],
+      "steps_short": [
+        {"type": "map_anim", "duration": 0.28, "asset_id": "SPR_OLD_BOXER_M6_MAP_IDLE_V01"},
+        {"type": "mecha_pose", "duration": 0.48, "asset_id": "POSE_OLD_BOXER_M6_MISSED_BEAT_V01"},
+        {"type": "fx", "duration": 0.28, "payload": {"fx": "boxing_impact"}},
+        {"type": "damage_popup", "duration": 0.46},
+        {"type": "return_to_map", "duration": 0.12}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_M6_OLD_BOXER_MISSED_BEAT_V01",
+      "attacker_id": "old_boxer_king",
+      "weapon_ids": ["missed_beat_guard"],
+      "header": "旧拳王机 / 漏拍停拳",
+      "subheader": "不是慢了一拍，是把最后一拍留给活人",
+      "footer": "3m / HELD PUNCH / RESCUE PRIORITY",
+      "presentation_style": "boxing",
+      "asset_refs": {
+        "attacker_map": "SPR_OLD_BOXER_M6_MAP_IDLE_V01"
+      },
+      "variants": [
+        {
+          "variant_id": "original_timing_restored",
+          "requires_known_objects": ["OBJ_M6_SHADOW_TAPE"],
+          "overrides": {
+            "subheader": "原速录像里的空拍：这一拳，本来就没有打出去",
+            "steps_full": [
+              {"type": "map_anim", "duration": 0.72, "asset_id": "SPR_OLD_BOXER_M6_MAP_IDLE_V01", "payload": {"motion": "one_beat_delay"}},
+              {"type": "camera", "duration": 0.28, "payload": {"motion": "hold_before_contact"}},
+              {"type": "pilot_cutin", "duration": 0.72, "asset_id": "CUTIN_TANGJIAO_M6_REPAIR_V01", "payload": {"speaker": "唐胶", "label": "别补那一拍。它当年就是靠这一下没打出去。", "sublabel": "ORIGINAL SPEED / ONE EMPTY BEAT"}},
+              {"type": "mecha_pose", "duration": 0.86, "asset_id": "POSE_OLD_BOXER_M6_MISSED_BEAT_V01", "payload": {"footer": "3m / ORIGINAL TIMING / HELD PUNCH"}},
+              {"type": "freeze", "duration": 0.32},
+              {"type": "fx", "duration": 0.36, "payload": {"fx": "held_punch_pressure"}},
+              {"type": "damage_popup", "duration": 0.58},
+              {"type": "return_to_map", "duration": 0.20}
+            ]
+          }
+        }
+      ],
+      "steps_full": [
+        {"type": "map_anim", "duration": 0.56, "asset_id": "SPR_OLD_BOXER_M6_MAP_IDLE_V01"},
+        {"type": "pilot_cutin", "duration": 0.58, "asset_id": "CUTIN_TANGJIAO_M6_REPAIR_V01", "payload": {"speaker": "唐胶", "label": "停住。不是每一拳都非得打完。", "sublabel": "MANUAL TIMING / RESCUE FIRST"}},
+        {"type": "mecha_pose", "duration": 0.72, "asset_id": "POSE_OLD_BOXER_M6_MISSED_BEAT_V01"},
+        {"type": "freeze", "duration": 0.22},
+        {"type": "fx", "duration": 0.34, "payload": {"fx": "held_punch_pressure"}},
+        {"type": "damage_popup", "duration": 0.52},
+        {"type": "return_to_map", "duration": 0.16}
+      ],
+      "steps_short": [
+        {"type": "mecha_pose", "duration": 0.54, "asset_id": "POSE_OLD_BOXER_M6_MISSED_BEAT_V01"},
+        {"type": "freeze", "duration": 0.16},
+        {"type": "damage_popup", "duration": 0.42},
+        {"type": "return_to_map", "duration": 0.12}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    }
+  ],
+  "event_presentations": [
+    {
+      "presentation_id": "BP_M6_RING_COLLAPSE_V01",
+      "event_id": "M6-C02-RING-COLLAPSE",
+      "header": "战场变化 / 擂台翻成仓库",
+      "subheader": "护栏落下之后，胜负条件只剩谁能出去",
+      "footer": "MAP CHANGE / RESCUE PRIORITY",
+      "presentation_style": "boxing",
+      "variants": [
+        {
+          "variant_id": "controlled_rescue",
+          "requires_event_variant": "controlled_rescue",
+          "overrides": {
+            "subheader": "后仓门警报已读，旧拳王按维修草案先撑住撤离口",
+            "steps_full": [
+              {"type": "pilot_cutin", "duration": 0.68, "asset_id": "CUTIN_TANGJIAO_M6_REPAIR_V01", "payload": {"speaker": "唐胶", "label": "别追冠军。左膝落地，右拳去顶门！", "sublabel": "KNOWN EXIT / REPAIR PLAN OPEN"}},
+              {"type": "mecha_pose", "duration": 0.82, "asset_id": "POSE_OLD_BOXER_M6_MISSED_BEAT_V01", "payload": {"footer": "GATE BRACED / NO EXTRA COLLAPSE LOSS"}},
+              {"type": "shake", "duration": 0.28, "payload": {"strength": 8.0}},
+              {"type": "freeze", "duration": 0.22},
+              {"type": "return_to_map", "duration": 0.22}
+            ]
+          }
+        }
+      ],
+      "steps_full": [
+        {"type": "camera", "duration": 0.32, "payload": {"motion": "map_break"}},
+        {"type": "pilot_cutin", "duration": 0.60, "asset_id": "CUTIN_TANGJIAO_M6_REPAIR_V01", "payload": {"speaker": "唐胶", "label": "拳台下面是仓门！先把人和出口保住！", "sublabel": "UNKNOWN LOAD / EMERGENCY"}},
+        {"type": "shake", "duration": 0.44, "payload": {"strength": 10.0}},
+        {"type": "return_to_map", "duration": 0.22}
+      ],
+      "steps_short": [
+        {"type": "shake", "duration": 0.24, "payload": {"strength": 7.0}},
+        {"type": "return_to_map", "duration": 0.14}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    }
+  ]
+}

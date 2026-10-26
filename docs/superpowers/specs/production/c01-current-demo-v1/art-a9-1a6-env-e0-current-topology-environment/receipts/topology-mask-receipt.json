@@ -1,0 +1,27 @@
+{
+  "source_zone_cell_counts": {
+    "main_road": 224,
+    "protection_rescue": 84,
+    "security_apron": 64,
+    "terrain_impassable": 145,
+    "selection_pocket": 18,
+    "breaker_avenue": 15,
+    "shoulder_bands": 10
+  },
+  "later_wins_material_class_counts": {
+    "open": 175,
+    "road": 164,
+    "rescue": 28,
+    "building": 145,
+    "apron": 64
+  },
+  "guardian_2x2_anchor_counts": {
+    "legal": 360,
+    "invalid": 216
+  },
+  "non_placeable_is_not_universal_union": true,
+  "terrain_impassable_mask": "TERRAIN_IMPASSABLE_CELL only",
+  "decor_keep_clear_mask": "selection + avenue + shoulders + reserved stateful anchors; not gameplay blocking",
+  "protection_zone_policy": "LOW_PROFILE_ONLY; physical donor-derived curb/road language allowed",
+  "pass": true
+}

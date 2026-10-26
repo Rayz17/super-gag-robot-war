@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-18",
+  "mode": "built-in image_gen",
+  "use_case": "precise-object-edit",
+  "user_directive": "采用这设计，修正正面视图的头部天线",
+  "references": [
+    {
+      "file": "samples/M01-head-center-groove-three-quarter-r9b.png",
+      "role": "user-adopted design authority; keep image unchanged",
+      "sha256": "38a0f36ea2361abede5ec969777db584a5a4d3d6a806f1bf001f899440cf4aa4"
+    },
+    {
+      "file": "samples/M01-head-aft-antenna-r7.png",
+      "role": "edit target is LEFT front view ONLY; preserve all outside crown",
+      "sha256": "fec7ad02b6d55306726b2012fe0ba9fd375f260a41c4d1f2538ba619572bb6be"
+    }
+  ],
+  "transparent_background": true,
+  "prompt": "Use case: precise-object-edit.\nAsset type: corrected TRUE FRONT head reference for the same mecha.\n\nImage 1 is the USER-ADOPTED HEAD DESIGN. It is the authoritative three-quarter view of M01 / Unbranded One. Its crown design is now fixed. Do NOT redesign or change image 1.\nImage 2 is the PREVIOUS TWO-VIEW SHEET. Use ONLY its LEFT, straight-on bust as the EDIT TARGET and as the authority for all features below/outside the crown. Its old right-view crown is obsolete.\n\nOutput ONE straight FRONT head-and-upper-shoulder bust only, not a two-view sheet. Correct ONLY the central top antenna/ivory crown on the front bust so it is the actual front projection of the USER-ADOPTED crown from image 1.\n\nMatch image 1's exact crown construction:\nA single broad ivory rear-swept crown BODY follows the skull from the forehead backward. A narrow recessed yellow/ochre channel runs down the MIDLINE of its top surface, with a raised white shoulder on each side. The outer sidewalls of the same crown body are white. It is not two independent upright horns or ears. The front view must represent that single solid crown and its actual thickness, width, segment boundaries, curvature, front termination, and rear cap. Keep the long channel centered and naturally foreshortened in the head-on projection; do not place yellow stripes on sidewalls or split the structure into additional fins. The small lower rectangular yellow forehead inset stays SEPARATE from the long channel with the same intervening white bridge as the adopted design.\nUse the broad solid white top banks, recessed center channel and the three main plate sections visible in image 1. Mirror the physical left/right hardware and paint exactly around the forehead centerline. Do not copy any apparent asymmetry caused by the three-quarter perspective. No head tilt/yaw/roll in this frontal view.\n\nRetain all OTHER details from the LEFT bust of image 2 as faithfully as possible: compact teal helmet plates; continuous amber visor; closed angular ivory face shield; teal cheek recesses; symmetric round temple sensor hubs; accepted paired slim straight AFT-pointing temple antennas. In a front view those rear-pointing side antennas remain foreshortened and narrow. Keep graphite neck, ochre collar, ivory shoulder shells, identity, head/face proportions, and teal/ivory/ochre palette unchanged. Do not modify the accepted side antennas again.\n\nThe only design authority change is: image 1's adopted crown replaces the old front crown interpretation. Preserve the current KINETIC_CEL line quality, flat painted armor planes, two-level cel shading and restrained seams. No photoreal render, redesign, symbols, text, labels, arrows or extra views.\nComposition: one centered symmetric front bust, generous margins around head and antenna tips, same upper-shoulder framing as the previous front. Actual transparent background."
+}

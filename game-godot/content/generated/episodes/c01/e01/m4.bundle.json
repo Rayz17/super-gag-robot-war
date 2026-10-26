@@ -1,0 +1,1087 @@
+{
+	"bundle_schema_version": 1,
+	"canon_boundary": "runtime_validation_only",
+	"compiler_contract": {
+		"activity_grammars_validated": true,
+		"battle_presentation_manifest_validated": true,
+		"battle_refs_validated": true,
+		"canon_refs_validation": "external_canon_check_godot_strict_required",
+		"capacity_receipt_validated": false,
+		"experience_contract_validated": false,
+		"experience_production_gate_status": "missing",
+		"graph_validated": true,
+		"investigation_resources_validated": true,
+		"patch_consumers_validated": true,
+		"presentation_refs_validated": true,
+		"scene_refs_validated": true,
+		"spatial_layout_validated": false,
+		"stable_object_continuity_validated": true,
+		"transition_contract_validated": true
+	},
+	"episode_id": "C01E01-MULTI-PLAY-M4",
+	"experience_contract_report": {
+		"accepted": true,
+		"capacity_receipt_validated": false,
+		"details": {},
+		"enabled": false,
+		"errors": [],
+		"gate_status": "missing",
+		"required": false,
+		"structure_validated": false,
+		"warnings": []
+	},
+	"graph": {
+		"episode_id": "C01E01-MULTI-PLAY-M4",
+		"nodes": [
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"C01E01-M4-RM-INCIDENT"
+				],
+				"completion_contract": "OUTCOME_C01_M4_INTRO_V01",
+				"failure_edges": [
+					"C01E01-M4-RM-INCIDENT"
+				],
+				"lines": [
+					{
+						"speaker": "旁白",
+						"text": "火灾后的短镜头被按停。时间退回三小时前。"
+					},
+					{
+						"speaker": "纪存",
+						"text": "先去看现场。别把猜的东西带进战场。"
+					}
+				],
+				"mode": "NARRATIVE",
+				"node_id": "C01E01-M4-NARRATIVE",
+				"outcome_facts": [
+					{
+						"id": "M4_RUNTIME_INTRO_SEEN",
+						"to": true
+					}
+				],
+				"player_summary": "纪存决定先确认现场，再把空间判断带进保护战。",
+				"scene_id": "SCN_C01_M1_NARRATIVE",
+				"soft_fail_edges": [
+					"C01E01-M4-RM-INCIDENT"
+				],
+				"success_edges": [
+					"C01E01-M4-RM-INCIDENT"
+				],
+				"title": "三小时前 / 一条保护线",
+				"transaction_id": "C01E01:M4:NARRATIVE_INTRO:V01"
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [
+					"C01E01-M4-TACTICAL"
+				],
+				"completion_contract": "OUTCOME_C01_RM_INCIDENT_M4_V01",
+				"failure_edges": [
+					"C01E01-M4-TACTICAL"
+				],
+				"mode": "SPATIAL",
+				"node_id": "C01E01-M4-RM-INCIDENT",
+				"objective": "确认停机权、失败路径和低热支援边界。",
+				"required_context": [
+					"RM_ROOM_STATE",
+					"DOUDENG_POSITION",
+					"DIEDIE_CONDITION"
+				],
+				"scene_id": "SCN_C01_RM_RESCUE_2P5D_V01",
+				"soft_fail_edges": [
+					"C01E01-M4-TACTICAL"
+				],
+				"success_edges": [
+					"C01E01-M4-TACTICAL"
+				],
+				"title": "现实机器区 / 失败占格救援"
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"battle_definition": {
+					"battle_id": "C01E01-PROTECTION-LINE",
+					"grid": {
+						"blocked": [
+							[
+								4.0,
+								1.0
+							],
+							[
+								4.0,
+								2.0
+							],
+							[
+								4.0,
+								3.0
+							]
+						],
+						"height": 6.0,
+						"width": 9.0
+					},
+					"mid_events": [
+						{
+							"actions": [
+								{
+									"type": "spawn_unit",
+									"unit": {
+										"cell": [
+											8.0,
+											5.0
+										],
+										"hp": 5.0,
+										"id": "seal_drone_reinforcement",
+										"intent_target_id": "evac_beacon",
+										"intent_verb": "封路",
+										"move": 3.0,
+										"name": "封存无人机增援",
+										"team": "enemy"
+									}
+								}
+							],
+							"event_id": "C01E01-3T-R2-REINFORCEMENT",
+							"message": "东侧吊轨放下一台封存无人机；它的白线先指向撤离灯。",
+							"timing": "turn_start",
+							"turn": 2.0
+						},
+						{
+							"actions": [],
+							"event_id": "C01E01-3T-R3-LOW-HEAT",
+							"message": "馆守 Z 胸牌亮了一次。兜灯仍握着总闸，机体没有起身。",
+							"timing": "turn_start",
+							"turn": 3.0
+						}
+					],
+					"objective_text": "撑过3回合或解除全部封存执行机；留言墙备份箱与撤离灯不能归零。",
+					"objectives": [
+						{
+							"cell": [
+								8.0,
+								1.0
+							],
+							"id": "message_wall",
+							"integrity": 5.0,
+							"name": "留言墙备份箱",
+							"required": true
+						},
+						{
+							"cell": [
+								8.0,
+								4.0
+							],
+							"id": "evac_beacon",
+							"integrity": 4.0,
+							"name": "观众撤离灯",
+							"required": true
+						},
+						{
+							"cell": [
+								5.0,
+								5.0
+							],
+							"id": "model_hospital",
+							"integrity": 2.0,
+							"name": "模型病院旧件柜",
+							"required": false
+						}
+					],
+					"patch_catalog": {
+						"PATCH_C01_FAILURE_BLOCK_LINE_B": {
+							"operations": [
+								{
+									"cells": [
+										[
+											4.0,
+											4.0
+										]
+									],
+									"op": "add_blocked_cells"
+								},
+								{
+									"delta": 1.0,
+									"objective_id": "evac_beacon",
+									"op": "objective_integrity_delta"
+								},
+								{
+									"key": "failure_block_line",
+									"op": "set_flag",
+									"value": true
+								}
+							]
+						}
+					},
+					"start_prompt": "先看执行意图，再决定由谁占住路线。",
+					"status": "frozen_candidate_runtime_validation",
+					"title": "现实机器区 / 三回合救援候选",
+					"turn_limit": 3.0,
+					"units": [
+						{
+							"cell": [
+								1.0,
+								2.0
+							],
+							"en": 20.0,
+							"hp": 20.0,
+							"id": "guardian_z",
+							"move": 0.0,
+							"name": "馆守 Z / 半跪支援",
+							"team": "player",
+							"weapons": [
+								{
+									"en": 2.0,
+									"hit": 100.0,
+									"id": "low_heat_palm",
+									"max": 3.0,
+									"min": 1.0,
+									"name": "低热量掌部防卫",
+									"post_move": true,
+									"power": 5.0
+								}
+							]
+						},
+						{
+							"cell": [
+								1.0,
+								4.0
+							],
+							"en": 12.0,
+							"hp": 10.0,
+							"id": "diedie",
+							"move": 4.0,
+							"name": "跌跌 / 失败占格",
+							"team": "player",
+							"weapons": [
+								{
+									"en": 0.0,
+									"hit": 100.0,
+									"id": "balance_bump",
+									"max": 1.0,
+									"min": 1.0,
+									"name": "重心偏移顶靠",
+									"post_move": true,
+									"power": 3.0
+								}
+							]
+						},
+						{
+							"cell": [
+								2.0,
+								4.0
+							],
+							"en": 10.0,
+							"hp": 8.0,
+							"id": "machine_dog",
+							"move": 5.0,
+							"name": "机器狗 / 导览回收型",
+							"team": "player",
+							"weapons": [
+								{
+									"en": 0.0,
+									"hit": 100.0,
+									"id": "route_clamp",
+									"max": 2.0,
+									"min": 1.0,
+									"name": "路线夹持",
+									"post_move": true,
+									"power": 3.0
+								}
+							]
+						},
+						{
+							"cell": [
+								3.0,
+								1.0
+							],
+							"hp": 6.0,
+							"id": "seal_drone_a",
+							"intent_target_id": "message_wall",
+							"intent_verb": "贴签",
+							"move": 3.0,
+							"name": "封存无人机 A",
+							"team": "enemy"
+						},
+						{
+							"cell": [
+								6.0,
+								4.0
+							],
+							"hp": 6.0,
+							"id": "seal_drone_b",
+							"intent_target_id": "evac_beacon",
+							"intent_verb": "截断",
+							"move": 3.0,
+							"name": "封存无人机 B",
+							"team": "enemy"
+						},
+						{
+							"cell": [
+								7.0,
+								2.0
+							],
+							"hp": 7.0,
+							"id": "seal_drone_c",
+							"intent_target_id": "message_wall",
+							"intent_verb": "采样",
+							"move": 3.0,
+							"name": "封存无人机 C",
+							"team": "enemy"
+						}
+					],
+					"variant_id": "V3510-C01E01-CANDIDATE-3T",
+					"withdraw_allowed": true
+				},
+				"battle_definition_path": "res://content/episodes/c01/e01/battle/c01_e01_v3510_candidate_3t.json",
+				"cancel_edges": [
+					"C01E01-M4-AFTER-WITHDRAW"
+				],
+				"completion_contract": "OUTCOME_C01_M4_TACTICAL_V01",
+				"failure_edges": [
+					"C01E01-M4-AFTER-FAILURE"
+				],
+				"mode": "TACTICAL",
+				"node_id": "C01E01-M4-TACTICAL",
+				"objective": "让空间事件的结果进入战棋，并让战棋结果返回人物与记录。",
+				"scene_id": "SCN_C01_M4_TACTICAL",
+				"soft_fail_edges": [
+					"C01E01-M4-AFTER-COST"
+				],
+				"success_edges": [
+					"C01E01-M4-AFTER-SUCCESS"
+				],
+				"title": "主展厅保护线 / 数据驱动战术场景"
+			},
+			{
+				"cancel_edges": [
+					"C01E01-M4-DESK"
+				],
+				"completion_contract": "OUTCOME_C01_M4_AFTER_SUCCESS_V01",
+				"failure_edges": [
+					"C01E01-M4-DESK"
+				],
+				"lines": [
+					{
+						"speaker": "旧守护者",
+						"text": "观众通路维持。本机姿态：半跪。"
+					},
+					{
+						"speaker": "兜灯",
+						"text": "没过线。别庆祝，吊索还在掉。"
+					}
+				],
+				"mode": "NARRATIVE",
+				"node_id": "C01E01-M4-AFTER-SUCCESS",
+				"player_summary": "保护线成立后的即时反应已进入剧情。",
+				"scene_id": "SCN_C01_M1_NARRATIVE",
+				"soft_fail_edges": [
+					"C01E01-M4-DESK"
+				],
+				"success_edges": [
+					"C01E01-M4-DESK"
+				],
+				"title": "保护线成立",
+				"transaction_id": "C01E01:M4:AFTER_SUCCESS:V01"
+			},
+			{
+				"cancel_edges": [
+					"C01E01-M4-DESK"
+				],
+				"completion_contract": "OUTCOME_C01_M4_AFTER_COST_V01",
+				"failure_edges": [
+					"C01E01-M4-DESK"
+				],
+				"lines": [
+					{
+						"speaker": "阿澄",
+						"text": "七个还在。旧件柜没了。别把两件事说成一样。"
+					},
+					{
+						"speaker": "纪存",
+						"text": "不一样。丢的那件也记我名下。"
+					}
+				],
+				"mode": "NARRATIVE",
+				"node_id": "C01E01-M4-AFTER-COST",
+				"player_summary": "战术软失败没有被抹掉，而是进入人物责任。",
+				"scene_id": "SCN_C01_M1_NARRATIVE",
+				"soft_fail_edges": [
+					"C01E01-M4-DESK"
+				],
+				"success_edges": [
+					"C01E01-M4-DESK"
+				],
+				"title": "保住主要线，留下次生责任",
+				"transaction_id": "C01E01:M4:AFTER_COST:V01"
+			},
+			{
+				"cancel_edges": [
+					"C01E01-M4-DESK"
+				],
+				"completion_contract": "OUTCOME_C01_M4_AFTER_FAILURE_V01",
+				"failure_edges": [
+					"C01E01-M4-DESK"
+				],
+				"lines": [
+					{
+						"speaker": "旁白",
+						"text": "白线越过留言墙。纸没有燃烧，只是开始不再属于写下它的人。"
+					},
+					{
+						"speaker": "纪存",
+						"text": "先带人出去。东西丢在哪一格，我记得。"
+					}
+				],
+				"mode": "NARRATIVE",
+				"node_id": "C01E01-M4-AFTER-FAILURE",
+				"player_summary": "战斗失败继续成为剧情事实，没有读档式抹除。",
+				"scene_id": "SCN_C01_M1_NARRATIVE",
+				"soft_fail_edges": [
+					"C01E01-M4-DESK"
+				],
+				"success_edges": [
+					"C01E01-M4-DESK"
+				],
+				"title": "保护线被压穿",
+				"transaction_id": "C01E01:M4:AFTER_FAILURE:V01"
+			},
+			{
+				"cancel_edges": [
+					"C01E01-M4-DESK"
+				],
+				"completion_contract": "OUTCOME_C01_M4_AFTER_WITHDRAW_V01",
+				"failure_edges": [
+					"C01E01-M4-DESK"
+				],
+				"lines": [
+					{
+						"speaker": "纪存",
+						"text": "黄线往外。不要等我把这地方解释成胜利。"
+					},
+					{
+						"speaker": "七海",
+						"text": "撤离记录已生成。责任栏还是空的。你确定要填自己？"
+					}
+				],
+				"mode": "NARRATIVE",
+				"node_id": "C01E01-M4-AFTER-WITHDRAW",
+				"player_summary": "撤离是承担后果的选择，不是取消战斗。",
+				"scene_id": "SCN_C01_M1_NARRATIVE",
+				"soft_fail_edges": [
+					"C01E01-M4-DESK"
+				],
+				"success_edges": [
+					"C01E01-M4-DESK"
+				],
+				"title": "主动撤离",
+				"transaction_id": "C01E01:M4:AFTER_WITHDRAW:V01"
+			},
+			{
+				"autosave": "before_enter_and_after_commit",
+				"cancel_edges": [],
+				"completion_contract": "OUTCOME_C01_M4_DESK_V01",
+				"failure_edges": [],
+				"mode": "DESK",
+				"node_id": "C01E01-M4-DESK",
+				"scene_id": "SCN_C01_M1_DESK",
+				"soft_fail_edges": [],
+				"success_edges": [],
+				"terminal": true,
+				"title": "现场结算 / 世界记得什么",
+				"transaction_id": "C01E01:M4:DESK_REVIEW:V01"
+			}
+		],
+		"start_node_id": "C01E01-M4-NARRATIVE"
+	},
+	"manifest": {
+		"battle_variants": [
+			"res://content/episodes/c01/e01/battle/c01_e01_v3510_candidate_3t.json",
+			"res://content/episodes/c01/e01/battle/c01_e01_legacy_protection_6t.json"
+		],
+		"bundle_output": "res://content/generated/episodes/c01/e01/m4.bundle.json",
+		"claims": [
+			"declarative_tactical_setup",
+			"battle_setup_patch_consumption",
+			"battle_outcome_branching",
+			"tactical_save_restore",
+			"success_soft_failure_failure_withdrawal_paths"
+		],
+		"episode_id": "C01E01-MULTI-PLAY-M4",
+		"graph": "res://content/episodes/c01/e01/graph.m4.json",
+		"non_claims": [
+			"formal_c01_battle_variant_selected",
+			"formal_c01_episode_complete",
+			"production_art_promoted"
+		],
+		"status": "runtime_validation_only"
+	},
+	"resource_index": [
+		{
+			"kind": "battle",
+			"path": "res://content/episodes/c01/e01/battle/c01_e01_legacy_protection_6t.json",
+			"resource_id": "C01E01-PROTECTION-LINE@C01-MERGED-V03-LEGACY-6T",
+			"sha256": "c9b6d36afb66d2dad96ee4f090769f504e152df61c52185e2a65500003ca29a1"
+		},
+		{
+			"kind": "battle",
+			"path": "res://content/episodes/c01/e01/battle/c01_e01_v3510_candidate_3t.json",
+			"resource_id": "C01E01-PROTECTION-LINE@V3510-C01E01-CANDIDATE-3T",
+			"sha256": "f894057a69af4e1b49d71115749fffc902d3912634495cd4e4cd39c8f7b4484d"
+		}
+	],
+	"resources_by_path": {
+		"res://content/episodes/c01/e01/battle/c01_e01_legacy_protection_6t.json": {
+			"battle_id": "C01E01-PROTECTION-LINE",
+			"grid": {
+				"blocked": [
+					[
+						5.0,
+						1.0
+					],
+					[
+						5.0,
+						2.0
+					],
+					[
+						5.0,
+						3.0
+					],
+					[
+						5.0,
+						4.0
+					]
+				],
+				"height": 8.0,
+				"width": 12.0
+			},
+			"mid_events": [
+				{
+					"actions": [
+						{
+							"cell": [
+								6.0,
+								4.0
+							],
+							"type": "add_blocked_cell"
+						}
+					],
+					"event_id": "C01E01-6T-R2-SMOKE",
+					"message": "火势扩大，烟雾遮住天桥；一段封存框体落在撤离线上。",
+					"timing": "turn_start",
+					"turn": 2.0
+				},
+				{
+					"actions": [
+						{
+							"type": "spawn_unit",
+							"unit": {
+								"cell": [
+									10.0,
+									2.0
+								],
+								"hp": 7.0,
+								"id": "zero_opener",
+								"intent_target_id": "zero_lock",
+								"intent_verb": "开封",
+								"move": 1.0,
+								"name": "0号开启臂",
+								"team": "enemy"
+							}
+						}
+					],
+					"event_id": "C01E01-6T-R3-ZERO-ARM",
+					"message": "0号开启臂从侧廊门框外接入，开始读取门锁。",
+					"timing": "turn_start",
+					"turn": 3.0
+				},
+				{
+					"actions": [],
+					"event_id": "C01E01-6T-R4-OLD-NOTE",
+					"message": "采样贴片开始筛选未归档纸条；玩家此前保留的东西进入战场。",
+					"timing": "turn_start",
+					"turn": 4.0
+				},
+				{
+					"actions": [],
+					"event_id": "C01E01-6T-R5-FIRST-BURN",
+					"message": "旧守护者广播断续。留言墙上的名字却一张接一张被人念出来。",
+					"timing": "turn_start",
+					"turn": 5.0
+				},
+				{
+					"actions": [],
+					"event_id": "C01E01-6T-R6-CHEST-BADGE",
+					"message": "馆守 Z 胸牌在半跪姿态下响应；机体仍未起身。",
+					"timing": "turn_start",
+					"turn": 6.0
+				}
+			],
+			"objective_text": "保护留言墙与撤离人员6回合，并阻止0号开启臂连续接管门锁。",
+			"objectives": [
+				{
+					"cell": [
+						9.0,
+						5.0
+					],
+					"id": "message_wall",
+					"integrity": 7.0,
+					"name": "留言墙",
+					"required": true
+				},
+				{
+					"cell": [
+						4.0,
+						6.0
+					],
+					"id": "children_group",
+					"integrity": 5.0,
+					"name": "守展小队撤离线",
+					"required": true
+				},
+				{
+					"cell": [
+						9.0,
+						1.0
+					],
+					"id": "fire_control",
+					"integrity": 4.0,
+					"name": "灭火控制箱",
+					"required": true
+				},
+				{
+					"cell": [
+						11.0,
+						2.0
+					],
+					"id": "zero_lock",
+					"integrity": 4.0,
+					"name": "0号侧廊门锁",
+					"required": true
+				},
+				{
+					"cell": [
+						7.0,
+						7.0
+					],
+					"id": "model_hospital",
+					"integrity": 2.0,
+					"name": "模型病院旧件柜",
+					"required": false
+				}
+			],
+			"patch_catalog": {
+				"PATCH_C01_FAILURE_BLOCK_LINE_B": {
+					"operations": [
+						{
+							"cells": [
+								[
+									4.0,
+									5.0
+								]
+							],
+							"op": "add_blocked_cells"
+						},
+						{
+							"delta": 1.0,
+							"objective_id": "children_group",
+							"op": "objective_integrity_delta"
+						},
+						{
+							"key": "failure_block_line",
+							"op": "set_flag",
+							"value": true
+						}
+					]
+				}
+			},
+			"start_prompt": "封存无人机按清单推进；它们不追人，但会把路变成资产。",
+			"status": "existing_production_wording_pending_version_ruling",
+			"title": "万机馆主展厅 / 六回合保护战",
+			"turn_limit": 6.0,
+			"units": [
+				{
+					"cell": [
+						1.0,
+						4.0
+					],
+					"en": 30.0,
+					"hp": 18.0,
+					"id": "jicun",
+					"move": 3.0,
+					"name": "纪存 / 临时指挥机",
+					"team": "player",
+					"weapons": [
+						{
+							"en": 0.0,
+							"hit": 95.0,
+							"id": "archive_hook",
+							"max": 2.0,
+							"min": 1.0,
+							"name": "档案钩索",
+							"post_move": true,
+							"power": 3.0
+						}
+					]
+				},
+				{
+					"cell": [
+						1.0,
+						3.0
+					],
+					"en": 20.0,
+					"hp": 14.0,
+					"id": "old_guardian",
+					"move": 3.0,
+					"name": "旧守护者 / 导览机",
+					"team": "player",
+					"weapons": [
+						{
+							"en": 0.0,
+							"hit": 92.0,
+							"id": "safety_line",
+							"max": 3.0,
+							"min": 1.0,
+							"name": "黄线广播",
+							"post_move": true,
+							"power": 2.0
+						}
+					]
+				},
+				{
+					"cell": [
+						1.0,
+						6.0
+					],
+					"en": 28.0,
+					"hp": 16.0,
+					"id": "doudeng",
+					"move": 3.0,
+					"name": "兜灯 / 整备机",
+					"team": "player",
+					"weapons": [
+						{
+							"en": 0.0,
+							"hit": 90.0,
+							"id": "wrench_arc",
+							"max": 2.0,
+							"min": 1.0,
+							"name": "扳手电弧",
+							"post_move": true,
+							"power": 3.0
+						}
+					]
+				},
+				{
+					"cell": [
+						1.0,
+						7.0
+					],
+					"en": 18.0,
+					"hp": 15.0,
+					"id": "tangjiao",
+					"move": 3.0,
+					"name": "唐胶 / 模型急救箱",
+					"team": "player",
+					"weapons": [
+						{
+							"en": 0.0,
+							"hit": 88.0,
+							"id": "parts_throw",
+							"max": 3.0,
+							"min": 2.0,
+							"name": "旧件投掷",
+							"post_move": true,
+							"power": 3.0
+						}
+					]
+				},
+				{
+					"cell": [
+						6.0,
+						5.0
+					],
+					"hp": 6.0,
+					"id": "drone_a",
+					"intent_target_id": "message_wall",
+					"intent_verb": "封存",
+					"move": 3.0,
+					"name": "法务无人机 A",
+					"team": "enemy"
+				},
+				{
+					"cell": [
+						5.0,
+						4.0
+					],
+					"hp": 3.0,
+					"id": "scanner_b",
+					"intent_target_id": "message_wall",
+					"intent_verb": "归档",
+					"move": 3.0,
+					"name": "白线扫描器 B",
+					"team": "enemy"
+				},
+				{
+					"cell": [
+						7.0,
+						1.0
+					],
+					"hp": 6.0,
+					"id": "smoke_d",
+					"intent_target_id": "fire_control",
+					"intent_verb": "锁定",
+					"move": 3.0,
+					"name": "消防锁定框体 D",
+					"team": "enemy"
+				},
+				{
+					"cell": [
+						10.0,
+						6.0
+					],
+					"hp": 6.0,
+					"id": "carrier_e",
+					"intent_target_id": "children_group",
+					"intent_verb": "转移",
+					"move": 3.0,
+					"name": "观众转移框体 E",
+					"team": "enemy"
+				}
+			],
+			"variant_id": "C01-MERGED-V03-LEGACY-6T",
+			"withdraw_allowed": true
+		},
+		"res://content/episodes/c01/e01/battle/c01_e01_v3510_candidate_3t.json": {
+			"battle_id": "C01E01-PROTECTION-LINE",
+			"grid": {
+				"blocked": [
+					[
+						4.0,
+						1.0
+					],
+					[
+						4.0,
+						2.0
+					],
+					[
+						4.0,
+						3.0
+					]
+				],
+				"height": 6.0,
+				"width": 9.0
+			},
+			"mid_events": [
+				{
+					"actions": [
+						{
+							"type": "spawn_unit",
+							"unit": {
+								"cell": [
+									8.0,
+									5.0
+								],
+								"hp": 5.0,
+								"id": "seal_drone_reinforcement",
+								"intent_target_id": "evac_beacon",
+								"intent_verb": "封路",
+								"move": 3.0,
+								"name": "封存无人机增援",
+								"team": "enemy"
+							}
+						}
+					],
+					"event_id": "C01E01-3T-R2-REINFORCEMENT",
+					"message": "东侧吊轨放下一台封存无人机；它的白线先指向撤离灯。",
+					"timing": "turn_start",
+					"turn": 2.0
+				},
+				{
+					"actions": [],
+					"event_id": "C01E01-3T-R3-LOW-HEAT",
+					"message": "馆守 Z 胸牌亮了一次。兜灯仍握着总闸，机体没有起身。",
+					"timing": "turn_start",
+					"turn": 3.0
+				}
+			],
+			"objective_text": "撑过3回合或解除全部封存执行机；留言墙备份箱与撤离灯不能归零。",
+			"objectives": [
+				{
+					"cell": [
+						8.0,
+						1.0
+					],
+					"id": "message_wall",
+					"integrity": 5.0,
+					"name": "留言墙备份箱",
+					"required": true
+				},
+				{
+					"cell": [
+						8.0,
+						4.0
+					],
+					"id": "evac_beacon",
+					"integrity": 4.0,
+					"name": "观众撤离灯",
+					"required": true
+				},
+				{
+					"cell": [
+						5.0,
+						5.0
+					],
+					"id": "model_hospital",
+					"integrity": 2.0,
+					"name": "模型病院旧件柜",
+					"required": false
+				}
+			],
+			"patch_catalog": {
+				"PATCH_C01_FAILURE_BLOCK_LINE_B": {
+					"operations": [
+						{
+							"cells": [
+								[
+									4.0,
+									4.0
+								]
+							],
+							"op": "add_blocked_cells"
+						},
+						{
+							"delta": 1.0,
+							"objective_id": "evac_beacon",
+							"op": "objective_integrity_delta"
+						},
+						{
+							"key": "failure_block_line",
+							"op": "set_flag",
+							"value": true
+						}
+					]
+				}
+			},
+			"start_prompt": "先看执行意图，再决定由谁占住路线。",
+			"status": "frozen_candidate_runtime_validation",
+			"title": "现实机器区 / 三回合救援候选",
+			"turn_limit": 3.0,
+			"units": [
+				{
+					"cell": [
+						1.0,
+						2.0
+					],
+					"en": 20.0,
+					"hp": 20.0,
+					"id": "guardian_z",
+					"move": 0.0,
+					"name": "馆守 Z / 半跪支援",
+					"team": "player",
+					"weapons": [
+						{
+							"en": 2.0,
+							"hit": 100.0,
+							"id": "low_heat_palm",
+							"max": 3.0,
+							"min": 1.0,
+							"name": "低热量掌部防卫",
+							"post_move": true,
+							"power": 5.0
+						}
+					]
+				},
+				{
+					"cell": [
+						1.0,
+						4.0
+					],
+					"en": 12.0,
+					"hp": 10.0,
+					"id": "diedie",
+					"move": 4.0,
+					"name": "跌跌 / 失败占格",
+					"team": "player",
+					"weapons": [
+						{
+							"en": 0.0,
+							"hit": 100.0,
+							"id": "balance_bump",
+							"max": 1.0,
+							"min": 1.0,
+							"name": "重心偏移顶靠",
+							"post_move": true,
+							"power": 3.0
+						}
+					]
+				},
+				{
+					"cell": [
+						2.0,
+						4.0
+					],
+					"en": 10.0,
+					"hp": 8.0,
+					"id": "machine_dog",
+					"move": 5.0,
+					"name": "机器狗 / 导览回收型",
+					"team": "player",
+					"weapons": [
+						{
+							"en": 0.0,
+							"hit": 100.0,
+							"id": "route_clamp",
+							"max": 2.0,
+							"min": 1.0,
+							"name": "路线夹持",
+							"post_move": true,
+							"power": 3.0
+						}
+					]
+				},
+				{
+					"cell": [
+						3.0,
+						1.0
+					],
+					"hp": 6.0,
+					"id": "seal_drone_a",
+					"intent_target_id": "message_wall",
+					"intent_verb": "贴签",
+					"move": 3.0,
+					"name": "封存无人机 A",
+					"team": "enemy"
+				},
+				{
+					"cell": [
+						6.0,
+						4.0
+					],
+					"hp": 6.0,
+					"id": "seal_drone_b",
+					"intent_target_id": "evac_beacon",
+					"intent_verb": "截断",
+					"move": 3.0,
+					"name": "封存无人机 B",
+					"team": "enemy"
+				},
+				{
+					"cell": [
+						7.0,
+						2.0
+					],
+					"hp": 7.0,
+					"id": "seal_drone_c",
+					"intent_target_id": "message_wall",
+					"intent_verb": "采样",
+					"move": 3.0,
+					"name": "封存无人机 C",
+					"team": "enemy"
+				}
+			],
+			"variant_id": "V3510-C01E01-CANDIDATE-3T",
+			"withdraw_allowed": true
+		}
+	},
+	"source_fingerprint": "0d3f457710c81c9c325c85c3f0f8c9e5b484ada80788bb5d3f76c478b50de3fd",
+	"source_manifest_path": "res://content/episodes/c01/e01/manifest.m4.json",
+	"status": "runtime_validation_only"
+}

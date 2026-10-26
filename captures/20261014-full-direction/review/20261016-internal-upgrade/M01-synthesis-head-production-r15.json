@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-19",
+  "revision": "M01-synthesis-head-production-r15",
+  "asset": "M01 / 无牌一号",
+  "file": "samples/M01-synthesis-head-r15.png",
+  "sha256": "203d0f83b7c252d15a561f4d4a12b4c1e1d4ab13cc8213ac3fb6f5d05d0526d0",
+  "pixel_size": [
+    1448,
+    1086
+  ],
+  "mode": "RGBA",
+  "alpha_range": [
+    0,
+    255
+  ],
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-ae6d21f8-5b87-44be-a055-594a383a9242.png",
+  "generation_mode": "built-in image_gen",
+  "prompt": "M01-synthesis-head-prompt-r15.json",
+  "request_record": "M01-synthesis-head-direction-r15.json",
+  "source_refs": [
+    {
+      "file": "samples/M01-family-master-r13.png",
+      "role": "M01脸部基础、色系、颈下与画法；旧长条冠脊替换",
+      "sha256": "8e87cab7de5a2a458cb5fd1f107b635027594b058fb5ad56d22174a4b559cb00"
+    },
+    {
+      "file": "refs/M01-r15-baikanfu-official-detail.jpg",
+      "role": "官方Baikanfu头部眉额/脸框/高位侧后天线结构，只参考头，不取实体玩具画法",
+      "source_page": "https://tamashiiweb.com/item/12128/",
+      "source_image": "https://tamashiiweb.com/storage/images/products/imported/item_0000012128_6FznKHZd_09.jpg",
+      "sha256": "32c0571c76054b445c14f5e5b2a3001c7b7686c4504981cc8cdb32a2688711de"
+    },
+    {
+      "file": "refs/M01-r15-optimus-official-2.jpg",
+      "role": "官方经典擎天柱方正盔体/高位颞侧/闭合面罩结构，只参考头",
+      "source_page": "https://www.hasbropulse.com/product/transformers-retro-g1-optimus-prime/G01535L00",
+      "source_image": "https://cdn.media.amplience.net/i/hasbropulse/bbb39dfdf6061daab6b0f65c7c215062bcd6c8c1?fmt=auto&w=1600",
+      "sha256": "8eb9d3d14241d6512ea5fe733485c054b06ee2ad1ba3f0c0af7d4512cadc5b13"
+    },
+    {
+      "file": "samples/M05-full-loadout-r1b.png",
+      "role": "王者同系列装甲折面及画法，保持量产/豪华主角层级",
+      "sha256": "0df4a2889f99df35087ce69e9dbf5b05d5a2afee54aaf7f54d761a2f5d1ebff1"
+    }
+  ],
+  "reference_interpretation": "天威勇士先按倍功夫/Baikanfu；擎天柱先按经典G1。此为作者对用户简称的具体取样，不是假定用户指定某个商品版本。",
+  "reader": "M01-family-head-review-r14.html#synthesis-r15",
+  "existing_batch": "design-followthrough-r1.json#experience_record_m01_r15",
+  "status": "proportion_rework_requested_direction_retained",
+  "user_accepted": false,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "author_review": {
+    "reviewer": "author",
+    "actual_media": "实际完整R15工具返回图；对照已读取的Bandai倍功夫和Hasbro G1擎天柱商品图、M01 R13及M05。",
+    "observed": [
+      "旧中轴长条双槽冠脊已去掉，中央变为短低白额块与小金色嵌件。",
+      "盔顶上部更平，颞侧块更方正；两根主要天线成对落在头部侧后，显示单段直线和根部结构。",
+      "没有额前高独角或大V冠；琥珀视窗、封闭白面甲、青白金及颈下胸肩家族保持。"
+    ],
+    "limits": [
+      "本张具体新设计未由用户认可；取样版本为作者先按倍功夫与经典G1的理解，用户未指定商品版本。",
+      "天线高度和后倾角不据手绘单图精确量定，当前高度仍可微调；前后根位尚未同模型验证。",
+      "头肩截取中的部分胸肩构件有绘制差异，不以此覆盖R13颈下候选母稿。",
+      "未补正侧背、整机装回或游戏运行；没有版权审查结论。"
+    ],
+    "independent_review": false
+  },
+  "latest_user_review": {
+    "record": "M01-head-proportion-direction-r16.json",
+    "direction_may_continue": true,
+    "proportion_rework_required": true,
+    "source_unconditionally_accepted": false
+  }
+}

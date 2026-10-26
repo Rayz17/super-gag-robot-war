@@ -1,0 +1,41 @@
+formula_id	tier	scene_type_id	catalog_role	plain_name	sample_episode	playable_units	opposition	objective_count	map_kind	scale_layers	new_components_vs_lower_tier	complexity_drivers	source_evidence	slice_status
+FML_NARRATIVE	NARR_T0	NARR_LINEAR	c01_c03_example	线性叙述单场	C01E01 cold_open	0	none	0	背景静帧	single	背景;旁白;单角色立绘;推进键	beat数量	graph.story_first.json c01e01_cold_open	not_started
+FML_NARRATIVE	NARR_T1	NARR_MULTI_CAST	c01_c03_example	多角色对话立绘切换	C01E02 STORY_SAME_SELF_REVEAL	0	none	0	背景静帧	single	cast[]多人;side左右;portrait_visibility=active_only;accent	同场角色数	presentation.cast[] 字段	not_started
+FML_NARRATIVE	NARR_T2	NARR_INLINE_CHOICE	c01_c03_example	句内选项分支	C01E01 closing_route count_player_order	0	none	0	背景静帧	single	beat.choices[];requires_choices{};choice写成facts	分支数与可见性组合	narrative_mode_scene.gd 102-106	not_started
+FML_NARRATIVE	NARR_T3	NARR_SETPIECE	c01_c03_example	过场演出	C01E03 SETPIECE_DOUBLE_FIST	0	none	0	静帧或视频	single	Full与Skip结果必须相同;presentation_only;不得凭动画补玩法胜利	演出拍数;是否有视频	EMT010 must_not_be_treated_as	not_started
+FML_NARRATIVE	NARR_T4	NARR_CONSENT	c01_c03_example	同意与关系事件	C01E02 QIHAI_SELF_ORDER_REVOCATION	0	none	0	背景静帧	single	owner prepare receipt;权能绑定(QIHAI_REVOKE_SELF_ORDER);关系写回	涉及owner数	EMT015;authority-action-contracts.tsv	not_started
+FML_NARRATIVE	NARR_T5	NARR_SPATIAL_OVERLAY	c01_c03_example	探索中的叠层对话	C01E01 闭馆六站热点	0	none	0	探索场景之上	single	presentation_mode=spatial_overlay;半透明顶栏不铺满	与探索状态耦合	SpatialNarrativeOverlay	not_started
+FML_TACTICAL	TAC_T0	TAC_SHOWCASE	c01_c03_example	压缩演出战	C02E03-A 王者对杰克	0	1	0	固定擂台	single	看懂装备;几乎不决策	无	C02战斗与玩法预案;拓扑compressed	not_started
+FML_TACTICAL	TAC_T1	TAC_COACHED	c01_c03_example	非计分指导战	C02E02 TACTICAL_TRAINING	1+短时切师父	1	1	训练场	single	阈值重拳;强制停拳;机体主体叫停	切控切换	C02预案第二节	not_started
+FML_TACTICAL	TAC_T2	TAC_TIMED_GAUNTLET	c01_c03_example	限时穿越	C02E01 TACTICAL_QUALIFIER	1	2	1	锁定环外圈	single	90秒倒计时;非致死推拦摔;有限资源(2次借来横移)	时间压力+资源	C02E01 encounter_objectives	not_started
+FML_TACTICAL	TAC_T3	TAC_RULE_DUEL	c01_c03_example	规则1v1	C02E03-B 师徒半决赛	1	1	1	固定环擂台	single	抢距;正面接阈值重击才蓄势;出界判定;必杀首次完成	玩家主动制造条件	C02E03 local_agency	not_started
+FML_TACTICAL	TAC_T4	TAC_LOADOUT_DUEL	c01_c03_example	装备循环1v1	C02E04 TACTICAL_FINAL	1	1	2	锁定环	single	三分制;四套装备战法可见准备;同招第二次不再照旧命中	对手状态机	C02E04 encounter_objectives	not_started
+FML_TACTICAL	TAC_T5	TAC_PROTECT_LINE	c01_c03_example	单主力护线	C01E02 TACTICAL_GROUND_P1	1主力+导览协战	1大体型Boss+少量散乱杂兵	5+1	可滚动街区	human_residue+mecha	杂兵无指挥各自扑击;保护目标;越线危险线转向;意图线;阶段检查点;城市边缘火力非单位	双目标并行+尺度残留	C01预案第三节;拓扑ENC-C01-GROUND	not_started
+FML_TACTICAL	TAC_T6	TAC_DUAL_FOCUS	c01_c03_example	双机集火破甲	C01E03 TACTICAL_GROUND_P2	2	同一Boss+幸存杂兵	4	同图继承破坏态	mecha	双单位行动经济;集火标记(红裂口);一次不可逆断肢;多拍不可失败终结;敌组织态升级	不可逆代价	C01E03 primary_verbs;拓扑P2	not_started
+FML_TACTICAL	TAC_T7	TAC_CARRIER_ANCHOR	c01_c03_example	母舰承重拆锁	C03E01 TACTICAL_HOLD_AND_UNLOCK	3~4+母舰支援	Boss不对撞+楔机+拖机	3+1	滚动城市剖面	mecha+megastructure	多格母舰固定承点不可离;载荷UI;母舰三选一支援动作;关节锁定与解锁	母舰约束+承重会计	C03预案;C03E01 local_agency;qa/tactical-carrier-t7-20260919/root-review-v3.md	candidate_development
+FML_TACTICAL	TAC_T8	TAC_CARRIER_ESCORT	c01_c03_example	移动母舰空战护航	C01E04 TACTICAL_DEPARTURE_P3+COAST_P4	多格母舰+2僚机	飞行Boss+同步杂兵群	6	横向滚动空域	mecha+carrier	母舰移动转向;有限近防过热;一次性推进出击;两处检查点;离港作业与交战并行	母舰入棋盘	C01E04 encounter_objectives	not_started
+FML_TACTICAL	TAC_T9	TAC_ROLE_TERRAIN	c01_c03_example	职业机改地形追击	C03E02 TACTICAL_MOVING_RING_RECOVERY	最多6	Boss撤离+4附件拖机	3(含4次归还)	三层三连接点移动环	mecha	部位目标(夺回四组附件);移动地形;锁直→申请动作→维护确认→恢复职业技能;四个职业大动作改棋盘	同时可控数+地形改写	C03预案第六节	not_started
+FML_TACTICAL	TAC_T10	TAC_MULTISCALE_RESCUE	c01_c03_example	多尺度分阶段救援	C02E05 ACCIDENT_P2A/P2B/P3	阶段切控6+	设施Boss(无机魂炮车)	6	同环三态图	air+mecha+carrier	阶段切控;承重顺序规则;母舰只接一侧;保护自主卸装;必杀回收到救场	阶段数×每阶段两方案	C02E05 local_agency;拓扑P2/P3	not_started
+FML_TACTICAL	TAC_T11	TAC_COMBINE_RELOCATE	c01_c03_example	合体与城市级迁重	C03E03 TACTICAL_FIRST_HAMMER/DISMANTLE	4+母舰+城梁巨构	Boss+残余楔机+征用炮	5	数百米坞环多层剖面	mecha+megastructure+carrier	完整合体演出;合体后合成1单位;伙伴拒绝改目标(拒第二锤);城市级迁重或堵门;拆战场而非歼灭	同时系统数上限	C03E03拓扑P4-P6;预案硬帽	not_started
+FML_INVESTIGATION	INV_T0	INV_COLLECT_COMMIT	c01_c03_example	收齐要点后提交	C01E04 AUX_LOADOUT_CONFIRM	0	none	1	静态场景+物件	single	required_offer_ids;齐了写evidence facts;侧栏进度点	要点数	c01_e02_fireline_investigation.json	not_started
+FML_INVESTIGATION	INV_T1	INV_CROSS_PROOF	c01_c03_example	三方互证	C02E03 AUX_KNOWLEDGE_PROVENANCE	0(+小机探索)	none	3	多地点	human+small_machine	三类证据必齐;换序不换结论;短分派复核;小尺度检查道	证据间依赖	C02E03 encounter_objectives	not_started
+FML_INVESTIGATION	INV_T2	INV_HYPOTHESIS_TEST	c01_c03_example	假说与可停止试验	C02E02 AUX_MODEL_HYPOTHESIS+ENGINEERING_VERIFY	0	none	3	缩尺室+全尺寸工房	scale_model+fullsize	候选解释;低载慢动作可随时停止的试验;错了显示哪项观察不支持;主体叫停	假说数×试验分支	00c 调查/工程实证段;C02预案第二节	not_started
+FML_INVESTIGATION	INV_T3	INV_HEAVY_ENGINEERING	c01_c03_example	重工程与校准	C02E05 AUX_HEAVY_ENGINEERING;C03E04 AUX_VERIFY_CALIBRATION	1~4(工程机)	none	3	巨构作业面	megastructure	实体交割;承力窗口;两种安全节奏;完成度只改资源不改硬出口	巨构状态耦合	C03E04 local_agency	not_started
+FML_EXPLORATION	EXPL_T0	EXPL_SINGLE_ROOM	c01_c03_example	单房间热点	—	1(步行)	none	0	单房间	human	行走;stable_objects;interaction_offers;overlay对话	热点数	scripts/core/spatial	not_started
+FML_EXPLORATION	EXPL_T1	EXPL_ROUTE_CONTRACT	c01_c03_example	多房间路线	C01E01 AUX_SPATIAL_GUIDED	1	none	4站	多房间+portal	human+mecha_as_exhibit	route_contract;portal;固定站点;支线不新增房间	房间数×站点数	c01e01_closing_route_mode.gd	not_started
+FML_EXPLORATION	EXPL_T2	EXPL_EVAC_ROUTE	c01_c03_example	撤离路线	C01E02 AUX_SPATIAL_EVAC;C02E04 AUX_EVAC_ROUTE	1+小机	散乱杂兵袭扰	1	室内到室外连续	human+small_machine+mecha_residue	人群状态;时间压力;路线选择改后续棋盘开局;向巨机尺度交接	跨尺度交接	C01预案第三节;rescue_lane_*	not_started
+FML_EXPLORATION	EXPL_T3	EXPL_EMBEDDED	c01_c03_example	战术内嵌探索	C01E03 arm_rib	1	none	1	机体内腔	interior	embedded_spatial_interlude;trigger.stage;失败只重置内腔	与战术阶段耦合	graph.story_first.json 100-121	not_started
+FML_SETTLEMENT	SET_T0	SET_ENCOUNTER	c01_c03_example	遭遇结算	C01E02 PHASE_CHECKPOINT后	—	—	—	结果卡	—	resolution标题;player_summary;目标完整度;不发Operation奖励	—	tactical_mode_scene.gd 2831-2858	not_started
+FML_SETTLEMENT	SET_T1	SET_ACTIVITY	c01_c03_example	活动结算	C01E01探索后	—	—	—	摘要页	—	validated_activity_result;activity_receipt;future_consumers	owner数	TR_EXPL_SETTLE;TR_PROOF_SETTLE	not_started
+FML_SETTLEMENT	SET_T2	SET_OPERATION	c01_c03_example	Operation结算	C01E04 OPERATION_SETTLEMENT	—	—	—	综合摘要页	—	聚合本Operation全部receipt;多owner原子提交;上半页只读事实下半页未决责任;一个继续	receipt数×owner数	EMT001;settlement-contracts.tsv	not_started
+FML_SETTLEMENT	SET_T3	SET_CHAPTER	c01_c03_example	Chapter结算	C02E05;C03E04 CHAPTER_SETTLEMENT	—	—	—	章末摘要	—	聚合全部Operation receipt与Accepted Story硬出口;硬事实不可重投票	跨话状态量	EMT002	not_started
+FML_WORLD_ROUTE	WR_T0	WR_FIXED_COMMIT	c01_c03_example	固定目的地提交	C01E04;C02E05;C03E04 WORLD_ROUTE	—	—	1	星图	—	显示已设计目的地/路线/时效/执行者;action_budget=world_commit_only;固定目的地不得伪装自由选项;不选的路线不随机毁掉(未选由具名主体继续,全档硬规则)	—	EMT005	not_started
+FML_WORLD_ROUTE	WR_T1	WR_CARD_COMPARE	full_game_design	任务卡比较	全游戏骨架	—	—	2~4	星图	—	比较2-4张任务卡;时效与通信延迟;到场预览;不选的路线不随机毁掉	卡数×约束	00c 世界图段	not_started
+FML_WORLD_ROUTE	WR_T2	WR_DUAL_ENTRY	full_game_design	同一任务池双入口	全游戏骨架	—	—	2~4	星图	—	同一任务池的卡/列表/地图三入口;结构化出击条件(出击数/指定单位/推测战力/报酬);比T1多出入口切换与出击条件	入口数×出击条件	138 §8;SRW 30 实帧	not_started
+FML_HUB	HUB_T0	HUB_CYCLE	full_game_design	标准Hub周期	C12	—	—	≤3工作卡	万机馆空间	human+mecha	2至5个事项组;标准3格;最多3张工作卡;岗位冲突;机会成本;离馆承诺	事项组数	EMT008;hub-action-contracts.tsv	not_started
+FML_HUB	HUB_T1	HUB_FORM_CYCLE	full_game_design	先选本轮形态再排班	全游戏骨架	—	—	≤3工作卡	万机馆空间	human+mecha	本轮形态三选一(砍四选与AP);2格连续维修卡;岗位冲突;同一套3格提交	形态数×连续格	138 §9.2;00c Hub段	not_started
+PROTO_BOUNDARY	BND_T0	BND_CHECKPOINT	c01_c03_example	阶段或话检查点	C01E01 EPISODE_CHECKPOINT	—	—	—	—	—	保存当前状态;不关闭Operation;不发奖励	—	EMT004	not_started
+PROTO_BOUNDARY	BND_T1	BND_CLEAR_TRIGGER	c01_c03_example	清关触发	C01E04 MISSION_CLEAR	—	—	—	—	—	只声明目标满足;强制进入OPERATION_SETTLEMENT;自身不写长期状态	—	EMT003	not_started
+PROTO_NEXT_ENCOUNTER	NXT_T0	NXT_CARRY	c01_c03_example	跨遭遇接续	C01E03 OPERATION_CONTINUE	—	—	—	—	—	持上一receipt与跨Encounter状态;不清空地图/身体/资源	继承状态量	EMT006;continue_episode	not_started
+FML_NARRATIVE	NARR_T2	NARR_STAGE_BATTLE_CANDIDATE	candidate_runtime_profile	木桶街前场与战后回应	独立演练非正式Reader	1	none	1	共享3D场景	human;mecha	原生地图操作;对白;实际战后	同世界阶段交接;人物动作与空间审美	stage-battle-production-reset-20260926.md;artifacts/formulas/production-lab-v1/qa/stage-battle-20260926/	integration_only_art_rejected
+FML_TACTICAL	TAC_T3	TAC_STAGE_V8_CANDIDATE	candidate_runtime_profile	木桶街当前战斗接入	独立演练非正式Reader	3	4	2 alternative missions	共享3D战场	mecha	逐机;局部接力;团队;人物能力;精神指令	共享世界;真实结算回执;演出可跳过	stage-battle-production-reset-20260926.md;artifacts/formulas/production-lab-v1/qa/stage-battle-20260926/	integration_only_art_rejected

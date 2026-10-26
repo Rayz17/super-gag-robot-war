@@ -1,0 +1,293 @@
+{
+  "schema_id": "C01_B06_JICUN_DETERMINISTIC_CHECKER_ALPHA_SALVAGE_V1",
+  "source": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-jicun-b06-chest-guide-seat-egress-action-slice-candidate/call01/raw/JICUN_B06_CHEST_GUIDE_SEAT_EGRESS_RAW_CALL01.png",
+    "sha256": "4ae747191473e7f2a84601f15cc5d061a4c1bd3d807bfbf6029c22358163c493",
+    "mode": "RGB",
+    "size": [
+      1024,
+      1536
+    ]
+  },
+  "method": {
+    "imagegen_calls": 0,
+    "global_white_key": false,
+    "base_luma_floor": 235,
+    "base_chroma_limit": 8,
+    "border_connectivity": 4,
+    "trimap_radius": 3,
+    "enclosed_component_rule": {
+      "min_area": 16,
+      "max_mean_chroma": 2.5,
+      "min_checker_luma_fraction": 0.5
+    },
+    "stability_luma_thresholds": [
+      230,
+      235,
+      238
+    ]
+  },
+  "final_metrics": {
+    "luma_floor": 235,
+    "chroma_limit": 8,
+    "canvas": [
+      1024,
+      1536
+    ],
+    "checker_candidate_pixels": 987576,
+    "border_connected_background_pixels": 948948,
+    "enclosed_candidate_component_count": 179,
+    "accepted_enclosed_component_count": 8,
+    "accepted_enclosed_component_pixels": 38304,
+    "definite_background_pixels": 987252,
+    "transparent_pixels": 987269,
+    "partial_alpha_pixels": 9317,
+    "opaque_pixels": 576278,
+    "alpha_bbox": [
+      98,
+      30,
+      941,
+      1514
+    ],
+    "rgb_changed_pixels_total": 996586,
+    "rgb_changed_transparent_pixels": 987269,
+    "rgb_changed_partial_pixels": 9317,
+    "rgb_changed_opaque_pixels": 0,
+    "trimap_unknown_pixels": 27750,
+    "trimap_partial_solved_pixels": 9317,
+    "trimap_missing_neighbour_count": 528,
+    "projection_residual_mean": 16.304094967343286,
+    "projection_residual_p95": 59.61543424315552,
+    "projection_residual_max": 387.40805360756247
+  },
+  "threshold_metrics": {
+    "230": {
+      "luma_floor": 230,
+      "chroma_limit": 8,
+      "canvas": [
+        1024,
+        1536
+      ],
+      "checker_candidate_pixels": 988093,
+      "border_connected_background_pixels": 949393,
+      "enclosed_candidate_component_count": 215,
+      "accepted_enclosed_component_count": 7,
+      "accepted_enclosed_component_pixels": 38218,
+      "definite_background_pixels": 987611,
+      "transparent_pixels": 987620,
+      "partial_alpha_pixels": 9053,
+      "opaque_pixels": 576191,
+      "alpha_bbox": [
+        98,
+        30,
+        941,
+        1514
+      ],
+      "rgb_changed_pixels_total": 996673,
+      "rgb_changed_transparent_pixels": 987620,
+      "rgb_changed_partial_pixels": 9053,
+      "rgb_changed_opaque_pixels": 0,
+      "trimap_unknown_pixels": 27712,
+      "trimap_partial_solved_pixels": 9053,
+      "trimap_missing_neighbour_count": 516,
+      "projection_residual_mean": 16.445632643872184,
+      "projection_residual_p95": 59.9749947894954,
+      "projection_residual_max": 387.40805360756247
+    },
+    "235": {
+      "luma_floor": 235,
+      "chroma_limit": 8,
+      "canvas": [
+        1024,
+        1536
+      ],
+      "checker_candidate_pixels": 987576,
+      "border_connected_background_pixels": 948948,
+      "enclosed_candidate_component_count": 179,
+      "accepted_enclosed_component_count": 8,
+      "accepted_enclosed_component_pixels": 38304,
+      "definite_background_pixels": 987252,
+      "transparent_pixels": 987269,
+      "partial_alpha_pixels": 9317,
+      "opaque_pixels": 576278,
+      "alpha_bbox": [
+        98,
+        30,
+        941,
+        1514
+      ],
+      "rgb_changed_pixels_total": 996586,
+      "rgb_changed_transparent_pixels": 987269,
+      "rgb_changed_partial_pixels": 9317,
+      "rgb_changed_opaque_pixels": 0,
+      "trimap_unknown_pixels": 27750,
+      "trimap_partial_solved_pixels": 9317,
+      "trimap_missing_neighbour_count": 528,
+      "projection_residual_mean": 16.304094967343286,
+      "projection_residual_p95": 59.61543424315552,
+      "projection_residual_max": 387.40805360756247
+    },
+    "238": {
+      "luma_floor": 238,
+      "chroma_limit": 8,
+      "canvas": [
+        1024,
+        1536
+      ],
+      "checker_candidate_pixels": 987082,
+      "border_connected_background_pixels": 948645,
+      "enclosed_candidate_component_count": 170,
+      "accepted_enclosed_component_count": 8,
+      "accepted_enclosed_component_pixels": 38172,
+      "definite_background_pixels": 986817,
+      "transparent_pixels": 986922,
+      "partial_alpha_pixels": 9552,
+      "opaque_pixels": 576390,
+      "alpha_bbox": [
+        98,
+        30,
+        941,
+        1514
+      ],
+      "rgb_changed_pixels_total": 996474,
+      "rgb_changed_transparent_pixels": 986922,
+      "rgb_changed_partial_pixels": 9552,
+      "rgb_changed_opaque_pixels": 0,
+      "trimap_unknown_pixels": 27945,
+      "trimap_partial_solved_pixels": 9552,
+      "trimap_missing_neighbour_count": 551,
+      "projection_residual_mean": 16.285698808089837,
+      "projection_residual_p95": 59.81220596608772,
+      "projection_residual_max": 387.40805360756247
+    }
+  },
+  "protected_roi_metrics": [
+    {
+      "roi": "face_hair",
+      "bbox": [
+        340,
+        25,
+        609,
+        324
+      ],
+      "strong_foreground_pixels": 61197,
+      "strong_foreground_alpha_zero": 0,
+      "strong_foreground_alpha_partial": 1186,
+      "strong_foreground_rgb_changed": 1186,
+      "all_partial_alpha_pixels": 1266,
+      "alpha_diff_pixels_vs_L230": 244,
+      "strong_foreground_alpha_diff_vs_L230": 174,
+      "alpha_diff_pixels_vs_L235": 0,
+      "strong_foreground_alpha_diff_vs_L235": 0,
+      "alpha_diff_pixels_vs_L238": 243,
+      "strong_foreground_alpha_diff_vs_L238": 154
+    },
+    {
+      "roi": "brace_hand",
+      "bbox": [
+        90,
+        315,
+        304,
+        584
+      ],
+      "strong_foreground_pixels": 38551,
+      "strong_foreground_alpha_zero": 0,
+      "strong_foreground_alpha_partial": 884,
+      "strong_foreground_rgb_changed": 884,
+      "all_partial_alpha_pixels": 923,
+      "alpha_diff_pixels_vs_L230": 61,
+      "strong_foreground_alpha_diff_vs_L230": 45,
+      "alpha_diff_pixels_vs_L235": 0,
+      "strong_foreground_alpha_diff_vs_L235": 0,
+      "alpha_diff_pixels_vs_L238": 69,
+      "strong_foreground_alpha_diff_vs_L238": 55
+    },
+    {
+      "roi": "terminal_and_other_hand",
+      "bbox": [
+        440,
+        255,
+        834,
+        629
+      ],
+      "strong_foreground_pixels": 125003,
+      "strong_foreground_alpha_zero": 0,
+      "strong_foreground_alpha_partial": 554,
+      "strong_foreground_rgb_changed": 554,
+      "all_partial_alpha_pixels": 595,
+      "alpha_diff_pixels_vs_L230": 102,
+      "strong_foreground_alpha_diff_vs_L230": 73,
+      "alpha_diff_pixels_vs_L235": 0,
+      "strong_foreground_alpha_diff_vs_L235": 0,
+      "alpha_diff_pixels_vs_L238": 73,
+      "strong_foreground_alpha_diff_vs_L238": 44
+    },
+    {
+      "roi": "white_shirt",
+      "bbox": [
+        330,
+        215,
+        624,
+        649
+      ],
+      "strong_foreground_pixels": 124134,
+      "strong_foreground_alpha_zero": 0,
+      "strong_foreground_alpha_partial": 219,
+      "strong_foreground_rgb_changed": 219,
+      "all_partial_alpha_pixels": 242,
+      "alpha_diff_pixels_vs_L230": 44,
+      "strong_foreground_alpha_diff_vs_L230": 29,
+      "alpha_diff_pixels_vs_L235": 0,
+      "strong_foreground_alpha_diff_vs_L235": 0,
+      "alpha_diff_pixels_vs_L238": 27,
+      "strong_foreground_alpha_diff_vs_L238": 17
+    },
+    {
+      "roi": "seat_frame",
+      "bbox": [
+        80,
+        285,
+        389,
+        1319
+      ],
+      "strong_foreground_pixels": 193868,
+      "strong_foreground_alpha_zero": 0,
+      "strong_foreground_alpha_partial": 3537,
+      "strong_foreground_rgb_changed": 3537,
+      "all_partial_alpha_pixels": 3804,
+      "alpha_diff_pixels_vs_L230": 511,
+      "strong_foreground_alpha_diff_vs_L230": 362,
+      "alpha_diff_pixels_vs_L235": 0,
+      "strong_foreground_alpha_diff_vs_L235": 0,
+      "alpha_diff_pixels_vs_L238": 440,
+      "strong_foreground_alpha_diff_vs_L238": 288
+    }
+  ],
+  "hard_gate_failures": [
+    "face_hair strong foreground changes at threshold L230",
+    "face_hair strong foreground changes at threshold L238",
+    "brace_hand strong foreground changes at threshold L230",
+    "brace_hand strong foreground changes at threshold L238",
+    "terminal_and_other_hand strong foreground changes at threshold L230",
+    "terminal_and_other_hand strong foreground changes at threshold L238",
+    "white_shirt strong foreground changes at threshold L230",
+    "white_shirt strong foreground changes at threshold L238",
+    "seat_frame strong foreground changes at threshold L230",
+    "seat_frame strong foreground changes at threshold L238"
+  ],
+  "machine_gate": "FAIL_STOP",
+  "candidate_only": true,
+  "user_visual_acceptance": false,
+  "runtime_allowed": false,
+  "canon_modified": false,
+  "godot_binding_modified": false,
+  "master": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-section2-jicun-b06-chest-guide-seat-egress-action-slice-candidate/call01/technical-salvage-v1/output/JICUN_B06_CHEST_GUIDE_SEAT_EGRESS_RGBA_MASTER_DETERMINISTIC_V1.png",
+    "sha256": "be0b3baf9328ff4dc73a7c5c06d85e47967f35fc23d8981b4c369a62c9c6c46d",
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-23",
+  "revision": "public-works-source-r1",
+  "existing_batch": "design-followthrough-r1.json",
+  "reader": "public-works-source-r1.html",
+  "status": "next_batch_source_candidates",
+  "generation_mode": "built-in image_gen",
+  "previous_confirmed_design_delivery": "confirmed-design-handoff-20261023.json",
+  "items": [
+    {
+      "id": "M06",
+      "name": "预算二号救援机",
+      "canon_entity": "V353U032",
+      "role": "低费维修、撤离与补给；保留黄绿工具机、替换色小腿及模块化工具。",
+      "file": "samples/M06-public-works-master-r1b.png",
+      "sha256": "7d2012da47e9585e08a6aeb184678ee892ccc94c8c07accfa02d2f77db3dbc46",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-c8c51d9b-7d70-4caf-99d5-6f0b77eed8fd.png",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "source_refs": [
+        {
+          "file": "refs/M06-public-works-original-20261023.jpg",
+          "sha256": "e0af32775ebde492fa870edb0552fe34ced1adc6479d2b44d03a741c142a3934",
+          "project_original": "captures/20261014-full-direction/review/20261015-latest-review/images/e0af32775ebde492fa870edb0552fe34ced1adc6479d2b44d03a741c142a3934.jpg",
+          "role": "原有身份与造型依据"
+        },
+        {
+          "file": "samples/M14-front-airframe-r6.png",
+          "sha256": "4464ffa6fc330864a8b5245c9515f1ed320ce938c1d0befc39c6882664f6d540",
+          "role": "仅取已确定项目画法，不取机体身份/比例/配色"
+        }
+      ],
+      "prompts": [
+        "M06-public-works-master-prompt-r1.txt",
+        "M06-public-works-local-correction-prompt-r1b.txt"
+      ],
+      "existing_consumer_refs": [
+        "game-godot/assets/formula_lab/linked_campaign_v4/models/engineer.glb",
+        "game-godot/assets/formula_lab/linked_campaign_v6/portraits/engineer.png"
+      ],
+      "user_accepted": false,
+      "runtime_integrated": false
+    },
+    {
+      "id": "M07",
+      "name": "市政吊装机",
+      "canon_entity": "V353U031",
+      "role": "吊装、推拉与施工；保留吊臂、履带、稳定支腿及单驾驶舱。",
+      "file": "samples/M07-public-works-master-r1b.png",
+      "sha256": "3cb453c3259e123d0c05a5b39d5cd5743e6dc84672cb99f4e8fc69c7b8d7d3fa",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-e9e1915b-a6ed-4e65-bfb0-bbb8431684ff.png",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "source_refs": [
+        {
+          "file": "refs/M07-public-works-original-20261023.jpg",
+          "sha256": "232edd1b03a9dfc8e8f70aa0c93dc57b11a5e8b5069a9a8be45603742639f6c0",
+          "project_original": "captures/20261014-full-direction/review/20261015-latest-review/images/232edd1b03a9dfc8e8f70aa0c93dc57b11a5e8b5069a9a8be45603742639f6c0.jpg",
+          "role": "原有身份与造型依据"
+        },
+        {
+          "file": "samples/M14-front-airframe-r6.png",
+          "sha256": "4464ffa6fc330864a8b5245c9515f1ed320ce938c1d0befc39c6882664f6d540",
+          "role": "仅取已确定项目画法，不取机体身份/比例/配色"
+        }
+      ],
+      "prompts": [
+        "M07-public-works-master-prompt-r1.txt",
+        "M07-public-works-local-correction-prompt-r1b.txt"
+      ],
+      "existing_consumer_refs": [
+        "game-godot/assets/formula_lab/linked_campaign_v4/models/crane.glb",
+        "game-godot/assets/formula_lab/linked_campaign_v6/portraits/crane.png"
+      ],
+      "user_accepted": false,
+      "runtime_integrated": false
+    }
+  ],
+  "historical_attempts": [
+    {
+      "id": "M06",
+      "file": "samples/M06-public-works-master-attempt-r1.png",
+      "sha256": "89c3daaca66882372de7c4bc6cd9e7def032f217eadb0690275f718bd58a3e10",
+      "role": "局部功能细节修正前的首稿"
+    },
+    {
+      "id": "M07",
+      "file": "samples/M07-public-works-master-attempt-r1.png",
+      "sha256": "8397fa7c774ecf5116a03f20143c2da4177c7b75e80633db6f3ac108a1e99bb8",
+      "role": "局部功能细节修正前的首稿"
+    }
+  ],
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "samples/M06-public-works-master-r1b.png",
+      "samples/M07-public-works-master-r1b.png"
+    ],
+    "observations": [
+      "预算二号保留原黄/青绿/象牙白、圆顶头盔、短单天线、琥珀视窗和厚实工具机身体；前后视中的替换色小腿侧别对应。主图左手持工具、右手空手，后视持握侧没有交换。",
+      "预算二号工具快拆连接与备件箱可见；首稿箱内有似备用头的物件，局部改为带轴端和管接头的泵/电机模块，主机轮廓基本保持。",
+      "市政吊装机保留伸缩吊臂、液压举升、配重、单驾驶舱、卷扬钢索与一对履带；未强制改成人形。主视可见三只外伸支脚，第四只被机体遮挡，后续多视仍须核对四支腿归属。",
+      "市政吊装机首稿收拢小图的吊钩悬空，局部修正后钩块收近驾驶舱前下方红色固定座，钢索从臂端连至钩块；主作业态与钩头放大图保持。",
+      "两张沿原造型改为独立源板，减少背景干扰；一台黄绿救援工具机、一台青绿/象牙/朱红吊装机，共享墨线与块面阴影，但没有统一洗色。",
+      "源板的后视/收拢小图是绘制研究，不能独自证明同件工程正交、受力或连续机构运动。"
+    ],
+    "runtime_tested": false,
+    "new_images_user_accepted": false
+  },
+  "experience": {
+    "start": "在城市修复/撤离和吊装局面中，需要可辨认的两类职业机。",
+    "input": "原机设与当前Canon对照，先出源板，再局部修正备件/吊钩收纳。",
+    "visible_consequence": "预算二号工具/替换件与吊装机作业/收拢形态可比较。",
+    "next": "依据具体源稿继续收敛，后续沿选定主形补多视、模型与工作动作。"
+  },
+  "limits": [
+    "本批仅源设计工序；未启动或改写主工程，正常战棋镜头、连续动作、声音与原生输入不在本次实测范围。",
+    "新两张源稿未获用户采用；不改变已确定设计或当前故事/工作能力规则。"
+  ],
+  "canon_changed": false,
+  "runtime_assets_modified": false,
+  "handoff_sent": false
+}

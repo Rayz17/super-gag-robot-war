@@ -1,0 +1,16 @@
+stable_state	scope	item	world_lock	screen_lock	notes	runtime_allowed
+C01CDV1_JOINT_S01_CAMB_V1	meta	episode_checkpoint	S01 / CP0		spatial_completed=[] / no_failure	false
+C01CDV1_JOINT_S01_CAMB_V1	meta	world_viewport	1920x900	1280x720	screen = world - camera_center + (640,360)	false
+C01CDV1_JOINT_S01_CAMB_V1	camera	camera_B	center=(960,450)	crop=Rect(320,90,1280,720)	direct lock; no lerp intermediate	false
+C01CDV1_JOINT_S01_CAMB_V1	actor	jicun_foot	(845,716)	(525,626)	CAND_JICUN_Q_RUNTIME_V1	false
+C01CDV1_JOINT_S01_CAMB_V1	anchor	diedie_fire_door	(475,680)	(155,590)	shared interaction point	false
+C01CDV1_JOINT_S01_CAMB_V1	anchor	machine_dog	(850,655)	(530,565)	shared named geometry	false
+C01CDV1_JOINT_S01_CAMB_V1	anchor	laoyu_wheelchair	(980,676)	(660,586)	shared named geometry	false
+C01CDV1_JOINT_S01_CAMB_V1	anchor	fire_bridge_foot	(1170,573)	(850,483)	shared named geometry	false
+C01CDV1_JOINT_S01_CAMB_V1	anchor	xiaoman	(1492,676)	(1172,586)	shared named geometry	false
+C01CDV1_JOINT_S01_CAMB_V1	anchor	east_exit	(1792,650)	(1472,560)	outside camera B	false
+C01CDV1_JOINT_S01_CAMB_V1	anchor	underground_danger	(260,675)	(-60,585)	outside camera B	false
+C01CDV1_JOINT_S01_CAMB_V1	anchor	foreground_occluder_center	(1080,640)	(760,550)	overlay source foreground layer	false
+C01CDV1_JOINT_S01_CAMB_V1	geometry	main_walk_plane	(80,700) (1680,570) (1880,760) (260,875)		unchanged PV01 clean plate	false
+C01CDV1_JOINT_S01_CAMB_V1	geometry	underground_rect	Rect(170,480,180,195)		unchanged PV01 clean plate	false
+C01CDV1_JOINT_S01_CAMB_V1	geometry	east_exit_rect	Rect(1700,290,185,360)		unchanged PV01 clean plate	false

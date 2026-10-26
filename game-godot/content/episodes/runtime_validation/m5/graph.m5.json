@@ -1,0 +1,78 @@
+{
+  "episode_id": "MULTI-PLAY-M5-CONSTRAINT-VALIDATION",
+  "start_node_id": "M5-A008-DESK",
+  "nodes": [
+    {
+      "node_id": "M5-A008-DESK",
+      "mode": "DESK",
+      "scene_id": "SCN_MULTI_PLAY_M5_CONSTRAINT",
+      "title": "A008 / 撤退路线规划",
+      "activity_definition_path": "res://content/activities/constraint/a008_route_planning_validation.json",
+      "completion_contract": "OUTCOME_M5_A008_ROUTE_V01",
+      "success_edges": ["M5-A006-NARRATIVE"],
+      "soft_fail_edges": ["M5-A006-NARRATIVE"],
+      "failure_edges": ["M5-A006-NARRATIVE"],
+      "cancel_edges": ["M5-A006-NARRATIVE"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "M5-A006-NARRATIVE",
+      "mode": "NARRATIVE",
+      "scene_id": "SCN_MULTI_PLAY_M5_CONSTRAINT",
+      "title": "A006 / 清算白名单谈判",
+      "activity_definition_path": "res://content/activities/constraint/a006_legal_negotiation_validation.json",
+      "completion_contract": "OUTCOME_M5_A006_LEGAL_V01",
+      "success_edges": ["M5-A012-SPATIAL"],
+      "soft_fail_edges": ["M5-A012-SPATIAL"],
+      "failure_edges": ["M5-A012-SPATIAL"],
+      "cancel_edges": ["M5-A012-SPATIAL"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "M5-A012-SPATIAL",
+      "mode": "SPATIAL",
+      "scene_id": "SCN_MULTI_PLAY_M5_CONSTRAINT",
+      "title": "A012 / 舰内灾害调度",
+      "activity_definition_path": "res://content/activities/constraint/a012_crisis_routing_validation.json",
+      "completion_contract": "OUTCOME_M5_A012_CRISIS_V01",
+      "success_edges": ["M5-TACTICAL-CONSUMPTION"],
+      "soft_fail_edges": ["M5-TACTICAL-CONSUMPTION"],
+      "failure_edges": ["M5-TACTICAL-CONSUMPTION"],
+      "cancel_edges": ["M5-TACTICAL-CONSUMPTION"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "M5-TACTICAL-CONSUMPTION",
+      "mode": "TACTICAL",
+      "scene_id": "SCN_MULTI_PLAY_M5_TACTICAL",
+      "title": "三项承诺 / 同一张战场账单",
+      "battle_definition_path": "res://content/activities/constraint/m5_constraint_consumption_battle.json",
+      "completion_contract": "OUTCOME_M5_TACTICAL_CONSUMPTION_V01",
+      "result_transaction_id": "M5:TACTICAL:CONSUMPTION:V01",
+      "result_fact_id": "M5_CONSTRAINT_HANDOFF_RESOLUTION",
+      "variant_fact_id": "M5_CONSTRAINT_BATTLE_VARIANT_USED",
+      "result_debt_id": "M5_CONSTRAINT_HANDOFF_UNFINISHED",
+      "reaction_prefix": "REACT_M5_CONSTRAINT_HANDOFF",
+      "success_edges": ["M5-DESK-REVIEW"],
+      "soft_fail_edges": ["M5-DESK-REVIEW"],
+      "failure_edges": ["M5-DESK-REVIEW"],
+      "cancel_edges": ["M5-DESK-REVIEW"],
+      "autosave": "before_enter_and_after_commit"
+    },
+    {
+      "node_id": "M5-DESK-REVIEW",
+      "mode": "DESK",
+      "scene_id": "SCN_MULTI_PLAY_M5_DESK",
+      "title": "M5 / 活动结果回看",
+      "completion_contract": "OUTCOME_M5_DESK_REVIEW_V01",
+      "transaction_id": "M5:DESK:REVIEW:V01",
+      "player_summary": "三个活动结果、战场消费记录和遗留债务已经返回同一份档案。",
+      "success_edges": [],
+      "soft_fail_edges": [],
+      "failure_edges": [],
+      "cancel_edges": [],
+      "terminal": true,
+      "autosave": "before_enter_and_after_commit"
+    }
+  ]
+}

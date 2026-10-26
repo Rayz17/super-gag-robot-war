@@ -1,0 +1,24 @@
+{
+  "mode": "built-in image_gen",
+  "prompts": [
+    "M06-labor-identity-prompt-r2.txt",
+    "M06-labor-identity-correction-prompt-r2b.txt"
+  ],
+  "input_images": [
+    {
+      "file": "samples/M06-public-works-master-r1b.png",
+      "sha256": "7d2012da47e9585e08a6aeb184678ee892ccc94c8c07accfa02d2f77db3dbc46",
+      "role": "继承配色、替换腿侧别及成人厚实体态；旧头和通用铠甲不再作为本轮目标"
+    },
+    {
+      "file": "samples/M14-front-airframe-r6.png",
+      "sha256": "4464ffa6fc330864a8b5245c9515f1ed320ce938c1d0befc39c6882664f6d540",
+      "role": "仅取项目墨线与块面阴影，不取航空机体身份、比例或配色"
+    }
+  ],
+  "local_correction_target": {
+    "file": "samples/M06-labor-identity-attempt-r2.png",
+    "sha256": "9d3c21dd27f76ee9e05f48fa80400320befafec393e76c021105dcbb9fc2caeb",
+    "issue": "头部放大图通讯模块的物理侧别与主图不一致"
+  }
+}

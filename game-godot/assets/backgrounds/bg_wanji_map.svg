@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="floor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#19313a"/>
+      <stop offset="0.55" stop-color="#0d1b24"/>
+      <stop offset="1" stop-color="#071018"/>
+    </linearGradient>
+    <linearGradient id="alarm" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff3b3b" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ff3b3b" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#ff3b3b" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#050910"/>
+  <rect width="1280" height="720" fill="url(#floor)"/>
+  <g opacity="0.36" stroke="#2f5b68" stroke-width="1">
+    <path d="M0 118 L1280 42"/>
+    <path d="M0 220 L1280 144"/>
+    <path d="M0 322 L1280 246"/>
+    <path d="M0 424 L1280 348"/>
+    <path d="M0 526 L1280 450"/>
+    <path d="M0 628 L1280 552"/>
+    <path d="M80 0 L-180 720"/>
+    <path d="M260 0 L0 720"/>
+    <path d="M440 0 L180 720"/>
+    <path d="M620 0 L360 720"/>
+    <path d="M800 0 L540 720"/>
+    <path d="M980 0 L720 720"/>
+    <path d="M1160 0 L900 720"/>
+    <path d="M1340 0 L1080 720"/>
+  </g>
+  <g opacity="0.82">
+    <polygon points="240,222 415,145 590,222 415,306" fill="#182d31" stroke="#67d8e9" stroke-width="2"/>
+    <polygon points="682,170 838,102 992,170 838,242" fill="#1b2d38" stroke="#ffdb69" stroke-width="2"/>
+    <polygon points="700,410 883,326 1064,410 883,502" fill="#211a2b" stroke="#ff6b88" stroke-width="2"/>
+    <polygon points="180,468 330,394 486,468 330,548" fill="#172a39" stroke="#74ffcb" stroke-width="2"/>
+  </g>
+  <g font-family="sans-serif" font-size="22" font-weight="700">
+    <text x="354" y="225" fill="#9ff2ff">留言墙</text>
+    <text x="780" y="172" fill="#ffe588">馆守Z胸牌</text>
+    <text x="823" y="414" fill="#ff9bad">0号侧廊</text>
+    <text x="266" y="470" fill="#9fffd8">观众通道</text>
+  </g>
+  <g opacity="0.65">
+    <rect x="0" y="86" width="1280" height="8" fill="url(#alarm)"/>
+    <rect x="0" y="614" width="1280" height="8" fill="url(#alarm)"/>
+  </g>
+  <g filter="url(#glow)">
+    <circle cx="402" cy="222" r="9" fill="#f9e47a"/>
+    <circle cx="838" cy="170" r="9" fill="#61e4ff"/>
+    <circle cx="883" cy="410" r="10" fill="#ff4d7a"/>
+    <circle cx="330" cy="468" r="8" fill="#7bffca"/>
+  </g>
+  <g opacity="0.23" fill="#000">
+    <polygon points="0,0 360,0 190,720 0,720"/>
+    <polygon points="1088,0 1280,0 1280,720 940,720"/>
+  </g>
+</svg>

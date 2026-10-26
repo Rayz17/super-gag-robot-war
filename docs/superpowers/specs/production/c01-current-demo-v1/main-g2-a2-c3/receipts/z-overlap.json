@@ -1,0 +1,701 @@
+{
+  "actor_readback": {
+    "ENEMY_C01_BREAKER": {
+      "actor_instance_id": 45449479810,
+      "anchor": [
+        18,
+        8
+      ],
+      "atlas_region": [
+        0.0,
+        0.0,
+        384.0,
+        384.0
+      ],
+      "atlas_texture_instance_id": -9223371991807949203,
+      "display_scale": [
+        1.0,
+        1.0
+      ],
+      "effective_canvas_z": 382,
+      "expected_z": 382,
+      "footpoint_error_px": 0.0,
+      "footpoint_screen": [
+        640.0,
+        380.0
+      ],
+      "footprint": [
+        3,
+        3
+      ],
+      "independently_recomputed_rect_px": [
+        448.0,
+        60.0,
+        384.0,
+        384.0
+      ],
+      "pivot_px": [
+        192.0,
+        320.0
+      ],
+      "projection_expected": [
+        640.0,
+        380.0
+      ],
+      "shadow_owner": "engine_independent_ground_shadow_layer",
+      "shadow_visible": true,
+      "sprite_class": "Sprite2D",
+      "sprite_instance_id": 45483034244,
+      "sprite_rect_px": [
+        448.0,
+        60.0,
+        384.0,
+        384.0
+      ],
+      "subject_id": "ENEMY_C01_BREAKER",
+      "texture_class": "AtlasTexture",
+      "valid": true,
+      "visible": true,
+      "z": 382,
+      "z_as_relative": false,
+      "z_bias": 2
+    },
+    "TARGET_C01_EMERGENCY_VEHICLE_01": {
+      "actor_instance_id": 45516588678,
+      "anchor": [
+        21,
+        11
+      ],
+      "atlas_region": [
+        0.0,
+        0.0,
+        128.0,
+        128.0
+      ],
+      "atlas_texture_instance_id": -9223371991690508684,
+      "display_scale": [
+        1.0,
+        1.0
+      ],
+      "effective_canvas_z": 420,
+      "expected_z": 420,
+      "footpoint_error_px": 0.0,
+      "footpoint_screen": [
+        640.0,
+        420.0
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "independently_recomputed_rect_px": [
+        576.0,
+        324.0,
+        128.0,
+        128.0
+      ],
+      "pivot_px": [
+        64.0,
+        96.0
+      ],
+      "projection_expected": [
+        640.0,
+        420.0
+      ],
+      "shadow_owner": "engine_independent_ground_shadow_layer",
+      "shadow_visible": true,
+      "sprite_class": "Sprite2D",
+      "sprite_instance_id": 45550143112,
+      "sprite_rect_px": [
+        576.0,
+        324.0,
+        128.0,
+        128.0
+      ],
+      "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01",
+      "texture_class": "AtlasTexture",
+      "valid": true,
+      "visible": true,
+      "z": 420,
+      "z_as_relative": false,
+      "z_bias": 0
+    },
+    "V353U001": {
+      "actor_instance_id": 45382370942,
+      "anchor": [
+        20,
+        9
+      ],
+      "atlas_region": [
+        0.0,
+        0.0,
+        256.0,
+        256.0
+      ],
+      "atlas_texture_instance_id": -9223371991875058071,
+      "display_scale": [
+        1.0,
+        1.0
+      ],
+      "effective_canvas_z": 401,
+      "expected_z": 401,
+      "footpoint_error_px": 0.0,
+      "footpoint_screen": [
+        680.0,
+        400.0
+      ],
+      "footprint": [
+        2,
+        2
+      ],
+      "independently_recomputed_rect_px": [
+        552.0,
+        176.0,
+        256.0,
+        256.0
+      ],
+      "pivot_px": [
+        128.0,
+        224.0
+      ],
+      "projection_expected": [
+        680.0,
+        400.0
+      ],
+      "shadow_owner": "engine_independent_ground_shadow_layer",
+      "shadow_visible": true,
+      "sprite_class": "Sprite2D",
+      "sprite_instance_id": 45415925376,
+      "sprite_rect_px": [
+        552.0,
+        176.0,
+        256.0,
+        256.0
+      ],
+      "subject_id": "V353U001",
+      "texture_class": "AtlasTexture",
+      "valid": true,
+      "visible": true,
+      "z": 401,
+      "z_as_relative": false,
+      "z_bias": 1
+    }
+  },
+  "actual_frame": {
+    "capture_id": "C3_Z_OVERLAP_1X1_2X2_3X3",
+    "height": 720,
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/z-overlap/C3_Z_OVERLAP_1X1_2X2_3X3.png",
+    "sha256": "663d235a1871746436828e5c2841adf167e2f4515d10f2854a12d163cc82642c",
+    "width": 1280
+  },
+  "approved_handoffs": [],
+  "call03_allowed": false,
+  "capture_dir": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/main-g2-a2-c3/captures/z-overlap",
+  "display_server": "macOS",
+  "driver_direct_session_calls": false,
+  "evidence_id": "C3_TASK105_SINGLE_FRAME_CROSS_SIZE_Z_OVERLAP",
+  "final_60fps_status": "FINAL_60FPS_NOT_PROVEN",
+  "fixture_performance_scope": "FIXTURE_30FPS_STABILITY_ONLY",
+  "fixture_validation_only": true,
+  "gameplay_geometry_mutated": false,
+  "headless": false,
+  "implementation": "existing C3 Scene real Sprite2D + AtlasTexture + transparent PNG",
+  "load_after": {
+    "cached_atlas_texture_instance_ids": [
+      -9223371991807949203,
+      -9223371991791171986,
+      -9223371991774394769,
+      -9223371991757617552,
+      -9223371991740840335,
+      -9223371991673731467,
+      -9223371991656954250,
+      -9223371991640177033,
+      -9223371991623399816,
+      -9223371991606622599,
+      -9223371991589845382,
+      -9223371991724063118,
+      -9223371991707285901,
+      -9223371991690508684,
+      -9223371991942166939,
+      -9223371991925389722,
+      -9223371991908612505,
+      -9223371991891835288,
+      -9223371991875058071,
+      -9223371991858280854,
+      -9223371991841503637,
+      -9223371991824726420
+    ],
+    "cached_atlas_texture_region_count": 22,
+    "cached_atlas_texture_region_keys": [
+      "ENEMY_C01_BREAKER|charge/north/0",
+      "ENEMY_C01_BREAKER|contact/north/0",
+      "ENEMY_C01_BREAKER|recoil/north/0",
+      "ENEMY_C01_BREAKER|red_charge/north/0",
+      "ENEMY_C01_BREAKER|side_hit/north/0",
+      "ENEMY_C01_RIFT_SWARM|deflected/west/0",
+      "ENEMY_C01_RIFT_SWARM|idle/east/0",
+      "ENEMY_C01_RIFT_SWARM|idle/north/0",
+      "ENEMY_C01_RIFT_SWARM|idle/south/0",
+      "ENEMY_C01_RIFT_SWARM|idle/west/0",
+      "ENEMY_C01_RIFT_SWARM|recoil/west/0",
+      "TARGET_C01_EMERGENCY_VEHICLE_01|drive/east/0",
+      "TARGET_C01_EMERGENCY_VEHICLE_01|recoil/east/0",
+      "TARGET_C01_EMERGENCY_VEHICLE_01|waiting/east/0",
+      "V353U001|brace/east/0",
+      "V353U001|brace/north/0",
+      "V353U001|brace/south/0",
+      "V353U001|contact/south/0",
+      "V353U001|idle/east/0",
+      "V353U001|move/north/0",
+      "V353U001|recoil/east/0",
+      "V353U001|recoil/south/0"
+    ],
+    "estimated_vram_bytes": 6455296,
+    "load_count_by_resource": {
+      "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_breaker_neutral_1152x768.png": 1,
+      "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_emergency_vehicle_neutral_256x256.png": 1,
+      "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_guardian_z_neutral_768x768.png": 1,
+      "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_rift_swarm_neutral_384x192.png": 1
+    },
+    "reload_count": 0,
+    "resources": [
+      {
+        "estimated_vram_bytes": 3538944,
+        "filter": "nearest",
+        "format": "RGBA8",
+        "has_alpha": true,
+        "image_texture_instance_id": -9223371992093161888,
+        "load_count": 1,
+        "mipmap": false,
+        "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_breaker_neutral_1152x768.png",
+        "sha256": "debdafd803f9f5c68420726e3b9abf29ab4a2608eecb6a61833fce4fc3407391",
+        "size_px": [
+          1152,
+          768
+        ],
+        "slot_id": "breaker_map_current",
+        "stable_id": "ENEMY_C01_BREAKER"
+      },
+      {
+        "estimated_vram_bytes": 294912,
+        "filter": "nearest",
+        "format": "RGBA8",
+        "has_alpha": true,
+        "image_texture_instance_id": -9223371991958944156,
+        "load_count": 1,
+        "mipmap": false,
+        "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_rift_swarm_neutral_384x192.png",
+        "sha256": "ff96a2b0ee1e02d4941684b1953b51072b969b364f185bfc097bd1cc2f8bc65b",
+        "size_px": [
+          384,
+          192
+        ],
+        "slot_id": "rift_swarm_map_current",
+        "stable_id": "ENEMY_C01_RIFT_SWARM"
+      },
+      {
+        "estimated_vram_bytes": 262144,
+        "filter": "nearest",
+        "format": "RGBA8",
+        "has_alpha": true,
+        "image_texture_instance_id": -9223371992026053022,
+        "load_count": 1,
+        "mipmap": false,
+        "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_emergency_vehicle_neutral_256x256.png",
+        "sha256": "315db68cdde10d4ac1ba049d393d785c3a401b7e02f4160864aeb39373e342d6",
+        "size_px": [
+          256,
+          256
+        ],
+        "slot_id": "emergency_vehicle_map_current",
+        "stable_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+      },
+      {
+        "estimated_vram_bytes": 2359296,
+        "filter": "nearest",
+        "format": "RGBA8",
+        "has_alpha": true,
+        "image_texture_instance_id": -9223371992160270754,
+        "load_count": 1,
+        "mipmap": false,
+        "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_guardian_z_neutral_768x768.png",
+        "sha256": "12196a8b5e66c5b8ebd891ae232361238ce08d3ec56d13a72e216eed4db73988",
+        "size_px": [
+          768,
+          768
+        ],
+        "slot_id": "guardian_z_map_current",
+        "stable_id": "V353U001"
+      }
+    ],
+    "startup_prebuilt_atlas_texture_count": 22,
+    "total_load_count": 4,
+    "unique_image_texture_count": 4
+  },
+  "load_before": {
+    "cached_atlas_texture_instance_ids": [
+      -9223371991807949203,
+      -9223371991791171986,
+      -9223371991774394769,
+      -9223371991757617552,
+      -9223371991740840335,
+      -9223371991673731467,
+      -9223371991656954250,
+      -9223371991640177033,
+      -9223371991623399816,
+      -9223371991606622599,
+      -9223371991589845382,
+      -9223371991724063118,
+      -9223371991707285901,
+      -9223371991690508684,
+      -9223371991942166939,
+      -9223371991925389722,
+      -9223371991908612505,
+      -9223371991891835288,
+      -9223371991875058071,
+      -9223371991858280854,
+      -9223371991841503637,
+      -9223371991824726420
+    ],
+    "cached_atlas_texture_region_count": 22,
+    "cached_atlas_texture_region_keys": [
+      "ENEMY_C01_BREAKER|charge/north/0",
+      "ENEMY_C01_BREAKER|contact/north/0",
+      "ENEMY_C01_BREAKER|recoil/north/0",
+      "ENEMY_C01_BREAKER|red_charge/north/0",
+      "ENEMY_C01_BREAKER|side_hit/north/0",
+      "ENEMY_C01_RIFT_SWARM|deflected/west/0",
+      "ENEMY_C01_RIFT_SWARM|idle/east/0",
+      "ENEMY_C01_RIFT_SWARM|idle/north/0",
+      "ENEMY_C01_RIFT_SWARM|idle/south/0",
+      "ENEMY_C01_RIFT_SWARM|idle/west/0",
+      "ENEMY_C01_RIFT_SWARM|recoil/west/0",
+      "TARGET_C01_EMERGENCY_VEHICLE_01|drive/east/0",
+      "TARGET_C01_EMERGENCY_VEHICLE_01|recoil/east/0",
+      "TARGET_C01_EMERGENCY_VEHICLE_01|waiting/east/0",
+      "V353U001|brace/east/0",
+      "V353U001|brace/north/0",
+      "V353U001|brace/south/0",
+      "V353U001|contact/south/0",
+      "V353U001|idle/east/0",
+      "V353U001|move/north/0",
+      "V353U001|recoil/east/0",
+      "V353U001|recoil/south/0"
+    ],
+    "estimated_vram_bytes": 6455296,
+    "load_count_by_resource": {
+      "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_breaker_neutral_1152x768.png": 1,
+      "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_emergency_vehicle_neutral_256x256.png": 1,
+      "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_guardian_z_neutral_768x768.png": 1,
+      "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_rift_swarm_neutral_384x192.png": 1
+    },
+    "reload_count": 0,
+    "resources": [
+      {
+        "estimated_vram_bytes": 3538944,
+        "filter": "nearest",
+        "format": "RGBA8",
+        "has_alpha": true,
+        "image_texture_instance_id": -9223371992093161888,
+        "load_count": 1,
+        "mipmap": false,
+        "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_breaker_neutral_1152x768.png",
+        "sha256": "debdafd803f9f5c68420726e3b9abf29ab4a2608eecb6a61833fce4fc3407391",
+        "size_px": [
+          1152,
+          768
+        ],
+        "slot_id": "breaker_map_current",
+        "stable_id": "ENEMY_C01_BREAKER"
+      },
+      {
+        "estimated_vram_bytes": 294912,
+        "filter": "nearest",
+        "format": "RGBA8",
+        "has_alpha": true,
+        "image_texture_instance_id": -9223371991958944156,
+        "load_count": 1,
+        "mipmap": false,
+        "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_rift_swarm_neutral_384x192.png",
+        "sha256": "ff96a2b0ee1e02d4941684b1953b51072b969b364f185bfc097bd1cc2f8bc65b",
+        "size_px": [
+          384,
+          192
+        ],
+        "slot_id": "rift_swarm_map_current",
+        "stable_id": "ENEMY_C01_RIFT_SWARM"
+      },
+      {
+        "estimated_vram_bytes": 262144,
+        "filter": "nearest",
+        "format": "RGBA8",
+        "has_alpha": true,
+        "image_texture_instance_id": -9223371992026053022,
+        "load_count": 1,
+        "mipmap": false,
+        "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_emergency_vehicle_neutral_256x256.png",
+        "sha256": "315db68cdde10d4ac1ba049d393d785c3a401b7e02f4160864aeb39373e342d6",
+        "size_px": [
+          256,
+          256
+        ],
+        "slot_id": "emergency_vehicle_map_current",
+        "stable_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+      },
+      {
+        "estimated_vram_bytes": 2359296,
+        "filter": "nearest",
+        "format": "RGBA8",
+        "has_alpha": true,
+        "image_texture_instance_id": -9223371992160270754,
+        "load_count": 1,
+        "mipmap": false,
+        "resource_path": "res://content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/fixtures/c3_guardian_z_neutral_768x768.png",
+        "sha256": "12196a8b5e66c5b8ebd891ae232361238ce08d3ec56d13a72e216eed4db73988",
+        "size_px": [
+          768,
+          768
+        ],
+        "slot_id": "guardian_z_map_current",
+        "stable_id": "V353U001"
+      }
+    ],
+    "startup_prebuilt_atlas_texture_count": 22,
+    "total_load_count": 4,
+    "unique_image_texture_count": 4
+  },
+  "old_proxy_visibility_audit": {
+    "any_actor_effectively_visible": false,
+    "any_body_effectively_visible": false,
+    "any_shadow_effectively_visible": false,
+    "node_count": 8,
+    "nodes": [
+      {
+        "actor_visible_in_tree": false,
+        "actor_visible_property": false,
+        "body_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@11/body",
+        "body_visible_in_tree": false,
+        "body_visible_property": false,
+        "compound_actor_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@11",
+        "replaced_by_c3_real_atlas": true,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/compound_map_actor.gd",
+        "shadow_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@11/shadow",
+        "shadow_visible_in_tree": false,
+        "shadow_visible_property": false,
+        "subject_id": "ENEMY_C01_BREAKER"
+      },
+      {
+        "actor_visible_in_tree": false,
+        "actor_visible_property": false,
+        "body_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@12/body",
+        "body_visible_in_tree": false,
+        "body_visible_property": false,
+        "compound_actor_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@12",
+        "replaced_by_c3_real_atlas": true,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/compound_map_actor.gd",
+        "shadow_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@12/shadow",
+        "shadow_visible_in_tree": false,
+        "shadow_visible_property": false,
+        "subject_id": "ENEMY_C01_RIFT_SWARM_01"
+      },
+      {
+        "actor_visible_in_tree": false,
+        "actor_visible_property": false,
+        "body_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@13/body",
+        "body_visible_in_tree": false,
+        "body_visible_property": false,
+        "compound_actor_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@13",
+        "replaced_by_c3_real_atlas": true,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/compound_map_actor.gd",
+        "shadow_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@13/shadow",
+        "shadow_visible_in_tree": false,
+        "shadow_visible_property": false,
+        "subject_id": "ENEMY_C01_RIFT_SWARM_02"
+      },
+      {
+        "actor_visible_in_tree": false,
+        "actor_visible_property": false,
+        "body_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@14/body",
+        "body_visible_in_tree": false,
+        "body_visible_property": false,
+        "compound_actor_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@14",
+        "replaced_by_c3_real_atlas": true,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/compound_map_actor.gd",
+        "shadow_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@14/shadow",
+        "shadow_visible_in_tree": false,
+        "shadow_visible_property": false,
+        "subject_id": "ENEMY_C01_RIFT_SWARM_03"
+      },
+      {
+        "actor_visible_in_tree": true,
+        "actor_visible_property": true,
+        "body_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@15/body",
+        "body_visible_in_tree": true,
+        "body_visible_property": true,
+        "compound_actor_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@15",
+        "replaced_by_c3_real_atlas": false,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/compound_map_actor.gd",
+        "shadow_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@15/shadow",
+        "shadow_visible_in_tree": true,
+        "shadow_visible_property": true,
+        "subject_id": "TARGET_C01_EAST_EXIT"
+      },
+      {
+        "actor_visible_in_tree": false,
+        "actor_visible_property": false,
+        "body_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@16/body",
+        "body_visible_in_tree": false,
+        "body_visible_property": false,
+        "compound_actor_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@16",
+        "replaced_by_c3_real_atlas": true,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/compound_map_actor.gd",
+        "shadow_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@16/shadow",
+        "shadow_visible_in_tree": false,
+        "shadow_visible_property": false,
+        "subject_id": "TARGET_C01_EMERGENCY_VEHICLE_01"
+      },
+      {
+        "actor_visible_in_tree": true,
+        "actor_visible_property": true,
+        "body_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@17/body",
+        "body_visible_in_tree": true,
+        "body_visible_property": true,
+        "compound_actor_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@17",
+        "replaced_by_c3_real_atlas": false,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/compound_map_actor.gd",
+        "shadow_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@17/shadow",
+        "shadow_visible_in_tree": true,
+        "shadow_visible_property": true,
+        "subject_id": "TARGET_C01_SECURITY_GATE"
+      },
+      {
+        "actor_visible_in_tree": false,
+        "actor_visible_property": false,
+        "body_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@18/body",
+        "body_visible_in_tree": false,
+        "body_visible_property": false,
+        "compound_actor_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@18",
+        "replaced_by_c3_real_atlas": true,
+        "script": "res://scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/compound_map_actor.gd",
+        "shadow_path": "/root/C01E02_G2_A2_C3_NeutralRealAtlasConsumer/DYNAMIC_WORLD_OBJECTS/@Node2D@18/shadow",
+        "shadow_visible_in_tree": false,
+        "shadow_visible_property": false,
+        "subject_id": "V353U001"
+      }
+    ],
+    "replaced_node_count": 6,
+    "visibility_aggregates_apply_to_replaced_nodes_only": true
+  },
+  "one_actual_frame_contains_all_three_cross_sizes": true,
+  "order_by_absolute_z": [
+    "ENEMY_C01_BREAKER",
+    "V353U001",
+    "TARGET_C01_EMERGENCY_VEHICLE_01"
+  ],
+  "order_by_footpoint_y": [
+    "ENEMY_C01_BREAKER",
+    "V353U001",
+    "TARGET_C01_EMERGENCY_VEHICLE_01"
+  ],
+  "pairwise_rect_intersections": [
+    {
+      "intersection_area_px": 65536.0,
+      "intersection_rect_px": [
+        552.0,
+        176.0,
+        256.0,
+        256.0
+      ],
+      "subjects": [
+        "ENEMY_C01_BREAKER",
+        "V353U001"
+      ],
+      "visible_overlap": true
+    },
+    {
+      "intersection_area_px": 15360.0,
+      "intersection_rect_px": [
+        576.0,
+        324.0,
+        128.0,
+        120.0
+      ],
+      "subjects": [
+        "ENEMY_C01_BREAKER",
+        "TARGET_C01_EMERGENCY_VEHICLE_01"
+      ],
+      "visible_overlap": true
+    },
+    {
+      "intersection_area_px": 13824.0,
+      "intersection_rect_px": [
+        576.0,
+        324.0,
+        128.0,
+        108.0
+      ],
+      "subjects": [
+        "V353U001",
+        "TARGET_C01_EMERGENCY_VEHICLE_01"
+      ],
+      "visible_overlap": true
+    }
+  ],
+  "per_subject_gpu_toggle_used": false,
+  "pixel_ownership_scan_used": false,
+  "real_art_loaded": 0,
+  "reload_delta": 0,
+  "rendered_process_frames": 15,
+  "resolver_execute_calls": 0,
+  "source": "fixture_validation_only direct C3 Stage subject-copy injection; no Session/Resolver/gameplay mutation",
+  "subjects_back_to_front": [
+    "ENEMY_C01_BREAKER",
+    "V353U001",
+    "TARGET_C01_EMERGENCY_VEHICLE_01"
+  ],
+  "subviewport_used": false,
+  "task105_path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/105-c01e02-task99-simple-2d-board-lighting-occlusion-producer-correction.md",
+  "task105_sha256": "6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7",
+  "task_id": "G2_A2_C3_CURRENT_TOPOLOGY_REAL_ATLAS_NEUTRAL_CONSUMER",
+  "triple_intersection_area_px": 13824.0,
+  "triple_intersection_rect_px": [
+    576.0,
+    324.0,
+    128.0,
+    108.0
+  ],
+  "upstream_signatures_after": {
+    "current_subjects_signature": "65a3deac7e0351b13570a7d6f16817ecfbba0317efddfb8867a39bb999fcdb64",
+    "director_instance_id": 42245031420,
+    "director_playing": false,
+    "draft_signature": "7047b6502e08a030615a8bf1e84e1c8a083b624287c0fb102a02cd5974ea69b5",
+    "intent_signature": "39f3f96183f8988bf6a6eb00961e7391f11454efd63c3b5f20146b5d18e0ef7c",
+    "resolved_signature": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "resolver_instance_id": -9223371994660076042,
+    "selected_strategy": "",
+    "session_instance_id": -9223371994676853260,
+    "session_state": "PUBLIC_SITUATION",
+    "snapshot_signature": "6c73aa60f7ed4567073e2d4ba4d99a9d8b80937881dfe68f4c892fac18f20904",
+    "world_signature": "e34992bf1b423f5a79be69c04503871a66aee27cdc65dcfbf07a2dfdb5015636"
+  },
+  "upstream_signatures_before": {
+    "current_subjects_signature": "65a3deac7e0351b13570a7d6f16817ecfbba0317efddfb8867a39bb999fcdb64",
+    "director_instance_id": 42245031420,
+    "director_playing": false,
+    "draft_signature": "7047b6502e08a030615a8bf1e84e1c8a083b624287c0fb102a02cd5974ea69b5",
+    "intent_signature": "39f3f96183f8988bf6a6eb00961e7391f11454efd63c3b5f20146b5d18e0ef7c",
+    "resolved_signature": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "resolver_instance_id": -9223371994660076042,
+    "selected_strategy": "",
+    "session_instance_id": -9223371994676853260,
+    "session_state": "PUBLIC_SITUATION",
+    "snapshot_signature": "6c73aa60f7ed4567073e2d4ba4d99a9d8b80937881dfe68f4c892fac18f20904",
+    "world_signature": "e34992bf1b423f5a79be69c04503871a66aee27cdc65dcfbf07a2dfdb5015636"
+  },
+  "upstream_signatures_unchanged": true,
+  "valid": true,
+  "viewport_px": [
+    1280,
+    720
+  ]
+}

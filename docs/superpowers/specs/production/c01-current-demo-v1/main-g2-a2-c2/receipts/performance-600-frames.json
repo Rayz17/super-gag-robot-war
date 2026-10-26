@@ -1,0 +1,102 @@
+{
+  "approved_handoffs": [],
+  "call02_pixels_loaded": false,
+  "canon_modified": false,
+  "default_entry_changed": false,
+  "device": {
+    "model": "Mac14,6",
+    "os": "macOS",
+    "os_version": "15.7.5",
+    "processor": "Apple M2 Max"
+  },
+  "display_server": "macOS",
+  "driver_direct_session_calls": false,
+  "evidence_class": "g2_a2_c2_nonheadless_120_warmup_600_frame_performance",
+  "fixture_load_count": 0,
+  "frame_ms": {
+    "average": 6.655,
+    "frames_over_16_7ms": 0,
+    "frames_over_33_3ms": 0,
+    "max": 11.459,
+    "p50": 6.388,
+    "p95": 8.09,
+    "spike_frames": []
+  },
+  "fun_proven": false,
+  "g2_b_allowed": false,
+  "gate": {
+    "max_limit_ms": 33.3,
+    "p95_limit_ms": 16.7,
+    "pass": true
+  },
+  "godot": {
+    "build": "official",
+    "hash": "5b4e0cb0fd279832bbdd69fed5354d4e5ad26f88",
+    "hex": 263936,
+    "major": 4,
+    "minor": 7,
+    "patch": 0,
+    "status": "stable",
+    "string": "4.7-stable (official)",
+    "timestamp": 0
+  },
+  "input_counts": {
+    "joy": 0,
+    "keyboard": 2,
+    "mouse": 1,
+    "screen": 3
+  },
+  "memory_after": {
+    "buffer_bytes": 6746638,
+    "node_count": 84,
+    "object_count": 1694,
+    "static_bytes": 122203441,
+    "static_max_bytes": 122345083,
+    "texture_bytes": 9062007
+  },
+  "memory_before": {
+    "buffer_bytes": 6410632,
+    "node_count": 6,
+    "object_count": 1523,
+    "static_bytes": 36815871,
+    "static_max_bytes": 65471379,
+    "texture_bytes": 7401763
+  },
+  "real_art_loaded": 0,
+  "rendering_driver": "opengl3",
+  "rendering_method": "gl_compatibility",
+  "resolution_px": [
+    1280,
+    720
+  ],
+  "runtime_promotion": false,
+  "sample_frames": 600,
+  "sample_window": {
+    "capture_io_calls": 0,
+    "disk_log_writes": 0,
+    "execution_trace_measured_separately": true,
+    "motion_source": "live rain/wet road + live screen-authored A draft + Scene clock",
+    "non_static": true,
+    "nonheadless": true,
+    "scene_clock_after_s": 5.21207522222226,
+    "scene_clock_before_s": 1.211342,
+    "screenshot_calls": 0
+  },
+  "save_enabled": false,
+  "scene_path": "res://scenes/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/c01e02_g2_a2_c2_screen_proxy.tscn",
+  "texture_audit": {
+    "bound_texture_count": 0,
+    "duplicate_resource_path_count": 0,
+    "duplicate_resource_paths": [],
+    "estimated_uncompressed_bytes": 0,
+    "native_sizes_and_filtering": [],
+    "procedural_proxy_path": true,
+    "unique_texture_instance_count": 0
+  },
+  "video_adapter": {
+    "name": "Apple M2 Max",
+    "vendor": "Apple"
+  },
+  "vsync_mode": 0,
+  "warmup_frames": 120
+}

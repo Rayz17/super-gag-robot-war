@@ -1,0 +1,258 @@
+[
+  {
+    "id": "C01",
+    "group": "C",
+    "template": "fx",
+    "key": "charge",
+    "name": "蓄力准备",
+    "purpose": "准备态可被打断",
+    "design": "身体姿态+武器聚能，主焦点在发射/施力端；阶段图标单独交",
+    "states": [
+      "进入",
+      "保持",
+      "解除",
+      "减少动态模式"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "C02",
+    "group": "C",
+    "template": "fx",
+    "key": "guard",
+    "name": "护势与持续支撑",
+    "purpose": "持续行为没有结束",
+    "design": "受力姿态、接地与设备承重反馈；不当成普通瞬发技能",
+    "states": [
+      "进入",
+      "保持",
+      "解除",
+      "减少动态模式"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "C03",
+    "group": "C",
+    "template": "fx",
+    "key": "fire",
+    "name": "持续燃烧",
+    "purpose": "地形和对象燃烧",
+    "design": "火舌与烟分层、基部贴附目标，正常镜头可见但不遮满盘面",
+    "states": [
+      "进入",
+      "保持",
+      "解除",
+      "减少动态模式"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "C04",
+    "group": "C",
+    "template": "fx",
+    "key": "smoke",
+    "name": "烟雾与余烟",
+    "purpose": "遮挡/气氛分工",
+    "design": "有规则遮挡的烟界与纯余烟区别；不能美术烟擅加规则",
+    "states": [
+      "进入",
+      "保持",
+      "解除",
+      "减少动态模式"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "C05",
+    "group": "C",
+    "template": "fx",
+    "key": "electric",
+    "name": "漏电与短路",
+    "purpose": "危险来源",
+    "design": "局部断线火花与地面电弧；与安全通电流分家",
+    "states": [
+      "进入",
+      "保持",
+      "解除",
+      "减少动态模式"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "C06",
+    "group": "C",
+    "template": "fx",
+    "key": "power",
+    "name": "通电与断电",
+    "purpose": "设施可用性",
+    "design": "灯列/能量接口状态变化，不把整栋楼刷成发光体",
+    "states": [
+      "进入",
+      "保持",
+      "解除",
+      "减少动态模式"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "C07",
+    "group": "C",
+    "template": "fx",
+    "key": "shutdown",
+    "name": "停机与撤令",
+    "purpose": "可保全的市政单位",
+    "design": "机械静止、工作灯退去、锁定解除；与击毁残骸截然不同",
+    "states": [
+      "进入",
+      "保持",
+      "解除",
+      "减少动态模式"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "C08",
+    "group": "C",
+    "template": "fx",
+    "key": "immobilized",
+    "name": "拘束与受阻",
+    "purpose": "不能移动",
+    "design": "索具或受阻部位可辨，开火武器仍保持可用表达",
+    "states": [
+      "进入",
+      "保持",
+      "解除",
+      "减少动态模式"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "C09",
+    "group": "C",
+    "template": "fx",
+    "key": "jammed",
+    "name": "干扰中",
+    "purpose": "攻击承诺取消",
+    "design": "导引点短失锁与UI取消符号，避免错误表达持续扣血",
+    "states": [
+      "进入",
+      "保持",
+      "解除",
+      "减少动态模式"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "C10",
+    "group": "C",
+    "template": "fx",
+    "key": "marked",
+    "name": "被标定",
+    "purpose": "后续攻击关系",
+    "design": "简洁标记有来源，不给整片场地永久描边",
+    "states": [
+      "进入",
+      "保持",
+      "解除",
+      "减少动态模式"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "C11",
+    "group": "C",
+    "template": "fx",
+    "key": "armor",
+    "name": "护甲与破甲",
+    "purpose": "伤害差异",
+    "design": "装甲受力/破甲裂层有限表达；损失数字由游戏绘制",
+    "states": [
+      "进入",
+      "保持",
+      "解除",
+      "减少动态模式"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "C12",
+    "group": "C",
+    "template": "fx",
+    "key": "damaged",
+    "name": "轻损重损与失能",
+    "purpose": "机体状态",
+    "design": "状态覆盖层不随每个姿势重画全身；重要缺件有独立模型",
+    "states": [
+      "进入",
+      "保持",
+      "解除",
+      "减少动态模式"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "C13",
+    "group": "C",
+    "template": "fx",
+    "key": "spawn",
+    "name": "增援预告与入场",
+    "purpose": "有时间可反制",
+    "design": "入口积聚、露头、出场分开；不和已入场敌人混淆",
+    "states": [
+      "进入",
+      "保持",
+      "解除",
+      "减少动态模式"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "C14",
+    "group": "C",
+    "template": "fx",
+    "key": "closed",
+    "name": "入口封闭",
+    "purpose": "增援被取消",
+    "design": "实体封口/关闸反馈，后续预告消失；不是关灯算封闭",
+    "states": [
+      "进入",
+      "保持",
+      "解除",
+      "减少动态模式"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "C15",
+    "group": "C",
+    "template": "fx",
+    "key": "objective",
+    "name": "目标完成与仍阻塞",
+    "purpose": "跨区后果",
+    "design": "接电/通桥/行车分开图形；保留未解决条件，别泛用绿色勾",
+    "states": [
+      "进入",
+      "保持",
+      "解除",
+      "减少动态模式"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "C16",
+    "group": "C",
+    "template": "fx",
+    "key": "scrap",
+    "name": "残骸可回收",
+    "purpose": "资源与障碍",
+    "design": "可回收部件、不可走大残骸和纯装饰碎屑有区别",
+    "states": [
+      "进入",
+      "保持",
+      "解除",
+      "减少动态模式"
+    ],
+    "status": "todo"
+  }
+]

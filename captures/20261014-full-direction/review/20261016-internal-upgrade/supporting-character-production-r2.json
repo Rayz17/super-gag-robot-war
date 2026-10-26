@@ -1,0 +1,244 @@
+{
+  "revision": "supporting-character-handoff-r2",
+  "date": "2026-10-17",
+  "producer_thread": "01a13f08-23a0-74c2-b2f5-7913c7e81470",
+  "receiver_thread": "01a0f799-a7fc-7173-b8b2-8ce9f1c8861a",
+  "purpose": "实际人物修订制作件及接口；不是整改进度台账",
+  "supersedes_style_recommendation": "supporting-character-production-r1.json",
+  "direct_user_feedback": "人物转绘看上去没有用新的风格",
+  "method_change": {
+    "previous": "以原稿和H01-r1保持身份并清理磨损，结果仍近旧画法",
+    "executed": "以外援实际平涂动画稿作首要画法参考，旧稿只锁身份；先完成并看兜灯R2，再以该稿校准另两人",
+    "calibration_file": "samples/H04-doudeng-restyle-r2.png"
+  },
+  "items": [
+    {
+      "file": "samples/H04-doudeng-restyle-r2.png",
+      "sha256": "3ea4bfea3d2f24e4835df16f49debe9a5248ac9a58d63936d4b5c9f89c18b715",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "background_samples": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "id": "H04",
+      "name": "兜灯",
+      "generated": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-fe4e0fae-12f2-4cd4-8ff5-525d5941ff7d.png",
+      "parent": "refs/doudeng-project-shape.png",
+      "parent_sha256": "93d0a2c28f0eca9f86b752dfe24844af242e7cc47c0157fffc21f33735e40883",
+      "style_reference": "refs/doudeng-external-style.jpg",
+      "style_reference_sha256": "d8bbb83e7cae796b88ac802843997ba9aa8c17668f6f92828f8a27d78e1186e3",
+      "crop": [
+        0,
+        0,
+        1024,
+        1160
+      ],
+      "eye": [
+        590,
+        306
+      ],
+      "chin": 417,
+      "portrait_crop": [
+        395,
+        161,
+        390,
+        390
+      ],
+      "frame_record": "supporting-character-production-r2.json",
+      "dialogue_head_scale": 0.6486486486486487,
+      "shape_policy_user_selected": true,
+      "exact_new_drawing_accepted": false,
+      "runtime_integrated": false,
+      "current_status": "identity_and_style_accepted_color_refinement_pending",
+      "prompt_record": "doudeng-style-calibration-prompt-r2.json",
+      "identity_and_drawing_direction_accepted": true
+    },
+    {
+      "file": "samples/H07-tangjiao-restyle-r2.png",
+      "sha256": "05c1afaa741c740f224cc20a9f6fd8927a9b62bf935f9b4eb562c6a3b4a06ec8",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "background_samples": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "id": "H07",
+      "name": "唐胶",
+      "generated": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-d84ba570-a00b-46b1-bf11-f8cb0770682c.png",
+      "parent": "refs/tangjiao-project-shape.png",
+      "parent_sha256": "974af57841d7f921fec8d59cd466ec70bdcc19211317bbda11d2f1996eb569c1",
+      "style_reference": "refs/tangjiao-external-style.jpg",
+      "style_reference_sha256": "1acabcc7f4ee04525996f5bd365aed78db34efa263690cc0bccd96067deb240d",
+      "crop": [
+        0,
+        0,
+        1024,
+        1160
+      ],
+      "eye": [
+        539,
+        223
+      ],
+      "chin": 319,
+      "portrait_crop": [
+        344,
+        78,
+        390,
+        390
+      ],
+      "frame_record": "supporting-character-production-r2.json",
+      "dialogue_head_scale": 0.75,
+      "shape_policy_user_selected": true,
+      "exact_new_drawing_accepted": false,
+      "runtime_integrated": false,
+      "current_status": "identity_and_style_accepted_color_refinement_pending",
+      "prompt_record": "tangjiao-style-prompt-r2.json",
+      "identity_and_drawing_direction_accepted": true
+    },
+    {
+      "file": "samples/H09-jiaojia-restyle-r2.png",
+      "sha256": "8bd4792fdb60d64dc859a8bbcd7704c2db2257ce0cf68d47f0fb2418141f6809",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "background_samples": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "id": "H09",
+      "name": "胶价王",
+      "generated": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-866b48da-a15f-4fe0-8643-158304c89114.png",
+      "parent": "refs/jiaojia-project-shape.png",
+      "parent_sha256": "b1cb18556c8cdf4951b6bf438ab571177a113faa39f00e44178772836b2cd9e3",
+      "style_reference": "refs/jiaojia-external-style.jpg",
+      "style_reference_sha256": "83c79a1e4d0dcc39c7900e61c54fd15ff4974958868e64023c9ef94178ff8edc",
+      "crop": [
+        0,
+        0,
+        1024,
+        1160
+      ],
+      "eye": [
+        425,
+        184
+      ],
+      "chin": 299,
+      "portrait_crop": [
+        230,
+        39,
+        390,
+        390
+      ],
+      "frame_record": "supporting-character-production-r2.json",
+      "dialogue_head_scale": 0.6260869565217392,
+      "shape_policy_user_selected": true,
+      "exact_new_drawing_accepted": false,
+      "runtime_integrated": false,
+      "current_status": "identity_and_style_accepted_color_refinement_pending",
+      "prompt_record": "jiaojia-style-prompt-r2.json",
+      "identity_and_drawing_direction_accepted": true
+    }
+  ],
+  "coordinate_annotation": "作者按1024×1536母图标注眼线中点和下巴，含头部倾斜；接收方仍须正常对话、72/112头像与130%文字尺寸检查，不沿用旧稿坐标。390区域仅为建议裁切窗口。",
+  "interface": "same consumer crop/eye/chin; dialogue eye-to-chin 72 UI; avatar uses same master and actual face anchors",
+  "author_review": {
+    "actual_images_viewed": true,
+    "findings": [
+      "兜灯保留发髻、护目镜、工具/工装，改为大块硬阴影，减去旧稿散碎金属高光、伤痕和发丝。",
+      "唐胶保留削发/红黑发束、咧嘴笑、围裙、钳子与纹身，黑衣色面和阴影显著整合。",
+      "胶价王保留紫发、眼镜、夸张笑、毛领、挂片与槌，毛领改成成组尖块，衣料/金属由刻画转为分色。"
+    ],
+    "remaining": [
+      "细部金属、链条仍相对密集，接收方小头像可读性必须检查；不能仅根据透明导出通过宣称美术达标。",
+      "三个人物的新画法仍待用户判断；表情套组未制作，不能作为整批人物制作完毕。",
+      "三主角原形象认可保留，本批不重新设计三主角，也不推定全部人物已统一。"
+    ]
+  },
+  "checks": {
+    "real_alpha_and_file_hash": true,
+    "crop_within_image": true,
+    "runtime_by_producer": false,
+    "independent_quality_review": false,
+    "user_acceptance": false,
+    "identity_and_style_user_acceptance": true,
+    "final_color_or_runtime_acceptance": false
+  },
+  "generation_mode": "built-in image_gen, no CLI fallback",
+  "runtime_changed_by_producer": false,
+  "user_feedback_20261017_followup": {
+    "date": "2026-10-17",
+    "authority": "direct_user_message_in_this_chat",
+    "verbatim": "社勇王的躯干不够壮实，也丢失了V17那个轰炸机的特征框架（以及应该有的翅膀部件），头部相对勇拳没有变化和提升（可以采用V17的感觉），但是感觉挺对的，方向完全对，美术风格也对。人物的配色按新风格微调即可，形象过关",
+    "brave_scope": {
+      "overall_direction": true,
+      "drawing_style": true,
+      "finished_structure": false,
+      "remaining": [
+        "躯干更壮实",
+        "恢复V17完整上覆轰炸机框架与翼件",
+        "头部应体现相对勇拳的合体升级，可采用V17感觉"
+      ]
+    },
+    "characters_scope": {
+      "ids": [
+        "H04",
+        "H07",
+        "H09"
+      ],
+      "identity_and_drawing_direction": true,
+      "color_refinement": "只按新风格微调配色；不重画身份",
+      "all_derivatives_runtime_accepted": false
+    }
+  }
+}

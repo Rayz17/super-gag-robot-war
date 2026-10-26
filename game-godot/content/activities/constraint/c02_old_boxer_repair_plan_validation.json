@@ -1,0 +1,75 @@
+{
+  "activity_id": "M6_C02_OLD_BOXER_REPAIR_PLAN",
+  "template_id": "T_REPAIR_PLAN_CONSTRAINT",
+  "grammar": "CONSTRAINT",
+  "host_profile": "old_boxer_workbench",
+  "title": "旧拳王维修分配 / 修什么，也保留什么",
+  "prompt": "把有限零件分给承力、动作记忆与坍塌救援。空槽不会阻断剧情，只会成为战场问题。",
+  "transaction_id": "M6:C02:OLD_BOXER_REPAIR_PLAN:V01",
+  "canon_refs": ["MECHA_OLD_BOXER_KING", "R22", "CH_TANGJIAO", "C02E03-AUCTION"],
+  "safe_risk": 4,
+  "allow_partial_commit": true,
+  "slots": [
+    {"id": "load_path", "label": "承力链", "required": true, "accepts": ["structural"], "incompatible_text": "这件东西不能承担膝轴到右拳的结构载荷。"},
+    {"id": "motion_memory", "label": "动作记忆", "required": true, "accepts": ["identity"], "incompatible_text": "这里要处理影子动作，不是再加一层装甲。"},
+    {"id": "rescue_reserve", "label": "坍塌余量", "required": false, "accepts": ["rescue"], "incompatible_text": "救援余量只能留给能撑门或让路的部件。"}
+  ],
+  "cards": [
+    {"id": "knee_bearing_shim", "label": "手磨膝轴垫片", "detail": "保留旧轴，补回受力面；慢，但知道哪里还会疼。", "tags": ["structural"], "risk": 1, "source_node": "knee_bearing"},
+    {"id": "right_glove_torque_ring", "label": "右拳护具扭矩环", "detail": "护具只校准拳路，不能替机体承担整个身体。", "tags": ["structural"], "risk": 2, "source_node": "right_glove"},
+    {"id": "shadow_tape_isolator", "label": "影子录像隔离片", "detail": "不删除旧动作，只让旧拳王可以晚一拍再决定。", "tags": ["identity"], "risk": 1, "source_node": "shadow_tape"},
+    {"id": "factory_motion_reset", "label": "出厂动作重置", "detail": "最快、最干净，也会把失败动作一起抹掉。", "tags": ["identity"], "risk": 4, "source_node": "auction_terminal"},
+    {"id": "warehouse_strut_reserve", "label": "仓门顶撑余件", "detail": "少修一层外甲，把伸缩撑杆留给坍塌仓门。", "tags": ["rescue"], "risk": 1, "source_node": "warehouse_alarm"}
+  ],
+  "conflicts": [
+    {"a": "right_glove_torque_ring", "b": "factory_motion_reset", "reason": "护具保存的旧拳路会被出厂重置立即覆盖。"}
+  ],
+  "outcomes": {
+    "perfect": {
+      "resolution": "success",
+      "preview": ["承力和动作记忆都保留", "仓门额外顶撑", "维修痕迹可追溯"],
+      "resource_delta": {"repair_parts": -2},
+      "variable_delta": {"repair_debt": 0},
+      "battle_modifiers": ["warehouse_gate_integrity:+2", "repair_plan:traceable"],
+      "unlocked_flags": ["old_boxer_traceable_repair"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M6_PLAN_PERFECT", "schema": "constraint_old_boxer_v1"}],
+      "facts": [{"id": "M6_OLD_BOXER_REPAIR_PLAN", "to": "body_memory_rescue"}],
+      "entity_changes": [{"entity_id": "MECHA_OLD_BOXER_KING", "repair_plan": "body_memory_rescue"}],
+      "ui_summary": "身体、动作和救援余量都有去处；没有一件零件被说成万能答案。"
+    },
+    "good": {
+      "resolution": "success",
+      "preview": ["两项主要责任成立", "坍塌余量交给战场"],
+      "resource_delta": {"repair_parts": -1},
+      "variable_delta": {"repair_debt": 0},
+      "battle_modifiers": ["warehouse_gate_integrity:+1"],
+      "unlocked_flags": ["old_boxer_core_repair"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M6_PLAN_GOOD", "schema": "constraint_old_boxer_v1"}],
+      "facts": [{"id": "M6_OLD_BOXER_REPAIR_PLAN", "to": "body_memory"}],
+      "entity_changes": [{"entity_id": "MECHA_OLD_BOXER_KING", "repair_plan": "body_memory"}],
+      "ui_summary": "主要维修成立；仓门如果塌下来，就只能让机体现场拿身体去顶。"
+    },
+    "clear": {
+      "resolution": "costly_success",
+      "preview": ["只保住一项主要责任", "另一项成为战场限制"],
+      "variable_delta": {"repair_debt": 1},
+      "battle_modifiers": ["arena_lane:partially_blocked"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M6_PLAN_CLEAR", "schema": "constraint_old_boxer_v1"}],
+      "promises_and_debts": [{"debt_id": "M6_OLD_BOXER_UNCOVERED_REPAIR", "state": "open", "owner": "CH_TANGJIAO"}],
+      "entity_changes": [{"entity_id": "MECHA_OLD_BOXER_KING", "repair_plan": "partial"}],
+      "soft_fail": "一项维修责任无人承担，形成危险格",
+      "ui_summary": "先修到能站起来。没顾上的那一段，会在擂台翻面时变成一条不能走的路。"
+    },
+    "fail": {
+      "resolution": "soft_failure",
+      "preview": ["只做最低通电", "机体仍可出场", "仓门初始受损"],
+      "variable_delta": {"repair_debt": 2},
+      "battle_modifiers": ["warehouse_gate_integrity:-1"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M6_PLAN_FAIL", "schema": "constraint_old_boxer_v1"}],
+      "promises_and_debts": [{"debt_id": "M6_OLD_BOXER_MINIMUM_POWER", "state": "open", "owner": "CH_JICUN"}],
+      "entity_changes": [{"entity_id": "MECHA_OLD_BOXER_KING", "repair_plan": "minimum_power"}],
+      "soft_fail": "最低通电出场，坍塌目标初始受损",
+      "ui_summary": "没有形成维修计划。旧拳王仍会上场，但它会带着每个空槽一起站进灯下。"
+    }
+  }
+}

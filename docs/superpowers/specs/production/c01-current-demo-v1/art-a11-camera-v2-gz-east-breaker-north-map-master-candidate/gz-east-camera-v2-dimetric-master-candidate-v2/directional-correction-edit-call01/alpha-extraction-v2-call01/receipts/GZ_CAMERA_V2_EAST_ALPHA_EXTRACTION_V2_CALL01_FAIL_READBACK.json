@@ -1,0 +1,57 @@
+{
+  "artifact": "GZ_CAMERA_V2_EAST_ALPHA_EXTRACTION_V2_CALL01",
+  "status": "ALPHA_FAIL_AND_FRAMING_DRIFT_STOPPED",
+  "candidate_gate": "FAIL",
+  "scope": {
+    "lane": "Candidate technical extraction only",
+    "user_approved": false,
+    "runtime": false,
+    "godot_integrated": false,
+    "canon_promoted": false,
+    "transparent_256_candidate_written": false
+  },
+  "imagegen": {
+    "mode": "built-in imagegen edit",
+    "operation": "background-extraction",
+    "calls_this_task": 1,
+    "rerolls": 0,
+    "known_a11_lineage_calls_before": 10,
+    "known_a11_lineage_calls_after": 11,
+    "further_calls_allowed": false,
+    "instruction_summary": "Delete only the baked checkerboard into genuine alpha while treating the robot foreground, structure, orientation, size, placement, and framing as immutable."
+  },
+  "sole_edit_target": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/gz-east-camera-v2-dimetric-master-candidate-v2/directional-correction-edit-call01/generation-raw/GZ_CAMERA_V2_EAST_DIRECTIONAL_EDIT_CALL01_RAW_ALPHA_FAIL.png",
+    "sha256": "24868a3483ccaf650af73da3b61887282cf9aa5530bc4f63b0450750f4e2315f",
+    "mode": "RGB",
+    "size": [1254, 1254],
+    "rough_subject_bbox_rgb_lt235": [258, 79, 979, 1177],
+    "rough_subject_bbox_size": [721, 1098]
+  },
+  "output": {
+    "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/gz-east-camera-v2-dimetric-master-candidate-v2/directional-correction-edit-call01/alpha-extraction-v2-call01/generation-raw/GZ_CAMERA_V2_EAST_ALPHA_EXTRACTION_V2_CALL01_RAW.png",
+    "sha256": "dae63003dde2b3a62a05be37cf5196a53f3856afbdc52733393c83811e563450",
+    "mode": "RGB",
+    "size": [1254, 1254],
+    "alpha_channel_present": false,
+    "background": "baked checkerboard",
+    "rough_subject_bbox_rgb_lt235": [240, 80, 972, 1173],
+    "rough_subject_bbox_size": [732, 1093]
+  },
+  "comparison": {
+    "true_alpha": "FAIL",
+    "subject_bbox_top_left_delta": [-18, 1],
+    "subject_bbox_size_delta": [11, -5],
+    "identical_size_and_framing": false,
+    "pixel_exact_foreground": false,
+    "visual_structure_review": "Not promoted for visual review because alpha and framing invariants already failed."
+  },
+  "stop_record": {
+    "reason": "The one permitted extraction returned RGB without an alpha channel and changed the rough subject framing.",
+    "delivery_directory_intentionally_empty": true,
+    "qa_board_written": false,
+    "deterministic_256_rgba_written": false,
+    "deterministic_chroma_salvage": false,
+    "additional_imagegen": false
+  }
+}

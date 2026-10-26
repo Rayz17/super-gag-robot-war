@@ -1,0 +1,33 @@
+{
+  "generation_mode": "built_in_image_gen",
+  "outputs": [
+    {
+      "id": "M08",
+      "file": "samples/M08-dual-form-r1b.png",
+      "inputs": [
+        "captures/20261014-full-direction/review/20261016-r3-wave3/images/6b48ef419fc2bba9bde11bd02b63ffc58524db2ad5f847638fa223afd02a9a13.jpg"
+      ],
+      "prompts": [
+        "M08-dual-form-prompt-r1.txt",
+        "M08-gun-forward-prompt-r1b.txt"
+      ]
+    },
+    {
+      "id": "M14",
+      "file": "samples/M14-dual-form-r1.png",
+      "inputs": [
+        "captures/20261014-full-direction/review/20261016-r3-wave3/images/027e8d6cc3e77bd29c4e73218ec970113999abb98e0523c6aca21e24f3acac0b.jpg"
+      ],
+      "prompts": [
+        "M14-dual-form-prompt-r1.txt"
+      ]
+    }
+  ],
+  "correction": {
+    "file": "samples/M08-dual-form-r1-aft-gun-attempt.png",
+    "prompts": [
+      "M08-dual-form-prompt-r1.txt"
+    ],
+    "result": "航空态枪口朝后，已由R1b局部修正；不作为当前候选。"
+  }
+}

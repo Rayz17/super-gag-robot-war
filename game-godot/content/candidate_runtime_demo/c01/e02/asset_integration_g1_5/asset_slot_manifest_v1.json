@@ -1,0 +1,153 @@
+{
+  "manifest_id": "C01CDV1-G1.5-M1-ASSET-SLOTS-V1",
+  "schema_version": "1.0.0",
+  "runtime_lane": "candidate_runtime_demo",
+  "status": "candidate_interface_fixture_only",
+  "contract_receipt": {
+    "contract_commit": "cf49dac4d539d23337999807114676c9d060ec3e",
+    "contract_path": "docs/superpowers/specs/production/c01-current-demo-v1/15-g1-5-representative-art-pilot.md",
+    "contract_sha256": "844e9d15b8be1575f33b0b06992044a0cc7338284d27747802bce88eaae84b6f",
+    "parent_production_baseline": "4347597e7f7960dc605a8ec1b53d26b7d8df91cb",
+    "frozen_snapshot": "fe7a0764d11f5ac5f9d11accb7398df664132b0b",
+    "content_fingerprint": "944febc74eecb05f7b7c163728910befb2dc9a210a971c3d71526841e3d5af94"
+  },
+  "asset_policy": {
+    "producer_handoff_required": true,
+    "resource_root": "res://content/candidate_runtime_demo/c01/e02/approved_runtime_assets/",
+    "no_implicit_asset_search": true,
+    "default_resolution": "named_geometry_fallback",
+    "unknown_action_policy": "fail_closed",
+    "missing_optional_action_policy": "declared_action_fallback"
+  },
+  "approved_handoffs": [],
+  "slots": [
+    {
+      "slot_id": "MECHA_C01CDV1_GUARDIAN_Z",
+      "subject_id": "V353U001",
+      "slot_kind": "tactical_qsd",
+      "accepted_binding_kind": "sprite_sheet",
+      "runtime_allowed": false,
+      "approved_asset_binding": null,
+      "footprint": [2, 2],
+      "footprint_anchor": "north_west_cell",
+      "sprite_pivot": "bottom_center",
+      "pivot_normalized": [0.5, 1.0],
+      "sorting_anchor": "foot_contact_center",
+      "facings": ["north", "east", "south", "west"],
+      "default_facing": "south",
+      "preview_sizes_px": [96, 128],
+      "actions": {
+        "idle": {"required": true, "fallback_action": null},
+        "move": {"required": false, "fallback_action": "idle"},
+        "brace": {"required": false, "fallback_action": "idle"},
+        "impact": {"required": false, "fallback_action": "idle"}
+      },
+      "fallback": {
+        "fixture_id": "FIXTURE_G15_GUARDIAN_Z_QSD",
+        "geometry": "named_18m_2x2_mecha",
+        "label": "GUARDIAN Z / GEOMETRY FIXTURE",
+        "primary_color": "#2B93AF",
+        "accent_color": "#F3C94D"
+      }
+    },
+    {
+      "slot_id": "ENEMY_C01CDV1_BREAKER_GROUND",
+      "subject_id": "ENEMY_C01_BREAKER",
+      "slot_kind": "tactical_qsd",
+      "accepted_binding_kind": "sprite_sheet",
+      "runtime_allowed": false,
+      "approved_asset_binding": null,
+      "footprint": [3, 3],
+      "footprint_anchor": "north_west_cell",
+      "sprite_pivot": "bottom_center",
+      "pivot_normalized": [0.5, 1.0],
+      "sorting_anchor": "foot_contact_center",
+      "facings": ["north", "east", "south", "west"],
+      "default_facing": "north",
+      "preview_sizes_px": [96, 128],
+      "actions": {
+        "idle": {"required": true, "fallback_action": null},
+        "move": {"required": false, "fallback_action": "idle"},
+        "brace": {"required": false, "fallback_action": "idle"},
+        "impact": {"required": false, "fallback_action": "idle"}
+      },
+      "fallback": {
+        "fixture_id": "FIXTURE_G15_BREAKER_GROUND_QSD",
+        "geometry": "named_black_3x3_shell",
+        "label": "BREAKER GROUND / GEOMETRY FIXTURE",
+        "primary_color": "#282B31",
+        "accent_color": "#F04E4E"
+      }
+    },
+    {
+      "slot_id": "CUTIN_C01CDV1_GUARDIAN_STAND",
+      "subject_id": "V353U001",
+      "slot_kind": "static_cutin",
+      "accepted_binding_kind": "static_image",
+      "runtime_allowed": false,
+      "approved_asset_binding": null,
+      "allowed_canvas_sizes": [[640, 360], [1280, 720]],
+      "semantic_result_id": "CP2_GUARDIAN_Z_FIRST_CONTROL",
+      "fallback": {
+        "fixture_id": "FIXTURE_G15_GUARDIAN_STAND_POSE",
+        "geometry": "five_pose_silhouette",
+        "label": "GUARDIAN STAND / STATIC POSE FALLBACK",
+        "primary_color": "#296F86",
+        "accent_color": "#F3C94D"
+      }
+    },
+    {
+      "slot_id": "CUTIN_C01CDV1_SHIELD_VICTORY",
+      "subject_id": "V353U001+ENEMY_C01_BREAKER",
+      "slot_kind": "static_cutin",
+      "accepted_binding_kind": "static_image",
+      "runtime_allowed": false,
+      "approved_asset_binding": null,
+      "allowed_canvas_sizes": [[640, 360], [1280, 720]],
+      "semantic_result_id": "CP3_D0B_CONFIRMED_GAMEPLAY_FINISHER",
+      "fallback": {
+        "fixture_id": "FIXTURE_G15_SHIELD_VICTORY_POSE",
+        "geometry": "mecha_polygon_program_fx",
+        "label": "SHIELD VICTORY / STATIC POSE FALLBACK",
+        "primary_color": "#2B93AF",
+        "accent_color": "#F04E4E"
+      }
+    },
+    {
+      "slot_id": "VIDEO_C01CDV1_GUARDIAN_STAND",
+      "subject_id": "V353U001",
+      "slot_kind": "optional_video",
+      "accepted_binding_kind": "video",
+      "runtime_allowed": false,
+      "approved_asset_binding": null,
+      "allowed_canvas_sizes": [[1280, 720]],
+      "semantic_result_id": "CP2_GUARDIAN_Z_FIRST_CONTROL",
+      "static_fallback_slot_id": "CUTIN_C01CDV1_GUARDIAN_STAND",
+      "fallback": {
+        "fixture_id": "FIXTURE_G15_GUARDIAN_STAND_VIDEO_MISSING",
+        "geometry": "same_shot_static_fallback",
+        "label": "VIDEO OPTIONAL / USE GUARDIAN STAND STATIC",
+        "primary_color": "#26363D",
+        "accent_color": "#F3C94D"
+      }
+    },
+    {
+      "slot_id": "VIDEO_C01CDV1_SHIELD_VICTORY",
+      "subject_id": "V353U001+ENEMY_C01_BREAKER",
+      "slot_kind": "optional_video",
+      "accepted_binding_kind": "video",
+      "runtime_allowed": false,
+      "approved_asset_binding": null,
+      "allowed_canvas_sizes": [[1280, 720]],
+      "semantic_result_id": "CP3_D0B_CONFIRMED_GAMEPLAY_FINISHER",
+      "static_fallback_slot_id": "CUTIN_C01CDV1_SHIELD_VICTORY",
+      "fallback": {
+        "fixture_id": "FIXTURE_G15_SHIELD_VICTORY_VIDEO_MISSING",
+        "geometry": "same_shot_static_fallback",
+        "label": "VIDEO OPTIONAL / USE SHIELD VICTORY STATIC",
+        "primary_color": "#26363D",
+        "accent_color": "#F04E4E"
+      }
+    }
+  ]
+}

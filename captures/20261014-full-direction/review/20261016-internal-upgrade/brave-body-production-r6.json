@@ -1,0 +1,141 @@
+{
+  "revision": "brave-body-production-r6",
+  "date": "2026-10-17",
+  "purpose": "user-requested per-body-part orientation/shape review followed by constrained 2D edits",
+  "part_audit": "brave-body-orientation-audit-r6.json",
+  "user_part_selection": "brave-user-part-selections-r5.json",
+  "source_front": {
+    "file": "samples/M04-brave-combined-master-r4b.png",
+    "sha256": "c632800c50509af21a32d00405f576bf1c9d22411bd8f66898bcfeecc0e045bc",
+    "pixel_size": [
+      1254,
+      1254
+    ],
+    "current_use": "identity_and_parts_reference_unchanged"
+  },
+  "current_side": {
+    "file": "samples/M04-side-body-reviewed-r6d.png",
+    "sha256": "e642cd0bb5f8f848beb4a4ab6e246026fcdfaa86d4ba5a53fdf5f9fb8eedaa49",
+    "pixel_size": [
+      1254,
+      1254
+    ],
+    "current_use": "revised_side_candidate_not_locked",
+    "prompt": "brave-side-blunt-nose-prompt-r6d.json",
+    "author_observation": [
+      "脸、机鼻、引擎进气、膝钻和足尖同朝画面左方。",
+      "肩甲采用选定侧图斜三角壳体，未沿R5高抬翼/薄条翼继续推演。",
+      "小腿前后带面贴住共同壳体，未再单独外挂一套悬挂小履带；轮系与护板仍需后续空间统一。",
+      "拳腕实体比抽取底稿增重；列车车头仍在肘侧，头胸肩位置没有随腿部修订重造。",
+      "背鳍边被长发遮挡，胸机鼻已局部收短钝化。"
+    ]
+  },
+  "current_rear": {
+    "file": "samples/M04-rear-exhaust-corrected-r6b.png",
+    "sha256": "dc164dcd8cf4f6c6e8de75f06ab9209ca09194f0b5694e50ec29e690cf854d42",
+    "pixel_size": [
+      1254,
+      1254
+    ],
+    "current_use": "rear_three_quarter_design_candidate_not_locked",
+    "prompt": "brave-rear-exhaust-fix-prompt-r6b.json",
+    "author_observation": [
+      "采用用户绿框中置上下双矩形格栅、橙黑框及肩后竖鳍。",
+      "双腿后侧采用橙脊板、凹入格栅、履带和后跟轮组；前钻没有移到腿后。",
+      "翼下发动机背向端已修成凹入排气口，没有保留向后的进气风扇。",
+      "该稿为背部三分之四研究，非严格正后投影；后部整体比例仍需要与最终同一模型统一。"
+    ]
+  },
+  "steps": [
+    {
+      "file": "samples/M04-side-structure-baseline-r6a.png",
+      "sha256": "7f75dbf6bac44c9d00d34fbe15d0f4abbff0d9890c52ba893fb454444a12882b",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "prompt": "brave-side-structure-baseline-prompt-r6a.json",
+      "actual_observation": "仅抽出选定侧图并校正引擎轴线，保留肩甲位置。"
+    },
+    {
+      "file": "samples/M04-side-local-leg-fist-r6b.png",
+      "sha256": "76bfd1c5b6051f62e80c36d92453f6e7ded7f522cbafeb4cae0113ed9072d8ce",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "prompt": "brave-side-local-leg-fist-prompt-r6b.json",
+      "actual_observation": "局部补前后带面与共同轮系、分段腿甲和拳腕实体。"
+    },
+    {
+      "file": "samples/M04-rear-selected-parts-r6a.png",
+      "sha256": "230eaea440744d380d05d9358fd9494907bfd075e5622b5c7f8cfa5e7c74c972",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "prompt": "brave-rear-selected-parts-prompt-r6.json",
+      "actual_observation": "采用绿框背包/后腿，作者检查发现翼下后端仍像进气风扇，不能直接沿用。"
+    },
+    {
+      "file": "samples/M04-rear-exhaust-corrected-r6b.png",
+      "sha256": "dc164dcd8cf4f6c6e8de75f06ab9209ca09194f0b5694e50ec29e690cf854d42",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "prompt": "brave-rear-exhaust-fix-prompt-r6b.json",
+      "actual_observation": "仅将两个翼下发动机背向开口改为无风扇/轮毂的凹入排气端。"
+    },
+    {
+      "file": "samples/M04-side-fin-aligned-r6c.png",
+      "sha256": "8330b0de4b0ce731293b8dcd8a73134ff45d80113eadb0940f37e670cdaf6564",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "prompt": "brave-side-rear-fin-alignment-prompt-r6c.json",
+      "actual_observation": "仅补侧向可见背鳍边，不抬升主肩翼。"
+    },
+    {
+      "file": "samples/M04-side-body-reviewed-r6d.png",
+      "sha256": "e642cd0bb5f8f848beb4a4ab6e246026fcdfaa86d4ba5a53fdf5f9fb8eedaa49",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "prompt": "brave-side-blunt-nose-prompt-r6d.json",
+      "actual_observation": "仅收掉胸机鼻尖端，恢复短钝端面。"
+    }
+  ],
+  "rejected_history": [
+    {
+      "file": "samples/M04-side-selected-parts-r5-rejected.png",
+      "sha256": "b04b8bf2abc019abcc949acdc2a327a0ed95635aaf027c46c1e97a0b792e24e5",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "reason": "用户明确否定；肩翼抬高、前履带像独立外挂；不再作编辑底稿"
+    }
+  ],
+  "withdrawn_rules": [
+    "侧面必须把主翼压成薄平条。",
+    "只保留后带面、让前缘全由白甲替代。"
+  ],
+  "scope": {
+    "generation_mode": "built_in_image_gen",
+    "pixel_artwork_editing_by_code": false,
+    "model_generated": false,
+    "runtime_changed": false,
+    "new_handoff_sent": false,
+    "model_hold": "paused_design_pending",
+    "user_new_view_acceptance": false
+  },
+  "remaining": [
+    "新侧/背稿尚未获得用户认可。",
+    "正面母稿继续作为身份来源；侧背不是同一模型投影，不能宣布严格三视/隐面尺寸一致。",
+    "新背包/鳍及腿部轮系的精确跨视图分件，须在定稿并恢复三维后统一；本批未替换旧运行模型。"
+  ],
+  "handoff_status": "wait_user_confirmation_then_grouped_transfer"
+}

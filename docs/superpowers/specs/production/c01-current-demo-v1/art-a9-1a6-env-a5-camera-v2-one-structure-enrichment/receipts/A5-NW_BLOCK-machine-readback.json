@@ -1,0 +1,117 @@
+{
+  "task_id": "A9_1A6_ENV_A5_CAMERA_V2_ONE_STRUCTURE_ENRICHMENT",
+  "status": "PRODUCER_PASS_STRUCTURE_HIERARCHY_NOT_FINAL_ART",
+  "scope": "NW_BLOCK_ONLY_PURE_GEOMETRY_NO_MATERIAL",
+  "camera": {
+    "axis_vectors_px": [
+      [
+        40,
+        24
+      ],
+      [
+        -40,
+        24
+      ]
+    ],
+    "axis_slopes": [
+      0.6,
+      -0.6
+    ],
+    "axis_angles_deg": [
+      30.9637565,
+      -30.9637565
+    ],
+    "perspective_convergence": false,
+    "manual_screen_offset": false
+  },
+  "registration": {
+    "grid_rect": [
+      1,
+      0,
+      7,
+      5
+    ],
+    "local_canvas_px": [
+      480,
+      378
+    ],
+    "pivot_local_px": [
+      240,
+      378
+    ],
+    "front_edge_raw": [
+      80,
+      288
+    ],
+    "visual_bounds_raw": [
+      -160,
+      -90,
+      480,
+      378
+    ],
+    "world_height_limit_px": 90,
+    "authored_max_height_px": 82
+  },
+  "foundation": {
+    "source_sha256": "c06ad74d83f8cad6c59fc17cd2a7f240a15f10bbbae80b7ead409f081528e54a",
+    "output_sha256": "c06ad74d83f8cad6c59fc17cd2a7f240a15f10bbbae80b7ead409f081528e54a",
+    "byte_identical": true,
+    "alpha_sha256": "6a93401ba6e1eadd732308a5a0a840e885aca1200a01c19418410666ee54623e"
+  },
+  "occluder": {
+    "source_alpha_sha256": "a3c007732e75fe6847bc773793206d8ac5cb5c0dd57f0e8ba0416bfd13e601d7",
+    "output_alpha_sha256": "527d5f703233b04c224de54cd036bff71b8638835b1e8cddcfd32b2d2c6cd630",
+    "alpha_intentionally_changed": true,
+    "output_alpha_bbox_local": [
+      30,
+      49,
+      412,
+      336
+    ],
+    "inside_fixed_visual_envelope": true,
+    "added_binary_alpha_pixels": 0,
+    "removed_binary_alpha_pixels": 26548,
+    "normal_alpha": 1.0,
+    "reveal_alpha": 0.34,
+    "restore_alpha": 1.0
+  },
+  "geometry_recipe": {
+    "low_main_hall_height_px": 52,
+    "east_side_wing_height_px": 42,
+    "offset_equipment_room_total_height_px": 82,
+    "short_south_eave_height_range_px": [
+      29,
+      35
+    ],
+    "allowed_edge_families": [
+      "+30.9637565_deg",
+      "-30.9637565_deg",
+      "vertical"
+    ]
+  },
+  "normal_restore_byte_identical": true,
+  "imagegen_calls": 0,
+  "material_donors_used": [],
+  "outputs": [
+    "delivery/NW_BLOCK_FOUNDATION_CAMERA_V2_RGBA.png",
+    "delivery/NW_BLOCK_OCCLUDER_CAMERA_V2_ENRICHED_RGBA.png",
+    "qa/NW_BLOCK_A5_GEOMETRY_COMPARISON_100_PERCENT_1120x620.png",
+    "qa/NW_BLOCK_A5_GEOMETRY_COMPARISON_50_PERCENT_560x310.png",
+    "qa/NW_BLOCK_A5_ALPHA_DIFF_AND_ENVELOPE_1120x620.png",
+    "qa/NW_BLOCK_A5_REVEAL_TRISTATE_1680x620.png",
+    "qa/states/NW_BLOCK_NORMAL_100.png",
+    "qa/states/NW_BLOCK_REVEAL_034.png",
+    "qa/states/NW_BLOCK_RESTORE_100.png",
+    "qa/NW_BLOCK_A5_BEHIND_UNIT_ROUTE_PROXY_QA_1120x620.png",
+    "source-lineage.tsv"
+  ],
+  "machine_pass": true,
+  "producer_visual_review": "COMPLETE_PASS_STRUCTURE_HIERARCHY",
+  "six_structure_batch_released": false,
+  "visual_self_review": "CANDIDATE",
+  "task_stopped": false,
+  "producer_verdict": "PASS_STRUCTURE_HIERARCHY",
+  "producer_verdict_date": "2026-08-22",
+  "final_art_pass": false,
+  "material_pilot_released": "NW_BLOCK_ONLY_A6"
+}

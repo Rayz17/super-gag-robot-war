@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-20",
+  "revision": "M05-battle-mask-production-r8",
+  "asset": "M05 / 王者战斗面罩",
+  "generation_mode": "built-in image_gen",
+  "head_authority": "M05-head-design-fixed-20261020.json",
+  "request_record": "M05-battle-mask-direction-r8.json",
+  "acceptance_receipt": "M05-mask-and-fin-direction-r9.json",
+  "file": "samples/M05-battle-mask-r8.png",
+  "sha256": "2c4ef388416980cf0979c5ad1f300750fd361a6249d35fcb31c8f579f358bf66",
+  "pixel_size": [
+    1774,
+    887
+  ],
+  "mode": "RGBA",
+  "alpha_range": [
+    0,
+    255
+  ],
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-fae18726-a46f-4c21-92d7-8650207a5711.png",
+  "source_refs": [
+    {
+      "file": "samples/M05-head-riese-r6b.png",
+      "sha256": "f501ee445276a6f057fa5f095c9993c4492c700a3bc0808d26ff36cb1c84a886",
+      "pixel_size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ]
+    }
+  ],
+  "prompts": [
+    "M05-battle-mask-prompt-r8.json",
+    "M05-mask-deploy-prompt-r8.json"
+  ],
+  "sequence": {
+    "file": "samples/M05-mask-deploy-r8.png",
+    "sha256": "1b8eeff1025e6cfefb45524ab9b4cf476e9da0e879bc35032d0fbca45a197854",
+    "pixel_size": [
+      2172,
+      724
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "user_accepted": false,
+    "scope": "眉部到领口的局部结构示意，不定义新增红鳍或完整皇冠"
+  },
+  "author_review": {
+    "reviewer": "author",
+    "actual_media": "完整看R8战斗面罩正侧与三格局部展开板，并对照R6b普通脸。",
+    "observed": [
+      "R8口鼻护甲有中央接缝与脊线，正面两侧对称；侧面护罩前突和厚度可辨，红色下巴锁扣仍露在下方。",
+      "眼睛、眉冠、金色五构件、圆耳罩和头壳比例沿原图保持。",
+      "展开板显示普通脸、两半护罩分离并露出短连杆、中央合拢三阶段，未把两个完整面罩当成左右零件。"
+    ],
+    "limits": [
+      "面罩主图已获用户采用；三格板只是构造示意，收纳体积、滑移/转轴轨迹和避让未由同一模型或连续动画验证。",
+      "三格板有意截取眉部至领口，头顶新增红鳍在该裁切范围外；它不定义红鳍多视关系。",
+      "未改变游戏规则、护甲数值、加载或运行。"
+    ],
+    "independent_review": false
+  },
+  "status": "battle_mask_source_accepted_fin_addition_in_progress",
+  "user_accepted": true,
+  "sequence_user_accepted": false,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "reader": "M05-battle-mask-r8.html"
+}

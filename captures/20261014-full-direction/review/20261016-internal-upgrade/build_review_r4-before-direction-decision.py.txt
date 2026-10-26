@@ -1,0 +1,283 @@
+#!/usr/bin/env python3
+"""Publish source-bound art adoption review and samples. No runtime/Canon writes."""
+from pathlib import Path
+import csv, hashlib, html, json, os, re
+from collections import Counter
+
+PROJECT = Path(__file__).resolve().parents[4]
+ROOT = PROJECT / 'captures/20261014-full-direction'
+OUT = Path(__file__).resolve().parent
+PAGE = ROOT / 'review-v2.html'
+OLD = ROOT / 'review/20261015-latest-review'
+TASK = PROJECT / 'docs/superpowers/specs/work-packages/2026-10-02-chao-gag-linked-operation-candidate'
+LABELS = {'D':'二维原画可加工采用','M':'结构与造型母版可采用','R':'内部修订后派生','V':'图形、版式与演出参考'}
+NEXT = {
+ 'D':'保留主体设计；去除版头与伪字，按用途导出透明立绘、统一眼线的头肩头像或分层背景。二维资源可先进入候选接入，不代替三维单位。',
+ 'M':'保留本图的主体结构与识别点；沿母版做低模、UV和贴图，需要活动的对象再适配共享骨架/动作。由真实模型派生头像与状态，不把背景JPEG当作战斗模型。',
+ 'R':'保留本图已经成立的画法和可取局部，由项目内部沿既有身份/功能母版修订；同一对象先统一再派生，不继续向外援逐张追求完美。',
+ 'V':'采用已成立的符号、镜位或时序含义；按真实效果事件重制为矢量、材质、分层图或共享动画配置。生成伪字、固定数字与整张说明板不进入游戏。'
+}
+def esc(s): return html.escape(str(s), quote=True)
+def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
+def rel(p, base=OUT): return os.path.relpath(p, base).replace(os.sep,'/')
+def write_json(p, data): p.write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n')
+
+inventory = json.loads((OUT/'latest-card-inventory.json').read_text())
+previous = {r['id']:r for r in json.loads((OLD/'latest-review-data.json').read_text())['records']}
+patches = {r['id']:r for r in csv.DictReader((OUT/'review-r4.tsv').open(), delimiter='\t')}
+mapping_rows = list(csv.DictReader((TASK/'外援美术制作清单-20261012/接入替换映射.csv').open()))
+mapping = {r.get('\ufeff编号',r.get('编号')):r for r in mapping_rows}
+assert len(inventory)==298 and sum(x['changed'] for x in inventory)==43
+assert all(x['id'] in patches for x in inventory if x['changed'])
+
+delivered_by_id = {x['id']:dict(x) for x in inventory}
+# These are semantically swapped files. Preserve every original byte and filename.
+actual = {x['id']:dict(x) for x in inventory}
+actual['M03']['file'] = delivered_by_id['S11']['file']
+actual['S11']['file'] = delivered_by_id['M03']['file']
+records=[]
+for x in inventory:
+    id=x['id']; old=previous[id]; p=patches.get(id); group=id[0]
+    route = p['route'] if p else ('V' if group in 'XGC UIN'.replace(' ','') else 'D' if (group=='H' and old['verdict']=='A') or (group=='S' and old['verdict']=='A') else 'M' if old['verdict']=='A' else 'R')
+    src=ROOT/actual[id]['file']; assert src.is_file()
+    m=mapping.get(id,{})
+    record={
+      'id':id,'group':group,'name':x['name'],'route':route,'route_label':LABELS[route],
+      'image':actual[id]['file'],'sha256':sha(src),'size_bytes':src.stat().st_size,
+      'changed_image':bool(x['changed']),'fresh_opinion':id in patches,
+      'binding_corrected':id in ['M03','S11'],
+      'delivered_label_image':delivered_by_id[id]['file'],
+      'retained':p['use'] if p else old['use'],
+      'current_issue':p['issue'] if p else ('图像未变，本轮按原主体与用途接收；前轮详细问题保留在历史意见中。关联新稿的结论以本轮对应卡片为准。' if old['verdict']=='A' else '本图未换稿，原有设定/功能或表现问题仍由内部修订；见下方前轮具体诊断。关联新稿已改善的问题不重复作为本图退稿理由。'),
+      'internal_next':p['next'] if p else NEXT[route],
+      'prior_specific_issue':old['content'],'prior_specific_next':old['revision'],
+      'related':old.get('related',[]),'issue_tags':old.get('issue_tags',[]),
+      'current_assets':m.get('当前资源','').splitlines(),
+      'loaders':m.get('接入位置','').splitlines(),
+      'original_requirement':old.get('required_files',[]),
+      'runtime_replaced':False,'user_accepted':False
+    }
+    records.append(record)
+by_id={r['id']:r for r in records}
+counts=Counter(r['route'] for r in records)
+manifest={'revision':'r4-internal-adoption-20261016','scope':'43 changed images visually re-reviewed; 255 same hashes retain prior source review; 298 adoption routes','review_kind':'source and sample review; not runtime verification or user acceptance','parent_source_page_sha256':sha(OUT/'before-review-r4.html') if (OUT/'before-review-r4.html').is_file() else sha(PAGE),'binding_corrections':{'M03':'Content formerly filed under S11 is Guardian; filename retained','S11':'Content formerly filed under M03 is Nanami; filename retained'},'route_counts':dict(counts),'runtime_assets_replaced':False,'canon_changed':False,'records':records}
+write_json(OUT/'adoption-manifest.json',manifest)
+with (OUT/'adoption-manifest.csv').open('w',newline='',encoding='utf-8-sig') as f:
+    columns=['id','name','route_label','retained','current_issue','internal_next','image','sha256','current_assets','loaders']
+    w=csv.DictWriter(f,fieldnames=columns);w.writeheader()
+    for r in records:w.writerow({k:'\n'.join(r[k]) if isinstance(r[k],list) else r[k] for k in columns})
+
+plan = '''# 外援新版接收与内部美术升级 · 2026-10-16
+
+这批来稿足够作为项目内部升级的风格与造型来源。下一步以同一对象的稳定身份为中心，修订源图、模型、贴图和派生图。配色逐对象决定；KINETIC_CEL统一绘制水平，Memphis用于标题及关键事件的海报层。
+
+## 最新用户修订：无牌独立造型
+
+用户指出旧无牌太像高达，旧头胸/肩腰不再作为升级母版。保留改装竞技与体术身份，v3候选改为运动型头盔、连续护目窗、闭合护面、整体胸壳和开放转腰结构；没有据此宣称法律审查或用户美术认可。旧海报、构图与动作页的主体来源被暂停，确认新候选后再派生。
+
+## 已完成的本轮工作
+
+- 对43项换图重新看图，另外更新无牌、旧拳王、七海三项关联意见；255项同哈希稿沿用前次图面审查，重新给出用途去向。
+- M03/S11文件内容挂反，阅读页和采用清单按图义校正。原来稿字节和文件名保留。
+- 制作七海、无牌、啮线体、六层避难楼四张内部源图样例，另做天冲拳事件图和正常镜头构图目标稿。
+- 四张源图做浅底透明合成检查。画面里的光晕RGB位于透明区；正常合成无光圈。没有据此宣称运行材质/边缘已验收。
+- 正常镜头样例发现我方过小，已再作比例修正。该图仍是生图目标稿，不能证明模型、占格、深度遮挡或玩法结果。
+
+## 怎样采用298项来稿
+
+每张的采用部分、内部下一步、原接入映射与目标位置，见同目录adoption-manifest.csv/json及原阅读页。四种去向是加工方式，不是完成度或用户认可。
+
+1. 二维原画可加工采用：主要是已有形象成立的人物和少量背景。清除版头、伪字、背景并导出，不无故换脸或重做服装。
+2. 结构与造型母版可采用：主体成立的机甲、敌体、建筑、部件、地形，作为低模/贴图制作来源；不能将JPEG贴到站立平面冒充3D模型。
+3. 内部修订后派生：保留来稿的设计收益，回到项目身份和用途修正。如王者补回武器冗余、合体使用唯一完整核心、车辆/飞机维持同一套零件。
+4. 图形、版式与演出参考：UI、图标、轨迹、状态、动作示意。采用语义与构图，在现有事件和界面系统里重建，不整张照搬说明板。
+
+## 同一风格，保留不同对象
+
+- 人物：各自脸、发型、年龄、服装大分区不变；对话画同一头身规范，头像同一眼线/头顶留白。不能用全身缩图做头像。
+- 我方机甲：保留各自IP家族、能力与涂装；同一对象锁头胸、拳/武器接口、膝足与轮廓。两级硬阴影、压力墨线和大色块统一，不能把所有机器涂成青白金。
+- 敌体：单格标准敌人以相当的视觉分量对抗机甲。按功能区分咬切、射击、架设、重楔、飞行等剪影，不靠统一红色描边才认得敌人。
+- 建筑：生活楼必须像多层现代住宅；供电、泵站、吊装、车站各有功能轮廓。先图再低模、UV与贴图；封闭屋顶、窗洞和楼板厚度必须合理。
+- 尺寸：视觉档位与逻辑占格分离。小型/标准单格、重型2×2、特定超大型3×3；人物/机器犬约四分之一格视觉量。不得再以原作米数机械缩成大小悬殊的一堆物件。
+- 地形：体块、凹槽、断面、渠岸深度用必要几何表达；表面材质用贴图补充，不把完整凹坑或半毁屋顶烘焙在平面上。
+- 色彩：机体保留身份色。A供能区、B渠岸、C装卸区依据材质与环境分别定主色，不能复制同一套青白红。战术色只表示当前规则，光墙/轨迹按需显示。
+- Memphis：仅标题/切入/关键事件局部使用错位色块、圆点、斜带及真实排版；不铺到正常棋盘、人物面部或机械结构上。动效短、有终点、可减弱，不常驻高频闪烁。
+
+## 样例的判断与仍须验证之处
+
+H03：保持原脸、短发与白/藏蓝/酒红外套，已去掉说明板，适合继续派生对话与头像。表情族和对话中的眼线比例还需实际接入。
+
+M01：用户已否定旧稿的高达式外形，前轮保持旧头胸的建议撤回。新的v3候选保留改装体术机定位与白青绿/金色，但重做头盔、护面、胸壳、肩腰轮廓。旧拳击事件和构图中的身体只作为历史，等待新方向确认后重派生。
+
+E01：保留机械甲虫与咬切器构造，试用靛紫壳/珊瑚切刃，作为与地面分离的颜色候选。不是把全体敌人染紫；小尺寸下的眼部、口器和腿间空隙仍须在3D镜头检验。
+
+B01：六层住宅的封闭屋顶、厚楼板、转角玻璃和入口明确，科幻程度采用克制的近未来住宅方式。当前线条比机体细，制作低模时需收敛窗栏/设备密度；不能直接贴一张正面图代替全楼。
+
+TACTICS：同一现有B场地构图里检查主角、敌体、楼房与地面分色，修过机体偏小的问题。仍是目标插画，地格密度、可走边界、遮挡与相机需要实机量测。
+
+IMPACT：天冲拳海报背景图形可用CSS/游戏节点平移、裁切、淡入实现；这不是已经完成的战斗动画。
+
+## 升级顺序与每段交付
+
+### 0. 先确认本轮样例
+
+用户判断四类主体的绘制方向、机体/建筑的体量和事件海报是否合适。需要调整时只修被指出的维度，保留已稳定身份。确认不是对298张单独设计或所有配色的自动认可。
+
+### 1. 统一母版和派生规则
+
+覆盖M01—M15、H01—H12、E01—E11。先确认无牌独立造型候选，不沿用被否定的高达式头胸；再完成无牌/旧拳王/王者、七海、啮线体、避难楼这条制作链，扩到其余对象。所有对象记录来源哈希、身份锚、配色与派生文件。王者合并早期武器冗余和本轮正确挂点；馆守按当前身份母版与自身右臂毁损事实制作；合体核心不能换脸。人物不重新发明服装。
+
+交付是可追溯的生产母版、结构视图和头像/立绘候选；通过正常距离检查后进入下一段。源图数量不能代替质量。
+
+### 2. 模型、材质与部件
+
+覆盖F01—F18、B01—B34、T01—T16以及所有活动单位。沿已有game-godot主工程资源映射制作低模、UV、贴图和少量必要体积；地图地面保留深度与结构。部件按所属机体共用节点，飞机/车辆/合体用相同零件变换，不独立生成每个状态后拼接。
+
+首个实机体验为B面桥座的观察→推开威胁/托桥→列车通过。先以正确机甲、标准敌体、避难楼/供电设施/列车和渠岸做同位正常镜头，再推广A/C。此顺序不缩减52包和331条原要求。
+
+交付是实际加载的模型/材质/状态，加正常镜头、旋转视角、遮挡和尺寸证据。建筑损坏需有真实断面，不准半毁屋顶贴面。
+
+### 3. 共享动作与事件演出
+
+N01—N14作为动作来源；常规待机、走跑、飞行、射击、持物、操作、受击/击破使用动作族和机体参数适配。仅天冲拳及确有身份价值的体术招式定制发力。攻击/操作事件→各对象处理自身状态；不做每对机体/建筑的接触坐标表。机柜只需合理手部动作加状态反馈，不制作开门接线细节。
+
+X01—X30、C01—C16由真实结果事件驱动爆炸、贯穿、位移、碰撞、失锁和环境响应；同一次结果供预演、执行、回放和HUD使用。连续动作、命中可读性与声音实听都要检查。
+
+### 4. 图形、UI和剧情事件
+
+覆盖G01—G25、U01—U20、I01—I65、S01—S21。保留来稿已成立的语义，沿现有输入/HUD改成按需信息：光标探索看对象，选中看范围，指向目标看弹道/位移/预计耐久，离开收起细节。头像来自母版头肩。标准高度世界空间威胁光墙由规则占格生成，深度遮挡正确，不将线框贴过楼顶。
+
+纪存调度、白鸢预演、七海核验撤令各自保留职责；界面文字和数字来自真实状态。海报层只用于名场面、标题或明确事件切入。救援、工房、清障、变形/合体事件沿唯一对象母版分层，不能又换人换机。
+
+### 5. 扩展与验收
+
+在第二种机体、第二类设施和第二战场验证复用，再推广全量。回到原52包/331条台账逐项绑定实现位置和实际体验；不另建一套“美术已完成”进度覆盖原状态。
+
+源稿确认、正常镜头目标、主工程加载、连续演出/声音、原生输入、用户最终接受分别记录。当前只完成第一批源稿样例和接收分析；没有替换游戏资源、没有完成全量美术、没有替用户签署认可。
+
+## 原接入映射与目标位置
+
+全部298项沿用20261012派单中的接入映射，见adoption-manifest.csv/json；它不是逐个加载点都在本轮运行验证。四张样例的资源和脚本路径已核对存在，七海、避难楼的引用也已对照代码。四张样例对应：
+
+- H03：chapter_c02_v1/qihai.png；dialogue_presenter、campaign_stage、people_rules与chapter_c02/ui。
+- M01：stage_battle_v11/hero.glb及linked_campaign_v6/portraits/hero.png；catalog、round_armaments、campaign_world与rescue_data。
+- E01：linked_campaign_v4/models/claw.glb；campaign_data、rescue_data、rescue_cases与full_data。
+- B01：linked_campaign_v6/environment/refuge-habitat-{0,1,2}.glb；full_art、fixture_art、environment_art与presentation_layout。
+
+这些是接入目标，不是本轮已经覆盖的文件。完整绝对/工程相对路径保存在采用清单。
+
+## 来源、制作与检查
+
+来源：本轮43项更新来稿、原298项派单/接入映射、前轮逐图诊断、项目最新视觉总参考、CML128风格与各对象身份来源。M03/S11对应按实际内容校正，原图未改。
+
+样例通过内置Imagegen生成，提示词、输入图、原输出位置见prompts*.json与generation*.json；选中输出已复制samples目录。alpha-check.jpg是透明素材合成检查；small-scale-check.jpg检查80/100/140px量级的轮廓。两者都不是游戏运行证据。
+
+HTML检查采用本地结构/链接/脚本语法检查。先前浏览工具对该file页面有明确安全拒绝，本轮没有绕过，也不宣称浏览器交互或原生游戏已验证。
+'''
+(OUT/'美术接收与升级计划.md').write_text(plan)
+
+sample_defs=[
+ ('H03','七海 · 对话立绘','H03-qihai-dialogue-v1.png','保留成年脸、短发与白/藏蓝/酒红。将说明稿清成独立人物；头像与表情由这张脸继续派生。','立绘候选 · 尚未替换对话资源'),
+ ('M01','无牌一号 · 独立造型v3','M01-independent-master-v3.png','旧稿因整体近似高达已被用户否定。新版保留体术与改装定位，重做头盔护面、整体胸壳、肩甲和转腰结构。','新方向候选 · 未经用户确认；旧头胸停作升级母版'),
+ ('E01','啮线体 · 敌体颜色试样','E01-cable-biter-master-v1.png','保留咬切器和机械甲虫；试用靛紫壳与珊瑚刃，靠轮廓和材质分区形成威胁。','配色候选 · 不代表全体敌人改紫色'),
+ ('B01','避难楼 · 六层近未来住宅','B01-refuge-habitat-master-v1.png','封闭屋顶、厚楼板、转角窗与公共入口。用近未来住宅结构取代小屋比例，减少发光管装饰。','建筑源稿 · 下一步是低模与UV贴图')
+]
+sample_html=''
+for id,title,file,why,scope in sample_defs:
+    r=by_id[id]
+    sample_html+=f'''<article class="sample" id="sample-{id}"><div class="sample-head"><span>{id}</span><h3>{title}</h3></div><p>{why}</p><div class="pair"><figure><a href="{esc(rel(ROOT/r['image']))}"><img src="{esc(rel(ROOT/r['image']))}" alt="{title}外援来源图" loading="lazy"></a><figcaption>{"旧造型来源 · 用户已否定作为升级母版" if id=="M01" else "外援来源 · 保留已成立设计"}</figcaption></figure><figure class="cutout"><a href="samples/{file}"><img src="samples/{file}" alt="{title}内部样例" loading="lazy"></a><figcaption>内部样例 · {scope}</figcaption></figure></div><p class="note">{scope}。<a href="../../review-v2.html#{id}">查看该项具体采用与修订意见</a></p></article>'''
+
+gallery=[]
+for r in records:
+    route=r['route'];issues=' '.join(r['issue_tags']);targets=''.join(f'<li><code>{esc(x)}</code></li>' for x in r['current_assets']) or '<li>按原派单的图形/场景/动作位置接入</li>'
+    loaders=''.join(f'<li><code>{esc(x)}</code></li>' for x in r['loaders'])
+    history = f'<p><b>前轮具体诊断（同图时仍可作为修订依据，关联新稿以r4为准）：</b>{esc(r["prior_specific_issue"])}</p><p>{esc(r["prior_specific_next"])}</p>' if not r['fresh_opinion'] and previous[r['id']]['verdict']!='A' else ''
+    gallery.append(f'''<details class="asset" id="asset-{r['id']}" data-route="{route}" data-group="{r['group']}" data-changed="{str(r['changed_image']).lower()}" data-search="{esc(' '.join([r['id'],r['name'],r['retained'],r['internal_next'],issues]))}"><summary><span class="asset-id">{r['id']}</span><b>{esc(r['name'])}</b><span class="pill route-{route}">{LABELS[route]}</span>{'<small>换图复核</small>' if r['changed_image'] else ''}</summary><div class="asset-body"><a href="{esc(rel(ROOT/r['image']))}"><img src="{esc(rel(ROOT/r['image']))}" loading="lazy" alt="{r['id']} 当前图"></a><div><h4>采用什么</h4><p>{esc(r['retained'])}</p><h4>内部怎样做</h4><p>{esc(r['internal_next'])}</p><p class="note">{esc(r['current_issue'])}</p>{history}<details><summary>原接入映射与目标位置</summary><ul class="paths">{targets}{loaders}</ul><p class="hash">源图 SHA-256 {r['sha256']}</p></details><p><a href="../../review-v2.html#{r['id']}">原页意见及历史</a></p></div></div></details>''')
+
+styles='''
+:root{--bg:#f1eee4;--paper:#fbf8ef;--ink:#172f3e;--muted:#516775;--line:#d1d7d2;--teal:#187a82;--coral:#d85f4c;--gold:#b68b2d;--blue:#4b5d8e}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}a{color:#176c7c;text-underline-offset:3px}img{display:block;max-width:100%}button,input,select{font:inherit}button{cursor:pointer}header.hero{max-width:1320px;margin:auto;padding:52px 32px 30px}.kicker{text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--teal);font-weight:750}h1{font-size:clamp(32px,4.8vw,62px);line-height:1.18;letter-spacing:-.04em;max-width:970px;margin:18px 0 24px}h2{font-size:clamp(25px,3vw,36px);line-height:1.35;margin:0 0 16px}h3{font-size:22px;line-height:1.4}h4{font-size:14px;margin:12px 0 2px;color:var(--teal)}p{margin:10px 0}.lead{font-size:20px;line-height:1.8;max-width:1000px}.note{font-size:13px;line-height:1.8;color:var(--muted)}.hero-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.hero-links a,.action{padding:9px 16px;border:1px solid #9db6b7;border-radius:4px;background:var(--paper);text-decoration:none;font-weight:650}.hero-links a:first-child{background:var(--teal);color:#fff;border-color:var(--teal)}nav.toc{position:sticky;top:0;z-index:10;background:rgba(241,238,228,.97);border-block:1px solid var(--line);display:flex;gap:20px;flex-wrap:wrap;padding:12px max(24px,calc((100vw - 1256px)/2));font-size:14px}nav a{text-decoration:none}main{max-width:1320px;margin:auto;padding:0 32px 64px}section{padding:40px 0;border-bottom:1px solid var(--line)}.steps,.decision-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.decision{border-left:4px solid var(--teal);padding:12px 20px;background:var(--paper)}.decision h3{margin:0 0 6px;font-size:19px}.decision small{font-weight:700;color:var(--teal)}.sample{margin:28px 0 38px;padding:24px;background:var(--paper);border-radius:8px}.sample-head{display:flex;gap:14px;align-items:center}.sample-head span{font:700 15px/1 ui-monospace,monospace;color:var(--teal)}.sample-head h3{margin:0}.pair{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}.pair figure{margin:0;background:#e6e4db;border-radius:5px;overflow:hidden}.pair figure>a{height:430px;display:flex;align-items:center;justify-content:center}.pair img{width:100%;height:100%;object-fit:contain}.pair .cutout{background:#dfe3dd}.pair figcaption{padding:10px 14px;background:#eef0e8;font-size:13px}.scene img{width:100%;border-radius:5px}.scene figcaption{font-size:13px;color:var(--muted);padding:12px 0}.scene{margin:20px 0}.scene-toggle{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.scene-toggle button{padding:8px 15px;border:1px solid #a3b8b7;background:var(--paper);color:var(--ink);border-radius:4px}.scene-toggle button[aria-pressed=true]{background:var(--teal);color:white}.scene-view[hidden]{display:none}.scope{padding:14px 18px;background:#e4ebe7;border-left:4px solid var(--teal);font-size:14px}.caution{background:#f4e7cc;border-left-color:#b68b2d}.bullets{padding-left:22px}.poster{position:relative;isolation:isolate;aspect-ratio:16/9;overflow:hidden;background:#132f41;border-radius:7px;color:#f8edd4}.poster .stripe{position:absolute;left:-10%;top:20%;width:120%;height:25%;background:#f0b545;transform:rotate(-21deg);z-index:-1}.poster .coral{position:absolute;right:-8%;bottom:-30%;width:56%;height:80%;background:#da654f;transform:rotate(-16deg);z-index:-1}.poster .dots{position:absolute;left:4%;bottom:7%;width:27%;height:25%;background-image:radial-gradient(#ebdabc 2px,transparent 2px);background-size:16px 16px;opacity:.6;z-index:-1}.poster .ring{position:absolute;width:32%;aspect-ratio:1;border:18px solid #208a93;left:38%;top:12%;border-radius:50%;z-index:-1}.poster img{position:absolute;right:1%;bottom:-6%;height:108%;width:60%;object-fit:contain;filter:drop-shadow(8px 9px 0 #142b3f)}.poster-copy{position:absolute;left:6%;top:13%;width:45%;z-index:2}.poster-copy small{display:block;letter-spacing:.2em;font-size:clamp(9px,1.3vw,15px);color:#172f3e;font-weight:800}.poster h3{font-size:clamp(32px,6.5vw,90px);font-weight:900;margin:70px 0 2px;line-height:1;letter-spacing:-.08em;transform:skew(-6deg);text-shadow:4px 4px 0 #163644}.poster p{font-size:clamp(11px,1.5vw,20px);margin:16px 0}.poster .tag{display:inline-block;background:#f0e4c8;color:#173341;padding:3px 12px;font-size:12px;font-weight:700;letter-spacing:.1em}.poster.play img{animation:poster-unit 1.2s both}.poster.play .stripe{animation:poster-band .8s both}.poster.play .ring{animation:poster-ring 1.2s both}.poster.play h3{animation:poster-title .8s both}@keyframes poster-unit{from{transform:translate(35px,30px) scale(.94);opacity:0}40%{opacity:1}to{transform:translate(0,0) scale(1);opacity:1}}@keyframes poster-band{from{transform:translateX(-140px) rotate(-21deg)}to{transform:translateX(0) rotate(-21deg)}}@keyframes poster-ring{from{transform:scale(.65);opacity:0}to{transform:scale(1);opacity:1}}@keyframes poster-title{from{transform:translateX(-40px) skew(-6deg);opacity:0}to{transform:translateX(0) skew(-6deg);opacity:1}}.pipeline{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:24px 0}.pipeline div{padding:17px 15px;border-top:4px solid var(--teal);background:var(--paper)}.pipeline b{display:block;font-size:17px}.pipeline small{font-size:12px;line-height:1.6;display:block;color:var(--muted)}.phase{background:var(--paper);padding:20px 24px;margin:15px 0;border-radius:6px}.phase h3{margin:0 0 8px;font-size:20px}.phase .deliver{padding-top:10px;margin-top:10px;border-top:1px solid var(--line);font-size:14px}.sample-checks{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}.sample-checks td,.sample-checks th{text-align:left;vertical-align:top;padding:13px;border-bottom:1px solid var(--line)}.sample-checks th{background:#e5ebe5}.controls{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.controls input{flex:1;min-width:180px}.controls input,.controls select{padding:9px 11px;background:var(--paper);border:1px solid #a2b5b5;border-radius:4px;color:var(--ink)}.asset{border-bottom:1px solid #cbd5d0;padding:3px 0}.asset>summary{display:flex;gap:12px;align-items:center;padding:14px 4px;cursor:pointer;list-style:none;flex-wrap:wrap}.asset>summary::before{content:'+';font-weight:800;color:var(--teal);width:14px}.asset[open]>summary::before{content:'−'}.asset-id{font:700 14px ui-monospace,monospace;width:40px}.asset>summary>b{min-width:190px;flex:1}.asset>summary>small{font-size:11px;color:var(--coral)}.pill{font-size:12px;border-radius:3px;padding:3px 8px;background:#e5e8df}.route-D{background:#dceadd;color:#285c41}.route-M{background:#dce8eb;color:#235569}.route-R{background:#f1e5cc;color:#77531e}.route-V{background:#e3e1f0;color:#594a7b}.asset-body{display:grid;grid-template-columns:minmax(180px,.75fr) 1.25fr;gap:24px;padding:8px 16px 25px}.asset-body>a>img{width:100%;height:auto}.asset-body p{font-size:14px}.asset-body details{font-size:12px;color:var(--muted)}.paths{padding-left:18px;overflow-wrap:anywhere}.paths code{font-size:11px}.hash{font-size:10px;overflow-wrap:anywhere}.asset[hidden]{display:none}footer{font-size:12px;color:var(--muted);max-width:1260px;margin:auto;padding:24px 0 50px}.swatches{display:flex;gap:6px;margin:12px 0}.swatches i{width:40px;height:16px;border-radius:2px;display:block}.table-wrap{overflow:auto}
+@media(max-width:760px){header.hero{padding:32px 20px 24px}main{padding:0 20px 40px}.lead{font-size:17px}nav.toc{gap:12px;padding:10px 20px}.decision-grid,.steps,.pair,.asset-body{grid-template-columns:1fr}.sample{padding:16px}.pair figure>a{height:350px}.pipeline{grid-template-columns:1fr 1fr}.poster h3{margin-top:30px}.poster .ring{border-width:8px}.poster .tag{font-size:9px}.asset>summary>b{min-width:120px}.asset>summary .pill{font-size:11px}.sample-checks{font-size:12px}.sample-checks td,.sample-checks th{padding:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.poster.play *{animation:none!important}}
+@media print{nav.toc,.controls,.scene-toggle,.action{display:none}body{background:white}.asset:not([open]){display:none}.pair figure>a{height:350px}section{break-inside:auto}.sample,.phase{break-inside:avoid}.poster *{animation:none!important}}
+'''
+route_cards=''.join(f'<div class="decision"><small>{counts[k]}项 · 加工去向</small><h3>{v}</h3><p>{NEXT[k]}</p></div>' for k,v in LABELS.items())
+current_capture = PROJECT/'artifacts/formulas/production-lab-v1/qa/B16-20261012/continuation-r2/water-terrain-04/00-normal-B.png'
+plan_link='美术接收与升级计划.md'
+doc=f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>外援新版接收与内部美术样例 · 2026.10.16</title><style>{styles}</style></head><body>
+<header class="hero"><p class="kicker">超GAG / art direction / 2026.10.16 / r4</p><h1>把这套画风变成<br>我们自己的资产</h1><p class="lead">新版来稿已经足够确定 <b>KINETIC_CEL</b> 的主体画法。接下来保留它画得好的部分，由项目内部统一人物身份、机甲组件与设施功能；配色逐对象决定，关键事件另用少量 Memphis 海报语言。</p><p>本页有四类主体的实际新样例、正常战棋镜头目标稿、可播放的事件版式，以及全部298项的采用去向。<b>这轮先确认样例方向，再推广制作。</b></p><div class="hero-links"><a href="#samples">看四张新样例</a><a href="../../review-v2.html#latest-review-r4">看原页最新评审</a><a href="{plan_link}">完整升级计划</a><a href="adoption-manifest.csv">下载298项接收清单</a></div><p class="note">复核43项换图；255项与上一轮逐字节相同。原工程及既有工作保留；本轮没有替换运行资产、改写Canon或签署用户认可。</p></header>
+<nav class="toc" aria-label="页内目录"><a href="#adopt">怎样采用</a><a href="#samples">四类样例</a><a href="#tactics">正常镜头</a><a href="#impact">事件海报</a><a href="#plan">升级顺序</a><a href="#inventory">298项去向</a></nav><main>
+<section id="adopt"><h2>按用途接收，具体设计由内部收敛</h2><p>最新改稿已经解决了一批实质问题：合体里保留完整核心、王者右钻左盾和肩炮方向、贯穿/失锁图形等。需要继续处理的是跨图换头换甲、武器缺少冗余、颜色混成一组，以及建筑/界面画法跳档。</p><div class="decision-grid">{route_cards}</div><p class="scope"><b>先校正两个挂反的文件：</b>M03文件实际画七海，S11文件实际画馆守。原页预览与本清单已按图义换回，原来稿不改名、不覆盖。各图文字自称“锁定/通过”均不作为项目事实。</p><p class="note">“可采用”指设计或原画的用途成立。外援交付为方向图，二维导出、三维生产、界面实现和实机检查分别完成，不能把298张方向图算成298件运行资产。</p></section>
+<section id="samples"><p class="scope caution"><b>用户最新修订：</b>旧无牌太像高达，旧头胸母版停用。下方已换成独立造型v3候选；旧拳击事件图、场景稿及旧缩小检查中的无牌均仅留历史，尚未按新造型更新。</p><h2>先看四个对象，确认同一绘制水平</h2><p>保留不同机体与人物自己的识别点。统一墨线、色块和阴影的控制；环境依据自己的材质配色。</p>{sample_html}<p class="scope">前轮四张源图做过浅底透明合成检查（其中旧无牌已停作母版；新稿检查另见下方）：<a href="alpha-check.jpg">查看透明检查</a> · <a href="small-scale-check.jpg">查看80/100/140px缩小辨识</a> · <a href="M01-independent-check-v3.jpg">新无牌透明与缩小检查</a>。原输出和全部提示词已保存。它们是本轮内部候选，不会自动覆盖已有正式资源。</p></section>
+<section id="tactics"><p class="scope caution"><b>主体造型待更新：</b>这里两张构图包含已被否定的旧无牌，仅保留环境分色与体量诊断。不得继续用其中的机体作为制作母版。</p><h2>正常镜头里，机甲、敌体与楼房要站得住</h2><p>沿现有B面渠岸与桥座构图试画同一套画法。第一稿的无牌太小，第二稿将其放大，敌体保留有威胁的体量；楼房保持六层现代住宅，地面、渠岸、轨槽和楼体有可读的结构层次。</p><div class="scene-toggle" role="group" aria-label="构图对照"><button type="button" data-scene="target" aria-pressed="true">内部构图目标稿</button><button type="button" data-scene="current" aria-pressed="false">现有工程留存截图</button><button type="button" data-scene="first" aria-pressed="false">第一稿：机体偏小</button></div>
+<figure class="scene scene-view" data-view="target"><a href="samples/tactics-lookdev-v2.png"><img src="samples/tactics-lookdev-v2.png" alt="比例修订后的正常镜头美术目标稿"></a><figcaption>生图目标稿：暖灰地坪、蓝绿水体、靛紫敌体、白青金主角、砂灰住宅。尺寸按战棋视觉档位组织。</figcaption></figure><figure class="scene scene-view" data-view="current" hidden><img src="{esc(rel(current_capture))}" alt="20261016 B16-R2现有工程留存截图"><figcaption>当日B16-R2留存截图，未因本轮样例而改变。用于比较现有材质、颜色与单位分量。</figcaption></figure><figure class="scene scene-view" data-view="first" hidden><img src="samples/tactics-lookdev-v1.png" alt="第一稿机体比例偏小"><figcaption>第一稿：主角相对六层楼偏小，已在上面的目标稿修正；保留作判断依据。</figcaption></figure>
+<p class="scope caution"><b>这张是美术目标插画，尚未进入Godot。</b>它不能证明格子占用、可走路径、深度遮挡或机体动作已经正确。实际制作仍采用低模、UV贴图和共享动作，不能退回二维站牌。</p><ul class="bullets"><li>人物、机体、敌体、建筑各保留自己的色系；四类对象的制作精度与线条控制要协调。</li><li>建筑窗栏仍偏细，转低模时需要收敛；不能将细节密度当科幻感。</li><li>普通敌体不再按“宠物体积”缩放；放大后必须同时检查实际占格、地图密度和可选中区域。</li></ul></section>
+<section id="impact"><p class="scope caution"><b>历史版式：</b>下方身体仍是被否定的旧无牌。图形/排版节奏可参考，主体须在独立造型确认后重做。</p><h2>Memphis放在事件峰值里</h2><p>用同一套无牌身体做上冲拳事件图，背景斜带、圆环、点阵和真实中文排版单独制作。主体保持自己的装甲与颜色；图形短暂进入、停住、退出，不把正常棋盘变成海报。</p><div class="poster" id="event-poster"><div class="stripe"></div><div class="coral"></div><div class="dots"></div><div class="ring"></div><img src="samples/M01-rising-punch-event-v1.png" alt="无牌一号同源天冲拳事件插画"><div class="poster-copy"><small>UNLICENSED ONE / SIGNATURE MOVE</small><h3>天冲拳</h3><p>把力量，送到上面。</p><span class="tag">事件海报 · 动效样例</span></div></div><p><button class="action" id="play-poster" type="button">播放1.2秒版式动效</button></p><p class="note">这是插画+图形层的平移、缩放与淡入演示；支持减少动态效果偏好，没有声轨。它没有替代骨架动作、命中、目标受击和声音制作。文案仅为版式样例，不写入剧情。</p></section>
+<section id="plan"><h2>从样例确认，接到真实模型和体验</h2><div class="pipeline" role="img" aria-label="母版，结构，低模贴图，共享动作事件，正常镜头验收五步"><div><b>01 母版</b><small>身份、色块、形态与来源</small></div><div><b>02 结构</b><small>正侧背、组件、状态</small></div><div><b>03 低模与贴图</b><small>必要体积、UV、材质</small></div><div><b>04 动作与事件</b><small>共用动作族、特技、响应</small></div><div><b>05 实际体验</b><small>正常镜头、输入、连续演出、声音</small></div></div>
+<div class="phase"><h3>先确认这一组样例</h3><p>重点判断人物与机体画法、敌体气势、现代楼房与机甲的关系、以及事件海报的用量。颜色与具体设计可以单独修，不自动扩成对全包素材的认可。</p><p class="deliver">当前交付：四张主体源图、天冲拳事件图、正常镜头目标稿、298项采用清单和逐项修订意见。正式资源尚未覆盖。</p></div>
+<div class="phase"><h3>一、人物与机体母版先锁定</h3><p>M01—M15、H01—H12、E01—E11。无牌已重做独立造型候选，旧头胸不再沿用；旧拳王保留厚拳架；王者把早期武器冗余补回新版正确挂点。馆守按已有身份母版和右臂毁损事实制作，合体固定完整核心。头像从母版头肩派生，人物统一眼线与对话比例。</p><p class="deliver">交付：可追溯母版、身份锚、结构视图、头像/立绘与状态候选。用户确认与制作检查分别记录。</p></div>
+<div class="phase"><h3>二、部件、建筑与地面按图做低模</h3><p>F01—F18、B01—B34、T01—T16。车辆/飞机/合体用同一套组件；住宅、供电柜、桥座、列车、泵站保留功能轮廓。地面的沟槽、渠岸、断面与屋顶有合理几何，材质贴图负责补足表面表现。</p><p class="deliver">先接入B面“看见桥座威胁→推开/托桥→列车通过”的完整体验，再推广A/C与全量对象。必须用实际正常镜头、转动视角与加载位置证明变化。</p></div>
+<div class="phase"><h3>三、动作复用，状态与后果由事件驱动</h3><p>N01—N14提供动作思路，X01—X30/C01—C16提供反馈语言。走跑、飞行、射击、操作、受击使用动作族适配，天冲拳等有身份价值的体术再定制。攻击事件让每个目标处理自己的受击，不做逐对接触参数；机柜只需合理手部动作与状态响应。</p><p class="deliver">连续动画、弹道/爆炸/位移、环境与目标响应、声音一起检查。预演、执行、回放与HUD读同一结果。</p></div>
+<div class="phase"><h3>四、把图形与剧情图接回操作语言</h3><p>G01—G25、U01—U20、I01—I65、S01—S21。光标探索、选中范围、目标轨迹、预计耐久、位移落点与碰撞按需显示；标准高度光墙使用世界空间深度遮挡。纪存/白鸢/七海职能分别表达，真实文字和数字单独排版，名场面少量使用海报层。</p><p class="deliver">在第二种机体、第二类设施和第二战场验证复用后推广；回到原52包/331条台账逐项绑定实现和证据，不另造一份美术完成度。</p></div>
+<div class="table-wrap"><table class="sample-checks"><thead><tr><th>检查层</th><th>怎样判断</th><th>当前状态</th></tr></thead><tbody><tr><td>风格与主体</td><td>同一脸、头胸、组件和建筑功能；四类制作水平协调</td><td>本轮源图样例已做，等待用户判断方向</td></tr><tr><td>战棋画面</td><td>正常距离的分色、分量、可选中与遮挡</td><td>目标插画已做；运行验收尚未进行</td></tr><tr><td>模型/动作/声音</td><td>真实加载、连续演出、事件后果与实听</td><td>保留原工程；本轮没有冒记为完成</td></tr><tr><td>全量范围</td><td>全部已采纳要求与原台账匹配</td><td>仍沿用52包/331条，未缩减、未关单</td></tr></tbody></table></div><p><a href="{plan_link}">完整制作约定、范围和接入说明</a> · <a href="prompts.json">首批提示词</a> · <a href="prompts-second-pass.json">派生/修订提示词</a> · <a href="prompt-scene-scale.json">比例修订提示词</a> · <a href="M01-independent-prompt-v3.json">无牌独立造型提示词</a></p></section>
+<section id="inventory"><h2>298项的具体采用去向</h2><p>搜索编号、对象或用途，展开即可看到可取部分、内部下一步和原工程资源位置。前轮诊断折叠保留；本轮换图项以新意见为准。</p><div class="controls"><input id="asset-search" type="search" placeholder="搜索：M05、七海、桥座、贯穿…" aria-label="搜索素材"><select id="route-filter" aria-label="按采用方式筛选"><option value="ALL">所有采用方式</option>{''.join(f'<option value="{k}">{v}（{counts[k]}）</option>' for k,v in LABELS.items())}</select><select id="changed-filter" aria-label="按是否更新筛选"><option value="ALL">所有版本</option><option value="true">43项换图复核</option></select><span id="asset-count" class="note" aria-live="polite">298 / 298项</span></div>{''.join(gallery)}</section>
+<section><h2>本轮边界与来源</h2><p>采用的是外援风格与设计收益，内部样例由内置Imagegen制作。原图、提示词、输出、采用清单和对应代码位置都留在此目录。原资源没有覆盖，Canon没有改写。</p><p class="note">本地文件已做结构、资源存在性和脚本语法检查。先前浏览器工具对该file页面有明确安全拒绝，因此本轮没有绕过；页面实际浏览器布局/交互与游戏原生体验均不冒记为通过。</p></section>
+</main><footer>2026.10.16 · 超GAG内部美术候选 / r4 · 原页的r2/r3意见保留历史 · 用户认可单独记录</footer>
+<script>
+const assets=[...document.querySelectorAll('.asset')],search=document.getElementById('asset-search'),route=document.getElementById('route-filter'),changed=document.getElementById('changed-filter');
+function applyAssets(){{const q=search.value.trim().toLowerCase();let n=0;for(const a of assets){{const show=(!q||a.dataset.search.toLowerCase().includes(q))&&(route.value==='ALL'||a.dataset.route===route.value)&&(changed.value==='ALL'||a.dataset.changed===changed.value);a.hidden=!show;if(show)n++;}}document.getElementById('asset-count').textContent=n+' / 298项';}}
+[search,route,changed].forEach(e=>e.addEventListener(e===search?'input':'change',applyAssets));
+document.querySelectorAll('[data-scene]').forEach(b=>b.addEventListener('click',()=>{{document.querySelectorAll('[data-scene]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));document.querySelectorAll('[data-view]').forEach(x=>x.hidden=x.dataset.view!==b.dataset.scene);}}));
+let posterTimer;document.getElementById('play-poster').addEventListener('click',()=>{{const p=document.getElementById('event-poster');clearTimeout(posterTimer);p.classList.remove('play');requestAnimationFrame(()=>requestAnimationFrame(()=>{{p.classList.add('play');posterTimer=setTimeout(()=>p.classList.remove('play'),1350);}}));}});
+if(location.hash.startsWith('#asset-')){{const el=document.getElementById(location.hash.slice(1));if(el)el.open=true;}}
+</script></body></html>'''
+(OUT/'index.html').write_text(doc)
+
+# Amend the existing reader without discarding artist updates or prior reviews.
+source=PAGE.read_text()
+backup=OUT/'before-review-r4.html'
+state=OUT/'published-state.json'
+if 'id="latest-review-r4"' in source:
+    if not state.is_file() or sha(PAGE)!=json.loads(state.read_text())['page_sha256']:
+        raise SystemExit('Page changed after our publication; inspect current external updates before editing.')
+    source=backup.read_text()
+else:
+    if backup.exists() and source!=backup.read_text():raise SystemExit('Initial backup exists but current page changed; inspect rather than overwrite.')
+    if not backup.exists():backup.write_text(source)
+source_hash=hashlib.sha256(source.encode()).hexdigest()
+assert source_hash=='5b90a84e45109b2fc8fcb6686845ccfe2e33c56b92cd3f805e4f4a2c0d1eccbb', 'New source version detected; re-review before publishing'
+cards=re.findall(r'<article\b[^>]*class="card".*?</article>',source,re.S)
+assert len(cards)==298
+new_cards={}
+for c in cards:
+    id=re.search(r'data-id="([A-Z]\d+)"',c).group(1);r=by_id[id]
+    meta=c.split('<div class="meta">',1)[1].rsplit('</div></article>',1)[0]
+    purpose=re.search(r'<p class="purpose">.*?</p>',c,re.S)
+    purpose=purpose.group(0) if purpose else ''
+    pimg=r['image']; search_text=' '.join([id,r['name'],r['route_label'],r['retained'],r['current_issue'],r['internal_next']])
+    prior_issue=f'<p class="r4-note">前轮详细诊断仍收在下方历史记录；关联43项新图的判断以本轮对应项为准。</p>' if not r['fresh_opinion'] else ''
+    routeclass={'D':'A','M':'A','R':'B','V':'B'}[r['route']]
+    new_cards[id]=f'''<article class="card" data-group="{r['group']}" data-id="{id}" data-status="r4-source-review" data-verdict="{r['route']}" data-user-pref="false" data-changed="{str(r['changed_image']).lower()}" data-issues="{','.join(r['issue_tags'])}" data-current-search="{esc(search_text)}" id="{id}"><a class="thumb" href="{esc(pimg)}" target="_blank" rel="noopener"><img src="{esc(pimg)}" alt="{id} {esc(r['name'])} r4实际对应图" loading="lazy" width="1280" height="720"></a><div class="meta"><div class="row1"><span class="id">{id}</span><span class="source-status">r4 · {'换图复核' if r['changed_image'] else '未换图，沿用来源审查'}</span></div><h3 class="name">{esc(r['name'])}</h3>{purpose}<div class="review-verdict rv-{routeclass}">{r['route_label']}</div><dl class="r3-assessment"><dt>本轮保留什么</dt><dd>{esc(r['retained'])}</dd><dt>当前判断</dt><dd>{esc(r['current_issue'])}</dd><dt>由项目内部怎样完成</dt><dd>{esc(r['internal_next'])}</dd></dl>{prior_issue}<p class="review-links"><a href="review/20261016-internal-upgrade/index.html#asset-{id}">采用清单与加载位置</a> · <a href="../../docs/superpowers/specs/work-packages/2026-10-02-chao-gag-linked-operation-candidate/外援美术制作清单-20261012/index.html#{id}">原派单要求</a></p><details class="r3-production"><summary>r4实际文件绑定</summary><p>当前对应：<a href="{esc(pimg)}">同一张固定图</a></p><p class="r4-note">{'已按图义校正M03/S11挂反关系。原文件名和内容保留。' if r['binding_corrected'] else '原图字节未改；采用意见不是运行接入或用户认可。'}</p><p class="required-files">SHA-256：{r['sha256']}</p></details><details class="r4-history"><summary>前轮r3/r2图面意见与原规格（历史）</summary><p class="r4-note">历史记录不替代r4当前图义、采用路线和文件绑定。已经被新版解决的问题，不再照旧要求重做。</p>{meta}</details></div></article>'''
+
+def replace_card(m):
+    id=re.search(r'data-id="([A-Z]\d+)"',m.group()).group(1)
+    return new_cards[id]
+source=re.sub(r'<article\b[^>]*class="card".*?</article>',replace_card,source,flags=re.S)
+start=source.index('<section class="review-intro r3-intro"')
+end=source.index('<main>',start)
+history_intro=source[start:end]
+fresh_intro=f'''<section class="review-intro r3-intro" id="latest-review-r4"><p class="r3-kicker">2026.10.16 · 新版接收r4 · 43项换图复核 / 298项用途清单</p><h2>这批已足够确定方向。接下来由项目内部统一母版，制作升级资产。</h2><p class="r3-lead">保留你接受的KINETIC_CEL绘制水平与机甲、敌体、人物、建筑风格，具体配色和设定逐对象修正。标题与关键事件适量使用Memphis海报层。本轮已经实际制作四张主体样例、正常战棋构图目标和天冲拳事件海报。</p><p class="r3-alert"><b>最新用户决定：</b>旧无牌太像高达，撤回“保留旧头胸”建议，M01改为内部重设；已新增独立造型v3候选。旧天冲拳/场景稿中的无牌只保留历史，待新方向确认后更新。</p><div class="review-jump"><a href="review/20261016-internal-upgrade/index.html#samples">看四类新样例</a><a href="review/20261016-internal-upgrade/index.html#tactics">正常镜头目标</a><a href="review/20261016-internal-upgrade/index.html#impact">事件海报动效</a><a href="review/20261016-internal-upgrade/index.html#plan">升级顺序</a><a href="review/20261016-internal-upgrade/index.html#inventory">298项采用去向</a></div><p><b>新版已改善：</b>完整核心持续保留、王者右钻左盾与肩炮方向、部分航空结构、贯穿/失锁图标、现代城市事件构图。<b>内部继续处理：</b>同一机体跨图换头换甲、王者武器冗余减少、部件颜色不一致、建筑/人物/UI画法跳档。</p><p class="r3-alert"><b>M03/S11内容挂反已校正：</b>原M03文件是七海，原S11文件才是馆守；本页预览和采用清单按实际图义对应，原文件保留。不能根据错误文件名继续审错对象。</p><div class="r3-counts">{''.join(f'<a href="review/20261016-internal-upgrade/index.html#inventory"><b>{counts[k]}</b> {v}</a>' for k,v in LABELS.items())}</div><div class="r4-sample-strip">{''.join(f'<a href="review/20261016-internal-upgrade/index.html#sample-{id}"><img src="review/20261016-internal-upgrade/samples/{file}" alt="{title}内部样例"><span>{title}</span></a>' for id,title,file,why,scope in sample_defs)}</div><p class="readiness-note">这是源图接收与内部升级样例，<b>没有覆盖游戏资产，没有替用户认可以及没有完成52包整改</b>。下一步先确认本页样例的绘制与体量，再按原台账推进低模/贴图/共享动作/界面和实际体验。</p></section><details class="r4-old-overview"><summary>前轮r3总评与历史对照（已折叠，最新判断看上方）</summary>{history_intro}</details>'''
+source=source[:start]+fresh_intro+source[end:]
+source=source.replace('超GAG 外援最新交付复核 r3 · 298项逐图意见','超GAG 外援新版接收 r4 · 采用清单与内部升级样例').replace('超GAG 外援美术 · 最新交付复核 r3','超GAG 外援美术 · 新版接收与内部升级 r4')
+source=source.replace('原来稿页生成于 2026-10-14 · 最新复核：2026-10-16 · r3：当前文件 / 同源 / 功能 / 配色 / 画法（Asia/Shanghai）','原来稿页生成于 2026-10-14 · 最新接收：2026-10-16 · r4：按用途接收 / 内部统一母版 / 样例确认后推广（Asia/Shanghai）')
+source=re.sub(r'<div class="summary">.*?</div>',f'<div class="summary">298项采用路线 · 本轮43项换图复核<br>风格保留，具体对象由内部统一；下方为r4当前意见。</div>',source,count=1,flags=re.S)
+source=re.sub(r'<select[^>]*id="review-verdict-filter".*?</select>','<select id="review-verdict-filter"><option value="ALL">所有采用方式</option>'+''.join(f'<option value="{k}">{v}（{counts[k]}）</option>' for k,v in LABELS.items())+'<option value="CHANGED">43项换图复核</option></select>',source,count=1,flags=re.S)
+source=re.sub(r'<span class="gcount">本组(\d+)项 · A \d+ / B \d+ / C \d+</span>',r'<span class="gcount">本组\1项 · r4按采用方式标记</span>',source)
+css='''\n/* r4 source adoption; previous opinions remain explicitly historical. */\n.r4-sample-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:24px 0}.r4-sample-strip a{display:block;background:#e2e5dd;border-radius:5px;text-align:center;text-decoration:none;white-space:normal;overflow:hidden}.r4-sample-strip img{width:100%;height:230px;object-fit:contain}.r4-sample-strip span{display:block;padding:8px;font-size:12px}.r4-note{font-size:12px;color:#5a6e76;overflow-wrap:anywhere}.r4-history{border-top:1px solid #d1d9d2;margin-top:10px;padding-top:10px}.r4-history>summary,.r4-old-overview>summary{font-size:13px;color:#58716d;cursor:pointer}.r4-old-overview{max-width:1368px;margin:14px auto;padding:12px 24px;background:#e9ede5;border-radius:6px}.r4-history .r3-card-current{padding:10px;background:#f2f3ed}@media(max-width:700px){.r4-sample-strip{grid-template-columns:1fr 1fr}.r4-sample-strip img{height:190px}}\n'''
+source=source.replace('</style>',css+'</style>',1)
+source=re.sub(r'<p class="foot">.*?</p>', '<p class="foot">2026-10-16 r4：43项换图复核，298项加工去向。M03/S11按实际内容校正，原图保留。源图与内部样例不等于运行替换或新增认可。</p>', source, flags=re.S)
+# Keep the existing small UI script; update any embedded review payload to current facts.
+source=re.sub(r'(<script[^>]*type="application/json"[^>]*>).*?(</script>)',lambda m:m[1]+json.dumps(manifest,ensure_ascii=False).replace('</','<\\/')+m[2],source,flags=re.S)
+PAGE.write_text(source)
+write_json(OUT/'published-state.json',{'original_page_sha256':source_hash,'page_sha256':sha(PAGE),'reader_sha256':sha(OUT/'index.html'),'counts':dict(counts),'runtime_replaced':False,'browser_verified':False})
+print(json.dumps({'cards':len(records),'changed':43,'routes':dict(counts),'reader':str(OUT/'index.html'),'page_sha256':sha(PAGE)},ensure_ascii=False))

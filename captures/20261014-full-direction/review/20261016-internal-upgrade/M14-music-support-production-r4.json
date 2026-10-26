@@ -1,0 +1,105 @@
+{
+  "revision": "M14-music-support-r4",
+  "date": "2026-10-22",
+  "existing_batch": "design-followthrough-r1.json",
+  "status": "R4_source_user_accepted_turnaround_authorized",
+  "reader": "M14-music-support-r4.html",
+  "user_feedback": "这一版好了很多；歌翼是否应有歌唱功能、驾驶员是否宇宙歌姬，以及是否融合林明美/拉克丝，需不需要扩音器或乐器特征。",
+  "generation_mode": "built-in image_gen; identity-preserving equipment edit",
+  "item": {
+    "id": "M14",
+    "name": "歌翼音乐传播模块",
+    "file": "samples/M14-music-support-r4.png",
+    "sha256": "928a96c6ba11c3235a4674fa76c0c95da5e3bdc3b65e93262c891c5b920a1e14",
+    "pixel_size": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-d6d57289-f1a7-4974-a912-1bf7faacc750.png",
+    "base_source": "samples/M14-synthesis-r3.png",
+    "base_sha256": "b116553b1e278c95ef1c2a28505e8873a39aef6d2cf3575e9bd83c7b2567fd87",
+    "prompt": "M14-music-support-prompt-r4.txt",
+    "user_accepted": true,
+    "runtime_integrated": false
+  },
+  "role_check": {
+    "source": "docs/superpowers/specs/data/character_layer/pilot_cast.tsv",
+    "source_sha256": "479f00bf72968d57c042a73321c5ba3d09a11bff7763c03a2a9c3efbe8fbbdb0",
+    "pilot": {
+      "id": "CH022",
+      "name": "隼真",
+      "role": "歌翼可变机飞行员；从抢镜到保护别人的声音"
+    },
+    "singer": {
+      "id": "CH021",
+      "name": "莉歌",
+      "role": "星间歌姬；以舞台战舰、歌声支援为主要关联"
+    },
+    "scope": "现有角色表分工；不因本轮硬件外观提案更改人物身份、驾驶关系或登场阶段。"
+  },
+  "design": {
+    "purpose": "让歌翼能接收、转播和投射歌声，音乐功能可辨；歌姬和飞行员仍分工配合。",
+    "equipment": [
+      "双肩后翼状声传播板：外壳合拢为整流罩，翻开展露深色扬声器面。",
+      "每侧可见一大一小两个圆形单元，分别承担低/高频扩声的视觉表达；不声明实际声学工程参数。",
+      "翼根短定向中继表面和闭合舱：用于宇宙环境的歌声/通讯信号转播。"
+    ],
+    "atmosphere": "大气或有声学介质的空间可通过扩声单元发声。",
+    "space": "真空环境以电磁信号传输，在接收设备/舰舱播放；不表现真空中普通喇叭直接把声波传遍战场。",
+    "instrument_choice": "本案先以扬声器、格栅分区和展开动作表达音乐；不加巨型吉他、钢琴、音符贴纸或乐器型武器。",
+    "ip_interpretation": "Macross为明确主投射。林明美的歌声介入战争很贴合；拉克丝的公众发声/和平立场可以作为创作参考，当前档案未锁定二人融合。",
+    "mechanical_boundary": "新增可折叠模块外观，不新增声波杀伤、洗脑、真空声传播或已完成的游戏技能。"
+  },
+  "external_references": [
+    {
+      "url": "https://macross.jp/pages/series?title=macross",
+      "used": "林明美与歌声/战争关系"
+    },
+    {
+      "url": "https://gundam-official.com/seed/seed/character/detail.php?id=26",
+      "used": "拉克丝是歌姬；不据此推定为本项目已锁融合角色"
+    },
+    {
+      "url": "https://www.bandaispirits.co.jp/products/search/detail.php?grp_id=5325&prd_id=4573102663153000",
+      "used": "Macross7 Sound Booster肩部可展开扬声器的官方设计参照；不复制其机型"
+    }
+  ],
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "samples/M14-music-support-r4.png"
+    ],
+    "observations": [
+      "头盔/双红天线、琥珀光学面与座舱胸沿用R3，长腿与主体翼展可追认。",
+      "整机展开态及右上背部局部均可见每侧一大一小两个扬声器单元，铰链/支架可读。",
+      "闭合背部局部有完整红白外壳，航空态两片新整流罩贴近上机身，未让裸露扬声器迎风。",
+      "航空态仍保留R3多挂舱/发动机构型，本轮没有证明已经精简到两台发动机；具体翼根与附加模块净空需背视/同件模型继续核对。"
+    ],
+    "judgement": "音乐功能已有可辨硬件和收纳表达，主形维持R3；具体模块尚未获得用户采用。"
+  },
+  "runtime_assets_modified": false,
+  "canon_changed": false,
+  "character_roles_changed": false,
+  "main_thread_messaged": false,
+  "limits": [
+    "当前仅二维源设计，闭合/展开/航空形态不等于同件模型或碰撞验证。",
+    "本轮未生成或实听歌曲/音效，未制作广播技能和战斗规则。",
+    "R3得到继续完善的正面反馈，不扩大为全源稿、人物身份或运行的定稿回执。"
+  ],
+  "verification": {
+    "native_output_byte_identical": true,
+    "R3_both_base_images_unchanged": true,
+    "prior_accepted_sources_unchanged": 39,
+    "M11_confirmed_master_unchanged": true,
+    "original_runtime_models_unchanged": 4,
+    "character_role_table_unchanged": true,
+    "page_static_checks_passed": true,
+    "normal_tactical_scene_verified": false,
+    "sound_generated_or_listened": false,
+    "browser_render_verified": false
+  },
+  "prior_status_before_user_acceptance": "candidate_optional_music_support_module_on_R3",
+  "later_user_acceptance": "M14-design-fixed-20261022.json"
+}

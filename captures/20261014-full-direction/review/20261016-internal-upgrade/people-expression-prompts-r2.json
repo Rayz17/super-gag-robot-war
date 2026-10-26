@@ -1,0 +1,103 @@
+{
+  "mode": "built_in_image_gen",
+  "revision": "expression-r2-anatomy-repaired",
+  "scope": "single-character facial variants; H02 repaired mother replaces invalid three-hand derivative; pending user review and grouped handoff",
+  "items": [
+    {
+      "id": "H01",
+      "name": "纪存",
+      "key": "jicun-focused-speaking",
+      "file": "samples/H01-jicun-dialogue-r1.png",
+      "state": "focused_speaking",
+      "label": "专注调度",
+      "change": "Focused, decisive but calm speaking: eyebrows slightly draw together, eyes attentive in the same gaze direction, mouth modestly open mid-sentence with natural jaw control. He is giving a clear immediate instruction to a teammate, not shouting or performing a heroic speech. Keep his blue eyes, young adult Chinese face, hair, outfit, ID and wrist equipment exactly unchanged.",
+      "arguments": {
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/H01-jicun-dialogue-r1.png"
+        ],
+        "prompt": "Use case: precise-object-edit, FACE EXPRESSION ONLY. Edit the attached accepted character source into ONE alternate dialogue expression. Preserve the exact same person's identity, age, face proportions, nose/jaw/chin shape, head position, head angle, hairstyle, hair volume, body pose, clothing, equipment, all hands, all objects, line/paint style, palette, crop and composition. DO NOT redraw or re-costume the character. The head and eye/chin alignment must not move within the 1024x1536 frame. Change only eyebrows, eyelid expression, gaze as specified and mouth acting. Existing costume, accessories and props stay pixel-layout compatible. Genuine transparent alpha background, no aura, no text, no icons, no additional people or facial-expression sheet. Output a complete single character cutout in the SAME frame. Keep clean adult mecha-animation draftsmanship, not chibi or emoji acting.\nFocused, decisive but calm speaking: eyebrows slightly draw together, eyes attentive in the same gaze direction, mouth modestly open mid-sentence with natural jaw control. He is giving a clear immediate instruction to a teammate, not shouting or performing a heroic speech. Keep his blue eyes, young adult Chinese face, hair, outfit, ID and wrist equipment exactly unchanged."
+      }
+    },
+    {
+      "id": "H02",
+      "name": "白鸢",
+      "key": "baiyuan-concentrating",
+      "file": "samples/H02-baiyuan-dialogue-r1.png",
+      "state": "concentrating",
+      "label": "认真推演",
+      "change": "Thoughtful concentration, replacing the default easy smile: slightly lowered attentive brows, eyes subtly more focused toward the existing sketchbook without rotating her head, mouth gently closed and serious. Not furious, frightened, trance-like or crying. Keep her same mature European face, lips, silver wavy hair, earrings, white coat/dress, black gloves, book and pen exactly in place. No blushing or magic effects.",
+      "arguments": {
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/H02-baiyuan-dialogue-r2-anatomy.png"
+        ],
+        "prompt": "Use case: precise-object-edit, FACE EXPRESSION ONLY. Edit the attached anatomically corrected character source into ONE alternate dialogue expression. Preserve the exact same person's identity, age, face proportions, nose/jaw/chin shape, head position, head angle, hairstyle, hair volume, body pose, clothing, equipment, all hands, all objects, line/paint style, palette, crop and composition. DO NOT redraw or re-costume the character. The head and eye/chin alignment must not move within the 1024x1536 frame. Change only eyebrows, eyelid expression, gaze as specified and mouth acting. Existing costume, accessories and props stay pixel-layout compatible. Genuine transparent alpha background, no aura, no text, no icons, no additional people or facial-expression sheet. Output a complete single character cutout in the SAME frame. Keep clean adult mecha-animation draftsmanship, not chibi or emoji acting.\nThoughtful concentration, replacing the default easy smile: slightly lowered attentive brows, eyes subtly more focused toward the existing sketchbook without rotating her head, mouth gently closed and serious. Not furious, frightened, trance-like or crying. Keep her same mature European face, lips, silver wavy hair, earrings, white coat/dress, black gloves, book and pen exactly in place. No blushing or magic effects. CRITICAL: the supplied corrected source has exactly TWO hands. Preserve that repaired pose without ANY change: RIGHT hand holding pen at image left; LEFT hand emerging from image-right sleeve to support the book at its lower-right edge. No pocket hand, no hand gripping the far-left book edge, no third hand. Do not move the head or change any sleeve, arm, book or glove."
+      }
+    },
+    {
+      "id": "H03",
+      "name": "七海",
+      "key": "qihai-firm-speaking",
+      "file": "samples/H03-qihai-dialogue-v1.png",
+      "state": "firm_speaking",
+      "label": "坚定交涉",
+      "change": "Controlled firm speaking: composed brows slightly lowered, eyes steady, small naturally open mouth as she clearly states a boundary. A mature woman in a serious discussion, neither angry shouting nor smiling. Keep her Japanese facial identity, dark blue bob hair, white/navy/wine coat, black gloves and translucent tablet exactly unchanged. Do not add authority badges, a military uniform or any new prop.",
+      "arguments": {
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/H03-qihai-dialogue-v1.png"
+        ],
+        "prompt": "Use case: precise-object-edit, FACE EXPRESSION ONLY. Edit the attached accepted character source into ONE alternate dialogue expression. Preserve the exact same person's identity, age, face proportions, nose/jaw/chin shape, head position, head angle, hairstyle, hair volume, body pose, clothing, equipment, all hands, all objects, line/paint style, palette, crop and composition. DO NOT redraw or re-costume the character. The head and eye/chin alignment must not move within the 1024x1536 frame. Change only eyebrows, eyelid expression, gaze as specified and mouth acting. Existing costume, accessories and props stay pixel-layout compatible. Genuine transparent alpha background, no aura, no text, no icons, no additional people or facial-expression sheet. Output a complete single character cutout in the SAME frame. Keep clean adult mecha-animation draftsmanship, not chibi or emoji acting.\nControlled firm speaking: composed brows slightly lowered, eyes steady, small naturally open mouth as she clearly states a boundary. A mature woman in a serious discussion, neither angry shouting nor smiling. Keep her Japanese facial identity, dark blue bob hair, white/navy/wine coat, black gloves and translucent tablet exactly unchanged. Do not add authority badges, a military uniform or any new prop."
+      }
+    },
+    {
+      "id": "H04",
+      "name": "兜灯",
+      "key": "doudeng-explaining",
+      "file": "samples/H04-doudeng-palette-r3.png",
+      "state": "explaining",
+      "label": "说明维修",
+      "change": "Matter-of-fact friendly explanation: soften the default challenging frown slightly, one eyebrow gently lifted, attentive eyes and small open speaking mouth, competent and practical rather than cute. Keep the same amber eyes, nose/jaw, bun/goggles, teal workwear, belt, gloves and wrench, every pose/crop unchanged. Do not tilt her head or move the tool.",
+      "arguments": {
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/H04-doudeng-palette-r3.png"
+        ],
+        "prompt": "Use case: precise-object-edit, FACE EXPRESSION ONLY. Edit the attached accepted character source into ONE alternate dialogue expression. Preserve the exact same person's identity, age, face proportions, nose/jaw/chin shape, head position, head angle, hairstyle, hair volume, body pose, clothing, equipment, all hands, all objects, line/paint style, palette, crop and composition. DO NOT redraw or re-costume the character. The head and eye/chin alignment must not move within the 1024x1536 frame. Change only eyebrows, eyelid expression, gaze as specified and mouth acting. Existing costume, accessories and props stay pixel-layout compatible. Genuine transparent alpha background, no aura, no text, no icons, no additional people or facial-expression sheet. Output a complete single character cutout in the SAME frame. Keep clean adult mecha-animation draftsmanship, not chibi or emoji acting.\nMatter-of-fact friendly explanation: soften the default challenging frown slightly, one eyebrow gently lifted, attentive eyes and small open speaking mouth, competent and practical rather than cute. Keep the same amber eyes, nose/jaw, bun/goggles, teal workwear, belt, gloves and wrench, every pose/crop unchanged. Do not tilt her head or move the tool."
+      }
+    },
+    {
+      "id": "H07",
+      "name": "唐胶",
+      "key": "tangjiao-serious",
+      "file": "samples/H07-tangjiao-palette-r3.png",
+      "state": "serious",
+      "label": "认真检查",
+      "change": "Serious craft-focused expression in place of the broad toothy grin: lips fully closed, jaw relaxed but firm, brows drawn a little in focused assessment, amber eyes attentive. Still the same angular-faced cocky craftsman, not an older man or a different stern officer. Keep his red/black punk hair, shaved temple, tattoos, all jewelry, apron and raised pliers completely unchanged.",
+      "arguments": {
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/H07-tangjiao-palette-r3.png"
+        ],
+        "prompt": "Use case: precise-object-edit, FACE EXPRESSION ONLY. Edit the attached accepted character source into ONE alternate dialogue expression. Preserve the exact same person's identity, age, face proportions, nose/jaw/chin shape, head position, head angle, hairstyle, hair volume, body pose, clothing, equipment, all hands, all objects, line/paint style, palette, crop and composition. DO NOT redraw or re-costume the character. The head and eye/chin alignment must not move within the 1024x1536 frame. Change only eyebrows, eyelid expression, gaze as specified and mouth acting. Existing costume, accessories and props stay pixel-layout compatible. Genuine transparent alpha background, no aura, no text, no icons, no additional people or facial-expression sheet. Output a complete single character cutout in the SAME frame. Keep clean adult mecha-animation draftsmanship, not chibi or emoji acting.\nSerious craft-focused expression in place of the broad toothy grin: lips fully closed, jaw relaxed but firm, brows drawn a little in focused assessment, amber eyes attentive. Still the same angular-faced cocky craftsman, not an older man or a different stern officer. Keep his red/black punk hair, shaved temple, tattoos, all jewelry, apron and raised pliers completely unchanged."
+      }
+    },
+    {
+      "id": "H09",
+      "name": "胶价王",
+      "key": "jiaojia-surprised",
+      "file": "samples/H09-jiaojia-palette-r3.png",
+      "state": "surprised",
+      "label": "措手不及",
+      "change": "A moment of genuine caught-off-guard surprise instead of the huge confident laugh: eyebrows visibly raised, eyes wider behind the SAME purple glasses, mouth much smaller and slightly open as speech catches. Preserve his goatee, head angle, nose/jaw shape, purple pompadour, gold earrings, fur collar, suit, all chains/tags and gavel gesture. No giant sweat drops, distortion or emoji symbols; recognizable adult acting.",
+      "arguments": {
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/H09-jiaojia-palette-r3.png"
+        ],
+        "prompt": "Use case: precise-object-edit, FACE EXPRESSION ONLY. Edit the attached accepted character source into ONE alternate dialogue expression. Preserve the exact same person's identity, age, face proportions, nose/jaw/chin shape, head position, head angle, hairstyle, hair volume, body pose, clothing, equipment, all hands, all objects, line/paint style, palette, crop and composition. DO NOT redraw or re-costume the character. The head and eye/chin alignment must not move within the 1024x1536 frame. Change only eyebrows, eyelid expression, gaze as specified and mouth acting. Existing costume, accessories and props stay pixel-layout compatible. Genuine transparent alpha background, no aura, no text, no icons, no additional people or facial-expression sheet. Output a complete single character cutout in the SAME frame. Keep clean adult mecha-animation draftsmanship, not chibi or emoji acting.\nA moment of genuine caught-off-guard surprise instead of the huge confident laugh: eyebrows visibly raised, eyes wider behind the SAME purple glasses, mouth much smaller and slightly open as speech catches. Preserve his goatee, head angle, nose/jaw shape, purple pompadour, gold earrings, fur collar, suit, all chains/tags and gavel gesture. No giant sweat drops, distortion or emoji symbols; recognizable adult acting."
+      }
+    }
+  ]
+}

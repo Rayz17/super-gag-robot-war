@@ -1,0 +1,71 @@
+{
+  "activity_id": "A008",
+  "template_id": "T_ROUTE_PLANNING",
+  "grammar": "CONSTRAINT",
+  "host_profile": "route",
+  "title": "撤退路线规划 / 把胜利改写成离开",
+  "prompt": "把三项有限能力放进航线。草案可随时撤销，提交后由战场执行。",
+  "transaction_id": "M5:A008:ROUTE:V01",
+  "canon_refs": ["CONCEPT_HYBRID_PLAY_EXPERIENCE", "CONCEPT_MISSION_BALANCE_TARGETS"],
+  "safe_risk": 4,
+  "allow_partial_commit": true,
+  "slots": [
+    {"id": "civilian_lane", "label": "市民撤离口", "required": true, "accepts": ["route", "escort"], "incompatible_text": "这项能力不能直接维持市民通路。"},
+    {"id": "rear_guard", "label": "追击阻断线", "required": true, "accepts": ["defense", "decoy"], "incompatible_text": "这里需要能拖住追击的单位。"},
+    {"id": "supply_lane", "label": "补给与伤员线", "required": false, "accepts": ["logistics", "repair"], "incompatible_text": "补给线只能接收运输或维修能力。"}
+  ],
+  "cards": [
+    {"id": "harbor_tunnel", "label": "港区旧隧道", "detail": "路线短，但只能单向通行。", "tags": ["route"], "risk": 1},
+    {"id": "rail_bridge", "label": "高架铁路桥", "detail": "速度快，会暴露在红色机视野里。", "tags": ["route"], "risk": 3},
+    {"id": "grey_gull_line", "label": "灰鸥量产队", "detail": "不追击王牌，留下来推船。", "tags": ["defense", "escort"], "risk": 1},
+    {"id": "red_decoy", "label": "赤色诱饵航线", "detail": "能拖走王牌，也会把英雄债留给赤罡。", "tags": ["decoy"], "risk": 3},
+    {"id": "repair_convoy", "label": "预算救援车队", "detail": "降低补给效率，优先运走伤员。", "tags": ["logistics", "repair"], "risk": 1}
+  ],
+  "conflicts": [
+    {"a": "rail_bridge", "b": "red_decoy", "reason": "两条高可见路线会把追击火力同时引向市民队列。"}
+  ],
+  "outcomes": {
+    "perfect": {
+      "resolution": "success",
+      "preview": ["三条撤离线全部成立", "战场初始撤退点增加", "路线债下降"],
+      "resource_delta": {"audience_trust": 1},
+      "variable_delta": {"route_debt": -1},
+      "battle_modifiers": ["evacuation_points:+1", "supply_convoy:ready"],
+      "unlocked_flags": ["c05_three_lane_plan"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M5_ROUTE_PERFECT", "schema": "constraint_route_v1"}],
+      "facts": [{"id": "M5_A008_THREE_LANES_COMMITTED", "to": true}],
+      "reaction_requests": [{"reaction_id": "REACT_C05_GREY_GULL_ACCEPTS_REAR_GUARD", "window": "after_activity"}],
+      "ui_summary": "三条线都有人负责；战场仍要亲自把他们送出去。"
+    },
+    "good": {
+      "resolution": "success",
+      "preview": ["两项主要撤离责任成立", "补给线未被单独保护"],
+      "variable_delta": {"route_debt": 0},
+      "battle_modifiers": ["evacuation_points:+1"],
+      "unlocked_flags": ["c05_core_route_plan"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M5_ROUTE_GOOD", "schema": "constraint_route_v1"}],
+      "ui_summary": "主要撤离线成立；补给与伤员仍会在战场上争用同一条路。"
+    },
+    "clear": {
+      "resolution": "costly_success",
+      "preview": ["仅一项主要责任有人承担", "保护队列变长"],
+      "variable_delta": {"route_debt": 1},
+      "battle_modifiers": ["civilian_queue:+2"],
+      "unlocked_flags": ["c05_partial_route_plan"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M5_ROUTE_CLEAR", "schema": "constraint_route_v1"}],
+      "promises_and_debts": [{"debt_id": "M5_C05_UNCOVERED_ROUTE", "state": "open", "owner": "CH_JICUN"}],
+      "soft_fail": "一条撤离责任无人承担，战场队列增长",
+      "ui_summary": "一条路线先开了；没人负责的那一段会以更长队列进入战场。"
+    },
+    "fail": {
+      "resolution": "soft_failure",
+      "preview": ["没有形成可执行路线", "战斗使用临时撤离点"],
+      "variable_delta": {"route_debt": 2},
+      "battle_modifiers": ["civilian_queue:+3"],
+      "battle_setup_patches": [{"patch_id": "PATCH_M5_ROUTE_FAIL", "schema": "constraint_route_v1"}],
+      "promises_and_debts": [{"debt_id": "M5_C05_NO_ROUTE_PLAN", "state": "open", "owner": "CH_JICUN"}],
+      "soft_fail": "临时撤离点启用，市民队列进入危险格",
+      "ui_summary": "没有形成计划。战斗不会取消，但第一条黄线只能现场决定。"
+    }
+  }
+}

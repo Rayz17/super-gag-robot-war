@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-21",
+  "revision": "M11-transformation-direction-r3",
+  "authority": "direct_user_message",
+  "verbatim": "特斯拉的卡车现在是没有实体的后视镜的，这个细节你可能要考虑一下。第二个是我说不要水平的天线，我没说不要天线，所以你可以再研究一下天线或者是头冠的部分要怎么设计，能够符合特斯拉的这种设计语言。 现在你考虑的这个人形的形态跟车型的形态有没有考虑他们之间变形的关联。",
+  "existing_batch": "design-followthrough-r1.json",
+  "canon_entity": "V353U043",
+  "prior_record": "M11-future-production-r2.json",
+  "corrections": [
+    "车辆按无镜片的摄像头后视方案处理，不再画易读为传统后视镜的外壳",
+    "不要水平天线不等于不要天线；研究短立鳍/后掠冠脊，保留天线/头冠辨识",
+    "从部件去向表推进到有尺寸保持/关节层级的变形布局，不以两张相似外形宣称可变形"
+  ],
+  "author_admission": "R2只完成外形与零件去向对应，未解决完整变形链，不能称结构已成立。",
+  "head_proposals": {
+    "A": "中置单片短后掠鳍；作者优先研究，非用户采用",
+    "B": "双片靠内短立鳍；保留同脸，不用外侧长双耳或横杆"
+  },
+  "mechanism_study": {
+    "scope": "卸柜后的本体刚体布局草模",
+    "sequence": [
+      "货柜预先卸下并完整留在地面，装卸动作不在该本体研究内",
+      "尾部脚掌从后防钻梁展开，驾驶室沿中部导轨向髋轴后移",
+      "后段两条车架侧梁连同后双轴下折为腿，前两轴轮位通过分离轮架/翻转臂去肩后和前臂",
+      "货台三段折叠成背架，驾驶室侧顶壳分开为肩盖，侧门下壳连前臂展开",
+      "头部从驾驶室后部设备仓升起，冠鳍竖起；逆向先折冠再收头"
+    ],
+    "checks": "同一组刚体/相同8轮位/无网格缩放；几何净空、驾驶空间、动力学与整套连续变形验收另记"
+  },
+  "research": [
+    {
+      "url": "https://evwire.com/p/tesla-semi-europe-walkaround-video-camera-mirrors-new-details",
+      "date": "2026-09-14",
+      "kind": "firsthand_IAA_2026_walkaround",
+      "observation": "欧洲版摄像头后视；来源将其与北美版区分，不泛称所有Semi版本都已取消镜片",
+      "scope": "外形观察；不采技术参数或法规为机体设定"
+    }
+  ],
+  "new_images_user_accepted": false,
+  "runtime_changed": false,
+  "handoff_sent": false
+}

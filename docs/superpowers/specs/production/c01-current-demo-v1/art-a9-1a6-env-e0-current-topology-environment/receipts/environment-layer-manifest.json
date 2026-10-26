@@ -1,0 +1,90 @@
+{
+  "contract_id": "C01E02_CURRENT_TOPOLOGY_ENVIRONMENT_LAYERS_V1",
+  "status": "CANDIDATE_NOT_RUNTIME",
+  "world_canvas": {
+    "size_px": [
+      2400,
+      1350
+    ],
+    "origin_raw_px": [
+      -1760.0,
+      -340.0
+    ],
+    "shared_pivot": [
+      0,
+      0
+    ]
+  },
+  "visible_layers": [
+    {
+      "slot": "base_ground",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-e0-current-topology-environment/env-e2-layers/BASE_GROUND_OPAQUE_2400x1350.png",
+      "z": -1200,
+      "alpha": "opaque",
+      "sha256": "42b080e90a308afd0554927bb6b66dc25e45c608a218c6a9dac68fef040884ca"
+    },
+    {
+      "slot": "buildings_world_body",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-e0-current-topology-environment/env-e2-layers/BUILDINGS_WORLD_BODY_RGBA_2400x1350.png",
+      "z": -900,
+      "alpha": "local",
+      "sha256": "4c3a27b73b600ff62275eda41bfa78faae21f6d999ca7e5142f18be0316eed68"
+    },
+    {
+      "slot": "roof",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-e0-current-topology-environment/env-e2-layers/ROOF_RGBA_2400x1350.png",
+      "z": 900,
+      "alpha": "local",
+      "sha256": "aea8790da4040bc80b4b06af41bf82243e23a7bc111cd362395f429ee2b50e18"
+    },
+    {
+      "slot": "foreground",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-e0-current-topology-environment/env-e2-layers/FOREGROUND_RGBA_2400x1350.png",
+      "z": 1100,
+      "alpha": "local",
+      "sha256": "c9d4012ad39051fc702cf2dd2ea5041f49c80e6495b0c4038478ce451c2ba5dd"
+    }
+  ],
+  "control_layers": [
+    {
+      "slot": "occlusion_control",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-e0-current-topology-environment/env-e2-layers/OCCLUSION_CONTROL_RGBA_2400x1350.png",
+      "visible": false,
+      "visible_z": null,
+      "channels": "R=static_fade_coverage;G=roof_outline;B=safety_fringe;A=coverage",
+      "sha256": "dde8a09630d9063f17548a9388cd6925f44ec0dd36ceb40690eaee6a4fadebac"
+    },
+    {
+      "slot": "wetness_emissive_control",
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-1a6-env-e0-current-topology-environment/env-e2-layers/WETNESS_EMISSIVE_CONTROL_RGBA_2400x1350.png",
+      "visible": false,
+      "visible_z": null,
+      "channels": "R=wetness;G=low_physical_lifeline_response;B=specular_response;A=map_coverage",
+      "sha256": "2b39f640967af930fb3c9b3418438cd358ee335907625dfda535787104514a5f"
+    }
+  ],
+  "reserved_external_owner_groups": [
+    {
+      "group": "stateful_objects",
+      "state": "EMPTY_RESERVED_EXTERNAL_OWNER",
+      "owner": "session_resolver_object_layers"
+    },
+    {
+      "group": "weather_fx",
+      "state": "NOT_BAKED_EXTERNAL_OWNER",
+      "owner": "independent_weather_fx_layer"
+    },
+    {
+      "group": "stateful_nonphysical_overlays",
+      "state": "NOT_BAKED_EXTERNAL_OWNER",
+      "owner": "deterministic_overlay_or_UI_consumer"
+    },
+    {
+      "group": "actor_and_object_shadows",
+      "state": "NOT_BAKED_EXTERNAL_OWNER",
+      "owner": "engine_independent_ground_shadow_layer"
+    }
+  ],
+  "real_art_loaded": 0,
+  "runtime_bindable": false
+}

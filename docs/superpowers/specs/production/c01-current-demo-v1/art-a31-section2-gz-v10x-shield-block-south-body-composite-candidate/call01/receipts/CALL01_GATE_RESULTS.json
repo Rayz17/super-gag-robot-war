@@ -1,0 +1,93 @@
+{
+  "schema": "chao_gag.section2_imagegen_fail_stop.v1",
+  "asset_key": "V353U001|shield_block|south",
+  "status": "HARD_GATE_FAILED_NO_COMPOSITE",
+  "lifecycle": {
+    "candidate_output_created": false,
+    "godot_bound": false,
+    "runtime_allowed": false,
+    "default_allowed": false,
+    "canon_allowed": false,
+    "producer_visual_acceptance": false
+  },
+  "generation": {
+    "provider": "built_in_imagegen",
+    "call_count": 1,
+    "reroll_count": 0,
+    "mode": "identity-preserve",
+    "prompt_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a31-section2-gz-v10x-shield-block-south-body-composite-candidate/IMAGEGEN_BODY_ONLY_CALL01_PROMPT.md",
+    "prompt_sha256": "7120719d0c256b26028c620bc679d22f9a816b7430bf3d05175cf9f9e174ef97",
+    "raw_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a31-section2-gz-v10x-shield-block-south-body-composite-candidate/call01/generation-raw/GUARDIAN_Z_V10X_CAMERA_V2_SHIELD_BLOCK_SOUTH_BODY_ONLY_CALL01_RAW.png",
+    "raw_sha256": "77fd478233d4bdd1d0a81b807be4e5e0217d256e79097a4a4c22f8db3d272f7b"
+  },
+  "locked_positive_inputs": [
+    {
+      "role": "camera_v2_south_edit_target",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/map-candidates/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_SOUTH_CANDIDATE_256.png",
+      "sha256": "d1181e1b5d24903ed6f0e54c7e262815ddbed9e22e7a8135992dda188821b796"
+    },
+    {
+      "role": "cml130_v10x_identity",
+      "path": "docs/superpowers/specs/production/art-direction-v0.3/art-delivery/review/guardian_z_collector_e02_lockframe_candidate_v10x.png",
+      "sha256": "e1d6b00d743e925d37a8fe4c74a1ef9114e1d7b0f4826fc2285bd6dae1470ade"
+    }
+  ],
+  "raw_probe": {
+    "pixel_size": [1024, 1536],
+    "mode": "RGB",
+    "bands": ["R", "G", "B"],
+    "alpha_channel_present": false,
+    "alpha_bbox": null,
+    "corner_rgb": [
+      [253, 253, 254],
+      [254, 255, 255],
+      [244, 244, 244],
+      [242, 242, 241]
+    ],
+    "baked_light_checker": true
+  },
+  "gate_results": {
+    "cml130_v10x_identity": {
+      "result": "NOT_PROMOTABLE",
+      "reason": "Palette and major motifs remain recognizable, but the required exact Camera V2 comparison cannot be passed and proportions read as a taller front-view hero body rather than the locked compact south map body."
+    },
+    "camera_v2_south": {
+      "result": "FAIL",
+      "expected_screen_vector": [-40, 24],
+      "observed": "front_orthographic_hero_view",
+      "reason": "The head, chest, pelvis and feet do not establish a lower-left south axis; map-dimetric top and side planes are absent."
+    },
+    "two_complete_arms_and_hands": {
+      "result": "PASS",
+      "observed": "Two complete equal arms, bent elbows, inward forearms and two separated fists."
+    },
+    "body_only_no_shield": {
+      "result": "PASS"
+    },
+    "true_alpha": {
+      "result": "FAIL",
+      "reason": "PNG mode is RGB with no alpha channel; checker is baked into RGB pixels."
+    },
+    "no_baked_fx_text": {
+      "result": "PASS"
+    }
+  },
+  "fail_stop_actions": {
+    "a17_front_exterior_opened_for_composite": false,
+    "a17_pixels_transformed": false,
+    "composite_built": false,
+    "cutout_or_matting_attempted": false,
+    "front_edge_socket_metadata_emitted": false,
+    "map_candidate_path": null
+  },
+  "qa": [
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a31-section2-gz-v10x-shield-block-south-body-composite-candidate/call01/qa/CALL01_CAMERA_V2_SOUTH_FAIL_COMPARISON.png",
+      "sha256": "567310bdebe0860f1c0ab67cb464f96c8121991b89e9766083454bfc49b57f9b"
+    },
+    {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a31-section2-gz-v10x-shield-block-south-body-composite-candidate/call01/qa/CALL01_ALPHA_FAIL_DIAGNOSTIC.png",
+      "sha256": "e32b3ac2e4a6c105b1df89b0bc0528b16822c2b24c7cfa4530c2c8c1c82abe8a"
+    }
+  ]
+}

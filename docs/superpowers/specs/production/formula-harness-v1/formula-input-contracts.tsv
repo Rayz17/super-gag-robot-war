@@ -1,0 +1,253 @@
+formula_id	scope	field_path	type	required	semantics	example_value	evidence_kind	source_evidence	frozen
+FML_NARRATIVE	node	node_id	string	yes	图节点唯一键	c01e01_cold_open	runtime	EpisodeGraph.validate	no
+FML_NARRATIVE	node	mode	enum(NARRATIVE)	yes	模式枚举大写	NARRATIVE	runtime	mode_router.gd 202-212	no
+FML_NARRATIVE	node	scene_id	string	yes	必须已在mode_scene_catalog注册	SCN_C01E01_STORY_NARRATIVE	runtime	ContentRegistry.mode_scene_path	no
+FML_NARRATIVE	node	completion_contract	string	yes	完成合同ID	OUTCOME_C01E01_COLD_OPEN_V01	runtime	EpisodeGraph.validate	no
+FML_NARRATIVE	node	transaction_id	string	cond	要写RunState则必填；同ID二次提交被拒	C01E01:COLD_OPEN:V01	runtime	RunStateStore.commit already_committed	no
+FML_NARRATIVE	node	commit_policy	enum(local_transition_only)	no	设为local_transition_only则不落盘只走边	local_transition_only	runtime	episode_director.submit_outcome	no
+FML_NARRATIVE	node	outcome_facts[]	array{id,to}	no	提交后写入world_facts	[{id:C01E01_LOCAL_COLD_OPEN_SEEN,to:true}]	runtime	StateTransaction.from_outcome	no
+FML_NARRATIVE	node	player_summary	string	no	进episode_memory.player_summaries供Desk读	玩家只看见火灾后的巨大轮廓	runtime	desk_mode_scene.gd	no
+FML_NARRATIVE	node	presentation.profile	string	no	演出档	standard_adv	runtime	narrative_director.configure	no
+FML_NARRATIVE	node	presentation.background	res_path	no	缺失则退化为纯色底并保留顶带	res://assets/backgrounds/story_first/bg_*.png	runtime	narrative_director.gd 165-171	no
+FML_NARRATIVE	node	presentation.cast[].actor_id	string	no	立绘主体	CH_JICUN	runtime	presentation.cast[]	no
+FML_NARRATIVE	node	presentation.cast[].side	enum(left,right)	no	站位	left	runtime	presentation.cast[]	no
+FML_NARRATIVE	node	presentation.cast[].portrait_path	res_path	no	缺失则画圆形色块占位	res://assets/portraits/portrait_jicun.png	runtime	narrative_director.gd 281-282	no
+FML_NARRATIVE	node	presentation.portrait_visibility	enum(active_only)	no	只显示当前说话者	active_only	runtime	narrative_director	no
+FML_NARRATIVE	beat	lines[].beat_id	string	yes	拍唯一键；requires_choices按它引用	c01e01_cold_01	runtime	graph.story_first.json	no
+FML_NARRATIVE	beat	lines[].speaker	string	yes	显示名；无脸发言者用名牌	纪存	runtime	narrative_director	no
+FML_NARRATIVE	beat	lines[].text	string	yes	台词正文；空lines会被塞硬编码占位句	次日零点三十分。	runtime	narrative_mode_scene.gd 17-33	no
+FML_NARRATIVE	beat	lines[].actor_id	string	no	绑cast立绘	CH_JICUN	runtime	graph.story_first.json	no
+FML_NARRATIVE	beat	lines[].stage_action	string	no	舞台动作提示	站在雨里	runtime	graph.story_first.json	no
+FML_NARRATIVE	beat	lines[].source_kind	enum(radio,system,broadcast)	no	通讯样式；broadcast画红点	radio	runtime	narrative_director	no
+FML_NARRATIVE	beat	lines[].choices[].choice_id	string	cond	有选项则必填	care_group_first	runtime	graph.story_first.json 279	no
+FML_NARRATIVE	beat	lines[].choices[].label	string	cond	选项显示文本	先核C组照看关系	runtime	graph.story_first.json 279	no
+FML_NARRATIVE	beat	lines[].requires_choices	map{beat_id:choice_id}	no	决定本拍是否可见；只在句内分支不改图边	{count_player_order:care_group_first}	runtime	narrative_director	no
+FML_NARRATIVE	node	success_edges[]	array<node_id>	yes	非terminal必须有出边	[c01e01_before_nine]	runtime	EpisodeGraph.validate	no
+FML_NARRATIVE	node	soft_fail_edges[]	array<node_id>	no	costly_success与soft_failure走这里；空则回退success	[c01e01_before_nine]	runtime	episode_director	no
+FML_NARRATIVE	node	autosave	enum(before_enter,after_commit,before_enter_and_after_commit)	no	稳定存档边界	before_enter_and_after_commit	runtime	_save_stable_boundary	no
+FML_NARRATIVE	node	transition{}	object	no	节点间过场卡：eyebrow/title/location/cause/handoff/duration/fade_seconds/accent	见graph.story_first.json 21-67	runtime	ModeTransitionDirector	no
+FML_NARRATIVE	payload	presentation.profile	string	yes	实验室铬档	layered_adv_lab	lab/preset	artifacts/formulas/FML_NARRATIVE/presets/NARR_T2.json	no
+FML_NARRATIVE	payload	presentation.eyebrow	string	no	夹具眉题	夹具场景 · 校准棚	lab/preset	NARR_T0.json	no
+FML_NARRATIVE	payload	presentation.cast[]	array	no	立绘主体；缺图退化为色块	[{actor_id:FX_ALPHA,side:left}]	lab/preset	NARR_T0.json	no
+FML_NARRATIVE	payload	layers[].kind	enum(black_adv,map_adv,portrait_adv)	yes	分层铬；换档=换层	portrait_adv	lab/preset	NARR_T2.json	no
+FML_NARRATIVE	payload	layers[].stage	object	no	场面坐底：sit+墙/地/门/道具；有则不整张风景照	{sit:[100,16,1080,532],features:[{kind:floor}]}	lab/preset	NARR_T2.json	no
+FML_NARRATIVE	payload	layers[].stands[].portrait_uv	[u,v]	no	立绘脚点，落到同一 stage sit	[0.24,0.90]	lab/preset	NARR_T2.json	no
+FML_NARRATIVE	payload	layers[].board.origin_uv	[u,v]	no	地图态棋盘原点落到场面 sit	[0.50,0.34]	lab/preset	NARR_T2.json	no
+FML_NARRATIVE	payload	layers[].board.map_sit	bool	no	巡查道路/屋体坐进场面地面；格/origin 坐标不改	true	lab/preset	NARR_T2.json	no
+FML_NARRATIVE	payload	lines[].beat_id	string	yes	拍唯一键	fxn_t0_01	lab/preset	NARR_T0.json	no
+FML_NARRATIVE	payload	lines[].choices[]	array	cond	T2句内选项	[{choice_id:left_lane,label:先走左侧}]	lab/preset	NARR_T2.json	no
+FML_NARRATIVE	payload	lines[].requires_facts	map	no	按世界事实显隐台词	{FXN_NIGHT_SHIFT:true}	lab/preset	NARR_T2.json	no
+FML_NARRATIVE	payload	world_facts	map	no	本局事实；不写回主工程	{FXN_NIGHT_SHIFT:true}	lab/preset	NARR_T2.json	no
+FML_NARRATIVE	payload	chrome	object	no	逐字速度/AUTO/记录	{reveal_chars_per_second:46}	lab/preset	NARR_T0.json	no
+FML_NARRATIVE	payload	codex_entries[]	array	no	百科词条	[{term:巡查道}]	lab/preset	NARR_T2.json	no
+FML_TACTICAL	battle	battle_id	string	yes	战斗唯一键	C01E02-GROUND-P1	runtime	BattleSetupResolver.validate_definition	no
+FML_TACTICAL	battle	variant_id	string	yes	变体键	V359-C01E02-V01	runtime	BattleSetupResolver.validate_definition	no
+FML_TACTICAL	battle	turn_limit	int>0	yes	回合上限；超限判success或costly_success	3	runtime	DeclarativeBattleSession	no
+FML_TACTICAL	battle	grid.width	int>0	yes	棋盘宽	8	runtime	GridService.configure	no
+FML_TACTICAL	battle	grid.height	int>0	yes	棋盘高	10	runtime	GridService.configure	no
+FML_TACTICAL	battle	grid.blocked[]	array[[x,y]]	yes	不可走格；可为空数组	[]	runtime	GridService.configure	no
+FML_TACTICAL	battle	units[].id	string	yes	单位唯一键	guardian_z	runtime	BattleSetupResolver	no
+FML_TACTICAL	battle	units[].team	enum(player,enemy,object)	yes	阵营；玩家不能攻击object	player	runtime	targeting_service.gd	no
+FML_TACTICAL	battle	units[].cell	[x,y]	yes	初始格	[2,4]	runtime	BattleSetupResolver	no
+FML_TACTICAL	battle	units[].hp	int	yes	生命	40	runtime	combat_resolver.gd	no
+FML_TACTICAL	battle	units[].move	int	yes	移动力	4	runtime	GridService.reachable_cells	no
+FML_TACTICAL	battle	units[].weapons[]	array	no	空数组则菜单不出现攻击项；C01四场全为空	[{id:melee,power:8,min:1,max:1}]	runtime	c01_e01_*.json;tactical_mode_scene.gd	no
+FML_TACTICAL	battle	units[].weapons[].power	int	cond	伤害=power+attack_bonus，确定命中无反击	8	runtime	combat_resolver.gd	no
+FML_TACTICAL	battle	units[].weapons[].min/max	int	cond	射程	1/1	runtime	targeting_service.gd	no
+FML_TACTICAL	battle	units[].weapons[].post_move	bool	no	移动后可否使用	true	runtime	targeting_service.gd	no
+FML_TACTICAL	battle	units[].map_token	string	no	缺图时显示的字；配合色块token回退	Z	runtime	tactical_mode_scene.gd 1624-1685	no
+FML_TACTICAL	battle	units[].intent_target_id	string	no	敌方意图目标	rescue_lane	runtime	enemy_intent_system.gd	no
+FML_TACTICAL	battle	objectives[].id	string	yes	目标唯一键	yellow_line_a	runtime	BattleSetupResolver	no
+FML_TACTICAL	battle	objectives[].cell	[x,y]	yes	目标位置	[3,1]	runtime	BattleSetupResolver	no
+FML_TACTICAL	battle	objectives[].integrity	int	yes	完整度；归零且required则failure	3	runtime	DeclarativeBattleSession	no
+FML_TACTICAL	battle	objectives[].required	bool	no	默认true；false则为soft_object	true	runtime	BattleSetupResolver	no
+FML_TACTICAL	battle	withdraw_allowed	bool	no	默认false；C01四场均关	false	runtime	DeclarativeBattleSession.request_withdrawal	no
+FML_TACTICAL	battle	mid_events[].timing	enum(battle_start,turn_start)	cond	基类只认这两种；其他值被忽略	turn_start	runtime	DeclarativeBattleSession	no
+FML_TACTICAL	battle	mid_events[].actions[].type	enum(spawn_unit,add_blocked_cell,damage_objective)	cond	中途事件动作	spawn_unit	runtime	DeclarativeBattleSession	no
+FML_TACTICAL	battle	stable_object_bindings[]	array	no	把world_objects绑到单位/武器/目标/格	见c01_e01_*.json	runtime	BattleSetupResolver	no
+FML_TACTICAL	battle	patch_catalog{}	map	no	battle_setup_patches可引用的操作集	{}	runtime	BattleSetupResolver	no
+FML_TACTICAL	battle	scenario_driver	string	no	指定特化session；否则用DeclarativeBattleSession	c01e01_small_machine_evacuation_v1	runtime	scenario_driver_registry.gd	no
+FML_TACTICAL	battle	presentation_manifest_path	res_path	no	缺失或校验失败则关cut-in回退规则图形	res://assets/battle_presentation/.../manifest.json	runtime	tactical_mode_scene.gd 708-720	no
+FML_TACTICAL	node	battle_definition_path	res_path	yes	战术节点指向battle JSON	res://content/episodes/c01/e02/battle/*.json	runtime	graph.story_first.json	no
+FML_TACTICAL	node	result_transaction_id	string	yes	战斗结果事务	C01E02:GROUND_P1:V01	runtime	graph.story_first.json	no
+FML_TACTICAL	node	embedded_spatial_interlude	object	no	战术阶段内嵌探索；含scene_id与trigger.stage	{scene_id:SCN_C01E03_ARM_RIB_EXPLORATION,trigger:{stage:6}}	runtime	graph.story_first.json 100-121	no
+FML_TACTICAL	capability	action_id	enum(21条TACT_*)	design	合同定义21条战术动作；引擎当前只有move/attack/wait	TACT_BRACE	contract_table	tactical-action-contracts.tsv	no
+FML_TACTICAL	payload	briefing	object	yes	夹具眉题与本局标题	{eyebrow:夹具场景 · 固定擂台,title:压缩演出}	lab/preset	artifacts/formulas/FML_TACTICAL/presets/TAC_T0.json	no
+FML_TACTICAL	payload	chrome.commit_hold_seconds	float	yes	00c长按主提交时长；可改连点	0.45	lab/preset	TAC_T0.json	no
+FML_TACTICAL	payload	board	object	yes	等距盘宽高/阻挡/危险线/地形	{width:7,height:5}	lab/preset	TAC_T0.json	no
+FML_TACTICAL	payload	board.sit	array	yes	战场坐底矩形；与探索/调查同一套 UV	[0,0,1280,720]	lab/preset	TAC_T0.json	no
+FML_TACTICAL	payload	board.features[]	array	yes	地面/掩体/边界多边形；有则不整张庭院照垫底	[{kind:floor,fill:yard,polygon:[[0.14,0.34],[0.84,0.32],[0.94,0.78],[0.06,0.80]]}]	lab/preset	TAC_T0.json	no
+FML_TACTICAL	payload	board.origin_uv	[u,v]	yes	等距盘原点落到战场 sit；格/站位仍走已有格子	[0.50,0.347]	lab/preset	TAC_T0.json	no
+FML_TACTICAL	payload	execute	object	yes	交战演出坐底：sit+地面/近景/远景；有则不整张庭院照	{sit:[0,0,1280,720],features:[{kind:floor,fill:yard}]}	lab/preset	TAC_T0.json	no
+FML_TACTICAL	payload	execute.features[]	array	yes	远堤/交战地面/近景地面多边形	[{kind:floor,fill:yard,polygon:[[0.06,0.42],[0.94,0.40],[1.00,0.86],[0.00,0.88]]}]	lab/preset	TAC_T0.json	no
+FML_TACTICAL	payload	execute.left_stand_uv	[u,v]	yes	左机脚点落到演出地面	[0.24,0.82]	lab/preset	TAC_T0.json	no
+FML_TACTICAL	payload	execute.right_stand_uv	[u,v]	yes	右机脚点落到演出地面	[0.76,0.82]	lab/preset	TAC_T0.json	no
+FML_TACTICAL	payload	round_limit	int>0	yes	轮数上限	2	lab/preset	TAC_T0.json	no
+FML_TACTICAL	payload	scale_schedule[]	array	no	每轮一个操作尺	[{round:1,active_band:mecha}]	lab/preset	TAC_T1.json	no
+FML_TACTICAL	payload	victory.kind	enum(annihilate,hold_line,survive_rounds,traverse,rule_score,coached_no_score)	yes	胜负种类全部来自preset，不默认全灭	rule_score	lab/preset	TAC_T0.json	no
+FML_TACTICAL	payload	units[]	array	yes	单位；壳不硬编码任何机体	[{id:fx_ring_holder,team:player}]	lab/preset	TAC_T0.json	no
+FML_TACTICAL	payload	units[].commandable	bool	yes	false=冻结脚本；true=可进全队编辑	false	lab/preset	TAC_T0.json	no
+FML_TACTICAL	payload	units[].scale	enum(human,mecha)	yes	操作尺；与 active_band 不同则本轮不同步	mecha	lab/preset	TAC_T1.json	no
+FML_TACTICAL	payload	units[].actions[].contract_action_id	enum(TACT_*)	yes	合同动作名；未实现的记capability_gap	TACT_MELEE	lab/preset	TAC_T0.json	no
+FML_TACTICAL	payload	units[].refusals[]	array	cond	主体回应：把动作打成不可提交	[{action_id:...,text:...}]	lab/preset	TAC_T1.json	no
+FML_TACTICAL	payload	intent_script[]	array	yes	每轮冻结意图；readability=confirmed/estimated/unknown	[{round:1,readability:confirmed}]	lab/preset	TAC_T0.json	no
+FML_TACTICAL	payload	objectives[]	array	no	保护对象；完整度归零走victory	[{id:fx_training_pad,integrity:2}]	lab/preset	TAC_T1.json	no
+FML_EXPLORATION	node	mode	enum(SPATIAL)	yes	探索走SPATIAL模式	SPATIAL	runtime	mode_router.gd	no
+FML_EXPLORATION	node	location_id	string	yes	地点键；须对应GD2真实地点	LOC_WANJI_MAIN_HALL	runtime	graph.story_first.json	no
+FML_EXPLORATION	node	route_contract	object	cond	路线型探索必填；定义站点与顺序	见c01e01_closing_route	runtime	c01e01_closing_route_mode.gd	no
+FML_EXPLORATION	node	spatial_layout	object	yes	房间与portal布局	—	runtime	scripts/core/spatial	no
+FML_EXPLORATION	node	spatial_cast	array	no	场上NPC	—	runtime	scripts/core/spatial	no
+FML_EXPLORATION	node	stable_objects[].id	string	yes	可交互物件	route_rod	runtime	scripts/core/spatial	no
+FML_EXPLORATION	node	stable_objects[].interaction_offers[]	array	yes	"该物件提供的交互；这是""能下手""的最小单位"	[{offer_id:turn_rod,verb:interact}]	runtime	scripts/core/spatial	no
+FML_EXPLORATION	payload	presentation.eyebrow	string	no	地点眉题	旧装卸楼	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	presentation.title	string	yes	本局标题/问题	这一趟把人从哪条线带出去	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	room_space.start_room_id	string	yes	开局房间	R_T2_INNER	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	room_space.start_spawn_id	string	yes	开局出生点	entry	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	room_space.avatar{}	object	no	玩家色块 token/速度	{token:带,speed:200}	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	room_space.rooms[].room_id	string	yes	房间键	R_T2_INNER	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	room_space.rooms[].label	string	yes	房间显示名	内厅（烟往这边灌）	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	room_space.rooms[].sit	[x,y,w,h]	no	房间 sit；features 与 uv 落在同一 sit	[0,0,1280,720]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T0.json	no
+FML_EXPLORATION	payload	room_space.rooms[].features[]	array	no	墙/地/门/道具多边形，按配置坐房间	[{kind:floor,polygon:[[u,v]]}]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T0.json	no
+FML_EXPLORATION	payload	room_space.rooms[].play_rect	[x,y,w,h]	cond	无 features 时的房间矩形；有 features 时由 sit 算出	[0,0,1280,720]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T0.json	no
+FML_EXPLORATION	payload	room_space.rooms[].walkable	array[[x,y]]	no	可行走多边形；有 floor feature 时由 sit 算出	[[96,300],[872,300],[872,520],[96,520]]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T0.json	no
+FML_EXPLORATION	payload	room_space.rooms[].paper_log_uv	[u,v]	no	知识卡纸面落在房间 sit 上，不按底图文件名硬坐	[0.72,0.84]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	room_space.rooms[].paper_slip_uv	[u,v]	no	「此处」纸条落点；缺则跟当前走到点	[0.24,0.56]	lab/preset	game-godot/scripts/formula_lab/shells/exploration_lab_shell.gd	no
+FML_EXPLORATION	payload	room_space.rooms[].spawn_uv{}	map	no	出生点归一化；有 features 时优先	{entry:[0.16,0.82]}	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T0.json	no
+FML_EXPLORATION	payload	room_space.rooms[].spawn_points{}	map	cond	出生点像素；有 spawn_uv 时由 sit 算出	{entry:[205,590]}	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	room_space.rooms[].hotspots[].hotspot_id	string	yes	热点键	H_T2_DRAFT	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	room_space.rooms[].hotspots[].kind	enum(field,desk,report,crowd)	yes	热点种类；desk 才能整理知识卡	field	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T1.json	no
+FML_EXPLORATION	payload	room_space.rooms[].hotspots[].polygon_uv	array[[u,v]]	no	热点多边形归一化，落到同一 sit	[[0.14,0.10],[0.30,0.12],[0.30,0.32],[0.14,0.30]]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	room_space.rooms[].hotspots[].walk_to_uv	[u,v]	no	走到点归一化；必须落在地板多边形内	[0.24,0.52]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T0.json	no
+FML_EXPLORATION	payload	room_space.rooms[].hotspots[].room_uv	[u,v]	no	热点落点；无 walk_to_uv 时当走到点	[0.26,0.62]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T0.json	no
+FML_EXPLORATION	payload	room_space.rooms[].hotspots[].polygon	array[[x,y]]	cond	热点多边形像素；有 polygon_uv 时由 sit 算出	[[190,186],[330,186],[342,288],[176,288]]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T0.json	no
+FML_EXPLORATION	payload	room_space.rooms[].hotspots[].walk_to	[x,y]	cond	走到点像素；有 walk_to_uv 时由 sit 算出	[258,336]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T0.json	no
+FML_EXPLORATION	payload	room_space.rooms[].hotspots[].facts[]	array	no	现场只记事实，不在现场下结论	[{fact_id:F_T2_DRAFT,proves:...,does_not_prove:...}]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	room_space.rooms[].portals[].portal_id	string	cond	多房间才有；单房间 preset 禁止带 portal	P_T2_LADDER	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	room_space.rooms[].portals[].position_uv	[u,v]	no	出口落在门/口上，与 features 同一 sit	[0.87,0.40]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	room_space.rooms[].portals[].walk_to_uv	[u,v]	no	走到门前的点，落在地板上	[0.76,0.62]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	room_space.rooms[].portals[].requires_card	string	no	缺这张知识卡则 portal 过不去	K_T2_LADDER	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	knowledge_cards[].card_id	string	cond	T1 起；只能回 desk 整理	K_T2_LADDER	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	knowledge_cards[].requires_facts[]	array	cond	现场事实齐了才能成卡	[F_T2_DRAFT,F_T2_POWER]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	knowledge_cards[].unlocks_portal_id	string	no	这张卡解开哪扇门	P_T2_LADDER	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	knowledge_cards[].points_to{}	object	no	成卡后指向下一处，不是清单打勾	{room_id:R_T2_CORRIDOR,hotspot_id:H_T2_DESK}	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	route_contract.question	string	yes	报告页问题	这一趟把人从哪条线带出去？	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	route_contract.stations[]	array	yes	站点；少看线索也能走保守路线	[{station_id:ST_T2_DRAFT,required:true}]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T0.json	no
+FML_EXPLORATION	payload	route_contract.options[]	array	yes	路线三态；options[0] 必须无前置	[{option_id:OPT_T2_DOCK,requires_cards:[],requires_facts:[]}]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	route_contract.options[].conflicts_with_facts[]	array	no	现场事实可把一条打成不可提交	[{fact_id:F_T2_RESIDUE,cost_kind:物理}]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	evacuation.enabled	bool	cond	T2 撤离档	true	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	evacuation.round_budget	int>0	cond	公开轮数，不是实时秒	12	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	evacuation.exit_portal_id	string	cond	撤离口 portal	P_T2_EXIT	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	evacuation.crowd[]	array	cond	人群三态源（滞留/带上/已撤离）	[{group_id:G_T2_STAIR,label:楼梯口四人}]	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T2.json	no
+FML_EXPLORATION	payload	embedded.trigger_stage	string	cond	T3 内嵌档挂在战术哪一阶段	stage_2	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T3.json	no
+FML_EXPLORATION	payload	embedded.round_budget	int>0	cond	内腔窗口公开轮数	5	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T3.json	no
+FML_EXPLORATION	payload	embedded.fail_resets_interior_only	bool	cond	失败只重置内腔	true	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T3.json	no
+FML_EXPLORATION	payload	embedded.interior_reset_budget	int>0	cond	内腔重置次数上限	1	lab/preset	artifacts/formulas/FML_EXPLORATION/presets/EXPL_T3.json	no
+FML_INVESTIGATION	activity	investigation_definition_path	res_path	yes	调查定义JSON	res://content/episodes/c01/e02/explore/*.json	runtime	c01e02_fireline_investigation_mode.gd	no
+FML_INVESTIGATION	activity	required_offer_ids[]	array<string>	yes	必须收集的要点；齐了才提交	[old_layer_1,old_layer_2,old_layer_3]	runtime	c01_e02_fireline_investigation.json	no
+FML_INVESTIGATION	activity	evidence_facts[]	array{id,to}	yes	收齐后写入的facts	[{id:OLD_LAYER_EVIDENCE_READY,to:true}]	runtime	c01e02_fireline_investigation_mode.gd	no
+FML_INVESTIGATION	activity	hypotheses[]	array{id,label,supported_by[]}	design	INV_T2起需要；引擎当前无实现	—	contract_table	00c 调查/工程实证段	no
+FML_INVESTIGATION	activity	experiments[].stoppable	bool	design	可随时停止的低载试验；INV_T2必需	true	contract_table	00c;AUX_EX2 core_verbs	no
+FML_INVESTIGATION	activity	unsupported_feedback	string	design	假设错误时指出哪项观察不支持	—	contract_table	00c	no
+FML_INVESTIGATION	payload	brief.question	string	yes	本局要回答的问题	怎样让三只密封箱安全通过这台开始偏摆的装卸台？	lab/preset	artifacts/formulas/FML_INVESTIGATION/presets/INV_T0.json	no
+FML_INVESTIGATION	payload	unsupported_feedback	string	yes	证据不足时不报对错的提示	这条来源只能证明时间上有关联	lab/preset	INV_T0.json	no
+FML_INVESTIGATION	payload	site.stations[]	array	yes	现场近看点；观察后才记录事实	[{station_id:STN_BUFFER,observation_id:OBS_BUFFER}]	lab/preset	INV_T0.json	no
+FML_INVESTIGATION	payload	site.sit	array	yes	现场坐底矩形；与探索/Hub同一套 UV	[0,0,1280,720]	lab/preset	INV_T0.json	no
+FML_INVESTIGATION	payload	site.features[]	array	yes	墙/地/门/道具多边形；有则不整张风景照垫底	[{kind:wall,polygon:[[0.10,0.06],[0.86,0.08],[0.86,0.36],[0.10,0.34]]}]	lab/preset	INV_T0.json	no
+FML_INVESTIGATION	payload	site.stations[].walk_to_uv	array	yes	走到点，落在场面地面	[0.26,0.76]	lab/preset	INV_T0.json	no
+FML_INVESTIGATION	payload	site.stations[].hotspot_uv	array	yes	证据点锚在物上（尺/台/墙/道）	[0.25,0.58]	lab/preset	INV_T0.json	no
+FML_INVESTIGATION	payload	site.stations[].polygon_uv	array	no	证据热点多边形，与对应 feature 对齐	[[0.18,0.52],[0.30,0.50],[0.32,0.64],[0.17,0.66]]	lab/preset	INV_T0.json	no
+FML_INVESTIGATION	payload	site.paper_uv	array	no	手册纸面中心；盖层，现场不关	[0.50,0.46]	lab/preset	INV_T0.json	no
+FML_INVESTIGATION	payload	observations[]	array	yes	带来源+时间+已确认/估计/未知的事实卡	[{fact_id:FCT_BUFFER_ASYM,confidence:已确认}]	lab/preset	INV_T0.json	no
+FML_INVESTIGATION	payload	claims[]	array	yes	能证明/不能证明的分列	[{claim_id:CLM_ASYM}]	lab/preset	INV_T0.json	no
+FML_INVESTIGATION	payload	hypotheses[]	array	yes	带空槽的句子；空槽只接受已记录事实卡	[{id:HYP_SUPPORT_SOFT}]	lab/preset	INV_T2.json	no
+FML_INVESTIGATION	payload	experiments[0].commit_label	string	yes	主提交键别名（00c「请求开始」）	请求开始	lab/preset	INV_T0.json	no
+FML_INVESTIGATION	payload	experiments[0].config_rows[]	array	yes	试验配置行；默认必须在包络内	[{row_id:ROW_GAIN}]	lab/preset	INV_T2.json	no
+FML_INVESTIGATION	payload	experiments[0].envelope	object	yes	主体接受包络；越界拒收	{max_primary:3.6}	lab/preset	INV_T2.json	no
+FML_INVESTIGATION	payload	experiments[0].discriminates[]	array	no	这次试验能排除哪条假说（查表）	[{rules_out:[HYP_GAIN_HIGH]}]	lab/preset	INV_T2.json	no
+FML_INVESTIGATION	payload	experiments[0].outcomes[]	array	yes	配置→结果查表，不是仿真	[{outcome_id:OUT_T2_SUBJECT_STOPPED}]	lab/preset	INV_T2.json	no
+FML_INVESTIGATION	payload	experiments[0].aborted_outcome	object	cond	可停止试验必填；INV_T0/T1无中止窗口	{headline:...}	lab/preset	INV_T2.json	no
+FML_INVESTIGATION	payload	world_facts	map	no	本局事实；不写回主工程	{FXN_LOW_GAIN_PASS_VERIFIED:true}	lab/preset	INV_T2.json	no
+FML_INVESTIGATION	payload	codex_entries[]	array	no	百科词条	[{term:...}]	lab/preset	INV_T2.json	no
+FML_SETTLEMENT	outcome	transaction_id	string	yes	幂等键；重复提交被拒	C01E04:OPERATION:V01	runtime	RunStateStore.commit	no
+FML_SETTLEMENT	outcome	source_node_id	string	yes	来源节点	c01e04_carrier_escape	runtime	StateTransaction	no
+FML_SETTLEMENT	outcome	contract_id	string	yes	完成合同	OUTCOME_C01E04_V01	runtime	OutcomeValidator	no
+FML_SETTLEMENT	outcome	resolution	enum(success,costly_success,soft_failure,failure,withdrawal,cancelled)	yes	决定走哪组边	success	runtime	episode_director	no
+FML_SETTLEMENT	outcome	semantic_diff.facts	array	no	世界事实变更	—	runtime	StateTransaction	no
+FML_SETTLEMENT	outcome	semantic_diff.battle_setup_patches	array	no	写给下一场战斗的补丁	—	runtime	BattleSetupResolver	no
+FML_SETTLEMENT	outcome	semantic_diff.promises_and_debts	array	no	未决责任；Desk读它	—	runtime	desk_mode_scene.gd	no
+FML_SETTLEMENT	operation	aggregated_receipts[]	array<transaction_id>	design	Operation级聚合；引擎无场景	—	contract_table	EMT001	no
+FML_SETTLEMENT	operation	owner_atomic_commit	bool	design	多owner原子提交	true	contract_table	EMT001	no
+FML_SETTLEMENT	chapter	hard_story_outputs[]	array	design	Accepted Story硬出口；不可重投票	—	contract_table	EMT002	no
+FML_SETTLEMENT	lab	payload.aggregation_level	enum(encounter,activity,operation,chapter)	yes	T0/T1/T2 换字段与 receipts；T3 聚合已发生输入，不重播 receipts	encounter	lab	settlement_lab_shell.gd	no
+FML_SETTLEMENT	lab	payload.roster[]	array	yes	编队卡：在场/缺席/关闭动词	[{unit_id:fx_anchor,closed_verbs:[独立承力]}]	lab	artifacts/formulas/FML_SETTLEMENT/presets/SET_T0.json	no
+FML_SETTLEMENT	lab	payload.banner	object{happened,handed_to}	yes	Banner 两行后果	{happened:主桥保持通行,handed_to:身体账交给Hub}	lab	SET_T0.json	no
+FML_SETTLEMENT	lab	payload.facts[]	array	yes	上半页只读事实	[{fact_id:FX_BRIDGE_HELD,readonly:true}]	lab	SET_T0.json	no
+FML_SETTLEMENT	lab	payload.duties[]	array	cond	下半页未决责任；选项必须是已准备方案	[{duty_id:D_JOINT,options:[{option_id:keep}]}]	lab	SET_T2.json	no
+FML_SETTLEMENT	lab	payload.receipts[]	array	yes	本页要提交的夹具收据	[{transaction_id:FX_SET_T0:ENC:V01}]	lab	RunStateStore.commit	no
+FML_SETTLEMENT	lab	payload.boundary	object	yes	PROTO_BOUNDARY 段验证	{kind:checkpoint,autosave:before_enter_and_after_commit}	lab	settlement_lab_shell.gd	no
+FML_SETTLEMENT	lab	payload.carry	object	cond	PROTO_NEXT_ENCOUNTER 段验证	{required_transactions:[{id:FX_SET_T1:ACT:V01,count:1}]}	lab	settlement_lab_shell.gd	no
+FML_SETTLEMENT	lab	payload.route_report	object	cond	探索路线三态收据（可提交/有条件/被拒）	{state:有条件}	lab	SET_T1.json	no
+FML_SETTLEMENT	lab	payload.board_snapshot	object	yes	清图留棋：喂给战术棋盘视图的冻结盘	{board:{width:6,height:4},units:[]}	lab	tactical_board_view.gd	no
+FML_SETTLEMENT	lab	payload.board_snapshot.board.sit	array	yes	清图后战场 sit；与战术地图层同一套 UV	[0,0,1280,720]	lab	SET_T0.json	no
+FML_SETTLEMENT	lab	payload.board_snapshot.board.features[]	array	yes	地面/堤/掩体多边形；有则不整张庭院照垫底	[{kind:floor,fill:yard,polygon:[[0.14,0.34],[0.84,0.32],[0.94,0.78],[0.06,0.80]]}]	lab	SET_T0.json	no
+FML_SETTLEMENT	lab	payload.board_snapshot.board.origin_uv	[u,v]	yes	等距盘原点落到战场 sit；格/站位仍走已有格子	[0.50,0.347]	lab	SET_T0.json	no
+FML_SETTLEMENT	lab	payload.board_snapshot.board.banner_uv	[u,v]	yes	Banner 两行坐在留棋战场上	[0.30,0.76]	lab	SET_T0.json	no
+FML_SETTLEMENT	lab	payload.roster[].card_sit_uv	[u,v]	yes	编队卡叠在留棋/坞口上，落到同一 sit	[0.500,0.444]	lab	SET_T0.json	no
+FML_SETTLEMENT	lab	payload.owner_atomic_commit	bool	cond	T2 多 owner 一次继续	true	lab	SET_T2.json	no
+FML_SETTLEMENT	lab	payload.chapter_contract	object	cond	仅SET_T3；两份以上已接受Operation夹具、只读硬出口、已准备Owner、后果与两项任务；非真实章节来源链	{schema_version:1,candidate:true,not_canon:true,runtime_allowed:false}	lab	settlement_chapter_contract.gd	no
+FML_SETTLEMENT	lab	payload.chapter_contract.operation_receipts[]	array	cond	固定输入已发生，不在章末重发；缺失、重复、未满足硬出口或篡改恢复均拒绝	[FX_SET_T3:OP_BRIDGE:V1,FX_SET_T3:OP_RELAY:V1]	lab	SET_T3.json	no
+FML_SETTLEMENT	lab	payload.chapter_contract.consequences[]	array	cond	每项绑定真实Store域，并含接收方、解除条件及未处理影响；当前UI最多六项	[{tab_label:机体,binding:{domain:entity_conditions,record_id:fx_anchor}}]	lab	settlement_chapter_panel.gd	no
+FML_SETTLEMENT	lab	payload.chapter_contract.tasks[]	array	cond	当前接收板恰两项；动作/事实门读取已保存Store；只安排，不自动维修、旅行、完成	[{id:FX_HEAVY_SUPPORT,required_verbs:[独立承力]}]	lab	settlement_chapter_contract.gd	no
+FML_SETTLEMENT	lab	context.checkpoint_scope	string	cond	章末私有实验断点命名空间；play与唯一QA scope隔离，源不符或坏文件拒绝覆盖	play	lab	settlement_chapter_checkpoint.gd	no
+FML_WORLD_ROUTE	world	chapter_receipt	string	design	章结算收据	—	contract_table	TR_CHAPTER_WORLD	no
+FML_WORLD_ROUTE	world	next_chapter_needs[]	array	design	下章需要什么	—	contract_table	TR_CHAPTER_WORLD	no
+FML_WORLD_ROUTE	world	world_node_versions	map	design	世界节点版本	—	contract_table	TR_CHAPTER_WORLD	no
+FML_WORLD_ROUTE	world	route_options[]	array	design	前三章为已设计目的地；不得伪装自由选项	[MODEL_STREET]	contract_table	EMT005 world_commit_only	no
+FML_WORLD_ROUTE	world	roster_availability	map	design	谁能去	—	contract_table	TR_CHAPTER_WORLD	no
+FML_WORLD_ROUTE	lab	payload.entry_modes[]	array(cards|list|map)	yes	入口清单;WR_T0/T1仅cards;WR_T2必须三入口	"[""cards""]"	lab	world_route_lab_shell.gd	no
+FML_WORLD_ROUTE	lab	payload.commit_budget	enum(world_commit_only)	yes	本页最多一次提交;T0即action_budget=world_commit_only	world_commit_only	lab	world_route_lab_shell.gd	no
+FML_WORLD_ROUTE	lab	payload.route_options[]	array	yes	T0恰好1项(不得伪装自由选项);T1/T2为2–4项	[{id:WR_FX_PONTOON3}]	lab	world_route_lab_shell.gd	no
+FML_WORLD_ROUTE	lab	payload.route_options[].route_line	string	cond	WR_T0已设计路线	出发泊位 → 中港航道 → 三号浮桥	lab	world_route_lab_shell.gd	no
+FML_WORLD_ROUTE	lab	payload.route_options[].eta	string	yes	到场时效	T2	lab	world_route_lab_shell.gd	no
+FML_WORLD_ROUTE	lab	payload.route_options[].comm_delay	string	cond	T1/T2通信延迟	巡桥记录昨夜到；本轮即时。	lab	world_route_lab_shell.gd	no
+FML_WORLD_ROUTE	lab	payload.route_options[].arrival_preview	string	cond	T1/T2到场预览	到场时第三节仍在漏，双向未断。	lab	world_route_lab_shell.gd	no
+FML_WORLD_ROUTE	lab	payload.route_options[].executor_if_not_chosen	string	yes	未选由具名主体继续(全档硬规则;T0无未选卡)	河港值班 卜班长	lab	world_route_lab_shell.gd	no
+FML_WORLD_ROUTE	lab	payload.route_options[].consequence_if_not_chosen	string	yes	不选会以什么后果回来	下一轮单向限载	lab	world_route_lab_shell.gd	no
+FML_WORLD_ROUTE	lab	payload.route_options[].structured	object	cond	T2出击条件:出击数/指定单位/推测战力/报酬	{sortie_slots:3,designated_units:[夹具重机甲组],estimated_strength:中,reward:桥面通行凭条}	lab	world_route_lab_shell.gd	no
+FML_WORLD_ROUTE	lab	payload.map.nodes[]	array	cond	T2地图入口必填;节点route_id须覆盖全部route_options	[{node_id:WR_FX_PONTOON3,route_id:WR_FX_PONTOON3}]	lab	world_route_lab_shell.gd	no
+FML_WORLD_ROUTE	lab	payload.map.chart	object	cond	T2海图坐底:kind=sea_chart + features多边形 + 已有tile当岸/海材质	{kind:sea_chart,sit:[0,0,1280,720],features:[]}	lab	formula_lab_placeholder_art.gd	no
+FML_WORLD_ROUTE	lab	payload.map.nodes[].chart_uv	array(u,v)	cond	针点归一化坐标落在海图sit上;有sea_chart时必填	[0.28,0.42]	lab	formula_lab_world_map.gd	no
+FML_WORLD_ROUTE	lab	payload.commit_effects	object	yes	确认门锁定项与写回;草案阶段不读	{clock_after:T2}	lab	world_route_lab_shell.gd	no
+FML_HUB	hub	issue_groups[]	array(2..5)	design	事项组；前三章不用	—	contract_table	EMT008	no
+FML_HUB	hub	work_cards[]	array(max 3)	design	标准3格内最多3张工作卡	—	contract_table	EMT008 action_budget_rule	no
+FML_HUB	hub	hub_action_id	enum(11条HUB_*)	design	Hub动作	HUB_REPAIR	contract_table	hub-action-contracts.tsv	no
+FML_HUB	lab	payload.arrival_brief[]	array	yes	返馆第一屏：谁还在、房子变了什么	[{who:值班员,present:true}]	lab	HUB_T0.json	no
+FML_HUB	lab	payload.cycle_forms[]	array(0..3)	cond	T1 本轮形态三选；T0 为空	[{form_id:FORM_REPAIR}]	lab	HUB_T1.json	no
+FML_HUB	lab	payload.issue_groups[]	array(2..5)	yes	事项组	[{group_id:IG_T0_HALL}]	lab	HUB_T0.json	no
+FML_HUB	lab	payload.work_cards[]	array(max 3)	yes	地点上的工作卡；slot_cost 1–3	[{card_id:WC_T0_CURATE,hub_action_id:HUB_CURATE,slot_cost:1}]	lab	HUB_T0.json	no
+FML_HUB	lab	payload.free_talk[]	array	no	闲聊不占格；STORY_IN_HUB 不是工作卡	[{talk_id:H_T0_KEEPER}]	lab	HUB_T0.json	no
+FML_HUB	lab	payload.time_slots	int=3	yes	槽位锁死 3，不要骰面	3	lab	hub_lab_shell.gd	no
+FML_HUB	lab	payload.room_space	object	yes	与探索共用房间件字段	{start_room_id:R_T0_HALL,rooms:[]}	lab	formula_lab_room_shell.gd	no
+FML_HUB	lab	payload.room_space.rooms[].sit	[x,y,w,h]	no	馆 sit；features 与 uv 落在同一 sit	[0,0,1280,720]	lab	HUB_T0.json	no
+FML_HUB	lab	payload.room_space.rooms[].features[]	array	no	墙/地/门/道具多边形，按配置坐馆	[{kind:floor,polygon:[[u,v]]}]	lab	HUB_T0.json	no
+FML_HUB	lab	payload.room_space.rooms[].hotspots[].walk_to_uv	[u,v]	no	走到点归一化；必须落在地板多边形内	[0.24,0.58]	lab	HUB_T0.json	no
+FML_HUB	lab	payload.room_space.rooms[].hotspots[].card_sit_uv	[u,v]	no	工作卡坐在家具上，落到同一 sit	[0.23,0.44]	lab	HUB_T0.json	no
+FML_HUB	lab	payload.arrival_brief[].stand_uv	[u,v]	no	返馆人落在馆地面/门口，不浮在风景照	[0.16,0.70]	lab	HUB_T0.json	no
+PROTO_BOUNDARY	node	transition{}	object	yes	过场卡即boundary表现	—	runtime	ModeTransitionDirector	no
+PROTO_BOUNDARY	node	autosave	enum	yes	存档边界	before_enter_and_after_commit	runtime	_save_stable_boundary	no
+PROTO_NEXT_ENCOUNTER	chapter	episodes[].start_gate.required_transactions[]	array{id,count}	yes	进下一话的收据闸	[{id:C01E01:CLOSING_ROUTE:V01,count:1}]	runtime	c01_story_first_chapter_runner.gd 293-340	no
+PROTO_NEXT_ENCOUNTER	chapter	episodes[].start_gate.required_facts[]	array{id,equals|truthy|one_of}	yes	进下一话的事实闸	[{id:EVAC_ORDERED,truthy:true}]	runtime	c01_story_first_chapter_runner.gd	no
+PROTO_NEXT_ENCOUNTER	chapter	episodes[].bundle_path	res_path	yes	编译后的话包	res://content/generated/episodes/c01/e02/story_first.bundle.json	runtime	c01_story_first.chapter.json	no
+FML_EXPLORATION	production_reading	stages[].exploration_environment	object	no	隔离环境输入：registration_path+Reader原文source_quote；只允许具名探索模板与显式map_actors	{registration_path:res://../artifacts/formulas/production-lab-v1/inputs/exploration-environment-shed-v1.json,source_quote:...}	candidate/production	scripts/formula_production_exploration_environment.py	no
+FML_EXPLORATION	payload	room_space.rooms[].registered_background (schema_version=2)	object	cond	历史兼容：同相机背景与中心depth_uv遮挡层；器材棚斜箱遮挡FAIL，不作为新环境解法；保留追溯	{calibration_method:blender_projected_uv,occluders:[{id,path,image_size,depth_uv}]}	candidate/lab	formula_lab_room_shell.gd;formula_lab_map_actor_room.gd;exploration_blender_projection_test.gd	no
+FML_EXPLORATION	payload	room_space.rooms[].navigation_blockers_uv	array	cond	同源几何UV占地，转visibility_graph；不得与像素navigation混填；站位不能落实体内	[[[u,v],...]]	candidate/lab	formula_lab_room_shell.gd;formula_lab_room_navigation.gd	no
+FML_EXPLORATION	payload	room_space.rooms[].portals[].polygon_uv	array	no	显式门面真实命中多边形；未提供时保留旧门入口行为；不改变通行门槛	[[u,v],...]	candidate/lab	formula_lab_room_shell.gd;exploration_blender_projection_test.gd	no
+FML_EXPLORATION	payload	room_space.rooms[].registered_background (schema_version=3)	object	cond	同相机背景+线性View-Z float32 EXR；地面仿射系数与竖直2D角色深度；occluders为空；保留2D人物及真实脚点	{calibration_method:blender_projected_depth,depth:{path,image_size,encoding,ground_depth_uv,pixel_y_to_view_z,bias_world}}	candidate/lab	artifacts/formulas/production-lab-v1/qa/world-route-production-20260909/projected-depth-v3-contract.md;formula_lab_map_actor_room.gd;exploration_projected_depth_v3_test.gd	no
+FML_TACTICAL	production_reading	stages[].tactical_visuals	object	no	具名TAC_T0/T2的Candidate视觉输入；pack_path+本段Reader原文source_quote；只替换registered_plate和完整unit绑定的map_token_profile；规则身份不改	{pack_path:res://../artifacts/formulas/production-lab-v1/inputs/tactical-visuals-f-depth-v1.json,source_quote:...}	candidate/production	scripts/formula_production_tactical_visuals.py;inputs/reading-f-depth-v1.json	no
+FML_TACTICAL	payload	board.registered_plate.projected_depth	optional object via scene registration	no	同源背景与float32 view-Z EXR、实际承脚面三角形；静态竖直身份平面逐像素遮挡，不声明机体3D或新动作；metadata/RGB/EXR修改需缓存失效或显式刷新	schema2 scene + projected_depth schema1	candidate/runtime-readback	formula_lab_registered_scene.gd;qa/tactical-depth-production-20260909/f-runtime-probe/review.md	no
+FML_TACTICAL	candidate_production_stage	carrier_scene	object{path,sha256}	cond	TAC_T7固定承重子集须绑定独立场景JSON;Reader/拓扑/验收和显式资源来源一起校验	{path:inputs/carrier.json,sha256:...}	candidate_runtime	scripts/formula_production_carrier.py;production_carrier_package_test.gd	no
+FML_TACTICAL	candidate_payload	carrier_anchor	object	cond	固定母舰/三锁/真实牵住与拖行;城梁共同承重不同于全卸载;不写mission_clear	{transfer_rounds:2,unload_rounds:1,stay_actor_id:guardian_z,...}	candidate_runtime	tactical_carrier_anchor.gd;tactical_carrier_anchor_test.gd	no
+FML_TACTICAL	candidate_payload	carrier_anchor.closing_entry	object{label,cells,closes_after_round,held_by_lock_id}	no	实际轮末合拢空入口;主锁旁本轮牵住可延后;已封闭须真实拔锁释放;不得与环境阻挡共同拥有格	{label:维修入口,cells:[[2,1],[3,1]],closes_after_round:1,held_by_lock_id:lock_main}	candidate_runtime	tactical_carrier_route_test.gd;scripts/test_formula_production_carrier.py	no
+FML_NARRATIVE	stage_battle_v1 Candidate only	payload.stage_phase	enum(prelude,aftermath)	yes	固定三阶段的前场及实际战后；与 FML_TACTICAL battle 共用世界	prelude	runtime	stage-battle-production-reset-20260926.md;artifacts/formulas/production-lab-v1/qa/stage-battle-20260926/	no
+FML_TACTICAL	stage_battle_v1 Candidate only	payload.interaction_profile	enum(stage_battle_v1)	yes	固定消费当前 V8 战斗；实际回执交接，不是任意规则自动编译	stage_battle_v1	runtime	stage-battle-production-reset-20260926.md;artifacts/formulas/production-lab-v1/qa/stage-battle-20260926/	no
+FML_TACTICAL	stage_battle_v1 Candidate only	payload.world_facts	object<boolean>	yes	演练路线及胜负、接力、特殊招式实际发生值；不从预演写入	FXN_BATTLE_WON=false	runtime	stage-battle-production-reset-20260926.md;artifacts/formulas/production-lab-v1/qa/stage-battle-20260926/	no

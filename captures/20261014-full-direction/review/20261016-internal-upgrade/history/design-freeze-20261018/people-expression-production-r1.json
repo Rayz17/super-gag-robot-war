@@ -1,0 +1,408 @@
+{
+  "revision": "people-expression-production-r1",
+  "date": "2026-10-17",
+  "purpose": "six single-character cutouts for dialogue expression design; not implemented selector or full expression family",
+  "mode": "built_in_image_gen",
+  "prompts": "people-expression-prompts-r2.json",
+  "items": [
+    {
+      "id": "H01",
+      "name": "纪存",
+      "state": "focused_speaking",
+      "label": "专注调度",
+      "file": "samples/H01-jicun-focused-speaking-r1.png",
+      "parent": "samples/H01-jicun-dialogue-r1.png",
+      "parent_sha256": "8f8c902d40e26beb9f2a6ad37316c85364aa9630f4d84f8092e1bcf077a9003b",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "eb98a8855411510f9257afd575a866ab2d97977ec4c485cf24a86a6f34c9403d",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          33,
+          57,
+          1008,
+          1536
+        ]
+      },
+      "crop": [
+        80,
+        35,
+        890,
+        1150
+      ],
+      "eye": [
+        442,
+        242
+      ],
+      "chin": 376.0,
+      "portrait_crop": [
+        302,
+        58,
+        390,
+        390
+      ],
+      "frame_source": "inherited parent pixel frame; full images inspected for head and chin continuity, receiver switching still untested",
+      "accepted_identity_direction": true,
+      "expression_user_accepted": false,
+      "runtime_integrated": false,
+      "dispatch_status": "not_sent_wait_user_confirmation",
+      "author_review": {
+        "face_change_observed": true,
+        "two_hands_observed": true,
+        "clothes_props_pose_retained": true,
+        "head_frame_appears_unchanged": true,
+        "pixel_identical_body_claim": false
+      },
+      "alpha_corners_all_zero": true
+    },
+    {
+      "id": "H02",
+      "name": "白鸢",
+      "state": "concentrating",
+      "label": "认真推演",
+      "file": "samples/H02-baiyuan-concentrating-r2.png",
+      "parent": "samples/H02-baiyuan-dialogue-r2-anatomy.png",
+      "parent_sha256": "0cc3a65bd4f8453a4f974f4e19900cb4bf3b758be19a65fc5ad28145bcdbec63",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "4c8a4783ca28fa3da9509244bbb7eef50e6be238cb74ccabf66707d3e13e1c65",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "corners": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "bbox": [
+          0,
+          18,
+          1024,
+          1536
+        ]
+      },
+      "crop": [
+        0,
+        15,
+        1024,
+        1150
+      ],
+      "eye": [
+        477,
+        200
+      ],
+      "chin": 314.0,
+      "portrait_crop": [
+        320,
+        46,
+        390,
+        390
+      ],
+      "frame_source": "inherited parent pixel frame; full images inspected for head and chin continuity, receiver switching still untested",
+      "accepted_identity_direction": true,
+      "expression_user_accepted": false,
+      "runtime_integrated": false,
+      "dispatch_status": "not_sent_wait_user_confirmation",
+      "author_review": {
+        "face_change_observed": true,
+        "two_hands_observed": true,
+        "clothes_props_pose_retained": true,
+        "head_frame_appears_unchanged": true,
+        "pixel_identical_body_claim": false
+      },
+      "alpha_corners_all_zero": false,
+      "repair_record": "dialogue-production-r2.json"
+    },
+    {
+      "id": "H03",
+      "name": "七海",
+      "state": "firm_speaking",
+      "label": "坚定交涉",
+      "file": "samples/H03-qihai-firm-speaking-r1.png",
+      "parent": "samples/H03-qihai-dialogue-v1.png",
+      "parent_sha256": "404762ecc0ff561f8bc1fe758c1b16f4cb2e7aab33d15b62a1d273d4cbf41b64",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "b79b30c1b7132c3cc55a2d6db603389d0e75fb822c855166c4d0b0f3e674dcfb",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          0,
+          0,
+          1024,
+          1536
+        ]
+      },
+      "crop": [
+        0,
+        0,
+        1024,
+        1120
+      ],
+      "eye": [
+        477,
+        222
+      ],
+      "chin": 349.0,
+      "portrait_crop": [
+        302,
+        17,
+        390,
+        390
+      ],
+      "frame_source": "inherited parent pixel frame; full images inspected for head and chin continuity, receiver switching still untested",
+      "accepted_identity_direction": true,
+      "expression_user_accepted": false,
+      "runtime_integrated": false,
+      "dispatch_status": "not_sent_wait_user_confirmation",
+      "author_review": {
+        "face_change_observed": true,
+        "two_hands_observed": true,
+        "clothes_props_pose_retained": true,
+        "head_frame_appears_unchanged": true,
+        "pixel_identical_body_claim": false
+      },
+      "alpha_corners_all_zero": true
+    },
+    {
+      "id": "H04",
+      "name": "兜灯",
+      "state": "explaining",
+      "label": "说明维修",
+      "file": "samples/H04-doudeng-explaining-r1.png",
+      "parent": "samples/H04-doudeng-palette-r3.png",
+      "parent_sha256": "4f1df9abfb2a04a6acb67110b3c29f59e65f219e8be7a12be09c4069a76db87e",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "06ce5b9fcb2d3afc66877cfa082a78920d7c20c8e59aa2ab57b3349750c2389a",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          49,
+          0,
+          988,
+          1536
+        ]
+      },
+      "crop": [
+        0,
+        0,
+        1024,
+        1160
+      ],
+      "eye": [
+        590,
+        306
+      ],
+      "chin": 417,
+      "portrait_crop": [
+        395,
+        161,
+        390,
+        390
+      ],
+      "frame_source": "inherited parent pixel frame; full images inspected for head and chin continuity, receiver switching still untested",
+      "accepted_identity_direction": true,
+      "expression_user_accepted": false,
+      "runtime_integrated": false,
+      "dispatch_status": "not_sent_wait_user_confirmation",
+      "author_review": {
+        "face_change_observed": true,
+        "two_hands_observed": true,
+        "clothes_props_pose_retained": true,
+        "head_frame_appears_unchanged": true,
+        "pixel_identical_body_claim": false
+      },
+      "alpha_corners_all_zero": true
+    },
+    {
+      "id": "H07",
+      "name": "唐胶",
+      "state": "serious",
+      "label": "认真检查",
+      "file": "samples/H07-tangjiao-serious-r1.png",
+      "parent": "samples/H07-tangjiao-palette-r3.png",
+      "parent_sha256": "ae5855cb3f6eb8844600107f2433ed0fa55e4809a07efe2c161bebf228174bb6",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "5bcd20c1b37d59adb5b7bfe8e757c57f8a01b248c1374cce15d29c44eb59870a",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "corners": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "bbox": [
+          0,
+          9,
+          994,
+          1536
+        ]
+      },
+      "crop": [
+        0,
+        0,
+        1024,
+        1160
+      ],
+      "eye": [
+        539,
+        223
+      ],
+      "chin": 319,
+      "portrait_crop": [
+        344,
+        78,
+        390,
+        390
+      ],
+      "frame_source": "inherited parent pixel frame; full images inspected for head and chin continuity, receiver switching still untested",
+      "accepted_identity_direction": true,
+      "expression_user_accepted": false,
+      "runtime_integrated": false,
+      "dispatch_status": "not_sent_wait_user_confirmation",
+      "author_review": {
+        "face_change_observed": true,
+        "two_hands_observed": true,
+        "clothes_props_pose_retained": true,
+        "head_frame_appears_unchanged": true,
+        "pixel_identical_body_claim": false
+      },
+      "alpha_corners_all_zero": false
+    },
+    {
+      "id": "H09",
+      "name": "胶价王",
+      "state": "surprised",
+      "label": "措手不及",
+      "file": "samples/H09-jiaojia-surprised-r1.png",
+      "parent": "samples/H09-jiaojia-palette-r3.png",
+      "parent_sha256": "81e59b2f6636cbbcaa72cc674d738b02811646f92da02dac59f3da261c3b670b",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "71d48aff7a0bf3e9dd719e4b7d8a5f86ed0973eb9c6ff6f3f2fca47c87634ab3",
+      "alpha": {
+        "extrema": [
+          0,
+          254
+        ],
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox": [
+          17,
+          16,
+          1024,
+          1536
+        ]
+      },
+      "crop": [
+        0,
+        0,
+        1024,
+        1160
+      ],
+      "eye": [
+        425,
+        184
+      ],
+      "chin": 299,
+      "portrait_crop": [
+        230,
+        39,
+        390,
+        390
+      ],
+      "frame_source": "inherited parent pixel frame; full images inspected for head and chin continuity, receiver switching still untested",
+      "accepted_identity_direction": true,
+      "expression_user_accepted": false,
+      "runtime_integrated": false,
+      "dispatch_status": "not_sent_wait_user_confirmation",
+      "author_review": {
+        "face_change_observed": true,
+        "two_hands_observed": true,
+        "clothes_props_pose_retained": true,
+        "head_frame_appears_unchanged": true,
+        "pixel_identical_body_claim": false
+      },
+      "alpha_corners_all_zero": true
+    }
+  ],
+  "invalidated": [
+    {
+      "file": "samples/H02-baiyuan-concentrating-r1-rejected-three-hands.png",
+      "sha256": "61f2affe36dc0755e43d3429bd38ef39c43de7e37a9975e6def1287a94aee44f",
+      "reason": "inherits three-hand anatomy from mother source; user reported",
+      "usable": false
+    }
+  ],
+  "consumer_reality": {
+    "people_portraits": "current runtime resolves name to one portrait; no expression-state selection integrated in this batch",
+    "frame_rule": "72 UI eye-to-chin; inherit parent frame for default/variant to avoid automatic size changes",
+    "runtime_changed": false
+  },
+  "alpha_check_note": "Actual alpha retained without pixel editing. H02 and H07 variants have a bottom-left corner of 1/255, so the exact zero-corner check did not pass for those points; metadata records this, not final edge approval.",
+  "remaining": [
+    "User confirmation of new exact derivatives.",
+    "Expression-state selector/fallback and continuous switch check in actual game remain receiver integration work.",
+    "This is one alternate expression per person, not all emotions or lip animation."
+  ],
+  "handoff_status": "not_sent_wait_for_user_confirmation"
+}

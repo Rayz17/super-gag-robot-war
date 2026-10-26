@@ -1,0 +1,5366 @@
+{
+  "revision": "20261014-full-direction",
+  "style": "KINETIC_CEL via Astra visual master",
+  "items": [
+    {
+      "id": "M01",
+      "group": "M",
+      "template": "mecha",
+      "key": "hero",
+      "name": "无牌一号",
+      "purpose": "游击体术",
+      "design": "轻灵、可读的人形关节；拳脚是第一识别点，肩胯留活动空间；天冲拳要帅且完整，不为科技感乱加炮口",
+      "states": [
+        "普通",
+        "蓄劲",
+        "护势",
+        "轻损",
+        "失能"
+      ],
+      "status": "draft-v1",
+      "file": "dir-M01-wupai-v1.jpg"
+    },
+    {
+      "id": "M02",
+      "group": "M",
+      "template": "mecha",
+      "key": "boxer",
+      "name": "旧拳王",
+      "purpose": "重心拳击",
+      "design": "拳套/前臂、胸腹与低重心形成主轮廓；拳击手的肩胯关系明确；旧不等于污脏颗粒堆满",
+      "states": [
+        "普通",
+        "接拳",
+        "重拳预备",
+        "轻损",
+        "失能"
+      ],
+      "status": "draft-v1",
+      "file": "dir-M02-boxer-v1.jpg"
+    },
+    {
+      "id": "M03",
+      "group": "M",
+      "template": "mecha",
+      "key": "guardian",
+      "name": "馆守 Z",
+      "purpose": "独臂守护、牵引、承重",
+      "design": "保留馆守身份锚和当前剧情原右前臂毁损；不能为对称补出完整右拳。左臂的牵引/支撑构造读得清",
+      "states": [
+        "普通",
+        "支撑",
+        "牵引",
+        "受损",
+        "失能"
+      ],
+      "status": "draft-v2",
+      "file": "dir-M03-guardian-z-v2.jpg"
+    },
+    {
+      "id": "M04",
+      "group": "M",
+      "template": "mecha",
+      "key": "brave",
+      "name": "社勇王",
+      "purpose": "勇者救援与破围",
+      "design": "与勇拳核心、外部腿架和肩包使用同一设计；英雄大色块、拳甲和胸部焦点明确，不是一团金属碎件",
+      "states": [
+        "普通",
+        "护路",
+        "终式预备",
+        "受损",
+        "失能"
+      ],
+      "status": "locked-core+v17-19-combined"
+    },
+    {
+      "id": "M05",
+      "group": "M",
+      "template": "mecha",
+      "key": "king",
+      "name": "完全版王者",
+      "purpose": "2×2飞行重装",
+      "design": "帅气对称头部；保留冗余武装的魅力；面罩去典型嘴部刻槽；右手/右前臂连接巨钻；双背炮有肩背轴且朝前；翼与推进包逻辑一致",
+      "states": [
+        "全装备",
+        "部分卸装",
+        "轻装",
+        "蓄炮",
+        "受损",
+        "失能"
+      ],
+      "status": "locked"
+    },
+    {
+      "id": "M06",
+      "group": "M",
+      "template": "mecha",
+      "key": "engineer",
+      "name": "预算二号",
+      "purpose": "精密快修与液压顶推",
+      "design": "小而精悍的工程机身份；液压顶具、备件匣、工具臂可辨；不是拿枪换名字；和消防、吊装机明显不同",
+      "states": [
+        "普通",
+        "顶推",
+        "焊补",
+        "备件耗尽",
+        "受损"
+      ],
+      "status": "draft-v1",
+      "file": "dir-M06-budget2-v1.jpg"
+    },
+    {
+      "id": "M07",
+      "group": "M",
+      "template": "mecha",
+      "key": "crane",
+      "name": "市政吊装机",
+      "purpose": "吊运、牵引、承重",
+      "design": "吊臂根部、绞盘、配重与支脚可信；吊钩与操作者同源，不从空中凭空生成",
+      "states": [
+        "收臂",
+        "展开",
+        "吊载",
+        "停机",
+        "受损"
+      ],
+      "status": "draft-v1",
+      "file": "dir-M07-crane-v1.jpg",
+      "note": "v1偏车体吊机，审稿后可能要改人形市政吊装"
+    },
+    {
+      "id": "M08",
+      "group": "M",
+      "template": "mecha",
+      "key": "leiling",
+      "name": "雷翎",
+      "purpose": "空中狙击与爆破导弹",
+      "design": "狙击长轴和轻快飞行轮廓；光束发射器与导弹挂架分清；不能与白色样机共用同一剪影",
+      "states": [
+        "普通",
+        "瞄准",
+        "低空",
+        "变形",
+        "受损"
+      ],
+      "status": "draft-v1",
+      "file": "dir-M08-leiling-v1.jpg"
+    },
+    {
+      "id": "M09",
+      "group": "M",
+      "template": "mecha",
+      "key": "police",
+      "name": "灰崎警备劳务机",
+      "purpose": "拘束、封路、警戒",
+      "design": "警备头盔/观察结构、索具和折叠屏障；城市警备用途，不是军绿杂兵；靠结构区分于预算二号",
+      "states": [
+        "普通",
+        "张索",
+        "立墙",
+        "撤回",
+        "受损"
+      ],
+      "status": "draft-v1",
+      "file": "dir-M09-keibi-v1.jpg"
+    },
+    {
+      "id": "M10",
+      "group": "M",
+      "template": "mecha",
+      "key": "fire",
+      "name": "消防架桥机",
+      "purpose": "涉水消防与临时通路",
+      "design": "消防供液、架桥收纳、耐热护板三个用途分清；不强制继承旧版左前腿伤，不能整机刷灰冒充旧机",
+      "states": [
+        "普通",
+        "涉水",
+        "泡沫",
+        "架桥",
+        "受损"
+      ],
+      "status": "draft-v1",
+      "file": "dir-M10-firebridge-v1.jpg"
+    },
+    {
+      "id": "M11",
+      "group": "M",
+      "template": "mecha",
+      "key": "cargo",
+      "name": "货柜领袖",
+      "purpose": "变形护送、群盾、搬运",
+      "design": "重新设计原创轮廓，不直接用现成变形金刚头胸；车体零件能在机体上追认；厚重可靠但不笨拙",
+      "states": [
+        "机体",
+        "车辆",
+        "护场",
+        "吊运",
+        "受损"
+      ],
+      "status": "draft-v2",
+      "file": "dir-M11-container-leader-v2.jpg",
+      "note": "v1偏擎天柱脸胸，审稿后重画原创"
+    },
+    {
+      "id": "M12",
+      "group": "M",
+      "template": "mecha",
+      "key": "mirror",
+      "name": "镜星",
+      "purpose": "棱镜标定与干扰",
+      "design": "棱镜/感测器形成独有轮廓；工具性发光集中在作用器，避免霓虹通体发亮",
+      "states": [
+        "普通",
+        "标定",
+        "干扰",
+        "失去导引",
+        "受损"
+      ],
+      "status": "draft-v1",
+      "file": "dir-M12-jingxing-v1.jpg"
+    },
+    {
+      "id": "M13",
+      "group": "M",
+      "template": "mecha",
+      "key": "white",
+      "name": "白色样机",
+      "purpose": "贯穿射击与军刀近防",
+      "design": "白色是身份色但大面积不用纯白；深色关节与少量识别色隔开环境；枪与刀的握持、收纳位置明确",
+      "states": [
+        "普通",
+        "瞄准",
+        "军刀",
+        "受损",
+        "失能"
+      ],
+      "status": "locked"
+    },
+    {
+      "id": "M14",
+      "group": "M",
+      "template": "mecha",
+      "key": "song",
+      "name": "歌翼可变机",
+      "purpose": "航空震荡与机动",
+      "design": "机翼和人形在同一结构下成立；与雷翎的狙击型不同；震荡投弹器和飞行方向明确",
+      "states": [
+        "人形",
+        "航空",
+        "投弹",
+        "起降",
+        "受损"
+      ],
+      "status": "draft-v1",
+      "file": "dir-M14-geyi-v1.jpg"
+    },
+    {
+      "id": "M15",
+      "group": "M",
+      "template": "mecha",
+      "key": "old_guardian",
+      "name": "馆守Z轮式导览终端（旧守护者）",
+      "purpose": "前章同一机魂的日常导览与对话形态",
+      "design": "明确轮式底盘、导览屏与馆守的共同身份标识；是同一主体的远程终端，不是另一台独立机魂；不能用馆守Z整图缩放代替",
+      "states": [
+        "普通",
+        "对话",
+        "受损"
+      ],
+      "status": "draft-v2",
+      "file": "dir-M15-guardian-terminal-v2.jpg"
+    },
+    {
+      "id": "F01",
+      "group": "F",
+      "template": "form",
+      "key": "king_light",
+      "name": "完全版王者轻装本体",
+      "purpose": "卸装后仍是同一冠军",
+      "design": "拆下外装后头胸腰四肢仍完整；不能把轻装画成弱化丑版",
+      "states": [
+        "装甲连接位外露",
+        "轻装站姿"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F01.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F01-king-light-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F01-king-light-v2.jpg"
+    },
+    {
+      "id": "F02",
+      "group": "F",
+      "template": "part",
+      "key": "king_cannon",
+      "name": "完全版王者双肩炮组",
+      "purpose": "双线射击、卸下后场上操作",
+      "design": "两炮各有背肩轴、炮口与前向；卸装保持同一外形和尺寸",
+      "states": [
+        "挂载",
+        "前指",
+        "卸装",
+        "受损"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F02.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F02-king-cannon-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F02-king-cannon-v2.jpg"
+    },
+    {
+      "id": "F03",
+      "group": "F",
+      "template": "part",
+      "key": "king_shield",
+      "name": "完全版王者合盾护板",
+      "purpose": "护场与卸装",
+      "design": "盾面内外、抓持/挂载点清楚；不遮断头部或成为假胸甲",
+      "states": [
+        "展开",
+        "合拢",
+        "卸装",
+        "受损"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F03.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F03-king-shield-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F03-king-shield-v2.jpg"
+    },
+    {
+      "id": "F04",
+      "group": "F",
+      "template": "part",
+      "key": "king_wing",
+      "name": "完全版王者飞翼推进包",
+      "purpose": "飞行及独立回收物",
+      "design": "成对翼根与推进轴明确，安装在背部有承力结构；不要把羽翼漂浮在肩外",
+      "states": [
+        "收束",
+        "飞行",
+        "卸装",
+        "受损"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F04.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F04-king-wing-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F04-king-wing-v2.jpg"
+    },
+    {
+      "id": "F05",
+      "group": "F",
+      "template": "part",
+      "key": "king_drill",
+      "name": "完全版王者右臂贯岩钻",
+      "purpose": "近战推进及卸装",
+      "design": "钻具根部连接右前臂，转子轴与推进方向同轴；禁止出现在裆部、膝外或无根悬空",
+      "states": [
+        "静止",
+        "旋转",
+        "伸出",
+        "卸装",
+        "受损"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F05.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F05-king-drill-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F05-king-drill-v2.jpg"
+    },
+    {
+      "id": "F06",
+      "group": "F",
+      "template": "form",
+      "key": "cargo_vehicle",
+      "name": "货柜领袖车辆形态",
+      "purpose": "可变机的移动形态",
+      "design": "轮轴、车头、货台与人形同一套零件；运输空间与乘员安全有实际位置",
+      "states": [
+        "常态",
+        "转型中间态",
+        "受损"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F06.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F06-cargo-vehicle-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F06-cargo-vehicle-v2.jpg"
+    },
+    {
+      "id": "F07",
+      "group": "F",
+      "template": "form",
+      "key": "leiling_aircraft",
+      "name": "雷翎航空形态",
+      "purpose": "可变机的移动形态",
+      "design": "保留狙击炮轴与推进器，机翼展开不变成另一台机",
+      "states": [
+        "常态",
+        "转型中间态",
+        "受损"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F07.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F07-leiling-aircraft-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F07-leiling-aircraft-v2.jpg"
+    },
+    {
+      "id": "F08",
+      "group": "F",
+      "template": "form",
+      "key": "song_aircraft",
+      "name": "歌翼航空形态",
+      "purpose": "可变机的移动形态",
+      "design": "机翼、座舱/感测区、弹舱与人形能对应；转型有中间姿态",
+      "states": [
+        "常态",
+        "转型中间态",
+        "受损"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F08.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F08-song-aircraft-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F08-song-aircraft-v2.jpg"
+    },
+    {
+      "id": "F09",
+      "group": "F",
+      "template": "form",
+      "key": "brave_core",
+      "name": "完整勇拳核心机",
+      "purpose": "合体专关与机体生命周期",
+      "design": "完整有人机器人，有胸躯干四肢；不是只有拳头、空胸内胆或另一台凭空生成的小机",
+      "states": [
+        "独立",
+        "合体中",
+        "合体后",
+        "分离",
+        "受损"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F09.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F09-brave-core-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F09-brave-core-v2.jpg"
+    },
+    {
+      "id": "F10",
+      "group": "F",
+      "template": "form",
+      "key": "brave_combined",
+      "name": "社勇王完整合体",
+      "purpose": "合体专关与机体生命周期",
+      "design": "原核心进入外部组件；保留主身份和零件来源，不能瞬间缩放拼出另一套身体",
+      "states": [
+        "独立",
+        "合体中",
+        "合体后",
+        "分离",
+        "受损"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F10.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F10-brave-combined-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F10-brave-combined-v2.jpg"
+    },
+    {
+      "id": "F11",
+      "group": "F",
+      "template": "form",
+      "key": "brave_boots",
+      "name": "社勇王外部腿架",
+      "purpose": "合体专关与机体生命周期",
+      "design": "左右脚甲与腿架有进入/闭合结构，地面独立状态仍能识别",
+      "states": [
+        "独立",
+        "合体中",
+        "合体后",
+        "分离",
+        "受损"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F11.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F11-brave-boots-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F11-brave-boots-v2.jpg"
+    },
+    {
+      "id": "F12",
+      "group": "F",
+      "template": "form",
+      "key": "brave_shoulders",
+      "name": "社勇王肩背外部组件",
+      "purpose": "合体专关与机体生命周期",
+      "design": "肩包、背架和接口一体；与核心接入和分离位置一致",
+      "states": [
+        "独立",
+        "合体中",
+        "合体后",
+        "分离",
+        "受损"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F12.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F12-brave-shoulders-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F12-brave-shoulders-v2.jpg"
+    },
+    {
+      "id": "F13",
+      "group": "F",
+      "template": "part",
+      "key": "hydraulic",
+      "name": "工程液压顶具",
+      "purpose": "共享工具与产物",
+      "design": "活塞、反力座和可收纳接口清楚；顶不动物体时回弹，不能变成刀",
+      "states": [
+        "收纳",
+        "伸出",
+        "回弹"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F13.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F13-hydraulic-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F13-hydraulic-v2.jpg"
+    },
+    {
+      "id": "F14",
+      "group": "F",
+      "template": "part",
+      "key": "repair_tool",
+      "name": "焊补工具与备件",
+      "purpose": "共享工具与产物",
+      "design": "焊枪/工具臂、备件匣、补片成套；按动作家族适配，不做每种柜内线路",
+      "states": [
+        "取用",
+        "工作",
+        "收回"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F14.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F14-repair-tool-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F14-repair-tool-v2.jpg"
+    },
+    {
+      "id": "F15",
+      "group": "F",
+      "template": "part",
+      "key": "tether_tool",
+      "name": "牵引与拘束索具",
+      "purpose": "共享工具与产物",
+      "design": "牵引钩和拘束爪共用材质但形状可分；线缆独立由引擎生成",
+      "states": [
+        "发射",
+        "张紧",
+        "松脱"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F15.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F15-tether-tool-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F15-tether-tool-v2.jpg"
+    },
+    {
+      "id": "F16",
+      "group": "F",
+      "template": "part",
+      "key": "barrier_kit",
+      "name": "折叠隔离墙套件",
+      "purpose": "共享工具与产物",
+      "design": "预算二号的预制墙段与灰崎的折叠警戒段分两种，不从地下魔法出现",
+      "states": [
+        "收纳",
+        "展开",
+        "落地",
+        "损坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F16.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F16-barrier-kit-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F16-barrier-kit-v2.jpg"
+    },
+    {
+      "id": "F17",
+      "group": "F",
+      "template": "part",
+      "key": "bridge_kit",
+      "name": "消防应急桥板",
+      "purpose": "共享工具与产物",
+      "design": "装载、展开、桥面与铰接端能对应；有限长度的实体",
+      "states": [
+        "收纳",
+        "展开",
+        "接地",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F17.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F17-bridge-kit-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F17-bridge-kit-v2.jpg"
+    },
+    {
+      "id": "F18",
+      "group": "F",
+      "template": "part",
+      "key": "projectile_kit",
+      "name": "炮弹导弹与弹壳",
+      "purpose": "共享工具与产物",
+      "design": "爆破导弹、震荡弹、跨区炮弹用弹头/尾迹区分；具体伤害范围由规则显示",
+      "states": [
+        "飞行",
+        "命中",
+        "残骸"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/F18.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-F18-projectile-kit-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-F18-projectile-kit-v2.jpg"
+    },
+    {
+      "id": "E01",
+      "group": "E",
+      "template": "enemy",
+      "key": "claw",
+      "name": "啮线体",
+      "purpose": "近接方向攻击",
+      "design": "大块头胸与咬切器官、强支撑肢；与我方标准单位有相近视觉分量，不能像小狗",
+      "states": [
+        "普通",
+        "公开预备",
+        "发动",
+        "恢复",
+        "受损",
+        "击毁"
+      ],
+      "status": "v4-passed",
+      "file": "dir-E01-niexian-v4.jpg"
+    },
+    {
+      "id": "E02",
+      "group": "E",
+      "template": "enemy",
+      "key": "mite",
+      "name": "群生啮线幼体",
+      "purpose": "数量压力与增援",
+      "design": "小型单格档但保持敌体威胁感；与啮线体以头腹比例和攻击器官区分，不只是等比缩小",
+      "states": [
+        "普通",
+        "公开预备",
+        "发动",
+        "恢复",
+        "受损",
+        "击毁"
+      ],
+      "status": "draft-v1",
+      "file": "dir-E02-mite-v1.jpg"
+    },
+    {
+      "id": "E03",
+      "group": "E",
+      "template": "enemy",
+      "key": "acid",
+      "name": "喷酸体",
+      "purpose": "锁格喷射与连爆局面",
+      "design": "专用喷口、储液腹与姿态；不能继续借啮线体换名；酸液与火焰/炮弹不同",
+      "states": [
+        "普通",
+        "公开预备",
+        "发动",
+        "恢复",
+        "受损",
+        "击毁"
+      ],
+      "status": "draft-v1",
+      "file": "dir-E03-acid-v1.jpg"
+    },
+    {
+      "id": "E04",
+      "group": "E",
+      "template": "enemy",
+      "key": "gun",
+      "name": "远程架设体",
+      "purpose": "跨区炮击",
+      "design": "架设支脚、炮轴、蓄能器官可读；收起/架设/蓄力/出膛同一结构",
+      "states": [
+        "普通",
+        "公开预备",
+        "发动",
+        "恢复",
+        "受损",
+        "击毁"
+      ],
+      "status": "draft-v2",
+      "file": "dir-E04-gun-v2.jpg"
+    },
+    {
+      "id": "E05",
+      "group": "E",
+      "template": "enemy",
+      "key": "wedge",
+      "name": "重型楔入体",
+      "purpose": "驻定切割与重型阻挡",
+      "design": "2×2承力躯体和楔形切割器；重而不碎，击退时重量明确",
+      "states": [
+        "普通",
+        "公开预备",
+        "发动",
+        "恢复",
+        "受损",
+        "击毁"
+      ],
+      "status": "draft-v1",
+      "file": "dir-E05-wedge-v1.jpg"
+    },
+    {
+      "id": "E06",
+      "group": "E",
+      "template": "enemy",
+      "key": "hover",
+      "name": "掠渠体",
+      "purpose": "悬浮袭扰",
+      "design": "升力/浮行结构与瞄准方向明确；不靠全身发光表示飞行",
+      "states": [
+        "普通",
+        "公开预备",
+        "发动",
+        "恢复",
+        "受损",
+        "击毁"
+      ],
+      "status": "draft-v1",
+      "file": "dir-E06-hover-v1.jpg"
+    },
+    {
+      "id": "E07",
+      "group": "E",
+      "template": "enemy",
+      "key": "screen",
+      "name": "共振护群体",
+      "purpose": "群体减伤来源",
+      "design": "专用护群器官与范围中心轮廓；不能只拿掠渠体改颜色；护群生效和被打断可辨",
+      "states": [
+        "普通",
+        "公开预备",
+        "发动",
+        "恢复",
+        "受损",
+        "击毁"
+      ],
+      "status": "draft-v2",
+      "file": "dir-E07-screen-v2.jpg"
+    },
+    {
+      "id": "E08",
+      "group": "E",
+      "template": "enemy",
+      "key": "worker",
+      "name": "自动拆锁工机",
+      "purpose": "受旧令驱动的市政作业机",
+      "design": "保留城市工具机械身份；工作臂/切锁器具清楚，停机后不伪装击毁",
+      "states": [
+        "普通",
+        "公开预备",
+        "发动",
+        "恢复",
+        "受损",
+        "击毁"
+      ],
+      "status": "draft-v1",
+      "file": "dir-E08-worker-v1.jpg"
+    },
+    {
+      "id": "E09",
+      "group": "E",
+      "template": "enemy",
+      "key": "tug",
+      "name": "无人牵引工机",
+      "purpose": "锁车与拖移",
+      "design": "牵引杆/夹具和配重区别于拆锁机；机体与列车之间有连接来源",
+      "states": [
+        "普通",
+        "公开预备",
+        "发动",
+        "恢复",
+        "受损",
+        "击毁"
+      ],
+      "status": "draft-v1",
+      "file": "dir-E09-tug-v1.jpg"
+    },
+    {
+      "id": "E10",
+      "group": "E",
+      "template": "enemy",
+      "key": "rival",
+      "name": "断冠",
+      "purpose": "2×2宿敌样本",
+      "design": "按既有断冠设计做独立冠环、护板和支撑节点；不同方向暴露弱侧可视，不能继续借楔入体充数",
+      "states": [
+        "普通",
+        "公开预备",
+        "发动",
+        "恢复",
+        "受损",
+        "击毁"
+      ],
+      "status": "draft-v2",
+      "file": "dir-E10-rival-v2.jpg"
+    },
+    {
+      "id": "E11",
+      "group": "E",
+      "template": "enemy",
+      "key": "antiair",
+      "name": "架设体对空装备变体",
+      "purpose": "上层与空中压制",
+      "design": "复用架设体身体，只增仰角炮架、跟踪器和对空预备姿态；不另造完全无关敌种",
+      "states": [
+        "普通",
+        "公开预备",
+        "发动",
+        "恢复",
+        "受损",
+        "击毁"
+      ],
+      "status": "draft-v2",
+      "file": "dir-E11-antiair-v2.jpg"
+    },
+    {
+      "id": "H01",
+      "group": "H",
+      "template": "human",
+      "key": "jicun",
+      "name": "纪存",
+      "purpose": "指挥、判断、跨区调配",
+      "design": "中国青年男性外观的机魂实体；保留既有身份与终端；有主见和现场行动，不画成无特征网游少年",
+      "states": [
+        "日常",
+        "工作/指令姿态",
+        "表情差分"
+      ],
+      "status": "locked"
+    },
+    {
+      "id": "H02",
+      "group": "H",
+      "template": "human",
+      "key": "baiyuan",
+      "name": "白鸢",
+      "purpose": "战术预演与分镜",
+      "design": "成年欧洲创作者；浅色发、成年骨相与体态、分镜工具；和七海在年龄气质/脸型/服装职责上区别",
+      "states": [
+        "日常",
+        "工作/指令姿态",
+        "表情差分"
+      ],
+      "status": "locked"
+    },
+    {
+      "id": "H03",
+      "group": "H",
+      "template": "human",
+      "key": "qihai",
+      "name": "七海",
+      "purpose": "权限核验、撤令与责任",
+      "design": "日本成年女性；深色直发、成熟克制、秩序感；冷白服装使用柔和色块，不能整个人白得刺眼",
+      "states": [
+        "日常",
+        "工作/指令姿态",
+        "表情差分"
+      ],
+      "status": "locked"
+    },
+    {
+      "id": "H04",
+      "group": "H",
+      "template": "human",
+      "key": "doudeng",
+      "name": "兜灯",
+      "purpose": "维修与安全制动",
+      "design": "中国青年女性整备员；头灯、维修服、真实工具与手部劳动；不幼儿化；与其他对话人物共用头部显示尺度",
+      "states": [
+        "日常",
+        "工作/指令姿态",
+        "表情差分"
+      ],
+      "status": "draft-v1",
+      "file": "dir-H04-doudeng-v1.jpg"
+    },
+    {
+      "id": "H05",
+      "group": "H",
+      "template": "human",
+      "key": "luheng",
+      "name": "陆衡",
+      "purpose": "载荷判读与工程责任",
+      "design": "中肯混合家庭设定；中深棕肤、卷曲或粗硬短发、工程服；不用族裔刻板替代个人特征",
+      "states": [
+        "日常",
+        "工作/指令姿态",
+        "表情差分"
+      ],
+      "status": "draft-v1",
+      "file": "dir-H05-luheng-v1.jpg"
+    },
+    {
+      "id": "H06",
+      "group": "H",
+      "template": "human",
+      "key": "haosi",
+      "name": "豪司",
+      "purpose": "勇拳驾驶、社勇王协商",
+      "design": "日本成年试驾员；热血与职业责任并存，驾驶装/工牌有功能；不是通用偶像脸",
+      "states": [
+        "日常",
+        "工作/指令姿态",
+        "表情差分"
+      ],
+      "status": "draft-v1",
+      "file": "dir-H06-haosi-v1.jpg"
+    },
+    {
+      "id": "H07",
+      "group": "H",
+      "template": "human",
+      "key": "tangjiao",
+      "name": "唐胶",
+      "purpose": "前章模型修复与生活角色",
+      "design": "中国青年男性；工具围裙和手作生活气；和纪存明确不同；不沿用旧女性/中性误稿",
+      "states": [
+        "日常",
+        "工作/指令姿态",
+        "表情差分"
+      ],
+      "status": "draft-v1",
+      "file": "dir-H07-tangjiao-v1.jpg"
+    },
+    {
+      "id": "H08",
+      "group": "H",
+      "template": "human",
+      "key": "zhaomei",
+      "name": "赵梅",
+      "purpose": "合作社组织者",
+      "design": "保留既有年龄、脸部辨识与生活经历；成年成熟组织者，有行动力，不被画成通用慈祥路人",
+      "states": [
+        "日常",
+        "工作/指令姿态",
+        "表情差分"
+      ],
+      "status": "draft-v1",
+      "file": "dir-H08-zhaomei-v1.jpg"
+    },
+    {
+      "id": "H09",
+      "group": "H",
+      "template": "human",
+      "key": "jiaojia",
+      "name": "胶价王",
+      "purpose": "赛事制作人与商业对手",
+      "design": "主持/旧件买手的强识别轮廓和职业服装；表情有表演与算计，不简单丑角化；不能控制机魂主体",
+      "states": [
+        "日常",
+        "工作/指令姿态",
+        "表情差分"
+      ],
+      "status": "draft-v1",
+      "file": "dir-H09-jiaojia-v1.jpg"
+    },
+    {
+      "id": "H10",
+      "group": "H",
+      "template": "human",
+      "key": "police_seat",
+      "name": "警备驾驶席",
+      "purpose": "专关通讯与撤回指令",
+      "design": "有独立通讯头像与职业识别；未有具名身份时作为本地警备席设计，不套主角脸",
+      "states": [
+        "日常",
+        "工作/指令姿态",
+        "表情差分"
+      ],
+      "status": "draft-v1",
+      "file": "dir-H10-police-seat-v1.jpg"
+    },
+    {
+      "id": "H11",
+      "group": "H",
+      "template": "human",
+      "key": "workshop_staff",
+      "name": "工房工程员",
+      "purpose": "前章与现场配角",
+      "design": "工具、工服和年龄方向与主角区分；具名化前不编造新个人设定",
+      "states": [
+        "日常",
+        "工作/指令姿态",
+        "表情差分"
+      ],
+      "status": "draft-v1",
+      "file": "dir-H11-workshop-staff-v1.jpg"
+    },
+    {
+      "id": "H12",
+      "group": "H",
+      "template": "crowd",
+      "key": "civilians",
+      "name": "检修员与撤离人群",
+      "purpose": "列车、居民楼和气氛反应",
+      "design": "成人身形、工作装备与少量服装差异；不把群众全画成相同小人",
+      "states": [
+        "等待",
+        "避险",
+        "招手",
+        "欢呼"
+      ],
+      "status": "draft-v1",
+      "file": "dir-H12-civilians-v1.jpg"
+    },
+    {
+      "id": "H13",
+      "group": "H",
+      "template": "crowd",
+      "key": "tiny_units",
+      "name": "机器犬及人物地图小单位",
+      "purpose": "微型显示规范与既有小单位后续复用",
+      "design": "只制定人/犬等四分之一格面积档；不据此把常规猎巢敌体缩成小狗；有具体入场对象才建模",
+      "states": [
+        "站立",
+        "移动",
+        "警觉"
+      ],
+      "status": "draft-v2",
+      "file": "dir-H13-tiny-units-v2.jpg"
+    },
+    {
+      "id": "B01",
+      "group": "B",
+      "template": "building",
+      "key": "refuge-habitat",
+      "name": "有人避难楼",
+      "purpose": "现代机甲城市的居民目标",
+      "design": "5–7层住宅体量；入口/窗带/楼板让人读懂尺度；完整楼顶、受损露层、倒塌残壁各自可信",
+      "states": [
+        "完好",
+        "受损",
+        "毁坏"
+      ],
+      "status": "locked"
+    },
+    {
+      "id": "B02",
+      "group": "B",
+      "template": "building",
+      "key": "shelter-illustrated",
+      "name": "渠岸住宅",
+      "purpose": "B区居民与街区",
+      "design": "沿渠立面、后侧与屋顶成套；破损后保留内部楼板厚度和断面，不再用完整屋顶盖残楼",
+      "states": [
+        "完好",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B02.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B02-shelter-illustrated-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B02-shelter-v2.jpg"
+    },
+    {
+      "id": "B03",
+      "group": "B",
+      "template": "building",
+      "key": "shelter-c",
+      "name": "环站公寓",
+      "purpose": "C区居住目标",
+      "design": "货运站旁现代公寓，与工业仓库可区分；保持同城材料关系",
+      "states": [
+        "完好",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B03.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B03-shelter-c-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B03-shelter-c-v2.jpg"
+    },
+    {
+      "id": "B04",
+      "group": "B",
+      "template": "building",
+      "key": "office-a",
+      "name": "供能前庭办公楼",
+      "purpose": "A区体量与遮挡",
+      "design": "现代公共设施办公，首层服务入口、窗带、检修层明确；不是小屋",
+      "states": [
+        "完好",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B04.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B04-office-a-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B04-office-a-v2.jpg"
+    },
+    {
+      "id": "B05",
+      "group": "B",
+      "template": "building",
+      "key": "office-b",
+      "name": "渠岸办公楼",
+      "purpose": "B区街区体量",
+      "design": "钢蓝/矿物材质辅助色；不可与可保护住宅混同",
+      "states": [
+        "完好",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B05.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B05-office-b-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B05-office-b-v2.jpg"
+    },
+    {
+      "id": "B06",
+      "group": "B",
+      "template": "building",
+      "key": "office-c",
+      "name": "装卸站调度楼",
+      "purpose": "C区调度设施",
+      "design": "观察窗朝向轨道；入口与站台对应；红色点缀有用途",
+      "states": [
+        "完好",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B06.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B06-office-c-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B06-office-c-v2.jpg"
+    },
+    {
+      "id": "B07",
+      "group": "B",
+      "template": "building",
+      "key": "switchgear-illustrated",
+      "name": "公共供电柜",
+      "purpose": "接电与断电操作",
+      "design": "柜体/母排/隔离刀与指示灯分件；开关动作和能量方向可见，不做内部修线模拟",
+      "states": [
+        "完好",
+        "工作",
+        "断电",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B07.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B07-switchgear-illustrated-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B07-switchgear-v2.jpg"
+    },
+    {
+      "id": "B08",
+      "group": "B",
+      "template": "building",
+      "key": "relay",
+      "name": "远程馈电柜与中继",
+      "purpose": "切线取消跨区炮",
+      "design": "与公共供电柜以端子/接口轮廓区分；不能只靠文字标识",
+      "states": [
+        "完好",
+        "供电",
+        "隔离",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B08.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B08-relay-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B08-relay-v2.jpg"
+    },
+    {
+      "id": "B09",
+      "group": "B",
+      "template": "building",
+      "key": "substation",
+      "name": "变电设施",
+      "purpose": "供能建筑和基础设施",
+      "design": "设备阵列有承重平台、隔离距离与检修通道；不以小圆柱堆砌冒充变电站",
+      "states": [
+        "完好",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B09.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B09-substation-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B09-substation-v2.jpg"
+    },
+    {
+      "id": "B10",
+      "group": "B",
+      "template": "building",
+      "key": "workshop",
+      "name": "维修工房",
+      "purpose": "工程场所与整备背景",
+      "design": "可进出的工业门、天车梁、工位尺度与机体匹配",
+      "states": [
+        "完好",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B10.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B10-workshop-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B10-workshop-v2.jpg"
+    },
+    {
+      "id": "B11",
+      "group": "B",
+      "template": "building",
+      "key": "terminal",
+      "name": "车站终端与控制台",
+      "purpose": "现场读取和操作",
+      "design": "倾斜控制面、硬件按钮和信号灯；动态字由UI绘制，不画伪文字",
+      "states": [
+        "完好",
+        "可操作",
+        "已完成",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B11.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B11-terminal-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B11-terminal-v2.jpg"
+    },
+    {
+      "id": "B12",
+      "group": "B",
+      "template": "building",
+      "key": "train-front",
+      "name": "撤离列车车头",
+      "purpose": "首要保护对象与行车方向",
+      "design": "驾驶端和尾端一眼不同；现代轨道救援列车，不是玩具小屋加轮；车轮/车灯可简单运动",
+      "states": [
+        "完好",
+        "停车",
+        "行驶",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B12.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B12-train-front-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B12-train-front-v2.jpg"
+    },
+    {
+      "id": "B13",
+      "group": "B",
+      "template": "building",
+      "key": "train",
+      "name": "撤离列车车厢",
+      "purpose": "24人撤离的可见载体",
+      "design": "与车头同一列车；窗、门、走行部和连接器保持比例；载人与空置可表达",
+      "states": [
+        "完好",
+        "载人",
+        "停车",
+        "行驶",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B13.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B13-train-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B13-train-v2.jpg"
+    },
+    {
+      "id": "B14",
+      "group": "B",
+      "template": "building",
+      "key": "bridge",
+      "name": "跨渠桥面与桥锁",
+      "purpose": "修复、支撑、通车",
+      "design": "断口、铰链、锁座、支撑端点真实成套；桥面未接通与已承重结构不同",
+      "states": [
+        "断开",
+        "临时支撑",
+        "锁固",
+        "受损",
+        "坍塌"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B14.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B14-bridge-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B14-bridge-v2.jpg"
+    },
+    {
+      "id": "B15",
+      "group": "B",
+      "template": "building",
+      "key": "deck",
+      "name": "上层检修栈桥",
+      "purpose": "多层战场与承重",
+      "design": "楼板厚度、下方梁架、栏杆与缺口；俯视和旋转都读得懂高度",
+      "states": [
+        "完好",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B15.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B15-deck-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B15-deck-v2.jpg"
+    },
+    {
+      "id": "B16",
+      "group": "B",
+      "template": "building",
+      "key": "anchor",
+      "name": "支撑锚点与支座",
+      "purpose": "承重与宿敌侧撑",
+      "design": "安装位置、拉力/压力方向清楚；损坏后确实断开承力构造",
+      "states": [
+        "完好",
+        "受力",
+        "断裂"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B16.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B16-anchor-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B16-anchor-v2.jpg"
+    },
+    {
+      "id": "B17",
+      "group": "B",
+      "template": "building",
+      "key": "crane",
+      "name": "固定吊机",
+      "purpose": "场景机构与吊运",
+      "design": "塔身、吊臂、绞盘、吊钩分件；回转轴与吊运范围一致",
+      "states": [
+        "收起",
+        "作业",
+        "停机",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B17.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B17-crane-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B17-crane-v2.jpg"
+    },
+    {
+      "id": "B18",
+      "group": "B",
+      "template": "building",
+      "key": "elevator",
+      "name": "升降平台",
+      "purpose": "上下层输送",
+      "design": "轨道、驱动和平台有连续空间关系；不是贴图电梯",
+      "states": [
+        "下层",
+        "运行",
+        "上层",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B18.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B18-elevator-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B18-elevator-v2.jpg"
+    },
+    {
+      "id": "B19",
+      "group": "B",
+      "template": "building",
+      "key": "turntable",
+      "name": "轨道转台",
+      "purpose": "转向与载物",
+      "design": "桥盘厚度、圆坑、环轨和驱动机构真实；中心轴固定，转90度边界可读",
+      "states": [
+        "静止",
+        "旋转",
+        "就位",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B19.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B19-turntable-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B19-turntable-v2.jpg"
+    },
+    {
+      "id": "B20",
+      "group": "B",
+      "template": "building",
+      "key": "sluice-drive",
+      "name": "水闸驱动与闸门",
+      "purpose": "水位调节",
+      "design": "门体与侧壁/轨道连接；开启和关闭不是只改水色",
+      "states": [
+        "关闭",
+        "开启",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B20.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B20-sluice-drive-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B20-sluice-drive-v2.jpg"
+    },
+    {
+      "id": "B21",
+      "group": "B",
+      "template": "building",
+      "key": "pumpstation",
+      "name": "泵站",
+      "purpose": "深渠与排水场景",
+      "design": "进出水管、泵房和平台有工程逻辑；与办公楼不同",
+      "states": [
+        "完好",
+        "运行",
+        "停机",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B21.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B21-pumpstation-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B21-pumpstation-v2.jpg"
+    },
+    {
+      "id": "B22",
+      "group": "B",
+      "template": "building",
+      "key": "crate",
+      "name": "货柜与吊点周转箱",
+      "purpose": "推移、搬运、挡炮与清轨",
+      "design": "标准货柜与较小周转箱两尺寸；吊点、门面、顶面有对应关系",
+      "states": [
+        "完好",
+        "吊起",
+        "受损",
+        "破碎"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B22.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B22-crate-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B22-crate-v2.jpg"
+    },
+    {
+      "id": "B23",
+      "group": "B",
+      "template": "building",
+      "key": "wall",
+      "name": "实体隔离墙",
+      "purpose": "移动/射线阻挡",
+      "design": "施工预制段与警备折叠段两种来源；底座接地、毁坏后留真实空隙",
+      "states": [
+        "收纳",
+        "展开",
+        "完好",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B23.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B23-wall-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B23-wall-v2.jpg"
+    },
+    {
+      "id": "B24",
+      "group": "B",
+      "template": "building",
+      "key": "fuel",
+      "name": "燃料与补给接口",
+      "purpose": "补给及空地任务",
+      "design": "罐体、接头、防护围边；可爆与不可爆对象用结构区别，不能都画同一桶",
+      "states": [
+        "可用",
+        "耗尽",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B24.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B24-fuel-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B24-fuel-v2.jpg"
+    },
+    {
+      "id": "B25",
+      "group": "B",
+      "template": "building",
+      "key": "capacitor",
+      "name": "隔离电容",
+      "purpose": "爆炸连锁",
+      "design": "电容外壳与连接端、泄放口明确；危险器材不与普通居民物件混淆",
+      "states": [
+        "稳定",
+        "临界",
+        "爆裂"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B25.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B25-capacitor-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B25-capacitor-v2.jpg"
+    },
+    {
+      "id": "B26",
+      "group": "B",
+      "template": "building",
+      "key": "rift",
+      "name": "猎巢入口",
+      "purpose": "公开增援与封闭",
+      "design": "裂口/侵入结构有实体边缘；蓄动、出现、封住三个过程；不只红圈贴纸",
+      "states": [
+        "休眠",
+        "预告",
+        "增援",
+        "封闭",
+        "摧毁"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B26.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B26-rift-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B26-rift-v2.jpg"
+    },
+    {
+      "id": "B27",
+      "group": "B",
+      "template": "building",
+      "key": "portal",
+      "name": "承运交接点",
+      "purpose": "跨战场转运",
+      "design": "地面导向、吊运/承运装置与出口一致；不是科幻传送魔法门",
+      "states": [
+        "开放",
+        "繁忙",
+        "阻塞",
+        "关闭"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B27.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B27-portal-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B27-portal-v2.jpg"
+    },
+    {
+      "id": "B28",
+      "group": "B",
+      "template": "building",
+      "key": "equipment_bay",
+      "name": "整备复装工位",
+      "purpose": "可拆装备回装",
+      "design": "停靠线、支架、工具臂和被放置部件匹配；非通用浮空按钮",
+      "states": [
+        "空闲",
+        "占用",
+        "维修",
+        "受损"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B28.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B28-equipment-bay-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B28-equipment-bay-v2.jpg"
+    },
+    {
+      "id": "B29",
+      "group": "B",
+      "template": "building",
+      "key": "cable",
+      "name": "电缆与母排连接段",
+      "purpose": "供电链路",
+      "design": "绝缘外层、端子、线槽与断点；通断有可见反馈，不用长霓虹线当实体",
+      "states": [
+        "完好",
+        "通电",
+        "断裂"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B29.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B29-cable-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B29-cable-v2.jpg"
+    },
+    {
+      "id": "B30",
+      "group": "B",
+      "template": "building",
+      "key": "support_strut",
+      "name": "临时支杆与承重架",
+      "purpose": "支撑/交接通桥",
+      "design": "上端接触、底座和斜撑方向清楚；卸载后保留现场物件",
+      "states": [
+        "收纳",
+        "安装",
+        "受力",
+        "损坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B30.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B30-support-strut-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B30-support-strut-v2.jpg"
+    },
+    {
+      "id": "B31",
+      "group": "B",
+      "template": "building",
+      "key": "signal",
+      "name": "轨旁信号与站台设施",
+      "purpose": "行车方向和可用路线",
+      "design": "独立信号灯/道岔指示/站台边缘；不能与敌方攻击红色闪烁争夺注意",
+      "states": [
+        "停止",
+        "放行",
+        "故障"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B31.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B31-signal-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B31-signal-v2.jpg"
+    },
+    {
+      "id": "B32",
+      "group": "B",
+      "template": "building",
+      "key": "skyline",
+      "name": "城市柱环与远景巨构",
+      "purpose": "三战场属于同一城市",
+      "design": "柱环贯穿A/B/C；桥、站与供能设施有地理关系；巨构远处降低对比",
+      "states": [
+        "日常",
+        "局部事故",
+        "恢复"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B32.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B32-skyline-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B32-skyline-v2.jpg"
+    },
+    {
+      "id": "B33",
+      "group": "B",
+      "template": "building",
+      "key": "street_kit",
+      "name": "道路街具与边界套件",
+      "purpose": "前中后景、尺度和可读边界",
+      "design": "护栏、灯柱、楼梯、检修口、栏板、管桥按用途成套；保持可走空间",
+      "states": [
+        "完好",
+        "受损"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B33.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B33-street-kit-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B33-street-kit-v2.jpg"
+    },
+    {
+      "id": "B34",
+      "group": "B",
+      "template": "building",
+      "key": "service_hut",
+      "name": "检修室和值班室",
+      "purpose": "小型功能建筑",
+      "design": "允许小尺度但必须标明用途；不能拿小屋作为主居民楼；人尺度入口正常",
+      "states": [
+        "完好",
+        "受损",
+        "毁坏"
+      ],
+      "status": "draft-v2",
+      "prompt_pack": "_meta/prompts/B34.txt",
+      "prompt_status": "pack_ready",
+      "gen_block": "cursor.GenerateImage unavailable to executor subagent",
+      "out_target": "incoming/dir-B34-service-hut-v1.jpg",
+      "generateimage_pack": "_meta/prompts/FB-todo-GenerateImage-pack.json",
+      "file": "dir-B34-service-hut-v2.jpg"
+    },
+    {
+      "id": "T01",
+      "group": "T",
+      "template": "terrain",
+      "key": "concrete",
+      "name": "承重混凝土地坪",
+      "purpose": "常态步行面",
+      "design": "中明度矿物色、板缝与有厚度边缘；低对比表面纹理，不能照片噪点盖住角色",
+      "states": [
+        "常态",
+        "边缘接缝",
+        "适用状态变化"
+      ],
+      "status": "draft-v2",
+      "file": "dir-T01-concrete-v2.jpg"
+    },
+    {
+      "id": "T02",
+      "group": "T",
+      "template": "terrain",
+      "key": "painted_steel",
+      "name": "涂装金属甲板",
+      "purpose": "工业地面",
+      "design": "成片涂装与检修板分区；边缘和螺栓不铺满全地面",
+      "states": [
+        "常态",
+        "边缘接缝",
+        "适用状态变化"
+      ],
+      "status": "draft-v2",
+      "file": "dir-T02-painted_steel-v2.jpg"
+    },
+    {
+      "id": "T03",
+      "group": "T",
+      "template": "terrain",
+      "key": "grating",
+      "name": "格栅与排水槽",
+      "purpose": "材料差别",
+      "design": "格栅真实深度与暗腔；密纹在正常镜头不闪烁",
+      "states": [
+        "常态",
+        "边缘接缝",
+        "适用状态变化"
+      ],
+      "status": "draft-v2",
+      "file": "dir-T03-grating-v2.jpg"
+    },
+    {
+      "id": "T04",
+      "group": "T",
+      "template": "terrain",
+      "key": "rail",
+      "name": "轨道与道岔",
+      "purpose": "列车路线",
+      "design": "轨、枕木/扣件、路基和岔口；方向连续、不可跨地图倒转",
+      "states": [
+        "常态",
+        "边缘接缝",
+        "适用状态变化"
+      ],
+      "status": "draft-v2",
+      "file": "dir-T04-rail-v2.jpg"
+    },
+    {
+      "id": "T05",
+      "group": "T",
+      "template": "terrain",
+      "key": "conveyor",
+      "name": "输送带",
+      "purpose": "自动位移地形",
+      "design": "运行方向与规则一致；纹理流动朝实际输送方向",
+      "states": [
+        "常态",
+        "边缘接缝",
+        "适用状态变化"
+      ],
+      "status": "draft-v2",
+      "file": "dir-T05-conveyor-v2.jpg"
+    },
+    {
+      "id": "T06",
+      "group": "T",
+      "template": "terrain",
+      "key": "rubble",
+      "name": "碎石与残骸地面",
+      "purpose": "额外移动代价",
+      "design": "少量大块碎料、可见低起伏；与不可通行残墙区分",
+      "states": [
+        "常态",
+        "边缘接缝",
+        "适用状态变化"
+      ],
+      "status": "draft-v2",
+      "file": "dir-T06-rubble-v2.jpg"
+    },
+    {
+      "id": "T07",
+      "group": "T",
+      "template": "terrain",
+      "key": "shallow_water",
+      "name": "浅水",
+      "purpose": "涉水地形",
+      "design": "可见渠底、岸沿和水线；涉水单位不误显示坠落",
+      "states": [
+        "常态",
+        "边缘接缝",
+        "适用状态变化"
+      ],
+      "status": "draft-v2",
+      "file": "dir-T07-shallow_water-v2.jpg"
+    },
+    {
+      "id": "T08",
+      "group": "T",
+      "template": "terrain",
+      "key": "deep_water",
+      "name": "深渠与深水",
+      "purpose": "坠落/淹没风险",
+      "design": "有渠壁、水面高度和连续深度；不要死黑坑或镜面摄影水",
+      "states": [
+        "常态",
+        "边缘接缝",
+        "适用状态变化"
+      ],
+      "status": "draft-v2",
+      "file": "dir-T08-deep_water-v2.jpg"
+    },
+    {
+      "id": "T09",
+      "group": "T",
+      "template": "terrain",
+      "key": "pit",
+      "name": "深坑与结构缺口",
+      "purpose": "不支撑地面",
+      "design": "可见侧壁/梁断口，边缘脚印清楚；不把黑方块直接贴地",
+      "states": [
+        "常态",
+        "边缘接缝",
+        "适用状态变化"
+      ],
+      "status": "draft-v2",
+      "file": "dir-T09-pit-v2.jpg"
+    },
+    {
+      "id": "T10",
+      "group": "T",
+      "template": "terrain",
+      "key": "oil",
+      "name": "油面与可燃物",
+      "purpose": "燃烧连锁",
+      "design": "局部油膜形状与暗反光；低对比，不与水混同",
+      "states": [
+        "常态",
+        "边缘接缝",
+        "适用状态变化"
+      ],
+      "status": "draft-v2",
+      "file": "dir-T10-oil-v2.jpg"
+    },
+    {
+      "id": "T11",
+      "group": "T",
+      "template": "terrain",
+      "key": "burnt",
+      "name": "燃后地面",
+      "purpose": "持续状态结果",
+      "design": "烧痕、少量残烟与材质变化；火消失后仍有结果但不永久遮格",
+      "states": [
+        "常态",
+        "边缘接缝",
+        "适用状态变化"
+      ],
+      "status": "draft-v2",
+      "file": "dir-T11-burnt-v2.jpg"
+    },
+    {
+      "id": "T12",
+      "group": "T",
+      "template": "terrain",
+      "key": "electrical",
+      "name": "带电地面",
+      "purpose": "电击危害",
+      "design": "导电材料/破缆来源、边界与短放电；持续危险标记另由UI处理",
+      "states": [
+        "常态",
+        "边缘接缝",
+        "适用状态变化"
+      ],
+      "status": "draft-v2",
+      "file": "dir-T12-electrical-v2.jpg"
+    },
+    {
+      "id": "T13",
+      "group": "T",
+      "template": "terrain",
+      "key": "upper",
+      "name": "可行走屋顶与平台",
+      "purpose": "上层/净空",
+      "design": "屋顶有厚度、可走面和栏杆缺口；不能与背景屋顶混同",
+      "states": [
+        "常态",
+        "边缘接缝",
+        "适用状态变化"
+      ],
+      "status": "draft-v2",
+      "file": "dir-T13-upper-v2.jpg"
+    },
+    {
+      "id": "T14",
+      "group": "T",
+      "template": "terrain",
+      "key": "slope",
+      "name": "坡道与阶梯",
+      "purpose": "高度连接",
+      "design": "起终点、坡向、梁支撑有实体；显示高差但不制造虚假阻挡",
+      "states": [
+        "常态",
+        "边缘接缝",
+        "适用状态变化"
+      ],
+      "status": "draft-v2",
+      "file": "dir-T14-slope-v2.jpg"
+    },
+    {
+      "id": "T15",
+      "group": "T",
+      "template": "terrain",
+      "key": "bridge_debris",
+      "name": "塌桥断面与沉落物",
+      "purpose": "通路被毁",
+      "design": "断梁、桥板和水花/落尘接口；不能仍保留完整桥面贴图",
+      "states": [
+        "常态",
+        "边缘接缝",
+        "适用状态变化"
+      ],
+      "status": "draft-v2",
+      "file": "dir-T15-bridge_debris-v2.jpg"
+    },
+    {
+      "id": "T16",
+      "group": "T",
+      "template": "terrain",
+      "key": "material_families",
+      "name": "统一表面材料家族",
+      "purpose": "建筑/机体/场地材质衔接",
+      "design": "涂装金属、裸金属、混凝土、玻璃、橡胶、发光件分家；同画法不同材质，避免全塑料",
+      "states": [
+        "常态",
+        "边缘接缝",
+        "适用状态变化"
+      ],
+      "status": "draft-v2",
+      "file": "dir-T16-material_families-v2.jpg"
+    },
+    {
+      "id": "S01",
+      "group": "S",
+      "template": "scene",
+      "key": "city_master",
+      "name": "工务城三战场总构图",
+      "purpose": "同城联动一眼成立",
+      "design": "固定既有地理C车站在西、B桥在东、A供电在上方；柱环连贯，色彩与物件分区",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S01-city_master-v2.jpg"
+    },
+    {
+      "id": "S02",
+      "group": "S",
+      "template": "scene",
+      "key": "yard_a",
+      "name": "A供能前庭正常战棋画面",
+      "purpose": "先看清供电和威胁",
+      "design": "鼠尾草绿/钢青绿设备与矿物墙；机体英雄色独立；用实际棋格摆机体敌人建筑，非空场海报",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S02-yard_a-v2.jpg"
+    },
+    {
+      "id": "S03",
+      "group": "S",
+      "template": "scene",
+      "key": "canal_b",
+      "name": "B跨渠桥座正常战棋画面",
+      "purpose": "支撑、深渠和桥路选择",
+      "design": "钢蓝、矿物青水、现代住宅；桥面与渠壁有厚度，留看清推落及托桥的空间",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S03-canal_b-v2.jpg"
+    },
+    {
+      "id": "S04",
+      "group": "S",
+      "template": "scene",
+      "key": "station_c",
+      "name": "C环下装卸站正常战棋画面",
+      "purpose": "清轨与列车保护",
+      "design": "褪蓝与朱红货运设备；车头方向、轨道出口、货箱阻塞读得清",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S04-station_c-v2.jpg"
+    },
+    {
+      "id": "S05",
+      "group": "S",
+      "template": "scene",
+      "key": "command",
+      "name": "指挥廊与部署背景",
+      "purpose": "开场/部署",
+      "design": "三工作面与城市事故有关联；为左侧菜单留安静区，不把HUD画进背景",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S05-command-v2.jpg"
+    },
+    {
+      "id": "S06",
+      "group": "S",
+      "template": "scene",
+      "key": "passengers",
+      "name": "列车与待救检修员",
+      "purpose": "救援目标情绪",
+      "design": "让人看到乘员、受阻列车和临近危险；可分离人群/列车/背景做轻动效",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S06-passengers-v2.jpg"
+    },
+    {
+      "id": "S07",
+      "group": "S",
+      "template": "scene",
+      "key": "power_on",
+      "name": "母线接通与链路点亮",
+      "purpose": "操作后的跨区因果",
+      "design": "接电源头→桥→车站；能源流和终端状态拆层，不能只有全屏发光",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S07-power_on-v2.jpg"
+    },
+    {
+      "id": "S08",
+      "group": "S",
+      "template": "scene",
+      "key": "bridge_hold",
+      "name": "托桥与列车通过",
+      "purpose": "机体救援的大魄力场景",
+      "design": "明确支撑机、桥承力位置、列车和居民；不违背馆守缺臂或货柜形态",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S08-bridge_hold-v2.jpg"
+    },
+    {
+      "id": "S09",
+      "group": "S",
+      "template": "scene",
+      "key": "jicun_dispatch",
+      "name": "纪存多方调度特写",
+      "purpose": "主角能力表达",
+      "design": "视线/手势与三处实际事件同方向；终端信息以UI后置，不能代替人物行动",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S09-jicun_dispatch-v3.jpg"
+    },
+    {
+      "id": "S10",
+      "group": "S",
+      "template": "scene",
+      "key": "baiyuan_previs",
+      "name": "白鸢预演特写",
+      "purpose": "预演与改线表达",
+      "design": "分镜、视线与路线草案形成动作；预测是可被推翻的方案，不画成神谕",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S10-baiyuan_previs-v2.jpg"
+    },
+    {
+      "id": "S11",
+      "group": "S",
+      "template": "scene",
+      "key": "qihai_revoke",
+      "name": "七海核验撤令特写",
+      "purpose": "权限全链",
+      "design": "证据、决定、撤令反馈连续；克制的档案峰值层，身份不换装漂移",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S11-qihai_revoke-v2.jpg"
+    },
+    {
+      "id": "S12",
+      "group": "S",
+      "template": "scene",
+      "key": "king_drill",
+      "name": "王者右臂巨钻冲击图",
+      "purpose": "招牌Cut-in",
+      "design": "巨钻从右手/右前臂接出，双炮朝前；对称帅气头与冗余武装，避开裆部误读",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S12-king_drill-v2.jpg"
+    },
+    {
+      "id": "S13",
+      "group": "S",
+      "template": "scene",
+      "key": "hero_sky",
+      "name": "无牌天冲拳冲击图",
+      "purpose": "体术招牌",
+      "design": "从脚底、转髋、肩到拳形成一条发力线；拳接触点明确；特效不遮拳体",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S13-hero_sky-v2.jpg"
+    },
+    {
+      "id": "S14",
+      "group": "S",
+      "template": "scene",
+      "key": "brave_assembly",
+      "name": "社勇王合体关键镜头",
+      "purpose": "完整核心与外组件组合",
+      "design": "核心、腿架、肩包各自有来源；3–5关键姿态可转成短演出",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S14-brave_assembly-v2.jpg"
+    },
+    {
+      "id": "S15",
+      "group": "S",
+      "template": "scene",
+      "key": "rival_reveal",
+      "name": "断冠宿敌出场",
+      "purpose": "宿敌压迫感与可破弱侧",
+      "design": "独立冠环/护板；留可视反制点，非堆尖刺黑团",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S15-rival_reveal-v2.jpg"
+    },
+    {
+      "id": "S16",
+      "group": "S",
+      "template": "scene",
+      "key": "outcome",
+      "name": "救援成功与失守后果",
+      "purpose": "胜败可理解",
+      "design": "成功见通桥离站与乘员；失败按真实对象分列车受损/居民楼毁坏/路线中断，不通用烟花",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S16-outcome-v2.jpg"
+    },
+    {
+      "id": "S17",
+      "group": "S",
+      "template": "scene",
+      "key": "c02_street",
+      "name": "模型街与港口街景",
+      "purpose": "前章既有背景换装",
+      "design": "两地构图与用途不同；现代工业生活街区，比例与人物吻合；不再中古皇城街景",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S17-c02_street-v2.jpg"
+    },
+    {
+      "id": "S18",
+      "group": "S",
+      "template": "scene",
+      "key": "c02_workshop",
+      "name": "模型病院与三号工房",
+      "purpose": "前章生活与工程场所",
+      "design": "模型桌、工具、人尺度空间；实际巨机工房另分区，不能把模型直接画成巨机",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S18-c02_workshop-v2.jpg"
+    },
+    {
+      "id": "S19",
+      "group": "S",
+      "template": "scene",
+      "key": "c02_cargo",
+      "name": "货柜领袖事件图",
+      "purpose": "前章事件不只对白",
+      "design": "有行为、阻碍和结果的剧情画面；与新原创机设相同",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S19-c02_cargo-v2.jpg"
+    },
+    {
+      "id": "S20",
+      "group": "S",
+      "template": "scene",
+      "key": "c02_champion",
+      "name": "完全版王者冠军展示与卸甲",
+      "purpose": "前章节目与自主救场",
+      "design": "竞技冠军冗余帅气与卸装后的同一主体；保留自主性，不画遥控傀儡",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S20-c02_champion-v3.jpg"
+    },
+    {
+      "id": "S21",
+      "group": "S",
+      "template": "scene",
+      "key": "c02_baiyuan",
+      "name": "白鸢作品与现场事件",
+      "purpose": "前章作品/人到场的区分",
+      "design": "作品痕迹与本人在场分开；不借新图更改既有出场时间",
+      "states": [
+        "构图稿",
+        "色稿",
+        "分层成稿"
+      ],
+      "status": "draft-v2",
+      "file": "dir-S21-c02_baiyuan-v3.jpg"
+    },
+    {
+      "id": "X01",
+      "group": "X",
+      "template": "fx",
+      "key": "jab",
+      "name": "轻拳命中",
+      "purpose": "短促接触和截击",
+      "design": "小而清楚的硬边冲击核+方向短线，不要所有拳都爆炸",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X01-jab-v2.jpg"
+    },
+    {
+      "id": "X02",
+      "group": "X",
+      "template": "fx",
+      "key": "heavy_punch",
+      "name": "重拳与勾拳",
+      "purpose": "重量、冲击与位移",
+      "design": "预备受力、较大的方向冲击、地面尘和后移；与轻拳节奏有差异",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X02-heavy-punch-v2.jpg"
+    },
+    {
+      "id": "X03",
+      "group": "X",
+      "template": "fx",
+      "key": "kick",
+      "name": "正蹬与回旋踢",
+      "purpose": "前推/侧推方向",
+      "design": "腿部轨迹与接触核分离；旋踢扇轨不能暗示整扇面均伤害",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X03-kick-v2.jpg"
+    },
+    {
+      "id": "X04",
+      "group": "X",
+      "template": "fx",
+      "key": "sky",
+      "name": "天冲拳",
+      "purpose": "招牌体术高潮",
+      "design": "发力上升线、拳体和穿破层分清；接触后迅速收束回棋盘",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X04-sky-v2.jpg"
+    },
+    {
+      "id": "X05",
+      "group": "X",
+      "template": "fx",
+      "key": "slash",
+      "name": "军刀斩击",
+      "purpose": "刀具与近防",
+      "design": "刀尖轨迹、斩痕和少量火花；不拿能量球代刀光",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X05-slash-v2.jpg"
+    },
+    {
+      "id": "X06",
+      "group": "X",
+      "template": "fx",
+      "key": "drill",
+      "name": "右臂巨钻",
+      "purpose": "钻入与推进",
+      "design": "沿钻轴的碎屑/摩擦火花；接触材料有变化，不能爆点落在身体中心",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X06-drill-fx-v2.jpg"
+    },
+    {
+      "id": "X07",
+      "group": "X",
+      "template": "fx",
+      "key": "beam",
+      "name": "首体阻挡光束",
+      "purpose": "直线打到首个实体",
+      "design": "炮口、亮核、外晕、终点刻印分层；终点后没有伤害射线",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X07-beam-v2.jpg"
+    },
+    {
+      "id": "X08",
+      "group": "X",
+      "template": "fx",
+      "key": "pierce",
+      "name": "贯穿光束",
+      "purpose": "穿过规则允许的目标",
+      "design": "贯穿线和每个命中脉冲分层；被墙截断处终止，不能视觉无限贯穿",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X08-pierce-v2.jpg"
+    },
+    {
+      "id": "X09",
+      "group": "X",
+      "template": "fx",
+      "key": "twin_cannon",
+      "name": "双肩炮齐射",
+      "purpose": "双条实际炮线",
+      "design": "两炮各自起点和后坐；两条线不合成中央激光",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X09-twin-cannon-v2.jpg"
+    },
+    {
+      "id": "X10",
+      "group": "X",
+      "template": "fx",
+      "key": "missile",
+      "name": "爆破导弹",
+      "purpose": "飞行、中心及邻格爆破",
+      "design": "可见弹体尾迹、地影、首爆与邻区爆片；范围随真实结果生成",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X10-missile-v2.jpg"
+    },
+    {
+      "id": "X11",
+      "group": "X",
+      "template": "fx",
+      "key": "shockwave",
+      "name": "震荡空爆",
+      "purpose": "爆心伤害与四邻吹离",
+      "design": "外推冲击环与方向风迹；不把没有伤害的四邻都画成爆炸受伤",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X11-shockwave-v2.jpg"
+    },
+    {
+      "id": "X12",
+      "group": "X",
+      "template": "fx",
+      "key": "artillery",
+      "name": "跨区炮弹",
+      "purpose": "来源、越区飞行与落点",
+      "design": "炮口→飞行弹→目标标记→着地爆炸同一方向；不能无源落雷",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X12-artillery-v2.jpg"
+    },
+    {
+      "id": "X13",
+      "group": "X",
+      "template": "fx",
+      "key": "acid",
+      "name": "酸液喷射",
+      "purpose": "锁格酸液命中",
+      "design": "液滴/弧线/落地喷溅区别于光束和火球；残留只在规则有持续酸时出现",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X13-acid-v2.jpg"
+    },
+    {
+      "id": "X14",
+      "group": "X",
+      "template": "fx",
+      "key": "tether",
+      "name": "牵引索",
+      "purpose": "钩爪张紧与拉回",
+      "design": "发射点和附着点明确；受力线随双方位置变化，不画成推箭头",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X14-tether-v2.jpg"
+    },
+    {
+      "id": "X15",
+      "group": "X",
+      "template": "fx",
+      "key": "pin",
+      "name": "拘束索",
+      "purpose": "锁步但保留开火",
+      "design": "环扣/索紧表达移动受限；不盖掉敌方仍有效的攻击轨迹",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X15-pin-v2.jpg"
+    },
+    {
+      "id": "X16",
+      "group": "X",
+      "template": "fx",
+      "key": "mark",
+      "name": "棱镜标定",
+      "purpose": "后续攻击的标定来源",
+      "design": "一次扫描→目标刻印；不要长期占满全身轮廓",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X16-mark-v2.jpg"
+    },
+    {
+      "id": "X17",
+      "group": "X",
+      "template": "fx",
+      "key": "jam",
+      "name": "导引干扰",
+      "purpose": "取消未发攻击",
+      "design": "导引器官短错相、承诺轨迹断开；不是通用电击伤害",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X17-jam-v2.jpg"
+    },
+    {
+      "id": "X18",
+      "group": "X",
+      "template": "fx",
+      "key": "shield",
+      "name": "护盾施加与吸收",
+      "purpose": "单体/群体护场",
+      "design": "展开、命中吸收、破盾三段；轮廓薄且可看见单位",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X18-shield-v2.jpg"
+    },
+    {
+      "id": "X19",
+      "group": "X",
+      "template": "fx",
+      "key": "foam",
+      "name": "泡沫灭火与护场",
+      "purpose": "消防的通用效果",
+      "design": "喷射形状、落地泡沫与火焰退去；不能用蓝盾复制替代",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X19-foam-v2.jpg"
+    },
+    {
+      "id": "X20",
+      "group": "X",
+      "template": "fx",
+      "key": "repair",
+      "name": "焊补与恢复",
+      "purpose": "工具动作及真实耐久恢复",
+      "design": "焊点、小飞溅、补片完成信号；没有恢复不播假加血",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X20-weld-v2.jpg"
+    },
+    {
+      "id": "X21",
+      "group": "X",
+      "template": "fx",
+      "key": "jack",
+      "name": "液压顶推",
+      "purpose": "无直接伤害的施力",
+      "design": "活塞受力、地面尘、位移/碰撞分别表达；无伤不白闪血光",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X21-hydraulic-v2.jpg"
+    },
+    {
+      "id": "X22",
+      "group": "X",
+      "template": "fx",
+      "key": "deploy",
+      "name": "造墙架桥与产物落地",
+      "purpose": "物件从机体到地面",
+      "design": "抛出/展开/接地短尘与卡扣；产物本体来自独立模型",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X22-construct-v2.jpg"
+    },
+    {
+      "id": "X23",
+      "group": "X",
+      "template": "fx",
+      "key": "transform",
+      "name": "变形锁扣与推进",
+      "purpose": "形态过渡",
+      "design": "机械锁止、短推进流，不用大烟遮住整个变形失败",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X23-transform-lock-v2.jpg"
+    },
+    {
+      "id": "X24",
+      "group": "X",
+      "template": "fx",
+      "key": "assembly",
+      "name": "合体接口",
+      "purpose": "组件连接次序",
+      "design": "引导、接合火花、锁定灯依接口依次发生；不全屏闪白掩盖结构",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X24-combine-dock-v2.jpg"
+    },
+    {
+      "id": "X25",
+      "group": "X",
+      "template": "fx",
+      "key": "collision",
+      "name": "单位碰撞与撞墙",
+      "purpose": "接触对象和二次伤害",
+      "design": "单位/金属/混凝土三材质片元；撞击点贴实际边界",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X25-collision-v2.jpg"
+    },
+    {
+      "id": "X26",
+      "group": "X",
+      "template": "fx",
+      "key": "water_fall",
+      "name": "落水与坠坑",
+      "purpose": "位置变化及失能",
+      "design": "入水水花/泡沫或坑内落尘；飞行免疫时不能播溺亡",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X26-water-fall-v2.jpg"
+    },
+    {
+      "id": "X27",
+      "group": "X",
+      "template": "fx",
+      "key": "kill",
+      "name": "击破与残骸",
+      "purpose": "机体失能和敌体击破",
+      "design": "机械件脱落与短烟，异形裂解另套；不把所有对象同一烟球盖掉",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X27-kill-v2.jpg"
+    },
+    {
+      "id": "X28",
+      "group": "X",
+      "template": "fx",
+      "key": "chain",
+      "name": "连锁引爆与接力",
+      "purpose": "一手影响多个对象",
+      "design": "按因果顺序跳转，次级爆炸缩短；保留最终落点与血格可见",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X28-chain-v2.jpg"
+    },
+    {
+      "id": "X29",
+      "group": "X",
+      "template": "fx",
+      "key": "flight",
+      "name": "起飞悬停降落",
+      "purpose": "飞行身份",
+      "design": "推进方向、地面扬尘/降落接地同一力向；不用悬空无声飘移",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X29-flight-v2.jpg"
+    },
+    {
+      "id": "X30",
+      "group": "X",
+      "template": "fx",
+      "key": "megastructure",
+      "name": "巨构震动与断裂",
+      "purpose": "跨场景设施后果",
+      "design": "局部接缝开裂、碎落、远处灯列变化；不是整座城乱摇",
+      "states": [
+        "预备",
+        "作用",
+        "结果",
+        "收束"
+      ],
+      "status": "draft-v2",
+      "file": "dir-X30-megastructure-v2.jpg"
+    },
+    {
+      "id": "C01",
+      "group": "C",
+      "template": "fx",
+      "key": "charge",
+      "name": "蓄力准备",
+      "purpose": "准备态可被打断",
+      "design": "身体姿态+武器聚能，主焦点在发射/施力端；阶段图标单独交",
+      "states": [
+        "进入",
+        "保持",
+        "解除",
+        "减少动态模式"
+      ],
+      "status": "draft-v2",
+      "file": "dir-C01-charge-v2.jpg"
+    },
+    {
+      "id": "C02",
+      "group": "C",
+      "template": "fx",
+      "key": "guard",
+      "name": "护势与持续支撑",
+      "purpose": "持续行为没有结束",
+      "design": "受力姿态、接地与设备承重反馈；不当成普通瞬发技能",
+      "states": [
+        "进入",
+        "保持",
+        "解除",
+        "减少动态模式"
+      ],
+      "status": "draft-v2",
+      "file": "dir-C02-guard-v2.jpg"
+    },
+    {
+      "id": "C03",
+      "group": "C",
+      "template": "fx",
+      "key": "fire",
+      "name": "持续燃烧",
+      "purpose": "地形和对象燃烧",
+      "design": "火舌与烟分层、基部贴附目标，正常镜头可见但不遮满盘面",
+      "states": [
+        "进入",
+        "保持",
+        "解除",
+        "减少动态模式"
+      ],
+      "status": "draft-v2",
+      "file": "dir-C03-burn-v2.jpg"
+    },
+    {
+      "id": "C04",
+      "group": "C",
+      "template": "fx",
+      "key": "smoke",
+      "name": "烟雾与余烟",
+      "purpose": "遮挡/气氛分工",
+      "design": "有规则遮挡的烟界与纯余烟区别；不能美术烟擅加规则",
+      "states": [
+        "进入",
+        "保持",
+        "解除",
+        "减少动态模式"
+      ],
+      "status": "draft-v2",
+      "file": "dir-C04-smoke-v2.jpg"
+    },
+    {
+      "id": "C05",
+      "group": "C",
+      "template": "fx",
+      "key": "electric",
+      "name": "漏电与短路",
+      "purpose": "危险来源",
+      "design": "局部断线火花与地面电弧；与安全通电流分家",
+      "states": [
+        "进入",
+        "保持",
+        "解除",
+        "减少动态模式"
+      ],
+      "status": "draft-v2",
+      "file": "dir-C05-electric-v2.jpg"
+    },
+    {
+      "id": "C06",
+      "group": "C",
+      "template": "fx",
+      "key": "power",
+      "name": "通电与断电",
+      "purpose": "设施可用性",
+      "design": "灯列/能量接口状态变化，不把整栋楼刷成发光体",
+      "states": [
+        "进入",
+        "保持",
+        "解除",
+        "减少动态模式"
+      ],
+      "status": "draft-v2",
+      "file": "dir-C06-power-v2.jpg"
+    },
+    {
+      "id": "C07",
+      "group": "C",
+      "template": "fx",
+      "key": "shutdown",
+      "name": "停机与撤令",
+      "purpose": "可保全的市政单位",
+      "design": "机械静止、工作灯退去、锁定解除；与击毁残骸截然不同",
+      "states": [
+        "进入",
+        "保持",
+        "解除",
+        "减少动态模式"
+      ],
+      "status": "draft-v2",
+      "file": "dir-C07-shutdown-v2.jpg"
+    },
+    {
+      "id": "C08",
+      "group": "C",
+      "template": "fx",
+      "key": "immobilized",
+      "name": "拘束与受阻",
+      "purpose": "不能移动",
+      "design": "索具或受阻部位可辨，开火武器仍保持可用表达",
+      "states": [
+        "进入",
+        "保持",
+        "解除",
+        "减少动态模式"
+      ],
+      "status": "draft-v2",
+      "file": "dir-C08-immobilized-v2.jpg"
+    },
+    {
+      "id": "C09",
+      "group": "C",
+      "template": "fx",
+      "key": "jammed",
+      "name": "干扰中",
+      "purpose": "攻击承诺取消",
+      "design": "导引点短失锁与UI取消符号，避免错误表达持续扣血",
+      "states": [
+        "进入",
+        "保持",
+        "解除",
+        "减少动态模式"
+      ],
+      "status": "draft-v2",
+      "file": "dir-C09-jammed-v2.jpg"
+    },
+    {
+      "id": "C10",
+      "group": "C",
+      "template": "fx",
+      "key": "marked",
+      "name": "被标定",
+      "purpose": "后续攻击关系",
+      "design": "简洁标记有来源，不给整片场地永久描边",
+      "states": [
+        "进入",
+        "保持",
+        "解除",
+        "减少动态模式"
+      ],
+      "status": "draft-v2",
+      "file": "dir-C10-marked-v2.jpg"
+    },
+    {
+      "id": "C11",
+      "group": "C",
+      "template": "fx",
+      "key": "armor",
+      "name": "护甲与破甲",
+      "purpose": "伤害差异",
+      "design": "装甲受力/破甲裂层有限表达；损失数字由游戏绘制",
+      "states": [
+        "进入",
+        "保持",
+        "解除",
+        "减少动态模式"
+      ],
+      "status": "draft-v2",
+      "file": "dir-C11-armor-v2.jpg"
+    },
+    {
+      "id": "C12",
+      "group": "C",
+      "template": "fx",
+      "key": "damaged",
+      "name": "轻损重损与失能",
+      "purpose": "机体状态",
+      "design": "状态覆盖层不随每个姿势重画全身；重要缺件有独立模型",
+      "states": [
+        "进入",
+        "保持",
+        "解除",
+        "减少动态模式"
+      ],
+      "status": "draft-v2",
+      "file": "dir-C12-damaged-v2.jpg"
+    },
+    {
+      "id": "C13",
+      "group": "C",
+      "template": "fx",
+      "key": "spawn",
+      "name": "增援预告与入场",
+      "purpose": "有时间可反制",
+      "design": "入口积聚、露头、出场分开；不和已入场敌人混淆",
+      "states": [
+        "进入",
+        "保持",
+        "解除",
+        "减少动态模式"
+      ],
+      "status": "draft-v2",
+      "file": "dir-C13-spawn-v2.jpg"
+    },
+    {
+      "id": "C14",
+      "group": "C",
+      "template": "fx",
+      "key": "closed",
+      "name": "入口封闭",
+      "purpose": "增援被取消",
+      "design": "实体封口/关闸反馈，后续预告消失；不是关灯算封闭",
+      "states": [
+        "进入",
+        "保持",
+        "解除",
+        "减少动态模式"
+      ],
+      "status": "draft-v2",
+      "file": "dir-C14-closed-v2.jpg"
+    },
+    {
+      "id": "C15",
+      "group": "C",
+      "template": "fx",
+      "key": "objective",
+      "name": "目标完成与仍阻塞",
+      "purpose": "跨区后果",
+      "design": "接电/通桥/行车分开图形；保留未解决条件，别泛用绿色勾",
+      "states": [
+        "进入",
+        "保持",
+        "解除",
+        "减少动态模式"
+      ],
+      "status": "draft-v2",
+      "file": "dir-C15-objective-v2.jpg"
+    },
+    {
+      "id": "C16",
+      "group": "C",
+      "template": "fx",
+      "key": "scrap",
+      "name": "残骸可回收",
+      "purpose": "资源与障碍",
+      "design": "可回收部件、不可走大残骸和纯装饰碎屑有区别",
+      "states": [
+        "进入",
+        "保持",
+        "解除",
+        "减少动态模式"
+      ],
+      "status": "draft-v2",
+      "file": "dir-C16-scrap-v2.jpg"
+    },
+    {
+      "id": "G01",
+      "group": "G",
+      "template": "graphic",
+      "key": "hover",
+      "name": "自由探索悬停",
+      "purpose": "光标发现对象",
+      "design": "贴实际脚印，强度低于选中；不盖对象主体",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G01-hover-v2.jpg"
+    },
+    {
+      "id": "G02",
+      "group": "G",
+      "template": "graphic",
+      "key": "selected",
+      "name": "选中足迹",
+      "purpose": "选中了谁",
+      "design": "1×1/2×2/3×3完整脚印；微型外观不缩掉实际选择范围",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G02-selected-v2.jpg"
+    },
+    {
+      "id": "G03",
+      "group": "G",
+      "template": "graphic",
+      "key": "move_range",
+      "name": "可达范围",
+      "purpose": "能走到哪里",
+      "design": "轻底/边界清楚；多格单位按真实合法终点显示",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G03-move-range-v2.jpg"
+    },
+    {
+      "id": "G04",
+      "group": "G",
+      "template": "graphic",
+      "key": "route",
+      "name": "连续路径",
+      "purpose": "将怎样走",
+      "design": "方向箭头从起点流向终点；绕障路径与费用一致",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G04-route-v2.jpg"
+    },
+    {
+      "id": "G05",
+      "group": "G",
+      "template": "graphic",
+      "key": "landing",
+      "name": "终点与落位",
+      "purpose": "到达后占哪里",
+      "design": "完整占格与朝向；高层落点标高度",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G05-landing-v2.jpg"
+    },
+    {
+      "id": "G06",
+      "group": "G",
+      "template": "graphic",
+      "key": "invalid",
+      "name": "不可用目标",
+      "purpose": "为什么不能做",
+      "design": "阻挡点或缺少条件就近标出；不弹大菜单",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G06-invalid-v2.jpg"
+    },
+    {
+      "id": "G07",
+      "group": "G",
+      "template": "graphic",
+      "key": "melee",
+      "name": "近战与扇面",
+      "purpose": "真实受影响目标",
+      "design": "范围按规则而非挥动刀光猜；主目标与余波区分",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G07-melee-v2.jpg"
+    },
+    {
+      "id": "G08",
+      "group": "G",
+      "template": "graphic",
+      "key": "ray",
+      "name": "直射轨迹",
+      "purpose": "第一遮挡物与终点",
+      "design": "起点有武器来源，遮挡后虚线/截断符号；世界空间深度正确",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G08-ray-v2.jpg"
+    },
+    {
+      "id": "G09",
+      "group": "G",
+      "template": "graphic",
+      "key": "pierce",
+      "name": "贯穿轨迹",
+      "purpose": "多对象受影响",
+      "design": "贯穿目标逐一标示，停止点明确",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G09-pierce-v2.jpg"
+    },
+    {
+      "id": "G10",
+      "group": "G",
+      "template": "graphic",
+      "key": "lob",
+      "name": "投射弧线",
+      "purpose": "投掷与炮弹落点",
+      "design": "明显弧线和落点；飞行弧与地面影响区域分开",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G10-lob-v2.jpg"
+    },
+    {
+      "id": "G11",
+      "group": "G",
+      "template": "graphic",
+      "key": "blast",
+      "name": "爆炸范围",
+      "purpose": "连爆与友伤",
+      "design": "中心/邻接/二级连爆分层；盾保护不隐藏受影响事实",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G11-blast-v2.jpg"
+    },
+    {
+      "id": "G12",
+      "group": "G",
+      "template": "graphic",
+      "key": "push",
+      "name": "推拉位移",
+      "purpose": "目标去哪",
+      "design": "大箭头、落点影与步数；前推/侧推/拉回不同方向",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G12-push-v2.jpg"
+    },
+    {
+      "id": "G13",
+      "group": "G",
+      "template": "graphic",
+      "key": "collision",
+      "name": "碰撞结果",
+      "purpose": "谁撞谁与损失",
+      "design": "接触处撞击符号、双方损失及停止格",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G13-collision-v2.jpg"
+    },
+    {
+      "id": "G14",
+      "group": "G",
+      "template": "graphic",
+      "key": "fall",
+      "name": "落水坠坑",
+      "purpose": "地形后果",
+      "design": "落点危险符号与消失/失能反馈，飞行豁免明确",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G14-fall-v2.jpg"
+    },
+    {
+      "id": "G15",
+      "group": "G",
+      "template": "graphic",
+      "key": "hp",
+      "name": "预计耐久变化",
+      "purpose": "将失去或恢复多少",
+      "design": "损失段闪烁与保留段稳定，恢复另色/纹理；不是只有漂浮数字",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G15-hp-v2.jpg"
+    },
+    {
+      "id": "G16",
+      "group": "G",
+      "template": "graphic",
+      "key": "threat_wall",
+      "name": "敌方目标光墙",
+      "purpose": "建筑正在被瞄准",
+      "design": "标准高度红色半透明墙罩脚印，深度遮挡正确；不能2D框线穿过楼脸",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G16-threat-wall-v2.jpg"
+    },
+    {
+      "id": "G17",
+      "group": "G",
+      "template": "graphic",
+      "key": "intent",
+      "name": "敌方承诺方向与顺序",
+      "purpose": "敌人即将干什么",
+      "design": "顺序徽标与设施编号分层；悬停明显轨迹、目标、HP变化",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G17-intent-v2.jpg"
+    },
+    {
+      "id": "G18",
+      "group": "G",
+      "template": "graphic",
+      "key": "cancelled",
+      "name": "被取消的威胁",
+      "purpose": "这一手避免了什么",
+      "design": "旧轨迹淡去/断开、被保住对象的损失归零；不只写一句文字",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G18-cancelled-v2.jpg"
+    },
+    {
+      "id": "G19",
+      "group": "G",
+      "template": "graphic",
+      "key": "reinforcement",
+      "name": "增援位置与时间",
+      "purpose": "会从哪出来",
+      "design": "格位、敌种剪影与轮次分开；未入场不画成已站在格子上",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G19-reinforcement-v2.jpg"
+    },
+    {
+      "id": "G20",
+      "group": "G",
+      "template": "graphic",
+      "key": "cross_board",
+      "name": "跨区因果线",
+      "purpose": "哪边影响哪边",
+      "design": "源设施→目标区域/对象，状态变化沿线发生；全城总览与局部提示同语义",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G20-cross-board-v2.jpg"
+    },
+    {
+      "id": "G21",
+      "group": "G",
+      "template": "graphic",
+      "key": "convoy",
+      "name": "撤离路线与阻塞",
+      "purpose": "保护哪段路",
+      "design": "车头朝向、C→B→东出口连续；阻塞点/下一可走段清楚",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G21-convoy-v2.jpg"
+    },
+    {
+      "id": "G22",
+      "group": "G",
+      "template": "graphic",
+      "key": "height",
+      "name": "上层承重与净空",
+      "purpose": "高低空间规则",
+      "design": "层号、垂直连接、承重危险；不会贴到楼体假平面",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G22-height-v2.jpg"
+    },
+    {
+      "id": "G23",
+      "group": "G",
+      "template": "graphic",
+      "key": "equipment",
+      "name": "吊运变形合体包络",
+      "purpose": "空间和载荷限制",
+      "design": "载荷/新形态完整脚印、扫掠障碍、落位方向；合法与失败可分",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G23-equipment-v2.jpg"
+    },
+    {
+      "id": "G24",
+      "group": "G",
+      "template": "graphic",
+      "key": "cost",
+      "name": "移动行动与资源费用",
+      "purpose": "一手的代价",
+      "design": "图标+数值留位，移动/主行动/弹药/备件不同符号",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G24-cost-v2.jpg"
+    },
+    {
+      "id": "G25",
+      "group": "G",
+      "template": "graphic",
+      "key": "area_tools",
+      "name": "修理支撑导引作用区",
+      "purpose": "非伤害技能范围",
+      "design": "支撑接口、维修邻接、护群来源可见；不套攻击箭头",
+      "states": [
+        "默认",
+        "悬停",
+        "预览",
+        "执行",
+        "减少动态/色觉适配"
+      ],
+      "status": "draft-v2",
+      "file": "dir-G25-area-tools-v2.jpg"
+    },
+    {
+      "id": "U01",
+      "group": "U",
+      "template": "ui",
+      "key": "mission",
+      "name": "精简目标条",
+      "purpose": "我在保护什么、缺什么",
+      "design": "优先目标与一条当前阻碍；三条链路可展开；不堆长任务清单",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U01-mission-v1.jpg"
+    },
+    {
+      "id": "U02",
+      "group": "U",
+      "template": "ui",
+      "key": "board_tabs",
+      "name": "三战場切换",
+      "purpose": "本区/异区还有行动",
+      "design": "地域小图/色块、名称、余行动、重要风险层次分明",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U02-board_tabs-v1.jpg"
+    },
+    {
+      "id": "U03",
+      "group": "U",
+      "template": "ui",
+      "key": "unit_strip",
+      "name": "机体头像条",
+      "purpose": "可行动者与选中",
+      "design": "头肩专用图；行动可用/耗尽/受损/跨区状态，别再全身缩图",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U03-unit_strip-v1.jpg"
+    },
+    {
+      "id": "U04",
+      "group": "U",
+      "template": "ui",
+      "key": "skills",
+      "name": "快捷招式条",
+      "purpose": "选机后的直接操作",
+      "design": "招式图标、按键、费用留位；普通动作不嵌套多层菜单",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U04-skills-v1.jpg"
+    },
+    {
+      "id": "U05",
+      "group": "U",
+      "template": "ui",
+      "key": "inspect",
+      "name": "光标资讯浮窗",
+      "purpose": "自由探索信息",
+      "design": "短摘要与按住详细的展开稿；位置避开光标和受影响单位",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U05-inspect-v1.jpg"
+    },
+    {
+      "id": "U06",
+      "group": "U",
+      "template": "ui",
+      "key": "consequence",
+      "name": "这一手后果",
+      "purpose": "立即结果和取消威胁",
+      "design": "血格/位移/碰撞/链路变化优先，文字只补原因",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U06-consequence-v1.jpg"
+    },
+    {
+      "id": "U07",
+      "group": "U",
+      "template": "ui",
+      "key": "end_round",
+      "name": "结束回合预告",
+      "purpose": "不作为的后果",
+      "design": "未用主行动、将受损对象、增援分段；实际与下轮预告不混",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U07-end_round-v1.jpg"
+    },
+    {
+      "id": "U08",
+      "group": "U",
+      "template": "ui",
+      "key": "overview",
+      "name": "全城总览",
+      "purpose": "跨战场联动",
+      "design": "三块真实地图关系、源/目标设施、列车进度和可点击焦点",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U08-overview-v1.jpg"
+    },
+    {
+      "id": "U09",
+      "group": "U",
+      "template": "ui",
+      "key": "comms",
+      "name": "通讯与人物指令",
+      "purpose": "人物的独特作用",
+      "design": "人物专用头像、当前可用原因、目标；未满足条件不装成主按钮",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U09-comms-v1.jpg"
+    },
+    {
+      "id": "U10",
+      "group": "U",
+      "template": "ui",
+      "key": "dialogue",
+      "name": "对话舞台",
+      "purpose": "说话者和听者",
+      "design": "统一眼线与头大小，活动方/听者明暗适度；入场和表情不乱缩放",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U10-dialogue-v1.jpg"
+    },
+    {
+      "id": "U11",
+      "group": "U",
+      "template": "ui",
+      "key": "deployment",
+      "name": "出击编队",
+      "purpose": "单位职责和战场需求",
+      "design": "角色头像/体型/移动方式/主要动词；分区出击限制清楚",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U11-deployment-v1.jpg"
+    },
+    {
+      "id": "U12",
+      "group": "U",
+      "template": "ui",
+      "key": "roster",
+      "name": "机体图鉴与装备",
+      "purpose": "机体技能体系",
+      "design": "母版和游戏模型同身份；武器挂点、变形与大格足迹可读",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U12-roster-v1.jpg"
+    },
+    {
+      "id": "U13",
+      "group": "U",
+      "template": "ui",
+      "key": "cards",
+      "name": "构筑修饰与成长",
+      "purpose": "可选专关的技能变化",
+      "design": "基础动作与修饰关系明确；只做有来源的卡，不创设新数值",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U13-cards-v1.jpg"
+    },
+    {
+      "id": "U14",
+      "group": "U",
+      "template": "ui",
+      "key": "accessibility",
+      "name": "设置与无障碍",
+      "purpose": "字体/动态/色觉/键位",
+      "design": "大字号不溢出；焦点、不可用和按键录入都可区分",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U14-accessibility-v1.jpg"
+    },
+    {
+      "id": "U15",
+      "group": "U",
+      "template": "ui",
+      "key": "onboarding",
+      "name": "首次提示",
+      "purpose": "学会光标探索与一手结果",
+      "design": "简短手势示意，随当前编队；不写死无牌一号",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U15-onboarding-v1.jpg"
+    },
+    {
+      "id": "U16",
+      "group": "U",
+      "template": "ui",
+      "key": "results",
+      "name": "胜败与结算",
+      "purpose": "救了谁、损了什么",
+      "design": "居民、设施、资源、声誉和额外目标用图形分层；不只大段文本",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U16-results-v1.jpg"
+    },
+    {
+      "id": "U17",
+      "group": "U",
+      "template": "ui",
+      "key": "replay",
+      "name": "预演回看控制",
+      "purpose": "看清动作因果",
+      "design": "播放/快进/暂停/退出清楚，不把常驻时间轴铺满底部",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U17-replay-v1.jpg"
+    },
+    {
+      "id": "U18",
+      "group": "U",
+      "template": "ui",
+      "key": "title",
+      "name": "标题与入口",
+      "purpose": "进入当前可玩内容",
+      "design": "按冲击档做品牌和构图；菜单区域安静，主入口明确",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U18-title-v1.jpg"
+    },
+    {
+      "id": "U19",
+      "group": "U",
+      "template": "ui",
+      "key": "buttons",
+      "name": "按钮面板与提示共件",
+      "purpose": "统一现代界面语言",
+      "design": "深墨蓝平面、有限边线、适度强调；避免金框套娃/灰蓝渐变/廉价机械花边",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U19-buttons-v1.jpg"
+    },
+    {
+      "id": "U20",
+      "group": "U",
+      "template": "ui",
+      "key": "bubbles",
+      "name": "机魂与群众气泡",
+      "purpose": "气氛与短提示",
+      "design": "短、靠近说话者、不会遮盖攻击线；战术信息优先",
+      "states": [
+        "普通",
+        "悬停",
+        "选中",
+        "按下",
+        "不可用",
+        "键盘焦点"
+      ],
+      "status": "draft-v1",
+      "file": "dir-U20-bubbles-v1.jpg"
+    },
+    {
+      "id": "I01",
+      "group": "I",
+      "template": "icon",
+      "key": "jab",
+      "name": "截击直拳",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "短直拳与撤步",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I01-jab-v2.jpg"
+    },
+    {
+      "id": "I02",
+      "group": "I",
+      "template": "icon",
+      "key": "kick",
+      "name": "正蹬推位",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "脚掌向前的推力",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I02-kick-v2.jpg"
+    },
+    {
+      "id": "I03",
+      "group": "I",
+      "template": "icon",
+      "key": "round_kick",
+      "name": "转轴回旋踢",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "旋转腿与侧推",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I03-round_kick-v1.jpg"
+    },
+    {
+      "id": "I04",
+      "group": "I",
+      "template": "icon",
+      "key": "sky",
+      "name": "天冲拳",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "上冲拳的标志轮廓",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I04-sky-v1.jpg"
+    },
+    {
+      "id": "I05",
+      "group": "I",
+      "template": "icon",
+      "key": "hook",
+      "name": "摆身勾拳",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "弧线拳路与横向重心",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I05-hook-v1.jpg"
+    },
+    {
+      "id": "I06",
+      "group": "I",
+      "template": "icon",
+      "key": "heavy",
+      "name": "蓄势重拳",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "上举拳与落点",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I06-heavy-v1.jpg"
+    },
+    {
+      "id": "I07",
+      "group": "I",
+      "template": "icon",
+      "key": "counter",
+      "name": "正面接拳",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "接拳防御姿态",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I07-counter-v2.jpg"
+    },
+    {
+      "id": "I08",
+      "group": "I",
+      "template": "icon",
+      "key": "tether",
+      "name": "牵引",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "钩索向内拉",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I08-tether-v1.jpg"
+    },
+    {
+      "id": "I09",
+      "group": "I",
+      "template": "icon",
+      "key": "brace",
+      "name": "持续支撑",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "手臂/支杆托结构",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I09-brace-v1.jpg"
+    },
+    {
+      "id": "I10",
+      "group": "I",
+      "template": "icon",
+      "key": "brave",
+      "name": "护路破甲拳",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "拳与自护轮廓",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I10-brave-v1.jpg"
+    },
+    {
+      "id": "I11",
+      "group": "I",
+      "template": "icon",
+      "key": "final",
+      "name": "破围终式",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "拳与规则扇面",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I11-final-v1.jpg"
+    },
+    {
+      "id": "I12",
+      "group": "I",
+      "template": "icon",
+      "key": "guard",
+      "name": "护场",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "护罩覆盖对象",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I12-guard-v1.jpg"
+    },
+    {
+      "id": "I13",
+      "group": "I",
+      "template": "icon",
+      "key": "cannon",
+      "name": "双肩炮",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "并列两炮",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I13-cannon-v1.jpg"
+    },
+    {
+      "id": "I14",
+      "group": "I",
+      "template": "icon",
+      "key": "drill",
+      "name": "贯岩钻",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "右臂钻头",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I14-drill-v1.jpg"
+    },
+    {
+      "id": "I15",
+      "group": "I",
+      "template": "icon",
+      "key": "beam",
+      "name": "首体光束",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "射线到首个实体停止",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I15-beam-v2.jpg"
+    },
+    {
+      "id": "I16",
+      "group": "I",
+      "template": "icon",
+      "key": "pierce",
+      "name": "贯穿光束",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "射线穿两体",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I16-pierce-v1.jpg"
+    },
+    {
+      "id": "I17",
+      "group": "I",
+      "template": "icon",
+      "key": "saber",
+      "name": "军刀",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "刀刃与短斩",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I17-saber-v1.jpg"
+    },
+    {
+      "id": "I18",
+      "group": "I",
+      "template": "icon",
+      "key": "missile",
+      "name": "爆破导弹",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "弹体与爆片",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I18-missile-v1.jpg"
+    },
+    {
+      "id": "I19",
+      "group": "I",
+      "template": "icon",
+      "key": "shockwave",
+      "name": "震荡空爆",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "中心弹与外推箭头",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I19-shockwave-v1.jpg"
+    },
+    {
+      "id": "I20",
+      "group": "I",
+      "template": "icon",
+      "key": "jam",
+      "name": "导引干扰",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "感测器失锁",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I20-jam-v1.jpg"
+    },
+    {
+      "id": "I21",
+      "group": "I",
+      "template": "icon",
+      "key": "mark",
+      "name": "棱镜标定",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "棱镜和目标标记",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I21-mark-v1.jpg"
+    },
+    {
+      "id": "I22",
+      "group": "I",
+      "template": "icon",
+      "key": "wall",
+      "name": "部署隔离墙",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "墙体与落地底座",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I22-wall-v1.jpg"
+    },
+    {
+      "id": "I23",
+      "group": "I",
+      "template": "icon",
+      "key": "bridge",
+      "name": "铺设桥板",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "折叠桥展开",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I23-bridge-v2.jpg"
+    },
+    {
+      "id": "I24",
+      "group": "I",
+      "template": "icon",
+      "key": "repair",
+      "name": "备件抢修",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "工具与补片",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I24-repair-v1.jpg"
+    },
+    {
+      "id": "I25",
+      "group": "I",
+      "template": "icon",
+      "key": "jack",
+      "name": "液压顶推",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "活塞向外",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I25-jack-v2.jpg"
+    },
+    {
+      "id": "I26",
+      "group": "I",
+      "template": "icon",
+      "key": "lift",
+      "name": "吊移",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "钩与载荷",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I26-lift-v1.jpg"
+    },
+    {
+      "id": "I27",
+      "group": "I",
+      "template": "icon",
+      "key": "transform",
+      "name": "变形",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "同一机体两形态",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I27-transform-v2.jpg"
+    },
+    {
+      "id": "I28",
+      "group": "I",
+      "template": "icon",
+      "key": "foam",
+      "name": "泡沫灭火",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "喷嘴与泡沫",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I28-foam-v1.jpg"
+    },
+    {
+      "id": "I29",
+      "group": "I",
+      "template": "icon",
+      "key": "pin",
+      "name": "拘束索",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "爪锁移动",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I29-pin-v1.jpg"
+    },
+    {
+      "id": "I30",
+      "group": "I",
+      "template": "icon",
+      "key": "operate",
+      "name": "操作设备",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "手柄与机械开关",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I30-operate-v2.jpg"
+    },
+    {
+      "id": "I31",
+      "group": "I",
+      "template": "icon",
+      "key": "read",
+      "name": "读取记录",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "终端与记录页",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I31-read-v2.jpg"
+    },
+    {
+      "id": "I32",
+      "group": "I",
+      "template": "icon",
+      "key": "isolate",
+      "name": "接回母线",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "断接头连通",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I32-isolate-v1.jpg"
+    },
+    {
+      "id": "I33",
+      "group": "I",
+      "template": "icon",
+      "key": "seal",
+      "name": "关闭入口",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "闸门闭合",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I33-seal-v1.jpg"
+    },
+    {
+      "id": "I34",
+      "group": "I",
+      "template": "icon",
+      "key": "rotate",
+      "name": "转台",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "圆盘旋转九十度",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I34-rotate-v1.jpg"
+    },
+    {
+      "id": "I35",
+      "group": "I",
+      "template": "icon",
+      "key": "transfer",
+      "name": "跨区转场",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "两区域之间承运",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I35-transfer-v2.jpg"
+    },
+    {
+      "id": "I36",
+      "group": "I",
+      "template": "icon",
+      "key": "reload",
+      "name": "装填",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "弹匣与装入方向",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I36-reload-v1.jpg"
+    },
+    {
+      "id": "I37",
+      "group": "I",
+      "template": "icon",
+      "key": "recover",
+      "name": "回收",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "完整可回收部件",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I37-recover-v1.jpg"
+    },
+    {
+      "id": "I38",
+      "group": "I",
+      "template": "icon",
+      "key": "detach",
+      "name": "卸装",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "原部件从挂点拆出",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I38-detach-v1.jpg"
+    },
+    {
+      "id": "I39",
+      "group": "I",
+      "template": "icon",
+      "key": "reinstall",
+      "name": "复装",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "部件回到原挂点",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I39-reinstall-v2.jpg"
+    },
+    {
+      "id": "I40",
+      "group": "I",
+      "template": "icon",
+      "key": "combine",
+      "name": "合体",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "核心与外部组件",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I40-combine-v2.jpg"
+    },
+    {
+      "id": "I41",
+      "group": "I",
+      "template": "icon",
+      "key": "separate",
+      "name": "分离",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "合体释放原组件",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I41-separate-v2.jpg"
+    },
+    {
+      "id": "I42",
+      "group": "I",
+      "template": "icon",
+      "key": "takeoff",
+      "name": "起飞",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "上升与推进",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I42-takeoff-v1.jpg"
+    },
+    {
+      "id": "I43",
+      "group": "I",
+      "template": "icon",
+      "key": "land",
+      "name": "降落",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "下降与接地",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I43-land-v1.jpg"
+    },
+    {
+      "id": "I44",
+      "group": "I",
+      "template": "icon",
+      "key": "refuel",
+      "name": "补给",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "接头与燃料",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I44-refuel-v1.jpg"
+    },
+    {
+      "id": "I45",
+      "group": "I",
+      "template": "icon",
+      "key": "dive",
+      "name": "俯冲",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "下向飞行体",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I45-dive-v1.jpg"
+    },
+    {
+      "id": "I46",
+      "group": "I",
+      "template": "icon",
+      "key": "air_ram",
+      "name": "空撞",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "飞行方向与接触",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I46-air_ram-v2.jpg"
+    },
+    {
+      "id": "I47",
+      "group": "I",
+      "template": "icon",
+      "key": "bomb",
+      "name": "投弹",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "机下弹体落点",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I47-bomb-v2.jpg"
+    },
+    {
+      "id": "I48",
+      "group": "I",
+      "template": "icon",
+      "key": "strafe",
+      "name": "扫射",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "飞行轨迹与射击",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I48-strafe-v1.jpg"
+    },
+    {
+      "id": "I49",
+      "group": "I",
+      "template": "icon",
+      "key": "airlift",
+      "name": "空中投送",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "飞行载荷",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I49-airlift-v1.jpg"
+    },
+    {
+      "id": "I50",
+      "group": "I",
+      "template": "icon",
+      "key": "observe",
+      "name": "观察",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "观察器与区域",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I50-observe-v1.jpg"
+    },
+    {
+      "id": "I51",
+      "group": "I",
+      "template": "icon",
+      "key": "survey",
+      "name": "勘测",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "工具与结构读数",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I51-survey-v2.jpg"
+    },
+    {
+      "id": "I52",
+      "group": "I",
+      "template": "icon",
+      "key": "connect",
+      "name": "接线",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "两个端子连通",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I52-connect-v1.jpg"
+    },
+    {
+      "id": "I53",
+      "group": "I",
+      "template": "icon",
+      "key": "lock_support",
+      "name": "锁固支撑",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "锚点与锁扣",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I53-lock_support-v1.jpg"
+    },
+    {
+      "id": "I54",
+      "group": "I",
+      "template": "icon",
+      "key": "elevate",
+      "name": "升降",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "平台与上下箭头",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I54-elevate-v1.jpg"
+    },
+    {
+      "id": "I55",
+      "group": "I",
+      "template": "icon",
+      "key": "drain",
+      "name": "排水",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "闸口与水位下降",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I55-drain-v1.jpg"
+    },
+    {
+      "id": "I56",
+      "group": "I",
+      "template": "icon",
+      "key": "restart",
+      "name": "重启",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "机械启动循环",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I56-restart-v1.jpg"
+    },
+    {
+      "id": "I57",
+      "group": "I",
+      "template": "icon",
+      "key": "listen",
+      "name": "纪存倾听",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "机魂/通讯来源",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I57-listen-v1.jpg"
+    },
+    {
+      "id": "I58",
+      "group": "I",
+      "template": "icon",
+      "key": "archive_plan",
+      "name": "白鸢补页",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "分镜本与备用线",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I58-archive_plan-v2.jpg"
+    },
+    {
+      "id": "I59",
+      "group": "I",
+      "template": "icon",
+      "key": "revoke",
+      "name": "七海撤令",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "有效指令被撤销",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I59-revoke-v1.jpg"
+    },
+    {
+      "id": "I60",
+      "group": "I",
+      "template": "icon",
+      "key": "record_evidence",
+      "name": "七海取证",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "证据页与来源",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I60-record_evidence-v2.jpg"
+    },
+    {
+      "id": "I61",
+      "group": "I",
+      "template": "icon",
+      "key": "hard_stop",
+      "name": "兜灯硬停",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "机械制动",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I61-hard_stop-v1.jpg"
+    },
+    {
+      "id": "I62",
+      "group": "I",
+      "template": "icon",
+      "key": "load_reading",
+      "name": "陆衡载荷判读",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "支撑结构与载荷",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I62-load_reading-v2.jpg"
+    },
+    {
+      "id": "I63",
+      "group": "I",
+      "template": "icon",
+      "key": "soul_boost",
+      "name": "豪司共鸣",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "驾驶者与机体响应",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I63-soul_boost-v2.jpg"
+    },
+    {
+      "id": "I64",
+      "group": "I",
+      "template": "icon",
+      "key": "negotiate",
+      "name": "豪司协商",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "两个主体达成条件",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v2",
+      "file": "dir-I64-negotiate-v2.jpg"
+    },
+    {
+      "id": "I65",
+      "group": "I",
+      "template": "icon",
+      "key": "withdraw_charge",
+      "name": "警备撤回",
+      "purpose": "技能/操作入口和对象检查",
+      "design": "准备动作被取消",
+      "states": [
+        "普通",
+        "选中",
+        "不可用",
+        "悬停"
+      ],
+      "status": "draft-v1",
+      "file": "dir-I65-withdraw_charge-v1.jpg"
+    },
+    {
+      "id": "N01",
+      "group": "N",
+      "template": "motion",
+      "key": "idle",
+      "name": "共享待机",
+      "purpose": "标准动作复用",
+      "design": "适度呼吸/重心、机械活动；正常战棋镜头看得出，频率不拖沓；重型/轻型/多足分家",
+      "states": [
+        "准备",
+        "作用事件",
+        "结果",
+        "恢复"
+      ],
+      "status": "draft-v2",
+      "file": "dir-N01-idle-v2.jpg"
+    },
+    {
+      "id": "N02",
+      "group": "N",
+      "template": "motion",
+      "key": "locomotion",
+      "name": "共享奔跑与转向",
+      "purpose": "标准动作复用",
+      "design": "连续沿合法路径移动；直路连续跑，遇障才绕；停步不逐格刹车",
+      "states": [
+        "准备",
+        "作用事件",
+        "结果",
+        "恢复"
+      ],
+      "status": "draft-v2",
+      "file": "dir-N02-locomotion-v2.jpg"
+    },
+    {
+      "id": "N03",
+      "group": "N",
+      "template": "motion",
+      "key": "air_move",
+      "name": "共享飞行与起降",
+      "purpose": "标准动作复用",
+      "design": "离地、巡航、转弯、接地；推进与身体方向一致",
+      "states": [
+        "准备",
+        "作用事件",
+        "结果",
+        "恢复"
+      ],
+      "status": "draft-v2",
+      "file": "dir-N03-air_move-v2.jpg"
+    },
+    {
+      "id": "N04",
+      "group": "N",
+      "template": "motion",
+      "key": "gunner",
+      "name": "共享射击",
+      "purpose": "标准动作复用",
+      "design": "瞄准→武器发射事件→后坐→恢复；步枪、肩炮按挂点适配",
+      "states": [
+        "准备",
+        "作用事件",
+        "结果",
+        "恢复"
+      ],
+      "status": "draft-v2",
+      "file": "dir-N04-gunner-v2.jpg"
+    },
+    {
+      "id": "N05",
+      "group": "N",
+      "template": "motion",
+      "key": "operate",
+      "name": "共享手部操作",
+      "purpose": "标准动作复用",
+      "design": "手部示意+设备状态反馈；不做打开柜门/内部接线细节",
+      "states": [
+        "准备",
+        "作用事件",
+        "结果",
+        "恢复"
+      ],
+      "status": "draft-v2",
+      "file": "dir-N05-operate-v2.jpg"
+    },
+    {
+      "id": "N06",
+      "group": "N",
+      "template": "motion",
+      "key": "work",
+      "name": "共享维修与液压施力",
+      "purpose": "标准动作复用",
+      "design": "同动作家族按工具微调；施力方向和回弹清楚",
+      "states": [
+        "准备",
+        "作用事件",
+        "结果",
+        "恢复"
+      ],
+      "status": "draft-v2",
+      "file": "dir-N06-work-v2.jpg"
+    },
+    {
+      "id": "N07",
+      "group": "N",
+      "template": "motion",
+      "key": "carry",
+      "name": "共享搬运吊运支撑",
+      "purpose": "标准动作复用",
+      "design": "提取、移动、放下与承压；载荷共用高度档，不做单位两两接触表",
+      "states": [
+        "准备",
+        "作用事件",
+        "结果",
+        "恢复"
+      ],
+      "status": "draft-v2",
+      "file": "dir-N07-carry-v2.jpg"
+    },
+    {
+      "id": "N08",
+      "group": "N",
+      "template": "motion",
+      "key": "reaction",
+      "name": "共享受击与失衡",
+      "purpose": "标准动作复用",
+      "design": "方向、轻重、倒地、复原分别响应同一事件",
+      "states": [
+        "准备",
+        "作用事件",
+        "结果",
+        "恢复"
+      ],
+      "status": "draft-v2",
+      "file": "dir-N08-reaction-v2.jpg"
+    },
+    {
+      "id": "N09",
+      "group": "N",
+      "template": "motion",
+      "key": "hero_martial",
+      "name": "无牌拳脚与天冲拳",
+      "purpose": "体术定制",
+      "design": "直拳/正蹬/回旋踢/天冲拳分动作；支撑脚、转髋和手型明确",
+      "states": [
+        "准备",
+        "作用事件",
+        "结果",
+        "恢复"
+      ],
+      "status": "draft-v2",
+      "file": "dir-N09-hero_martial-v2.jpg"
+    },
+    {
+      "id": "N10",
+      "group": "N",
+      "template": "motion",
+      "key": "boxer_boxing",
+      "name": "旧拳王拳击组",
+      "purpose": "体术定制",
+      "design": "勾拳、接拳、重拳有不同重心与节奏，不换名共用一招",
+      "states": [
+        "准备",
+        "作用事件",
+        "结果",
+        "恢复"
+      ],
+      "status": "draft-v2",
+      "file": "dir-N10-boxer_boxing-v2.jpg"
+    },
+    {
+      "id": "N11",
+      "group": "N",
+      "template": "motion",
+      "key": "brave_signature",
+      "name": "勇拳与社勇王招牌拳",
+      "purpose": "体术招牌定制",
+      "design": "核心/合体动作保留人格与发力；终式和普通拳区分",
+      "states": [
+        "准备",
+        "作用事件",
+        "结果",
+        "恢复"
+      ],
+      "status": "draft-v2",
+      "file": "dir-N11-brave_signature-v2.jpg"
+    },
+    {
+      "id": "N12",
+      "group": "N",
+      "template": "motion",
+      "key": "king_drill_motion",
+      "name": "王者钻击装备适配",
+      "purpose": "共享重击加装备层",
+      "design": "右前臂驱动钻轴、旋转和推进；按武器适配，不另建每敌人的动作",
+      "states": [
+        "准备",
+        "作用事件",
+        "结果",
+        "恢复"
+      ],
+      "status": "draft-v2",
+      "file": "dir-N12-king_drill_motion-v2.jpg"
+    },
+    {
+      "id": "N13",
+      "group": "N",
+      "template": "motion",
+      "key": "form_transition",
+      "name": "车辆/航空变形",
+      "purpose": "形态专用设计",
+      "design": "每套形态只做一次合理中间姿势/锁止；不必追求每个零件完美变形动画",
+      "states": [
+        "准备",
+        "作用事件",
+        "结果",
+        "恢复"
+      ],
+      "status": "draft-v2",
+      "file": "dir-N13-form_transition-v2.jpg"
+    },
+    {
+      "id": "N14",
+      "group": "N",
+      "template": "motion",
+      "key": "combine_motion",
+      "name": "社勇王合体/分离",
+      "purpose": "招牌演出设计",
+      "design": "保留完整核心，组件真实进场/接合/落位；分离恢复原身份",
+      "states": [
+        "准备",
+        "作用事件",
+        "结果",
+        "恢复"
+      ],
+      "status": "draft-v2",
+      "file": "dir-N14-combine_motion-v2.jpg"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-19",
+  "generation_mode": "built-in image_gen",
+  "source_images": [
+    "samples/M05-modular-full-r4.png",
+    "samples/M05-core-body-r4.png"
+  ],
+  "prompt": "Use case: infographic-diagram / component design sheet\nAsset: SIX SEPARATE accessory-package groups belonging to the SAME Complete King.\nImage 1 is the sole authority for the finished equipment's shapes, colors, decoration and component families. Image 2 shows the underlying base body: it is only a guide to what is NOT part of the detachable kits. Do not depict any complete robot or head.\n\nMake a clean THREE COLUMNS by TWO ROWS component display, with clear transparent spacing between SIX groups. No labels/text/numbers, no arrows, no cell borders. Each group fits entirely in its cell. All in the same clear KINETIC CEL style, broad navy/ivory/gold/crimson planes, restrained dark mechanical joints, no chrome.\n\nTOP LEFT — Royal over-armor set: the matching two extra thick stepped shoulder outer caps from image 1, the connected chest-edge/waist armor frame pieces and a matching pair of outboard shin over-armor shells. These are shells, empty inside and shown as detached armor, not a torso with limbs. Do not include the base's normal hands or boots.\nTOP MIDDLE — Mobility wing/booster set: the matching LEFT and RIGHT layered navy/ivory/red wing fans with their root thruster clusters and dark independent support bars, plus the matching two elongated navy low rear auxiliary booster nacelles seen hanging behind the legs in image 1. Show these two long nacelles separately but adjacent to the wing group as ONE package set. Preserve the full wings, don't crop tips or change them into the real-world refs.\nTOP RIGHT — Heavy cannon set: EXACTLY TWO large rectangular navy/ivory cannons with gold circular trunnion pivots, joined to the same compact dark dorsal backbone/load beam. Barrels clearly face forward. These are the exact box cannons in image 1, not gatlings, not extra wing guns.\nBOTTOM LEFT — Right forearm drill set: ONE large spiral gold drill and the attached dark/navy/gold forearm motor collar from image 1. Keep the gold helical ridges, connected mount and pointed drill tip. No fist or second drill.\nBOTTOM MIDDLE — Left shield set: the existing tall ivory champion shield with navy/gold frame, crimson inset and original gold champion emblem, plus the matching thick navy/ivory backing shield plate offset just behind and separated enough to see the two plates and their shared two-stage forearm bracket. The front shield face stays exactly as image 1; the second backing shield uses the same outline and material family, not another unrelated design.\nBOTTOM RIGHT — Leg missile set: EXACTLY FOUR rectangular outboard missile pods from image 1: a matched pair of thigh pods and a matched pair of calf pods. Keep their ivory frame, navy housing and dark circular launch tubes. No legs, knee joints or additional armor mixed in.\n\nAll these groups belong to the assembled robot in image 1; preserve their distinctive silhouettes, trim, motifs and relative thickness. This is an accessory organization study, not a new machine or alternative weapon design.\nWide landscape canvas, generous spacing and clear transparent margins around every item and all six groups. Every wing, cannon, nacelle, shield and drill tip complete. True transparent background. No text, no labels, no logos other than the existing original champion emblem.",
+  "output": "samples/M05-accessory-kits-r4.png",
+  "transparent_background": true,
+  "source_refs": [
+    {
+      "file": "samples/M05-modular-full-r4.png",
+      "sha256": "5ff45579fee7bbf87fa562b7a02f451846057b3b9f8c1e5c26d4421fc7396b50"
+    },
+    {
+      "file": "samples/M05-core-body-r4.png",
+      "sha256": "b00b3ecd70638a328a945c841ed06a07fe5ead23efe05b882f779f72425321f4"
+    }
+  ]
+}

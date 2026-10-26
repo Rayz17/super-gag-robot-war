@@ -1,0 +1,21 @@
+STYLE LOCK = Astra KINETIC_CEL (must match references):
+- Hard-edge cel color blocks, pressure ink outlines, max two hard shadow tiers
+- Super Robot Wars / 超级系 readable silhouette; half-Q STANDARD readability
+- Gongwu industrial palette: steel teal / concrete beige / warning vermilion
+- NOT photoreal, NOT AAA PBR, NOT wasteland photo rust, NOT alien biotech, NOT ITB grayboard
+- Direction concept sheet: one clear hero view + small state callouts if needed; NOT full turnaround PSD
+Reference images (match stroke weight, cel blocking, palette):
+- style-lock/01-kinetic-cel-storyframe-v23a.png
+- style-lock/11-tactics-user-accepted.png
+- style-lock/02-mech-hero.jpg
+
+ASSET ID F06 | key=cargo_vehicle | template=form
+NAME: 货柜领袖车辆形态
+PURPOSE: 可变机的移动形态
+DESIGN BRIEF: 轮轴、车头、货台与人形同一套零件；运输空间与乘员安全有实际位置
+STATES to imply on sheet: 常态, 转型中间态, 受损
+IDENTITY retain: 沿用对应母机的造型血统、涂装、零件身份和当前剧情状态。轮轴、车头、货台与人形同一套零件；运输空间与乘员安全有实际位置
+PROJECT DESIGN: 从母机结构设计派生，补独立状态和原先遮挡的表面。使用reuse_sources.json关联同一设计版本；不因拆成清单项而重画另一套。
+AVOID: 合体、变形与拆卸不能凭空更换头胸或增减零件；不可从母体单张动作图猜背面。
+CONTEXT: M11：货柜领袖拥有全尺寸载具身体和独立人格，沿地面重载路线护送队伍与物资。它习惯车灯、喇叭和短频道，在作出个人选择时才说完整句子；不是哑巴，也不是广播拼句。
+Output: single art-direction concept painting, clean readable silhouette, labeled states as small insets OK, no fake UI text walls, no photoreal materials.

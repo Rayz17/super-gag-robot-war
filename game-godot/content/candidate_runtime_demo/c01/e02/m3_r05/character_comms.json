@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "presence_cards": [
+    {
+      "presence_id": "R05_PRESENCE_QIHAI_REMOTE",
+      "actor_id": "CH_QIHAI",
+      "display_name": "七海",
+      "channel": "remote",
+      "source_label": "代哥东区封存中心",
+      "status_text": "本人停机令已撤回",
+      "portrait_slot": "R05_PORTRAIT_QIHAI_REMOTE",
+      "expression_state": "decision",
+      "visible_states": [
+        "SITUATION_REVEAL",
+        "PLAN_EDIT",
+        "PLAN_SUMMARY"
+      ],
+      "interactive": false,
+      "command_capability": "none",
+      "artillery_authority": false,
+      "line_text": "",
+      "source_kind": "accepted_reader_fact",
+      "source_ref": "C01 accepted Reader E02"
+    }
+  ],
+  "entries": [
+    {
+      "beat_id": "R05-B00",
+      "speaker_stable_id": "CH_JICUN",
+      "speaker_display_name": "纪存",
+      "channel": "local",
+      "portrait_slot": "R05_PORTRAIT_JICUN",
+      "expression_state": "focused",
+      "screen_side": "left",
+      "line_text": "人都在后面。把它引到南边去。",
+      "source_kind": "accepted_reader_exact",
+      "source_ref": "34-c01e02-m3-r0-5-joint-interface-contract.md#R05-B00",
+      "trigger_once_key": "R05_FIRST_REVEAL_JICUN",
+      "blocking": true,
+      "minimum_display_seconds": 3.4,
+      "skippable": false
+    },
+    {
+      "beat_id": "R05-B01",
+      "speaker_stable_id": "CH001",
+      "speaker_display_name": "兜灯",
+      "channel": "local",
+      "portrait_slot": "R05_CUTIN_DOUDENG_OBSERVE",
+      "expression_state": "observe",
+      "screen_side": "right",
+      "line_text": "它管身体，你管路。别抢方向，也别让它一脚踩进楼里。",
+      "source_kind": "accepted_reader_exact",
+      "source_ref": "34-c01e02-m3-r0-5-joint-interface-contract.md#R05-B01",
+      "trigger_once_key": "R05_FIRST_PLAN_DOUDENG",
+      "blocking": true,
+      "minimum_display_seconds": 1.4,
+      "skippable": true
+    },
+    {
+      "beat_id": "R05-B04",
+      "speaker_stable_id": "CH002",
+      "speaker_display_name": "旧守护者",
+      "channel": "machine_voice",
+      "portrait_slot": "R05_COMMS_OLD_GUARDIAN",
+      "expression_state": "contact",
+      "screen_side": "left",
+      "line_text": "",
+      "source_kind": "nonverbal",
+      "source_ref": "34-c01e02-m3-r0-5-joint-interface-contract.md#R05-B04",
+      "trigger_once_key": "R05_SWARM_CONTACT_OLD_GUARDIAN",
+      "blocking": false,
+      "minimum_display_seconds": 1.1,
+      "skippable": true
+    },
+    {
+      "beat_id": "R05-B05",
+      "speaker_stable_id": "CH001",
+      "speaker_display_name": "兜灯",
+      "channel": "local",
+      "portrait_slot": "R05_CUTIN_DOUDENG_TENSE",
+      "expression_state": "tense",
+      "screen_side": "right",
+      "line_text": "",
+      "source_kind": "nonverbal",
+      "source_ref": "34-c01e02-m3-r0-5-joint-interface-contract.md#R05-B05",
+      "trigger_once_key": "R05_GIANT_CONTACT_DOUDENG",
+      "blocking": false,
+      "minimum_display_seconds": 1.5,
+      "skippable": true
+    },
+    {
+      "beat_id": "R05-B07",
+      "speaker_stable_id": "CH002",
+      "speaker_display_name": "旧守护者",
+      "channel": "machine_voice",
+      "portrait_slot": "R05_COMMS_OLD_GUARDIAN",
+      "expression_state": "shield_gaze",
+      "screen_side": "left",
+      "line_text": "",
+      "source_kind": "nonverbal",
+      "source_ref": "34-c01e02-m3-r0-5-joint-interface-contract.md#R05-B07",
+      "trigger_once_key": "R05_SHIELD_GAZE_OLD_GUARDIAN",
+      "blocking": false,
+      "minimum_display_seconds": 1.5,
+      "skippable": true
+    }
+  ]
+}

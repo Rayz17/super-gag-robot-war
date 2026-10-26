@@ -1,0 +1,80 @@
+{
+  "revision": "M01-head-front-match-production-r10",
+  "date": "2026-10-18",
+  "asset": "M01 / 无牌一号",
+  "user_directive": "采用这设计，修正正面视图的头部天线",
+  "file": "samples/M01-head-front-matched-r10.png",
+  "sha256": "c1a6de9811ef46490d868df5ee00d59e6da47aaf0db541ac0f008876d14ef069",
+  "pixel_size": [
+    1312,
+    1199
+  ],
+  "mode": "RGBA",
+  "alpha": {
+    "range": [
+      0,
+      255
+    ]
+  },
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-24d33438-24ff-4ba7-a052-3f07714ef79b.png",
+  "generation_mode": "built-in image_gen; isolated front crown correction from adopted side master",
+  "prompt": "M01-head-front-match-prompt-r10.json",
+  "reader": "M01-head-AE-r6.html",
+  "existing_batch": "design-followthrough-r1.json#experience_record_m01_r10",
+  "adopted_design": {
+    "file": "samples/M01-head-center-groove-three-quarter-r9b.png",
+    "sha256": "38a0f36ea2361abede5ec969777db584a5a4d3d6a806f1bf001f899440cf4aa4",
+    "record": "M01-head-center-groove-production-r9.json"
+  },
+  "design_adoption_receipt": "M01-head-design-adoption-20261018.json",
+  "edit_target": {
+    "file": "samples/M01-head-aft-antenna-r7.png",
+    "sha256": "fec7ad02b6d55306726b2012fe0ba9fd375f260a41c4d1f2538ba619572bb6be",
+    "use": "left front view only"
+  },
+  "guardian_contrast": {
+    "file": "refs/guardian-existing-contrast-20261018.png",
+    "sha256": "1d776b53fc11ae55fc540e35066786fd73bb0635ebc2e1db1ca07eafdd461357",
+    "origin": "game-godot/assets/formula_lab/linked_campaign_v6/portraits/guardian.png",
+    "source_was_observed": true,
+    "source_copied_without_pixel_changes": true,
+    "used_as_generation_input": false,
+    "guardian_changed": false
+  },
+  "shared_crest_definition": [
+    "按用户采用的R9b三分之四冠体派生正面，不再反向修改已采用的三分之四。",
+    "一件完整白色冠体；两边白色顶缘夹中央黄色凹槽，左右结构对称。",
+    "长凹槽与额部短嵌件之间保留白色桥接；保留脸部、配色和直线后向侧天线。"
+  ],
+  "author_review": {
+    "reviewer": "author",
+    "actual_media": "实际R10正面返回图、用户采用的R9b三分之四、此前R7左正面。",
+    "observed": [
+      "正面中央白色冠体较旧稿加宽，顶缘、长黄色凹槽及额部短嵌件成中轴对应。",
+      "两条白色顶缘的分段与所采用三分之四的三段结构对应，长槽在额部收尖。",
+      "连续琥珀视窗、封闭面甲、圆侧枢、青绿白金及前视下的窄后向侧天线保留。"
+    ],
+    "limits": [
+      "原画派生并非同一完整模型的严格正投影；不声称像素级镜像。",
+      "正面R10新稿尚未经用户认可；完整机体和运行未验证。"
+    ],
+    "independent_review": false,
+    "later_correction": "此前以单中槽解释已被用户明确纠正：中间是白色实体，左右各开一条槽；R10不作当前正确前视依据。"
+  },
+  "entry_preflight": {
+    "structure_pass": true,
+    "errors": [],
+    "scope": "仅来源/结构预检；全52包331项生产和玩家验收仍未完成。"
+  },
+  "user_accepted": false,
+  "adopted_three_quarter_user_accepted": true,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "latest_user_review": {
+    "date": "2026-10-18",
+    "authority": "direct_user_message_in_this_chat",
+    "verbatim": "我的意思是：头顶天线的黄色凹槽，应该是我画的两个黄色线的位置，而中间应该是白色的，而不是凹槽。这样才能跟图二的侧视图的凹槽的相对位置对应上。你理解一下",
+    "result": "wrong_cross_section_single_center_groove",
+    "new_authority": "M01-head-groove-interpretation-20261018.json"
+  }
+}

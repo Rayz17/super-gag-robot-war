@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-21",
+  "generation_mode": "built-in image_gen",
+  "intent": "precise-object-edit",
+  "input_roles": [
+    {
+      "file": "samples/M11-robot-rear-r1.png",
+      "role": "edit target: tire hub-facing defect"
+    },
+    {
+      "file": "samples/M11-robot-side-r1.png",
+      "role": "tire mount side-plane reference"
+    }
+  ],
+  "prompt": "Use case: precise-object-edit.\nInput image 1 is the edit target: the existing M11 robot REAR view. Input image 2 is a STRUCTURAL reference only: its left profile shows circular tire faces because wheels are mounted on the robot's left/right sides.\nEdit ONLY the ROAD TIRES' visible facing in image 1. Keep pixel composition, entire robot silhouette/height, helmet rear, shoulders, torso/back rails, armor panels, arms, hands, long legs, ankles and feet, materials, colors and blank background exactly unchanged. Do not turn the body.\nIn the target's current rear drawing the side-mounted road tire HUBS mistakenly face the rear viewer. Fix all EIGHT road wheel positions: two at shoulders, two beside upper forearms, four as calf tandem. Each axle shaft points outward LEFT/RIGHT from the robot, perpendicular to the spine's vertical plane, so an observer directly BEHIND sees tire TREAD EDGES, never the broad orange-hub disc faces. Replace the six/eight visible orange-centered circular/elliptical road wheel discs with NARROW VERTICAL RUBBER TREAD BANDS in those same mounting locations. Sidewalls and center hubs face completely off canvas to image left and right, so orange hub centers must NOT be visible from this REAR projection. Keep each band's vertical tire diameter and position, tire thickness much narrower than diameter. At calves show TWO separate black narrow rounded tread bands vertically, exactly at original two wheel centers. Shoulders similarly have a tall narrow black tire tread at the outer-back shell edge, with hidden hub. Forearm tire edge follows existing mounting near elbow and stays clear of hinge. Far/outside body occlusion is okay; do not move, clone or add wheels.\nIMPORTANT: the small orange circular ANKLE JOINT covers beside each ankle are NOT road wheels; keep those orange joint details unchanged. Small orange coupler locks on backpack also unchanged. No hip wheels or heel tires.\nThis edit is a camera/axle-facing correction ONLY, not recolor, no new accessories, no different body or pose, no text or inset. Use exactly the same crisp mecha drawing and cel shading.",
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-5bc230fa-9e7d-46cb-b867-3c75a7655c8c.png"
+}

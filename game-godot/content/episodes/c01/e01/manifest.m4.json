@@ -1,0 +1,22 @@
+{
+  "episode_id": "C01E01-MULTI-PLAY-M4",
+  "status": "runtime_validation_only",
+  "graph": "res://content/episodes/c01/e01/graph.m4.json",
+  "bundle_output": "res://content/generated/episodes/c01/e01/m4.bundle.json",
+  "battle_variants": [
+    "res://content/episodes/c01/e01/battle/c01_e01_v3510_candidate_3t.json",
+    "res://content/episodes/c01/e01/battle/c01_e01_legacy_protection_6t.json"
+  ],
+  "claims": [
+    "declarative_tactical_setup",
+    "battle_setup_patch_consumption",
+    "battle_outcome_branching",
+    "tactical_save_restore",
+    "success_soft_failure_failure_withdrawal_paths"
+  ],
+  "non_claims": [
+    "formal_c01_battle_variant_selected",
+    "formal_c01_episode_complete",
+    "production_art_promoted"
+  ]
+}

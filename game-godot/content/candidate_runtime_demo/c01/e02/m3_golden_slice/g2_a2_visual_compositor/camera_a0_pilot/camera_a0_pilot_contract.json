@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "contract_id": "C01E02_G2_A2_C4_CAMERA_A0_PILOT_CONTRACT_V1",
+  "task_id": "G2_A2_C4_CAMERA_A0_MODULAR_STRUCTURE_FOCUS_REVEAL_PILOT",
+  "status": "CANDIDATE_PROXY_ONLY_NON_DEFAULT",
+  "identity": {
+    "entry_role": "non_default",
+    "save_mode": "disabled",
+    "runtime_bindable": false,
+    "runtime_promotion": false,
+    "canon_modified": false,
+    "real_art_loaded": 0,
+    "approved_handoffs": [],
+    "g2_b_allowed": false
+  },
+  "c3_binding_usage": {
+    "role": "dimension_and_color_reference_only",
+    "camera_binding_consumed": false,
+    "neutral_pixel_identity_witness": true,
+    "candidate_world_height_volume_source": "camera_a0_projection",
+    "fixed_v1_sprite_is_not_volume_proof": true
+  },
+  "locked_inputs": [
+    {
+      "input_id": "TASK108_USER_APPROVAL",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/108-c01e02-route-a2-modular-environment-and-interaction-user-approval.md",
+      "sha256": "c33bc0ffa4fe6f5ecc553001e640eba18a39a917a0c4691def8c940ca0ad0280"
+    },
+    {
+      "input_id": "TASK109_OBJECTIVE",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/109-c01e02-g2-a2-c4-camera-a0-modular-structure-focus-reveal-pilot-objective.md",
+      "sha256": "f67a86dda43d1a509e92f13a2f1f3e26fb29892c9d56a58fb9c5f7755242fd80"
+    },
+    {
+      "input_id": "TACTICAL_VISUAL_INTERFACE_1_6_6",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/c01e02-tactical-visual-interface-v1.json",
+      "sha256": "f3ecc25c78a08cc61db422b832f56131df442f420170f46782b74807c6b9555a"
+    },
+    {
+      "input_id": "PRODUCTION_BOARD",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/38-c01e02-m3-r0-5-production-board.tsv",
+      "sha256": "e3a4ef982668a5bf87543bca88e79cf6eb7dd3735f0fcee453569183033477bd"
+    },
+    {
+      "input_id": "TASK104_RUNTIME_GRID_ACCEPTANCE",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/104-c01e02-task98-runtime-grid-registration-producer-acceptance.md",
+      "sha256": "1ad0c1d0d5958f432f81479a119310769eaba3b769637b07ba7bcde127edfe61"
+    },
+    {
+      "input_id": "TASK105_SIMPLE_2D_CORRECTION",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/105-c01e02-task99-simple-2d-board-lighting-occlusion-producer-correction.md",
+      "sha256": "6046293f86788b561e8e78f581cc1dcfa4968c206e0c5cadc74943aa9c5ef0b7"
+    },
+    {
+      "input_id": "TASK106_C3_ACCEPTANCE",
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/106-c01e02-p99-sprite-first-preproduction-and-c3-producer-acceptance.md",
+      "sha256": "10c8df7490f21c2df12c513981867fd0168e86f9e789e46105c192996d2d4bf1"
+    },
+    {
+      "input_id": "GOLDEN_SLICE_PROFILE",
+      "path": "game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/golden_slice_profile.json",
+      "sha256": "61b49e5328e702cd654d28ff39c5c380ba0ae3e78753330635036d33f689523c"
+    },
+    {
+      "input_id": "CURRENT_TOPOLOGY_MAP_CONTRACT",
+      "path": "game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/current_topology_map_contract.json",
+      "sha256": "74c6bbb3f732a61d3ed5a55d9c209b628152b9411395339d665aeeb0d76ab875"
+    },
+    {
+      "input_id": "VISUAL_COMPOSITOR_PROFILE",
+      "path": "game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/visual_compositor_profile.json",
+      "sha256": "13719d8a3bde0cc06acbed893198943164f2541cdc0b112cc5897ff38f4c3451"
+    },
+    {
+      "input_id": "C3_NEUTRAL_ATLAS_BINDING",
+      "path": "game-godot/content/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/c3_neutral_atlas_binding.json",
+      "sha256": "60ae9fe302779ace5570f674b379efe55fdc3d50ccd3b93895ce610ff2fcde30"
+    },
+    {
+      "input_id": "CURRENT_V1_PROJECTION_ORACLE",
+      "path": "game-godot/scripts/candidate_runtime_demo/c01/e02/m3_golden_slice/g2_a2_visual_compositor/visual_projection.gd",
+      "sha256": "4f1fb4e029abb12d33abe3494425c3766916e7c3f9daf4395f0f682d5c6e3aed"
+    }
+  ],
+  "projection_contract": {
+    "projection_contract_id": "C01E02_CAMERA_A0_PILOT_PROJECTION_V1",
+    "runtime_bindable": false,
+    "runtime_camera_contract_id_forbidden": "CURRENT_TOPOLOGY_CAMERA_V1",
+    "grid_size": [32, 18],
+    "grid_axes": {
+      "x": "east",
+      "y": "south"
+    },
+    "projection_kind": "orthographic_dimetric_candidate",
+    "projection_formula": "P_h(x,y)=((x-y)*40,(x+y)*h)",
+    "screen_formula": "map_rect.center+P_h(cell)-P_h(focus)",
+    "crop_formula": "P_h(focus)-[640,292]",
+    "zoom": 1.0,
+    "shake_px": [0, 0],
+    "map_viewport_rect": [0, 58, 1280, 584],
+    "comparison_canvas_px": [2400, 1350],
+    "registration_point": "footprint_bottom_center",
+    "front_edge_formula": "project occupied cell centers; x=(min_screen_x+max_screen_x)/2; y=max_screen_y+tile_half_y",
+    "focus_profiles": {
+      "PLAN": [19.75, 9.75],
+      "CONTACT_A": [20.5, 10.5],
+      "CONTACT_B": [20, 10.5],
+      "NO_FOCUS": [15, 11]
+    },
+    "candidates": {
+      "CAM_A0_V1_40X20": {
+        "tile_half_px": [40, 20],
+        "runtime_bindable": false,
+        "candidate_view_space": "camera_a0_pilot_dimetric_40x20"
+      },
+      "CAM_A0_V2A_40X24": {
+        "tile_half_px": [40, 24],
+        "runtime_bindable": false,
+        "candidate_view_space": "camera_a0_pilot_dimetric_40x24"
+      },
+      "CAM_A0_V2B_40X26": {
+        "tile_half_px": [40, 26],
+        "runtime_bindable": false,
+        "candidate_view_space": "camera_a0_pilot_dimetric_40x26"
+      }
+    },
+    "control_points": [
+      [0, 0],
+      [15, 11],
+      [31, 17]
+    ],
+    "required_actor_ids": [
+      "V353U001",
+      "ENEMY_C01_BREAKER",
+      "TARGET_C01_EMERGENCY_VEHICLE_01",
+      "ENEMY_C01_RIFT_SWARM_01",
+      "ENEMY_C01_RIFT_SWARM_02",
+      "ENEMY_C01_RIFT_SWARM_03"
+    ],
+    "v1_oracle_profiles": {
+      "PLAN": "PUBLIC_PLAN_SUMMARY",
+      "CONTACT_A": "CONTACT_A",
+      "CONTACT_B": "CONTACT_B",
+      "NO_FOCUS": "NO_FOCUS"
+    },
+    "error_tolerance_px": 0.5
+  },
+  "structure_authoring_policy": {
+    "author_fields": [
+      "object_id",
+      "grid_rect",
+      "world_height_class",
+      "z_bias",
+      "foundation",
+      "occluder",
+      "focusable"
+    ],
+    "derived_fields": [
+      "front_edge_footpoint",
+      "visual_bounds",
+      "reveal_cells"
+    ],
+    "gameplay_collision_added": false,
+    "shared_across_candidates": true
+  },
+  "structures": [
+    {
+      "object_id": "NW_BLOCK",
+      "grid_rect": [1, 0, 7, 5],
+      "world_height_class": "HIGH",
+      "z_bias": 0,
+      "foundation": {"color": "193541"},
+      "occluder": {"color": "315766"},
+      "focusable": true
+    },
+    {
+      "object_id": "NM_BLOCK",
+      "grid_rect": [10, 0, 5, 4],
+      "world_height_class": "MEDIUM",
+      "z_bias": 0,
+      "foundation": {"color": "23343e"},
+      "occluder": {"color": "4a5960"},
+      "focusable": true
+    },
+    {
+      "object_id": "NE_BLOCK",
+      "grid_rect": [22, 0, 7, 4],
+      "world_height_class": "HIGH",
+      "z_bias": 0,
+      "foundation": {"color": "17383b"},
+      "occluder": {"color": "2f6260"},
+      "focusable": true
+    },
+    {
+      "object_id": "SW_BLOCK",
+      "grid_rect": [0, 15, 8, 3],
+      "world_height_class": "MEDIUM",
+      "z_bias": 0,
+      "foundation": {"color": "303135"},
+      "occluder": {"color": "5d5550"},
+      "focusable": true
+    },
+    {
+      "object_id": "SE_BLOCK",
+      "grid_rect": [26, 14, 6, 4],
+      "world_height_class": "HIGH",
+      "z_bias": 0,
+      "foundation": {"color": "26353b"},
+      "occluder": {"color": "4d6168"},
+      "focusable": true
+    },
+    {
+      "object_id": "BROKEN_SKYWALK",
+      "grid_rect": [8, 5, 7, 2],
+      "world_height_class": "LOW",
+      "z_bias": 0,
+      "foundation": {"color": "343138"},
+      "occluder": {"color": "6a606f"},
+      "focusable": true
+    }
+  ]
+}

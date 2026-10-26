@@ -1,0 +1,55 @@
+{
+  "status": "CANDIDATE_REVIEW_REQUIRED",
+  "imagegen_calls": 1,
+  "imagegen_mode": "built_in_edit_background_extraction",
+  "source": {
+    "path": "generation-raw/GZ_EAST_CALL01_RAW.png",
+    "sha256": "8a5907c0c2cc071e5f4900d977fbbc6bc3348f983e38f56ed45cb310dfbfe0a5",
+    "size": [1254, 1254],
+    "mode": "RGB",
+    "checkerboard_baked_into_rgb": true
+  },
+  "imagegen_raw_output": {
+    "path": "gz-east-transparent-candidate/generation-raw/GZ_EAST_TRANSPARENT_CALL01_RAW.png",
+    "sha256": "ec08a4a4d15f12c5fcd347537c5af97a7f7460af56ae60ca3ebb4cf794465443",
+    "size": [1254, 1254],
+    "mode": "RGBA",
+    "alpha_extrema": [0, 255],
+    "alpha_bbox_any_nonzero": [0, 41, 1194, 1254],
+    "alpha_bbox_visible_ge_16": [235, 67, 1009, 1195],
+    "transparent_pixel_count": 990366
+  },
+  "candidate_output": {
+    "path": "gz-east-transparent-candidate/delivery/GZ_EAST_TRANSPARENT_MASTER_CANDIDATE_256.png",
+    "sha256": "3ffdcf568828e5398049a27445c9e21e5965967067f16422280e1965c7b8070e",
+    "size": [256, 256],
+    "mode": "RGBA",
+    "transparent": true,
+    "alpha_extrema": [0, 255],
+    "alpha_bbox": [54, 8, 202, 224],
+    "pivot_px": [128, 224],
+    "equal_scale": true,
+    "resampling": "LANCZOS",
+    "visible_source_crop_ge_16": [235, 67, 1009, 1195],
+    "scaled_subject_size": [148, 216],
+    "paste_xy": [54, 8]
+  },
+  "review_board": {
+    "path": "gz-east-transparent-candidate/qa/GZ_EAST_TRANSPARENT_SOURCE_VS_CANDIDATE_50_100_1800x800.png",
+    "sha256": "06cbc51b04bb01220bcd8ce5d4252db180f8ce1ee1d582092167eef0d2f7a282"
+  },
+  "visual_self_review": {
+    "same_subject_identity": true,
+    "camera_v2_east_orientation_preserved": true,
+    "pose_preserved": true,
+    "parts_added_or_removed": false,
+    "usable_as_candidate": true,
+    "caveat": "The built-in edit is not a pixel-exact matte extraction: fine linework and highlights were lightly regenerated, and the raw subject framing is about 7 percent larger. The 256 candidate only applies deterministic equal scaling and transparent padding; no second generation call was made."
+  },
+  "promotion": {
+    "godot_bound": false,
+    "runtime": false,
+    "canon": false,
+    "producer_visual_approval": false
+  }
+}

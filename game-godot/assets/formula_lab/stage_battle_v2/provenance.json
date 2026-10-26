@@ -1,0 +1,101 @@
+{
+  "status": "candidate_runtime_sample",
+  "user_visual_acceptance": false,
+  "created": "2026-09-26",
+  "tools": {
+    "Blender": "4.4.3",
+    "Godot": "4.7",
+    "Meshy": {
+      "used_to_generate_or_download": false,
+      "credits_spent": 0,
+      "note": "Native logged-in workspace readable; model-selection controls unavailable in this run. Local asset production continued."
+    }
+  },
+  "style": "KINETIC_CEL, compact map proportions; full-proportion dialogue assets retained",
+  "identity_references": [
+    "game-godot/assets/candidate/c02_short_plan/jicun_full_reference.png",
+    "game-godot/assets/candidate/c02_short_plan/baiyuan_full_reference.png",
+    "docs/superpowers/specs/production/art-direction-v0.3/art-delivery/review/guardian_z_collector_e02_lockframe_candidate_v10x.png"
+  ],
+  "assets": {
+    "characters": "New lofted 3D geometry, skeletal skinning, five baked clips per character; materials, not hand-painted texture master.",
+    "workshop": "Blender architecture with doorway, interior, furniture and separate roof; signage rendered using the project font.",
+    "guardian": "Existing V10X Candidate geometry; new rigid-joint clips. Original right forearm remains absent."
+  },
+  "not_complete": [
+    "production-grade character likeness and deformation",
+    "complete mecha animation library",
+    "project-wide art and sound standards",
+    "user play/visual acceptance"
+  ],
+  "files": [
+    {
+      "path": "artifacts/formulas/production-lab-v1/source/stage-battle-v2/jicun-rigged.blend",
+      "sha256": "3ab56ec104d4eef926002471197e45723900d17628ae961667a46a507a7a22b8"
+    },
+    {
+      "path": "artifacts/formulas/production-lab-v1/source/stage-battle-v2/jicun-model-reference.png",
+      "sha256": "a4b6f2ce20845ca3e4d6a2b38c72fed009c36f88bae252515ed6bca1702d5bb2"
+    },
+    {
+      "path": "artifacts/formulas/production-lab-v1/source/stage-battle-v2/build_cast.py",
+      "sha256": "2e997dfd6d77c400d1c6c5b3c43a40f497d82d4f121746bb0026674718443498"
+    },
+    {
+      "path": "artifacts/formulas/production-lab-v1/source/stage-battle-v2/cast-report.json",
+      "sha256": "dda472e372d7f45156936599cc377b60540613083f36ca0f801ec0c43337b0c1"
+    },
+    {
+      "path": "artifacts/formulas/production-lab-v1/source/stage-battle-v2/build_workshop.py",
+      "sha256": "61c98a28bce1dda87cbe20d56e9bda71505880b653cd869239d7fc9177cad4a1"
+    },
+    {
+      "path": "artifacts/formulas/production-lab-v1/source/stage-battle-v2/render_assets.py",
+      "sha256": "a8571a60e387872211252797263b7605aa363879d7a67a2f87aaa1a6dc32c133"
+    },
+    {
+      "path": "artifacts/formulas/production-lab-v1/source/stage-battle-v2/guardian-clips.json",
+      "sha256": "7f0a5de793a7e6ff2d5b8d279bf1f36cb710f496a4c1bad6a672d37cc107863d"
+    },
+    {
+      "path": "artifacts/formulas/production-lab-v1/source/stage-battle-v2/guardian-animated.blend",
+      "sha256": "bc568b6c25e5398c4361b8364f22ab24deb99374ffac85e6625dea42000c5bc2"
+    },
+    {
+      "path": "artifacts/formulas/production-lab-v1/source/stage-battle-v2/animate_guardian.py",
+      "sha256": "a676b745b2638e11540006c8566c72bd2cc55414e2b92449e171beb6baf4dfeb"
+    },
+    {
+      "path": "artifacts/formulas/production-lab-v1/source/stage-battle-v2/baiyuan-rigged.blend",
+      "sha256": "1e3f7dd92caeb089dfb85d99c10aed77532ba0d45dd71d16933776cdb5a187db"
+    },
+    {
+      "path": "artifacts/formulas/production-lab-v1/source/stage-battle-v2/workshop-report.json",
+      "sha256": "08cd2f40a2010a018aa6b25387b8a4e8c6df738d53d2a715c8328e129a68576e"
+    },
+    {
+      "path": "artifacts/formulas/production-lab-v1/source/stage-battle-v2/workshop.blend",
+      "sha256": "07452bbd16d4c3f4c8b318f12a36c41f717ab293f14d6147fe34bc2362028da3"
+    },
+    {
+      "path": "artifacts/formulas/production-lab-v1/source/stage-battle-v2/workshop-footprints.json",
+      "sha256": "bc03cba30fe1f4c00f1d7e203a1983ff453586ea6679d3358e24f6ae337dfe57"
+    },
+    {
+      "path": "game-godot/assets/formula_lab/stage_battle_v2/jicun-rigged.glb",
+      "sha256": "1cfe2c085c7650228d20e1cf758f02b49415ba51e425c787950a403d4adc6419"
+    },
+    {
+      "path": "game-godot/assets/formula_lab/stage_battle_v2/guardian-animated.glb",
+      "sha256": "5a07e63279aae9ed39d409b0c0ffaa46b3cea03cc5d97efa8281b60b46d0cd59"
+    },
+    {
+      "path": "game-godot/assets/formula_lab/stage_battle_v2/workshop.glb",
+      "sha256": "1d9c941a154b3d568bec9ee71f5354f57cdad600af3054deb0b0426d30ae9ee1"
+    },
+    {
+      "path": "game-godot/assets/formula_lab/stage_battle_v2/baiyuan-rigged.glb",
+      "sha256": "08cf724840dc4680c3a5a371a402a647e861dee30cc5a6ebc060cb0fdf6e20d6"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schema_id": "FORMULA_LAB_SIT_WELL_V1",
+  "notes": "井种尺寸来自现盘控件，不是另做一套井。sit 函数/锚点/收板/场面槽位见 needs.json。坐井台大井按剩余空间缩放预览。不在这里改 AAR/出击已收 sit 常数。",
+  "wells": {
+    "chip": {
+      "size": [48, 43],
+      "use": "世界图指定机体芯片井（56px 芯片内）"
+    },
+    "sortie": {
+      "size": [180, 62],
+      "use": "出击准备槽井"
+    },
+    "aar": {
+      "size": [142, 160],
+      "use": "结算 AAR 立卡井（148×204 卡内）"
+    },
+    "iso_token": {
+      "size": [48, 64],
+      "use": "战术等距格机体井（脚落格心）"
+    },
+    "hall_figure": {
+      "size": [108, 148],
+      "use": "Hub 馆厅人井（脚落 stand_uv）"
+    },
+    "room_avatar": {
+      "size": [40, 52],
+      "use": "房间 walker 井（脚落走到点）"
+    },
+    "hotspot_figure": {
+      "size": [44, 56],
+      "use": "房间热点人物井（脚落走到点）"
+    },
+    "hotspot_cluster": {
+      "size": [32, 42],
+      "use": "房间热点人群井（脚落走到点）"
+    },
+    "execute_stand": {
+      "size": [348, 378],
+      "use": "战术演出层机体井（井底=stand_uv，floor_ratio=1.0，不伸进 Y 底栏）"
+    },
+    "adv_stand": {
+      "size": [410, 500],
+      "use": "叙事 ADV 立绘井（井底=portrait_uv 地面线，floor_ratio=1.0，不伸进 Y 底栏）"
+    },
+    "dialogue_bust": {
+      "size": [100, 100],
+      "use": "Y 底栏胸像井（脸点 cover-fit，不是全身居中 cover）"
+    },
+    "roster_chip": {
+      "size": [28, 28],
+      "use": "Y 左编队金条芯片井（头胸 cover-fill，不是整机邮票 contain）"
+    },
+    "wall_face": {
+      "size": [240, 160],
+      "use": "场面墙立面井（房间盒立面 + 灰泥材质重复，脚落地面线）"
+    },
+    "floor_plane": {
+      "size": [280, 150],
+      "use": "场面地平面井（远沿短、近沿长，石径/草皮材质重复，不是小屋照）"
+    },
+    "prop_body": {
+      "size": [160, 120],
+      "use": "场面道具面井（坐进地面的立面裁切；有 stand 的砖在坐井台收成 stand/face/span 演算器）"
+    },
+    "sky_loft": {
+      "size": [320, 140],
+      "use": "演出层远空井（haze 带全幅天空，不是整张庭院照）；horizon/vista 砖复用此井盖远景范例"
+    },
+    "wreck_hull": {
+      "size": [240, 150],
+      "use": "演出层机骸井（倒伏 contain-sit，井底落配置 pentagon 地面线）"
+    },
+    "cabinet": {
+      "size": [160, 140],
+      "use": "巡查盘柜 dest 井（2:1 等距菱 contain-sit shed_far，脚落近沿）"
+    },
+    "gate": {
+      "size": [140, 80],
+      "use": "巡查盘闸 dest 井（紧凑 sit contain-sit 地标警戒带）"
+    },
+    "opening": {
+      "size": [120, 180],
+      "use": "巡查盘坞口 dest 井（站立坞口范例；运行时绘景拥有坞喉，不重印卡）"
+    },
+    "leftover_pad": {
+      "size": [280, 140],
+      "use": "结算 leftover 垫 dest 井（外扩岛 contain-sit 中央碎沥青，编队卡坐在清图沥青上）"
+    },
+    "leftover_dock": {
+      "size": [200, 120],
+      "use": "结算 leftover 坞 dest 井（外扩岛 contain-sit 左侧碎堤沥青，缺席卡坐在清图岸上）"
+    },
+    "board_pad": {
+      "size": [240, 140],
+      "use": "战术地图层环垫 dest 井（外扩岛 contain-sit tile-road 湿沥青菱，机体站在绘景沥青上；stance=single 紧凑 sit 不外扩）"
+    },
+    "execute_pad": {
+      "size": [320, 112],
+      "use": "战术演出层低宽共享湿地；chrome 源带与 horizon-strip 预览同映射，single 保留紧凑脚台，非等距砖"
+    }
+  }
+}

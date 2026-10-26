@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-23",
+  "revision": "M06-turnaround-r3",
+  "asset": "预算二号正侧背三视源图",
+  "canon_entity": "V353U032",
+  "generation_mode": "built-in image_gen",
+  "existing_batch": "design-followthrough-r1.json",
+  "parent": {
+    "file": "samples/M06-labor-identity-r2b.png",
+    "sha256": "3741b164b4ee558f65927cccfdfc2aff0efa7bba30c0458d6d6c56c7af078de0",
+    "selected_regions": [
+      "左侧整机A",
+      "右上A头部设计",
+      "右下供能背架设计"
+    ],
+    "excluded_regions": [
+      "B头型备选",
+      "C头型备选"
+    ]
+  },
+  "source_acceptance_receipt": "M06-turnaround-design-fixed-20261023-r3.json",
+  "user_request": "直接做三视图啊",
+  "reader": "M06-turnaround-r3.html",
+  "items": [
+    {
+      "id": "FRONT",
+      "label": "正面",
+      "file": "samples/M06-front-r3.png",
+      "sha256": "222bff39fa66bcea24e60c0a5be8675158a78aa89587844d10cc99fbf49ffe7d",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-c079e1c5-1dbb-4967-b5fe-e35af3c1f531.png",
+      "derived_under_user_authorization": true,
+      "user_accepted": true,
+      "runtime_integrated": false,
+      "handoff_sent": false,
+      "user_acceptance_receipt": "M06-turnaround-design-fixed-20261023-r3.json"
+    },
+    {
+      "id": "SIDE",
+      "label": "左侧面",
+      "file": "samples/M06-side-r3c.png",
+      "sha256": "4265ee8e43e5e424f1f17e1a63c1800439823d039cee7d9135a387a35497d4f7",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-d7b19793-d503-435e-8d62-bcd9d8cce392.png",
+      "derived_under_user_authorization": true,
+      "user_accepted": true,
+      "runtime_integrated": false,
+      "handoff_sent": false,
+      "user_acceptance_receipt": "M06-turnaround-design-fixed-20261023-r3.json"
+    },
+    {
+      "id": "REAR",
+      "label": "背面",
+      "file": "samples/M06-rear-r3.png",
+      "sha256": "76ede0c9784de9ae2241e14fb6849375bf53151236f0d2609df9599c3d8d8afe",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-8e9db4a6-e8a3-4274-b56c-f45ca3189d01.png",
+      "derived_under_user_authorization": true,
+      "user_accepted": true,
+      "runtime_integrated": false,
+      "handoff_sent": false,
+      "user_acceptance_receipt": "M06-turnaround-design-fixed-20261023-r3.json"
+    }
+  ],
+  "side_standard": {
+    "radio": "机体右耳：前视观看者左，背视观看者右；左侧面近耳为青绿盖，白模块在远侧",
+    "replacement_leg": "机体左小腿：前视观看者右，背视观看者左",
+    "held_tool": "机体左手：前视观看者右，背视观看者左",
+    "waist": "机体右腰工具箱，左腰供能接头"
+  },
+  "prompts": [
+    "M06-front-turnaround-prompt-r3.txt",
+    "M06-side-turnaround-prompt-r3.txt",
+    "M06-rear-turnaround-prompt-r3.txt",
+    "M06-side-projection-correction-prompt-r3b.txt",
+    "M06-side-components-projection-prompt-r3c.txt"
+  ],
+  "prompt_index": "M06-turnaround-prompts-r3.json",
+  "author_review": "M06-turnaround-author-review-r3.json",
+  "attempts": [
+    {
+      "file": "samples/M06-side-oblique-attempt-r3.png",
+      "sha256": "5a701365fae06f45d13811d89c48248fb3b1844b905998717e950d32a4fc98c2",
+      "role": "侧面首稿有斜角，不作当前侧面源"
+    },
+    {
+      "file": "samples/M06-side-projection-attempt-r3b.png",
+      "sha256": "7b8689db8560dadb76a06f26aa5d4259799e888160d0620a9098267b61bd8964",
+      "role": "侧姿已收正，但卷盘与夹具侧面投影仍需局部修正"
+    }
+  ],
+  "experience": {
+    "start": "已采用预算二号R2主形与A头型，需要完整正侧背表达职业机部件与前后结构。",
+    "input": "按同一母稿分别绘制正/左侧/背；首侧稿有斜角，改以新正面为比例和侧别依据重绘左侧，再按背面核卷盘轴向与夹具侧厚。",
+    "visible_consequence": "三张独立源图能对照头部体积、替换腿、左手夹具与卷盘/三制式背架。",
+    "next": "沿当前三视继续分件/模型和工作动作；新源图派生与机构/运行分别验证。"
+  },
+  "limits": [
+    "本批为二维源图派生，不是同一三维模型的机械正交投影。",
+    "当前指定三张源图已获用户采用；不扩大为同件模型、机构、连续工作或运行验收。",
+    "隐藏机构、驾驶舱空间、线缆收放、工具受力和连续动作仍需制作核对。"
+  ],
+  "new_images_user_accepted": true,
+  "canon_changed": true,
+  "runtime_assets_modified": false,
+  "handoff_sent": false,
+  "source_design_user_accepted": true,
+  "status": "current_source_views_user_accepted",
+  "parent_source_acceptance_receipt": "M06-design-fixed-20261023-r2.json"
+}

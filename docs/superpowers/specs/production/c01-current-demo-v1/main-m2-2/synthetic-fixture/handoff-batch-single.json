@@ -1,0 +1,91 @@
+{
+  "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+  "batch_id": "C01E02-M2-2-SYNTH-SINGLE",
+  "contract_binding": {
+    "build_id": "C01CDV1-M2-R2",
+    "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+    "contract_revision": 2,
+    "save_schema": 2
+  },
+  "handoffs": [
+    {
+      "actions": [
+        "idle"
+      ],
+      "approval_state": "producer_exact_handoff",
+      "atlas": {
+        "frames": {
+          "idle/east": [
+            128,
+            0,
+            128,
+            128
+          ],
+          "idle/north": [
+            0,
+            0,
+            128,
+            128
+          ],
+          "idle/south": [
+            256,
+            0,
+            128,
+            128
+          ],
+          "idle/west": [
+            384,
+            0,
+            128,
+            128
+          ]
+        }
+      },
+      "authorization_scope": "C01E02_M2_2_EXACT_SLOT_HANDOFF",
+      "binding_kind": "sprite_sheet",
+      "build_id": "C01CDV1-M2-R2",
+      "content_fingerprint": "00f20b087b384f40f2a3602c25d41220dbda7504562533e811b6986522963fd4",
+      "contract_revision": 2,
+      "facings": [
+        "north",
+        "east",
+        "south",
+        "west"
+      ],
+      "has_alpha": true,
+      "lifecycle_status": "active",
+      "media_parameters": {
+        "codec": "png",
+        "has_alpha": true,
+        "height": 128,
+        "width": 512
+      },
+      "native_size": [
+        512,
+        128
+      ],
+      "pivot": [
+        0.5,
+        1.0
+      ],
+      "producer_handoff_id": "C01E02-M2-2-SYNTH-07",
+      "profile_id": "c01cdv1_e02_scroll_m2_r2",
+      "resource_path": "res://tests/fixtures/candidate_asset_r2/m2_2/mecha_c01cdv1_guardian_z.png",
+      "runtime_allowed": true,
+      "sha256": "2b256a85dc11b01802840dbc9f97ffa7c06e5eaac31d1faa7c828db1909bf737",
+      "slot_id": "MECHA_C01CDV1_GUARDIAN_Z",
+      "stable_id": "V353U001",
+      "subject_id": "V353U001",
+      "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8",
+      "usage": "guardian_z_tactical_qsd"
+    }
+  ],
+  "lifecycle_status": "active",
+  "profile_binding": {
+    "profile_id": "c01cdv1_e02_scroll_m2_r2",
+    "topology_sha256": "baefc17f22f1a7d8956133e73be3a4d0e1a62a369441d782701975fa6230f8d8"
+  },
+  "runtime_lane": "candidate_runtime_demo",
+  "schema_version": "1.0.0",
+  "synthetic_fixture": true
+}

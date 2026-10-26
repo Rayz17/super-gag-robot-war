@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-19",
+  "generation_mode": "built-in image_gen",
+  "user_accepted": false,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "status": "user_requested_overall_design_rework",
+  "existing_batch": "design-followthrough-r1.json",
+  "independent_review": false,
+  "revision": "M01-turnaround-production-r12",
+  "asset": "M01 / 无牌一号",
+  "file": "samples/M01-turnaround-r12b.png",
+  "sha256": "e22c084722ddbed669396ccacf862c342e492d02c88e885c5d7d92a62ca15d09",
+  "pixel_size": [
+    1536,
+    1024
+  ],
+  "mode": "RGBA",
+  "alpha": {
+    "range": [
+      0,
+      254
+    ],
+    "fully_transparent_pixels": 681079,
+    "fully_opaque_pixels": 0,
+    "partially_transparent_pixels": 891785,
+    "corners": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-92b9f658-3b75-4b32-95d9-85c275b1163b.png",
+  "prompts": [
+    "M01-turnaround-prompt-r12.json",
+    "M01-turnaround-rear-fix-prompt-r12b.json"
+  ],
+  "source_refs": [
+    {
+      "file": "samples/M01-recognition-master-r4.png",
+      "role": "existing body below neck only; rejected old head excluded",
+      "sha256": "d4721216800f31bd533265654fdbd3de2608bf5e5c48cca92482d00c6898852e"
+    },
+    {
+      "file": "samples/M01-head-twin-side-grooves-r11.png",
+      "role": "newly user-approved front head; solid white spine plus two side grooves",
+      "sha256": "b92f8b78770ea11d6185e59f2089148ff408f19b841616272c63eb9f9925cf44"
+    },
+    {
+      "file": "samples/M01-head-center-groove-three-quarter-r9b.png",
+      "role": "adopted same-head volume for side/back",
+      "sha256": "38a0f36ea2361abede5ec969777db584a5a4d3d6a806f1bf001f899440cf4aa4"
+    }
+  ],
+  "head_acceptance": "M01-head-design-fixed-20261019.json",
+  "body_source_scope": "R4仅颈部以下沿用；R4旧头禁止派生，R4身体不据头部认可自动升为已确认。",
+  "reader": "M01-turnaround-r12.html",
+  "author_review": {
+    "actual_media": "实际完整R12及R12b工具返回图，与头部R11和身体R4对照。",
+    "observed": [
+      "正面保留双侧黄槽和连续白中脊，侧天线直线朝后；身体保留青绿白金、体术前臂和紧凑拳。",
+      "正面左胸扣及斜向金支撑、胸桥和肩甲保留；侧图没有另加武器背包。",
+      "R12b背视已变为后脑/颈后、后膝、小腿背甲与鞋跟；不再出现正面眼窗/面甲/胫部槽和朝观众的脚尖。"
+    ],
+    "limits": [
+      "手绘三视图为源设计参考，不是同一三维模型的严格正交投影；隐面厚度、关节活动及精确同位仍需模型校核。",
+      "输出含半透明底色/边缘像素，未完成游戏用透明切边、材质导入或实机画面检查。",
+      "具体整机新图尚未由用户确认，认可仅绑定此前头部。"
+    ]
+  },
+  "attempts": [
+    {
+      "file": "samples/M01-turnaround-r12-draft-rear-wrong.png",
+      "sha256": "d9dbe37386b577d55c0e2d27d871481f92017e7472f6312f0c4ed1797fb440e8",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha": {
+        "range": [
+          0,
+          254
+        ],
+        "fully_transparent_pixels": 692955,
+        "fully_opaque_pixels": 0,
+        "partially_transparent_pixels": 879909,
+        "corners": [
+          0,
+          0,
+          2,
+          0
+        ]
+      },
+      "selected": false,
+      "result": "rear_orientation_wrong",
+      "observed": "背面仍有正面视窗面罩、胫甲槽和脚趾，退回局部修正。"
+    },
+    {
+      "file": "samples/M01-turnaround-r12b.png",
+      "selected": true,
+      "result": "author_observed_rear_orientation_repaired_pending_user",
+      "method": "只改右侧背视的头、腿足，保留正面和侧面。"
+    }
+  ],
+  "later_user_review": {
+    "date": "2026-10-19",
+    "record": "M01-M05-series-direction-20261019.json",
+    "result": "proportions_character_and_family_rework_required"
+  }
+}

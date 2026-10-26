@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="980" viewBox="0 0 900 980">
+<rect width="900" height="980" fill="#f7f2e5"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0L9 3L0 6" fill="none" stroke="#163847" stroke-width="1.5"/></marker></defs>
+<g stroke="#27343c" stroke-width="5" stroke-linejoin="round">
+<!-- Central torso and blunt bomber nose: front is always LEFT. -->
+<path d="M395 330L565 330L640 452L603 641L440 650L339 519L281 466L187 451L130 413L153 357L232 316L330 310Z" fill="#ece8dd"/>
+<path d="M141 391L201 350L287 337L350 369L333 475L201 456L130 413Z" fill="#ed7624"/>
+<path d="M174 357L231 327L314 326L337 357L276 383L175 384Z" fill="#294756"/>
+<path d="M351 458L409 416L472 439L482 532L406 585L360 535Z" fill="#30383e"/>
+<!-- Inboard wing carrier is separate from the shoulder joint. -->
+<path d="M465 212L554 211L589 296L550 356L475 337L443 277Z" fill="#e57927"/>
+<circle cx="508" cy="267" r="47" fill="#313a40"/>
+<circle cx="508" cy="267" r="29" fill="#d7d5ce"/>
+<!-- Thin wing CHORD edge in profile, no visible lateral wingspan. -->
+<path d="M484 185L531 185L541 224L480 224Z" fill="#4b5155"/>
+<path d="M255 155L625 165L692 188L266 188Z" fill="#3b4651"/>
+<path d="M267 175L652 179L692 188L266 188Z" fill="#efede3"/>
+<path d="M338 162L600 168" fill="none" stroke="#eb7f2a" stroke-width="8"/>
+<!-- Engine cylindrical SIDE; its intake lip is only a narrow vertical ellipse at LEFT. -->
+<path d="M370 232L560 232Q591 247 596 281Q591 316 560 330L370 330Z" fill="#39434c"/>
+<rect x="409" y="233" width="24" height="96" fill="#e87824"/>
+<path d="M370 232L394 236L394 326L370 330" fill="#eae7dc"/>
+<ellipse cx="371" cy="281" rx="12" ry="49" fill="#242e36"/>
+<path d="M557 236L557 326" fill="none" stroke="#202b31" stroke-width="7"/>
+<!-- The white core shoulder cap and upper arm remain BELOW the wing/engine. -->
+<circle cx="512" cy="426" r="69" fill="#303940"/>
+<circle cx="512" cy="426" r="44" fill="#dd792c"/>
+<path d="M453 386L536 376L582 407L595 465L565 501L531 464L500 433L465 451L438 430Z" fill="#e8e6dd"/>
+<path d="M494 466L548 478L570 626L548 684L491 658L471 527Z" fill="#454c51"/>
+<path d="M507 495L549 510L559 597L514 592Z" fill="#dddcd4"/>
+<circle cx="526" cy="671" r="40" fill="#dc7326"/>
+<circle cx="526" cy="671" r="23" fill="#354049"/>
+</g>
+<g font-family="Arial,sans-serif" fill="#163847">
+<path d="M295 85H112" fill="none" stroke="#163847" stroke-width="5" marker-end="url(#arrow)"/><text x="310" y="93" font-size="24">FRONT / LEFT</text>
+<text x="70" y="780" font-size="25">SIDE LAYOUT GUIDE ONLY</text>
+<text x="70" y="825" font-size="20">Wing: thin edge; engine axis faces left.</text>
+<text x="70" y="860" font-size="20">Blunt nose faces left; two separate joints.</text>
+<text x="70" y="895" font-size="20">Ivory shoulder cap remains below the engine.</text>
+</g></svg>

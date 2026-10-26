@@ -1,0 +1,226 @@
+[
+  {
+    "id": "N01",
+    "group": "N",
+    "template": "motion",
+    "key": "idle",
+    "name": "共享待机",
+    "purpose": "标准动作复用",
+    "design": "适度呼吸/重心、机械活动；正常战棋镜头看得出，频率不拖沓；重型/轻型/多足分家",
+    "states": [
+      "准备",
+      "作用事件",
+      "结果",
+      "恢复"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "N02",
+    "group": "N",
+    "template": "motion",
+    "key": "locomotion",
+    "name": "共享奔跑与转向",
+    "purpose": "标准动作复用",
+    "design": "连续沿合法路径移动；直路连续跑，遇障才绕；停步不逐格刹车",
+    "states": [
+      "准备",
+      "作用事件",
+      "结果",
+      "恢复"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "N03",
+    "group": "N",
+    "template": "motion",
+    "key": "air_move",
+    "name": "共享飞行与起降",
+    "purpose": "标准动作复用",
+    "design": "离地、巡航、转弯、接地；推进与身体方向一致",
+    "states": [
+      "准备",
+      "作用事件",
+      "结果",
+      "恢复"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "N04",
+    "group": "N",
+    "template": "motion",
+    "key": "gunner",
+    "name": "共享射击",
+    "purpose": "标准动作复用",
+    "design": "瞄准→武器发射事件→后坐→恢复；步枪、肩炮按挂点适配",
+    "states": [
+      "准备",
+      "作用事件",
+      "结果",
+      "恢复"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "N05",
+    "group": "N",
+    "template": "motion",
+    "key": "operate",
+    "name": "共享手部操作",
+    "purpose": "标准动作复用",
+    "design": "手部示意+设备状态反馈；不做打开柜门/内部接线细节",
+    "states": [
+      "准备",
+      "作用事件",
+      "结果",
+      "恢复"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "N06",
+    "group": "N",
+    "template": "motion",
+    "key": "work",
+    "name": "共享维修与液压施力",
+    "purpose": "标准动作复用",
+    "design": "同动作家族按工具微调；施力方向和回弹清楚",
+    "states": [
+      "准备",
+      "作用事件",
+      "结果",
+      "恢复"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "N07",
+    "group": "N",
+    "template": "motion",
+    "key": "carry",
+    "name": "共享搬运吊运支撑",
+    "purpose": "标准动作复用",
+    "design": "提取、移动、放下与承压；载荷共用高度档，不做单位两两接触表",
+    "states": [
+      "准备",
+      "作用事件",
+      "结果",
+      "恢复"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "N08",
+    "group": "N",
+    "template": "motion",
+    "key": "reaction",
+    "name": "共享受击与失衡",
+    "purpose": "标准动作复用",
+    "design": "方向、轻重、倒地、复原分别响应同一事件",
+    "states": [
+      "准备",
+      "作用事件",
+      "结果",
+      "恢复"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "N09",
+    "group": "N",
+    "template": "motion",
+    "key": "hero_martial",
+    "name": "无牌拳脚与天冲拳",
+    "purpose": "体术定制",
+    "design": "直拳/正蹬/回旋踢/天冲拳分动作；支撑脚、转髋和手型明确",
+    "states": [
+      "准备",
+      "作用事件",
+      "结果",
+      "恢复"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "N10",
+    "group": "N",
+    "template": "motion",
+    "key": "boxer_boxing",
+    "name": "旧拳王拳击组",
+    "purpose": "体术定制",
+    "design": "勾拳、接拳、重拳有不同重心与节奏，不换名共用一招",
+    "states": [
+      "准备",
+      "作用事件",
+      "结果",
+      "恢复"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "N11",
+    "group": "N",
+    "template": "motion",
+    "key": "brave_signature",
+    "name": "勇拳与社勇王招牌拳",
+    "purpose": "体术招牌定制",
+    "design": "核心/合体动作保留人格与发力；终式和普通拳区分",
+    "states": [
+      "准备",
+      "作用事件",
+      "结果",
+      "恢复"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "N12",
+    "group": "N",
+    "template": "motion",
+    "key": "king_drill_motion",
+    "name": "王者钻击装备适配",
+    "purpose": "共享重击加装备层",
+    "design": "右前臂驱动钻轴、旋转和推进；按武器适配，不另建每敌人的动作",
+    "states": [
+      "准备",
+      "作用事件",
+      "结果",
+      "恢复"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "N13",
+    "group": "N",
+    "template": "motion",
+    "key": "form_transition",
+    "name": "车辆/航空变形",
+    "purpose": "形态专用设计",
+    "design": "每套形态只做一次合理中间姿势/锁止；不必追求每个零件完美变形动画",
+    "states": [
+      "准备",
+      "作用事件",
+      "结果",
+      "恢复"
+    ],
+    "status": "todo"
+  },
+  {
+    "id": "N14",
+    "group": "N",
+    "template": "motion",
+    "key": "combine_motion",
+    "name": "社勇王合体/分离",
+    "purpose": "招牌演出设计",
+    "design": "保留完整核心，组件真实进场/接合/落位；分离恢复原身份",
+    "states": [
+      "准备",
+      "作用事件",
+      "结果",
+      "恢复"
+    ],
+    "status": "todo"
+  }
+]

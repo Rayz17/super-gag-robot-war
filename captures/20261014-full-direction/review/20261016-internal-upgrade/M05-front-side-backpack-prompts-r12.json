@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-20",
+  "mode": "built-in image_gen",
+  "transparent_background": false,
+  "jobs": [
+    {
+      "id": "FULL_FRONT_R12",
+      "file": "samples/M05-full-front-backpack-r12.png",
+      "prompt": "Use case: precise-object-edit. Image 1 is edit target, calibrated TALL KING FULL FRONT; keep its mature tall skull, closed mask, crown, long thighs/shins, pelvis height, feet, colors, armor, left shield, wings and guns. Image 2 is SAME machine's new REAR for ONLY the added central jet and TWO ivory cylindrical fuel tanks. Image 3 author geometry diagram is authority for RIGHT ARM shared axis, no style or text copied.\nEdit ONLY right elbow/forearm/drill pose plus naturally visible additions from rear backpack. Keep entire rest of image unchanged.\nRIGHT DRILL: anatomical RIGHT is viewer LEFT. Bend right elbow FORWARD, so navy/gold forearm and drill share an axis pointing toward robot FRONT, almost horizontally forward with only 5-10 degrees DOWN. A front camera now looks INTO the approaching drill TIP, so the drill cone is strongly FORESHORTENED, showing concentric GOLD taper rings toward the pointed gold central tip on the NEAR face. The navy/gold adapter collar is BEHIND the cone and connected to elbow. Do NOT show a BLACK flat rear cap on front. Do NOT retain the previous long triangular cone sweeping diagonally down-left to the picture corner: that was incompatible with rear geometry. The elbow/upper arm stay at existing shoulder/upper-arm locations; the lower arm changes pose into depth, not sideways or backward. Keep the drill hefty and mechanically readable, one drill only.\nBACKPACK: preserve rear Image 2's ONE central rear-facing jet plus TWO ivory fuel tanks with navy/gold clamps and thin red bands, supported BEHIND torso, bottoms above knees. From FRONT the central rear jet is completely hidden by chest. Tanks are mostly hidden behind body/shoulders; draw only the naturally visible ivory curved side slivers or lower tips behind waist/outer upper thighs, in the correct positions. Do not move them to chest or arms, not two huge front white pillars. Keep exactly two existing long lower booster nacelles, four three-hole leg pods, three small silver wing-root cylinders per side and two primary rectangular guns.\nAll other figure design, tall body proportions, long legs, shield decorated front, head/crown/normal-size mask, background and framing unchanged. No annotations, no extra views, no text. One full FRONT.",
+      "referenced_image_paths": [
+        "samples/M05-full-front-r11b.png",
+        "samples/M05-full-rear-backpack-r12.png",
+        "M05-drill-axis-guide-r12b.svg.png"
+      ]
+    },
+    {
+      "id": "FULL_SIDE_R12",
+      "file": "samples/M05-full-side-backpack-r12.png",
+      "prompt": "Use case: precise-object-edit. Image 1 is edit target, TALL FULL KING LEFT SIDE facing screen LEFT. Image 2 new REAR supplies ONLY additional backpack hardware: ONE central jet, TWO long ivory fuel tanks with red bands/navy/gold clamps, rearward pipes, same upper-thigh bottoms. Image 3 author axis diagram governs RIGHT arm drill mounting. Do not copy old rear drill mistake from Image 2.\nPreserve the existing tall body's skull size, mask, red fin, chest/waist/hip/knee/ankle heights, long thigh and shin, boot shape, left shield, wing fan, two overlapping guns at SAME height and original two long low navy/ivory booster nacelles.\nCorrect RIGHT FAR ARM: bend the right elbow forward so the navy/gold forearm AND gold cone lie on the SAME nearly horizontal axis toward screen LEFT (robot's front), only 5–10 degrees DOWN. The elbow stays near its current shoulder/upper arm, forearm projects in front at waist/elbow level. As guide shows, the drill is a real gold spiral taper from broad base on right wrist to sharp point farther LEFT. Do NOT point cone backward to RIGHT or downward beside shin. The original low-hanging long down-left triangle must be reposed, not retained as a second drill. LEFT NEAR ARM still holds shield normally; some far wrist natural occlusion is fine. One arm/drill only, no extra hand.\nAdd the same backpack Image 2 hardware in the appropriate PROFILE: central jet on spine faces REAR screen RIGHT, its deep gold-rimmed dark/red bell seen from side as a projecting aft nozzle, not a circle on side of chest. TWO pressure-vessel fuel tanks hang behind back, one mostly occludes the other in true side, ivory rounded caps, navy bands, gold clamps and thin red rings, dark hose at upper root. Roots at shoulder-blade backpack, bottoms around upper thigh ABOVE knee. Tanks vertically long with slight rearward rake, behind torso not shield, and distinct from existing long angular low boosters. Keep same length/diameter and exact source mounting height from rear; do not add third tank or replace a gun.\nPreserve all remaining body/armor/equipment details and long-legged silhouette. No shortening, no bulky new torso, no text, arrows, diagrams or extra view. White background, complete figure.",
+      "referenced_image_paths": [
+        "samples/M05-full-side-r11b.png",
+        "samples/M05-full-rear-backpack-r12.png",
+        "M05-drill-axis-guide-r12b.svg.png"
+      ]
+    }
+  ]
+}

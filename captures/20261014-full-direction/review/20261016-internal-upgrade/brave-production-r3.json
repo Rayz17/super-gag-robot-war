@@ -1,0 +1,82 @@
+{
+  "revision": "M04-brave-combined-r3-bomber-torso-head",
+  "date": "2026-10-17",
+  "purpose": "按已确认整体方向/画法补壮躯干、完整上覆轰炸机框架/翼件及合体头升级；源稿样例，非模型/运行",
+  "previous_record": "brave-production-r2.json",
+  "direct_user_feedback": "方向完全对，美术风格也对；躯干不够壮实，丢失V17轰炸机框架与翼件，头部需比勇拳升级，可采用V17感觉",
+  "overall_direction_and_style_accepted_for_r2": true,
+  "full_body": {
+    "file": "samples/M04-brave-combined-master-r3.png",
+    "sha256": "41c8e024b86d2f7fa674171be2bc95bb38d01934eafba07fde35336e940b3220",
+    "pixel_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "generated": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-25bc1853-48d6-49e1-ae53-7883b6b70aeb.png"
+  },
+  "bomber_component": {
+    "file": "samples/M04-bomber-component-r3.png",
+    "sha256": "38c39052cd5053bbb87eba765040a3b16bde29fd176148eca0aa8835905a5577",
+    "pixel_size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "generated": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-12c73b9a-7903-4263-8397-b3ff4073e10b.png"
+  },
+  "arm_structure": {
+    "current": "samples/M04-train-arm-structure-r2.png",
+    "sha256": "40d8f8bec33e4f181e7c1c3e6f7297557bfaffb379f687944734cae940b7337e",
+    "scope": "沿用前轮结构候选；不是本轮新稿或绑定完成"
+  },
+  "prompts": [
+    "brave-upper-architecture-prompt-r3.json",
+    "brave-bomber-component-prompt-r3.json",
+    "brave-combined-prompt-r3.json"
+  ],
+  "actual_method_change": {
+    "observed_failed_intermediate": "samples/M04-upper-architecture-r3a.png",
+    "failure": "以上身/R2直接改仍产生细长翼片、窗带和裁翼，不作为当前整机来源",
+    "executed": "先用单独轰炸机源重画宽翼、厚中央机身、进气口和双发动机的组件；实际看图后再作为整机结构主参考",
+    "full_body_sources": [
+      "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-bomber-component-r3.png",
+      "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/refs/brave-v17-upper-source.jpg",
+      "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-brave-combined-master-r2.png",
+      "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/refs/brave-v19-proportion-source.jpg"
+    ]
+  },
+  "author_review": {
+    "actual_art_viewed": true,
+    "changes": [
+      "中央上覆机身和双发动机恢复，与宽后掠翼连成完整飞机框架；全幅翼尖可见，不再是肩上细翼片/舷窗车厢。",
+      "胸腹/腰侧增厚，肩背更宽深；膝钻、履带腿、巨拳和臂外列车壳保留。",
+      "头冠增加宽眉甲、层叠侧冠/颊甲与中央竖冠，合体头相对勇拳更复杂。"
+    ],
+    "remaining": [
+      "图中飞机上表面与上覆腹腔仍需正侧背核对，头/肩/翼/发动机要有活动净空；当前单视图不能证实可动装配完成。",
+      "完整勇拳核心与合体对照、钻探机/列车/轰炸机分件和左右结构一致性未完成。",
+      "低模、UV、贴图、骨架/共享动作、正式加载和正常战棋镜头未由本会话制作验证。",
+      "R3具体新上身结构仍待用户判断，不能继承R2整体方向认可为整机最终验收。"
+    ]
+  },
+  "model_produced": false,
+  "runtime_integrated": false,
+  "user_accepted": false,
+  "current_status": "bomber_direction_positive_head_nose_drill_and_shoulder_articulation_revision_required",
+  "generation_mode": "built-in image_gen",
+  "user_followup_feedback": {
+    "date": "2026-10-17",
+    "authority": "direct_user_message_with_R3_attachment",
+    "source_image": "samples/M04-brave-combined-master-r3.png",
+    "verbatim": "还行，钻头角度有点问题，头部保留头发，但用V17的更好；轰炸机意思对了，机翼部分考虑肩膀的可动结构（可以将机身和机翼中间拆开，就能让肩关节能旋转），轰炸机本体可以调一下配色，机头可以更像V18，而且不用是尖头，让它更好看",
+    "scope": "认可R3轰炸机总体意思；不是全部结构/整机最终验收",
+    "next": [
+      "头部取V17感觉，保留长发",
+      "机身与左右机翼可独立分件，给肩关节旋转留净空",
+      "轰炸机配色微调，减少灰黑覆盖、保持橙/象牙白/石墨区分",
+      "胸部机头向V18靠拢，收短为饱满钝鼻，不做尖喙",
+      "两枚膝部钻头以各自膝盖的朝前轴线/足尖方向校正，不朝内互指或随意左右横出"
+    ]
+  }
+}

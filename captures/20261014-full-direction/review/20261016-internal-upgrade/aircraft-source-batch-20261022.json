@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-22",
+  "revision": "aircraft-source-batch-20261022-r1",
+  "asset": "雷翎/歌翼双形态源设计首轮",
+  "existing_batch": "design-followthrough-r1.json",
+  "previous_delivery": "M11-delivery-manifest-r9.json",
+  "reader": "aircraft-source-batch-20261022.html",
+  "generation_mode": "built-in image_gen",
+  "items": [
+    {
+      "id": "M08",
+      "name": "雷翎",
+      "file": "samples/M08-dual-form-r1b.png",
+      "sha256": "09fcac664054bf81f70c5f04fc658678912206045038e03bcc6fa96c84ebd77d",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-a6acf334-57d8-4cb6-8e89-785c28fc4078.png",
+      "source_reference": "captures/20261014-full-direction/review/20261016-r3-wave3/images/6b48ef419fc2bba9bde11bd02b63ffc58524db2ad5f847638fa223afd02a9a13.jpg",
+      "source_reference_sha256": "6b48ef419fc2bba9bde11bd02b63ffc58524db2ad5f847638fa223afd02a9a13",
+      "prompts": [
+        "M08-dual-form-prompt-r1.txt",
+        "M08-gun-forward-prompt-r1b.txt"
+      ],
+      "role": "人形/航空形态同源部件首轮候选",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    },
+    {
+      "id": "M14",
+      "name": "歌翼可变机",
+      "file": "samples/M14-dual-form-r1.png",
+      "sha256": "86f60c86bb44405dce4f9b81838ae9a35dd9cfa5c9a9851f0e49ffd9b9f40b1f",
+      "pixel_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-501c9ac0-a345-46e9-afb8-5d0279429a87.png",
+      "source_reference": "captures/20261014-full-direction/review/20261016-r3-wave3/images/027e8d6cc3e77bd29c4e73218ec970113999abb98e0523c6aca21e24f3acac0b.jpg",
+      "source_reference_sha256": "027e8d6cc3e77bd29c4e73218ec970113999abb98e0523c6aca21e24f3acac0b",
+      "prompts": [
+        "M14-dual-form-prompt-r1.txt"
+      ],
+      "role": "人形/航空形态同源部件首轮候选",
+      "user_accepted": false,
+      "runtime_integrated": false,
+      "handoff_sent": false
+    }
+  ],
+  "original_scope": [
+    "adoption-manifest.json#M08",
+    "adoption-manifest.json#F07",
+    "adoption-manifest.json#M14",
+    "adoption-manifest.json#F08",
+    "adoption-manifest.json#N13"
+  ],
+  "authority_boundary": {
+    "leiling_entity": "V353U047",
+    "songwing_working_reference": "CML023",
+    "existing_reference_unchanged": ".superpowers/brainstorm/37837-1782033239/content/mecha_r04_r18_dual_forms_v2.png",
+    "scope": "从原外援候选修订的源设计研究；不取代Working参考或绑定新原作角色。"
+  },
+  "author_review": {
+    "reviewer": "author",
+    "independent_review": false,
+    "actual_media": [
+      "captures/20261014-full-direction/review/20261016-r3-wave3/images/6b48ef419fc2bba9bde11bd02b63ffc58524db2ad5f847638fa223afd02a9a13.jpg",
+      "captures/20261014-full-direction/review/20261016-r3-wave3/images/027e8d6cc3e77bd29c4e73218ec970113999abb98e0523c6aca21e24f3acac0b.jpg",
+      "samples/M08-dual-form-r1b.png",
+      "samples/M14-dual-form-r1.png"
+    ],
+    "observations": {
+      "M08": [
+        "蓝紫涂装、独立长头壳、长枪与长腿保持；座舱紫色中心和翼根圆轴在两形态可追认。",
+        "航空态清楚显示双喷口；人形可见近侧后腰发动机，另一侧因投影遮挡，仍需背视核对。",
+        "初稿航空枪口朝后，R1b已朝机鼻方向安装；实际是机身近侧背部导轨，不宣称已画成提示词建议的腹部中线。",
+        "机鼻尖、下摆分段与折叠腿架仍需结构图收敛；双态图不证明完整变形。"
+      ],
+      "M14": [
+        "保留粉白和椭圆座舱胸，与雷翎蓝紫尖锐三角翼形成区分。",
+        "航空态四喷口；人形上背成对挂舱及小腿后成对喷口可读，挂舱以短支架连接。",
+        "翼面、座舱/下鼻尖和两组发动机去向比原候选更清楚；完整臂腿收纳与翼根扫掠仍未验证。",
+        "未增加武器或第三可玩形态；新头鳍与全形仍为候选，未替换旧Working参考。"
+      ]
+    },
+    "limits": [
+      "当前只有两台各一张双态候选；未完成三视、一个可信中间态、同模型节点或连续变形。",
+      "正常游戏镜头、动作/声音、输入/性能均未验证，本轮没有运行替换。",
+      "新图未获用户采用；货柜领袖已确定形象不受本批候选影响。"
+    ]
+  },
+  "prompt_index": "aircraft-source-prompts-20261022.json",
+  "canon_changed": false,
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "later_runtime_comparison": "aircraft-runtime-comparison-20261022.json",
+  "recommended_as_replacement": false,
+  "status": "first_drafts_retained_as_structure_studies_not_current_redesign_masters"
+}

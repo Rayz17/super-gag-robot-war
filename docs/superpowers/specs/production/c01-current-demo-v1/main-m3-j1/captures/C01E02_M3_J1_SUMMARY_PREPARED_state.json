@@ -1,0 +1,546 @@
+{
+	"build_id": "C01CDV1-M3-J1-G1-M1A",
+	"capture_id": "SUMMARY_PREPARED",
+	"draft_hash": "1de7cb976d33993cc0ccfe57b8e5a6d260f560ed49b615c0f68aacf63769dbfc",
+	"event_log": [
+		{
+			"actors": [
+				"TARGET_C01_EMERGENCY_VEHICLE"
+			],
+			"contact_group_id": "CG-M3J1-VEHICLE-LANDING-ZONE",
+			"event_id": "EV-J1-T1-VEHICLE",
+			"result": "crossing_resolved_lane_still_active",
+			"source_intent_ids": [
+				"INTENT_J1_VEHICLE_CROSS"
+			],
+			"summary": "应急车按冻结路线先穿过馆守Z的落脚区；车辆仍不可控。",
+			"timeslice": "T1"
+		},
+		{
+			"actors": [
+				"V353U001",
+				"ENEMY_C01_RIFT_SWARM_01"
+			],
+			"contact_group_id": "CG-M3J1-LANE-T2",
+			"event_id": "EV-J1-T2-LANE-CONTACT",
+			"fallback_reason": "",
+			"fallback_taken": false,
+			"prepare_trigger_count": 1,
+			"prepare_triggered": true,
+			"source_intent_ids": [
+				"INTENT_J1_SWARM_LANE"
+			],
+			"summary": "小体按冻结意图进入保护线，trigger → response 恰好触发一次。",
+			"swarm_alive": true,
+			"swarm_organization_state": "scattered",
+			"timeslice": "T2"
+		},
+		{
+			"actors": [
+				"V353U001",
+				"ENEMY_C01_BREAKER"
+			],
+			"charge_contact": true,
+			"charge_redirected": true,
+			"contact_group_id": "CG-M3J1-GIANTS-T3",
+			"event_id": "EV-J1-T3-GIANT-CONTACT",
+			"guardian_anchor": [
+				19,
+				9
+			],
+			"guardian_facing": "east",
+			"source_intent_ids": [
+				"INTENT_J1_BREAKER_CHARGE"
+			],
+			"summary": "两台巨体从共同前态正撞；馆守Z被推出，同时把冲角偏开一截。",
+			"timeslice": "T3"
+		},
+		{
+			"actors": [
+				"ALLY_C01_CITY_ARTILLERY",
+				"ENEMY_C01_BREAKER"
+			],
+			"contact_group_id": "CG-M3J1-CITY-SHOT-T4",
+			"event_id": "EV-J1-T4-CITY-ARTILLERY",
+			"side_armor_hit": true,
+			"source_intent_ids": [
+				"INTENT_J1_CITY_GUN"
+			],
+			"summary": "冲角偏开后侧甲暴露，城市边缘炮火按冻结条件命中。",
+			"timeslice": "T4"
+		},
+		{
+			"actors": [
+				"ENV_C01_ROAD_SURFACE",
+				"ENEMY_C01_BREAKER"
+			],
+			"breaker_red_charge_state": "charging",
+			"contact_group_id": "CG-M3J1-ROUND-END-T5",
+			"event_id": "EV-J1-T5-ROAD-AND-RED-CHARGE",
+			"red_impact_released": false,
+			"road_state": "twin_buckles",
+			"source_intent_ids": [
+				"INTENT_J1_ROAD_RESPONSE"
+			],
+			"summary": "路面按冻结响应结算；BREAKER开始聚集红光，本原型立即停在这里。",
+			"timeslice": "T5"
+		}
+	],
+	"evidence_role": "engineering_gameplay_evidence_only",
+	"fixture_id": "success_prepared_reaction",
+	"pixel_sample": {
+		"center": "34433bff",
+		"sampled_unique_colors": 65
+	},
+	"plan_summary": {
+		"effective_endpoint": [
+			19.0,
+			9.0
+		],
+		"endpoint": [
+			19.0,
+			9.0
+		],
+		"expected_contact_group_id": "CG-M3J1-GIANTS-T3",
+		"expected_contact_timeslice": "T3.25",
+		"fallback": {
+			"fallback_id": "GUARD_EXIT"
+		},
+		"fallback_risk": "",
+		"final_facing": "east",
+		"main_action": null,
+		"mode": "prepared_reaction",
+		"protected_target_id": "TARGET_C01_EAST_EXIT",
+		"response": {
+			"protected_target_id": "TARGET_C01_EAST_EXIT",
+			"reach": 0.0,
+			"required_facing": "east",
+			"response_id": "LATERAL_LEG_DEFLECT"
+		},
+		"route": [
+			[
+				15.0,
+				11.0
+			],
+			[
+				15.0,
+				10.0
+			],
+			[
+				16.0,
+				10.0
+			],
+			[
+				17.0,
+				10.0
+			],
+			[
+				18.0,
+				10.0
+			],
+			[
+				19.0,
+				10.0
+			],
+			[
+				19.0,
+				9.0
+			]
+		],
+		"route_hash": "fddaadd0d1d943ef8a71e4002e97185ff55c260d5860507fa8d678a59fdb3720",
+		"trigger": {
+			"actor_id": "ENEMY_C01_RIFT_SWARM_01",
+			"event_type": "ENTITY_ENTERED_AREA",
+			"target_id": "RESCUE_LANE_EAST",
+			"timeslice": 2.0
+		},
+		"unit_id": "V353U001",
+		"waypoints": [
+			[
+				15.0,
+				10.0
+			],
+			[
+				18.0,
+				10.0
+			],
+			[
+				19.0,
+				9.0
+			]
+		]
+	},
+	"png_path": "/Users/rayz/Documents/超gag机器人大战/game-godot/../docs/superpowers/specs/production/c01-current-demo-v1/main-m3-j1/captures/C01E02_M3_J1_SUMMARY_PREPARED_1280x720.png",
+	"png_sha256": "d41757af9a8f23366a1e7df467b86c82e90b422d4e51c7ea285db63d48a001a4",
+	"public_intent_hash": "c841018d866a358e08cba6a6e0aeee1c18b76dadb09cda26da12c85f0df8963a",
+	"real_art_loaded": false,
+	"round_receipt": {
+		"committed_plan_hash": "1de7cb976d33993cc0ccfe57b8e5a6d260f560ed49b615c0f68aacf63769dbfc",
+		"contact_group_id": "CG-M3J1-GIANTS-T3",
+		"fallback_id": "NONE",
+		"fallback_taken": false,
+		"mutation_field_count": 13,
+		"prepare_trigger_count": 1,
+		"prepare_triggered": true,
+		"prestate_hash": "73bc554cf472d9a69b23baaeafdac869d32680a7cb3e6118ef4d16db24c3bc39",
+		"prototype_stop": "M3_J1_PROTOTYPE_STOP",
+		"public_intent_hash": "c841018d866a358e08cba6a6e0aeee1c18b76dadb09cda26da12c85f0df8963a",
+		"round_id": "M3-J1-ROUND-001",
+		"round_result_hash": "d66489d3d2d41dc8225455ffa2964ecde81f3e129b693cea576ab2153ab03e56",
+		"round_start_hash": "73bc554cf472d9a69b23baaeafdac869d32680a7cb3e6118ef4d16db24c3bc39",
+		"route_hash": "fddaadd0d1d943ef8a71e4002e97185ff55c260d5860507fa8d678a59fdb3720",
+		"settlement_counts": {
+			"breaker": 1,
+			"city_artillery": 1,
+			"guardian": 1,
+			"road_surface": 1,
+			"swarm": 1,
+			"vehicles": 1
+		},
+		"success": true,
+		"timeslice": [
+			"T1",
+			"T2",
+			"T3.25",
+			"T4",
+			"T5"
+		]
+	},
+	"round_start_hash": "73bc554cf472d9a69b23baaeafdac869d32680a7cb3e6118ef4d16db24c3bc39",
+	"rules_profile_id": "c01cdv1_e02_shared_round_m3_j1",
+	"u2_visual_playtest_ready": false,
+	"ui_state": "COMMIT_SUMMARY",
+	"viewport": [
+		1280,
+		720
+	],
+	"world_result": {
+		"entities": [
+			{
+				"anchor": [
+					19,
+					9
+				],
+				"controllable": true,
+				"display_name": "馆守Z",
+				"facing": "east",
+				"footprint": [
+					2.0,
+					2.0
+				],
+				"kind": "guardian",
+				"load": 3,
+				"status": "holding_contact",
+				"unit_id": "V353U001"
+			},
+			{
+				"alive": true,
+				"anchor": [
+					22,
+					11
+				],
+				"controllable": false,
+				"display_name": "BREAKER",
+				"facing": "north",
+				"first_knockdown": false,
+				"footprint": [
+					3.0,
+					3.0
+				],
+				"kind": "boss",
+				"red_charge_state": "charging",
+				"status": "charge_partially_redirected",
+				"unit_id": "ENEMY_C01_BREAKER"
+			},
+			{
+				"alive": true,
+				"anchor": [
+					22,
+					8
+				],
+				"controllable": false,
+				"display_name": "突入小体 01",
+				"facing": "west",
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"kind": "swarm",
+				"organization_state": "scattered",
+				"status": "deflected_alive",
+				"unit_id": "ENEMY_C01_RIFT_SWARM_01"
+			},
+			{
+				"alive": true,
+				"anchor": [
+					26.0,
+					12.0
+				],
+				"controllable": false,
+				"display_name": "突入小体 02",
+				"facing": "north",
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"kind": "swarm",
+				"organization_state": "scattered",
+				"status": "active",
+				"unit_id": "ENEMY_C01_RIFT_SWARM_02"
+			},
+			{
+				"alive": true,
+				"anchor": [
+					29.0,
+					5.0
+				],
+				"controllable": false,
+				"display_name": "突入小体 03",
+				"facing": "south",
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"kind": "swarm",
+				"organization_state": "scattered",
+				"status": "active",
+				"unit_id": "ENEMY_C01_RIFT_SWARM_03"
+			},
+			{
+				"anchor": [
+					24.0,
+					9.0
+				],
+				"controllable": false,
+				"display_name": "应急车 [自动]",
+				"facing": "east",
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"kind": "emergency_vehicle",
+				"route": [
+					[
+						17.0,
+						10.0
+					],
+					[
+						18.0,
+						10.0
+					],
+					[
+						21.0,
+						10.0
+					],
+					[
+						24.0,
+						9.0
+					]
+				],
+				"status": "moving_lane_active",
+				"unit_id": "TARGET_C01_EMERGENCY_VEHICLE"
+			},
+			{
+				"anchor": [
+					31.0,
+					7.0
+				],
+				"controllable": false,
+				"display_name": "东侧撤离口",
+				"facing": "east",
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"kind": "evacuation_exit",
+				"status": "active",
+				"unit_id": "TARGET_C01_EAST_EXIT"
+			},
+			{
+				"anchor": [
+					27.0,
+					8.0
+				],
+				"controllable": false,
+				"display_name": "东门警戒设施",
+				"facing": "south",
+				"footprint": [
+					1.0,
+					1.0
+				],
+				"kind": "security_target",
+				"status": "active",
+				"unit_id": "TARGET_C01_SECURITY_GATE"
+			}
+		],
+		"facts": {
+			"breaker_alive": true,
+			"breaker_charge_line_partially_redirected": true,
+			"breaker_first_charge_contact": true,
+			"breaker_first_knockdown": false,
+			"breaker_red_charge_state": "charging",
+			"first_swarm_deflected": true,
+			"first_vehicle_crossing_resolved": true,
+			"guardian_between_lane_and_breaker": true,
+			"mission_clear": false,
+			"prototype_stop": "M3_J1_PROTOTYPE_STOP",
+			"rescue_lane_state": "active",
+			"shield_state": "wall_hung_3_scorches",
+			"story_checkpoint_reached": false,
+			"swarm_organization_state": "scattered"
+		},
+		"failure_reasons": [],
+		"grid": [
+			32.0,
+			18.0
+		],
+		"mission_clear": false,
+		"objects": [
+			{
+				"anchor": [
+					11.0,
+					10.0
+				],
+				"display_name": "退役重盾",
+				"kind": "retired_shield",
+				"object_id": "PROP_C01CDV1_RETIRED_SHIELD_WALL_HUNG",
+				"state": "wall_hung_3_scorches"
+			},
+			{
+				"display_name": "旧会展广场路面",
+				"integrity": 80,
+				"kind": "road_surface",
+				"object_id": "ENV_C01_ROAD_SURFACE",
+				"state": "twin_buckles"
+			},
+			{
+				"controllable": false,
+				"display_name": "城市边缘炮火",
+				"kind": "autonomous_support",
+				"object_id": "ALLY_C01_CITY_ARTILLERY",
+				"state": "fired_hit_side_armor"
+			}
+		],
+		"prototype_stop": "M3_J1_PROTOTYPE_STOP",
+		"rescue_lane_state": "active",
+		"round_id": "M3-J1-ROUND-001",
+		"rules_profile_id": "c01cdv1_e02_shared_round_m3_j1",
+		"shield_state": "wall_hung_3_scorches",
+		"story_checkpoint_reached": false,
+		"success": true,
+		"swarm_organization_state": "scattered",
+		"terrain_zones": [
+			{
+				"kind": "road",
+				"passable": true,
+				"rect": [
+					0.0,
+					7.0,
+					32.0,
+					6.0
+				],
+				"zone_id": "TERRAIN_C01_MAIN_ROAD"
+			},
+			{
+				"kind": "rescue_lane",
+				"passable": true,
+				"rect": [
+					20.0,
+					5.0,
+					12.0,
+					6.0
+				],
+				"zone_id": "TERRAIN_C01_RESCUE_LANE"
+			},
+			{
+				"kind": "building",
+				"passable": false,
+				"rect": [
+					1.0,
+					0.0,
+					7.0,
+					5.0
+				],
+				"zone_id": "TERRAIN_C01_NW_BLOCK"
+			},
+			{
+				"kind": "building",
+				"passable": false,
+				"rect": [
+					10.0,
+					0.0,
+					5.0,
+					4.0
+				],
+				"zone_id": "TERRAIN_C01_NM_BLOCK"
+			},
+			{
+				"kind": "building",
+				"passable": false,
+				"rect": [
+					22.0,
+					0.0,
+					7.0,
+					4.0
+				],
+				"zone_id": "TERRAIN_C01_NE_BLOCK"
+			},
+			{
+				"kind": "building",
+				"passable": false,
+				"rect": [
+					0.0,
+					15.0,
+					8.0,
+					3.0
+				],
+				"zone_id": "TERRAIN_C01_SW_BLOCK"
+			},
+			{
+				"kind": "building",
+				"passable": false,
+				"rect": [
+					26.0,
+					14.0,
+					6.0,
+					4.0
+				],
+				"zone_id": "TERRAIN_C01_SE_BLOCK"
+			},
+			{
+				"kind": "broken_corridor",
+				"passable": false,
+				"rect": [
+					8.0,
+					5.0,
+					7.0,
+					2.0
+				],
+				"zone_id": "TERRAIN_C01_BROKEN_SKYWALK"
+			},
+			{
+				"kind": "security_apron",
+				"passable": true,
+				"rect": [
+					24.0,
+					4.0,
+					8.0,
+					7.0
+				],
+				"zone_id": "TERRAIN_C01_SECURITY_APRON"
+			}
+		],
+		"visible_difference": {
+			"contact_timeslice": "T3.25",
+			"guardian_load": 3,
+			"primary_swarm_anchor": [
+				22,
+				8
+			],
+			"road_integrity": 80,
+			"road_state": "twin_buckles",
+			"route_style": "reactive_lane"
+		},
+		"world_mutation_count": 13
+	}
+}

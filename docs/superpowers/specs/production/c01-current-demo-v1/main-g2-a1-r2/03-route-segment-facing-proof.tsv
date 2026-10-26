@@ -1,0 +1,17 @@
+fixture	stage	segment_index	from	to	grid_delta	screen_delta_px	consumed_facing	final_facing	final_applied_now	actual_frame_or_test	result
+r1_strategy_a	motion	0	[15,11]	[16,11]	[1,0]	[40,20]	east	south	false	02_ROUTE_EAST_SEGMENT	PASS
+r1_strategy_a	motion	1	[16,11]	[17,11]	[1,0]	[40,20]	east	south	false	02_ROUTE_EAST_SEGMENT	PASS
+r1_strategy_a	motion	2	[17,11]	[18,11]	[1,0]	[40,20]	east	south	false	02_ROUTE_EAST_SEGMENT	PASS
+r1_strategy_a	motion	3	[18,11]	[18,10]	[0,-1]	[40,-20]	north	south	false	03_ROUTE_NORTH_SEGMENT	PASS
+r1_strategy_a	endpoint_settle	settle	[18,10]	[18,10]	[0,0]	[0,0]	south	south	true	g2_a1_r2_tactical_geometry_test	PASS
+r1_strategy_b	motion	0	[15,11]	[15,10]	[0,-1]	[40,-20]	north	east	false	06_ROUTE_B_NORTH_SEGMENT	PASS
+r1_strategy_b	motion	1	[15,10]	[16,10]	[1,0]	[40,20]	east	east	false	07_ROUTE_B_EAST_SEGMENT	PASS
+r1_strategy_b	motion	2	[16,10]	[17,10]	[1,0]	[40,20]	east	east	false	07_ROUTE_B_EAST_SEGMENT	PASS
+r1_strategy_b	motion	3	[17,10]	[18,10]	[1,0]	[40,20]	east	east	false	07_ROUTE_B_EAST_SEGMENT	PASS
+r1_strategy_b	motion	4	[18,10]	[19,10]	[1,0]	[40,20]	east	east	false	07_ROUTE_B_EAST_SEGMENT	PASS
+r1_strategy_b	motion	5	[19,10]	[19,9]	[0,-1]	[40,-20]	north	east	false	06_ROUTE_B_NORTH_SEGMENT	PASS
+r1_strategy_b	endpoint_settle	settle	[19,9]	[19,9]	[0,0]	[0,0]	east	east	true	g2_a1_r2_tactical_geometry_test	PASS
+r1_failure	motion	0	[15,11]	[16,11]	[1,0]	[40,20]	east	west	false	g2_a1_r2_tactical_geometry_test	PASS
+r1_failure	motion	1	[16,11]	[17,11]	[1,0]	[40,20]	east	west	false	g2_a1_r2_tactical_geometry_test	PASS
+r1_failure	motion	2	[17,11]	[17,12]	[0,1]	[-40,20]	south	west	false	g2_a1_r2_tactical_geometry_test	PASS
+r1_failure	endpoint_settle	settle	[17,12]	[17,12]	[0,0]	[0,0]	west	west	true	g2_a1_r2_tactical_geometry_test	PASS

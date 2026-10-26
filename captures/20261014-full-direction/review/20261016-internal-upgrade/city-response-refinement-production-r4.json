@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-24",
+  "revision": "city-response-refinement-r4",
+  "existing_batch": "design-followthrough-r1.json",
+  "generation_mode": "built-in image_gen",
+  "reader": "city-response-refinement-r4.html",
+  "source_package": "city-response-refinement-source-20261024-r4.zip",
+  "user_feedback": "city-response-user-correction-20261024-r4.json",
+  "parent_acceptance_receipt": "city-response-design-fixed-20261023-r2.json",
+  "items": [
+    {
+      "id": "M09",
+      "name": "灰崎警备劳务机",
+      "canon_entity": "V353U033",
+      "parent": {
+        "file": "samples/M09-curved-labor-r2.png",
+        "sha256": "9355ad11dda42d079ab9a55a98ee39d904aedcb564ca88c1354ad4c170180288",
+        "user_accepted": true
+      },
+      "views": [
+        {
+          "id": "FRONT",
+          "label": "修正正面",
+          "file": "samples/M09-front-r4c.png",
+          "sha256": "a8e20f24100e1ee83b5e80266c8d943a195632f146c7242a640a659cb5ca5edb",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-b9e1cb2b-a994-449a-9eac-1f02c8abb8bc.png",
+          "user_accepted": false,
+          "runtime_integrated": false
+        },
+        {
+          "id": "SIDE",
+          "label": "同步侧面",
+          "file": "samples/M09-side-r4.png",
+          "sha256": "87b6976b24bb6d5a5ec047031bdc43df73279542e6a1cdf4b8abcb0dc8d67888",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-3b28cc38-1f0f-40dd-942e-fdb322f48302.png",
+          "user_accepted": false,
+          "runtime_integrated": false
+        },
+        {
+          "id": "REAR",
+          "label": "同步背面",
+          "file": "samples/M09-rear-r4.png",
+          "sha256": "3e0f169bce5718059fffa5f532ac5ad2f03ef2d9b11f1234606bf24a89531d9b",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-d19c5b74-42d3-4911-9e6b-346e7be2c5e8.png",
+          "user_accepted": false,
+          "runtime_integrated": false
+        }
+      ],
+      "extras": []
+    },
+    {
+      "id": "M10",
+      "name": "消防架桥机",
+      "canon_entity": "V353U034",
+      "parent": {
+        "file": "samples/M10-engineering-transformer-r2.png",
+        "sha256": "cd4b733daceee495c87182691608eb50f17d2284249a1e154f88645fa721c01d",
+        "user_accepted": true
+      },
+      "views": [
+        {
+          "id": "FRONT",
+          "label": "正面",
+          "file": "samples/M10-front-r3b.png",
+          "sha256": "154c008ba59e390815825ad54bbbcf1adc212ebb10f27d3c0f598b3b6c2ef38e",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-10b2f01d-14a1-4865-8e0d-8fa90e48a456.png",
+          "user_accepted": false,
+          "runtime_integrated": false,
+          "retained_unchanged": true,
+          "user_feedback": "消防架桥机这个问题不大；本轮保持人形。"
+        },
+        {
+          "id": "SIDE",
+          "label": "侧面",
+          "file": "samples/M10-side-r3b.png",
+          "sha256": "a309fea82d4e123a58bf7b1537184d0f1485d12c9bcc4e1c9d1330fe58d92515",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-628ea6ad-d4d3-4781-b683-a876a39a8c3f.png",
+          "user_accepted": false,
+          "runtime_integrated": false,
+          "retained_unchanged": true,
+          "user_feedback": "消防架桥机这个问题不大；本轮保持人形。"
+        },
+        {
+          "id": "REAR",
+          "label": "背面",
+          "file": "samples/M10-rear-r3.png",
+          "sha256": "756f99ba45c7321605fa6ae09d49b0eb4e3236658b024a024e19a14480fc464b",
+          "pixel_size": [
+            1024,
+            1536
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-705584f1-b3af-431e-abd8-281c8b337b2c.png",
+          "user_accepted": false,
+          "runtime_integrated": false,
+          "retained_unchanged": true,
+          "user_feedback": "消防架桥机这个问题不大；本轮保持人形。"
+        }
+      ],
+      "extras": [
+        {
+          "id": "VEHICLE",
+          "label": "消防架桥车 · 载具三视",
+          "file": "samples/M10-vehicle-turnaround-r4.png",
+          "sha256": "5902392965b57b9104c11ae38a09943877dd33605ab6c34cbfce0670960f9d35",
+          "pixel_size": [
+            1536,
+            1024
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-8cd8316c-fae3-4218-94ab-f42556341a0c.png",
+          "user_accepted": false,
+          "runtime_integrated": false
+        },
+        {
+          "id": "TRANSFORM",
+          "label": "部件对应与变形步骤",
+          "file": "samples/M10-transformation-sequence-r4.png",
+          "sha256": "6efdb96e9679c91d13b5b37b5c5e16678932846ab41f0b5134a37aa03ded0652",
+          "pixel_size": [
+            1448,
+            1086
+          ],
+          "mode": "RGB",
+          "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-e9333aae-f3b5-44ed-9551-5e4502168d6a.png",
+          "user_accepted": false,
+          "runtime_integrated": false
+        }
+      ]
+    }
+  ],
+  "prompt_set": [
+    "city-response-refinement-prompts-r4.json",
+    "city-response-refinement-derived-prompts-r4.json",
+    "city-response-m09-sync-prompts-r4.json"
+  ],
+  "author_review": "city-response-refinement-author-review-r4.json",
+  "transformation_correspondence": "M10-transformation-correspondence-r4.json",
+  "historical_M09_derivatives": [
+    "samples/M09-front-r3b.png",
+    "samples/M09-front-attempt-r4.png",
+    "samples/M09-front-proportion-r4b.png"
+  ],
+  "experience": {
+    "start": "用户指出灰崎派生正面矮胖/头错，消防人形问题不大但缺载具与变形图。",
+    "input": "从指定母稿重新推灰崎正面，局部修头身并同步侧背；以保留的人形和载具目标绘制对应步骤。",
+    "visible_consequence": "灰崎新增三张修正源图；消防人形保持，新增载具三视板和六步变形/作业图。",
+    "next": "当前修订进入看稿；按新图继续分件核对、机构/动作制作，不能把二维步骤图当成已验证连续变形。"
+  },
+  "new_outputs_user_accepted": false,
+  "runtime_assets_modified": false,
+  "handoff_sent": false
+}

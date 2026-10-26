@@ -1,0 +1,1319 @@
+{
+  "revision": "brave-components-production-r11",
+  "date": "2026-10-18",
+  "authority": "user asked final alignment of four machines and multiviews, then instructed 做吧",
+  "scope": "用户本轮11张图整体选用；逐张核对并标清局部修图、对应说明和制作归一，不在本轮擅自重绘选定图。",
+  "baseline_record": "brave-front-backpack-fins-r7.json",
+  "existing_batch_record": "design-followthrough-r1.json",
+  "generation_mode": "no_new_generation_this_review",
+  "model_hold": "paused_design_pending",
+  "runtime_changed": false,
+  "handoff_sent": false,
+  "user_accepted": true,
+  "assets": [
+    {
+      "id": "F09",
+      "master": {
+        "file": "samples/F09-brave-core-master-r1.png",
+        "sha256": "696263b5f9f221387d3fd964af023f5a5757b676ccea18e69168df343ed7d4dd",
+        "pixel_size": [
+          1024,
+          1536
+        ],
+        "number": 11,
+        "title": "勇拳单体形象",
+        "role": "完整核心的主要造型与色块；胸口标识仍需和图6统一",
+        "selected_by_user": true
+      },
+      "views": {
+        "file": "samples/F09-core-views-r8.png",
+        "sha256": "872fd03b3427cb2bc2986bfaf2d40212917f936614c9336a24bae60a563d91bc",
+        "pixel_size": [
+          1536,
+          1024
+        ],
+        "number": 6,
+        "title": "勇拳三视设计",
+        "role": "同一个完整人形核心的正侧背、原头和长发、原四肢与关节",
+        "selected_by_user": true
+      },
+      "assembly": {
+        "file": "samples/F09-bomber-mask-loading-r9.png",
+        "sha256": "c3cf248750ce7485ba6d6502a95115c43eca43ac9456b526541a846ec0e92d64",
+        "pixel_size": [
+          1536,
+          1024
+        ],
+        "number": 9,
+        "title": "面罩加载与拳甲强化",
+        "role": "轰炸机内置面罩加载到原头；拳甲强化属于完整核心",
+        "selected_by_user": true
+      },
+      "author_observations": [
+        "图11为勇拳主体造型，图6负责三视，图9负责面罩来源与拳甲强化；额部/胸标问题见BR11-01/07。"
+      ],
+      "assembly_status": "user_selected_mechanism_with_open_local_corrections"
+    },
+    {
+      "id": "F12-bomber",
+      "master": {
+        "file": "samples/M04-bomber-master-r8.png",
+        "sha256": "99d7e68acb1c2206727c383d4210fcfeb50e6b2614516da28128cac0ba298503",
+        "pixel_size": [
+          1536,
+          1024
+        ],
+        "number": 3,
+        "title": "轰炸机单体",
+        "role": "完整机鼻/舱窗、双主翼、双发动机、两片竖翼与独立翼根",
+        "selected_by_user": true
+      },
+      "assembly": {
+        "file": "samples/M04-bomber-assembly-r8b.png",
+        "sha256": "a603a9f3d3439c046bcea99857f93d99ddb773b7617247da1b399eb06c9f926d",
+        "pixel_size": [
+          1536,
+          1024
+        ],
+        "number": 8,
+        "title": "轰炸机装配与肩翼让位",
+        "role": "胸/背/翼架独立分件，翼架与核心肩关节分别活动",
+        "selected_by_user": true
+      },
+      "author_observations": [
+        "单体/肩翼关系已选用；灰色核心头、单/双格栅和尾端问题仍待局部处理。"
+      ],
+      "assembly_status": "user_selected_layout_with_open_local_corrections",
+      "auxiliary_views_not_selected_this_turn": {
+        "file": "samples/M04-bomber-views-r8b.png",
+        "sha256": "e1bf78eb58a214f5e04dfe5d5faf96e409637c817e528de0f71ea76ab82757e2",
+        "pixel_size": [
+          1536,
+          1024
+        ],
+        "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-a745546f-78fd-42da-97b1-807e882a3030.png",
+        "prompt": "brave-bomber-profile-panel-prompt-r8b.json",
+        "author_observations": [
+          "侧向主翼已收为窄边，近侧发动机显示筒壁，双竖翼在侧向叠合；较初稿消除三分之四视角。",
+          "正/俯/后沿母稿保留；该图仍是绘制视图而非模型导出。"
+        ]
+      }
+    },
+    {
+      "id": "F12-train",
+      "master": {
+        "file": "samples/F12-subtrain-master-r8.png",
+        "sha256": "332d7d4d5726e992aaf428df6e335cd1fd1a2f68504d62ac2f192c511a325fbc",
+        "pixel_size": [
+          1536,
+          1024
+        ],
+        "number": 4,
+        "title": "海底列车单体",
+        "role": "一列两节、两个外端车头、中央联接、橙白蓝窗带与短翼",
+        "selected_by_user": true
+      },
+      "assembly": {
+        "file": "samples/F12-subtrain-assembly-r8b.png",
+        "sha256": "9102d9a87412b02e95bd099509698b9e6521aa1631efdae1e83570347aeb6907",
+        "pixel_size": [
+          1536,
+          1024
+        ],
+        "number": 7,
+        "title": "列车臂壳展开",
+        "role": "中缝拆节、左右开壳、车头朝肘后、拳向前的状态关系",
+        "selected_by_user": true
+      },
+      "author_observations": [
+        "车型与开壳关系选定；待机和炮击两态及短翼折收说明待补。"
+      ],
+      "assembly_status": "user_selected_two_state_mapping_open",
+      "auxiliary_views_not_selected_this_turn": {
+        "file": "samples/F12-subtrain-views-r8.png",
+        "sha256": "a6a22ae0cd867d08d3fcb7eed959309aba1502e9bc2cca09e74895a54ded1b16",
+        "pixel_size": [
+          1774,
+          887
+        ],
+        "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-0d95e74d-fc62-4ba1-a1a5-47742b558028.png",
+        "prompt": "brave-train-views-prompt-r8.json",
+        "author_observations": [
+          "侧/俯同为两节等长车体，两个车头在外端，中间一个耦合点。",
+          "两端端视匹配；小侧翼和窗带在侧/俯可追认。"
+        ]
+      }
+    },
+    {
+      "id": "F11",
+      "master": {
+        "file": "samples/F11-drill-master-r8.png",
+        "sha256": "a6158af8733402fab671a6e4e302d31ffb52d443fce467cd448f4b704327f354",
+        "pixel_size": [
+          1536,
+          1024
+        ],
+        "number": 5,
+        "title": "钻探机单体",
+        "role": "一车双模块、双钻、每半分组履带和白甲/橙架",
+        "selected_by_user": true
+      },
+      "assembly": {
+        "file": "samples/M04-front-backpack-fins-r7.png",
+        "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98",
+        "pixel_size": [
+          1254,
+          1254
+        ],
+        "number": 10,
+        "title": "社勇王整机正面",
+        "role": "最终整体比例、巨拳、胸机鼻、头冠、主翼、膝钻及腿足外观的首要基准",
+        "selected_by_user": true,
+        "kind": "approved_installed_appearance_reference_not_exploded_assembly"
+      },
+      "author_observations": [
+        "安装形态以选定整机图10为准；载具到膝/胫/踝足分件对应待补，不继续沿长腿稿推导。"
+      ],
+      "assembly_status": "installed_appearance_selected_component_mapping_open",
+      "auxiliary_views_not_selected_this_turn": {
+        "file": "samples/F11-drill-views-r8.png",
+        "sha256": "68cc1e906b10ca1f30c5b9ce43be273570b03856abbcd5754febf869e2827779",
+        "pixel_size": [
+          1536,
+          1024
+        ],
+        "generated_source": "/Users/rayz/.codex/generated_images/01a13f08-23a0-74c2-b2f5-7913c7e81470/exec-b3d9ef7d-d7a5-48e9-b84b-796f46d7b454.png",
+        "prompt": "brave-drill-views-prompt-r8.json",
+        "author_observations": [
+          "前视两钻、侧视重叠一钻、俯视两套车体、后视无前钻，主要方向一致。",
+          "两组履带与中央分缝可追认；未提供精密变形尺寸。"
+        ]
+      }
+    }
+  ],
+  "remaining": [
+    "按BR11-01/02/03做局部修图，不推翻选定造型。",
+    "补BR11-04/05/06的部件归属/状态小示意，不要求精密连续机械变形。",
+    "胸标及腕环/材质按BR11-07/08归一；新修订图不自动复制成用户已认可。",
+    "三维、主工程替换及运行验收未发生；不改变其他会话台账或发送进度消息。"
+  ],
+  "component_correspondence": {
+    "F09": "完整核心原头/长发/四肢保留；拳甲强化。头部银色面罩由轰炸机加载，非核心冠甲自行展开。",
+    "F12-bomber": "中央机身→胸，内部面罩舱→给勇拳加载社勇王面罩，后机身→背包/双竖翼，左右主翼/发动机→翼架。",
+    "F12-train": "一列双节车→拆为两节，各节左右展开成臂外半壳；车头朝肘后，拳朝前",
+    "F11": "用户图5固定钻机，图10固定装上后的主形与比例，图1/2补侧后；履带分组和座舱等分件归属尚需示意，不以R9或R10候选覆盖所选整机。"
+  },
+  "delivery_reader": "brave-components-r8.html",
+  "design_drawing_set_status": "user_selected_baseline_with_open_local_corrections",
+  "orthographic_accuracy": "design_drawings_not_same_model_projections",
+  "model_generated": false,
+  "previous_record": "brave-components-production-r10.json",
+  "user_correction_record": "user-art-decisions-20261016.json#brave_assembly.whole_set_selection_20261018",
+  "prompt_receipts_history": [
+    {
+      "file": "brave-bomber-assembly-local-prompt-r8b.json",
+      "sha256": "b95f3f0d2cd9d4ad5b928b6088a90c26f86b7f9311a11dfffd4ade2ae74f3836",
+      "mode": "built_in_image_gen",
+      "references": [
+        {
+          "file": "samples/M04-bomber-assembly-r8a.png",
+          "sha256": "64f71add559902be7ed8e3d0c5ccdb0aa805a84640a3d42bc6cdc06aff4c754c"
+        },
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        },
+        {
+          "file": "samples/M04-bomber-master-r8.png",
+          "sha256": "99d7e68acb1c2206727c383d4210fcfeb50e6b2614516da28128cac0ba298503"
+        }
+      ]
+    },
+    {
+      "file": "brave-bomber-assembly-prompt-r8.json",
+      "sha256": "4269175ce8f7b6586f6861029275b618c0a007397f71c58b8132c84aaaf557c3",
+      "mode": "built_in_image_gen",
+      "references": [
+        {
+          "file": "samples/M04-bomber-master-r8.png",
+          "sha256": "99d7e68acb1c2206727c383d4210fcfeb50e6b2614516da28128cac0ba298503"
+        },
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        },
+        {
+          "file": "samples/M04-side-fin-aligned-r6c.png",
+          "sha256": "8330b0de4b0ce731293b8dcd8a73134ff45d80113eadb0940f37e670cdaf6564"
+        },
+        {
+          "file": "samples/F09-brave-core-master-r2.png",
+          "sha256": "345fd6592587153869c234d728f5282d3e3e74aa4e0ac6fdf91804c9f60e0fe3"
+        }
+      ]
+    },
+    {
+      "file": "brave-bomber-master-prompt-r8.json",
+      "sha256": "441c247c231367a6bf2148bcaf1016f10b01cbafaec2cab41bdaeb2b62d48467",
+      "mode": "built_in_image_gen",
+      "references": [
+        {
+          "file": "samples/M04-bomber-component-r3.png",
+          "sha256": "38c39052cd5053bbb87eba765040a3b16bde29fd176148eca0aa8835905a5577"
+        },
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        },
+        {
+          "file": "samples/M04-rear-selected-parts-r6a.png",
+          "sha256": "230eaea440744d380d05d9358fd9494907bfd075e5622b5c7f8cfa5e7c74c972"
+        },
+        {
+          "file": "samples/M04-side-fin-aligned-r6c.png",
+          "sha256": "8330b0de4b0ce731293b8dcd8a73134ff45d80113eadb0940f37e670cdaf6564"
+        }
+      ]
+    },
+    {
+      "file": "brave-bomber-profile-panel-prompt-r8b.json",
+      "sha256": "7c5abbef18efdc471d82c6a8e5b0a2b44fac72846768f0cc5dbfa6ce1ec96f9d",
+      "mode": "built_in_image_gen",
+      "references": [
+        {
+          "file": "samples/M04-bomber-views-r8a.png",
+          "sha256": "d1ae6c6b4999e6d106593cf6a39c3fddaee017e51c9c0048dd3f2761ff2e0e88"
+        }
+      ]
+    },
+    {
+      "file": "brave-bomber-views-prompt-r8.json",
+      "sha256": "2c3d33f8a6b472145c5f00a376b456331ebe2ff38ed703e5812e69d49eebbb45",
+      "mode": "built_in_image_gen",
+      "references": [
+        {
+          "file": "samples/M04-bomber-master-r8.png",
+          "sha256": "99d7e68acb1c2206727c383d4210fcfeb50e6b2614516da28128cac0ba298503"
+        }
+      ]
+    },
+    {
+      "file": "brave-core-enhancement-prompt-r8.json",
+      "sha256": "0c19e291de9a8c89645dca8747564be78d094dd99407e12bf0fd0a9d46166ff5",
+      "mode": "built_in_image_gen",
+      "references": [
+        {
+          "file": "samples/F09-brave-core-master-r2.png",
+          "sha256": "345fd6592587153869c234d728f5282d3e3e74aa4e0ac6fdf91804c9f60e0fe3"
+        },
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        }
+      ]
+    },
+    {
+      "file": "brave-core-views-prompt-r8.json",
+      "sha256": "8cf8ff57f8aa84c4574393134ab31ff7cfa54ea288e349a79c601ca6e420b5fa",
+      "mode": "built_in_image_gen",
+      "references": [
+        {
+          "file": "samples/F09-brave-core-master-r2.png",
+          "sha256": "345fd6592587153869c234d728f5282d3e3e74aa4e0ac6fdf91804c9f60e0fe3"
+        }
+      ]
+    },
+    {
+      "file": "brave-drill-assembly-prompt-r8.json",
+      "sha256": "a494da7da5134e353b0d3ed68c749f9aebbe8663c5e50c8994fa21a129a1d801",
+      "mode": "built_in_image_gen",
+      "references": [
+        {
+          "file": "samples/F11-drill-master-r8.png",
+          "sha256": "a6158af8733402fab671a6e4e302d31ffb52d443fce467cd448f4b704327f354"
+        },
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        },
+        {
+          "file": "samples/M04-side-fin-aligned-r6c.png",
+          "sha256": "8330b0de4b0ce731293b8dcd8a73134ff45d80113eadb0940f37e670cdaf6564"
+        },
+        {
+          "file": "samples/F09-brave-core-master-r2.png",
+          "sha256": "345fd6592587153869c234d728f5282d3e3e74aa4e0ac6fdf91804c9f60e0fe3"
+        }
+      ]
+    },
+    {
+      "file": "brave-drill-master-prompt-r8.json",
+      "sha256": "9ff0573a9f2d4ed1974a7b9a420c2f2273c53c8cc1297b9e3df58f4a594ed103",
+      "mode": "built_in_image_gen",
+      "references": [
+        {
+          "file": "refs/drill-v17-source.jpg",
+          "sha256": "a81a8ec44419c2a30e310c071c3ec0012f07b677e0bace77a78da488acb5b568"
+        },
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        },
+        {
+          "file": "samples/M04-side-fin-aligned-r6c.png",
+          "sha256": "8330b0de4b0ce731293b8dcd8a73134ff45d80113eadb0940f37e670cdaf6564"
+        },
+        {
+          "file": "samples/M04-rear-selected-parts-r6a.png",
+          "sha256": "230eaea440744d380d05d9358fd9494907bfd075e5622b5c7f8cfa5e7c74c972"
+        }
+      ]
+    },
+    {
+      "file": "brave-drill-views-prompt-r8.json",
+      "sha256": "efdb3c3da088f998ca6a0953f4365f6aa4d43ea35cdabcfddaf5935cda5998f2",
+      "mode": "built_in_image_gen",
+      "references": [
+        {
+          "file": "samples/F11-drill-master-r8.png",
+          "sha256": "a6158af8733402fab671a6e4e302d31ffb52d443fce467cd448f4b704327f354"
+        }
+      ]
+    },
+    {
+      "file": "brave-train-assembly-local-prompt-r8b.json",
+      "sha256": "8f6f33335ae7f1f7cab9bef95210de44f7b25e703f3c2166ff4669e32af5d566",
+      "mode": "built_in_image_gen",
+      "references": [
+        {
+          "file": "samples/F12-subtrain-assembly-r8a.png",
+          "sha256": "8abf0d4f76098f6791c66cf471a3c40e0600df78a71e5a4d2e7ced0daa7691e4"
+        },
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        }
+      ]
+    },
+    {
+      "file": "brave-train-assembly-prompt-r8.json",
+      "sha256": "f8db6d5a9a1513dbf60b9f06f9abf4d26aede879a3de61ede0914082e11be488",
+      "mode": "built_in_image_gen",
+      "references": [
+        {
+          "file": "samples/F12-subtrain-master-r8.png",
+          "sha256": "332d7d4d5726e992aaf428df6e335cd1fd1a2f68504d62ac2f192c511a325fbc"
+        },
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        },
+        {
+          "file": "samples/M04-train-arm-structure-r2.png",
+          "sha256": "40d8f8bec33e4f181e7c1c3e6f7297557bfaffb379f687944734cae940b7337e"
+        }
+      ]
+    },
+    {
+      "file": "brave-train-master-prompt-r8.json",
+      "sha256": "42088197c2171e5932b5d91a77ba53772f2fd9e9dddcafcd673d4c753a7b8af1",
+      "mode": "built_in_image_gen",
+      "references": [
+        {
+          "file": "refs/subtrain-v17-source.jpg",
+          "sha256": "903f7ae4c80899cecd5f3099bf1f1b94632b6d587b2b97bef13692cb8a2c0acd"
+        },
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        },
+        {
+          "file": "samples/M04-train-arm-structure-r2.png",
+          "sha256": "40d8f8bec33e4f181e7c1c3e6f7297557bfaffb379f687944734cae940b7337e"
+        }
+      ]
+    },
+    {
+      "file": "brave-train-views-prompt-r8.json",
+      "sha256": "a715b6f48a21b1eff9ce77fa7d034fd8e743acf5f383d587018bec873f65bfe6",
+      "mode": "built_in_image_gen",
+      "references": [
+        {
+          "file": "samples/F12-subtrain-master-r8.png",
+          "sha256": "332d7d4d5726e992aaf428df6e335cd1fd1a2f68504d62ac2f192c511a325fbc"
+        }
+      ]
+    },
+    {
+      "file": "brave-bomber-mask-assembly-prompt-r9.json",
+      "sha256": "94ad85f03b1487a29ae9857786d37f449645df7685b8cc546b23322a97d1999f",
+      "references": [
+        {
+          "file": "samples/M04-bomber-assembly-r8b.png",
+          "sha256": "a603a9f3d3439c046bcea99857f93d99ddb773b7617247da1b399eb06c9f926d"
+        },
+        {
+          "file": "samples/F09-brave-core-master-r2.png",
+          "sha256": "345fd6592587153869c234d728f5282d3e3e74aa4e0ac6fdf91804c9f60e0fe3"
+        },
+        {
+          "file": "samples/F09-bomber-mask-loading-r9.png",
+          "sha256": "c3cf248750ce7485ba6d6502a95115c43eca43ac9456b526541a846ec0e92d64"
+        },
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        }
+      ]
+    },
+    {
+      "file": "brave-bomber-mask-chain-prompt-r9.json",
+      "sha256": "9c2faad9bc794c1cd0e2d97699d7fa0f0e8c478397394455be7f07071c8d9b0a",
+      "references": [
+        {
+          "file": "samples/F09-core-enhancement-r8.png",
+          "sha256": "d84e1c3cc5708be1000caaf5458298c653f84619de748ea273df0a4fd51e1ebe"
+        },
+        {
+          "file": "samples/M04-bomber-master-r8.png",
+          "sha256": "99d7e68acb1c2206727c383d4210fcfeb50e6b2614516da28128cac0ba298503"
+        },
+        {
+          "file": "samples/F09-brave-core-master-r2.png",
+          "sha256": "345fd6592587153869c234d728f5282d3e3e74aa4e0ac6fdf91804c9f60e0fe3"
+        },
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        }
+      ]
+    },
+    {
+      "file": "brave-bomber-mask-forehead-prompt-r9b.json",
+      "sha256": "e840b20aebb344aeef0fdb19f7f9e9e5fd1f0d20bcfa1ed56297971e9ed63721",
+      "references": [
+        {
+          "file": "samples/F09-bomber-mask-loading-r9.png",
+          "sha256": "c3cf248750ce7485ba6d6502a95115c43eca43ac9456b526541a846ec0e92d64"
+        },
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        }
+      ]
+    },
+    {
+      "file": "brave-bomber-master-prompt-r8.json",
+      "sha256": "441c247c231367a6bf2148bcaf1016f10b01cbafaec2cab41bdaeb2b62d48467",
+      "references": [
+        {
+          "file": "samples/M04-bomber-component-r3.png",
+          "sha256": "38c39052cd5053bbb87eba765040a3b16bde29fd176148eca0aa8835905a5577"
+        },
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        },
+        {
+          "file": "samples/M04-rear-selected-parts-r6a.png",
+          "sha256": "230eaea440744d380d05d9358fd9494907bfd075e5622b5c7f8cfa5e7c74c972"
+        },
+        {
+          "file": "samples/M04-side-fin-aligned-r6c.png",
+          "sha256": "8330b0de4b0ce731293b8dcd8a73134ff45d80113eadb0940f37e670cdaf6564"
+        }
+      ]
+    },
+    {
+      "file": "brave-bomber-profile-panel-prompt-r8b.json",
+      "sha256": "7c5abbef18efdc471d82c6a8e5b0a2b44fac72846768f0cc5dbfa6ce1ec96f9d",
+      "references": [
+        {
+          "file": "samples/M04-bomber-views-r8a.png",
+          "sha256": "d1ae6c6b4999e6d106593cf6a39c3fddaee017e51c9c0048dd3f2761ff2e0e88"
+        }
+      ]
+    },
+    {
+      "file": "brave-core-views-prompt-r8.json",
+      "sha256": "8cf8ff57f8aa84c4574393134ab31ff7cfa54ea288e349a79c601ca6e420b5fa",
+      "references": [
+        {
+          "file": "samples/F09-brave-core-master-r2.png",
+          "sha256": "345fd6592587153869c234d728f5282d3e3e74aa4e0ac6fdf91804c9f60e0fe3"
+        }
+      ]
+    },
+    {
+      "file": "brave-drill-master-prompt-r8.json",
+      "sha256": "9ff0573a9f2d4ed1974a7b9a420c2f2273c53c8cc1297b9e3df58f4a594ed103",
+      "references": [
+        {
+          "file": "refs/drill-v17-source.jpg",
+          "sha256": "a81a8ec44419c2a30e310c071c3ec0012f07b677e0bace77a78da488acb5b568"
+        },
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        },
+        {
+          "file": "samples/M04-side-fin-aligned-r6c.png",
+          "sha256": "8330b0de4b0ce731293b8dcd8a73134ff45d80113eadb0940f37e670cdaf6564"
+        },
+        {
+          "file": "samples/M04-rear-selected-parts-r6a.png",
+          "sha256": "230eaea440744d380d05d9358fd9494907bfd075e5622b5c7f8cfa5e7c74c972"
+        }
+      ]
+    },
+    {
+      "file": "brave-drill-views-prompt-r8.json",
+      "sha256": "efdb3c3da088f998ca6a0953f4365f6aa4d43ea35cdabcfddaf5935cda5998f2",
+      "references": [
+        {
+          "file": "samples/F11-drill-master-r8.png",
+          "sha256": "a6158af8733402fab671a6e4e302d31ffb52d443fce467cd448f4b704327f354"
+        }
+      ]
+    },
+    {
+      "file": "brave-leg-kit-source-locked-prompt-r9.json",
+      "sha256": "faadef502a1163d8b0b12e7236d69c760dbaa3938d6b4061e321d4b7cbc2b0e6",
+      "references": [
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        },
+        {
+          "file": "samples/M04-side-fin-aligned-r6c.png",
+          "sha256": "8330b0de4b0ce731293b8dcd8a73134ff45d80113eadb0940f37e670cdaf6564"
+        },
+        {
+          "file": "samples/M04-rear-selected-parts-r6a.png",
+          "sha256": "230eaea440744d380d05d9358fd9494907bfd075e5622b5c7f8cfa5e7c74c972"
+        }
+      ]
+    },
+    {
+      "file": "brave-train-assembly-local-prompt-r8b.json",
+      "sha256": "8f6f33335ae7f1f7cab9bef95210de44f7b25e703f3c2166ff4669e32af5d566",
+      "references": [
+        {
+          "file": "samples/F12-subtrain-assembly-r8a.png",
+          "sha256": "8abf0d4f76098f6791c66cf471a3c40e0600df78a71e5a4d2e7ced0daa7691e4"
+        },
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        }
+      ]
+    },
+    {
+      "file": "brave-train-master-prompt-r8.json",
+      "sha256": "42088197c2171e5932b5d91a77ba53772f2fd9e9dddcafcd673d4c753a7b8af1",
+      "references": [
+        {
+          "file": "refs/subtrain-v17-source.jpg",
+          "sha256": "903f7ae4c80899cecd5f3099bf1f1b94632b6d587b2b97bef13692cb8a2c0acd"
+        },
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98"
+        },
+        {
+          "file": "samples/M04-train-arm-structure-r2.png",
+          "sha256": "40d8f8bec33e4f181e7c1c3e6f7297557bfaffb379f687944734cae940b7337e"
+        }
+      ]
+    },
+    {
+      "file": "brave-train-views-prompt-r8.json",
+      "sha256": "a715b6f48a21b1eff9ce77fa7d034fd8e743acf5f383d587018bec873f65bfe6",
+      "references": [
+        {
+          "file": "samples/F12-subtrain-master-r8.png",
+          "sha256": "332d7d4d5726e992aaf428df6e335cd1fd1a2f68504d62ac2f192c511a325fbc"
+        }
+      ]
+    },
+    {
+      "file": "brave-leg-redraw-prompt-r10.json",
+      "sha256": "6f5a917039fa49643eb51a59badf08a7fbb55d7ca075b5924370652d03135dd2",
+      "mode": "built_in_image_gen",
+      "references": [
+        {
+          "file": "samples/M04-front-backpack-fins-r7.png",
+          "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98",
+          "pixel_size": [
+            1254,
+            1254
+          ]
+        },
+        {
+          "file": "samples/F11-drill-master-r8.png",
+          "sha256": "a6158af8733402fab671a6e4e302d31ffb52d443fce467cd448f4b704327f354",
+          "pixel_size": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "file": "F11-leg-proportion-guide-r10.png",
+          "sha256": "02336026f5c7e59271ee0ac46d65c3def3352caeb78f3cc076343d9a63302775",
+          "pixel_size": [
+            1200,
+            800
+          ]
+        }
+      ]
+    }
+  ],
+  "current_revision_issues": [
+    "BR11-01: 面罩终态与加载前的原头统一",
+    "BR11-02: 背面发动机尾端改为排气口",
+    "BR11-03: 胸部机鼻统一短钝端面",
+    "BR11-04: 单体机身与双格栅背包需要对应",
+    "BR11-05: 列车臂壳明确收拢与展开两个状态",
+    "BR11-06: 钻机履带、座舱与腿足的去向补齐",
+    "BR11-07: 勇拳胸口标识统一",
+    "BR11-08: 腕部能量环和材质按同一位置/状态表达"
+  ],
+  "head_mechanism_authority": "mask stored inside bomber and loaded onto original core head during combination",
+  "author_review": {
+    "kind": "actual_source_image_cross_review",
+    "reviewer": "author",
+    "actual_media": [
+      "samples/M04-side-fin-aligned-r6c.png",
+      "samples/M04-rear-selected-parts-r6a.png",
+      "samples/M04-bomber-master-r8.png",
+      "samples/F12-subtrain-master-r8.png",
+      "samples/F11-drill-master-r8.png",
+      "samples/F09-core-views-r8.png",
+      "samples/F12-subtrain-assembly-r8b.png",
+      "samples/M04-bomber-assembly-r8b.png",
+      "samples/F09-bomber-mask-loading-r9.png",
+      "samples/M04-front-backpack-fins-r7.png",
+      "samples/F09-brave-core-master-r1.png"
+    ],
+    "findings": [
+      {
+        "id": "BR11-01",
+        "kind": "visible_difference",
+        "group": "局部修图",
+        "title": "面罩终态与加载前的原头统一",
+        "images": [
+          6,
+          8,
+          9,
+          10,
+          11
+        ],
+        "observation": "图9装好后额前出现青色宝石；图10整机额部是橙色竖片/石墨底。图8左上灰色核心又已戴合体头冠，与图9后加载的过程冲突。",
+        "correction": "以图10作为合体头终态，图6/11作为原头；图9只校正外面罩额部，图8灰色核心恢复原头。保留长发和原头本体，不改成换整颗头，也不解释为核心自己长出新冠。",
+        "preserve": "保留图9的机身内收纳→加载→装好机制与图8翼架让位。",
+        "status": "identified_not_redrawn"
+      },
+      {
+        "id": "BR11-02",
+        "kind": "visible_difference",
+        "group": "局部修图",
+        "title": "背面发动机尾端改为排气口",
+        "images": [
+          1,
+          2,
+          3,
+          10
+        ],
+        "observation": "图2背向的翼下两台发动机仍能读到进气风扇/轮毂；图1、3、10已经规定进气端朝前。",
+        "correction": "仅修改图2翼下两处后端开口：无进气风扇，改为凹入深色排气喷口/分瓣尾圈。保持发动机筒长、肩甲斜三角体积、翼根与背包位置。",
+        "preserve": "不重新解释图1肩甲，不把选定侧肩压成薄平翼条。",
+        "status": "identified_not_redrawn"
+      },
+      {
+        "id": "BR11-03",
+        "kind": "visible_shape_difference",
+        "group": "局部修图",
+        "title": "胸部机鼻统一短钝端面",
+        "images": [
+          1,
+          3,
+          8,
+          10
+        ],
+        "observation": "图1侧胸机鼻仍读成偏尖长的下探前端；图3、10是更饱满的短钝机鼻。图8细部也需随主稿核对。",
+        "correction": "以图3机鼻立体形与图10胸部安装外观为准，侧面收尖、收短，保留橙色端面/象牙白颊框与蓝黑舱窗。只改鼻端，不重造肩胸框架。",
+        "preserve": "侧向纵深可以比正面显著；不因正常透视差异横向挤压整张图。",
+        "status": "identified_not_redrawn"
+      },
+      {
+        "id": "BR11-04",
+        "kind": "missing_correspondence_not_proven_geometry_error",
+        "group": "补清部件对应",
+        "title": "单体机身与双格栅背包需要对应",
+        "images": [
+          2,
+          3,
+          8
+        ],
+        "observation": "图2明确上下两处矩形格栅；图3和图8独立背包部件只清楚交代一处。由现有角度不能断言另一口不存在，但来源尚未说明。",
+        "correction": "背包终态沿图2。补一张后下侧小示意，说明第二格栅随哪片机身翻到背部；图8分件补齐双口和同一壳体边界。无需为此改整架飞机轮廓。",
+        "preserve": "双竖翼和中置背包的总体位置不改；无需工程级精密变形。",
+        "status": "mapping_to_be_drawn"
+      },
+      {
+        "id": "BR11-05",
+        "kind": "state_definition_gap",
+        "group": "补清部件对应",
+        "title": "列车臂壳明确收拢与展开两个状态",
+        "images": [
+          1,
+          2,
+          4,
+          7,
+          10
+        ],
+        "observation": "图7是大幅开壳的安装/炮击状态；图1、2、10主要看到收拢的列车外侧壳。它们可解释成同一结构的两个状态，不能只凭外观差异判成不同车型。短翼和底盘件在展开态的去向未交代。",
+        "correction": "固定待机收拢/炮击展开两态：一节对应一臂，两半壳左右打开，车头永远退向肘后，中间连接端朝拳前；短翼贴壳折收。用一次侧向开合说明炮口和核心前臂的位置，不缩小或遮掉巨拳。",
+        "preserve": "保留图4车型、图7开壳方向与图10整机待机轮廓。",
+        "status": "two_state_mapping_to_be_drawn"
+      },
+      {
+        "id": "BR11-06",
+        "kind": "missing_correspondence",
+        "group": "补清部件对应",
+        "title": "钻机履带、座舱与腿足的去向补齐",
+        "images": [
+          1,
+          2,
+          5,
+          10
+        ],
+        "observation": "图5每个半车体有分组履带、座舱窗面和分段白壳；图1/2/10规定了膝钻、胫甲、踝及脚掌，但原有图未清楚交代这些载具部件分别归到哪里。不能因画法相似就宣布变形闭合。",
+        "correction": "安装后形态以图10为首要比例依据、图1/2补侧后。只补同色编号分件示意：左右半车各进一腿，膝钻、胫前白甲、前后带面、踝足/后跟分别标清；座舱窗面折入内后侧。履带分组的具体分配在这张示意中核对，不另生一副长腿。",
+        "preserve": "不采用R9长小腿。R10细图未包含在本次11张选择中，保留作补充候选，不自行替换图10。无需连续真实机械折变模拟。",
+        "status": "mapping_to_be_drawn"
+      },
+      {
+        "id": "BR11-07",
+        "kind": "visible_decal_difference",
+        "group": "制作时归一",
+        "title": "勇拳胸口标识统一",
+        "images": [
+          6,
+          11
+        ],
+        "observation": "图11有橙色胸标，图6三视留白。主体结构与形象并无因此冲突。",
+        "correction": "建议制作母版暂按图6胸前留白，图11继续负责主体造型；若需要标记，另用项目原创标志，作为可换贴花，不重画胸甲。",
+        "preserve": "本条是作者建议，用户本次选定图11并未单独否定或批准胸标的最终版本。",
+        "status": "recommendation_not_applied"
+      },
+      {
+        "id": "BR11-08",
+        "kind": "material_and_state_normalization",
+        "group": "制作时归一",
+        "title": "腕部能量环和材质按同一位置/状态表达",
+        "images": [
+          6,
+          9,
+          10,
+          11
+        ],
+        "observation": "图6/9/11腕环明显，图10合体后不明显；可由外甲遮挡或发光状态解释，不能据此擅自给整机补满亮蓝光条。各图的橙白石墨已属同一家族。",
+        "correction": "腕环绑定同一腕部结构；合体后允许外甲遮住，只露局部窄缝，动作时再增强。统一象牙白、主橙、石墨、金属与玻璃的材质来源，保留轰炸机偏石墨、列车偏白、钻机橙白的色块分工。",
+        "preserve": "不把所有机组洗成相同橙灰比例；不改已选的英雄色和重拳轮廓。",
+        "status": "production_normalization_not_applied"
+      }
+    ],
+    "independent_review": false,
+    "scope": "只评审用户本轮11张原图，未重新生成，未把旧修图变体暗换成选定图。"
+  },
+  "prompt_receipts": [],
+  "delivery_anchor": "selected-set-r11",
+  "source_authority_this_revision": [
+    {
+      "file": "samples/M04-side-fin-aligned-r6c.png",
+      "sha256": "8330b0de4b0ce731293b8dcd8a73134ff45d80113eadb0940f37e670cdaf6564",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "number": 1,
+      "title": "社勇王侧面",
+      "role": "肩甲侧向造型、发动机轴向、腿前后履带与足跟",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/M04-rear-selected-parts-r6a.png",
+      "sha256": "230eaea440744d380d05d9358fd9494907bfd075e5622b5c7f8cfa5e7c74c972",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "number": 2,
+      "title": "社勇王背面",
+      "role": "中置上下双格栅背包、双竖翼、后腿橙脊板与后跟",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/M04-bomber-master-r8.png",
+      "sha256": "99d7e68acb1c2206727c383d4210fcfeb50e6b2614516da28128cac0ba298503",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "number": 3,
+      "title": "轰炸机单体",
+      "role": "完整机鼻/舱窗、双主翼、双发动机、两片竖翼与独立翼根",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/F12-subtrain-master-r8.png",
+      "sha256": "332d7d4d5726e992aaf428df6e335cd1fd1a2f68504d62ac2f192c511a325fbc",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "number": 4,
+      "title": "海底列车单体",
+      "role": "一列两节、两个外端车头、中央联接、橙白蓝窗带与短翼",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/F11-drill-master-r8.png",
+      "sha256": "a6158af8733402fab671a6e4e302d31ffb52d443fce467cd448f4b704327f354",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "number": 5,
+      "title": "钻探机单体",
+      "role": "一车双模块、双钻、每半分组履带和白甲/橙架",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/F09-core-views-r8.png",
+      "sha256": "872fd03b3427cb2bc2986bfaf2d40212917f936614c9336a24bae60a563d91bc",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "number": 6,
+      "title": "勇拳三视设计",
+      "role": "同一个完整人形核心的正侧背、原头和长发、原四肢与关节",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/F12-subtrain-assembly-r8b.png",
+      "sha256": "9102d9a87412b02e95bd099509698b9e6521aa1631efdae1e83570347aeb6907",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "number": 7,
+      "title": "列车臂壳展开",
+      "role": "中缝拆节、左右开壳、车头朝肘后、拳向前的状态关系",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/M04-bomber-assembly-r8b.png",
+      "sha256": "a603a9f3d3439c046bcea99857f93d99ddb773b7617247da1b399eb06c9f926d",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "number": 8,
+      "title": "轰炸机装配与肩翼让位",
+      "role": "胸/背/翼架独立分件，翼架与核心肩关节分别活动",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/F09-bomber-mask-loading-r9.png",
+      "sha256": "c3cf248750ce7485ba6d6502a95115c43eca43ac9456b526541a846ec0e92d64",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "number": 9,
+      "title": "面罩加载与拳甲强化",
+      "role": "轰炸机内置面罩加载到原头；拳甲强化属于完整核心",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/M04-front-backpack-fins-r7.png",
+      "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "number": 10,
+      "title": "社勇王整机正面",
+      "role": "最终整体比例、巨拳、胸机鼻、头冠、主翼、膝钻及腿足外观的首要基准",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/F09-brave-core-master-r1.png",
+      "sha256": "696263b5f9f221387d3fd964af023f5a5757b676ccea18e69168df343ed7d4dd",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "number": 11,
+      "title": "勇拳单体形象",
+      "role": "完整核心的主要造型与色块；胸口标识仍需和图6统一",
+      "selected_by_user": true
+    }
+  ],
+  "acceptance_scope": "这11张作为同一套整体设计基准；不等于局部一致性问题已修好、精确三视已完成或运行/模型验收。",
+  "selected_set": [
+    {
+      "file": "samples/M04-side-fin-aligned-r6c.png",
+      "sha256": "8330b0de4b0ce731293b8dcd8a73134ff45d80113eadb0940f37e670cdaf6564",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "number": 1,
+      "title": "社勇王侧面",
+      "role": "肩甲侧向造型、发动机轴向、腿前后履带与足跟",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/M04-rear-selected-parts-r6a.png",
+      "sha256": "230eaea440744d380d05d9358fd9494907bfd075e5622b5c7f8cfa5e7c74c972",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "number": 2,
+      "title": "社勇王背面",
+      "role": "中置上下双格栅背包、双竖翼、后腿橙脊板与后跟",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/M04-bomber-master-r8.png",
+      "sha256": "99d7e68acb1c2206727c383d4210fcfeb50e6b2614516da28128cac0ba298503",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "number": 3,
+      "title": "轰炸机单体",
+      "role": "完整机鼻/舱窗、双主翼、双发动机、两片竖翼与独立翼根",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/F12-subtrain-master-r8.png",
+      "sha256": "332d7d4d5726e992aaf428df6e335cd1fd1a2f68504d62ac2f192c511a325fbc",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "number": 4,
+      "title": "海底列车单体",
+      "role": "一列两节、两个外端车头、中央联接、橙白蓝窗带与短翼",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/F11-drill-master-r8.png",
+      "sha256": "a6158af8733402fab671a6e4e302d31ffb52d443fce467cd448f4b704327f354",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "number": 5,
+      "title": "钻探机单体",
+      "role": "一车双模块、双钻、每半分组履带和白甲/橙架",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/F09-core-views-r8.png",
+      "sha256": "872fd03b3427cb2bc2986bfaf2d40212917f936614c9336a24bae60a563d91bc",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "number": 6,
+      "title": "勇拳三视设计",
+      "role": "同一个完整人形核心的正侧背、原头和长发、原四肢与关节",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/F12-subtrain-assembly-r8b.png",
+      "sha256": "9102d9a87412b02e95bd099509698b9e6521aa1631efdae1e83570347aeb6907",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "number": 7,
+      "title": "列车臂壳展开",
+      "role": "中缝拆节、左右开壳、车头朝肘后、拳向前的状态关系",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/M04-bomber-assembly-r8b.png",
+      "sha256": "a603a9f3d3439c046bcea99857f93d99ddb773b7617247da1b399eb06c9f926d",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "number": 8,
+      "title": "轰炸机装配与肩翼让位",
+      "role": "胸/背/翼架独立分件，翼架与核心肩关节分别活动",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/F09-bomber-mask-loading-r9.png",
+      "sha256": "c3cf248750ce7485ba6d6502a95115c43eca43ac9456b526541a846ec0e92d64",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "number": 9,
+      "title": "面罩加载与拳甲强化",
+      "role": "轰炸机内置面罩加载到原头；拳甲强化属于完整核心",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/M04-front-backpack-fins-r7.png",
+      "sha256": "cf0685efa7dea8f69e9541207b5f017a8df124c173d91428f547cc1326a1cd98",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "number": 10,
+      "title": "社勇王整机正面",
+      "role": "最终整体比例、巨拳、胸机鼻、头冠、主翼、膝钻及腿足外观的首要基准",
+      "selected_by_user": true
+    },
+    {
+      "file": "samples/F09-brave-core-master-r1.png",
+      "sha256": "696263b5f9f221387d3fd964af023f5a5757b676ccea18e69168df343ed7d4dd",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "number": 11,
+      "title": "勇拳单体形象",
+      "role": "完整核心的主要造型与色块；胸口标识仍需和图6统一",
+      "selected_by_user": true
+    }
+  ],
+  "consistency_review": [
+    {
+      "id": "BR11-01",
+      "kind": "visible_difference",
+      "group": "局部修图",
+      "title": "面罩终态与加载前的原头统一",
+      "images": [
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      "observation": "图9装好后额前出现青色宝石；图10整机额部是橙色竖片/石墨底。图8左上灰色核心又已戴合体头冠，与图9后加载的过程冲突。",
+      "correction": "以图10作为合体头终态，图6/11作为原头；图9只校正外面罩额部，图8灰色核心恢复原头。保留长发和原头本体，不改成换整颗头，也不解释为核心自己长出新冠。",
+      "preserve": "保留图9的机身内收纳→加载→装好机制与图8翼架让位。",
+      "status": "identified_not_redrawn"
+    },
+    {
+      "id": "BR11-02",
+      "kind": "visible_difference",
+      "group": "局部修图",
+      "title": "背面发动机尾端改为排气口",
+      "images": [
+        1,
+        2,
+        3,
+        10
+      ],
+      "observation": "图2背向的翼下两台发动机仍能读到进气风扇/轮毂；图1、3、10已经规定进气端朝前。",
+      "correction": "仅修改图2翼下两处后端开口：无进气风扇，改为凹入深色排气喷口/分瓣尾圈。保持发动机筒长、肩甲斜三角体积、翼根与背包位置。",
+      "preserve": "不重新解释图1肩甲，不把选定侧肩压成薄平翼条。",
+      "status": "identified_not_redrawn"
+    },
+    {
+      "id": "BR11-03",
+      "kind": "visible_shape_difference",
+      "group": "局部修图",
+      "title": "胸部机鼻统一短钝端面",
+      "images": [
+        1,
+        3,
+        8,
+        10
+      ],
+      "observation": "图1侧胸机鼻仍读成偏尖长的下探前端；图3、10是更饱满的短钝机鼻。图8细部也需随主稿核对。",
+      "correction": "以图3机鼻立体形与图10胸部安装外观为准，侧面收尖、收短，保留橙色端面/象牙白颊框与蓝黑舱窗。只改鼻端，不重造肩胸框架。",
+      "preserve": "侧向纵深可以比正面显著；不因正常透视差异横向挤压整张图。",
+      "status": "identified_not_redrawn"
+    },
+    {
+      "id": "BR11-04",
+      "kind": "missing_correspondence_not_proven_geometry_error",
+      "group": "补清部件对应",
+      "title": "单体机身与双格栅背包需要对应",
+      "images": [
+        2,
+        3,
+        8
+      ],
+      "observation": "图2明确上下两处矩形格栅；图3和图8独立背包部件只清楚交代一处。由现有角度不能断言另一口不存在，但来源尚未说明。",
+      "correction": "背包终态沿图2。补一张后下侧小示意，说明第二格栅随哪片机身翻到背部；图8分件补齐双口和同一壳体边界。无需为此改整架飞机轮廓。",
+      "preserve": "双竖翼和中置背包的总体位置不改；无需工程级精密变形。",
+      "status": "mapping_to_be_drawn"
+    },
+    {
+      "id": "BR11-05",
+      "kind": "state_definition_gap",
+      "group": "补清部件对应",
+      "title": "列车臂壳明确收拢与展开两个状态",
+      "images": [
+        1,
+        2,
+        4,
+        7,
+        10
+      ],
+      "observation": "图7是大幅开壳的安装/炮击状态；图1、2、10主要看到收拢的列车外侧壳。它们可解释成同一结构的两个状态，不能只凭外观差异判成不同车型。短翼和底盘件在展开态的去向未交代。",
+      "correction": "固定待机收拢/炮击展开两态：一节对应一臂，两半壳左右打开，车头永远退向肘后，中间连接端朝拳前；短翼贴壳折收。用一次侧向开合说明炮口和核心前臂的位置，不缩小或遮掉巨拳。",
+      "preserve": "保留图4车型、图7开壳方向与图10整机待机轮廓。",
+      "status": "two_state_mapping_to_be_drawn"
+    },
+    {
+      "id": "BR11-06",
+      "kind": "missing_correspondence",
+      "group": "补清部件对应",
+      "title": "钻机履带、座舱与腿足的去向补齐",
+      "images": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "observation": "图5每个半车体有分组履带、座舱窗面和分段白壳；图1/2/10规定了膝钻、胫甲、踝及脚掌，但原有图未清楚交代这些载具部件分别归到哪里。不能因画法相似就宣布变形闭合。",
+      "correction": "安装后形态以图10为首要比例依据、图1/2补侧后。只补同色编号分件示意：左右半车各进一腿，膝钻、胫前白甲、前后带面、踝足/后跟分别标清；座舱窗面折入内后侧。履带分组的具体分配在这张示意中核对，不另生一副长腿。",
+      "preserve": "不采用R9长小腿。R10细图未包含在本次11张选择中，保留作补充候选，不自行替换图10。无需连续真实机械折变模拟。",
+      "status": "mapping_to_be_drawn"
+    },
+    {
+      "id": "BR11-07",
+      "kind": "visible_decal_difference",
+      "group": "制作时归一",
+      "title": "勇拳胸口标识统一",
+      "images": [
+        6,
+        11
+      ],
+      "observation": "图11有橙色胸标，图6三视留白。主体结构与形象并无因此冲突。",
+      "correction": "建议制作母版暂按图6胸前留白，图11继续负责主体造型；若需要标记，另用项目原创标志，作为可换贴花，不重画胸甲。",
+      "preserve": "本条是作者建议，用户本次选定图11并未单独否定或批准胸标的最终版本。",
+      "status": "recommendation_not_applied"
+    },
+    {
+      "id": "BR11-08",
+      "kind": "material_and_state_normalization",
+      "group": "制作时归一",
+      "title": "腕部能量环和材质按同一位置/状态表达",
+      "images": [
+        6,
+        9,
+        10,
+        11
+      ],
+      "observation": "图6/9/11腕环明显，图10合体后不明显；可由外甲遮挡或发光状态解释，不能据此擅自给整机补满亮蓝光条。各图的橙白石墨已属同一家族。",
+      "correction": "腕环绑定同一腕部结构；合体后允许外甲遮住，只露局部窄缝，动作时再增强。统一象牙白、主橙、石墨、金属与玻璃的材质来源，保留轰炸机偏石墨、列车偏白、钻机橙白的色块分工。",
+      "preserve": "不把所有机组洗成相同橙灰比例；不改已选的英雄色和重拳轮廓。",
+      "status": "production_normalization_not_applied"
+    }
+  ],
+  "model_handoff_ready": false,
+  "selected_source_precedence": {
+    "combined_appearance": 10,
+    "core_appearance": 11,
+    "core_views": 6,
+    "side": 1,
+    "rear": 2,
+    "vehicle_identity": [
+      3,
+      4,
+      5
+    ],
+    "assembly_process": [
+      7,
+      8,
+      9
+    ],
+    "rule": "过程图的最终部件外观向图10对齐；不把正常视角遮挡差异一律判错；未选变体只作历史/辅助。"
+  },
+  "previous_production_guides_not_used_this_review": [
+    {
+      "file": "F11-leg-proportion-guide-r10.svg",
+      "sha256": "3d1e0896dcae8fad3064cb212072e3f71a0b134ab58c8deb0cad62013d74cbb5"
+    },
+    {
+      "file": "F11-leg-proportion-guide-r10.png",
+      "sha256": "02336026f5c7e59271ee0ac46d65c3def3352caeb78f3cc076343d9a63302775",
+      "pixel_size": [
+        1200,
+        800
+      ]
+    }
+  ],
+  "previous_method_changes_history": [
+    {
+      "old": "从整机混合多图直接生成隐藏全体",
+      "new": "固定四个单体母稿，各自派生视图；发现单一视图错误只编辑对应面板",
+      "evidence": [
+        "brave-bomber-views-prompt-r8.json",
+        "brave-bomber-profile-panel-prompt-r8b.json",
+        "samples/M04-bomber-views-r8a.png",
+        "samples/M04-bomber-views-r8b.png"
+      ]
+    },
+    {
+      "old": "把闭合车厢或重复部件直接当安装完成图",
+      "new": "先按明确部件清单画展开，再局部去重/开壳；保留初稿失败，不以它交付",
+      "evidence": [
+        "samples/M04-bomber-assembly-r8a.png",
+        "samples/M04-bomber-assembly-r8b.png",
+        "samples/F12-subtrain-assembly-r8a.png",
+        "samples/F12-subtrain-assembly-r8b.png"
+      ]
+    },
+    {
+      "old": "重新生成完整安装腿导致履带、胫甲和足形反复变化；把原头画成自带冠甲展开。",
+      "new": "直接用已确认整体图局部作为终态；仅画外架。面罩从轰炸机内舱取出并安装到原头，图和部件清单同时改。",
+      "evidence": [
+        "brave-components-r8.html#drill-source-terminal-r9",
+        "samples/F11-leg-kit-source-locked-r9.png",
+        "samples/F09-bomber-mask-loading-r9b.png",
+        "samples/M04-bomber-mask-assembly-r9.png"
+      ]
+    },
+    {
+      "status": "applied",
+      "old": "仍让R9外架图自行铺满竖向画幅，再以整机局部作旁证，未限制膝到踝长度；作者将旁证误当作分件已经对齐。",
+      "new": "弃用R9作为生图输入。只用用户新指定的整机/钻机，加手绘式二维比例约束图；先固定膝轴、踝和脚底三条线，再重绘前侧/外侧完整腿足细节。",
+      "evidence": [
+        "F11-leg-proportion-guide-r10.svg",
+        "F11-leg-proportion-guide-r10.png",
+        "brave-leg-redraw-prompt-r10.json",
+        "samples/F11-leg-proportion-redraw-r10.png"
+      ],
+      "proportion_guide_scope": "作者本轮施工约束，非用户新增的精确尺寸标准；图二图三仍是造型依据",
+      "rejected_source": "samples/F11-leg-kit-source-locked-r9.png"
+    }
+  ],
+  "method_changes_applied_this_revision": [
+    {
+      "status": "applied",
+      "old": "以版本新旧或一组图画风相近代替确切选择与跨图核对。",
+      "new": "按用户本次11个原文件的SHA锁定选择；区分整机/核心/载具/过程的职责，并把可见差异、对应缺口、制作归一分开。",
+      "evidence": [
+        "brave-components-r8.html#source-index",
+        "brave-components-r8.html#review-r11"
+      ]
+    }
+  ]
+}

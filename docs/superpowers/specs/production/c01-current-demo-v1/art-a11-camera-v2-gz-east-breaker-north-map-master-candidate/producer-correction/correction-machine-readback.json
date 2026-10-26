@@ -1,0 +1,94 @@
+{
+  "operation_scope": [
+    "crop",
+    "deterministic_lanczos_resize",
+    "layout",
+    "text_labels",
+    "measurement_only"
+  ],
+  "imagegen_calls": 0,
+  "rerolls": 0,
+  "alpha_extraction": false,
+  "godot_changes": 0,
+  "sources": {
+    "gf_plan": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-gold-frame/delivery/GF_PLAN_1280x720_v2.png",
+      "sha256": "c1d2219354a7c8bd6fcccc326181e4875f4e292d916fb0b7512cafd06fce5f1c"
+    },
+    "gf_contact": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a9-gold-frame/delivery/GF_CONTACT_1280x720_v2.png",
+      "sha256": "83b713d6f700aa3b0bacc541902d98b92baa3de7730f502a1197a783b71c1633"
+    },
+    "guardian_z_raw": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/generation-raw/GZ_EAST_CALL01_RAW.png",
+      "sha256": "8a5907c0c2cc071e5f4900d977fbbc6bc3348f983e38f56ed45cb310dfbfe0a5"
+    },
+    "breaker_raw": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/generation-raw/BREAKER_NORTH_CALL01_RAW.png",
+      "sha256": "3fced17cdc4099c733429a66c202e851b674df27650f317ead2c157b32347118"
+    }
+  },
+  "outputs": {
+    "breaker_board": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/producer-correction/BREAKER_GF_VS_RAW_50_100_COMPARISON_2400x1800.png",
+      "sha256": "83323240066524d5fb3227906a4eb10ff718b1c5478f60b9a5560da110bdd102",
+      "gf_plan_breaker_crop_half_open": [
+        233,
+        330,
+        591,
+        584
+      ],
+      "gf_contact_breaker_crop_half_open": [
+        355,
+        136,
+        781,
+        487
+      ],
+      "raw_source_dimensions": [
+        1254,
+        1254
+      ],
+      "raw_review_100_dimensions": [
+        384,
+        384
+      ],
+      "raw_review_50_dimensions": [
+        192,
+        192
+      ],
+      "raw_conservative_measurement_bbox_not_used_for_mask": [
+        48,
+        118,
+        1226,
+        1123
+      ]
+    },
+    "guardian_z_board": {
+      "path": "/Users/rayz/Documents/超gag机器人大战/docs/superpowers/specs/production/c01-current-demo-v1/art-a11-camera-v2-gz-east-breaker-north-map-master-candidate/producer-correction/GUARDIAN_Z_RAW_50_100_REVIEW_1600x1000.png",
+      "sha256": "04a354a94b384e73a4e96f203f13e06e4966b1105e87b2cfccf54cb0156428a9",
+      "raw_source_dimensions": [
+        1254,
+        1254
+      ],
+      "raw_review_100_dimensions": [
+        256,
+        256
+      ],
+      "raw_review_50_dimensions": [
+        128,
+        128
+      ],
+      "raw_conservative_measurement_bbox_not_used_for_mask": [
+        265,
+        91,
+        973,
+        1157
+      ]
+    }
+  },
+  "supersession": {
+    "old_turtle_gate": "OVERRIDDEN_BY_LATER_USER_CONFIRMATION",
+    "gf_design": "USER_CONFIRMED_CORRECT",
+    "prior_record_preserved": true
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-19",
+  "mode": "built-in image_gen",
+  "use_case": "stylized-concept",
+  "asset": "M01 / 无牌一号",
+  "user_directive": "考虑一下天威勇士和擎天柱的头型综合",
+  "reference_interpretation": "天威勇士先按倍功夫/Baikanfu；擎天柱先按经典G1。此为作者对用户简称的具体取样，不是假定用户指定某个商品版本。",
+  "references": [
+    {
+      "file": "samples/M01-family-master-r13.png",
+      "role": "M01脸部基础、色系、颈下与画法；旧长条冠脊替换",
+      "sha256": "8e87cab7de5a2a458cb5fd1f107b635027594b058fb5ad56d22174a4b559cb00"
+    },
+    {
+      "file": "refs/M01-r15-baikanfu-official-detail.jpg",
+      "role": "官方Baikanfu头部眉额/脸框/高位侧后天线结构，只参考头，不取实体玩具画法",
+      "source_page": "https://tamashiiweb.com/item/12128/",
+      "source_image": "https://tamashiiweb.com/storage/images/products/imported/item_0000012128_6FznKHZd_09.jpg",
+      "sha256": "32c0571c76054b445c14f5e5b2a3001c7b7686c4504981cc8cdb32a2688711de"
+    },
+    {
+      "file": "refs/M01-r15-optimus-official-2.jpg",
+      "role": "官方经典擎天柱方正盔体/高位颞侧/闭合面罩结构，只参考头",
+      "source_page": "https://www.hasbropulse.com/product/transformers-retro-g1-optimus-prime/G01535L00",
+      "source_image": "https://cdn.media.amplience.net/i/hasbropulse/bbb39dfdf6061daab6b0f65c7c215062bcd6c8c1?fmt=auto&w=1600",
+      "sha256": "8eb9d3d14241d6512ea5fe733485c054b06ee2ad1ba3f0c0af7d4512cadc5b13"
+    },
+    {
+      "file": "samples/M05-full-loadout-r1b.png",
+      "role": "王者同系列装甲折面及画法，保持量产/豪华主角层级",
+      "sha256": "0df4a2889f99df35087ce69e9dbf5b05d5a2afee54aaf7f54d761a2f5d1ebff1"
+    }
+  ],
+  "scope": "综合结构的新头部样例，非直接复制或现有头型已认可；不改剧情、米数或运行。",
+  "transparent_background": true,
+  "prompt": "Use case: stylized-concept / head-architecture synthesis\nAsset type: ONE polished Unbranded One / M01 head-and-upper-shoulders design study, R15.\n\nPrimary request: synthesize restrained heroic head-shape principles from Baikanfu (Machine Robo) and classic Optimus Prime into an original M01 head. Its old long top strap and round helmet looked like a kappa. Give it a compact, intelligent, composed heroic presence suitable for a series mass-production unit that becomes an important protagonist.\n\nInputs:\n1. Current M01 full-body: identity palette, amber optical visor, closed ivory faceplate, mature small-head proportions, neck/collar/chest/shoulder construction and current KINETIC_CEL painting ONLY. REPLACE its old central long twin-groove roof crest. Keep the torso below neck unchanged.\n2. Official Baikanfu photo: look ONLY at the head. Extract the disciplined narrow eyebrow/forehead wedge, compact face opening, close-fitting cheek guards and straight antenna roots high toward the rear sides of the helmet. Do not copy red/silver colors, body, swords or literal face.\n3. Official G1 Optimus Prime photo: look ONLY at the head. Extract the squared upper helmet enclosure, raised temporal housings and clear closed face-mask silhouette. Do not copy blue head/red truck colors, exact pentagonal forehead plaque, nose, toy surface, truck chest or insignia.\n4. Current Complete King: same-series chamfer rhythm and jaw/armor construction ONLY. M01 remains simpler and less ornamented than the King; no gold antler crown.\n\nNEW HELMET GEOMETRY, most important:\n- A close-fitting, compact, squared/faceted petrol-teal helmet with a slightly flat roof and decisive cheek planes. Narrower than the old round green dome, no bulbous forehead. Confident serious brow, alert narrow continuous AMBER visor. Keep the visor as M01's single optical slit; no pupil eyes, goofy expression or separate Gundam eyes.\n- EXACTLY TWO main antenna blades, one on each UPPER REAR TEMPORAL housing, with their bases behind the side of the eye opening and clearly above the ear coupling. They rise beside the rear corners of the skull, NOT from the forehead, NOT from the centerline. Paired symmetric straight slender tapered blades in ivory with one ochre bevel, each leaning BACK about 15 degrees, never a bent or folded elbow. Each tip only about one quarter of helmet height above the roof, tightly contained lateral width. No wide V, unicorn spear, animal ears or fishtail. The near blade sits behind the temple block, with visible structural root.\n- Central forehead is a SHORT LOW solid angular ivory brow-keystone with a small ochre sensor inset. It ends before the middle of the roof and adds NO tall central antenna. There is NO long forehead-to-back roof strap, NO twin gold roof trenches, NO central horn. This low central feature and the two rear-side blades form one coherent silhouette.\n- Boxy teal temple blocks close to skull with compact graphite/ochre round hinge caps recessed INTO their sides. Remove the old extra short upturned ear fins entirely: TWO antennae total, no fourth/fifth appendage or sideways wing.\n- Smooth sealed ivory lower face mask with a shallow central fold and clipped corners, integrated into teal cheek guards. Broad enough for a steady jaw, not a protruding snout or pointed beak; no lips, mouth slits, big red chin or Prime replica mouthplate ridges.\n- Quiet distinctive gold rectangular forehead inset, angular cheek-frame and paired rear-side antenna placement. No royal emblem, huge brow ornament, crown teeth or multispike hero crown.\n\nMaintain M01's deep teal / ivory / restrained ochre palette, graphite joints and amber visor; keep neck gold collar and the visible chest/shoulder fragments exactly in the same design family as input 1. Original King-related mecha, not a recolor of the references.\n\nFraming: one near-frontal three-quarter head portrait, camera at eye level around 20 degrees, cut at upper pectorals. All antenna tips fully visible, 10% breathing room above and around helmet. Both antenna roots and their rear-set position should be readable, with natural near/far perspective and mirrored construction. Exactly one head and no alternative insets; no labels, arrows, logos or text.\nRendering: same precise hand-drawn KINETIC_CEL linework and crisp two-step cel shadows as input 1 and 4, large controlled planes; no toy photography, glossy PBR, chrome, bloom, face glow or dense gritty panel lines.\nActual transparent background, no checkerboard, haze, floor, backdrop or cast shadow."
+}

@@ -1,0 +1,118 @@
+{
+  "episode_id": "C01E02-STORY-FIRST-CANDIDATE",
+  "status": "candidate",
+  "canon_level": "accepted_story_candidate_runtime_production",
+  "source_slot_id": "V357-C01-S02",
+  "loadout_contract_id": "V358LOAD002",
+  "mecha_id": "V353U034",
+  "story_source": "DOC_V359_C01E02_STORY_FIRST_V1",
+  "graph": "res://content/episodes/c01/e02/graph.story_first.json",
+  "bundle_output": "res://content/generated/episodes/c01/e02/story_first.bundle.json",
+  "transition_contract": "required",
+  "investigations": [
+    "res://content/episodes/c01/e02/explore/c01_e02_fireline_investigation.json"
+  ],
+  "battle": "res://content/episodes/c01/e02/battle/c01_e02_fire_evacuation_5r.json",
+  "presentation_assets": [
+    "res://assets/backgrounds/story_first/bg_c01e02_front_hall_fireline_v01.png",
+    "res://assets/characters/story_first/sprite_jicun_walk_right_strip_v01.png",
+    "res://assets/tactical_maps/story_first/bg_c01e02_fire_evacuation_isometric_v01.png",
+    "res://assets/battle_presentation/c01/fire_evacuation/manifest.json",
+    "res://assets/battle_presentation/c01/fire_bridge/sprite_fire_bridge_deployed_v01.png",
+    "res://assets/battle_presentation/c01/story_first/sprite_diedie_idle_v01.png",
+    "res://assets/battle_presentation/c01/story_first/sprite_machine_dog_idle_v01.png",
+    "res://assets/battle_presentation/c01/story_first/sprite_evac_group_base_v01.png",
+    "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_kneel_idle_v01.png",
+    "res://assets/backgrounds/story_first/bg_c01e01_four_orders_v01.png",
+    "res://assets/backgrounds/story_first/bg_c01e01_front_hall_closing_v01.png",
+    "res://assets/portraits/portrait_doudeng.png",
+    "res://assets/portraits/portrait_jicun.png",
+    "res://assets/portraits/portrait_qihai.png"
+  ],
+  "experience_contract_version": 1,
+  "experience_contract_required": true,
+  "experience_contract": {
+    "episode_knot_id": "KNOT_C01E02_SHARED_FIRE_MAP",
+    "dramatic_object_id": "OBJ_C01E02_DOUBLE_WALL_PIPE",
+    "dramatic_question": "当两张正式消防图都少了同一层旧管，谁有资格继续下命令，又怎样让二十九个人真的离开建筑？",
+    "human_claims": [
+      {"claim_owner": "CH_JICUN", "claim": "现场不应服从一张自称完整的图；每个看见旧层的人都必须能把证据写进共同救援图。"},
+      {"claim_owner": "CH_QIHAI", "claim": "正确动机不能免除错误命令的后果；她必须亲自撤回高压切断并失去写权限，让现场继续救人。"}
+    ],
+    "machine_claim": {
+      "mecha_id": "V353U034",
+      "claim": "消防架桥机不是免费技能图标；它只有三段桥、四条腿和一次水路顺序，最后以真实过载换出一条人路。",
+      "action_cue_id": "CUE_C01E02_FIRE_BRIDGE_REVERSE_BRACE"
+    },
+    "player_commitment_id": "COMMIT_C01E02_SHARED_MAP_AND_REVERSE_BRACE",
+    "commitment_model": "enacted",
+    "commitment_evidence": [
+      {"node_id": "c01e02_fire_evacuation", "anchor_id": "C01E02_COMMIT_SHARED_FIRE_BRANCH", "visible_action": "玩家按三条现场证据确认旧消防支路，让共同图而非缺层现行图驱动工序。"},
+      {"node_id": "c01e02_fire_evacuation", "anchor_id": "C01E02_COMMIT_REVERSE_SEG3", "visible_action": "玩家在R5反折SEG3，接受消防架桥机左前腿过载来保住馆内五人。"}
+    ],
+    "settlement_model": "narrative_consequence",
+    "irreversible_cost": {
+      "text": "七海公开撤回本人命令并被停权；消防架桥机左前腿过载、消防水与接口受损；共同救援图完整暴露给白函的远程测量。",
+      "state_refs": ["QH_FIRST_PUBLIC_REVERSAL", "QH_SUSPENDED_INTERNAL_REVIEW", "CITY_FIRE_RESCUE_SUPPORT_ACTIVE_THROUGH_R5", "S02_EVAC_SCAR_FIRE_SUPPLY_BURNED", "C01E02_PHYSICAL_SNAPSHOT"]
+    },
+    "next_debt_id": "DEBT_C01E02_FIVE_INSIDE_BAIHAN_BODY_PRESET",
+    "next_debt_origin": "二十九人已出楼，但纪存、兜灯、唐胶和两名接驳员仍在馆内；白函沿公开消防图预量了十八米中庭框位。",
+    "next_debt_future_window": "C01E03必须从RT038开始，让白函具身切断L2回路；不得把五人、架桥机左前腿过载、七海停权或勇拳零动作重置。",
+    "capacity_band": "compact",
+    "capacity_evidence": {"status": "pending_external", "receipt_paths": []},
+    "required_continuity": ["action", "responsibility"],
+    "required_consumption_slots": ["immediate", "conflict", "character", "settlement"],
+    "skip_reasons": {
+      "DESK": "火场中不存在暂停救援比较责任方案的安全窗口；七海撤令与停权由实时剧情和战术后果结算。",
+      "CONSTRAINT": "水路、桥段与人员顺序已作为五回合战场硬约束存在，不再复制成第二套资源分配界面。",
+      "TIMING": "本话压力来自同步撤离与固定支援工序，不使用独立节拍玩法。",
+      "SIGNAL": "白函远程测量只作为结尾敌方收益出现，不让玩家提前解读宏观信号。"
+    },
+    "stable_object_bindings": [
+      {
+        "stable_object_id": "OBJ_C01E02_DOUBLE_WALL_PIPE",
+        "mode_bindings": [
+          {"mode": "NARRATIVE", "node_id": "c01e02_public_map_setup", "anchor_id": "c01e02_map_05"},
+          {"mode": "SPATIAL", "node_id": "c01e02_fireline_evidence", "anchor_id": "trace_double_wall_pipe"},
+          {"mode": "TACTICAL", "node_id": "c01e02_fire_evacuation", "anchor_id": "BIND_C01E02_DOUBLE_PIPE_TO_FIRE_BRANCH"},
+          {"mode": "NARRATIVE", "node_id": "c01e02_baihan_remote", "anchor_id": "c01e02_end_07"}
+        ]
+      }
+    ],
+    "consumption_ledger": [
+      {
+        "result_id": "COMMIT_C01E02_SHARED_MAP_AND_REVERSE_BRACE",
+        "source_node_id": "c01e02_fire_evacuation",
+        "slots": {
+          "immediate": {"consumer_kind": "world_object", "consumer_id": "OBJ_C01E02_DOUBLE_WALL_PIPE", "visible_evidence": "墙后双层回声和低温线进入共同消防图，直接改变泵路与消防桥落腿位置。"},
+          "conflict": {"consumer_kind": "battle", "consumer_id": "C01E02-FIRE-EVACUATION-FIVE-ROUND", "visible_evidence": "R1-R5必须按小机、工作人员、固定消防支援的顺序完成；SEG3反折与左前腿过载是通关动作。"},
+          "character": {"consumer_kind": "node", "consumer_id": "c01e02_baihan_remote", "visible_evidence": "七海只能继续监听，纪存没有安慰她先清场；两人的权限和相处方式同时改变。"},
+          "settlement": {"consumer_kind": "node", "consumer_id": "c01e02_baihan_remote", "visible_evidence": "白函把公开救援改报为资产主动迁移，并利用共同消防图预量下一话的实体落点，RT038一次提交。"}
+        }
+      }
+    ],
+    "acceptance_questions": [
+      "为什么二十九人越过闭馆线以后仍然需要四回合才能真正离楼？",
+      "七海的切电命令为什么局部正确，却让低位烟反而压向西门？",
+      "玩家调查的三项证据分别怎样改变了共同消防图和战场工序？",
+      "消防架桥机为什么不能自由移动、攻击或无限供水？",
+      "七海撤回自己的命令后具体失去了什么，而不是只说一句道歉？",
+      "R5为什么必须牺牲架桥机左前腿余量来保住馆内五人？",
+      "白函为什么能把一次成功救援改写成下一话的封存落点？"
+    ]
+  },
+  "claims": [
+    "c01e02_five_node_story_first_episode_graph",
+    "three_evidence_fireline_investigation",
+    "five_round_event_tactics",
+    "r5_local_checkpoint_retry",
+    "rt038_single_atomic_episode_handoff"
+  ],
+  "non_claims": [
+    "production_art_complete",
+    "capacity_receipt_validated",
+    "chapter_runner_complete",
+    "windows_runtime_validated",
+    "physical_controller_validated"
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0.0",
+  "task": "Section2_GZ_V10X_E02_shield_take_south_layered_R3",
+  "status": "STOP_AFTER_COLD_SHIELD_EDIT_CALL01_FAIL",
+  "authority_scope": "C01E02_candidate_art_workbench_only",
+  "generation": {
+    "shield_edit": {
+      "mode": "built_in_imagegen_narrow_edit",
+      "call_limit": 1,
+      "call_count": 1,
+      "random_reroll_count": 0,
+      "result": "FAIL_COLD_SHIELD_50_100_IDENTITY_AND_STATE_FIDELITY",
+      "built_in_output_directory": "/Users/rayz/.codex/generated_images/01a0329b-f0db-7fc1-a5fe-c8e50061c997",
+      "workspace_raw_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-take-layered-r3-candidate/call01-shield-edit/preflight-fail/generation-raw/A17_COLD_FRONT_CALL01_FOURTH_WHITE_SCAR_IDENTITY_DRIFT_FAIL_RAW.png",
+      "workspace_raw_sha256": "00c2d224227e32fd7fd4bacfc5f925df3e0268ab40a75305023a87267a6b2e8a",
+      "workspace_raw_mode": "RGB",
+      "workspace_raw_size": [1024, 1536],
+      "alpha_channel_present": false,
+      "checkerboard_baked_into_rgb": true
+    },
+    "body_only": {
+      "mode": "built_in_imagegen_if_cold_shield_passes",
+      "call_limit": 1,
+      "call_count": 0,
+      "random_reroll_count": 0,
+      "result": "NOT_CALLED_AFTER_COLD_SHIELD_FAIL"
+    },
+    "successful_pose_count": 0,
+    "total_imagegen_call_count": 1,
+    "total_random_reroll_count": 0
+  },
+  "source_lock": {
+    "sole_positive_guardian_pixel_source": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/map-candidates/GUARDIAN_Z_V10X_CAMERA_V2_IDLE_SOUTH_CANDIDATE_256.png",
+      "sha256": "0b3d2f437558216b8d3a94a1ea5255f7b9310a94447ba530a1d89b210ccfc12d"
+    },
+    "same_lineage_guardian_rgba_master": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-camera-v2-cardinal-neutral-candidate/call01/masters/GUARDIAN_Z_V10X_CAMERA_V2_CARDINAL_NEUTRAL_SHARED_MASTER_RGBA_1254.png",
+      "sha256": "3fca40226bc45bc368a1fe1eebab50a774ef9a4859a0b47fa565e5ed785de538"
+    },
+    "accepted_shield_design_raw": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a17-section2-true-retired-heavy-shield-candidate/user-confirmation-call01/generation-raw/TRUE_RETIRED_HEAVY_SHIELD_CALL01_RAW.png",
+      "sha256": "169c162c5b2bd0761d535d7dee8573fc547952090dfa7947c3b9630af1c72305"
+    },
+    "derived_front_rear_receipt": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a17-section2-true-retired-heavy-shield-candidate/derived-front-rear-sprites-v1/SECTION2_DERIVATION_RECEIPT.md",
+      "sha256": "d813fd753a8147c99c5785ced14a90ac383e77ebaf90a62d4dc7b249347df75d"
+    },
+    "derived_front_rear_metadata": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a17-section2-true-retired-heavy-shield-candidate/derived-front-rear-sprites-v1/A17_SHIELD_FRONT_REAR_DERIVATION_METADATA.json",
+      "sha256": "776134db606903ca9da76ee42ca7b7dbcf2b0991d29b3f730fd02d2861eb2921"
+    },
+    "sole_shield_edit_input": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a17-section2-true-retired-heavy-shield-candidate/derived-front-rear-sprites-v1/masters/A17_SHIELD_FRONT_EXTERIOR_RGBA_MASTER_768x1152.png",
+      "sha256": "8c20afbefefd04716e580ae5791338524ebc8c520256cdc047fae6de3ca7de47",
+      "state": "future_post_impact_hot"
+    },
+    "rear_interior_master_alignment_only": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a17-section2-true-retired-heavy-shield-candidate/derived-front-rear-sprites-v1/masters/A17_SHIELD_REAR_INTERIOR_RGBA_MASTER_768x1152.png",
+      "sha256": "7e9db3af4e7ccf9c361edbc6ebbadf74a4c61c9281eaa62373814a8cefe6bfe0"
+    },
+    "rear_interior_map_alignment_only": {
+      "path": "docs/superpowers/specs/production/c01-current-demo-v1/art-a17-section2-true-retired-heavy-shield-candidate/derived-front-rear-sprites-v1/map-candidates/A17_SHIELD_REAR_INTERIOR_MAP_CANDIDATE_256x256.png",
+      "sha256": "98aaeb90ce155dffa89b56d42c9e137aeb43a3fb061f37f079a77bfc89107be7",
+      "grip_centres": {
+        "left": [96.827, 104.747],
+        "right": [134.419, 104.747],
+        "midpoint": [115.623, 104.747]
+      }
+    },
+    "forbidden_R2_failure_pixel_input_count": 0,
+    "other_forbidden_history_pixel_input_count": 0
+  },
+  "body_only_guide": {
+    "gate": "PASS_BODY_ONLY_GEOMETRY_GUIDE",
+    "master_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-take-layered-r3-candidate/guide/GZ_V10X_SHIELD_TAKE_SOUTH_BODY_ONLY_FUTURE_HANDLES_GUIDE_1024.png",
+    "master_sha256": "6aa0f0e540640e8a1d281ad0f45fe6fcf7b40f5ac425a6c4363af8c7835047d8",
+    "fifty_percent_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-take-layered-r3-candidate/guide/GZ_V10X_SHIELD_TAKE_SOUTH_BODY_ONLY_FUTURE_HANDLES_GUIDE_50PCT.png",
+    "fifty_percent_sha256": "8dac97f8239cbf5384401ee4fb6a1332f526c940e3cccf2b00a4bee3e70cb555",
+    "contains_shield_plate_or_rack": false,
+    "imagegen_result": "NOT_CALLED_AFTER_COLD_SHIELD_FAIL"
+  },
+  "deterministic_cold_preflight_history": {
+    "status": "ALL_REJECTED_AND_FORBIDDEN_AS_POSITIVE_INPUT",
+    "methods": [
+      "perpendicular_source_interpolation",
+      "centre_mirror_patch",
+      "fixed_band_harmonic_diffusion"
+    ],
+    "retained_failure_qa_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-take-layered-r3-candidate/preflight-fail/R3_LAYERED_BODY_AND_COLD_SHIELD_PREFLIGHT_FAIL_50_100_QA.png",
+    "retained_failure_qa_sha256": "e6fd62f0529f007dae0e0d466f8a6e6a18d90625a89dd8dc2140de04291ee425"
+  },
+  "first_failure": {
+    "stage": "shield_edit_call01_cold_front_50_100_gate",
+    "failed_hard_gate": "preserve_exact_A17_identity_and_exactly_three_old_pale_scars",
+    "observed_old_pale_scar_count": 4,
+    "required_old_pale_scar_count": 3,
+    "future_hot_trace_removed": true,
+    "future_hot_trace_replaced_by_extra_pale_scar": true,
+    "global_redraw_outside_narrow_edit_region": true,
+    "transparent_rgba_required": true,
+    "output_mode_observed": "RGB",
+    "checkerboard_baked_into_rgb": true,
+    "qa_path": "docs/superpowers/specs/production/c01-current-demo-v1/art-section2-gz-v10x-e02-shield-take-layered-r3-candidate/call01-shield-edit/preflight-fail/qa/A17_COLD_FRONT_CALL01_FAIL_50_100_QA.png",
+    "qa_sha256": "e5f0d79e77582f50b2fb78b9d1a1f53905181f0bcfd8211ffb92ef8823baa56f"
+  },
+  "outputs": {
+    "cold_shield_front_exterior": null,
+    "body_master": null,
+    "final_composite": null,
+    "map_candidate": null,
+    "layered_manifest": null,
+    "socket_readback": null,
+    "composite_owner": null,
+    "pivot_validation": "NOT_RUN_WITHOUT_CANDIDATE"
+  },
+  "lifecycle": {
+    "workbench_package": true,
+    "candidate_emitted": false,
+    "internal_pass": false,
+    "user_accepted": false,
+    "runtime": false,
+    "default": false,
+    "canon": false,
+    "godot_bound": false
+  }
+}

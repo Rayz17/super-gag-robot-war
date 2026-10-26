@@ -1,0 +1,520 @@
+{
+  "schema_id": "FORMULA_LAB_UNIT_PLATE_V1",
+  "notes": "换档目录：组名（夹具原名与 product_label 短名）→ 临时机体板。人立绘用「名字立绘」条目（kind=portrait，走 /portraits/ + resolve=stand），不要把值班员甲/乙机甲 token 当 ADV 人。脚点 foot_uv 是源图里脚底；公式 contain-sit：整机等比缩小、脚落井底 0.88（演出/ADV 井 floor_ratio=1.0），不按井宽高比裁脚带。井种尺寸见 wells.json。馆厅 F 坐井台可运算/放置/编辑本目录。没有条目就只画姿态占位，不在代码里猜机体。",
+  "plates": {
+    "夹具重机甲组": {
+      "stance": "heavy",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-tide.png",
+      "foot_uv": [0.50, 0.9580078125],
+      "crop_h": 1.0
+    },
+    "重机甲组": {
+      "stance": "heavy",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-tide.png",
+      "foot_uv": [0.50, 0.9580078125],
+      "crop_h": 1.0
+    },
+    "夹具工程车乙组": {
+      "stance": "work",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-tie.png",
+      "foot_uv": [0.50, 0.91],
+      "crop_h": 0.80
+    },
+    "工程车乙组": {
+      "stance": "work",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-tie.png",
+      "foot_uv": [0.50, 0.91],
+      "crop_h": 0.80
+    },
+    "夹具轻队丙组": {
+      "stance": "light",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "轻队丙组": {
+      "stance": "light",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "夹具巡查班": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "巡查班": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "锚机甲": {
+      "stance": "heavy",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "fx_anchor": {
+      "stance": "heavy",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "侦察机乙": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "fx_scout": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "护卫机丙": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-si.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "fx_guard": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-si.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "巡访员": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "fx_walker": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "小机向导": {
+      "stance": "light",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "fx_small": {
+      "stance": "light",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "擂主（甲）": {
+      "stance": "heavy",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-tide.png",
+      "foot_uv": [0.50, 0.9580078125],
+      "crop_h": 1.0
+    },
+    "擂主": {
+      "stance": "heavy",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-tide.png",
+      "foot_uv": [0.50, 0.9580078125],
+      "crop_h": 1.0
+    },
+    "fx_ring_holder": {
+      "stance": "heavy",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-tide.png",
+      "foot_uv": [0.50, 0.9580078125],
+      "crop_h": 1.0
+    },
+    "挑战者（乙）": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-si.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "挑战者": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-si.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "fx_challenger": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-si.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "学员机": {
+      "stance": "light",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "fx_trainee": {
+      "stance": "light",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "教练（人类尺 · ）": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "教练": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "靶机": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-si.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "穿越机": {
+      "stance": "light",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "fx_runner": {
+      "stance": "light",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "拦机甲": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-si.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "拦机乙": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "挑战机": {
+      "stance": "light",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "fx_student": {
+      "stance": "light",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "师父机（精锐 · ）": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "师父机": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "值班员甲": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "甲": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "接班员乙": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "乙": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "值班员": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-si.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "外勤乙": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "带队的人": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "钻进去的人": {
+      "stance": "light",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "馆务员": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "值班的维护员": {
+      "stance": "work",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "抱着名册的值班员": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-si.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "楼梯口甲": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "楼梯口乙": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "楼梯口丙": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-si.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "楼梯口丁": {
+      "stance": "work",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-tie.png",
+      "foot_uv": [0.50, 0.91],
+      "crop_h": 0.80
+    },
+    "残骸旁甲": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-lin.png",
+      "foot_uv": [0.50, 0.9306640625],
+      "crop_h": 1.0
+    },
+    "残骸旁乙": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-ye.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "残骸旁丙": {
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/mecha/mecha-si.png",
+      "foot_uv": [0.50, 0.90],
+      "crop_h": 0.82
+    },
+    "值班员甲立绘": {
+      "kind": "portrait",
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/portraits/lin.png",
+      "foot_uv": [0.53, 0.99],
+      "crop_h": 1.0,
+      "resolve": "stand",
+      "face_uv": [0.52, 0.16],
+      "bust_h": 0.36
+    },
+    "接班员乙立绘": {
+      "kind": "portrait",
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/portraits/ye.png",
+      "foot_uv": [0.51, 0.99],
+      "crop_h": 1.0,
+      "resolve": "stand",
+      "face_uv": [0.45, 0.16],
+      "bust_h": 0.36
+    },
+    "擂主（甲）立绘": {
+      "kind": "portrait",
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/portraits/lin.png",
+      "foot_uv": [0.53, 0.99],
+      "crop_h": 1.0,
+      "resolve": "stand",
+      "face_uv": [0.52, 0.16],
+      "bust_h": 0.36
+    },
+    "擂主立绘": {
+      "kind": "portrait",
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/portraits/lin.png",
+      "foot_uv": [0.53, 0.99],
+      "crop_h": 1.0,
+      "resolve": "stand",
+      "face_uv": [0.52, 0.16],
+      "bust_h": 0.36
+    },
+    "挑战者（乙）立绘": {
+      "kind": "portrait",
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/portraits/si.png",
+      "foot_uv": [0.50, 0.99],
+      "crop_h": 1.0,
+      "resolve": "stand",
+      "face_uv": [0.46, 0.16],
+      "bust_h": 0.36
+    },
+    "挑战者立绘": {
+      "kind": "portrait",
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/portraits/si.png",
+      "foot_uv": [0.50, 0.99],
+      "crop_h": 1.0,
+      "resolve": "stand",
+      "face_uv": [0.46, 0.16],
+      "bust_h": 0.36
+    },
+    "学员机立绘": {
+      "kind": "portrait",
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/portraits/lin.png",
+      "foot_uv": [0.53, 0.99],
+      "crop_h": 1.0,
+      "resolve": "stand",
+      "face_uv": [0.52, 0.16],
+      "bust_h": 0.36
+    },
+    "教练（人类尺 · ）立绘": {
+      "kind": "portrait",
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/portraits/ye.png",
+      "foot_uv": [0.51, 0.99],
+      "crop_h": 1.0,
+      "resolve": "stand",
+      "face_uv": [0.45, 0.16],
+      "bust_h": 0.36
+    },
+    "教练立绘": {
+      "kind": "portrait",
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/portraits/ye.png",
+      "foot_uv": [0.51, 0.99],
+      "crop_h": 1.0,
+      "resolve": "stand",
+      "face_uv": [0.45, 0.16],
+      "bust_h": 0.36
+    },
+    "靶机立绘": {
+      "kind": "portrait",
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/portraits/si.png",
+      "foot_uv": [0.50, 0.99],
+      "crop_h": 1.0,
+      "resolve": "stand",
+      "face_uv": [0.46, 0.16],
+      "bust_h": 0.36
+    },
+    "穿越机立绘": {
+      "kind": "portrait",
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/portraits/lin.png",
+      "foot_uv": [0.53, 0.99],
+      "crop_h": 1.0,
+      "resolve": "stand",
+      "face_uv": [0.52, 0.16],
+      "bust_h": 0.36
+    },
+    "拦机甲立绘": {
+      "kind": "portrait",
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/portraits/si.png",
+      "foot_uv": [0.50, 0.99],
+      "crop_h": 1.0,
+      "resolve": "stand",
+      "face_uv": [0.46, 0.16],
+      "bust_h": 0.36
+    },
+    "拦机乙立绘": {
+      "kind": "portrait",
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/portraits/ye.png",
+      "foot_uv": [0.51, 0.99],
+      "crop_h": 1.0,
+      "resolve": "stand",
+      "face_uv": [0.45, 0.16],
+      "bust_h": 0.36
+    },
+    "挑战机立绘": {
+      "kind": "portrait",
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/portraits/lin.png",
+      "foot_uv": [0.53, 0.99],
+      "crop_h": 1.0,
+      "resolve": "stand",
+      "face_uv": [0.52, 0.16],
+      "bust_h": 0.36
+    },
+    "师父机（精锐 · ）立绘": {
+      "kind": "portrait",
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/portraits/ye.png",
+      "foot_uv": [0.51, 0.99],
+      "crop_h": 1.0,
+      "resolve": "stand",
+      "face_uv": [0.45, 0.16],
+      "bust_h": 0.36
+    },
+    "师父机立绘": {
+      "kind": "portrait",
+      "stance": "mid",
+      "sprite_path": "res://assets/formula_lab/temp/portraits/ye.png",
+      "foot_uv": [0.51, 0.99],
+      "crop_h": 1.0,
+      "resolve": "stand",
+      "face_uv": [0.45, 0.16],
+      "bust_h": 0.36
+    },
+    "机骸": {
+      "stance": "wreck",
+      "sprite_path": "res://assets/formula_lab/temp/cutouts/mecha-wreck.png",
+      "foot_uv": [0.50, 0.92],
+      "crop_h": 0.92
+    },
+    "wreck_mid": {
+      "stance": "wreck",
+      "sprite_path": "res://assets/formula_lab/temp/cutouts/mecha-wreck.png",
+      "foot_uv": [0.50, 0.92],
+      "crop_h": 0.92
+    },
+    "wreck_north": {
+      "stance": "wreck",
+      "sprite_path": "res://assets/formula_lab/temp/cutouts/mecha-wreck.png",
+      "foot_uv": [0.50, 0.92],
+      "crop_h": 0.92
+    },
+    "wreck_south": {
+      "stance": "wreck",
+      "sprite_path": "res://assets/formula_lab/temp/cutouts/mecha-wreck.png",
+      "foot_uv": [0.50, 0.92],
+      "crop_h": 0.92
+    }
+  }
+}

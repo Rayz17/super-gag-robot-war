@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "receipt_id": "C01E02-M3-R05-M0-1-IDENTITY-AWARE-FALLBACK",
+  "objective": "47-c01e02-m3-r0-5-m0-1-identity-aware-fallback-objective.md",
+  "status": "M0_1_MACHINE_VERIFIED_ENGINEERING_SHELL_ONLY",
+  "authority": {
+    "correction_46_sha256": "dd73761eba03cfb2c8da713a87a757f85dc8c5cda0e9e347401bc0cc10ee9fba",
+    "objective_47_sha256": "67a628e26735e87a1983e9475e0ddcf8d2216cdc71c14bdb02384cc393bb5461",
+    "updated_frozen_ledger": "PASS"
+  },
+  "evidence": {
+    "evidence_class": "engineering_shell_evidence_only",
+    "real_asset_loader_implemented": false,
+    "user_visual_playtest_eligible": false,
+    "u2_eligible": false,
+    "resource_probe_count": 0,
+    "loaded_slot_count": 0,
+    "runtime_art_loaded": false,
+    "manifest_can_authorize_loading": false,
+    "manifest_runtime_toggle_effect": "none_no_loader"
+  },
+  "identity_critical_slots": [
+    "R05_PORTRAIT_JICUN",
+    "R05_PORTRAIT_QIHAI_REMOTE",
+    "R05_COMMS_OLD_GUARDIAN",
+    "R05_GUARDIAN_MAP_ACTION_4DIR",
+    "R05_BREAKER_MAP_ACTION_4DIR",
+    "R05_SHIELD_WALL_HUNG",
+    "R05_CUTIN_GIANT_CONTACT",
+    "R05_CUTIN_DOUDENG_OBSERVE",
+    "R05_CUTIN_DOUDENG_TENSE"
+  ],
+  "identity_critical_fallback_count": 9,
+  "identity_critical_fallback_status": "portrait_or_identity_unavailable",
+  "u2_block_reasons": [
+    "exact_handoff_loader_not_implemented",
+    "world_real_asset_consumers_not_implemented",
+    "screen_real_asset_consumers_not_implemented",
+    "audio_real_asset_consumer_not_implemented",
+    "identity_critical_slot_fallback:R05_PORTRAIT_JICUN",
+    "identity_critical_slot_fallback:R05_PORTRAIT_QIHAI_REMOTE",
+    "identity_critical_slot_fallback:R05_COMMS_OLD_GUARDIAN",
+    "identity_critical_slot_fallback:R05_GUARDIAN_MAP_ACTION_4DIR",
+    "identity_critical_slot_fallback:R05_BREAKER_MAP_ACTION_4DIR",
+    "identity_critical_slot_fallback:R05_SHIELD_WALL_HUNG",
+    "identity_critical_slot_fallback:R05_CUTIN_GIANT_CONTACT",
+    "identity_critical_slot_fallback:R05_CUTIN_DOUDENG_OBSERVE",
+    "identity_critical_slot_fallback:R05_CUTIN_DOUDENG_TENSE"
+  ],
+  "world_schematic": {
+    "camera_contract": "tactical_board_view_unchanged",
+    "guardian_z": {
+      "stable_id": "V353U001",
+      "height_m": 18,
+      "footprint": [2, 2],
+      "pivot": [0.5, 0.88],
+      "gold_horizontal_crown": true,
+      "central_red_crown_ornament": true,
+      "silver_grille_face": true,
+      "red_chest": true,
+      "circular_gold_chest_core": true,
+      "cylindrical_forearm_count": 2,
+      "both_forearms_complete": true,
+      "right_shoulder_old_wound": true,
+      "arm_loss_depicted": false
+    },
+    "breaker": {
+      "stable_id": "ENEMY_C01_BREAKER",
+      "height_class": "near_30m",
+      "footprint": [3, 3],
+      "pivot": [0.5, 0.9],
+      "front_limb_weight_bearing": true,
+      "semi_upright": true,
+      "low_ram_posture": true,
+      "head_below_shoulder_shell": true,
+      "red_head_slit_count": 1,
+      "chest_seam_closed": true,
+      "upper_back_core_exit_sealed": true,
+      "b_plus_x_alien_bioarmor_language": true,
+      "humanoid_black_mecha": false,
+      "ordinary_quadruped": false
+    },
+    "wall_hung_shield": {
+      "old_scorch_mark_count": 3,
+      "taken": false,
+      "red_light_released": false
+    },
+    "emergency_vehicle": {
+      "medical_cross": false,
+      "autonomous_semantics": true
+    }
+  },
+  "screen_schematic": {
+    "real_portraits_consumed": false,
+    "initial_or_face_glyph_used": false,
+    "top_bar_operation": "本轮操作：馆守Z",
+    "jicun": "导览席 / 路线·人员·危险",
+    "doudeng": "维修角 / 机况·承力",
+    "old_guardian": "馆守Z本体 / 身体自行负责",
+    "old_guardian_machine_head": true,
+    "old_guardian_chest_light": true,
+    "old_guardian_speaker_waveform": true,
+    "qihai": {
+      "label": "远程权限状态",
+      "status": "本人停机令已撤回",
+      "portrait_unavailable": true,
+      "interactive": false,
+      "button_count": 0,
+      "action_icon_count": 0,
+      "command_capability": "none",
+      "artillery_authority": false
+    },
+    "doudeng_pre_input_line": {
+      "text": "它管身体，你管路。别抢方向，也别让它一脚踩进楼里。",
+      "trigger_once": true,
+      "input_blocked_while_visible": true
+    }
+  },
+  "process_safety": {
+    "timeout_incident_receipt": "00-ui-flow-hang-incident-receipt.json",
+    "final_per_godot_timeout_seconds": 60,
+    "final_gate_exit_code": 0,
+    "remaining_m3_r05_godot_processes": 0
+  },
+  "old_m0_evidence": {
+    "modified": false,
+    "tree_digest_before": "c9c4578d54d12b1ec86f1707f2ae767257975d99d53556fbd332ac857672991f",
+    "tree_digest_after": "c9c4578d54d12b1ec86f1707f2ae767257975d99d53556fbd332ac857672991f"
+  },
+  "claim_boundary": {
+    "character_identity_judgeability": "NOT_PROVEN",
+    "mecha_identity_judgeability": "NOT_PROVEN",
+    "overall_visual_judgeability": "NOT_PROVEN",
+    "r1_ready": false,
+    "handoff_ready": false
+  }
+}

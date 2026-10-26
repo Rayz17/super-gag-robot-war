@@ -1,0 +1,6 @@
+facing	grid_delta	screen_delta_px	screen_read	shared_consumer	actual_overlay_position_px	actual_capture	test_assertion	result
+north	[0,-1]	[40,-20]	upper_right	tactical_geometry.project_grid_delta	fan_origin_[880,270]_to_[944.40,237.80]	01_DIRECTION_FAN	direction_receipt.north.screen_delta_px==[40,-20]	PASS
+east	[1,0]	[40,20]	lower_right	tactical_geometry.project_grid_delta	fan_origin_[880,270]_to_[944.40,302.20]	01_DIRECTION_FAN	direction_receipt.east.screen_delta_px==[40,20]	PASS
+south	[0,1]	[-40,20]	lower_left	tactical_geometry.project_grid_delta	fan_origin_[880,270]_to_[815.60,302.20]	01_DIRECTION_FAN	direction_receipt.south.screen_delta_px==[-40,20]	PASS
+west	[-1,0]	[-40,-20]	upper_left	tactical_geometry.project_grid_delta	fan_origin_[880,270]_to_[815.60,237.80]	01_DIRECTION_FAN	direction_receipt.west.screen_delta_px==[-40,-20]	PASS
+shared_basis	N/A	N/A	N/A	route ghost facing_fan contact_normal force_arrow summary_receipt	actual 1280x720 Godot viewport	01_DIRECTION_FAN	projection_id=A4_ISOMETRIC_40X20 and camera_contract_id=A4_MAP_SPRITE_CAMERA_V1	PASS

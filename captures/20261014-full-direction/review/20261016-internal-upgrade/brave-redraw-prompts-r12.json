@@ -1,0 +1,128 @@
+{
+  "revision": "r12",
+  "execution": "built-in imagegen; qualified previous local edits reused after fresh inspection",
+  "current_source_record": "brave-components-production-r12.json",
+  "prompts_for_current_outputs": [
+    {
+      "prompt_file": "brave-bomber-backpack-assembly-prompt-r12.json",
+      "prompt_sha256": "916c516f783d2ed89075eaf4e94300d59a64ebcd6169df15f2ffe2df75a7e714",
+      "mode": "built_in_image_gen",
+      "reused_from_history": false,
+      "actual_saved_input": {
+        "mode": "built_in_image_gen",
+        "referenced_image_paths": [
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-bomber-mask-assembly-r9.png",
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-rear-exhaust-corrected-r6b.png",
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-bomber-master-r8.png",
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-front-backpack-fins-r7.png"
+        ],
+        "transparent_background": false,
+        "prompt": "Use case: precise-object-edit. Edit reference image 1, the existing 4-panel bomber assembly sheet. Preserve its exact composition, the hollow mask loading onto the original two-orange-horn core head, the finished combined torso at upper right, and BOTH lower shoulder articulation panels.\nONLY REDRAW THE DETACHED BACKPACK at top-left of the upper-left panel. It must have TWO dark rectangular grilles vertically stacked on ONE connected graphite-and-orange housing, exactly the backpack on reference 2 (the accepted combined rear view). Right now reference 1 wrongly shows just one large grille. Make the independent backpack's two grilles separately readable, with an orange center divider, dark recesses and rounded rectangular graphite lips; retain the two orange-edged vertical fins on the left and right of that same housing. Size the housing to fit its current top-left position without cropping or covering the assembly arrows/head. Do not add another backpack or duplicate any fins. These two grille modules belong to the bomber's folding rear-fuselage cassette, not extra engines.\nReference 2 is the authority for backpack casing and the two stacked rear openings. Reference 3 only supports the bomber's material and fuselage identity. Reference 4 locks the approved combined face, torso, short blunt chest nose, wing shape and color. The loaded mask forehead stays orange on graphite, without an added cyan forehead gem; the original unmasked core retains its cyan forehead gem. Keep every other part, outline, perspective, palette, giant fist and empty ivory background unchanged. No new text."
+      }
+    },
+    {
+      "prompt_file": "brave-train-local-closing-prompt-r12c.json",
+      "prompt_sha256": "072b31ca354defd6442940034f2f2fcf90d4f92374485178414145681b117021",
+      "mode": "built_in_image_gen",
+      "reused_from_history": false,
+      "actual_saved_input": {
+        "mode": "built_in_image_gen",
+        "referenced_image_paths": [
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/F12-subtrain-assembly-r8b.png",
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-front-backpack-fins-r7.png"
+        ],
+        "transparent_background": false,
+        "prompt": "Use case: precise-object-edit. Reference 1 is the edit target. Extract ONLY its LOWER-RIGHT panel (one installed armored forearm, short intact cab at upper-left/rear, huge fist at lower-right/front). Return that one panel as a standalone illustration on the same warm ivory ground. Preserve exactly the forearm, huge fist, original single rear cab, camera angle, proportions and heavy inked cel art already in that panel. Reference 2 only confirms the resting outer-arm armor shape.\nThe ONLY mechanical change: rotate the TWO EXISTING long ivory side armor panels inward toward the forearm, reducing their open angle about two thirds. This is their protective resting cradle, still OPEN underneath/along its inner edge. Keep the panels identifiable as those same two flat curved wall pieces, with their original blue side windows and orange stripe. They remain armor plates, not a solid passenger carriage. Keep a clear long slit exposing the original dark/orange forearm; do not seal the two panels into a whole car body. Do not lengthen them and do not shrink the fist.\nThe existing SHORT INTACT REAR CAB remains in its original upper-left position toward the elbow. It is the ONLY cab and the ONLY windshield in this image. The two panels near the wrist have flat squared former-coupler ends, never pointed noses, never cockpit glass or new windshields. Their front edges stop behind the wrist/giant knuckles. All original fingers, thumb and orange frame stay unchanged and fully visible.\nFold the one small original side fin flush to the underside edge of its own panel; it does not disappear. Add no new components, no additional cab, no extra hand, no full robot, no text, arrows, frames or logos. Show entire existing cab and huge fist with margins."
+      }
+    },
+    {
+      "prompt_file": "brave-backpack-fold-map-prompt-r12.json",
+      "prompt_sha256": "3c02e19b1cc720124c01d206ba11173ec3a4127a60977be214c4a469898b56e4",
+      "mode": "built_in_image_gen",
+      "reused_from_history": false,
+      "actual_saved_input": {
+        "mode": "built_in_image_gen",
+        "referenced_image_paths": [
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-bomber-master-r8.png",
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-rear-exhaust-corrected-r6b.png",
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-bomber-backpack-assembly-r12.png"
+        ],
+        "transparent_background": false,
+        "prompt": "Use case: stylized-concept / mechanical explanatory concept. Make a LANDSCAPE THREE-PANEL close-up design study of ONE BOMBER REAR-FUSELAGE CASSETTE converting into the SAME Social Brave King backpack. Clean warm ivory background, inked cel-shaded orange/ivory/graphite art exactly like references. Only the compact rear cassette and fin roots, not a whole new aircraft or a full robot. No text/letters/numbers. Restrained orange rotation arrows may connect stages.\nReference 1 supplies the folded cassette as seen on the original aircraft's upper rear: broad low graphite casing, orange longitudinal frame, one clearly visible upper rectangular grille, two vertical fins.\nReference 2 is PRIMARY AUTHORITY for the DEPLOYED backpack: ONE compact orange/graphite casing, EXACTLY TWO rounded-rectangular dark grilles stacked vertically with an orange separator; the same two tall orange-edged graphite vertical fins on its two sides.\nReference 3 confirms the detached deployed two-grille module.\n\nLEFT PANEL: three-quarter lower-rear view of the compact flight-state rear cassette only. Show the recognizable low roof casing and the upper visible rectangular grille. A cutaway/peeled underside cover also exposes the SECOND grille module folded under the rear casing; it is not a new third port. Exactly TWO main grille modules belong to one hinged cassette. Two existing vertical fins stay on their rear carrier frame. No cabin cockpit, no wing engines.\nMIDDLE PANEL: the SAME casing open at the connecting hinge, two rectangular vent-bearing box sections articulated on ONE central support spine. One small curved orange arrow shows the lower concealed section folding down; another shows it turning so its grille faces the same rearward direction as the upper grille. Show the carrier and pivot, not a mathematically exact transformation simulation. No duplicated fins or repeated extra vent boxes.\nRIGHT PANEL: same cassette fully deployed exactly like reference 2's BACKPACK REAR, two and only two grilles one above the other in the same orange outlined silhouette, twin upright fins on the sides. This final panel must preserve the chosen rear-view backpack geometry and colors; no added exhaust turbines.\nKeep the same two grille shapes, orange casing frame and two fin shapes across the three views. Lower concealed grille must visibly belong to the folding rear cassette; no appearing from nowhere. Full module visible with ample spacing."
+      }
+    },
+    {
+      "prompt_file": "brave-side-blunt-nose-prompt-r6d.json",
+      "prompt_sha256": "ea6d7f2f8103305d9ee367f38a151a8b5a4124e4933f75341e2ec6fec864acf6",
+      "mode": "built_in_image_gen",
+      "reused_from_history": true,
+      "actual_saved_input": {
+        "mode": "built_in_image_gen",
+        "step": "按逐件检查中的胸机鼻短钝要求做最后局部修正",
+        "arguments": {
+          "referenced_image_paths": [
+            "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-side-fin-aligned-r6c.png",
+            "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-brave-combined-master-r4b.png"
+          ],
+          "transparent_background": false,
+          "prompt": "Use case: precise-object-edit. Make ONE SMALL LOCAL geometry correction on Image 1: the orange bomber COCKPIT NOSE at the FRONT of the chest, pointing left, still ends in too much of an airplane beak. Match the compact blunt nose-cap character of the authoritative front master Image 2. Keep the same blue canopy, chest mounting, upper nose slope and chest width; shorten ONLY the very front orange nose tip slightly and turn its pointed end into a short broad chamfered/rounded end face with a small vertical front edge, not a sharp triangular point. This is a sturdy rounded/chamfered bomber nose, not a spear, no bird beak. Do NOT redraw or move the rest of the body. Preserve exactly the selected triangular shoulder housing height/slope, engine direction, rear fin edge, head and face, crown, mane, arms, enlarged fist and train shell, hips/thigh, knee drill, coherent front/rear calf tracks, wheel/armor structure, ankle and boot, camera, frame, line style and palette. No changes outside the small orange chest nose cap area. Same ivory background. No words or marks."
+        }
+      }
+    },
+    {
+      "prompt_file": "brave-rear-exhaust-fix-prompt-r6b.json",
+      "prompt_sha256": "0ac759e828afd447a1afd7db3adeed466b067e5a3e05093495db57091a521ff4",
+      "mode": "built_in_image_gen",
+      "reused_from_history": true,
+      "actual_saved_input": {
+        "mode": "built_in_image_gen",
+        "scope": "局部朝向/跨视图核对后的修补，不重新生成整机结构",
+        "arguments": {
+          "referenced_image_paths": [
+            "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-rear-selected-parts-r6a.png"
+          ],
+          "transparent_background": false,
+          "prompt": "Use case: precise-object-edit. Edit ONLY the TWO ROUND OUTBOARD WING-ENGINE REAR ENDS in this rear-oriented mecha image. They currently resemble forward-facing intake fans, which is mechanically wrong for this view. The engine bodies and their mounting, size, position and axis stay exactly fixed. Replace the visible circular interior on BOTH engines with unmistakable REAR JET EXHAUST: a dark recessed hollow nozzle, graphite segmented exhaust lip/petals and a deep dark inner opening, with no central hub, NO FAN BLADES and no turbine-intake disk. The nearest left engine and farther right engine must both be rear exhausts. No glow or flame. Do not change the two stacked rectangular grilles in the center backpack; they are already correct. Preserve every other pixel-layout feature: same head/mane, wings and two vertical fins, torso/backpack, massive fists, arms, train shells, hips, knees, calves, treads, heels, pose, camera, framing, line style and colors. Only the two outboard circular engine rear-end interiors/rims are repaired, not the whole image. Same ivory background, no labels."
+        }
+      }
+    },
+    {
+      "prompt_file": "brave-bomber-mask-forehead-prompt-r9b.json",
+      "prompt_sha256": "e840b20aebb344aeef0fdb19f7f9e9e5fd1f0d20bcfa1ed56297971e9ed63721",
+      "mode": "built_in_image_gen",
+      "reused_from_history": true,
+      "actual_saved_input": {
+        "date": "2026-10-18",
+        "generation_mode": "built_in_image_gen",
+        "referenced_image_paths": [
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/F09-bomber-mask-loading-r9.png",
+          "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/M04-front-backpack-fins-r7.png"
+        ],
+        "transparent_background": false,
+        "prompt": "Precise local correction to image 1. Keep the mask storage/deployment sequence, original core head, long hair, whole bottom fist row, all framing and all armor shapes unchanged. The external faceguard must match image 2's APPROVED forehead design. Correct ONLY TWO SMALL FOREHEAD DETAILS: (1) in the upper-middle panel, on the EXTERNAL SILVER CROWN MASK hanging ABOVE the bare core head, replace its bright cyan forehead jewel with the approved DARK GRAPHITE central crown spine and small orange forehead armor from image 2; (2) in the upper-right completed head, replace the bright cyan forehead gemstone above the nose with that same approved dark graphite/orange forehead armor. The underlying bare core head in the MIDDLE panel DOES keep its original cyan forehead gem, because it will be covered by the external mask. Keep all cyan EYES unchanged. The stored mask in the upper-left panel is already dark/orange and remains unchanged. Do not alter crown silhouette, face, cheeks, fist plates, hand positions, colors elsewhere or any other part of this sheet. This is only making the external mask's forehead match the selected whole-robot design, not a redesign."
+      }
+    },
+    {
+      "prompt_file": "brave-core-chest-cleanup-prompt-r2.json",
+      "prompt_sha256": "6ab32786e0abe5f86e2ff10ffd3405a7588bbe26b345be71908ac6e7dbb1c44c",
+      "mode": "built_in_image_gen",
+      "reused_from_history": true,
+      "actual_saved_input": {
+        "mode": "built_in_image_gen",
+        "scope": "仅移除近似既有派系徽记；不改核心造型",
+        "arguments": {
+          "referenced_image_paths": [
+            "/Users/rayz/Documents/超gag机器人大战/captures/20261014-full-direction/review/20261016-internal-upgrade/samples/F09-brave-core-master-r1.png"
+          ],
+          "transparent_background": false,
+          "prompt": "Use case: precise-object-edit. Edit ONLY a small painted insignia on the central white chest plate of the supplied orange-white humanoid mecha. Remove the orange angular animal-face/faction insignia entirely and replace that patch with the same plain clean ivory-white armor paint, preserving the chest panel seams and lighting. No replacement logo or mark. Keep absolutely everything else unchanged: exact head and crown, long orange-white mane, cyan eyes, all hands and thick fist units, orange forearms, shoulder armor, waist, full legs/feet, proportions, pose, shadow, ivory background, framing and illustration style. Do not alter anatomy or redesign the mecha; a single tiny chest insignia removal only. Preserve source full portrait aspect ratio."
+        }
+      }
+    }
+  ],
+  "authored_diagrams": [
+    "F11-component-routing-r12.svg",
+    "F12-shell-state-framework-r12.svg"
+  ],
+  "note": "失败长车/双车头尝试未列入当前采用提示集，实际失败记录仍见source record。"
+}

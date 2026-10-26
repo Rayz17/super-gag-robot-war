@@ -1,0 +1,225 @@
+{
+  "manifest_id": "BP_C01E02_FIRE_EVACUATION_RUNTIME_V01",
+  "runtime_scope": "runtime_validation_only",
+  "canon_refs": [
+    "V355-C01E02",
+    "V353U034",
+    "DATA_C01E02_RUNTIME_CONTRACT_V1",
+    "C01MIG011"
+  ],
+  "assets": [
+    {
+      "asset_id": "SPR_C01E02_FIRE_BRIDGE_DEPLOYED_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/fire_bridge/sprite_fire_bridge_deployed_v01.png",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true,
+      "source_model_or_tool": "OpenAI built-in imagegen; remove_chroma_key.py",
+      "prompt_version": "C01E02-FIRE-BRIDGE-DEPLOYED-v1"
+    },
+    {
+      "asset_id": "SPR_C01E01_DIEDIE_IDLE_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/story_first/sprite_diedie_idle_v01.png",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true
+    },
+    {
+      "asset_id": "SPR_C01E01_MACHINE_DOG_IDLE_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/story_first/sprite_machine_dog_idle_v01.png",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true
+    },
+    {
+      "asset_id": "SPR_C01E01_EVAC_GROUP_BASE_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/story_first/sprite_evac_group_base_v01.png",
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true
+    },
+    {
+      "asset_id": "SPR_GZ_C01_KNEEL_IDLE_V01",
+      "runtime_path": "res://assets/battle_presentation/c01/guardian_z/sprite_gz_c01_kneel_idle_v01.png",
+      "approval_status": "approved_for_runtime",
+      "runtime_allowed": true
+    },
+    {
+      "asset_id": "SPR_C01_JICUN_WALK_STRIP_V01",
+      "runtime_path": "res://assets/characters/story_first/sprite_jicun_walk_right_strip_v01.png",
+      "source_rect": [511, 0, 511, 769],
+      "approval_status": "runtime_validation_candidate",
+      "runtime_allowed": true
+    }
+  ],
+  "unit_visuals": [
+    {
+      "unit_id": "fire_bridge",
+      "states": {"default": "SPR_C01E02_FIRE_BRIDGE_DEPLOYED_V01"},
+      "draw_size": [142, 114],
+      "offset": [0, -40],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "diedie",
+      "states": {"default": "SPR_C01E01_DIEDIE_IDLE_V01"},
+      "draw_size": [54, 54],
+      "offset": [0, -15]
+    },
+    {
+      "unit_id": "machine_dog",
+      "states": {"default": "SPR_C01E01_MACHINE_DOG_IDLE_V01"},
+      "draw_size": [60, 60],
+      "offset": [0, -16]
+    },
+    {
+      "unit_id": "jicun",
+      "states": {"default": "SPR_C01_JICUN_WALK_STRIP_V01"},
+      "draw_size": [42, 64],
+      "offset": [0, -25]
+    },
+    {
+      "unit_id": "tangjiao",
+      "visual_kind": "procedural",
+      "profile": "staff_responder",
+      "variant": "work_coat",
+      "draw_scale": 0.82,
+      "offset": [0, -11],
+      "palette": {"base": "b86742", "secondary": "3b2620", "accent": "f1b64a", "outline": "f2e5d8"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "doudeng",
+      "visual_kind": "procedural",
+      "profile": "staff_responder",
+      "variant": "safety_coat",
+      "draw_scale": 0.82,
+      "offset": [0, -11],
+      "palette": {"base": "3d8f89", "secondary": "17393b", "accent": "f1c34f", "outline": "e8f3ef"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "evac_a11",
+      "states": {"default": "SPR_C01E01_EVAC_GROUP_BASE_V01"},
+      "draw_size": [42, 42],
+      "offset": [0, -11],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "evac_b10",
+      "states": {"default": "SPR_C01E01_EVAC_GROUP_BASE_V01"},
+      "draw_size": [42, 42],
+      "offset": [0, -11],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "evac_c3",
+      "states": {"default": "SPR_C01E01_EVAC_GROUP_BASE_V01"},
+      "draw_size": [42, 42],
+      "offset": [0, -11],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "evac_d5",
+      "states": {"default": "SPR_C01E01_EVAC_GROUP_BASE_V01"},
+      "draw_size": [45, 45],
+      "offset": [0, -12],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "needle_cart",
+      "visual_kind": "procedural",
+      "profile": "rail_tool",
+      "variant": "needle",
+      "draw_scale": 0.72,
+      "offset": [0, -7],
+      "palette": {"base": "b66d32", "secondary": "26383c", "accent": "66d6df", "outline": "e8eff0"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "ruler_machine",
+      "visual_kind": "procedural",
+      "profile": "rail_tool",
+      "variant": "ruler",
+      "draw_scale": 0.72,
+      "offset": [0, -7],
+      "palette": {"base": "d0a339", "secondary": "353127", "accent": "ef704d", "outline": "f0e8cf"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "guardian_z_passive",
+      "states": {"default": "SPR_GZ_C01_KNEEL_IDLE_V01"},
+      "draw_size": [112, 112],
+      "offset": [0, -44],
+      "dim_when_done": false
+    },
+    {
+      "unit_id": "brave_transport",
+      "visual_kind": "procedural",
+      "profile": "transport_cage",
+      "draw_scale": 0.78,
+      "offset": [0, -13],
+      "palette": {"base": "b88332", "secondary": "263036", "accent": "e5b43d", "outline": "d9e4e4"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "fire_crew_f2a",
+      "visual_kind": "procedural",
+      "profile": "fire_responder",
+      "draw_scale": 0.78,
+      "offset": [0, -10],
+      "palette": {"base": "d96835", "secondary": "272f34", "accent": "f2d34c", "outline": "eef2ed"},
+      "approval_status": "runtime_validation_candidate"
+    },
+    {
+      "unit_id": "fire_crew_f2b",
+      "visual_kind": "procedural",
+      "profile": "fire_responder",
+      "draw_scale": 0.78,
+      "offset": [0, -10],
+      "palette": {"base": "d96835", "secondary": "272f34", "accent": "f2d34c", "outline": "eef2ed"},
+      "approval_status": "runtime_validation_candidate"
+    }
+  ],
+  "attack_presentations": [],
+  "event_presentations": [
+    {
+      "presentation_id": "BP_C01E02_FIRE_BRIDGE_THREE_SEGMENTS_V01",
+      "action_id": "FIRE_DEPLOY_SEG1_SEG2_SEG3",
+      "header": "消防架桥机 / 三段依次落位",
+      "subheader": "四腿先锁地，SEG1、SEG2、SEG3依次把人行线和消防线分开",
+      "footer": "固定支援机 / 不自由移动 / 无攻击武装",
+      "presentation_style": "public_works_rescue",
+      "steps_full": [
+        {"type": "map_anim", "duration": 0.52, "asset_id": "SPR_C01E02_FIRE_BRIDGE_DEPLOYED_V01", "payload": {"motion": "three_segment_deploy"}},
+        {"type": "camera", "duration": 0.20, "payload": {"motion": "bridge_axis_pan"}},
+        {"type": "shake", "duration": 0.16, "payload": {"strength": 3.0}},
+        {"type": "fx", "duration": 0.34, "payload": {"fx": "three_segments_lock"}},
+        {"type": "return_to_map", "duration": 0.16}
+      ],
+      "steps_short": [
+        {"type": "map_anim", "duration": 0.30, "asset_id": "SPR_C01E02_FIRE_BRIDGE_DEPLOYED_V01"},
+        {"type": "return_to_map", "duration": 0.10}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    },
+    {
+      "presentation_id": "BP_C01E02_FIRE_BRIDGE_REVERSE_SEG3_V01",
+      "action_id": "FIRE_REVERSE_SEG3",
+      "header": "消防架桥机 / SEG3反折承梁",
+      "subheader": "桥面退出撤离线，翻成斜撑；左前腿不换位，只把过载留在原地",
+      "footer": "第5回合 / 五人仍在馆内 / 左前腿过载",
+      "presentation_style": "irreversible_rescue_cost",
+      "steps_full": [
+        {"type": "map_anim", "duration": 0.56, "asset_id": "SPR_C01E02_FIRE_BRIDGE_DEPLOYED_V01", "payload": {"motion": "reverse_seg3"}},
+        {"type": "camera", "duration": 0.22, "payload": {"motion": "front_left_leg_hold"}},
+        {"type": "shake", "duration": 0.22, "payload": {"strength": 5.0}},
+        {"type": "freeze", "duration": 0.22},
+        {"type": "fx", "duration": 0.30, "payload": {"fx": "overload_joint_red"}},
+        {"type": "return_to_map", "duration": 0.18}
+      ],
+      "steps_short": [
+        {"type": "map_anim", "duration": 0.34, "asset_id": "SPR_C01E02_FIRE_BRIDGE_DEPLOYED_V01"},
+        {"type": "shake", "duration": 0.14, "payload": {"strength": 4.0}},
+        {"type": "return_to_map", "duration": 0.12}
+      ],
+      "steps_off": [{"type": "return_to_map", "duration": 0.0}]
+    }
+  ]
+}
