@@ -28,6 +28,8 @@ const scopes = [
   ['docs', 'settings_and_production'], ['研究报告', 'ip_reference'],
   ['captures/20261014-full-direction', 'full_art_direction'], ['grok-delivery', 'external_art_handoff'],
   ['game-godot/assets', 'game_side_assets'], ['game-godot/content', 'game_content'], ['game-godot/data', 'game_rules'],
+  ['outputs', 'early_2d_candidates_and_evidence'], ['demo/chapter1/assets', 'historical_demo_2d'],
+  ['artifacts/formulas/production-lab-v1/source', 'source_2d_design_sheets'],
 ];
 const records = [], exclusions = [], secrets = [], copiedText = [], packageMap = new Map(), nativeCopies = new Map();
 const exclude = (relative, bytes, reason, scope) => exclusions.push({ path: relative, bytes, reason, scope });
@@ -44,11 +46,20 @@ function nativeBucket(relative, scope) {
 
 function importFile(relative, scope) {
   const from = path.join(source, relative), size = fs.statSync(from).size, ext = path.extname(relative).toLowerCase();
+  if (['early_2d_candidates_and_evidence', 'historical_demo_2d'].includes(scope) && !/\.(?:png|jpe?g|webp|svg|psd|kra|ora|xcf|aseprite|ase|md)$/i.test(relative)) return exclude(relative, size, 'not_2d_art_or_design_note', scope);
+  if (scope === 'source_2d_design_sheets') {
+    const sub = relative.replace('artifacts/formulas/production-lab-v1/source/', '');
+    const parts = sub.split('/');
+    const flatDesign = parts.length === 2 || (parts.length === 3 && parts[1] === 'rejected');
+    const threeDWork = /^(?:guardian-meshy|linked-campaign-models|stage-art)/.test(parts[0]);
+    const textureOrInspection = /(?:atlas|paint|projection|inspection|inspect|runtime-|rig-|meshy|crop-contact|coordinate-review)/i.test(sub);
+    if (!flatDesign || threeDWork || textureOrInspection || !/\.(?:png|jpe?g|webp|svg|psd|kra|ora|xcf|aseprite|ase)$/i.test(relative)) return exclude(relative, size, '3d_source_or_qa_not_2d_design_sheet', scope);
+  }
   if (/(?:^|\/)(?:\.DS_Store|\.env(?:\.[^/]*)?|credentials[^/]*|[^/]*\.pem|[^/]*\.key)$/.test(relative)) return exclude(relative, size, 'private_or_machine_state', scope);
   if (['.import', '.uid', '.pyc', '.log', '.save', '.blend1', '.blend2', '.ttf', '.otf', '.woff', '.woff2'].includes(ext)) return exclude(relative, size, 'cache_autosave_log_or_bundled_font', scope);
   if (threeDFormats.has(ext)) return exclude(relative, size, '3d_asset_excluded_by_user', scope);
   if (scope === 'game_side_assets' && /\/(?:models|materials|environment|assembly|assembly-fixed[^/]*|layouts|stage_cache|tools|actions|textures|mesh|rig|blender)(?:\/|$)/.test(relative)) return exclude(relative, size, '3d_material_rig_or_model_support_excluded_by_user', scope);
-  if (/(?:[_-](?:normal(?:map)?|roughness|metallic|occlusion|base_?color|albedo|orm|diffuse|texture)(?:[_-]\d+)?|_Image_\d+)\.(?:png|jpe?g|webp)$/i.test(relative)) return exclude(relative, size, '3d_texture_map_excluded_by_user', scope);
+  if (['game_side_assets', 'source_2d_design_sheets'].includes(scope) && /(?:[_-](?:normal(?:map)?|roughness|metallic|occlusion|base_?color|albedo|orm|diffuse|texture)(?:[_-]\d+)?|_Image_\d+)\.(?:png|jpe?g|webp)$/i.test(relative)) return exclude(relative, size, '3d_texture_map_excluded_by_user', scope);
   if (relative.startsWith('game-godot/assets/formula_lab/linked_campaign_v2/terrain/')) return exclude(relative, size, '3d_terrain_material_excluded_by_user', scope);
   if (/\.(?:wav|ogg|mp3|flac|mp4|webm|ogv|mov|avi|zip|tgz|gz|tar|7z)$/.test(relative)) return exclude(relative, size, 'audio_video_or_redundant_mixed_archive_outside_2d_review', scope);
   if (/\/data\/story\/.*fixture.*\.tsv$/.test(relative)) return exclude(relative, size, 'generated_test_matrix_not_setting_source', scope);

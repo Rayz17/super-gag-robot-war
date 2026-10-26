@@ -1,6 +1,6 @@
 {
   "date": "2026-10-26",
-  "requested_scope": "complete_2d_art_and_settings_no_3d",
+  "requested_scope": "external_review_design_art_and_settings_no_uiue_no_3d",
   "three_d_included": false,
   "source_scopes": [
     {
@@ -30,38 +30,62 @@
     {
       "path": "game-godot/data",
       "scope": "game_rules"
+    },
+    {
+      "path": "outputs",
+      "scope": "early_2d_candidates_and_evidence"
+    },
+    {
+      "path": "demo/chapter1/assets",
+      "scope": "historical_demo_2d"
+    },
+    {
+      "path": "artifacts/formulas/production-lab-v1/source",
+      "scope": "source_2d_design_sheets"
     }
   ],
-  "files": 10066,
-  "git_files": 10066,
+  "files": 7531,
+  "git_files": 7531,
   "release_files": 0,
-  "bytes": 3032399117,
+  "bytes": 1905638934,
   "packages": 0,
-  "text_files": 6164,
+  "text_files": 6000,
   "by_scope": {
-    "full_art_direction": {
-      "files": 2342,
-      "git_files": 2342,
+    "source_2d_design_sheets": {
+      "files": 32,
+      "git_files": 32,
       "release_files": 0,
-      "bytes": 957462825
+      "bytes": 64654928
+    },
+    "full_art_direction": {
+      "files": 1640,
+      "git_files": 1640,
+      "release_files": 0,
+      "bytes": 772203110
+    },
+    "historical_demo_2d": {
+      "files": 7,
+      "git_files": 7,
+      "release_files": 0,
+      "bytes": 6991056
     },
     "settings_and_production": {
-      "files": 6835,
-      "git_files": 6835,
+      "files": 5503,
+      "git_files": 5503,
       "release_files": 0,
-      "bytes": 1447703407
+      "bytes": 903621019
     },
     "game_side_assets": {
-      "files": 660,
-      "git_files": 660,
+      "files": 213,
+      "git_files": 213,
       "release_files": 0,
-      "bytes": 580448631
+      "bytes": 144944438
     },
     "game_content": {
-      "files": 192,
-      "git_files": 192,
+      "files": 91,
+      "git_files": 91,
       "release_files": 0,
-      "bytes": 40741882
+      "bytes": 1702027
     },
     "game_rules": {
       "files": 3,
@@ -74,6 +98,12 @@
       "git_files": 21,
       "release_files": 0,
       "bytes": 5855341
+    },
+    "early_2d_candidates_and_evidence": {
+      "files": 8,
+      "git_files": 8,
+      "release_files": 0,
+      "bytes": 5479984
     },
     "query_utilities": {
       "files": 2,
@@ -88,8 +118,10 @@
       "bytes": 109105
     }
   },
-  "exclusion_records": 5186,
+  "exclusion_records": 10433,
   "secret_signal_files": [],
   "source_modified": false,
-  "asset_acceptance_granted": false
+  "asset_acceptance_granted": false,
+  "uiue_included": false,
+  "design_cards": 134
 }

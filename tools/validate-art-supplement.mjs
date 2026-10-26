@@ -67,7 +67,8 @@ for (const record of records) {
   }
 }
 
-let htmlImageLinks = 0;
+const excludedPaths = new Set(fs.readFileSync(path.join(root, 'review/library/EXCLUSIONS.tsv'), 'utf8').split('\n').slice(1).filter(line => line.endsWith('\toutside_external_design_art_scope_uiue_or_execution_evidence')).map(line => line.split('\t')[0]));
+let htmlImageLinks = 0, intentionallyExcludedLinks = 0;
 for (const record of records.filter(item => item.path.endsWith('.html'))) {
   const full = path.join(root, record.path), html = fs.readFileSync(full, 'utf8');
   // Only the visual-reference page promises a complete local image set.
@@ -75,7 +76,11 @@ for (const record of records.filter(item => item.path.endsWith('.html'))) {
   for (const match of html.matchAll(/<img\b[^>]*\bsrc=["']([^"']+)["'][^>]*>/gi)) {
     if (/^(?:https?:|data:)/.test(match[1])) continue;
     htmlImageLinks++;
-    if (!fs.existsSync(path.resolve(path.dirname(full), match[1]))) errors.push('visual_reference_missing_image:' + match[1]);
+    const linked = path.resolve(path.dirname(full), match[1]);
+    if (!fs.existsSync(linked)) {
+      if (excludedPaths.has(path.relative(root, linked))) intentionallyExcludedLinks++;
+      else errors.push('visual_reference_missing_image:' + match[1]);
+    }
   }
 }
 const stats = JSON.parse(fs.readFileSync(path.join(root, 'review/art/IMPORT-RESULT.json'), 'utf8'));
@@ -85,7 +90,7 @@ const images = records.filter(item => /\.(?:png|jpe?g|webp)$/i.test(item.path)).
 const vectors = records.filter(item => item.path.endsWith('.svg')).length;
 const bytes = records.reduce((sum, item) => sum + Number(item.bytes), 0);
 if (stats.files !== records.length || stats.images !== images || stats.vectors !== vectors || stats.bytes !== bytes || JSON.stringify(stats.by_status) !== JSON.stringify(byStatus)) errors.push('import_stats_mismatch');
-const result = { pass: !errors.length && !sourceDrift.length && !secretSignals.length, files: records.length, images, vectors, bytes, by_status: byStatus, visual_reference_local_image_links: htmlImageLinks, errors, secret_signal_files: secretSignals, live_source_comparison: source ? 'performed' : 'not_requested', source_drift: sourceDrift, visual_quality_acceptance: 'not_granted_by_integrity_check', runtime_acceptance: 'not_performed' };
+const result = { pass: !errors.length && !sourceDrift.length && !secretSignals.length, files: records.length, images, vectors, bytes, by_status: byStatus, original_visual_reference_image_links: htmlImageLinks, links_explicitly_excluded_by_user_scope: intentionallyExcludedLinks, errors, secret_signal_files: secretSignals, live_source_comparison: source ? 'performed' : 'not_requested', source_drift: sourceDrift, visual_quality_acceptance: 'not_granted_by_integrity_check', runtime_acceptance: 'not_performed' };
 fs.writeFileSync(path.join(root, 'review/art/VALIDATION.json'), JSON.stringify(result, null, 2) + '\n');
 console.log(JSON.stringify(result, null, 2));
 if (!result.pass) process.exitCode = 1;
