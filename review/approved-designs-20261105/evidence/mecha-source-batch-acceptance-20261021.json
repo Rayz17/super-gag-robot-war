@@ -1,0 +1,163 @@
+{
+  "revision": "mecha-source-batch-acceptance-20261021",
+  "date": "2026-10-21",
+  "authority": "direct_user_message",
+  "verbatim": "好的 这批素材过了，继续下一批",
+  "status": "source_designs_user_accepted",
+  "existing_batch": "design-followthrough-r1.json",
+  "scope": [
+    "旧拳王M02 R2当前正面、修正侧面R2b、背面，共3张",
+    "王者M05 R12当前素体三视、全装三视、红鳍双状态头部六视板，共7张"
+  ],
+  "files": [
+    {
+      "asset": "V353U048",
+      "id": "FRONT",
+      "file": "samples/M02-front-r2.png",
+      "sha256": "c6abfe0e6712107589e825cf05a9755ea373b81e1db432153d5c670a499f08aa",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "production_record": "M02-turnaround-production-r2.json",
+      "scope": "source_design",
+      "user_accepted": true
+    },
+    {
+      "asset": "V353U048",
+      "id": "SIDE",
+      "file": "samples/M02-side-r2b.png",
+      "sha256": "8704363dbde45a6746333b7950043a170d0b5b1fca34b84856d8e6720979a83b",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "production_record": "M02-turnaround-production-r2.json",
+      "scope": "source_design",
+      "user_accepted": true
+    },
+    {
+      "asset": "V353U048",
+      "id": "REAR",
+      "file": "samples/M02-rear-r2.png",
+      "sha256": "11d6c05c734c538f6fdba33faca32372d88b2221368d44f76c012d4f357e8864",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "production_record": "M02-turnaround-production-r2.json",
+      "scope": "source_design",
+      "user_accepted": true
+    },
+    {
+      "asset": "MECHA_C02_COMPLETE_KING",
+      "id": "CORE_FRONT",
+      "file": "samples/M05-core-front-r11b.png",
+      "sha256": "412c99ef81f279556f9c71fc5b2d247403e1a9310234476d24b12ada2c958334",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "production_record": "M05-turnaround-production-r12.json",
+      "scope": "source_design",
+      "user_accepted": true
+    },
+    {
+      "asset": "MECHA_C02_COMPLETE_KING",
+      "id": "CORE_SIDE",
+      "file": "samples/M05-core-side-r11.png",
+      "sha256": "8dab994e21b8d64f75d1f356e5a973294b137a68142d4f687a62f4e0b0c49964",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "production_record": "M05-turnaround-production-r12.json",
+      "scope": "source_design",
+      "user_accepted": true
+    },
+    {
+      "asset": "MECHA_C02_COMPLETE_KING",
+      "id": "CORE_REAR",
+      "file": "samples/M05-core-rear-r11.png",
+      "sha256": "d51bd87fcef90b88782f0d7306e2854822b5e7c59649845a827a00c15a2ad631",
+      "pixel_size": [
+        1024,
+        1536
+      ],
+      "production_record": "M05-turnaround-production-r12.json",
+      "scope": "source_design",
+      "user_accepted": true
+    },
+    {
+      "asset": "MECHA_C02_COMPLETE_KING",
+      "id": "FULL_FRONT",
+      "file": "samples/M05-full-front-backpack-r12.png",
+      "sha256": "57f88cd755ec20ed1cd4c3edf8722e7eb3ca62cdfb6c9760a8deeb8a220678d2",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "production_record": "M05-turnaround-production-r12.json",
+      "scope": "source_design",
+      "user_accepted": true
+    },
+    {
+      "asset": "MECHA_C02_COMPLETE_KING",
+      "id": "FULL_SIDE",
+      "file": "samples/M05-full-side-backpack-r12.png",
+      "sha256": "8820f92f94556b0a5f423bf931428b200c4be9ce507cd99bf847c8c938ef9dae",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "production_record": "M05-turnaround-production-r12.json",
+      "scope": "source_design",
+      "user_accepted": true
+    },
+    {
+      "asset": "MECHA_C02_COMPLETE_KING",
+      "id": "FULL_REAR",
+      "file": "samples/M05-full-rear-backpack-r12c.png",
+      "sha256": "8fea78f27709268825e624cb5bb0486ecb1b04e76179f949d8e241c81fbf05d2",
+      "pixel_size": [
+        1254,
+        1254
+      ],
+      "production_record": "M05-turnaround-production-r12.json",
+      "scope": "source_design",
+      "user_accepted": true
+    },
+    {
+      "asset": "MECHA_C02_COMPLETE_KING",
+      "id": "HEAD",
+      "file": "samples/M05-head-dual-turnaround-r10.png",
+      "sha256": "6293be34796bcbd6467b3f218e7ba282b7eec4324690220264b24df17ac80026",
+      "pixel_size": [
+        1536,
+        1024
+      ],
+      "production_record": "M05-turnaround-production-r12.json",
+      "scope": "source_design",
+      "user_accepted": true
+    }
+  ],
+  "prior_acceptance_preserved": [
+    "source-design-freeze-20261018.json",
+    "mecha-source-decisions-20261019-r17.json",
+    "M05-red-fin-design-fixed-and-turnaround-r10.json"
+  ],
+  "excluded": [
+    "历史否定/未选图，尤其M05 R10矮身形和后向钻头旧稿",
+    "M01 R16头部之外的旧整机稿不因本次泛称回流",
+    "同模型正交、变形机构、动作、三维、实际游戏和全项目交付"
+  ],
+  "next_batch_authorized": true,
+  "runtime_assets_replaced": false,
+  "runtime_user_accepted": false,
+  "handoff_sent": false,
+  "whole_project_completed": false,
+  "authority_registration": {
+    "M05": "CML135",
+    "M02": "CML136"
+  }
+}

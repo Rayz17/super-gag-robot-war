@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-23",
+  "revision": "aircraft-source-acceptance-r6",
+  "authority": "direct_user_message_in_this_chat",
+  "verbatim": "好的，已确定的设计可以交付给主对话，然后进行下一批",
+  "existing_batch": "design-followthrough-r1.json",
+  "scope": "当前R6雷翎/歌翼正侧背6张源设计确定，可交付主对话；不扩大为模型、完整变形、声音或运行验收。",
+  "reader": "aircraft-airframe-r6.html",
+  "files": [
+    {
+      "asset": "M08",
+      "name": "雷翎",
+      "view": "FRONT",
+      "file": "samples/M08-front-airframe-r6.png",
+      "sha256": "51b1c0a8723bc55478c9f76d0abde557f5d4d2d1678236fc98e25676ed2a4566",
+      "scope": "R6_current_source_design",
+      "source_design_fixed": true,
+      "user_accepted": true
+    },
+    {
+      "asset": "M08",
+      "name": "雷翎",
+      "view": "SIDE",
+      "file": "samples/M08-side-airframe-r6.png",
+      "sha256": "71f1d2ad8eb6940c27eb5c310fd313bde40c27cbd882a47d8b1f90efad8788d8",
+      "scope": "R6_current_source_design",
+      "source_design_fixed": true,
+      "user_accepted": true
+    },
+    {
+      "asset": "M08",
+      "name": "雷翎",
+      "view": "REAR",
+      "file": "samples/M08-rear-airframe-r6.png",
+      "sha256": "552e3e2caf35f34f7aaf95cf65e042eb9012c0e80cae04abd417183c56bc0961",
+      "scope": "R6_current_source_design",
+      "source_design_fixed": true,
+      "user_accepted": true
+    },
+    {
+      "asset": "M14",
+      "name": "歌翼",
+      "view": "FRONT",
+      "file": "samples/M14-front-airframe-r6.png",
+      "sha256": "4464ffa6fc330864a8b5245c9515f1ed320ce938c1d0befc39c6882664f6d540",
+      "scope": "R6_current_source_design",
+      "source_design_fixed": true,
+      "user_accepted": true
+    },
+    {
+      "asset": "M14",
+      "name": "歌翼",
+      "view": "SIDE",
+      "file": "samples/M14-side-airframe-r6.png",
+      "sha256": "c40ba2531149a34f2b48b0278387717ac71ff2ad5496c64ba3abb91e5f47af13",
+      "scope": "R6_current_source_design",
+      "source_design_fixed": true,
+      "user_accepted": true
+    },
+    {
+      "asset": "M14",
+      "name": "歌翼",
+      "view": "REAR",
+      "file": "samples/M14-rear-airframe-r6.png",
+      "sha256": "587c0313fd0833bdf1818f9ec1a07d873579090b681f56470bced53640265a42",
+      "scope": "R6_current_source_design",
+      "source_design_fixed": true,
+      "user_accepted": true
+    }
+  ],
+  "authority_registration": {
+    "M08": "CML141",
+    "M14": "CML142"
+  },
+  "prior_source_identity_preserved": [
+    "CML132",
+    "CML133",
+    "CML135",
+    "CML136",
+    "CML139",
+    "CML140"
+  ],
+  "excluded_history": [
+    "M08_R4_stocky_proportions",
+    "M08_R5_overthin_proportions",
+    "R6_failed_three_quarter_side_attempt"
+  ],
+  "handoff_authorized": true,
+  "next_batch_authorized": true,
+  "runtime_user_accepted": false,
+  "full_transformation_verified": false,
+  "dispatch_record": "交接发送记录-20261016.json"
+}

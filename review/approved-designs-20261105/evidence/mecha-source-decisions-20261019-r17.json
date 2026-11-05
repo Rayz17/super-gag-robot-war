@@ -1,0 +1,38 @@
+{
+  "id": "MECHA_SOURCE_DECISIONS_20261019_R17",
+  "date": "2026-10-19",
+  "authority": "direct_user_message_in_this_chat",
+  "verbatim": "这个我觉得可以了。全装王者的风格是否需要调整一下跟无牌更适配。旧拳王我觉得问题也不大。",
+  "existing_batch": "design-followthrough-r1.json",
+  "M01": {
+    "source": "samples/M01-head-proportion-r16.png",
+    "sha256": "d8ecc8461fa9a1685b6b07ccfc9696970a2efb4eec9642c63bd7969c3e4c6e61",
+    "production_record": "M01-head-proportion-production-r16.json",
+    "head_source_design_accepted": true,
+    "scope": "当前R16头部源设计固定；低额块、侧后双天线、正常纵向头壳体积及视窗面甲/色系。",
+    "excludes": [
+      "R13颈下与新头合回后的整机比例",
+      "新正侧背与隐面",
+      "模型/绑定/动作/正常战棋镜头/运行"
+    ]
+  },
+  "M02": {
+    "source": "samples/M02-old-boxer-master-r1.png",
+    "sha256": "a21227cbddf4541cfc39dbfc00faace8e93dd4433a61f6181414d516d8eed7e3",
+    "production_record": "M02-master-production-r1.json",
+    "verbatim": "旧拳王我觉得问题也不大。",
+    "source_direction_usable_to_continue": true,
+    "redesign_required": false,
+    "whole_model_or_runtime_accepted": false,
+    "scope": "沿当前旧拳王源图方向继续，不重新发散造型；单张透视不当作精确三视尺寸。"
+  },
+  "M05": {
+    "requested_assessment": "是否需要小幅统一画风以适配当前无牌",
+    "author_action": "保持原配色、身份、厚重全装与武器，只制作一张绘制语言统一样例。",
+    "new_sample_user_accepted": false
+  },
+  "frozen_source_batch_unchanged": 29,
+  "guardian_reuse_existing": true,
+  "runtime_changed": false,
+  "handoff_sent": false
+}
