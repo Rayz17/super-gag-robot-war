@@ -1,0 +1,771 @@
+{
+  "schema": "wanji-v2-carried-proposal-jobs/1",
+  "date": "2026-11-15",
+  "created_at_utc": "2026-11-15T11:53:31.070747+00:00",
+  "scope": "仅收录V2沿用的13张人物、装置和相关舰船提案；不收录第一轮被否决的合体/巨构机体生成记录。",
+  "approval_status": "延续本轮提案，不代表用户批准；仓库已采用图仅在原记录refs/references中作为身份与风格来源。",
+  "count": 13,
+  "included_ids": [
+    "01_soulin",
+    "27_T",
+    "28_calibration_ship",
+    "29_memory_props",
+    "30_zhaomei_workshop",
+    "31_cassian_state",
+    "32a_interfaces",
+    "32b_shenzuo_control",
+    "33_yandu_ship",
+    "34_civil_workers",
+    "35_han_sua",
+    "36_em5_crew",
+    "37_fivebeasts_crew"
+  ],
+  "provenance_policy": [
+    "original_generation_record完整复制指定V1记录，保留原提示词、参考路径、输出路径、QA及必要修订字段。",
+    "当前成品以v2_image_path为准；原记录中的绝对工作路径仅用于追溯。",
+    "35_han_sua保留首次提示和必要的解剖修正提示；交付PNG只有修正后的最终图。",
+    "未复制任何被否决的V1机体图、V1整体被拒方案或中间PNG。"
+  ],
+  "verification": {
+    "method": "对V2当前PNG、V1最终PNG、记录所指最终生成源PNG分别计算SHA-256并比较",
+    "matched": 13,
+    "mismatched": 0,
+    "issues": []
+  },
+  "jobs": [
+    {
+      "id": "01_soulin",
+      "v2_image_path": "images/01_soulin.png",
+      "carry_forward_status": "V1本轮提案在V2延续；非作者批准，也不自动成为仓库已采用资产",
+      "original_record_locator": {
+        "source_json": "deliverables/wanji_redesign_20261115/specs/root_image_jobs.json",
+        "source_json_sha256": "cccd506d4ece64ddfbd1575d44e1d412eb29468f5d65846d85be60d48fe50eb7",
+        "json_pointer": "/0",
+        "canonical_record_sha256": "db0576b4c5bebc8484d9ba816fa8e7447ba2a8e5e8b4806d2125ee00fe08dab2"
+      },
+      "original_generation_record": {
+        "id": "01_soulin",
+        "refs": [
+          "/workspace/scratch/3906e3a3b3d1/research/selected/H-Soulin-C.png",
+          "/workspace/scratch/3906e3a3b3d1/research/selected/H01-A.png"
+        ],
+        "prompt": "Use case: stylized-concept. Create a finished production character redesign sheet for Soulin, the adult female former machine-soul in 万机残响. Image 1 is her existing identity and costume color reference, Image 2 is Jicun, the male age/style comparison only. Redesign ONLY Soulin. She must look like a young adult woman just a few years older than the man in image 2, perceptually late twenties, assured powerful leader, intelligent and charismatic; not middle-aged, not a schoolgirl, no cute idol face. Preserve brown hair, warm light complexion, narrow confident amber-brown eyes, identifiable dark plum-charcoal fitted jacket, black inner shirt, ivory and muted teal costume language. Reduce the mature coiled-bun effect: swept side part with a compact low tied twist and short loose angular strands, a clean young cheek/jaw without smile creases or deep eye shadows. Upright relaxed shoulders, strong unhurried stance, gaze that can command a room without frowning. Costume: clean sharp short-waisted jacket with elbow-length rolled sleeves, high-waisted straight ivory trousers, a single asymmetrical ivory outer panel reaching the knee with one teal stripe; practical dark low boots. Keep the round archival film case as one removable personal accessory rather than random bags. A small curved healed scar inside her RIGHT elbow, continuing slightly up the inner arm, visible in a separate natural arm close-up; she is otherwise outwardly fully human, no robot face or metal limbs. Composition a spacious landscape reference board: large three-quarter full-body at left occupying half; consistent rear full-body at center-right, two expressive head studies at upper right (composed authority, very small private smile), small scar detail lower right. This is ONE coherent selected design, not alternatives. Same face, outfit, body proportions across all views. Art: match references' drawn Japanese animation model-sheet language, pressure-varied dark navy ink, crisp controlled cel shading max two shadow values, broad matte colors and sparse purposeful mechanical/cloth detail. No photorealism, no CGI, no game gacha glow. Plain light warm-gray background, subtle grounding only. No typography, letters, numbers, captions, fake logos, borders or watermark; typesetting will be added separately. All figures fully inside canvas, feet visible, anatomically coherent hands.",
+        "path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_20261115/images/01_soulin.png",
+        "sourceGeneratedPath": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-8dfbb7d4-e8a7-4bda-8dbf-2788220b3fb7.png",
+        "status": "concept_v1"
+      },
+      "effective_final_generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-8dfbb7d4-e8a7-4bda-8dbf-2788220b3fb7.png",
+      "necessary_revisions": [],
+      "final_review_context": {
+        "qa": "已查看正背、脸与疤痕；年轻外观、领袖站姿和旧衣装色系保留。疤痕右侧为提案。",
+        "design_status": "本轮设计提案，未替换已采用资产",
+        "status": "concept_v1",
+        "source_file": "deliverables/wanji_redesign_20261115/specs/root_image_jobs_consolidated.json"
+      },
+      "current_file_verification": {
+        "v2_final_sha256": "08030238e60073f1a5f84c8b66a0901270abbb2edae4acb80168dfc6df2ace52",
+        "v1_final_sha256": "08030238e60073f1a5f84c8b66a0901270abbb2edae4acb80168dfc6df2ace52",
+        "recorded_final_source_sha256": "08030238e60073f1a5f84c8b66a0901270abbb2edae4acb80168dfc6df2ace52",
+        "v2_matches_v1_final": true,
+        "v2_matches_recorded_final_source": true,
+        "all_files_present": true,
+        "status": "match",
+        "width_height": [
+          1536,
+          1024
+        ],
+        "file_size_bytes": 1833575
+      }
+    },
+    {
+      "id": "27_T",
+      "v2_image_path": "images/27_T.png",
+      "carry_forward_status": "V1本轮提案在V2延续；非作者批准，也不自动成为仓库已采用资产",
+      "original_record_locator": {
+        "source_json": "deliverables/wanji_redesign_20261115/specs/story_image_jobs.json",
+        "source_json_sha256": "ce46283568f52f7dc02d476878cd35ffeceb95296f6943cf2b4ba97d80f9f962",
+        "json_pointer": "/2",
+        "canonical_record_sha256": "a4990d2b1e8bb4458a504482aeb1a9009d8ea2afdd6f9feab598152135a175c3"
+      },
+      "original_generation_record": {
+        "id": "27_T",
+        "refs": [
+          "/workspace/scratch/3906e3a3b3d1/research/selected/M-ChenZhongBox-B.png",
+          "/workspace/scratch/3906e3a3b3d1/research/selected/M-Talo-B.png"
+        ],
+        "prompt": "Production-quality Japanese anime mechanical concept model-sheet for 万机残响, KINETIC_CEL: varied-weight deep ink-navy linework, two crisp hard shadow tones, large deliberate color blocks, restrained muted ivory / deep slate blue / amber-orange. Hand drawn 2D cel art, clean confident silhouette, no PBR, no photoreal rendering, no airbrush gradients, no neon, no random greeble. Warm off-white clean background, no text, no numbers, no letters, no logos or watermark anywhere. Multiple views are of the same design. This is conceptual art, not an exact technical schematic.\nPrimary request: design T, a physically small independent archival AI in her late-story small astronaut body and maintenance seat. Input images are style / materials references ONLY, do not copy the tall radar robot or plant terrarium. T is not the folding spacecraft probe, not a cute robot pet, not a hologram woman, not a fighter. Her identity is preserving raw audio, noticing the difference between processed files, and having to sacrifice irreplaceable personal memory to make storage available.\nWide model sheet: large left three-quarter view of T working independently in a compact maintenance cradle; center same body seen from rear three-quarter; right a separated docking work cabinet with removable memory cartridges and high-speed sockets; below two close details of an articulated observation head and external connector placement with cable slack. These are compatible elements of one design, not three alternatives. T's small astronaut shell is squat but adult and purposeful: oblique rectangular dark observation visor instead of eyes, narrow copper-colored protective brow, short cylindrical pressure torso with an off-center triangular ivory service cover, a pair of dexterous small working manipulators, lower body seated in a gimballed maintenance cradle with small folded footrests. Her shell has clean visible seams from two past modifications, not rust. A removable slate-blue heat-exchanger pack on the back. No breasts, no skirt, no humanoid face. The head can turn toward a doorway without its own cable snagging; sockets are to one side, recessed below swivel clearance; a loose but supported cable loop clearly connects to docking cabinet. The cabinet is proposed dock hardware, not a second character: same triangular service-cover design, ordinary matte blank removable cassettes, small mechanical write-protect latches and physical cable ports. The maintenance seat and shell look liftable by an adult technician, not giant. Emphasize independent access and a memorable triangular off-center silhouette, elegant readable construction, minimal tiny technical details. No satellites, no starship wings, no weapons.",
+        "source_path": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-31dfb98e-e240-4046-a31a-f6cf8f82a990.png",
+        "output_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_20261115/images/27_T.png",
+        "qa": {
+          "status": "pass_concept",
+          "method": "visual review of actual generated output",
+          "findings": [
+            "小型宇航外壳、维护座、观察转角、侧接线与工作柜均可辨，非折叠探测器；图中无字；相同三角维护盖贯穿部件。",
+            "左右两个人体是同一T正背视图，线缆跨设定板的画法不能当同一现场双T；工作柜属本轮配套提案，非原文已指定形状。"
+          ]
+        }
+      },
+      "effective_final_generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-31dfb98e-e240-4046-a31a-f6cf8f82a990.png",
+      "necessary_revisions": [],
+      "final_review_context": {
+        "qa": {
+          "status": "pass_concept",
+          "method": "visual review of actual generated output",
+          "findings": [
+            "小型宇航外壳、维护座、观察转角、侧接线与工作柜均可辨，非折叠探测器；图中无字；相同三角维护盖贯穿部件。",
+            "左右两个人体是同一T正背视图，线缆跨设定板的画法不能当同一现场双T；工作柜属本轮配套提案，非原文已指定形状。"
+          ]
+        }
+      },
+      "current_file_verification": {
+        "v2_final_sha256": "6d8c179092e7379250cc08946a2f19b506f8fdd0a4ad593dfbd2336deddbbf79",
+        "v1_final_sha256": "6d8c179092e7379250cc08946a2f19b506f8fdd0a4ad593dfbd2336deddbbf79",
+        "recorded_final_source_sha256": "6d8c179092e7379250cc08946a2f19b506f8fdd0a4ad593dfbd2336deddbbf79",
+        "v2_matches_v1_final": true,
+        "v2_matches_recorded_final_source": true,
+        "all_files_present": true,
+        "status": "match",
+        "width_height": [
+          1536,
+          1024
+        ],
+        "file_size_bytes": 2097475
+      }
+    },
+    {
+      "id": "28_calibration_ship",
+      "v2_image_path": "images/28_calibration_ship.png",
+      "carry_forward_status": "V1本轮提案在V2延续；非作者批准，也不自动成为仓库已采用资产",
+      "original_record_locator": {
+        "source_json": "deliverables/wanji_redesign_20261115/specs/story_image_jobs.json",
+        "source_json_sha256": "ce46283568f52f7dc02d476878cd35ffeceb95296f6943cf2b4ba97d80f9f962",
+        "json_pointer": "/3",
+        "canonical_record_sha256": "b1a3696d3aead7be4cc1882156751ca2b6d8c5f7f774a2cbf8d94b060774504d"
+      },
+      "original_generation_record": {
+        "id": "28_calibration_ship",
+        "refs": [
+          "/workspace/scratch/3906e3a3b3d1/research/selected/S-Wanji-C.png"
+        ],
+        "prompt": "Production-quality Japanese anime mechanical concept model-sheet for 万机残响, KINETIC_CEL: varied-weight deep ink-navy linework, two crisp hard shadow tones, large deliberate color blocks, restrained muted ivory / deep slate blue / amber-orange. Hand drawn 2D cel art, clean confident silhouette, no PBR, no photoreal rendering, no airbrush gradients, no neon, no random greeble. Warm off-white clean background, no text, no numbers, no letters, no logos or watermark anywhere. Multiple views are of the same design. This is conceptual art, not an exact technical schematic.\nPrimary request: a newly designed CALIBRATION MANUFACTURING SHIP, an industrial ship whose prize is its capacity to make and calibrate new bodies for machine-souls. Input ship is the world's style and palette reference ONLY; do not copy the museum ship silhouette or dome. No prior approved hull exists for this target; deliver an original proposal.\nWide concept board with one large elevated three-quarter exterior across the left and center; upper-right matching rear view of the same hull; lower-right cutaway service bay detail. Iconic long open U-shaped factory hull: two substantial flanking hull rails around a long sheltered assembly slip, a thick offset dorsal spine linking two asymmetric gantry portals; front entrance completely open, no gigantic cannon. Ivory large industrial shells, deep navy-blue structural rails, controlled amber hazard edges and big hinge grips, very few readable panels. Four compact shielded propulsion pods firmly attached outboard to the rear load-bearing rails, no fantasy wings. The midship gantry holds an unoccupied blank humanoid work-body around the torso in a calibration jig, clearly smaller than the ship. One empty receiving cradle and one finished plain body bay create a logical front-to-back manufacturing flow. The blank bodies are uninhabited manufactured shells with dark non-glowing visors, not imprisoned living people. Side docking pockets accept maintenance boxes and human workers through a protected corridor. Include tiny neutral scale silhouettes on a service walkway so the industrial size reads, no exact printed dimensions. The bay inset shows an ordinary calibration ring around a replaceable arm, alignment clamps, service access for a technician, and uninterrupted floor route for a trolley; not a medical torture scene. Keep the ship a compelling collectible industrial spacecraft with a strong horseshoe-and-two-portal silhouette. It should resemble a factory and body workshop, never an armed battleship. Same hull geometry and color placement in both full views, no extra pods appearing between views.",
+        "source_path": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-3dc83dc6-3f80-4445-af8a-0921e2b47041.png",
+        "output_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_20261115/images/28_calibration_ship.png",
+        "qa": {
+          "status": "pass_concept",
+          "method": "visual review of actual generated output",
+          "findings": [
+            "U型双轨船壳、两座校准门架、操作甲板/工人尺度、未入核空壳与校准臂剖面清晰，工厂辨识强，无战舰大炮。",
+            "侧面4推进舱在透视存在遮挡，最终造船模型须做俯视四点核对；长度/具体产线工艺均是新提案，未伪称原文尺寸。"
+          ]
+        }
+      },
+      "effective_final_generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-3dc83dc6-3f80-4445-af8a-0921e2b47041.png",
+      "necessary_revisions": [],
+      "final_review_context": {
+        "qa": {
+          "status": "pass_concept",
+          "method": "visual review of actual generated output",
+          "findings": [
+            "U型双轨船壳、两座校准门架、操作甲板/工人尺度、未入核空壳与校准臂剖面清晰，工厂辨识强，无战舰大炮。",
+            "侧面4推进舱在透视存在遮挡，最终造船模型须做俯视四点核对；长度/具体产线工艺均是新提案，未伪称原文尺寸。"
+          ]
+        }
+      },
+      "current_file_verification": {
+        "v2_final_sha256": "3a210e22bacbded9fb9489a339869f84581af1b2b5f042ea703c982e28f7a92f",
+        "v1_final_sha256": "3a210e22bacbded9fb9489a339869f84581af1b2b5f042ea703c982e28f7a92f",
+        "recorded_final_source_sha256": "3a210e22bacbded9fb9489a339869f84581af1b2b5f042ea703c982e28f7a92f",
+        "v2_matches_v1_final": true,
+        "v2_matches_recorded_final_source": true,
+        "all_files_present": true,
+        "status": "match",
+        "width_height": [
+          1536,
+          1024
+        ],
+        "file_size_bytes": 2439164
+      }
+    },
+    {
+      "id": "29_memory_props",
+      "v2_image_path": "images/29_memory_props.png",
+      "carry_forward_status": "V1本轮提案在V2延续；非作者批准，也不自动成为仓库已采用资产",
+      "original_record_locator": {
+        "source_json": "deliverables/wanji_redesign_20261115/specs/story_image_jobs.json",
+        "source_json_sha256": "ce46283568f52f7dc02d476878cd35ffeceb95296f6943cf2b4ba97d80f9f962",
+        "json_pointer": "/4",
+        "canonical_record_sha256": "d05f00600bd0565966b86c6a07bf2bf17991b2713f205c08522e57d06c9a350d"
+      },
+      "original_generation_record": {
+        "id": "29_memory_props",
+        "refs": [
+          "/workspace/scratch/3906e3a3b3d1/research/selected/M-Talo-B.png"
+        ],
+        "prompt": "Production Japanese anime concept board for 万机残响, KINETIC_CEL style: strong varied-weight deep ink-navy line art, two crisp hard shadow tones, large muted clean color areas, no PBR, no photographic rendering, no soft airbrush shading, no neon, no noisy detail. Warm off-white paper background, clear visual hierarchy. No words, letters, numerals, logos, pseudo-text or watermark anywhere.\nPrimary request: a carefully separated three-family design board of story memory-related assets. The supplied TALO image is the adopted identity target: preserve its large low tracked white-and-slate habitat cabinet, orange handles, small observation pod, clear terrarium with living plants, storage openings and wheeled base. Do not turn it into a new humanoid or monster. There is a partial second plant unit at far right of reference; ignore it. Remove the reference letter B.\nLandscape board arranged in three distinct unlabelled zones separated by open space. LEFT about half width: Talo current maintenance state, exact terrarium cabinet identity, shown three-quarter. Mechanical manipulator arms are folded and immobilized; ONLY ONE small mechanical finger can extend to touch a real old wooden cupboard-door fragment placed beside its low seat. That old door fragment has tactile gouges and a cup ring, a small marked cup sits on the reachable ledge. Retain little living plants and a clear view to the observation pod. In a small independent rectangular inset above Talo, show an eerie recalled view: black cold sea, impossibly fine far towers and the edge of a stone window beneath a sparse wrong star pattern. It is a memory image, not an actual portal in the room, no physical human hands grafted to Talo.\nUPPER RIGHT zone: an ordinary greasy palm-sized calibration cassette case, closed three-quarter and opened beside it as two views of the same object. Matte slate casing, ivory latch guards, one amber thumb release, two keyed plug sockets, oil stains at corners and a removable blank recording tile inside. Mechanical local-data object, not glowing magical artifact. NO keyboard or floating holograms.\nLOWER RIGHT zone: an archive viewing window, a separate modest physical desktop instrument: thick ivory rectangular light-shield hood over a dark small screen, fold-flat shade, a single tactile rotary control, physical keyed cassette input and a plain status lamp. One faint still image of a doorway visible behind the glass, no scrolling letters, no energy vortex. Small side inset shows the very same hood folded shut, same hinges and ports. All three families are distinct in size and use. Preserve Talo's unusual plant-ecosystem cabinet and fragile embodied memory; keep the smaller props mundane and hands-on. This is visual development, no claims of exact technical wiring.",
+        "source_path": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-efd5286b-63d4-4aab-ae7d-a20565c85756.png",
+        "output_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_20261115/images/29_memory_props.png",
+        "qa": {
+          "status": "pass_concept_with_noted_detail",
+          "method": "visual review of actual generated output",
+          "findings": [
+            "塔洛生态箱母稿、折叠失能侧臂与单指触柜门、植物/杯保留，错误星空是独立记忆小窗；未画实体异界传送门。",
+            "校正匣和档案窗是两种独立普通器具；同物开闭视图基本一致；局部接头与体积属本轮设计提案。"
+          ]
+        }
+      },
+      "effective_final_generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-efd5286b-63d4-4aab-ae7d-a20565c85756.png",
+      "necessary_revisions": [],
+      "final_review_context": {
+        "qa": {
+          "status": "pass_concept_with_noted_detail",
+          "method": "visual review of actual generated output",
+          "findings": [
+            "塔洛生态箱母稿、折叠失能侧臂与单指触柜门、植物/杯保留，错误星空是独立记忆小窗；未画实体异界传送门。",
+            "校正匣和档案窗是两种独立普通器具；同物开闭视图基本一致；局部接头与体积属本轮设计提案。"
+          ]
+        }
+      },
+      "current_file_verification": {
+        "v2_final_sha256": "eb4d57358cea0eea0c53a7997e20cf968bb2e8c5888e3f55823e78dea08e1931",
+        "v1_final_sha256": "eb4d57358cea0eea0c53a7997e20cf968bb2e8c5888e3f55823e78dea08e1931",
+        "recorded_final_source_sha256": "eb4d57358cea0eea0c53a7997e20cf968bb2e8c5888e3f55823e78dea08e1931",
+        "v2_matches_v1_final": true,
+        "v2_matches_recorded_final_source": true,
+        "all_files_present": true,
+        "status": "match",
+        "width_height": [
+          1536,
+          1024
+        ],
+        "file_size_bytes": 2136425
+      }
+    },
+    {
+      "id": "30_zhaomei_workshop",
+      "v2_image_path": "images/30_zhaomei_workshop.png",
+      "carry_forward_status": "V1本轮提案在V2延续；非作者批准，也不自动成为仓库已采用资产",
+      "original_record_locator": {
+        "source_json": "deliverables/wanji_redesign_20261115/specs/story_image_jobs.json",
+        "source_json_sha256": "ce46283568f52f7dc02d476878cd35ffeceb95296f6943cf2b4ba97d80f9f962",
+        "json_pointer": "/5",
+        "canonical_record_sha256": "ad60385e787ff538746c770c8e5c5ed739ad60a1c242105d978cf863ac16db8d"
+      },
+      "original_generation_record": {
+        "id": "30_zhaomei_workshop",
+        "refs": [
+          "/workspace/scratch/3906e3a3b3d1/research/repo/docs/superpowers/specs/work-packages/2026-10-02-chao-gag-linked-operation-candidate/外援美术制作清单-20261012/current/H08-zhaomei.png",
+          "/workspace/scratch/3906e3a3b3d1/research/selected/H01-A.png"
+        ],
+        "prompt": "Production Japanese anime concept board for 万机残响, KINETIC_CEL style: strong varied-weight deep ink-navy line art, two crisp hard shadow tones, large muted clean color areas, no PBR, no photographic rendering, no soft airbrush shading, no neon, no noisy detail. Warm off-white paper background, clear visual hierarchy. No words, letters, numerals, logos, pseudo-text or watermark anywhere.\nPrimary request: preserve and complete ZHAO MEI, the human workshop proprietor and mother of model-maker Niuniu, with her son's left-behind HALF-HUMAN-HEIGHT headless articulated prototype model and old shoulder parts. Image 1 is identity reference and edit target: keep the same mature woman's face, quiet firm eyes, grey-streaked dark hair tied in a low bun, brick-red utility vest, ivory rolled-sleeve work shirt, navy cargo trousers, old dark ledger and green pencil. Do not rejuvenate her into a different woman or make her an elderly caricature. Image 2 is only the project cel-line style and practical full-body clothing rendering reference, not a male identity to copy.\nWide character-and-workshop model sheet. Left: large full-body three-quarter Zhaomei standing in sturdy dark worn ankle work shoes, with weight on one leg, ledger tucked under forearm and a small shaft bearing held in the other hand; correct human anatomy, calm businesslike expression. Center top: modest same-person rear-three-quarter crop showing her tied hair, vest pockets and belt; center bottom: close details of the old ledger, a component shaft with a hairline crack, and a scuffed repaired shoulder joint. No legible ledger text.\nRight: the physical workshop workbench with Niuniu's roughly half-human-height HEADLESS mechanical action prototype standing in a padded simple fixture. It is plainly an unfinished hobby/engineering model, never Niuniu's body. A clear EMPTY neck mounting socket with no robot head, exposed waist rotation seat and uneven left/right limb construction, a thick left leg and strong right fist recalling the giant unlicensed fighter's lineage but not a scale-copy toy. Ivory and grey unpainted plastic and metal with a modest blank old workshop-code plate. A detached old shoulder unit and small spacers on the bench. A normal human-size measuring ruler can be blank ticks only, no readable digits. The model stands below Zhaomei's waist, scale must be obvious. No young boy portrait, no ghost child, no depiction of a death that the text does not establish. Composition foregrounds a capable working woman and the craft evidence she keeps. Keep the exact same hair, face and clothing in the back view; do not add variant costumes.",
+        "source_path": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-055f13de-a14e-439a-9cca-e1fa26c8e477.png",
+        "output_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_20261115/images/30_zhaomei_workshop.png",
+        "qa": {
+          "status": "pass_concept_with_noted_detail",
+          "method": "visual review of actual generated output",
+          "findings": [
+            "赵梅脸/灰发低髻/砖红马甲/白卷袖/蓝工装/账本沿H08，已补完整鞋靴与背面；无头模型、旧肩、轴件清楚。",
+            "模型大拳和粗腿落在同一画面侧，不能直接作为无牌一号左右结构母稿；本图仅定牛牛无头试作物证，后续精确制作需按无牌左腿右拳规范调整。"
+          ]
+        }
+      },
+      "effective_final_generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-055f13de-a14e-439a-9cca-e1fa26c8e477.png",
+      "necessary_revisions": [],
+      "final_review_context": {
+        "qa": {
+          "status": "pass_concept_with_noted_detail",
+          "method": "visual review of actual generated output",
+          "findings": [
+            "赵梅脸/灰发低髻/砖红马甲/白卷袖/蓝工装/账本沿H08，已补完整鞋靴与背面；无头模型、旧肩、轴件清楚。",
+            "模型大拳和粗腿落在同一画面侧，不能直接作为无牌一号左右结构母稿；本图仅定牛牛无头试作物证，后续精确制作需按无牌左腿右拳规范调整。"
+          ]
+        }
+      },
+      "current_file_verification": {
+        "v2_final_sha256": "7d7febad2806c635fd776c47686ca1de2ffc1801d15e7bf50e3fe8c03378dd73",
+        "v1_final_sha256": "7d7febad2806c635fd776c47686ca1de2ffc1801d15e7bf50e3fe8c03378dd73",
+        "recorded_final_source_sha256": "7d7febad2806c635fd776c47686ca1de2ffc1801d15e7bf50e3fe8c03378dd73",
+        "v2_matches_v1_final": true,
+        "v2_matches_recorded_final_source": true,
+        "all_files_present": true,
+        "status": "match",
+        "width_height": [
+          1536,
+          1024
+        ],
+        "file_size_bytes": 2395653
+      }
+    },
+    {
+      "id": "31_cassian_state",
+      "v2_image_path": "images/31_cassian_state.png",
+      "carry_forward_status": "V1本轮提案在V2延续；非作者批准，也不自动成为仓库已采用资产",
+      "original_record_locator": {
+        "source_json": "deliverables/wanji_redesign_20261115/specs/story_image_jobs.json",
+        "source_json_sha256": "ce46283568f52f7dc02d476878cd35ffeceb95296f6943cf2b4ba97d80f9f962",
+        "json_pointer": "/6",
+        "canonical_record_sha256": "0e1efbdd8c04be0b4c8e120d03d59f7b18ec937f232766d1061cfe1c2dfa7bb5"
+      },
+      "original_generation_record": {
+        "id": "31_cassian_state",
+        "refs": [
+          "/workspace/scratch/3906e3a3b3d1/research/selected/H-Cassian-A.png"
+        ],
+        "prompt": "Production Japanese anime character model sheet for 万机残响 in KINETIC_CEL style: variable-weight deep ink-navy linework, two crisp hard shadow tones, large restrained color blocks, clean coherent human anatomy, no PBR, no photographic rendering, no airbrush, no neon or excessive texture. Warm off-white background, no text, letters, numerals, logos, watermark or pseudo writing anywhere. The same person across every view, not design alternatives.\nUse case: identity-preserve and precise-object-edit. The supplied adopted Cassian image is the exact identity reference. Keep his exact masculine face, grey-at-temple short dark hair, heavy brow, angular cheek/jaw, expression, black neck scarf, grey long coat, dark trousers, boots and lowered rifle. Do not redesign his face, age, outfit silhouette, or turn him into a giant robot. Human scale artificial person, independent of the separate twenty-metre silver hunter.\nLandscape state sheet. Main view on left: full-body three-quarter Cassian, intact face, same coat and attitude, rifle safely lowered. Only modify a modest torn mechanical-damage patch in the upper chest coat, exposing rigid metal rib bracing, dark structural cables and a cracked synthetic inner chest panel; no organic gore, no blood. The damaged garment otherwise has the same original silhouette. On upper-right show a large bust close-up of THE SAME face and coat, the cloth opened enough around HIS ANATOMICAL RIGHT SHOULDER (viewer LEFT in this near-frontal view) to reveal a recessed practical heat conduit with copper ribbed sheath and heat discoloration but no flames. Keep the normal human-looking neck/face largely intact; do not add glowing eyes or a new skull. On lower-right show two clean detail insets: intact grey chest lapel versus the same lapel with the mechanical internal damage; and the right-shoulder pipe passing under the collar with believable service clearance. Mechanical internals are restrained and functional, never a huge chrome ribcage sticking out. The goal is existing same human-looking identity with story-accurate damage states, not a superhero transformation. All shoulder heat-pipe depictions must be on his right side; no mirroring.",
+        "source_path": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-c7f946b9-e02d-4948-818c-f25bd81751a3.png",
+        "output_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_20261115/images/31_cassian_state.png",
+        "qa": {
+          "status": "pass_concept",
+          "method": "visual review of actual generated output",
+          "findings": [
+            "已选H-Cassian脸、发、灰长外套、人体尺度与低持枪保持；胸破为金属骨架，无生物血肉；右肩热管为人物本人的右侧。",
+            "未与20米银色猎机合并；全身图与特写分别代表不同损伤观察状态，形貌一致。"
+          ]
+        }
+      },
+      "effective_final_generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-c7f946b9-e02d-4948-818c-f25bd81751a3.png",
+      "necessary_revisions": [],
+      "final_review_context": {
+        "qa": {
+          "status": "pass_concept",
+          "method": "visual review of actual generated output",
+          "findings": [
+            "已选H-Cassian脸、发、灰长外套、人体尺度与低持枪保持；胸破为金属骨架，无生物血肉；右肩热管为人物本人的右侧。",
+            "未与20米银色猎机合并；全身图与特写分别代表不同损伤观察状态，形貌一致。"
+          ]
+        }
+      },
+      "current_file_verification": {
+        "v2_final_sha256": "f4370ed06c23cd51855bd763df96968f136b963290c5d5b17dfcc45deb005996",
+        "v1_final_sha256": "f4370ed06c23cd51855bd763df96968f136b963290c5d5b17dfcc45deb005996",
+        "recorded_final_source_sha256": "f4370ed06c23cd51855bd763df96968f136b963290c5d5b17dfcc45deb005996",
+        "v2_matches_v1_final": true,
+        "v2_matches_recorded_final_source": true,
+        "all_files_present": true,
+        "status": "match",
+        "width_height": [
+          1536,
+          1024
+        ],
+        "file_size_bytes": 1777839
+      }
+    },
+    {
+      "id": "32a_interfaces",
+      "v2_image_path": "images/32a_interfaces.png",
+      "carry_forward_status": "V1本轮提案在V2延续；非作者批准，也不自动成为仓库已采用资产",
+      "original_record_locator": {
+        "source_json": "deliverables/wanji_redesign_20261115/specs/root_image_jobs_batch4.json",
+        "source_json_sha256": "ce2945779c73f45332b4aadeed32c4a682da0b3013bf0a9230d0e53b580d4f3d",
+        "json_pointer": "/1",
+        "canonical_record_sha256": "87cdccca7a56b07aa4103e7789bf78948508d89904c2fa328fb5a68b0c485325"
+      },
+      "original_generation_record": {
+        "id": "32a_interfaces",
+        "refs": [
+          "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_20261115/images/23_wanji_fleet_components.png",
+          "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_20261115/images/07_guardian_z_back.png"
+        ],
+        "prompt": "Draw a clear three-subject industrial prop concept sheet for 万机残响, matching civic navy/ivory/ochre mechanical design in reference1 and Guardian Z identity in reference2. This is an illustration of tangible designed objects, NOT a precise engineering diagram, no arrows or measured dimensions. LEFT HALF: the giant coupling called flower clasp: a broad structural docking joint with SIX ochre petal-shaped external levers arranged around a navy steel collar, but actual load carried by FOUR visible dark steel shear keys and two large flanges. Show the SAME closed coupling above and a second instance open below with its two replaceable half-collars separated a short distance; one small detached fractured half shell sits beside the open joint, replacement matching half nearby. Six petals must stay consistent, no ornamental flower, no gemstone. UPPER RIGHT: an EMPTY body-maintenance rack, adult human-scale equipment relative only to itself: upright ivory/navy skeletal frame with adjustable chest and pelvis supports, disconnected protected power/data couplings, broad stable feet and a small mechanical access lift. It holds no character consciousness by itself. LOWER RIGHT: Guardian Z's GUIDANCE SEAT, a single small human seat inset into a protective navy cockpit shell with a view canopy and two flat MAP/OBSERVATION surfaces on armrests. Absolutely NO flight stick, pedals, trigger grips or weapon controls. Rounded harness, visible exit latch and clear forward view. Tiny relief of Z's red X on outer shell can identify belonging, no logo text. Seat only observes and marks route. Each subject neatly isolated, functional no meaningless greebles. KINETIC_CEL design art, variable navy ink lines, large flat matte color groups, two hard shadow steps, no CGI, gradients or random fine panels. Plain pale warm gray, no text, no labels, no arrows, no numbers, no watermark, nothing cropped.",
+        "original_path": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-a0256bd1-8268-4048-a79a-068feb38fc3f.png",
+        "final_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_20261115/images/32a_interfaces.png"
+      },
+      "effective_final_generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-a0256bd1-8268-4048-a79a-068feb38fc3f.png",
+      "necessary_revisions": [],
+      "final_review_context": {
+        "qa": "导览席没有手脚操纵杆、踏板或武器扳机；花扣/维持架与席位分开。",
+        "design_status": "本轮设计提案，未替换已采用资产",
+        "source_file": "deliverables/wanji_redesign_20261115/specs/root_image_jobs_consolidated.json"
+      },
+      "current_file_verification": {
+        "v2_final_sha256": "11d97bd6624b63db18dba72a7d925b0958a6516606dc1e765e246e5637fd39ca",
+        "v1_final_sha256": "11d97bd6624b63db18dba72a7d925b0958a6516606dc1e765e246e5637fd39ca",
+        "recorded_final_source_sha256": "11d97bd6624b63db18dba72a7d925b0958a6516606dc1e765e246e5637fd39ca",
+        "v2_matches_v1_final": true,
+        "v2_matches_recorded_final_source": true,
+        "all_files_present": true,
+        "status": "match",
+        "width_height": [
+          1536,
+          1024
+        ],
+        "file_size_bytes": 1831462
+      }
+    },
+    {
+      "id": "32b_shenzuo_control",
+      "v2_image_path": "images/32b_shenzuo_control.png",
+      "carry_forward_status": "V1本轮提案在V2延续；非作者批准，也不自动成为仓库已采用资产",
+      "original_record_locator": {
+        "source_json": "deliverables/wanji_redesign_20261115/specs/root_image_jobs_batch4.json",
+        "source_json_sha256": "ce2945779c73f45332b4aadeed32c4a682da0b3013bf0a9230d0e53b580d4f3d",
+        "json_pointer": "/2",
+        "canonical_record_sha256": "07a4d10dcc211ed36ec273b1814f3e5d2adfdf8d74eacc536afe2e9c1ae876bf"
+      },
+      "original_generation_record": {
+        "id": "32b_shenzuo_control",
+        "refs": [
+          "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_20261115/images/25a_tianqiong_components.png"
+        ],
+        "prompt": "Create a tangible cockpit-and-network concept sheet for Shen Zuo configuration, the integrated control formation of kilometer-class Tianqiong in 万机残响. It is a control mode spanning fleet ships, not a new robot and not just a luxury chair. Match reference ivory/navy/ochre structural joint vocabulary. Large main view of a CENTRAL occupied-scale but EMPTY pilot seat on a modest platform inside an OPEN CIRCULAR CONTROL FRAME. Five clearly different thick bundled ship-feedback lines enter through five distinct protected docking junctions around the ring; their external conduit segments are visibly separable, no mystical neural tentacles. Two mechanical hand control arcs around the seat and foot support; a SMALL bright ochre EXIT HANDLE within the seated operator's natural reach. Behind the central ring a second offset isolation ring with a visible chunky power-transfer contactor connects to a separate rectangular gun-load buffer cabinet. A secondary close-up at right shows exactly that exit handle, transfer contactor and a disconnected outer-ship feedback coupler together: linked mechanical sequence is visible as seated connector, isolation flap and open plug, without arrows or text. Lower right a small single-ship local control station with its own chair and control block, emphasizing that participating ships retain local people and a way out. Empty seats only, no naked bodies, no holographic text, no magical glowing orb. Balanced landscape layout, central ring takes 65% frame, small mechanism details 35%, excellent readability. Colors support hardware groups; no random neon. KINETIC_CEL design art, variable navy ink lines, large flat matte color groups, two hard shadow steps, no CGI, gradients or random fine panels. Plain pale warm gray, no text, no labels, no arrows, no numbers, no watermark, nothing cropped.",
+        "original_path": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-5f38c7b5-634a-4954-a915-2a45496ab564.png",
+        "final_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_20261115/images/32b_shenzuo_control.png"
+      },
+      "effective_final_generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-5f38c7b5-634a-4954-a915-2a45496ab564.png",
+      "necessary_revisions": [],
+      "final_review_context": {
+        "qa": "独立控制阵形示意，退出柄、载荷缓冲柜与本地船控制站可辨；不与导览席混用。",
+        "design_status": "本轮设计提案，未替换已采用资产",
+        "source_file": "deliverables/wanji_redesign_20261115/specs/root_image_jobs_consolidated.json"
+      },
+      "current_file_verification": {
+        "v2_final_sha256": "af5b69bd156c2c7b2af459ed882c2d17b484c3512afd2405add71732f7feb2d6",
+        "v1_final_sha256": "af5b69bd156c2c7b2af459ed882c2d17b484c3512afd2405add71732f7feb2d6",
+        "recorded_final_source_sha256": "af5b69bd156c2c7b2af459ed882c2d17b484c3512afd2405add71732f7feb2d6",
+        "v2_matches_v1_final": true,
+        "v2_matches_recorded_final_source": true,
+        "all_files_present": true,
+        "status": "match",
+        "width_height": [
+          1536,
+          1024
+        ],
+        "file_size_bytes": 2280229
+      }
+    },
+    {
+      "id": "33_yandu_ship",
+      "v2_image_path": "images/33_yandu_ship.png",
+      "carry_forward_status": "V1本轮提案在V2延续；非作者批准，也不自动成为仓库已采用资产",
+      "original_record_locator": {
+        "source_json": "deliverables/wanji_redesign_20261115/specs/root_image_jobs_batch4.json",
+        "source_json_sha256": "ce2945779c73f45332b4aadeed32c4a682da0b3013bf0a9230d0e53b580d4f3d",
+        "json_pointer": "/3",
+        "canonical_record_sha256": "eae9de3ff264568dc65b20a26cbcb046e27ea0ec8e4df6546b24920d2760e35b"
+      },
+      "original_generation_record": {
+        "id": "33_yandu_ship",
+        "refs": [
+          "/workspace/scratch/3906e3a3b3d1/research/selected/S-Wanji-C.png"
+        ],
+        "prompt": "Design the missing independent ship Yandu / 雁渡 from the Chinese mecha story 万机残响. Reference1 is the shared museum-fleet visual language only; Yandu must be its own recognizably DIFFERENT complete ship, not a smaller copy of the museum. It belongs to captain Xu Cen and carries a real working crew with shifts, leave, maintenance schedules and independently controllable engines and doors. Design a practical civilian relay/ferry ship with a broad swept TWO-HULL silhouette reminiscent of a migrating goose only through geometry, not a literal animal head. Two low dusty-blue/ivory forward pontoons, connected by an elevated central passenger/maintenance deck, a modest offset navy bridge with long warm window band, two ochre cylindrical rear engine pods mounted between protective open truss rails. One clearly visible large orange-bordered lateral cargo/boarding door and a retractable short ramp, an accessible engine maintenance catwalk, a sheltered veranda for ordinary crew life. Hull sides have broad clean panels, a few purposeful repairs; no massive cannons, wings covered in fake armor, huge city towers or glass museum dome. Strong collectable ship silhouette, sufficient negative space between twin bows, realistic purposeful docking features. Spacious landscape model sheet: large front-three-quarter ship at upper-left, same exact ship side view at lower-left, consistent rear-three-quarter view at upper-right, a cutaway of only the boarding/crew passage and engine service hatch at lower-right. No people needed, no size numbers; current text gives no exact length. Keep window bands, hull count, engine count and colors unchanged between views. Strict project KINETIC_CEL illustration: varied deep navy ink line weight, sparse decisive details, broad matte color blocks, maximum two sharp cel shadow steps. No photographic rust, no plastic CGI, no gacha glow, no fake texture or gradients. Plain warm pale-gray reference-sheet background, all subjects fully in frame. No written words, letters, numbers, logos or watermark.",
+        "original_path": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-50aeba6b-b813-46fa-8f6e-87279a83b125.png",
+        "final_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_20261115/images/33_yandu_ship.png"
+      },
+      "effective_final_generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-50aeba6b-b813-46fa-8f6e-87279a83b125.png",
+      "necessary_revisions": [],
+      "final_review_context": {
+        "qa": "独立双体舰船，有许岑指挥船的工作空间；双体形为新提案，没有捏造原文船长米数。",
+        "design_status": "本轮设计提案，未替换已采用资产",
+        "source_file": "deliverables/wanji_redesign_20261115/specs/root_image_jobs_consolidated.json"
+      },
+      "current_file_verification": {
+        "v2_final_sha256": "9a135113739e278f23f25ad063d69a76f33748c10a77942d6f48b52e9c6263bd",
+        "v1_final_sha256": "9a135113739e278f23f25ad063d69a76f33748c10a77942d6f48b52e9c6263bd",
+        "recorded_final_source_sha256": "9a135113739e278f23f25ad063d69a76f33748c10a77942d6f48b52e9c6263bd",
+        "v2_matches_v1_final": true,
+        "v2_matches_recorded_final_source": true,
+        "all_files_present": true,
+        "status": "match",
+        "width_height": [
+          1536,
+          1024
+        ],
+        "file_size_bytes": 2405079
+      }
+    },
+    {
+      "id": "34_civil_workers",
+      "v2_image_path": "images/34_civil_workers.png",
+      "carry_forward_status": "V1本轮提案在V2延续；非作者批准，也不自动成为仓库已采用资产",
+      "original_record_locator": {
+        "source_json": "deliverables/wanji_redesign_20261115/specs/root_image_jobs_batch4.json",
+        "source_json_sha256": "ce2945779c73f45332b4aadeed32c4a682da0b3013bf0a9230d0e53b580d4f3d",
+        "json_pointer": "/4",
+        "canonical_record_sha256": "e2b052248bc776f82dda3b106fc9e7cb4a149621aabcb7f28f75567c180cb1fc"
+      },
+      "original_generation_record": {
+        "id": "34_civil_workers",
+        "refs": [
+          "/workspace/scratch/3906e3a3b3d1/research/selected/H03-A.png",
+          "/workspace/scratch/3906e3a3b3d1/research/selected/H04-C.png",
+          "/workspace/scratch/3906e3a3b3d1/research/selected/H07-A.png"
+        ],
+        "prompt": "Create a new supporting-character design lineup for 万机残响, matching the references' drawn character style and workaday clothing, but draw THREE DISTINCT NEW ADULT PEOPLE with different faces and proportions. These are separate character studies, NOT a shared scene or an ending reunion. Exactly three evenly spaced full-body main figures left to right, each with one small distinct head closeup above or beside them, no text. LEFT: Zhou Qin, an adult WOMAN gate-zone execution desk clerk, perceptually around thirties, sturdy calm face with straight black jaw-length practical hair, dark steel-teal fitted work shirt, ivory rolled cuffs and navy trousers, low practical shoes. She carries a flat execution terminal and a loosely unplugged short network cable, small abrasion on back of one hand from breaking a cable tie; alert and decisively grounded posture, no coat, no weapons, no luxury accessories. CENTER: Meng He, adult MAN maintenance worker aboard bridge ship Zhanqiao, lean medium-tall, worn warm complexion, tousled short black hair, broad eyebrows, slightly prominent nose. Dusty navy work coveralls with ochre knee patch, RED marking pencil clipped in rolled sleeve, folded route plan in one hand and pointing at it with the other. His strength is practical route finding, no military costume. RIGHT: Mi De, adult MAN ventilation repair worker, broader shorter build and older than center, receding dark hair with gray at temples, small ordinary moustache, olive-gray work jacket with visible off-white wiping cloth poking from pocket, holds a detachable three-bladed ventilation fan safely at hip and a compact maintenance tool, sturdy boots. Tool is a work cutter not a weapon. Clothing should be economical and plausible, no dozens of pouches or metal badges. Give all three natural capable expressions, no uniform model-like beauty faces, no cute chibi proportions. These are archival character sheets of their living everyday work states; do not depict resurrection, memorial halos or death wounds. Do not borrow an existing main character's face from references. Strict project KINETIC_CEL illustration: varied deep navy ink line weight, sparse decisive details, broad matte color blocks, maximum two sharp cel shadow steps. No photographic rust, no plastic CGI, no gacha glow, no fake texture or gradients. Plain warm pale-gray reference-sheet background, all subjects fully in frame. No written words, letters, numbers, logos or watermark.",
+        "original_path": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-bf69e7fb-c27d-4dae-aa4d-92819a90f915.png",
+        "final_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_20261115/images/34_civil_workers.png"
+      },
+      "effective_final_generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-bf69e7fb-c27d-4dae-aa4d-92819a90f915.png",
+      "necessary_revisions": [],
+      "final_review_context": {
+        "qa": "周芹/孟禾/米德由左至右，职业道具分别匹配；档案状态不画成死亡后的团聚。",
+        "design_status": "本轮设计提案，未替换已采用资产",
+        "source_file": "deliverables/wanji_redesign_20261115/specs/root_image_jobs_consolidated.json"
+      },
+      "current_file_verification": {
+        "v2_final_sha256": "6344e8ab5fef30c8c44385efd8ba46c5bbf1a3f5c7ae057562269adbe44ab83f",
+        "v1_final_sha256": "6344e8ab5fef30c8c44385efd8ba46c5bbf1a3f5c7ae057562269adbe44ab83f",
+        "recorded_final_source_sha256": "6344e8ab5fef30c8c44385efd8ba46c5bbf1a3f5c7ae057562269adbe44ab83f",
+        "v2_matches_v1_final": true,
+        "v2_matches_recorded_final_source": true,
+        "all_files_present": true,
+        "status": "match",
+        "width_height": [
+          1536,
+          1024
+        ],
+        "file_size_bytes": 1764415
+      }
+    },
+    {
+      "id": "35_han_sua",
+      "v2_image_path": "images/35_han_sua.png",
+      "carry_forward_status": "V1本轮提案在V2延续；非作者批准，也不自动成为仓库已采用资产",
+      "original_record_locator": {
+        "source_json": "deliverables/wanji_redesign_20261115/specs/story_image_jobs.json",
+        "source_json_sha256": "ce46283568f52f7dc02d476878cd35ffeceb95296f6943cf2b4ba97d80f9f962",
+        "json_pointer": "/7",
+        "canonical_record_sha256": "d85564d0263ff804f6a2765fb375ba912b9943af892ea39cefd6a953990fe43d"
+      },
+      "original_generation_record": {
+        "id": "35_han_sua",
+        "refs": [
+          "/workspace/scratch/3906e3a3b3d1/research/selected/H01-A.png"
+        ],
+        "prompt": "Production Japanese anime character model sheet for 万机残响 in KINETIC_CEL style: variable-weight deep ink-navy linework, two crisp hard shadow tones, large restrained color blocks, clean coherent human anatomy, no PBR, no photographic rendering, no airbrush, no neon or excessive texture. Warm off-white background, no text, letters, numerals, logos, watermark or pseudo writing anywhere. The same person across every view, not design alternatives.\nPrimary request: a new proposed portrait of HAN XIUYA, adult female human pilot of Baixiang and practical mentor helping a newly embodied eight-metre machine learn to control fingers. No usable existing Han Xiuy a portrait was available; input is project CLOTHING AND CEL-STYLE reference only, not identity. Do not copy the male face. She has her own standard everyday working prosthetic HAND/FOREARM. The text does not determine which side: for this consistent proposal choose her ANATOMICAL LEFT forearm and hand as the prosthetic, keep her right arm organic, both shoulders intact. Her own prosthesis is NOT the giant Baixiang's missing right arm. She is a human woman, never a humanoid robot.\nWide character board: large full-body three-quarter front on left, matching smaller full-body back view at upper center, a large face portrait at upper right, and a lower-right close detail showing the same left prosthetic fingers delicately holding a pencil over a plain schedule sheet. A second small detail shows the prosthetic wrist on a table demonstrating single-finger movement; no extra person needed.\nDesign her as a self-possessed, lean adult pilot with clear serious eyes and a practical short dark hair cut, side fringe tucked behind one ear, a few stray strands from a helmet. Expressive but calm face, athletic working stance, no exaggerated beauty pose. Deep navy functional pilot trousers, sturdy ankle boots, close but unsexualized ivory working undershirt, short muted brick-red flight jacket with reinforced elbow panels and a simple waist harness. Jacket's LEFT cuff can be opened/rolled to expose the mechanical prosthetic interface just below elbow; it looks like a well-used daily tool with matte ivory finger shells, dark articulated joints, small plain adjustment collar, human-sized five fingers. The right hand is ordinary skin and holds a folded helmet by its chin strap, same helmet shown in back view. No weaponized prosthesis, no gigantic robot gauntlet, no exposed shoulder amputation. She argues over workshop schedules while holding a cold half-eaten bread roll; optional very small ordinary bread-and-paper detail, not a dominant gag. Maintain adult capable demeanor, personal style that differs from the other cast. Portrait and back view match the same hair, clothes and left-side prosthetic. Face features, hair, age impression and prosthetic side are this proposal's creative choices, so do not imply a copied established identity.",
+        "source_path": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-6da2ba75-bebb-4970-b27e-c30b6649fe34.png",
+        "output_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_20261115/images/35_han_sua.png",
+        "qa": {
+          "status": "pass_concept",
+          "method": "visual review of actual generated output",
+          "findings": [
+            "首次图出现多手臂，已用内置imagegen局部修正并复查：最终主视图两臂、右生物手拿盔、左义肢拿表；背视图左义肢一致。",
+            "人物脸/发型/年龄印象和左侧义肢均为本轮新提案，未冒称旧母稿；原文只指定义肢能握笔示指而没有给左右。",
+            "与百相缺右臂分开：人体双肩、双臂齐全，义肢为日常人类尺度工具。"
+          ]
+        },
+        "correction_prompt": "Precise anatomical correction of the supplied Han Xiuya character sheet. Preserve her EXACT face, hair, red jacket, ivory shirt, navy trousers, boots, prosthetic hand design, warm paper background, all right-side portrait and hand close-ups, composition, cel line and two-tone shading. Fix ONLY the incorrect extra arm on the large front full-body figure and correct the rear view's hand identity. In the main full-body figure there must be EXACTLY TWO ARMS: her anatomical RIGHT organic arm hangs naturally down holding the helmet by its strap (viewer LEFT); her anatomical LEFT prosthetic forearm bends naturally to hold the schedule papers (viewer RIGHT). Completely REMOVE the extra raised bread-holding arm and the bread; replace that area with clean background and a normal single shoulder/jacket sleeve connecting to the existing lowered right arm. No food anywhere. The main front figure must have precisely one left shoulder, one right shoulder, two elbows and two hands. In the smaller rear view, anatomical LEFT forearm/hand is the same ivory/dark-jointed prosthesis; let it hang empty by her left thigh (viewer LEFT in rear view). Her normal right hand can be relaxed and mostly hidden beside the bag; remove the helmet from the rear-view left hand. Every body view is the same woman with LEFT prosthetic and RIGHT biological arm. Do not add any arm to the portraits, do not change her face, do not create new panels. No letters, words, labels or watermark.",
+        "rejected_source_path": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-827bb193-1115-4e97-9d27-5352e78f4738.png",
+        "proposed_not_canon": [
+          "面容与发型",
+          "年龄视觉",
+          "服装细节",
+          "左侧义肢"
+        ]
+      },
+      "effective_final_generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-6da2ba75-bebb-4970-b27e-c30b6649fe34.png",
+      "necessary_revisions": [
+        {
+          "kind": "necessary_correction_for_final",
+          "input_source_path": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-827bb193-1115-4e97-9d27-5352e78f4738.png",
+          "input_source_sha256": "99ed17a3ebdf77a24ced143196457a3a52931b840014d2de9de0f672066a3b70",
+          "prompt": "Precise anatomical correction of the supplied Han Xiuya character sheet. Preserve her EXACT face, hair, red jacket, ivory shirt, navy trousers, boots, prosthetic hand design, warm paper background, all right-side portrait and hand close-ups, composition, cel line and two-tone shading. Fix ONLY the incorrect extra arm on the large front full-body figure and correct the rear view's hand identity. In the main full-body figure there must be EXACTLY TWO ARMS: her anatomical RIGHT organic arm hangs naturally down holding the helmet by its strap (viewer LEFT); her anatomical LEFT prosthetic forearm bends naturally to hold the schedule papers (viewer RIGHT). Completely REMOVE the extra raised bread-holding arm and the bread; replace that area with clean background and a normal single shoulder/jacket sleeve connecting to the existing lowered right arm. No food anywhere. The main front figure must have precisely one left shoulder, one right shoulder, two elbows and two hands. In the smaller rear view, anatomical LEFT forearm/hand is the same ivory/dark-jointed prosthesis; let it hang empty by her left thigh (viewer LEFT in rear view). Her normal right hand can be relaxed and mostly hidden beside the bag; remove the helmet from the rear-view left hand. Every body view is the same woman with LEFT prosthetic and RIGHT biological arm. Do not add any arm to the portraits, do not change her face, do not create new panels. No letters, words, labels or watermark.",
+          "output_source_path": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-6da2ba75-bebb-4970-b27e-c30b6649fe34.png",
+          "output_source_sha256": "99dd86e20937de03faabe324ef67eca59542f70bc00371de84cd88e145c0a099",
+          "reason": "韩秀雅首稿多手臂，最终仅保留修正后的两臂；本条仅保留必要修订记录，不把首稿图片列为交付图。"
+        }
+      ],
+      "final_review_context": {
+        "qa": {
+          "status": "pass_concept",
+          "method": "visual review of actual generated output",
+          "findings": [
+            "首次图出现多手臂，已用内置imagegen局部修正并复查：最终主视图两臂、右生物手拿盔、左义肢拿表；背视图左义肢一致。",
+            "人物脸/发型/年龄印象和左侧义肢均为本轮新提案，未冒称旧母稿；原文只指定义肢能握笔示指而没有给左右。",
+            "与百相缺右臂分开：人体双肩、双臂齐全，义肢为日常人类尺度工具。"
+          ]
+        },
+        "proposed_not_canon": [
+          "面容与发型",
+          "年龄视觉",
+          "服装细节",
+          "左侧义肢"
+        ]
+      },
+      "current_file_verification": {
+        "v2_final_sha256": "99dd86e20937de03faabe324ef67eca59542f70bc00371de84cd88e145c0a099",
+        "v1_final_sha256": "99dd86e20937de03faabe324ef67eca59542f70bc00371de84cd88e145c0a099",
+        "recorded_final_source_sha256": "99dd86e20937de03faabe324ef67eca59542f70bc00371de84cd88e145c0a099",
+        "v2_matches_v1_final": true,
+        "v2_matches_recorded_final_source": true,
+        "all_files_present": true,
+        "status": "match",
+        "width_height": [
+          1536,
+          1024
+        ],
+        "file_size_bytes": 2039123
+      }
+    },
+    {
+      "id": "36_em5_crew",
+      "v2_image_path": "images/36_em5_crew.png",
+      "carry_forward_status": "V1本轮提案在V2延续；非作者批准，也不自动成为仓库已采用资产",
+      "original_record_locator": {
+        "source_json": "deliverables/wanji_redesign_20261115/specs/crew_mapping.json",
+        "source_json_sha256": "d5c7f93139155c722441fc55e076981d7cfdbc978a74de73b3ea89bc2c6673e2",
+        "json_pointer": "/jobs/0",
+        "canonical_record_sha256": "9e5d8a3e94240344b88f06e6307f457c420bb03f3ff1067ac5a79344fc55ad86"
+      },
+      "original_generation_record": {
+        "id": "36_em5_crew",
+        "system": "em5",
+        "references": [
+          "/workspace/scratch/3906e3a3b3d1/research/selected/H-EM1-A.png",
+          "/workspace/scratch/3906e3a3b3d1/research/selected/H-EM3-A.png"
+        ],
+        "status": "visually_reviewed_candidate",
+        "prompt": "Original character-design illustration in the project's KINETIC_CEL anime style: refined adult faces, pressure-varying navy-black ink lines, economical interior linework, large flat colors and at most two clean hard-edged cel shadows, warm white empty background, subtle flat ground shadow. Match the human illustration style of references; preserve identified existing face designs where specified. No photorealism, no 3D, no PBR, no soft airbrushing, no gradient, no dense fabric rendering, no glowing eyes. Full bodies head-to-toe with complete boots and generous margins, distinct expressions/postures/body shapes. ABSOLUTELY no letters, numbers, readable writing, printed insignia, logos, captions, borders or watermarks. Empty papers contain faint blank structural lines only, no pseudo-writing.\nCreate a WIDE landscape 2:1 group character design board of EXACTLY FIVE HUMAN BROTHERS from a spacefaring repair-worker family. Five young men, visibly related through brows/eyes but NOT clones and NOT five identical handsome model bodies. All are active mechanic-pilots in shared practical ivory/navy pressure-workwear with durable belts, gloves, kneepads and boots, personalized by different accent colors. No robot bodies. No numbered text. They are siblings who searched for their missing father and now have to ask what he did while repairing an occupying warship. Honest understated human emotion, not triumphant superhero poses. Age appearances are proposal only: young adult eldest through a late-teen youngest, avoid little children. Five separated full-body standing figures in a natural shallow arc. LEFT TO RIGHT fixed identity arrangement:\nFIRST, eldest brother Shinyi: use the FIRST reference man's exact recognizable face and black side-swept hair, lean athletic body and white/navy pilot-workwear with restrained red shoulder line. Stern calm eyes, mouth held tightly, a folded blank maintenance map in one hand; the other hand rests low around a CLOSED old wooden-handle folding workknife, no exposed blade. Responsible and exhausted, head angled toward next brother, not glamour pose. Keep original face rather than inventing a new man.\nSECOND, Yu: a NEW face, slightly taller and noticeably lankier than eldest, tousled black hair curling up behind BOTH ears, family eye/brow resemblance without identical jaw. Longer soft face, emotional worried eyes. Ivory/navy work coverall partly unzipped over navy undershirt, cyan-blue small cuff detail, dusty sleeves. Clutches a crumpled wiping cloth, other hand half raised toward his elder brother's sleeve, as though asking him to keep reporting back. Not a duplicate of first, no long braid, no female outfit.\nTHIRD, Ayue: use SECOND reference man's strong jaw, close dark curls, warm brown complexion and robust build, but a young-adult repair-pilot presence. Olive/ivory workwear and broad load-bearing harness, neck pressure seal, yellow small safety tabs. Shorter than Yu, much broader through chest and forearms. Holds a heavy mechanical LOCKING HANDLE down at his side, tool not weapon. Serious stubborn expression, one small healing lip mark only, no blood. Preserve recognizable reference face and body type.\nFOURTH, unnamed brother: NEW family face, very straight close-cropped black hair, rectangular glasses, angular narrow cheekbones, average height and slender wiry hands. Dark navy work suit with muted teal shoulder facing, small field-measurement reel and rolled blank wiring sketch at belt. Slightly bent forward checking a simple unlit handheld meter; practical cerebral posture, not looking at audience. No invented name.\nFIFTH, youngest unnamed brother: NEW rounder youthful face, short uneven dark fringe, shorter stature with compact build, ivory/navy loose work suit with ochre cuffs, simple knee pads. Holds a small clean metal parts tin in both hands against abdomen; almost-smile mixed with worry while looking toward his brothers. No mascot proportions, no little child body, no name invented.\nAll FIVE are clearly male human siblings. Do not import the older project's female pilots into these five brothers. Keep a lived-in working-class family identity with minimal grime, not a military fashion lineup. No helmets hiding faces; no repeated helmet-under-arm pose; visible hands and complete boots.",
+        "output_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_20261115/images/36_em5_crew.png",
+        "source_path": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-4ca151f2-3398-449e-9864-3f7bdc71d126.png",
+        "output_hint": "Generated images are saved to /workspace/scratch/3906e3a3b3d1/generated_images as /workspace/scratch/3906e3a3b3d1/generated_images/exec-4ca151f2-3398-449e-9864-3f7bdc71d126.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "qa": [
+          "实看：五人数量准确且均为人类男性；从左至右慎一、悠、阿岳、未具名甲、最小未具名兄弟。高矮体格、发型、肤色与道具区分充分，五双靴完整。",
+          "H-EM1 与 H-EM3 原脸形/服装语汇得到保留；悠等为新候选。兄弟年龄、血缘外观和具体分机操控权原文未锁，本图不建立这些新事实。",
+          "不存在文字或错误姓名印在图上，H-EM2/H-EM4 女性旧选案未被改成新稿兄弟。"
+        ]
+      },
+      "effective_final_generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-4ca151f2-3398-449e-9864-3f7bdc71d126.png",
+      "necessary_revisions": [],
+      "final_review_context": {
+        "qa": [
+          "实看：五人数量准确且均为人类男性；从左至右慎一、悠、阿岳、未具名甲、最小未具名兄弟。高矮体格、发型、肤色与道具区分充分，五双靴完整。",
+          "H-EM1 与 H-EM3 原脸形/服装语汇得到保留；悠等为新候选。兄弟年龄、血缘外观和具体分机操控权原文未锁，本图不建立这些新事实。",
+          "不存在文字或错误姓名印在图上，H-EM2/H-EM4 女性旧选案未被改成新稿兄弟。"
+        ],
+        "status": "visually_reviewed_candidate"
+      },
+      "current_file_verification": {
+        "v2_final_sha256": "82424772df022078293cd322950dc948a12535c169f5fb122124b6b41774073a",
+        "v1_final_sha256": "82424772df022078293cd322950dc948a12535c169f5fb122124b6b41774073a",
+        "recorded_final_source_sha256": "82424772df022078293cd322950dc948a12535c169f5fb122124b6b41774073a",
+        "v2_matches_v1_final": true,
+        "v2_matches_recorded_final_source": true,
+        "all_files_present": true,
+        "status": "match",
+        "width_height": [
+          1774,
+          887
+        ],
+        "file_size_bytes": 2237123
+      },
+      "name_binding_context": {
+        "status": "新稿姓名与旧编号视觉的本轮候选绑定，非仓库已确立事实",
+        "source_group": "em5_left_to_right",
+        "left_to_right": [
+          {
+            "position": 1,
+            "name": "慎一",
+            "source_face": "H-EM1 A",
+            "type": "保留脸/发/白蓝工作服并增加卷图与闭合工作折刀",
+            "evidence": "p235先认父亲的手、修改申请；p236–238追问并继续画图；p241给悠报到门口/开门。"
+          },
+          {
+            "position": 2,
+            "name": "悠",
+            "source_face": null,
+            "type": "新候选，较高且瘦、耳边翘发、机油袖与擦布；家族眼眉",
+            "evidence": "p235比父亲高出许多且耳边头发不肯剪；p236擦脸越擦越脏；p241拉住哥哥领口询问回来时间。"
+          },
+          {
+            "position": 3,
+            "name": "阿岳",
+            "source_face": "H-EM3 A",
+            "type": "借原强壮脸形/短卷发/工作服，候选绑定",
+            "evidence": "p240肩甲中弹，撞护垫、嘴角流血、仍抓锁柄说合。"
+          },
+          {
+            "position": 4,
+            "name": null,
+            "role": "未具名兄弟甲",
+            "source_face": null,
+            "type": "新候选，眼镜、窄脸、测量与线路姿态；不造名",
+            "evidence": "p235–241五个孩子/五兄弟，余二未具名；五人会修旧式联接。"
+          },
+          {
+            "position": 5,
+            "name": null,
+            "role": "未具名最小兄弟",
+            "source_face": null,
+            "type": "新候选，较矮圆脸，零件盒与倾听姿态；不造名",
+            "evidence": "p236最小的拖座位；p238最小的取水果。"
+          }
+        ],
+        "context_file_in_v2": "specs/crew_mapping.json",
+        "note": "新姓名与旧编号的绑定仍按候选处理，不因沿用而成为作者定稿。"
+      }
+    },
+    {
+      "id": "37_fivebeasts_crew",
+      "v2_image_path": "images/37_fivebeasts_crew.png",
+      "carry_forward_status": "V1本轮提案在V2延续；非作者批准，也不自动成为仓库已采用资产",
+      "original_record_locator": {
+        "source_json": "deliverables/wanji_redesign_20261115/specs/crew_mapping.json",
+        "source_json_sha256": "d5c7f93139155c722441fc55e076981d7cfdbc978a74de73b3ea89bc2c6673e2",
+        "json_pointer": "/jobs/1",
+        "canonical_record_sha256": "dd6db651b1d601359cf785f69b86a4ed0ad21177bde0e5bc1d79f5f9bb377f99"
+      },
+      "original_generation_record": {
+        "id": "37_fivebeasts_crew",
+        "system": "fivebeasts",
+        "references": [
+          "/workspace/scratch/3906e3a3b3d1/research/selected/H-Beast1-B.png",
+          "/workspace/scratch/3906e3a3b3d1/research/selected/H-Beast4-A.png"
+        ],
+        "status": "visually_reviewed_candidate",
+        "prompt": "Original character-design illustration in the project's KINETIC_CEL anime style: refined adult faces, pressure-varying navy-black ink lines, economical interior linework, large flat colors and at most two clean hard-edged cel shadows, warm white empty background, subtle flat ground shadow. Match the human illustration style of references; preserve identified existing face designs where specified. No photorealism, no 3D, no PBR, no soft airbrushing, no gradient, no dense fabric rendering, no glowing eyes. Full bodies head-to-toe with complete boots and generous margins, distinct expressions/postures/body shapes. ABSOLUTELY no letters, numbers, readable writing, printed insignia, logos, captions, borders or watermarks. Empty papers contain faint blank structural lines only, no pseudo-writing.\nCreate ONE landscape 3:2 character-design board focused on TWO different HUMAN pilots of the Five Beasts team, returning travelers with their belongings. Use the two reference men as exact accepted visual face/clothing sources; this is a proposed new story-name binding, not new invented replacement faces. Two large complete full-body figures side by side, neither cropped, with clean space between them. No giant mecha in this board. They are NOT siblings and NOT the electromagnetic team. Practical restrained sci-fi travelers, a little older and more road-worn than the young five brothers.\nLEFT, Lorn: preserve FIRST reference face, angular features, straight dark hair tied into its long loose braid/ponytail, ivory short work jacket with RED turned-up inner collar, navy undershirt, ivory wide work trousers and navy boots. Same recognizably handsome face but contemplative, tense, slightly tired eyes; no self-satisfied heroic grin. Both gloves clipped to belt so bare human hands can be seen. One hand turns a small OLD metal house key on a plain ring, the other carries TWO blank folded official papers with no readable writing or emblems. A subtle healed forehead scratch can suggest his recent ordeal. Relaxed grounded posture with shoulders burdened by travel; his old house is occupied by another family and he refuses to force them out, but cannot yet let the key go. Do not add a sword, crown, royal mantle or gun.\nRIGHT, Tim: preserve SECOND reference man's wavy brown hair, light stubble, broader slightly rugged face, GREEN/navy work-travel suit with ivory chest insert, harness and practical boots. Calm observant practical expression, looking toward Lorn without lecturing. Substantial worn rectangular travel backpack with bedroll and visible cinch straps; one hand draws a strap snug. A SMALL terracotta flowerpot with one newly cut leafy sprig is carefully tied on a padded side sling of backpack, stem protected from a hard box edge. In his other hand he carries one modest metal hot-drink cup; believable fingers. His role reads as the person who brings a drink and packs the fragile plant safely. No helmet-under-arm fashion pose.\nPreserve color-block identities and exact reference face/hair distinction. The ivory-clad man should not receive green man's curls or beard, green man should not receive long braid. Keep no text or A/B/C from references. A few simple straps and seams, not excessive buckles. Complete feet, warm white paper background, unified KINETIC_CEL hard shadows. No additional named people.",
+        "output_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_20261115/images/37_fivebeasts_crew.png",
+        "source_path": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-25be7a85-6f3d-4eb6-8112-b9eef8522a53.png",
+        "output_hint": "Generated images are saved to /workspace/scratch/3906e3a3b3d1/generated_images as /workspace/scratch/3906e3a3b3d1/generated_images/exec-25be7a85-6f3d-4eb6-8112-b9eef8522a53.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+        "qa": [
+          "实看：左洛恩、右提姆；旧长辫/棕卷发胡茬脸形和衣装识别保留，钥匙/两凭证与热饮/带盆栽旅行包清楚，完整两个人类全身。",
+          "新姓名绑定为候选，不把旧莱昂/米拉强认作洛恩/提姆；其余三名旧角色位原资产保留，不在该板虚构姓名。"
+        ]
+      },
+      "effective_final_generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-25be7a85-6f3d-4eb6-8112-b9eef8522a53.png",
+      "necessary_revisions": [],
+      "final_review_context": {
+        "qa": [
+          "实看：左洛恩、右提姆；旧长辫/棕卷发胡茬脸形和衣装识别保留，钥匙/两凭证与热饮/带盆栽旅行包清楚，完整两个人类全身。",
+          "新姓名绑定为候选，不把旧莱昂/米拉强认作洛恩/提姆；其余三名旧角色位原资产保留，不在该板虚构姓名。"
+        ],
+        "status": "visually_reviewed_candidate"
+      },
+      "current_file_verification": {
+        "v2_final_sha256": "893c566f0120dae3d1bb91ddc183f2880394cac0863e7277a4944896b02592b9",
+        "v1_final_sha256": "893c566f0120dae3d1bb91ddc183f2880394cac0863e7277a4944896b02592b9",
+        "recorded_final_source_sha256": "893c566f0120dae3d1bb91ddc183f2880394cac0863e7277a4944896b02592b9",
+        "v2_matches_v1_final": true,
+        "v2_matches_recorded_final_source": true,
+        "all_files_present": true,
+        "status": "match",
+        "width_height": [
+          1536,
+          1024
+        ],
+        "file_size_bytes": 1805002
+      },
+      "name_binding_context": {
+        "status": "新稿姓名与旧编号视觉的本轮候选绑定，非仓库已确立事实",
+        "source_group": "fivebeasts_left_to_right",
+        "left_to_right": [
+          {
+            "position": 1,
+            "name": "洛恩",
+            "source_face": "H-Beast1 B",
+            "type": "保留长辫/脸/象牙外套红翻领；旧钥匙与两凭证",
+            "evidence": "p244旧房换锁；p245举两份凭证；p246保留旧钥匙、保护原住户。"
+          },
+          {
+            "position": 2,
+            "name": "提姆",
+            "source_face": "H-Beast4 A",
+            "type": "保留棕卷发/胡茬/绿工服；行李包、热饮与花盆",
+            "evidence": "p244带热饮并问下一站工房；p245拽受损后腿完成合体；p246把花盆绑在行李旁加垫布。"
+          }
+        ],
+        "context_file_in_v2": "specs/crew_mapping.json",
+        "note": "新姓名与旧编号的绑定仍按候选处理，不因沿用而成为作者定稿。"
+      }
+    }
+  ]
+}
