@@ -1,0 +1,464 @@
+{
+  "version": "V2",
+  "date": "2026-11-15",
+  "sheet_count": 45,
+  "review_basis": [
+    "逐图检查身份、姿态、整体比例和主要组件来源",
+    "对照用户追加意见检查Z翼形保留与无牌一号肢体体量",
+    "合体前后主要可见部件比对；不视作三维机构验证"
+  ],
+  "specific_limits": {
+    "05_bailing": "小腿、后髋与臂侧轮组可追认；轮毂和关节圆环部分相似，精确轴数与舱内净空待同尺度核定",
+    "07_guardian_z_back": "采用既有红蓝S弧翼与独立肩甲；背包翼根方案尚未做全行程避碰",
+    "12_fivebeasts_combined": "五个兽首和主色区去向一致；所有爪、尾的逐节折叠未锁定",
+    "14_em5_combined": "机首、双舱臂、环腰、钻与登陆体可追认；最新机组姓名未绑定",
+    "18_getter_forms": "同三件循环与背侧去向见18b，统一体积及连续换位未工程验证",
+    "26b_inverse_combination": "空胸、唯一馆核退出与肩梁夹炮成立；远肩梁根部分被透视遮挡，需顶视补充"
+  },
+  "image_files": [
+    {
+      "file": "images/01_soulin.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 1833575,
+      "sha256": "08030238e60073f1a5f84c8b66a0901270abbb2edae4acb80168dfc6df2ace52"
+    },
+    {
+      "file": "images/02_seven.png",
+      "pixels": [
+        1200,
+        1310
+      ],
+      "bytes": 2825882,
+      "sha256": "5768960a95ded4760ec3e28920808096773a3cb3d4b591acb7023cab5e8e2fc3"
+    },
+    {
+      "file": "images/03_chenzhong.png",
+      "pixels": [
+        1199,
+        1312
+      ],
+      "bytes": 2377008,
+      "sha256": "b6c6ee8da1b076d56709401ddc415e4c0751ca45cc62c4408d37cecbe173d47c"
+    },
+    {
+      "file": "images/04_chendu.png",
+      "pixels": [
+        1199,
+        1312
+      ],
+      "bytes": 2623354,
+      "sha256": "b89e87bdd2564671b78c38d33cc80e98ded17fe751888993a0bb5f5a134c84b9"
+    },
+    {
+      "file": "images/05_bailing.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2577597,
+      "sha256": "c36cc8e904e140e858e354ec809bfc8d9224080895a8d386f7bebda2c2b82f35"
+    },
+    {
+      "file": "images/06_unlicensed.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2559211,
+      "sha256": "ec55c20308441d64a3d1994001465a41ed5b2aa665c861886b3293177a2ee940"
+    },
+    {
+      "file": "images/07_guardian_z_back.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 1996065,
+      "sha256": "e603dd789bdfeb52e724e8067a82c3f53007f6c33d9bdf9e1eabc6c345906c8a"
+    },
+    {
+      "file": "images/08_brave_components.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 3048512,
+      "sha256": "16bfbd892d9b9ebfc8fdd6c76f75dcb4575c737d425c086568b50e533eb6f884"
+    },
+    {
+      "file": "images/09_brave_combined.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 3096265,
+      "sha256": "70ed6f4438afdcf5ab876caaee6717ebfb9f3d5bcfe91c4ef54c7f6637a445f9"
+    },
+    {
+      "file": "images/10_gold_stamp.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2521331,
+      "sha256": "f36572e4ff56bf677fc9bd8b1998eb6b88b4edb0ff5cac5cbe5d2943b01518c9"
+    },
+    {
+      "file": "images/11_fivebeasts_components.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 3239602,
+      "sha256": "6940cf127260fe1c10c4de244537193040b8cdde4ed6d94c76b125ea6dae1bd8"
+    },
+    {
+      "file": "images/12_fivebeasts_combined.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 3202912,
+      "sha256": "b16987fa739c6abe4f1cff02253624ced9513c8aa6054b74b0e4f7569687560b"
+    },
+    {
+      "file": "images/13_em5_components.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2948062,
+      "sha256": "a078d6196e4c449a20a889cec545c95cea3ef8bb8d61dd30112238b5e1c71aae"
+    },
+    {
+      "file": "images/14_em5_combined.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 3008831,
+      "sha256": "bcf72b943f0b4d5b74beb9a253c8480b1e29294cff4ae1a93f41b7ae647c3359"
+    },
+    {
+      "file": "images/15a_starfire_vehicles.png",
+      "pixels": [
+        1672,
+        941
+      ],
+      "bytes": 2515609,
+      "sha256": "82cda5ffc343069fdf8df4b30084f2315c6fefdf814c73724c1e6e04b6222278"
+    },
+    {
+      "file": "images/15b_starfire_solo_forms.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2372757,
+      "sha256": "45c5877a0be7a24c38621d3e080b13208a781cab2c127acd050febe397ceea00"
+    },
+    {
+      "file": "images/16_starfire_combined.png",
+      "pixels": [
+        1474,
+        1067
+      ],
+      "bytes": 2724299,
+      "sha256": "de260492c40bf54d6ab2e5bffe7f9fbc9f94a7deeb2e21d1ef0c83e8ef5c237f"
+    },
+    {
+      "file": "images/17_getter_components.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2388063,
+      "sha256": "3b3477ed8b4b73497ab1df7479ccc4ac583905465606540535ca4635c1fac638"
+    },
+    {
+      "file": "images/18_getter_forms.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2553029,
+      "sha256": "10e40f39cfe1c7f3142ab78893931b911167dc1542cd638aef8f42ef88dba9ee"
+    },
+    {
+      "file": "images/18b_getter_mapping.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2456277,
+      "sha256": "5c689fb57b66690a5240155235d5ff18364f00ef0466c53e13f95bd1ebc52625"
+    },
+    {
+      "file": "images/19_index_angel.png",
+      "pixels": [
+        1245,
+        1263
+      ],
+      "bytes": 2609330,
+      "sha256": "bc426cea0ed5deb78c11147ee36774b2c35b67f79682be4fcb64b4c020425696"
+    },
+    {
+      "file": "images/20_tide_wall.png",
+      "pixels": [
+        1247,
+        1261
+      ],
+      "bytes": 3045654,
+      "sha256": "ae3b19492a330a065b65bc1feebba287cd77bfafa822fc910bc818c13a931c1a"
+    },
+    {
+      "file": "images/21_tengai.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2831474,
+      "sha256": "fe2bedff6b5a91ddd1b9f6b4ceae876cb547fc9e5e2da4a2a12145d4a535df14"
+    },
+    {
+      "file": "images/22_broken_crown.png",
+      "pixels": [
+        1239,
+        1269
+      ],
+      "bytes": 2647653,
+      "sha256": "35025f1ae6df916f22b9eef7b8ff2d1b0bb9a9d7c4dfae749d293f72aea28b38"
+    },
+    {
+      "file": "images/23_wanji_fleet_components.png",
+      "pixels": [
+        1220,
+        1289
+      ],
+      "bytes": 2651683,
+      "sha256": "986d294af226716072644df2492012111b7bd622e47d2040adb324b94d3b712e"
+    },
+    {
+      "file": "images/23b_fleet_arm_units.png",
+      "pixels": [
+        1220,
+        1289
+      ],
+      "bytes": 2653665,
+      "sha256": "49580fe53d1e26a08e1fac587f6a423584be6a76a88425c9537dfd228c909c27"
+    },
+    {
+      "file": "images/24_wanji_frame.png",
+      "pixels": [
+        1024,
+        1536
+      ],
+      "bytes": 2746185,
+      "sha256": "4b2f50e70c75965f90bd7ea928fd7a5d0622745cada0dfddb75692618272ccce"
+    },
+    {
+      "file": "images/25a_tianqiong_components.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2411566,
+      "sha256": "ffaebe82891b2129feeb521a7e0513c69afe8ce6698a132a09ed097adca929e2"
+    },
+    {
+      "file": "images/25b_tianqiong_combined.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2284177,
+      "sha256": "90959aad480ca1546ae5106d6587e173590fd919f96e4fad0d1be3e1683414dc"
+    },
+    {
+      "file": "images/26_wanjidian.png",
+      "pixels": [
+        1199,
+        1312
+      ],
+      "bytes": 2657555,
+      "sha256": "18138b66454aff838eda2ab8fbc659a7943083b7e9ff4e0dfe82368b142961c5"
+    },
+    {
+      "file": "images/26b_inverse_combination.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2859836,
+      "sha256": "0bf9ef643f401fc882c75738e8d8da31c48de5cbcf24fb6b5d5d82c74dc04ee5"
+    },
+    {
+      "file": "images/27_T.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2097475,
+      "sha256": "6d8c179092e7379250cc08946a2f19b506f8fdd0a4ad593dfbd2336deddbbf79"
+    },
+    {
+      "file": "images/28_calibration_ship.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2439164,
+      "sha256": "3a210e22bacbded9fb9489a339869f84581af1b2b5f042ea703c982e28f7a92f"
+    },
+    {
+      "file": "images/29_memory_props.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2136425,
+      "sha256": "eb4d57358cea0eea0c53a7997e20cf968bb2e8c5888e3f55823e78dea08e1931"
+    },
+    {
+      "file": "images/30_zhaomei_workshop.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2395653,
+      "sha256": "7d7febad2806c635fd776c47686ca1de2ffc1801d15e7bf50e3fe8c03378dd73"
+    },
+    {
+      "file": "images/31_cassian_state.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 1777839,
+      "sha256": "f4370ed06c23cd51855bd763df96968f136b963290c5d5b17dfcc45deb005996"
+    },
+    {
+      "file": "images/32a_interfaces.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 1831462,
+      "sha256": "11d97bd6624b63db18dba72a7d925b0958a6516606dc1e765e246e5637fd39ca"
+    },
+    {
+      "file": "images/32b_shenzuo_control.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2280229,
+      "sha256": "af5b69bd156c2c7b2af459ed882c2d17b484c3512afd2405add71732f7feb2d6"
+    },
+    {
+      "file": "images/33_yandu_ship.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2405079,
+      "sha256": "9a135113739e278f23f25ad063d69a76f33748c10a77942d6f48b52e9c6263bd"
+    },
+    {
+      "file": "images/34_civil_workers.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 1764415,
+      "sha256": "6344e8ab5fef30c8c44385efd8ba46c5bbf1a3f5c7ae057562269adbe44ab83f"
+    },
+    {
+      "file": "images/35_han_sua.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2039123,
+      "sha256": "99dd86e20937de03faabe324ef67eca59542f70bc00371de84cd88e145c0a099"
+    },
+    {
+      "file": "images/36_em5_crew.png",
+      "pixels": [
+        1774,
+        887
+      ],
+      "bytes": 2237123,
+      "sha256": "82424772df022078293cd322950dc948a12535c169f5fb122124b6b41774073a"
+    },
+    {
+      "file": "images/37_fivebeasts_crew.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 1805002,
+      "sha256": "893c566f0120dae3d1bb91ddc183f2880394cac0863e7277a4944896b02592b9"
+    },
+    {
+      "file": "images/38_silver_hunter.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 2496942,
+      "sha256": "f69e4b92f0f8c37627abb98cd0b144ed0e6b8541819def2aa9c434320ba8e9d8"
+    },
+    {
+      "file": "images/39_agricultural_giant.png",
+      "pixels": [
+        1536,
+        1024
+      ],
+      "bytes": 3070558,
+      "sha256": "ee093dc66d086cf272f34bb79ddf8ad693c958dfdd8a8086e07b255eeeb2524a"
+    }
+  ],
+  "pdf_export_qa": [
+    {
+      "file": "00_研判与重设说明.pdf",
+      "pages": 5,
+      "bytes": 225051,
+      "extractable_chars": 5983,
+      "replacement_chars": 0
+    },
+    {
+      "file": "01_重设图册.pdf",
+      "pages": 47,
+      "bytes": 19861232,
+      "extractable_chars": 10610,
+      "replacement_chars": 0
+    },
+    {
+      "file": "02_研判表.pdf",
+      "pages": 20,
+      "bytes": 484903,
+      "extractable_chars": 39942,
+      "replacement_chars": 0
+    }
+  ],
+  "catalog_layout_review": {
+    "pages_viewed": [
+      1,
+      9,
+      20,
+      32
+    ],
+    "result": "中文清晰，完整图像在页内，图注、边界和页脚分离；无裁切或重叠。"
+  },
+  "offline_gallery_qa": {
+    "catalog_items": 45,
+    "audit_rows": 97,
+    "all_local_links_present": true,
+    "javascript_syntax_check": "passed",
+    "external_runtime_dependencies": false
+  }
+}

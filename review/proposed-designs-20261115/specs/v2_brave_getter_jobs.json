@@ -1,0 +1,245 @@
+{
+  "edition": "V2 mature mecha rendering 2026-11-15",
+  "status": "all_six_final_images_complete_and_visually_reviewed",
+  "approval_status": "本轮提案，非作者批准定稿",
+  "tool": "built-in image_gen__imagegen",
+  "canonical_constraints": {
+    "brave": [
+      "勇拳为完整独立机器人，原头、原躯干与四肢在合体内保留；不可当小内胆或空胸。",
+      "沿用已采用橙白狮鬃、白脸、青蓝眼与额晶、外加载橙色冠饰和白侧刃面罩。",
+      "轰炸机双风扇；海底列车两节两个外端车头；钻车一车双钻并可纵向拆半。",
+      "列车护套车头朝肘后，方形联接端朝拳；拳独立露出。",
+      "钻车双钻成为两膝前钻、前履带入小腿、后履带入脚跟，原腿仍在外装内。"
+    ],
+    "gold_stamp": [
+      "PDF136/146/147锤架、合拢黄金锤、社勇王举锤与金章的独立控制。",
+      "PDF288两机各有脚和肩；PDF341黄金锤组件未到而金章已作战，故身体不可直接消失变锤。",
+      "仓库CH037无已采用独立身体外观；金章身体、运输架、锁具为本轮补设。"
+    ],
+    "getter": [
+      "沿用采用稿V353U006-A红头及红白胸面、M-GetterSea-B绿色头部语汇；采用后继稿内红黄绿单体作为族系颜色和载具身份参考，不把后继形态混写成剧情已发生升级。",
+      "三种角色由同一红/黄/绿三主体循环；每态保留全部三种主体的可辨体积。",
+      "飞行、钻进、两栖三个工况分别改变骨架拓扑、肢体功能和姿态，不能只改头和涂装。"
+    ]
+  },
+  "story_pages": {
+    "brave": [
+      136,
+      146,
+      147,
+      288,
+      341
+    ],
+    "getter": [
+      139
+    ]
+  },
+  "proposal_notes": [
+    "几何、具体装甲分块、模块连接和三态去向表为本轮设计提案；视觉连续不等于已完成玩具变形工程。"
+  ],
+  "jobs": [
+    {
+      "id": "08_brave_components",
+      "approval_status": "本轮提案，非作者批准",
+      "tool": "built-in image_gen__imagegen",
+      "mode": "reference-guided generation",
+      "prompt": "Use case: stylized-concept.\nCreate a mature Japanese mecha production design sheet for FOUR ORIGINAL STANDALONE ENTITIES that later combine into Sheyong King. Preserve the established identity from the attached approved project designs while bringing the rendering depth and powerful proportions up to the last two giant-mecha references.\n\nREFERENCES: image1 is the approved complete core robot Yongquan, including its white face, cyan forehead jewel and eyes, orange swept antenna horns, long ORANGE AND IVORY LION MANE, orange shoulder caps, white chest, complete white thighs and shins, and large orange circular fist armor with a narrow cyan energy ring. Image2 is the approved twin-fan bomber. Image3 is the approved TWO-CAR submarine train with two outward-facing streamlined noses, a central coupling, white bodies, orange side stripe, dark blue window bands and short hydroplanes. Image4 is the approved ONE paired-module twin-drill tracked vehicle. Image5 is the primary drawing and dimensional-material quality reference: deep shadowed joints, powerful long-legged anatomy, large oblique armor planes, precise hand-drawn mechanical linework, restrained wear and no cheap toy flatness.\n\nCOMPOSITION: landscape 3:2, warm off-white art paper, four generously sized complete designs and no extra objects. The complete core robot stands on the LEFT 42% of the canvas, full body with head/mane/feet uncropped. On the RIGHT arrange the three full vehicles vertically: bomber above, train in the middle, drill vehicle below. Every vehicle has enough space and clear separation. No combined robot on this sheet, no floating parts, no diagrams, text, letters, numbers, logos, captions or borders. This is a premium illustration, not an infographic.\n\n1 CORE ROBOT: faithfully redraw Yongquan as the SAME strong, handsome complete mechanical hero, not a new face. Keep the approved head and long orange/ivory mane, the original armored torso and all FOUR limbs. Refine armor thickness and articulate deep neck/shoulder/elbow/knee joints. Long confident thighs and shins, substantial feet, broad V-shaped closed white chest, curved white face mask, bright cyan eyes limited to small apertures. Its existing fists stay large and proportional: they are its own reinforced hands, not tiny fists awaiting replacement. Strong broad orange forearm guards with narrow cyan wrist rings, angular white knuckle plates. Mane fans in controlled long orange-white mechanical-fiber strands behind head and shoulders, unmistakable lion identity, not fire, no organic animal head. Keep warm pure orange and ivory, do NOT borrow the navy/burgundy palette of the rendering references. Relaxed powerful standing pose, mature 8-head heroic proportions.\n\n2 BOMBER: a complete twin-engine ducted-fan bomber in slightly elevated three-quarter perspective. The same orange central nose and blue canopy, charcoal broad swept wings with white leading-edge armor, EXACTLY TWO huge silver-rimmed dark fan nacelles at wing roots, twin orange/charcoal tail fins, compact orange/white structural shoulders. Closed central under-nose hatch contains the later face-mask loading mechanism; do not expose a random second robot head. The central fuselage has clear large armor segments that can become chest/back armor; wings fold behind the combined shoulders, fans remain traceable. No tiny hanging truck, crew or landing diorama.\n\n3 SUBMARINE TRAIN: one two-car unit, the same two car bodies coupled TAIL TO TAIL at the central rotary ring, with TWO streamlined outward-facing noses at the two far ends. Preserve white streamlined body shells, single continuous orange side stripe, blue panoramic passenger-window band, blue nose windscreen and short folding hydroplanes. Exactly two car sections, no third car, no contradictory same-way noses. Put discreet transformation seams along the sides so each full car can split to a U-shaped forearm shell later; do not turn it into an ordinary subway or a gun. Show both complete cars.\n\n4 TWIN DRILL VEHICLE: one complete broad vehicle made from TWO mirrored connected halves. EXACTLY TWO large silver conical spiral drills at the front, two orange collars, two white/orange enclosed blue-glass cabins behind them. Each half has its own front tread group and rear tread group; the front treads can wrap the shins and the rear groups make boot heels in combination. Heavy orange frames under large ivory armor panels, deeply recessed black tread and metal track teeth. Its middle longitudinal split is clear but CLOSED in the standalone view. Render one coherent useful underground machine, not two unconnected separate tanks.\n\nMATERIAL/STYLE: mature Japanese sci-fi concept illustration in the project's visual language, very precise dark blue-black variable lineweight, broad lit planes with convincing deep occlusion, hand-painted cel-shaded dimensionality, clean orange/ivory identity colors over dark steel articulation, a few scratches and realistic edge wear. Main forms must be strong before details; use large plates, not dozens of tiny squares. Strong sculptural volume and toy-collector appeal without photographed plastic. Avoid chibi, childish round smiles, short legs, bland square heads, text, glowing auras, excessive neon, exposed scaffold torsos, exploded layouts and random redesigns.",
+      "prompt_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_v2_20261115/specs/08_brave_components_prompt.txt",
+      "reference_paths": [
+        "/workspace/scratch/3906e3a3b3d1/research/repo/review/approved-designs-20261105/established-details/F09-brave-core-master-r2.png",
+        "/workspace/scratch/3906e3a3b3d1/research/selected/M-BraveBomber-A.png",
+        "/workspace/scratch/3906e3a3b3d1/research/repo/review/approved-designs-20261105/established-details/F12-subtrain-master-r8.png",
+        "/workspace/scratch/3906e3a3b3d1/research/selected/M-BraveDrill-A.png",
+        "/workspace/scratch/3906e3a3b3d1/research/v2_visual_references/selected/V353U022-A.png"
+      ],
+      "generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-2ab219dd-4391-4bb3-82cb-82b53ee67580.png",
+      "final_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_v2_20261115/images/08_brave_components.png",
+      "image_size": [
+        1536,
+        1024
+      ],
+      "qa": {
+        "visually_inspected": true,
+        "notes": [
+          "实看四实体：完整勇拳、双风扇轰炸机、两节尾对尾海底列车、纵向双半钻车。",
+          "采用稿原白脸/青蓝额晶与眼、橙角、橙白长鬃、原大拳、白腿和橙白配色均保留。",
+          "各载具的完整独立主题与身份可读；未把合体成品倒拆为抽象色块。",
+          "未完成统一正交比例、轮轴/关节铰链全行程、与总机逐零件工程匹配。"
+        ]
+      }
+    },
+    {
+      "id": "09_brave_combined",
+      "approval_status": "本轮提案，非作者批准",
+      "tool": "built-in image_gen__imagegen",
+      "mode": "reference-guided generation",
+      "prompt": "Use case: stylized-concept.\nCreate the finished combined SHEYONG KING using the EXACT FOUR independently designed entities in image1. This is the upgraded exterior armor of the SAME complete lion-maned Yongquan core robot, not a replacement body. It must become visibly grander, broader and heavier through genuine additional component volume while keeping long powerful legs and adult heroic proportions.\n\nREFERENCE ROLES: image1 is the actual just-produced standalone sheet and is the binding design for core, bomber, two-car train and twin-drill vehicle. Reuse their actual shapes and colors. Image2 is the approved close-up of the loaded head/face armor: orange V crown, dark top cap, layered white side-blade crown over the SAME original white face/cyan eyes/orange horns. Image3 is the approved train forearm cradle showing one car nose BEHIND the elbow and the square coupling end at the fist, with a long open inner surface and the CORE'S OWN fist. Image4 shows accepted drill-to-leg routing: each front drill at a knee, tracks on outer shin and heel, original core leg retained. Image5 is the mature mechanical rendering/proportion reference, not this robot's palette or identity.\n\nCOMPOSITION: landscape 3:2 warm off-white concept sheet. The combined hero in a low three-quarter FRONT view takes the main 68% of the page, nearly full height, fully visible with 30-pixel margins around crown/mane/wings and boots. In the right third show ONE smaller full-body rear three-quarter view above, and ONE head-and-upper-chest close-up below. SAME machine in every view. No words, letters, numbers, arrows, borders or diagrams; do not include any uncombined core or extra vehicle diagram on this sheet. No hammer yet.\n\nCORE CONTINUITY: preserve image1's original full-size head, long orange/ivory flowing lion mane, intact white/orange torso, white upper arms, complete thighs, knees, shins and feet. No tiny core hiding in the chest and no removed limbs. The original core's own large fists remain at the ends of the arms and get their original reinforcement extension, retaining white angular knuckles and a restrained cyan wrist-ring edge. The mane remains an enormous visible identity plume emerging behind the head and flowing between the shoulder modules; do not turn it into fire, beast face or rigid tiny fins. Maintain the orange-and-ivory family exactly, dark graphite mechanism cavities, cyan only at small eyes/windows/rings.\n\nHEAD: use the approved LOADED face-mask of image2: preserve the core white lower face and cyan eyes while an orange wide V brow and a black center cap plus multiple tall layered white side blades surround the original helmet. The original orange horns and mane still exist underneath/behind. The side blades have thick armor edges and real pivots. The core's head is never replaced by another head. Handsome proud mechanical lion-hero presence.\n\nBOMBER: the entire exact twin-fan aircraft of image1 is attached around the upper torso. Its central orange nose/blue cockpit panel folds into a broad strong orange-and-white chest/back cuirass over the core's existing closed chest; coherent big shield-like chest planes, not a tiny aircraft casually hanging from the belly. The TWO silver-rim dark fan nacelles rotate behind the two shoulders to form an imposing jet backpack and remain fully identifiable in the rear view. The graphite swept wings fold upward/back into a broad angular wing shoulder mantle, white leading edges and orange dashed border accents retained. Its twin tail fins can rise behind the shoulder roots. The same undernose mask-loading bay has delivered the approved mask to the original core head. No third fan, no extra aircraft, no cockpit carved as a chest cavity.\n\nTWO-CAR TRAIN: the exact two cars in image1 separate at their central tail-to-tail coupling. EACH complete car forms one large white/orange forearm U-shell surrounding the original core forearm, with its white streamlining, orange stripe, blue rectangular window band and short hydroplanes conserved. The blunt streamlined car NOSE is at the ELBOW-REAR end, projecting backward past the elbow, NOT at the knuckles and not upward as a shoulder tower. The squared coupling end terminates by the wrist; the original giant fist projects clearly FORWARD out of it. In the main standing view the forearms point mostly down so the two original core fists remain clearly seen. Keep the inner forearm surfaces partly open to let elbow/wrist move; outer car shells are gathered around, not large flat opened wings. Do not make gigantic train-shaped fists or remove the original wrist joints. Outer blue window strips stay readable at sensible scale. Rear view makes the car nose behind each elbow unmistakable.\n\nTWIN DRILL VEHICLE: split its TWO exact halves along the middle. Each half wraps ONE retained original core leg: the silver conical spiral drill and orange collar become a forward-pointing knee assembly; the front tread group runs on the outer/back side of the long shin; the rear track group folds into the heel support and boot; original white/orange vehicle shell panels wrap into thick shin/front boot armor, blue cabin glass folds to an inner/rear calf face. ALL TWO drills and all tread volume remain present. Build huge handsome angular boots and long armored shins, not stumpy cylinders. Core thighs remain visibly recognizable above the boots, with some extra outer hip guarding. A larger armored silhouette comes from the assembled thickness, shoulder mantle, knee drills and overshoes, NOT scaling the core into a miniature interior skeleton.\n\nThe upgraded mass should read immediately: shoulders distinctly wider than the uncombined core, deeper closed chest, large armored train forearms, heavy taller overshoes and powerful long legs. Controlled proportions, not everything equally bulky. Expert mechanical illustration, deep dark recesses, broad sharply lit ivory/orange planes, precise varying blue-black lines, subtle metal wear and mature heroic sculpture. No PBR or shiny plastic toy photography. No squat chibi proportions, little square greeble tiles, naked scaffolding, extra hands, extra heads, mismatched component colors, train noses toward fists, disappearing bomber fans, three drills or giant hollow cargo-box chest.",
+      "prompt_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_v2_20261115/specs/09_brave_combined_prompt.txt",
+      "reference_paths": [
+        "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_v2_20261115/images/08_brave_components.png",
+        "/workspace/scratch/3906e3a3b3d1/research/repo/review/approved-designs-20261105/established-details/F09-bomber-mask-loading-r9b.png",
+        "/workspace/scratch/3906e3a3b3d1/research/repo/review/approved-designs-20261105/established-details/F12-train-protective-cradle-r12c.png",
+        "/workspace/scratch/3906e3a3b3d1/research/repo/review/approved-designs-20261105/established-details/F11-component-routing-r12.png",
+        "/workspace/scratch/3906e3a3b3d1/research/v2_visual_references/selected/V353U022-A.png"
+      ],
+      "generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-bf1d678b-3256-44d4-91d0-b2302b283d1b.png",
+      "final_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_v2_20261115/images/09_brave_combined.png",
+      "image_size": [
+        1536,
+        1024
+      ],
+      "qa": {
+        "visually_inspected": true,
+        "notes": [
+          "以实际08成图为首要参考，另用已采用面罩、列车臂壳与钻车去向细节核身份。",
+          "勇拳完整头身四肢保留；胸背和肩翼的新增体量、长胫重靴使合体轮廓扩大。",
+          "加载面罩为橙V冠/黑顶/白侧刃，原白脸青蓝眼与狮鬃仍在；主图与近景一致。",
+          "列车白橙蓝窗带可追认；两个车头朝肘后，方形联接端在拳端，原拳露出。",
+          "两钻在膝前，前后履带体积落到小腿与脚跟；双风扇在胸背肩区可于后视核对。",
+          "车窗细分、隐藏装甲厚度、连续加载运动及全行程干涉尚需同尺度正交稿/三维块模，未声称工程完成。"
+        ]
+      }
+    },
+    {
+      "id": "10_gold_stamp",
+      "approval_status": "本轮提案，非作者批准",
+      "tool": "built-in image_gen__imagegen",
+      "mode": "reference-guided generation",
+      "prompt": "Use case: stylized-concept.\nDesign an ORIGINAL important mechanical character called Golden Stamp for the same mature Japanese mecha novel, with its independent GOLDEN HAMMER and independent tool-transport assembly. This is a new body proposal: Golden Stamp is an autonomous adult machine ally, not a human, not a tiny AI terminal, NOT the hammer itself, and NOT a repaint of the partner hero.\n\nREFERENCE ROLES: Image1 (approved orange/white lion-maned Yongquan) supplies the partner's visual family, orange engineering accents, white armor and expressive mature heroic face. Do NOT copy its long lion mane, orange helmet horns, exact color layout or cyan wrist rings. Images2-3 (the tall red giant and navy/ivory giant) are the PRIMARY mature rendering and physique references: deep recessed joints, large armored planes, long legs, proper engineered feet, convincing dimensional cel illustration, restrained real wear. No previous redesign sheet is used.\n\nCOMPOSITION: a premium landscape 3:2 character-and-tool concept board on warm off-white paper. The complete Golden Stamp robot occupies the LEFT 60% almost full height, powerful calm three-quarter frontal stance, one sturdy hand resting on a closed tool-case and the other open slightly as if saying to stop and release the load. Tall adult 8-head mechanical hero proportions, heavy but LONG legs, large solid feet, no dwarf, no cute face. On the RIGHT the same independent hammer system is shown in TWO states: upper-right complete assembled heavy golden hammer stored upright in a support rack; lower-right the very same head halves and segmented shaft compactly stowed in one tracked lowbed tool carrier. The character remains a complete standing body with two arms and two legs in both equipment states; it never becomes the handle or vanishes into the hammer. No other characters, no duplicate full-size body, no robots emerging from the truck. No words, numbers, logos, text, arrows, borders or watermarks.\n\nGOLDEN STAMP BODY: authoritative dependable veteran construction-and-rescue hero, broad compact closed gold-bronze chest with an ORIGINAL recessed square approval-seal medallion with no letters, dark charcoal inset that resembles a thick forged stamping die. Strong sophisticated helmet with wide swept dark steel brow, muted gold crown, two narrow amber eyes, clean ivory lower faceplate and sturdy cheek armor, conveying decisive quiet dignity rather than a grin. Broad gold/ivory pauldrons with deep heavy shoulder bearings, slightly flared forearm braces, five-finger dark steel hands with broad gold knuckles; real shoulder/back load-bearing sockets for stabilizing a shared hammer support frame. Gold and warm ivory major plates, charcoal/naval joints, very restrained orange latch accents connecting the partner's family. Deep short dark waist between armored chest and long ivory/gold thighs and shins; large forged boots. Distinct from lion hero through squared disciplined forms, little ornament and a square chest motif; do not create a hammerhead face or office rubber stamp body. A FEW worn edges and heat marks from working machinery, never rusty junk. One compact waist tool-case, no huge weapon backpack, no loose dangling cables.\n\nGOLDEN HAMMER: a colossal separate forged mechanical demolition hammer with a double-sided blocky GOLD head, beveled impact faces, charcoal center joint and a heavy two-piece axial locking seam. The head is clearly made from TWO matching golden half-head blocks that slide together around a dark central yoke, no cartoon mallet balloon shape. Massive thick handle is assembled from several steel/ivory sections with gold locking collars; a positive grip and proximal brake collar allow the partner to swing while Golden Stamp controls the load/release. The UPPER-RIGHT assembled hammer stands in a low heavy independent support cradle, entire handle and head visible; important tool proportions and striking faces clearly read.\nLOWER-RIGHT: the SAME two gold half-heads secured on the wide tracked transporter with the SAME segmented handle stored horizontally alongside/under them. Short stout lift arms and a mechanically braked coupling ring are visible but folded. The carrier is equipment transportation, not another sentient mech. Both equipment views must conserve the head's geometry, colors, locking seams and handle sections. Body size need not be precisely scaled to sheet insets; treat the separate tool views as detailed product sketches of the same system.\n\nART DIRECTION: sophisticated dramatic Japanese mecha hand illustration, very precise dark blue-black variable-weight lines, deep occlusion under overlapping thick armor, hard cel-painted shadow planes with subtle surface depth and sparse purposeful scratches. Warm brass gold is matte industrial plated metal with controlled highlights, not glitter, chrome or neon. Major body masses and handsome coherent silhouette come before rivets. No cartoon cuteness, stumpy legs, PBR plastic toy, exposed scaffold body, dense meaningless greebles or tiny detail grids.",
+      "prompt_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_v2_20261115/specs/10_gold_stamp_prompt.txt",
+      "reference_paths": [
+        "/workspace/scratch/3906e3a3b3d1/research/repo/review/approved-designs-20261105/established-details/F09-brave-core-master-r2.png",
+        "/workspace/scratch/3906e3a3b3d1/research/v2_visual_references/selected/V353U022-A.png",
+        "/workspace/scratch/3906e3a3b3d1/research/v2_visual_references/selected/V353U065-A.png"
+      ],
+      "generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-9db9121e-dbb3-4daf-aed8-b15df7077fc9.png",
+      "final_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_v2_20261115/images/10_gold_stamp.png",
+      "image_size": [
+        1536,
+        1024
+      ],
+      "qa": {
+        "visually_inspected": true,
+        "notes": [
+          "金章是有两臂两腿的独立完整角色，成熟强壮轮廓与方形章面胸徽为本轮提案。",
+          "黄金锤、锤架、履带运输平台与金章身体分离，符合PDF288/341独立作战证据。",
+          "实际画面运输态的双半锤头仍在中央接座上预装；锤柄卸下横置，不应图注成两半锤头完全散开。",
+          "金章没有采用的旧身体稿；新头盔/金白配色/胸徽/工具箱都不标成正文既定外观。",
+          "锤头与架车相对尺寸、制动与脱扣行程为未工程验证的新提案。"
+        ]
+      }
+    },
+    {
+      "id": "17_getter_components",
+      "approval_status": "本轮提案，非作者批准",
+      "tool": "built-in image_gen__imagegen",
+      "mode": "reference-guided generation",
+      "prompt": "Use case: stylized-concept.\nCreate an ORIGINAL mature production-design sheet of the THREE independent modular machines that will recombine into three radically different Getter-family combat forms. The same three solid bodies must be conserved in all later forms. This sheet shows ONLY the three standalone machines, all complete and compelling as individual designs.\n\nREFERENCES: Image1 is the adopted red/white original Getter with its angular red horn crest, white face, red wing-like chest and dark green accents. Image2 is the adopted green underwater Getter, establishing green/ivory hydrodynamic armor and twin round white-rim waterjet structures. Image3 is the adopted successor-family sheet; use ONLY the small RED JET, YELLOW TRACKED MACHINE and GREEN SUBMARINE below it as the basic three-machine identity and palette, NOT the whole successor robot silhouette or bat wings. These are family references, not an instruction to reproduce the previous body. Images4-5 are the primary rendering-quality references for mature heavy armor, deep joints, broad angular planes, slightly worn metal, elegant proportions, crisp technical drawing and dimensional cel-painted shading.\n\nCOMPOSITION: landscape 3:2 warm ivory paper, three large fully visible separate designs. RED aircraft in the upper left, YELLOW drill vehicle in the upper right, GREEN amphibious machine below centered, roughly equivalent apparent engineering mass. Plenty of whitespace between them. All three in consistent detailed three-quarter views with every appendage uncropped, no additional robots, no alternative variants, no exploded parts, no arrows, labels, letters, numbers, watermarks or written text. The head identities of the later robot forms are stored INSIDE these vehicles and not floating beside them.\n\nRED AIR MODULE: a beautiful large scarlet-and-ivory interceptor with a sharp strong center fuselage, small dark teal cockpit glass, angular red leading edges and broad thick swept wings. Two paired long armored engine pods are substantial enough to become legs or forearm structures in later arrangements. Navy recessed engine nozzles, white underside, red swept twin tail fins derived from the established horn crest. Compact wings are thick overlapping armor sections with real hinge roots, not delicate membranes. Exactly one aircraft with two major wing/engine-side pods, do not paint yellow or green all over it. A large dark octagonal docking collar is partly visible under its central rear body. The whole aircraft later becomes upper chest/arms in flight form, middle pelvis/back in drill form, and paired rear limbs/skegs in amphibious form; its two long solid pods and two wings must be physically traceable.\n\nYELLOW EARTH MODULE: a handsome low powerful yellow/ivory twin-drill crawler, ONE integrated vehicle with two silver conical spiral drills forward, broad ochre-yellow outer armor, a narrow dark teal center cockpit and a deep navy chassis. Four articulated tread groups arranged front/back on each side, able to unfold into load-bearing limbs, with large visible pivots. Exact two drilled noses, distinct left and right halves connected by one solid central body with matching dark octagonal docking collars at fore/aft center. Strong large angled plates rather than excessive tiny panels. In flight combination its split tread bodies become the long armored legs and its two drills are knee assemblies; in drill combination the same two drills become heavy forearms; in amphibious combination its central body forms the waist/engine core and both drills remain visible stowed along the outer hips. Do not make any drill disappear.\n\nGREEN WATER MODULE: an original powerful amphibious submersible with a broad low sealed green-and-ivory pressure hull, short blunt pointed armored nose, recessed dark teal panoramic sensor glass, and EXACTLY TWO large white-rimmed shrouded pumpjets on its upper back. Four thick articulated short mechanical paddling legs grip the ground, with wide foil-like claws; these four legs can fold tightly under the pressure hull in submarine mode. Not a cute animal; it is a fierce engineered sea beast and self-contained useful submarine. The original green helmet's narrow horn language is echoed by two swept dorsal keels, not a random cartoon head. Deep navy pressure joints and a few small gold connector details. Matching dark octagonal fore/aft center docking collars, sized consistently with the other two machines. Its complete body later forms the torso/forelimbs and twin pumpjet shoulders of the low amphibious combined form, the paired powerful waterjet lower limbs of the drill combined form, or the green waist and rear jets of the flying combined form.\n\nEach machine has one major recognizable color region, ivory secondary armor and dark blue joint cavities; all share compatible mechanical interface language. Red wings, yellow drills/treads, green pressure hull/pumpjets each read instantly. Mature dimensional Japanese mecha illustration, large sculpted armor planes, dark occluded mechanics, precision ink linework, restrained weathering, premium collectible concept quality. Do not draw flat plastic toys, simple blocks, squashed chibi proportions, a machine made of little squares, random exposed ribs or a rainbow recoloring of the same vehicle. No laser effects or city background.",
+      "prompt_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_v2_20261115/specs/17_getter_components_prompt.txt",
+      "reference_paths": [
+        "/workspace/scratch/3906e3a3b3d1/research/selected/V353U006-A.png",
+        "/workspace/scratch/3906e3a3b3d1/research/selected/M-GetterSea-B.png",
+        "/workspace/scratch/3906e3a3b3d1/research/selected/M-GetterSuccessorAir-A.png",
+        "/workspace/scratch/3906e3a3b3d1/research/v2_visual_references/selected/V353U022-A.png",
+        "/workspace/scratch/3906e3a3b3d1/research/v2_visual_references/selected/V353U065-A.png"
+      ],
+      "generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-31c3591f-d54d-4763-a424-02c8518fa584.png",
+      "final_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_v2_20261115/images/17_getter_components.png",
+      "image_size": [
+        1536,
+        1024
+      ],
+      "qa": {
+        "visually_inspected": true,
+        "notes": [
+          "实看三个独立主体：红白双主舱翼机、黄色双钻四履带机、绿色双泵喷四足两栖体。",
+          "红/绿采用头部语汇在后续合体保留；后继稿底部小载具仅作红黄绿族系身份参考。",
+          "八边对接环可见，三组大色块和独立功能可读，所有为本轮几何提案。",
+          "三主体没有额外加入第四台万能骨架；共用连接外形不等于已完成同尺寸锁止系统。"
+        ]
+      }
+    },
+    {
+      "id": "18_getter_forms",
+      "approval_status": "本轮提案，非作者批准",
+      "tool": "built-in image_gen__imagegen",
+      "mode": "reference-guided generation",
+      "prompt": "Use case: stylized-concept.\nCreate a premium design sheet of THREE VERY DISTINCT COMBINED FORMS made from EXACTLY THE SAME red aircraft, yellow twin-drill crawler and green amphibious module in image1. Preserve recognizable physical mass and component features in every form. This is modular recombination, not three recolors of one robot.\n\nREFERENCE ROLES: image1 is the actual produced three-machine component board and is binding: reuse its thick red/white twin-pod aircraft and wings, yellow/ivory twin-drill vehicle with four tread groups, and green/ivory four-limbed pressure hull with EXACTLY TWO huge white-rim waterjets. Image2 is the approved red original Getter helmet/face/chest identity: red long swept split horn crest, white mask, teal eye slits, red-and-white powerful chest. Image3 is the approved green underwater helmet identity: tall green fins/horns, white mask, red brow accents. Images4-5 are mature illustration and armor-depth references only: large broad armor planes, convincing recessed mechanics, handsome elongated proportions, restrained wear. No simplified V1 designs are involved.\n\nCOMPOSITION: wide landscape 3:2 warm off-white art sheet. THREE complete forms across the page, clearly separated with room around every wing, drill and foot; left red-led FLIGHT FORM standing tall, middle yellow-led DRILL FORM in powerful forward-braced stance, right green-led AMPHIBIOUS FORM low and wide on FOUR limbs. All are equally important finished main designs, not tiny icons. No extra thumbnails, no inset panels, no labels, letters, numbers, text, arrows, lines, borders, landscape or weapons not supplied by the three parts. Do not make all three humanoids. Keep anatomy and components mechanically plausible. Wings and drills should stay inside their own visual columns without overlapping another robot.\n\nTHE FIXED CYCLIC BODY ORDER MUST BE:\nLEFT flight: RED forms head/upper torso/arms; GREEN forms abdomen/waist/rear jets; YELLOW forms both long legs.\nMIDDLE drill: YELLOW forms head/upper torso/arms; RED forms midbody/waist/rear wing structure; GREEN forms both lower limbs.\nRIGHT amphibious: GREEN forms head/upper torso/forelimbs; YELLOW forms center waist/engine and lateral hip drilling equipment; RED forms rear limbs/skegs.\nAll three main colors, all two silver drills, all four yellow tread groups, all two green white-rim pumpjets, and both red wing/engine-pod volumes must be visibly traceable in EACH complete form. Do not simply paint the same shell a new color.\n\nLEFT / FLIGHT:\nA magnificent 8-head tall humanoid flight hero, handsome red horned head faithful to image2, broad red/ivory CLOSED breastplate derived from the aircraft center fuselage, strong arms from its paired engine pods ending in real armored fists. Aircraft's exact swept red-and-ivory wings open high behind the shoulders; tail fins echo its head crest. Green pressure-hull core compresses as a broad dark green/ivory armored abdomen and waist, with its TWO large white-rim pumpjets mounted rearward near hips and clearly peeking from both sides. The yellow crawler splits into two LONG heavy ochre/ivory legs and large boots, both silver drills on the forward knees, tread groups visible on outer calves and heels. Do NOT make the legs red or white-only. Green folded limb armor remains wrapped around the waist/back as recognizable plates. Upright confident pose, not static doll stiffness.\n\nMIDDLE / DRILL:\nA deliberately different broad upper body and forward braced drilling posture. Yellow crawler hull folds into a strong ochre/ivory armored chest and shoulders; FOUR black tread groups run on shoulder backs and the sides of its upper arms, precisely the same tracks as image1. The two great silver conical drills become massive forearm tools, one on EACH arm, pointing diagonally forward/down and clearly separate. Compact yellow/ivory helmet with a hard black brow, narrow teal eye slit and a central wedge crest is a new proposal, not the red helmet repainted. The RED aircraft is the midbody: its center fuselage forms a red/ivory waist/hip block, both exact red wings fold rearward as a low stabilizer mantle behind the hips, and the two engine pods form thick red lower-back thrust sections. The GREEN amphibious body separates into two stout but LONG load-bearing legs with wide green/ivory claw feet, the TWO large white-rim waterjets become calf/hip propulsion housings. Green waterfoil armor is recognizable. Deep powerful knee bend, lower head than flight form, no red flight-head swap. Both drills replace forearm tools; no extra fist protruding through a drill.\n\nRIGHT / AMPHIBIOUS:\nA powerful long-bodied FOUR-LIMBED armored sea beast configuration, low center of gravity, broad green/ivory pressure chest and shoulder shell. The same green helmet FACE identity from image3 sits low at the front of the torso as a fierce compact crowned pilotless mechanical head, not a human face or cute animal. Two huge white-rim pumpjets high on the green forebody/back, unchanged shapes with red inner vane shading, not six random thrusters. Green module's heavy articulated forelegs become the two broad front limbs with strong foil-claw hands; its rear folded limb volume nests around the chest/side armor. The YELLOW crawler is the visibly substantial central yellow/ivory engine and waist section, with all FOUR dark tread groups folded along its midbody flanks as armored stabilizers. Its TWO silver drills remain stowed diagonally back along the TWO outer hips, plainly visible as two cones, not lost. The RED aircraft splits into two powerful red/ivory rear limbs: the twin engine pods become hind legs, both wings fold into long blade-like ankle skegs and tail fins along the rear-body sides. Distinct red/white rear boots touch the ground. The complete result has FOUR ground-contact limbs: two green forward limbs, two red hind limbs; no extra fifth leg, no plain green robot with identical red form's anatomy.\n\nMature hand-drawn Japanese mecha concept art with dimensional painted cel shadows, dark recessed blue-black mechanics, thick overlapping armor, large identifiable color masses and sparse real scratches. It must look collectible and serious, not cute, not short-legged plastic, not engineering block toys. Do not replace the coherent armor with thousands of tiny grid tiles. No glow effects, holograms or magic energy that hides mechanisms. Preserve the exact selected head lineages while redesigning real part topology.",
+      "prompt_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_v2_20261115/specs/18_getter_forms_prompt.txt",
+      "reference_paths": [
+        "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_v2_20261115/images/17_getter_components.png",
+        "/workspace/scratch/3906e3a3b3d1/research/selected/V353U006-A.png",
+        "/workspace/scratch/3906e3a3b3d1/research/selected/M-GetterSea-B.png",
+        "/workspace/scratch/3906e3a3b3d1/research/v2_visual_references/selected/V353U022-A.png",
+        "/workspace/scratch/3906e3a3b3d1/research/v2_visual_references/selected/V353U065-A.png"
+      ],
+      "generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-f6e606db-c8dc-4e0a-a48b-27949a089e00.png",
+      "final_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_v2_20261115/images/18_getter_forms.png",
+      "image_size": [
+        1536,
+        1024
+      ],
+      "qa": {
+        "visually_inspected": true,
+        "notes": [
+          "以实际17成图为首要参考，三态颜色体积和核心识别点对应。",
+          "飞行态R上/G中/Y下：红头胸翼臂、绿色腰/双喷口、黄腿/双膝钻/履带靴。",
+          "钻进态Y上/R中/G下：黄胸肩/双前臂钻、红腰及低翼/引擎、绿色腿与两泵喷。",
+          "两栖态G上/Y中/R下：绿色前躯和两前肢、黄色腰/双钻/履带、红白后肢与翼鳍。",
+          "两栖态为四个地面接触肢体，三态并非同一全人形换色；红/绿头沿用采用语汇，黄色新头为提案。",
+          "前视遮挡的绿肢收折与履带回路交18b补示；统一体积/重心/连续循环折叠未由三维机构验证。"
+        ]
+      }
+    },
+    {
+      "id": "18b_getter_mapping",
+      "approval_status": "本轮提案，非作者批准",
+      "tool": "built-in image_gen__imagegen",
+      "mode": "reference-guided generation",
+      "prompt": "Use case: stylized-concept.\nCreate a companion REAR/SIDE CONSTRUCTION VIEW sheet for the EXACT THREE Getter recombinations in image1, preserving every established main armor shape and body topology. This is a supplementary visual design sheet, not a replacement main image or a new set of robots.\n\nINPUTS: image1 is the approved-for-this-proposal front-view sheet to preserve exactly: left tall red flight hero with green waist and yellow legs; middle yellow twin-drill hero with red wing waist and green legs; right low FOUR-LIMBED amphibious form with green forebody, yellow center body and red rear limbs. Image2 is the exact original THREE standalone vehicles that supplied them. Image3 is the mature project rendering reference. Keep image1's palette, head lineages, proportions, physical scale relationships and same detailed hand-painted cel rendering.\n\nCOMPOSITION: landscape 3:2, plain warm off-white paper, THREE complete figures across the page in the same left-to-right order as image1, each shown in a useful BACK-THREE-QUARTER view turned enough to expose its outer side and joint attachment. Their feet stay planted; do not stand the quadruped upright. Every wingtip, drill tip, foot and waterjet is uncropped with margins. No front-view repeat, no floating spare machines, no additional forms, no arrows, letters, numerical labels, written text, borders or schematic diagrams. The purpose is to visibly account for the actual parts hidden in the front sheet. Whole attached modules are conserved, not magic interchangeable color plates.\n\nLEFT FLIGHT FORM REAR:\nThe red aircraft's exact red-and-ivory wings rise behind upper shoulders; its rear engines/arm casings remain attached to red upper body. Show the GREEN MODULE as a substantial coherent green-and-ivory lower-back and waist pack, not a thin green belt: two pressure-hull side halves around a short central torso connection, EXACTLY TWO large white-rim red-vane pumpjets facing obliquely rearward near left and right hips. All FOUR of the original green short paddling limbs remain tightly folded and nested as two pairs of green/ivory armored segments against the rear waist pack; show the joint knuckles and folded white claw pads locked flush against the housing, not dangling extra arms or legs. The yellow module forms the same long yellow/ivory legs as image1. Its FOUR separate tread belt groups are TWO on EACH leg, a long shin-side loop and a shorter heel loop, each with a closed belt path. Both silver knee drills project forward and can be seen from the oblique side. No additional pumpjets, no red lower legs.\n\nMIDDLE DRILL FORM REAR:\nKeep the same yellow massive chest and shoulder silhouette, the same yellow helmet and the two original silver drills on the ends of its two arms, pointing forward/down. Account for exactly FOUR SEPARATE yellow crawler tread groups: the two long front groups stand along the backs/outer faces of the two shoulders, while the two shorter rear groups fold sideways across the two rear upper-arm blocks beneath them. They stay separate closed track loops with their own wheel centers; do not merge them into two giant tracks or generate extra tracks. Both drills remain the one original matched pair. The RED aircraft center hull forms a substantial red/ivory rear waist and pelvic block; its exact two engine pods sit along lower-back sides, both wings sweep out behind the hips as low stabilizers and twin tail fins fold along the red center body. The entire GREEN module becomes the two thick green/ivory legs, each combining two original short leg segments into one articulated load-bearing leg; the two white-rim pumpjets are one per outer calf. Preserve the broad green claw feet and braced stance from image1. No yellow legs, no disappearing red fuselage.\n\nRIGHT AMPHIBIOUS FORM REAR:\nKeep the same low powerful FOUR-LIMB sea-beast stance from image1: TWO green forward limbs and TWO red/ivory hind limbs contact the ground. The broad green pressure forebody has the exact TWO large white-rim waterjets on its back, green crown/helmet stays at the front. Its two unused original hindlimb assemblies are clearly FOLDED and locked along the sides of the green pressure forebody, fully off the ground, under armor. Show folded hinge/white-pad edge enough to account for the mass without reading as two extra extended legs.\nThe YELLOW original crawler is visibly the central waist/engine body. Its FOUR distinct track groups are TWO compact loops on each midbody flank, tucked against the sides, no tracks stretched through empty air. BOTH original silver drills are attached to the yellow outer hips and point diagonally back, one on EACH side; keep the same two cones in the front design, no third drill. The RED aircraft's two long engine pods are the hind legs ending in red/ivory rear feet with dark navy thruster openings. Its two exact thick red/white wings fold along the outer rear legs as long skeg armor, their original hinge shapes and tail surfaces traceable. No extra detachable wing parts on the ground.\n\nUse visible load-bearing joints at each red/green/yellow boundary, a few deep dark recesses, and the same broad armor coverage as image1; do not peel every plate away or draw a nude scaffold. No imaginary complete skeleton with three vehicles merely glued to its back. The conserved original modules themselves form the bodies. Expert mature mechanical concept illustration, controlled variable dark outlines, thick matte armor, convincing depth, subtle wear, no toy photography and no cute caricature.",
+      "prompt_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_v2_20261115/specs/18b_getter_mapping_prompt.txt",
+      "reference_paths": [
+        "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_v2_20261115/images/18_getter_forms.png",
+        "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_v2_20261115/images/17_getter_components.png",
+        "/workspace/scratch/3906e3a3b3d1/research/v2_visual_references/selected/V353U022-A.png"
+      ],
+      "generated_source": "/workspace/scratch/3906e3a3b3d1/generated_images/exec-483e6e40-6fb6-4a0f-8ffe-d70ee1abc7d3.png",
+      "final_path": "/workspace/scratch/3906e3a3b3d1/deliverables/wanji_redesign_v2_20261115/images/18b_getter_mapping.png",
+      "image_size": [
+        1536,
+        1024
+      ],
+      "qa": {
+        "visually_inspected": true,
+        "notes": [
+          "实看同三态背侧辅助视图，与18顺序一致。",
+          "飞行态绿色腰背清楚出现两对折叠白爪甲与两泵喷；每条黄腿显示长胫带与短跟带。",
+          "钻进态背部显示四组分开的履带回路：两长肩带、两短上臂带；红双引擎/翼仍保留。",
+          "两栖态低伏四肢保持，黄色腰体、双侧钻/履带与红色后肢/翼鳍均可追认。",
+          "此页是同一概念的手绘背侧解释，不是同一个三维模型导出的正交验证；精确铰轴、比例守恒、碰撞与释放顺序仍待工程。"
+        ]
+      }
+    }
+  ],
+  "getter_module_mapping": [
+    {
+      "form": "飞行",
+      "upper": "红色主体：头胸肩臂/翼",
+      "middle": "绿色主体：腰背/折叠四肢/双泵喷",
+      "lower": "黄色主体：双腿/膝钻/四履带"
+    },
+    {
+      "form": "钻进",
+      "upper": "黄色主体：头胸双钻臂/四履带",
+      "middle": "红色主体：腰胯/低翼/双引擎",
+      "lower": "绿色主体：双腿/双泵喷/蹼爪"
+    },
+    {
+      "form": "两栖",
+      "upper": "绿色主体：低前躯/双前肢/双泵喷/另两肢收折",
+      "middle": "黄色主体：腰体/双侧钻/四履带",
+      "lower": "红色主体：双后肢/翼鳍/尾翼"
+    }
+  ],
+  "provenance_note": "08初次六参考路径调用被工具上限拒绝且没有生成；实际采用输出来自记录的五参考调用。其余输出未用V1简化图为正参考。所有正式图仅保留最终PNG；原始输出在generated_images，未额外置入正式images目录。"
+}
